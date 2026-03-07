@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { LanguageSelector } from "@/components/LanguageSelector";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { TARGET_LANGUAGES } from "@/lib/constants";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 function FloatingFlag({ flag, className }: { flag: string; className: string }) {
@@ -19,7 +17,6 @@ function FloatingFlag({ flag, className }: { flag: string; className: string }) 
 }
 
 export function LandingHero() {
-  const [targetLanguage, setTargetLanguage] = useState(TARGET_LANGUAGES[0].name);
   const router = useRouter();
 
   const handleStart = () => {
@@ -45,10 +42,6 @@ export function LandingHero() {
         <p className="mx-auto mt-6 max-w-3xl text-lg text-muted-foreground sm:text-xl">
           AI-powered lessons. Real conversations. Zero fluff.
         </p>
-
-        <div className="mx-auto mt-8 max-w-xl">
-          <LanguageSelector onLanguageChange={setTargetLanguage} />
-        </div>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button size="lg" className="w-full sm:w-auto" onClick={handleStart}>
