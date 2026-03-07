@@ -79,7 +79,7 @@ export const DayLessonSchema = z.object({
   dialogue: DialogueSchema,
   exercises: ExercisesSchema,
   culturalNote: CulturalNoteSchema,
-  progressTracking: ProgressTrackingSchema.optional(),
+  progressTracking: ProgressTrackingSchema,
 });
 
 export const WeeklyLessonPlanSchema = z.object({

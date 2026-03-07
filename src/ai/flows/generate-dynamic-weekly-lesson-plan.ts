@@ -201,7 +201,7 @@ Use this EXACT structure:
       "progressTracking": {
         "xpReward": 50,
         "streakBonus": 10,
-        "badge": "{{language}}_w{{week}}_d{{day}}_{{path}}"
+        "badge": "{{language}}_w{{week}}_d1_{{path}}"
       }
     },
     // [days 2, 3, 4, 5, 6, 7 - ALL 7 DAYS REQUIRED, follow the same structure and critical rules for each day]
@@ -220,6 +220,7 @@ CRITICAL RULES:
 9. Ensure all 'id' fields (for vocabulary items, fillBlanks, multipleChoice) are unique within their respective arrays for each day. For vocabulary items, use 'w1' through 'w5'. For fillBlanks, 'fb1' through 'fb3'. For multipleChoice, 'mc1' through 'mc3'.
 10. All phonetic spellings should be provided in a clear, easy-to-understand phonetic guide, similar to the "Bon-zhoor" example.
 11. The 'type' field for each day should primarily be "vocabulary" unless explicitly stated otherwise by the theme.
+12. The 'badge' in 'progressTracking' should follow the format '{language}_w{week}_d{day}_{path}', with the correct day number for each day.
 `,
 });
 
