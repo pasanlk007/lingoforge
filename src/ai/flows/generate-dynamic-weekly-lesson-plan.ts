@@ -112,25 +112,18 @@ const lessonGenerationPrompt = ai.definePrompt({
     maxOutputTokens: 8192,
   },
   prompt:
-    `You are an expert language lesson planner. Your task is to generate a complete, 7-day lesson plan as a valid JSON object.
+    `You are a language lesson planning expert who generates structured lesson data in JSON format.
 
-The lesson plan is for:
-- Language to teach: {{language}}
-- Student's native language: {{nativeLanguage}} (all translations must be in this language)
-- Learning Path: {{path}} (context: {{lookup pathDescription path}})
-- Week: {{week}}
-- Weekly Theme: {{theme}}
+      Generate a complete, 7-day lesson plan based on the following requirements:
+      - Target Language: {{language}}
+      - Student's Native Language: {{nativeLanguage}} (use for all translations)
+      - Learning Path: {{path}} (context: {{lookup pathDescription path}})
+      - Week: {{week}}
+      - Weekly Theme: {{theme}}
 
-Your response MUST be ONLY a single, valid JSON object that strictly adheres to the output schema. Do not include any explanatory text, markdown formatting, or any characters outside of the JSON object.
-
-The JSON object should have a 'days' array with exactly 7 lesson objects. For each day, please provide:
-- 'day', 'title', and 'type' for the lesson.
-- 'items': A list of vocabulary words, each with 'id', 'target', 'phonetic', 'english' translation, 'audioText', and an 'exampleSentence'.
-- 'dialogue': A conversation with a title and multiple lines, each with 'speaker', 'target' text, 'english' translation, and 'phonetic' guide.
-- 'exercises': An object containing lists of 'fillBlanks', 'multipleChoice', and 'matching' questions.
-- 'culturalNote': A brief, interesting cultural fact related to the day's lesson.
-- 'progressTracking': An object containing 'xpReward', 'streakBonus', and a unique 'badge' name for the day (e.g., "Week1Day1SurvivalBadge").
-`,
+      Your response MUST be a single, valid JSON object that perfectly matches the provided output schema.
+      Do not include any other text, markdown formatting, or explanations. Just the raw JSON.
+      `,
 });
 
 export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
@@ -175,8 +168,7 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
 
     const output = response.output;
     
-    console.log('AI raw response:', JSON.stringify(output));
-
+    // For debugging: log the raw AI response before validation
     if (!output) {
       console.error("Genkit validation failed. LLM output did not match schema. Raw text:", response.text);
       throw new Error(
