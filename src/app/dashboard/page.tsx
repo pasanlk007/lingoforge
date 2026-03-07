@@ -71,18 +71,23 @@ export default function DashboardPage() {
           </div>
       );
   }
+  
+  const t = translations[nativeLanguage].dashboard;
+  const isRTL = ['Urdu'].includes(nativeLanguage as string);
+  const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
+
 
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
+    <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto py-8 sm:py-12 px-4">
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-              Welcome back, {userData.name}!
+              {t.welcome}, {userData.name}!
             </h1>
             <p className="text-muted-foreground mt-2">
-              Ready to continue your language journey? Let's do this.
+              {t.ready}
             </p>
           </header>
 
@@ -91,45 +96,45 @@ export default function DashboardPage() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Current Streak
+                  {t.currentStreak}
                 </CardTitle>
                 <Flame className="h-5 w-5 text-orange-500" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">{userData.streak} days</div>
-                <p className="text-xs text-muted-foreground">Keep the flame alive!</p>
+                <p className="text-xs text-muted-foreground">{t.keepFlame}</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">XP Points</CardTitle>
+                <CardTitle className="text-sm font-medium">{t.xpPoints}</CardTitle>
                 <Star className="h-5 w-5 text-yellow-500" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">{userData.xp.toLocaleString()}</div>
                 <p className="text-xs text-muted-foreground">
-                  {(levelThreshold - userData.xp).toLocaleString()} to Level {userData.level + 1}
+                  {(levelThreshold - userData.xp).toLocaleString()} {t.toNextLevel} {userData.level + 1}
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Level</CardTitle>
+                <CardTitle className="text-sm font-medium">{t.level}</CardTitle>
                 <Zap className="h-5 w-5 text-green-500" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">{userData.level}</div>
-                <p className="text-xs text-muted-foreground">You're advancing!</p>
+                <p className="text-xs text-muted-foreground">{t.advancing}</p>
               </CardContent>
             </Card>
              <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Current Path</CardTitle>
+                <CardTitle className="text-sm font-medium">{t.currentPath}</CardTitle>
                 <Target className="h-5 w-5 text-blue-500" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">{userData.activePath}</div>
-                <p className="text-xs text-muted-foreground">Language: {userData.activeLanguage}</p>
+                <p className="text-xs text-muted-foreground">{t.language}: {userData.activeLanguage}</p>
               </CardContent>
             </Card>
           </div>
@@ -141,24 +146,24 @@ export default function DashboardPage() {
               {/* Continue Learning */}
               <Card className="border-2 border-primary shadow-lg shadow-primary/10">
                 <CardHeader>
-                  <CardTitle>Continue Your Journey</CardTitle>
+                  <CardTitle>{t.continueJourney}</CardTitle>
                   <CardDescription>
-                    You're on the {userData.activePath} path in {userData.activeLanguage}. Pick up where you left off.
+                    {t.continueDesc.replace('{path}', userData.activePath).replace('{language}', userData.activeLanguage)}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                         <BookOpen className="h-8 w-8 text-primary" />
                         <div>
-                            <p className="font-semibold text-lg">Next Lesson: Week {userData.lastLesson.week}, Day {userData.lastLesson.day + 1}</p>
-                            <p className="text-sm text-muted-foreground">Keep making progress!</p>
+                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', userData.lastLesson.week.toString()).replace('{day}', (userData.lastLesson.day + 1).toString())}</p>
+                            <p className="text-sm text-muted-foreground">{t.keepProgress}</p>
                         </div>
                     </div>
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full sm:w-auto">
                     <Link href="/dashboard">
-                      Go to Next Lesson <ChevronRight className="ml-2 h-4 w-4" />
+                      {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </CardFooter>
@@ -167,7 +172,7 @@ export default function DashboardPage() {
               {/* Learning Paths */}
               <div>
                 <h2 className="text-2xl font-bold tracking-tight mb-4">
-                  Explore Learning Paths
+                  {t.explorePaths}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {PATHS.map((path) => (
@@ -191,10 +196,10 @@ export default function DashboardPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Globe className="h-5 w-5" />
-                    Site Language
+                    {t.siteLanguage}
                   </CardTitle>
                   <CardDescription>
-                    Choose the language for the website interface.
+                    {t.siteLanguageDesc}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-2">
@@ -215,12 +220,12 @@ export default function DashboardPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <CalendarDays className="h-5 w-5" />
-                    This Week's Progress
+                    {t.weeklyProgress}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex justify-between gap-1">
-                    {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day, index) => (
+                    {dayNames.map((day, index) => (
                       <div key={day} className="flex flex-col items-center gap-2">
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
@@ -241,12 +246,12 @@ export default function DashboardPage() {
                {/* AI Guide Card */}
               <Card className="bg-gradient-to-br from-blue-900/30 to-slate-900">
                 <CardHeader>
-                  <CardTitle>AI Guide</CardTitle>
-                  <CardDescription>Have a question? Ask your personal AI language tutor.</CardDescription>
+                  <CardTitle>{t.aiGuide}</CardTitle>
+                  <CardDescription>{t.aiGuideDesc}</CardDescription>
                 </CardHeader>
                 <CardFooter>
                   <Button variant="secondary" className="w-full" asChild>
-                    <Link href="/dashboard">Ask LingoForge AI</Link>
+                    <Link href="/dashboard">{t.askAIGuide}</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -257,5 +262,7 @@ export default function DashboardPage() {
     </div>
   );
 }
+
+    
 
     

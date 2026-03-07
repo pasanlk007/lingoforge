@@ -1,4 +1,5 @@
 
+
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -90,7 +91,40 @@ export const translations = {
       terms: "Terms of Service"
     },
     footerLangs: "Available in your language.",
-    footerCredit: "© 2026 LingoForge. Built for migrants, by people who understand the journey."
+    footerCredit: "© 2026 LingoForge. Built for migrants, by people who understand the journey.",
+    dashboard: {
+      welcome: "Welcome back",
+      ready: "Ready to continue your language journey? Let's do this.",
+      currentStreak: "Current Streak",
+      keepFlame: "Keep the flame alive!",
+      xpPoints: "XP Points",
+      toNextLevel: "to Level",
+      level: "Level",
+      advancing: "You're advancing!",
+      currentPath: "Current Path",
+      language: "Language",
+      continueJourney: "Continue Your Journey",
+      continueDesc: "You're on the {path} path in {language}. Pick up where you left off.",
+      nextLesson: "Next Lesson: Week {week}, Day {day}",
+      keepProgress: "Keep making progress!",
+      goToNextLesson: "Go to Next Lesson",
+      explorePaths: "Explore Learning Paths",
+      siteLanguage: "Site Language",
+      siteLanguageDesc: "Choose the language for the website interface.",
+      weeklyProgress: "This Week's Progress",
+      aiGuide: "AI Guide",
+      aiGuideDesc: "Have a question? Ask your personal AI language tutor.",
+      askAIGuide: "Ask LingoForge AI",
+      days: {
+        mon: 'Mon',
+        tue: 'Tue',
+        wed: 'Wed',
+        thu: 'Thu',
+        fri: 'Fri',
+        sat: 'Sat',
+        sun: 'Sun',
+      }
+    }
   },
   Sinhala: {
     heroTitle: "විදෙස්ගත ශ්‍රමිකයන්ගේ භාෂා කුසලතා වර්ධනය",
@@ -178,7 +212,40 @@ export const translations = {
       terms: "සේවා කොන්දේසි"
     },
     footerLangs: "ඔබේ භාෂාවෙන් ලබා ගත හැකිය.",
-    footerCredit: "© 2026 LingoForge. සංක්‍රමණිකයන් සඳහා, ගමන තේරුම් ගන්නා අය විසින් ගොඩනගන ලදී."
+    footerCredit: "© 2026 LingoForge. සංක්‍රමණිකයන් සඳහා, ගමන තේරුම් ගන්නා අය විසින් ගොඩනගන ලදී.",
+    dashboard: {
+      welcome: "නැවතත් සාදරයෙන් පිළිගනිමු",
+      ready: "ඔබේ භාෂා ගමන ඉදිරියට ගෙන යාමට සූදානම්ද? අපි එය කරමු.",
+      currentStreak: "වර්තමාන Streak",
+      keepFlame: "ගිනිදැල් තබාගන්න!",
+      xpPoints: "XP ලකුණු",
+      toNextLevel: "මට්ටමට",
+      level: "මට්ටම",
+      advancing: "ඔබ ඉදිරියට යමින්!",
+      currentPath: "වර්තමාන මාර්ගය",
+      language: "භාෂාව",
+      continueJourney: "ඔබේ ගමන දිගටම කරගෙන යන්න",
+      continueDesc: "ඔබ {language} හි {path} මාර්ගයේ සිටී. ඔබ නැවැත්වූ තැනින් නැවත ආරම්භ කරන්න.",
+      nextLesson: "ඊළඟ පාඩම: සතිය {week}, දිනය {day}",
+      keepProgress: "දිගටම ප්‍රගතියක් ලබන්න!",
+      goToNextLesson: "ඊළඟ පාඩමට යන්න",
+      explorePaths: "ඉගෙනුම් මාර්ග ගවේෂණය කරන්න",
+      siteLanguage: "වෙබ් අඩවි භාෂාව",
+      siteLanguageDesc: "වෙබ් අඩවි අතුරුමුහුණත සඳහා භාෂාව තෝරන්න.",
+      weeklyProgress: "මෙම සතියේ ප්‍රගතිය",
+      aiGuide: "AI මාර්ගෝපදේශක",
+      aiGuideDesc: "ප්‍රශ්නයක් තිබේද? ඔබේ පුද්ගලික AI භාෂා ගුරුවරයාගෙන් අසන්න.",
+      askAIGuide: "LingoForge AI ගෙන් අසන්න",
+      days: {
+        mon: 'සඳු',
+        tue: 'අඟ',
+        wed: 'බදා',
+        thu: 'බ්‍රහ',
+        fri: 'සිකු',
+        sat: 'සෙන',
+        sun: 'ඉරි',
+      }
+    }
   },
   Hindi: {
     heroTitle: "प्रवासी श्रमिकों के लिए भाषा कौशल विकसित करना",
@@ -266,7 +333,40 @@ export const translations = {
       terms: "सेवा की शर्तें"
     },
     footerLangs: "आपकी भाषा में उपलब्ध है।",
-    footerCredit: "© 2026 LingoForge। प्रवासियों के लिए, यात्रा को समझने वाले लोगों द्वारा बनाया गया।"
+    footerCredit: "© 2026 LingoForge। प्रवासियों के लिए, यात्रा को समझने वाले लोगों द्वारा बनाया गया।",
+    dashboard: {
+      welcome: "वापस स्वागत है",
+      ready: "अपनी भाषा यात्रा जारी रखने के लिए तैयार हैं? चलिए इसे करते हैं।",
+      currentStreak: "वर्तमान स्ट्रीक",
+      keepFlame: "ज्वाला जलाए रखें!",
+      xpPoints: "XP अंक",
+      toNextLevel: "स्तर पर जाने के लिए",
+      level: "स्तर",
+      advancing: "आप आगे बढ़ रहे हैं!",
+      currentPath: "वर्तमान पथ",
+      language: "भाषा",
+      continueJourney: "अपनी यात्रा जारी रखें",
+      continueDesc: "आप {language} में {path} पथ पर हैं। जहाँ से छोड़ा था वहीं से शुरू करें।",
+      nextLesson: "अगला पाठ: सप्ताह {week}, दिन {day}",
+      keepProgress: "प्रगति करते रहें!",
+      goToNextLesson: "अगले पाठ पर जाएँ",
+      explorePaths: "सीखने के रास्ते खोजें",
+      siteLanguage: "साइट की भाषा",
+      siteLanguageDesc: "वेबसाइट इंटरफ़ेस के लिए भाषा चुनें।",
+      weeklyProgress: "इस सप्ताह की प्रगति",
+      aiGuide: "AI गाइड",
+      aiGuideDesc: "कोई सवाल है? अपने व्यक्तिगत AI भाषा शिक्षक से पूछें।",
+      askAIGuide: "LingoForge AI से पूछें",
+      days: {
+        mon: 'सोम',
+        tue: 'मंगल',
+        wed: 'बुध',
+        thu: 'गुरु',
+        fri: 'शुक्र',
+        sat: 'शनि',
+        sun: 'रवि',
+      }
+    }
   },
   Urdu: {
     heroTitle: "مہاجر کارکنوں کے لیے زبان کی مہارتیں تیار کرنا",
@@ -354,7 +454,40 @@ export const translations = {
       terms: "سروس کی شرائط"
     },
     footerLangs: "آپ کی زبان میں دستیاب ہے۔",
-    footerCredit: "© 2026 LingoForge۔ مہاجرین کے لیے، ان لوگوں کے ذریعے بنایا گیا جو سفر کو سمجھتے ہیں۔"
+    footerCredit: "© 2026 LingoForge۔ مہاجرین کے لیے، ان لوگوں کے ذریعے بنایا گیا جو سفر کو سمجھتے ہیں۔",
+    dashboard: {
+      welcome: "خوش آمدید",
+      ready: "کیا آپ اپنا لسانی سفر جاری رکھنے کے لیے تیار ہیں؟ چلو کرتے ہیں۔",
+      currentStreak: "موجودہ اسٹریک",
+      keepFlame: "شعلہ زندہ رکھو!",
+      xpPoints: "XP پوائنٹس",
+      toNextLevel: "سطح پر جانے کے لئے",
+      level: "سطح",
+      advancing: "آپ ترقی کر رہے ہیں!",
+      currentPath: "موجودہ راستہ",
+      language: "زبان",
+      continueJourney: "اپنا سفر جاری رکھیں",
+      continueDesc: "آپ {language} میں {path} کے راستے پر ہیں۔ وہیں سے شروع کریں جہاں سے آپ نے چھوڑا تھا۔",
+      nextLesson: "اگلا سبق: ہفتہ {week}، دن {day}",
+      keepProgress: "ترقی کرتے رہیں!",
+      goToNextLesson: "اگلے سبق پر جائیں",
+      explorePaths: "سیکھنے کے راستے دریافت کریں",
+      siteLanguage: "سائٹ کی زبان",
+      siteLanguageDesc: "ویب سائٹ انٹرفیس کے لیے زبان کا انتخاب کریں۔",
+      weeklyProgress: "اس ہفتے کی پیشرفت",
+      aiGuide: "AI گائیڈ",
+      aiGuideDesc: "کوئی سوال ہے؟ اپنے ذاتی AI زبان کے استاد سے پوچھیں۔",
+      askAIGuide: "LingoForge AI سے پوچھیں",
+      days: {
+        mon: 'پیر',
+        tue: 'منگل',
+        wed: 'بدھ',
+        thu: 'جمعرات',
+        fri: 'جمعہ',
+        sat: 'ہفتہ',
+        sun: 'اتوار',
+      }
+    }
   },
   Bengali: {
     heroTitle: "অভিবাসী কর্মীদের জন্য ভাষা দক্ষতা বৃদ্ধি করা",
@@ -442,7 +575,40 @@ export const translations = {
       terms: "পরিষেবার শর্তাবলী"
     },
     footerLangs: "আপনার ভাষায় উপলব্ধ।",
-    footerCredit: "© 2026 LingoForge। অভিবাসীদের জন্য, যারা যাত্রা বোঝেন তাদের দ্বারা নির্মিত।"
+    footerCredit: "© 2026 LingoForge। অভিবাসীদের জন্য, যারা যাত্রা বোঝেন তাদের দ্বারা নির্মিত।",
+    dashboard: {
+      welcome: "আবার স্বাগতম",
+      ready: "আপনার ভাষা যাত্রা চালিয়ে যেতে প্রস্তুত? চলুন শুরু করা যাক।",
+      currentStreak: "বর্তমান স্ট্রিক",
+      keepFlame: "শিখা জ্বালিয়ে রাখুন!",
+      xpPoints: "XP পয়েন্ট",
+      toNextLevel: "স্তরে যেতে",
+      level: "স্তর",
+      advancing: "আপনি এগিয়ে যাচ্ছেন!",
+      currentPath: "বর্তমান পথ",
+      language: "ভাষা",
+      continueJourney: "আপনার যাত্রা চালিয়ে যান",
+      continueDesc: "আপনি {language}-এ {path} পথে আছেন। যেখান থেকে ছেড়েছিলেন সেখান থেকে শুরু করুন।",
+      nextLesson: "পরবর্তী পাঠ: সপ্তাহ {week}, দিন {day}",
+      keepProgress: "অগ্রগতি করতে থাকুন!",
+      goToNextLesson: "পরবর্তী পাঠে যান",
+      explorePaths: "শেখার পথগুলি অন্বেষণ করুন",
+      siteLanguage: "সাইটের ভাষা",
+      siteLanguageDesc: "ওয়েবসাইট ইন্টারফেসের জন্য ভাষা চয়ন করুন।",
+      weeklyProgress: "এই সপ্তাহের অগ্রগতি",
+      aiGuide: "AI গাইড",
+      aiGuideDesc: "কোন প্রশ্ন আছে? আপনার ব্যক্তিগত AI ভাষা শিক্ষককে জিজ্ঞাসা করুন।",
+      askAIGuide: "LingoForge AI কে জিজ্ঞাসা করুন",
+      days: {
+        mon: 'সোম',
+        tue: 'মঙ্গল',
+        wed: 'বুধ',
+        thu: 'বৃহ',
+        fri: 'শুক্র',
+        sat: 'শনি',
+        sun: 'রবি',
+      }
+    }
   },
   Nepali: {
     heroTitle: "प्रवासी कामदारहरूको लागि भाषा कौशल विकास",
@@ -530,7 +696,40 @@ export const translations = {
       terms: "सेवा सर्तहरू"
     },
     footerLangs: "तपाईंको भाषामा उपलब्ध छ।",
-    footerCredit: "© 2026 LingoForge। प्रवासीहरूका लागि, यात्रा बुझ्ने मानिसहरूद्वारा निर्मित।"
+    footerCredit: "© 2026 LingoForge। प्रवासीहरूका लागि, यात्रा बुझ्ने मानिसहरूद्वारा निर्मित।",
+    dashboard: {
+      welcome: "फेरि स्वागत छ",
+      ready: "आफ्नो भाषा यात्रा जारी राख्न तयार हुनुहुन्छ? सुरु गरौं।",
+      currentStreak: "वर्तमान स्ट्रीक",
+      keepFlame: "ज्वाला जलाइराख्नुहोस्!",
+      xpPoints: "XP अंक",
+      toNextLevel: "स्तरमा जान",
+      level: "स्तर",
+      advancing: "तपाईं अगाडि बढ्दै हुनुहुन्छ!",
+      currentPath: "वर्तमान मार्ग",
+      language: "भाषा",
+      continueJourney: "आफ्नो यात्रा जारी राख्नुहोस्",
+      continueDesc: "तपाईं {language} मा {path} मार्गमा हुनुहुन्छ। जहाँ छोड्नुभएको थियो त्यहीँबाट सुरु गर्नुहोस्।",
+      nextLesson: "अर्को पाठ: हप्ता {week}, दिन {day}",
+      keepProgress: "प्रगति गरिरहनुहोस्!",
+      goToNextLesson: "अर्को पाठमा जानुहोस्",
+      explorePaths: "सिक्ने मार्गहरू अन्वेषण गर्नुहोस्",
+      siteLanguage: "साइट भाषा",
+      siteLanguageDesc: "वेबसाइट इन्टरफेसको लागि भाषा छान्नुहोस्।",
+      weeklyProgress: "यो हप्ताको प्रगति",
+      aiGuide: "AI गाइड",
+      aiGuideDesc: "कुनै प्रश्न छ? आफ्नो व्यक्तिगत AI भाषा शिक्षकलाई सोध्नुहोस्।",
+      askAIGuide: "LingoForge AI लाई सोध्नुहोस्",
+      days: {
+        mon: 'सोम',
+        tue: 'मंगल',
+        wed: 'बुध',
+        thu: 'बिहि',
+        fri: 'शुक्र',
+        sat: 'शनि',
+        sun: 'आइत',
+      }
+    }
   }
 };
 
@@ -555,5 +754,7 @@ export const targetLanguages = [
 ];
 
 export const nativeLanguages = Object.keys(translations);
+
+    
 
     
