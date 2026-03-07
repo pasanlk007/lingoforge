@@ -20,7 +20,7 @@ export const DialogueLineSchema = z.object({
 
 export const DialogueSchema = z.object({
   title: z.string(),
-  lines: z.array(DialogueLineSchema),
+  lines: z.array(DialogueLineSchema).min(1, "Dialogue must have at least one line."),
 });
 
 export const ExercisesSchema = z.object({
@@ -47,8 +47,8 @@ export const DayLessonSchema = z.object({
   day: z.number().int().min(1).max(7),
   title: z.string(),
   type: z.enum(['vocabulary', 'grammar', 'dialogue', 'numbers', 'alphabet', 'reading', 'writing']),
-  items: z.array(LessonItemSchema),
-  dialogue: DialogueSchema,
+  items: z.array(LessonItemSchema).min(1, "A day's lesson must have at least one vocabulary item."),
+  dialogue: DialogueSchema.optional(),
   exercises: ExercisesSchema,
   culturalNote: z.string().optional(),
   progressTracking: z.object({
@@ -64,7 +64,7 @@ export const WeeklyLessonPlanSchema = z.object({
   path: z.union([z.literal('survival'), z.literal('alphabet'), z.literal('numbers')]),
   title: z.string(),
   description: z.string(),
-  days: z.array(DayLessonSchema).length(7),
+  days: z.array(DayLessonSchema).min(1, "A weekly lesson plan must have at least one day."),
 });
 
 export type WeeklyLessonPlanOutput = z.infer<typeof WeeklyLessonPlanSchema>;
