@@ -790,7 +790,9 @@ export default function LandingPage() {
                     <p className="text-sm font-semibold text-slate-400">48 weeks • 7 days • 5 words/day</p>
                     <p className="mt-2 text-sm bg-green-900/40 p-2 rounded-md text-slate-300 font-mono">"Bonjour • Merci • S'il vous plaît"</p>
                   </div>
-                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white font-bold">{t.startFree}</Button>
+                  <Button asChild className="w-full bg-green-500 hover:bg-green-600 text-white font-bold">
+                    <Link href={`/lessons/${targetLanguage.toLowerCase()}/survival/1/1`}>{t.startFree}</Link>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -807,7 +809,9 @@ export default function LandingPage() {
                       <p className="text-sm font-semibold text-slate-400">48 weeks • 7 days • 5 chars/day</p>
                       <p className="mt-2 text-sm bg-blue-900/40 p-2 rounded-md text-slate-300 font-mono">"A B C • あ い う • 가 나 다"</p>
                    </div>
-                  <Button variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">{t.getStarted}</Button>
+                  <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
+                    <Link href={`/alphabet/${targetLanguage.toLowerCase()}/1/1`}>{t.getStarted}</Link>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -824,7 +828,9 @@ export default function LandingPage() {
                     <p className="text-sm font-semibold text-slate-400">48 weeks • 7 days • 5 numbers/day</p>
                     <p className="mt-2 text-sm bg-purple-900/40 p-2 rounded-md text-slate-300 font-mono">"1 2 3 • Ein Zwei Drei • 一 二 三"</p>
                   </div>
-                  <Button variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">{t.getStarted}</Button>
+                  <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
+                     <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/1/1`}>{t.getStarted}</Link>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
