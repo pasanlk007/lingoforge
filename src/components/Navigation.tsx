@@ -1,10 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { Languages, Menu } from "lucide-react";
+import { Languages, Menu, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import { useUser, useAuth } from "@/firebase";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+
 
 const navLinks = [
   { href: "/paths", label: "Paths & Features" },
@@ -12,6 +23,12 @@ const navLinks = [
 
 export function Navigation() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const { user, isUserLoading } = useUser();
+  const auth = useAuth();
+
+  const handleLogout = () => {
+    auth.signOut();
+  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -40,8 +57,47 @@ export function Navigation() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <Button variant="ghost">Log In</Button>
-          <Button>Sign Up</Button>
+           {isUserLoading ? (
+             <div className="h-10 w-24 animate-pulse rounded-md bg-muted" />
+           ) : user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+                  <Avatar className="h-9 w-9">
+                    <AvatarImage src={user.photoURL || undefined} alt={user.displayName || "User"} />
+                    <AvatarFallback>{user.displayName?.charAt(0) || user.email?.charAt(0)}</AvatarFallback>
+                  </Avatar>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56" align="end" forceMount>
+                <DropdownMenuLabel className="font-normal">
+                  <div className="flex flex-col space-y-1">
+                    <p className="text-sm font-medium leading-none">{user.displayName || 'User'}</p>
+                    <p className="text-xs leading-none text-muted-foreground">
+                      {user.email}
+                    </p>
+                  </div>
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link href="/profile">Profile</Link>
+                </DropdownMenuItem>
+                 <DropdownMenuItem asChild>
+                   <Link href="/dashboard">Dashboard</Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={handleLogout}>
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>Log out</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+           ) : (
+            <>
+              <Button variant="ghost" asChild><Link href="/login">Log In</Link></Button>
+              <Button asChild><Link href="/signup">Sign Up</Link></Button>
+            </>
+           )}
         </div>
 
         <div className="md:hidden">
@@ -78,8 +134,19 @@ export function Navigation() {
                     </Link>
                 </nav>
                 <div className="mt-auto flex flex-col gap-2">
-                  <Button variant="ghost" onClick={() => setMenuOpen(false)}>Log In</Button>
-                  <Button onClick={() => setMenuOpen(false)}>Sign Up</Button>
+                   {isUserLoading ? (
+                     <div className="h-10 w-full animate-pulse rounded-md bg-muted" />
+                   ) : user ? (
+                    <>
+                      <Button asChild onClick={() => setMenuOpen(false)}><Link href="/profile">Profile</Link></Button>
+                      <Button variant="ghost" onClick={() => { handleLogout(); setMenuOpen(false); }}>Log Out</Button>
+                    </>
+                   ) : (
+                    <>
+                      <Button variant="ghost" onClick={() => setMenuOpen(false)} asChild><Link href="/login">Log In</Link></Button>
+                      <Button onClick={() => setMenuOpen(false)} asChild><Link href="/signup">Sign Up</Link></Button>
+                    </>
+                   )}
                 </div>
               </div>
             </SheetContent>
