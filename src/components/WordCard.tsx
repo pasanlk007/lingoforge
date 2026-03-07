@@ -40,7 +40,7 @@ export function WordCard({ item, language }: WordCardProps) {
             <h2 className="text-5xl font-bold">{item.target}</h2>
             <p className="mt-2 text-2xl text-muted-foreground">{item.phonetic}</p>
             <div className="mt-4" onClick={(e) => e.stopPropagation()}>
-              <AudioButton text={item.audioText} languageName={language} />
+              <AudioButton text={item.target} languageName={language} />
             </div>
              <p className="absolute bottom-4 text-xs text-muted-foreground">Click to flip</p>
           </Card>

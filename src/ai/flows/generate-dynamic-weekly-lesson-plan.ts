@@ -68,6 +68,7 @@ const LessonGenerationPromptInputSchema = z.object({
   nativeLanguage: z.string(),
   theme: z.string(),
   pathDesc: z.string(),
+  currencyHint: z.string().optional(),
 });
 
 const lessonGenerationPrompt = ai.definePrompt({
@@ -85,6 +86,10 @@ Generate the lesson plan for:
 - Learning Path: {{path}} (focus on: {{pathDesc}})
 - Week: {{week}}
 - Weekly Theme: {{theme}}
+{{#if currencyHint}}
+
+Special Instructions for this theme: {{currencyHint}}
+{{/if}}
 
 IMPORTANT:
 - Your entire response must be ONLY the raw JSON object.
@@ -119,6 +124,11 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       theme = input.selectedTopic
         ?? weekThemes[input.path][(input.week - 1) % weekThemes[input.path].length];
     }
+    
+    let currencyHint: string | undefined = undefined;
+    if (theme === 'Money & Prices') {
+      currencyHint = `The target language is ${input.language}. When generating content for the "Money & Prices" theme, it is crucial to include the local currency symbol and name (e.g., €, JPY, ¥) in vocabulary and examples. For example, for French, use the Euro (€). For Japanese, use the Yen (¥).`;
+    }
 
     // 2. Call the main lesson generation prompt with the determined theme
     const response = await lessonGenerationPrompt(
@@ -129,6 +139,7 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
         nativeLanguage: input.nativeLanguage,
         theme: theme,
         pathDesc: pathDescription[input.path],
+        currencyHint: currencyHint,
       },
       { model: 'googleai/gemini-1.5-flash-latest' }
     );

@@ -10,7 +10,6 @@ export interface LessonItem {
   target: string;
   phonetic: string;
   english: string;
-  audioText: string;
   exampleSentence?: ExampleSentence;
 }
 
