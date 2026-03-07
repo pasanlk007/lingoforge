@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import React, { useState, useEffect } from "react";
@@ -26,33 +27,23 @@ import { Navigation } from '@/components/Navigation';
 import { PathCard } from '@/components/PathCard';
 import { PATHS } from '@/lib/constants';
 import { cn } from "@/lib/utils";
-import { nativeLanguages, translations } from "@/lib/translations";
+import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
-// Mock data for the dashboard
-const userData = {
-  name: 'Alex',
-  streak: 12,
-  xp: 1450,
-  level: 8,
-  activePath: 'Survival',
-  activeLanguage: 'French',
-  lastLesson: {
-    week: 2,
-    day: 3,
-  },
-  weeklyProgress: [true, true, true, false, false, false, false], // Mon, Tue, Wed completed
-};
-
-const levelThreshold = 1500; // XP needed for next level
 
 export default function DashboardPage() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
+  const [targetLanguage, setTargetLanguage] = useState('French');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-      const savedLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
-      if (savedLang && translations[savedLang]) {
-        setNativeLanguage(savedLang);
+      const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
+      if (savedNativeLang && translations[savedNativeLang]) {
+        setNativeLanguage(savedNativeLang);
+      }
+      const savedTargetLang = localStorage.getItem("targetLanguage");
+      if (savedTargetLang) {
+          setTargetLanguage(savedTargetLang);
       }
       setIsMounted(true);
   }, []);
@@ -60,8 +51,25 @@ export default function DashboardPage() {
   useEffect(() => {
       if(isMounted) {
         localStorage.setItem("nativeLanguage", nativeLanguage);
+        localStorage.setItem("targetLanguage", targetLanguage);
       }
-  }, [nativeLanguage, isMounted]);
+  }, [nativeLanguage, targetLanguage, isMounted]);
+
+  // Mock data for the dashboard
+  const userData = {
+    name: 'Alex',
+    streak: 12,
+    xp: 1450,
+    level: 8,
+    activePath: 'Survival',
+    activeLanguage: targetLanguage,
+    lastLesson: {
+      week: 2,
+      day: 3,
+    },
+    weeklyProgress: [true, true, true, false, false, false, false], // Mon, Tue, Wed completed
+  };
+
 
   if (!isMounted) {
       return (
@@ -73,6 +81,7 @@ export default function DashboardPage() {
   }
   
   const t = translations[nativeLanguage].dashboard;
+  const t_global = translations[nativeLanguage];
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
 
@@ -113,7 +122,7 @@ export default function DashboardPage() {
               <CardContent>
                 <div className="text-2xl font-bold">{userData.xp.toLocaleString()}</div>
                 <p className="text-xs text-muted-foreground">
-                  {(levelThreshold - userData.xp).toLocaleString()} {t.toNextLevel} {userData.level + 1}
+                  {(1500 - userData.xp).toLocaleString()} {t.toNextLevel} {userData.level + 1}
                 </p>
               </CardContent>
             </Card>
@@ -155,7 +164,7 @@ export default function DashboardPage() {
                     <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                         <BookOpen className="h-8 w-8 text-primary" />
                         <div>
-                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', userData.lastLesson.week.toString()).replace('{day}', (userData.lastLesson.day + 1).toString())}</p>
+                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', '2').replace('{day}', '4')}</p>
                             <p className="text-sm text-muted-foreground">{t.keepProgress}</p>
                         </div>
                     </div>
@@ -213,6 +222,34 @@ export default function DashboardPage() {
                         {lang}
                       </Button>
                     ))}
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                        <Target className="h-5 w-5"/>
+                        {t.targetLanguage}
+                    </CardTitle>
+                    <CardDescription>
+                        {t.targetLanguageDesc}
+                    </CardDescription>
+                </CardHeader>
+                <CardContent>
+                   <Select value={targetLanguage} onValueChange={setTargetLanguage}>
+                    <SelectTrigger className="w-full">
+                        <SelectValue placeholder={t.selectTargetLanguage} />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-80">
+                      {targetLanguages.map(lang => (
+                        <SelectItem key={lang.lang} value={lang.lang}>
+                          <div className="flex items-center gap-3">
+                            <span className="text-xl">{lang.flag}</span>
+                            <span>{lang.lang}</span>
+                          </div>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </CardContent>
               </Card>
               {/* Weekly Progress */}

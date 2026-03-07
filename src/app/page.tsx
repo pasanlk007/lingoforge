@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -33,13 +34,6 @@ import {
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { translations, targetLanguages, nativeLanguages } from "@/lib/translations";
 import {
@@ -51,7 +45,6 @@ import {
 
 export default function LandingPage() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
-  const [targetLanguage, setTargetLanguage] = useState(targetLanguages[0].lang);
   const [isMounted, setIsMounted] = useState(false);
   const router = useRouter();
 
@@ -127,24 +120,6 @@ export default function LandingPage() {
               <p className="mt-4 max-w-xl mx-auto text-lg md:text-xl text-slate-300">{t.heroSub}</p>
               
               <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
-                <div className="grid grid-cols-1 gap-4">
-                   <Select value={targetLanguage} onValueChange={setTargetLanguage}>
-                    <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectTarget} /></SelectTrigger>
-                    <SelectContent className="bg-slate-800 border-slate-700 text-white max-h-80">
-                      {targetLanguages.map(lang => (
-                        <SelectItem key={lang.lang} value={lang.lang}>
-                          <div className="flex items-center gap-3">
-                            <span className="text-xl">{lang.flag}</span>
-                            <div>
-                              <p>{lang.lang}</p>
-                              <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
-                            </div>
-                          </div>
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
                  <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
                     <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleStartJourney}>{t.viewPaths}</Button>
@@ -428,3 +403,4 @@ export default function LandingPage() {
     </div>
   );
 }
+
