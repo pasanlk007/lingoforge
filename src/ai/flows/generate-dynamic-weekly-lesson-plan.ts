@@ -8,7 +8,7 @@
  */
 
 import { ai } from '@/ai/genkit';
-import { z } from 'genkit';
+import { z } from 'zod';
 
 const pathDescription = {
   survival: 'everyday survival phrases, greetings, shopping, transport, food, emergency',
@@ -312,7 +312,7 @@ CRITICAL RULES:
 3. Each item needs translations in all 6 native languages (english, sinhala, hindi, urdu, arabic, bengali).
 4. For each day's dialogue, ensure exactly 4 lines with alternating speakers A and B.
 5. For each day's exercises, include exactly 3 fillBlanks questions, 3 multipleChoice questions (each with 4 options), and 5 matching pairs.
-6. Return ONLY the JSON object. Do not include ```json or ``` or any other text.
+6. Return ONLY the JSON object. Do not include \`\`\`json or \`\`\` or any other text.
 7. Do not stop until all 7 days are complete.
 8. Make content relevant to the "{{theme}}" theme for the current week and learning path.
 9. Ensure all 'id' fields (for vocabulary items, fillBlanks, multipleChoice) are unique within their respective arrays for each day. For vocabulary items, use 'w1' through 'w5'. For fillBlanks, 'fb1' through 'fb3'. For multipleChoice, 'mc1' through 'mc3'.
