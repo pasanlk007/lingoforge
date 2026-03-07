@@ -28,15 +28,15 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelProps) {
-  const [fbAnswers, setFbAnswers] = useState<string[]>(Array(exercises.fillBlanks.length).fill(''));
-  const [mcAnswers, setMcAnswers] = useState<(number | null)[]>(Array(exercises.multipleChoice.length).fill(null));
+  const [fbAnswers, setFbAnswers] = useState<string[]>(Array(exercises.fillBlanks?.length ?? 0).fill(''));
+  const [mcAnswers, setMcAnswers] = useState<(number | null)[]>(Array(exercises.multipleChoice?.length ?? 0).fill(null));
   
   const [matchingTargets, setMatchingTargets] = useState<string[]>([]);
   const [matchingEnglishes, setMatchingEnglishes] = useState<string[]>([]);
   
   useEffect(() => {
-    setMatchingTargets(shuffleArray(exercises.matching.map(p => p.target)));
-    setMatchingEnglishes(shuffleArray(exercises.matching.map(p => p.english)));
+    setMatchingTargets(shuffleArray(exercises.matching?.map(p => p.target) ?? []));
+    setMatchingEnglishes(shuffleArray(exercises.matching?.map(p => p.english) ?? []));
   }, [exercises.matching]);
 
   const [selectedTarget, setSelectedTarget] = useState<string | null>(null);
@@ -45,7 +45,7 @@ export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelP
 
   useEffect(() => {
     if (selectedTarget && selectedEnglish) {
-      const originalPair = exercises.matching.find(p => p.target === selectedTarget);
+      const originalPair = exercises.matching?.find(p => p.target === selectedTarget);
       if (originalPair && originalPair.english === selectedEnglish) {
         setMatches(prev => ({ ...prev, [selectedTarget]: selectedEnglish }));
         onExercisesComplete(true);
@@ -72,14 +72,14 @@ export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelP
       <CardContent>
         <Tabs defaultValue="fill-blanks" className="w-full">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="fill-blanks">Fill in the Blanks</TabsTrigger>
-            <TabsTrigger value="multiple-choice">Multiple Choice</TabsTrigger>
-            <TabsTrigger value="matching">Matching</TabsTrigger>
+            <TabsTrigger value="fill-blanks" disabled={!exercises.fillBlanks || exercises.fillBlanks.length === 0}>Fill in the Blanks</TabsTrigger>
+            <TabsTrigger value="multiple-choice" disabled={!exercises.multipleChoice || exercises.multipleChoice.length === 0}>Multiple Choice</TabsTrigger>
+            <TabsTrigger value="matching" disabled={!exercises.matching || exercises.matching.length === 0}>Matching</TabsTrigger>
           </TabsList>
           
           <TabsContent value="fill-blanks" className="mt-6">
             <div className="space-y-6">
-              {exercises.fillBlanks.map((ex, index) => (
+              {exercises.fillBlanks?.map((ex, index) => (
                 <div key={ex.id}>
                     <label className="text-sm text-muted-foreground" htmlFor={ex.id}>{ex.sentence.split('_____')[0]}<span className="font-bold text-foreground"> _____ </span>{ex.sentence.split('_____')[1]}</label>
                     <Input
@@ -106,7 +106,7 @@ export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelP
 
           <TabsContent value="multiple-choice" className="mt-6">
             <div className="space-y-8">
-              {exercises.multipleChoice.map((ex, index) => (
+              {exercises.multipleChoice?.map((ex, index) => (
                 <div key={ex.id}>
                   <p className="font-medium mb-3">{index + 1}. {ex.question}</p>
                   <RadioGroup
@@ -171,7 +171,7 @@ export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelP
                       ))}
                   </div>
               </div>
-              {Object.keys(matches).length === exercises.matching.length && (
+              {Object.keys(matches).length === (exercises.matching?.length ?? 0) && (exercises.matching?.length ?? 0) > 0 && (
                 <Alert className="mt-4 border-green-500/50 text-green-700 dark:text-green-400">
                   <CheckCircle className="h-4 w-4" />
                   <AlertTitle className="font-bold">Great job!</AlertTitle>
