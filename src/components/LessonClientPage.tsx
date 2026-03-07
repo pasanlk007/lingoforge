@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronLeft, ChevronRight, ArrowLeft, Flame, CheckCircle, BookOpen, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowLeft, Flame, CheckCircle, BookOpen, Star, BrainCircuit } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -13,6 +13,7 @@ import { ProgressBar } from '@/components/ProgressBar';
 import { StreakCounter } from '@/components/StreakCounter';
 import type { LanguageLesson } from '@/lib/types';
 import Confetti from 'react-dom-confetti';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;
@@ -73,7 +74,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     }
 
     const totalExercises = dayData.exercises.fillBlanks.length + dayData.exercises.multipleChoice.length + dayData.exercises.matching.length;
-    const exerciseProgress = Math.min((exercisesCompleted / totalExercises) * 100, 100);
+    const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCompleted / totalExercises) * 100, 100) : 0;
     const canCompleteDay = exerciseProgress >= 80; // e.g. require 80% completion
 
     const progress = (currentDay / 7) * 100;
@@ -106,48 +107,65 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
             </header>
 
             <main className="space-y-8">
-                {/* Vocabulary Section */}
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                            <BookOpen className="h-6 w-6"/>
-                            <span>Vocabulary</span>
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                       <div className="flex flex-col items-center">
-                           <WordCard item={dayData.items[currentWordIndex]} language={lesson.language} />
-                           <div className="flex items-center justify-center mt-2 w-full max-w-sm">
-                                <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
-                                <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {dayData.items.length}</span>
-                                <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
-                           </div>
-                       </div>
-                    </CardContent>
-                </Card>
+              <Tabs defaultValue="learn" className="w-full">
+                <TabsList className="grid w-full grid-cols-3">
+                  <TabsTrigger value="learn">
+                    <BookOpen className="mr-2 h-4 w-4" />
+                    Learn
+                  </TabsTrigger>
+                  <TabsTrigger value="practice">
+                    <BrainCircuit className="mr-2 h-4 w-4" />
+                    Practice
+                  </TabsTrigger>
+                  <TabsTrigger value="culture">
+                     <span className="mr-2">🌍</span>
+                    Culture
+                  </TabsTrigger>
+                </TabsList>
 
-                {/* Dialogue Section */}
-                {dayData.dialogue && dayData.dialogue.lines.length > 0 && (
-                    <DialoguePanel dialogue={dayData.dialogue} language={lesson.language} />
-                )}
+                <TabsContent value="learn" className="mt-6 space-y-8">
+                  <Card>
+                      <CardHeader>
+                          <CardTitle className="flex items-center gap-2">
+                              <span>Vocabulary</span>
+                          </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                         <div className="flex flex-col items-center">
+                             <WordCard item={dayData.items[currentWordIndex]} language={lesson.language} />
+                             <div className="flex items-center justify-center mt-2 w-full max-w-sm">
+                                  <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
+                                  <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {dayData.items.length}</span>
+                                  <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
+                             </div>
+                         </div>
+                      </CardContent>
+                  </Card>
+                  {dayData.dialogue && dayData.dialogue.lines.length > 0 && (
+                      <DialoguePanel dialogue={dayData.dialogue} language={lesson.language} />
+                  )}
+                </TabsContent>
 
-                {/* Exercises Section */}
-                {dayData.exercises && (
-                    <ExercisePanel exercises={dayData.exercises} onExercisesComplete={handleExercisesComplete} />
-                )}
-
-                {/* Cultural Note Section */}
-                <Card>
-                    <CardHeader>
-                        <CardTitle className="flex items-center gap-2">
-                            <span className="text-2xl">🌍</span>
-                            <span>Cultural Note</span>
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-muted-foreground italic">"{dayData.culturalNote}"</p>
-                    </CardContent>
-                </Card>
+                <TabsContent value="practice" className="mt-6">
+                    {dayData.exercises && (
+                        <ExercisePanel exercises={dayData.exercises} onExercisesComplete={handleExercisesComplete} />
+                    )}
+                </TabsContent>
+                
+                <TabsContent value="culture" className="mt-6">
+                   <Card>
+                      <CardHeader>
+                          <CardTitle className="flex items-center gap-2">
+                              <span>Cultural Note</span>
+                          </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                          <p className="text-muted-foreground italic">"{dayData.culturalNote}"</p>
+                      </CardContent>
+                  </Card>
+                </TabsContent>
+              </Tabs>
+                
 
                 {/* Completion Section */}
                 <section className="text-center py-6 flex flex-col items-center">
@@ -172,7 +190,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         )}
                         {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">Complete at least 80% of the exercises to finish the day.</p>}
                     </div>
-                     {dayCompleted && (
+                     {dayCompleted && currentDay < 7 && (
                         <Button asChild className="mt-4">
                             <Link href={`/lessons/${lesson.language.toLowerCase()}/${lesson.path}/${lesson.week}/${dayData.day + 1}`}>
                                Go to Day {dayData.day + 1} <ChevronRight className="ml-1 h-4 w-4" />
