@@ -33,8 +33,8 @@ export const ExercisesSchema = z.object({
   multipleChoice: z.array(z.object({
     id: z.string().describe("A unique identifier for this multiple-choice question (e.g., 'mc-1')."),
     question: z.string().describe("The question, usually in English, asking for a translation or concept."),
-    options: z.array(z.string()).describe("An array of 4 possible answers in the target language."),
-    correct: z.number().int().min(0).describe("The 0-based index of the correct answer in the 'options' array."),
+    options: z.array(z.string()).length(4, "Each multiple choice question must have exactly 4 options.").describe("An array of 4 possible answers in the target language."),
+    correct: z.number().int().min(0).max(3).describe("The 0-based index of the correct answer in the 'options' array."),
     explanation: z.string().optional().describe("An optional brief explanation of why the answer is correct."),
   })).optional().describe("An optional array of multiple-choice questions."),
   matching: z.array(z.object({

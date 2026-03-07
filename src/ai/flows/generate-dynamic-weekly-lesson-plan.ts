@@ -75,10 +75,10 @@ const lessonGenerationPrompt = ai.definePrompt({
   name: 'lessonGenerationPrompt',
   input: { schema: LessonGenerationPromptInputSchema },
   output: { schema: WeeklyLessonPlanSchema },
-  config: { maxOutputTokens: 8192 },
+  config: { maxOutputTokens: 8192, temperature: 0.2 },
   prompt: `You are an expert language lesson planner. Your task is to generate a complete, 7-day weekly lesson plan based on the provided schema.
 
-Please adhere strictly to the format and data types defined in the output schema. Use the descriptions within the schema as your guide for what to generate for each field.
+Your entire response must be ONLY the raw JSON object that validates against the schema. Do not wrap the JSON in markdown backticks or provide any explanation whatsoever. Use the descriptions within the schema as your guide for what to generate for each field.
 
 Generate the lesson plan for:
 - Target Language: {{language}}
@@ -89,11 +89,7 @@ Generate the lesson plan for:
 {{#if currencyHint}}
 
 Special Instructions for this theme: {{currencyHint}}
-{{/if}}
-
-IMPORTANT:
-- Your entire response must be ONLY the raw JSON object.
-- Do not wrap the JSON in markdown backticks or provide any explanation.`,
+{{/if}}`,
 });
 
 export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
