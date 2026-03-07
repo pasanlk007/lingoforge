@@ -109,7 +109,6 @@ const lessonGenerationPrompt = ai.definePrompt({
   input: { schema: LessonGenerationPromptInputSchema },
   output: { schema: WeeklyLessonPlanSchema },
   config: {
-    model: 'googleai/gemini-1.5-flash-latest',
     maxOutputTokens: 8192,
   },
   prompt:
@@ -215,14 +214,17 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       }
     }
 
-    const response = await lessonGenerationPrompt({
-      language: input.language,
-      path: input.path,
-      week: input.week,
-      nativeLanguage: input.nativeLanguage,
-      theme: theme,
-      pathDescription: pathDescription,
-    });
+    const response = await lessonGenerationPrompt(
+      {
+        language: input.language,
+        path: input.path,
+        week: input.week,
+        nativeLanguage: input.nativeLanguage,
+        theme: theme,
+        pathDescription: pathDescription,
+      },
+      { model: 'googleai/gemini-1.5-flash-latest' }
+    );
 
     const output = response.output;
     
