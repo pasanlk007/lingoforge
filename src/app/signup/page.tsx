@@ -13,12 +13,15 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Languages } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { nativeLanguages } from '@/lib/translations';
 
 
 export default function SignupPage() {
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [nativeLanguage, setNativeLanguage] = useState('English');
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const auth = useAuth();
@@ -40,7 +43,7 @@ export default function SignupPage() {
       const userProfile: UserProfile = {
         displayName: displayName,
         email: user.email!,
-        nativeLanguage: 'English',
+        nativeLanguage: nativeLanguage,
         selectedLanguage: 'French',
         subscription: 'free',
         xpPoints: 0,
@@ -125,6 +128,23 @@ export default function SignupPage() {
                   minLength={6}
                 />
               </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="nativeLanguage">Your Native Language</Label>
+                <Select value={nativeLanguage} onValueChange={setNativeLanguage} disabled={isLoading}>
+                    <SelectTrigger id="nativeLanguage" className="w-full">
+                        <SelectValue placeholder="Select your native language" />
+                    </SelectTrigger>
+                    <SelectContent>
+                        {nativeLanguages.map((lang) => (
+                            <SelectItem key={lang} value={lang}>
+                                {lang}
+                            </SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+              </div>
+
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? 'Creating Account...' : 'Sign Up'}
               </Button>
