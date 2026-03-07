@@ -175,7 +175,6 @@ const aiPlanningTopicPrompt = ai.definePrompt({
   name: 'aiPlanningTopicPrompt',
   input: { schema: AIPanningTopicSelectionInputSchema },
   output: { schema: AIPanningTopicSelectionOutputSchema },
-  model: 'anthropic/claude-3-haiku-20240307',
   config: {
     maxOutputTokens: 200, // Small output, just a topic string
   },
@@ -207,7 +206,6 @@ const lessonGenerationPrompt = ai.definePrompt({
   name: 'lessonGenerationPrompt',
   input: { schema: LessonGenerationPromptInputSchema },
   output: { schema: WeeklyLessonPlanSchema },
-  model: 'anthropic/claude-3-haiku-20240307',
   config: {
     maxOutputTokens: 8192,
   },

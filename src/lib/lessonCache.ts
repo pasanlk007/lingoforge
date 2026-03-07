@@ -2,7 +2,7 @@
 import { initializeApp, getApp, getApps } from 'firebase/app';
 import { getFirestore, collection, doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import { firebaseConfig } from '@/firebase/config';
-import { generateLesson } from "./claudeGenerator";
+import { generateDynamicWeeklyLessonPlan } from '@/ai/flows/generate-dynamic-weekly-lesson-plan';
 import type { LanguageLesson, LearningPath } from "./types";
 
 // Initialize Firebase for server-side usage
@@ -38,7 +38,13 @@ export async function getOrGenerateLesson(
 
     // 2. If miss, generate
     console.log(`[Cache MISS] Generating lesson for ${cacheKey}.`);
-    const newLesson = await generateLesson(language, path, week);
+    const newLesson = await generateDynamicWeeklyLessonPlan({
+      language,
+      path,
+      week,
+      nativeLanguage: "English", // Default native language for cached lessons
+      aiPlanningEnabled: false, // AI planning is a user-specific feature
+    });
 
     if (!newLesson) {
       throw new Error("Lesson generation failed.");
@@ -57,7 +63,7 @@ export async function getOrGenerateLesson(
     await setDoc(docRef, cacheData);
     
     // 4. Return
-    return newLesson;
+    return newLesson as LanguageLesson;
 
   } catch (error) {
     console.error(`Error in getOrGenerateLesson for ${cacheKey}:`, error);
