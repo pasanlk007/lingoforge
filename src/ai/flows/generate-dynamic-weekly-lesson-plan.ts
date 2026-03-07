@@ -112,77 +112,24 @@ const lessonGenerationPrompt = ai.definePrompt({
     maxOutputTokens: 8192,
   },
   prompt:
-    `You are an expert JSON generator specializing in creating language lesson plans.
-Your task is to generate a complete 7-day lesson plan for the following parameters:
+    `You are an expert language lesson planner. Your task is to generate a complete, 7-day lesson plan as a valid JSON object.
 
+The lesson plan is for:
 - Language to teach: {{language}}
-- Student native language: {{nativeLanguage}} (all translations should be to this language)
-- Learning path: {{path}} ({{lookup pathDescription path}})
-- Week number: {{week}}
-- Week theme: {{theme}}
+- Student's native language: {{nativeLanguage}} (all translations must be in this language)
+- Learning Path: {{path}} (context: {{lookup pathDescription path}})
+- Week: {{week}}
+- Weekly Theme: {{theme}}
 
-You MUST return ONLY a single, valid JSON object that conforms to the structure provided below. Do not include any explanatory text, markdown formatting, or code fences like \`\`\`json.
-IMPORTANT: Return ONLY a raw JSON object. No markdown, no backticks, no explanation. Just the JSON.
+Your response MUST be ONLY a single, valid JSON object that strictly adheres to the output schema. Do not include any explanatory text, markdown formatting, or any characters outside of the JSON object.
 
-The JSON object must contain a "days" array with exactly 7 complete day objects.
-Each day object must contain:
-- A list of vocabulary items.
-- A dialogue with several lines.
-- An 'exercises' object containing 'fillBlanks', 'multipleChoice', and 'matching' questions.
-- A 'culturalNote'.
-- 'progressTracking' with a unique badge name.
-
-Use this EXACT JSON structure for your response:
-
-{
-  "week": {{week}},
-  "language": "{{language}}",
-  "path": "{{path}}",
-  "title": "Week {{week}}: {{theme}}",
-  "description": "A brief description of the learning goals for this week's theme.",
-  "days": [
-    {
-      "day": 1,
-      "title": "Day 1 Topic Title",
-      "type": "vocabulary",
-      "items": [
-        {
-          "id": "w1",
-          "target": "word in {{language}}",
-          "phonetic": "pronunciation guide",
-          "english": "English meaning",
-          "audioText": "word for text-to-speech",
-          "exampleSentence": {
-            "target": "sentence in {{language}}",
-            "english": "English translation"
-          }
-        }
-      ],
-      "dialogue": {
-        "title": "Short Conversation Scene",
-        "lines": [
-          {
-            "speaker": "A",
-            "target": "dialogue in {{language}}",
-            "english": "English translation",
-            "phonetic": "pronunciation"
-          }
-        ]
-      },
-      "exercises": {
-        "fillBlanks": [],
-        "multipleChoice": [],
-        "matching": []
-      },
-      "culturalNote": "An interesting cultural fact related to the lesson.",
-      "progressTracking": {
-        "xpReward": 50,
-        "streakBonus": 10,
-        "badge": "Week{{week}}Day1{{path}}Badge"
-      }
-    }
-  ]
-}
+The JSON object should have a 'days' array with exactly 7 lesson objects. For each day, please provide:
+- 'day', 'title', and 'type' for the lesson.
+- 'items': A list of vocabulary words, each with 'id', 'target', 'phonetic', 'english' translation, 'audioText', and an 'exampleSentence'.
+- 'dialogue': A conversation with a title and multiple lines, each with 'speaker', 'target' text, 'english' translation, and 'phonetic' guide.
+- 'exercises': An object containing lists of 'fillBlanks', 'multipleChoice', and 'matching' questions.
+- 'culturalNote': A brief, interesting cultural fact related to the day's lesson.
+- 'progressTracking': An object containing 'xpReward', 'streakBonus', and a unique 'badge' name for the day (e.g., "Week1Day1SurvivalBadge").
 `,
 });
 
