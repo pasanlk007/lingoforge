@@ -107,34 +107,43 @@ const LessonGenerationPromptInputSchema = z.object({
 const lessonGenerationPrompt = ai.definePrompt({
   name: 'lessonGenerationPrompt',
   input: { schema: LessonGenerationPromptInputSchema },
+  output: { schema: WeeklyLessonPlanSchema },
   config: {
     model: 'googleai/gemini-1.5-flash-latest',
-    responseFormat: 'json',
     maxOutputTokens: 8192,
   },
   prompt:
-    `You are a professional language teacher.
-Create a complete 7-day lesson week.
+    `You are an expert JSON generator specializing in creating language lesson plans.
+Your task is to generate a complete 7-day lesson plan for the following parameters:
 
-Language to teach: {{language}}
-Student native language: {{nativeLanguage}}
-Learning path: {{path}} ({{lookup pathDescription path}})
-Week number: {{week}}
-Week theme: {{theme}}
+- Language to teach: {{language}}
+- Student native language: {{nativeLanguage}} (all translations should be to this language)
+- Learning path: {{path}} ({{lookup pathDescription path}})
+- Week number: {{week}}
+- Week theme: {{theme}}
 
-Return ONLY valid JSON.
-Use this EXACT structure:
+You MUST return ONLY a single, valid JSON object that conforms to the structure provided below. Do not include any explanatory text, markdown formatting, or code fences like \`\`\`json.
+
+The JSON object must contain a "days" array with exactly 7 complete day objects.
+Each day object must contain:
+- Exactly 5 vocabulary items.
+- A dialogue with exactly 4 lines (alternating speakers A and B).
+- An 'exercises' object with 3 'fillBlanks' questions, 3 'multipleChoice' questions (with 4 options each), and 5 'matching' pairs.
+- A 'culturalNote'.
+- 'progressTracking' with a badge formatted as '{language}_w{week}_d{day}_{path}'.
+
+Use this EXACT JSON structure for your response:
 
 {
   "week": {{week}},
   "language": "{{language}}",
   "path": "{{path}}",
   "title": "Week {{week}}: {{theme}}",
-  "description": "Brief description of this week",
+  "description": "A brief description of the learning goals for this week's theme.",
   "days": [
     {
       "day": 1,
-      "title": "Day 1 topic title (native translation)",
+      "title": "Day 1 Topic Title",
       "type": "vocabulary",
       "items": [
         {
@@ -147,70 +156,33 @@ Use this EXACT structure:
             "target": "sentence in {{language}}",
             "english": "English translation"
           }
-        },
-        // [w2, w3, w4, w5 - 5 words total, ensure unique IDs like w2, w3, w4, w5]
+        }
       ],
       "dialogue": {
-        "title": "conversation scene",
+        "title": "Short Conversation Scene",
         "lines": [
           {
             "speaker": "A",
             "target": "dialogue in {{language}}",
             "english": "English translation",
             "phonetic": "pronunciation"
-          },
-          // [3 more lines A and B speakers - 4 lines total]
+          }
         ]
       },
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1",
-            "sentence": "_____ means Hello in French",
-            "answer": "Bonjour",
-            "hint": "morning greeting"
-          },
-          // [2 more questions - 3 questions total, ensure unique IDs like fb2, fb3]
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1",
-            "question": "What does Bonjour mean?",
-            "options": ["Hello", "Goodbye", "Thank you", "Please"],
-            "correct": 0,
-            "explanation": "Explanation for correct answer"
-          },
-          // [2 more questions with 4 options each - 3 questions total, ensure unique IDs like mc2, mc3]
-        ],
-        "matching": [
-          {"target": "Word in {{language}}", "english": "English equivalent"},
-          // [4 more pairs - 5 pairs total]
-        ]
+        "fillBlanks": [],
+        "multipleChoice": [],
+        "matching": []
       },
-      "culturalNote": "interesting fact about the language/culture related to the week's theme",
+      "culturalNote": "An interesting cultural fact related to the lesson.",
       "progressTracking": {
         "xpReward": 50,
         "streakBonus": 10,
-        "badge": "{{language}}_w1_d1_{{path}}"
+        "badge": "{{language}}_w{{week}}_d1_{{path}}"
       }
-    },
-    // [days 2, 3, 4, 5, 6, 7 - ALL 7 DAYS REQUIRED, follow the same structure and critical rules for each day]
+    }
   ]
 }
-
-CRITICAL RULES:
-1. Return ONLY raw JSON. No markdown. No backticks. No explanation.
-2. ALL 7 days must be included in the 'days' array.
-3. Each day needs exactly 5 vocabulary items in the 'items' array.
-4. For each day's dialogue, ensure exactly 4 lines with alternating speakers A and B.
-5. For each day's exercises, include exactly 3 fillBlanks questions, 3 multipleChoice questions (each with 4 options), and 5 matching pairs.
-6. Do not stop until all 7 days are complete.
-7. Make content relevant to the "{{theme}}" theme for the current week and learning path.
-8. Ensure all 'id' fields (for vocabulary items, fillBlanks, multipleChoice) are unique within their respective arrays for each day. For vocabulary items, use 'w1' through 'w5'. For fillBlanks, 'fb1' through 'fb3'. For multipleChoice, 'mc1' through 'mc3'.
-9. All phonetic spellings should be provided in a clear, easy-to-understand phonetic guide, similar to the "Bon-zhoor" example.
-10. The 'type' field for each day should primarily be "vocabulary" unless explicitly stated otherwise by the theme.
-11. The 'badge' in 'progressTracking' should follow the format '{language}_w{week}_d{day}_{path}', with the correct day number for each day.
-12. All translations should be into English, as specified in the schema.
 `,
 });
 
@@ -232,20 +204,17 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
         previousPerformanceSummary: input.previousPerformanceSummary,
         availableThemes: currentPathThemes,
       });
-      // LLM output is wrapped in an object { chosenTopic: string }
       theme = output!.chosenTopic;
     } else {
       if (input.selectedTopic) {
         theme = input.selectedTopic;
       }
       else {
-        // Fallback to default theme if no topic is selected and AI is off,
-        // mimicking the logic from claudeGenerator.ts.
         theme = weekThemes[input.path][(input.week - 1) % weekThemes[input.path].length];
       }
     }
 
-    const response = await lessonGenerationPrompt({
+    const { output } = await lessonGenerationPrompt({
       language: input.language,
       path: input.path,
       week: input.week,
@@ -254,21 +223,14 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       pathDescription: pathDescription,
     });
 
-    const rawResponseText = response.text;
-
-    try {
-        const lessonJson = JSON.parse(rawResponseText);
-        const validatedLesson = WeeklyLessonPlanSchema.parse(lessonJson);
-        return validatedLesson;
-    } catch (e) {
-        console.error("Genkit validation failed. Raw LLM output was:");
-        console.error(rawResponseText);
-        console.error("Zod/JSON parsing error:", e);
-        // Re-throw a more user-friendly error.
-        throw new Error(
-            'The AI failed to generate a valid lesson plan. Please try again.'
-        );
+    if (!output) {
+      console.error("Genkit validation failed. LLM output did not match schema.");
+      throw new Error(
+          'The AI failed to generate a valid lesson plan that matched the required structure. Please try again.'
+      );
     }
+    
+    return output;
   }
 );
 
