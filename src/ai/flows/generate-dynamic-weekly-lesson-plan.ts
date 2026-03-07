@@ -126,9 +126,9 @@ You MUST return ONLY a single, valid JSON object that conforms to the structure 
 
 The JSON object must contain a "days" array with exactly 7 complete day objects.
 Each day object must contain:
-- Exactly 5 vocabulary items.
-- A dialogue with exactly 4 lines (alternating speakers A and B).
-- An 'exercises' object with 3 'fillBlanks' questions, 3 'multipleChoice' questions (with 4 options each), and 5 'matching' pairs.
+- A list of vocabulary items.
+- A dialogue with several lines.
+- An 'exercises' object containing 'fillBlanks', 'multipleChoice', and 'matching' questions.
 - A 'culturalNote'.
 - 'progressTracking' with a badge formatted as '{language}_w{week}_d{day}_{path}'.
 
