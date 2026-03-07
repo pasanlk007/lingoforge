@@ -288,7 +288,7 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardFooter>
                   <Button variant="secondary" className="w-full" asChild>
-                    <Link href="/dashboard">{t.askAIGuide}</Link>
+                    <Link href="/ai-guide">{t.askAIGuide}</Link>
                   </Button>
                 </CardFooter>
               </Card>
