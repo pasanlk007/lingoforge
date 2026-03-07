@@ -126,7 +126,7 @@ export default function DashboardPage() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full sm:w-auto">
-                    <Link href={`/lessons/${userData.activeLanguage.toLowerCase()}/${userData.activePath.toLowerCase()}/${userData.lastLesson.week}/${userData.lastLesson.day + 1}`}>
+                    <Link href="/dashboard">
                       Go to Next Lesson <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
@@ -192,7 +192,7 @@ export default function DashboardPage() {
                 </CardHeader>
                 <CardFooter>
                   <Button variant="secondary" className="w-full" asChild>
-                    <Link href="/ai-guide">Ask LingoForge AI</Link>
+                    <Link href="/dashboard">Ask LingoForge AI</Link>
                   </Button>
                 </CardFooter>
               </Card>

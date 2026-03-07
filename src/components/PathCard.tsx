@@ -13,9 +13,7 @@ interface PathCardProps {
 
 export function PathCard({ icon, title, description, details, id, language = 'french' }: PathCardProps) {
   
-  const href = id === 'alphabet' 
-    ? `/alphabet/${language.toLowerCase()}/1/1`
-    : `/lessons/${language.toLowerCase()}/${id}/1/1`;
+  const href = "/dashboard";
 
   return (
     <Card className="flex flex-col">

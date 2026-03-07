@@ -602,8 +602,6 @@ export default function LandingPage() {
   const [targetLanguage, setTargetLanguage] = useState(targetLanguages[0].lang);
   const [isMounted, setIsMounted] = useState(false);
   const router = useRouter();
-  
-  const pathsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const savedLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
@@ -618,10 +616,6 @@ export default function LandingPage() {
       localStorage.setItem("nativeLanguage", nativeLanguage);
     }
   }, [nativeLanguage, isMounted]);
-
-  const handleScrollToPaths = () => {
-    pathsRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }
   
   const handleStartJourney = () => {
     router.push('/dashboard');
@@ -708,7 +702,7 @@ export default function LandingPage() {
                 </div>
                  <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
-                    <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleScrollToPaths}>{t.viewPaths}</Button>
+                    <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleStartJourney}>{t.viewPaths}</Button>
                  </div>
               </div>
             </div>
@@ -749,7 +743,11 @@ export default function LandingPage() {
                        <CardTitle>{t.scenario1Title}</CardTitle>
                        <CardDescription className="text-slate-400">{t.scenario1Desc}</CardDescription>
                      </CardHeader>
-                     <CardContent><Button variant="link" className="text-cyan-400">{t.scenario1Btn}</Button></CardContent>
+                     <CardContent>
+                        <Button variant="link" asChild className="text-cyan-400">
+                            <Link href="/dashboard">{t.scenario1Btn}</Link>
+                        </Button>
+                     </CardContent>
                    </Card>
                    <Card className="bg-slate-800 border-slate-700">
                      <CardHeader>
@@ -757,7 +755,11 @@ export default function LandingPage() {
                        <CardTitle>{t.scenario2Title}</CardTitle>
                        <CardDescription className="text-slate-400">{t.scenario2Desc}</CardDescription>
                      </CardHeader>
-                     <CardContent><Button variant="link" className="text-cyan-400">{t.scenario2Btn}</Button></CardContent>
+                     <CardContent>
+                        <Button variant="link" asChild className="text-cyan-400">
+                            <Link href="/dashboard">{t.scenario2Btn}</Link>
+                        </Button>
+                     </CardContent>
                    </Card>
                    <Card className="bg-slate-800 border-slate-700">
                      <CardHeader>
@@ -765,7 +767,11 @@ export default function LandingPage() {
                        <CardTitle>{t.scenario3Title}</CardTitle>
                        <CardDescription className="text-slate-400">{t.scenario3Desc}</CardDescription>
                      </CardHeader>
-                     <CardContent><Button variant="link" className="text-cyan-400">{t.scenario3Btn}</Button></CardContent>
+                     <CardContent>
+                        <Button variant="link" asChild className="text-cyan-400">
+                            <Link href="/dashboard">{t.scenario3Btn}</Link>
+                        </Button>
+                     </CardContent>
                    </Card>
                 </div>
               </CardContent>
@@ -773,7 +779,7 @@ export default function LandingPage() {
           </div>
         </section>
         
-        <section ref={pathsRef} className="py-20 sm:py-24 bg-slate-900/50">
+        <section className="py-20 sm:py-24 bg-slate-900/50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="flex flex-col border-2 border-green-500 bg-gradient-to-br from-green-900/30 to-slate-900 shadow-lg shadow-green-500/10">
