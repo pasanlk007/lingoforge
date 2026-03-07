@@ -26,6 +26,7 @@ export async function getOrGenerateLesson(
   const cacheKey = `${language.toLowerCase()}_${path}_week${week}`;
   const docRef = doc(lessonCacheCollection, cacheKey);
 
+  console.log('Attempting generation for:', cacheKey);
   try {
     // 1. Check cache
     const docSnap = await getDoc(docRef);
@@ -65,8 +66,8 @@ export async function getOrGenerateLesson(
     // 4. Return
     return newLesson as LanguageLesson;
 
-  } catch (error) {
-    console.error(`Error in getOrGenerateLesson for ${cacheKey}:`, error);
+  } catch (error: any) {
+    console.error('Full error:', JSON.stringify(error), error?.message, error?.stack);
     return null;
   }
 }

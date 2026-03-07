@@ -123,6 +123,7 @@ Your task is to generate a complete 7-day lesson plan for the following paramete
 - Week theme: {{theme}}
 
 You MUST return ONLY a single, valid JSON object that conforms to the structure provided below. Do not include any explanatory text, markdown formatting, or code fences like \`\`\`json.
+IMPORTANT: Return ONLY a raw JSON object. No markdown, no backticks, no explanation. Just the JSON.
 
 The JSON object must contain a "days" array with exactly 7 complete day objects.
 Each day object must contain:
@@ -178,7 +179,7 @@ Use this EXACT JSON structure for your response:
       "progressTracking": {
         "xpReward": 50,
         "streakBonus": 10,
-        "badge": "Week1Day1SurvivalBadge"
+        "badge": "Week{{week}}Day1{{path}}Badge"
       }
     }
   ]
@@ -224,6 +225,8 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
     });
 
     const output = response.output;
+    
+    console.log('AI raw response:', JSON.stringify(output));
 
     if (!output) {
       console.error("Genkit validation failed. LLM output did not match schema. Raw text:", response.text);
