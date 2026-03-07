@@ -130,7 +130,7 @@ Each day object must contain:
 - A dialogue with several lines.
 - An 'exercises' object containing 'fillBlanks', 'multipleChoice', and 'matching' questions.
 - A 'culturalNote'.
-- 'progressTracking' with a badge formatted as '{language}_w{week}_d{day}_{path}'.
+- 'progressTracking' with a unique badge name.
 
 Use this EXACT JSON structure for your response:
 
@@ -178,7 +178,7 @@ Use this EXACT JSON structure for your response:
       "progressTracking": {
         "xpReward": 50,
         "streakBonus": 10,
-        "badge": "{{language}}_w{{week}}_d1_{{path}}"
+        "badge": "Week1Day1SurvivalBadge"
       }
     }
   ]
@@ -214,7 +214,7 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       }
     }
 
-    const { output } = await lessonGenerationPrompt({
+    const response = await lessonGenerationPrompt({
       language: input.language,
       path: input.path,
       week: input.week,
@@ -223,8 +223,10 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       pathDescription: pathDescription,
     });
 
+    const output = response.output;
+
     if (!output) {
-      console.error("Genkit validation failed. LLM output did not match schema.");
+      console.error("Genkit validation failed. LLM output did not match schema. Raw text:", response.text);
       throw new Error(
           'The AI failed to generate a valid lesson plan that matched the required structure. Please try again.'
       );
