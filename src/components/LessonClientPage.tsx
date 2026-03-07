@@ -73,7 +73,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         setShowConfetti(true);
     }
 
-    const totalExercises = dayData.exercises.fillBlanks.length + dayData.exercises.multipleChoice.length + dayData.exercises.matching.length;
+    const totalExercises = (dayData.exercises.fillBlanks?.length ?? 0) + (dayData.exercises.multipleChoice?.length ?? 0) + (dayData.exercises.matching?.length ?? 0);
     const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCompleted / totalExercises) * 100, 100) : 0;
     const canCompleteDay = exerciseProgress >= 80; // e.g. require 80% completion
 
