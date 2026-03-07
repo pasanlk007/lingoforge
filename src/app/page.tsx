@@ -485,93 +485,93 @@ const translations = {
     footerLangs: "আপনার ভাষায় উপলব্ধ।",
     footerCredit: "© 2026 LingoForge। অভিবাসীদের জন্য, যারা যাত্রা বোঝেন তাদের দ্বারা নির্মিত।"
   },
-  Arabic: {
-    heroTitle: "تنمية المهارات اللغوية للعمال المهاجرين",
-    heroSub: "مسارات منظمة لبقاء اللغة للعمال المهاجرين.",
-    selectNative: "أنا أتحدث...",
-    selectTarget: "أنا ذاهب إلى...",
-    startBtn: "ابدأ رحلتي - مجاناً",
-    viewPaths: "عرض مسارات التعلم",
-    path1Title: "مسار البقاء",
-    path1Desc: "عبارات أساسية للبقاء منذ اليوم الأول في بلد جديد.",
-    path2Title: "مسار الأبجدية",
-    path2Desc: "اقرأ اللافتات والقوائم والرسائل باللغة المحلية.",
-    path3Title: "مسار الأرقام",
-    path3Desc: "تعامل مع المال والوقت والأرقام بثقة كل يوم.",
-    journeyTitle: "رحلتك تبدأ من هنا",
-    pricingTitle: "تسعير بسيط",
-    pricingSub: "ابدأ مجانًا. قم بالترقية عندما تكون مستعدًا.",
-    monthly: "شهري",
-    yearly: "سنوي",
-    bestValue: "أفضل قيمة",
-    perMonth: "/شهر",
-    perYear: "/سنة",
-    startFree: "ابدأ مجاناً",
-    getStarted: "ابدأ الآن",
-    journeyLeaving: "مغادرة الوطن",
-    journeyArriving: "الوصول",
-    journeyWorking: "العمل",
-    journeySpeaking: "التحدث",
-    journeyBelonging: "الانتماء",
-    scenario1Title: "حالة طارئة",
-    scenario1Desc: "طفلك مريض. تحتاج إلى شرح الأعراض للطبيب. هل تعرف الكلمات؟",
-    scenario1Btn: "تعلم المفردات الطبية",
-    scenario2Title: "البنك والمال",
-    scenario2Desc: "تحتاج إلى فتح حساب بنكي. النموذج بلغة أجنبية. هل يمكنك تعبئته؟",
-    scenario2Btn: "تعلم الأرقام والمستندات",
-    scenario3Title: "الحياة اليومية",
-    scenario3Desc: "تحتاج إلى ركوب الحافلة الصحيحة للذهاب إلى العمل. السائق لا يتحدث الإنجليزية. هل يمكنك طلب المساعدة؟",
-    scenario3Btn: "تعلم عبارات البقاء",
+  Nepali: {
+    heroTitle: "प्रवासी कामदारहरूको लागि भाषा कौशल विकास",
+    heroSub: "प्रवासी कामदारहरूको लागि संरचित भाषा जीवन रक्षा मार्गहरू।",
+    selectNative: "म बोल्छु...",
+    selectTarget: "म जाँदैछु...",
+    startBtn: "मेरो यात्रा सुरु गर्नुहोस् - नि: शुल्क",
+    viewPaths: "सिक्ने मार्गहरू हेर्नुहोस्",
+    path1Title: "जीवन रक्षा मार्ग",
+    path1Desc: "नयाँ देशमा पहिलो दिनदेखि बाँच्नको लागि आवश्यक वाक्यांशहरू।",
+    path2Title: "वर्णमाला मार्ग",
+    path2Desc: "स्थानीय भाषामा संकेत, मेनु र सन्देशहरू पढ्नुहोस्।",
+    path3Title: "संख्या मार्ग",
+    path3Desc: "हरेक दिन पैसा, समय र संख्याहरू आत्मविश्वासका साथ ह्यान्डल गर्नुहोस्।",
+    journeyTitle: "तपाईंको यात्रा यहाँबाट सुरु हुन्छ",
+    pricingTitle: "सरल मूल्य निर्धारण",
+    pricingSub: "नि:शुल्क सुरु गर्नुहोस्। तयार भएपछि अपग्रेड गर्नुहोस्।",
+    monthly: "मासिक",
+    yearly: "वार्षिक",
+    bestValue: "उत्तम मूल्य",
+    perMonth: "/महिना",
+    perYear: "/वर्ष",
+    startFree: "नि:शुल्क सुरु गर्नुहोस्",
+    getStarted: "सुरु गर्नुहोस्",
+    journeyLeaving: "घर छोड्दै",
+    journeyArriving: "आगमन",
+    journeyWorking: "काम गर्दै",
+    journeySpeaking: "बोल्दै",
+    journeyBelonging: "सम्बन्धित",
+    scenario1Title: "आपतकालिन",
+    scenario1Desc: "तपाईंको बच्चा बिरामी छ। तपाईंले डाक्टरलाई लक्षणहरू व्याख्या गर्न आवश्यक छ। के तपाईंलाई शब्दहरू थाहा छ?",
+    scenario1Btn: "चिकित्सा शब्दावली सिक्नुहोस्",
+    scenario2Title: "बैंक र पैसा",
+    scenario2Desc: "तपाईंले बैंक खाता खोल्न आवश्यक छ। फारम विदेशी भाषामा छ। के तपाईं यसलाई भर्न सक्नुहुन्छ?",
+    scenario2Btn: "संख्या र कागजातहरू सिक्नुहोस्",
+    scenario3Title: "दैनिक जीवन",
+    scenario3Desc: "तपाईंले काममा जानको लागि सही बस लिन आवश्यक छ। ड्राइभरले अंग्रेजी बोल्दैन। के तपाईं मद्दत माग्न सक्नुहुन्छ?",
+    scenario3Btn: "जीवन रक्षा वाक्यांशहरू सिक्नुहोस्",
     features: {
-      ai: { title: "مدعوم بالذكاء الاصطناعي", desc: "دروس حقيقية معدة لك" },
-      audio: { title: "صوت مدمج", desc: "اسمع النطق الأصلي لكل كلمة" },
-      dialogues: { title: "حوارات حقيقية", desc: "محادثات فعلية ستستخدمها يوميًا" },
-      exercises: { title: "تمارين يومية", desc: "املأ الفراغات، اختيار من متعدد، ألعاب مطابقة الكلمات" },
-      streak: { title: "نظام السلسلة", desc: "حافظ على حماسك مع السلاسل اليومية" },
-      progress: { title: "تتبع التقدم", desc: "شاهد إلى أي مدى وصلت كل أسبوع" },
-      certs: { title: "شهادات", desc: "احصل على إثبات لتقدمك" },
-      langs: { title: "17 لغة", desc: "أوروبية، آسيوية، شرق أوسطية" },
+      ai: { title: "एआई-संचालित", desc: "तपाईंको लागि उत्पन्न वास्तविक पाठहरू" },
+      audio: { title: "अडियो निर्मित", desc: "हरेक शब्दको लागि स्थानीय उच्चारण सुन्नुहोस्" },
+      dialogues: { title: "वास्तविक संवादहरू", desc: "वास्तविक कुराकानीहरू जुन तपाईंले दैनिक प्रयोग गर्नुहुनेछ" },
+      exercises: { title: "दैनिक अभ्यासहरू", desc: "खाली ठाउँ भर्नुहोस्, MCQ, शब्द मिलान खेलहरू" },
+      streak: { title: "स्ट्रीक प्रणाली", desc: "दैनिक स्ट्रीकहरूको साथ प्रेरित रहनुहोस्" },
+      progress: { title: "प्रगति ट्र्याकिङ", desc: "हेर्नुहोस् तपाईं हरेक हप्ता कति टाढा पुग्नुभएको छ" },
+      certs: { title: "प्रमाणपत्रहरू", desc: "आफ्नो प्रगतिको प्रमाण कमाउनुहोस्" },
+      langs: { title: "१७ भाषाहरू", desc: "युरोपेली, एसियाली, मध्य पूर्वी" },
     },
     freePlan: {
-      title: "مجاني للأبد",
+      title: "सधैंको लागि नि: शुल्क",
       price: "€0",
-      feat1: "الأسبوع 1، اليوم 1 فقط",
-      feat2: "5 مفردات",
-      feat3: "لا يوجد صوت",
-      feat4: "لا توجد تمارين",
-      feat5: "لا يوجد دليل ذكاء اصطناعي",
-      btn: "ابدأ مجانًا - لا حاجة لبطاقة"
+      feat1: "हप्ता १, दिन १ मात्र",
+      feat2: "५ शब्दावली शब्दहरू",
+      feat3: "कुनै अडियो छैन",
+      feat4: "कुनै अभ्यास छैन",
+      feat5: "कुनै एआई गाइड छैन",
+      btn: "नि:शुल्क सुरु गर्नुहोस् - कार्ड आवश्यक छैन"
     },
     monthlyPlan: {
-      title: "شهري",
+      title: "मासिक",
       price: "€9",
-      feat1: "جميع المسارات الثلاثة",
-      feat2: "جميع الأسابيع الـ 48",
-      feat3: "نطق صوتي أصلي",
-      feat4: "جميع التمارين",
-      feat5: "دليل الذكاء الاصطناعي",
-      feat6: "شهادات التقدم",
-      btn: "ابدأ الآن"
+      feat1: "सबै ३ मार्गहरू",
+      feat2: "सबै ४८ हप्ताहरू",
+      feat3: "अडियो उच्चारण",
+      feat4: "सबै अभ्यासहरू",
+      feat5: "एआई गाइड",
+      feat6: "प्रगति प्रमाणपत्रहरू",
+      btn: "सुरु गर्नुहोस्"
     },
     yearlyPlan: {
-      title: "سنوي",
+      title: "वार्षिक",
       price: "€99",
-      save: "وفر 9 يورو مقارنة بالشهري!",
-      feat1: "كل شيء في الخطة الشهرية",
-      feat2: "دعم ذو أولوية",
-      feat3: "ميزات الوصول المبكر",
-      btn: "ابدأ الآن"
+      save: "मासिकको तुलनामा €9 बचत गर्नुहोस्!",
+      feat1: "मासिकमा सबै कुरा",
+      feat2: "प्राथमिकता समर्थन",
+      feat3: "प्रारम्भिक पहुँच सुविधाहरू",
+      btn: "सुरु गर्नुहोस्"
     },
-    footerTagline: "بقاء اللغة للمهاجر الحديث.",
+    footerTagline: "आधुनिक प्रवासीका लागि भाषा जीवन रक्षा।",
     footerLinks: {
-      about: "معلومات عنا",
-      how: "كيف يعمل",
-      pricing: "الأسعار",
-      privacy: "سياسة الخصوصية",
-      terms: "شروط الخدمة"
+      about: "हाम्रो बारेमा",
+      how: "यसले कसरी काम गर्दछ",
+      pricing: "मूल्य निर्धारण",
+      privacy: "गोपनीयता नीति",
+      terms: "सेवा सर्तहरू"
     },
-    footerLangs: "متوفر بلغتك.",
-    footerCredit: "© 2026 LingoForge. صُنع للمهاجرين، من قبل أشخاص يفهمون الرحلة."
+    footerLangs: "तपाईंको भाषामा उपलब्ध छ।",
+    footerCredit: "© 2026 LingoForge। प्रवासीहरूका लागि, यात्रा बुझ्ने मानिसहरूद्वारा निर्मित।"
   }
 };
 
@@ -636,7 +636,7 @@ export default function LandingPage() {
   }
 
   const t = translations[nativeLanguage];
-  const isRTL = ['Urdu', 'Arabic'].includes(nativeLanguage);
+  const isRTL = ['Urdu'].includes(nativeLanguage);
 
   if (!isMounted) {
     return <div className="w-full min-h-screen bg-slate-900" />;
@@ -731,13 +731,13 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent>
                 <div className="flex justify-between items-center text-center text-xs sm:text-sm mb-12 px-2">
-                  {([
+                  {[
                     { icon: <PlaneTakeoff/>, label: t.journeyLeaving },
                     { icon: <Home/>, label: t.journeyArriving },
                     { icon: <Briefcase/>, label: t.journeyWorking },
                     { icon: <MessageSquare/>, label: t.journeySpeaking },
                     { icon: <Award/>, label: t.journeyBelonging },
-                  ]).map((item, index) => (
+                  ].map((item, index) => (
                     <React.Fragment key={item.label}>
                       <div className="flex flex-col items-center gap-2 w-1/5">
                         <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyan-900/50 border-2 border-cyan-500/50 text-cyan-400">
@@ -970,3 +970,5 @@ export default function LandingPage() {
     </div>
   );
 }
+
+    
