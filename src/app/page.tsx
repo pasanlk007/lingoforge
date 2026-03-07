@@ -42,6 +42,12 @@ import {
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { translations, targetLanguages, nativeLanguages } from "@/lib/translations";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function LandingPage() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
@@ -50,10 +56,8 @@ export default function LandingPage() {
   const router = useRouter();
 
   useEffect(() => {
-    const savedLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
-    if (savedLang && translations[savedLang]) {
-      setNativeLanguage(savedLang);
-    }
+    // Page always defaults to English, per user request.
+    // The language choice is still saved to localStorage for other pages to use.
     setIsMounted(true);
   }, []);
   
@@ -62,7 +66,7 @@ export default function LandingPage() {
   }
 
   const t = translations[nativeLanguage];
-  const isRTL = ['Urdu'].includes(nativeLanguage);
+  const isRTL = ['Urdu'].includes(nativeLanguage as string);
 
   if (!isMounted) {
     return <div className="w-full min-h-screen bg-slate-900" />;
@@ -78,6 +82,28 @@ export default function LandingPage() {
               <Languages className="h-7 w-7 text-cyan-400" />
               <span className="font-headline text-2xl font-bold">LingoForge</span>
             </Link>
+             <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="gap-2">
+                  <Globe className="h-5 w-5" />
+                  <span>{nativeLanguage}</span>
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-slate-800 border-slate-700 text-white">
+                {nativeLanguages.map((lang) => (
+                  <DropdownMenuItem
+                    key={lang}
+                    onSelect={() => {
+                      setNativeLanguage(lang as keyof typeof translations);
+                      if (isMounted) localStorage.setItem("nativeLanguage", lang);
+                    }}
+                  >
+                    {lang}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </nav>
@@ -374,7 +400,7 @@ export default function LandingPage() {
               <div>
                 <h4 className="font-semibold text-white tracking-wider uppercase">{t.footerLinks.about}</h4>
                 <ul className="mt-4 space-y-2">
-                  {Object.values(t.footerLinks).map(link => (
+                  {Object.values(t.footerLinks).slice(0,5).map((link:any) => (
                      <li key={link}><Link href="#" className="text-slate-400 hover:text-white">{link}</Link></li>
                   ))}
                 </ul>
@@ -402,5 +428,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
