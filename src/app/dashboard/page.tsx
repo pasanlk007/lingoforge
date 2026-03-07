@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import React, { useState, useEffect } from "react";
@@ -69,6 +67,10 @@ export default function DashboardPage() {
     },
     weeklyProgress: [true, true, true, false, false, false, false], // Mon, Tue, Wed completed
   };
+
+  const nextDay = userData.lastLesson.day < 7 ? userData.lastLesson.day + 1 : 1;
+  const nextWeek = userData.lastLesson.day < 7 ? userData.lastLesson.week : userData.lastLesson.week + 1;
+  const nextLessonUrl = `/lessons/${userData.activeLanguage.toLowerCase()}/${userData.activePath.toLowerCase()}/${nextWeek}/${nextDay}`;
 
 
   if (!isMounted) {
@@ -164,14 +166,14 @@ export default function DashboardPage() {
                     <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                         <BookOpen className="h-8 w-8 text-primary" />
                         <div>
-                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', '2').replace('{day}', '4')}</p>
+                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', nextWeek.toString()).replace('{day}', nextDay.toString())}</p>
                             <p className="text-sm text-muted-foreground">{t.keepProgress}</p>
                         </div>
                     </div>
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full sm:w-auto">
-                    <Link href="/dashboard">
+                    <Link href={nextLessonUrl}>
                       {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
@@ -299,7 +301,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-
-    
-
-    
