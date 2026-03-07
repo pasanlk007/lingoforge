@@ -1,9 +1,4 @@
 'use server';
-/**
- * @fileOverview A Genkit flow for generating dynamic weekly lesson plans for the LingoForge app.
- *
- * - generateDynamicWeeklyLessonPlan - A function that generates a complete 7-day lesson plan.
- */
 
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
@@ -14,8 +9,7 @@ import {
   type WeeklyLessonPlanOutput,
 } from '@/ai/schemas/lesson-plan-schemas';
 
-
-const pathDescription = {
+const pathDescription: Record<string, string> = {
   survival: 'everyday survival phrases, greetings, shopping, transport, food, emergency',
   alphabet: 'letters of the alphabet, writing system, character recognition, reading basics',
   numbers: 'numbers 1-100, counting, dates, time, money, measurements',
@@ -23,107 +17,78 @@ const pathDescription = {
 
 const weekThemes = {
   survival: [
-    'Greetings & Introductions',
-    'Numbers & Time',
-    'Food & Restaurant',
-    'Transport & Directions',
-    'Shopping & Money',
-    'Health & Emergency',
-    'Family & Relationships',
-    'Work & Business',
-    'Weather & Environment',
+    'Greetings & Introductions', 'Numbers & Time', 'Food & Restaurant',
+    'Transport & Directions', 'Shopping & Money', 'Health & Emergency',
+    'Family & Relationships', 'Work & Business', 'Weather & Environment',
     'Culture & Traditions',
   ],
   alphabet: [
-    'Basic Letters A-F',
-    'Letters G-L',
-    'Letters M-R',
-    'Letters S-Z',
-    'Vowels & Consonants',
-    'Letter Combinations',
-    'Common Words Spelling',
-    'Reading Simple Words',
-    'Writing Practice',
-    'Reading Short Sentences',
+    'Basic Letters A-F', 'Letters G-L', 'Letters M-R', 'Letters S-Z',
+    'Vowels & Consonants', 'Letter Combinations', 'Common Words Spelling',
+    'Reading Simple Words', 'Writing Practice', 'Reading Short Sentences',
   ],
   numbers: [
-    '1-10 Basic Counting',
-    '11-100 Numbers',
-    'Ordinal Numbers',
-    'Time & Clock',
-    'Days & Months',
-    'Money & Prices',
-    'Measurements & Weight',
-    'Math Operations',
-    'Dates & Calendar',
-    'Phone & Address Numbers',
+    '1-10 Basic Counting', '11-100 Numbers', 'Ordinal Numbers', 'Time & Clock',
+    'Days & Months', 'Money & Prices', 'Measurements & Weight', 'Math Operations',
+    'Dates & Calendar', 'Phone & Address Numbers',
   ],
 };
 
-
-const AIPanningTopicSelectionInputSchema = z.object({
+const AIPlanningInputSchema = z.object({
   path: z.union([z.literal('survival'), z.literal('alphabet'), z.literal('numbers')]),
   week: z.number().int().min(1).max(48),
   language: z.string(),
   previousPerformanceSummary: z.string().optional(),
-  availableThemes: z.array(z.string()).describe('List of available themes for the given path.'),
+  availableThemes: z.array(z.string()),
 });
 
-const AIPanningTopicSelectionOutputSchema = z.object({
-  chosenTopic: z.string().describe('The chosen topic for the week.'),
+const AIPlanningOutputSchema = z.object({
+  chosenTopic: z.string(),
 });
 
 const aiPlanningTopicPrompt = ai.definePrompt({
   name: 'aiPlanningTopicPrompt',
-  input: { schema: AIPanningTopicSelectionInputSchema },
-  output: { schema: AIPanningTopicSelectionOutputSchema },
-  config: {
-    maxOutputTokens: 200, // Small output, just a topic string
-  },
-  prompt:
-    `You are an AI language learning assistant whose sole purpose is to suggest the most suitable topic for a language lesson based on provided context.
-  The user is on the "{{path}}" learning path for "{{language}}", currently on week {{week}}.
-  The user's previous performance summary is: "{{previousPerformanceSummary}}". (If this is empty or "undefined", assume average performance).
-  
-  Available themes for this path are:
-  {{#each availableThemes}}- {{this}}
-  {{/each}}
-
-  Based on the user's previous performance (if available) and the available themes, select the single most suitable topic from the 'availableThemes' list for the upcoming week.
-  Prioritize themes that might address weaknesses mentioned in the performance summary, or ensure a logical progression from previous themes.
-  Return ONLY valid JSON with a single key 'chosenTopic' containing the selected topic as a string. Do not include any other text or markdown.
-  `,
+  input: { schema: AIPlanningInputSchema },
+  output: { schema: AIPlanningOutputSchema },
+  config: { maxOutputTokens: 200 },
+  prompt: `You are a language learning assistant. Select the best topic for a lesson.
+User is learning "{{language}}" on the "{{path}}" path, week {{week}}.
+Performance summary: "{{previousPerformanceSummary}}".
+Available themes:
+{{#each availableThemes}}- {{this}}
+{{/each}}
+Return ONLY valid JSON: {"chosenTopic": "selected theme here"}`,
 });
 
+// This internal schema defines the data required by the lesson generation prompt itself.
 const LessonGenerationPromptInputSchema = z.object({
   language: z.string(),
   path: z.union([z.literal('survival'), z.literal('alphabet'), z.literal('numbers')]),
   week: z.number().int().min(1).max(48),
   nativeLanguage: z.string(),
   theme: z.string(),
-  pathDescription: z.record(z.string(), z.string()).describe('Description of learning paths.'),
+  pathDesc: z.string(),
 });
 
 const lessonGenerationPrompt = ai.definePrompt({
   name: 'lessonGenerationPrompt',
   input: { schema: LessonGenerationPromptInputSchema },
   output: { schema: WeeklyLessonPlanSchema },
-  config: {
-    maxOutputTokens: 8192,
-  },
-  prompt:
-    `You are a language lesson planning expert who generates structured lesson data in JSON format.
+  config: { maxOutputTokens: 8192 },
+  prompt: `You are an expert language lesson planner. Your task is to generate a complete, 7-day weekly lesson plan based on the provided schema.
 
-      Generate a complete, 7-day lesson plan based on the following requirements:
-      - Target Language: {{language}}
-      - Student's Native Language: {{nativeLanguage}} (use for all translations)
-      - Learning Path: {{path}} (context: {{lookup pathDescription path}})
-      - Week: {{week}}
-      - Weekly Theme: {{theme}}
+Please adhere strictly to the format and data types defined in the output schema. Use the descriptions within the schema as your guide for what to generate for each field.
 
-      Your response MUST be a single, valid JSON object that perfectly matches the provided output schema.
-      Do not include any other text, markdown formatting, or explanations. Just the raw JSON.
-      `,
+Generate the lesson plan for:
+- Target Language: {{language}}
+- Native Language (for context): {{nativeLanguage}}
+- Learning Path: {{path}} (focus on: {{pathDesc}})
+- Week: {{week}}
+- Weekly Theme: {{theme}}
+
+IMPORTANT:
+- Your entire response must be ONLY the raw JSON object.
+- Do not wrap the JSON in markdown backticks or provide any explanation.`,
 });
 
 export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
@@ -135,25 +100,27 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
   async (input) => {
     let theme: string;
 
+    // 1. Determine the weekly theme (either by AI or by predefined logic)
     if (input.aiPlanningEnabled) {
       const currentPathThemes = weekThemes[input.path];
-      const { output } = await aiPlanningTopicPrompt({
+      const { output: aiPlanningOutput } = await aiPlanningTopicPrompt({
         path: input.path,
         week: input.week,
         language: input.language,
         previousPerformanceSummary: input.previousPerformanceSummary,
         availableThemes: currentPathThemes,
       });
-      theme = output!.chosenTopic;
+      if (!aiPlanningOutput) {
+        throw new Error("AI failed to choose a topic. Please try again.");
+      }
+      theme = aiPlanningOutput.chosenTopic;
     } else {
-      if (input.selectedTopic) {
-        theme = input.selectedTopic;
-      }
-      else {
-        theme = weekThemes[input.path][(input.week - 1) % weekThemes[input.path].length];
-      }
+      // Default logic to pick a theme based on the week number
+      theme = input.selectedTopic
+        ?? weekThemes[input.path][(input.week - 1) % weekThemes[input.path].length];
     }
 
+    // 2. Call the main lesson generation prompt with the determined theme
     const response = await lessonGenerationPrompt(
       {
         language: input.language,
@@ -161,21 +128,19 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
         week: input.week,
         nativeLanguage: input.nativeLanguage,
         theme: theme,
-        pathDescription: pathDescription,
+        pathDesc: pathDescription[input.path],
       },
       { model: 'googleai/gemini-1.5-flash-latest' }
     );
 
     const output = response.output;
-    
-    // For debugging: log the raw AI response before validation
+
+    // 3. Validate the output and handle failures
     if (!output) {
-      console.error("Genkit validation failed. LLM output did not match schema. Raw text:", response.text);
-      throw new Error(
-          'The AI failed to generate a valid lesson plan that matched the required structure. Please try again.'
-      );
+      console.error('AI response failed schema validation. Raw text:', response.text);
+      throw new Error('AI failed to generate a valid lesson plan. The response format was incorrect.');
     }
-    
+
     return output;
   }
 );
