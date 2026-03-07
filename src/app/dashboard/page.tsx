@@ -1,5 +1,7 @@
+
 'use client';
 
+import React, { useState, useEffect } from "react";
 import Link from 'next/link';
 import {
   Flame,
@@ -9,6 +11,7 @@ import {
   CalendarDays,
   ChevronRight,
   Target,
+  Globe,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -22,6 +25,8 @@ import {
 import { Navigation } from '@/components/Navigation';
 import { PathCard } from '@/components/PathCard';
 import { PATHS } from '@/lib/constants';
+import { cn } from "@/lib/utils";
+import { nativeLanguages, translations } from "@/lib/translations";
 
 // Mock data for the dashboard
 const userData = {
@@ -41,6 +46,32 @@ const userData = {
 const levelThreshold = 1500; // XP needed for next level
 
 export default function DashboardPage() {
+  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+      const savedLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
+      if (savedLang && translations[savedLang]) {
+        setNativeLanguage(savedLang);
+      }
+      setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+      if(isMounted) {
+        localStorage.setItem("nativeLanguage", nativeLanguage);
+      }
+  }, [nativeLanguage, isMounted]);
+
+  if (!isMounted) {
+      return (
+          <div className="flex min-h-dvh flex-col bg-background">
+              <Navigation />
+              <main className="flex-1" />
+          </div>
+      );
+  }
+
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
@@ -156,6 +187,29 @@ export default function DashboardPage() {
 
             {/* Side column */}
             <div className="space-y-8">
+               <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Globe className="h-5 w-5" />
+                    Site Language
+                  </CardTitle>
+                  <CardDescription>
+                    Choose the language for the website interface.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="flex flex-wrap gap-2">
+                    {nativeLanguages.map((lang) => (
+                      <Button
+                        key={lang}
+                        onClick={() => setNativeLanguage(lang as keyof typeof translations)}
+                        variant={nativeLanguage === lang ? "default" : "outline"}
+                        size="sm"
+                      >
+                        {lang}
+                      </Button>
+                    ))}
+                </CardContent>
+              </Card>
               {/* Weekly Progress */}
               <Card>
                 <CardHeader>
@@ -203,3 +257,5 @@ export default function DashboardPage() {
     </div>
   );
 }
+
+    
