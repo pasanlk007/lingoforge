@@ -1,19 +1,8 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp, getApps, getApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+export const firebaseConfig = {
+  "projectId": "studio-3754329818-ee8cf",
+  "appId": "1:157119324096:web:2208a02e5c3d84faf87225",
+  "apiKey": "AIzaSyBT1n8gqoFsLGW3fXoGA6GK2jazGMkHu0Q",
+  "authDomain": "studio-3754329818-ee8cf.firebaseapp.com",
+  "measurementId": "",
+  "messagingSenderId": "157119324096"
 };
-
-// Initialize Firebase
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-
-export default app;
