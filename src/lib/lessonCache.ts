@@ -1,7 +1,13 @@
-import { db } from "@/firebase";
-import { collection, doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+
+import { initializeApp, getApp, getApps } from 'firebase/app';
+import { getFirestore, collection, doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+import { firebaseConfig } from '@/firebase/config';
 import { generateLesson } from "./claudeGenerator";
 import type { LanguageLesson, LearningPath } from "./types";
+
+// Initialize Firebase for server-side usage
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 const lessonCacheCollection = collection(db, 'lessonCache');
 
