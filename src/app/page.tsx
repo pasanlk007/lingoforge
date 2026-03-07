@@ -791,7 +791,7 @@ export default function LandingPage() {
                     <p className="mt-2 text-sm bg-green-900/40 p-2 rounded-md text-slate-300 font-mono">"Bonjour • Merci • S'il vous plaît"</p>
                   </div>
                   <Button asChild className="w-full bg-green-500 hover:bg-green-600 text-white font-bold">
-                    <Link href={`/lessons/${targetLanguage.toLowerCase()}/survival/1/1`}>{t.startFree}</Link>
+                    <Link href="/dashboard">{t.startFree}</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -810,7 +810,7 @@ export default function LandingPage() {
                       <p className="mt-2 text-sm bg-blue-900/40 p-2 rounded-md text-slate-300 font-mono">"A B C • あ い う • 가 나 다"</p>
                    </div>
                   <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
-                    <Link href={`/alphabet/${targetLanguage.toLowerCase()}/1/1`}>{t.getStarted}</Link>
+                    <Link href="/dashboard">{t.getStarted}</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -829,7 +829,7 @@ export default function LandingPage() {
                     <p className="mt-2 text-sm bg-purple-900/40 p-2 rounded-md text-slate-300 font-mono">"1 2 3 • Ein Zwei Drei • 一 二 三"</p>
                   </div>
                   <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
-                     <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/1/1`}>{t.getStarted}</Link>
+                     <Link href="/dashboard">{t.getStarted}</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -883,7 +883,9 @@ export default function LandingPage() {
                     <li className="flex items-center gap-2 opacity-50"><XCircle className="w-5 h-5"/> {t.freePlan.feat4}</li>
                     <li className="flex items-center gap-2 opacity-50"><XCircle className="w-5 h-5"/> {t.freePlan.feat5}</li>
                   </ul>
-                  <Button variant="outline" className="w-full border-slate-600 hover:bg-slate-700">{t.freePlan.btn}</Button>
+                  <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                    <Link href="/dashboard">{t.freePlan.btn}</Link>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -901,7 +903,9 @@ export default function LandingPage() {
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.monthlyPlan.feat5}</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.monthlyPlan.feat6}</li>
                   </ul>
-                  <Button className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">{t.monthlyPlan.btn}</Button>
+                  <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                    <Link href="/dashboard">{t.monthlyPlan.btn}</Link>
+                  </Button>
                 </CardContent>
               </Card>
               
@@ -918,7 +922,9 @@ export default function LandingPage() {
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.yearlyPlan.feat2}</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.yearlyPlan.feat3}</li>
                   </ul>
-                  <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">{t.yearlyPlan.btn}</Button>
+                  <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
+                    <Link href="/dashboard">{t.yearlyPlan.btn}</Link>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
