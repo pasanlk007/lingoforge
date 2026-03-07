@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Languages, Menu, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useState } from "react";
 import { useUser, useAuth } from "@/firebase";
 import {
@@ -109,7 +109,10 @@ export function Navigation() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <div className="flex flex-col gap-6 p-6">
+              <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              </SheetHeader>
+              <div className="flex h-full flex-col gap-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
                   <Languages className="h-8 w-8 text-primary" />
                   <span className="font-headline text-2xl font-bold">LingoForge</span>
