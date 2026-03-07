@@ -597,14 +597,6 @@ const targetLanguages = [
 
 const nativeLanguages = Object.keys(translations);
 
-const FloatingLangCard = ({ lang, phonetic, translation, className }: { lang: string, phonetic: string, translation: string, className?: string }) => (
-  <div className={cn("rounded-lg bg-slate-800/60 p-4 shadow-xl backdrop-blur-md border border-slate-700", className)}>
-    <p className="text-2xl font-bold text-white">{lang}</p>
-    <p className="text-lg text-cyan-300">{phonetic}</p>
-    <p className="text-md text-slate-300">{translation}</p>
-  </div>
-);
-
 export default function LandingPage() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [targetLanguage, setTargetLanguage] = useState(targetLanguages[0].lang);
@@ -672,52 +664,52 @@ export default function LandingPage() {
       </nav>
 
       <main>
-        <section className="relative flex items-center min-h-screen w-full bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 overflow-hidden">
+        <section 
+          className="relative min-h-screen w-full overflow-hidden flex items-center"
+          style={{
+            background: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)"
+          }}
+        >
+          <div className="absolute top-20 right-20 w-96 h-96 rounded-full opacity-10"
+               style={{background: "radial-gradient(circle, #60a5fa, transparent)"}} />
+          <div className="absolute bottom-20 right-40 w-64 h-64 rounded-full opacity-10"
+               style={{background: "radial-gradient(circle, #818cf8, transparent)"}} />
+
           <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="relative z-10 text-center max-w-3xl mx-auto">
+              <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 17 Languages Available</Badge>
+              <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">{t.heroTitle}</h1>
+              <p className="mt-4 max-w-xl mx-auto text-lg md:text-xl text-slate-300">{t.heroSub}</p>
               
-              <div className="lg:w-3/5 z-10 text-center lg:text-left">
-                <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 17 Languages Available</Badge>
-                <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">{t.heroTitle}</h1>
-                <p className="mt-4 max-w-xl mx-auto lg:mx-0 text-lg md:text-xl text-slate-300">{t.heroSub}</p>
-                
-                <div className="mt-8 w-full max-w-md mx-auto lg:mx-0 space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <Select value={nativeLanguage} onValueChange={(value) => setNativeLanguage(value as keyof typeof translations)}>
-                      <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectNative} /></SelectTrigger>
-                      <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                        {nativeLanguages.map(lang => <SelectItem key={lang} value={lang}>{lang}</SelectItem>)}
-                      </SelectContent>
-                    </Select>
-                     <Select value={targetLanguage} onValueChange={setTargetLanguage}>
-                      <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectTarget} /></SelectTrigger>
-                      <SelectContent className="bg-slate-800 border-slate-700 text-white max-h-80">
-                        {targetLanguages.map(lang => (
-                          <SelectItem key={lang.lang} value={lang.lang}>
-                            <div className="flex items-center gap-3">
-                              <span className="text-xl">{lang.flag}</span>
-                              <div>
-                                <p>{lang.lang}</p>
-                                <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
-                              </div>
+              <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Select value={nativeLanguage} onValueChange={(value) => setNativeLanguage(value as keyof typeof translations)}>
+                    <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectNative} /></SelectTrigger>
+                    <SelectContent className="bg-slate-800 border-slate-700 text-white">
+                      {nativeLanguages.map(lang => <SelectItem key={lang} value={lang}>{lang}</SelectItem>)}
+                    </SelectContent>
+                  </Select>
+                   <Select value={targetLanguage} onValueChange={setTargetLanguage}>
+                    <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectTarget} /></SelectTrigger>
+                    <SelectContent className="bg-slate-800 border-slate-700 text-white max-h-80">
+                      {targetLanguages.map(lang => (
+                        <SelectItem key={lang.lang} value={lang.lang}>
+                          <div className="flex items-center gap-3">
+                            <span className="text-xl">{lang.flag}</span>
+                            <div>
+                              <p>{lang.lang}</p>
+                              <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
                             </div>
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-                   <div className="flex flex-col sm:flex-row gap-3">
-                      <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
-                      <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleScrollToPaths}>{t.viewPaths}</Button>
-                   </div>
+                          </div>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
-              </div>
-              
-              <div className="hidden lg:block lg:w-2/5 h-full relative">
-                <FloatingLangCard lang="🇩🇪 Guten Tag" phonetic="Goo-ten tahg" translation="Good day" className="absolute top-0 left-10 float-1" />
-                <FloatingLangCard lang="🇯🇵 こんにちは" phonetic="Konnichiwa" translation="Hello" className="absolute top-32 right-0 float-2" />
-                <FloatingLangCard lang="🇪🇸 ¿Cómo estás?" phonetic="Como es-tas" translation="How are you?" className="absolute top-64 left-20 float-3" />
-                <FloatingLangCard lang="🇸🇦 مرحبا" phonetic="Marhaban" translation="Welcome" className="absolute top-96 right-10 float-4" />
+                 <div className="flex flex-col sm:flex-row gap-3">
+                    <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
+                    <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleScrollToPaths}>{t.viewPaths}</Button>
+                 </div>
               </div>
             </div>
           </div>
@@ -970,5 +962,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-    
