@@ -74,7 +74,7 @@ export const ProgressTrackingSchema = z.object({
 export const DayLessonSchema = z.object({
   day: z.number().int().min(1).max(7),
   title: z.string(),
-  type: z.literal('vocabulary'), // Assuming primary type is vocabulary based on prompt
+  type: z.enum(['vocabulary', 'grammar', 'dialogue', 'numbers', 'alphabet', 'reading', 'writing']),
   items: z.array(LessonItemSchema).length(5).describe('Exactly 5 vocabulary items.'),
   dialogue: DialogueSchema,
   exercises: ExercisesSchema,
