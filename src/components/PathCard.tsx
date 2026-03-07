@@ -7,9 +7,16 @@ interface PathCardProps {
   title: string;
   description: string;
   details: string[];
+  id: string;
+  language?: string;
 }
 
-export function PathCard({ icon, title, description, details }: PathCardProps) {
+export function PathCard({ icon, title, description, details, id, language = 'french' }: PathCardProps) {
+  
+  const href = id === 'alphabet' 
+    ? `/alphabet/${language.toLowerCase()}/1/1`
+    : `/lessons/${language.toLowerCase()}/${id}/1/1`;
+
   return (
     <Card className="flex flex-col">
       <CardHeader>
@@ -26,7 +33,7 @@ export function PathCard({ icon, title, description, details }: PathCardProps) {
           ))}
         </ul>
         <Button asChild variant="secondary">
-          <Link href="/dashboard">Start Path</Link>
+          <Link href={href}>Start Path</Link>
         </Button>
       </CardContent>
     </Card>

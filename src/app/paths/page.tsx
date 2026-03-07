@@ -18,7 +18,6 @@ import {
 import Link from "next/link";
 
 import { Navigation } from "@/components/Navigation";
-import { PathCard } from "@/components/PathCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -108,28 +107,6 @@ export default function PathsPage() {
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <section id="paths" className="py-20 sm:py-32">
-          <div className="container mx-auto px-4">
-            <h2 className="text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Choose Your Path to Fluency
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground">
-              We offer three unique learning paths to suit your goals. Start your journey today.
-            </p>
-            <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-              {PATHS.map((path) => (
-                <PathCard
-                  key={path.id}
-                  icon={path.icon}
-                  title={path.title}
-                  description={path.description}
-                  details={path.details}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section id="features" className="bg-card py-20 sm:py-32">
           <div className="container mx-auto px-4">
             <h2 className="text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
