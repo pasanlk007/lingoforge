@@ -117,7 +117,7 @@ Create a complete 7-day lesson week.
 
 Language to teach: {{language}}
 Student native language: {{nativeLanguage}}
-Learning path: {{path}} ({{pathDescription.[path]}})
+Learning path: {{path}} ({{lookup pathDescription path}})
 Week number: {{week}}
 Week theme: {{theme}}
 
