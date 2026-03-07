@@ -1,5 +1,4 @@
 
-
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -27,7 +26,8 @@ import {
   BadgeCheck,
   Twitter,
   Github,
-  Linkedin
+  Linkedin,
+  XCircle,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -47,7 +47,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 const translations = {
   English: {
     heroTitle: "Survive. Speak. Belong.",
-    heroSub: "Language survival guide for people starting a new life abroad.",
+    heroSub: "Structured language survival paths for migrant workers.",
     selectNative: "I speak...",
     selectTarget: "I am going to...",
     startBtn: "Start My Journey - Free",
@@ -135,7 +135,7 @@ const translations = {
   },
   Sinhala: {
     heroTitle: "දිවි ගෙවන්න. කතා කරන්න. අයිති වෙන්න.",
-    heroSub: "විදෙස්ගත ජීවිතය ආරම්භ කරන අයට භාෂා පැවැත්මේ මාර්ගෝපදේශය.",
+    heroSub: "විදෙස්ගත ශ්‍රමිකයන් සඳහා ව්‍යුහගත පැවැත්මේ භාෂා මාර්ග.",
     selectNative: "මා කතා කරන්නේ...",
     selectTarget: "මා යන රට...",
     startBtn: "මගේ ගමන ආරම්භ කරන්න - නොමිලේ",
@@ -223,7 +223,7 @@ const translations = {
   },
   Hindi: {
     heroTitle: "जीवित रहें। बोलें। अपना बनाएं।",
-    heroSub: "विदेश में नया जीवन शुरू करने वालों के लिए भाषा जीवन रक्षा मार्गदर्शिका।",
+    heroSub: "प्रवासी श्रमिकों के लिए संरचित भाषा उत्तरजीविता पथ।",
     selectNative: "मैं बोलता/बोलती हूँ...",
     selectTarget: "मैं जा रहा/रही हूँ...",
     startBtn: "मेरी यात्रा शुरू करें - मुफ्त",
@@ -311,7 +311,7 @@ const translations = {
   },
   Urdu: {
     heroTitle: "زندہ رہیں۔ بولیں۔ اپنائیں۔",
-    heroSub: "بیرون ملک نئی زندگی شروع کرنے والوں کے لیے زبان کی بقا کا رہنما۔",
+    heroSub: "مہاجر کارکنوں کے لیے منظم زبان کی بقا کے راستے۔",
     selectNative: "میں بولتا/بولتی ہوں...",
     selectTarget: "میں جا رہا/رہی ہوں...",
     startBtn: "میرا سفر شروع کریں - مفت",
@@ -399,7 +399,7 @@ const translations = {
   },
   Bengali: {
     heroTitle: "বেঁচে থাকুন। কথা বলুন। নিজের করে নিন।",
-    heroSub: "বিদেশে নতুন জীবন শুরু করা মানুষদের জন্য ভাষা জীবনরক্ষা গাইড।",
+    heroSub: "অভিবাসী কর্মীদের জন্য পরিকল্পিত ভাষা টিকে থাকার পথ।",
     selectNative: "আমি বলি...",
     selectTarget: "আমি যাচ্ছি...",
     startBtn: "আমার যাত্রা শুরু করুন - বিনামূল্যে",
@@ -487,7 +487,7 @@ const translations = {
   },
   Arabic: {
     heroTitle: "اِبقَ حياً. تكلَّم. انتمِ.",
-    heroSub: "دليل البقاء اللغوي للمهاجرين الذين يبدأون حياة جديدة في الخارج.",
+    heroSub: "مسارات منظمة لبقاء اللغة للعمال المهاجرين.",
     selectNative: "أنا أتحدث...",
     selectTarget: "أنا ذاهب إلى...",
     startBtn: "ابدأ رحلتي - مجاناً",
@@ -598,7 +598,7 @@ const targetLanguages = [
 const nativeLanguages = Object.keys(translations);
 
 const FloatingLangCard = ({ lang, phonetic, translation, className }: { lang: string, phonetic: string, translation: string, className?: string }) => (
-  <div className={cn("absolute rounded-lg bg-slate-800/60 p-4 shadow-xl backdrop-blur-md border border-slate-700", className)}>
+  <div className={cn("rounded-lg bg-slate-800/60 p-4 shadow-xl backdrop-blur-md border border-slate-700", className)}>
     <p className="text-2xl font-bold text-white">{lang}</p>
     <p className="text-lg text-cyan-300">{phonetic}</p>
     <p className="text-md text-slate-300">{translation}</p>
@@ -632,7 +632,6 @@ export default function LandingPage() {
   }
   
   const handleStartJourney = () => {
-    // Here you would typically save the target language to user context/state
     router.push('/dashboard');
   }
 
@@ -640,13 +639,12 @@ export default function LandingPage() {
   const isRTL = ['Urdu', 'Arabic'].includes(nativeLanguage);
 
   if (!isMounted) {
-    return <div className="w-full min-h-screen bg-slate-900" />; // Or a proper loading skeleton
+    return <div className="w-full min-h-screen bg-slate-900" />;
   }
 
   return (
     <div dir={isRTL ? "rtl" : "ltr"} className={cn("bg-slate-900 text-white font-body", isRTL ? 'font-sans' : 'font-body')}>
       
-      {/* --- SECTION 1: NATIVE LANGUAGE SELECTOR BAR --- */}
       <nav className="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
@@ -674,60 +672,57 @@ export default function LandingPage() {
       </nav>
 
       <main>
-        {/* --- SECTION 2: HERO --- */}
-        <section className="relative flex items-center justify-center min-h-screen w-full bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 overflow-hidden">
-          <div className="absolute inset-0 z-0">
-             <FloatingLangCard lang="🇩🇪 Guten Tag" phonetic="Goo-ten tahg" translation="Good day" className="top-[15%] left-[5%] float-1" />
-             <FloatingLangCard lang="🇯🇵 こんにちは" phonetic="Konnichiwa" translation="Hello" className="top-[25%] right-[8%] float-2" />
-             <FloatingLangCard lang="🇪🇸 ¿Cómo estás?" phonetic="Como es-tas" translation="How are you?" className="bottom-[20%] left-[15%] float-3" />
-             <FloatingLangCard lang="🇸🇦 مرحبا" phonetic="Marhaban" translation="Welcome" className="bottom-[30%] right-[18%] float-4" />
-          </div>
-          
-          <div className="container relative z-10 mx-auto px-4 text-center lg:text-left flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
-              <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 17 Languages Available</Badge>
-              <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-white">{t.heroTitle}</h1>
-              <p className="mt-4 max-w-xl mx-auto lg:mx-0 text-lg md:text-xl text-slate-300">{t.heroSub}</p>
+        <section className="relative flex items-center min-h-screen w-full bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 overflow-hidden">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
               
-              <div className="mt-8 w-full max-w-md space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Select value={nativeLanguage} onValueChange={(value) => setNativeLanguage(value as keyof typeof translations)}>
-                    <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectNative} /></SelectTrigger>
-                    <SelectContent className="bg-slate-800 border-slate-700 text-white">
-                      {nativeLanguages.map(lang => <SelectItem key={lang} value={lang}>{lang}</SelectItem>)}
-                    </SelectContent>
-                  </Select>
-                   <Select value={targetLanguage} onValueChange={setTargetLanguage}>
-                    <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectTarget} /></SelectTrigger>
-                    <SelectContent className="bg-slate-800 border-slate-700 text-white max-h-80">
-                      {targetLanguages.map(lang => (
-                        <SelectItem key={lang.lang} value={lang.lang}>
-                          <div className="flex items-center gap-3">
-                            <span className="text-xl">{lang.flag}</span>
-                            <div>
-                              <p>{lang.lang}</p>
-                              <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
+              <div className="lg:w-3/5 z-10 text-center lg:text-left">
+                <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 17 Languages Available</Badge>
+                <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">{t.heroTitle}</h1>
+                <p className="mt-4 max-w-xl mx-auto lg:mx-0 text-lg md:text-xl text-slate-300">{t.heroSub}</p>
+                
+                <div className="mt-8 w-full max-w-md mx-auto lg:mx-0 space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <Select value={nativeLanguage} onValueChange={(value) => setNativeLanguage(value as keyof typeof translations)}>
+                      <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectNative} /></SelectTrigger>
+                      <SelectContent className="bg-slate-800 border-slate-700 text-white">
+                        {nativeLanguages.map(lang => <SelectItem key={lang} value={lang}>{lang}</SelectItem>)}
+                      </SelectContent>
+                    </Select>
+                     <Select value={targetLanguage} onValueChange={setTargetLanguage}>
+                      <SelectTrigger className="w-full bg-slate-700 border-slate-600 text-white"><SelectValue placeholder={t.selectTarget} /></SelectTrigger>
+                      <SelectContent className="bg-slate-800 border-slate-700 text-white max-h-80">
+                        {targetLanguages.map(lang => (
+                          <SelectItem key={lang.lang} value={lang.lang}>
+                            <div className="flex items-center gap-3">
+                              <span className="text-xl">{lang.flag}</span>
+                              <div>
+                                <p>{lang.lang}</p>
+                                <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
+                              </div>
                             </div>
-                          </div>
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                   <div className="flex flex-col sm:flex-row gap-3">
+                      <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
+                      <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleScrollToPaths}>{t.viewPaths}</Button>
+                   </div>
                 </div>
-                 <div className="flex flex-col sm:flex-row gap-3">
-                    <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
-                    <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleScrollToPaths}>{t.viewPaths}</Button>
-                 </div>
               </div>
-            </div>
-            
-            <div className="hidden lg:block lg:w-1/2 h-full">
-              {/* Placeholder for floating cards if we want a dedicated container on desktop */}
+              
+              <div className="hidden lg:block lg:w-2/5 h-full relative">
+                <FloatingLangCard lang="🇩🇪 Guten Tag" phonetic="Goo-ten tahg" translation="Good day" className="absolute top-0 left-10 float-1" />
+                <FloatingLangCard lang="🇯🇵 こんにちは" phonetic="Konnichiwa" translation="Hello" className="absolute top-32 right-0 float-2" />
+                <FloatingLangCard lang="🇪🇸 ¿Cómo estás?" phonetic="Como es-tas" translation="How are you?" className="absolute top-64 left-20 float-3" />
+                <FloatingLangCard lang="🇸🇦 مرحبا" phonetic="Marhaban" translation="Welcome" className="absolute top-96 right-10 float-4" />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* --- SECTION 3: MIGRANT JOURNEY DIALOG --- */}
         <section className="py-20 sm:py-24 bg-slate-900">
           <div className="container mx-auto px-4">
             <Card className="bg-slate-800/50 border-2 border-cyan-500/30 shadow-[0_0_30px_rgba(56,189,248,0.2)]">
@@ -735,7 +730,6 @@ export default function LandingPage() {
                 <CardTitle className="font-headline text-3xl md:text-4xl font-bold">{t.journeyTitle}</CardTitle>
               </CardHeader>
               <CardContent>
-                {/* Journey Timeline */}
                 <div className="flex justify-between items-center text-center text-xs sm:text-sm mb-12 px-2">
                   {([
                     { icon: <PlaneTakeoff/>, label: t.journeyLeaving },
@@ -756,7 +750,6 @@ export default function LandingPage() {
                   ))}
                 </div>
 
-                {/* Scenario Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                    <Card className="bg-slate-800 border-slate-700">
                      <CardHeader>
@@ -788,11 +781,9 @@ export default function LandingPage() {
           </div>
         </section>
         
-        {/* --- SECTION 4: 3 PATH CARDS --- */}
         <section ref={pathsRef} className="py-20 sm:py-24 bg-slate-900/50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Survival Path */}
               <Card className="flex flex-col border-2 border-green-500 bg-gradient-to-br from-green-900/30 to-slate-900 shadow-lg shadow-green-500/10">
                 <CardHeader>
                   <Badge className="w-fit bg-green-500 text-green-950 font-bold mb-2">START HERE - Recommended</Badge>
@@ -811,7 +802,6 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-              {/* Alphabet Path */}
               <Card className="flex flex-col bg-gradient-to-br from-blue-900/30 to-slate-900 border border-slate-700">
                 <CardHeader>
                   <div className="flex items-center gap-4">
@@ -829,7 +819,6 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-              {/* Numbers Path */}
               <Card className="flex flex-col bg-gradient-to-br from-purple-900/30 to-slate-900 border border-slate-700">
                 <CardHeader>
                   <div className="flex items-center gap-4">
@@ -850,7 +839,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* --- SECTION 5: FEATURES GRID --- */}
         <section className="py-20 sm:py-24 bg-slate-900">
             <div className="container mx-auto px-4">
                  <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -876,7 +864,6 @@ export default function LandingPage() {
             </div>
         </section>
         
-        {/* --- SECTION 6: PRICING --- */}
         <section className="py-20 sm:py-24 bg-slate-900/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -885,7 +872,6 @@ export default function LandingPage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-              {/* Free Card */}
               <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">{t.freePlan.title}</CardTitle>
@@ -903,7 +889,6 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-              {/* Monthly Card */}
               <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">{t.monthlyPlan.title}</CardTitle>
@@ -922,7 +907,6 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
               
-              {/* Yearly Card */}
               <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
                 <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">⭐ {t.bestValue}</Badge>
                 <CardHeader className="p-0">
@@ -943,11 +927,9 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* --- SECTION 7: FOOTER --- */}
         <footer className="bg-slate-900 border-t border-slate-800">
           <div className="container mx-auto px-4 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Col 1 */}
               <div>
                 <Link href="/" className="flex items-center gap-2">
                   <Languages className="h-8 w-8 text-cyan-400" />
@@ -960,7 +942,6 @@ export default function LandingPage() {
                   <Link href="#" className="text-slate-400 hover:text-white"><Linkedin /></Link>
                 </div>
               </div>
-              {/* Col 2 */}
               <div>
                 <h4 className="font-semibold text-white tracking-wider uppercase">{t.footerLinks.about}</h4>
                 <ul className="mt-4 space-y-2">
@@ -969,7 +950,6 @@ export default function LandingPage() {
                   ))}
                 </ul>
               </div>
-              {/* Col 3 */}
               <div>
                 <h4 className="font-semibold text-white tracking-wider uppercase">{t.footerLangs}</h4>
                 <ul className="mt-4 space-y-2">
@@ -990,12 +970,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-// Dummy icon for the pricing table
-const XCircle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <circle cx="12" cy="12" r="10"></circle>
-    <line x1="15" y1="9" x2="9" y2="15"></line>
-    <line x1="9" y1="9" x2="15" y2="15"></line>
-  </svg>
-);
