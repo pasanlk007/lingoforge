@@ -107,8 +107,9 @@ const LessonGenerationPromptInputSchema = z.object({
 const lessonGenerationPrompt = ai.definePrompt({
   name: 'lessonGenerationPrompt',
   input: { schema: LessonGenerationPromptInputSchema },
-  output: { schema: WeeklyLessonPlanSchema },
   config: {
+    model: 'googleai/gemini-1.5-flash-latest',
+    responseFormat: 'json',
     maxOutputTokens: 8192,
   },
   prompt:
@@ -121,7 +122,7 @@ Learning path: {{path}} ({{lookup pathDescription path}})
 Week number: {{week}}
 Week theme: {{theme}}
 
-Return ONLY valid JSON. No other text. No markdown.
+Return ONLY valid JSON.
 Use this EXACT structure:
 
 {
@@ -190,7 +191,7 @@ Use this EXACT structure:
       "progressTracking": {
         "xpReward": 50,
         "streakBonus": 10,
-        "badge": "{{language}}_w{{week}}_d1_{{path}}"
+        "badge": "{{language}}_w1_d1_{{path}}"
       }
     },
     // [days 2, 3, 4, 5, 6, 7 - ALL 7 DAYS REQUIRED, follow the same structure and critical rules for each day]
@@ -198,11 +199,11 @@ Use this EXACT structure:
 }
 
 CRITICAL RULES:
-1. ALL 7 days must be included in the 'days' array.
-2. Each day needs exactly 5 vocabulary items in the 'items' array.
-3. For each day's dialogue, ensure exactly 4 lines with alternating speakers A and B.
-4. For each day's exercises, include exactly 3 fillBlanks questions, 3 multipleChoice questions (each with 4 options), and 5 matching pairs.
-5. Return ONLY the JSON object. Do not include \`\`\`json or \`\`\` or any other text.
+1. Return ONLY raw JSON. No markdown. No backticks. No explanation.
+2. ALL 7 days must be included in the 'days' array.
+3. Each day needs exactly 5 vocabulary items in the 'items' array.
+4. For each day's dialogue, ensure exactly 4 lines with alternating speakers A and B.
+5. For each day's exercises, include exactly 3 fillBlanks questions, 3 multipleChoice questions (each with 4 options), and 5 matching pairs.
 6. Do not stop until all 7 days are complete.
 7. Make content relevant to the "{{theme}}" theme for the current week and learning path.
 8. Ensure all 'id' fields (for vocabulary items, fillBlanks, multipleChoice) are unique within their respective arrays for each day. For vocabulary items, use 'w1' through 'w5'. For fillBlanks, 'fb1' through 'fb3'. For multipleChoice, 'mc1' through 'mc3'.
@@ -244,7 +245,7 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       }
     }
 
-    const { output } = await lessonGenerationPrompt({
+    const response = await lessonGenerationPrompt({
       language: input.language,
       path: input.path,
       week: input.week,
@@ -253,7 +254,21 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
       pathDescription: pathDescription,
     });
 
-    return output!;
+    const rawResponseText = response.text;
+
+    try {
+        const lessonJson = JSON.parse(rawResponseText);
+        const validatedLesson = WeeklyLessonPlanSchema.parse(lessonJson);
+        return validatedLesson;
+    } catch (e) {
+        console.error("Genkit validation failed. Raw LLM output was:");
+        console.error(rawResponseText);
+        console.error("Zod/JSON parsing error:", e);
+        // Re-throw a more user-friendly error.
+        throw new Error(
+            'The AI failed to generate a valid lesson plan. Please try again.'
+        );
+    }
   }
 );
 
