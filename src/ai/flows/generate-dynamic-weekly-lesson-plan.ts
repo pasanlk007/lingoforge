@@ -141,7 +141,7 @@ export const generateDynamicWeeklyLessonPlanFlow = ai.defineFlow(
         pathDesc: pathDescription[input.path],
         currencyHint: currencyHint,
       },
-      { model: 'googleai/gemini-2.0-flash-001' }
+      { model: 'googleai/gemini-1.5-flash-latest' }
     );
 
     const output = response.output;
