@@ -1,7 +1,8 @@
 
+
 'use client';
 
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { 
@@ -743,7 +744,7 @@ export default function LandingPage() {
                     { icon: <MessageSquare/>, label: t.journeySpeaking },
                     { icon: <Award/>, label: t.journeyBelonging },
                   ]).map((item, index) => (
-                    <>
+                    <React.Fragment key={item.label}>
                       <div className="flex flex-col items-center gap-2 w-1/5">
                         <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyan-900/50 border-2 border-cyan-500/50 text-cyan-400">
                           {React.cloneElement(item.icon, { className: 'w-6 h-6 sm:w-8 sm:h-8' })}
@@ -751,7 +752,7 @@ export default function LandingPage() {
                         <p className="font-semibold">{item.label}</p>
                       </div>
                       {index < 4 && <div className="flex-1 h-px bg-slate-600 hidden sm:block"></div>}
-                    </>
+                    </React.Fragment>
                   ))}
                 </div>
 
@@ -992,7 +993,7 @@ export default function LandingPage() {
 
 // Dummy icon for the pricing table
 const XCircle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <circle cx="12" cy="12" r="10"></circle>
     <line x1="15" y1="9" x2="9" y2="15"></line>
     <line x1="9" y1="9" x2="15" y2="15"></line>
