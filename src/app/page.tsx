@@ -46,7 +46,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 const translations = {
   English: {
-    heroTitle: "Survive. Speak. Belong.",
+    heroTitle: "Developing Language Skills for Migrant Workers",
     heroSub: "Structured language survival paths for migrant workers.",
     selectNative: "I speak...",
     selectTarget: "I am going to...",
@@ -134,7 +134,7 @@ const translations = {
     footerCredit: "© 2026 LingoForge. Built for migrants, by people who understand the journey."
   },
   Sinhala: {
-    heroTitle: "දිවි ගෙවන්න. කතා කරන්න. අයිති වෙන්න.",
+    heroTitle: "විදෙස්ගත ශ්‍රමිකයන්ගේ භාෂා කුසලතා වර්ධනය",
     heroSub: "විදෙස්ගත ශ්‍රමිකයන් සඳහා ව්‍යුහගත පැවැත්මේ භාෂා මාර්ග.",
     selectNative: "මා කතා කරන්නේ...",
     selectTarget: "මා යන රට...",
@@ -222,7 +222,7 @@ const translations = {
     footerCredit: "© 2026 LingoForge. සංක්‍රමණිකයන් සඳහා, ගමන තේරුම් ගන්නා අය විසින් ගොඩනගන ලදී."
   },
   Hindi: {
-    heroTitle: "जीवित रहें। बोलें। अपना बनाएं।",
+    heroTitle: "प्रवासी श्रमिकों के लिए भाषा कौशल विकसित करना",
     heroSub: "प्रवासी श्रमिकों के लिए संरचित भाषा उत्तरजीविता पथ।",
     selectNative: "मैं बोलता/बोलती हूँ...",
     selectTarget: "मैं जा रहा/रही हूँ...",
@@ -310,7 +310,7 @@ const translations = {
     footerCredit: "© 2026 LingoForge। प्रवासियों के लिए, यात्रा को समझने वाले लोगों द्वारा बनाया गया।"
   },
   Urdu: {
-    heroTitle: "زندہ رہیں۔ بولیں۔ اپنائیں۔",
+    heroTitle: "مہاجر کارکنوں کے لیے زبان کی مہارتیں تیار کرنا",
     heroSub: "مہاجر کارکنوں کے لیے منظم زبان کی بقا کے راستے۔",
     selectNative: "میں بولتا/بولتی ہوں...",
     selectTarget: "میں جا رہا/رہی ہوں...",
@@ -398,7 +398,7 @@ const translations = {
     footerCredit: "© 2026 LingoForge۔ مہاجرین کے لیے، ان لوگوں کے ذریعے بنایا گیا جو سفر کو سمجھتے ہیں۔"
   },
   Bengali: {
-    heroTitle: "বেঁচে থাকুন। কথা বলুন। নিজের করে নিন।",
+    heroTitle: "অভিবাসী কর্মীদের জন্য ভাষা দক্ষতা বৃদ্ধি করা",
     heroSub: "অভিবাসী কর্মীদের জন্য পরিকল্পিত ভাষা টিকে থাকার পথ।",
     selectNative: "আমি বলি...",
     selectTarget: "আমি যাচ্ছি...",
@@ -486,7 +486,7 @@ const translations = {
     footerCredit: "© 2026 LingoForge। অভিবাসীদের জন্য, যারা যাত্রা বোঝেন তাদের দ্বারা নির্মিত।"
   },
   Arabic: {
-    heroTitle: "اِبقَ حياً. تكلَّم. انتمِ.",
+    heroTitle: "تنمية المهارات اللغوية للعمال المهاجرين",
     heroSub: "مسارات منظمة لبقاء اللغة للعمال المهاجرين.",
     selectNative: "أنا أتحدث...",
     selectTarget: "أنا ذاهب إلى...",
