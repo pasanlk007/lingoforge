@@ -7,10 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#paths", label: "Paths" },
-  { href: "#features", label: "Features" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "/dashboard", label: "Dashboard" },
+  { href: "/paths", label: "Paths & Features" },
 ];
 
 export function Navigation() {
@@ -34,6 +31,12 @@ export function Navigation() {
               {link.label}
             </Link>
           ))}
+           <Link
+              href="/dashboard"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Dashboard
+            </Link>
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
@@ -66,6 +69,13 @@ export function Navigation() {
                       {link.label}
                     </Link>
                   ))}
+                   <Link
+                      href="/dashboard"
+                      className="text-lg font-medium text-muted-foreground"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Dashboard
+                    </Link>
                 </nav>
                 <div className="mt-auto flex flex-col gap-2">
                   <Button variant="ghost" onClick={() => setMenuOpen(false)}>Log In</Button>
