@@ -141,20 +141,10 @@ Use this EXACT structure:
           "target": "word in {{language}}",
           "phonetic": "pronunciation guide",
           "english": "English meaning",
-          "sinhala": "සිංහල",
-          "hindi": "हिंदी",
-          "urdu": "اردو",
-          "arabic": "عربي",
-          "bengali": "বাংলা",
           "audioText": "word for text-to-speech",
           "exampleSentence": {
             "target": "sentence in {{language}}",
-            "english": "English translation",
-            "sinhala": "සිංහල",
-            "hindi": "हिंदी",
-            "urdu": "اردو",
-            "arabic": "عربي",
-            "bengali": "বাংলা"
+            "english": "English translation"
           }
         },
         // [w2, w3, w4, w5 - 5 words total, ensure unique IDs like w2, w3, w4, w5]
@@ -166,7 +156,6 @@ Use this EXACT structure:
             "speaker": "A",
             "target": "dialogue in {{language}}",
             "english": "English translation",
-            "sinhala": "සිංහල",
             "phonetic": "pronunciation"
           },
           // [3 more lines A and B speakers - 4 lines total]
@@ -211,16 +200,16 @@ Use this EXACT structure:
 CRITICAL RULES:
 1. ALL 7 days must be included in the 'days' array.
 2. Each day needs exactly 5 vocabulary items in the 'items' array.
-3. Each item needs translations in all 6 native languages (english, sinhala, hindi, urdu, arabic, bengali).
-4. For each day's dialogue, ensure exactly 4 lines with alternating speakers A and B.
-5. For each day's exercises, include exactly 3 fillBlanks questions, 3 multipleChoice questions (each with 4 options), and 5 matching pairs.
-6. Return ONLY the JSON object. Do not include \`\`\`json or \`\`\` or any other text.
-7. Do not stop until all 7 days are complete.
-8. Make content relevant to the "{{theme}}" theme for the current week and learning path.
-9. Ensure all 'id' fields (for vocabulary items, fillBlanks, multipleChoice) are unique within their respective arrays for each day. For vocabulary items, use 'w1' through 'w5'. For fillBlanks, 'fb1' through 'fb3'. For multipleChoice, 'mc1' through 'mc3'.
-10. All phonetic spellings should be provided in a clear, easy-to-understand phonetic guide, similar to the "Bon-zhoor" example.
-11. The 'type' field for each day should primarily be "vocabulary" unless explicitly stated otherwise by the theme.
-12. The 'badge' in 'progressTracking' should follow the format '{language}_w{week}_d{day}_{path}', with the correct day number for each day.
+3. For each day's dialogue, ensure exactly 4 lines with alternating speakers A and B.
+4. For each day's exercises, include exactly 3 fillBlanks questions, 3 multipleChoice questions (each with 4 options), and 5 matching pairs.
+5. Return ONLY the JSON object. Do not include \`\`\`json or \`\`\` or any other text.
+6. Do not stop until all 7 days are complete.
+7. Make content relevant to the "{{theme}}" theme for the current week and learning path.
+8. Ensure all 'id' fields (for vocabulary items, fillBlanks, multipleChoice) are unique within their respective arrays for each day. For vocabulary items, use 'w1' through 'w5'. For fillBlanks, 'fb1' through 'fb3'. For multipleChoice, 'mc1' through 'mc3'.
+9. All phonetic spellings should be provided in a clear, easy-to-understand phonetic guide, similar to the "Bon-zhoor" example.
+10. The 'type' field for each day should primarily be "vocabulary" unless explicitly stated otherwise by the theme.
+11. The 'badge' in 'progressTracking' should follow the format '{language}_w{week}_d{day}_{path}', with the correct day number for each day.
+12. All translations should be into English, as specified in the schema.
 `,
 });
 

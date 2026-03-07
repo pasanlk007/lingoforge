@@ -3,11 +3,6 @@
 export interface ExampleSentence {
   target: string;
   english: string;
-  sinhala: string;
-  hindi: string;
-  urdu: string;
-  arabic: string;
-  bengali: string;
 }
 
 export interface LessonItem {
@@ -15,11 +10,6 @@ export interface LessonItem {
   target: string;
   phonetic: string;
   english: string;
-  sinhala: string;
-  hindi: string;
-  urdu: string;
-  arabic: string;
-  bengali: string;
   audioText: string;
   exampleSentence?: ExampleSentence;
 }
@@ -28,7 +18,6 @@ export interface DialogueLine {
   speaker: "A" | "B";
   target: string;
   english: string;
-  sinhala: string;
   phonetic: string;
 }
 

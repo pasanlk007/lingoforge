@@ -3,11 +3,6 @@ import { z } from 'zod';
 export const LessonItemExampleSentenceSchema = z.object({
   target: z.string(),
   english: z.string(),
-  sinhala: z.string(),
-  hindi: z.string(),
-  urdu: z.string(),
-  arabic: z.string(),
-  bengali: z.string(),
 });
 
 export const LessonItemSchema = z.object({
@@ -15,11 +10,6 @@ export const LessonItemSchema = z.object({
   target: z.string(),
   phonetic: z.string(),
   english: z.string(),
-  sinhala: z.string(),
-  hindi: z.string(),
-  urdu: z.string(),
-  arabic: z.string(),
-  bengali: z.string(),
   audioText: z.string(),
   exampleSentence: LessonItemExampleSentenceSchema.optional(),
 });
@@ -28,7 +18,6 @@ export const DialogueLineSchema = z.object({
   speaker: z.string(),
   target: z.string(),
   english: z.string(),
-  sinhala: z.string(),
   phonetic: z.string(),
 });
 
