@@ -40,7 +40,7 @@ const generateThemesFlow = ai.defineFlow(
     const themeGenerationPrompt = ai.definePrompt(
       {
         name: 'themeGenerationPrompt',
-        model: 'anthropic/claude-3-sonnet-20240229',
+        model: 'claude-3-sonnet-20240229',
         input: { schema: GenerateThemesInputSchema },
         output: { schema: GenerateThemesOutputSchema },
         prompt: `

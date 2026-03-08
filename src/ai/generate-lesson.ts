@@ -47,7 +47,7 @@ const generateLessonFlow = ai.defineFlow(
     const lessonGenerationPrompt = ai.definePrompt(
       {
         name: 'lessonGenerationPrompt',
-        model: 'anthropic/claude-3-sonnet-20240229',
+        model: 'claude-3-sonnet-20240229',
         input: { schema: GenerateLessonInputSchema },
         output: {
           format: 'json',
