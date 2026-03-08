@@ -24,6 +24,16 @@ export default function LoginPage() {
     e.preventDefault();
     setIsLoading(true);
 
+    if (!auth) {
+      toast({
+        variant: "destructive",
+        title: "Authentication Error",
+        description: "The authentication service is not ready. Please wait a moment and try again.",
+      });
+      setIsLoading(false);
+      return;
+    }
+
     try {
       await initiateEmailSignIn(auth, email, password);
       

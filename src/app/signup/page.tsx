@@ -32,6 +32,16 @@ export default function SignupPage() {
     e.preventDefault();
     setIsLoading(true);
 
+    if (!auth || !firestore) {
+      toast({
+        variant: "destructive",
+        title: "Service Unavailable",
+        description: "Cannot connect to the required services. Please try again later.",
+      });
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;

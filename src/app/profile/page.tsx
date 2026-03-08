@@ -25,13 +25,14 @@ export default function ProfilePage() {
   }, [user, isUserLoading, router]);
 
   const userProfileRef = useMemoFirebase(() => {
-    if (!user) return null;
+    if (!user || !firestore) return null;
     return doc(firestore, 'userProfiles', user.uid);
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
   const handleLogout = () => {
+    if (!auth) return;
     auth.signOut();
     router.push('/');
   };
