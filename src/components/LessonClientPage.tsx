@@ -31,6 +31,10 @@ const confettiConfig = {
 export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) {
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
+    const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [dayCompleted, setDayCompleted] = useState(false);
+    const [exercisesCorrect, setExercisesCorrect] = useState(0);
+    const [showConfetti, setShowConfetti] = useState(false);
 
     useEffect(() => {
         const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
@@ -41,7 +45,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     }, []);
 
     const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
-
     const dayData: LessonDay | undefined = lesson?.days?.[0];
     
     if (!dayData || !isMounted) {
@@ -55,11 +58,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         )
     }
     
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [dayCompleted, setDayCompleted] = useState(false);
-    const [exercisesCorrect, setExercisesCorrect] = useState(0);
-    const [showConfetti, setShowConfetti] = useState(false);
-
     const { words, dialogues, exercises, cultural_note, pronunciation_tip, progress } = dayData;
 
     const hasWords = Array.isArray(words) && words.length > 0;
