@@ -35,21 +35,27 @@ export default function LessonPage() {
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [dayNumber, setDayNumber] = useState<number | null>(null);
 
   useEffect(() => {
-    // Only proceed if all params are available.
-    if (!language || !path || !week || !day) {
-        setIsLoading(true); // Keep loading if params are not ready
-        return;
+    // Only proceed if all params are available and are strings.
+    if (
+      typeof language !== 'string' ||
+      typeof path !== 'string' ||
+      typeof week !== 'string' ||
+      typeof day !== 'string'
+    ) {
+      setIsLoading(true); // Keep loading until all params are available
+      return;
     }
     
-    // Check if day is a valid number
-    const dayNum = parseInt(day as string);
+    const dayNum = parseInt(day, 10);
     if (isNaN(dayNum)) {
         setError(`Invalid day parameter: "${day}". Must be a number.`);
         setIsLoading(false);
         return;
     }
+    setDayNumber(dayNum);
 
     const fetchLesson = async () => {
       setIsLoading(true);
@@ -97,7 +103,7 @@ export default function LessonPage() {
   }, [language, path, week, day]);
 
 
-  if (isLoading || !language || !path || !week || !day) {
+  if (isLoading || dayNumber === null) {
     return <LoadingSkeleton />;
   }
 
@@ -131,17 +137,14 @@ export default function LessonPage() {
   }
 
   if (!lesson) {
-    // This case should ideally not be hit if loading and error states are handled correctly.
-    // It can act as a fallback.
     return <LoadingSkeleton />;
   }
 
-  const dayNum = parseInt(day as string);
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <LessonClientPage lesson={lesson} currentDay={dayNum} />
+        <LessonClientPage lesson={lesson} currentDay={dayNumber} />
       </main>
     </div>
   );
