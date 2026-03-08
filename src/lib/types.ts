@@ -85,10 +85,18 @@ export interface MatchingPair {
   native: string;
 }
 
+export interface SentenceScrambleExercise {
+  id: string;
+  scrambled: string[];
+  correct: string;
+  nativeHint: string;
+}
+
 export interface Exercises {
   fillBlanks?: FillBlankExercise[];
   multipleChoice?: MultipleChoiceExercise[];
   matching?: MatchingPair[];
+  sentenceScramble?: SentenceScrambleExercise[];
 }
 
 

@@ -2,18 +2,19 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, BrainCircuit, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
 import type { LanguageLesson, LessonDay } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { WordCard } from '@/components/WordCard';
 import { DialoguePanel } from '@/components/DialoguePanel';
 import { ExercisePanel } from '@/components/ExercisePanel';
 import { StreakCounter } from '@/components/StreakCounter';
 import { ProgressBar } from '@/components/ProgressBar';
 import Confetti from 'react-dom-confetti';
+import { SentenceScramblePanel } from './SentenceScramblePanel';
+import { Separator } from './ui/separator';
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;
@@ -27,7 +28,6 @@ const confettiConfig = {
 };
 
 export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) {
-    // Since we only load one day at a time, we can directly access the first element.
     const dayData: LessonDay | undefined = lesson?.days?.[0];
     
     if (!dayData) {
@@ -46,23 +46,27 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [exercisesCorrect, setExercisesCorrect] = useState(0);
     const [showConfetti, setShowConfetti] = useState(false);
 
-    const hasWords = Array.isArray(dayData.words) && dayData.words.length > 0;
-    const hasDialogues = Array.isArray(dayData.dialogues) && dayData.dialogues.length > 0;
-    const hasCulturalNote = typeof dayData.cultural_note === 'string' && dayData.cultural_note.trim() !== '';
-    const hasExercises = dayData.exercises && (
-      (Array.isArray(dayData.exercises.fillBlanks) && dayData.exercises.fillBlanks.length > 0) ||
-      (Array.isArray(dayData.exercises.matching) && dayData.exercises.matching.length > 0) ||
-      (Array.isArray(dayData.exercises.multipleChoice) && dayData.exercises.multipleChoice.length > 0)
+    const { words, dialogues, exercises, cultural_note, pronunciation_tip, progress } = dayData;
+
+    const hasWords = Array.isArray(words) && words.length > 0;
+    const hasDialogues = Array.isArray(dialogues) && dialogues.length > 0;
+    const hasCulturalNote = typeof cultural_note === 'string' && cultural_note.trim() !== '';
+    const hasPronunciationTip = typeof pronunciation_tip === 'string' && pronunciation_tip.trim() !== '';
+
+    const hasExercises = exercises && (
+      (Array.isArray(exercises.fillBlanks) && exercises.fillBlanks.length > 0) ||
+      (Array.isArray(exercises.matching) && exercises.matching.length > 0)
     );
+    const hasSentenceScramble = exercises && Array.isArray(exercises.sentenceScramble) && exercises.sentenceScramble.length > 0;
 
     const handleNextWord = () => {
         if (!hasWords) return;
-        setCurrentWordIndex(prev => (prev + 1) % (dayData.words.length || 1));
+        setCurrentWordIndex(prev => (prev + 1) % (words.length || 1));
     }
 
     const handlePrevWord = () => {
         if (!hasWords) return;
-        setCurrentWordIndex(prev => (prev - 1 + (dayData.words.length || 1)) % (dayData.words.length || 1));
+        setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1));
     }
 
     const handleExercisesComplete = (isCorrect: boolean) => {
@@ -76,12 +80,11 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         setShowConfetti(true);
     }
 
-    const totalExercises = (dayData.exercises?.fillBlanks?.length ?? 0) + (dayData.exercises?.matching?.length ?? 0) + (dayData.exercises?.multipleChoice?.length ?? 0);
+    const totalExercises = (exercises?.fillBlanks?.length ?? 0) + (exercises?.matching?.length ?? 0) + (exercises?.sentenceScramble?.length ?? 0);
     const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCorrect / totalExercises) * 100, 100) : 0;
     const canCompleteDay = exerciseProgress >= 50; // User must complete at least 50% of exercises
 
     const weekProgress = (currentDay / 7) * 100;
-    const { words, dialogues, exercises, cultural_note, progress } = dayData;
 
     return (
         <div className="container mx-auto max-w-3xl py-8 px-4">
@@ -111,18 +114,12 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
             </header>
 
             <main className="space-y-8">
-              <Tabs defaultValue="learn" className="w-full">
-                <TabsList className="grid w-full grid-cols-3">
-                  <TabsTrigger value="learn"><BookOpen className="mr-2 h-4 w-4" />Learn</TabsTrigger>
-                  <TabsTrigger value="practice" disabled={!hasExercises}><BrainCircuit className="mr-2 h-4 w-4" />Practice</TabsTrigger>
-                  <TabsTrigger value="culture" disabled={!hasCulturalNote}><span className="mr-2">🌍</span>Culture</TabsTrigger>
-                </TabsList>
-
-                <TabsContent value="learn" className="mt-6 space-y-8">
-                  {hasWords ? (
-                    <Card>
-                        <CardHeader><CardTitle>Vocabulary</CardTitle></CardHeader>
-                        <CardContent>
+                
+                {/* Vocabulary Section */}
+                <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>Vocabulary</CardTitle></CardHeader>
+                    <CardContent>
+                       {hasWords ? (
                            <div className="flex flex-col items-center">
                                <WordCard item={words[currentWordIndex]} language={lesson.language} />
                                <div className="flex items-center justify-center mt-2 w-full max-w-sm">
@@ -131,30 +128,46 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                     <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
                                </div>
                            </div>
-                        </CardContent>
-                    </Card>
-                  ) : <p className="text-center text-muted-foreground py-8">No vocabulary for this lesson. Check other tabs!</p>}
-                  
-                  {hasDialogues && Array.isArray(dialogues) && (
-                      <DialoguePanel dialogues={dialogues} language={lesson.language} />
-                  )}
-                </TabsContent>
-
-                <TabsContent value="practice" className="mt-6">
-                    {hasExercises && exercises && (
-                        <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} />
-                    )}
-                </TabsContent>
+                       ) : <p className="text-center text-muted-foreground py-8">No vocabulary for this lesson.</p>}
+                    </CardContent>
+                </Card>
                 
-                <TabsContent value="culture" className="mt-6">
-                  {hasCulturalNote && (
-                     <Card>
-                        <CardHeader><CardTitle>Cultural Note</CardTitle></CardHeader>
-                        <CardContent><p className="text-muted-foreground italic">"{cultural_note}"</p></CardContent>
-                    </Card>
-                  )}
-                </TabsContent>
-              </Tabs>
+                {/* Dialogues Section */}
+                {hasDialogues && Array.isArray(dialogues) && (
+                    <DialoguePanel dialogues={dialogues} language={lesson.language} />
+                )}
+
+                {/* Exercises Section (Fill-in-the-blank, Matching) */}
+                {hasExercises && exercises && (
+                    <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} />
+                )}
+
+                {/* Sentence Scramble Exercise Section */}
+                {hasSentenceScramble && exercises?.sentenceScramble && (
+                    <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} />
+                )}
+                
+                {/* Notes Section */}
+                {(hasPronunciationTip || hasCulturalNote) && (
+                  <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><LanguagesIcon className="h-6 w-6"/>Tips & Culture</CardTitle></CardHeader>
+                    <CardContent className="space-y-4">
+                      {hasPronunciationTip && (
+                        <div>
+                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2"><Speaker className="h-5 w-5"/>Pronunciation Tip</h4>
+                          <p className="text-muted-foreground italic">"{pronunciation_tip}"</p>
+                        </div>
+                      )}
+                      {hasPronunciationTip && hasCulturalNote && <Separator />}
+                      {hasCulturalNote && (
+                        <div>
+                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2">🌍 Cultural Note</h4>
+                          <p className="text-muted-foreground italic">"{cultural_note}"</p>
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                )}
                 
                 <section className="text-center py-6 flex flex-col items-center">
                     <div className="relative">

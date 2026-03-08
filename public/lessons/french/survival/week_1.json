@@ -1,193 +1,181 @@
 {
-    "week": 1,
-    "path": "survival",
-    "targetLanguage": "French",
-    "nativeLanguage": "English",
-    "days": [
+  "week": 1,
+  "path": "survival",
+  "targetLanguage": "French",
+  "nativeLanguage": "English",
+  "days": [
+    {
+      "week": 1,
+      "day": 1,
+      "title": "Week 1 Day 1: The Absolute Basics",
+      "title_native": "Semaine 1 Jour 1 : Les bases absolues",
+      "theme": "Greetings & Essentials",
+      "path": "survival",
+      "targetLanguage": "French",
+      "nativeLanguage": "English",
+      "words": [
         {
-            "week": 1,
-            "day": 1,
-            "title": "Week 1 Day 1: Basic Greetings",
-            "title_native": "Semaine 1 Jour 1 : Salutations de base",
-            "theme": "Basic Greetings",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d1w1", "target": "Bonjour", "phonetic": "bon-ZHOOR", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "Bonjour, comment ça va ?", "example_sentence_native": "Hello, how are you?" },
-                { "id": "w1d1w2", "target": "Bonsoir", "phonetic": "bon-SWAHR", "native_meaning": "Good evening", "english": "Good evening", "example_sentence_target": "Bonsoir, Madame.", "example_sentence_native": "Good evening, Madam." },
-                { "id": "w1d1w3", "target": "Salut", "phonetic": "sa-LOO", "native_meaning": "Hi", "english": "Hi", "example_sentence_target": "Salut, ça va ?", "example_sentence_native": "Hi, how's it going?" },
-                { "id": "w1d1w4", "target": "Au revoir", "phonetic": "o ruh-VWAHR", "native_meaning": "Goodbye", "english": "Goodbye", "example_sentence_target": "Au revoir, à demain.", "example_sentence_native": "Goodbye, see you tomorrow." },
-                { "id": "w1d1w5", "target": "À bientôt", "phonetic": "ah bee-an-TOE", "native_meaning": "See you soon", "english": "See you soon", "example_sentence_target": "Merci, à bientôt.", "example_sentence_native": "Thank you, see you soon." }
-            ],
-            "dialogues": [
-                {
-                    "id": "w1d1d1",
-                    "context": "Meeting someone for the first time.",
-                    "lines": [
-                        { "speaker": "A", "target": "Bonjour, je m'appelle Marie.", "native": "Hello, my name is Marie.", "phonetic": "bon-ZHOOR, zhuh ma-PELL ma-REE." },
-                        { "speaker": "B", "target": "Bonjour Marie, je suis Paul.", "native": "Hello Marie, I am Paul.", "phonetic": "bon-ZHOOR ma-REE, zhuh swee POL." }
-                    ]
-                }
-            ],
-            "exercises": {
-                "matching": [
-                    { "id": "w1d1e1m1", "target": "Bonjour", "native": "Hello" },
-                    { "id": "w1d1e1m2", "target": "Au revoir", "native": "Goodbye" },
-                    { "id": "w1d1e1m3", "target": "Salut", "native": "Hi" }
-                ]
-            },
-            "cultural_note": "When greeting someone in France, it's common to shake hands with strangers and do 'la bise' (a kiss on the cheeks) with friends and family.",
-            "pronunciation_tip": "The 'r' in 'Bonjour' is a soft sound made in the back of the throat, not a hard 'r' like in English.",
-            "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D1-Greetings" }
+          "id": "w1_1_1",
+          "target": "Bonjour",
+          "phonetic": "bon-ZHOOR",
+          "native_meaning": "Hello",
+          "english": "Hello",
+          "example_sentence_target": "Bonjour, comment ça va ?",
+          "example_sentence_native": "Hello, how are you?"
         },
         {
-            "week": 1,
-            "day": 2,
-            "title": "Week 1 Day 2: Politeness",
-            "title_native": "Semaine 1 Jour 2 : La politesse",
-            "theme": "Politeness",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d2w1", "target": "Merci", "phonetic": "mer-SEE", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Merci beaucoup.", "example_sentence_native": "Thank you very much." },
-                { "id": "w1d2w2", "target": "S'il vous plaît", "phonetic": "seel voo PLEH", "native_meaning": "Please", "english": "Please", "example_sentence_target": "Un café, s'il vous plaît.", "example_sentence_native": "A coffee, please." },
-                { "id": "w1d2w3", "target": "Pardon", "phonetic": "par-DON", "native_meaning": "Excuse me / Sorry", "english": "Excuse me / Sorry", "example_sentence_target": "Pardon, où est la gare ?", "example_sentence_native": "Excuse me, where is the station?" },
-                { "id": "w1d2w4", "target": "Excusez-moi", "phonetic": "ex-kew-zay MWAH", "native_meaning": "Excuse me", "english": "Excuse me", "example_sentence_target": "Excusez-moi, je ne comprends pas.", "example_sentence_native": "Excuse me, I don't understand." },
-                { "id": "w1d2w5", "target": "De rien", "phonetic": "duh ree-AN", "native_meaning": "You're welcome", "english": "You're welcome", "example_sentence_target": "Merci ! De rien.", "example_sentence_native": "Thank you! You're welcome." }
-            ],
-            "dialogues": [],
-            "exercises": {
-                "fillBlanks": [
-                    { "id": "w1d2e1fb1", "sentence": "To say 'Thank you' in French, you say ___.", "answer": "Merci", "hint": "Starts with 'M'" }
-                ]
-            },
-            "cultural_note": "Always use 's'il vous plaît' when making a request in a formal setting like a shop or restaurant. It is considered very polite.",
-            "pronunciation_tip": "The 'en' in 'rien' is a nasal sound. Try to say 'an' while pushing air through your nose.",
-            "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D2-Politeness" }
+          "id": "w1_1_2",
+          "target": "Merci",
+          "phonetic": "mer-SEE",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Merci beaucoup.",
+          "example_sentence_native": "Thank you very much."
         },
         {
-            "week": 1,
-            "day": 3,
-            "title": "Week 1 Day 3: Yes, No, and Understanding",
-            "title_native": "Semaine 1 Jour 3 : Oui, Non, et Compréhension",
-            "theme": "Yes, No, and Understanding",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d3w1", "target": "Oui", "phonetic": "wee", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Oui, je suis d'accord.", "example_sentence_native": "Yes, I agree." },
-                { "id": "w1d3w2", "target": "Non", "phonetic": "non", "native_meaning": "No", "english": "No", "example_sentence_target": "Non, merci.", "example_sentence_native": "No, thank you." },
-                { "id": "w1d3w3", "target": "Je ne comprends pas", "phonetic": "zhuh nuh com-pron pah", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Pardon, je ne comprends pas.", "example_sentence_native": "Sorry, I don't understand." },
-                { "id": "w1d3w4", "target": "Parlez-vous anglais ?", "phonetic": "par-lay voo on-GLEH?", "native_meaning": "Do you speak English?", "english": "Do you speak English?", "example_sentence_target": "Excusez-moi, parlez-vous anglais ?", "example_sentence_native": "Excuse me, do you speak English?" },
-                { "id": "w1d3w5", "target": "Comment dit-on...", "phonetic": "kom-on dee-ton", "native_meaning": "How do you say...", "english": "How do you say...", "example_sentence_target": "Comment dit-on 'book' en français ?", "example_sentence_native": "How do you say 'book' in French?" }
-            ],
-            "dialogues": [],
-            "exercises": { "matching": [{ "id": "w1d3e1m1", "target": "Oui", "native": "Yes" }, { "id": "w1d3e1m2", "target": "Non", "native": "No" }] },
-            "cultural_note": "It's often appreciated if you try to speak a little French before asking 'Parlez-vous anglais ?'.",
-            "pronunciation_tip": "The 'oui' sound is very short and quick, almost like the 'we' in 'we went'.",
-            "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D3-Understanding" }
+          "id": "w1_1_3",
+          "target": "Au revoir",
+          "phonetic": "o ruh-VWAHR",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "Au revoir, à demain.",
+          "example_sentence_native": "Goodbye, see you tomorrow."
         },
         {
-            "week": 1,
-            "day": 4,
-            "title": "Week 1 Day 4: Numbers 1-5",
-            "title_native": "Semaine 1 Jour 4 : Chiffres 1-5",
-            "theme": "Numbers 1-5",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d4w1", "target": "Un", "phonetic": "un", "native_meaning": "One", "english": "One", "example_sentence_target": "Un café, s'il vous plaît.", "example_sentence_native": "One coffee, please." },
-                { "id": "w1d4w2", "target": "Deux", "phonetic": "duh", "native_meaning": "Two", "english": "Two", "example_sentence_target": "J'ai deux frères.", "example_sentence_native": "I have two brothers." },
-                { "id": "w1d4w3", "target": "Trois", "phonetic": "trwah", "native_meaning": "Three", "english": "Three", "example_sentence_target": "Il est trois heures.", "example_sentence_native": "It is three o'clock." },
-                { "id": "w1d4w4", "target": "Quatre", "phonetic": "kat-ruh", "native_meaning": "Four", "english": "Four", "example_sentence_target": "La table a quatre pieds.", "example_sentence_native": "The table has four legs." },
-                { "id": "w1d4w5", "target": "Cinq", "phonetic": "sank", "native_meaning": "Five", "english": "Five", "example_sentence_target": "Il y a cinq doigts.", "example_sentence_native": "There are five fingers." }
-            ],
-            "dialogues": [],
-            "exercises": { "matching": [{ "id": "w1d4e1m1", "target": "Deux", "native": "Two" }, { "id": "w1d4e1m2", "target": "Quatre", "native": "Four" }] },
-            "cultural_note": "Numbers are fundamental for shopping, telling time, and giving phone numbers.",
-            "pronunciation_tip": "The 'x' in 'deux' is silent. The sound is similar to the 'u' in the English word 'blur'.",
-            "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D4-Numbers1-5" }
+          "id": "w1_1_4",
+          "target": "Oui",
+          "phonetic": "wee",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Oui, je comprends.",
+          "example_sentence_native": "Yes, I understand."
         },
         {
-            "week": 1,
-            "day": 5,
-            "title": "Week 1 Day 5: Numbers 6-10",
-            "title_native": "Semaine 1 Jour 5 : Chiffres 6-10",
-            "theme": "Numbers 6-10",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d5w1", "target": "Six", "phonetic": "seess", "native_meaning": "Six", "english": "Six", "example_sentence_target": "Il y a six chaises.", "example_sentence_native": "There are six chairs." },
-                { "id": "w1d5w2", "target": "Sept", "phonetic": "set", "native_meaning": "Seven", "english": "Seven", "example_sentence_target": "Il y a sept jours dans une semaine.", "example_sentence_native": "There are seven days in a week." },
-                { "id": "w1d5w3", "target": "Huit", "phonetic": "weet", "native_meaning": "Eight", "english": "Eight", "example_sentence_target": "J'ai huit ans.", "example_sentence_native": "I am eight years old." },
-                { "id": "w1d5w4", "target": "Neuf", "phonetic": "nuhf", "native_meaning": "Nine", "english": "Nine", "example_sentence_target": "Le numéro est neuf.", "example_sentence_native": "The number is nine." },
-                { "id": "w1d5w5", "target": "Dix", "phonetic": "deess", "native_meaning": "Ten", "english": "Ten", "example_sentence_target": "Je voudrais dix croissants.", "example_sentence_native": "I would like ten croissants." }
-            ],
-            "dialogues": [],
-            "exercises": { "matching": [{ "id": "w1d5e1m1", "target": "Sept", "native": "Seven" }, { "id": "w1d5e1m2", "target": "Dix", "native": "Ten" }] },
-            "cultural_note": "When counting, the final consonant of 'six', 'huit', and 'dix' is often pronounced when followed by a vowel or at the end of a sentence.",
-            "pronunciation_tip": "The 'p' in 'sept' is silent. It's pronounced like 'set' in English.",
-            "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D5-Numbers6-10" }
-        },
-        {
-            "week": 1,
-            "day": 6,
-            "title": "Week 1 Day 6: Basic Needs",
-            "title_native": "Semaine 1 Jour 6 : Besoins de base",
-            "theme": "Basic Needs",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d6w1", "target": "Où sont les toilettes ?", "phonetic": "oo son lay twah-LET?", "native_meaning": "Where is the toilet?", "english": "Where is the toilet?", "example_sentence_target": "Excusez-moi, où sont les toilettes ?", "example_sentence_native": "Excuse me, where is the toilet?" },
-                { "id": "w1d6w2", "target": "Je voudrais", "phonetic": "zhuh voo-DRAY", "native_meaning": "I would like", "english": "I would like", "example_sentence_target": "Je voudrais de l'eau.", "example_sentence_native": "I would like some water." },
-                { "id": "w1d6w3", "target": "De l'eau", "phonetic": "duh lo", "native_meaning": "Water", "english": "Water", "example_sentence_target": "Un verre d'eau, s'il vous plaît.", "example_sentence_native": "A glass of water, please." },
-                { "id": "w1d6w4", "target": "Combien ça coûte ?", "phonetic": "kom-bee-an sa koot?", "native_meaning": "How much does it cost?", "english": "How much does it cost?", "example_sentence_target": "Pardon, combien ça coûte ?", "example_sentence_native": "Excuse me, how much does it cost?" },
-                { "id": "w1d6w5", "target": "L'addition", "phonetic": "la-dee-see-ON", "native_meaning": "The bill", "english": "The bill", "example_sentence_target": "L'addition, s'il vous plaît.", "example_sentence_native": "The bill, please." }
-            ],
-            "dialogues": [],
-            "exercises": {
-                "fillBlanks": [
-                    { "id": "w1d6e1fb1", "sentence": "To ask 'How much does it cost?', you say '___ ça coûte ?'.", "answer": "Combien", "hint": "How much" }
-                ]
-            },
-            "cultural_note": "In many French cafes, you need to ask for the bill ('l'addition'). It is not always brought to you automatically.",
-            "pronunciation_tip": "The 'oi' in 'toilettes' sounds like 'wa' in the English word 'watt'.",
-            "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D6-BasicNeeds" }
-        },
-        {
-            "week": 1,
-            "day": 7,
-            "title": "Week 1 Day 7: Review",
-            "title_native": "Semaine 1 Jour 7 : Révision",
-            "theme": "Week 1 Review",
-            "path": "survival",
-            "targetLanguage": "French",
-            "nativeLanguage": "English",
-            "words": [
-                { "id": "w1d7w1", "target": "Bonjour", "phonetic": "bon-ZHOOR", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "Bonjour, Madame.", "example_sentence_native": "Hello, Madam." },
-                { "id": "w1d7w2", "target": "Merci", "phonetic": "mer-SEE", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Merci pour votre aide.", "example_sentence_native": "Thank you for your help." },
-                { "id": "w1d7w3", "target": "Oui", "phonetic": "wee", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Oui, s'il vous plaît.", "example_sentence_native": "Yes, please." },
-                { "id": "w1d7w4", "target": "Non", "phonetic": "non", "native_meaning": "No", "english": "No", "example_sentence_target": "Non, je ne veux pas.", "example_sentence_native": "No, I do not want." },
-                { "id": "w1d7w5", "target": "Au revoir", "phonetic": "o ruh-VWAHR", "native_meaning": "Goodbye", "english": "Goodbye", "example_sentence_target": "Au revoir, bonne journée.", "example_sentence_native": "Goodbye, have a good day." }
-            ],
-            "dialogues": [],
-            "exercises": {
-                "matching": [
-                    { "id": "w1d7e1m1", "target": "Bonjour", "native": "Hello" },
-                    { "id": "w1d7e1m2", "target": "Merci", "native": "Thank you" },
-                    { "id": "w1d7e1m3", "target": "Oui", "native": "Yes" },
-                    { "id": "w1d7e1m4", "target": "Non", "native": "No" },
-                    { "id": "w1d7e1m5", "target": "Au revoir", "native": "Goodbye" }
-                ]
-            },
-            "cultural_note": "Reviewing what you've learned is the key to remembering it long-term. Keep practicing!",
-            "pronunciation_tip": "Listen to the audio for each word again and try to mimic the pronunciation as closely as possible.",
-            "progress": { "xp": 150, "streak_bonus": 20, "badge": "W1-Complete" }
+          "id": "w1_1_5",
+          "target": "Non",
+          "phonetic": "nohn",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Non, je ne sais pas.",
+          "example_sentence_native": "No, I don't know."
         }
-    ]
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Greeting someone.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour, je m'appelle Marie.",
+              "native": "Hello, my name is Marie.",
+              "phonetic": "bon-ZHOOR, zhuh ma-PELL ma-REE."
+            },
+            {
+              "speaker": "B",
+              "target": "Bonjour Marie, je suis Paul.",
+              "native": "Hello Marie, I am Paul.",
+              "phonetic": "bon-ZHOOR ma-REE, zhuh swee POL."
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "Thanking someone.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Voici votre café.",
+              "native": "Here is your coffee.",
+              "phonetic": "vwa-SEE vo-truh ka-FAY."
+            },
+            {
+              "speaker": "B",
+              "target": "Merci beaucoup.",
+              "native": "Thank you very much.",
+              "phonetic": "mer-SEE bo-KOO."
+            }
+          ]
+        },
+        {
+          "id": "d1_1_3",
+          "context": "Saying goodbye.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Je dois partir maintenant.",
+              "native": "I have to go now.",
+              "phonetic": "zhuh dwa par-TEER mant-NON."
+            },
+            {
+              "speaker": "B",
+              "target": "D'accord. Au revoir!",
+              "native": "Okay. Goodbye!",
+              "phonetic": "da-KOR. o ruh-VWAHR!"
+            }
+          ]
+        },
+        {
+          "id": "d1_1_4",
+          "context": "Answering a simple question.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Vous parlez anglais?",
+              "native": "Do you speak English?",
+              "phonetic": "voo par-LAY on-GLAY?"
+            },
+            {
+              "speaker": "B",
+              "target": "Oui, un peu.",
+              "native": "Yes, a little.",
+              "phonetic": "wee, un puh."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_1_1",
+            "sentence": "To say 'Hello' in French, you say ___.",
+            "answer": "Bonjour",
+            "hint": "Starts with 'B'"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_1_1",
+            "target": "Au revoir",
+            "native": "Goodbye"
+          },
+          {
+            "id": "m1_1_2",
+            "target": "Merci",
+            "native": "Thank you"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_1_1",
+            "scrambled": [
+              "ça",
+              "va",
+              "comment",
+              "?"
+            ],
+            "correct": "comment ça va ?",
+            "nativeHint": "How are you?"
+          }
+        ]
+      },
+      "cultural_note": "When greeting someone in France, it's common to shake hands with strangers and do 'la bise' (a kiss on the cheeks) with friends and family.",
+      "pronunciation_tip": "The 'r' in 'Bonjour' is a soft sound made in the back of the throat, not a hard 'r' like in English.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-Greetings"
+      }
+    }
+  ]
 }

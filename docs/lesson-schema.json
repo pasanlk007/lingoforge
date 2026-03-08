@@ -140,6 +140,12 @@
         "matching": {
           "type": "array",
           "items": { "$ref": "#/definitions/MatchingPair" }
+        },
+        "sentenceScramble": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SentenceScrambleExercise"
+          }
         }
       }
     },
@@ -177,6 +183,35 @@
         "native": { "type": "string" }
       },
       "required": ["id", "target", "native"]
+    },
+    "SentenceScrambleExercise": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "scrambled": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "An array of words in a scrambled order."
+        },
+        "correct": {
+          "type": "string",
+          "description": "The correctly ordered sentence."
+        },
+        "nativeHint": {
+          "type": "string",
+          "description": "The translation of the sentence to guide the user."
+        }
+      },
+      "required": [
+        "id",
+        "scrambled",
+        "correct",
+        "nativeHint"
+      ]
     },
     "Progress": {
       "type": "object",
