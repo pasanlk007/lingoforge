@@ -9,6 +9,7 @@ import { TARGET_LANGUAGES } from './constants';
 class AudioPlayer {
   private synthesis: SpeechSynthesis | null = null;
   private voices: SpeechSynthesisVoice[] = [];
+  private voicesLoaded: boolean = false;
 
   constructor() {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -23,9 +24,11 @@ class AudioPlayer {
 
   private loadVoices = () => {
     if (this.synthesis) {
-      this.voices = this.synthesis.getVoices();
-       if (this.voices.length === 0 && this.synthesis.getVoices().length > 0) {
-        this.voices = this.synthesis.getVoices();
+      const newVoices = this.synthesis.getVoices();
+      if (newVoices.length > 0) {
+        this.voices = newVoices;
+        this.voicesLoaded = true;
+        // console.log('Voices loaded:', this.voices.length);
       }
     }
   };
@@ -38,7 +41,6 @@ class AudioPlayer {
    */
   public speak(text: string, languageName: string, rate: number = 1.0): void {
     if (!this.synthesis) {
-      // Alerting can be intrusive, let's just log an error.
       console.error("Speech synthesis is not supported or initialized.");
       return;
     }
@@ -47,16 +49,13 @@ class AudioPlayer {
       this.synthesis.cancel();
     }
     
-    if (this.voices.length === 0) {
+    if (!this.voicesLoaded) {
         this.loadVoices();
-        if (this.voices.length === 0) {
-            console.error("No voices available for speech synthesis.");
-            // Optionally, alert the user that TTS is not ready.
-            alert("Text-to-speech is not ready. Please try again in a moment.");
-            return;
+        if (!this.voicesLoaded) {
+            console.error("No voices available for speech synthesis. Trying again shortly.");
+            // We can try to speak anyway, as some browsers might pick it up.
         }
     }
-
 
     if (text !== "") {
       const languageInfo = TARGET_LANGUAGES.find(lang => lang.name === languageName);
@@ -76,7 +75,10 @@ class AudioPlayer {
       };
 
       // Find the best voice for the language code.
-      const voice = this.voices.find(v => v.lang === languageInfo.code);
+      // We search with both 'fr-FR' and 'fr' style language codes.
+      const voice = this.voices.find(v => v.lang === languageInfo.code) 
+                    || this.voices.find(v => v.lang.startsWith(languageInfo.code.split('-')[0]));
+
 
       if (voice) {
         utterance.voice = voice;
@@ -84,7 +86,9 @@ class AudioPlayer {
         // Fallback to the language code if a specific voice is not found.
         // This is important for some browsers/OS.
         utterance.lang = languageInfo.code;
-        console.warn(`No specific voice found for ${languageInfo.code}. Using language fallback.`);
+        if(this.voicesLoaded) {
+            console.warn(`No specific voice found for ${languageInfo.code}. Using language fallback.`);
+        }
       }
 
       utterance.pitch = 1;

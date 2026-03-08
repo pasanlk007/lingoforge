@@ -3,7 +3,7 @@
 import { Volume1, Volume2 } from 'lucide-react';
 import { audioPlayer } from '@/lib/audioPlayer';
 import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from './ui/tooltip';
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
 
 interface AudioPlaybackProps {
   text: string;

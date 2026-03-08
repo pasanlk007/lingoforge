@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AudioPlayback } from './AudioPlayback';
 import type { LessonItem } from '@/lib/types';
 import { translations } from '@/lib/translations';
+import { Separator } from './ui/separator';
 
 interface WordCardProps {
   item: LessonItem;
@@ -12,7 +13,6 @@ interface WordCardProps {
 }
 
 export function WordCard({ item, language }: WordCardProps) {
-  const [isFlipped, setIsFlipped] = useState(false);
   const [uiLang, setUiLang] = useState<keyof typeof translations>('English');
 
   useEffect(() => {
@@ -25,60 +25,43 @@ export function WordCard({ item, language }: WordCardProps) {
 
   const labels = translations[uiLang]?.wordCard || translations['English'].wordCard;
 
-  const cardContainerStyle = {
-    perspective: '1000px',
-  };
-
-  const cardStyle = {
-    transformStyle: 'preserve-3d' as const,
-    transition: 'transform 0.6s',
-    transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-  };
-
-  const cardFaceStyle = {
-    backfaceVisibility: 'hidden' as const,
-    WebkitBackfaceVisibility: 'hidden' as const,
-  };
-
   return (
-    <div style={cardContainerStyle} className="w-full max-w-sm h-[22rem]">
-      <div style={cardStyle} className="relative w-full h-full cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
-        {/* Front of the card */}
-        <div style={cardFaceStyle} className="absolute w-full h-full">
-          <Card className="flex h-full flex-col items-center justify-center p-6 text-center shadow-lg space-y-4">
-            <h2 className="text-5xl font-bold">{item.target}</h2>
-            
+    <div className="w-full max-w-sm">
+      <Card className="flex h-full flex-col p-6 text-center shadow-lg">
+        
+        {/* Target Word */}
+        <h2 className="text-5xl font-bold">{item.target}</h2>
+        
+        {/* Audio Playback */}
+        <div className="my-4 flex justify-center">
+            <AudioPlayback text={item.target} languageName={language} />
+        </div>
+        
+        <Separator className="my-2"/>
+
+        {/* Phonetic and Meaning */}
+        <div className="grid grid-cols-2 gap-4 my-4">
             <div className="text-center">
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">{labels.phonetic}</p>
-                <p className="text-2xl text-foreground">{item.phonetic}</p>
+                <p className="text-xl text-foreground">{item.phonetic}</p>
             </div>
-
-            <AudioPlayback text={item.target} languageName={language} />
-
-            <p className="absolute bottom-4 text-xs text-muted-foreground">Click to flip</p>
-          </Card>
-        </div>
-
-        {/* Back of the card */}
-        <div style={{...cardFaceStyle, transform: 'rotateY(180deg)'}} className="absolute w-full h-full">
-           <Card className="flex h-full flex-col items-center justify-center p-6 text-center shadow-lg space-y-4">
             <div className="text-center">
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">{labels.meaning}</p>
-              <h3 className="text-3xl font-bold">{item.native_meaning}</h3>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">{labels.meaning}</p>
+                <h3 className="text-xl font-bold">{item.native_meaning}</h3>
             </div>
-             
-             {item.example_sentence_target && (
-                <div className="border-t pt-4 text-sm w-full">
-                    <p className="font-semibold text-foreground">Example:</p>
-                    <div className="italic mt-1">
-                      <p>"{item.example_sentence_target}"</p>
-                      <p className="text-muted-foreground">"{item.example_sentence_native}"</p>
-                    </div>
-                </div>
-             )}
-           </Card>
         </div>
-      </div>
+        
+        {/* Example Sentences */}
+        {item.example_sentence_target && (
+            <div className="border-t pt-4 text-sm w-full bg-muted/50 rounded-lg p-3">
+                <p className="font-semibold text-foreground text-left mb-1">Example:</p>
+                <div className="italic text-left space-y-1">
+                    <p>"{item.example_sentence_target}"</p>
+                    <p className="text-muted-foreground">"{item.example_sentence_native}"</p>
+                </div>
+            </div>
+        )}
+      </Card>
     </div>
   );
 }
