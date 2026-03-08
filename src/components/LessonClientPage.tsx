@@ -16,6 +16,7 @@ import Confetti from 'react-dom-confetti';
 import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
 import { translations } from '@/lib/translations';
+import { TooltipProvider } from './ui/tooltip';
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;
@@ -45,6 +46,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     }, []);
 
     const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+    
     const dayData: LessonDay | undefined = lesson?.days?.[0];
     
     if (!dayData || !isMounted) {
@@ -99,110 +101,112 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const weekProgress = (currentDay / 7) * 100;
 
     return (
-        <div className="container mx-auto max-w-3xl py-8 px-4">
-            <header className="mb-6">
-                <div className="flex items-center justify-between mb-4">
-                     <Button variant="ghost" asChild>
-                       <Link href="/dashboard"><ArrowLeft className="mr-2 h-4 w-4" /> {t.dashboard}</Link>
-                     </Button>
-                     <div className="text-center">
-                        <h1 className="font-bold text-lg">{dayData.title}</h1>
-                        <p className="text-sm text-muted-foreground">{dayData.theme}</p>
-                     </div>
-                     <StreakCounter count={5} />
-                </div>
-                 <div className="space-y-2">
-                    <div className="flex items-center gap-2">
-                        <span className="text-xs font-semibold">{t.weekProgress}</span>
-                        <ProgressBar value={weekProgress} />
-                        <span className="text-sm font-semibold text-muted-foreground">{currentDay}/7</span>
+        <TooltipProvider>
+            <div className="container mx-auto max-w-3xl py-8 px-4">
+                <header className="mb-6">
+                    <div className="flex items-center justify-between mb-4">
+                         <Button variant="ghost" asChild>
+                           <Link href="/dashboard"><ArrowLeft className="mr-2 h-4 w-4" /> {t.dashboard}</Link>
+                         </Button>
+                         <div className="text-center">
+                            <h1 className="font-bold text-lg">{dayData.title}</h1>
+                            <p className="text-sm text-muted-foreground">{dayData.theme}</p>
+                         </div>
+                         <StreakCounter count={5} />
                     </div>
-                     <div className="flex items-center gap-2">
-                        <span className="text-xs font-semibold">{t.dayProgress}</span>
-                        <ProgressBar value={exerciseProgress} />
-                        <span className="text-sm font-semibold text-muted-foreground">{Math.floor(exerciseProgress)}%</span>
+                     <div className="space-y-2">
+                        <div className="flex items-center gap-2">
+                            <span className="text-xs font-semibold">{t.weekProgress}</span>
+                            <ProgressBar value={weekProgress} />
+                            <span className="text-sm font-semibold text-muted-foreground">{currentDay}/7</span>
+                        </div>
+                         <div className="flex items-center gap-2">
+                            <span className="text-xs font-semibold">{t.dayProgress}</span>
+                            <ProgressBar value={exerciseProgress} />
+                            <span className="text-sm font-semibold text-muted-foreground">{Math.floor(exerciseProgress)}%</span>
+                        </div>
                     </div>
-                </div>
-            </header>
+                </header>
 
-            <main className="space-y-8">
-                
-                {/* Vocabulary Section */}
-                <Card>
-                    <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>{t.vocabulary}</CardTitle></CardHeader>
-                    <CardContent>
-                       {hasWords ? (
-                           <div className="flex flex-col items-center">
-                               <WordCard item={words[currentWordIndex]} language={lesson.language} />
-                               <div className="flex items-center justify-center mt-2 w-full max-w-sm">
-                                    <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
-                                    <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {words.length}</span>
-                                    <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
+                <main className="space-y-8">
+                    
+                    {/* Vocabulary Section */}
+                    <Card>
+                        <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>{t.vocabulary}</CardTitle></CardHeader>
+                        <CardContent>
+                           {hasWords ? (
+                               <div className="flex flex-col items-center">
+                                   <WordCard item={words[currentWordIndex]} language={lesson.language} />
+                                   <div className="flex items-center justify-center mt-2 w-full max-w-sm">
+                                        <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
+                                        <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {words.length}</span>
+                                        <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
+                                   </div>
                                </div>
-                           </div>
-                       ) : <p className="text-center text-muted-foreground py-8">{t.noVocabulary}</p>}
-                    </CardContent>
-                </Card>
-                
-                {/* Dialogues Section */}
-                {hasDialogues && Array.isArray(dialogues) && (
-                    <DialoguePanel dialogues={dialogues} language={lesson.language} t={t} />
-                )}
+                           ) : <p className="text-center text-muted-foreground py-8">{t.noVocabulary}</p>}
+                        </CardContent>
+                    </Card>
+                    
+                    {/* Dialogues Section */}
+                    {hasDialogues && Array.isArray(dialogues) && (
+                        <DialoguePanel dialogues={dialogues} language={lesson.language} t={t} />
+                    )}
 
-                {/* Exercises Section (Fill-in-the-blank, Matching) */}
-                {hasExercises && exercises && (
-                    <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} t={t} />
-                )}
+                    {/* Exercises Section (Fill-in-the-blank, Matching) */}
+                    {hasExercises && exercises && (
+                        <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} t={t} />
+                    )}
 
-                {/* Sentence Scramble Exercise Section */}
-                {hasSentenceScramble && exercises?.sentenceScramble && (
-                    <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} t={t} />
-                )}
-                
-                {/* Notes Section */}
-                {(hasPronunciationTip || hasCulturalNote) && (
-                  <Card>
-                    <CardHeader><CardTitle className="flex items-center gap-2"><LanguagesIcon className="h-6 w-6"/>{t.tipsAndCulture}</CardTitle></CardHeader>
-                    <CardContent className="space-y-4">
-                      {hasPronunciationTip && (
-                        <div>
-                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2"><Speaker className="h-5 w-5"/>{t.pronunciationTip}</h4>
-                          <p className="text-muted-foreground italic">"{pronunciation_tip}"</p>
+                    {/* Sentence Scramble Exercise Section */}
+                    {hasSentenceScramble && exercises?.sentenceScramble && (
+                        <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} t={t} />
+                    )}
+                    
+                    {/* Notes Section */}
+                    {(hasPronunciationTip || hasCulturalNote) && (
+                      <Card>
+                        <CardHeader><CardTitle className="flex items-center gap-2"><LanguagesIcon className="h-6 w-6"/>{t.tipsAndCulture}</CardTitle></CardHeader>
+                        <CardContent className="space-y-4">
+                          {hasPronunciationTip && (
+                            <div>
+                              <h4 className="font-semibold text-md mb-1 flex items-center gap-2"><Speaker className="h-5 w-5"/>{t.pronunciationTip}</h4>
+                              <p className="text-muted-foreground italic">"{pronunciation_tip}"</p>
+                            </div>
+                          )}
+                          {hasPronunciationTip && hasCulturalNote && <Separator />}
+                          {hasCulturalNote && (
+                            <div>
+                              <h4 className="font-semibold text-md mb-1 flex items-center gap-2">🌍 {t.culturalNote}</h4>
+                              <p className="text-muted-foreground italic">"{cultural_note}"</p>
+                            </div>
+                          )}
+                        </CardContent>
+                      </Card>
+                    )}
+                    
+                    <section className="text-center py-6 flex flex-col items-center">
+                        <div className="relative">
+                            <div className="absolute -inset-20"><Confetti active={showConfetti} config={confettiConfig} /></div>
+                            {dayCompleted ? (
+                                 <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
+                                    <CheckCircle className="h-4 w-4" />
+                                    <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
+                                    <AlertDescription className="text-xs">
+                                      {t.earnedXP
+                                        .replace('{xp}', progress?.xp.toString() ?? '0')
+                                        .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
+                                    </AlertDescription>
+                                </Alert>
+                            ) : (
+                                 <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay}>
+                                    <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
+                                </Button>
+                            )}
+                            {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
                         </div>
-                      )}
-                      {hasPronunciationTip && hasCulturalNote && <Separator />}
-                      {hasCulturalNote && (
-                        <div>
-                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2">🌍 {t.culturalNote}</h4>
-                          <p className="text-muted-foreground italic">"{cultural_note}"</p>
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
-                )}
-                
-                <section className="text-center py-6 flex flex-col items-center">
-                    <div className="relative">
-                        <div className="absolute -inset-20"><Confetti active={showConfetti} config={confettiConfig} /></div>
-                        {dayCompleted ? (
-                             <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
-                                <CheckCircle className="h-4 w-4" />
-                                <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
-                                <AlertDescription className="text-xs">
-                                  {t.earnedXP
-                                    .replace('{xp}', progress?.xp.toString() ?? '0')
-                                    .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
-                                </AlertDescription>
-                            </Alert>
-                        ) : (
-                             <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay}>
-                                <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
-                            </Button>
-                        )}
-                        {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
-                    </div>
-                </section>
-            </main>
-        </div>
+                    </section>
+                </main>
+            </div>
+        </TooltipProvider>
     );
 }
