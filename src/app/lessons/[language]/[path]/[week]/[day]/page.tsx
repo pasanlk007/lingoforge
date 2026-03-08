@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import { useFirestore, useMemoFirebase, useUser } from '@/firebase';
 import { doc, getDoc } from 'firebase/firestore';
-import { useDoc } from '@/firebase/firestore/use-doc';
 import Link from 'next/link';
 
 import type { LanguageLesson, WeeklyLessonPlan } from '@/lib/types';
@@ -14,16 +13,16 @@ import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
 
-// Component to show admin-specific actions when a lesson is not found
-function AdminLessonActions({ language, path, week }: { language: string | string[], path: string | string[], week: string | string[] }) {
+// Component to show user-specific actions when a lesson is not found
+function UserLessonActions({ language, path, week }: { language: string | string[], path: string | string[], week: string | string[] }) {
   const generationUrl = `/admin/generate?targetLanguage=${language}&path=${path}&week=${week}`;
   return (
     <div className="mt-4 rounded-lg border border-dashed border-yellow-500/50 bg-yellow-500/10 p-4">
       <div className="flex items-start gap-3">
         <Wrench className="h-5 w-5 text-yellow-400" />
         <div className='flex-1'>
-          <h3 className="font-semibold text-yellow-300">Admin Action Required</h3>
-          <p className="text-sm text-yellow-400/80">This lesson does not exist in the cache. As an administrator, you can generate it now.</p>
+          <h3 className="font-semibold text-yellow-300">Action Required</h3>
+          <p className="text-sm text-yellow-400/80">This lesson does not exist in the cache. As a logged-in user, you can generate it now.</p>
           <Button asChild className="mt-3">
             <Link href={generationUrl}>Generate Week {week} Lesson</Link>
           </Button>
@@ -50,11 +49,6 @@ export default function LessonPage() {
     if (!language || !path || !week) return null;
     return `${language}_${path}_week_${week}`.toLowerCase();
   }, [language, path, week]);
-  
-  // Check if the current user is an admin
-  const adminRef = useMemoFirebase(() => user ? doc(firestore, "adminUsers", user.uid) : null, [user, firestore]);
-  const { data: adminDoc } = useDoc(adminRef);
-  const isAdmin = !!adminDoc;
 
   useEffect(() => {
     if (!lessonCacheId || !firestore) return;
@@ -86,7 +80,7 @@ export default function LessonPage() {
             setError(`Day ${dayNum} not found in the cached lesson for week ${week}.`);
           }
         } else {
-          setError(`Lesson not found in cache. Please ask an administrator to generate it.`);
+          setError(`Lesson not found in cache. Please generate it from the admin panel.`);
         }
       } catch (e: any) {
         console.error("Error fetching lesson from cache: ", e);
@@ -131,8 +125,8 @@ export default function LessonPage() {
               <AlertTitle>Could Not Load Lesson</AlertTitle>
               <AlertDescription>{error}</AlertDescription>
             </Alert>
-            {isAdmin && error.includes('Lesson not found in cache') && (
-              <AdminLessonActions language={language} path={path} week={week} />
+            {user && error.includes('Lesson not found in cache') && (
+              <UserLessonActions language={language} path={path} week={week} />
             )}
           </div>
         </main>
