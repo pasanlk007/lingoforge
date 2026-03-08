@@ -34,7 +34,7 @@ export default function SurvivalPathPage() {
 
   // This would come from user data in a real app
   const completedDays = {
-    1: [1, 2, 3], // User has completed 3 days in week 1
+    1: [], // User has completed 0 days in week 1 for this path
   };
 
   if (!isMounted) {
