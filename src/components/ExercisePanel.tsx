@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import type { Exercises } from '@/lib/types';
+import type { Exercises, MatchingPair } from '@/lib/types';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -56,39 +56,32 @@ function Matching({ exercises, onComplete, t }: { exercises: Exercises['matching
     if (!exercises || exercises.length === 0) return null;
 
     const matchingPairs = useMemo(() => exercises ?? [], [exercises]);
-    const [matchingTargets, setMatchingTargets] = useState<string[]>([]);
-    const [matchingNatives, setMatchingNatives] = useState<string[]>([]);
     
-    useEffect(() => {
-        if (matchingPairs.length > 0) {
-        setMatchingTargets(shuffleArray(matchingPairs.map(p => p.target)));
-        setMatchingNatives(shuffleArray(matchingPairs.map(p => p.native)));
-        }
-    }, [matchingPairs]);
+    const shuffledTargets = useMemo(() => shuffleArray([...matchingPairs]), [matchingPairs]);
+    const shuffledNatives = useMemo(() => shuffleArray([...matchingPairs]), [matchingPairs]);
 
-    const [selectedTarget, setSelectedTarget] = useState<string | null>(null);
-    const [selectedNative, setSelectedNative] = useState<string | null>(null);
+    const [selectedTarget, setSelectedTarget] = useState<MatchingPair | null>(null);
+    const [selectedNative, setSelectedNative] = useState<MatchingPair | null>(null);
     const [matches, setMatches] = useState<Record<string, string>>({});
     const [incorrectMatch, setIncorrectMatch] = useState(false);
 
     useEffect(() => {
         if (selectedTarget && selectedNative) {
-        const originalPair = matchingPairs.find(p => p.target === selectedTarget);
-        if (originalPair && originalPair.native === selectedNative) {
-            setMatches(prev => ({ ...prev, [selectedTarget]: selectedNative }));
-            onComplete(true);
-            setIncorrectMatch(false);
-        } else {
-            onComplete(false);
-            setIncorrectMatch(true);
+            if (selectedTarget.id === selectedNative.id) {
+                setMatches(prev => ({ ...prev, [selectedTarget.id]: selectedNative.id }));
+                onComplete(true);
+                setIncorrectMatch(false);
+            } else {
+                onComplete(false);
+                setIncorrectMatch(true);
+            }
+            setTimeout(() => {
+                setSelectedTarget(null);
+                setSelectedNative(null);
+                setIncorrectMatch(false);
+            }, 500); // give feedback for 500ms
         }
-        setTimeout(() => {
-            setSelectedTarget(null);
-            setSelectedNative(null);
-            setIncorrectMatch(false);
-        }, 500); // give feedback for 500ms
-        }
-    }, [selectedTarget, selectedNative, matchingPairs, onComplete]);
+    }, [selectedTarget, selectedNative, onComplete]);
 
     const allMatched = Object.keys(matches).length === matchingPairs.length;
 
@@ -97,36 +90,36 @@ function Matching({ exercises, onComplete, t }: { exercises: Exercises['matching
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2"><Users className="w-5 h-5"/>{t.matchingPairs}</h3>
             <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-2">
-                    {matchingTargets.map(target => (
+                    {shuffledTargets.map(pair => (
                         <Button
-                            key={target}
-                            variant={matches[target] ? 'outline' : (selectedTarget === target ? 'default' : 'secondary')}
+                            key={pair.id}
+                            variant={matches[pair.id] ? 'outline' : (selectedTarget?.id === pair.id ? 'default' : 'secondary')}
                             className={cn(
-                                matches[target] && "bg-green-500/20 border-green-500/50 text-foreground cursor-default", 
-                                selectedTarget === target && "ring-2 ring-primary",
-                                incorrectMatch && selectedTarget === target && "bg-destructive/80"
+                                matches[pair.id] && "bg-green-500/20 border-green-500/50 text-foreground cursor-default", 
+                                selectedTarget?.id === pair.id && "ring-2 ring-primary",
+                                incorrectMatch && selectedTarget?.id === pair.id && "bg-destructive/80"
                             )}
-                            disabled={!!matches[target]}
-                            onClick={() => setSelectedTarget(target)}
+                            disabled={!!matches[pair.id]}
+                            onClick={() => setSelectedTarget(pair)}
                         >
-                            {target}
+                            {pair.target}
                         </Button>
                     ))}
                 </div>
                 <div className="flex flex-col gap-2">
-                    {matchingNatives.map(native => (
+                    {shuffledNatives.map(pair => (
                         <Button
-                            key={native}
-                            variant={Object.values(matches).includes(native) ? 'outline' : (selectedNative === native ? 'default' : 'secondary')}
+                            key={pair.id}
+                            variant={Object.values(matches).includes(pair.id) ? 'outline' : (selectedNative?.id === pair.id ? 'default' : 'secondary')}
                             className={cn(
-                                Object.values(matches).includes(native) && "bg-green-500/20 border-green-500/50 text-foreground cursor-default", 
-                                selectedNative === native && "ring-2 ring-primary",
-                                incorrectMatch && selectedNative === native && "bg-destructive/80"
+                                Object.values(matches).includes(pair.id) && "bg-green-500/20 border-green-500/50 text-foreground cursor-default", 
+                                selectedNative?.id === pair.id && "ring-2 ring-primary",
+                                incorrectMatch && selectedNative?.id === pair.id && "bg-destructive/80"
                             )}
-                            disabled={Object.values(matches).includes(native)}
-                            onClick={() => setSelectedNative(native)}
+                            disabled={Object.values(matches).includes(pair.id)}
+                            onClick={() => setSelectedNative(pair)}
                         >
-                            {native}
+                            {pair.native}
                         </Button>
                     ))}
                 </div>
