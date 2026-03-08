@@ -6,43 +6,33 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { Navigation } from '@/components/Navigation';
 import { targetLanguages, nativeLanguages } from '@/lib/translations';
 import { PATHS } from '@/lib/constants';
-import { generateLessonAction } from './actions';
-import { Loader2, ClipboardCopy } from 'lucide-react';
+import { generateWeeklyLessonAction } from './actions';
+import { Loader2, ClipboardCopy, Save } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+import { useFirestore } from '@/firebase';
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 export default function AdminGeneratePage() {
   const { toast } = useToast();
-  const [isLoading, setIsLoading] = useState(false);
+  const firestore = useFirestore();
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [isCaching, setIsCaching] = useState(false);
   const [generatedJson, setGeneratedJson] = useState('');
-  const [filePath, setFilePath] = useState('public/lessons/english_french/survival/week_01/day_1.json');
-
-  const updateFilePath = (form: HTMLFormElement) => {
-    const native = form.nativeLanguage.value || 'english';
-    const target = form.targetLanguage.value || 'french';
-    const path = form.path.value || 'survival';
-    const week = parseInt(form.week.value, 10) || 1;
-    const day = parseInt(form.day.value, 10) || 1;
-    const newPath = `public/lessons/${native.toLowerCase()}_${target.toLowerCase()}/${path}/week_${String(week).padStart(2, '0')}/day_${day}.json`;
-    setFilePath(newPath);
-  };
-
-  const handleFormChange = (event: React.ChangeEvent<HTMLFormElement>) => {
-    updateFilePath(event.currentTarget);
-  };
+  const [lessonCacheId, setLessonCacheId] = useState('');
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setIsLoading(true);
+    setIsGenerating(true);
     setGeneratedJson('');
-    updateFilePath(event.currentTarget);
+    setLessonCacheId('');
 
     const formData = new FormData(event.currentTarget);
-    const result = await generateLessonAction(formData);
+    const result = await generateWeeklyLessonAction(formData);
 
-    setIsLoading(false);
+    setIsGenerating(false);
 
     if (result.error) {
       toast({
@@ -54,9 +44,13 @@ export default function AdminGeneratePage() {
       try {
         const parsed = JSON.parse(result.json);
         setGeneratedJson(JSON.stringify(parsed, null, 2));
+
+        const id = `${formData.get('targetLanguage')}_${formData.get('path')}_week_${formData.get('week')}`.toLowerCase();
+        setLessonCacheId(id);
+        
         toast({
-          title: 'Lesson Generated!',
-          description: 'Review the JSON below and save it to the correct file path.',
+          title: 'Weekly Lesson Generated!',
+          description: 'Review the JSON below and save it to the cache.',
         });
       } catch (e) {
          toast({
@@ -69,10 +63,32 @@ export default function AdminGeneratePage() {
     }
   };
 
-  const handleCopy = () => {
+  const handleCopyToClipboard = () => {
     if (!generatedJson) return;
     navigator.clipboard.writeText(generatedJson);
     toast({ title: 'Copied to clipboard!' });
+  }
+
+  const handleCacheLesson = async () => {
+    if (!generatedJson || !lessonCacheId || !firestore) {
+        toast({ variant: 'destructive', title: 'Caching Failed', description: 'No lesson content or ID to cache.' });
+        return;
+    }
+    setIsCaching(true);
+    try {
+        const lessonRef = doc(firestore, 'lessonCache', lessonCacheId);
+        await setDoc(lessonRef, {
+            id: lessonCacheId,
+            lessonJson: generatedJson,
+            cachedAt: serverTimestamp(),
+        });
+        toast({ title: 'Lesson Cached!', description: `Successfully saved ${lessonCacheId} to Firestore.`});
+    } catch(e: any) {
+        console.error("Failed to cache lesson:", e);
+        toast({ variant: 'destructive', title: 'Firestore Error', description: e.message || "Could not write to lesson cache."});
+    } finally {
+        setIsCaching(false);
+    }
   }
 
   return (
@@ -82,15 +98,13 @@ export default function AdminGeneratePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Card>
             <CardHeader>
-              <CardTitle>Generate New Lesson</CardTitle>
+              <CardTitle>Generate & Cache Weekly Lesson</CardTitle>
               <CardDescription>
-                Fill out the form to generate a daily lesson using AI. The
-                output will be a JSON object that you can save to the correct
-                file path.
+                Fill out the form to generate a 7-day lesson plan. Review the JSON, then save it to the Firestore cache.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} onChange={handleFormChange} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                         <Label htmlFor="targetLanguage">Target Language</Label>
@@ -134,30 +148,13 @@ export default function AdminGeneratePage() {
                     </Select>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                        <Label htmlFor="week">Week</Label>
-                        <Input id="week" name="week" type="number" defaultValue="1" required />
-                    </div>
-                    <div className="space-y-2">
-                        <Label htmlFor="day">Day</Label>
-                        <Input id="day" name="day" type="number" defaultValue="1" required />
-                    </div>
-                </div>
-                
                 <div className="space-y-2">
-                  <Label htmlFor="theme">Daily Theme</Label>
-                  <Input
-                    id="theme"
-                    name="theme"
-                    placeholder="e.g., Basic Greetings & Introductions"
-                    defaultValue="Basic Greetings & Introductions"
-                    required
-                  />
+                    <Label htmlFor="week">Week</Label>
+                    <Input id="week" name="week" type="number" defaultValue="1" min="1" max="48" required />
                 </div>
                 
-                <Button type="submit" className="w-full" disabled={isLoading}>
-                  {isLoading ? <Loader2 className="animate-spin" /> : "Generate Lesson"}
+                <Button type="submit" className="w-full" disabled={isGenerating}>
+                  {isGenerating ? <Loader2 className="animate-spin" /> : "Generate Weekly Lesson"}
                 </Button>
               </form>
             </CardContent>
@@ -168,11 +165,16 @@ export default function AdminGeneratePage() {
                     <div className="flex justify-between items-center">
                         <div>
                             <CardTitle>Generated JSON Output</CardTitle>
-                            <CardDescription>Copy this and save it to the file path below.</CardDescription>
+                            <CardDescription>Review, then save to the Firestore cache.</CardDescription>
                         </div>
-                        <Button variant="ghost" size="icon" onClick={handleCopy} disabled={!generatedJson}>
-                            <ClipboardCopy />
-                        </Button>
+                        <div className='flex items-center gap-2'>
+                          <Button variant="outline" size="icon" onClick={handleCopyToClipboard} disabled={!generatedJson}>
+                              <ClipboardCopy />
+                          </Button>
+                          <Button variant="default" size="icon" onClick={handleCacheLesson} disabled={!generatedJson || isCaching}>
+                              {isCaching ? <Loader2 className="animate-spin"/> : <Save />}
+                          </Button>
+                        </div>
                     </div>
                 </CardHeader>
                 <CardContent className="flex-1">
@@ -183,10 +185,12 @@ export default function AdminGeneratePage() {
                     />
                 </CardContent>
             </Card>
-            <div className="text-sm text-muted-foreground p-4 bg-muted rounded-md">
-                <p className="font-semibold">File Path:</p>
-                <code className="text-xs break-all">{filePath}</code>
-            </div>
+            {lessonCacheId && (
+              <div className="text-sm text-muted-foreground p-4 bg-muted rounded-md">
+                  <p className="font-semibold">Firestore Cache ID:</p>
+                  <code className="text-xs break-all">{lessonCacheId}</code>
+              </div>
+            )}
           </div>
         </div>
       </main>

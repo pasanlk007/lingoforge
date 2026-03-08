@@ -1,196 +1,42 @@
-/**
- * This ruleset enforces a security model with a clear separation between private,
- * user-owned data and public, globally-shared data. It uses a dedicated
- * collection for managing administrator roles, ensuring that privileged operations
- * are controlled securely.
- *
- * Core Philosophy:
- * The rules are built on a strict user-ownership model for all personal data,
- * ensuring users can only access their own information. Shared data is publicly
- * readable but write-protected, and administrative roles are managed directly in
- * the database for transparent and auditable access control.
- *
- * Data Structure:
- * - /userProfiles/{userId}: Stores private user account information.
- * - /userProgress/{userId}/...: A user-specific top-level collection containing subcollections for lesson and week progress, strictly owned by the user.
- * - /lessonCache/{lessonCacheId}: A public collection of shared lesson content, readable by all but writable only by administrators.
- * - /adminUsers/{adminId}: A private collection where the existence of a document grants a user administrative privileges. This collection is not client-accessible.
- *
- * Key Security Decisions:
- * - Strict User Data Isolation: All user-specific data (profiles, progress) is located under paths containing the user's UID (`/userProfiles/{userId}` or `/userProgress/{userId}`), which makes securing list queries simple and effective.
- * - No User Listing: Listing the `/userProfiles` collection is explicitly disallowed to protect user privacy.
- * - Database-as-Auth: Administrator roles are determined by the existence of a document in the `/adminUsers` collection. This avoids custom claims and keeps role management within Firestore. Client-side modification of this collection is blocked.
- * - Denormalization for Security: User progress documents (`UserLessonProgress`, `UserWeekProgress`) contain a denormalized `userId` field. This allows rules to enforce that the document's content is consistent with its path, preventing data from being created in the wrong user's data tree.
- * - Public/Private Segregation: Shared data (`lessonCache`) and private data (`userProfiles`, `userProgress`) are stored in separate top-level collections. This avoids complex filtering rules and provides a clear, secure-by-default posture for each data type.
- */
+
 rules_version = '2';
+
 service cloud.firestore {
   match /databases/{database}/documents {
 
     // Helper Functions
-    // ----------------
-
-    /**
-     * Checks if a user is authenticated.
-     */
     function isSignedIn() {
       return request.auth != null;
     }
 
-    /**
-     * Checks if the authenticated user's UID matches the provided userId.
-     * This is the primary function for enforcing document ownership.
-     */
     function isOwner(userId) {
       return isSignedIn() && request.auth.uid == userId;
     }
-
-    /**
-     * Checks if the document being accessed already exists in Firestore.
-     * Essential for secure update and delete operations.
-     */
-    function isExistingDoc() {
-      return resource != null;
-    }
-
-    /**
-     * Combines ownership and existence checks for secure updates and deletes.
-     */
-    function isExistingOwner(userId) {
-      return isOwner(userId) && isExistingDoc();
-    }
-
-    /**
-     * Checks if the authenticated user is an administrator by verifying the
-     * existence of their UID in the /adminUsers collection.
-     */
+    
     function isAdmin() {
       return isSignedIn() && exists(/databases/$(database)/documents/adminUsers/$(request.auth.uid));
     }
 
-    /**
-     * Combines admin and existence checks for secure admin updates and deletes.
-     */
-    function isExistingAdmin() {
-      return isAdmin() && isExistingDoc();
-    }
-
-    /**
-     * @description
-     *   Stores individual user profiles. Only the authenticated owner of the
-     *   profile can read or write their own document. User listing is disabled.
-     * @path
-     *   /userProfiles/{userId}
-     * @allow
-     *   (create) An authenticated user creating their own profile: `request.auth.uid == userId`.
-     * @deny
-     *   (get) A user trying to read another user's profile: `request.auth.uid != userId`.
-     * @principle
-     *   Restricts access to a user's own data tree and enforces self-creation of root user documents.
-     */
+    // USER PROFILES: Only the owner can read/write their own profile.
     match /userProfiles/{userId} {
-      allow get: if isOwner(userId);
-      allow list: if false;
-      allow create: if isOwner(userId) && request.resource.data.id == userId;
-      allow update: if isExistingOwner(userId) && request.resource.data.id == resource.data.id;
-      allow delete: if isExistingOwner(userId);
+      allow read, write: if isOwner(userId);
     }
 
-    /**
-     * @description
-     *   Stores cached, shared lesson content. This data is public for all
-     *   users to read, but only administrators can create, modify, or delete it.
-     * @path
-     *   /lessonCache/{lessonCacheId}
-     * @allow
-     *   (get) Any user, signed in or not, can read a lesson.
-     * @deny
-     *   (create) A non-administrator trying to create a new lesson.
-     * @principle
-     *   Enforces public read access for shared data while restricting writes to privileged admin roles.
-     */
+    // LESSON CACHE: Publicly readable, but only admins can create/update.
     match /lessonCache/{lessonCacheId} {
       allow get: if true;
       allow list: if true;
-      allow create: if isAdmin() && request.resource.data.id == lessonCacheId;
-      allow update: if isExistingAdmin() && request.resource.data.id == resource.data.id;
-      allow delete: if isExistingAdmin();
+      allow create, update, delete: if isAdmin();
+    }
+    
+    // ADMIN USERS: Not client-accessible. Managed via Firebase Console.
+    match /adminUsers/{userId} {
+        allow read, write: if false;
     }
 
-    /**
-     * @description
-     *   A container for all user-specific progress data, segmented by user ID.
-     *   Access to all subcollections is governed by ownership of the {userId}.
-     * @path
-     *   /userProgress/{userId}
-     * @principle
-     *   Acts as a parent path to group user-owned subcollections under a single, consistent security rule.
-     */
-    match /userProgress/{userId} {
-
-      /**
-       * @description
-       *   Tracks a user's progress for a single, daily lesson. Only the
-       *   authenticated owner can read or write their own lesson progress.
-       * @path
-       *   /userProgress/{userId}/lessons/{lessonProgressId}
-       * @allow
-       *   (create) An authenticated user creating a progress document for themselves: `request.auth.uid == userId`.
-       * @deny
-       *   (list) A user trying to list another user's progress: `request.auth.uid != userId`.
-       * @principle
-       *   Enforces document ownership for writes and validates relational integrity between the path and document data.
-       */
-      match /lessons/{lessonProgressId} {
-        allow get: if isOwner(userId);
-        allow list: if isOwner(userId);
-        allow create: if isOwner(userId) && request.resource.data.userId == userId && request.resource.data.id == lessonProgressId;
-        allow update: if isExistingOwner(userId) && request.resource.data.userId == resource.data.userId && request.resource.data.id == resource.data.id;
-        allow delete: if isExistingOwner(userId);
-      }
-
-      /**
-       * @description
-       *   Tracks a user's progress for an entire week. Only the authenticated
-       *   owner can read or write their own weekly progress.
-       * @path
-       *   /userProgress/{userId}/weeks/{userWeekProgressId}
-       * @allow
-       *   (get) An authenticated user reading their own weekly progress: `request.auth.uid == userId`.
-       * @deny
-       *   (update) A user trying to update another user's progress: `request.auth.uid != userId`.
-       * @principle
-       *   Enforces document ownership for writes and validates relational integrity between the path and document data.
-       */
-      match /weeks/{userWeekProgressId} {
-        allow get: if isOwner(userId);
-        allow list: if isOwner(userId);
-        allow create: if isOwner(userId) && request.resource.data.userId == userId && request.resource.data.id == userWeekProgressId;
-        allow update: if isExistingOwner(userId) && request.resource.data.userId == resource.data.userId && request.resource.data.id == resource.data.id;
-        allow delete: if isExistingOwner(userId);
-      }
-    }
-
-    /**
-     * @description
-     *   Manages administrator roles. The existence of a document grants admin
-     *   privileges. This collection is NOT accessible by any client to prevent
-     *   users from escalating their own privileges.
-     * @path
-     *   /adminUsers/{adminId}
-     * @allow
-     *   (any) No client operation is ever allowed.
-     * @deny
-     *   (any) All client operations are denied.
-     * @principle
-     *   Secures role-management data by denying all client access, forcing modifications through a trusted server environment.
-     */
-    match /adminUsers/{adminId} {
-      allow get: if false;
-      allow list: if false;
-      allow create: if false;
-      allow update: if false;
-      allow delete: if false;
+    // USER PROGRESS (Example for future use)
+    match /userProgress/{userId}/{document=**} {
+      allow read, write: if isOwner(userId);
     }
   }
 }

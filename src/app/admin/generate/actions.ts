@@ -1,27 +1,42 @@
 'use server';
 
-import { generateLesson } from '@/ai/generate-lesson';
-import { GenerateLessonInputSchema } from '@/ai/generate-lesson';
+import { generateWeeklyLessonPlan } from '@/ai/generate-weekly-lesson';
+import { GenerateWeeklyLessonPlanInputSchema } from '@/ai/generate-weekly-lesson';
+import { THEMES } from '@/lib/themes';
 import { z } from 'zod';
 
-export async function generateLessonAction(formData: FormData) {
+export async function generateWeeklyLessonAction(formData: FormData) {
     const rawData = {
         targetLanguage: formData.get('targetLanguage'),
         nativeLanguage: formData.get('nativeLanguage'),
         path: formData.get('path'),
         week: formData.get('week'),
-        day: formData.get('day'),
-        theme: formData.get('theme'),
     };
     
-    const validatedData = GenerateLessonInputSchema.extend({
+    const parseResult = GenerateWeeklyLessonPlanInputSchema.omit({ themes: true }).extend({
         week: z.coerce.number(),
-        day: z.coerce.number(),
     }).safeParse(rawData);
 
-    if (!validatedData.success) {
-        return { error: 'Invalid form data.', details: validatedData.error.flatten() };
+    if (!parseResult.success) {
+        return { error: 'Invalid form data.', details: parseResult.error.flatten() };
     }
+
+    const { targetLanguage, nativeLanguage, path, week } = parseResult.data;
+
+    // @ts-ignore
+    const themes = THEMES[path]?.[`week${week}`];
+
+    if (!themes) {
+        return { error: `Themes for ${path}, week ${week} not found.` };
+    }
+
+    const generationInput = {
+        targetLanguage,
+        nativeLanguage,
+        path,
+        week,
+        themes,
+    };
     
-    return await generateLesson(validatedData.data);
+    return await generateWeeklyLessonPlan(generationInput);
 }

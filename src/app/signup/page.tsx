@@ -41,6 +41,7 @@ export default function SignupPage() {
 
       // Create user profile in Firestore
       const userProfile: UserProfile = {
+        id: user.uid, // IMPORTANT: Ensure the document ID matches the user's UID
         displayName: displayName,
         email: user.email!,
         nativeLanguage: nativeLanguage,
