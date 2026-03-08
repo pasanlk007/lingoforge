@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, BrainCircuit, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
-import type { LanguageLesson, LessonDay, LessonItem } from '@/lib/types';
+import type { LanguageLesson, LessonDay } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -27,7 +27,8 @@ const confettiConfig = {
 };
 
 export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) {
-    const dayData: LessonDay | undefined = lesson?.days?.find(d => d.day === currentDay);
+    // Since we only load one day at a time, we can directly access the first element.
+    const dayData: LessonDay | undefined = lesson?.days?.[0];
     
     if (!dayData) {
         return (
@@ -56,12 +57,12 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
 
     const handleNextWord = () => {
         if (!hasWords) return;
-        setCurrentWordIndex(prev => (prev + 1) % (dayData.words?.length || 1));
+        setCurrentWordIndex(prev => (prev + 1) % (dayData.words.length || 1));
     }
 
     const handlePrevWord = () => {
         if (!hasWords) return;
-        setCurrentWordIndex(prev => (prev - 1 + (dayData.words?.length || 1)) % (dayData.words?.length || 1));
+        setCurrentWordIndex(prev => (prev - 1 + (dayData.words.length || 1)) % (dayData.words.length || 1));
     }
 
     const handleExercisesComplete = (isCorrect: boolean) => {
@@ -90,7 +91,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                        <Link href="/dashboard"><ArrowLeft className="mr-2 h-4 w-4" /> Dashboard</Link>
                      </Button>
                      <div className="text-center">
-                        <h1 className="font-bold text-lg">{dayData.title || `Week ${lesson.week}, Day ${currentDay}`}</h1>
+                        <h1 className="font-bold text-lg">{dayData.title}</h1>
                         <p className="text-sm text-muted-foreground">{dayData.theme}</p>
                      </div>
                      <StreakCounter count={5} />
@@ -133,7 +134,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         </CardContent>
                     </Card>
                   ) : <p className="text-center text-muted-foreground py-8">No vocabulary for this lesson. Check other tabs!</p>}
-                  {hasDialogues && (
+                  
+                  {hasDialogues && Array.isArray(dialogues) && (
                       <DialoguePanel dialogues={dialogues} language={lesson.language} />
                   )}
                 </TabsContent>

@@ -1,4 +1,3 @@
-
 import type { LanguageLesson, LearningPath, LessonDay } from "./types";
 
 export async function getLessonFromFile(
@@ -15,19 +14,23 @@ export async function getLessonFromFile(
 
     let dayData: LessonDay | null = null;
 
+    // Server-side loading using 'fs'
     if (typeof window === 'undefined') {
       const { readFileSync, existsSync } = require('fs');
       const { join } = require('path');
       const fullPath = join(process.cwd(), 'public', filePath);
+      
       if (!existsSync(fullPath)) {
         console.error(`[JSON Loader] File not found: ${fullPath}`);
         return null;
       }
-      dayData = JSON.parse(readFileSync(fullPath, 'utf-8')) as LessonDay;
+      const fileContent = readFileSync(fullPath, 'utf-8');
+      dayData = JSON.parse(fileContent) as LessonDay;
     } else {
+      // Client-side loading using 'fetch'
       const res = await fetch(`/${filePath}`);
       if (!res.ok) {
-        console.error(`[JSON Loader] Not found: /${filePath}`);
+        console.error(`[JSON Loader] Not found on client: /${filePath}`);
         return null;
       }
       dayData = await res.json() as LessonDay;
@@ -35,19 +38,20 @@ export async function getLessonFromFile(
 
     if (!dayData) return null;
 
+    // Wrap the single day's data into the LanguageLesson structure
     const lesson: LanguageLesson = {
-      week: week,
-      language: language,
-      path: path,
+      week: dayData.week,
+      language: dayData.targetLanguage,
+      path: dayData.path,
       title: dayData.title,
       description: dayData.theme,
-      days: [dayData]
+      days: [dayData] // Wrap the loaded day data in an array
     };
 
     return lesson;
 
   } catch (error) {
-    console.error('[JSON Loader] Error:', error);
+    console.error(`[JSON Loader] Error loading or parsing lesson for ${language}/${path}/w${week}/d${day}:`, error);
     return null;
   }
 }

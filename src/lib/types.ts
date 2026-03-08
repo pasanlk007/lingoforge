@@ -1,59 +1,5 @@
 // === Main Lesson Structure ===
 
-// Updated to match the fields in the user's JSON file.
-export interface LessonItem {
-  id: string;
-  target: string;
-  phonetic: string;
-  native_meaning: string;
-  english: string; // The JSON has both, so we keep both.
-  example_sentence_target: string;
-  example_sentence_native: string;
-}
-
-// Updated to match `dialogues.lines` from the JSON.
-export interface DialogueLine {
-  speaker: "A" | "B";
-  target: string;
-  native: string;
-  phonetic: string;
-}
-
-// Updated to match an item in the `dialogues` array from the JSON.
-export interface Dialogue {
-  id: string;
-  context: string;
-  lines: DialogueLine[];
-}
-
-export interface FillBlankExercise {
-  id: string;
-  sentence: string;
-  answer: string;
-  hint: string;
-}
-
-export interface MultipleChoiceExercise {
-  id: string;
-  question: string;
-  options: string[];
-  correct: number;
-  explanation: string;
-}
-
-export interface MatchingPair {
-  id: string;
-  target: string;
-  native: string;
-}
-
-// Updated to match the `exercises` object in the JSON.
-export interface Exercises {
-  fillBlanks?: FillBlankExercise[];
-  multipleChoice?: MultipleChoiceExercise[];
-  matching?: MatchingPair[];
-}
-
 // This interface represents the exact structure of a daily lesson JSON file.
 export interface LessonDay {
   week: number;
@@ -86,8 +32,58 @@ export interface LanguageLesson {
   days: LessonDay[];
 }
 
+export interface LessonItem {
+  id: string;
+  target: string;
+  phonetic: string;
+  native_meaning: string;
+  english: string;
+  example_sentence_target: string;
+  example_sentence_native: string;
+}
 
-// === Firestore Data Structures (Unchanged) ===
+export interface DialogueLine {
+  speaker: "A" | "B";
+  target: string;
+  native: string;
+  phonetic: string;
+}
+
+export interface Dialogue {
+  id: string;
+  context: string;
+  lines: DialogueLine[];
+}
+
+export interface FillBlankExercise {
+  id: string;
+  sentence: string;
+  answer: string;
+  hint: string;
+}
+
+export interface MultipleChoiceExercise {
+  id: string;
+  question: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+}
+
+export interface MatchingPair {
+  id: string;
+  target: string;
+  native: string;
+}
+
+export interface Exercises {
+  fillBlanks?: FillBlankExercise[];
+  multipleChoice?: MultipleChoiceExercise[];
+  matching?: MatchingPair[];
+}
+
+
+// === Firestore Data Structures ===
 
 export interface LessonCache {
   lesson: LanguageLesson;
@@ -130,7 +126,7 @@ export interface UserWeekProgress {
 }
 
 
-// === App-specific types (Unchanged) ===
+// === App-specific types ===
 
 export type LearningPath = "survival" | "alphabet" | "numbers";
 
