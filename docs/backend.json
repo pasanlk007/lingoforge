@@ -1,30 +1,5 @@
 {
   "entities": {
-    "LessonCache": {
-      "title": "LessonCache",
-      "type": "object",
-      "description": "Stores dynamically generated language lessons to ensure fast retrieval and avoid regenerating content for every user. These lessons are shared across all users.",
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the LessonCache entity, typically formatted as '{language}_{path}_week{N}' (e.g., 'french_survival_week1')."
-        },
-        "lessonJson": {
-          "type": "string",
-          "description": "The complete lesson content for a full week as a stringified JSON object."
-        },
-        "cachedAt": {
-          "type": "string",
-          "description": "Timestamp indicating when this lesson was generated and stored in the cache.",
-          "format": "date-time"
-        }
-      },
-      "required": [
-        "id",
-        "lessonJson",
-        "cachedAt"
-      ]
-    },
     "UserProfile": {
       "title": "UserProfile",
       "type": "object",
@@ -119,15 +94,6 @@
             "$ref": "#/entities/UserProfile"
           },
           "description": "Stores individual user preferences and settings."
-        }
-      },
-      {
-        "path": "/lessonCache/{lessonCacheId}",
-        "definition": {
-          "schema": {
-            "$ref": "#/entities/LessonCache"
-          },
-          "description": "Stores cached, AI-generated weekly lesson plans."
         }
       },
        {

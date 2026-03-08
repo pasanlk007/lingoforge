@@ -281,19 +281,6 @@ export default function DashboardPage() {
                   </div>
                 </CardContent>
               </Card>
-              
-               {/* AI Guide Card */}
-              <Card className="bg-gradient-to-br from-blue-900/30 to-slate-900">
-                <CardHeader>
-                  <CardTitle>{t.aiGuide}</CardTitle>
-                  <CardDescription>{t.aiGuideDesc}</CardDescription>
-                </CardHeader>
-                <CardFooter>
-                  <Button variant="secondary" className="w-full" asChild>
-                    <Link href="/ai-guide">{t.askAIGuide}</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
             </div>
           </div>
         </div>

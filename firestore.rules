@@ -21,14 +21,6 @@ service cloud.firestore {
     match /userProfiles/{userId} {
       allow read, write: if isOwner(userId);
     }
-
-    // LESSON CACHE: Publicly readable, but only signed-in users can create/update.
-    // This is relaxed for development so the app owner can add content.
-    match /lessonCache/{lessonCacheId} {
-      allow get: if true;
-      allow list: if true;
-      allow create, update, delete: if isSignedIn();
-    }
     
     // ADMIN USERS: Only the owner of an admin record can read it to check their own status.
     // Writing should be done via the Firebase Console for security.

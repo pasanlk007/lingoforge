@@ -115,9 +115,6 @@ export const translations = {
       targetLanguageDesc: "Choose the language you want to learn.",
       selectTargetLanguage: "Select language to learn",
       weeklyProgress: "This Week's Progress",
-      aiGuide: "AI Guide",
-      aiGuideDesc: "Have a question? Ask your personal AI language tutor.",
-      askAIGuide: "Ask LingoForge AI",
       days: {
         mon: 'Mon',
         tue: 'Tue',
@@ -239,9 +236,6 @@ export const translations = {
       targetLanguageDesc: "ඔබට ඉගෙන ගැනීමට අවශ්‍ය භාෂාව තෝරන්න.",
       selectTargetLanguage: "ඉගෙනීමට භාෂාව තෝරන්න",
       weeklyProgress: "මෙම සතියේ ප්‍රගතිය",
-      aiGuide: "AI මාර්ගෝපදේශක",
-      aiGuideDesc: "ප්‍රශ්නයක් තිබේද? ඔබේ පුද්ගලික AI භාෂා ගුරුවරයාගෙන් අසන්න.",
-      askAIGuide: "LingoForge AI ගෙන් අසන්න",
       days: {
         mon: 'සඳු',
         tue: 'අඟ',
@@ -363,9 +357,6 @@ export const translations = {
       targetLanguageDesc: "वह भाषा चुनें जिसे आप सीखना चाहते हैं।",
       selectTargetLanguage: "सीखने के लिए भाषा चुनें",
       weeklyProgress: "इस सप्ताह की प्रगति",
-      aiGuide: "AI गाइड",
-      aiGuideDesc: "कोई सवाल है? अपने व्यक्तिगत AI भाषा शिक्षक से पूछें।",
-      askAIGuide: "LingoForge AI से पूछें",
       days: {
         mon: 'सोम',
         tue: 'मंगल',
@@ -487,9 +478,6 @@ export const translations = {
       targetLanguageDesc: "وہ زبان منتخب کریں جو آپ سیکھنا چاہتے ہیں۔",
       selectTargetLanguage: "سیکھنے کے لیے زبان منتخب کریں",
       weeklyProgress: "اس ہفتے کی پیشرفت",
-      aiGuide: "AI گائیڈ",
-      aiGuideDesc: "کوئی سوال ہے؟ اپنے ذاتی AI زبان کے استاد سے پوچھیں۔",
-      askAIGuide: "LingoForge AI سے پوچھیں",
       days: {
         mon: 'پیر',
         tue: 'منگل',
@@ -611,9 +599,6 @@ export const translations = {
       targetLanguageDesc: "আপনি যে ভাষা শিখতে চান তা চয়ন করুন।",
       selectTargetLanguage: "শেখার জন্য ভাষা চয়ন করুন",
       weeklyProgress: "এই সপ্তাহের অগ্রগতি",
-      aiGuide: "AI গাইড",
-      aiGuideDesc: "কোন প্রশ্ন আছে? আপনার ব্যক্তিগত AI ভাষা শিক্ষককে জিজ্ঞাসা করুন।",
-      askAIGuide: "LingoForge AI কে জিজ্ঞাসা করুন",
       days: {
         mon: 'সোম',
         tue: 'মঙ্গল',
@@ -735,9 +720,6 @@ export const translations = {
       targetLanguageDesc: "तपाईंले सिक्न चाहनुभएको भाषा छान्नुहोस्।",
       selectTargetLanguage: "सिक्नको लागि भाषा छान्नुहोस्",
       weeklyProgress: "यो हप्ताको प्रगति",
-      aiGuide: "AI गाइड",
-      aiGuideDesc: "कुनै प्रश्न छ? आफ्नो व्यक्तिगत AI भाषा शिक्षकलाई सोध्नुहोस्।",
-      askAIGuide: "LingoForge AI लाई सोध्नुहोस्",
       days: {
         mon: 'सोम',
         tue: 'मंगल',

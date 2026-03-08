@@ -1,30 +1,26 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
-import { useFirestore, useMemoFirebase, useUser } from '@/firebase';
-import { doc, getDoc } from 'firebase/firestore';
 import Link from 'next/link';
 
 import type { LanguageLesson, WeeklyLessonPlan } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Terminal, Wrench, LogIn } from 'lucide-react';
+import { Terminal, Wrench } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
 
-// Component to show user-specific actions when a lesson is not found
-function UserLessonActions({ language, path, week }: { language: string | string[], path: string | string[], week: string | string[] }) {
-  const generationUrl = `/admin/generate?targetLanguage=${language}&path=${path}&week=${week}`;
+function MissingLessonNotice() {
   return (
     <div className="mt-4 rounded-lg border border-dashed border-yellow-500/50 bg-yellow-500/10 p-4">
       <div className="flex items-start gap-3">
         <Wrench className="h-5 w-5 text-yellow-400" />
         <div className='flex-1'>
-          <h3 className="font-semibold text-yellow-300">Action Required</h3>
-          <p className="text-sm text-yellow-400/80">This lesson does not exist in the cache. As a logged-in user, you can generate it now.</p>
+          <h3 className="font-semibold text-yellow-300">Content Not Available</h3>
+          <p className="text-sm text-yellow-400/80">This lesson has not been created yet. The app currently only has pre-generated content for a limited number of weeks.</p>
           <Button asChild className="mt-3">
-            <Link href={generationUrl}>Generate Week {week} Lesson</Link>
+            <Link href="/dashboard">Back to Dashboard</Link>
           </Button>
         </div>
       </div>
@@ -35,8 +31,6 @@ function UserLessonActions({ language, path, week }: { language: string | string
 
 export default function LessonPage() {
   const params = useParams();
-  const firestore = useFirestore();
-  const { user } = useUser(); // Get current user
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -45,25 +39,20 @@ export default function LessonPage() {
   const { language, path, week, day } = params;
   const dayNum = parseInt(day as string);
   
-  const lessonCacheId = useMemoFirebase(() => {
-    if (!language || !path || !week) return null;
-    return `${language}_${path}_week_${week}`.toLowerCase();
-  }, [language, path, week]);
-
   useEffect(() => {
-    if (!lessonCacheId || !firestore) return;
+    if (!language || !path || !week) return;
 
     const fetchLesson = async () => {
       setIsLoading(true);
       setError(null);
       
-      const docRef = doc(firestore, 'lessonCache', lessonCacheId);
+      const lessonPath = `/lessons/${language}/${path}/week_${week}.json`;
       
       try {
-        const docSnap = await getDoc(docRef);
+        const response = await fetch(lessonPath);
 
-        if (docSnap.exists()) {
-          const weeklyPlan = JSON.parse(docSnap.data().lessonJson) as WeeklyLessonPlan;
+        if (response.ok) {
+          const weeklyPlan = await response.json() as WeeklyLessonPlan;
           const dayData = weeklyPlan.days.find(d => d.day === dayNum);
 
           if (dayData) {
@@ -77,14 +66,18 @@ export default function LessonPage() {
             };
             setLesson(formattedLesson);
           } else {
-            setError(`Day ${dayNum} not found in the cached lesson for week ${week}.`);
+            setError(`Day ${dayNum} not found in the lesson plan for week ${week}.`);
           }
         } else {
-          setError(`Lesson not found in cache. Please generate it from the admin panel.`);
+          if (response.status === 404) {
+             setError(`Lesson content for Week ${week} of the ${path} path does not exist.`);
+          } else {
+             setError(`Failed to load lesson file. Status: ${response.status}`);
+          }
         }
       } catch (e: any) {
-        console.error("Error fetching lesson from cache: ", e);
-        setError(e.message || "Failed to fetch lesson from Firestore.");
+        console.error("Error fetching lesson file: ", e);
+        setError(e.message || "Failed to fetch or parse lesson file.");
       } finally {
         setIsLoading(false);
       }
@@ -92,7 +85,7 @@ export default function LessonPage() {
 
     fetchLesson();
 
-  }, [lessonCacheId, firestore, dayNum, week]);
+  }, [language, path, week, dayNum]);
 
 
   if (isLoading) {
@@ -125,26 +118,7 @@ export default function LessonPage() {
               <AlertTitle>Could Not Load Lesson</AlertTitle>
               <AlertDescription>{error}</AlertDescription>
             </Alert>
-            {error.includes('Lesson not found in cache') && (
-              user ? (
-                <UserLessonActions language={language} path={path} week={week} />
-              ) : (
-                <div className="mt-4 rounded-lg border border-dashed border-blue-500/50 bg-blue-500/10 p-4">
-                  <div className="flex items-start gap-3">
-                    <LogIn className="h-5 w-5 text-blue-400" />
-                    <div className='flex-1'>
-                      <h3 className="font-semibold text-blue-300">Log In to Generate</h3>
-                      <p className="text-sm text-blue-400/80">This lesson does not exist in the cache. Please log in to generate it.</p>
-                      <Button asChild className="mt-3">
-                        <Link href={`/login?redirect=/admin/generate?targetLanguage=${language}&path=${path}&week=${week}`}>
-                          Log In & Generate
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              )
-            )}
+            <MissingLessonNotice />
           </div>
         </main>
       </div>
