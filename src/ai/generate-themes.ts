@@ -3,7 +3,7 @@ import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 
 // Define input schema for the theme generation flow
-export const GenerateThemesInputSchema = z.object({
+const GenerateThemesInputSchema = z.object({
   targetLanguage: z.string(),
   nativeLanguage: z.string(),
   path: z.string(),
@@ -12,7 +12,7 @@ export const GenerateThemesInputSchema = z.object({
 export type GenerateThemesInput = z.infer<typeof GenerateThemesInputSchema>;
 
 // Define output schema
-export const GenerateThemesOutputSchema = z.object({
+const GenerateThemesOutputSchema = z.object({
     themes: z.array(z.string()).length(7).describe("An array of 7 unique, one-sentence themes for the week's lessons."),
 });
 export type GenerateThemesOutput = z.infer<typeof GenerateThemesOutputSchema>;

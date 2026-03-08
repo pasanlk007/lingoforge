@@ -5,7 +5,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 // Define input schema for the flow
-export const GenerateLessonInputSchema = z.object({
+const GenerateLessonInputSchema = z.object({
   targetLanguage: z.string(),
   nativeLanguage: z.string(),
   path: z.string(),
