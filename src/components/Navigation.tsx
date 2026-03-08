@@ -62,6 +62,12 @@ export function Navigation() {
             >
               {t_dashboard.title}
             </Link>
+            <Link
+              href="/pricing"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Pricing
+            </Link>
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
@@ -139,6 +145,13 @@ export function Navigation() {
                       onClick={() => setMenuOpen(false)}
                     >
                       {t_dashboard.title}
+                    </Link>
+                    <Link
+                      href="/pricing"
+                      className="text-lg font-medium text-muted-foreground"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Pricing
                     </Link>
                 </nav>
                 <div className="mt-auto flex flex-col gap-2">

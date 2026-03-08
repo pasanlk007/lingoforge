@@ -157,7 +157,9 @@ export default function PathsPage() {
                     <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Native audio pronunciation</li>
                     <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> AI Guide for questions</li>
                   </ul>
-                  <Button size="lg" className="w-full">Get Started</Button>
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href="/pricing">Get Started</Link>
+                  </Button>
                 </CardContent>
               </Card>
               <Card className="relative w-full max-w-sm border-2 border-primary">
@@ -177,7 +179,9 @@ export default function PathsPage() {
                     <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> AI Guide for questions</li>
                     <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Priority Support</li>
                   </ul>
-                  <Button size="lg" className="w-full">Get Best Value</Button>
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href="/pricing">Get Best Value</Link>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -248,7 +252,7 @@ export default function PathsPage() {
                 <ul className="mt-4 space-y-2">
                   <li><Link href="/paths" className="text-muted-foreground hover:text-foreground">Paths</Link></li>
                   <li><Link href="/paths#features" className="text-muted-foreground hover:text-foreground">Features</Link></li>
-                  <li><Link href="/paths#pricing" className="text-muted-foreground hover:text-foreground">Pricing</Link></li>
+                  <li><Link href="/pricing" className="text-muted-foreground hover:text-foreground">Pricing</Link></li>
                 </ul>
               </div>
               <div>
