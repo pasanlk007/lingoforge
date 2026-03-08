@@ -9,7 +9,7 @@ const GenerateThemesInputSchema = z.object({
   path: z.string(),
   week: z.number(),
 });
-export type GenerateThemesInput = z.infer<typeof GenerateThemesInputSchema>;
+type GenerateThemesInput = z.infer<typeof GenerateThemesInputSchema>;
 
 // Define output schema
 const GenerateThemesOutputSchema = z.object({
@@ -40,6 +40,7 @@ const generateThemesFlow = ai.defineFlow(
     const themeGenerationPrompt = ai.definePrompt(
       {
         name: 'themeGenerationPrompt',
+        model: 'anthropic/claude-3-sonnet-20240229',
         input: { schema: GenerateThemesInputSchema },
         output: { schema: GenerateThemesOutputSchema },
         prompt: `

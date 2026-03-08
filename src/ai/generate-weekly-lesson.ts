@@ -41,6 +41,7 @@ const generateWeeklyLessonFlow = ai.defineFlow(
     const lessonGenerationPrompt = ai.definePrompt(
       {
         name: 'weeklyLessonGenerationPrompt',
+        model: 'anthropic/claude-3-sonnet-20240229',
         input: { schema: GenerateWeeklyLessonPlanInputSchema },
         output: {
           format: 'json',
