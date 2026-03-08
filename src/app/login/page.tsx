@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useAuth, initiateEmailSignIn } from '@/firebase';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -16,6 +16,7 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
   const auth = useAuth();
   const { toast } = useToast();
 
@@ -31,9 +32,10 @@ export default function LoginPage() {
         title: "Login Initiated",
         description: "You will be redirected shortly.",
       });
-      // The user will be redirected by the auth state listener in the provider
-      // A common pattern is to redirect to the dashboard after login.
-      router.push('/dashboard');
+
+      const redirectUrl = searchParams.get('redirect');
+      router.push(redirectUrl || '/dashboard');
+      
     } catch (error: any) {
       console.error("Login failed:", error);
       toast({
