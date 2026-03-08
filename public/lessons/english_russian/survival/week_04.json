@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_1_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_1_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_1_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_1_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_1_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_1_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w4_2_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_2_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_2_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_2_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_2_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_2_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_2_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w4_3_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_3_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_3_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_3_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_3_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_3_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_3_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w4_4_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_4_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_4_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_4_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_4_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_4_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_4_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w4_5_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_5_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_5_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_5_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_5_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_5_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_5_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w4_6_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_6_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_6_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_6_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_6_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_6_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_6_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w4_7_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Час",
+          "phonetic": "chas",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "Час.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_7_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Минута",
+          "phonetic": "mi-NOO-ta",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "Минута.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_7_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Сегодня",
+          "phonetic": "se-VOD-nya",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "Сегодня.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_7_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Завтра",
+          "phonetic": "ZAV-tra",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Завтра.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_7_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Вчера",
+          "phonetic": "vche-RA",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "Вчера.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Час!",
+              "native": "Hour!",
+              "phonetic": "chas"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Час! Минута!",
+              "native": "Hour! Minute!",
+              "phonetic": "chas mi-NOO-ta"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Минута!",
+              "native": "Minute!",
+              "phonetic": "mi-NOO-ta"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Сегодня!",
+              "native": "Today!",
+              "phonetic": "se-VOD-nya"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Завтра! Вчера!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "ZAV-tra vche-RA"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Russian",
+            "answer": "Час",
+            "hint": "Hour"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Russian",
+            "answer": "Минута",
+            "hint": "Minute"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Russian",
+            "answer": "Сегодня",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Час",
+            "native": "Hour"
           },
           {
             "id": "m4_7_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Минута",
+            "native": "Minute"
           },
           {
             "id": "m4_7_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Сегодня",
+            "native": "Today"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Завтра",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Вчера",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Час' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Час' means Hour in English."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'Minute' in Russian?",
+            "options": [
+              "Час",
+              "Минута",
+              "Сегодня",
+              "Завтра"
+            ],
+            "correct": 1,
+            "explanation": "'Минута' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w8_1_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_1_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_1_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_1_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_1_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_1_1",
-          "context": "Family Members practice",
+          "context": "Family Members",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb8_1_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_1_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_1_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_1_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_1_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_1_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_1_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_1_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_1_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w8_2_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_2_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_2_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_2_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_2_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_2_1",
-          "context": "Describing People practice",
+          "context": "Describing People",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb8_2_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_2_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_2_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_2_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_2_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_2_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_2_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_2_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_2_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w8_3_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_3_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_3_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_3_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_3_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_3_1",
-          "context": "Relationships practice",
+          "context": "Relationships",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb8_3_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_3_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_3_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_3_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_3_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_3_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_3_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_3_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_3_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w8_4_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_4_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_4_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_4_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_4_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_4_1",
-          "context": "Emotions practice",
+          "context": "Emotions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb8_4_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_4_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_4_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_4_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_4_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_4_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_4_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_4_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_4_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w8_5_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_5_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_5_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_5_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_5_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_5_1",
-          "context": "Life Events practice",
+          "context": "Life Events",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb8_5_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_5_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_5_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_5_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_5_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_5_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_5_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_5_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_5_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w8_6_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_6_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_6_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_6_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_6_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_6_1",
-          "context": "Childhood Memories practice",
+          "context": "Childhood Memories",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb8_6_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_6_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_6_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_6_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_6_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_6_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_6_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_6_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_6_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w8_7_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "家庭",
+          "phonetic": "jia-TING",
+          "native_meaning": "Family",
+          "english": "Family",
+          "example_sentence_target": "家庭.",
+          "example_sentence_native": "Family."
         },
         {
           "id": "w8_7_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "父亲",
+          "phonetic": "fu-QIN",
+          "native_meaning": "Father",
+          "english": "Father",
+          "example_sentence_target": "父亲.",
+          "example_sentence_native": "Father."
         },
         {
           "id": "w8_7_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "母亲",
+          "phonetic": "mu-QIN",
+          "native_meaning": "Mother",
+          "english": "Mother",
+          "example_sentence_target": "母亲.",
+          "example_sentence_native": "Mother."
         },
         {
           "id": "w8_7_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "兄弟",
+          "phonetic": "xiong-DI",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "兄弟.",
+          "example_sentence_native": "Brother."
         },
         {
           "id": "w8_7_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "姐妹",
+          "phonetic": "jie-MEI",
+          "native_meaning": "Sister",
+          "english": "Sister",
+          "example_sentence_target": "姐妹.",
+          "example_sentence_native": "Sister."
         }
       ],
       "dialogues": [
         {
           "id": "d8_7_1",
-          "context": "Family Culture practice",
+          "context": "Family Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "家庭!",
+              "native": "Family!",
+              "phonetic": "jia-TING"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "家庭! 父亲!",
+              "native": "Family! Father!",
+              "phonetic": "jia-TING fu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "父亲!",
+              "native": "Father!",
+              "phonetic": "fu-QIN"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "母亲!",
+              "native": "Mother!",
+              "phonetic": "mu-QIN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "兄弟! 姐妹!",
+              "native": "Brother! Sister!",
+              "phonetic": "xiong-DI jie-MEI"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb8_7_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Family' in Chinese",
+            "answer": "家庭",
+            "hint": "Family"
           },
           {
             "id": "fb8_7_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Father' in Chinese",
+            "answer": "父亲",
+            "hint": "Father"
           },
           {
             "id": "fb8_7_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Mother' in Chinese",
+            "answer": "母亲",
+            "hint": "Mother"
           }
         ],
         "matching": [
           {
             "id": "m8_7_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "家庭",
+            "native": "Family"
           },
           {
             "id": "m8_7_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "父亲",
+            "native": "Father"
           },
           {
             "id": "m8_7_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "母亲",
+            "native": "Mother"
+          },
+          {
+            "id": "m8_7_4",
+            "target": "兄弟",
+            "native": "Brother"
+          },
+          {
+            "id": "m8_7_5",
+            "target": "姐妹",
+            "native": "Sister"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '家庭' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Family",
+              "Father",
+              "Mother",
+              "Brother"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'家庭' means Family in English."
+          },
+          {
+            "id": "mc8_7_2",
+            "question": "How do you say 'Father' in Chinese?",
+            "options": [
+              "家庭",
+              "父亲",
+              "母亲",
+              "兄弟"
+            ],
+            "correct": 1,
+            "explanation": "'父亲' means Father."
           }
         ]
       },
-      "cultural_note": "French families often gather for long Sunday lunches together.",
-      "pronunciation_tip": "French family terms often have silent final consonants.",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D7"
       }

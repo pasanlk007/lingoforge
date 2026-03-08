@@ -17,7 +17,7 @@
         {
           "id": "w5_1_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -26,7 +26,7 @@
         {
           "id": "w5_1_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -35,7 +35,7 @@
         {
           "id": "w5_1_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -44,7 +44,7 @@
         {
           "id": "w5_1_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -53,7 +53,7 @@
         {
           "id": "w5_1_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -63,25 +63,25 @@
       "dialogues": [
         {
           "id": "d5_1_1",
-          "context": "Left & Right practice",
+          "context": "Left & Right",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb5_1_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_1_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_1_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -146,6 +146,16 @@
             "id": "m5_1_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_1_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_1_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_1_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D1"
       }
@@ -184,7 +206,7 @@
         {
           "id": "w5_2_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -193,7 +215,7 @@
         {
           "id": "w5_2_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -202,7 +224,7 @@
         {
           "id": "w5_2_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -211,7 +233,7 @@
         {
           "id": "w5_2_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -220,7 +242,7 @@
         {
           "id": "w5_2_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -230,25 +252,25 @@
       "dialogues": [
         {
           "id": "d5_2_1",
-          "context": "Asking Directions practice",
+          "context": "Asking Directions",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb5_2_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_2_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_2_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -313,6 +335,16 @@
             "id": "m5_2_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_2_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_2_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_2_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D2"
       }
@@ -351,7 +395,7 @@
         {
           "id": "w5_3_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -360,7 +404,7 @@
         {
           "id": "w5_3_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -369,7 +413,7 @@
         {
           "id": "w5_3_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -378,7 +422,7 @@
         {
           "id": "w5_3_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -387,7 +431,7 @@
         {
           "id": "w5_3_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -397,25 +441,25 @@
       "dialogues": [
         {
           "id": "d5_3_1",
-          "context": "Transport Stop practice",
+          "context": "Transport Stop",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb5_3_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_3_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_3_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -480,6 +524,16 @@
             "id": "m5_3_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_3_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_3_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_3_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D3"
       }
@@ -518,7 +584,7 @@
         {
           "id": "w5_4_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -527,7 +593,7 @@
         {
           "id": "w5_4_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -536,7 +602,7 @@
         {
           "id": "w5_4_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -545,7 +611,7 @@
         {
           "id": "w5_4_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -554,7 +620,7 @@
         {
           "id": "w5_4_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -564,25 +630,25 @@
       "dialogues": [
         {
           "id": "d5_4_1",
-          "context": "On the Map practice",
+          "context": "On the Map",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb5_4_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_4_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_4_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -647,6 +713,16 @@
             "id": "m5_4_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_4_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_4_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_4_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D4"
       }
@@ -685,7 +773,7 @@
         {
           "id": "w5_5_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -694,7 +782,7 @@
         {
           "id": "w5_5_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -703,7 +791,7 @@
         {
           "id": "w5_5_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -712,7 +800,7 @@
         {
           "id": "w5_5_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -721,7 +809,7 @@
         {
           "id": "w5_5_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -731,25 +819,25 @@
       "dialogues": [
         {
           "id": "d5_5_1",
-          "context": "Landmarks practice",
+          "context": "Landmarks",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb5_5_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_5_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_5_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -814,6 +902,16 @@
             "id": "m5_5_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_5_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_5_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_5_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D5"
       }
@@ -852,7 +962,7 @@
         {
           "id": "w5_6_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -861,7 +971,7 @@
         {
           "id": "w5_6_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -870,7 +980,7 @@
         {
           "id": "w5_6_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -879,7 +989,7 @@
         {
           "id": "w5_6_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -888,7 +998,7 @@
         {
           "id": "w5_6_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -898,25 +1008,25 @@
       "dialogues": [
         {
           "id": "d5_6_1",
-          "context": "Getting Lost practice",
+          "context": "Getting Lost",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb5_6_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_6_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_6_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -981,6 +1091,16 @@
             "id": "m5_6_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_6_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_6_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_6_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D6"
       }
@@ -1019,7 +1151,7 @@
         {
           "id": "w5_7_1",
           "target": "Gauche",
-          "phonetic": "গোশ",
+          "phonetic": "ගෝෂ්",
           "native_meaning": "වමට",
           "english": "Left",
           "example_sentence_target": "Gauche.",
@@ -1028,7 +1160,7 @@
         {
           "id": "w5_7_2",
           "target": "Droite",
-          "phonetic": "দ্রোয়াত",
+          "phonetic": "ද්රොවාත්",
           "native_meaning": "දකුණට",
           "english": "Right",
           "example_sentence_target": "Droite.",
@@ -1037,7 +1169,7 @@
         {
           "id": "w5_7_3",
           "target": "Tout droit",
-          "phonetic": "তু-দ্রোয়া",
+          "phonetic": "තූ-ද්රොවා",
           "native_meaning": "කෙලින්ම",
           "english": "Straight ahead",
           "example_sentence_target": "Tout droit.",
@@ -1046,7 +1178,7 @@
         {
           "id": "w5_7_4",
           "target": "Rue",
-          "phonetic": "রু",
+          "phonetic": "රූ",
           "native_meaning": "වීදිය",
           "english": "Street",
           "example_sentence_target": "Rue.",
@@ -1055,7 +1187,7 @@
         {
           "id": "w5_7_5",
           "target": "Arrêt",
-          "phonetic": "আ-রে",
+          "phonetic": "ආ-රේ",
           "native_meaning": "නවතින්න",
           "english": "Stop",
           "example_sentence_target": "Arrêt.",
@@ -1065,25 +1197,25 @@
       "dialogues": [
         {
           "id": "d5_7_1",
-          "context": "City Navigation practice",
+          "context": "City Navigation",
           "lines": [
             {
               "speaker": "A",
               "target": "Gauche!",
               "native": "වමට!",
-              "phonetic": "গোশ"
+              "phonetic": "ගෝෂ්"
             },
             {
               "speaker": "B",
               "target": "Gauche! Droite!",
               "native": "වමට! දකුණට!",
-              "phonetic": "গোশ দ্রোয়াত"
+              "phonetic": "ගෝෂ් ද්රොවාත්"
             },
             {
               "speaker": "A",
               "target": "Tout droit!",
               "native": "කෙලින්ම!",
-              "phonetic": "তু-দ্রোয়া"
+              "phonetic": "තූ-ද්රොවා"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "වමට!",
-              "phonetic": "গোশ"
+              "target": "Droite!",
+              "native": "දකුණට!",
+              "phonetic": "ද්රොවාත්"
             },
             {
               "speaker": "B",
-              "target": "Droite!",
-              "native": "දකුණට!",
-              "phonetic": "দ্রোয়াত"
+              "target": "Tout droit!",
+              "native": "කෙලින්ම!",
+              "phonetic": "තූ-ද්රොවා"
             },
             {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "දකුණට! කෙලින්ම!",
-              "phonetic": "দ্রোয়াত তু-দ্রোয়া"
+              "target": "Rue! Arrêt!",
+              "native": "වීදිය! නවතින්න!",
+              "phonetic": "රූ ආ-රේ"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb5_7_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "වමට"
           },
           {
             "id": "fb5_7_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "දකුණට"
           },
           {
             "id": "fb5_7_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "කෙලින්ම"
           }
@@ -1148,6 +1280,16 @@
             "id": "m5_7_3",
             "target": "Tout droit",
             "native": "කෙලින්ම"
+          },
+          {
+            "id": "m5_7_4",
+            "target": "Rue",
+            "native": "වීදිය"
+          },
+          {
+            "id": "m5_7_5",
+            "target": "Arrêt",
+            "native": "නවතින්න"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "වීදිය"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means වමට."
+            "explanation": "'Gauche' means වමට in Sinhala."
+          },
+          {
+            "id": "mc5_7_2",
+            "question": "How do you say 'දකුණට' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means දකුණට."
           }
         ]
       },
-      "cultural_note": "කොළඹ නගරයේ මාර්ග නාමකරණය ඉතා සංකීර්ණයි — GPS භාවිතය නිර්දේශිතයි.",
-      "pronunciation_tip": "ප්‍රංශ liaison (ශබ්ද සම්බන්ධ කිරීම) ගැන සවිඥාන වන්න.",
+      "cultural_note": "පැරිස් නගරයේ මෙට්රෝ සේවාව ලෝකයේ හොඳම ගමනාගමන ජාල අතර ගණේ.",
+      "pronunciation_tip": "ප්‍රංශ stress — සෑම වාක්‍ය කොටසකම අවසාන syllable එකෙහිය.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D7"
       }

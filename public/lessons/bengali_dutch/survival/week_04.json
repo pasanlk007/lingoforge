@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_1_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_1_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_1_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_1_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_1_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_1_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w4_2_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_2_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_2_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_2_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_2_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_2_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_2_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w4_3_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_3_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_3_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_3_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_3_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_3_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_3_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w4_4_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_4_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_4_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_4_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_4_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_4_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_4_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w4_5_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_5_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_5_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_5_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_5_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_5_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_5_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w4_6_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_6_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_6_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_6_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_6_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_6_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_6_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w4_7_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Uur",
+          "phonetic": "Uur",
+          "native_meaning": "ঘণ্টা",
+          "english": "Hour",
+          "example_sentence_target": "Uur.",
+          "example_sentence_native": "ঘণ্টা."
         },
         {
           "id": "w4_7_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Minuut",
+          "phonetic": "Minuut",
+          "native_meaning": "মিনিট",
+          "english": "Minute",
+          "example_sentence_target": "Minuut.",
+          "example_sentence_native": "মিনিট."
         },
         {
           "id": "w4_7_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Vandaag",
+          "phonetic": "Vandaag",
+          "native_meaning": "আজ",
+          "english": "Today",
+          "example_sentence_target": "Vandaag.",
+          "example_sentence_native": "আজ."
         },
         {
           "id": "w4_7_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Morgen",
+          "phonetic": "Morgen",
+          "native_meaning": "কাল",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "কাল."
         },
         {
           "id": "w4_7_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Gisteren",
+          "phonetic": "Gisteren",
+          "native_meaning": "গতকাল",
+          "english": "Yesterday",
+          "example_sentence_target": "Gisteren.",
+          "example_sentence_native": "গতকাল."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Uur!",
+              "native": "ঘণ্টা!",
+              "phonetic": "Uur"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Uur! Minuut!",
+              "native": "ঘণ্টা! মিনিট!",
+              "phonetic": "Uur Minuut"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Minuut!",
+              "native": "মিনিট!",
+              "phonetic": "Minuut"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Vandaag!",
+              "native": "আজ!",
+              "phonetic": "Vandaag"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Morgen! Gisteren!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "Morgen Gisteren"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Hour' in Dutch",
+            "answer": "Uur",
+            "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Minute' in Dutch",
+            "answer": "Minuut",
+            "hint": "মিনিট"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Today' in Dutch",
+            "answer": "Vandaag",
+            "hint": "আজ"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Uur",
+            "native": "ঘণ্টা"
           },
           {
             "id": "m4_7_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Minuut",
+            "native": "মিনিট"
           },
           {
             "id": "m4_7_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Vandaag",
+            "native": "আজ"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Morgen",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Gisteren",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Uur' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ঘণ্টা",
+              "মিনিট",
+              "আজ",
+              "কাল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Uur' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'মিনিট' in Dutch?",
+            "options": [
+              "Uur",
+              "Minuut",
+              "Vandaag",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minuut' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

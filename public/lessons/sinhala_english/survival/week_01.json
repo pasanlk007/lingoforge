@@ -17,7 +17,7 @@
         {
           "id": "w1_1_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -26,7 +26,7 @@
         {
           "id": "w1_1_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -35,7 +35,7 @@
         {
           "id": "w1_1_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -43,45 +43,45 @@
         },
         {
           "id": "w1_1_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_1_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings practice",
+          "context": "Basic Greetings",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb1_1_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_1_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_1_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -146,6 +146,16 @@
             "id": "m1_1_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_1_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_1_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -156,15 +166,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_1_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -184,7 +206,7 @@
         {
           "id": "w1_2_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -193,7 +215,7 @@
         {
           "id": "w1_2_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -202,7 +224,7 @@
         {
           "id": "w1_2_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -210,45 +232,45 @@
         },
         {
           "id": "w1_2_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_2_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself practice",
+          "context": "Introducing Yourself",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb1_2_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_2_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_2_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -313,6 +335,16 @@
             "id": "m1_2_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_2_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_2_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -323,15 +355,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_2_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -351,7 +395,7 @@
         {
           "id": "w1_3_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -360,7 +404,7 @@
         {
           "id": "w1_3_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -369,7 +413,7 @@
         {
           "id": "w1_3_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -377,45 +421,45 @@
         },
         {
           "id": "w1_3_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_3_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases practice",
+          "context": "Polite Phrases",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb1_3_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_3_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_3_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -480,6 +524,16 @@
             "id": "m1_3_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_3_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_3_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -490,15 +544,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_3_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -518,7 +584,7 @@
         {
           "id": "w1_4_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -527,7 +593,7 @@
         {
           "id": "w1_4_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -536,7 +602,7 @@
         {
           "id": "w1_4_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -544,45 +610,45 @@
         },
         {
           "id": "w1_4_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_4_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions practice",
+          "context": "Asking Questions",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb1_4_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_4_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_4_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -647,6 +713,16 @@
             "id": "m1_4_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_4_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_4_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -657,15 +733,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_4_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -685,7 +773,7 @@
         {
           "id": "w1_5_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -694,7 +782,7 @@
         {
           "id": "w1_5_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -703,7 +791,7 @@
         {
           "id": "w1_5_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -711,45 +799,45 @@
         },
         {
           "id": "w1_5_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_5_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells practice",
+          "context": "Farewells",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb1_5_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_5_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_5_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -814,6 +902,16 @@
             "id": "m1_5_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_5_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_5_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -824,15 +922,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_5_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -852,7 +962,7 @@
         {
           "id": "w1_6_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -861,7 +971,7 @@
         {
           "id": "w1_6_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -870,7 +980,7 @@
         {
           "id": "w1_6_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -878,45 +988,45 @@
         },
         {
           "id": "w1_6_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_6_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice practice",
+          "context": "Review & Practice",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb1_6_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_6_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_6_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -981,6 +1091,16 @@
             "id": "m1_6_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_6_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_6_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -991,15 +1111,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_6_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -1019,7 +1151,7 @@
         {
           "id": "w1_7_1",
           "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
+          "phonetic": "Hello",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Hello.",
@@ -1028,7 +1160,7 @@
         {
           "id": "w1_7_2",
           "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
+          "phonetic": "Thank you",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
           "example_sentence_target": "Thank you.",
@@ -1037,7 +1169,7 @@
         {
           "id": "w1_7_3",
           "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
+          "phonetic": "Goodbye",
           "native_meaning": "ආයුබෝවන්",
           "english": "Goodbye",
           "example_sentence_target": "Goodbye.",
@@ -1045,45 +1177,45 @@
         },
         {
           "id": "w1_7_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Please",
+          "phonetic": "Please",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Please.",
+          "example_sentence_native": "කරුණාකර."
         },
         {
           "id": "w1_7_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Excuse me",
+          "phonetic": "Excuse me",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me.",
+          "example_sentence_native": "සමාවෙන්න."
         }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day practice",
+          "context": "Culture Day",
           "lines": [
             {
               "speaker": "A",
               "target": "Hello!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "phonetic": "Hello"
             },
             {
               "speaker": "B",
               "target": "Hello! Thank you!",
               "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "phonetic": "Hello Thank you"
             },
             {
               "speaker": "A",
               "target": "Goodbye!",
               "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "phonetic": "Goodbye"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Thank you!",
+              "native": "ස්තූතියි!",
+              "phonetic": "Thank you"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Goodbye!",
+              "native": "ආයුබෝවන්!",
+              "phonetic": "Goodbye"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Please! Excuse me!",
+              "native": "කරුණාකර! සමාවෙන්න!",
+              "phonetic": "Please Excuse me"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb1_7_1",
-            "sentence": "___ means Hello in English",
+            "sentence": "___ means 'Hello' in English",
             "answer": "Hello",
             "hint": "ආයුබෝවන්"
           },
           {
             "id": "fb1_7_2",
-            "sentence": "___ means Thank you in English",
+            "sentence": "___ means 'Thank you' in English",
             "answer": "Thank you",
             "hint": "ස්තූතියි"
           },
           {
             "id": "fb1_7_3",
-            "sentence": "___ means Goodbye in English",
+            "sentence": "___ means 'Goodbye' in English",
             "answer": "Goodbye",
             "hint": "ආයුබෝවන්"
           }
@@ -1148,6 +1280,16 @@
             "id": "m1_7_3",
             "target": "Goodbye",
             "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m1_7_4",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_7_5",
+            "target": "Excuse me",
+            "native": "සමාවෙන්න"
           }
         ],
         "multipleChoice": [
@@ -1158,15 +1300,27 @@
               "ආයුබෝවන්",
               "ස්තූතියි",
               "ආයුබෝවන්",
-              "ඔව්"
+              "කරුණාකර"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Hello' means ආයුබෝවන් in Sinhala."
+          },
+          {
+            "id": "mc1_7_2",
+            "question": "How do you say 'ස්තූතියි' in English?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Goodbye",
+              "Please"
+            ],
+            "correct": 1,
+            "explanation": "'Thank you' means ස්තූතියි."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලාංකේය සංස්කෘතියේ සුබ පැතීමේදී දෑත් එකතු කර 'ආයුබෝවන්' කියනු ලැබේ.",
-      "pronunciation_tip": "කෙමෙන් කෙමෙන් වචන උච්චාරණය කරන්න.",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,

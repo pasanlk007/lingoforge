@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w12_1_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_1_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_1_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_1_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_1_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_1_1",
-          "context": "Calling for Help practice",
+          "context": "Calling for Help",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb12_1_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_1_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_1_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_1_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_1_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_1_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_1_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_1_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_1_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w12_2_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_2_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_2_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_2_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_2_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_2_1",
-          "context": "Fire & Accident practice",
+          "context": "Fire & Accident",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb12_2_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_2_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_2_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_2_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_2_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_2_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_2_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_2_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_2_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w12_3_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_3_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_3_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_3_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_3_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_3_1",
-          "context": "Lost & Found practice",
+          "context": "Lost & Found",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb12_3_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_3_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_3_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_3_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_3_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_3_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_3_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_3_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_3_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w12_4_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_4_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_4_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_4_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_4_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_4_1",
-          "context": "Police Station practice",
+          "context": "Police Station",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb12_4_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_4_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_4_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_4_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_4_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_4_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_4_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_4_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_4_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w12_5_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_5_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_5_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_5_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_5_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_5_1",
-          "context": "Medical Emergency practice",
+          "context": "Medical Emergency",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb12_5_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_5_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_5_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_5_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_5_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_5_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_5_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_5_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_5_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w12_6_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_6_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_6_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_6_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_6_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_6_1",
-          "context": "Natural Disaster practice",
+          "context": "Natural Disaster",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb12_6_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_6_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_6_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_6_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_6_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_6_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_6_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_6_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_6_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w12_7_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "緊急",
+          "phonetic": "kin-KYOO",
+          "native_meaning": "Emergency",
+          "english": "Emergency",
+          "example_sentence_target": "緊急.",
+          "example_sentence_native": "Emergency."
         },
         {
           "id": "w12_7_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "警察",
+          "phonetic": "kai-SA-tsoo",
+          "native_meaning": "Police",
+          "english": "Police",
+          "example_sentence_target": "警察.",
+          "example_sentence_native": "Police."
         },
         {
           "id": "w12_7_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "救急車",
+          "phonetic": "kyoo-KYOO-sha",
+          "native_meaning": "Ambulance",
+          "english": "Ambulance",
+          "example_sentence_target": "救急車.",
+          "example_sentence_native": "Ambulance."
         },
         {
           "id": "w12_7_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "火事",
+          "phonetic": "ka-JEE",
+          "native_meaning": "Fire",
+          "english": "Fire",
+          "example_sentence_target": "火事.",
+          "example_sentence_native": "Fire."
         },
         {
           "id": "w12_7_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "助けて",
+          "phonetic": "TAS-kay-tay",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "助けて.",
+          "example_sentence_native": "Help."
         }
       ],
       "dialogues": [
         {
           "id": "d12_7_1",
-          "context": "Safety Tips practice",
+          "context": "Safety Tips",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "緊急!",
+              "native": "Emergency!",
+              "phonetic": "kin-KYOO"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "緊急! 警察!",
+              "native": "Emergency! Police!",
+              "phonetic": "kin-KYOO kai-SA-tsoo"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "警察!",
+              "native": "Police!",
+              "phonetic": "kai-SA-tsoo"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "救急車!",
+              "native": "Ambulance!",
+              "phonetic": "kyoo-KYOO-sha"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "火事! 助けて!",
+              "native": "Fire! Help!",
+              "phonetic": "ka-JEE TAS-kay-tay"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb12_7_1",
-            "sentence": "___ means Hello in Japanese",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Emergency' in Japanese",
+            "answer": "緊急",
+            "hint": "Emergency"
           },
           {
             "id": "fb12_7_2",
-            "sentence": "___ means Thank you in Japanese",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Police' in Japanese",
+            "answer": "警察",
+            "hint": "Police"
           },
           {
             "id": "fb12_7_3",
-            "sentence": "___ means Goodbye in Japanese",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Ambulance' in Japanese",
+            "answer": "救急車",
+            "hint": "Ambulance"
           }
         ],
         "matching": [
           {
             "id": "m12_7_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "緊急",
+            "native": "Emergency"
           },
           {
             "id": "m12_7_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "警察",
+            "native": "Police"
           },
           {
             "id": "m12_7_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "救急車",
+            "native": "Ambulance"
+          },
+          {
+            "id": "m12_7_4",
+            "target": "火事",
+            "native": "Fire"
+          },
+          {
+            "id": "m12_7_5",
+            "target": "助けて",
+            "native": "Help"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '緊急' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Emergency",
+              "Police",
+              "Ambulance",
+              "Fire"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'緊急' means Emergency in English."
+          },
+          {
+            "id": "mc12_7_2",
+            "question": "How do you say 'Police' in Japanese?",
+            "options": [
+              "緊急",
+              "警察",
+              "救急車",
+              "火事"
+            ],
+            "correct": 1,
+            "explanation": "'警察' means Police."
           }
         ]
       },
-      "cultural_note": "In France, call 15 for medical emergencies, 17 for police, 18 for fire.",
-      "pronunciation_tip": "Memorize emergency phrases — they could save your life!",
+      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D7"
       }

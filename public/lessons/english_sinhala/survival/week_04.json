@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_1_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_1_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_1_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_1_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_1_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_1_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w4_2_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_2_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_2_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_2_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_2_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_2_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_2_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w4_3_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_3_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_3_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_3_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_3_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_3_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_3_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w4_4_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_4_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_4_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_4_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_4_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_4_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_4_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w4_5_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_5_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_5_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_5_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_5_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_5_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_5_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w4_6_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_6_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_6_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_6_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_6_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_6_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_6_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w4_7_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "පැය",
+          "phonetic": "පැය",
+          "native_meaning": "Hour",
+          "english": "Hour",
+          "example_sentence_target": "පැය.",
+          "example_sentence_native": "Hour."
         },
         {
           "id": "w4_7_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "මිනිත්තුව",
+          "phonetic": "මිනිත්තුව",
+          "native_meaning": "Minute",
+          "english": "Minute",
+          "example_sentence_target": "මිනිත්තුව.",
+          "example_sentence_native": "Minute."
         },
         {
           "id": "w4_7_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "අද",
+          "phonetic": "අද",
+          "native_meaning": "Today",
+          "english": "Today",
+          "example_sentence_target": "අද.",
+          "example_sentence_native": "Today."
         },
         {
           "id": "w4_7_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "හෙට",
+          "phonetic": "හෙට",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "හෙට.",
+          "example_sentence_native": "Tomorrow."
         },
         {
           "id": "w4_7_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "ඊයේ",
+          "phonetic": "ඊයේ",
+          "native_meaning": "Yesterday",
+          "english": "Yesterday",
+          "example_sentence_target": "ඊයේ.",
+          "example_sentence_native": "Yesterday."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "පැය!",
+              "native": "Hour!",
+              "phonetic": "පැය"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "පැය! මිනිත්තුව!",
+              "native": "Hour! Minute!",
+              "phonetic": "පැය මිනිත්තුව"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "මිනිත්තුව!",
+              "native": "Minute!",
+              "phonetic": "මිනිත්තුව"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "අද!",
+              "native": "Today!",
+              "phonetic": "අද"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "හෙට! ඊයේ!",
+              "native": "Tomorrow! Yesterday!",
+              "phonetic": "හෙට ඊයේ"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hello in Sinhala",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Hour' in Sinhala",
+            "answer": "පැය",
+            "hint": "Hour"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Thank you in Sinhala",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Minute' in Sinhala",
+            "answer": "මිනිත්තුව",
+            "hint": "Minute"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Goodbye in Sinhala",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Today' in Sinhala",
+            "answer": "අද",
+            "hint": "Today"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "පැය",
+            "native": "Hour"
           },
           {
             "id": "m4_7_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "මිනිත්තුව",
+            "native": "Minute"
           },
           {
             "id": "m4_7_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "අද",
+            "native": "Today"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "හෙට",
+            "native": "Tomorrow"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "ඊයේ",
+            "native": "Yesterday"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'පැය' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Hour",
+              "Minute",
+              "Today",
+              "Tomorrow"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'පැය' means Hour in English."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'Minute' in Sinhala?",
+            "options": [
+              "පැය",
+              "මිනිත්තුව",
+              "අද",
+              "හෙට"
+            ],
+            "correct": 1,
+            "explanation": "'මිනිත්තුව' means Minute."
           }
         ]
       },
-      "cultural_note": "France uses CET (UTC+1) in winter and CEST (UTC+2) in summer.",
-      "pronunciation_tip": "French stress falls at the end of word groups.",
+      "cultural_note": "Learning Sinhala opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Sinhala pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

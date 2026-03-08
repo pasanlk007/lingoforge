@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w9_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_1_1",
-          "context": "Getting a Ticket practice",
+          "context": "Getting a Ticket",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb9_1_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_1_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_1_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_1_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_1_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_1_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w9_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_2_1",
-          "context": "At the Airport practice",
+          "context": "At the Airport",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb9_2_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_2_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_2_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_2_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_2_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_2_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w9_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_3_1",
-          "context": "On the Train practice",
+          "context": "On the Train",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb9_3_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_3_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_3_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_3_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_3_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_3_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w9_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_4_1",
-          "context": "Taxi & Bus practice",
+          "context": "Taxi & Bus",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb9_4_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_4_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_4_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_4_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_4_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_4_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w9_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_5_1",
-          "context": "Car Rental practice",
+          "context": "Car Rental",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb9_5_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_5_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_5_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_5_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_5_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_5_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w9_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_6_1",
-          "context": "Accommodation practice",
+          "context": "Accommodation",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb9_6_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_6_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_6_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_6_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_6_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_6_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w9_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Luchthaven",
+          "phonetic": "Luchthaven",
+          "native_meaning": "हवाई अड्डा",
+          "english": "Airport",
+          "example_sentence_target": "Luchthaven.",
+          "example_sentence_native": "हवाई अड्डा."
         },
         {
           "id": "w9_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Trein",
+          "phonetic": "Trein",
+          "native_meaning": "ट्रेन",
+          "english": "Train",
+          "example_sentence_target": "Trein.",
+          "example_sentence_native": "ट्रेन."
         },
         {
           "id": "w9_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Kaartje",
+          "phonetic": "Kaartje",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Kaartje.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Reis",
+          "phonetic": "Reis",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Reis.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_7_1",
-          "context": "Travel Tips practice",
+          "context": "Travel Tips",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Luchthaven!",
+              "native": "हवाई अड्डा!",
+              "phonetic": "Luchthaven"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Luchthaven! Trein!",
+              "native": "हवाई अड्डा! ट्रेन!",
+              "phonetic": "Luchthaven Trein"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Trein!",
+              "native": "ट्रेन!",
+              "phonetic": "Trein"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Kaartje!",
+              "native": "टिकट!",
+              "phonetic": "Kaartje"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Hotel! Reis!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Reis"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb9_7_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in Dutch",
+            "answer": "Luchthaven",
+            "hint": "हवाई अड्डा"
           },
           {
             "id": "fb9_7_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in Dutch",
+            "answer": "Trein",
+            "hint": "ट्रेन"
           },
           {
             "id": "fb9_7_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ticket' in Dutch",
+            "answer": "Kaartje",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Luchthaven",
+            "native": "हवाई अड्डा"
           },
           {
             "id": "m9_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Trein",
+            "native": "ट्रेन"
           },
           {
             "id": "m9_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Kaartje",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_7_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_7_5",
+            "target": "Reis",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Luchthaven' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "हवाई अड्डा",
+              "ट्रेन",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Luchthaven' means हवाई अड्डा in Hindi."
+          },
+          {
+            "id": "mc9_7_2",
+            "question": "How do you say 'ट्रेन' in Dutch?",
+            "options": [
+              "Luchthaven",
+              "Trein",
+              "Kaartje",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Trein' means ट्रेन."
           }
         ]
       },
-      "cultural_note": "भारत में रेलवे नेटवर्क दुनिया के सबसे बड़े नेटवर्क में से एक है।",
-      "pronunciation_tip": "फ्रांसीसी 'gare' और 'car' का अंतर समझें।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D7"
       }

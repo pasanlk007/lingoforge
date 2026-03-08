@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d5_1_1",
-          "context": "Left & Right practice",
+          "context": "Left & Right",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb5_1_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_1_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_1_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -146,6 +146,16 @@
             "id": "m5_1_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_1_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_1_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_1_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d5_2_1",
-          "context": "Asking Directions practice",
+          "context": "Asking Directions",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb5_2_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_2_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_2_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -313,6 +335,16 @@
             "id": "m5_2_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_2_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_2_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_2_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d5_3_1",
-          "context": "Transport Stop practice",
+          "context": "Transport Stop",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb5_3_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_3_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_3_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -480,6 +524,16 @@
             "id": "m5_3_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_3_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_3_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_3_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d5_4_1",
-          "context": "On the Map practice",
+          "context": "On the Map",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb5_4_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_4_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_4_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -647,6 +713,16 @@
             "id": "m5_4_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_4_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_4_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_4_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d5_5_1",
-          "context": "Landmarks practice",
+          "context": "Landmarks",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb5_5_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_5_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_5_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -814,6 +902,16 @@
             "id": "m5_5_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_5_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_5_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_5_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d5_6_1",
-          "context": "Getting Lost practice",
+          "context": "Getting Lost",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb5_6_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_6_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_6_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -981,6 +1091,16 @@
             "id": "m5_6_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_6_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_6_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_6_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d5_7_1",
-          "context": "City Navigation practice",
+          "context": "City Navigation",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "बाएं!",
-              "phonetic": "गोश"
-            },
-            {
-              "speaker": "B",
               "target": "Droite!",
               "native": "दाएं!",
               "phonetic": "द्रोयात"
             },
             {
+              "speaker": "B",
+              "target": "Tout droit!",
+              "native": "सीधे!",
+              "phonetic": "तू-द्रोया"
+            },
+            {
               "speaker": "A",
-              "target": "Droite! Tout droit!",
-              "native": "दाएं! सीधे!",
-              "phonetic": "द्रोयात तू-द्रोया"
+              "target": "Rue! Arrêt!",
+              "native": "सड़क! रुको!",
+              "phonetic": "रू आ-रे"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb5_7_1",
-            "sentence": "___ means Left in French",
+            "sentence": "___ means 'Left' in French",
             "answer": "Gauche",
             "hint": "बाएं"
           },
           {
             "id": "fb5_7_2",
-            "sentence": "___ means Right in French",
+            "sentence": "___ means 'Right' in French",
             "answer": "Droite",
             "hint": "दाएं"
           },
           {
             "id": "fb5_7_3",
-            "sentence": "___ means Straight ahead in French",
+            "sentence": "___ means 'Straight ahead' in French",
             "answer": "Tout droit",
             "hint": "सीधे"
           }
@@ -1148,6 +1280,16 @@
             "id": "m5_7_3",
             "target": "Tout droit",
             "native": "सीधे"
+          },
+          {
+            "id": "m5_7_4",
+            "target": "Rue",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_7_5",
+            "target": "Arrêt",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Gauche' means बाएं."
+            "explanation": "'Gauche' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_7_2",
+            "question": "How do you say 'दाएं' in French?",
+            "options": [
+              "Gauche",
+              "Droite",
+              "Tout droit",
+              "Rue"
+            ],
+            "correct": 1,
+            "explanation": "'Droite' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "फ्रांसीसी रेस्तरां में 'menu fixe' (सेट मेनू) किफायती होता है।",
+      "pronunciation_tip": "फ्रांसीसी stress — हर वाक्यांश के अंतिम syllable पर।",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D7"
       }

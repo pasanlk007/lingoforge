@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d8_1_1",
-          "context": "Family Members practice",
+          "context": "Family Members",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb8_1_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_1_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_1_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -146,6 +146,16 @@
             "id": "m8_1_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_1_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_1_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_1_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d8_2_1",
-          "context": "Describing People practice",
+          "context": "Describing People",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb8_2_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_2_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_2_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -313,6 +335,16 @@
             "id": "m8_2_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_2_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_2_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_2_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d8_3_1",
-          "context": "Relationships practice",
+          "context": "Relationships",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb8_3_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_3_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_3_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -480,6 +524,16 @@
             "id": "m8_3_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_3_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_3_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_3_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d8_4_1",
-          "context": "Emotions practice",
+          "context": "Emotions",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb8_4_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_4_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_4_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -647,6 +713,16 @@
             "id": "m8_4_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_4_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_4_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_4_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d8_5_1",
-          "context": "Life Events practice",
+          "context": "Life Events",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb8_5_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_5_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_5_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -814,6 +902,16 @@
             "id": "m8_5_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_5_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_5_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_5_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d8_6_1",
-          "context": "Childhood Memories practice",
+          "context": "Childhood Memories",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb8_6_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_6_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_6_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -981,6 +1091,16 @@
             "id": "m8_6_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_6_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_6_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_6_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d8_7_1",
-          "context": "Family Culture practice",
+          "context": "Family Culture",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Famille!",
-              "native": "परिवार!",
-              "phonetic": "फा-मिय"
-            },
-            {
-              "speaker": "B",
               "target": "Père!",
               "native": "बुबा!",
               "phonetic": "पेर"
             },
             {
+              "speaker": "B",
+              "target": "Mère!",
+              "native": "आमा!",
+              "phonetic": "मेर"
+            },
+            {
               "speaker": "A",
-              "target": "Père! Mère!",
-              "native": "बुबा! आमा!",
-              "phonetic": "पेर मेर"
+              "target": "Frère! Sœur!",
+              "native": "दाइ! दिदी!",
+              "phonetic": "फ्रेर सोर"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb8_7_1",
-            "sentence": "___ means Family in French",
+            "sentence": "___ means 'Family' in French",
             "answer": "Famille",
             "hint": "परिवार"
           },
           {
             "id": "fb8_7_2",
-            "sentence": "___ means Father in French",
+            "sentence": "___ means 'Father' in French",
             "answer": "Père",
             "hint": "बुबा"
           },
           {
             "id": "fb8_7_3",
-            "sentence": "___ means Mother in French",
+            "sentence": "___ means 'Mother' in French",
             "answer": "Mère",
             "hint": "आमा"
           }
@@ -1148,6 +1280,16 @@
             "id": "m8_7_3",
             "target": "Mère",
             "native": "आमा"
+          },
+          {
+            "id": "m8_7_4",
+            "target": "Frère",
+            "native": "दाइ"
+          },
+          {
+            "id": "m8_7_5",
+            "target": "Sœur",
+            "native": "दिदी"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "दाइ"
             ],
             "correct": 0,
-            "explanation": "'Famille' means परिवार."
+            "explanation": "'Famille' means परिवार in Nepali."
+          },
+          {
+            "id": "mc8_7_2",
+            "question": "How do you say 'बुबा' in French?",
+            "options": [
+              "Famille",
+              "Père",
+              "Mère",
+              "Frère"
+            ],
+            "correct": 1,
+            "explanation": "'Père' means बुबा."
           }
         ]
       },
-      "cultural_note": "नेपाली परिवारहरू प्राय: संयुक्त परिवार प्रणालीमा बस्छन्।",
-      "pronunciation_tip": "फ्रान्सेली परिवारका शब्द सिक्नु रमाइलो छ।",
+      "cultural_note": "फ्रान्समा फुटबल सबैभन्दा लोकप्रिय खेल हो।",
+      "pronunciation_tip": "आपतकालीन शब्द सम्झनुस् — ज्यान जोगाउन सक्छ!",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D7"
       }

@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w3_1_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_1_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_1_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_1_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_1_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_1_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_1_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_1_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w3_2_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_2_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_2_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_2_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_2_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_2_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_2_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_2_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w3_3_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_3_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_3_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_3_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_3_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_3_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_3_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_3_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w3_4_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_4_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_4_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_4_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_4_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_4_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_4_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_4_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w3_5_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_5_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_5_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_5_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_5_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_5_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_5_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_5_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w3_6_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_6_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_6_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_6_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_6_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_6_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_6_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_6_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w3_7_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Médico",
+          "phonetic": "MAY-dee-ko",
+          "native_meaning": "Doctor",
+          "english": "Doctor",
+          "example_sentence_target": "Médico.",
+          "example_sentence_native": "Doctor."
         },
         {
           "id": "w3_7_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Hospital",
+          "phonetic": "os-pee-TAL",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "Hospital."
         },
         {
           "id": "w3_7_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dolor",
+          "phonetic": "do-LOR",
+          "native_meaning": "Pain",
+          "english": "Pain",
+          "example_sentence_target": "Dolor.",
+          "example_sentence_native": "Pain."
         },
         {
           "id": "w3_7_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Medicina",
+          "phonetic": "may-dee-SEE-na",
+          "native_meaning": "Medicine",
+          "english": "Medicine",
+          "example_sentence_target": "Medicina.",
+          "example_sentence_native": "Medicine."
         },
         {
           "id": "w3_7_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Enfermo",
+          "phonetic": "en-FAIR-mo",
+          "native_meaning": "Sick",
+          "english": "Sick",
+          "example_sentence_target": "Enfermo.",
+          "example_sentence_native": "Sick."
         }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Médico!",
+              "native": "Doctor!",
+              "phonetic": "MAY-dee-ko"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Médico! Hospital!",
+              "native": "Doctor! Hospital!",
+              "phonetic": "MAY-dee-ko os-pee-TAL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Hospital!",
+              "native": "Hospital!",
+              "phonetic": "os-pee-TAL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Dolor!",
+              "native": "Pain!",
+              "phonetic": "do-LOR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Medicina! Enfermo!",
+              "native": "Medicine! Sick!",
+              "phonetic": "may-dee-SEE-na en-FAIR-mo"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Hello in Spanish",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Doctor' in Spanish",
+            "answer": "Médico",
+            "hint": "Doctor"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Thank you in Spanish",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Hospital' in Spanish",
+            "answer": "Hospital",
+            "hint": "Hospital"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Goodbye in Spanish",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Pain' in Spanish",
+            "answer": "Dolor",
+            "hint": "Pain"
           }
         ],
         "matching": [
           {
             "id": "m3_7_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Médico",
+            "native": "Doctor"
           },
           {
             "id": "m3_7_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Hospital",
+            "native": "Hospital"
           },
           {
             "id": "m3_7_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Dolor",
+            "native": "Pain"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "Medicina",
+            "native": "Medicine"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "Enfermo",
+            "native": "Sick"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Médico' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Médico' means Doctor in English."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'Hospital' in Spanish?",
+            "options": [
+              "Médico",
+              "Hospital",
+              "Dolor",
+              "Medicina"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means Hospital."
           }
         ]
       },
-      "cultural_note": "France has an excellent public healthcare system available to residents.",
-      "pronunciation_tip": "Master nasal sounds (an, on, in) — they're unique to French.",
+      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

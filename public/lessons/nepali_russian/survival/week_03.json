@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w3_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_1_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_1_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w3_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_2_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_2_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w3_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_3_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_3_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w3_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_4_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_4_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w3_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_5_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_5_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w3_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_6_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_6_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w3_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Врач",
+          "phonetic": "vrach",
+          "native_meaning": "डाक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Врач.",
+          "example_sentence_native": "डाक्टर."
         },
         {
           "id": "w3_7_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Больница",
+          "phonetic": "bol-NI-tsa",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Больница.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Боль",
+          "phonetic": "bol",
+          "native_meaning": "दुखाइ",
+          "english": "Pain",
+          "example_sentence_target": "Боль.",
+          "example_sentence_native": "दुखाइ."
         },
         {
           "id": "w3_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Лекарство",
+          "phonetic": "le-KAR-stvo",
+          "native_meaning": "औषधि",
+          "english": "Medicine",
+          "example_sentence_target": "Лекарство.",
+          "example_sentence_native": "औषधि."
         },
         {
           "id": "w3_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Больной",
+          "phonetic": "bol-NOY",
+          "native_meaning": "बिरामी",
+          "english": "Sick",
+          "example_sentence_target": "Больной.",
+          "example_sentence_native": "बिरामी."
         }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Врач!",
+              "native": "डाक्टर!",
+              "phonetic": "vrach"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Врач! Больница!",
+              "native": "डाक्टर! अस्पताल!",
+              "phonetic": "vrach bol-NI-tsa"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Больница!",
+              "native": "अस्पताल!",
+              "phonetic": "bol-NI-tsa"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Боль!",
+              "native": "दुखाइ!",
+              "phonetic": "bol"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Лекарство! Больной!",
+              "native": "औषधि! बिरामी!",
+              "phonetic": "le-KAR-stvo bol-NOY"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Hello in Russian",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in Russian",
+            "answer": "Врач",
+            "hint": "डाक्टर"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Thank you in Russian",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in Russian",
+            "answer": "Больница",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Goodbye in Russian",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Pain' in Russian",
+            "answer": "Боль",
+            "hint": "दुखाइ"
           }
         ],
         "matching": [
           {
             "id": "m3_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Врач",
+            "native": "डाक्टर"
           },
           {
             "id": "m3_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Больница",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_7_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Боль",
+            "native": "दुखाइ"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "Лекарство",
+            "native": "औषधि"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "Больной",
+            "native": "बिरामी"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Врач' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "डाक्टर",
+              "अस्पताल",
+              "दुखाइ",
+              "औषधि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Врач' means डाक्टर in Nepali."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'अस्पताल' in Russian?",
+            "options": [
+              "Врач",
+              "Больница",
+              "Боль",
+              "Лекарство"
+            ],
+            "correct": 1,
+            "explanation": "'Больница' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "नेपालमा आयुर्वेदिक चिकित्साको लामो परम्परा छ।",
-      "pronunciation_tip": "फ्रान्सेली नाकको आवाज (an, on, in) सिक्नुहोस्।",
+      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w9_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_1_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_1_1",
-          "context": "Getting a Ticket practice",
+          "context": "Getting a Ticket",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb9_1_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_1_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_1_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_1_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_1_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_1_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_1_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w9_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_2_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_2_1",
-          "context": "At the Airport practice",
+          "context": "At the Airport",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb9_2_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_2_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_2_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_2_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_2_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_2_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_2_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w9_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_3_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_3_1",
-          "context": "On the Train practice",
+          "context": "On the Train",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb9_3_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_3_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_3_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_3_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_3_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_3_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_3_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w9_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_4_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_4_1",
-          "context": "Taxi & Bus practice",
+          "context": "Taxi & Bus",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb9_4_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_4_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_4_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_4_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_4_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_4_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_4_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w9_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_5_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_5_1",
-          "context": "Car Rental practice",
+          "context": "Car Rental",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb9_5_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_5_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_5_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_5_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_5_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_5_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_5_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w9_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_6_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_6_1",
-          "context": "Accommodation practice",
+          "context": "Accommodation",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb9_6_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_6_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_6_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_6_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_6_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_6_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_6_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w9_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Airport",
+          "phonetic": "Airport",
+          "native_meaning": "विमानस्थल",
+          "english": "Airport",
+          "example_sentence_target": "Airport.",
+          "example_sentence_native": "विमानस्थल."
         },
         {
           "id": "w9_7_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Train",
+          "phonetic": "Train",
+          "native_meaning": "रेल",
+          "english": "Train",
+          "example_sentence_target": "Train.",
+          "example_sentence_native": "रेल."
         },
         {
           "id": "w9_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Ticket",
+          "phonetic": "Ticket",
+          "native_meaning": "टिकट",
+          "english": "Ticket",
+          "example_sentence_target": "Ticket.",
+          "example_sentence_native": "टिकट."
         },
         {
           "id": "w9_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "होटल",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "होटल."
         },
         {
           "id": "w9_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Trip",
+          "phonetic": "Trip",
+          "native_meaning": "यात्रा",
+          "english": "Trip",
+          "example_sentence_target": "Trip.",
+          "example_sentence_native": "यात्रा."
         }
       ],
       "dialogues": [
         {
           "id": "d9_7_1",
-          "context": "Travel Tips practice",
+          "context": "Travel Tips",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Airport!",
+              "native": "विमानस्थल!",
+              "phonetic": "Airport"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Airport! Train!",
+              "native": "विमानस्थल! रेल!",
+              "phonetic": "Airport Train"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Train!",
+              "native": "रेल!",
+              "phonetic": "Train"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Ticket!",
+              "native": "टिकट!",
+              "phonetic": "Ticket"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Hotel! Trip!",
+              "native": "होटल! यात्रा!",
+              "phonetic": "Hotel Trip"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb9_7_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Airport' in English",
+            "answer": "Airport",
+            "hint": "विमानस्थल"
           },
           {
             "id": "fb9_7_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Train' in English",
+            "answer": "Train",
+            "hint": "रेल"
           },
           {
             "id": "fb9_7_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Ticket' in English",
+            "answer": "Ticket",
+            "hint": "टिकट"
           }
         ],
         "matching": [
           {
             "id": "m9_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Airport",
+            "native": "विमानस्थल"
           },
           {
             "id": "m9_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Train",
+            "native": "रेल"
           },
           {
             "id": "m9_7_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Ticket",
+            "native": "टिकट"
+          },
+          {
+            "id": "m9_7_4",
+            "target": "Hotel",
+            "native": "होटल"
+          },
+          {
+            "id": "m9_7_5",
+            "target": "Trip",
+            "native": "यात्रा"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Airport' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "विमानस्थल",
+              "रेल",
+              "टिकट",
+              "होटल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Airport' means विमानस्थल in Nepali."
+          },
+          {
+            "id": "mc9_7_2",
+            "question": "How do you say 'रेल' in English?",
+            "options": [
+              "Airport",
+              "Train",
+              "Ticket",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means रेल."
           }
         ]
       },
-      "cultural_note": "नेपालमा हवाई सेवा मुख्य शहरहरूलाई जोड्छ।",
-      "pronunciation_tip": "फ्रान्सेली 'gare' र 'car' को भिन्नता बुझ्नुहोस्।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D7"
       }

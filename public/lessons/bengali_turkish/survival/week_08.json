@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w8_1_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_1_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_1_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_1_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_1_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_1_1",
-          "context": "Family Members practice",
+          "context": "Family Members",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb8_1_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_1_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_1_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_1_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_1_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_1_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_1_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_1_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_1_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w8_2_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_2_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_2_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_2_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_2_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_2_1",
-          "context": "Describing People practice",
+          "context": "Describing People",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb8_2_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_2_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_2_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_2_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_2_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_2_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_2_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_2_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_2_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w8_3_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_3_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_3_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_3_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_3_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_3_1",
-          "context": "Relationships practice",
+          "context": "Relationships",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb8_3_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_3_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_3_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_3_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_3_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_3_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_3_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_3_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_3_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w8_4_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_4_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_4_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_4_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_4_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_4_1",
-          "context": "Emotions practice",
+          "context": "Emotions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb8_4_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_4_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_4_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_4_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_4_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_4_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_4_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_4_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_4_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w8_5_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_5_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_5_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_5_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_5_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_5_1",
-          "context": "Life Events practice",
+          "context": "Life Events",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb8_5_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_5_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_5_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_5_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_5_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_5_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_5_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_5_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_5_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w8_6_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_6_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_6_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_6_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_6_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_6_1",
-          "context": "Childhood Memories practice",
+          "context": "Childhood Memories",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb8_6_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_6_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_6_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_6_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_6_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_6_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_6_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_6_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_6_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w8_7_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Aile",
+          "phonetic": "Aile",
+          "native_meaning": "পরিবার",
+          "english": "Family",
+          "example_sentence_target": "Aile.",
+          "example_sentence_native": "পরিবার."
         },
         {
           "id": "w8_7_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Baba",
+          "phonetic": "Baba",
+          "native_meaning": "বাবা",
+          "english": "Father",
+          "example_sentence_target": "Baba.",
+          "example_sentence_native": "বাবা."
         },
         {
           "id": "w8_7_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Anne",
+          "phonetic": "Anne",
+          "native_meaning": "মা",
+          "english": "Mother",
+          "example_sentence_target": "Anne.",
+          "example_sentence_native": "মা."
         },
         {
           "id": "w8_7_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Erkek kardeş",
+          "phonetic": "Erkek kardeş",
+          "native_meaning": "ভাই",
+          "english": "Brother",
+          "example_sentence_target": "Erkek kardeş.",
+          "example_sentence_native": "ভাই."
         },
         {
           "id": "w8_7_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Kız kardeş",
+          "phonetic": "Kız kardeş",
+          "native_meaning": "বোন",
+          "english": "Sister",
+          "example_sentence_target": "Kız kardeş.",
+          "example_sentence_native": "বোন."
         }
       ],
       "dialogues": [
         {
           "id": "d8_7_1",
-          "context": "Family Culture practice",
+          "context": "Family Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Aile!",
+              "native": "পরিবার!",
+              "phonetic": "Aile"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Aile! Baba!",
+              "native": "পরিবার! বাবা!",
+              "phonetic": "Aile Baba"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Baba!",
+              "native": "বাবা!",
+              "phonetic": "Baba"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Anne!",
+              "native": "মা!",
+              "phonetic": "Anne"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Erkek kardeş! Kız kardeş!",
+              "native": "ভাই! বোন!",
+              "phonetic": "Erkek kardeş Kız kardeş"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb8_7_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Family' in Turkish",
+            "answer": "Aile",
+            "hint": "পরিবার"
           },
           {
             "id": "fb8_7_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Father' in Turkish",
+            "answer": "Baba",
+            "hint": "বাবা"
           },
           {
             "id": "fb8_7_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Mother' in Turkish",
+            "answer": "Anne",
+            "hint": "মা"
           }
         ],
         "matching": [
           {
             "id": "m8_7_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Aile",
+            "native": "পরিবার"
           },
           {
             "id": "m8_7_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Baba",
+            "native": "বাবা"
           },
           {
             "id": "m8_7_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Anne",
+            "native": "মা"
+          },
+          {
+            "id": "m8_7_4",
+            "target": "Erkek kardeş",
+            "native": "ভাই"
+          },
+          {
+            "id": "m8_7_5",
+            "target": "Kız kardeş",
+            "native": "বোন"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc8_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aile' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "পরিবার",
+              "বাবা",
+              "মা",
+              "ভাই"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Aile' means পরিবার in Bengali."
+          },
+          {
+            "id": "mc8_7_2",
+            "question": "How do you say 'বাবা' in Turkish?",
+            "options": [
+              "Aile",
+              "Baba",
+              "Anne",
+              "Erkek kardeş"
+            ],
+            "correct": 1,
+            "explanation": "'Baba' means বাবা."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি পরিবারগুলি প্রায়ই যৌথ পরিবার ব্যবস্থায় বাস করে।",
-      "pronunciation_tip": "ফরাসি পারিবারিক শব্দ শেখা মজাদার।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 8 focus: Family & Relationships.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 170,
         "streak_bonus": 20,
         "badge": "W8D7"
       }

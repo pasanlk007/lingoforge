@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w6_1_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_1_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_1_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_1_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_1_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_1_1",
-          "context": "At the Restaurant practice",
+          "context": "At the Restaurant",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb6_1_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_1_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_1_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_1_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_1_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_1_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_1_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_1_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_1_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w6_2_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_2_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_2_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_2_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_2_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_2_1",
-          "context": "Ordering Food practice",
+          "context": "Ordering Food",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb6_2_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_2_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_2_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_2_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_2_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_2_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_2_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_2_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_2_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w6_3_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_3_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_3_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_3_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_3_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_3_1",
-          "context": "Food Vocabulary practice",
+          "context": "Food Vocabulary",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb6_3_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_3_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_3_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_3_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_3_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_3_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_3_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_3_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_3_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w6_4_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_4_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_4_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_4_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_4_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_4_1",
-          "context": "Dietary Needs practice",
+          "context": "Dietary Needs",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb6_4_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_4_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_4_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_4_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_4_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_4_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_4_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_4_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_4_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w6_5_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_5_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_5_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_5_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_5_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_5_1",
-          "context": "Paying the Bill practice",
+          "context": "Paying the Bill",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb6_5_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_5_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_5_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_5_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_5_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_5_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_5_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_5_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_5_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w6_6_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_6_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_6_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_6_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_6_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_6_1",
-          "context": "Street Food practice",
+          "context": "Street Food",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb6_6_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_6_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_6_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_6_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_6_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_6_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_6_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_6_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_6_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w6_7_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Restauracja",
+          "phonetic": "Restauracja",
+          "native_meaning": "ریستوراں",
+          "english": "Restaurant",
+          "example_sentence_target": "Restauracja.",
+          "example_sentence_native": "ریستوراں."
         },
         {
           "id": "w6_7_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "مینو",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "مینو."
         },
         {
           "id": "w6_7_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Zamówić",
+          "phonetic": "Zamówić",
+          "native_meaning": "آرڈر کریں",
+          "english": "To order",
+          "example_sentence_target": "Zamówić.",
+          "example_sentence_native": "آرڈر کریں."
         },
         {
           "id": "w6_7_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Rachunek",
+          "phonetic": "Rachunek",
+          "native_meaning": "بل",
+          "english": "Bill",
+          "example_sentence_target": "Rachunek.",
+          "example_sentence_native": "بل."
         },
         {
           "id": "w6_7_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Pyszny",
+          "phonetic": "Pyszny",
+          "native_meaning": "لذیذ",
+          "english": "Delicious",
+          "example_sentence_target": "Pyszny.",
+          "example_sentence_native": "لذیذ."
         }
       ],
       "dialogues": [
         {
           "id": "d6_7_1",
-          "context": "Food Culture practice",
+          "context": "Food Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Restauracja!",
+              "native": "ریستوراں!",
+              "phonetic": "Restauracja"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Restauracja! Menu!",
+              "native": "ریستوراں! مینو!",
+              "phonetic": "Restauracja Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Menu!",
+              "native": "مینو!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Zamówić!",
+              "native": "آرڈر کریں!",
+              "phonetic": "Zamówić"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Rachunek! Pyszny!",
+              "native": "بل! لذیذ!",
+              "phonetic": "Rachunek Pyszny"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb6_7_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Restaurant' in Polish",
+            "answer": "Restauracja",
+            "hint": "ریستوراں"
           },
           {
             "id": "fb6_7_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Menu' in Polish",
+            "answer": "Menu",
+            "hint": "مینو"
           },
           {
             "id": "fb6_7_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'To order' in Polish",
+            "answer": "Zamówić",
+            "hint": "آرڈر کریں"
           }
         ],
         "matching": [
           {
             "id": "m6_7_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Restauracja",
+            "native": "ریستوراں"
           },
           {
             "id": "m6_7_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Menu",
+            "native": "مینو"
           },
           {
             "id": "m6_7_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Zamówić",
+            "native": "آرڈر کریں"
+          },
+          {
+            "id": "m6_7_4",
+            "target": "Rachunek",
+            "native": "بل"
+          },
+          {
+            "id": "m6_7_5",
+            "target": "Pyszny",
+            "native": "لذیذ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restauracja' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "ریستوراں",
+              "مینو",
+              "آرڈر کریں",
+              "بل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Restauracja' means ریستوراں in Urdu."
+          },
+          {
+            "id": "mc6_7_2",
+            "question": "How do you say 'مینو' in Polish?",
+            "options": [
+              "Restauracja",
+              "Menu",
+              "Zamówić",
+              "Rachunek"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means مینو."
           }
         ]
       },
-      "cultural_note": "پاکستانی کھانا اپنے مسالوں اور ذائقے کے لیے مشہور ہے۔",
-      "pronunciation_tip": "فرانسیسی 'u' گول ہونٹوں سے بولی جاتی ہے۔",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D7"
       }

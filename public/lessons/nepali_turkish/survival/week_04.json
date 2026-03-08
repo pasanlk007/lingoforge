@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_1_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_1_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w4_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_2_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_2_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w4_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_3_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_3_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w4_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_4_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_4_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w4_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_5_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_5_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w4_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_6_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_6_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w4_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Saat",
+          "phonetic": "Saat",
+          "native_meaning": "घण्टा",
+          "english": "Hour",
+          "example_sentence_target": "Saat.",
+          "example_sentence_native": "घण्टा."
         },
         {
           "id": "w4_7_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Dakika",
+          "phonetic": "Dakika",
+          "native_meaning": "मिनेट",
+          "english": "Minute",
+          "example_sentence_target": "Dakika.",
+          "example_sentence_native": "मिनेट."
         },
         {
           "id": "w4_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "Bugün",
+          "phonetic": "Bugün",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Bugün.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "Yarın",
+          "phonetic": "Yarın",
+          "native_meaning": "भोलि",
+          "english": "Tomorrow",
+          "example_sentence_target": "Yarın.",
+          "example_sentence_native": "भोलि."
         },
         {
           "id": "w4_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "Dün",
+          "phonetic": "Dün",
+          "native_meaning": "हिजो",
+          "english": "Yesterday",
+          "example_sentence_target": "Dün.",
+          "example_sentence_native": "हिजो."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Saat!",
+              "native": "घण्टा!",
+              "phonetic": "Saat"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "Saat! Dakika!",
+              "native": "घण्टा! मिनेट!",
+              "phonetic": "Saat Dakika"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Dakika!",
+              "native": "मिनेट!",
+              "phonetic": "Dakika"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "Bugün!",
+              "native": "आज!",
+              "phonetic": "Bugün"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "Yarın! Dün!",
+              "native": "भोलि! हिजो!",
+              "phonetic": "Yarın Dün"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in Turkish",
+            "answer": "Saat",
+            "hint": "घण्टा"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in Turkish",
+            "answer": "Dakika",
+            "hint": "मिनेट"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Today' in Turkish",
+            "answer": "Bugün",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Saat",
+            "native": "घण्टा"
           },
           {
             "id": "m4_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Dakika",
+            "native": "मिनेट"
           },
           {
             "id": "m4_7_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "Bugün",
+            "native": "आज"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Yarın",
+            "native": "भोलि"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Dün",
+            "native": "हिजो"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Saat' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "घण्टा",
+              "मिनेट",
+              "आज",
+              "भोलि"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Saat' means घण्टा in Nepali."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'मिनेट' in Turkish?",
+            "options": [
+              "Saat",
+              "Dakika",
+              "Bugün",
+              "Yarın"
+            ],
+            "correct": 1,
+            "explanation": "'Dakika' means मिनेट."
           }
         ]
       },
-      "cultural_note": "नेपालमा NST अर्थात् UTC+5:45 समय प्रयोग हुन्छ।",
-      "pronunciation_tip": "फ्रान्सेलीमा stress अन्तमा हुन्छ।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

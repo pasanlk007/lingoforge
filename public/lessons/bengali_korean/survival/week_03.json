@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w3_1_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_1_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_1_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_1_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_1_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_1_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_1_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_1_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w3_2_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_2_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_2_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_2_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_2_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_2_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_2_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_2_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w3_3_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_3_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_3_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_3_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_3_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_3_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_3_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_3_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w3_4_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_4_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_4_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_4_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_4_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_4_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_4_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_4_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w3_5_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_5_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_5_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_5_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_5_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_5_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_5_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_5_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w3_6_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_6_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_6_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_6_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_6_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_6_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_6_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_6_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w3_7_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "의사",
+          "phonetic": "eui-SA",
+          "native_meaning": "ডাক্তার",
+          "english": "Doctor",
+          "example_sentence_target": "의사.",
+          "example_sentence_native": "ডাক্তার."
         },
         {
           "id": "w3_7_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "병원",
+          "phonetic": "byong-WON",
+          "native_meaning": "হাসপাতাল",
+          "english": "Hospital",
+          "example_sentence_target": "병원.",
+          "example_sentence_native": "হাসপাতাল."
         },
         {
           "id": "w3_7_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "아픔",
+          "phonetic": "a-PEUM",
+          "native_meaning": "ব্যথা",
+          "english": "Pain",
+          "example_sentence_target": "아픔.",
+          "example_sentence_native": "ব্যথা."
         },
         {
           "id": "w3_7_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "약",
+          "phonetic": "yak",
+          "native_meaning": "ওষুধ",
+          "english": "Medicine",
+          "example_sentence_target": "약.",
+          "example_sentence_native": "ওষুধ."
         },
         {
           "id": "w3_7_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "아프다",
+          "phonetic": "a-peu-DA",
+          "native_meaning": "অসুস্থ",
+          "english": "Sick",
+          "example_sentence_target": "아프다.",
+          "example_sentence_native": "অসুস্থ."
         }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "의사!",
+              "native": "ডাক্তার!",
+              "phonetic": "eui-SA"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "의사! 병원!",
+              "native": "ডাক্তার! হাসপাতাল!",
+              "phonetic": "eui-SA byong-WON"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "병원!",
+              "native": "হাসপাতাল!",
+              "phonetic": "byong-WON"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "아픔!",
+              "native": "ব্যথা!",
+              "phonetic": "a-PEUM"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "약! 아프다!",
+              "native": "ওষুধ! অসুস্থ!",
+              "phonetic": "yak a-peu-DA"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Doctor' in Korean",
+            "answer": "의사",
+            "hint": "ডাক্তার"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Hospital' in Korean",
+            "answer": "병원",
+            "hint": "হাসপাতাল"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Pain' in Korean",
+            "answer": "아픔",
+            "hint": "ব্যথা"
           }
         ],
         "matching": [
           {
             "id": "m3_7_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "의사",
+            "native": "ডাক্তার"
           },
           {
             "id": "m3_7_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "병원",
+            "native": "হাসপাতাল"
           },
           {
             "id": "m3_7_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "아픔",
+            "native": "ব্যথা"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "약",
+            "native": "ওষুধ"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "아프다",
+            "native": "অসুস্থ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '의사' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "ডাক্তার",
+              "হাসপাতাল",
+              "ব্যথা",
+              "ওষুধ"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'의사' means ডাক্তার in Bengali."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'হাসপাতাল' in Korean?",
+            "options": [
+              "의사",
+              "병원",
+              "아픔",
+              "약"
+            ],
+            "correct": 1,
+            "explanation": "'병원' means হাসপাতাল."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে ঐতিহ্যবাহী চিকিৎসার দীর্ঘ ইতিহাস রয়েছে।",
-      "pronunciation_tip": "ফরাসি নাকি স্বর (an, on, in) শিখুন।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

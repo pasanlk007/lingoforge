@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w10_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_1_1",
-          "context": "Weather Vocabulary practice",
+          "context": "Weather Vocabulary",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb10_1_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_1_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_1_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_1_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_1_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_1_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w10_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_2_1",
-          "context": "Seasons practice",
+          "context": "Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb10_2_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_2_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_2_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_2_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_2_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_2_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w10_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_3_1",
-          "context": "Natural Disasters practice",
+          "context": "Natural Disasters",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb10_3_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_3_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_3_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_3_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_3_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_3_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w10_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_4_1",
-          "context": "Environment practice",
+          "context": "Environment",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb10_4_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_4_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_4_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_4_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_4_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_4_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w10_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_5_1",
-          "context": "Animals practice",
+          "context": "Animals",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb10_5_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_5_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_5_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_5_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_5_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_5_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w10_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_6_1",
-          "context": "Outdoor Activities practice",
+          "context": "Outdoor Activities",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb10_6_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_6_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_6_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_6_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_6_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_6_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w10_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Wetter",
+          "phonetic": "वे-तेर",
+          "native_meaning": "मौसम",
+          "english": "Weather",
+          "example_sentence_target": "Wetter.",
+          "example_sentence_native": "मौसम."
         },
         {
           "id": "w10_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sonne",
+          "phonetic": "सो-ने",
+          "native_meaning": "सूरज",
+          "english": "Sun",
+          "example_sentence_target": "Sonne.",
+          "example_sentence_native": "सूरज."
         },
         {
           "id": "w10_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Regen",
+          "phonetic": "रे-गेन",
+          "native_meaning": "बारिश",
+          "english": "Rain",
+          "example_sentence_target": "Regen.",
+          "example_sentence_native": "बारिश."
         },
         {
           "id": "w10_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Wind",
+          "phonetic": "विन्त",
+          "native_meaning": "हवा",
+          "english": "Wind",
+          "example_sentence_target": "Wind.",
+          "example_sentence_native": "हवा."
         },
         {
           "id": "w10_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Schnee",
+          "phonetic": "श्ने",
+          "native_meaning": "बर्फ",
+          "english": "Snow",
+          "example_sentence_target": "Schnee.",
+          "example_sentence_native": "बर्फ."
         }
       ],
       "dialogues": [
         {
           "id": "d10_7_1",
-          "context": "Nature Culture practice",
+          "context": "Nature Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Wetter!",
+              "native": "मौसम!",
+              "phonetic": "वे-तेर"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Wetter! Sonne!",
+              "native": "मौसम! सूरज!",
+              "phonetic": "वे-तेर सो-ने"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sonne!",
+              "native": "सूरज!",
+              "phonetic": "सो-ने"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Regen!",
+              "native": "बारिश!",
+              "phonetic": "रे-गेन"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Wind! Schnee!",
+              "native": "हवा! बर्फ!",
+              "phonetic": "विन्त श्ने"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb10_7_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Weather' in German",
+            "answer": "Wetter",
+            "hint": "मौसम"
           },
           {
             "id": "fb10_7_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Sun' in German",
+            "answer": "Sonne",
+            "hint": "सूरज"
           },
           {
             "id": "fb10_7_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Rain' in German",
+            "answer": "Regen",
+            "hint": "बारिश"
           }
         ],
         "matching": [
           {
             "id": "m10_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Wetter",
+            "native": "मौसम"
           },
           {
             "id": "m10_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sonne",
+            "native": "सूरज"
           },
           {
             "id": "m10_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Regen",
+            "native": "बारिश"
+          },
+          {
+            "id": "m10_7_4",
+            "target": "Wind",
+            "native": "हवा"
+          },
+          {
+            "id": "m10_7_5",
+            "target": "Schnee",
+            "native": "बर्फ"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc10_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Wetter' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "मौसम",
+              "सूरज",
+              "बारिश",
+              "हवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Wetter' means मौसम in Hindi."
+          },
+          {
+            "id": "mc10_7_2",
+            "question": "How do you say 'सूरज' in German?",
+            "options": [
+              "Wetter",
+              "Sonne",
+              "Regen",
+              "Wind"
+            ],
+            "correct": 1,
+            "explanation": "'Sonne' means सूरज."
           }
         ]
       },
-      "cultural_note": "भारत में मानसून का मौसम जून से सितंबर तक रहता है।",
-      "pronunciation_tip": "फ्रांसीसी मौसम शब्द समूह में सीखें।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 190,
         "streak_bonus": 20,
         "badge": "W10D7"
       }

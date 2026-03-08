@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w9_1_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_1_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_1_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_1_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_1_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_1_1",
-          "context": "Getting a Ticket practice",
+          "context": "Getting a Ticket",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb9_1_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_1_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_1_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_1_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_1_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_1_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_1_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_1_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_1_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w9_2_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_2_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_2_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_2_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_2_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_2_1",
-          "context": "At the Airport practice",
+          "context": "At the Airport",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb9_2_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_2_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_2_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_2_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_2_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_2_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_2_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_2_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_2_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w9_3_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_3_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_3_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_3_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_3_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_3_1",
-          "context": "On the Train practice",
+          "context": "On the Train",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb9_3_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_3_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_3_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_3_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_3_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_3_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_3_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_3_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_3_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w9_4_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_4_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_4_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_4_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_4_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_4_1",
-          "context": "Taxi & Bus practice",
+          "context": "Taxi & Bus",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb9_4_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_4_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_4_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_4_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_4_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_4_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_4_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_4_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_4_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w9_5_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_5_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_5_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_5_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_5_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_5_1",
-          "context": "Car Rental practice",
+          "context": "Car Rental",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb9_5_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_5_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_5_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_5_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_5_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_5_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_5_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_5_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_5_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w9_6_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_6_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_6_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_6_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_6_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_6_1",
-          "context": "Accommodation practice",
+          "context": "Accommodation",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb9_6_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_6_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_6_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_6_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_6_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_6_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_6_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_6_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_6_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w9_7_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Aeroporto",
+          "phonetic": "Aeroporto",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Aeroporto.",
+          "example_sentence_native": "ගුවන්තොටුපළ."
         },
         {
           "id": "w9_7_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Treno",
+          "phonetic": "Treno",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Treno.",
+          "example_sentence_native": "දුම්රිය."
         },
         {
           "id": "w9_7_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Biglietto",
+          "phonetic": "Biglietto",
+          "native_meaning": "ටිකට්",
+          "english": "Ticket",
+          "example_sentence_target": "Biglietto.",
+          "example_sentence_native": "ටිකට්."
         },
         {
           "id": "w9_7_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "Hotel",
+          "phonetic": "Hotel",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Hotel.",
+          "example_sentence_native": "හෝටලය."
         },
         {
           "id": "w9_7_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Viaggio",
+          "phonetic": "Viaggio",
+          "native_meaning": "සංචාරය",
+          "english": "Trip",
+          "example_sentence_target": "Viaggio.",
+          "example_sentence_native": "සංචාරය."
         }
       ],
       "dialogues": [
         {
           "id": "d9_7_1",
-          "context": "Travel Tips practice",
+          "context": "Travel Tips",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Aeroporto!",
+              "native": "ගුවන්තොටුපළ!",
+              "phonetic": "Aeroporto"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Aeroporto! Treno!",
+              "native": "ගුවන්තොටුපළ! දුම්රිය!",
+              "phonetic": "Aeroporto Treno"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Treno!",
+              "native": "දුම්රිය!",
+              "phonetic": "Treno"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Biglietto!",
+              "native": "ටිකට්!",
+              "phonetic": "Biglietto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "Hotel! Viaggio!",
+              "native": "හෝටලය! සංචාරය!",
+              "phonetic": "Hotel Viaggio"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb9_7_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Airport' in Italian",
+            "answer": "Aeroporto",
+            "hint": "ගුවන්තොටුපළ"
           },
           {
             "id": "fb9_7_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Train' in Italian",
+            "answer": "Treno",
+            "hint": "දුම්රිය"
           },
           {
             "id": "fb9_7_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Ticket' in Italian",
+            "answer": "Biglietto",
+            "hint": "ටිකට්"
           }
         ],
         "matching": [
           {
             "id": "m9_7_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Aeroporto",
+            "native": "ගුවන්තොටුපළ"
           },
           {
             "id": "m9_7_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Treno",
+            "native": "දුම්රිය"
           },
           {
             "id": "m9_7_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Biglietto",
+            "native": "ටිකට්"
+          },
+          {
+            "id": "m9_7_4",
+            "target": "Hotel",
+            "native": "හෝටලය"
+          },
+          {
+            "id": "m9_7_5",
+            "target": "Viaggio",
+            "native": "සංචාරය"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Aeroporto' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "ගුවන්තොටුපළ",
+              "දුම්රිය",
+              "ටිකට්",
+              "හෝටලය"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Aeroporto' means ගුවන්තොටුපළ in Sinhala."
+          },
+          {
+            "id": "mc9_7_2",
+            "question": "How do you say 'දුම්රිය' in Italian?",
+            "options": [
+              "Aeroporto",
+              "Treno",
+              "Biglietto",
+              "Hotel"
+            ],
+            "correct": 1,
+            "explanation": "'Treno' means දුම්රිය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ගුවන් සේවාව ලෝකයේ හොඳ ගුවන් සේවා අතර වේ.",
-      "pronunciation_tip": "ප්‍රංශ 'gare' (ස්ථානය) සහ 'car' (මෝටර් රථය) හොඳින් වෙන් කරන්න.",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 9 focus: Transport & Travel.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D7"
       }

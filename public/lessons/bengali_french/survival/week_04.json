@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -146,6 +146,16 @@
             "id": "m4_1_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -313,6 +335,16 @@
             "id": "m4_2_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -480,6 +524,16 @@
             "id": "m4_3_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -647,6 +713,16 @@
             "id": "m4_4_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -814,6 +902,16 @@
             "id": "m4_5_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -981,6 +1091,16 @@
             "id": "m4_6_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "ঘণ্টা!",
-              "phonetic": "ওর"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "মিনিট!",
               "phonetic": "মি-নুত"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "আজ!",
+              "phonetic": "ও-ঝুর-দ্যুই"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "মিনিট! আজ!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "কাল! গতকাল!",
+              "phonetic": "দ্য-মাঁ ইয়ের"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "ঘণ্টা"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "মিনিট"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "আজ"
           }
@@ -1148,6 +1280,16 @@
             "id": "m4_7_3",
             "target": "Aujourd'hui",
             "native": "আজ"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Demain",
+            "native": "কাল"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Hier",
+            "native": "গতকাল"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "কাল"
             ],
             "correct": 0,
-            "explanation": "'Heure' means ঘণ্টা."
+            "explanation": "'Heure' means ঘণ্টা in Bengali."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'মিনিট' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means মিনিট."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে BST অর্থাৎ UTC+6 সময় ব্যবহার হয়।",
-      "pronunciation_tip": "ফরাসিতে stress শেষে থাকে।",
+      "cultural_note": "প্যারিসের মেট্রো বিশ্বের সেরা পরিবহন ব্যবস্থার মধ্যে একটি।",
+      "pronunciation_tip": "liaison — দুটি শব্দ মেলে: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

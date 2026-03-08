@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w3_1_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_1_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_1_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_1_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_1_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_1_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_1_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_1_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w3_2_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_2_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_2_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_2_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_2_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_2_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_2_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_2_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w3_3_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_3_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_3_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_3_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_3_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_3_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_3_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_3_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w3_4_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_4_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_4_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_4_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_4_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_4_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_4_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_4_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w3_5_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_5_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_5_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_5_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_5_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_5_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_5_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_5_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w3_6_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_6_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_6_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_6_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_6_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_6_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_6_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_6_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w3_7_1",
-          "target": "Hello",
-          "phonetic": "හෙ-ලෝ",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Doktor",
+          "phonetic": "Doktor",
+          "native_meaning": "වෛද්‍යවරයා",
+          "english": "Doctor",
+          "example_sentence_target": "Doktor.",
+          "example_sentence_native": "වෛද්‍යවරයා."
         },
         {
           "id": "w3_7_2",
-          "target": "Thank you",
-          "phonetic": "තෑංක්-යූ",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ස්තූතියි."
+          "target": "Hastane",
+          "phonetic": "Hastane",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Hastane.",
+          "example_sentence_native": "රෝහල."
         },
         {
           "id": "w3_7_3",
-          "target": "Goodbye",
-          "phonetic": "ගුඩ්-බාය්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "Ağrı",
+          "phonetic": "Ağrı",
+          "native_meaning": "වේදනාව",
+          "english": "Pain",
+          "example_sentence_target": "Ağrı.",
+          "example_sentence_native": "වේදනාව."
         },
         {
           "id": "w3_7_4",
-          "target": "Yes",
-          "phonetic": "යෙස්",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ඔව්."
+          "target": "İlaç",
+          "phonetic": "İlaç",
+          "native_meaning": "බෙහෙත",
+          "english": "Medicine",
+          "example_sentence_target": "İlaç.",
+          "example_sentence_native": "බෙහෙත."
         },
         {
           "id": "w3_7_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "නැහැ."
+          "target": "Hasta",
+          "phonetic": "Hasta",
+          "native_meaning": "අසනීප",
+          "english": "Sick",
+          "example_sentence_target": "Hasta.",
+          "example_sentence_native": "අසනීප."
         }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Doktor!",
+              "native": "වෛද්‍යවරයා!",
+              "phonetic": "Doktor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "හෙ-ලෝ තෑංක්-යූ"
+              "target": "Doktor! Hastane!",
+              "native": "වෛද්‍යවරයා! රෝහල!",
+              "phonetic": "Doktor Hastane"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ගුඩ්-බාය්"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "හෙ-ලෝ"
+              "target": "Hastane!",
+              "native": "රෝහල!",
+              "phonetic": "Hastane"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ස්තූතියි!",
-              "phonetic": "තෑංක්-යූ"
+              "target": "Ağrı!",
+              "native": "වේදනාව!",
+              "phonetic": "Ağrı"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ස්තූතියි! ආයුබෝවන්!",
-              "phonetic": "තෑංක්-යූ ගුඩ්-බාය්"
+              "target": "İlaç! Hasta!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "İlaç Hasta"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Doctor' in Turkish",
+            "answer": "Doktor",
+            "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "ස්තූතියි"
+            "sentence": "___ means 'Hospital' in Turkish",
+            "answer": "Hastane",
+            "hint": "රෝහල"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "ආයුබෝවන්"
+            "sentence": "___ means 'Pain' in Turkish",
+            "answer": "Ağrı",
+            "hint": "වේදනාව"
           }
         ],
         "matching": [
           {
             "id": "m3_7_1",
-            "target": "Hello",
-            "native": "ආයුබෝවන්"
+            "target": "Doktor",
+            "native": "වෛද්‍යවරයා"
           },
           {
             "id": "m3_7_2",
-            "target": "Thank you",
-            "native": "ස්තූතියි"
+            "target": "Hastane",
+            "native": "රෝහල"
           },
           {
             "id": "m3_7_3",
-            "target": "Goodbye",
-            "native": "ආයුබෝවන්"
+            "target": "Ağrı",
+            "native": "වේදනාව"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "İlaç",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "Hasta",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doktor' mean?",
             "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "ඔව්"
+              "වෛද්‍යවරයා",
+              "රෝහල",
+              "වේදනාව",
+              "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ආයුබෝවන්."
+            "explanation": "'Doktor' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'රෝහල' in Turkish?",
+            "options": [
+              "Doktor",
+              "Hastane",
+              "Ağrı",
+              "İlaç"
+            ],
+            "correct": 1,
+            "explanation": "'Hastane' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

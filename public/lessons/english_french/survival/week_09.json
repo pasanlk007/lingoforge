@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d9_1_1",
-          "context": "Getting a Ticket practice",
+          "context": "Getting a Ticket",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb9_1_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_1_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_1_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -146,6 +146,16 @@
             "id": "m9_1_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_1_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_1_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_1_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d9_2_1",
-          "context": "At the Airport practice",
+          "context": "At the Airport",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb9_2_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_2_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_2_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -313,6 +335,16 @@
             "id": "m9_2_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_2_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_2_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_2_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d9_3_1",
-          "context": "On the Train practice",
+          "context": "On the Train",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb9_3_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_3_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_3_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -480,6 +524,16 @@
             "id": "m9_3_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_3_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_3_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_3_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d9_4_1",
-          "context": "Taxi & Bus practice",
+          "context": "Taxi & Bus",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb9_4_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_4_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_4_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -647,6 +713,16 @@
             "id": "m9_4_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_4_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_4_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_4_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d9_5_1",
-          "context": "Car Rental practice",
+          "context": "Car Rental",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb9_5_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_5_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_5_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -814,6 +902,16 @@
             "id": "m9_5_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_5_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_5_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_5_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d9_6_1",
-          "context": "Accommodation practice",
+          "context": "Accommodation",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb9_6_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_6_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_6_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -981,6 +1091,16 @@
             "id": "m9_6_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_6_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_6_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_6_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d9_7_1",
-          "context": "Travel Tips practice",
+          "context": "Travel Tips",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
-            },
-            {
-              "speaker": "B",
               "target": "Train!",
               "native": "Train!",
               "phonetic": "tran"
             },
             {
+              "speaker": "B",
+              "target": "Billet!",
+              "native": "Ticket!",
+              "phonetic": "bee-YAY"
+            },
+            {
               "speaker": "A",
-              "target": "Train! Billet!",
-              "native": "Train! Ticket!",
-              "phonetic": "tran bee-YAY"
+              "target": "Hôtel! Voyage!",
+              "native": "Hotel! Trip!",
+              "phonetic": "oh-TEL vwa-YAZH"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb9_7_1",
-            "sentence": "___ means Airport in French",
+            "sentence": "___ means 'Airport' in French",
             "answer": "Aéroport",
             "hint": "Airport"
           },
           {
             "id": "fb9_7_2",
-            "sentence": "___ means Train in French",
+            "sentence": "___ means 'Train' in French",
             "answer": "Train",
             "hint": "Train"
           },
           {
             "id": "fb9_7_3",
-            "sentence": "___ means Ticket in French",
+            "sentence": "___ means 'Ticket' in French",
             "answer": "Billet",
             "hint": "Ticket"
           }
@@ -1148,6 +1280,16 @@
             "id": "m9_7_3",
             "target": "Billet",
             "native": "Ticket"
+          },
+          {
+            "id": "m9_7_4",
+            "target": "Hôtel",
+            "native": "Hotel"
+          },
+          {
+            "id": "m9_7_5",
+            "target": "Voyage",
+            "native": "Trip"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "Hotel"
             ],
             "correct": 0,
-            "explanation": "'Aéroport' means Airport."
+            "explanation": "'Aéroport' means Airport in English."
+          },
+          {
+            "id": "mc9_7_2",
+            "question": "How do you say 'Train' in French?",
+            "options": [
+              "Aéroport",
+              "Train",
+              "Billet",
+              "Hôtel"
+            ],
+            "correct": 1,
+            "explanation": "'Train' means Train."
           }
         ]
       },
-      "cultural_note": "France has one of Europe's best high-speed rail (TGV) networks.",
-      "pronunciation_tip": "Distinguish gare (station) from car (coach) carefully.",
+      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
+      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
       "progress": {
-        "xp": 100,
+        "xp": 180,
         "streak_bonus": 20,
         "badge": "W9D7"
       }

@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -146,6 +146,16 @@
             "id": "m3_1_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -313,6 +335,16 @@
             "id": "m3_2_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -480,6 +524,16 @@
             "id": "m3_3_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -647,6 +713,16 @@
             "id": "m3_4_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -814,6 +902,16 @@
             "id": "m3_5_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -981,6 +1091,16 @@
             "id": "m3_6_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "ڈاکٹر!",
-              "phonetic": "مے-د-ساں"
-            },
-            {
-              "speaker": "B",
               "target": "Hôpital!",
               "native": "ہسپتال!",
               "phonetic": "او-پِ-تال"
             },
             {
+              "speaker": "B",
+              "target": "Douleur!",
+              "native": "درد!",
+              "phonetic": "دو-لور"
+            },
+            {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "ہسپتال! درد!",
-              "phonetic": "او-پِ-تال دو-لور"
+              "target": "Médicament! Malade!",
+              "native": "دوائی! بیمار!",
+              "phonetic": "مے-دی-کا-ماں ما-لاد"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "ڈاکٹر"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "ہسپتال"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "درد"
           }
@@ -1148,6 +1280,16 @@
             "id": "m3_7_3",
             "target": "Douleur",
             "native": "درد"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "Médicament",
+            "native": "دوائی"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "Malade",
+            "native": "بیمار"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "دوائی"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means ڈاکٹر."
+            "explanation": "'Médecin' means ڈاکٹر in Urdu."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'ہسپتال' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means ہسپتال."
           }
         ]
       },
-      "cultural_note": "پاکستان میں یونانی طب کی روایت بہت پرانی ہے۔",
-      "pronunciation_tip": "فرانسیسی ناک کی آوازیں (an, on, in) سیکھیں۔",
+      "cultural_note": "فرانس کی صحت کی سہولیات یورپ میں بہترین ہیں۔",
+      "pronunciation_tip": "فرانسیسی ناک کی آوازیں 'an','on','in' — ناک سے نکلتی ہیں۔",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

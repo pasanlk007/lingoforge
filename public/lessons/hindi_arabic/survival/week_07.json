@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w7_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_1_1",
-          "context": "Numbers & Prices practice",
+          "context": "Numbers & Prices",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb7_1_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_1_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_1_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_1_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_1_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_1_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w7_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_2_1",
-          "context": "At the Market practice",
+          "context": "At the Market",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb7_2_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_2_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_2_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_2_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_2_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_2_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w7_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_3_1",
-          "context": "Clothing Store practice",
+          "context": "Clothing Store",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb7_3_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_3_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_3_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_3_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_3_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_3_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w7_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_4_1",
-          "context": "Bargaining practice",
+          "context": "Bargaining",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb7_4_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_4_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_4_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_4_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_4_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_4_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w7_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_5_1",
-          "context": "Paying practice",
+          "context": "Paying",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb7_5_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_5_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_5_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_5_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_5_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_5_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w7_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_6_1",
-          "context": "Returns & Exchanges practice",
+          "context": "Returns & Exchanges",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb7_6_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_6_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_6_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_6_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_6_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_6_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w7_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "سعر",
+          "phonetic": "si-IR",
+          "native_meaning": "कीमत",
+          "english": "Price",
+          "example_sentence_target": "سعر.",
+          "example_sentence_native": "कीमत."
         },
         {
           "id": "w7_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "يشتري",
+          "phonetic": "yash-ta-RI",
+          "native_meaning": "खरीदें",
+          "english": "To buy",
+          "example_sentence_target": "يشتري.",
+          "example_sentence_native": "खरीदें."
         },
         {
           "id": "w7_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "متجر",
+          "phonetic": "mat-JAR",
+          "native_meaning": "दुकान",
+          "english": "Shop",
+          "example_sentence_target": "متجر.",
+          "example_sentence_native": "दुकान."
         },
         {
           "id": "w7_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "غالي",
+          "phonetic": "GHA-li",
+          "native_meaning": "महंगा",
+          "english": "Expensive",
+          "example_sentence_target": "غالي.",
+          "example_sentence_native": "महंगा."
         },
         {
           "id": "w7_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "رخيص",
+          "phonetic": "ra-KHIS",
+          "native_meaning": "सस्ता",
+          "english": "Cheap",
+          "example_sentence_target": "رخيص.",
+          "example_sentence_native": "सस्ता."
         }
       ],
       "dialogues": [
         {
           "id": "d7_7_1",
-          "context": "Shopping Culture practice",
+          "context": "Shopping Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "سعر!",
+              "native": "कीमत!",
+              "phonetic": "si-IR"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "سعر! يشتري!",
+              "native": "कीमत! खरीदें!",
+              "phonetic": "si-IR yash-ta-RI"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "يشتري!",
+              "native": "खरीदें!",
+              "phonetic": "yash-ta-RI"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "متجر!",
+              "native": "दुकान!",
+              "phonetic": "mat-JAR"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "غالي! رخيص!",
+              "native": "महंगा! सस्ता!",
+              "phonetic": "GHA-li ra-KHIS"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb7_7_1",
-            "sentence": "___ means Hello in Arabic",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Price' in Arabic",
+            "answer": "سعر",
+            "hint": "कीमत"
           },
           {
             "id": "fb7_7_2",
-            "sentence": "___ means Thank you in Arabic",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'To buy' in Arabic",
+            "answer": "يشتري",
+            "hint": "खरीदें"
           },
           {
             "id": "fb7_7_3",
-            "sentence": "___ means Goodbye in Arabic",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Shop' in Arabic",
+            "answer": "متجر",
+            "hint": "दुकान"
           }
         ],
         "matching": [
           {
             "id": "m7_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "سعر",
+            "native": "कीमत"
           },
           {
             "id": "m7_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "يشتري",
+            "native": "खरीदें"
           },
           {
             "id": "m7_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "متجر",
+            "native": "दुकान"
+          },
+          {
+            "id": "m7_7_4",
+            "target": "غالي",
+            "native": "महंगा"
+          },
+          {
+            "id": "m7_7_5",
+            "target": "رخيص",
+            "native": "सस्ता"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc7_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'سعر' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "कीमत",
+              "खरीदें",
+              "दुकान",
+              "महंगा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'سعر' means कीमत in Hindi."
+          },
+          {
+            "id": "mc7_7_2",
+            "question": "How do you say 'खरीदें' in Arabic?",
+            "options": [
+              "سعر",
+              "يشتري",
+              "متجر",
+              "غالي"
+            ],
+            "correct": 1,
+            "explanation": "'يشتري' means खरीदें."
           }
         ]
       },
-      "cultural_note": "भारत में बाजार आमतौर पर सुबह 10 बजे से रात 9 बजे तक खुले रहते हैं।",
-      "pronunciation_tip": "फ्रांसीसी संख्याएं 70, 80, 90 जटिल हैं।",
+      "cultural_note": "Learning Arabic opens doors to new cultures and opportunities! Week 7 focus: Shopping & Money.",
+      "pronunciation_tip": "Practice Arabic pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 160,
         "streak_bonus": 20,
         "badge": "W7D7"
       }

@@ -17,7 +17,7 @@
         {
           "id": "w12_1_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -26,7 +26,7 @@
         {
           "id": "w12_1_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -35,7 +35,7 @@
         {
           "id": "w12_1_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -44,7 +44,7 @@
         {
           "id": "w12_1_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -53,7 +53,7 @@
         {
           "id": "w12_1_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -63,25 +63,25 @@
       "dialogues": [
         {
           "id": "d12_1_1",
-          "context": "Calling for Help practice",
+          "context": "Calling for Help",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb12_1_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_1_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_1_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -146,6 +146,16 @@
             "id": "m12_1_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_1_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_1_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_1_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D1"
       }
@@ -184,7 +206,7 @@
         {
           "id": "w12_2_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -193,7 +215,7 @@
         {
           "id": "w12_2_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -202,7 +224,7 @@
         {
           "id": "w12_2_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -211,7 +233,7 @@
         {
           "id": "w12_2_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -220,7 +242,7 @@
         {
           "id": "w12_2_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -230,25 +252,25 @@
       "dialogues": [
         {
           "id": "d12_2_1",
-          "context": "Fire & Accident practice",
+          "context": "Fire & Accident",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb12_2_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_2_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_2_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -313,6 +335,16 @@
             "id": "m12_2_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_2_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_2_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_2_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D2"
       }
@@ -351,7 +395,7 @@
         {
           "id": "w12_3_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -360,7 +404,7 @@
         {
           "id": "w12_3_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -369,7 +413,7 @@
         {
           "id": "w12_3_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -378,7 +422,7 @@
         {
           "id": "w12_3_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -387,7 +431,7 @@
         {
           "id": "w12_3_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -397,25 +441,25 @@
       "dialogues": [
         {
           "id": "d12_3_1",
-          "context": "Lost & Found practice",
+          "context": "Lost & Found",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb12_3_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_3_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_3_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -480,6 +524,16 @@
             "id": "m12_3_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_3_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_3_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_3_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D3"
       }
@@ -518,7 +584,7 @@
         {
           "id": "w12_4_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -527,7 +593,7 @@
         {
           "id": "w12_4_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -536,7 +602,7 @@
         {
           "id": "w12_4_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -545,7 +611,7 @@
         {
           "id": "w12_4_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -554,7 +620,7 @@
         {
           "id": "w12_4_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -564,25 +630,25 @@
       "dialogues": [
         {
           "id": "d12_4_1",
-          "context": "Police Station practice",
+          "context": "Police Station",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb12_4_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_4_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_4_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -647,6 +713,16 @@
             "id": "m12_4_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_4_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_4_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_4_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D4"
       }
@@ -685,7 +773,7 @@
         {
           "id": "w12_5_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -694,7 +782,7 @@
         {
           "id": "w12_5_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -703,7 +791,7 @@
         {
           "id": "w12_5_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -712,7 +800,7 @@
         {
           "id": "w12_5_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -721,7 +809,7 @@
         {
           "id": "w12_5_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -731,25 +819,25 @@
       "dialogues": [
         {
           "id": "d12_5_1",
-          "context": "Medical Emergency practice",
+          "context": "Medical Emergency",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb12_5_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_5_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_5_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -814,6 +902,16 @@
             "id": "m12_5_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_5_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_5_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_5_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D5"
       }
@@ -852,7 +962,7 @@
         {
           "id": "w12_6_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -861,7 +971,7 @@
         {
           "id": "w12_6_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -870,7 +980,7 @@
         {
           "id": "w12_6_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -879,7 +989,7 @@
         {
           "id": "w12_6_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -888,7 +998,7 @@
         {
           "id": "w12_6_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -898,25 +1008,25 @@
       "dialogues": [
         {
           "id": "d12_6_1",
-          "context": "Natural Disaster practice",
+          "context": "Natural Disaster",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb12_6_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_6_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_6_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -981,6 +1091,16 @@
             "id": "m12_6_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_6_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_6_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_6_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D6"
       }
@@ -1019,7 +1151,7 @@
         {
           "id": "w12_7_1",
           "target": "Urgence",
-          "phonetic": "উর-জাঁস",
+          "phonetic": "උර්-ෂාංස්",
           "native_meaning": "හදිසි",
           "english": "Emergency",
           "example_sentence_target": "Urgence.",
@@ -1028,7 +1160,7 @@
         {
           "id": "w12_7_2",
           "target": "Police",
-          "phonetic": "পো-লিস",
+          "phonetic": "පො-ලීස්",
           "native_meaning": "පොලිසිය",
           "english": "Police",
           "example_sentence_target": "Police.",
@@ -1037,7 +1169,7 @@
         {
           "id": "w12_7_3",
           "target": "Ambulance",
-          "phonetic": "আম-বু-লাঁস",
+          "phonetic": "ආං-බූ-ලාංස්",
           "native_meaning": "ගිලන්රථය",
           "english": "Ambulance",
           "example_sentence_target": "Ambulance.",
@@ -1046,7 +1178,7 @@
         {
           "id": "w12_7_4",
           "target": "Feu",
-          "phonetic": "ফো",
+          "phonetic": "ෆො",
           "native_meaning": "ගිනි",
           "english": "Fire",
           "example_sentence_target": "Feu.",
@@ -1055,7 +1187,7 @@
         {
           "id": "w12_7_5",
           "target": "Aide",
-          "phonetic": "এদ",
+          "phonetic": "එද්",
           "native_meaning": "උදව්",
           "english": "Help",
           "example_sentence_target": "Aide.",
@@ -1065,25 +1197,25 @@
       "dialogues": [
         {
           "id": "d12_7_1",
-          "context": "Safety Tips practice",
+          "context": "Safety Tips",
           "lines": [
             {
               "speaker": "A",
               "target": "Urgence!",
               "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "phonetic": "උර්-ෂාංස්"
             },
             {
               "speaker": "B",
               "target": "Urgence! Police!",
               "native": "හදිසි! පොලිසිය!",
-              "phonetic": "উর-জাঁস পো-লিস"
+              "phonetic": "උර්-ෂාංස් පො-ලීස්"
             },
             {
               "speaker": "A",
               "target": "Ambulance!",
               "native": "ගිලන්රථය!",
-              "phonetic": "আম-বু-লাঁস"
+              "phonetic": "ආං-බූ-ලාංස්"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "හදිසි!",
-              "phonetic": "উর-জাঁস"
+              "target": "Police!",
+              "native": "පොලිසිය!",
+              "phonetic": "පො-ලීස්"
             },
             {
               "speaker": "B",
-              "target": "Police!",
-              "native": "පොලිසිය!",
-              "phonetic": "পো-লিস"
+              "target": "Ambulance!",
+              "native": "ගිලන්රථය!",
+              "phonetic": "ආං-බූ-ලාංස්"
             },
             {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "පොලිසිය! ගිලන්රථය!",
-              "phonetic": "পো-লিস আম-বু-লাঁস"
+              "target": "Feu! Aide!",
+              "native": "ගිනි! උදව්!",
+              "phonetic": "ෆො එද්"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb12_7_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "හදිසි"
           },
           {
             "id": "fb12_7_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "පොලිසිය"
           },
           {
             "id": "fb12_7_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ගිලන්රථය"
           }
@@ -1148,6 +1280,16 @@
             "id": "m12_7_3",
             "target": "Ambulance",
             "native": "ගිලන්රථය"
+          },
+          {
+            "id": "m12_7_4",
+            "target": "Feu",
+            "native": "ගිනි"
+          },
+          {
+            "id": "m12_7_5",
+            "target": "Aide",
+            "native": "උදව්"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "ගිනි"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means හදිසි."
+            "explanation": "'Urgence' means හදිසි in Sinhala."
+          },
+          {
+            "id": "mc12_7_2",
+            "question": "How do you say 'පොලිසිය' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means පොලිසිය."
           }
         ]
       },
-      "cultural_note": "119 හදිසි ඇමතුම් අංකය ශ්‍රී ලංකාවේ ඕනෑම හදිසි අවස්ථාවකදී භාවිතා කළ හැකිය.",
-      "pronunciation_tip": "ප්‍රංශ හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
+      "cultural_note": "ෆ්‍රාන්සයේ හදිසි ඇමතුම්: 15 (වෛද්‍ය), 17 (පොලිස්), 18 (ගිනිනිවීම).",
+      "pronunciation_tip": "හදිසි ශබ්ද හොඳින් කටපාඩම් කරන්න — ජීවිතය රදා පවතී!",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D7"
       }

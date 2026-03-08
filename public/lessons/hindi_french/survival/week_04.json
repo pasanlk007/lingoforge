@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -146,6 +146,16 @@
             "id": "m4_1_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -313,6 +335,16 @@
             "id": "m4_2_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -480,6 +524,16 @@
             "id": "m4_3_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -647,6 +713,16 @@
             "id": "m4_4_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -814,6 +902,16 @@
             "id": "m4_5_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -981,6 +1091,16 @@
             "id": "m4_6_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "घंटा!",
-              "phonetic": "ओर"
-            },
-            {
-              "speaker": "B",
               "target": "Minute!",
               "native": "मिनट!",
               "phonetic": "मि-नुत"
             },
             {
+              "speaker": "B",
+              "target": "Aujourd'hui!",
+              "native": "आज!",
+              "phonetic": "ओ-झुर-द्यूई"
+            },
+            {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "मिनट! आज!",
-              "phonetic": "मि-नुत ओ-झुर-द्यूई"
+              "target": "Demain! Hier!",
+              "native": "कल! कल!",
+              "phonetic": "द-मां इयेर"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "घंटा"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "मिनट"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "आज"
           }
@@ -1148,6 +1280,16 @@
             "id": "m4_7_3",
             "target": "Aujourd'hui",
             "native": "आज"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Demain",
+            "native": "कल"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Hier",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "कल"
             ],
             "correct": 0,
-            "explanation": "'Heure' means घंटा."
+            "explanation": "'Heure' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'मिनट' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "पेरिस का मेट्रो सिस्टम दुनिया के सबसे अच्छे परिवहन नेटवर्क में है।",
+      "pronunciation_tip": "liaison — दो शब्द मिलते हैं: 'vous êtes' = 'voo-ZET'।",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

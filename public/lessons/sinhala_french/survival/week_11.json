@@ -17,7 +17,7 @@
         {
           "id": "w11_1_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -26,7 +26,7 @@
         {
           "id": "w11_1_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -35,7 +35,7 @@
         {
           "id": "w11_1_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -44,7 +44,7 @@
         {
           "id": "w11_1_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -53,7 +53,7 @@
         {
           "id": "w11_1_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -63,25 +63,25 @@
       "dialogues": [
         {
           "id": "d11_1_1",
-          "context": "Sports & Games practice",
+          "context": "Sports & Games",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb11_1_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_1_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_1_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -146,6 +146,16 @@
             "id": "m11_1_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_1_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_1_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_1_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D1"
       }
@@ -184,7 +206,7 @@
         {
           "id": "w11_2_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -193,7 +215,7 @@
         {
           "id": "w11_2_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -202,7 +224,7 @@
         {
           "id": "w11_2_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -211,7 +233,7 @@
         {
           "id": "w11_2_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -220,7 +242,7 @@
         {
           "id": "w11_2_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -230,25 +252,25 @@
       "dialogues": [
         {
           "id": "d11_2_1",
-          "context": "Music & Arts practice",
+          "context": "Music & Arts",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb11_2_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_2_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_2_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -313,6 +335,16 @@
             "id": "m11_2_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_2_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_2_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_2_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D2"
       }
@@ -351,7 +395,7 @@
         {
           "id": "w11_3_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -360,7 +404,7 @@
         {
           "id": "w11_3_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -369,7 +413,7 @@
         {
           "id": "w11_3_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -378,7 +422,7 @@
         {
           "id": "w11_3_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -387,7 +431,7 @@
         {
           "id": "w11_3_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -397,25 +441,25 @@
       "dialogues": [
         {
           "id": "d11_3_1",
-          "context": "Reading & Movies practice",
+          "context": "Reading & Movies",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb11_3_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_3_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_3_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -480,6 +524,16 @@
             "id": "m11_3_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_3_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_3_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_3_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D3"
       }
@@ -518,7 +584,7 @@
         {
           "id": "w11_4_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -527,7 +593,7 @@
         {
           "id": "w11_4_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -536,7 +602,7 @@
         {
           "id": "w11_4_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -545,7 +611,7 @@
         {
           "id": "w11_4_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -554,7 +620,7 @@
         {
           "id": "w11_4_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -564,25 +630,25 @@
       "dialogues": [
         {
           "id": "d11_4_1",
-          "context": "Cooking practice",
+          "context": "Cooking",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb11_4_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_4_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_4_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -647,6 +713,16 @@
             "id": "m11_4_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_4_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_4_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_4_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D4"
       }
@@ -685,7 +773,7 @@
         {
           "id": "w11_5_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -694,7 +782,7 @@
         {
           "id": "w11_5_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -703,7 +791,7 @@
         {
           "id": "w11_5_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -712,7 +800,7 @@
         {
           "id": "w11_5_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -721,7 +809,7 @@
         {
           "id": "w11_5_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -731,25 +819,25 @@
       "dialogues": [
         {
           "id": "d11_5_1",
-          "context": "Technology practice",
+          "context": "Technology",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb11_5_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_5_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_5_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -814,6 +902,16 @@
             "id": "m11_5_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_5_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_5_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_5_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D5"
       }
@@ -852,7 +962,7 @@
         {
           "id": "w11_6_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -861,7 +971,7 @@
         {
           "id": "w11_6_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -870,7 +980,7 @@
         {
           "id": "w11_6_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -879,7 +989,7 @@
         {
           "id": "w11_6_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -888,7 +998,7 @@
         {
           "id": "w11_6_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -898,25 +1008,25 @@
       "dialogues": [
         {
           "id": "d11_6_1",
-          "context": "Weekend Plans practice",
+          "context": "Weekend Plans",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb11_6_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_6_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_6_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -981,6 +1091,16 @@
             "id": "m11_6_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_6_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_6_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_6_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D6"
       }
@@ -1019,7 +1151,7 @@
         {
           "id": "w11_7_1",
           "target": "Sport",
-          "phonetic": "স্পোর",
+          "phonetic": "ස්පොර්",
           "native_meaning": "ක්‍රීඩාව",
           "english": "Sport",
           "example_sentence_target": "Sport.",
@@ -1028,7 +1160,7 @@
         {
           "id": "w11_7_2",
           "target": "Musique",
-          "phonetic": "মু-জিক",
+          "phonetic": "මූ-සීක්",
           "native_meaning": "සංගීතය",
           "english": "Music",
           "example_sentence_target": "Musique.",
@@ -1037,7 +1169,7 @@
         {
           "id": "w11_7_3",
           "target": "Film",
-          "phonetic": "ফিলম",
+          "phonetic": "ෆිල්ම්",
           "native_meaning": "චිත්‍රපටිය",
           "english": "Movie",
           "example_sentence_target": "Film.",
@@ -1046,7 +1178,7 @@
         {
           "id": "w11_7_4",
           "target": "Livre",
-          "phonetic": "লিভ্র",
+          "phonetic": "ලීව්ර්",
           "native_meaning": "පොත",
           "english": "Book",
           "example_sentence_target": "Livre.",
@@ -1055,7 +1187,7 @@
         {
           "id": "w11_7_5",
           "target": "Cuisine",
-          "phonetic": "কুই-জিন",
+          "phonetic": "කූ-ඊ-සීන්",
           "native_meaning": "ආහාර පිසීම",
           "english": "Cooking",
           "example_sentence_target": "Cuisine.",
@@ -1065,25 +1197,25 @@
       "dialogues": [
         {
           "id": "d11_7_1",
-          "context": "Hobby Culture practice",
+          "context": "Hobby Culture",
           "lines": [
             {
               "speaker": "A",
               "target": "Sport!",
               "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "phonetic": "ස්පොර්"
             },
             {
               "speaker": "B",
               "target": "Sport! Musique!",
               "native": "ක්‍රීඩාව! සංගීතය!",
-              "phonetic": "স্পোর মু-জিক"
+              "phonetic": "ස්පොර් මූ-සීක්"
             },
             {
               "speaker": "A",
               "target": "Film!",
               "native": "චිත්‍රපටිය!",
-              "phonetic": "ফিলম"
+              "phonetic": "ෆිල්ම්"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Sport!",
-              "native": "ක්‍රීඩාව!",
-              "phonetic": "স্পোর"
+              "target": "Musique!",
+              "native": "සංගීතය!",
+              "phonetic": "මූ-සීක්"
             },
             {
               "speaker": "B",
-              "target": "Musique!",
-              "native": "සංගීතය!",
-              "phonetic": "মু-জিক"
+              "target": "Film!",
+              "native": "චිත්‍රපටිය!",
+              "phonetic": "ෆිල්ම්"
             },
             {
               "speaker": "A",
-              "target": "Musique! Film!",
-              "native": "සංගීතය! චිත්‍රපටිය!",
-              "phonetic": "মু-জিক ফিলম"
+              "target": "Livre! Cuisine!",
+              "native": "පොත! ආහාර පිසීම!",
+              "phonetic": "ලීව්ර් කූ-ඊ-සීන්"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb11_7_1",
-            "sentence": "___ means Sport in French",
+            "sentence": "___ means 'Sport' in French",
             "answer": "Sport",
             "hint": "ක්‍රීඩාව"
           },
           {
             "id": "fb11_7_2",
-            "sentence": "___ means Music in French",
+            "sentence": "___ means 'Music' in French",
             "answer": "Musique",
             "hint": "සංගීතය"
           },
           {
             "id": "fb11_7_3",
-            "sentence": "___ means Movie in French",
+            "sentence": "___ means 'Movie' in French",
             "answer": "Film",
             "hint": "චිත්‍රපටිය"
           }
@@ -1148,6 +1280,16 @@
             "id": "m11_7_3",
             "target": "Film",
             "native": "චිත්‍රපටිය"
+          },
+          {
+            "id": "m11_7_4",
+            "target": "Livre",
+            "native": "පොත"
+          },
+          {
+            "id": "m11_7_5",
+            "target": "Cuisine",
+            "native": "ආහාර පිසීම"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "පොත"
             ],
             "correct": 0,
-            "explanation": "'Sport' means ක්‍රීඩාව."
+            "explanation": "'Sport' means ක්‍රීඩාව in Sinhala."
+          },
+          {
+            "id": "mc11_7_2",
+            "question": "How do you say 'සංගීතය' in French?",
+            "options": [
+              "Sport",
+              "Musique",
+              "Film",
+              "Livre"
+            ],
+            "correct": 1,
+            "explanation": "'Musique' means සංගීතය."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ක්‍රිකට් ක්‍රීඩාව ජාතික ක්‍රීඩාව ලෙස ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ ක්‍රීඩා ශබ්ද බොහෝ ඉංග්‍රීසි ශබ්ද හා සමාන.",
+      "cultural_note": "ෆ්‍රාන්සයේ ෆුට්බෝල් (සෝකර්) ජනප්‍රිය ම ක්‍රීඩාවයි.",
+      "pronunciation_tip": "ප්‍රංශ '-tion' ශබ්දය — '-syon' ලෙස — nation = na-SYON.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D7"
       }

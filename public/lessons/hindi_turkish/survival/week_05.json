@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w5_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_1_1",
-          "context": "Left & Right practice",
+          "context": "Left & Right",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb5_1_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_1_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_1_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_1_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_1_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_1_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w5_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_2_1",
-          "context": "Asking Directions practice",
+          "context": "Asking Directions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb5_2_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_2_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_2_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_2_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_2_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_2_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w5_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_3_1",
-          "context": "Transport Stop practice",
+          "context": "Transport Stop",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb5_3_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_3_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_3_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_3_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_3_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_3_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w5_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_4_1",
-          "context": "On the Map practice",
+          "context": "On the Map",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb5_4_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_4_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_4_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_4_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_4_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_4_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w5_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_5_1",
-          "context": "Landmarks practice",
+          "context": "Landmarks",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb5_5_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_5_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_5_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_5_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_5_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_5_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w5_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_6_1",
-          "context": "Getting Lost practice",
+          "context": "Getting Lost",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb5_6_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_6_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_6_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_6_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_6_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_6_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w5_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Sol",
+          "phonetic": "Sol",
+          "native_meaning": "बाएं",
+          "english": "Left",
+          "example_sentence_target": "Sol.",
+          "example_sentence_native": "बाएं."
         },
         {
           "id": "w5_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Sağ",
+          "phonetic": "Sağ",
+          "native_meaning": "दाएं",
+          "english": "Right",
+          "example_sentence_target": "Sağ.",
+          "example_sentence_native": "दाएं."
         },
         {
           "id": "w5_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Düz git",
+          "phonetic": "Düz git",
+          "native_meaning": "सीधे",
+          "english": "Straight ahead",
+          "example_sentence_target": "Düz git.",
+          "example_sentence_native": "सीधे."
         },
         {
           "id": "w5_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Sokak",
+          "phonetic": "Sokak",
+          "native_meaning": "सड़क",
+          "english": "Street",
+          "example_sentence_target": "Sokak.",
+          "example_sentence_native": "सड़क."
         },
         {
           "id": "w5_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Durak",
+          "phonetic": "Durak",
+          "native_meaning": "रुको",
+          "english": "Stop",
+          "example_sentence_target": "Durak.",
+          "example_sentence_native": "रुको."
         }
       ],
       "dialogues": [
         {
           "id": "d5_7_1",
-          "context": "City Navigation practice",
+          "context": "City Navigation",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sol!",
+              "native": "बाएं!",
+              "phonetic": "Sol"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Sol! Sağ!",
+              "native": "बाएं! दाएं!",
+              "phonetic": "Sol Sağ"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Sağ!",
+              "native": "दाएं!",
+              "phonetic": "Sağ"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Düz git!",
+              "native": "सीधे!",
+              "phonetic": "Düz git"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Sokak! Durak!",
+              "native": "सड़क! रुको!",
+              "phonetic": "Sokak Durak"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb5_7_1",
-            "sentence": "___ means Hello in Turkish",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Left' in Turkish",
+            "answer": "Sol",
+            "hint": "बाएं"
           },
           {
             "id": "fb5_7_2",
-            "sentence": "___ means Thank you in Turkish",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Right' in Turkish",
+            "answer": "Sağ",
+            "hint": "दाएं"
           },
           {
             "id": "fb5_7_3",
-            "sentence": "___ means Goodbye in Turkish",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Straight ahead' in Turkish",
+            "answer": "Düz git",
+            "hint": "सीधे"
           }
         ],
         "matching": [
           {
             "id": "m5_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Sol",
+            "native": "बाएं"
           },
           {
             "id": "m5_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Sağ",
+            "native": "दाएं"
           },
           {
             "id": "m5_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Düz git",
+            "native": "सीधे"
+          },
+          {
+            "id": "m5_7_4",
+            "target": "Sokak",
+            "native": "सड़क"
+          },
+          {
+            "id": "m5_7_5",
+            "target": "Durak",
+            "native": "रुको"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sol' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "बाएं",
+              "दाएं",
+              "सीधे",
+              "सड़क"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Sol' means बाएं in Hindi."
+          },
+          {
+            "id": "mc5_7_2",
+            "question": "How do you say 'दाएं' in Turkish?",
+            "options": [
+              "Sol",
+              "Sağ",
+              "Düz git",
+              "Sokak"
+            ],
+            "correct": 1,
+            "explanation": "'Sağ' means दाएं."
           }
         ]
       },
-      "cultural_note": "भारतीय शहरों में GPS का उपयोग बहुत सहायक है।",
-      "pronunciation_tip": "फ्रांसीसी liaison (शब्द जोड़ना) पर ध्यान दें।",
+      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D7"
       }

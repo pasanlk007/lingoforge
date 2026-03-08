@@ -63,7 +63,7 @@
       "dialogues": [
         {
           "id": "d12_1_1",
-          "context": "Calling for Help practice",
+          "context": "Calling for Help",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb12_1_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_1_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_1_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -146,6 +146,16 @@
             "id": "m12_1_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_1_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_1_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_1_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D1"
       }
@@ -230,7 +252,7 @@
       "dialogues": [
         {
           "id": "d12_2_1",
-          "context": "Fire & Accident practice",
+          "context": "Fire & Accident",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb12_2_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_2_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_2_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -313,6 +335,16 @@
             "id": "m12_2_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_2_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_2_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_2_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D2"
       }
@@ -397,7 +441,7 @@
       "dialogues": [
         {
           "id": "d12_3_1",
-          "context": "Lost & Found practice",
+          "context": "Lost & Found",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb12_3_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_3_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_3_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -480,6 +524,16 @@
             "id": "m12_3_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_3_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_3_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_3_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D3"
       }
@@ -564,7 +630,7 @@
       "dialogues": [
         {
           "id": "d12_4_1",
-          "context": "Police Station practice",
+          "context": "Police Station",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb12_4_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_4_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_4_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -647,6 +713,16 @@
             "id": "m12_4_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_4_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_4_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_4_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D4"
       }
@@ -731,7 +819,7 @@
       "dialogues": [
         {
           "id": "d12_5_1",
-          "context": "Medical Emergency practice",
+          "context": "Medical Emergency",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb12_5_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_5_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_5_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -814,6 +902,16 @@
             "id": "m12_5_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_5_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_5_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_5_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D5"
       }
@@ -898,7 +1008,7 @@
       "dialogues": [
         {
           "id": "d12_6_1",
-          "context": "Natural Disaster practice",
+          "context": "Natural Disaster",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb12_6_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_6_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_6_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -981,6 +1091,16 @@
             "id": "m12_6_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_6_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_6_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_6_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D6"
       }
@@ -1065,7 +1197,7 @@
       "dialogues": [
         {
           "id": "d12_7_1",
-          "context": "Safety Tips practice",
+          "context": "Safety Tips",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Urgence!",
-              "native": "ہنگامی!",
-              "phonetic": "اُر-جاس"
-            },
-            {
-              "speaker": "B",
               "target": "Police!",
               "native": "پولیس!",
               "phonetic": "پو-لِس"
             },
             {
+              "speaker": "B",
+              "target": "Ambulance!",
+              "native": "ایمبولینس!",
+              "phonetic": "آم-بو-لاس"
+            },
+            {
               "speaker": "A",
-              "target": "Police! Ambulance!",
-              "native": "پولیس! ایمبولینس!",
-              "phonetic": "پو-لِس آم-بو-لاس"
+              "target": "Feu! Aide!",
+              "native": "آگ! مدد!",
+              "phonetic": "فو ایڈ"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb12_7_1",
-            "sentence": "___ means Emergency in French",
+            "sentence": "___ means 'Emergency' in French",
             "answer": "Urgence",
             "hint": "ہنگامی"
           },
           {
             "id": "fb12_7_2",
-            "sentence": "___ means Police in French",
+            "sentence": "___ means 'Police' in French",
             "answer": "Police",
             "hint": "پولیس"
           },
           {
             "id": "fb12_7_3",
-            "sentence": "___ means Ambulance in French",
+            "sentence": "___ means 'Ambulance' in French",
             "answer": "Ambulance",
             "hint": "ایمبولینس"
           }
@@ -1148,6 +1280,16 @@
             "id": "m12_7_3",
             "target": "Ambulance",
             "native": "ایمبولینس"
+          },
+          {
+            "id": "m12_7_4",
+            "target": "Feu",
+            "native": "آگ"
+          },
+          {
+            "id": "m12_7_5",
+            "target": "Aide",
+            "native": "مدد"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "آگ"
             ],
             "correct": 0,
-            "explanation": "'Urgence' means ہنگامی."
+            "explanation": "'Urgence' means ہنگامی in Urdu."
+          },
+          {
+            "id": "mc12_7_2",
+            "question": "How do you say 'پولیس' in French?",
+            "options": [
+              "Urgence",
+              "Police",
+              "Ambulance",
+              "Feu"
+            ],
+            "correct": 1,
+            "explanation": "'Police' means پولیس."
           }
         ]
       },
-      "cultural_note": "پاکستان میں ہنگامی نمبر 1122 ہے۔",
-      "pronunciation_tip": "ہنگامی الفاظ یاد کرنا ضروری ہے!",
+      "cultural_note": "فرانس میں یورپی ہنگامی نمبر 112 بھی کام کرتا ہے۔",
+      "pronunciation_tip": "فرانسیسی '-tion' = '-syon' — nation = na-SYON۔",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D7"
       }

@@ -17,7 +17,7 @@
         {
           "id": "w3_1_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -26,7 +26,7 @@
         {
           "id": "w3_1_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -35,7 +35,7 @@
         {
           "id": "w3_1_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -44,7 +44,7 @@
         {
           "id": "w3_1_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -53,7 +53,7 @@
         {
           "id": "w3_1_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -63,25 +63,25 @@
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -146,6 +146,16 @@
             "id": "m3_1_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -184,7 +206,7 @@
         {
           "id": "w3_2_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -193,7 +215,7 @@
         {
           "id": "w3_2_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -202,7 +224,7 @@
         {
           "id": "w3_2_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -211,7 +233,7 @@
         {
           "id": "w3_2_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -220,7 +242,7 @@
         {
           "id": "w3_2_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -230,25 +252,25 @@
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -313,6 +335,16 @@
             "id": "m3_2_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -351,7 +395,7 @@
         {
           "id": "w3_3_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -360,7 +404,7 @@
         {
           "id": "w3_3_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -369,7 +413,7 @@
         {
           "id": "w3_3_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -378,7 +422,7 @@
         {
           "id": "w3_3_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -387,7 +431,7 @@
         {
           "id": "w3_3_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -397,25 +441,25 @@
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -480,6 +524,16 @@
             "id": "m3_3_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -518,7 +584,7 @@
         {
           "id": "w3_4_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -527,7 +593,7 @@
         {
           "id": "w3_4_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -536,7 +602,7 @@
         {
           "id": "w3_4_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -545,7 +611,7 @@
         {
           "id": "w3_4_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -554,7 +620,7 @@
         {
           "id": "w3_4_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -564,25 +630,25 @@
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -647,6 +713,16 @@
             "id": "m3_4_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -685,7 +773,7 @@
         {
           "id": "w3_5_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -694,7 +782,7 @@
         {
           "id": "w3_5_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -703,7 +791,7 @@
         {
           "id": "w3_5_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -712,7 +800,7 @@
         {
           "id": "w3_5_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -721,7 +809,7 @@
         {
           "id": "w3_5_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -731,25 +819,25 @@
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -814,6 +902,16 @@
             "id": "m3_5_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -852,7 +962,7 @@
         {
           "id": "w3_6_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -861,7 +971,7 @@
         {
           "id": "w3_6_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -870,7 +980,7 @@
         {
           "id": "w3_6_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -879,7 +989,7 @@
         {
           "id": "w3_6_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -888,7 +998,7 @@
         {
           "id": "w3_6_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -898,25 +1008,25 @@
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -981,6 +1091,16 @@
             "id": "m3_6_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1019,7 +1151,7 @@
         {
           "id": "w3_7_1",
           "target": "Médecin",
-          "phonetic": "মে-দ্-সাঁ",
+          "phonetic": "මේ-ද-සාං",
           "native_meaning": "වෛද්‍යවරයා",
           "english": "Doctor",
           "example_sentence_target": "Médecin.",
@@ -1028,7 +1160,7 @@
         {
           "id": "w3_7_2",
           "target": "Hôpital",
-          "phonetic": "ও-পি-তাল",
+          "phonetic": "ඕ-පී-තාල්",
           "native_meaning": "රෝහල",
           "english": "Hospital",
           "example_sentence_target": "Hôpital.",
@@ -1037,7 +1169,7 @@
         {
           "id": "w3_7_3",
           "target": "Douleur",
-          "phonetic": "দূ-লোর",
+          "phonetic": "දූ-ලොර්",
           "native_meaning": "වේදනාව",
           "english": "Pain",
           "example_sentence_target": "Douleur.",
@@ -1046,7 +1178,7 @@
         {
           "id": "w3_7_4",
           "target": "Médicament",
-          "phonetic": "মে-দি-কা-মাঁ",
+          "phonetic": "මේ-දී-කා-මාං",
           "native_meaning": "බෙහෙත",
           "english": "Medicine",
           "example_sentence_target": "Médicament.",
@@ -1055,7 +1187,7 @@
         {
           "id": "w3_7_5",
           "target": "Malade",
-          "phonetic": "মা-লাদ",
+          "phonetic": "මා-ලාද්",
           "native_meaning": "අසනීප",
           "english": "Sick",
           "example_sentence_target": "Malade.",
@@ -1065,25 +1197,25 @@
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
               "target": "Médecin!",
               "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "phonetic": "මේ-ද-සාං"
             },
             {
               "speaker": "B",
               "target": "Médecin! Hôpital!",
               "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "মে-দ্-সাঁ ও-পি-তাল"
+              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
             },
             {
               "speaker": "A",
               "target": "Douleur!",
               "native": "වේදනාව!",
-              "phonetic": "দূ-লোর"
+              "phonetic": "දූ-ලොර්"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "মে-দ্-সাঁ"
+              "target": "Hôpital!",
+              "native": "රෝහල!",
+              "phonetic": "ඕ-පී-තාල්"
             },
             {
               "speaker": "B",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ও-পি-তাল"
+              "target": "Douleur!",
+              "native": "වේදනාව!",
+              "phonetic": "දූ-ලොර්"
             },
             {
               "speaker": "A",
-              "target": "Hôpital! Douleur!",
-              "native": "රෝහල! වේදනාව!",
-              "phonetic": "ও-পি-তাল দূ-লোর"
+              "target": "Médicament! Malade!",
+              "native": "බෙහෙත! අසනීප!",
+              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Doctor in French",
+            "sentence": "___ means 'Doctor' in French",
             "answer": "Médecin",
             "hint": "වෛද්‍යවරයා"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Hospital in French",
+            "sentence": "___ means 'Hospital' in French",
             "answer": "Hôpital",
             "hint": "රෝහල"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Pain in French",
+            "sentence": "___ means 'Pain' in French",
             "answer": "Douleur",
             "hint": "වේදනාව"
           }
@@ -1148,6 +1280,16 @@
             "id": "m3_7_3",
             "target": "Douleur",
             "native": "වේදනාව"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "Médicament",
+            "native": "බෙහෙත"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "Malade",
+            "native": "අසනීප"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "බෙහෙත"
             ],
             "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා."
+            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'රෝහල' in French?",
+            "options": [
+              "Médecin",
+              "Hôpital",
+              "Douleur",
+              "Médicament"
+            ],
+            "correct": 1,
+            "explanation": "'Hôpital' means රෝහල."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ ආයුර්වේද වෛද්‍ය ක්‍රමය ඉතා ජනප්‍රියයි.",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද (an, on, in) ප්‍රවේශමෙන් ඉගෙන ගන්න.",
+      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
+      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

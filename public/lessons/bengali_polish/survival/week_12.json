@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w12_1_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_1_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_1_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_1_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_1_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_1_1",
-          "context": "Calling for Help practice",
+          "context": "Calling for Help",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb12_1_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_1_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_1_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_1_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_1_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_1_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_1_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_1_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_1_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w12_2_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_2_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_2_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_2_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_2_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_2_1",
-          "context": "Fire & Accident practice",
+          "context": "Fire & Accident",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb12_2_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_2_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_2_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_2_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_2_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_2_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_2_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_2_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_2_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w12_3_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_3_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_3_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_3_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_3_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_3_1",
-          "context": "Lost & Found practice",
+          "context": "Lost & Found",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb12_3_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_3_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_3_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_3_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_3_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_3_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_3_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_3_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_3_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w12_4_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_4_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_4_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_4_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_4_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_4_1",
-          "context": "Police Station practice",
+          "context": "Police Station",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb12_4_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_4_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_4_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_4_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_4_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_4_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_4_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_4_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_4_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w12_5_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_5_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_5_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_5_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_5_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_5_1",
-          "context": "Medical Emergency practice",
+          "context": "Medical Emergency",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb12_5_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_5_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_5_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_5_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_5_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_5_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_5_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_5_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_5_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w12_6_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_6_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_6_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_6_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_6_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_6_1",
-          "context": "Natural Disaster practice",
+          "context": "Natural Disaster",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb12_6_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_6_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_6_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_6_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_6_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_6_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_6_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_6_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_6_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w12_7_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Nagły wypadek",
+          "phonetic": "Nagły wypadek",
+          "native_meaning": "জরুরি",
+          "english": "Emergency",
+          "example_sentence_target": "Nagły wypadek.",
+          "example_sentence_native": "জরুরি."
         },
         {
           "id": "w12_7_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Policja",
+          "phonetic": "Policja",
+          "native_meaning": "পুলিশ",
+          "english": "Police",
+          "example_sentence_target": "Policja.",
+          "example_sentence_native": "পুলিশ."
         },
         {
           "id": "w12_7_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Karetka",
+          "phonetic": "Karetka",
+          "native_meaning": "অ্যাম্বুলেন্স",
+          "english": "Ambulance",
+          "example_sentence_target": "Karetka.",
+          "example_sentence_native": "অ্যাম্বুলেন্স."
         },
         {
           "id": "w12_7_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Pożar",
+          "phonetic": "Pożar",
+          "native_meaning": "আগুন",
+          "english": "Fire",
+          "example_sentence_target": "Pożar.",
+          "example_sentence_native": "আগুন."
         },
         {
           "id": "w12_7_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Pomoc",
+          "phonetic": "Pomoc",
+          "native_meaning": "সাহায্য",
+          "english": "Help",
+          "example_sentence_target": "Pomoc.",
+          "example_sentence_native": "সাহায্য."
         }
       ],
       "dialogues": [
         {
           "id": "d12_7_1",
-          "context": "Safety Tips practice",
+          "context": "Safety Tips",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Nagły wypadek!",
+              "native": "জরুরি!",
+              "phonetic": "Nagły wypadek"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Nagły wypadek! Policja!",
+              "native": "জরুরি! পুলিশ!",
+              "phonetic": "Nagły wypadek Policja"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Policja!",
+              "native": "পুলিশ!",
+              "phonetic": "Policja"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Karetka!",
+              "native": "অ্যাম্বুলেন্স!",
+              "phonetic": "Karetka"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Pożar! Pomoc!",
+              "native": "আগুন! সাহায্য!",
+              "phonetic": "Pożar Pomoc"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb12_7_1",
-            "sentence": "___ means Hello in Polish",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Emergency' in Polish",
+            "answer": "Nagły wypadek",
+            "hint": "জরুরি"
           },
           {
             "id": "fb12_7_2",
-            "sentence": "___ means Thank you in Polish",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Police' in Polish",
+            "answer": "Policja",
+            "hint": "পুলিশ"
           },
           {
             "id": "fb12_7_3",
-            "sentence": "___ means Goodbye in Polish",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'Ambulance' in Polish",
+            "answer": "Karetka",
+            "hint": "অ্যাম্বুলেন্স"
           }
         ],
         "matching": [
           {
             "id": "m12_7_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Nagły wypadek",
+            "native": "জরুরি"
           },
           {
             "id": "m12_7_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Policja",
+            "native": "পুলিশ"
           },
           {
             "id": "m12_7_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Karetka",
+            "native": "অ্যাম্বুলেন্স"
+          },
+          {
+            "id": "m12_7_4",
+            "target": "Pożar",
+            "native": "আগুন"
+          },
+          {
+            "id": "m12_7_5",
+            "target": "Pomoc",
+            "native": "সাহায্য"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Nagły wypadek' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "জরুরি",
+              "পুলিশ",
+              "অ্যাম্বুলেন্স",
+              "আগুন"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Nagły wypadek' means জরুরি in Bengali."
+          },
+          {
+            "id": "mc12_7_2",
+            "question": "How do you say 'পুলিশ' in Polish?",
+            "options": [
+              "Nagły wypadek",
+              "Policja",
+              "Karetka",
+              "Pożar"
+            ],
+            "correct": 1,
+            "explanation": "'Policja' means পুলিশ."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশে জরুরি নম্বর 999।",
-      "pronunciation_tip": "জরুরি শব্দ মনে রাখা প্রয়োজন!",
+      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D7"
       }

@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w6_1_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_1_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_1_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_1_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_1_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_1_1",
-          "context": "At the Restaurant practice",
+          "context": "At the Restaurant",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb6_1_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_1_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_1_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_1_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_1_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_1_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_1_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_1_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_1_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w6_2_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_2_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_2_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_2_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_2_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_2_1",
-          "context": "Ordering Food practice",
+          "context": "Ordering Food",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb6_2_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_2_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_2_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_2_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_2_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_2_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_2_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_2_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_2_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w6_3_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_3_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_3_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_3_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_3_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_3_1",
-          "context": "Food Vocabulary practice",
+          "context": "Food Vocabulary",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb6_3_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_3_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_3_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_3_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_3_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_3_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_3_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_3_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_3_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w6_4_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_4_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_4_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_4_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_4_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_4_1",
-          "context": "Dietary Needs practice",
+          "context": "Dietary Needs",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb6_4_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_4_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_4_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_4_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_4_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_4_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_4_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_4_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_4_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w6_5_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_5_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_5_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_5_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_5_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_5_1",
-          "context": "Paying the Bill practice",
+          "context": "Paying the Bill",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb6_5_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_5_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_5_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_5_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_5_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_5_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_5_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_5_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_5_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w6_6_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_6_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_6_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_6_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_6_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_6_1",
-          "context": "Street Food practice",
+          "context": "Street Food",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb6_6_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_6_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_6_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_6_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_6_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_6_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_6_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_6_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_6_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w6_7_1",
-          "target": "Hello",
-          "phonetic": "হে-লো",
-          "native_meaning": "হ্যালো",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "হ্যালো."
+          "target": "Restaurant",
+          "phonetic": "Restaurant",
+          "native_meaning": "রেস্তোরাঁ",
+          "english": "Restaurant",
+          "example_sentence_target": "Restaurant.",
+          "example_sentence_native": "রেস্তোরাঁ."
         },
         {
           "id": "w6_7_2",
-          "target": "Thank you",
-          "phonetic": "থ্যাংক-ইউ",
-          "native_meaning": "ধন্যবাদ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "ধন্যবাদ."
+          "target": "Menu",
+          "phonetic": "Menu",
+          "native_meaning": "মেনু",
+          "english": "Menu",
+          "example_sentence_target": "Menu.",
+          "example_sentence_native": "মেনু."
         },
         {
           "id": "w6_7_3",
-          "target": "Goodbye",
-          "phonetic": "গুড-বাই",
-          "native_meaning": "বিদায়",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "বিদায়."
+          "target": "Bestellen",
+          "phonetic": "Bestellen",
+          "native_meaning": "অর্ডার করুন",
+          "english": "To order",
+          "example_sentence_target": "Bestellen.",
+          "example_sentence_native": "অর্ডার করুন."
         },
         {
           "id": "w6_7_4",
-          "target": "Yes",
-          "phonetic": "ইয়েস",
-          "native_meaning": "হ্যাঁ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "হ্যাঁ."
+          "target": "Rekening",
+          "phonetic": "Rekening",
+          "native_meaning": "বিল",
+          "english": "Bill",
+          "example_sentence_target": "Rekening.",
+          "example_sentence_native": "বিল."
         },
         {
           "id": "w6_7_5",
-          "target": "No",
-          "phonetic": "নো",
-          "native_meaning": "না",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "না."
+          "target": "Lekker",
+          "phonetic": "Lekker",
+          "native_meaning": "সুস্বাদু",
+          "english": "Delicious",
+          "example_sentence_target": "Lekker.",
+          "example_sentence_native": "সুস্বাদু."
         }
       ],
       "dialogues": [
         {
           "id": "d6_7_1",
-          "context": "Food Culture practice",
+          "context": "Food Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Restaurant!",
+              "native": "রেস্তোরাঁ!",
+              "phonetic": "Restaurant"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "হ্যালো! ধন্যবাদ!",
-              "phonetic": "হে-লো থ্যাংক-ইউ"
+              "target": "Restaurant! Menu!",
+              "native": "রেস্তোরাঁ! মেনু!",
+              "phonetic": "Restaurant Menu"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "বিদায়!",
-              "phonetic": "গুড-বাই"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "হ্যালো!",
-              "phonetic": "হে-লো"
+              "target": "Menu!",
+              "native": "মেনু!",
+              "phonetic": "Menu"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "ধন্যবাদ!",
-              "phonetic": "থ্যাংক-ইউ"
+              "target": "Bestellen!",
+              "native": "অর্ডার করুন!",
+              "phonetic": "Bestellen"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "ধন্যবাদ! বিদায়!",
-              "phonetic": "থ্যাংক-ইউ গুড-বাই"
+              "target": "Rekening! Lekker!",
+              "native": "বিল! সুস্বাদু!",
+              "phonetic": "Rekening Lekker"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb6_7_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "হ্যালো"
+            "sentence": "___ means 'Restaurant' in Dutch",
+            "answer": "Restaurant",
+            "hint": "রেস্তোরাঁ"
           },
           {
             "id": "fb6_7_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "ধন্যবাদ"
+            "sentence": "___ means 'Menu' in Dutch",
+            "answer": "Menu",
+            "hint": "মেনু"
           },
           {
             "id": "fb6_7_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "বিদায়"
+            "sentence": "___ means 'To order' in Dutch",
+            "answer": "Bestellen",
+            "hint": "অর্ডার করুন"
           }
         ],
         "matching": [
           {
             "id": "m6_7_1",
-            "target": "Hello",
-            "native": "হ্যালো"
+            "target": "Restaurant",
+            "native": "রেস্তোরাঁ"
           },
           {
             "id": "m6_7_2",
-            "target": "Thank you",
-            "native": "ধন্যবাদ"
+            "target": "Menu",
+            "native": "মেনু"
           },
           {
             "id": "m6_7_3",
-            "target": "Goodbye",
-            "native": "বিদায়"
+            "target": "Bestellen",
+            "native": "অর্ডার করুন"
+          },
+          {
+            "id": "m6_7_4",
+            "target": "Rekening",
+            "native": "বিল"
+          },
+          {
+            "id": "m6_7_5",
+            "target": "Lekker",
+            "native": "সুস্বাদু"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc6_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Restaurant' mean?",
             "options": [
-              "হ্যালো",
-              "ধন্যবাদ",
-              "বিদায়",
-              "হ্যাঁ"
+              "রেস্তোরাঁ",
+              "মেনু",
+              "অর্ডার করুন",
+              "বিল"
             ],
             "correct": 0,
-            "explanation": "'Hello' means হ্যালো."
+            "explanation": "'Restaurant' means রেস্তোরাঁ in Bengali."
+          },
+          {
+            "id": "mc6_7_2",
+            "question": "How do you say 'মেনু' in Dutch?",
+            "options": [
+              "Restaurant",
+              "Menu",
+              "Bestellen",
+              "Rekening"
+            ],
+            "correct": 1,
+            "explanation": "'Menu' means মেনু."
           }
         ]
       },
-      "cultural_note": "বাংলাদেশি খাবার তার বৈচিত্র্য এবং মশলার জন্য বিখ্যাত।",
-      "pronunciation_tip": "ফরাসি 'u' গোল ঠোঁটে উচ্চারিত হয়।",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 6 focus: Food & Restaurants.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
         "badge": "W6D7"
       }

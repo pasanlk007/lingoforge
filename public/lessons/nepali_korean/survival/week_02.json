@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w2_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_1_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_1_1",
-          "context": "Office Vocabulary practice",
+          "context": "Office Vocabulary",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb2_1_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_1_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_1_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_1_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_1_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_1_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_1_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w2_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_2_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_2_1",
-          "context": "Work Phrases practice",
+          "context": "Work Phrases",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb2_2_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_2_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_2_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_2_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_2_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_2_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_2_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w2_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_3_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_3_1",
-          "context": "Email & Phone practice",
+          "context": "Email & Phone",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb2_3_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_3_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_3_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_3_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_3_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_3_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_3_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w2_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_4_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_4_1",
-          "context": "Meetings practice",
+          "context": "Meetings",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb2_4_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_4_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_4_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_4_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_4_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_4_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_4_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w2_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_5_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_5_1",
-          "context": "Job Titles practice",
+          "context": "Job Titles",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb2_5_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_5_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_5_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_5_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_5_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_5_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_5_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w2_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_6_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_6_1",
-          "context": "Working Hours practice",
+          "context": "Working Hours",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb2_6_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_6_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_6_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_6_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_6_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_6_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_6_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w2_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "일",
+          "phonetic": "il",
+          "native_meaning": "काम",
+          "english": "Work",
+          "example_sentence_target": "일.",
+          "example_sentence_native": "काम."
         },
         {
           "id": "w2_7_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "사무실",
+          "phonetic": "sa-mu-SIL",
+          "native_meaning": "कार्यालय",
+          "english": "Office",
+          "example_sentence_target": "사무실.",
+          "example_sentence_native": "कार्यालय."
         },
         {
           "id": "w2_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "회의",
+          "phonetic": "hwe-EE",
+          "native_meaning": "बैठक",
+          "english": "Meeting",
+          "example_sentence_target": "회의.",
+          "example_sentence_native": "बैठक."
         },
         {
           "id": "w2_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "동료",
+          "phonetic": "dong-RYO",
+          "native_meaning": "सहकर्मी",
+          "english": "Colleague",
+          "example_sentence_target": "동료.",
+          "example_sentence_native": "सहकर्मी."
         },
         {
           "id": "w2_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "상사",
+          "phonetic": "sang-SA",
+          "native_meaning": "बस",
+          "english": "Boss",
+          "example_sentence_target": "상사.",
+          "example_sentence_native": "बस."
         }
       ],
       "dialogues": [
         {
           "id": "d2_7_1",
-          "context": "Work Culture practice",
+          "context": "Work Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "일!",
+              "native": "काम!",
+              "phonetic": "il"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "일! 사무실!",
+              "native": "काम! कार्यालय!",
+              "phonetic": "il sa-mu-SIL"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "사무실!",
+              "native": "कार्यालय!",
+              "phonetic": "sa-mu-SIL"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "회의!",
+              "native": "बैठक!",
+              "phonetic": "hwe-EE"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "동료! 상사!",
+              "native": "सहकर्मी! बस!",
+              "phonetic": "dong-RYO sang-SA"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb2_7_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Work' in Korean",
+            "answer": "일",
+            "hint": "काम"
           },
           {
             "id": "fb2_7_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Office' in Korean",
+            "answer": "사무실",
+            "hint": "कार्यालय"
           },
           {
             "id": "fb2_7_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Meeting' in Korean",
+            "answer": "회의",
+            "hint": "बैठक"
           }
         ],
         "matching": [
           {
             "id": "m2_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "일",
+            "native": "काम"
           },
           {
             "id": "m2_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "사무실",
+            "native": "कार्यालय"
           },
           {
             "id": "m2_7_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "회의",
+            "native": "बैठक"
+          },
+          {
+            "id": "m2_7_4",
+            "target": "동료",
+            "native": "सहकर्मी"
+          },
+          {
+            "id": "m2_7_5",
+            "target": "상사",
+            "native": "बस"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc2_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '일' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "काम",
+              "कार्यालय",
+              "बैठक",
+              "सहकर्मी"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'일' means काम in Nepali."
+          },
+          {
+            "id": "mc2_7_2",
+            "question": "How do you say 'कार्यालय' in Korean?",
+            "options": [
+              "일",
+              "사무실",
+              "회의",
+              "동료"
+            ],
+            "correct": 1,
+            "explanation": "'사무실' means कार्यालय."
           }
         ]
       },
-      "cultural_note": "नेपाली कार्यालयहरूमा वरिष्ठहरूलाई सम्मान गर्नु महत्त्वपूर्ण छ।",
-      "pronunciation_tip": "फ्रान्सेली 'r' को आवाज गलाबाट निस्कन्छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 110,
         "streak_bonus": 20,
         "badge": "W2D7"
       }

@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w12_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_1_1",
-          "context": "Calling for Help practice",
+          "context": "Calling for Help",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb12_1_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_1_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_1_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_1_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_1_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_1_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w12_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_2_1",
-          "context": "Fire & Accident practice",
+          "context": "Fire & Accident",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb12_2_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_2_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_2_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_2_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_2_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_2_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w12_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_3_1",
-          "context": "Lost & Found practice",
+          "context": "Lost & Found",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb12_3_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_3_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_3_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_3_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_3_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_3_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w12_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_4_1",
-          "context": "Police Station practice",
+          "context": "Police Station",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb12_4_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_4_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_4_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_4_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_4_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_4_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w12_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_5_1",
-          "context": "Medical Emergency practice",
+          "context": "Medical Emergency",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb12_5_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_5_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_5_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_5_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_5_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_5_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w12_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_6_1",
-          "context": "Natural Disaster practice",
+          "context": "Natural Disaster",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb12_6_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_6_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_6_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_6_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_6_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_6_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w12_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "அவசரநிலை",
+          "phonetic": "அவசரநிலை",
+          "native_meaning": "आपातकाल",
+          "english": "Emergency",
+          "example_sentence_target": "அவசரநிலை.",
+          "example_sentence_native": "आपातकाल."
         },
         {
           "id": "w12_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "காவல்துறை",
+          "phonetic": "காவல்துறை",
+          "native_meaning": "पुलिस",
+          "english": "Police",
+          "example_sentence_target": "காவல்துறை.",
+          "example_sentence_native": "पुलिस."
         },
         {
           "id": "w12_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "ஆம்புலன்ஸ்",
+          "phonetic": "ஆம்புலன்ஸ்",
+          "native_meaning": "एम्बुलेंस",
+          "english": "Ambulance",
+          "example_sentence_target": "ஆம்புலன்ஸ்.",
+          "example_sentence_native": "एम्बुलेंस."
         },
         {
           "id": "w12_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "தீ",
+          "phonetic": "தீ",
+          "native_meaning": "आग",
+          "english": "Fire",
+          "example_sentence_target": "தீ.",
+          "example_sentence_native": "आग."
         },
         {
           "id": "w12_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "உதவி",
+          "phonetic": "உதவி",
+          "native_meaning": "मदद",
+          "english": "Help",
+          "example_sentence_target": "உதவி.",
+          "example_sentence_native": "मदद."
         }
       ],
       "dialogues": [
         {
           "id": "d12_7_1",
-          "context": "Safety Tips practice",
+          "context": "Safety Tips",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "அவசரநிலை!",
+              "native": "आपातकाल!",
+              "phonetic": "அவசரநிலை"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "அவசரநிலை! காவல்துறை!",
+              "native": "आपातकाल! पुलिस!",
+              "phonetic": "அவசரநிலை காவல்துறை"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "காவல்துறை!",
+              "native": "पुलिस!",
+              "phonetic": "காவல்துறை"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "ஆம்புலன்ஸ்!",
+              "native": "एम्बुलेंस!",
+              "phonetic": "ஆம்புலன்ஸ்"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "தீ! உதவி!",
+              "native": "आग! मदद!",
+              "phonetic": "தீ உதவி"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb12_7_1",
-            "sentence": "___ means Hello in Tamil",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Emergency' in Tamil",
+            "answer": "அவசரநிலை",
+            "hint": "आपातकाल"
           },
           {
             "id": "fb12_7_2",
-            "sentence": "___ means Thank you in Tamil",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Police' in Tamil",
+            "answer": "காவல்துறை",
+            "hint": "पुलिस"
           },
           {
             "id": "fb12_7_3",
-            "sentence": "___ means Goodbye in Tamil",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Ambulance' in Tamil",
+            "answer": "ஆம்புலன்ஸ்",
+            "hint": "एम्बुलेंस"
           }
         ],
         "matching": [
           {
             "id": "m12_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "அவசரநிலை",
+            "native": "आपातकाल"
           },
           {
             "id": "m12_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "காவல்துறை",
+            "native": "पुलिस"
           },
           {
             "id": "m12_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "ஆம்புலன்ஸ்",
+            "native": "एम्बुलेंस"
+          },
+          {
+            "id": "m12_7_4",
+            "target": "தீ",
+            "native": "आग"
+          },
+          {
+            "id": "m12_7_5",
+            "target": "உதவி",
+            "native": "मदद"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc12_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'அவசரநிலை' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "आपातकाल",
+              "पुलिस",
+              "एम्बुलेंस",
+              "आग"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'அவசரநிலை' means आपातकाल in Hindi."
+          },
+          {
+            "id": "mc12_7_2",
+            "question": "How do you say 'पुलिस' in Tamil?",
+            "options": [
+              "அவசரநிலை",
+              "காவல்துறை",
+              "ஆம்புலன்ஸ்",
+              "தீ"
+            ],
+            "correct": 1,
+            "explanation": "'காவல்துறை' means पुलिस."
           }
         ]
       },
-      "cultural_note": "भारत में आपातकालीन नंबर 112 है।",
-      "pronunciation_tip": "आपातकालीन शब्द याद करना ज़रूरी है!",
+      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 12 focus: Emergency & Safety.",
+      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 210,
         "streak_bonus": 20,
         "badge": "W12D7"
       }

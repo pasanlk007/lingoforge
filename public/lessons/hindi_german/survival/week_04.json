@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w4_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w4_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w4_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w4_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w4_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w4_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Stunde",
+          "phonetic": "श्टुन-दे",
+          "native_meaning": "घंटा",
+          "english": "Hour",
+          "example_sentence_target": "Stunde.",
+          "example_sentence_native": "घंटा."
         },
         {
           "id": "w4_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Minute",
+          "phonetic": "मि-नु-ते",
+          "native_meaning": "मिनट",
+          "english": "Minute",
+          "example_sentence_target": "Minute.",
+          "example_sentence_native": "मिनट."
         },
         {
           "id": "w4_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Heute",
+          "phonetic": "होय-ते",
+          "native_meaning": "आज",
+          "english": "Today",
+          "example_sentence_target": "Heute.",
+          "example_sentence_native": "आज."
         },
         {
           "id": "w4_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Morgen",
+          "phonetic": "मोर-गेन",
+          "native_meaning": "कल",
+          "english": "Tomorrow",
+          "example_sentence_target": "Morgen.",
+          "example_sentence_native": "कल."
         },
         {
           "id": "w4_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Gestern",
+          "phonetic": "गेस-तेर्न",
+          "native_meaning": "कल",
+          "english": "Yesterday",
+          "example_sentence_target": "Gestern.",
+          "example_sentence_native": "कल."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Stunde!",
+              "native": "घंटा!",
+              "phonetic": "श्टुन-दे"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Stunde! Minute!",
+              "native": "घंटा! मिनट!",
+              "phonetic": "श्टुन-दे मि-नु-ते"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Minute!",
+              "native": "मिनट!",
+              "phonetic": "मि-नु-ते"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Heute!",
+              "native": "आज!",
+              "phonetic": "होय-ते"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Morgen! Gestern!",
+              "native": "कल! कल!",
+              "phonetic": "मोर-गेन गेस-तेर्न"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hello in German",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Hour' in German",
+            "answer": "Stunde",
+            "hint": "घंटा"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Thank you in German",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Minute' in German",
+            "answer": "Minute",
+            "hint": "मिनट"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Goodbye in German",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Today' in German",
+            "answer": "Heute",
+            "hint": "आज"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Stunde",
+            "native": "घंटा"
           },
           {
             "id": "m4_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Minute",
+            "native": "मिनट"
           },
           {
             "id": "m4_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Heute",
+            "native": "आज"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Morgen",
+            "native": "कल"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Gestern",
+            "native": "कल"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Stunde' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "घंटा",
+              "मिनट",
+              "आज",
+              "कल"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Stunde' means घंटा in Hindi."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'मिनट' in German?",
+            "options": [
+              "Stunde",
+              "Minute",
+              "Heute",
+              "Morgen"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means मिनट."
           }
         ]
       },
-      "cultural_note": "भारत में 'IST' यानी भारतीय मानक समय UTC+5:30 है।",
-      "pronunciation_tip": "फ्रांसीसी उच्चारण में stress अंत में होती है।",
+      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

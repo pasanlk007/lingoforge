@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w11_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_1_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_1_1",
-          "context": "Sports & Games practice",
+          "context": "Sports & Games",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb11_1_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_1_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_1_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_1_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_1_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_1_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_1_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w11_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_2_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_2_1",
-          "context": "Music & Arts practice",
+          "context": "Music & Arts",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb11_2_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_2_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_2_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_2_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_2_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_2_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_2_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w11_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_3_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_3_1",
-          "context": "Reading & Movies practice",
+          "context": "Reading & Movies",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb11_3_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_3_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_3_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_3_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_3_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_3_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_3_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w11_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_4_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_4_1",
-          "context": "Cooking practice",
+          "context": "Cooking",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb11_4_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_4_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_4_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_4_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_4_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_4_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_4_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w11_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_5_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_5_1",
-          "context": "Technology practice",
+          "context": "Technology",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb11_5_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_5_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_5_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_5_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_5_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_5_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_5_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w11_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_6_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_6_1",
-          "context": "Weekend Plans practice",
+          "context": "Weekend Plans",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb11_6_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_6_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_6_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_6_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_6_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_6_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_6_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w11_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "스포츠",
+          "phonetic": "seu-PO-cheu",
+          "native_meaning": "खेल",
+          "english": "Sport",
+          "example_sentence_target": "스포츠.",
+          "example_sentence_native": "खेल."
         },
         {
           "id": "w11_7_2",
-          "target": "Thank you",
-          "phonetic": "थ्याँक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "음악",
+          "phonetic": "eu-MAK",
+          "native_meaning": "संगीत",
+          "english": "Music",
+          "example_sentence_target": "음악.",
+          "example_sentence_native": "संगीत."
         },
         {
           "id": "w11_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "बिदाइ",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "बिदाइ."
+          "target": "영화",
+          "phonetic": "yong-HWA",
+          "native_meaning": "चलचित्र",
+          "english": "Movie",
+          "example_sentence_target": "영화.",
+          "example_sentence_native": "चलचित्र."
         },
         {
           "id": "w11_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हो",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हो."
+          "target": "책",
+          "phonetic": "chaek",
+          "native_meaning": "किताब",
+          "english": "Book",
+          "example_sentence_target": "책.",
+          "example_sentence_native": "किताब."
         },
         {
           "id": "w11_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "होइन",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "होइन."
+          "target": "요리",
+          "phonetic": "yo-RI",
+          "native_meaning": "खाना पकाउनु",
+          "english": "Cooking",
+          "example_sentence_target": "요리.",
+          "example_sentence_native": "खाना पकाउनु."
         }
       ],
       "dialogues": [
         {
           "id": "d11_7_1",
-          "context": "Hobby Culture practice",
+          "context": "Hobby Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "스포츠!",
+              "native": "खेल!",
+              "phonetic": "seu-PO-cheu"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थ्याँक-यू"
+              "target": "스포츠! 음악!",
+              "native": "खेल! संगीत!",
+              "phonetic": "seu-PO-cheu eu-MAK"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "बिदाइ!",
-              "phonetic": "गुड-बाय"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "음악!",
+              "native": "संगीत!",
+              "phonetic": "eu-MAK"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थ्याँक-यू"
+              "target": "영화!",
+              "native": "चलचित्र!",
+              "phonetic": "yong-HWA"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! बिदाइ!",
-              "phonetic": "थ्याँक-यू गुड-बाय"
+              "target": "책! 요리!",
+              "native": "किताब! खाना पकाउनु!",
+              "phonetic": "chaek yo-RI"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb11_7_1",
-            "sentence": "___ means Hello in Korean",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Sport' in Korean",
+            "answer": "스포츠",
+            "hint": "खेल"
           },
           {
             "id": "fb11_7_2",
-            "sentence": "___ means Thank you in Korean",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Music' in Korean",
+            "answer": "음악",
+            "hint": "संगीत"
           },
           {
             "id": "fb11_7_3",
-            "sentence": "___ means Goodbye in Korean",
-            "answer": "Goodbye",
-            "hint": "बिदाइ"
+            "sentence": "___ means 'Movie' in Korean",
+            "answer": "영화",
+            "hint": "चलचित्र"
           }
         ],
         "matching": [
           {
             "id": "m11_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "스포츠",
+            "native": "खेल"
           },
           {
             "id": "m11_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "음악",
+            "native": "संगीत"
           },
           {
             "id": "m11_7_3",
-            "target": "Goodbye",
-            "native": "बिदाइ"
+            "target": "영화",
+            "native": "चलचित्र"
+          },
+          {
+            "id": "m11_7_4",
+            "target": "책",
+            "native": "किताब"
+          },
+          {
+            "id": "m11_7_5",
+            "target": "요리",
+            "native": "खाना पकाउनु"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc11_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '스포츠' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "बिदाइ",
-              "हो"
+              "खेल",
+              "संगीत",
+              "चलचित्र",
+              "किताब"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'스포츠' means खेल in Nepali."
+          },
+          {
+            "id": "mc11_7_2",
+            "question": "How do you say 'संगीत' in Korean?",
+            "options": [
+              "스포츠",
+              "음악",
+              "영화",
+              "책"
+            ],
+            "correct": 1,
+            "explanation": "'음악' means संगीत."
           }
         ]
       },
-      "cultural_note": "क्रिकेट नेपालमा तीव्र गतिमा लोकप्रिय भइरहेको छ।",
-      "pronunciation_tip": "फ्रान्सेली खेलका शब्द अंग्रेजीसँग मिल्दोजुल्दो छ।",
+      "cultural_note": "Learning Korean opens doors to new cultures and opportunities! Week 11 focus: Hobbies & Free Time.",
+      "pronunciation_tip": "Practice Korean pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 200,
         "streak_bonus": 20,
         "badge": "W11D7"
       }

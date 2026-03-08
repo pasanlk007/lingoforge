@@ -17,7 +17,7 @@
         {
           "id": "w4_1_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -26,7 +26,7 @@
         {
           "id": "w4_1_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -35,7 +35,7 @@
         {
           "id": "w4_1_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -44,7 +44,7 @@
         {
           "id": "w4_1_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -53,7 +53,7 @@
         {
           "id": "w4_1_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -63,25 +63,25 @@
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -146,6 +146,16 @@
             "id": "m4_1_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -159,14 +169,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -184,7 +206,7 @@
         {
           "id": "w4_2_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -193,7 +215,7 @@
         {
           "id": "w4_2_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -202,7 +224,7 @@
         {
           "id": "w4_2_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -211,7 +233,7 @@
         {
           "id": "w4_2_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -220,7 +242,7 @@
         {
           "id": "w4_2_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -230,25 +252,25 @@
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -313,6 +335,16 @@
             "id": "m4_2_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -326,14 +358,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -351,7 +395,7 @@
         {
           "id": "w4_3_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -360,7 +404,7 @@
         {
           "id": "w4_3_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -369,7 +413,7 @@
         {
           "id": "w4_3_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -378,7 +422,7 @@
         {
           "id": "w4_3_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -387,7 +431,7 @@
         {
           "id": "w4_3_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -397,25 +441,25 @@
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -480,6 +524,16 @@
             "id": "m4_3_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -493,14 +547,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -518,7 +584,7 @@
         {
           "id": "w4_4_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -527,7 +593,7 @@
         {
           "id": "w4_4_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -536,7 +602,7 @@
         {
           "id": "w4_4_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -545,7 +611,7 @@
         {
           "id": "w4_4_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -554,7 +620,7 @@
         {
           "id": "w4_4_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -564,25 +630,25 @@
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -647,6 +713,16 @@
             "id": "m4_4_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -660,14 +736,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -685,7 +773,7 @@
         {
           "id": "w4_5_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -694,7 +782,7 @@
         {
           "id": "w4_5_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -703,7 +791,7 @@
         {
           "id": "w4_5_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -712,7 +800,7 @@
         {
           "id": "w4_5_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -721,7 +809,7 @@
         {
           "id": "w4_5_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -731,25 +819,25 @@
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -814,6 +902,16 @@
             "id": "m4_5_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -827,14 +925,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -852,7 +962,7 @@
         {
           "id": "w4_6_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -861,7 +971,7 @@
         {
           "id": "w4_6_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -870,7 +980,7 @@
         {
           "id": "w4_6_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -879,7 +989,7 @@
         {
           "id": "w4_6_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -888,7 +998,7 @@
         {
           "id": "w4_6_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -898,25 +1008,25 @@
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -981,6 +1091,16 @@
             "id": "m4_6_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -994,14 +1114,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1019,7 +1151,7 @@
         {
           "id": "w4_7_1",
           "target": "Heure",
-          "phonetic": "ওর",
+          "phonetic": "ඕර්",
           "native_meaning": "පැය",
           "english": "Hour",
           "example_sentence_target": "Heure.",
@@ -1028,7 +1160,7 @@
         {
           "id": "w4_7_2",
           "target": "Minute",
-          "phonetic": "মি-নুত",
+          "phonetic": "මී-නූත්",
           "native_meaning": "මිනිත්තුව",
           "english": "Minute",
           "example_sentence_target": "Minute.",
@@ -1037,7 +1169,7 @@
         {
           "id": "w4_7_3",
           "target": "Aujourd'hui",
-          "phonetic": "ও-ঝুর-দ্যুই",
+          "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ",
           "native_meaning": "අද",
           "english": "Today",
           "example_sentence_target": "Aujourd'hui.",
@@ -1046,7 +1178,7 @@
         {
           "id": "w4_7_4",
           "target": "Demain",
-          "phonetic": "দ্য-মাঁ",
+          "phonetic": "ද-මාං",
           "native_meaning": "හෙට",
           "english": "Tomorrow",
           "example_sentence_target": "Demain.",
@@ -1055,7 +1187,7 @@
         {
           "id": "w4_7_5",
           "target": "Hier",
-          "phonetic": "ইয়ের",
+          "phonetic": "ඊ-යෙර්",
           "native_meaning": "ඊයේ",
           "english": "Yesterday",
           "example_sentence_target": "Hier.",
@@ -1065,25 +1197,25 @@
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
               "target": "Heure!",
               "native": "පැය!",
-              "phonetic": "ওর"
+              "phonetic": "ඕර්"
             },
             {
               "speaker": "B",
               "target": "Heure! Minute!",
               "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ওর মি-নুত"
+              "phonetic": "ඕර් මී-නූත්"
             },
             {
               "speaker": "A",
               "target": "Aujourd'hui!",
               "native": "අද!",
-              "phonetic": "ও-ঝুর-দ্যুই"
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Heure!",
-              "native": "පැය!",
-              "phonetic": "ওর"
+              "target": "Minute!",
+              "native": "මිනිත්තුව!",
+              "phonetic": "මී-නූත්"
             },
             {
               "speaker": "B",
-              "target": "Minute!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "মি-নুত"
+              "target": "Aujourd'hui!",
+              "native": "අද!",
+              "phonetic": "ඕ-ෂූර්-ද්යූ-ඊ"
             },
             {
               "speaker": "A",
-              "target": "Minute! Aujourd'hui!",
-              "native": "මිනිත්තුව! අද!",
-              "phonetic": "মি-নুত ও-ঝুর-দ্যুই"
+              "target": "Demain! Hier!",
+              "native": "හෙට! ඊයේ!",
+              "phonetic": "ද-මාං ඊ-යෙර්"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hour in French",
+            "sentence": "___ means 'Hour' in French",
             "answer": "Heure",
             "hint": "පැය"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Minute in French",
+            "sentence": "___ means 'Minute' in French",
             "answer": "Minute",
             "hint": "මිනිත්තුව"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Today in French",
+            "sentence": "___ means 'Today' in French",
             "answer": "Aujourd'hui",
             "hint": "අද"
           }
@@ -1148,6 +1280,16 @@
             "id": "m4_7_3",
             "target": "Aujourd'hui",
             "native": "අද"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "Demain",
+            "native": "හෙට"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "Hier",
+            "native": "ඊයේ"
           }
         ],
         "multipleChoice": [
@@ -1161,14 +1303,26 @@
               "හෙට"
             ],
             "correct": 0,
-            "explanation": "'Heure' means පැය."
+            "explanation": "'Heure' means පැය in Sinhala."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'මිනිත්තුව' in French?",
+            "options": [
+              "Heure",
+              "Minute",
+              "Aujourd'hui",
+              "Demain"
+            ],
+            "correct": 1,
+            "explanation": "'Minute' means මිනිත්තුව."
           }
         ]
       },
-      "cultural_note": "ශ්‍රී ලංකාවේ කාලය ගණනය කිරීමේදී 'ලංකා කාලය' (IST+0:30) භාවිතා කෙරේ.",
-      "pronunciation_tip": "ප්‍රංශ උච්චාරණයේ stress pattern English ට වෙනස්.",
+      "cultural_note": "ප්‍රංශයේ 'heure' (ඕ) ශබ්දය කෙලින්ම ළෟ ශබ්දය ලෙස නොව මෘදු ලෙස කියයි.",
+      "pronunciation_tip": "ශබ්ද කාල (liaison) — ශබ්ද දෙකක් ඔස්සේ සම්බන්ධ වේ: 'vous êtes' = 'voo-ZET'.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }

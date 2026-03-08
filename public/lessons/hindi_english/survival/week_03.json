@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w3_1_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_1_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_1_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_1_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_1_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts practice",
+          "context": "Body Parts",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_1_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_1_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_1_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_1_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_1_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_1_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_1_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_1_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w3_2_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_2_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_2_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_2_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_2_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms practice",
+          "context": "Common Symptoms",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_2_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_2_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_2_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_2_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_2_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_2_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_2_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_2_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w3_3_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_3_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_3_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_3_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_3_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor practice",
+          "context": "At the Doctor",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_3_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_3_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_3_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_3_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_3_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_3_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_3_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_3_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w3_4_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_4_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_4_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_4_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_4_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy practice",
+          "context": "Pharmacy",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_4_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_4_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_4_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_4_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_4_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_4_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_4_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_4_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w3_5_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_5_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_5_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_5_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_5_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases practice",
+          "context": "Emergency Phrases",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_5_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_5_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_5_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_5_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_5_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_5_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_5_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_5_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w3_6_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_6_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_6_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_6_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_6_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health practice",
+          "context": "Mental Health",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_6_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_6_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_6_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_6_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_6_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_6_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_6_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_6_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w3_7_1",
-          "target": "Hello",
-          "phonetic": "हे-लो",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "नमस्ते."
+          "target": "Doctor",
+          "phonetic": "Doctor",
+          "native_meaning": "डॉक्टर",
+          "english": "Doctor",
+          "example_sentence_target": "Doctor.",
+          "example_sentence_native": "डॉक्टर."
         },
         {
           "id": "w3_7_2",
-          "target": "Thank you",
-          "phonetic": "थैंक-यू",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "धन्यवाद."
+          "target": "Hospital",
+          "phonetic": "Hospital",
+          "native_meaning": "अस्पताल",
+          "english": "Hospital",
+          "example_sentence_target": "Hospital.",
+          "example_sentence_native": "अस्पताल."
         },
         {
           "id": "w3_7_3",
-          "target": "Goodbye",
-          "phonetic": "गुड-बाय",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "अलविदा."
+          "target": "Pain",
+          "phonetic": "Pain",
+          "native_meaning": "दर्द",
+          "english": "Pain",
+          "example_sentence_target": "Pain.",
+          "example_sentence_native": "दर्द."
         },
         {
           "id": "w3_7_4",
-          "target": "Yes",
-          "phonetic": "येस",
-          "native_meaning": "हाँ",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "हाँ."
+          "target": "Medicine",
+          "phonetic": "Medicine",
+          "native_meaning": "दवा",
+          "english": "Medicine",
+          "example_sentence_target": "Medicine.",
+          "example_sentence_native": "दवा."
         },
         {
           "id": "w3_7_5",
-          "target": "No",
-          "phonetic": "नो",
-          "native_meaning": "नहीं",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "नहीं."
+          "target": "Sick",
+          "phonetic": "Sick",
+          "native_meaning": "बीमार",
+          "english": "Sick",
+          "example_sentence_target": "Sick.",
+          "example_sentence_native": "बीमार."
         }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture practice",
+          "context": "Health Culture",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Doctor!",
+              "native": "डॉक्टर!",
+              "phonetic": "Doctor"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "हे-लो थैंक-यू"
+              "target": "Doctor! Hospital!",
+              "native": "डॉक्टर! अस्पताल!",
+              "phonetic": "Doctor Hospital"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "अलविदा!",
-              "phonetic": "गुड-बाय"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "नमस्ते!",
-              "phonetic": "हे-लो"
+              "target": "Hospital!",
+              "native": "अस्पताल!",
+              "phonetic": "Hospital"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "धन्यवाद!",
-              "phonetic": "थैंक-यू"
+              "target": "Pain!",
+              "native": "दर्द!",
+              "phonetic": "Pain"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "धन्यवाद! अलविदा!",
-              "phonetic": "थैंक-यू गुड-बाय"
+              "target": "Medicine! Sick!",
+              "native": "दवा! बीमार!",
+              "phonetic": "Medicine Sick"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means Hello in English",
-            "answer": "Hello",
-            "hint": "नमस्ते"
+            "sentence": "___ means 'Doctor' in English",
+            "answer": "Doctor",
+            "hint": "डॉक्टर"
           },
           {
             "id": "fb3_7_2",
-            "sentence": "___ means Thank you in English",
-            "answer": "Thank you",
-            "hint": "धन्यवाद"
+            "sentence": "___ means 'Hospital' in English",
+            "answer": "Hospital",
+            "hint": "अस्पताल"
           },
           {
             "id": "fb3_7_3",
-            "sentence": "___ means Goodbye in English",
-            "answer": "Goodbye",
-            "hint": "अलविदा"
+            "sentence": "___ means 'Pain' in English",
+            "answer": "Pain",
+            "hint": "दर्द"
           }
         ],
         "matching": [
           {
             "id": "m3_7_1",
-            "target": "Hello",
-            "native": "नमस्ते"
+            "target": "Doctor",
+            "native": "डॉक्टर"
           },
           {
             "id": "m3_7_2",
-            "target": "Thank you",
-            "native": "धन्यवाद"
+            "target": "Hospital",
+            "native": "अस्पताल"
           },
           {
             "id": "m3_7_3",
-            "target": "Goodbye",
-            "native": "अलविदा"
+            "target": "Pain",
+            "native": "दर्द"
+          },
+          {
+            "id": "m3_7_4",
+            "target": "Medicine",
+            "native": "दवा"
+          },
+          {
+            "id": "m3_7_5",
+            "target": "Sick",
+            "native": "बीमार"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Doctor' mean?",
             "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "हाँ"
+              "डॉक्टर",
+              "अस्पताल",
+              "दर्द",
+              "दवा"
             ],
             "correct": 0,
-            "explanation": "'Hello' means नमस्ते."
+            "explanation": "'Doctor' means डॉक्टर in Hindi."
+          },
+          {
+            "id": "mc3_7_2",
+            "question": "How do you say 'अस्पताल' in English?",
+            "options": [
+              "Doctor",
+              "Hospital",
+              "Pain",
+              "Medicine"
+            ],
+            "correct": 1,
+            "explanation": "'Hospital' means अस्पताल."
           }
         ]
       },
-      "cultural_note": "भारत में आयुर्वेदिक चिकित्सा की समृद्ध परंपरा है।",
-      "pronunciation_tip": "फ्रांसीसी नाक की आवाज़ें (an, on, in) सीखें।",
+      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
+      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 120,
         "streak_bonus": 20,
         "badge": "W3D7"
       }

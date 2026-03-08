@@ -43,27 +43,27 @@
         },
         {
           "id": "w1_1_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_1_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings practice",
+          "context": "Basic Greetings",
           "lines": [
             {
               "speaker": "A",
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -114,19 +114,19 @@
         "fillBlanks": [
           {
             "id": "fb1_1_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_1_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_1_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -146,6 +146,16 @@
             "id": "m1_1_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_1_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_1_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -156,15 +166,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_1_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -210,27 +232,27 @@
         },
         {
           "id": "w1_2_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_2_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself practice",
+          "context": "Introducing Yourself",
           "lines": [
             {
               "speaker": "A",
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -281,19 +303,19 @@
         "fillBlanks": [
           {
             "id": "fb1_2_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_2_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_2_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -313,6 +335,16 @@
             "id": "m1_2_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_2_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_2_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -323,15 +355,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_2_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -377,27 +421,27 @@
         },
         {
           "id": "w1_3_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_3_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases practice",
+          "context": "Polite Phrases",
           "lines": [
             {
               "speaker": "A",
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -448,19 +492,19 @@
         "fillBlanks": [
           {
             "id": "fb1_3_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_3_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_3_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -480,6 +524,16 @@
             "id": "m1_3_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_3_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_3_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -490,15 +544,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_3_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -544,27 +610,27 @@
         },
         {
           "id": "w1_4_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_4_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions practice",
+          "context": "Asking Questions",
           "lines": [
             {
               "speaker": "A",
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -615,19 +681,19 @@
         "fillBlanks": [
           {
             "id": "fb1_4_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_4_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_4_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -647,6 +713,16 @@
             "id": "m1_4_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_4_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_4_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -657,15 +733,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_4_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -711,27 +799,27 @@
         },
         {
           "id": "w1_5_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_5_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells practice",
+          "context": "Farewells",
           "lines": [
             {
               "speaker": "A",
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -782,19 +870,19 @@
         "fillBlanks": [
           {
             "id": "fb1_5_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_5_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_5_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -814,6 +902,16 @@
             "id": "m1_5_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_5_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_5_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -824,15 +922,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_5_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -878,27 +988,27 @@
         },
         {
           "id": "w1_6_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_6_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice practice",
+          "context": "Review & Practice",
           "lines": [
             {
               "speaker": "A",
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -949,19 +1059,19 @@
         "fillBlanks": [
           {
             "id": "fb1_6_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_6_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_6_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -981,6 +1091,16 @@
             "id": "m1_6_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_6_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_6_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -991,15 +1111,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_6_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
@@ -1045,27 +1177,27 @@
         },
         {
           "id": "w1_7_4",
-          "target": "Oui",
-          "phonetic": "وی",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Oui.",
-          "example_sentence_native": "ہاں."
+          "target": "S'il vous plaît",
+          "phonetic": "سِل-وو-پلے",
+          "native_meaning": "براہ کرم",
+          "english": "Please",
+          "example_sentence_target": "S'il vous plaît.",
+          "example_sentence_native": "براہ کرم."
         },
         {
           "id": "w1_7_5",
-          "target": "Non",
-          "phonetic": "نوں",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "Non.",
-          "example_sentence_native": "نہیں."
+          "target": "Excusez-moi",
+          "phonetic": "ایکس-کیو-سے-موئی",
+          "native_meaning": "معذرت",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi.",
+          "example_sentence_native": "معذرت."
         }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day practice",
+          "context": "Culture Day",
           "lines": [
             {
               "speaker": "A",
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
               "target": "Merci!",
               "native": "شکریہ!",
               "phonetic": "مेر-سی"
             },
             {
+              "speaker": "B",
+              "target": "Au revoir!",
+              "native": "الوداع!",
+              "phonetic": "او-ر-وار"
+            },
+            {
               "speaker": "A",
-              "target": "Merci! Au revoir!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "مेر-سی او-ر-وار"
+              "target": "S'il vous plaît! Excusez-moi!",
+              "native": "براہ کرم! معذرت!",
+              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
             }
           ]
         }
@@ -1116,19 +1248,19 @@
         "fillBlanks": [
           {
             "id": "fb1_7_1",
-            "sentence": "___ means Hello in French",
+            "sentence": "___ means 'Hello' in French",
             "answer": "Bonjour",
             "hint": "ہیلو"
           },
           {
             "id": "fb1_7_2",
-            "sentence": "___ means Thank you in French",
+            "sentence": "___ means 'Thank you' in French",
             "answer": "Merci",
             "hint": "شکریہ"
           },
           {
             "id": "fb1_7_3",
-            "sentence": "___ means Goodbye in French",
+            "sentence": "___ means 'Goodbye' in French",
             "answer": "Au revoir",
             "hint": "الوداع"
           }
@@ -1148,6 +1280,16 @@
             "id": "m1_7_3",
             "target": "Au revoir",
             "native": "الوداع"
+          },
+          {
+            "id": "m1_7_4",
+            "target": "S'il vous plaît",
+            "native": "براہ کرم"
+          },
+          {
+            "id": "m1_7_5",
+            "target": "Excusez-moi",
+            "native": "معذرت"
           }
         ],
         "multipleChoice": [
@@ -1158,15 +1300,27 @@
               "ہیلو",
               "شکریہ",
               "الوداع",
-              "ہاں"
+              "براہ کرم"
             ],
             "correct": 0,
-            "explanation": "'Bonjour' means ہیلو."
+            "explanation": "'Bonjour' means ہیلو in Urdu."
+          },
+          {
+            "id": "mc1_7_2",
+            "question": "How do you say 'شکریہ' in French?",
+            "options": [
+              "Bonjour",
+              "Merci",
+              "Au revoir",
+              "S'il vous plaît"
+            ],
+            "correct": 1,
+            "explanation": "'Merci' means شکریہ."
           }
         ]
       },
-      "cultural_note": "پاکستانی ثقافت میں ملتے وقت 'السلام علیکم' کہنا عام ہے۔",
-      "pronunciation_tip": "ہر لفظ کو آہستہ آہستہ بولیں۔",
+      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
+      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,

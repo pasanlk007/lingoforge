@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w5_1_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_1_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_1_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_1_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_1_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_1_1",
-          "context": "Left & Right practice",
+          "context": "Left & Right",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb5_1_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_1_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_1_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_1_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_1_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_1_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_1_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_1_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_1_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w5_2_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_2_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_2_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_2_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_2_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_2_1",
-          "context": "Asking Directions practice",
+          "context": "Asking Directions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb5_2_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_2_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_2_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_2_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_2_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_2_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_2_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_2_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_2_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w5_3_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_3_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_3_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_3_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_3_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_3_1",
-          "context": "Transport Stop practice",
+          "context": "Transport Stop",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb5_3_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_3_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_3_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_3_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_3_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_3_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_3_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_3_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_3_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w5_4_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_4_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_4_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_4_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_4_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_4_1",
-          "context": "On the Map practice",
+          "context": "On the Map",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb5_4_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_4_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_4_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_4_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_4_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_4_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_4_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_4_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_4_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w5_5_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_5_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_5_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_5_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_5_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_5_1",
-          "context": "Landmarks practice",
+          "context": "Landmarks",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb5_5_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_5_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_5_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_5_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_5_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_5_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_5_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_5_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_5_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w5_6_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_6_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_6_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_6_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_6_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_6_1",
-          "context": "Getting Lost practice",
+          "context": "Getting Lost",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb5_6_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_6_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_6_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_6_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_6_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_6_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_6_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_6_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_6_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w5_7_1",
-          "target": "Hello",
-          "phonetic": "heh-LOH",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "Hello."
+          "target": "Links",
+          "phonetic": "Links",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Links.",
+          "example_sentence_native": "Left."
         },
         {
           "id": "w5_7_2",
-          "target": "Thank you",
-          "phonetic": "THANK-yoo",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "Thank you."
+          "target": "Rechts",
+          "phonetic": "Rechts",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Rechts.",
+          "example_sentence_native": "Right."
         },
         {
           "id": "w5_7_3",
-          "target": "Goodbye",
-          "phonetic": "good-BY",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "Goodbye."
+          "target": "Rechtdoor",
+          "phonetic": "Rechtdoor",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Rechtdoor.",
+          "example_sentence_native": "Straight ahead."
         },
         {
           "id": "w5_7_4",
-          "target": "Yes",
-          "phonetic": "yes",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "Yes."
+          "target": "Straat",
+          "phonetic": "Straat",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "Straat.",
+          "example_sentence_native": "Street."
         },
         {
           "id": "w5_7_5",
-          "target": "No",
-          "phonetic": "no",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "No."
+          "target": "Halte",
+          "phonetic": "Halte",
+          "native_meaning": "Stop",
+          "english": "Stop",
+          "example_sentence_target": "Halte.",
+          "example_sentence_native": "Stop."
         }
       ],
       "dialogues": [
         {
           "id": "d5_7_1",
-          "context": "City Navigation practice",
+          "context": "City Navigation",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Links!",
+              "native": "Left!",
+              "phonetic": "Links"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "Hello! Thank you!",
-              "phonetic": "heh-LOH THANK-yoo"
+              "target": "Links! Rechts!",
+              "native": "Left! Right!",
+              "phonetic": "Links Rechts"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "Goodbye!",
-              "phonetic": "good-BY"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "Hello!",
-              "phonetic": "heh-LOH"
+              "target": "Rechts!",
+              "native": "Right!",
+              "phonetic": "Rechts"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "Thank you!",
-              "phonetic": "THANK-yoo"
+              "target": "Rechtdoor!",
+              "native": "Straight ahead!",
+              "phonetic": "Rechtdoor"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "Thank you! Goodbye!",
-              "phonetic": "THANK-yoo good-BY"
+              "target": "Straat! Halte!",
+              "native": "Street! Stop!",
+              "phonetic": "Straat Halte"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb5_7_1",
-            "sentence": "___ means Hello in Dutch",
-            "answer": "Hello",
-            "hint": "Hello"
+            "sentence": "___ means 'Left' in Dutch",
+            "answer": "Links",
+            "hint": "Left"
           },
           {
             "id": "fb5_7_2",
-            "sentence": "___ means Thank you in Dutch",
-            "answer": "Thank you",
-            "hint": "Thank you"
+            "sentence": "___ means 'Right' in Dutch",
+            "answer": "Rechts",
+            "hint": "Right"
           },
           {
             "id": "fb5_7_3",
-            "sentence": "___ means Goodbye in Dutch",
-            "answer": "Goodbye",
-            "hint": "Goodbye"
+            "sentence": "___ means 'Straight ahead' in Dutch",
+            "answer": "Rechtdoor",
+            "hint": "Straight ahead"
           }
         ],
         "matching": [
           {
             "id": "m5_7_1",
-            "target": "Hello",
-            "native": "Hello"
+            "target": "Links",
+            "native": "Left"
           },
           {
             "id": "m5_7_2",
-            "target": "Thank you",
-            "native": "Thank you"
+            "target": "Rechts",
+            "native": "Right"
           },
           {
             "id": "m5_7_3",
-            "target": "Goodbye",
-            "native": "Goodbye"
+            "target": "Rechtdoor",
+            "native": "Straight ahead"
+          },
+          {
+            "id": "m5_7_4",
+            "target": "Straat",
+            "native": "Street"
+          },
+          {
+            "id": "m5_7_5",
+            "target": "Halte",
+            "native": "Stop"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Links' mean?",
             "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Yes"
+              "Left",
+              "Right",
+              "Straight ahead",
+              "Street"
             ],
             "correct": 0,
-            "explanation": "'Hello' means Hello."
+            "explanation": "'Links' means Left in English."
+          },
+          {
+            "id": "mc5_7_2",
+            "question": "How do you say 'Right' in Dutch?",
+            "options": [
+              "Links",
+              "Rechts",
+              "Rechtdoor",
+              "Straat"
+            ],
+            "correct": 1,
+            "explanation": "'Rechts' means Right."
           }
         ]
       },
-      "cultural_note": "Paris has an excellent metro system — buy a carnet of 10 tickets to save money.",
-      "pronunciation_tip": "Pay attention to liaison — connecting words in spoken French.",
+      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D7"
       }

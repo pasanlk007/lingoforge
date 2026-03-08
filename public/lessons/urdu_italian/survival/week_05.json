@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w5_1_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_1_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_1_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_1_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_1_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_1_1",
-          "context": "Left & Right practice",
+          "context": "Left & Right",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb5_1_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_1_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_1_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_1_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_1_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_1_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_1_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_1_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_1_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w5_2_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_2_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_2_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_2_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_2_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_2_1",
-          "context": "Asking Directions practice",
+          "context": "Asking Directions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb5_2_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_2_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_2_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_2_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_2_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_2_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_2_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_2_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_2_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w5_3_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_3_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_3_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_3_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_3_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_3_1",
-          "context": "Transport Stop practice",
+          "context": "Transport Stop",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb5_3_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_3_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_3_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_3_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_3_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_3_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_3_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_3_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_3_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w5_4_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_4_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_4_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_4_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_4_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_4_1",
-          "context": "On the Map practice",
+          "context": "On the Map",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb5_4_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_4_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_4_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_4_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_4_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_4_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_4_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_4_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_4_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w5_5_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_5_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_5_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_5_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_5_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_5_1",
-          "context": "Landmarks practice",
+          "context": "Landmarks",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb5_5_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_5_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_5_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_5_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_5_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_5_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_5_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_5_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_5_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w5_6_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_6_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_6_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_6_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_6_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_6_1",
-          "context": "Getting Lost practice",
+          "context": "Getting Lost",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb5_6_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_6_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_6_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_6_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_6_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_6_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_6_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_6_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_6_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w5_7_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "Sinistra",
+          "phonetic": "Sinistra",
+          "native_meaning": "بائیں",
+          "english": "Left",
+          "example_sentence_target": "Sinistra.",
+          "example_sentence_native": "بائیں."
         },
         {
           "id": "w5_7_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "Destra",
+          "phonetic": "Destra",
+          "native_meaning": "دائیں",
+          "english": "Right",
+          "example_sentence_target": "Destra.",
+          "example_sentence_native": "دائیں."
         },
         {
           "id": "w5_7_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "Dritto",
+          "phonetic": "Dritto",
+          "native_meaning": "سیدھے",
+          "english": "Straight ahead",
+          "example_sentence_target": "Dritto.",
+          "example_sentence_native": "سیدھے."
         },
         {
           "id": "w5_7_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "Via",
+          "phonetic": "Via",
+          "native_meaning": "سڑک",
+          "english": "Street",
+          "example_sentence_target": "Via.",
+          "example_sentence_native": "سڑک."
         },
         {
           "id": "w5_7_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "Fermata",
+          "phonetic": "Fermata",
+          "native_meaning": "رکو",
+          "english": "Stop",
+          "example_sentence_target": "Fermata.",
+          "example_sentence_native": "رکو."
         }
       ],
       "dialogues": [
         {
           "id": "d5_7_1",
-          "context": "City Navigation practice",
+          "context": "City Navigation",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Sinistra!",
+              "native": "بائیں!",
+              "phonetic": "Sinistra"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "Sinistra! Destra!",
+              "native": "بائیں! دائیں!",
+              "phonetic": "Sinistra Destra"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "Destra!",
+              "native": "دائیں!",
+              "phonetic": "Destra"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "Dritto!",
+              "native": "سیدھے!",
+              "phonetic": "Dritto"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "Via! Fermata!",
+              "native": "سڑک! رکو!",
+              "phonetic": "Via Fermata"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb5_7_1",
-            "sentence": "___ means Hello in Italian",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Left' in Italian",
+            "answer": "Sinistra",
+            "hint": "بائیں"
           },
           {
             "id": "fb5_7_2",
-            "sentence": "___ means Thank you in Italian",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Right' in Italian",
+            "answer": "Destra",
+            "hint": "دائیں"
           },
           {
             "id": "fb5_7_3",
-            "sentence": "___ means Goodbye in Italian",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Straight ahead' in Italian",
+            "answer": "Dritto",
+            "hint": "سیدھے"
           }
         ],
         "matching": [
           {
             "id": "m5_7_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "Sinistra",
+            "native": "بائیں"
           },
           {
             "id": "m5_7_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "Destra",
+            "native": "دائیں"
           },
           {
             "id": "m5_7_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "Dritto",
+            "native": "سیدھے"
+          },
+          {
+            "id": "m5_7_4",
+            "target": "Via",
+            "native": "سڑک"
+          },
+          {
+            "id": "m5_7_5",
+            "target": "Fermata",
+            "native": "رکو"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc5_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does 'Sinistra' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "بائیں",
+              "دائیں",
+              "سیدھے",
+              "سڑک"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'Sinistra' means بائیں in Urdu."
+          },
+          {
+            "id": "mc5_7_2",
+            "question": "How do you say 'دائیں' in Italian?",
+            "options": [
+              "Sinistra",
+              "Destra",
+              "Dritto",
+              "Via"
+            ],
+            "correct": 1,
+            "explanation": "'Destra' means دائیں."
           }
         ]
       },
-      "cultural_note": "کراچی اور لاہور جیسے شہروں میں GPS بہت مفید ہے۔",
-      "pronunciation_tip": "فرانسیسی liaison پر دھیان دیں۔",
+      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 5 focus: Directions & Getting Around.",
+      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 140,
         "streak_bonus": 20,
         "badge": "W5D7"
       }

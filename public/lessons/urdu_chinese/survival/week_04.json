@@ -16,72 +16,72 @@
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_1_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_1_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_1_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_1_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time practice",
+          "context": "Telling the Time",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -91,21 +91,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -114,59 +114,81 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_1_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_1_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_1_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_1_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_1_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_1_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_1_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_1_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D1"
       }
@@ -183,72 +205,72 @@
       "words": [
         {
           "id": "w4_2_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_2_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_2_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_2_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_2_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week practice",
+          "context": "Days of the Week",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -258,21 +280,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -281,59 +303,81 @@
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_2_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_2_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_2_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_2_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_2_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_2_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_2_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_2_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D2"
       }
@@ -350,72 +394,72 @@
       "words": [
         {
           "id": "w4_3_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_3_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_3_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_3_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_3_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons practice",
+          "context": "Months & Seasons",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -425,21 +469,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -448,59 +492,81 @@
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_3_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_3_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_3_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_3_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_3_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_3_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_3_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_3_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D3"
       }
@@ -517,72 +583,72 @@
       "words": [
         {
           "id": "w4_4_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_4_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_4_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_4_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_4_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine practice",
+          "context": "Daily Routine",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -592,21 +658,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -615,59 +681,81 @@
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_4_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_4_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_4_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_4_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_4_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_4_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_4_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_4_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D4"
       }
@@ -684,72 +772,72 @@
       "words": [
         {
           "id": "w4_5_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_5_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_5_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_5_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_5_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments practice",
+          "context": "Appointments",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -759,21 +847,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -782,59 +870,81 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_5_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_5_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_5_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_5_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_5_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_5_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_5_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_5_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D5"
       }
@@ -851,72 +961,72 @@
       "words": [
         {
           "id": "w4_6_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_6_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_6_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_6_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_6_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future practice",
+          "context": "Past & Future",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -926,21 +1036,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -949,59 +1059,81 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_6_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_6_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_6_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_6_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_6_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_6_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_6_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_6_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D6"
       }
@@ -1018,72 +1150,72 @@
       "words": [
         {
           "id": "w4_7_1",
-          "target": "Hello",
-          "phonetic": "ہے-لو",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Hello.",
-          "example_sentence_native": "ہیلو."
+          "target": "小时",
+          "phonetic": "xiao-SHI",
+          "native_meaning": "گھنٹہ",
+          "english": "Hour",
+          "example_sentence_target": "小时.",
+          "example_sentence_native": "گھنٹہ."
         },
         {
           "id": "w4_7_2",
-          "target": "Thank you",
-          "phonetic": "تھینک-یو",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Thank you.",
-          "example_sentence_native": "شکریہ."
+          "target": "分钟",
+          "phonetic": "fen-ZHONG",
+          "native_meaning": "منٹ",
+          "english": "Minute",
+          "example_sentence_target": "分钟.",
+          "example_sentence_native": "منٹ."
         },
         {
           "id": "w4_7_3",
-          "target": "Goodbye",
-          "phonetic": "گڈ-بائے",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Goodbye.",
-          "example_sentence_native": "الوداع."
+          "target": "今天",
+          "phonetic": "jin-TIAN",
+          "native_meaning": "آج",
+          "english": "Today",
+          "example_sentence_target": "今天.",
+          "example_sentence_native": "آج."
         },
         {
           "id": "w4_7_4",
-          "target": "Yes",
-          "phonetic": "یس",
-          "native_meaning": "ہاں",
-          "english": "Yes",
-          "example_sentence_target": "Yes.",
-          "example_sentence_native": "ہاں."
+          "target": "明天",
+          "phonetic": "ming-TIAN",
+          "native_meaning": "کل",
+          "english": "Tomorrow",
+          "example_sentence_target": "明天.",
+          "example_sentence_native": "کل."
         },
         {
           "id": "w4_7_5",
-          "target": "No",
-          "phonetic": "نو",
-          "native_meaning": "نہیں",
-          "english": "No",
-          "example_sentence_target": "No.",
-          "example_sentence_native": "نہیں."
+          "target": "昨天",
+          "phonetic": "zuo-TIAN",
+          "native_meaning": "کل",
+          "english": "Yesterday",
+          "example_sentence_target": "昨天.",
+          "example_sentence_native": "کل."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions practice",
+          "context": "Time Expressions",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "小时!",
+              "native": "گھنٹہ!",
+              "phonetic": "xiao-SHI"
             },
             {
               "speaker": "B",
-              "target": "Hello! Thank you!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "ہے-لو تھینک-یو"
+              "target": "小时! 分钟!",
+              "native": "گھنٹہ! منٹ!",
+              "phonetic": "xiao-SHI fen-ZHONG"
             },
             {
               "speaker": "A",
-              "target": "Goodbye!",
-              "native": "الوداع!",
-              "phonetic": "گڈ-بائے"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             }
           ]
         },
@@ -1093,21 +1225,21 @@
           "lines": [
             {
               "speaker": "A",
-              "target": "Hello!",
-              "native": "ہیلو!",
-              "phonetic": "ہے-لو"
+              "target": "分钟!",
+              "native": "منٹ!",
+              "phonetic": "fen-ZHONG"
             },
             {
               "speaker": "B",
-              "target": "Thank you!",
-              "native": "شکریہ!",
-              "phonetic": "تھینک-یو"
+              "target": "今天!",
+              "native": "آج!",
+              "phonetic": "jin-TIAN"
             },
             {
               "speaker": "A",
-              "target": "Thank you! Goodbye!",
-              "native": "شکریہ! الوداع!",
-              "phonetic": "تھینک-یو گڈ-بائے"
+              "target": "明天! 昨天!",
+              "native": "کل! کل!",
+              "phonetic": "ming-TIAN zuo-TIAN"
             }
           ]
         }
@@ -1116,59 +1248,81 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means Hello in Chinese",
-            "answer": "Hello",
-            "hint": "ہیلو"
+            "sentence": "___ means 'Hour' in Chinese",
+            "answer": "小时",
+            "hint": "گھنٹہ"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means Thank you in Chinese",
-            "answer": "Thank you",
-            "hint": "شکریہ"
+            "sentence": "___ means 'Minute' in Chinese",
+            "answer": "分钟",
+            "hint": "منٹ"
           },
           {
             "id": "fb4_7_3",
-            "sentence": "___ means Goodbye in Chinese",
-            "answer": "Goodbye",
-            "hint": "الوداع"
+            "sentence": "___ means 'Today' in Chinese",
+            "answer": "今天",
+            "hint": "آج"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "Hello",
-            "native": "ہیلو"
+            "target": "小时",
+            "native": "گھنٹہ"
           },
           {
             "id": "m4_7_2",
-            "target": "Thank you",
-            "native": "شکریہ"
+            "target": "分钟",
+            "native": "منٹ"
           },
           {
             "id": "m4_7_3",
-            "target": "Goodbye",
-            "native": "الوداع"
+            "target": "今天",
+            "native": "آج"
+          },
+          {
+            "id": "m4_7_4",
+            "target": "明天",
+            "native": "کل"
+          },
+          {
+            "id": "m4_7_5",
+            "target": "昨天",
+            "native": "کل"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc4_7_1",
-            "question": "What does 'Hello' mean?",
+            "question": "What does '小时' mean?",
             "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "ہاں"
+              "گھنٹہ",
+              "منٹ",
+              "آج",
+              "کل"
             ],
             "correct": 0,
-            "explanation": "'Hello' means ہیلو."
+            "explanation": "'小时' means گھنٹہ in Urdu."
+          },
+          {
+            "id": "mc4_7_2",
+            "question": "How do you say 'منٹ' in Chinese?",
+            "options": [
+              "小时",
+              "分钟",
+              "今天",
+              "明天"
+            ],
+            "correct": 1,
+            "explanation": "'分钟' means منٹ."
           }
         ]
       },
-      "cultural_note": "پاکستان میں PKT یعنی UTC+5 وقت استعمال ہوتا ہے۔",
-      "pronunciation_tip": "فرانسیسی میں stress آخر میں ہوتی ہے۔",
+      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
+      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
       "progress": {
-        "xp": 100,
+        "xp": 130,
         "streak_bonus": 20,
         "badge": "W4D7"
       }
