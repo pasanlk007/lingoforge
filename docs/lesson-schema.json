@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Daily Language Lesson",
+  "description": "The complete structure for a single day's language lesson.",
+  "type": "object",
+  "properties": {
+    "week": {
+      "description": "The week number of the lesson (e.g., 1).",
+      "type": "number"
+    },
+    "day": {
+      "description": "The day number within the week (1-7).",
+      "type": "number"
+    },
+    "title": {
+      "description": "The title of the daily lesson in English (e.g., 'Week 1 Day 1: Basic Greetings').",
+      "type": "string"
+    },
+    "title_native": {
+      "description": "The title of the daily lesson translated into the target language.",
+      "type": "string"
+    },
+    "theme": {
+      "description": "The overall theme for the day's lesson (e.g., 'Greetings & Introductions').",
+      "type": "string"
+    },
+    "path": {
+      "description": "The learning path this lesson belongs to.",
+      "type": "string",
+      "enum": ["survival", "alphabet", "numbers"]
+    },
+    "targetLanguage": {
+      "description": "The language being taught (e.g., 'French').",
+      "type": "string"
+    },
+    "nativeLanguage": {
+      "description": "The user's native language for translations (e.g., 'English').",
+      "type": "string"
+    },
+    "words": {
+      "description": "A list of vocabulary words for the day.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/LessonItem"
+      }
+    },
+    "dialogues": {
+      "description": "A list of dialogues for conversational practice. Optional, but recommended.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Dialogue"
+      }
+    },
+    "exercises": {
+      "description": "A collection of exercises to reinforce learning.",
+      "$ref": "#/definitions/Exercises"
+    },
+    "cultural_note": {
+      "description": "A brief cultural tip related to the lesson's content.",
+      "type": "string"
+    },
+    "pronunciation_tip": {
+      "description": "A specific tip to help with pronunciation for a word or sound in the lesson.",
+      "type": "string"
+    },
+    "progress": {
+      "description": "Defines the rewards for completing the lesson.",
+      "$ref": "#/definitions/Progress"
+    }
+  },
+  "required": [
+    "week",
+    "day",
+    "title",
+    "title_native",
+    "theme",
+    "path",
+    "targetLanguage",
+    "nativeLanguage",
+    "words",
+    "exercises",
+    "cultural_note",
+    "pronunciation_tip",
+    "progress"
+  ],
+  "definitions": {
+    "LessonItem": {
+      "type": "object",
+      "description": "A single vocabulary item.",
+      "properties": {
+        "id": { "type": "string", "description": "A unique identifier (e.g., 'w1_1_1')." },
+        "target": { "type": "string", "description": "The word or phrase in the target language." },
+        "phonetic": { "type": "string", "description": "A simple phonetic spelling to aid pronunciation." },
+        "native_meaning": { "type": "string", "description": "The meaning of the word in the native language." },
+        "english": { "type": "string", "description": "The meaning of the word in English (for reference)." },
+        "example_sentence_target": { "type": "string", "description": "An example sentence using the word in the target language." },
+        "example_sentence_native": { "type": "string", "description": "The translation of the example sentence in the native language." }
+      },
+      "required": ["id", "target", "phonetic", "native_meaning", "english", "example_sentence_target", "example_sentence_native"]
+    },
+    "Dialogue": {
+      "type": "object",
+      "description": "A complete dialogue with context.",
+      "properties": {
+        "id": { "type": "string", "description": "A unique identifier for the dialogue (e.g., 'd1_1_1')." },
+        "context": { "type": "string", "description": "The situation or context for the dialogue." },
+        "lines": {
+          "type": "array",
+          "description": "The lines of conversation between speakers.",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/DialogueLine" }
+        }
+      },
+      "required": ["id", "context", "lines"]
+    },
+    "DialogueLine": {
+      "type": "object",
+      "description": "A single line in a dialogue.",
+      "properties": {
+        "speaker": { "type": "string", "enum": ["A", "B"], "description": "The speaker of the line." },
+        "target": { "type": "string", "description": "The sentence in the target language." },
+        "native": { "type": "string", "description": "The sentence translated into the native language." },
+        "phonetic": { "type": "string", "description": "A simple phonetic spelling of the sentence." }
+      },
+      "required": ["speaker", "target", "native", "phonetic"]
+    },
+    "Exercises": {
+      "type": "object",
+      "description": "An object containing different types of exercises.",
+      "properties": {
+        "fillBlanks": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/FillBlankExercise" }
+        },
+        "multipleChoice": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/MultipleChoiceExercise" }
+        },
+        "matching": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/MatchingPair" }
+        }
+      }
+    },
+    "FillBlankExercise": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "sentence": { "type": "string", "description": "A sentence with '___' where the answer should go." },
+        "answer": { "type": "string" },
+        "hint": { "type": "string" }
+      },
+      "required": ["id", "sentence", "answer", "hint"]
+    },
+    "MultipleChoiceExercise": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "question": { "type": "string" },
+        "options": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "correct": { "type": "number", "description": "The 0-based index of the correct option in the 'options' array." },
+        "explanation": { "type": "string" }
+      },
+      "required": ["id", "question", "options", "correct", "explanation"]
+    },
+    "MatchingPair": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "target": { "type": "string" },
+        "native": { "type": "string" }
+      },
+      "required": ["id", "target", "native"]
+    },
+    "Progress": {
+      "type": "object",
+      "properties": {
+        "xp": { "type": "number", "description": "Experience points awarded for completion." },
+        "streak_bonus": { "type": "number", "description": "Bonus XP for maintaining a streak." },
+        "badge": { "type": "string", "description": "A unique name for the badge awarded (e.g., 'W1D1-Greetings')." }
+      },
+      "required": ["xp", "streak_bonus", "badge"]
+    }
+  }
+}
