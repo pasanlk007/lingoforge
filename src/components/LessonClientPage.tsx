@@ -53,18 +53,24 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [exercisesCompleted, setExercisesCompleted] = useState(0);
     const [showConfetti, setShowConfetti] = useState(false);
 
-    const hasItems = dayData.items && dayData.items.length > 0;
-    const hasExercises = dayData.exercises && ((dayData.exercises.fillBlanks?.length ?? 0) > 0 || (dayData.exercises.multipleChoice?.length ?? 0) > 0 || (dayData.exercises.matching?.length ?? 0) > 0);
-    const hasDialogue = dayData.dialogue && dayData.dialogue.lines.length > 0;
-    const hasCulturalNote = dayData.culturalNote && dayData.culturalNote.trim() !== '';
+    // Robust checks for content existence, including type validation
+    const hasItems = Array.isArray(dayData.items) && dayData.items.length > 0;
+    const hasDialogue = dayData.dialogue && Array.isArray(dayData.dialogue.lines) && dayData.dialogue.lines.length > 0;
+    const hasCulturalNote = typeof dayData.culturalNote === 'string' && dayData.culturalNote.trim() !== '';
+
+    const hasExercises = dayData.exercises && (
+      (Array.isArray(dayData.exercises.fillBlanks) && dayData.exercises.fillBlanks.length > 0) ||
+      (Array.isArray(dayData.exercises.multipleChoice) && dayData.exercises.multipleChoice.length > 0) ||
+      (Array.isArray(dayData.exercises.matching) && dayData.exercises.matching.length > 0)
+    );
 
     const handleNextWord = () => {
-        if (!hasItems) return;
+        if (!hasItems || !dayData.items) return;
         setCurrentWordIndex(prev => (prev + 1) % (dayData.items.length));
     }
 
     const handlePrevWord = () => {
-        if (!hasItems) return;
+        if (!hasItems || !dayData.items) return;
         setCurrentWordIndex(prev => (prev - 1 + (dayData.items.length)) % (dayData.items.length));
     }
 
@@ -131,7 +137,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 </TabsList>
 
                 <TabsContent value="learn" className="mt-6 space-y-8">
-                  {hasItems && (
+                  {hasItems && dayData.items && (
                     <Card>
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2">
@@ -150,7 +156,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         </CardContent>
                     </Card>
                   )}
-                  {hasDialogue && (
+                  {hasDialogue && dayData.dialogue && (
                       <DialoguePanel dialogue={dayData.dialogue} language={lesson.language} />
                   )}
                   {!hasItems && !hasDialogue && (
@@ -165,7 +171,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 </TabsContent>
 
                 <TabsContent value="practice" className="mt-6">
-                    {hasExercises && (
+                    {hasExercises && dayData.exercises && (
                         <ExercisePanel exercises={dayData.exercises} onExercisesComplete={handleExercisesComplete} />
                     )}
                 </TabsContent>
