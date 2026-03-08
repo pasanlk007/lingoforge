@@ -1,5 +1,5 @@
 'use server';
-import { getOrGenerateLesson } from '@/lib/lessonCache';
+import { getLessonFromFile } from '@/lib/lessonCache';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Terminal } from 'lucide-react';
@@ -19,19 +19,24 @@ type LessonPageProps = {
 
 export default async function LessonPage({ params, searchParams }: LessonPageProps) {
   const { language, path, week, day } = params;
+  // Fallback to English if native language isn't specified in the URL.
   const nativeLanguage = searchParams?.native || 'English';
 
   const weekNum = parseInt(week);
   const dayNum = parseInt(day);
 
-  if (isNaN(weekNum) || isNaN(dayNum) || weekNum < 1 || dayNum < 1 || dayNum > 7) {
+  // Basic validation for route parameters.
+  if (isNaN(weekNum) || isNaN(dayNum) || weekNum < 1 || dayNum < 1) {
     notFound();
   }
 
+  // Capitalize the language for display and consistency.
   const formattedLanguage = language.charAt(0).toUpperCase() + language.slice(1);
 
-  const lesson = await getOrGenerateLesson(formattedLanguage, path as LearningPath, weekNum, nativeLanguage, dayNum);
+  // Load the lesson data from the local JSON file.
+  const lesson = await getLessonFromFile(formattedLanguage, path as LearningPath, weekNum, nativeLanguage, dayNum);
 
+  // If the lesson file doesn't exist or fails to load, show an error message.
   if (!lesson) {
     return (
       <div className="flex min-h-dvh flex-col">
@@ -42,7 +47,8 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
               <Terminal className="h-4 w-4" />
               <AlertTitle>Lesson Not Found</AlertTitle>
               <AlertDescription>
-                Lesson for {language} week {week} day {day} not found.
+                Could not load the lesson for {language}, {path} path, week {week}, day {day}. 
+                Please check if the corresponding JSON file exists in the `/public/lessons` directory.
               </AlertDescription>
             </Alert>
           </div>
@@ -51,6 +57,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
     );
   }
 
+  // Render the client component with the loaded lesson data.
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />

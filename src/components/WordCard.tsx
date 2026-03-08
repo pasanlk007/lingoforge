@@ -2,11 +2,8 @@
 
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { RefreshCw } from 'lucide-react';
 import { AudioButton } from './AudioButton';
 import type { LessonItem } from '@/lib/types';
-import { Separator } from './ui/separator';
 
 interface WordCardProps {
   item: LessonItem;
@@ -21,7 +18,7 @@ export function WordCard({ item, language }: WordCardProps) {
   };
 
   const cardStyle = {
-    transformStyle: 'preserve-3d',
+    transformStyle: 'preserve-3d' as const,
     transition: 'transform 0.6s',
     transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
   };
@@ -42,19 +39,19 @@ export function WordCard({ item, language }: WordCardProps) {
             <div className="mt-4" onClick={(e) => e.stopPropagation()}>
               <AudioButton text={item.target} languageName={language} />
             </div>
-             <p className="absolute bottom-4 text-xs text-muted-foreground">Click to flip</p>
+            <p className="absolute bottom-4 text-xs text-muted-foreground">Click to flip</p>
           </Card>
         </div>
 
         {/* Back of the card */}
         <div style={{...cardFaceStyle, transform: 'rotateY(180deg)'}} className="absolute w-full h-full">
            <Card className="flex h-full flex-col justify-center p-6 text-center shadow-lg">
-             <h3 className="text-3xl font-bold">{item.english}</h3>
-             {item.exampleSentence && (
+             <h3 className="text-3xl font-bold">{item.native_meaning}</h3>
+             {item.example_sentence_target && (
                 <div className="mt-4 border-t pt-3 text-sm">
                     <p className="font-semibold text-foreground">Example:</p>
-                    <p className="italic">"{item.exampleSentence.target}"</p>
-                    <p className="text-muted-foreground">"{item.exampleSentence.english}"</p>
+                    <p className="italic">"{item.example_sentence_target}"</p>
+                    <p className="text-muted-foreground">"{item.example_sentence_native}"</p>
                 </div>
              )}
            </Card>

@@ -1,27 +1,28 @@
 // === Main Lesson Structure ===
 
-export interface ExampleSentence {
-  target: string;
-  english: string;
-}
-
+// Updated to match the fields in the user's JSON file.
 export interface LessonItem {
   id: string;
   target: string;
   phonetic: string;
-  english: string;
-  exampleSentence?: ExampleSentence;
+  native_meaning: string;
+  english: string; // The JSON has both, so we keep both.
+  example_sentence_target: string;
+  example_sentence_native: string;
 }
 
+// Updated to match `dialogues.lines` from the JSON.
 export interface DialogueLine {
   speaker: "A" | "B";
   target: string;
-  english: string;
+  native: string;
   phonetic: string;
 }
 
+// Updated to match an item in the `dialogues` array from the JSON.
 export interface Dialogue {
-  title: string;
+  id: string;
+  context: string;
   lines: DialogueLine[];
 }
 
@@ -41,33 +42,41 @@ export interface MultipleChoiceExercise {
 }
 
 export interface MatchingPair {
+  id: string;
   target: string;
-  english: string;
+  native: string;
 }
 
+// Updated to match the `exercises` object in the JSON.
 export interface Exercises {
-  fillBlanks: FillBlankExercise[];
-  multipleChoice: MultipleChoiceExercise[];
-  matching: MatchingPair[];
+  fillBlanks?: FillBlankExercise[];
+  multipleChoice?: MultipleChoiceExercise[];
+  matching?: MatchingPair[];
 }
 
-export interface ProgressTracking {
-  xpReward: number;
-  streakBonus: number;
-  badge: string;
-}
-
+// This interface represents the exact structure of a daily lesson JSON file.
 export interface LessonDay {
+  week: number;
   day: number;
   title: string;
-  type: "vocabulary" | "grammar" | "dialogue" | "numbers" | "alphabet" | "reading" | "writing";
-  items: LessonItem[];
-  dialogue: Dialogue;
+  title_native: string;
+  theme: string;
+  path: "survival" | "alphabet" | "numbers";
+  targetLanguage: string;
+  nativeLanguage: string;
+  words: LessonItem[];
+  dialogues: Dialogue[];
   exercises: Exercises;
-  culturalNote: string;
-  progressTracking: ProgressTracking;
+  cultural_note: string;
+  pronunciation_tip: string;
+  progress: {
+    xp: number;
+    streak_bonus: number;
+    badge: string;
+  };
 }
 
+// A wrapper structure for consistency, holding the daily lesson data.
 export interface LanguageLesson {
   week: number;
   language: string;
@@ -78,7 +87,7 @@ export interface LanguageLesson {
 }
 
 
-// === Firestore Data Structures ===
+// === Firestore Data Structures (Unchanged) ===
 
 export interface LessonCache {
   lesson: LanguageLesson;
@@ -91,23 +100,23 @@ export interface LessonCache {
 export interface UserProfile {
   displayName: string;
   email: string;
-  nativeLanguage: string; // From NATIVE_LANGUAGES
-  selectedLanguage: string; // From TARGET_LANGUAGES
+  nativeLanguage: string;
+  selectedLanguage: string;
   subscription: 'free' | 'monthly' | 'yearly';
-  subscriptionExpiry?: any; // Firestore Timestamp
+  subscriptionExpiry?: any;
   xpPoints: number;
   currentStreak: number;
-  lastActiveDate: string; // YYYY-MM-DD
+  lastActiveDate: string;
   aiPlanningEnabled: boolean;
   photoURL?: string;
 }
 
 export interface UserLessonProgress {
   completed: boolean;
-  score: number; // 0-100
-  completedAt: any; // Firestore Timestamp
+  score: number;
+  completedAt: any;
   exerciseResults: {
-    [exerciseId: string]: boolean; // e.g., { "mc1": true, "fb2": false }
+    [exerciseId: string]: boolean;
   };
 }
 
@@ -121,7 +130,7 @@ export interface UserWeekProgress {
 }
 
 
-// === App-specific types ===
+// === App-specific types (Unchanged) ===
 
 export type LearningPath = "survival" | "alphabet" | "numbers";
 

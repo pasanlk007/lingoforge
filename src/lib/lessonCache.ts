@@ -1,9 +1,23 @@
 
-import type { LanguageLesson, LearningPath } from "./types";
+'use server';
 
-export async function getOrGenerateLesson(
+import type { LanguageLesson, LessonDay, LearningPath } from "./types";
+import { promises as fs } from 'fs';
+import path from 'path';
+
+/**
+ * Loads a single day's lesson from a local JSON file.
+ * This function is designed to run on the server.
+ * @param language The target language (e.g., "French").
+ * @param pathName The learning path (e.g., "survival").
+ * @param week The week number.
+ * @param nativeLanguage The user's native language.
+ * @param day The day number.
+ * @returns A LanguageLesson object containing the data for the requested day, or null if not found.
+ */
+export async function getLessonFromFile(
   language: string,
-  path: LearningPath,
+  pathName: LearningPath,
   week: number,
   nativeLanguage: string = "English",
   day: number = 1
@@ -11,46 +25,41 @@ export async function getOrGenerateLesson(
   try {
     const native = nativeLanguage.toLowerCase();
     const target = language.toLowerCase();
-    const filePath = `lessons/${native}_${target}/${path}/week_${String(week).padStart(2, '0')}/day_${day}.json`;
+    // Pad week for consistent file naming (e.g., week_01).
+    const weekFolder = `week_${String(week).padStart(2, '0')}`;
+    const dayFile = `day_${day}.json`;
 
-    let dayData: any = null;
+    const filePath = path.join(
+        process.cwd(), 
+        'public', 
+        'lessons', 
+        `${native}_${target}`, 
+        pathName, 
+        weekFolder, 
+        dayFile
+    );
 
-    if (typeof window === 'undefined') {
-      const { readFileSync, existsSync } = require('fs');
-      const { join } = require('path');
-      const fullPath = join(process.cwd(), 'public', filePath);
+    const fileContents = await fs.readFile(filePath, 'utf-8');
+    const dayData: LessonDay = JSON.parse(fileContents);
 
-      if (!existsSync(fullPath)) {
-        console.error(`[JSON Loader] File not found: ${fullPath}`);
-        return null;
-      }
-      
-      dayData = JSON.parse(readFileSync(fullPath, 'utf-8'));
-    } else {
-      const res = await fetch(`/${filePath}`);
-      if (!res.ok) {
-        console.error(`[JSON Loader] Fetch failed for: /${filePath}`);
-        return null;
-      }
-      dayData = await res.json();
-    }
-
-    // Correctly wrap the loaded daily data into the LanguageLesson structure
-    // This ensures that the object passed to the client component matches the LanguageLesson type
+    // Wrap the single day's data into the LanguageLesson structure.
+    // This creates the { days: [...] } array that client components expect.
     const lesson: LanguageLesson = {
-      week: week,
-      language: language,
-      path: path,
-      title: dayData.title || `Week ${week}`, // Use the title from the day's data or create a default
-      description: `Lesson content for week ${week} of the ${path} path.`,
-      // Wrap the single day's data in an array, as expected by the client component
-      days: [{ ...dayData, day: day }]
+      week: dayData.week,
+      language: dayData.targetLanguage,
+      path: dayData.path,
+      title: dayData.theme || `Week ${dayData.week}`,
+      description: `Lesson for ${dayData.targetLanguage}, ${dayData.path} path, week ${dayData.week}.`,
+      days: [dayData] // Place the loaded day's data into the 'days' array.
     };
 
     return lesson;
 
   } catch (error) {
-    console.error(`[JSON Loader] Error loading lesson from ${filePath}:`, error);
+    // Log a detailed error if the file can't be read or parsed.
+    console.error(`[LessonCache] Error loading lesson file.`, {
+        language, pathName, week, nativeLanguage, day, error
+    });
     return null;
   }
 }
