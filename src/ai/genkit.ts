@@ -1,10 +1,11 @@
 'use server';
 
 import { genkit } from 'genkit';
-import { googleAI } from '@genkit-ai/google-genai';
+import { anthropic } from '@genkit-ai/anthropic';
+import 'dotenv/config';
 
 export const ai = genkit({
   plugins: [
-    googleAI(),
+    anthropic({ apiKey: process.env.ANTHROPIC_API_KEY }),
   ],
 });
