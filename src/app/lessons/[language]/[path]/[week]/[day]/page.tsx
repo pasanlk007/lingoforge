@@ -11,18 +11,45 @@ import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
 
+const LoadingSkeleton = () => (
+    <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1 container mx-auto py-12 max-w-3xl">
+            <div className="space-y-4">
+                <Skeleton className="h-10 w-2/3 mx-auto" />
+                <Skeleton className="h-4 w-1/3 mx-auto" />
+                <Skeleton className="h-8 w-full mt-4" />
+                <div className="mt-8 space-y-6">
+                    <Skeleton className="h-96 w-full" />
+                    <Skeleton className="h-64 w-full" />
+                </div>
+            </div>
+        </main>
+    </div>
+);
+
 export default function LessonPage() {
   const params = useParams();
+  const { language, path, week, day } = params;
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const { language, path, week, day } = params;
-  const dayNum = parseInt(day as string);
-  
   useEffect(() => {
-    if (!language || !path || !week) return;
+    // Only proceed if all params are available.
+    if (!language || !path || !week || !day) {
+        setIsLoading(true); // Keep loading if params are not ready
+        return;
+    }
+    
+    // Check if day is a valid number
+    const dayNum = parseInt(day as string);
+    if (isNaN(dayNum)) {
+        setError(`Invalid day parameter: "${day}". Must be a number.`);
+        setIsLoading(false);
+        return;
+    }
 
     const fetchLesson = async () => {
       setIsLoading(true);
@@ -52,7 +79,7 @@ export default function LessonPage() {
           }
         } else {
           if (response.status === 404) {
-             setError(`Lesson content for Week ${week} of the ${path} path does not exist.`);
+             setError(`Lesson content for Week ${week} of the ${path} path does not exist. Please create the file at 'public${lessonPath}'.`);
           } else {
              setError(`Failed to load lesson file. Status: ${response.status}`);
           }
@@ -67,26 +94,11 @@ export default function LessonPage() {
 
     fetchLesson();
 
-  }, [language, path, week, dayNum]);
+  }, [language, path, week, day]);
 
 
-  if (isLoading) {
-    return (
-        <div className="flex min-h-dvh flex-col bg-background">
-            <Navigation />
-            <main className="flex-1 container mx-auto py-12 max-w-3xl">
-                <div className="space-y-4">
-                    <Skeleton className="h-10 w-2/3 mx-auto" />
-                    <Skeleton className="h-4 w-1/3 mx-auto" />
-                    <Skeleton className="h-8 w-full mt-4" />
-                    <div className="mt-8 space-y-6">
-                        <Skeleton className="h-96 w-full" />
-                        <Skeleton className="h-64 w-full" />
-                    </div>
-                </div>
-            </main>
-        </div>
-    )
+  if (isLoading || !language || !path || !week || !day) {
+    return <LoadingSkeleton />;
   }
 
   if (error) {
@@ -119,9 +131,12 @@ export default function LessonPage() {
   }
 
   if (!lesson) {
-    return null; // Should be covered by loading/error states
+    // This case should ideally not be hit if loading and error states are handled correctly.
+    // It can act as a fallback.
+    return <LoadingSkeleton />;
   }
 
+  const dayNum = parseInt(day as string);
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
