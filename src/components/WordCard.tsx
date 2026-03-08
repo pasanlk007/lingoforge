@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { AudioPlayback } from './AudioPlayback';
 import type { LessonItem } from '@/lib/types';
 import { translations } from '@/lib/translations';
@@ -54,10 +54,13 @@ export function WordCard({ item, language }: WordCardProps) {
         {/* Example Sentences */}
         {item.example_sentence_target && (
             <div className="border-t pt-4 text-sm w-full bg-muted/50 rounded-lg p-3">
-                <p className="font-semibold text-foreground text-left mb-1">Example:</p>
-                <div className="italic text-left space-y-1">
-                    <p>"{item.example_sentence_target}"</p>
-                    <p className="text-muted-foreground">"{item.example_sentence_native}"</p>
+                <p className="font-semibold text-foreground text-left mb-1">{labels.example}:</p>
+                <div className="text-left space-y-1">
+                   <div className="flex items-center gap-2">
+                     <p className="italic flex-1">"{item.example_sentence_target}"</p>
+                     <AudioPlayback text={item.example_sentence_target} languageName={language} />
+                   </div>
+                    <p className="text-muted-foreground italic">"{item.example_sentence_native}"</p>
                 </div>
             </div>
         )}

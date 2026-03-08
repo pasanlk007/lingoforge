@@ -127,6 +127,7 @@ export const translations = {
     wordCard: {
       phonetic: 'Phonetic',
       meaning: 'Meaning',
+      example: 'Example',
     },
     ui: {
       // survival page
@@ -303,6 +304,7 @@ export const translations = {
     wordCard: {
       phonetic: 'උච්චාරණය',
       meaning: 'තේරුම',
+      example: 'උදාහරණය',
     },
     ui: {
       // survival page
@@ -479,6 +481,7 @@ export const translations = {
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
       meaning: 'अर्थ',
+      example: 'उदाहरण',
     }
   },
   Urdu: {
@@ -605,6 +608,7 @@ export const translations = {
     wordCard: {
       phonetic: 'صوتیات',
       meaning: 'معنی',
+      example: 'مثال',
     }
   },
   Bengali: {
@@ -731,6 +735,7 @@ export const translations = {
     wordCard: {
       phonetic: 'উচ্চারণ',
       meaning: 'অর্থ',
+      example: 'উদাহরণ',
     }
   },
   Nepali: {
@@ -857,6 +862,7 @@ export const translations = {
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
       meaning: 'अर्थ',
+      example: 'उदाहरण',
     }
   }
 };
@@ -886,3 +892,4 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+

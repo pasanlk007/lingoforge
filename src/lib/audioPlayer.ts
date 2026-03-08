@@ -14,11 +14,12 @@ class AudioPlayer {
   constructor() {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       this.synthesis = window.speechSynthesis;
-      // The 'voiceschanged' event is crucial for loading voices, especially on mobile.
+      // It can take a moment for voices to load, especially on first visit.
+      // We must listen for the 'voiceschanged' event.
       this.synthesis.onvoiceschanged = this.loadVoices;
-      this.loadVoices(); // Initial attempt to load voices.
+      this.loadVoices(); // Also try to load them immediately.
     } else {
-      console.warn("Web Speech API is not supported in this browser.");
+      console.warn("Web Speech API (TTS) is not supported in this browser.");
     }
   }
 
@@ -28,7 +29,7 @@ class AudioPlayer {
       if (newVoices.length > 0) {
         this.voices = newVoices;
         this.voicesLoaded = true;
-        // console.log('Voices loaded:', this.voices.length);
+        // console.log(`[AudioPlayer] ${this.voices.length} voices loaded.`);
       }
     }
   };
@@ -41,59 +42,65 @@ class AudioPlayer {
    */
   public speak(text: string, languageName: string, rate: number = 1.0): void {
     if (!this.synthesis) {
-      console.error("Speech synthesis is not supported or initialized.");
+      console.error("[AudioPlayer] Speech synthesis is not supported or initialized.");
       return;
     }
 
+    // If voices haven't loaded yet, try one more time.
+    // This is a fallback for browsers where 'voiceschanged' might be inconsistent.
+    if (!this.voicesLoaded) {
+      this.loadVoices();
+    }
+    
+    // Cancel any ongoing speech
     if (this.synthesis.speaking) {
       this.synthesis.cancel();
     }
-    
-    if (!this.voicesLoaded) {
-        this.loadVoices();
-        if (!this.voicesLoaded) {
-            console.error("No voices available for speech synthesis. Trying again shortly.");
-            // We can try to speak anyway, as some browsers might pick it up.
-        }
-    }
 
-    if (text !== "") {
+    if (text) {
       const languageInfo = TARGET_LANGUAGES.find(lang => lang.name === languageName);
       if (!languageInfo) {
-        console.error(`Language code not found for ${languageName}`);
+        console.error(`[AudioPlayer] Language code not found for language name: "${languageName}"`);
         return;
       }
 
       const utterance = new SpeechSynthesisUtterance(text);
 
-      utterance.onend = () => {
-        // console.log("SpeechSynthesisUtterance.onend");
-      };
-
+      utterance.onend = () => {};
       utterance.onerror = (event) => {
-        console.error("SpeechSynthesisUtterance.onerror", event);
+        console.error("[AudioPlayer] SpeechSynthesisUtterance.onerror", event);
       };
 
-      // Find the best voice for the language code.
-      // We search with both 'fr-FR' and 'fr' style language codes.
-      const voice = this.voices.find(v => v.lang === languageInfo.code) 
-                    || this.voices.find(v => v.lang.startsWith(languageInfo.code.split('-')[0]));
-
+      // Find the best available voice for the language code (e.g., 'fr-FR')
+      let voice = this.voices.find(v => v.lang === languageInfo.code);
+      
+      // If not found, try finding a voice for the base language (e.g., 'fr')
+      if (!voice) {
+        const baseLang = languageInfo.code.split('-')[0];
+        voice = this.voices.find(v => v.lang.startsWith(baseLang));
+      }
 
       if (voice) {
         utterance.voice = voice;
       } else {
-        // Fallback to the language code if a specific voice is not found.
-        // This is important for some browsers/OS.
+        // As a final fallback, set the lang property. The browser will use its default.
         utterance.lang = languageInfo.code;
-        if(this.voicesLoaded) {
-            console.warn(`No specific voice found for ${languageInfo.code}. Using language fallback.`);
+        if (this.voicesLoaded) {
+          // Only warn if we've loaded voices but still couldn't find a match.
+          console.warn(`[AudioPlayer] No specific voice found for ${languageInfo.code}. Using browser default.`);
         }
       }
 
       utterance.pitch = 1;
       utterance.rate = rate;
-      this.synthesis.speak(utterance);
+      
+      // A brief timeout can sometimes help on certain browsers where calling .speak() immediately after .cancel() fails.
+      setTimeout(() => {
+        if(this.synthesis) {
+          this.synthesis.speak(utterance);
+        }
+      }, 100);
+
     }
   }
 
