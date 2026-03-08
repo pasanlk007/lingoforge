@@ -79,38 +79,46 @@ export default function LessonPage() {
         const response = await fetch(lessonPath);
 
         if (response.ok) {
-          const jsonData = await response.json();
-          let dayData: LessonDay | undefined;
+          const textData = await response.text();
+          try {
+            const jsonData = JSON.parse(textData);
+            let dayData: LessonDay | undefined;
 
-          if (Array.isArray(jsonData.days)) {
-            const weeklyPlan = jsonData as WeeklyLessonPlan;
-            dayData = weeklyPlan.days.find(d => d.day === dayNum);
-          } else {
-            const singleDayData = jsonData as LessonDay;
-            if (singleDayData.day === dayNum) {
-              dayData = singleDayData;
+            if (Array.isArray(jsonData.days)) {
+              const weeklyPlan = jsonData as WeeklyLessonPlan;
+              dayData = weeklyPlan.days.find(d => d.day === dayNum);
+            } else {
+              const singleDayData = jsonData as LessonDay;
+              if (singleDayData.day === dayNum) {
+                dayData = singleDayData;
+              }
             }
-          }
 
-          if (dayData) {
-            const formattedLesson: LanguageLesson = {
-              week: dayData.week,
-              language: dayData.targetLanguage,
-              path: dayData.path,
-              title: dayData.title,
-              description: dayData.theme,
-              days: [dayData],
-            };
-            setLesson(formattedLesson);
-          } else {
-            setError(t.errorContentNotFound
-                .replace('{day}', dayNum.toString())
+            if (dayData) {
+              const formattedLesson: LanguageLesson = {
+                week: dayData.week,
+                language: dayData.targetLanguage,
+                path: dayData.path,
+                title: dayData.title,
+                description: dayData.theme,
+                days: [dayData],
+              };
+              setLesson(formattedLesson);
+            } else {
+              setError(t.errorDayNotFound
+                  .replace('{day}', dayNum.toString())
+                  .replace('{lessonPath}', lessonPath)
+              );
+            }
+          } catch (jsonError: any) {
+             setError(t.errorInvalidJson
                 .replace('{lessonPath}', lessonPath)
+                .replace('{error}', jsonError.message)
             );
           }
         } else {
           if (response.status === 404) {
-             setError(t.errorContentNotFound
+             setError(t.errorWeekNotFound
                 .replace('{week}', week as string)
                 .replace('{path}', path as string)
                 .replace('{lessonPath}', lessonPath)

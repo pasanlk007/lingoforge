@@ -140,7 +140,9 @@ export const translations = {
       day: "Day",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
-      errorContentNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
+      errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
+      errorDayNotFound: "Could not find data for Day {day} in the file '{lessonPath}'. Make sure the 'days' array in the JSON file contains an entry for this day.",
+      errorInvalidJson: "The lesson file at '{lessonPath}' contains invalid JSON. Please check the file for syntax errors. Error: {error}",
       errorGeneric: "Failed to load lesson file. Status: {status}",
       errorInvalidDay: 'Invalid day parameter: "{day}". Must be a number.',
       backToDashboard: "Back to Dashboard",
@@ -317,7 +319,9 @@ export const translations = {
       day: "දිනය",
       // lesson page errors
       errorTitle: "පාඩම පූරණය කළ නොහැක",
-      errorContentNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
+      errorWeekNotFound: "{path} මාර්ගයේ {week} වන සතිය සඳහා පාඩම් අන්තර්ගතය නොමැත. කරුණාකර 'public{lessonPath}' හි ගොනුව සාදන්න.",
+      errorDayNotFound: "'{lessonPath}' ගොනුවේ {day} වන දිනය සඳහා දත්ත සොයාගත නොහැකි විය. JSON ගොනුවේ 'days' অ্যারে එකේ මෙම දිනය සඳහා ඇතුළත් කිරීමක් ඇති බවට වග බලා ගන්න.",
+      errorInvalidJson: "'{lessonPath}' හි ඇති පාඩම් ගොනුවේ වලංගු නොවන JSON අඩංගු වේ. කරුණාකර වාක්‍ය ඛණ්ඩ දෝෂ සඳහා ගොනුව පරීක්ෂා කරන්න. දෝෂය: {error}",
       errorGeneric: "පාඩම් ගොනුව පූරණය කිරීමට අසමත් විය. තත්ත්වය: {status}",
       errorInvalidDay: 'වලංගු නොවන දින පරාමිතිය: "{day}". එය අංකයක් විය යුතුය.',
       backToDashboard: "පාලන පුවරුව වෙත ආපසු",
@@ -892,4 +896,5 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+
 
