@@ -11,6 +11,7 @@ import { Separator } from './ui/separator';
 interface SentenceScramblePanelProps {
   exercises: SentenceScrambleExerciseType[];
   onComplete: (isCorrect: boolean) => void;
+  t: any;
 }
 
 type WordOption = {
@@ -18,7 +19,7 @@ type WordOption = {
   originalIndex: number;
 }
 
-const ScrambleExercise = ({ exercise, onComplete }: { exercise: SentenceScrambleExerciseType, onComplete: (isCorrect: boolean) => void }) => {
+const ScrambleExercise = ({ exercise, onComplete, t }: { exercise: SentenceScrambleExerciseType, onComplete: (isCorrect: boolean) => void, t: any }) => {
   const initialWords = useMemo(() => exercise.scrambled.map((text, originalIndex) => ({ text, originalIndex })), [exercise.scrambled]);
   
   const [availableWords, setAvailableWords] = useState<WordOption[]>(initialWords);
@@ -65,7 +66,7 @@ const ScrambleExercise = ({ exercise, onComplete }: { exercise: SentenceScramble
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground italic">
         <Lightbulb className="inline-block h-4 w-4 mr-2" />
-        {`Translate: "${exercise.nativeHint}"`}
+        {t.translate.replace('{hint}', exercise.nativeHint)}
       </p>
 
       {/* The box for the user's sentence */}
@@ -91,20 +92,20 @@ const ScrambleExercise = ({ exercise, onComplete }: { exercise: SentenceScramble
       </div>
 
        <div className="flex items-center gap-4 mt-4">
-            <Button onClick={handleCheck} disabled={chosenWords.length === 0 || !!result}>Check</Button>
-            <Button variant="ghost" onClick={handleReset}>Reset</Button>
+            <Button onClick={handleCheck} disabled={chosenWords.length === 0 || !!result}>{t.check}</Button>
+            <Button variant="ghost" onClick={handleReset}>{t.reset}</Button>
        </div>
        {result === 'correct' && (
-        <p className="text-green-500 font-semibold flex items-center gap-2"><CheckCircle className="h-5 w-5" /> Correct! The sentence is: "{exercise.correct}"</p>
+        <p className="text-green-500 font-semibold flex items-center gap-2"><CheckCircle className="h-5 w-5" /> {t.correctSentence.replace('{sentence}', exercise.correct)}</p>
        )}
        {result === 'incorrect' && (
-        <p className="text-destructive font-semibold flex items-center gap-2"><XCircle className="h-5 w-5" /> Not quite. Try again!</p>
+        <p className="text-destructive font-semibold flex items-center gap-2"><XCircle className="h-5 w-5" /> {t.tryAgain}</p>
        )}
     </div>
   )
 }
 
-export function SentenceScramblePanel({ exercises, onComplete }: SentenceScramblePanelProps) {
+export function SentenceScramblePanel({ exercises, onComplete, t }: SentenceScramblePanelProps) {
   if (!exercises || exercises.length === 0) {
     return null;
   }
@@ -113,13 +114,13 @@ export function SentenceScramblePanel({ exercises, onComplete }: SentenceScrambl
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Shuffle className="h-6 w-6" />
-          <span>Arrange the Words</span>
+          <span>{t.arrangeTheWords}</span>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
         {exercises.map((ex, index) => (
             <div key={ex.id}>
-                <ScrambleExercise exercise={ex} onComplete={onComplete} />
+                <ScrambleExercise exercise={ex} onComplete={onComplete} t={t} />
                 {index < exercises.length - 1 && <Separator className="my-6" />}
             </div>
         ))}

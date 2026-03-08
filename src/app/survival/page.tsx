@@ -8,9 +8,11 @@ import { Navigation } from '@/components/Navigation';
 import { Lock, CheckCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
+import { translations } from '@/lib/translations';
 
 export default function SurvivalPathPage() {
   const [targetLanguage, setTargetLanguage] = useState('french');
+  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -18,8 +20,14 @@ export default function SurvivalPathPage() {
     if (savedTargetLang) {
       setTargetLanguage(savedTargetLang.toLowerCase());
     }
+    const savedNativeLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
+    if (savedNativeLang && translations[savedNativeLang]) {
+      setNativeLanguage(savedNativeLang);
+    }
     setIsMounted(true);
   }, []);
+
+  const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const totalWeeks = 48;
   const unlockedWeeks = 1; // Only week 1 is unlocked initially for new users
@@ -53,8 +61,8 @@ export default function SurvivalPathPage() {
       <main className="flex-1">
         <div className="container mx-auto max-w-3xl py-12 px-4">
           <header className="mb-8 text-center">
-            <h1 className="text-4xl font-bold tracking-tight">Survival Path</h1>
-            <p className="mt-2 text-muted-foreground">A 48-week journey to master essential phrases for daily life.</p>
+            <h1 className="text-4xl font-bold tracking-tight">{t.survivalPath}</h1>
+            <p className="mt-2 text-muted-foreground">{t.survivalPathDesc}</p>
           </header>
 
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
@@ -69,21 +77,21 @@ export default function SurvivalPathPage() {
                     <div className="flex w-full items-center justify-between pr-4">
                       <span className="flex items-center gap-3">
                          {!isUnlocked ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <div className="w-5 h-5" />) }
-                         Week {week}
+                         {t.week} {week}
                       </span>
                       {!isUnlocked && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60">
-                          Locked
+                          {t.locked}
                         </span>
                       )}
                        {isUnlocked && !isCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
-                          {completedDaysInWeek.length} / 7 Days
+                          {completedDaysInWeek.length} / 7 {t.days}
                         </span>
                       )}
                       {isUnlocked && isCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-green-500">
-                          Completed
+                          {t.completed}
                         </span>
                       )}
                     </div>
@@ -96,7 +104,7 @@ export default function SurvivalPathPage() {
                           <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")}>
                             <Link href={`/lessons/${targetLanguage}/survival/${week}/${day}`}>
                               {isDayCompleted && <CheckCircle className="mr-2 h-4 w-4"/>}
-                              {`Day ${day}`}
+                              {`${t.day} ${day}`}
                             </Link>
                           </Button>
                         )

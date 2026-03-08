@@ -10,6 +10,7 @@ import { Terminal, Wrench } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
+import { translations } from '@/lib/translations';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -36,22 +37,33 @@ export default function LessonPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [dayNumber, setDayNumber] = useState<number | null>(null);
+  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    // Only proceed if all params are available and are strings.
+    const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
+    if (savedNativeLang && translations[savedNativeLang]) {
+      setNativeLanguage(savedNativeLang);
+    }
+    setIsMounted(true);
+  }, []);
+  
+  const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+
+  useEffect(() => {
     if (
       typeof language !== 'string' ||
       typeof path !== 'string' ||
       typeof week !== 'string' ||
       typeof day !== 'string'
     ) {
-      setIsLoading(true); // Keep loading until all params are available
+      setIsLoading(true);
       return;
     }
     
     const dayNum = parseInt(day, 10);
     if (isNaN(dayNum)) {
-        setError(`Invalid day parameter: "${day}". Must be a number.`);
+        setError(t.errorInvalidDay.replace('{day}', day));
         setIsLoading(false);
         return;
     }
@@ -70,15 +82,11 @@ export default function LessonPage() {
           const jsonData = await response.json();
           let dayData: LessonDay | undefined;
 
-          // Check if the file is a WeeklyLessonPlan (has a 'days' array)
-          // or a single LessonDay object.
           if (Array.isArray(jsonData.days)) {
             const weeklyPlan = jsonData as WeeklyLessonPlan;
             dayData = weeklyPlan.days.find(d => d.day === dayNum);
           } else {
-            // Assume it's a single LessonDay object.
             const singleDayData = jsonData as LessonDay;
-            // Check if the day in the file matches the day in the URL
             if (singleDayData.day === dayNum) {
               dayData = singleDayData;
             }
@@ -91,17 +99,24 @@ export default function LessonPage() {
               path: dayData.path,
               title: dayData.title,
               description: dayData.theme,
-              days: [dayData], // Wrap in array for LessonClientPage
+              days: [dayData],
             };
             setLesson(formattedLesson);
           } else {
-            setError(`Could not find data for day ${dayNum} in the lesson file at 'public${lessonPath}'. Please check the file structure.`);
+            setError(t.errorContentNotFound
+                .replace('{day}', dayNum.toString())
+                .replace('{lessonPath}', lessonPath)
+            );
           }
         } else {
           if (response.status === 404) {
-             setError(`Lesson content for Week ${week} of the ${path} path does not exist. Please create the file at 'public${lessonPath}'.`);
+             setError(t.errorContentNotFound
+                .replace('{week}', week as string)
+                .replace('{path}', path as string)
+                .replace('{lessonPath}', lessonPath)
+            );
           } else {
-             setError(`Failed to load lesson file. Status: ${response.status}`);
+             setError(t.errorGeneric.replace('{status}', response.status.toString()));
           }
         }
       } catch (e: any) {
@@ -114,10 +129,10 @@ export default function LessonPage() {
 
     fetchLesson();
 
-  }, [language, path, week, day]);
+  }, [language, path, week, day, isMounted, t]);
 
 
-  if (isLoading || dayNumber === null) {
+  if (isLoading || dayNumber === null || !isMounted) {
     return <LoadingSkeleton />;
   }
 
@@ -129,17 +144,17 @@ export default function LessonPage() {
           <div className="container mx-auto py-10 max-w-2xl">
             <Alert variant="destructive">
               <Terminal className="h-4 w-4" />
-              <AlertTitle>Could Not Load Lesson</AlertTitle>
+              <AlertTitle>{t.errorTitle}</AlertTitle>
               <AlertDescription>{error}</AlertDescription>
             </Alert>
             <div className="mt-4 rounded-lg border border-dashed border-yellow-500/50 bg-yellow-500/10 p-4">
               <div className="flex items-start gap-3">
                 <Wrench className="h-5 w-5 text-yellow-400" />
                 <div className='flex-1'>
-                  <h3 className="font-semibold text-yellow-300">Content Not Available</h3>
-                  <p className="text-sm text-yellow-400/80">This lesson has not been created yet. You can create the lesson file in the <code>public/lessons</code> directory. Please see <code>docs/lesson-generation-guide.md</code> for instructions.</p>
+                  <h3 className="font-semibold text-yellow-300">{t.contentNotAvailableTitle}</h3>
+                  <p className="text-sm text-yellow-400/80">{t.contentNotAvailableDesc}</p>
                   <Button asChild className="mt-3">
-                    <Link href="/dashboard">Back to Dashboard</Link>
+                    <Link href="/dashboard">{t.backToDashboard}</Link>
                   </Button>
                 </div>
               </div>

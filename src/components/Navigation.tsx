@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Languages, Menu, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useUser, useAuth } from "@/firebase";
 import {
   DropdownMenu,
@@ -15,18 +15,29 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { translations } from "@/lib/translations";
 
-
-const navLinks = [
-  { href: "/paths", label: "Paths & Features" },
-];
 
 export function Navigation() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const { user, isUserLoading } = useUser();
   const auth = useAuth();
+  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const savedNativeLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
+    if (savedNativeLang && translations[savedNativeLang]) {
+      setNativeLanguage(savedNativeLang);
+    }
+    setIsMounted(true);
+  }, []);
+
+  const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+  const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard) ? translations[nativeLanguage].dashboard : translations.English.dashboard;
 
   const handleLogout = () => {
+    if (!auth) return;
     auth.signOut();
   }
 
@@ -39,20 +50,17 @@ export function Navigation() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
+          <Link
+            href="/paths"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {t.pathsAndFeatures}
+          </Link>
            <Link
               href="/dashboard"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Dashboard
+              {t_dashboard.title}
             </Link>
         </nav>
 
@@ -80,22 +88,22 @@ export function Navigation() {
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link href="/profile">Profile</Link>
+                  <Link href="/profile">{t.profile}</Link>
                 </DropdownMenuItem>
                  <DropdownMenuItem asChild>
-                   <Link href="/dashboard">Dashboard</Link>
+                   <Link href="/dashboard">{t_dashboard.title}</Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={handleLogout}>
                   <LogOut className="mr-2 h-4 w-4" />
-                  <span>Log out</span>
+                  <span>{t.logOut}</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
            ) : (
             <>
-              <Button variant="ghost" asChild><Link href="/login">Log In</Link></Button>
-              <Button asChild><Link href="/signup">Sign Up</Link></Button>
+              <Button variant="ghost" asChild><Link href="/login">{t.logIn}</Link></Button>
+              <Button asChild><Link href="/signup">{t.signUp}</Link></Button>
             </>
            )}
         </div>
@@ -118,22 +126,19 @@ export function Navigation() {
                   <span className="font-headline text-2xl font-bold">LingoForge</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="text-lg font-medium text-muted-foreground"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  <Link
+                    href="/paths"
+                    className="text-lg font-medium text-muted-foreground"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {t.pathsAndFeatures}
+                  </Link>
                    <Link
                       href="/dashboard"
                       className="text-lg font-medium text-muted-foreground"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Dashboard
+                      {t_dashboard.title}
                     </Link>
                 </nav>
                 <div className="mt-auto flex flex-col gap-2">
@@ -141,13 +146,13 @@ export function Navigation() {
                      <div className="h-10 w-full animate-pulse rounded-md bg-muted" />
                    ) : user ? (
                     <>
-                      <Button asChild onClick={() => setMenuOpen(false)}><Link href="/profile">Profile</Link></Button>
-                      <Button variant="ghost" onClick={() => { handleLogout(); setMenuOpen(false); }}>Log Out</Button>
+                      <Button asChild onClick={() => setMenuOpen(false)}><Link href="/profile">{t.profile}</Link></Button>
+                      <Button variant="ghost" onClick={() => { handleLogout(); setMenuOpen(false); }}>{t.logOut}</Button>
                     </>
                    ) : (
                     <>
-                      <Button variant="ghost" onClick={() => setMenuOpen(false)} asChild><Link href="/login">Log In</Link></Button>
-                      <Button onClick={() => setMenuOpen(false)} asChild><Link href="/signup">Sign Up</Link></Button>
+                      <Button variant="ghost" onClick={() => setMenuOpen(false)} asChild><Link href="/login">{t.logIn}</Link></Button>
+                      <Button onClick={() => setMenuOpen(false)} asChild><Link href="/signup">{t.signUp}</Link></Button>
                     </>
                    )}
                 </div>

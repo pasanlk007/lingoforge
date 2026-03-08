@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
 import type { LanguageLesson, LessonDay } from '@/lib/types';
@@ -15,6 +15,7 @@ import { ProgressBar } from '@/components/ProgressBar';
 import Confetti from 'react-dom-confetti';
 import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
+import { translations } from '@/lib/translations';
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;
@@ -28,9 +29,22 @@ const confettiConfig = {
 };
 
 export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) {
+    const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
+        if (savedNativeLang && translations[savedNativeLang]) {
+          setNativeLanguage(savedNativeLang);
+        }
+        setIsMounted(true);
+    }, []);
+
+    const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+
     const dayData: LessonDay | undefined = lesson?.days?.[0];
     
-    if (!dayData) {
+    if (!dayData || !isMounted) {
         return (
           <div className="container mx-auto py-10">
             <Alert variant="destructive">
@@ -91,7 +105,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
             <header className="mb-6">
                 <div className="flex items-center justify-between mb-4">
                      <Button variant="ghost" asChild>
-                       <Link href="/dashboard"><ArrowLeft className="mr-2 h-4 w-4" /> Dashboard</Link>
+                       <Link href="/dashboard"><ArrowLeft className="mr-2 h-4 w-4" /> {t.dashboard}</Link>
                      </Button>
                      <div className="text-center">
                         <h1 className="font-bold text-lg">{dayData.title}</h1>
@@ -101,12 +115,12 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 </div>
                  <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                        <span className="text-xs font-semibold">WEEK PROGRESS</span>
+                        <span className="text-xs font-semibold">{t.weekProgress}</span>
                         <ProgressBar value={weekProgress} />
                         <span className="text-sm font-semibold text-muted-foreground">{currentDay}/7</span>
                     </div>
                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-semibold">DAY PROGRESS</span>
+                        <span className="text-xs font-semibold">{t.dayProgress}</span>
                         <ProgressBar value={exerciseProgress} />
                         <span className="text-sm font-semibold text-muted-foreground">{Math.floor(exerciseProgress)}%</span>
                     </div>
@@ -117,7 +131,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 
                 {/* Vocabulary Section */}
                 <Card>
-                    <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>Vocabulary</CardTitle></CardHeader>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>{t.vocabulary}</CardTitle></CardHeader>
                     <CardContent>
                        {hasWords ? (
                            <div className="flex flex-col items-center">
@@ -128,40 +142,40 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                     <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
                                </div>
                            </div>
-                       ) : <p className="text-center text-muted-foreground py-8">No vocabulary for this lesson.</p>}
+                       ) : <p className="text-center text-muted-foreground py-8">{t.noVocabulary}</p>}
                     </CardContent>
                 </Card>
                 
                 {/* Dialogues Section */}
                 {hasDialogues && Array.isArray(dialogues) && (
-                    <DialoguePanel dialogues={dialogues} language={lesson.language} />
+                    <DialoguePanel dialogues={dialogues} language={lesson.language} t={t} />
                 )}
 
                 {/* Exercises Section (Fill-in-the-blank, Matching) */}
                 {hasExercises && exercises && (
-                    <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} />
+                    <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} t={t} />
                 )}
 
                 {/* Sentence Scramble Exercise Section */}
                 {hasSentenceScramble && exercises?.sentenceScramble && (
-                    <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} />
+                    <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} t={t} />
                 )}
                 
                 {/* Notes Section */}
                 {(hasPronunciationTip || hasCulturalNote) && (
                   <Card>
-                    <CardHeader><CardTitle className="flex items-center gap-2"><LanguagesIcon className="h-6 w-6"/>Tips & Culture</CardTitle></CardHeader>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><LanguagesIcon className="h-6 w-6"/>{t.tipsAndCulture}</CardTitle></CardHeader>
                     <CardContent className="space-y-4">
                       {hasPronunciationTip && (
                         <div>
-                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2"><Speaker className="h-5 w-5"/>Pronunciation Tip</h4>
+                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2"><Speaker className="h-5 w-5"/>{t.pronunciationTip}</h4>
                           <p className="text-muted-foreground italic">"{pronunciation_tip}"</p>
                         </div>
                       )}
                       {hasPronunciationTip && hasCulturalNote && <Separator />}
                       {hasCulturalNote && (
                         <div>
-                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2">🌍 Cultural Note</h4>
+                          <h4 className="font-semibold text-md mb-1 flex items-center gap-2">🌍 {t.culturalNote}</h4>
                           <p className="text-muted-foreground italic">"{cultural_note}"</p>
                         </div>
                       )}
@@ -175,17 +189,19 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         {dayCompleted ? (
                              <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
                                 <CheckCircle className="h-4 w-4" />
-                                <AlertTitle className="font-bold">Day Complete!</AlertTitle>
+                                <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                                 <AlertDescription className="text-xs">
-                                  You've earned {progress?.xp ?? 0} XP and a {progress?.streak_bonus ?? 0} streak bonus.
+                                  {t.earnedXP
+                                    .replace('{xp}', progress?.xp.toString() ?? '0')
+                                    .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
                                 </AlertDescription>
                             </Alert>
                         ) : (
                              <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay}>
-                                <CheckCircle className="mr-2 h-5 w-5" /> Complete Day (+{progress?.xp ?? 0} XP)
+                                <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
                             </Button>
                         )}
-                        {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">Complete at least 50% of exercises to finish.</p>}
+                        {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
                     </div>
                 </section>
             </main>

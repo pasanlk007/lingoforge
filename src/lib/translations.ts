@@ -1,5 +1,3 @@
-
-
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -93,6 +91,7 @@ export const translations = {
     footerLangs: "Available in your language.",
     footerCredit: "© 2026 LingoForge. Built for migrants, by people who understand the journey.",
     dashboard: {
+      title: "Dashboard",
       welcome: "Welcome back",
       ready: "Ready to continue your language journey? Let's do this.",
       currentStreak: "Current Streak",
@@ -128,6 +127,56 @@ export const translations = {
     wordCard: {
       phonetic: 'Phonetic',
       meaning: 'Meaning',
+    },
+    ui: {
+      // survival page
+      survivalPath: "Survival Path",
+      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      week: "Week",
+      locked: "Locked",
+      days: "Days",
+      completed: "Completed",
+      day: "Day",
+      // lesson page errors
+      errorTitle: "Could Not Load Lesson",
+      errorContentNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
+      errorGeneric: "Failed to load lesson file. Status: {status}",
+      errorInvalidDay: 'Invalid day parameter: "{day}". Must be a number.',
+      backToDashboard: "Back to Dashboard",
+      contentNotAvailableTitle: "Content Not Available",
+      contentNotAvailableDesc: "This lesson has not been created yet. You can create the lesson file in the `public/lessons` directory. Please see `docs/lesson-generation-guide.md` for instructions.",
+      // lesson client page
+      weekProgress: "WEEK PROGRESS",
+      dayProgress: "DAY PROGRESS",
+      vocabulary: "Vocabulary",
+      noVocabulary: "No vocabulary for this lesson.",
+      dialogues: "Dialogues",
+      tipsAndCulture: "Tips & Culture",
+      pronunciationTip: "Pronunciation Tip",
+      culturalNote: "Cultural Note",
+      dayComplete: "Day Complete!",
+      earnedXP: "You've earned {xp} XP and a {streak_bonus} streak bonus.",
+      completeDay: "Complete Day (+{xp} XP)",
+      complete50Percent: "Complete at least 50% of exercises to finish.",
+      // exercises
+      practiceExercises: "Practice Exercises",
+      fillInTheBlanks: "Fill in the Blanks",
+      correct: "Correct!",
+      matchingPairs: "Matching Pairs",
+      greatJob: "Great job!",
+      allPairsMatched: "All pairs matched correctly!",
+      arrangeTheWords: "Arrange the Words",
+      translate: 'Translate: "{hint}"',
+      check: "Check",
+      reset: "Reset",
+      correctSentence: 'Correct! The sentence is: "{sentence}"',
+      tryAgain: "Not quite. Try again!",
+      // navigation
+      pathsAndFeatures: "Paths & Features",
+      logIn: "Log In",
+      signUp: "Sign Up",
+      profile: "Profile",
+      logOut: "Log Out",
     }
   },
   Sinhala: {
@@ -218,6 +267,7 @@ export const translations = {
     footerLangs: "ඔබේ භාෂාවෙන් ලබා ගත හැකිය.",
     footerCredit: "© 2026 LingoForge. සංක්‍රමණිකයන් සඳහා, ගමන තේරුම් ගන්නා අය විසින් ගොඩනගන ලදී.",
     dashboard: {
+      title: "පාලන පුවරුව",
       welcome: "නැවතත් සාදරයෙන් පිළිගනිමු",
       ready: "ඔබේ භාෂා ගමන ඉදිරියට ගෙන යාමට සූදානම්ද? අපි එය කරමු.",
       currentStreak: "වර්තමාන Streak",
@@ -253,6 +303,56 @@ export const translations = {
     wordCard: {
       phonetic: 'උච්චාරණය',
       meaning: 'තේරුම',
+    },
+    ui: {
+      // survival page
+      survivalPath: "Survival මාවත",
+      survivalPathDesc: "දෛනික ජීවිතයට අත්‍යවශ්‍ය වාක්‍ය ඛණ්ඩ ප්‍රගුණ කිරීමට සති 48ක ගමනක්.",
+      week: "සතිය",
+      locked: "අගුළු දමා ඇත",
+      days: "දින",
+      completed: "සම්පූර්ණයි",
+      day: "දිනය",
+      // lesson page errors
+      errorTitle: "පාඩම පූරණය කළ නොහැක",
+      errorContentNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
+      errorGeneric: "පාඩම් ගොනුව පූරණය කිරීමට අසමත් විය. තත්ත්වය: {status}",
+      errorInvalidDay: 'වලංගු නොවන දින පරාමිතිය: "{day}". එය අංකයක් විය යුතුය.',
+      backToDashboard: "පාලන පුවරුව වෙත ආපසු",
+      contentNotAvailableTitle: "අන්තර්ගතය ලබා ගත නොහැක",
+      contentNotAvailableDesc: "මෙම පාඩම තවම නිර්මාණය කර නොමැත. ඔබට 'public/lessons' නාමාවලියෙහි පාඩම් ගොනුව සෑදිය හැක. උපදෙස් සඳහා කරුණාකර `docs/lesson-generation-guide.md` බලන්න.",
+      // lesson client page
+      weekProgress: "සතියේ ප්‍රගතිය",
+      dayProgress: "දවසේ ප්‍රගතිය",
+      vocabulary: "වචන මාලාව",
+      noVocabulary: "මෙම පාඩම සඳහා වචන මාලාවක් නොමැත.",
+      dialogues: "දෙබස්",
+      tipsAndCulture: "උපදෙස් සහ සංස්කෘතිය",
+      pronunciationTip: "උච්චාරණ උපදෙස්",
+      culturalNote: "සංස්කෘතික සටහන",
+      dayComplete: "දවස සම්පූර්ණයි!",
+      earnedXP: "ඔබ XP {xp} ක් සහ දින {streak_bonus} ක streak bonus එකක් ලබා ගත්තා.",
+      completeDay: "දවස සම්පූර්ණ කරන්න (+{xp} XP)",
+      complete50Percent: "අවසන් කිරීමට අවම වශයෙන් 50% ක් වත් අභ්‍යාස සම්පූර්ණ කරන්න.",
+      // exercises
+      practiceExercises: "පුහුණු අභ්‍යාස",
+      fillInTheBlanks: "හිස්තැන් පුරවන්න",
+      correct: "නිවැරදියි!",
+      matchingPairs: "ගලපන යුගල",
+      greatJob: "නියමයි!",
+      allPairsMatched: "සියලුම යුගල නිවැරදිව ගලපා ඇත!",
+      arrangeTheWords: "වචන සකසන්න",
+      translate: 'පරිවර්තනය කරන්න: "{hint}"',
+      check: "පරීක්ෂා කරන්න",
+      reset: "යළි පිහිටුවන්න",
+      correctSentence: 'නිවැරදියි! වාක්‍යය නම්: "{sentence}"',
+      tryAgain: "සම්පූර්ණයෙන්ම හරි නෑ. නැවත උත්සාහ කරන්න!",
+      // navigation
+      pathsAndFeatures: "මාර්ග සහ විශේෂාංග",
+      logIn: "ඇතුල් වන්න",
+      signUp: "ලියාපදිංචි වන්න",
+      profile: "පැතිකඩ",
+      logOut: "ඉවත් වන්න",
     }
   },
   Hindi: {
@@ -343,6 +443,7 @@ export const translations = {
     footerLangs: "आपकी भाषा में उपलब्ध है।",
     footerCredit: "© 2026 LingoForge। प्रवासियों के लिए, यात्रा को समझने वाले लोगों द्वारा बनाया गया।",
     dashboard: {
+      title: "डैशबोर्ड",
       welcome: "वापस स्वागत है",
       ready: "अपनी भाषा यात्रा जारी रखने के लिए तैयार हैं? चलिए इसे करते हैं।",
       currentStreak: "वर्तमान स्ट्रीक",
@@ -468,6 +569,7 @@ export const translations = {
     footerLangs: "آپ کی زبان میں دستیاب ہے۔",
     footerCredit: "© 2026 LingoForge۔ مہاجرین کے لیے، ان لوگوں کے ذریعے بنایا گیا جو سفر کو سمجھتے ہیں۔",
     dashboard: {
+      title: "ڈیش بورڈ",
       welcome: "خوش آمدید",
       ready: "کیا آپ اپنا لسانی سفر جاری رکھنے کے لیے تیار ہیں؟ چلو کرتے ہیں۔",
       currentStreak: "موجودہ اسٹریک",
@@ -593,6 +695,7 @@ export const translations = {
     footerLangs: "আপনার ভাষায় উপলব্ধ।",
     footerCredit: "© 2026 LingoForge। অভিবাসীদের জন্য, যারা যাত্রা বোঝেন তাদের দ্বারা নির্মিত।",
     dashboard: {
+      title: "ড্যাশবোর্ড",
       welcome: "আবার স্বাগতম",
       ready: "আপনার ভাষা যাত্রা চালিয়ে যেতে প্রস্তুত? চলুন শুরু করা যাক।",
       currentStreak: "বর্তমান স্ট্রিক",
@@ -718,6 +821,7 @@ export const translations = {
     footerLangs: "तपाईंको भाषामा उपलब्ध छ।",
     footerCredit: "© 2026 LingoForge। प्रवासीहरूका लागि, यात्रा बुझ्ने मानिसहरूद्वारा निर्मित।",
     dashboard: {
+      title: "ड्यासबोर्ड",
       welcome: "फेरि स्वागत छ",
       ready: "आफ्नो भाषा यात्रा जारी राख्न तयार हुनुहुन्छ? सुरु गरौं।",
       currentStreak: "वर्तमान स्ट्रीक",
@@ -782,4 +886,3 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
-

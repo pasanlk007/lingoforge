@@ -13,25 +13,17 @@ import { Separator } from './ui/separator';
 interface ExercisePanelProps {
   exercises: Exercises;
   onExercisesComplete: (isCorrect: boolean) => void;
+  t: any;
 }
 
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
-
-function FillInTheBlanks({ exercises, onComplete }: { exercises: Exercises['fillBlanks'], onComplete: (isCorrect: boolean) => void }) {
+function FillInTheBlanks({ exercises, onComplete, t }: { exercises: Exercises['fillBlanks'], onComplete: (isCorrect: boolean) => void, t: any }) {
   if (!exercises || exercises.length === 0) return null;
 
   const [fbAnswers, setFbAnswers] = useState<string[]>(Array(exercises.length).fill(''));
 
   return (
     <div>
-      <h3 className="text-lg font-semibold mb-4 flex items-center gap-2"><Puzzle className="w-5 h-5" />Fill in the Blanks</h3>
+      <h3 className="text-lg font-semibold mb-4 flex items-center gap-2"><Puzzle className="w-5 h-5" />{t.fillInTheBlanks}</h3>
       <div className="space-y-6">
         {exercises.map((ex, index) => (
           <div key={ex.id}>
@@ -51,7 +43,7 @@ function FillInTheBlanks({ exercises, onComplete }: { exercises: Exercises['fill
                 }}
               />
             {fbAnswers[index] && fbAnswers[index].toLowerCase() === ex.answer.toLowerCase() && (
-                <p className="text-sm text-green-500 mt-1 flex items-center gap-1"><CheckCircle className="w-4 h-4"/>Correct!</p>
+                <p className="text-sm text-green-500 mt-1 flex items-center gap-1"><CheckCircle className="w-4 h-4"/>{t.correct}</p>
             )}
           </div>
         ))}
@@ -60,7 +52,7 @@ function FillInTheBlanks({ exercises, onComplete }: { exercises: Exercises['fill
   );
 }
 
-function Matching({ exercises, onComplete }: { exercises: Exercises['matching'], onComplete: (isCorrect: boolean) => void }) {
+function Matching({ exercises, onComplete, t }: { exercises: Exercises['matching'], onComplete: (isCorrect: boolean) => void, t: any }) {
     if (!exercises || exercises.length === 0) return null;
 
     const matchingPairs = useMemo(() => exercises ?? [], [exercises]);
@@ -102,7 +94,7 @@ function Matching({ exercises, onComplete }: { exercises: Exercises['matching'],
 
     return (
         <div>
-            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2"><Users className="w-5 h-5"/>Matching Pairs</h3>
+            <h3 className="text-lg font-semibold mb-4 flex items-center gap-2"><Users className="w-5 h-5"/>{t.matchingPairs}</h3>
             <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-2">
                     {matchingTargets.map(target => (
@@ -142,15 +134,15 @@ function Matching({ exercises, onComplete }: { exercises: Exercises['matching'],
             {allMatched && matchingPairs.length > 0 && (
                 <Alert className="mt-4 border-green-500/50 text-green-700 dark:text-green-400">
                   <CheckCircle className="h-4 w-4" />
-                  <AlertTitle>Great job!</AlertTitle>
-                  <AlertDescription>All pairs matched correctly!</AlertDescription>
+                  <AlertTitle>{t.greatJob}</AlertTitle>
+                  <AlertDescription>{t.allPairsMatched}</AlertDescription>
                 </Alert>
             )}
         </div>
     )
 }
 
-export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelProps) {
+export function ExercisePanel({ exercises, onExercisesComplete, t }: ExercisePanelProps) {
   const hasFillBlanks = Array.isArray(exercises.fillBlanks) && exercises.fillBlanks.length > 0;
   const hasMatching = Array.isArray(exercises.matching) && exercises.matching.length > 0;
 
@@ -163,18 +155,27 @@ export function ExercisePanel({ exercises, onExercisesComplete }: ExercisePanelP
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
             <BrainCircuit className="h-6 w-6"/>
-            <span>Practice Exercises</span>
+            <span>{t.practiceExercises}</span>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-8">
         {hasFillBlanks && (
-            <FillInTheBlanks exercises={exercises.fillBlanks} onComplete={onExercisesComplete} />
+            <FillInTheBlanks exercises={exercises.fillBlanks} onComplete={onExercisesComplete} t={t} />
         )}
         {hasFillBlanks && hasMatching && <Separator />}
         {hasMatching && (
-            <Matching exercises={exercises.matching} onComplete={onExercisesComplete} />
+            <Matching exercises={exercises.matching} onComplete={onExercisesComplete} t={t} />
         )}
       </CardContent>
     </Card>
   );
+}
+
+function shuffleArray<T>(array: T[]): T[] {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
 }

@@ -9,15 +9,16 @@ import { Separator } from './ui/separator';
 interface DialoguePanelProps {
   dialogues: Dialogue[];
   language: string;
+  t: any; // translation object
 }
 
-export function DialoguePanel({ dialogues, language }: DialoguePanelProps) {
+export function DialoguePanel({ dialogues, language, t }: DialoguePanelProps) {
   return (
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <MessageSquare className="h-6 w-6" />
-          <span>Dialogues</span>
+          <span>{t.dialogues}</span>
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
