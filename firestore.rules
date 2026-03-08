@@ -29,9 +29,11 @@ service cloud.firestore {
       allow create, update, delete: if isAdmin();
     }
     
-    // ADMIN USERS: Not client-accessible. Managed via Firebase Console.
+    // ADMIN USERS: Only the owner of an admin record can read it to check their own status.
+    // Writing should be done via the Firebase Console for security.
     match /adminUsers/{userId} {
-        allow read, write: if false;
+        allow get: if isOwner(userId);
+        allow list, create, update, delete: if false;
     }
 
     // USER PROGRESS (Example for future use)
