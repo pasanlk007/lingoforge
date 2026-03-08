@@ -1,3 +1,4 @@
+
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -9,7 +10,7 @@ export const translations = {
     selectNative: "I speak...",
     selectTarget: "I am going to...",
     startBtn: "Start My Journey - Free",
-    viewPaths: "See Learning Paths",
+    viewPaths: "View Available Languages",
     path1Title: "Survival Path",
     path1Desc: "Essential phrases to survive from day one in a new country.",
     path2Title: "Alphabet Path",
@@ -188,7 +189,7 @@ export const translations = {
     selectNative: "මා කතා කරන්නේ...",
     selectTarget: "මා යන රට...",
     startBtn: "මගේ ගමන ආරම්භ කරන්න - නොමිලේ",
-    viewPaths: "ඉගෙනුම් මාර්ග බලන්න",
+    viewPaths: "පවතින භාෂා බලන්න",
     path1Title: "පැවැත්මේ මාර්ගය",
     path1Desc: "නව රටක පළමු දිනයේ සිටම දිවි ගෙවීමට අත්‍යවශ්‍ය වාක්‍ය.",
     path2Title: "අකුරු මාර්ගය",
@@ -367,7 +368,7 @@ export const translations = {
     selectNative: "मैं बोलता/बोलती हूँ...",
     selectTarget: "मैं जा रहा/रही हूँ...",
     startBtn: "मेरी यात्रा शुरू करें - मुफ्त",
-    viewPaths: "सीखने के रास्ते देखें",
+    viewPaths: "उपलब्ध भाषाएं देखें",
     path1Title: "जीवन रक्षा मार्ग",
     path1Desc: "नए देश में पहले दिन से जीवित रहने के लिए ज़रूरी वाक्यांश।",
     path2Title: "वर्णमाला मार्ग",
@@ -494,7 +495,7 @@ export const translations = {
     selectNative: "میں بولتا/بولتی ہوں...",
     selectTarget: "میں جا رہا/رہی ہوں...",
     startBtn: "میرا سفر شروع کریں - مفت",
-    viewPaths: "سیکھنے کے راستے دیکھیں",
+    viewPaths: "دستیاب زبانیں دیکھیں",
     path1Title: "بقا کا راستہ",
     path1Desc: "نئے ملک میں پہلے دن سے زندہ رہنے کے لیے ضروری جملے۔",
     path2Title: "حروف تہجی کا راستہ",
@@ -621,7 +622,7 @@ export const translations = {
     selectNative: "আমি বলি...",
     selectTarget: "আমি যাচ্ছি...",
     startBtn: "আমার যাত্রা শুরু করুন - বিনামূল্যে",
-    viewPaths: "শেখার পথগুলি দেখুন",
+    viewPaths: "উপলব্ধ ভাষাগুলি দেখুন",
     path1Title: "বেঁচে থাকার পথ",
     path1Desc: "নতুন দেশে প্রথম দিন থেকে বেঁচে থাকতে প্রয়োজনীয় বাক্যাংশ।",
     path2Title: "বর্ণমালার পথ",
@@ -748,7 +749,7 @@ export const translations = {
     selectNative: "म बोल्छु...",
     selectTarget: "म जाँदैछु...",
     startBtn: "मेरो यात्रा सुरु गर्नुहोस् - नि: शुल्क",
-    viewPaths: "सिक्ने मार्गहरू हेर्नुहोस्",
+    viewPaths: "उपलब्ध भाषाहरू हेर्नुहोस्",
     path1Title: "जीवन रक्षा मार्ग",
     path1Desc: "नयाँ देशमा पहिलो दिनदेखि बाँच्नको लागि आवश्यक वाक्यांशहरू।",
     path2Title: "वर्णमाला मार्ग",
@@ -900,6 +901,7 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+
 
 
 

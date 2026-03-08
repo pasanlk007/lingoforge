@@ -42,6 +42,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { 
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function LandingPage() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
@@ -115,14 +122,34 @@ export default function LandingPage() {
 
           <div className="container mx-auto px-6">
             <div className="relative z-10 text-center max-w-3xl mx-auto">
-              <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 17 Languages Available</Badge>
+              <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 21 Languages Available</Badge>
               <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">{t.heroTitle}</h1>
               <p className="mt-4 max-w-xl mx-auto text-lg md:text-xl text-slate-300">{t.heroSub}</p>
               
               <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
                  <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
-                    <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700" onClick={handleStartJourney}>{t.viewPaths}</Button>
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700">{t.viewPaths}</Button>
+                      </DialogTrigger>
+                      <DialogContent className="bg-slate-800 border-slate-700 text-white sm:max-w-2xl">
+                        <DialogHeader>
+                          <DialogTitle>{t.features.langs.title}</DialogTitle>
+                        </DialogHeader>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-4 max-h-[60vh] overflow-y-auto">
+                          {targetLanguages.map((lang) => (
+                            <div key={lang.lang} className="flex items-center gap-3 rounded-md p-2 hover:bg-slate-700">
+                              <span className="text-3xl">{lang.flag}</span>
+                              <div>
+                                <p className="font-semibold">{lang.lang}</p>
+                                <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                  </div>
               </div>
             </div>
