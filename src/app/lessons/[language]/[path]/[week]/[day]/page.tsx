@@ -11,24 +11,6 @@ import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
 
-function MissingLessonNotice() {
-  return (
-    <div className="mt-4 rounded-lg border border-dashed border-yellow-500/50 bg-yellow-500/10 p-4">
-      <div className="flex items-start gap-3">
-        <Wrench className="h-5 w-5 text-yellow-400" />
-        <div className='flex-1'>
-          <h3 className="font-semibold text-yellow-300">Content Not Available</h3>
-          <p className="text-sm text-yellow-400/80">This lesson has not been created yet. The app currently only has pre-generated content for a limited number of weeks.</p>
-          <Button asChild className="mt-3">
-            <Link href="/dashboard">Back to Dashboard</Link>
-          </Button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-
 export default function LessonPage() {
   const params = useParams();
 
@@ -118,7 +100,18 @@ export default function LessonPage() {
               <AlertTitle>Could Not Load Lesson</AlertTitle>
               <AlertDescription>{error}</AlertDescription>
             </Alert>
-            <MissingLessonNotice />
+            <div className="mt-4 rounded-lg border border-dashed border-yellow-500/50 bg-yellow-500/10 p-4">
+              <div className="flex items-start gap-3">
+                <Wrench className="h-5 w-5 text-yellow-400" />
+                <div className='flex-1'>
+                  <h3 className="font-semibold text-yellow-300">Content Not Available</h3>
+                  <p className="text-sm text-yellow-400/80">This lesson has not been created yet. You can create the lesson file in the <code>public/lessons</code> directory. Please see <code>docs/lesson-generation-guide.md</code> for instructions.</p>
+                  <Button asChild className="mt-3">
+                    <Link href="/dashboard">Back to Dashboard</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
