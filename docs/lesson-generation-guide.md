@@ -70,7 +70,8 @@ This is an example of a valid JSON object for a single **week's** lesson plan. I
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
           "example_sentence_target": "Bonjour, comment ça va ?",
-          "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?"
+          "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?",
+          "example_sentence_phonetic": "බොන්-ෂූහ්, කො-මෝන්-සා-වා?"
         }
       ],
       "dialogues": [
@@ -120,7 +121,7 @@ This is an example of a valid JSON object for a single **week's** lesson plan. I
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
-      "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder."}],
+      "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}],
       "dialogues": [],
       "exercises": {},
       "cultural_note": "Placeholder",

@@ -49,6 +49,7 @@ export interface LessonItem {
   english: string;
   example_sentence_target: string;
   example_sentence_native: string;
+  example_sentence_phonetic: string;
 }
 
 export interface DialogueLine {

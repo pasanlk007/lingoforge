@@ -95,9 +95,10 @@
         "native_meaning": { "type": "string", "description": "The meaning of the word in the native language." },
         "english": { "type": "string", "description": "The meaning of the word in English (for reference)." },
         "example_sentence_target": { "type": "string", "description": "An example sentence using the word in the target language." },
-        "example_sentence_native": { "type": "string", "description": "The translation of the example sentence in the native language." }
+        "example_sentence_native": { "type": "string", "description": "The translation of the example sentence in the native language." },
+        "example_sentence_phonetic": { "type": "string", "description": "A simple phonetic spelling of the example sentence." }
       },
-      "required": ["id", "target", "phonetic", "native_meaning", "english", "example_sentence_target", "example_sentence_native"]
+      "required": ["id", "target", "phonetic", "native_meaning", "english", "example_sentence_target", "example_sentence_native", "example_sentence_phonetic"]
     },
     "Dialogue": {
       "type": "object",

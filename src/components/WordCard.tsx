@@ -55,11 +55,14 @@ export function WordCard({ item, language }: WordCardProps) {
         {item.example_sentence_target && (
             <div className="border-t pt-4 text-sm w-full bg-muted/50 rounded-lg p-3">
                 <p className="font-semibold text-foreground text-left mb-1">{labels.example}:</p>
-                <div className="text-left space-y-1">
+                <div className="text-left space-y-2">
                    <div className="flex items-center gap-2">
                      <p className="italic flex-1">"{item.example_sentence_target}"</p>
                      <AudioPlayback text={item.example_sentence_target} languageName={language} />
                    </div>
+                    {item.example_sentence_phonetic && (
+                        <p className="text-accent">"{item.example_sentence_phonetic}"</p>
+                    )}
                     <p className="text-muted-foreground italic">"{item.example_sentence_native}"</p>
                 </div>
             </div>
