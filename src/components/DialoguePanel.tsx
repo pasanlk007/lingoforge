@@ -25,7 +25,7 @@ export function DialoguePanel({ dialogues, language }: DialoguePanelProps) {
           <div key={dialogue.id}>
             <h4 className="font-semibold text-md mb-2">{dialogue.context}</h4>
             <div className="space-y-4">
-              {dialogue.lines.map((line, lineIndex) => (
+              {Array.isArray(dialogue.lines) && dialogue.lines.map((line, lineIndex) => (
                 <div key={lineIndex} className="flex items-start gap-4">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-muted font-bold text-muted-foreground">
                     {line.speaker}
