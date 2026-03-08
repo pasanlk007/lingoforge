@@ -1,135 +1,136 @@
-# Guide for Generating Daily Language Lessons
+# Guide for Generating Weekly Language Lessons
 
-To generate a daily lesson file that is compatible with the LingoForge application, the output **must** be a single, raw JSON object that validates against the structure defined in `lesson-schema.json`.
+To generate a weekly lesson file that is compatible with the LingoForge application, the output **must** be a single, raw JSON object that validates against the structure defined in `weekly-lesson-schema.json`.
 
 Do not wrap the JSON in markdown code blocks (```json) or any other text. The output must be the JSON object itself.
 
 ## Sample Prompt for AI
 
 ```
-Please generate a daily language lesson based on the following parameters. The output must be a single, raw JSON object that strictly follows the structure defined in the provided JSON Schema.
+Please generate a complete 7-day weekly language lesson plan based on the following parameters. The output must be a single, raw JSON object that strictly follows the structure defined in the provided JSON Schema for a weekly plan.
 
 - **Target Language:** French
-- **Native Language:** English
+- **Native Language:** Sinhala
 - **Path:** survival
 - **Week:** 1
-- **Day:** 1
-- **Theme:** "Basic Greetings & Introductions"
+- **Overall Weekly Theme:** "Basic Greetings, Introductions, and Politeness"
 
-Here is the JSON schema to follow:
-<PASTE THE CONTENT OF lesson-schema.json HERE>
+**Instructions for each day:**
+- **Day 1:** Basic Greetings (Bonjour, Merci)
+- **Day 2:** Common Politeness (Oui, Non, S'il vous plaît)
+- **Day 3:** Introducing Yourself (Je m'appelle...)
+- **Day 4:** Asking "How are you?" (Comment ça va?)
+- **Day 5:** Saying Goodbye (Au revoir, À bientôt)
+- **Day 6:** Numbers 1-5
+- **Day 7:** Review and combine concepts from the week.
 
-Here is a sample of the expected output structure:
-<PASTE THE SAMPLE JSON OBJECT FROM BELOW HERE>
+**For EACH of the 7 days, the JSON object must include:**
+- 5 vocabulary `words`.
+- At least 2 `dialogues`.
+- Exercises: at least one of each type (`fillBlanks`, `matching`, `multipleChoice`, `sentenceScramble`).
+- A `cultural_note`.
+- A `pronunciation_tip`.
+- All text fields for the native language (e.g., `native_meaning`, `example_sentence_native`, `nativeHint`) must be in Sinhala.
+- Phonetic spellings should be simple and easy for a Sinhala speaker to read.
+
+Here is the **weekly** JSON schema to follow:
+<PASTE THE CONTENT OF weekly-lesson-schema.json HERE>
+
+Here is a sample of the expected **weekly** output structure:
+<PASTE THE SAMPLE WEEKLY JSON OBJECT FROM BELOW HERE>
 ```
 
 ---
 
-## Sample JSON Object
+## Sample Weekly JSON Object
 
-This is an example of a valid JSON object for a single day's lesson.
+This is an example of a valid JSON object for a single **week's** lesson plan. It contains a `days` array with 7 daily lesson objects.
 
 ```json
 {
   "week": 1,
-  "day": 1,
-  "title": "Week 1 Day 1: Basic Greetings",
-  "title_native": "Semaine 1 Jour 1 : Salutations de base",
-  "theme": "Greetings & Introductions",
   "path": "survival",
   "targetLanguage": "French",
-  "nativeLanguage": "English",
-  "words": [
+  "nativeLanguage": "Sinhala",
+  "days": [
     {
-      "id": "w1_1_1",
-      "target": "Bonjour",
-      "phonetic": "bon-ZHOOR",
-      "native_meaning": "Hello",
-      "english": "Hello",
-      "example_sentence_target": "Bonjour, comment ça va ?",
-      "example_sentence_native": "Hello, how are you?"
-    },
-    {
-      "id": "w1_1_2",
-      "target": "Merci",
-      "phonetic": "mer-SEE",
-      "native_meaning": "Thank you",
-      "english": "Thank you",
-      "example_sentence_target": "Merci beaucoup.",
-      "example_sentence_native": "Thank you very much."
-    },
-    {
-      "id": "w1_1_3",
-      "target": "Au revoir",
-      "phonetic": "o ruh-VWAHR",
-      "native_meaning": "Goodbye",
-      "english": "Goodbye",
-      "example_sentence_target": "Au revoir, à demain.",
-      "example_sentence_native": "Goodbye, see you tomorrow."
-    }
-  ],
-  "dialogues": [
-    {
-      "id": "d1_1_1",
-      "context": "Meeting someone for the first time.",
-      "lines": [
+      "week": 1,
+      "day": 1,
+      "title": "1 වන සතිය, 1 වන දිනය: මූලික සුබ පැතුම්",
+      "title_native": "Semaine 1, Jour 1 : Salutations de base",
+      "theme": "Greetings & Introductions",
+      "path": "survival",
+      "targetLanguage": "French",
+      "nativeLanguage": "Sinhala",
+      "words": [
         {
-          "speaker": "A",
-          "target": "Bonjour, je m'appelle Marie.",
-          "native": "Hello, my name is Marie.",
-          "phonetic": "bon-ZHOOR, zhuh ma-PELL ma-REE."
-        },
-        {
-          "speaker": "B",
-          "target": "Bonjour Marie, je suis Paul.",
-          "native": "Hello Marie, I am Paul.",
-          "phonetic": "bon-ZHOOR ma-REE, zhuh swee POL."
+          "id": "w1_1_1",
+          "target": "Bonjour",
+          "phonetic": "බොන්-ෂූහ්",
+          "native_meaning": "ආයුබෝවන්",
+          "english": "Hello",
+          "example_sentence_target": "Bonjour, comment ça va ?",
+          "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?"
         }
-      ]
-    }
-  ],
-  "exercises": {
-    "fillBlanks": [
-      {
-        "id": "fb1_1_1",
-        "sentence": "Pour dire 'Hello' en français, on dit __.",
-        "answer": "Bonjour",
-        "hint": "Starts with 'B'"
-      }
-    ],
-    "matching": [
-      {
-        "id": "m1_1_1",
-        "target": "Bonjour",
-        "native": "Hello"
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "පළමු වරට කෙනෙකු හමුවීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour, je m'appelle Marie.",
+              "native": "ආයුබෝවන්, මගේ නම මාරි.",
+              "phonetic": "බොන්-ෂූහ්, ෂuh මා-පෙල් මාරි."
+            },
+            {
+              "speaker": "B",
+              "target": "Bonjour Marie, je suis Paul.",
+              "native": "ආයුබෝවන් මාරි, මම පෝල්.",
+              "phonetic": "බොන්-ෂූහ් මාරි, ෂuh ස්වී පෝල්."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+            {
+                "id": "ss1_1_1",
+                "scrambled": ["ça", "va", "comment", "?"],
+                "correct": "comment ça va ?",
+                "nativeHint": "ඔබට කොහොමද?"
+            }
+        ]
       },
-      {
-        "id": "m1_1_2",
-        "target": "Merci",
-        "native": "Thank you"
+      "cultural_note": "ප්‍රංශයේදී, ආගන්තුකයන්ට ආචාර කිරීමේදී අතට අත දීම සහ මිතුරන් හා පවුලේ අය සමඟ 'la bise' (කම්මුල් වලට හාදුවක්) දීම සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "'Bonjour' හි 'r' යනු ඉංග්‍රීසි භාෂාවේ මෙන් දැඩි 'r' ශබ්දයක් නොව, උගුරේ පිටුපසින් නිකුත් කරන මෘදු ශබ්දයකි.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-Greetings"
       }
-    ],
-    "multipleChoice": [
-        {
-            "id": "mc1_1_1",
-            "question": "How do you say 'Goodbye' in French?",
-            "options": [
-                "Bonjour",
-                "Merci",
-                "Au revoir",
-                "Oui"
-            ],
-            "correct": 2,
-            "explanation": "'Au revoir' is the common way to say goodbye."
-        }
-    ]
-  },
-  "cultural_note": "When greeting someone in France, it's common to shake hands with strangers and do 'la bise' (a kiss on the cheeks) with friends and family.",
-  "pronunciation_tip": "The 'r' in 'Bonjour' is a soft sound made in the back of the throat, not a hard 'r' like in English.",
-  "progress": {
-    "xp": 100,
-    "streak_bonus": 20,
-    "badge": "W1D1-Greetings"
-  }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Day 2: Placeholder",
+      "title_native": "Placeholder",
+      "theme": "Placeholder",
+      "path": "survival",
+      "targetLanguage": "French",
+      "nativeLanguage": "Sinhala",
+      "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder."}],
+      "dialogues": [],
+      "exercises": {},
+      "cultural_note": "Placeholder",
+      "pronunciation_tip": "Placeholder",
+      "progress": {
+        "xp": 0,
+        "streak_bonus": 0,
+        "badge": "W1D2-Placeholder"
+      }
+    }
+  ]
 }
 ```
