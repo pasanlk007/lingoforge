@@ -29,7 +29,7 @@ export default function SurvivalPathPage() {
 
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
-  const totalWeeks = 12;
+  const totalWeeks = 48;
   const unlockedWeeks = 12;
 
   // This would come from user data in a real app
