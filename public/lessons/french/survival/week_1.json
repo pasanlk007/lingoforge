@@ -2,7 +2,7 @@
   "week": 1,
   "day": 1,
   "title": "Week 1 Day 1: Basic Greetings",
-  "title_native": "1 වන සතිය, 1 වන දිනය: මූලික ආචාර කිරීම්",
+  "title_native": "1 වන සතිය 1 වන දිනය: මූලික සුබ පැතුම්",
   "theme": "Greetings & Introductions",
   "path": "survival",
   "targetLanguage": "French",
@@ -50,14 +50,14 @@
       "phonetic": "නොන්",
       "native_meaning": "නැහැ",
       "english": "No",
-      "example_sentence_target": "Non, je ne veux pas.",
-      "example_sentence_native": "නැහැ, මට අවශ්‍ය නැහැ."
+      "example_sentence_target": "Non, merci.",
+      "example_sentence_native": "නැහැ, ස්තූතියි."
     }
   ],
   "dialogues": [
     {
       "id": "d1_1_1",
-      "context": "Meeting someone for the first time.",
+      "context": "පළමු වරට කෙනෙකුව මුණගැසීම.",
       "lines": [
         {
           "speaker": "A",
@@ -75,64 +75,64 @@
     },
     {
       "id": "d1_1_2",
-      "context": "Asking for something politely.",
+      "context": "ඔබට යමක් අවශ්‍ය දැයි යමෙකු ඇසීම.",
       "lines": [
         {
           "speaker": "A",
-          "target": "S'il vous plaît, un café.",
-          "native": "කරුණාකර, කෝපි එකක්.",
-          "phonetic": "සිල් වූ ප්ලේ, අන් කැෆේ."
+          "target": "Vous voulez du café ?",
+          "native": "ඔබට කෝපි අවශ්‍යද?",
+          "phonetic": "වූ වූ-ලේ දූ ක-ෆේ?"
         },
         {
           "speaker": "B",
-          "target": "Oui, tout de suite. Merci.",
-          "native": "ඔව්, දැන්ම දෙන්නම්. ස්තූතියි.",
-          "phonetic": "වී, තූ ද් ස්වීත්. මැක්-සී."
+          "target": "Oui, s'il vous plaît.",
+          "native": "ඔව්, කරුණාකර.",
+          "phonetic": "වී, සිල් වූ ප්ලේ."
         }
       ]
     },
     {
-      "id": "d1_1_3",
-      "context": "Saying goodbye.",
-      "lines": [
-        {
-          "speaker": "A",
-          "target": "Au revoir!",
-          "native": "ගිහින් එන්නම්!",
-          "phonetic": "ඕ හෙ-ව්වා!"
-        },
-        {
-          "speaker": "B",
-          "target": "À bientôt!",
-          "native": "ඉක්මනින් හමුවෙමු!",
-          "phonetic": "ආ බියන්-තෝ!"
-        }
-      ]
+        "id": "d1_1_3",
+        "context": "යමෙකුට සමුදීම.",
+        "lines": [
+            {
+                "speaker": "A",
+                "target": "Au revoir, bonne journée.",
+                "native": "ගිහින් එන්නම්, සුබ දවසක්.",
+                "phonetic": "ඕ හෙ-ව්වා, බොන් ෂුර්-නේ."
+            },
+            {
+                "speaker": "B",
+                "target": "Merci, à vous aussi.",
+                "native": "ස්තූතියි, ඔබටත් එසේමයි.",
+                "phonetic": "මැක්-සී, ආ වූස් ඕ-සී."
+            }
+        ]
     },
     {
-      "id": "d1_1_4",
-      "context": "Apologizing.",
-      "lines": [
-        {
-          "speaker": "A",
-          "target": "Pardon, je ne parle pas français.",
-          "native": "කණගාටුයි, මම ප්‍රංශ කතා කරන්නේ නැහැ.",
-          "phonetic": "පාර්-දොන්, ෂ න පාර්ල් පා ෆ්‍රොන්-සේ."
-        },
-        {
-          "speaker": "B",
-          "target": "Ce n'est pas grave.",
-          "native": "ඒකට කමක් නැහැ.",
-          "phonetic": "ස නේ පා ග්‍රාව්."
-        }
-      ]
+        "id": "d1_1_4",
+        "context": "යමක් ප්‍රතික්ෂේප කිරීම.",
+        "lines": [
+            {
+                "speaker": "A",
+                "target": "Encore un peu de gâteau ?",
+                "native": "තව ටිකක් කේක් කනවද?",
+                "phonetic": "ඔන්-කෝ අන් ප-තී ද ග-තෝ?"
+            },
+            {
+                "speaker": "B",
+                "target": "Non, merci. Je suis plein.",
+                "native": "නැහැ, ස්තූතියි. මට ඇති.",
+                "phonetic": "නොන්, මැක්-සී. ෂ ස්වී ප්ලාන්."
+            }
+        ]
     }
   ],
   "exercises": {
     "fillBlanks": [
       {
         "id": "fb1_1_1",
-        "sentence": "'Hello' කීමට ප්‍රංශ භාෂාවෙන් කියන්නේ __.",
+        "sentence": "ප්‍රංශ භාෂාවෙන් 'Hello' කියන්න, අපි කියන්නේ __.",
         "answer": "Bonjour",
         "hint": "'B' වලින් පටන් ගනී"
       }
@@ -147,24 +147,33 @@
         "id": "m1_1_2",
         "target": "Merci",
         "native": "ස්තූතියි"
-      },
-      {
-        "id": "m1_1_3",
-        "target": "Au revoir",
-        "native": "ගිහින් එන්නම්"
       }
+    ],
+    "multipleChoice": [
+        {
+            "id": "mc1_1_1",
+            "question": "ප්‍රංශ භාෂාවෙන් 'Goodbye' කියන්නේ කොහොමද?",
+            "options": [
+                "Bonjour",
+                "Merci",
+                "Au revoir",
+                "Oui"
+            ],
+            "correct": 2,
+            "explanation": "'Au revoir' යනු සමුගැනීමට පොදු ක්‍රමයයි."
+        }
     ],
     "sentenceScramble": [
       {
         "id": "ss1_1_1",
-        "scrambled": ["ne", "parle", "pas", "français", "Je"],
-        "correct": "Je ne parle pas français",
-        "nativeHint": "මම ප්‍රංශ කතා කරන්නේ නැහැ."
+        "scrambled": ["parle", "français", "pas", "je", "ne"],
+        "correct": "Je ne parle pas français.",
+        "nativeHint": "කණගාටුයි, මම ප්‍රංශ කතා කරන්නේ නැහැ."
       }
     ]
   },
-  "cultural_note": "ප්‍රංශයේදී ආචාර කරන විට, ආගන්තුකයන් සමඟ අතට අත දීම සහ මිතුරන් හා පවුලේ අය සමඟ 'la bise' (කම්මුල්වලට හාදුවක් දීම) සාමාන්‍ය දෙයකි.",
-  "pronunciation_tip": "'Bonjour' හි 'r' ශබ්දය ඉංග්‍රීසි 'r' මෙන් නොව, උගුරේ පිටුපසින් කරන මෘදු ශබ්දයකි.",
+  "cultural_note": "ප්‍රංශයේදී කෙනෙකුව ආචාර කරන විට, නාඳුනන අය සමඟ අතට අත දීම සහ මිතුරන් හා පවුලේ අය සමඟ 'la bise' (කම්මුල්වලට හාදුවක්) දීම සාමාන්‍ය දෙයකි.",
+  "pronunciation_tip": "'Bonjour' හි 'r' යනු ඉංග්‍රීසියෙහි මෙන් දැඩි 'r' ශබ්දයක් නොව, උගුරේ පිටුපසින් නිකුත් කරන මෘදු ශබ්දයකි.",
   "progress": {
     "xp": 100,
     "streak_bonus": 20,
