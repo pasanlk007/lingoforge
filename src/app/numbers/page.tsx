@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase/provider';
+import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
 import { collection } from 'firebase/firestore';
 import type { UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -54,8 +54,10 @@ export default function NumbersPathPage() {
 
     progressData.forEach(weekProgress => {
       completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-      if (weekProgress.daysCompleted.length > 0) {
+      if (weekProgress.daysCompleted.length === 7) {
         maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week + 1);
+      } else if (weekProgress.daysCompleted.length > 0) {
+        maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week);
       }
     });
 

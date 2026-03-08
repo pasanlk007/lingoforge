@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase/provider';
+import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
 import { collection } from 'firebase/firestore';
 import type { UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -42,7 +42,7 @@ export default function SurvivalPathPage() {
 
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
-  const totalWeeks = 48;
+  const totalWeeks = 12;
 
   // Determine unlocked weeks and completed days from Firestore data
   const { unlockedWeeks, completedDays } = useMemo(() => {
@@ -54,8 +54,10 @@ export default function SurvivalPathPage() {
 
     progressData.forEach(weekProgress => {
       completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-      if (weekProgress.daysCompleted.length > 0) {
+      if (weekProgress.daysCompleted.length === 7) { // Only unlock next week if current is fully complete
         maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week + 1);
+      } else if (weekProgress.daysCompleted.length > 0) {
+        maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week);
       }
     });
 
