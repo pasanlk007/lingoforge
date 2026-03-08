@@ -29,8 +29,8 @@ service cloud.firestore {
         allow list, create, update, delete: if false;
     }
 
-    // USER PROGRESS (Example for future use)
-    match /userProgress/{userId}/{document=**} {
+    // USER PROGRESS: User can only read/write their own progress documents.
+    match /userProgress/{userId}/{path}/{weekId} {
       allow read, write: if isOwner(userId);
     }
   }

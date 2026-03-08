@@ -59,7 +59,7 @@ export default function SignupPage() {
         email: user.email!,
         nativeLanguage: nativeLanguage,
         selectedLanguage: 'French',
-        subscription: 'free',
+        subscriptionType: 'free',
         xpPoints: 0,
         currentStreak: 0,
         lastActiveDate: new Date().toISOString().split('T')[0],

@@ -1,7 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase/provider';
+import { collection } from 'firebase/firestore';
+import type { UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
@@ -14,6 +17,16 @@ export default function AlphabetPathPage() {
   const [targetLanguage, setTargetLanguage] = useState('french');
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
+
+  const { user, isUserLoading } = useUser();
+  const firestore = useFirestore();
+
+  const progressCollectionRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return collection(firestore, 'userProgress', user.uid, 'alphabet');
+  }, [user, firestore]);
+
+  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
 
   useEffect(() => {
     const savedTargetLang = localStorage.getItem('targetLanguage');
@@ -30,14 +43,26 @@ export default function AlphabetPathPage() {
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const totalWeeks = 48;
-  const unlockedWeeks = 1;
 
-  // This would come from user data in a real app
-  const completedDays = {
-    1: [], // User has completed 0 days in week 1 for this path
-  };
+  // Determine unlocked weeks and completed days from Firestore data
+  const { unlockedWeeks, completedDays } = useMemo(() => {
+    if (!progressData) {
+      return { unlockedWeeks: 1, completedDays: {} };
+    }
+    const completedDaysMap: { [week: number]: number[] } = {};
+    let maxUnlockedWeek = 1;
 
-  if (!isMounted) {
+    progressData.forEach(weekProgress => {
+      completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
+      if (weekProgress.daysCompleted.length > 0) {
+        maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week + 1);
+      }
+    });
+
+    return { unlockedWeeks: maxUnlockedWeek, completedDays: completedDaysMap };
+  }, [progressData]);
+
+  if (!isMounted || isUserLoading || isProgressLoading) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -68,7 +93,7 @@ export default function AlphabetPathPage() {
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
             {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
               const isUnlocked = week <= unlockedWeeks;
-              const completedDaysInWeek = completedDays[week as keyof typeof completedDays] || [];
+              const completedDaysInWeek = completedDays[week] || [];
               const isCompleted = completedDaysInWeek.length === 7;
               
               return (

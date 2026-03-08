@@ -115,7 +115,7 @@ export interface UserProfile {
   email: string;
   nativeLanguage: string;
   selectedLanguage: string;
-  subscription: 'free' | 'monthly' | 'yearly';
+  subscriptionType: 'free' | 'monthly' | 'yearly';
   subscriptionExpiry?: any;
   xpPoints: number;
   currentStreak: number;
@@ -134,9 +134,8 @@ export interface UserLessonProgress {
 }
 
 export interface UserWeekProgress {
-  language: string;
-  path: string;
   week: number;
+  path: string;
   daysCompleted: number[];
   weekCompleted: boolean;
   selectedTopic?: string;

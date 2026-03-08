@@ -82,7 +82,7 @@ export default function ProfilePage() {
                     </div>
                     <div>
                         <p className="font-semibold text-muted-foreground">Subscription</p>
-                        <p className="text-lg font-bold capitalize">{userProfile?.subscription || 'free'}</p>
+                        <p className="text-lg font-bold capitalize">{userProfile?.subscriptionType || 'free'}</p>
                     </div>
                      <div>
                         <p className="font-semibold text-muted-foreground">Selected Language</p>

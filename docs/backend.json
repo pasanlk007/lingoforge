@@ -76,6 +76,33 @@
             }
         },
         "required": ["uid", "role"]
+    },
+    "UserWeekProgress": {
+      "title": "UserWeekProgress",
+      "type": "object",
+      "description": "Tracks a user's progress for a specific week in a learning path.",
+      "properties": {
+        "week": {
+          "type": "number",
+          "description": "The week number."
+        },
+        "path": {
+          "type": "string",
+          "description": "The learning path ('survival', 'alphabet', 'numbers')."
+        },
+        "daysCompleted": {
+          "type": "array",
+          "description": "An array of day numbers (1-7) that the user has completed.",
+          "items": {
+            "type": "number"
+          }
+        },
+        "weekCompleted": {
+          "type": "boolean",
+          "description": "Flag indicating if all 7 days of the week are complete."
+        }
+      },
+      "required": ["week", "path", "daysCompleted", "weekCompleted"]
     }
   },
   "auth": {
@@ -103,6 +130,15 @@
             "$ref": "#/entities/AdminUser"
           },
           "description": "Collection to store admin user roles."
+        }
+      },
+      {
+        "path": "/userProgress/{userId}/{path}/{weekId}",
+        "definition": {
+            "schema": {
+                "$ref": "#/entities/UserWeekProgress"
+            },
+            "description": "Stores a user's progress for a specific week within a learning path. {path} can be 'survival', 'alphabet', or 'numbers'. {weekId} should be in the format 'week_1', 'week_2', etc."
         }
       }
     ]

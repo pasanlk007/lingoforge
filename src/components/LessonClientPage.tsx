@@ -1,9 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
-import type { LanguageLesson, LessonDay } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase/provider';
+import { setDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
+import { doc } from 'firebase/firestore';
+import type { LanguageLesson, LessonDay, UserProfile, UserWeekProgress } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -17,6 +20,7 @@ import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
 import { translations } from '@/lib/translations';
 import { TooltipProvider } from './ui/tooltip';
+import { differenceInCalendarDays } from 'date-fns';
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;
@@ -33,9 +37,30 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [dayCompleted, setDayCompleted] = useState(false);
     const [exercisesCorrect, setExercisesCorrect] = useState(0);
     const [showConfetti, setShowConfetti] = useState(false);
+
+    const { user } = useUser();
+    const firestore = useFirestore();
+
+    const dayData: LessonDay | undefined = lesson?.days?.[0];
+
+    const userProfileRef = useMemoFirebase(() => {
+        if (!user || !firestore) return null;
+        return doc(firestore, 'userProfiles', user.uid);
+    }, [user, firestore]);
+    const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
+
+    const weekProgressRef = useMemoFirebase(() => {
+        if (!user || !firestore || !dayData) return null;
+        return doc(firestore, 'userProgress', user.uid, dayData.path, `week_${dayData.week}`);
+    }, [user, firestore, dayData]);
+    const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
+
+    const isDayCompleted = useMemo(() => {
+        return weekProgressData?.daysCompleted?.includes(currentDay) || false;
+    }, [weekProgressData, currentDay]);
+
 
     useEffect(() => {
         const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
@@ -46,8 +71,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     }, []);
 
     const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
-    
-    const dayData: LessonDay | undefined = lesson?.days?.[0];
     
     if (!dayData || !isMounted) {
         return (
@@ -90,15 +113,52 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     }
     
     const handleCompleteDay = () => {
-        setDayCompleted(true);
+        if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile) return;
+
         setShowConfetti(true);
+
+        // Don't award points if day is already completed
+        if (isDayCompleted) return;
+
+        // 1. Update week progress
+        const currentCompletedDays = weekProgressData?.daysCompleted || [];
+        const newCompletedDays = [...new Set([...currentCompletedDays, currentDay])];
+        const weekData: Partial<UserWeekProgress> = {
+            daysCompleted: newCompletedDays,
+            path: dayData.path,
+            week: dayData.week,
+            weekCompleted: newCompletedDays.length === 7,
+        };
+        setDocumentNonBlocking(weekProgressRef, weekData, { merge: true });
+
+        // 2. Update user profile (XP and Streak)
+        const xpToAdd = (progress?.xp || 0) + (progress?.streak_bonus || 0);
+        const newXp = (userProfile.xpPoints || 0) + xpToAdd;
+        
+        let newStreak = userProfile.currentStreak || 0;
+        const today = new Date();
+        const lastActive = new Date(userProfile.lastActiveDate);
+        const daysDifference = differenceInCalendarDays(today, lastActive);
+
+        if (daysDifference === 1) {
+            newStreak++; // Consecutive day
+        } else if (daysDifference > 1) {
+            newStreak = 1; // Streak broken, reset to 1
+        } // if daysDifference is 0 or less, streak doesn't change today
+
+        updateDocumentNonBlocking(userProfileRef, {
+            xpPoints: newXp,
+            currentStreak: newStreak,
+            lastActiveDate: today.toISOString().split('T')[0]
+        });
     }
 
     const totalExercises = (exercises?.fillBlanks?.length ?? 0) + (exercises?.matching?.length ?? 0) + (exercises?.sentenceScramble?.length ?? 0);
-    const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCorrect / totalExercises) * 100, 100) : 0;
-    const canCompleteDay = exerciseProgress >= 50; // User must complete at least 50% of exercises
+    const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCorrect / totalExercises) * 100, 100) : 100; // default to 100 if no exercises
+    const canCompleteDay = exerciseProgress >= 50;
 
     const weekProgress = (currentDay / 7) * 100;
+    const streakCount = userProfile?.currentStreak || 0;
 
     return (
         <TooltipProvider>
@@ -106,13 +166,13 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 <header className="mb-6">
                     <div className="flex items-center justify-between mb-4">
                          <Button variant="ghost" asChild>
-                           <Link href="/dashboard"><ArrowLeft className="mr-2 h-4 w-4" /> {t.dashboard}</Link>
+                           <Link href={`/${dayData.path}`}><ArrowLeft className="mr-2 h-4 w-4" /> {t.backToDashboard}</Link>
                          </Button>
                          <div className="text-center">
                             <h1 className="font-bold text-lg">{dayData.title}</h1>
                             <p className="text-sm text-muted-foreground">{dayData.theme}</p>
                          </div>
-                         <StreakCounter count={5} />
+                         <StreakCounter count={streakCount} />
                     </div>
                      <div className="space-y-2">
                         <div className="flex items-center gap-2">
@@ -131,21 +191,21 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 <main className="space-y-8">
                     
                     {/* Vocabulary Section */}
-                    <Card>
+                    {hasWords && (
+                      <Card>
                         <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>{t.vocabulary}</CardTitle></CardHeader>
                         <CardContent>
-                           {hasWords ? (
-                               <div className="flex flex-col items-center">
-                                   <WordCard item={words[currentWordIndex]} language={lesson.language} />
-                                   <div className="flex items-center justify-center mt-2 w-full max-w-sm">
-                                        <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
-                                        <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {words.length}</span>
-                                        <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
-                                   </div>
-                               </div>
-                           ) : <p className="text-center text-muted-foreground py-8">{t.noVocabulary}</p>}
+                          <div className="flex flex-col items-center">
+                              <WordCard item={words[currentWordIndex]} language={lesson.language} />
+                              <div className="flex items-center justify-center mt-2 w-full max-w-sm">
+                                    <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
+                                    <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {words.length}</span>
+                                    <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
+                              </div>
+                          </div>
                         </CardContent>
-                    </Card>
+                      </Card>
+                    )}
                     
                     {/* Dialogues Section */}
                     {hasDialogues && Array.isArray(dialogues) && (
@@ -186,8 +246,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                     
                     <section className="text-center py-6 flex flex-col items-center">
                         <div className="relative">
-                            <div className="absolute -inset-20"><Confetti active={showConfetti} config={confettiConfig} /></div>
-                            {dayCompleted ? (
+                            <div className="absolute -inset-20"><Confetti active={showConfetti || isDayCompleted} config={confettiConfig} /></div>
+                            {isDayCompleted ? (
                                  <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
                                     <CheckCircle className="h-4 w-4" />
                                     <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
@@ -200,9 +260,9 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                             ) : (
                                  <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
-                                </Button>
+                                 </Button>
                             )}
-                            {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
+                            {!isDayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
                         </div>
                     </section>
                 </main>
