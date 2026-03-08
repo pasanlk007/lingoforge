@@ -48,7 +48,7 @@ export const translations = {
       streak: { title: "Streak System", desc: "Stay motivated with daily streaks" },
       progress: { title: "Progress Tracking", desc: "See how far you have come every week" },
       certs: { title: "Certificates", desc: "Earn proof of your progress" },
-      langs: { title: "17 Languages", desc: "European, Asian, Middle Eastern" },
+      langs: { title: "21 Languages", desc: "European, Asian, Middle Eastern" },
     },
     freePlan: {
       title: "Free Forever",
@@ -227,7 +227,7 @@ export const translations = {
       streak: { title: "දිනපතා Streak", desc: "දිනපතා streaks සමඟින් පෙළඹී සිටින්න" },
       progress: { title: "ප්‍රගති නිරීක්ෂණය", desc: "සෑම සතියකම ඔබ කොතරම් දුරක් පැමිණ ඇත්දැයි බලන්න" },
       certs: { title: "සහතික", desc: "ඔබේ ප්‍රගතිය පිළිබඳ සාක්ෂි උපයන්න" },
-      langs: { title: "භාෂා 17", desc: "යුරෝපීය, ආසියානු, මැද පෙරදිග" },
+      langs: { title: "භාෂා 21", desc: "යුරෝපීය, ආසියානු, මැද පෙරදිග" },
     },
     freePlan: {
       title: "සදහටම නොමිලේ",
@@ -406,7 +406,7 @@ export const translations = {
       streak: { title: "स्ट्रीक प्रणाली", desc: "दैनिक स्ट्रीक्स से प्रेरित रहें" },
       progress: { title: "प्रगति ट्रैकिंग", desc: "देखें कि आप हर हफ्ते कितनी दूर आ गए हैं" },
       certs: { title: "प्रमाणपत्र", desc: "अपनी प्रगति का प्रमाण अर्जित करें" },
-      langs: { title: "17 भाषाएँ", desc: "यूरोपीय, एशियाई, मध्य पूर्वी" },
+      langs: { title: "21 भाषाएँ", desc: "यूरोपीय, एशियाई, मध्य पूर्वी" },
     },
     freePlan: {
       title: "हमेशा के लिए मुफ्त",
@@ -533,7 +533,7 @@ export const translations = {
       streak: { title: "اسٹریک سسٹم", desc: "روزانہ اسٹریک کے ساتھ متحرک رہیں" },
       progress: { title: "پیشرفت سے باخبر رہنا", desc: "دیکھیں کہ آپ ہر ہفتے کتنی ترقی کر چکے ہیں" },
       certs: { title: "سرٹیفکیٹس", desc: "اپنی پیشرفت کا ثبوت حاصل کریں" },
-      langs: { title: "17 زبانیں", desc: "یورپی، ایشیائی، مشرق وسطیٰ" },
+      langs: { title: "21 زبانیں", desc: "یورپی، ایشیائی، مشرق وسطیٰ" },
     },
     freePlan: {
       title: "ہمیشہ کے لیے مفت",
@@ -660,7 +660,7 @@ export const translations = {
       streak: { title: "স্ট্রিক সিস্টেম", desc: "দৈনিক স্ট্রিকের সাথে অনুপ্রাণিত থাকুন" },
       progress: { title: "অগ্রগতি ট্র্যাকিং", desc: "দেখুন প্রতি সপ্তাহে আপনি কতটা এগিয়েছেন" },
       certs: { title: "সার্টিফিকেট", desc: "আপনার অগ্রগতির প্রমাণ অর্জন করুন" },
-      langs: { title: "১৭টি ভাষা", desc: "ইউরোপীয়, এশিয়ান, মধ্যপ্রাচ্য" },
+      langs: { title: "21টি ভাষা", desc: "ইউরোপীয়, এশিয়ান, মধ্যপ্রাচ্য" },
     },
     freePlan: {
       title: "চিরতরে বিনামূল্যে",
@@ -787,7 +787,7 @@ export const translations = {
       streak: { title: "स्ट्रीक प्रणाली", desc: "दैनिक स्ट्रीकहरूको साथ प्रेरित रहनुहोस्" },
       progress: { title: "प्रगति ट्र्याकिङ", desc: "हेर्नुहोस् तपाईं हरेक हप्ता कति टाढा पुग्नुभएको छ" },
       certs: { title: "प्रमाणपत्रहरू", desc: "आफ्नो प्रगतिको प्रमाण कमाउनुहोस्" },
-      langs: { title: "१७ भाषाहरू", desc: "युरोपेली, एसियाली, मध्य पूर्वी" },
+      langs: { title: "21 भाषाहरू", desc: "युरोपेली, एसियाली, मध्य पूर्वी" },
     },
     freePlan: {
       title: "सधैंको लागि नि: शुल्क",
@@ -888,7 +888,11 @@ export const targetLanguages = [
   { lang: "Japanese", flag: "🇯🇵", countries: ["Japan"] },
   { lang: "Arabic", flag: "🇸🇦", countries: ["UAE", "Saudi Arabia", "Qatar", "Kuwait"] },
   { lang: "Hebrew", flag: "🇮🇱", countries: ["Israel"] },
-  { lang: "English", flag: "🇬🇧", countries: ["UK", "Australia", "Canada", "USA"] }
+  { lang: "English", flag: "🇬🇧", countries: ["UK", "Australia", "Canada", "USA"] },
+  { lang: "Turkish", flag: "🇹🇷", countries: ["Turkey"] },
+  { lang: "Hindi", flag: "🇮🇳", countries: ["India"] },
+  { lang: "Tamil", flag: "🇮🇳", countries: ["India", "Sri Lanka", "Singapore"] },
+  { lang: "Chinese", flag: "🇨🇳", countries: ["China", "Singapore", "Taiwan"] },
 ];
 
 export const nativeLanguages = Object.keys(translations);
@@ -896,5 +900,6 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+
 
 

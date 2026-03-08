@@ -18,6 +18,10 @@ export const TARGET_LANGUAGES: { name: TargetLanguage, code: string, flag: strin
   { name: 'Arabic', code: 'ar-SA', flag: '🇸🇦' },
   { name: 'Hebrew', code: 'he-IL', flag: '🇮🇱' },
   { name: 'English', code: 'en-US', flag: '🇬🇧' },
+  { name: 'Turkish', code: 'tr-TR', flag: '🇹🇷' },
+  { name: 'Hindi', code: 'hi-IN', flag: '🇮🇳' },
+  { name: 'Tamil', code: 'ta-IN', flag: '🇮🇳' },
+  { name: 'Chinese', code: 'zh-CN', flag: '🇨🇳' },
 ];
 
 export const NATIVE_LANGUAGES: { name: NativeLanguage, code: string }[] = [

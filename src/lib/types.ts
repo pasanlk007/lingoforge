@@ -151,7 +151,7 @@ export type TargetLanguage =
   | "French" | "German" | "Spanish" | "Italian" | "Portuguese"
   | "Dutch" | "Polish" | "Romanian" | "Greek" | "Serbian"
   | "Russian" | "Finnish" | "Korean" | "Japanese" | "Arabic"
-  | "Hebrew" | "English";
+  | "Hebrew" | "English" | "Turkish" | "Hindi" | "Tamil" | "Chinese";
 
 export type NativeLanguage = "English" | "Sinhala" | "Hindi" | "Urdu" | "Arabic" | "Bengali";
 
