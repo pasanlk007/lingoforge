@@ -5,31 +5,41 @@ import { TARGET_LANGUAGES } from './constants';
 /**
  * A utility class to handle text-to-speech using the Web Speech API.
  * This class is designed to be used on the client-side only.
+ * It includes workarounds for common browser bugs and inconsistencies.
  */
 class AudioPlayer {
   private synthesis: SpeechSynthesis | null = null;
   private voices: SpeechSynthesisVoice[] = [];
-  private voicesLoaded: boolean = false;
+  // Keep a reference to utterances to prevent them from being garbage-collected prematurely.
+  private utteranceInstances: SpeechSynthesisUtterance[] = [];
 
   constructor() {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       this.synthesis = window.speechSynthesis;
-      // It can take a moment for voices to load, especially on first visit.
-      // We must listen for the 'voiceschanged' event.
-      this.synthesis.onvoiceschanged = this.loadVoices;
-      this.loadVoices(); // Also try to load them immediately.
+      this.loadVoices();
+      
+      // The 'voiceschanged' event is the primary mechanism for loading voices.
+      if (this.synthesis.onvoiceschanged !== undefined) {
+        this.synthesis.onvoiceschanged = this.loadVoices;
+      }
+      // Some browsers (like older Chrome versions) don't fire onvoiceschanged,
+      // so we check if voices are loaded immediately.
+      if (this.synthesis.getVoices().length > 0) {
+        this.loadVoices();
+      }
+
     } else {
       console.warn("Web Speech API (TTS) is not supported in this browser.");
     }
   }
 
+  // Populates the voices array.
   private loadVoices = () => {
     if (this.synthesis) {
-      const newVoices = this.synthesis.getVoices();
-      if (newVoices.length > 0) {
-        this.voices = newVoices;
-        this.voicesLoaded = true;
-      }
+        const newVoices = this.synthesis.getVoices();
+        if (newVoices.length > 0) {
+            this.voices = newVoices;
+        }
     }
   };
 
@@ -40,64 +50,69 @@ class AudioPlayer {
    * @param rate The speed of the speech. Defaults to 1.0 (normal).
    */
   public speak(text: string, languageName: string, rate: number = 1.0): void {
-    if (!this.synthesis) {
-      console.warn("[AudioPlayer] Speech synthesis is not supported or initialized.");
+    if (!this.synthesis || !text) {
       return;
     }
 
-    // Cancel any ongoing or queued speech. This is crucial to prevent errors on rapid clicks.
+    // Always cancel any previous speech. This is a crucial step to prevent
+    // errors from rapid clicks or queued utterances.
     this.synthesis.cancel();
 
-    // If voices haven't loaded yet, try one more time.
-    if (!this.voicesLoaded) {
-      this.loadVoices();
+    // If voices haven't loaded, try loading them again. This is a fallback.
+    if (this.voices.length === 0) {
+        this.loadVoices();
     }
 
-    if (text) {
-      const languageInfo = TARGET_LANGUAGES.find(lang => lang.name === languageName);
-      if (!languageInfo) {
-        console.warn(`[AudioPlayer] Language code not found for language name: "${languageName}"`);
-        return;
+    const languageInfo = TARGET_LANGUAGES.find(lang => lang.name === languageName);
+    if (!languageInfo) {
+      console.warn(`[AudioPlayer] Language code not found for: "${languageName}"`);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    
+    // Find the best available voice for the language code (e.g., 'fr-FR')
+    let voice = this.voices.find(v => v.lang === languageInfo.code);
+    
+    // If a region-specific voice isn't found, try finding one for the base language (e.g., 'fr')
+    if (!voice) {
+      const baseLang = languageInfo.code.split('-')[0];
+      voice = this.voices.find(v => v.lang.startsWith(baseLang));
+    }
+
+    if (voice) {
+      utterance.voice = voice;
+    } else {
+      // As a fallback, set the lang property. The browser will use its default.
+      utterance.lang = languageInfo.code;
+      if (this.voices.length > 0) {
+          console.warn(`[AudioPlayer] No specific voice for ${languageInfo.code}. Using browser default.`);
       }
+    }
 
-      const utterance = new SpeechSynthesisUtterance(text);
+    utterance.pitch = 1;
+    utterance.rate = rate;
 
-      utterance.onend = () => {};
-      
-      // The `onerror` event can be cryptic. Log the `error` property for more details.
-      utterance.onerror = (event) => {
+    // When the utterance ends or errors, remove it from our reference array.
+    utterance.onend = () => {
+        this.utteranceInstances = this.utteranceInstances.filter(u => u !== utterance);
+    };
+    utterance.onerror = (event) => {
         console.warn(`[AudioPlayer] A speech synthesis error occurred: ${event.error}`);
-      };
+        this.utteranceInstances = this.utteranceInstances.filter(u => u !== utterance);
+    };
 
-      // Find the best available voice for the language code (e.g., 'fr-FR')
-      let voice = this.voices.find(v => v.lang === languageInfo.code);
-      
-      // If not found, try finding a voice for the base language (e.g., 'fr')
-      if (!voice) {
-        const baseLang = languageInfo.code.split('-')[0];
-        voice = this.voices.find(v => v.lang.startsWith(baseLang));
-      }
-
-      if (voice) {
-        utterance.voice = voice;
-      } else {
-        // As a final fallback, set the lang property. The browser will use its default.
-        utterance.lang = languageInfo.code;
-        if (this.voicesLoaded) {
-          console.warn(`[AudioPlayer] No specific voice found for ${languageInfo.code}. Using browser default.`);
-        }
-      }
-
-      utterance.pitch = 1;
-      utterance.rate = rate;
-      
-      // Speak the utterance directly. The cancel() call above should prevent most race conditions.
-      this.synthesis.speak(utterance);
-    }
+    // Add the utterance to an array to prevent it from being garbage collected.
+    this.utteranceInstances.push(utterance);
+    
+    this.synthesis.speak(utterance);
   }
 
+  /**
+   * Cancels any speech that is currently speaking or in the queue.
+   */
   public cancel(): void {
-    if (this.synthesis && (this.synthesis.speaking || this.synthesis.pending)) {
+    if (this.synthesis) {
       this.synthesis.cancel();
     }
   }
