@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
-import type { LanguageLesson, WeeklyLessonPlan } from '@/lib/types';
+import type { LanguageLesson, WeeklyLessonPlan, LessonDay } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Terminal, Wrench } from 'lucide-react';
@@ -67,21 +67,35 @@ export default function LessonPage() {
         const response = await fetch(lessonPath);
 
         if (response.ok) {
-          const weeklyPlan = await response.json() as WeeklyLessonPlan;
-          const dayData = weeklyPlan.days.find(d => d.day === dayNum);
+          const jsonData = await response.json();
+          let dayData: LessonDay | undefined;
+
+          // Check if the file is a WeeklyLessonPlan (has a 'days' array)
+          // or a single LessonDay object.
+          if (Array.isArray(jsonData.days)) {
+            const weeklyPlan = jsonData as WeeklyLessonPlan;
+            dayData = weeklyPlan.days.find(d => d.day === dayNum);
+          } else {
+            // Assume it's a single LessonDay object.
+            const singleDayData = jsonData as LessonDay;
+            // Check if the day in the file matches the day in the URL
+            if (singleDayData.day === dayNum) {
+              dayData = singleDayData;
+            }
+          }
 
           if (dayData) {
             const formattedLesson: LanguageLesson = {
-              week: weeklyPlan.week,
-              language: weeklyPlan.targetLanguage,
-              path: weeklyPlan.path as any,
+              week: dayData.week,
+              language: dayData.targetLanguage,
+              path: dayData.path,
               title: dayData.title,
               description: dayData.theme,
-              days: [dayData],
+              days: [dayData], // Wrap in array for LessonClientPage
             };
             setLesson(formattedLesson);
           } else {
-            setError(`Day ${dayNum} not found in the lesson plan for week ${week}.`);
+            setError(`Could not find data for day ${dayNum} in the lesson file at 'public${lessonPath}'. Please check the file structure.`);
           }
         } else {
           if (response.status === 404) {
