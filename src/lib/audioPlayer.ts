@@ -32,16 +32,16 @@ class AudioPlayer {
    * Speaks a given text in a specified language.
    * @param text The text to be spoken.
    * @param languageName The name of the target language (e.g., "French").
+   * @param rate The speed of the speech. Defaults to 1.0 (normal).
    */
-  public speak(text: string, languageName: string): void {
+  public speak(text: string, languageName: string, rate: number = 1.0): void {
     if (!this.synthesis) {
       alert("Sorry, your browser does not support text-to-speech.");
       return;
     }
 
     if (this.synthesis.speaking) {
-      console.log("SpeechSynthesis.speaking");
-      return;
+      this.synthesis.cancel();
     }
 
     if (text !== "") {
@@ -54,7 +54,7 @@ class AudioPlayer {
       const utterance = new SpeechSynthesisUtterance(text);
 
       utterance.onend = () => {
-        console.log("SpeechSynthesisUtterance.onend");
+        // console.log("SpeechSynthesisUtterance.onend");
       };
 
       utterance.onerror = (event) => {
@@ -72,7 +72,7 @@ class AudioPlayer {
       }
 
       utterance.pitch = 1;
-      utterance.rate = 0.9;
+      utterance.rate = rate;
       this.synthesis.speak(utterance);
     }
   }

@@ -2,7 +2,7 @@
 
 import type { Dialogue } from '@/lib/types';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { AudioButton } from './AudioButton';
+import { AudioPlayback } from './AudioPlayback';
 import { MessageSquare } from 'lucide-react';
 import { Separator } from './ui/separator';
 
@@ -28,7 +28,7 @@ export function DialoguePanel({ dialogues, language }: DialoguePanelProps) {
             <h4 className="font-semibold text-md mb-2">{dialogue.context}</h4>
             <div className="space-y-4">
               {Array.isArray(dialogue.lines) && dialogue.lines.map((line, lineIndex) => (
-                <div key={lineIndex} className="flex items-start gap-4">
+                <div key={lineIndex} className="flex items-start gap-3">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-muted font-bold text-muted-foreground">
                     {line.speaker}
                   </div>
@@ -37,7 +37,7 @@ export function DialoguePanel({ dialogues, language }: DialoguePanelProps) {
                     <p className="text-sm text-muted-foreground">{line.native}</p>
                     <p className="text-xs text-muted-foreground italic">{line.phonetic}</p>
                   </div>
-                  <AudioButton text={line.target} languageName={language} />
+                  <AudioPlayback text={line.target} languageName={language} />
                 </div>
               ))}
             </div>

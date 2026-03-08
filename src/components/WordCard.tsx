@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
-import { AudioButton } from './AudioButton';
+import { AudioPlayback } from './AudioPlayback';
 import type { LessonItem } from '@/lib/types';
+import { targetLanguageLabels } from '@/lib/target-language-labels';
 
 interface WordCardProps {
   item: LessonItem;
@@ -12,6 +13,8 @@ interface WordCardProps {
 
 export function WordCard({ item, language }: WordCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const labels = targetLanguageLabels[language] || targetLanguageLabels['English'];
+
 
   const cardContainerStyle = {
     perspective: '1000px',
@@ -33,25 +36,35 @@ export function WordCard({ item, language }: WordCardProps) {
       <div style={cardStyle} className="relative w-full h-full cursor-pointer" onClick={() => setIsFlipped(!isFlipped)}>
         {/* Front of the card */}
         <div style={cardFaceStyle} className="absolute w-full h-full">
-          <Card className="flex h-full flex-col items-center justify-center p-6 text-center shadow-lg">
+          <Card className="flex h-full flex-col items-center justify-center p-6 text-center shadow-lg space-y-4">
             <h2 className="text-5xl font-bold">{item.target}</h2>
-            <p className="mt-2 text-2xl text-muted-foreground">{item.phonetic}</p>
-            <div className="mt-4" onClick={(e) => e.stopPropagation()}>
-              <AudioButton text={item.target} languageName={language} />
+            
+            <div className="text-center">
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">{labels.phonetic}</p>
+                <p className="text-2xl text-foreground">{item.phonetic}</p>
             </div>
+
+            <AudioPlayback text={item.target} languageName={language} />
+
             <p className="absolute bottom-4 text-xs text-muted-foreground">Click to flip</p>
           </Card>
         </div>
 
         {/* Back of the card */}
         <div style={{...cardFaceStyle, transform: 'rotateY(180deg)'}} className="absolute w-full h-full">
-           <Card className="flex h-full flex-col justify-center p-6 text-center shadow-lg">
-             <h3 className="text-3xl font-bold">{item.native_meaning}</h3>
+           <Card className="flex h-full flex-col items-center justify-center p-6 text-center shadow-lg space-y-4">
+            <div className="text-center">
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">{labels.meaning}</p>
+              <h3 className="text-3xl font-bold">{item.native_meaning}</h3>
+            </div>
+             
              {item.example_sentence_target && (
-                <div className="mt-4 border-t pt-3 text-sm">
+                <div className="border-t pt-4 text-sm w-full">
                     <p className="font-semibold text-foreground">Example:</p>
-                    <p className="italic">"{item.example_sentence_target}"</p>
-                    <p className="text-muted-foreground">"{item.example_sentence_native}"</p>
+                    <div className="italic mt-1">
+                      <p>"{item.example_sentence_target}"</p>
+                      <p className="text-muted-foreground">"{item.example_sentence_native}"</p>
+                    </div>
                 </div>
              )}
            </Card>
