@@ -1,20 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { AudioPlayback } from './AudioPlayback';
 import type { LessonItem } from '@/lib/types';
-import { targetLanguageLabels } from '@/lib/target-language-labels';
+import { translations } from '@/lib/translations';
 
 interface WordCardProps {
   item: LessonItem;
-  language: string;
+  language: string; // This is the target language
 }
 
 export function WordCard({ item, language }: WordCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
-  const labels = targetLanguageLabels[language] || targetLanguageLabels['English'];
+  const [uiLang, setUiLang] = useState<keyof typeof translations>('English');
 
+  useEffect(() => {
+    // This effect runs on the client after hydration
+    const savedLang = localStorage.getItem("nativeLanguage") as keyof typeof translations | null;
+    if (savedLang && translations[savedLang]) {
+      setUiLang(savedLang);
+    }
+  }, []);
+
+  const labels = translations[uiLang]?.wordCard || translations['English'].wordCard;
 
   const cardContainerStyle = {
     perspective: '1000px',

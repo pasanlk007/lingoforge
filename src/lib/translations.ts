@@ -124,6 +124,10 @@ export const translations = {
         sat: 'Sat',
         sun: 'Sun',
       }
+    },
+    wordCard: {
+      phonetic: 'Phonetic',
+      meaning: 'Meaning',
     }
   },
   Sinhala: {
@@ -245,6 +249,10 @@ export const translations = {
         sat: 'සෙන',
         sun: 'ඉරි',
       }
+    },
+    wordCard: {
+      phonetic: 'උච්චාරණය',
+      meaning: 'තේරුම',
     }
   },
   Hindi: {
@@ -366,6 +374,10 @@ export const translations = {
         sat: 'शनि',
         sun: 'रवि',
       }
+    },
+    wordCard: {
+      phonetic: 'ध्वन्यात्मक',
+      meaning: 'अर्थ',
     }
   },
   Urdu: {
@@ -487,6 +499,10 @@ export const translations = {
         sat: 'ہفتہ',
         sun: 'اتوار',
       }
+    },
+    wordCard: {
+      phonetic: 'صوتیات',
+      meaning: 'معنی',
     }
   },
   Bengali: {
@@ -608,6 +624,10 @@ export const translations = {
         sat: 'শনি',
         sun: 'রবি',
       }
+    },
+    wordCard: {
+      phonetic: 'উচ্চারণ',
+      meaning: 'অর্থ',
     }
   },
   Nepali: {
@@ -729,6 +749,10 @@ export const translations = {
         sat: 'शनि',
         sun: 'आइत',
       }
+    },
+    wordCard: {
+      phonetic: 'ध्वन्यात्मक',
+      meaning: 'अर्थ',
     }
   }
 };
@@ -758,3 +782,4 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+
