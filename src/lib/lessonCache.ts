@@ -1,73 +1,56 @@
 
-import { initializeApp, getApp, getApps } from 'firebase/app';
-import { getFirestore, collection, doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
-import { firebaseConfig } from '@/firebase/config';
-import { generateDynamicWeeklyLessonPlan } from '@/ai/flows/generate-dynamic-weekly-lesson-plan';
 import type { LanguageLesson, LearningPath } from "./types";
 
-// Initialize Firebase for server-side usage
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-const lessonCacheCollection = collection(db, 'lessonCache');
-
-/**
- * Retrieves a lesson from Firestore cache or generates and caches it if not found.
- * @param language - The target language (e.g., "French").
- * @param path - The learning path (e.g., "survival").
- * @param week - The week number.
- * @returns The language lesson object.
- */
 export async function getOrGenerateLesson(
   language: string,
   path: LearningPath,
-  week: number
+  week: number,
+  nativeLanguage: string = "English",
+  day: number = 1
 ): Promise<LanguageLesson | null> {
-  const cacheKey = `${language.toLowerCase()}_${path}_week${week}`;
-  const docRef = doc(lessonCacheCollection, cacheKey);
-
-  console.log('Attempting generation for:', cacheKey);
   try {
-    // 1. Check cache
-    const docSnap = await getDoc(docRef);
+    const native = nativeLanguage.toLowerCase();
+    const target = language.toLowerCase();
+    const filePath = `lessons/${native}_${target}/${path}/week_${String(week).padStart(2, '0')}/day_${day}.json`;
 
-    if (docSnap.exists()) {
-      console.log(`[Cache HIT] Found lesson for ${cacheKey} in Firestore.`);
-      // The document data will be validated against the LanguageLesson type on retrieval
-      return docSnap.data().lesson as LanguageLesson;
+    let dayData: any = null;
+
+    if (typeof window === 'undefined') {
+      const { readFileSync, existsSync } = require('fs');
+      const { join } = require('path');
+      const fullPath = join(process.cwd(), 'public', filePath);
+
+      if (!existsSync(fullPath)) {
+        console.error(`[JSON Loader] File not found: ${fullPath}`);
+        return null;
+      }
+      
+      dayData = JSON.parse(readFileSync(fullPath, 'utf-8'));
+    } else {
+      const res = await fetch(`/${filePath}`);
+      if (!res.ok) {
+        console.error(`[JSON Loader] Fetch failed for: /${filePath}`);
+        return null;
+      }
+      dayData = await res.json();
     }
 
-    // 2. If miss, generate
-    console.log(`[Cache MISS] Generating lesson for ${cacheKey}.`);
-    const newLesson = await generateDynamicWeeklyLessonPlan({
-      language,
-      path,
-      week,
-      nativeLanguage: "English", // Default native language for cached lessons
-      aiPlanningEnabled: false, // AI planning is a user-specific feature
-    });
-
-    if (!newLesson) {
-      throw new Error("Lesson generation failed.");
-    }
-    
-    // 3. Save to cache
-    console.log(`[Cache SET] Saving new lesson for ${cacheKey} to Firestore.`);
-    const cacheData = {
-      lesson: newLesson,
-      cachedAt: serverTimestamp(),
+    // Correctly wrap the loaded daily data into the LanguageLesson structure
+    // This ensures that the object passed to the client component matches the LanguageLesson type
+    const lesson: LanguageLesson = {
+      week: week,
       language: language,
       path: path,
-      week: week,
+      title: dayData.title || `Week ${week}`, // Use the title from the day's data or create a default
+      description: `Lesson content for week ${week} of the ${path} path.`,
+      // Wrap the single day's data in an array, as expected by the client component
+      days: [{ ...dayData, day: day }]
     };
 
-    await setDoc(docRef, cacheData);
-    
-    // 4. Return
-    return newLesson as LanguageLesson;
+    return lesson;
 
-  } catch (error: any) {
-    console.error('Full error:', JSON.stringify(error), error?.message, error?.stack);
+  } catch (error) {
+    console.error(`[JSON Loader] Error loading lesson from ${filePath}:`, error);
     return null;
   }
 }

@@ -1,5 +1,4 @@
 'use server';
-
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -15,23 +14,23 @@ type LessonPageProps = {
     week: string;
     day: string;
   };
+  searchParams?: { native?: string };
 };
 
-export default async function LessonPage({ params }: LessonPageProps) {
+export default async function LessonPage({ params, searchParams }: LessonPageProps) {
   const { language, path, week, day } = params;
+  const nativeLanguage = searchParams?.native || 'English';
 
   const weekNum = parseInt(week);
   const dayNum = parseInt(day);
-  
-  // Basic validation
+
   if (isNaN(weekNum) || isNaN(dayNum) || weekNum < 1 || dayNum < 1 || dayNum > 7) {
     notFound();
   }
 
-  // Capitalize first letter of language
   const formattedLanguage = language.charAt(0).toUpperCase() + language.slice(1);
 
-  const lesson = await getOrGenerateLesson(formattedLanguage, path as LearningPath, weekNum);
+  const lesson = await getOrGenerateLesson(formattedLanguage, path as LearningPath, weekNum, nativeLanguage, dayNum);
 
   if (!lesson) {
     return (
@@ -39,13 +38,13 @@ export default async function LessonPage({ params }: LessonPageProps) {
         <Navigation />
         <main className="flex-1">
           <div className="container mx-auto py-10">
-             <Alert variant="destructive">
-                <Terminal className="h-4 w-4" />
-                <AlertTitle>Lesson Generation Failed</AlertTitle>
-                <AlertDescription>
-                  We couldn't generate the lesson for {language}, week {week}. The AI may be busy. Please try again later.
-                </AlertDescription>
-              </Alert>
+            <Alert variant="destructive">
+              <Terminal className="h-4 w-4" />
+              <AlertTitle>Lesson Not Found</AlertTitle>
+              <AlertDescription>
+                Lesson for {language} week {week} day {day} not found.
+              </AlertDescription>
+            </Alert>
           </div>
         </main>
       </div>

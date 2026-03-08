@@ -53,12 +53,19 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [exercisesCompleted, setExercisesCompleted] = useState(0);
     const [showConfetti, setShowConfetti] = useState(false);
 
+    const hasItems = dayData.items && dayData.items.length > 0;
+    const hasExercises = dayData.exercises && ((dayData.exercises.fillBlanks?.length ?? 0) > 0 || (dayData.exercises.multipleChoice?.length ?? 0) > 0 || (dayData.exercises.matching?.length ?? 0) > 0);
+    const hasDialogue = dayData.dialogue && dayData.dialogue.lines.length > 0;
+    const hasCulturalNote = dayData.culturalNote && dayData.culturalNote.trim() !== '';
+
     const handleNextWord = () => {
-        setCurrentWordIndex(prev => (prev + 1) % dayData.items.length);
+        if (!hasItems) return;
+        setCurrentWordIndex(prev => (prev + 1) % (dayData.items.length));
     }
 
     const handlePrevWord = () => {
-        setCurrentWordIndex(prev => (prev - 1 + dayData.items.length) % dayData.items.length);
+        if (!hasItems) return;
+        setCurrentWordIndex(prev => (prev - 1 + (dayData.items.length)) % (dayData.items.length));
     }
 
     const handleExercisesComplete = (isCorrect: boolean) => {
@@ -73,7 +80,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         setShowConfetti(true);
     }
 
-    const totalExercises = (dayData.exercises.fillBlanks?.length ?? 0) + (dayData.exercises.multipleChoice?.length ?? 0) + (dayData.exercises.matching?.length ?? 0);
+    const totalExercises = (dayData.exercises?.fillBlanks?.length ?? 0) + (dayData.exercises?.multipleChoice?.length ?? 0) + (dayData.exercises?.matching?.length ?? 0);
     const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCompleted / totalExercises) * 100, 100) : 0;
     const canCompleteDay = exerciseProgress >= 80; // e.g. require 80% completion
 
@@ -113,56 +120,69 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                     <BookOpen className="mr-2 h-4 w-4" />
                     Learn
                   </TabsTrigger>
-                  <TabsTrigger value="practice">
+                  <TabsTrigger value="practice" disabled={!hasExercises}>
                     <BrainCircuit className="mr-2 h-4 w-4" />
                     Practice
                   </TabsTrigger>
-                  <TabsTrigger value="culture">
+                  <TabsTrigger value="culture" disabled={!hasCulturalNote}>
                      <span className="mr-2">🌍</span>
                     Culture
                   </TabsTrigger>
                 </TabsList>
 
                 <TabsContent value="learn" className="mt-6 space-y-8">
-                  <Card>
-                      <CardHeader>
-                          <CardTitle className="flex items-center gap-2">
-                              <span>Vocabulary</span>
-                          </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                         <div className="flex flex-col items-center">
-                             <WordCard item={dayData.items[currentWordIndex]} language={lesson.language} />
-                             <div className="flex items-center justify-center mt-2 w-full max-w-sm">
-                                  <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
-                                  <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {dayData.items.length}</span>
-                                  <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
-                             </div>
-                         </div>
-                      </CardContent>
-                  </Card>
-                  {dayData.dialogue && dayData.dialogue.lines.length > 0 && (
+                  {hasItems && (
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                                <span>Vocabulary</span>
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                           <div className="flex flex-col items-center">
+                               <WordCard item={dayData.items[currentWordIndex]} language={lesson.language} />
+                               <div className="flex items-center justify-center mt-2 w-full max-w-sm">
+                                    <Button variant="outline" size="icon" onClick={handlePrevWord}><ChevronLeft /></Button>
+                                    <span className="flex-1 text-center text-sm font-medium text-muted-foreground">{currentWordIndex + 1} / {dayData.items.length}</span>
+                                    <Button variant="outline" size="icon" onClick={handleNextWord}><ChevronRight /></Button>
+                               </div>
+                           </div>
+                        </CardContent>
+                    </Card>
+                  )}
+                  {hasDialogue && (
                       <DialoguePanel dialogue={dayData.dialogue} language={lesson.language} />
+                  )}
+                  {!hasItems && !hasDialogue && (
+                     <Alert>
+                        <BookOpen className="h-4 w-4" />
+                        <AlertTitle>Nothing to learn here!</AlertTitle>
+                        <AlertDescription>
+                          This day's lesson doesn't have any vocabulary or dialogues. Check out the practice or culture tabs.
+                        </AlertDescription>
+                      </Alert>
                   )}
                 </TabsContent>
 
                 <TabsContent value="practice" className="mt-6">
-                    {dayData.exercises && (
+                    {hasExercises && (
                         <ExercisePanel exercises={dayData.exercises} onExercisesComplete={handleExercisesComplete} />
                     )}
                 </TabsContent>
                 
                 <TabsContent value="culture" className="mt-6">
-                   <Card>
-                      <CardHeader>
-                          <CardTitle className="flex items-center gap-2">
-                              <span>Cultural Note</span>
-                          </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                          <p className="text-muted-foreground italic">"{dayData.culturalNote}"</p>
-                      </CardContent>
-                  </Card>
+                  {hasCulturalNote && (
+                     <Card>
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                                <span>Cultural Note</span>
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground italic">"{dayData.culturalNote}"</p>
+                        </CardContent>
+                    </Card>
+                  )}
                 </TabsContent>
               </Tabs>
                 
@@ -179,13 +199,13 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                 <CheckCircle className="h-4 w-4" />
                                 <AlertTitle className="font-bold">Day Complete!</AlertTitle>
                                 <AlertDescription className="text-xs">
-                                  You've earned {dayData.progressTracking.xpReward} XP and a {dayData.progressTracking.streakBonus} streak bonus. Keep up the great work!
+                                  You've earned {dayData.progressTracking?.xpReward ?? 0} XP and a {dayData.progressTracking?.streakBonus ?? 0} streak bonus. Keep up the great work!
                                 </AlertDescription>
                             </Alert>
                         ) : (
                              <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay}>
                                 <CheckCircle className="mr-2 h-5 w-5" />
-                                Complete Day (+{dayData.progressTracking.xpReward} XP)
+                                Complete Day (+{dayData.progressTracking?.xpReward ?? 0} XP)
                             </Button>
                         )}
                         {!dayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">Complete at least 80% of the exercises to finish the day.</p>}
