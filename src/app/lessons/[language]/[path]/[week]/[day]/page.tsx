@@ -73,7 +73,9 @@ export default function LessonPage() {
       setIsLoading(true);
       setError(null);
       
-      const lessonPath = `/lessons/${language}/${path}/week_${week}.json`;
+      // FIX: The lesson path should not be dependent on the UI language.
+      // It should load the lesson for the specific path and week directly.
+      const lessonPath = `/lessons/${path}/week_${week}.json`;
       
       try {
         const response = await fetch(lessonPath);
