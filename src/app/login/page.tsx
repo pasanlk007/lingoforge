@@ -25,11 +25,10 @@ export default function LoginPage() {
     setIsLoading(true);
 
     try {
-      // We use the non-blocking sign-in function
       await initiateEmailSignIn(auth, email, password);
-      // Because onAuthStateChanged handles redirects, we can just show a toast here.
+      
       toast({
-        title: "Login Initiated",
+        title: "Login Successful",
         description: "You will be redirected shortly.",
       });
 
@@ -38,14 +37,20 @@ export default function LoginPage() {
       
     } catch (error: any) {
       console.error("Login failed:", error);
+      let errorMessage = "An unknown error occurred.";
+      if (error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found') {
+        errorMessage = 'Invalid email or password. Please try again.';
+      } else {
+        errorMessage = error.message;
+      }
+      
       toast({
         variant: "destructive",
         title: "Login Failed",
-        description: error.message || "An unknown error occurred.",
+        description: errorMessage,
       });
       setIsLoading(false);
     }
-    // No need to set isLoading to false on success, as the page will redirect.
   };
 
   return (
