@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 
-import type { LanguageLesson, WeeklyLessonPlan, LessonDay } from '@/lib/types';
+import type { LanguageLesson, LearningPath } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Terminal, Wrench } from 'lucide-react';
@@ -11,6 +11,7 @@ import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
 import { translations } from '@/lib/translations';
+import { getOrGenerateLesson } from '@/lib/lessonCache';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -51,6 +52,12 @@ export default function LessonPage() {
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   useEffect(() => {
+    // Wait for the component to be mounted to ensure localStorage is available
+    if (!isMounted) {
+      return;
+    }
+    
+    // Ensure all params are available
     if (
       typeof language !== 'string' ||
       typeof path !== 'string' ||
@@ -73,73 +80,47 @@ export default function LessonPage() {
       setIsLoading(true);
       setError(null);
       
-      // FIX: The lesson path should not be dependent on the UI language.
-      // It should load the lesson for the specific path and week directly.
-      const lessonPath = `/lessons/${path}/week_${week}.json`;
-      
-      try {
-        const response = await fetch(lessonPath);
+      const weeklyLessonData = await getOrGenerateLesson(
+        language,
+        path as LearningPath,
+        parseInt(week, 10),
+        nativeLanguage,
+        dayNum
+      );
 
-        if (response.ok) {
-          const textData = await response.text();
-          try {
-            const jsonData = JSON.parse(textData);
-            let dayData: LessonDay | undefined;
-
-            if (Array.isArray(jsonData.days)) {
-              const weeklyPlan = jsonData as WeeklyLessonPlan;
-              dayData = weeklyPlan.days.find(d => d.day === dayNum);
-            } else {
-              const singleDayData = jsonData as LessonDay;
-              if (singleDayData.day === dayNum) {
-                dayData = singleDayData;
-              }
-            }
-
-            if (dayData) {
-              const formattedLesson: LanguageLesson = {
-                week: dayData.week,
-                language: dayData.targetLanguage,
-                path: dayData.path,
-                title: dayData.title,
-                description: dayData.theme,
-                days: [dayData],
-              };
-              setLesson(formattedLesson);
-            } else {
-              setError(t.errorDayNotFound
-                  .replace('{day}', dayNum.toString())
-                  .replace('{lessonPath}', lessonPath)
-              );
-            }
-          } catch (jsonError: any) {
-             setError(t.errorInvalidJson
-                .replace('{lessonPath}', lessonPath)
-                .replace('{error}', jsonError.message)
-            );
-          }
+      if (weeklyLessonData) {
+        const dayData = weeklyLessonData.days.find(d => d.day === dayNum);
+        if (dayData) {
+          // Create a new LanguageLesson object containing only the single, relevant day.
+          // This is what the LessonClientPage component expects.
+          const singleDayLesson: LanguageLesson = {
+            ...weeklyLessonData,
+            days: [dayData],
+          };
+          setLesson(singleDayLesson);
         } else {
-          if (response.status === 404) {
-             setError(t.errorWeekNotFound
-                .replace('{week}', week as string)
-                .replace('{path}', path as string)
-                .replace('{lessonPath}', lessonPath)
-            );
-          } else {
-             setError(t.errorGeneric.replace('{status}', response.status.toString()));
-          }
+          setError(t.errorDayNotFound
+              .replace('{day}', dayNum.toString())
+              .replace('{lessonPath}', `week_${week}.json`)
+          );
         }
-      } catch (e: any) {
-        console.error("Error fetching lesson file: ", e);
-        setError(e.message || "Failed to fetch or parse lesson file.");
-      } finally {
-        setIsLoading(false);
+      } else {
+        const native = nativeLanguage.toLowerCase();
+        const target = language.toLowerCase();
+        const weekPadded = String(week).padStart(2, '0');
+        const lessonPath = `/lessons/${native}_${target}/${path}/week_${weekPadded}.json`;
+        setError(t.errorWeekNotFound
+            .replace('{week}', week as string)
+            .replace('{path}', path as string)
+            .replace('{lessonPath}', lessonPath)
+        );
       }
+      setIsLoading(false);
     };
 
     fetchLesson();
 
-  }, [language, path, week, day, isMounted, t]);
+  }, [language, path, week, day, isMounted, nativeLanguage, t]);
 
 
   if (isLoading || dayNumber === null || !isMounted) {
