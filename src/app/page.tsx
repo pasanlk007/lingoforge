@@ -373,12 +373,13 @@ export default function LandingPage() {
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-white tracking-wider uppercase">{t.footerLinks.about}</h4>
-                <ul className="mt-4 space-y-2">
-                  {Object.values(t.footerLinks).slice(0,5).map((link:any) => (
-                     <li key={link}><Link href="#" className="text-slate-400 hover:text-white">{link}</Link></li>
-                  ))}
-                </ul>
+                 <h4 className="font-semibold text-white tracking-wider uppercase">Company</h4>
+                  <ul className="mt-4 space-y-2">
+                      <li><Link href="/paths" className="text-slate-400 hover:text-white">Paths</Link></li>
+                      <li><Link href="/pricing" className="text-slate-400 hover:text-white">Pricing</Link></li>
+                      <li><Link href="/privacy" className="text-slate-400 hover:text-white">Privacy Policy</Link></li>
+                      <li><Link href="/terms" className="text-slate-400 hover:text-white">Terms of Service</Link></li>
+                  </ul>
               </div>
               <div>
                 <h4 className="font-semibold text-white tracking-wider uppercase">{t.footerLangs}</h4>
@@ -403,4 +404,3 @@ export default function LandingPage() {
     </div>
   );
 }
-

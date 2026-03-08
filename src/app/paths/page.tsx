@@ -254,9 +254,8 @@ export default function PathsPage() {
               <div>
                 <h4 className="font-semibold">Company</h4>
                 <ul className="mt-4 space-y-2">
-                  <li><Link href="#" className="text-muted-foreground hover:text-foreground">About</Link></li>
-                  <li><Link href="#" className="text-muted-foreground hover:text-foreground">Privacy</Link></li>
-                  <li><Link href="#" className="text-muted-foreground hover:text-foreground">Terms</Link></li>
+                  <li><Link href="/privacy" className="text-muted-foreground hover:text-foreground">Privacy</Link></li>
+                  <li><Link href="/terms" className="text-muted-foreground hover:text-foreground">Terms</Link></li>
                   <li><Link href="#" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
                 </ul>
               </div>
