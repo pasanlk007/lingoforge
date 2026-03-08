@@ -21,7 +21,9 @@ export function DialoguePanel({ dialogues, language }: DialoguePanelProps) {
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
-        {dialogues.map((dialogue, dialogueIndex) => (
+        {dialogues
+          .filter(dialogue => dialogue && typeof dialogue === 'object') // Filter out null/invalid entries
+          .map((dialogue, dialogueIndex) => (
           <div key={dialogue.id}>
             <h4 className="font-semibold text-md mb-2">{dialogue.context}</h4>
             <div className="space-y-4">
