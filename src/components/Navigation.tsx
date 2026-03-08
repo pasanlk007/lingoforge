@@ -5,7 +5,7 @@ import { Languages, Menu, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
-import { useUser, useAuth } from "@/firebase";
+import { useUser, useAuth } from "@/firebase/provider";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -43,7 +43,7 @@ export default function LoginPage() {
         description: "You will be redirected shortly.",
       });
 
-      const redirectUrl = searchParams.get('redirect');
+      const redirectUrl = searchParams?.get('redirect');
       router.push(redirectUrl || '/dashboard');
       
     } catch (error: any) {
