@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { Languages } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
@@ -23,6 +24,7 @@ export default function SignupPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [nativeLanguage, setNativeLanguage] = useState('English');
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const auth = useAuth();
@@ -157,7 +159,32 @@ export default function SignupPage() {
                 </Select>
               </div>
 
-              <Button type="submit" className="w-full" disabled={isLoading}>
+               <div className="flex items-start space-x-3">
+                <Checkbox
+                  id="terms"
+                  checked={agreedToTerms}
+                  onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)}
+                  disabled={isLoading}
+                />
+                <div className="grid gap-1.5 leading-none">
+                  <label
+                    htmlFor="terms"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    I agree to the{' '}
+                    <Link href="/terms" target="_blank" className="font-semibold text-primary hover:underline">
+                      Terms of Service
+                    </Link>{' '}
+                    and{' '}
+                    <Link href="/privacy" target="_blank" className="font-semibold text-primary hover:underline">
+                      Privacy Policy
+                    </Link>
+                    .
+                  </label>
+                </div>
+              </div>
+
+              <Button type="submit" className="w-full" disabled={isLoading || !agreedToTerms}>
                 {isLoading ? 'Creating Account...' : 'Sign Up'}
               </Button>
             </form>
