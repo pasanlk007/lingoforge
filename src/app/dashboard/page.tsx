@@ -69,59 +69,33 @@ function DashboardLoading() {
 }
 
 function DashboardContent({ user }: { user: User }) {
-  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
-  const [targetLanguage, setTargetLanguage] = useState('French');
   const [isMounted, setIsMounted] = useState(false);
-  
   const firestore = useFirestore();
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
     return doc(firestore, 'userProfiles', user.uid);
   }, [user, firestore]);
+
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
-  // Effect to initialize state from localStorage on component mount
   useEffect(() => {
-    const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
-    if (savedNativeLang && translations[savedNativeLang]) {
-      setNativeLanguage(savedNativeLang);
-    }
-    const savedTargetLang = localStorage.getItem("targetLanguage");
-    if (savedTargetLang) {
-      setTargetLanguage(savedTargetLang);
-    }
     setIsMounted(true);
   }, []);
 
-  // Effect to synchronize Firestore profile data to local state when it loads
-  useEffect(() => {
-    if (userProfile) {
-      if (userProfile.nativeLanguage && translations[userProfile.nativeLanguage as keyof typeof translations]) {
-        setNativeLanguage(userProfile.nativeLanguage as keyof typeof translations);
-      }
-      if (userProfile.selectedLanguage) {
-        setTargetLanguage(userProfile.selectedLanguage);
-      }
+  const handleNativeLanguageChange = (newLang: string) => {
+    if (userProfileRef) {
+        updateDocumentNonBlocking(userProfileRef, { nativeLanguage: newLang });
     }
-  }, [userProfile]);
-
-  // Effect to persist language changes back to localStorage and Firestore
-  useEffect(() => {
-    if (isMounted && userProfileRef) {
-      localStorage.setItem("nativeLanguage", nativeLanguage);
-      localStorage.setItem("targetLanguage", targetLanguage);
-      
-      // Only update Firestore if the languages have actually changed from what's in the profile
-      if (userProfile && (userProfile.nativeLanguage !== nativeLanguage || userProfile.selectedLanguage !== targetLanguage)) {
-        updateDocumentNonBlocking(userProfileRef, {
-          nativeLanguage: nativeLanguage,
-          selectedLanguage: targetLanguage,
-        });
-      }
+    localStorage.setItem("nativeLanguage", newLang);
+  };
+  
+  const handleTargetLanguageChange = (newLang: string) => {
+    if (userProfileRef) {
+        updateDocumentNonBlocking(userProfileRef, { selectedLanguage: newLang });
     }
-  }, [nativeLanguage, targetLanguage, isMounted, userProfileRef, userProfile]);
-
+    localStorage.setItem("targetLanguage", newLang);
+  };
 
   const lastActiveWeek = userProfile?.lastLessonWeek || 1;
   const lastActivePath = userProfile?.activePath || 'survival';
@@ -133,16 +107,20 @@ function DashboardContent({ user }: { user: User }) {
 
   const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
 
+
   if (!isMounted || isProfileLoading || !userProfile) {
       return <DashboardLoading />;
   }
+
+  // Prioritize Firestore data, with fallback to localStorage for initial hydration.
+  const nativeLanguage = userProfile.nativeLanguage || (isMounted && localStorage.getItem('nativeLanguage')) || 'English';
+  const targetLanguage = userProfile.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
 
   const {
     displayName,
     currentStreak,
     xpPoints,
     activePath,
-    selectedLanguage,
     lastLessonWeek,
     lastLessonDay
   } = userProfile;
@@ -155,9 +133,12 @@ function DashboardContent({ user }: { user: User }) {
   
   const nextDay = lastDay < 7 ? lastDay + 1 : 1;
   const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
-  const nextLessonUrl = `/lessons/${(selectedLanguage || 'french').toLowerCase()}/${(activePath || 'survival').toLowerCase()}/${nextWeek}/${nextDay}`;
+  const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/${(activePath || 'survival').toLowerCase()}/${nextWeek}/${nextDay}`;
 
-  const t = translations[nativeLanguage].dashboard;
+  // Make sure the native language from profile/storage is valid before using it
+  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage)) ? nativeLanguage : 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
+  
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
   const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => weekProgressData?.daysCompleted?.includes(i + 1) || false);
@@ -219,7 +200,7 @@ function DashboardContent({ user }: { user: User }) {
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold capitalize">{activePath || 'Survival'}</div>
-                <p className="text-xs text-muted-foreground">{t.language}: {selectedLanguage || 'French'}</p>
+                <p className="text-xs text-muted-foreground">{t.language}: {targetLanguage}</p>
               </CardContent>
             </Card>
           </div>
@@ -231,7 +212,7 @@ function DashboardContent({ user }: { user: User }) {
                 <CardHeader>
                   <CardTitle>{t.continueJourney}</CardTitle>
                   <CardDescription>
-                    {t.continueDesc.replace('{path}', activePath || 'Survival').replace('{language}', selectedLanguage || 'French')}
+                    {t.continueDesc.replace('{path}', activePath || 'Survival').replace('{language}', targetLanguage)}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -265,7 +246,7 @@ function DashboardContent({ user }: { user: User }) {
                       title={path.title}
                       description={path.description}
                       details={path.details}
-                      language={selectedLanguage}
+                      language={targetLanguage}
                     />
                   ))}
                 </div>
@@ -287,7 +268,7 @@ function DashboardContent({ user }: { user: User }) {
                     {nativeLanguages.map((lang) => (
                       <Button
                         key={lang}
-                        onClick={() => setNativeLanguage(lang as keyof typeof translations)}
+                        onClick={() => handleNativeLanguageChange(lang)}
                         variant={nativeLanguage === lang ? "default" : "outline"}
                         size="sm"
                       >
@@ -307,7 +288,7 @@ function DashboardContent({ user }: { user: User }) {
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
-                   <Select value={targetLanguage} onValueChange={setTargetLanguage}>
+                   <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
                     <SelectTrigger className="w-full">
                         <SelectValue placeholder={t.selectTargetLanguage} />
                     </SelectTrigger>
