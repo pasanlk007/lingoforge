@@ -52,6 +52,10 @@ export default function SignupPage() {
       // Update Firebase Auth profile
       await updateProfile(user, { displayName });
 
+      const now = new Date();
+      const trialEndDate = new Date();
+      trialEndDate.setDate(now.getDate() + 3);
+
       // Create user profile in Firestore
       const userProfile: UserProfile = {
         id: user.uid,
@@ -62,11 +66,13 @@ export default function SignupPage() {
         subscriptionType: 'free',
         xpPoints: 0,
         currentStreak: 0,
-        lastActiveDate: new Date().toISOString().split('T')[0],
+        lastActiveDate: now.toISOString().split('T')[0],
         aiPlanningEnabled: false,
         activePath: 'survival',
         lastLessonWeek: 1,
         lastLessonDay: 0,
+        trialStartDate: now.toISOString(),
+        trialEndDate: trialEndDate.toISOString(),
       };
 
       const userDocRef = doc(firestore, 'userProfiles', user.uid);

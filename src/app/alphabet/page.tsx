@@ -4,11 +4,11 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { useUser, useFirestore, useCollection, useMemoFirebase, useDoc } from '@/firebase';
 import { collection, doc } from 'firebase/firestore';
-import type { UserWeekProgress } from '@/lib/types';
+import type { UserProfile, UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { Lock, CheckCircle, Sparkles } from 'lucide-react';
+import { Lock, CheckCircle, Sparkles, Star, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { translations } from '@/lib/translations';
@@ -21,7 +21,12 @@ export default function AlphabetPathPage() {
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
   
-  // Check for admin privileges
+  const userProfileRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, 'userProfiles', user.uid);
+  }, [user, firestore]);
+  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+
   const adminUserRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
     return doc(firestore, 'adminUsers', user.uid);
@@ -52,27 +57,21 @@ export default function AlphabetPathPage() {
 
   const totalWeeks = 48;
 
-  // Determine unlocked weeks and completed days from Firestore data
-  const { unlockedWeeks, completedDays } = useMemo(() => {
-    if (!progressData) {
-      return { unlockedWeeks: 1, completedDays: {} };
-    }
-    const completedDaysMap: { [week: number]: number[] } = {};
-    let maxUnlockedWeek = 1;
+  const now = new Date();
+  const isPaid = userProfile?.subscriptionType === 'monthly' || userProfile?.subscriptionType === 'yearly';
+  const trialEndDate = userProfile?.trialEndDate ? new Date(userProfile.trialEndDate) : null;
+  const isTrialActive = trialEndDate ? now < trialEndDate : false;
 
+  const completedDays = useMemo(() => {
+    if (!progressData) return {};
+    const completedDaysMap: { [week: number]: number[] } = {};
     progressData.forEach(weekProgress => {
       completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-      if (weekProgress.daysCompleted.length === 7) {
-        maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week + 1);
-      } else if (weekProgress.daysCompleted.length > 0) {
-        maxUnlockedWeek = Math.max(maxUnlockedWeek, weekProgress.week);
-      }
     });
-
-    return { unlockedWeeks: maxUnlockedWeek, completedDays: completedDaysMap };
+    return completedDaysMap;
   }, [progressData]);
 
-  if (!isMounted || isUserLoading || isProgressLoading || isAdminLoading) {
+  if (!isMounted || isUserLoading || isProfileLoading || isAdminLoading) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -102,38 +101,41 @@ export default function AlphabetPathPage() {
 
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
             {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
-              const isUnlocked = isAdmin || week <= unlockedWeeks;
               const completedDaysInWeek = completedDays[week] || [];
-              const isCompleted = completedDaysInWeek.length === 7;
+              const isWeekCompleted = completedDaysInWeek.length === 7;
               
+              let weekAccess: 'unlocked' | 'preview' | 'locked' = 'locked';
+              if (isAdmin || isPaid) {
+                weekAccess = 'unlocked';
+              } else if (isTrialActive) {
+                weekAccess = week === 1 ? 'unlocked' : 'preview';
+              }
+
+              const canOpenAccordion = weekAccess === 'unlocked' || weekAccess === 'preview';
+
               return (
-                <AccordionItem key={week} value={`item-${week}`} disabled={!isUnlocked}>
-                  <AccordionTrigger className={cn("text-lg hover:no-underline", !isUnlocked && "cursor-not-allowed text-muted-foreground/50")}>
+                <AccordionItem key={week} value={`item-${week}`} disabled={!canOpenAccordion}>
+                  <AccordionTrigger className={cn("text-lg hover:no-underline", !canOpenAccordion && "cursor-not-allowed text-muted-foreground/50")}>
                     <div className="flex w-full items-center justify-between pr-4">
                       <span className="flex items-center gap-3">
-                         {!isUnlocked ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : (isAdmin ? <Sparkles className="h-5 w-5 text-yellow-400" /> : <div className="w-5 h-5" />)) }
+                         {!canOpenAccordion ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : (isAdmin ? <Sparkles className="h-5 w-5 text-yellow-400" /> : (weekAccess === 'preview' ? <Eye className="h-5 w-5 text-muted-foreground" /> : <Star className="h-5 w-5 text-blue-400" />))) }
                          {t.week} {week}
                       </span>
-                      {!isUnlocked && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60">
-                          {t.locked}
-                        </span>
-                      )}
-                       {isUnlocked && !isCompleted && (
+                      
+                      {!canOpenAccordion && <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60">{t.locked}</span>}
+                      {canOpenAccordion && weekAccess === 'preview' && <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">PREVIEW</span>}
+                      
+                      {weekAccess === 'unlocked' && !isWeekCompleted && (
                         isAdmin ? (
-                            <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">
-                                ADMIN
-                            </span>
+                            <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">ADMIN</span>
                         ) : (
                             <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
                                 {completedDaysInWeek.length} / 7 {t.days}
                             </span>
                         )
                       )}
-                      {isUnlocked && isCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-green-500">
-                          {t.completed}
-                        </span>
+                      {weekAccess === 'unlocked' && isWeekCompleted && (
+                        <span className="text-xs font-semibold uppercase tracking-wider text-green-500">{t.completed}</span>
                       )}
                     </div>
                   </AccordionTrigger>
@@ -141,10 +143,22 @@ export default function AlphabetPathPage() {
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                         const isDayCompleted = completedDaysInWeek.includes(day);
+                        
+                        let isDayUnlocked = false;
+                        if (weekAccess === 'unlocked') {
+                          if (isAdmin || isPaid) {
+                            isDayUnlocked = true;
+                          } else if (isTrialActive) {
+                            if (week === 1 && [1, 2, 3].includes(day)) {
+                              isDayUnlocked = true;
+                            }
+                          }
+                        }
+
                         return (
-                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")}>
-                            <Link href={`/lessons/${targetLanguage}/alphabet/${week}/${day}`}>
-                              {isDayCompleted && <CheckCircle className="mr-2 h-4 w-4"/>}
+                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")} disabled={!isDayUnlocked}>
+                            <Link href={isDayUnlocked ? `/lessons/${targetLanguage}/alphabet/${week}/${day}` : '#'}>
+                              {isDayCompleted ? <CheckCircle className="mr-2 h-4 w-4"/> : (!isDayUnlocked && <Lock className="mr-2 h-4 w-4"/>)}
                               {`${t.day} ${day}`}
                             </Link>
                           </Button>
