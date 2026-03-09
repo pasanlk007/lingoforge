@@ -1,6 +1,6 @@
 'use client';
 
-import { TARGET_LANGUAGES } from '@/lib/constants';
+import { targetLanguages } from '@/lib/translations';
 
 class AudioPlayer {
   private utteranceRef: SpeechSynthesisUtterance | null = null; // Keep a reference to prevent garbage collection
@@ -52,8 +52,10 @@ class AudioPlayer {
     window.speechSynthesis.cancel();
     
     const voices = await this.getVoices();
-    const langInfo = TARGET_LANGUAGES.find(l => l.name === languageName);
-    const langCode = langInfo ? langInfo.code : 'en-US';
+    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === languageName.toLowerCase());
+    
+    // Find a matching voice code from the translations file, e.g., "fr-FR", "de-DE".
+    const langCode = langInfo ? targetLanguages.find(l => l.lang === langInfo.lang)?.countries[0] || 'en-US' : 'en-US';
 
     const utterance = new SpeechSynthesisUtterance(text);
     this.utteranceRef = utterance; // Keep reference

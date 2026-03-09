@@ -7,7 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { TARGET_LANGUAGES, NATIVE_LANGUAGES } from "@/lib/constants";
+import { targetLanguages, nativeLanguages } from "@/lib/translations";
 import type { TargetLanguage } from "@/lib/types";
 
 interface LanguageSelectorProps {
@@ -21,16 +21,16 @@ export function LanguageSelector({ onLanguageChange }: LanguageSelectorProps) {
         <label htmlFor="target-lang" className="mb-2 block text-left text-sm font-medium text-muted-foreground">
           I want to learn...
         </label>
-        <Select defaultValue={TARGET_LANGUAGES[0].name} onValueChange={(value) => onLanguageChange(value as TargetLanguage)}>
+        <Select defaultValue={targetLanguages[0].lang} onValueChange={(value) => onLanguageChange(value as TargetLanguage)}>
           <SelectTrigger id="target-lang" className="w-full">
             <SelectValue placeholder="Select language" />
           </SelectTrigger>
           <SelectContent>
-            {TARGET_LANGUAGES.map((lang) => (
-              <SelectItem key={lang.code} value={lang.name}>
+            {targetLanguages.map((lang) => (
+              <SelectItem key={lang.lang} value={lang.lang}>
                 <div className="flex items-center gap-2">
                   <span className="text-lg">{lang.flag}</span>
-                  <span>{lang.name}</span>
+                  <span>{lang.lang}</span>
                 </div>
               </SelectItem>
             ))}
@@ -41,14 +41,14 @@ export function LanguageSelector({ onLanguageChange }: LanguageSelectorProps) {
         <label htmlFor="native-lang" className="mb-2 block text-left text-sm font-medium text-muted-foreground">
           I speak...
         </label>
-        <Select defaultValue={NATIVE_LANGUAGES[0].name}>
+        <Select defaultValue={nativeLanguages[0]}>
           <SelectTrigger id="native-lang" className="w-full">
             <SelectValue placeholder="Select your language" />
           </SelectTrigger>
           <SelectContent>
-            {NATIVE_LANGUAGES.map((lang) => (
-              <SelectItem key={lang.code} value={lang.name}>
-                {lang.name}
+            {nativeLanguages.map((lang) => (
+              <SelectItem key={lang} value={lang}>
+                {lang}
               </SelectItem>
             ))}
           </SelectContent>

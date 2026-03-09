@@ -951,37 +951,27 @@ export const translations = {
 };
 
 export const targetLanguages = [
-  { lang: "German", flag: "🇩🇪", countries: ["Germany", "Austria", "Switzerland"] },
-  { lang: "French", flag: "🇫🇷", countries: ["France", "Belgium", "Switzerland", "Canada"] },
-  { lang: "Italian", flag: "🇮🇹", countries: ["Italy", "Switzerland"] },
-  { lang: "Spanish", flag: "🇪🇸", countries: ["Spain", "Latin America"] },
-  { lang: "Portuguese", flag: "🇵🇹", countries: ["Portugal", "Brazil"] },
-  { lang: "Dutch", flag: "🇳🇱", countries: ["Netherlands", "Belgium"] },
-  { lang: "Greek", flag: "🇬🇷", countries: ["Greece", "Cyprus"] },
-  { lang: "Polish", flag: "🇵🇱", countries: ["Poland"] },
-  { lang: "Romanian", flag: "🇷🇴", countries: ["Romania"] },
-  { lang: "Serbian", flag: "🇷🇸", countries: ["Serbia"] },
-  { lang: "Russian", flag: "🇷🇺", countries: ["Russia"] },
-  { lang: "Finnish", flag: "🇫🇮", countries: ["Finland"] },
-  { lang: "Korean", flag: "🇰🇷", countries: ["South Korea"] },
-  { lang: "Japanese", flag: "🇯🇵", countries: ["Japan"] },
-  { lang: "Arabic", flag: "🇸🇦", countries: ["UAE", "Saudi Arabia", "Qatar", "Kuwait"] },
-  { lang: "Hebrew", flag: "🇮🇱", countries: ["Israel"] },
-  { lang: "English", flag: "🇬🇧", countries: ["UK", "Australia", "Canada", "USA"] },
-  { lang: "Turkish", flag: "🇹🇷", countries: ["Turkey"] },
-  { lang: "Hindi", flag: "🇮🇳", countries: ["India"] },
-  { lang: "Tamil", flag: "🇮🇳", countries: ["India", "Sri Lanka", "Singapore"] },
-  { lang: "Chinese", flag: "🇨🇳", countries: ["China", "Singapore", "Taiwan"] },
+  { lang: "German", flag: "🇩🇪", countries: ["de-DE", "Austria", "Switzerland"] },
+  { lang: "French", flag: "🇫🇷", countries: ["fr-FR", "Belgium", "Switzerland", "Canada"] },
+  { lang: "Italian", flag: "🇮🇹", countries: ["it-IT", "Switzerland"] },
+  { lang: "Spanish", flag: "🇪🇸", countries: ["es-ES", "Latin America"] },
+  { lang: "Portuguese", flag: "🇵🇹", countries: ["pt-PT", "Brazil"] },
+  { lang: "Dutch", flag: "🇳🇱", countries: ["nl-NL", "Belgium"] },
+  { lang: "Greek", flag: "🇬🇷", countries: ["el-GR", "Cyprus"] },
+  { lang: "Polish", flag: "🇵🇱", countries: ["pl-PL"] },
+  { lang: "Romanian", flag: "🇷🇴", countries: ["ro-RO"] },
+  { lang: "Serbian", flag: "🇷🇸", countries: ["sr-RS"] },
+  { lang: "Russian", flag: "🇷🇺", countries: ["ru-RU"] },
+  { lang: "Finnish", flag: "🇫🇮", countries: ["fi-FI"] },
+  { lang: "Korean", flag: "🇰🇷", countries: ["ko-KR"] },
+  { lang: "Japanese", flag: "🇯🇵", countries: ["ja-JP"] },
+  { lang: "Arabic", flag: "🇸🇦", countries: ["ar-SA", "UAE", "Qatar", "Kuwait"] },
+  { lang: "Hebrew", flag: "🇮🇱", countries: ["he-IL"] },
+  { lang: "English", flag: "🇬🇧", countries: ["en-US", "Australia", "Canada", "USA", "en-GB"] },
+  { lang: "Turkish", flag: "🇹🇷", countries: ["tr-TR"] },
+  { lang: "Hindi", flag: "🇮🇳", countries: ["hi-IN"] },
+  { lang: "Tamil", flag: "🇮🇳", countries: ["ta-IN", "Sri Lanka", "Singapore"] },
+  { lang: "Chinese", flag: "🇨🇳", countries: ["zh-CN", "Singapore", "Taiwan"] },
 ];
 
 export const nativeLanguages = Object.keys(translations);
-
-    
-
-    
-
-
-
-
-
-

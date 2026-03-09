@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { TARGET_LANGUAGES } from "@/lib/constants";
+import { targetLanguages } from "@/lib/translations";
 import { useRouter } from "next/navigation";
 
 function FloatingFlag({ flag, className }: { flag: string; className: string }) {
@@ -59,10 +59,10 @@ export function LandingHero() {
                 <DialogTitle>17 Languages Available</DialogTitle>
               </DialogHeader>
               <div className="grid grid-cols-2 gap-4 py-4 sm:grid-cols-3">
-                {TARGET_LANGUAGES.map((lang) => (
-                  <div key={lang.code} className="flex items-center gap-3 rounded-md p-2 hover:bg-muted">
+                {targetLanguages.map((lang) => (
+                  <div key={lang.lang} className="flex items-center gap-3 rounded-md p-2 hover:bg-muted">
                     <span className="text-2xl">{lang.flag}</span>
-                    <span className="font-medium">{lang.name}</span>
+                    <span className="font-medium">{lang.lang}</span>
                   </div>
                 ))}
               </div>
