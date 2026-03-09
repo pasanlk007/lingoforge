@@ -4,25 +4,31 @@ import { useUser, useAuth, useFirestore, useMemoFirebase } from '@/firebase/prov
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { doc } from 'firebase/firestore';
-import { useDoc, WithId } from '@/firebase/firestore/use-doc';
+import { useDoc } from '@/firebase/firestore/use-doc';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { UserProfile } from '@/lib/types';
 import { Navigation } from '@/components/Navigation';
+import type { User } from 'firebase/auth';
 
-export default function ProfilePage() {
-  const { user, isUserLoading } = useUser();
+function ProfilePageLoading() {
+  return (
+    <>
+      <Navigation />
+      <div className="container mx-auto max-w-2xl py-12">
+        <Skeleton className="h-48 w-full" />
+      </div>
+    </>
+  );
+}
+
+
+function ProfileContent({ user }: { user: User }) {
   const auth = useAuth();
   const firestore = useFirestore();
   const router = useRouter();
-
-  useEffect(() => {
-    if (!isUserLoading && !user) {
-      router.push('/login');
-    }
-  }, [user, isUserLoading, router]);
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -37,23 +43,12 @@ export default function ProfilePage() {
     router.push('/');
   };
 
-  if (isUserLoading || isProfileLoading) {
-    return (
-      <>
-        <Navigation />
-        <div className="container mx-auto max-w-2xl py-12">
-          <Skeleton className="h-48 w-full" />
-        </div>
-      </>
-    );
-  }
-  
-  if (!user) {
-    return null; // Redirect is happening
+  if (isProfileLoading) {
+    return <ProfilePageLoading />;
   }
 
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
+     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto max-w-2xl py-12">
@@ -98,5 +93,22 @@ export default function ProfilePage() {
         </div>
       </main>
     </div>
-  );
+  )
+}
+
+export default function ProfilePage() {
+  const { user, isUserLoading } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isUserLoading && !user) {
+      router.push('/login');
+    }
+  }, [user, isUserLoading, router]);
+
+  if (isUserLoading || !user) {
+    return <ProfilePageLoading />;
+  }
+  
+  return <ProfileContent user={user} />;
 }

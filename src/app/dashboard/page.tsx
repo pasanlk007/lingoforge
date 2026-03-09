@@ -33,6 +33,7 @@ import { doc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { UserProfile, UserWeekProgress } from "@/lib/types";
+import type { User } from 'firebase/auth';
 
 function DashboardLoading() {
   return (
@@ -67,26 +68,20 @@ function DashboardLoading() {
   )
 }
 
-
-export default function DashboardPage() {
+function DashboardContent({ user }: { user: User }) {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
   const [isMounted, setIsMounted] = useState(false);
   
-  const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
-  const router = useRouter();
 
   useEffect(() => {
-      if (!isUserLoading && !user) {
-        router.push('/login?redirect=/dashboard');
-      }
       const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
       if (savedNativeLang && translations[savedNativeLang]) {
         setNativeLanguage(savedNativeLang);
       }
       setIsMounted(true);
-  }, [user, isUserLoading, router]);
+  }, []);
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -114,8 +109,7 @@ export default function DashboardPage() {
       }
   }, [nativeLanguage, userProfile?.selectedLanguage, isMounted]);
 
-
-  if (!isMounted || isUserLoading || isProfileLoading || !userProfile) {
+  if (!isMounted || isProfileLoading || !userProfile) {
       return <DashboardLoading />;
   }
 
@@ -339,4 +333,21 @@ export default function DashboardPage() {
       </main>
     </div>
   );
+}
+
+export default function DashboardPage() {
+  const { user, isUserLoading } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isUserLoading && !user) {
+      router.push('/login?redirect=/dashboard');
+    }
+  }, [user, isUserLoading, router]);
+
+  if (isUserLoading || !user) {
+    return <DashboardLoading />;
+  }
+
+  return <DashboardContent user={user} />;
 }
