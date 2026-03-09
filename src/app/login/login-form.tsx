@@ -21,7 +21,7 @@ export function LoginFormContent() {
   const auth = useAuth();
   const { toast } = useToast();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
@@ -35,7 +35,18 @@ export function LoginFormContent() {
       return;
     }
 
-    const handleError = (error: any) => {
+    try {
+        await initiateEmailSignIn(auth, email, password);
+        
+        toast({
+          title: "Login Successful",
+          description: "You are being redirected to your dashboard.",
+        });
+
+        const redirectUrl = searchParams?.get('redirect');
+        router.push(redirectUrl || '/dashboard');
+
+    } catch (error: any) {
         console.error("Login failed:", error);
         let errorMessage = "An unknown error occurred.";
         if (error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found') {
@@ -50,19 +61,7 @@ export function LoginFormContent() {
             description: errorMessage,
         });
         setIsLoading(false);
-    };
-
-    // Initiate sign-in, redirect immediately, and handle errors in the .catch() block.
-    // The global onAuthStateChanged listener will handle the success case and update the UI.
-    initiateEmailSignIn(auth, email, password).catch(handleError);
-
-    toast({
-      title: "Logging In...",
-      description: "You are being redirected to your dashboard.",
-    });
-
-    const redirectUrl = searchParams?.get('redirect');
-    router.push(redirectUrl || '/dashboard');
+    }
   };
 
   return (
