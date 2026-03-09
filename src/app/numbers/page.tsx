@@ -41,7 +41,7 @@ export default function NumbersPathPage() {
     return collection(firestore, 'userProgress', user.uid, 'numbers');
   }, [user, firestore]);
 
-  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
+  const { data: progressData } = useCollection<UserWeekProgress>(progressCollectionRef);
 
   useEffect(() => {
     const savedTargetLang = localStorage.getItem('targetLanguage');
@@ -129,12 +129,16 @@ export default function NumbersPathPage() {
                       {canOpenAccordion && weekAccess === 'preview' && <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">PREVIEW</span>}
 
                       {weekAccess === 'unlocked' && !isWeekCompleted && (
-                        isAdmin ? (
-                            <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">ADMIN</span>
+                         isSuperAdmin ? (
+                            <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">SUPER ADMIN</span>
                         ) : (
-                            <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
-                                {completedDaysInWeek.length} / 7 {t.days}
-                            </span>
+                          isAdmin ? (
+                              <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">ADMIN</span>
+                          ) : (
+                              <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+                                  {completedDaysInWeek.length} / 7 {t.days}
+                              </span>
+                          )
                         )
                       )}
                       {weekAccess === 'unlocked' && isWeekCompleted && (
@@ -146,15 +150,15 @@ export default function NumbersPathPage() {
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                         const isDayCompleted = completedDaysInWeek.includes(day);
-                        
                         const sequentialAccess = day <= (completedDaysInWeek.length || 0) + 1;
-                        let isDayUnlocked = isSuperAdmin || (weekAccess === 'unlocked' && sequentialAccess);
-
-                        // Trial users on this path are limited to first 3 days of week 1
-                        if (isTrialActive && !isPaid && !isAdmin) {
-                            if (week !== 1 || !([1,2,3].includes(day))) {
-                                isDayUnlocked = false;
-                            }
+                        
+                        let isDayUnlocked = false;
+                        if (isSuperAdmin) {
+                          isDayUnlocked = true;
+                        } else if (isAdmin || isPaid) {
+                          isDayUnlocked = sequentialAccess;
+                        } else if (isTrialActive && week === 1 && day <= 3) {
+                          isDayUnlocked = sequentialAccess;
                         }
                         
                         return (
