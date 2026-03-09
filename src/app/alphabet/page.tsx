@@ -2,13 +2,13 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
-import { collection } from 'firebase/firestore';
+import { useUser, useFirestore, useCollection, useMemoFirebase, useDoc } from '@/firebase';
+import { collection, doc } from 'firebase/firestore';
 import type { UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { Lock, CheckCircle } from 'lucide-react';
+import { Lock, CheckCircle, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { translations } from '@/lib/translations';
@@ -20,6 +20,14 @@ export default function AlphabetPathPage() {
 
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
+  
+  // Check for admin privileges
+  const adminUserRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, 'adminUsers', user.uid);
+  }, [user, firestore]);
+  const { data: adminUserData, isLoading: isAdminLoading } = useDoc(adminUserRef);
+  const isAdmin = !!adminUserData;
 
   const progressCollectionRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -64,7 +72,7 @@ export default function AlphabetPathPage() {
     return { unlockedWeeks: maxUnlockedWeek, completedDays: completedDaysMap };
   }, [progressData]);
 
-  if (!isMounted || isUserLoading || isProgressLoading) {
+  if (!isMounted || isUserLoading || isProgressLoading || isAdminLoading) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -94,7 +102,7 @@ export default function AlphabetPathPage() {
 
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
             {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
-              const isUnlocked = week <= unlockedWeeks;
+              const isUnlocked = isAdmin || week <= unlockedWeeks;
               const completedDaysInWeek = completedDays[week] || [];
               const isCompleted = completedDaysInWeek.length === 7;
               
@@ -103,7 +111,7 @@ export default function AlphabetPathPage() {
                   <AccordionTrigger className={cn("text-lg hover:no-underline", !isUnlocked && "cursor-not-allowed text-muted-foreground/50")}>
                     <div className="flex w-full items-center justify-between pr-4">
                       <span className="flex items-center gap-3">
-                         {!isUnlocked ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <div className="w-5 h-5" />) }
+                         {!isUnlocked ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : (isAdmin ? <Sparkles className="h-5 w-5 text-yellow-400" /> : <div className="w-5 h-5" />)) }
                          {t.week} {week}
                       </span>
                       {!isUnlocked && (
@@ -112,9 +120,15 @@ export default function AlphabetPathPage() {
                         </span>
                       )}
                        {isUnlocked && !isCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
-                          {completedDaysInWeek.length} / 7 {t.days}
-                        </span>
+                        isAdmin ? (
+                            <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">
+                                ADMIN
+                            </span>
+                        ) : (
+                            <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+                                {completedDaysInWeek.length} / 7 {t.days}
+                            </span>
+                        )
                       )}
                       {isUnlocked && isCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-green-500">
