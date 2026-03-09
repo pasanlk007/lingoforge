@@ -116,10 +116,10 @@ export interface UserProfile {
   nativeLanguage: string;
   selectedLanguage: string;
   subscriptionType: 'free' | 'monthly' | 'yearly';
-  subscriptionExpiry?: any;
+  subscriptionExpiry?: string; // ISO 8601 date string
   xpPoints: number;
   currentStreak: number;
-  lastActiveDate: string;
+  lastActiveDate: string; // ISO 8601 date string
   aiPlanningEnabled: boolean;
   photoURL?: string;
 }

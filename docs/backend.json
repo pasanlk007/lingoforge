@@ -30,6 +30,11 @@
           "type": "string",
           "description": "The user's current subscription level: 'free', 'monthly', or 'yearly'."
         },
+        "subscriptionExpiry": {
+          "type": "string",
+          "description": "The date when the user's current subscription expires. Not applicable for 'free' tier.",
+          "format": "date"
+        },
         "xpPoints": {
           "type": "number",
           "description": "Total experience points accumulated by the user."
