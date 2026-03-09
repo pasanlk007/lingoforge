@@ -27,6 +27,7 @@ import { PATHS } from '@/lib/constants';
 import { cn } from "@/lib/utils";
 import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { ReminderCard } from "@/components/ReminderCard";
 
 
 export default function DashboardPage() {
@@ -254,6 +255,7 @@ export default function DashboardPage() {
                   </Select>
                 </CardContent>
               </Card>
+              <ReminderCard />
               {/* Weekly Progress */}
               <Card>
                 <CardHeader>

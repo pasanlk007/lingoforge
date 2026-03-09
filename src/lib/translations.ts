@@ -123,7 +123,19 @@ export const translations = {
         fri: 'Fri',
         sat: 'Sat',
         sun: 'Sun',
-      }
+      },
+      reminders: {
+        title: "Weekly Reminders",
+        description: "Set daily notifications to stay on track with your learning.",
+        permissionNeeded: "Notification permission is required to enable reminders.",
+        grantPermission: "Grant Permission",
+        save: "Save Reminders",
+        saved: "Reminder settings saved!",
+      },
+    },
+    notifications: {
+      title: "Time for your LingoForge lesson!",
+      body: "Your daily {language} lesson is waiting. Keep your streak going!",
     },
     wordCard: {
       phonetic: 'Phonetic',
@@ -302,7 +314,19 @@ export const translations = {
         fri: 'සිකු',
         sat: 'සෙන',
         sun: 'ඉරි',
-      }
+      },
+      reminders: {
+        title: "සතිපතා මතක් කිරීම්",
+        description: "ඔබේ ඉගෙනීම සමඟ නිරතුරුව සිටීමට දෛනික දැනුම්දීම් සකසන්න.",
+        permissionNeeded: "මතක් කිරීම් සක්‍රීය කිරීමට දැනුම්දීම් අවසරය අවශ්‍ය වේ.",
+        grantPermission: "අවසරය ලබා දෙන්න",
+        save: "මතක් කිරීම් සුරකින්න",
+        saved: "මතක් කිරීමේ සැකසුම් සුරකින ලදි!",
+      },
+    },
+    notifications: {
+        title: "ඔබගේ LingoForge පාඩම සඳහා වේලාවයි!",
+        body: "ඔබගේ දෛනික {language} පාඩම බලා සිටී. ඔබගේ streak එක දිගටම කරගෙන යන්න!",
     },
     wordCard: {
       phonetic: 'උච්චාරණය',
@@ -481,7 +505,19 @@ export const translations = {
         fri: 'शुक्र',
         sat: 'शनि',
         sun: 'रवि',
-      }
+      },
+      reminders: {
+        title: "साप्ताहिक अनुस्मारक",
+        description: "अपनी शिक्षा के साथ ट्रैक पर बने रहने के लिए दैनिक सूचनाएं सेट करें।",
+        permissionNeeded: "अनुस्मारक सक्षम करने के लिए अधिसूचना अनुमति आवश्यक है।",
+        grantPermission: "अनुमति दें",
+        save: "अनुस्मारक सहेजें",
+        saved: "अनुस्मारक सेटिंग्स सहेजी गईं!",
+      },
+    },
+    notifications: {
+      title: "आपके लिंगोफोर्ज पाठ का समय!",
+      body: "आपका दैनिक {language} पाठ प्रतीक्षा कर रहा है। अपनी स्ट्रीक जारी रखें!",
     },
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
@@ -608,7 +644,19 @@ export const translations = {
         fri: 'جمعہ',
         sat: 'ہفتہ',
         sun: 'اتوار',
-      }
+      },
+      reminders: {
+        title: "ہفتہ وار یاد دہانیاں",
+        description: "اپنی تعلیم کے ساتھ ٹریک پر رہنے کے لئے روزانہ اطلاعات مرتب کریں۔",
+        permissionNeeded: "یاد دہانیوں کو فعال کرنے کے لئے اطلاع کی اجازت درکار ہے۔",
+        grantPermission: "اجازت دیں",
+        save: "یاد دہانیاں محفوظ کریں",
+        saved: "یاد دہانی کی ترتیبات محفوظ ہوگئیں!",
+      },
+    },
+    notifications: {
+        title: "آپ کے لنگوفورج سبق کا وقت!",
+        body: "آپ کا روزانہ {language} سبق انتظار کر رہا ہے۔ اپنی اسٹریک جاری رکھیں!",
     },
     wordCard: {
       phonetic: 'صوتیات',
@@ -735,7 +783,19 @@ export const translations = {
         fri: 'শুক্র',
         sat: 'শনি',
         sun: 'রবি',
-      }
+      },
+      reminders: {
+        title: "সাপ্তাহিক অনুস্মারক",
+        description: "আপনার শেখার সাথে ট্র্যাকে থাকতে দৈনিক বিজ্ঞপ্তি সেট করুন।",
+        permissionNeeded: "অনুস্মারক সক্ষম করতে বিজ্ঞপ্তি অনুমতি প্রয়োজন।",
+        grantPermission: "অনুমতি দিন",
+        save: "অনুস্মারক সংরক্ষণ করুন",
+        saved: "অনুস্মারক সেটিংস সংরক্ষিত হয়েছে!",
+      },
+    },
+    notifications: {
+      title: "আপনার লিঙ্গোফোরজ পাঠের জন্য সময়!",
+      body: "আপনার দৈনিক {language} পাঠ অপেক্ষা করছে। আপনার স্ট্রিক চালিয়ে যান!",
     },
     wordCard: {
       phonetic: 'উচ্চারণ',
@@ -862,7 +922,19 @@ export const translations = {
         fri: 'शुक्र',
         sat: 'शनि',
         sun: 'आइत',
-      }
+      },
+      reminders: {
+        title: "साप्ताहिक रिमाइन्डरहरू",
+        description: "आफ्नो सिकाइसँग ट्र्याकमा रहन दैनिक सूचनाहरू सेट गर्नुहोस्।",
+        permissionNeeded: "रिमाइन्डरहरू सक्षम गर्न सूचना अनुमति आवश्यक छ।",
+        grantPermission: "अनुमति दिनुहोस्",
+        save: "रिमाइन्डरहरू बचत गर्नुहोस्",
+        saved: "रिमाइन्डर सेटिङहरू बचत गरियो!",
+      },
+    },
+    notifications: {
+      title: "तपाईंको लिंगोफोर्ज पाठको लागि समय!",
+      body: "तपाईंको दैनिक {language} पाठ पर्खिरहेको छ। आफ्नो स्ट्रीक जारी राख्नुहोस्!",
     },
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
@@ -901,6 +973,7 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+
 
 
 
