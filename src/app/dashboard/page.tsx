@@ -28,7 +28,7 @@ import { cn } from "@/lib/utils";
 import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ReminderCard } from "@/components/ReminderCard";
-import { useUser, useFirestore, useDoc, useMemoFirebase } from "@/firebase";
+import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from "@/firebase";
 import { doc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -75,19 +75,53 @@ function DashboardContent({ user }: { user: User }) {
   
   const firestore = useFirestore();
 
-  useEffect(() => {
-      const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
-      if (savedNativeLang && translations[savedNativeLang]) {
-        setNativeLanguage(savedNativeLang);
-      }
-      setIsMounted(true);
-  }, []);
-
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
     return doc(firestore, 'userProfiles', user.uid);
   }, [user, firestore]);
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+
+  // Effect to initialize state from localStorage on component mount
+  useEffect(() => {
+    const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
+    if (savedNativeLang && translations[savedNativeLang]) {
+      setNativeLanguage(savedNativeLang);
+    }
+    const savedTargetLang = localStorage.getItem("targetLanguage");
+    if (savedTargetLang) {
+      setTargetLanguage(savedTargetLang);
+    }
+    setIsMounted(true);
+  }, []);
+
+  // Effect to synchronize Firestore profile data to local state when it loads
+  useEffect(() => {
+    if (userProfile) {
+      if (userProfile.nativeLanguage && translations[userProfile.nativeLanguage as keyof typeof translations]) {
+        setNativeLanguage(userProfile.nativeLanguage as keyof typeof translations);
+      }
+      if (userProfile.selectedLanguage) {
+        setTargetLanguage(userProfile.selectedLanguage);
+      }
+    }
+  }, [userProfile]);
+
+  // Effect to persist language changes back to localStorage and Firestore
+  useEffect(() => {
+    if (isMounted && userProfileRef) {
+      localStorage.setItem("nativeLanguage", nativeLanguage);
+      localStorage.setItem("targetLanguage", targetLanguage);
+      
+      // Only update Firestore if the languages have actually changed from what's in the profile
+      if (userProfile && (userProfile.nativeLanguage !== nativeLanguage || userProfile.selectedLanguage !== targetLanguage)) {
+        updateDocumentNonBlocking(userProfileRef, {
+          nativeLanguage: nativeLanguage,
+          selectedLanguage: targetLanguage,
+        });
+      }
+    }
+  }, [nativeLanguage, targetLanguage, isMounted, userProfileRef, userProfile]);
+
 
   const lastActiveWeek = userProfile?.lastLessonWeek || 1;
   const lastActivePath = userProfile?.activePath || 'survival';
@@ -98,16 +132,6 @@ function DashboardContent({ user }: { user: User }) {
   }, [user, firestore, lastActivePath, lastActiveWeek]);
 
   const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
-
-  useEffect(() => {
-      if(isMounted) {
-        localStorage.setItem("nativeLanguage", nativeLanguage);
-        if (userProfile?.selectedLanguage) {
-          localStorage.setItem("targetLanguage", userProfile.selectedLanguage);
-          setTargetLanguage(userProfile.selectedLanguage);
-        }
-      }
-  }, [nativeLanguage, userProfile?.selectedLanguage, isMounted]);
 
   if (!isMounted || isProfileLoading || !userProfile) {
       return <DashboardLoading />;
