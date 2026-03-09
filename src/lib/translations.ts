@@ -125,11 +125,12 @@ export const translations = {
         sun: 'Sun',
       },
       reminders: {
-        title: "Weekly Reminders",
-        description: "Set daily notifications to stay on track with your learning.",
+        title: "Study Reminders",
+        description: "Set a daily notification to stay on track with your learning.",
+        dailyReminder: "Daily Reminder",
         permissionNeeded: "Notification permission is required to enable reminders.",
         grantPermission: "Grant Permission",
-        save: "Save Reminders",
+        save: "Save Reminder",
         saved: "Reminder settings saved!",
       },
     },
@@ -316,11 +317,12 @@ export const translations = {
         sun: 'ඉරි',
       },
       reminders: {
-        title: "සතිපතා මතක් කිරීම්",
-        description: "ඔබේ ඉගෙනීම සමඟ නිරතුරුව සිටීමට දෛනික දැනුම්දීම් සකසන්න.",
+        title: "අධ්‍යයන මතක් කිරීම්",
+        description: "ඔබේ ඉගෙනීම සමඟ නිරතුරුව සිටීමට දෛනික දැනුම්දීමක් සකසන්න.",
+        dailyReminder: "දෛනික මතක් කිරීම",
         permissionNeeded: "මතක් කිරීම් සක්‍රීය කිරීමට දැනුම්දීම් අවසරය අවශ්‍ය වේ.",
         grantPermission: "අවසරය ලබා දෙන්න",
-        save: "මතක් කිරීම් සුරකින්න",
+        save: "මතක් කිරීම සුරකින්න",
         saved: "මතක් කිරීමේ සැකසුම් සුරකින ලදි!",
       },
     },
@@ -507,8 +509,9 @@ export const translations = {
         sun: 'रवि',
       },
       reminders: {
-        title: "साप्ताहिक अनुस्मारक",
-        description: "अपनी शिक्षा के साथ ट्रैक पर बने रहने के लिए दैनिक सूचनाएं सेट करें।",
+        title: "अध्ययन अनुस्मारक",
+        description: "अपनी शिक्षा के साथ ट्रैक पर बने रहने के लिए एक दैनिक सूचना सेट करें।",
+        dailyReminder: "दैनिक अनुस्मारक",
         permissionNeeded: "अनुस्मारक सक्षम करने के लिए अधिसूचना अनुमति आवश्यक है।",
         grantPermission: "अनुमति दें",
         save: "अनुस्मारक सहेजें",
@@ -646,11 +649,12 @@ export const translations = {
         sun: 'اتوار',
       },
       reminders: {
-        title: "ہفتہ وار یاد دہانیاں",
-        description: "اپنی تعلیم کے ساتھ ٹریک پر رہنے کے لئے روزانہ اطلاعات مرتب کریں۔",
+        title: "مطالعی یاد دہانیاں",
+        description: "اپنی تعلیم کے ساتھ ٹریک پر رہنے کے لئے روزانہ اطلاع مرتب کریں۔",
+        dailyReminder: "روزانہ یاد دہانی",
         permissionNeeded: "یاد دہانیوں کو فعال کرنے کے لئے اطلاع کی اجازت درکار ہے۔",
         grantPermission: "اجازت دیں",
-        save: "یاد دہانیاں محفوظ کریں",
+        save: "یاد دہانی محفوظ کریں",
         saved: "یاد دہانی کی ترتیبات محفوظ ہوگئیں!",
       },
     },
@@ -785,8 +789,9 @@ export const translations = {
         sun: 'রবি',
       },
       reminders: {
-        title: "সাপ্তাহিক অনুস্মারক",
-        description: "আপনার শেখার সাথে ট্র্যাকে থাকতে দৈনিক বিজ্ঞপ্তি সেট করুন।",
+        title: "অধ্যয়ন অনুস্মারক",
+        description: "আপনার শেখার সাথে ট্র্যাকে থাকতে একটি দৈনিক বিজ্ঞপ্তি সেট করুন।",
+        dailyReminder: "দৈনিক অনুস্মারক",
         permissionNeeded: "অনুস্মারক সক্ষম করতে বিজ্ঞপ্তি অনুমতি প্রয়োজন।",
         grantPermission: "অনুমতি দিন",
         save: "অনুস্মারক সংরক্ষণ করুন",
@@ -924,11 +929,12 @@ export const translations = {
         sun: 'आइत',
       },
       reminders: {
-        title: "साप्ताहिक रिमाइन्डरहरू",
-        description: "आफ्नो सिकाइसँग ट्र्याकमा रहन दैनिक सूचनाहरू सेट गर्नुहोस्।",
+        title: "अध्ययन रिमाइन्डरहरू",
+        description: "आफ्नो सिकाइसँग ट्र्याकमा रहन दैनिक सूचना सेट गर्नुहोस्।",
+        dailyReminder: "दैनिक रिमाइन्डर",
         permissionNeeded: "रिमाइन्डरहरू सक्षम गर्न सूचना अनुमति आवश्यक छ।",
         grantPermission: "अनुमति दिनुहोस्",
-        save: "रिमाइन्डरहरू बचत गर्नुहोस्",
+        save: "रिमाइन्डर बचत गर्नुहोस्",
         saved: "रिमाइन्डर सेटिङहरू बचत गरियो!",
       },
     },
@@ -973,6 +979,7 @@ export const nativeLanguages = Object.keys(translations);
     
 
     
+
 
 
 
