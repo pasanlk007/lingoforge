@@ -51,6 +51,18 @@
         "aiPlanningEnabled": {
           "type": "boolean",
           "description": "A flag indicating if AI plans weekly themes."
+        },
+        "activePath": {
+          "type": "string",
+          "description": "The user's currently active learning path."
+        },
+        "lastLessonWeek": {
+          "type": "number",
+          "description": "The week number of the user's last completed lesson."
+        },
+        "lastLessonDay": {
+          "type": "number",
+          "description": "The day number of the user's last completed lesson."
         }
       },
       "required": [
@@ -63,7 +75,10 @@
         "xpPoints",
         "currentStreak",
         "lastActiveDate",
-        "aiPlanningEnabled"
+        "aiPlanningEnabled",
+        "activePath",
+        "lastLessonWeek",
+        "lastLessonDay"
       ]
     },
     "AdminUser": {

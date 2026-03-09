@@ -122,6 +122,9 @@ export interface UserProfile {
   lastActiveDate: string; // ISO 8601 date string
   aiPlanningEnabled: boolean;
   photoURL?: string;
+  activePath: 'survival' | 'alphabet' | 'numbers';
+  lastLessonWeek: number;
+  lastLessonDay: number;
 }
 
 export interface UserLessonProgress {

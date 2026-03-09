@@ -149,7 +149,10 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         updateDocumentNonBlocking(userProfileRef, {
             xpPoints: newXp,
             currentStreak: newStreak,
-            lastActiveDate: today.toISOString().split('T')[0]
+            lastActiveDate: today.toISOString().split('T')[0],
+            activePath: dayData.path,
+            lastLessonWeek: dayData.week,
+            lastLessonDay: currentDay
         });
     }
 

@@ -54,7 +54,7 @@ export default function SignupPage() {
 
       // Create user profile in Firestore
       const userProfile: UserProfile = {
-        id: user.uid, // IMPORTANT: Ensure the document ID matches the user's UID
+        id: user.uid,
         displayName: displayName,
         email: user.email!,
         nativeLanguage: nativeLanguage,
@@ -64,6 +64,9 @@ export default function SignupPage() {
         currentStreak: 0,
         lastActiveDate: new Date().toISOString().split('T')[0],
         aiPlanningEnabled: false,
+        activePath: 'survival',
+        lastLessonWeek: 1,
+        lastLessonDay: 0,
       };
 
       const userDocRef = doc(firestore, 'userProfiles', user.uid);

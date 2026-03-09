@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Link from 'next/link';
 import {
   Flame,
@@ -28,65 +28,121 @@ import { cn } from "@/lib/utils";
 import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ReminderCard } from "@/components/ReminderCard";
+import { useUser, useFirestore, useDoc, useMemoFirebase } from "@/firebase";
+import { doc } from "firebase/firestore";
+import { useRouter } from "next/navigation";
+import { Skeleton } from "@/components/ui/skeleton";
+import type { UserProfile, UserWeekProgress } from "@/lib/types";
+
+function DashboardLoading() {
+  return (
+    <div className="flex min-h-dvh flex-col bg-background">
+      <Navigation />
+      <main className="flex-1">
+        <div className="container mx-auto py-8 sm:py-12 px-4">
+          <header className="mb-8">
+            <Skeleton className="h-10 w-1/2" />
+            <Skeleton className="h-4 w-3/4 mt-2" />
+          </header>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
+            <Skeleton className="h-32 w-full" />
+            <Skeleton className="h-32 w-full" />
+            <Skeleton className="h-32 w-full" />
+            <Skeleton className="h-32 w-full" />
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2 space-y-8">
+              <Skeleton className="h-48 w-full" />
+              <Skeleton className="h-64 w-full" />
+            </div>
+            <div className="space-y-8">
+              <Skeleton className="h-40 w-full" />
+              <Skeleton className="h-40 w-full" />
+              <Skeleton className="h-40 w-full" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  )
+}
 
 
 export default function DashboardPage() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
   const [isMounted, setIsMounted] = useState(false);
+  
+  const { user, isUserLoading } = useUser();
+  const firestore = useFirestore();
+  const router = useRouter();
 
   useEffect(() => {
+      if (!isUserLoading && !user) {
+        router.push('/login?redirect=/dashboard');
+      }
       const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
       if (savedNativeLang && translations[savedNativeLang]) {
         setNativeLanguage(savedNativeLang);
       }
-      const savedTargetLang = localStorage.getItem("targetLanguage");
-      if (savedTargetLang) {
-          setTargetLanguage(savedTargetLang);
-      }
       setIsMounted(true);
-  }, []);
+  }, [user, isUserLoading, router]);
+
+  const userProfileRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, 'userProfiles', user.uid);
+  }, [user, firestore]);
+  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+
+  const lastActiveWeek = userProfile?.lastLessonWeek || 1;
+  const lastActivePath = userProfile?.activePath || 'survival';
+
+  const weekProgressRef = useMemoFirebase(() => {
+    if (!user || !firestore || !lastActivePath || !lastActiveWeek) return null;
+    return doc(firestore, 'userProgress', user.uid, lastActivePath, `week_${lastActiveWeek}`);
+  }, [user, firestore, lastActivePath, lastActiveWeek]);
+
+  const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
 
   useEffect(() => {
       if(isMounted) {
         localStorage.setItem("nativeLanguage", nativeLanguage);
-        localStorage.setItem("targetLanguage", targetLanguage);
+        if (userProfile?.selectedLanguage) {
+          localStorage.setItem("targetLanguage", userProfile.selectedLanguage);
+          setTargetLanguage(userProfile.selectedLanguage);
+        }
       }
-  }, [nativeLanguage, targetLanguage, isMounted]);
-
-  // Mock data for the dashboard
-  const userData = {
-    name: 'Alex',
-    streak: 12,
-    xp: 1450,
-    level: 8,
-    activePath: 'Survival',
-    activeLanguage: targetLanguage,
-    lastLesson: {
-      week: 2,
-      day: 3,
-    },
-    weeklyProgress: [true, true, true, false, false, false, false], // Mon, Tue, Wed completed
-  };
-
-  const nextDay = userData.lastLesson.day < 7 ? userData.lastLesson.day + 1 : 1;
-  const nextWeek = userData.lastLesson.day < 7 ? userData.lastLesson.week : userData.lastLesson.week + 1;
-  const nextLessonUrl = `/lessons/${userData.activeLanguage.toLowerCase()}/${userData.activePath.toLowerCase()}/${nextWeek}/${nextDay}`;
+  }, [nativeLanguage, userProfile?.selectedLanguage, isMounted]);
 
 
-  if (!isMounted) {
-      return (
-          <div className="flex min-h-dvh flex-col bg-background">
-              <Navigation />
-              <main className="flex-1" />
-          </div>
-      );
+  if (!isMounted || isUserLoading || isProfileLoading || !userProfile) {
+      return <DashboardLoading />;
   }
+
+  const {
+    displayName,
+    currentStreak,
+    xpPoints,
+    activePath,
+    selectedLanguage,
+    lastLessonWeek,
+    lastLessonDay
+  } = userProfile;
   
+  const level = Math.floor((xpPoints || 0) / 1500) + 1;
+  const xpToNextLevel = 1500 - (xpPoints % 1500);
+
+  const lastWeek = lastLessonWeek || 1;
+  const lastDay = lastLessonDay || 0;
+  
+  const nextDay = lastDay < 7 ? lastDay + 1 : 1;
+  const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
+  const nextLessonUrl = `/lessons/${(selectedLanguage || 'french').toLowerCase()}/${(activePath || 'survival').toLowerCase()}/${nextWeek}/${nextDay}`;
+
   const t = translations[nativeLanguage].dashboard;
-  const t_global = translations[nativeLanguage];
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
+  const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => weekProgressData?.daysCompleted?.includes(i + 1) || false);
 
 
   return (
@@ -96,14 +152,13 @@ export default function DashboardPage() {
         <div className="container mx-auto py-8 sm:py-12 px-4">
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-              {t.welcome}, {userData.name}!
+              {t.welcome}, {displayName}!
             </h1>
             <p className="text-muted-foreground mt-2">
               {t.ready}
             </p>
           </header>
 
-          {/* Stats Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -113,7 +168,7 @@ export default function DashboardPage() {
                 <Flame className="h-5 w-5 text-orange-500" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{userData.streak} days</div>
+                <div className="text-2xl font-bold">{currentStreak || 0} days</div>
                 <p className="text-xs text-muted-foreground">{t.keepFlame}</p>
               </CardContent>
             </Card>
@@ -123,9 +178,9 @@ export default function DashboardPage() {
                 <Star className="h-5 w-5 text-yellow-500" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{userData.xp.toLocaleString()}</div>
+                <div className="text-2xl font-bold">{(xpPoints || 0).toLocaleString()}</div>
                 <p className="text-xs text-muted-foreground">
-                  {(1500 - userData.xp).toLocaleString()} {t.toNextLevel} {userData.level + 1}
+                  {xpToNextLevel.toLocaleString()} {t.toNextLevel} {level + 1}
                 </p>
               </CardContent>
             </Card>
@@ -135,7 +190,7 @@ export default function DashboardPage() {
                 <Zap className="h-5 w-5 text-green-500" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{userData.level}</div>
+                <div className="text-2xl font-bold">{level}</div>
                 <p className="text-xs text-muted-foreground">{t.advancing}</p>
               </CardContent>
             </Card>
@@ -145,22 +200,20 @@ export default function DashboardPage() {
                 <Target className="h-5 w-5 text-blue-500" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{userData.activePath}</div>
-                <p className="text-xs text-muted-foreground">{t.language}: {userData.activeLanguage}</p>
+                <div className="text-2xl font-bold capitalize">{activePath || 'Survival'}</div>
+                <p className="text-xs text-muted-foreground">{t.language}: {selectedLanguage || 'French'}</p>
               </CardContent>
             </Card>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Main column */}
             <div className="lg:col-span-2 space-y-8">
               
-              {/* Continue Learning */}
               <Card className="border-2 border-primary shadow-lg shadow-primary/10">
                 <CardHeader>
                   <CardTitle>{t.continueJourney}</CardTitle>
                   <CardDescription>
-                    {t.continueDesc.replace('{path}', userData.activePath).replace('{language}', userData.activeLanguage)}
+                    {t.continueDesc.replace('{path}', activePath || 'Survival').replace('{language}', selectedLanguage || 'French')}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -181,7 +234,6 @@ export default function DashboardPage() {
                 </CardFooter>
               </Card>
 
-              {/* Learning Paths */}
               <div>
                 <h2 className="text-2xl font-bold tracking-tight mb-4">
                   {t.explorePaths}
@@ -195,14 +247,13 @@ export default function DashboardPage() {
                       title={path.title}
                       description={path.description}
                       details={path.details}
-                      language={userData.activeLanguage}
+                      language={selectedLanguage}
                     />
                   ))}
                 </div>
               </div>
             </div>
 
-            {/* Side column */}
             <div className="space-y-8">
                <Card>
                 <CardHeader>
@@ -256,7 +307,6 @@ export default function DashboardPage() {
                 </CardContent>
               </Card>
               <ReminderCard />
-              {/* Weekly Progress */}
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -269,13 +319,13 @@ export default function DashboardPage() {
                     {dayNames.map((day, index) => (
                       <div key={day} className="flex flex-col items-center gap-2">
                         <div
-                          className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                            userData.weeklyProgress[index]
+                          className={cn("w-10 h-10 rounded-full flex items-center justify-center font-bold",
+                            weeklyProgressBools[index]
                               ? 'bg-green-500 text-white'
                               : 'bg-muted'
-                          }`}
+                          )}
                         >
-                          {userData.weeklyProgress[index] ? '✓' : ''}
+                          {weeklyProgressBools[index] ? '✓' : ''}
                         </div>
                         <p className="text-xs text-muted-foreground">{day}</p>
                       </div>
