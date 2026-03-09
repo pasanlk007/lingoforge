@@ -56,10 +56,7 @@ export default function SurvivalPathPage() {
 
   const totalWeeks = 12;
 
-  const now = new Date();
   const isPaid = userProfile?.subscriptionType === 'monthly' || userProfile?.subscriptionType === 'yearly';
-  const trialEndDate = userProfile?.trialEndDate ? new Date(userProfile.trialEndDate) : null;
-  const isTrialActive = trialEndDate ? now < trialEndDate : false;
   
   const completedDays = useMemo(() => {
     if (!progressData) return {};
@@ -104,11 +101,11 @@ export default function SurvivalPathPage() {
               const isWeekCompleted = completedDaysInWeek.length === 7;
               
               let weekAccess: 'unlocked' | 'locked' = 'locked';
+              // Paid users and admins get access to all weeks.
               if (isAdmin || isPaid) {
                 weekAccess = 'unlocked';
-              } else if (isTrialActive) {
-                weekAccess = 'unlocked'; // Full access during trial for survival
-              } else { // Free plan
+              } else { // Free and Trial users
+                // Only Week 1 is available for non-paid users on the Survival Path.
                 if (week === 1) {
                   weekAccess = 'unlocked';
                 }
@@ -147,13 +144,14 @@ export default function SurvivalPathPage() {
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                         const isDayCompleted = completedDaysInWeek.includes(day);
-                        // Linear progression within the week
+                        // Linear progression: day is unlocked if it's the first day, or if the previous day is complete.
+                        // This applies to ALL users (Free, Trial, Paid, Admin) to ensure structured learning.
                         const isDayUnlocked = day <= completedDaysInWeek.length + 1;
                         
                         return (
                           <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")} disabled={!isDayUnlocked}>
-                            <Link href={`/lessons/${targetLanguage}/survival/${week}/${day}`}>
-                              {isDayCompleted && <CheckCircle className="mr-2 h-4 w-4"/>}
+                            <Link href={isDayUnlocked ? `/lessons/${targetLanguage}/survival/${week}/${day}` : '#'}>
+                              {isDayCompleted ? <CheckCircle className="mr-2 h-4 w-4"/> : (!isDayUnlocked && <Lock className="mr-2 h-4 w-4"/>)}
                               {`${t.day} ${day}`}
                             </Link>
                           </Button>
