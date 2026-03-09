@@ -14,7 +14,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { translations } from '@/lib/translations';
 
 export default function SurvivalPathPage() {
-  const [targetLanguage, setTargetLanguage] = useState('french');
+  const [targetLanguage, setTargetLanguage] = useState('French');
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
 
@@ -43,7 +43,7 @@ export default function SurvivalPathPage() {
   useEffect(() => {
     const savedTargetLang = localStorage.getItem('targetLanguage');
     if (savedTargetLang) {
-      setTargetLanguage(savedTargetLang.toLowerCase());
+      setTargetLanguage(savedTargetLang);
     }
     const savedNativeLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedNativeLang && translations[savedNativeLang]) {
@@ -150,7 +150,7 @@ export default function SurvivalPathPage() {
                         
                         return (
                           <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")} disabled={!isDayUnlocked}>
-                            <Link href={isDayUnlocked ? `/lessons/${targetLanguage}/survival/${week}/${day}` : '#'}>
+                            <Link href={isDayUnlocked ? `/lessons/${targetLanguage.toLowerCase()}/survival/${week}/${day}` : '#'}>
                               {isDayCompleted ? <CheckCircle className="mr-2 h-4 w-4"/> : (!isDayUnlocked && <Lock className="mr-2 h-4 w-4"/>)}
                               {`${t.day} ${day}`}
                             </Link>

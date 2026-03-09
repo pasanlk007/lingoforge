@@ -24,6 +24,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { PATHS } from "@/lib/constants";
+import { targetLanguages } from "@/lib/translations";
 
 const features = [
   {
@@ -63,7 +64,7 @@ const features = [
   },
   {
     icon: Languages,
-    title: "17 Languages Available",
+    title: `${targetLanguages.length} Languages Available`,
     description: "From French to Japanese, choose the language of your dreams.",
   },
 ];

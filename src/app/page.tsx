@@ -121,7 +121,7 @@ export default function LandingPage() {
 
           <div className="container mx-auto px-6">
             <div className="relative z-10 text-center max-w-3xl mx-auto">
-              <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 21 Languages Available</Badge>
+              <Badge variant="outline" className="border-cyan-400/50 bg-cyan-900/30 text-cyan-300 mb-4">🌍 {targetLanguages.length} Languages Available</Badge>
               <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">Developing Language Skills for Migrant Workers</h1>
               <p className="mt-4 max-w-xl mx-auto text-lg md:text-xl text-slate-300">Structured language survival paths for migrant workers.</p>
               
@@ -134,7 +134,7 @@ export default function LandingPage() {
                       </DialogTrigger>
                       <DialogContent className="bg-slate-800 border-slate-700 text-white sm:max-w-2xl">
                         <DialogHeader>
-                          <DialogTitle>21 Languages</DialogTitle>
+                          <DialogTitle>{targetLanguages.length} Languages</DialogTitle>
                         </DialogHeader>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-4 max-h-[60vh] overflow-y-auto">
                           {targetLanguages.map((lang) => (
