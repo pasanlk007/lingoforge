@@ -20,6 +20,8 @@ export default function AlphabetPathPage() {
 
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
+
+  const isSuperAdmin = user?.email === 'Pasan.lankathilakadpl@gmail.com';
   
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -28,11 +30,11 @@ export default function AlphabetPathPage() {
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
   const adminUserRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
+    if (!user || !firestore || isSuperAdmin) return null;
     return doc(firestore, 'adminUsers', user.uid);
-  }, [user, firestore]);
+  }, [user, firestore, isSuperAdmin]);
   const { data: adminUserData, isLoading: isAdminLoading } = useDoc(adminUserRef);
-  const isAdmin = !!adminUserData;
+  const isAdmin = isSuperAdmin || !!adminUserData;
 
   const progressCollectionRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -144,17 +146,16 @@ export default function AlphabetPathPage() {
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                         const isDayCompleted = completedDaysInWeek.includes(day);
                         
-                        let isDayUnlocked = false;
-                        if (weekAccess === 'unlocked') {
-                          if (isAdmin || isPaid) {
-                            isDayUnlocked = true;
-                          } else if (isTrialActive) {
-                            if (week === 1 && [1, 2, 3].includes(day)) {
-                              isDayUnlocked = true;
-                            }
-                          }
-                        }
+                        const sequentialAccess = day <= (completedDaysInWeek.length || 0) + 1;
+                        let isDayUnlocked = isSuperAdmin || (weekAccess === 'unlocked' && sequentialAccess);
 
+                        // Trial users on this path are limited to first 3 days of week 1
+                        if (isTrialActive && !isPaid && !isAdmin) {
+                            if (week !== 1 || !([1,2,3].includes(day))) {
+                                isDayUnlocked = false;
+                            }
+                        }
+                        
                         return (
                           <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")} disabled={!isDayUnlocked}>
                             <Link href={isDayUnlocked ? `/lessons/${targetLanguage.toLowerCase()}/alphabet/${week}/${day}` : '#'}>

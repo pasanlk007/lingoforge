@@ -8,7 +8,7 @@ import type { UserProfile, UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { Lock, CheckCircle, Sparkles, Star } from 'lucide-react';
+import { Lock, CheckCircle, Sparkles, Star, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { translations } from '@/lib/translations';
@@ -21,6 +21,8 @@ export default function SurvivalPathPage() {
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
 
+  const isSuperAdmin = user?.email === 'Pasan.lankathilakadpl@gmail.com';
+
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
     return doc(firestore, 'userProfiles', user.uid);
@@ -28,11 +30,11 @@ export default function SurvivalPathPage() {
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
   const adminUserRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
+    if (!user || !firestore || isSuperAdmin) return null;
     return doc(firestore, 'adminUsers', user.uid);
-  }, [user, firestore]);
+  }, [user, firestore, isSuperAdmin]);
   const { data: adminUserData, isLoading: isAdminLoading } = useDoc(adminUserRef);
-  const isAdmin = !!adminUserData;
+  const isAdmin = isSuperAdmin || !!adminUserData;
 
   const progressCollectionRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -56,7 +58,10 @@ export default function SurvivalPathPage() {
 
   const totalWeeks = 12;
 
+  const now = new Date();
   const isPaid = userProfile?.subscriptionType === 'monthly' || userProfile?.subscriptionType === 'yearly';
+  const trialEndDate = userProfile?.trialEndDate ? new Date(userProfile.trialEndDate) : null;
+  const isTrialActive = trialEndDate ? now < trialEndDate : false;
   
   const completedDays = useMemo(() => {
     if (!progressData) return {};
@@ -100,31 +105,28 @@ export default function SurvivalPathPage() {
               const completedDaysInWeek = completedDays[week] || [];
               const isWeekCompleted = completedDaysInWeek.length === 7;
               
-              let weekAccess: 'unlocked' | 'locked' = 'locked';
-              // Paid users and admins get access to all weeks.
+              let weekAccess: 'unlocked' | 'preview' | 'locked' = 'locked';
               if (isAdmin || isPaid) {
                 weekAccess = 'unlocked';
-              } else { // Free and Trial users
-                // Only Week 1 is available for non-paid users on the Survival Path.
-                if (week === 1) {
-                  weekAccess = 'unlocked';
-                }
+              } else if (week === 1) { // Free and Trial users get Week 1 of survival
+                weekAccess = 'unlocked';
               }
+              
+              const canOpenAccordion = weekAccess === 'unlocked' || weekAccess === 'preview';
 
               return (
-                <AccordionItem key={week} value={`item-${week}`} disabled={weekAccess === 'locked'}>
-                  <AccordionTrigger className={cn("text-lg hover:no-underline", weekAccess === 'locked' && "cursor-not-allowed text-muted-foreground/50")}>
+                <AccordionItem key={week} value={`item-${week}`} disabled={!canOpenAccordion}>
+                  <AccordionTrigger className={cn("text-lg hover:no-underline", !canOpenAccordion && "cursor-not-allowed text-muted-foreground/50")}>
                     <div className="flex w-full items-center justify-between pr-4">
                       <span className="flex items-center gap-3">
-                         {weekAccess === 'locked' ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : (isAdmin ? <Sparkles className="h-5 w-5 text-yellow-400" /> : <Star className="h-5 w-5 text-blue-400" />)) }
+                         {!canOpenAccordion ? <Lock className="h-4 w-4 text-muted-foreground/50" /> : (isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : (isAdmin ? <Sparkles className="h-5 w-5 text-yellow-400" /> : (weekAccess === 'preview' ? <Eye className="h-5 w-5 text-muted-foreground" /> : <Star className="h-5 w-5 text-blue-400" />))) }
                          {t.week} {week}
                       </span>
-                      {weekAccess === 'locked' && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60">
-                          {t.locked}
-                        </span>
-                      )}
-                       {weekAccess === 'unlocked' && !isWeekCompleted && (
+                      
+                      {!canOpenAccordion && <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground/60">{t.locked}</span>}
+                      {canOpenAccordion && weekAccess === 'preview' && <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">PREVIEW</span>}
+                      
+                      {weekAccess === 'unlocked' && !isWeekCompleted && (
                         isAdmin ? (
                             <span className="text-xs font-semibold uppercase tracking-wider text-yellow-400">ADMIN</span>
                         ) : (
@@ -134,9 +136,7 @@ export default function SurvivalPathPage() {
                         )
                       )}
                       {weekAccess === 'unlocked' && isWeekCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-green-500">
-                          {t.completed}
-                        </span>
+                        <span className="text-xs font-semibold uppercase tracking-wider text-green-500">{t.completed}</span>
                       )}
                     </div>
                   </AccordionTrigger>
@@ -144,9 +144,10 @@ export default function SurvivalPathPage() {
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                         const isDayCompleted = completedDaysInWeek.includes(day);
-                        // Linear progression: day is unlocked if it's the first day, or if the previous day is complete.
-                        // This applies to ALL users (Free, Trial, Paid, Admin) to ensure structured learning.
-                        const isDayUnlocked = day <= completedDaysInWeek.length + 1;
+
+                        // Super admin gets all days unlocked. Everyone else follows sequential progression.
+                        const sequentialAccess = day <= (completedDaysInWeek.length || 0) + 1;
+                        const isDayUnlocked = isSuperAdmin || sequentialAccess;
                         
                         return (
                           <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")} disabled={!isDayUnlocked}>
