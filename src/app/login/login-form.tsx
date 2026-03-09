@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { useAuth } from '@/firebase/provider';
-import { initiateEmailSignIn } from '@/firebase/non-blocking-login';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -16,7 +16,6 @@ export function LoginFormContent() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
   const searchParams = useSearchParams();
   const auth = useAuth();
   const { toast } = useToast();
@@ -36,7 +35,7 @@ export function LoginFormContent() {
     }
 
     try {
-        await initiateEmailSignIn(auth, email, password);
+        await signInWithEmailAndPassword(auth, email, password);
         
         toast({
           title: "Login Successful",
@@ -44,7 +43,9 @@ export function LoginFormContent() {
         });
 
         const redirectUrl = searchParams?.get('redirect');
-        router.push(redirectUrl || '/dashboard');
+        
+        // Force a full page reload to ensure auth state is propagated.
+        window.location.href = redirectUrl || '/dashboard';
 
     } catch (error: any) {
         console.error("Login failed:", error);

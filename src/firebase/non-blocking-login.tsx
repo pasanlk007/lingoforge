@@ -22,11 +22,3 @@ export function initiateAnonymousSignIn(authInstance: Auth): Promise<UserCredent
 export function initiateEmailSignUp(authInstance: Auth, email: string, password: string): Promise<UserCredential> {
   return createUserWithEmailAndPassword(authInstance, email, password);
 }
-
-/**
- * Initiates email/password sign-in. Returns a promise from the Firebase SDK.
- * The calling component should await this promise and handle any errors.
- */
-export function initiateEmailSignIn(authInstance: Auth, email: string, password: string): Promise<UserCredential> {
-  return signInWithEmailAndPassword(authInstance, email, password);
-}
