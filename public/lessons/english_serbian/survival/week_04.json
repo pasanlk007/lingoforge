@@ -1,0 +1,772 @@
+
+{
+  "week": 4,
+  "path": "survival",
+  "targetLanguage": "Serbian",
+  "nativeLanguage": "English",
+  "days": [
+    {
+      "week": 4,
+      "day": 1,
+      "title": "Week 4, Day 1: At a Restaurant",
+      "title_native": "Nedelja 4, Dan 1: U restoranu",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_1_1",
+          "target": "restoran",
+          "phonetic": "res-to-ran",
+          "native_meaning": "restaurant",
+          "english": "restaurant",
+          "example_sentence_target": "Idemo u restoran na večeru.",
+          "example_sentence_native": "Let's go to a restaurant for dinner.",
+          "example_sentence_phonetic": "Ee-de-mo oo res-to-ran na ve-che-roo."
+        },
+        {
+          "id": "w4_1_2",
+          "target": "sto",
+          "phonetic": "sto",
+          "native_meaning": "table",
+          "english": "table",
+          "example_sentence_target": "Imate li slobodan sto za dvoje?",
+          "example_sentence_native": "Do you have a free table for two?",
+          "example_sentence_phonetic": "Ee-ma-teh lee slo-bo-dan sto za dvo-yeh?"
+        },
+        {
+          "id": "w4_1_3",
+          "target": "jelovnik",
+          "phonetic": "yeh-lov-neek",
+          "native_meaning": "menu",
+          "english": "menu",
+          "example_sentence_target": "Mogu li dobiti jelovnik, molim?",
+          "example_sentence_native": "Can I have the menu, please?",
+          "example_sentence_phonetic": "Mo-goo lee do-bee-tee yeh-lov-neek, mo-leem?"
+        },
+        {
+          "id": "w4_1_4",
+          "target": "konobar",
+          "phonetic": "ko-no-bar",
+          "native_meaning": "waiter",
+          "english": "waiter",
+          "example_sentence_target": "Konobar, molim vas!",
+          "example_sentence_native": "Waiter, please!",
+          "example_sentence_phonetic": "Ko-no-bar, mo-leem vas!"
+        },
+        {
+          "id": "w4_1_5",
+          "target": "rezervacija",
+          "phonetic": "re-zer-va-tsee-ya",
+          "native_meaning": "reservation",
+          "english": "reservation",
+          "example_sentence_target": "Imam rezervaciju na ime Petrović.",
+          "example_sentence_native": "I have a reservation under the name Petrović.",
+          "example_sentence_phonetic": "Ee-mam re-zer-va-tsee-yoo na ee-meh Pe-tro-veech."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_1_1",
+          "context": "Asking for a table at a restaurant.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobro veče. Imate li sto za dvoje?",
+              "native": "Good evening. Do you have a table for two?",
+              "phonetic": "Do-bro ve-che. Ee-ma-teh lee sto za dvo-yeh?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, izvolite. Pratite me.",
+              "native": "Yes, here you go. Follow me.",
+              "phonetic": "Da, eez-vo-lee-teh. Pra-tee-teh meh."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_1_1",
+            "sentence": "Mogu li dobiti ___, molim?",
+            "answer": "jelovnik",
+            "hint": "Can I have the menu, please?"
+          }
+        ],
+        "matching": [
+          { "id": "m4_1_1", "target": "sto", "native": "table" },
+          { "id": "m4_1_2", "target": "konobar", "native": "waiter" },
+          { "id": "m4_1_3", "target": "rezervacija", "native": "reservation" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_1_1",
+            "scrambled": ["sto", "za", "dvoje", "Imate", "li", "?"],
+            "correct": "Imate li sto za dvoje ?",
+            "nativeHint": "Do you have a table for two?"
+          }
+        ]
+      },
+      "cultural_note": "In Serbia, it's common to address a waiter by saying 'izvinite' (excuse me) or simply making eye contact. Shouting 'konobar' is considered a bit rude.",
+      "pronunciation_tip": "The 'j' in 'jelovnik' is like the 'y' in 'yes'. It's pronounced 'yeh-lov-neek'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D1-Restaurant" }
+    },
+    {
+      "week": 4,
+      "day": 2,
+      "title": "Week 4, Day 2: Ordering Food",
+      "title_native": "Nedelja 4, Dan 2: Naručivanje hrane",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_2_1",
+          "target": "Ja bih...",
+          "phonetic": "Ya beekh...",
+          "native_meaning": "I would like...",
+          "english": "I would like...",
+          "example_sentence_target": "Ja bih pljeskavicu, molim.",
+          "example_sentence_native": "I would like a pljeskavica, please.",
+          "example_sentence_phonetic": "Ya beekh plyes-ka-vee-tsoo, mo-leem."
+        },
+        {
+          "id": "w4_2_2",
+          "target": "predjelo",
+          "phonetic": "pred-yeh-lo",
+          "native_meaning": "appetizer",
+          "english": "appetizer",
+          "example_sentence_target": "Šta imate za predjelo?",
+          "example_sentence_native": "What do you have for an appetizer?",
+          "example_sentence_phonetic": "Shta ee-ma-teh za pred-yeh-lo?"
+        },
+        {
+          "id": "w4_2_3",
+          "target": "glavno jelo",
+          "phonetic": "glav-no yeh-lo",
+          "native_meaning": "main course",
+          "english": "main course",
+          "example_sentence_target": "Za glavno jelo, uzeću ribu.",
+          "example_sentence_native": "For the main course, I'll take the fish.",
+          "example_sentence_phonetic": "Za glav-no yeh-lo, oo-ze-choo ree-boo."
+        },
+        {
+          "id": "w4_2_4",
+          "target": "desert",
+          "phonetic": "de-sert",
+          "native_meaning": "dessert",
+          "english": "dessert",
+          "example_sentence_target": "Koji desert preporučujete?",
+          "example_sentence_native": "Which dessert do you recommend?",
+          "example_sentence_phonetic": "Ko-yee de-sert pre-po-roo-choo-yeh-teh?"
+        },
+        {
+          "id": "w4_2_5",
+          "target": "prijatno",
+          "phonetic": "pree-yat-no",
+          "native_meaning": "enjoy your meal",
+          "english": "bon appétit",
+          "example_sentence_target": "Prijatno!",
+          "example_sentence_native": "Enjoy your meal!",
+          "example_sentence_phonetic": "Pree-yat-no!"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_2_1",
+          "context": "Ordering a main course.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvolite?",
+              "native": "What would you like? / Here you go.",
+              "phonetic": "Eez-vo-lee-teh?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ja bih ćevape, molim. I jednu salatu.",
+              "native": "I would like ćevapi, please. And one salad.",
+              "phonetic": "Ya beekh che-va-peh, mo-leem. Ee yed-noo sa-la-too."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_2_1",
+            "sentence": "Za ___, uzeću palačinke.",
+            "answer": "desert",
+            "hint": "For dessert, I'll have pancakes."
+          }
+        ],
+        "matching": [
+          { "id": "m4_2_1", "target": "predjelo", "native": "appetizer" },
+          { "id": "m4_2_2", "target": "glavno jelo", "native": "main course" },
+          { "id": "m4_2_3", "target": "prijatno", "native": "enjoy your meal" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_2_1",
+            "scrambled": ["Ja", "ćevape", "bih", "."],
+            "correct": "Ja bih ćevape .",
+            "nativeHint": "I would like ćevapi."
+          }
+        ]
+      },
+      "cultural_note": "'Ćevapi' and 'Pljeskavica' are traditional grilled meat dishes and are a must-try when in Serbia.",
+      "pronunciation_tip": "The 'ć' in 'ćevapi' is a soft 'ch' sound, made with the tip of the tongue further forward in the mouth than the English 'ch'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D2-OrderingFood" }
+    },
+    {
+      "week": 4,
+      "day": 3,
+      "title": "Week 4, Day 3: Ordering Drinks",
+      "title_native": "Nedelja 4, Dan 3: Naručivanje pića",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_3_1",
+          "target": "voda",
+          "phonetic": "vo-da",
+          "native_meaning": "water",
+          "english": "water",
+          "example_sentence_target": "Molim vas, čašu vode.",
+          "example_sentence_native": "A glass of water, please.",
+          "example_sentence_phonetic": "Mo-leem vas, cha-shoo vo-deh."
+        },
+        {
+          "id": "w4_3_2",
+          "target": "pivo",
+          "phonetic": "pee-vo",
+          "native_meaning": "beer",
+          "english": "beer",
+          "example_sentence_target": "Jedno veliko točeno pivo, molim.",
+          "example_sentence_native": "One large draft beer, please.",
+          "example_sentence_phonetic": "Yed-no ve-lee-ko to-che-no pee-vo, mo-leem."
+        },
+        {
+          "id": "w4_3_3",
+          "target": "vino",
+          "phonetic": "vee-no",
+          "native_meaning": "wine",
+          "english": "wine",
+          "example_sentence_target": "Imate li domaće crno vino?",
+          "example_sentence_native": "Do you have domestic red wine?",
+          "example_sentence_phonetic": "Ee-ma-teh lee do-ma-cheh tsr-no vee-no?"
+        },
+        {
+          "id": "w4_3_4",
+          "target": "kafa",
+          "phonetic": "ka-fa",
+          "native_meaning": "coffee",
+          "english": "coffee",
+          "example_sentence_target": "Jednu domaću kafu, molim.",
+          "example_sentence_native": "One domestic (Turkish) coffee, please.",
+          "example_sentence_phonetic": "Yed-noo do-ma-choo ka-foo, mo-leem."
+        },
+        {
+          "id": "w4_3_5",
+          "target": "sok",
+          "phonetic": "sok",
+          "native_meaning": "juice",
+          "english": "juice",
+          "example_sentence_target": "Sok od pomorandže, molim.",
+          "example_sentence_native": "Orange juice, please.",
+          "example_sentence_phonetic": "Sok od po-mo-ran-jeh, mo-leem."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_3_1",
+          "context": "Ordering drinks before a meal.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Šta ćete popiti?",
+              "native": "What will you drink?",
+              "phonetic": "Shta che-teh po-pee-tee?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ja bih jedno pivo, a ona sok od jabuke.",
+              "native": "I would like one beer, and she an apple juice.",
+              "phonetic": "Ya beekh yed-no pee-vo, a o-na sok od ya-boo-keh."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_3_1",
+            "sentence": "Jednu ___ sa mlekom, molim.",
+            "answer": "kafu",
+            "hint": "One coffee with milk, please."
+          }
+        ],
+        "matching": [
+          { "id": "m4_3_1", "target": "voda", "native": "water" },
+          { "id": "m4_3_2", "target": "pivo", "native": "beer" },
+          { "id": "m4_3_3", "target": "vino", "native": "wine" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_3_1",
+            "scrambled": ["čašu", "vode", "Molim", "vas", "."],
+            "correct": "Molim vas čašu vode .",
+            "nativeHint": "A glass of water, please."
+          }
+        ]
+      },
+      "cultural_note": "'Domaća kafa' (domestic coffee) is the Serbian version of Turkish coffee. It's strong, served in a small cup, and is a big part of the local culture.",
+      "pronunciation_tip": "The word 'crno' (black/red for wine) has a rolled 'r'. It's a consonant here, so the word is one syllable: 'tsr-no'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D3-Drinks" }
+    },
+    {
+      "week": 4,
+      "day": 4,
+      "title": "Week 4, Day 4: Paying the Bill",
+      "title_native": "Nedelja 4, Dan 4: Plaćanje računa",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_4_1",
+          "target": "račun",
+          "phonetic": "ra-choon",
+          "native_meaning": "bill / check",
+          "english": "bill / check",
+          "example_sentence_target": "Račun, molim.",
+          "example_sentence_native": "The bill, please.",
+          "example_sentence_phonetic": "Ra-choon, mo-leem."
+        },
+        {
+          "id": "w4_4_2",
+          "target": "kartica",
+          "phonetic": "kar-tee-tsa",
+          "native_meaning": "card",
+          "english": "card",
+          "example_sentence_target": "Da li primate kartice?",
+          "example_sentence_native": "Do you accept cards?",
+          "example_sentence_phonetic": "Da lee pree-ma-teh kar-tee-tseh?"
+        },
+        {
+          "id": "w4_4_3",
+          "target": "keš",
+          "phonetic": "kesh",
+          "native_meaning": "cash",
+          "english": "cash",
+          "example_sentence_target": "Platiću u kešu.",
+          "example_sentence_native": "I will pay in cash.",
+          "example_sentence_phonetic": "Pla-tee-choo oo ke-shoo."
+        },
+        {
+          "id": "w4_4_4",
+          "target": "bakšiš",
+          "phonetic": "bak-sheesh",
+          "native_meaning": "tip",
+          "english": "tip",
+          "example_sentence_target": "Ostavite bakšiš.",
+          "example_sentence_native": "Leave a tip.",
+          "example_sentence_phonetic": "Os-ta-vee-teh bak-sheesh."
+        },
+        {
+          "id": "w4_4_5",
+          "target": "U redu je.",
+          "phonetic": "Oo re-doo yeh.",
+          "native_meaning": "It's okay. / Keep the change.",
+          "english": "It's okay. / Keep the change.",
+          "example_sentence_target": "Hvala, u redu je.",
+          "example_sentence_native": "Thanks, it's okay (keep the change).",
+          "example_sentence_phonetic": "Hva-la, oo re-doo yeh."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_4_1",
+          "context": "Asking for the bill and paying.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Konobar, možemo li da dobijemo račun?",
+              "native": "Waiter, can we have the bill?",
+              "phonetic": "Ko-no-bar, mo-zhe-mo lee da do-bee-ye-mo ra-choon?"
+            },
+            {
+              "speaker": "B",
+              "target": "Naravno, izvolite. Da li primate kartice?",
+              "native": "Of course, here you go. Do you accept cards?",
+              "phonetic": "Na-rav-no, eez-vo-lee-teh. Da lee pree-ma-teh kar-tee-tseh?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_4_1",
+            "sentence": "Platiću ___.",
+            "answer": "karticom",
+            "hint": "I will pay by card."
+          }
+        ],
+        "matching": [
+          { "id": "m4_4_1", "target": "račun", "native": "bill" },
+          { "id": "m4_4_2", "target": "keš", "native": "cash" },
+          { "id": "m4_4_3", "target": "bakšiš", "native": "tip" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_4_1",
+            "scrambled": ["molim", "Račun", ","],
+            "correct": "Račun , molim",
+            "nativeHint": "The bill, please."
+          }
+        ]
+      },
+      "cultural_note": "Tipping (bakšiš) in Serbia is customary but not obligatory. Around 10% is a standard amount if you are happy with the service.",
+      "pronunciation_tip": "The 'č' in 'račun' is a hard 'ch' sound, like in 'church'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D4-Paying" }
+    },
+    {
+      "week": 4,
+      "day": 5,
+      "title": "Week 4, Day 5: Common Food Items",
+      "title_native": "Nedelja 4, Dan 5: Uobičajene namirnice",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_5_1",
+          "target": "hleb",
+          "phonetic": "hleb",
+          "native_meaning": "bread",
+          "english": "bread",
+          "example_sentence_target": "Donesite nam još hleba, molim.",
+          "example_sentence_native": "Bring us more bread, please.",
+          "example_sentence_phonetic": "Do-ne-see-teh nam yosh hle-ba, mo-leem."
+        },
+        {
+          "id": "w4_5_2",
+          "target": "meso",
+          "phonetic": "me-so",
+          "native_meaning": "meat",
+          "english": "meat",
+          "example_sentence_target": "Ne jedem meso.",
+          "example_sentence_native": "I don't eat meat.",
+          "example_sentence_phonetic": "Neh ye-dem me-so."
+        },
+        {
+          "id": "w4_5_3",
+          "target": "riba",
+          "phonetic": "ree-ba",
+          "native_meaning": "fish",
+          "english": "fish",
+          "example_sentence_target": "Da li je riba sveža?",
+          "example_sentence_native": "Is the fish fresh?",
+          "example_sentence_phonetic": "Da lee yeh ree-ba sve-zha?"
+        },
+        {
+          "id": "w4_5_4",
+          "target": "povrće",
+          "phonetic": "po-vr-cheh",
+          "native_meaning": "vegetables",
+          "english": "vegetables",
+          "example_sentence_target": "Volim grilovano povrće.",
+          "example_sentence_native": "I like grilled vegetables.",
+          "example_sentence_phonetic": "Vo-leem gree-lo-va-no po-vr-cheh."
+        },
+        {
+          "id": "w4_5_5",
+          "target": "sir",
+          "phonetic": "seer",
+          "native_meaning": "cheese",
+          "english": "cheese",
+          "example_sentence_target": "Ovo je domaći sir.",
+          "example_sentence_native": "This is homemade cheese.",
+          "example_sentence_phonetic": "O-vo yeh do-ma-chee seer."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_5_1",
+          "context": "At the market.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan, imate li svež sir?",
+              "native": "Good day, do you have fresh cheese?",
+              "phonetic": "Do-bar dan, ee-ma-teh lee svezh seer?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, imamo. Odličan je.",
+              "native": "Yes, we do. It's excellent.",
+              "phonetic": "Da, ee-ma-mo. Od-lee-chan yeh."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_5_1",
+            "sentence": "Ne volim ___.",
+            "answer": "ribu",
+            "hint": "I don't like fish."
+          }
+        ],
+        "matching": [
+          { "id": "m4_5_1", "target": "hleb", "native": "bread" },
+          { "id": "m4_5_2", "target": "meso", "native": "meat" },
+          { "id": "m4_5_3", "target": "povrće", "native": "vegetables" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_5_1",
+            "scrambled": ["jedem", "Ne", "meso", "."],
+            "correct": "Ne jedem meso .",
+            "nativeHint": "I don't eat meat."
+          }
+        ]
+      },
+      "cultural_note": "Bread ('hleb') is a staple of the Serbian diet and is served with almost every meal.",
+      "pronunciation_tip": "The 'h' in 'hleb' is a soft, breathy sound, similar to the 'h' in 'hello'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D5-FoodItems" }
+    },
+    {
+      "week": 4,
+      "day": 6,
+      "title": "Week 4, Day 6: At a Cafe",
+      "title_native": "Nedelja 4, Dan 6: U kafiću",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_6_1",
+          "target": "kafić",
+          "phonetic": "ka-feech",
+          "native_meaning": "cafe",
+          "english": "cafe",
+          "example_sentence_target": "Nađimo se u kafiću.",
+          "example_sentence_native": "Let's meet at the cafe.",
+          "example_sentence_phonetic": "Na-jee-mo se oo ka-fee-choo."
+        },
+        {
+          "id": "w4_6_2",
+          "target": "čaj",
+          "phonetic": "chai",
+          "native_meaning": "tea",
+          "english": "tea",
+          "example_sentence_target": "Molim vas, jedan čaj od nane.",
+          "example_sentence_native": "One mint tea, please.",
+          "example_sentence_phonetic": "Mo-leem vas, ye-dan chai od na-neh."
+        },
+        {
+          "id": "w4_6_3",
+          "target": "šećer",
+          "phonetic": "she-cher",
+          "native_meaning": "sugar",
+          "english": "sugar",
+          "example_sentence_target": "Kafa bez šećera, molim.",
+          "example_sentence_native": "Coffee without sugar, please.",
+          "example_sentence_phonetic": "Ka-fa bez she-che-ra, mo-leem."
+        },
+        {
+          "id": "w4_6_4",
+          "target": "mleko",
+          "phonetic": "mle-ko",
+          "native_meaning": "milk",
+          "english": "milk",
+          "example_sentence_target": "Želite li mleko u kafi?",
+          "example_sentence_native": "Would you like milk in your coffee?",
+          "example_sentence_phonetic": "Zhe-lee-teh lee mle-ko oo ka-fee?"
+        },
+        {
+          "id": "w4_6_5",
+          "target": "kolač",
+          "phonetic": "ko-lach",
+          "native_meaning": "cake",
+          "english": "cake",
+          "example_sentence_target": "Koji je vaš omiljeni kolač?",
+          "example_sentence_native": "What is your favorite cake?",
+          "example_sentence_phonetic": "Ko-yee yeh vash o-mee-lye-nee ko-lach?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_6_1",
+          "context": "Ordering coffee and cake.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan. Šta želite?",
+              "native": "Good day. What would you like?",
+              "phonetic": "Do-bar dan. Shta zhe-lee-teh?"
+            },
+            {
+              "speaker": "B",
+              "target": "Jednu kafu sa mlekom i jedan kolač, molim.",
+              "native": "One coffee with milk and one cake, please.",
+              "phonetic": "Yed-noo ka-foo sa mle-kom ee ye-dan ko-lach, mo-leem."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_6_1",
+            "sentence": "Pijem ___ sa limunom.",
+            "answer": "čaj",
+            "hint": "I drink tea with lemon."
+          }
+        ],
+        "matching": [
+          { "id": "m4_6_1", "target": "kafić", "native": "cafe" },
+          { "id": "m4_6_2", "target": "šećer", "native": "sugar" },
+          { "id": "m4_6_3", "target": "kolač", "native": "cake" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_6_1",
+            "scrambled": ["sa", "mlekom", "Kafa", "."],
+            "correct": "Kafa sa mlekom .",
+            "nativeHint": "Coffee with milk."
+          }
+        ]
+      },
+      "cultural_note": "Cafe culture ('kafić') is huge in Serbia. People spend hours sipping coffee with friends. It's a central part of social life.",
+      "pronunciation_tip": "The 'ć' in 'kafić' is a soft 'ch' sound. Try to say 'ch' with the tip of your tongue touching the back of your front teeth.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D6-Cafe" }
+    },
+    {
+      "week": 4,
+      "day": 7,
+      "title": "Week 4, Day 7: Review",
+      "title_native": "Nedelja 4, Dan 7: Pregled",
+      "theme": "Eating Out",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w4_7_1",
+          "target": "jelovnik",
+          "phonetic": "yeh-lov-neek",
+          "native_meaning": "menu",
+          "english": "menu",
+          "example_sentence_target": "Donesite mi jelovnik.",
+          "example_sentence_native": "Bring me the menu.",
+          "example_sentence_phonetic": "Do-ne-see-teh mee yeh-lov-neek."
+        },
+        {
+          "id": "w4_7_2",
+          "target": "Ja bih...",
+          "phonetic": "Ya beekh...",
+          "native_meaning": "I would like...",
+          "english": "I would like...",
+          "example_sentence_target": "Ja bih vodu.",
+          "example_sentence_native": "I would like water.",
+          "example_sentence_phonetic": "Ya beekh vo-doo."
+        },
+        {
+          "id": "w4_7_3",
+          "target": "račun",
+          "phonetic": "ra-choon",
+          "native_meaning": "bill",
+          "english": "bill",
+          "example_sentence_target": "Molim vas, račun.",
+          "example_sentence_native": "The bill, please.",
+          "example_sentence_phonetic": "Mo-leem vas, ra-choon."
+        },
+        {
+          "id": "w4_7_4",
+          "target": "pivo",
+          "phonetic": "pee-vo",
+          "native_meaning": "beer",
+          "english": "beer",
+          "example_sentence_target": "Hladno pivo, molim.",
+          "example_sentence_native": "A cold beer, please.",
+          "example_sentence_phonetic": "Hlad-no pee-vo, mo-leem."
+        },
+        {
+          "id": "w4_7_5",
+          "target": "hleb",
+          "phonetic": "hleb",
+          "native_meaning": "bread",
+          "english": "bread",
+          "example_sentence_target": "Volim svež hleb.",
+          "example_sentence_native": "I love fresh bread.",
+          "example_sentence_phonetic": "Vo-leem svezh hleb."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_7_1",
+          "context": "A full review dialogue for ordering food and paying.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan. Mogu li dobiti jelovnik?",
+              "native": "Good day. Can I get the menu?",
+              "phonetic": "Do-bar dan. Mo-goo lee do-bee-tee yeh-lov-neek?"
+            },
+            {
+              "speaker": "B",
+              "target": "Izvolite. Šta želite da popijete?",
+              "native": "Here you go. What would you like to drink?",
+              "phonetic": "Eez-vo-lee-teh. Shta zhe-lee-teh da po-pee-yeh-teh?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb4_7_1",
+            "sentence": "Ja bih ___.",
+            "answer": "pivo",
+            "hint": "I would like a beer."
+          },
+          {
+            "id": "fb4_7_2",
+            "sentence": "Molim vas, ___.",
+            "answer": "račun",
+            "hint": "The bill, please."
+          }
+        ],
+        "matching": [
+          { "id": "m4_7_1", "target": "hleb", "native": "bread" },
+          { "id": "m4_7_2", "target": "sir", "native": "cheese" },
+          { "id": "m4_7_3", "target": "voda", "native": "water" },
+          { "id": "m4_7_4", "target": "sto", "native": "table" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss4_7_1",
+            "scrambled": ["primate", "li", "kartice", "Da", "?"],
+            "correct": "Da li primate kartice ?",
+            "nativeHint": "Do you accept cards?"
+          }
+        ]
+      },
+      "cultural_note": "Review: When dining out in Serbia, service is generally more relaxed than in Western countries. Take your time, enjoy your meal, and don't be afraid to flag down a waiter when you need something.",
+      "pronunciation_tip": "Review: Remember the difference between 'č' (like 'ch' in 'church') and 'ć' (a softer 'ch'). This distinction is important for words like 'račun' and 'kafić'.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W4-Review" }
+    }
+  ]
+}

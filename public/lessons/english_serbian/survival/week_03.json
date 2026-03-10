@@ -1,0 +1,772 @@
+
+{
+  "week": 3,
+  "path": "survival",
+  "targetLanguage": "Serbian",
+  "nativeLanguage": "English",
+  "days": [
+    {
+      "week": 3,
+      "day": 1,
+      "title": "Week 3, Day 1: Asking for Directions",
+      "title_native": "Nedelja 3, Dan 1: Pitanje za pravac",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_1_1",
+          "target": "gde",
+          "phonetic": "gdeh",
+          "native_meaning": "where",
+          "english": "where",
+          "example_sentence_target": "Izvinite, gde je stanica?",
+          "example_sentence_native": "Excuse me, where is the station?",
+          "example_sentence_phonetic": "Iz-vee-nee-teh, gdeh yeh sta-nee-tsa?"
+        },
+        {
+          "id": "w3_1_2",
+          "target": "pravo",
+          "phonetic": "pra-vo",
+          "native_meaning": "straight",
+          "english": "straight",
+          "example_sentence_target": "Idite pravo.",
+          "example_sentence_native": "Go straight.",
+          "example_sentence_phonetic": "Ee-dee-teh pra-vo."
+        },
+        {
+          "id": "w3_1_3",
+          "target": "levo",
+          "phonetic": "leh-vo",
+          "native_meaning": "left",
+          "english": "left",
+          "example_sentence_target": "Skrenite levo.",
+          "example_sentence_native": "Turn left.",
+          "example_sentence_phonetic": "Skreh-nee-teh leh-vo."
+        },
+        {
+          "id": "w3_1_4",
+          "target": "desno",
+          "phonetic": "dess-no",
+          "native_meaning": "right",
+          "english": "right",
+          "example_sentence_target": "Skrenite desno kod semafora.",
+          "example_sentence_native": "Turn right at the traffic light.",
+          "example_sentence_phonetic": "Skreh-nee-teh dess-no kod seh-ma-fo-ra."
+        },
+        {
+          "id": "w3_1_5",
+          "target": "blizu",
+          "phonetic": "blee-zoo",
+          "native_meaning": "near",
+          "english": "near",
+          "example_sentence_target": "Da li je banka blizu?",
+          "example_sentence_native": "Is the bank near?",
+          "example_sentence_phonetic": "Da lee yeh ban-ka blee-zoo?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_1_1",
+          "context": "Asking a stranger for directions to the museum.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je muzej?",
+              "native": "Excuse me, where is the museum?",
+              "phonetic": "Iz-vee-nee-teh, gdeh yeh moo-zay?"
+            },
+            {
+              "speaker": "B",
+              "target": "Idite pravo, pa skrenite desno. Muzej je blizu.",
+              "native": "Go straight, then turn right. The museum is near.",
+              "phonetic": "Ee-dee-teh pra-vo, pa skreh-nee-teh dess-no. Moo-zay yeh blee-zoo."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_1_1",
+            "sentence": "Skrenite ___ kod parka.",
+            "answer": "levo",
+            "hint": "Turn left at the park."
+          }
+        ],
+        "matching": [
+          { "id": "m3_1_1", "target": "gde", "native": "where" },
+          { "id": "m3_1_2", "target": "pravo", "native": "straight" },
+          { "id": "m3_1_3", "target": "blizu", "native": "near" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_1_1",
+            "scrambled": ["je", "gde", "banka", "?"],
+            "correct": "gde je banka ?",
+            "nativeHint": "Where is the bank?"
+          }
+        ]
+      },
+      "cultural_note": "Serbians are generally very helpful to tourists asking for directions. Don't be surprised if they walk with you for a bit to make sure you find your way.",
+      "pronunciation_tip": "The 'j' in Serbian is always pronounced like the 'y' in 'yes'. For example, 'je' is pronounced 'yeh'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D1-Directions" }
+    },
+    {
+      "week": 3,
+      "day": 2,
+      "title": "Week 3, Day 2: Public Transport",
+      "title_native": "Nedelja 3, Dan 2: Javni prevoz",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_2_1",
+          "target": "autobus",
+          "phonetic": "au-to-boos",
+          "native_meaning": "bus",
+          "english": "bus",
+          "example_sentence_target": "Kada polazi sledeći autobus?",
+          "example_sentence_native": "When does the next bus leave?",
+          "example_sentence_phonetic": "Ka-da po-la-zee sle-de-chee au-to-boos?"
+        },
+        {
+          "id": "w3_2_2",
+          "target": "karta",
+          "phonetic": "kar-ta",
+          "native_meaning": "ticket",
+          "english": "ticket",
+          "example_sentence_target": "Molim vas, jedna karta do centra.",
+          "example_sentence_native": "One ticket to the center, please.",
+          "example_sentence_phonetic": "Mo-leem vas, yed-na kar-ta do tsen-tra."
+        },
+        {
+          "id": "w3_2_3",
+          "target": "stanica",
+          "phonetic": "sta-nee-tsa",
+          "native_meaning": "station / stop",
+          "english": "station / stop",
+          "example_sentence_target": "Koja je sledeća stanica?",
+          "example_sentence_native": "What is the next stop?",
+          "example_sentence_phonetic": "Ko-ya yeh sle-de-cha sta-nee-tsa?"
+        },
+        {
+          "id": "w3_2_4",
+          "target": "voz",
+          "phonetic": "voz",
+          "native_meaning": "train",
+          "english": "train",
+          "example_sentence_target": "Voz za Novi Sad polazi sa perona 2.",
+          "example_sentence_native": "The train to Novi Sad departs from platform 2.",
+          "example_sentence_phonetic": "Voz za No-vee Sad po-la-zee sa pe-ro-na dva."
+        },
+        {
+          "id": "w3_2_5",
+          "target": "tramvaj",
+          "phonetic": "tram-vai",
+          "native_meaning": "tram",
+          "english": "tram",
+          "example_sentence_target": "Koji tramvaj ide do Kalemegdana?",
+          "example_sentence_native": "Which tram goes to Kalemegdan?",
+          "example_sentence_phonetic": "Ko-yee tram-vai ee-deh do Ka-le-meg-da-na?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_2_1",
+          "context": "Buying a bus ticket.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan. Jedna karta za autobus, molim.",
+              "native": "Good day. One bus ticket, please.",
+              "phonetic": "Do-bar dan. Yed-na kar-ta za au-to-boos, mo-leem."
+            },
+            {
+              "speaker": "B",
+              "target": "Izvolite. To je 90 dinara.",
+              "native": "Here you go. That's 90 dinars.",
+              "phonetic": "Eez-vo-lee-teh. To yeh de-ve-det-set dee-na-ra."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_2_1",
+            "sentence": "Kupio sam ___ za voz.",
+            "answer": "kartu",
+            "hint": "I bought a ticket for the train."
+          }
+        ],
+        "matching": [
+          { "id": "m3_2_1", "target": "autobus", "native": "bus" },
+          { "id": "m3_2_2", "target": "stanica", "native": "station" },
+          { "id": "m3_2_3", "target": "voz", "native": "train" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_2_1",
+            "scrambled": ["sledeća", "je", "stanica", "Koja", "?"],
+            "correct": "Koja je sledeća stanica ?",
+            "nativeHint": "What is the next station?"
+          }
+        ]
+      },
+      "cultural_note": "In Belgrade, you can buy bus tickets at kiosks or on the bus itself using a 'BusPlus' card or by sending an SMS.",
+      "pronunciation_tip": "The letter 'c' in Serbian is always pronounced like 'ts' in 'cats'. 'Stanica' is 'sta-nee-tsa'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D2-Transport" }
+    },
+    {
+      "week": 3,
+      "day": 3,
+      "title": "Week 3, Day 3: Taking a Taxi",
+      "title_native": "Nedelja 3, Dan 3: Vožnja taksijem",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_3_1",
+          "target": "taksi",
+          "phonetic": "tak-see",
+          "native_meaning": "taxi",
+          "english": "taxi",
+          "example_sentence_target": "Treba mi taksi do aerodroma.",
+          "example_sentence_native": "I need a taxi to the airport.",
+          "example_sentence_phonetic": "Tre-ba mee tak-see do a-e-ro-dro-ma."
+        },
+        {
+          "id": "w3_3_2",
+          "target": "adresa",
+          "phonetic": "a-dre-sa",
+          "native_meaning": "address",
+          "english": "address",
+          "example_sentence_target": "Koja je vaša adresa?",
+          "example_sentence_native": "What is your address?",
+          "example_sentence_phonetic": "Ko-ya yeh va-sha a-dre-sa?"
+        },
+        {
+          "id": "w3_3_3",
+          "target": "Koliko košta?",
+          "phonetic": "Ko-lee-ko kosh-ta?",
+          "native_meaning": "How much does it cost?",
+          "english": "How much does it cost?",
+          "example_sentence_target": "Koliko košta vožnja do hotela?",
+          "example_sentence_native": "How much does the ride to the hotel cost?",
+          "example_sentence_phonetic": "Ko-lee-ko kosh-ta vozh-nya do ho-te-la?"
+        },
+        {
+          "id": "w3_3_4",
+          "target": "molim",
+          "phonetic": "mo-leem",
+          "native_meaning": "please / you're welcome",
+          "english": "please / you're welcome",
+          "example_sentence_target": "Stanite ovde, molim.",
+          "example_sentence_native": "Stop here, please.",
+          "example_sentence_phonetic": "Sta-nee-teh ov-de, mo-leem."
+        },
+        {
+          "id": "w3_3_5",
+          "target": "hotel",
+          "phonetic": "ho-tel",
+          "native_meaning": "hotel",
+          "english": "hotel",
+          "example_sentence_target": "Vozite me na ovu adresu, molim. To je hotel.",
+          "example_sentence_native": "Take me to this address, please. It's a hotel.",
+          "example_sentence_phonetic": "Vo-zee-teh meh na o-voo a-dre-soo, mo-leem. To yeh ho-tel."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_3_1",
+          "context": "Telling a taxi driver the destination.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan. Molim vas, do hotela 'Moskva'.",
+              "native": "Good day. To the hotel 'Moskva', please.",
+              "phonetic": "Do-bar dan. Mo-leem vas, do ho-te-la Mos-kva."
+            },
+            {
+              "speaker": "B",
+              "target": "Naravno, nema problema.",
+              "native": "Of course, no problem.",
+              "phonetic": "Na-rav-no, ne-ma pro-ble-ma."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_3_1",
+            "sentence": "___ košta vožnja?",
+            "answer": "Koliko",
+            "hint": "How much does the ride cost?"
+          }
+        ],
+        "matching": [
+          { "id": "m3_3_1", "target": "taksi", "native": "taxi" },
+          { "id": "m3_3_2", "target": "adresa", "native": "address" },
+          { "id": "m3_3_3", "target": "hotel", "native": "hotel" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_3_1",
+            "scrambled": ["mi", "Treba", "taksi", "."],
+            "correct": "Treba mi taksi .",
+            "nativeHint": "I need a taxi."
+          }
+        ]
+      },
+      "cultural_note": "It's always a good idea to use official taxi apps like CarGo or Yandex Go in Belgrade to get a fair price.",
+      "pronunciation_tip": "The 'š' is pronounced like 'sh' in 'shoe'. So, 'košta' is 'kosh-ta'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D3-Taxi" }
+    },
+    {
+      "week": 3,
+      "day": 4,
+      "title": "Week 3, Day 4: In the Street",
+      "title_native": "Nedelja 3, Dan 4: Na ulici",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_4_1",
+          "target": "ulica",
+          "phonetic": "oo-lee-tsa",
+          "native_meaning": "street",
+          "english": "street",
+          "example_sentence_target": "Knez Mihailova je glavna ulica.",
+          "example_sentence_native": "Knez Mihailova is the main street.",
+          "example_sentence_phonetic": "Knez Mee-hai-lo-va yeh glav-na oo-lee-tsa."
+        },
+        {
+          "id": "w3_4_2",
+          "target": "trg",
+          "phonetic": "trg",
+          "native_meaning": "square",
+          "english": "square",
+          "example_sentence_target": "Vidimo se na Trgu Republike.",
+          "example_sentence_native": "See you at Republic Square.",
+          "example_sentence_phonetic": "Vee-dee-mo se na Tr-goo Re-poob-lee-keh."
+        },
+        {
+          "id": "w3_4_3",
+          "target": "most",
+          "phonetic": "most",
+          "native_meaning": "bridge",
+          "english": "bridge",
+          "example_sentence_target": "Pređite preko mosta.",
+          "example_sentence_native": "Go over the bridge.",
+          "example_sentence_phonetic": "Preh-djee-teh pre-ko mos-ta."
+        },
+        {
+          "id": "w3_4_4",
+          "target": "semafor",
+          "phonetic": "se-ma-for",
+          "native_meaning": "traffic light",
+          "english": "traffic light",
+          "example_sentence_target": "Čekaj zeleno na semaforu.",
+          "example_sentence_native": "Wait for the green at the traffic light.",
+          "example_sentence_phonetic": "Che-kai ze-le-no na se-ma-fo-roo."
+        },
+        {
+          "id": "w3_4_5",
+          "target": "pešački prelaz",
+          "phonetic": "pe-shach-kee pre-laz",
+          "native_meaning": "crosswalk",
+          "english": "crosswalk",
+          "example_sentence_target": "Pređite ulicu na pešačkom prelazu.",
+          "example_sentence_native": "Cross the street at the crosswalk.",
+          "example_sentence_phonetic": "Preh-djee-teh oo-lee-tsoo na pe-shach-kom pre-la-zoo."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_4_1",
+          "context": "Arranging a meeting place.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Gde da se nađemo?",
+              "native": "Where should we meet?",
+              "phonetic": "Gdeh da se na-d.je-mo?"
+            },
+            {
+              "speaker": "B",
+              "target": "Nađimo se na Trgu Republike, kod spomenika.",
+              "native": "Let's meet at Republic Square, by the monument.",
+              "phonetic": "Na-d.jee-mo se na Tr-goo Re-poob-lee-keh, kod spo-me-nee-ka."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_4_1",
+            "sentence": "Glavni ___ se zove Trg Republike.",
+            "answer": "trg",
+            "hint": "The main square is called Republic Square."
+          }
+        ],
+        "matching": [
+          { "id": "m3_4_1", "target": "ulica", "native": "street" },
+          { "id": "m3_4_2", "target": "most", "native": "bridge" },
+          { "id": "m3_4_3", "target": "semafor", "native": "traffic light" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_4_1",
+            "scrambled": ["je", "ulica", "glavna", "Ovo", "."],
+            "correct": "Ovo je glavna ulica .",
+            "nativeHint": "This is the main street."
+          }
+        ]
+      },
+      "cultural_note": "In Serbia, it's very common to arrange meetings 'kod konja' (by the horse), which refers to the large equestrian statue of Prince Mihailo in Republic Square, Belgrade.",
+      "pronunciation_tip": "'Trg' has a rolled 'r' sound, which can be tricky. Try to vibrate the tip of your tongue against the roof of your mouth.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D4-Street" }
+    },
+    {
+      "week": 3,
+      "day": 5,
+      "title": "Week 3, Day 5: Cardinal Directions",
+      "title_native": "Nedelja 3, Dan 5: Strane sveta",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_5_1",
+          "target": "sever",
+          "phonetic": "se-ver",
+          "native_meaning": "north",
+          "english": "north",
+          "example_sentence_target": "Novi Sad je na severu Srbije.",
+          "example_sentence_native": "Novi Sad is in the north of Serbia.",
+          "example_sentence_phonetic": "No-vee Sad yeh na se-ve-roo Sr-bee-yeh."
+        },
+        {
+          "id": "w3_5_2",
+          "target": "jug",
+          "phonetic": "yoog",
+          "native_meaning": "south",
+          "english": "south",
+          "example_sentence_target": "Niš je na jugu.",
+          "example_sentence_native": "Niš is in the south.",
+          "example_sentence_phonetic": "Neesh yeh na yoo-goo."
+        },
+        {
+          "id": "w3_5_3",
+          "target": "istok",
+          "phonetic": "ees-tok",
+          "native_meaning": "east",
+          "english": "east",
+          "example_sentence_target": "Sunce izlazi na istoku.",
+          "example_sentence_native": "The sun rises in the east.",
+          "example_sentence_phonetic": "Soon-tseh eez-la-zee na ees-to-koo."
+        },
+        {
+          "id": "w3_5_4",
+          "target": "zapad",
+          "phonetic": "za-pad",
+          "native_meaning": "west",
+          "english": "west",
+          "example_sentence_target": "Idemo na zapad.",
+          "example_sentence_native": "We are going west.",
+          "example_sentence_phonetic": "Ee-de-mo na za-pad."
+        },
+        {
+          "id": "w3_5_5",
+          "target": "mapa",
+          "phonetic": "ma-pa",
+          "native_meaning": "map",
+          "english": "map",
+          "example_sentence_target": "Imate li mapu grada?",
+          "example_sentence_native": "Do you have a city map?",
+          "example_sentence_phonetic": "Ee-ma-teh lee ma-poo gra-da?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_5_1",
+          "context": "Discussing geography.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Gde je Zlatibor?",
+              "native": "Where is Zlatibor?",
+              "phonetic": "Gdeh yeh Zla-tee-bor?"
+            },
+            {
+              "speaker": "B",
+              "target": "Zlatibor je na zapadu Srbije.",
+              "native": "Zlatibor is in the west of Serbia.",
+              "phonetic": "Zla-tee-bor yeh na za-pa-doo Sr-bee-yeh."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_5_1",
+            "sentence": "Sunce zalazi na ___.",
+            "answer": "zapadu",
+            "hint": "The sun sets in the west."
+          }
+        ],
+        "matching": [
+          { "id": "m3_5_1", "target": "sever", "native": "north" },
+          { "id": "m3_5_2", "target": "jug", "native": "south" },
+          { "id": "m3_5_3", "target": "mapa", "native": "map" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_5_1",
+            "scrambled": ["je", "na", "severu", "Beograd", "."],
+            "correct": "Beograd je na severu .",
+            "nativeHint": "Belgrade is in the north."
+          }
+        ]
+      },
+      "cultural_note": "Serbians often use cardinal directions when describing locations within the country, so knowing them is quite useful for travel.",
+      "pronunciation_tip": "The 'g' in 'jug' is hard, like the 'g' in 'go'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D5-Cardinal" }
+    },
+    {
+      "week": 3,
+      "day": 6,
+      "title": "Week 3, Day 6: Landmarks",
+      "title_native": "Nedelja 3, Dan 6: Znamenitosti",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_6_1",
+          "target": "prodavnica",
+          "phonetic": "pro-dav-nee-tsa",
+          "native_meaning": "shop / store",
+          "english": "shop / store",
+          "example_sentence_target": "Gde je najbliža prodavnica?",
+          "example_sentence_native": "Where is the nearest shop?",
+          "example_sentence_phonetic": "Gdeh yeh nai-blee-zha pro-dav-nee-tsa?"
+        },
+        {
+          "id": "w3_6_2",
+          "target": "bolnica",
+          "phonetic": "bol-nee-tsa",
+          "native_meaning": "hospital",
+          "english": "hospital",
+          "example_sentence_target": "Hitno mi treba bolnica.",
+          "example_sentence_native": "I need a hospital urgently.",
+          "example_sentence_phonetic": "Heet-no mee tre-ba bol-nee-tsa."
+        },
+        {
+          "id": "w3_6_3",
+          "target": "apoteka",
+          "phonetic": "a-po-te-ka",
+          "native_meaning": "pharmacy",
+          "english": "pharmacy",
+          "example_sentence_target": "Da li apoteka radi?",
+          "example_sentence_native": "Is the pharmacy open?",
+          "example_sentence_phonetic": "Da lee a-po-te-ka ra-dee?"
+        },
+        {
+          "id": "w3_6_4",
+          "target": "restoran",
+          "phonetic": "res-to-ran",
+          "native_meaning": "restaurant",
+          "english": "restaurant",
+          "example_sentence_target": "Tražim dobar restoran.",
+          "example_sentence_native": "I'm looking for a good restaurant.",
+          "example_sentence_phonetic": "Tra-zheem do-bar res-to-ran."
+        },
+        {
+          "id": "w3_6_5",
+          "target": "pošta",
+          "phonetic": "posh-ta",
+          "native_meaning": "post office",
+          "english": "post office",
+          "example_sentence_target": "Idem u poštu da pošaljem pismo.",
+          "example_sentence_native": "I'm going to the post office to send a letter.",
+          "example_sentence_phonetic": "Ee-dem oo posh-too da po-shal-yem pees-mo."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_6_1",
+          "context": "Asking for the nearest pharmacy.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je apoteka?",
+              "native": "Excuse me, where is the pharmacy?",
+              "phonetic": "Iz-vee-nee-teh, gdeh yeh a-po-te-ka?"
+            },
+            {
+              "speaker": "B",
+              "target": "Idite pravo, apoteka je pored restorana.",
+              "native": "Go straight, the pharmacy is next to the restaurant.",
+              "phonetic": "Ee-dee-teh pra-vo, a-po-te-ka yeh po-red res-to-ra-na."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_6_1",
+            "sentence": "Gde je najbliža ___?",
+            "answer": "prodavnica",
+            "hint": "Where is the nearest shop?"
+          }
+        ],
+        "matching": [
+          { "id": "m3_6_1", "target": "bolnica", "native": "hospital" },
+          { "id": "m3_6_2", "target": "apoteka", "native": "pharmacy" },
+          { "id": "m3_6_3", "target": "pošta", "native": "post office" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_6_1",
+            "scrambled": ["dobar", "restoran", "Tražim", "."],
+            "correct": "Tražim dobar restoran .",
+            "nativeHint": "I'm looking for a good restaurant."
+          }
+        ]
+      },
+      "cultural_note": "Pharmacies ('apoteka') in Serbia are easily recognizable by a green cross sign. Many are open 24/7 in larger cities.",
+      "pronunciation_tip": "The 'lj' in 'najbliža' is a single sound, similar to the 'lli' in 'million'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D6-Landmarks" }
+    },
+    {
+      "week": 3,
+      "day": 7,
+      "title": "Week 3, Day 7: Review",
+      "title_native": "Nedelja 3, Dan 7: Pregled",
+      "theme": "Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w3_7_1",
+          "target": "gde",
+          "phonetic": "gdeh",
+          "native_meaning": "where",
+          "english": "where",
+          "example_sentence_target": "Gde je toalet?",
+          "example_sentence_native": "Where is the toilet?",
+          "example_sentence_phonetic": "Gdeh yeh to-a-let?"
+        },
+        {
+          "id": "w3_7_2",
+          "target": "karta",
+          "phonetic": "kar-ta",
+          "native_meaning": "ticket / map",
+          "english": "ticket / map",
+          "example_sentence_target": "Imam kartu za koncert.",
+          "example_sentence_native": "I have a ticket for the concert.",
+          "example_sentence_phonetic": "Ee-mam kar-too za kon-tsert."
+        },
+        {
+          "id": "w3_7_3",
+          "target": "levo",
+          "phonetic": "leh-vo",
+          "native_meaning": "left",
+          "english": "left",
+          "example_sentence_target": "Moja kuća je levo.",
+          "example_sentence_native": "My house is on the left.",
+          "example_sentence_phonetic": "Mo-ya koo-cha yeh leh-vo."
+        },
+        {
+          "id": "w3_7_4",
+          "target": "desno",
+          "phonetic": "dess-no",
+          "native_meaning": "right",
+          "english": "right",
+          "example_sentence_target": "Skrenite desno na sledećem ćošku.",
+          "example_sentence_native": "Turn right at the next corner.",
+          "example_sentence_phonetic": "Skreh-nee-teh dess-no na sle-de-chem cho-shkoo."
+        },
+        {
+          "id": "w3_7_5",
+          "target": "Koliko košta?",
+          "phonetic": "Ko-lee-ko kosh-ta?",
+          "native_meaning": "How much does it cost?",
+          "english": "How much does it cost?",
+          "example_sentence_target": "Koliko košta ova knjiga?",
+          "example_sentence_native": "How much does this book cost?",
+          "example_sentence_phonetic": "Ko-lee-ko kosh-ta o-va knyee-ga?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d3_7_1",
+          "context": "A full review dialogue asking for directions and price.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je autobuska stanica?",
+              "native": "Excuse me, where is the bus station?",
+              "phonetic": "Iz-vee-nee-teh, gdeh yeh au-to-boos-ka sta-nee-tsa?"
+            },
+            {
+              "speaker": "B",
+              "target": "Idite pravo, pa skrenite levo. Blizu je.",
+              "native": "Go straight, then turn left. It's near.",
+              "phonetic": "Ee-dee-teh pra-vo, pa skreh-nee-teh leh-vo. Blee-zoo yeh."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb3_7_1",
+            "sentence": "___ je muzej?",
+            "answer": "Gde",
+            "hint": "Where is the museum?"
+          },
+          {
+            "id": "fb3_7_2",
+            "sentence": "Skrenite ___.",
+            "answer": "desno",
+            "hint": "Turn right."
+          }
+        ],
+        "matching": [
+          { "id": "m3_7_1", "target": "karta", "native": "ticket" },
+          { "id": "m3_7_2", "target": "pravo", "native": "straight" },
+          { "id": "m3_7_3", "target": "taksi", "native": "taxi" },
+          { "id": "m3_7_4", "target": "hotel", "native": "hotel" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_7_1",
+            "scrambled": ["košta", "vožnja", "Koliko", "?"],
+            "correct": "Koliko košta vožnja ?",
+            "nativeHint": "How much does the ride cost?"
+          }
+        ]
+      },
+      "cultural_note": "Review: Remember that Serbians are often direct but friendly. A simple 'Izvinite' (Excuse me) is a polite way to start any interaction when asking for help.",
+      "pronunciation_tip": "Review: Pay attention to the clear, distinct vowel sounds in Serbian. Unlike English, they don't typically change their sound within a word.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W3-Review" }
+    }
+  ]
+}
