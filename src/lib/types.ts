@@ -157,7 +157,7 @@ export type TargetLanguage =
   | "Russian" | "Finnish" | "Korean" | "Japanese" | "Arabic"
   | "Hebrew" | "English" | "Turkish" | "Hindi" | "Tamil" | "Chinese";
 
-export type NativeLanguage = "English" | "Sinhala" | "Hindi" | "Urdu" | "Arabic" | "Bengali";
+export type NativeLanguage = "English" | "Sinhala" | "Hindi" | "Urdu" | "Arabic" | "Bengali" | "Nepali";
 
 export interface Language {
   code: string;
