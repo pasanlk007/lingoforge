@@ -7,105 +7,98 @@
     {
       "week": 3,
       "day": 1,
-      "title": "Week 3 Day 1: Body Parts",
-      "title_native": "Body Parts",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 1: Asking for Directions",
+      "title_native": "Săptămâna 3, Ziua 1: A cere indicații",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_1_1",
-          "target": "Cap",
-          "phonetic": "cap",
-          "native_meaning": "Head",
-          "english": "Head",
-          "example_sentence_target": "Mă doare capul.",
-          "example_sentence_native": "My head hurts."
+          "target": "Unde este...?",
+          "phonetic": "Oon-deh yes-teh...?",
+          "native_meaning": "Where is...?",
+          "english": "Where is...?",
+          "example_sentence_target": "Unde este gara?",
+          "example_sentence_native": "Where is the train station?",
+          "example_sentence_phonetic": "Oon-deh yes-teh ga-ra?"
         },
         {
           "id": "w3_1_2",
-          "target": "Mână",
-          "phonetic": "MÂ-nă",
-          "native_meaning": "Hand",
-          "english": "Hand",
-          "example_sentence_target": "Mâna mea.",
-          "example_sentence_native": "My hand."
+          "target": "Stânga",
+          "phonetic": "Stun-ga",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Faceți la stânga la semafor.",
+          "example_sentence_native": "Turn left at the traffic light.",
+          "example_sentence_phonetic": "Fa-chetz la stun-ga la seh-ma-for."
         },
         {
           "id": "w3_1_3",
-          "target": "Picior",
-          "phonetic": "pi-CIOR",
-          "native_meaning": "Foot",
-          "english": "Foot",
-          "example_sentence_target": "Piciorul meu.",
-          "example_sentence_native": "My foot."
+          "target": "Dreapta",
+          "phonetic": "Dreyap-ta",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Farmacia este pe dreapta.",
+          "example_sentence_native": "The pharmacy is on the right.",
+          "example_sentence_phonetic": "Far-ma-chee-a yes-teh peh dreyap-ta."
         },
         {
           "id": "w3_1_4",
-          "target": "Ochi",
-          "phonetic": "ochi",
-          "native_meaning": "Eye",
-          "english": "Eye",
-          "example_sentence_target": "Ochii mei.",
-          "example_sentence_native": "My eyes."
+          "target": "Înainte",
+          "phonetic": "Uh-na-in-teh",
+          "native_meaning": "Straight ahead",
+          "english": "Straight ahead",
+          "example_sentence_target": "Mergeți drept înainte.",
+          "example_sentence_native": "Go straight ahead.",
+          "example_sentence_phonetic": "Mer-jetz drept uh-na-in-teh."
         },
         {
           "id": "w3_1_5",
-          "target": "Stomac",
-          "phonetic": "sto-MAC",
-          "native_meaning": "Stomach",
-          "english": "Stomach",
-          "example_sentence_target": "Mă doare stomacul.",
-          "example_sentence_native": "My stomach hurts."
+          "target": "Aproape",
+          "phonetic": "A-pro-ah-peh",
+          "native_meaning": "Near",
+          "english": "Near",
+          "example_sentence_target": "Este un magazin aproape de aici?",
+          "example_sentence_native": "Is there a store near here?",
+          "example_sentence_phonetic": "Yes-teh oon ma-ga-zeen a-pro-ah-peh deh a-eech?"
         }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts",
+          "context": "A tourist asking a local for directions to the museum.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cap!",
-              "native": "Head!",
-              "phonetic": "cap"
+              "target": "Scuzați-mă, unde este muzeul?",
+              "native": "Excuse me, where is the museum?",
+              "phonetic": "Skoo-zahts-muh, oon-deh yes-teh moo-zeh-ool?"
             },
             {
               "speaker": "B",
-              "target": "Mână!",
-              "native": "Hand!",
-              "phonetic": "MÂ-nă"
-            },
-            {
-              "speaker": "A",
-              "target": "Picior!",
-              "native": "Foot!",
-              "phonetic": "pi-CIOR"
+              "target": "Mergeți drept înainte și apoi faceți la dreapta. Este foarte aproape.",
+              "native": "Go straight ahead and then turn right. It is very near.",
+              "phonetic": "Mer-jetz drept uh-na-in-teh shee a-poy fa-chetz la dreyap-ta. Yes-teh foar-teh a-pro-ah-peh."
             }
           ]
         },
         {
           "id": "d3_1_2",
-          "context": "Body Parts",
+          "context": "Asking for the nearest pharmacy.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Ochi?",
-              "native": "Eye?",
-              "phonetic": "ochi"
+              "target": "Bună ziua! Caut o farmacie.",
+              "native": "Hello! I'm looking for a pharmacy.",
+              "phonetic": "Boo-nuh zee-wa! Cowt o far-ma-chee-eh."
             },
             {
               "speaker": "B",
-              "target": "Stomac.",
-              "native": "Stomach.",
-              "phonetic": "sto-MAC"
-            },
-            {
-              "speaker": "A",
-              "target": "Cap.",
-              "native": "Head.",
-              "phonetic": "cap"
+              "target": "Este una pe dreapta, după colț.",
+              "native": "There is one on the right, around the corner.",
+              "phonetic": "Yes-teh oo-na peh dreyap-ta, doo-puh kolts."
             }
           ]
         }
@@ -114,187 +107,144 @@
         "fillBlanks": [
           {
             "id": "fb3_1_1",
-            "sentence": "___ means 'Head' in Romanian",
-            "answer": "Cap",
-            "hint": "Head"
-          },
-          {
-            "id": "fb3_1_2",
-            "sentence": "___ means 'Hand' in Romanian",
-            "answer": "Mână",
-            "hint": "Hand"
-          },
-          {
-            "id": "fb3_1_3",
-            "sentence": "___ means 'Foot' in Romanian",
-            "answer": "Picior",
-            "hint": "Foot"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_1_1",
-            "target": "Cap",
-            "native": "Head"
-          },
-          {
-            "id": "m3_1_2",
-            "target": "Mână",
-            "native": "Hand"
-          },
-          {
-            "id": "m3_1_3",
-            "target": "Picior",
-            "native": "Foot"
-          },
-          {
-            "id": "m3_1_4",
-            "target": "Ochi",
-            "native": "Eye"
-          },
-          {
-            "id": "m3_1_5",
-            "target": "Stomac",
-            "native": "Stomach"
+            "sentence": "Unde este ___?",
+            "answer": "gara",
+            "hint": "Where is the train station?"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_1_1",
-            "question": "What does 'Cap' mean?",
-            "options": [
-              "Head",
-              "Hand",
-              "Foot",
-              "Eye"
-            ],
-            "correct": 0,
-            "explanation": "'Cap' means Head."
+            "question": "What does 'stânga' mean?",
+            "options": ["Right", "Left", "Straight", "Back"],
+            "correct": 1,
+            "explanation": "'Stânga' means Left in Romanian."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_1_1",
+            "target": "Dreapta",
+            "native": "Right"
           },
           {
-            "id": "mc3_1_2",
-            "question": "What does 'Mână' mean?",
-            "options": [
-              "Hand",
-              "Foot",
-              "Eye",
-              "Stomach"
-            ],
-            "correct": 0,
-            "explanation": "'Mână' means Hand."
+            "id": "m3_1_2",
+            "target": "Aproape",
+            "native": "Near"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_1_1",
+            "scrambled": ["este", "Unde", "muzeul", "?"],
+            "correct": "Unde este muzeul?",
+            "nativeHint": "Where is the museum?"
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "Romanians are generally very friendly and willing to help with directions, even if they don't speak much English. Using a few Romanian words like 'Scuzați-mă' will be much appreciated.",
+      "pronunciation_tip": "The letter 'ț' in 'faceți' sounds like 'ts' in 'cats'. It's a sharp, quick sound.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W3D1"
+        "badge": "W3D1-Directions"
       }
     },
     {
       "week": 3,
       "day": 2,
-      "title": "Week 3 Day 2: Common Symptoms",
-      "title_native": "Common Symptoms",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 2: Public Transport",
+      "title_native": "Săptămâna 3, Ziua 2: Transport public",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_2_1",
-          "target": "Durere",
-          "phonetic": "du-RE-re",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Am o durere.",
-          "example_sentence_native": "I have pain."
+          "target": "Autobuz",
+          "phonetic": "Ow-to-booz",
+          "native_meaning": "Bus",
+          "english": "Bus",
+          "example_sentence_target": "Ce autobuz merge la centru?",
+          "example_sentence_native": "Which bus goes to the center?",
+          "example_sentence_phonetic": "Cheh ow-to-booz mer-jeh la chen-troo?"
         },
         {
           "id": "w3_2_2",
-          "target": "Febră",
-          "phonetic": "FE-bră",
-          "native_meaning": "Fever",
-          "english": "Fever",
-          "example_sentence_target": "Am febră.",
-          "example_sentence_native": "I have a fever."
+          "target": "Stație",
+          "phonetic": "Sta-tsee-eh",
+          "native_meaning": "Station / Stop",
+          "english": "Station / Stop",
+          "example_sentence_target": "Unde este cea mai apropiată stație de autobuz?",
+          "example_sentence_native": "Where is the nearest bus stop?",
+          "example_sentence_phonetic": "Oon-deh yes-teh cha my a-pro-pee-a-tuh sta-tsee-eh deh ow-to-booz?"
         },
         {
           "id": "w3_2_3",
-          "target": "Tuse",
-          "phonetic": "TU-se",
-          "native_meaning": "Cough",
-          "english": "Cough",
-          "example_sentence_target": "Am tuse.",
-          "example_sentence_native": "I have a cough."
+          "target": "Bilet",
+          "phonetic": "Bee-let",
+          "native_meaning": "Ticket",
+          "english": "Ticket",
+          "example_sentence_target": "Vreau un bilet, vă rog.",
+          "example_sentence_native": "I want a ticket, please.",
+          "example_sentence_phonetic": "Vrow oon bee-let, vuh rog."
         },
         {
           "id": "w3_2_4",
-          "target": "Răceală",
-          "phonetic": "ră-CHEA-lă",
-          "native_meaning": "Cold",
-          "english": "Cold",
-          "example_sentence_target": "Am răceală.",
-          "example_sentence_native": "I have a cold."
+          "target": "Tren",
+          "phonetic": "Tren",
+          "native_meaning": "Train",
+          "english": "Train",
+          "example_sentence_target": "Trenul pleacă la ora zece.",
+          "example_sentence_native": "The train leaves at ten o'clock.",
+          "example_sentence_phonetic": "Tre-nool ple-a-cuh la o-ra ze-cheh."
         },
         {
           "id": "w3_2_5",
-          "target": "Durere de cap",
-          "phonetic": "du-RE-re de CAP",
-          "native_meaning": "Headache",
-          "english": "Headache",
-          "example_sentence_target": "Am durere de cap.",
-          "example_sentence_native": "I have a headache."
+          "target": "Metrou",
+          "phonetic": "Meh-tro-oo",
+          "native_meaning": "Subway / Metro",
+          "english": "Subway / Metro",
+          "example_sentence_target": "Putem lua metroul.",
+          "example_sentence_native": "We can take the subway.",
+          "example_sentence_phonetic": "Poo-tem loo-a meh-tro-ool."
         }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms",
+          "context": "Buying a bus ticket.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Durere!",
-              "native": "Pain!",
-              "phonetic": "du-RE-re"
+              "target": "Bună ziua, un bilet pentru centru, vă rog.",
+              "native": "Hello, one ticket to the center, please.",
+              "phonetic": "Boo-nuh zee-wa, oon bee-let pen-troo chen-troo, vuh rog."
             },
             {
               "speaker": "B",
-              "target": "Febră!",
-              "native": "Fever!",
-              "phonetic": "FE-bră"
-            },
-            {
-              "speaker": "A",
-              "target": "Tuse!",
-              "native": "Cough!",
-              "phonetic": "TU-se"
+              "target": "Sigur. Poftiți.",
+              "native": "Sure. Here you are.",
+              "phonetic": "See-goor. Pof-teets."
             }
           ]
         },
         {
           "id": "d3_2_2",
-          "context": "Common Symptoms",
+          "context": "Asking about the next train.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Răceală?",
-              "native": "Cold?",
-              "phonetic": "ră-CHEA-lă"
+              "target": "Când pleacă următorul tren spre Brașov?",
+              "native": "When does the next train to Brașov leave?",
+              "phonetic": "Kund ple-a-cuh oor-muh-tor-ool tren spreh Bra-shov?"
             },
             {
               "speaker": "B",
-              "target": "Durere de cap.",
-              "native": "Headache.",
-              "phonetic": "du-RE-re de CAP"
-            },
-            {
-              "speaker": "A",
-              "target": "Durere.",
-              "native": "Pain.",
-              "phonetic": "du-RE-re"
+              "target": "În zece minute.",
+              "native": "In ten minutes.",
+              "phonetic": "In ze-cheh mee-noo-teh."
             }
           ]
         }
@@ -303,187 +253,144 @@
         "fillBlanks": [
           {
             "id": "fb3_2_1",
-            "sentence": "___ means 'Pain' in Romanian",
-            "answer": "Durere",
-            "hint": "Pain"
-          },
-          {
-            "id": "fb3_2_2",
-            "sentence": "___ means 'Fever' in Romanian",
-            "answer": "Febră",
-            "hint": "Fever"
-          },
-          {
-            "id": "fb3_2_3",
-            "sentence": "___ means 'Cough' in Romanian",
-            "answer": "Tuse",
-            "hint": "Cough"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_2_1",
-            "target": "Durere",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_2_2",
-            "target": "Febră",
-            "native": "Fever"
-          },
-          {
-            "id": "m3_2_3",
-            "target": "Tuse",
-            "native": "Cough"
-          },
-          {
-            "id": "m3_2_4",
-            "target": "Răceală",
-            "native": "Cold"
-          },
-          {
-            "id": "m3_2_5",
-            "target": "Durere de cap",
-            "native": "Headache"
+            "sentence": "Vreau un ___, vă rog.",
+            "answer": "bilet",
+            "hint": "I want a ticket, please."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_2_1",
-            "question": "What does 'Durere' mean?",
-            "options": [
-              "Pain",
-              "Fever",
-              "Cough",
-              "Cold"
-            ],
-            "correct": 0,
-            "explanation": "'Durere' means Pain."
+            "question": "What is 'stație'?",
+            "options": ["Ticket", "Bus", "Stop/Station", "Train"],
+            "correct": 2,
+            "explanation": "'Stație' can mean both a bus stop or a train/metro station."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_2_1",
+            "target": "Autobuz",
+            "native": "Bus"
           },
           {
-            "id": "mc3_2_2",
-            "question": "What does 'Febră' mean?",
-            "options": [
-              "Fever",
-              "Cough",
-              "Cold",
-              "Headache"
-            ],
-            "correct": 0,
-            "explanation": "'Febră' means Fever."
+            "id": "m3_2_2",
+            "target": "Metrou",
+            "native": "Subway"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_2_1",
+            "scrambled": ["un", "Vreau", "bilet", "."],
+            "correct": "Vreau un bilet.",
+            "nativeHint": "I want a ticket."
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "In many Romanian cities like Bucharest, you need to buy a 'card' for public transport which you top up with credit, rather than buying single paper tickets for each journey.",
+      "pronunciation_tip": "The 'ă' sound in 'stație' or 'apropiată' is a neutral vowel sound, similar to the 'a' in 'sofa' in English.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W3D2"
+        "badge": "W3D2-Transport"
       }
     },
     {
       "week": 3,
       "day": 3,
-      "title": "Week 3 Day 3: At the Doctor",
-      "title_native": "At the Doctor",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 3: Taxi & Ride-sharing",
+      "title_native": "Săptămâna 3, Ziua 3: Taxi și ride-sharing",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_3_1",
-          "target": "Medic",
-          "phonetic": "ME-dic",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Am nevoie de un medic.",
-          "example_sentence_native": "I need a doctor."
+          "target": "Taxi",
+          "phonetic": "Tak-see",
+          "native_meaning": "Taxi",
+          "english": "Taxi",
+          "example_sentence_target": "Pot să iau un taxi de aici?",
+          "example_sentence_native": "Can I get a taxi from here?",
+          "example_sentence_phonetic": "Pot suh yow oon tak-see deh a-eech?"
         },
         {
           "id": "w3_3_2",
-          "target": "Spital",
-          "phonetic": "spi-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Unde este spitalul?",
-          "example_sentence_native": "Where is the hospital?"
+          "target": "Adresă",
+          "phonetic": "A-dreh-suh",
+          "native_meaning": "Address",
+          "english": "Address",
+          "example_sentence_target": "Care este adresa?",
+          "example_sentence_native": "What is the address?",
+          "example_sentence_phonetic": "Ca-reh yes-teh a-dreh-suh?"
         },
         {
           "id": "w3_3_3",
-          "target": "Medicament",
-          "phonetic": "me-di-ca-MENT",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Iau medicamente.",
-          "example_sentence_native": "I take medicine."
+          "target": "Cât costă?",
+          "phonetic": "Kut kos-tuh?",
+          "native_meaning": "How much does it cost?",
+          "english": "How much does it cost?",
+          "example_sentence_target": "Cât costă până la aeroport?",
+          "example_sentence_native": "How much does it cost to the airport?",
+          "example_sentence_phonetic": "Kut kos-tuh puh-nuh la a-ero-port?"
         },
         {
           "id": "w3_3_4",
-          "target": "Programare",
-          "phonetic": "pro-gra-MA-re",
-          "native_meaning": "Appointment",
-          "english": "Appointment",
-          "example_sentence_target": "Am o programare.",
-          "example_sentence_native": "I have an appointment."
+          "target": "Vă rog să mă duceți la...",
+          "phonetic": "Vuh rog suh muh doo-chetz la...",
+          "native_meaning": "Please take me to...",
+          "english": "Please take me to...",
+          "example_sentence_target": "Vă rog să mă duceți la acest hotel.",
+          "example_sentence_native": "Please take me to this hotel.",
+          "example_sentence_phonetic": "Vuh rog suh muh doo-chetz la a-chest ho-tel."
         },
         {
           "id": "w3_3_5",
-          "target": "Rețetă",
-          "phonetic": "re-ȚE-tă",
-          "native_meaning": "Prescription",
-          "english": "Prescription",
-          "example_sentence_target": "Rețetă medicală.",
-          "example_sentence_native": "Medical prescription."
+          "target": "Opriți aici",
+          "phonetic": "O-preets a-eech",
+          "native_meaning": "Stop here",
+          "english": "Stop here",
+          "example_sentence_target": "Vă rog, opriți aici.",
+          "example_sentence_native": "Please, stop here.",
+          "example_sentence_phonetic": "Vuh rog, o-preets a-eech."
         }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor",
+          "context": "Taking a taxi to a specific address.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Medic!",
-              "native": "Doctor!",
-              "phonetic": "ME-dic"
+              "target": "Bună ziua. Vă rog să mă duceți la Strada Victoriei, numărul 10.",
+              "native": "Hello. Please take me to 10 Victory Street.",
+              "phonetic": "Boo-nuh zee-wa. Vuh rog suh muh doo-chetz la Stra-da Vik-to-ree-ey, noo-muh-rool ze-cheh."
             },
             {
               "speaker": "B",
-              "target": "Spital!",
-              "native": "Hospital!",
-              "phonetic": "spi-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Medicament!",
-              "native": "Medicine!",
-              "phonetic": "me-di-ca-MENT"
+              "target": "Sigur, nicio problemă.",
+              "native": "Sure, no problem.",
+              "phonetic": "See-goor, nee-cho pro-bleh-muh."
             }
           ]
         },
         {
           "id": "d3_3_2",
-          "context": "At the Doctor",
+          "context": "Asking the price before getting in a taxi.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Programare?",
-              "native": "Appointment?",
-              "phonetic": "pro-gra-MA-re"
+              "target": "Cât costă aproximativ până la gară?",
+              "native": "How much is it approximately to the train station?",
+              "phonetic": "Kut kos-tuh a-prok-see-ma-teev puh-nuh la ga-ruh?"
             },
             {
               "speaker": "B",
-              "target": "Rețetă.",
-              "native": "Prescription.",
-              "phonetic": "re-ȚE-tă"
-            },
-            {
-              "speaker": "A",
-              "target": "Medic.",
-              "native": "Doctor.",
-              "phonetic": "ME-dic"
+              "target": "În jur de 30 de lei.",
+              "native": "Around 30 lei.",
+              "phonetic": "In joor deh trey-zeci deh lay."
             }
           ]
         }
@@ -492,187 +399,144 @@
         "fillBlanks": [
           {
             "id": "fb3_3_1",
-            "sentence": "___ means 'Doctor' in Romanian",
-            "answer": "Medic",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_3_2",
-            "sentence": "___ means 'Hospital' in Romanian",
-            "answer": "Spital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_3_3",
-            "sentence": "___ means 'Medicine' in Romanian",
-            "answer": "Medicament",
-            "hint": "Medicine"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_3_1",
-            "target": "Medic",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_3_2",
-            "target": "Spital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_3_3",
-            "target": "Medicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_3_4",
-            "target": "Programare",
-            "native": "Appointment"
-          },
-          {
-            "id": "m3_3_5",
-            "target": "Rețetă",
-            "native": "Prescription"
+            "sentence": "___ aici, vă rog.",
+            "answer": "Opriți",
+            "hint": "Stop here, please."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_3_1",
-            "question": "What does 'Medic' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Medicine",
-              "Appointment"
-            ],
-            "correct": 0,
-            "explanation": "'Medic' means Doctor."
+            "question": "How do you ask 'How much does it cost?'",
+            "options": ["Unde este?", "Care este adresa?", "Cât costă?", "Ce autobuz?"],
+            "correct": 2,
+            "explanation": "'Cât costă?' is the correct phrase to ask for the price."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_3_1",
+            "target": "Taxi",
+            "native": "Taxi"
           },
           {
-            "id": "mc3_3_2",
-            "question": "What does 'Spital' mean?",
-            "options": [
-              "Hospital",
-              "Medicine",
-              "Appointment",
-              "Prescription"
-            ],
-            "correct": 0,
-            "explanation": "'Spital' means Hospital."
+            "id": "m3_3_2",
+            "target": "Adresă",
+            "native": "Address"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_3_1",
+            "scrambled": ["este", "Care", "adresa", "?"],
+            "correct": "Care este adresa?",
+            "nativeHint": "What is the address?"
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "Ride-sharing apps like Uber and Bolt are very popular and often more reliable than traditional taxis in major Romanian cities like Bucharest, Cluj-Napoca, and Timișoara.",
+      "pronunciation_tip": "In 'duceți', the 'ce' is pronounced like 'cheh' in 'check'. It's a soft 'ch' sound.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W3D3"
+        "badge": "W3D3-Taxi"
       }
     },
     {
       "week": 3,
       "day": 4,
-      "title": "Week 3 Day 4: Medicine & Pharmacy",
-      "title_native": "Medicine & Pharmacy",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 4: Landmarks",
+      "title_native": "Săptămâna 3, Ziua 4: Puncte de reper",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_4_1",
-          "target": "Farmacie",
-          "phonetic": "far-ma-CI-e",
-          "native_meaning": "Pharmacy",
-          "english": "Pharmacy",
-          "example_sentence_target": "Unde este farmacia?",
-          "example_sentence_native": "Where is the pharmacy?"
+          "target": "Hotel",
+          "phonetic": "Ho-tel",
+          "native_meaning": "Hotel",
+          "english": "Hotel",
+          "example_sentence_target": "Hotelul este pe strada principală.",
+          "example_sentence_native": "The hotel is on the main street.",
+          "example_sentence_phonetic": "Ho-tel-ool yes-teh peh stra-da prin-chee-pa-luh."
         },
         {
           "id": "w3_4_2",
-          "target": "Comprimat",
-          "phonetic": "com-pri-MAT",
-          "native_meaning": "Tablet",
-          "english": "Tablet",
-          "example_sentence_target": "Ia un comprimat.",
-          "example_sentence_native": "Take a tablet."
+          "target": "Bancă",
+          "phonetic": "Ban-kuh",
+          "native_meaning": "Bank",
+          "english": "Bank",
+          "example_sentence_target": "Unde este cea mai apropiată bancă?",
+          "example_sentence_native": "Where is the nearest bank?",
+          "example_sentence_phonetic": "Oon-deh yes-teh cha my a-pro-pee-a-tuh ban-kuh?"
         },
         {
           "id": "w3_4_3",
-          "target": "Sirop",
-          "phonetic": "si-ROP",
-          "native_meaning": "Syrup",
-          "english": "Syrup",
-          "example_sentence_target": "Sirop de tuse.",
-          "example_sentence_native": "Cough syrup."
+          "target": "Spital",
+          "phonetic": "Spee-tal",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Trebuie să merg la spital.",
+          "example_sentence_native": "I need to go to the hospital.",
+          "example_sentence_phonetic": "Treh-bwee-eh suh merg la spee-tal."
         },
         {
           "id": "w3_4_4",
-          "target": "Alergie",
-          "phonetic": "a-ler-GI-e",
-          "native_meaning": "Allergy",
-          "english": "Allergy",
-          "example_sentence_target": "Am o alergie.",
-          "example_sentence_native": "I have an allergy."
+          "target": "Restaurant",
+          "phonetic": "Res-tow-rant",
+          "native_meaning": "Restaurant",
+          "english": "Restaurant",
+          "example_sentence_target": "Cunosc un restaurant bun.",
+          "example_sentence_native": "I know a good restaurant.",
+          "example_sentence_phonetic": "Koo-nosk oon res-tow-rant boon."
         },
         {
           "id": "w3_4_5",
-          "target": "Injecție",
-          "phonetic": "in-JEC-ție",
-          "native_meaning": "Injection",
-          "english": "Injection",
-          "example_sentence_target": "Am nevoie de injecție.",
-          "example_sentence_native": "I need an injection."
+          "target": "Piață",
+          "phonetic": "Pya-tsuh",
+          "native_meaning": "Market / Square",
+          "english": "Market / Square",
+          "example_sentence_target": "Mergem în Piața Unirii.",
+          "example_sentence_native": "We are going to Union Square.",
+          "example_sentence_phonetic": "Mer-gem in Pya-tsa Oo-nee-ree."
         }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Medicine & Pharmacy",
+          "context": "Asking for directions to a hotel.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Farmacie!",
-              "native": "Pharmacy!",
-              "phonetic": "far-ma-CI-e"
+              "target": "Scuzați-mă, este un hotel pe aici?",
+              "native": "Excuse me, is there a hotel around here?",
+              "phonetic": "Skoo-zahts-muh, yes-teh oon ho-tel peh a-eech?"
             },
             {
               "speaker": "B",
-              "target": "Comprimat!",
-              "native": "Tablet!",
-              "phonetic": "com-pri-MAT"
-            },
-            {
-              "speaker": "A",
-              "target": "Sirop!",
-              "native": "Syrup!",
-              "phonetic": "si-ROP"
+              "target": "Da, Hotel Inter este pe bulevard, la dreapta.",
+              "native": "Yes, Hotel Inter is on the boulevard, on the right.",
+              "phonetic": "Da, Ho-tel In-ter yes-teh peh boo-leh-vard, la dreyap-ta."
             }
           ]
         },
         {
           "id": "d3_4_2",
-          "context": "Medicine & Pharmacy",
+          "context": "Looking for a hospital.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Alergie?",
-              "native": "Allergy?",
-              "phonetic": "a-ler-GI-e"
+              "target": "Urgent! Unde este cel mai apropiat spital?",
+              "native": "Urgent! Where is the nearest hospital?",
+              "phonetic": "Oor-jent! Oon-deh yes-teh chel my a-pro-pee-at spee-tal?"
             },
             {
               "speaker": "B",
-              "target": "Injecție.",
-              "native": "Injection.",
-              "phonetic": "in-JEC-ție"
-            },
-            {
-              "speaker": "A",
-              "target": "Farmacie.",
-              "native": "Pharmacy.",
-              "phonetic": "far-ma-CI-e"
+              "target": "Mergeți drept înainte, este la 5 minute de mers pe jos.",
+              "native": "Go straight ahead, it's a 5-minute walk.",
+              "phonetic": "Mer-jetz drept uh-na-in-teh, yes-teh la chinch mee-noo-teh deh mers peh zhos."
             }
           ]
         }
@@ -681,187 +545,144 @@
         "fillBlanks": [
           {
             "id": "fb3_4_1",
-            "sentence": "___ means 'Pharmacy' in Romanian",
-            "answer": "Farmacie",
-            "hint": "Pharmacy"
-          },
-          {
-            "id": "fb3_4_2",
-            "sentence": "___ means 'Tablet' in Romanian",
-            "answer": "Comprimat",
-            "hint": "Tablet"
-          },
-          {
-            "id": "fb3_4_3",
-            "sentence": "___ means 'Syrup' in Romanian",
-            "answer": "Sirop",
-            "hint": "Syrup"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_4_1",
-            "target": "Farmacie",
-            "native": "Pharmacy"
-          },
-          {
-            "id": "m3_4_2",
-            "target": "Comprimat",
-            "native": "Tablet"
-          },
-          {
-            "id": "m3_4_3",
-            "target": "Sirop",
-            "native": "Syrup"
-          },
-          {
-            "id": "m3_4_4",
-            "target": "Alergie",
-            "native": "Allergy"
-          },
-          {
-            "id": "m3_4_5",
-            "target": "Injecție",
-            "native": "Injection"
+            "sentence": "Trebuie să merg la ___.",
+            "answer": "spital",
+            "hint": "I need to go to the hospital."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_4_1",
-            "question": "What does 'Farmacie' mean?",
-            "options": [
-              "Pharmacy",
-              "Tablet",
-              "Syrup",
-              "Allergy"
-            ],
-            "correct": 0,
-            "explanation": "'Farmacie' means Pharmacy."
+            "question": "What does 'piață' mean?",
+            "options": ["Hotel", "Bank", "Market/Square", "Restaurant"],
+            "correct": 2,
+            "explanation": "'Piață' can mean a market where you buy produce, or a public square like Piața Unirii."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_4_1",
+            "target": "Bancă",
+            "native": "Bank"
           },
           {
-            "id": "mc3_4_2",
-            "question": "What does 'Comprimat' mean?",
-            "options": [
-              "Tablet",
-              "Syrup",
-              "Allergy",
-              "Injection"
-            ],
-            "correct": 0,
-            "explanation": "'Comprimat' means Tablet."
+            "id": "m3_4_2",
+            "target": "Restaurant",
+            "native": "Restaurant"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_4_1",
+            "scrambled": ["un", "bun", "restaurant", "Cunosc", "."],
+            "correct": "Cunosc un restaurant bun.",
+            "nativeHint": "I know a good restaurant."
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "In Romania, many important streets are named after historical events or figures. For example, 'Calea Victoriei' (Victory Avenue) in Bucharest is a major historical and cultural hub.",
+      "pronunciation_tip": "The 'h' in 'hotel' is pronounced, unlike in French. It's a soft 'h' sound like in English 'hello'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W3D4"
+        "badge": "W3D4-Landmarks"
       }
     },
     {
       "week": 3,
       "day": 5,
-      "title": "Week 3 Day 5: Healthy Habits",
-      "title_native": "Healthy Habits",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 5: Understanding Directions",
+      "title_native": "Săptămâna 3, Ziua 5: Înțelegerea indicațiilor",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_5_1",
-          "target": "Exercițiu",
-          "phonetic": "e-xer-CI-țiu",
-          "native_meaning": "Exercise",
-          "english": "Exercise",
-          "example_sentence_target": "Fac exerciții.",
-          "example_sentence_native": "I exercise."
+          "target": "Departe",
+          "phonetic": "Deh-par-teh",
+          "native_meaning": "Far",
+          "english": "Far",
+          "example_sentence_target": "Este departe de aici?",
+          "example_sentence_native": "Is it far from here?",
+          "example_sentence_phonetic": "Yes-teh deh-par-teh deh a-eech?"
         },
         {
           "id": "w3_5_2",
-          "target": "Somn",
-          "phonetic": "somn",
-          "native_meaning": "Sleep",
-          "english": "Sleep",
-          "example_sentence_target": "Am nevoie de somn.",
-          "example_sentence_native": "I need sleep."
+          "target": "Lângă",
+          "phonetic": "Lun-guh",
+          "native_meaning": "Next to",
+          "english": "Next to",
+          "example_sentence_target": "Magazinul este lângă bancă.",
+          "example_sentence_native": "The store is next to the bank.",
+          "example_sentence_phonetic": "Ma-ga-zee-nool yes-teh lun-guh ban-kuh."
         },
         {
           "id": "w3_5_3",
-          "target": "Apă",
-          "phonetic": "A-pă",
-          "native_meaning": "Water",
-          "english": "Water",
-          "example_sentence_target": "Beau apă.",
-          "example_sentence_native": "I drink water."
+          "target": "În față",
+          "phonetic": "In fa-tsuh",
+          "native_meaning": "In front of",
+          "english": "In front of",
+          "example_sentence_target": "Parcarea este în fața hotelului.",
+          "example_sentence_native": "The parking is in front of the hotel.",
+          "example_sentence_phonetic": "Par-ca-re-a yes-teh in fa-tsa ho-tel-oo-loo-i."
         },
         {
           "id": "w3_5_4",
-          "target": "Sănătos",
-          "phonetic": "să-nă-TOS",
-          "native_meaning": "Healthy",
-          "english": "Healthy",
-          "example_sentence_target": "Sunt sănătos.",
-          "example_sentence_native": "I am healthy."
+          "target": "În spate",
+          "phonetic": "In spa-teh",
+          "native_meaning": "Behind",
+          "english": "Behind",
+          "example_sentence_target": "Grădina este în spatele casei.",
+          "example_sentence_native": "The garden is behind the house.",
+          "example_sentence_phonetic": "Gruh-dee-na yes-teh in spa-te-leh ca-say."
         },
         {
           "id": "w3_5_5",
-          "target": "Dietă",
-          "phonetic": "DI-e-tă",
-          "native_meaning": "Diet",
-          "english": "Diet",
-          "example_sentence_target": "Țin o dietă.",
-          "example_sentence_native": "I am on a diet."
+          "target": "La colț",
+          "phonetic": "La kolts",
+          "native_meaning": "At the corner",
+          "english": "At the corner",
+          "example_sentence_target": "Farmacia este la colț.",
+          "example_sentence_native": "The pharmacy is at the corner.",
+          "example_sentence_phonetic": "Far-ma-chee-a yes-teh la kolts."
         }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Healthy Habits",
+          "context": "Confirming a location's distance.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Exercițiu!",
-              "native": "Exercise!",
-              "phonetic": "e-xer-CI-țiu"
+              "target": "Scuzați-mă, este departe castelul?",
+              "native": "Excuse me, is the castle far?",
+              "phonetic": "Skoo-zahts-muh, yes-teh deh-par-teh cas-tel-ool?"
             },
             {
               "speaker": "B",
-              "target": "Somn!",
-              "native": "Sleep!",
-              "phonetic": "somn"
-            },
-            {
-              "speaker": "A",
-              "target": "Apă!",
-              "native": "Water!",
-              "phonetic": "A-pă"
+              "target": "Nu, nu este departe. Este la 10 minute de mers pe jos.",
+              "native": "No, it's not far. It is a 10-minute walk.",
+              "phonetic": "Noo, noo yes-teh deh-par-teh. Yes-teh la ze-cheh mee-noo-teh deh mers peh zhos."
             }
           ]
         },
         {
           "id": "d3_5_2",
-          "context": "Healthy Habits",
+          "context": "Pinpointing a cafe's location.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sănătos?",
-              "native": "Healthy?",
-              "phonetic": "să-nă-TOS"
+              "target": "Unde este cafeneaua?",
+              "native": "Where is the cafe?",
+              "phonetic": "Oon-deh yes-teh ca-feh-ne-a-wa?"
             },
             {
               "speaker": "B",
-              "target": "Dietă.",
-              "native": "Diet.",
-              "phonetic": "DI-e-tă"
-            },
-            {
-              "speaker": "A",
-              "target": "Exercițiu.",
-              "native": "Exercise.",
-              "phonetic": "e-xer-CI-țiu"
+              "target": "Este lângă teatru, la colțul străzii.",
+              "native": "It's next to the theater, at the street corner.",
+              "phonetic": "Yes-teh lun-guh teh-a-troo, la kol-tsool struh-zee."
             }
           ]
         }
@@ -870,187 +691,144 @@
         "fillBlanks": [
           {
             "id": "fb3_5_1",
-            "sentence": "___ means 'Exercise' in Romanian",
-            "answer": "Exercițiu",
-            "hint": "Exercise"
-          },
-          {
-            "id": "fb3_5_2",
-            "sentence": "___ means 'Sleep' in Romanian",
-            "answer": "Somn",
-            "hint": "Sleep"
-          },
-          {
-            "id": "fb3_5_3",
-            "sentence": "___ means 'Water' in Romanian",
-            "answer": "Apă",
-            "hint": "Water"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_5_1",
-            "target": "Exercițiu",
-            "native": "Exercise"
-          },
-          {
-            "id": "m3_5_2",
-            "target": "Somn",
-            "native": "Sleep"
-          },
-          {
-            "id": "m3_5_3",
-            "target": "Apă",
-            "native": "Water"
-          },
-          {
-            "id": "m3_5_4",
-            "target": "Sănătos",
-            "native": "Healthy"
-          },
-          {
-            "id": "m3_5_5",
-            "target": "Dietă",
-            "native": "Diet"
+            "sentence": "Magazinul este ___ bancă.",
+            "answer": "lângă",
+            "hint": "The store is next to the bank."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_5_1",
-            "question": "What does 'Exercițiu' mean?",
-            "options": [
-              "Exercise",
-              "Sleep",
-              "Water",
-              "Healthy"
-            ],
-            "correct": 0,
-            "explanation": "'Exercițiu' means Exercise."
+            "question": "What is the opposite of 'aproape' (near)?",
+            "options": ["Lângă", "Departe", "În față", "La colț"],
+            "correct": 1,
+            "explanation": "'Departe' means 'far', which is the opposite of 'aproape' (near)."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_5_1",
+            "target": "În spate",
+            "native": "Behind"
           },
           {
-            "id": "mc3_5_2",
-            "question": "What does 'Somn' mean?",
-            "options": [
-              "Sleep",
-              "Water",
-              "Healthy",
-              "Diet"
-            ],
-            "correct": 0,
-            "explanation": "'Somn' means Sleep."
+            "id": "m3_5_2",
+            "target": "La colț",
+            "native": "At the corner"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_5_1",
+            "scrambled": ["este", "aici", "de", "departe", "?"],
+            "correct": "Este departe de aici?",
+            "nativeHint": "Is it far from here?"
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "In Romanian cities, giving directions using landmarks ('lângă bancă' - next to the bank) is extremely common, sometimes more so than using street names for short distances.",
+      "pronunciation_tip": "The 'â' in 'lângă' and 'în' is a unique Romanian vowel. It's a sound made in the center of your mouth, similar to the 'u' in 'uh-oh'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W3D5"
+        "badge": "W3D5-Understanding"
       }
     },
     {
       "week": 3,
       "day": 6,
-      "title": "Week 3 Day 6: Emergency Phrases",
-      "title_native": "Emergency Phrases",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 6: Travel Verbs",
+      "title_native": "Săptămâna 3, Ziua 6: Verbe de călătorie",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_6_1",
-          "target": "Ajutor",
-          "phonetic": "a-ju-TOR",
-          "native_meaning": "Help",
-          "english": "Help",
-          "example_sentence_target": "Am nevoie de ajutor!",
-          "example_sentence_native": "I need help!"
+          "target": "A merge",
+          "phonetic": "A mer-jeh",
+          "native_meaning": "To go",
+          "english": "To go",
+          "example_sentence_target": "Eu merg la piață.",
+          "example_sentence_native": "I am going to the market.",
+          "example_sentence_phonetic": "Yeh-oo merg la pya-tsuh."
         },
         {
           "id": "w3_6_2",
-          "target": "Urgență",
-          "phonetic": "ur-GEN-ță",
-          "native_meaning": "Emergency",
-          "english": "Emergency",
-          "example_sentence_target": "Urgență!",
-          "example_sentence_native": "Emergency!"
+          "target": "A veni",
+          "phonetic": "A veh-nee",
+          "native_meaning": "To come",
+          "english": "To come",
+          "example_sentence_target": "Tu vii cu mine?",
+          "example_sentence_native": "Are you coming with me?",
+          "example_sentence_phonetic": "Too vee koo mee-neh?"
         },
         {
           "id": "w3_6_3",
-          "target": "Ambulanță",
-          "phonetic": "am-bu-LAN-ță",
-          "native_meaning": "Ambulance",
-          "english": "Ambulance",
-          "example_sentence_target": "Chemați ambulanța!",
-          "example_sentence_native": "Call an ambulance!"
+          "target": "A lua",
+          "phonetic": "A loo-a",
+          "native_meaning": "To take",
+          "english": "To take",
+          "example_sentence_target": "Voi lua autobuzul.",
+          "example_sentence_native": "I will take the bus.",
+          "example_sentence_phonetic": "Voy loo-a ow-to-boo-zool."
         },
         {
           "id": "w3_6_4",
-          "target": "Poliție",
-          "phonetic": "po-li-ȚI-e",
-          "native_meaning": "Police",
-          "english": "Police",
-          "example_sentence_target": "Chemați poliția!",
-          "example_sentence_native": "Call the police!"
+          "target": "A ajunge",
+          "phonetic": "A a-joon-jeh",
+          "native_meaning": "To arrive",
+          "english": "To arrive",
+          "example_sentence_target": "Când ajungem?",
+          "example_sentence_native": "When do we arrive?",
+          "example_sentence_phonetic": "Kund a-joon-jem?"
         },
         {
           "id": "w3_6_5",
-          "target": "Incendiu",
-          "phonetic": "in-CEN-diu",
-          "native_meaning": "Fire",
-          "english": "Fire",
-          "example_sentence_target": "Incendiu!",
-          "example_sentence_native": "Fire!"
+          "target": "A pleca",
+          "phonetic": "A pleh-ca",
+          "native_meaning": "To leave",
+          "english": "To leave",
+          "example_sentence_target": "Trenul pleacă acum.",
+          "example_sentence_native": "The train is leaving now.",
+          "example_sentence_phonetic": "Tre-nool ple-a-cuh a-koom."
         }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Emergency Phrases",
+          "context": "Making plans to go to the city center.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Ajutor!",
-              "native": "Help!",
-              "phonetic": "a-ju-TOR"
+              "target": "Mergem în centru. Vii cu noi?",
+              "native": "We are going to the center. Are you coming with us?",
+              "phonetic": "Mer-jem in chen-troo. Vee koo noy?"
             },
             {
               "speaker": "B",
-              "target": "Urgență!",
-              "native": "Emergency!",
-              "phonetic": "ur-GEN-ță"
-            },
-            {
-              "speaker": "A",
-              "target": "Ambulanță!",
-              "native": "Ambulance!",
-              "phonetic": "am-bu-LAN-ță"
+              "target": "Da, vin! Cum mergem?",
+              "native": "Yes, I'm coming! How are we going?",
+              "phonetic": "Da, veen! Koom mer-jem?"
             }
           ]
         },
         {
           "id": "d3_6_2",
-          "context": "Emergency Phrases",
+          "context": "Discussing travel times.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Poliție?",
-              "native": "Police?",
-              "phonetic": "po-li-ȚI-e"
+              "target": "Autobuzul pleacă la ora 9. Ajungem la 9:30.",
+              "native": "The bus leaves at 9. We arrive at 9:30.",
+              "phonetic": "Ow-to-boo-zool ple-a-cuh la o-ra now-uh. A-joon-jem la now-uh tr-ey-zeci."
             },
             {
               "speaker": "B",
-              "target": "Incendiu.",
-              "native": "Fire.",
-              "phonetic": "in-CEN-diu"
-            },
-            {
-              "speaker": "A",
-              "target": "Ajutor.",
-              "native": "Help.",
-              "phonetic": "a-ju-TOR"
+              "target": "Perfect. Voi lua biletul acum.",
+              "native": "Perfect. I will take (buy) the ticket now.",
+              "phonetic": "Per-fect. Voy loo-a bee-let-ool a-koom."
             }
           ]
         }
@@ -1059,187 +837,144 @@
         "fillBlanks": [
           {
             "id": "fb3_6_1",
-            "sentence": "___ means 'Help' in Romanian",
-            "answer": "Ajutor",
-            "hint": "Help"
-          },
-          {
-            "id": "fb3_6_2",
-            "sentence": "___ means 'Emergency' in Romanian",
-            "answer": "Urgență",
-            "hint": "Emergency"
-          },
-          {
-            "id": "fb3_6_3",
-            "sentence": "___ means 'Ambulance' in Romanian",
-            "answer": "Ambulanță",
-            "hint": "Ambulance"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_6_1",
-            "target": "Ajutor",
-            "native": "Help"
-          },
-          {
-            "id": "m3_6_2",
-            "target": "Urgență",
-            "native": "Emergency"
-          },
-          {
-            "id": "m3_6_3",
-            "target": "Ambulanță",
-            "native": "Ambulance"
-          },
-          {
-            "id": "m3_6_4",
-            "target": "Poliție",
-            "native": "Police"
-          },
-          {
-            "id": "m3_6_5",
-            "target": "Incendiu",
-            "native": "Fire"
+            "sentence": "Trenul ___ acum.",
+            "answer": "pleacă",
+            "hint": "The train is leaving now."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_6_1",
-            "question": "What does 'Ajutor' mean?",
-            "options": [
-              "Help",
-              "Emergency",
-              "Ambulance",
-              "Police"
-            ],
-            "correct": 0,
-            "explanation": "'Ajutor' means Help."
+            "question": "What does 'a ajunge' mean?",
+            "options": ["To go", "To come", "To leave", "To arrive"],
+            "correct": 3,
+            "explanation": "'A ajunge' means 'to arrive'."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_6_1",
+            "target": "A merge",
+            "native": "To go"
           },
           {
-            "id": "mc3_6_2",
-            "question": "What does 'Urgență' mean?",
-            "options": [
-              "Emergency",
-              "Ambulance",
-              "Police",
-              "Fire"
-            ],
-            "correct": 0,
-            "explanation": "'Urgență' means Emergency."
+            "id": "m3_6_2",
+            "target": "A lua",
+            "native": "To take"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_6_1",
+            "scrambled": ["la", "Eu", "merg", "piață", "."],
+            "correct": "Eu merg la piață.",
+            "nativeHint": "I am going to the market."
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "In Romanian, 'a lua' (to take) is often used when you mean 'to buy' in specific contexts, like buying a ticket ('a lua un bilet') or getting food to-go.",
+      "pronunciation_tip": "The verb endings change for each person (eu merg, tu mergi, el/ea merge). Pay attention to these small changes as they are very important for meaning.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W3D6"
+        "badge": "W3D6-TravelVerbs"
       }
     },
     {
       "week": 3,
       "day": 7,
-      "title": "Week 3 Day 7: Review: Health",
-      "title_native": "Review: Health",
-      "theme": "Health & Sickness",
+      "title": "Week 3, Day 7: Review",
+      "title_native": "Săptămâna 3, Ziua 7: Recapitulare",
+      "theme": "Getting Around",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w3_7_1",
-          "target": "Cap",
-          "phonetic": "cap",
-          "native_meaning": "Head",
-          "english": "Head",
-          "example_sentence_target": "Mă doare capul.",
-          "example_sentence_native": "My head hurts."
+          "target": "Stânga",
+          "phonetic": "Stun-ga",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Faceți la stânga la următoarea stradă.",
+          "example_sentence_native": "Turn left at the next street.",
+          "example_sentence_phonetic": "Fa-chetz la stun-ga la oor-muh-toar-e-a stra-duh."
         },
         {
           "id": "w3_7_2",
-          "target": "Medic",
-          "phonetic": "ME-dic",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Am nevoie de medic.",
-          "example_sentence_native": "I need a doctor."
+          "target": "Dreapta",
+          "phonetic": "Dreyap-ta",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Este pe partea dreaptă.",
+          "example_sentence_native": "It's on the right side.",
+          "example_sentence_phonetic": "Yes-teh peh par-te-a dreyap-tuh."
         },
         {
           "id": "w3_7_3",
-          "target": "Medicament",
-          "phonetic": "me-di-ca-MENT",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Iau medicamente.",
-          "example_sentence_native": "I take medicine."
+          "target": "Bilet",
+          "phonetic": "Bee-let",
+          "native_meaning": "Ticket",
+          "english": "Ticket",
+          "example_sentence_target": "Am nevoie de un bilet de autobuz.",
+          "example_sentence_native": "I need a bus ticket.",
+          "example_sentence_phonetic": "Am neh-voy-eh deh oon bee-let deh ow-to-booz."
         },
         {
           "id": "w3_7_4",
-          "target": "Spital",
-          "phonetic": "spi-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Spitalul.",
-          "example_sentence_native": "The hospital."
+          "target": "Cât costă?",
+          "phonetic": "Kut kos-tuh?",
+          "native_meaning": "How much does it cost?",
+          "english": "How much does it cost?",
+          "example_sentence_target": "Cât costă un bilet la film?",
+          "example_sentence_native": "How much does a movie ticket cost?",
+          "example_sentence_phonetic": "Kut kos-tuh oon bee-let la film?"
         },
         {
           "id": "w3_7_5",
-          "target": "Ajutor",
-          "phonetic": "a-ju-TOR",
-          "native_meaning": "Help",
-          "english": "Help",
-          "example_sentence_target": "Ajutor!",
-          "example_sentence_native": "Help!"
+          "target": "A merge",
+          "phonetic": "A mer-jeh",
+          "native_meaning": "To go",
+          "english": "To go",
+          "example_sentence_target": "Unde mergem acum?",
+          "example_sentence_native": "Where are we going now?",
+          "example_sentence_phonetic": "Oon-deh mer-jem a-koom?"
         }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Review: Health",
+          "context": "A full dialogue asking for directions and taking a bus.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cap!",
-              "native": "Head!",
-              "phonetic": "cap"
+              "target": "Scuzați-mă, cum pot ajunge la Muzeul Național?",
+              "native": "Excuse me, how can I get to the National Museum?",
+              "phonetic": "Skoo-zahts-muh, koom pot a-joon-jeh la Moo-zeh-ool Na-tsyo-nal?"
             },
             {
               "speaker": "B",
-              "target": "Medic!",
-              "native": "Doctor!",
-              "phonetic": "ME-dic"
-            },
-            {
-              "speaker": "A",
-              "target": "Medicament!",
-              "native": "Medicine!",
-              "phonetic": "me-di-ca-MENT"
+              "target": "Puteți lua autobuzul 381. Stația este la colț, pe dreapta.",
+              "native": "You can take bus 381. The stop is at the corner, on the right.",
+              "phonetic": "Poo-tets loo-a ow-to-boo-zool trey-soo-teh op-zeci shee oo-noo. Sta-tsee-a yes-teh la kolts, peh dreyap-ta."
             }
           ]
         },
         {
           "id": "d3_7_2",
-          "context": "Review: Health",
+          "context": "Inside a taxi.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Spital?",
-              "native": "Hospital?",
-              "phonetic": "spi-TAL"
+              "target": "Vă rog să mă duceți la acest hotel. Este departe?",
+              "native": "Please take me to this hotel. Is it far?",
+              "phonetic": "Vuh rog suh muh doo-chetz la a-chest ho-tel. Yes-teh deh-par-teh?"
             },
             {
               "speaker": "B",
-              "target": "Ajutor.",
-              "native": "Help.",
-              "phonetic": "a-ju-TOR"
-            },
-            {
-              "speaker": "A",
-              "target": "Cap.",
-              "native": "Head.",
-              "phonetic": "cap"
+              "target": "Nu, ajungem în aproximativ 15 minute.",
+              "native": "No, we'll arrive in about 15 minutes.",
+              "phonetic": "Noo, a-joon-jem in a-prok-see-ma-teev cheen-spreh-ze-cheh mee-noo-teh."
             }
           ]
         }
@@ -1248,83 +983,47 @@
         "fillBlanks": [
           {
             "id": "fb3_7_1",
-            "sentence": "___ means 'Head' in Romanian",
-            "answer": "Cap",
-            "hint": "Head"
-          },
-          {
-            "id": "fb3_7_2",
-            "sentence": "___ means 'Doctor' in Romanian",
-            "answer": "Medic",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_7_3",
-            "sentence": "___ means 'Medicine' in Romanian",
-            "answer": "Medicament",
-            "hint": "Medicine"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_7_1",
-            "target": "Cap",
-            "native": "Head"
-          },
-          {
-            "id": "m3_7_2",
-            "target": "Medic",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_7_3",
-            "target": "Medicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_7_4",
-            "target": "Spital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_7_5",
-            "target": "Ajutor",
-            "native": "Help"
+            "sentence": "Stația este la ___, pe dreapta.",
+            "answer": "colț",
+            "hint": "The stop is at the corner, on the right."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc3_7_1",
-            "question": "What does 'Cap' mean?",
-            "options": [
-              "Head",
-              "Doctor",
-              "Medicine",
-              "Hospital"
-            ],
-            "correct": 0,
-            "explanation": "'Cap' means Head."
+            "question": "Which verb means 'to leave'?",
+            "options": ["A veni", "A ajunge", "A pleca", "A lua"],
+            "correct": 2,
+            "explanation": "'A pleca' means 'to leave'. 'A veni' is to come, 'a ajunge' is to arrive, 'a lua' is to take."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m3_7_1",
+            "target": "Stație",
+            "native": "Station/Stop"
           },
           {
-            "id": "mc3_7_2",
-            "question": "What does 'Medic' mean?",
-            "options": [
-              "Doctor",
-              "Medicine",
-              "Hospital",
-              "Help"
-            ],
-            "correct": 0,
-            "explanation": "'Medic' means Doctor."
+            "id": "m3_7_2",
+            "target": "Lângă",
+            "native": "Next to"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss3_7_1",
+            "scrambled": ["autobuzul", "Puteți", "lua", "381", "."],
+            "correct": "Puteți lua autobuzul 381.",
+            "nativeHint": "You can take bus 381."
           }
         ]
       },
-      "cultural_note": "Romania has both public hospitals and private clinics. It's common to bring a small gift when visiting someone in hospital.",
-      "pronunciation_tip": "In Romanian, 'ce' and 'ci' are pronounced 'che' and 'chi'. 'ge' and 'gi' become 'je' and 'ji'. For example: 'medicament' is said 'medi-ca-MENT'.",
+      "cultural_note": "Review: Public transportation is the most common way to get around major cities. For inter-city travel, trains (run by CFR) are a popular and scenic option.",
+      "pronunciation_tip": "Review: Remember the 'ă', 'î', 'â', 'ș', and 'ț' sounds. They are key to being understood in Romanian. Practice them daily!",
       "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W3D7"
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W3-Review"
       }
     }
   ]
