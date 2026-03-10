@@ -1,0 +1,771 @@
+
+{
+  "week": 2,
+  "path": "survival",
+  "targetLanguage": "Serbian",
+  "nativeLanguage": "English",
+  "days": [
+    {
+      "week": 2,
+      "day": 1,
+      "title": "Week 2, Day 1: Basic Directions",
+      "title_native": "Nedelja 2, Dan 1: Osnovni pravci",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w2_1_1",
+          "target": "Levo",
+          "phonetic": "Le-vo",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Skrenite levo kod semafora.",
+          "example_sentence_native": "Turn left at the traffic light.",
+          "example_sentence_phonetic": "Skre-ni-te le-vo kod se-ma-fo-ra."
+        },
+        {
+          "id": "w2_1_2",
+          "target": "Desno",
+          "phonetic": "Des-no",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Apoteka je sa desne strane.",
+          "example_sentence_native": "The pharmacy is on the right side.",
+          "example_sentence_phonetic": "A-po-te-ka ye sa des-ne stra-ne."
+        },
+        {
+          "id": "w2_1_3",
+          "target": "Pravo",
+          "phonetic": "Pra-vo",
+          "native_meaning": "Straight",
+          "english": "Straight",
+          "example_sentence_target": "Idite pravo do kraja ulice.",
+          "example_sentence_native": "Go straight to the end of the street.",
+          "example_sentence_phonetic": "I-di-te pra-vo do kra-ya u-li-tse."
+        },
+        {
+          "id": "w2_1_4",
+          "target": "Ovde",
+          "phonetic": "Ov-de",
+          "native_meaning": "Here",
+          "english": "Here",
+          "example_sentence_target": "Sačekajte me ovde.",
+          "example_sentence_native": "Wait for me here.",
+          "example_sentence_phonetic": "Sa-che-kay-te me ov-de."
+        },
+        {
+          "id": "w2_1_5",
+          "target": "Tamo",
+          "phonetic": "Ta-mo",
+          "native_meaning": "There",
+          "english": "There",
+          "example_sentence_target": "Restoran je tamo, preko puta.",
+          "example_sentence_native": "The restaurant is there, across the street.",
+          "example_sentence_phonetic": "Res-to-ran ye ta-mo, pre-ko pu-ta."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_1_1",
+          "context": "Asking a stranger for directions.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je pošta?",
+              "native": "Excuse me, where is the post office?",
+              "phonetic": "Iz-vi-ni-te, gde ye posh-ta?"
+            },
+            {
+              "speaker": "B",
+              "target": "Idite pravo, pa onda desno. Pošta je tamo.",
+              "native": "Go straight, and then right. The post office is there.",
+              "phonetic": "I-di-te pra-vo, pa on-da des-no. Posh-ta ye ta-mo."
+            }
+          ]
+        },
+        {
+          "id": "d2_1_2",
+          "context": "Confirming a location.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Da li je banka ovde?",
+              "native": "Is the bank here?",
+              "phonetic": "Da li ye ban-ka ov-de?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ne, banka nije ovde. Banka je tamo, levo.",
+              "native": "No, the bank is not here. The bank is there, to the left.",
+              "phonetic": "Ne, ban-ka ni-ye ov-de. Ban-ka ye ta-mo, le-vo."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb2_1_1",
+            "sentence": "Idite ___ do kraja ulice.",
+            "answer": "pravo",
+            "hint": "Go straight to the end of the street."
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc2_1_1",
+            "question": "What does 'Levo' mean?",
+            "options": ["Right", "Left", "Straight", "Here"],
+            "correct": 1,
+            "explanation": "'Levo' means Left in Serbian."
+          }
+        ],
+        "matching": [
+          { "id": "m2_1_1", "target": "Desno", "native": "Right" },
+          { "id": "m2_1_2", "target": "Ovde", "native": "Here" },
+          { "id": "m2_1_3", "target": "Tamo", "native": "There" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_1_1",
+            "scrambled": ["je", "gde", "pošta", "?"],
+            "correct": "gde je pošta ?",
+            "nativeHint": "where is the post office?"
+          }
+        ]
+      },
+      "cultural_note": "When asking for directions in Serbia, people are generally friendly and willing to help, though they may not speak English. Using hand gestures along with basic Serbian words can be very effective.",
+      "pronunciation_tip": "The 'e' in 'Levo' and 'Desno' is a short, clear sound, similar to the 'e' in the English word 'bed'. Avoid dragging it out.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D1-Directions" }
+    },
+    {
+      "week": 2,
+      "day": 2,
+      "title": "Week 2, Day 2: Asking 'Where is...?'",
+      "title_native": "Nedelja 2, Dan 2: Pitanje 'Gde je...?'",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w2_2_1",
+          "target": "Gde je...?",
+          "phonetic": "Gde ye...?",
+          "native_meaning": "Where is...?",
+          "english": "Where is...?",
+          "example_sentence_target": "Gde je najbliža stanica?",
+          "example_sentence_native": "Where is the nearest station?",
+          "example_sentence_phonetic": "Gde ye nay-bli-zha sta-ni-tsa?"
+        },
+        {
+          "id": "w2_2_2",
+          "target": "Stanica",
+          "phonetic": "Sta-ni-tsa",
+          "native_meaning": "Station (bus/train)",
+          "english": "Station",
+          "example_sentence_target": "Autobuska stanica je blizu.",
+          "example_sentence_native": "The bus station is near.",
+          "example_sentence_phonetic": "A-u-to-bus-ka sta-ni-tsa ye bli-zu."
+        },
+        {
+          "id": "w2_2_3",
+          "target": "Ulica",
+          "phonetic": "U-li-tsa",
+          "native_meaning": "Street",
+          "english": "Street",
+          "example_sentence_target": "U kojoj ulici je muzej?",
+          "example_sentence_native": "In which street is the museum?",
+          "example_sentence_phonetic": "U ko-yoy u-li-tsi ye mu-zey?"
+        },
+        {
+          "id": "w2_2_4",
+          "target": "Blizu",
+          "phonetic": "Bli-zu",
+          "native_meaning": "Near / Close",
+          "english": "Near",
+          "example_sentence_target": "Da li je blizu?",
+          "example_sentence_native": "Is it near?",
+          "example_sentence_phonetic": "Da li ye bli-zu?"
+        },
+        {
+          "id": "w2_2_5",
+          "target": "Daleko",
+          "phonetic": "Da-le-ko",
+          "native_meaning": "Far",
+          "english": "Far",
+          "example_sentence_target": "Aerodrom je daleko odavde.",
+          "example_sentence_native": "The airport is far from here.",
+          "example_sentence_phonetic": "A-e-ro-drom ye da-le-ko o-dav-de."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_2_1",
+          "context": "Asking if a place is near or far.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je hotel 'Moskva'?",
+              "native": "Excuse me, where is the hotel 'Moskva'?",
+              "phonetic": "Iz-vi-ni-te, gde ye ho-tel Mos-kva?"
+            },
+            {
+              "speaker": "B",
+              "target": "Nije daleko. Idite pravo ovom ulicom.",
+              "native": "It's not far. Go straight down this street.",
+              "phonetic": "Ni-ye da-le-ko. I-di-te pra-vo o-vom u-li-tsom."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [{ "id": "fb2_2_1", "sentence": "___ je najbliža apoteka?", "answer": "Gde", "hint": "Where is the nearest pharmacy?" }],
+        "multipleChoice": [
+          {
+            "id": "mc2_2_1",
+            "question": "What is the opposite of 'Blizu' (Near)?",
+            "options": ["Levo", "Desno", "Daleko", "Pravo"],
+            "correct": 2,
+            "explanation": "'Daleko' means Far, which is the opposite of 'Blizu' (Near)."
+          }
+        ],
+        "matching": [
+          { "id": "m2_2_1", "target": "Stanica", "native": "Station" },
+          { "id": "m2_2_2", "target": "Ulica", "native": "Street" },
+          { "id": "m2_2_3", "target": "Daleko", "native": "Far" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_2_1",
+            "scrambled": ["je", "blizu", "stanica", "autobuska", "."],
+            "correct": "autobuska stanica je blizu .",
+            "nativeHint": "the bus station is near."
+          }
+        ]
+      },
+      "cultural_note": "Street names in Serbia often end with '-a' or '-ova'/'-eva', like 'Knez Mihailova ulica'. It's helpful to know the full name when asking for directions.",
+      "pronunciation_tip": "The 'c' in 'Stanica' and 'Ulica' is pronounced like 'ts' in 'cats'. It's a sharp, distinct sound.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D2-WhereIs" }
+    },
+    {
+      "week": 2,
+      "day": 3,
+      "title": "Week 2, Day 3: Landmarks",
+      "title_native": "Nedelja 2, Dan 3: Znamenitosti",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w2_3_1",
+          "target": "Banka",
+          "phonetic": "Ban-ka",
+          "native_meaning": "Bank",
+          "english": "Bank",
+          "example_sentence_target": "Gde je najbliža banka?",
+          "example_sentence_native": "Where is the nearest bank?",
+          "example_sentence_phonetic": "Gde ye nay-bli-zha ban-ka?"
+        },
+        {
+          "id": "w2_3_2",
+          "target": "Hotel",
+          "phonetic": "Ho-tel",
+          "native_meaning": "Hotel",
+          "english": "Hotel",
+          "example_sentence_target": "Moj hotel je u centru grada.",
+          "example_sentence_native": "My hotel is in the city center.",
+          "example_sentence_phonetic": "Moy ho-tel ye u tsen-tru gra-da."
+        },
+        {
+          "id": "w2_3_3",
+          "target": "Restoran",
+          "phonetic": "Res-to-ran",
+          "native_meaning": "Restaurant",
+          "english": "Restaurant",
+          "example_sentence_target": "Tražim dobar restoran.",
+          "example_sentence_native": "I am looking for a good restaurant.",
+          "example_sentence_phonetic": "Tra-zhim do-bar res-to-ran."
+        },
+        {
+          "id": "w2_3_4",
+          "target": "Bolnica",
+          "phonetic": "Bol-ni-tsa",
+          "native_meaning": "Hospital",
+          "english": "Hospital",
+          "example_sentence_target": "Bolnica je hitno potrebna!",
+          "example_sentence_native": "A hospital is urgently needed!",
+          "example_sentence_phonetic": "Bol-ni-tsa ye hit-no pot-reb-na!"
+        },
+        {
+          "id": "w2_3_5",
+          "target": "Apoteka",
+          "phonetic": "A-po-te-ka",
+          "native_meaning": "Pharmacy",
+          "english": "Pharmacy",
+          "example_sentence_target": "Da li ima apoteka u blizini?",
+          "example_sentence_native": "Is there a pharmacy nearby?",
+          "example_sentence_phonetic": "Da li i-ma a-po-te-ka u bli-zi-ni?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_3_1",
+          "context": "Looking for a pharmacy.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je apoteka?",
+              "native": "Excuse me, where is the pharmacy?",
+              "phonetic": "Iz-vi-ni-te, gde ye a-po-te-ka?"
+            },
+            {
+              "speaker": "B",
+              "target": "Pravo, pa druga ulica desno. Tamo je.",
+              "native": "Straight, then the second street on the right. It's there.",
+              "phonetic": "Pra-vo, pa dru-ga u-li-tsa des-no. Ta-mo ye."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [{ "id": "fb2_3_1", "sentence": "Tražim dobar ___.", "answer": "restoran", "hint": "I am looking for a good restaurant." }],
+        "multipleChoice": [
+          {
+            "id": "mc2_3_1",
+            "question": "If you are sick, where do you need to go?",
+            "options": ["Banka", "Hotel", "Bolnica", "Restoran"],
+            "correct": 2,
+            "explanation": "'Bolnica' means Hospital."
+          }
+        ],
+        "matching": [
+          { "id": "m2_3_1", "target": "Banka", "native": "Bank" },
+          { "id": "m2_3_2", "target": "Hotel", "native": "Hotel" },
+          { "id": "m2_3_3", "target": "Apoteka", "native": "Pharmacy" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_3_1",
+            "scrambled": ["je", "hotel", "moj", "blizu", "."],
+            "correct": "moj hotel je blizu .",
+            "nativeHint": "my hotel is near."
+          }
+        ]
+      },
+      "cultural_note": "Pharmacies ('Apoteka') in Serbia are easily recognizable by a green cross symbol. They are a good first stop for minor health issues and advice.",
+      "pronunciation_tip": "In 'Banka', the 'a' sound is open and clear, like the 'a' in 'father'. Make sure to pronounce both 'a's equally.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D3-Landmarks" }
+    },
+    {
+      "week": 2,
+      "day": 4,
+      "title": "Week 2, Day 4: Transportation",
+      "title_native": "Nedelja 2, Dan 4: Prevoz",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w2_4_1",
+          "target": "Autobus",
+          "phonetic": "A-u-to-bus",
+          "native_meaning": "Bus",
+          "english": "Bus",
+          "example_sentence_target": "Kada polazi sledeći autobus?",
+          "example_sentence_native": "When does the next bus leave?",
+          "example_sentence_phonetic": "Ka-da po-la-zi sle-de-chi a-u-to-bus?"
+        },
+        {
+          "id": "w2_4_2",
+          "target": "Taksi",
+          "phonetic": "Tak-si",
+          "native_meaning": "Taxi",
+          "english": "Taxi",
+          "example_sentence_target": "Molim vas, pozovite mi taksi.",
+          "example_sentence_native": "Please, call me a taxi.",
+          "example_sentence_phonetic": "Mo-lim vas, po-zo-vi-te mi tak-si."
+        },
+        {
+          "id": "w2_4_3",
+          "target": "Voz",
+          "phonetic": "Voz",
+          "native_meaning": "Train",
+          "english": "Train",
+          "example_sentence_target": "Voz za Novi Sad kasni.",
+          "example_sentence_native": "The train to Novi Sad is late.",
+          "example_sentence_phonetic": "Voz za No-vi Sad kas-ni."
+        },
+        {
+          "id": "w2_4_4",
+          "target": "Karta",
+          "phonetic": "Kar-ta",
+          "native_meaning": "Ticket",
+          "english": "Ticket",
+          "example_sentence_target": "Molim jednu kartu do Beograda.",
+          "example_sentence_native": "One ticket to Belgrade, please.",
+          "example_sentence_phonetic": "Mo-lim yed-nu kar-tu do Be-o-gra-da."
+        },
+        {
+          "id": "w2_4_5",
+          "target": "Aerodrom",
+          "phonetic": "A-e-ro-drom",
+          "native_meaning": "Airport",
+          "english": "Airport",
+          "example_sentence_target": "Kako da stignem do aerodroma?",
+          "example_sentence_native": "How do I get to the airport?",
+          "example_sentence_phonetic": "Ka-ko da stig-nem do a-e-ro-dro-ma?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_4_1",
+          "context": "Buying a bus ticket.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan. Molim jednu kartu za Niš.",
+              "native": "Good day. One ticket to Niš, please.",
+              "phonetic": "Do-bar dan. Mo-lim yed-nu kar-tu za Nish."
+            },
+            {
+              "speaker": "B",
+              "target": "Izvolite. To je 800 dinara.",
+              "native": "Here you go. That's 800 dinars.",
+              "phonetic": "Iz-vo-li-te. To ye o-sam-sto di-na-ra."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [{ "id": "fb2_4_1", "sentence": "Molim vas, pozovite mi ___.", "answer": "taksi", "hint": "Please, call me a taxi." }],
+        "multipleChoice": [
+          {
+            "id": "mc2_4_1",
+            "question": "What do you need to buy to ride a train?",
+            "options": ["Voz", "Karta", "Taksi", "Autobus"],
+            "correct": 1,
+            "explanation": "'Karta' means Ticket."
+          }
+        ],
+        "matching": [
+          { "id": "m2_4_1", "target": "Autobus", "native": "Bus" },
+          { "id": "m2_4_2", "target": "Voz", "native": "Train" },
+          { "id": "m2_4_3", "target": "Aerodrom", "native": "Airport" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_4_1",
+            "scrambled": ["do", "stignem", "kako", "aerodroma", "da", "?"],
+            "correct": "kako da stignem do aerodroma ?",
+            "nativeHint": "how do I get to the airport?"
+          }
+        ]
+      },
+      "cultural_note": "In Serbian cities, public transport like buses and trams is common. You can often buy tickets at a kiosk ('trafika') or sometimes directly from the driver.",
+      "pronunciation_tip": "The 'r' in 'Karta' and 'Aerodrom' is a rolled 'r', similar to Spanish. Practice flicking the tip of your tongue against the roof of your mouth.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D4-Transport" }
+    },
+    {
+      "week": 2,
+      "day": 5,
+      "title": "Week 2, Day 5: Numbers 6-10",
+      "title_native": "Nedelja 2, Dan 5: Brojevi 6-10",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w2_5_1",
+          "target": "Šest",
+          "phonetic": "Shest",
+          "native_meaning": "Six",
+          "english": "Six",
+          "example_sentence_target": "Imam šest jabuka.",
+          "example_sentence_native": "I have six apples.",
+          "example_sentence_phonetic": "I-mam shest ya-bu-ka."
+        },
+        {
+          "id": "w2_5_2",
+          "target": "Sedam",
+          "phonetic": "Se-dam",
+          "native_meaning": "Seven",
+          "english": "Seven",
+          "example_sentence_target": "Sedam dana u nedelji.",
+          "example_sentence_native": "Seven days in a week.",
+          "example_sentence_phonetic": "Se-dam da-na u ne-del-yi."
+        },
+        {
+          "id": "w2_5_3",
+          "target": "Osam",
+          "phonetic": "O-sam",
+          "native_meaning": "Eight",
+          "english": "Eight",
+          "example_sentence_target": "Sastanak je u osam sati.",
+          "example_sentence_native": "The meeting is at eight o'clock.",
+          "example_sentence_phonetic": "Sa-sta-nak ye u o-sam sa-ti."
+        },
+        {
+          "id": "w2_5_4",
+          "target": "Devet",
+          "phonetic": "De-vet",
+          "native_meaning": "Nine",
+          "english": "Nine",
+          "example_sentence_target": "Ovo košta devet evra.",
+          "example_sentence_native": "This costs nine euros.",
+          "example_sentence_phonetic": "O-vo kosh-ta de-vet ev-ra."
+        },
+        {
+          "id": "w2_5_5",
+          "target": "Deset",
+          "phonetic": "De-set",
+          "native_meaning": "Ten",
+          "english": "Ten",
+          "example_sentence_target": "Molim vas, deset ćevapa.",
+          "example_sentence_native": "Ten ćevapi, please.",
+          "example_sentence_phonetic": "Mo-lim vas, de-set che-va-pa."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_5_1",
+          "context": "At the market.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Koliko košta ovo? ",
+              "native": "How much does this cost?",
+              "phonetic": "Ko-li-ko kosh-ta o-vo?"
+            },
+            {
+              "speaker": "B",
+              "target": "To je deset evra.",
+              "native": "That is ten euros.",
+              "phonetic": "To ye de-set ev-ra."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [{ "id": "fb2_5_1", "sentence": "Sastanak je u ___ sati.", "answer": "osam", "hint": "The meeting is at eight o'clock." }],
+        "multipleChoice": [
+          {
+            "id": "mc2_5_1",
+            "question": "Which number comes after 'Sedam' (Seven)?",
+            "options": ["Šest", "Osam", "Devet", "Deset"],
+            "correct": 1,
+            "explanation": "'Osam' (Eight) comes after 'Sedam' (Seven)."
+          }
+        ],
+        "matching": [
+          { "id": "m2_5_1", "target": "Šest", "native": "Six" },
+          { "id": "m2_5_2", "target": "Devet", "native": "Nine" },
+          { "id": "m2_5_3", "target": "Deset", "native": "Ten" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_5_1",
+            "scrambled": ["dana", "u", "sedam", "nedelji", "."],
+            "correct": "sedam dana u nedelji .",
+            "nativeHint": "seven days in a week."
+          }
+        ]
+      },
+      "cultural_note": "When ordering 'ćevapi', a popular grilled meat dish, it's common to specify the number of pieces you want, typically five ('pet') or ten ('deset').",
+      "pronunciation_tip": "The 'š' in 'Šest' is pronounced like 'sh' in 'shoe'. It's a soft sound.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D5-Numbers6-10" }
+    },
+    {
+      "week": 2,
+      "day": 6,
+      "title": "Week 2, Day 6: Review Day",
+      "title_native": "Nedelja 2, Dan 6: Dan za ponavljanje",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w2_6_1",
+          "target": "Levo",
+          "phonetic": "Le-vo",
+          "native_meaning": "Left",
+          "english": "Left",
+          "example_sentence_target": "Skrenite levo.",
+          "example_sentence_native": "Turn left.",
+          "example_sentence_phonetic": "Skre-ni-te le-vo."
+        },
+        {
+          "id": "w2_6_2",
+          "target": "Desno",
+          "phonetic": "Des-no",
+          "native_meaning": "Right",
+          "english": "Right",
+          "example_sentence_target": "Idite desno.",
+          "example_sentence_native": "Go right.",
+          "example_sentence_phonetic": "I-di-te des-no."
+        },
+        {
+          "id": "w2_6_3",
+          "target": "Gde je...?",
+          "phonetic": "Gde ye...?",
+          "native_meaning": "Where is...?",
+          "english": "Where is...?",
+          "example_sentence_target": "Gde je restoran?",
+          "example_sentence_native": "Where is the restaurant?",
+          "example_sentence_phonetic": "Gde ye res-to-ran?"
+        },
+        {
+          "id": "w2_6_4",
+          "target": "Karta",
+          "phonetic": "Kar-ta",
+          "native_meaning": "Ticket",
+          "english": "Ticket",
+          "example_sentence_target": "Molim jednu kartu.",
+          "example_sentence_native": "One ticket, please.",
+          "example_sentence_phonetic": "Mo-lim yed-nu kar-tu."
+        },
+        {
+          "id": "w2_6_5",
+          "target": "Sedam",
+          "phonetic": "Se-dam",
+          "native_meaning": "Seven",
+          "english": "Seven",
+          "example_sentence_target": "To je sedam evra.",
+          "example_sentence_native": "That is seven euros.",
+          "example_sentence_phonetic": "To ye se-dam ev-ra."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_6_1",
+          "context": "Asking for directions to the bus station.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, gde je autobuska stanica?",
+              "native": "Excuse me, where is the bus station?",
+              "phonetic": "Iz-vi-ni-te, gde ye a-u-to-bus-ka sta-ni-tsa?"
+            },
+            {
+              "speaker": "B",
+              "target": "Idite pravo, pa levo. Nije daleko.",
+              "native": "Go straight, then left. It is not far.",
+              "phonetic": "I-di-te pra-vo, pa le-vo. Ni-ye da-le-ko."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [{ "id": "fb2_6_1", "sentence": "Molim jednu ___ za voz.", "answer": "kartu", "hint": "One ticket for the train, please." }],
+        "multipleChoice": [
+          {
+            "id": "mc2_6_1",
+            "question": "How do you ask 'Where is the hotel?'",
+            "options": ["Gde je hotel?", "Šta je hotel?", "Hvala, hotel.", "Dobar dan, hotel."],
+            "correct": 0,
+            "explanation": "'Gde je hotel?' is the correct way to ask 'Where is the hotel?'"
+          }
+        ],
+        "matching": [
+          { "id": "m2_6_1", "target": "Levo", "native": "Left" },
+          { "id": "m2_6_2", "target": "Pravo", "native": "Straight" },
+          { "id": "m2_6_3", "target": "Daleko", "native": "Far" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_6_1",
+            "scrambled": ["je", "restoran", "tamo", "desno", "."],
+            "correct": "restoran je tamo desno .",
+            "nativeHint": "the restaurant is there on the right."
+          }
+        ]
+      },
+      "cultural_note": "Reviewing basic numbers and directions is crucial for daily navigation. Try to practice these phrases out loud when you are walking around to build confidence.",
+      "pronunciation_tip": "Focus on the rhythm of Serbian sentences. Questions starting with 'Gde' often have a rising intonation at the end.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D6-Review" }
+    },
+    {
+      "week": 2,
+      "day": 7,
+      "title": "Week 2, Day 7: Combination Practice",
+      "title_native": "Nedelja 2, Dan 7: Kombinovana vežba",
+      "theme": "Directions & Getting Around",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [],
+      "dialogues": [
+        {
+          "id": "d2_7_1",
+          "context": "A full conversation about getting to the airport.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan. Kako da stignem do aerodroma?",
+              "native": "Good day. How do I get to the airport?",
+              "phonetic": "Do-bar dan. Ka-ko da stig-nem do a-e-ro-dro-ma?"
+            },
+            {
+              "speaker": "B",
+              "target": "Aerodrom je daleko. Morate uzeti autobus ili taksi.",
+              "native": "The airport is far. You must take a bus or a taxi.",
+              "phonetic": "A-e-ro-drom ye da-le-ko. Mo-ra-te u-ze-ti a-u-to-bus i-li tak-si."
+            }
+          ]
+        },
+        {
+          "id": "d2_7_2",
+          "context": "At the train station.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Molim jednu kartu za voz. Peron šest?",
+              "native": "One ticket for the train, please. Platform six?",
+              "phonetic": "Mo-lim yed-nu kar-tu za voz. Pe-ron shest?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, peron šest. Voz polazi u osam sati.",
+              "native": "Yes, platform six. The train leaves at eight o'clock.",
+              "phonetic": "Da, pe-ron shest. Voz po-la-zi u o-sam sa-ti."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [{ "id": "fb2_7_1", "sentence": "Voz polazi u ___ sati.", "answer": "osam", "hint": "The train leaves at eight o'clock." }],
+        "multipleChoice": [
+          {
+            "id": "mc2_7_1",
+            "question": "If something is 'daleko', what should you probably take?",
+            "options": ["Pravo", "Autobus", "Izvinite", "Hvala"],
+            "correct": 1,
+            "explanation": "If something is far ('daleko'), you should take a bus ('autobus') or taxi."
+          }
+        ],
+        "matching": [
+          { "id": "m2_7_1", "target": "Taksi", "native": "Taxi" },
+          { "id": "m2_7_2", "target": "Aerodrom", "native": "Airport" },
+          { "id": "m2_7_3", "target": "Devet", "native": "Nine" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_7_1",
+            "scrambled": ["gde", "je", "hotel", "najbliži", "?"],
+            "correct": "gde je najbliži hotel ?",
+            "nativeHint": "where is the nearest hotel?"
+          }
+        ]
+      },
+      "cultural_note": "Using 'Molim' (please) and 'Hvala' (thank you) in every interaction, especially when asking for help or making purchases, is a sign of respect and will be greatly appreciated.",
+      "pronunciation_tip": "Try reading the dialogues out loud. Pay attention to how the words flow together in a natural sentence, not just as individual vocabulary items.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D7-SurvivalWeek2" }
+    }
+  ]
+}
