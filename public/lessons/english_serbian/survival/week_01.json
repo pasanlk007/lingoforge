@@ -1,0 +1,374 @@
+{
+  "week": 1,
+  "path": "survival",
+  "targetLanguage": "Serbian",
+  "nativeLanguage": "English",
+  "days": [
+    {
+      "week": 1,
+      "day": 1,
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Nedelja 1, Dan 1: Osnovni pozdravi",
+      "theme": "Greetings",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_1_1", "target": "Zdravo", "phonetic": "ZDRAH-voh", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "Zdravo, kako si?", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "ZDRAH-voh, KAH-koh see?" },
+        { "id": "w1_1_2", "target": "Doviđenja", "phonetic": "doh-vee-JEH-nyah", "native_meaning": "Goodbye", "english": "Goodbye", "example_sentence_target": "Bilo je lepo. Doviđenja!", "example_sentence_native": "It was nice. Goodbye!", "example_sentence_phonetic": "BEE-loh yeh LEH-poh. doh-vee-JEH-nyah!" },
+        { "id": "w1_1_3", "target": "Hvala", "phonetic": "HVAH-lah", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Hvala za pomoć.", "example_sentence_native": "Thank you for the help.", "example_sentence_phonetic": "HVAH-lah zah POH-motch." },
+        { "id": "w1_1_4", "target": "Da", "phonetic": "dah", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Da, razumem.", "example_sentence_native": "Yes, I understand.", "example_sentence_phonetic": "dah, rah-ZOO-mem." },
+        { "id": "w1_1_5", "target": "Ne", "phonetic": "neh", "native_meaning": "No", "english": "No", "example_sentence_target": "Ne, hvala.", "example_sentence_native": "No, thank you.", "example_sentence_phonetic": "neh, HVAH-lah." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Meeting someone for the first time.",
+          "lines": [
+            { "speaker": "A", "target": "Zdravo, ja sam Ana.", "native": "Hello, I am Ana.", "phonetic": "ZDRAH-voh, yah sahm AH-nah." },
+            { "speaker": "B", "target": "Zdravo Ana. Ja sam Marko.", "native": "Hello Ana. I am Marko.", "phonetic": "ZDRAH-voh AH-nah. yah sahm MAR-koh." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "Zdravo", "native": "Hello" },
+          { "id": "m1_1_2", "target": "Doviđenja", "native": "Goodbye" },
+          { "id": "m1_1_3", "target": "Hvala", "native": "Thank you" }
+        ],
+        "multipleChoice": [
+            {
+                "id": "mc1_1_1",
+                "question": "How do you say 'Yes' in Serbian?",
+                "options": ["Ne", "Hvala", "Da", "Zdravo"],
+                "correct": 2,
+                "explanation": "'Da' means 'Yes' in Serbian."
+            }
+        ],
+        "fillBlanks": [
+            {
+                "id": "fb1_1_1",
+                "sentence": "___, kako si?",
+                "answer": "Zdravo",
+                "hint": "How to greet someone"
+            }
+        ],
+        "sentenceScramble": [
+            {
+                "id": "ss1_1_1",
+                "scrambled": ["pomoć", "za", "Hvala"],
+                "correct": "Hvala za pomoć.",
+                "nativeHint": "Thank you for the help."
+            }
+        ]
+      },
+      "cultural_note": "In Serbia, a firm handshake is common when meeting people. It's polite to maintain eye contact.",
+      "pronunciation_tip": "The 'H' in 'Hvala' is pronounced like the 'ch' in the Scottish 'loch', a sound from the back of your throat.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D1-Serbian-Greetings" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Week 1, Day 2: Politeness",
+      "title_native": "Nedelja 1, Dan 2: Učtivost",
+      "theme": "Politeness",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_2_1", "target": "Molim", "phonetic": "MOH-leem", "native_meaning": "Please / You're welcome", "english": "Please / You're welcome", "example_sentence_target": "Molim vas, jednu kafu.", "example_sentence_native": "One coffee, please.", "example_sentence_phonetic": "MOH-leem vahs, YED-noo KAH-foo." },
+        { "id": "w1_2_2", "target": "Izvinite", "phonetic": "EEZ-vee-nee-teh", "native_meaning": "Excuse me / Sorry", "english": "Excuse me / Sorry", "example_sentence_target": "Izvinite, gde je toalet?", "example_sentence_native": "Excuse me, where is the toilet?", "example_sentence_phonetic": "EEZ-vee-nee-teh, gdyeh yeh TOH-ah-let?" },
+        { "id": "w1_2_3", "target": "Dobro jutro", "phonetic": "DOH-broh YOO-troh", "native_meaning": "Good morning", "english": "Good morning", "example_sentence_target": "Dobro jutro, komšija.", "example_sentence_native": "Good morning, neighbor.", "example_sentence_phonetic": "DOH-broh YOO-troh, KOM-shee-yah." },
+        { "id": "w1_2_4", "target": "Dobar dan", "phonetic": "DOH-bar dahn", "native_meaning": "Good day", "english": "Good day", "example_sentence_target": "Dobar dan, želim da kupim hleb.", "example_sentence_native": "Good day, I want to buy bread.", "example_sentence_phonetic": "DOH-bar dahn, ZHEH-leem dah KOO-peem hleb." },
+        { "id": "w1_2_5", "target": "Dobro veče", "phonetic": "DOH-broh VEH-cheh", "native_meaning": "Good evening", "english": "Good evening", "example_sentence_target": "Dobro veče, imate li slobodan sto?", "example_sentence_native": "Good evening, do you have a free table?", "example_sentence_phonetic": "DOH-broh VEH-cheh, ee-MAH-teh lee SLOH-boh-dahn stoh?" }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "Entering a shop in the morning.",
+          "lines": [
+            { "speaker": "A", "target": "Dobro jutro.", "native": "Good morning.", "phonetic": "DOH-broh YOO-troh." },
+            { "speaker": "B", "target": "Dobro jutro. Izvolite?", "native": "Good morning. How can I help you?", "phonetic": "DOH-broh YOO-troh. Eez-voh-lee-teh?" }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+            { "id": "m1_2_1", "target": "Molim", "native": "Please" },
+            { "id": "m1_2_2", "target": "Izvinite", "native": "Excuse me" },
+            { "id": "m1_2_3", "target": "Dobar dan", "native": "Good day" }
+        ],
+        "multipleChoice": [
+            {
+                "id": "mc1_2_1",
+                "question": "What is 'Good evening' in Serbian?",
+                "options": ["Dobro jutro", "Dobar dan", "Dobro veče", "Doviđenja"],
+                "correct": 2,
+                "explanation": "'Dobro veče' is the correct greeting for the evening."
+            }
+        ],
+        "fillBlanks": [
+             {
+                "id": "fb1_2_1",
+                "sentence": "___, gde je stanica?",
+                "answer": "Izvinite",
+                "hint": "How to get someone's attention politely"
+            }
+        ],
+        "sentenceScramble": [
+            {
+                "id": "ss1_2_1",
+                "scrambled": ["jutro", "Dobro", "komšija."],
+                "correct": "Dobro jutro komšija.",
+                "nativeHint": "Good morning neighbor."
+            }
+        ]
+      },
+      "cultural_note": "'Molim' is a very versatile word. It can mean 'please', 'you're welcome', 'pardon?', or 'here you are'. Context is key!",
+      "pronunciation_tip": "In Serbian, every letter is pronounced. There are no silent letters, which makes reading quite straightforward once you know the alphabet.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D2-Serbian-Politeness" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Week 1, Day 3: Introductions",
+      "title_native": "Nedelja 1, Dan 3: Predstavljanje",
+      "theme": "Introductions",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_3_1", "target": "Ja sam...", "phonetic": "yah sahm", "native_meaning": "I am...", "english": "I am...", "example_sentence_target": "Ja sam student.", "example_sentence_native": "I am a student.", "example_sentence_phonetic": "yah sahm STOO-dent." },
+        { "id": "w1_3_2", "target": "Zovem se...", "phonetic": "ZOH-vem seh", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Zovem se David.", "example_sentence_native": "My name is David.", "example_sentence_phonetic": "ZOH-vem seh DAH-vid." },
+        { "id": "w1_3_3", "target": "Kako se ti zoveš?", "phonetic": "KAH-koh seh tee ZOH-vesh?", "native_meaning": "What is your name? (informal)", "english": "What is your name? (informal)", "example_sentence_target": "Zdravo, ja sam Marija. Kako se ti zoveš?", "example_sentence_native": "Hello, I'm Maria. What is your name?", "example_sentence_phonetic": "ZDRAH-voh, yah sahm MAH-ree-yah. KAH-koh seh tee ZOH-vesh?" },
+        { "id": "w1_3_4", "target": "Kako se Vi zovete?", "phonetic": "KAH-koh seh vee ZOH-veh-teh?", "native_meaning": "What is your name? (formal)", "english": "What is your name? (formal)", "example_sentence_target": "Dobar dan. Kako se Vi zovete?", "example_sentence_native": "Good day. What is your name?", "example_sentence_phonetic": "DOH-bar dahn. KAH-koh seh vee ZOH-veh-teh?" },
+        { "id": "w1_3_5", "target": "Drago mi je", "phonetic": "DRAH-goh mee yeh", "native_meaning": "Nice to meet you", "english": "Nice to meet you", "example_sentence_target": "Drago mi je, Marko.", "example_sentence_native": "Nice to meet you, Marko.", "example_sentence_phonetic": "DRAH-goh mee yeh, MAR-koh." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "Formal introduction at a workplace.",
+          "lines": [
+            { "speaker": "A", "target": "Dobar dan, zovem se Petar. Kako se Vi zovete?", "native": "Good day, my name is Petar. What is your name?", "phonetic": "DOH-bar dahn, ZOH-vem seh PEH-tar. KAH-koh seh vee ZOH-veh-teh?" },
+            { "speaker": "B", "target": "Zovem se Jelena. Drago mi je.", "native": "My name is Jelena. Nice to meet you.", "phonetic": "ZOH-vem seh YEH-leh-nah. DRAH-goh mee yeh." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+            { "id": "m1_3_1", "target": "Ja sam...", "native": "I am..." },
+            { "id": "m1_3_2", "target": "Drago mi je", "native": "Nice to meet you" },
+            { "id": "m1_3_3", "target": "Kako se ti zoveš?", "native": "What is your name?" }
+        ],
+        "multipleChoice": [
+            {
+                "id": "mc1_3_1",
+                "question": "Which phrase is the FORMAL way to ask 'What is your name?'",
+                "options": ["Kako se ti zoveš?", "Zovem se...", "Kako se Vi zovete?", "Ja sam..."],
+                "correct": 2,
+                "explanation": "'Vi' is the formal 'you', so 'Kako se Vi zovete?' is used in formal situations."
+            }
+        ],
+        "fillBlanks": [
+             {
+                "id": "fb1_3_1",
+                "sentence": "Zdravo, ___ se Marija.",
+                "answer": "zovem",
+                "hint": "To say 'My name is...'"
+            }
+        ],
+        "sentenceScramble": [
+            {
+                "id": "ss1_3_1",
+                "scrambled": ["mi", "Drago", "je."],
+                "correct": "Drago mi je.",
+                "nativeHint": "Nice to meet you."
+            }
+        ]
+      },
+      "cultural_note": "Serbians distinguish between formal ('Vi') and informal ('ti') 'you'. Use 'Vi' with older people, strangers, and in professional settings.",
+      "pronunciation_tip": "The 'j' in Serbian is always pronounced like the 'y' in 'yes'. So, 'ja' sounds like 'ya'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D3-Serbian-Intros" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Week 1, Day 4: Asking for Help",
+      "title_native": "Nedelja 1, Dan 4: Traženje pomoći",
+      "theme": "Asking for Help",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+          { "id": "w1_4_1", "target": "Pomoć", "phonetic": "POH-motch", "native_meaning": "Help", "english": "Help", "example_sentence_target": "Upomoć!", "example_sentence_native": "Help!", "example_sentence_phonetic": "OO-poh-motch!"},
+          { "id": "w1_4_2", "target": "Ne razumem", "phonetic": "neh rah-ZOO-mem", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Izvinite, ne razumem.", "example_sentence_native": "Sorry, I don't understand.", "example_sentence_phonetic": "EEZ-vee-nee-teh, neh rah-ZOO-mem."},
+          { "id": "w1_4_3", "target": "Govorite li engleski?", "phonetic": "goh-VOH-ree-teh lee EN-gles-kee?", "native_meaning": "Do you speak English?", "english": "Do you speak English?", "example_sentence_target": "Izvinite, govorite li engleski?", "example_sentence_native": "Excuse me, do you speak English?", "example_sentence_phonetic": "EEZ-vee-nee-teh, goh-VOH-ree-teh lee EN-gles-kee?"},
+          { "id": "w1_4_4", "target": "Gde je...", "phonetic": "gdyeh yeh", "native_meaning": "Where is...", "english": "Where is...", "example_sentence_target": "Gde je autobuska stanica?", "example_sentence_native": "Where is the bus station?", "example_sentence_phonetic": "gdyeh yeh ah-oo-toh-BOOS-kah STAH-nee-tsah?"},
+          { "id": "w1_4_5", "target": "Koliko košta?", "phonetic": "KOH-lee-koh KOSH-tah?", "native_meaning": "How much does it cost?", "english": "How much does it cost?", "example_sentence_target": "Izvinite, koliko košta ovo?", "example_sentence_native": "Excuse me, how much does this cost?", "example_sentence_phonetic": "EEZ-vee-nee-teh, KOH-lee-koh KOSH-tah OH-voh?"}
+      ],
+      "dialogues": [
+          {
+            "id": "d1_4_1",
+            "context": "Lost in the city.",
+            "lines": [
+                { "speaker": "A", "target": "Izvinite, govorite li engleski?", "native": "Excuse me, do you speak English?", "phonetic": "EEZ-vee-nee-teh, goh-VOH-ree-teh lee EN-gles-kee?"},
+                { "speaker": "B", "target": "Da, malo. Kako mogu da pomognem?", "native": "Yes, a little. How can I help?", "phonetic": "dah, MAH-loh. KAH-koh MOH-goo dah POH-mog-nem?"}
+            ]
+          }
+      ],
+      "exercises": {
+        "matching": [
+            { "id": "m1_4_1", "target": "Ne razumem", "native": "I don't understand" },
+            { "id": "m1_4_2", "target": "Gde je...", "native": "Where is..." },
+            { "id": "m1_4_3", "target": "Koliko košta?", "native": "How much does it cost?" }
+        ],
+        "fillBlanks": [
+             {
+                "id": "fb1_4_1",
+                "sentence": "Izvinite, ___ li engleski?",
+                "answer": "govorite",
+                "hint": "Ask if they speak a language"
+            }
+        ]
+      },
+      "cultural_note": "Most younger Serbians in cities speak some English, but trying to speak Serbian first is always appreciated.",
+      "pronunciation_tip": "The 'nj' in 'Doviđenja' is one sound, similar to the 'ni' in 'onion'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D4-Serbian-Help" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Week 1, Day 5: Numbers 1-5",
+      "title_native": "Nedelja 1, Dan 5: Brojevi 1-5",
+      "theme": "Numbers",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+          { "id": "w1_5_1", "target": "Jedan", "phonetic": "YEH-dahn", "native_meaning": "One", "english": "One", "example_sentence_target": "Jedan hleb, molim.", "example_sentence_native": "One bread, please.", "example_sentence_phonetic": "YEH-dahn hleb, MOH-leem."},
+          { "id": "w1_5_2", "target": "Dva", "phonetic": "dvah", "native_meaning": "Two", "english": "Two", "example_sentence_target": "Imam dva pitanja.", "example_sentence_native": "I have two questions.", "example_sentence_phonetic": "EE-mahm dvah PEE-tah-nyah."},
+          { "id": "w1_5_3", "target": "Tri", "phonetic": "tree", "native_meaning": "Three", "english": "Three", "example_sentence_target": "Tri kafe, molim.", "example_sentence_native": "Three coffees, please.", "example_sentence_phonetic": "tree KAH-feh, MOH-leem."},
+          { "id": "w1_5_4", "target": "Četiri", "phonetic": "CHEH-tee-ree", "native_meaning": "Four", "english": "Four", "example_sentence_target": "Sto za četiri osobe.", "example_sentence_native": "A table for four people.", "example_sentence_phonetic": "stoh zah CHEH-tee-ree OH-soh-beh."},
+          { "id": "w1_5_5", "target": "Pet", "phonetic": "pet", "native_meaning": "Five", "english": "Five", "example_sentence_target": "To je pet evra.", "example_sentence_native": "That is five euros.", "example_sentence_phonetic": "toh yeh pet EV-rah."}
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "Buying something at a market.",
+          "lines": [
+            { "speaker": "A", "target": "Koliko košta?", "native": "How much does it cost?", "phonetic": "KOH-lee-koh KOSH-tah?"},
+            { "speaker": "B", "target": "Pet evra.", "native": "Five euros.", "phonetic": "pet EV-rah."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+            { "id": "m1_5_1", "target": "Jedan", "native": "One" },
+            { "id": "m1_5_2", "target": "Tri", "native": "Three" },
+            { "id": "m1_5_3", "target": "Pet", "native": "Five" }
+        ],
+        "multipleChoice": [
+            {
+                "id": "mc1_5_1",
+                "question": "What number is 'Četiri'?",
+                "options": ["One", "Two", "Three", "Four"],
+                "correct": 3,
+                "explanation": "'Četiri' is the Serbian word for 'Four'."
+            }
+        ]
+      },
+      "cultural_note": "The Serbian currency is the Dinar (RSD), but in some tourist-facing places, you might see prices in Euros (€).",
+      "pronunciation_tip": "The letter 'Č' sounds like the 'ch' in 'cheese'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D5-Serbian-Numbers" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Week 1, Day 6: Basic Questions",
+      "title_native": "Nedelja 1, Dan 6: Osnovna pitanja",
+      "theme": "Questions",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+          { "id": "w1_6_1", "target": "Šta?", "phonetic": "SHTAH?", "native_meaning": "What?", "english": "What?", "example_sentence_target": "Šta je ovo?", "example_sentence_native": "What is this?", "example_sentence_phonetic": "SHTAH yeh OH-voh?"},
+          { "id": "w1_6_2", "target": "Ko?", "phonetic": "koh?", "native_meaning": "Who?", "english": "Who?", "example_sentence_target": "Ko je to?", "example_sentence_native": "Who is that?", "example_sentence_phonetic": "koh yeh toh?"},
+          { "id": "w1_6_3", "target": "Kada?", "phonetic": "KAH-dah?", "native_meaning": "When?", "english": "When?", "example_sentence_target": "Kada polazi autobus?", "example_sentence_native": "When does the bus leave?", "example_sentence_phonetic": "KAH-dah POH-lah-zee ah-oo-TOH-boos?"},
+          { "id": "w1_6_4", "target": "Zašto?", "phonetic": "ZAH-shtoh?", "native_meaning": "Why?", "english": "Why?", "example_sentence_target": "Zašto ne?", "example_sentence_native": "Why not?", "example_sentence_phonetic": "ZAH-shtoh neh?"},
+          { "id": "w1_6_5", "target": "Kako?", "phonetic": "KAH-koh?", "native_meaning": "How?", "english": "How?", "example_sentence_target": "Kako si?", "example_sentence_native": "How are you?", "example_sentence_phonetic": "KAH-koh see?"}
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "Asking about an item.",
+          "lines": [
+            { "speaker": "A", "target": "Izvinite, šta je ovo?", "native": "Excuse me, what is this?", "phonetic": "EEZ-vee-nee-teh, SHTAH yeh OH-voh?"},
+            { "speaker": "B", "target": "To je kajmak.", "native": "That is kajmak.", "phonetic": "toh yeh KAI-mahk."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+            {
+                "id": "fb1_6_1",
+                "sentence": "___ si?",
+                "answer": "Kako",
+                "hint": "How to ask 'How are you?'"
+            }
+        ],
+        "sentenceScramble": [
+            {
+                "id": "ss1_6_1",
+                "scrambled": ["ovo?", "je", "Šta"],
+                "correct": "Šta je ovo?",
+                "nativeHint": "What is this?"
+            }
+        ]
+      },
+      "cultural_note": "Asking questions is a great way to learn! Don't be shy, most people will be happy to help you.",
+      "pronunciation_tip": "The letter 'Š' is pronounced like 'sh' in 'shoe'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D6-Serbian-Questions" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Week 1, Day 7: Review",
+      "title_native": "Nedelja 1, Dan 7: Pregled",
+      "theme": "Review",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "English",
+      "words": [
+          { "id": "w1_7_1", "target": "Hvala", "phonetic": "HVAH-lah", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Hvala za pomoć.", "example_sentence_native": "Thank you for the help.", "example_sentence_phonetic": "HVAH-lah zah POH-motch." },
+          { "id": "w1_7_2", "target": "Molim", "phonetic": "MOH-leem", "native_meaning": "Please / You're welcome", "english": "Please / You're welcome", "example_sentence_target": "Molim vas, jednu kafu.", "example_sentence_native": "One coffee, please.", "example_sentence_phonetic": "MOH-leem vahs, YED-noo KAH-foo." },
+          { "id": "w1_7_3", "target": "Izvinite", "phonetic": "EEZ-vee-nee-teh", "native_meaning": "Excuse me / Sorry", "english": "Excuse me / Sorry", "example_sentence_target": "Izvinite, gde je toalet?", "example_sentence_native": "Excuse me, where is the toilet?", "example_sentence_phonetic": "EEZ-vee-nee-teh, gdyeh yeh TOH-ah-let?" },
+          { "id": "w1_7_4", "target": "Ne razumem", "phonetic": "neh rah-ZOO-mem", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Izvinite, ne razumem.", "example_sentence_native": "Sorry, I don't understand.", "example_sentence_phonetic": "EEZ-vee-nee-teh, neh rah-ZOO-mem."},
+          { "id": "w1_7_5", "target": "Gde je...", "phonetic": "gdyeh yeh", "native_meaning": "Where is...", "english": "Where is...", "example_sentence_target": "Gde je autobuska stanica?", "example_sentence_native": "Where is the bus station?", "example_sentence_phonetic": "gdyeh yeh ah-oo-toh-BOOS-kah STAH-nee-tsah?"}
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "A short conversation combining everything.",
+          "lines": [
+            { "speaker": "A", "target": "Zdravo. Izvinite, gde je muzej?", "native": "Hello. Excuse me, where is the museum?", "phonetic": "ZDRAH-voh. EEZ-vee-nee-teh, gdyeh yeh MOO-zay?"},
+            { "speaker": "B", "target": "Ne razumem. Ne govorim engleski.", "native": "I don't understand. I don't speak English.", "phonetic": "neh rah-ZOO-mem. neh goh-VOH-reem EN-gles-kee."}
+          ]
+        }
+      ],
+      "exercises": {
+        "multipleChoice": [
+            {
+                "id": "mc1_7_1",
+                "question": "You want to thank someone and say goodbye. What do you say?",
+                "options": ["Zdravo, Molim", "Hvala, Doviđenja", "Ne, Da", "Dobro jutro, Kako si"],
+                "correct": 1,
+                "explanation": "'Hvala' means 'Thank you' and 'Doviđenja' means 'Goodbye'."
+            }
+        ]
+      },
+      "cultural_note": "Review the formal ('Vi') and informal ('ti') forms of 'you'. Using the correct one shows respect and awareness.",
+      "pronunciation_tip": "Practice the rolling 'r' sound, which is common in Serbian. It's different from the English 'r'.",
+      "progress": { "xp": 150, "streak_bonus": 20, "badge": "W1-Serbian-Complete" }
+    }
+  ]
+}
