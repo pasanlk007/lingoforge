@@ -1,21 +1,206 @@
 {
-  "week": 1,
+  "week": 8,
   "path": "survival",
   "targetLanguage": "Serbian",
   "nativeLanguage": "Sinhala",
   "days": [
     {
-      "week": 1,
+      "week": 8,
       "day": 1,
-      "title": "Week 1 Day 1: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 1",
+      "title": "Week 8 Day 1: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 1",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Serbian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
-          "id": "w1_1_1",
+          "id": "w8_1_1",
+          "target": "gde",
+          "phonetic": "gde",
+          "native_meaning": "කොහෙද",
+          "english": "where",
+          "example_sentence_target": "gde!",
+          "example_sentence_native": "කොහෙද!",
+          "example_sentence_phonetic": "gde"
+        },
+        {
+          "id": "w8_1_2",
+          "target": "voda",
+          "phonetic": "vo-da",
+          "native_meaning": "වතුර",
+          "english": "water",
+          "example_sentence_target": "voda!",
+          "example_sentence_native": "වතුර!",
+          "example_sentence_phonetic": "vo-da"
+        },
+        {
+          "id": "w8_1_3",
+          "target": "hrana",
+          "phonetic": "hra-na",
+          "native_meaning": "ආහාර",
+          "english": "food",
+          "example_sentence_target": "hrana!",
+          "example_sentence_native": "ආහාර!",
+          "example_sentence_phonetic": "hra-na"
+        },
+        {
+          "id": "w8_1_4",
+          "target": "restoran",
+          "phonetic": "res-to-ran",
+          "native_meaning": "ආපන ශාලාව",
+          "english": "restaurant",
+          "example_sentence_target": "restoran!",
+          "example_sentence_native": "ආපන ශාලාව!",
+          "example_sentence_phonetic": "res-to-ran"
+        },
+        {
+          "id": "w8_1_5",
+          "target": "desno",
+          "phonetic": "des-no",
+          "native_meaning": "දකුණ",
+          "english": "right",
+          "example_sentence_target": "desno!",
+          "example_sentence_native": "දකුණ!",
+          "example_sentence_phonetic": "des-no"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d8_1_1",
+          "context": "දෙදෙනෙක් හමුවීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Zdravo",
+              "native": "ආයුබෝවන්",
+              "phonetic": "zdra-vo"
+            },
+            {
+              "speaker": "B",
+              "target": "Zdravo, kako si",
+              "native": "ඔබට කොහොමද",
+              "phonetic": "zdra-vo kako si"
+            }
+          ]
+        },
+        {
+          "id": "d8_1_2",
+          "context": "හදුන්වාදීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moje ime je Marko",
+              "native": "මගේ නම මාර්කෝ",
+              "phonetic": "mo-ye i-me ye marko"
+            },
+            {
+              "speaker": "B",
+              "target": "Drago mi je",
+              "native": "ඔබ හමුවීම සතුටක්",
+              "phonetic": "dra-go mi ye"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb8_1_1",
+            "sentence": "___ kako si",
+            "answer": "Zdravo",
+            "hint": "ආයුබෝවන් කියන Serbian වචනය"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc8_1_1",
+            "question": "‘hvala’ කියන්නේ කුමක්ද?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Yes",
+              "Water"
+            ],
+            "correct": 1,
+            "explanation": "‘hvala’ = ස්තුතියි"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m8_1_1",
+            "target": "zdravo",
+            "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m8_1_2",
+            "target": "hvala",
+            "native": "ස්තුතියි"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss8_1_1",
+            "scrambled": [
+              "kako",
+              "si",
+              "zdravo"
+            ],
+            "correct": "zdravo kako si",
+            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+          }
+        ]
+      },
+      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
+      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W8D1-Serbian"
+      }
+    },
+    {
+      "week": 8,
+      "day": 2,
+      "title": "Week 8 Day 2: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 2",
+      "theme": "Basic Communication",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w8_2_1",
+          "target": "posao",
+          "phonetic": "po-sao",
+          "native_meaning": "වැඩ",
+          "english": "work",
+          "example_sentence_target": "posao!",
+          "example_sentence_native": "වැඩ!",
+          "example_sentence_phonetic": "po-sao"
+        },
+        {
+          "id": "w8_2_2",
+          "target": "doktor",
+          "phonetic": "dok-tor",
+          "native_meaning": "වෛද්‍ය",
+          "english": "doctor",
+          "example_sentence_target": "doktor!",
+          "example_sentence_native": "වෛද්‍ය!",
+          "example_sentence_phonetic": "dok-tor"
+        },
+        {
+          "id": "w8_2_3",
+          "target": "zdravo",
+          "phonetic": "zdra-vo",
+          "native_meaning": "ආයුබෝවන්",
+          "english": "hello",
+          "example_sentence_target": "zdravo!",
+          "example_sentence_native": "ආයුබෝවන්!",
+          "example_sentence_phonetic": "zdra-vo"
+        },
+        {
+          "id": "w8_2_4",
           "target": "da",
           "phonetic": "da",
           "native_meaning": "ඔව්",
@@ -25,7 +210,7 @@
           "example_sentence_phonetic": "da"
         },
         {
-          "id": "w1_1_2",
+          "id": "w8_2_5",
           "target": "ne",
           "phonetic": "ne",
           "native_meaning": "නැහැ",
@@ -33,41 +218,11 @@
           "example_sentence_target": "ne!",
           "example_sentence_native": "නැහැ!",
           "example_sentence_phonetic": "ne"
-        },
-        {
-          "id": "w1_1_3",
-          "target": "hvala",
-          "phonetic": "hva-la",
-          "native_meaning": "ස්තුතියි",
-          "english": "thank you",
-          "example_sentence_target": "hvala!",
-          "example_sentence_native": "ස්තුතියි!",
-          "example_sentence_phonetic": "hva-la"
-        },
-        {
-          "id": "w1_1_4",
-          "target": "molim",
-          "phonetic": "mo-lim",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "molim!",
-          "example_sentence_native": "කරුණාකර!",
-          "example_sentence_phonetic": "mo-lim"
-        },
-        {
-          "id": "w1_1_5",
-          "target": "kako si",
-          "phonetic": "ka-ko si",
-          "native_meaning": "ඔබට කොහොමද",
-          "english": "how are you",
-          "example_sentence_target": "kako si!",
-          "example_sentence_native": "ඔබට කොහොමද!",
-          "example_sentence_phonetic": "ka-ko si"
         }
       ],
       "dialogues": [
         {
-          "id": "d1_1_1",
+          "id": "d8_2_1",
           "context": "දෙදෙනෙක් හමුවීම.",
           "lines": [
             {
@@ -85,7 +240,7 @@
           ]
         },
         {
-          "id": "d1_1_2",
+          "id": "d8_2_2",
           "context": "හදුන්වාදීම.",
           "lines": [
             {
@@ -106,7 +261,7 @@
       "exercises": {
         "fillBlanks": [
           {
-            "id": "fb1_1_1",
+            "id": "fb8_2_1",
             "sentence": "___ kako si",
             "answer": "Zdravo",
             "hint": "ආයුබෝවන් කියන Serbian වචනය"
@@ -114,7 +269,7 @@
         ],
         "multipleChoice": [
           {
-            "id": "mc1_1_1",
+            "id": "mc8_2_1",
             "question": "‘hvala’ කියන්නේ කුමක්ද?",
             "options": [
               "Hello",
@@ -128,19 +283,19 @@
         ],
         "matching": [
           {
-            "id": "m1_1_1",
+            "id": "m8_2_1",
             "target": "zdravo",
             "native": "ආයුබෝවන්"
           },
           {
-            "id": "m1_1_2",
+            "id": "m8_2_2",
             "target": "hvala",
             "native": "ස්තුතියි"
           }
         ],
         "sentenceScramble": [
           {
-            "id": "ss1_1_1",
+            "id": "ss8_2_1",
             "scrambled": [
               "kako",
               "si",
@@ -156,176 +311,651 @@
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D1-Serbian"
+        "badge": "W8D2-Serbian"
       }
     },
     {
-      "week": 1,
-      "day": 2,
-      "title": "Week 1 Day 2: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 2",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_2_1",
-          "target": "ne",
-          "phonetic": "ne",
-          "native_meaning": "නැහැ",
-          "english": "no",
-          "example_sentence_target": "ne!",
-          "example_sentence_native": "නැහැ!",
-          "example_sentence_phonetic": "ne"
-        },
-        {
-          "id": "w1_2_2",
-          "target": "hvala",
-          "phonetic": "hva-la",
-          "native_meaning": "ස්තුතියි",
-          "english": "thank you",
-          "example_sentence_target": "hvala!",
-          "example_sentence_native": "ස්තුතියි!",
-          "example_sentence_phonetic": "hva-la"
-        },
-        {
-          "id": "w1_2_3",
-          "target": "molim",
-          "phonetic": "mo-lim",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "molim!",
-          "example_sentence_native": "කරුණාකර!",
-          "example_sentence_phonetic": "mo-lim"
-        },
-        {
-          "id": "w1_2_4",
-          "target": "kako si",
-          "phonetic": "ka-ko si",
-          "native_meaning": "ඔබට කොහොමද",
-          "english": "how are you",
-          "example_sentence_target": "kako si!",
-          "example_sentence_native": "ඔබට කොහොමද!",
-          "example_sentence_phonetic": "ka-ko si"
-        },
-        {
-          "id": "w1_2_5",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_2_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2-Serbian"
-      }
-    },
-    {
-      "week": 1,
+      "week": 8,
       "day": 3,
-      "title": "Week 1 Day 3: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 3",
+      "title": "Week 8 Day 3: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 3",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Serbian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
-          "id": "w1_3_1",
+          "id": "w8_3_1",
+          "target": "doviđenja",
+          "phonetic": "do-vi-dje-nja",
+          "native_meaning": "විදාගන්නම්",
+          "english": "goodbye",
+          "example_sentence_target": "doviđenja!",
+          "example_sentence_native": "විදාගන්නම්!",
+          "example_sentence_phonetic": "do-vi-dje-nja"
+        },
+        {
+          "id": "w8_3_2",
+          "target": "moje ime je",
+          "phonetic": "mo-ye i-me ye",
+          "native_meaning": "මගේ නම",
+          "english": "my name is",
+          "example_sentence_target": "moje ime je!",
+          "example_sentence_native": "මගේ නම!",
+          "example_sentence_phonetic": "mo-ye i-me ye"
+        },
+        {
+          "id": "w8_3_3",
+          "target": "gde",
+          "phonetic": "gde",
+          "native_meaning": "කොහෙද",
+          "english": "where",
+          "example_sentence_target": "gde!",
+          "example_sentence_native": "කොහෙද!",
+          "example_sentence_phonetic": "gde"
+        },
+        {
+          "id": "w8_3_4",
+          "target": "voda",
+          "phonetic": "vo-da",
+          "native_meaning": "වතුර",
+          "english": "water",
+          "example_sentence_target": "voda!",
+          "example_sentence_native": "වතුර!",
+          "example_sentence_phonetic": "vo-da"
+        },
+        {
+          "id": "w8_3_5",
+          "target": "hrana",
+          "phonetic": "hra-na",
+          "native_meaning": "ආහාර",
+          "english": "food",
+          "example_sentence_target": "hrana!",
+          "example_sentence_native": "ආහාර!",
+          "example_sentence_phonetic": "hra-na"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d8_3_1",
+          "context": "දෙදෙනෙක් හමුවීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Zdravo",
+              "native": "ආයුබෝවන්",
+              "phonetic": "zdra-vo"
+            },
+            {
+              "speaker": "B",
+              "target": "Zdravo, kako si",
+              "native": "ඔබට කොහොමද",
+              "phonetic": "zdra-vo kako si"
+            }
+          ]
+        },
+        {
+          "id": "d8_3_2",
+          "context": "හදුන්වාදීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moje ime je Marko",
+              "native": "මගේ නම මාර්කෝ",
+              "phonetic": "mo-ye i-me ye marko"
+            },
+            {
+              "speaker": "B",
+              "target": "Drago mi je",
+              "native": "ඔබ හමුවීම සතුටක්",
+              "phonetic": "dra-go mi ye"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb8_3_1",
+            "sentence": "___ kako si",
+            "answer": "Zdravo",
+            "hint": "ආයුබෝවන් කියන Serbian වචනය"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc8_3_1",
+            "question": "‘hvala’ කියන්නේ කුමක්ද?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Yes",
+              "Water"
+            ],
+            "correct": 1,
+            "explanation": "‘hvala’ = ස්තුතියි"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m8_3_1",
+            "target": "zdravo",
+            "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m8_3_2",
+            "target": "hvala",
+            "native": "ස්තුතියි"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss8_3_1",
+            "scrambled": [
+              "kako",
+              "si",
+              "zdravo"
+            ],
+            "correct": "zdravo kako si",
+            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+          }
+        ]
+      },
+      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
+      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W8D3-Serbian"
+      }
+    },
+    {
+      "week": 8,
+      "day": 4,
+      "title": "Week 8 Day 4: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 4",
+      "theme": "Basic Communication",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w8_4_1",
+          "target": "ulica",
+          "phonetic": "u-li-ca",
+          "native_meaning": "මාර්ගය",
+          "english": "street",
+          "example_sentence_target": "ulica!",
+          "example_sentence_native": "මාර්ගය!",
+          "example_sentence_phonetic": "u-li-ca"
+        },
+        {
+          "id": "w8_4_2",
+          "target": "vreme",
+          "phonetic": "vre-me",
+          "native_meaning": "කාලය",
+          "english": "time",
+          "example_sentence_target": "vreme!",
+          "example_sentence_native": "කාලය!",
+          "example_sentence_phonetic": "vre-me"
+        },
+        {
+          "id": "w8_4_3",
+          "target": "posao",
+          "phonetic": "po-sao",
+          "native_meaning": "වැඩ",
+          "english": "work",
+          "example_sentence_target": "posao!",
+          "example_sentence_native": "වැඩ!",
+          "example_sentence_phonetic": "po-sao"
+        },
+        {
+          "id": "w8_4_4",
+          "target": "doktor",
+          "phonetic": "dok-tor",
+          "native_meaning": "වෛද්‍ය",
+          "english": "doctor",
+          "example_sentence_target": "doktor!",
+          "example_sentence_native": "වෛද්‍ය!",
+          "example_sentence_phonetic": "dok-tor"
+        },
+        {
+          "id": "w8_4_5",
+          "target": "zdravo",
+          "phonetic": "zdra-vo",
+          "native_meaning": "ආයුබෝවන්",
+          "english": "hello",
+          "example_sentence_target": "zdravo!",
+          "example_sentence_native": "ආයුබෝවන්!",
+          "example_sentence_phonetic": "zdra-vo"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d8_4_1",
+          "context": "දෙදෙනෙක් හමුවීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Zdravo",
+              "native": "ආයුබෝවන්",
+              "phonetic": "zdra-vo"
+            },
+            {
+              "speaker": "B",
+              "target": "Zdravo, kako si",
+              "native": "ඔබට කොහොමද",
+              "phonetic": "zdra-vo kako si"
+            }
+          ]
+        },
+        {
+          "id": "d8_4_2",
+          "context": "හදුන්වාදීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moje ime je Marko",
+              "native": "මගේ නම මාර්කෝ",
+              "phonetic": "mo-ye i-me ye marko"
+            },
+            {
+              "speaker": "B",
+              "target": "Drago mi je",
+              "native": "ඔබ හමුවීම සතුටක්",
+              "phonetic": "dra-go mi ye"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb8_4_1",
+            "sentence": "___ kako si",
+            "answer": "Zdravo",
+            "hint": "ආයුබෝවන් කියන Serbian වචනය"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc8_4_1",
+            "question": "‘hvala’ කියන්නේ කුමක්ද?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Yes",
+              "Water"
+            ],
+            "correct": 1,
+            "explanation": "‘hvala’ = ස්තුතියි"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m8_4_1",
+            "target": "zdravo",
+            "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m8_4_2",
+            "target": "hvala",
+            "native": "ස්තුතියි"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss8_4_1",
+            "scrambled": [
+              "kako",
+              "si",
+              "zdravo"
+            ],
+            "correct": "zdravo kako si",
+            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+          }
+        ]
+      },
+      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
+      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W8D4-Serbian"
+      }
+    },
+    {
+      "week": 8,
+      "day": 5,
+      "title": "Week 8 Day 5: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 5",
+      "theme": "Basic Communication",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w8_5_1",
+          "target": "molim",
+          "phonetic": "mo-lim",
+          "native_meaning": "කරුණාකර",
+          "english": "please",
+          "example_sentence_target": "molim!",
+          "example_sentence_native": "කරුණාකර!",
+          "example_sentence_phonetic": "mo-lim"
+        },
+        {
+          "id": "w8_5_2",
+          "target": "kako si",
+          "phonetic": "ka-ko si",
+          "native_meaning": "ඔබට කොහොමද",
+          "english": "how are you",
+          "example_sentence_target": "kako si!",
+          "example_sentence_native": "ඔබට කොහොමද!",
+          "example_sentence_phonetic": "ka-ko si"
+        },
+        {
+          "id": "w8_5_3",
+          "target": "doviđenja",
+          "phonetic": "do-vi-dje-nja",
+          "native_meaning": "විදාගන්නම්",
+          "english": "goodbye",
+          "example_sentence_target": "doviđenja!",
+          "example_sentence_native": "විදාගන්නම්!",
+          "example_sentence_phonetic": "do-vi-dje-nja"
+        },
+        {
+          "id": "w8_5_4",
+          "target": "moje ime je",
+          "phonetic": "mo-ye i-me ye",
+          "native_meaning": "මගේ නම",
+          "english": "my name is",
+          "example_sentence_target": "moje ime je!",
+          "example_sentence_native": "මගේ නම!",
+          "example_sentence_phonetic": "mo-ye i-me ye"
+        },
+        {
+          "id": "w8_5_5",
+          "target": "gde",
+          "phonetic": "gde",
+          "native_meaning": "කොහෙද",
+          "english": "where",
+          "example_sentence_target": "gde!",
+          "example_sentence_native": "කොහෙද!",
+          "example_sentence_phonetic": "gde"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d8_5_1",
+          "context": "දෙදෙනෙක් හමුවීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Zdravo",
+              "native": "ආයුබෝවන්",
+              "phonetic": "zdra-vo"
+            },
+            {
+              "speaker": "B",
+              "target": "Zdravo, kako si",
+              "native": "ඔබට කොහොමද",
+              "phonetic": "zdra-vo kako si"
+            }
+          ]
+        },
+        {
+          "id": "d8_5_2",
+          "context": "හදුන්වාදීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moje ime je Marko",
+              "native": "මගේ නම මාර්කෝ",
+              "phonetic": "mo-ye i-me ye marko"
+            },
+            {
+              "speaker": "B",
+              "target": "Drago mi je",
+              "native": "ඔබ හමුවීම සතුටක්",
+              "phonetic": "dra-go mi ye"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb8_5_1",
+            "sentence": "___ kako si",
+            "answer": "Zdravo",
+            "hint": "ආයුබෝවන් කියන Serbian වචනය"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc8_5_1",
+            "question": "‘hvala’ කියන්නේ කුමක්ද?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Yes",
+              "Water"
+            ],
+            "correct": 1,
+            "explanation": "‘hvala’ = ස්තුතියි"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m8_5_1",
+            "target": "zdravo",
+            "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m8_5_2",
+            "target": "hvala",
+            "native": "ස්තුතියි"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss8_5_1",
+            "scrambled": [
+              "kako",
+              "si",
+              "zdravo"
+            ],
+            "correct": "zdravo kako si",
+            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+          }
+        ]
+      },
+      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
+      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W8D5-Serbian"
+      }
+    },
+    {
+      "week": 8,
+      "day": 6,
+      "title": "Week 8 Day 6: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 6",
+      "theme": "Basic Communication",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w8_6_1",
+          "target": "desno",
+          "phonetic": "des-no",
+          "native_meaning": "දකුණ",
+          "english": "right",
+          "example_sentence_target": "desno!",
+          "example_sentence_native": "දකුණ!",
+          "example_sentence_phonetic": "des-no"
+        },
+        {
+          "id": "w8_6_2",
+          "target": "levo",
+          "phonetic": "le-vo",
+          "native_meaning": "වම",
+          "english": "left",
+          "example_sentence_target": "levo!",
+          "example_sentence_native": "වම!",
+          "example_sentence_phonetic": "le-vo"
+        },
+        {
+          "id": "w8_6_3",
+          "target": "ulica",
+          "phonetic": "u-li-ca",
+          "native_meaning": "මාර්ගය",
+          "english": "street",
+          "example_sentence_target": "ulica!",
+          "example_sentence_native": "මාර්ගය!",
+          "example_sentence_phonetic": "u-li-ca"
+        },
+        {
+          "id": "w8_6_4",
+          "target": "vreme",
+          "phonetic": "vre-me",
+          "native_meaning": "කාලය",
+          "english": "time",
+          "example_sentence_target": "vreme!",
+          "example_sentence_native": "කාලය!",
+          "example_sentence_phonetic": "vre-me"
+        },
+        {
+          "id": "w8_6_5",
+          "target": "posao",
+          "phonetic": "po-sao",
+          "native_meaning": "වැඩ",
+          "english": "work",
+          "example_sentence_target": "posao!",
+          "example_sentence_native": "වැඩ!",
+          "example_sentence_phonetic": "po-sao"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d8_6_1",
+          "context": "දෙදෙනෙක් හමුවීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Zdravo",
+              "native": "ආයුබෝවන්",
+              "phonetic": "zdra-vo"
+            },
+            {
+              "speaker": "B",
+              "target": "Zdravo, kako si",
+              "native": "ඔබට කොහොමද",
+              "phonetic": "zdra-vo kako si"
+            }
+          ]
+        },
+        {
+          "id": "d8_6_2",
+          "context": "හදුන්වාදීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moje ime je Marko",
+              "native": "මගේ නම මාර්කෝ",
+              "phonetic": "mo-ye i-me ye marko"
+            },
+            {
+              "speaker": "B",
+              "target": "Drago mi je",
+              "native": "ඔබ හමුවීම සතුටක්",
+              "phonetic": "dra-go mi ye"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb8_6_1",
+            "sentence": "___ kako si",
+            "answer": "Zdravo",
+            "hint": "ආයුබෝවන් කියන Serbian වචනය"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc8_6_1",
+            "question": "‘hvala’ කියන්නේ කුමක්ද?",
+            "options": [
+              "Hello",
+              "Thank you",
+              "Yes",
+              "Water"
+            ],
+            "correct": 1,
+            "explanation": "‘hvala’ = ස්තුතියි"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m8_6_1",
+            "target": "zdravo",
+            "native": "ආයුබෝවන්"
+          },
+          {
+            "id": "m8_6_2",
+            "target": "hvala",
+            "native": "ස්තුතියි"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss8_6_1",
+            "scrambled": [
+              "kako",
+              "si",
+              "zdravo"
+            ],
+            "correct": "zdravo kako si",
+            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+          }
+        ]
+      },
+      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
+      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W8D6-Serbian"
+      }
+    },
+    {
+      "week": 8,
+      "day": 7,
+      "title": "Week 8 Day 7: Serbian Survival",
+      "title_native": "Nedelja 8 Dan 7",
+      "theme": "Basic Communication",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w8_7_1",
+          "target": "ne",
+          "phonetic": "ne",
+          "native_meaning": "නැහැ",
+          "english": "no",
+          "example_sentence_target": "ne!",
+          "example_sentence_native": "නැහැ!",
+          "example_sentence_phonetic": "ne"
+        },
+        {
+          "id": "w8_7_2",
           "target": "hvala",
           "phonetic": "hva-la",
           "native_meaning": "ස්තුතියි",
@@ -335,7 +965,7 @@
           "example_sentence_phonetic": "hva-la"
         },
         {
-          "id": "w1_3_2",
+          "id": "w8_7_3",
           "target": "molim",
           "phonetic": "mo-lim",
           "native_meaning": "කරුණාකර",
@@ -345,7 +975,7 @@
           "example_sentence_phonetic": "mo-lim"
         },
         {
-          "id": "w1_3_3",
+          "id": "w8_7_4",
           "target": "kako si",
           "phonetic": "ka-ko si",
           "native_meaning": "ඔබට කොහොමද",
@@ -355,7 +985,7 @@
           "example_sentence_phonetic": "ka-ko si"
         },
         {
-          "id": "w1_3_4",
+          "id": "w8_7_5",
           "target": "doviđenja",
           "phonetic": "do-vi-dje-nja",
           "native_meaning": "විදාගන්නම්",
@@ -363,21 +993,11 @@
           "example_sentence_target": "doviđenja!",
           "example_sentence_native": "විදාගන්නම්!",
           "example_sentence_phonetic": "do-vi-dje-nja"
-        },
-        {
-          "id": "w1_3_5",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
         }
       ],
       "dialogues": [
         {
-          "id": "d1_3_1",
+          "id": "d8_7_1",
           "context": "දෙදෙනෙක් හමුවීම.",
           "lines": [
             {
@@ -395,7 +1015,7 @@
           ]
         },
         {
-          "id": "d1_3_2",
+          "id": "d8_7_2",
           "context": "හදුන්වාදීම.",
           "lines": [
             {
@@ -416,7 +1036,7 @@
       "exercises": {
         "fillBlanks": [
           {
-            "id": "fb1_3_1",
+            "id": "fb8_7_1",
             "sentence": "___ kako si",
             "answer": "Zdravo",
             "hint": "ආයුබෝවන් කියන Serbian වචනය"
@@ -424,7 +1044,7 @@
         ],
         "multipleChoice": [
           {
-            "id": "mc1_3_1",
+            "id": "mc8_7_1",
             "question": "‘hvala’ කියන්නේ කුමක්ද?",
             "options": [
               "Hello",
@@ -438,19 +1058,19 @@
         ],
         "matching": [
           {
-            "id": "m1_3_1",
+            "id": "m8_7_1",
             "target": "zdravo",
             "native": "ආයුබෝවන්"
           },
           {
-            "id": "m1_3_2",
+            "id": "m8_7_2",
             "target": "hvala",
             "native": "ස්තුතියි"
           }
         ],
         "sentenceScramble": [
           {
-            "id": "ss1_3_1",
+            "id": "ss8_7_1",
             "scrambled": [
               "kako",
               "si",
@@ -466,627 +1086,7 @@
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D3-Serbian"
-      }
-    },
-    {
-      "week": 1,
-      "day": 4,
-      "title": "Week 1 Day 4: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 4",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_4_1",
-          "target": "molim",
-          "phonetic": "mo-lim",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "molim!",
-          "example_sentence_native": "කරුණාකර!",
-          "example_sentence_phonetic": "mo-lim"
-        },
-        {
-          "id": "w1_4_2",
-          "target": "kako si",
-          "phonetic": "ka-ko si",
-          "native_meaning": "ඔබට කොහොමද",
-          "english": "how are you",
-          "example_sentence_target": "kako si!",
-          "example_sentence_native": "ඔබට කොහොමද!",
-          "example_sentence_phonetic": "ka-ko si"
-        },
-        {
-          "id": "w1_4_3",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
-        },
-        {
-          "id": "w1_4_4",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
-        },
-        {
-          "id": "w1_4_5",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_4_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4-Serbian"
-      }
-    },
-    {
-      "week": 1,
-      "day": 5,
-      "title": "Week 1 Day 5: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 5",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_5_1",
-          "target": "kako si",
-          "phonetic": "ka-ko si",
-          "native_meaning": "ඔබට කොහොමද",
-          "english": "how are you",
-          "example_sentence_target": "kako si!",
-          "example_sentence_native": "ඔබට කොහොමද!",
-          "example_sentence_phonetic": "ka-ko si"
-        },
-        {
-          "id": "w1_5_2",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
-        },
-        {
-          "id": "w1_5_3",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
-        },
-        {
-          "id": "w1_5_4",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
-        },
-        {
-          "id": "w1_5_5",
-          "target": "voda",
-          "phonetic": "vo-da",
-          "native_meaning": "වතුර",
-          "english": "water",
-          "example_sentence_target": "voda!",
-          "example_sentence_native": "වතුර!",
-          "example_sentence_phonetic": "vo-da"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_5_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5-Serbian"
-      }
-    },
-    {
-      "week": 1,
-      "day": 6,
-      "title": "Week 1 Day 6: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 6",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_6_1",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
-        },
-        {
-          "id": "w1_6_2",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
-        },
-        {
-          "id": "w1_6_3",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
-        },
-        {
-          "id": "w1_6_4",
-          "target": "voda",
-          "phonetic": "vo-da",
-          "native_meaning": "වතුර",
-          "english": "water",
-          "example_sentence_target": "voda!",
-          "example_sentence_native": "වතුර!",
-          "example_sentence_phonetic": "vo-da"
-        },
-        {
-          "id": "w1_6_5",
-          "target": "hrana",
-          "phonetic": "hra-na",
-          "native_meaning": "ආහාර",
-          "english": "food",
-          "example_sentence_target": "hrana!",
-          "example_sentence_native": "ආහාර!",
-          "example_sentence_phonetic": "hra-na"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_6_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6-Serbian"
-      }
-    },
-    {
-      "week": 1,
-      "day": 7,
-      "title": "Week 1 Day 7: Serbian Survival",
-      "title_native": "Nedelja 1 Dan 7",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_7_1",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
-        },
-        {
-          "id": "w1_7_2",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
-        },
-        {
-          "id": "w1_7_3",
-          "target": "voda",
-          "phonetic": "vo-da",
-          "native_meaning": "වතුර",
-          "english": "water",
-          "example_sentence_target": "voda!",
-          "example_sentence_native": "වතුර!",
-          "example_sentence_phonetic": "vo-da"
-        },
-        {
-          "id": "w1_7_4",
-          "target": "hrana",
-          "phonetic": "hra-na",
-          "native_meaning": "ආහාර",
-          "english": "food",
-          "example_sentence_target": "hrana!",
-          "example_sentence_native": "ආහාර!",
-          "example_sentence_phonetic": "hra-na"
-        },
-        {
-          "id": "w1_7_5",
-          "target": "restoran",
-          "phonetic": "res-to-ran",
-          "native_meaning": "ආපන ශාලාව",
-          "english": "restaurant",
-          "example_sentence_target": "restoran!",
-          "example_sentence_native": "ආපන ශාලාව!",
-          "example_sentence_phonetic": "res-to-ran"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_7_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7-Serbian"
+        "badge": "W8D7-Serbian"
       }
     }
   ]
