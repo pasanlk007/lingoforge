@@ -5,7 +5,9 @@ import { Languages, Menu, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
-import { useUser, useAuth } from "@/firebase/provider";
+import { useUser, useAuth, useDoc, useFirestore, useMemoFirebase } from "@/firebase";
+import { doc } from "firebase/firestore";
+import type { UserProfile } from "@/lib/types";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,26 +17,31 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { translations } from "@/lib/translations";
+import { nativeLanguages, translations } from "@/lib/translations";
 
 
 export function Navigation() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const { user, isUserLoading } = useUser();
   const auth = useAuth();
-  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
+  const firestore = useFirestore();
+
+  const userProfileRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, 'userProfiles', user.uid);
+  }, [user, firestore]);
+  const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
+  
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const savedNativeLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
-    if (savedNativeLang && translations[savedNativeLang]) {
-      setNativeLanguage(savedNativeLang);
-    }
     setIsMounted(true);
   }, []);
 
-  const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
-  const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard) ? translations[nativeLanguage].dashboard : translations.English.dashboard;
+  const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
+  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
+  const t_dashboard = translations[validNativeLanguage as keyof typeof translations].dashboard || translations.English.dashboard;
 
   const handleLogout = () => {
     if (!auth) return;

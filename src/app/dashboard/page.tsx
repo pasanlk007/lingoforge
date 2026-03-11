@@ -79,11 +79,28 @@ function DashboardContent({ user }: { user: User }) {
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
+  const [nativeLanguage, setNativeLanguage] = useState(userProfile?.nativeLanguage || 'English');
+  const [targetLanguage, setTargetLanguage] = useState(userProfile?.selectedLanguage || 'French');
+
   useEffect(() => {
     setIsMounted(true);
-  }, []);
+    const savedNative = localStorage.getItem("nativeLanguage");
+    const savedTarget = localStorage.getItem("targetLanguage");
+
+    let initialNative = userProfile?.nativeLanguage || savedNative || 'English';
+    let initialTarget = userProfile?.selectedLanguage || savedTarget || 'French';
+    
+    if (nativeLanguages.includes(initialNative)) {
+        setNativeLanguage(initialNative);
+    } else {
+        setNativeLanguage('English');
+    }
+    setTargetLanguage(initialTarget);
+
+  }, [userProfile]);
 
   const handleNativeLanguageChange = (newLang: string) => {
+    setNativeLanguage(newLang);
     if (userProfileRef) {
         updateDocumentNonBlocking(userProfileRef, { nativeLanguage: newLang });
     }
@@ -91,6 +108,7 @@ function DashboardContent({ user }: { user: User }) {
   };
   
   const handleTargetLanguageChange = (newLang: string) => {
+    setTargetLanguage(newLang);
     if (userProfileRef) {
         updateDocumentNonBlocking(userProfileRef, { selectedLanguage: newLang });
     }
@@ -111,11 +129,7 @@ function DashboardContent({ user }: { user: User }) {
   if (!isMounted || isProfileLoading || !userProfile) {
       return <DashboardLoading />;
   }
-
-  // Prioritize Firestore data, with fallback to localStorage for initial hydration.
-  const nativeLanguage = userProfile.nativeLanguage || (isMounted && localStorage.getItem('nativeLanguage')) || 'English';
-  const targetLanguage = userProfile.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
-
+  
   const {
     displayName,
     currentStreak,
@@ -135,7 +149,6 @@ function DashboardContent({ user }: { user: User }) {
   const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
   const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/${(activePath || 'survival').toLowerCase()}/${nextWeek}/${nextDay}`;
 
-  // Make sure the native language from profile/storage is valid before using it
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
   

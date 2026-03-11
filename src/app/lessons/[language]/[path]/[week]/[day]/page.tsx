@@ -2,15 +2,16 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-
-import type { LanguageLesson, LearningPath } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { LanguageLesson, LearningPath, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Terminal, Wrench } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
-import { translations } from '@/lib/translations';
+import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 
 const LoadingSkeleton = () => (
@@ -33,31 +34,36 @@ const LoadingSkeleton = () => (
 export default function LessonPage() {
   const params = useParams();
   const { language, path, week, day } = params;
+  
+  const { user } = useUser();
+  const firestore = useFirestore();
+
+  const userProfileRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, 'userProfiles', user.uid);
+  }, [user, firestore]);
+
+  const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [dayNumber, setDayNumber] = useState<number | null>(null);
-  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
-    if (savedNativeLang && translations[savedNativeLang]) {
-      setNativeLanguage(savedNativeLang);
-    }
     setIsMounted(true);
   }, []);
   
-  const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+  const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
+  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
 
   useEffect(() => {
-    // Wait for the component to be mounted to ensure localStorage is available
     if (!isMounted) {
       return;
     }
     
-    // Ensure all params are available
     if (
       typeof language !== 'string' ||
       typeof path !== 'string' ||
@@ -84,15 +90,13 @@ export default function LessonPage() {
         language,
         path as LearningPath,
         parseInt(week, 10),
-        nativeLanguage,
+        validNativeLanguage,
         dayNum
       );
 
       if (weeklyLessonData) {
         const dayData = weeklyLessonData.days.find(d => d.day === dayNum);
         if (dayData) {
-          // Create a new LanguageLesson object containing only the single, relevant day.
-          // This is what the LessonClientPage component expects.
           const singleDayLesson: LanguageLesson = {
             ...weeklyLessonData,
             days: [dayData],
@@ -105,7 +109,7 @@ export default function LessonPage() {
           );
         }
       } else {
-        const native = nativeLanguage.toLowerCase();
+        const native = validNativeLanguage.toLowerCase();
         const target = language.toLowerCase();
         const weekPadded = String(week).padStart(2, '0');
         const lessonPath = `/lessons/${native}_${target}/${path}/week_${weekPadded}.json`;
@@ -120,7 +124,7 @@ export default function LessonPage() {
 
     fetchLesson();
 
-  }, [language, path, week, day, isMounted, nativeLanguage, t]);
+  }, [language, path, week, day, isMounted, validNativeLanguage, t]);
 
 
   if (isLoading || dayNumber === null || !isMounted) {

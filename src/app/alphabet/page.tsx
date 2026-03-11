@@ -2,24 +2,27 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
-import { collection } from 'firebase/firestore';
-import type { UserWeekProgress } from '@/lib/types';
+import { useUser, useFirestore, useCollection, useDoc, useMemoFirebase } from '@/firebase';
+import { collection, doc } from 'firebase/firestore';
+import type { UserProfile, UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
 import { CheckCircle, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
-import { translations } from '@/lib/translations';
+import { nativeLanguages, translations } from '@/lib/translations';
 
 export default function AlphabetPathPage() {
-  const [targetLanguage, setTargetLanguage] = useState('French');
-  const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
-  const [isMounted, setIsMounted] = useState(false);
-
-  const { user, isUserLoading } = useUser();
+  const { user, isUserLoading: isUserLoading } = useUser();
   const firestore = useFirestore();
+
+  const userProfileRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, "userProfiles", user.uid);
+  }, [user, firestore]);
+
+  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
   const progressCollectionRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -27,20 +30,16 @@ export default function AlphabetPathPage() {
   }, [user, firestore]);
 
   const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
-
+  
+  const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
-    const savedTargetLang = localStorage.getItem('targetLanguage');
-    if (savedTargetLang) {
-      setTargetLanguage(savedTargetLang);
-    }
-    const savedNativeLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
-    if (savedNativeLang && translations[savedNativeLang]) {
-      setNativeLanguage(savedNativeLang);
-    }
     setIsMounted(true);
   }, []);
 
-  const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+  const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
+  const targetLanguage = (isMounted && (userProfile?.selectedLanguage || localStorage.getItem('targetLanguage'))) || 'French';
+  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
 
   const totalWeeks = 48;
 
@@ -111,7 +110,7 @@ export default function AlphabetPathPage() {
                         const isDayCompleted = completedDaysInWeek.includes(day);
                         
                         return (
-                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")}>
+                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day}>
                             <Link href={`/lessons/${targetLanguage.toLowerCase()}/alphabet/${week}/${day}`}>
                               {isDayCompleted && <CheckCircle className="mr-2 h-4 w-4"/>}
                               {`${t.day} ${day}`}
