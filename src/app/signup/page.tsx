@@ -53,8 +53,6 @@ export default function SignupPage() {
       await updateProfile(user, { displayName });
 
       const now = new Date();
-      const trialEndDate = new Date();
-      trialEndDate.setDate(now.getDate() + 3);
 
       // Create user profile in Firestore
       const userProfile: UserProfile = {
@@ -71,8 +69,6 @@ export default function SignupPage() {
         activePath: 'survival',
         lastLessonWeek: 1,
         lastLessonDay: 0,
-        trialStartDate: now.toISOString(),
-        trialEndDate: trialEndDate.toISOString(),
       };
 
       const userDocRef = doc(firestore, 'userProfiles', user.uid);

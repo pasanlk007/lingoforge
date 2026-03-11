@@ -125,8 +125,6 @@ export interface UserProfile {
   activePath: 'survival' | 'alphabet' | 'numbers';
   lastLessonWeek: number;
   lastLessonDay: number;
-  trialStartDate?: string; // ISO 8601 date string
-  trialEndDate?: string;   // ISO 8601 date string
 }
 
 export interface UserLessonProgress {

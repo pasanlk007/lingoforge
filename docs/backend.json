@@ -63,16 +63,6 @@
         "lastLessonDay": {
           "type": "number",
           "description": "The day number of the user's last completed lesson."
-        },
-        "trialStartDate": {
-          "type": "string",
-          "description": "The date when the user's free trial begins. Stored in ISO 8601 format.",
-          "format": "date-time"
-        },
-        "trialEndDate": {
-          "type": "string",
-          "description": "The date when the user's 3-day free trial ends. Stored in ISO 8601 format.",
-          "format": "date-time"
         }
       },
       "required": [
@@ -90,22 +80,6 @@
         "lastLessonWeek",
         "lastLessonDay"
       ]
-    },
-    "AdminUser": {
-        "title": "AdminUser",
-        "type": "object",
-        "description": "Represents a user with administrative privileges.",
-        "properties": {
-            "uid": {
-                "type": "string",
-                "description": "The Firebase Authentication UID of the admin user."
-            },
-            "role": {
-                "type": "string",
-                "enum": ["admin"]
-            }
-        },
-        "required": ["uid", "role"]
     },
     "UserWeekProgress": {
       "title": "UserWeekProgress",
@@ -151,15 +125,6 @@
             "$ref": "#/entities/UserProfile"
           },
           "description": "Stores individual user preferences and settings."
-        }
-      },
-       {
-        "path": "/adminUsers/{userId}",
-        "definition": {
-          "schema": {
-            "$ref": "#/entities/AdminUser"
-          },
-          "description": "Collection to store admin user roles."
         }
       },
       {
