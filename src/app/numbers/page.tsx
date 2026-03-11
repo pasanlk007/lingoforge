@@ -8,7 +8,7 @@ import type { UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { Lock, CheckCircle, Star } from 'lucide-react';
+import { CheckCircle, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { translations } from '@/lib/translations';
@@ -87,8 +87,6 @@ export default function NumbersPathPage() {
               const completedDaysInWeek = completedDays[week] || [];
               const isWeekCompleted = completedDaysInWeek.length === 7;
               
-              const canOpenAccordion = true; // All lessons are unlocked
-
               return (
                 <AccordionItem key={week} value={`item-${week}`}>
                   <AccordionTrigger className="text-lg hover:no-underline">
@@ -113,14 +111,10 @@ export default function NumbersPathPage() {
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                         const isDayCompleted = completedDaysInWeek.includes(day);
                         
-                        // Simplified logic: Day is unlocked if previous day is completed.
-                        const lastCompletedDay = Math.max(0, ...completedDaysInWeek);
-                        const isDayUnlocked = day <= lastCompletedDay + 1;
-                        
                         return (
-                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")} disabled={!isDayUnlocked}>
-                            <Link href={isDayUnlocked ? `/lessons/${targetLanguage.toLowerCase()}/numbers/${week}/${day}` : '#'}>
-                              {isDayCompleted ? <CheckCircle className="mr-2 h-4 w-4"/> : (!isDayUnlocked && <Lock className="mr-2 h-4 w-4"/>)}
+                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day} className={cn(isDayCompleted && "bg-green-600 hover:bg-green-700")}>
+                            <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/${week}/${day}`}>
+                              {isDayCompleted && <CheckCircle className="mr-2 h-4 w-4"/>}
                               {`${t.day} ${day}`}
                             </Link>
                           </Button>
