@@ -70,6 +70,12 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         setIsMounted(true);
     }, []);
 
+    const handleExercisesComplete = useCallback((isCorrect: boolean) => {
+        if (isCorrect) {
+          setExercisesCorrect(prev => prev + 1);
+        }
+    }, []);
+
     const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
     
     if (!dayData || !isMounted) {
@@ -105,12 +111,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         if (!hasWords) return;
         setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1));
     }
-
-    const handleExercisesComplete = useCallback((isCorrect: boolean) => {
-        if (isCorrect) {
-          setExercisesCorrect(prev => prev + 1);
-        }
-    }, []);
     
     const handleCompleteDay = () => {
         if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile) return;
