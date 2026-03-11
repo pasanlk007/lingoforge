@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
@@ -106,11 +106,11 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1));
     }
 
-    const handleExercisesComplete = (isCorrect: boolean) => {
+    const handleExercisesComplete = useCallback((isCorrect: boolean) => {
         if (isCorrect) {
           setExercisesCorrect(prev => prev + 1);
         }
-    }
+    }, []);
     
     const handleCompleteDay = () => {
         if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile) return;
