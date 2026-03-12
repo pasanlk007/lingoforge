@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Check, Star } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
@@ -7,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
+import { translations, nativeLanguages } from '@/lib/translations';
 
 const GooglePayLogo = () => (
     <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
@@ -44,18 +46,36 @@ const ApplePayLogo = () => (
 
 
 export default function PricingPage() {
+  const [displayLanguage, setDisplayLanguage] = useState('English');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
+    if (savedLang && translations[savedLang]) {
+      setDisplayLanguage(savedLang);
+    }
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <div className="flex min-h-dvh flex-col bg-background" />;
+  }
+  
+  const t = translations[displayLanguage as keyof typeof translations] || translations.English;
+  const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
+
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
+    <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
       <Navigation />
       <main className="flex-1">
         <section className="py-20 sm:py-24">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                Choose Your Path to Fluency
+                {t.pricingTitle}
               </h1>
               <p className="mt-4 text-lg text-muted-foreground">
-                Simple, transparent pricing. Start for free, then unlock everything with one simple plan. Cancel anytime.
+                {t.pricingSub}
               </p>
             </div>
 
@@ -63,20 +83,20 @@ export default function PricingPage() {
               {/* Free Plan */}
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Free</CardTitle>
-                  <CardDescription>Get a taste of our learning method.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">{t.freePlan.title}</CardTitle>
+                  <CardDescription>{t.freePlan.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
-                  <p className="text-4xl font-bold">$0</p>
+                  <p className="text-4xl font-bold">{t.freePlan.price}</p>
                   <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> Week 1 of Survival Path</li>
-                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> 5 new words per day</li>
-                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> Basic exercises</li>
+                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> {t.freePlan.feat1}</li>
+                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> {t.freePlan.feat2}</li>
+                    <li className="flex items-center gap-2 text-muted-foreground/70"><Check className="h-5 w-5 text-muted-foreground/50"/> {t.freePlan.feat3}</li>
                   </ul>
                 </CardContent>
                 <CardFooter>
                   <Button variant="outline" className="w-full" asChild>
-                    <Link href="/signup">Start for Free</Link>
+                    <Link href="/signup">{t.startFree}</Link>
                   </Button>
                 </CardFooter>
               </Card>
@@ -84,20 +104,20 @@ export default function PricingPage() {
               {/* Weekly Plan */}
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Weekly</CardTitle>
-                  <CardDescription>Full access, renews automatically every 7 days.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">{t.weeklyPlan.title}</CardTitle>
+                  <CardDescription>{t.weeklyPlan.desc}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">
-                    $5<span className="text-lg font-normal text-muted-foreground">/week</span>
+                    {t.weeklyPlan.price}<span className="text-lg font-normal text-muted-foreground">{t.weeklyPlan.per}</span>
                   </p>
                   <ul className="space-y-3">
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All 3 Learning Paths</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Full week of content</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Native audio for all words</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All interactive exercises</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> AI guide for questions</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Cancel anytime</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat1}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat2}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat3}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat4}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat5}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat6}</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3">
@@ -118,22 +138,22 @@ export default function PricingPage() {
               {/* Complete Package Plan */}
               <Card className="relative flex flex-col border-2 border-primary shadow-2xl shadow-primary/20">
                 <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  ⭐ BEST VALUE
+                  {t.completePlan.badge}
                 </Badge>
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Complete Package</CardTitle>
-                  <CardDescription>One-time payment for lifetime access.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">{t.completePlan.title}</CardTitle>
+                  <CardDescription>{t.completePlan.desc}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">
-                    $49<span className="text-lg font-normal text-muted-foreground"> / one-time</span>
+                    {t.completePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.completePlan.per}</span>
                   </p>
-                  <Badge variant="secondary" className="w-fit text-green-500 border border-green-500/50 bg-green-500/10">Pay once, learn forever!</Badge>
+                  <Badge variant="secondary" className="w-fit text-green-500 border border-green-500/50 bg-green-500/10">{t.completePlan.subtext}</Badge>
                   <ul className="space-y-3">
-                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Everything in Weekly</li>
-                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All 12 weeks of content</li>
-                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Lifetime access</li>
-                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Priority email support</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat1}</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat2}</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat3}</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat4}</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3">
