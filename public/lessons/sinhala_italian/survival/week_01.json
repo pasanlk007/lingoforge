@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,1325 +8,401 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "1 වන දිනය: මූලික ආචාර කිරීම්",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_1_1", "target": "Ciao", "phonetic": "චාඕ", "native_meaning": "ආයුබෝවන් / ආයුබෝවන් (අවිධිමත්)", "english": "Hello / Bye (informal)" },
+        { "id": "w1_1_2", "target": "Buongiorno", "phonetic": "බුඔන්-ජෝර්-නෝ", "native_meaning": "සුබ උදෑසනක්", "english": "Good morning" },
+        { "id": "w1_1_3", "target": "Buonasera", "phonetic": "බුඔ-නා-සේ-රා", "native_meaning": "සුබ සන්ධ්‍යාවක්", "english": "Good evening" },
+        { "id": "w1_1_4", "target": "Arrivederci", "phonetic": "අර්-රි-වෙ-දේර්-චි", "native_meaning": "ගිහින් එන්නම් (විධිමත්)", "english": "Goodbye (formal)" },
+        { "id": "w1_1_5", "target": "Grazie", "phonetic": "ග්‍රා-ත්සි-යේ", "native_meaning": "ස්තූතියි", "english": "Thank you" },
+        { "id": "w1_1_6", "target": "Prego", "phonetic": "ප්‍රේ-ගෝ", "native_meaning": "ඔබව සාදරයෙන් පිළිගනිමු", "english": "You're welcome" },
+        { "id": "w1_1_7", "target": "Scusa", "phonetic": "ස්කූ-සා", "native_meaning": "සමාවෙන්න (අවිධිමත්)", "english": "Excuse me / Sorry (informal)" },
+        { "id": "w1_1_8", "target": "Per favore", "phonetic": "පෙර් ෆ-වෝ-රේ", "native_meaning": "කරුණාකර", "english": "Please" }
+      ],
+      "sentences": [
+        { "id": "s1_1_1", "target": "Buongiorno, signore.", "native": "සුබ උදෑසනක්, මහත්මයා.", "phonetic": "බුඔන්-ජෝර්-නෝ, සින්-යෝ-රේ" },
+        { "id": "s1_1_2", "target": "Ciao, come stai?", "native": "ආයුබෝවන්, කොහොමද ඔයාට? (අවිධිමත්)", "phonetic": "චාඕ, කෝ-මේ ස්තා-යි?" },
+        { "id": "s1_1_3", "target": "Grazie mille.", "native": "බොහොම ස්තූතියි.", "phonetic": "ග්‍රා-ත්සි-යේ මිල්-ලේ" },
+        { "id": "s1_1_4", "target": "Scusa, dov'è il bagno?", "native": "සමාවෙන්න, නානකාමරය කොහෙද?", "phonetic": "ස්කූ-සා, දෝ-වේ ඉල් බාන්-යෝ?" },
+        { "id": "s1_1_5", "target": "Arrivederci, a domani.", "native": "ගිහින් එන්නම්, හෙට හමුවෙමු.", "phonetic": "අර්-රි-වෙ-දේර්-චි, ආ දෝ-මා-නි" },
+        { "id": "s1_1_6", "target": "Un caffè, per favore.", "native": "කෝපි එකක්, කරුණාකර.", "phonetic": "උන් කෆ්-ෆේ, පෙර් ෆ-වෝ-රේ" },
+        { "id": "s1_1_7", "target": "Buonasera, come va?", "native": "සුබ සන්ධ්‍යාවක්, කොහොමද?", "phonetic": "බුඔ-නා-සේ-රා, කෝ-මේ වා?" },
+        { "id": "s1_1_8", "target": "Prego, si accomodi.", "native": "ඔබව සාදරයෙන් පිළිගනිමු, වාඩිවෙන්න.", "phonetic": "ප්‍රේ-ගෝ, සි අක්-කෝ-මෝ-දි" }
       ],
       "dialogues": [
-        {
-          "id": "d1_1_1",
-          "context": "Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_1_1", "context": "කඩයකට ඇතුළු වීම.", "lines": [
+            { "speaker": "A", "target": "Buongiorno!", "native": "සුබ උදෑසනක්!", "phonetic": "බුඔන්-ජෝර්-නෝ!" },
+            { "speaker": "B", "target": "Buongiorno! Come posso aiutarla?", "native": "සුබ උදෑසනක්! මම ඔබට උදව් කරන්නේ කෙසේද?", "phonetic": "බුඔන්-ජෝර්-නෝ! කෝ-මේ පොස්-සෝ අ-යු-තාර්-ලා?" }
+        ]},
+        { "id": "d1_1_2", "context": "යමක් ඉල්ලා සිටීම.", "lines": [
+            { "speaker": "A", "target": "Un biglietto, per favore.", "native": "ටිකට් එකක්, කරුණාකර.", "phonetic": "උන් බිල්-යෙත්-තෝ, පෙර් ෆ-වෝ-රේ" },
+            { "speaker": "B", "target": "Ecco a lei.", "native": "මෙන්න ගන්න.", "phonetic": "එක්-කෝ ආ ලෙ-යි" }
+        ]},
+        { "id": "d1_1_3", "context": "ස්තුති කිරීම.", "lines": [
+            { "speaker": "A", "target": "Grazie.", "native": "ස්තූතියි.", "phonetic": "ග්‍රා-ත්සි-යේ" },
+            { "speaker": "B", "target": "Prego.", "native": "ඔබව සාදරයෙන් පිළිගනිමු.", "phonetic": "ප්‍රේ-ගෝ" }
+        ]},
+        { "id": "d1_1_4", "context": "මිතුරෙකුගෙන් සමුගැනීම.", "lines": [
+            { "speaker": "A", "target": "Ciao, a dopo!", "native": "ආයුබෝවන්, පසුව හමුවෙමු!", "phonetic": "චාඕ, ආ දෝ-පෝ!" },
+            { "speaker": "B", "target": "Ciao!", "native": "ආයුබෝවන්!", "phonetic": "චාඕ!" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_1_1", "target": "Buongiorno", "native": "සුබ උදෑසනක්" },
+          { "id": "m1_1_2", "target": "Grazie", "native": "ස්තූතියි" },
+          { "id": "m1_1_3", "target": "Per favore", "native": "කරුණාකර" },
+          { "id": "m1_1_4", "target": "Arrivederci", "native": "ගිහින් එන්නම්" }
+      ]},
+      "cultural_note": "ඉතාලියේදී, ඔබ වෙළඳසැලකට හෝ අවන්හලකට ඇතුළු වන විට සහ පිටවන විට ආචාරශීලීව ආචාර කිරීම සාමාන්‍ය සිරිතකි. 'Buongiorno' සහ 'Buonasera' බහුලව භාවිතා වේ.",
+      "pronunciation_tip": "'Grazie' හි 'zie' ශබ්දය 'ත්සි-යේ' ලෙස උච්චාරණය කෙරේ, 'සී' ලෙස නොවේ. 'r' ශබ්දය සිංහල 'ර' ශබ්දයට සමානයි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D1-Greetings-IT" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Introducing Yourself",
+      "title_native": "2 වන දිනය: ඔබව හඳුන්වා දීම",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_2_1", "target": "Mi chiamo", "phonetic": "මි ක්යා-මෝ", "native_meaning": "මගේ නම", "english": "My name is" },
+        { "id": "w1_2_2", "target": "Io sono", "phonetic": "ඊ-යෝ සෝ-නෝ", "native_meaning": "මම වෙමි", "english": "I am" },
+        { "id": "w1_2_3", "target": "Piacere", "phonetic": "ප්යා-චේ-රේ", "native_meaning": "හමුවීම සතුටක්", "english": "Nice to meet you" },
+        { "id": "w1_2_4", "target": "E tu?", "phonetic": "ඒ තූ?", "native_meaning": "සහ ඔබ? (අවිධිමත්)", "english": "And you? (informal)" },
+        { "id": "w1_2_5", "target": "Signore", "phonetic": "සින්-යෝ-රේ", "native_meaning": "මහත්මයා", "english": "Mr. / Sir" },
+        { "id": "w1_2_6", "target": "Signora", "phonetic": "සින්-යෝ-රා", "native_meaning": "මහත්මිය", "english": "Mrs. / Ma'am" },
+        { "id": "w1_2_7", "target": "Molto lieto", "phonetic": "මොල්-තෝ ල්යේ-තෝ", "native_meaning": "ඉතා සතුටුයි (පිරිමි)", "english": "Very pleased to meet you (male)" },
+        { "id": "w1_2_8", "target": "Molto lieta", "phonetic": "මොල්-තා ල්යේ-තා", "native_meaning": "ඉතා සතුටුයි (කාන්තා)", "english": "Very pleased to meet you (female)" }
+      ],
+      "sentences": [
+        { "id": "s1_2_1", "target": "Ciao, mi chiamo Sunil.", "native": "ආයුබෝවන්, මගේ නම සුනිල්.", "phonetic": "චාඕ, මි ක්යා-මෝ සුනිල්" },
+        { "id": "s1_2_2", "target": "Piacere, io sono Maria.", "native": "හමුවීම සතුටක්, මම මාරියා.", "phonetic": "ප්යා-චේ-රේ, ඊ-යෝ සෝ-නෝ මාරියා" },
+        { "id": "s1_2_3", "target": "Buongiorno, Signore Rossi.", "native": "සුබ උදෑසනක්, රොසී මහත්මයා.", "phonetic": "බුඔන්-ජෝර්-නෝ, සින්-යෝ-රේ රොස්සි" },
+        { "id": "s1_2_4", "target": "Molto lieto. E tu?", "native": "හමුවීම ගැන ඉතා සතුටුයි. සහ ඔබ?", "phonetic": "මොල්-තෝ ල්යේ-තෝ. ඒ තූ?" },
+        { "id": "s1_2_5", "target": "Io sono un lavoratore.", "native": "මම සේවකයෙක්.", "phonetic": "ඊ-යෝ සෝ-නෝ උන් ල-වෝ-රා-තෝ-රේ" },
+        { "id": "s1_2_6", "target": "Buonasera, Signora Bianchi.", "native": "සුබ සන්ධ්‍යාවක්, බියන්කි මහත්මිය.", "phonetic": "බුඔ-නා-සේ-රා, සින්-යෝ-රා බ්යාන්-කි" },
+        { "id": "s1_2_7", "target": "Piacere di conoscerti.", "native": "ඔබව හඳුනාගැනීම සතුටක්.", "phonetic": "ප්යා-චේ-රේ දි කො-නෝ-ෂර්-ති" },
+        { "id": "s1_2_8", "target": "Lei è la Signora Verdi?", "native": "ඔබ වර්ඩි මහත්මියද?", "phonetic": "ලෙ-යි ඒ ලා සින්-යෝ-රා වේර්-දි?" }
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_2_1", "context": "පළමු වතාවට කෙනෙකුව හමුවීම.", "lines": [
+            { "speaker": "A", "target": "Ciao, io sono Marco. E tu?", "native": "ආයුබෝවන්, මම මාර්කෝ. සහ ඔබ?", "phonetic": "චාඕ, ඊ-යෝ සෝ-නෝ මාර්-කෝ. ඒ තූ?" },
+            { "speaker": "B", "target": "Mi chiamo Nimal. Piacere.", "native": "මගේ නම නිමල්. හමුවීම සතුටක්.", "phonetic": "මි ක්යා-මෝ නිමල්. ප්යා-චේ-රේ" }
+        ]},
+        { "id": "d1_2_2", "context": "විධිමත් ලෙස හඳුන්වා දීම.", "lines": [
+            { "speaker": "A", "target": "Buongiorno, Signore. Mi chiamo Kumar.", "native": "සුබ උදෑසනක්, මහත්මයා. මගේ නම කුමාර්.", "phonetic": "බුඔන්-ජෝර්-නෝ, සින්-යෝ-රේ. මි ක්යා-මෝ කුමාර්" },
+            { "speaker": "B", "target": "Buongiorno. Molto lieto.", "native": "සුබ උදෑසනක්. හමුවීම ඉතා සතුටක්.", "phonetic": "බුඔන්-ජෝර්-නෝ. මොල්-තෝ ල්යේ-තෝ" }
+        ]},
+        { "id": "d1_2_3", "context": "කණ්ඩායමකට හඳුන්වා දීම.", "lines": [
+            { "speaker": "A", "target": "Lui è Paolo.", "native": "මෙයා පාවුලෝ.", "phonetic": "ලූ-යි ඒ පාවු-ලෝ" },
+            { "speaker": "B", "target": "Piacere, io sono Fatima.", "native": "හමුවීම සතුටක්, මම ෆාතිමා.", "phonetic": "ප්යා-චේ-රේ, ඊ-යෝ සෝ-නෝ ෆා-ති-මා" }
+        ]},
+        { "id": "d1_2_4", "context": "කාන්තාවක් තවත් කෙනෙකුට හඳුන්වා දීම.", "lines": [
+            { "speaker": "A", "target": "Piacere, mi chiamo Sofia.", "native": "හමුවීම සතුටක්, මගේ නම සෝෆියා.", "phonetic": "ප්යා-චේ-රේ, මි ක්යා-මෝ සෝ-ෆි-යා" },
+            { "speaker": "B", "target": "Molto lieta, Sofia.", "native": "හමුවීම ඉතා සතුටක්, සෝෆියා.", "phonetic": "මොල්-තා ල්යේ-තා, සෝ-ෆි-යා" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_2_1", "target": "Mi chiamo", "native": "මගේ නම" },
+          { "id": "m1_2_2", "target": "Piacere", "native": "හමුවීම සතුටක්" },
+          { "id": "m1_2_3", "target": "Io sono", "native": "මම වෙමි" },
+          { "id": "m1_2_4", "target": "Signore", "native": "මහත්මයා" }
+      ]},
+      "cultural_note": "ඉතාලි ජාතිකයන් තමන්ව හඳුන්වා දෙන විට අතට අත දීම සාමාන්‍ය දෙයකි. 'Molto lieto' (පිරිමි) සහ 'Molto lieta' (කාන්තා) යනු 'Piacere' සඳහා වඩා විධිමත් විකල්ප වේ.",
+      "pronunciation_tip": "'Chiamo' හි 'chi' ශබ්දය ඉංග්‍රීසි 'key' හි මෙන් 'කි' ලෙස උච්චාරණය කෙරේ, 'චි' ලෙස නොවේ. 'gn' ශබ්දය සිංහල 'ඤ' ශබ්දයට සමානයි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D2-Intro-IT" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Asking Someone's Name",
+      "title_native": "3 වන දිනය: කෙනෙකුගේ නම ඇසීම",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_3_1", "target": "Come ti chiami?", "phonetic": "කෝ-මේ ති ක්යා-මි?", "native_meaning": "ඔබේ නම කුමක්ද? (අවිධිමත්)", "english": "What is your name? (informal)" },
+        { "id": "w1_3_2", "target": "Come si chiama?", "phonetic": "කෝ-මේ සි ක්යා-මා?", "native_meaning": "ඔබගේ නම කුමක්ද? (විධිමත්)", "english": "What is your name? (formal)" },
+        { "id": "w1_3_3", "target": "Il mio nome è", "phonetic": "ඉල් මී-යෝ නෝ-මේ ඒ", "native_meaning": "මගේ නම වන්නේ", "english": "My name is" },
+        { "id": "w1_3_4", "target": "Qual è il tuo nome?", "phonetic": "ක්වාල් ඒ ඉල් තූ-ඕ නෝ-මේ?", "native_meaning": "ඔබේ නම කුමක්ද?", "english": "What is your name?" },
+        { "id": "w1_3_5", "target": "Lui si chiama", "phonetic": "ලූ-යි සි ක්යා-මා", "native_meaning": "ඔහුගේ නම", "english": "His name is" },
+        { "id": "w1_3_6", "target": "Lei si chiama", "phonetic": "ලෙ-යි සි ක්යා-මා", "native_meaning": "ඇයගේ නම", "english": "Her name is" },
+        { "id": "w1_3_7", "target": "Questo è", "phonetic": "ක්වේස්-තෝ ඒ", "native_meaning": "මේ ඉන්නේ (පිරිමි)", "english": "This is (male)" },
+        { "id": "w1_3_8", "target": "Questa è", "phonetic": "ක්වේස්-තා ඒ", "native_meaning": "මේ ඉන්නේ (කාන්තා)", "english": "This is (female)" }
+      ],
+      "sentences": [
+        { "id": "s1_3_1", "target": "Ciao, come ti chiami?", "native": "ආයුබෝවන්, ඔයාගේ නම මොකක්ද?", "phonetic": "චාඕ, කෝ-මේ ති ක්යා-මි?" },
+        { "id": "s1_3_2", "target": "Buongiorno, come si chiama Lei?", "native": "සුබ උදෑසනක්, ඔබතුමාගේ/ඔබතුමියගේ නම කුමක්ද?", "phonetic": "බුඔන්-ජෝර්-නෝ, කෝ-මේ සි ක්යා-මා ලෙ-යි?" },
+        { "id": "s1_3_3", "target": "Il mio nome è Lara.", "native": "මගේ නම ලාරා.", "phonetic": "ඉල් මී-යෝ නෝ-මේ ඒ ලා-රා" },
+        { "id": "s1_3_4", "target": "Questo è il mio amico, David.", "native": "මේ මගේ මිතුරා, ඩේවිඩ්.", "phonetic": "ක්වේස්-තෝ ඒ ඉල් මී-යෝ අ-මී-කෝ, ඩේවිඩ්" },
+        { "id": "s1_3_5", "target": "Lui si chiama Alessandro.", "native": "ඔහුගේ නම ඇලෙස්සැන්ඩ්‍රෝ.", "phonetic": "ලූ-යි සි ක්යා-මා අ-ලෙස්-සන්-ද්‍රෝ" },
+        { "id": "s1_3_6", "target": "Questa è la mia collega, Anna.", "native": "මේ මගේ සහෝදර සේවිකාව, ඇනා.", "phonetic": "ක්වේස්-තා ඒ ලා මී-යා කොල්-ලේ-ගා, අන්-නා" },
+        { "id": "s1_3_7", "target": "Piacere, qual è il tuo nome?", "native": "හමුවීම සතුටක්, ඔයාගේ නම මොකක්ද?", "phonetic": "ප්යා-චේ-රේ, ක්වාල් ඒ ඉල් තූ-ඕ නෝ-මේ?" },
+        { "id": "s1_3_8", "target": "Lei si chiama Dottor Verdi?", "native": "ඔබගේ නම වෛද්‍ය වර්ඩි ද?", "phonetic": "ලෙ-යි සි ක්යා-මා දොත්-තෝර් වේර්-දි?" }
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_3_1", "context": "අවිධිමත් ලෙස නම ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Ciao! Come ti chiami?", "native": "ආයුබෝවන්! ඔයාගේ නම මොකක්ද?", "phonetic": "චාඕ! කෝ-මේ ති ක්යා-මි?" },
+            { "speaker": "B", "target": "Mi chiamo Sara. E tu?", "native": "මගේ නම සාරා. ඔයාගේ?", "phonetic": "මි ක්යා-මෝ සා-රා. ඒ තූ?" }
+        ]},
+        { "id": "d1_3_2", "context": "විධිමත් ලෙස නම ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Buongiorno. Come si chiama Lei?", "native": "සුබ උදෑසනක්. ඔබගේ නම කුමක්ද?", "phonetic": "බුඔන්-ජෝර්-නෝ. කෝ-මේ සි ක්යා-මා ලෙ-යි?" },
+            { "speaker": "B", "target": "Buongiorno. Mi chiamo Signor Esposito.", "native": "සුබ උදෑසනක්. මගේ නම එස්පොසිතෝ මහතා.", "phonetic": "බුඔන්-ජෝර්-නෝ. මි ක්යා-මෝ සින්-යෝර් එස්-පෝ-සි-තෝ" }
+        ]},
+        { "id": "d1_3_3", "context": "වෙනත් කෙනෙකුගේ නම ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Come si chiama lui?", "native": "ඔහුගේ නම කුමක්ද?", "phonetic": "කෝ-මේ සි ක්යා-මා ලූ-යි?" },
+            { "speaker": "B", "target": "Lui si chiama Roberto.", "native": "ඔහුගේ නම රොබර්ටෝ.", "phonetic": "ලූ-යි සි ක්යා-මා රො-බේර්-තෝ" }
+        ]},
+        { "id": "d1_3_4", "context": "කෙනෙකු හඳුන්වා දීම.", "lines": [
+            { "speaker": "A", "target": "Questa è la mia amica, Chiara.", "native": "මේ මගේ යෙහෙළිය, කියාරා.", "phonetic": "ක්වේස්-තා ඒ ලා මී-යා අ-මී-කා, ක්යා-රා" },
+            { "speaker": "B", "target": "Piacere, Chiara. Io sono Luca.", "native": "හමුවීම සතුටක්, කියාරා. මම ලූකා.", "phonetic": "ප්යා-චේ-රේ, ක්යා-රා. ඊ-යෝ සෝ-නෝ ලූ-කා" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_3_1", "target": "Come ti chiami?", "native": "ඔබේ නම කුමක්ද? (අවිධිමත්)" },
+          { "id": "m1_3_2", "target": "Come si chiama?", "native": "ඔබගේ නම කුමක්ද? (විධිමත්)" },
+          { "id": "m1_3_3", "target": "Il mio nome è", "native": "මගේ නම වන්නේ" },
+          { "id": "m1_3_4", "target": "Lui si chiama", "native": "ඔහුගේ නම" }
+      ]},
+      "cultural_note": "ඉතාලියේදී, වයසින් වැඩි හෝ ඔබ නොදන්නා කෙනෙකුට 'Lei' (විධිමත් 'ඔබ') යනුවෙන් ඇමතීම ගෞරවයකි. මිතුරන් සහ සම වයසේ අය සඳහා 'tu' (අවිධිමත් 'ඔබ') භාවිතා වේ.",
+      "pronunciation_tip": "'Qual è' හි 'e' ශබ්දය අවධාරණය කර උච්චාරණය කෙරේ (ක්වාල්-ඒ). 'ch' ශබ්දය සැමවිටම 'ක' ශබ්දයක් ලෙස උච්චාරණය කරයි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D3-Name-IT" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Nationality and Country",
+      "title_native": "4 වන දිනය: ජාතිකත්වය සහ රට",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_4_1", "target": "Di dove sei?", "phonetic": "දි දෝ-වේ සෙ-යි?", "native_meaning": "ඔබ කොහේ සිටද? (අවිධිමත්)", "english": "Where are you from? (informal)" },
+        { "id": "w1_4_2", "target": "Sono dello Sri Lanka", "phonetic": "සෝ-නෝ දෙල්-ලෝ ශ්‍රී ලංකා", "native_meaning": "මම ශ්‍රී ලංකාවෙන්", "english": "I am from Sri Lanka" },
+        { "id": "w1_4_3", "target": "Paese", "phonetic": "පා-ඒ-සේ", "native_meaning": "රට", "english": "Country" },
+        { "id": "w1_4_4", "target": "Nazionalità", "phonetic": "නා-ත්සියෝ-නා-ලි-තා", "native_meaning": "ජාතිකත්වය", "english": "Nationality" },
+        { "id": "w1_4_5", "target": "Italiano / Italiana", "phonetic": "ඉ-තා-ල්යා-නෝ / ඉ-තා-ල්යා-නා", "native_meaning": "ඉතාලි ජාතික (පිරිමි/කාන්තා)", "english": "Italian (male/female)" },
+        { "id": "w1_4_6", "target": "Straniero / Straniera", "phonetic": "ස්ත්‍රා-න්යේ-රෝ / ස්ත්‍රා-න්යේ-රා", "native_meaning": "විදේශික (පිරිමි/කාන්තා)", "english": "Foreigner (male/female)" },
+        { "id": "w1_4_7", "target": "Benvenuto / Benvenuta", "phonetic": "බෙන්-වෙ-නූ-තෝ / බෙන්-වෙ-නූ-තා", "native_meaning": "සාදරයෙන් පිළිගනිමු (පිරිමි/කාන්තා)", "english": "Welcome (male/female)" },
+        { "id": "w1_4_8", "target": "Abito a", "phonetic": "ආ-බි-තෝ ආ", "native_meaning": "මම ජීවත් වන්නේ", "english": "I live in" }
+      ],
+      "sentences": [
+        { "id": "s1_4_1", "target": "Di che paese sei?", "native": "ඔබ කුමන රටකින්ද?", "phonetic": "දි කේ පා-ඒ-සේ සෙ-යි?" },
+        { "id": "s1_4_2", "target": "Io sono dello Sri Lanka.", "native": "මම ශ්‍රී ලංකාවෙන්.", "phonetic": "ඊ-යෝ සෝ-නෝ දෙල්-ලෝ ශ්‍රී ලංකා" },
+        { "id": "s1_4_3", "target": "Lui è italiano.", "native": "ඔහු ඉතාලි ජාතිකයෙක්.", "phonetic": "ලූ-යි ඒ ඉ-තා-ල්යා-නෝ" },
+        { "id": "s1_4_4", "target": "Qual è la tua nazionalità?", "native": "ඔබගේ ජාතිකත්වය කුමක්ද?", "phonetic": "ක්වාල් ඒ ලා තූ-ආ නා-ත්සියෝ-නා-ලි-තා?" },
+        { "id": "s1_4_5", "target": "Abito a Roma.", "native": "මම රෝමයේ ජීවත් වෙමි.", "phonetic": "ආ-බි-තෝ ආ රෝ-මා" },
+        { "id": "s1_4_6", "target": "Benvenuto in Italia!", "native": "ඉතාලියට සාදරයෙන් පිළිගනිමු!", "phonetic": "බෙන්-වෙ-නූ-තෝ ඉන් ඉ-තා-ල්යා!" },
+        { "id": "s1_4_7", "target": "Lei è straniera.", "native": "ඇය විදේශික කාන්තාවක්.", "phonetic": "ලෙ-යි ඒ ස්ත්‍රා-න්යේ-රා" },
+        { "id": "s1_4_8", "target": "Di dove è Lei?", "native": "ඔබ කොහේ සිටද? (විධිමත්)", "phonetic": "දි දෝ-වේ ඒ ලෙ-යි?" }
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_4_1", "context": "කෙනෙකුගේ රට ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Ciao, di dove sei?", "native": "ආයුබෝවන්, ඔබ කොහේ සිටද?", "phonetic": "චාඕ, දි දෝ-වේ සෙ-යි?" },
+            { "speaker": "B", "target": "Sono dello Sri Lanka. E tu?", "native": "මම ශ්‍රී ලංකාවෙන්. ඔබ?", "phonetic": "සෝ-නෝ දෙල්-ලෝ ශ්‍රී ලංකා. ඒ තූ?" }
+        ]},
+        { "id": "d1_4_2", "context": "තම ජාතිකත්වය පැවසීම.", "lines": [
+            { "speaker": "A", "target": "Sei italiano?", "native": "ඔබ ඉතාලි ජාතිකයෙක්ද?", "phonetic": "සෙ-යි ඉ-තා-ල්යා-නෝ?" },
+            { "speaker": "B", "target": "No, sono srilankese.", "native": "නැහැ, මම ශ්‍රී ලාංකිකයෙක්.", "phonetic": "නෝ, සෝ-නෝ ශ්‍රී-ලන්-කේ-සේ" }
+        ]},
+        { "id": "d1_4_3", "context": "විදේශිකයෙකු පිළිගැනීම.", "lines": [
+            { "speaker": "A", "target": "Benvenuto nel nostro team!", "native": "අපේ කණ්ඩායමට සාදරයෙන් පිළිගනිමු!", "phonetic": "බෙන්-වෙ-නූ-තෝ නෙල් නොස්-ත්‍රෝ ටීම්!" },
+            { "speaker": "B", "target": "Grazie mille!", "native": "බොහොම ස්තූතියි!", "phonetic": "ග්‍රා-ත්සි-යේ මිල්-ලේ!" }
+        ]},
+        { "id": "d1_4_4", "context": "ජීවත් වන ස්ථානය ගැන කතා කිරීම.", "lines": [
+            { "speaker": "A", "target": "Abito a Milano. E tu?", "native": "මම මිලාන් වල ජීවත් වෙන්නේ. ඔබ?", "phonetic": "ආ-බි-තෝ ආ මි-ලා-නෝ. ඒ තූ?" },
+            { "speaker": "B", "target": "Anche io abito a Milano.", "native": "මමත් මිලාන් වල ජීවත් වෙන්නේ.", "phonetic": "අන්-කේ ඊ-යෝ ආ-බි-තෝ ආ මි-ලා-නෝ" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_4_1", "target": "Di dove sei?", "native": "ඔබ කොහේ සිටද?" },
+          { "id": "m1_4_2", "target": "Paese", "native": "රට" },
+          { "id": "m1_4_3", "target": "Nazionalità", "native": "ජාතිකත්වය" },
+          { "id": "m1_4_4", "target": "Benvenuto", "native": "සාදරයෙන් පිළිගනිමු" }
+      ]},
+      "cultural_note": "ඉතාලි ජාතිකයන් තම ප්‍රාදේශීය අනන්‍යතාවය ගැන ඉතා ආඩම්බර වෙති. කෙනෙක් 'Di dove sei?' ඇසූ විට, ඔවුන් බොහෝ විට තම රටට වඩා නගරය හෝ කලාපය සඳහන් කරයි.",
+      "pronunciation_tip": "'Sri Lanka' සඳහා ඉතාලි භාෂාවේ නිශ්චිත වචනයක් නොමැත, එබැවින් එය එලෙසම භාවිතා වේ. ජාතිකත්වය 'srilankese' ලෙස හැඳින්වේ. 'gli' ශබ්දය 'ග්ලි' නොව, 'ල්-යි' වැනි ශබ්දයකි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D4-Country-IT" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Polite Expressions",
+      "title_native": "5 වන දිනය: ආචාරශීලී ප්‍රකාශන",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_5_1", "target": "Mi dispiace", "phonetic": "මි දිස්-ප්යා-චේ", "native_meaning": "මට කණගාටුයි", "english": "I'm sorry" },
+        { "id": "w1_5_2", "target": "Permesso", "phonetic": "පෙර්-මෙස්-සෝ", "native_meaning": "අවසරයි (කාමරයකට ඇතුළු වන විට)", "english": "Excuse me (entering a room)" },
+        { "id": "w1_5_3", "target": "Con permesso", "phonetic": "කොන් පෙර්-මෙස්-සෝ", "native_meaning": "අවසරය ඇතිව (සමූහයක් අතරින් යන විට)", "english": "With permission (passing through)" },
+        { "id": "w1_5_4", "target": "Non c'è problema", "phonetic": "නොන් චේ ප්‍රොබ්-ලේ-මා", "native_meaning": "ප්‍රශ්නයක් නැහැ", "english": "No problem" },
+        { "id": "w1_5_5", "target": "Figurati", "phonetic": "ෆි-ගූ-රා-ති", "native_meaning": "කමක් නෑ (අවිධිමත්)", "english": "Don't worry about it (informal)" },
+        { "id": "w1_5_6", "target": "Salute!", "phonetic": "ස-ලූ-තේ!", "native_meaning": "චියර්ස්! / ආශිර්වාද!", "english": "Cheers! / Bless you!" },
+        { "id": "w1_5_7", "target": "Non capisco", "phonetic": "නොන් ක-පීස්-කෝ", "native_meaning": "මට තේරෙන්නේ නැහැ", "english": "I don't understand" },
+        { "id": "w1_5_8", "target": "Può ripetere?", "phonetic": "පුඕ රි-පේ-තෙ-රේ?", "native_meaning": "ඔබට නැවත කිව හැකිද?", "english": "Can you repeat?" }
+      ],
+      "sentences": [
+        { "id": "s1_5_1", "target": "Mi dispiace, sono in ritardo.", "native": "මට කණගාටුයි, මම පරක්කුයි.", "phonetic": "මි දිස්-ප්යා-චේ, සෝ-නෝ ඉන් රි-තාර්-දෝ" },
+        { "id": "s1_5_2", "target": "Permesso, posso entrare?", "native": "අවසරයි, මට ඇතුළට එන්න පුලුවන්ද?", "phonetic": "පෙර්-මෙස්-සෝ, පොස්-සෝ එන්-ත්‍රා-රේ?" },
+        { "id": "s1_5_3", "target": "Scusi, non capisco.", "native": "සමාවෙන්න, මට තේරෙන්නේ නැහැ.", "phonetic": "ස්කූ-සි, නොන් ක-පීස්-කෝ" },
+        { "id": "s1_5_4", "target": "Può parlare più lentamente, per favore?", "native": "ඔබට කරුණාකර තව ටිකක් සෙමින් කතා කළ හැකිද?", "phonetic": "පුඕ පර්-ලා-රේ පියු ලෙන්-තා-මෙන්-තේ, පෙර් ෆ-වෝ-රේ?" },
+        { "id": "s1_5_5", "target": "Grazie per l'aiuto. - Figurati!", "native": "උදව්වට ස්තූතියි. - කමක් නෑ!", "phonetic": "ග්‍රා-ත්සි-යේ පෙර් ල-යූ-තෝ. - ෆි-ගූ-රා-ති!" },
+        { "id": "s1_5_6", "target": "Salute! A noi!", "native": "චියර්ස්! අපිට!", "phonetic": "ස-ලූ-තේ! ආ නෝ-යි!" },
+        { "id": "s1_5_7", "target": "Mi dispiace, non parlo italiano molto bene.", "native": "මට කණගාටුයි, මම ඉතාලි භාෂාව එතරම් හොඳින් කතා කරන්නේ නැහැ.", "phonetic": "මි දිස්-ප්යා-චේ, නොන් පාර්-ලෝ ඉ-තා-ල්යා-නෝ මොල්-තෝ බේ-නේ" },
+        { "id": "s1_5_8", "target": "Non c'è problema, ti aiuto io.", "native": "ප්‍රශ්නයක් නෑ, මම ඔයාට උදව් කරන්නම්.", "phonetic": "නොන් චේ ප්‍රොබ්-ලේ-මා, ති අ-යූ-තෝ ඊ-යෝ" }
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_5_1", "context": "යමක් තේරුම් නොගත් විට.", "lines": [
+            { "speaker": "A", "target": "Allora, devi girare a destra.", "native": "හරි, ඔයා දකුණට හැරෙන්න ඕන.", "phonetic": "අල්-ලෝ-රා, දේ-වි ජි-රා-රේ ආ දෙස්-ත්‍රා" },
+            { "speaker": "B", "target": "Mi dispiace, non capisco. Può ripetere?", "native": "මට කණගාටුයි, මට තේරෙන්නේ නැහැ. ඔබට නැවත කිව හැකිද?", "phonetic": "මි දිස්-ප්යා-චේ, නොන් ක-පීස්-කෝ. පුඕ රි-පේ-තෙ-රේ?" }
+        ]},
+        { "id": "d1_5_2", "context": "කාමරයකට ඇතුළු වීමට අවසර ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "Permesso?", "native": "අවසරයි?", "phonetic": "පෙර්-මෙස්-සෝ?" },
+            { "speaker": "B", "target": "Sì, prego, entri pure.", "native": "ඔව්, කරුණාකර, ඇතුළට එන්න.", "phonetic": "සී, ප්‍රේ-ගෝ, එන්-ත්‍රි පූ-රේ" }
+        ]},
+        { "id": "d1_5_3", "context": "සුළු වැරැද්දකට සමාව අයැදීම.", "lines": [
+            { "speaker": "A", "target": "Oh, scusa!", "native": "ඕ, සමාවෙන්න!", "phonetic": "ඕ, ස්කූ-සා!" },
+            { "speaker": "B", "target": "Non c'è problema. Figurati!", "native": "ප්‍රශ්නයක් නෑ. කමක් නෑ!", "phonetic": "නොන් චේ ප්‍රොබ්-ලේ-මා. ෆි-ගූ-රා-ති!" }
+        ]},
+        { "id": "d1_5_4", "context": "කෙනෙක් කිවිසින විට.", "lines": [
+            { "speaker": "A", "target": "Ecciù!", "native": "හචිස්!", "phonetic": "එත්-චූ!" },
+            { "speaker": "B", "target": "Salute!", "native": "ආශිර්වාද!", "phonetic": "ස-ලූ-තේ!" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_5_1", "target": "Mi dispiace", "native": "මට කණගාටුයි" },
+          { "id": "m1_5_2", "target": "Non capisco", "native": "මට තේරෙන්නේ නැහැ" },
+          { "id": "m1_5_3", "target": "Permesso", "native": "අවසරයි" },
+          { "id": "m1_5_4", "target": "Non c'è problema", "native": "ප්‍රශ්නයක් නැහැ" }
+      ]},
+      "cultural_note": "ඉතාලියේ, පොදු ප්‍රවාහනයේ හෝ ජනාකීර්ණ ස්ථානයකදී කෙනෙකු පසුකර යන විට 'Permesso' හෝ 'Con permesso' කීම ඉතා ආචාරශීලී වේ. යමෙක් කිවිසින විට 'Salute!' කීම සිරිතකි.",
+      "pronunciation_tip": "'Mi dispiace' හි 'sc' ශබ්දය 'sh' ශබ්දයට සමානයි, 'ෂ්'. නමුත් 'Capisco' හි 'sc' ශබ්දය 'sk' ලෙස උච්චාරණය කෙරේ.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D5-Polite-IT" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Yes / No / Maybe",
+      "title_native": "6 වන දිනය: ඔව් / නෑ / සමහරවිට",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_6_1", "target": "Sì", "phonetic": "සී", "native_meaning": "ඔව්", "english": "Yes" },
+        { "id": "w1_6_2", "target": "No", "phonetic": "නෝ", "native_meaning": "නැහැ", "english": "No" },
+        { "id": "w1_6_3", "target": "Forse", "phonetic": "ෆෝර්-සේ", "native_meaning": "සමහරවිට", "english": "Maybe" },
+        { "id": "w1_6_4", "target": "Certo", "phonetic": "චෙර්-තෝ", "native_meaning": "ඇත්තෙන්ම / නිසැකවම", "english": "Of course / Certainly" },
+        { "id": "w1_6_5", "target": "Va bene", "phonetic": "වා බේ-නේ", "native_meaning": "හරි / හොඳයි", "english": "Okay / Alright" },
+        { "id": "w1_6_6", "target": "Non lo so", "phonetic": "නොන් ලෝ සෝ", "native_meaning": "මම දන්නේ නැහැ", "english": "I don't know" },
+        { "id": "w1_6_7", "target": "Capito", "phonetic": "ක-පී-තෝ", "native_meaning": "තේරුණා", "english": "Understood" },
+        { "id": "w1_6_8", "target": "D'accordo", "phonetic": "දක්-කෝර්-දෝ", "native_meaning": "එකඟයි", "english": "Agreed" }
+      ],
+      "sentences": [
+        { "id": "s1_6_1", "target": "Sì, parlo un po' di italiano.", "native": "ඔව්, මම ඉතාලි ටිකක් කතා කරනවා.", "phonetic": "සී, පාර්-ලෝ උන් පෝ දි ඉ-තා-ල්යා-නෝ" },
+        { "id": "s1_6_2", "target": "No, non sono di qui.", "native": "නැහැ, මම මෙහේ කෙනෙක් නෙවෙයි.", "phonetic": "නෝ, නොන් සෝ-නෝ දි ක්වි" },
+        { "id": "s1_6_3", "target": "Forse più tardi.", "native": "සමහරවිට පසුව.", "phonetic": "ෆෝර්-සේ පියු තාර්-දි" },
+        { "id": "s1_6_4", "target": "Va bene, grazie.", "native": "හරි, ස්තූතියි.", "phonetic": "වා බේ-නේ, ග්‍රා-ත්සි-යේ" },
+        { "id": "s1_6_5", "target": "Non lo so, mi dispiace.", "native": "මම දන්නේ නැහැ, කණගාටුයි.", "phonetic": "නොන් ලෝ සෝ, මි දිස්-ප්යා-චේ" },
+        { "id": "s1_6_6", "target": "Certo, nessun problema.", "native": "ඇත්තෙන්ම, ප්‍රශ්නයක් නැහැ.", "phonetic": "චෙර්-තෝ, නෙස්-සූන් ප්‍රොබ්-ලේ-මා" },
+        { "id": "s1_6_7", "target": "Hai capito? - Sì, ho capito.", "native": "ඔයාට තේරුණාද? - ඔව්, මට තේරුණා.", "phonetic": "ආයි ක-පී-තෝ? - සී, ඕ ක-පී-තෝ" },
+        { "id": "s1_6_8", "target": "Siamo d'accordo.", "native": "අපි එකඟයි.", "phonetic": "ස්යා-මෝ දක්-කෝර්-දෝ" }
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_6_1", "context": "ප්‍රශ්නයකට පිළිතුරු දීම.", "lines": [
+            { "speaker": "A", "target": "Parli inglese?", "native": "ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "පාර්-ලි ඉන්-ග්ලේ-සේ?" },
+            { "speaker": "B", "target": "Sì, un po'.", "native": "ඔව්, ටිකක්.", "phonetic": "සී, උන් පෝ" }
+        ]},
+        { "id": "d1_6_2", "context": "යමක් ප්‍රතික්ෂේප කිරීම.", "lines": [
+            { "speaker": "A", "target": "Vuoi un caffè?", "native": "ඔබට කෝපි එකක් අවශ්‍යද?", "phonetic": "වුඕ-යි උන් කෆ්-ෆේ?" },
+            { "speaker": "B", "target": "No, grazie.", "native": "නැහැ, ස්තූතියි.", "phonetic": "නෝ, ග්‍රා-ත්සි-යේ" }
+        ]},
+        { "id": "d1_6_3", "context": "අවිනිශ්චිත බව ප්‍රකාශ කිරීම.", "lines": [
+            { "speaker": "A", "target": "Vieni alla festa stasera?", "native": "ඔබ අද රෑ පාටියට එනවද?", "phonetic": "ව්‍යේ-නි අල්-ලා ෆෙස්-තා ස්තා-සේ-රා?" },
+            { "speaker": "B", "target": "Forse. Non lo so ancora.", "native": "සමහරවිට. මම තවම දන්නේ නැහැ.", "phonetic": "ෆෝර්-සේ. නොන් ලෝ සෝ අන්-කෝ-රා" }
+        ]},
+        { "id": "d1_6_4", "context": "එකඟතාව පළ කිරීම.", "lines": [
+            { "speaker": "A", "target": "Andiamo al cinema?", "native": "අපි සිනමා ශාලාවට යමුද?", "phonetic": "අන්-ද්‍යා-මෝ අල් චී-නෙ-මා?" },
+            { "speaker": "B", "target": "Sì, va bene. D'accordo.", "native": "ඔව්, හරි. එකඟයි.", "phonetic": "සී, වා බේ-නේ. දක්-කෝර්-දෝ" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_6_1", "target": "Sì", "native": "ඔව්" },
+          { "id": "m1_6_2", "target": "No", "native": "නැහැ" },
+          { "id": "m1_6_3", "target": "Forse", "native": "සමහරවිට" },
+          { "id": "m1_6_4", "target": "Non lo so", "native": "මම දන්නේ නැහැ" }
+      ]},
+      "cultural_note": "ඉතාලි ජාතිකයන් කතා කරන විට අත් සහ මුහුණේ ඉරියව් බහුලව භාවිතා කරයි. 'ඔව්' හෝ 'නැහැ' කියන විට හිස වැනීම වැනි අභිනයන් මගින් ඔබේ පිළිතුර වඩාත් පැහැදිලි කළ හැකිය.",
+      "pronunciation_tip": "'Certo' හි 'ce' ශබ්දය ඉංග්‍රීසි 'check' හි මෙන් 'චෙ' ලෙස උච්චාරණය කෙරේ. 'Va bene' යනු ඉතා සුලභ ප්‍රකාශනයක් වන අතර එය ඉක්මනින් කතා කරන විට 'ව-බේනේ' ලෙස ඇසෙයි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D6-YesNo-IT" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Simple Conversation Practice",
+      "title_native": "7 වන දිනය: සරල සංවාද පුහුණුව",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_7_1", "target": "Come stai?", "phonetic": "කෝ-මේ ස්තා-යි?", "native_meaning": "ඔබට කොහොමද? (අවිධිමත්)", "english": "How are you? (informal)" },
+        { "id": "w1_7_2", "target": "Come sta?", "phonetic": "කෝ-මේ ස්තා?", "native_meaning": "ඔබට කොහොමද? (විධිමත්)", "english": "How are you? (formal)" },
+        { "id": "w1_7_3", "target": "Sto bene", "phonetic": "ස්තෝ බේ-නේ", "native_meaning": "මම හොඳින්", "english": "I am well" },
+        { "id": "w1_7_4", "target": "E Lei?", "phonetic": "ඒ ලෙ-යි?", "native_meaning": "සහ ඔබ? (විධිමත්)", "english": "And you? (formal)" },
+        { "id": "w1_7_5", "target": "Molto bene", "phonetic": "මොල්-තෝ බේ-නේ", "native_meaning": "ඉතා හොඳින්", "english": "Very well" },
+        { "id": "w1_7_6", "target": "Così così", "phonetic": "කෝ-සී කෝ-සී", "native_meaning": "එහෙන් මෙහෙන් (වරදක් නෑ)", "english": "So-so" },
+        { "id": "w1_7_7", "target": "Parla inglese?", "phonetic": "පාර්-ලා ඉන්-ග්ලේ-සේ?", "native_meaning": "ඔබ ඉංග්‍රීසි කතා කරනවාද?", "english": "Do you speak English?" },
+        { "id": "w1_7_8", "target": "A dopo", "phonetic": "ආ දෝ-පෝ", "native_meaning": "පසුව හමුවෙමු", "english": "See you later" }
+      ],
+      "sentences": [
+        { "id": "s1_7_1", "target": "Ciao Marco, come stai?", "native": "ආයුබෝවන් මාර්කෝ, ඔයාට කොහොමද?", "phonetic": "චාඕ මාර්-කෝ, කෝ-මේ ස්තා-යි?" },
+        { "id": "s1_7_2", "target": "Buongiorno Signora, come sta?", "native": "සුබ උදෑසනක් මහත්මිය, ඔබට කොහොමද?", "phonetic": "බුඔන්-ජෝර්-නෝ සින්-යෝ-රා, කෝ-මේ ස්තා?" },
+        { "id": "s1_7_3", "target": "Sto bene, grazie. E tu?", "native": "මම හොඳින්, ස්තූතියි. ඔයා?", "phonetic": "ස්තෝ බේ-නේ, ග්‍රා-ත්සි-යේ. ඒ තූ?" },
+        { "id": "s1_7_4", "target": "Non sto molto bene.", "native": "මට එතරම් සනීප නෑ.", "phonetic": "නොන් ස්තෝ මොල්-තෝ බේ-නේ" },
+        { "id": "s1_7_5", "target": "Scusi, parla inglese?", "native": "සමාවෙන්න, ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "ස්කූ-සි, පාර්-ලා ඉන්-ග්ලේ-සේ?" },
+        { "id": "s1_7_6", "target": "Oggi sto così così.", "native": "අද මම එහෙන් මෙහෙන් ඉන්නවා.", "phonetic": "ඔජ්-ජි ස්තෝ කෝ-සී කෝ-සී" },
+        { "id": "s1_7_7", "target": "Arrivederci, a dopo!", "native": "ගිහින් එන්නම්, පසුව හමුවෙමු!", "phonetic": "අර්-රි-වෙ-දේර්-චි, ආ දෝ-පෝ!" },
+        { "id": "s1_7_8", "target": "Sto molto bene, grazie per aver chiesto.", "native": "මම ඉතා හොඳින්, ඇසූවට ස්තූතියි.", "phonetic": "ස්තෝ මොල්-තෝ බේ-නේ, ග්‍රා-ත්සි-යේ පෙර් අ-වේර් ක්යේස්-තෝ" }
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_7_1", "context": "මිතුරෙකු සමඟ සරල සංවාදයක්.", "lines": [
+            { "speaker": "A", "target": "Ciao Nimal, come stai?", "native": "ආයුබෝවන් නිමල්, ඔයාට කොහොමද?", "phonetic": "චාඕ නිමල්, කෝ-මේ ස්තා-යි?" },
+            { "speaker": "B", "target": "Ciao! Sto bene, grazie. E tu?", "native": "ආයුබෝවන්! මම හොඳින්, ස්තූතියි. ඔයා?", "phonetic": "චාඕ! ස්තෝ බේ-නේ, ග්‍රා-ත්සි-යේ. ඒ තූ?" }
+        ]},
+        { "id": "d1_7_2", "context": "විධිමත් ලෙස සුවදුක් විමසීම.", "lines": [
+            { "speaker": "A", "target": "Buongiorno, Dottore. Come sta?", "native": "සුබ උදෑසනක්, වෛද්‍යතුමනි. ඔබට කොහොමද?", "phonetic": "බුඔන්-ජෝර්-නෝ, දොත්-තෝ-රේ. කෝ-මේ ස්තා?" },
+            { "speaker": "B", "target": "Molto bene, grazie. E Lei?", "native": "ඉතා හොඳින්, ස්තූතියි. ඔබතුමා?", "phonetic": "මොල්-තෝ බේ-නේ, ග්‍රා-ත්සි-යේ. ඒ ලෙ-යි?" }
+        ]},
+        { "id": "d1_7_3", "context": "භාෂාව ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Mi scusi, parla inglese?", "native": "සමාවෙන්න, ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "මි ස්කූ-සි, පාර්-ලා ඉන්-ග්ලේ-සේ?" },
+            { "speaker": "B", "target": "Sì, un poco. Posso aiutarla?", "native": "ඔව්, ටිකක්. මට ඔබට උදව් කළ හැකිද?", "phonetic": "සී, උන් පෝ-කෝ. පොස්-සෝ අ-යු-තාර්-ලා?" }
+        ]},
+        { "id": "d1_7_4", "context": "සංවාදයක් අවසන් කිරීම.", "lines": [
+            { "speaker": "A", "target": "Grazie per il suo tempo. Arrivederci.", "native": "ඔබගේ කාලයට ස්තූතියි. ගිහින් එන්නම්.", "phonetic": "ග්‍රා-ත්සි-යේ පෙර් ඉල් සු-ඕ තෙම්-පෝ. අර්-රි-වෙ-දේර්-චි" },
+            { "speaker": "B", "target": "Prego. A dopo!", "native": "කමක් නෑ. පසුව හමුවෙමු!", "phonetic": "ප්‍රේ-ගෝ. ආ දෝ-පෝ!" }
+        ]}
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Ciao",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Grazie",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Arrivederci",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Per favore",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Scusi",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'ස්තූතියි' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "exercises": { "matching": [
+          { "id": "m1_7_1", "target": "Come stai?", "native": "ඔබට කොහොමද?" },
+          { "id": "m1_7_2", "target": "Sto bene", "native": "මම හොඳින්" },
+          { "id": "m1_7_3", "target": "Parla inglese?", "native": "ඔබ ඉංග්‍රීසි කතා කරනවාද?" },
+          { "id": "m1_7_4", "target": "Così così", "native": "වරදක් නෑ" }
+      ]},
+      "cultural_note": "යමෙකුගෙන් 'Come stai?' ඇසූ විට, 'Sto bene, grazie' යැයි පිළිතුරු දීම ආචාරශීලී වේ. ඔබත් ඔවුන්ගෙන් 'E tu?' (අවිධිමත්) හෝ 'E Lei?' (විධිමත්) ලෙස නැවත ඇසීම සිරිතකි.",
+      "pronunciation_tip": "'Sto' හි 's' ශබ්දය ඉංග්‍රීසි 's' ශබ්දයට සමානයි, 'z' ශබ්දයක් නොවේ. 'bene' යන වචනයේ 'e' ශබ්ද දෙකම පැහැදිලිව උච්චාරණය කරන්න (බේ-නේ).",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D7-Convo-IT" }
     }
   ]
 }
