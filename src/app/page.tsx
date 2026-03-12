@@ -239,7 +239,7 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between gap-4">
                   <div>
-                    <p className="text-sm font-semibold text-slate-400">48 weeks • 7 days • 5 words/day</p>
+                    <p className="text-sm font-semibold text-slate-400">12 weeks • 7 days • 5 words/day</p>
                     <p className="mt-2 text-sm bg-green-900/40 p-2 rounded-md text-slate-300 font-mono">"Bonjour • Merci • S'il vous plaît"</p>
                   </div>
                   <Button asChild className="w-full bg-green-500 hover:bg-green-600 text-white font-bold">
@@ -258,7 +258,7 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between gap-4">
                    <div>
-                      <p className="text-sm font-semibold text-slate-400">48 weeks • 7 days • 5 chars/day</p>
+                      <p className="text-sm font-semibold text-slate-400">12 weeks • 7 days • 5 chars/day</p>
                       <p className="mt-2 text-sm bg-blue-900/40 p-2 rounded-md text-slate-300 font-mono">"A B C • あ い う • 가 나 다"</p>
                    </div>
                   <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
@@ -277,7 +277,7 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between gap-4">
                   <div>
-                    <p className="text-sm font-semibold text-slate-400">48 weeks • 7 days • 5 numbers/day</p>
+                    <p className="text-sm font-semibold text-slate-400">12 weeks • 7 days • 5 numbers/day</p>
                     <p className="mt-2 text-sm bg-purple-900/40 p-2 rounded-md text-slate-300 font-mono">"1 2 3 • Ein Zwei Drei • 一 二 三"</p>
                   </div>
                   <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
@@ -325,7 +325,7 @@ export default function LandingPage() {
               <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">Free Forever</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">€0</p>
+                  <p className="text-4xl font-extrabold mt-2">$0</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-400 my-6">
@@ -343,17 +343,17 @@ export default function LandingPage() {
 
               <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">Monthly</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">€9<span className="text-base font-medium text-slate-400">/month</span></p>
+                  <CardTitle className="font-bold text-xl">Weekly</CardTitle>
+                  <p className="text-4xl font-extrabold mt-2">$5<span className="text-base font-medium text-slate-400">/week</span></p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All 3 paths</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All 48 weeks</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Full week access</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Audio pronunciation</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All exercises</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> AI guide</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Progress certificates</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Cancel anytime</li>
                   </ul>
                   <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
                     <Link href="/dashboard">Get Started</Link>
@@ -364,15 +364,16 @@ export default function LandingPage() {
               <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
                 <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">⭐ Best Value</Badge>
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">Yearly</CardTitle>
-                   <p className="text-4xl font-extrabold mt-2">€99<span className="text-base font-medium text-slate-400">/year</span></p>
-                   <p className="text-sm font-semibold text-yellow-400">Save €9 vs monthly!</p>
+                  <CardTitle className="font-bold text-xl">Complete Package</CardTitle>
+                   <p className="text-4xl font-extrabold mt-2">$49<span className="text-base font-medium text-slate-400"> / one-time</span></p>
+                   <p className="text-sm font-semibold text-yellow-400">Pay once, get lifetime access!</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Everything in Monthly</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> All content included</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> All 12 weeks of content</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Lifetime access</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Priority support</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Early access features</li>
                   </ul>
                   <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
                     <Link href="/dashboard">Get Started</Link>

@@ -67,7 +67,7 @@ export default function PricingPage() {
                   <CardDescription>Get a taste of our learning method.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
-                  <p className="text-4xl font-bold">€0</p>
+                  <p className="text-4xl font-bold">$0</p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> Week 1 of Survival Path</li>
                     <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> 5 new words per day</li>
@@ -81,26 +81,23 @@ export default function PricingPage() {
                 </CardFooter>
               </Card>
 
-              {/* Monthly Plan */}
-              <Card className="relative flex flex-col border-2 border-primary shadow-2xl shadow-primary/20">
-                <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  Most Popular
-                </Badge>
+              {/* Weekly Plan */}
+              <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Monthly</CardTitle>
-                  <CardDescription>Full access to master your new language.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">Weekly</CardTitle>
+                  <CardDescription>Full access, one week at a time.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">
-                    €9<span className="text-lg font-normal text-muted-foreground">/month</span>
+                    $5<span className="text-lg font-normal text-muted-foreground">/week</span>
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All 3 Learning Paths</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All 48 weeks of content</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Full week of content</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Native audio for all words</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All interactive exercises</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> AI guide for questions</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Downloadable certificates</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Cancel anytime</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3">
@@ -118,21 +115,25 @@ export default function PricingPage() {
                 </CardFooter>
               </Card>
 
-              {/* Yearly Plan */}
-              <Card className="flex flex-col">
+              {/* Complete Package Plan */}
+              <Card className="relative flex flex-col border-2 border-primary shadow-2xl shadow-primary/20">
+                <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  ⭐ BEST VALUE
+                </Badge>
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Yearly</CardTitle>
-                  <CardDescription>Commit and save on your journey.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">Complete Package</CardTitle>
+                  <CardDescription>One-time payment for lifetime access.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">
-                    €99<span className="text-lg font-normal text-muted-foreground">/year</span>
+                    $49<span className="text-lg font-normal text-muted-foreground"> / one-time</span>
                   </p>
-                  <Badge variant="secondary" className="w-fit text-green-500 border border-green-500/50 bg-green-500/10">Save €9 compared to monthly</Badge>
+                  <Badge variant="secondary" className="w-fit text-green-500 border border-green-500/50 bg-green-500/10">Pay once, learn forever!</Badge>
                   <ul className="space-y-3">
-                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Everything in Monthly</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Everything in Weekly</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All 12 weeks of content</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Lifetime access</li>
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Priority email support</li>
-                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Early access to new features</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3">
@@ -152,7 +153,7 @@ export default function PricingPage() {
             </div>
             
             <div className="mt-16 text-center text-muted-foreground text-sm">
-                <p>Prices are in EUR. Your payment provider will convert the currency for you.</p>
+                <p>Prices are in USD. Your payment provider will convert the currency for you.</p>
                 <p>For any questions, please <Link href="#" className="underline hover:text-foreground">contact support</Link>.</p>
             </div>
 
