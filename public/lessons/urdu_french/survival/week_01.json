@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,1325 +8,331 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Day 1: Greetings",
+      "title_native": "پہلا دن: آداب",
+      "theme": "Basic Greetings",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_1_1","target":"Bonjour","phonetic":"بونژور","native_meaning":"ہیلو / آداب","english":"Hello","example_sentence_target":"Bonjour, comment ça va ?","example_sentence_native":"ہیلو، آپ کیسے ہیں؟","example_sentence_phonetic":"بونژور، کماں سا وا؟"},
+        {"id":"w1_1_2","target":"Salut","phonetic":"سالو","native_meaning":"سلام (غیر رسمی)","english":"Hi (informal)","example_sentence_target":"Salut, ça va ?","example_sentence_native":"سلام، ٹھیک ہو؟","example_sentence_phonetic":"سالو، سا وا؟"},
+        {"id":"w1_1_3","target":"Bonsoir","phonetic":"بونسواغ","native_meaning":"شام بخیر","english":"Good evening","example_sentence_target":"Bonsoir, Madame.","example_sentence_native":"شام بخیر، میڈم۔","example_sentence_phonetic":"بونسواغ، مادام۔"},
+        {"id":"w1_1_4","target":"Au revoir","phonetic":"او غوواغ","native_meaning":"خدا حافظ","english":"Goodbye","example_sentence_target":"Au revoir, à demain.","example_sentence_native":"خدا حافظ، کل ملتے ہیں۔","example_sentence_phonetic":"او غوواغ، آ دومیں۔"},
+        {"id":"w1_1_5","target":"À bientôt","phonetic":"آ بیانتو","native_meaning":"جلد ملیں گے","english":"See you soon","example_sentence_target":"Je dois partir, à bientôt !","example_sentence_native":"مجھے جانا ہے، جلد ملیں گے!","example_sentence_phonetic":"ژو دوا پختیغ، آ بیانتو!"},
+        {"id":"w1_1_6","target":"Merci","phonetic":"میغسی","native_meaning":"شکریہ","english":"Thank you","example_sentence_target":"Merci beaucoup.","example_sentence_native":"بہت بہت شکریہ۔","example_sentence_phonetic":"میغسی بوکو۔"},
+        {"id":"w1_1_7","target":"S'il vous plaît","phonetic":"سیل وو پلے","native_meaning":"براہ مہربانی (رسمی)","english":"Please (formal)","example_sentence_target":"Un café, s'il vous plaît.","example_sentence_native":"ایک کافی، براہ مہربانی۔","example_sentence_phonetic":"ایں کیفے، سیل وو پلے۔"},
+        {"id":"w1_1_8","target":"Excusez-moi","phonetic":"ایکسکیوزے موا","native_meaning":"معاف کیجئے گا","english":"Excuse me","example_sentence_target":"Excusez-moi, où est la gare ?","example_sentence_native":"معاف کیجئے گا، اسٹیشن کہاں ہے؟","example_sentence_phonetic":"ایکسکیوزے موا، او اے لا گاغ؟"}
+      ],
+      "sentences": [
+        {"id":"s1_1_1","target":"Bonjour, je suis nouveau ici.","native":"ہیلو، میں یہاں نیا ہوں۔","phonetic":"بونژور، ژو سوئی نووو ایسی۔"},
+        {"id":"s1_1_2","target":"Merci pour votre aide.","native":"آپ کی مدد کا شکریہ۔","phonetic":"میغسی پوغ ووتغ اید۔"},
+        {"id":"s1_1_3","target":"Au revoir et bonne soirée.","native":"خدا حافظ اور شام بخیر۔","phonetic":"او غوواغ اے بون سوواغے۔"},
+        {"id":"s1_1_4","target":"Salut Paul, comment vas-tu ?","native":"سلام پال، تم کیسے ہو؟","phonetic":"سالو پول، کماں وا تو؟"},
+        {"id":"s1_1_5","target":"Excusez-moi, je ne comprends pas.","native":"معاف کیجئے گا، میں سمجھا نہیں۔","phonetic":"ایکسکیوزے موا، ژو نو کومپغاں پا۔"},
+        {"id":"s1_1_6","target":"Passez une bonne journée, au revoir.","native":"آپ کا دن اچھا گزرے، خدا حافظ۔","phonetic":"پاسے اون بون ژوغنے، او غوواغ۔"},
+        {"id":"s1_1_7","target":"À bientôt, j'espère.","native":"جلد ملیں گے، مجھے امید ہے۔","phonetic":"آ بیانتو، ژیسپیغ۔"},
+        {"id":"s1_1_8","target":"L'addition, s'il vous plaît.","native":"بل، براہ مہربانی۔","phonetic":"لادیسیوں، سیل وو پلے۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_1_1",
-          "context": "Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_1_1","context":"ایک کیفے میں داخل ہونا۔","lines":[{"speaker":"A","target":"Bonjour, Monsieur.","native":"ہیلو، جناب۔","phonetic":"بونژور، مسیو۔"},{"speaker":"B","target":"Bonjour, bienvenue. Une table pour un ?","native":"ہیلو، خوش آمدید۔ ایک شخص کے لیے میز؟","phonetic":"بونژور، بیانوونو۔ اون تابل پوغ ایں؟"}]},
+        {"id":"d1_1_2","context":"کچھ خریدنے کے بعد۔","lines":[{"speaker":"A","target":"Ça fait combien ?","native":"یہ کتنے کا ہے؟","phonetic":"سا فے کومبیاں؟"},{"speaker":"B","target":"Cinq euros.","native":"پانچ یورو۔","phonetic":"سانک یورو۔"},{"speaker":"A","target":"Voilà. Merci.","native":"یہ لیجئے۔ شکریہ۔","phonetic":"ووالا۔ میغسی۔"}]},
+        {"id":"d1_1_3","context":"دن کے اختتام پر ساتھی کارکن کو چھوڑنا۔","lines":[{"speaker":"A","target":"Je rentre. Au revoir !","native":"میں گھر جا رہا ہوں۔ خدا حافظ!","phonetic":"ژو غونتخ۔ او غوواغ!"},{"speaker":"B","target":"Au revoir, à demain !","native":"خدا حافظ، کل ملتے ہیں!","phonetic":"او غوواغ، آ دومیں!"}]},
+        {"id":"d1_1_4","context":"کسی سے راستہ پوچھنا۔","lines":[{"speaker":"A","target":"Excusez-moi, le métro, s'il vous plaît ?","native":"معاف کیجئے گا، میٹرو، براہ مہربانی؟","phonetic":"ایکسکیوزے موا، لو میترو، سیل وو پلے؟"},{"speaker":"B","target":"C'est tout droit.","native":"یہ سیدھا ہے۔","phonetic":"سے تو دغوا۔"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_1_1","target":"Bonjour","native":"ہیلو"},
+          {"id":"m1_1_2","target":"Au revoir","native":"خدا حافظ"},
+          {"id":"m1_1_3","target":"Merci","native":"شکریہ"},
+          {"id":"m1_1_4","target":"S'il vous plaît","native":"براہ مہربانی"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "فرانس میں، دکان یا کیفے میں داخل ہوتے اور نکلتے وقت 'Bonjour' اور 'Au revoir' کہنا شائستگی کی علامت سمجھا جاتا ہے۔",
+      "pronunciation_tip": "'Bonjour' میں 'on' کی آواز ناک سے نکلتی ہے، انگریزی کے 'on' کی طرح نہیں۔ اسے ادا کرنے کے لیے ہوا کو اپنی ناک سے گزارنے کی کوشش کریں۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D1-Greetings"}
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Introducing Yourself",
+      "title_native": "دوسرا دن: اپنا تعارف کروانا",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_2_1","target":"Je m'appelle...","phonetic":"ژو ماپیل","native_meaning":"میرا نام ہے...","english":"My name is...","example_sentence_target":"Bonjour, je m'appelle Ali.","example_sentence_native":"ہیلو، میرا نام علی ہے۔","example_sentence_phonetic":"بونژور، ژو ماپیل علی۔"},
+        {"id":"w1_2_2","target":"Je suis...","phonetic":"ژو سوئی","native_meaning":"میں ہوں...","english":"I am...","example_sentence_target":"Je suis pakistanais.","example_sentence_native":"میں پاکستانی ہوں۔","example_sentence_phonetic":"ژو سوئی پاکستانی۔"},
+        {"id":"w1_2_3","target":"Enchanté(e)","phonetic":"اونشونتے","native_meaning":"آپ سے مل کر خوشی ہوئی","english":"Pleased to meet you","example_sentence_target":"Enchantée, je m'appelle Sophie.","example_sentence_native":"آپ سے مل کر خوشی ہوئی، میرا نام سوفی ہے۔","example_sentence_phonetic":"اونشونتے، ژو ماپیل سوفی۔"},
+        {"id":"w1_2_4","target":"Comment vous appelez-vous ?","phonetic":"کماں ووزاپلے وو؟","native_meaning":"آپ کا نام کیا ہے؟ (رسمی)","english":"What is your name? (formal)","example_sentence_target":"Comment vous appelez-vous ?","example_sentence_native":"آپ کا نام کیا ہے؟","example_sentence_phonetic":"کماں ووزاپلے وو؟"},
+        {"id":"w1_2_5","target":"Et vous ?","phonetic":"اے وو؟","native_meaning":"اور آپ؟","english":"And you?","example_sentence_target":"Je vais bien, merci. Et vous ?","example_sentence_native":"میں ٹھیک ہوں، شکریہ۔ اور آپ؟","example_sentence_phonetic":"ژو وے بیاں، میغسی۔ اے وو؟"},
+        {"id":"w1_2_6","target":"Parlez-vous anglais ?","phonetic":"پاغلے وو اونگلے؟","native_meaning":"کیا آپ انگریزی بولتے ہیں؟","english":"Do you speak English?","example_sentence_target":"Excusez-moi, parlez-vous anglais ?","example_sentence_native":"معاف کیجئے گا، کیا آپ انگریزی بولتے ہیں؟","example_sentence_phonetic":"ایکسکیوزے موا، پاغلے وو اونگلے؟"},
+        {"id":"w1_2_7","target":"Je ne parle pas français.","phonetic":"ژو نو پاغل پا فغونسے","native_meaning":"میں فرانسیسی نہیں بولتا۔","english":"I don't speak French.","example_sentence_target":"Désolé, je ne parle pas français.","example_sentence_native":"معاف کیجئے گا، میں فرانسیسی نہیں بولتا۔","example_sentence_phonetic":"دےزولے، ژو نو پاغل پا فغونسے ۔"},
+        {"id":"w1_2_8","target":"Je comprends.","phonetic":"ژو کومپغاں","native_meaning":"میں سمجھتا ہوں۔","english":"I understand.","example_sentence_target":"Oui, je comprends un peu.","example_sentence_native":"جی، میں تھوڑا سمجھتا ہوں۔","example_sentence_phonetic":"وئی، ژو کومپغاں ایں پอ۔"}
+      ],
+      "sentences": [
+        {"id":"s1_2_1","target":"Bonjour, je m'appelle Omar.","native":"ہیلو، میرا نام عمر ہے۔","phonetic":"بونژور، ژو ماپیل عمر۔"},
+        {"id":"s1_2_2","target":"Enchanté de vous rencontrer.","native":"آپ سے مل کر خوشی ہوئی۔","phonetic":"اونشونتے دو وو غینکونترے۔"},
+        {"id":"s1_2_3","target":"Je suis de Karachi. Et vous ?","native":"میں کراچی سے ہوں۔ اور آپ؟","phonetic":"ژو سوئی دو کراچی۔ اے وو؟"},
+        {"id":"s1_2_4","target":"Désolé, je ne parle pas bien français.","native":"معذرت، میں اچھی فرانسیسی نہیں بولتا۔","phonetic":"دےزولے، ژو نو پاغل پا بیاں فغونسے۔"},
+        {"id":"s1_2_5","target":"Parlez-vous anglais ou urdu ?","native":"کیا آپ انگریزی یا اردو بولتے ہیں؟","phonetic":"پاغلے وو اونگلے او اردو؟"},
+        {"id":"s1_2_6","target":"Je comprends, mais je ne peux pas parler.","native":"میں سمجھتا ہوں، لیکن میں بول نہیں سکتا۔","phonetic":"ژو کومپغاں، مے ژو نو پอ پا پاغلے۔"},
+        {"id":"s1_2_7","target":"Comment vous appelez-vous, s'il vous plaît ?","native":"آپ کا نام کیا ہے، براہ مہربانی؟","phonetic":"کماں ووزاپلے وو، سیل وو پلے؟"},
+        {"id":"s1_2_8","target":"Je suis ici pour le travail.","native":"میں یہاں کام کے لیے ہوں۔","phonetic":"ژو سوئی ایسی پوغ لو تخاوائی۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_2_1","context":"کسی نئے شخص سے پہلی بار ملنا۔","lines":[{"speaker":"A","target":"Bonjour. Je m'appelle Jean.","native":"ہیلو۔ میرا نام ژاں ہے۔","phonetic":"بونژور۔ ژو ماپیل ژاں۔"},{"speaker":"B","target":"Bonjour Jean. Je suis Fatima. Enchantée.","native":"ہیلو ژاں۔ میں فاطمہ ہوں۔ آپ سے مل کر خوشی ہوئی۔","phonetic":"بونژور ژاں۔ ژو سوئی فاطمہ۔ اونشونتے۔"}]},
+        {"id":"d1_2_2","context":"زبان کی رکاوٹ کی وضاحت کرنا۔","lines":[{"speaker":"A","target":"Parlez-vous français ?","native":"کیا آپ فرانسیسی بولتے ہیں؟","phonetic":"پاغلے وو فغونسے؟"},{"speaker":"B","target":"Non, je ne parle pas français. Parlez-vous anglais ?","native":"نہیں، میں فرانسیسی نہیں بولتا۔ کیا آپ انگریزی بولتے ہیں؟","phonetic":"نوں، ژو نو پاغل پا فغونسے۔ پاغلے وو اونگلے؟"}]},
+        {"id":"d1_2_3","context":"اپنا تعارف کروانا اور جواب دینا۔","lines":[{"speaker":"A","target":"Salut, je suis Marc. Et toi ?","native":"سلام، میں مارک ہوں۔ اور تم؟","phonetic":"سالو، ژو سوئی مارک۔ اے توا؟"},{"speaker":"B","target":"Salut Marc. Moi, c'est Aisha.","native":"سلام مارک۔ میں عائشہ ہوں۔","phonetic":"سالو مارک۔ موا، سے عائشہ۔"}]},
+        {"id":"d1_2_4","context":"یہ پوچھنا کہ کوئی کیا کرتا ہے۔","lines":[{"speaker":"A","target":"Je suis étudiant. Et vous ?","native":"میں ایک طالب علم ہوں۔ اور آپ؟","phonetic":"ژو سوئی ایتودیوں۔ اے وو؟"},{"speaker":"B","target":"Je suis ingénieur.","native":"میں ایک انجینئر ہوں۔","phonetic":"ژو سوئی اینژینیوغ۔"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_2_1","target":"Je m'appelle...","native":"میرا نام ہے..."},
+          {"id":"m1_2_2","target":"Comment vous appelez-vous ?","native":"آپ کا نام کیا ہے؟"},
+          {"id":"m1_2_3","target":"Enchanté(e)","native":"آپ سے مل کر خوشی ہوئی"},
+          {"id":"m1_2_4","target":"Parlez-vous anglais ?","native":"کیا آپ انگریزی بولتے ہیں؟"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "فرانس میں، رسمی حالات میں 'vous' کا استعمال کرنا شائستگی کی علامت ہے، خاص طور پر جب آپ کسی سے پہلی بار مل رہے ہوں۔ 'Tu' (تم) کا استعمال دوستوں اور خاندان کے لیے مخصوص ہے۔",
+      "pronunciation_tip": "'Je' کی آواز انگریزی کے لفظ 'measure' میں 'su' کی طرح ہے۔ یہ 'j' کی سخت آواز نہیں ہے۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D2-Introductions"}
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Asking someone's name",
+      "title_native": "تیسرا دن: کسی کا نام پوچھنا",
+      "theme": "Names and Basic Questions",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_3_1","target":"Comment t'appelles-tu ?","phonetic":"کماں تاپیل تو؟","native_meaning":"تمہارا نام کیا ہے؟ (غیر رسمی)","english":"What is your name? (informal)","example_sentence_target":"Salut, comment t'appelles-tu ?","example_sentence_native":"سلام، تمہارا نام کیا ہے؟","example_sentence_phonetic":"سالو، کماں تاپیل تو؟"},
+        {"id":"w1_3_2","target":"Qui est-ce ?","phonetic":"کی ایس؟","native_meaning":"یہ کون ہے؟","english":"Who is this?","example_sentence_target":"Qui est-ce ? C'est mon ami.","example_sentence_native":"یہ کون ہے؟ یہ میرا دوست ہے۔","example_sentence_phonetic":"کی ایس؟ سے موں آمی۔"},
+        {"id":"w1_3_3","target":"C'est...","phonetic":"سے...","native_meaning":"یہ ہے...","english":"This is...","example_sentence_target":"C'est Marie.","example_sentence_native":"یہ ماری ہے۔","example_sentence_phonetic":"سے ماری۔"},
+        {"id":"w1_3_4","target":"Il s'appelle...","phonetic":"ایل ساپیل...","native_meaning":"اس کا نام ہے... (مذکر)","english":"His name is... (masculine)","example_sentence_target":"Il s'appelle Pierre.","example_sentence_native":"اس کا نام پیئر ہے۔","example_sentence_phonetic":"ایل ساپیل پیئر۔"},
+        {"id":"w1_3_5","target":"Elle s'appelle...","phonetic":"ایل ساپیل...","native_meaning":"اس کا نام ہے... (مونث)","english":"Her name is... (feminine)","example_sentence_target":"Elle s'appelle Anne.","example_sentence_native":"اس کا نام این ہے۔","example_sentence_phonetic":"ایل ساپیل این۔"},
+        {"id":"w1_3_6","target":"Monsieur","phonetic":"مسیو","native_meaning":"جناب / صاحب","english":"Mr. / Sir","example_sentence_target":"Bonjour Monsieur Dupont.","example_sentence_native":"ہیلو جناب ڈوپونٹ۔","example_sentence_phonetic":"بونژور مسیو ڈوپونٹ۔"},
+        {"id":"w1_3_7","target":"Madame","phonetic":"مادام","native_meaning":"محترمہ / بیگم","english":"Mrs. / Madam","example_sentence_target":"Oui, Madame.","example_sentence_native":"جی، محترمہ۔","example_sentence_phonetic":"وئی، مادام۔"},
+        {"id":"w1_3_8","target":"Mademoiselle","phonetic":"مادموازیل","native_meaning":"خاتون (غیر شادی شدہ)","english":"Miss (unmarried)","example_sentence_target":"Excusez-moi, Mademoiselle.","example_sentence_native":"معاف کیجئے گا، خاتون۔","example_sentence_phonetic":"ایکسکیوزے موا، مادموازیل۔"}
+      ],
+      "sentences": [
+        {"id":"s1_3_1","target":"Bonjour, comment vous appelez-vous ?","native":"ہیلو، آپ کا نام کیا ہے؟","phonetic":"بونژور، کماں ووزاپلے وو؟"},
+        {"id":"s1_3_2","target":"Il s'appelle Ali et elle s'appelle Fatima.","native":"اس کا نام علی ہے اور اس کا نام فاطمہ ہے۔","phonetic":"ایل ساپیل علی اے ایل ساپیل فاطمہ۔"},
+        {"id":"s1_3_3","target":"Qui est-ce ? C'est le directeur.","native":"یہ کون ہے؟ یہ ڈائریکٹر ہے۔","phonetic":"کی ایس؟ سے لو دیغیکتغ۔"},
+        {"id":"s1_3_4","target":"Enchanté de vous rencontrer, Monsieur.","native":"آپ سے مل کر خوشی ہوئی، جناب۔","phonetic":"اونشونتے دو وو غینکونترے، مسیو۔"},
+        {"id":"s1_3_5","target":"Excusez-moi Madame, vous avez l'heure ?","native":"معاف کیجئے گا محترمہ، کیا آپ کے پاس وقت ہے؟","phonetic":"ایکسکیوزے موا مادام، ووزاوے ل'وغ؟"},
+        {"id":"s1_3_6","target":"C'est mon frère. Il s'appelle Ahmed.","native":"یہ میرا بھائی ہے۔ اس کا نام احمد ہے۔","phonetic":"سے موں فخیغ۔ ایل ساپیل احمد۔"},
+        {"id":"s1_3_7","target":"Comment t'appelles-tu, mon ami ?","native":"تمہارا نام کیا ہے، میرے دوست؟","phonetic":"کماں تاپیل تو، موں آمی؟"},
+        {"id":"s1_3_8","target":"Mademoiselle, votre taxi est arrivé.","native":"خاتون، آپ کی ٹیکسی آ گئی ہے۔","phonetic":"مادموازیل، ووتخ ٹیکسی اے آغیوے۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_3_1","context":"دوستوں کا تعارف کروانا۔","lines":[{"speaker":"A","target":"Salut, je te présente mon ami, Omar.","native":"سلام، میں تمہیں اپنے دوست عمر سے ملواتا ہوں۔","phonetic":"سالو، ژو تو پخیزونت موں آمی، عمر۔"},{"speaker":"B","target":"Salut Omar, enchanté. Moi, c'est Karim.","native":"سلام عمر، آپ سے مل کر خوشی ہوئی۔ میں کریم ہوں۔","phonetic":"سالو عمر، اونشونتے۔ موا، سے کریم۔"}]},
+        {"id":"d1_3_2","context":"ایک رسمی تعارف۔","lines":[{"speaker":"A","target":"Monsieur Khan, je vous présente Madame Dubois.","native":"جناب خان، میں آپ کو محترمہ ڈوبوا سے ملواتا ہوں۔","phonetic":"مسیو خان، ژو وو پخیزونت مادام ڈوبوا۔"},{"speaker":"B","target":"Enchanté, Madame.","native":"آپ سے مل کر خوشی ہوئی، محترمہ۔","phonetic":"اونشونتے، مادام۔"}]},
+        {"id":"d1_3_3","context":"کسی کا نام پوچھنا۔","lines":[{"speaker":"A","target":"Pardon, comment vous appelez-vous ?","native":"معاف کیجئے گا، آپ کا نام کیا ہے؟","phonetic":"پاغدوں، کماں ووزاپلے وو؟"},{"speaker":"B","target":"Je m'appelle Sophie. Et vous ?","native":"میرا نام سوفی ہے۔ اور آپ؟","phonetic":"ژو ماپیل سوفی۔ اے وو؟"}]},
+        {"id":"d1_3_4","context":"کسی شخص کے بارے میں پوچھنا۔","lines":[{"speaker":"A","target":"Qui est-ce ?","native":"یہ کون ہے؟","phonetic":"کی ایس؟"},{"speaker":"B","target":"C'est mon patron. Il s'appelle M. Leclerc.","native":"یہ میرے باس ہیں۔ ان کا نام مسٹر لیکلرک ہے۔","phonetic":"سے موں پاتغوں۔ ایل ساپیل مسیو لیکلرک۔"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_3_1","target":"Qui est-ce ?","native":"یہ کون ہے؟"},
+          {"id":"m1_3_2","target":"Il s'appelle...","native":"اس کا نام ہے..."},
+          {"id":"m1_3_3","target":"Monsieur","native":"جناب"},
+          {"id":"m1_3_4","target":"Comment t'appelles-tu ?","native":"تمہارا نام کیا ہے؟"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "آج کل 'Mademoiselle' کا استعمال کم ہو گیا ہے۔ زیادہ تر لوگ تمام خواتین کو 'Madame' کہہ کر مخاطب کرتے ہیں، چاہے ان کی ازدواجی حیثیت کچھ بھی ہو۔",
+      "pronunciation_tip": "'Comment' کے آخر میں 't' خاموش ہوتا ہے۔ اسے 'کماں' کی طرح بولا جاتا ہے۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D3-Names"}
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Nationality and Country",
+      "title_native": "چوتھا دن: قومیت اور ملک",
+      "theme": "Origin and Nationality",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_4_1","target":"D'où venez-vous ?","phonetic":"دو وینے وو؟","native_meaning":"آپ کہاں سے ہیں؟ (رسمی)","english":"Where are you from? (formal)","example_sentence_target":"D'où venez-vous, Monsieur ?","example_sentence_native":"آپ کہاں سے ہیں، جناب؟","example_sentence_phonetic":"دو وینے وو، مسیو؟"},
+        {"id":"w1_4_2","target":"Je viens de...","phonetic":"ژو ویاں دو...","native_meaning":"میں ... سے ہوں۔","english":"I come from...","example_sentence_target":"Je viens du Pakistan.","example_sentence_native":"میں پاکستان سے ہوں۔","example_sentence_phonetic":"ژو ویاں دو پاکستان۔"},
+        {"id":"w1_4_3","target":"Pays","phonetic":"پے-ای","native_meaning":"ملک","english":"Country","example_sentence_target":"La France est un beau pays.","example_sentence_native":"فرانس ایک خوبصورت ملک ہے۔","example_sentence_phonetic":"لا فغونس اے ایں بو پے-ای۔"},
+        {"id":"w1_4_4","target":"Nationalité","phonetic":"ناسیونالیتے","native_meaning":"قومیت","english":"Nationality","example_sentence_target":"Quelle est votre nationalité ?","example_sentence_native":"آپ کی قومیت کیا ہے؟","example_sentence_phonetic":"کیل اے ووتخ ناسیونالیتے؟"},
+        {"id":"w1_4_5","target":"Français / Française","phonetic":"فغونسے / فغونسيز","native_meaning":"فرانسیسی (مرد / عورت)","english":"French (m/f)","example_sentence_target":"Il est français, elle est française.","example_sentence_native":"وہ فرانسیسی ہے (مرد)، وہ فرانسیسی ہے (عورت)۔","example_sentence_phonetic":"ایل اے فغونسے، ایل اے فغونسيز۔"},
+        {"id":"w1_4_6","target":"J'habite à...","phonetic":"ژابیت آ...","native_meaning":"میں ... میں رہتا ہوں۔","english":"I live in...","example_sentence_target":"J'habite à Paris.","example_sentence_native":"میں پیرس میں رہتا ہوں۔","example_sentence_phonetic":"ژابیت آ پاغی۔"},
+        {"id":"w1_4_7","target":"Ville","phonetic":"ویل","native_meaning":"شہر","english":"City","example_sentence_target":"Paris est une grande ville.","example_sentence_native":"پیرس ایک بڑا شہر ہے۔","example_sentence_phonetic":"پاغی اے اون گخاند ویل۔"},
+        {"id":"w1_4_8","target":"Bienvenue","phonetic":"بیانوونو","native_meaning":"خوش آمدید","english":"Welcome","example_sentence_target":"Bienvenue en France !","example_sentence_native":"فرانس میں خوش آمدید!","example_sentence_phonetic":"بیانوونو آں فغونس!"}
+      ],
+      "sentences": [
+        {"id":"s1_4_1","target":"D'où viens-tu ? Je viens de l'Inde.","native":"تم کہاں سے ہو؟ میں ہندوستان سے ہوں۔","phonetic":"دو ویاں تو؟ ژو ویاں دو ل'ایند۔"},
+        {"id":"s1_4_2","target":"Je suis pakistanais et j'habite à Lyon.","native":"میں پاکستانی ہوں اور میں لیون میں رہتا ہوں۔","phonetic":"ژو سوئی پاکستانی اے ژابیت آ لیون۔"},
+        {"id":"s1_4_3","target":"Quelle est la capitale de votre pays ?","native":"آپ کے ملک کا دارالحکومت کیا ہے؟","phonetic":"کیل اے لا کاپیتال دو ووتخ پے-ای؟"},
+        {"id":"s1_4_4","target":"Bienvenue à tous nos amis étrangers.","native":"ہمارے تمام غیر ملکی دوستوں کو خوش آمدید۔","phonetic":"بیانوونو آ توس نو زامی ایتخونژے۔"},
+        {"id":"s1_4_5","target":"Ma nationalité est indienne.","native":"میری قومیت ہندوستانی ہے۔","phonetic":"ما ناسیونالیتے اے ایندیان۔"},
+        {"id":"s1_4_6","target":"C'est une petite ville, mais elle est très belle.","native":"یہ ایک چھوٹا شہر ہے، لیکن یہ بہت خوبصورت ہے۔","phonetic":"سے اون پتیت ویل، مے ایل اے تخے بیل۔"},
+        {"id":"s1_4_7","target":"Elle est française, mais elle habite en Allemagne.","native":"وہ فرانسیسی ہے، لیکن وہ جرمنی میں رہتی ہے۔","phonetic":"ایل اے فغونسيز، مے ایل آبیت آں آلمان۔"},
+        {"id":"s1_4_8","target":"Je viens d'une ville qui s'appelle Lahore.","native":"میں لاہور نامی شہر سے ہوں۔","phonetic":"ژو ویاں دون ویل کی ساپیل لاہور۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_4_1","context":"سرکاری دفتر میں۔","lines":[{"speaker":"A","target":"Bonjour. D'où venez-vous ?","native":"ہیلو۔ آپ کہاں سے ہیں؟","phonetic":"بونژور۔ دو وینے وو؟"},{"speaker":"B","target":"Je viens du Bangladesh.","native":"میں بنگلہ دیش سے ہوں۔","phonetic":"ژو ویاں دو بنگلہ دیش۔"}]},
+        {"id":"d1_4_2","context":"ایک پارٹی میں بات چیت کرنا۔","lines":[{"speaker":"A","target":"Tu n'es pas d'ici, n'est-ce pas ?","native":"تم یہاں کے نہیں ہو، ہے نا؟","phonetic":"تو نے پا دیسی، نیس پا؟"},{"speaker":"B","target":"Non, je viens d'Algérie. J'habite ici depuis un an.","native":"نہیں، میں الجزائر سے ہوں۔ میں یہاں ایک سال سے رہ رہا ہوں۔","phonetic":"نوں، ژو ویاں د'الژیری۔ ژابیت ایسی دوپوئی ایں آں۔"}]},
+        {"id":"d1_4_3","context":"قومیت کے بارے میں پوچھنا۔","lines":[{"speaker":"A","target":"Vous êtes italien ?","native":"کیا آپ اطالوی ہیں؟","phonetic":"ووزیت ایتالیاں؟"},{"speaker":"B","target":"Non, je suis suisse.","native":"نہیں، میں سوئس ہوں۔","phonetic":"نوں، ژو سوئی سوئس۔"}]},
+        {"id":"d1_4_4","context":"کسی کو خوش آمدید کہنا۔","lines":[{"speaker":"A","target":"C'est ma première fois à Paris.","native":"یہ میرا پیرس میں پہلی بار ہے۔","phonetic":"سے ما پخومییغ فوا آ پاغی۔"},{"speaker":"B","target":"Alors, bienvenue !","native":"تو، خوش آمدید!","phonetic":"آلوغ، بیانوونو!"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_4_1","target":"D'où venez-vous ?","native":"آپ کہاں سے ہیں؟"},
+          {"id":"m1_4_2","target":"J'habite à...","native":"میں ... میں رہتا ہوں۔"},
+          {"id":"m1_4_3","target":"Pays","native":"ملک"},
+          {"id":"m1_4_4","target":"Bienvenue","native":"خوش آمدید"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "فرانسیسی لوگ اکثر اپنے ملک اور علاقے پر بہت فخر کرتے ہیں۔ جب آپ کسی سے پوچھتے ہیں کہ وہ کہاں سے ہیں، تو وہ اکثر اپنے شہر یا علاقے کا نام بتائیں گے، نہ کہ صرف 'فرانس'۔",
+      "pronunciation_tip": "'Ville' (شہر) میں 'll' کی آواز 'y' کی طرح ہوتی ہے۔ اسے 'وی-ی' کی طرح بولیں۔ یہ 'وِل' نہیں ہے۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D4-Nationality"}
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Polite Expressions",
+      "title_native": "پانچواں دن: شائستہ تاثرات",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_5_1","target":"De rien.","phonetic":"دو غیاں","native_meaning":"کوئی بات نہیں۔","english":"You're welcome.","example_sentence_target":"Merci. - De rien.","example_sentence_native":"شکریہ۔ - کوئی بات نہیں۔","example_sentence_phonetic":"میغسی۔ - دو غیاں۔"},
+        {"id":"w1_5_2","target":"Pardon.","phonetic":"پاغدوں","native_meaning":"معاف کیجئے / معذرت","english":"Pardon / Sorry","example_sentence_target":"Pardon, je ne vous ai pas vu.","example_sentence_native":"معاف کیجئے، میں نے آپ کو نہیں دیکھا۔","example_sentence_phonetic":"پاغدوں، ژو نو ووزے پا وو۔"},
+        {"id":"w1_5_3","target":"Désolé(e)","phonetic":"دےزولے","native_meaning":"افسوس ہے","english":"Sorry","example_sentence_target":"Je suis désolé pour le retard.","example_sentence_native":"دیر کے لیے مجھے افسوس ہے۔","example_sentence_phonetic":"ژو سوئی دےزولے پوغ لو غوتاغ۔"},
+        {"id":"w1_5_4","target":"Bonne journée.","phonetic":"بون ژوغنے","native_meaning":"دن اچھا گزرے۔","english":"Have a good day.","example_sentence_target":"Au revoir, bonne journée !","example_sentence_native":"خدا حافظ، آپ کا دن اچھا گزرے!","example_sentence_phonetic":"او غوواغ، بون ژوغنے!"},
+        {"id":"w1_5_5","target":"Bon appétit.","phonetic":"بون اپےتی","native_meaning":"کھانے کا لطف اٹھائیں۔","english":"Enjoy your meal.","example_sentence_target":"Le dîner est servi. Bon appétit !","example_sentence_native":"رات کا کھانا پیش ہے۔ کھانے کا لطف اٹھائیں!","example_sentence_phonetic":"لو دینے۔ اے سیغوی۔ بون اپےتی!"},
+        {"id":"w1_5_6","target":"Santé !","phonetic":"سونتے!","native_meaning":"صحت کے نام! (جام ٹکراتے وقت)","english":"Cheers!","example_sentence_target":"Levons nos verres. Santé !","example_sentence_native":"آؤ اپنے گلاس اٹھائیں۔ صحت کے نام!","example_sentence_phonetic":"لوووں نو ویغ۔ سونتے!"},
+        {"id":"w1_5_7","target":"Avec plaisir.","phonetic":"آویک پلیزیغ","native_meaning":"خوشی سے۔","english":"With pleasure.","example_sentence_target":"Pouvez-vous m'aider ? - Oui, avec plaisir.","example_sentence_native":"کیا آپ میری مدد کر سکتے ہیں؟ - جی، خوشی سے۔","example_sentence_phonetic":"پووے وو م'یدے؟ - وئی، آویک پلیزیغ۔"},
+        {"id":"w1_5_8","target":"Je vous en prie.","phonetic":"ژو ووزوں پخی","native_meaning":"کوئی بات نہیں (بہت رسمی)","english":"You're welcome (very formal)","example_sentence_target":"Merci infiniment. - Je vous en prie.","example_sentence_native":"بے حد شکریہ۔ - کوئی بات نہیں۔","example_sentence_phonetic":"میغسی انفینیماں۔ - ژو ووزوں پخی۔"}
+      ],
+      "sentences": [
+        {"id":"s1_5_1","target":"Je suis vraiment désolé pour cette erreur.","native":"میں اس غلطی کے لیے واقعی معذرت خواہ ہوں۔","phonetic":"ژو سوئی وخیماں دےزولے پوغ سیت ایغوغ۔"},
+        {"id":"s1_5_2","target":"Pardon, pouvez-vous répéter ?","native":"معاف کیجئے، کیا آپ دہرا سکتے ہیں؟","phonetic":"پاغدوں، پووے وو غیپیتے؟"},
+        {"id":"s1_5_3","target":"Merci ! - De rien, avec plaisir.","native":"شکریہ! - کوئی بات نہیں، خوشی سے۔","phonetic":"میغسی! - دو غیاں، آویک پلیزیغ۔"},
+        {"id":"s1_5_4","target":"Bon appétit à tous !","native":"سب کو کھانے کا لطف آئے!","phonetic":"بون اپےتی آ توس!"},
+        {"id":"s1_5_5","target":"À votre succès ! Santé !","native":"آپ کی کامیابی کے نام! صحت کے نام!","phonetic":"آ ووتخ سوکسے! سونتے!"},
+        {"id":"s1_5_6","target":"Passez une très bonne journée.","native":"آپ کا دن بہت اچھا گزرے۔","phonetic":"پاسے اون تخے بون ژوغنے۔"},
+        {"id":"s1_5_7","target":"Je vous en prie, entrez.","native":"براہ مہربانی، اندر آئیے۔","phonetic":"ژو ووزوں پخی، اونتخے۔"},
+        {"id":"s1_5_8","target":"Désolée, je suis en retard.","native":"معاف کیجئے، میں دیر سے ہوں۔","phonetic":"دےزولے، ژو سوئی آں غوتاغ۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_5_1","context":"کسی سے ٹکرا جانے پر۔","lines":[{"speaker":"A","target":"Oh, pardon !","native":"اوہ، معاف کیجئے!","phonetic":"اوہ، پاغدوں!"},{"speaker":"B","target":"Ce n'est rien.","native":"کوئی بات نہیں۔","phonetic":"سو نے غیاں۔"}]},
+        {"id":"d1_5_2","context":"کسی کا شکریہ ادا کرنا۔","lines":[{"speaker":"A","target":"Merci beaucoup pour le cadeau.","native":"تحفے کے لیے بہت بہت شکریہ۔","phonetic":"میغسی بوکو پوغ لو کادو۔"},{"speaker":"B","target":"De rien.","native":"کوئی بات نہیں۔","phonetic":"دو غیاں۔"}]},
+        {"id":"d1_5_3","context":"کھانا شروع کرنے سے پہلے۔","lines":[{"speaker":"A","target":"Le repas a l'air délicieux.","native":"کھانا مزیدار لگ رہا ہے۔","phonetic":"لو غوپا آ ل'ایغ دیلیسیو۔"},{"speaker":"B","target":"Bon appétit !","native":"کھانے کا لطف اٹھائیں!","phonetic":"بون اپےتی!"}]},
+        {"id":"d1_5_4","context":"ایک میٹنگ کے بعد۔","lines":[{"speaker":"A","target":"Merci pour votre temps. Bonne journée.","native":"آپ کے وقت کا شکریہ۔ آپ کا دن اچھا گزرے۔","phonetic":"میغسی پوغ ووتخ توں۔ بون ژوغنے۔"},{"speaker":"B","target":"Bonne journée à vous aussi.","native":"آپ کا دن بھی اچھا گزرے۔","phonetic":"بون ژوغنے آ وو اوسی۔"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_5_1","target":"De rien.","native":"کوئی بات نہیں۔"},
+          {"id":"m1_5_2","target":"Désolé(e)","native":"افسوس ہے"},
+          {"id":"m1_5_3","target":"Bonne journée.","native":"دن اچھا گزرے۔"},
+          {"id":"m1_5_4","target":"Bon appétit.","native":"کھانے کا لطف اٹھائیں۔"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "'Bon appétit' کہنا بہت عام ہے، چاہے آپ خود کھانا نہ کھا رہے ہوں۔ اگر آپ دیکھتے ہیں کہ کوئی کھانا شروع کرنے والا ہے تو یہ کہنا ایک شائستہ اشارہ ہے۔",
+      "pronunciation_tip": "'De rien' میں 'en' کی آواز بھی ناک سے نکلتی ہے، جیسے 'Bonjour' میں 'on'۔ اس کی مشق کریں تاکہ یہ قدرتی لگے۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D5-Politeness"}
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Yes / No / Maybe",
+      "title_native": "چھٹا دن: ہاں / نہیں / شاید",
+      "theme": "Simple Responses",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_6_1","target":"Oui","phonetic":"وئی","native_meaning":"ہاں","english":"Yes","example_sentence_target":"Voulez-vous du café ? - Oui, s'il vous plaît.","example_sentence_native":"کیا آپ کافی چاہیں گے؟ - ہاں، براہ مہربانی۔","example_sentence_phonetic":"وولے وو دو کیفے؟ - وئی، سیل وو پلے۔"},
+        {"id":"w1_6_2","target":"Non","phonetic":"نوں","native_meaning":"نہیں","english":"No","example_sentence_target":"Parlez-vous allemand ? - Non.","example_sentence_native":"کیا آپ جرمن بولتے ہیں؟ - نہیں۔","example_sentence_phonetic":"پاغلے وو آلموں؟ - نوں۔"},
+        {"id":"w1_6_3","target":"Peut-être","phonetic":"پอ-تیتخ","native_meaning":"شاید","english":"Maybe","example_sentence_target":"Viendrez-vous demain ? - Peut-être.","example_sentence_native":"کیا آپ کل آئیں گے؟ - شاید۔","example_sentence_phonetic":"ویاندرے وو دومیں؟ - پอ-تیتخ۔"},
+        {"id":"w1_6_4","target":"D'accord","phonetic":"داکوغ","native_meaning":"ٹھیک ہے / متفق ہوں","english":"Okay / Agreed","example_sentence_target":"On se voit à 10h ? - D'accord.","example_sentence_native":"ہم 10 بجے ملیں؟ - ٹھیک ہے۔","example_sentence_phonetic":"اوں سو موا آ دیزوغ؟ - داکوغ۔"},
+        {"id":"w1_6_5","target":"Bien sûr","phonetic":"بیاں سوغ","native_meaning":"یقیناً","english":"Of course","example_sentence_target":"Pouvez-vous m'aider ? - Bien sûr.","example_sentence_native":"کیا آپ میری مدد کر سکتے ہیں؟ - یقیناً۔","example_sentence_phonetic":"پووے وو م'یدے؟ - بیاں سوغ۔"},
+        {"id":"w1_6_6","target":"Je ne sais pas.","phonetic":"ژو نو سے پا","native_meaning":"مجھے نہیں معلوم۔","english":"I don't know.","example_sentence_target":"Où est-il ? - Je ne sais pas.","example_sentence_native":"وہ کہاں ہے؟ - مجھے نہیں معلوم۔","example_sentence_phonetic":"او اے-تیل؟ - ژو نو سے پا۔"},
+        {"id":"w1_6_7","target":"Exactement","phonetic":"ایگزاکتماں","native_meaning":"بالکل","english":"Exactly","example_sentence_target":"Donc, c'est 5 euros ? - Exactement.","example_sentence_native":"تو، یہ 5 یورو ہے؟ - بالکل۔","example_sentence_phonetic":"دونک، سے سانک یورو؟ - ایگزاکتماں۔"},
+        {"id":"w1_6_8","target":"Pas de problème.","phonetic":"پا دو پخوبلیم","native_meaning":"کوئی مسئلہ نہیں۔","english":"No problem.","example_sentence_target":"Merci ! - Pas de problème.","example_sentence_native":"شکریہ! - کوئی مسئلہ نہیں۔","example_sentence_phonetic":"میغسی! - پا دو پخوبلیم۔"}
+      ],
+      "sentences": [
+        {"id":"s1_6_1","target":"Oui, je suis d'accord avec vous.","native":"ہاں، میں آپ سے متفق ہوں۔","phonetic":"وئی، ژو سوئی داکوغ آویک وو۔"},
+        {"id":"s1_6_2","target":"Non, merci, je n'ai pas faim.","native":"نہیں، شکریہ، مجھے بھوک نہیں ہے۔","phonetic":"نوں، میغسی، ژو نے پا فیں۔"},
+        {"id":"s1_6_3","target":"Peut-être que nous irons au cinéma ce soir.","native":"شاید ہم آج رات سینما جائیں۔","phonetic":"پอ-تیتخ کو نو زیغوں او سینیما سو سواغ۔"},
+        {"id":"s1_6_4","target":"Je ne sais pas où j'ai mis mes clés.","native":"مجھے نہیں معلوم میں نے اپنی چابیاں کہاں رکھیں۔","phonetic":"ژو نو سے پا او ژے می مے کلے۔"},
+        {"id":"s1_6_5","target":"Bien sûr, je peux vous aider.","native":"یقیناً، میں آپ کی مدد کر سکتا ہوں۔","phonetic":"بیاں سوغ، ژو پอ ووزیدے۔"},
+        {"id":"s1_6_6","target":"Est-ce que c'est correct ? - Oui, exactement.","native":"کیا یہ صحیح ہے؟ - ہاں، بالکل۔","phonetic":"ایس کو سے کوغیکت؟ - وئی، ایگزاکتماں۔"},
+        {"id":"s1_6_7","target":"Désolé, j'ai oublié. - Pas de problème.","native":"معاف کیجئے، میں بھول گیا۔ - کوئی مسئلہ نہیں۔","phonetic":"دےزولے، ژے اوبلیے۔ - پا دو پخوبلیم۔"},
+        {"id":"s1_6_8","target":"Vous voulez venir ? - D'accord.","native":"آپ آنا چاہتے ہیں؟ - ٹھیک ہے۔","phonetic":"وو وولے وونیغ؟ - داکوغ۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_6_1","context":"دعوت قبول کرنا۔","lines":[{"speaker":"A","target":"Tu veux un café ?","native":"تم کافی پیو گے؟","phonetic":"تو وอ ایں کیفے؟"},{"speaker":"B","target":"Oui, avec plaisir.","native":"ہاں، خوشی سے۔","phonetic":"وئی، آویک پلیزیغ۔"}]},
+        {"id":"d1_6_2","context":"کسی پیشکش سے انکار کرنا۔","lines":[{"speaker":"A","target":"Voulez-vous encore du gâteau ?","native":"کیا آپ اور کیک چاہیں گے؟","phonetic":"وولے وو اونکوغ دو گاتو؟"},{"speaker":"B","target":"Non merci, c'est très gentil.","native":"نہیں شکریہ، آپ کی مہربانی۔","phonetic":"نوں میغسی، سے تخے ژونتی۔"}]},
+        {"id":"d1_6_3","context":"غیر یقینی صورتحال کا اظہار کرنا۔","lines":[{"speaker":"A","target":"Le magasin est-il ouvert le dimanche ?","native":"کیا دکان اتوار کو کھلی ہوتی ہے؟","phonetic":"لو ماگازاں اے-تیل اوویغ لو دیمونش؟"},{"speaker":"B","target":"Je ne sais pas. Peut-être.","native":"مجھے نہیں معلوم۔ شاید۔","phonetic":"ژو نو سے پا۔ پอ-تیتخ۔"}]},
+        {"id":"d1_6_4","context":"کسی منصوبے پر اتفاق کرنا۔","lines":[{"speaker":"A","target":"On part à 8h ?","native":"ہم 8 بجے نکلیں؟","phonetic":"اوں پاغ آ ویتوغ؟"},{"speaker":"B","target":"D'accord, pas de problème.","native":"ٹھیک ہے، کوئی مسئلہ نہیں۔","phonetic":"داکوغ، پا دو پخوبلیم۔"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_6_1","target":"Oui","native":"ہاں"},
+          {"id":"m1_6_2","target":"Non","native":"نہیں"},
+          {"id":"m1_6_3","target":"Peut-être","native":"شاید"},
+          {"id":"m1_6_4","target":"Je ne sais pas.","native":"مجھے نہیں معلوم۔"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "فرانسیسی ثقافت میں، براہ راست 'نہیں' کہنا بعض اوقات بے ادبی سمجھا جا سکتا ہے۔ لوگ اکثر 'Non, merci' (نہیں، شکریہ) یا جملے کو نرم کرنے کے لیے کوئی وضاحت شامل کرتے ہیں۔",
+      "pronunciation_tip": "'Non' میں 'n' کی آواز بہت ہلکی ہوتی ہے اور یہ ناک سے ادا ہوتی ہے۔ یہ انگریزی 'no' سے بہت مختلف ہے۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D6-Responses"}
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Simple Conversation Practice",
+      "title_native": "ساتواں دن: سادہ گفتگو کی مشق",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Urdu",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Bonjour",
-          "phonetic": "بوں-ژور",
-          "native_meaning": "ہیلو",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "ہیلو."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Merci",
-          "phonetic": "مेر-سی",
-          "native_meaning": "شکریہ",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "شکریہ."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Au revoir",
-          "phonetic": "او-ر-وار",
-          "native_meaning": "الوداع",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "الوداع."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "S'il vous plaît",
-          "phonetic": "سِل-وو-پلے",
-          "native_meaning": "براہ کرم",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "براہ کرم."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Excusez-moi",
-          "phonetic": "ایکس-کیو-سے-موئی",
-          "native_meaning": "معذرت",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "معذرت."
-        }
+        {"id":"w1_7_1","target":"Comment ça va ?","phonetic":"کماں سا وا؟","native_meaning":"آپ کیسے ہیں؟","english":"How are you?","example_sentence_target":"Bonjour, comment ça va ?","example_sentence_native":"ہیلو، آپ کیسے ہیں؟","example_sentence_phonetic":"بونژور، کماں سا وا؟"},
+        {"id":"w1_7_2","target":"Ça va bien.","phonetic":"سا وا بیاں","native_meaning":"میں ٹھیک ہوں۔","english":"I am fine.","example_sentence_target":"Ça va bien, merci. Et vous ?","example_sentence_native":"میں ٹھیک ہوں، شکریہ۔ اور آپ؟","example_sentence_phonetic":"سا وا بیاں، میغسی۔ اے وو؟"},
+        {"id":"w1_7_3","target":"Et toi ?","phonetic":"اے توا؟","native_meaning":"اور تم؟ (غیر رسمی)","english":"And you? (informal)","example_sentence_target":"Salut, ça va ? - Oui, et toi ?","example_sentence_native":"سلام، ٹھیک ہو؟ - ہاں، اور تم؟","example_sentence_phonetic":"سالو، سا وا؟ - وئی، اے توا؟"},
+        {"id":"w1_7_4","target":"Quel âge avez-vous ?","phonetic":"کیل آژ آوے وو؟","native_meaning":"آپ کی عمر کیا ہے؟","english":"How old are you?","example_sentence_target":"Quel âge avez-vous ? - J'ai 30 ans.","example_sentence_native":"آپ کی عمر کیا ہے؟ - میری عمر 30 سال ہے۔","example_sentence_phonetic":"کیل آژ آوے وو؟ - ژے تخونت آں۔"},
+        {"id":"w1_7_5","target":"Où habitez-vous ?","phonetic":"او آیتے وو؟","native_meaning":"آپ کہاں رہتے ہیں؟","english":"Where do you live?","example_sentence_target":"Où habitez-vous maintenant ?","example_sentence_native":"آپ اب کہاں رہتے ہیں؟","example_sentence_phonetic":"او آیتے وو مینتنوں؟"},
+        {"id":"w1_7_6","target":"Que faites-vous ?","phonetic":"کو فیت وو؟","native_meaning":"آپ کیا کرتے ہیں؟ (کام)","english":"What do you do? (work)","example_sentence_target":"Que faites-vous dans la vie ?","example_sentence_native":"آپ زندگی میں کیا کرتے ہیں؟","example_sentence_phonetic":"کو فیت وو داں لا وی؟"},
+        {"id":"w1_7_7","target":"Je suis... (+ profession)","phonetic":"ژو سوئی...","native_meaning":"میں ... ہوں (پیشہ)","english":"I am a... (profession)","example_sentence_target":"Je suis médecin.","example_sentence_native":"میں ایک ڈاکٹر ہوں۔","example_sentence_phonetic":"ژو سوئی میدساں۔"},
+        {"id":"w1_7_8","target":"À plus tard.","phonetic":"آ پلو تاغ","native_meaning":"بعد میں ملتے ہیں۔","english":"See you later.","example_sentence_target":"D'accord, à plus tard !","example_sentence_native":"ٹھیک ہے، بعد میں ملتے ہیں!","example_sentence_phonetic":"داکوغ، آ پلو تاغ!"}
+      ],
+      "sentences": [
+        {"id":"s1_7_1","target":"Bonjour, comment ça va aujourd'hui ?","native":"ہیلو، آج آپ کیسے ہیں؟","phonetic":"بونژور، کماں سا وا اوژوغدوئی؟"},
+        {"id":"s1_7_2","target":"Ça va bien, merci. Et vous, d'où venez-vous ?","native":"میں ٹھیک ہوں، شکریہ۔ اور آپ، آپ کہاں سے ہیں؟","phonetic":"سا وا بیاں، میغسی۔ اے وو، دو وینے وو؟"},
+        {"id":"s1_7_3","target":"Je viens de Paris. Je suis français.","native":"میں پیرس سے ہوں۔ میں فرانسیسی ہوں۔","phonetic":"ژو ویاں دو پاغی۔ ژو سوئی فغونسے۔"},
+        {"id":"s1_7_4","target":"Enchanté. Je m'appelle Ali et je viens du Pakistan.","native":"آپ سے مل کر خوشی ہوئی۔ میرا نام علی ہے اور میں پاکستان سے ہوں۔","phonetic":"اونشونتے۔ ژو ماپیل علی اے ژو ویاں دو پاکستان۔"},
+        {"id":"s1_7_5","target":"Que faites-vous à Paris ?","native":"آپ پیرس میں کیا کرتے ہیں؟","phonetic":"کو فیت وو آ پاغی؟"},
+        {"id":"s1_7_6","target":"Je suis ingénieur. J'habite ici pour le travail.","native":"میں ایک انجینئر ہوں۔ میں یہاں کام کے لیے رہتا ہوں۔","phonetic":"ژو سوئی اینژینیوغ۔ ژابیت ایسی پوغ لو تخاوائی۔"},
+        {"id":"s1_7_7","target":"D'accord. Bienvenue !","native":"ٹھیک ہے۔ خوش آمدید!","phonetic":"داکوغ۔ بیانوونو!"},
+        {"id":"s1_7_8","target":"Merci beaucoup. Au revoir, à plus tard.","native":"بہت بہت شکریہ۔ خدا حافظ، بعد میں ملتے ہیں۔","phonetic":"میغسی بوکو۔ او غوواغ، آ پلو تاغ۔"}
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "ہیلو!",
-              "phonetic": "بوں-ژور"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "ہیلو! شکریہ!",
-              "phonetic": "بوں-ژور مेر-سی"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "شکریہ!",
-              "phonetic": "مेر-سی"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "الوداع!",
-              "phonetic": "او-ر-وار"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "براہ کرم! معذرت!",
-              "phonetic": "سِل-وو-پلے ایکس-کیو-سے-موئی"
-            }
-          ]
-        }
+        {"id":"d1_7_1","context":"ایک نئے پڑوسی سے ملنا۔","lines":[{"speaker":"A","target":"Bonjour, je suis votre nouveau voisin. Je m'appelle Ahmed.","native":"ہیلو، میں آپ کا نیا پڑوسی ہوں۔ میرا نام احمد ہے۔","phonetic":"بونژور، ژو سوئی ووتخ نووو وازاں۔ ژو ماپیل احمد۔"},{"speaker":"B","target":"Bonjour Ahmed. Enchantée. Je m'appelle Claire. Bienvenue !","native":"ہیلو احمد۔ آپ سے مل کر خوشی ہوئی۔ میرا نام کلیئر ہے۔ خوش آمدید!","phonetic":"بونژور احمد۔ اونشونتے۔ ژو ماپیل کلیئر۔ بیانوونو!"}]},
+        {"id":"d1_7_2","context":"کیفے میں بات چیت۔","lines":[{"speaker":"A","target":"Salut, ça va ?","native":"سلام، ٹھیک ہو؟","phonetic":"سالو، سا وا؟"},{"speaker":"B","target":"Ça va bien, et toi ?","native":"میں ٹھیک ہوں، اور تم؟","phonetic":"سا وا بیاں، اے توا؟"},{"speaker":"A","target":"Bien, merci. Un café, s'il te plaît.","native":"ٹھیک، شکریہ۔ ایک کافی، براہ مہربانی۔","phonetic":"بیاں، میغسی۔ ایں کیفے، سیل تو پلے۔"}]},
+        {"id":"d1_7_3","context":"فون پر۔","lines":[{"speaker":"A","target":"Allô ? C'est Marie.","native":"ہیلو؟ یہ ماری ہے۔","phonetic":"آلو؟ سے ماری۔"},{"speaker":"B","target":"Salut Marie. Comment ça va ?","native":"سلام ماری۔ کیسی ہو؟","phonetic":"سالو ماری۔ کماں سا وا؟"},{"speaker":"A","target":"Ça va. Je te vois plus tard ?","native":"میں ٹھیک ہوں۔ تم سے بعد میں ملتی ہوں؟","phonetic":"سا وا۔ ژو تو موا پلو تاغ؟"},{"speaker":"B","target":"D'accord, à plus tard.","native":"ٹھیک ہے، بعد میں ملتے ہیں۔","phonetic":"داکوغ، آ پلو تاغ۔"}]},
+        {"id":"d1_7_4","context":"کام پر تعارف۔","lines":[{"speaker":"A","target":"Bonjour, je m'appelle Hassan. Je suis le nouveau manager.","native":"ہیلو، میرا نام حسن ہے۔ میں نیا مینیجر ہوں۔","phonetic":"بونژور، ژو ماپیل حسن۔ ژو سوئی لو نووو مینیجر۔"},{"speaker":"B","target":"Enchanté Monsieur. Je suis Paul. Que faites-vous ?","native":"آپ سے مل کر خوشی ہوئی جناب۔ میں پال ہوں۔ آپ کیا کرتے ہیں؟","phonetic":"اونشونتے مسیو۔ ژو سوئی پال۔ کو فیت وو؟"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "ہیلو"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "شکریہ"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "الوداع"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Bonjour",
-            "native": "ہیلو"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Merci",
-            "native": "شکریہ"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Au revoir",
-            "native": "الوداع"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "S'il vous plaît",
-            "native": "براہ کرم"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Excusez-moi",
-            "native": "معذرت"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "ہیلو",
-              "شکریہ",
-              "الوداع",
-              "براہ کرم"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means ہیلو in Urdu."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'شکریہ' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means شکریہ."
-          }
+          {"id":"m1_7_1","target":"Comment ça va ?","native":"آپ کیسے ہیں؟"},
+          {"id":"m1_7_2","target":"Je viens de...","native":"میں ... سے ہوں۔"},
+          {"id":"m1_7_3","target":"Où habitez-vous ?","native":"آپ کہاں رہتے ہیں؟"},
+          {"id":"m1_7_4","target":"À plus tard.","native":"بعد میں ملتے ہیں۔"}
         ]
       },
-      "cultural_note": "فرانس میں 'bonjour' کہنا بہت ضروری ہے — ہر جگہ!",
-      "pronunciation_tip": "فرانسیسی 'r' — گلے کے پچھلے حصے سے نکلتی ہے، زبان سے نہیں۔",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "جب آپ کسی سے پوچھتے ہیں 'Comment ça va?'، تو وہ اکثر صرف 'Ça va' سے جواب دیتے ہیں۔ یہ ایک بہت عام اور ورسٹائل جملہ ہے۔",
+      "pronunciation_tip": "یاد رکھیں: ہفتے بھر میں سیکھے گئے تمام الفاظ کی مشق کریں۔ انہیں بلند آواز میں دہرائیں اور اپنی روزمرہ کی صورتحال میں استعمال کرنے کی کوشش کریں۔",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D7-Review"}
     }
   ]
 }
