@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,1325 +8,340 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "पहला दिन: सामान्य अभिवादन",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_1_1","target":"Bonjour","phonetic":"बों-जूर","native_meaning":"नमस्ते/सुप्रभात","english":"Hello/Good morning","example_sentence_target":"Bonjour, comment ça va ?","example_sentence_native":"नमस्ते, आप कैसे हैं?","example_sentence_phonetic":"बों-जूर, कॉ-मॉन् सा वा?"},
+        {"id":"w1_1_2","target":"Bonsoir","phonetic":"बों-स्वार","native_meaning":"शुभ संध्या","english":"Good evening","example_sentence_target":"Bonsoir, madame.","example_sentence_native":"शुभ संध्या, मैडम।","example_sentence_phonetic":"बों-स्वार, मा-दाम।"},
+        {"id":"w1_1_3","target":"Salut","phonetic":"सा-लू","native_meaning":"हाय/नमस्ते (अनौपचारिक)","english":"Hi/Hello (informal)","example_sentence_target":"Salut, ça va ?","example_sentence_native":"हाय, क्या हाल है?","example_sentence_phonetic":"सा-लू, सा वा?"},
+        {"id":"w1_1_4","target":"Au revoir","phonetic":"ओ र-व्वा","native_meaning":"अलविदा","english":"Goodbye","example_sentence_target":"Au revoir, à demain.","example_sentence_native":"अलविदा, कल मिलते हैं।","example_sentence_phonetic":"ओ र-व्वा, आ द-माँ।"},
+        {"id":"w1_1_5","target":"Merci","phonetic":"मैर-सी","native_meaning":"धन्यवाद","english":"Thank you","example_sentence_target":"Merci beaucoup.","example_sentence_native":"बहुत-बहुत धन्यवाद।","example_sentence_phonetic":"मैर-सी बो-कू।"},
+        {"id":"w1_1_6","target":"Oui","phonetic":"वी","native_meaning":"हाँ","english":"Yes","example_sentence_target":"Oui, je comprends.","example_sentence_native":"हाँ, मैं समझता हूँ।","example_sentence_phonetic":"वी, ज कॉम्प्रों।"},
+        {"id":"w1_1_7","target":"Non","phonetic":"नों","native_meaning":"नहीं","english":"No","example_sentence_target":"Non, merci.","example_sentence_native":"नहीं, धन्यवाद।","example_sentence_phonetic":"नों, मैर-सी।"},
+        {"id":"w1_1_8","target":"Excusez-moi","phonetic":"एक्स-क्यू-ज़े-म्वा","native_meaning":"माफ़ कीजिए","english":"Excuse me","example_sentence_target":"Excusez-moi, où est la gare ?","example_sentence_native":"माफ़ कीजिए, रेलवे स्टेशन कहाँ है?","example_sentence_phonetic":"एक्स-क्यू-ज़े-म्वा, ऊ ऐ ला गार?"}
+      ],
+      "sentences": [
+        {"id":"s1_1_1","target":"Bonjour, monsieur.","native":"नमस्ते, श्रीमान।","phonetic":"बों-जूर, मॉन-स्योर।"},
+        {"id":"s1_1_2","target":"Bonsoir, comment allez-vous ?","native":"शुभ संध्या, आप कैसे हैं?","phonetic":"बों-स्वार, कॉ-मॉन्-ता-ले-वू?"},
+        {"id":"s1_1_3","target":"Salut, Pierre !","native":"हाय, पियरे!","phonetic":"सा-लू, पियैर!"},
+        {"id":"s1_1_4","target":"Merci pour votre aide.","native":"आपकी मदद के लिए धन्यवाद।","phonetic":"मैर-सी पूर वोत्र ऐद।"},
+        {"id":"s1_1_5","target":"Au revoir et bonne soirée.","native":"अलविदा और आपकी शाम अच्छी हो।","phonetic":"ओ र-व्वा ए बोन स्वारे।"},
+        {"id":"s1_1_6","target":"Oui, s'il vous plaît.","native":"हाँ, कृपया।","phonetic":"वी, सिल वू प्ले।"},
+        {"id":"s1_1_7","target":"Non, je ne parle pas français.","native":"नहीं, मैं फ्रेंच नहीं बोलता।","phonetic":"नों, ज न पार्ल पा फ्रां-से।"},
+        {"id":"s1_1_8","target":"Excusez-moi, quelle heure est-il ?","native":"माफ़ कीजिए, क्या समय हुआ है?","phonetic":"एक्स-क्यू-ज़े-म्वा, कैल अर ऐ-टील?"}
       ],
       "dialogues": [
-        {
-          "id": "d1_1_1",
-          "context": "Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_1_1","context":"एक दुकान में प्रवेश करते समय।","lines":[{"speaker":"A","target":"Bonjour, madame.","native":"नमस्ते, मैडम।","phonetic":"बों-जूर, मा-दाम।"},{"speaker":"B","target":"Bonjour ! Je peux vous aider ?","native":"नमस्ते! क्या मैं आपकी मदद कर सकती हूँ?","phonetic":"बों-जूर! ज प वू-ज़े-दे?"}]},
+        {"id":"d1_1_2","context":"किसी से गलती से टकरा जाने पर।","lines":[{"speaker":"A","target":"Oh, excusez-moi !","native":"ओह, माफ़ कीजिए!","phonetic":"ओ, एक्स-क्यू-ज़े-म्वा!"},{"speaker":"B","target":"Ce n'est pas grave.","native":"कोई बात नहीं।","phonetic":"स ने पा ग्राव।"}]},
+        {"id":"d1_1_3","context":"एक दोस्त को अलविदा कहते हुए।","lines":[{"speaker":"A","target":"Salut, je dois y aller.","native":"हाय, मुझे जाना होगा।","phonetic":"सा-लू, ज द्वा-ज़िया-ले।"},{"speaker":"B","target":"D'accord, au revoir !","native":"ठीक है, अलविदा!","phonetic":"दा-कॉर, ओ र-व्वा!"}]},
+        {"id":"d1_1_4","context":"किसी ऑफ़र को स्वीकार या अस्वीकार करना।","lines":[{"speaker":"A","target":"Voulez-vous un café ?","native":"क्या आप कॉफ़ी लेंगे?","phonetic":"वू-ले वू अन कै-फ़े?"},{"speaker":"B","target":"Oui, merci. / Non, merci.","native":"हाँ, धन्यवाद। / नहीं, धन्यवाद।","phonetic":"वी, मैर-सी। / नों, मैर-सी।"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_1_1","target":"Bonjour","native":"नमस्ते"},
+          {"id":"m1_1_2","target":"Merci","native":"धन्यवाद"},
+          {"id":"m1_1_3","target":"Au revoir","native":"अलविदा"},
+          {"id":"m1_1_4","target":"Excusez-moi","native":"माफ़ कीजिए"},
+          {"id":"m1_1_5","target":"Oui","native":"हाँ"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "फ्रांस में, किसी दुकान या कैफे में प्रवेश करते और निकलते समय 'Bonjour' और 'Au revoir' कहना विनम्रता माना जाता है, भले ही आप कुछ न खरीदें।",
+      "pronunciation_tip": "फ्रांसीसी 'r' का उच्चारण हिंदी 'र' से अलग है। यह गले के पिछले हिस्से से आता है, जैसे गरारे करते समय हल्की सी आवाज़। 'Merci' में इसका अभ्यास करें।",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D1-Greetings"}
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Introducing yourself",
+      "title_native": "दूसरा दिन: अपना परिचय देना",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_2_1","target":"Je m'appelle...","phonetic":"ज म-पेल...","native_meaning":"मेरा नाम है...","english":"My name is...","example_sentence_target":"Je m'appelle Jean.","example_sentence_native":"मेरा नाम जीन है।","example_sentence_phonetic":"ज म-पेल जॉन्।"},
+        {"id":"w1_2_2","target":"Je suis...","phonetic":"ज स्वी...","native_meaning":"मैं हूँ...","english":"I am...","example_sentence_target":"Je suis indien.","example_sentence_native":"मैं भारतीय हूँ।","example_sentence_phonetic":"ज स्वी-ज़ैन-दियें।"},
+        {"id":"w1_2_3","target":"Enchanté(e)","phonetic":"ऑन्-शॉन्-ते","native_meaning":"आपसे मिलकर खुशी हुई","english":"Pleased to meet you","example_sentence_target":"Enchantée, Marie.","example_sentence_native":"आपसे मिलकर खुशी हुई, मैरी।","example_sentence_phonetic":"ऑन्-शॉन्-ते, मा-री।"},
+        {"id":"w1_2_4","target":"Et vous ?","phonetic":"ए वू?","native_meaning":"और आप? (औपचारिक)","english":"And you? (formal)","example_sentence_target":"Je m'appelle Paul. Et vous ?","example_sentence_native":"मेरा नाम पॉल है। और आप?","example_sentence_phonetic":"ज म-पेल पॉल। ए वू?"},
+        {"id":"w1_2_5","target":"Et toi ?","phonetic":"ए त्वा?","native_meaning":"और तुम? (अनौपचारिक)","english":"And you? (informal)","example_sentence_target":"Moi, c'est Marc. Et toi ?","native_meaning":"मैं मार्क हूँ। और तुम?","phonetic":"म्वा, से मार्क। ए त्वा?"},
+        {"id":"w1_2_6","target":"Comment","phonetic":"कॉ-मॉन्","native_meaning":"कैसे/क्या","english":"How/What","example_sentence_target":"Comment vous appelez-vous ?","example_sentence_native":"आपका नाम क्या है?","example_sentence_phonetic":"कॉ-मॉन् वू-ज़ा-प्ले-वू?"},
+        {"id":"w1_2_7","target":"s'appeler","phonetic":"स-प-ले","native_meaning":"नाम होना (क्रिया)","english":"to be called (verb)","example_sentence_target":"Il s'appelle David.","example_sentence_native":"उसका नाम डेविड है।","example_sentence_phonetic":"इल स-पेल डा-वीड।"},
+        {"id":"w1_2_8","target":"Parler","phonetic":"पार-ले","native_meaning":"बोलना","english":"To speak","example_sentence_target":"Je parle un peu français.","example_sentence_native":"मैं थोड़ी फ्रेंच बोलता हूँ।","example_sentence_phonetic":"ज पार्ल अन प फ्रां-से।"}
+      ],
+      "sentences": [
+        {"id":"s1_2_1","target":"Bonjour, je m'appelle Anna.","native":"नमस्ते, मेरा नाम अन्ना है।","phonetic":"बों-जूर, ज म-पेल आ-ना।"},
+        {"id":"s1_2_2","target":"Je suis de l'Inde.","native":"मैं भारत से हूँ।","phonetic":"ज स्वी द लांद।"},
+        {"id":"s1_2_3","target":"Enchanté de faire votre connaissance.","native":"आपसे मिलकर खुशी हुई।","phonetic":"ऑन्-शॉन्-ते द फैर वोत्र कॉ-ने-साँस।"},
+        {"id":"s1_2_4","target":"Comment tu t'appelles ?","native":"तुम्हारा नाम क्या है? (अनौपचारिक)","phonetic":"कॉ-मॉन् तू त-पेल?"},
+        {"id":"s1_2_5","target":"Je parle hindi et anglais.","native":"मैं हिंदी और अंग्रेज़ी बोलता हूँ।","phonetic":"ज पार्ल हिंदी ए ऑन्-ग्ले।"},
+        {"id":"s1_2_6","target":"Elle s'appelle Sophie.","native":"उसका नाम सोफी है।","phonetic":"एल स-पेल सो-फ़ी।"},
+        {"id":"s1_2_7","target":"Je suis ingénieur. Et vous ?","native":"मैं एक इंजीनियर हूँ। और आप?","phonetic":"ज स्वी-ज़ें-जे-न्योर। ए वू?"},
+        {"id":"s1_2_8","target":"C'est un plaisir. Enchanté.","native":"यह एक खुशी की बात है। आपसे मिलकर खुशी हुई।","phonetic":"से-तँ प्ले-ज़ीर। ऑन्-शॉन्-ते।"}
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_2_1","context":"पहली बार किसी से औपचारिक रूप से मिलना।","lines":[{"speaker":"A","target":"Bonjour, je m'appelle Monsieur Kumar.","native":"नमस्ते, मेरा नाम श्री कुमार है।","phonetic":"बों-जूर, ज म-पेल मॉन-स्योर कुमार।"},{"speaker":"B","target":"Bonjour Monsieur Kumar. Je suis Madame Dubois. Enchantée.","native":"नमस्ते श्री कुमार। मैं मैडम डुबोइस हूँ। आपसे मिलकर खुशी हुई।","phonetic":"बों-जूर मॉन-स्योर कुमार। ज स्वी मा-दाम डू-ब्वा। ऑन्-शॉन्-ते।"}]},
+        {"id":"d1_2_2","context":"किसी पार्टी में अनौपचारिक परिचय।","lines":[{"speaker":"A","target":"Salut, moi c'est Léo. Et toi ?","native":"हाय, मैं लियो हूँ। और तुम?","phonetic":"सा-लू, म्वा से ले-ओ। ए त्वा?"},{"speaker":"B","target":"Salut Léo, je m'appelle Sara.","native":"हाय लियो, मेरा नाम सारा है।","phonetic":"सा-लू ले-ओ, ज म-पेल सा-रा।"}]},
+        {"id":"d1_2_3","context":"अपनी राष्ट्रीयता बताना।","lines":[{"speaker":"A","target":"Vous êtes français ?","native":"क्या आप फ्रांसीसी हैं?","phonetic":"वू-ज़ैत फ्रां-से?"},{"speaker":"B","target":"Non, je suis indien.","native":"नहीं, मैं भारतीय हूँ।","phonetic":"नों, ज स्वी-ज़ैन-दियें।"}]},
+        {"id":"d1_2_4","context":"बातचीत शुरू करना।","lines":[{"speaker":"A","target":"Excusez-moi, vous parlez anglais ?","native":"माफ़ कीजिए, क्या आप अंग्रेज़ी बोलते हैं?","phonetic":"एक्स-क्यू-ज़े-म्वा, वू पार्ले-ज़ॉन्-ग्ले?"},{"speaker":"B","target":"Oui, un peu.","native":"हाँ, थोड़ी सी।","phonetic":"वी, अन प।"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_2_1","target":"Je m'appelle...","native":"मेरा नाम है..."},
+          {"id":"m1_2_2","target":"Enchanté(e)","native":"आपसे मिलकर खुशी हुई"},
+          {"id":"m1_2_3","target":"Je suis indien.","native":"मैं भारतीय हूँ।"},
+          {"id":"m1_2_4","target":"Et toi ?","native":"और तुम?"},
+          {"id":"m1_2_5","target":"Je parle français.","native":"मैं फ्रेंच बोलता हूँ।"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "किसी से पहली बार मिलते समय, फ्रांसीसी लोग अक्सर हाथ मिलाते हैं ('serrer la main')। दोस्तों और परिवार के बीच, वे 'la bise' करते हैं, जो गालों पर एक चुंबन होता है।",
+      "pronunciation_tip": "'Enchanté(e)' में 'en' और 'an' जैसी नासिक्य ध्वनियों का अभ्यास करें। हवा को अपनी नाक से बाहर निकलने दें। 'e' का उच्चारण नहीं होता अगर यह किसी महिला द्वारा बोला जाए।",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D2-Introductions"}
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Asking someone's name",
+      "title_native": "तीसरा दिन: किसी का नाम पूछना",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_3_1","target":"Comment vous appelez-vous ?","phonetic":"कॉ-मॉन् वू-ज़ा-प्ले-वू?","native_meaning":"आपका नाम क्या है? (औपचारिक)","english":"What is your name? (formal)","example_sentence_target":"Bonjour, comment vous appelez-vous ?","example_sentence_native":"नमस्ते, आपका नाम क्या है?","example_sentence_phonetic":"बों-जूर, कॉ-मॉन् वू-ज़ा-प्ले-वू?"},
+        {"id":"w1_3_2","target":"Comment tu t'appelles ?","phonetic":"कॉ-मॉन् तू त-पेल?","native_meaning":"तुम्हारा नाम क्या है? (अनौपचारिक)","english":"What is your name? (informal)","example_sentence_target":"Salut, comment tu t'appelles ?","example_sentence_native":"हाय, तुम्हारा नाम क्या है?","example_sentence_phonetic":"सा-लू, कॉ-मॉन् तू त-पेल?"},
+        {"id":"w1_3_3","target":"Vous","phonetic":"वू","native_meaning":"आप (औपचारिक/बहुवचन)","english":"You (formal/plural)","example_sentence_target":"Et vous ?","example_sentence_native":"और आप?","example_sentence_phonetic":"ए वू?"},
+        {"id":"w1_3_4","target":"Tu","phonetic":"तू","native_meaning":"तुम (अनौपचारिक)","english":"You (informal)","example_sentence_target":"Et toi ?","example_sentence_native":"और तुम?","example_sentence_phonetic":"ए त्वा?"},
+        {"id":"w1_3_5","target":"Quel","phonetic":"कैल","native_meaning":"कौन सा/क्या (पुल्लिंग)","english":"Which/What (masculine)","example_sentence_target":"Quel est votre nom ?","example_sentence_native":"आपका नाम क्या है?","example_sentence_phonetic":"कैल ऐ वोत्र नॉम?"},
+        {"id":"w1_3_6","target":"Nom","phonetic":"नॉम","native_meaning":"नाम (उपनाम)","english":"Name (surname)","example_sentence_target":"Mon nom de famille est Kumar.","example_sentence_native":"मेरा उपनाम कुमार है।","example_sentence_phonetic":"मों नॉम द फा-मी ऐ कुमार।"},
+        {"id":"w1_3_7","target":"Prénom","phonetic":"प्रे-नॉम","native_meaning":"पहला नाम","english":"First name","example_sentence_target":"Mon prénom est Anil.","example_sentence_native":"मेरा पहला नाम अनिल है।","example_sentence_phonetic":"मों प्रे-नॉम ऐ अनिल।"},
+        {"id":"w1_3_8","target":"C'est...","phonetic":"से...","native_meaning":"यह है...","english":"It is.../This is...","example_sentence_target":"C'est Monsieur Martin.","example_sentence_native":"यह श्री मार्टिन हैं।","example_sentence_phonetic":"से मॉन-स्योर मार-तैं।"}
+      ],
+      "sentences": [
+        {"id":"s1_3_1","target":"Excusez-moi, comment vous appelez-vous ?","native":"माफ़ कीजिए, आपका नाम क्या है?","phonetic":"एक्स-क्यू-ज़े-म्वा, कॉ-मॉन् वू-ज़ा-प्ले-वू?"},
+        {"id":"s1_3_2","target":"Moi, c'est Maria. Et toi, comment tu t'appelles ?","native":"मैं मारिया हूँ। और तुम, तुम्हारा नाम क्या है?","phonetic":"म्वा, से मा-रि-या। ए त्वा, कॉ-मॉन् तू त-पेल?"},
+        {"id":"s1_3_3","target":"Quel est votre prénom ?","native":"आपका पहला नाम क्या है?","phonetic":"कैल ऐ वोत्र प्रे-नॉम?"},
+        {"id":"s1_3_4","target":"Mon nom est Sharma.","native":"मेरा उपनाम शर्मा है।","phonetic":"मों नॉम ऐ शर्मा।"},
+        {"id":"s1_3_5","target":"Vous êtes Paul, n'est-ce pas ?","native":"आप पॉल हैं, है ना?","phonetic":"वू-ज़ैत पॉल, नेस पा?"},
+        {"id":"s1_3_6","target":"Comment s'appelle-t-il ?","native":"उसका नाम क्या है? (पुल्लिंग)","phonetic":"कॉ-मॉन् स-पेल-टील?"},
+        {"id":"s1_3_7","target":"Comment s'appelle-t-elle ?","native":"उसका नाम क्या है? (स्त्रीलिंग)","phonetic":"कॉ-मॉन् स-पेल-टेल?"},
+        {"id":"s1_3_8","target":"C'est un plaisir de vous rencontrer.","native":"आपसे मिलकर खुशी हुई।","phonetic":"से-तँ प्ले-ज़ीर द वू रां-कॉन्-त्रे।"}
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_3_1","context":"एक औपचारिक कार्यक्रम में।","lines":[{"speaker":"A","target":"Bonsoir. Comment vous appelez-vous ?","native":"शुभ संध्या। आपका नाम क्या है?","phonetic":"बों-स्वार। कॉ-मॉन् वू-ज़ा-प्ले-वू?"},{"speaker":"B","target":"Je m'appelle Sophie. Et vous ?","native":"मेरा नाम सोफी है। और आप?","phonetic":"ज म-पेल सो-फ़ी। ए वू?"}]},
+        {"id":"d1_3_2","context":"एक कक्षा में।","lines":[{"speaker":"A","target":"Salut, comment tu t'appelles ?","native":"हाय, तुम्हारा नाम क्या है?","phonetic":"सा-लू, कॉ-मॉन् तू त-पेल?"},{"speaker":"B","target":"Je m'appelle Ali.","native":"मेरा नाम अली है।","phonetic":"ज म-पेल आ-ली।"}]},
+        {"id":"d1_3_3","context":"किसी तीसरे व्यक्ति के बारे में पूछना।","lines":[{"speaker":"A","target":"Qui est-ce ? Comment il s'appelle ?","native":"वह कौन है? उसका नाम क्या है?","phonetic":"की ऐस? कॉ-मॉन् इल स-पेल?"},{"speaker":"B","target":"Lui, c'est Marc, mon ami.","native":"वह मार्क है, मेरा दोस्त।","phonetic":"लुई, से मार्क, मों-ना-मी।"}]},
+        {"id":"d1_3_4","context":"नाम और उपनाम स्पष्ट करना।","lines":[{"speaker":"A","target":"Quel est votre nom de famille ?","native":"आपका उपनाम क्या है?","phonetic":"कैल ऐ वोत्र नॉम द फा-मी?"},{"speaker":"B","target":"Mon nom est Gupta et mon prénom est Priya.","native":"मेरा उपनाम गुप्ता है और मेरा पहला नाम प्रिया है।","phonetic":"मों नॉम ऐ गुप्ता ए मों प्रे-नॉम ऐ प्रि-या।"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_3_1","target":"Comment vous appelez-vous ?","native":"आपका नाम क्या है?"},
+          {"id":"m1_3_2","target":"Comment tu t'appelles ?","native":"तुम्हारा नाम क्या है?"},
+          {"id":"m1_3_3","target":"Quel est votre prénom ?","native":"आपका पहला नाम क्या है?"},
+          {"id":"m1_3_4","target":"Vous","native":"आप"},
+          {"id":"m1_3_5","target":"Tu","native":"तुम"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "फ्रांसीसी समाज में औपचारिकता महत्वपूर्ण है। अजनबियों, बड़ों और व्यावसायिक संदर्भों में हमेशा 'vous' (आप) का उपयोग करें। 'Tu' (तुम) का उपयोग दोस्तों, परिवार और बच्चों के लिए किया जाता है।",
+      "pronunciation_tip": "'Comment' में अंतिम 't' का उच्चारण नहीं होता है। यह 'कॉ-मॉन्' जैसा लगता है। 'vous appelez-vous' में शब्दों के बीच का संबंध ('liaison') सुनें, जो इसे 'वू-ज़ा-प्ले-वू' जैसा बनाता है।",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D3-Names"}
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Nationality and country",
+      "title_native": "चौथा दिन: राष्ट्रीयता और देश",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_4_1","target":"Pays","phonetic":"पे-ई","native_meaning":"देश","english":"Country","example_sentence_target":"La France est un beau pays.","example_sentence_native":"फ्रांस एक सुंदर देश है।","example_sentence_phonetic":"ला फ्रांस ऐ-तँ बो पे-ई।"},
+        {"id":"w1_4_2","target":"Nationalité","phonetic":"ना-स्यो-ना-ली-ते","native_meaning":"राष्ट्रीयता","english":"Nationality","example_sentence_target":"Quelle est votre nationalité ?","example_sentence_native":"आपकी राष्ट्रीयता क्या है?","example_sentence_phonetic":"कैल ऐ वोत्र ना-स्यो-ना-ली-ते?"},
+        {"id":"w1_4_3","target":"Indien(ne)","phonetic":"ऐन-दियें(न)","native_meaning":"भारतीय","english":"Indian","example_sentence_target":"Je suis indien. / Je suis indienne.","example_sentence_native":"मैं भारतीय हूँ। (पु./स्त्री.)","example_sentence_phonetic":"ज स्वी-ज़ैन-दियें। / ज स्वी-ज़ैन-दियन।"},
+        {"id":"w1_4_4","target":"Français(e)","phonetic":"फ्रां-से(ज़)","native_meaning":"फ्रांसीसी","english":"French","example_sentence_target":"Il est français. / Elle est française.","example_sentence_native":"वह फ्रांसीसी है। (पु./स्त्री.)","example_sentence_phonetic":"इल-ए-फ्रां-से। / एल-ए-फ्रां-सेज़।"},
+        {"id":"w1_4_5","target":"venir de...","phonetic":"व-नीर द...","native_meaning":"...से आना","english":"to come from...","example_sentence_target":"Je viens de l'Inde.","example_sentence_native":"मैं भारत से आता हूँ।","example_sentence_phonetic":"ज वियें द लांद।"},
+        {"id":"w1_4_6","target":"habiter à...","phonetic":"आ-बी-ते आ...","native_meaning":"...में रहना","english":"to live in...","example_sentence_target":"J'habite à Paris.","example_sentence_native":"मैं पेरिस में रहता हूँ।","example_sentence_phonetic":"ज़ा-बीत आ पा-री।"},
+        {"id":"w1_4_7","target":"Où","phonetic":"ऊ","native_meaning":"कहाँ","english":"Where","example_sentence_target":"Où habitez-vous ?","example_sentence_native":"आप कहाँ रहते हैं?","example_sentence_phonetic":"ऊ आ-बी-ते वू?"},
+        {"id":"w1_4_8","target":"D'où","phonetic":"दू","native_meaning":"कहाँ से","english":"From where","example_sentence_target":"D'où venez-vous ?","example_sentence_native":"आप कहाँ से हैं?","example_sentence_phonetic":"दू व-ने वू?"}
+      ],
+      "sentences": [
+        {"id":"s1_4_1","target":"De quel pays venez-vous ?","native":"आप किस देश से हैं?","phonetic":"द कैल पे-ई व-ने वू?"},
+        {"id":"s1_4_2","target":"Je viens de New Delhi.","native":"मैं नई दिल्ली से हूँ।","phonetic":"ज वियें द न्यू डे-ली।"},
+        {"id":"s1_4_3","target":"Elle est de nationalité française.","native":"उसकी राष्ट्रीयता फ्रांसीसी है।","phonetic":"एल ऐ द ना-स्यो-ना-ली-ते फ्रां-सेज़।"},
+        {"id":"s1_4_4","target":"Où habites-tu maintenant ?","native":"अब तुम कहाँ रहते हो?","phonetic":"ऊ आ-बीत तू मैंत-नॉ?"},
+        {"id":"s1_4_5","target":"J'habite en France.","native":"मैं फ्रांस में रहता हूँ।","phonetic":"ज़ा-बीत ऑन् फ्रांस।"},
+        {"id":"s1_4_6","target":"Mon pays est l'Inde.","native":"मेरा देश भारत है।","phonetic":"मों पे-ई ऐ लांद।"},
+        {"id":"s1_4_7","target":"Il est américain.","native":"वह अमेरिकी है।","phonetic":"इल-ऐ-ता-मे-री-कैं।"},
+        {"id":"s1_4_8","target":"D'où vient-elle ?","native":"वह कहाँ से है? (स्त्रीलिंग)","phonetic":"दू वियें-टेल?"}
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_4_1","context":"किसी की उत्पत्ति के बारे में पूछना।","lines":[{"speaker":"A","target":"D'où venez-vous, Monsieur ?","native":"आप कहाँ से हैं, श्रीमान?","phonetic":"दू व-ने वू, मॉन-स्योर?"},{"speaker":"B","target":"Je viens de l'Inde.","native":"मैं भारत से हूँ।","phonetic":"ज वियें द लांद।"}]},
+        {"id":"d1_4_2","context":"राष्ट्रीयता के बारे में बातचीत।","lines":[{"speaker":"A","target":"Vous n'êtes pas français, n'est-ce pas ?","native":"आप फ्रांसीसी नहीं हैं, है ना?","phonetic":"वू नैत पा फ्रां-से, नेस पा?"},{"speaker":"B","target":"Non, je suis népalais.","native":"नहीं, मैं नेपाली हूँ।","phonetic":"नों, ज स्वी ने-पा-ले।"}]},
+        {"id":"d1_4_3","context":"निवास स्थान के बारे में पूछना।","lines":[{"speaker":"A","target":"Où est-ce que vous habitez ?","native":"आप कहाँ रहते हैं?","phonetic":"ऊ-स्क वू-ज़ा-बी-ते?"},{"speaker":"B","target":"J'habite à Lyon maintenant.","native":"मैं अब ल्योन में रहता हूँ।","phonetic":"ज़ा-बीत आ ल्यों मैंत-नॉ।"}]},
+        {"id":"d1_4_4","context":"दोस्तों के बीच अनौपचारिक बातचीत।","lines":[{"speaker":"A","target":"Tu viens d'où, Sara ?","native":"सारा, तुम कहाँ से हो?","phonetic":"तू वियें दू, सा-रा?"},{"speaker":"B","target":"Je viens du Pakistan.","native":"मैं पाकिस्तान से हूँ।","phonetic":"ज वियें दू पा-कि-स्तां।"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_4_1","target":"D'où venez-vous ?","native":"आप कहाँ से हैं?"},
+          {"id":"m1_4_2","target":"J'habite à Paris.","native":"मैं पेरिस में रहता हूँ।"},
+          {"id":"m1_4_3","target":"Quelle est votre nationalité ?","native":"आपकी राष्ट्रीयता क्या है?"},
+          {"id":"m1_4_4","target":"Je suis indien.","native":"मैं भारतीय हूँ।"},
+          {"id":"m1_4_5","target":"Pays","native":"देश"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "फ्रांसीसी लोग अपने देश और भाषा पर बहुत गर्व करते हैं। उनकी भाषा बोलने का प्रयास करना, भले ही आप गलतियाँ करें, बहुत सराहा जाता है।",
+      "pronunciation_tip": "'habiter' में 'h' मूक है। इसलिए, 'je' और 'habite' एक साथ जुड़कर 'j'habite' (ज़ा-बीत) बन जाते हैं। इसे 'liaison' (संबंध) कहा जाता है।",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D4-Nationality"}
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Polite expressions",
+      "title_native": "पाँचवाँ दिन: विनम्र अभिव्यक्तियाँ",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_5_1","target":"S'il vous plaît","phonetic":"सिल वू प्ले","native_meaning":"कृपया (औपचारिक)","english":"Please (formal)","example_sentence_target":"Un café, s'il vous plaît.","example_sentence_native":"एक कॉफ़ी, कृपया।","example_sentence_phonetic":"अन कै-फ़े, सिल वू प्ले।"},
+        {"id":"w1_5_2","target":"S'il te plaît","phonetic":"सिल त प्ले","native_meaning":"कृपया (अनौपचारिक)","english":"Please (informal)","example_sentence_target":"Passe-moi le sel, s'il te plaît.","example_sentence_native":"नमक देना, कृपया।","example_sentence_phonetic":"पास-म्वा ल सेल, सिल त प्ले।"},
+        {"id":"w1_5_3","target":"De rien","phonetic":"द रियें","native_meaning":"कोई बात नहीं","english":"You're welcome","example_sentence_target":"Merci ! - De rien.","example_sentence_native":"धन्यवाद! - कोई बात नहीं।","example_sentence_phonetic":"मैर-सी! - द रियें।"},
+        {"id":"w1_5_4","target":"Pardon","phonetic":"पार-दों","native_meaning":"माफ़ कीजिए / क्षमा करें","english":"Pardon / Sorry","example_sentence_target":"Pardon, je n'ai pas compris.","example_sentence_native":"क्षमा करें, मैं समझा नहीं।","example_sentence_phonetic":"पार-दों, ज ने पा कॉम्-प्री।"},
+        {"id":"w1_5_5","target":"Désolé(e)","phonetic":"दे-ज़ो-ले","native_meaning":"माफ़ कीजिए / खेद है","english":"Sorry","example_sentence_target":"Je suis désolé pour le retard.","example_sentence_native":"देरी के लिए मुझे खेद है।","example_sentence_phonetic":"ज स्वी दे-ज़ो-ले पूर ल र-तार।"},
+        {"id":"w1_5_6","target":"Avec plaisir","phonetic":"आ-वेक प्ले-ज़ीर","native_meaning":"ख़ुशी से","english":"With pleasure","example_sentence_target":"Je vous aide avec plaisir.","example_sentence_native":"मैं आपकी मदद ख़ुशी से करूँगा।","example_sentence_phonetic":"ज वू-ज़ैद आ-वेक प्ले-ज़ीर।"},
+        {"id":"w1_5_7","target":"Ce n'est pas grave","phonetic":"स ने पा ग्राव","native_meaning":"कोई बात नहीं","english":"It's not a problem","example_sentence_target":"Désolé ! - Ce n'est pas grave.","example_sentence_native":"माफ़ कीजिए! - कोई बात नहीं।","example_sentence_phonetic":"दे-ज़ो-ले! - स ने पा ग्राव।"},
+        {"id":"w1_5_8","target":"Je vous en prie","phonetic":"ज वू-ज़ॉन् प्री","native_meaning":"आपका स्वागत है (औपचारिक)","english":"You're welcome (formal)","example_sentence_target":"Merci beaucoup ! - Je vous en prie.","example_sentence_native":"बहुत-बहुत धन्यवाद! - आपका स्वागत है।","example_sentence_phonetic":"मैर-सी बो-कू! - ज वू-ज़ॉन् प्री।"}
+      ],
+      "sentences": [
+        {"id":"s1_5_1","target":"L'addition, s'il vous plaît.","native":"बिल, कृपया।","phonetic":"ला-दि-स्यों, सिल वू प्ले।"},
+        {"id":"s1_5_2","target":"Ferme la porte, s'il te plaît.","native":"दरवाज़ा बंद करो, कृपया।","phonetic":"फैरम ला पोर्त, सिल त प्ले।"},
+        {"id":"s1_5_3","target":"Je suis vraiment désolé.","native":"मुझे सच में खेद है।","phonetic":"ज स्वी व्रै-मॉ दे-ज़ो-ले।"},
+        {"id":"s1_5_4","target":"Pardon, pouvez-vous répéter ?","native":"क्षमा करें, क्या आप दोहरा सकते हैं?","phonetic":"पार-दों, पू-वे वू रे-पे-ते?"},
+        {"id":"s1_5_5","target":"Non merci, c'est gentil.","native":"नहीं धन्यवाद, यह आपकी उदारता है।","phonetic":"नों मैर-सी, से जॉन्-ती।"},
+        {"id":"s1_5_6","target":"Ce n'est rien, vraiment.","native":"यह कुछ भी नहीं है, सच में।","phonetic":"स ने रियें, व्रै-मॉ।"},
+        {"id":"s1_5_7","target":"Avec grand plaisir !","native":"बड़ी ख़ुशी से!","phonetic":"आ-वेक ग्रां प्ले-ज़ीर!"},
+        {"id":"s1_5_8","target":"Il n'y a pas de quoi.","native":"इसका कोई कारण नहीं है (कोई बात नहीं)।","phonetic":"इल नी आ पा द क्वा।"}
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_5_1","context":"एक रेस्तरां में।","lines":[{"speaker":"A","target":"L'addition, s'il vous plaît.","native":"बिल, कृपया।","phonetic":"ला-दि-स्यों, सिल वू प्ले।"},{"speaker":"B","target":"Oui, tout de suite.","native":"हाँ, तुरंत।","phonetic":"वी, तू द स्वीत।"}]},
+        {"id":"d1_5_2","context":"किसी की मदद के लिए धन्यवाद देना।","lines":[{"speaker":"A","target":"Merci beaucoup pour votre aide.","native":"आपकी मदद के लिए बहुत-बहुत धन्यवाद।","phonetic":"मैर-सी बो-कू पूर वोत्र ऐद।"},{"speaker":"B","target":"De rien. / Je vous en prie.","native":"कोई बात नहीं। / आपका स्वागत है।","phonetic":"द रियें। / ज वू-ज़ॉन् प्री।"}]},
+        {"id":"d1_5_3","context":"छोटी सी गलती के लिए माफी मांगना।","lines":[{"speaker":"A","target":"Pardon, j'ai oublié votre nom.","native":"क्षमा करें, मैं आपका नाम भूल गया।","phonetic":"पार-दों, ज़े ऊ-ब्लि-ए वोत्र नॉम।"},{"speaker":"B","target":"Ce n'est pas grave, c'est Marie.","native":"कोई बात नहीं, यह मैरी है।","phonetic":"स ने पा ग्राव, से मा-री।"}]},
+        {"id":"d1_5_4","context":"देरी के लिए माफी मांगना।","lines":[{"speaker":"A","target":"Je suis désolé pour le retard.","native":"देरी के लिए मुझे खेद है।","phonetic":"ज स्वी दे-ज़ो-ले पूर ल र-तार।"},{"speaker":"B","target":"Pas de problème.","native":"कोई समस्या नहीं।","phonetic":"पा द प्रो-ब्लेम।"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_5_1","target":"S'il vous plaît","native":"कृपया"},
+          {"id":"m1_5_2","target":"De rien","native":"कोई बात नहीं"},
+          {"id":"m1_5_3","target":"Pardon","native":"क्षमा करें"},
+          {"id":"m1_5_4","target":"Désolé(e)","native":"खेद है"},
+          {"id":"m1_5_5","target":"Avec plaisir","native":"ख़ुशी से"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "विनम्रता फ्रांसीसी संस्कृति में बहुत महत्वपूर्ण है। हमेशा 's'il vous plaît' और 'merci' का प्रयोग करें। किसी स्टोर में जाते समय 'bonjour' कहना भी सामान्य है।",
+      "pronunciation_tip": "'S'il vous plaît' में 'vous' और 'plaît' के बीच की 's' ध्वनि का अभ्यास करें। यह एक तेज़ 'z' ध्वनि की तरह है जो शब्दों को जोड़ती है।",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D5-Politeness"}
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Yes / No / Maybe",
+      "title_native": "छठा दिन: हाँ / नहीं / शायद",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_6_1","target":"Oui","phonetic":"वी","native_meaning":"हाँ","english":"Yes","example_sentence_target":"Oui, je veux bien.","example_sentence_native":"हाँ, मैं चाहता हूँ।","example_sentence_phonetic":"वी, ज व बियें।"},
+        {"id":"w1_6_2","target":"Non","phonetic":"नों","native_meaning":"नहीं","english":"No","example_sentence_target":"Non, je ne peux pas.","example_sentence_native":"नहीं, मैं नहीं कर सकता।","example_sentence_phonetic":"नों, ज न प पा।"},
+        {"id":"w1_6_3","target":"Peut-être","phonetic":"प-तैत्र","native_meaning":"शायद","english":"Maybe","example_sentence_target":"Peut-être plus tard.","example_sentence_native":"शायद बाद में।","example_sentence_phonetic":"प-तैत्र प्लू टार।"},
+        {"id":"w1_6_4","target":"D'accord","phonetic":"दा-कॉर","native_meaning":"ठीक है / सहमत हूँ","english":"Okay / I agree","example_sentence_target":"D'accord, on fait comme ça.","example_sentence_native":"ठीक है, हम ऐसा ही करते हैं।","example_sentence_phonetic":"दा-कॉर, ओं फे कॉम सा।"},
+        {"id":"w1_6_5","target":"Bien sûr","phonetic":"बियें सूर","native_meaning":"ज़रूर / बेशक","english":"Of course","example_sentence_target":"Bien sûr que je viens !","example_sentence_native":"बेशक मैं आ रहा हूँ!","example_sentence_phonetic":"बियें सूर क ज वियें!"},
+        {"id":"w1_6_6","target":"Pas de problème","phonetic":"पा द प्रो-ब्लेम","native_meaning":"कोई समस्या नहीं","english":"No problem","example_sentence_target":"Vous pouvez m'aider ? - Pas de problème.","example_sentence_native":"क्या आप मेरी मदद कर सकते हैं? - कोई समस्या नहीं।","example_sentence_phonetic":"वू पू-वे मै-दे? - पा द प्रो-ब्लेम।"},
+        {"id":"w1_6_7","target":"Je ne sais pas","phonetic":"ज न से पा","native_meaning":"मुझे नहीं पता","english":"I don't know","example_sentence_target":"Où est-il ? - Je ne sais pas.","example_sentence_native":"वह कहाँ है? - मुझे नहीं पता।","example_sentence_phonetic":"ऊ ऐ-टील? - ज न से पा।"},
+        {"id":"w1_6_8","target":"Je comprends","phonetic":"ज कॉम्-प्रों","native_meaning":"मैं समझता हूँ","english":"I understand","example_sentence_target":"Oui, je comprends la situation.","example_sentence_native":"हाँ, मैं स्थिति समझता हूँ।","example_sentence_phonetic":"वी, ज कॉम्-प्रों ला सि-तु-आ-स्यों।"}
+      ],
+      "sentences": [
+        {"id":"s1_6_1","target":"Êtes-vous prêt ? - Oui.","native":"क्या आप तैयार हैं? - हाँ।","phonetic":"ऐत-वू प्रे? - वी।"},
+        {"id":"s1_6_2","target":"Tu veux venir ? - Non, merci.","native":"क्या तुम आना चाहते हो? - नहीं, धन्यवाद।","phonetic":"तू व व-नीर? - नों, मैर-सी।"},
+        {"id":"s1_6_3","target":"Il viendra demain, peut-être.","native":"वह शायद कल आएगा।","phonetic":"इल वियें-द्रा द-मैं, प-तैत्र।"},
+        {"id":"s1_6_4","target":"Je suis d'accord avec vous.","native":"मैं आपसे सहमत हूँ।","phonetic":"ज स्वी दा-कॉर आ-वेक वू।"},
+        {"id":"s1_6_5","target":"Bien sûr, je peux vous aider.","native":"बेशक, मैं आपकी मदद कर सकता हूँ।","phonetic":"बियें सूर, ज प वू-ज़े-दे।"},
+        {"id":"s1_6_6","target":"Je ne sais pas où c'est.","native":"मुझे नहीं पता यह कहाँ है।","phonetic":"ज न से पा ऊ से।"},
+        {"id":"s1_6_7","target":"Je ne comprends pas la question.","native":"मैं प्रश्न नहीं समझता।","phonetic":"ज न कॉम्-प्रों पा ला केस-तियों।"},
+        {"id":"s1_6_8","target":"Pas de problème, je peux attendre.","native":"कोई समस्या नहीं, मैं इंतज़ार कर सकता हूँ।","phonetic":"पा द प्रो-ब्लेम, ज प-ज़ा-तांद्र।"}
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_6_1","context":"किसी प्रस्ताव को स्वीकार करना।","lines":[{"speaker":"A","target":"Voulez-vous boire quelque chose ?","native":"क्या आप कुछ पीना चाहेंगे?","phonetic":"वू-ले वू ब्वार कैल-क शोज़?"},{"speaker":"B","target":"Oui, avec plaisir.","native":"हाँ, खुशी से।","phonetic":"वी, आ-वेक प्ले-ज़ीर।"}]},
+        {"id":"d1_6_2","context":"अनिश्चितता व्यक्त करना।","lines":[{"speaker":"A","target":"Sera-t-il là demain ?","native":"क्या वह कल यहाँ होगा?","phonetic":"स-रा-टील ला द-मैं?"},{"speaker":"B","target":"Peut-être, je ne suis pas sûr.","native":"शायद, मुझे यकीन नहीं है।","phonetic":"प-तैत्र, ज न स्वी पा सूर।"}]},
+        {"id":"d1_6_3","context":"सहमति व्यक्त करना।","lines":[{"speaker":"A","target":"On se retrouve à 8h ?","native":"हम 8 बजे मिलें?","phonetic":"ओं स र-त्रूव आ वीत-अर?"},{"speaker":"B","target":"D'accord, parfait.","native":"ठीक है, उत्तम।","phonetic":"दा-कॉर, पार-फे।"}]},
+        {"id":"d1_6_4","context":"जानकारी न होने की बात कहना।","lines":[{"speaker":"A","target":"Quelle est l'adresse ?","native":"पता क्या है?","phonetic":"कैल ऐ ला-द्रेस?"},{"speaker":"B","target":"Je suis désolé, je ne sais pas.","native":"मुझे खेद है, मुझे नहीं पता।","phonetic":"ज स्वी दे-ज़ो-ले, ज न से पा।"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_6_1","target":"D'accord","native":"ठीक है"},
+          {"id":"m1_6_2","target":"Peut-être","native":"शायद"},
+          {"id":"m1_6_3","target":"Bien sûr","native":"बेशक"},
+          {"id":"m1_6_4","target":"Je ne sais pas","native":"मुझे नहीं पता"},
+          {"id":"m1_6_5","target":"Pas de problème","native":"कोई समस्या नहीं"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "फ्रांसीसी में, 'Si' का उपयोग एक नकारात्मक प्रश्न का सकारात्मक उत्तर देने के लिए किया जाता है। उदाहरण: 'Tu ne viens pas ?' (तुम नहीं आ रहे हो?) - 'Si, je viens.' (हाँ, मैं आ रहा हूँ।)",
+      "pronunciation_tip": "'Non' में 'n' की ध्वनि नासिक्य है। इसे बोलते समय अपनी नाक से हवा निकालने की कोशिश करें। यह हिंदी के 'नों' जैसा लगता है।",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W1D6-YesNo"}
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Simple conversation practice",
+      "title_native": "सातवाँ दिन: सरल बातचीत का अभ्यास",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Bonjour",
-          "phonetic": "बों-झूर",
-          "native_meaning": "नमस्ते",
-          "english": "Hello",
-          "example_sentence_target": "Bonjour.",
-          "example_sentence_native": "नमस्ते."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Merci",
-          "phonetic": "मेर-सी",
-          "native_meaning": "धन्यवाद",
-          "english": "Thank you",
-          "example_sentence_target": "Merci.",
-          "example_sentence_native": "धन्यवाद."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Au revoir",
-          "phonetic": "ओ-र-वार",
-          "native_meaning": "अलविदा",
-          "english": "Goodbye",
-          "example_sentence_target": "Au revoir.",
-          "example_sentence_native": "अलविदा."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "S'il vous plaît",
-          "phonetic": "सिल-वू-प्ले",
-          "native_meaning": "कृपया",
-          "english": "Please",
-          "example_sentence_target": "S'il vous plaît.",
-          "example_sentence_native": "कृपया."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Excusez-moi",
-          "phonetic": "एक्स-क्यू-से-मोई",
-          "native_meaning": "माफ करें",
-          "english": "Excuse me",
-          "example_sentence_target": "Excusez-moi.",
-          "example_sentence_native": "माफ करें."
-        }
+        {"id":"w1_7_1","target":"Ça va ?","phonetic":"सा वा?","native_meaning":"क्या हाल है?","english":"How are you? (informal)","example_sentence_target":"Salut, ça va ?","example_sentence_native":"हाय, क्या हाल है?","example_sentence_phonetic":"सा-लू, सा वा?"},
+        {"id":"w1_7_2","target":"Ça va bien.","phonetic":"सा वा बियें।","native_meaning":"मैं ठीक हूँ।","english":"I am fine.","example_sentence_target":"Oui, ça va bien, merci.","example_sentence_native":"हाँ, मैं ठीक हूँ, धन्यवाद।","example_sentence_phonetic":"वी, सा वा बियें, मैर-सी।"},
+        {"id":"w1_7_3","target":"Comment allez-vous ?","phonetic":"कॉ-मॉन्-ता-ले-वू?","native_meaning":"आप कैसे हैं? (औपचारिक)","english":"How are you? (formal)","example_sentence_target":"Bonjour Madame, comment allez-vous ?","example_sentence_native":"नमस्ते मैडम, आप कैसी हैं?","example_sentence_phonetic":"बों-जूर मा-दाम, कॉ-मॉन्-ता-ले-वू?"},
+        {"id":"w1_7_4","target":"Très bien","phonetic":"त्रै बियें","native_meaning":"बहुत अच्छा","english":"Very well","example_sentence_target":"Je vais très bien, merci.","example_sentence_native":"मैं बहुत अच्छा हूँ, धन्यवाद।","example_sentence_phonetic":"ज वै त्रै बियें, मैर-सी।"},
+        {"id":"w1_7_5","target":"Pas mal","phonetic":"पा माल","native_meaning":"बुरा नहीं","english":"Not bad","example_sentence_target":"Ça va ? - Pas mal.","example_sentence_native":"क्या हाल है? - बुरा नहीं।","example_sentence_phonetic":"सा वा? - पा माल।"},
+        {"id":"w1_7_6","target":"Et vous-même ?","phonetic":"ए वू-मैम?","native_meaning":"और आप स्वयं?","english":"And yourself?","example_sentence_target":"Très bien, merci. Et vous-même ?","example_sentence_native":"बहुत अच्छा, धन्यवाद। और आप स्वयं?","example_sentence_phonetic":"त्रै बियें, मैर-सी। ए वू-मैम?"},
+        {"id":"w1_7_7","target":"Parlez-vous anglais ?","phonetic":"पार-ले-वू-ज़ॉन्-ग्ले?","native_meaning":"क्या आप अंग्रेज़ी बोलते हैं?","english":"Do you speak English?","example_sentence_target":"Excusez-moi, parlez-vous anglais ?","example_sentence_native":"माफ़ कीजिए, क्या आप अंग्रेज़ी बोलते हैं?","example_sentence_phonetic":"एक्स-क्यू-ज़े-म्वा, पार-ले-वू-ज़ॉन्-ग्ले?"},
+        {"id":"w1_7_8","target":"Un peu","phonetic":"अन प","native_meaning":"थोड़ा सा","english":"A little","example_sentence_target":"Je parle un peu français.","example_sentence_native":"मैं थोड़ी फ्रेंच बोलता हूँ।","example_sentence_phonetic":"ज पार्ल अन प फ्रां-से।"}
+      ],
+      "sentences": [
+        {"id":"s1_7_1","target":"Bonjour, comment allez-vous aujourd'hui ?","native":"नमस्ते, आज आप कैसे हैं?","phonetic":"बों-जूर, कॉ-मॉन्-ता-ले-वू-ज़ो-जुर्-दुई?"},
+        {"id":"s1_7_2","target":"Ça va bien, merci. Et toi ?","native":"मैं ठीक हूँ, धन्यवाद। और तुम?","phonetic":"सा वा बियें, मैर-सी। ए त्वा?"},
+        {"id":"s1_7_3","target":"Je ne vais pas très bien.","native":"मैं बहुत अच्छा नहीं हूँ।","phonetic":"ज न वै पा त्रै बियें।"},
+        {"id":"s1_7_4","target":"Parlez-vous hindi ?","native":"क्या आप हिंदी बोलते हैं?","phonetic":"पार-ले-वू हिंदी?"},
+        {"id":"s1_7_5","target":"Oui, je parle un tout petit peu.","native":"हाँ, मैं बस थोड़ी सी बोलता हूँ।","phonetic":"वी, ज पार्ल अन तू प-ती प।"},
+        {"id":"s1_7_6","target":"Je suis désolé, je ne parle pas bien français.","native":"मुझे खेद है, मैं अच्छी तरह से फ्रेंच नहीं बोलता।","phonetic":"ज स्वी दे-ज़ो-ले, ज न पार्ल पा बियें फ्रां-से।"},
+        {"id":"s1_7_7","target":"Pouvez-vous parler plus lentement, s'il vous plaît ?","native":"क्या आप कृपया और धीरे बोल सकते हैं?","phonetic":"पू-वे वू पार-ले प्लू लॉन्त-मॉ, सिल वू प्ले?"},
+        {"id":"s1_7_8","target":"Je comprends un peu.","native":"मैं थोड़ा समझता हूँ।","phonetic":"ज कॉम्-प्रों-ज़ँ प।"}
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bonjour!",
-              "native": "नमस्ते!",
-              "phonetic": "बों-झूर"
-            },
-            {
-              "speaker": "B",
-              "target": "Bonjour! Merci!",
-              "native": "नमस्ते! धन्यवाद!",
-              "phonetic": "बों-झूर मेर-सी"
-            },
-            {
-              "speaker": "A",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Merci!",
-              "native": "धन्यवाद!",
-              "phonetic": "मेर-सी"
-            },
-            {
-              "speaker": "B",
-              "target": "Au revoir!",
-              "native": "अलविदा!",
-              "phonetic": "ओ-र-वार"
-            },
-            {
-              "speaker": "A",
-              "target": "S'il vous plaît! Excusez-moi!",
-              "native": "कृपया! माफ करें!",
-              "phonetic": "सिल-वू-प्ले एक्स-क्यू-से-मोई"
-            }
-          ]
-        }
+        {"id":"d1_7_1","context":"एक सहकर्मी से सुबह मिलना।","lines":[{"speaker":"A","target":"Salut Jean, ça va ?","native":"हाय जीन, क्या हाल है?","phonetic":"सा-लू जॉन्, सा वा?"},{"speaker":"B","target":"Ça va bien, et toi ?","native":"मैं ठीक हूँ, और तुम?","phonetic":"सा वा बियें, ए त्वा?"}]},
+        {"id":"d1_7_2","context":"किसी दुकान में औपचारिक अभिवादन।","lines":[{"speaker":"A","target":"Bonjour Monsieur. Comment allez-vous ?","native":"नमस्ते श्रीमान। आप कैसे हैं?","phonetic":"बों-जूर मॉन-स्योर। कॉ-मॉन्-ता-ले-वू?"},{"speaker":"B","target":"Je vais très bien, merci. Et vous-même ?","native":"मैं बहुत अच्छा हूँ, धन्यवाद। और आप स्वयं?","phonetic":"ज वै त्रै बियें, मैर-सी। ए वू-मैम?"}]},
+        {"id":"d1_7_3","context":"भाषा की समझ के बारे में पूछना।","lines":[{"speaker":"A","target":"Excusez-moi, parlez-vous anglais ?","native":"माफ़ कीजिए, क्या आप अंग्रेज़ी बोलते हैं?","phonetic":"एक्स-क्यू-ज़े-म्वा, पार-ले-वू-ज़ॉन्-ग्ले?"},{"speaker":"B","target":"Non, désolé. Je parle seulement français.","native":"नहीं, माफ़ कीजिए। मैं केवल फ्रेंच बोलता हूँ।","phonetic":"नों, दे-ज़ो-ले। ज पार्ल सल-मॉ फ्रां-से।"}]},
+        {"id":"d1_7_4","context":"धीमे बोलने का अनुरोध करना।","lines":[{"speaker":"A","target":"Je ne comprends pas. Pouvez-vous répéter ?","native":"मैं नहीं समझता। क्या आप दोहरा सकते हैं?","phonetic":"ज न कॉम्-प्रों पा। पू-वे वू रे-पे-ते?"},{"speaker":"B","target":"Bien sûr. Pouvez-vous... parler... plus... lentement ?","native":"बेशक। क्या आप... और... धीरे... बोल सकते हैं?","phonetic":"बियें सूर। पू-वे वू... पार-ले... प्लू... लॉन्त-मॉ?"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in French",
-            "answer": "Bonjour",
-            "hint": "नमस्ते"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in French",
-            "answer": "Merci",
-            "hint": "धन्यवाद"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in French",
-            "answer": "Au revoir",
-            "hint": "अलविदा"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Bonjour",
-            "native": "नमस्ते"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Merci",
-            "native": "धन्यवाद"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Au revoir",
-            "native": "अलविदा"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "S'il vous plaît",
-            "native": "कृपया"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Excusez-moi",
-            "native": "माफ करें"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Bonjour' mean?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 0,
-            "explanation": "'Bonjour' means नमस्ते in Hindi."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'धन्यवाद' in French?",
-            "options": [
-              "Bonjour",
-              "Merci",
-              "Au revoir",
-              "S'il vous plaît"
-            ],
-            "correct": 1,
-            "explanation": "'Merci' means धन्यवाद."
-          }
+          {"id":"m1_7_1","target":"Ça va ?","native":"क्या हाल है?"},
+          {"id":"m1_7_2","target":"Comment allez-vous ?","native":"आप कैसे हैं?"},
+          {"id":"m1_7_3","target":"Très bien, merci.","native":"बहुत अच्छा, धन्यवाद।"},
+          {"id":"m1_7_4","target":"Parlez-vous anglais ?","native":"क्या आप अंग्रेज़ी बोलते हैं?"},
+          {"id":"m1_7_5","target":"Un peu","native":"थोड़ा सा"}
         ]
       },
-      "cultural_note": "फ्रांस में 'bonjour' कहना बहुत जरूरी है — हर जगह, हर दुकान में!",
-      "pronunciation_tip": "फ्रांसीसी 'r' की आवाज — गले के पिछले हिस्से से निकलती है, जीभ से नहीं।",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "जब कोई आपसे 'Ça va ?' पूछता है, तो वापस पूछना विनम्रता है। आप 'Ça va bien, merci, et toi ?' (मैं ठीक हूँ, धन्यवाद, और तुम?) कह सकते हैं।",
+      "pronunciation_tip": "'Comment allez-vous ?' में 't' और 'a' के बीच का संबंध ('liaison') एक 't' ध्वनि बनाता है: 'कॉ-मॉन्-ता-ले-वू?'। यह प्रवाहपूर्ण फ्रेंच बोलने का एक महत्वपूर्ण हिस्सा है।",
+      "progress": {"xp":150,"streak_bonus":50,"badge":"W1-Review"}
     }
   ]
 }
+
+    
