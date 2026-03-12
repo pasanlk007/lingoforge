@@ -8,707 +8,425 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Basic Greetings",
-      "title_native": "Salutări de bază",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Săptămâna 1, Ziua 1: Saluturi de bază",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Salut",
-          "phonetic": "sa-loot",
-          "native_meaning": "Hello (informal)",
-          "english": "Hello (informal)",
-          "example_sentence_target": "Salut, ce faci?",
-          "example_sentence_native": "Hello, how are you?",
-          "example_sentence_phonetic": "sa-loot, che fatch?"
-        },
-        {
-          "id": "w1_1_2",
-          "target": "Bună ziua",
-          "phonetic": "boo-na zee-wa",
-          "native_meaning": "Hello (formal, daytime)",
-          "english": "Good day",
-          "example_sentence_target": "Bună ziua, domnule Popescu.",
-          "example_sentence_native": "Hello, Mr. Popescu.",
-          "example_sentence_phonetic": "boo-na zee-wa, dom-noo-leh po-pes-koo."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "Mulțumesc",
-          "phonetic": "mool-tzoo-mesk",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Mulțumesc pentru ajutor.",
-          "example_sentence_native": "Thank you for the help.",
-          "example_sentence_phonetic": "mool-tzoo-mesk pen-troo a-zhoo-tor."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "Da",
-          "phonetic": "da",
-          "native_meaning": "Yes",
-          "english": "Yes",
-          "example_sentence_target": "Da, sunt de acord.",
-          "example_sentence_native": "Yes, I agree.",
-          "example_sentence_phonetic": "da, sunt de a-kord."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "Nu",
-          "phonetic": "noo",
-          "native_meaning": "No",
-          "english": "No",
-          "example_sentence_target": "Nu, mulțumesc.",
-          "example_sentence_native": "No, thank you.",
-          "example_sentence_phonetic": "noo, mool-tzoo-mesk."
-        }
+        { "id": "w1_1_1", "target": "Bună", "phonetic": "BOO-nah", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "Bună, ce faci?", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "BOO-nah, che fatch?" },
+        { "id": "w1_1_2", "target": "Salut", "phonetic": "sah-LOOT", "native_meaning": "Hi", "english": "Hi", "example_sentence_target": "Salut, prieteni!", "example_sentence_native": "Hi, friends!", "example_sentence_phonetic": "sah-LOOT, pree-EH-ten!" },
+        { "id": "w1_1_3", "target": "Mulțumesc", "phonetic": "mool-tsoo-MESK", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Mulțumesc pentru ajutor.", "example_sentence_native": "Thank you for the help.", "example_sentence_phonetic": "mool-tsoo-MESK PEN-troo ah-joo-TOR." },
+        { "id": "w1_1_4", "target": "La revedere", "phonetic": "la re-ve-DE-re", "native_meaning": "Goodbye", "english": "Goodbye", "example_sentence_target": "La revedere, ne vedem mâine.", "example_sentence_native": "Goodbye, see you tomorrow.", "example_sentence_phonetic": "la re-ve-DE-re, ne ve-DEM MOY-ne." },
+        { "id": "w1_1_5", "target": "Da", "phonetic": "da", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Da, sunt de acord.", "example_sentence_native": "Yes, I agree.", "example_sentence_phonetic": "da, soont de a-KORD." },
+        { "id": "w1_1_6", "target": "Nu", "phonetic": "noo", "native_meaning": "No", "english": "No", "example_sentence_target": "Nu, mulțumesc.", "example_sentence_native": "No, thank you.", "example_sentence_phonetic": "noo, mool-tsoo-MESK." },
+        { "id": "w1_1_7", "target": "Scuze", "phonetic": "SKOO-ze", "native_meaning": "Sorry / Excuse me", "english": "Sorry / Excuse me", "example_sentence_target": "Scuze, unde este toaleta?", "example_sentence_native": "Excuse me, where is the toilet?", "example_sentence_phonetic": "SKOO-ze, OON-de YES-te twa-LE-ta?" },
+        { "id": "w1_1_8", "target": "Poftim", "phonetic": "pof-TEEM", "native_meaning": "You're welcome / Here you go", "english": "You're welcome / Here you go", "example_sentence_target": "Mulțumesc! - Poftim!", "example_sentence_native": "Thank you! - You're welcome!", "example_sentence_phonetic": "mool-tsoo-MESK! - pof-TEEM!" }
+      ],
+      "sentences": [
+        { "id": "s1_1_1", "target": "Bună dimineața.", "native": "Good morning.", "phonetic": "BOO-nah dee-mee-NYA-tsa." },
+        { "id": "s1_1_2", "target": "Bună seara.", "native": "Good evening.", "phonetic": "BOO-nah SYA-ra." },
+        { "id": "s1_1_3", "target": "Noapte bună.", "native": "Good night.", "phonetic": "NOP-te BOO-nah." },
+        { "id": "s1_1_4", "target": "Ce mai faci?", "native": "How are you? (informal)", "phonetic": "che my fatch?" },
+        { "id": "s1_1_5", "target": "Sunt bine, mulțumesc.", "native": "I am fine, thank you.", "phonetic": "soont BEE-ne, mool-tsoo-MESK." },
+        { "id": "s1_1_6", "target": "Vă rog.", "native": "Please. (formal)", "phonetic": "vah ROG." },
+        { "id": "s1_1_7", "target": "Îmi pare rău.", "native": "I am sorry.", "phonetic": "im PA-re ROW." },
+        { "id": "s1_1_8", "target": "Ne vedem mai târziu.", "native": "See you later.", "phonetic": "ne ve-DEM my tir-ZEW." }
       ],
       "dialogues": [
-        {
-          "id": "d1_1_1",
-          "context": "Meeting someone for the first time.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua. Eu sunt Ana.",
-              "native": "Hello. I am Ana.",
-              "phonetic": "boo-na zee-wa. eh-oo sunt ana."
-            },
-            {
-              "speaker": "B",
-              "target": "Salut, Ana. Eu sunt Mihai. Îmi pare bine.",
-              "native": "Hello, Ana. I am Mihai. Nice to meet you.",
-              "phonetic": "sa-loot, ana. eh-oo sunt mee-hai. um-pah-reh bee-neh."
-            }
-          ]
-        }
+        { "id": "d1_1_1", "context": "Meeting someone for the first time.", "lines": [
+            { "speaker": "A", "target": "Bună! Eu sunt Ana.", "native": "Hello! I am Ana.", "phonetic": "BOO-nah! YEW soont Ana." },
+            { "speaker": "B", "target": "Salut Ana! Eu sunt Bogdan. Îmi pare bine.", "native": "Hi Ana! I am Bogdan. Nice to meet you.", "phonetic": "sah-LOOT Ana! YEW soont Bogdan. im PA-re BEE-ne." }
+        ]},
+        { "id": "d1_1_2", "context": "Greeting someone in the morning.", "lines": [
+            { "speaker": "A", "target": "Bună dimineața, domnule Popescu.", "native": "Good morning, Mr. Popescu.", "phonetic": "BOO-nah dee-mee-NYA-tsa, DOM-noo-le po-PES-koo." },
+            { "speaker": "B", "target": "Bună dimineața! Ce mai faceți?", "native": "Good morning! How are you? (formal)", "phonetic": "BOO-nah dee-mee-NYA-tsa! che my FA-chets?" }
+        ]},
+        { "id": "d1_1_3", "context": "Saying thank you and goodbye.", "lines": [
+            { "speaker": "A", "target": "Mulțumesc mult pentru tot.", "native": "Thank you very much for everything.", "phonetic": "mool-tsoo-MESK moolt PEN-troo tot." },
+            { "speaker": "B", "target": "Cu plăcere. La revedere!", "native": "With pleasure. Goodbye!", "phonetic": "koo plah-CHE-re. la re-ve-DE-re!" }
+        ]},
+        { "id": "d1_1_4", "context": "Apologizing for being late.", "lines": [
+            { "speaker": "A", "target": "Scuze pentru întârziere.", "native": "Sorry for being late.", "phonetic": "SKOO-ze PEN-troo in-tir-zee-EH-re." },
+            { "speaker": "B", "target": "Nicio problemă.", "native": "No problem.", "phonetic": "NEE-cho pro-BLE-mah." }
+        ]}
       ],
       "exercises": {
         "matching": [
-          { "id": "m1_1_1", "target": "Salut", "native": "Hello (informal)" },
+          { "id": "m1_1_1", "target": "Bună", "native": "Hello" },
           { "id": "m1_1_2", "target": "Mulțumesc", "native": "Thank you" },
-          { "id": "m1_1_3", "target": "Da", "native": "Yes" },
-          { "id": "m1_1_4", "target": "Nu", "native": "No" },
-          { "id": "m1_1_5", "target": "Bună ziua", "native": "Good day" }
-        ],
-        "fillBlanks": [{
-            "id": "fb1_1_1",
-            "sentence": "___, ce faci?",
-            "answer": "Salut",
-            "hint": "How to say hello informally."
-        }],
-        "sentenceScramble": [{
-            "id": "ss1_1_1",
-            "scrambled": ["pentru", "ajutor", "Mulțumesc"],
-            "correct": "Mulțumesc pentru ajutor",
-            "nativeHint": "Thank you for the help."
-        }]
+          { "id": "m1_1_3", "target": "La revedere", "native": "Goodbye" },
+          { "id": "m1_1_4", "target": "Scuze", "native": "Excuse me" },
+          { "id": "m1_1_5", "target": "Da", "native": "Yes" }
+        ]
       },
-      "cultural_note": "In Romania, it's common to shake hands when meeting people for the first time, both in formal and informal situations. Direct eye contact is considered a sign of sincerity.",
-      "pronunciation_tip": "The letter 'ț' in 'Mulțumesc' is pronounced like 'ts' in 'cats'. It's a sharp sound.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "RO_W1D1-Greetings" }
+      "cultural_note": "In Romania, it's common to greet strangers with 'Bună ziua' (Good day) and friends with a more informal 'Salut' or 'Bună'. A handshake is a standard greeting in formal situations.",
+      "pronunciation_tip": "The letter 'ă' in Romanian sounds like the 'a' in 'about' or 'sofa'. For example, in 'Bună' (BOO-nah).",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Greetings-RO" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Politeness",
-      "title_native": "Amabilitate",
+      "title": "Week 1, Day 2: Introducing Yourself",
+      "title_native": "Săptămâna 1, Ziua 2: Prezentarea personală",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Vă rog",
-          "phonetic": "vuh rog",
-          "native_meaning": "Please (formal)",
-          "english": "Please (formal)",
-          "example_sentence_target": "Un bilet, vă rog.",
-          "example_sentence_native": "One ticket, please.",
-          "example_sentence_phonetic": "oon bee-let, vuh rog."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Te rog",
-          "phonetic": "teh rog",
-          "native_meaning": "Please (informal)",
-          "english": "Please (informal)",
-          "example_sentence_target": "Te rog, ajută-mă.",
-          "example_sentence_native": "Please, help me.",
-          "example_sentence_phonetic": "teh rog, a-zhoo-tuh-muh."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Scuzați-mă",
-          "phonetic": "skoo-zats-muh",
-          "native_meaning": "Excuse me (formal)",
-          "english": "Excuse me (formal)",
-          "example_sentence_target": "Scuzați-mă, unde este gara?",
-          "example_sentence_native": "Excuse me, where is the train station?",
-          "example_sentence_phonetic": "skoo-zats-muh, oon-deh yes-teh ga-ra?"
-        },
-        {
-          "id": "w1_2_4",
-          "target": "Scuză-mă",
-          "phonetic": "skoo-zuh-muh",
-          "native_meaning": "Excuse me (informal)",
-          "english": "Excuse me (informal)",
-          "example_sentence_target": "Scuză-mă, ai un minut?",
-          "example_sentence_native": "Excuse me, do you have a minute?",
-          "example_sentence_phonetic": "skoo-zuh-muh, ai oon mee-noot?"
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Cu plăcere",
-          "phonetic": "koo pluh-che-reh",
-          "native_meaning": "You're welcome",
-          "english": "You're welcome",
-          "example_sentence_target": "Mulțumesc! - Cu plăcere.",
-          "example_sentence_native": "Thank you! - You're welcome.",
-          "example_sentence_phonetic": "mool-tzoo-mesk! - koo pluh-che-reh."
-        }
+        { "id": "w1_2_1", "target": "Eu sunt", "phonetic": "YEW soont", "native_meaning": "I am", "english": "I am", "example_sentence_target": "Eu sunt student.", "example_sentence_native": "I am a student.", "example_sentence_phonetic": "YEW soont stoo-DENT." },
+        { "id": "w1_2_2", "target": "Numele meu este", "phonetic": "NOO-me-le MEW YES-te", "native_meaning": "My name is", "english": "My name is", "example_sentence_target": "Numele meu este Maria.", "example_sentence_native": "My name is Maria.", "example_sentence_phonetic": "NOO-me-le MEW YES-te Maria." },
+        { "id": "w1_2_3", "target": "Îmi pare bine", "phonetic": "im PA-re BEE-ne", "native_meaning": "Nice to meet you", "english": "Nice to meet you", "example_sentence_target": "Îmi pare bine de cunoștință.", "example_sentence_native": "Nice to meet you.", "example_sentence_phonetic": "im PA-re BEE-ne de koo-no-SHTIN-tsa." },
+        { "id": "w1_2_4", "target": "Și mie", "phonetic": "shee MEE-ye", "native_meaning": "Me too", "english": "Me too", "example_sentence_target": "Îmi pare bine. - Și mie.", "example_sentence_native": "Nice to meet you. - Me too.", "example_sentence_phonetic": "im PA-re BEE-ne. - shee MEE-ye." },
+        { "id": "w1_2_5", "target": "Tu ești", "phonetic": "too yesht", "native_meaning": "You are (informal)", "english": "You are (informal)", "example_sentence_target": "Tu ești prietenul meu.", "example_sentence_native": "You are my friend.", "example_sentence_phonetic": "too yesht pree-EH-te-nool MEW." },
+        { "id": "w1_2_6", "target": "Dumneavoastră sunteți", "phonetic": "doom-nya-VWAS-tra soon-TETS", "native_meaning": "You are (formal)", "english": "You are (formal)", "example_sentence_target": "Dumneavoastră sunteți profesorul?", "example_sentence_native": "Are you the teacher?", "example_sentence_phonetic": "doom-nya-VWAS-tra soon-TETS pro-fe-SO-rool?" },
+        { "id": "w1_2_7", "target": "De unde", "phonetic": "de OON-de", "native_meaning": "From where", "english": "From where", "example_sentence_target": "De unde ești?", "example_sentence_native": "Where are you from?", "example_sentence_phonetic": "de OON-de yesht?" },
+        { "id": "w1_2_8", "target": "Sunt din", "phonetic": "soont deen", "native_meaning": "I am from", "english": "I am from", "example_sentence_target": "Sunt din Anglia.", "example_sentence_native": "I am from England.", "example_sentence_phonetic": "soont deen AN-glee-a." }
+      ],
+      "sentences": [
+        { "id": "s1_2_1", "target": "Mă numesc Paul.", "native": "My name is Paul.", "phonetic": "mah noo-MESK Paul." },
+        { "id": "s1_2_2", "target": "Eu sunt din Canada.", "native": "I am from Canada.", "phonetic": "YEW soont deen Canada." },
+        { "id": "s1_2_3", "target": "Încântat de cunoștință.", "native": "Pleased to meet you.", "phonetic": "in-kin-TAT de koo-no-SHTIN-tsa." },
+        { "id": "s1_2_4", "target": "Acesta este prietenul meu, Ion.", "native": "This is my friend, Ion.", "phonetic": "a-CHES-ta YES-te pree-EH-te-nool MEW, Yon." },
+        { "id": "s1_2_5", "target": "Ea este colega mea.", "native": "She is my colleague.", "phonetic": "YA YES-te ko-LE-ga MYA." },
+        { "id": "s1_2_6", "target": "Suntem din Statele Unite.", "native": "We are from the United States.", "phonetic": "SOON-tem deen STA-te-le oo-NEE-te." },
+        { "id": "s1_2_7", "target": "Locuiesc în București.", "native": "I live in Bucharest.", "phonetic": "lo-kwee-ESK in boo-koo-RESHT." },
+        { "id": "s1_2_8", "target": "Vorbim mai târziu.", "native": "We'll talk later.", "phonetic": "vor-BEEM my tir-ZEW." }
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Asking for something in a shop.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua. O pâine, vă rog.",
-              "native": "Hello. One bread, please.",
-              "phonetic": "boo-na zee-wa. o puh-ee-neh, vuh rog."
-            },
-            {
-              "speaker": "B",
-              "target": "Poftiți. Altceva?",
-              "native": "Here you are. Anything else?",
-              "phonetic": "pof-teets. alt-che-va?"
-            }
-          ]
-        }
+        { "id": "d1_2_1", "context": "Introducing oneself to a new colleague.", "lines": [
+            { "speaker": "A", "target": "Bună, eu sunt Radu, noul inginer.", "native": "Hello, I am Radu, the new engineer.", "phonetic": "BOO-nah, YEW soont Radu, NO-ool in-jee-NER." },
+            { "speaker": "B", "target": "Salut Radu, bine ai venit! Eu sunt Elena. Îmi pare bine.", "native": "Hi Radu, welcome! I am Elena. Nice to meet you.", "phonetic": "sah-LOOT Radu, BEE-ne eye ve-NEET! YEW soont Elena. im PA-re BEE-ne." }
+        ]},
+        { "id": "d1_2_2", "context": "Asking where someone is from.", "lines": [
+            { "speaker": "A", "target": "De unde ești?", "native": "Where are you from?", "phonetic": "de OON-de yesht?" },
+            { "speaker": "B", "target": "Sunt din Franța. Tu?", "native": "I am from France. You?", "phonetic": "soont deen FRUN-tsa. too?" }
+        ]},
+        { "id": "d1_2_3", "context": "Formal introduction.", "lines": [
+            { "speaker": "A", "target": "Bună ziua. Numele meu este Ionescu.", "native": "Good day. My name is Ionescu.", "phonetic": "BOO-nah ZEE-wa. NOO-me-le MEW YES-te yo-NES-koo." },
+            { "speaker": "B", "target": "Încântat de cunoștință, domnule Ionescu.", "native": "Pleased to meet you, Mr. Ionescu.", "phonetic": "in-kin-TAT de koo-no-SHTIN-tsa, DOM-noo-le yo-NES-koo." }
+        ]},
+        { "id": "d1_2_4", "context": "Introducing a friend.", "lines": [
+            { "speaker": "A", "target": "Salut, Mihai! Acesta este prietenul meu, David.", "native": "Hi, Mihai! This is my friend, David.", "phonetic": "sah-LOOT, Mihai! a-CHES-ta YES-te pree-EH-te-nool MEW, David." },
+            { "speaker": "B", "target": "Salut David, îmi pare bine!", "native": "Hi David, nice to meet you!", "phonetic": "sah-LOOT David, im PA-re BEE-ne!" }
+        ]}
       ],
       "exercises": {
         "matching": [
-          { "id": "m1_2_1", "target": "Vă rog", "native": "Please (formal)" },
-          { "id": "m1_2_2", "target": "Scuzați-mă", "native": "Excuse me (formal)" },
-          { "id": "m1_2_3", "target": "Cu plăcere", "native": "You're welcome" },
-          { "id": "m1_2_4", "target": "Te rog", "native": "Please (informal)" }
-        ],
-        "fillBlanks": [{
-            "id": "fb1_2_1",
-            "sentence": "___, unde este toaleta?",
-            "answer": "Scuzați-mă",
-            "hint": "How to ask 'excuse me' formally."
-        }]
+          { "id": "m1_2_1", "target": "Eu sunt", "native": "I am" },
+          { "id": "m1_2_2", "target": "De unde ești?", "native": "Where are you from?" },
+          { "id": "m1_2_3", "target": "Îmi pare bine", "native": "Nice to meet you" },
+          { "id": "m1_2_4", "target": "Sunt din Anglia.", "native": "I am from England." },
+          { "id": "m1_2_5", "target": "Numele meu este", "native": "My name is" }
+        ]
       },
-      "cultural_note": "Romanians appreciate politeness. Using the formal 'vă rog' with strangers, officials, and older people is a sign of respect.",
-      "pronunciation_tip": "The 'ă' in 'Scuză-mă' is a neutral vowel sound, similar to the 'a' in 'sofa' or 'about'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "RO_W1D2-Politeness" }
+      "cultural_note": "When introducing yourself, 'Îmi pare bine (de cunoștință)' is very common. The formal 'Dumneavoastră' is used for elders, strangers in formal settings, or people you want to show respect to.",
+      "pronunciation_tip": "The letter 'ț' in 'Mulțumesc' has a 'ts' sound, similar to the end of the word 'cats'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-Intro-RO" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Introductions",
-      "title_native": "Prezentări",
+      "title": "Week 1, Day 3: Asking Someone's Name",
+      "title_native": "Săptămâna 1, Ziua 3: Întrebarea numelui cuiva",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Nume",
-          "phonetic": "noo-meh",
-          "native_meaning": "Name",
-          "english": "Name",
-          "example_sentence_target": "Care este numele tău?",
-          "example_sentence_native": "What is your name?",
-          "example_sentence_phonetic": "ka-reh yes-teh noo-meh-leh tuh-oo?"
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Eu sunt...",
-          "phonetic": "eh-oo sunt",
-          "native_meaning": "I am...",
-          "english": "I am...",
-          "example_sentence_target": "Eu sunt John.",
-          "example_sentence_native": "I am John.",
-          "example_sentence_phonetic": "eh-oo sunt John."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Mă numesc...",
-          "phonetic": "muh noo-mesk",
-          "native_meaning": "My name is...",
-          "english": "My name is...",
-          "example_sentence_target": "Mă numesc Maria.",
-          "example_sentence_native": "My name is Maria.",
-          "example_sentence_phonetic": "muh noo-mesk ma-ree-a."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "Îmi pare bine",
-          "phonetic": "um-pah-reh bee-neh",
-          "native_meaning": "Nice to meet you",
-          "english": "Nice to meet you",
-          "example_sentence_target": "Îmi pare bine de cunoștință.",
-          "example_sentence_native": "Nice to meet you.",
-          "example_sentence_phonetic": "um-pah-reh bee-neh de koo-no-shtin-tsuh."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "De unde ești?",
-          "phonetic": "de oon-deh yesht?",
-          "native_meaning": "Where are you from?",
-          "english": "Where are you from?",
-          "example_sentence_target": "Salut, de unde ești?",
-          "example_sentence_native": "Hello, where are you from?",
-          "example_sentence_phonetic": "sa-loot, de oon-deh yesht?"
-        }
+        { "id": "w1_3_1", "target": "Cum", "phonetic": "koom", "native_meaning": "How", "english": "How", "example_sentence_target": "Cum te cheamă?", "example_sentence_native": "What is your name?", "example_sentence_phonetic": "koom te KYAH-mah?" },
+        { "id": "w1_3_2", "target": "Te cheamă", "phonetic": "te KYAH-mah", "native_meaning": "Your name is (lit. it calls you)", "english": "Your name is", "example_sentence_target": "Pe tine cum te cheamă?", "example_sentence_native": "What about you, what's your name?", "example_sentence_phonetic": "pe TEE-ne koom te KYAH-mah?" },
+        { "id": "w1_3_3", "target": "Vă cheamă", "phonetic": "vah KYAH-mah", "native_meaning": "Your name is (formal)", "english": "Your name is (formal)", "example_sentence_target": "Cum vă cheamă?", "example_sentence_native": "What is your name? (formal)", "example_sentence_phonetic": "koom vah KYAH-mah?" },
+        { "id": "w1_3_4", "target": "Pe mine mă cheamă", "phonetic": "pe MEE-ne mah KYAH-mah", "native_meaning": "My name is (lit. me it calls)", "english": "My name is", "example_sentence_target": "Pe mine mă cheamă Andrei.", "example_sentence_native": "My name is Andrei.", "example_sentence_phonetic": "pe MEE-ne mah KYAH-mah Andrei." },
+        { "id": "w1_3_5", "target": "Cine", "phonetic": "CHEE-ne", "native_meaning": "Who", "english": "Who", "example_sentence_target": "Cine ești tu?", "example_sentence_native": "Who are you?", "example_sentence_phonetic": "CHEE-ne yesht too?" },
+        { "id": "w1_3_6", "target": "Nume", "phonetic": "NOO-me", "native_meaning": "Name", "english": "Name", "example_sentence_target": "Ce nume frumos!", "example_sentence_native": "What a beautiful name!", "example_sentence_phonetic": "che NOO-me froo-MOS!" },
+        { "id": "w1_3_7", "target": "Prenume", "phonetic": "pre-NOO-me", "native_meaning": "First name", "english": "First name", "example_sentence_target": "Care este prenumele tău?", "example_sentence_native": "What is your first name?", "example_sentence_phonetic": "KA-re YES-te pre-NOO-me-le TOW?" },
+        { "id": "w1_3_8", "target": "Nume de familie", "phonetic": "NOO-me de fa-MEE-lye", "native_meaning": "Last name / Family name", "english": "Last name / Family name", "example_sentence_target": "Numele de familie este Ionescu.", "example_sentence_native": "The last name is Ionescu.", "example_sentence_phonetic": "NOO-me-le de fa-MEE-lye YES-te yo-NES-koo." }
+      ],
+      "sentences": [
+        { "id": "s1_3_1", "target": "Cum îl cheamă pe el?", "native": "What is his name?", "phonetic": "koom il KYAH-mah pe yel?" },
+        { "id": "s1_3_2", "target": "Pe ea o cheamă Elena.", "native": "Her name is Elena.", "phonetic": "pe YA o KYAH-mah Elena." },
+        { "id": "s1_3_3", "target": "Care este numele dumneavoastră complet?", "native": "What is your full name? (formal)", "phonetic": "KA-re YES-te NOO-me-le doom-nya-VWAS-tra kom-PLET?" },
+        { "id": "s1_3_4", "target": "Pot să-ți spun Alex?", "native": "Can I call you Alex?", "phonetic": "pot sah-ts spoon Alex?" },
+        { "id": "s1_3_5", "target": "Numele meu este greu de pronunțat.", "native": "My name is hard to pronounce.", "phonetic": "NOO-me-le MEW YES-te GREW de pro-noon-TSAT." },
+        { "id": "s1_3_6", "target": "Repetați, vă rog.", "native": "Repeat, please. (formal)", "phonetic": "re-pe-TATS, vah ROG." },
+        { "id": "s1_3_7", "target": "Spune-mi pe nume.", "native": "Call me by my first name.", "phonetic": "SPOO-ne-mee pe NOO-me." },
+        { "id": "s1_3_8", "target": "Numele meu se scrie D-A-N.", "native": "My name is spelled D-A-N.", "phonetic": "NOO-me-le MEW se SKREE-e D-A-N." }
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Introducing yourself at a party.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Salut! Mă numesc David. Tu cum te numești?",
-              "native": "Hi! My name is David. What is your name?",
-              "phonetic": "sa-loot! muh noo-mesk David. too koom teh noo-mesht?"
-            },
-            {
-              "speaker": "B",
-              "target": "Bună! Eu sunt Elena. Îmi pare bine.",
-              "native": "Hi! I am Elena. Nice to meet you.",
-              "phonetic": "boo-nuh! eh-oo sunt Elena. um-pah-reh bee-neh."
-            }
-          ]
-        }
+        { "id": "d1_3_1", "context": "Informal name exchange.", "lines": [
+            { "speaker": "A", "target": "Salut! Cum te cheamă?", "native": "Hi! What's your name?", "phonetic": "sah-LOOT! koom te KYAH-mah?" },
+            { "speaker": "B", "target": "Pe mine mă cheamă Irina. Dar pe tine?", "native": "My name is Irina. And you?", "phonetic": "pe MEE-ne mah KYAH-mah Irina. dar pe TEE-ne?" }
+        ]},
+        { "id": "d1_3_2", "context": "Formal name exchange.", "lines": [
+            { "speaker": "A", "target": "Bună ziua. Cum vă cheamă?", "native": "Good day. What is your name? (formal)", "phonetic": "BOO-nah ZEE-wa. koom vah KYAH-mah?" },
+            { "speaker": "B", "target": "Numele meu este Adrian Popa. Dumneavoastră?", "native": "My name is Adrian Popa. And you? (formal)", "phonetic": "NOO-me-le MEW YES-te Adrian Popa. doom-nya-VWAS-tra?" }
+        ]},
+        { "id": "d1_3_3", "context": "Asking for a third person's name.", "lines": [
+            { "speaker": "A", "target": "Cine este el?", "native": "Who is he?", "phonetic": "CHEE-ne YES-te yel?" },
+            { "speaker": "B", "target": "El este colegul meu. Îl cheamă George.", "native": "He is my colleague. His name is George.", "phonetic": "yel YES-te ko-LE-gool MEW. il KYAH-mah George." }
+        ]},
+        { "id": "d1_3_4", "context": "Clarifying a name.", "lines": [
+            { "speaker": "A", "target": "Mă cheamă Siobhan.", "native": "My name is Siobhan.", "phonetic": "mah KYAH-mah Siobhan." },
+            { "speaker": "B", "target": "Scuze, puteți repeta? Cum se scrie?", "native": "Sorry, can you repeat? How is it written?", "phonetic": "SKOO-ze, poo-TETS re-pe-TA? koom se SKREE-e?" }
+        ]}
       ],
       "exercises": {
         "matching": [
-          { "id": "m1_3_1", "target": "Nume", "native": "Name" },
-          { "id": "m1_3_2", "target": "Eu sunt...", "native": "I am..." },
-          { "id": "m1_3_3", "target": "Îmi pare bine", "native": "Nice to meet you" },
-          { "id": "m1_3_4", "target": "De unde ești?", "native": "Where are you from?" }
-        ],
-         "sentenceScramble": [{
-            "id": "ss1_3_1",
-            "scrambled": ["numele", "tău", "Care", "este?"],
-            "correct": "Care este numele tău?",
-            "nativeHint": "What is your name?"
-        }]
+          { "id": "m1_3_1", "target": "Cum te cheamă?", "native": "What is your name? (informal)" },
+          { "id": "m1_3_2", "target": "Pe mine mă cheamă Maria.", "native": "My name is Maria." },
+          { "id": "m1_3_3", "target": "Cum vă cheamă?", "native": "What is your name? (formal)" },
+          { "id": "m1_3_4", "target": "Cine este el?", "native": "Who is he?" },
+          { "id": "m1_3_5", "target": "Nume de familie", "native": "Last name" }
+        ]
       },
-      "cultural_note": "When introducing themselves, Romanians often state their full name, especially in formal contexts. In informal settings, just the first name is common.",
-      "pronunciation_tip": "The 'h' in 'Mihai' is a soft sound, almost like a sigh. It's not a hard 'h' as in 'hat'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "RO_W1D3-Introductions" }
+      "cultural_note": "The phrase 'Cum te cheamă?' literally translates to 'How does it call you?'. It's the most common way to ask for a name. Using the formal 'vă' instead of 'te' is important when speaking to older people or in professional settings.",
+      "pronunciation_tip": "The 'ch' in 'cheamă' is pronounced like the 'ch' in 'check' or 'church'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-Names-RO" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Asking 'How are you?'",
-      "title_native": "Cum ești?",
+      "title": "Week 1, Day 4: Nationality and Country",
+      "title_native": "Săptămâna 1, Ziua 4: Naționalitate și Țară",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Ce faci?",
-          "phonetic": "che fatch?",
-          "native_meaning": "How are you? (informal)",
-          "english": "How are you? (informal)",
-          "example_sentence_target": "Salut, Ion! Ce faci?",
-          "example_sentence_native": "Hello, Ion! How are you?",
-          "example_sentence_phonetic": "sa-loot, yon! che fatch?"
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Ce faceți?",
-          "phonetic": "che fa-chets?",
-          "native_meaning": "How are you? (formal/plural)",
-          "english": "How are you? (formal/plural)",
-          "example_sentence_target": "Bună ziua, doamnă. Ce faceți?",
-          "example_sentence_native": "Hello, madam. How are you?",
-          "example_sentence_phonetic": "boo-na zee-wa, dwa-mnuh. che fa-chets?"
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Bine",
-          "phonetic": "bee-neh",
-          "native_meaning": "Good / Well",
-          "english": "Good / Well",
-          "example_sentence_target": "Sunt bine, mulțumesc.",
-          "example_sentence_native": "I am well, thank you.",
-          "example_sentence_phonetic": "sunt bee-neh, mool-tzoo-mesk."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "Foarte bine",
-          "phonetic": "fwar-teh bee-neh",
-          "native_meaning": "Very well",
-          "english": "Very well",
-          "example_sentence_target": "Mă simt foarte bine astăzi.",
-          "example_sentence_native": "I feel very well today.",
-          "example_sentence_phonetic": "muh seemt fwar-teh bee-neh a-stuz."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Și tu?",
-          "phonetic": "shee too?",
-          "native_meaning": "And you? (informal)",
-          "english": "And you? (informal)",
-          "example_sentence_target": "Sunt bine. Și tu?",
-          "example_sentence_native": "I am fine. And you?",
-          "example_sentence_phonetic": "sunt bee-neh. shee too?"
-        }
+        { "id": "w1_4_1", "target": "Țară", "phonetic": "TSA-rah", "native_meaning": "Country", "english": "Country", "example_sentence_target": "România este o țară frumoasă.", "example_sentence_native": "Romania is a beautiful country.", "example_sentence_phonetic": "ro-muh-NEE-a YES-te o TSA-rah froo-MWA-sah." },
+        { "id": "w1_4_2", "target": "Naționalitate", "phonetic": "na-tsyo-na-lee-TA-te", "native_meaning": "Nationality", "english": "Nationality", "example_sentence_target": "Ce naționalitate ai?", "example_sentence_native": "What nationality do you have?", "example_sentence_phonetic": "che na-tsyo-na-lee-TA-te eye?" },
+        { "id": "w1_4_3", "target": "Român / Româncă", "phonetic": "ro-MUN / ro-MUN-kah", "native_meaning": "Romanian (male / female)", "english": "Romanian (m/f)", "example_sentence_target": "El este român, ea este româncă.", "example_sentence_native": "He is Romanian, she is Romanian.", "example_sentence_phonetic": "yel YES-te ro-MUN, YA YES-te ro-MUN-kah." },
+        { "id": "w1_4_4", "target": "Englez / Englezoaică", "phonetic": "en-GLEZ / en-gle-ZOY-kah", "native_meaning": "English (male / female)", "english": "English (m/f)", "example_sentence_target": "Sunt englez.", "example_sentence_native": "I am English.", "example_sentence_phonetic": "soont en-GLEZ." },
+        { "id": "w1_4_5", "target": "American / Americancă", "phonetic": "a-me-ree-KAN / a-me-ree-KAN-kah", "native_meaning": "American (male / female)", "english": "American (m/f)", "example_sentence_target": "Prietenul meu este american.", "example_sentence_native": "My friend is American.", "example_sentence_phonetic": "pree-EH-te-nool MEW YES-te a-me-ree-KAN." },
+        { "id": "w1_4_6", "target": "Străin", "phonetic": "stra-EEN", "native_meaning": "Foreigner / Foreign", "english": "Foreigner / Foreign", "example_sentence_target": "Sunt un cetățean străin.", "example_sentence_native": "I am a foreign citizen.", "example_sentence_phonetic": "soont oon che-tah-TSYAN stra-EEN." },
+        { "id": "w1_4_7", "target": "Unde", "phonetic": "OON-de", "native_meaning": "Where", "english": "Where", "example_sentence_target": "Unde locuiești?", "example_sentence_native": "Where do you live?", "example_sentence_phonetic": "OON-de lo-kwee-ESHT?" },
+        { "id": "w1_4_8", "target": "A locui", "phonetic": "a lo-kwee", "native_meaning": "To live / To reside", "english": "To live / To reside", "example_sentence_target": "Vreau să locuiesc în România.", "example_sentence_native": "I want to live in Romania.", "example_sentence_phonetic": "VROW sah lo-kwee-ESK in ro-muh-NEE-a." }
+      ],
+      "sentences": [
+        { "id": "s1_4_1", "target": "Eu sunt din Germania.", "native": "I am from Germany.", "phonetic": "YEW soont deen jer-MA-nee-a." },
+        { "id": "s1_4_2", "target": "Ce limbi vorbiți?", "native": "What languages do you speak? (formal)", "phonetic": "che leem-b vor-BEETS?" },
+        { "id": "s1_4_3", "target": "Vorbesc engleză și puțină română.", "native": "I speak English and a little Romanian.", "phonetic": "vor-BESK en-GLE-zah she poo-TSI-nah ro-MUH-nah." },
+        { "id": "s1_4_4", "target": "Capitala României este București.", "native": "The capital of Romania is Bucharest.", "phonetic": "ka-pee-TA-la ro-muh-NEE-ay YES-te boo-koo-RESHT." },
+        { "id": "s1_4_5", "target": "Sunteți în vacanță aici?", "native": "Are you on vacation here? (formal)", "phonetic": "soon-TETS in va-KAN-tsa a-EECH?" },
+        { "id": "s1_4_6", "target": "Nu, lucrez aici.", "native": "No, I work here.", "phonetic": "noo, loo-KREZ a-EECH." },
+        { "id": "s1_4_7", "target": "Îmi place țara voastră.", "native": "I like your country.", "phonetic": "im plah-che TSA-ra VWAS-tra." },
+        { "id": "s1_4_8", "target": "De cât timp ești aici?", "native": "How long have you been here?", "phonetic": "de kut timp yesht a-EECH?" }
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "A casual conversation between friends.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Salut, Maria! Ce faci?",
-              "native": "Hello, Maria! How are you?",
-              "phonetic": "sa-loot, ma-ree-a! che fatch?"
-            },
-            {
-              "speaker": "B",
-              "target": "Bine, mulțumesc. Și tu?",
-              "native": "Fine, thank you. And you?",
-              "phonetic": "bee-neh, mool-tzoo-mesk. shee too?"
-            }
-          ]
-        }
+        { "id": "d1_4_1", "context": "At passport control.", "lines": [
+            { "speaker": "A", "target": "Bună ziua. Pașaportul, vă rog.", "native": "Good day. Your passport, please.", "phonetic": "BOO-nah ZEE-wa. pa-sha-POR-tool, vah ROG." },
+            { "speaker": "B", "target": "Poftim. Sunt din Regatul Unit.", "native": "Here you go. I am from the United Kingdom.", "phonetic": "pof-TEEM. soont deen re-GA-tool oo-NEET." }
+        ]},
+        { "id": "d1_4_2", "context": "Making small talk about origins.", "lines": [
+            { "speaker": "A", "target": "Deci, ești din Italia?", "native": "So, you are from Italy?", "phonetic": "DE-chee, yesht deen ee-TA-lya?" },
+            { "speaker": "B", "target": "Da, sunt italian. Dar locuiesc aici de doi ani.", "native": "Yes, I am Italian. But I have been living here for two years.", "phonetic": "da, soont ee-ta-LYAN. dar lo-kwee-ESK a-EECH de doy an." }
+        ]},
+        { "id": "d1_4_3", "context": "Asking about languages spoken.", "lines": [
+            { "speaker": "A", "target": "Vorbiți engleză?", "native": "Do you speak English?", "phonetic": "vor-BEETS en-GLE-zah?" },
+            { "speaker": "B", "target": "Da, vorbesc. Dumneavoastră sunteți american?", "native": "Yes, I speak. Are you American?", "phonetic": "da, vor-BESK. doom-nya-VWAS-tra soon-TETS a-me-ree-KAN?" }
+        ]},
+        { "id": "d1_4_4", "context": "Explaining you are a foreigner.", "lines": [
+            { "speaker": "A", "target": "Scuze, nu înțeleg. Sunt străin.", "native": "Sorry, I don't understand. I am a foreigner.", "phonetic": "SKOO-ze, noo in-tse-LEG. soont stra-EEN." },
+            { "speaker": "B", "target": "Nicio problemă. Vă ajut eu.", "native": "No problem. I will help you.", "phonetic": "NEE-cho pro-BLE-mah. vah a-JOOT YEW." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [{
-            "id": "fb1_4_1",
-            "sentence": "Sunt ___, mulțumesc.",
-            "answer": "bine",
-            "hint": "How to say 'well' or 'fine'."
-        }],
         "matching": [
-          { "id": "m1_4_1", "target": "Ce faci?", "native": "How are you? (informal)" },
-          { "id": "m1_4_2", "target": "Bine", "native": "Good / Well" },
-          { "id": "m1_4_3", "target": "Foarte bine", "native": "Very well" },
-          { "id": "m1_4_4", "target": "Și tu?", "native": "And you? (informal)" }
+          { "id": "m1_4_1", "target": "Țară", "native": "Country" },
+          { "id": "m1_4_2", "target": "Naționalitate", "native": "Nationality" },
+          { "id": "m1_4_3", "target": "Sunt din Canada.", "native": "I am from Canada." },
+          { "id": "m1_4_4", "target": "Vorbesc engleză.", "native": "I speak English." },
+          { "id": "m1_4_5", "target": "Străin", "native": "Foreigner" }
         ]
       },
-      "cultural_note": "'Ce faci?' is a very common, almost automatic greeting between friends, similar to 'What's up?' in English. The expected answer is usually a simple 'Bine' (Good).",
-      "pronunciation_tip": "The 'ci' in 'faci' is pronounced like 'ch' in 'cheese'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "RO_W1D4-HowAreYou" }
+      "cultural_note": "Romanians are generally curious and friendly towards foreigners. They will often ask where you are from and what you think of their country. Learning to say your nationality and where you're from is a great conversation starter.",
+      "pronunciation_tip": "The 'ș' character, as in 'București', is pronounced like 'sh' in 'shoe'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D4-Country-RO" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Saying Goodbye",
-      "title_native": "La revedere",
+      "title": "Week 1, Day 5: Polite Expressions",
+      "title_native": "Săptămâna 1, Ziua 5: Expresii politicoase",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "La revedere",
-          "phonetic": "la re-ve-de-reh",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "La revedere, ne vedem mâine.",
-          "example_sentence_native": "Goodbye, see you tomorrow.",
-          "example_sentence_phonetic": "la re-ve-de-reh, neh ve-dem muh-ee-neh."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Pa",
-          "phonetic": "pa",
-          "native_meaning": "Bye (informal)",
-          "english": "Bye (informal)",
-          "example_sentence_target": "Pa, pa!",
-          "example_sentence_native": "Bye, bye!",
-          "example_sentence_phonetic": "pa, pa!"
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Pe curând",
-          "phonetic": "peh koo-rund",
-          "native_meaning": "See you soon",
-          "english": "See you soon",
-          "example_sentence_target": "Trebuie să plec. Pe curând!",
-          "example_sentence_native": "I have to go. See you soon!",
-          "example_sentence_phonetic": "tre-boo-yeh suh plek. peh koo-rund!"
-        },
-        {
-          "id": "w1_5_4",
-          "target": "Ne vedem",
-          "phonetic": "neh ve-dem",
-          "native_meaning": "See you",
-          "english": "See you",
-          "example_sentence_target": "Ok, ne vedem mai târziu.",
-          "example_sentence_native": "Ok, see you later.",
-          "example_sentence_phonetic": "ok, neh ve-dem mai tur-zee-oo."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "O zi bună",
-          "phonetic": "o zee boo-nuh",
-          "native_meaning": "Have a good day",
-          "english": "Have a good day",
-          "example_sentence_target": "La revedere și o zi bună!",
-          "example_sentence_native": "Goodbye and have a good day!",
-          "example_sentence_phonetic": "la re-ve-de-reh shee o zee boo-nuh!"
-        }
+        { "id": "w1_5_1", "target": "Vă rog", "phonetic": "vah ROG", "native_meaning": "Please (formal)", "english": "Please (formal)", "example_sentence_target": "Un bilet, vă rog.", "example_sentence_native": "One ticket, please.", "example_sentence_phonetic": "oon bee-LET, vah ROG." },
+        { "id": "w1_5_2", "target": "Te rog", "phonetic": "te ROG", "native_meaning": "Please (informal)", "english": "Please (informal)", "example_sentence_target": "Ajută-mă, te rog.", "example_sentence_native": "Help me, please.", "example_sentence_phonetic": "a-JOO-tah-mah, te ROG." },
+        { "id": "w1_5_3", "target": "Cu plăcere", "phonetic": "koo plah-CHE-re", "native_meaning": "With pleasure / You're welcome", "english": "You're welcome", "example_sentence_target": "Mulțumesc! - Cu plăcere!", "example_sentence_native": "Thank you! - You're welcome!", "example_sentence_phonetic": "mool-tsoo-MESK! - koo plah-CHE-re!" },
+        { "id": "w1_5_4", "target": "Îmi pare rău", "phonetic": "im PA-re ROW", "native_meaning": "I'm sorry", "english": "I'm sorry", "example_sentence_target": "Îmi pare rău, am greșit.", "example_sentence_native": "I'm sorry, I made a mistake.", "example_sentence_phonetic": "im PA-re ROW, am gre-SHEET." },
+        { "id": "w1_5_5", "target": "Nu înțeleg", "phonetic": "noo in-tse-LEG", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Scuze, nu înțeleg românește.", "example_sentence_native": "Sorry, I don't understand Romanian.", "example_sentence_phonetic": "SKOO-ze, noo in-tse-LEG ro-muh-NESH-te." },
+        { "id": "w1_5_6", "target": "Pardon", "phonetic": "par-DON", "native_meaning": "Pardon / Sorry", "english": "Pardon / Sorry", "example_sentence_target": "Pardon, n-am auzit.", "example_sentence_native": "Pardon, I didn't hear.", "example_sentence_phonetic": "par-DON, nam a-oo-ZEET." },
+        { "id": "w1_5_7", "target": "Nicio problemă", "phonetic": "NEE-cho pro-BLE-mah", "native_meaning": "No problem", "english": "No problem", "example_sentence_target": "Scuze. - Nicio problemă.", "example_sentence_native": "Sorry. - No problem.", "example_sentence_phonetic": "SKOO-ze. - NEE-cho pro-BLE-mah." },
+        { "id": "w1_5_8", "target": "Sănătate!", "phonetic": "sah-nah-TA-te", "native_meaning": "Cheers! / Bless you! (after sneeze)", "english": "Cheers! / Bless you!", "example_sentence_target": "Hai să bem! Sănătate!", "example_sentence_native": "Let's drink! Cheers!", "example_sentence_phonetic": "high sah bem! sah-nah-TA-te!" }
+      ],
+      "sentences": [
+        { "id": "s1_5_1", "target": "Puteți să repetați, vă rog?", "native": "Can you repeat, please? (formal)", "phonetic": "poo-TETS sah re-pe-TATS, vah ROG?" },
+        { "id": "s1_5_2", "target": "Vorbiți mai rar, vă rog.", "native": "Speak slower, please. (formal)", "phonetic": "vor-BEETS my rar, vah ROG." },
+        { "id": "s1_5_3", "target": "Cum se spune 'water' în română?", "native": "How do you say 'water' in Romanian?", "phonetic": "koom se SPOO-ne 'water' in ro-MUH-nah?" },
+        { "id": "s1_5_4", "target": "Nu este nicio problemă.", "native": "It's no problem at all.", "phonetic": "noo YES-te NEE-cho pro-BLE-mah." },
+        { "id": "s1_5_5", "target": "Mulțumesc pentru invitație.", "native": "Thank you for the invitation.", "phonetic": "mool-tsoo-MESK PEN-troo in-vee-TA-tsy-e." },
+        { "id": "s1_5_6", "target": "Scuzați-mă, unde este gara?", "native": "Excuse me, where is the train station?", "phonetic": "skoo-ZATS-mah, OON-de YES-te GA-ra?" },
+        { "id": "s1_5_7", "target": "Poftă bună!", "native": "Enjoy your meal!", "phonetic": "POF-tah BOO-nah!" },
+        { "id": "s1_5_8", "target": "Drum bun!", "native": "Have a good trip!", "phonetic": "droom boon!" }
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Leaving a friend's house.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gata, eu plec. Mulțumesc pentru cafea.",
-              "native": "Ok, I'm leaving. Thank you for the coffee.",
-              "phonetic": "ga-ta, eh-oo plek. mool-tzoo-mesk pen-troo ka-feah."
-            },
-            {
-              "speaker": "B",
-              "target": "Cu plăcere. Ne vedem mâine. Pa!",
-              "native": "You're welcome. See you tomorrow. Bye!",
-              "phonetic": "koo pluh-che-reh. neh ve-dem muh-ee-neh. pa!"
-            }
-          ]
-        }
+        { "id": "d1_5_1", "context": "At a shop, asking politely.", "lines": [
+            { "speaker": "A", "target": "Aș dori o pâine, vă rog.", "native": "I would like a bread, please.", "phonetic": "ash do-REE o PUY-ne, vah ROG." },
+            { "speaker": "B", "target": "Poftim. Altceva?", "native": "Here you go. Anything else?", "phonetic": "pof-TEEM. alt-CHE-va?" }
+        ]},
+        { "id": "d1_5_2", "context": "Not understanding someone.", "lines": [
+            { "speaker": "A", "target": "Mergeți pe strada aceasta până la capăt.", "native": "Go on this street until the end.", "phonetic": "MER-jets pe STRA-da a-CHAS-ta PU-nah la KA-put." },
+            { "speaker": "B", "target": "Îmi pare rău, nu înțeleg. Puteți vorbi mai rar?", "native": "I'm sorry, I don't understand. Can you speak slower?", "phonetic": "im PA-re ROW, noo in-tse-LEG. poo-TETS vor-BEE my rar?" }
+        ]},
+        { "id": "d1_5_3", "context": "Bumping into someone accidentally.", "lines": [
+            { "speaker": "A", "target": "Pardon! Scuzați-mă!", "native": "Pardon! Excuse me!", "phonetic": "par-DON! skoo-ZATS-mah!" },
+            { "speaker": "B", "target": "Nicio problemă, se mai întâmplă.", "native": "No problem, it happens.", "phonetic": "NEE-cho pro-BLE-mah, se my in-TUM-plah." }
+        ]},
+        { "id": "d1_5_4", "context": "Responding to a thank you.", "lines": [
+            { "speaker": "A", "target": "Mulțumesc pentru ajutor!", "native": "Thank you for the help!", "phonetic": "mool-tsoo-MESK PEN-troo ah-joo-TOR!" },
+            { "speaker": "B", "target": "Cu multă plăcere.", "native": "With much pleasure.", "phonetic": "koo MOOL-tah plah-CHE-re." }
+        ]}
       ],
       "exercises": {
         "matching": [
-          { "id": "m1_5_1", "target": "La revedere", "native": "Goodbye" },
-          { "id": "m1_5_2", "target": "Pa", "native": "Bye (informal)" },
-          { "id": "m1_5_3", "target": "Pe curând", "native": "See you soon" },
-          { "id": "m1_5_4", "target": "O zi bună", "native": "Have a good day" }
-        ],
-         "sentenceScramble": [{
-            "id": "ss1_5_1",
-            "scrambled": ["mâine", "ne", "vedem"],
-            "correct": "ne vedem mâine",
-            "nativeHint": "see you tomorrow"
-        }]
+          { "id": "m1_5_1", "target": "Vă rog", "native": "Please (formal)" },
+          { "id": "m1_5_2", "target": "Cu plăcere", "native": "You're welcome" },
+          { "id": "m1_5_3", "target": "Îmi pare rău", "native": "I'm sorry" },
+          { "id": "m1_5_4", "target": "Nu înțeleg", "native": "I don't understand" },
+          { "id": "m1_5_5", "target": "Nicio problemă", "native": "No problem" }
+        ]
       },
-      "cultural_note": "'Pa' is very common and used between friends and family. 'La revedere' is more formal and suitable for all situations.",
-      "pronunciation_tip": "In 'revedere', the stress is on the third syllable: re-ve-DE-re.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "RO_W1D5-Goodbye" }
+      "cultural_note": "Politeness is very important in Romanian culture. Using 'vă rog' (formal please) and 'mulțumesc' (thank you) frequently is highly appreciated. 'Poftă bună' is said before someone starts eating.",
+      "pronunciation_tip": "The 'g' in 'rog' is a hard 'g' sound, like in the word 'go'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-Polite-RO" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Numbers 1-5",
-      "title_native": "Numere 1-5",
-      "theme": "Basic Numbers",
+      "title": "Week 1, Day 6: Yes / No / Maybe",
+      "title_native": "Săptămâna 1, Ziua 6: Da / Nu / Poate",
+      "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Unu",
-          "phonetic": "oo-noo",
-          "native_meaning": "One",
-          "english": "One",
-          "example_sentence_target": "Am un frate.",
-          "example_sentence_native": "I have one brother.",
-          "example_sentence_phonetic": "am oon fra-teh."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Doi",
-          "phonetic": "doy",
-          "native_meaning": "Two",
-          "english": "Two",
-          "example_sentence_target": "Vreau doi mici, vă rog.",
-          "example_sentence_native": "I want two 'mici', please.",
-          "example_sentence_phonetic": "vrow doy meech, vuh rog."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Trei",
-          "phonetic": "trey",
-          "native_meaning": "Three",
-          "english": "Three",
-          "example_sentence_target": "Sunt trei cărți pe masă.",
-          "example_sentence_native": "There are three books on the table.",
-          "example_sentence_phonetic": "sunt trey karts peh ma-suh."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "Patru",
-          "phonetic": "pa-troo",
-          "native_meaning": "Four",
-          "english": "Four",
-          "example_sentence_target": "Apartamentul are patru camere.",
-          "example_sentence_native": "The apartment has four rooms.",
-          "example_sentence_phonetic": "a-par-ta-men-tool a-reh pa-troo ka-me-reh."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Cinci",
-          "phonetic": "cheench",
-          "native_meaning": "Five",
-          "english": "Five",
-          "example_sentence_target": "Costă cinci lei.",
-          "example_sentence_native": "It costs five lei.",
-          "example_sentence_phonetic": "kos-tuh cheench lay."
-        }
+        { "id": "w1_6_1", "target": "Da", "phonetic": "da", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Da, sunt sigur.", "example_sentence_native": "Yes, I am sure.", "example_sentence_phonetic": "da, soont SEE-goor." },
+        { "id": "w1_6_2", "target": "Nu", "phonetic": "noo", "native_meaning": "No / Not", "english": "No / Not", "example_sentence_target": "Nu, nu vreau.", "example_sentence_native": "No, I don't want to.", "example_sentence_phonetic": "noo, noo vrow." },
+        { "id": "w1_6_3", "target": "Poate", "phonetic": "PWA-te", "native_meaning": "Maybe / Perhaps", "english": "Maybe", "example_sentence_target": "Poate mâine.", "example_sentence_native": "Maybe tomorrow.", "example_sentence_phonetic": "PWA-te MOY-ne." },
+        { "id": "w1_6_4", "target": "Sigur", "phonetic": "SEE-goor", "native_meaning": "Sure / Of course", "english": "Sure", "example_sentence_target": "Sigur, te ajut.", "example_sentence_native": "Sure, I'll help you.", "example_sentence_phonetic": "SEE-goor, te a-JOOT." },
+        { "id": "w1_6_5", "target": "Desigur", "phonetic": "de-SEE-goor", "native_meaning": "Of course", "english": "Of course", "example_sentence_target": "Desigur că da.", "example_sentence_native": "Of course, yes.", "example_sentence_phonetic": "de-SEE-goor kah da." },
+        { "id": "w1_6_6", "target": "Corect", "phonetic": "ko-RECT", "native_meaning": "Correct / Right", "english": "Correct", "example_sentence_target": "Este corect.", "example_sentence_native": "That is correct.", "example_sentence_phonetic": "YES-te ko-RECT." },
+        { "id": "w1_6_7", "target": "Greșit", "phonetic": "gre-SHEET", "native_meaning": "Wrong / Incorrect", "english": "Wrong", "example_sentence_target": "Răspunsul este greșit.", "example_sentence_native": "The answer is wrong.", "example_sentence_phonetic": "ras-POON-sool YES-te gre-SHEET." },
+        { "id": "w1_6_8", "target": "Nu știu", "phonetic": "noo shtiw", "native_meaning": "I don't know", "english": "I don't know", "example_sentence_target": "Nu știu unde este.", "example_sentence_native": "I don't know where it is.", "example_sentence_phonetic": "noo shtiw OON-de YES-te." }
+      ],
+      "sentences": [
+        { "id": "s1_6_1", "target": "Ești de acord?", "native": "Do you agree?", "phonetic": "yesht de a-KORD?" },
+        { "id": "s1_6_2", "target": "Da, absolut.", "native": "Yes, absolutely.", "phonetic": "da, ab-so-LOOT." },
+        { "id": "s1_6_3", "target": "Nu, deloc.", "native": "No, not at all.", "phonetic": "noo, de-LOK." },
+        { "id": "s1_6_4", "target": "Poate mai târziu.", "native": "Maybe later.", "phonetic": "PWA-te my tir-ZEW." },
+        { "id": "s1_6_5", "target": "Nu sunt sigur.", "native": "I am not sure.", "phonetic": "noo soont SEE-goor." },
+        { "id": "s1_6_6", "target": "Cred că da.", "native": "I think so.", "phonetic": "kred kah da." },
+        { "id": "s1_6_7", "target": "Sper că nu.", "native": "I hope not.", "phonetic": "sper kah noo." },
+        { "id": "s1_6_8", "target": "Nu am nicio idee.", "native": "I have no idea.", "phonetic": "noo am NEE-cho ee-DE-ye." }
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Ordering drinks at a cafe.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua, aș dori două cafele.",
-              "native": "Hello, I would like two coffees.",
-              "phonetic": "boo-na zee-wa, ash do-ree dow-uh ka-fe-leh."
-            },
-            {
-              "speaker": "B",
-              "target": "Sigur. Cinci lei, vă rog.",
-              "native": "Sure. Five lei, please.",
-              "phonetic": "see-goor. cheench lay, vuh rog."
-            }
-          ]
-        }
+        { "id": "d1_6_1", "context": "Confirming information.", "lines": [
+            { "speaker": "A", "target": "Acesta este trenul spre Brașov?", "native": "Is this the train to Brașov?", "phonetic": "a-CHES-ta YES-te TRE-nool spre Bra-SHOV?" },
+            { "speaker": "B", "target": "Da, este corect.", "native": "Yes, that is correct.", "phonetic": "da, YES-te ko-RECT." }
+        ]},
+        { "id": "d1_6_2", "context": "Declining an offer.", "lines": [
+            { "speaker": "A", "target": "Vrei o cafea?", "native": "Do you want a coffee?", "phonetic": "vray o ka-FYAH?" },
+            { "speaker": "B", "target": "Nu, mulțumesc. Tocmai am băut una.", "native": "No, thank you. I just drank one.", "phonetic": "noo, mool-tsoo-MESK. TOK-my am ba-OOT OO-na." }
+        ]},
+        { "id": "d1_6_3", "context": "Being uncertain about plans.", "lines": [
+            { "speaker": "A", "target": "Vii la petrecere diseară?", "native": "Are you coming to the party tonight?", "phonetic": "vee la pe-TRE-che-re dee-SYA-ra?" },
+            { "speaker": "B", "target": "Poate. Nu știu sigur încă.", "native": "Maybe. I'm not sure yet.", "phonetic": "PWA-te. noo shtiw SEE-goor IN-kah." }
+        ]},
+        { "id": "d1_6_4", "context": "Admitting not knowing something.", "lines": [
+            { "speaker": "A", "target": "Știi la ce oră începe filmul?", "native": "Do you know what time the movie starts?", "phonetic": "shtee la che O-rah in-CHE-pe FEEL-mool?" },
+            { "speaker": "B", "target": "Îmi pare rău, nu știu.", "native": "I'm sorry, I don't know.", "phonetic": "im PA-re ROW, noo shtiw." }
+        ]}
       ],
       "exercises": {
         "matching": [
-          { "id": "m1_6_1", "target": "Unu", "native": "One" },
-          { "id": "m1_6_2", "target": "Doi", "native": "Two" },
-          { "id": "m1_6_3", "target": "Trei", "native": "Three" },
-          { "id": "m1_6_4", "target": "Patru", "native": "Four" },
-          { "id": "m1_6_5", "target": "Cinci", "native": "Five" }
-        ],
-        "fillBlanks": [{
-            "id": "fb1_6_1",
-            "sentence": "Am ___ degete la o mână.",
-            "answer": "cinci",
-            "hint": "How many fingers on one hand?"
-        }]
+          { "id": "m1_6_1", "target": "Da, sigur.", "native": "Yes, sure." },
+          { "id": "m1_6_2", "target": "Nu, mulțumesc.", "native": "No, thank you." },
+          { "id": "m1_6_3", "target": "Poate mâine.", "native": "Maybe tomorrow." },
+          { "id": "m1_6_4", "target": "Este greșit.", "native": "It is wrong." },
+          { "id": "m1_6_5", "target": "Nu știu.", "native": "I don't know." }
+        ]
       },
-      "cultural_note": "The Romanian currency is the 'leu' (singular) and 'lei' (plural), which means 'lion'.",
-      "pronunciation_tip": "The number 'doi' (two) is used for masculine nouns, while 'două' is used for feminine nouns (e.g., 'doi băieți' - two boys, 'două fete' - two girls).",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "RO_W1D6-Numbers1-5" }
+      "cultural_note": "A slight head nod upwards can mean 'no' in informal contexts in Romania, which can be confusing for foreigners. The words 'Da' and 'Nu' are always clear.",
+      "pronunciation_tip": "The 'u' in 'Nu' is a short, sharp sound, like the 'oo' in 'book'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-YesNo-RO" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Weekly Review",
-      "title_native": "Recapitulare săptămânală",
-      "theme": "Review",
+      "title": "Week 1, Day 7: Simple Conversation Practice",
+      "title_native": "Săptămâna 1, Ziua 7: Practică de conversație simplă",
+      "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Salut",
-          "phonetic": "sa-loot",
-          "native_meaning": "Hello (informal)",
-          "english": "Hello (informal)",
-          "example_sentence_target": "Salut, ce faci?",
-          "example_sentence_native": "Hello, how are you?",
-          "example_sentence_phonetic": "sa-loot, che fatch?"
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Mulțumesc",
-          "phonetic": "mool-tzoo-mesk",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Mulțumesc pentru tot.",
-          "example_sentence_native": "Thank you for everything.",
-          "example_sentence_phonetic": "mool-tzoo-mesk pen-troo tot."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Vă rog",
-          "phonetic": "vuh rog",
-          "native_meaning": "Please (formal)",
-          "english": "Please (formal)",
-          "example_sentence_target": "Apă, vă rog.",
-          "example_sentence_native": "Water, please.",
-          "example_sentence_phonetic": "a-puh, vuh rog."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "Bine",
-          "phonetic": "bee-neh",
-          "native_meaning": "Good / Well",
-          "english": "Good / Well",
-          "example_sentence_target": "Sunt bine, mulțumesc. Și tu?",
-          "example_sentence_native": "I'm fine, thanks. And you?",
-          "example_sentence_phonetic": "sunt bee-neh, mool-tzoo-mesk. shee too?"
-        },
-        {
-          "id": "w1_7_5",
-          "target": "La revedere",
-          "phonetic": "la re-ve-de-reh",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "La revedere! O zi bună!",
-          "example_sentence_native": "Goodbye! Have a good day!",
-          "example_sentence_phonetic": "la re-ve-de-reh! o zee boo-nuh!"
-        }
+        { "id": "w1_7_1", "target": "Bine", "phonetic": "BEE-ne", "native_meaning": "Good / Well / Fine", "english": "Good / Well", "example_sentence_target": "Sunt bine.", "example_sentence_native": "I am fine.", "example_sentence_phonetic": "soont BEE-ne." },
+        { "id": "w1_7_2", "target": "Foarte bine", "phonetic": "FWAR-te BEE-ne", "native_meaning": "Very good / Very well", "english": "Very good", "example_sentence_target": "Mă simt foarte bine.", "example_sentence_native": "I feel very well.", "example_sentence_phonetic": "mah simt FWAR-te BEE-ne." },
+        { "id": "w1_7_3", "target": "Ce faci?", "phonetic": "che fatch?", "native_meaning": "How are you? (informal)", "english": "How are you? (informal)", "example_sentence_target": "Salut, ce faci?", "example_sentence_native": "Hi, how are you?", "example_sentence_phonetic": "sah-LOOT, che fatch?" },
+        { "id": "w1_7_4", "target": "Ce faceți?", "phonetic": "che FA-chets?", "native_meaning": "How are you? (formal/plural)", "english": "How are you? (formal)", "example_sentence_target": "Bună ziua, ce faceți?", "example_sentence_native": "Good day, how are you?", "example_sentence_phonetic": "BOO-nah ZEE-wa, che FA-chets?" },
+        { "id": "w1_7_5", "target": "Și tu?", "phonetic": "shee too?", "native_meaning": "And you? (informal)", "english": "And you? (informal)", "example_sentence_target": "Sunt bine. Și tu?", "example_sentence_native": "I'm fine. And you?", "example_sentence_phonetic": "soont BEE-ne. shee too?" },
+        { "id": "w1_7_6", "target": "Și dumneavoastră?", "phonetic": "shee doom-nya-VWAS-tra?", "native_meaning": "And you? (formal)", "english": "And you? (formal)", "example_sentence_target": "Mulțumesc, bine. Și dumneavoastră?", "example_sentence_native": "Fine, thank you. And you?", "example_sentence_phonetic": "mool-tsoo-MESK, BEE-ne. shee doom-nya-VWAS-tra?" },
+        { "id": "w1_7_7", "target": "Limbă", "phonetic": "LEEM-bah", "native_meaning": "Language / Tongue", "english": "Language", "example_sentence_target": "Limba română este frumoasă.", "example_sentence_native": "The Romanian language is beautiful.", "example_sentence_phonetic": "LEEM-bah ro-MUH-nah YES-te froo-MWA-sah." },
+        { "id": "w1_7_8", "target": "A vorbi", "phonetic": "a vor-BEE", "native_meaning": "To speak", "english": "To speak", "example_sentence_target": "Eu vorbesc engleză.", "example_sentence_native": "I speak English.", "example_sentence_phonetic": "YEW vor-BESK en-GLE-zah." }
+      ],
+      "sentences": [
+        { "id": "s1_7_1", "target": "Salut, mă cheamă John.", "native": "Hi, my name is John.", "phonetic": "sah-LOOT, mah KYAH-mah John." },
+        { "id": "s1_7_2", "target": "Bună, sunt din America.", "native": "Hello, I am from America.", "phonetic": "BOO-nah, soont deen a-ME-ree-ka." },
+        { "id": "s1_7_3", "target": "Îmi pare bine de cunoștință.", "native": "Nice to meet you.", "phonetic": "im PA-re BEE-ne de koo-no-SHTIN-tsa." },
+        { "id": "s1_7_4", "target": "Nu vorbesc bine românește.", "native": "I don't speak Romanian well.", "phonetic": "noo vor-BESK BEE-ne ro-muh-NESH-te." },
+        { "id": "s1_7_5", "target": "Puteți să mă ajutați, vă rog?", "native": "Can you help me, please? (formal)", "phonetic": "poo-TETS sah mah a-joo-TATS, vah ROG?" },
+        { "id": "s1_7_6", "target": "Mulțumesc mult! La revedere!", "native": "Thank you very much! Goodbye!", "phonetic": "mool-tsoo-MESK moolt! la re-ve-DE-re!" },
+        { "id": "s1_7_7", "target": "Scuze, nu am înțeles.", "native": "Sorry, I did not understand.", "phonetic": "SKOO-ze, noo am in-tse-LES." },
+        { "id": "s1_7_8", "target": "Poate ne vedem mâine.", "native": "Maybe we'll see each other tomorrow.", "phonetic": "PWA-te ne ve-DEM MOY-ne." }
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "A short, complete conversation.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua. Mă numesc Paul.",
-              "native": "Hello. My name is Paul.",
-              "phonetic": "boo-na zee-wa. muh noo-mesk Paul."
-            },
-            {
-              "speaker": "B",
-              "target": "Salut, Paul. Eu sunt Maria. Îmi pare bine. Ce faci?",
-              "native": "Hi, Paul. I'm Maria. Nice to meet you. How are you?",
-              "phonetic": "sa-loot, Paul. eh-oo sunt ma-ree-a. um-pah-reh bee-neh. che fatch?"
-            },
-             {
-              "speaker": "A",
-              "target": "Foarte bine, mulțumesc. Trebuie să plec acum. La revedere!",
-              "native": "Very well, thank you. I have to go now. Goodbye!",
-              "phonetic": "fwar-teh bee-neh, mool-tzoo-mesk. tre-boo-yeh suh plek a-koom. la re-ve-de-reh!"
-            }
-          ]
-        }
+        { "id": "d1_7_1", "context": "A full, simple introduction.", "lines": [
+            { "speaker": "A", "target": "Bună ziua. Mă cheamă Peter.", "native": "Good day. My name is Peter.", "phonetic": "BOO-nah ZEE-wa. mah KYAH-mah Peter." },
+            { "speaker": "B", "target": "Bună, Peter. Eu sunt Gabriela. Îmi pare bine.", "native": "Hello, Peter. I am Gabriela. Nice to meet you.", "phonetic": "BOO-nah, Peter. YEW soont Gabriela. im PA-re BEE-ne." },
+            { "speaker": "A", "target": "Și mie. Sunt din Anglia. Dumneavoastră?", "native": "Me too. I am from England. And you? (formal)", "phonetic": "shee MEE-ye. soont deen AN-glee-a. doom-nya-VWAS-tra?" },
+            { "speaker": "B", "target": "Eu sunt româncă. Bine ați venit în România!", "native": "I am Romanian (female). Welcome to Romania!", "phonetic": "YEW soont ro-MUN-kah. BEE-ne ats ve-NEET in ro-muh-NEE-a!" }
+        ]},
+        { "id": "d1_7_2", "context": "Checking in at a hotel.", "lines": [
+            { "speaker": "A", "target": "Bună seara. Am o rezervare pe numele Smith.", "native": "Good evening. I have a reservation under the name Smith.", "phonetic": "BOO-nah SYA-ra. am o re-zer-VA-re pe NOO-me-le Smith." },
+            { "speaker": "B", "target": "Bună seara. Da, desigur. Pașaportul, vă rog.", "native": "Good evening. Yes, of course. The passport, please.", "phonetic": "BOO-nah SYA-ra. da, de-SEE-goor. pa-sha-POR-tool, vah ROG." }
+        ]},
+        { "id": "d1_7_3", "context": "Asking for something in a store.", "lines": [
+            { "speaker": "A", "target": "Scuzați-mă, aveți apă?", "native": "Excuse me, do you have water?", "phonetic": "skoo-ZATS-mah, a-VETS A-pah?" },
+            { "speaker": "B", "target": "Da, poftim. Altceva?", "native": "Yes, here you go. Anything else?", "phonetic": "da, pof-TEEM. alt-CHE-va?" },
+            { "speaker": "A", "target": "Nu, mulțumesc. Atât.", "native": "No, thank you. That's all.", "phonetic": "noo, mool-tsoo-MESK. a-TUT." }
+        ]},
+        { "id": "d1_7_4", "context": "A simple chat with a friend.", "lines": [
+            { "speaker": "A", "target": "Salut, Andrei! Ce faci?", "native": "Hi, Andrei! How are you?", "phonetic": "sah-LOOT, Andrei! che fatch?" },
+            { "speaker": "B", "target": "Salut! Sunt bine, mulțumesc. Tu?", "native": "Hi! I am fine, thank you. You?", "phonetic": "sah-LOOT! soont BEE-ne, mool-tsoo-MESK. too?" }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-            { "id": "fb1_7_1", "sentence": "___! Mă numesc David.", "answer": "Salut", "hint": "Informal 'Hello'." },
-            { "id": "fb1_7_2", "sentence": "Sunt bine, ___. Și tu?", "answer": "mulțumesc", "hint": "How do you say 'thank you'?" }
-        ],
-        "sentenceScramble": [{
-            "id": "ss1_7_1",
-            "scrambled": ["bună", "O", "zi", "!"],
-            "correct": "O zi bună!",
-            "nativeHint": "Have a good day!"
-        }]
+        "matching": [
+          { "id": "m1_7_1", "target": "Ce faci?", "native": "How are you? (informal)" },
+          { "id": "m1_7_2", "target": "Sunt bine, mulțumesc.", "native": "I am fine, thank you." },
+          { "id": "m1_7_3", "target": "De unde ești?", "native": "Where are you from?" },
+          { "id": "m1_7_4", "target": "Nu vorbesc românește.", "native": "I don't speak Romanian." },
+          { "id": "m1_7_5", "target": "La revedere!", "native": "Goodbye!" }
+        ]
       },
-      "cultural_note": "Combining greetings, politeness, and asking how someone is are the building blocks of any Romanian conversation. Mastering these shows respect and opens doors.",
-      "pronunciation_tip": "Review the week's words, paying attention to the special characters: 'ă', 'â', 'î', 'ș', 'ț'. Practice makes perfect!",
-      "progress": { "xp": 150, "streak_bonus": 50, "badge": "RO_W1-Review" }
+      "cultural_note": "This week, you've learned the essentials for a first meeting. Practice them! Romanians appreciate when foreigners try to speak their language, even if it's just a few words. Don't be afraid to make mistakes.",
+      "pronunciation_tip": "Review the special characters: 'ă' (like 'a' in 'sofa'), 'ț' (like 'ts' in 'cats'), and 'ș' (like 'sh' in 'shoe'). Getting these right will make your pronunciation much clearer.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W1-Complete-RO" }
     }
   ]
 }
