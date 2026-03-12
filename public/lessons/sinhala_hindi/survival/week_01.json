@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,1325 +8,483 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 1 වන දිනය: මූලික ආචාර කිරීම්",
+      "title_native": "सप्ताह 1, दिन 1: मूल अभिवादन",
+      "theme": "Greetings & Politeness",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_1_1","target":"नमस्ते","phonetic":"නමස්තේ","native_meaning":"ආයුබෝවන්","english":"Hello/Greetings","example_sentence_target":"नमस्ते, आप कैसे हैं?","example_sentence_native":"ආයුබෝවන්, ඔබට කොහොමද?","example_sentence_phonetic":"නමස්තේ, ආප් කේසේ හේ?"},
+        {"id":"w1_1_2","target":"धन्यवाद","phonetic":"ධන්‍යවාද්","native_meaning":"ස්තූතියි","english":"Thank you","example_sentence_target":"आपकी मदद के लिए धन्यवाद।","example_sentence_native":"ඔබගේ උදව්වට ස්තූතියි.","example_sentence_phonetic":"ආප්කී मदद के लिए धन्यवाद।"},
+        {"id":"w1_1_3","target":"आपका स्वागत है","phonetic":"ආප්කා ස්වාගත් හේ","native_meaning":"ඔබව සාදරයෙන් පිළිගනිමු","english":"You are welcome","example_sentence_target":"धन्यवाद! आपका स्वागत है।","example_sentence_native":"ස්තූතියි! ඔබව සාදරයෙන් පිළිගනිමු.","example_sentence_phonetic":"ධන්‍යවාද්! ආප්කා ස්වාගත් හේ."},
+        {"id":"w1_1_4","target":"माफ़ कीजिए","phonetic":"මාෆ් කීජියේ","native_meaning":"සමාවන්න/කණගාටුයි","english":"Excuse me/Sorry","example_sentence_target":"माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?","example_sentence_native":"සමාවන්න, ඔබට මට උදව් කරන්න පුළුවන්ද?","example_sentence_phonetic":"මාෆ් කීජියේ, ਕਿਆ ආප් මගේ مدد कर सकते हैं?"},
+        {"id":"w1_1_5","target":"हाँ","phonetic":"හා","native_meaning":"ඔව්","english":"Yes","example_sentence_target":"क्या आप तैयार हैं? हाँ, मैं तैयार हूँ।","example_sentence_native":"ඔබ සූදානම්ද? ඔව්, මම සූදානම්.","example_sentence_phonetic":"ক্যা ආප් තයියාර් හේ? හා, මේ තයියාර් හූ."},
+        {"id":"w1_1_6","target":"नहीं","phonetic":"නහී","native_meaning":"නැහැ","english":"No","example_sentence_target":"क्या आपको कुछ चाहिए? नहीं, धन्यवाद।","example_sentence_native":"ඔබට යමක් අවශ්‍යද? නැහැ, ස්තූතියි.","example_sentence_phonetic":"ক্যা ආප්කෝ කුච් චාහියේ? නහී, ධන්‍යවාද්."},
+        {"id":"w1_1_7","target":"कृपया","phonetic":"කෘපයා","native_meaning":"කරුණාකර","english":"Please","example_sentence_target":"कृपया बैठ जाइए।","example_sentence_native":"කරුණාකර වාඩිවන්න.","example_sentence_phonetic":"කෘපයා බේට් ජායියේ."},
+        {"id":"w1_1_8","target":"ठीक है","phonetic":"ටීක් හේ","native_meaning":"හරි / හොඳයි","english":"Okay / Alright","example_sentence_target":"हम कल मिलेंगे। ठीक है।","example_sentence_native":"අපි හෙට හමුවෙමු. හරි.","example_sentence_phonetic":"හම් කල් මිලෙන්ගේ. ටීක් හේ."}
+      ],
+      "sentences": [
+        {"id":"s1_1_1","target":"नमस्ते, मेरा नाम सोहन है।","native":"ආයුබෝවන්, මගේ නම සෝහන්.","phonetic":"නමස්තේ, මේරා නාම් සෝහන් හේ."},
+        {"id":"s1_1_2","target":"इस उपहार के लिए बहुत बहुत धन्यवाद।","native":"මෙම තෑග්ගට බොහොම ස්තූතියි.","phonetic":"ඉස් උපහාර් කේ ලියේ බහුත් බහුත් ධන්‍යවාද්."},
+        {"id":"s1_1_3","target":"क्या मैं अंदर आ सकता हूँ? हाँ, कृपया।","native":"මට ඇතුළට එන්න පුළුවන්ද? ඔව්, කරුණාකර.","phonetic":"ক্যা మే අන්දර් ආ සක්තා හූ? හා, කෘපයා."},
+        {"id":"s1_1_4","target":"माफ़ कीजिए, शौचालय कहाँ है?","native":"සමාවන්න, වැසිකිළිය කොහෙද?","phonetic":"මාෆ් කීජියේ, ශෞචාලය කහා හේ?"},
+        {"id":"s1_1_5","target":"आपका दिन शुभ हो।","native":"ඔබට සුභ දවසක්.","phonetic":"ආප්කා දින් ශුභ් හෝ."},
+        {"id":"s1_1_6","target":"मैं आपकी बात नहीं समझा।","native":"මට ඔබ කියන දේ තේරුණේ නැහැ.","phonetic":"මේ ආප්කී බාත් නහී සම්ජා."},
+        {"id":"s1_1_7","target":"कोई बात नहीं, ठीक है।","native":"කමක් නෑ, හරි.","phonetic":"කෝයි බාත් නහී, ටීක් හේ."},
+        {"id":"s1_1_8","target":"नहीं, मुझे यह नहीं चाहिए।","native":"නැහැ, මට මෙය අවශ්‍ය නැහැ.","phonetic":"නහී, මුජේ යේ නහී චාහියේ."}
       ],
       "dialogues": [
-        {
-          "id": "d1_1_1",
-          "context": "Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_1_1","context":"දෙදෙනෙක් පළමු වරට හමුවීම.","lines":[
+            {"speaker":"A","target":"नमस्ते।","native":"ආයුබෝවන්.","phonetic":"නමස්තේ."},
+            {"speaker":"B","target":"नमस्ते। आप कैसे हैं?","native":"ආයුබෝවන්. ඔබට කොහොමද?","phonetic":"නමස්තේ. ආප් කේසේ හේ?"}
+        ]},
+        {"id":"d1_1_2","context":"යමෙකුගෙන් උදව්වක් ඉල්ලීම.","lines":[
+            {"speaker":"A","target":"माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?","native":"සමාවන්න, ඔබට මට උදව් කරන්න පුළුවන්ද?","phonetic":"මාෆ් කීජියේ, క్యా ආප් మేరీ मदद कर सकते हैं?"},
+            {"speaker":"B","target":"हाँ, कृपया बताइए।","native":"ඔව්, කරුණාකර කියන්න.","phonetic":"හා, කෘපයා බතායියේ."}
+        ]},
+        {"id":"d1_1_3","context":"යමක් පිළිගැනීම හෝ ප්‍රතික්ෂේප කිරීම.","lines":[
+            {"speaker":"A","target":"क्या आप चाय लेंगे?","native":"ඔබ තේ බොනවද?","phonetic":"ක్యా ආප් චායි ලෙන්ගේ?"},
+            {"speaker":"B","target":"नहीं, धन्यवाद।","native":"නැහැ, ස්තූතියි.","phonetic":"නහී, ධන්‍යවාද්."}
+        ]},
+        {"id":"d1_1_4","context":"සංවාදයක් අවසන් කිරීම.","lines":[
+            {"speaker":"A","target":"ठीक है, मैं अब चलता हूँ।","native":"හරි, මම දැන් යනවා.","phonetic":"ටීක් හේ, මේ අබ් චල්තා හූ."},
+            {"speaker":"B","target":"ठीक है, फिर मिलेंगे। नमस्ते।","native":"හරි, නැවත හමුවෙමු. ආයුබෝවන්.","phonetic":"ටීක් හේ, ෆිර් මිලෙන්ගේ. නමස්තේ."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_1_1","sentence":"आपकी मदद के लिए ___।","answer":"धन्यवाद","hint":"'ස්තූතියි' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_1_1","question":"'Yes' යන්න හින්දි භාෂාවෙන් කුමක්ද?","options":["नहीं","हाँ","कृपया","नमस्ते"],"correct":1,"explanation":"'हाँ' (හා) යනු 'Yes' සඳහා නිවැරදි හින්දි වචනයයි."}
+        ],
+        "matching": [
+            {"id":"mp1_1_1","target":"नमस्ते","native":"ආයුබෝවන්"},
+            {"id":"mp1_1_2","target":"धन्यवाद","native":"ස්තූතියි"},
+            {"id":"mp1_1_3","target":"माफ़ कीजिए","native":"සමාවන්න"},
+            {"id":"mp1_1_4","target":"हाँ","native":"ඔව්"}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_1_1","scrambled":["आप","हैं","कैसे","?"],"correct":"आप कैसे हैं?","nativeHint":"'ඔබට කොහොමද?'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "ඉන්දියාවේ, 'නමස්තේ' කීමේදී අත් දෙක එකතු කර පපුව මට්ටමින් තබාගෙන හිස මඳක් නැවීම සාම්ප්‍රදායික හා ගෞරවනීය ක්‍රමයයි. එය ආචාර කිරීමට මෙන්ම සමුගැනීමටද භාවිතා වේ.",
+      "pronunciation_tip": "'धन्यवाद' (ධන්‍යවාද්) හි 'ध' (ධ) ශබ්දය උච්චාරණය කිරීමේදී, දිව දත් පිටුපස තබා මෘදු 'ද' ශබ්දයක් නිකුත් කරන්න, ඉංග්‍රීසි 'the' හි මෙන්.",
+      "progress":{"xp":100,"streak_bonus":20,"badge":"W1D1-HindiGreetings"}
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 2 වන දිනය: ඔබව හඳුන්වා දීම",
+      "title_native": "सप्ताह 1, दिन 2: अपना परिचय देना",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_2_1","target":"मैं","phonetic":"මේ","native_meaning":"මම","english":"I","example_sentence_target":"मैं एक छात्र हूँ।","example_sentence_native":"මම ශිෂ්‍යයෙක්.","example_sentence_phonetic":"මේ ඒක් චාත්‍ර හූ."},
+        {"id":"w1_2_2","target":"आप","phonetic":"ආප්","native_meaning":"ඔබ (ගෞරවනීය)","english":"You (formal)","example_sentence_target":"आप कहाँ से हैं?","example_sentence_native":"ඔබ කොහෙන්ද?","phonetic":"ආප් කහා සේ හේ?"},
+        {"id":"w1_2_3","target":"मेरा","phonetic":"මේරා","native_meaning":"මගේ","english":"My/Mine","example_sentence_target":"यह मेरा घर है।","example_sentence_native":"මේක මගේ ගෙදර.","example_sentence_phonetic":"යේ මේරා ඝර් හේ."},
+        {"id":"w1_2_4","target":"आपका","phonetic":"ආප්කා","native_meaning":"ඔබගේ (ගෞරවනීය)","english":"Your/Yours (formal)","example_sentence_target":"आपका नाम क्या है?","example_sentence_native":"ඔබගේ නම කුමක්ද?","example_sentence_phonetic":"ආප්කා නාම් క్యా හේ?"},
+        {"id":"w1_2_5","target":"नाम","phonetic":"නාම්","native_meaning":"නම","english":"Name","example_sentence_target":"मेरा नाम अनिल है।","example_sentence_native":"මගේ නම අනිල්.","example_sentence_phonetic":"මේරා නාම් අනිල් හේ."},
+        {"id":"w1_2_6","target":"क्या","phonetic":"කියා","native_meaning":"කුමක්ද","english":"What","example_sentence_target":"यह क्या है?","example_sentence_native":"මේ මොකක්ද?","example_sentence_phonetic":"යේ කියා හේ?"},
+        {"id":"w1_2_7","target":"हूँ","phonetic":"හූ","native_meaning":"වෙමි","english":"am","example_sentence_target":"मैं ठीक हूँ।","example_sentence_native":"මම හොඳින්.","example_sentence_phonetic":"මේ ටීක් හූ."},
+        {"id":"w1_2_8","target":"हैं","phonetic":"හේ","native_meaning":"වෙති/වේ","english":"are/is","example_sentence_target":"आप कौन हैं?","example_sentence_native":"ඔබ කවුද?","example_sentence_phonetic":"ආප් කෝන් හේ?"}
+      ],
+      "sentences": [
+        {"id":"s1_2_1","target":"मेरा नाम प्रिया है।","native":"මගේ නම ප්‍රියා.","phonetic":"මේරා නාම් ප්‍රියා හේ."},
+        {"id":"s1_2_2","target":"आपसे मिलकर ख़ुशी हुई।","native":"ඔබව හමුවීම සතුටක්.","phonetic":"ආප්සේ මිල්කර් ඛුශී හුයී."},
+        {"id":"s1_2_3","target":"मैं श्रीलंका से हूँ।","native":"මම ශ්‍රී ලංකාවෙන්.","phonetic":"මේ ශ්‍රී ලංකා සේ හූ."},
+        {"id":"s1_2_4","target":"आपका पेशा क्या है?","native":"ඔබගේ වෘත්තිය කුමක්ද?","phonetic":"ආප්කා පේෂා කියා හේ?"},
+        {"id":"s1_2_5","target":"मैं एक शिक्षक हूँ।","native":"මම ගුරුවරයෙක්.","phonetic":"මේ ඒක් ශික්ෂක් හූ."},
+        {"id":"s1_2_6","target":"क्या आप भारतीय हैं?","native":"ඔබ ඉන්දියානුවෙක්ද?","phonetic":"කියා ආප් භාරතීය හේ?"},
+        {"id":"s1_2_7","target":"यह मेरा दोस्त है।","native":"මේ මගේ මිතුරා.","phonetic":"යේ මේරා දෝස්ත් හේ."},
+        {"id":"s1_2_8","target":"आपका स्वागत है।","native":"ඔබව සාදරයෙන් පිළිගනිමු.","phonetic":"ආප්කා ස්වාගත් හේ."}
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_2_1","context":"තමන්ව හඳුන්වා දීම.","lines":[
+            {"speaker":"A","target":"नमस्ते, मेरा नाम रवि है।","native":"ආයුබෝවන්, මගේ නම රවි.","phonetic":"නමස්තේ, මේරා නාම් රවි හේ."},
+            {"speaker":"B","target":"नमस्ते रवि, मेरा नाम सीता है।","native":"ආයුබෝවන් රවි, මගේ නම සීතා.","phonetic":"නමස්තේ රවි, මේරා නාම් සීතා හේ."}
+        ]},
+        {"id":"d1_2_2","context":"අනෙක් කෙනාගේ නම ඇසීම.","lines":[
+            {"speaker":"A","target":"मेरा नाम संजय है। आपका नाम क्या है?","native":"මගේ නම සංජේ. ඔබගේ නම කුමක්ද?","phonetic":"මේරා නාම් සංජේ හේ. ආප්කා නාම් කියා හේ?"},
+            {"speaker":"B","target":"मेरा नाम अनीता है।","native":"මගේ නම අනීතා.","phonetic":"මේරා නාම් අනීතා හේ."}
+        ]},
+        {"id":"d1_2_3","context":"කෙනෙක් කොහෙන්ද කියා ඇසීම.","lines":[
+            {"speaker":"A","target":"मैं भारत से हूँ। आप कहाँ से हैं?","native":"මම ඉන්දියාවෙන්. ඔබ කොහෙන්ද?","phonetic":"මේ භාරත් සේ හූ. ආප් කහා සේ හේ?"},
+            {"speaker":"B","target":"मैं श्रीलंका से हूँ।","native":"මම ශ්‍රී ලංකාවෙන්.","phonetic":"මේ ශ්‍රී ලංකා සේ හූ."}
+        ]},
+        {"id":"d1_2_4","context":"හමුවීම ගැන සතුට ප්‍රකාශ කිරීම.","lines":[
+            {"speaker":"A","target":"आपसे मिलकर ख़ुशी हुई।","native":"ඔබව හමුවීම සතුටක්.","phonetic":"ආප්සේ මිල්කර් ඛුශී හුයී."},
+            {"speaker":"B","target":"मुझे भी।","native":"මටත්.","phonetic":"මුජේ භී."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_2_1","sentence":"आपका ___ क्या है?","answer":"नाम","hint":"'නම' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_2_1","question":"'I' යන්න හින්දි භාෂාවෙන් කුමක්ද?","options":["आप","मैं","मेरा","नाम"],"correct":1,"explanation":"'मैं' (මේ) යනු 'I' සඳහා නිවැරදි හින්දි වචනයයි."}
+        ],
+        "matching": [
+            {"id":"mp1_2_1","target":"मेरा नाम","native":"මගේ නම"},
+            {"id":"mp1_2_2","target":"आप कहाँ से हैं?","native":"ඔබ කොහෙන්ද?"},
+            {"id":"mp1_2_3","target":"मैं ठीक हूँ।","native":"මම හොඳින්."},
+            {"id":"mp1_2_4","target":"क्या?","native":"කුමක්ද?"}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_2_1","scrambled":["नाम","क्या","है","आपका","?"],"correct":"आपका नाम क्या है?","nativeHint":"'ඔබගේ නම කුමක්ද?'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "හින්දි භාෂාවේදී, වයසින් වැඩි හෝ නාඳුනන අයට කතා කිරීමේදී 'आप' (ආප්) යන ගෞරවනීය සර්වනාමය භාවිතා කිරීම ඉතා වැදගත් වේ. මිතුරන් හෝ තමන්ට වඩා බාල අය සඳහා 'तुम' (තුම්) භාවිතා වේ.",
+      "pronunciation_tip": "'मैं' (මේ) යන වචනය උච්චාරණය කිරීමේදී, එය නාසයෙන් නැගෙන ශබ්දයක් ලෙස උච්චාරණය කරන්න. එය ඉංග්‍රීසි 'main' වචනයට සමාන නමුත් නාසික ශබ්දය වැඩියෙන් යෙදේ.",
+      "progress":{"xp":100,"streak_bonus":20,"badge":"W1D2-HindiIntro"}
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 3 වන දිනය: අංක සහ ගණන් කිරීම",
+      "title_native": "सप्ताह 1, दिन 3: संख्याएँ और गिनती",
+      "theme": "Numbers & Counting",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_3_1","target":"एक","phonetic":"ඒක්","native_meaning":"එක","english":"One","example_sentence_target":"मेरे पास एक किताब है।","example_sentence_native":"මා ළඟ එක පොතක් තියෙනවා.","example_sentence_phonetic":"මේරේ පාස් ඒක් කිතාබ් හේ."},
+        {"id":"w1_3_2","target":"दो","phonetic":"දෝ","native_meaning":"දෙක","english":"Two","example_sentence_target":"मुझे दो केले चाहिए।","example_sentence_native":"මට කෙසෙල් ගෙඩි දෙකක් ඕන.","example_sentence_phonetic":"මුජේ දෝ කේලේ චාහියේ."},
+        {"id":"w1_3_3","target":"तीन","phonetic":"තීන්","native_meaning":"තුන","english":"Three","example_sentence_target":"तीन बज रहे हैं।","example_sentence_native":"වෙලාව තුනයි.","example_sentence_phonetic":"තීන් බජ් රහේ හේ."},
+        {"id":"w1_3_4","target":"चार","phonetic":"චාර්","native_meaning":"හතර","english":"Four","example_sentence_target":"कमरे में चार कुर्सियाँ हैं।","example_sentence_native":"කාමරයේ පුටු හතරක් තියෙනවා.","example_sentence_phonetic":"කම්රේ මේ චාර් කුර්සියා හේ."},
+        {"id":"w1_3_5","target":"पाँच","phonetic":"පාන්ච්","native_meaning":"පහ","english":"Five","example_sentence_target":"एक हाथ में पाँच उंगलियाँ होती हैं।","example_sentence_native":"එක අතක ඇඟිලි පහක් තියෙනවා.","example_sentence_phonetic":"ඒක් හාත් మే පාන්ච් උන්ග්ලියා හෝතී හේ."},
+        {"id":"w1_3_6","target":"कितने","phonetic":"කිත්නේ","native_meaning":"කීයක්ද","english":"How many/much","example_sentence_target":"यह कितने का है?","example_sentence_native":"මේක කීයද?","example_sentence_phonetic":"යේ කිත්නේ කා හේ?"},
+        {"id":"w1_3_7","target":"रुपये","phonetic":"රුපයේ","native_meaning":"රුපියල්","english":"Rupees","example_sentence_target":"यह पचास रुपये का है।","example_sentence_native":"මේක රුපියල් පනහයි.","example_sentence_phonetic":"යේ පචාස් රුපයේ කා හේ."},
+        {"id":"w1_3_8","target":"शून्य","phonetic":"ශූන්‍ය","native_meaning":"බිංදුව","english":"Zero","example_sentence_target":"तापमान शून्य डिग्री है।","example_sentence_native":"උෂ්ණත්වය අංශක බිංදුවයි.","example_sentence_phonetic":"තාප්මාන් ශූන්‍ය ඩිග්‍රී හේ."}
+      ],
+      "sentences": [
+        {"id":"s1_3_1","target":"मेरे दो भाई हैं।","native":"මට සහෝදරයෝ දෙන්නෙක් ඉන්නවා.","phonetic":"මේරේ දෝ භායී හේ."},
+        {"id":"s1_3_2","target":"एक कप चाय, कृपया।","native":"තේ කෝප්පයක්, කරුණාකර.","phonetic":"ඒක් කප් චායි, කෘපයා."},
+        {"id":"s1_3_3","target":"ट्रेन तीन घंटे लेट है।","native":"දුම්රිය පැය තුනක් පරක්කුයි.","phonetic":"ට්‍රේන් තීන් ඝන්ටේ ලේට් හේ."},
+        {"id":"s1_3_4","target":"मेरे पास पाँच सौ रुपये हैं।","native":"මා ළඟ රුපියල් පන්සීයක් තියෙනවා.","phonetic":"මේරේ පාස් පාන්ච් සෞ රුපයේ හේ."},
+        {"id":"s1_3_5","target":"आपके कितने बच्चे हैं?","native":"ඔබට ළමයි කී දෙනෙක් ඉන්නවද?","phonetic":"ආප්කේ කිත්නේ බච්චේ හේ?"},
+        {"id":"s1_3_6","target":"यहाँ से बाज़ार कितनी दूर है?","native":"මෙතන ඉඳන් වෙළඳපොළට කොච්චර දුරද?","phonetic":"යහා සේ බාසාර් කිත්නී දූර් හේ?"},
+        {"id":"s1_3_7","target":"यह चार सौ रुपये का है।","native":"මේක රුපියල් හාරසීයයි.","phonetic":"යේ චාර් සෞ රුපයේ කා හේ."},
+        {"id":"s1_3_8","target":"एक से पाँच तक गिनो।","native":"එකේ ඉඳන් පහට ගණන් කරන්න.","phonetic":"ඒක් සේ පාන්ච් තක් ගිනෝ."}
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_3_1","context":"වෙළඳසැලක මිල ඇසීම.","lines":[
+            {"speaker":"A","target":"नमस्ते, यह कितने का है?","native":"ආයුබෝවන්, මේක කීයද?","phonetic":"නමස්තේ, යේ කිත්නේ කා හේ?"},
+            {"speaker":"B","target":"यह दो सौ रुपये का है।","native":"මේක රුපියල් දෙසීයයි.","phonetic":"යේ දෝ සෞ රුපයේ කා හේ."}
+        ]},
+        {"id":"d1_3_2","context":"යමක් ගණනක් ඉල්ලීම.","lines":[
+            {"speaker":"A","target":"मुझे तीन समोसे चाहिए।","native":"මට සමෝසා තුනක් ඕන.","phonetic":"මුජේ තීන් සමෝසේ චාහියේ."},
+            {"speaker":"B","target":"ठीक है, यह लीजिए।","native":"හරි, මෙන්න ගන්න.","phonetic":"ටීක් හේ, යේ ලීජියේ."}
+        ]},
+        {"id":"d1_3_3","context":"දුරකථන අංකය ඇසීම.","lines":[
+            {"speaker":"A","target":"आपका फ़ोन नंबर क्या है?","native":"ඔබගේ දුරකථන අංකය කුමක්ද?","phonetic":"ආප්කා ෆෝන් නම්බර් කියා හේ?"},
+            {"speaker":"B","target":"मेरा नंबर है नौ-आठ-सात-छह-पाँच...","native":"මගේ අංකය නවය-අට-හත-හය-පහ...","phonetic":"මේරා නම්බර් හේ නෞ-ආට්-සත්-චේ-පාන්ච්..."}
+        ]},
+        {"id":"d1_3_4","context":"වයස ඇසීම.","lines":[
+            {"speaker":"A","target":"आपकी उम्र कितनी है?","native":"ඔබේ වයස කීයද?","phonetic":"ආප්කී උම්ර් කිත්නී හේ?"},
+            {"speaker":"B","target":"मैं पच्चीस साल का हूँ।","native":"මට වයස විසි පහයි.","phonetic":"මේ පච්චීස් සාල් කා හූ."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_3_1","sentence":"मेरे पास ___ सेब हैं।","answer":"दो","hint":"'දෙක' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_3_1","question":"'Five' යන්න හින්දි භාෂාවෙන් කුමක්ද?","options":["तीन","चार","पाँच","एक"],"correct":2,"explanation":"'पाँच' (පාන්ච්) යනු 'Five' සඳහා නිවැරදි හින්දි වචනයයි."}
+        ],
+        "matching": [
+            {"id":"mp1_3_1","target":"एक","native":"1"},
+            {"id":"mp1_3_2","target":"तीन","native":"3"},
+            {"id":"mp1_3_3","target":"पाँच","native":"5"},
+            {"id":"mp1_3_4","target":"दो","native":"2"}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_3_1","scrambled":["है","का","यह","कितने","?"],"correct":"यह कितने का है?","nativeHint":"'මේක කීයද?'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "හින්දි භාෂාවේ සංඛ්‍යා සඳහා নিজস্ব වචන ඇත. විශාල සංඛ්‍යා (ලක්ෂ, කෝටි) සඳහා ද විශේෂ වචන භාවිතා වන අතර, ඒවා බටහිර ක්‍රමයට වඩා වෙනස් ය.",
+      "pronunciation_tip": "'पाँच' (පාන්ච්) වැනි වචනවල ඇති චන්ද්‍රබින්දුව (ँ) නාසික ශබ්දයක් දක්වයි. 'පා' ශබ්දය උච්චාරණය කරන අතරතුර නාසයෙන් වාතය පිට කිරීමට උත්සාහ කරන්න.",
+      "progress":{"xp":100,"streak_bonus":20,"badge":"W1D3-HindiNumbers"}
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 4 වන දිනය: මූලික ප්‍රශ්න",
+      "title_native": "सप्ताह 1, दिन 4: मूल प्रश्न",
+      "theme": "Basic Questions",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_4_1","target":"कहाँ","phonetic":"කහා","native_meaning":"කොහෙද","english":"Where","example_sentence_target":"आप कहाँ रहते हैं?","example_sentence_native":"ඔබ ජීවත් වෙන්නේ කොහෙද?","example_sentence_phonetic":"ආප් කහා රෙහ්තේ හේ?"},
+        {"id":"w1_4_2","target":"कब","phonetic":"කබ්","native_meaning":"කවදාද","english":"When","example_sentence_target":"ट्रेन कब आएगी?","example_sentence_native":"දුම්රිය එන්නේ කවදාද?","example_sentence_phonetic":"ට්‍රේන් කබ් ආයේගී?"},
+        {"id":"w1_4_3","target":"क्यों","phonetic":"කියෝ","native_meaning":"ඇයි","english":"Why","example_sentence_target":"आप क्यों हँस रहे हैं?","example_sentence_native":"ඔබ හිනාවෙන්නේ ඇයි?","example_sentence_phonetic":"ආප් කියෝ හස් රහේ හේ?"},
+        {"id":"w1_4_4","target":"कैसे","phonetic":"කේසේ","native_meaning":"කොහොමද","english":"How","example_sentence_target":"आप कैसे हैं?","example_sentence_native":"ඔබට කොහොමද?","example_sentence_phonetic":"ආප් කේසේ හේ?"},
+        {"id":"w1_4_5","target":"कौन","phonetic":"කෝන්","native_meaning":"කවුද","english":"Who","example_sentence_target":"वह कौन है?","example_sentence_native":"එයා කවුද?","example_sentence_phonetic":"වෝ කෝන් හේ?"},
+        {"id":"w1_4_6","target":"किसका","phonetic":"කිස්කා","native_meaning":"කාගෙද","english":"Whose","example_sentence_target":"यह किसका बैग है?","example_sentence_native":"මේක කාගෙ බෑග් එකද?","example_sentence_phonetic":"යේ කිස්කා බෑග් හේ?"},
+        {"id":"w1_4_7","target":"यह","phonetic":"යේ","native_meaning":"මේක/මෙයා","english":"This/He/She/It","example_sentence_target":"यह मेरी किताब है।","example_sentence_native":"මේක මගේ පොත.","example_sentence_phonetic":"යේ මේරි කිතාබ් හේ."},
+        {"id":"w1_4_8","target":"वह","phonetic":"වෝ","native_meaning":"ඒක/එයා","english":"That/He/She/It","example_sentence_target":"वह मेरा घर है।","example_sentence_native":"අර මගේ ගෙදර.","example_sentence_phonetic":"වෝ මේරා ඝර් හේ."}
+      ],
+      "sentences": [
+        {"id":"s1_4_1","target":"आपका घर कहाँ है?","native":"ඔබේ ගෙදර කොහෙද?","phonetic":"ආප්කා ඝර් කහා හේ?"},
+        {"id":"s1_4_2","target":"आपकी अगली छुट्टी कब है?","native":"ඔබේ ඊළඟ නිවාඩුව කවදාද?","phonetic":"ආප්කී අග්ලී චුට්ටී කබ් හේ?"},
+        {"id":"s1_4_3","target":"आप आज क्यों खुश हैं?","native":"ඔබ අද සතුටින් ඉන්නේ ඇයි?","phonetic":"ආප් ආජ් කියෝ ඛුෂ් හේ?"},
+        {"id":"s1_4_4","target":"मैं आपकी कैसे मदद कर सकता हूँ?","native":"මට ඔබට උදව් කරන්න පුළුවන් කොහොමද?","phonetic":"මේ ආප්කී කේසේ मदद कर sakta हूँ?"},
+        {"id":"s1_4_5","target":"आपके पसंदीदा गायक कौन हैं?","native":"ඔබේ කැමතිම ගායකයා කවුද?","phonetic":"ආප්කේ පසන්දීදා ගායක් කෝන් හේ?"},
+        {"id":"s1_4_6","target":"यह कलम किसका है?","native":"මේ පෑන කාගෙද?","phonetic":"යේ කලම් කිස්කා හේ?"},
+        {"id":"s1_4_7","target":"यह एक सुंदर फूल है।","native":"මේක ලස්සන මලක්.","phonetic":"යේ ඒක් සුන්දර් ෆූල් හේ."},
+        {"id":"s1_4_8","target":"वह लड़का कौन है?","native":"අර පිරිමි ළමයා කවුද?","phonetic":"වෝ ලੜ්කා කෝන් හේ?"}
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_4_1","context":"ස්ථානයක් ගැන ඇසීම.","lines":[
+            {"speaker":"A","target":"माफ़ कीजिए, बस स्टॉप कहाँ है?","native":"සමාවන්න, බස් නැවතුම කොහෙද?","phonetic":"මාෆ් කීජියේ, බස් ස්ටොප් කහා හේ?"},
+            {"speaker":"B","target":"वह सड़क के उस पार है।","native":"එය පාරෙන් එහා පැත්තේ.","phonetic":"වෝ සඩක් කේ උස් පාර් හේ."}
+        ]},
+        {"id":"d1_4_2","context":"කාලය ගැන ඇසීම.","lines":[
+            {"speaker":"A","target":"दुकान कब खुलती है?","native":"කඩේ අරින්නේ කවදාද (කීයටද)?","phonetic":"දුකාන් කබ් ඛුල්තී හේ?"},
+            {"speaker":"B","target":"सुबह नौ बजे।","native":"උදේ නවයට.","phonetic":"සුබා නෞ බජේ."}
+        ]},
+        {"id":"d1_4_3","context":"පුද්ගලයෙකු හඳුනා ගැනීම.","lines":[
+            {"speaker":"A","target":"आपके साथ वह कौन है?","native":"ඔබත් එක්ක ඉන්නේ කවුද?","phonetic":"ආප්කේ සාත් වෝ කෝන් හේ?"},
+            {"speaker":"B","target":"यह मेरा भाई है।","native":"මේ මගේ සහෝදරයා.","phonetic":"යේ මේරා භායී හේ."}
+        ]},
+        {"id":"d1_4_4","context":"හේතුවක් ඇසීම.","lines":[
+            {"speaker":"A","target":"आप आज काम पर क्यों नहीं गए?","native":"ඔබ අද වැඩට ගියේ නැත්තේ ඇයි?","phonetic":"ආප් ආජ් කාම් පර් කියෝ නහී ගයේ?"},
+            {"speaker":"B","target":"क्योंकि मैं बीमार हूँ।","native":"මොකද මම අසනීපෙන්.","phonetic":"කියෝකි මේ බීමාර් හූ."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_4_1","sentence":"आप ___ हैं?","answer":"कैसे","hint":"'කොහොමද' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_4_1","question":"'Where' යන්න හින්දි භාෂාවෙන් කුමක්ද?","options":["कब","क्यों","कहाँ","कौन"],"correct":2,"explanation":"'कहाँ' (කහා) යනු 'Where' සඳහා නිවැරදි හින්දි වචනයයි."}
+        ],
+        "matching": [
+            {"id":"mp1_4_1","target":"कहाँ?","native":"කොහෙද?"},
+            {"id":"mp1_4_2","target":"कब?","native":"කවදාද?"},
+            {"id":"mp1_4_3","target":"क्यों?","native":"ඇයි?"},
+            {"id":"mp1_4_4","target":"कौन?","native":"කවුද?"}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_4_1","scrambled":["है","कौन","वह","?"],"correct":"वह कौन है?","nativeHint":"'එයා කවුද?'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "හින්දි භාෂාවෙන් ප්‍රශ්නාර්ථ වචන (कहाँ, कब, क्यों) සාමාන්‍යයෙන් වාක්‍යයේ ක්‍රියා පදයට පෙර යෙදේ. ඉංග්‍රීසි මෙන් වාක්‍යයේ ආරම්භයේම යෙදීම අනිවාර්ය නොවේ.",
+      "pronunciation_tip": "'क्यों' (කියෝ) හි 'क्यों' ශබ්දය 'ක්' සහ 'යෝ' එකට සම්බන්ධ කර වේගයෙන් උච්චාරණය කිරීමෙන් සෑදේ. එය 'ක-යෝ' ලෙස වෙන් කර උච්චාරණය නොකරන්න.",
+      "progress":{"xp":100,"streak_bonus":20,"badge":"W1D4-HindiQuestions"}
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 5 වන දිනය: ආහාර සහ බීම",
+      "title_native": "सप्ताह 1, दिन 5: खाना और पीना",
+      "theme": "Food & Drink",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_5_1","target":"खाना","phonetic":"ඛානා","native_meaning":"කෑම/කනවා","english":"Food/To eat","example_sentence_target":"मुझे खाना खाना है।","example_sentence_native":"මට කෑම කන්න ඕන.","example_sentence_phonetic":"මුජේ ඛානා ඛානා හේ."},
+        {"id":"w1_5_2","target":"पानी","phonetic":"පානී","native_meaning":"වතුර","english":"Water","example_sentence_target":"क्या मुझे पानी मिल सकता है?","example_sentence_native":"මට වතුර ටිකක් ගන්න පුළුවන්ද?","example_sentence_phonetic":"කියා මුජේ පානී මිල් සක්තා හේ?"},
+        {"id":"w1_5_3","target":"चाय","phonetic":"චායි","native_meaning":"තේ","english":"Tea","example_sentence_target":"मैं चाय पीना पसंद करता हूँ।","example_sentence_native":"මම තේ බොන්න කැමතියි.","example_sentence_phonetic":"මේ චායි පීනා පසන්ද් කර්තා හූ."},
+        {"id":"w1_5_4","target":"चावल","phonetic":"චාවල්","native_meaning":"බත්/හාල්","english":"Rice","example_sentence_target":"भारत में लोग चावल खाते हैं।","example_sentence_native":"ඉන්දියාවේ මිනිස්සු බත් කනවා.","example_sentence_phonetic":"භාරත් మే ලෝగ్ චාවල් ඛාතේ හේ."},
+        {"id":"w1_5_5","target":"रोटी","phonetic":"රෝටී","native_meaning":"රොටි","english":"Roti/Bread","example_sentence_target":"मुझे दाल के साथ रोटी पसंद है।","example_sentence_native":"මම පරිප්පු එක්ක රොටි කන්න කැමතියි.","example_sentence_phonetic":"මුජේ දාල් කේ සාත් රෝටී පසන්ද් හේ."},
+        {"id":"w1_5_6","target":"सब्ज़ी","phonetic":"සබ්සී","native_meaning":"එළවළු","english":"Vegetable","example_sentence_target":"आज सब्ज़ी में क्या है?","example_sentence_native":"අද එළවළු වලට මොනවද තියෙන්නේ?","example_sentence_phonetic":"ආජ් සබ්සී మే క్యా හේ?"},
+        {"id":"w1_5_7","target":"फल","phonetic":"ෆල්","native_meaning":"පළතුරු","english":"Fruit","example_sentence_target":"सेब एक स्वादिष्ट फल है।","example_sentence_native":"ඇපල් රසවත් පළතුරක්.","example_sentence_phonetic":"සේබ් ඒක් ස්වාදිෂ්ට් ෆල් හේ."},
+        {"id":"w1_5_8","target":"भूख","phonetic":"භූක්","native_meaning":"බඩගිනි","english":"Hunger","example_sentence_target":"मुझे बहुत भूख लगी है।","example_sentence_native":"මට හොඳටම බඩගිනියි.","example_sentence_phonetic":"මුජේ බහුත් භූක් ලගී හේ."}
+      ],
+      "sentences": [
+        {"id":"s1_5_1","target":"क्या आप कुछ खाना चाहेंगे?","native":"ඔබ යමක් කන්න කැමතිද?","phonetic":"කියා ආප් කුච් ඛානා චාහෙන්ගේ?"},
+        {"id":"s1_5_2","target":"कृपया मुझे एक गिलास पानी दीजिए।","native":"කරුණාකර මට වතුර වීදුරුවක් දෙන්න.","phonetic":"කෘපයා මුජේ ඒක් ගිලාස් පානී දීජියේ."},
+        {"id":"s1_5_3","target":"यह खाना बहुत स्वादिष्ट है।","native":"මේ කෑම හරිම රසයි.","phonetic":"යේ ඛානා බහුත් ස්වාදිෂ්ට් හේ."},
+        {"id":"s1_5_4","target":"मुझे प्यास लगी है।","native":"මට තිබහයි.","phonetic":"මුජේ පියාස් ලගී හේ."},
+        {"id":"s1_5_5","target":"आप नाश्ते में क्या खाते हैं?","native":"ඔබ උදේ කෑමට මොනවද කන්නේ?","phonetic":"ආප් නාෂ්තේ මේ క్యా ඛාතේ හේ?"},
+        {"id":"s1_5_6","target":"मैं शाकाहारी हूँ।","native":"මම නිර්මාංශිකයෙක්.","phonetic":"මේ ශාකාහාරී හූ."},
+        {"id":"s1_5_7","target":"क्या यह तीखा है?","native":"මේක සැරද?","phonetic":"කියා යේ තීඛා හේ?"},
+        {"id":"s1_5_8","target":"खाने के लिए धन्यवाद।","native":"කෑමට ස්තූතියි.","phonetic":"ඛානේ කේ ලියේ ධන්‍යවාද්."}
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_5_1","context":"ආපන ශාලාවක ඇණවුම් කිරීම.","lines":[
+            {"speaker":"A","target":"नमस्ते, आप क्या लेंगे?","native":"ආයුබෝවන්, ඔබ මොනවද ගන්නේ?","phonetic":"නමස්තේ, ආප් క్యా ලෙන්ගේ?"},
+            {"speaker":"B","target":"मैं एक प्लेट चावल और दाल लूँगा।","native":"මම බත් සහ පරිප්පු ප්ලේට් එකක් ගන්නම්.","phonetic":"මේ ඒක් ප්ලේට් චාවල් ඕර් දාල් ලූංගා."}
+        ]},
+        {"id":"d1_5_2","context":"වතුර ඉල්ලීම.","lines":[
+            {"speaker":"A","target":"माफ़ कीजिए, क्या मुझे थोड़ा पानी मिल सकता है?","native":"සමාවන්න, මට වතුර ටිකක් ගන්න පුළුවන්ද?","phonetic":"මාෆ් කීජියේ, క్యా මුජේ තෝඩා පානී මිල් සක්තා හේ?"},
+            {"speaker":"B","target":"हाँ, ज़रूर। यह लीजिए।","native":"ඔව්, අනිවාර්යයෙන්ම. මෙන්න ගන්න.","phonetic":"හා, සරූර්. යේ ලීජියේ."}
+        ]},
+        {"id":"d1_5_3","context":"කෑමක් ගැන අදහස් දැක්වීම.","lines":[
+            {"speaker":"A","target":"यह सब्ज़ी बहुत अच्छी है।","native":"මේ එළවළුව හරිම හොඳයි.","phonetic":"යේ සබ්සී බහුත් අච්චී හේ."},
+            {"speaker":"B","target":"धन्यवाद। खुशी हुई कि आपको पसंद आया।","native":"ස්තූතියි. ඔබ කැමති වීම ගැන සතුටුයි.","phonetic":"ධන්‍යවාද්. ඛුශී හුයී කි ආප්කෝ පසන්ද් ආයා."}
+        ]},
+        {"id":"d1_5_4","context":"බඩගිනි බව ප්‍රකාශ කිරීම.","lines":[
+            {"speaker":"A","target":"मुझे बहुत भूख लगी है। चलो कुछ खाते हैं।","native":"මට හොඳටම බඩගිනියි. අපි මොනවා හරි කමු.","phonetic":"මුජේ බහුත් භූක් ලගී හේ. චලෝ කුච් ඛාතේ හේ."},
+            {"speaker":"B","target":"हाँ, चलो। पास में एक अच्छा रेस्टोरेंट है।","native":"ඔව්, යමු. ළඟ හොඳ ආපන ශාලාවක් තියෙනවා.","phonetic":"හා, චලෝ. පාස් మే ඒක් අච්චා රෙස්ටෝරන්ට් හේ."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_5_1","sentence":"मुझे एक कप ___ चाहिए।","answer":"चाय","hint":"'තේ' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_5_1","question":"'Water' යන්න හින්දි භාෂාවෙන් කුමක්ද?","options":["खाना","पानी","चाय","फल"],"correct":1,"explanation":"'पानी' (පානී) යනු 'Water' සඳහා නිවැරදි හින්දි වචනයයි."}
+        ],
+        "matching": [
+            {"id":"mp1_5_1","target":"खाना","native":"කෑම"},
+            {"id":"mp1_5_2","target":"पानी","native":"වතුර"},
+            {"id":"mp1_5_3","target":"फल","native":"පළතුරු"},
+            {"id":"mp1_5_4","target":"भूख","native":"බඩගිනි"}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_5_1","scrambled":["स्वादिष्ट","बहुत","है","यह","खाना"],"correct":"यह खाना बहुत स्वादिष्ट है।","nativeHint":"'මේ කෑම හරිම රසයි'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "ඉන්දියාවේ බොහෝ ප්‍රදේශ වල, විශේෂයෙන්ම උතුරු ඉන්දියාවේ 'රෝටී' හෝ 'චපාති' ප්‍රධාන ආහාරය වන අතර එය විවිධ වර්ගයේ කරී (සබ්සි) සහ දාල් (පරිප්පු) සමඟ අනුභව කරයි. දකුණේ බත් බහුලව භාවිතා වේ.",
+      "pronunciation_tip": "'भूख' (භූක්) හි 'ख' (ඛ) ශබ්දය උගුරෙන් එන ශක්තිමත් 'හ' ශබ්දයක් සමඟ 'ක' ශබ්දය මුසුවී සෑදේ. එය සිංහල 'ඛ' අකුරට සමානයි.",
+      "progress":{"xp":100,"streak_bonus":20,"badge":"W1D5-HindiFood"}
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 6 වන දිනය: දිශාවන් සහ ස්ථාන",
+      "title_native": "सप्ताह 1, दिन 6: दिशाएँ और स्थान",
+      "theme": "Directions & Places",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_6_1","target":"यहाँ","phonetic":"යහා","native_meaning":"මෙහෙ","english":"Here","example_sentence_target":"मैं यहाँ हूँ।","example_sentence_native":"මම මෙහෙ ඉන්නෙ.","example_sentence_phonetic":"මේ යහා හූ."},
+        {"id":"w1_6_2","target":"वहाँ","phonetic":"වහා","native_meaning":"එහෙ","english":"There","example_sentence_target":"दुकान वहाँ है।","example_sentence_native":"කඩේ තියෙන්නෙ එහෙ.","example_sentence_phonetic":"දුකාන් වහා හේ."},
+        {"id":"w1_6_3","target":"दाएँ","phonetic":"දායේ","native_meaning":"දකුණ","english":"Right (direction)","example_sentence_target":"दाएँ मुड़ें।","example_sentence_native":"දකුණට හැරෙන්න.","example_sentence_phonetic":"දායේ මුඩේ."},
+        {"id":"w1_6_4","target":"बाएँ","phonetic":"බායේ","native_meaning":"වම","english":"Left (direction)","example_sentence_target":"बाएँ चलिए।","example_sentence_native":"වමට යන්න.","example_sentence_phonetic":"බායේ චලියේ."},
+        {"id":"w1_6_5","target":"सीधा","phonetic":"සීධා","native_meaning":"කෙලින්","english":"Straight","example_sentence_target":"सीधा चलते रहो।","example_sentence_native":"කෙලින්ම යන්න.","example_sentence_phonetic":"සීධා චල්තේ රහෝ."},
+        {"id":"w1_6_6","target":"घर","phonetic":"ඝර්","native_meaning":"ගෙදර","english":"Home/House","example_sentence_target":"मेरा घर पास में है।","example_sentence_native":"මගේ ගෙදර ළඟ තියෙන්නෙ.","example_sentence_phonetic":"මේරා ඝර් පාස් මේ හේ."},
+        {"id":"w1_6_7","target":"बाज़ार","phonetic":"බාසාර්","native_meaning":"වෙළඳපොළ","english":"Market","example_sentence_target":"मैं बाज़ार जा रहा हूँ।","example_sentence_native":"මම වෙළඳපොළට යනවා.","example_sentence_phonetic":"මේ බාසාර් ජා රහා හූ."},
+        {"id":"w1_6_8","target":"अस्पताल","phonetic":"අස්පතාල්","native_meaning":"රෝහල","english":"Hospital","example_sentence_target":"अस्पताल कहाँ है?","example_sentence_native":"රෝහල කොහෙද?","example_sentence_phonetic":"අස්පතාල් කහා හේ?"}
+      ],
+      "sentences": [
+        {"id":"s1_6_1","target":"मेरा स्कूल यहाँ से दूर है।","native":"මගේ ඉස්කෝලෙ මෙහේ ඉඳන් දුරයි.","phonetic":"මේරා ස්කූල් යහා සේ දූර් හේ."},
+        {"id":"s1_6_2","target":"गाड़ी वहाँ खड़ी करो।","native":"වාහනය එතන නවත්වන්න.","phonetic":"ගාඩී වහා ඛඩී කරෝ."},
+        {"id":"s1_6_3","target":"अगली गली से दाएँ मुड़ना।","native":"ඊළඟ පාරෙන් දකුණට හැරෙන්න.","phonetic":"අග්ලී ගලී සේ දායේ මුඩනා."},
+        {"id":"s1_6_4","target":"स्टेशन यहाँ से बाएँ है।","native":"ස්ටේෂන් එක මෙහෙන් වමට.","phonetic":"ස්ටේෂන් යහා සේ බායේ හේ."},
+        {"id":"s1_6_5","target":"आप सीधे जाकर फिर बाएँ मुड़ें।","native":"ඔබ කෙලින් ගිහින් පස්සෙ වමට හැරෙන්න.","phonetic":"ආප් සීධේ ජාකර් ෆිර් බායේ මුඩේ."},
+        {"id":"s1_6_6","target":"मैं घर वापस जा रहा हूँ।","native":"මම ගෙදර ආපහු යනවා.","phonetic":"මේ ඝර් වාපස් ජා රහා හූ."},
+        {"id":"s1_6_7","target":"सब्ज़ी खरीदने के लिए बाज़ार चलो।","native":"එළවළු ගන්න වෙළඳපොළට යමු.","phonetic":"සබ්සී ඛරීදනේ කේ ලියේ බාසාර් චලෝ."},
+        {"id":"s1_6_8","target":"नज़दीकी अस्पताल कहाँ है?","native":"ළඟම තියෙන රෝහල කොහෙද?","phonetic":"නස්දීකී අස්පතාල් කහා හේ?"}
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_6_1","context":"පාර අසමින්.","lines":[
+            {"speaker":"A","target":"माफ़ कीजिए, रेलवे स्टेशन कहाँ है?","native":"සමාවන්න, දුම්රිය ස්ථානය කොහෙද?","phonetic":"මාෆ් කීජියේ, රේල්වේ ස්ටේෂන් කහා හේ?"},
+            {"speaker":"B","target":"आप सीधा जाइए, फिर दाएँ मुड़िए।","native":"ඔබ කෙලින් යන්න, ඊට පස්සෙ දකුණට හැරෙන්න.","phonetic":"ආප් සීධා ජායියේ, ෆිර් දායේ මුඩියේ."}
+        ]},
+        {"id":"d1_6_2","context":"තම නිවස ගැන කතා කිරීම.","lines":[
+            {"speaker":"A","target":"क्या आपका घर यहाँ से दूर है?","native":"ඔබේ ගෙදර මෙහේ ඉඳන් දුරද?","phonetic":"කියා ආප්කා ඝර් යහා සේ දූර් හේ?"},
+            {"speaker":"B","target":"नहीं, मेरा घर पास में ही है।","native":"නැහැ, මගේ ගෙදර ළඟමයි තියෙන්නෙ.","phonetic":"නහී, මේරා ඝර් පාස් మే හී හේ."}
+        ]},
+        {"id":"d1_6_3","context":"යමෙකුගේ ස්ථානය ඇසීම.","lines":[
+            {"speaker":"A","target":"आप अभी कहाँ हैं?","native":"ඔබ දැන් කොහෙද ඉන්නෙ?","phonetic":"ආප් අභී කහා හේ?"},
+            {"speaker":"B","target":"मैं अभी बाज़ार में हूँ।","native":"මම දැන් වෙළඳපොළේ ඉන්නෙ.","phonetic":"මේ අභී බාසාර් మే හූ."}
+        ]},
+        {"id":"d1_6_4","context":"හදිසි අවස්ථාවකදී රෝහල සෙවීම.","lines":[
+            {"speaker":"A","target":"जल्दी, हमें अस्पताल जाना है!","native":"ඉක්මනට, අපිට රෝහලට යන්න ඕන!","phonetic":"ජල්දී, හමේ අස්පතාල් ජානා හේ!"},
+            {"speaker":"B","target":"ठीक है, मैं गाड़ी निकालता हूँ।","native":"හරි, මම වාහනය ගන්නම්.","phonetic":"ටීක් හේ, මේ ගාඩී නිකාල්තා හූ."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_6_1","sentence":"कृपया ___ मुड़ें।","answer":"दाएँ","hint":"'දකුණ' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_6_1","question":"'Home' යන්න හින්දි භාෂාවෙන් කුමක්ද?","options":["बाज़ार","अस्पताल","घर","दुकान"],"correct":2,"explanation":"'घर' (ඝර්) යනු 'Home' සඳහා නිවැරදි හින්දි වචනයයි."}
+        ],
+        "matching": [
+            {"id":"mp1_6_1","target":"यहाँ","native":"මෙහෙ"},
+            {"id":"mp1_6_2","target":"वहाँ","native":"එහෙ"},
+            {"id":"mp1_6_3","target":"सीधा","native":"කෙලින්"},
+            {"id":"mp1_6_4","target":"बाएँ","native":"වම"}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_6_1","scrambled":["है","कहाँ","अस्पताल","?"],"correct":"अस्पताल कहाँ है?","nativeHint":"'රෝහල කොහෙද?'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "ඉන්දියාවේ ලිපිනයන් බොහෝ විට සංකීර්ණ විය හැකිය. ප්‍රධාන මාර්ග සහ ප්‍රසිද්ධ ස්ථාන (landmarks) මත පදනම්ව දිශාවන් ලබා දීම සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "'घर' (ඝර්) හි 'घ' (ඝ) ශබ්දය උගුරේ ගැඹුරින් එන 'ග' ශබ්දයකි. එය 'ග' සහ 'හ' ශබ්ද වල මිශ්‍රණයකි. සිංහල 'ඝ' අකුරේ ශබ්දයට සමානයි.",
+      "progress":{"xp":100,"streak_bonus":20,"badge":"W1D6-HindiDirections"}
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 7 වන දිනය: සතිපතා පුනරීක්ෂණය",
+      "title_native": "सप्ताह 1, दिन 7: साप्ताहिक समीक्षा",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        {"id":"w1_7_1","target":"नमस्ते","phonetic":"නමස්තේ","native_meaning":"ආයුබෝවන්","english":"Hello/Greetings","example_sentence_target":"नमस्ते, आप कैसे हैं?","example_sentence_native":"ආයුබෝවන්, ඔබට කොහොමද?","example_sentence_phonetic":"නමස්තේ, ආප් කේසේ හේ?"},
+        {"id":"w1_7_2","target":"धन्यवाद","phonetic":"ධන්‍යවාද්","native_meaning":"ස්තූතියි","english":"Thank you","example_sentence_target":"आपकी मदद के लिए धन्यवाद।","example_sentence_native":"ඔබගේ උදව්වට ස්තූතියි.","example_sentence_phonetic":"ආප්කී मदद के लिए धन्यवाद।"},
+        {"id":"w1_7_3","target":"मेरा नाम","phonetic":"මේරා නාම්","native_meaning":"මගේ නම","english":"My name","example_sentence_target":"मेरा नाम संजय है।","example_sentence_native":"මගේ නම සංජේ.","example_sentence_phonetic":"මේරා නාම් සංජේ හේ."},
+        {"id":"w1_7_4","target":"कितने","phonetic":"කිත්නේ","native_meaning":"කීයක්ද","english":"How many/much","example_sentence_target":"यह कितने का है?","example_sentence_native":"මේක කීයද?","example_sentence_phonetic":"යේ කිත්නේ කා හේ?"},
+        {"id":"w1_7_5","target":"पानी","phonetic":"පානී","native_meaning":"වතුර","english":"Water","example_sentence_target":"क्या मुझे पानी मिल सकता है?","example_sentence_native":"මට වතුර ටිකක් ගන්න පුළුවන්ද?","example_sentence_phonetic":"කියා මුජේ පානී මිල් සක්තා හේ?"},
+        {"id":"w1_7_6","target":"कहाँ","phonetic":"කහා","native_meaning":"කොහෙද","english":"Where","example_sentence_target":"आप कहाँ रहते हैं?","example_sentence_native":"ඔබ ජීවත් වෙන්නේ කොහෙද?","example_sentence_phonetic":"ආප් කහා රෙහ්තේ හේ?"},
+        {"id":"w1_7_7","target":"सीधा","phonetic":"සීධා","native_meaning":"කෙලින්","english":"Straight","example_sentence_target":"सीधा चलते रहो।","example_sentence_native":"කෙලින්ම යන්න.","example_sentence_phonetic":"සීධා චල්තේ රහෝ."},
+        {"id":"w1_7_8","target":"ठीक है","phonetic":"ටීක් හේ","native_meaning":"හරි / හොඳයි","english":"Okay / Alright","example_sentence_target":"हम कल मिलेंगे। ठीक है।","example_sentence_native":"අපි හෙට හමුවෙමු. හරි.","example_sentence_phonetic":"හම් කල් මිලෙන්ගේ. ටීක් හේ."}
+      ],
+      "sentences": [
+        {"id":"s1_7_1","target":"नमस्ते, मेरा नाम गीता है और मैं श्रीलंका से हूँ।","native":"ආයුබෝවන්, මගේ නම ගීතා සහ මම ශ්‍රී ලංකාවෙන්.","phonetic":"නමස්තේ, මේරා නාම් ගීතා හේ ඕර් මේ ශ්‍රී ලංකා සේ හූ."},
+        {"id":"s1_7_2","target":"माफ़ कीजिए, एक पानी की बोतल कितने की है?","native":"සමාවන්න, වතුර බෝතලයක් කීයද?","phonetic":"මාෆ් කීජියේ, ඒක් පානී කී බෝතල් කිත්නේ කී හේ?"},
+        {"id":"s1_7_3","target":"क्या आप मुझे बता सकते हैं कि अस्पताल कहाँ है?","native":"ඔබට මට කියන්න පුළුවන්ද රෝහල තියෙන්නේ කොහෙද කියලා?","phonetic":"කියා ආප් මුජේ බතා සක්තේ හේ කි අස්පතාල් කහා හේ?"},
+        {"id":"s1_7_4","target":"हाँ, आप सीधे जाकर दाएँ मुड़ें।","native":"ඔව්, ඔබ කෙලින් ගිහින් දකුණට හැරෙන්න.","phonetic":"හා, ආප් සීධේ ජාකර් දායේ මුඩේ."},
+        {"id":"s1_7_5","target":"आपके खाने के लिए बहुत बहुत धन्यवाद।","native":"ඔබගේ කෑමට බොහොම ස්තූතියි.","phonetic":"ආප්කේ ඛානේ කේ ලියේ බහුත් බහුත් ධන්‍යවාද්."},
+        {"id":"s1_7_6","target":"मैं दो रोटी और एक चाय लूँगा।","native":"මම රොටි දෙකකුයි තේ එකකුයි ගන්නම්.","phonetic":"මේ දෝ රෝටී ඕර් ඒක් චායි ලූංගා."},
+        {"id":"s1_7_7","target":"यह किसका घर है? यह मेरा घर है।","native":"මේක කාගෙ ගෙදරද? මේක මගේ ගෙදර.","phonetic":"යේ කිස්කා ඝර් හේ? යේ මේරා ඝර් හේ."},
+        {"id":"s1_7_8","target":"ठीक है, मैं समझ गया।","native":"හරි, මට තේරුණා.","phonetic":"ටීක් හේ, මේ සමඟ ගයා."}
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "ස්තූතියි!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "कृपया माफ करें"
-            }
-          ]
-        }
+        {"id":"d1_7_1","context":"වෙළඳපොලේදී සාමාන්‍ය සංවාදයක්.","lines":[
+            {"speaker":"A","target":"नमस्ते। यह सेब कितने के हैं?","native":"ආයුබෝවන්. මේ ඇපල් කීයද?","phonetic":"නමස්තේ. යේ සේබ් කිත්නේ කේ හේ?"},
+            {"speaker":"B","target":"नमस्ते। सौ रुपये किलो। आपको कितने चाहिए?","native":"ආයුබෝවන්. කිලෝවක් රුපියල් සීයයි. ඔබට කීයක් ඕනෙද?","phonetic":"නමස්තේ. සෞ රුපයේ කිලෝ. ආප්කෝ කිත්නේ චාහියේ?"},
+            {"speaker":"A","target":"ठीक है, मुझे एक किलो दीजिए। धन्यवाद।","native":"හරි, මට කිලෝ එකක් දෙන්න. ස්තූතියි.","phonetic":"ටීක් හේ, මුජේ ඒක් කිලෝ දීජියේ. ධන්‍යවාද්."}
+        ]},
+        {"id":"d1_7_2","context":"පාර අසමින් සහ උපදෙස් දීම.","lines":[
+            {"speaker":"A","target":"माफ़ कीजिए, मैं खो गया हूँ। बस स्टॉप कहाँ है?","native":"සමාවන්න, මට පාර වැරදුනා. බස් නැවතුම කොහෙද?","phonetic":"මාෆ් කීජියේ, මේ ඛෝ ගයා හූ. බස් ස්ටොප් කහා හේ?"},
+            {"speaker":"B","target":"कोई बात नहीं। आप सीधा जाइए और फिर बाएँ मुड़िए। बस स्टॉप वहीं है।","native":"කමක් නෑ. ඔබ කෙලින් ගිහින් පස්සෙ වමට හැරෙන්න. බස් නැවතුම එතන තියෙන්නෙ.","phonetic":"කෝයි බාත් නහී. ආප් සීධා ජායියේ ඕර් ෆිර් බායේ මුඩියේ. බස් ස්ටොප් වහී හේ."}
+        ]},
+        {"id":"d1_7_3","context":"ආපන ශාලාවකදී.","lines":[
+            {"speaker":"A","target":"आप क्या पीना चाहेंगे? चाय या कॉफ़ी?","native":"ඔබ මොනවද බොන්න කැමති? තේද කෝපිද?","phonetic":"ආප් ਕਿਆ ਪੀਨਾ ਚਾਹੇਂਗੇ? ਚਾਏ ਯਾ ਕਾਫੀ?"},
+            {"speaker":"B","target":"मैं एक कप चाय लूँगा, कृपया।","native":"මම තේ කෝප්පයක් ගන්නම්, කරුණාකර.","phonetic":"මේ ඒක් කප් චායි ලූංගා, කෘපයා."},
+            {"speaker":"A","target":"ठीक है।","native":"හරි.","phonetic":"ටීක් හේ."}
+        ]},
+        {"id":"d1_7_4","context":"තමන් ගැන තොරතුරු හුවමාරු කර ගැනීම.","lines":[
+            {"speaker":"A","target":"आपका नाम क्या है और आप कहाँ से हैं?","native":"ඔබගේ නම කුමක්ද සහ ඔබ කොහෙන්ද?","phonetic":"ආප්කා නාම් ਕਿਆ හේ ඕර් ආප් ਕਹਾਂ ਸੇ ਹੈਂ?"},
+            {"speaker":"B","target":"मेरा नाम कुमार है और मैं श्रीलंका से हूँ।","native":"මගේ නම කුමාර් සහ මම ශ්‍රී ලංකාවෙන්.","phonetic":"මේරා නාම් කුමාර් හේ ඕර් මේ ශ්‍රී ලංකා සේ හූ."}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "नमस्ते",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "धन्यवाद",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "अलविदा",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "कृपया",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "माफ करें",
-            "native": "සමාවෙන්න"
-          }
+          {"id":"fb1_7_1","sentence":"___, मेरा नाम क्या है?","answer":"आपका","hint":"'ඔබගේ' සඳහා හින්දි වචනය"},
+          {"id":"fb1_7_2","sentence":"अस्पताल ___ है?","answer":"कहाँ","hint":"'කොහෙද' සඳහා හින්දි වචනය"}
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'ස්තූතියි' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means ස්තූතියි."
-          }
+          {"id":"mc1_7_1","question":"'කරුණාකර මට වතුර දෙන්න' යන්න නිවැරදිව හින්දියෙන් කියන්නේ කොහොමද?","options":["कृपया मुझे पानी दीजिए।","पानी कृपया मुझे दीजिए।","मुझे दीजिए कृपया पानी।","दीजिए पानी मुझे कृपया।"],"correct":0,"explanation":"නිවැරදි වාක්‍ය රටාව 'कृपया मुझे पानी दीजिए' වේ."}
+        ],
+        "matching": [
+            {"id":"mp1_7_1","target":"आप कैसे हैं?","native":"ඔබට කොහොමද?"},
+            {"id":"mp1_7_2","target":"यह कितने का है?","native":"මේක කීයද?"},
+            {"id":"mp1_7_3","target":"मैं श्रीलंका से हूँ।","native":"මම ශ්‍රී ලංකාවෙන්."},
+            {"id":"mp1_7_4","target":"सीधा जाइए।","native":"කෙලින් යන්න."}
+        ],
+        "sentenceScramble": [
+            {"id":"ss1_7_1","scrambled":["नाम","मेरा","है","कुमार"],"correct":"मेरा नाम कुमार है।","nativeHint":"'මගේ නම කුමාර්'"}
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "සතිය පුරා ඔබ ඉගෙන ගත් ආචාරශීලී වචන (नमस्ते, धन्यवाद, कृपया, माफ़ कीजिए) දෛනික සංවාදවලදී නිතර භාවිතා කිරීමෙන් ඔබට හින්දි කතා කරන ප්‍රජාව සමඟ හොඳ සම්බන්ධතාවයක් ගොඩනගා ගත හැකිය.",
+      "pronunciation_tip": "ඔබේ උච්චාරණය ගැන විශ්වාසයක් නැතිනම්, සෙමින් හා පැහැදිලිව කතා කරන්න. බොහෝ දෙනෙක් ඔබේ උත්සාහය අගය කරනු ඇත. හින්දි චිත්‍රපට හෝ ගීත ඇසීමෙන් උච්චාරණය වැඩි දියුණු කර ගත හැකිය.",
+      "progress":{"xp":150,"streak_bonus":50,"badge":"W1-HindiReview"}
     }
   ]
 }
+
+    
