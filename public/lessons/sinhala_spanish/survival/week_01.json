@@ -7,1325 +7,415 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "1 වන දිනය: මූලික සුබ පැතුම්",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_1_1", "target": "Hola", "phonetic": "ඕ-ලා", "native_meaning": "ආයුබෝවන්", "english": "Hello", "example_sentence_target": "Hola, ¿cómo estás?", "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?", "example_sentence_phonetic": "ඕ-ලා, කෝ-මෝ එස්-ටාස්?" },
+        { "id": "w1_1_2", "target": "Gracias", "phonetic": "ග්‍රා-සි-යස්", "native_meaning": "ස්තූතියි", "english": "Thank you", "example_sentence_target": "Gracias por tu ayuda.", "example_sentence_native": "ඔබගේ උදව්වට ස්තූතියි.", "example_sentence_phonetic": "ග්‍රා-සි-යස් පෝර් ටු අ-යූ-දා." },
+        { "id": "w1_1_3", "target": "Adiós", "phonetic": "අ-දි-ඕස්", "native_meaning": "ආයුබෝවන් (යන විට)", "english": "Goodbye", "example_sentence_target": "Adiós, nos vemos mañana.", "example_sentence_native": "ආයුබෝවන්, හෙට හමුවෙමු.", "example_sentence_phonetic": "අ-දි-ඕස්, නෝස් වේ-මෝස් ම-න්‍යා-නා." },
+        { "id": "w1_1_4", "target": "Por favor", "phonetic": "පෝර් ෆ-වෝර්", "native_meaning": "කරුණාකර", "english": "Please", "example_sentence_target": "¿Me puedes ayudar, por favor?", "example_sentence_native": "කරුණාකර මට උදව් කරන්න පුලුවන්ද?", "example_sentence_phonetic": "මේ ප්වේ-දෙස් අ-යූ-දාර්, පෝර් ෆ-වෝර්?" },
+        { "id": "w1_1_5", "target": "Sí", "phonetic": "සී", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Sí, hablo un poco de español.", "example_sentence_native": "ඔව්, මම ස්පාඤ්ඤ ටිකක් කතා කරනවා.", "example_sentence_phonetic": "සී, ආබ්-ලෝ උන් පෝ-කෝ දේ එස්-පා-න්‍යෝල්." },
+        { "id": "w1_1_6", "target": "No", "phonetic": "නෝ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "No, no entiendo.", "example_sentence_native": "නැහැ, මට තේරෙන්නේ නැහැ.", "example_sentence_phonetic": "නෝ, නෝ එන්-ටියෙන්-දෝ." },
+        { "id": "w1_1_7", "target": "Buenos días", "phonetic": "බු-ඒ-නෝස් දී-අස්", "native_meaning": "සුබ උදෑසනක්", "english": "Good morning", "example_sentence_target": "Buenos días, señor.", "example_sentence_native": "සුබ උදෑසනක්, මහත්මයා.", "example_sentence_phonetic": "බු-ඒ-නෝස් දී-අස්, සෙ-න්‍යෝර්." },
+        { "id": "w1_1_8", "target": "Buenas noches", "phonetic": "බු-ඒ-නස් නෝ-චෙස්", "native_meaning": "සුබ රාත්‍රියක්", "english": "Good night", "example_sentence_target": "Buenas noches, que descanses.", "example_sentence_native": "සුබ රාත්‍රියක්, සුවෙන් නිදාගන්න.", "example_sentence_phonetic": "බු-ඒ-නස් නෝ-චෙස්, කේ දෙස්-කාන්-සෙස්." }
+      ],
+      "sentences": [
+        { "id": "s1_1_1", "target": "Hola, mucho gusto.", "native": "ආයුබෝවන්, හමුවීම සතුටක්.", "phonetic": "ඕ-ලා, මූ-චෝ ගුස්-තෝ." },
+        { "id": "s1_1_2", "target": "Gracias por todo.", "native": "හැමදේටම ස්තූතියි.", "phonetic": "ග්‍රා-සි-යස් පෝර් තෝ-දෝ." },
+        { "id": "s1_1_3", "target": "Hasta luego.", "native": "පසුව හමුවෙමු.", "phonetic": "අස්-තා ලු-ඒ-ගෝ." },
+        { "id": "s1_1_4", "target": "Un café, por favor.", "native": "කෝපි එකක්, කරුණාකර.", "phonetic": "උන් ක-ෆේ, පෝර් ෆ-වෝර්." },
+        { "id": "s1_1_5", "target": "Sí, entiendo.", "native": "ඔව්, මට තේරෙනවා.", "phonetic": "සී, එන්-ටියෙන්-දෝ." },
+        { "id": "s1_1_6", "target": "No, gracias.", "native": "නැහැ, ස්තූතියි.", "phonetic": "නෝ, ග්‍රා-සි-යස්." },
+        { "id": "s1_1_7", "target": "Buenos días, ¿qué tal?", "native": "සුබ උදෑසනක්, කොහොමද?", "phonetic": "බු-ඒ-නෝස් දී-අස්, කේ තල්?" },
+        { "id": "s1_1_8", "target": "Buenas noches a todos.", "native": "හැමෝටම සුබ රාත්‍රියක්.", "phonetic": "බු-ඒ-නස් නෝ-චෙස් ආ තෝ-දොස්." }
       ],
       "dialogues": [
-        {
-          "id": "d1_1_1",
-          "context": "Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_1_1", "context": "වීදියේදී කෙනෙකු හමුවීම.", "lines": [
+            { "speaker": "A", "target": "Hola, buenos días.", "native": "ආයුබෝවන්, සුබ උදෑසනක්.", "phonetic": "ඕ-ලා, බු-ඒ-නෝස් දී-අස්." },
+            { "speaker": "B", "target": "Buenos días. ¿Cómo estás?", "native": "සුබ උදෑසනක්. ඔබට කොහොමද?", "phonetic": "බු-ඒ-නෝස් දී-අස්. කෝ-මෝ එස්-ටාස්?" }
+        ]},
+        { "id": "d1_1_2", "context": "කඩයකින් යමක් මිලදී ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Esto, por favor.", "native": "මේක, කරුණාකර.", "phonetic": "එස්-තෝ, පෝර් ෆ-වෝර්." },
+            { "speaker": "B", "target": "Aquí tienes. Gracias.", "native": "මෙන්න. ස්තූතියි.", "phonetic": "අ-කී ති-එ-නෙස්. ග්‍රා-සි-යස්." }
+        ]},
+        { "id": "d1_1_3", "context": "දවස අවසානයේදී සමුගැනීම.", "lines": [
+            { "speaker": "A", "target": "Adiós, hasta mañana.", "native": "ආයුබෝවන්, හෙට හමුවෙමු.", "phonetic": "අ-දි-ඕස්, අස්-තා ම-න්‍යා-නා." },
+            { "speaker": "B", "target": "Adiós. Buenas noches.", "native": "ආයුබෝවන්. සුබ රාත්‍රියක්.", "phonetic": "අ-දි-ඕස්. බු-ඒ-නස් නෝ-චෙස්." }
+        ]},
+        { "id": "d1_1_4", "context": "ප්‍රශ්නයකට පිළිතුරු දීම.", "lines": [
+            { "speaker": "A", "target": "¿Hablas inglés?", "native": "ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "ආබ්-ලස් ඉන්-ග්ලේස්?" },
+            { "speaker": "B", "target": "Sí, un poco.", "native": "ඔව්, ටිකක්.", "phonetic": "සී, උන් පෝ-කෝ." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_1_1", "target": "Hola", "native": "ආයුබෝවන්" },
+          { "id": "m1_1_2", "target": "Gracias", "native": "ස්තූතියි" },
+          { "id": "m1_1_3", "target": "Por favor", "native": "කරුණාකර" },
+          { "id": "m1_1_4", "target": "Adiós", "native": "ආයුබෝවන් (යන විට)" }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "ස්පාඤ්ඤයේ, කඩයකට හෝ අවන්හලකට ඇතුළු වන විට සහ පිටවන විට 'Hola' සහ 'Adiós' කීම ඉතා සුලබයි. එය ආචාරශීලී බවේ ලකුණක් ලෙස සැලකේ.",
+      "pronunciation_tip": "'Hola' හි 'H' අකුර ශබ්ද නොකරයි. එය 'ඕ-ලා' ලෙස උච්චාරණය කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Greetings" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Introducing Yourself",
+      "title_native": "2 වන දිනය: ඔබව හඳුන්වා දීම",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_2_1", "target": "Me llamo...", "phonetic": "මේ යား-මෝ...", "native_meaning": "මගේ නම...", "english": "My name is...", "example_sentence_target": "Hola, me llamo Juan.", "example_sentence_native": "ආයුබෝවන්, මගේ නම ජුවාන්.", "example_sentence_phonetic": "ඕ-ලා, මේ යား-මෝ හුවන්." },
+        { "id": "w1_2_2", "target": "Soy de...", "phonetic": "සොයි දේ...", "native_meaning": "මම ... සිට", "english": "I am from...", "example_sentence_target": "Soy de Sri Lanka.", "example_sentence_native": "මම ශ්‍රී ලංකාවේ සිට.", "example_sentence_phonetic": "සොයි දේ ශ්‍රී ලංකා." },
+        { "id": "w1_2_3", "target": "Mucho gusto", "phonetic": "මූ-චෝ ගුස්-තෝ", "native_meaning": "හමුවීම සතුටක්", "english": "Nice to meet you", "example_sentence_target": "Mucho gusto en conocerte.", "example_sentence_native": "ඔබව හමුවීම ඉතා සතුටක්.", "example_sentence_phonetic": "මූ-චෝ ගුස්-තෝ එන් කො-නො-සෙර්-තේ." },
+        { "id": "w1_2_4", "target": "Y tú?", "phonetic": "ඊ තූ?", "native_meaning": "ඔබ?", "english": "And you?", "example_sentence_target": "Me llamo Ana. ¿Y tú?", "example_sentence_native": "මගේ නම ආනා. ඔබ?", "example_sentence_phonetic": "මේ යား-මෝ ආ-නා. ඊ තූ?" },
+        { "id": "w1_2_5", "target": "Señor", "phonetic": "සෙ-න්‍යෝර්", "native_meaning": "මහත්මයා", "english": "Mr./Sir", "example_sentence_target": "Buenos días, señor López.", "example_sentence_native": "සුබ උදෑසනක්, ලෝපේස් මහත්මයා.", "example_sentence_phonetic": "බු-ඒ-නෝස් දී-අස්, සෙ-න්‍යෝර් ලෝ-පෙස්." },
+        { "id": "w1_2_6", "target": "Señora", "phonetic": "සෙ-න්‍යෝ-රා", "native_meaning": "මහත්මිය", "english": "Mrs./Ma'am", "example_sentence_target": "Gracias, señora.", "example_sentence_native": "ස්තූතියි, මහත්මිය.", "example_sentence_phonetic": "ග්‍රා-සි-යස්, සෙ-න්‍යෝ-රා." },
+        { "id": "w1_2_7", "target": "Hablar", "phonetic": "අබ්-ලාර්", "native_meaning": "කතා කරනවා", "english": "To speak", "example_sentence_target": "Hablo un poco de español.", "example_sentence_native": "මම ස්පාඤ්ඤ ටිකක් කතා කරනවා.", "example_sentence_phonetic": "අබ්-ලෝ උන් පෝ-කෝ දේ එස්-පා-න්‍යෝල්." },
+        { "id": "w1_2_8", "target": "Entender", "phonetic": "එන්-තෙන්-දේර්", "native_meaning": "තේරුම් ගන්නවා", "english": "To understand", "example_sentence_target": "No entiendo la pregunta.", "example_sentence_native": "මට ප්‍රශ්නය තේරෙන්නේ නැහැ.", "example_sentence_phonetic": "නෝ එන්-තෙන්-දෝ ලා ප්‍රෙ-ගුන්-තා." }
+      ],
+      "sentences": [
+        { "id": "s1_2_1", "target": "Hola, me llamo Nimal.", "native": "ආයුබෝවන්, මගේ නම නිමල්.", "phonetic": "ඕ-ලා, මේ යား-මෝ නිමල්." },
+        { "id": "s1_2_2", "target": "Soy de Colombo.", "native": "මම කොළඹ සිට.", "phonetic": "සොයි දේ කොළඹ." },
+        { "id": "s1_2_3", "target": "Mucho gusto, señor.", "native": "හමුවීම සතුටක්, මහත්මයා.", "phonetic": "මූ-චෝ ගුස්-තෝ, සෙ-න්‍යෝර්." },
+        { "id": "s1_2_4", "target": "Soy de Sri Lanka. ¿Y tú?", "native": "මම ශ්‍රී ලංකාවෙන්. ඔබ?", "phonetic": "සොයි දේ ශ්‍රී ලංකා. ඊ තූ?" },
+        { "id": "s1_2_5", "target": "Disculpe, señor, ¿qué hora es?", "native": "සමාවෙන්න, මහත්මයා, වෙලාව කීයද?", "phonetic": "දිස්-කුල්-පේ, සෙ-න්‍යෝර්, කේ ඕ-රා එස්?" },
+        { "id": "s1_2_6", "target": "Sí señora, entiendo.", "native": "ඔව් මහත්මිය, මට තේරෙනවා.", "phonetic": "සී සෙ-න්‍යෝ-රා, එන්-තෙන්-දෝ." },
+        { "id": "s1_2_7", "target": "No hablo español muy bien.", "native": "මම ස්පාඤ්ඤ එච්චර හොඳට කතා කරන්නේ නැහැ.", "phonetic": "නෝ අබ්-ලෝ එස්-පා-න්‍යෝල් මුයි බියෙන්." },
+        { "id": "s1_2_8", "target": "No entiendo, ¿puede repetir?", "native": "මට තේරෙන්නේ නැහැ, ආයෙත් කියන්න පුලුවන්ද?", "phonetic": "නෝ එන්-තෙන්-දෝ, ප්වේ-දේ රේ-පේ-තීර්?" }
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_2_1", "context": "පළමු වරට කෙනෙකු හමුවීම.", "lines": [
+            { "speaker": "A", "target": "Hola, me llamo Carlos.", "native": "ආයුබෝවන්, මගේ නම කාලෝස්.", "phonetic": "ඕ-ලා, මේ යား-මෝ කාර්-ලොස්." },
+            { "speaker": "B", "target": "Hola Carlos. Me llamo María. Mucho gusto.", "native": "ආයුබෝවන් කාලෝස්. මගේ නම මරියා. හමුවීම සතුටක්.", "phonetic": "ඕ-ලා කාර්-ලොස්. මේ යား-මෝ ම-රී-ආ. මූ-චෝ ගුස්-තෝ." }
+        ]},
+        { "id": "d1_2_2", "context": "ඔබ කොහෙන්ද කියා පැවසීම.", "lines": [
+            { "speaker": "A", "target": "Soy de España. ¿Y tú?", "native": "මම ස්පාඤ්ඤයේ. ඔබ?", "phonetic": "සොයි දේ එස්-පා-න්‍යා. ඊ තූ?" },
+            { "speaker": "B", "target": "Yo soy de Sri Lanka.", "native": "මම ශ්‍රී ලංකාවේ.", "phonetic": "යෝ සොයි දේ ශ්‍රී ලංකා." }
+        ]},
+        { "id": "d1_2_3", "context": "උදව්වක් ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "Señor, no entiendo.", "native": "මහත්මයා, මට තේරෙන්නේ නැහැ.", "phonetic": "සෙ-න්‍යෝර්, නෝ එන්-තෙන්-දෝ." },
+            { "speaker": "B", "target": "No hay problema, te ayudo.", "native": "ප්‍රශ්නයක් නැහැ, මම උදව් කරන්නම්.", "phonetic": "නෝ අයි ප්‍රොබ්-ලේ-මා, තේ අ-යූ-දෝ." }
+        ]},
+        { "id": "d1_2_4", "context": "භාෂා හැකියාව ගැන කතා කිරීම.", "lines": [
+            { "speaker": "A", "target": "¿Hablas español?", "native": "ඔබ ස්පාඤ්ඤ කතා කරනවාද?", "phonetic": "ආබ්-ලස් එස්-පා-න්‍යෝල්?" },
+            { "speaker": "B", "target": "Sí, hablo un poco. No entiendo todo.", "native": "ඔව්, මම ටිකක් කතා කරනවා. මට හැමදේම තේරෙන්නේ නැහැ.", "phonetic": "සී, ආබ්-ලෝ උන් පෝ-කෝ. නෝ එන්-තෙන්-දෝ තෝ-දෝ." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_2_1", "target": "Me llamo...", "native": "මගේ නම..." },
+          { "id": "m1_2_2", "target": "Soy de...", "native": "මම ... සිට" },
+          { "id": "m1_2_3", "target": "Mucho gusto", "native": "හමුවීම සතුටක්" },
+          { "id": "m1_2_4", "target": "Y tú?", "native": "ඔබ?" }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "ස්පාඤ්ඤ සංස්කෘතිය තුළ, 'mucho gusto' කීමෙන් පසුව අතට අත දීම සාමාන්‍ය දෙයකි. සමීප මිතුරන් අතර කම්මුලට හාදුවක් (dos besos) දීමද සුලබයි.",
+      "pronunciation_tip": "'llamo' හි 'll' ශබ්දය ඉංග්‍රීසි 'y' ශබ්දයට සමානයි. එය 'යා-මෝ' ලෙස උච්චාරණය වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-Introductions" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Asking Someone's Name",
+      "title_native": "3 වන දිනය: කෙනෙකුගේ නම ඇසීම",
+      "theme": "Names and Questions",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_3_1", "target": "¿Cómo te llamas?", "phonetic": "කෝ-මෝ තේ යား-මස්?", "native_meaning": "ඔබේ නම කුමක්ද?", "english": "What is your name?", "example_sentence_target": "¿Cómo te llamas? Me llamo Ana.", "example_sentence_native": "ඔබේ නම කුමක්ද? මගේ නම ආනා.", "example_sentence_phonetic": "කෝ-මෝ තේ යား-මස්? මේ යား-මෝ ආ-නා." },
+        { "id": "w1_3_2", "target": "Mi nombre es...", "phonetic": "මී නොම්-බ්‍රේ එස්...", "native_meaning": "මගේ නම...", "english": "My name is...", "example_sentence_target": "Mi nombre es Pedro.", "example_sentence_native": "මගේ නම පේද්‍රෝ.", "example_sentence_phonetic": "මී නොම්-බ්‍රේ එස් පේ-ද්‍රෝ." },
+        { "id": "w1_3_3", "target": "Perdón", "phonetic": "පෙර්-දොන්", "native_meaning": "සමාවෙන්න (අවධානය ලබා ගැනීමට)", "english": "Excuse me / Pardon", "example_sentence_target": "Perdón, ¿puedes repetir?", "example_sentence_native": "සමාවෙන්න, ඔබට නැවත කියන්න පුලුවන්ද?", "example_sentence_phonetic": "පෙර්-දොන්, ප්වේ-දෙස් රේ-පේ-තීර්?" },
+        { "id": "w1_3_4", "target": "Disculpe", "phonetic": "දිස්-කුල්-පේ", "native_meaning": "සමාවෙන්න (වැරදීමකට)", "english": "Excuse me / Sorry", "example_sentence_target": "Disculpe, no quería molestarte.", "example_sentence_native": "සමාවෙන්න, මට ඔබට කරදර කරන්න අවශ්‍ය වුනේ නෑ.", "example_sentence_phonetic": "දිස්-කුල්-පේ, නෝ කෙ-රී-ආ මො-ලෙස්-තාර්-තේ." },
+        { "id": "w1_3_5", "target": "¿Qué?", "phonetic": "කේ?", "native_meaning": "මොකක්ද?", "english": "What?", "example_sentence_target": "¿Qué significa esto?", "example_sentence_native": "මේකේ තේරුම මොකක්ද?", "example_sentence_phonetic": "කේ සිග්-නි-ෆී-කා එස්-තෝ?" },
+        { "id": "w1_3_6", "target": "¿Quién?", "phonetic": "කියෙන්?", "native_meaning": "කවුද?", "english": "Who?", "example_sentence_target": "¿Quién es ese señor?", "example_sentence_native": "අර මහත්මයා කවුද?", "example_sentence_phonetic": "කියෙන් එස් එ-සේ සෙ-න්‍යෝර්?" },
+        { "id": "w1_3_7", "target": "Amigo / Amiga", "phonetic": "අ-මී-ගෝ / අ-මී-ගා", "native_meaning": "මිතුරා / මිතුරිය", "english": "Friend (m/f)", "example_sentence_target": "Él es mi amigo.", "example_sentence_native": "ඔහු මගේ මිතුරා.", "example_sentence_phonetic": "එල් එස් මී අ-මී-ගෝ." },
+        { "id": "w1_3_8", "target": "Bien", "phonetic": "බියෙන්", "native_meaning": "හොඳයි", "english": "Well / Good", "example_sentence_target": "Estoy bien, gracias.", "example_sentence_native": "මම හොඳින්, ස්තූතියි.", "example_sentence_phonetic": "එස්-තොයි බියෙන්, ග්‍රා-සි-යස්." }
+      ],
+      "sentences": [
+        { "id": "s1_3_1", "target": "Hola, ¿cómo te llamas?", "native": "ආයුබෝවන්, ඔබේ නම කුමක්ද?", "phonetic": "ඕ-ලා, කෝ-මෝ තේ යား-මස්?" },
+        { "id": "s1_3_2", "target": "Mi nombre es Sunil.", "native": "මගේ නම සුනිල්.", "phonetic": "මී නොම්-බ්‍රේ එස් සුනිල්." },
+        { "id": "s1_3_3", "target": "Perdón, no escuché tu nombre.", "native": "සමාවෙන්න, මට ඔබේ නම ඇහුනේ නැහැ.", "phonetic": "පෙර්-දොන්, නෝ එස්-කු-චේ තූ නොම්-බ්‍රේ." },
+        { "id": "s1_3_4", "target": "Disculpe, ¿es usted el señor García?", "native": "සමාවෙන්න, ඔබ ගාර්සියා මහත්මයාද?", "phonetic": "දිස්-කුල්-පේ, එස් උස්-තෙද් එල් සෙ-න්‍යෝර් ගාර්-සී-ආ?" },
+        { "id": "s1_3_5", "target": "¿Qué haces aquí?", "native": "ඔබ මෙහි කුමක් කරන්නේද?", "phonetic": "කේ ආ-සෙස් අ-කී?" },
+        { "id": "s1_3_6", "target": "¿Quién es tu amiga?", "native": "ඔබේ මිතුරිය කවුද?", "phonetic": "කියෙන් එස් තූ අ-මී-ගා?" },
+        { "id": "s1_3_7", "target": "Este es mi amigo, Pablo.", "native": "මේ මගේ මිතුරා, පාබ්ලෝ.", "phonetic": "එස්-තේ එස් මී අ-මී-ගෝ, පාබ්-ලෝ." },
+        { "id": "s1_3_8", "target": "Todo está bien.", "native": "හැමදේම හොඳින්.", "phonetic": "තෝ-දෝ එස්-තා බියෙන්." }
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_3_1", "context": "නම අසා දැනගැනීම.", "lines": [
+            { "speaker": "A", "target": "Hola, ¿cómo te llamas?", "native": "ආයුබෝවන්, ඔබේ නම කුමක්ද?", "phonetic": "ඕ-ලා, කෝ-මෝ තේ යား-මස්?" },
+            { "speaker": "B", "target": "Me llamo Sofía. ¿Y tú?", "native": "මගේ නම සෝෆියා. ඔබ?", "phonetic": "මේ යား-මෝ සෝ-ෆී-ආ. ඊ තූ?" }
+        ]},
+        { "id": "d1_3_2", "context": "මිතුරෙකු හඳුන්වා දීම.", "lines": [
+            { "speaker": "A", "target": "Esta es mi amiga, Lakshmi.", "native": "මේ මගේ මිතුරිය, ලක්ෂ්මී.", "phonetic": "එස්-තා එස් මී අ-මී-ගා, ලක්ෂ්මී." },
+            { "speaker": "B", "target": "Hola Lakshmi, mucho gusto. Mi nombre es Javier.", "native": "ආයුබෝවන් ලක්ෂ්මී, හමුවීම සතුටක්. මගේ නම හාවියර්.", "phonetic": "ඕ-ලා ලක්ෂ්මී, මූ-චෝ ගුස්-තෝ. මී නොම්-බ්‍රේ එස් හ-වියර්." }
+        ]},
+        { "id": "d1_3_3", "context": "යමක් නැවත අසා දැනගැනීම.", "lines": [
+            { "speaker": "A", "target": "Mi nombre es Aishwarya.", "native": "මගේ නම ඓශ්වර්යා.", "phonetic": "මී නොම්-බ්‍රේ එස් ඓශ්වර්යා." },
+            { "speaker": "B", "target": "Perdón, ¿puedes repetir tu nombre?", "native": "සමාවෙන්න, ඔබේ නම නැවත කියන්න පුලුවන්ද?", "phonetic": "පෙර්-දොන්, ප්වේ-දෙස් රේ-පේ-තීර් තූ නොම්-බ්‍රේ?" }
+        ]},
+        { "id": "d1_3_4", "context": "කෙනෙකු ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "¿Quién es él?", "native": "ඔහු කවුද?", "phonetic": "කියෙන් එස් එල්?" },
+            { "speaker": "B", "target": "Es mi amigo, David.", "native": "ඔහු මගේ මිතුරා, ඩේවිඩ්.", "phonetic": "එස් මී අ-මී-ගෝ, ඩේ-විඩ්." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_3_1", "target": "¿Cómo te llamas?", "native": "ඔබේ නම කුමක්ද?" },
+          { "id": "m1_3_2", "target": "Mi nombre es...", "native": "මගේ නම..." },
+          { "id": "m1_3_3", "target": "¿Quién?", "native": "කවුද?" },
+          { "id": "m1_3_4", "target": "Amigo", "native": "මිතුරා" }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "ඔබට වඩා වයසින් වැඩි කෙනෙකුට හෝ විධිමත් අවස්ථාවකදී '¿Cómo se llama usted?' ලෙස ඇසීම වඩාත් ආචාරශීලී වේ. 'Usted' යනු 'ඔබ' සඳහා විධිමත් වචනයයි.",
+      "pronunciation_tip": "'Javier' වැනි වචනවල 'J' අකුර ශබ්ද කරන්නේ උගුරෙන් එන 'හ' ශබ්දයක් ලෙසයි. 'G' අකුර 'e' හෝ 'i' ට පෙර එන විටද එම ශබ්දයම වේ (උදා. 'gente').",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-Names" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Nationality and Country",
+      "title_native": "4 වන දිනය: ජාතිකත්වය සහ රට",
+      "theme": "Origin",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_4_1", "target": "¿De dónde eres?", "phonetic": "දේ දොන්-දේ එ-රෙස්?", "native_meaning": "ඔබ කොහෙන්ද?", "english": "Where are you from?", "example_sentence_target": "¿De dónde eres? Soy de la India.", "example_sentence_native": "ඔබ කොහෙන්ද? මම ඉන්දියාවෙන්.", "example_sentence_phonetic": "දේ දොන්-දේ එ-රෙස්? සොයි දේ ලා ඉන්-දියා." },
+        { "id": "w1_4_2", "target": "País", "phonetic": "පා-ඊස්", "native_meaning": "රට", "english": "Country", "example_sentence_target": "Sri Lanka es un país hermoso.", "example_sentence_native": "ශ්‍රී ලංකාව ලස්සන රටක්.", "example_sentence_phonetic": "ශ්‍රී ලංකා එස් උන් පා-ඊස් එර්-මෝ-සෝ." },
+        { "id": "w1_4_3", "target": "Ciudad", "phonetic": "සි-උ-දාද්", "native_meaning": "නගරය", "english": "City", "example_sentence_target": "Vivo en la ciudad de Madrid.", "example_sentence_native": "මම ජීවත් වෙන්නේ මැඩ්රිඩ් නගරයේ.", "example_sentence_phonetic": "වී-වෝ එන් ලා සි-උ-දාද් දේ ම-ද්‍රීද්." },
+        { "id": "w1_4_4", "target": "Yo soy...", "phonetic": "යෝ සොයි...", "native_meaning": "මම...", "english": "I am...", "example_sentence_target": "Yo soy estudiante.", "example_sentence_native": "මම ශිෂ්‍යයෙක්.", "example_sentence_phonetic": "යෝ සොයි එස්-තු-දියන්-තේ." },
+        { "id": "w1_4_5", "target": "Vivir", "phonetic": "වි-වීර්", "native_meaning": "ජීවත් වෙනවා", "english": "To live", "example_sentence_target": "Vivo con mi familia.", "example_sentence_native": "මම මගේ පවුල සමඟ ජීවත් වෙනවා.", "example_sentence_phonetic": "වි-වෝ කොන් මී ෆ-මි-ලියා." },
+        { "id": "w1_4_6", "target": "¿Dónde?", "phonetic": "දොන්-දේ?", "native_meaning": "කොහෙද?", "english": "Where?", "example_sentence_target": "¿Dónde está el baño?", "example_sentence_native": "නාන කාමරය කොහෙද?", "example_sentence_phonetic": "දොන්-දේ එස්-තා එල් බා-න්‍යෝ?" },
+        { "id": "w1_4_7", "target": "Aquí", "phonetic": "අ-කී", "native_meaning": "මෙතන", "english": "Here", "example_sentence_target": "El restaurante está aquí.", "example_sentence_native": "ආපනශාලාව තියෙන්නේ මෙතන.", "example_sentence_phonetic": "එල් රෙස්-තවු-රාන්-තේ එස්-තා අ-කී." },
+        { "id": "w1_4_8", "target": "Allí", "phonetic": "අ-යී", "native_meaning": "එතන", "english": "There", "example_sentence_target": "Mi casa está allí.", "example_sentence_native": "මගේ ගෙදර තියෙන්නේ එතන.", "example_sentence_phonetic": "මී කා-සා එස්-තා අ-යී." }
+      ],
+      "sentences": [
+        { "id": "s1_4_1", "target": "¿De dónde eres? Soy de Sri Lanka.", "native": "ඔබ කොහෙන්ද? මම ශ්‍රී ලංකාවෙන්.", "phonetic": "දේ දොන්-දේ එ-රෙස්? සොයි දේ ශ්‍රී ලංකා." },
+        { "id": "s1_4_2", "target": "España es un país en Europa.", "native": "ස්පාඤ්ඤය යනු යුරෝපයේ රටකි.", "phonetic": "එස්-පා-න්‍යා එස් උන් පා-ඊස් එන් එ-උ-රෝ-පා." },
+        { "id": "s1_4_3", "target": "Barcelona es una ciudad grande.", "native": "බාර්සිලෝනා විශාල නගරයකි.", "phonetic": "බාර්-සේ-ලෝ-නා එස් උ-නා සි-උ-දාද් ග්‍රාන්-දේ." },
+        { "id": "s1_4_4", "target": "Yo soy un trabajador.", "native": "මම සේවකයෙක්.", "phonetic": "යෝ සොයි උන් ත්‍රා-බ-හ-දෝර්." },
+        { "id": "s1_4_5", "target": "¿Dónde vives?", "native": "ඔබ ජීවත් වෙන්නේ කොහේද?", "phonetic": "දොන්-දේ වී-වෙස්?" },
+        { "id": "s1_4_6", "target": "Vivo aquí, en esta ciudad.", "native": "මම ජීවත් වෙන්නේ මෙහි, මේ නගරයේ.", "phonetic": "වී-වෝ අ-කී, එන් එස්-තා සි-උ-දාද්." },
+        { "id": "s1_4_7", "target": "La tienda está allí.", "native": "කඩේ තියෙන්නේ එතන.", "phonetic": "ලා තියෙන්-දා එස්-තා අ-යී." },
+        { "id": "s1_4_8", "target": "Mi país es muy bonito.", "native": "මගේ රට ගොඩක් ලස්සනයි.", "phonetic": "මී පා-ඊස් එස් මුයි බො-නී-තෝ." }
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_4_1", "context": "ඔබේ රට ගැන කතා කිරීම.", "lines": [
+            { "speaker": "A", "target": "¿De dónde eres?", "native": "ඔබ කොහෙන්ද?", "phonetic": "දේ දොන්-දේ එ-රෙස්?" },
+            { "speaker": "B", "target": "Soy de Sri Lanka. Es un país en Asia.", "native": "මම ශ්‍රී ලංකාවෙන්. එය ආසියාවේ රටක්.", "phonetic": "සොයි දේ ශ්‍රී ලංකා. එස් උන් පා-ඊස් එන් ආ-සියා." }
+        ]},
+        { "id": "d1_4_2", "context": "ඔබ ජීවත් වන ස්ථානය ගැන කතා කිරීම.", "lines": [
+            { "speaker": "A", "target": "¿Vives aquí en Madrid?", "native": "ඔබ ජීවත් වෙන්නේ මෙහේ මැඩ්රිඩ් වලද?", "phonetic": "වී-වෙස් අ-කී එන් ම-ද්‍රීද්?" },
+            { "speaker": "B", "target": "Sí, vivo en esta ciudad.", "native": "ඔව්, මම ජීවත් වෙන්නේ මේ නගරයේ.", "phonetic": "සී, වී-වෝ එන් එස්-තා සි-උ-දාද්." }
+        ]},
+        { "id": "d1_4_3", "context": "යමක් ඇති තැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Perdón, ¿dónde está la estación de tren?", "native": "සමාවෙන්න, දුම්රිය ස්ථානය කොහෙද?", "phonetic": "පෙර්-දොන්, දොන්-දේ එස්-තා ලා එස්-ත-සියොන් දේ ත්‍රේන්?" },
+            { "speaker": "B", "target": "Está allí, a la derecha.", "native": "එය එතන, දකුණු පැත්තේ.", "phonetic": "එස්-තා අ-යී, ආ ලා දේ-රේ-චා." }
+        ]},
+        { "id": "d1_4_4", "context": "ඔබ කවුදැයි පැවසීම.", "lines": [
+            { "speaker": "A", "target": "Mucho gusto, yo soy Carmen.", "native": "හමුවීම සතුටක්, මම කාර්මන්.", "phonetic": "මූ-චෝ ගුස්-තෝ, යෝ සොයි කාර්-මෙන්." },
+            { "speaker": "B", "target": "Encantado, yo soy Kumar.", "native": "හමුවීම සතුටක්, මම කුමාර්.", "phonetic": "එන්-කන්-තා-දෝ, යෝ සොයි කුමාර්." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_4_1", "target": "¿De dónde eres?", "native": "ඔබ කොහෙන්ද?" },
+          { "id": "m1_4_2", "target": "País", "native": "රට" },
+          { "id": "m1_4_3", "target": "Ciudad", "native": "නගරය" },
+          { "id": "m1_4_4", "target": "Vivo aquí.", "native": "මම මෙහි ජීවත් වෙමි." }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "ස්පාඤ්ඤයේ බොහෝ දෙනා තමන්ගේ රට හෝ නගරය ගැන ආඩම්බර වෙති. ඔබ කොහෙන්ද කියා ඇසීම සංවාදයක් ආරම්භ කිරීමට හොඳ ක්‍රමයකි.",
+      "pronunciation_tip": "'Ciudad' හි 'C' අක්ෂරය ඉංග්‍රීසි 'th' (think) ශබ්දයට සමානව උච්චාරණය කෙරේ. 'Z' අකුරද එසේමය. කෙසේ වෙතත්, ලතින් ඇමරිකාවේ මෙය 's' ශබ්දයක් ලෙස උච්චාරණය වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D4-Origin" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Polite Expressions",
+      "title_native": "5 වන දිනය: ආචාරශීලී ප්‍රකාශන",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_5_1", "target": "De nada", "phonetic": "දේ නා-දා", "native_meaning": "සුළු දෙයක්", "english": "You're welcome", "example_sentence_target": "Gracias por el café. - De nada.", "example_sentence_native": "කෝපි එකට ස්තූතියි. - සුළු දෙයක්.", "example_sentence_phonetic": "ග්‍රා-සි-යස් පෝර් එල් ක-ෆේ. - දේ නා-දා." },
+        { "id": "w1_5_2", "target": "Lo siento", "phonetic": "ලෝ සියෙන්-තෝ", "native_meaning": "මට කණගාටුයි", "english": "I'm sorry", "example_sentence_target": "Lo siento, llegué tarde.", "example_sentence_native": "මට කණගාටුයි, මම පරක්කු වුනා.", "example_sentence_phonetic": "ලෝ සියෙන්-තෝ, යේ-ගේ තාර්-දේ." },
+        { "id": "w1_5_3", "target": "Con permiso", "phonetic": "කොන් පෙර්-මී-සෝ", "native_meaning": "අවසරයි (පසුකර යාමට)", "english": "Excuse me (to pass)", "example_sentence_target": "Con permiso, voy a pasar.", "example_sentence_native": "අවසරයි, මම යනවා.", "example_sentence_phonetic": "කොන් පෙර්-මී-සෝ, වෝයි ආ ප-සාර්." },
+        { "id": "w1_5_4", "target": "Salud", "phonetic": "ස-ලූද්", "native_meaning": "චියර්ස් / ආශිර්වාද!", "english": "Cheers / Bless you", "example_sentence_target": "¡Salud! (cuando alguien estornuda)", "example_sentence_native": "ආශිර්වාද! (කවුරුහරි කිවිසින විට)", "example_sentence_phonetic": "ස-ලූද්! (ක්වාන්-දෝ අල්-ගියෙන් එස්-තෝර්-නු-දා)" },
+        { "id": "w1_5_5", "target": "Buen provecho", "phonetic": "බු-එන් ප්‍රො-වේ-චෝ", "native_meaning": "ආහාර රසවිඳින්න", "english": "Enjoy your meal", "example_sentence_target": "Gracias, buen provecho.", "example_sentence_native": "ස්තූතියි, ආහාර රසවිඳින්න.", "example_sentence_phonetic": "ග්‍රා-සි-යස්, බු-එන් ප්‍රො-වේ-චෝ." },
+        { "id": "w1_5_6", "target": "Igualmente", "phonetic": "ඉ-ගුවාල්-මෙන්-තේ", "native_meaning": "ඔබටත් එසේමයි", "english": "Likewise / Same to you", "example_sentence_target": "Que tengas un buen día. - Igualmente.", "example_sentence_native": "ඔබට සුබ දවසක්. - ඔබටත් එසේමයි.", "example_sentence_phonetic": "කේ තෙන්-ගස් උන් බු-එන් දී-ආ. - ඉ-ගුවාල්-මෙන්-තේ." },
+        { "id": "w1_5_7", "target": "Claro", "phonetic": "ක්ලා-රෝ", "native_meaning": "ඇත්තෙන්ම / පැහැදිලියි", "english": "Of course / Clear", "example_sentence_target": "¿Puedes ayudarme? - ¡Claro!", "example_sentence_native": "මට උදව් කරන්න පුලුවන්ද? - ඇත්තෙන්ම!", "example_sentence_phonetic": "ප්වේ-දෙස් අ-යූ-දාර්-මේ? - ක්ලා-රෝ!" },
+        { "id": "w1_5_8", "target": "Vale", "phonetic": "වා-ලේ", "native_meaning": "හරි / හරි", "english": "Okay / Alright", "example_sentence_target": "Nos vemos a las cinco. - Vale.", "example_sentence_native": "අපි පහට හමුවෙමු. - හරි.", "example_sentence_phonetic": "නෝස් වේ-මෝස් ආ ලාස් සින්-කෝ. - වා-ලේ." }
+      ],
+      "sentences": [
+        { "id": "s1_5_1", "target": "Gracias. - De nada.", "native": "ස්තූතියි. - සුළු දෙයක්.", "phonetic": "ග්‍රා-සි-යස්. - දේ නා-දා." },
+        { "id": "s1_5_2", "target": "Lo siento mucho.", "native": "මට ගොඩක් කණගාටුයි.", "phonetic": "ලෝ සියෙන්-තෝ මූ-චෝ." },
+        { "id": "s1_5_3", "target": "Con permiso, por favor.", "native": "අවසරයි, කරුණාකර.", "phonetic": "කොන් පෙර්-මී-සෝ, පෝර් ෆ-වෝර්." },
+        { "id": "s1_5_4", "target": "¡Salud! ¿Estás bien?", "native": "ආශිර්වාද! ඔබ හොඳින්ද?", "phonetic": "ස-ලූද්! එස්-ටාස් බියෙන්?" },
+        { "id": "s1_5_5", "target": "La comida huele bien. ¡Buen provecho!", "native": "කෑම සුවඳයි. ආහාර රසවිඳින්න!", "phonetic": "ලා කො-මී-දා හුවේ-ලේ බියෙන්. බු-එන් ප්‍රො-වේ-චෝ!" },
+        { "id": "s1_5_6", "target": "Adiós. - Igualmente.", "native": "ආයුබෝවන්. - ඔබටත් එසේමයි.", "phonetic": "අ-දි-ඕස්. - ඉ-ගුවාල්-මෙන්-තේ." },
+        { "id": "s1_5_7", "target": "Claro que sí.", "native": "ඇත්තෙන්ම ඔව්.", "phonetic": "ක්ලා-රෝ කේ සී." },
+        { "id": "s1_5_8", "target": "Vale, entiendo.", "native": "හරි, මට තේරෙනවා.", "phonetic": "වා-ලේ, එන්-ටියෙන්-දෝ." }
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_5_1", "context": "ස්තූති කිරීම සහ පිළිතුරු දීම.", "lines": [
+            { "speaker": "A", "target": "Muchas gracias por tu tiempo.", "native": "ඔබගේ කාලයට බොහොම ස්තූතියි.", "phonetic": "මූ-චස් ග්‍රා-සි-යස් පෝර් තූ තියෙම්-පෝ." },
+            { "speaker": "B", "target": "De nada. No es problema.", "native": "සුළු දෙයක්. ප්‍රශ්නයක් නෑ.", "phonetic": "දේ නා-දා. නෝ එස් ප්‍රොබ්-ලේ-මා." }
+        ]},
+        { "id": "d1_5_2", "context": "වැරදීමකට සමාව ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "¡Uy, lo siento!", "native": "අයියෝ, මට කණගාටුයි!", "phonetic": "උයි, ලෝ සියෙන්-තෝ!" },
+            { "speaker": "B", "target": "No te preocupes, está bien.", "native": "කණගාටු වෙන්න එපා, කමක් නෑ.", "phonetic": "නෝ තේ ප්‍රේ-ඔ-කු-පෙස්, එස්-තා බියෙන්." }
+        ]},
+        { "id": "d1_5_3", "context": "කෑම වේලක් ආරම්භ කිරීම.", "lines": [
+            { "speaker": "A", "target": "La cena está lista. ¡Buen provecho!", "native": "රාත්‍රී ආහාරය සූදානම්. ආහාර රසවිඳින්න!", "phonetic": "ලා සේ-නා එස්-තා ලිස්-තා. බු-එන් ප්‍රො-වේ-චෝ!" },
+            { "speaker": "B", "target": "Gracias, igualmente.", "native": "ස්තූතියි, ඔබටත් එසේමයි.", "phonetic": "ග්‍රා-සි-යස්, ඉ-ගුවාල්-මෙන්-තේ." }
+        ]},
+        { "id": "d1_5_4", "context": "යෝජනාවකට එකඟ වීම.", "lines": [
+            { "speaker": "A", "target": "¿Vamos al cine mañana?", "native": "හෙට අපි සිනමා බලන්න යමුද?", "phonetic": "වා-මෝස් අල් සී-නේ ම-න්‍යා-නා?" },
+            { "speaker": "B", "target": "Vale, me parece una buena idea.", "native": "හරි, මට ඒක හොඳ අදහසක් වගේ.", "phonetic": "වා-ලේ, මේ ප-රේ-සේ උ-නා බු-ඒ-නා ඉ-දේ-ආ." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_5_1", "target": "De nada", "native": "සුළු දෙයක්" },
+          { "id": "m1_5_2", "target": "Lo siento", "native": "මට කණගාටුයි" },
+          { "id": "m1_5_3", "target": "Buen provecho", "native": "ආහාර රසවිඳින්න" },
+          { "id": "m1_5_4", "target": "Vale", "native": "හරි" }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "'Vale' යන වචනය ස්පාඤ්ඤයේදී 'OK' වෙනුවට බහුලව භාවිතා වේ. ලතින් ඇමරිකාවේ සමහර රටවල 'OK' හෝ 'está bien' යන්න වඩාත් සුලබ වේ.",
+      "pronunciation_tip": "'Buen provecho' හි 'v' අකුර ඉංග්‍රීසි 'b' ශබ්දයට ඉතා සමානයි. එය 'ප්‍රො-බේ-චෝ' ලෙස නොව 'ප්‍රො-වේ-චෝ' ලෙස උච්චාරණය කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-Politeness" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Yes / No / Maybe",
+      "title_native": "6 වන දිනය: ඔව් / නැහැ / සමහරවිට",
+      "theme": "Confirmation",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_6_1", "target": "Tal vez", "phonetic": "තල් වේස්", "native_meaning": "සමහරවිට", "english": "Maybe", "example_sentence_target": "Tal vez voy mañana.", "example_sentence_native": "සමහරවිට මම හෙට යයි.", "example_sentence_phonetic": "තල් වේස් වෝයි ම-න්‍යා-නා." },
+        { "id": "w1_6_2", "target": "Quizás", "phonetic": "කි-සාස්", "native_meaning": "සමහරවිට", "english": "Perhaps / Maybe", "example_sentence_target": "Quizás llueva más tarde.", "example_sentence_native": "සමහරවිට පසුව වහීවි.", "example_sentence_phonetic": "කි-සාස් යු-ඒ-වා මස් තාර්-දේ." },
+        { "id": "w1_6_3", "target": "Por supuesto", "phonetic": "පෝර් සු-පු-එස්-තෝ", "native_meaning": "ඇත්තෙන්ම", "english": "Of course", "example_sentence_target": "Por supuesto que sí.", "example_sentence_native": "ඇත්තෙන්ම ඔව්.", "example_sentence_phonetic": "පෝර් සු-පු-එස්-තෝ කේ සී." },
+        { "id": "w1_6_4", "target": "Exacto", "phonetic": "එක්-සක්-තෝ", "native_meaning": "හරියටම හරි", "english": "Exactly", "example_sentence_target": "Exacto, eso es lo que pienso.", "example_sentence_native": "හරියටම හරි, මමත් හිතන්නේ ඒක තමයි.", "example_sentence_phonetic": "එක්-සක්-තෝ, එ-සෝ එස් ලෝ කේ පියෙන්-සෝ." },
+        { "id": "w1_6_5", "target": "No sé", "phonetic": "නෝ සේ", "native_meaning": "මම දන්නේ නැහැ", "english": "I don't know", "example_sentence_target": "No sé la respuesta.", "example_sentence_native": "මම උත්තරේ දන්නේ නැහැ.", "example_sentence_phonetic": "නෝ සේ ලා රෙස්-පු-එස්-තා." },
+        { "id": "w1_6_6", "target": "Entendido", "phonetic": "එන්-තෙන්-දී-දෝ", "native_meaning": "තේරුණා", "english": "Understood", "example_sentence_target": "Sí, entendido.", "example_sentence_native": "ඔව්, තේරුණා.", "example_sentence_phonetic": "සී, එන්-තෙන්-දී-දෝ." },
+        { "id": "w1_6_7", "target": "Repetir", "phonetic": "රේ-පේ-තීර්", "native_meaning": "නැවත කියනවා", "english": "To repeat", "example_sentence_target": "¿Puede repetir, por favor?", "example_sentence_native": "කරුණාකර නැවත කියන්න පුලුවන්ද?", "example_sentence_phonetic": "ප්වේ-දේ රේ-පේ-තීර්, පෝර් ෆ-වෝර්?" },
+        { "id": "w1_6_8", "target": "Lento", "phonetic": "ලෙන්-තෝ", "native_meaning": "සෙමින්", "english": "Slow", "example_sentence_target": "Más lento, por favor.", "example_sentence_native": "තව ටිකක් සෙමින්, කරුණාකර.", "example_sentence_phonetic": "මාස් ලෙන්-තෝ, පෝර් ෆ-වෝර්." }
+      ],
+      "sentences": [
+        { "id": "s1_6_1", "target": "Tal vez nos vemos luego.", "native": "සමහරවිට අපි පසුව හමුවෙමු.", "phonetic": "තල් වේස් නෝස් වේ-මෝස් ලු-ඒ-ගෝ." },
+        { "id": "s1_6_2", "target": "Quizás no es una buena idea.", "native": "සමහරවිට එය හොඳ අදහසක් නොවෙයි.", "phonetic": "කි-සාස් නෝ එස් උ-නා බු-ඒ-නා ඉ-දේ-ආ." },
+        { "id": "s1_6_3", "target": "Por supuesto que te ayudo.", "native": "ඇත්තෙන්ම මම ඔබට උදව් කරනවා.", "phonetic": "පෝර් සු-පු-එස්-තෝ කේ තේ අ-යූ-දෝ." },
+        { "id": "s1_6_4", "target": "— ¿Son cinco euros? — Exacto.", "native": "— මේක යුරෝ පහක්ද? — හරියටම හරි.", "phonetic": "— සොන් සින්-කෝ එ-උ-රෝස්? — එක්-සක්-තෝ." },
+        { "id": "s1_6_5", "target": "No sé dónde está.", "native": "මම දන්නේ නැහැ ඒක කොහෙද තියෙන්නේ කියලා.", "phonetic": "නෝ සේ දොන්-දේ එස්-තා." },
+        { "id": "s1_6_6", "target": "Mensaje entendido.", "native": "පණිවිඩය තේරුණා.", "phonetic": "මෙන්-සා-හේ එන්-තෙන්-දී-දෝ." },
+        { "id": "s1_6_7", "target": "No necesito que lo repitas.", "native": "ඔබ එය නැවත කියන්න අවශ්‍ය නැහැ.", "phonetic": "නෝ නේ-සේ-සී-තෝ කේ ලෝ රේ-පී-තස්." },
+        { "id": "s1_6_8", "target": "Habla más lento, por favor.", "native": "තව ටිකක් සෙමින් කතා කරන්න, කරුණාකර.", "phonetic": "ආබ්-ලා මාස් ලෙන්-තෝ, පෝර් ෆ-වෝර්." }
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_6_1", "context": "යමක් ගැන අවිනිශ්චිත බව පැවසීම.", "lines": [
+            { "speaker": "A", "target": "¿Vienes a la fiesta esta noche?", "native": "අද රෑ පාටියට එනවද?", "phonetic": "වියෙ-නෙස් ආ ලා ෆියෙස්-තා එස්-තා නෝ-චේ?" },
+            { "speaker": "B", "target": "No sé. Tal vez.", "native": "මම දන්නේ නැහැ. සමහරවිට.", "phonetic": "නෝ සේ. තල් වේස්." }
+        ]},
+        { "id": "d1_6_2", "context": "යමක් තහවුරු කිරීම.", "lines": [
+            { "speaker": "A", "target": "Entonces, ¿la reunión es a las tres?", "native": "එතකොට, රැස්වීම තුනටද?", "phonetic": "එන්-තොන්-සෙස්, ලා රේ-උ-නියොන් එස් ආ ලාස් ත්‍රෙස්?" },
+            { "speaker": "B", "target": "Sí, exacto.", "native": "ඔව්, හරියටම හරි.", "phonetic": "සී, එක්-සක්-තෝ." }
+        ]},
+        { "id": "d1_6_3", "context": "තේරුම් ගැනීමට අපහසු විට.", "lines": [
+            { "speaker": "A", "target": "Blah blah blah...", "native": "බ්ලා බ්ලා බ්ලා...", "phonetic": "..." },
+            { "speaker": "B", "target": "Lo siento, no entiendo. ¿Puede hablar más lento?", "native": "මට කණගාටුයි, මට තේරෙන්නේ නැහැ. ඔබට තව ටිකක් සෙමින් කතා කරන්න පුලුවන්ද?", "phonetic": "ලෝ සියෙන්-තෝ, නෝ එන්-ටියෙන්-දෝ. ප්වේ-දේ ආබ්-ලාර් මාස් ලෙන්-තෝ?" }
+        ]},
+        { "id": "d1_6_4", "context": "නැවත කියන්නැයි ඉල්ලා සිටීම.", "lines": [
+            { "speaker": "A", "target": "La dirección es calle Sol, número 25.", "native": "ලිපිනය සෝල් වීදිය, අංක 25.", "phonetic": "ලා දි-රෙක්-සියොන් එස් කා-යේ සෝල්, නූ-මෙ-රෝ වෙයින්-ති-සින්-කෝ." },
+            { "speaker": "B", "target": "Perdón, ¿puede repetir el número?", "native": "සමාවෙන්න, අංකය නැවත කියන්න පුලුවන්ද?", "phonetic": "පෙර්-දොන්, ප්වේ-දේ රේ-පේ-තීර් එල් නූ-මෙ-රෝ?" }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_6_1", "target": "Tal vez", "native": "සමහරවිට" },
+          { "id": "m1_6_2", "target": "No sé", "native": "මම දන්නේ නැහැ" },
+          { "id": "m1_6_3", "target": "Por supuesto", "native": "ඇත්තෙන්ම" },
+          { "id": "m1_6_4", "target": "Más lento", "native": "තව සෙමින්" }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "ස්පාඤ්ඤ භාෂාව වේගයෙන් කතා කරන බවක් පෙනෙන්නට පුළුවන. '¿Puede hablar más lento, por favor?' (ඔබට කරුණාකර තව ටිකක් සෙමින් කතා කරන්න පුලුවන්ද?) යැයි ඇසීමට බිය නොවන්න. බොහෝ අය සතුටින් උදව් කරනු ඇත.",
+      "pronunciation_tip": "'Repetir' හි 'R' අකුර වචනයක් ආරම්භයේදී එන විට, එය දිවේ කෙළවර කම්පනය කරමින් (rolled 'r') උච්චාරණය කෙරේ. මෙය පුහුණු වීමට කාලයක් ගත විය හැක.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-Confirmation" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Simple Conversation Practice",
+      "title_native": "7 වන දිනය: සරල සංවාද පුහුණුව",
+      "theme": "Review",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Hola",
-          "phonetic": "ඕ-ලා",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Hola.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Gracias",
-          "phonetic": "ග්රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Adiós",
-          "phonetic": "ආ-දියෝස්",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adiós.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "Por favor",
-          "phonetic": "පොර්-ෆා-වොර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Perdón.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_7_1", "target": "¿Cómo estás?", "phonetic": "කෝ-මෝ එස්-ටාස්?", "native_meaning": "ඔබට කොහොමද?", "english": "How are you?", "example_sentence_target": "Hola, ¿cómo estás?", "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?", "example_sentence_phonetic": "ඕ-ලා, කෝ-මෝ එස්-ටාස්?" },
+        { "id": "w1_7_2", "target": "Estoy bien", "phonetic": "එස්-තොයි බියෙන්", "native_meaning": "මම හොඳින්", "english": "I am fine", "example_sentence_target": "Estoy bien, gracias. ¿Y tú?", "example_sentence_native": "මම හොඳින්, ස්තූතියි. ඔබ?", "example_sentence_phonetic": "එස්-තොයි බියෙන්, ග්‍රා-සි-යස්. ඊ තූ?" },
+        { "id": "w1_7_3", "target": "Muy bien", "phonetic": "මුයි බියෙන්", "native_meaning": "ඉතා හොඳින්", "english": "Very well", "example_sentence_target": "Gracias, estoy muy bien.", "example_sentence_native": "ස්තූතියි, මම ඉතා හොඳින්.", "example_sentence_phonetic": "ග්‍රා-සි-යස්, එස්-තොයි මුයි බියෙන්." },
+        { "id": "w1_7_4", "target": "Así así", "phonetic": "අ-සී අ-සී", "native_meaning": "වෙනසක් නැහැ / එහෙම තමයි", "english": "So-so", "example_sentence_target": "¿Cómo estás? - Así así.", "example_sentence_native": "කොහොමද? - වෙනසක් නැහැ.", "example_sentence_phonetic": "කෝ-මෝ එස්-ටාස්? - අ-සී අ-සී." },
+        { "id": "w1_7_5", "target": "Gracias a ti", "phonetic": "ග්‍රා-සි-යස් ආ තී", "native_meaning": "ඔබටයි ස්තූති කළ යුත්තේ", "english": "Thank you (in response)", "example_sentence_target": "Gracias por venir. - Gracias a ti por invitarme.", "example_sentence_native": "ආවට ස්තූතියි. - මට ආරාධනා කළාට ඔබටයි ස්තූතියි.", "example_sentence_phonetic": "ග්‍රා-සි-යස් පෝර් වේ-නීර්. - ග්‍රා-සි-යස් ආ තී පෝර් ඉන්-වි-තාර්-මේ." },
+        { "id": "w1_7_6", "target": "Encantado / Encantada", "phonetic": "එන්-කන්-තා-දෝ / එන්-කන්-තා-දා", "native_meaning": "හමුවීම සතුටක් (පිරිමි/ගැහැණු)", "english": "Delighted (to meet you)", "example_sentence_target": "Mucho gusto. - Encantado.", "example_sentence_native": "හමුවීම සතුටක්. - (මමත්) හමුවීම සතුටක්.", "example_sentence_phonetic": "මූ-චෝ ගුස්-තෝ. - එන්-කන්-තා-දෝ." },
+        { "id": "w1_7_7", "target": "Hasta mañana", "phonetic": "අස්-තා ම-න්‍යා-නා", "native_meaning": "හෙට හමුවෙමු", "english": "See you tomorrow", "example_sentence_target": "Adiós, hasta mañana.", "example_sentence_native": "ආයුබෝවන්, හෙට හමුවෙමු.", "example_sentence_phonetic": "අ-දි-ඕස්, අස්-තා ම-න්‍යා-නා." },
+        { "id": "w1_7_8", "target": "Hasta luego", "phonetic": "අස්-තා ලු-ඒ-ගෝ", "native_meaning": "පසුව හමුවෙමු", "english": "See you later", "example_sentence_target": "Vale, hasta luego.", "example_sentence_native": "හරි, පසුව හමුවෙමු.", "example_sentence_phonetic": "වා-ලේ, අස්-තා ලු-ඒ-ගෝ." }
+      ],
+      "sentences": [
+        { "id": "s1_7_1", "target": "Hola Ana, ¿cómo estás?", "native": "ආයුබෝවන් ආනා, ඔබට කොහොමද?", "phonetic": "ඕ-ලා ආ-නා, කෝ-මෝ එස්-ටාස්?" },
+        { "id": "s1_7_2", "target": "Estoy bien, gracias por preguntar.", "native": "මම හොඳින්, ඇහුවට ස්තූතියි.", "phonetic": "එස්-තොයි බියෙන්, ග්‍රා-සි-යස් පෝර් ප්‍රෙ-ගුන්-තාර්." },
+        { "id": "s1_7_3", "target": "Estoy muy bien hoy.", "native": "මම අද ගොඩක් හොඳින්.", "phonetic": "එස්-තොයි මුයි බියෙන් ඕයි." },
+        { "id": "s1_7_4", "target": "No muy bien, un poco cansado.", "native": "එච්චර හොඳින් නෑ, ටිකක් මහන්සියි.", "phonetic": "නෝ මුයි බියෙන්, උන් පෝ-කෝ කන්-සා-දෝ." },
+        { "id": "s1_7_5", "target": "Soy de Sri Lanka. Mucho gusto.", "native": "මම ශ්‍රී ලංකාවෙන්. හමුවීම සතුටක්.", "phonetic": "සොයි දේ ශ්‍රී ලංකා. මූ-චෝ ගුස්-තෝ." },
+        { "id": "s1_7_6", "target": "Me llamo Priya. Encantada.", "native": "මගේ නම ප්‍රියා. හමුවීම සතුටක්.", "phonetic": "මේ යား-මෝ ප්‍රියා. එන්-කන්-තා-දා." },
+        { "id": "s1_7_7", "target": "Tengo que irme. Hasta mañana.", "native": "මට යන්න වෙනවා. හෙට හමුවෙමු.", "phonetic": "තෙන්-ගෝ කේ ඊර්-මේ. අස්-තා ම-න්‍යා-නා." },
+        { "id": "s1_7_8", "target": "Adiós, ¡nos vemos luego!", "native": "ආයුබෝවන්, අපි පසුව හමුවෙමු!", "phonetic": "අ-දි-ඕස්, නෝස් වේ-මෝස් ලු-ඒ-ගෝ!" }
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Hola!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ඕ-ලා"
-            },
-            {
-              "speaker": "B",
-              "target": "Hola! Gracias!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ඕ-ලා ග්රා-සියාස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gracias!",
-              "native": "ස්තූතියි!",
-              "phonetic": "ග්රා-සියාස්"
-            },
-            {
-              "speaker": "B",
-              "target": "Adiós!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ආ-දියෝස්"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Perdón!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "පොර්-ෆා-වොර් පෙර්-දොන්"
-            }
-          ]
-        }
+        { "id": "d1_7_1", "context": "සරල සුහද කතාබහක්.", "lines": [
+            { "speaker": "A", "target": "Hola, ¿cómo te llamas?", "native": "ආයුබෝවන්, ඔබේ නම කුමක්ද?", "phonetic": "ඕ-ලා, කෝ-මෝ තේ යား-මස්?" },
+            { "speaker": "B", "target": "Me llamo Rohan. ¿Y tú?", "native": "මගේ නම රොහාන්. ඔබ?", "phonetic": "මේ යား-මෝ රොහාන්. ඊ තූ?" }
+        ]},
+        { "id": "d1_7_2", "context": "ඔබ කොහෙන්ද සහ කොහොමද කියා ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Soy de España. ¿De dónde eres?", "native": "මම ස්පාඤ්ඤයේ. ඔබ කොහෙන්ද?", "phonetic": "සොයි දේ එස්-පා-න්‍යා. දේ දොන්-දේ එ-රෙස්?" },
+            { "speaker": "B", "target": "Soy de Sri Lanka. Estoy bien, gracias.", "native": "මම ශ්‍රී ලංකාවෙන්. මම හොඳින්, ස්තූතියි.", "phonetic": "සොයි දේ ශ්‍රී ලංකා. එස්-තොයි බියෙන්, ග්‍රා-සි-යස්." }
+        ]},
+        { "id": "d1_7_3", "context": "කෙනෙකු හඳුන්වා දී සමුගැනීම.", "lines": [
+            { "speaker": "A", "target": "Este es mi amigo, Juan. Mucho gusto.", "native": "මේ මගේ මිතුරා, ජුවාන්. හමුවීම සතුටක්.", "phonetic": "එස්-තේ එස් මී අ-මී-ගෝ, හුවන්. මූ-චෝ ගුස්-තෝ." },
+            { "speaker": "B", "target": "Encantado. Bueno, adiós. ¡Hasta luego!", "native": "හමුවීම සතුටක්. හොඳයි, ආයුබෝවන්. පසුව හමුවෙමු!", "phonetic": "එන්-කන්-තා-දෝ. බු-ඒ-නෝ, අ-දි-ඕස්. අස්-තා ලු-ඒ-ගෝ!" }
+        ]},
+        { "id": "d1_7_4", "context": "තේරුම් ගැනීමට අපහසු විට.", "lines": [
+            { "speaker": "A", "target": "¿Entiendes?", "native": "ඔබට තේරෙනවාද?", "phonetic": "එන්-ටියෙන්-දෙස්?" },
+            { "speaker": "B", "target": "No sé. Lo siento. Hable más lento, por favor.", "native": "මම දන්නේ නැහැ. මට කණගාටුයි. කරුණාකර තව ටිකක් සෙමින් කතා කරන්න.", "phonetic": "නෝ සේ. ලෝ සියෙන්-තෝ. ආබ්-ලේ මාස් ලෙන්-තෝ, පෝර් ෆ-වෝර්." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Spanish",
-            "answer": "Hola",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Spanish",
-            "answer": "Gracias",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Spanish",
-            "answer": "Adiós",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Hola",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Gracias",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Adiós",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Perdón",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Hola' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Hola' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'ස්තූතියි' in Spanish?",
-            "options": [
-              "Hola",
-              "Gracias",
-              "Adiós",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Gracias' means ස්තූතියි."
-          }
+          { "id": "m1_7_1", "target": "¿Cómo estás?", "native": "ඔබට කොහොමද?" },
+          { "id": "m1_7_2", "target": "Estoy bien", "native": "මම හොඳින්" },
+          { "id": "m1_7_3", "target": "Hasta luego", "native": "පසුව හමුවෙමු" },
+          { "id": "m1_7_4", "target": "Me llamo...", "native": "මගේ නම..." }
         ]
       },
-      "cultural_note": "Learning Spanish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Spanish pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "සංවාදයකදී, 'gracias' සහ 'por favor' වැනි ආචාරශීලී වචන නිතර භාවිතා කිරීමෙන් ඔබ මිත්‍රශීලී සහ ගෞරවනීය පුද්ගලයෙකු බව පෙන්වයි. මෙය ස්පාඤ්ඤ භාෂාව කතා කරන රටවල ඉතා වැදගත් වේ.",
+      "pronunciation_tip": "ප්‍රශ්නාර්ථ වාක්‍යයකදී, වාක්‍යයේ අවසානයේදී ඔබේ කටහඬේ ස්වරය ඉහළ නැංවීමට උත්සාහ කරන්න. උදාහරණයක් ලෙස '¿Cómo estás?' හි 'tás' කොටස.",
+      "progress": { "xp": 100, "streak_bonus": 50, "badge": "W1D7-Conversation" }
     }
   ]
 }
