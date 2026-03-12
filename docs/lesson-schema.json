@@ -38,22 +38,34 @@
       "type": "string"
     },
     "words": {
-      "description": "A list of vocabulary words for the day.",
+      "description": "A list of 8 vocabulary words for the day.",
       "type": "array",
-      "minItems": 1,
+      "minItems": 8,
+      "maxItems": 8,
       "items": {
         "$ref": "#/definitions/LessonItem"
       }
     },
-    "dialogues": {
-      "description": "A list of dialogues for conversational practice. Optional, but recommended.",
+    "sentences": {
+      "description": "A list of 8 standalone example sentences for practice.",
       "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "$ref": "#/definitions/SentenceItem"
+      }
+    },
+    "dialogues": {
+      "description": "A list of 4 dialogues for conversational practice.",
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
       "items": {
         "$ref": "#/definitions/Dialogue"
       }
     },
     "exercises": {
-      "description": "A collection of exercises to reinforce learning.",
+      "description": "A collection of exercises to reinforce learning. At least one matching exercise is required.",
       "$ref": "#/definitions/Exercises"
     },
     "cultural_note": {
@@ -79,6 +91,8 @@
     "targetLanguage",
     "nativeLanguage",
     "words",
+    "sentences",
+    "dialogues",
     "exercises",
     "cultural_note",
     "pronunciation_tip",
@@ -91,7 +105,7 @@
       "properties": {
         "id": { "type": "string", "description": "A unique identifier (e.g., 'w1_1_1')." },
         "target": { "type": "string", "description": "The word or phrase in the target language." },
-        "phonetic": { "type": "string", "description": "A simple phonetic spelling to aid pronunciation." },
+        "phonetic": { "type": "string", "description": "A simple phonetic spelling to aid pronunciation in the native language." },
         "native_meaning": { "type": "string", "description": "The meaning of the word in the native language." },
         "english": { "type": "string", "description": "The meaning of the word in English (for reference)." },
         "example_sentence_target": { "type": "string", "description": "An example sentence using the word in the target language." },
@@ -99,6 +113,17 @@
         "example_sentence_phonetic": { "type": "string", "description": "A simple phonetic spelling of the example sentence." }
       },
       "required": ["id", "target", "phonetic", "native_meaning", "english", "example_sentence_target", "example_sentence_native", "example_sentence_phonetic"]
+    },
+    "SentenceItem": {
+      "type": "object",
+      "description": "A single standalone sentence for practice.",
+      "properties": {
+          "id": { "type": "string", "description": "A unique identifier (e.g., 's1_1_1')." },
+          "target": { "type": "string", "description": "The sentence in the target language." },
+          "native": { "type": "string", "description": "The sentence translated into the native language." },
+          "phonetic": { "type": "string", "description": "A simple phonetic spelling of the sentence." }
+      },
+      "required": ["id", "target", "native", "phonetic"]
     },
     "Dialogue": {
       "type": "object",
@@ -128,7 +153,7 @@
     },
     "Exercises": {
       "type": "object",
-      "description": "An object containing different types of exercises.",
+      "description": "An object containing different types of exercises. At least one matching exercise is required.",
       "properties": {
         "fillBlanks": {
           "type": "array",
@@ -139,7 +164,9 @@
           "items": { "$ref": "#/definitions/MultipleChoiceExercise" }
         },
         "matching": {
+          "description": "An exercise where the user matches target language sentences to their native language translations. Exactly one set of matching pairs is required.",
           "type": "array",
+          "minItems": 1,
           "items": { "$ref": "#/definitions/MatchingPair" }
         },
         "sentenceScramble": {
@@ -148,7 +175,8 @@
             "$ref": "#/definitions/SentenceScrambleExercise"
           }
         }
-      }
+      },
+      "required": ["matching"]
     },
     "FillBlankExercise": {
       "type": "object",
@@ -178,6 +206,7 @@
     },
     "MatchingPair": {
       "type": "object",
+      "description": "A pair of sentences (one target, one native) for a matching exercise.",
       "properties": {
         "id": { "type": "string" },
         "target": { "type": "string" },
