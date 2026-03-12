@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,116 +8,530 @@
     {
       "week": 1,
       "day": 1,
-      "title": "1 වන සතිය, 1 වන දිනය: මූලික ආචාර",
-      "title_native": "Tydzień 1, Dzień 1: Podstawowe powitania",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන දිනය: ආචාර කිරීම්",
+      "title_native": "Dzień 1: Powitania",
+      "theme": "මූලික කතාබස්",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id":"w1_1_1","target":"Dzień dobry","phonetic":"ජෙන් ඩොබ්රි","native_meaning":"සුබ දවසක්","english":"Good day","example_sentence_target":"Dzień dobry, jak się masz?","example_sentence_native":"සුබ දවසක්, ඔබට කොහොමද?","example_sentence_phonetic":"ජෙන් ඩොබ්රි, යක් ශෙ මාෂ්?"},
-        {"id":"w1_1_2","target":"Cześć","phonetic":"චෙශ්ච්","native_meaning":"ආයුබෝවන් (අවිධිමත්)","english":"Hi (informal)","example_sentence_target":"Cześć, co u ciebie?","example_sentence_native":"ආයුබෝවන්, ඔයාට කොහොමද?","example_sentence_phonetic":"චෙශ්ච්, සෝ උ චෙබ්යේ?"},
-        {"id":"w1_1_3","target":"Dziękuję","phonetic":"ජෙන්කුයේ","native_meaning":"ස්තූතියි","english":"Thank you","example_sentence_target":"Dziękuję za pomoc.","example_sentence_native":"උදව්වට ස්තූතියි.","example_sentence_phonetic":"ජෙන්කුයේ ස පෝමොස්."},
-        {"id":"w1_1_4","target":"Proszę","phonetic":"ප්‍රෝශෙ","native_meaning":"කරุณාකර / ඔබව සාදරයෙන් පිළිගනිමු","english":"Please / You're welcome","example_sentence_target":"Proszę, oto twoja kawa.","example_sentence_native":"කරุณාකර, මෙන්න ඔබේ කෝපි.","example_sentence_phonetic":"ප්‍රෝශෙ, ඕතො ต्वोजा කාවා."},
-        {"id":"w1_1_5","target":"Tak","phonetic":"තක්","native_meaning":"ඔව්","english":"Yes","example_sentence_target":"Czy mówisz po polsku? Tak.","example_sentence_native":"ඔබ පෝලන්ත භාෂාව කතා කරනවාද? ඔව්.","example_sentence_phonetic":"චි මූවිශ් පො පොල්ස්කු? තක්."},
-        {"id":"w1_1_6","target":"Nie","phonetic":"න්‍යේ","native_meaning":"නැහැ","english":"No","example_sentence_target":"Nie, nie rozumiem.","example_sentence_native":"නැහැ, මට තේරෙන්නේ නැහැ.","example_sentence_phonetic":"න්‍යේ, න්‍යේ රොසුම්යෙන්."},
-        {"id":"w1_1_7","target":"Przepraszam","phonetic":"ප්ෂෙප්රාශම්","native_meaning":"සමාවන්න","english":"Excuse me / I'm sorry","example_sentence_target":"Przepraszam, gdzie jest toaleta?","example_sentence_native":"සමාවන්න, වැසිකිළිය කොහේද?","example_sentence_phonetic":"ප්ෂෙප්රාශම්, ග්ජේ යෙස්ට් තොවලෙතා?"},
-        {"id":"w1_1_8","target":"Do widzenia","phonetic":"දෝ විද්සෙන්‍යා","native_meaning":"සුබ ගමන් (විධිමත්)","english":"Goodbye (formal)","example_sentence_target":"Do widzenia, miłego dnia!","example_sentence_native":"සුබ ගමන්, සුබ දවසක්!","example_sentence_phonetic":"දෝ විද්සෙන්‍යා, මිවේගො ද්නියා!"}
+        { "id": "w1_1_1", "target": "Cześć", "phonetic": "චෙස්ච්", "native_meaning": "හායි / ආයුබෝවන් (අවිධිමත්)", "english": "Hi / Hello (informal)", "example_sentence_target": "Cześć, jak się masz?", "example_sentence_native": "හායි, ඔයාට කොහොමද?", "example_sentence_phonetic": "චෙස්ච්, යක් ශෙ මාෂ්?" },
+        { "id": "w1_1_2", "target": "Dzień dobry", "phonetic": "ජෙන් දොබ්රි", "native_meaning": "සුබ උදෑසනක් / සුබ දවසක්", "english": "Good morning / Good day", "example_sentence_target": "Dzień dobry, panie Kowalski.", "example_sentence_native": "සුබ දවසක්, කොවාල්ස්කි මහත්මයා.", "example_sentence_phonetic": "ජෙන් දොබ්රි, පානියේ කොවාල්ස්කි." },
+        { "id": "w1_1_3", "target": "Do widzenia", "phonetic": "දො විද්සෙනියා", "native_meaning": "ගිහින් එන්නම්", "english": "Goodbye", "example_sentence_target": "Do widzenia, do zobaczenia jutro.", "example_sentence_native": "ගිහින් එන්නම්, හෙට හමුවෙමු.", "example_sentence_phonetic": "දො විද්සෙනියා, දො සොබචෙනියා යුත්රො." },
+        { "id": "w1_1_4", "target": "Dobry wieczór", "phonetic": "දොබ්රි ව්යේචූර්", "native_meaning": "සුබ සන්ධ්‍යාවක්", "english": "Good evening", "example_sentence_target": "Dobry wieczór, co słychać?", "example_sentence_native": "සුබ සන්ධ්‍යාවක්, මොනවද අලුත් තොරතුරු?", "example_sentence_phonetic": "දොබ්රි ව්යේචූර්, තසෝ ස්විහාච්?" },
+        { "id": "w1_1_5", "target": "Dobranoc", "phonetic": "දොබ්‍රානොට්ස්", "native_meaning": "සුබ රාත්‍රියක්", "english": "Goodnight", "example_sentence_target": "Dobranoc, słodkich snów.", "example_sentence_native": "සුබ රාත්‍රියක්, සුබ සිහින.", "example_sentence_phonetic": "දොබ්‍රානොට්ස්, ස්වොත්කිහ් ස්නූෆ්." },
+        { "id": "w1_1_6", "target": "Pa", "phonetic": "පා", "native_meaning": "බායි (ඉතා අවිධිමත්)", "english": "Bye (very informal)", "example_sentence_target": "Muszę iść, pa!", "example_sentence_native": "මට යන්න වෙනවා, බායි!", "example_sentence_phonetic": "මුශෙ ඉස්ච්, පා!" },
+        { "id": "w1_1_7", "target": "Na razie", "phonetic": "නා රාශියේ", "native_meaning": "දැනට ගිහින් එන්නම්", "english": "See you / For now", "example_sentence_target": "Na razie, trzymaj się.", "example_sentence_native": "දැනට ගිහින් එන්නම්, පරිස්සමින්.", "example_sentence_phonetic": "නා රාශියේ, ත(ර්)ෂිමායි ශෙ." },
+        { "id": "w1_1_8", "target": "Witaj", "phonetic": "විතායි", "native_meaning": "සාදරයෙන් පිළිගන්නවා", "english": "Welcome", "example_sentence_target": "Witaj w moim domu.", "example_sentence_native": "මගේ ගෙදරට සාදරයෙන් පිළිගන්නවා.", "example_sentence_phonetic": "විතායි ෆ් මොයිම් දොමු." }
       ],
       "sentences": [
-        {"id":"s1_1_1","target":"Dzień dobry, panie Kowalski.","native":"සුබ දවසක්, කොවාල්ස්කි මහත්මයා.","phonetic":"ජෙන් ඩොබ්රි, පාන්යේ කොවාල්ස්කි."},
-        {"id":"s1_1_2","target":"Cześć, Ania!","native":"ආයුබෝවන්, ආනියා!","phonetic":"චෙශ්ච්, ආනියා!"},
-        {"id":"s1_1_3","target":"Bardzo dziękuję.","native":"බොහොම ස්තූතියි.","phonetic":"බර්ඩ්සෝ ජෙන්කුයේ."},
-        {"id":"s1_1_4","target":"Proszę, wejdź.","native":"කරුණාකර ඇතුලට එන්න.","phonetic":"ප්‍රෝශෙ, වෙජ්ච්."},
-        {"id":"s1_1_5","target":"Tak, to jest prawda.","native":"ඔව්, එය ඇත්ත.","phonetic":"තක්, තො යෙස්ට් ප්‍රව්ඩා."},
-        {"id":"s1_1_6","target":"Nie, dziękuję.","native":"නැහැ, ස්තූතියි.","phonetic":"න්‍යේ, ජෙන්කුයේ."},
-        {"id":"s1_1_7","target":"Przepraszam za spóźnienie.","native":"ප්‍රමාද වීම ගැන සමාවන්න.","phonetic":"ප්ෂෙප්රාශම් ස ස්පූශ්න්‍යේන්‍යේ."},
-        {"id":"s1_1_8","target":"Do widzenia jutro.","native":"හෙට හමුවෙමු.","phonetic":"දෝ විද්සෙන්‍යා යුට්රෝ."}
+          { "id": "s1_1_1", "target": "Cześć Aniu!", "native": "හායි අන්යා!", "phonetic": "චෙස්ච් අනිඋ!" },
+          { "id": "s1_1_2", "target": "Dzień dobry, pani.", "native": "සුබ දවසක්, නෝනා.", "phonetic": "ජෙන් දොබ්රි, පානි." },
+          { "id": "s1_1_3", "target": "To ja, do widzenia.", "native": "මේ මම, ගිහින් එන්නම්.", "phonetic": "තො යා, දො විද්සෙනියා." },
+          { "id": "s1_1_4", "target": "Dobry wieczór wszystkim.", "native": "හැමෝටම සුබ සන්ධ්‍යාවක්.", "phonetic": "දොබ්රි ව්යේචූර් ෆ්ෂිස්ත්කිම්." },
+          { "id": "s1_1_5", "target": "Dobranoc, mamo.", "native": "සුබ රාත්‍රියක්, අම්මා.", "phonetic": "දොබ්‍රානොට්ස්, මමො." },
+          { "id": "s1_1_6", "target": "Pa, do jutra!", "native": "බායි, හෙට හමුවෙමු!", "phonetic": "පා, දො යුත්රා!" },
+          { "id": "s1_1_7", "target": "Witaj w Polsce.", "native": "පෝලන්තයට සාදරයෙන් පිළිගන්නවා.", "phonetic": "විතායි ෆ් පොල්ස්චේ." },
+          { "id": "s1_1_8", "target": "Na razie, miłego dnia.", "native": "දැනට ගිහින් එන්නම්, සුබ දවසක්.", "phonetic": "නා රාශියේ, මිවෙගො ද්නියා." }
       ],
       "dialogues": [
         {
-          "id": "d1_1_1", "context": "කඩයකදී ආචාර කිරීම.",
+          "id": "d1_1_1",
+          "context": "වෙළඳසැලකට ඇතුළු වීම.",
           "lines": [
-            {"speaker": "A", "target": "Dzień dobry.", "native": "සුබ දවසක්.", "phonetic": "ජෙන් ඩොබ්රි."},
-            {"speaker": "B", "target": "Dzień dobry. W czym mogę pomóc?", "native": "සුබ දවසක්. මම ඔබට උදව් කරන්නේ කෙසේද?", "phonetic": "ජෙන් ඩොබ්රි. ෆ් චිම් මොගෙ පෝමූස්?"}
+            { "speaker": "A", "target": "Dzień dobry.", "native": "සුබ දවසක්.", "phonetic": "ජෙන් දොබ්රි." },
+            { "speaker": "B", "target": "Dzień dobry. W czym mogę pomóc?", "native": "සුබ දවසක්. මම ඔබට උදව් කළ හැක්කේ කෙසේද?", "phonetic": "ජෙන් දොබ්රි. ෆ් චිම් මොගෙ පොමුච්?" }
           ]
         },
         {
-          "id": "d1_1_2", "context": "මිතුරෙකුට ආචාර කිරීම.",
+          "id": "d1_1_2",
+          "context": "මිතුරෙකුගෙන් සමුගැනීම.",
           "lines": [
-            {"speaker": "A", "target": "Cześć, Kasia!", "native": "ආයුබෝවන්, කාශියා!", "phonetic": "චෙශ්ච්, කාශියා!"},
-            {"speaker": "B", "target": "Cześć, Tomek! Co słychać?", "native": "ආයුබෝවන්, තෝමෙක්! මොකද වෙන්නේ?", "phonetic": "චෙශ්ච්, තෝමෙක්! සෝ ස්විහාච්?"}
+            { "speaker": "A", "target": "Muszę już iść. Cześć!", "native": "මට දැන් යන්න වෙනවා. හායි!", "phonetic": "මුශෙ යුෂ් ඉස්ච්. චෙස්ච්!" },
+            { "speaker": "B", "target": "Na razie! Do zobaczenia!", "native": "දැනට ගිහින් එන්නම්! නැවත හමුවෙමු!", "phonetic": "නා රාශියේ! දො සොබචෙනියා!" }
           ]
         },
         {
-          "id": "d1_1_3", "context": "යමෙකුට ස්තූති කිරීම.",
+          "id": "d1_1_3",
+          "context": "සවස් වරුවේ කෙනෙකුට ආචාර කිරීම.",
           "lines": [
-            {"speaker": "A", "target": "Masz, to dla ciebie.", "native": "මෙන්න, මේක ඔයාට.", "phonetic": "මාෂ්, තො ද්ලා චෙබ්යේ."},
-            {"speaker": "B", "target": "Och, dziękuję bardzo!", "native": "අනේ, බොහොම ස්තූතියි!", "phonetic": "ඕහ්, ජෙන්කුයේ බර්ඩ්සෝ!"}
+            { "speaker": "A", "target": "Dobry wieczór, panie Janie.", "native": "සුබ සන්ධ්‍යාවක්, ජාන් මහත්මයා.", "phonetic": "දොබ්රි ව්යේචූර්, පානියේ යානියේ." },
+            { "speaker": "B", "target": "Dobry wieczór. Miło pana widzieć.", "native": "සුබ සන්ධ්‍යාවක්. ඔබව දැකීම සතුටක්.", "phonetic": "දොබ්රි ව්යේචූර්. මිවො පානා විද්සෙච්." }
           ]
         },
         {
-          "id": "d1_1_4", "context": "යමෙකුගෙන් සමාව අයැදීම.",
+          "id": "d1_1_4",
+          "context": "නින්දට යාමට පෙර.",
           "lines": [
-            {"speaker": "A", "target": "Przepraszam, czy może mi pan pomóc?", "native": "සමාවන්න, ඔබට මට උදව් කළ හැකිද?", "phonetic": "ප්ෂෙප්රාශම්, චි mõże මී පන් පෝමූස්?"},
-            {"speaker": "B", "target": "Tak, oczywiście. O co chodzi?", "native": "ඔව්, ඇත්තෙන්ම. මොකක්ද කාරණය?", "phonetic": "තක්, ඔචිවිශ්චියේ. ඕ සෝ හොජි?"}
+            { "speaker": "A", "target": "Jestem śpiący. Dobranoc.", "native": "මට නින්ද මතයි. සුබ රාත්‍රියක්.", "phonetic": "යෙස්තෙම් ශ්පියොන්සි. දොබ්‍රානොට්ස්." },
+            { "speaker": "B", "target": "Dobranoc, kochanie.", "native": "සුබ රාත්‍රියක්, ආදරණීය.", "phonetic": "දොබ්‍රානොට්ස්, කොහානියේ." }
           ]
         }
       ],
       "exercises": {
         "matching": [
-          {"id": "m1_1_1", "target": "Dzień dobry", "native": "සුබ දවසක්"},
-          {"id": "m1_1_2", "target": "Dziękuję", "native": "ස්තූතියි"},
-          {"id": "m1_1_3", "target": "Nie", "native": "නැහැ"},
-          {"id": "m1_1_4", "target": "Przepraszam", "native": "සමාවන්න"},
-          {"id": "m1_1_5", "target": "Cześć", "native": "ආයුබෝවන් (අවිධිමත්)"}
+          { "id": "m1_1_1", "target": "Cześć", "native": "හායි" },
+          { "id": "m1_1_2", "target": "Dzień dobry", "native": "සුබ දවසක්" },
+          { "id": "m1_1_3", "target": "Do widzenia", "native": "ගිහින් එන්නම්" },
+          { "id": "m1_1_4", "target": "Dobranoc", "native": "සුබ රාත්‍රියක්" }
         ]
       },
-      "cultural_note": "පෝලන්තයේ, 'Dzień dobry' (ජෙන් ඩොබ්රි) දිවා කාලයේදී ආගන්තුකයන්ට ආචාර කිරීම සඳහා සම්මත විධිමත් ක්‍රමයයි. මිතුරන් අතර, 'Cześć' (චෙශ්ච්) බහුලව භාවිතා වේ.",
-      "pronunciation_tip": "'Dziękuję' (ජෙන්කුයේ) හි 'ę' අක්ෂරය නාසික 'එන්' ශබ්දයක් ලෙස උච්චාරණය කෙරේ. එය 'ජෙන්-කු-යේ' වැනිය.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "PL-W1D1-Greetings"}
+      "cultural_note": "පෝලන්තයේදී 'Dzień dobry' (සුබ දවසක්) යනු ඉතා සුලභ හා විධිමත් ආචාර කිරීමකි. එය ඔබ නොදන්නා අයට සහ ගෞරව දැක්විය යුතු අයට භාවිතා කරයි.",
+      "pronunciation_tip": "'Cześć' හි 'cz' ශබ්දය සිංහල 'ච' ශබ්දයට සමාන වන අතර, 'ść' යනු මෘදු 'ශ' ශබ්දයකි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "PL_W1D1_Greetings" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Polish", "nativeLanguage": "Sinhala",
-      "words": [{"id":"w1_2_1","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_2","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_3","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_4","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_5","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_6","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_7","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_2_8","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."}],
-      "sentences": [], "dialogues": [], "exercises": {"matching": []}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "PL-W1D2-Placeholder"}
+      "title": "2 වන දිනය: ඔබව හඳුන්වා දීම",
+      "title_native": "Dzień 2: Przedstawianie się",
+      "theme": "මූලික කතාබස්",
+      "path": "survival",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_2_1", "target": "Jestem...", "phonetic": "යෙස්තෙම්...", "native_meaning": "මම...", "english": "I am...", "example_sentence_target": "Jestem Nimal.", "example_sentence_native": "මම නිමල්.", "example_sentence_phonetic": "යෙස්තෙම් නිමාල්." },
+        { "id": "w1_2_2", "target": "Nazywam się...", "phonetic": "නාසිවම් ශෙ...", "native_meaning": "මගේ නම...", "english": "My name is...", "example_sentence_target": "Nazywam się Anna.", "example_sentence_native": "මගේ නම ඇනා.", "example_sentence_phonetic": "නාසිවම් ශෙ ඇනා." },
+        { "id": "w1_2_3", "target": "Miło mi", "phonetic": "මිවො මි", "native_meaning": "හමුවීම සතුටක්", "english": "Nice to meet you", "example_sentence_target": "Cześć, jestem Adam. Miło mi.", "example_sentence_native": "හායි, මම ආදම්. හමුවීම සතුටක්.", "example_sentence_phonetic": "චෙස්ච්, යෙස්තෙම් ආදම්. මිවො මි." },
+        { "id": "w1_2_4", "target": "Pani", "phonetic": "පානි", "native_meaning": "නෝනා / මහත්මිය", "english": "Mrs. / Ms.", "example_sentence_target": "To jest pani Nowak.", "example_sentence_native": "මේ ඉන්නේ නෝවාක් මහත්මිය.", "example_sentence_phonetic": "තො යෙස්ත් පානි නෝවාක්." },
+        { "id": "w1_2_5", "target": "Pan", "phonetic": "පාන්", "native_meaning": "මහත්මයා", "english": "Mr. / Sir", "example_sentence_target": "Dzień dobry, panie Wiśniewski.", "example_sentence_native": "සුබ දවසක්, විස්නිව්ස්කි මහත්මයා.", "example_sentence_phonetic": "ජෙන් දොබ්රි, පානියේ විස්නිව්ස්කි." },
+        { "id": "w1_2_6", "target": "Mieszkam w...", "phonetic": "ම්යේෂ්කම් ෆ්...", "native_meaning": "මම ජීවත් වෙන්නේ...", "english": "I live in...", "example_sentence_target": "Mieszkam w Warszawie.", "example_sentence_native": "මම ජීවත් වෙන්නේ වෝර්සෝ වල.", "example_sentence_phonetic": "ම්යේෂ්කම් ෆ් වර්ෂාවියේ." },
+        { "id": "w1_2_7", "target": "Jestem ze...", "phonetic": "යෙස්තෙම් සෙ...", "native_meaning": "මම ... සිට", "english": "I am from...", "example_sentence_target": "Jestem ze Sri Lanki.", "example_sentence_native": "මම ශ්‍රී ලංකාවෙන්.", "example_sentence_phonetic": "යෙස්තෙම් සෙ ශ්‍රී ලංකි." },
+        { "id": "w1_2_8", "target": "A ty?", "phonetic": "ආ ති?", "native_meaning": "ඔයා?", "english": "And you?", "example_sentence_target": "Jestem z Polski. A ty?", "example_sentence_native": "මම පෝලන්තයෙන්. ඔයා?", "example_sentence_phonetic": "යෙස්තෙම් ස් පොල්ස්කි. ආ ති?" }
+      ],
+      "sentences": [
+        { "id": "s1_2_1", "target": "Jestem studentem.", "native": "මම ශිෂ්‍යයෙක්.", "phonetic": "යෙස්තෙම් ස්තුදෙන්තෙම්." },
+        { "id": "s1_2_2", "target": "Nazywam się Sunil Perera.", "native": "මගේ නම සුනිල් පෙරේරා.", "phonetic": "නාසිවම් ශෙ සුනිල් පෙරේරා." },
+        { "id": "s1_2_3", "target": "Miło mi cię poznać.", "native": "ඔබව හමුවීම සතුටක්.", "phonetic": "මිවො මි චෙ පොස්නාච්." },
+        { "id": "s1_2_4", "target": "Czy to pan Lewandowski?", "native": "මේ ඉන්නේ ලෙවන්ඩොව්ස්කි මහත්මයාද?", "phonetic": "චි තො පාන් ලෙවන්ඩොව්ස්කි?" },
+        { "id": "s1_2_5", "target": "Pani Maria jest nauczycielką.", "native": "මාරියා මහත්මිය ගුරුවරියක්.", "phonetic": "පානි මාරියා යෙස්ත් නාඋචිචෙල්කොන්." },
+        { "id": "s1_2_6", "target": "Mieszkam w Krakowie.", "native": "මම ජීවත් වෙන්නේ ක්‍රැකෝව් වල.", "phonetic": "ම්යේෂ්කම් ෆ් ක්‍රකොවියේ." },
+        { "id": "s1_2_7", "target": "On jest z Niemiec.", "native": "ඔහු ජර්මනියෙන්.", "phonetic": "ඔන් යෙස්ත් ස් නියේම්යේච්." },
+        { "id": "s1_2_8", "target": "Mam na imię Piotr. A ty?", "native": "මගේ නම පියෝතර්. ඔයා?", "phonetic": "මම් නා ඉම්යේ පියෝතර්. ආ ති?" }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "පළමු වරට කෙනෙකු හමුවීම.",
+          "lines": [
+            { "speaker": "A", "target": "Cześć, nazywam się Jan.", "native": "හායි, මගේ නම යාන්.", "phonetic": "චෙස්ච්, නාසිවම් ශෙ යාන්." },
+            { "speaker": "B", "target": "Cześć, jestem Kasia. Miło mi.", "native": "හායි, මම කාශියා. හමුවීම සතුටක්.", "phonetic": "චෙස්ච්, යෙස්තෙම් කාශියා. මිවො මි." }
+          ]
+        },
+        {
+          "id": "d1_2_2",
+          "context": "විධිමත් හඳුන්වාදීමක්.",
+          "lines": [
+            { "speaker": "A", "target": "Dzień dobry, jestem Adam Nowak.", "native": "සුබ දවසක්, මම ආදම් නෝවාක්.", "phonetic": "ජෙන් දොබ්රි, යෙස්තෙම් ආදම් නෝවාක්." },
+            { "speaker": "B", "target": "Dzień dobry. Nazywam się Ewa Zielińska. Miło mi pana poznać.", "native": "සුබ දවසක්. මගේ නම ඒවා ශීලින්ස්කා. ඔබව හමුවීම සතුටක්.", "phonetic": "ජෙන් දොබ්රි. නාසිවම් ශෙ ඒවා ශීලින්ස්කා. මිවො මි පානා පොස්නාච්." }
+          ]
+        },
+         {
+          "id": "d1_2_3",
+          "context": "ඔබ කොහේද ජීවත් වෙන්නේ දැයි කීම.",
+          "lines": [
+            { "speaker": "A", "target": "Jestem z Polski. Mieszkam w Gdańsku.", "native": "මම පෝලන්තයෙන්. මම ජීවත් වෙන්නේ ග්ඩාන්ස්ක් වල.", "phonetic": "යෙස්තෙම් ස් පොල්ස්කි. ම්යේෂ්කම් ෆ් ග්ඩාන්ස්කු." },
+            { "speaker": "B", "target": "A ja jestem ze Sri Lanki i mieszkam w Warszawie.", "native": "මම ශ්‍රී ලංකාවෙන් සහ මම ජීවත් වෙන්නේ වෝර්සෝ වල.", "phonetic": "ආ යා යෙස්තෙම් සෙ ශ්‍රී ලංකි ඉ ම්යේෂ්කම් ෆ් වර්ෂාවියේ." }
+          ]
+        },
+        {
+          "id": "d1_2_4",
+          "context": "කෙටි හඳුන්වාදීමක්.",
+          "lines": [
+            { "speaker": "A", "target": "Cześć. Jestem Monika. A ty?", "native": "හායි. මම මොනිකා. ඔයා?", "phonetic": "චෙස්ච්. යෙස්තෙම් මොනිකා. ආ ති?" },
+            { "speaker": "B", "target": "Nazywam się Paweł.", "native": "මගේ නම පවෙල්.", "phonetic": "නාසිවම් ශෙ පවෙල්." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_2_1", "target": "Jestem...", "native": "මම..." },
+          { "id": "m1_2_2", "target": "Nazywam się...", "native": "මගේ නම..." },
+          { "id": "m1_2_3", "target": "Miło mi", "native": "හමුවීම සතුටක්" },
+          { "id": "m1_2_4", "target": "Jestem ze Sri Lanki", "native": "මම ශ්‍රී ලංකාවෙන්" }
+        ]
+      },
+      "cultural_note": "පෝලන්ත භාෂාවේදී, ඔබ කතා කරන පුද්ගලයා අනුව විධිමත් (Pan/Pani) සහ අවිධිමත් භාෂාව අතර වෙනස හඳුනා ගැනීම වැදගත් වේ.",
+      "pronunciation_tip": "'Nazywam się' හි 'ę' අක්ෂරය නාසික 'එ' ශබ්දයක් ලෙස උච්චාරණය කරයි. එය 'එන්' ශබ්දයට සමානයි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "PL_W1D2_Intro" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Polish", "nativeLanguage": "Sinhala",
-      "words": [{"id":"w1_3_1","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_2","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_3","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_4","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_5","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_6","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_7","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_3_8","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."}],
-      "sentences": [], "dialogues": [], "exercises": {"matching": []}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "PL-W1D3-Placeholder"}
+      "title": "3 වන දිනය: කෙනෙකුගේ නම ඇසීම",
+      "title_native": "Dzień 3: Pytanie o imię",
+      "theme": "මූලික කතාබස්",
+      "path": "survival",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_3_1", "target": "Jak masz na imię?", "phonetic": "යක් මාෂ් නා ඉම්යේ?", "native_meaning": "ඔයාගේ නම මොකක්ද? (අවිධිමත්)", "english": "What is your name? (informal)", "example_sentence_target": "Cześć, jak masz na imię?", "example_sentence_native": "හායි, ඔයාගේ නම මොකක්ද?", "example_sentence_phonetic": "චෙස්ච්, යක් මාෂ් නා ඉම්යේ?" },
+        { "id": "w1_3_2", "target": "Jak się nazywasz?", "phonetic": "යක් ශෙ නාසිවාෂ්?", "native_meaning": "ඔබේ නම කුමක්ද? (අවිධිමත්)", "english": "What is your name? (informal, common)", "example_sentence_target": "Przepraszam, jak się nazywasz?", "example_sentence_native": "සමාවෙන්න, ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "ප්ෂෙප්‍රාශම්, යක් ශෙ නාසිවාෂ්?" },
+        { "id": "w1_3_3", "target": "Jak ma pan na imię?", "phonetic": "යක් මා පාන් නා ඉම්යේ?", "native_meaning": "ඔබතුමාගේ නම කුමක්ද?", "english": "What is your name? (formal, to a man)", "example_sentence_target": "Dzień dobry, jak ma pan na imię?", "example_sentence_native": "සුබ දවසක්, ඔබතුමාගේ නම කුමක්ද?", "example_sentence_phonetic": "ජෙන් දොබ්රි, යක් මා පාන් නා ඉම්යේ?" },
+        { "id": "w1_3_4", "target": "Jak ma pani na imię?", "phonetic": "යක් මා පානි නා ඉම්යේ?", "native_meaning": "ඔබතුමියගේ නම කුමක්ද?", "english": "What is your name? (formal, to a woman)", "example_sentence_target": "Przepraszam, jak ma pani na imię?", "example_sentence_native": "සමාවෙන්න, ඔබතුමියගේ නම කුමක්ද?", "example_sentence_phonetic": "ප්ෂෙප්‍රාශම්, යක් මා පානි නා ඉම්යේ?" },
+        { "id": "w1_3_5", "target": "To jest...", "phonetic": "තො යෙස්ත්...", "native_meaning": "මේ ඉන්නේ...", "english": "This is...", "example_sentence_target": "To jest mój przyjaciel, Piotr.", "example_sentence_native": "මේ ඉන්නේ මගේ මිතුරා, පියෝතර්.", "example_sentence_phonetic": "තො යෙස්ත් මූයි ප(ර්)ෂියාචෙල්, පියෝතර්." },
+        { "id": "w1_3_6", "target": "mój", "phonetic": "මූයි", "native_meaning": "මගේ (පුරුෂ ලිංග)", "english": "my (masculine)", "example_sentence_target": "To jest mój syn.", "example_sentence_native": "මේ මගේ පුතා.", "example_sentence_phonetic": "තො යෙස්ත් මූයි සින්." },
+        { "id": "w1_3_7", "target": "moja", "phonetic": "මොයා", "native_meaning": "මගේ (ස්ත්‍රී ලිංග)", "english": "my (feminine)", "example_sentence_target": "To jest moja córka.", "example_sentence_native": "මේ මගේ දුව.", "example_sentence_phonetic": "තො යෙස්ත් මොයා චූර්කා." },
+        { "id": "w1_3_8", "target": "kolega / koleżanka", "phonetic": "කොලේගා / කොලෙශාන්කා", "native_meaning": "සහෘදයා / සහෘදිය", "english": "colleague (male/female)", "example_sentence_target": "To jest moja koleżanka z pracy.", "example_sentence_native": "මේ ඉන්නේ මගේ වැඩපලේ සහෘදිය.", "example_sentence_phonetic": "තො යෙස්ත් මොයා කොලෙශාන්කා ස් ප්‍රාසි." }
+      ],
+      "sentences": [
+          { "id": "s1_3_1", "target": "Jak masz na imię, kolego?", "native": "ඔයාගේ නම මොකක්ද, සහෘදයා?", "phonetic": "යක් මාෂ් නා ඉම්යේ, කොලෙගො?" },
+          { "id": "s1_3_2", "target": "Mój tata ma na imię Jan.", "native": "මගේ තාත්තාගේ නම ජාන්.", "phonetic": "මූයි තාතා මා නා ඉම්යේ යාන්." },
+          { "id": "s1_3_3", "target": "Jak się nazywa pani córka?", "native": "ඔබතුමියගේ දුවගේ නම කුමක්ද?", "phonetic": "යක් ශෙ නාසිවා පානි චූර්කා?" },
+          { "id": "s1_3_4", "target": "To jest moja żona, Ewa.", "native": "මේ මගේ බිරිඳ, ඒවා.", "phonetic": "තො යෙස්ත් මොයා ශෝනා, ඒවා." },
+          { "id": "s1_3_5", "target": "To jest mój mąż, Adam.", "native": "මේ මගේ සැමියා, ආදම්.", "phonetic": "තො යෙස්ත් මූයි මොන්ෂ්, ආදම්." },
+          { "id": "s1_3_6", "target": "Jak ma na imię twój brat?", "native": "ඔයාගේ සහෝදරයාගේ නම මොකක්ද?", "phonetic": "යක් මා නා ඉම්යේ තෆූයි බ්‍රාත්?" },
+          { "id": "s1_3_7", "target": "To jest moja nowa koleżanka.", "native": "මේ මගේ අලුත් සහෘදිය.", "phonetic": "තො යෙස්ත් මොයා නෝවා කොලෙශාන්කා." },
+          { "id": "s1_3_8", "target": "Przepraszam, jak pan się nazywa?", "native": "සමාවෙන්න, ඔබතුමාගේ නම කුමක්ද?", "phonetic": "ප්ෂෙප්‍රාශම්, යක් පාන් ශෙ නාසිවා?" }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "සාදයකදී කෙනෙකුගේ නම ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Cześć, jestem Marek. A ty, jak masz na imię?", "native": "හායි, මම මාරෙක්. ඔයාගේ නම මොකක්ද?", "phonetic": "චෙස්ච්, යෙස්තෙම් මාරෙක්. ආ ති, යක් මාෂ් නා ඉම්යේ?" },
+            { "speaker": "B", "target": "Mam na imię Aneta. Miło mi.", "native": "මගේ නම අනේතා. හමුවීම සතුටක්.", "phonetic": "මම් නා ඉම්යේ අනේතා. මිවො මි." }
+          ]
+        },
+        {
+          "id": "d1_3_2",
+          "context": "කාර්යාලයේදී විධිමත් ලෙස නම ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Dzień dobry. Przepraszam, jak ma pani na imię?", "native": "සුබ දවසක්. සමාවෙන්න, ඔබතුමියගේ නම කුමක්ද?", "phonetic": "ජෙන් දොබ්රි. ප්ෂෙප්‍රාශම්, යක් මා පානි නා ඉම්යේ?" },
+            { "speaker": "B", "target": "Nazywam się Kowalska, Anna Kowalska.", "native": "මගේ නම කොවාල්ස්කා, ඇනා කොවාල්ස්කා.", "phonetic": "නාසිවම් ශෙ කොවාල්ස්කා, ඇනා කොවාල්ස්කා." }
+          ]
+        },
+        {
+          "id": "d1_3_3",
+          "context": "තුන්වන පුද්ගලයෙකු හඳුන්වා දීම.",
+          "lines": [
+            { "speaker": "A", "target": "Kasiu, to jest mój kolega, Paweł.", "native": "කාශියා, මේ ඉන්නේ මගේ සහෘදයා, පවෙල්.", "phonetic": "කාශිඋ, තො යෙස්ත් මූයි කොලේගා, පවෙල්." },
+            { "speaker": "B", "target": "Cześć Paweł, miło mi cię poznać.", "native": "හායි පවෙල්, ඔබව හමුවීම සතුටක්.", "phonetic": "චෙස්ච් පවෙල්, මිවො මි චෙ පොස්නාච්." }
+          ]
+        },
+        {
+          "id": "d1_3_4",
+          "context": "නම පැහැදිලි නැති විට නැවත ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Jak się nazywasz?", "native": "ඔබේ නම කුමක්ද?", "phonetic": "යක් ශෙ නාසිවාෂ්?" },
+            { "speaker": "B", "target": "Krzysztof. A ty?", "native": "ක්‍රිෂ්ටෝෆ්. ඔයා?", "phonetic": "ක(ර්)ෂිෂ්ටොෆ්. ආ ති?" }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_3_1", "target": "Jak masz na imię?", "native": "ඔයාගේ නම මොකක්ද?" },
+          { "id": "m1_3_2", "target": "To jest mój kolega.", "native": "මේ ඉන්නේ මගේ සහෘදයා." },
+          { "id": "m1_3_3", "target": "Jak ma pani na imię?", "native": "ඔබතුමියගේ නම කුමක්ද?" },
+          { "id": "m1_3_4", "target": "To jest moja koleżanka.", "native": "මේ ඉන්නේ මගේ සහෘදිය." }
+        ]
+      },
+      "cultural_note": "පෝලන්තයේදී, කාගේ හරි නමක් ඇසීමේදී විධිමත් හෝ අවිධිමත් භාෂාව තෝරාගැනීම ඉතා වැදගත් වේ. එය ඔබ සහ අනෙක් පුද්ගලයා අතර ඇති සම්බන්ධතාවය මත රඳා පවතී.",
+      "pronunciation_tip": "'Jak się nazywasz?' හි 'się' යනු 'ශෙ' ලෙස උච්චාරණය කෙරේ. එය පෝලන්ත භාෂාවේ සුලභ reflexive pronoun එකකි.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "PL_W1D3_Names" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Polish", "nativeLanguage": "Sinhala",
-      "words": [{"id":"w1_4_1","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_2","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_3","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_4","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_5","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_6","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_7","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_4_8","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."}],
-      "sentences": [], "dialogues": [], "exercises": {"matching": []}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "PL-W1D4-Placeholder"}
+      "title": "4 වන දිනය: ජාතිකත්වය සහ රට",
+      "title_native": "Dzień 4: Narodowość i kraj",
+      "theme": "මූලික කතාබස්",
+      "path": "survival",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_4_1", "target": "Skąd jesteś?", "phonetic": "ස්කොන්ද් යෙස්තෙස්?", "native_meaning": "ඔබ කොහෙන්ද? (අවිධිමත්)", "english": "Where are you from? (informal)", "example_sentence_target": "Cześć, skąd jesteś?", "example_sentence_native": "හායි, ඔයා කොහෙන්ද?", "example_sentence_phonetic": "චෙස්ච්, ස්කොන්ද් යෙස්තෙස්?" },
+        { "id": "w1_4_2", "target": "Skąd pan jest?", "phonetic": "ස්කොන්ද් පාන් යෙස්ත්?", "native_meaning": "ඔබතුමා කොහෙන්ද?", "english": "Where are you from? (formal, to a man)", "example_sentence_target": "Dzień dobry, skąd pan jest?", "example_sentence_native": "සුබ දවසක්, ඔබතුමා කොහෙන්ද?", "example_sentence_phonetic": "ජෙන් දොබ්රි, ස්කොන්ද් පාන් යෙස්ත්?" },
+        { "id": "w1_4_3", "target": "Skąd pani jest?", "phonetic": "ස්කොන්ද් පානි යෙස්ත්?", "native_meaning": "ඔබතුමිය කොහෙන්ද?", "english": "Where are you from? (formal, to a woman)", "example_sentence_target": "Przepraszam, skąd pani jest?", "example_sentence_native": "සමාවෙන්න, ඔබතුමිය කොහෙන්ද?", "example_sentence_phonetic": "ප්ෂෙප්‍රාශම්, ස්කොන්ද් පානි යෙස්ත්?" },
+        { "id": "w1_4_4", "target": "Polska", "phonetic": "පොල්ස්කා", "native_meaning": "පෝලන්තය", "english": "Poland", "example_sentence_target": "Jestem z Polski.", "example_sentence_native": "මම පෝලන්තයෙන්.", "example_sentence_phonetic": "යෙස්තෙම් ස් පොල්ස්කි." },
+        { "id": "w1_4_5", "target": "Sri Lanka", "phonetic": "ශ්‍රී ලංකා", "native_meaning": "ශ්‍රී ලංකාව", "english": "Sri Lanka", "example_sentence_target": "Moja koleżanka jest ze Sri Lanki.", "example_sentence_native": "මගේ සහෘදිය ශ්‍රී ලංකාවෙන්.", "example_sentence_phonetic": "මොයා කොලෙශාන්කා යෙස්ත් සෙ ශ්‍රී ලංකි." },
+        { "id": "w1_4_6", "target": "Polak / Polka", "phonetic": "පොලක් / පොල්කා", "native_meaning": "පෝලන්ත ජාතිකයා / ජාතික කාන්තාව", "english": "Polish (male/female)", "example_sentence_target": "Mój mąż jest Polakiem.", "example_sentence_native": "මගේ සැමියා පෝලන්ත ජාතිකයෙක්.", "example_sentence_phonetic": "මූයි මොන්ෂ් යෙස්ත් පොලාක්යෙම්." },
+        { "id": "w1_4_7", "target": "kraj", "phonetic": "ක්‍රායි", "native_meaning": "රට", "english": "country", "example_sentence_target": "Polska to piękny kraj.", "example_sentence_native": "පෝලන්තය ලස්සන රටක්.", "example_sentence_phonetic": "පොල්ස්කා තො ප්යෙන්ක්නි ක්‍රායි." },
+        { "id": "w1_4_8", "target": "narodowość", "phonetic": "නරොදොවොස්ච්", "native_meaning": "ජාතිකත්වය", "english": "nationality", "example_sentence_target": "Jaka jest twoja narodowość?", "example_sentence_native": "ඔබේ ජාතිකත්වය කුමක්ද?", "example_sentence_phonetic": "යාකා යෙස්ත් තෆොයා නරොදොවොස්ච්?" }
+      ],
+      "sentences": [
+        { "id": "s1_4_1", "target": "Skąd jesteś, Anno?", "native": "ඇනා, ඔයා කොහෙන්ද?", "phonetic": "ස්කොන්ද් යෙස්තෙස්, අන්නො?" },
+        { "id": "s1_4_2", "target": "Jestem Polką.", "native": "මම පෝලන්ත ජාතික කාන්තාවක්.", "phonetic": "යෙස්තෙම් පොල්කොන්." },
+        { "id": "s1_4_3", "target": "On jest z innego kraju.", "native": "ඔහු වෙනත් රටකින්.", "phonetic": "ඔන් යෙස්ත් ස් ඉන්නෙගො ක්‍රායු." },
+        { "id": "s1_4_4", "target": "Mieszkam w Polsce, ale jestem ze Sri Lanki.", "native": "මම ජීවත් වෙන්නේ පෝලන්තයේ, නමුත් මම ශ්‍රී ලංකාවෙන්.", "phonetic": "ම්යේෂ්කම් ෆ් පොල්ස්චේ, අලේ යෙස්තෙම් සෙ ශ්‍රී ලංකි." },
+        { "id": "s1_4_5", "target": "Jaka jest pana narodowość?", "native": "ඔබතුමාගේ ජාතිකත්වය කුමක්ද?", "phonetic": "යාකා යෙස්ත් පානා නරොදොවොස්ච්?" },
+        { "id": "s1_4_6", "target": "Sri Lanka to wyspa.", "native": "ශ්‍රී ලංකාව දූපතක්.", "phonetic": "ශ්‍රී ලංකා තො විසෙපා." },
+        { "id": "s1_4_7", "target": "Mój przyjaciel jest Polakiem.", "native": "මගේ මිතුරා පෝලන්ත ජාතිකයෙක්.", "phonetic": "මූයි ප(ර්)ෂියාචෙල් යෙස්ත් පොලාක්යෙම්." },
+        { "id": "s1_4_8", "target": "Skąd pani jest, jeśli można zapytać?", "native": "අහන්න පුළුවන් නම්, ඔබතුමිය කොහෙන්ද?", "phonetic": "ස්කොන්ද් පානි යෙස්ත්, යෙශිලි මොශ්නා සපිතාච්?" }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "ජාතිකත්වය ගැන කතා කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Cześć, skąd jesteś?", "native": "හායි, ඔයා කොහෙන්ද?", "phonetic": "චෙස්ච්, ස්කොන්ද් යෙස්තෙස්?" },
+            { "speaker": "B", "target": "Jestem ze Sri Lanki. A ty?", "native": "මම ශ්‍රී ලංකාවෙන්. ඔයා?", "phonetic": "යෙස්තෙම් සෙ ශ්‍රී ලංකි. ආ ති?" }
+          ]
+        },
+        {
+          "id": "d1_4_2",
+          "context": "විධිමත් පසුබිමක.",
+          "lines": [
+            { "speaker": "A", "target": "Przepraszam, skąd pan jest?", "native": "සමාවෙන්න, ඔබතුමා කොහෙන්ද?", "phonetic": "ප්ෂෙප්‍රාශම්, ස්කොන්ද් පාන් යෙස්ත්?" },
+            { "speaker": "B", "target": "Jestem z Polski. Mieszkam w Krakowie.", "native": "මම පෝලන්තයෙන්. මම ජීවත් වෙන්නේ ක්‍රැකෝව් වල.", "phonetic": "යෙස්තෙම් ස් පොල්ස්කි. ම්යේෂ්කම් ෆ් ක්‍රකොවියේ." }
+          ]
+        },
+        {
+          "id": "d1_4_3",
+          "context": "කෙනෙක් පෝලන්ත ජාතිකයෙක් දැයි ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Jesteś Polakiem?", "native": "ඔයා පෝලන්ත ජාතිකයෙක්ද?", "phonetic": "යෙස්තෙස් පොලාක්යෙම්?" },
+            { "speaker": "B", "target": "Tak, jestem Polakiem. A ty?", "native": "ඔව්, මම පෝලන්ත ජාතිකයෙක්. ඔයා?", "phonetic": "තක්, යෙස්තෙම් පොලාක්යෙම්. ආ ති?" }
+          ]
+        },
+        {
+          "id": "d1_4_4",
+          "context": "විවිධ රටවල් ගැන කතා කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Moja mama jest z Ukrainy.", "native": "මගේ අම්මා යුක්රේනයෙන්.", "phonetic": "මොයා මමා යෙස්ත් ස් උක්රායිනි." },
+            { "speaker": "B", "target": "Ciekawe! Mój tata jest z Niemiec.", "native": "හරිම රසවත්! මගේ තාත්තා ජර්මනියෙන්.", "phonetic": "චෙකාවෙ! මූයි තාතා යෙස්ත් ස් නියේම්යේච්." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_4_1", "target": "Skąd jesteś?", "native": "ඔබ කොහෙන්ද?" },
+          { "id": "m1_4_2", "target": "Polska", "native": "පෝලන්තය" },
+          { "id": "m1_4_3", "target": "Jestem ze Sri Lanki.", "native": "මම ශ්‍රී ලංකාවෙන්." },
+          { "id": "m1_4_4", "target": "Polak", "native": "පෝලන්ත ජාතිකයා" }
+        ]
+      },
+      "cultural_note": "පෝලන්ත ජාතිකයන් තම රට සහ උරුමය ගැන ඉතා ආඩම්බර වෙති. 'Skąd jesteś?' (ඔබ කොහෙන්ද?) යනු නව මිතුරන් ඇති කර ගැනීමේදී සුලභ ප්‍රශ්නයකි.",
+      "pronunciation_tip": "'Polska' හි 'L' අක්ෂරයට උඩින් ඇති කුඩා ඉර ('ł') නිසා එය 'ව' ශබ්දයට සමාන ශබ්දයක් ලෙස උච්චාරණය කරයි. එමනිසා, එය 'පොල්ස්කා' නොව 'පොල්ස්කා' ට වඩා 'පොයිස්කා' ට ආසන්න ශබ්දයක්.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "PL_W1D4_Nationality" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Polish", "nativeLanguage": "Sinhala",
-      "words": [{"id":"w1_5_1","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_2","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_3","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_4","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_5","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_6","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_7","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_5_8","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."}],
-      "sentences": [], "dialogues": [], "exercises": {"matching": []}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "PL-W1D5-Placeholder"}
+      "title": "5 වන දිනය: ආචාරශීලී ප්‍රකාශන",
+      "title_native": "Dzień 5: Zwroty grzecznościowe",
+      "theme": "මූලික කතාබස්",
+      "path": "survival",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_5_1", "target": "Proszę", "phonetic": "ප්‍රෝශෙ", "native_meaning": "කරුණාකර / මෙන්න", "english": "Please / Here you are", "example_sentence_target": "Proszę, oto twoja kawa.", "example_sentence_native": "මෙන්න, ඔබේ කෝපි එක.", "example_sentence_phonetic": "ප්‍රෝශෙ, ඔතො තෆොයා කාවා." },
+        { "id": "w1_5_2", "target": "Dziękuję", "phonetic": "ජෙන්කුයේ", "native_meaning": "ස්තූතියි", "english": "Thank you", "example_sentence_target": "Dziękuję za pomoc.", "example_sentence_native": "උදව්වට ස්තූතියි.", "example_sentence_phonetic": "ජෙන්කුයේ සා පොමොච්." },
+        { "id": "w1_5_3", "target": "Przepraszam", "phonetic": "ප්ෂෙප්‍රාශම්", "native_meaning": "සමාවෙන්න / කරුණාකර", "english": "Excuse me / Sorry", "example_sentence_target": "Przepraszam, która jest godzina?", "example_sentence_native": "සමාවෙන්න, වෙලාව කීයද?", "example_sentence_phonetic": "ප්ෂෙප්‍රාශම්, කතූරා යෙස්ත් ගොජිනා?" },
+        { "id": "w1_5_4", "target": "Nie ma za co", "phonetic": "න්යේ මා සා තසො", "native_meaning": "සුළු දෙයක් / කමක් නෑ", "english": "You're welcome", "example_sentence_target": "- Dziękuję! - Nie ma za co.", "example_sentence_native": "- ස්තූතියි! - සුළු දෙයක්.", "example_sentence_phonetic": "- ජෙන්කුයේ! - න්යේ මා සා තසො." },
+        { "id": "w1_5_5", "target": "Smacznego", "phonetic": "ස්මච්නෙගො", "native_meaning": "ආහාරය රස විඳින්න", "english": "Enjoy your meal", "example_sentence_target": "Zaczynajmy jeść. Smacznego!", "example_sentence_native": "අපි කන්න පටන් ගමු. ආහාරය රස විඳින්න!", "example_sentence_phonetic": "සචිනායිමි යෙස්ච්. ස්මච්නෙගො!" },
+        { "id": "w1_5_6", "target": "Na zdrowie", "phonetic": "නා සද්‍රොවියේ", "native_meaning": "චියර්ස් / ඔබට සුවය", "english": "Cheers / Bless you (after sneezing)", "example_sentence_target": "Ktoś kichnął. Na zdrowie!", "example_sentence_native": "කවුරුහරි කිඹුහුම් ඇරියා. ඔබට සුවය!", "example_sentence_phonetic": "ක්තොස් කිහ්නොව්. නා සද්‍රොවියේ!" },
+        { "id": "w1_5_7", "target": "Oczywiście", "phonetic": "ඔචිවිශ්චේ", "native_meaning": "ඇත්තෙන්ම / අනිවාර්යයෙන්ම", "english": "Of course", "example_sentence_target": "Czy możesz mi pomóc? Oczywiście.", "example_sentence_native": "ඔබට මට උදව් කළ හැකිද? ඇත්තෙන්ම.", "example_sentence_phonetic": "චි මොශෙෂ් මි පොමුච්? ඔචිවිශ්චේ." },
+        { "id": "w1_5_8", "target": "Niestety", "phonetic": "න්යෙස්තෙති", "native_meaning": "අවාසනාවකට", "english": "Unfortunately", "example_sentence_target": "Niestety, nie mogę przyjść.", "example_sentence_native": "අවාසනාවකට, මට එන්න බෑ.", "example_sentence_phonetic": "න්යෙස්තෙති, න්යේ මොගෙ ප(ර්)ෂිස්ච්." }
+      ],
+      "sentences": [
+          { "id": "s1_5_1", "target": "Proszę o rachunek.", "native": "කරුණාකර බිල දෙන්න.", "phonetic": "ප්‍රෝශෙ ඔ රහුනෙක්." },
+          { "id": "s1_5_2", "target": "Dziękuję bardzo.", "native": "බොහොම ස්තූතියි.", "phonetic": "ජෙන්කුයේ බර්ධසො." },
+          { "id": "s1_5_3", "target": "Przepraszam za spóźnienie.", "native": "ප්‍රමාද වීම ගැන සමාවෙන්න.", "phonetic": "ප්ෂෙප්‍රාශම් සා ස්පූශිනියේනි." },
+          { "id": "s1_5_4", "target": "Nie ma za co, cała przyjemność po mojej stronie.", "native": "සුළු දෙයක්, සියලු සතුට මගේ පැත්තේ.", "phonetic": "න්යේ මා සා තසො, චාවා ප(ර්)ෂියෙම්නොස්ච් පො මෝයෙයි ස්ත්රෝනියේ." },
+          { "id": "s1_5_5", "target": "Zupa jest pyszna. Smacznego!", "native": "සූප් එක රසයි. ආහාරය රස විඳින්න!", "phonetic": "සුපා යෙස්ත් පිෂ්නා. ස්මච්නෙගො!" },
+          { "id": "s1_5_6", "target": "Wypijmy za wasze zdrowie! Na zdrowie!", "native": "අපි ඔබේ සුවයට පානය කරමු! චියර්ස්!", "phonetic": "විපිජ්මි සා වෂේ සද්‍රොවියේ! නා සද්‍රොවියේ!" },
+          { "id": "s1_5_7", "target": "Oczywiście, że tak.", "native": "ඇත්තෙන්ම, ඔව්.", "phonetic": "ඔචිවිශ්චේ, ශෙ තක්." },
+          { "id": "s1_5_8", "target": "Niestety, nie mam czasu.", "native": "අවාසනාවකට, මට වෙලාවක් නෑ.", "phonetic": "න්යෙස්තෙති, න්යේ මම් චාසු." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "ආපන ශාලාවකදී.",
+          "lines": [
+            { "speaker": "A", "target": "Poproszę kawę.", "native": "කෝපි එකක් ඉල්ලනවා.", "phonetic": "පොප්‍රෝශෙ කාවෙ." },
+            { "speaker": "B", "target": "Proszę. Coś jeszcze?", "native": "මෙන්න. තව මොනවහරි?", "phonetic": "ප්‍රෝශෙ. තසොස් යෙෂ්චේ?" }
+          ]
+        },
+        {
+          "id": "d1_5_2",
+          "context": "උදව්වක් සඳහා ස්තූති කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Dziękuję za informację.", "native": "තොරතුරට ස්තූතියි.", "phonetic": "ජෙන්කුයේ සා ඉන්ෆොර්මාචියේ." },
+            { "speaker": "B", "target": "Nie ma za co.", "native": "සුළු දෙයක්.", "phonetic": "න්යේ මා සා තසො." }
+          ]
+        },
+        {
+          "id": "d1_5_3",
+          "context": "පාරේදී කෙනෙකු නැවැත්වීම.",
+          "lines": [
+            { "speaker": "A", "target": "Przepraszam, gdzie jest dworzec?", "native": "සමාවෙන්න, දුම්රිය ස්ථානය කොහෙද?", "phonetic": "ප්ෂෙප්‍රාශම්, ග්ද්සියේ යෙස්ත් ද්වෝර්සෙච්?" },
+            { "speaker": "B", "target": "Prosto, a potem w lewo.", "native": "කෙලින් ගිහින්, පසුව වමට.", "phonetic": "ප්‍රොස්තො, ආ පොතෙම් ෆ් ලේවො." }
+          ]
+        },
+        {
+          "id": "d1_5_4",
+          "context": "කෑමට පෙර.",
+          "lines": [
+            { "speaker": "A", "target": "Wszystko gotowe. Smacznego!", "native": "හැමදේම ලෑස්තියි. ආහාරය රස විඳින්න!", "phonetic": "ෆ්ෂිස්ත්කො ගොතෝවේ. ස්මච්නෙගො!" },
+            { "speaker": "B", "target": "Dziękuję, wygląda pysznie.", "native": "ස්තූතියි, රස පාටයි.", "phonetic": "ජෙන්කුයේ, විග්ලොන්දා පිෂ්න්යේ." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_5_1", "target": "Dziękuję", "native": "ස්තූතියි" },
+          { "id": "m1_5_2", "target": "Proszę", "native": "කරුණාකර" },
+          { "id": "m1_5_3", "target": "Przepraszam", "native": "සමාවෙන්න" },
+          { "id": "m1_5_4", "target": "Nie ma za co", "native": "සුළු දෙයක්" }
+        ]
+      },
+      "cultural_note": "'Proszę' (ප්‍රෝශෙ) යනු ඉතා බහුකාර්ය වචනයකි. එය 'කරුණාකර', 'මෙන්න', 'ඔබව සාදරයෙන් පිළිගනිමු' (අඩු සුලභ) සහ දුරකථනයට පිළිතුරු දීමේදී 'හෙලෝ' යන අර්ථයෙන්ද භාවිතා කළ හැකිය.",
+      "pronunciation_tip": "'Dziękuję' හි 'ę' ශබ්දය නැවතත් නාසික වන අතර, 'dzi' යනු මෘදු 'ජි' ශබ්දයකි. 'ජෙන්-කු-යේ' ලෙස උච්චාරණය කිරීමට උත්සාහ කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "PL_W1D5_Polite" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Polish", "nativeLanguage": "Sinhala",
-      "words": [{"id":"w1_6_1","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_2","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_3","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_4","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_5","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_6","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_7","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_6_8","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."}],
-      "sentences": [], "dialogues": [], "exercises": {"matching": []}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "PL-W1D6-Placeholder"}
+      "title": "6 වන දිනය: ඔව් / නෑ / සමහරවිට",
+      "title_native": "Dzień 6: Tak / Nie / Może",
+      "theme": "මූලික කතාබස්",
+      "path": "survival",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_6_1", "target": "Tak", "phonetic": "තක්", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Czy jesteś gotowy? Tak.", "example_sentence_native": "ඔයා ලෑස්තිද? ඔව්.", "example_sentence_phonetic": "චි යෙස්තෙස් ගොතෝවි? තක්." },
+        { "id": "w1_6_2", "target": "Nie", "phonetic": "න්යේ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "Czy to jest drogie? Nie.", "example_sentence_native": "මේක ගණන්ද? නෑ.", "example_sentence_phonetic": "චි තො යෙස්ත් ද්‍රොගියේ? න්යේ." },
+        { "id": "w1_6_3", "target": "Może", "phonetic": "මෝශෙ", "native_meaning": "සමහරවිට", "english": "Maybe", "example_sentence_target": "Przyjdziesz jutro? Może.", "example_sentence_native": "ඔයා හෙට එනවද? සමහරවිට.", "example_sentence_phonetic": "ප්(ර්)ෂිජ්සේශ් යුත්රො? මෝශෙ." },
+        { "id": "w1_6_4", "target": "Dobrze", "phonetic": "දොබ්ශෙ", "native_meaning": "හොඳයි / හරි", "english": "Good / Okay", "example_sentence_target": "Zrobimy to tak. Dobrze.", "example_sentence_native": "අපි මේක මෙහෙම කරමු. හොඳයි.", "example_sentence_phonetic": "ස්රොබිමි තො තක්. දොබ්ශෙ." },
+        { "id": "w1_6_5", "target": "Zgoda", "phonetic": "ස්ගෝදා", "native_meaning": "එකඟයි", "english": "Agreed / Okay", "example_sentence_target": "Spotkajmy się o piątej. Zgoda.", "example_sentence_native": "අපි පහට හමුවෙමු. එකඟයි.", "example_sentence_phonetic": "ස්පොත්කායිමි ශෙ ඔ පියොන්තෙයි. ස්ගෝදා." },
+        { "id": "w1_6_6", "target": "Nie wiem", "phonetic": "න්යේ ව්යෙම්", "native_meaning": "මම දන්නේ නෑ", "english": "I don't know", "example_sentence_target": "Gdzie on jest? Nie wiem.", "example_sentence_native": "ඔහු කොහෙද? මම දන්නේ නෑ.", "example_sentence_phonetic": "ග්ද්සියේ ඔන් යෙස්ත්? න්යේ ව්යෙම්." },
+        { "id": "w1_6_7", "target": "Rozumiem", "phonetic": "රොසුම්යෙම්", "native_meaning": "මට තේරෙනවා", "english": "I understand", "example_sentence_target": "Mówisz za szybko. Teraz rozumiem.", "example_sentence_native": "ඔයා හරි වේගෙන් කතා කරනවා. දැන් මට තේරෙනවා.", "example_sentence_phonetic": "මූවිෂ් සා ෂිබ්කො. තෙරාස් රොසුම්යෙම්." },
+        { "id": "w1_6_8", "target": "Nie rozumiem", "phonetic": "න්යේ රොසුම්යෙම්", "native_meaning": "මට තේරෙන්නේ නෑ", "english": "I don't understand", "example_sentence_target": "Przepraszam, nie rozumiem po polsku.", "example_sentence_native": "සමාවෙන්න, මට පෝලන්ත භාෂාව තේරෙන්නේ නෑ.", "example_sentence_phonetic": "ප්ෂෙප්‍රාශම්, න්යේ රොසුම්යෙම් පො පොල්ස්කු." }
+      ],
+      "sentences": [
+          { "id": "s1_6_1", "target": "Tak, to prawda.", "native": "ඔව්, ඒක ඇත්ත.", "phonetic": "තක්, තො ප්‍රාව්දා." },
+          { "id": "s1_6_2", "target": "Nie, dziękuję.", "native": "නෑ, ස්තූතියි.", "phonetic": "න්යේ, ජෙන්කුයේ." },
+          { "id": "s1_6_3", "target": "Może później.", "native": "සමහරවිට පසුව.", "phonetic": "මෝශෙ පූශිනියේ." },
+          { "id": "s1_6_4", "target": "Wszystko dobrze.", "native": "හැමදේම හොඳයි.", "phonetic": "ෆ්ෂිස්ත්කො දොබ්ශෙ." },
+          { "id": "s1_6_5", "target": "Zgoda, zróbmy tak.", "native": "එකඟයි, අපි එහෙම කරමු.", "phonetic": "ස්ගෝදා, ස්රූබ්මි තක්." },
+          { "id": "s1_6_6", "target": "Nie wiem, gdzie to jest.", "native": "මම දන්නේ නෑ ඒක කොහෙද කියලා.", "phonetic": "න්යේ ව්යෙම්, ග්ද්සියේ තො යෙස්ත්." },
+          { "id": "s1_6_7", "target": "Rozumiem, co mówisz.", "native": "මට තේරෙනවා ඔයා කියන දේ.", "phonetic": "රොසුම්යෙම්, තසො මූවිෂ්." },
+          { "id": "s1_6_8", "target": "Przepraszam, ale nic nie rozumiem.", "native": "සමාවෙන්න, නමුත් මට මුකුත්ම තේරෙන්නේ නෑ.", "phonetic": "ප්ෂෙප්‍රාශම්, අලේ නීච් න්යේ රොසුම්යෙම්." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "ඉල්ලීමකට පිළිතුරු දීම.",
+          "lines": [
+            { "speaker": "A", "target": "Chcesz kawy?", "native": "කෝපි ඕනෙද?", "phonetic": "හ්චෙෂ් කාවි?" },
+            { "speaker": "B", "target": "Tak, poproszę.", "native": "ඔව්, කරුණාකර.", "phonetic": "තක්, පොප්‍රෝශෙ." }
+          ]
+        },
+        {
+          "id": "d1_6_2",
+          "context": "ප්‍රතික්ෂේප කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Idziesz z nami do kina?", "native": "ඔයා අපිත් එක්ක සිනමා ශාලාවට එනවද?", "phonetic": "ඉජ්සේශ් ස් නාමි දො කිනා?" },
+            { "speaker": "B", "target": "Nie, dzisiaj nie mogę. Może jutro?", "native": "නෑ, අද මට බෑ. සමහරවිට හෙට?", "phonetic": "න්යේ, ජිශායි න්යේ මොගෙ. මෝශෙ යුත්රො?" }
+          ]
+        },
+        {
+          "id": "d1_6_3",
+          "context": "අවිනිශ්චිත බව ප්‍රකාශ කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Czy sklep jest jeszcze otwarty?", "native": "කඩේ තවම ඇරලද?", "phonetic": "චි ස්ක්ලෙප් යෙස්ත් යෙෂ්චේ ඔත්ෆර්ති?" },
+            { "speaker": "B", "target": "Nie wiem. Może.", "native": "මම දන්නේ නෑ. සමහරවිට.", "phonetic": "න්යේ ව්යෙම්. මෝශෙ." }
+          ]
+        },
+        {
+          "id": "d1_6_4",
+          "context": "තේරුම් නොගැනීම.",
+          "lines": [
+            { "speaker": "A", "target": "Proszę mówić wolniej.", "native": "කරුණාකර සෙමින් කතා කරන්න.", "phonetic": "ප්‍රෝශෙ මූවිච් වොල්නියේ." },
+            { "speaker": "B", "target": "Dobrze. Czy teraz rozumiesz?", "native": "හොඳයි. දැන් තේරෙනවාද?", "phonetic": "දොබ්ශෙ. චි තෙරාස් රොසුම්යෙෂ්?" }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_6_1", "target": "Tak", "native": "ඔව්" },
+          { "id": "m1_6_2", "target": "Nie", "native": "නැහැ" },
+          { "id": "m1_6_3", "target": "Może", "native": "සමහරවිට" },
+          { "id": "m1_6_4", "target": "Nie wiem", "native": "මම දන්නේ නෑ" }
+        ]
+      },
+      "cultural_note": "'Nie' (න්යේ) යනු ඉතා සෘජු වචනයකි. වඩාත් ආචාරශීලී වීමට, ඔබට 'Nie, dziękuję' (නෑ, ස්තූතියි) ලෙස පැවසිය හැක.",
+      "pronunciation_tip": "'Dobrze' හි 'rz' ශබ්දය සිංහල 'ෂ' ශබ්දයට සමානයි. 'දොබ්-ෂෙ' ලෙස උච්චාරණය කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "PL_W1D6_YesNo" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Polish", "nativeLanguage": "Sinhala",
-      "words": [{"id":"w1_7_1","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_2","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_3","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_4","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_5","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_6","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_7","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."},{"id":"w1_7_8","target":"Placeholder","phonetic":"Placeholder","native_meaning":"Placeholder","english":"Placeholder","example_sentence_target":"Placeholder.","example_sentence_native":"Placeholder.","example_sentence_phonetic":"Placeholder."}],
-      "sentences": [], "dialogues": [], "exercises": {"matching": []}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "PL-W1D7-Placeholder"}
+      "title": "7 වන දිනය: සරල සංවාද පුහුණුව",
+      "title_native": "Dzień 7: Prosta praktyka konwersacji",
+      "theme": "මූලික කතාබස්",
+      "path": "survival",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_7_1", "target": "Jak się masz?", "phonetic": "යක් ශෙ මාෂ්?", "native_meaning": "ඔබට කොහොමද? (අවිධිමත්)", "english": "How are you? (informal)", "example_sentence_target": "Cześć, jak się masz?", "example_sentence_native": "හායි, ඔයාට කොහොමද?", "example_sentence_phonetic": "චෙස්ච්, යක් ශෙ මාෂ්?" },
+        { "id": "w1_7_2", "target": "Co u ciebie?", "phonetic": "තසො උ චෙබ්යේ?", "native_meaning": "මොනවද (ඔබේ) තොරතුරු? (අවිධිමත්)", "english": "What's up with you? (informal)", "example_sentence_target": "Dawno się nie widzieliśmy! Co u ciebie?", "example_sentence_native": "කාලෙකින් දැක්කෙ නෑ! මොනවද තොරතුරු?", "example_sentence_phonetic": "දව්නො ශෙ න්යේ විද්සෙලිශිමි! තසො උ චෙබ්යේ?" },
+        { "id": "w1_7_3", "target": "Jak się pan ma?", "phonetic": "යක් ශෙ පාන් මා?", "native_meaning": "ඔබතුමාට කොහොමද?", "english": "How are you? (formal, to a man)", "example_sentence_target": "Dzień dobry, jak się pan ma?", "example_sentence_native": "සුබ දවසක්, ඔබතුමාට කොහොමද?", "example_sentence_phonetic": "ජෙන් දොබ්රි, යක් ශෙ පාන් මා?" },
+        { "id": "w1_7_4", "target": "Jak się pani ma?", "phonetic": "යක් ශෙ පානි මා?", "native_meaning": "ඔබතුමියට කොහොමද?", "english": "How are you? (formal, to a woman)", "example_sentence_target": "Dobry wieczór, jak się pani ma?", "example_sentence_native": "සුබ සන්ධ්‍යාවක්, ඔබතුමියට කොහොමද?", "example_sentence_phonetic": "දොබ්රි ව්යේචූර්, යක් ශෙ පානි මා?" },
+        { "id": "w1_7_5", "target": "Wszystko w porządku.", "phonetic": "ෆ්ෂිස්ත්කො ෆ් පොශොන්ත්කු.", "native_meaning": "හැමදේම හොඳයි.", "english": "Everything is fine.", "example_sentence_target": "Dziękuję, wszystko w porządku.", "example_sentence_native": "ස්තූතියි, හැමදේම හොඳයි.", "example_sentence_phonetic": "ජෙන්කුයේ, ෆ්ෂිස්ත්කො ෆ් පොශොන්ත්කු." },
+        { "id": "w1_7_6", "target": "Świetnie", "phonetic": "ශ්ෆ්යේත්න්යේ", "native_meaning": "නියමයි", "english": "Great / Excellent", "example_sentence_target": "Jak się masz? Świetnie!", "example_sentence_native": "ඔබට කොහොමද? නියමයි!", "example_sentence_phonetic": "යක් ශෙ මාෂ්? ශ්ෆ්යේත්න්යේ!" },
+        { "id": "w1_7_7", "target": "A u pana/pani?", "phonetic": "ආ උ පානා/පානි?", "native_meaning": "ඔබතුමාට/ඔබතුමියට කොහොමද?", "english": "And you? (formal)", "example_sentence_target": "Wszystko w porządku. A u pana?", "example_sentence_native": "හැමදේම හොඳයි. ඔබතුමාට කොහොමද?", "example_sentence_phonetic": "ෆ්ෂිස්ත්කො ෆ් පොශොන්ත්කු. ආ උ පානා?" },
+        { "id": "w1_7_8", "target": "Też dobrze", "phonetic": "තෙෂ් දොබ්ශෙ", "native_meaning": "ත් හොඳින්", "english": "Also good", "example_sentence_target": "Dziękuję, też dobrze.", "example_sentence_native": "ස්තූතියි, (මා)ත් හොඳින්.", "example_sentence_phonetic": "ජෙන්කුයේ, තෙෂ් දොබ්ශෙ." }
+      ],
+      "sentences": [
+          { "id": "s1_7_1", "target": "Cześć, co u ciebie słychać?", "native": "හායි, මොනවද අලුත් තොරතුරු?", "phonetic": "චෙස්ච්, තසො උ චෙබ්යේ ස්විහාච්?" },
+          { "id": "s1_7_2", "target": "U mnie wszystko w porządku, dziękuję.", "native": "මගේ හැමදේම හොඳයි, ස්තූතියි.", "phonetic": "උ ම්න්යේ ෆ්ෂිස්ත්කො ෆ් පොශොන්ත්කු, ජෙන්කුයේ." },
+          { "id": "s1_7_3", "target": "Jak się pani ma dzisiaj?", "native": "අද ඔබතුමියට කොහොමද?", "phonetic": "යක් ශෙ පානි මා ජිශායි?" },
+          { "id": "s1_7_4", "target": "Świetnie, dziękuję. A pan?", "native": "නියමයි, ස්තූතියි. ඔබතුමාට කොහොමද?", "phonetic": "ශ්ෆ්යේත්න්යේ, ජෙන්කුයේ. ආ පාන්?" },
+          { "id": "s1_7_5", "target": "Jestem ze Sri Lanki, a ty skąd jesteś?", "native": "මම ශ්‍රී ලංකාවෙන්, ඔයා කොහෙන්ද?", "phonetic": "යෙස්තෙම් සෙ ශ්‍රී ලංකි, ආ ති ස්කොන්ද් යෙස්තෙස්?" },
+          { "id": "s1_7_6", "target": "Jestem Polakiem.", "native": "මම පෝලන්ත ජාතිකයෙක්.", "phonetic": "යෙස්තෙම් පොලාක්යෙම්." },
+          { "id": "s1_7_7", "target": "Miło mi cię poznać.", "native": "ඔබව හමුවීම සතුටක්.", "phonetic": "මිවො මි චෙ පොස්නාච්." },
+          { "id": "s1_7_8", "target": "Mnie również.", "native": "මටත් එසේමයි.", "phonetic": "ම්න්යේ රූෆ්න්යේෂ්." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "මිතුරන් අතර කෙටි කතාබහක්.",
+          "lines": [
+            { "speaker": "A", "target": "Cześć Adam, jak się masz?", "native": "හායි ආදම්, ඔයාට කොහොමද?", "phonetic": "චෙස්ච් ආදම්, යක් ශෙ මාෂ්?" },
+            { "speaker": "B", "target": "Cześć Ewa. Świetnie, dziękuję. A co u ciebie?", "native": "හායි ඒවා. නියමයි, ස්තූතියි. ඔයාට කොහොමද?", "phonetic": "චෙස්ච් ඒවා. ශ්ෆ්යේත්න්යේ, ජෙන්කුයේ. ආ තසො උ චෙබ්යේ?" }
+          ]
+        },
+        {
+          "id": "d1_7_2",
+          "context": "වැඩිහිටියෙකු සමඟ විධිමත් කතාබහක්.",
+          "lines": [
+            { "speaker": "A", "target": "Dzień dobry, panie Kowalski. Jak się pan ma?", "native": "සුබ දවසක්, කොවාල්ස්කි මහත්මයා. ඔබතුමාට කොහොමද?", "phonetic": "ජෙන් දොබ්රි, පානියේ කොවාල්ස්කි. යක් ශෙ පාන් මා?" },
+            { "speaker": "B", "target": "Dzień dobry. Dziękuję, wszystko w porządku. A u pani?", "native": "සුබ දවසක්. ස්තූතියි, හැමදේම හොඳයි. ඔබතුමියට කොහොමද?", "phonetic": "ජෙන් දොබ්රි. ජෙන්කුයේ, ෆ්ෂිස්ත්කො ෆ් පොශොන්ත්කු. ආ උ පානි?" }
+          ]
+        },
+        {
+          "id": "d1_7_3",
+          "context": "නව පුද්ගලයෙකු හමුවීම.",
+          "lines": [
+            { "speaker": "A", "target": "Cześć, nazywam się Nimal. Jestem ze Sri Lanki.", "native": "හායි, මගේ නම නිමල්. මම ශ්‍රී ලංකාවෙන්.", "phonetic": "චෙස්ච්, නාසිවම් ශෙ නිමාල්. යෙස්තෙම් සෙ ශ්‍රී ලංකි." },
+            { "speaker": "B", "target": "Cześć Nimal, jestem Zofia. Miło mi. Witaj w Polsce.", "native": "හායි නිමල්, මම සොෆියා. හමුවීම සතුටක්. පෝලන්තයට සාදරයෙන් පිළිගන්නවා.", "phonetic": "චෙස්ච් නිමාල්, යෙස්තෙම් සොෆියා. මිවො මි. විතායි ෆ් පොල්ස්චේ." }
+          ]
+        },
+        {
+          "id": "d1_7_4",
+          "context": "ප්‍රශ්නයකට 'දන්නේ නෑ' කියා පිළිතුරු දීම.",
+          "lines": [
+            { "speaker": "A", "target": "Przepraszam, gdzie jest apteka?", "native": "සමාවෙන්න, ෆාමසිය කොහෙද?", "phonetic": "ප්ෂෙප්‍රාශම්, ග්ද්සියේ යෙස්ත් අප්තේකා?" },
+            { "speaker": "B", "target": "Niestety, nie wiem.", "native": "අවාසනාවකට, මම දන්නේ නෑ.", "phonetic": "න්යෙස්තෙති, න්යේ ව්යෙම්." }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+            { "id": "ss1_7_1", "scrambled": ["się", "jak", "masz", "?"], "correct": "jak się masz?", "nativeHint": "ඔබට කොහොමද?" }
+        ],
+        "matching": [
+          { "id": "m1_7_1", "target": "Jak się masz?", "native": "ඔබට කොහොමද?" },
+          { "id": "m1_7_2", "target": "Wszystko w porządku.", "native": "හැමදේම හොඳයි." },
+          { "id": "m1_7_3", "target": "Skąd jesteś?", "native": "ඔබ කොහෙන්ද?" },
+          { "id": "m1_7_4", "target": "Nazywam się...", "native": "මගේ නම..." }
+        ]
+      },
+      "cultural_note": "සතිය පුරා ඔබ ඉගෙන ගත් සියලුම වචන සහ වාක්‍ය ඛණ්ඩ ඒකාබද්ධ කර සැබෑ ජීවිතයේ සංවාද වලදී ඒවා භාවිතා කිරීමට පුරුදු වන්න. පුහුණුවීම ඉතා වැදගත්!",
+      "pronunciation_tip": "පෝලන්ත භාෂාවේ ප්‍රශ්නාර්ථ වාක්‍යයක ස්වරය සාමාන්‍යයෙන් අවසානයේදී ඉහළ යයි. 'Jak się masz?' කීමේදී මෙය මතක තබාගන්න.",
+      "progress": { "xp": 150, "streak_bonus": 20, "badge": "PL_W1D7_Conversation" }
     }
   ]
 }
