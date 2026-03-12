@@ -7,996 +7,418 @@
     {
       "week": 1,
       "day": 1,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": "මූලික සුබපැතුම්",
+      "title_native": "ברכות בסיסיות",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_1_1", "target": "שלום", "phonetic": "ශලෝම්", "native_meaning": "ආයුබෝවන් / හෙලෝ", "english": "Hello / Peace", "example_sentence_target": "שלום, מה שלומך?", "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?", "example_sentence_phonetic": "ශලෝම්, මා ශ්ලොම්'ඛා?"},
+        {"id": "w1_1_2", "target": "תודה", "phonetic": "තෝඩා", "native_meaning": "ස්තූතියි", "english": "Thank you", "example_sentence_target": "תודה רבה על העזרה.", "example_sentence_native": "උදව්වට බොහොම ස්තූතියි.", "example_sentence_phonetic": "තෝඩා රාබා අල් හා-එස්රා."},
+        {"id": "w1_1_3", "target": "כן", "phonetic": "කෙන්", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "כן, אני מבין.", "example_sentence_native": "ඔව්, මට තේරෙනවා.", "example_sentence_phonetic": "කෙන්, අනී මෙවීන්."},
+        {"id": "w1_1_4", "target": "לא", "phonetic": "ලෝ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "לא, תודה.", "example_sentence_native": "නැහැ, ස්තූතියි.", "example_sentence_phonetic": "ලෝ, තෝඩා."},
+        {"id": "w1_1_5", "target": "בבקשה", "phonetic": "බෙවකශා", "native_meaning": "කරුණාකර / ඔබව සාදරයෙන් පිළිගනිමු", "english": "Please / You're welcome", "example_sentence_target": "בבקשה, תן לי את זה.", "example_sentence_native": "කරුණාකර, මට එය දෙන්න.", "example_sentence_phonetic": "බෙවකශා, තෙන් ලී එත් සෙ."},
+        {"id": "w1_1_6", "target": "בוקר טוב", "phonetic": "බෝකර් ටෝව්", "native_meaning": "සුබ උදෑසනක්", "english": "Good morning", "example_sentence_target": "בוקר טוב, אבא.", "example_sentence_native": "සුබ උදෑසනක්, තාත්තේ.", "example_sentence_phonetic": "බෝකර් ටෝව්, අබා."},
+        {"id": "w1_1_7", "target": "ערב טוב", "phonetic": "එරෙව් ටෝව්", "native_meaning": "සුබ සන්ධ්‍යාවක්", "english": "Good evening", "example_sentence_target": "ערב טוב לכולם.", "example_sentence_native": "හැමෝටම සුබ සන්ධ්‍යාවක්.", "example_sentence_phonetic": "එරෙව් ටෝව් ලකුලාම්."},
+        {"id": "w1_1_8", "target": "להתראות", "phonetic": "ල'හිතාඕත්", "native_meaning": "ගිහින් එන්නම්", "english": "Goodbye", "example_sentence_target": "להתראות, נתראה מחר.", "example_sentence_native": "ගිහින් එන්නම්, හෙට හමුවෙමු.", "example_sentence_phonetic": "ල'හිතාඕත්, නිත්'රා'ඒ මකාර්."}
+      ],
+      "sentences": [
+        {"id": "s1_1_1", "target": "שלום וברוכים הבאים.", "native": "ආයුබෝවන් සහ සාදරයෙන් පිළිගනිමු.", "phonetic": "ශලෝම් උ'വ്രුඛීම් හ'බාঈම්."},
+        {"id": "s1_1_2", "target": "תודה על המתנה.", "native": "තෑග්ගට ස්තූතියි.", "phonetic": "තෝඩා අල් හ'මතනා."},
+        {"id": "s1_1_3", "target": "כן, זה נכון.", "native": "ඔව්, එය හරි.", "phonetic": "කෙන්, සෙ න'ඛෝන්."},
+        {"id": "s1_1_4", "target": "לא, אני לא רוצה.", "native": "නැහැ, මට අවශ්‍ය නැහැ.", "phonetic": "ලෝ, අනී ලෝ රොත්සේ."},
+        {"id": "s1_1_5", "target": "בבקשה, שב.", "native": "කරුණාකර වාඩිවෙන්න.", "phonetic": "බෙවකශා, ශෙව්."},
+        {"id": "s1_1_6", "target": "בוקר טוב, איך ישנת?", "native": "සුබ උදෑසනක්, කොහොමද නින්ද?", "phonetic": "බෝකර් ටෝව්, එයිඛ් යශන්'ත?"},
+        {"id": "s1_1_7", "target": "ערב טוב, מה שלומכם?", "native": "සුබ සන්ධ්‍යාවක්, ඔබට කොහොමද?", "phonetic": "එරෙව් ටෝව්, මා ශ්ලොම්'ඛෙම්?"},
+        {"id": "s1_1_8", "target": "להתראות ויום טוב.", "native": "ගිහින් එන්නම්, සුබ දවසක්.", "phonetic": "ල'හිතාඕත් වෙ'යෝම් ටෝව්."}
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
+          "context": "වෙළඳසැලකදී ආචාර කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
+            {"speaker": "A", "target": "שלום, אפשר עזרה?", "native": "හෙලෝ, උදව්වක් අවශ්‍යද?", "phonetic": "ශලෝම්, එෆ්ශාර් එස්රා?"},
+            {"speaker": "B", "target": "כן, בבקשה. אני מחפש חלב.", "native": "ඔව්, කරුණාකර. මම කිරි හොයනවා.", "phonetic": "කෙන්, බෙවකශා. අනී මෙඛපෙස් ඛලාව්."}
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "උදෑසනකදී මිතුරෙකු හමුවීම.",
+          "lines": [
+            {"speaker": "A", "target": "בוקר טוב, דני.", "native": "සුබ උදෑසනක්, ඩැනී.", "phonetic": "බෝකර් ටෝව්, ඩැනී."},
+            {"speaker": "B", "target": "בוקר טוב, שרה. מה שלומך?", "native": "සුබ උදෑසනක්, සාරා. ඔයාට කොහොමද?", "phonetic": "බෝකර් ටෝව්, සාරා. මා ශ්ලොමෙක්?"}
+          ]
+        },
+        {
+          "id": "d1_1_3",
+          "context": "යමෙකුට ස්තූති කිරීම.",
+          "lines": [
+            {"speaker": "A", "target": "הנה הספר שלך.", "native": "මෙන්න ඔබේ පොත.", "phonetic": "හිනේ හ'සෙෆර් ශෙල්'ඛා."},
+            {"speaker": "B", "target": "תודה רבה!", "native": "බොහොම ස්තූතියි!", "phonetic": "තෝඩා රාබා!"}
+          ]
+        },
+        {
+          "id": "d1_1_4",
+          "context": "දවස අවසානයේදී සමුගැනීම.",
+          "lines": [
+            {"speaker": "A", "target": "אני צריך ללכת. להתראות.", "native": "මට යන්න ඕන. ගිහින් එන්නම්.", "phonetic": "අනී ත්සරිඛ් ල'ලෙඛෙත්. ල'හිතාඕත්."},
+            {"speaker": "B", "target": "להתראות, נתראה.", "native": "ගිහින් එන්නම්, හමුවෙමු.", "phonetic": "ල'හිතාඕත්, නිත්'රා'ඒ."}
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_1_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_1_1", "target": "שלום", "native": "ආයුබෝවන්"},
+          {"id": "m1_1_2", "target": "תודה", "native": "ස්තූතියි"},
+          {"id": "m1_1_3", "target": "כן", "native": "ඔව්"},
+          {"id": "m1_1_4", "target": "לא", "native": "නැහැ"},
+          {"id": "m1_1_5", "target": "בבקשה", "native": "කරුණාකර"},
+          {"id": "m1_1_6", "target": "בוקר טוב", "native": "සුබ උදෑසනක්"},
+          {"id": "m1_1_7", "target": "ערב טוב", "native": "සුබ සන්ධ්‍යාවක්"},
+          {"id": "m1_1_8", "target": "להתראות", "native": "ගිහින් එන්නම්"}
         ]
       },
-      "cultural_note": "Week 1 Day 1: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "හීබෲ භාෂාවෙන් 'ශලෝම්' යනු 'හෙලෝ' සහ 'ගුඩ්බායි' යන දෙකටම භාවිතා වන අතර එහි තේරුම 'සාමය' යන්නයි. එය ඉතා සුලභ හා වැදගත් ආචාරයකි.",
+      "pronunciation_tip": "හීබෲ භාෂාවේ 'ח' (ඛෙත්) සහ 'כ' (කෆ්) අකුරු උගුරෙන් එන ශබ්ද වේ. ඒවා ඉංග්‍රීසි 'h' හෝ 'k' වලට වඩා වෙනස් ය.",
+      "progress": {"xp": 100, "streak_bonus": 10, "badge": "W1D1-HebrewGreetings"}
     },
     {
       "week": 1,
       "day": 2,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": "තමන්ව හඳුන්වා දීම",
+      "title_native": "הצגה עצמית",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_2_1", "target": "אני", "phonetic": "අනී", "native_meaning": "මම", "english": "I / I am", "example_sentence_target": "אני מדבר עברית.", "example_sentence_native": "මම හීබෲ කතා කරනවා.", "example_sentence_phonetic": "අනී මෙඩබෙර් ඉව්රිත්."},
+        {"id": "w1_2_2", "target": "שם", "phonetic": "ශෙම්", "native_meaning": "නම", "english": "Name", "example_sentence_target": "מה השם שלך?", "example_sentence_native": "ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "මා හ'ශෙම් ශෙල්'ඛා?"},
+        {"id": "w1_2_3", "target": "שלי", "phonetic": "ශෙලී", "native_meaning": "මගේ", "english": "My / Mine", "example_sentence_target": "השם שלי הוא דוד.", "example_sentence_native": "මගේ නම ඩේවිඩ්.", "example_sentence_phonetic": "හ'ශෙම් ශෙලී හූ ඩේවිඩ්."},
+        {"id": "w1_2_4", "target": "נעים מאוד", "phonetic": "නාঈම් මෙඕද්", "native_meaning": "හමුවීම සතුටක්", "english": "Nice to meet you", "example_sentence_target": "שלום, נעים מאוד.", "example_sentence_native": "ආයුබෝවන්, හමුවීම සතුටක්.", "example_sentence_phonetic": "ශලෝම්, නාঈම් මෙඕද්."},
+        {"id": "w1_2_5", "target": "מה שלומך?", "phonetic": "මා ශ්ලොම්'ඛා?", "native_meaning": "ඔබට කොහොමද? (පිරිමි)", "english": "How are you? (m)", "example_sentence_target": "היי, מה שלומך?", "example_sentence_native": "හායි, ඔයාට කොහොමද?", "example_sentence_phonetic": "හායි, මා ශ්ලොම්'ඛා?"},
+        {"id": "w1_2_6", "target": "מה שלומך?", "phonetic": "මා ශ්ලොමෙක්?", "native_meaning": "ඔබට කොහොමද? (කාන්තා)", "english": "How are you? (f)", "example_sentence_target": "שרה, מה שלומך?", "example_sentence_native": "සාරා, ඔයාට කොහොමද?", "example_sentence_phonetic": "සාරා, මා ශ්ලොමෙක්?"},
+        {"id": "w1_2_7", "target": "בסדר", "phonetic": "බෙසෙඩර්", "native_meaning": "හොඳින්", "english": "Okay / Fine", "example_sentence_target": "אני בסדר, תודה.", "example_sentence_native": "මම හොඳින්, ස්තූතියි.", "example_sentence_phonetic": "අනී බෙසෙඩර්, තෝඩා."},
+        {"id": "w1_2_8", "target": "מצוין", "phonetic": "මෙත්සුයන්", "native_meaning": "ඉතා හොඳින්", "english": "Excellent", "example_sentence_target": "הכל מצוין!", "example_sentence_native": "හැමදේම ඉතා හොඳයි!", "example_sentence_phonetic": "හ'කෝල් මෙත්සුයන්!"}
+      ],
+      "sentences": [
+        {"id": "s1_2_1", "target": "אני לומד עברית.", "native": "මම හීබෲ ඉගෙන ගන්නවා.", "phonetic": "අනී ලොමෙද් ඉව්රිත්."},
+        {"id": "s1_2_2", "target": "השם שלי הוא משה.", "native": "මගේ නම මෝසෙස්.", "phonetic": "හ'ශෙම් ශෙලී හූ මෝශේ."},
+        {"id": "s1_2_3", "target": "נעים מאוד להכיר אותך.", "native": "ඔබව හඳුනාගැනීම සතුටක්.", "phonetic": "නාঈම් මෙඕද් ල'හකීර් ඔත්'ඛා."},
+        {"id": "s1_2_4", "target": "מה שלומך היום?", "native": "අද ඔබට කොහොමද?", "phonetic": "මා ශ්ලොම්'ඛා හ'යෝම්?"},
+        {"id": "s1_2_5", "target": "אני בסדר גמור.", "native": "මම ගොඩක් හොඳින්.", "phonetic": "අනී බෙසෙඩර් ගමූර්."},
+        {"id": "s1_2_6", "target": "העבודה שלי מצוינת.", "native": "මගේ වැඩ ඉතා හොඳයි.", "phonetic": "හා'අවෝඩා ශෙලී මෙත්සුයෙනෙත්."},
+        {"id": "s1_2_7", "target": "קוראים לי רות.", "native": "මගේ නම රූත්.", "phonetic": "කෝර'ঈම් ලී රූත්."},
+        {"id": "s1_2_8", "target": "הכל בסדר, תודה לאל.", "native": "හැමදේම හොඳින්, දෙවියන්ට ස්තූතියි.", "phonetic": "හ'කෝල් බෙසෙඩර්, තෝඩා ලා'එල්."}
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
+          "context": "පළමු වරට කෙනෙකු හමුවීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
+            {"speaker": "A", "target": "שלום, קוראים לי דן. נעים מאוד.", "native": "ආයුබෝවන්, මගේ නම ඩෑන්. හමුවීම සතුටක්.", "phonetic": "ශලෝම්, කෝර'ঈම් ලී ඩෑන්. නාঈම් මෙඕද්."},
+            {"speaker": "B", "target": "נעים מאוד, אני רינה.", "native": "හමුවීම සතුටක්, මම රීනා.", "phonetic": "නාঈම් මෙඕද්, අනී රීනා."}
           ]
-        }
+        },
+        {
+          "id": "d1_2_2",
+          "context": "මිතුරෙකුගේ සුවදුක් විමසීම.",
+          "lines": [
+            {"speaker": "A", "target": "היי יעל, מה שלומך?", "native": "හායි යායෙල්, ඔයාට කොහොමද?", "phonetic": "හායි යායෙල්, මා ශ්ලොමෙක්?"},
+            {"speaker": "B", "target": "הכל בסדר. מה איתך?", "native": "හැමදේම හොඳින්. ඔයාට කොහොමද?", "phonetic": "හ'කෝල් බෙසෙඩර්. මා ඉටාඛ්?"}
+          ]
+        },
+        {"id": "d1_2_3", "context": "තමන්ව හඳුන්වා දීම", "lines": [{"speaker": "A", "target": "שלום, אני מורה.", "native": "ආයුබෝවන්, මම ගුරුවරයෙක්.", "phonetic": "ශලෝම්, අනී මොරේ."}, {"speaker": "B", "target": "נעים להכיר, אני סטודנט.", "native": "හඳුනාගැනීම සතුටක්, මම ශිෂ්‍යයෙක්.", "phonetic": "නාঈම් ල'හකීර්, අනී ස්ටුඩන්ට්."}]},
+        {"id": "d1_2_4", "context": "හොඳින් දැයි ඇසීම", "lines": [{"speaker": "A", "target": "מה שלומך?", "native": "ඔබට කොහොමද?", "phonetic": "මා ශ්ලොම්'ඛා?"}, {"speaker": "B", "target": "מצוין, תודה! ואתה?", "native": "ඉතා හොඳින්, ස්තූතියි! සහ ඔබ?", "phonetic": "මෙත්සුයන්, තෝඩා! වෙ'අතා?"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_2_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_2_1", "target": "אני", "native": "මම"},
+          {"id": "m1_2_2", "target": "שם", "native": "නම"},
+          {"id": "m1_2_3", "target": "שלי", "native": "මගේ"},
+          {"id": "m1_2_4", "target": "נעים מאוד", "native": "හමුවීම සතුටක්"},
+          {"id": "m1_2_5", "target": "מה שלומך?", "native": "ඔබට කොහොමද?"},
+          {"id": "m1_2_6", "target": "בסדר", "native": "හොඳින්"},
+          {"id": "m1_2_7", "target": "מצוין", "native": "ඉතා හොඳින්"},
+          {"id": "m1_2_8", "target": "להתראות", "native": "ගිහින් එන්නම්"}
         ]
       },
-      "cultural_note": "Week 1 Day 2: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "හීබෲ භාෂාවේදී, පුරුෂ සහ ස්ත්‍රී ලිංග භේදය අනුව ක්‍රියාපද සහ නාමවිශේෂණ වෙනස් වේ. උදාහරණයක් ලෙස, 'මා ශ්ලොම්'ඛා?' (පිරිමි) සහ 'මා ශ්ලොමෙක්?' (කාන්තා).",
+      "pronunciation_tip": "'ר' (රෙයිශ්) අකුරේ ශබ්දය ප්‍රංශ 'r' ශබ්දයට සමාන වන අතර, එය උගුරේ පිටුපසින් ශබ්ද කෙරේ.",
+      "progress": {"xp": 100, "streak_bonus": 10, "badge": "W1D2-HebrewIntro"}
     },
     {
       "week": 1,
       "day": 3,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": "අන් අයගේ නම ඇසීම",
+      "title_native": "לשאול לשמו של מישהו",
+      "theme": "Asking Names",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_3_1", "target": "מה", "phonetic": "මා", "native_meaning": "කුමක්ද", "english": "What", "example_sentence_target": "מה זה?", "example_sentence_native": "මෙය කුමක්ද?", "example_sentence_phonetic": "මා සෙ?"},
+        {"id": "w1_3_2", "target": "שמך", "phonetic": "ශිම්'ඛා", "native_meaning": "ඔබේ නම (පිරිමි)", "english": "Your name (m)", "example_sentence_target": "מה שמך?", "example_sentence_native": "ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "මා ශිම්'ඛා?"},
+        {"id": "w1_3_3", "target": "שמך", "phonetic": "ශ'මෙක්", "native_meaning": "ඔබේ නම (කාන්තා)", "english": "Your name (f)", "example_sentence_target": "סליחה, מה שמך?", "example_sentence_native": "සමාවන්න, ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "ස්ලී'ඛා, මා ශ'මෙක්?"},
+        {"id": "w1_3_4", "target": "קוראים לי", "phonetic": "කෝර'ঈම් ලී", "native_meaning": "මගේ නම...", "english": "My name is...", "example_sentence_target": "שלום, קוראים לי נועה.", "example_sentence_native": "ආයුබෝවන්, මගේ නම නෝවා.", "example_sentence_phonetic": "ශලෝම්, කෝර'ঈම් ලී නෝආ."},
+        {"id": "w1_3_5", "target": "איך", "phonetic": "එයිඛ්", "native_meaning": "කෙසේද", "english": "How", "example_sentence_target": "איך קוראים לך?", "example_sentence_native": "ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "එයිඛ් කෝර'ঈම් ල'ඛා?"},
+        {"id": "w1_3_6", "target": "לך", "phonetic": "ල'ඛා / ලාඛ්", "native_meaning": "ඔබට", "english": "To you (m/f)", "example_sentence_target": "איך אני יכול לעזור לך?", "native": "මම ඔබට උදව් කරන්නේ කෙසේද?", "phonetic": "එයිඛ් අනී ය'ඛොල් ල'අසෝර් ල'ඛා?"},
+        {"id": "w1_3_7", "target": "שלו", "phonetic": "ශෙලෝ", "native_meaning": "ඔහුගේ", "english": "His", "example_sentence_target": "מה השם שלו?", "example_sentence_native": "ඔහුගේ නම කුමක්ද?", "example_sentence_phonetic": "මා හ'ශෙම් ශෙලෝ?"},
+        {"id": "w1_3_8", "target": "שלה", "phonetic": "ශෙලා", "native_meaning": "ඇයගේ", "english": "Her", "example_sentence_target": "השם שלה הוא תמר.", "example_sentence_native": "ඇයගේ නම තමරා.", "example_sentence_phonetic": "හ'ශෙම් ශෙලා හී තමර්."}
+      ],
+      "sentences": [
+        {"id": "s1_3_1", "target": "מה שמך, בבקשה?", "native": "ඔබේ නම කුමක්ද, කරුණාකර?", "phonetic": "මා ශිම්'ඛා, බෙවකශා?"},
+        {"id": "s1_3_2", "target": "קוראים לי אבי.", "native": "මගේ නම අවී.", "phonetic": "කෝර'ঈම් ලී අවී."},
+        {"id": "s1_3_3", "target": "איך קוראים לאחותך?", "native": "ඔබේ සහෝදරියගේ නම කුමක්ද?", "phonetic": "එයිඛ් කෝර'ঈම් ල'අඛොත්'ඛා?"},
+        {"id": "s1_3_4", "target": "השם שלו הוא יוסף.", "native": "ඔහුගේ නම යෝසෙෆ්.", "phonetic": "හ'ශෙම් ශෙලෝ හූ යොසෙෆ්."},
+        {"id": "s1_3_5", "target": "שמי הוא שרה.", "native": "මගේ නම සාරා.", "phonetic": "ශ්මී හූ සාරා."},
+        {"id": "s1_3_6", "target": "נעים להכיר, איך קוראים לך?", "native": "හමුවීම සතුටක්, ඔබේ නම කුමක්ද?", "phonetic": "නාঈම් ල'හකීර්, එයිඛ් කෝර'ঈම් ලාඛ්?"},
+        {"id": "s1_3_7", "target": "השם שלה לא מוכר לי.", "native": "ඇයගේ නම මට හුරු නැහැ.", "phonetic": "හ'ශෙම් ශෙලා ලෝ මුකර් ලී."},
+        {"id": "s1_3_8", "target": "אתה יכול להגיד לי את שמך?", "native": "ඔබට මට ඔබේ නම කියන්න පුලුවන්ද?", "phonetic": "අතා ය'ඛොල් ල'හගීද් ලී එත් ශිම්'ඛා?"}
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
-          ]
-        }
+        {"id": "d1_3_1", "context": "කාර්යාලයකදී නම ඇසීම.", "lines": [{"speaker": "A", "target": "סליחה, מה שמך?", "native": "සමාවන්න, ඔබේ නම කුමක්ද?", "phonetic": "ස්ලී'ඛා, මා ශ'මෙක්?"}, {"speaker": "B", "target": "קוראים לי לאה. ושלך?", "native": "මගේ නම ලෙයා. සහ ඔබේ?", "phonetic": "කෝර'ঈම් ලී ලෙආ. වෙ'ශෙල්'ඛා?"}]},
+        {"id": "d1_3_2", "context": "තුන්වන පුද්ගලයෙකු ගැන ඇසීම.", "lines": [{"speaker": "A", "target": "מי האיש הזה?", "native": "අර පුද්ගලයා කවුද?", "phonetic": "මී හා'ঈශ් හ'සෙ?"}, {"speaker": "B", "target": "זה דני. השם שלו הוא דניאל.", "native": "ඒ ඩැනී. ඔහුගේ නම ඩැනියෙල්.", "phonetic": "සෙ ඩැනී. හ'ශෙම් ශෙලෝ හූ ඩැනියෙල්."}]},
+        {"id": "d1_3_3", "context": "විධිමත් ලෙස නම ඇසීම.", "lines": [{"speaker": "A", "target": "אפשר לשאול מה שמך?", "native": "ඔබේ නම කුමක්දැයි අහන්න පුලුවන්ද?", "phonetic": "එෆ්ශාර් ලිශ්'ඕල් මා ශිම්'ඛා?"}, {"speaker": "B", "target": "בטח, שמי יצחק.", "native": "ඇත්තෙන්ම, මගේ නම යිට්ස්'ඛාක්.", "phonetic": "බෙටඛ්, ශ්මී යිට්ස්'ඛාක්."}]},
+        {"id": "d1_3_4", "context": "මිතුරෙකුගේ නම හඳුන්වා දීම.", "lines": [{"speaker": "A", "target": "זה חבר שלי, יוסי.", "native": "මේ මගේ මිතුරා, යෝසී.", "phonetic": "සෙ ඛවෙර් ශෙලී, යෝසී."}, {"speaker": "B", "target": "היי יוסי, נעים מאוד. אני רבקה.", "native": "හායි යෝසී, හමුවීම සතුටක්. මම රිව්කා.", "phonetic": "හායි යෝසී, නාঈම් මෙඕද්. අනී රිව්කා."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_3_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_3_1", "target": "מה", "native": "කුමක්ද"},
+          {"id": "m1_3_2", "target": "שמך (m)", "native": "ඔබේ නම (පිරිමි)"},
+          {"id": "m1_3_3", "target": "קוראים לי", "native": "මගේ නම..."},
+          {"id": "m1_3_4", "target": "איך", "native": "කෙසේද"},
+          {"id": "m1_3_5", "target": "לך", "native": "ඔබට"},
+          {"id": "m1_3_6", "target": "שלו", "native": "ඔහුගේ"},
+          {"id": "m1_3_7", "target": "שלה", "native": "ඇයගේ"},
+          {"id": "m1_3_8", "target": "שמי", "native": "මගේ නම"}
         ]
       },
-      "cultural_note": "Week 1 Day 3: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "ඊශ්‍රායලයේ, 'איך קוראים לך?' (එයිඛ් කෝර'ঈම් ල'ඛා/ලාඛ්?) යනු 'ඔබේ නම කුමක්ද?' කියා ඇසීමට වඩාත් සුලභ සහ ස්වභාවික ක්‍රමයයි.",
+      "pronunciation_tip": "'ק' (කොෆ්) අකුරේ ශබ්දය ඉංග්‍රීසි 'k' ශබ්දයට සමාන වන නමුත්, එය උගුරෙන් වඩාත් ගැඹුරින් ශබ්ද කෙරේ.",
+      "progress": {"xp": 100, "streak_bonus": 10, "badge": "W1D3-HebrewNames"}
     },
     {
       "week": 1,
       "day": 4,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": "ජාතිකත්වය සහ රට",
+      "title_native": "לאום ומדינה",
+      "theme": "Nationality & Country",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_4_1", "target": "מאיפה", "phonetic": "මෙ'එයිෆෝ", "native_meaning": "කොහෙන්ද", "english": "From where", "example_sentence_target": "מאיפה אתה?", "example_sentence_native": "ඔබ කොහෙන්ද?", "example_sentence_phonetic": "මෙ'එයිෆෝ අතා?"},
+        {"id": "w1_4_2", "target": "אתה", "phonetic": "අතා", "native_meaning": "ඔබ (පිරිමි)", "english": "You (m)", "example_sentence_target": "אתה מדבר אנגלית?", "example_sentence_native": "ඔබ ඉංග්‍රීසි කතා කරනවද?", "example_sentence_phonetic": "අතා මෙඩබෙර් අන්ග්ලිත්?"},
+        {"id": "w1_4_3", "target": "את", "phonetic": "අත්", "native_meaning": "ඔබ (කාන්තා)", "english": "You (f)", "example_sentence_target": "את מורה?", "example_sentence_native": "ඔබ ගුරුවරියක්ද?", "example_sentence_phonetic": "අත් මෝරා?"},
+        {"id": "w1_4_4", "target": "מ...", "phonetic": "මි...", "native_meaning": "...සිට / ...ගෙන්", "english": "From...", "example_sentence_target": "אני מסרי לנקה.", "example_sentence_native": "මම ශ්‍රී ලංකාවෙන්.", "example_sentence_phonetic": "අනී මි'ශ්‍රී ලංකා."},
+        {"id": "w1_4_5", "target": "מדינה", "phonetic": "මෙඩීනා", "native_meaning": "රට", "english": "Country", "example_sentence_target": "ישראל היא מדינה יפה.", "example_sentence_native": "ඊශ්‍රායලය ලස්සන රටක්.", "example_sentence_phonetic": "යිශ්‍රා'එල් හී මෙඩීනා යෆා."},
+        {"id": "w1_4_6", "target": "עיר", "phonetic": "ඊර්", "native_meaning": "නගරය", "english": "City", "example_sentence_target": "אני גר בעיר תל אביב.", "example_sentence_native": "මම ජීවත් වෙන්නේ තෙල් අවීව් නගරයේ.", "example_sentence_phonetic": "අනී ගර් බ'ඊර් තෙල් අවීව්."},
+        {"id": "w1_4_7", "target": "אזרחות", "phonetic": "එස්'රඛුත්", "native_meaning": "පුරවැසිභාවය", "english": "Citizenship", "example_sentence_target": "יש לי אזרחות ישראלית.", "example_sentence_native": "මට ඊශ්‍රායල පුරවැසිභාවය තියෙනවා.", "example_sentence_phonetic": "යේශ් ලී එස්'රඛුත් යිශ්‍ර'එලීත්."},
+        {"id": "w1_4_8", "target": "שפה", "phonetic": "සෆා", "native_meaning": "භාෂාව", "english": "Language", "example_sentence_target": "אני לומד את השפה העברית.", "example_sentence_native": "මම හීබෲ භාෂාව ඉගෙන ගන්නවා.", "example_sentence_phonetic": "අනී ලොමෙද් එත් හ'සෆා හ'ඉව්රිත්."}
+      ],
+      "sentences": [
+        {"id": "s1_4_1", "target": "מאיפה את בישראל?", "native": "ඔබ ඊශ්‍රායලයේ කොහෙන්ද?", "phonetic": "මෙ'එයිෆෝ අත් බ'යිශ්‍රා'එල්?"},
+        {"id": "s1_4_2", "target": "אני מהודו.", "native": "මම ඉන්දියාවෙන්.", "phonetic": "අනී මෙ'හෝඩු."},
+        {"id": "s1_4_3", "target": "זאת מדינה גדולה.", "native": "මෙය විශාල රටක්.", "phonetic": "සොත් මෙඩීනා ග්'ඩෝලා."},
+        {"id": "s1_4_4", "target": "אני אוהב את העיר הזאת.", "native": "මම මේ නගරයට කැමතියි.", "phonetic": "අනී ඕහේව් එත් හා'ঈර් හ'සොත්."},
+        {"id": "s1_4_5", "target": "מה השפה הרשמית?", "native": "රාජ්‍ය භාෂාව කුමක්ද?", "phonetic": "මා හ'සෆා හා'රිශ්මීත්?"},
+        {"id": "s1_4_6", "target": "אתה צריך ויזה?", "native": "ඔබට වීසා අවශ්‍යද?", "phonetic": "අතා ත්සරිඛ් වීසා?"},
+        {"id": "s1_4_7", "target": "אני גר בקולומבו.", "native": "මම ජීවත් වෙන්නේ කොළඹ.", "phonetic": "අනී ගර් බ'කොළොම්බෝ."},
+        {"id": "s1_4_8", "target": "היא מדברת שלוש שפות.", "native": "ඇය භාෂා තුනක් කතා කරනවා.", "phonetic": "හී මෙඩබෙරෙත් ශලෝශ් සෆොත්."}
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
-          ]
-        }
+        {"id": "d1_4_1", "context": "කෙනෙකුගේ රට ගැන ඇසීම.", "lines": [{"speaker": "A", "target": "שלום, מאיפה אתה?", "native": "ආයුබෝවන්, ඔබ කොහෙන්ද?", "phonetic": "ශලෝම්, මෙ'එයිෆෝ අතා?"}, {"speaker": "B", "target": "אני מסרי לנקה. ואת?", "native": "මම ශ්‍රී ලංකාවෙන්. සහ ඔබ?", "phonetic": "අනී මි'ශ්‍රී ලංකා. වෙ'අත්?"}]},
+        {"id": "d1_4_2", "context": "භාෂා ගැන කතා කිරීම.", "lines": [{"speaker": "A", "target": "איזו שפה אתה מדבר?", "native": "ඔබ කතා කරන්නේ කුමන භාෂාවද?", "phonetic": "එයිසෝ සෆා අතා මෙඩබෙර්?"}, {"speaker": "B", "target": "אני מדבר סינהלית ואנגלית. אני לומד עברית.", "native": "මම සිංහල සහ ඉංග්‍රීසි කතා කරනවා. මම හීබෲ ඉගෙන ගන්නවා.", "phonetic": "අනී මෙඩබෙර් සිංහලිත් වෙ'අන්ග්ලිත්. අනී ලොමෙද් ඉව්රිත්."}]},
+        {"id": "d1_4_3", "context": "නගරය ගැන ඇසීම.", "lines": [{"speaker": "A", "target": "אתה גר בתל אביב?", "native": "ඔබ ජීවත් වෙන්නේ තෙල් අවීව් වලද?", "phonetic": "අතා ගර් බ'තෙල් අවීව්?"}, {"speaker": "B", "target": "לא, אני גר בירושלים.", "native": "නැහැ, මම ජීවත් වෙන්නේ ජෙරුසලමේ.", "phonetic": "ලෝ, අනී ගර් බ'යිරුශලයින්."}]},
+        {"id": "d1_4_4", "context": "පුරවැසිභාවය ගැන ඇසීම.", "lines": [{"speaker": "A", "target": "יש לך אזרחות ישראלית?", "native": "ඔබට ඊශ්‍රායල පුරවැසිභාවය තිබේද?", "phonetic": "යේශ් ල'ඛා එස්'රඛුත් යිශ්‍ර'එලීත්?"}, {"speaker": "B", "target": "לא, יש לי אשרת עבודה.", "native": "නැහැ, මට රැකියා වීසා එකක් තියෙනවා.", "phonetic": "ලෝ, යේශ් ලී අශ්රත් අවෝඩා."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_4_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_4_1", "target": "מאיפה", "native": "කොහෙන්ද"},
+          {"id": "m1_4_2", "target": "אתה", "native": "ඔබ (පිරිමි)"},
+          {"id": "m1_4_3", "target": "את", "native": "ඔබ (කාන්තා)"},
+          {"id": "m1_4_4", "target": "מדינה", "native": "රට"},
+          {"id": "m1_4_5", "target": "עיר", "native": "නගරය"},
+          {"id": "m1_4_6", "target": "אזרחות", "native": "පුරවැසිභාවය"},
+          {"id": "m1_4_7", "target": "שפה", "native": "භාෂාව"},
+          {"id": "m1_4_8", "target": "אני מסרי לנקה", "native": "මම ශ්‍රී ලංකාවෙන්"}
         ]
       },
-      "cultural_note": "Week 1 Day 4: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "ඊශ්‍රායලය යනු සංක්‍රමණිකයන්ගෙන් සැදුම් ලත් රටකි. එබැවින් 'ඔබ කොහෙන්ද?' (מאיפה אתה/את) යන ප්‍රශ්නය ඉතා සුලභ වන අතර එය මිනිසුන්ව හඳුනාගැනීමේ සාමාන්‍ය ක්‍රමයකි.",
+      "pronunciation_tip": "'ע' (අයින්) යනු උගුරෙන් එන ශබ්දයක් වන අතර, එය සිංහල භාෂාවේ නොමැත. එය නිවැරදිව උච්චාරණය කිරීමට පුහුණුව අවශ්‍ය වේ.",
+      "progress": {"xp": 100, "streak_bonus": 10, "badge": "W1D4-HebrewOrigin"}
     },
     {
       "week": 1,
       "day": 5,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": " politely use expressions",
+      "title_native": "הבעות נימוסין",
+      "theme": "Polite Expressions",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_5_1", "target": "סליחה", "phonetic": "ස්ලී'ඛා", "native_meaning": "සමාවන්න / Excuse me", "english": "Sorry / Excuse me", "example_sentence_target": "סליחה, איפה השירותים?", "example_sentence_native": "සමාවන්න, වැසිකිළිය කොහේද?", "example_sentence_phonetic": "ස්ලී'ඛා, එයිෆෝ හ'ශේරුතීම්?"},
+        {"id": "w1_5_2", "target": "מצטער", "phonetic": "මිට්ස්'තා'එර්", "native_meaning": "කණගාටුයි (පිරිමි)", "english": "Sorry (m)", "example_sentence_target": "אני מצטער על האיחור.", "example_sentence_native": "ප්‍රමාද වීම ගැන මම කණගාටුයි.", "example_sentence_phonetic": "අනී මිට්ස්'තා'එර් අල් හා'อีඛූර්."},
+        {"id": "w1_5_3", "target": "מצטערת", "phonetic": "මිට්ස්'තා'එරෙත්", "native_meaning": "කණගාටුයි (කාන්තා)", "english": "Sorry (f)", "example_sentence_target": "אני מצטערת, לא שמעתי.", "example_sentence_native": "මට කණගාටුයි, මට ඇහුණේ නැහැ.", "example_sentence_phonetic": "අනී මිට්ස්'තා'එරෙත්, ලෝ ශමා'ති."},
+        {"id": "w1_5_4", "target": "אין בעיה", "phonetic": "එයින් බ'ආයා", "native_meaning": "ප්‍රශ්නයක් නෑ", "english": "No problem", "example_sentence_target": "תודה. - אין בעיה.", "example_sentence_native": "ස්තූතියි. - ප්‍රශ්නයක් නෑ.", "example_sentence_phonetic": "තෝඩා. - එයින් බ'ආයා."},
+        {"id": "w1_5_5", "target": "בתיאבון", "phonetic": "බ'තේ'ආවොන්", "native_meaning": "ආහාරය රසවිඳින්න", "english": "Bon appétit", "example_sentence_target": "האוכל מוכן. בתיאבון!", "example_sentence_native": "කෑම ලෑස්තියි. ආහාරය රසවිඳින්න!", "example_sentence_phonetic": "හා'ඕඛෙල් මුඛාන්. බ'තේ'ආවොන්!"},
+        {"id": "w1_5_6", "target": "לבריאות", "phonetic": "ලි'ව්රී'ඌත්", "native_meaning": "සුවපත් වේවා (කහින විට)", "english": "Bless you (after sneeze)", "example_sentence_target": "אפצ'י! - לבריאות.", "example_sentence_native": "ආහ්..චිහ්! - සුවපත් වේවා.", "example_sentence_phonetic": "අප්'චී! - ලි'ව්රී'ඌත්."},
+        {"id": "w1_5_7", "target": "בהצלחה", "phonetic": "බ'හට්ස්'ලඛා", "native_meaning": "සුබ පැතුම් / ජයවේවා", "english": "Good luck", "example_sentence_target": "יש לי מבחן מחר. - בהצלחה!", "example_sentence_native": "මට හෙට විභාගයක් තියෙනවා. - ජයවේවා!", "example_sentence_phonetic": "යේශ් ලී මිව්'ඛාන් මඛාර්. - බ'හට්ස්'ලඛා!"},
+        {"id": "w1_5_8", "target": "מזל טוב", "phonetic": "මසාල් ටෝව්", "native_meaning": "සුබ පැතුම් (සතුටු අවස්ථාවක)", "english": "Congratulations", "example_sentence_target": "התחתנתי! - מזל טוב!", "example_sentence_native": "මම විවාහ වුනා! - සුබ පැතුම්!", "example_sentence_phonetic": "හිට්'ඛතන්'ති! - මසාල් ටෝව්!"}
+      ],
+      "sentences": [
+        {"id": "s1_5_1", "target": "סליחה, אתה יכול לעזור לי?", "native": "සමාවන්න, ඔබට මට උදව් කරන්න පුලුවන්ද?", "phonetic": "ස්ලී'ඛා, අතා ය'ඛොල් ල'අසෝර් ලී?"},
+        {"id": "s1_5_2", "target": "אני כל כך מצטער.", "native": "මට ගොඩක් කණගාටුයි.", "phonetic": "අනී කෝල් කාඛ් මිට්ස්'තා'එර්."},
+        {"id": "s1_5_3", "target": "זה בסדר, אין בעיה.", "native": "ඒක කමක් නෑ, ප්‍රශ්නයක් නෑ.", "phonetic": "සෙ බෙසෙඩර්, එයින් බ'ආයා."},
+        {"id": "s1_5_4", "target": "בתיאבון לכולם.", "native": "හැමෝම ආහාරය රසවිඳින්න.", "phonetic": "බ'තේ'ආවොන් ල'කුලාම්."},
+        {"id": "s1_5_5", "target": "שיהיה לך בהצלחה בראיון.", "native": "සම්මුඛ පරීක්ෂණයට ඔබට ජය!", "phonetic": "ශ'යිහියේ ල'ඛා බ'හට්ස්'ලඛා බ'රා'අයෝන්."},
+        {"id": "s1_5_6", "target": "מזל טוב ליום ההולדת שלך!", "native": "ඔබේ උපන්දිනයට සුබ පැතුම්!", "phonetic": "මසාල් ටෝව් ල'යෝම් හ'හුලෙඩෙත් ශෙල්'ඛා!"},
+        {"id": "s1_5_7", "target": "סליחה שאני מפריע.", "native": "බාධා කිරීම ගැන සමාවන්න.", "phonetic": "ස්ලී'ඛා ශ'අනී මෆ්රී'අ."},
+        {"id": "s1_5_8", "target": "לבריאות! אתה בסדר?", "native": "සුවපත් වේවා! ඔබ හොඳින්ද?", "phonetic": "ලි'ව්රී'ඌත්! අතා බෙසෙඩර්?"}
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
-          ]
-        }
+        {"id": "d1_5_1", "context": "අත්වැරැද්දකට සමාව ඇසීම.", "lines": [{"speaker": "A", "target": "אוי, אני מצטער, שפכתי לך את הקפה.", "native": "අනේ, මට කණගාටුයි, මම ඔබේ කෝපි එක හැලුවා.", "phonetic": "ඕයි, අනී මිට්ස්'තා'එර්, ශ'ෆඛ්'ති ල'ඛා එත් හ'කෆේ."}, {"speaker": "B", "target": "לא נורא, אין בעיה.", "native": "කමක් නෑ, ප්‍රශ්නයක් නෑ.", "phonetic": "ලෝ නෝරා, එයින් බ'ආයා."}]},
+        {"id": "d1_5_2", "context": "කෙනෙකුට සුබ පැතීම.", "lines": [{"speaker": "A", "target": "קיבלתי עבודה חדשה!", "native": "මට අලුත් රස්සාවක් ලැබුණා!", "phonetic": "කිබල්'ති අවෝඩා ඛඩශා!"}, {"speaker": "B", "target": "וואו, מזל טוב! בהצלחה!", "native": "වාව්, සුබ පැතුම්! ජයවේවා!", "phonetic": "වාව්, මසාල් ටෝව්! බ'හට්ස්'ලඛා!"}]},
+        {"id": "d1_5_3", "context": "ආහාර වේලක් ආරම්භයේදී.", "lines": [{"speaker": "A", "target": "נראה טעים. בתיאבון!", "native": "රස පාටයි. ආහාරය රසවිඳින්න!", "phonetic": "නිර්'ආ ත'ঈම්. බ'තේ'ආවොන්!"}, {"speaker": "B", "target": "תודה, גם לך.", "native": "ස්තූතියි, ඔබටත්.", "phonetic": "තෝඩා, ගම් ල'ඛා."}]},
+        {"id": "d1_5_4", "context": "යමෙකුගේ අවධානය ලබාගැනීම.", "lines": [{"speaker": "A", "target": "סליחה, מה השעה?", "native": "සමාවන්න, වෙලාව කීයද?", "phonetic": "ස්ලී'ඛා, මා හ'ශ'ආ?"}, {"speaker": "B", "target": "השעה חמש.", "native": "වෙලාව පහයි.", "phonetic": "හ'ශ'ආ ඛමේශ්."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_5_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_5_1", "target": "סליחה", "native": "සමාවන්න"},
+          {"id": "m1_5_2", "target": "מצטער", "native": "කණගාටුයි (පිරිමි)"},
+          {"id": "m1_5_3", "target": "אין בעיה", "native": "ප්‍රශ්නයක් නෑ"},
+          {"id": "m1_5_4", "target": "בתיאבון", "native": "ආහාරය රසවිඳින්න"},
+          {"id": "m1_5_5", "target": "לבריאות", "native": "සුවපත් වේවා"},
+          {"id": "m1_5_6", "target": "בהצלחה", "native": "ජයවේවා"},
+          {"id": "m1_5_7", "target": "מזל טוב", "native": "සුබ පැතුම්"},
+          {"id": "m1_5_8", "target": "מצטערת", "native": "කණගාටුයි (කාන්තා)"}
         ]
       },
-      "cultural_note": "Week 1 Day 5: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "'මසාල් ටෝව්' (מזל טוב) යනු උපන්දින, විවාහ, නව රැකියා වැනි ප්‍රීතිමත් අවස්ථා සඳහා භාවිතා වන සුබ පැතුමකි. එහි අර්ථය 'හොඳ වාසනාවක්' යන්නයි.",
+      "pronunciation_tip": "'ב' (බෙත්) අකුර වචනයක් මුලදී 'b' ලෙසත්, මැදදී හෝ අගදී 'v' ලෙසත් ශබ්ද විය හැක. උදා: בוקר (බෝකර්), אבל (අවාල්).",
+      "progress": {"xp": 100, "streak_bonus": 10, "badge": "W1D5-HebrewPolite"}
     },
     {
       "week": 1,
       "day": 6,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": "ඔව් / නැහැ / සමහරවිට",
+      "title_native": "כן / לא / אולי",
+      "theme": "Yes / No / Maybe",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_6_1", "target": "כן", "phonetic": "කෙන්", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "כן, אני מסכים.", "example_sentence_native": "ඔව්, මම එකඟයි.", "example_sentence_phonetic": "කෙන්, අනී මස්කිම්."},
+        {"id": "w1_6_2", "target": "לא", "phonetic": "ලෝ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "לא, זה לא נכון.", "example_sentence_native": "නැහැ, එය වැරදියි.", "example_sentence_phonetic": "ලෝ, සෙ ලෝ න'ඛෝන්."},
+        {"id": "w1_6_3", "target": "אולי", "phonetic": "උලායි", "native_meaning": "සමහරවිට", "english": "Maybe", "example_sentence_target": "אולי נלך מחר.", "example_sentence_native": "සමහරවිට අපි හෙට යමු.", "example_sentence_phonetic": "උලායි නෙලෙක් මඛාර්."},
+        {"id": "w1_6_4", "target": "בטח", "phonetic": "බෙටඛ්", "native_meaning": "ඇත්තෙන්ම / Sure", "english": "Of course / Sure", "example_sentence_target": "אתה בא? - בטח!", "example_sentence_native": "ඔයා එනවද? - ඇත්තෙන්ම!", "example_sentence_phonetic": "අතා බා? - බෙටඛ්!"},
+        {"id": "w1_6_5", "target": "נכון", "phonetic": "න'ඛෝන්", "native_meaning": "හරි", "english": "Correct / Right", "example_sentence_target": "זה נכון.", "example_sentence_native": "මෙය හරි.", "example_sentence_phonetic": "සෙ න'ඛෝන්."},
+        {"id": "w1_6_6", "target": "לא נכון", "phonetic": "ලෝ න'ඛෝන්", "native_meaning": "වැරදියි", "english": "Incorrect / Wrong", "example_sentence_target": "התשובה שלך לא נכונה.", "example_sentence_native": "ඔබේ පිළිතුර වැරදියි.", "example_sentence_phonetic": "හ'ත්ශුවා ශෙල්'ඛා ලෝ න'ඛෝනා."},
+        {"id": "w1_6_7", "target": "אני לא יודע", "phonetic": "අනී ලෝ යොඩේ'අ", "native_meaning": "මම දන්නේ නැහැ (පිරිමි)", "english": "I don't know (m)", "example_sentence_target": "אני לא יודע את התשובה.", "example_sentence_native": "මම පිළිතුර දන්නේ නැහැ.", "example_sentence_phonetic": "අනී ලෝ යොඩේ'අ එත් හ'ත්ශුවා."},
+        {"id": "w1_6_8", "target": "אני לא יודעת", "phonetic": "අනී ලෝ යොඩ'අත්", "native_meaning": "මම දන්නේ නැහැ (කාන්තා)", "english": "I don't know (f)", "example_sentence_target": "אני לא יודעת איפה זה.", "example_sentence_native": "ඒක කොහෙද කියලා මම දන්නේ නැහැ.", "example_sentence_phonetic": "අනී ලෝ යොඩ'අත් එයිෆෝ සෙ."}
+      ],
+      "sentences": [
+        {"id": "s1_6_1", "target": "כן, זה רעיון טוב.", "native": "ඔව්, එය හොඳ අදහසක්.", "phonetic": "කෙන්, සෙ ර'අයෝන් ටෝව්."},
+        {"id": "s1_6_2", "target": "לא, אני לא יכול לבוא.", "native": "නැහැ, මට එන්න බැහැ.", "phonetic": "ලෝ, අනී ලෝ ය'ඛොල් ල'වෝ."},
+        {"id": "s1_6_3", "target": "אולי בפעם אחרת.", "native": "සමහරවිට වෙන වෙලාවක.", "phonetic": "උලායි බ'පාම් අඛෙරෙත්."},
+        {"id": "s1_6_4", "target": "בטח, אני אעזור לך.", "native": "ඇත්තෙන්ම, මම ඔබට උදව් කරන්නම්.", "phonetic": "බෙටඛ්, අනී එ'එසෝර් ල'ඛා."},
+        {"id": "s1_6_5", "target": "החישוב שלך נכון.", "native": "ඔබේ ගණනය කිරීම හරි.", "phonetic": "හා'ඛිශූව් ශෙල්'ඛා න'ඛෝන්."},
+        {"id": "s1_6_6", "target": "זה פשוט לא נכון.", "native": "මෙය සරලවම වැරදියි.", "phonetic": "සෙ පශූට් ලෝ න'ඛෝන්."},
+        {"id": "s1_6_7", "target": "אני לא יודע מה להגיד.", "native": "මම දන්නේ නෑ මොනවා කියන්නද කියලා.", "phonetic": "අනී ලෝ යොඩේ'අ මා ල'හගීද්."},
+        {"id": "s1_6_8", "target": "היא לא יודעת את הדרך.", "native": "ඇය පාර දන්නේ නැහැ.", "phonetic": "හී ලෝ යොඩ'අත් එත් හ'ඩෙරෙක්."}
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
-          ]
-        }
+        {"id": "d1_6_1", "context": "ආරාධනාවකට පිළිතුරු දීම.", "lines": [{"speaker": "A", "target": "אתה רוצה לבוא לקולנוע?", "native": "ඔබට සිනමා ශාලාවට එන්න අවශ්‍යද?", "phonetic": "අතා රොත්සේ ල'වෝ ල'කොල්නෝ'අ?"}, {"speaker": "B", "target": "כן, בטח! מתי?", "native": "ඔව්, ඇත්තෙන්ම! කවදද?", "phonetic": "කෙන්, බෙටඛ්! මතයි?"}]},
+        {"id": "d1_6_2", "context": "යමක් ගැන අවිනිශ්චිත වීම.", "lines": [{"speaker": "A", "target": "החנות פתוחה היום?", "native": "අද කඩේ ඇරලද?", "phonetic": "හා'ඛනූත් ප'තුඛා හ'යෝම්?"}, {"speaker": "B", "target": "אני לא יודעת. אולי.", "native": "මම දන්නේ නැහැ. සමහරවිට.", "phonetic": "අනී ලෝ යොඩ'අත්. උලායි."}]},
+        {"id": "d1_6_3", "context": "තොරතුරක් තහවුරු කිරීම.", "lines": [{"speaker": "A", "target": "אז הפגישה מחר בעשר?", "native": "එතකොට හෙට දහයටද හමුවීම?", "phonetic": "අස් හ'ප්ගීශා මඛාර් බ'එසෙර්?"}, {"speaker": "B", "target": "נכון מאוד.", "native": "ඉතාම හරි.", "phonetic": "න'ඛෝන් මෙඕද්."}]},
+        {"id": "d1_6_4", "context": "යමක් ප්‍රතික්ෂේප කිරීම.", "lines": [{"speaker": "A", "target": "רוצה עוד עוגה?", "native": "තව කේක් ඕනෙද?", "phonetic": "රොත්සේ ඕද් උගා?"}, {"speaker": "B", "target": "לא, תודה. אני שבע.", "native": "නැහැ, ස්තූතියි. මට ඇති.", "phonetic": "ලෝ, තෝඩා. අනී සවේ'අ."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_6_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_6_1", "target": "כן", "native": "ඔව්"},
+          {"id": "m1_6_2", "target": "לא", "native": "නැහැ"},
+          {"id": "m1_6_3", "target": "אולי", "native": "සමහරවිට"},
+          {"id": "m1_6_4", "target": "בטח", "native": "ඇත්තෙන්ම"},
+          {"id": "m1_6_5", "target": "נכון", "native": "හරි"},
+          {"id": "m1_6_6", "target": "לא נכון", "native": "වැරදියි"},
+          {"id": "m1_6_7", "target": "אני לא יודע", "native": "මම දන්නේ නැහැ (පිරිමි)"},
+          {"id": "m1_6_8", "target": "אני לא יודעת", "native": "මම දන්නේ නැහැ (කාන්තා)"}
         ]
       },
-      "cultural_note": "Week 1 Day 6: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "'බෙටඛ්' (בטח) යනු 'ඔව්' කීමට ඉතා සුලභ සහ අවිධිමත් ක්‍රමයකි. එය 'ඇත්තෙන්ම' හෝ 'แน่นอน' (sure) යන අර්ථය ගෙන දෙයි.",
+      "pronunciation_tip": "හීබෲ භාෂාවේ 'ט' (තෙත්) සහ 'ת' (තව්) යන අකුරු දෙකම සිංහල 'ත' ශබ්දයට සමාන ශබ්දයක් ලබා දෙයි.",
+      "progress": {"xp": 100, "streak_bonus": 10, "badge": "W1D6-HebrewYesNo"}
     },
     {
       "week": 1,
       "day": 7,
-      "title": "ආයුබෝවන් සහ හැඳින්වීම",
-      "title_native": "ברכות",
-      "theme": "Greetings & Introductions",
+      "title": "සරල සංවාද පුහුණුව",
+      "title_native": "תרגול שיחה פשוטה",
+      "theme": "Simple Conversation Practice",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "שָׁלוֹם",
-          "phonetic": "shalom",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "אֲנִי אוֹמֵר שָׁלוֹם.",
-          "example_sentence_native": "මම 'ආයුබෝවන්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer shalom."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "תּוֹדָה",
-          "phonetic": "toda",
-          "native_meaning": "ස්තූතියි",
-          "english": "thank you",
-          "example_sentence_target": "אֲנִי אוֹמֵר תּוֹדָה.",
-          "example_sentence_native": "මම 'ස්තූතියි' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer toda."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "בְּבַקָּשָׁה",
-          "phonetic": "bevakasha",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "אֲנִי אוֹמֵר בְּבַקָּשָׁה.",
-          "example_sentence_native": "මම 'කරුණාකර' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer bevakasha."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "כֵּן",
-          "phonetic": "ken",
-          "native_meaning": "ඔව්",
-          "english": "yes",
-          "example_sentence_target": "אֲנִי אוֹמֵר כֵּן.",
-          "example_sentence_native": "මම 'ඔව්' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer ken."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "לֹא",
-          "phonetic": "lo",
-          "native_meaning": "නෑ",
-          "english": "no",
-          "example_sentence_target": "אֲנִי אוֹמֵר לֹא.",
-          "example_sentence_native": "මම 'නෑ' යන වචනය භාවිතා කරනවා.",
-          "example_sentence_phonetic": "Ani omer lo."
-        }
+        {"id": "w1_7_1", "target": "מה נשמע?", "phonetic": "මා නිශ්'මා?", "native_meaning": "මොකද වෙන්නේ? / කොහොමද?", "english": "What's up?", "example_sentence_target": "היי, מה נשמע?", "example_sentence_native": "හායි, මොකද වෙන්නේ?", "example_sentence_phonetic": "හායි, මා නිශ්'මා?"},
+        {"id": "w1_7_2", "target": "הכל טוב", "phonetic": "හ'කෝල් ටෝව්", "native_meaning": "හැමදේම හොඳයි", "english": "Everything is good", "example_sentence_target": "אצלי הכל טוב, תודה.", "example_sentence_native": "මාත් එක්ක හැමදේම හොඳයි, ස්තූතියි.", "example_sentence_phonetic": "එත්ස්'ලී හ'කෝල් ටෝව්, තෝඩා."},
+        {"id": "w1_7_3", "target": "ואתה?", "phonetic": "වෙ'අතා?", "native_meaning": "සහ ඔබ? (පිරිමි)", "english": "And you? (m)", "example_sentence_target": "אני בסדר, ואתה?", "example_sentence_native": "මම හොඳින්, සහ ඔබ?", "example_sentence_phonetic": "අනී බෙසෙඩර්, වෙ'අතා?"},
+        {"id": "w1_7_4", "target": "ואת?", "phonetic": "වෙ'අත්?", "native_meaning": "සහ ඔබ? (කාන්තා)", "english": "And you? (f)", "example_sentence_target": "שלומי טוב, ואת?", "example_sentence_native": "මට හොඳයි, සහ ඔබ?", "example_sentence_phonetic": "ශ්ලොමී ටෝව්, වෙ'අත්?"},
+        {"id": "w1_7_5", "target": "גם", "phonetic": "ගම්", "native_meaning": "එසේම / ...ත්", "english": "Also / Too", "example_sentence_target": "גם אני רוצה לבוא.", "example_sentence_native": "මටත් එන්න ඕන.", "example_sentence_phonetic": "ගම් අනී රොත්සේ ල'වෝ."},
+        {"id": "w1_7_6", "target": "מאיפה אתה?", "phonetic": "මෙ'එයිෆෝ අතා?", "native_meaning": "ඔබ කොහෙන්ද?", "english": "Where are you from?", "example_sentence_target": "נעים להכיר, מאיפה אתה?", "native": "හමුවීම සතුටක්, ඔබ කොහෙන්ද?", "example_sentence_phonetic": "නාঈම් ල'හකීර්, මෙ'එයිෆෝ අතා?"},
+        {"id": "w1_7_7", "target": "יום טוב", "phonetic": "යෝම් ටෝව්", "native_meaning": "සුබ දවසක්", "english": "Have a good day", "example_sentence_target": "תודה, ויום טוב לך.", "example_sentence_native": "ස්තූතියි, ඔබටත් සුබ දවසක්.", "example_sentence_phonetic": "තෝඩා, වෙ'යෝම් ටෝව් ල'ඛා."},
+        {"id": "w1_7_8", "target": "נתראה", "phonetic": "නිත්'රා'ඒ", "native_meaning": "හමුවෙමු", "english": "See you", "example_sentence_target": "טוב, נתראה מחר.", "example_sentence_native": "හොඳයි, හෙට හමුවෙමු.", "example_sentence_phonetic": "ටෝව්, නිත්'රා'ඒ මඛාර්."}
+      ],
+      "sentences": [
+        {"id": "s1_7_1", "target": "מה נשמע? הכל בסדר?", "native": "මොකද වෙන්නේ? හැමදේම හොඳින්ද?", "phonetic": "මා නිශ්'මා? හ'කෝල් බෙසෙඩර්?"},
+        {"id": "s1_7_2", "target": "כן, הכל טוב. מה איתך?", "native": "ඔව්, හැමදේම හොඳයි. ඔයාට කොහොමද?", "phonetic": "කෙන්, හ'කෝල් ටෝව්. මා ඉටාඛ්?"},
+        {"id": "s1_7_3", "target": "גם אני מסרי לנקה.", "native": "මමත් ශ්‍රී ලංකාවෙන්.", "phonetic": "ගම් අනී මි'ශ්‍රී ලංකා."},
+        {"id": "s1_7_4", "target": "נעים מאוד, אני דוד. מאיפה את?", "native": "හමුවීම සතුටක්, මම ඩේවිඩ්. ඔබ කොහෙන්ද?", "phonetic": "නාঈම් මෙඕද්, අනී ඩේවිඩ්. මෙ'එයිෆෝ අත්?"},
+        {"id": "s1_7_5", "target": "שיהיה לך יום טוב.", "native": "ඔබට සුබ දවසක් වේවා.", "phonetic": "ශ'යිහියේ ල'ඛා යෝම් ටෝව්."},
+        {"id": "s1_7_6", "target": "נתראה אחר כך.", "native": "පසුව හමුවෙමු.", "phonetic": "නිත්'රා'ඒ අඛර් කඛ්."},
+        {"id": "s1_7_7", "target": "שלום, קוראים לי מירה, ואתה?", "native": "ආයුබෝවන්, මගේ නම මීරා, සහ ඔබ?", "phonetic": "ශලෝම්, කෝර'ঈම් ලී මීරා, වෙ'අතා?"},
+        {"id": "s1_7_8", "target": "הכל טוב, תודה. יום טוב.", "native": "හැමදේම හොඳයි, ස්තූතියි. සුබ දවසක්.", "phonetic": "හ'කෝල් ටෝව්, තෝඩා. යෝම් ටෝව්."}
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "සාමාන්‍ය සංවාදයක්",
+          "context": "කෙනෙකු පළමු වරට මුණගැසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "שָׁלוֹם, בְּבַקָּשָׁה.",
-              "native": "'ආයුබෝවන්', කරුණාකර.",
-              "phonetic": "shalom, bevakasha."
-            },
-            {
-              "speaker": "B",
-              "target": "בְּוַדַּאי!",
-              "native": "නිසැකවම!",
-              "phonetic": "Bevadai!"
-            }
+            {"speaker": "A", "target": "שלום, אני ירון. נעים מאוד.", "native": "ආයුබෝවන්, මම යාරොන්. හමුවීම සතුටක්.", "phonetic": "ශලෝම්, අනී යාරොන්. නාঈම් මෙඕද්."},
+            {"speaker": "B", "target": "היי ירון, אני תמר. מאיפה אתה?", "native": "හායි යාරොන්, මම තමරා. ඔබ කොහෙන්ද?", "phonetic": "හායි යාරොන්, අනී තමර්. මෙ'එයිෆෝ අතා?"},
+            {"speaker": "A", "target": "אני מהודו. ואת?", "native": "මම ඉන්දියාවෙන්. සහ ඔබ?", "phonetic": "අනී මෙ'හෝඩු. වෙ'අත්?"},
+            {"speaker": "B", "target": "אני מישראל. ברוך הבא!", "native": "මම ඊශ්‍රායලයෙන්. සාදරයෙන් පිළිගනිමු!", "phonetic": "අනී මි'යිශ්‍රා'එල්. බරුඛ් හ'බා!"}
           ]
-        }
+        },
+        {
+          "id": "d1_7_2",
+          "context": "කෙටි සුහද කතාබහක්.",
+          "lines": [
+            {"speaker": "A", "target": "היי, מה נשמע?", "native": "හායි, මොකද වෙන්නේ?", "phonetic": "හායි, මා නිශ්'මා?"},
+            {"speaker": "B", "target": "הכל טוב, תודה. מה איתך?", "native": "හැමදේම හොඳයි, ස්තූතියි. ඔයාට කොහොමද?", "phonetic": "හ'කෝල් ටෝව්, තෝඩා. මා ඉටාඛ්?"},
+            {"speaker": "A", "target": "גם אצלי הכל בסדר.", "native": "මාත් එක්කත් හැමදේම හොඳයි.", "phonetic": "ගම් එත්ස්'ලී හ'කෝල් බෙසෙඩර්."}
+          ]
+        },
+        {"id": "d1_7_3", "context": "දවස අවසානයේදී සමුගැනීම.", "lines": [{"speaker": "A", "target": "אני הולך הביתה. יום טוב.", "native": "මම ගෙදර යනවා. සුබ දවසක්.", "phonetic": "අනී හොලෙක් හ'බයිතා. යෝම් ටෝව්."}, {"speaker": "B", "target": "יום טוב, נתראה מחר.", "native": "සුබ දවසක්, හෙට හමුවෙමු.", "phonetic": "යෝම් ටෝව්, නිත්'රා'ඒ මඛාර්."}]},
+        {"id": "d1_7_4", "context": "සංවාදයක් අවසන් කිරීම.", "lines": [{"speaker": "A", "target": "טוב, אני צריך לזוז.", "native": "හොඳයි, මට දැන් යන්න ඕන.", "phonetic": "ටෝව්, අනී ත්සරිඛ් ල'සූස්."}, {"speaker": "B", "target": "בסדר, להתראות.", "native": "හරි, ගිහින් එන්නම්.", "phonetic": "බෙසෙඩර්, ල'හිතාඕත්."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ הוּא שָׁלוֹם.",
-            "answer": "זֶה",
-            "hint": "'මෙය' යන්නෙහි හෙබ්‍රෙව් වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "'שָׁלוֹם' means:",
-            "options": [
-              "hello",
-              "hello",
-              "water",
-              "work"
-            ],
-            "correct": 0,
-            "explanation": "'שָׁלוֹם' = 'ආයුබෝවන්'."
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "שָׁלוֹם",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "תּוֹדָה",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "בְּבַקָּשָׁה",
-            "native": "කරුණාකර"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss1_7_1",
-            "scrambled": [
-              "שָׁלוֹם",
-              "הוּא",
-              "טוֹב"
-            ],
-            "correct": "שָׁלוֹם הוּא טוֹב",
-            "nativeHint": "'ආයුබෝවන්' හොඳ බව කීම"
-          }
+          {"id": "m1_7_1", "target": "מה נשמע?", "native": "මොකද වෙන්නේ?"},
+          {"id": "m1_7_2", "target": "הכל טוב", "native": "හැමදේම හොඳයි"},
+          {"id": "m1_7_3", "target": "ואתה?", "native": "සහ ඔබ? (පිරිමි)"},
+          {"id": "m1_7_4", "target": "גם", "native": "එසේම / ...ත්"},
+          {"id": "m1_7_5", "target": "מאיפה אתה?", "native": "ඔබ කොහෙන්ද?"},
+          {"id": "m1_7_6", "target": "יום טוב", "native": "සුබ දවසක්"},
+          {"id": "m1_7_7", "target": "נתראה", "native": "හමුවෙමු"},
+          {"id": "m1_7_8", "target": "ואת?", "native": "සහ ඔබ? (කාන්තා)"}
         ]
       },
-      "cultural_note": "Week 1 Day 7: ඊශ්‍රායලයේ Greetings & Introductions ගැන සංස්කෘතික දැනුම.",
-      "pronunciation_tip": "'שָׁלוֹם' — shalom ලෙස උච්චාරණය කරන්න.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "හීබෲ භාෂාවෙන් 'මා නිශ්'මා?' යනු ඉතා සුලභ, අවිධිමත් ආචාරයකි. එය 'කොහොමද?' කියා ඇසීමට සමාන වන අතර මිතුරන් අතර බහුලව භාවිතා වේ.",
+      "pronunciation_tip": "වචන කිහිපයක් එකට සම්බන්ධ කර ස්වභාවිකව කතා කිරීමට පුරුදු වන්න. උදාහරණයක් ලෙස, 'הכל בסדר' (හ'කෝල් බෙසෙඩර්) යන්න එක හුස්මට කීමට උත්සහ කරන්න.",
+      "progress": {"xp": 150, "streak_bonus": 20, "badge": "W1D7-HebrewConvo"}
     }
   ]
 }
