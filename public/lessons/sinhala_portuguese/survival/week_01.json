@@ -7,1325 +7,541 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "මූලික ආචාර කිරීම්",
+      "title_native": "Saudações Básicas",
+      "theme": "Greetings & Politeness",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_1_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_1_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_1_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_1_1", "target": "Olá", "phonetic": "ඕ-ලා", "native_meaning": "ආයුබෝවන්", "english": "Hello", "example_sentence_target": "Olá, tudo bem?", "example_sentence_native": "ආයුබෝවන්,สบายดีไหม?", "example_sentence_phonetic": "ඕ-ලා, ටූ-ඩූ බෙම්?" },
+        { "id": "w1_1_2", "target": "Bom dia", "phonetic": "බොම් දී-යා", "native_meaning": "සුබ උදෑසනක්", "english": "Good morning", "example_sentence_target": "Bom dia, senhor.", "example_sentence_native": "සුබ උදෑසනක්, මහත්මයා.", "example_sentence_phonetic": "බොම් දී-යා, සෙ-නෝර්." },
+        { "id": "w1_1_3", "target": "Boa tarde", "phonetic": "බෝ-වා ටාර්-ඩ්", "native_meaning": "සුබ සන්ධ්‍යාවක්", "english": "Good afternoon", "example_sentence_target": "Boa tarde, como está?", "example_sentence_native": "සුබ සන්ධ්‍යාවක්, ඔබට කොහොමද?", "example_sentence_phonetic": "බෝ-වා ටාර්-ඩ්, කෝ-මෝ එස්-ටා?" },
+        { "id": "w1_1_4", "target": "Boa noite", "phonetic": "බෝ-වා නොයි-ට්", "native_meaning": "සුබ රාත්‍රියක්", "english": "Good night", "example_sentence_target": "Boa noite, até amanhã.", "example_sentence_native": "සුබ රාත්‍රියක්, හෙට හමුවෙමු.", "example_sentence_phonetic": "බෝ-වා නොයි-ට්, අ-ටේ අ-මන්-යා." },
+        { "id": "w1_1_5", "target": "Obrigado", "phonetic": "ඔ-බ්‍රි-ගා-දූ", "native_meaning": "ස්තූතියි (පුරුෂ)", "english": "Thank you (male)", "example_sentence_target": "Obrigado pela ajuda.", "example_sentence_native": "උදව්වට ස්තූතියි.", "example_sentence_phonetic": "ඔ-බ්‍රි-ගා-දූ පේ-ලා අ-ෂූ-ඩා." },
+        { "id": "w1_1_6", "target": "Obrigada", "phonetic": "ඔ-බ්‍රි-ගා-ඩා", "native_meaning": "ස්තූතියි (ස්ත්‍රී)", "english": "Thank you (female)", "example_sentence_target": "Obrigada, de nada.", "example_sentence_native": "ස්තූතියි, ඒකට කමක් නෑ.", "example_sentence_phonetic": "ඔ-බ්‍රි-ගා-ඩා, ද නා-ඩා." },
+        { "id": "w1_1_7", "target": "Adeus", "phonetic": "අ-දේ-උස්", "native_meaning": "ආයුබෝවන් (සමුගැනීම)", "english": "Goodbye", "example_sentence_target": "Adeus, vejo você depois.", "example_sentence_native": "ආයුබෝවන්, පසුව හමුවෙමු.", "example_sentence_phonetic": "අ-දේ-උස්, වේ-ජෝ වෝ-සේ දේ-පොයිස්." },
+        { "id": "w1_1_8", "target": "Tudo bem", "phonetic": "ටූ-ඩූ බෙම්", "native_meaning": "සියල්ල හොඳින්", "english": "All good / Okay", "example_sentence_target": "Está tudo bem com você?", "example_sentence_native": "ඔබ සමඟ සියල්ල හොඳින්ද?", "example_sentence_phonetic": "එස්-ටා ටූ-ඩූ බෙම් කොම් වෝ-සේ?" }
+      ],
+      "sentences": [
+        { "id": "s1_1_1", "target": "Olá, eu sou o João.", "native": "ආයුබෝවන්, මම ජොආඕ.", "phonetic": "ඕ-ලා, ඒ-උ සෝ උ ජො-ආඕ." },
+        { "id": "s1_1_2", "target": "Bom dia, você pode me ajudar?", "native": "සුබ උදෑසනක්, ඔබට මට උදව් කළ හැකිද?", "phonetic": "බොම් දී-යා, වෝ-සේ පෝ-ඩ් මී අ-ෂූ-ඩාර්?" },
+        { "id": "s1_1_3", "target": "Muito obrigado pelo presente.", "native": "තෑග්ගට බොහොම ස්තූතියි.", "phonetic": "මුයි-ටෝ ඔ-බ්‍රි-ගා-දූ පේ-ලෝ ප්‍රේ-සෙන්-ට්." },
+        { "id": "s1_1_4", "target": "Boa noite, bons sonhos.", "native": "සුබ රාත්‍රියක්, සුබ සිහින.", "phonetic": "බෝ-වා නොයි-ට්, බොන්ස් සෝන්-යොස්." },
+        { "id": "s1_1_5", "target": "Adeus e tenha um bom dia.", "native": "ආයුබෝවන්, සුබ දවසක්.", "phonetic": "අ-දේ-උස් ඊ ටෙන්-යා උම් බොම් දී-යා." },
+        { "id": "s1_1_6", "target": "Está tudo bem, não se preocupe.", "native": "සියල්ල හොඳින්, කරදර වෙන්න එපා.", "phonetic": "එස්-ටා ටූ-ඩූ බෙම්, නාඕਂ සී ප්‍රේ-ඕ-කු-පේ." },
+        { "id": "s1_1_7", "target": "Boa tarde, a senhora precisa de algo?", "native": "සුබ සන්ධ්‍යාවක්, නෝනාට යමක් අවශ්‍යද?", "phonetic": "බෝ-වා ටාර්-ඩ්, ආ සෙන්-යෝ-රා ප්‍රේ-සී-සා ද අල්-ගෝ?" },
+        { "id": "s1_1_8", "target": "Olá, como vai?", "native": "ආයුබෝවන්, කොහොමද?", "phonetic": "ඕ-ලා, කෝ-මෝ වායි?" }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "පළමු වරට කෙනෙකු හමුවීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
+            { "speaker": "A", "target": "Olá, bom dia.", "native": "ආයුබෝවන්, සුබ උදෑසනක්.", "phonetic": "ඕ-ලා, බොම් දී-යා." },
+            { "speaker": "B", "target": "Bom dia. Tudo bem?", "native": "සුබ උදෑසනක්. සบายดีไหม?", "phonetic": "බොම් දී-යා. ටූ-ඩූ බෙම්?" }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "උදව්වක් සඳහා ස්තුති කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
+            { "speaker": "A", "target": "Obrigado pela sua ajuda.", "native": "ඔබේ උදව්වට ස්තූතියි.", "phonetic": "ඔ-බ්‍රි-ගා-දූ පේ-ලා සූ-වා අ-ෂූ-ඩා." },
+            { "speaker": "B", "target": "De nada.", "native": "ඒකට කමක් නෑ.", "phonetic": "ද නා-ඩා." }
+          ]
+        },
+        {
+          "id": "d1_1_3",
+          "context": "දවස අවසානයේදී සමුගැනීම.",
+          "lines": [
+            { "speaker": "A", "target": "Boa noite. Adeus.", "native": "සුබ රාත්‍රියක්. ආයුබෝවන්.", "phonetic": "බෝ-වා නොයි-ට්. අ-දේ-උස්." },
+            { "speaker": "B", "target": "Boa noite. Até logo.", "native": "සුබ රාත්‍රියක්. ඉක්මනින්ම හමුවෙමු.", "phonetic": "බෝ-වා නොයි-ට්. අ-ටේ ලෝ-ගෝ." }
+          ]
+        },
+        {
+          "id": "d1_1_4",
+          "context": "සවස් වරුවේ කෙනෙකුට ආචාර කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Boa tarde, Maria.", "native": "සුබ සන්ධ්‍යාවක්, මරියා.", "phonetic": "බෝ-වා ටාර්-ඩ්, මා-රී-යා." },
+            { "speaker": "B", "target": "Boa tarde, Pedro. Como está?", "native": "සුබ සන්ධ්‍යාවක්, පේද්‍රෝ. ඔබට කොහොමද?", "phonetic": "බෝ-වා ටාර්-ඩ්, පේ-ද්‍රෝ. කෝ-මෝ එස්-ටා?" }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
+          { "id": "m1_1_1", "target": "Olá", "native": "ආයුබෝවන්" },
+          { "id": "m1_1_2", "target": "Bom dia", "native": "සුබ උදෑසනක්" },
+          { "id": "m1_1_3", "target": "Obrigado", "native": "ස්තූතියි (පුරුෂ)" },
+          { "id": "m1_1_4", "target": "Boa noite", "native": "සුබ රාත්‍රියක්" },
+          { "id": "m1_1_5", "target": "Adeus", "native": "ආයුබෝවන් (සමුගැනීම)" }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "පෘතුගාලයේ, මිතුරන් සහ පවුලේ අය හමුවීමේදී කම්මුල් දෙකට 'beijinhos' (හාදු) දෙකක් දීම සාමාන්‍ය දෙයකි. විධිමත් අවස්ථාවලදී අතට අත දීම වඩාත් සුදුසුය.",
+      "pronunciation_tip": "පෘතුගීසි භාෂාවේ 'ão' ශබ්දය නාസിക වේ. එය සිංහලයේ 'ං' ශබ්දයට තරමක් සමාන ය. උදා: 'não' (නාඔං).",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D1-Greetings" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "ඔබව හඳුන්වා දීම",
+      "title_native": "Apresentando-se",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_2_1", "target": "Eu sou", "phonetic": "ඒ-උ සෝ", "native_meaning": "මම වෙමි", "english": "I am", "example_sentence_target": "Eu sou o Nimal.", "example_sentence_native": "මම නිමල්.", "example_sentence_phonetic": "ඒ-උ සෝ උ නි-මල්." },
+        { "id": "w1_2_2", "target": "Meu nome é", "phonetic": "මේ-උ නෝ-ම් ඒ", "native_meaning": "මගේ නම", "english": "My name is", "example_sentence_target": "Meu nome é Sunita.", "example_sentence_native": "මගේ නම සුනීතා.", "example_sentence_phonetic": "මේ-උ නෝ-ම් ඒ සු-නී-තා." },
+        { "id": "w1_2_3", "target": "Qual é o seu nome?", "phonetic": "ක්වාල් ඒ උ සේ-උ නෝ-ම්?", "native_meaning": "ඔබේ නම කුමක්ද?", "english": "What is your name?", "example_sentence_target": "Olá, qual é o seu nome?", "example_sentence_native": "ආයුබෝවන්, ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "ඕ-ලා, ක්වාල් ඒ උ සේ-උ නෝ-ම්?" },
+        { "id": "w1_2_4", "target": "Prazer", "phonetic": "ප්‍රා-සේර්", "native_meaning": "හමුවීම සතුටක්", "english": "Nice to meet you", "example_sentence_target": "Prazer em conhecê-lo.", "example_sentence_native": "ඔබව හමුවීම සතුටක්.", "example_sentence_phonetic": "ප්‍රා-සේර් එම් කොන්-යේ-සේ-ලෝ." },
+        { "id": "w1_2_5", "target": "De onde você é?", "phonetic": "ද ඔන්-ඩ් වෝ-සේ ඒ?", "native_meaning": "ඔබ කොහේද?", "english": "Where are you from?", "example_sentence_target": "De onde você é? Eu sou de Portugal.", "example_sentence_native": "ඔබ කොහේද? මම පෘතුගාලයෙන්.", "example_sentence_phonetic": "ද ඔන්-ඩ් වෝ-සේ ඒ? ඒ-උ සෝ ද පොර්-ටු-ගාල්." },
+        { "id": "w1_2_6", "target": "Eu sou do", "phonetic": "ඒ-උ සෝ දූ", "native_meaning": "මම ... සිට", "english": "I am from", "example_sentence_target": "Eu sou do Sri Lanka.", "example_sentence_native": "මම ශ්‍රී ලංකාවෙන්.", "example_sentence_phonetic": "ඒ-උ සෝ දූ ශ්‍රී ලංකා." },
+        { "id": "w1_2_7", "target": "Como está?", "phonetic": "කෝ-මෝ එස්-ටා?", "native_meaning": "ඔබට කොහොමද?", "english": "How are you? (formal)", "example_sentence_target": "Bom dia, como está?", "example_sentence_native": "සුබ උදෑසනක්, ඔබට කොහොමද?", "example_sentence_phonetic": "බොම් දී-යා, කෝ-මෝ එස්-ටා?" },
+        { "id": "w1_2_8", "target": "Estou bem", "phonetic": "එස්-ටෝ බෙම්", "native_meaning": "මම හොඳින්", "english": "I am fine", "example_sentence_target": "Estou bem, obrigado.", "example_sentence_native": "මම හොඳින්, ස්තූතියි.", "example_sentence_phonetic": "එස්-ටෝ බෙම්, ඔ-බ්‍රි-ගා-දූ." }
+      ],
+      "sentences": [
+        { "id": "s1_2_1", "target": "Olá, meu nome é Ana. Qual é o seu nome?", "native": "ආයුබෝවන්, මගේ නම ආනා. ඔබේ නම කුමක්ද?", "phonetic": "ඕ-ලා, මේ-උ නෝ-ම් ඒ ආ-නා. ක්වාල් ඒ උ සේ-උ නෝ-ම්?" },
+        { "id": "s1_2_2", "target": "Eu sou do Brasil. E você?", "native": "මම බ්‍රසීලයෙන්. ඔබ?", "phonetic": "ඒ-උ සෝ දූ බ්‍රා-සිල්. ඊ වෝ-සේ?" },
+        { "id": "s1_2_3", "target": "Prazer em conhecê-la, Maria.", "native": "මරියාව හමුවීම සතුටක්.", "phonetic": "ප්‍රා-සේර් එම් කොන්-යේ-සේ-ලා, මා-රී-යා." },
+        { "id": "s1_2_4", "target": "Como está o seu dia?", "native": "ඔබේ දවස කොහොමද?", "phonetic": "කෝ-මෝ එස්-ටා උ සේ-උ දී-යා?" },
+        { "id": "s1_2_5", "target": "Estou bem, e você?", "native": "මම හොඳින්, ඔබ?", "phonetic": "එස්-ටෝ බෙම්, ඊ වෝ-සේ?" },
+        { "id": "s1_2_6", "target": "Eu não sou daqui.", "native": "මම මෙහේ කෙනෙක් නෙවෙයි.", "phonetic": "ඒ-උ නාඕਂ සෝ දා-කී." },
+        { "id": "s1_2_7", "target": "De onde ele é?", "native": "ඔහු කොහේද?", "phonetic": "ද ඔන්-ඩ් ඒ-ලේ ඒ?" },
+        { "id": "s1_2_8", "target": "Ela é de Angola.", "native": "ඇය ඇන්ගෝලාවෙන්.", "phonetic": "ඒ-ලා ඒ ද අන්-ගෝ-ලා." }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "නව සගයෙකුට ඔබව හඳුන්වා දීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
+            { "speaker": "A", "target": "Olá, eu sou a nova funcionária. Meu nome é Lara.", "native": "ආයුබෝවන්, මම අලුත් සේවිකාව. මගේ නම ලාරා.", "phonetic": "ඕ-ලා, ඒ-උ සෝ ආ නෝ-වා ෆුන්-සි-ඕ-නා-රි-යා. මේ-උ නෝ-ම් ඒ ලා-රා." },
+            { "speaker": "B", "target": "Bem-vinda, Lara. Eu sou o Rui. Prazer.", "native": "සාදරයෙන් පිළිගන්නවා, ලාරා. මම රූයි. හමුවීම සතුටක්.", "phonetic": "බෙම්-වින්-ඩා, ලා-රා. ඒ-උ සෝ උ රූ-යි. ප්‍රා-සේර්." }
           ]
         },
         {
           "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
+          "context": "කෙනෙකුගේ නම සහ quê රට දැයි ඇසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
+            { "speaker": "A", "target": "Oi. Qual é o seu nome?", "native": "හායි. ඔබේ නම කුමක්ද?", "phonetic": "ඕයි. ක්වාල් ඒ උ සේ-උ නෝ-ම්?" },
+            { "speaker": "B", "target": "Meu nome é Carlos. E o seu?", "native": "මගේ නම කාලෝස්. ඔබේ?", "phonetic": "මේ-උ නෝ-ම් ඒ කාර්-ලොස්. ඊ උ සේ-උ?" },
+            { "speaker": "A", "target": "Eu sou a Sofia. De onde você é, Carlos?", "native": "මම සෝෆියා. ඔබ කොහේද, කාලෝස්?", "phonetic": "ඒ-උ සෝ ආ සෝ-ෆී-යා. ද ඔන්-ඩ් වෝ-සේ ඒ, කාර්-ලොස්?" },
+            { "speaker": "B", "target": "Eu sou de Angola.", "native": "මම ඇන්ගෝලාවෙන්.", "phonetic": "ඒ-උ සෝ ද අන්-ගෝ-ලා." }
+          ]
+        },
+        {
+          "id": "d1_2_3",
+          "context": "ඔබ හොඳින් දැයි ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Bom dia, Sr. Silva. Como está?", "native": "සුබ උදෑසනක්, සිල්වා මහත්මයා. ඔබට කොහොමද?", "phonetic": "බොම් දී-යා, සෙ-නෝර් සිල්-වා. කෝ-මෝ එස්-ටා?" },
+            { "speaker": "B", "target": "Estou bem, obrigado. E a senhora?", "native": "මම හොඳින්, ස්තූතියි. ඔබතුමිය?", "phonetic": "එස්-ටෝ බෙම්, ඔ-බ්‍රි-ගා-දූ. ඊ ආ සෙන්-යෝ-රා?" }
+          ]
+        },
+        {
+          "id": "d1_2_4",
+          "context": "විධිමත් නොවන හමුවීමක්.",
+          "lines": [
+            { "speaker": "A", "target": "Tudo bem?", "native": "කොහොමද?", "phonetic": "ටූ-ඩූ බෙම්?" },
+            { "speaker": "B", "target": "Tudo. E contigo?", "native": "හොඳින්. ඔයාට කොහොමද?", "phonetic": "ටූ-ඩූ. ඊ කොන්-ටී-ගෝ?" }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
+          { "id": "m1_2_1", "target": "Eu sou", "native": "මම වෙමි" },
+          { "id": "m1_2_2", "target": "Qual é o seu nome?", "native": "ඔබේ නම කුමක්ද?" },
+          { "id": "m1_2_3", "target": "Prazer", "native": "හමුවීම සතුටක්" },
+          { "id": "m1_2_4", "target": "De onde você é?", "native": "ඔබ කොහේද?" },
+          { "id": "m1_2_5", "target": "Estou bem", "native": "මම හොඳින්" }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "පෘතුගීසි භාෂාවේ විධිමත් (você) සහ අවිධිමත් (tu) ලෙස ඇමතීමේ ක්‍රම දෙකක් ඇත. ඔබ නොදන්නා හෝ වයසින් වැඩි කෙනෙකුට කතා කිරීමේදී 'você' භාවිතා කිරීම ගෞරවනීය වේ.",
+      "pronunciation_tip": "වචනයක් අවසානයේ ඇති 'e' අකුර බොහෝ විට 'ඉ' ශබ්දය මෙන් උච්චාරණය වේ. උදා: 'tarde' (ටාර්-ඩි), 'noite' (නොයි-ටි).",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D2-Introductions" }
     },
     {
-      "week": 1,
-      "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Portuguese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
+        "week": 1,
+        "day": 3,
+        "title": "කෙනෙකුගේ නම ඇසීම",
+        "title_native": "Perguntando o nome de alguém",
+        "theme": "Asking Names",
+        "path": "survival",
+        "targetLanguage": "Portuguese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w1_3_1", "target": "Como", "phonetic": "කෝ-මෝ", "native_meaning": "කෙසේද", "english": "How", "example_sentence_target": "Como você se chama?", "example_sentence_native": "ඔබගේ නම කුමක් ද?", "example_sentence_phonetic": "කෝ-මෝ වෝ-සේ සේ චා-මා?" },
+            { "id": "w1_3_2", "target": "se chama", "phonetic": "සේ චා-මා", "native_meaning": "නම වේ", "english": "is called", "example_sentence_target": "Ele se chama Paulo.", "example_sentence_native": "ඔහුගේ නම පාවුලෝ.", "example_sentence_phonetic": "ඒ-ලේ සේ චා-මා පාවු-ලෝ." },
+            { "id": "w1_3_3", "target": "Você", "phonetic": "වෝ-සේ", "native_meaning": "ඔබ (විධිමත්)", "english": "You (formal)", "example_sentence_target": "Você é de Portugal?", "example_sentence_native": "ඔබ පෘතුගාලයෙන්ද?", "example_sentence_phonetic": "වෝ-සේ ඒ ද පොර්-ටු-ගාල්?" },
+            { "id": "w1_3_4", "target": "E você?", "phonetic": "ඊ වෝ-සේ?", "native_meaning": "සහ ඔබ?", "english": "And you?", "example_sentence_target": "Estou bem, obrigado. E você?", "example_sentence_native": "මම හොඳින්, ස්තූතියි. සහ ඔබ?", "example_sentence_phonetic": "එස්-ටෝ බෙම්, ඔ-බ්‍රි-ගා-දූ. ඊ වෝ-සේ?" },
+            { "id": "w1_3_5", "target": "Senhor", "phonetic": "සෙ-නෝර්", "native_meaning": "මහත්මයා", "english": "Mr./Sir", "example_sentence_target": "Bom dia, senhor.", "example_sentence_native": "සුබ උදෑසනක්, මහත්මයා.", "example_sentence_phonetic": "බොම් දී-යා, සෙ-නෝර්." },
+            { "id": "w1_3_6", "target": "Senhora", "phonetic": "සෙ-නෝ-රා", "native_meaning": "නෝනා", "english": "Mrs./Madam", "example_sentence_target": "Com licença, senhora.", "example_sentence_native": "සමාවන්න, නෝනා.", "example_sentence_phonetic": "කොම් ලි-සෙන්-සා, සෙ-නෝ-රා." },
+            { "id": "w1_3_7", "target": "O nome dele", "phonetic": "උ නෝ-ම් දේ-ලේ", "native_meaning": "ඔහුගේ නම", "english": "His name", "example_sentence_target": "O nome dele é Miguel.", "example_sentence_native": "ඔහුගේ නම මිගෙල්.", "example_sentence_phonetic": "උ නෝ-ම් දේ-ලේ ඒ මි-ගෙල්." },
+            { "id": "w1_3_8", "target": "O nome dela", "phonetic": "උ නෝ-ම් දේ-ලා", "native_meaning": "ඇයගේ නම", "english": "Her name", "example_sentence_target": "O nome dela é Sofia.", "example_sentence_native": "ඇයගේ නම සෝෆියා.", "example_sentence_phonetic": "උ නෝ-ම් දේ-ලා ඒ සෝ-ෆී-යා." }
         ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
+        "sentences": [
+            { "id": "s1_3_1", "target": "Olá, como você se chama?", "native": "ආයුබෝවන්, ඔබගේ නම කුමක් ද?", "phonetic": "ඕ-ලා, කෝ-මෝ වෝ-සේ සේ චා-මා?" },
+            { "id": "s1_3_2", "target": "Meu nome é Diogo. E você?", "native": "මගේ නම දියෝගෝ. සහ ඔබ?", "phonetic": "මේ-උ නෝ-ම් ඒ දි-ඕ-ගෝ. ඊ වෝ-සේ?" },
+            { "id": "s1_3_3", "target": "Prazer em conhecê-lo, senhor Costa.", "native": "කොස්තා මහත්මයා, ඔබව හමුවීම සතුටක්.", "phonetic": "ප්‍රා-සේර් එම් කොන්-යේ-සේ-ලෝ, සෙ-නෝර් කොස්-ටා." },
+            { "id": "s1_3_4", "target": "Como se chama a senhora?", "native": "නෝනාගේ නම කුමක්ද?", "phonetic": "කෝ-මෝ සේ චා-මා ආ සෙ-නෝ-රා?" },
+            { "id": "s1_3_5", "target": "O nome dela é muito bonito.", "native": "ඇයගේ නම ඉතා ලස්සනයි.", "phonetic": "උ නෝ-ම් දේ-ලා ඒ මුයි-ටෝ බො-නී-ටෝ." },
+            { "id": "s1_3_6", "target": "Você pode repetir seu nome, por favor?", "native": "කරුණාකර ඔබේ නම නැවත කියන්න පුළුවන්ද?", "phonetic": "වෝ-සේ පෝ-ඩ් රේ-පේ-ටීර් සේ-උ නෝ-ම්, පෝර් ෆා-වෝර්?" },
+            { "id": "s1_3_7", "target": "Ele não disse o nome dele.", "native": "ඔහු ඔහුගේ නම කිව්වේ නැහැ.", "phonetic": "ඒ-ලේ නාඕਂ දිස්-සේ උ නෝ-ම් දේ-ලේ." },
+            { "id": "s1_3_8", "target": "Eu me chamo Nimali.", "native": "මගේ නම නිමාලි.", "phonetic": "ඒ-උ මී චා-මෝ නි-මා-ලි." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+        "dialogues": [
+            {
+                "id": "d1_3_1",
+                "context": "කාර්යාලයේදී කෙනෙකුගේ නම ඇසීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Desculpe, como é o seu nome mesmo?", "native": "සමාවන්න, ඇත්තටම ඔබේ නම කුමක්ද?", "phonetic": "දෙස්-කුල්-පේ, කෝ-මෝ ඒ උ සේ-උ නෝ-ම් මේස්-මෝ?" },
+                    { "speaker": "B", "target": "Meu nome é Beatriz. E o seu?", "native": "මගේ නම බියට්‍රිස්. සහ ඔබේ?", "phonetic": "මේ-උ නෝ-ම් ඒ බි-යා-ට්‍රිස්. ඊ උ සේ-උ?" }
+                ]
+            },
+            {
+                "id": "d1_3_2",
+                "context": "තුන්වන පුද්ගලයෙකු හඳුන්වා දීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Esta é a minha colega, Ana. E este é o Pedro.", "native": "මේ මගේ සහායිකාව, ආනා. සහ මේ පේද්‍රෝ.", "phonetic": "එස්-ටා ඒ ආ මින්-යා කො-ලේ-ගා, ආ-නා. ඊ එස්-ටේ ඒ උ පේ-ද්‍රෝ." },
+                    { "speaker": "B", "target": "Prazer, Ana. Olá, Pedro.", "native": "හමුවීම සතුටක්, ආනා. ආයුබෝවන්, පේද්‍රෝ.", "phonetic": "ප්‍රා-සේර්, ආ-නා. ඕ-ලා, පේ-ද්‍රෝ." }
+                ]
+            },
+            {
+                "id": "d1_3_3",
+                "context": "විධිමත් ලෙස නම ඇසීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Bom dia, senhora. Poderia me dizer seu nome?", "native": "සුබ උදෑසනක්, නෝනා. මට ඔබේ නම කියන්න පුළුවන්ද?", "phonetic": "බොම් දී-යා, සෙ-නෝ-රා. පෝ-දේ-රී-යා මී දි-සේර් සේ-උ නෝ-ම්?" },
+                    { "speaker": "B", "target": "Claro. Meu nome é Helena.", "native": "ඇත්තෙන්ම. මගේ නම හෙලේනා.", "phonetic": "ක්ලා-රෝ. මේ-උ නෝ-ම් ඒ එ-ලේ-නා." }
+                ]
+            },
+            {
+                "id": "d1_3_4",
+                "context": "අවිධිමත් ලෙස මිතුරෙකුගේ නම ඇසීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Oi, como te chamas?", "native": "හායි, ඔයාගේ නම මොකක්ද?", "phonetic": "ඕයි, කෝ-මෝ ටී චා-මස්?" },
+                    { "speaker": "B", "target": "Eu me chamo Tiago.", "native": "මගේ නම තියාගෝ.", "phonetic": "ඒ-උ මී චා-මෝ ටි-ආ-ගෝ." }
+                ]
+            }
+        ],
+        "exercises": {
+            "matching": [
+                { "id": "m1_3_1", "target": "Como você se chama?", "native": "ඔබගේ නම කුමක් ද?" },
+                { "id": "m1_3_2", "target": "Senhor", "native": "මහත්මයා" },
+                { "id": "m1_3_3", "target": "Senhora", "native": "නෝනා" },
+                { "id": "m1_3_4", "target": "O nome dela é", "native": "ඇයගේ නම" },
+                { "id": "m1_3_5", "target": "E você?", "native": "සහ ඔබ?" }
+            ]
+        },
+        "cultural_note": "පෘතුගාලයේ, මිනිසුන් බොහෝ විට ඔවුන්ගේ පළමු නම සහ අවසාන නම යන දෙකෙන්ම හඳුන්වයි. විධිමත් අවස්ථාවලදී 'Senhor' හෝ 'Senhora' යන්න අවසාන නම සමඟ භාවිතා කිරීම සාමාන්‍ය දෙයකි.",
+        "pronunciation_tip": "පෘතුගීසි භාෂාවේ 'ch' ශබ්දය සිංහලයේ 'ශ්' ශබ්දයට සමාන වේ. උදා: 'chama' (ශා-මා).",
+        "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D3-AskName" }
     },
     {
-      "week": 1,
-      "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Portuguese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
+        "week": 1,
+        "day": 4,
+        "title": "ජාතිකත්වය සහ රට",
+        "title_native": "Nacionalidade e País",
+        "theme": "Nationality & Country",
+        "path": "survival",
+        "targetLanguage": "Portuguese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w1_4_1", "target": "País", "phonetic": "පා-ඊස්", "native_meaning": "රට", "english": "Country", "example_sentence_target": "Qual é o seu país?", "example_sentence_native": "ඔබේ රට කුමක්ද?", "example_sentence_phonetic": "ක්වාල් ඒ උ සේ-උ පා-ඊස්?" },
+            { "id": "w1_4_2", "target": "Nacionalidade", "phonetic": "නා-සි-ඔ-නා-ලි-ඩා-ඩ්", "native_meaning": "ජාතිකත්වය", "english": "Nationality", "example_sentence_target": "A minha nacionalidade é cingalesa.", "example_sentence_native": "මගේ ජාතිකත්වය ශ්‍රී ලාංකිකයි.", "example_sentence_phonetic": "ආ මින්-යා නා-සි-ඔ-නා-ලි-ඩා-ඩ් ඒ සින්-ග-ලේ-සා." },
+            { "id": "w1_4_3", "target": "Eu sou de...", "phonetic": "ඒ-උ සෝ ද", "native_meaning": "මම ... සිට", "english": "I am from...", "example_sentence_target": "Eu sou de Lisboa.", "example_sentence_native": "මම ලිස්බන් සිට.", "example_sentence_phonetic": "ඒ-උ සෝ ද ලිස්-බෝ-වා." },
+            { "id": "w1_4_4", "target": "Sri Lanka", "phonetic": "ශ්‍රී ලංකා", "native_meaning": "ශ්‍රී ලංකාව", "english": "Sri Lanka", "example_sentence_target": "Eu nasci no Sri Lanka.", "example_sentence_native": "මම ඉපදුනේ ශ්‍රී ලංකාවේ.", "example_sentence_phonetic": "ඒ-උ නස්-සී නූ ශ්‍රී ලංකා." },
+            { "id": "w1_4_5", "target": "Cingalês", "phonetic": "සින්-ග-ලේස්", "native_meaning": "ශ්‍රී ලාංකික (පුරුෂ)", "english": "Sri Lankan (male)", "example_sentence_target": "Ele é cingalês.", "example_sentence_native": "ඔහු ශ්‍රී ලාංකිකයෙක්.", "example_sentence_phonetic": "ඒ-ලේ ඒ සින්-ග-ලේස්." },
+            { "id": "w1_4_6", "target": "Cingalesa", "phonetic": "සින්-ග-ලේ-සා", "native_meaning": "ශ්‍රී ලාංකික (ස්ත්‍රී)", "english": "Sri Lankan (female)", "example_sentence_target": "A minha amiga é cingalesa.", "example_sentence_native": "මගේ යෙහෙළිය ශ්‍රී ලාංකිකයි.", "example_sentence_phonetic": "ආ මින්-යා අ-මී-ගා ඒ සින්-ග-ලේ-සා." },
+            { "id": "w1_4_7", "target": "Onde", "phonetic": "ඔන්-ඩ්", "native_meaning": "කොහෙද", "english": "Where", "example_sentence_target": "Onde você mora?", "example_sentence_native": "ඔබ ජීවත් වෙන්නේ කොහේද?", "example_sentence_phonetic": "ඔන්-ඩ් වෝ-සේ මෝ-රා?" },
+            { "id": "w1_4_8", "target": "Moro em...", "phonetic": "මෝ-රෝ එම්", "native_meaning": "මම ජීවත් වෙන්නේ...", "english": "I live in...", "example_sentence_target": "Eu moro em Coimbra.", "example_sentence_native": "මම ජීවත් වෙන්නේ කොයිම්බ්‍රා වල.", "example_sentence_phonetic": "ඒ-උ මෝ-රෝ එම් කො-ඉම්-බ්‍රා." }
         ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
+        "sentences": [
+            { "id": "s1_4_1", "target": "De que país você é?", "native": "ඔබ කුමන රටකින්ද?", "phonetic": "ද කේ පා-ඊස් වෝ-සේ ඒ?" },
+            { "id": "s1_4_2", "target": "Eu sou do Sri Lanka, mas moro em Portugal.", "native": "මම ශ්‍රී ලංකාවෙන්, නමුත් මම ජීවත් වෙන්නේ පෘතුගාලයේ.", "phonetic": "ඒ-උ සෝ දූ ශ්‍රී ලංකා, මස් මෝ-රෝ එම් පොර්-ටු-ගාල්." },
+            { "id": "s1_4_3", "target": "A minha nacionalidade é portuguesa.", "native": "මගේ ජාතිකත්වය පෘතුගීසි.", "phonetic": "ආ මින්-යා නා-සි-ඔ-නා-ලි-ඩා-ඩ් ඒ පොර්-ටු-ගේ-සා." },
+            { "id": "s1_4_4", "target": "Onde fica a embaixada do Sri Lanka?", "native": "ශ්‍රී ලංකා තානාපති කාර්යාලය කොහෙද තියෙන්නේ?", "phonetic": "ඔන්-ඩ් ෆී-කා ආ එම්-බයි-ෂා-ඩා දූ ශ්‍රී ලංකා?" },
+            { "id": "s1_4_5", "target": "Muitos cingaleses trabalham aqui.", "native": "බොහෝ ශ්‍රී ලාංකිකයන් මෙහි වැඩ කරනවා.", "phonetic": "මුයි-ටොස් සින්-ග-ලේ-සෙස් ට්‍රා-බල්-යම් අ-කී." },
+            { "id": "s1_4_6", "target": "Você gosta do seu país?", "native": "ඔබ ඔබේ රටට කැමතිද?", "phonetic": "වෝ-සේ ගොස්-ටා දූ සේ-උ පා-ඊස්?" },
+            { "id": "s1_4_7", "target": "Portugal é um país bonito.", "native": "පෘතුගාලය ලස්සන රටක්.", "phonetic": "පොර්-ටු-ගාල් ඒ උම් පා-ඊස් බො-නී-ටෝ." },
+            { "id": "s1_4_8", "target": "Eu moro perto do centro da cidade.", "native": "මම ජීවත් වෙන්නේ නගර මධ්‍යස්ථානය අසල.", "phonetic": "ඒ-උ මෝ-රෝ පෙර්-ටෝ දූ සෙන්-ට්‍රෝ දා සි-ඩා-ඩ්." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+        "dialogues": [
+            {
+                "id": "d1_4_1",
+                "context": "පෝරමයක් පුරවන විට ජාතිකත්වය ඇසීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Qual é a sua nacionalidade?", "native": "ඔබේ ජාතිකත්වය කුමක්ද?", "phonetic": "ක්වාල් ඒ ආ සූ-වා නා-සි-ඔ-නා-ලි-ඩා-ඩ්?" },
+                    { "speaker": "B", "target": "Sou cingalês.", "native": "මම ශ්‍රී ලාංකිකයෙක්.", "phonetic": "සෝ සින්-ග-ලේස්." }
+                ]
+            },
+            {
+                "id": "d1_4_2",
+                "context": "ඔබ කොහේ සිට දැයි කෙනෙකුගෙන් ඇසීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Você não é daqui, pois não?", "native": "ඔබ මෙහේ කෙනෙක් නෙවෙයි, නේද?", "phonetic": "වෝ-සේ නාඕਂ ඒ දා-කී, පොයිස් නාඕਂ?" },
+                    { "speaker": "B", "target": "Não, eu sou do Sri Lanka.", "native": "නැහැ, මම ශ්‍රී ලංකාවෙන්.", "phonetic": "නාඕਂ, ඒ-උ සෝ දූ ශ්‍රී ලංකා." }
+                ]
+            },
+            {
+                "id": "d1_4_3",
+                "context": "ඔබ ජීවත් වන ස්ථානය ගැන කතා කිරීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Onde você mora agora?", "native": "ඔබ දැන් ජීවත් වෙන්නේ කොහේද?", "phonetic": "ඔන්-ඩ් වෝ-සේ මෝ-රා අ-ගෝ-රා?" },
+                    { "speaker": "B", "target": "Eu moro no Porto.", "native": "මම ජීවත් වෙන්නේ පෝර්ටෝ වල.", "phonetic": "ඒ-උ මෝ-රෝ නූ පෝර්-ටෝ." }
+                ]
+            },
+            {
+                "id": "d1_4_4",
+                "context": "රටවල් ගැන කතා බහ කිරීම.",
+                "lines": [
+                    { "speaker": "A", "target": "O Brasil é um país muito grande.", "native": "බ්‍රසීලය ඉතා විශාල රටක්.", "phonetic": "උ බ්‍රා-සිල් ඒ උම් පා-ඊස් මුයි-ටෝ ග්‍රාන්-ඩ්." },
+                    { "speaker": "B", "target": "Sim, e Portugal é pequeno mas bonito.", "native": "ඔව්, සහ පෘතුගාලය කුඩා නමුත් ලස්සනයි.", "phonetic": "සිම්, ඊ පොර්-ටු-ගාල් ඒ පෙ-කේ-නෝ මස් බො-නී-ටෝ." }
+                ]
+            }
+        ],
+        "exercises": {
+            "matching": [
+                { "id": "m1_4_1", "target": "País", "native": "රට" },
+                { "id": "m1_4_2", "target": "Nacionalidade", "native": "ජාතිකත්වය" },
+                { "id": "m1_4_3", "target": "Cingalês", "native": "ශ්‍රී ලාංකික" },
+                { "id": "m1_4_4", "target": "Onde", "native": "කොහෙද" },
+                { "id": "m1_4_5", "target": "Moro em", "native": "මම ජීවත් වෙන්නේ" }
+            ]
+        },
+        "cultural_note": "පෘතුගාලයේ විවිධ රටවලින් බොහෝ සංක්‍රමණිකයන් සිටී. ඔබගේ රට සහ සංස්කෘතිය ගැන කතා කිරීම මිතුරන් ඇති කර ගැනීමට හොඳ ක්‍රමයකි.",
+        "pronunciation_tip": "පෘතුගීසි භාෂාවේ 'r' අක්ෂරය වචනයක් ආරම්භයේදී උගුරෙන් එන 'හ' ශබ්දයක් මෙන් උච්චාරණය වේ (උදා: 'Rato' - හා-ටූ). වචනයක් මැද ඇති 'rr' ද එසේමය.",
+        "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D4-Nationality" }
     },
     {
-      "week": 1,
-      "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Portuguese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
+        "week": 1,
+        "day": 5,
+        "title": " politely expressing",
+        "title_native": "Expressões de Cortesia",
+        "theme": "Polite Expressions",
+        "path": "survival",
+        "targetLanguage": "Portuguese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w1_5_1", "target": "Por favor", "phonetic": "පෝර් ෆා-වෝර්", "native_meaning": "කරුණාකර", "english": "Please", "example_sentence_target": "Um café, por favor.", "example_sentence_native": "කෝපි එකක්, කරුණාකර.", "example_sentence_phonetic": "උම් ක-ෆේ, පෝර් ෆා-වෝර්." },
+            { "id": "w1_5_2", "target": "De nada", "phonetic": "ද නා-ඩා", "native_meaning": "ඒකට කමක් නෑ", "english": "You're welcome", "example_sentence_target": "Obrigado. - De nada.", "example_sentence_native": "ස්තූතියි. - ඒකට කමක් නෑ.", "example_sentence_phonetic": "ඔ-බ්‍රි-ගා-දූ. - ද නා-ඩා." },
+            { "id": "w1_5_3", "target": "Com licença", "phonetic": "කොම් ලි-සෙන්-සා", "native_meaning": "සමාවන්න (අවසර ඉල්ලීමට)", "english": "Excuse me", "example_sentence_target": "Com licença, posso passar?", "example_sentence_native": "සමාවන්න, මට යන්න දෙන්න පුළුවන්ද?", "example_sentence_phonetic": "කොම් ලි-සෙන්-සා, පොස්-සෝ පස්-සාර්?" },
+            { "id": "w1_5_4", "target": "Desculpe", "phonetic": "දෙස්-කුල්-පේ", "native_meaning": "සමාවන්න (කණගාටුව ප්‍රකාශ කිරීමට)", "english": "Sorry", "example_sentence_target": "Desculpe pelo atraso.", "example_sentence_native": "ප්‍රමාදයට සමාවන්න.", "example_sentence_phonetic": "දෙස්-කුල්-පේ පේ-ලෝ අ-ට්‍රා-සෝ." },
+            { "id": "w1_5_5", "target": "Não entendo", "phonetic": "නාඕਂ එන්-ටෙන්-දෝ", "native_meaning": "මට තේරෙන්නේ නැහැ", "english": "I don't understand", "example_sentence_target": "Desculpe, eu não entendo.", "example_sentence_native": "සමාවන්න, මට තේරෙන්නේ නැහැ.", "example_sentence_phonetic": "දෙස්-කුල්-පේ, ඒ-උ නාඕਂ එන්-ටෙන්-දෝ." },
+            { "id": "w1_5_6", "target": "Pode repetir?", "phonetic": "පෝ-ඩ් රේ-පේ-ටීර්?", "native_meaning": "නැවත කියන්න පුළුවන්ද?", "english": "Can you repeat?", "example_sentence_target": "Pode repetir, por favor?", "example_sentence_native": "කරුණාකර නැවත කියන්න පුළුවන්ද?", "example_sentence_phonetic": "පෝ-ඩ් රේ-පේ-ටීර්, පෝර් ෆා-වෝර්?" },
+            { "id": "w1_5_7", "target": "Fale mais devagar", "phonetic": "ෆා-ලේ මා-ඊස් දේ-වා-ගාර්", "native_meaning": "තව ටිකක් හිමින් කතා කරන්න", "english": "Speak more slowly", "example_sentence_target": "Por favor, fale mais devagar.", "example_sentence_native": "කරුණාකර, තව ටිකක් හිමින් කතා කරන්න.", "example_sentence_phonetic": "පෝර් ෆා-වෝර්, ෆා-ලේ මා-ඊස් දේ-වා-ගාර්." },
+            { "id": "w1_5_8", "target": "Quanto custa?", "phonetic": "ක්වන්-ටෝ කුස්-ටා?", "native_meaning": "මිල කීයද?", "english": "How much does it cost?", "example_sentence_target": "Quanto custa isto?", "example_sentence_native": "මේකේ මිල කීයද?", "example_sentence_phonetic": "ක්වන්-ටෝ කුස්-ටා ඉස්-ටෝ?" }
         ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
+        "sentences": [
+            { "id": "s1_5_1", "target": "Pode me ajudar, por favor?", "native": "කරුණාකර මට උදව් කරන්න පුළුවන්ද?", "phonetic": "පෝ-ඩ් මී අ-ෂූ-ඩාර්, පෝර් ෆා-වෝර්?" },
+            { "id": "s1_5_2", "target": "Desculpe, onde é a estação?", "native": "සමාවන්න, ස්ටේෂන් එක කොහෙද?", "phonetic": "දෙස්-කුල්-පේ, ඔන්-ඩ් ඒ ආ එස්-ටා-සාඕਂ?" },
+            { "id": "s1_5_3", "target": "Eu não entendo português muito bem.", "native": "මට පෘතුගීසි එච්චර හොඳට තේරෙන්නේ නැහැ.", "phonetic": "ඒ-උ නාඕਂ එන්-ටෙන්-දෝ පොර්-ටු-ගේස් මුයි-ටෝ බෙම්." },
+            { "id": "s1_5_4", "target": "Com licença, o senhor deixou cair isto.", "native": "සමාවන්න, මහත්මයා, ඔබ මෙය බිම දැම්මා.", "phonetic": "කොම් ලි-සෙන්-සා, උ සෙ-නෝර් දෙයි-ෂෝ කා-ඊර් ඉස්-ටෝ." },
+            { "id": "s1_5_5", "target": "Quanto custa um bilhete de autocarro?", "native": "බස් ටිකට් එකක මිල කීයද?", "phonetic": "ක්වන්-ටෝ කුස්-ටා උම් බිල්-යේ-ටේ ද අවු-ටෝ-ක-රෝ?" },
+            { "id": "s1_5_6", "target": "Pode soletrar, por favor?", "native": "කරුණාකර අකුරින් කියන්න පුළුවන්ද?", "phonetic": "පෝ-ඩ් සෝ-ලේ-ට්‍රාර්, පෝර් ෆා-වෝර්?" },
+            { "id": "s1_5_7", "target": "Muito obrigada. - De nada!", "native": "බොහොම ස්තූතියි. - ඒකට කමක් නෑ!", "phonetic": "මුයි-ටෝ ඔ-බ්‍රි-ගා-ඩා. - ද නා-ඩා!" },
+            { "id": "s1_5_8", "target": "Desculpe, não queria incomodar.", "native": "සමාවන්න, මට කරදර කරන්න අවශ්‍ය වුණේ නැහැ.", "phonetic": "දෙස්-කුල්-පේ, නාඕਂ කේ-රී-යා ඉන්-කො-මෝ-ඩාර්." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+        "dialogues": [
+            {
+                "id": "d1_5_1",
+                "context": "කඩයකදී යමක් ඉල්ලීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Eu queria uma água, por favor.", "native": "මට වතුර එකක් ඕන, කරුණාකර.", "phonetic": "ඒ-උ කේ-රී-යා ඌ-මා ආ-ගුවා, පෝර් ෆා-වෝර්." },
+                    { "speaker": "B", "target": "Sim, claro. Aqui está.", "native": "ඔව්, ඇත්තෙන්ම. මෙන්න.", "phonetic": "සිම්, ක්ලා-රෝ. අ-කී එස්-ටා." }
+                ]
+            },
+            {
+                "id": "d1_5_2",
+                "context": "ඔබට යමක් නොතේරෙන විට.",
+                "lines": [
+                    { "speaker": "A", "target": "Você precisa preencher este formulário.", "native": "ඔබට මෙම පෝරමය පිරවීමට අවශ්‍යයි.", "phonetic": "වෝ-සේ ප්‍රේ-සී-සා ප්‍රේ-එන්-චේර් එස්-ටේ ෆොර්-මු-ලා-රි-ඕ." },
+                    { "speaker": "B", "target": "Desculpe, não entendo. Pode falar mais devagar?", "native": "සමාවන්න, මට තේරෙන්නේ නැහැ. තව ටිකක් හිමින් කතා කරන්න පුළුවන්ද?", "phonetic": "දෙස්-කුල්-පේ, නාඕਂ එන්-ටෙන්-දෝ. පෝ-ඩ් ෆා-ලාර් මා-ඊස් දේ-වා-ගාර්?" }
+                ]
+            },
+            {
+                "id": "d1_5_3",
+                "context": "පාරේදී කෙනෙකුගෙන් අවසර ඉල්ලීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Com licença, posso fazer uma pergunta?", "native": "සමාවන්න, මට ප්‍රශ්නයක් අහන්න පුළුවන්ද?", "phonetic": "කොම් ලි-සෙන්-සා, පොස්-සෝ ෆා-සේර් ඌ-මා περ-ගුන්-ටා?" },
+                    { "speaker": "B", "target": "Sim, diga.", "native": "ඔව්, කියන්න.", "phonetic": "සිම්, දී-ගා." }
+                ]
+            },
+            {
+                "id": "d1_5_4",
+                "context": "වැරදීමකට සමාව ඉල්ලීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Oh, desculpe, pisei no seu pé.", "native": "ඕ, සමාවන්න, මම ඔබේ කකුල පෑගුවා.", "phonetic": "ඕ, දෙස්-කුල්-පේ, පි-සේ නූ සේ-උ පේ." },
+                    { "speaker": "B", "target": "Não tem problema, está tudo bem.", "native": "ප්‍රශ්නයක් නෑ, ඒකට කමක් නෑ.", "phonetic": "නාඕਂ ටෙම් ප්‍රො-බ්ලේ-මා, එස්-ටා ටූ-ඩූ බෙම්." }
+                ]
+            }
+        ],
+        "exercises": {
+            "matching": [
+                { "id": "m1_5_1", "target": "Por favor", "native": "කරුණාකර" },
+                { "id": "m1_5_2", "target": "Desculpe", "native": "සමාවන්න" },
+                { "id": "m1_5_3", "target": "Não entendo", "native": "මට තේරෙන්නේ නැහැ" },
+                { "id": "m1_5_4", "target": "Quanto custa?", "native": "මිල කීයද?" },
+                { "id": "m1_5_5", "target": "De nada", "native": "ඒකට කමක් නෑ" }
+            ]
+        },
+        "cultural_note": "'Por favor', 'obrigado/a' වැනි ආචාරශීලී වචන පෘතුගීසි සංස්කෘතියේ ඉතා වැදගත් වේ. සේවා ස්ථානවල සහ වෙළඳසැල්වල මේවා භාවිතා කිරීමෙන් ඔබට හොඳ ප්‍රතිචාරයක් ලැබෙනු ඇත.",
+        "pronunciation_tip": "වචනයක් අවසානයේ ඇති 's' අකුර, ඊළඟ වචනය ස්වරයකින් ආරම්භ නොවන්නේ නම් 'sh' ශබ්දයක් මෙන් ඇසේ. උදා: 'bons dias' (බෝන්ෂ් දီး-යෂ්).",
+        "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D5-Politeness" }
     },
     {
-      "week": 1,
-      "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Portuguese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
+        "week": 1,
+        "day": 6,
+        "title": "ඔව් / නැහැ / සමහරවිට",
+        "title_native": "Sim / Não / Talvez",
+        "theme": "Agreement & Disagreement",
+        "path": "survival",
+        "targetLanguage": "Portuguese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w1_6_1", "target": "Sim", "phonetic": "සිම්", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Você é o novo funcionário? - Sim.", "example_sentence_native": "ඔබ අලුත් සේවකයාද? - ඔව්.", "example_sentence_phonetic": "වෝ-සේ ඒ උ නෝ-වෝ ෆුන්-සි-ඕ-නා-රි-ඕ? - සිම්." },
+            { "id": "w1_6_2", "target": "Não", "phonetic": "නාඕਂ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "Você fala alemão? - Não.", "example_sentence_native": "ඔබ ජර්මන් කතා කරනවාද? - නැහැ.", "example_sentence_phonetic": "වෝ-සේ ෆා-ලා අ-ලේ-මාඕਂ? - නාඕਂ." },
+            { "id": "w1_6_3", "target": "Talvez", "phonetic": "ටල්-වේස්", "native_meaning": "සමහරවිට", "english": "Maybe", "example_sentence_target": "Você vai à festa? - Talvez.", "example_sentence_native": "ඔබ පාටියට යනවද? - සමහරවිට.", "example_sentence_phonetic": "වෝ-සේ වායි ආ ෆෙස්-ටා? - ටල්-වේස්." },
+            { "id": "w1_6_4", "target": "Claro", "phonetic": "ක්ලා-රෝ", "native_meaning": "ඇත්තෙන්ම/පැහැදිලියි", "english": "Of course/Clear", "example_sentence_target": "Pode me ajudar? - Claro!", "example_sentence_native": "මට උදව් කරන්න පුළුවන්ද? - ඇත්තෙන්ම!", "example_sentence_phonetic": "පෝ-ඩ් මී අ-ෂූ-ඩාර්? - ක්ලා-රෝ!" },
+            { "id": "w1_6_5", "target": "Certo", "phonetic": "සේර්-ටෝ", "native_meaning": "හරි", "english": "Right/Correct", "example_sentence_target": "A resposta está certa.", "example_sentence_native": "පිළිතුර හරි.", "example_sentence_phonetic": "ආ රෙස්-පොස්-ටා එස්-ටා සේර්-ටා." },
+            { "id": "w1_6_6", "target": "Errado", "phonetic": "එර්-රා-දෝ", "native_meaning": "වැරදියි", "english": "Wrong", "example_sentence_target": "Isso está errado.", "example_sentence_native": "මෙය වැරදියි.", "example_sentence_phonetic": "ඊ-සෝ එස්-ටා එර්-රා-දෝ." },
+            { "id": "w1_6_7", "target": "Eu concordo", "phonetic": "ඒ-උ කොන්-කෝර්-දෝ", "native_meaning": "මම එකඟයි", "english": "I agree", "example_sentence_target": "Eu concordo com você.", "example_sentence_native": "මම ඔබ සමඟ එකඟයි.", "example_sentence_phonetic": "ඒ-උ කොන්-කෝර්-දෝ කොම් වෝ-සේ." },
+            { "id": "w1_6_8", "target": "Eu não concordo", "phonetic": "ඒ-උ නාඕਂ කොන්-කෝර්-දෝ", "native_meaning": "මම එකඟ නැහැ", "english": "I don't agree", "example_sentence_target": "Desculpe, eu não concordo.", "example_sentence_native": "සමාවන්න, මම එකඟ නැහැ.", "example_sentence_phonetic": "දෙස්-කුල්-පේ, ඒ-උ නාඕਂ කොන්-කෝර්-දෝ." }
         ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
+        "sentences": [
+            { "id": "s1_6_1", "target": "Sim, eu quero um café.", "native": "ඔව්, මට කෝපි එකක් ඕන.", "phonetic": "සිම්, ඒ-උ කේ-රෝ උම් ක-ෆේ." },
+            { "id": "s1_6_2", "target": "Não, obrigado, eu não fumo.", "native": "නැහැ, ස්තූතියි, මම දුම් පානය කරන්නේ නැහැ.", "phonetic": "නාඕਂ, ඔ-බ්‍රි-ගා-දූ, ඒ-උ නාඕਂ ෆූ-මෝ." },
+            { "id": "s1_6_3", "target": "Talvez eu vá ao cinema amanhã.", "native": "සමහරවිට මම හෙට සිනමා ශාලාවට යයි.", "phonetic": "ටල්-වේස් ඒ-උ වා ආඕ සි-නේ-මා අ-මන්-යා." },
+            { "id": "s1_6_4", "target": "A morada está certa?", "native": "ලිපිනය හරිද?", "phonetic": "ආ මෝ-රා-ඩා එස්-ටා සේර්-ටා?" },
+            { "id": "s1_6_5", "target": "Não, o número está errado.", "native": "නැහැ, අංකය වැරදියි.", "phonetic": "නාඕਂ, උ නූ-මේ-රෝ එස්-ටා එර්-රා-දෝ." },
+            { "id": "s1_6_6", "target": "Claro que podemos ir juntos.", "native": "ඇත්තෙන්ම අපිට එකට යන්න පුළුවන්.", "phonetic": "ක්ලා-රෝ කේ පෝ-දේ-මොස් ඊර් ජුන්-ටොස්." },
+            { "id": "s1_6_7", "target": "Eu concordo, é uma boa ideia.", "native": "මම එකඟයි, ඒක හොඳ අදහසක්.", "phonetic": "ඒ-උ කොන්-කෝර්-දෝ, ඒ ඌ-මා බෝ-වා ඉ-දේ-යා." },
+            { "id": "s1_6_8", "target": "Não, eu não concordo com essa decisão.", "native": "නැහැ, මම ඒ තීරණයට එකඟ නැහැ.", "phonetic": "නාඕਂ, ඒ-උ නාඕਂ කොන්-කෝර්-දෝ කොම් එස්-සා දේ-සි-සාඕਂ." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+        "dialogues": [
+            {
+                "id": "d1_6_1",
+                "context": "පිරිනැමීමකට පිළිතුරු දීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Você quer mais um pouco?", "native": "ඔබට තව ටිකක් ඕනද?", "phonetic": "වෝ-සේ කේර් මා-ඊස් උම් පෝ-කෝ?" },
+                    { "speaker": "B", "target": "Sim, por favor. Está delicioso.", "native": "ඔව්, කරුණාකර. මේක රසයි.", "phonetic": "සිම්, පෝර් ෆා-වෝර්. එස්-ටා දේ-ලි-සි-ඕ-සෝ." }
+                ]
+            },
+            {
+                "id": "d1_6_2",
+                "context": "ආරාධනාවක් ප්‍රතික්ෂේප කිරීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Vamos sair hoje à noite?", "native": "අපි අද රෑ එළියට යමුද?", "phonetic": "වා-මොස් සා-ඊර් ඕ-ජේ ආ නොයි-ට්?" },
+                    { "speaker": "B", "target": "Não, hoje não posso. Talvez amanhã?", "native": "නැහැ, අද මට බෑ. සමහරවිට හෙට?", "phonetic": "නාඕਂ, ඕ-ජේ නාඕਂ පොස්-සෝ. ටල්-වේස් අ-මන්-යා?" }
+                ]
+            },
+            {
+                "id": "d1_6_3",
+                "context": "මතයකට එකඟ වීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Acho que este é o melhor caminho.", "native": "මම හිතන්නේ මේක තමයි හොඳම පාර.", "phonetic": "ආ-චෝ කේ එස්-ටේ ඒ උ මෙල්-යෝර් ක-මින්-යෝ." },
+                    { "speaker": "B", "target": "Certo, eu concordo.", "native": "හරි, මම එකඟයි.", "phonetic": "සේර්-ටෝ, ඒ-උ කොන්-කෝර්-දෝ." }
+                ]
+            },
+            {
+                "id": "d1_6_4",
+                "context": "අදහසකට එකඟ නොවීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Podemos começar agora.", "native": "අපිට දැන් පටන් ගන්න පුළුවන්.", "phonetic": "පෝ-දේ-මොස් කො-මේ-සාර් අ-ගෝ-රා." },
+                    { "speaker": "B", "target": "Eu não concordo. É melhor esperar pelo chefe.", "native": "මම එකඟ නැහැ. ප්‍රධානියා එනකල් ඉන්න එක හොඳයි.", "phonetic": "ඒ-උ නාඕਂ කොන්-කෝර්-දෝ. ඒ මෙල්-යෝර් එස්-පේ-රාර් පේ-ලෝ චෙ-ෆේ." }
+                ]
+            }
+        ],
+        "exercises": {
+            "matching": [
+                { "id": "m1_6_1", "target": "Sim", "native": "ඔව්" },
+                { "id": "m1_6_2", "target": "Não", "native": "නැහැ" },
+                { "id": "m1_6_3", "target": "Talvez", "native": "සමහරවිට" },
+                { "id": "m1_6_4", "target": "Certo", "native": "හරි" },
+                { "id": "m1_6_5", "target": "Errado", "native": "වැරදියි" }
+            ]
+        },
+        "cultural_note": "පෘතුගීසි ජාතිකයන් බොහෝ විට සෘජුව 'නැහැ' (Não) කීමට වඩා මෘදු ලෙස අදහස ප්‍රකාශ කිරීමට කැමතියි. 'Talvez' (සමහරවිට) හෝ 'Vou ver' (මම බලන්නම්) වැනි වාක්‍ය ඛණ්ඩ බහුලව භාවිතා වේ.",
+        "pronunciation_tip": "නාസിക 'ão' ශබ්දය (උදා: 'não') පෘතුගීසි භාෂාවේ බහුලව දක්නට ලැබේ. එය උච්චාරණය කිරීමේදී නාසයෙන් වාතය පිට කිරීමට උත්සාහ කරන්න.",
+        "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D6-YesNo" }
     },
     {
-      "week": 1,
-      "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Portuguese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "ස්තූතියි!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "Por favor Com licença"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "ආයුබෝවන්"
-          }
+        "week": 1,
+        "day": 7,
+        "title": "සරල සංවාද පුහුණුව",
+        "title_native": "Prática de Conversação Simples",
+        "theme": "Review & Conversation",
+        "path": "survival",
+        "targetLanguage": "Portuguese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w1_7_1", "target": "Bom", "phonetic": "බොම්", "native_meaning": "හොඳ (පුරුෂ)", "english": "Good (m)", "example_sentence_target": "Este livro é bom.", "example_sentence_native": "මේ පොත හොඳයි.", "example_sentence_phonetic": "එස්-ටේ ලී-ව්‍රෝ ඒ බොම්." },
+            { "id": "w1_7_2", "target": "Boa", "phonetic": "බෝ-වා", "native_meaning": "හොඳ (ස්ත්‍රී)", "english": "Good (f)", "example_sentence_target": "A comida está boa.", "example_sentence_native": "කෑම හොඳයි.", "example_sentence_phonetic": "ආ කො-මී-ඩා එස්-ටා බෝ-වා." },
+            { "id": "w1_7_3", "target": "Até logo", "phonetic": "අ-ටේ ලෝ-ගෝ", "native_meaning": "ඉක්මනින්ම හමුවෙමු", "english": "See you soon", "example_sentence_target": "Adeus, até logo.", "example_sentence_native": "ආයුබෝවන්, ඉක්මනින්ම හමුවෙමු.", "example_sentence_phonetic": "අ-දේ-උස්, අ-ටේ ලෝ-ගෝ." },
+            { "id": "w1_7_4", "target": "Até amanhã", "phonetic": "අ-ටේ අ-මන්-යා", "native_meaning": "හෙට හමුවෙමු", "english": "See you tomorrow", "example_sentence_target": "Boa noite, até amanhã.", "example_sentence_native": "සුබ රාත්‍රියක්, හෙට හමුවෙමු.", "example_sentence_phonetic": "බෝ-වා නොයි-ට්, අ-ටේ අ-මන්-යා." },
+            { "id": "w1_7_5", "target": "Como vai?", "phonetic": "කෝ-මෝ වායි?", "native_meaning": "කොහොමද? (අවිධිමත්)", "english": "How's it going?", "example_sentence_target": "Olá, Pedro, como vai?", "example_sentence_native": "ආයුබෝවන්, පේද්‍රෝ, කොහොමද?", "example_sentence_phonetic": "ඕ-ලා, පේ-ද්‍රෝ, කෝ-මෝ වායි?" },
+            { "id": "w1_7_6", "target": "Vou bem", "phonetic": "වෝ බෙම්", "native_meaning": "මම හොඳින්", "english": "I'm doing well", "example_sentence_target": "Vou bem, e você?", "native": "මම හොඳින්, සහ ඔබ?", "example_sentence_phonetic": "වෝ බෙම්, ඊ වෝ-සේ?" },
+            { "id": "w1_7_7", "target": "Igualmente", "phonetic": "ඉ-ගුවාල්-මෙන්-ට්", "native_meaning": "ඔබටත් එසේමයි", "english": "Likewise", "example_sentence_target": "Prazer em conhecê-lo. - Igualmente.", "example_sentence_native": "ඔබව හමුවීම සතුටක්. - ඔබටත් එසේමයි.", "example_sentence_phonetic": "ප්‍රා-සේර් එම් කොන්-යේ-සේ-ලෝ. - ඉ-ගුවාල්-මෙන්-ට්." },
+            { "id": "w1_7_8", "target": "O que significa?", "phonetic": "උ කේ සිග්-නි-ෆී-කා?", "native_meaning": "තේරුම කුමක්ද?", "english": "What does it mean?", "example_sentence_target": "O que significa esta palavra?", "example_sentence_native": "මේ වචනයේ තේරුම කුමක්ද?", "example_sentence_phonetic": "උ කේ සිග්-නි-ෆී-කා එස්-ටා ප-ලා-ව්රා?" }
         ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Olá",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Obrigado",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Adeus",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Por favor",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Com licença",
-            "native": "සමාවෙන්න"
-          }
+        "sentences": [
+            { "id": "s1_7_1", "target": "Este é um bom começo.", "native": "මේක හොඳ ආරම්භයක්.", "phonetic": "එස්-ටේ ඒ උම් බොම් කො-මේ-සෝ." },
+            { "id": "s1_7_2", "target": "Tenha uma boa viagem.", "native": "සුබ ගමනක්.", "phonetic": "ටෙන්-යා ඌ-මා බෝ-වා වි-ආ-ජෙම්." },
+            { "id": "s1_7_3", "target": "Preciso ir agora, até logo!", "native": "මට දැන් යන්න ඕන, ඉක්මනින්ම හමුවෙමු!", "phonetic": "ප්‍රේ-සී-සෝ ඊර් අ-ගෝ-රා, අ-ටේ ලෝ-ගෝ!" },
+            { "id": "s1_7_4", "target": "Não entendo, o que significa 'saudade'?", "native": "මට තේරෙන්නේ නැහැ, 'saudade' කියන එකේ තේරුම මොකක්ද?", "phonetic": "නාඕਂ එන්-ටෙන්-දෝ, උ කේ සිග්-නි-ෆී-කා 'සව්-ඩා-ඩ්'?" },
+            { "id": "s1_7_5", "target": "Como vai o trabalho?", "native": "වැඩ කොහොමද?", "phonetic": "කෝ-මෝ වායි උ ට්‍රා-බල්-යෝ?" },
+            { "id": "s1_7_6", "target": "Vou bem, muito ocupado.", "native": "මම හොඳින්, ගොඩක් කාර්යබහුලයි.", "phonetic": "වෝ බෙම්, මුයි-ටෝ ඔ-කු-පා-දෝ." },
+            { "id": "s1_7_7", "target": "Prazer em falar com você. - Igualmente.", "native": "ඔබ සමඟ කතා කිරීම සතුටක්. - ඔබටත් එසේමයි.", "phonetic": "ප්‍රා-සේර් එම් ෆා-ලාර් කොම් වෝ-සේ. - ඉ-ගුවාල්-මෙන්-ට්." },
+            { "id": "s1_7_8", "target": "Vemos-nos amanhã.", "native": "අපි හෙට හමුවෙමු.", "phonetic": "වේ-මොස්-නොස් අ-මන්-යා." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'ස්තූතියි' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+        "dialogues": [
+            {
+                "id": "d1_7_1",
+                "context": "කෝපි කඩයකදී කෙටි සංවාදයක්.",
+                "lines": [
+                    { "speaker": "A", "target": "Olá, bom dia. Um café, por favor.", "native": "ආයුබෝවන්, සුබ උදෑසනක්. කෝපි එකක්, කරුණාකර.", "phonetic": "ඕ-ලා, බොම් දී-යා. උම් ක-ෆේ, පෝර් ෆා-වෝර්." },
+                    { "speaker": "B", "target": "Claro. Aqui está. Mais alguma coisa?", "native": "ඇත්තෙන්ම. මෙන්න. තව යමක්?", "phonetic": "ක්ලා-රෝ. අ-කී එස්-ටා. මා-ඊස් අල්-ගූ-මා කොයි-සා?" },
+                    { "speaker": "A", "target": "Não, obrigado. Quanto custa?", "native": "නැහැ, ස්තූතියි. මිල කීයද?", "phonetic": "නාඕਂ, ඔ-බ්‍රි-ගා-දූ. ක්වන්-ටෝ කුස්-ටා?" }
+                ]
+            },
+            {
+                "id": "d1_7_2",
+                "context": "නව පුද්ගලයෙකු හමුවීම සහ හඳුන්වා දීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Com licença, meu nome é Ana. Como você se chama?", "native": "සමාවන්න, මගේ නම ආනා. ඔබගේ නම කුමක් ද?", "phonetic": "කොම් ලි-සෙන්-සා, මේ-උ නෝ-ම් ඒ ආ-නා. කෝ-මෝ වෝ-සේ සේ චා-මා?" },
+                    { "speaker": "B", "target": "Eu sou o Marco. Prazer.", "native": "මම මාර්කෝ. හමුවීම සතුටක්.", "phonetic": "ඒ-උ සෝ උ මාර්-කෝ. ප්‍රා-සේර්." },
+                    { "speaker": "A", "target": "Igualmente. Você é de onde, Marco?", "native": "මටත් එසේමයි. ඔබ කොහේද, මාර්කෝ?", "phonetic": "ඉ-ගුවාල්-මෙන්-ට්. වෝ-සේ ඒ ද ඔන්-ඩ්, මාර්-කෝ?" },
+                    { "speaker": "B", "target": "Sou da Itália, mas moro aqui.", "native": "මම ඉතාලියෙන්, නමුත් මම ජීවත් වෙන්නේ මෙහේ.", "phonetic": "සෝ දා ඉ-ටා-ලි-යා, මස් මෝ-රෝ අ-කී." }
+                ]
+            },
+            {
+                "id": "d1_7_3",
+                "context": "පාරේදී මග ඇසීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Desculpe, pode me ajudar?", "native": "සමාවන්න, මට උදව් කරන්න පුළුවන්ද?", "phonetic": "දෙස්-කුල්-පේ, පෝ-ඩ් මී අ-ෂූ-ඩාර්?" },
+                    { "speaker": "B", "target": "Sim, claro. O que precisa?", "native": "ඔව්, ඇත්තෙන්ම. ඔබට මොනවාද අවශ්‍ය?", "phonetic": "සිම්, ක්ලා-රෝ. උ කේ ප්‍රේ-සී-සා?" },
+                    { "speaker": "A", "target": "Onde fica a estação de metro?", "native": "මෙට්‍රෝ ස්ටේෂන් එක කොහෙද තියෙන්නේ?", "phonetic": "ඔන්-ඩ් ෆී-කා ආ එස්-ටා-සාඕਂ ද මෙ-ට්‍රෝ?" },
+                    { "speaker": "B", "target": "Siga em frente. É a segunda rua à direita.", "native": "කෙලින්ම යන්න. දකුණු පැත්තේ දෙවෙනි පාර.", "phonetic": "සී-ගා එම් ෆ්‍රෙන්-ට්. ඒ ආ සේ-ගුන්-ඩා රූ-වා ආ දි-රෙයි-ටා." }
+                ]
+            },
+            {
+                "id": "d1_7_4",
+                "context": "දවස අවසානයේදී මිතුරෙකුගෙන් සමුගැනීම.",
+                "lines": [
+                    { "speaker": "A", "target": "Tenho que ir. Até amanhã!", "native": "මට යන්න වෙනවා. හෙට හමුවෙමු!", "phonetic": "ටෙන්-යෝ කේ ඊර්. අ-ටේ අ-මන්-යා!" },
+                    { "speaker": "B", "target": "Até amanhã! Boa noite.", "native": "හෙට හමුවෙමු! සුබ රාත්‍රියක්.", "phonetic": "අ-ටේ අ-මන්-යා! බෝ-වා නොයි-ට්." }
+                ]
+            }
+        ],
+        "exercises": {
+            "matching": [
+                { "id": "m1_7_1", "target": "Como vai?", "native": "කොහොමද?" },
+                { "id": "m1_7_2", "target": "Até logo", "native": "ඉක්මනින්ම හමුවෙමු" },
+                { "id": "m1_7_3", "target": "O que significa?", "native": "තේරුම කුමක්ද?" },
+                { "id": "m1_7_4", "target": "Igualmente", "native": "ඔබටත් එසේමයි" },
+                { "id": "m1_7_5", "target": "Bom", "native": "හොඳ" }
+            ]
+        },
+        "cultural_note": "සංවාදයකදී, 'pois' (පොයිස්) යන වචනය බොහෝ විට 'හොඳයි', 'ඉතින්' හෝ ප්‍රශ්නයක් තහවුරු කිරීමට භාවිතා වේ. උදා: 'Está frio, pois não?' (සීතලයි, නේද?).",
+        "pronunciation_tip": "වචනයක මුලට 'Es' ආවිට, එය 'එෂ්' ලෙස ශබ්ද කෙරේ (උදා: 'escola' - එෂ්-කෝ-ලා). වචනයක මැදට 's' ආවිට එය 'z' ශබ්දයක් ගනී (උදා: 'casa' - කා-සා).",
+        "progress": { "xp": 100, "streak_bonus": 20, "badge": "PT-W1D7-Conversation" }
     }
   ]
 }
