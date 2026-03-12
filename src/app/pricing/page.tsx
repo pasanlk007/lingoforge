@@ -85,7 +85,7 @@ export default function PricingPage() {
               <Card className="flex flex-col">
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl">Weekly</CardTitle>
-                  <CardDescription>Full access, one week at a time.</CardDescription>
+                  <CardDescription>Full access, renews automatically every 7 days.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">

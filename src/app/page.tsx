@@ -345,6 +345,7 @@ export default function LandingPage() {
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">Weekly</CardTitle>
                   <p className="text-4xl font-extrabold mt-2">$5<span className="text-base font-medium text-slate-400">/week</span></p>
+                  <p className="text-sm text-slate-400 mt-1">Renews automatically every 7 days.</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
