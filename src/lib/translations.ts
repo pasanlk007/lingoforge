@@ -65,7 +65,7 @@ export const translations = {
       title: "Monthly",
       price: "€9",
       feat1: "All 3 paths",
-      feat2: "All 48 weeks",
+      feat2: "All 12 weeks",
       feat3: "Audio pronunciation",
       feat4: "All exercises",
       feat5: "AI guide",
@@ -146,7 +146,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival Path",
-      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      survivalPathDesc: "A 12-week journey to master essential phrases for daily life.",
       week: "Week",
       locked: "Locked",
       days: "Days",
@@ -257,7 +257,7 @@ export const translations = {
       title: "මාසික",
       price: "€9",
       feat1: "මාර්ග 3ම",
-      feat2: "සති 48ම",
+      feat2: "සති 12ම",
       feat3: "දේශීය උච්චාරණය",
       feat4: "සියලුම අභ්‍යාස",
       feat5: "AI මාර්ගෝපදේශය",
@@ -338,7 +338,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival මාවත",
-      survivalPathDesc: "දෛනික ජීවිතයට අත්‍යවශ්‍ය වාක්‍ය ඛණ්ඩ ප්‍රගුණ කිරීමට සති 48ක ගමනක්.",
+      survivalPathDesc: "දෛනික ජීවිතයට අත්‍යවශ්‍ය වාක්‍ය ඛණ්ඩ ප්‍රගුණ කිරීමට සති 12ක ගමනක්.",
       week: "සතිය",
       locked: "අගුළු දමා ඇත",
       days: "දින",
@@ -449,7 +449,7 @@ export const translations = {
       title: "मासिक",
       price: "€9",
       feat1: "सभी 3 रास्ते",
-      feat2: "सभी 48 सप्ताह",
+      feat2: "सभी 12 सप्ताह",
       feat3: "देशी ऑडियो उच्चारण",
       feat4: "सभी व्यायाम",
       feat5: "AI गाइड",
@@ -589,7 +589,7 @@ export const translations = {
       title: "ماہانہ",
       price: "€9",
       feat1: "تمام 3 راستے",
-      feat2: "تمام 48 ہفتے",
+      feat2: "تمام 12 ہفتے",
       feat3: "مقامی آڈیو تلفظ",
       feat4: "تمام مشقیں",
       feat5: "AI گائیڈ",
@@ -729,7 +729,7 @@ export const translations = {
       title: "মাসিক",
       price: "€9",
       feat1: "সমস্ত ৩টি পথ",
-      feat2: "সমস্ত ৪৮ সপ্তাহ",
+      feat2: "সমস্ত 12 সপ্তাহ",
       feat3: "স্থানীয় অডিও উচ্চারণ",
       feat4: "সমস্ত অনুশীলন",
       feat5: "AI গাইড",
@@ -869,7 +869,7 @@ export const translations = {
       title: "मासिक",
       price: "€9",
       feat1: "सबै ३ मार्गहरू",
-      feat2: "सबै ४८ हप्ताहरू",
+      feat2: "सबै 12 हप्ताहरू",
       feat3: "अडियो उच्चारण",
       feat4: "सबै अभ्यासहरू",
       feat5: "एआई गाइड",
@@ -1009,7 +1009,7 @@ export const translations = {
       title: "Monthly",
       price: "€9",
       feat1: "All 3 paths",
-      feat2: "All 48 weeks",
+      feat2: "All 12 weeks",
       feat3: "Audio pronunciation",
       feat4: "All exercises",
       feat5: "AI guide",
@@ -1090,7 +1090,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival Path",
-      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      survivalPathDesc: "A 12-week journey to master essential phrases for daily life.",
       week: "Week",
       locked: "Locked",
       days: "Days",
@@ -1201,7 +1201,7 @@ export const translations = {
       title: "Monthly",
       price: "€9",
       feat1: "All 3 paths",
-      feat2: "All 48 weeks",
+      feat2: "All 12 weeks",
       feat3: "Audio pronunciation",
       feat4: "All exercises",
       feat5: "AI guide",
@@ -1282,7 +1282,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival Path",
-      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      survivalPathDesc: "A 12-week journey to master essential phrases for daily life.",
       week: "Week",
       locked: "Locked",
       days: "Days",
@@ -1393,7 +1393,7 @@ export const translations = {
       title: "Monthly",
       price: "€9",
       feat1: "All 3 paths",
-      feat2: "All 48 weeks",
+      feat2: "All 12 weeks",
       feat3: "Audio pronunciation",
       feat4: "All exercises",
       feat5: "AI guide",
@@ -1474,7 +1474,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival Path",
-      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      survivalPathDesc: "A 12-week journey to master essential phrases for daily life.",
       week: "Week",
       locked: "Locked",
       days: "Days",
@@ -1585,7 +1585,7 @@ export const translations = {
       title: "Monthly",
       price: "€9",
       feat1: "All 3 paths",
-      feat2: "All 48 weeks",
+      feat2: "All 12 weeks",
       feat3: "Audio pronunciation",
       feat4: "All exercises",
       feat5: "AI guide",
@@ -1666,7 +1666,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival Path",
-      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      survivalPathDesc: "A 12-week journey to master essential phrases for daily life.",
       week: "Week",
       locked: "Locked",
       days: "Days",
@@ -1777,7 +1777,7 @@ export const translations = {
       title: "Monthly",
       price: "€9",
       feat1: "All 3 paths",
-      feat2: "All 48 weeks",
+      feat2: "All 12 weeks",
       feat3: "Audio pronunciation",
       feat4: "All exercises",
       feat5: "AI guide",
@@ -1858,7 +1858,7 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "Survival Path",
-      survivalPathDesc: "A 48-week journey to master essential phrases for daily life.",
+      survivalPathDesc: "A 12-week journey to master essential phrases for daily life.",
       week: "Week",
       locked: "Locked",
       days: "Days",
@@ -1934,4 +1934,4 @@ export const targetLanguages = [
   { lang: "Chinese", flag: "🇨🇳", countries: ["zh-CN", "Singapore", "Taiwan"] },
 ];
 
-export const nativeLanguages = Object.keys(translations);
+export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali", "Nepali"];

@@ -36,12 +36,12 @@ export default function NumbersPathPage() {
     setIsMounted(true);
   }, []);
 
-  const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
-  const targetLanguage = (isMounted && (userProfile?.selectedLanguage || localStorage.getItem('targetLanguage'))) || 'French';
+  const nativeLanguage = userProfile?.nativeLanguage || (isMounted && localStorage.getItem('nativeLanguage')) || 'English';
+  const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
 
-  const totalWeeks = 48;
+  const totalWeeks = 12;
 
   const completedDays = useMemo(() => {
     if (!progressData) return {};
@@ -78,7 +78,7 @@ export default function NumbersPathPage() {
         <div className="container mx-auto max-w-3xl py-12 px-4">
           <header className="mb-8 text-center">
             <h1 className="text-4xl font-bold tracking-tight">Numbers Path</h1>
-            <p className="mt-2 text-muted-foreground">A 48-week journey to master counting, time, and money.</p>
+            <p className="mt-2 text-muted-foreground">A 12-week journey to master counting, time, and money.</p>
           </header>
 
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
@@ -108,12 +108,9 @@ export default function NumbersPathPage() {
                   <AccordionContent>
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                       {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
-                        const isDayCompleted = completedDaysInWeek.includes(day);
-                        
                         return (
-                          <Button asChild variant={isDayCompleted ? "default" : "secondary"} key={day}>
+                          <Button asChild variant="secondary" key={day}>
                             <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/${week}/${day}`}>
-                              {isDayCompleted && <CheckCircle className="mr-2 h-4 w-4"/>}
                               {`${t.day} ${day}`}
                             </Link>
                           </Button>
