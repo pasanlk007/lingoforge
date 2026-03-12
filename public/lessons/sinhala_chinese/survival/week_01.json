@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,9 +8,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 1 වන දිනය: මූලික සුබ පැතුම්",
+      "title_native": "第一周，第一天：基本问候",
+      "theme": "Greetings & Basics",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
@@ -17,1315 +18,700 @@
         {
           "id": "w1_1_1",
           "target": "你好",
-          "phonetic": "ni-HAO",
+          "phonetic": "නී හාඕ",
           "native_meaning": "ආයුබෝවන්",
           "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "example_sentence_target": "你好，很高兴认识你。",
+          "example_sentence_native": "ආයුබෝවන්, ඔබව හමුවීම සතුටක්.",
+          "example_sentence_phonetic": "නී හාඕ, හන් ගාඕෂිං රන්ෂ නී."
         },
         {
           "id": "w1_1_2",
           "target": "谢谢",
-          "phonetic": "xie-XIE",
+          "phonetic": "ෂියෙ ෂියෙ",
           "native_meaning": "ස්තූතියි",
           "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
+          "example_sentence_target": "谢谢你的帮助。",
+          "example_sentence_native": "ඔබගේ උදව්වට ස්තූතියි.",
+          "example_sentence_phonetic": "ෂියෙ ෂියෙ නී ද බාංචූ."
         },
         {
           "id": "w1_1_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
+          "target": "不客气",
+          "phonetic": "බූ ක චි",
+          "native_meaning": "සුළු දෙයක්",
+          "english": "You're welcome",
+          "example_sentence_target": "A: 谢谢你。 B: 不客气。",
+          "example_sentence_native": "A: ඔබට ස්තුතියි. B: සුළු දෙයක්.",
+          "example_sentence_phonetic": "A: ෂියෙ ෂියෙ නී. B: බූ ක චි."
         },
         {
           "id": "w1_1_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
+          "target": "对不起",
+          "phonetic": "දුයි බු චී",
+          "native_meaning": "සමාවන්න",
+          "english": "Sorry",
+          "example_sentence_target": "对不起，我迟到了。",
+          "example_sentence_native": "සමාවන්න, මම පරක්කු වුණා.",
+          "example_sentence_phonetic": "දුයි බු චී, වෝ ච'ඩාඕ ල."
         },
         {
           "id": "w1_1_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
+          "target": "没关系",
+          "phonetic": "මෙයි ග්වාන් ෂි",
+          "native_meaning": "කමක් නැහැ",
+          "english": "It's okay",
+          "example_sentence_target": "A: 对不起。 B: 没关系。",
+          "example_sentence_native": "A: සමාවන්න. B: කමක් නැහැ.",
+          "example_sentence_phonetic": "A: දුයි බු චී. B: මෙයි ග්වාන් ෂි."
+        },
+        {
+          "id": "w1_1_6",
+          "target": "再见",
+          "phonetic": "සායි ජියන්",
+          "native_meaning": "ගිහින් එන්නම්",
+          "english": "Goodbye",
+          "example_sentence_target": "我们明天见，再见！",
+          "example_sentence_native": "අපි හෙට හමුවෙමු, ගිහින් එන්නම්!",
+          "example_sentence_phonetic": "වෝමන් මිං තියන් ජියන්, සායි ජියන්!"
+        },
+        {
+          "id": "w1_1_7",
+          "target": "是",
+          "phonetic": "ෂ' (ර්)",
+          "native_meaning": "ඔව්",
+          "english": "Yes",
+          "example_sentence_target": "你是学生吗？ 是的。",
+          "example_sentence_native": "ඔබ ශිෂ්‍යයෙක්ද? ඔව්.",
+          "example_sentence_phonetic": "නී ෂ' ෂුවේෂං මා? ෂ' ද."
+        },
+        {
+          "id": "w1_1_8",
+          "target": "不是",
+          "phonetic": "බූ ෂ'",
+          "native_meaning": "නැහැ",
+          "english": "No",
+          "example_sentence_target": "他不是老师。",
+          "example_sentence_native": "ඔහු ගුරුවරයෙක් නොවේ.",
+          "example_sentence_phonetic": "තා බූ ෂ' ලාඕෂ'."
         }
+      ],
+      "sentences": [
+        { "id": "s1_1_1", "target": "你好吗？", "native": "ඔබට කොහොමද?", "phonetic": "නී හාඕ මා?" },
+        { "id": "s1_1_2", "target": "我很好，谢谢。", "native": "මම හොඳින්, ස්තූතියි.", "phonetic": "වෝ හන් හාඕ, ෂියෙ ෂියෙ." },
+        { "id": "s1_1_3", "target": "早上好。", "native": "සුබ උදෑසනක්.", "phonetic": "සාඕෂාං හාඕ." },
+        { "id": "s1_1_4", "target": "晚上好。", "native": "සුබ සන්ධ්‍යාවක්.", "phonetic": "වන්ෂාං හාඕ." },
+        { "id": "s1_1_5", "target": "请问，这个多少钱？", "native": "සමාවන්න, මේක කීයද?", "phonetic": "චිං වන්, ජ ග දුවෝෂාඕ චියන්?" },
+        { "id": "s1_1_6", "target": "我不知道。", "native": "මම දන්නේ නැහැ.", "phonetic": "වෝ බූ ජ'ඩාඕ." },
+        { "id": "s1_1_7", "target": "请再说一遍。", "native": " කරුණාකර නැවත කියන්න.", "phonetic": "චිං සායි ෂුවෝ යී බියන්." },
+        { "id": "s1_1_8", "target": "我爱你。", "native": "මම ඔබට ආදරෙයි.", "phonetic": "වෝ අයි නී." }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "පළමු වරට කෙනෙකු හමුවීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
+            { "speaker": "A", "target": "你好！", "native": "ආයුබෝවන්!", "phonetic": "නී හාඕ!" },
+            { "speaker": "B", "target": "你好！", "native": "ආයුබෝවන්!", "phonetic": "නී හාඕ!" }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "උදව්වක් සඳහා ස්තුති කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
+            { "speaker": "A", "target": "非常感谢你的帮助。", "native": "ඔබගේ උදව්වට බොහොම ස්තූතියි.", "phonetic": "ෆෙයිචාං ගන්ෂියෙ නී ද බාංචූ." },
+            { "speaker": "B", "target": "不客气，这是我应该做的。", "native": "සුළු දෙයක්, එය මගේ යුතුකම.", "phonetic": "බූ ක චි, ජ ෂ' වෝ යිංගායි සුවෝ ද." }
+          ]
+        },
+        {
+          "id": "d1_1_3",
+          "context": "වැරදීමකින් කෙනෙකුගේ ඇඟේ හැප්පීම.",
+          "lines": [
+            { "speaker": "A", "target": "啊，对不起！", "native": "ආ, සමාවන්න!", "phonetic": "ආ, දුයි බු චී!" },
+            { "speaker": "B", "target": "没关系。", "native": "කමක් නැහැ.", "phonetic": "මෙයි ග්වාන් ෂි." }
+          ]
+        },
+        {
+          "id": "d1_1_4",
+          "context": "දවස අවසානයේදී සමුගැනීම.",
+          "lines": [
+            { "speaker": "A", "target": "我先走了，再见。", "native": "මම දැන් යනවා, ගිහින් එන්නම්.", "phonetic": "වෝ ෂියන් සෝ ල, සායි ජියන්." },
+            { "speaker": "B", "target": "好的，再见。", "native": "හොඳයි, ගිහින් එන්නම්.", "phonetic": "හාඕ ද, සායි ජියන්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+          { "id": "fb1_1_1", "sentence": "你好___？", "answer": "吗", "hint": "ප්‍රශ්නාර්ථයක් සෑදීමට යොදන පදය" }
         ],
         "multipleChoice": [
           {
             "id": "mc1_1_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
-            ],
+            "question": "'Thank you' යන්නට චීන වචනය කුමක්ද?",
+            "options": ["你好", "谢谢", "再见", "对不起"],
             "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
+            "explanation": "'谢谢' (ෂියෙ ෂියෙ) යනු 'Thank you' යන්නයි."
           }
+        ],
+        "matching": [
+          { "id": "m1_1_1", "target": "你好", "native": "ආයුබෝවන්" },
+          { "id": "m1_1_2", "target": "谢谢", "native": "ස්තූතියි" },
+          { "id": "m1_1_3", "target": "再见", "native": "ගිහින් එන්නම්" },
+          { "id": "m1_1_4", "target": "是", "native": "ඔව්" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss1_1_1", "scrambled": ["我", "很好", "，", "谢谢"], "correct": "我很好，谢谢。", "nativeHint": "මම හොඳින්, ස්තූතියි." }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "චීනයේදී, '你好' (නී හාඕ) යනු ඕනෑම වේලාවක භාවිතා කළ හැකි පොදු ආචාරයකි. වැඩිහිටියන්ට හෝ ගෞරවනීය පුද්ගලයන්ට කතා කිරීමේදී '您好' (නින් හාඕ) භාවිතා කිරීම වඩාත් ආචාරශීලී වේ.",
+      "pronunciation_tip": "චීන භාෂාව ස්වර (tones) මත පදනම් වූවකි. '你好' (nǐ hǎo) හි ස්වර දෙකම 3 වන ස්වරයයි. නමුත් ඒවා එකට පැමිණෙන විට, පළමු 'nǐ' 2 වන ස්වරය ලෙස උච්චාරණය කෙරේ. එනම්, නැගී එන ස්වරයකි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Greetings-CN" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 2 වන දිනය: ඔබව හඳුන්වා දීම",
+      "title_native": "第一周，第二天：自我介绍",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "你好",
-          "phonetic": "ni-HAO",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "谢谢",
-          "phonetic": "xie-XIE",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_2_1", "target": "我", "phonetic": "වෝ", "native_meaning": "මම", "english": "I/me", "example_sentence_target": "我是学生。", "example_sentence_native": "මම ශිෂ්‍යයෙක්.", "example_sentence_phonetic": "වෝ ෂ' ෂුවේෂං." },
+        { "id": "w1_2_2", "target": "叫", "phonetic": "ජියාඕ", "native_meaning": "කියලා කියනවා", "english": "to be called", "example_sentence_target": "我叫李明。", "example_sentence_native": "මගේ නම ලී මිං.", "example_sentence_phonetic": "වෝ ජියාඕ ලී මිං." },
+        { "id": "w1_2_3", "target": "什么", "phonetic": "ෂන්ම", "native_meaning": "මොකක්ද", "english": "what", "example_sentence_target": "你叫什么名字？", "example_sentence_native": "ඔබේ නම මොකක්ද?", "example_sentence_phonetic": "නී ජියාඕ ෂන්ම මිංස?" },
+        { "id": "w1_2_4", "target": "名字", "phonetic": "මිංස", "native_meaning": "නම", "english": "name", "example_sentence_target": "我的名字很特别。", "example_sentence_native": "මගේ නම විශේෂයි.", "example_sentence_phonetic": "වෝ ද මිංස හන් ත'බියෙ." },
+        { "id": "w1_2_5", "target": "你", "phonetic": "නී", "native_meaning": "ඔබ", "english": "you", "example_sentence_target": "你是老师吗？", "example_sentence_native": "ඔබ ගුරුවරයෙක්ද?", "example_sentence_phonetic": "නී ෂ' ලාඕෂ' මා?" },
+        { "id": "w1_2_6", "target": "他 / 她", "phonetic": "තා", "native_meaning": "ඔහු / ඇය", "english": "he / she", "example_sentence_target": "他是我的朋友。", "example_sentence_native": "ඔහු මගේ මිතුරෙක්.", "example_sentence_phonetic": "තා ෂ' වෝ ද පංයෝ." },
+        { "id": "w1_2_7", "target": "很高兴", "phonetic": "හන් ගාඕෂිං", "native_meaning": "බොහොම සතුටුයි", "english": "very happy", "example_sentence_target": "见到你我很高兴。", "example_sentence_native": "ඔබව දැකීමෙන් මම බොහොම සතුටුයි.", "example_sentence_phonetic": "ජියන්ඩාඕ නී වෝ හන් ගාඕෂිං." },
+        { "id": "w1_2_8", "target": "认识", "phonetic": "රන්ෂ", "native_meaning": "හඳුනාගන්නවා", "english": "to know/to meet", "example_sentence_target": "很高兴认识你。", "example_sentence_native": "ඔබව හඳුනාගැනීම සතුටක්.", "example_sentence_phonetic": "හන් ගාඕෂිං රන්ෂ නී." }
+      ],
+      "sentences": [
+        { "id": "s1_2_1", "target": "我叫[Name]。", "native": "මගේ නම [නම].", "phonetic": "වෝ ජියාඕ [Name]." },
+        { "id": "s1_2_2", "target": "你叫什么名字？", "native": "ඔබේ නම කුමක්ද?", "phonetic": "නී ජියාඕ ෂන්ම මිංස?" },
+        { "id": "s1_2_3", "target": "他叫什么名字？", "native": "ඔහුගේ නම කුමක්ද?", "phonetic": "තා ජියාඕ ෂන්ම මිංස?" },
+        { "id": "s1_2_4", "target": "我是斯里兰卡人。", "native": "මම ශ්‍රී ලාංකිකයෙක්.", "phonetic": "වෝ ෂ' ස'ලීලන්කා රන්." },
+        { "id": "s1_2_5", "target": "你也是学生吗？", "native": "ඔබත් ශිෂ්‍යයෙක්ද?", "phonetic": "නී යේ ෂ' ෂුවේෂං මා?" },
+        { "id": "s1_2_6", "target": "她不是医生。", "native": "ඇය වෛද්‍යවරියක් නොවේ.", "phonetic": "තා බූ ෂ' යීෂං." },
+        { "id": "s1_2_7", "target": "我们是朋友。", "native": "අපි මිතුරන්.", "phonetic": "වෝමන් ෂ' පංයෝ." },
+        { "id": "s1_2_8", "target": "认识你们我很高兴。", "native": "ඔබ සැම හඳුනාගැනීම ගැන මම ඉතා සතුටු වෙමි.", "phonetic": "රන්ෂ නීමන් වෝ හන් ගාඕෂිං." }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "සාදයකදී කෙනෙකු හඳුනාගැනීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
+            { "speaker": "A", "target": "你好，我叫大卫。", "native": "ආයුබෝවන්, මගේ නම ඩේවිඩ්.", "phonetic": "නී හාඕ, වෝ ජියාඕ දාවේ." },
+            { "speaker": "B", "target": "你好，我叫玛丽。很高兴认识你。", "native": "ආයුබෝවන්, මගේ නම මේරි. ඔබව හමුවීම සතුටක්.", "phonetic": "නී හාඕ, වෝ ජියාඕ මාලී. හන් ගාඕෂිං රන්ෂ නී." }
           ]
         },
         {
           "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
+          "context": "මිතුරෙකු අන් අයට හඳුන්වා දීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
+            { "speaker": "A", "target": "这是我的朋友，他叫约翰。", "native": "මේ මගේ මිතුරා, ඔහුගේ නම ජෝන්.", "phonetic": "ජ ෂ' වෝ ද පංයෝ, තා ජියාඕ යුවෙහන්." },
+            { "speaker": "B", "target": "约翰，你好。我叫陈。", "native": "ජෝන්, ආයුබෝවන්. මගේ නම චෙන්.", "phonetic": "යුවෙහන්, නී හාඕ. වෝ ජියාඕ චන්." }
+          ]
+        },
+        {
+          "id": "d1_2_3",
+          "context": "කෙනෙකුගේ නම ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "你好，请问你叫什么名字？", "native": "ආයුබෝවන්, ඔබේ නම දැනගන්න පුලුවන්ද?", "phonetic": "නී හාඕ, චිං වන් නී ජියාඕ ෂන්ම මිංස?" },
+            { "speaker": "B", "target": "我叫安娜。", "native": "මගේ නම ඇනා.", "phonetic": "වෝ ජියාඕ අන්නා." }
+          ]
+        },
+        {
+          "id": "d1_2_4",
+          "context": "පන්ති කාමරයේදී හඳුනාගැනීම.",
+          "lines": [
+            { "speaker": "A", "target": "你是新来的学生吗？", "native": "ඔබ අලුතින් ආපු ශිෂ්‍යයෙක්ද?", "phonetic": "නී ෂ' ෂින් ලායි ද ෂුවේෂං මා?" },
+            { "speaker": "B", "target": "是的，我叫萨姆。你呢？", "native": "ඔව්, මගේ නම සෑම්. ඔයාගෙ?", "phonetic": "ෂ' ද, වෝ ජියාඕ සාමු. නී න?" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+          { "id": "fb1_2_1", "sentence": "你叫___名字？", "answer": "什么", "hint": "කුමක්ද?" }
         ],
         "multipleChoice": [
           {
             "id": "mc1_2_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
-            ],
-            "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
-    },
-    {
-      "week": 1,
-      "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Chinese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_3_1",
-          "target": "你好",
-          "phonetic": "ni-HAO",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "谢谢",
-          "phonetic": "xie-XIE",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
+            "question": "'我叫玛丽' යන්නෙහි තේරුම කුමක්ද?",
+            "options": ["ඔබේ නම මේරි", "ඇගේ නම මේරි", "මගේ නම මේරි", "ඔහුගේ නම මේරි"],
+            "correct": 2,
+            "explanation": "'我' යනු 'මම' වන අතර, '叫' යනු 'නම' වේ. එබැවින් '我叫玛丽' යනු 'මගේ නම මේරි' යන්නයි."
           }
         ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+          { "id": "m1_2_1", "target": "我", "native": "මම" },
+          { "id": "m1_2_2", "target": "名字", "native": "නම" },
+          { "id": "m1_2_3", "target": "什么", "native": "මොකක්ද" },
+          { "id": "m1_2_4", "target": "认识", "native": "හඳුනාගන්නවා" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
-            ],
-            "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
-          }
+        "sentenceScramble": [
+          { "id": "ss1_2_1", "scrambled": ["你", "认识", "很高兴"], "correct": "很高兴认识你", "nativeHint": "ඔබව හමුවීම සතුටක්." }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "චීනයේදී, නම් හුවමාරු කර ගැනීමේදී, බොහෝවිට පළමුව පවුලේ නම (surname) සහ පසුව ලබාදුන් නම (given name) කියනු ලැබේ. උදා: '陈大卫' (චෙන් දාවේ).",
+      "pronunciation_tip": "'叫' (jiào) හි 'j' ශබ්දය ඉංග්‍රීසි 'j' ශබ්දයට වඩා වෙනස්. එය දිව දත් පිටුපස තබා 'dz' ශබ්දයක් මෙන් උච්චාරණය කරන්න. 'sh' ශබ්දය (认识 - rènshì) ඉංග්‍රීසි 'sh' ට වඩා දිව පිටුපසට කර උච්චාරණය කරයි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-Introductions-CN" }
     },
     {
-      "week": 1,
-      "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
-      "path": "survival",
-      "targetLanguage": "Chinese",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w1_4_1",
-          "target": "你好",
-          "phonetic": "ni-HAO",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "谢谢",
-          "phonetic": "xie-XIE",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
+        "week": 1,
+        "day": 3,
+        "title": "1 වන සතිය, 3 වන දිනය: ජාතිකත්වය සහ රට",
+        "title_native": "第一周，第三天：国籍和国家",
+        "theme": "Nationality and Country",
+        "path": "survival",
+        "targetLanguage": "Chinese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+          { "id": "w1_3_1", "target": "国家", "phonetic": "ගුවෝ ජියා", "native_meaning": "රට", "english": "country", "example_sentence_target": "中国是一个美丽的国家。", "example_sentence_native": "චීනය සුන්දර රටක්.", "example_sentence_phonetic": "චොංගුවෝ ෂ' යී ග මීලී ද ගුවෝ ජියා." },
+          { "id": "w1_3_2", "target": "哪", "phonetic": "නා", "native_meaning": "කුමන", "english": "which", "example_sentence_target": "你是哪国人？", "example_sentence_native": "ඔබ කුමන රටේ කෙනෙක්ද?", "example_sentence_phonetic": "නී ෂ' නා ගුවෝ රන්?" },
+          { "id": "w1_3_3", "target": "人", "phonetic": "රන්", "native_meaning": "පුද්ගලයා", "english": "person", "example_sentence_target": "我是一个好人。", "example_sentence_native": "මම හොඳ පුද්ගලයෙක්.", "example_sentence_phonetic": "වෝ ෂ' යී ග හාඕ රන්." },
+          { "id": "w1_3_4", "target": "中国", "phonetic": "චොංගුවෝ", "native_meaning": "චීනය", "english": "China", "example_sentence_target": "我来自中国。", "example_sentence_native": "මම චීනයෙන්.", "example_sentence_phonetic": "වෝ ලායිස' චොංගුවෝ." },
+          { "id": "w1_3_5", "target": "斯里兰卡", "phonetic": "ස'ලීලන්කා", "native_meaning": "ශ්‍රී ලංකාව", "english": "Sri Lanka", "example_sentence_target": "斯里兰卡是一个岛国。", "example_sentence_native": "ශ්‍රී ලංකාව දූපත් රාජ්‍යයකි.", "example_sentence_phonetic": "ස'ලීලන්කා ෂ' යී ග දාඕගුවෝ." },
+          { "id": "w1_3_6", "target": "也", "phonetic": "යේ", "native_meaning": "ත්", "english": "also/too", "example_sentence_target": "我也是学生。", "example_sentence_native": "මමත් ශිෂ්‍යයෙක්.", "example_sentence_phonetic": "වෝ යේ ෂ' ෂුවේෂං." },
+          { "id": "w1_3_7", "target": "住", "phonetic": "චූ", "native_meaning": "ජීවත් වෙනවා", "english": "to live", "example_sentence_target": "你住在哪儿？", "example_sentence_native": "ඔබ ජීවත් වෙන්නේ කොහේද?", "example_sentence_phonetic": "නී චූ සායි නා'ර්?" },
+          { "id": "w1_3_8", "target": "在", "phonetic": "සායි", "native_meaning": "දී / හි", "english": "at/in/on", "example_sentence_target": "我在北京工作。", "example_sentence_native": "මම බීජිංවල වැඩ කරනවා.", "example_sentence_phonetic": "වෝ සායි බෙයිජිං ගොන්සුවෝ." }
+        ],
+        "sentences": [
+          { "id": "s1_3_1", "target": "我是斯里兰卡人。", "native": "මම ශ්‍රී ලාංකිකයෙක්.", "phonetic": "වෝ ෂ' ස'ලීලන්කා රන්." },
+          { "id": "s1_3_2", "target": "你是哪国人？", "native": "ඔබ කුමන රටේ කෙනෙක්ද?", "phonetic": "නී ෂ' නා ගුවෝ රන්?" },
+          { "id": "s1_3_3", "target": "他不是中国人。", "native": "ඔහු චීන ජාතිකයෙක් නොවේ.", "phonetic": "තා බූ ෂ' චොංගුවෝ රන්." },
+          { "id": "s1_3_4", "target": "她也住在上海吗？", "native": "ඇයත් ෂැංහයි වලද ජීවත් වෙන්නේ?", "phonetic": "තා යේ චූ සායි ෂාංහායි මා?" },
+          { "id": "s1_3_5", "target": "你来自哪个国家？", "native": "ඔබ කුමන රටකින්ද පැමිණියේ?", "phonetic": "නී ලායිස' නා ග ගුවෝ ජියා?" },
+          { "id": "s1_3_6", "target": "我的国家很美。", "native": "මගේ රට හරිම ලස්සනයි.", "phonetic": "වෝ ද ගුවෝ ජියා හන් මෙයි." },
+          { "id": "s1_3_7", "target": "他是一个好人。", "native": "ඔහු හොඳ කෙනෙක්.", "phonetic": "තා ෂ' යී ග හාඕ රන්." },
+          { "id": "s1_3_8", "target": "我们都爱自己的国家。", "native": "අපි හැමෝම අපේ රටට ආදරෙයි.", "phonetic": "වෝමන් දෝ අයි ස'ජී ද ගුවෝ ජියා." }
+        ],
+        "dialogues": [
           {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
+            "id": "d1_3_1",
+            "context": "කෙනෙකුගේ ජාතිකත්වය ඇසීම.",
+            "lines": [
+              { "speaker": "A", "target": "请问，你是哪国人？", "native": "සමාවන්න, ඔබ කුමන රටේ කෙනෙක්ද?", "phonetic": "චිං වන්, නී ෂ' නා ගුවෝ රන්?" },
+              { "speaker": "B", "target": "我是斯里兰卡人。你呢？", "native": "මම ශ්‍රී ලාංකිකයෙක්. ඔයා?", "phonetic": "වෝ ෂ' ස'ලීලන්කා රන්. නී න?" }
+            ]
           },
           {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
+            "id": "d1_3_2",
+            "context": "චීන මිතුරෙකු සමඟ කතා කිරීම.",
+            "lines": [
+              { "speaker": "A", "target": "我是中国人。你也是中国人吗？", "native": "මම චීන ජාතිකයෙක්. ඔයත් චීනද?", "phonetic": "වෝ ෂ' චොංගුවෝ රන්. නී යේ ෂ' චොංගුවෝ රන් මා?" },
+              { "speaker": "B", "target": "不，我不是中国人。我是斯里兰卡人。", "native": "නැහැ, මම චීන ජාතිකයෙක් නෙවෙයි. මම ශ්‍රී ලාංකිකයෙක්.", "phonetic": "බූ, වෝ බූ ෂ' චොංගුවෝ රන්. වෝ ෂ' ස'ලීලන්කා රන්." }
+            ]
           },
           {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
+            "id": "d1_3_3",
+            "context": "ජීවත් වන ස්ථානය ගැන කතා කිරීම.",
+            "lines": [
+              { "speaker": "A", "target": "你住在哪儿？", "native": "ඔබ ජීවත් වෙන්නේ කොහේද?", "phonetic": "නී චූ සායි නා'ර්?" },
+              { "speaker": "B", "target": "我住在北京。你呢？", "native": "මම ජීවත් වෙන්නේ බීජිං වල. ඔයා?", "phonetic": "වෝ චූ සායි බෙයිජිං. නී න?" }
+            ]
+          },
+          {
+            "id": "d1_3_4",
+            "context": "රටවල් ගැන කතා කිරීම.",
+            "lines": [
+              { "speaker": "A", "target": "中国很大。", "native": "චීනය විශාලයි.", "phonetic": "චොංගුවෝ හන් දා." },
+              { "speaker": "B", "target": "是的，斯里兰卡很小但是很美。", "native": "ඔව්, ශ්‍රී ලංකාව කුඩා නමුත් ඉතා ලස්සනයි.", "phonetic": "ෂ' ද, ස'ලීලන්කා හන් ෂියාඕ දන්ෂ' හන් මෙයි." }
+            ]
           }
         ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+        "exercises": {
+          "fillBlanks": [
+            { "id": "fb1_3_1", "sentence": "我是___人。", "answer": "斯里兰卡", "hint": "ශ්‍රී ලංකාව" }
+          ],
+          "multipleChoice": [
+            {
+              "id": "mc1_3_1",
+              "question": "'你是哪国人？' යන්නෙහි තේරුම කුමක්ද?",
+              "options": ["ඔබේ නම කුමක්ද?", "ඔබ කොහේද ජීවත් වෙන්නේ?", "ඔබ කුමන රටේ කෙනෙක්ද?", "ඔබට කොහොමද?"],
+              "correct": 2,
+              "explanation": "'哪国人' යනු 'කුමන රටේ පුද්ගලයාද' යන්නයි."
+            }
+          ],
+          "matching": [
+            { "id": "m1_3_1", "target": "国家", "native": "රට" },
+            { "id": "m1_3_2", "target": "人", "native": "පුද්ගලයා" },
+            { "id": "m1_3_3", "target": "中国", "native": "චීනය" },
+            { "id": "m1_3_4", "target": "住", "native": "ජීවත් වෙනවා" }
+          ],
+          "sentenceScramble": [
+            { "id": "ss1_3_1", "scrambled": ["是", "我", "人", "斯里兰卡"], "correct": "我是斯里兰卡人", "nativeHint": "මම ශ්‍රී ලාංකිකයෙක්." }
+          ]
+        },
+        "cultural_note": "චීනයේදී, ඔබ කුමන රටේදැයි ඇසීම සාමාන්‍ය දෙයකි. එය සංවාදයක් ආරම්භ කිරීමට හොඳ ක්‍රමයකි. මිනිසුන් සාමාන්‍යයෙන් තම රට ගැන ආඩම්බර වෙති.",
+        "pronunciation_tip": "'国' (guó) හි 'uo' ශබ්දය 'u' සහ 'o' එකට එකතු වී 'වෝ' ලෙස උච්චාරණය වේ. '人' (rén) හි 'r' ශබ්දය ඉංග්‍රීසි 'r' ශබ්දයට සමාන නොවේ, එය දිවේ අග මදක් පිටුපසට කර උච්චාරණය කරයි.",
+        "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-Nationality-CN" }
+    },
+    {
+        "week": 1,
+        "day": 4,
+        "title": "1 වන සතිය, 4 වන දිනය: කෑම සහ බීම ඇණවුම් කිරීම",
+        "title_native": "第一周，第四天：点餐和饮料",
+        "theme": "Ordering Food & Drinks",
+        "path": "survival",
+        "targetLanguage": "Chinese",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            {"id": "w1_4_1", "target": "菜单", "phonetic": "සායි දන්", "native_meaning": "මෙනුව", "english": "menu", "example_sentence_target": "服务员，请给我菜单。", "example_sentence_native": "වේටර්, කරුණාකර මට මෙනුව දෙන්න.", "example_sentence_phonetic": "ෆූ වූ යුවාන්, චිං ගෙයි වෝ සායි දන්."},
+            {"id": "w1_4_2", "target": "点菜", "phonetic": "දියන් සායි", "native_meaning": "කෑම ඇණවුම් කරනවා", "english": "to order food", "example_sentence_target": "你们现在可以点菜了吗？", "example_sentence_native": "ඔබට දැන් කෑම ඇණවුම් කරන්න පුලුවන්ද?", "example_sentence_phonetic": "නී මන් ෂියන් සායි ක යී දියන් සායි ල මා?"},
+            {"id": "w1_4_3", "target": "米饭", "phonetic": "මී ෆන්", "native_meaning": "බත්", "english": "rice", "example_sentence_target": "我想要一碗米饭。", "example_sentence_native": "මට බත් කෝප්පයක් අවශ්‍යයි.", "example_sentence_phonetic": "වෝ ෂියං යාඕ යී වන් මී ෆන්."},
+            {"id": "w1_4_4", "target": "水", "phonetic": "ෂුවේ", "native_meaning": "වතුර", "english": "water", "example_sentence_target": "请给我一杯水。", "example_sentence_native": "කරුණාකර මට වතුර වීදුරුවක් දෙන්න.", "example_sentence_phonetic": "චිං ගෙයි වෝ යී බෙයි ෂුවේ."},
+            {"id": "w1_4_5", "target": "买单", "phonetic": "මායි දන්", "native_meaning": "බිල ගෙවනවා", "english": "to pay the bill", "example_sentence_target": "服务员，买单！", "example_sentence_native": "වේටර්, බිල!", "example_sentence_phonetic": "ෆූ වූ යුවාන්, මායි දන්!"},
+            {"id": "w1_4_6", "target": "好吃", "phonetic": "හාඕ ච'", "native_meaning": "රසයි", "english": "delicious", "example_sentence_target": "这个菜很好吃。", "example_sentence_native": "මේ කෑම හරිම රසයි.", "example_sentence_phonetic": "ජ ග සායි හන් හාඕ ච'."},
+            {"id": "w1_4_7", "target": "喝", "phonetic": "හ'", "native_meaning": "බොනවා", "english": "to drink", "example_sentence_target": "你想喝点什么？", "example_sentence_native": "ඔබට මොනවද බොන්න ඕන?", "example_sentence_phonetic": "නී ෂියං හ' දියන් ෂන්ම?"},
+            {"id": "w1_4_8", "target": "吃", "phonetic": "ච'", "native_meaning": "කනවා", "english": "to eat", "example_sentence_target": "我饿了，想吃东西。", "example_sentence_native": "මට බඩගිනියි, කෑම කන්න ඕන.", "example_sentence_phonetic": "වෝ අ ල, ෂියං ච' දොංෂි."}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
+        "sentences": [
+            {"id": "s1_4_1", "target": "服务员，点菜。", "native": "වේටර්, කෑම ඇණවුම් කරන්න ඕන.", "phonetic": "ෆූ වූ යුවාන්, දියන් සායි."},
+            {"id": "s1_4_2", "target": "我要这个。", "native": "මට මේක ඕන.", "phonetic": "වෝ යාඕ ජ ග."},
+            {"id": "s1_4_3", "target": "请给我一瓶啤酒。", "native": "කරුණාකර මට බියර් බෝතලයක් දෙන්න.", "phonetic": "චිං ගෙයි වෝ යී පිං පීජියෝ."},
+            {"id": "s1_4_4", "target": "这个菜辣吗？", "native": "මේ කෑම සැරද?", "phonetic": "ජ ග සායි ලා මා?"},
+            {"id": "s1_4_5", "target": "我们吃米饭。", "native": "අපි බත් කනවා.", "phonetic": "වෝමන් ච' මී ෆන්."},
+            {"id": "s1_4_6", "target": "我不喝酒。", "native": "මම මත්පැන් බොන්නේ නැහැ.", "phonetic": "වෝ බූ හ' ජියෝ."},
+            {"id": "s1_4_7", "target": "一共多少钱？", "native": "මුළු එකතුව කීයද?", "phonetic": "යීගොං දුවෝෂාඕ චියන්?"},
+            {"id": "s1_4_8", "target": "太好吃了！", "native": "හරිම රසයි!", "phonetic": "තායි හාඕ ච' ල!"}
+        ],
+        "dialogues": [
+            {
+                "id": "d1_4_1",
+                "context": "ආපන ශාලාවකදී මෙනුව ඉල්ලීම.",
+                "lines": [
+                    {"speaker": "A", "target": "你好，请给我们菜单。", "native": "ආයුබෝවන්, කරුණාකර අපට මෙනුව දෙන්න.", "phonetic": "නී හාඕ, චිං ගෙයි වෝමන් සායි දන්."},
+                    {"speaker": "B", "target": "好的，请稍等。", "native": "හොඳයි, කරුණාකර මදක් රැඳී සිටින්න.", "phonetic": "හාඕ ද, චිං ෂාඕ දං."}
+                ]
+            },
+            {
+                "id": "d1_4_2",
+                "context": "කෑම ඇණවුම් කිරීම.",
+                "lines": [
+                    {"speaker": "A", "target": "我要一个宫保鸡丁和两碗米饭。", "native": "මට ගොං බාඕ චිකන් එකකුයි බත් කෝප්ප දෙකකුයි ඕන.", "phonetic": "වෝ යාඕ යී ග ගොං බාඕ ජි දิง හ' ලියං වන් මී ෆන්."},
+                    {"speaker": "B", "target": "好的。喝点什么？", "native": "හොඳයි. මොනවද බොන්න ඕන?", "phonetic": "හාඕ ද. හ' දියන් ෂන්ම?"}
+                ]
+            },
+            {
+                "id": "d1_4_3",
+                "context": "බිල ඉල්ලීම.",
+                "lines": [
+                    {"speaker": "A", "target": "服务员，买单！", "native": "වේටර්, බිල!", "phonetic": "ෆූ වූ යුවාන්, මායි දන්!"},
+                    {"speaker": "B", "target": "好的，一共一百二十元。", "native": "හොඳයි, මුළු එකතුව යුවාන් එකසිය විස්සයි.", "phonetic": "හාඕ ද, යීගොං යී බායි අ'ෂ' යුවාන්."}
+                ]
+            },
+            {
+                "id": "d1_4_4",
+                "context": "කෑම ගැන අදහස් දැක්වීම.",
+                "lines": [
+                    {"speaker": "A", "target": "这个鱼真好吃！", "native": "මේ මාළු නම් හරිම රසයි!", "phonetic": "ජ ග යූ ජන් හාඕ ච'!"},
+                    {"speaker": "B", "target": "是吗？那你多吃点。", "native": "එහෙමද? එහෙනම් තව ටිකක් කන්න.", "phonetic": "ෂ' මා? නා නී දුවෝ ච' දියන්."}
+                ]
+            }
+        ],
+        "exercises": {
+            "fillBlanks": [
+                {"id": "fb1_4_1", "sentence": "服务员，___！", "answer": "买单", "hint": "බිල ඉල්ලනවා"}
             ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
+            "multipleChoice": [
+                {
+                    "id": "mc1_4_1",
+                    "question": "ඔබට වතුර වීදුරුවක් ඉල්ලීමට අවශ්‍ය නම්, ඔබ කුමක් කිව යුතුද?",
+                    "options": ["请给我菜单", "这个多少钱", "请给我一杯水", "买单"],
+                    "correct": 2,
+                    "explanation": "'请给我一杯水' (චිං ගෙයි වෝ යී බෙයි ෂුවේ) යනු 'කරුණාකර මට වතුර වීදුරුවක් දෙන්න' යන්නයි."
+                }
             ],
-            "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
-          }
-        ]
-      },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+            "matching": [
+                {"id": "m1_4_1", "target": "菜单", "native": "මෙනුව"},
+                {"id": "m1_4_2", "target": "米饭", "native": "බත්"},
+                {"id": "m1_4_3", "target": "好吃", "native": "රසයි"},
+                {"id": "m1_4_4", "target": "喝", "native": "බොනවා"}
+            ],
+            "sentenceScramble": [
+                {"id": "ss1_4_1", "scrambled": ["这个", "菜", "好吃", "很"], "correct": "这个菜很好吃", "nativeHint": "මේ කෑම හරිම රසයි."}
+            ]
+        },
+        "cultural_note": "චීනයේ, බොහෝ විට එකට කෑම බෙදා ගැනීම සිරිතකි. කෑම මේසයේදී චොප්ස්ටික්ස් භාවිතා කරන අතර, ඒවා කෙලින්ම බත් බඳුනක සිරස්ව තැබීම අශුභ ලෙස සැලකේ.",
+        "pronunciation_tip": "'吃' (chī) හි 'ch' ශබ්දය ඉංග්‍රීසි 'church' හි 'ch' ශබ්දයට සමාන නමුත්, දිව තල්ලේ ඉහලට කර තදින් උච්චාරණය කරයි. '喝' (hē) හි 'h' ශබ්දය උගුරෙන් එන 'හ' ශබ්දයකි.",
+        "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D4-OrderingFood-CN"}
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 5 වන දිනය: ආචාරශීලී ප්‍රකාශන",
+      "title_native": "第一周，第五天：礼貌用语",
+      "theme": "Polite Expressions",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "你好",
-          "phonetic": "ni-HAO",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "谢谢",
-          "phonetic": "xie-XIE",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_5_1", "target": "请", "phonetic": "චිං", "native_meaning": "කරුණාකර", "english": "please", "example_sentence_target": "请进。", "example_sentence_native": "කරුණාකර ඇතුලට එන්න.", "example_sentence_phonetic": "චිං ජින්." },
+        { "id": "w1_5_2", "target": "麻烦你了", "phonetic": "මාෆන් නී ල", "native_meaning": "ඔබට කරදර කළා", "english": "sorry to bother you", "example_sentence_target": "麻烦你了，请问银行在哪儿？", "example_sentence_native": "ඔබට කරදර කළා, බැංකුව කොහෙද තියෙන්නේ?", "example_sentence_phonetic": "මාෆන් නී ල, චිං වන් යින්හාං සායි නා'ර්?" },
+        { "id": "w1_5_3", "target": "不用谢", "phonetic": "බූ යොං ෂියෙ", "native_meaning": "ස්තූති කරන්න දෙයක් නෑ", "english": "don't mention it", "example_sentence_target": "A: 谢谢！ B: 不用谢。", "example_sentence_native": "A: ස්තූතියි! B: ස්තූති කරන්න දෙයක් නෑ.", "example_sentence_phonetic": "A: ෂියෙ ෂියෙ! B: බූ යොං ෂියෙ." },
+        { "id": "w1_5_4", "target": "借过一下", "phonetic": "ජියෙ ගුවෝ යීෂියා", "native_meaning": "පාර දෙනවද", "english": "excuse me (to pass)", "example_sentence_target": "借过一下，谢谢。", "example_sentence_native": "පාර දෙනවද, ස්තූතියි.", "example_sentence_phonetic": "ජියෙ ගුවෝ යීෂියා, ෂියෙ ෂියෙ." },
+        { "id": "w1_5_5", "target": "好的", "phonetic": "හාඕ ද", "native_meaning": "හොඳයි", "english": "okay/good", "example_sentence_target": "我们去看电影，好的吗？", "example_sentence_native": "අපි චිත්‍රපටියක් බලන්න යමුද, හොඳද?", "example_sentence_phonetic": "වෝමන් චූ කන් දියන් යිං, හාඕ ද මා?" },
+        { "id": "w1_5_6", "target": "没问题", "phonetic": "මෙයි වන් තී", "native_meaning": "ප්‍රශ්නයක් නැහැ", "english": "no problem", "example_sentence_target": "你能帮我吗？没问题。", "example_sentence_native": "ඔබට මට උදව් කරන්න පුලුවන්ද? ප්‍රශ්නයක් නැහැ.", "example_sentence_phonetic": "නී නං බාං වෝ මා? මෙයි වන් තී." },
+        { "id": "w1_5_7", "target": "慢走", "phonetic": "මන් සෝ", "native_meaning": "පරිස්සමෙන් යන්න", "english": "take care (when someone leaves)", "example_sentence_target": "再见，慢走！", "example_sentence_native": "ගිහින් එන්නම්, පරිස්සමෙන් යන්න!", "example_sentence_phonetic": "සායි ජියන්, මන් සෝ!" },
+        { "id": "w1_5_8", "target": "失陪一下", "phonetic": "ෂ' පෙයි යීෂියා", "native_meaning": "මදකට සමාවන්න", "english": "excuse me (for a moment)", "example_sentence_target": "我失陪一下，去接个电话。", "example_sentence_native": "මම මදකට සමාවෙන්න, දුරකථන ඇමතුමක් ගන්න යනවා.", "example_sentence_phonetic": "වෝ ෂ' පෙයි යීෂියා, චූ ජියෙ ග දියන් හුවා." }
+      ],
+      "sentences": [
+        { "id": "s1_5_1", "target": "请问，洗手间在哪儿？", "native": "සමාවන්න, වැසිකිළිය කොහෙද?", "phonetic": "චිං වන්, ෂීෂෝව්ජියන් සායි නා'ර්?" },
+        { "id": "s1_5_2", "target": "麻烦你帮我一下。", "native": "කරුණාකර මට උදව්වක් කරනවද.", "phonetic": "මාෆන් නී බාං වෝ යීෂියා." },
+        { "id": "s1_5_3", "target": "这件衣服很好，好的。", "native": "මේ ඇඳුම ගොඩක් හොඳයි, හරි.", "phonetic": "ජ ජියන් යීෆු හන් හාඕ, හාඕ ද." },
+        { "id": "s1_5_4", "target": "A: 对不起。 B: 没问题。", "native": "A: සමාවන්න. B: ප්‍රශ්නයක් නැහැ.", "phonetic": "A: දුයි බු චී. B: මෙයි වන් තී." },
+        { "id": "s1_5_5", "target": "请坐。", "native": "කරුණාකර වාඩිවෙන්න.", "phonetic": "චිං සුවෝ." },
+        { "id": "s1_5_6", "target": "请喝茶。", "native": "කරුණාකර තේ බොන්න.", "phonetic": "චිං හ' චා." },
+        { "id": "s1_5_7", "target": "借过一下，我要下车。", "native": "පාර දෙනවද, මට බහින්න ඕන.", "phonetic": "ජියෙ ගුවෝ යීෂියා, වෝ යාඕ ෂියා ච." },
+        { "id": "s1_5_8", "target": "你要走了吗？慢走！", "native": "ඔයා යනවද? පරිස්සමෙන් යන්න!", "phonetic": "නී යාඕ සෝ ල මා? මන් සෝ!" }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": " людной улице дорогу",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
+            { "speaker": "A", "target": "借过一下，谢谢！", "native": "පාර දෙනවද, ස්තූතියි!", "phonetic": "ජියෙ ගුවෝ යීෂියා, ෂියෙ ෂියෙ!" },
+            { "speaker": "B", "target": "好的。", "native": "හොඳයි.", "phonetic": "හාඕ ද." }
           ]
         },
         {
           "id": "d1_5_2",
-          "context": "Formal Farewells",
+          "context": "කෙනෙකුට උදව් කර ස්තුතිය පිළිගැනීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
+            { "speaker": "A", "target": "太谢谢你了！", "native": "ඔබට බොහොම ස්තූතියි!", "phonetic": "තායි ෂියෙ ෂියෙ නී ල!" },
+            { "speaker": "B", "target": "不用谢，没问题。", "native": "ස්තූති කරන්න දෙයක් නෑ, ප්‍රශ්නයක් නැහැ.", "phonetic": "බූ යොං ෂියෙ, මෙයි වන් තී." }
+          ]
+        },
+        {
+          "id": "d1_5_3",
+          "context": "අමුත්තෙකුට ආචාර කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "欢迎！请进，请坐。", "native": "සාදරයෙන් පිළිගන්නවා! කරුණාකර ඇතුලට එන්න, වාඩිවෙන්න.", "phonetic": "හුවන් යිං! චිං ජින්, චිං සුවෝ." },
+            { "speaker": "B", "target": "谢谢。麻烦你了。", "native": "ස්තූතියි. ඔබට කරදරයක්.", "phonetic": "ෂියෙ ෂියෙ. මාෆන් නී ල." }
+          ]
+        },
+        {
+          "id": "d1_5_4",
+          "context": "මිතුරෙකු නිවසින් පිටත්ව යන විට.",
+          "lines": [
+            { "speaker": "A", "target": "我回家了，再见。", "native": "මම ගෙදර යනවා, ගිහින් එන්නම්.", "phonetic": "වෝ හුයි ජියා ල, සායි ජියන්." },
+            { "speaker": "B", "target": "好，路上小心，慢走。", "native": "හොඳයි, පාරේ පරිස්සමෙන්, පරිස්සමෙන් යන්න.", "phonetic": "හාඕ, ලූ ෂාං ෂියාඕෂින්, මන් සෝ." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+          { "id": "fb1_5_1", "sentence": "___，洗手间在哪儿？", "answer": "请问", "hint": "යමක් විමසීමට පෙර" }
         ],
         "multipleChoice": [
           {
             "id": "mc1_5_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
-            ],
-            "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
+            "question": "කෙනෙක් ඔබට '谢谢' කිව්වොත්, ඔබට දිය හැකි පිළිතුර කුමක්ද?",
+            "options": ["对不起", "再见", "不客气", "你好"],
+            "correct": 2,
+            "explanation": "'不客气' (බූ ක චි) යනු 'You're welcome' යන්නට සමාන, ආචාරශීලී පිළිතුරකි."
           }
+        ],
+        "matching": [
+          { "id": "m1_5_1", "target": "请", "native": "කරුණාකර" },
+          { "id": "m1_5_2", "target": "好的", "native": "හොඳයි" },
+          { "id": "m1_5_3", "target": "没问题", "native": "ප්‍රශ්නයක් නැහැ" },
+          { "id": "m1_5_4", "target": "慢走", "native": "පරිස්සමෙන් යන්න" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss1_5_1", "scrambled": ["一下", "借过", "，", "谢谢"], "correct": "借过一下，谢谢", "nativeHint": "පාර දෙනවද, ස්තූතියි." }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "චීන සංස්කෘතියේදී, තෑග්ගක් හෝ උදව්වක් ලැබුණු විට එය කිහිප වතාවක් ප්‍රතික්ෂේප කිරීම ආචාරශීලී ලෙස සැලකේ. '麻烦你了' (මාෆන් නී ල) කීමෙන් ඔබ අනිත් කෙනාගේ කාලය සහ උත්සාහය අගය කරන බව පෙන්වයි.",
+      "pronunciation_tip": "'请' (qǐng) හි 'q' ශබ්දය ඉංග්‍රීසි 'ch' ශබ්දයට සමාන නමුත්, දිවේ ඉදිරිපස කොටස තල්ලේ ඉදිරි කොටසට තද කර වාතය පිට කිරීමෙන් උච්චාරණය කරයි. එය 'චී' වැනි ශබ්දයකි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-Politeness-CN" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 6 වන දිනය: සරල පිළිතුරු",
+      "title_native": "第一周，第六天：简单回答",
+      "theme": "Simple Answers",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "你好",
-          "phonetic": "ni-HAO",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "谢谢",
-          "phonetic": "xie-XIE",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_6_1", "target": "对", "phonetic": "දුයි", "native_meaning": "හරි", "english": "correct, right", "example_sentence_target": "你说的对。", "example_sentence_native": "ඔබ කියන දේ හරි.", "example_sentence_phonetic": "නී ෂුවෝ ද දුයි." },
+        { "id": "w1_6_2", "target": "不对", "phonetic": "බූ දුයි", "native_meaning": "වැරදියි", "english": "incorrect, wrong", "example_sentence_target": "这个答案不对。", "example_sentence_native": "මේ පිළිතුර වැරදියි.", "example_sentence_phonetic": "ජ ග දා'අන් බූ දුයි." },
+        { "id": "w1_6_3", "target": "可以", "phonetic": "ක යී", "native_meaning": "පුළුවන්", "english": "can, may, okay", "example_sentence_target": "我可以进来吗？", "example_sentence_native": "මට ඇතුලට එන්න පුලුවන්ද?", "example_sentence_phonetic": "වෝ ක යී ජින් ලායි මා?" },
+        { "id": "w1_6_4", "target": "不可以", "phonetic": "බූ ක යී", "native_meaning": "බැහැ", "english": "cannot, not allowed", "example_sentence_target": "这里不可以抽烟。", "example_sentence_native": "මෙතන දුම්පානය කරන්න බැහැ.", "example_sentence_phonetic": "ජ ලී බූ ක යී චෝ යැන්." },
+        { "id": "w1_6_5", "target": "知道", "phonetic": "ජ'ඩාඕ", "native_meaning": "දන්නවා", "english": "to know", "example_sentence_target": "我知道这件事。", "example_sentence_native": "මම මේ කාරණය දන්නවා.", "example_sentence_phonetic": "වෝ ජ'ඩාඕ ජ ග ෂ'." },
+        { "id": "w1_6_6", "target": "不知道", "phonetic": "බූ ජ'ඩාඕ", "native_meaning": "දන්නේ නැහැ", "english": "don't know", "example_sentence_target": "我不知道他在哪儿。", "example_sentence_native": "ඔහු කොහෙද ඉන්නේ කියලා මම දන්නේ නැහැ.", "example_sentence_phonetic": "වෝ බූ ජ'ඩාඕ තා සායි නා'ර්." },
+        { "id": "w1_6_7", "target": "有", "phonetic": "යෝ", "native_meaning": "තියෙනවා", "english": "to have, there is", "example_sentence_target": "你有钱吗？", "example_sentence_native": "ඔබ ළඟ සල්ලි තියෙනවද?", "example_sentence_phonetic": "නී යෝ චියන් මා?" },
+        { "id": "w1_6_8", "target": "没有", "phonetic": "මෙයි යෝ", "native_meaning": "නැහැ", "english": "don't have, there isn't", "example_sentence_target": "我没有兄弟姐妹。", "example_sentence_native": "මට සහෝදර සහෝදරියන් නැහැ.", "example_sentence_phonetic": "වෝ මෙයි යෝ ෂොං දී ජියෙ මෙයි." }
+      ],
+      "sentences": [
+        { "id": "s1_6_1", "target": "你说得对。", "native": "ඔබ කියන දේ හරි.", "phonetic": "නී ෂුවෝ ද දුයි." },
+        { "id": "s1_6_2", "target": "不，那个不对。", "native": "නැහැ, ඒක වැරදියි.", "phonetic": "බූ, නා ග බූ දුයි." },
+        { "id": "s1_6_3", "target": "我可以坐这里吗？可以。", "native": "මට මෙතන වාඩි වෙන්න පුලුවන්ද? පුළුවන්.", "phonetic": "වෝ ක යී සුවෝ ජ ලී මා? ක යී." },
+        { "id": "s1_6_4", "target": "对不起，这里不可以拍照。", "native": "සමාවන්න, මෙතන පින්තූර ගන්න බැහැ.", "phonetic": "දුයි බු චී, ජ ලී බූ ක යී පායි ජාඕ." },
+        { "id": "s1_6_5", "target": "你知道他的电话吗？", "native": "ඔබ ඔහුගේ දුරකථන අංකය දන්නවාද?", "phonetic": "නී ජ'ඩාඕ තා ද දියන් හුවා මා?" },
+        { "id": "s1_6_6", "target": "我不知道怎么去那里。", "native": "එතනට යන්නේ කොහොමද කියලා මම දන්නේ නැහැ.", "phonetic": "වෝ බූ ජ'ඩාඕ සන්ම චූ නා ලී." },
+        { "id": "s1_6_7", "target": "你有时间吗？", "native": "ඔබට වෙලාව තියෙනවද?", "phonetic": "නී යෝ ෂ'ජියන් මා?" },
+        { "id": "s1_6_8", "target": "我没有车。", "native": "මට කාර් එකක් නැහැ.", "phonetic": "වෝ මෙයි යෝ ච." }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "යමක් තහවුරු කර ගැනීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
+            { "speaker": "A", "target": "他是老师，对吗？", "native": "ඔහු ගුරුවරයෙක්, හරිද?", "phonetic": "තා ෂ' ලාඕෂ', දුයි මා?" },
+            { "speaker": "B", "target": "对，他是英语老师。", "native": "හරි, ඔහු ඉංග්‍රීසි ගුරුවරයෙක්.", "phonetic": "දුයි, තා ෂ' යිං යූ ලාඕෂ'." }
           ]
         },
         {
           "id": "d1_6_2",
-          "context": "Formal Review & Practice",
+          "context": "අවසර ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
+            { "speaker": "A", "target": "我可以用一下你的笔吗？", "native": "මට ඔයාගේ පෑන ටිකකට පාවිච්චි කරන්න පුලුවන්ද?", "phonetic": "වෝ ක යී යොං යීෂියා නී ද බී මා?" },
+            { "speaker": "B", "target": "可以，给你。", "native": "පුළුවන්, ගන්න.", "phonetic": "ක යී, ගෙයි නී." }
+          ]
+        },
+        {
+          "id": "d1_6_3",
+          "context": "යමක් ගැන නොදන්නා බව පැවසීම.",
+          "lines": [
+            { "speaker": "A", "target": "你知道这个汉字怎么读吗？", "native": "මේ චීන අකුර කියවන්නේ කොහොමද කියලා දන්නවද?", "phonetic": "නී ජ'ඩාඕ ජ ග හන් ස' සන්ම දූ මා?" },
+            { "speaker": "B", "target": "对不起，我不知道。", "native": "සමාවෙන්න, මම දන්නේ නැහැ.", "phonetic": "දුයි බු චී, වෝ බූ ජ'ඩාඕ." }
+          ]
+        },
+        {
+          "id": "d1_6_4",
+          "context": "යමක් තිබේදැයි ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "请问，你们有咖啡吗？", "native": "සමාවන්න, ඔබ ළඟ කෝපි තියෙනවද?", "phonetic": "චිං වන්, නීමන් යෝ කාෆෙයි මා?" },
+            { "speaker": "B", "target": "有，请稍等。", "native": "තියෙනවා, කරුණාකර මදක් ඉන්න.", "phonetic": "යෝ, චිං ෂාඕ දං." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+          { "id": "fb1_6_1", "sentence": "我___怎么说。", "answer": "不知道", "hint": "දන්නේ නැහැ" }
         ],
         "multipleChoice": [
           {
             "id": "mc1_6_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
-            ],
+            "question": "'I don't have' යන්නට චීන වචනය කුමක්ද?",
+            "options": ["有", "没有", "知道", "不知道"],
             "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
+            "explanation": "'没有' (මෙයි යෝ) යනු 'නැහැ' හෝ 'නැත' යන්නයි."
           }
+        ],
+        "matching": [
+          { "id": "m1_6_1", "target": "对", "native": "හරි" },
+          { "id": "m1_6_2", "target": "可以", "native": "පුළුවන්" },
+          { "id": "m1_6_3", "target": "知道", "native": "දන්නවා" },
+          { "id": "m1_6_4", "target": "有", "native": "තියෙනවා" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss1_6_1", "scrambled": ["这个", "答案", "不对"], "correct": "这个答案不对", "nativeHint": "මේ පිළිතුර වැරදියි." }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "චීනයේ 'ඔව්' හෝ 'නැහැ' කීමට බොහෝ ක්‍රම තිබේ. '是/不是' (ෂ'/බූ ෂ') යනු යමක් හරිද වැරදිද යන්න පැවසීමට භාවිතා කරන අතර, '有/没有' (යෝ/මෙයි යෝ) යමක් තිබේද නැද්ද යන්න පැවසීමට භාවිතා කරයි.",
+      "pronunciation_tip": "'知道' (zhī dào) හි 'zh' ශබ්දය ඉංග්‍රීසි 'j' ශබ්දයට සමාන නමුත්, දිව තල්ලේ ඉහලට කර තදින් උච්චාරණය කරයි. '道' (dào) හි 'd' ශබ්දය ඉංග්‍රීසි 'd' ට සමානයි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-Answers-CN" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "1 වන සතිය, 7 වන දිනය: සතියේ සමාලෝචනය",
+      "title_native": "第一周，第七天：本周复习",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "你好",
-          "phonetic": "ni-HAO",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Hello",
-          "example_sentence_target": "你好.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "谢谢",
-          "phonetic": "xie-XIE",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "谢谢.",
-          "example_sentence_native": "ස්තූතියි."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "再见",
-          "phonetic": "zai-JIAN",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "Goodbye",
-          "example_sentence_target": "再见.",
-          "example_sentence_native": "ආයුබෝවන්."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "请",
-          "phonetic": "qing",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "请.",
-          "example_sentence_native": "කරුණාකර."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "对不起",
-          "phonetic": "dui-bu-QI",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me",
-          "example_sentence_target": "对不起.",
-          "example_sentence_native": "සමාවෙන්න."
-        }
+        { "id": "w1_7_1", "target": "你好", "phonetic": "නී හාඕ", "native_meaning": "ආයුබෝවන්", "english": "Hello", "example_sentence_target": "你好，很高兴认识你。", "example_sentence_native": "ආයුබෝවන්, ඔබව හමුවීම සතුටක්.", "example_sentence_phonetic": "නී හාඕ, හන් ගාඕෂිං රන්ෂ නී." },
+        { "id": "w1_7_2", "target": "谢谢", "phonetic": "ෂියෙ ෂියෙ", "native_meaning": "ස්තූතියි", "english": "Thank you", "example_sentence_target": "谢谢你的帮助。", "example_sentence_native": "ඔබගේ උදව්වට ස්තූතියි.", "example_sentence_phonetic": "ෂියෙ ෂියෙ නී ද බාංචූ." },
+        { "id": "w1_7_3", "target": "再见", "phonetic": "සායි ජියන්", "native_meaning": "ගිහින් එන්නම්", "english": "Goodbye", "example_sentence_target": "我们明天见，再见！", "example_sentence_native": "අපි හෙට හමුවෙමු, ගිහින් එන්නම්!", "example_sentence_phonetic": "වෝමන් මිං තියන් ජියන්, සායි ජියන්!" },
+        { "id": "w1_7_4", "target": "我叫...", "phonetic": "වෝ ජියාඕ...", "native_meaning": "මගේ නම...", "english": "My name is...", "example_sentence_target": "我叫李华。", "example_sentence_native": "මගේ නම ලී හුවා.", "example_sentence_phonetic": "වෝ ජියාඕ ලී හුවා." },
+        { "id": "w1_7_5", "target": "我是斯里兰卡人", "phonetic": "වෝ ෂ' ස'ලීලන්කා රන්", "native_meaning": "මම ශ්‍රී ලාංකිකයෙක්", "english": "I am Sri Lankan", "example_sentence_target": "他是哪国人？他是斯里兰卡人。", "example_sentence_native": "ඔහු කුමන රටේ කෙනෙක්ද? ඔහු ශ්‍රී ලාංකිකයෙක්.", "example_sentence_phonetic": "තා ෂ' නා ගුවෝ රන්? තා ෂ' ස'ලීලන්කා රන්." },
+        { "id": "w1_7_6", "target": "请问", "phonetic": "චිං වන්", "native_meaning": "සමාවන්න (විමසීමට)", "english": "Excuse me", "example_sentence_target": "请问，车站在哪里？", "example_sentence_native": "සමාවන්න, දුම්රිය ස්ථානය කොහෙද?", "example_sentence_phonetic": "චිං වන්, ච ජන් සායි නා ලී?" },
+        { "id": "w1_7_7", "target": "可以", "phonetic": "ක යී", "native_meaning": "පුළුවන්", "english": "can/okay", "example_sentence_target": "我可以进来吗？可以。", "example_sentence_native": "මට ඇතුලට එන්න පුලුවන්ද? පුළුවන්.", "example_sentence_phonetic": "වෝ ක යී ජින් ලායි මා? ක යී." },
+        { "id": "w1_7_8", "target": "不知道", "phonetic": "බූ ජ'ඩාඕ", "native_meaning": "දන්නේ නැහැ", "english": "don't know", "example_sentence_target": "我不知道。", "example_sentence_native": "මම දන්නේ නැහැ.", "example_sentence_phonetic": "වෝ බූ ජ'ඩාඕ." }
+      ],
+      "sentences": [
+        { "id": "s1_7_1", "target": "你好，我叫萨曼，我是斯里兰卡人。", "native": "ආයුබෝවන්, මගේ නම සමන්, මම ශ්‍රී ලාංකිකයෙක්.", "phonetic": "නී හාඕ, වෝ ජියාඕ සාමන්, වෝ ෂ' ස'ලීලන්කා රන්." },
+        { "id": "s1_7_2", "target": "请问，这个多少钱？", "native": "සමාවන්න, මේක කීයද?", "phonetic": "චිං වන්, ජ ග දුවෝෂාඕ චියන්?" },
+        { "id": "s1_7_3", "target": "对不起，我不知道。", "native": "සමාවෙන්න, මම දන්නේ නැහැ.", "phonetic": "දුයි බු චී, වෝ බූ ජ'ඩාඕ." },
+        { "id": "s1_7_4", "target": "谢谢你的帮助，再见。", "native": "ඔබගේ උදව්වට ස්තූතියි, ගිහින් එන්නම්.", "phonetic": "ෂියෙ ෂියෙ නී ද බාංචූ, සායි ජියන්." },
+        { "id": "s1_7_5", "target": "你也是中国人吗？不，我不是。", "native": "ඔබත් චීන ජාතිකයෙක්ද? නැහැ, මම නෙවෙයි.", "phonetic": "නී යේ ෂ' චොංගුවෝ රන් මා? බූ, වෝ බූ ෂ'." },
+        { "id": "s1_7_6", "target": "我可以喝水吗？可以。", "native": "මට වතුර බොන්න පුලුවන්ද? පුළුවන්.", "phonetic": "වෝ ක යී හ' ෂුවේ මා? ක යී." },
+        { "id": "s1_7_7", "target": "那个菜很好吃。", "native": "ඒ කෑම හරිම රසයි.", "phonetic": "නා ග සායි හන් හාඕ ච'." },
+        { "id": "s1_7_8", "target": "没关系，没问题。", "native": "කමක් නැහැ, ප්‍රශ්නයක් නැහැ.", "phonetic": "මෙයි ග්වාන් ෂි, මෙයි වන් තී." }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "ආපන ශාලාවකදී සරල සංවාදයක්.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "你好!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "ni-HAO"
-            },
-            {
-              "speaker": "B",
-              "target": "你好! 谢谢!",
-              "native": "ආයුබෝවන්! ස්තූතියි!",
-              "phonetic": "ni-HAO xie-XIE"
-            },
-            {
-              "speaker": "A",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            }
+            { "speaker": "A", "target": "你好，请给我菜单。", "native": "ආයුබෝවන්, කරුණාකර මට මෙනුව දෙන්න.", "phonetic": "නී හාඕ, චිං ගෙයි වෝ සායි දන්." },
+            { "speaker": "B", "target": "好的。你要吃什么？", "native": "හොඳයි. ඔබට මොනවද කන්න ඕන?", "phonetic": "හාඕ ද. නී යාඕ ච' ෂන්ම?" },
+            { "speaker": "A", "target": "我要这个。谢谢。", "native": "මට මේක ඕන. ස්තූතියි.", "phonetic": "වෝ යාඕ ජ ග. ෂියෙ ෂියෙ." },
+            { "speaker": "B", "target": "不客气。", "native": "සුළු දෙයක්.", "phonetic": "බූ ක චි." }
           ]
         },
         {
           "id": "d1_7_2",
-          "context": "Formal Culture Day",
+          "context": "මගදී කෙනෙකුගෙන් උදව් ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "谢谢!",
-              "native": "ස්තූතියි!",
-              "phonetic": "xie-XIE"
-            },
-            {
-              "speaker": "B",
-              "target": "再见!",
-              "native": "ආයුබෝවන්!",
-              "phonetic": "zai-JIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "请! 对不起!",
-              "native": "කරුණාකර! සමාවෙන්න!",
-              "phonetic": "qing dui-bu-QI"
-            }
+            { "speaker": "A", "target": "请问，银行在哪儿？", "native": "සමාවන්න, බැංකුව කොහෙද?", "phonetic": "චිං වන්, යින්හාං සායි නා'ර්?" },
+            { "speaker": "B", "target": "对不起，我不知道。我也是外国人。", "native": "සමාවන්න, මම දන්නේ නැහැ. මමත් විදේශිකයෙක්.", "phonetic": "දුයි බු චී, වෝ බූ ජ'ඩාඕ. වෝ යේ ෂ' වයිගුවෝ රන්." },
+            { "speaker": "A", "target": "好的，谢谢你。", "native": "හොඳයි, ඔබට ස්තූතියි.", "phonetic": "හාඕ ද, ෂියෙ ෂියෙ නී." },
+            { "speaker": "B", "target": "没关系。", "native": "කමක් නැහැ.", "phonetic": "මෙයි ග්වාන් ෂි." }
+          ]
+        },
+        {
+          "id": "d1_7_3",
+          "context": "සාදයකදී කෙනෙකු හඳුනාගැනීම.",
+          "lines": [
+            { "speaker": "A", "target": "你好，我叫阿明。你叫什么名字？", "native": "ආයුබෝවන්, මගේ නම අමිං. ඔබේ නම කුමක්ද?", "phonetic": "නී හාඕ, වෝ ජියාඕ ආමිං. නී ජියාඕ ෂන්ම මිංස?" },
+            { "speaker": "B", "target": "你好，我叫苏珊。我是美国人。", "native": "ආයුබෝවන්, මගේ නම සූසන්. මම ඇමරිකානුවෙක්.", "phonetic": "නී හාඕ, වෝ ජියාඕ සූෂන්. වෝ ෂ' මেইගුවෝ රන්." }
+          ]
+        },
+        {
+          "id": "d1_7_4",
+          "context": "දුරකථන සංවාදයක් අවසන් කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "好的，那就这样。再见。", "native": "හොඳයි, එහෙනම් එහෙම කරමු. ගිහින් එන්නම්.", "phonetic": "හාඕ ද, නා ජියෝ ජ යං. සායි ජියන්." },
+            { "speaker": "B", "target": "再见。", "native": "ගිහින් එන්නම්.", "phonetic": "සායි ජියන්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Chinese",
-            "answer": "你好",
-            "hint": "ආයුබෝවන්"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Chinese",
-            "answer": "谢谢",
-            "hint": "ස්තූතියි"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Chinese",
-            "answer": "再见",
-            "hint": "ආයුබෝවන්"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "你好",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "谢谢",
-            "native": "ස්තූතියි"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "再见",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "请",
-            "native": "කරුණාකර"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "对不起",
-            "native": "සමාවෙන්න"
-          }
+          { "id": "fb1_7_1", "sentence": "我是___人。", "answer": "斯里兰卡", "hint": "ශ්‍රී ලංකාව" }
         ],
         "multipleChoice": [
           {
             "id": "mc1_7_1",
-            "question": "What does '你好' mean?",
-            "options": [
-              "ආයුබෝවන්",
-              "ස්තූතියි",
-              "ආයුබෝවන්",
-              "කරුණාකර"
-            ],
-            "correct": 0,
-            "explanation": "'你好' means ආයුබෝවන් in Sinhala."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'ස්තූතියි' in Chinese?",
-            "options": [
-              "你好",
-              "谢谢",
-              "再见",
-              "请"
-            ],
-            "correct": 1,
-            "explanation": "'谢谢' means ස්තූතියි."
+            "question": "යමෙකුට සමුදීමට කුමක් කිව යුතුද?",
+            "options": ["你好", "谢谢", "再见", "对不起"],
+            "correct": 2,
+            "explanation": "'再见' (සායි ජියන්) යනු 'Goodbye' යන්නයි."
           }
+        ],
+        "matching": [
+          { "id": "m1_7_1", "target": "我叫", "native": "මගේ නම" },
+          { "id": "m1_7_2", "target": "请问", "native": "සමාවන්න (විමසීමට)" },
+          { "id": "m1_7_3", "target": "可以", "native": "පුළුවන්" },
+          { "id": "m1_7_4", "target": "不知道", "native": "දන්නේ නැහැ" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss1_7_1", "scrambled": ["我", "是", "人", "斯里兰卡"], "correct": "我是斯里兰卡人", "nativeHint": "මම ශ්‍රී ලාංකිකයෙක්." }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "මෙම සතියේ ඔබ ඉගෙනගත් සරල වාක්‍ය ඛණ්ඩ, දෛනික ජීවිතයේදී චීන ජාතිකයන් සමඟ සරල සංවාදයක් ආරම්භ කිරීමට සහ පවත්වාගෙන යාමට ඔබට උපකාරී වනු ඇත. ආචාරශීලී වීම සැමවිටම අගය කරනු ලැබේ.",
+      "pronunciation_tip": "චීන භාෂාවේ ස්වර නිවැරදිව උච්චාරණය කිරීමට පුරුදු වන්න. එකම අක්ෂරය විවිධ ස්වර වලින් උච්චාරණය කිරීමේදී අර්ථය සම්පූර්ණයෙන්ම වෙනස් විය හැකිය. උදා: mā (අම්මා), má (හිරිවැටීම), mǎ (අශ්වයා), mà (බැණීම).",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W1-Review-CN" }
     }
   ]
 }
+
+    
