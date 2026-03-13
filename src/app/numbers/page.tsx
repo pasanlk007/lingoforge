@@ -129,8 +129,12 @@ export default function NumbersPathPage() {
     });
 
     const timesOfDay = allWords.filter(item => item.week === 3 && (item.day === 5 || item.day === 6));
-    const daysOfWeek = allWords.filter(item => item.week === 3 && item.day === 7);
-    const months = allWords.filter(item => item.week === 4);
+    
+    const daysOfWeek = allWords.filter(item => 
+        (item.week === 3 && item.day === 7) || (item.week === 4 && (item.day === 1 || item.day === 2))
+    );
+    
+    const months = allWords.filter(item => item.week === 4 && item.day >= 3);
 
     return { numbers, timesOfDay, daysOfWeek, months };
   }, [allLessonData]);
