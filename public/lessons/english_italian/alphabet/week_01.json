@@ -5,12 +5,215 @@
   "targetLanguage": "Italian",
   "nativeLanguage": "English",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder"}},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder"}},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder"}},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder"}},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder"}},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder"}},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "English", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder"}}
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "The Letter A",
+      "title_native": "La Lettera A",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_1_1",
+          "target": "Amico",
+          "phonetic": "ah-MEE-koh",
+          "native_meaning": "Friend",
+          "english": "Friend",
+          "example_sentence_target": "Il mio amico si chiama Marco.",
+          "example_sentence_native": "My friend's name is Marco.",
+          "example_sentence_phonetic": "eel MEE-oh ah-MEE-koh see KYAH-mah MAR-koh"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_1_1", "letter": "A" }
+        ]
+      },
+      "pronunciation_tip": "The Italian 'A' is always pronounced like the 'a' in 'father'. It's a pure, open sound.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-A" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "B",
+      "title": "The Letter B",
+      "title_native": "La Lettera B",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "Bambino",
+          "phonetic": "bahm-BEE-noh",
+          "native_meaning": "Child",
+          "english": "Child",
+          "example_sentence_target": "Il bambino gioca nel parco.",
+          "example_sentence_native": "The child plays in the park.",
+          "example_sentence_phonetic": "eel bahm-BEE-noh JOH-kah nel PAR-koh"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_2_1", "letter": "B" }
+        ]
+      },
+      "pronunciation_tip": "The Italian 'B' sound is very similar to the English 'b' in 'book'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-B" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "C",
+      "title": "The Letter C",
+      "title_native": "La Lettera C",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "Casa",
+          "phonetic": "KAH-sah",
+          "native_meaning": "House",
+          "english": "House",
+          "example_sentence_target": "La mia casa è grande.",
+          "example_sentence_native": "My house is big.",
+          "example_sentence_phonetic": "lah MEE-ah KAH-sah eh GRAHN-deh"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_3_1", "letter": "C" }
+        ]
+      },
+      "pronunciation_tip": "'C' is hard (like 'k') before 'a', 'o', 'u' (casa). It's soft (like 'ch' in 'cheese') before 'e', 'i' (ciao).",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-C" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "D",
+      "title": "The Letter D",
+      "title_native": "La Lettera D",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "Domani",
+          "phonetic": "doh-MAH-nee",
+          "native_meaning": "Tomorrow",
+          "english": "Tomorrow",
+          "example_sentence_target": "Ci vediamo domani.",
+          "example_sentence_native": "See you tomorrow.",
+          "example_sentence_phonetic": "chee veh-DYAH-moh doh-MAH-nee"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_4_1", "letter": "D" }
+        ]
+      },
+      "pronunciation_tip": "The Italian 'D' is pronounced with the tip of the tongue touching the back of the upper teeth, making it a bit softer than the English 'd'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-D" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "E",
+      "title": "The Letter E",
+      "title_native": "La Lettera E",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "Elefante",
+          "phonetic": "eh-leh-FAHN-teh",
+          "native_meaning": "Elephant",
+          "english": "Elephant",
+          "example_sentence_target": "L'elefante è un animale grande.",
+          "example_sentence_native": "The elephant is a big animal.",
+          "example_sentence_phonetic": "leh-leh-FAHN-teh eh oon ah-nee-MAH-leh GRAHN-deh"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_5_1", "letter": "E" }
+        ]
+      },
+      "pronunciation_tip": "The Italian 'E' sounds like the 'e' in 'pet'. It is always a pure vowel sound.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-E" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "F",
+      "title": "The Letter F",
+      "title_native": "La Lettera F",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "Finestra",
+          "phonetic": "fee-NEH-strah",
+          "native_meaning": "Window",
+          "english": "Window",
+          "example_sentence_target": "Apri la finestra, per favore.",
+          "example_sentence_native": "Open the window, please.",
+          "example_sentence_phonetic": "AH-pree lah fee-NEH-strah, pehr fah-VOH-reh"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_6_1", "letter": "F" }
+        ]
+      },
+      "pronunciation_tip": "The Italian 'F' is pronounced exactly like the English 'f' in 'fish'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-F" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "G",
+      "title": "The Letter G",
+      "title_native": "La Lettera G",
+      "theme": "Italian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_7_1",
+          "target": "Gatto",
+          "phonetic": "GAHT-toh",
+          "native_meaning": "Cat",
+          "english": "Cat",
+          "example_sentence_target": "Il gatto dorme sul divano.",
+          "example_sentence_native": "The cat sleeps on the sofa.",
+          "example_sentence_phonetic": "eel GAHT-toh DOR-meh sool dee-VAH-noh"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          { "id": "wp1_7_1", "letter": "G" }
+        ]
+      },
+      "pronunciation_tip": "'G' is hard (like 'g' in 'go') before 'a', 'o', 'u' (gatto). It's soft (like 'j' in 'jet') before 'e', 'i' (gelato).",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-Alpha-G" }
+    }
   ]
 }
