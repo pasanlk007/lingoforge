@@ -16,22 +16,23 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
   const isNumber = item.english && !isNaN(parseInt(item.english, 10));
 
   return (
-    <Card className="p-4">
-      <div className="flex items-center justify-between">
-        <div className="flex flex-1 items-center gap-4">
-          {isNumber && item.native_meaning && (
-            <span className="text-4xl font-bold w-12 text-center">{item.native_meaning}</span>
-          )}
-          <div className="flex-1">
-            <p className="text-2xl font-bold">{item.target}</p>
-            <p className="text-muted-foreground">{item.phonetic}</p>
-          </div>
-        </div>
-        <div className="flex flex-col items-end gap-2 text-right">
+    <Card className="p-6">
+      <div className="grid grid-cols-2 gap-4 items-center">
+        {/* Left Column: Normal Numeral and Sinhala Meaning */}
+        <div className="space-y-1">
           {isNumber && (
-            <span className="text-5xl font-extrabold text-primary">{item.english}</span>
+            <p className="text-6xl font-extrabold text-primary">{item.english}</p>
           )}
-          <AudioPlayback text={item.target} languageName={language} />
+          <p className="text-2xl font-bold text-foreground">{item.native_meaning}</p>
+        </div>
+        
+        {/* Right Column: Target Language Info */}
+        <div className="space-y-2 text-right">
+          <p className="text-4xl font-bold">{item.target}</p>
+          <p className="text-muted-foreground">{item.phonetic}</p>
+          <div className="flex justify-end">
+            <AudioPlayback text={item.target} languageName={language} />
+          </div>
         </div>
       </div>
     </Card>
@@ -119,8 +120,13 @@ export default function NumbersPathPage() {
     );
 
     const numbers = allWords.filter(item => 
-        (item.week >= 1 && item.week <= 3 && item.day <= 4)
-    ).sort((a,b) => parseInt(a.english, 10) - parseInt(b.english, 10));
+        (item.week === 1 || item.week === 2 || (item.week === 3 && item.day <= 4))
+    ).sort((a,b) => {
+        const numA = parseInt(a.english, 10);
+        const numB = parseInt(b.english, 10);
+        if (isNaN(numA) || isNaN(numB)) return 0;
+        return numA - numB;
+    });
 
     const timesOfDay = allWords.filter(item => item.week === 3 && (item.day === 5 || item.day === 6));
     const daysOfWeek = allWords.filter(item => item.week === 3 && item.day === 7);
