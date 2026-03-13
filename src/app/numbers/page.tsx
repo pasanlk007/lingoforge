@@ -13,6 +13,8 @@ import { AudioPlayback } from '@/components/AudioPlayback';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
+  // Check if item.english is a number string
+  const isNumber = !isNaN(parseInt(item.english, 10));
 
   return (
     <Card className="p-6">
@@ -28,7 +30,8 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
         {/* Right Column: Details */}
         <div className="space-y-1 text-right">
             <p className="text-3xl font-bold">{item.english}</p>
-            <p className="text-xl font-semibold text-foreground">{item.native_meaning}</p>
+            {/* Only show native meaning if it's NOT a number card */}
+            {!isNumber && <p className="text-xl font-semibold text-foreground">{item.native_meaning}</p>}
             <p className="text-muted-foreground">{item.phonetic}</p>
         </div>
       </div>
