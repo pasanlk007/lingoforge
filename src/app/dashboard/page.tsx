@@ -156,6 +156,10 @@ function DashboardContent({ user }: { user: User }) {
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
   const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => weekProgressData?.daysCompleted?.includes(i + 1) || false);
 
+  const availablePaths = targetLanguage === 'Chinese'
+    ? PATHS.filter(p => p.id !== 'alphabet')
+    : PATHS;
+
 
   return (
     <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -251,7 +255,7 @@ function DashboardContent({ user }: { user: User }) {
                   {t.explorePaths}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {PATHS.map((path) => (
+                  {availablePaths.map((path) => (
                     <PathCard
                       key={path.id}
                       id={path.id}

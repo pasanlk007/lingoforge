@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useUser, useFirestore, useCollection, useDoc, useMemoFirebase } from '@/firebase';
 import { collection, doc } from 'firebase/firestore';
 import type { UserProfile, UserWeekProgress } from '@/lib/types';
@@ -14,6 +15,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations, targetLanguages } from '@/lib/translations';
 
 export default function AlphabetPathPage() {
+  const router = useRouter();
   const { user, isUserLoading: isUserLoading } = useUser();
   const firestore = useFirestore();
 
@@ -40,6 +42,12 @@ export default function AlphabetPathPage() {
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
+
+  useEffect(() => {
+    if (isMounted && targetLanguage === 'Chinese') {
+      router.replace('/dashboard');
+    }
+  }, [targetLanguage, router, isMounted]);
   
   const targetLanguageInfo = targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase());
   const alphabetSize = targetLanguageInfo?.alphabetSize || 26; // Default for safety
@@ -69,6 +77,17 @@ export default function AlphabetPathPage() {
             </div>
         </main>
       </div>
+    );
+  }
+
+  if (targetLanguage === 'Chinese') {
+    return (
+        <div className="flex min-h-dvh flex-col bg-background">
+            <Navigation />
+            <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 text-center">
+                <p>The Alphabet Path is not available for Chinese. Redirecting to dashboard...</p>
+            </main>
+        </div>
     );
   }
 
