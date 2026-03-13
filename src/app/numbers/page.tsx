@@ -27,7 +27,8 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
         
         {/* Right Column: Details */}
         <div className="space-y-1 text-right">
-            <p className="text-2xl font-bold text-foreground">{item.native_meaning}</p>
+            <p className="text-3xl font-bold">{item.english}</p>
+            <p className="text-xl font-semibold text-foreground">{item.native_meaning}</p>
             <p className="text-muted-foreground">{item.phonetic}</p>
         </div>
       </div>
@@ -115,7 +116,7 @@ export default function NumbersPathPage() {
         (day.words || []).map(word => ({...word, week: day.week, day: day.day }))
     );
 
-    const numbers = allWords.filter(item => 
+    const numbersList = allWords.filter(item => 
         (item.week === 1 || item.week === 2 || (item.week === 3 && item.day <= 4))
     ).sort((a,b) => {
         const numA = parseInt(a.english, 10);
@@ -124,22 +125,22 @@ export default function NumbersPathPage() {
         return numA - numB;
     });
 
-    const timesOfDay = allWords.filter(item => item.week === 3 && (item.day === 5 || item.day === 6));
+    const timesOfDayList = allWords.filter(item => item.week === 3 && (item.day === 5 || item.day === 6));
     
     const weekDayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     const calendarWords = allWords.filter(item => (item.week === 3 && item.day === 7) || item.week === 4);
 
-    const daysOfWeek = weekDayNames.map(dayName => {
+    const daysOfWeekList = weekDayNames.map(dayName => {
         return calendarWords.find(word => word.english === dayName);
     }).filter((item): item is LessonItem => !!item);
 
-    const months = monthNames.map(monthName => {
+    const monthsList = monthNames.map(monthName => {
         return calendarWords.find(word => word.english === monthName);
     }).filter((item): item is LessonItem => !!item);
 
-    return { numbers, timesOfDay, daysOfWeek, months };
+    return { numbers: numbersList, timesOfDay: timesOfDayList, daysOfWeek: daysOfWeekList, months: monthsList };
   }, [allLessonData]);
 
 
