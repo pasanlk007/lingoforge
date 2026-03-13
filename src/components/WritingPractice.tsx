@@ -71,7 +71,7 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     const { offsetX, offsetY } = getCoords(e);
     const context = canvasRef.current?.getContext('2d');
     if (context) {
-      context.strokeStyle = 'hsl(var(--foreground))';
+      context.strokeStyle = '#FFFFFF';
       context.lineWidth = 10;
       context.lineCap = 'round';
       context.lineJoin = 'round';
