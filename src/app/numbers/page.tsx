@@ -17,22 +17,22 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
 
   return (
     <Card className="p-6">
-      <div className="grid grid-cols-2 gap-4 items-center">
-        {/* Left Column: Normal Numeral and Sinhala Meaning */}
-        <div className="space-y-1">
+      <div className="grid grid-cols-3 gap-4 items-center">
+        {/* Left Column: Target Language Info - wider */}
+        <div className="col-span-2 space-y-2">
+          <p className="text-5xl font-bold">{item.target}</p>
+          <p className="text-muted-foreground">{item.phonetic}</p>
+          <div className="pt-2">
+            <AudioPlayback text={item.target} languageName={language} />
+          </div>
+        </div>
+        
+        {/* Right Column: Details */}
+        <div className="space-y-1 text-right">
           {isNumber && (
             <p className="text-6xl font-extrabold text-primary">{item.english}</p>
           )}
-          <p className="text-2xl font-bold text-foreground">{item.native_meaning}</p>
-        </div>
-        
-        {/* Right Column: Target Language Info */}
-        <div className="space-y-2 text-right">
-          <p className="text-4xl font-bold">{item.target}</p>
-          <p className="text-muted-foreground">{item.phonetic}</p>
-          <div className="flex justify-end">
-            <AudioPlayback text={item.target} languageName={language} />
-          </div>
+          <p className="text-xl font-bold text-foreground">{item.native_meaning}</p>
         </div>
       </div>
     </Card>
