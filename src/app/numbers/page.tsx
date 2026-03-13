@@ -13,8 +13,9 @@ import { AudioPlayback } from '@/components/AudioPlayback';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
-  // Check if item.english is a number string
-  const isNumber = !isNaN(parseInt(item.english, 10));
+  // Check if item.native_meaning is a number string. This handles the case where
+  // lesson files might have the word in 'english' and the numeral in 'native_meaning'.
+  const isNumberCard = item.native_meaning && !isNaN(parseInt(item.native_meaning, 10));
 
   return (
     <Card className="p-6">
@@ -29,9 +30,17 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
         
         {/* Right Column: Details */}
         <div className="space-y-1 text-right">
-            <p className="text-3xl font-bold">{item.english}</p>
-            {/* Only show native meaning if it's NOT a number card */}
-            {!isNumber && <p className="text-xl font-semibold text-foreground">{item.native_meaning}</p>}
+            {isNumberCard ? (
+                // This is a NUMBER card. Display the numeral, which we assume is in native_meaning.
+                // Do not display the word (which we assume is in item.english).
+                <p className="text-3xl font-bold">{item.native_meaning}</p>
+            ) : (
+                // This is a TIME/DAY/MONTH card. Display the English word and its native translation.
+                <>
+                    <p className="text-3xl font-bold">{item.english}</p>
+                    <p className="text-xl font-semibold text-foreground">{item.native_meaning}</p>
+                </>
+            )}
             <p className="text-muted-foreground">{item.phonetic}</p>
         </div>
       </div>
