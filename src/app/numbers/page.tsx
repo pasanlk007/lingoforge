@@ -13,26 +13,23 @@ import { AudioPlayback } from '@/components/AudioPlayback';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
-  const isNumber = item.english && !isNaN(parseInt(item.english, 10));
 
   return (
     <Card className="p-6">
       <div className="grid grid-cols-3 gap-4 items-center">
-        {/* Left Column: Target Language Info - wider */}
+        {/* Left Column: Target Language Info */}
         <div className="col-span-2 space-y-2">
           <p className="text-5xl font-bold">{item.target}</p>
-          <p className="text-muted-foreground">{item.phonetic}</p>
-          <div className="pt-2">
+           <div className="pt-2">
             <AudioPlayback text={item.target} languageName={language} />
           </div>
         </div>
         
         {/* Right Column: Details */}
         <div className="space-y-1 text-right">
-          {isNumber && (
             <p className="text-6xl font-extrabold text-primary">{item.english}</p>
-          )}
-          <p className="text-xl font-bold text-foreground">{item.native_meaning}</p>
+            <p className="text-xl font-bold text-foreground">{item.native_meaning}</p>
+            <p className="text-muted-foreground">{item.phonetic}</p>
         </div>
       </div>
     </Card>
@@ -130,11 +127,13 @@ export default function NumbersPathPage() {
 
     const timesOfDay = allWords.filter(item => item.week === 3 && (item.day === 5 || item.day === 6));
     
-    const daysOfWeek = allWords.filter(item => 
-        (item.week === 3 && item.day === 7) || (item.week === 4 && (item.day === 1 || item.day === 2))
-    );
-    
-    const months = allWords.filter(item => item.week === 4 && item.day >= 3);
+    const weekDayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    const calendarWords = allWords.filter(item => (item.week === 3 && item.day === 7) || item.week === 4);
+
+    const daysOfWeek = calendarWords.filter(word => weekDayNames.includes(word.english));
+    const months = calendarWords.filter(word => monthNames.includes(word.english));
 
     return { numbers, timesOfDay, daysOfWeek, months };
   }, [allLessonData]);
