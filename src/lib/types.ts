@@ -1,25 +1,37 @@
+'use client';
+
 // === Main Lesson Structure ===
 
 // This interface represents the exact structure of a daily lesson JSON file.
 export interface LessonDay {
   week: number;
   day: number;
+  letter?: string; // The character for the alphabet path
   title: string;
   title_native: string;
   theme: string;
   path: "survival" | "alphabet" | "numbers";
   targetLanguage: string;
   nativeLanguage: string;
-  words: LessonItem[];
-  dialogues: Dialogue[];
+  words?: LessonItem[];
+  sentences?: SentenceItem[];
+  dialogues?: Dialogue[];
   exercises: Exercises;
-  cultural_note: string;
-  pronunciation_tip: string;
+  cultural_note?: string;
+  pronunciation_tip?: string;
   progress: {
     xp: number;
     streak_bonus: number;
     badge: string;
   };
+}
+
+// Represents a standalone sentence for practice.
+export interface SentenceItem {
+    id: string;
+    target: string;
+    native: string;
+    phonetic: string;
 }
 
 // A wrapper structure for consistency, holding the daily lesson data for the client page.
@@ -93,11 +105,18 @@ export interface SentenceScrambleExercise {
   nativeHint: string;
 }
 
+export interface WritingPracticeExercise {
+  id: string;
+  letter: string;
+  hint?: string;
+}
+
 export interface Exercises {
   fillBlanks?: FillBlankExercise[];
   multipleChoice?: MultipleChoiceExercise[];
   matching?: MatchingPair[];
   sentenceScramble?: SentenceScrambleExercise[];
+  writingPractice?: WritingPracticeExercise[];
 }
 
 

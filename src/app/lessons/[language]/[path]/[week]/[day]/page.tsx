@@ -13,6 +13,7 @@ import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
 import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
+import { AlphabetLessonPage } from '@/components/AlphabetLessonPage';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -162,6 +163,36 @@ export default function LessonPage() {
 
   if (!lesson) {
     return <LoadingSkeleton />;
+  }
+  
+  const dayData = lesson.days[0];
+
+  if (!dayData) {
+      return (
+           <div className="flex min-h-dvh flex-col">
+              <Navigation />
+              <main className="flex-1">
+                <div className="container mx-auto py-10 max-w-2xl">
+                   <Alert variant="destructive">
+                    <Terminal className="h-4 w-4" />
+                    <AlertTitle>{t.errorTitle}</AlertTitle>
+                    <AlertDescription>{`Could not find lesson data for day ${dayNumber}.`}</AlertDescription>
+                  </Alert>
+                </div>
+              </main>
+           </div>
+      )
+  }
+
+  if (path === 'alphabet') {
+      return (
+         <div className="flex min-h-dvh flex-col bg-background">
+          <Navigation />
+          <main className="flex-1">
+            <AlphabetLessonPage dayData={dayData} targetLanguage={language as string} />
+          </main>
+        </div>
+      )
   }
 
   return (

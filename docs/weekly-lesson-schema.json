@@ -23,8 +23,8 @@
     },
     "days": {
       "type": "array",
-      "description": "An array containing exactly 7 daily lesson objects.",
-      "minItems": 7,
+      "description": "An array containing up to 7 daily lesson objects.",
+      "minItems": 1,
       "maxItems": 7,
       "items": {
         "description": "The full object for a single day's lesson. This should conform to the daily lesson schema.",
@@ -32,37 +32,22 @@
         "properties": {
           "week": { "type": "number" },
           "day": { "type": "number", "minimum": 1, "maximum": 7 },
+          "letter": { "type": "string" },
           "title": { "type": "string" },
           "title_native": { "type": "string" },
           "theme": { "type": "string" },
           "path": { "type": "string", "enum": ["survival", "alphabet", "numbers"] },
           "targetLanguage": { "type": "string" },
           "nativeLanguage": { "type": "string" },
-          "words": {
-            "type": "array",
-            "minItems": 8,
-            "maxItems": 8
-          },
-          "sentences": {
-            "type": "array",
-            "minItems": 8,
-            "maxItems": 8
-          },
-          "dialogues": {
-            "type": "array",
-            "minItems": 4,
-            "maxItems": 4
-          },
-          "exercises": {
-            "type": "object"
-          },
+          "words": { "type": "array" },
+          "sentences": { "type": "array" },
+          "dialogues": { "type": "array" },
+          "exercises": { "type": "object" },
           "cultural_note": { "type": "string" },
           "pronunciation_tip": { "type": "string" },
-          "progress": {
-            "type": "object"
-          }
+          "progress": { "type": "object" }
         },
-        "required": ["week", "day", "title", "title_native", "theme", "path", "targetLanguage", "nativeLanguage", "words", "sentences", "dialogues", "exercises", "cultural_note", "pronunciation_tip", "progress"]
+        "required": ["week", "day", "title", "title_native", "theme", "path", "targetLanguage", "nativeLanguage", "exercises", "progress"]
       }
     }
   },

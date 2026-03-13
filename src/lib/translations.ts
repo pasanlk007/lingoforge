@@ -2108,27 +2108,27 @@ export const translations = {
 };
 
 export const targetLanguages = [
-  { lang: "German", flag: "🇩🇪", countries: ["de-DE", "Austria", "Switzerland"] },
-  { lang: "French", flag: "🇫🇷", countries: ["fr-FR", "Belgium", "Switzerland", "Canada"] },
-  { lang: "Italian", flag: "🇮🇹", countries: ["it-IT", "Switzerland"] },
-  { lang: "Spanish", flag: "🇪🇸", countries: ["es-ES", "Latin America"] },
-  { lang: "Portuguese", flag: "🇵🇹", countries: ["pt-PT", "Brazil"] },
-  { lang: "Dutch", flag: "🇳🇱", countries: ["nl-NL", "Belgium"] },
-  { lang: "Greek", flag: "🇬🇷", countries: ["el-GR", "Cyprus"] },
-  { lang: "Polish", flag: "🇵🇱", countries: ["pl-PL"] },
-  { lang: "Romanian", flag: "🇷🇴", countries: ["ro-RO"] },
-  { lang: "Serbian", flag: "🇷🇸", countries: ["sr-RS"] },
-  { lang: "Russian", flag: "🇷🇺", countries: ["ru-RU"] },
-  { lang: "Finnish", flag: "🇫🇮", countries: ["fi-FI"] },
-  { lang: "Korean", flag: "🇰🇷", countries: ["ko-KR"] },
-  { lang: "Japanese", flag: "🇯🇵", countries: ["ja-JP"] },
-  { lang: "Arabic", flag: "🇸🇦", countries: ["ar-SA", "UAE", "Qatar", "Kuwait"] },
-  { lang: "Hebrew", flag: "🇮🇱", countries: ["he-IL"] },
-  { lang: "English", flag: "🇬🇧", countries: ["en-US", "Australia", "Canada", "USA", "en-GB"] },
-  { lang: "Turkish", flag: "🇹🇷", countries: ["tr-TR"] },
-  { lang: "Hindi", flag: "🇮🇳", countries: ["hi-IN"] },
-  { lang: "Tamil", flag: "🇮🇳", countries: ["ta-IN", "Sri Lanka", "Singapore"] },
-  { lang: "Chinese", flag: "🇨🇳", countries: ["zh-CN", "Singapore", "Taiwan"] },
+  { lang: "German", flag: "🇩🇪", countries: ["de-DE", "Austria", "Switzerland"], alphabetSize: 30 },
+  { lang: "French", flag: "🇫🇷", countries: ["fr-FR", "Belgium", "Switzerland", "Canada"], alphabetSize: 26 },
+  { lang: "Italian", flag: "🇮🇹", countries: ["it-IT", "Switzerland"], alphabetSize: 21 },
+  { lang: "Spanish", flag: "🇪🇸", countries: ["es-ES", "Latin America"], alphabetSize: 27 },
+  { lang: "Portuguese", flag: "🇵🇹", countries: ["pt-PT", "Brazil"], alphabetSize: 26 },
+  { lang: "Dutch", flag: "🇳🇱", countries: ["nl-NL", "Belgium"], alphabetSize: 26 },
+  { lang: "Greek", flag: "🇬🇷", countries: ["el-GR", "Cyprus"], alphabetSize: 24 },
+  { lang: "Polish", flag: "🇵🇱", countries: ["pl-PL"], alphabetSize: 32 },
+  { lang: "Romanian", flag: "🇷🇴", countries: ["ro-RO"], alphabetSize: 31 },
+  { lang: "Serbian", flag: "🇷🇸", countries: ["sr-RS"], alphabetSize: 30 },
+  { lang: "Russian", flag: "🇷🇺", countries: ["ru-RU"], alphabetSize: 33 },
+  { lang: "Finnish", flag: "🇫🇮", countries: ["fi-FI"], alphabetSize: 29 },
+  { lang: "Korean", flag: "🇰🇷", countries: ["ko-KR"], alphabetSize: 24 },
+  { lang: "Japanese", flag: "🇯🇵", countries: ["ja-JP"], alphabetSize: 46 }, // Hiragana
+  { lang: "Arabic", flag: "🇸🇦", countries: ["ar-SA", "UAE", "Qatar", "Kuwait"], alphabetSize: 28 },
+  { lang: "Hebrew", flag: "🇮🇱", countries: ["he-IL"], alphabetSize: 22 },
+  { lang: "English", flag: "🇬🇧", countries: ["en-US", "Australia", "Canada", "USA", "en-GB"], alphabetSize: 26 },
+  { lang: "Turkish", flag: "🇹🇷", countries: ["tr-TR"], alphabetSize: 29 },
+  { lang: "Hindi", flag: "🇮🇳", countries: ["hi-IN"], alphabetSize: 46 },
+  { lang: "Tamil", flag: "🇮🇳", countries: ["ta-IN", "Sri Lanka", "Singapore"], alphabetSize: 247 },
+  { lang: "Chinese", flag: "🇨🇳", countries: ["zh-CN", "Singapore", "Taiwan"], alphabetSize: 0 }, // Not alphabet-based
 ];
 
 export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali", "Nepali"];

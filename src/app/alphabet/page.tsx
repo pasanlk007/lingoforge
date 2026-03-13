@@ -11,7 +11,7 @@ import { Navigation } from '@/components/Navigation';
 import { CheckCircle, Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
-import { nativeLanguages, translations } from '@/lib/translations';
+import { nativeLanguages, translations, targetLanguages } from '@/lib/translations';
 
 export default function AlphabetPathPage() {
   const { user, isUserLoading: isUserLoading } = useUser();
@@ -40,8 +40,10 @@ export default function AlphabetPathPage() {
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
-
-  const totalWeeks = 12;
+  
+  const targetLanguageInfo = targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase());
+  const alphabetSize = targetLanguageInfo?.alphabetSize || 26; // Default for safety
+  const totalWeeks = Math.ceil(alphabetSize / 7);
 
   const completedDays = useMemo(() => {
     if (!progressData) return {};
@@ -77,13 +79,14 @@ export default function AlphabetPathPage() {
         <div className="container mx-auto max-w-3xl py-12 px-4">
           <header className="mb-8 text-center">
             <h1 className="text-4xl font-bold tracking-tight">Alphabet Path</h1>
-            <p className="mt-2 text-muted-foreground">A 12-week journey to master the writing system from scratch.</p>
+            <p className="mt-2 text-muted-foreground">A journey to master the writing system of {targetLanguage}.</p>
           </header>
 
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
             {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
               const completedDaysInWeek = completedDays[week] || [];
-              const isWeekCompleted = completedDaysInWeek.length === 7;
+              const daysInThisWeek = (week === totalWeeks && alphabetSize % 7 !== 0) ? alphabetSize % 7 : 7;
+              const isWeekCompleted = completedDaysInWeek.length === daysInThisWeek;
               
               return (
                 <AccordionItem key={week} value={`item-${week}`}>
@@ -96,7 +99,7 @@ export default function AlphabetPathPage() {
                       
                       {!isWeekCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
-                            {completedDaysInWeek.length} / 7 {t.days}
+                            {completedDaysInWeek.length} / {daysInThisWeek} {t.days}
                         </span>
                       )}
                       {isWeekCompleted && (
@@ -106,7 +109,7 @@ export default function AlphabetPathPage() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-                      {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
+                      {Array.from({ length: daysInThisWeek }, (_, j) => j + 1).map((day) => {
                         return (
                           <Button asChild variant="secondary" key={day}>
                             <Link href={`/lessons/${targetLanguage.toLowerCase()}/alphabet/${week}/${day}`}>
