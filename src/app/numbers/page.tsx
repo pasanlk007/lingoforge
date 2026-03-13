@@ -16,9 +16,9 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
 
   return (
     <Card className="p-6">
-      <div className="grid grid-cols-3 gap-4 items-center">
+      <div className="grid grid-cols-2 gap-4 items-center">
         {/* Left Column: Target Language Info */}
-        <div className="col-span-2 space-y-2">
+        <div className="space-y-2">
           <p className="text-5xl font-bold">{item.target}</p>
            <div className="pt-2">
             <AudioPlayback text={item.target} languageName={language} />
@@ -27,8 +27,7 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
         
         {/* Right Column: Details */}
         <div className="space-y-1 text-right">
-            <p className="text-6xl font-extrabold text-primary">{item.english}</p>
-            <p className="text-xl font-bold text-foreground">{item.native_meaning}</p>
+            <p className="text-2xl font-bold text-foreground">{item.native_meaning}</p>
             <p className="text-muted-foreground">{item.phonetic}</p>
         </div>
       </div>
@@ -132,8 +131,13 @@ export default function NumbersPathPage() {
 
     const calendarWords = allWords.filter(item => (item.week === 3 && item.day === 7) || item.week === 4);
 
-    const daysOfWeek = calendarWords.filter(word => weekDayNames.includes(word.english));
-    const months = calendarWords.filter(word => monthNames.includes(word.english));
+    const daysOfWeek = weekDayNames.map(dayName => {
+        return calendarWords.find(word => word.english === dayName);
+    }).filter((item): item is LessonItem => !!item);
+
+    const months = monthNames.map(monthName => {
+        return calendarWords.find(word => word.english === monthName);
+    }).filter((item): item is LessonItem => !!item);
 
     return { numbers, timesOfDay, daysOfWeek, months };
   }, [allLessonData]);
