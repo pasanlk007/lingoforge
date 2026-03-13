@@ -1,21 +1,66 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import Link from 'next/link';
-import { useUser, useFirestore, useCollection, useDoc, useMemoFirebase } from '@/firebase';
-import { collection, doc } from 'firebase/firestore';
-import type { UserProfile, UserWeekProgress } from '@/lib/types';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { UserProfile, LessonDay, LessonItem } from '@/lib/types';
 import { Navigation } from '@/components/Navigation';
-import { CheckCircle, Star } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
-import { nativeLanguages, translations } from '@/lib/translations';
+import { nativeLanguages, translations, targetLanguages } from '@/lib/translations';
+import { getOrGenerateLesson } from '@/lib/lessonCache';
+import { Card } from '@/components/ui/card';
+import { AudioPlayback } from '@/components/AudioPlayback';
+import { TooltipProvider } from '@/components/ui/tooltip';
+
+const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
+  const isNumber = item.english && !isNaN(parseInt(item.english, 10));
+
+  return (
+    <Card className="p-4">
+      <div className="flex items-center justify-between">
+        <div className="flex flex-1 items-center gap-4">
+          {isNumber && item.native_meaning && (
+            <span className="text-4xl font-bold w-12 text-center">{item.native_meaning}</span>
+          )}
+          <div className="flex-1">
+            <p className="text-2xl font-bold">{item.target}</p>
+            <p className="text-muted-foreground">{item.phonetic}</p>
+          </div>
+        </div>
+        <div className="flex flex-col items-end gap-2 text-right">
+          {isNumber && (
+            <span className="text-5xl font-extrabold text-primary">{item.english}</span>
+          )}
+          <AudioPlayback text={item.target} languageName={language} />
+        </div>
+      </div>
+    </Card>
+  );
+};
+
+
+const LoadingSkeleton = () => (
+    <div className="flex min-h-dvh flex-col bg-background">
+      <Navigation />
+      <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 space-y-4">
+          <Skeleton className="h-10 w-1/2" />
+          <Skeleton className="h-6 w-3/4" />
+          <div className="mt-8 space-y-2">
+            <Skeleton className="h-20 w-full" />
+            <Skeleton className="h-20 w-full" />
+            <Skeleton className="h-20 w-full" />
+            <Skeleton className="h-20 w-full" />
+          </div>
+      </main>
+    </div>
+);
 
 export default function NumbersPathPage() {
-  const { user, isUserLoading: isUserLoading } = useUser();
+  const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
+  
+  const [allLessonData, setAllLessonData] = useState<LessonDay[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -23,13 +68,6 @@ export default function NumbersPathPage() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-
-  const progressCollectionRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
-    return collection(firestore, 'userProgress', user.uid, 'numbers');
-  }, [user, firestore]);
-
-  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
   
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
@@ -40,90 +78,122 @@ export default function NumbersPathPage() {
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
+  
+  const totalWeeksForNumbers = 4; // Based on the new structure
 
-  const totalWeeks = 12;
+  useEffect(() => {
+    const fetchAllLessons = async () => {
+      setIsLoading(true);
+      const allDays: LessonDay[] = [];
+      
+      for (let week = 1; week <= totalWeeksForNumbers; week++) {
+        // We pass a dummy day `1` because getOrGenerateLesson returns the whole week file
+        const weeklyLesson = await getOrGenerateLesson(
+          targetLanguage.toLowerCase(),
+          'numbers',
+          week,
+          validNativeLanguage,
+          1
+        );
 
-  const completedDays = useMemo(() => {
-    if (!progressData) return {};
-    const completedDaysMap: { [week: number]: number[] } = {};
-    progressData.forEach(weekProgress => {
-      completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-    });
-    return completedDaysMap;
-  }, [progressData]);
+        if (weeklyLesson && weeklyLesson.days) {
+          allDays.push(...weeklyLesson.days);
+        }
+      }
+      setAllLessonData(allDays);
+      setIsLoading(false);
+    };
 
+    if (isMounted && targetLanguage && validNativeLanguage) {
+      fetchAllLessons();
+    }
+  }, [isMounted, targetLanguage, validNativeLanguage]);
 
-  if (!isMounted || isUserLoading || isProgressLoading) {
-    return (
-      <div className="flex min-h-dvh flex-col bg-background">
-        <Navigation />
-        <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 space-y-4">
-            <Skeleton className="h-10 w-1/2 mx-auto" />
-            <Skeleton className="h-6 w-3/4 mx-auto" />
-            <div className="mt-8 space-y-2">
-                <Skeleton className="h-14 w-full" />
-                <Skeleton className="h-14 w-full opacity-70" />
-                <Skeleton className="h-14 w-full opacity-70" />
-                <Skeleton className="h-14 w-full opacity-70" />
-            </div>
-        </main>
-      </div>
+  const { numbers, timesOfDay, daysOfWeek, months } = useMemo(() => {
+    if (allLessonData.length === 0) {
+      return { numbers: [], timesOfDay: [], daysOfWeek: [], months: [] };
+    }
+
+    const allWords = allLessonData.flatMap(day => 
+        (day.words || []).map(word => ({...word, week: day.week, day: day.day }))
     );
+
+    const numbers = allWords.filter(item => 
+        (item.week >= 1 && item.week <= 3 && item.day <= 4)
+    ).sort((a,b) => parseInt(a.english, 10) - parseInt(b.english, 10));
+
+    const timesOfDay = allWords.filter(item => item.week === 3 && (item.day === 5 || item.day === 6));
+    const daysOfWeek = allWords.filter(item => item.week === 3 && item.day === 7);
+    const months = allWords.filter(item => item.week === 4);
+
+    return { numbers, timesOfDay, daysOfWeek, months };
+  }, [allLessonData]);
+
+
+  if (isLoading || isUserLoading || !isMounted) {
+    return <LoadingSkeleton />;
   }
 
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
-      <Navigation />
-      <main className="flex-1">
-        <div className="container mx-auto max-w-3xl py-12 px-4">
-          <header className="mb-8 text-center">
-            <h1 className="text-4xl font-bold tracking-tight">Numbers Path</h1>
-            <p className="mt-2 text-muted-foreground">A 12-week journey to master counting, time, and money.</p>
-          </header>
+    <TooltipProvider>
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1">
+          <div className="container mx-auto max-w-3xl py-12 px-4">
+            <header className="mb-8">
+              <h1 className="text-4xl font-bold tracking-tight">Numbers Path</h1>
+              <p className="mt-2 text-muted-foreground">Master counting, time, and money in {targetLanguage}.</p>
+            </header>
 
-          <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
-            {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
-              const completedDaysInWeek = completedDays[week] || [];
-              const isWeekCompleted = completedDaysInWeek.length === 7;
-              
-              return (
-                <AccordionItem key={week} value={`item-${week}`}>
-                  <AccordionTrigger className="text-lg hover:no-underline">
-                    <div className="flex w-full items-center justify-between pr-4">
-                      <span className="flex items-center gap-3">
-                        {isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Star className="h-5 w-5 text-blue-400" />}
-                        {t.week} {week}
-                      </span>
-                      
-                      {!isWeekCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
-                            {completedDaysInWeek.length} / 7 {t.days}
-                        </span>
-                      )}
-                      {isWeekCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-green-500">{t.completed}</span>
-                      )}
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-                      {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
-                        return (
-                          <Button asChild variant="secondary" key={day}>
-                            <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/${week}/${day}`}>
-                              {`${t.day} ${day}`}
-                            </Link>
-                          </Button>
-                        )
-                      })}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              );
-            })}
-          </Accordion>
-        </div>
-      </main>
-    </div>
+            {numbers.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Numbers</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {numbers.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
+                </div>
+              </section>
+            )}
+
+            {timesOfDay.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Times of the Day</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {timesOfDay.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
+                </div>
+              </section>
+            )}
+            
+            {daysOfWeek.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Days of the Week</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {daysOfWeek.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
+                </div>
+              </section>
+            )}
+
+            {months.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Months of the Year</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {months.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
+                </div>
+              </section>
+            )}
+
+            {allLessonData.length === 0 && !isLoading && (
+                 <Card className="p-8 text-center">
+                    <h3 className="text-xl font-semibold">Content Not Found</h3>
+                    <p className="text-muted-foreground mt-2">
+                        Could not load the learning content for the Numbers Path in {targetLanguage}.
+                        Please ensure the lesson files exist in the `public/lessons` directory.
+                    </p>
+                </Card>
+            )}
+
+          </div>
+        </main>
+      </div>
+    </TooltipProvider>
   );
 }
