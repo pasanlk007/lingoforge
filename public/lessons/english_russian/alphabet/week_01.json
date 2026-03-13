@@ -1,15 +1,268 @@
+
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "Russian",
   "nativeLanguage": "English",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder" }},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder" }},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder" }},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder" }},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder" }},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder" }},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Russian", "nativeLanguage": "English", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder" }}
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "А",
+      "title": "Week 1, Day 1: The Letter А",
+      "title_native": "Неделя 1, День 1: Буква А",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_1_1",
+          "target": "Азбука",
+          "phonetic": "AZ-boo-ka",
+          "native_meaning": "Alphabet",
+          "english": "Alphabet",
+          "example_sentence_target": "Мы учим азбуку.",
+          "example_sentence_native": "We are learning the alphabet.",
+          "example_sentence_phonetic": "My OO-cheem AZ-boo-koo."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_1_1",
+            "letter": "А"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'А' sounds like the 'a' in 'father' or 'car'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D1-RU-Alpha-A"
+      }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "Б",
+      "title": "Week 1, Day 2: The Letter Б",
+      "title_native": "Неделя 1, День 2: Буква Б",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "Брат",
+          "phonetic": "Braht",
+          "native_meaning": "Brother",
+          "english": "Brother",
+          "example_sentence_target": "Это мой брат.",
+          "example_sentence_native": "This is my brother.",
+          "example_sentence_phonetic": "E-to moy braht."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_2_1",
+            "letter": "Б"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'Б' sounds like the 'b' in 'book'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D2-RU-Alpha-B"
+      }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "В",
+      "title": "Week 1, Day 3: The Letter В",
+      "title_native": "Неделя 1, День 3: Буква В",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "Вода",
+          "phonetic": "va-DA",
+          "native_meaning": "Water",
+          "english": "Water",
+          "example_sentence_target": "Дайте мне воды, пожалуйста.",
+          "example_sentence_native": "Give me water, please.",
+          "example_sentence_phonetic": "DAY-tye mnye va-DY, pa-ZHAL-sta."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_3_1",
+            "letter": "В"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'В' sounds like the 'v' in 'vase'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D3-RU-Alpha-V"
+      }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "Г",
+      "title": "Week 1, Day 4: The Letter Г",
+      "title_native": "Неделя 1, День 4: Буква Г",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "Город",
+          "phonetic": "GO-rat",
+          "native_meaning": "City",
+          "english": "City",
+          "example_sentence_target": "Это большой город.",
+          "example_sentence_native": "This is a big city.",
+          "example_sentence_phonetic": "E-to bal-SHOY GO-rat."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_4_1",
+            "letter": "Г"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'Г' sounds like the 'g' in 'go'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D4-RU-Alpha-G"
+      }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "Д",
+      "title": "Week 1, Day 5: The Letter Д",
+      "title_native": "Неделя 1, День 5: Буква Д",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "Дом",
+          "phonetic": "Dom",
+          "native_meaning": "House",
+          "english": "House",
+          "example_sentence_target": "Это мой дом.",
+          "example_sentence_native": "This is my house.",
+          "example_sentence_phonetic": "E-to moy dom."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_5_1",
+            "letter": "Д"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'Д' sounds like the 'd' in 'dog'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D5-RU-Alpha-D"
+      }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "Е",
+      "title": "Week 1, Day 6: The Letter Е",
+      "title_native": "Неделя 1, День 6: Буква Е",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "Если",
+          "phonetic": "YES-lee",
+          "native_meaning": "If",
+          "english": "If",
+          "example_sentence_target": "Если будет дождь, мы останемся дома.",
+          "example_sentence_native": "If it rains, we will stay home.",
+          "example_sentence_phonetic": "YES-lee BOO-det dosht, my as-TA-nyem-sya DO-ma."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_6_1",
+            "letter": "Е"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'Е' usually sounds like 'ye' in 'yes'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D6-RU-Alpha-E"
+      }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "Ё",
+      "title": "Week 1, Day 7: The Letter Ё",
+      "title_native": "Неделя 1, День 7: Буква Ё",
+      "theme": "Russian Alphabet",
+      "path": "alphabet",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_7_1",
+          "target": "Ёлка",
+          "phonetic": "YOL-ka",
+          "native_meaning": "Fir tree / Christmas tree",
+          "english": "Fir tree / Christmas tree",
+          "example_sentence_target": "Мы украсили ёлку.",
+          "example_sentence_native": "We decorated the Christmas tree.",
+          "example_sentence_phonetic": "My oo-KRA-see-lee YOL-koo."
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp1_7_1",
+            "letter": "Ё"
+          }
+        ]
+      },
+      "pronunciation_tip": "The letter 'Ё' is always stressed and sounds like 'yo' in 'yonder'.",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "W1D7-RU-Alpha-Yo"
+      }
+    }
   ]
 }
