@@ -13,8 +13,7 @@ import { AudioPlayback } from '@/components/AudioPlayback';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
-  // Check if item.native_meaning is a number string. This handles the case where
-  // lesson files might have the word in 'english' and the numeral in 'native_meaning'.
+  // Check if item.native_meaning is a number string.
   const isNumberCard = item.native_meaning && !isNaN(parseInt(item.native_meaning, 10));
 
   return (
@@ -31,15 +30,11 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
         {/* Right Column: Details */}
         <div className="space-y-1 text-right">
             {isNumberCard ? (
-                // This is a NUMBER card. Display the numeral, which we assume is in native_meaning.
-                // Do not display the word (which we assume is in item.english).
+                // This is a NUMBER card. Display the numeral.
                 <p className="text-3xl font-bold">{item.native_meaning}</p>
             ) : (
-                // This is a TIME/DAY/MONTH card. Display the English word and its native translation.
-                <>
-                    <p className="text-3xl font-bold">{item.english}</p>
-                    <p className="text-xl font-semibold text-foreground">{item.native_meaning}</p>
-                </>
+                // This is a TIME/DAY/MONTH card. Display the native translation.
+                <p className="text-3xl font-bold text-foreground">{item.native_meaning}</p>
             )}
             <p className="text-muted-foreground">{item.phonetic}</p>
         </div>
@@ -89,13 +84,15 @@ export default function NumbersPathPage() {
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
   
-  const totalWeeksForNumbers = 4; // Based on the new structure
+  const totalWeeksForNumbers = 4; // This is for data fetching only, not UI.
 
   useEffect(() => {
     const fetchAllLessons = async () => {
       setIsLoading(true);
       const allDays: LessonDay[] = [];
       
+      // The loop below fetches all lesson files for the Numbers Path.
+      // This data is then combined into a single list for display on one page.
       for (let week = 1; week <= totalWeeksForNumbers; week++) {
         // We pass a dummy day `1` because getOrGenerateLesson returns the whole week file
         const weeklyLesson = await getOrGenerateLesson(
