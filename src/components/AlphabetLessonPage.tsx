@@ -16,6 +16,7 @@ import { differenceInCalendarDays } from 'date-fns';
 import { WritingPractice } from './WritingPractice';
 import { AudioPlayback } from './AudioPlayback';
 import { Alert, AlertTitle } from './ui/alert';
+import { TooltipProvider } from './ui/tooltip';
 
 interface AlphabetLessonPageProps {
   dayData: LessonDay;
@@ -113,73 +114,75 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
   const writingExercise = dayData.exercises.writingPractice?.[0];
 
   return (
-    <div className="container mx-auto max-w-3xl py-8 px-4">
-      <header className="mb-6">
-        <div className="flex items-center justify-between mb-4">
-          <Button variant="ghost" asChild>
-            <Link href={`/${dayData.path}`}><ArrowLeft className="mr-2 h-4 w-4" /> {t.backToDashboard}</Link>
-          </Button>
-          <div className="text-center">
-            <h1 className="font-bold text-lg">{dayData.title}</h1>
-            <p className="text-sm text-muted-foreground">{dayData.theme}</p>
+    <TooltipProvider>
+      <div className="container mx-auto max-w-3xl py-8 px-4">
+        <header className="mb-6">
+          <div className="flex items-center justify-between mb-4">
+            <Button variant="ghost" asChild>
+              <Link href={`/${dayData.path}`}><ArrowLeft className="mr-2 h-4 w-4" /> {t.backToDashboard}</Link>
+            </Button>
+            <div className="text-center">
+              <h1 className="font-bold text-lg">{dayData.title}</h1>
+              <p className="text-sm text-muted-foreground">{dayData.theme}</p>
+            </div>
+            <StreakCounter count={userProfile?.currentStreak || 0} />
           </div>
-          <StreakCounter count={userProfile?.currentStreak || 0} />
-        </div>
-      </header>
+        </header>
 
-      <main className="space-y-8">
-        <Card>
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle className="text-8xl font-bold">{dayData.letter}</CardTitle>
-              {dayData.letter && <AudioPlayback text={dayData.letter} languageName={targetLanguage} />}
-            </div>
-          </CardHeader>
-          {dayData.pronunciation_tip && (
-             <CardContent>
-                <p className="text-muted-foreground italic">"{dayData.pronunciation_tip}"</p>
-             </CardContent>
-          )}
-        </Card>
-
-        {dayData.words && dayData.words.length > 0 && (
+        <main className="space-y-8">
           <Card>
-            <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>Example Word</CardTitle></CardHeader>
-            <CardContent>
-              <div className="flex flex-col items-center">
-                <WordCard item={dayData.words[0]} language={targetLanguage} />
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-8xl font-bold">{dayData.letter}</CardTitle>
+                {dayData.letter && <AudioPlayback text={dayData.letter} languageName={targetLanguage} />}
               </div>
-            </CardContent>
+            </CardHeader>
+            {dayData.pronunciation_tip && (
+              <CardContent>
+                  <p className="text-muted-foreground italic">"{dayData.pronunciation_tip}"</p>
+              </CardContent>
+            )}
           </Card>
-        )}
-        
-        {writingExercise && (
-           <Card>
-            <CardHeader><CardTitle className="flex items-center gap-2">✍️ Writing Practice</CardTitle></CardHeader>
-            <CardContent>
-                <p className="text-center text-muted-foreground mb-4">Trace the letter below</p>
-                <WritingPractice letter={writingExercise.letter} />
-            </CardContent>
-           </Card>
-        )}
 
-        <section className="text-center py-6 flex flex-col items-center">
-            <div className="relative">
-                <div className="absolute -inset-20"><Confetti active={showConfetti || isDayCompleted} config={confettiConfig} /></div>
-                {isComplete ? (
-                     <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
-                        <CheckCircle className="h-4 w-4" />
-                        <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
-                    </Alert>
-                ) : (
-                     <Button size="lg" onClick={handleCompleteDay}>
-                        <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
-                     </Button>
-                )}
-            </div>
-        </section>
+          {dayData.words && dayData.words.length > 0 && (
+            <Card>
+              <CardHeader><CardTitle className="flex items-center gap-2"><BookOpen className="h-6 w-6"/>Example Word</CardTitle></CardHeader>
+              <CardContent>
+                <div className="flex flex-col items-center">
+                  <WordCard item={dayData.words[0]} language={targetLanguage} />
+                </div>
+              </CardContent>
+            </Card>
+          )}
+          
+          {writingExercise && (
+            <Card>
+              <CardHeader><CardTitle className="flex items-center gap-2">✍️ Writing Practice</CardTitle></CardHeader>
+              <CardContent>
+                  <p className="text-center text-muted-foreground mb-4">Trace the letter below</p>
+                  <WritingPractice letter={writingExercise.letter} />
+              </CardContent>
+            </Card>
+          )}
 
-      </main>
-    </div>
+          <section className="text-center py-6 flex flex-col items-center">
+              <div className="relative">
+                  <div className="absolute -inset-20"><Confetti active={showConfetti || isDayCompleted} config={confettiConfig} /></div>
+                  {isComplete ? (
+                      <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
+                          <CheckCircle className="h-4 w-4" />
+                          <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
+                      </Alert>
+                  ) : (
+                      <Button size="lg" onClick={handleCompleteDay}>
+                          <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
+                      </Button>
+                  )}
+              </div>
+          </section>
+
+        </main>
+      </div>
+    </TooltipProvider>
   )
 }
