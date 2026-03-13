@@ -44,7 +44,7 @@ export default function AlphabetPathPage() {
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
 
   useEffect(() => {
-    if (isMounted && targetLanguage === 'Chinese') {
+    if (isMounted && ['Chinese', 'Tamil'].includes(targetLanguage)) {
       router.replace('/dashboard');
     }
   }, [targetLanguage, router, isMounted]);
@@ -80,12 +80,12 @@ export default function AlphabetPathPage() {
     );
   }
 
-  if (targetLanguage === 'Chinese') {
+  if (['Chinese', 'Tamil'].includes(targetLanguage)) {
     return (
         <div className="flex min-h-dvh flex-col bg-background">
             <Navigation />
             <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 text-center">
-                <p>The Alphabet Path is not available for Chinese. Redirecting to dashboard...</p>
+                <p>The Alphabet Path is not available for {targetLanguage}. Redirecting to dashboard...</p>
             </main>
         </div>
     );

@@ -156,7 +156,7 @@ function DashboardContent({ user }: { user: User }) {
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
   const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => weekProgressData?.daysCompleted?.includes(i + 1) || false);
 
-  const availablePaths = targetLanguage === 'Chinese'
+  const availablePaths = ['Chinese', 'Tamil'].includes(targetLanguage)
     ? PATHS.filter(p => p.id !== 'alphabet')
     : PATHS;
 
