@@ -11,11 +11,6 @@ export async function getOrGenerateLesson(
     let native = nativeLanguage.toLowerCase();
     const target = language.toLowerCase();
 
-    // For the Dutch numbers and survival paths, always use the English version as the source content.
-    if (target === 'dutch' && (path === 'numbers' || path === 'survival')) {
-        native = 'english';
-    }
-
     const weekPadded = String(week).padStart(2, '0');
     const filePath = `lessons/${native}_${target}/${path}/week_${weekPadded}.json`;
 
