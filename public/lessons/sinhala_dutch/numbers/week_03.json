@@ -1,0 +1,169 @@
+{
+  "week": 3,
+  "path": "numbers",
+  "targetLanguage": "Dutch",
+  "nativeLanguage": "Sinhala",
+  "days": [
+    {
+      "week": 3,
+      "day": 1,
+      "title": "Telling Time (Hours)",
+      "title_native": "වේලාව කීම (පැය)",
+      "theme": "Time",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {"id":"n3_1_1","target":"uur","phonetic":"ඌර්","native_meaning":"පැය / ...යි","english":"hour / o'clock","example_sentence_target":"Het is één uur.","example_sentence_native":"වෙලාව එකයි.","example_sentence_phonetic":"හෙට් ඉස් ಏನ್ ඌර්."},
+        {"id":"n3_1_2","target":"Hoe laat is het?","phonetic":"හූ ලාට් ඉස් හෙට්?","native_meaning":"වෙලාව කීයද?","english":"What time is it?","example_sentence_target":"Pardon, hoe laat is het?","example_sentence_native":"සමාවෙන්න, වෙලාව කීයද?","example_sentence_phonetic":"පර්ඩොන්, හූ ලාට් ඉස් හෙට්?"},
+        {"id":"n3_1_3","target":"Het is...","phonetic":"හෙට් ඉස්...","native_meaning":"වෙලාව...","english":"It is...","example_sentence_target":"Het is drie uur.","example_sentence_native":"වෙලාව තුනයි.","example_sentence_phonetic":"හෙට් ඉස් ඩ්‍රී ඌර්."},
+        {"id":"n3_1_4","target":"middernacht","phonetic":"මිඩර්නඛ්ට්","native_meaning":"මධ්‍යම රාත්‍රිය","english":"midnight","example_sentence_target":"Het is middernacht.","example_sentence_native":"මධ්‍යම රාත්‍රියයි.","example_sentence_phonetic":"හෙට් ඉස් මිඩර්නඛ්ට්."},
+        {"id":"n3_1_5","target":"middag","phonetic":"මිඩగ్","native_meaning":"දහවල්","english":"noon","example_sentence_target":"Om twaalf uur 's middags.","example_sentence_native":"දහවල් දොළහට.","example_sentence_phonetic":"ඔම් ට්වාල්ෆ් ඌර් ස්-මිඩగ్ස්."}
+      ],
+      "dialogues": [
+        {
+          "id":"n3_1_d1",
+          "context":"කෙනෙකුගෙන් වේලාව ඇසීම.",
+          "lines": [
+            {"speaker":"A", "target":"Hallo, weet u hoe laat het is?","native":"හෙලෝ, වෙලාව කීයද කියලා දන්නවාද?","phonetic":"හලෝ, වීට් යූ හූ ලාට් හෙට් ඉස්?"},
+            {"speaker":"B", "target":"Ja, het is tien uur.","native":"ඔව්, වෙලාව දහයයි.","phonetic":"යා, හෙට් ඉස් ටීන් ඌර්."}
+          ]
+        }
+      ],
+      "exercises": { "fillBlanks": [{"id":"n3_1_fb1", "sentence":"Het is ___ uur.", "answer":"één", "hint":"එක"}] },
+      "cultural_note": "ලන්දේසීන් බොහෝ විට 24-පැය ආකෘතිය භාවිතා කරයි, විශේෂයෙන්ම නිල පසුබිම්වලදී. නමුත් සාමාන්‍ය කතාවේදී, 12-පැය ආකෘතියද පොදු වේ.",
+      "pronunciation_tip": "'uur' හි 'uu' ශබ්දය දිගු ස්වරයකි. එය සෑදීමට 'ee' ශබ්දය කියන අතරතුර ඔබේ තොල් වටකුරු කරන්න.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"N3D1-Time"}
+    },
+    {
+      "week": 3,
+      "day": 2,
+      "title": "Telling Time (Half/Quarter)",
+      "title_native": "වේලාව කීම (භාගය/කාල)",
+      "theme": "Time",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {"id":"n3_2_1","target":"half","phonetic":"හල්ෆ්","native_meaning":"භාගය","english":"half","example_sentence_target":"Het is half drie.","example_sentence_native":"වෙලාව දෙකහමාරයි.","example_sentence_phonetic":"හෙට් ඉස් හල්ෆ් ඩ්‍රී."},
+        {"id":"n3_2_2","target":"kwart voor","phonetic":"ක්වාර්ට් ෆෝර්","native_meaning":"...ට කාලයි","english":"quarter to","example_sentence_target":"Het is kwart voor vier.","example_sentence_native":"වෙලාව හතරට කාලයි.","example_sentence_phonetic":"හෙට් ඉස් ක්වාර්ට් ෆෝර් ෆීර්."},
+        {"id":"n3_2_3","target":"kwart over","phonetic":"ක්වාර්ට් ඕවර්","native_meaning":"...වී කාලයි","english":"quarter past","example_sentence_target":"Het is kwart over vijf.","example_sentence_native":"වෙලාව පහයි කාලයි.","example_sentence_phonetic":"හෙට් ඉස් ක්වාර්ට් ඕවර් ෆෙයිෆ්."},
+        {"id":"n3_2_4","target":"minuut","phonetic":"මිනುට්","native_meaning":"විනාඩිය","english":"minute","example_sentence_target":"Wacht een minuut.","example_sentence_native":"විනාඩියක් ඉන්න.","example_sentence_phonetic":"වඛ්ට් ಏන් මිනುට්."},
+        {"id":"n3_2_5","target":"seconde","phonetic":"සෙකොන්ඩ","native_meaning":"තත්පරය","english":"second","example_sentence_target":"Een minuut heeft zestig seconden.","example_sentence_native":"විනාඩියකට තත්පර හැටක් ඇත.","example_sentence_phonetic":"ಏන් මිනುට් හේෆ්ට් සෙස්ටగ్ සෙකොන්ඩන්."}
+      ],
+      "exercises": { "matching": [{"id":"n3_2_m1","target":"kwart voor","native":"...ට කාලයි"},{"id":"n3_2_m2","target":"kwart over","native":"...වී කාලයි"}] },
+      "cultural_note": "'half drie' (දෙකහමාරයි) යනු 'තුනට භාගයක්' ලෙස වචනාර්ථයෙන් පරිවර්තනය වේ. ලන්දේසීන් ඊළඟ පැයට සාපේක්ෂව වේලාව කියයි, ඉංග්‍රීසි මෙන් නොව.",
+      "pronunciation_tip": "'kwart' හි 'kw' ශබ්දය ඉංග්‍රීසි 'quick' හි මෙන් වේ.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"N3D2-Time"}
+    },
+    {
+      "week": 3,
+      "day": 3,
+      "title": "Days of the Week (1-4)",
+      "title_native": "සතියේ දින (1-4)",
+      "theme": "Calendar",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {"id":"n3_3_1","target":"maandag","phonetic":"මාන්ඩగ్","native_meaning":"සඳුදා","english":"Monday","example_sentence_target":"Op maandag werk ik.","example_sentence_native":"මම සඳුදා වැඩ කරනවා.","example_sentence_phonetic":"ඔප් මාන්ඩగ్ වර්ක් ඉක්."},
+        {"id":"n3_3_2","target":"dinsdag","phonetic":"ඩින්ස්ඩగ్","native_meaning":"අඟහරුවාදා","english":"Tuesday","example_sentence_target":"Ik zie je dinsdag.","example_sentence_native":"මම ඔයාව අඟහරුවාදා හමුවෙන්නම්.","example_sentence_phonetic":"ඉක් සී ය ඩින්ස්ඩగ్."},
+        {"id":"n3_3_3","target":"woensdag","phonetic":"වූන්ස්ඩగ్","native_meaning":"බදාදා","english":"Wednesday","example_sentence_target":"Woensdag is het midden van de week.","example_sentence_native":"බදාදා සතියේ මැද.","example_sentence_phonetic":"වූන්ස්ඩగ్ ඉස් හෙට් මිඩන් ෆන් ඩ වීක්."},
+        {"id":"n3_3_4","target":"donderdag","phonetic":"ඩොන්ඩර්ඩగ్","native_meaning":"බ්‍රහස්පතින්දා","english":"Thursday","example_sentence_target":"We gaan uit eten op donderdag.","example_sentence_native":"අපි බ්‍රහස්පතින්දා කෑමට පිටට යනවා.","example_sentence_phonetic":"ව ගාන් අවුට් ඒටන් ඔප් ඩොන්ඩර්ඩగ్."}
+      ],
+      "exercises": { "sentenceScramble": [{"id":"n3_3_ss1","scrambled":["werk","maandag","Op","ik"],"correct":"Op maandag werk ik.","nativeHint":"මම සඳුදා වැඩ කරනවා."}] },
+      "cultural_note": "නෙදර්ලන්තයේ සතිය සඳුදා (maandag) ආරම්භ වී ඉරිදා (zondag) අවසන් වේ. සතියේ දින නාම 'dag' (day) යන වචනයෙන් අවසන් වේ.",
+      "pronunciation_tip": "'woensdag' හි 'oe' ශබ්දය ඉංග්‍රීසි 'shoe' හි 'oo' ශබ්දය මෙන් දිගු 'oo' ශබ්දයකි.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"N3D3-Days"}
+    },
+    {
+      "week": 3,
+      "day": 4,
+      "title": "Days of the Week (5-7)",
+      "title_native": "සතියේ දින (5-7)",
+      "theme": "Calendar",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {"id":"n3_4_1","target":"vrijdag","phonetic":"ෆ්‍රෙයිඩగ్","native_meaning":"සිකුරාදා","english":"Friday","example_sentence_target":"Vrijdagavond gaan we naar de film.","example_sentence_native":"සිකුරාදා හවස අපි චිත්‍රපටියක් බලන්න යනවා.","example_sentence_phonetic":"ෆ්‍රෙයිඩగ్-ආවොන්ඩ් ගාන් ව නාර් ඩ ෆිල්ම්."},
+        {"id":"n3_4_2","target":"zaterdag","phonetic":"සාටර්ඩగ్","native_meaning":"සෙනසුරාදා","english":"Saturday","example_sentence_target":"Op zaterdag slaap ik uit.","example_sentence_native":"මම සෙනසුරාදා වැඩිපුර නිදාගන්නවා.","example_sentence_phonetic":"ඔප් සාටර්ඩగ్ ස්ලාප් ඉක් අවුට්."},
+        {"id":"n3_4_3","target":"zondag","phonetic":"සොන්ඩగ్","native_meaning":"ඉරිදා","english":"Sunday","example_sentence_target":"Zondag is een rustdag.","example_sentence_native":"ඉරිදා විවේක දිනයක්.","example_sentence_phonetic":"සොන්ඩగ్ ඉස් ಏන් රುස්ට්ඩగ్."},
+        {"id":"n3_4_4","target":"weekend","phonetic":"වීකෙන්ඩ්","native_meaning":"සති අන්තය","english":"weekend","example_sentence_target":"Fijn weekend!","example_sentence_native":"සුබ සති අන්තයක්!","example_sentence_phonetic":"ෆෙයින් වීකෙන්ඩ්!"}
+      ],
+      "exercises": { "matching": [{"id":"n3_4_m1", "target":"vrijdag", "native":"සිකුරාදා"}, {"id":"n3_4_m2", "target":"zondag", "native":"ඉරිදා"}] },
+      "cultural_note": "නෙදර්ලන්තයේ සති අන්තය (weekend) බොහෝ මිනිසුන් සඳහා සිකුරාදා සවස ආරම්භ වේ. සෙනසුරාදා සාප්පු සවාරි සඳහා ජනප්‍රිය දිනයක් වන අතර, ඉරිදා බොහෝ විට පවුලේ අය සමඟ ගත කරයි.",
+      "pronunciation_tip": "'vrijdag' හි 'v' ශබ්දය වචනයක් ආරම්භයේදී ඉංග්‍රීසි 'f' ශබ්දය මෙන් උච්චාරණය කෙරේ.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"N3D4-Days"}
+    },
+    {
+      "week": 3,
+      "day": 5,
+      "title": "Months of the Year (Jan-Jun)",
+      "title_native": "වසරේ මාස (ජන-ජූනි)",
+      "theme": "Calendar",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {"id":"n3_5_1","target":"januari","phonetic":"යනುವාරි","native_meaning":"ජනවාරි","english":"January","example_sentence_target":"In januari is het koud.","example_sentence_native":"ජනවාරි මාසයේදී සීතලයි.","example_sentence_phonetic":"ඉන් යනುವාරි ඉස් හෙට් කවුඩ්."},
+        {"id":"n3_5_2","target":"februari","phonetic":"ෆෙබ್ರುವාරි","native_meaning":"පෙබරවාරි","english":"February","example_sentence_target":"Februari is de kortste maand.","example_sentence_native":"පෙබරවාරි යනු කෙටිම මාසයයි.","example_sentence_phonetic":"ෆෙබ್ರುವාරි ඉස් ඩ කෝර්ට්ස්ට මාන්ඩ්."},
+        {"id":"n3_5_3","target":"maart","phonetic":"මාර්ට්","native_meaning":"මාර්තු","english":"March","example_sentence_target":"De lente begint in maart.","example_sentence_native":"වසන්තය ආරම්භ වන්නේ මාර්තු මාසයේදීය.","example_sentence_phonetic":"ඩ ලෙන්ට බඛින්ට් ඉන් මාර්ට්."},
+        {"id":"n3_5_4","target":"april","phonetic":"අප්‍රිල්","native_meaning":"අප්‍රේල්","english":"April","example_sentence_target":"1 april, kikker in je bil!","example_sentence_native":"අප්‍රේල් 1, ඔබේ... ගෙම්බෙක්! (ලන්දේසි විහිළුවක්)","example_sentence_phonetic":"ಏන් අප්‍රිල්, කිකර් ඉන් ය බිල්!"},
+        {"id":"n3_5_5","target":"mei","phonetic":"මෙයි","native_meaning":"මැයි","english":"May","example_sentence_target":"In mei leggen alle vogels een ei.","example_sentence_native":"මැයි මාසයේදී සියලුම කුරුල්ලන් බිත්තර දමයි. (ලන්දේසි කියමනක්)","example_sentence_phonetic":"ඉන් මෙයි ලెగ్ගන් අල ಫೋඛල්ස් ಏන් අයි."},
+        {"id":"n3_5_6","target":"juni","phonetic":"යೂනි","native_meaning":"ජූනි","english":"June","example_sentence_target":"De zomer begint in juni.","example_sentence_native":"ගිම්හානය ආරම්භ වන්නේ ජූනි මාසයේදීය.","example_sentence_phonetic":"ඩ සෝමර් බඛින්ට් ඉන් යೂනි."}
+      ],
+      "exercises": { "fillBlanks": [{"id":"n3_5_fb1", "sentence":"De zomer begint in ___.","answer":"juni","hint":"ගිම්හානය ආරම්භ වන මාසය"}] },
+      "cultural_note": "නෙදර්ලන්තයේ '1 aprilgrap' (අප්‍රේල් 1 විහිළුව) යනු අප්‍රේල් මෝඩයාගේ දිනය සැමරීමේ සම්ප්‍රදායකි.",
+      "pronunciation_tip": "'januari' හි 'j' අකුර ඉංග්‍රීසි 'yes' හි 'y' ශබ්දය මෙන් උච්චාරණය කෙරේ.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"N3D5-Months"}
+    },
+    {
+      "week": 3,
+      "day": 6,
+      "title": "Months of the Year (Jul-Dec)",
+      "title_native": "වසරේ මාස (ජූලි-දෙසැ)",
+      "theme": "Calendar",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {"id":"n3_6_1","target":"juli","phonetic":"යೂලි","native_meaning":"ජූලි","english":"July","example_sentence_target":"In juli gaan we op vakantie.","example_sentence_native":"අපි ජූලි මාසයේ නිවාඩුවක් ගත කරනවා.","example_sentence_phonetic":"ඉන් යೂලි ගාන් ව ඔප් ෆකන්සී."},
+        {"id":"n3_6_2","target":"augustus","phonetic":"අවුගುස්ටುස්","native_meaning":"අගෝස්තු","english":"August","example_sentence_target":"Augustus is vaak een warme maand.","example_sentence_native":"අගෝස්තු බොහෝ විට උණුසුම් මාසයකි.","example_sentence_phonetic":"අවුගುස්ටುස් ඉස් ෆාක් ಏන් වර්ම මාන්ඩ්."},
+        {"id":"n3_6_3","target":"september","phonetic":"සෙප්ටෙම්බර්","native_meaning":"සැප්තැම්බර්","english":"September","example_sentence_target":"De scholen beginnen weer in september.","example_sentence_native":"පාසල් නැවත සැප්තැම්බර් මාසයේදී ආරම්භ වේ.","example_sentence_phonetic":"ඩ ස්ඛෝලන් බඛිනන් වೀರ್ ඉන් සෙප්ටෙම්බර්."},
+        {"id":"n3_6_4","target":"oktober","phonetic":"ඔක්ටෝබර්","native_meaning":"ඔක්තෝබර්","english":"October","example_sentence_target":"De bladeren vallen in oktober.","example_sentence_native":"ඔක්තෝබර් මාසයේදී කොළ වැටේ.","example_sentence_phonetic":"ඩ බ್ලාඩෙරන් ෆලන් ඉන් ඔක්ටෝබර්."},
+        {"id":"n3_6_5","target":"november","phonetic":"නොවෙම්බර්","native_meaning":"නොවැම්බර්","english":"November","example_sentence_target":"Het regent vaak in november.","example_sentence_native":"නොවැම්බර් මාසයේදී නිතරම වර්ෂාව ලැබේ.","example_sentence_phonetic":"හෙට් රේඛන්ට් ෆාක් ඉන් නොවෙම්බර්."},
+        {"id":"n3_6_6","target":"december","phonetic":"ඩෙසෙම්බර්","native_meaning":"දෙසැම්බර්","english":"December","example_sentence_target":"In december vieren we Sinterklaas en Kerst.","example_sentence_native":"දෙසැම්බර් මාසයේදී අපි සින්ටර්ක්ලාස් සහ නත්තල් සමරමු.","example_sentence_phonetic":"ඉන් ඩෙසෙම්බර් ෆීරන් ව සින්ටර්ක්ලාස් එන් කෙර්ස්ට්."}
+      ],
+      "exercises": { "matching": [{"id":"n3_6_m1", "target":"december", "native":"දෙසැම්බර්"}, {"id":"n3_6_m2", "target":"juli", "native":"ජූලි"}] },
+      "cultural_note": "නෙදර්ලන්තයේ, දෙසැම්බර් 5 වන දින 'Sinterklaas' (ශාන්ත නිකලස්) සැමරීම නත්තල (Kerst) තරම්ම වැදගත් වේ.",
+      "pronunciation_tip": "මාසවල නම් ඉංග්‍රීසි භාෂාවට බෙහෙවින් සමාන නමුත්, උච්චාරණයේදී අවධාරණය වෙනස් විය හැකිය. උදා: sep-TEM-ber.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"N3D6-Months"}
+    },
+    {
+      "week": 3,
+      "day": 7,
+      "title": "Week 3 Review",
+      "title_native": "3 වන සතියේ සමාලෝචනය",
+      "theme": "Review",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Sinhala",
+      "sentences": [
+        {"id":"n3_7_s1", "target":"Hoe laat is het? Het is kwart voor negen.", "native":"වෙලාව කීයද? වෙලාව නවයට කාලයි.", "phonetic":"හූ ලාට් ඉස් හෙට්? හෙට් ඉස් ක්වාර්ට් ෆෝර් නේඛන්."},
+        {"id":"n3_7_s2", "target":"Mijn afspraak is op woensdag om half elf.", "native":"මගේ හමුවීම බදාදා දහයහමාරට.","phonetic":"මයින් අෆ්ස්ප්‍රාක් ඉස් ඔප් වූන්ස්ඩగ్ ඔම් හල්ෆ් එල්ෆ්."},
+        {"id":"n3_7_s3", "target":"De zomer eindigt in september.", "native":"ගිම්හානය සැප්තැම්බර් මාසයෙන් අවසන් වේ.","phonetic":"ඩ සෝමර් අයින්ඩිగ్ට් ඉන් සෙප්ටෙම්බර්."}
+      ],
+      "dialogues": [
+        {"id":"n3_7_d1", "context":"හමුවීමක් සැලසුම් කිරීම.", "lines":[
+          {"speaker":"A", "target":"Wanneer zien we elkaar?", "native":"අපි කවදාද හමුවන්නේ?", "phonetic":"වන්නීර් සීන් ව එල්කාර්?"},
+          {"speaker":"B", "target":"Donderdag om vier uur?", "native":"බ්‍රහස්පතින්දා හතරට?", "phonetic":"ඩොන්ඩර්ඩగ్ ඔම් ෆීර් ඌර්?"}
+        ]}
+      ],
+      "exercises": { "fillBlanks": [{"id":"n3_7_fb1", "sentence":"Het is ___ drie. (2:30)", "answer":"half", "hint":"දෙකහමාරයි"}] },
+      "cultural_note": "වේලාවන් සහ දින වකවානු නිවැරදිව භාවිතා කිරීම, හමුවීම් (afspraken) සැලසුම් කිරීමේදී ලන්දේසි සංස්කෘතියේ ඉතා වැදගත් වේ.",
+      "pronunciation_tip": "'afspraak' (හමුවීම) හි 'aa' ශබ්දය දිගු 'a' ශබ්දයකි, 'maart' හි මෙන්.",
+      "progress": {"xp":100, "streak_bonus":20, "badge":"N3-Review"}
+    }
+  ]
+}
