@@ -23,8 +23,8 @@
     },
     "days": {
       "type": "array",
-      "description": "An array containing up to 7 daily lesson objects.",
-      "minItems": 1,
+      "description": "An array containing exactly 7 daily lesson objects.",
+      "minItems": 7,
       "maxItems": 7,
       "items": {
         "description": "The full object for a single day's lesson. This should conform to the daily lesson schema.",
@@ -39,15 +39,32 @@
           "path": { "type": "string", "enum": ["survival", "alphabet", "numbers"] },
           "targetLanguage": { "type": "string" },
           "nativeLanguage": { "type": "string" },
-          "words": { "type": "array" },
-          "sentences": { "type": "array" },
-          "dialogues": { "type": "array" },
-          "exercises": { "type": "object" },
+          "words": { "type": "array", "minItems": 6, "maxItems": 6 },
+          "sentences": { "type": "array", "minItems": 4, "maxItems": 4 },
+          "dialogues": { "type": "array", "minItems": 4, "maxItems": 4 },
+          "exercises": {
+            "type": "object",
+            "properties": {
+              "sentenceScramble": {
+                "type": "array",
+                "minItems": 1
+              },
+               "fillBlanks": {
+                "type": "array",
+                "minItems": 1
+              },
+              "matching": {
+                "type": "array",
+                "minItems": 1
+              }
+            },
+            "required": ["sentenceScramble", "fillBlanks", "matching"]
+          },
           "cultural_note": { "type": "string" },
           "pronunciation_tip": { "type": "string" },
           "progress": { "type": "object" }
         },
-        "required": ["week", "day", "title", "title_native", "theme", "path", "targetLanguage", "nativeLanguage", "exercises", "progress"]
+        "required": ["week", "day", "title", "title_native", "theme", "path", "targetLanguage", "nativeLanguage", "words", "sentences", "dialogues", "exercises", "cultural_note", "pronunciation_tip", "progress"]
       }
     }
   },

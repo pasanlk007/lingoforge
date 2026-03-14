@@ -42,25 +42,31 @@
       "type": "string"
     },
     "words": {
-      "description": "A list of vocabulary words for the day.",
+      "description": "A list of vocabulary words for the day. Week 2 plan requires exactly 6.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/LessonItem"
-      }
+      },
+      "minItems": 6,
+      "maxItems": 6
     },
     "sentences": {
-      "description": "A list of standalone example sentences for practice.",
+      "description": "A list of standalone example sentences for practice. Week 2 plan requires exactly 4.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/SentenceItem"
-      }
+      },
+      "minItems": 4,
+      "maxItems": 4
     },
     "dialogues": {
-      "description": "A list of dialogues for conversational practice.",
+      "description": "A list of dialogues for conversational practice. Week 2 plan requires exactly 4.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/Dialogue"
-      }
+      },
+      "minItems": 4,
+      "maxItems": 4
     },
     "exercises": {
       "description": "A collection of exercises to reinforce learning.",
@@ -88,7 +94,12 @@
     "path",
     "targetLanguage",
     "nativeLanguage",
+    "words",
+    "sentences",
+    "dialogues",
     "exercises",
+    "cultural_note",
+    "pronunciation_tip",
     "progress"
   ],
   "definitions": {
@@ -127,7 +138,7 @@
         "lines": {
           "type": "array",
           "description": "The lines of conversation between speakers.",
-          "minItems": 1,
+          "minItems": 2,
           "items": { "$ref": "#/definitions/DialogueLine" }
         }
       },
@@ -146,11 +157,12 @@
     },
     "Exercises": {
       "type": "object",
-      "description": "An object containing different types of exercises.",
+      "description": "An object containing different types of exercises. Week 2 plan requires at least one of fillBlanks, matching, and sentenceScramble.",
       "properties": {
         "fillBlanks": {
           "type": "array",
-          "items": { "$ref": "#/definitions/FillBlankExercise" }
+          "items": { "$ref": "#/definitions/FillBlankExercise" },
+          "minItems": 1
         },
         "multipleChoice": {
           "type": "array",
@@ -159,13 +171,15 @@
         "matching": {
           "description": "An exercise where the user matches target language sentences to their native language translations.",
           "type": "array",
-          "items": { "$ref": "#/definitions/MatchingPair" }
+          "items": { "$ref": "#/definitions/MatchingPair" },
+          "minItems": 1
         },
         "sentenceScramble": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/SentenceScrambleExercise"
-          }
+          },
+          "minItems": 1
         },
         "writingPractice": {
           "type": "array",
@@ -173,7 +187,8 @@
             "$ref": "#/definitions/WritingPracticeExercise"
           }
         }
-      }
+      },
+      "required": ["fillBlanks", "matching", "sentenceScramble"]
     },
     "FillBlankExercise": {
       "type": "object",
