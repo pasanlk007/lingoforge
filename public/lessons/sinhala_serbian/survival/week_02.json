@@ -1,3 +1,4 @@
+
 {
   "week": 2,
   "path": "survival",
@@ -6,99 +7,589 @@
   "days": [
     {
       "week": 2,
-      "day": 1,
-      "title": "Week 2 Day 1: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 1",
-      "theme": "Basic Communication",
+      "day": 8,
+      "title": "8 වන දිනය: උදව් ඉල්ලීම",
+      "title_native": "Dan 8: Traženje pomoći",
+      "theme": "Asking for help",
       "path": "survival",
       "targetLanguage": "Serbian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
-          "id": "w2_1_1",
-          "target": "ne",
-          "phonetic": "ne",
+          "id": "w2_srb_8_1",
+          "target": "Pomoć",
+          "phonetic": "පොමොච්",
+          "native_meaning": "උදව්",
+          "english": "Help",
+          "example_sentence_target": "Možete li mi pomoći?",
+          "example_sentence_native": "ඔබට මට උදව් කළ හැකිද?",
+          "example_sentence_phonetic": "මොෂෙතේ ලි මි පොමොචි?"
+        },
+        {
+          "id": "w2_srb_8_2",
+          "target": "Treba mi",
+          "phonetic": "ත්‍රෙබා මි",
+          "native_meaning": "මට අවශ්‍යයි",
+          "english": "I need",
+          "example_sentence_target": "Treba mi voda.",
+          "example_sentence_native": "මට වතුර අවශ්‍යයි.",
+          "example_sentence_phonetic": "ත්‍රෙබා මි වෝදා."
+        },
+        {
+          "id": "w2_srb_8_3",
+          "target": "Molim",
+          "phonetic": "මොලිම්",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Molim, pomozite mi.",
+          "example_sentence_native": "කරුණාකර, මට උදව් කරන්න.",
+          "example_sentence_phonetic": "මොලිම්, පොමොසිතෙ මි."
+        },
+        {
+          "id": "w2_srb_8_4",
+          "target": "Gde",
+          "phonetic": "ග්දේ",
+          "native_meaning": "කොහෙද",
+          "english": "Where",
+          "example_sentence_target": "Gde je toalet?",
+          "example_sentence_native": "වැසිකිළිය කොහෙද?",
+          "example_sentence_phonetic": "ග්දේ යේ තොඅලෙත්?"
+        },
+        {
+          "id": "w2_srb_8_5",
+          "target": "Kako",
+          "phonetic": "කාකො",
+          "native_meaning": "කොහොමද",
+          "english": "How",
+          "example_sentence_target": "Kako mogu doći tamo?",
+          "example_sentence_native": "මට එතනට යන්න පුළුවන් කොහොමද?",
+          "example_sentence_phonetic": "කාකො මොගු දොචි තාමො?"
+        },
+        {
+          "id": "w2_srb_8_6",
+          "target": "Ne razumem",
+          "phonetic": "නෙ රසුමෙම්",
+          "native_meaning": "මට තේරෙන්නේ නෑ",
+          "english": "I don't understand",
+          "example_sentence_target": "Izvinite, ne razumem.",
+          "example_sentence_native": "සමාවන්න, මට තේරෙන්නේ නෑ.",
+          "example_sentence_phonetic": "ඉස්විනිතෙ, නෙ රසුමෙම්."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_8_1",
+          "target": "Treba mi pomoć.",
+          "native": "මට උදව් අවශ්‍යයි.",
+          "phonetic": "ත්‍රෙබා මි පොමොච්."
+        },
+        {
+          "id": "s2_srb_8_2",
+          "target": "Možete li to ponoviti?",
+          "native": "ඔබට එය නැවත කිව හැකිද?",
+          "phonetic": "මොෂෙතේ ලි තො පොනොවිති?"
+        },
+        {
+          "id": "s2_srb_8_3",
+          "target": "Koliko košta?",
+          "native": "මේක කීයද?",
+          "phonetic": "කොලිකො කොෂ්තා?"
+        },
+        {
+          "id": "s2_srb_8_4",
+          "target": "Izgubio sam se.",
+          "native": "මම අතරමං වෙලා.",
+          "phonetic": "ඉස්ගුබියො සම් සෙ."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_srb_8_1",
+          "context": "මාර්ගය අසමින්.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, možete li mi pomoći?",
+              "native": "සමාවන්න, ඔබට මට උදව් කළ හැකිද?",
+              "phonetic": "ඉස්විනිතෙ, මොෂෙතේ ලි මි පොමොචි?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, naravno. Recite.",
+              "native": "ඔව්, ඇත්ත වශයෙන්ම. කියන්න.",
+              "phonetic": "දා, නරව්නො. රෙට්සිතේ."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_8_2",
+          "context": "යමක් සොයමින්.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Treba mi apoteka.",
+              "native": "මට ෆාමසියක් අවශ්‍යයි.",
+              "phonetic": "ත්‍රෙබා මි අපොතේකා."
+            },
+            {
+              "speaker": "B",
+              "target": "Tamo je, preko puta ulice.",
+              "native": "එය එතන, පාරෙන් එහා පැත්තේ.",
+              "phonetic": "තාමො යේ, ප්‍රෙකෝ පුතා උලිට්සේ."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_8_3",
+          "context": "මිලක් ඇසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Koliko ovo košta?",
+              "native": "මේක කීයද?",
+              "phonetic": "කොලිකො ඔවො කොෂ්තා?"
+            },
+            {
+              "speaker": "B",
+              "target": "Sto dinara.",
+              "native": "ඩිනාර් සීයයි.",
+              "phonetic": "സ്തෝ දිනාරා."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_8_4",
+          "context": "තේරුම් ගැනීමට නොහැකි වූ විට.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Žao mi je, ne razumem.",
+              "native": "කණගාටුයි, මට තේරෙන්නේ නැහැ.",
+              "phonetic": "ෂාඕ මි යේ, නෙ රසුමෙම්."
+            },
+            {
+              "speaker": "B",
+              "target": "Nema problema, ponoviću.",
+              "native": "ප්‍රශ්නයක් නැහැ, මම නැවත කියන්නම්.",
+              "phonetic": "නෙමා ප්‍රොබ්ලෙමා, පොනොවිචු."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb2_srb_8_1",
+            "sentence": "Treba mi ___.",
+            "answer": "pomoć",
+            "hint": "උදව්"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m2_srb_8_1",
+            "target": "Molim",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m2_srb_8_2",
+            "target": "Gde",
+            "native": "කොහෙද"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_srb_8_1",
+            "scrambled": ["li", "pomoći", "mi", "Možete"],
+            "correct": "Možete li mi pomoći?",
+            "nativeHint": "ඔබට මට උදව් කළ හැකිද?"
+          }
+        ]
+      },
+      "cultural_note": "සර්බියාවේදී, වැඩිහිටියන්ට හෝ ඔබ හොඳින් නොදන්නා අයට 'Vi' (ඔබ, ගෞරවනීය) ලෙස ආමන්ත්‍රණය කිරීම සිරිතකි. මිතුරන් සඳහා 'ti' (ඔබ, අවිධිමත්) භාවිතා වේ.",
+      "pronunciation_tip": "'Gde' (ග්දේ) යන වචනයේ 'G' ශබ්දය සිංහල 'ග' ශබ්දයට සමාන වේ. 'd' ශබ්දය පැහැදිලිව උච්චාරණය කරන්න.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W2D8-AskingHelp-SRB"
+      }
+    },
+    {
+      "week": 2,
+      "day": 9,
+      "title": "9 වන දිනය: ප්‍රශ්න තේරුම් ගැනීම",
+      "title_native": "Dan 9: Razumevanje pitanja",
+      "theme": "Understanding questions",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w2_srb_9_1",
+          "target": "Šta",
+          "phonetic": "ෂ්ටා",
+          "native_meaning": "මොකක්ද",
+          "english": "What",
+          "example_sentence_target": "Šta je vaše ime?",
+          "example_sentence_native": "ඔබේ නම මොකක්ද?",
+          "example_sentence_phonetic": "ෂ්ටා යේ වාෂේ ඉමෙ?"
+        },
+        {
+          "id": "w2_srb_9_2",
+          "target": "Ko",
+          "phonetic": "කෝ",
+          "native_meaning": "කවුද",
+          "english": "Who",
+          "example_sentence_target": "Ko je to?",
+          "example_sentence_native": "ඒ කවුද?",
+          "example_sentence_phonetic": "කෝ යේ තෝ?"
+        },
+        {
+          "id": "w2_srb_9_3",
+          "target": "Kada",
+          "phonetic": "කාදා",
+          "native_meaning": "කවදාද",
+          "english": "When",
+          "example_sentence_target": "Kada polazi voz?",
+          "example_sentence_native": "දුම්රිය පිටත් වෙන්නේ කවදාද?",
+          "example_sentence_phonetic": "කාදා පොලසි වෝස්?"
+        },
+        {
+          "id": "w2_srb_9_4",
+          "target": "Zašto",
+          "phonetic": "සෂ්තො",
+          "native_meaning": "ඇයි",
+          "english": "Why",
+          "example_sentence_target": "Zašto se smeješ?",
+          "example_sentence_native": "ඔයා ඇයි හිනාවෙන්නේ?",
+          "example_sentence_phonetic": "සෂ්තො සෙ ස්මෙයෙෂ්?"
+        },
+        {
+          "id": "w2_srb_9_5",
+          "target": "Koliko",
+          "phonetic": "කොලිකො",
+          "native_meaning": "කීයක්ද",
+          "english": "How much/many",
+          "example_sentence_target": "Koliko ovo košta?",
+          "example_sentence_native": "මේක කීයද?",
+          "example_sentence_phonetic": "කොලිකො ඔවො කොෂ්තා?"
+        },
+        {
+          "id": "w2_srb_9_6",
+          "target": "Koji",
+          "phonetic": "කොයි",
+          "native_meaning": "මොන එකද",
+          "english": "Which",
+          "example_sentence_target": "Koji želite?",
+          "example_sentence_native": "ඔබට අවශ්‍ය මොන එකද?",
+          "example_sentence_phonetic": "කොයි ෂෙලිතෙ?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_9_1",
+          "target": "Odakle ste?",
+          "native": "ඔබ කොහේ කෙනෙක්ද?",
+          "phonetic": "ඔඩක්ලෙ ස්තේ?"
+        },
+        {
+          "id": "s2_srb_9_2",
+          "target": "Koliko imate godina?",
+          "native": "ඔබේ වයස කීයද?",
+          "phonetic": "කොලිකො ඉමාතෙ ගොදිනා?"
+        },
+        {
+          "id": "s2_srb_9_3",
+          "target": "Šta je ovo?",
+          "native": "මේ මොකක්ද?",
+          "phonetic": "ෂ්ටා යේ ඔවො?"
+        },
+        {
+          "id": "s2_srb_9_4",
+          "target": "Gde je autobuska stanica?",
+          "native": "බස් නැවතුම කොහෙද?",
+          "phonetic": "ග්දේ යේ අවුතොබුස්කා ස්තානිට්සා?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_srb_9_1",
+          "context": "නම ඇසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Zdravo, kako se zovete?",
+              "native": "ආයුබෝවන්, ඔබේ නම මොකක්ද?",
+              "phonetic": "ස්ද්‍රාවො, කාකො සෙ සොවෙතේ?"
+            },
+            {
+              "speaker": "B",
+              "target": "Zovem se Milan.",
+              "native": "මගේ නම මිලන්.",
+              "phonetic": "සොවෙම් සෙ මිලන්."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_9_2",
+          "context": "වයස ඇසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Koliko imate godina?",
+              "native": "ඔබේ වයස කීයද?",
+              "phonetic": "කොලිකො ඉමාතෙ ගොදිනා?"
+            },
+            {
+              "speaker": "B",
+              "target": "Imam dvadeset pet godina.",
+              "native": "මට වයස අවුරුදු විසිපහයි.",
+              "phonetic": "ඉමාම් ද්වාදෙසෙත් පෙත් ගොදිනා."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_9_3",
+          "context": "යමක් ගැන විමසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Šta je ovo?",
+              "native": "මේ මොකක්ද?",
+              "phonetic": "ෂ්ටා යේ ඔවො?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ovo je knjiga.",
+              "native": "මේක පොතක්.",
+              "phonetic": "ඔවො යේ ක්නිගා."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_9_4",
+          "context": "ස්ථානයක් ගැන ඇසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Kada se otvara prodavnica?",
+              "native": "කඩේ විවෘත කරන්නේ කවදාද?",
+              "phonetic": "කාදා සෙ ඔත්වාරා ප්‍රොදව්නිට්සා?"
+            },
+            {
+              "speaker": "B",
+              "target": "U devet ujutru.",
+              "native": "උදේ නවයට.",
+              "phonetic": "උ දෙවෙත් උයුත්රු."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb2_srb_9_1",
+            "sentence": "___ je vaše ime?",
+            "answer": "Šta",
+            "hint": "මොකක්ද"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m2_srb_9_1",
+            "target": "Ko",
+            "native": "කවුද"
+          },
+          {
+            "id": "m2_srb_9_2",
+            "target": "Kada",
+            "native": "කවදාද"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_srb_9_1",
+            "scrambled": ["ste", "Odakle"],
+            "correct": "Odakle ste?",
+            "nativeHint": "ඔබ කොහේ කෙනෙක්ද?"
+          }
+        ]
+      },
+      "cultural_note": "සර්බියානු සංස්කෘතියේ, මිනිසුන් හමුවීමේදී අතට අත දීම සාමාන්‍ය දෙයකි. මිතුරන් සහ පවුලේ අය අතර, කම්මුල් තුන් වරක් සිප ගැනීම (දකුණ, වම, දකුණ) සාමාන්‍ය ආචාරයකි.",
+      "pronunciation_tip": "'Šta' (ෂ්ටා) හි 'Š' ශබ්දය ඉංග්‍රීසි 'sh' ශබ්දයට සමාන වේ. 'Zašto' (සෂ්තො) හි 'ž' ශබ්දය 'plea**su**re' හි 's' ශබ්දයට සමාන වේ.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W2D9-Questions-SRB"
+      }
+    },
+    {
+      "week": 2,
+      "day": 10,
+      "title": "10 වන දිනය: සරල තොරතුරු ලබා දීම",
+      "title_native": "Dan 10: Davanje jednostavnih informacija",
+      "theme": "Giving simple information",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w2_srb_10_1",
+          "target": "Da",
+          "phonetic": "දා",
+          "native_meaning": "ඔව්",
+          "english": "Yes",
+          "example_sentence_target": "Da, spreman sam.",
+          "example_sentence_native": "ඔව්, මම සූදානම්.",
+          "example_sentence_phonetic": "දා, ස්ප්‍රෙමන් සම්."
+        },
+        {
+          "id": "w2_srb_10_2",
+          "target": "Ne",
+          "phonetic": "නෙ",
           "native_meaning": "නැහැ",
-          "english": "no",
-          "example_sentence_target": "ne!",
-          "example_sentence_native": "නැහැ!",
-          "example_sentence_phonetic": "ne"
+          "english": "No",
+          "example_sentence_target": "Ne, hvala.",
+          "example_sentence_native": "නැහැ, ස්තූතියි.",
+          "example_sentence_phonetic": "නෙ, හ්වාලා."
         },
         {
-          "id": "w2_1_2",
-          "target": "hvala",
-          "phonetic": "hva-la",
-          "native_meaning": "ස්තුතියි",
-          "english": "thank you",
-          "example_sentence_target": "hvala!",
-          "example_sentence_native": "ස්තුතියි!",
-          "example_sentence_phonetic": "hva-la"
+          "id": "w2_srb_10_3",
+          "target": "Možda",
+          "phonetic": "මොෂ්දා",
+          "native_meaning": "සමහරවිට",
+          "english": "Maybe",
+          "example_sentence_target": "Možda sutra.",
+          "example_sentence_native": "සමහරවිට හෙට.",
+          "example_sentence_phonetic": "මොෂ්දා සුත්‍රා."
         },
         {
-          "id": "w2_1_3",
-          "target": "molim",
-          "phonetic": "mo-lim",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "molim!",
-          "example_sentence_native": "කරුණාකර!",
-          "example_sentence_phonetic": "mo-lim"
+          "id": "w2_srb_10_4",
+          "target": "U redu",
+          "phonetic": "උ රේදු",
+          "native_meaning": "හරි",
+          "english": "Okay",
+          "example_sentence_target": "U redu, dolazim.",
+          "example_sentence_native": "හරි, මම එනවා.",
+          "example_sentence_phonetic": "උ රේදු, දොලසිම්."
         },
         {
-          "id": "w2_1_4",
-          "target": "kako si",
-          "phonetic": "ka-ko si",
-          "native_meaning": "ඔබට කොහොමද",
-          "english": "how are you",
-          "example_sentence_target": "kako si!",
-          "example_sentence_native": "ඔබට කොහොමද!",
-          "example_sentence_phonetic": "ka-ko si"
+          "id": "w2_srb_10_5",
+          "target": "Ovde",
+          "phonetic": "ඔව්දේ",
+          "native_meaning": "මෙතන",
+          "english": "Here",
+          "example_sentence_target": "Ja sam ovde.",
+          "example_sentence_native": "මම මෙතන ඉන්නවා.",
+          "example_sentence_phonetic": "යා සම් ඔව්දේ."
         },
         {
-          "id": "w2_1_5",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
+          "id": "w2_srb_10_6",
+          "target": "Tamo",
+          "phonetic": "තාමො",
+          "native_meaning": "එතන",
+          "english": "There",
+          "example_sentence_target": "On je tamo.",
+          "example_sentence_native": "එයා එතන ඉන්නවා.",
+          "example_sentence_phonetic": "ඔන් යේ තාමො."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_10_1",
+          "target": "Moje ime je Sanja.",
+          "native": "මගේ නම සංජා.",
+          "phonetic": "මොයෙ ඉමෙ යේ සන්ජා."
+        },
+        {
+          "id": "s2_srb_10_2",
+          "target": "Ja sam iz Šri Lanke.",
+          "native": "මම ශ්‍රී ලංකාවෙන්.",
+          "phonetic": "යා සම් ඉස් ශ්‍රී ලංකේ."
+        },
+        {
+          "id": "s2_srb_10_3",
+          "target": "Ovo je moj pasoš.",
+          "native": "මේ මගේ පාස්පෝට් එක.",
+          "phonetic": "ඔවො යේ මොයි පසොෂ්."
+        },
+        {
+          "id": "s2_srb_10_4",
+          "target": "Znam to.",
+          "native": "මම ඒක දන්නවා.",
+          "phonetic": "ස්නාම් තො."
         }
       ],
       "dialogues": [
         {
-          "id": "d2_1_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
+          "id": "d2_srb_10_1",
+          "context": "ප්‍රශ්නයකට පිළිතුරු දීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
+              "target": "Da li govorite srpski?",
+              "native": "ඔබ සර්බියානු කතා කරනවාද?",
+              "phonetic": "දා ලි ගොවොරිතෙ ස්ර්ප්ස්කි?"
             },
             {
               "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
+              "target": "Da, malo.",
+              "native": "ඔව්, ටිකක්.",
+              "phonetic": "දා, මාලො."
             }
           ]
         },
         {
-          "id": "d2_1_2",
-          "context": "හදුන්වාදීම.",
+          "id": "d2_srb_10_2",
+          "context": "යමක් ප්‍රතික්ෂේප කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
+              "target": "Želite li još nešto?",
+              "native": "ඔබට තවත් යමක් අවශ්‍යද?",
+              "phonetic": "ෂෙලිතෙ ලි යොෂ් නෙෂ්තො?"
             },
             {
               "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
+              "target": "Ne, hvala.",
+              "native": "නැහැ, ස්තූතියි.",
+              "phonetic": "නෙ, හ්වාලා."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_10_3",
+          "context": "තමන්ව හඳුන්වා දීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Ko ste vi?",
+              "native": "ඔබ කවුද?",
+              "phonetic": "කෝ ස්තේ වි?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ja sam turista.",
+              "native": "මම සංචාරකයෙක්.",
+              "phonetic": "යා සම් තුරිස්තා."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_10_4",
+          "context": "ස්ථානයක් පෙන්වීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Gde je banka?",
+              "native": "බැංකුව කොහෙද?",
+              "phonetic": "ග්දේ යේ බන්කා?"
+            },
+            {
+              "speaker": "B",
+              "target": "Tamo je, pored te zgrade.",
+              "native": "එය එතන, අර ගොඩනැගිල්ල ළඟ.",
+              "phonetic": "තාමො යේ, පොරෙද් තේ ස්ග්‍රාදෙ."
             }
           ]
         }
@@ -106,154 +597,208 @@
       "exercises": {
         "fillBlanks": [
           {
-            "id": "fb2_1_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_1_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
+            "id": "fb2_srb_10_1",
+            "sentence": "___, dolazim.",
+            "answer": "U redu",
+            "hint": "හරි"
           }
         ],
         "matching": [
           {
-            "id": "m2_1_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
+            "id": "m2_srb_10_1",
+            "target": "Ovde",
+            "native": "මෙතන"
           },
           {
-            "id": "m2_1_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
+            "id": "m2_srb_10_2",
+            "target": "Tamo",
+            "native": "එතන"
           }
         ],
         "sentenceScramble": [
           {
-            "id": "ss2_1_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+            "id": "ss2_srb_10_1",
+            "scrambled": ["sam", "Ja", "iz", "Šri Lanke"],
+            "correct": "Ja sam iz Šri Lanke.",
+            "nativeHint": "මම ශ්‍රී ලංකාවෙන්."
           }
         ]
       },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "cultural_note": "සර්බියාවේ 'hvala' (ස්තූතියි) යැයි කීමෙන් පසු, 'nema na čemu' (ඒකට කමක් නෑ) යැයි පැවසීම ඉතා සුලභ හා ආචාරශීලී වේ.",
+      "pronunciation_tip": "'U redu' (උ රේදු) හි 'U' ශබ්දය සිංහල 'උ' යන්නට සමාන වේ. 'redu' හි 'r' ශබ්දය රෝල් කරන්න.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W2D1-Serbian"
+        "badge": "W2D10-InfoGiving-SRB"
       }
     },
     {
       "week": 2,
-      "day": 2,
-      "title": "Week 2 Day 2: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 2",
-      "theme": "Basic Communication",
+      "day": 11,
+      "title": "11 වන දිනය: ස්ථානයක් ඇසීම",
+      "title_native": "Dan 11: Pitanje za lokaciju",
+      "theme": "Asking for location",
       "path": "survival",
       "targetLanguage": "Serbian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
-          "id": "w2_2_1",
-          "target": "molim",
-          "phonetic": "mo-lim",
-          "native_meaning": "කරුණාකර",
-          "english": "please",
-          "example_sentence_target": "molim!",
-          "example_sentence_native": "කරුණාකර!",
-          "example_sentence_phonetic": "mo-lim"
+          "id": "w2_srb_11_1",
+          "target": "Najbliži",
+          "phonetic": "නයිබ්ලිෂි",
+          "native_meaning": "ළඟම",
+          "english": "Nearest",
+          "example_sentence_target": "Gde je najbliži bankomat?",
+          "example_sentence_native": "ළඟම ATM එක කොහෙද?",
+          "example_sentence_phonetic": "ග්දේ යේ නයිබ්ලිෂි බන්කොමාත්?"
         },
         {
-          "id": "w2_2_2",
-          "target": "kako si",
-          "phonetic": "ka-ko si",
-          "native_meaning": "ඔබට කොහොමද",
-          "english": "how are you",
-          "example_sentence_target": "kako si!",
-          "example_sentence_native": "ඔබට කොහොමද!",
-          "example_sentence_phonetic": "ka-ko si"
+          "id": "w2_srb_11_2",
+          "target": "Ulica",
+          "phonetic": "උලිට්සා",
+          "native_meaning": "පාර",
+          "english": "Street",
+          "example_sentence_target": "Koja je ovo ulica?",
+          "example_sentence_native": "මේ මොන පාරද?",
+          "example_sentence_phonetic": "කෝයා යේ ඔවො උලිට්සා?"
         },
         {
-          "id": "w2_2_3",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
+          "id": "w2_srb_11_3",
+          "target": "Daleko",
+          "phonetic": "දලෙකෝ",
+          "native_meaning": "දුර",
+          "english": "Far",
+          "example_sentence_target": "Da li je daleko?",
+          "example_sentence_native": "ඒක දුරද?",
+          "example_sentence_phonetic": "දා ලි යේ දලෙකෝ?"
         },
         {
-          "id": "w2_2_4",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
+          "id": "w2_srb_11_4",
+          "target": "Blizu",
+          "phonetic": "බ්ලීසු",
+          "native_meaning": "ළඟ",
+          "english": "Near",
+          "example_sentence_target": "Blizu je.",
+          "example_sentence_native": "ඒක ළඟ.",
+          "example_sentence_phonetic": "බ්ලීසු යේ."
         },
         {
-          "id": "w2_2_5",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
+          "id": "w2_srb_11_5",
+          "target": "Bolnica",
+          "phonetic": "බොල්නිට්සා",
+          "native_meaning": "රෝහල",
+          "english": "Hospital",
+          "example_sentence_target": "Gde je bolnica?",
+          "example_sentence_native": "රෝහල කොහෙද?",
+          "example_sentence_phonetic": "ග්දේ යේ බොල්නිට්සා?"
+        },
+        {
+          "id": "w2_srb_11_6",
+          "target": "Hotel",
+          "phonetic": "හෝටෙල්",
+          "native_meaning": "හෝටලය",
+          "english": "Hotel",
+          "example_sentence_target": "Treba mi dobar hotel.",
+          "example_sentence_native": "මට හොඳ හෝටලයක් අවශ්‍යයි.",
+          "example_sentence_phonetic": "ත්‍රෙබා මි දොබර් හෝටෙල්."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_11_1",
+          "target": "Gde je železnička stanica?",
+          "native": "දුම්රිය ස්ථානය කොහෙද?",
+          "phonetic": "ග්දේ යේ ෂෙලෙස්නිච්කා ස්තානිට්සා?"
+        },
+        {
+          "id": "s2_srb_11_2",
+          "target": "Možete li mi pokazati na mapi?",
+          "native": "ඔබට මට සිතියමේ පෙන්වන්න පුළුවන්ද?",
+          "phonetic": "මොෂෙතේ ලි මි පොකාසති නා මාපි?"
+        },
+        {
+          "id": "s2_srb_11_3",
+          "target": "Moram da idem na tu adresu.",
+          "native": "මට ඒ ලිපිනයට යන්න ඕන.",
+          "phonetic": "මොරම් දා ඉදෙම් නා තු අද්‍රෙසු."
+        },
+        {
+          "id": "s2_srb_11_4",
+          "target": "Koliko je daleko odavde?",
+          "native": "මෙතන ඉඳන් ඒක කොච්චර දුරද?",
+          "phonetic": "කොලිකො යේ දලෙකෝ ඔදව්දේ?"
         }
       ],
       "dialogues": [
         {
-          "id": "d2_2_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
+          "id": "d2_srb_11_1",
+          "context": "බස් නැවතුම සොයමින්.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
+              "target": "Izvinite, gde je autobuska stanica?",
+              "native": "සමාවන්න, බස් නැවතුම කොහෙද?",
+              "phonetic": "ඉස්විනිතෙ, ග්දේ යේ අවුතොබුස්කා ස්තානිට්සා?"
             },
             {
               "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
+              "target": "Idite pravo, pa desno.",
+              "native": "කෙලින් ගිහින්, දකුණට හැරෙන්න.",
+              "phonetic": "ඉදිතෙ ප්‍රාවෝ, පා දෙන්සෝ."
             }
           ]
         },
         {
-          "id": "d2_2_2",
-          "context": "හදුන්වාදීම.",
+          "id": "d2_srb_11_2",
+          "context": "දුර ප්‍රමාණය ඇසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
+              "target": "Da li je aerodrom daleko odavde?",
+              "native": "ගුවන්තොටුපළ මෙතනින් දුරද?",
+              "phonetic": "දා ලි යේ අඑරොද්‍රොම් දලෙකෝ ඔදව්දේ?"
             },
             {
               "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
+              "target": "Da, oko deset kilometara.",
+              "native": "ඔව්, කිලෝමීටර් දහයක් විතර.",
+              "phonetic": "දා, ඔකො දෙසෙත් කිලෝමෙතාරා."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_11_3",
+          "context": "හෝටලයක් සොයාගැනීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Ima li neki jeftin hotel u blizini?",
+              "native": "මේ ළඟපාත මිල අඩු හෝටලයක් තියෙනවාද?",
+              "phonetic": "ඉමා ලි නෙකි යෙෆ්තින් හෝටෙල් උ බ්ලිසිනි?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, ima jedan u sledećoj ulici.",
+              "native": "ඔව්, ඊළඟ පාරේ එකක් තියෙනවා.",
+              "phonetic": "දා, ඉමා යෙදන් උ ස්ලෙදෙචොයි උලිට්සි."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_11_4",
+          "context": "රෝහලක් ගැන විමසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moram hitno u bolnicu.",
+              "native": "මට ඉක්මනින් රෝහලකට යන්න ඕන.",
+              "phonetic": "මොරම් හිත්නො උ බොල්නිට්සු."
+            },
+            {
+              "speaker": "B",
+              "target": "Ne brinite, blizu je.",
+              "native": "කණගාටු වෙන්න එපා, ඒක ළඟම තියෙන්නේ.",
+              "phonetic": "නෙ බ්‍රිනිතෙ, බ්ලීසු යේ."
             }
           ]
         }
@@ -261,619 +806,208 @@
       "exercises": {
         "fillBlanks": [
           {
-            "id": "fb2_2_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_2_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
+            "id": "fb2_srb_11_1",
+            "sentence": "Gde je ___ bolnica?",
+            "answer": "najbliža",
+            "hint": "ළඟම (ස්ත්‍රී)"
           }
         ],
         "matching": [
           {
-            "id": "m2_2_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
+            "id": "m2_srb_11_1",
+            "target": "Daleko",
+            "native": "දුර"
           },
           {
-            "id": "m2_2_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
+            "id": "m2_srb_11_2",
+            "target": "Blizu",
+            "native": "ළඟ"
           }
         ],
         "sentenceScramble": [
           {
-            "id": "ss2_2_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+            "id": "ss2_srb_11_1",
+            "scrambled": ["stanica", "je", "Gde", "železnička"],
+            "correct": "Gde je železnička stanica?",
+            "nativeHint": "දුම්රිය ස්ථානය කොහෙද?"
           }
         ]
       },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "cultural_note": "සර්බියාවේදී, විශේෂයෙන් කුඩා නගරවල, මිනිසුන් මාර්ගය පෙන්වීමට ඉතා කැමැත්තෙන් උදව් කරති. ඔවුන් ඔබ සමඟ ටික දුරක් ඇවිදීමට පවා ඉඩ ඇත.",
+      "pronunciation_tip": "සර්බියානු භාෂාවේ, 'nj' (න්‍ය) සහ 'lj' (ල්‍ය) වැනි සංයුක්ත අක්ෂර තනි ශබ්ද ලෙස උච්චාරණය කෙරේ. 'Najbliži' (නයිබ්ලිෂි) හි 'nj' ශබ්දය මෙන්.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W2D2-Serbian"
+        "badge": "W2D11-Location-SRB"
       }
     },
     {
       "week": 2,
-      "day": 3,
-      "title": "Week 2 Day 3: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 3",
-      "theme": "Basic Communication",
+      "day": 12,
+      "title": "12 වන දිනය: දිශාවන්",
+      "title_native": "Dan 12: Pravci",
+      "theme": "Directions",
       "path": "survival",
       "targetLanguage": "Serbian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
-          "id": "w2_3_1",
-          "target": "doviđenja",
-          "phonetic": "do-vi-dje-nja",
-          "native_meaning": "විදාගන්නම්",
-          "english": "goodbye",
-          "example_sentence_target": "doviđenja!",
-          "example_sentence_native": "විදාගන්නම්!",
-          "example_sentence_phonetic": "do-vi-dje-nja"
-        },
-        {
-          "id": "w2_3_2",
-          "target": "moje ime je",
-          "phonetic": "mo-ye i-me ye",
-          "native_meaning": "මගේ නම",
-          "english": "my name is",
-          "example_sentence_target": "moje ime je!",
-          "example_sentence_native": "මගේ නම!",
-          "example_sentence_phonetic": "mo-ye i-me ye"
-        },
-        {
-          "id": "w2_3_3",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
-        },
-        {
-          "id": "w2_3_4",
-          "target": "voda",
-          "phonetic": "vo-da",
-          "native_meaning": "වතුර",
-          "english": "water",
-          "example_sentence_target": "voda!",
-          "example_sentence_native": "වතුර!",
-          "example_sentence_phonetic": "vo-da"
-        },
-        {
-          "id": "w2_3_5",
-          "target": "hrana",
-          "phonetic": "hra-na",
-          "native_meaning": "ආහාර",
-          "english": "food",
-          "example_sentence_target": "hrana!",
-          "example_sentence_native": "ආහාර!",
-          "example_sentence_phonetic": "hra-na"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d2_3_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d2_3_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_3_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_3_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_3_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m2_3_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss2_3_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W2D3-Serbian"
-      }
-    },
-    {
-      "week": 2,
-      "day": 4,
-      "title": "Week 2 Day 4: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 4",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w2_4_1",
-          "target": "gde",
-          "phonetic": "gde",
-          "native_meaning": "කොහෙද",
-          "english": "where",
-          "example_sentence_target": "gde!",
-          "example_sentence_native": "කොහෙද!",
-          "example_sentence_phonetic": "gde"
-        },
-        {
-          "id": "w2_4_2",
-          "target": "voda",
-          "phonetic": "vo-da",
-          "native_meaning": "වතුර",
-          "english": "water",
-          "example_sentence_target": "voda!",
-          "example_sentence_native": "වතුර!",
-          "example_sentence_phonetic": "vo-da"
-        },
-        {
-          "id": "w2_4_3",
-          "target": "hrana",
-          "phonetic": "hra-na",
-          "native_meaning": "ආහාර",
-          "english": "food",
-          "example_sentence_target": "hrana!",
-          "example_sentence_native": "ආහාර!",
-          "example_sentence_phonetic": "hra-na"
-        },
-        {
-          "id": "w2_4_4",
-          "target": "restoran",
-          "phonetic": "res-to-ran",
-          "native_meaning": "ආපන ශාලාව",
-          "english": "restaurant",
-          "example_sentence_target": "restoran!",
-          "example_sentence_native": "ආපන ශාලාව!",
-          "example_sentence_phonetic": "res-to-ran"
-        },
-        {
-          "id": "w2_4_5",
-          "target": "desno",
-          "phonetic": "des-no",
-          "native_meaning": "දකුණ",
-          "english": "right",
-          "example_sentence_target": "desno!",
-          "example_sentence_native": "දකුණ!",
-          "example_sentence_phonetic": "des-no"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d2_4_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d2_4_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_4_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_4_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_4_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m2_4_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss2_4_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W2D4-Serbian"
-      }
-    },
-    {
-      "week": 2,
-      "day": 5,
-      "title": "Week 2 Day 5: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 5",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w2_5_1",
-          "target": "hrana",
-          "phonetic": "hra-na",
-          "native_meaning": "ආහාර",
-          "english": "food",
-          "example_sentence_target": "hrana!",
-          "example_sentence_native": "ආහාර!",
-          "example_sentence_phonetic": "hra-na"
-        },
-        {
-          "id": "w2_5_2",
-          "target": "restoran",
-          "phonetic": "res-to-ran",
-          "native_meaning": "ආපන ශාලාව",
-          "english": "restaurant",
-          "example_sentence_target": "restoran!",
-          "example_sentence_native": "ආපන ශාලාව!",
-          "example_sentence_phonetic": "res-to-ran"
-        },
-        {
-          "id": "w2_5_3",
-          "target": "desno",
-          "phonetic": "des-no",
-          "native_meaning": "දකුණ",
-          "english": "right",
-          "example_sentence_target": "desno!",
-          "example_sentence_native": "දකුණ!",
-          "example_sentence_phonetic": "des-no"
-        },
-        {
-          "id": "w2_5_4",
-          "target": "levo",
-          "phonetic": "le-vo",
+          "id": "w2_srb_12_1",
+          "target": "Levo",
+          "phonetic": "ලේවො",
           "native_meaning": "වම",
-          "english": "left",
-          "example_sentence_target": "levo!",
-          "example_sentence_native": "වම!",
-          "example_sentence_phonetic": "le-vo"
+          "english": "Left",
+          "example_sentence_target": "Skrenite levo.",
+          "example_sentence_native": "වමට හැරෙන්න.",
+          "example_sentence_phonetic": "ස්ක්‍රෙනිතෙ ලේවො."
         },
         {
-          "id": "w2_5_5",
-          "target": "ulica",
-          "phonetic": "u-li-ca",
-          "native_meaning": "මාර්ගය",
-          "english": "street",
-          "example_sentence_target": "ulica!",
-          "example_sentence_native": "මාර්ගය!",
-          "example_sentence_phonetic": "u-li-ca"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d2_5_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
-            },
-            {
-              "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
-            }
-          ]
-        },
-        {
-          "id": "d2_5_2",
-          "context": "හදුන්වාදීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
-            },
-            {
-              "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
-            }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_5_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_5_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_5_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
-          },
-          {
-            "id": "m2_5_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
-          }
-        ],
-        "sentenceScramble": [
-          {
-            "id": "ss2_5_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
-          }
-        ]
-      },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W2D5-Serbian"
-      }
-    },
-    {
-      "week": 2,
-      "day": 6,
-      "title": "Week 2 Day 6: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 6",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Serbian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w2_6_1",
-          "target": "desno",
-          "phonetic": "des-no",
+          "id": "w2_srb_12_2",
+          "target": "Desno",
+          "phonetic": "දෙස්නො",
           "native_meaning": "දකුණ",
-          "english": "right",
-          "example_sentence_target": "desno!",
-          "example_sentence_native": "දකුණ!",
-          "example_sentence_phonetic": "des-no"
+          "english": "Right",
+          "example_sentence_target": "Skrenite desno.",
+          "example_sentence_native": "දකුණට හැරෙන්න.",
+          "example_sentence_phonetic": "ස්ක්‍රෙනිතෙ දෙස්නො."
         },
         {
-          "id": "w2_6_2",
-          "target": "levo",
-          "phonetic": "le-vo",
-          "native_meaning": "වම",
-          "english": "left",
-          "example_sentence_target": "levo!",
-          "example_sentence_native": "වම!",
-          "example_sentence_phonetic": "le-vo"
+          "id": "w2_srb_12_3",
+          "target": "Pravo",
+          "phonetic": "ප්‍රාවො",
+          "native_meaning": "කෙලින්",
+          "english": "Straight",
+          "example_sentence_target": "Idite pravo.",
+          "example_sentence_native": "කෙලින් යන්න.",
+          "example_sentence_phonetic": "ඉදිතෙ ප්‍රාවො."
         },
         {
-          "id": "w2_6_3",
-          "target": "ulica",
-          "phonetic": "u-li-ca",
-          "native_meaning": "මාර්ගය",
-          "english": "street",
-          "example_sentence_target": "ulica!",
-          "example_sentence_native": "මාර්ගය!",
-          "example_sentence_phonetic": "u-li-ca"
+          "id": "w2_srb_12_4",
+          "target": "Iza",
+          "phonetic": "ඉසා",
+          "native_meaning": "පිටුපස",
+          "english": "Behind",
+          "example_sentence_target": "Iza zgrade.",
+          "example_sentence_native": "ගොඩනැගිල්ල පිටුපස.",
+          "example_sentence_phonetic": "ඉසා ස්ග්‍රාදෙ."
         },
         {
-          "id": "w2_6_4",
-          "target": "vreme",
-          "phonetic": "vre-me",
-          "native_meaning": "කාලය",
-          "english": "time",
-          "example_sentence_target": "vreme!",
-          "example_sentence_native": "කාලය!",
-          "example_sentence_phonetic": "vre-me"
+          "id": "w2_srb_12_5",
+          "target": "Ispred",
+          "phonetic": "ඉස්ප්‍රෙද්",
+          "native_meaning": "ඉදිරියෙන්",
+          "english": "In front of",
+          "example_sentence_target": "Ispred hotela.",
+          "example_sentence_native": "හෝටලය ඉදිරිපිට.",
+          "example_sentence_phonetic": "ඉස්ප්‍රෙද් හෝටෙලා."
         },
         {
-          "id": "w2_6_5",
-          "target": "posao",
-          "phonetic": "po-sao",
-          "native_meaning": "වැඩ",
-          "english": "work",
-          "example_sentence_target": "posao!",
-          "example_sentence_native": "වැඩ!",
-          "example_sentence_phonetic": "po-sao"
+          "id": "w2_srb_12_6",
+          "target": "Na uglu",
+          "phonetic": "නා උග්ලු",
+          "native_meaning": "මුල්ලේ",
+          "english": "At the corner",
+          "example_sentence_target": "Prodavnica je na uglu.",
+          "example_sentence_native": "කඩේ තියෙන්නේ මුල්ලේ.",
+          "example_sentence_phonetic": "ප්‍රොදව්නිට්සා යේ නා උග්ලු."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_12_1",
+          "target": "Na sledećem semaforu skrenite desno.",
+          "native": "ඊළඟ ට්‍රැෆික් ලයිට් එකෙන් දකුණට හැරෙන්න.",
+          "phonetic": "නා ස්ලෙදෙචෙම් සෙමෆොරු ස්ක්‍රෙනිතෙ දෙස්නො."
+        },
+        {
+          "id": "s2_srb_12_2",
+          "target": "Idite pravo sto metara.",
+          "native": "මීටර් සීයයක් කෙලින් යන්න.",
+          "phonetic": "ඉදිතෙ ප්‍රාවො ස්තෝ මෙතාරා."
+        },
+        {
+          "id": "s2_srb_12_3",
+          "target": "Biće sa vaše leve strane.",
+          "native": "එය ඔබේ වම් පැත්තේ තිබේවි.",
+          "phonetic": "බිචෙ සා වාෂේ ලේවේ ස්ත්‍රානෙ."
+        },
+        {
+          "id": "s2_srb_12_4",
+          "target": "Pređite prvu raskrsnicu.",
+          "native": "පළමු හන්දිය පහු කරන්න.",
+          "phonetic": "ප්‍රෙජිතෙ ප්‍ර්වූ රස්ක්‍ර්ස්නිට්සු."
         }
       ],
       "dialogues": [
         {
-          "id": "d2_6_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
+          "id": "d2_srb_12_1",
+          "context": "සරල දිශානතියක් ලබා දීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
+              "target": "Kako da dođem do pošte?",
+              "native": "තැපැල් කන්තෝරුවට යන්නේ කොහොමද?",
+              "phonetic": "කාකො දා දොජෙම් දො පොෂ්තේ?"
             },
             {
               "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
+              "target": "Idite pravo i skrenite levo.",
+              "native": "කෙලින් ගිහින් වමට හැරෙන්න.",
+              "phonetic": "ඉදිතෙ ප්‍රාවො ඉ ස්ක්‍රෙනිතෙ ලේවො."
             }
           ]
         },
         {
-          "id": "d2_6_2",
-          "context": "හදුන්වාදීම.",
+          "id": "d2_srb_12_2",
+          "context": "දිශානතිය තහවුරු කරගැනීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
+              "target": "Znači, desno ovde?",
+              "native": "එතකොට, මෙතනින් දකුණටද?",
+              "phonetic": "ස්නාචි, දෙස්නො ඔව්දේ?"
             },
             {
               "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
+              "target": "Da, tačno tako, desno.",
+              "native": "ඔව්, හරියටම හරි, දකුණට.",
+              "phonetic": "දා, තච්නො තාකො, දෙස්නො."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_12_3",
+          "context": "ගොඩනැගිල්ලක පිහිටීම පැහැදිලි කිරීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Gde je banka?",
+              "native": "බැංකුව කොහෙද?",
+              "phonetic": "ග්දේ යේ බන්කා?"
+            },
+            {
+              "speaker": "B",
+              "target": "Na uglu je, pored apoteke.",
+              "native": "එය මුල්ලේ, ෆාමසිය ළඟ.",
+              "phonetic": "නා උග්ලු යේ, පොරෙද් අපොතේකේ."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_12_4",
+          "context": "ආපසු යන මාර්ගය ඇසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Moram da se vratim u hotel.",
+              "native": "මට ආපහු හෝටලයට යන්න ඕන.",
+              "phonetic": "මොරම් දා සෙ ව්‍රාතිම් උ හෝටෙල්."
+            },
+            {
+              "speaker": "B",
+              "target": "Vratite se nazad, pa skrenite desno.",
+              "native": "ආපස්සට ගිහින් දකුණට හැරෙන්න.",
+              "phonetic": "ව්‍රාතිතෙ සෙ නසාද්, පා ස්ක්‍රෙනිතෙ දෙස්නො."
             }
           ]
         }
@@ -881,154 +1015,208 @@
       "exercises": {
         "fillBlanks": [
           {
-            "id": "fb2_6_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_6_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
+            "id": "fb2_srb_12_1",
+            "sentence": "Idite ___, pa skrenite desno.",
+            "answer": "pravo",
+            "hint": "කෙලින්"
           }
         ],
         "matching": [
           {
-            "id": "m2_6_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
+            "id": "m2_srb_12_1",
+            "target": "Levo",
+            "native": "වම"
           },
           {
-            "id": "m2_6_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
+            "id": "m2_srb_12_2",
+            "target": "Desno",
+            "native": "දකුණ"
           }
         ],
         "sentenceScramble": [
           {
-            "id": "ss2_6_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+            "id": "ss2_srb_12_1",
+            "scrambled": ["levo", "skrenite", "Idite", "pravo", "i"],
+            "correct": "Idite pravo i skrenite levo.",
+            "nativeHint": "කෙලින් ගිහින් වමට හැරෙන්න."
           }
         ]
       },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "cultural_note": "සර්බියාවේදී, ඔබ අතරමං වුවහොත්, උදව් ඉල්ලීමට බිය නොවන්න. මිනිසුන් සාමාන්‍යයෙන් ඉතා මිත්‍රශීලී වන අතර ඔබට උදව් කිරීමට සතුටු වනු ඇත.",
+      "pronunciation_tip": "සර්බියානු භාෂාවේ සෑම අකුරක්ම එකම ආකාරයකින් උච්චාරණය කෙරේ. 'Pravo' (ප්‍රාවො) හි 'a' සහ 'o' ශබ්ද පැහැදිලි සහ විවෘත වේ.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W2D6-Serbian"
+        "badge": "W2D12-Directions-SRB"
       }
     },
     {
       "week": 2,
-      "day": 7,
-      "title": "Week 2 Day 7: Serbian Survival",
-      "title_native": "Nedelja 2 Dan 7",
-      "theme": "Basic Communication",
+      "day": 13,
+      "title": "13 වන දිනය: පොදු ස්ථාන",
+      "title_native": "Dan 13: Javna mesta",
+      "theme": "Public places",
       "path": "survival",
       "targetLanguage": "Serbian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
-          "id": "w2_7_1",
-          "target": "ulica",
-          "phonetic": "u-li-ca",
-          "native_meaning": "මාර්ගය",
-          "english": "street",
-          "example_sentence_target": "ulica!",
-          "example_sentence_native": "මාර්ගය!",
-          "example_sentence_phonetic": "u-li-ca"
+          "id": "w2_srb_13_1",
+          "target": "Pijaca",
+          "phonetic": "පියට්සා",
+          "native_meaning": "වෙළඳපොළ",
+          "english": "Market",
+          "example_sentence_target": "Idem na pijacu.",
+          "example_sentence_native": "මම වෙළඳපොළට යනවා.",
+          "example_sentence_phonetic": "ඉදෙම් නා පියට්සු."
         },
         {
-          "id": "w2_7_2",
-          "target": "vreme",
-          "phonetic": "vre-me",
-          "native_meaning": "කාලය",
-          "english": "time",
-          "example_sentence_target": "vreme!",
-          "example_sentence_native": "කාලය!",
-          "example_sentence_phonetic": "vre-me"
+          "id": "w2_srb_13_2",
+          "target": "Prodavnica",
+          "phonetic": "ප්‍රොදව්නිට්සා",
+          "native_meaning": "කඩේ",
+          "english": "Shop",
+          "example_sentence_target": "Ovo je prodavnica odeće.",
+          "example_sentence_native": "මේක ඇඳුම් කඩයක්.",
+          "example_sentence_phonetic": "ඔවො යේ ප්‍රොදව්නිට්සා ඔදෙචේ."
         },
         {
-          "id": "w2_7_3",
-          "target": "posao",
-          "phonetic": "po-sao",
-          "native_meaning": "වැඩ",
-          "english": "work",
-          "example_sentence_target": "posao!",
-          "example_sentence_native": "වැඩ!",
-          "example_sentence_phonetic": "po-sao"
+          "id": "w2_srb_13_3",
+          "target": "Restoran",
+          "phonetic": "රෙස්තොරන්",
+          "native_meaning": "ආපනශාලාව",
+          "english": "Restaurant",
+          "example_sentence_target": "Hajde da jedemo u restoranu.",
+          "example_sentence_native": "අපි ආපනශාලාවෙන් කමු.",
+          "example_sentence_phonetic": "හයිදෙ දා යෙදෙමො උ රෙස්තොරනු."
         },
         {
-          "id": "w2_7_4",
-          "target": "doktor",
-          "phonetic": "dok-tor",
-          "native_meaning": "වෛද්‍ය",
-          "english": "doctor",
-          "example_sentence_target": "doktor!",
-          "example_sentence_native": "වෛද්‍ය!",
-          "example_sentence_phonetic": "dok-tor"
+          "id": "w2_srb_13_4",
+          "target": "Park",
+          "phonetic": "පාර්ක්",
+          "native_meaning": "උද්‍යානය",
+          "english": "Park",
+          "example_sentence_target": "Deca se igraju u parku.",
+          "example_sentence_native": "ළමයි උද්‍යානයේ සෙල්ලම් කරනවා.",
+          "example_sentence_phonetic": "දෙට්සා සෙ ඉග්‍රායු උ පාර්කු."
         },
         {
-          "id": "w2_7_5",
-          "target": "zdravo",
-          "phonetic": "zdra-vo",
-          "native_meaning": "ආයුබෝවන්",
-          "english": "hello",
-          "example_sentence_target": "zdravo!",
-          "example_sentence_native": "ආයුබෝවන්!",
-          "example_sentence_phonetic": "zdra-vo"
+          "id": "w2_srb_13_5",
+          "target": "Bioskop",
+          "phonetic": "බියොස්කොප්",
+          "native_meaning": "සිනමා ශාලාව",
+          "english": "Cinema",
+          "example_sentence_target": "Idemo večeras u bioskop.",
+          "example_sentence_native": "අපි අද රෑ සිනමා ශාලාවට යනවා.",
+          "example_sentence_phonetic": "ඉදෙමො වෙචෙරස් උ බියොස්කොප්."
+        },
+        {
+          "id": "w2_srb_13_6",
+          "target": "Muzej",
+          "phonetic": "මුසෙයි",
+          "native_meaning": "කෞතුකාගාරය",
+          "english": "Museum",
+          "example_sentence_target": "Muzej je zatvoren utorkom.",
+          "example_sentence_native": "කෞතුකාගාරය අඟහරුවාදා වසා ඇත.",
+          "example_sentence_phonetic": "මුසෙයි යේ සත්වොරෙන් උතොර්කොම්."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_13_1",
+          "target": "Moram da idem u prodavnicu.",
+          "native": "මට කඩේට යන්න ඕන.",
+          "phonetic": "මොරම් දා ඉදෙම් උ ප්‍රොදව්නිට්සු."
+        },
+        {
+          "id": "s2_srb_13_2",
+          "target": "Ima li ovde dobar restoran?",
+          "native": "මෙතන හොඳ ආපනශාලාවක් තියෙනවාද?",
+          "phonetic": "ඉමා ලි ඔව්දේ දොබර් රෙස්තොරන්?"
+        },
+        {
+          "id": "s2_srb_13_3",
+          "target": "Volim da šetam parkom.",
+          "native": "උද්‍යානයේ ඇවිදින්න ආසයි.",
+          "phonetic": "වොලිම් දා ෂේතම් පාර්කොම්."
+        },
+        {
+          "id": "s2_srb_13_4",
+          "target": "Gde je kasa?",
+          "native": "ටිකට් කවුන්ටරය කොහෙද?",
+          "phonetic": "ග්දේ යේ කසා?"
         }
       ],
       "dialogues": [
         {
-          "id": "d2_7_1",
-          "context": "දෙදෙනෙක් හමුවීම.",
+          "id": "d2_srb_13_1",
+          "context": "කෑමට තැනක් සොයමින්.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Zdravo",
-              "native": "ආයුබෝවන්",
-              "phonetic": "zdra-vo"
+              "target": "Gladan sam. Ima li neki restoran u blizini?",
+              "native": "මට බඩගිනියි. ළඟපාත ආපනශාලාවක් තියෙනවාද?",
+              "phonetic": "ග්ලාදන් සම්. ඉමා ලි නෙකි රෙස්තොරන් උ බ්ලිසිනි?"
             },
             {
               "speaker": "B",
-              "target": "Zdravo, kako si",
-              "native": "ඔබට කොහොමද",
-              "phonetic": "zdra-vo kako si"
+              "target": "Da, na uglu je odličan restoran domaće kuhinje.",
+              "native": "ඔව්, මුල්ලේ ඉතා හොඳ දේශීය කෑම ආපනශාලාවක් තියෙනවා.",
+              "phonetic": "දා, නා උග්ලු යේ ඔද්ලිචන් රෙස්තොරන් දොමාචේ කුහින්යේ."
             }
           ]
         },
         {
-          "id": "d2_7_2",
-          "context": "හදුන්වාදීම.",
+          "id": "d2_srb_13_2",
+          "context": "වෙළඳපොළට යාම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Moje ime je Marko",
-              "native": "මගේ නම මාර්කෝ",
-              "phonetic": "mo-ye i-me ye marko"
+              "target": "Koliko je velika ova pijaca?",
+              "native": "මේ වෙළඳපොළ කොච්චර ලොකුද?",
+              "phonetic": "කොලිකො යේ වෙලිකා ඔවා පියට්සා?"
             },
             {
               "speaker": "B",
-              "target": "Drago mi je",
-              "native": "ඔබ හමුවීම සතුටක්",
-              "phonetic": "dra-go mi ye"
+              "target": "Ovo je najveća pijaca u gradu.",
+              "native": "මේක නගරයේ ලොකුම වෙළඳපොළ.",
+              "phonetic": "ඔවො යේ නයිවෙචා පියට්සා උ ග්‍රාදු."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_13_3",
+          "context": "සිනමාවට යාම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Koji film se prikazuje?",
+              "native": "මොන චිත්‍රපටියද පෙන්වන්නේ?",
+              "phonetic": "කොයි ෆිල්ම් සෙ ප්‍රිකාසුයේ?"
+            },
+            {
+              "speaker": "B",
+              "target": "Neki novi domaći film.",
+              "native": "අලුත් දේශීය චිත්‍රපටියක්.",
+              "phonetic": "නෙකි නෝවි දොමාචි ෆිල්ම්."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_13_4",
+          "context": "කෞතුකාගාරය ගැන විමසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Koliko je ulaznica za muzej?",
+              "native": "කෞතුකාගාරයේ ඇතුල්වීමේ ගාස්තුව කීයද?",
+              "phonetic": "කොලිකො යේ උලස්නිට්සා සා මුසෙයි?"
+            },
+            {
+              "speaker": "B",
+              "target": "Besplatno je.",
+              "native": "එය නොමිලේ.",
+              "phonetic": "බෙස්ප්ලත්නො යේ."
             }
           ]
         }
@@ -1036,57 +1224,248 @@
       "exercises": {
         "fillBlanks": [
           {
-            "id": "fb2_7_1",
-            "sentence": "___ kako si",
-            "answer": "Zdravo",
-            "hint": "ආයුබෝවන් කියන Serbian වචනය"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_7_1",
-            "question": "‘hvala’ කියන්නේ කුමක්ද?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Yes",
-              "Water"
-            ],
-            "correct": 1,
-            "explanation": "‘hvala’ = ස්තුතියි"
+            "id": "fb2_srb_13_1",
+            "sentence": "Hajde da jedemo u ___.",
+            "answer": "restoranu",
+            "hint": "ආපනශාලාවේ"
           }
         ],
         "matching": [
           {
-            "id": "m2_7_1",
-            "target": "zdravo",
-            "native": "ආයුබෝවන්"
+            "id": "m2_srb_13_1",
+            "target": "Pijaca",
+            "native": "වෙළඳපොළ"
           },
           {
-            "id": "m2_7_2",
-            "target": "hvala",
-            "native": "ස්තුතියි"
+            "id": "m2_srb_13_2",
+            "target": "Prodavnica",
+            "native": "කඩේ"
           }
         ],
         "sentenceScramble": [
           {
-            "id": "ss2_7_1",
-            "scrambled": [
-              "kako",
-              "si",
-              "zdravo"
-            ],
-            "correct": "zdravo kako si",
-            "nativeHint": "ආයුබෝවන්, ඔබට කොහොමද"
+            "id": "ss2_srb_13_1",
+            "scrambled": ["idem", "pijacu", "na", "Ja"],
+            "correct": "Ja idem na pijacu.",
+            "nativeHint": "මම වෙළඳපොළට යනවා."
           }
         ]
       },
-      "cultural_note": "Serbia වල ‘zdravo’ යන්න සාමාන්‍ය greeting එකක්.",
-      "pronunciation_tip": "Serbian phonetic spelling Sinhala අයට කියවීමට පහසු ලෙස ලියලා ඇත.",
+      "cultural_note": "සර්බියාවේ 'pijaca' (වෙළඳපොළ) යනු නැවුම් එළවළු, පලතුරු සහ දේශීය නිෂ්පාදන මිලදී ගැනීමට හොඳම ස්ථානයයි. එය දේශීය සංස්කෘතිය අත්විඳීමට කදිම අවස්ථාවකි.",
+      "pronunciation_tip": "'Prodavnica' (ප්‍රොදව්නිට්සා) හි 'r' ශබ්දය සිංහල 'ර' ශබ්දයට සමාන වන අතර එය රෝල් කළ යුතුය.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W2D7-Serbian"
+        "badge": "W2D13-PublicPlaces-SRB"
+      }
+    },
+    {
+      "week": 2,
+      "day": 14,
+      "title": "14 වන දිනය: ගමන් බිමන්",
+      "title_native": "Dan 14: Putovanje",
+      "theme": "Travel",
+      "path": "survival",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        {
+          "id": "w2_srb_14_1",
+          "target": "Voz",
+          "phonetic": "වෝස්",
+          "native_meaning": "දුම්රිය",
+          "english": "Train",
+          "example_sentence_target": "Kada je sledeći voz?",
+          "example_sentence_native": "ඊළඟ දුම්රිය කවදාද?",
+          "example_sentence_phonetic": "කාදා යේ ස්ලෙදෙචි වෝස්?"
+        },
+        {
+          "id": "w2_srb_14_2",
+          "target": "Autobus",
+          "phonetic": "අවුතොබුස්",
+          "native_meaning": "බසය",
+          "english": "Bus",
+          "example_sentence_target": "Da li ovaj autobus ide do centra?",
+          "example_sentence_native": "මේ බසය නගර මධ්‍යයට යනවාද?",
+          "example_sentence_phonetic": "දා ලි ඔවායි අවුතොබුස් ඉදේ දො ට්සෙන්ත්‍රා?"
+        },
+        {
+          "id": "w2_srb_14_3",
+          "target": "Avion",
+          "phonetic": "අවියොන්",
+          "native_meaning": "ගුවන් යානය",
+          "english": "Aeroplane",
+          "example_sentence_target": "Avion je na vreme.",
+          "example_sentence_native": "ගුවන් යානය වෙලාවට තියෙනවා.",
+          "example_sentence_phonetic": "අවියොන් යේ නා ව්‍රෙමෙ."
+        },
+        {
+          "id": "w2_srb_14_4",
+          "target": "Karta",
+          "phonetic": "කාර්තා",
+          "native_meaning": "ටිකට් පත",
+          "english": "Ticket",
+          "example_sentence_target": "Treba mi jedna karta za Beograd.",
+          "example_sentence_native": "මට බෙල්ග්‍රේඩ් වලට ටිකට් පතක් අවශ්‍යයි.",
+          "example_sentence_phonetic": "ත්‍රෙබා මි යෙද්නා කාර්තා සා බෙඔග්‍රාද්."
+        },
+        {
+          "id": "w2_srb_14_5",
+          "target": "Stanica",
+          "phonetic": "ස්තානිට්සා",
+          "native_meaning": "ස්ථානය",
+          "english": "Station",
+          "example_sentence_target": "Železnička stanica je blizu.",
+          "example_sentence_native": "දුම්රිය ස්ථානය ළඟයි.",
+          "example_sentence_phonetic": "ෂෙලෙස්නිච්කා ස්තානිට්සා යේ බ්ලීසු."
+        },
+        {
+          "id": "w2_srb_14_6",
+          "target": "Aerodrom",
+          "phonetic": "අඑරොද්‍රොම්",
+          "native_meaning": "ගුවන්තොටුපළ",
+          "english": "Airport",
+          "example_sentence_target": "Gde mogu naći taksi za aerodrom?",
+          "example_sentence_native": "ගුවන්තොටුපළට ටැක්සියක් කොහෙන්ද හොයාගන්නේ?",
+          "example_sentence_phonetic": "ග්දේ මොගු නාචි තක්සි සා අඑරොද්‍රොම්?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s2_srb_14_1",
+          "target": "Idite na peron broj pet.",
+          "native": "වේදිකා අංක පහට යන්න.",
+          "phonetic": "ඉදිතෙ නා පෙරොන් බ්‍රොයි පෙත්."
+        },
+        {
+          "id": "s2_srb_14_2",
+          "target": "Moj let kasni.",
+          "native": "මගේ ගුවන් ගමන ප්‍රමාද වෙලා.",
+          "phonetic": "මොයි ලෙත් කස්නි."
+        },
+        {
+          "id": "s2_srb_14_3",
+          "target": "Karta u jednom pravcu ili povratna?",
+          "native": "එක පැත්තක ටිකට් එකක්ද නැත්නම් ආපසු එන ටිකට් එකක්ද?",
+          "phonetic": "කාර්තා උ යෙද්නොම් ප්‍රව්ත්සු ඉලි පොව්රත්නා?"
+        },
+        {
+          "id": "s2_srb_14_4",
+          "target": "Gde ide ovaj autobus?",
+          "native": "මේ බසය කොහෙද යන්නේ?",
+          "phonetic": "ග්දේ ඉදේ ඔවායි අවුතොබුස්?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d2_srb_14_1",
+          "context": "දුම්රිය ටිකට් පතක් මිලදී ගැනීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Dobar dan, treba mi jedna karta za Niš.",
+              "native": "සුබ දවසක්, මට නිශ් වලට ටිකට් එකක් අවශ්‍යයි.",
+              "phonetic": "දොබර් දන්, ත්‍රෙබා මි යෙද්නා කාර්තා සා නිෂ්."
+            },
+            {
+              "speaker": "B",
+              "target": "Naravno, u jednom pravcu ili povratna?",
+              "native": "ඇත්ත වශයෙන්ම, එක පැත්තකද නැත්නම් ආපසු එන එකක්ද?",
+              "phonetic": "නරව්නො, උ යෙද්නොම් ප්‍රව්ත්සු ඉලි පොව්රත්නා?"
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_14_2",
+          "context": "බස් රථය ගැන විමසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Izvinite, da li ovaj autobus ide do Trga Republike?",
+              "native": "සමාවන්න, මේ බසය ජනරජ චතුරශ්‍රයට යනවාද?",
+              "phonetic": "ඉස්විනිතෙ, දා ලි ඔවායි අවුතොබුස් ඉදේ දො තර්ගා රෙපුබ්ලිකේ?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ne, morate uzeti autobus broj 31.",
+              "native": "නැහැ, ඔබට බස් අංක 31 ගන්න වෙනවා.",
+              "phonetic": "නෙ, මොරාතෙ උසෙති අවුතොබුස් බ්‍රොයි ත්‍රීදෙසෙත් යෙදන්."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_14_3",
+          "context": "ගුවන්තොටුපලේදී.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Gde je šalter za prijavu na let?",
+              "native": "ගුවන් ගමනට ලියාපදිංචි වීමේ කවුන්ටරය කොහෙද?",
+              "phonetic": "ග්දේ යේ ශල්තර් සා ප්‍රියාವು නා ලෙත්?"
+            },
+            {
+              "speaker": "B",
+              "target": "Tamo, posle bezbednosne kontrole.",
+              "native": "එතන, ආරක්ෂක පරීක්ෂාවෙන් පස්සේ.",
+              "phonetic": "තාමො, පොස්ලේ බෙස්බෙද්නොස්නෙ කොන්ත්‍රොලේ."
+            }
+          ]
+        },
+        {
+          "id": "d2_srb_14_4",
+          "context": "ටැක්සියක් ඇමතීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Taksi! Možete li me odvesti do hotela Moskva?",
+              "native": "ටැක්සි! ඔබට මාව මොස්ක්වා හෝටලය වෙත ගෙන යා හැකිද?",
+              "phonetic": "තක්සි! මොෂෙතේ ලි මෙ ඔද්වෙස්ති දො හෝටෙලා මොස්ක්වා?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, naravno. Uđite.",
+              "native": "ඔව්, ඇත්ත වශයෙන්ම. ඇතුලට එන්න.",
+              "phonetic": "දා, නරව්නො. උජිතෙ."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb2_srb_14_1",
+            "sentence": "Kada je sledeći ___?",
+            "answer": "voz",
+            "hint": "දුම්රිය"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m2_srb_14_1",
+            "target": "Aerodrom",
+            "native": "ගුවන්තොටුපළ"
+          },
+          {
+            "id": "m2_srb_14_2",
+            "target": "Karta",
+            "native": "ටිකට් පත"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss2_srb_14_1",
+            "scrambled": ["autobus", "ovaj", "ide", "Gde"],
+            "correct": "Gde ide ovaj autobus?",
+            "nativeHint": "මේ බසය කොහෙද යන්නේ?"
+          }
+        ]
+      },
+      "cultural_note": "සර්බියාවේ නගරාන්තර බස් සහ දුම්රිය ගමන් සඳහා ඉතා ජනප්‍රියයි. බස් රථ සාමාන්‍යයෙන් වඩාත් නිතර සහ වැඩි ස්ථාන කරා ගමන් කරයි.",
+      "pronunciation_tip": "'Železlička' (ෂෙලෙස්නිච්කා) හි 'ž' ශබ්දය ඉංග්‍රීසි 'plea**su**re' හි 's' ශබ්දයට සමාන වේ. එය අමාරු ශබ්දයකි, නමුත් පුහුණුවෙන් ප්‍රගුණ කළ හැක.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W2D14-Travel-SRB"
       }
     }
   ]
