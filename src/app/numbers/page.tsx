@@ -23,7 +23,7 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
         <div className="flex flex-1 items-center gap-4">
           <AudioPlayback text={item.target} languageName={language} />
           <div className="text-left">
-            <p className="text-3xl sm:text-4xl font-bold">{item.target}</p>
+            <p className="text-2xl sm:text-3xl font-bold">{item.target}</p>
             <p className="text-muted-foreground">{item.phonetic}</p>
           </div>
         </div>
