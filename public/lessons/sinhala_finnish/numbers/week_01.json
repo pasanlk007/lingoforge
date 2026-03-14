@@ -1,15 +1,231 @@
+
 {
   "week": 1,
   "path": "numbers",
   "targetLanguage": "Finnish",
   "nativeLanguage": "Sinhala",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder" }},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder" }},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder" }},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder" }},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder" }},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder" }},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Sinhala", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder" }}
+    {
+      "week": 1,
+      "day": 1,
+      "title": "1 වන දිනය: අංක 1-5",
+      "title_native": "Päivä 1: Numerot 1-5",
+      "theme": "Numbers",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "sf_num_w1_d1_w1", "target": "yksi", "phonetic": "උක්සි", "native_meaning": "එක", "english": "one", "example_sentence_target": "Minulla on yksi kissa.", "example_sentence_native": "මට එක පූසෙක් ඉන්නවා.", "example_sentence_phonetic": "මිනුල්ලා ඔන් උක්සි කිස්සා." },
+        { "id": "sf_num_w1_d1_w2", "target": "kaksi", "phonetic": "කක්සි", "native_meaning": "දෙක", "english": "two", "example_sentence_target": "Hänellä on kaksi autoa.", "example_sentence_native": "ඔහුට කාර් දෙකක් තියෙනවා.", "example_sentence_phonetic": "හැනෙල්ලා ඔන් කක්සි අවුතෝවා." },
+        { "id": "sf_num_w1_d1_w3", "target": "kolme", "phonetic": "කොල්මෙ", "native_meaning": "තුන", "english": "three", "example_sentence_target": "Tarvitsen kolme omenaa.", "example_sentence_native": "මට ඇපල් තුනක් අවශ්‍යයි.", "example_sentence_phonetic": "තර්විත්සෙන් කොල්මෙ ඔමෙනා." },
+        { "id": "sf_num_w1_d1_w4", "target": "neljä", "phonetic": "නෙලියැ", "native_meaning": "හතර", "english": "four", "example_sentence_target": "Pöydässä on neljä tuolia.", "example_sentence_native": "මේසයේ පුටු හතරක් ඇත.", "example_sentence_phonetic": "පොඋදැස්ස ඔන් නෙලියැ තුවෝලියා." },
+        { "id": "sf_num_w1_d1_w5", "target": "viisi", "phonetic": "වීසි", "native_meaning": "පහ", "english": "five", "example_sentence_target": "Viisi plus viisi on kymmenen.", "example_sentence_native": "පහයි පහයි දහයයි.", "example_sentence_phonetic": "වීසි ප්ලුස් වීසි ඔන් කුම්මෙනෙන්." }
+      ],
+      "dialogues": [
+        {
+          "id": "sf_num_w1_d1_d1",
+          "context": "වෙළඳසැලකදී ඇපල් ගෙඩි ගණනක් ඉල්ලීම.",
+          "lines": [
+            { "speaker": "A", "target": "Hei, saisinko kolme omenaa, kiitos.", "native": "හෙලෝ, මට ඇපල් තුනක් ගන්න පුලුවන්ද, කරුණාකරලා.", "phonetic": "හෙයි, සයිසින්කො කොල්මෙ ඔමෙනා, කීතොස්." },
+            { "speaker": "B", "target": "Totta kai. Tässä, kolme omenaa.", "native": "ඇත්තෙන්ම. මෙන්න, ඇපල් තුනක්.", "phonetic": "තොත්තා කයි. තැස්ස, කොල්මෙ ඔමෙනා." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "sf_num_w1_d1_ex_m1", "target": "yksi", "native": "එක" },
+          { "id": "sf_num_w1_d1_ex_m2", "target": "kaksi", "native": "දෙක" },
+          { "id": "sf_num_w1_d1_ex_m3", "target": "kolme", "native": "තුන" },
+          { "id": "sf_num_w1_d1_ex_m4", "target": "neljä", "native": "හතර" },
+          { "id": "sf_num_w1_d1_ex_m5", "target": "viisi", "native": "පහ" }
+        ],
+         "sentenceScramble": [
+           { "id": "sf_num_w1_d1_ex_ss1", "scrambled": ["on", "yksi", "minulla", "kissa"], "correct": "Minulla on yksi kissa.", "nativeHint": "මට එක පූසෙක් ඉන්නවා."}
+         ]
+      },
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "NUM_SF_W1D1" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "2 වන දිනය: අංක 6-10",
+      "title_native": "Päivä 2: Numerot 6-10",
+      "theme": "Numbers",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "sf_num_w1_d2_w1", "target": "kuusi", "phonetic": "කූසි", "native_meaning": "හය", "english": "six", "example_sentence_target": "Minulla on kuusi kirjaa.", "example_sentence_native": "මා සතුව පොත් හයක් ඇත.", "example_sentence_phonetic": "මිනුල්ලා ඔන් කූසි කිරියා." },
+        { "id": "sf_num_w1_d2_w2", "target": "seitsemän", "phonetic": "සෙයිත්සෙමෙන්", "native_meaning": "හත", "english": "seven", "example_sentence_target": "Viikossa on seitsemän päivää.", "example_sentence_native": "සතියට දවස් හතක් ඇත.", "example_sentence_phonetic": "වීකොස්ස ඔන් සෙයිත්සෙමෙන් පයිවää." },
+        { "id": "sf_num_w1_d2_w3", "target": "kahdeksan", "phonetic": "කහ්දෙක්සන්", "native_meaning": "අට", "english": "eight", "example_sentence_target": "Hämähäkillä on kahdeksan jalkaa.", "example_sentence_native": "මකුළුවාට කකුල් අටක් ඇත.", "example_sentence_phonetic": "හැමහැකිල්ලා ඔන් කහ්දෙක්සන් යල්කා." },
+        { "id": "sf_num_w1_d2_w4", "target": "yhdeksän", "phonetic": "උහ්දෙක්සන්", "native_meaning": "නවය", "english": "nine", "example_sentence_target": "Kello on yhdeksän.", "example_sentence_native": "වෙලාව නවයයි.", "example_sentence_phonetic": "කෙල්ලො ඔන් උහ්දෙක්සන්." },
+        { "id": "sf_num_w1_d2_w5", "target": "kymmenen", "phonetic": "කුම්මෙනෙන්", "native_meaning": "දහය", "english": "ten", "example_sentence_target": "Minulla on kymmenen sormea.", "example_sentence_native": "මට ඇඟිලි දහයක් ඇත.", "example_sentence_phonetic": "මිනුල්ලා ඔන් කුම්මෙනෙන් සොර්මෙයා." }
+      ],
+      "dialogues": [
+        {
+          "id": "sf_num_w1_d2_d1",
+          "context": "වෙලාව ඇසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Anteeksi, mitä kello on?", "native": "සමාවෙන්න, වෙලාව කීයද?", "phonetic": "අන්තේක්සි, මිතැ කෙල්ලො ඔන්?" },
+            { "speaker": "B", "target": "Kello on yhdeksän.", "native": "වෙලාව නවයයි.", "phonetic": "කෙල්ලො ඔන් උහ්දෙක්සන්." }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "sf_num_w1_d2_ex_fb1", "sentence": "Viikossa on ___ päivää.", "answer": "seitsemän", "hint": "හත" }
+        ],
+        "matching": [
+          { "id": "sf_num_w1_d2_ex_m1", "target": "kuusi", "native": "හය" },
+          { "id": "sf_num_w1_d2_ex_m2", "target": "seitsemän", "native": "හත" },
+          { "id": "sf_num_w1_d2_ex_m3", "target": "kahdeksan", "native": "අට" },
+          { "id": "sf_num_w1_d2_ex_m4", "target": "yhdeksän", "native": "නවය" },
+          { "id": "sf_num_w1_d2_ex_m5", "target": "kymmenen", "native": "දහය" }
+        ]
+      },
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "NUM_SF_W1D2" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "3 වන දිනය: අංක 1-10 පුනරීක්ෂණය",
+      "title_native": "Päivä 3: Numeroiden 1-10 kertaus",
+      "theme": "Numbers Review",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [],
+      "sentences": [
+          { "id": "sf_num_w1_d3_s1", "target": "yksi, kaksi, kolme", "native": "එක, දෙක, තුන", "phonetic": "උක්සි, කක්සි, කොල්මෙ"},
+          { "id": "sf_num_w1_d3_s2", "target": "neljä, viisi, kuusi", "native": "හතර, පහ, හය", "phonetic": "නෙලියැ, වීසි, කූසි"},
+          { "id": "sf_num_w1_d3_s3", "target": "seitsemän, kahdeksan", "native": "හත, අට", "phonetic": "සෙයිත්සෙමෙන්, කහ්දෙක්සන්"},
+          { "id": "sf_num_w1_d3_s4", "target": "yhdeksän, kymmenen", "native": "නවය, දහය", "phonetic": "උහ්දෙක්සන්, කුම්මෙනෙන්"}
+      ],
+      "dialogues": [],
+      "exercises": {
+          "sentenceScramble": [
+              {"id": "sf_num_w1_d3_ex_ss1", "scrambled": ["on", "seitsemän", "viikossa", "päivää"], "correct": "Viikossa on seitsemän päivää.", "nativeHint": "සතියට දින හතක් ඇත."},
+              {"id": "sf_num_w1_d3_ex_ss2", "scrambled": ["on", "kymmenen", "minulla", "sormea"], "correct": "Minulla on kymmenen sormea.", "nativeHint": "මට ඇඟිලි දහයක් ඇත."}
+          ],
+          "fillBlanks": [
+              {"id": "sf_num_w1_d3_ex_fb1", "sentence": "Minulla on ___ autoa.", "answer": "kaksi", "hint": "දෙක"},
+              {"id": "sf_num_w1_d3_ex_fb2", "sentence": "Hämähäkillä on ___ jalkaa.", "answer": "kahdeksan", "hint": "අට"}
+          ]
+      },
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "NUM_SF_W1D3" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "4 වන දිනය: අංක 11-15",
+      "title_native": "Päivä 4: Numerot 11-15",
+      "theme": "Numbers",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "sf_num_w1_d4_w1", "target": "yksitoista", "phonetic": "උක්සි තොයිස්තා", "native_meaning": "එකොළහ", "english": "eleven", "example_sentence_target": "Joukkueessa on yksitoista pelaajaa.", "example_sentence_native": "කණ්ඩායමේ ක්‍රීඩකයින් එකොළොස් දෙනෙක් සිටිති.", "example_sentence_phonetic": "යොඋක්කුඑස්ස ඔන් උක්සි තොයිස්තා පෙලායා." },
+        { "id": "sf_num_w1_d4_w2", "target": "kaksitoista", "phonetic": "කක්සි තොයිස්තා", "native_meaning": "දොළහ", "english": "twelve", "example_sentence_target": "Vuodessa on kaksitoista kuukautta.", "example_sentence_native": "අවුරුද්දට මාස දොළහක් ඇත.", "example_sentence_phonetic": "වුවොදෙස්ස ඔන් කක්සි තොයිස්තා කූකවුත්තා." },
+        { "id": "sf_num_w1_d4_w3", "target": "kolmetoista", "phonetic": "කොල්මෙ තොයිස්තා", "native_meaning": "දහතුන", "english": "thirteen", "example_sentence_target": "Hän on kolmetoista vuotta vanha.", "example_sentence_native": "ඔහුට වයස අවුරුදු දහතුනකි.", "example_sentence_phonetic": "හෑන් ඔන් කොල්මෙ තොයිස්තා වුඔත්තා වන්හා." },
+        { "id": "sf_num_w1_d4_w4", "target": "neljätoista", "phonetic": "නෙලියැ තොයිස්තා", "native_meaning": "දාහතර", "english": "fourteen", "example_sentence_target": "Odotin neljätoista minuuttia.", "example_sentence_native": "මම විනාඩි දාහතරක් බලා සිටියෙමි.", "example_sentence_phonetic": "ඔදොතින් නෙලියැ තොයිස්තා මිනුත්තියා." },
+        { "id": "sf_num_w1_d4_w5", "target": "viisitoista", "phonetic": "වීසි තොයිස්තා", "native_meaning": "පහළොව", "english": "fifteen", "example_sentence_target": "Tämä maksaa viisitoista euroa.", "example_sentence_native": "මේකේ මිල යුරෝ පහළොවයි.", "example_sentence_phonetic": "තැම මක්සා වීසි තොයිස්තා එව්රෝවා." }
+      ],
+      "pronunciation_tip": "ෆින්ලන්ත භාෂාවේ 11-19 දක්වා අංක සෑදෙන්නේ මූලික අංකයට '-toista' එකතු කිරීමෙනි.",
+      "exercises": {
+        "matching": [
+          { "id": "sf_num_w1_d4_ex_m1", "target": "yksitoista", "native": "එකොළහ" },
+          { "id": "sf_num_w1_d4_ex_m2", "target": "kaksitoista", "native": "දොළහ" },
+          { "id": "sf_num_w1_d4_ex_m3", "target": "kolmetoista", "native": "දහතුන" },
+          { "id": "sf_num_w1_d4_ex_m4", "target": "neljätoista", "native": "දාහතර" },
+          { "id": "sf_num_w1_d4_ex_m5", "target": "viisitoista", "native": "පහළොව" }
+        ]
+      },
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "NUM_SF_W1D4" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "5 වන දිනය: අංක 16-20",
+      "title_native": "Päivä 5: Numerot 16-20",
+      "theme": "Numbers",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "sf_num_w1_d5_w1", "target": "kuusitoista", "phonetic": "කූසි තොයිස්තා", "native_meaning": "දාසය", "english": "sixteen", "example_sentence_target": "Bussilinja kuusitoista.", "example_sentence_native": "බස් මාර්ග අංක දාසය.", "example_sentence_phonetic": "බුසිලිනියා කූසි තොයිස්තා." },
+        { "id": "sf_num_w1_d5_w2", "target": "seitsemäntoista", "phonetic": "සෙයිත්සෙමන් තොයිස්තා", "native_meaning": "දාහත", "english": "seventeen", "example_sentence_target": "Sivu seitsemäntoista.", "example_sentence_native": "පිටුව දාහත.", "example_sentence_phonetic": "සිවු සෙයිත්සෙමන් තොයිස්තා." },
+        { "id": "sf_num_w1_d5_w3", "target": "kahdeksantoista", "phonetic": "කහ්දෙක්සන් තොයිස්තා", "native_meaning": "දහඅට", "english": "eighteen", "example_sentence_target": "Hän on kahdeksantoista.", "example_sentence_native": "ඇයට වයස දහඅටයි.", "example_sentence_phonetic": "හෑන් ඔන් කහ්දෙක්සන් තොයිස්තා." },
+        { "id": "sf_num_w1_d5_w4", "target": "yhdeksäntoista", "phonetic": "උහ්දෙක්සන් තොයිස්තා", "native_meaning": "දහනවය", "english": "nineteen", "example_sentence_target": "Lämpötila on yhdeksäntoista astetta.", "example_sentence_native": "උෂ්ණත්වය සෙල්සියස් අංශක දහනවයයි.", "example_sentence_phonetic": "ලැම්පොතිලා ඔන් උහ්දෙක්සන් තොයිස්තා අස්තෙත්තා." },
+        { "id": "sf_num_w1_d5_w5", "target": "kaksikymmentä", "phonetic": "කක්සිකුම්මෙන්තැ", "native_meaning": "විස්ස", "english": "twenty", "example_sentence_target": "Minulla on kaksikymmentä euroa.", "example_sentence_native": "මා සතුව යුරෝ විස්සක් ඇත.", "example_sentence_phonetic": "මිනුල්ලා ඔන් කක්සිකුම්මෙන්තැ එව්රෝවා." }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "sf_num_w1_d5_ex_fb1", "sentence": "Vuodessa on ___ kuukautta.", "answer": "kaksitoista", "hint": "දොළහ" }
+        ],
+         "sentenceScramble": [
+           { "id": "sf_num_w1_d5_ex_ss1", "scrambled": ["maksaa", "Tämä", "euroa", "viisitoista"], "correct": "Tämä maksaa viisitoista euroa.", "nativeHint": "මේකේ මිල යුරෝ පහළොවයි."}
+         ]
+      },
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "NUM_SF_W1D5" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "6 වන දිනය: දසයේ ගුණාකාර (10-50)",
+      "title_native": "Päivä 6: Kymmenet (10-50)",
+      "theme": "Numbers by Tens",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "sf_num_w1_d6_w1", "target": "kymmenen", "phonetic": "කුම්මෙනෙන්", "native_meaning": "දහය", "english": "ten", "example_sentence_target": "Kymmenen, kaksikymmentä, kolmekymmentä...", "example_sentence_native": "දහය, විස්ස, තිහ...", "example_sentence_phonetic": "කුම්මෙනෙන්, කක්සිකුම්මෙන්තැ, කොල්මෙකුම්මෙන්තැ..." },
+        { "id": "sf_num_w1_d6_w2", "target": "kaksikymmentä", "phonetic": "කක්සිකුම්මෙන්තැ", "native_meaning": "විස්ස", "english": "twenty", "example_sentence_target": "Lippu maksaa kaksikymmentä euroa.", "example_sentence_native": "ටිකට් පතේ මිල යුරෝ විස්සයි.", "example_sentence_phonetic": "ලිප්පු මක්සා කක්සිකුම්මෙන්තැ එව්රෝවා." },
+        { "id": "sf_num_w1_d6_w3", "target": "kolmekymmentä", "phonetic": "කොල්මෙකුම්මෙන්තැ", "native_meaning": "තිහ", "english": "thirty", "example_sentence_target": "Matka kestää kolmekymmentä minuuttia.", "example_sentence_native": "ගමනට විනාඩි තිහක් ගතවේ.", "example_sentence_phonetic": "මත්කා කෙස්තää කොල්මෙකුම්මෙන්තැ මිනුත්තියා." },
+        { "id": "sf_num_w1_d6_w4", "target": "neljäkymmentä", "phonetic": "නෙලියැකුම්මෙන්තැ", "native_meaning": "හතළිහ", "english": "forty", "example_sentence_target": "Hän on neljäkymmentä vuotta vanha.", "example_sentence_native": "ඔහුට වයස අවුරුදු හතළිහකි.", "example_sentence_phonetic": "හෑන් ඔන් නෙලියැකුම්මෙන්තැ වුඔත්තා වන්හා." },
+        { "id": "sf_num_w1_d6_w5", "target": "viisikymmentä", "phonetic": "වීසිකුම්මෙන්තැ", "native_meaning": "පනහ", "english": "fifty", "example_sentence_target": "Kirjassa on viisikymmentä sivua.", "example_sentence_native": "පොතේ පිටු පනහක් ඇත.", "example_sentence_phonetic": "කිරියස්ස ඔන් වීසිකුම්මෙන්තැ සිවුවා." }
+      ],
+      "exercises": {
+        "matching": [
+            { "id": "sf_num_w1_d6_ex_m1", "target": "kymmenen", "native": "දහය"},
+            { "id": "sf_num_w1_d6_ex_m2", "target": "kaksikymmentä", "native": "විස්ස"},
+            { "id": "sf_num_w1_d6_ex_m3", "target": "kolmekymmentä", "native": "තිහ"},
+            { "id": "sf_num_w1_d6_ex_m4", "target": "neljäkymmentä", "native": "හතළිහ"},
+            { "id": "sf_num_w1_d6_ex_m5", "target": "viisikymmentä", "native": "පනහ"}
+        ]
+      },
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "NUM_SF_W1D6" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "7 වන දිනය: පළමු සතියේ පුනරීක්ෂණය",
+      "title_native": "Päivä 7: Viikon 1 kertaus",
+      "theme": "Weekly Review",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Sinhala",
+      "words": [],
+      "dialogues": [
+          { "id": "sf_num_w1_d7_d1",
+            "context": "වයස ඇසීම.",
+            "lines": [
+                {"speaker": "A", "target": "Kuinka vanha sinä olet?", "native": "ඔයාට වයස කීයද?", "phonetic": "කුයින්කා වන්හා සිනැ ඔලෙත්?"},
+                {"speaker": "B", "target": "Minä olen kaksikymmentä vuotta vanha.", "native": "මට වයස අවුරුදු විස්සයි.", "phonetic": "මිනැ ඔලෙන් කක්සිකුම්මෙන්තැ වුඔත්තා වන්හා."}
+            ]
+          }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "sf_num_w1_d7_ex_fb1", "sentence": "Joukkueessa on ___ pelaajaa.", "answer": "yksitoista", "hint": "එකොළහ" },
+          { "id": "sf_num_w1_d7_ex_fb2", "sentence": "Hän on ___ vuotta vanha.", "answer": "kolmetoista", "hint": "දහතුන" }
+        ],
+        "matching": [
+          { "id": "sf_num_w1_d7_ex_m1", "target": "kahdeksan", "native": "අට" },
+          { "id": "sf_num_w1_d7_ex_m2", "target": "kaksitoista", "native": "දොළහ" },
+          { "id": "sf_num_w1_d7_ex_m3", "target": "neljäkymmentä", "native": "හතළිහ" }
+        ]
+      },
+      "progress": { "xp": 150, "streak_bonus": 20, "badge": "NUM_SF_W1_COMPLETE" }
+    }
   ]
 }
