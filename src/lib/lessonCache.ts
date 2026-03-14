@@ -11,8 +11,8 @@ export async function getOrGenerateLesson(
     let native = nativeLanguage.toLowerCase();
     const target = language.toLowerCase();
 
-    // For the Dutch numbers path, always use the English version as the source content.
-    if (target === 'dutch' && path === 'numbers') {
+    // For the Dutch numbers and survival paths, always use the English version as the source content.
+    if (target === 'dutch' && (path === 'numbers' || path === 'survival')) {
         native = 'english';
     }
 
