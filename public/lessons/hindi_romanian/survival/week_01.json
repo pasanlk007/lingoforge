@@ -1,0 +1,954 @@
+
+{
+  "week": 1,
+  "path": "survival",
+  "targetLanguage": "Romanian",
+  "nativeLanguage": "Hindi",
+  "days": [
+    {
+      "week": 1,
+      "day": 1,
+      "title": "सप्ताह 1, दिन 1: मूल अभिवादन",
+      "title_native": "Săptămâna 1, Ziua 1: Salutări de bază",
+      "theme": "Greetings",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_1_1",
+          "target": "Bună ziua",
+          "phonetic": "बूना ज़ीवा",
+          "native_meaning": "नमस्ते (दिन में)",
+          "english": "Hello (during the day)",
+          "example_sentence_target": "Bună ziua, domnule Popescu.",
+          "example_sentence_native": "नमस्ते, श्रीमान पोपेस्कु।",
+          "example_sentence_phonetic": "बूना ज़ीवा, दोमनूले पोपेस्कु।"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "Salut",
+          "phonetic": "सालूत",
+          "native_meaning": "नमस्ते (अनौपचारिक)",
+          "english": "Hi (informal)",
+          "example_sentence_target": "Salut, Andrei! Ce faci?",
+          "example_sentence_native": "नमस्ते, आंद्रेई! तुम कैसे हो?",
+          "example_sentence_phonetic": "सालूत, आंद्रेई! चे फाच?"
+        },
+        {
+          "id": "w1_1_3",
+          "target": "Da",
+          "phonetic": "दा",
+          "native_meaning": "हाँ",
+          "english": "Yes",
+          "example_sentence_target": "Ești student? Da.",
+          "example_sentence_native": "क्या तुम छात्र हो? हाँ।",
+          "example_sentence_phonetic": "एश्ती स्तूदेँत? दा।"
+        },
+        {
+          "id": "w1_1_4",
+          "target": "Nu",
+          "phonetic": "नू",
+          "native_meaning": "नहीं",
+          "english": "No",
+          "example_sentence_target": "Vrei cafea? Nu, mulțumesc.",
+          "example_sentence_native": "क्या आप कॉफ़ी चाहते हैं? नहीं, धन्यवाद।",
+          "example_sentence_phonetic": "व्रेई काफ़ेया? नू, मुल्तुमेस्क।"
+        },
+        {
+          "id": "w1_1_5",
+          "target": "Mulțumesc",
+          "phonetic": "मुल्तुमेस्क",
+          "native_meaning": "धन्यवाद",
+          "english": "Thank you",
+          "example_sentence_target": "Mulțumesc pentru ajutor.",
+          "example_sentence_native": "मदद के लिए धन्यवाद।",
+          "example_sentence_phonetic": "मुल्तुमेस्क पेन्त्रु आजूतोर।"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "पहली बार किसी से मिलना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bună ziua. Eu sunt Maria.",
+              "native": "नमस्ते। मैं मारिया हूँ।",
+              "phonetic": "बूना ज़ीवा। एउ सुंत मारिया।"
+            },
+            {
+              "speaker": "B",
+              "target": "Bună ziua, Maria. Eu sunt David.",
+              "native": "नमस्ते, मारिया। मैं डेविड हूँ।",
+              "phonetic": "बूना ज़ीवा, मारिया। एउ सुंत दाविद।"
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "दोस्त एक दूसरे को नमस्ते कह रहे हैं।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Salut, Elena!",
+              "native": "नमस्ते, एलेना!",
+              "phonetic": "सालूत, एलेना!"
+            },
+            {
+              "speaker": "B",
+              "target": "Salut, Mihai! Ce mai faci?",
+              "native": "नमस्ते, मिहाई! तुम कैसे हो?",
+              "phonetic": "सालूत, मिहाई! चे माई फाच?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_1_1",
+            "sentence": "___, domnule Ionescu.",
+            "answer": "Bună ziua",
+            "hint": "दिन के समय अभिवादन"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_1_1",
+            "question": "'Thank you' का रोमानियाई में क्या अर्थ है?",
+            "options": ["Salut", "Nu", "Mulțumesc", "Da"],
+            "correct": 2,
+            "explanation": "'Mulțumesc' का अर्थ 'धन्यवाद' होता है।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_1_1", "target": "Da", "native": "हाँ" },
+          { "id": "m1_1_2", "target": "Nu", "native": "नहीं" },
+          { "id": "m1_1_3", "target": "Salut", "native": "नमस्ते (अनौपचारिक)" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_1_1",
+            "scrambled": ["sunt", "Maria", "Eu"],
+            "correct": "Eu sunt Maria",
+            "nativeHint": "मैं मारिया हूँ"
+          }
+        ]
+      },
+      "cultural_note": "रोमानिया में, अजनबियों से, खासकर वृद्ध लोगों से मिलते समय 'Bună ziua' का उपयोग करना विनम्र माना जाता है। 'Salut' का उपयोग दोस्तों और साथियों के बीच किया जाता है।",
+      "pronunciation_tip": "रोमानियाई में 'ț' अक्षर का उच्चारण हिंदी के 'त्स' जैसा होता है, जैसे 'वत्स' में। 'Mulțumesc' का अभ्यास करें।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D1-Greetings" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "सप्ताह 1, दिन 2: शिष्टाचार",
+      "title_native": "Săptămâna 1, Ziua 2: Politețe",
+      "theme": "Politeness",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "Vă rog",
+          "phonetic": "वा रोग",
+          "native_meaning": "कृपया (औपचारिक)",
+          "english": "Please (formal)",
+          "example_sentence_target": "O cafea, vă rog.",
+          "example_sentence_native": "एक कॉफ़ी, कृपया।",
+          "example_sentence_phonetic": "ओ काफ़ेया, वा रोग।"
+        },
+        {
+          "id": "w1_2_2",
+          "target": "Scuzați-mă",
+          "phonetic": "स्कुज़ात्सी-मा",
+          "native_meaning": "माफ़ कीजिए",
+          "english": "Excuse me",
+          "example_sentence_target": "Scuzați-mă, unde este gara?",
+          "example_sentence_native": "माफ़ कीजिए, ट्रेन स्टेशन कहाँ है?",
+          "example_sentence_phonetic": "स्कुज़ात्सी-मा, उन्दे एस्ते गारा?"
+        },
+        {
+          "id": "w1_2_3",
+          "target": "Pardon",
+          "phonetic": "पारदोन",
+          "native_meaning": "क्षमा करें",
+          "english": "Pardon/Sorry",
+          "example_sentence_target": "Pardon, nu am înțeles.",
+          "example_sentence_native": "क्षमा करें, मैं समझा नहीं।",
+          "example_sentence_phonetic": "पारदोन, नू आम इन्तेलेस।"
+        },
+        {
+          "id": "w1_2_4",
+          "target": "Cu plăcere",
+          "phonetic": "कु प्लाचेरे",
+          "native_meaning": "खुशी से / आपका स्वागत है",
+          "english": "With pleasure / You're welcome",
+          "example_sentence_target": "Mulțumesc! Cu plăcere.",
+          "example_sentence_native": "धन्यवाद! आपका स्वागत है।",
+          "example_sentence_phonetic": "मुल्तुमेस्क! कु प्लाचेरे।"
+        },
+        {
+          "id": "w1_2_5",
+          "target": "Bine",
+          "phonetic": "बीने",
+          "native_meaning": "अच्छा / ठीक है",
+          "english": "Good / OK",
+          "example_sentence_target": "Cum ești? Sunt bine.",
+          "example_sentence_native": "तुम कैसे हो? मैं ठीक हूँ।",
+          "example_sentence_phonetic": "कुम एश्ती? सुंत बीने।"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "एक कैफे में ऑर्डर देना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bună ziua, o cafea, vă rog.",
+              "native": "नमस्ते, एक कॉफ़ी, कृपया।",
+              "phonetic": "बूना ज़ीवा, ओ काफ़ेया, वा रोग।"
+            },
+            {
+              "speaker": "B",
+              "target": "Imediat. Altceva? Nu, mulțumesc.",
+              "native": "तुरंत। और कुछ? नहीं, धन्यवाद।",
+              "phonetic": "इमेदिआत। आल्तचेवा? नू, मुल्तुमेस्क।"
+            }
+          ]
+        },
+        {
+          "id": "d1_2_2",
+          "context": "रास्ता पूछना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Scuzați-mă, puteți să mă ajutați?",
+              "native": "माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?",
+              "phonetic": "स्कुज़ात्सी-मा, पूतेत्सी सा मा आजूतात्सी?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, sigur. Cu ce vă pot ajuta?",
+              "native": "हाँ, ज़रूर। मैं आपकी क्या मदद कर सकता हूँ?",
+              "phonetic": "दा, सिगुर। कु चे वा पोत आजूता?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_2_1",
+            "sentence": "Un ceai, ___.",
+            "answer": "vă rog",
+            "hint": "कृपया (औपचारिक)"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_2_1",
+            "question": "'Excuse me' कहने का औपचारिक तरीका क्या है?",
+            "options": ["Salut", "Scuzați-mă", "Pardon", "Bine"],
+            "correct": 1,
+            "explanation": "'Scuzați-mă' एक औपचारिक तरीका है किसी का ध्यान आकर्षित करने या माफी मांगने का।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_2_1", "target": "Bine", "native": "अच्छा" },
+          { "id": "m1_2_2", "target": "Cu plăcere", "native": "आपका स्वागत है" },
+          { "id": "m1_2_3", "target": "Pardon", "native": "क्षमा करें" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_2_1",
+            "scrambled": ["am", "nu", "înțeles", "Pardon"],
+            "correct": "Pardon nu am înțeles",
+            "nativeHint": "क्षमा करें, मैं समझा नहीं"
+          }
+        ]
+      },
+      "cultural_note": "रोमानियाई में 'आप' के लिए दो शब्द हैं: 'dumneavoastră' (औपचारिक) और 'tu' (अनौपचारिक)। अजनबियों, वृद्ध लोगों और अधिकार के पदों पर बैठे लोगों के साथ 'dumneavoastră' का उपयोग करना महत्वपूर्ण है।",
+      "pronunciation_tip": "अक्षर 'ă' का उच्चारण हिंदी के 'अ' जैसा होता है, लेकिन थोड़ा छोटा। यह 'c**u**p' में 'u' की तरह है। 'Scuzați-m**ă**' का अभ्यास करें।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D2-Politeness" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "सप्ताह 1, दिन 3: परिचय",
+      "title_native": "Săptămâna 1, Ziua 3: Prezentări",
+      "theme": "Introductions",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "Nume",
+          "phonetic": "नूमे",
+          "native_meaning": "नाम",
+          "english": "Name",
+          "example_sentence_target": "Numele meu este Ana.",
+          "example_sentence_native": "मेरा नाम आना है।",
+          "example_sentence_phonetic": "नूमेले मेउ एस्ते आना।"
+        },
+        {
+          "id": "w1_3_2",
+          "target": "Sunt",
+          "phonetic": "सुंत",
+          "native_meaning": "मैं हूँ",
+          "english": "I am",
+          "example_sentence_target": "Eu sunt din India.",
+          "example_sentence_native": "मैं भारत से हूँ।",
+          "example_sentence_phonetic": "एउ सुंत दिन इंडिया।"
+        },
+        {
+          "id": "w1_3_3",
+          "target": "Ce faci?",
+          "phonetic": "चे फाच?",
+          "native_meaning": "तुम कैसे हो? (अनौपचारिक)",
+          "english": "How are you? (informal)",
+          "example_sentence_target": "Salut, Radu! Ce faci?",
+          "example_sentence_native": "नमस्ते, रादू! तुम कैसे हो?",
+          "example_sentence_phonetic": "सालूत, रादू! चे फाच?"
+        },
+        {
+          "id": "w1_3_4",
+          "target": "Ce faceți?",
+          "phonetic": "चे फाचेत्सी?",
+          "native_meaning": "आप कैसे हैं? (औपचारिक)",
+          "english": "How are you? (formal)",
+          "example_sentence_target": "Bună ziua, doamnă. Ce faceți?",
+          "example_sentence_native": "नमस्ते, महोदया। आप कैसी हैं?",
+          "example_sentence_phonetic": "बूना ज़ीवा, दोआम्ना। चे फाचेत्सी?"
+        },
+        {
+          "id": "w1_3_5",
+          "target": "Îmi pare bine",
+          "phonetic": "इम पारे बीने",
+          "native_meaning": "आपसे मिलकर अच्छा लगा",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Îmi pare bine de cunoștință.",
+          "example_sentence_native": "आपसे मिलकर अच्छा लगा।",
+          "example_sentence_phonetic": "इम पारे बीने दे कुनोश्तिन्त्सा।"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "एक औपचारिक परिचय।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bună ziua. Numele meu este Andrei.",
+              "native": "नमस्ते। मेरा नाम आंद्रेई है।",
+              "phonetic": "बूना ज़ीवा। नूमेले मेउ एस्ते आंद्रेई।"
+            },
+            {
+              "speaker": "B",
+              "target": "Îmi pare bine. Eu sunt Elena. Ce faceți?",
+              "native": "आपसे मिलकर अच्छा लगा। मैं एलेना हूँ। आप कैसी हैं?",
+              "phonetic": "इम पारे बीने। एउ सुंत एलेना। चे फाचेत्सी?"
+            }
+          ]
+        },
+        {
+          "id": "d1_3_2",
+          "context": "एक अनौपचारिक परिचय।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Salut! Eu sunt Ion.",
+              "native": "नमस्ते! मैं इयोन हूँ।",
+              "phonetic": "सालूत! एउ सुंत इयोन।"
+            },
+            {
+              "speaker": "B",
+              "target": "Salut, Ion! Eu sunt Bogdan. Ce faci?",
+              "native": "नमस्ते, इयोन! मैं बोगदान हूँ। तुम कैसे हो?",
+              "phonetic": "सालूत, इयोन! एउ सुंत बोगदान। चे फाच?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_3_1",
+            "sentence": "Numele ___ este David.",
+            "answer": "meu",
+            "hint": "मेरा"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_3_1",
+            "question": "'आप कैसे हैं?' का औपचारिक रोमानियाई अनुवाद क्या है?",
+            "options": ["Ce faci?", "Salut", "Ce faceți?", "Mulțumesc"],
+            "correct": 2,
+            "explanation": "'Ce faceți?' का उपयोग औपचारिक रूप से 'आप कैसे हैं?' पूछने के लिए किया जाता है।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_3_1", "target": "Nume", "native": "नाम" },
+          { "id": "m1_3_2", "target": "Sunt", "native": "मैं हूँ" },
+          { "id": "m1_3_3", "target": "Îmi pare bine", "native": "आपसे मिलकर अच्छा लगा" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["faci?", "Ce"],
+            "correct": "Ce faci?",
+            "nativeHint": "तुम कैसे हो?"
+          }
+        ]
+      },
+      "cultural_note": "मिलने पर हाथ मिलाना आम बात है, खासकर पुरुषों के बीच या व्यावसायिक सेटिंग में। दोस्त और परिवार अक्सर गाल पर चुंबन (la bise) का आदान-प्रदान करते हैं।",
+      "pronunciation_tip": "रोमानियाई में 'e' का उच्चारण शब्द में उसकी स्थिति के आधार पर भिन्न हो सकता है। 'Nume' में, यह हिंदी 'ए' की तरह है। 'Este' में, यह 'ये' की तरह है।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D3-Introductions" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "सप्ताह 1, दिन 4: राष्ट्रीयता और उत्पत्ति",
+      "title_native": "Săptămâna 1, Ziua 4: Naționalitate și origine",
+      "theme": "Nationality and Origin",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "din",
+          "phonetic": "दिन",
+          "native_meaning": "से",
+          "english": "from",
+          "example_sentence_target": "Sunt din România.",
+          "example_sentence_native": "मैं रोमानिया से हूँ।",
+          "example_sentence_phonetic": "सुंत दिन रोमानिया।"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "Unde",
+          "phonetic": "उन्दे",
+          "native_meaning": "कहाँ",
+          "english": "Where",
+          "example_sentence_target": "De unde ești?",
+          "example_sentence_native": "तुम कहाँ से हो?",
+          "example_sentence_phonetic": "दे उन्दे एश्ती?"
+        },
+        {
+          "id": "w1_4_3",
+          "target": "România",
+          "phonetic": "रोमानिया",
+          "native_meaning": "रोमानिया",
+          "english": "Romania",
+          "example_sentence_target": "București este capitala României.",
+          "example_sentence_native": "बुखारेस्ट रोमानिया की राजधानी है।",
+          "example_sentence_phonetic": "बुकुरेश्ती एस्ते कापिताला रोमानीई।"
+        },
+        {
+          "id": "w1_4_4",
+          "target": "India",
+          "phonetic": "इंडिया",
+          "native_meaning": "भारत",
+          "english": "India",
+          "example_sentence_target": "Eu sunt din India.",
+          "example_sentence_native": "मैं भारत से हूँ।",
+          "example_sentence_phonetic": "एउ सुंत दिन इंडिया।"
+        },
+        {
+          "id": "w1_4_5",
+          "target": "Limba",
+          "phonetic": "लिम्बा",
+          "native_meaning": "भाषा",
+          "english": "Language",
+          "example_sentence_target": "Vorbesc limba română.",
+          "example_sentence_native": "मैं रोमानियाई भाषा बोलता हूँ।",
+          "example_sentence_phonetic": "वोरबेस्क लिम्बा रोमाना।"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "किसी की राष्ट्रीयता के बारे में पूछना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bună ziua. De unde sunteți?",
+              "native": "नमस्ते। आप कहाँ से हैं?",
+              "phonetic": "बूना ज़ीवा। दे उन्दे सुंतेत्सी?"
+            },
+            {
+              "speaker": "B",
+              "target": "Sunt din India. Dar dumneavoastră?",
+              "native": "मैं भारत से हूँ। और आप?",
+              "phonetic": "सुंत दिन इंडिया। दार दुमनेआवस्त्र?"
+            }
+          ]
+        },
+        {
+          "id": "d1_4_2",
+          "context": "भाषाओं के बारे में बात करना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Vorbiți engleză?",
+              "native": "क्या आप अंग्रेज़ी बोलते हैं?",
+              "phonetic": "वोरबित्सी एंग्लेज़ा?"
+            },
+            {
+              "speaker": "B",
+              "target": "Da, vorbesc puțin. Învăț limba română.",
+              "native": "हाँ, मैं थोड़ी बोलता हूँ। मैं रोमानियाई सीख रहा हूँ।",
+              "phonetic": "दा, वोरबेस्क पूत्सीन। इन्वात्स लिम्बा रोमाना।"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_4_1",
+            "sentence": "De ___ ești?",
+            "answer": "unde",
+            "hint": "कहाँ"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_4_1",
+            "question": "'मैं भारत से हूँ' को रोमानियाई में कैसे कहें?",
+            "options": ["Sunt din România", "Eu sunt bine", "Sunt din India", "Vorbesc română"],
+            "correct": 2,
+            "explanation": "'Sunt din India' का अर्थ है 'मैं भारत से हूँ'।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_4_1", "target": "Limba", "native": "भाषा" },
+          { "id": "m1_4_2", "target": "Unde", "native": "कहाँ" },
+          { "id": "m1_4_3", "target": "din", "native": "से" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_4_1",
+            "scrambled": ["ești?", "unde", "De"],
+            "correct": "De unde ești?",
+            "nativeHint": "तुम कहाँ से हो?"
+          }
+        ]
+      },
+      "cultural_note": "रोमानियन आमतौर पर अपनी राष्ट्रीयता और संस्कृति पर बहुत गर्व करते हैं। वे अपने देश के इतिहास और परंपराओं के बारे में जानने में आपकी रुचि की सराहना करेंगे।",
+      "pronunciation_tip": "रोमानियाई में, 'ch' का उच्चारण हमेशा 'k' की तरह होता है, जैसे 'school' में। उदाहरण: 'cheie' (केइए - चाबी)।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D4-Origin" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "सप्ताह 1, दिन 5: मूल प्रश्न",
+      "title_native": "Săptămâna 1, Ziua 5: Întrebări de bază",
+      "theme": "Basic Questions",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "Ce",
+          "phonetic": "चे",
+          "native_meaning": "क्या",
+          "english": "What",
+          "example_sentence_target": "Ce este asta?",
+          "example_sentence_native": "यह क्या है?",
+          "example_sentence_phonetic": "चे एस्ते आस्ता?"
+        },
+        {
+          "id": "w1_5_2",
+          "target": "Cine",
+          "phonetic": "चीने",
+          "native_meaning": "कौन",
+          "english": "Who",
+          "example_sentence_target": "Cine ești tu?",
+          "example_sentence_native": "तुम कौन हो?",
+          "example_sentence_phonetic": "चीने एश्ती तू?"
+        },
+        {
+          "id": "w1_5_3",
+          "target": "Când",
+          "phonetic": "कन्द",
+          "native_meaning": "कब",
+          "english": "When",
+          "example_sentence_target": "Când pleacă trenul?",
+          "example_sentence_native": "ट्रेन कब जाती है?",
+          "example_sentence_phonetic": "कन्द प्लेआका त्रेनुल?"
+        },
+        {
+          "id": "w1_5_4",
+          "target": "De ce",
+          "phonetic": "दे चे",
+          "native_meaning": "क्यों",
+          "english": "Why",
+          "example_sentence_target": "De ce ești trist?",
+          "example_sentence_native": "तुम दुखी क्यों हो?",
+          "example_sentence_phonetic": "दे चे एश्ती त्रिस्त?"
+        },
+        {
+          "id": "w1_5_5",
+          "target": "Cum",
+          "phonetic": "कुम",
+          "native_meaning": "कैसे",
+          "english": "How",
+          "example_sentence_target": "Cum te cheamă?",
+          "example_sentence_native": "तुम्हारा नाम क्या है?",
+          "example_sentence_phonetic": "कुम ते क्यामा?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "किसी के नाम के बारे में पूछना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Salut! Cum te cheamă?",
+              "native": "नमस्ते! तुम्हारा नाम क्या है?",
+              "phonetic": "सालूत! कुम ते क्यामा?"
+            },
+            {
+              "speaker": "B",
+              "target": "Mă cheamă Ioana. Pe tine?",
+              "native": "मेरा नाम इओआना है। और तुम्हारा?",
+              "phonetic": "मा क्यामा इओआना। पे तीने?"
+            }
+          ]
+        },
+        {
+          "id": "d1_5_2",
+          "context": "एक साधारण प्रश्न पूछना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Ce este asta?",
+              "native": "यह क्या है?",
+              "phonetic": "चे एस्ते आस्ता?"
+            },
+            {
+              "speaker": "B",
+              "target": "Este o carte.",
+              "native": "यह एक किताब है।",
+              "phonetic": "एस्ते ओ कार्ते।"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_5_1",
+            "sentence": "___ te cheamă?",
+            "answer": "Cum",
+            "hint": "कैसे"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_5_1",
+            "question": "'कौन' के लिए रोमानियाई शब्द क्या है?",
+            "options": ["Ce", "Cine", "Când", "Unde"],
+            "correct": 1,
+            "explanation": "'Cine' का अर्थ 'कौन' होता है।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_5_1", "target": "Ce", "native": "क्या" },
+          { "id": "m1_5_2", "target": "De ce", "native": "क्यों" },
+          { "id": "m1_5_3", "target": "Când", "native": "कब" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_5_1",
+            "scrambled": ["asta?", "este", "Ce"],
+            "correct": "Ce este asta?",
+            "nativeHint": "यह क्या है?"
+          }
+        ]
+      },
+      "cultural_note": "प्रश्न पूछने में संकोच न करें। रोमानियन आमतौर पर मदद करने और दिशा-निर्देश देने में खुश होते हैं, भले ही भाषा की बाधा हो।",
+      "pronunciation_tip": "'Ce' और 'Ci' का उच्चारण 'चे' और 'ची' होता है। उदाहरण: 'Cine' (चीने), 'Ceas' (चास - घड़ी)।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D5-Questions" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "सप्ताह 1, दिन 6: अलविदा कहना",
+      "title_native": "Săptămâna 1, Ziua 6: Luarea de rămas bun",
+      "theme": "Saying Goodbye",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "La revedere",
+          "phonetic": "ला रेवेदेरे",
+          "native_meaning": "अलविदा",
+          "english": "Goodbye",
+          "example_sentence_target": "La revedere, ne vedem mâine.",
+          "example_sentence_native": "अलविदा, कल मिलते हैं।",
+          "example_sentence_phonetic": "ला रेवेदेरे, ने वेदेम मैइने।"
+        },
+        {
+          "id": "w1_6_2",
+          "target": "Pa",
+          "phonetic": "पा",
+          "native_meaning": "बाय (अनौपचारिक)",
+          "english": "Bye (informal)",
+          "example_sentence_target": "Pa, pa! Ne auzim mai târziu.",
+          "example_sentence_native": "बाय, बाय! बाद में बात करते हैं।",
+          "example_sentence_phonetic": "पा, पा! ने आउज़ीम माई तारज़ीउ।"
+        },
+        {
+          "id": "w1_6_3",
+          "target": "Noapte bună",
+          "phonetic": "नोआपते बूना",
+          "native_meaning": "शुभ रात्रि",
+          "english": "Good night",
+          "example_sentence_target": "Noapte bună, vise plăcute!",
+          "example_sentence_native": "शुभ रात्रि, मीठे सपने!",
+          "example_sentence_phonetic": "नोआपते बूना, वीसे प्लाकूते!"
+        },
+        {
+          "id": "w1_6_4",
+          "target": "Ne vedem",
+          "phonetic": "ने वेदेम",
+          "native_meaning": "मिलते हैं",
+          "english": "See you",
+          "example_sentence_target": "Ok, ne vedem la ora cinci.",
+          "example_sentence_native": "ठीक है, पाँच बजे मिलते हैं।",
+          "example_sentence_phonetic": "ओके, ने वेदेम ला ओरा चिंच।"
+        },
+        {
+          "id": "w1_6_5",
+          "target": "O zi bună",
+          "phonetic": "ओ ज़ी बूना",
+          "native_meaning": "आपका दिन शुभ हो",
+          "english": "Have a good day",
+          "example_sentence_target": "Mulțumesc, la fel. O zi bună!",
+          "example_sentence_native": "धन्यवाद, आपको भी। आपका दिन शुभ हो!",
+          "example_sentence_phonetic": "मुल्तुमेस्क, ला फेल। ओ ज़ी बूना!"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "एक दुकान से निकलते समय।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Mulțumesc! La revedere!",
+              "native": "धन्यवाद! अलविदा!",
+              "phonetic": "मुल्तुमेस्क! ला रेवेदेरे!"
+            },
+            {
+              "speaker": "B",
+              "target": "La revedere! O zi bună!",
+              "native": "अलविदा! आपका दिन शुभ हो!",
+              "phonetic": "ला रेवेदेरे! ओ ज़ी बूना!"
+            }
+          ]
+        },
+        {
+          "id": "d1_6_2",
+          "context": "दोस्तों का अलविदा कहना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Trebuie să plec. Pa, Andrei!",
+              "native": "मुझे जाना होगा। बाय, आंद्रेई!",
+              "phonetic": "त्रेबुइए सा प्लेक। पा, आंद्रेई!"
+            },
+            {
+              "speaker": "B",
+              "target": "Pa, Maria! Ne vedem mâine.",
+              "native": "बाय, मारिया! कल मिलते हैं।",
+              "phonetic": "पा, मारिया! ने वेदेम मैइने।"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_6_1",
+            "sentence": "___ bună, mamă.",
+            "answer": "Noapte",
+            "hint": "शुभ रात्रि"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_6_1",
+            "question": "दोस्तों को अलविदा कहने का अनौपचारिक तरीका क्या है?",
+            "options": ["La revedere", "Noapte bună", "O zi bună", "Pa"],
+            "correct": 3,
+            "explanation": "'Pa' दोस्तों के बीच 'बाय' कहने का एक आम और अनौपचारिक तरीका है।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_6_1", "target": "Ne vedem", "native": "मिलते हैं" },
+          { "id": "m1_6_2", "target": "La revedere", "native": "अलविदा" },
+          { "id": "m1_6_3", "target": "O zi bună", "native": "आपका दिन शुभ हो" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_6_1",
+            "scrambled": ["vedem", "mâine", "Ne"],
+            "correct": "Ne vedem mâine",
+            "nativeHint": "कल मिलते हैं"
+          }
+        ]
+      },
+      "cultural_note": "किसी स्टोर या कार्यालय से बाहर निकलते समय 'La revedere' कहना आम शिष्टाचार है, भले ही आपने किसी से सीधे बात न की हो।",
+      "pronunciation_tip": "'revedere' में 'r' को थोड़ा लुढ़काया जाता है, स्पेनिश 'r' की तरह। 'La **r**evede**r**e' का अभ्यास करें।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D6-Goodbye" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "सप्ताह 1, दिन 7: समीक्षा और अभ्यास",
+      "title_native": "Săptămâna 1, Ziua 7: Recapitulare și practică",
+      "theme": "Review and Practice",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Hindi",
+      "words": [
+        {
+          "id": "w1_7_1",
+          "target": "Foarte bine",
+          "phonetic": "फोआर्ते बीने",
+          "native_meaning": "बहुत अच्छा",
+          "english": "Very good",
+          "example_sentence_target": "Vorbesc engleză foarte bine.",
+          "example_sentence_native": "मैं बहुत अच्छी अंग्रेज़ी बोलता हूँ।",
+          "example_sentence_phonetic": "वोरबेस्क एंग्लेज़ा फोआर्ते बीने।"
+        },
+        {
+          "id": "w1_7_2",
+          "target": "Puțin",
+          "phonetic": "पूत्सीन",
+          "native_meaning": "थोड़ा",
+          "english": "A little",
+          "example_sentence_target": "Înțeleg puțin română.",
+          "example_sentence_native": "मैं थोड़ी रोमानियाई समझता हूँ।",
+          "example_sentence_phonetic": "इन्तेलेग पूत्सीन रोमाना।"
+        },
+        {
+          "id": "w1_7_3",
+          "target": "Repetați, vă rog",
+          "phonetic": "रेपेतात्सी, वा रोग",
+          "native_meaning": "कृपया दोहराएं",
+          "english": "Please repeat",
+          "example_sentence_target": "Nu am înțeles. Repetați, vă rog.",
+          "example_sentence_native": "मैं समझा नहीं। कृपया दोहराएं।",
+          "example_sentence_phonetic": "नू आम इन्तेलेस। रेपेतात्सी, वा रोग।"
+        },
+        {
+          "id": "w1_7_4",
+          "target": "Mai rar",
+          "phonetic": "माई रार",
+          "native_meaning": "और धीरे",
+          "english": "Slower",
+          "example_sentence_target": "Vă rog, vorbiți mai rar.",
+          "example_sentence_native": "कृपया, और धीरे बोलें।",
+          "example_sentence_phonetic": "वा रोग, वोरबित्सी माई रार।"
+        },
+        {
+          "id": "w1_7_5",
+          "target": "Înțeleg",
+          "phonetic": "इन्तेलेग",
+          "native_meaning": "मैं समझता हूँ",
+          "english": "I understand",
+          "example_sentence_target": "Da, înțeleg.",
+          "example_sentence_native": "हाँ, मैं समझता हूँ।",
+          "example_sentence_phonetic": "दा, इन्तेलेग।"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "बातचीत में स्पष्टीकरण मांगना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Și apoi mergeți pe strada principală.",
+              "native": "और फिर आप मुख्य सड़क पर जाएं।",
+              "phonetic": "शी आपोई मेरजेत्सी पे strada प्रिंचिपाला।"
+            },
+            {
+              "speaker": "B",
+              "target": "Pardon, vorbiți mai rar, vă rog. Nu înțeleg.",
+              "native": "क्षमा करें, कृपया और धीरे बोलें। मैं समझ नहीं रहा हूँ।",
+              "phonetic": "पारदोन, वोरबित्सी माई रार, वा रोग। नू इन्तेलेग।"
+            }
+          ]
+        },
+        {
+          "id": "d1_7_2",
+          "context": "अपनी भाषा कौशल के बारे में बात करना।",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Vorbiți română foarte bine!",
+              "native": "आप बहुत अच्छी रोमानियाई बोलते हैं!",
+              "phonetic": "वोरबित्सी रोमाना फोआर्ते बीने!"
+            },
+            {
+              "speaker": "B",
+              "target": "Mulțumesc, dar vorbesc doar puțin.",
+              "native": "धन्यवाद, लेकिन मैं बस थोड़ी ही बोलता हूँ।",
+              "phonetic": "मुल्तुमेस्क, दार वोरबेस्क दोआर पूत्सीन।"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_7_1",
+            "sentence": "Vorbiți ___, vă rog.",
+            "answer": "mai rar",
+            "hint": "और धीरे"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_7_1",
+            "question": "इस सप्ताह आपने कौन सा अभिवादन सीखा?",
+            "options": ["Mulțumesc", "Bună ziua", "Înțeleg", "Foarte bine"],
+            "correct": 1,
+            "explanation": "'Bună ziua' एक मूल अभिवादन है जिसका अर्थ है 'नमस्ते'।"
+          }
+        ],
+        "matching": [
+          { "id": "m1_7_1", "target": "Înțeleg", "native": "मैं समझता हूँ" },
+          { "id": "m1_7_2", "target": "Puțin", "native": "थोड़ा" },
+          { "id": "m1_7_3", "target": "Repetați, vă rog", "native": "कृपया दोहराएं" }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_7_1",
+            "scrambled": ["bine", "Foarte"],
+            "correct": "Foarte bine",
+            "nativeHint": "बहुत अच्छा"
+          }
+        ]
+      },
+      "cultural_note": "गलतियाँ करने से न डरें! रोमानियन आमतौर पर धैर्यवान होते हैं और जब विदेशी उनकी भाषा बोलने की कोशिश करते हैं तो वे इसकी सराहना करते हैं।",
+      "pronunciation_tip": "इस सप्ताह सीखे गए वाक्यांशों का ज़ोर से अभ्यास करें। अपने आप को रिकॉर्ड करना और एक देशी वक्ता से तुलना करना सहायक हो सकता है। 'Bună ziua' और 'La revedere' पर ध्यान केंद्रित करें।",
+      "progress": { "xp": 150, "streak_bonus": 20, "badge": "W1-Complete" }
+    }
+  ]
+}
