@@ -4,10 +4,10 @@ To generate a weekly lesson file that is compatible with the LingoForge applicat
 
 Do not wrap the JSON in markdown code blocks (```json) or any other text. The output must be the JSON object itself.
 
-## Sample Prompt for AI
+## Sample Prompt for AI (Week 1)
 
 ```
-Please generate a complete 7-day weekly language lesson plan based on the following parameters. The output must be a single, raw JSON object that strictly follows the structure defined in the provided JSON Schema for a weekly plan.
+Please generate a complete 7-day weekly language lesson plan for **Week 1** based on the following parameters. The output must be a single, raw JSON object that strictly follows the structure defined in the provided JSON Schema for a weekly plan.
 
 - **Target Language:** French
 - **Native Language:** Sinhala
@@ -15,34 +15,61 @@ Please generate a complete 7-day weekly language lesson plan based on the follow
 - **Week:** 1
 - **Overall Weekly Theme:** "Basic Greetings, Introductions, and Politeness"
 
-**Instructions for each day:**
-- **Day 1:** Basic Greetings (Bonjour, Merci)
-- **Day 2:** Common Politeness (Oui, Non, S'il vous plaît)
-- **Day 3:** Introducing Yourself (Je m'appelle...)
-- **Day 4:** Asking "How are you?" (Comment ça va?)
-- **Day 5:** Saying Goodbye (Au revoir, À bientôt)
-- **Day 6:** Numbers 1-5
-- **Day 7:** Review and combine concepts from the week.
-
-**For EACH of the 7 days, the JSON object must include:**
+**Instructions for each day (Week 1):**
 - 5 vocabulary `words`.
 - At least 2 `dialogues`.
 - Exercises: at least one of each type (`fillBlanks`, `matching`, `multipleChoice`, `sentenceScramble`).
 - A `cultural_note`.
 - A `pronunciation_tip`.
-- All text fields for the native language (e.g., `native_meaning`, `example_sentence_native`, `nativeHint`) must be in Sinhala.
-- Phonetic spellings should be simple and easy for a Sinhala speaker to read.
+- All text fields for the native language must be in the specified native language.
+- Phonetic spellings should be simple and easy for the native speaker to read.
 
 Here is the **weekly** JSON schema to follow:
 <PASTE THE CONTENT OF weekly-lesson-schema.json HERE>
-
-Here is a sample of the expected **weekly** output structure:
-<PASTE THE SAMPLE WEEKLY JSON OBJECT FROM BELOW HERE>
 ```
 
 ---
 
-## Sample Weekly JSON Object
+## Sample Prompt for AI (Week 2 - Basic Communication)
+
+```
+Please generate a complete 7-day weekly language lesson plan for **Week 2** based on the following parameters. The output must be a single, raw JSON object that strictly follows the structure defined in the **updated** JSON Schema for a weekly plan.
+
+- **Target Language:** [e.g., Spanish]
+- **Native Language:** [e.g., Sinhala]
+- **Path:** survival
+- **Week:** 2
+- **Overall Weekly Theme:** "Basic Communication"
+
+**Daily Themes:**
+- **Day 8 (Day 1 of Week 2):** Asking for help
+- **Day 9 (Day 2 of Week 2):** Understanding questions
+- **Day 10 (Day 3 of Week 2):** Giving simple information
+- **Day 11 (Day 4 of Week 2):** Asking location
+- **Day 12 (Day 5 of Week 2):** Directions
+- **Day 13 (Day 6 of Week 2):** Public places
+- **Day 14 (Day 7 of Week 2):** Travel
+
+**CRITICAL INSTRUCTIONS for EACH of the 7 days (Week 2 Plan):**
+- **Exactly 6** vocabulary `words`.
+- **Exactly 4** standalone `sentences`.
+- **Exactly 4** `dialogues`.
+- **Exercises:**
+    - At least one `fillBlanks` exercise.
+    - At least one `matching` exercise.
+    - At least one `sentenceScramble` exercise.
+- A `cultural_note`.
+- A `pronunciation_tip`.
+- All text fields for the native language must be in the specified native language.
+- Phonetic spellings should be simple and easy for the native speaker to read.
+
+Here is the **weekly** JSON schema to follow (note the updated constraints for Week 2):
+<PASTE THE CONTENT OF weekly-lesson-schema.json HERE>
+```
+
+---
+
+## Sample Weekly JSON Object (Week 1)
 
 This is an example of a valid JSON object for a single **week's** lesson plan. It contains a `days` array with 7 daily lesson objects.
 

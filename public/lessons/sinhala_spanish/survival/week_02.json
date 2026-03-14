@@ -1,4 +1,3 @@
-
 {
   "week": 2,
   "path": "survival",
@@ -7,1025 +6,402 @@
   "days": [
     {
       "week": 2,
-      "day": 8,
-      "title": "2 වන සතිය, 8 වන දිනය: උදව් ඉල්ලීම",
-      "title_native": "Semana 2, Día 8: Pedir ayuda",
+      "day": 1,
+      "title": "2 වන සතිය, 1 වන දිනය: උදව් ඉල්ලීම",
+      "title_native": "Semana 2, Día 1: Pedir ayuda",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_8_1",
-          "target": "Ayuda",
-          "phonetic": "අයූ-දා",
-          "native_meaning": "උදව්",
-          "english": "Help",
-          "example_sentence_target": "¡Ayuda, por favor!",
-          "example_sentence_native": "උදව් කරන්න, කරුණාකර!",
-          "example_sentence_phonetic": "අයූ-දා, පෝර් ෆ-වෝර්!"
-        },
-        {
-          "id": "w2_8_2",
-          "target": "Perdón",
-          "phonetic": "පෙර්-දොන්",
-          "native_meaning": "සමාවෙන්න",
-          "english": "Excuse me / Sorry",
-          "example_sentence_target": "Perdón, ¿puede ayudarme?",
-          "example_sentence_native": "සමාවෙන්න, ඔබට මට උදව් කළ හැකිද?",
-          "example_sentence_phonetic": "පෙර්-දොන්, පුවේ-දේ අයූ-දාර්-මේ?"
-        },
-        {
-          "id": "w2_8_3",
-          "target": "Necesito",
-          "phonetic": "නෙ-සෙ-සී-තෝ",
-          "native_meaning": "මට අවශ්‍යයි",
-          "english": "I need",
-          "example_sentence_target": "Necesito ayuda.",
-          "example_sentence_native": "මට උදව් අවශ්‍යයි.",
-          "example_sentence_phonetic": "නෙ-සෙ-සී-තෝ අයූ-දා."
-        },
-        {
-          "id": "w2_8_4",
-          "target": "No entiendo",
-          "phonetic": "නෝ එන්-තියෙන්-දෝ",
-          "native_meaning": "මට තේරෙන්නේ නැහැ",
-          "english": "I don't understand",
-          "example_sentence_target": "Lo siento, no entiendo.",
-          "example_sentence_native": "සමාවෙන්න, මට තේරෙන්නේ නැහැ.",
-          "example_sentence_phonetic": "ලෝ සියෙන්-තෝ, නෝ එන්-තියෙන්-දෝ."
-        },
-        {
-          "id": "w2_8_5",
-          "target": "Por favor",
-          "phonetic": "පෝර් ෆ-වෝර්",
-          "native_meaning": "කරුණාකර",
-          "english": "Please",
-          "example_sentence_target": "Hable más despacio, por favor.",
-          "example_sentence_native": "කරුණාකර, තව ටිකක් සෙමින් කතා කරන්න.",
-          "example_sentence_phonetic": "අබ්-ලේ මාස් දේස්-පා-සියෝ, පෝර් ෆ-වෝර්."
-        },
-        {
-          "id": "w2_8_6",
-          "target": "Gracias",
-          "phonetic": "ග්‍රා-සියාස්",
-          "native_meaning": "ස්තූතියි",
-          "english": "Thank you",
-          "example_sentence_target": "Gracias por su ayuda.",
-          "example_sentence_native": "ඔබගේ උදව්වට ස්තූතියි.",
-          "example_sentence_phonetic": "ග්‍රා-සියාස් පෝර් සූ අයූ-දා."
-        }
+        { "id": "w2_1_1", "target": "Ayuda", "phonetic": "අයූදා", "native_meaning": "උදව්", "english": "Help", "example_sentence_target": "¡Ayuda, por favor!", "example_sentence_native": "උදව් කරන්න, කරුණාකර!", "example_sentence_phonetic": "අයූදා, පෝර් ෆවෝර්!" },
+        { "id": "w2_1_2", "target": "Por favor", "phonetic": "පෝර් ෆවෝර්", "native_meaning": "කරුණාකර", "english": "Please", "example_sentence_target": "Un café, por favor.", "example_sentence_native": "කෝපි එකක්, කරුණාකර.", "example_sentence_phonetic": "උන් කෆේ, පෝර් ෆවෝර්." },
+        { "id": "w2_1_3", "target": "Gracias", "phonetic": "ග්‍රාසියාස්", "native_meaning": "ස්තූතියි", "english": "Thank you", "example_sentence_target": "Muchas gracias por tu ayuda.", "example_sentence_native": "ඔබේ උදව්වට බොහොම ස්තූතියි.", "example_sentence_phonetic": "මුචස් ග්‍රාසියාස් පෝර් තු අයූදා." },
+        { "id": "w2_1_4", "target": "Lo siento", "phonetic": "ලො සියෙන්තො", "native_meaning": "මට කණගාටුයි", "english": "I'm sorry", "example_sentence_target": "Lo siento, no entiendo.", "example_sentence_native": "මට කණගාටුයි, මට තේරෙන්නේ නැහැ.", "example_sentence_phonetic": "ලො සියෙන්තො, නො එන්තියෙන්දො." },
+        { "id": "w2_1_5", "target": "Disculpe", "phonetic": "දිස්කුල්පෙ", "native_meaning": "සමාවෙන්න (අවධානය ලබා ගැනීමට)", "english": "Excuse me", "example_sentence_target": "Disculpe, ¿dónde está el baño?", "example_sentence_native": "සමාවෙන්න, නාන කාමරය කොහෙද?", "example_sentence_phonetic": "දිස්කුල්පෙ, දොන්දෙ එස්තා එල් බානියො?" },
+        { "id": "w2_1_6", "target": "Necesito", "phonetic": "නෙසෙසීතො", "native_meaning": "මට අවශ්‍යයි", "english": "I need", "example_sentence_target": "Necesito ayuda.", "example_sentence_native": "මට උදව් අවශ්‍යයි.", "example_sentence_phonetic": "නෙසෙසීතො අයූදා." }
       ],
       "sentences": [
-        {
-          "id": "s2_8_1",
-          "target": "¿Puede ayudarme, por favor?",
-          "native": "කරුණාකර, ඔබට මට උදව් කළ හැකිද?",
-          "phonetic": "පුවේ-දේ අයූ-දාර්-මේ, පෝර් ෆ-වෝර්?"
-        },
-        {
-          "id": "s2_8_2",
-          "target": "Estoy perdido/perdida.",
-          "native": "මම අතරමං වෙලා.",
-          "phonetic": "එස්-තෝයි පෙර්-දී-දෝ / පෙර්-දී-දා."
-        },
-        {
-          "id": "s2_8_3",
-          "target": "Necesito un médico.",
-          "native": "මට වෛද්‍යවරයෙක් අවශ්‍යයි.",
-          "phonetic": "නෙ-සෙ-සී-තෝ උන් මේ-දි-කෝ."
-        },
-        {
-          "id": "s2_8_4",
-          "target": "No hablo español muy bien.",
-          "native": "මම ස්පාඤ්ඤ භාෂාව හොඳට කතා කරන්නේ නැහැ.",
-          "phonetic": "නෝ අබ්-ලෝ එස්-ප-නියෝල් මුයි බියෙන්."
-        }
+        { "id": "s2_1_1", "target": "¿Puede ayudarme, por favor?", "native": "ඔබට මට උදව් කළ හැකිද, කරුණාකර?", "phonetic": "ප්වේදෙ අයූදාර්මෙ, පෝර් ෆවෝර්?" },
+        { "id": "s2_1_2", "target": "No hablo español muy bien.", "native": "මම ස්පාඤ්ඤ භාෂාව හොඳින් කතා කරන්නේ නැහැ.", "phonetic": "නො අබ්ලො එස්පන්‍යොල් මුයි බියෙන්." },
+        { "id": "s2_1_3", "target": "Necesito un médico.", "native": "මට වෛද්‍යවරයෙක් අවශ්‍යයි.", "phonetic": "නෙසෙසීතො උන් මේදිකො." },
+        { "id": "s2_1_4", "target": "Estoy perdido/perdida.", "native": "මම අතරමං වෙලා.", "phonetic": "එස්තොයි පෙර්දීදො/පෙර්දීදා." }
       ],
       "dialogues": [
-        {
-          "id": "d2_8_1",
-          "context": "පාරේදී උදව් ඉල්ලීම.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, necesito ayuda.", "native": "සමාවෙන්න, මට උදව් අවශ්‍යයි.", "phonetic": "පෙර්-දොන්, නෙ-සෙ-සී-තෝ අයූ-දා." },
-            { "speaker": "B", "target": "Sí, ¿en qué puedo ayudarle?", "native": "ඔව්, මට උදව් කළ හැක්කේ කෙසේද?", "phonetic": "සී, එන් කේ පුවේ-දෝ අයූ-දාර්-ලේ?" }
-          ]
-        },
-        {
-          "id": "d2_8_2",
-          "context": "යමක් තේරුම් නොගත් විට.",
-          "lines": [
-            { "speaker": "A", "target": "Lo siento, no entiendo.", "native": "සමාවෙන්න, මට තේරෙන්නේ නැහැ.", "phonetic": "ලෝ සියෙන්-තෝ, නෝ එන්-තියෙන්-දෝ." },
-            { "speaker": "B", "target": "No se preocupe. ¿Hablo más despacio?", "native": "කණගාටු වෙන්න එපා. මම තව ටිකක් සෙමින් කතා කරන්නද?", "phonetic": "නෝ සේ ප්‍රේ-ඕ-කු-පේ. අබ්-ලෝ මාස් දේස්-පා-සියෝ?" }
-          ]
-        },
-        {
-          "id": "d2_8_3",
-          "context": "අතරමං වූ විට.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, estoy perdido. ¿Dónde está la estación?", "native": "සමාවෙන්න, මම අතරමං වෙලා. ස්ටේෂන් එක කොහෙද?", "phonetic": "පෙර්-දොන්, එස්-තෝයි පෙර්-දී-දෝ. දොන්-දේ එස්-තා ලා එස්-තා-සියොන්?" },
-            { "speaker": "B", "target": "La estación está a la derecha.", "native": "ස්ටේෂන් එක දකුණු පැත්තේ.", "phonetic": "ලා එස්-තා-සියොන් එස්-තා අ ලා දේ-රේ-චා." }
-          ]
-        },
-        {
-          "id": "d2_8_4",
-          "context": "වෛද්‍ය උපකාර අවශ්‍ය වූ විට.",
-          "lines": [
-            { "speaker": "A", "target": "¡Ayuda! Necesito un médico, por favor.", "native": "උදව්! කරුණාකර, මට වෛද්‍යවරයෙක් අවශ්‍යයි.", "phonetic": "අයූ-දා! නෙ-සෙ-සී-තෝ උන් මේ-දි-කෝ, පෝර් ෆ-වෝර්." },
-            { "speaker": "B", "target": "Tranquilo. Voy a llamar a una ambulancia.", "native": "සන්සුන් වෙන්න. මම ගිලන් රථයකට කතා කරන්නම්.", "phonetic": "ට්‍රන්-කී-ලෝ. වෝයි අ යා-මාර් අ උනා අම්-බු-ලන්-සියා." }
-          ]
-        }
+        { "id": "d2_1_1", "context": "පාරේදී උදව් ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "Disculpe, necesito ayuda.", "native": "සමාවෙන්න, මට උදව් අවශ්‍යයි.", "phonetic": "දිස්කුල්පෙ, නෙසෙසීතො අයූදා." },
+            { "speaker": "B", "target": "Sí, ¿en qué puedo ayudarle?", "native": "ඔව්, මට ඔබට උදව් කළ හැක්කේ කෙසේද?", "phonetic": "සී, එන් කෙ ප්වේදො අයූදාර්ලෙ?" }
+        ]},
+        { "id": "d2_1_2", "context": "තොරතුරු නොතේරුණු විට.", "lines": [
+            { "speaker": "A", "target": "Lo siento, no entiendo. ¿Puede repetirlo?", "native": "මට කණගාටුයි, මට තේරෙන්නේ නැහැ. ඔබට එය නැවත කිව හැකිද?", "phonetic": "ලො සියෙන්තො, නො එන්තියෙන්දො. ප්වේදෙ රෙපෙතීර්ලො?" },
+            { "speaker": "B", "target": "Claro. Dije que la tienda está a la derecha.", "native": "හරි. මම කිව්වේ කඩය දකුණු පැත්තේ කියලා.", "phonetic": "ක්ලාරො. දීහෙ කෙ ලා තියෙන්දා එස්තා අ ලා දেরেචා." }
+        ]},
+        { "id": "d2_1_3", "context": "යමක් ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "Un vaso de agua, por favor.", "native": "වතුර වීදුරුවක්, කරුණාකර.", "phonetic": "උන් වාසො දෙ අගුවා, පෝර් ෆවෝර්." },
+            { "speaker": "B", "target": "Aquí tiene.", "native": "මෙන්න ගන්න.", "phonetic": "අකී තියෙනෙ." }
+        ]},
+        { "id": "d2_1_4", "context": "උදව්වට ස්තූති කිරීම.", "lines": [
+            { "speaker": "A", "target": "Muchas gracias por todo.", "native": "හැමදේටම බොහොම ස්තූතියි.", "phonetic": "මුචස් ග්‍රාසියාස් පෝර් තෝදො." },
+            { "speaker": "B", "target": "De nada.", "native": "සුළු දෙයක්.", "phonetic": "දෙ නාදා." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          { "id": "fb2_8_1", "sentence": "___, no entiendo.", "answer": "Perdón", "hint": "සමාවෙන්න" }
+          { "id": "fb2_1_1", "sentence": "Necesito ___, por favor.", "answer": "ayuda", "hint": "උදව්" }
         ],
         "matching": [
-          { "id": "m2_8_1", "target": "Necesito ayuda", "native": "මට උදව් අවශ්‍යයි" }
+          { "id": "m2_1_1", "target": "Gracias", "native": "ස්තූතියි" },
+          { "id": "m2_1_2", "target": "Lo siento", "native": "මට කණගාටුයි" }
         ],
         "sentenceScramble": [
-          { "id": "ss2_8_1", "scrambled": ["ayudarme", "por", "favor", "¿Puede", "?"], "correct": "¿Puede ayudarme, por favor?", "nativeHint": "කරුණාකර, ඔබට මට උදව් කළ හැකිද?" }
+          { "id": "ss2_1_1", "scrambled": ["ayudarme", "puede", "por", "favor", "?"], "correct": "¿Puede ayudarme, por favor?", "nativeHint": "ඔබට මට උදව් කළ හැකිද, කරුණාකර?" }
         ]
       },
-      "cultural_note": "ස්පාඤ්ඤයේ සහ බොහෝ ලතින් ඇමරිකානු රටවල, ආගන්තුකයන්ගෙන් වුවද උදව් ඉල්ලීම සාමාන්‍ය දෙයකි. 'Perdón' හෝ 'Disculpe' යැයි කීමෙන් සංවාදය ආරම්භ කිරීම ආචාරශීලී වේ.",
-      "pronunciation_tip": "ස්පාඤ්ඤ භාෂාවේ 'h' අක්ෂරය නිහඬය. එම නිසා 'ayuda' යන්න 'අයූදා' ලෙස උච්චාරණය කරන අතර 'h' ශබ්ද නොවේ.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D8-Help" }
+      "cultural_note": "ස්පාඤ්ඤයේ, 'Disculpe' යනු ආගන්තුකයෙකුගේ අවධානය ලබා ගැනීමට ආචාරශීලී ක්‍රමයකි, 'Perdón' සාමාන්‍යයෙන් භාවිතා වන්නේ ඔබ යමෙකුට බාධා කළහොත් හෝ වැරදීමකින් ගැටුනහොත් ය.",
+      "pronunciation_tip": "'Ayuda' හි 'y' ශබ්දය ඉංග්‍රීසි 'y' ශබ්දයට වඩා ශක්තිමත් ය, එය 'j' ශබ්දයට සමාන ය. එය 'අජූදා' ලෙස සිතන්න.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D1-Help" }
     },
     {
       "week": 2,
-      "day": 9,
-      "title": "2 වන සතිය, 9 වන දිනය: ප්‍රශ්න තේරුම් ගැනීම",
-      "title_native": "Semana 2, Día 9: Entender preguntas",
+      "day": 2,
+      "title": "2 වන සතිය, 2 වන දිනය: ප්‍රශ්න තේරුම් ගැනීම",
+      "title_native": "Semana 2, Día 2: Entender preguntas",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_9_1",
-          "target": "Qué",
-          "phonetic": "කේ",
-          "native_meaning": "මොකක්ද",
-          "english": "What",
-          "example_sentence_target": "¿Qué es esto?",
-          "example_sentence_native": "මේ මොකක්ද?",
-          "example_sentence_phonetic": "කේ එස් එස්-තෝ?"
-        },
-        {
-          "id": "w2_9_2",
-          "target": "Quién",
-          "phonetic": "කියෙන්",
-          "native_meaning": "කවුද",
-          "english": "Who",
-          "example_sentence_target": "¿Quién es él?",
-          "example_sentence_native": "ඔහු කවුද?",
-          "example_sentence_phonetic": "කියෙන් එස් එල්?"
-        },
-        {
-          "id": "w2_9_3",
-          "target": "Dónde",
-          "phonetic": "දොන්-දේ",
-          "native_meaning": "කොහෙද",
-          "english": "Where",
-          "example_sentence_target": "¿Dónde está el baño?",
-          "example_sentence_native": "නානකාමරය කොහෙද?",
-          "example_sentence_phonetic": "දොන්-දේ එස්-තා එල් බා-නියෝ?"
-        },
-        {
-          "id": "w2_9_4",
-          "target": "Cuándo",
-          "phonetic": "ක්වාන්-දෝ",
-          "native_meaning": "කවදාද",
-          "english": "When",
-          "example_sentence_target": "¿Cuándo sale el tren?",
-          "example_sentence_native": "දුම්රිය පිටත් වෙන්නේ කවදාද?",
-          "example_sentence_phonetic": "ක්වාන්-දෝ සා-ලේ එල් ට්‍රෙන්?"
-        },
-        {
-          "id": "w2_9_5",
-          "target": "Por qué",
-          "phonetic": "පෝර් කේ",
-          "native_meaning": "ඇයි",
-          "english": "Why",
-          "example_sentence_target": "¿Por qué estás aquí?",
-          "example_sentence_native": "ඔබ මෙහි ඉන්නේ ඇයි?",
-          "example_sentence_phonetic": "පෝර් කේ එස්-තාස් අ-කී?"
-        },
-        {
-          "id": "w2_9_6",
-          "target": "Cómo",
-          "phonetic": "කෝ-මෝ",
-          "native_meaning": "කොහොමද",
-          "english": "How",
-          "example_sentence_target": "¿Cómo te llamas?",
-          "example_sentence_native": "ඔයාගේ නම මොකක්ද?",
-          "example_sentence_phonetic": "කෝ-මෝ තේ යා-මාස්?"
-        }
+        { "id": "w2_2_1", "target": "Qué", "phonetic": "කේ", "native_meaning": "මොකක්ද", "english": "What", "example_sentence_target": "¿Qué es esto?", "example_sentence_native": "මේ මොකක්ද?", "example_sentence_phonetic": "කේ එස් එස්තො?" },
+        { "id": "w2_2_2", "target": "Quién", "phonetic": "කියෙන්", "native_meaning": "කවුද", "english": "Who", "example_sentence_target": "¿Quién es esa persona?", "example_sentence_native": "ඒ පුද්ගලයා කවුද?", "example_sentence_phonetic": "කියෙන් එස් එසා පෙර්සෝනා?" },
+        { "id": "w2_2_3", "target": "Cuándo", "phonetic": "ක්වාන්දො", "native_meaning": "කවදාද", "english": "When", "example_sentence_target": "¿Cuándo llega el tren?", "example_sentence_native": "දුම්රිය එන්නේ කවදාද?", "example_sentence_phonetic": "ක්වාන්දො යේගා එල් තෙන්?" },
+        { "id": "w2_2_4", "target": "Dónde", "phonetic": "දොන්දෙ", "native_meaning": "කොහෙද", "english": "Where", "example_sentence_target": "¿Dónde vives?", "example_sentence_native": "ඔබ ජීවත් වන්නේ කොහේද?", "example_sentence_phonetic": "දොන්දෙ වීවෙස්?" },
+        { "id": "w2_2_5", "target": "Por qué", "phonetic": "පෝර් කේ", "native_meaning": "ඇයි", "english": "Why", "example_sentence_target": "¿Por qué estás aquí?", "example_sentence_native": "ඔබ මෙහි ඉන්නේ ඇයි?", "example_sentence_phonetic": "පෝර් කේ එස්තාස් අකී?" },
+        { "id": "w2_2_6", "target": "Cómo", "phonetic": "කෝමො", "native_meaning": "කොහොමද", "english": "How", "example_sentence_target": "¿Cómo te llamas?", "example_sentence_native": "ඔබේ නම කුමක්ද?", "example_sentence_phonetic": "කෝමො තෙ යාමස්?" }
       ],
       "sentences": [
-        {
-          "id": "s2_9_1",
-          "target": "¿Qué significa esta palabra?",
-          "native": "මේ වචනයේ තේරුම කුමක්ද?",
-          "phonetic": "කේ සිග්-නි-ෆී-කා එස්-තා ප-ලා-බ්‍රා?"
-        },
-        {
-          "id": "s2_9_2",
-          "target": "¿Dónde puedo encontrar un taxi?",
-          "native": "මට ටැක්සියක් හොයාගන්න පුළුවන් කොහෙන්ද?",
-          "phonetic": "දොන්-දේ පුවේ-දෝ එන්-කොන්-ට්‍රාර් උන් ටක්-සි?"
-        },
-        {
-          "id": "s2_9_3",
-          "target": "¿Cómo llego al hotel?",
-          "native": "මම හෝටලයට යන්නේ කොහොමද?",
-          "phonetic": "කෝ-මෝ යේ-ගෝ අල් ඔ-තෙල්?"
-        },
-        {
-          "id": "s2_9_4",
-          "target": "¿Cuándo abre la tienda?",
-          "native": "කඩේ අරින්නේ කවදාද?",
-          "phonetic": "ක්වාන්-දෝ අබ්-රේ ලා තියෙන්-දා?"
-        }
+        { "id": "s2_2_1", "target": "¿Qué significa esta palabra?", "native": "මේ වචනයේ තේරුම මොකක්ද?", "phonetic": "කේ සිග්නිෆීකා එස්තා පලබ්රා?" },
+        { "id": "s2_2_2", "target": "¿Dónde está la estación?", "native": "දුම්රිය ස්ථානය කොහෙද?", "phonetic": "දොන්දෙ එස්තා ලා එස්තාසියොන්?" },
+        { "id": "s2_2_3", "target": "¿Cómo llego al hospital?", "native": "මම රෝහලට යන්නේ කොහොමද?", "phonetic": "කෝමො යේගො අල් හොස්පිතාල්?" },
+        { "id": "s2_2_4", "target": "¿Cuándo abre la farmacia?", "native": "ෆාමසිය විවෘත කරන්නේ කවදාද?", "phonetic": "ක්වාන්දො ආබ්රෙ ලා ෆර්මාසියා?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_9_1",
-          "context": "නමක් ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, ¿cómo te llamas?", "native": "සමාවෙන්න, ඔයාගේ නම මොකක්ද?", "phonetic": "පෙර්-දොන්, කෝ-මෝ තේ යා-මාස්?" },
-            { "speaker": "B", "target": "Me llamo Ana. ¿Y tú?", "native": "මගේ නම ආනා. ඔයාගෙ?", "phonetic": "මේ යා-මෝ ආනා. ඊ තූ?" }
-          ]
-        },
-        {
-          "id": "d2_9_2",
-          "context": "යමක් කොහේදැයි ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Dónde está el supermercado?", "native": "සුපිරි වෙළඳසැල කොහෙද?", "phonetic": "දොන්-දේ එස්-තා එල් සූ-පෙර්-මෙර්-කා-දෝ?" },
-            { "speaker": "B", "target": "Está al final de la calle.", "native": "එය පාර අවසානයේ පිහිටා ඇත.", "phonetic": "එස්-තා අල් ෆි-නාල් දේ ලා කා-යේ." }
-          ]
-        },
-        {
-          "id": "d2_9_3",
-          "context": "යමක මිල ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Cuánto cuesta esto?", "native": "මේක කීයද?", "phonetic": "ක්වාන්-තෝ ක්වෙස්-තා එස්-තෝ?" },
-            { "speaker": "B", "target": "Cuesta cinco euros.", "native": "යුරෝ පහක් වෙනවා.", "phonetic": "ක්වෙස්-තා සින්-කෝ එඋ-රෝස්." }
-          ]
-        },
-        {
-          "id": "d2_9_4",
-          "context": "යමක් සිදුවන වේලාව ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Cuándo es la cena?", "native": "රාත්‍රී ආහාරය කවදාද?", "phonetic": "ක්වාන්-දෝ එස් ලා සේ-නා?" },
-            { "speaker": "B", "target": "Es a las ocho de la noche.", "native": "රාත්‍රී අටට.", "phonetic": "එස් අ ලාස් ඕ-චෝ දේ ලා නෝ-චේ." }
-          ]
-        }
+        { "id": "d2_2_1", "context": "නමක් ඇසීම.", "lines": [
+            { "speaker": "A", "target": "¿Cómo te llamas?", "native": "ඔබේ නම කුමක්ද?", "phonetic": "කෝමො තෙ යාමස්?" },
+            { "speaker": "B", "target": "Me llamo Nimal.", "native": "මගේ නම නිමල්.", "phonetic": "මෙ යාමො නිමල්." }
+        ]},
+        { "id": "d2_2_2", "context": "ස්ථානයක් ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Disculpe, ¿dónde está el supermercado?", "native": "සමාවෙන්න, සුපිරි වෙළඳසැල කොහෙද?", "phonetic": "දිස්කුල්පෙ, දොන්දෙ එස්තා එල් සුපෙර්මෙර්කාදො?" },
+            { "speaker": "B", "target": "Está a dos calles de aquí.", "native": "එය මෙතැන් සිට වීදි දෙකක් දුරින්.", "phonetic": "එස්තා අ දොස් කායෙස් දෙ අකී." }
+        ]},
+        { "id": "d2_2_3", "context": "යමක් ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "¿Qué es eso?", "native": "ඒ මොකක්ද?", "phonetic": "කේ එස් එසො?" },
+            { "speaker": "B", "target": "Es un postre tradicional.", "native": "එය සාම්ප්‍රදායික අතුරුපසක්.", "phonetic": "එස් උන් පොස්ත්රෙ තදිසියොනාල්." }
+        ]},
+        { "id": "d2_2_4", "context": "වේලාව ඇසීම.", "lines": [
+            { "speaker": "A", "target": "¿Cuándo sale el autobús?", "native": "බසය පිටත් වන්නේ කවදාද?", "phonetic": "ක්වාන්දො සාලෙ එල් අවුතොබුස්?" },
+            { "speaker": "B", "target": "Sale en diez minutos.", "native": "විනාඩි දහයකින් පිටත් වෙනවා.", "phonetic": "සාලෙ එන් දියෙස් මිනුතොස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          { "id": "fb2_9_1", "sentence": "¿___ está el baño?", "answer": "Dónde", "hint": "කොහෙද" }
+          { "id": "fb2_2_1", "sentence": "¿___ está el baño?", "answer": "Dónde", "hint": "කොහෙද" }
         ],
         "matching": [
-          { "id": "m2_9_1", "target": "¿Qué es esto?", "native": "මේ මොකක්ද?" }
+          { "id": "m2_2_1", "target": "Qué", "native": "මොකක්ද" },
+          { "id": "m2_2_2", "target": "Quién", "native": "කවුද" }
         ],
         "sentenceScramble": [
-          { "id": "ss2_9_1", "scrambled": ["te", "llamas", "¿Cómo", "?"], "correct": "¿Cómo te llamas?", "nativeHint": "ඔයාගේ නම මොකක්ද?" }
+          { "id": "ss2_2_1", "scrambled": ["te", "cómo", "llamas", "?"], "correct": "¿Cómo te llamas?", "nativeHint": "ඔබේ නම කුමක්ද?" }
         ]
       },
-      "cultural_note": "ස්පාඤ්ඤ භාෂාවේ ප්‍රශ්නාර්ථ වාක්‍යයක ආරම්භයේදී (¿) සහ අවසානයේදී (?) යන දෙකෙහිම ප්‍රශ්නාර්ථ ලකුණු භාවිතා කරයි. මෙය ලියන විට පමණක් වන අතර කතා කිරීමේදී වෙනසක් නැත.",
-      "pronunciation_tip": "'Quién' හි 'qu' ශබ්දය ඉංග්‍රීසි 'k' ශබ්දයට සමානයි. 'u' ශබ්ද නොවේ. එය 'කියෙන්' ලෙස උච්චාරණය කෙරේ.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D9-Questions" }
+      "cultural_note": "ස්පාඤ්ඤ භාෂාවේ ප්‍රශ්නාර්ථ වාක්‍ය, ප්‍රශ්නාර්ථ ලකුණකින් (¿) ආරම්භ වී අවසන් වේ (?). මෙය කියවීමේදී වාක්‍යයේ ස්වරය තේරුම් ගැනීමට උපකාරී වේ.",
+      "pronunciation_tip": "'Qué' හි 'qu' ශබ්දය ඉංග්‍රීසි 'k' ශබ්දයට සමාන වේ. 'u' අකුර නිහඬය. 'Quién' හි 'qui' ශබ්දය 'kee' ලෙස උච්චාරණය කෙරේ.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D2-Questions" }
+    },
+    {
+        "week": 2,
+        "day": 3,
+        "title": "2 වන සතිය, 3 වන දිනය: සරල තොරතුරු දීම",
+        "title_native": "Semana 2, Día 3: Dar información simple",
+        "theme": "Basic Communication",
+        "path": "survival",
+        "targetLanguage": "Spanish",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w2_3_1", "target": "Sí", "phonetic": "සී", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Sí, soy de Sri Lanka.", "example_sentence_native": "ඔව්, මම ශ්‍රී ලංකාවේ.", "example_sentence_phonetic": "සී, සොයි දෙ ශ්‍රී ලංකා." },
+            { "id": "w2_3_2", "target": "No", "phonetic": "නො", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "No, gracias.", "example_sentence_native": "නැහැ, ස්තූතියි.", "example_sentence_phonetic": "නො, ග්‍රාසියාස්." },
+            { "id": "w2_3_3", "target": "Mi nombre es", "phonetic": "මි නොම්බ්රෙ එස්", "native_meaning": "මගේ නම", "english": "My name is", "example_sentence_target": "Mi nombre es Sunil.", "example_sentence_native": "මගේ නම සුනිල්.", "example_sentence_phonetic": "මි නොම්බ්රෙ එස් සුනිල්." },
+            { "id": "w2_3_4", "target": "Tengo ... años", "phonetic": "තෙන්ගො ... අන්‍යොස්", "native_meaning": "මට වයස ...", "english": "I am ... years old", "example_sentence_target": "Tengo treinta años.", "example_sentence_native": "මට වයස තිහයි.", "example_sentence_phonetic": "තෙන්ගො තෙයින්තා අන්‍යොස්." },
+            { "id": "w2_3_5", "target": "Soy de", "phonetic": "සොයි දෙ", "native_meaning": "මම ... සිට", "english": "I am from", "example_sentence_target": "Soy de Colombo.", "example_sentence_native": "මම කොළඹ සිට.", "example_sentence_phonetic": "සොයි දෙ කොළඹ." },
+            { "id": "w2_3_6", "target": "Aquí", "phonetic": "අකී", "native_meaning": "මෙතන", "english": "Here", "example_sentence_target": "Vivo aquí.", "example_sentence_native": "මම මෙහි ජීවත් වෙමි.", "example_sentence_phonetic": "වීවො අකී." }
+        ],
+        "sentences": [
+            { "id": "s2_3_1", "target": "Sí, hablo un poco de español.", "native": "ඔව්, මම ස්පාඤ්ඤ ටිකක් කතා කරනවා.", "phonetic": "සී, අබ්ලො උන් පෝකො දෙ එස්පන්‍යොල්." },
+            { "id": "s2_3_2", "target": "No, no necesito una bolsa.", "native": "නැහැ, මට බෑගයක් අවශ්‍ය නැහැ.", "phonetic": "නො, නො නෙසෙසීතො ඌනා බෝල්සා." },
+            { "id": "s2_3_3", "target": "Soy trabajador de la construcción.", "native": "මම ඉදිකිරීම් සේවකයෙක්.", "phonetic": "සොයි තබාහදෝර් දෙ ලා කොන්ස්තෘක්සියොන්." },
+            { "id": "s2_3_4", "target": "Mi número de teléfono es...", "native": "මගේ දුරකථන අංකය ...", "phonetic": "මි නූමෙරො දෙ තෙලෙෆොනො එස්..." }
+        ],
+        "dialogues": [
+            { "id": "d2_3_1", "context": "තමන්ව හඳුන්වා දීම.", "lines": [
+                { "speaker": "A", "target": "Hola, mi nombre es María. ¿Y tú?", "native": "ආයුබෝවන්, මගේ නම මාරියා. ඔයාගේ?", "phonetic": "ඕලා, මි නොම්බ්රෙ එස් මාරියා. ඉ තූ?" },
+                { "speaker": "B", "target": "Hola, soy Kumar. Soy de Sri Lanka.", "native": "ආයුබෝවන්, මම කුමාර්. මම ශ්‍රී ලංකාවේ.", "phonetic": "ඕලා, සොයි කුමාර්. සොයි දෙ ශ්‍රී ලංකා." }
+            ]},
+            { "id": "d2_3_2", "context": "ප්‍රශ්නයකට ඔව්/නැහැ පිළිතුරු දීම.", "lines": [
+                { "speaker": "A", "target": "¿Es esta tu maleta?", "native": "මේක ඔයාගේ ගමන් මල්ලද?", "phonetic": "එස් එස්තා තු මාලේතා?" },
+                { "speaker": "B", "target": "Sí, es mía. Gracias.", "native": "ඔව්, ඒක මගේ. ස්තූතියි.", "phonetic": "සී, එස් මීයා. ග්‍රාසියාස්." }
+            ]},
+            { "id": "d2_3_3", "context": "වයස පැවසීම.", "lines": [
+                { "speaker": "A", "target": "¿Cuántos años tienes?", "native": "ඔබට වයස කීයද?", "phonetic": "ක්වාන්තොස් අන්‍යොස් තියෙනෙස්?" },
+                { "speaker": "B", "target": "Tengo veinticinco años.", "native": "මට වයස විසිපහයි.", "phonetic": "තෙන්ගො වෙයින්තිසින්කො අන්‍යොස්." }
+            ]},
+            { "id": "d2_3_4", "context": "තමන්ගේ රැකියාව පැවසීම.", "lines": [
+                { "speaker": "A", "target": "¿A qué te dedicas?", "native": "ඔබ මොකද කරන්නේ? (රැකියාව)", "phonetic": "ආ කෙ තෙ දෙදීකස්?" },
+                { "speaker": "B", "target": "Soy cocinero en un restaurante.", "native": "මම අවන්හලක කුක් කෙනෙක්.", "phonetic": "සොයි කොසිනෙරො එන් උන් රෙස්තව්රාන්තෙ." }
+            ]}
+        ],
+        "exercises": {
+            "fillBlanks": [
+                { "id": "fb2_3_1", "sentence": "Mi ___ es Ana.", "answer": "nombre", "hint": "නම" }
+            ],
+            "matching": [
+                { "id": "m2_3_1", "target": "Sí", "native": "ඔව්" },
+                { "id": "m2_3_2", "target": "Soy de", "native": "මම ... සිට" }
+            ],
+            "sentenceScramble": [
+                { "id": "ss2_3_1", "scrambled": ["de", "Sri", "Lanka", "soy"], "correct": "Soy de Sri Lanka", "nativeHint": "මම ශ්‍රී ලංකාවේ." }
+            ]
+        },
+        "cultural_note": "ස්පාඤ්ඤ භාෂාවේදී, 'tengo ... años' (මට ... අවුරුදු ඇත) ලෙස වයස පැවසීම සාමාන්‍ය දෙයකි. ඉංග්‍රීසිය මෙන් 'I am ... years old' (මම ... අවුරුදු) ලෙස 'soy' භාවිතා නොවේ.",
+        "pronunciation_tip": "'Nombre' හි 'br' ශබ්දය එකට උච්චාරණය කෙරේ. එය 'නොම්-බ්රෙ' ලෙස පුහුණු වන්න. 'b' සහ 'r' ශබ්ද ඉක්මනින් එකට කිව යුතුය.",
+        "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D3-Information" }
     },
     {
       "week": 2,
-      "day": 10,
-      "title": "2 වන සතිය, 10 වන දිනය: සරල තොරතුරු දීම",
-      "title_native": "Semana 2, Día 10: Dar información simple",
+      "day": 4,
+      "title": "2 වන සතිය, 4 වන දිනය: ස්ථානය ඇසීම",
+      "title_native": "Semana 2, Día 4: Preguntar por la ubicación",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_10_1",
-          "target": "Mi nombre es...",
-          "phonetic": "මී නොම්-බ්‍රේ එස්...",
-          "native_meaning": "මගේ නම...",
-          "english": "My name is...",
-          "example_sentence_target": "Mi nombre es Rohan.",
-          "example_sentence_native": "මගේ නම රොහාන්.",
-          "example_sentence_phonetic": "මී නොම්-බ්‍රේ එස් රොහාන්."
-        },
-        {
-          "id": "w2_10_2",
-          "target": "Soy de...",
-          "phonetic": "සෝයි දේ...",
-          "native_meaning": "මම ... සිට",
-          "english": "I am from...",
-          "example_sentence_target": "Soy de Sri Lanka.",
-          "example_sentence_native": "මම ශ්‍රී ලංකාවෙන්.",
-          "example_sentence_phonetic": "සෝයි දේ ශ්‍රී ලංකා."
-        },
-        {
-          "id": "w2_10_3",
-          "target": "Tengo ... años",
-          "phonetic": "තෙන්-ගෝ ... ආ-නියෝස්",
-          "native_meaning": "මට වයස ...",
-          "english": "I am ... years old",
-          "example_sentence_target": "Tengo treinta años.",
-          "example_sentence_native": "මට වයස අවුරුදු තිහයි.",
-          "example_sentence_phonetic": "තෙන්-ගෝ ට්‍රේන්-තා ආ-නියෝස්."
-        },
-        {
-          "id": "w2_10_4",
-          "target": "Sí",
-          "phonetic": "සී",
-          "native_meaning": "ඔව්",
-          "english": "Yes",
-          "example_sentence_target": "Sí, hablo un poco de español.",
-          "example_sentence_native": "ඔව්, මම ස්පාඤ්ඤ ටිකක් කතා කරනවා.",
-          "example_sentence_phonetic": "සී, අබ්-ලෝ උන් පෝ-කෝ දේ එස්-ප-නියෝල්."
-        },
-        {
-          "id": "w2_10_5",
-          "target": "No",
-          "phonetic": "නෝ",
-          "native_meaning": "නැහැ",
-          "english": "No",
-          "example_sentence_target": "No, no soy de España.",
-          "example_sentence_native": "නැහැ, මම ස්පාඤ්ඤයේ කෙනෙක් නෙවෙයි.",
-          "example_sentence_phonetic": "නෝ, නෝ සෝයි දේ එස්-පා-නියා."
-        },
-        {
-          "id": "w2_10_6",
-          "target": "Aquí",
-          "phonetic": "අ-කී",
-          "native_meaning": "මෙතන",
-          "english": "Here",
-          "example_sentence_target": "El restaurante está aquí.",
-          "example_sentence_native": "ආපන ශාලාව මෙතන තියෙන්නේ.",
-          "example_sentence_phonetic": "එල් රෙස්-තෞ-රන්-තේ එස්-තා අ-කී."
-        }
+        { "id": "w2_4_1", "target": "El baño", "phonetic": "එල් බානියො", "native_meaning": "නාන කාමරය", "english": "The bathroom", "example_sentence_target": "¿Dónde está el baño?", "example_sentence_native": "නාන කාමරය කොහෙද?", "example_sentence_phonetic": "දොන්දෙ එස්තා එල් බානියො?" },
+        { "id": "w2_4_2", "target": "La estación", "phonetic": "ලා එස්තාසියොන්", "native_meaning": "දුම්රිය ස්ථානය", "english": "The station", "example_sentence_target": "Necesito ir a la estación de tren.", "example_sentence_native": "මට දුම්රිය ස්ථානයට යාමට අවශ්‍යයි.", "example_sentence_phonetic": "නෙසෙසීතො ඊර් අ ලා එස්තාසියොන් දෙ තෙන්." },
+        { "id": "w2_4_3", "target": "El hospital", "phonetic": "එල් හොස්පිතාල්", "native_meaning": "රෝහල", "english": "The hospital", "example_sentence_target": "El hospital está cerca.", "example_sentence_native": "රෝහල ළඟයි.", "example_sentence_phonetic": "එල් හොස්පිතාල් එස්තා සෙර්කා." },
+        { "id": "w2_4_4", "target": "El supermercado", "phonetic": "එල් සුපෙර්මෙර්කාදො", "native_meaning": "සුපිරි වෙළඳසැල", "english": "The supermarket", "example_sentence_target": "Voy al supermercado.", "example_sentence_native": "මම සුපිරි වෙළඳසැලට යනවා.", "example_sentence_phonetic": "වොයි අල් සුපෙර්මෙර්කාදො." },
+        { "id": "w2_4_5", "target": "La farmacia", "phonetic": "ලා ෆර්මාසියා", "native_meaning": "ෆාමසිය", "english": "The pharmacy", "example_sentence_target": "La farmacia está abierta.", "example_sentence_native": "ෆාමසිය විවෘතයි.", "example_sentence_phonetic": "ලා ෆර්මාසියා එස්තා ආබියෙර්තා." },
+        { "id": "w2_4_6", "target": "La parada de autobús", "phonetic": "ලා පරාදා දෙ අවුතොබුස්", "native_meaning": "බස් නැවතුම", "english": "The bus stop", "example_sentence_target": "¿Dónde está la parada de autobús?", "example_sentence_native": "බස් නැවතුම කොහෙද?", "example_sentence_phonetic": "දොන්දෙ එස්තා ලා පරාදා දෙ අවුතොබුස්?" }
       ],
       "sentences": [
-        {
-          "id": "s2_10_1",
-          "target": "Me llamo Maria.",
-          "native": "මගේ නම මාරියා.",
-          "phonetic": "මේ යා-මෝ මාරියා."
-        },
-        {
-          "id": "s2_10_2",
-          "target": "Soy de Colombo.",
-          "native": "මම කොළඹ සිට.",
-          "phonetic": "සෝයි දේ කොළඹ."
-        },
-        {
-          "id": "s2_10_3",
-          "target": "Sí, entiendo un poco.",
-          "native": "ඔව්, මට ටිකක් තේරෙනවා.",
-          "phonetic": "සී, එන්-තියෙන්-දෝ උන් පෝ-කෝ."
-        },
-        {
-          "id": "s2_10_4",
-          "target": "No, gracias.",
-          "native": "නැහැ, ස්තූතියි.",
-          "phonetic": "නෝ, ග්‍රා-සියාස්."
-        }
+        { "id": "s2_4_1", "target": "Disculpe, ¿hay un hospital cerca de aquí?", "native": "සමාවෙන්න, මෙතන ළඟ රෝහලක් තියෙනවාද?", "phonetic": "දිස්කුල්පෙ, අයි උන් හොස්පිතාල් සෙර්කා දෙ අකී?" },
+        { "id": "s2_4_2", "target": "Estoy buscando el supermercado.", "native": "මම සුපිරි වෙළඳසැලක් හොයනවා.", "phonetic": "එස්තොයි බුස්කාන්දො එල් සුපෙර්මෙර්කාදො." },
+        { "id": "s2_4_3", "target": "¿La estación de metro está lejos?", "native": "මෙට්‍රෝ ස්ටේෂන් එක දුරද?", "phonetic": "ලා එස්තාසියොන් දෙ මෙත්රො එස්තා ලෙහොස්?" },
+        { "id": "s2_4_4", "target": "Necesito encontrar una farmacia.", "native": "මට ෆාමසියක් හොයාගන්න අවශ්‍යයි.", "phonetic": "නෙසෙසීතො එන්කොන්ත්රාර් ඌනා ෆර්මාසියා." }
       ],
       "dialogues": [
-        {
-          "id": "d2_10_1",
-          "context": "තමන්ව හඳුන්වා දීම.",
-          "lines": [
-            { "speaker": "A", "target": "Hola, mi nombre es David. ¿Y tú?", "native": "ආයුබෝවන්, මගේ නම ඩේවිඩ්. ඔයාගෙ?", "phonetic": "ඕ-ලා, මී නොම්-බ්‍රේ එස් ඩේවිඩ්. ඊ තූ?" },
-            { "speaker": "B", "target": "Hola David, me llamo Sara.", "native": "ආයුබෝවන් ඩේවිඩ්, මගේ නම සාරා.", "phonetic": "ඕ-ලා ඩේවිඩ්, මේ යා-මෝ සාරා." }
-          ]
-        },
-        {
-          "id": "d2_10_2",
-          "context": "කොහෙන්දැයි පැවසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿De dónde eres?", "native": "ඔබ කොහෙන්ද?", "phonetic": "දේ දොන්-දේ එ-රෙස්?" },
-            { "speaker": "B", "target": "Soy de Sri Lanka.", "native": "මම ශ්‍රී ලංකාවෙන්.", "phonetic": "සෝයි දේ ශ්‍රී ලංකා." }
-          ]
-        },
-        {
-          "id": "d2_10_3",
-          "context": "ප්‍රශ්නයකට ඔව්/නැහැ ලෙස පිළිතුරු දීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Hablas inglés?", "native": "ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "අබ්-ලාස් ඉන්-ග්ලේස්?" },
-            { "speaker": "B", "target": "Sí, hablo inglés.", "native": "ඔව්, මම ඉංග්‍රීසි කතා කරනවා.", "phonetic": "සී, අබ්-ලෝ ඉන්-ග්ලේස්." }
-          ]
-        },
-        {
-          "id": "d2_10_4",
-          "context": "යමක් අවශ්‍යදැයි ඇසූ විට.",
-          "lines": [
-            { "speaker": "A", "target": "¿Quieres un café?", "native": "කෝපි එකක් ඕනෙද?", "phonetic": "කියෙ-රෙස් උන් ක-ෆේ?" },
-            { "speaker": "B", "target": "No, gracias. Solo agua.", "native": "නැහැ, ස්තූතියි. වතුර විතරක්.", "phonetic": "නෝ, ග්‍රා-සියාස්. සෝ-ලෝ අ-ග්වා." }
-          ]
-        }
+        { "id": "d2_4_1", "context": "බස් නැවතුම ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Perdón, ¿la parada de autobús está por aquí?", "native": "සමාවෙන්න, බස් නැවතුම මේ පැත්තෙද?", "phonetic": "පෙර්දොන්, ලා පරාදා දෙ අවුතොබුස් එස්තා පෝර් අකී?" },
+            { "speaker": "B", "target": "Sí, está justo en la esquina.", "native": "ඔව්, ඒක කෙළවරේම තියෙන්නේ.", "phonetic": "සී, එස්තා හුස්තො එන් ලා එස්කීනා." }
+        ]},
+        { "id": "d2_4_2", "context": "නාන කාමරය කොහෙදැයි ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Disculpe, ¿dónde están los servicios?", "native": "සමාවෙන්න, වැසිකිළි කොහෙද?", "phonetic": "දිස්කුල්පෙ, දොන්දෙ එස්තාන් ලොස් සෙර්වීසියොස්?" },
+            { "speaker": "B", "target": "Al fondo, a la izquierda.", "native": "අවසානයේ, වම් පැත්තේ.", "phonetic": "අල් ෆොන්දො, අ ලා ඉස්කියෙර්දා." }
+        ]},
+        { "id": "d2_4_3", "context": "රෝහලක් සෙවීම.", "lines": [
+            { "speaker": "A", "target": "¡Ayuda! Necesito un hospital, es una emergencia.", "native": "උදව්! මට රෝහලක් අවශ්‍යයි, මේක හදිස්සියක්.", "phonetic": "අයූදා! නෙසෙසීතො උන් හොස්පිතාල්, එස් ඌනා එමර්හෙන්සියා." },
+            { "speaker": "B", "target": "El hospital más cercano está a cinco minutos en taxi.", "native": "ළඟම රෝහල ටැක්සියෙන් විනාඩි පහක දුරින්.", "phonetic": "එල් හොස්පිතාල් ማስ සෙර්කානො එස්තා අ සින්කො මිනුතොස් එන් ටැක්සි." }
+        ]},
+        { "id": "d2_4_4", "context": "ෆාමසියක් සොයා ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Busco una farmacia. ¿Sabe dónde hay una?", "native": "මම ෆාමසියක් හොයනවා. කොහේ හරි තියෙනවද දන්නවද?", "phonetic": "බුස්කො ඌනා ෆර්මාසියා. සාබෙ දොන්දෙ අයි ඌනා?" },
+            { "speaker": "B", "target": "Sí, hay una al lado del supermercado.", "native": "ඔව්, සුපිරි වෙළඳසැල ළඟ එකක් තියෙනවා.", "phonetic": "සී, අයි ඌනා අල් ලාදො දෙල් සුපෙර්මෙර්කාදො." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          { "id": "fb2_10_1", "sentence": "Mi nombre ___ Carlos.", "answer": "es", "hint": "වෙයි" }
+          { "id": "fb2_4_1", "sentence": "¿Dónde está el ___?", "answer": "hospital", "hint": "රෝහල" }
         ],
         "matching": [
-          { "id": "m2_10_1", "target": "Soy de Sri Lanka", "native": "මම ශ්‍රී ලංකාවෙන්" }
+          { "id": "m2_4_1", "target": "El baño", "native": "නාන කාමරය" },
+          { "id": "m2_4_2", "target": "La estación", "native": "දුම්රිය ස්ථානය" }
         ],
         "sentenceScramble": [
-          { "id": "ss2_10_1", "scrambled": ["de", "Sri Lanka", "Soy"], "correct": "Soy de Sri Lanka", "nativeHint": "මම ශ්‍රී ලංකාවෙන්." }
+          { "id": "ss2_4_1", "scrambled": ["supermercado", "el", "está", "dónde", "?"], "correct": "¿Dónde está el supermercado?", "nativeHint": "සුපිරි වෙළඳසැල කොහෙද?" }
         ]
       },
-      "cultural_note": "ස්පාඤ්ඤ භාෂාව කතා කරන අය නිතරම තම වයස 'tener' (to have) යන ක්‍රියා පදය සමඟ පවසයි. උදාහරණයක් ලෙස 'Tengo 30 años' (I have 30 years) යන්න 'I am 30 years old' යන්නට සමාන වේ.",
-      "pronunciation_tip": "'ll' අක්ෂර ද්විත්වය බොහෝ ස්පාඤ්ඤ ප්‍රදේශවල 'y' ශබ්දය මෙන් උච්චාරණය කෙරේ. එබැවින් 'llamo' යන්න 'යාමෝ' ලෙස ශබ්ද වේ.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D10-Info" }
+      "cultural_note": "ස්පාඤ්ඤයේ, 'el baño' සහ 'los servicios' යන දෙකම වැසිකිළිය හැඳින්වීමට භාවිතා කරයි. 'Los servicios' පොදු ස්ථානවල බහුලව භාවිතා වේ.",
+      "pronunciation_tip": "'Hospital' හි 'h' අකුර නිහඬය. එය උච්චාරණය නොකරන්න. එය 'ඔස්පිතාල්' ලෙස ශබ්ද වේ.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D4-Location" }
     },
     {
       "week": 2,
-      "day": 11,
-      "title": "2 වන සතිය, 11 වන දිනය: ස්ථානයක් ඇසීම",
-      "title_native": "Semana 2, Día 11: Preguntar por un lugar",
+      "day": 5,
+      "title": "2 වන සතිය, 5 වන දිනය: දිශාවන්",
+      "title_native": "Semana 2, Día 5: Direcciones",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_11_1",
-          "target": "Estación",
-          "phonetic": "එස්-තා-සියොන්",
-          "native_meaning": "දුම්රිය ස්ථානය",
-          "english": "Station",
-          "example_sentence_target": "¿Dónde está la estación de tren?",
-          "example_sentence_native": "දුම්රිය ස්ථානය කොහෙද?",
-          "example_sentence_phonetic": "දොන්-දේ එස්-තා ලා එස්-තා-සියොන් දේ ට්‍රෙන්?"
-        },
-        {
-          "id": "w2_11_2",
-          "target": "Hospital",
-          "phonetic": "ඔස්-පි-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Necesito ir al hospital.",
-          "example_sentence_native": "මට රෝහලට යාමට අවශ්‍යයි.",
-          "example_sentence_phonetic": "නෙ-සෙ-සී-තෝ ඊර් අල් ඔස්-පි-තාල්."
-        },
-        {
-          "id": "w2_11_3",
-          "target": "Banco",
-          "phonetic": "බන්-කෝ",
-          "native_meaning": "බැංකුව",
-          "english": "Bank",
-          "example_sentence_target": "El banco está cerca.",
-          "example_sentence_native": "බැංකුව ළඟ තියෙන්නේ.",
-          "example_sentence_phonetic": "එල් බන්-කෝ එස්-තා සෙර්-කා."
-        },
-        {
-          "id": "w2_11_4",
-          "target": "Restaurante",
-          "phonetic": "රෙස්-තෞ-රන්-තේ",
-          "native_meaning": "ආපන ශාලාව",
-          "english": "Restaurant",
-          "example_sentence_target": "Busco un restaurante bueno.",
-          "example_sentence_native": "මම හොඳ ආපන ශාලාවක් හොයනවා.",
-          "example_sentence_phonetic": "බුස්-කෝ උන් රෙස්-තෞ-රන්-තේ බුවේ-නෝ."
-        },
-        {
-          "id": "w2_11_5",
-          "target": "Hotel",
-          "phonetic": "ඔ-තෙල්",
-          "native_meaning": "හෝටලය",
-          "english": "Hotel",
-          "example_sentence_target": "¿Está lejos el hotel?",
-          "example_sentence_native": "හෝටලය දුරද?",
-          "example_sentence_phonetic": "එස්-තා ලේ-හොස් එල් ඔ-තෙල්?"
-        },
-        {
-          "id": "w2_11_6",
-          "target": "Calle",
-          "phonetic": "කා-යේ",
-          "native_meaning": "වීදිය",
-          "english": "Street",
-          "example_sentence_target": "Vivo en esta calle.",
-          "example_sentence_native": "මම ජීවත් වෙන්නේ මේ වීදියේ.",
-          "example_sentence_phonetic": "වී-වෝ එන් එස්-තා කා-යේ."
-        }
+        { "id": "w2_5_1", "target": "La derecha", "phonetic": "ලා දেরেචා", "native_meaning": "දකුණ", "english": "The right", "example_sentence_target": "Gire a la derecha.", "example_sentence_native": "දකුණට හැරෙන්න.", "example_sentence_phonetic": "හිරේ අ ලා දেরেචා." },
+        { "id": "w2_5_2", "target": "La izquierda", "phonetic": "ලා ඉස්කියෙර්දා", "native_meaning": "වම", "english": "The left", "example_sentence_target": "Está a la izquierda.", "example_sentence_native": "එය වම් පැත්තේ ඇත.", "example_sentence_phonetic": "එස්තා අ ලා ඉස්කියෙර්දා." },
+        { "id": "w2_5_3", "target": "Todo recto", "phonetic": "තෝදො රෙක්තො", "native_meaning": "කෙලින්ම", "english": "Straight ahead", "example_sentence_target": "Siga todo recto.", "example_sentence_native": "කෙලින්ම යන්න.", "example_sentence_phonetic": "සීගා තෝදො රෙක්තො." },
+        { "id": "w2_5_4", "target": "Cerca", "phonetic": "සෙර්කා", "native_meaning": "ළඟ", "english": "Near", "example_sentence_target": "El banco está cerca.", "example_sentence_native": "බැංකුව ළඟයි.", "example_sentence_phonetic": "එල් බන්කො එස්තා සෙර්කා." },
+        { "id": "w2_5_5", "target": "Lejos", "phonetic": "ලෙහොස්", "native_meaning": "දුර", "english": "Far", "example_sentence_target": "El aeropuerto está lejos.", "example_sentence_native": "ගුවන් තොටුපළ දුරයි.", "example_sentence_phonetic": "එල් අඑරොප්වෙර්තො එස්තා ලෙහොස්." },
+        { "id": "w2_5_6", "target": "Al lado de", "phonetic": "අල් ලාදො දෙ", "native_meaning": " поруч", "english": "Next to", "example_sentence_target": "Estoy al lado del hotel.", "example_sentence_native": "මම හෝටලය අසල සිටිමි.", "example_sentence_phonetic": "එස්තොයි අල් ලාදො දෙල් හොතෙල්." }
       ],
       "sentences": [
-        {
-          "id": "s2_11_1",
-          "target": "Perdón, ¿dónde está la farmacia?",
-          "native": "සමාවෙන්න, ෆාමසිය කොහෙද?",
-          "phonetic": "පෙර්-දොන්, දොන්-දේ එස්-තා ලා ෆර්-මා-සියා?"
-        },
-        {
-          "id": "s2_11_2",
-          "target": "Busco la parada de autobús.",
-          "native": "මම බස් නැවතුම හොයනවා.",
-          "phonetic": "බුස්-කෝ ලා ප-රා-දා දේ අවු-තෝ-බුස්."
-        },
-        {
-          "id": "s2_11_3",
-          "target": "¿Hay un baño por aquí?",
-          "native": "මේ ළඟ පාතක නානකාමරයක් තියෙනවද?",
-          "phonetic": "ආයි උන් බා-නියෝ පෝර් අ-කී?"
-        },
-        {
-          "id": "s2_11_4",
-          "target": "Necesito encontrar el consulado.",
-          "native": "මට කොන්සල් කාර්යාලය හොයාගන්න ඕන.",
-          "phonetic": "නෙ-සෙ-සී-තෝ එන්-කොන්-ට්‍රාර් එල් කොන්-සු-ලා-දෝ."
-        }
+        { "id": "s2_5_1", "target": "El museo está a la derecha.", "native": "කෞතුකාගාරය දකුණු පසින්.", "phonetic": "එල් මුසෙයො එස්තා අ ලා දেরেචා." },
+        { "id": "s2_5_2", "target": "Continúe todo recto por esta calle.", "native": "මේ පාර දිගේ කෙලින්ම යන්න.", "phonetic": "කොන්තිනුඑ තෝදො රෙක්තො පෝර් එස්තා කායෙ." },
+        { "id": "s2_5_3", "target": "¿Está lejos de aquí?", "native": "මෙතනින් දුරද?", "phonetic": "එස්තා ලෙහොස් දෙ අකී?" },
+        { "id": "s2_5_4", "target": "La parada de taxis está al lado de la estación.", "native": "ටැක්සි නැවතුම ස්ටේෂන් එක ළඟ.", "phonetic": "ලා පරාදා දෙ ටැක්සිස් එස්තා අල් ලාදො දෙ ලා එස්තාසියොන්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_11_1",
-          "context": "දුම්රිය ස්ථානය කොහේදැයි ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "Disculpe, ¿dónde está la estación de tren?", "native": "සමාවෙන්න, දුම්රිය ස්ථානය කොහෙද?", "phonetic": "දිස්-කුල්-පේ, දොන්-දේ එස්-තා ලා එස්-තා-සියොන් දේ ට්‍රෙන්?" },
-            { "speaker": "B", "target": "Siga recto, está a cinco minutos.", "native": "කෙලින්ම යන්න, විනාඩි පහකින් තියෙනවා.", "phonetic": "සී-ගා රෙක්-තෝ, එස්-තා අ සින්-කෝ මි-නූ-තෝස්." }
-          ]
-        },
-        {
-          "id": "d2_11_2",
-          "context": "ළඟම ඇති බැංකුව සෙවීම.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, ¿hay un banco cerca de aquí?", "native": "සමාවෙන්න, මේ ළඟ බැංකුවක් තියෙනවද?", "phonetic": "පෙර්-දොන්, ආයි උන් බන්-කෝ සෙර්-කා දේ අ-කී?" },
-            { "speaker": "B", "target": "Sí, hay uno en la siguiente calle.", "native": "ඔව්, ඊළඟ පාරේ එකක් තියෙනවා.", "phonetic": "සී, ආයි උනෝ එන් ලා සි-ගියෙන්-තේ කා-යේ." }
-          ]
-        },
-        {
-          "id": "d2_11_3",
-          "context": "රෝහලක් සොයා ගැනීම.",
-          "lines": [
-            { "speaker": "A", "target": "Necesito ir al hospital más cercano.", "native": "මට ළඟම ඇති රෝහලට යන්න ඕන.", "phonetic": "නෙ-සෙ-සී-තෝ ඊර් අල් ඔස්-පි-තාල් මාස් සෙර්-කා-නෝ." },
-            { "speaker": "B", "target": "Tome un taxi. Está a diez minutos en coche.", "native": "ටැක්සියක් ගන්න. කාර් එකෙන් විනාඩි දහයක දුරයි.", "phonetic": "තෝ-මේ උන් ටක්-සි. එස්-තා අ දියේස් මි-නූ-තෝස් එන් කෝ-චේ." }
-          ]
-        },
-        {
-          "id": "d2_11_4",
-          "context": "හොඳ ආපන ශාලාවක් ගැන විමසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Conoce un buen restaurante por aquí?", "native": "ඔබ මේ ළඟ හොඳ ආපන ශාලාවක් දන්නවාද?", "phonetic": "කො-නෝ-සේ උන් බුවෙන් රෙස්-තෞ-රන්-තේ පෝර් අ-කී?" },
-            { "speaker": "B", "target": "Sí, 'Casa Pepe' es muy bueno.", "native": "ඔව්, 'කාසා පෙපේ' ගොඩක් හොඳයි.", "phonetic": "සී, 'කා-සා පෙ-පේ' එස් මුයි බුවේ-නෝ." }
-          ]
-        }
+        { "id": "d2_5_1", "context": "දිශාවන් ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Disculpe, ¿cómo llego a la plaza principal?", "native": "සමාවෙන්න, මම ප්‍රධාන චතුරශ්‍රයට යන්නේ කොහොමද?", "phonetic": "දිස්කුල්පෙ, කෝමො යේගො අ ලා ප්ලාසා පින්සිපාල්?" },
+            { "speaker": "B", "target": "Siga todo recto y luego gire a la izquierda en el semáforo.", "native": "කෙලින්ම ගොස්, පසුව ට්‍රැෆික් ලයිට් එකෙන් වමට හැරෙන්න.", "phonetic": "සීගා තෝදො රෙක්තො ඉ ලුවේගො හිරේ අ ලා ඉස්කියෙර්දා එන් එල් සෙමාෆොරො." }
+        ]},
+        { "id": "d2_5_2", "context": "යමක් ළඟද දුරදැයි ඇසීම.", "lines": [
+            { "speaker": "A", "target": "¿El mercado está cerca o lejos?", "native": "වෙළඳපොළ ළඟද දුරද?", "phonetic": "එල් මෙර්කාදො එස්තා සෙර්කා ඔ ලෙහොස්?" },
+            { "speaker": "B", "target": "Está bastante cerca, a unos diez minutos caminando.", "native": "එය තරමක් ළඟයි, විනාඩි දහයක් පමණ ඇවිදගෙන යා හැකියි.", "phonetic": "එස්තා බස්තාන්තෙ සෙර්කා, අ උනොස් දියෙස් මිනුතොස් කමිනාන්දො." }
+        ]},
+        { "id": "d2_5_3", "context": "දිශාවන් තහවුරු කර ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Entonces, ¿es a la derecha después del puente?", "native": "එහෙනම්, පාලම පහු කරලා දකුණටද?", "phonetic": "එන්තොන්සෙස්, එස් අ ලා දেরেචා දෙස්ප්වෙස් දෙල් පුවෙන්තෙ?" },
+            { "speaker": "B", "target": "Sí, exactamente.", "native": "ඔව්, හරියටම.", "phonetic": "සී, එක්සක්තමෙන්තෙ." }
+        ]},
+        { "id": "d2_5_4", "context": "යමක් පිහිටි තැන පැහැදිලි කිරීම.", "lines": [
+            { "speaker": "A", "target": "¿Dónde está la entrada?", "native": "ඇතුල්වන දොරටුව කොහෙද?", "phonetic": "දොන්දෙ එස්තා ලා එන්ත්රාදා?" },
+            { "speaker": "B", "target": "Está al lado de la farmacia, a la izquierda.", "native": "එය ෆාමසිය ළඟ, වම් පැත්තේ.", "phonetic": "එස්තා අල් ලාදො දෙ ලා ෆර්මාසියා, අ ලා ඉස්කියෙර්දා." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          { "id": "fb2_11_1", "sentence": "¿Dónde está la ___ de tren?", "answer": "estación", "hint": "දුම්රිය ස්ථානය" }
+          { "id": "fb2_5_1", "sentence": "El parque no está lejos, está ___.", "answer": "cerca", "hint": "ළඟ" }
         ],
         "matching": [
-          { "id": "m2_11_1", "target": "Necesito ir al hospital", "native": "මට රෝහලට යාමට අවශ්‍යයි" }
+          { "id": "m2_5_1", "target": "La derecha", "native": "දකුණ" },
+          { "id": "m2_5_2", "target": "Todo recto", "native": "කෙලින්ම" }
         ],
         "sentenceScramble": [
-          { "id": "ss2_11_1", "scrambled": ["un", "banco", "¿Hay", "aquí", "cerca?"], "correct": "¿Hay un banco cerca aquí?", "nativeHint": "මේ ළඟ බැංකුවක් තියෙනවද?" }
+          { "id": "ss2_5_1", "scrambled": ["a", "la", "izquierda", "gire"], "correct": "Gire a la izquierda", "nativeHint": "වමට හැරෙන්න." }
         ]
       },
-      "cultural_note": "ස්පාඤ්ඤයේ, බොහෝ විට 'disculpe' (විධිමත්) හෝ 'perdón' (අවිධිමත්/විධිමත්) යන වචන ආගන්තුකයෙකුගේ අවධානය ලබා ගැනීමට භාවිතා කරයි. දෙකම 'excuse me' යන්නට සමානයි.",
-      "pronunciation_tip": "'Estación' හි 'c' අක්ෂරය 's' ශබ්දය මෙන් උච්චාරණය කරයි. 'Estathion' ලෙස නොව 'Estasion' ලෙසයි. මෙය ලතින් ඇමරිකානු ස්පාඤ්ඤයේ බහුලව දක්නට ලැබේ.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D11-Location" }
+      "cultural_note": "දිශාවන් දීමේදී, ස්පාඤ්ඤ ජාතිකයන් බොහෝ විට අත් සහ අභිනයන් භාවිතා කරයි. ඔවුන්ගේ ශරීර භාෂාව කෙරෙහි අවධානය යොමු කිරීම දිශාවන් තේරුම් ගැනීමට උපකාරී වේ.",
+      "pronunciation_tip": "'Izquierda' හි 'z' ශබ්දය ස්පාඤ්ඤයේ 'th' (as in 'thin') ශබ්දයට සමාන වන අතර ලතින් ඇමරිකාවේ 's' ශබ්දයට සමාන වේ. 'Derecha' හි 'ch' ශබ්දය ඉංග්‍රීසි 'ch' (as in 'church') ශබ්දයට සමාන වේ.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D5-Directions" }
+    },
+    {
+        "week": 2,
+        "day": 6,
+        "title": "2 වන සතිය, 6 වන දිනය: පොදු ස්ථාන",
+        "title_native": "Semana 2, Día 6: Lugares públicos",
+        "theme": "Basic Communication",
+        "path": "survival",
+        "targetLanguage": "Spanish",
+        "nativeLanguage": "Sinhala",
+        "words": [
+            { "id": "w2_6_1", "target": "El parque", "phonetic": "එල් පර්කෙ", "native_meaning": "උද්‍යානය", "english": "The park", "example_sentence_target": "Vamos al parque.", "example_sentence_native": "අපි උද්‍යානයට යමු.", "example_sentence_phonetic": "වාමොස් අල් පර්කෙ." },
+            { "id": "w2_6_2", "target": "El banco", "phonetic": "එල් බන්කො", "native_meaning": "බැංකුව", "english": "The bank", "example_sentence_target": "El banco cierra a las dos.", "example_sentence_native": "බැංකුව දෙකට වහනවා.", "example_sentence_phonetic": "එල් බන්කො සියෙරා අ ලාස් දොස්." },
+            { "id": "w2_6_3", "target": "El restaurante", "phonetic": "එල් රෙස්තව්රාන්තෙ", "native_meaning": "අවන්හල", "english": "The restaurant", "example_sentence_target": "Este restaurante es muy bueno.", "example_sentence_native": "මේ අවන්හල ගොඩක් හොඳයි.", "example_sentence_phonetic": "එස්තෙ රෙස්තව්රාන්තෙ එස් මුයි බ්වේනො." },
+            { "id": "w2_6_4", "target": "El hotel", "phonetic": "එල් හොතෙල්", "native_meaning": "හෝටලය", "english": "The hotel", "example_sentence_target": "Me alojo en un hotel.", "example_sentence_native": "මම හෝටලයක නවාතැන් ගන්නවා.", "example_sentence_phonetic": "මෙ අලොහෝ එන් උන් හොතෙල්." },
+            { "id": "w2_6_5", "target": "La tienda", "phonetic": "ලා තියෙන්දා", "native_meaning": "කඩය", "english": "The store", "example_sentence_target": "La tienda está abierta.", "example_sentence_native": "කඩය විවෘතයි.", "example_sentence_phonetic": "ලා තියෙන්දා එස්තා ආබියෙර්තා." },
+            { "id": "w2_6_6", "target": "El mercado", "phonetic": "එල් මෙර්කාදො", "native_meaning": "වෙළඳපොළ", "english": "The market", "example_sentence_target": "Compro fruta en el mercado.", "example_sentence_native": "මම වෙළඳපොළෙන් පළතුරු මිලදී ගන්නවා.", "example_sentence_phonetic": "කොම්ප්‍රො ෆෘතා එන් එල් මෙර්කාදො." }
+        ],
+        "sentences": [
+            { "id": "s2_6_1", "target": "¿Hay un parque por aquí?", "native": "මේ ළඟ පාත උද්‍යානයක් තියෙනවාද?", "phonetic": "අයි උන් පර්කෙ පෝර් අකී?" },
+            { "id": "s2_6_2", "target": "El restaurante tiene comida local.", "native": "අවන්හලේ දේශීය ආහාර තියෙනවා.", "phonetic": "එල් රෙස්තව්රාන්තෙ තියෙනෙ කොමීදා ලොකාල්." },
+            { "id": "s2_6_3", "target": "Necesito cambiar dinero en el banco.", "native": "මට බැංකුවේ මුදල් මාරු කරන්න අවශ්‍යයි.", "phonetic": "නෙසෙසීතො කම්බියාර් දිනෙරො එන් එල් බන්කො." },
+            { "id": "s2_6_4", "target": "La tienda de ropa está en la otra calle.", "native": "ඇඳුම් කඩය අනිත් පාරේ තියෙන්නේ.", "phonetic": "ලා තියෙන්දා දෙ රෝපා එස්තා එන් ලා ඕත්රා කායෙ." }
+        ],
+        "dialogues": [
+            { "id": "d2_6_1", "context": "අවන්හලක් ගැන ඇසීම.", "lines": [
+                { "speaker": "A", "target": "Disculpe, ¿conoce un buen restaurante cerca?", "native": "සමාවෙන්න, ළඟ හොඳ අවන්හලක් දන්නවද?", "phonetic": "දිස්කුල්පෙ, කොනොසෙ උන් බ්වෙන් රෙස්තව්රාන්තෙ සෙර්කා?" },
+                { "speaker": "B", "target": "Sí, el restaurante 'La Paella' es excelente.", "native": "ඔව්, 'ලා පයෙයා' අවන්හල ඉතා විශිෂ්ටයි.", "phonetic": "සී, එල් රෙස්තව්රාන්තෙ 'ලා පයෙයා' එස් එක්සෙලෙන්තෙ." }
+            ]},
+            { "id": "d2_6_2", "context": "හෝටලයකදී.", "lines": [
+                { "speaker": "A", "target": "Tengo una reserva en este hotel.", "native": "මම මේ හෝටලයේ වෙන් කිරීමක් කරලා තියෙනවා.", "phonetic": "තෙන්ගො ඌනා රෙසෙර්වා එන් එස්තෙ හොතෙල්." },
+                { "speaker": "B", "target": "Perfecto. ¿Su nombre, por favor?", "native": "නියමයි. ඔබේ නම, කරුණාකර?", "phonetic": "පෙර්ෆෙක්තො. සු නොම්බ්රෙ, පෝර් ෆවෝර්?" }
+            ]},
+            { "id": "d2_6_3", "context": "වෙළඳපොළේදී.", "lines": [
+                { "speaker": "A", "target": "¿Cuánto cuestan las manzanas?", "native": "ඇපල් ගෙඩි කීයද?", "phonetic": "ක්වාන්තො ක්වෙස්තාන් ලාස් මන්සානාස්?" },
+                { "speaker": "B", "target": "Dos euros el kilo.", "native": "කිලෝවක් යුරෝ දෙකයි.", "phonetic": "දොස් එවුරොස් එල් කිලො." }
+            ]},
+            { "id": "d2_6_4", "context": "බැංකුවක් සෙවීම.", "lines": [
+                { "speaker": "A", "target": "Necesito un banco para sacar dinero.", "native": "මට මුදල් ගන්න බැංකුවක් අවශ්‍යයි.", "phonetic": "නෙසෙසීතො උන් බන්කො පාරා සකාර් දිනෙරො." },
+                { "speaker": "B", "target": "Hay uno al final de la calle, al lado del parque.", "native": "පාර කෙළවරේ, උද්‍යානය ළඟ එකක් තියෙනවා.", "phonetic": "අයි උනො අල් ෆිනාල් දෙ ලා කායෙ, අල් ලාදො දෙල් පර්කෙ." }
+            ]}
+        ],
+        "exercises": {
+            "fillBlanks": [
+                { "id": "fb2_6_1", "sentence": "Voy a la ___ a comprar pan.", "answer": "tienda", "hint": "කඩය" }
+            ],
+            "matching": [
+                { "id": "m2_6_1", "target": "El parque", "native": "උද්‍යානය" },
+                { "id": "m2_6_2", "target": "El banco", "native": "බැංකුව" }
+            ],
+            "sentenceScramble": [
+                { "id": "ss2_6_1", "scrambled": ["al", "vamos", "parque"], "correct": "Vamos al parque", "nativeHint": "අපි උද්‍යානයට යමු." }
+            ]
+        },
+        "cultural_note": "ස්පාඤ්ඤයේ, බොහෝ කුඩා කඩ (tiendas) සහ වෙළඳපොළවල් (mercados) දහවල් කාලයේදී පැය කිහිපයක් සඳහා (siesta) වසා තැබීම සාමාන්‍ය දෙයකි, සාමාන්‍යයෙන් 2 PM සිට 5 PM දක්වා.",
+        "pronunciation_tip": "'Restaurante' හි 'r' ශබ්දය වචනය ආරම්භයේදී ශක්තිමත්, පෙරළෙන 'r' ශබ්දයකි. එය දිවෙන් තල්ලු කරමින් පුහුණු වන්න. 'au' ශබ්දය 'ow' (in 'cow') ලෙස උච්චාරණය කෙරේ.",
+        "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D6-Places" }
     },
     {
       "week": 2,
-      "day": 12,
-      "title": "2 වන සතිය, 12 වන දිනය: දිශාවන්",
-      "title_native": "Semana 2, Día 12: Direcciones",
+      "day": 7,
+      "title": "2 වන සතිය, 7 වන දිනය: සංචාරය",
+      "title_native": "Semana 2, Día 7: Viajar",
       "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Spanish",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_12_1",
-          "target": "Derecha",
-          "phonetic": "දේ-රේ-චා",
-          "native_meaning": "දකුණ",
-          "english": "Right",
-          "example_sentence_target": "Gire a la derecha.",
-          "example_sentence_native": "දකුණට හැරෙන්න.",
-          "example_sentence_phonetic": "හී-රේ අ ලා දේ-රේ-චා."
-        },
-        {
-          "id": "w2_12_2",
-          "target": "Izquierda",
-          "phonetic": "ඉස්-කියෙර්-දා",
-          "native_meaning": "වම",
-          "english": "Left",
-          "example_sentence_target": "La tienda está a la izquierda.",
-          "example_sentence_native": "කඩේ තියෙන්නේ වම් පැත්තේ.",
-          "example_sentence_phonetic": "ලා තියෙන්-දා එස්-තා අ ලා ඉස්-කියෙර්-දා."
-        },
-        {
-          "id": "w2_12_3",
-          "target": "Recto",
-          "phonetic": "රෙක්-තෝ",
-          "native_meaning": "කෙලින්",
-          "english": "Straight",
-          "example_sentence_target": "Siga todo recto.",
-          "example_sentence_native": "කෙලින්ම යන්න.",
-          "example_sentence_phonetic": "සී-ගා තෝ-දෝ රෙක්-තෝ."
-        },
-        {
-          "id": "w2_12_4",
-          "target": "Cerca",
-          "phonetic": "සෙර්-කා",
-          "native_meaning": "ළඟ",
-          "english": "Near",
-          "example_sentence_target": "El parque está cerca.",
-          "example_sentence_native": "උද්‍යානය ළඟ තියෙන්නේ.",
-          "example_sentence_phonetic": "එල් පර්-කේ එස්-තා සෙර්-කා."
-        },
-        {
-          "id": "w2_12_5",
-          "target": "Lejos",
-          "phonetic": "ලේ-හොස්",
-          "native_meaning": "දුර",
-          "english": "Far",
-          "example_sentence_target": "El aeropuerto está lejos.",
-          "example_sentence_native": "ගුවන් තොටුපළ දුරයි.",
-          "example_sentence_phonetic": "එල් අ-එ-රෝ-ප්වෙර්-තෝ එස්-තා ලේ-හොස්."
-        },
-        {
-          "id": "w2_12_6",
-          "target": "Al lado de",
-          "phonetic": "අල් ලා-දෝ දේ",
-          "native_meaning": "එහා පැත්තේ",
-          "english": "Next to",
-          "example_sentence_target": "El banco está al lado del supermercado.",
-          "example_sentence_native": "බැංකුව තියෙන්නේ සුපිරි වෙළඳසැල එහා පැත්තේ.",
-          "example_sentence_phonetic": "එල් බන්-කෝ එස්-තා අල් ලා-දෝ දේල් සූ-පෙර්-මෙර්-කා-දෝ."
-        }
+        { "id": "w2_7_1", "target": "El billete", "phonetic": "එල් බියෙතෙ", "native_meaning": "ටිකට් පත", "english": "The ticket", "example_sentence_target": "Necesito un billete para Madrid.", "example_sentence_native": "මට මැඩ්රිඩ් වලට ටිකට් එකක් අවශ්‍යයි.", "example_sentence_phonetic": "නෙසෙසීතො උන් බියෙතෙ පාරා මද්රිද්." },
+        { "id": "w2_7_2", "target": "El tren", "phonetic": "එල් තෙන්", "native_meaning": "දුම්රිය", "english": "The train", "example_sentence_target": "El tren llega a las diez.", "example_sentence_native": "දුම්රිය දහයට එනවා.", "example_sentence_phonetic": "එල් තෙන් යේගා අ ලාස් දියෙස්." },
+        { "id": "w2_7_3", "target": "El autobús", "phonetic": "එල් අවුතොබුස්", "native_meaning": "බසය", "english": "The bus", "example_sentence_target": "Tomo el autobús número cinco.", "example_sentence_native": "මම අංක පහේ බසය ගන්නවා.", "example_sentence_phonetic": "තෝමො එල් අවුතොබුස් නූමෙරො සින්කො." },
+        { "id": "w2_7_4", "target": "El aeropuerto", "phonetic": "එල් අඑරොප්වෙර්තො", "native_meaning": "ගුවන් තොටුපළ", "english": "The airport", "example_sentence_target": "El aeropuerto está lejos.", "example_sentence_native": "ගුවන් තොටුපළ දුරයි.", "example_sentence_phonetic": "එල් අඑරොප්වෙර්තො එස්තා ලෙහොස්." },
+        { "id": "w2_7_5", "target": "El taxi", "phonetic": "එල් ටැක්සි", "native_meaning": "ටැක්සිය", "english": "The taxi", "example_sentence_target": "Voy a llamar un taxi.", "example_sentence_native": "මම ටැක්සියකට කතා කරන්නම්.", "example_sentence_phonetic": "වොයි අ යාමාර් උන් ටැක්සි." },
+        { "id": "w2_7_6", "target": "La maleta", "phonetic": "ලා මාලේතා", "native_meaning": "ගමන් මල්ල", "english": "The suitcase", "example_sentence_target": "Tengo dos maletas.", "example_sentence_native": "මා ළඟ ගමන් මලු දෙකක් තියෙනවා.", "example_sentence_phonetic": "තෙන්ගො දොස් මාලේතාස්." }
       ],
       "sentences": [
-        {
-          "id": "s2_12_1",
-          "target": "El museo está a la derecha.",
-          "native": "කෞතුකාගාරය දකුණු පැත්තේ.",
-          "phonetic": "එල් මූ-සේ-ඕ එස්-තා අ ලා දේ-රේ-චා."
-        },
-        {
-          "id": "s2_12_2",
-          "target": "Tienes que girar a la izquierda.",
-          "native": "ඔබ වමට හැරෙන්න ඕන.",
-          "phonetic": "තියෙ-නෙස් කේ හී-රාර් අ ලා ඉස්-කියෙර්-දා."
-        },
-        {
-          "id": "s2_12_3",
-          "target": "Siga recto por esta calle.",
-          "native": "මේ පාර දිගේ කෙලින්ම යන්න.",
-          "phonetic": "සී-ගා රෙක්-තෝ පෝර් එස්-තා කා-යේ."
-        },
-        {
-          "id": "s2_12_4",
-          "target": "No está lejos de aquí.",
-          "native": "එය මෙතනින් දුර නැහැ.",
-          "phonetic": "නෝ එස්-තා ලේ-හොස් දේ අ-කී."
-        }
+        { "id": "s2_7_1", "target": "¿A qué hora sale el próximo tren?", "native": "ඊළඟ දුම්රිය පිටත් වන්නේ කීයටද?", "phonetic": "ආ කෙ ඕරා සාලෙ එල් ප්‍රොක්සිමො තෙන්?" },
+        { "id": "s2_7_2", "target": "Un billete de ida y vuelta, por favor.", "native": "එහාට මෙහාට ටිකට් එකක්, කරුණාකර.", "phonetic": "උන් බියෙතෙ දෙ ඊදා ඉ වුවෙල්තා, පෝර් ෆවෝර්." },
+        { "id": "s2_7_3", "target": "Necesito ir al aeropuerto.", "native": "මට ගුවන් තොටුපළට යාමට අවශ්‍යයි.", "phonetic": "නෙසෙසීතො ඊර් අල් අඑරොප්වෙර්තො." },
+        { "id": "s2_7_4", "target": "¿Esta es la parada para el centro?", "native": "මේක නගර මධ්‍යයට යන නැවතුමද?", "phonetic": "එස්තා එස් ලා පරාදා පාරා එල් සෙන්ත්රො?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_12_1",
-          "context": "යමෙකුට දිශාවන් ලබා දීම.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, ¿cómo llego a la plaza?", "native": "සමාවෙන්න, මම චතුරශ්‍රයට යන්නේ කොහොමද?", "phonetic": "පෙර්-දොන්, කෝ-මෝ යේ-ගෝ අ ලා ප්ලා-සා?" },
-            { "speaker": "B", "target": "Siga recto y luego gire a la derecha.", "native": "කෙලින්ම ගිහින් දකුණට හැරෙන්න.", "phonetic": "සී-ගා රෙක්-තෝ ඊ ලුවේ-ගෝ හී-රේ අ ලා දේ-රේ-චා." }
-          ]
-        },
-        {
-          "id": "d2_12_2",
-          "context": "යමක් ළඟද දුරදැයි ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Está cerca el restaurante?", "native": "ආපන ශාලාව ළඟද?", "phonetic": "එස්-තා සෙර්-කා එල් රෙස්-තෞ-රන්-තේ?" },
-            { "speaker": "B", "target": "No, está un poco lejos. Unos diez minutos caminando.", "native": "නැහැ, ටිකක් දුරයි. පයින් විනාඩි දහයක් විතර.", "phonetic": "නෝ, එස්-තා උන් පෝ-කෝ ලේ-හොස්. උ-නෝස් දියේස් මි-නූ-තෝස් ක-මි-නන්-දෝ." }
-          ]
-        },
-        {
-          "id": "d2_12_3",
-          "context": "යමක් කුමන පැත්තේදැයි ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "El café está en esta calle, ¿verdad?", "native": "කැෆේ එක තියෙන්නේ මේ පාරේ නේද?", "phonetic": "එල් ක-ෆේ එස්-තා එන් එස්-තා කා-යේ, වෙර්-දාද්?" },
-            { "speaker": "B", "target": "Sí, está a la izquierda, al lado de la librería.", "native": "ඔව්, වම් පැත්තේ, පොත් සාප්පුව ළඟ.", "phonetic": "සී, එස්-තා අ ලා ඉස්-කියෙර්-දා, අල් ලා-දෝ දේ ලා ලිබ்-රේ-රී-යා." }
-          ]
-        },
-        {
-          "id": "d2_12_4",
-          "context": "දිශාවන් තහවුරු කර ගැනීම.",
-          "lines": [
-            { "speaker": "A", "target": "Entonces, ¿recto y luego a la izquierda?", "native": "එහෙනම්, කෙලින් ගිහින් වමටද?", "phonetic": "එන්-තොන්-සෙස්, රෙක්-තෝ ඊ ලුවේ-ගෝ අ ලා ඉස්-කියෙර්-දා?" },
-            { "speaker": "B", "target": "Exacto. No puede perderse.", "native": "හරියටම හරි. ඔබට වරදින්න විදිහක් නෑ.", "phonetic": "එක්-සක්-තෝ. නෝ පුවේ-දේ පෙර්-දෙර්-සේ." }
-          ]
-        }
+        { "id": "d2_7_1", "context": "දුම්රිය ටිකට් පතක් මිලදී ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Hola, un billete para Barcelona, por favor.", "native": "ආයුබෝවන්, බාසිලෝනා වලට ටිකට් එකක්, කරුණාකර.", "phonetic": "ඕලා, උන් බියෙතෙ පාරා බර්සෙලෝනා, පෝර් ෆවෝර්." },
+            { "speaker": "B", "target": "Claro, ¿de ida o de ida y vuelta?", "native": "හරි, යන්න විතරද නැත්නම් යන්න එන්නමද?", "phonetic": "ක්ලාරො, දෙ ඊදා ඔ දෙ ඊදා ඉ වුවෙල්තා?" }
+        ]},
+        { "id": "d2_7_2", "context": "ටැක්සියකට කතා කිරීම.", "lines": [
+            { "speaker": "A", "target": "Un taxi al Hotel Central, por favor.", "native": "සෙන්ට්‍රල් හෝටලයට ටැක්සියක්, කරුණාකර.", "phonetic": "උන් ටැක්සි අල් හොතෙල් සෙන්ත්රාල්, පෝර් ෆවෝර්." },
+            { "speaker": "B", "target": "Muy bien. Estará allí en cinco minutos.", "native": "ඉතා හොඳයි. විනාඩි පහකින් එතනට එයි.", "phonetic": "මුයි බියෙන්. එස්තාරා අයී එන් සින්කො මිනුතොස්." }
+        ]},
+        { "id": "d2_7_3", "context": "බසයක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "Perdón, ¿qué autobús va al museo?", "native": "සමාවෙන්න, කෞතුකාගාරයට යන්නේ මොන බසයද?", "phonetic": "පෙර්දොන්, කෙ අවුතොබුස් වා අල් මුසෙයො?" },
+            { "speaker": "B", "target": "El número 24.", "native": "අංක 24.", "phonetic": "එල් නූමෙරො වෙයින්තික්වාත්රො." }
+        ]},
+        { "id": "d2_7_4", "context": "ගුවන් තොටුපළේදී.", "lines": [
+            { "speaker": "A", "target": "¿Dónde es la facturación para el vuelo a Londres?", "native": "ලන්ඩන් යන ගුවන් යානය සඳහා check-in කරන්නේ කොහේද?", "phonetic": "දොන්දෙ එස් ලා ෆක්තුරසියොන් පාරා එල් වුවේලො අ ලොන්ද්රෙස්?" },
+            { "speaker": "B", "target": "En los mostradores 50 a 55.", "native": "කවුන්ටර් 50 සිට 55 දක්වා.", "phonetic": "එන් ලොස් මොස්ත්රදොරෙස් සින්ක්වෙන්තා අ සින්ක්වෙන්තා ඉ සින්කො." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          { "id": "fb2_12_1", "sentence": "Gire a la ___.", "answer": "derecha", "hint": "දකුණ" }
+          { "id": "fb2_7_1", "sentence": "El ___ llega a la estación.", "answer": "tren", "hint": "දුම්රිය" }
         ],
         "matching": [
-          { "id": "m2_12_1", "target": "Siga todo recto", "native": "කෙලින්ම යන්න" }
+          { "id": "m2_7_1", "target": "El billete", "native": "ටිකට් පත" },
+          { "id": "m2_7_2", "target": "El autobús", "native": "බසය" }
         ],
         "sentenceScramble": [
-          { "id": "ss2_12_1", "scrambled": ["está", "lejos", "No", "aquí", "de"], "correct": "No está lejos de aquí", "nativeHint": "එය මෙතනින් දුර නැහැ." }
+          { "id": "ss2_7_1", "scrambled": ["un", "taxi", "necesito"], "correct": "Necesito un taxi", "nativeHint": "මට ටැක්සියක් අවශ්‍යයි." }
         ]
       },
-      "cultural_note": "ස්පාඤ්ඤයේ, ලිපිනයන් බොහෝ විට වීදි නම සහ ගොඩනැගිලි අංකය ලෙස ලබා දේ. මිනිසුන් දිශාවන් ලබා දීමේදී 'manzanas' (blocks) යන වචනයට වඩා 'calles' (streets) යන වචනය භාවිතා කිරීමට වැඩි ඉඩක් ඇත.",
-      "pronunciation_tip": "'Izquierda' හි 'z' අක්ෂරය 's' ශබ්දය ලෙස උච්චාරණය කරයි (ලතින් ඇමරිකාවේදී). 'th' ශබ්දයක් නැත. එබැවින් 'ඉස්-කියෙර්-දා' ලෙස ශබ්ද කරයි.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D12-Directions" }
-    },
-    {
-      "week": 2,
-      "day": 13,
-      "title": "2 වන සතිය, 13 වන දිනය: පොදු ස්ථාන",
-      "title_native": "Semana 2, Día 13: Lugares públicos",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Spanish",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w2_13_1",
-          "target": "Supermercado",
-          "phonetic": "සූ-පෙර්-මෙර්-කා-දෝ",
-          "native_meaning": "සුපිරි වෙළඳසැල",
-          "english": "Supermarket",
-          "example_sentence_target": "Voy al supermercado.",
-          "example_sentence_native": "මම සුපිරි වෙළඳසැලට යනවා.",
-          "example_sentence_phonetic": "වෝයි අල් සූ-පෙර්-මෙර්-කා-දෝ."
-        },
-        {
-          "id": "w2_13_2",
-          "target": "Farmacia",
-          "phonetic": "ෆර්-මා-සියා",
-          "native_meaning": "ෆාමසිය",
-          "english": "Pharmacy",
-          "example_sentence_target": "Necesito encontrar una farmacia.",
-          "example_sentence_native": "මට ෆාමසියක් හොයාගන්න ඕන.",
-          "example_sentence_phonetic": "නෙ-සෙ-සී-තෝ එන්-කොන්-ට්‍රාර් උනා ෆර්-මා-සියා."
-        },
-        {
-          "id": "w2_13_3",
-          "target": "Parque",
-          "phonetic": "පර්-කේ",
-          "native_meaning": "උද්‍යානය",
-          "english": "Park",
-          "example_sentence_target": "Vamos al parque.",
-          "example_sentence_native": "අපි උද්‍යානයට යමු.",
-          "example_sentence_phonetic": "වා-මොස් අල් පර්-කේ."
-        },
-        {
-          "id": "w2_13_4",
-          "target": "Plaza",
-          "phonetic": "ප්ලා-සා",
-          "native_meaning": "චතුරශ්‍රය",
-          "english": "Square",
-          "example_sentence_target": "La plaza principal es bonita.",
-          "example_sentence_native": "ප්‍රධාන චතුරශ්‍රය ලස්සනයි.",
-          "example_sentence_phonetic": "ලා ප්ලා-සා ප්‍රින්-සි-පාල් එස් බො-නී-තා."
-        },
-        {
-          "id": "w2_13_5",
-          "target": "Museo",
-          "phonetic": "මූ-සේ-ඕ",
-          "native_meaning": "කෞතුකාගාරය",
-          "english": "Museum",
-          "example_sentence_target": "El museo abre a las diez.",
-          "example_sentence_native": "කෞතුකාගාරය දහයට අරිනවා.",
-          "example_sentence_phonetic": "එල් මූ-සේ-ඕ අබ්-රේ අ ලාස් දියේස්."
-        },
-        {
-          "id": "w2_13_6",
-          "target": "Cine",
-          "phonetic": "සී-නේ",
-          "native_meaning": "සිනමා ශාලාව",
-          "english": "Cinema",
-          "example_sentence_target": "¿Quieres ir al cine?",
-          "example_sentence_native": "සිනමා ශාලාවට යන්න කැමතිද?",
-          "example_sentence_phonetic": "කියෙ-රෙස් ඊර් අල් සී-නේ?"
-        }
-      ],
-      "sentences": [
-        {
-          "id": "s2_13_1",
-          "target": "El supermercado cierra a las nueve.",
-          "native": "සුපිරි වෙළඳසැල නවයට වහනවා.",
-          "phonetic": "එල් සූ-පෙර්-මෙර්-කා-දෝ සියෙ-ර්රා අ ලාස් නුවේ-වේ."
-        },
-        {
-          "id": "s2_13_2",
-          "target": "La farmacia está abierta 24 horas.",
-          "native": "ෆාමසිය පැය 24ම ඇරලා.",
-          "phonetic": "ලා ෆර්-මා-සියා එස්-තා අ-බියෙර්-තා වෙයින්-ති-ක්වා-ට්‍රෝ ඕ-රාස්."
-        },
-        {
-          "id": "s2_13_3",
-          "target": "Me gusta caminar en el parque.",
-          "native": "මම උද්‍යානයේ ඇවිදින්න කැමතියි.",
-          "phonetic": "මේ ගුස්-තා ක-මි-නාර් එන් එල් පර්-කේ."
-        },
-        {
-          "id": "s2_13_4",
-          "target": "Nos encontramos en la plaza central.",
-          "native": "අපි ප්‍රධාන චතුරශ්‍රයේදී හමුවෙමු.",
-          "phonetic": "නොස් එන්-කොන්-ට්‍රා-මොස් එන් ලා ප්ලා-සා සෙන්-ට්‍රාල්."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d2_13_1",
-          "context": "සුපිරි වෙළඳසැලක් ගැන විමසීම.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, ¿hay un supermercado por aquí?", "native": "සමාවෙන්න, මේ ළඟ සුපිරි වෙළඳසැලක් තියෙනවද?", "phonetic": "පෙර්-දොන්, ආයි උන් සූ-පෙර්-මෙර්-කා-දෝ පෝර් අ-කී?" },
-            { "speaker": "B", "target": "Sí, hay uno grande en la Calle Mayor.", "native": "ඔව්, 'කායේ මයෝර්' පාරේ ලොකු එකක් තියෙනවා.", "phonetic": "සී, ආයි උනෝ ග්‍රන්-දේ එන් ලා කා-යේ මා-යෝර්." }
-          ]
-        },
-        {
-          "id": "d2_13_2",
-          "context": "ෆාමසියක් සොයා ගැනීම.",
-          "lines": [
-            { "speaker": "A", "target": "Necesito una farmacia urgentemente.", "native": "මට හදිසියෙන්ම ෆාමසියක් ඕන.", "phonetic": "නෙ-සෙ-සී-තෝ උනා ෆර්-මා-සියා උර්-හෙන්-තේ-මෙන්-තේ." },
-            { "speaker": "B", "target": "Hay una en la esquina.", "native": "කෙළවරේ එකක් තියෙනවා.", "phonetic": "ආයි උනා එන් ලා එස්-කී-නා." }
-          ]
-        },
-        {
-          "id": "d2_13_3",
-          "context": "උද්‍යානයට යාමට සැලසුම් කිරීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Vamos al parque esta tarde?", "native": "අද හවස අපි පාර්ක් එකට යමුද?", "phonetic": "වා-මොස් අල් පර්-කේ එස්-තා තර්-දේ?" },
-            { "speaker": "B", "target": "¡Sí, buena idea! A las cinco.", "native": "ඔව්, හොඳ අදහසක්! පහට.", "phonetic": "සී, බුවේ-නා ඉ-දේ-යා! අ ලාස් සින්-කෝ." }
-          ]
-        },
-        {
-          "id": "d2_13_4",
-          "context": "කෞතුකාගාරය විවෘතදැයි ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "¿Sabe si el museo está abierto hoy?", "native": "කෞතුකාගාරය අද ඇරලද කියලා ඔබ දන්නවාද?", "phonetic": "සා-බේ සී එල් මූ-සේ-ඕ එස්-තා අ-බියෙර්-තෝ ඕයි?" },
-            { "speaker": "B", "target": "Creo que sí, pero cierra a las seis.", "native": "මම හිතන්නේ ඔව්, නමුත් හයට වහනවා.", "phonetic": "ක්‍රේ-ඕ කේ සී, පෙ-රෝ සියෙ-ර්රා අ ලාස් සේස්." }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          { "id": "fb2_13_1", "sentence": "Voy al ___ a comprar comida.", "answer": "supermercado", "hint": "සුපිරි වෙළඳසැල" }
-        ],
-        "matching": [
-          { "id": "m2_13_1", "target": "Necesito una farmacia", "native": "මට ෆාමසියක් අවශ්‍යයි" }
-        ],
-        "sentenceScramble": [
-          { "id": "ss2_13_1", "scrambled": ["al", "parque", "Vamos"], "correct": "Vamos al parque", "nativeHint": "අපි උද්‍යානයට යමු." }
-        ]
-      },
-      "cultural_note": "ස්පාඤ්ඤයේ, බොහෝ නගරවල 'plaza mayor' (ප්‍රධාන චතුරශ්‍රය) නමින් හැඳින්වෙන මධ්‍යම චතුරශ්‍රයක් ඇත. එය මිනිසුන් හමුවන, උත්සව පවත්වන සහ සමාජගත වන වැදගත් ස්ථානයකි.",
-      "pronunciation_tip": "'Supermercado' හි 'r' ශබ්දය දිවේ நுனிய පෙරළීමෙන් නිපදවන ශබ්දයකි. එය ඉංග්‍රීසි 'r' ශබ්දයට වඩා වෙනස් ය. පුහුණු වීමෙන් මෙය ප්‍රගුණ කළ හැක.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D13-Places" }
-    },
-    {
-      "week": 2,
-      "day": 14,
-      "title": "2 වන සතිය, 14 වන දිනය: සංචාරය",
-      "title_native": "Semana 2, Día 14: Viajar",
-      "theme": "Basic Communication",
-      "path": "survival",
-      "targetLanguage": "Spanish",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w2_14_1",
-          "target": "Billete",
-          "phonetic": "බි-යේ-තේ",
-          "native_meaning": "ටිකට් පත",
-          "english": "Ticket",
-          "example_sentence_target": "Necesito un billete para Madrid.",
-          "example_sentence_native": "මට මැඩ්රිඩ් වලට ටිකට් එකක් ඕන.",
-          "example_sentence_phonetic": "නෙ-සෙ-සී-තෝ උන් බි-යේ-තේ ප-රා මද්-රිද්."
-        },
-        {
-          "id": "w2_14_2",
-          "target": "Tren",
-          "phonetic": "ට්‍රෙන්",
-          "native_meaning": "දුම්රිය",
-          "english": "Train",
-          "example_sentence_target": "El tren sale a las nueve.",
-          "example_sentence_native": "දුම්රිය නවයට පිටත් වෙනවා.",
-          "example_sentence_phonetic": "එල් ට්‍රෙන් සා-ලේ අ ලාස් නුවේ-වේ."
-        },
-        {
-          "id": "w2_14_3",
-          "target": "Autobús",
-          "phonetic": "අවු-තෝ-බුස්",
-          "native_meaning": "බස් රථය",
-          "english": "Bus",
-          "example_sentence_target": "¿Dónde está la parada de autobús?",
-          "example_sentence_native": "බස් නැවතුම කොහෙද?",
-          "example_sentence_phonetic": "දොන්-දේ එස්-තා ලා ප-රා-දා දේ අවු-තෝ-බුස්?"
-        },
-        {
-          "id": "w2_14_4",
-          "target": "Aeropuerto",
-          "phonetic": "අ-එ-රෝ-ප්වෙර්-තෝ",
-          "native_meaning": "ගුවන් තොටුපළ",
-          "english": "Airport",
-          "example_sentence_target": "Voy al aeropuerto.",
-          "example_sentence_native": "මම ගුවන් තොටුපළට යනවා.",
-          "example_sentence_phonetic": "වෝයි අල් අ-එ-රෝ-ප්වෙර්-තෝ."
-        },
-        {
-          "id": "w2_14_5",
-          "target": "Taxi",
-          "phonetic": "ටක්-සි",
-          "native_meaning": "ටැක්සි",
-          "english": "Taxi",
-          "example_sentence_target": "Necesito un taxi, por favor.",
-          "example_sentence_native": "මට ටැක්සියක් අවශ්‍යයි, කරුණාකර.",
-          "example_sentence_phonetic": "නෙ-සෙ-සී-තෝ උන් ටක්-සි, පෝර් ෆ-වෝර්."
-        },
-        {
-          "id": "w2_14_6",
-          "target": "Viaje",
-          "phonetic": "වියා-හේ",
-          "native_meaning": "ගමන",
-          "english": "Trip / Journey",
-          "example_sentence_target": "¡Buen viaje!",
-          "example_sentence_native": "සුබ ගමන්!",
-          "example_sentence_phonetic": "බුවෙන් වියා-හේ!"
-        }
-      ],
-      "sentences": [
-        {
-          "id": "s2_14_1",
-          "target": "¿A qué hora sale el próximo tren?",
-          "native": "ඊළඟ දුම්රිය පිටත් වෙන්නේ කීයටද?",
-          "phonetic": "අ කේ ඕ-රා සා-ලේ එල් ප්‍රොක්-සි-මෝ ට්‍රෙන්?"
-        },
-        {
-          "id": "s2_14_2",
-          "target": "Quiero comprar un billete de ida y vuelta.",
-          "native": "මට එහෙටයි මෙහෙටයි ටිකට් එකක් ගන්න ඕන.",
-          "phonetic": "කියෙ-රෝ කොම්-ප්‍රාර් උන් බි-යේ-තේ දේ ඊ-දා ඊ වුඑල්-තා."
-        },
-        {
-          "id": "s2_14_3",
-          "target": "¿Este autobús va al centro de la ciudad?",
-          "native": "මේ බස් එක නගර මධ්‍යයට යනවද?",
-          "phonetic": "එස්-තේ අවු-තෝ-බුස් වා අල් සෙන්-ට්‍රෝ දේ ලා සියු-දාද්?"
-        },
-        {
-          "id": "s2_14_4",
-          "target": "¿Cuánto cuesta un taxi al aeropuerto?",
-          "native": "ගුවන් තොටුපළට ටැක්සියක ගාන කීයද?",
-          "phonetic": "ක්වාන්-තෝ ක්වෙස්-තා උන් ටක්-සි අල් අ-එ-රෝ-ප්වෙර්-තෝ?"
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d2_14_1",
-          "context": "දුම්රිය ටිකට් පතක් මිලදී ගැනීම.",
-          "lines": [
-            { "speaker": "A", "target": "Hola, un billete para Barcelona, por favor.", "native": "ආයුබෝවන්, බාර්සිලෝනා වලට ටිකට් එකක්, කරුණාකර.", "phonetic": "ඕ-ලා, උන් බි-යේ-තේ ප-රා බාර්-සෙ-ලෝ-නා, පෝර් ෆ-වෝර්." },
-            { "speaker": "B", "target": "Son cuarenta euros. El próximo tren sale en diez minutos.", "native": "යුරෝ හතළිහයි. ඊළඟ දුම්රිය විනාඩි දහයකින් පිටත් වෙනවා.", "phonetic": "සොන් ක්වා-රෙන්-තා එඋ-රෝස්. එල් ප්‍රොක්-සි-මෝ ට්‍රෙන් සා-ලේ එන් දියේස් මි-නූ-තෝස්." }
-          ]
-        },
-        {
-          "id": "d2_14_2",
-          "context": "බස් නැවතුම කොහේදැයි ඇසීම.",
-          "lines": [
-            { "speaker": "A", "target": "Perdón, ¿dónde está la parada del autobús número 5?", "native": "සමාවෙන්න, අංක 5 බස් නැවතුම කොහෙද?", "phonetic": "පෙර්-දොන්, දොන්-දේ එස්-තා ලා ප-රා-දා දේල් අවු-තෝ-බුස් නූ-මෙ-රෝ සින්-කෝ?" },
-            { "speaker": "B", "target": "Está justo al otro lado de la calle.", "native": "එය පාරේ අනිත් පැත්තේමයි.", "phonetic": "එස්-තා හුස්-තෝ අල් ඕ-ට්‍රෝ ලා-දෝ දේ ලා කා-යේ." }
-          ]
-        },
-        {
-          "id": "d2_14_3",
-          "context": "ටැක්සියක් ඇමතීම.",
-          "lines": [
-            { "speaker": "A", "target": "¡Taxi! Necesito ir al Hotel Central.", "native": "ටැක්සි! මට සෙන්ට්‍රල් හෝටලයට යන්න ඕන.", "phonetic": "ටක්-සි! නෙ-සෙ-සී-තෝ ඊර් අල් ඔ-තෙල් සෙන්-ට්‍රාල්." },
-            { "speaker": "B", "target": "Suba, por favor.", "native": "නගින්න, කරුණාකර.", "phonetic": "සූ-බා, පෝර් ෆ-වෝර්." }
-          ]
-        },
-        {
-          "id": "d2_14_4",
-          "context": "ගුවන් තොටුපළේදී.",
-          "lines": [
-            { "speaker": "A", "target": "¿Dónde está la puerta de embarque 23?", "native": "ගේට් 23 කොහෙද තියෙන්නේ?", "phonetic": "දොන්-දේ එස්-තා ලා පුවෙර්-තා දේ එම්-බාර්-කේ වෙයින්-ති-ට්‍රේස්?" },
-            { "speaker": "B", "target": "Siga las señales. Está a la derecha.", "native": "සලකුණු අනුගමනය කරන්න. එය දකුණු පැත්තේ.", "phonetic": "සී-ගා ලාස් සෙ-නියා-ලෙස්. එස්-තා අ ලා දේ-රේ-චා." }
-          ]
-        }
-      ],
-      "exercises": {
-        "fillBlanks": [
-          { "id": "fb2_14_1", "sentence": "Necesito un ___ para Madrid.", "answer": "billete", "hint": "ටිකට් පත" }
-        ],
-        "matching": [
-          { "id": "m2_14_1", "target": "¡Buen viaje!", "native": "සුබ ගමන්!" }
-        ],
-        "sentenceScramble": [
-          { "id": "ss2_14_1", "scrambled": ["sale", "el", "tren", "¿Cuándo", "?"], "correct": "¿Cuándo sale el tren?", "nativeHint": "දුම්රිය පිටත් වෙන්නේ කවදාද?" }
-        ]
-      },
-      "cultural_note": "ස්පාඤ්ඤයේ, දුර ගමන් සඳහා 'Renfe' නම් අධිවේගී දුම්රිය සේවය ඉතා ජනප්‍රියයි. නගර තුළ ගමන් සඳහා බස් සහ මෙට්‍රෝ පද්ධති කාර්යක්ෂම වේ.",
-      "pronunciation_tip": "'Viaje' හි 'j' ශබ්දය උගුරෙන් එන 'හ' ශබ්දයක් මෙනි. එය ඉංග්‍රීසි 'h' ශබ්දයට වඩා ශක්තිමත් ය. එය 'වියා-හේ' ලෙස උච්චාරණය කෙරේ.",
-      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D14-Travel" }
+      "cultural_note": "ස්පාඤ්ඤයේ, විශේෂයෙන් විශාල නගරවල, පොදු ප්‍රවාහන පද්ධතිය ඉතා කාර්යක්ෂමයි. දිගු දුර ගමන් සඳහා දුම්රිය (Renfe) ඉතා ජනප්‍රිය වන අතර, නගර තුළ ගමන් සඳහා බස් සහ මෙට්‍රෝ පහසු වේ.",
+      "pronunciation_tip": "'Billete' හි 'll' ශබ්දය ඉංග්‍රීසි 'y' ශබ්දයට සමාන වේ (උදා: 'yes'). එය 'බියෙතෙ' ලෙස උච්චාරණය කෙරේ.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W2D7-Travel" }
     }
   ]
 }
