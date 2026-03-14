@@ -8,46 +8,78 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1, Day 1: Numbers 1-3",
-      "title_native": "שבוע 1, יום 1: מספרים 1-3",
-      "theme": "Counting 1-10",
+      "title": "Week 1, Day 1: Numbers 0-5",
+      "title_native": "שבוע 1, יום 1: מספרים 0-5",
+      "theme": "Numbers 0-5",
       "path": "numbers",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_1_1", "target": "אחת", "phonetic": "A-khat", "native_meaning": "One (f)", "english": "One (f)", "example_sentence_target": "אישה אחת", "example_sentence_native": "One woman", "example_sentence_phonetic": "Isha akhat." },
-        { "id": "w1_1_2", "target": "שתיים", "phonetic": "Shta-yim", "native_meaning": "Two (f)", "english": "Two (f)", "example_sentence_target": "שתי בנות", "example_sentence_native": "Two girls", "example_sentence_phonetic": "Shtei banot." },
-        { "id": "w1_1_3", "target": "שלוש", "phonetic": "Sha-losh", "native_meaning": "Three (f)", "english": "Three (f)", "example_sentence_target": "שלוש מכוניות", "example_sentence_native": "Three cars", "example_sentence_phonetic": "Shalosh mekhoniyot." }
+        {"id":"w1_1_1", "target":"אפס", "phonetic":"eh-fess", "native_meaning":"Zero", "english":"0", "example_sentence_target":"הטמפרטורה היא אפס מעלות.", "example_sentence_native":"The temperature is zero degrees.", "example_sentence_phonetic":"Ha-temperatura hi efes ma'alot."},
+        {"id":"w1_1_2", "target":"אחת", "phonetic":"a-khat", "native_meaning":"One (f)", "english":"1", "example_sentence_target":"יש לי שאלה אחת.", "example_sentence_native":"I have one question.", "example_sentence_phonetic":"Yesh li she'ela akhat."},
+        {"id":"w1_1_3", "target":"שתיים", "phonetic":"shta-yim", "native_meaning":"Two (f)", "english":"2", "example_sentence_target":"אני רוצה שתי כוסות קפה.", "example_sentence_native":"I want two cups of coffee.", "example_sentence_phonetic":"Ani rotze shtei kosot kafe."},
+        {"id":"w1_1_4", "target":"שלוש", "phonetic":"sha-losh", "native_meaning":"Three (f)", "english":"3", "example_sentence_target":"יש לי שלוש אחיות.", "example_sentence_native":"I have three sisters.", "example_sentence_phonetic":"Yesh li shalosh akhayot."},
+        {"id":"w1_1_5", "target":"ארבע", "phonetic":"ar-ba", "native_meaning":"Four (f)", "english":"4", "example_sentence_target":"בחדר יש ארבעה קירות.", "example_sentence_native":"The room has four walls.", "example_sentence_phonetic":"Ba-kheder yesh arba'a kirot."},
+        {"id":"w1_1_6", "target":"חמש", "phonetic":"kha-mesh", "native_meaning":"Five (f)", "english":"5", "example_sentence_target":"יש לי חמש אצבעות בכל יד.", "example_sentence_native":"I have five fingers on each hand.", "example_sentence_phonetic":"Yesh li khamesh etzba'ot be-khol yad."}
       ],
-      "dialogues": [],
-      "exercises": { "matching": [ { "id": "m1_1_1", "target": "אחת", "native": "One" }, { "id": "m1_1_2", "target": "שתיים", "native": "Two" } ] },
-      "cultural_note": "In Hebrew, numbers have masculine and feminine forms depending on the noun they are describing. We are starting with the feminine forms.",
-      "pronunciation_tip": "The 'kh' in 'Akhat' is a sound from the back of the throat, common in Hebrew.",
-      "progress": { "xp": 50, "streak_bonus": 10, "badge": "W1D1-Hebrew-Numbers1" }
+      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_W1D1_0-5"}
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1, Day 2: Numbers 4-5",
-      "title_native": "שבוע 1, יום 2: מספרים 4-5",
-      "theme": "Counting 1-10",
+      "title": "Week 1, Day 2: Numbers 6-10",
+      "title_native": "שבוע 1, יום 2: מספרים 6-10",
+      "theme": "Numbers 6-10",
       "path": "numbers",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_2_1", "target": "ארבע", "phonetic": "Ar-ba", "native_meaning": "Four (f)", "english": "Four (f)", "example_sentence_target": "ארבעה בתים", "example_sentence_native": "Four houses", "example_sentence_phonetic": "Arba'a batim." },
-        { "id": "w1_2_2", "target": "חמש", "phonetic": "Kha-mesh", "native_meaning": "Five (f)", "english": "Five (f)", "example_sentence_target": "חמישה ספרים", "example_sentence_native": "Five books", "example_sentence_phonetic": "Khamisha sfarim." }
+        {"id":"w1_2_1", "target":"שש", "phonetic":"shesh", "native_meaning":"Six", "english":"6", "example_sentence_target":"יש שש פרוסות בעוגה.", "example_sentence_native":"There are six slices in the cake.", "example_sentence_phonetic":"Yesh shesh prusot ba-uga."},
+        {"id":"w1_2_2", "target":"שבע", "phonetic":"she-va", "native_meaning":"Seven", "english":"7", "example_sentence_target":"יש שבעה ימים בשבוע.", "example_sentence_native":"There are seven days in a week.", "example_sentence_phonetic":"Yesh shiv'a yamim be-shavua."},
+        {"id":"w1_2_3", "target":"שמונה", "phonetic":"shmo-ne", "native_meaning":"Eight", "english":"8", "example_sentence_target":"יש לי פגישה בשעה שמונה.", "example_sentence_native":"I have a meeting at eight o'clock.", "example_sentence_phonetic":"Yesh li pgisha be-sha'a shmone."},
+        {"id":"w1_2_4", "target":"תשע", "phonetic":"te-sha", "native_meaning":"Nine", "english":"9", "example_sentence_target":"הסרט מתחיל בשעה תשע.", "example_sentence_native":"The movie starts at nine.", "example_sentence_phonetic":"Ha-seret matkhil be-sha'a tesha."},
+        {"id":"w1_2_5", "target":"עשר", "phonetic":"e-ser", "native_meaning":"Ten", "english":"10", "example_sentence_target":"אני צריך עשר דקות.", "example_sentence_native":"I need ten minutes.", "example_sentence_phonetic":"Ani tzarikh eser dakot."}
       ],
-      "dialogues": [],
-      "exercises": { "matching": [ { "id": "m1_2_1", "target": "ארבע", "native": "Four" }, { "id": "m1_2_2", "target": "חמש", "native": "Five" } ] },
-      "cultural_note": "The masculine form of the number is used for counting objects that are grammatically masculine.",
-      "pronunciation_tip": "For 'Khamesh', start with the guttural 'kh' sound from your throat.",
-      "progress": { "xp": 50, "streak_bonus": 10, "badge": "W1D2-Hebrew-Numbers1" }
+      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_W1D2_6-10"}
     },
-    { "week": 1, "day": 3, "title": "Day 3 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 4, "title": "Day 4 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 5, "title": "Day 5 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 6, "title": "Day 6 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 7, "title": "Day 7 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }}
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Week 1, Day 3: Numbers 11-15",
+      "title_native": "שבוע 1, יום 3: מספרים 11-15",
+      "theme": "Numbers 11-15",
+      "path": "numbers",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {"id":"w1_3_1", "target":"אחת עשרה", "phonetic":"akhat es-re", "native_meaning":"Eleven", "english":"11", "example_sentence_target":"יש אחת עשרה שחקנים בקבוצה.", "example_sentence_native":"There are eleven players on the team.", "example_sentence_phonetic":"Yesh akhat esre sakhkanim ba-kvutza."},
+        {"id":"w1_3_2", "target":"שתיים עשרה", "phonetic":"shteim es-re", "native_meaning":"Twelve", "english":"12", "example_sentence_target":"יש שתיים עשרה חודשים בשנה.", "example_sentence_native":"There are twelve months in a year.", "example_sentence_phonetic":"Yesh shteim esre khodashim ba-shana."},
+        {"id":"w1_3_3", "target":"שלוש עשרה", "phonetic":"shlosh es-re", "native_meaning":"Thirteen", "english":"13", "example_sentence_target":"הוא בן שלוש עשרה.", "example_sentence_native":"He is thirteen years old.", "example_sentence_phonetic":"Hu ben shlosh esre."},
+        {"id":"w1_3_4", "target":"ארבע עשרה", "phonetic":"arba es-re", "native_meaning":"Fourteen", "english":"14", "example_sentence_target":"זה עולה ארבע עשרה שקלים.", "example_sentence_native":"It costs fourteen shekels.", "example_sentence_phonetic":"Ze ole arba esre shkalim."},
+        {"id":"w1_3_5", "target":"חמש עשרה", "phonetic":"khamesh es-re", "native_meaning":"Fifteen", "english":"15", "example_sentence_target":"נפגש בעוד חמש עשרה דקות.", "example_sentence_native":"We will meet in fifteen minutes.", "example_sentence_phonetic":"Nipagesh be'od khamesh esre dakot."}
+      ],
+      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_W1D3_11-15"}
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Week 1, Day 4: Numbers 16-20",
+      "title_native": "שבוע 1, יום 4: מספרים 16-20",
+      "theme": "Numbers 16-20",
+      "path": "numbers",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {"id":"w1_4_1", "target":"שש עשרה", "phonetic":"shesh es-re", "native_meaning":"Sixteen", "english":"16", "example_sentence_target":"היא בת שש עשרה.", "example_sentence_native":"She is sixteen years old.", "example_sentence_phonetic":"Hi bat shesh esre."},
+        {"id":"w1_4_2", "target":"שבע עשרה", "phonetic":"shva es-re", "native_meaning":"Seventeen", "english":"17", "example_sentence_target":"הכרטיס עולה שבעה עשר יורו.", "example_sentence_native":"The ticket costs seventeen euros.", "example_sentence_phonetic":"Ha-kartis ole shva esre euro."},
+        {"id":"w1_4_3", "target":"שמונה עשרה", "phonetic":"shmone es-re", "native_meaning":"Eighteen", "english":"18", "example_sentence_target":"הטמפרטורה היא שמונה עשרה מעלות.", "example_sentence_native":"The temperature is eighteen degrees.", "example_sentence_phonetic":"Ha-temperatura hi shmone esre ma'alot."},
+        {"id":"w1_4_4", "target":"תשע עשרה", "phonetic":"tsha es-re", "native_meaning":"Nineteen", "english":"19", "example_sentence_target":"הטיסה יוצאת בשעה תשע עשרה.", "example_sentence_native":"The flight leaves at nineteen hundred hours (7 PM).", "example_sentence_phonetic":"Ha-tisa yotzet be-sha'a tsha esre."},
+        {"id":"w1_4_5", "target":"עשרים", "phonetic":"es-rim", "native_meaning":"Twenty", "english":"20", "example_sentence_target":"יש עשרים תלמידים בכיתה.", "example_sentence_native":"There are twenty students in the class.", "example_sentence_phonetic":"Yesh esrim talmidim ba-kita."}
+      ],
+      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_W1D4_16-20"}
+    },
+    { "week": 1, "day": 5, "title": "Week 1, Day 5: Review", "title_native": "שבוע 1, יום 5: חזרה", "theme": "Review 0-10", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_W1D5_REVIEW"} },
+    { "week": 1, "day": 6, "title": "Week 1, Day 6: Review", "title_native": "שבוע 1, יום 6: חזרה", "theme": "Review 11-20", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_W1D6_REVIEW"} },
+    { "week": 1, "day": 7, "title": "Week 1, Day 7: Weekly Test", "title_native": "שבוע 1, יום 7: מבחן שבועי", "theme": "Weekly Test", "path": "numbers", "targetLanguage": "Hebrew", "nativeLanguage": "English", "exercises": {}, "progress": {"xp": 100, "streak_bonus": 20, "badge": "NUM_W1_TEST"} }
   ]
 }
