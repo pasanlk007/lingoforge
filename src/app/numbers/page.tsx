@@ -13,28 +13,27 @@ import { AudioPlayback } from '@/components/AudioPlayback';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
 const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
-  // Check if item.english is a number string, which we use as the canonical numeral.
   const isNumberCard = item.english && !isNaN(parseInt(item.english, 10));
 
   return (
-    <Card className="p-4 sm:p-6">
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Left Part: Target Language & Audio */}
-        <div className="flex flex-1 items-center gap-4">
-          <AudioPlayback text={item.target} languageName={language} />
-          <div className="text-left">
-            <p className="text-2xl sm:text-3xl font-bold">{item.target}</p>
-            <p className="text-muted-foreground">{item.phonetic}</p>
-          </div>
-        </div>
-        
-        {/* Right Part: Numeral or Native Meaning */}
-        <div className="text-right">
+    <Card className="p-4">
+      <div className="grid grid-cols-3 items-center gap-4">
+        {/* Numeral or Native Meaning (Takes up 1 column) */}
+        <div className="col-span-1 text-center">
           {isNumberCard ? (
-            <p className="text-4xl sm:text-5xl font-bold text-foreground">{item.english}</p>
+            <p className="text-4xl font-bold text-primary">{item.english}</p>
           ) : (
-            <p className="text-2xl sm:text-3xl font-bold text-foreground">{item.native_meaning}</p>
+            <p className="text-lg font-bold">{item.native_meaning}</p>
           )}
+        </div>
+
+        {/* Target Language & Phonetics (Takes up 2 columns) */}
+        <div className="col-span-2 flex items-center gap-4">
+          <AudioPlayback text={item.target} languageName={language} />
+          <div>
+            <p className="text-xl font-bold">{item.target}</p>
+            <p className="text-sm text-muted-foreground">{item.phonetic}</p>
+          </div>
         </div>
       </div>
     </Card>
