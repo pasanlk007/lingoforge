@@ -94,6 +94,36 @@
     "pronunciation_tip",
     "progress"
   ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "path": { "const": "survival" },
+          "week": { "const": 2 }
+        },
+        "required": ["path", "week"]
+      },
+      "then": {
+        "properties": {
+          "words": {
+            "description": "A list of exactly 6 vocabulary words for the day.",
+            "minItems": 6,
+            "maxItems": 6
+          },
+          "sentences": {
+            "description": "A list of exactly 4 standalone example sentences for practice.",
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "dialogues": {
+            "description": "A list of exactly 4 dialogues for conversational practice.",
+            "minItems": 4,
+            "maxItems": 4
+          }
+        }
+      }
+    }
+  ],
   "definitions": {
     "LessonItem": {
       "type": "object",
