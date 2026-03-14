@@ -7,1325 +7,408 @@
     {
       "week": 2,
       "day": 1,
-      "title": "Week 2 Day 1: Office Vocabulary",
-      "title_native": "Office Vocabulary",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 1 වන දිනය: උදව් ඉල්ලීම",
+      "title_native": "週2、1日目：助けを求める",
+      "theme": "Asking for help",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_1_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_1_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_1_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_1_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_1_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_1_1", "target": "助けて (Tasukete)", "phonetic": "තසුකෙතෙ", "native_meaning": "උදව් කරන්න", "english": "Help me", "example_sentence_target": "助けてください (Tasukete kudasai)", "example_sentence_native": "කරුණාකර මට උදව් කරන්න", "example_sentence_phonetic": "තසුකෙතෙ කුදසයි" },
+        { "id": "w2_1_2", "target": "すみません (Sumimasen)", "phonetic": "සුමිමසෙන්", "native_meaning": "සමාවෙන්න / කරුණාකර", "english": "Excuse me / Please", "example_sentence_target": "すみません、これは何ですか (Sumimasen, kore wa nan desu ka?)", "example_sentence_native": "සමාවෙන්න, මේ කුමක්ද?", "example_sentence_phonetic": "සුමිමසෙන්, කොරෙ ව නන් දෙස් ක?" },
+        { "id": "w2_1_3", "target": "お願いします (Onegaishimasu)", "phonetic": "ඔනෙගයිෂිමසු", "native_meaning": "කරුණාකර (ඉල්ලීමක් කරන විට)", "english": "Please (when making a request)", "example_sentence_target": "水を一杯お願いします (Mizu o ippai onegaishimasu)", "example_sentence_native": "වතුර වීදුරුවක් දෙන්න කරුණාකර", "example_sentence_phonetic": "මිසු ඔ ඉප්පයි ඔනෙගයිෂිමසු" },
+        { "id": "w2_1_4", "target": "分かりません (Wakarimasen)", "phonetic": "වකරිමසෙන්", "native_meaning": "මට තේරෙන්නේ නැහැ", "english": "I don't understand", "example_sentence_target": "日本語が分かりません (Nihongo ga wakarimasen)", "example_sentence_native": "මට ජපන් භාෂාව තේරෙන්නේ නැහැ", "example_sentence_phonetic": "නිහොන්ගො ග වකරිමසෙන්" },
+        { "id": "w2_1_5", "target": "もう一度 (Mō ichido)", "phonetic": "මෝ ඉචිදො", "native_meaning": "තව එක පාරක්", "english": "One more time", "example_sentence_target": "もう一度お願いします (Mō ichido onegaishimasu)", "example_sentence_native": "කරුණාකර තව එක පාරක් කියන්න", "example_sentence_phonetic": "මෝ ඉචිදො ඔනෙගයිෂිමසු" },
+        { "id": "w2_1_6", "target": "ゆっくり (Yukkuri)", "phonetic": "යුක්කුරි", "native_meaning": "හෙමින්", "english": "Slowly", "example_sentence_target": "ゆっくり話してください (Yukkuri hanashite kudasai)", "example_sentence_native": "කරුණාකර හෙමින් කතා කරන්න", "example_sentence_phonetic": "යුක්කුරි හනෂිතෙ කුදසයි" }
+      ],
+      "sentences": [
+        { "id": "s2_1_1", "target": "お手洗いはどこですか (Otearai wa doko desu ka?)", "native": "වැසිකිළිය කොහෙද?", "phonetic": "ඔතෙඅරයි ව දොකො දෙස් ක?" },
+        { "id": "s2_1_2", "target": "これを書いてください (Kore o kaite kudasai)", "native": "කරුණාකර මෙය ලියන්න", "phonetic": "කොරෙ ඔ කයිතෙ කුදසයි" },
+        { "id": "s2_1_3", "target": "英語を話せますか (Eigo o hanasemasu ka?)", "native": "ඔබට ඉංග්‍රීසි කතා කළ හැකිද?", "phonetic": "එයිගො ඔ හනසෙමසු ක?" },
+        { "id": "s2_1_4", "target": "道に迷いました (Michi ni mayoimashita)", "native": "මට පාර වැරදුනා", "phonetic": "මිචි නි මයොයිමශිත" }
       ],
       "dialogues": [
-        {
-          "id": "d2_1_1",
-          "context": "Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_1_2",
-          "context": "Formal Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_1_1", "context": "කඩයකදී උදව් ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "すみません、助けてください。", "native": "සමාවෙන්න, උදව් කරන්න.", "phonetic": "සුමිමසෙන්, තසුකෙතෙ කුදසයි." },
+            { "speaker": "B", "target": "はい、どうしましたか。", "native": "ඔව්, මොකද උනේ?", "phonetic": "හයි, දෝ ශිමශිත ක." }
+        ]},
+        { "id": "d2_1_2", "context": "යමක් තේරුම් නොගත් විට.", "lines": [
+            { "speaker": "A", "target": "すみません、分かりません。", "native": "සමාවෙන්න, මට තේරෙන්නේ නැහැ.", "phonetic": "සුමිමසෙන්, වකරිමසෙන්." },
+            { "speaker": "B", "target": "ゆっくり話しますね。", "native": "මම හෙමින් කතා කරන්නම්.", "phonetic": "යුක්කුරි හනෂිමසු නෙ." }
+        ]},
+        { "id": "d2_1_3", "context": "යමක් නැවත කියන්නැයි ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "あの、もう一度お願いします。", "native": "සමාවෙන්න, කරුණාකර තව එක පාරක් කියන්න.", "phonetic": "අනෝ, මෝ ඉචිදො ඔනෙගයිෂිමසු." },
+            { "speaker": "B", "target": "はい、もちろん。", "native": "ඔව්, ඇත්තෙන්ම.", "phonetic": "හයි, මොචිරොන්." }
+        ]},
+        { "id": "d2_1_4", "context": "ලිපිනයක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "すみません、駅はどこですか。", "native": "සමාවෙන්න, දුම්රිය ස්ථානය කොහෙද?", "phonetic": "සුමිමසෙන්, එකී ව දොකො දෙස් ක." },
+            { "speaker": "B", "target": "あそこです。", "native": "අතන.", "phonetic": "අසොකො දෙස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_1_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_1_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_1_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_1_1", "sentence": "すみません、___ はどこですか。", "answer": "駅", "hint": "දුම්රිය ස්ථානය" }
         ],
         "matching": [
-          {
-            "id": "m2_1_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_1_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_1_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_1_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_1_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_1_1", "target": "助けて", "native": "උදව් කරන්න" },
+          { "id": "m2_1_2", "target": "分かりません", "native": "මට තේරෙන්නේ නැහැ" },
+          { "id": "m2_1_3", "target": "ゆっくり", "native": "හෙමින්" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_1_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_1_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_1_1", "scrambled": ["は", "駅", "どこ", "ですか"], "correct": "駅はどこですか", "nativeHint": "දුම්රිය ස්ථානය කොහෙද?" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D1"
-      }
+      "cultural_note": "ජපානයේදී, 'Sumimasen' යනු 'Excuse me' සහ 'I'm sorry' යන දෙකටම භාවිතා කරන බහුකාර්ය වචනයකි. එය යමෙකුගේ අවධානය ලබා ගැනීමට ඉතා ආචාරශීලී ක්‍රමයකි.",
+      "pronunciation_tip": "ජපන් භාෂාවේ ස්වර ශබ්ද (a, i, u, e, o) සෑම විටම කෙටි හා පැහැදිලිව උච්චාරණය කෙරේ. උදාහරණයක් ලෙස 'Tasukete' හි 'e' ශබ්දය 'එ' ලෙස උච්චාරණය වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D1-Help" }
     },
     {
       "week": 2,
       "day": 2,
-      "title": "Week 2 Day 2: Work Phrases",
-      "title_native": "Work Phrases",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 2 වන දිනය: ප්‍රශ්න තේරුම් ගැනීම",
+      "title_native": "週2、2日目：質問を理解する",
+      "theme": "Understanding questions",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_2_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_2_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_2_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_2_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_2_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_2_1", "target": "何 (Nani/Nan)", "phonetic": "නනි/නන්", "native_meaning": "කුමක්ද", "english": "What", "example_sentence_target": "これは何ですか (Kore wa nan desu ka?)", "example_sentence_native": "මේ කුමක්ද?", "example_sentence_phonetic": "කොරෙ ව නන් දෙස් ක?" },
+        { "id": "w2_2_2", "target": "どこ (Doko)", "phonetic": "දොකො", "native_meaning": "කොහෙද", "english": "Where", "example_sentence_target": "トイレはどこですか (Toire wa doko desu ka?)", "example_sentence_native": "වැසිකිළිය කොහෙද?", "example_sentence_phonetic": "තොයිරෙ ව දොකො දෙස් ක?" },
+        { "id": "w2_2_3", "target": "誰 (Dare)", "phonetic": "දාරෙ", "native_meaning": "කවුද", "english": "Who", "example_sentence_target": "あの方は誰ですか (Ano kata wa dare desu ka?)", "example_sentence_native": "අර කෙනා කවුද?", "example_sentence_phonetic": "අනො කත ව දාරෙ දෙස් ක?" },
+        { "id": "w2_2_4", "target": "いつ (Itsu)", "phonetic": "ඉත්සු", "native_meaning": "කවදාද", "english": "When", "example_sentence_target": "会議はいつですか (Kaigi wa itsu desu ka?)", "example_sentence_native": "රැස්වීම කවදාද?", "example_sentence_phonetic": "කයිගි ව ඉත්සු දෙස් ක?" },
+        { "id": "w2_2_5", "target": "どうして (Dōshite)", "phonetic": "දෝෂිතෙ", "native_meaning": "ඇයි", "english": "Why", "example_sentence_target": "どうしてですか (Dōshite desu ka?)", "example_sentence_native": "ඒ ඇයි?", "example_sentence_phonetic": "දෝෂිතෙ දෙස් ක?" },
+        { "id": "w2_2_6", "target": "いくら (Ikura)", "phonetic": "ඉකුර", "native_meaning": "කීයද", "english": "How much", "example_sentence_target": "これはいくらですか (Kore wa ikura desu ka?)", "example_sentence_native": "මේක කීයද?", "example_sentence_phonetic": "කොරෙ ව ඉකුර දෙස් ක?" }
+      ],
+      "sentences": [
+        { "id": "s2_2_1", "target": "お名前は何ですか (Onamae wa nan desu ka?)", "native": "ඔබේ නම කුමක්ද?", "phonetic": "ඔනමඑ ව නන් දෙස් ක?" },
+        { "id": "s2_2_2", "target": "出身はどこですか (Shusshin wa doko desu ka?)", "native": "ඔබ කොහේ කෙනෙක්ද?", "phonetic": "ෂුස්සින් ව දොකො දෙස් ක?" },
+        { "id": "s2_2_3", "target": "誕生日はいつですか (Tanjōbi wa itsu desu ka?)", "native": "ඔබේ උපන්දිනය කවදාද?", "phonetic": "තන්ජෝබි ව ඉත්සු දෙස් ක?" },
+        { "id": "s2_2_4", "target": "今、何時ですか (Ima, nanji desu ka?)", "native": "දැන් වෙලාව කීයද?", "phonetic": "ඉම, නන්ජි දෙස් ක?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_2_1",
-          "context": "Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_2_2",
-          "context": "Formal Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_2_1", "context": "මිලක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "すみません、これはいくらですか。", "native": "සමාවෙන්න, මේක කීයද?", "phonetic": "සුමිමසෙන්, කොරෙ ව ඉකුර දෙස් ක." },
+            { "speaker": "B", "target": "千円です (Sen en desu)", "native": "යෙන් 1000 යි.", "phonetic": "සෙන් එන් දෙස්." }
+        ]},
+        { "id": "d2_2_2", "context": "කෙනෙකුගේ නම ඇසීම.", "lines": [
+            { "speaker": "A", "target": "お名前は何ですか。", "native": "ඔබේ නම කුමක්ද?", "phonetic": "ඔනමඑ ව නන් දෙස් ක." },
+            { "speaker": "B", "target": "田中です (Tanaka desu)", "native": "මම තනාකා.", "phonetic": "තනාකා දෙස්." }
+        ]},
+        { "id": "d2_2_3", "context": "ස්ථානයක් ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "すみません、バス停はどこですか (Sumimasen, basutei wa doko desu ka?)", "native": "සමාවෙන්න, බස් නැවතුම කොහෙද?", "phonetic": "සුමිමසෙන්, බසුතෙයි ව දොකො දෙස් ක." },
+            { "speaker": "B", "target": "まっすぐです (Massugu desu)", "native": "කෙලින්ම තියෙන්නේ.", "phonetic": "මස්සුගු දෙස්." }
+        ]},
+        { "id": "d2_2_4", "context": "වේලාව ඇසීම.", "lines": [
+            { "speaker": "A", "target": "今、何時ですか。", "native": "දැන් වෙලාව කීයද?", "phonetic": "ඉම, නන්ජි දෙස් ක." },
+            { "speaker": "B", "target": "三時です (Sanji desu)", "native": "තුනයි.", "phonetic": "සන්ජි දෙස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_2_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_2_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_2_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_2_1", "sentence": "これは ___ ですか。", "answer": "何", "hint": "කුමක්ද" }
         ],
         "matching": [
-          {
-            "id": "m2_2_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_2_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_2_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_2_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_2_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_2_1", "target": "どこ", "native": "කොහෙද" },
+          { "id": "m2_2_2", "target": "いつ", "native": "කවදාද" },
+          { "id": "m2_2_3", "target": "いくら", "native": "කීයද" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_2_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_2_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_2_1", "scrambled": ["は", "お名前", "何", "ですか"], "correct": "お名前は何ですか", "nativeHint": "ඔබේ නම කුමක්ද?" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D2"
-      }
+      "cultural_note": "ජපන් භාෂාවේ ප්‍රශ්නාර්ථ වචනයකට පසුව 'か' (ka) අකුර යෙදීමෙන් වාක්‍යයක් ප්‍රශ්නයක් බවට පත් කරයි. මෙය ඉංග්‍රීසියෙන් වාක්‍යයක් අවසානයේ ප්‍රශ්නාර්ථ ලකුණක් යෙදීම හා සමානයි.",
+      "pronunciation_tip": "'Dōshite' (ඇයි) හි 'ō' ශබ්දය 'o' දෙකක් එකට උච්චාරණය කරනවා වැනිය. එය 'ඔ' ශබ්දයට වඩා දිගු වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D2-Questions" }
     },
     {
       "week": 2,
       "day": 3,
-      "title": "Week 2 Day 3: Email & Phone",
-      "title_native": "Email & Phone",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 3 වන දිනය: සරල තොරතුරු දීම",
+      "title_native": "週2、3日目：簡単な情報提供",
+      "theme": "Giving simple information",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_3_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_3_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_3_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_3_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_3_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_3_1", "target": "はい (Hai)", "phonetic": "හයි", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "はい、そうです (Hai, sō desu)", "example_sentence_native": "ඔව්, ඒක හරි", "example_sentence_phonetic": "හයි, සෝ දෙස්" },
+        { "id": "w2_3_2", "target": "いいえ (Iie)", "phonetic": "ඊඑ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "いいえ、違います (Iie, chigaimasu)", "example_sentence_native": "නැහැ, ඒක වැරදියි", "example_sentence_phonetic": "ඊඑ, චිගයිමසු" },
+        { "id": "w2_3_3", "target": "私 (Watashi)", "phonetic": "වතෂි", "native_meaning": "මම", "english": "I/Me", "example_sentence_target": "私は学生です (Watashi wa gakusei desu)", "example_sentence_native": "මම ශිෂ්‍යයෙක්", "example_sentence_phonetic": "වතෂි ව ගකුසෙයි දෙස්" },
+        { "id": "w2_3_4", "target": "あなた (Anata)", "phonetic": "අනත", "native_meaning": "ඔබ", "english": "You", "example_sentence_target": "あなたは先生ですか (Anata wa sensei desu ka?)", "example_sentence_native": "ඔබ ගුරුවරයෙක්ද?", "example_sentence_phonetic": "අනත ව සෙන්සෙයි දෙස් ක?" },
+        { "id": "w2_3_5", "target": "です (Desu)", "phonetic": "දෙස්", "native_meaning": "වෙයි (වාක්‍ය අවසන් කිරීමට)", "english": "is/am/are (to end a sentence)", "example_sentence_target": "これはペンです (Kore wa pen desu)", "example_sentence_native": "මෙය පෑනක් වෙයි", "example_sentence_phonetic": "කොරෙ ව පෙන් දෙස්" },
+        { "id": "w2_3_6", "target": "これ (Kore)", "phonetic": "කොරෙ", "native_meaning": "මෙය", "english": "This", "example_sentence_target": "これは本です (Kore wa hon desu)", "example_sentence_native": "මෙය පොතක්", "example_sentence_phonetic": "කොරෙ ව හොන් දෙස්" }
+      ],
+      "sentences": [
+        { "id": "s2_3_1", "target": "私の名前はマリアです (Watashi no namae wa Maria desu)", "native": "මගේ නම මරියා", "phonetic": "වතෂි නො නමඑ ව මරියා දෙස්" },
+        { "id": "s2_3_2", "target": "私はスリランカから来ました (Watashi wa Suriranka kara kimashita)", "native": "මම ශ්‍රී ලංකාවෙන් ආවේ", "phonetic": "වතෂි ව සුරිරන්කා කර කිමශිත" },
+        { "id": "s2_3_3", "target": "はい、元気です (Hai, genki desu)", "native": "ඔව්, සනීපෙන් ඉන්නවා", "phonetic": "හයි, ගෙන්කි දෙස්" },
+        { "id": "s2_3_4", "target": "いいえ、日本人ではありません (Iie, nihonjin dewa arimasen)", "native": "නැහැ, මම ජපන් ජාතිකයෙක් නෙවෙයි", "phonetic": "ඊඑ, නිහොන්ජින් දෙව අරිමසෙන්" }
       ],
       "dialogues": [
-        {
-          "id": "d2_3_1",
-          "context": "Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_3_2",
-          "context": "Formal Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_3_1", "context": "නම පැවසීම.", "lines": [
+            { "speaker": "A", "target": "お名前は？", "native": "ඔබගේ නම?", "phonetic": "ඔනමඑ ව?" },
+            { "speaker": "B", "target": "ニマルです (Nimaru desu)", "native": "නිමල්.", "phonetic": "නිමරු දෙස්." }
+        ]},
+        { "id": "d2_3_2", "context": "තමන්ගේ රට පැවසීම.", "lines": [
+            { "speaker": "A", "target": "お国はどちらですか (Okuni wa dochira desu ka?)", "native": "ඔබේ රට කොහෙද?", "phonetic": "ඔකුනි ව දොචිර දෙස් ක." },
+            { "speaker": "B", "target": "スリランカです (Suriranka desu)", "native": "ශ්‍රී ලංකාව.", "phonetic": "සුරිරන්කා දෙස්." }
+        ]},
+        { "id": "d2_3_3", "context": "යමක් තහවුරු කිරීම.", "lines": [
+            { "speaker": "A", "target": "これはあなたの傘ですか (Kore wa anata no kasa desu ka?)", "native": "මේ ඔබේ කුඩයද?", "phonetic": "කොරෙ ව අනත නො කස දෙස් ක." },
+            { "speaker": "B", "target": "はい、そうです。", "native": "ඔව්, ඒක හරි.", "phonetic": "හයි, සෝ දෙස්." }
+        ]},
+        { "id": "d2_3_4", "context": "යමක් ප්‍රතික්ෂේප කිරීම.", "lines": [
+            { "speaker": "A", "target": "学生ですか (Gakusei desu ka?)", "native": "ඔබ ශිෂ්‍යයෙක්ද?", "phonetic": "ගකුසෙයි දෙස් ක." },
+            { "speaker": "B", "target": "いいえ、違います。会社員です (Iie, chigaimasu. Kaishain desu)", "native": "නැහැ, වැරදියි. මම කාර්යාල සේවකයෙක්.", "phonetic": "ඊඑ, චිගයිමසු. කයිෂයින් දෙස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_3_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_3_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_3_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_3_1", "sentence": "私 ___ 名前はニマルです。", "answer": "の", "hint": "ගේ/ මගේ" }
         ],
         "matching": [
-          {
-            "id": "m2_3_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_3_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_3_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_3_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_3_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_3_1", "target": "私", "native": "මම" },
+          { "id": "m2_3_2", "target": "はい", "native": "ඔව්" },
+          { "id": "m2_3_3", "target": "いいえ", "native": "නැහැ" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_3_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_3_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_3_1", "scrambled": ["は", "私", "です", "学生"], "correct": "私は学生です", "nativeHint": "මම ශිෂ්‍යයෙක්" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D3"
-      }
+      "cultural_note": "ජපන් භාෂාවේදී, විශේෂයෙන්ම ඔබ නොදන්නා අය සමඟ කතා කරන විට, 'あなた' (anata - ඔබ) යන වචනය භාවිතා කිරීමෙන් වැළකී සිටීම වඩාත් සුදුසුය. ඒ වෙනුවට, එම පුද්ගලයාගේ නම සහ 'さん' (-san) යොදා ඇමතීම වඩාත් ආචාරශීලී වේ (උදා: Tanaka-san).",
+      "pronunciation_tip": "'Desu' (です) හි අවසාන 'u' ශබ්දය බොහෝ විට උච්චාරණය නොකරයි. එය 'දෙස්' ලෙස උච්චාරණය වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D3-Info" }
     },
     {
       "week": 2,
       "day": 4,
-      "title": "Week 2 Day 4: Meetings",
-      "title_native": "Meetings",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 4 වන දිනය: ස්ථානයක් ඇසීම",
+      "title_native": "週2、4日目：場所を尋ねる",
+      "theme": "Asking location",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_4_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_4_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_4_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_4_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_4_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_4_1", "target": "ここ (Koko)", "phonetic": "කොකො", "native_meaning": "මෙතන", "english": "Here", "example_sentence_target": "お手洗いはここです (Otearai wa koko desu)", "example_sentence_native": "වැසිකිළිය මෙතන", "example_sentence_phonetic": "ඔතෙඅරයි ව කොකො දෙස්" },
+        { "id": "w2_4_2", "target": "そこ (Soko)", "phonetic": "සොකො", "native_meaning": "ඔතන", "english": "There (near the listener)", "example_sentence_target": "あなたの傘はそこです (Anata no kasa wa soko desu)", "example_sentence_native": "ඔබේ කුඩය ඔතන", "example_sentence_phonetic": "අනත නො කස ව සොකො දෙස්" },
+        { "id": "w2_4_3", "target": "あそこ (Asoko)", "phonetic": "අසොකො", "native_meaning": "අතන", "english": "Over there", "example_sentence_target": "駅はあそこです (Eki wa asoko desu)", "example_sentence_native": "දුම්රිය ස්ථානය අතන", "example_sentence_phonetic": "එකි ව අසොකො දෙස්" },
+        { "id": "w2_4_4", "target": "右 (Migi)", "phonetic": "මිගි", "native_meaning": "දකුණ", "english": "Right", "example_sentence_target": "右に曲がります (Migi ni magarimasu)", "example_sentence_native": "දකුණට හැරෙනවා", "example_sentence_phonetic": "මිගි නි මගරිමසු" },
+        { "id": "w2_4_5", "target": "左 (Hidari)", "phonetic": "හිදරි", "native_meaning": "වම", "english": "Left", "example_sentence_target": "左にあります (Hidari ni arimasu)", "example_sentence_native": "වම් පැත්තේ තියෙනවා", "example_sentence_phonetic": "හිදරි නි අරිමසු" },
+        { "id": "w2_4_6", "target": "まっすぐ (Massugu)", "phonetic": "මස්සුගු", "native_meaning": "කෙලින්ම", "english": "Straight", "example_sentence_target": "まっすぐ行ってください (Massugu itte kudasai)", "example_sentence_native": "කෙලින්ම යන්න", "example_sentence_phonetic": "මස්සුගු ඉත්තෙ කුදසයි" }
+      ],
+      "sentences": [
+        { "id": "s2_4_1", "target": "入口はどこですか (Iriguchi wa doko desu ka?)", "native": "ඇතුල්වන දොරටුව කොහෙද?", "phonetic": "ඉරිගුචි ව දොකො දෙස් ක?" },
+        { "id": "s2_4_2", "target": "出口はあそこです (Deguchi wa asoko desu)", "native": "පිටවන දොරටුව අතන", "phonetic": "දෙගුචි ව අසොකො දෙස්" },
+        { "id": "s2_4_3", "target": "銀行は右にあります (Ginkō wa migi ni arimasu)", "native": "බැංකුව දකුණු පැත්තේ තියෙනවා", "phonetic": "ගින්කෝ ව මිගි නි අරිමසු" },
+        { "id": "s2_4_4", "target": "この道をまっすぐです (Kono michi o massugu desu)", "native": "මේ පාරේ කෙලින්ම", "phonetic": "කොනො මිචි ඔ මස්සුගු දෙස්" }
       ],
       "dialogues": [
-        {
-          "id": "d2_4_1",
-          "context": "Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_4_2",
-          "context": "Formal Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_4_1", "context": "පාර අහන විට.", "lines": [
+            { "speaker": "A", "target": "すみません、郵便局はどこですか (Sumimasen, yūbinkyoku wa doko desu ka?)", "native": "සමාවෙන්න, තැපැල් කන්තෝරුව කොහෙද?", "phonetic": "සුමිමසෙන්, යූබින්ක්යොකු ව දොකො දෙස් ක." },
+            { "speaker": "B", "target": "この道をまっすぐ行って、左です (Kono michi o massugu itte, hidari desu)", "native": "මේ පාරේ කෙලින්ම ගිහින්, වම් පැත්තේ.", "phonetic": "කොනො මිචි ඔ මස්සුගු ඉත්තෙ, හිදරි දෙස්." }
+        ]},
+        { "id": "d2_4_2", "context": "ළඟම ඇති ATM යන්ත්‍රය ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "一番近いATMはどこですか (Ichiban chikai Ē-Tī-Emu wa doko desu ka?)", "native": "ළඟම තියෙන ATM එක කොහෙද?", "phonetic": "ඉචිබන් චිකයි ඒ-ටී-එමු ව දොකො දෙස් ක." },
+            { "speaker": "B", "target": "あそこです。コンビニの中にあります (Asoko desu. Konbini no naka ni arimasu)", "native": "අතන. කොන්බිනි එක ඇතුලේ තියෙනවා.", "phonetic": "අසොකො දෙස්. කොන්බිනි නො නක නි අරිමසු." }
+        ]},
+        { "id": "d2_4_3", "context": "යමක් මෙතන දැයි තහවුරු කරගැනීම.", "lines": [
+            { "speaker": "A", "target": "ここは新宿駅ですか (Koko wa Shinjuku eki desu ka?)", "native": "මෙතන ෂින්ජුකු දුම්රිය ස්ථානයද?", "phonetic": "කොකො ව ෂින්ජුකු එකී දෙස් ක." },
+            { "speaker": "B", "target": "はい、そうです。", "native": "ඔව්, ඒක හරි.", "phonetic": "හයි, සෝ දෙස්." }
+        ]},
+        { "id": "d2_4_4", "context": "යමක් අතන දැයි ඇසීම.", "lines": [
+            { "speaker": "A", "target": "病院はあそこですか (Byōin wa asoko desu ka?)", "native": "රෝහල අතනද?", "phonetic": "බ්‍යෝයින් ව අසොකො දෙස් ක." },
+            { "speaker": "B", "target": "いいえ、そこです。", "native": "නැහැ, ඔතන.", "phonetic": "ඊඑ, සොකො දෙස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_4_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_4_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_4_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_4_1", "sentence": "この道を ___ 行ってください。", "answer": "まっすぐ", "hint": "කෙලින්ම" }
         ],
         "matching": [
-          {
-            "id": "m2_4_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_4_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_4_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_4_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_4_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_4_1", "target": "右", "native": "දකුණ" },
+          { "id": "m2_4_2", "target": "左", "native": "වම" },
+          { "id": "m2_4_3", "target": "ここ", "native": "මෙතන" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_4_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_4_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_4_1", "scrambled": ["は", "銀行", "に", "あります", "右"], "correct": "銀行は右にあります", "nativeHint": "බැංකුව දකුණු පැත්තේ තියෙනවා" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D4"
-      }
+      "cultural_note": "ජපානයේදී, පාර අහන විට මිනිසුන් බොහෝ විට අභිනයන් සහ අත් චලන භාවිතා කරමින් උදව් කරයි. ඔවුන් ඔබට පෙන්වීමට සිතියමක් ඇඳීමට පවා ඉඩ ඇත. 'kōban' (පොලිස් කුටිය) වෙතින් මග පෙන්වීම් ඉල්ලා සිටීම ඉතා සුලභ හා ආරක්ෂිතයි.",
+      "pronunciation_tip": "'Massugu' (まっすぐ) හි මැද ඇති 'ssu' ශබ්දය කුඩා 'tsu' (っ) අකුරකින් ලියා ඇති අතර, එයින් අදහස් කරන්නේ ඊළඟ ව්‍යාංජනාක්ෂරය ('s' මෙහි) උච්චාරණය කිරීමට පෙර කුඩා විරාමයක් ගත යුතු බවයි. එය 'මස්-සුගු' ලෙස උච්චාරණය වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D4-Location" }
     },
     {
       "week": 2,
       "day": 5,
-      "title": "Week 2 Day 5: Job Titles",
-      "title_native": "Job Titles",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 5 වන දිනය: මග පෙන්වීම්",
+      "title_native": "週2、5日目：道案内",
+      "theme": "Directions",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_5_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_5_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_5_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_5_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_5_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_5_1", "target": "駅 (Eki)", "phonetic": "එකි", "native_meaning": "දුම්රිය ස්ථානය", "english": "Station", "example_sentence_target": "駅はどこですか (Eki wa doko desu ka?)", "example_sentence_native": "දුම්රිය ස්ථානය කොහෙද?", "example_sentence_phonetic": "එකි ව දොකො දෙස් ක?" },
+        { "id": "w2_5_2", "target": "バス停 (Basutei)", "phonetic": "බසුතෙයි", "native_meaning": "බස් නැවතුම", "english": "Bus stop", "example_sentence_target": "バス停はあそこです (Basutei wa asoko desu)", "example_sentence_native": "බස් නැවතුම අතන", "example_sentence_phonetic": "බසුතෙයි ව අසොකො දෙස්" },
+        { "id": "w2_5_3", "target": "角 (Kado)", "phonetic": "කදො", "native_meaning": "මුල්ල", "english": "Corner", "example_sentence_target": "次の角を右に曲がってください (Tsugi no kado o migi ni magatte kudasai)", "example_sentence_native": "ඊළඟ මුල්ලෙන් දකුණට හරවන්න", "example_sentence_phonetic": "ත්සුගි නො කදො ඔ මිගි නි මගත්තෙ කුදසයි" },
+        { "id": "w2_5_4", "target": "信号 (Shingō)", "phonetic": "ෂින්ගෝ", "native_meaning": "ට්‍රැෆික් ලයිට්", "english": "Traffic light", "example_sentence_target": "信号を渡ります (Shingō o watarimasu)", "example_sentence_native": "ට්‍රැෆික් ලයිට් එකෙන් පාර පනිනවා", "example_sentence_phonetic": "ෂින්ගෝ ඔ වතරිමසු" },
+        { "id": "w2_5_5", "target": "隣 (Tonari)", "phonetic": "තොනරි", "native_meaning": "එහා පැත්තේ", "english": "Next to", "example_sentence_target": "銀行の隣です (Ginkō no tonari desu)", "example_sentence_native": "බැංකුවට එහා පැත්තේ", "example_sentence_phonetic": "ගින්කෝ නො තොනරි දෙස්" },
+        { "id": "w2_5_6", "target": "前 (Mae)", "phonetic": "මඑ", "native_meaning": "ඉස්සරහ", "english": "In front of", "example_sentence_target": "駅の前にあります (Eki no mae ni arimasu)", "example_sentence_native": "දුම්රිය ස්ථානය ඉස්සරහ තියෙනවා", "example_sentence_phonetic": "එකි නො මඑ නි අරිමසු" }
+      ],
+      "sentences": [
+        { "id": "s2_5_1", "target": "二つ目の角を左に曲がってください (Futatsume no kado o hidari ni magatte kudasai)", "native": "දෙවෙනි මුල්ලෙන් වමට හරවන්න", "phonetic": "ෆුතත්සුමෙ නො කදො ඔ හිදරි නි මගත්තෙ කුදසයි" },
+        { "id": "s2_5_2", "target": "信号のそばにあります (Shingō no soba ni arimasu)", "native": "ට්‍රැෆික් ලයිට් එක ළඟ තියෙනවා", "phonetic": "ෂින්ගෝ නො සොබ නි අරිමසු" },
+        { "id": "s2_5_3", "target": "郵便局の向かいです (Yūbinkyoku no mukai desu)", "native": "තැපැල් කන්තෝරුවට විරුද්ධ පැත්තේ", "phonetic": "යූබින්ක්යොකු නො මුකයි දෙස්" },
+        { "id": "s2_5_4", "target": "このバスは渋谷に行きますか (Kono basu wa Shibuya ni ikimasu ka?)", "native": "මේ බස් එක ෂිබුයා වලට යනවද?", "phonetic": "කොනො බසු ව ෂිබුයා නි ඉකිමසු ක?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_5_1",
-          "context": "Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_5_2",
-          "context": "Formal Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_5_1", "context": "රෝහලට යන පාර ඇසීම.", "lines": [
+            { "speaker": "A", "target": "すみません、病院はどこですか。", "native": "සමාවෙන්න, රෝහල කොහෙද?", "phonetic": "සුමිමසෙන්, බ්‍යෝඉන් ව දොකො දෙස් ක." },
+            { "speaker": "B", "target": "まっすぐ行って、二つ目の信号を右です。", "native": "කෙලින්ම ගිහින්, දෙවෙනි ට්‍රැෆික් ලයිට් එකෙන් දකුණට.", "phonetic": "මස්සුගු ඉත්තෙ, ෆුතත්සුමෙ නො ෂින්ගෝ ඔ මිගි දෙස්." }
+        ]},
+        { "id": "d2_5_2", "context": "පහසුව සඳහා වන වෙළඳසැලක් ගැන ඇසීම.", "lines": [
+            { "speaker": "A", "target": "コンビニは近くにありますか。", "native": "ළඟපාත කොන්බිනි එකක් තියෙනවද?", "phonetic": "කොන්බිනි ව චිකකු නි අරිමසු ක." },
+            { "speaker": "B", "target": "はい、駅の前にあります。", "native": "ඔව්, දුම්රිය ස්ථානය ඉස්සරහ තියෙනවා.", "phonetic": "හයි, එකී නො මඑ නි අරිමසු." }
+        ]},
+        { "id": "d2_5_3", "context": "බස් නැවතුම තහවුරු කරගැනීම.", "lines": [
+            { "speaker": "A", "target": "ここは東京行きのバス停ですか。", "native": "මේ ටෝකියෝ යන බස් හෝල්ට් එකද?", "phonetic": "කොකො ව තෝකියෝ යුකි නො බසුතෙයි දෙස් ක." },
+            { "speaker": "B", "target": "いいえ、違います。向かいのバス停です。", "native": "නැහැ, වැරදියි. විරුද්ධ පැත්තේ බස් නැවතුම.", "phonetic": "ඊඑ, චිගයිමසු. මුකයි නො බසුතෙයි දෙස්." }
+        ]},
+        { "id": "d2_5_4", "context": "යමක් අසල ඇති බව පැවසීම.", "lines": [
+            { "speaker": "A", "target": "ホテルは遠いですか。", "native": "හෝටලය දුරද?", "phonetic": "හොතෙරු ව තෝයි දෙස් ක." },
+            { "speaker": "B", "target": "いいえ、あの角の隣です。", "native": "නැහැ, අර මුල්ලට එහා පැත්තේ.", "phonetic": "ඊඑ, අනො කදො නො තොනරි දෙස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_5_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_5_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_5_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_5_1", "sentence": "駅の___にあります。", "answer": "前", "hint": "ඉස්සරහ" }
         ],
         "matching": [
-          {
-            "id": "m2_5_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_5_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_5_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_5_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_5_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_5_1", "target": "駅", "native": "දුම්රිය ස්ථානය" },
+          { "id": "m2_5_2", "target": "角", "native": "මුල්ල" },
+          { "id": "m2_5_3", "target": "隣", "native": "එහා පැත්තේ" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_5_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_5_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_5_1", "scrambled": ["は", "バス停", "です", "あそこ"], "correct": "バス停はあそこです", "nativeHint": "බස් නැවතුම අතන" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D5"
-      }
+      "cultural_note": "ජපානයේදී, ලිපින බොහෝ විට වීදි නම් වලට වඩා ප්‍රදේශ සහ බ්ලොක් අංක මත පදනම් වේ. මේ නිසා, මග පෙන්වීම් බොහෝ විට 'ඊළඟ මුල්ල', 'ට්‍රැෆික් ලයිට් එක ළඟ' වැනි සන්ධිස්ථාන මත රඳා පවතී.",
+      "pronunciation_tip": "'Eki' (駅) හි 'i' ශබ්දය ඉතා කෙටි වේ. එය ඉංග්‍රීසි 'ee' ශබ්දය මෙන් දිගු නොකරන්න. එය 'එකි' ලෙස උච්චාරණය කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D5-Directions" }
     },
     {
       "week": 2,
       "day": 6,
-      "title": "Week 2 Day 6: Working Hours",
-      "title_native": "Working Hours",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 6 වන දිනය: පොදු ස්ථාන",
+      "title_native": "週2、6日目：公共の場所",
+      "theme": "Public places",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_6_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_6_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_6_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_6_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_6_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_6_1", "target": "銀行 (Ginkō)", "phonetic": "ගින්කෝ", "native_meaning": "බැංකුව", "english": "Bank", "example_sentence_target": "銀行はどこですか (Ginkō wa doko desu ka?)", "example_sentence_native": "බැංකුව කොහෙද?", "example_sentence_phonetic": "ගින්කෝ ව දොකො දෙස් ක?" },
+        { "id": "w2_6_2", "target": "病院 (Byōin)", "phonetic": "බ්‍යෝඉන්", "native_meaning": "රෝහල", "english": "Hospital", "example_sentence_target": "病院に行きます (Byōin ni ikimasu)", "example_sentence_native": "මම රෝහලට යනවා", "example_sentence_phonetic": "බ්‍යෝඉන් නි ඉකිමසු" },
+        { "id": "w2_6_3", "target": "郵便局 (Yūbinkyoku)", "phonetic": "යූබින්ක්යොකු", "native_meaning": "තැපැල් කන්තෝරුව", "english": "Post office", "example_sentence_target": "郵便局はあそこです (Yūbinkyoku wa asoko desu)", "example_sentence_native": "තැපැල් කන්තෝරුව අතන", "example_sentence_phonetic": "යූබින්ක්යොකු ව අසොකො දෙස්" },
+        { "id": "w2_6_4", "target": "ホテル (Hoteru)", "phonetic": "හොතෙරු", "native_meaning": "හෝටලය", "english": "Hotel", "example_sentence_target": "ホテルを予約しました (Hoteru o yoyaku shimashita)", "example_sentence_native": "මම හෝටලයක් වෙන්කළා", "example_sentence_phonetic": "හොතෙරු ඔ යොයකු ශිමශිත" },
+        { "id": "w2_6_5", "target": "レストラン (Resutoran)", "phonetic": "රෙසුතොරන්", "native_meaning": "ආපනශාලාව", "english": "Restaurant", "example_sentence_target": "おすすめのレストランはありますか (Osusume no resutoran wa arimasu ka?)", "example_sentence_native": "නිර්දේශ කරන්න පුළුවන් ආපනශාලාවක් තියෙනවද?", "example_sentence_phonetic": "ඔසුසුමෙ නො රෙසුතොරන් ව අරිමසු ක?" },
+        { "id": "w2_6_6", "target": "コンビニ (Konbini)", "phonetic": "කොන්බිනි", "native_meaning": "පහසුව සඳහා වන වෙළඳසැල", "english": "Convenience store", "example_sentence_target": "コンビニで飲み物を買います (Konbini de nomimono o kaimasu)", "example_sentence_native": "මම කොන්බිනි එකෙන් බීමක් ගන්නවා", "example_sentence_phonetic": "කොන්බිනි දෙ නොමිමොනො ඔ කයිමසු" }
+      ],
+      "sentences": [
+        { "id": "s2_6_1", "target": "一番近いスーパーはどこですか (Ichiban chikai sūpā wa doko desu ka?)", "native": "ළඟම සුපිරි වෙළඳසැල කොහෙද?", "phonetic": "ඉචිබන් චිකයි සූපා ව දොකො දෙස් ක?" },
+        { "id": "s2_6_2", "target": "このホテルは無料Wi-Fiがありますか (Kono hoteru wa muryō Waifai ga arimasu ka?)", "native": "මේ හෝටලයේ නොමිලේ Wi-Fi තියෙනවද?", "phonetic": "කොනො හොතෙරු ව මුර්යෝ වයිෆයි ග අරිමසු ක?" },
+        { "id": "s2_6_3", "target": "あのレストランは美味しいです (Ano resutoran wa oishii desu)", "native": "අර ආපනශාලාව රසයි", "phonetic": "අනො රෙසුතොරන් ව ඔඉෂී දෙස්" },
+        { "id": "s2_6_4", "target": "薬局で薬を買いたいです (Yakkyoku de kusuri o kaitai desu)", "native": "මට ෆාමසියෙන් බෙහෙත් ගන්න ඕන", "phonetic": "යක්ක්යොකු දෙ කුසුරි ඔ කයිතයි දෙස්" }
       ],
       "dialogues": [
-        {
-          "id": "d2_6_1",
-          "context": "Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_6_2",
-          "context": "Formal Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_6_1", "context": "හෝටලයකදී.", "lines": [
+            { "speaker": "A", "target": "チェックイン、お願いします (Chekkuin, onegaishimasu)", "native": "චෙක්-ඉන් කරන්න, කරුණාකර.", "phonetic": "චෙක්කුඉන්, ඔනෙගයිෂිමසු." },
+            { "speaker": "B", "target": "はい、お名前をどうぞ (Hai, onamae o dōzo)", "native": "ඔව්, කරුණාකර ඔබගේ නම කියන්න.", "phonetic": "හයි, ඔනමඑ ඔ දෝසො." }
+        ]},
+        { "id": "d2_6_2", "context": "ආපනශාලාවකදී.", "lines": [
+            { "speaker": "A", "target": "二人です (Futari desu)", "native": "දෙන්නෙක්.", "phonetic": "ෆුතරි දෙස්." },
+            { "speaker": "B", "target": "こちらへどうぞ (Kochira e dōzo)", "native": "කරුණාකර මේ පැත්තට එන්න.", "phonetic": "කොචිර එ දෝසො." }
+        ]},
+        { "id": "d2_6_3", "context": "බැංකුවකදී.", "lines": [
+            { "speaker": "A", "target": "口座を開設したいです (Kōza o kaisetsu shitai desu)", "native": "මට ගිණුමක් විවෘත කරන්න ඕන.", "phonetic": "කෝසා ඔ කයිසෙත්සු ශිතයි දෙස්." },
+            { "speaker": "B", "target": "分かりました。この書類を記入してください (Wakarimashita. Kono shorui o kinyū shite kudasai)", "native": "හරි. කරුණාකර මේ ලියකියවිලි පුරවන්න.", "phonetic": "වකරිමශිත. කොනො ශොරුඉ ඔ කින්‍යූ ශිතෙ කුදසයි." }
+        ]},
+        { "id": "d2_6_4", "context": "රෝගී වූ විට.", "lines": [
+            { "speaker": "A", "target": "気分が悪いです (Kibun ga warui desu)", "native": "මට ඇඟට සනීප නෑ.", "phonetic": "කිබුන් ග වරුයි දෙස්." },
+            { "speaker": "B", "target": "病院に行きましょう (Byōin ni ikimashō)", "native": "අපි රෝහලට යමු.", "phonetic": "බ්‍යෝඉන් නි ඉකිමෂෝ." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_6_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_6_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_6_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_6_1", "sentence": "___ で薬を買います。", "answer": "薬局", "hint": "ෆාමසිය" }
         ],
         "matching": [
-          {
-            "id": "m2_6_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_6_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_6_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_6_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_6_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_6_1", "target": "病院", "native": "රෝහල" },
+          { "id": "m2_6_2", "target": "コンビニ", "native": "පහසුව සඳහා වන වෙළඳසැල" },
+          { "id": "m2_6_3", "target": "銀行", "native": "බැංකුව" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_6_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_6_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_6_1", "scrambled": ["は", "レストラン", "美味しい", "です", "あの"], "correct": "あのレストランは美味しいです", "nativeHint": "අර ආපනශාලාව රසයි" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D6"
-      }
+      "cultural_note": "ජපානයේ 'Konbini' (පහසුව සඳහා වන වෙළඳසැල්) 24/7 විවෘතව ඇති අතර ආහාර, බීම, ATM, ටිකට්පත් සහ බිල්පත් ගෙවීම් වැනි විවිධ සේවා සපයයි. ඒවා දෛනික ජීවිතයේ අත්‍යවශ්‍ය කොටසකි.",
+      "pronunciation_tip": "'Byōin' (病院) හි 'byō' ශබ්දය 'b' සහ 'y' එකට එකවර උච්චාරණය කිරීමෙන් සෑදේ. එය 'බි-යෝ' නොව, 'බ්‍යෝ' ලෙස එක් ශබ්දයක් ලෙස උච්චාරණය කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D6-Places" }
     },
     {
       "week": 2,
       "day": 7,
-      "title": "Week 2 Day 7: Work Culture",
-      "title_native": "Work Culture",
-      "theme": "At the Workplace",
+      "title": "2 වන සතිය, 7 වන දිනය: ගමන් බිමන්",
+      "title_native": "週2、7日目：旅行",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_7_1",
-          "target": "仕事",
-          "phonetic": "ෂී-ගො-තො",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "仕事.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_7_2",
-          "target": "会社",
-          "phonetic": "කෙය්-ෂා",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "会社.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_7_3",
-          "target": "会議",
-          "phonetic": "කෛ-ගී",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "会議.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_7_4",
-          "target": "同僚",
-          "phonetic": "දො-ර්යෝ",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "同僚.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_7_5",
-          "target": "上司",
-          "phonetic": "ජෝ-ෂී",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "上司.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_7_1", "target": "電車 (Densha)", "phonetic": "දෙන්ෂා", "native_meaning": "දුම්රිය", "english": "Train", "example_sentence_target": "電車で東京へ行きます (Densha de Tōkyō e ikimasu)", "example_sentence_native": "මම දුම්රියෙන් ටෝකියෝ යනවා", "example_sentence_phonetic": "දෙන්ෂා දෙ තෝකියෝ එ ඉකිමසු" },
+        { "id": "w2_7_2", "target": "バス (Basu)", "phonetic": "බසු", "native_meaning": "බසය", "english": "Bus", "example_sentence_target": "次のバスは何時ですか (Tsugi no basu wa nanji desu ka?)", "example_sentence_native": "ඊළඟ බසය කීයටද?", "example_sentence_phonetic": "ත්සුගි නො බසු ව නන්ජි දෙස් ක?" },
+        { "id": "w2_7_3", "target": "タクシー (Takushī)", "phonetic": "තකුෂී", "native_meaning": "ටැක්සිය", "english": "Taxi", "example_sentence_target": "タクシーを呼んでください (Takushī o yonde kudasai)", "example_sentence_native": "කරුණාකර ටැක්සියක් ගෙන්වන්න", "example_sentence_phonetic": "තකුෂී ඔ යොන්දෙ කුදසයි" },
+        { "id": "w2_7_4", "target": "空港 (Kūkō)", "phonetic": "කූකෝ", "native_meaning": "ගුවන් තොටුපළ", "english": "Airport", "example_sentence_target": "空港までお願いします (Kūkō made onegaishimasu)", "example_sentence_native": "ගුවන් තොටුපළ දක්වා, කරුණාකර", "example_sentence_phonetic": "කූකෝ මදෙ ඔනෙගයිෂිමසු" },
+        { "id": "w2_7_5", "target": "切符 (Kippu)", "phonetic": "කිප්පු", "native_meaning": "ටිකට් පත", "english": "Ticket", "example_sentence_target": "切符を一枚ください (Kippu o ichimai kudasai)", "example_sentence_native": "කරුණාකර ටිකට් පතක් දෙන්න", "example_sentence_phonetic": "කිප්පු ඔ ඉචිමයි කුදසයි" },
+        { "id": "w2_7_6", "target": "地図 (Chizu)", "phonetic": "චිසු", "native_meaning": "සිතියම", "english": "Map", "example_sentence_target": "地図を見せてください (Chizu o misete kudasai)", "example_sentence_native": "කරුණාකර සිතියම පෙන්වන්න", "example_sentence_phonetic": "චිසු ඔ මිසෙතෙ කුදසයි" }
+      ],
+      "sentences": [
+        { "id": "s2_7_1", "target": "成田空港行きのバスはどれですか (Narita Kūkō yuki no basu wa dore desu ka?)", "native": "නරිතා ගුවන් තොටුපළට යන බසය කුමක්ද?", "phonetic": "නරිතා කූකෝ යුකි නො බසු ව දොරෙ දෙස් ක?" },
+        { "id": "s2_7_2", "target": "京都までの切符をください (Kyōto made no kippu o kudasai)", "native": "කියෝතෝ දක්වා ටිකට් පතක් දෙන්න", "phonetic": "ක්යෝතෝ මදෙ නො කිප්පු ඔ කුදසයි" },
+        { "id": "s2_7_3", "target": "この電車は大阪に行きますか (Kono densha wa Ōsaka ni ikimasu ka?)", "native": "මේ දුම්රිය ඕසකා වලට යනවද?", "phonetic": "කොනො දෙන්ෂා ව ඕසකා නි ඉකිමසු ක?" },
+        { "id": "s2_7_4", "target": "タクシー乗り場はどこですか (Takushī noriba wa doko desu ka?)", "native": "ටැක්සි නැවතුම කොහෙද?", "phonetic": "තකුෂී නොරිබ ව දොකො දෙස් ක?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_7_1",
-          "context": "Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "仕事!",
-              "native": "වැඩ!",
-              "phonetic": "ෂී-ගො-තො"
-            },
-            {
-              "speaker": "B",
-              "target": "仕事! 会社!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "ෂී-ගො-තො කෙය්-ෂා"
-            },
-            {
-              "speaker": "A",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            }
-          ]
-        },
-        {
-          "id": "d2_7_2",
-          "context": "Formal Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "会社!",
-              "native": "කාර්යාලය!",
-              "phonetic": "කෙය්-ෂා"
-            },
-            {
-              "speaker": "B",
-              "target": "会議!",
-              "native": "රැස්වීම!",
-              "phonetic": "කෛ-ගී"
-            },
-            {
-              "speaker": "A",
-              "target": "同僚! 上司!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "දො-ර්යෝ ජෝ-ෂී"
-            }
-          ]
-        }
+        { "id": "d2_7_1", "context": "දුම්රිය ටිකට් පතක් මිලදී ගැනීම.", "lines": [
+            { "speaker": "A", "target": "新宿までの切符を一枚お願いします。", "native": "ෂින්ජුකු දක්වා එක ටිකට් පතක්, කරුණාකර.", "phonetic": "ෂින්ජුකු මදෙ නො කිප්පු ඔ ඉචිමයි ඔනෙගයිෂිමසු." },
+            { "speaker": "B", "target": "はい、二百円です (Hai, nihyaku en desu)", "native": "ඔව්, යෙන් 200යි.", "phonetic": "හයි, නිහ්යකු එන් දෙස්." }
+        ]},
+        { "id": "d2_7_2", "context": "බසයක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "このバスは市役所に行きますか (Kono basu wa shiyakusho ni ikimasu ka?)", "native": "මේ බසය නගර ශාලාවට යනවද?", "phonetic": "කොනො බසු ව ශියකුෂො නි ඉකිමසු ක." },
+            { "speaker": "B", "target": "はい、行きます。", "native": "ඔව්, යනවා.", "phonetic": "හයි, ඉකිමසු." }
+        ]},
+        { "id": "d2_7_3", "context": "ටැක්සියකදී.", "lines": [
+            { "speaker": "A", "target": "東京ホテルまでお願いします。", "native": "ටෝකියෝ හෝටලය දක්වා, කරුණාකර.", "phonetic": "තෝකියෝ හොතෙරු මදෙ ඔනෙගයිෂිමසු." },
+            { "speaker": "B", "target": "かしこまりました (Kashikomarimashita)", "native": "හොඳයි මහත්මයා/මහත්මිය.", "phonetic": "කෂිකොමරිමශිත." }
+        ]},
+        { "id": "d2_7_4", "context": "ගුවන් තොටුපළේදී.", "lines": [
+            { "speaker": "A", "target": "JALのカウンターはどこですか。", "native": "JAL කවුන්ටරය කොහෙද?", "phonetic": "ජරු නො කඋන්ත ව දොකො දෙස් ක." },
+            { "speaker": "B", "target": "あちらです。", "native": "අතන.", "phonetic": "අචිර දෙස්." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_7_1",
-            "sentence": "___ means 'Work' in Japanese",
-            "answer": "仕事",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_7_2",
-            "sentence": "___ means 'Office' in Japanese",
-            "answer": "会社",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_7_3",
-            "sentence": "___ means 'Meeting' in Japanese",
-            "answer": "会議",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_7_1", "sentence": "___ で京都へ行きます。", "answer": "電車", "hint": "දුම්රිය" }
         ],
         "matching": [
-          {
-            "id": "m2_7_1",
-            "target": "仕事",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_7_2",
-            "target": "会社",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_7_3",
-            "target": "会議",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_7_4",
-            "target": "同僚",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_7_5",
-            "target": "上司",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_7_1", "target": "空港", "native": "ගුවන් තොටුපළ" },
+          { "id": "m2_7_2", "target": "切符", "native": "ටිකට් පත" },
+          { "id": "m2_7_3", "target": "地図", "native": "සිතියම" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_7_1",
-            "question": "What does '仕事' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'仕事' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_7_2",
-            "question": "How do you say 'කාර්යාලය' in Japanese?",
-            "options": [
-              "仕事",
-              "会社",
-              "会議",
-              "同僚"
-            ],
-            "correct": 1,
-            "explanation": "'会社' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_7_1", "scrambled": ["は", "タクシー乗り場", "どこ", "ですか"], "correct": "タクシー乗り場はどこですか", "nativeHint": "ටැක්සි නැවතුම කොහෙද?" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D7"
-      }
+      "cultural_note": "ජපානයේ පොදු ප්‍රවාහන පද්ධතිය, විශේෂයෙන්ම දුම්රිය, ඉතා කාර්යක්ෂම සහ වෙලාවට වැඩ කරයි. ප්‍රමාදවීම් ඉතා දුර්ලභය. දුම්රිය සහ බස්රථ තුළ දුරකථනයෙන් කතා කිරීම අශිෂ්ට ලෙස සැලකේ.",
+      "pronunciation_tip": "'Kippu' (切符) හි ඇති කුඩා 'tsu' (っ) ශබ්දය නිසා 'p' ශබ්දය දෙගුණ වේ. එය උච්චාරණය කිරීමේදී 'කි-පු' ලෙස නොව 'කිප්-පු' ලෙස කුඩා විරාමයක් තබන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D7-Travel" }
     }
   ]
 }
