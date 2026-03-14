@@ -1,4 +1,3 @@
-
 {
   "week": 2,
   "path": "survival",
@@ -7,425 +6,402 @@
   "days": [
     {
       "week": 2,
-      "day": 8,
-      "title": "Week 2, Day 8: Asking for Help",
-      "title_native": "Week 2, Dag 8: Om hulp vragen",
-      "theme": "Asking for help",
+      "day": 1,
+      "title": "Week 2, Day 1: Asking for Help",
+      "title_native": "Week 2, Dag 1: Hulp vragen",
+      "theme": "Asking for Help",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_8_1", "target": "Help", "phonetic": "Help", "native_meaning": "Help", "english": "Help", "example_sentence_target": "Help mij, alstublieft.", "example_sentence_native": "Help me, please.", "example_sentence_phonetic": "Help my, al-stu-bleeft." },
-        { "id": "w2_8_2", "target": "Pardon", "phonetic": "Par-don", "native_meaning": "Excuse me", "english": "Excuse me", "example_sentence_target": "Pardon, kunt u mij helpen?", "example_sentence_native": "Excuse me, can you help me?", "example_sentence_phonetic": "Par-don, kunt u my help-en?" },
-        { "id": "w2_8_3", "target": "Ik begrijp het niet", "phonetic": "Ik be-chripe ut neet", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Sorry, ik begrijp het niet.", "example_sentence_native": "Sorry, I don't understand.", "example_sentence_phonetic": "Sorry, ik be-chripe ut neet." },
-        { "id": "w2_8_4", "target": "Langzamer", "phonetic": "Lang-zah-mer", "native_meaning": "Slower", "english": "Slower", "example_sentence_target": "Kunt u langzamer spreken?", "example_sentence_native": "Can you speak slower?", "example_sentence_phonetic": "Kunt u lang-zah-mer spray-ken?" },
-        { "id": "w2_8_5", "target": "Waar", "phonetic": "Waar", "native_meaning": "Where", "english": "Where", "example_sentence_target": "Waar is het toilet?", "example_sentence_native": "Where is the toilet?", "example_sentence_phonetic": "Waar is het twa-let?" },
-        { "id": "w2_8_6", "target": "Probleem", "phonetic": "Pro-bleem", "native_meaning": "Problem", "english": "Problem", "example_sentence_target": "Er is een probleem.", "example_sentence_native": "There is a problem.", "example_sentence_phonetic": "Er is un pro-bleem." }
+        { "id": "w2_1_1", "target": "Help", "phonetic": "help", "native_meaning": "Help", "english": "Help", "example_sentence_target": "Help! Ik ben verdwaald.", "example_sentence_native": "Help! I am lost.", "example_sentence_phonetic": "Help! Ik ben ver-dwahld." },
+        { "id": "w2_1_2", "target": "Kunt u mij helpen?", "phonetic": "kunt u may hel-pen?", "native_meaning": "Can you help me?", "english": "Can you help me?", "example_sentence_target": "Pardon, kunt u mij helpen?", "example_sentence_native": "Excuse me, can you help me?", "example_sentence_phonetic": "Par-don, kunt u may hel-pen?" },
+        { "id": "w2_1_3", "target": "Ik begrijp het niet", "phonetic": "ik be-greyp het neet", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Sorry, ik begrijp het niet.", "example_sentence_native": "Sorry, I don't understand.", "example_sentence_phonetic": "Sorry, ik be-greyp het neet." },
+        { "id": "w2_1_4", "target": "Spreekt u Engels?", "phonetic": "spreekt u eng-els?", "native_meaning": "Do you speak English?", "english": "Do you speak English?", "example_sentence_target": "Hallo, spreekt u Engels?", "example_sentence_native": "Hello, do you speak English?", "example_sentence_phonetic": "Hal-lo, spreekt u eng-els?" },
+        { "id": "w2_1_5", "target": "Noodgeval", "phonetic": "noht-ge-val", "native_meaning": "Emergency", "english": "Emergency", "example_sentence_target": "Dit is een noodgeval.", "example_sentence_native": "This is an emergency.", "example_sentence_phonetic": "Dit is un noht-ge-val." },
+        { "id": "w2_1_6", "target": "Ik heb hulp nodig", "phonetic": "ik heb hulp no-dig", "native_meaning": "I need help", "english": "I need help", "example_sentence_target": "Ik heb nu hulp nodig.", "example_sentence_native": "I need help now.", "example_sentence_phonetic": "Ik heb nu hulp no-dig." }
       ],
       "sentences": [
-        { "id": "s2_8_1", "target": "Ik heb hulp nodig.", "native": "I need help.", "phonetic": "Ik heb hulp no-dig." },
-        { "id": "s2_8_2", "target": "Kunt u dat herhalen?", "native": "Can you repeat that?", "phonetic": "Kunt u dat her-hah-len?" },
-        { "id": "s2_8_3", "target": "Ik ben verdwaald.", "native": "I am lost.", "phonetic": "Ik ben ver-dwaald." },
-        { "id": "s2_8_4", "target": "Wat betekent dit?", "native": "What does this mean?", "phonetic": "Wat be-tay-kent dit?" }
+        { "id": "s2_1_1", "target": "Waar is het toilet?", "native": "Where is the toilet?", "phonetic": "Waar is het twa-let?" },
+        { "id": "s2_1_2", "target": "Ik ben mijn portemonnee kwijt.", "native": "I have lost my wallet.", "phonetic": "Ik ben mijn por-te-mo-nay kwyt." },
+        { "id": "s2_1_3", "target": "Kunt u dat herhalen, alstublieft?", "native": "Can you repeat that, please?", "phonetic": "Kunt u dat her-ha-len, al-stu-bleeft?" },
+        { "id": "s2_1_4", "target": "Bel de politie!", "native": "Call the police!", "phonetic": "Bel de po-lie-tsie!" }
       ],
       "dialogues": [
-        {
-          "id": "d2_8_1", "context": "Asking for help on the street.",
-          "lines": [
-            { "speaker": "A", "target": "Pardon, kunt u mij helpen?", "native": "Excuse me, can you help me?", "phonetic": "Par-don, kunt u my help-en?" },
-            { "speaker": "B", "target": "Ja, natuurlijk. Wat is er?", "native": "Yes, of course. What is it?", "phonetic": "Ya, na-tuur-luk. Wat is er?" }
-          ]
-        },
-        {
-          "id": "d2_8_2", "context": "Not understanding someone.",
-          "lines": [
-            { "speaker": "A", "target": "Sorry, ik begrijp het niet. Kunt u langzamer spreken?", "native": "Sorry, I don't understand. Can you speak slower?", "phonetic": "Sorry, ik be-chripe ut neet. Kunt u lang-zah-mer spray-ken?" },
-            { "speaker": "B", "target": "Geen probleem. Ik zal het herhalen.", "native": "No problem. I will repeat it.", "phonetic": "Geen pro-bleem. Ik zal het her-hah-len." }
-          ]
-        },
-        {
-          "id": "d2_8_3", "context": "Feeling unwell and asking for help.",
-          "lines": [
-            { "speaker": "A", "target": "Help, ik voel me niet goed.", "native": "Help, I don't feel well.", "phonetic": "Help, ik fool me neet goot." },
-            { "speaker": "B", "target": "Oké, ga zitten. Ik bel een ambulance.", "native": "Okay, sit down. I will call an ambulance.", "phonetic": "Okay, ga zit-ten. Ik bel un am-bu-lan-se." }
-          ]
-        },
-        {
-          "id": "d2_8_4", "context": "Asking what something is.",
-          "lines": [
-            { "speaker": "A", "target": "Pardon, wat is dit?", "native": "Excuse me, what is this?", "phonetic": "Par-don, wat is dit?" },
-            { "speaker": "B", "target": "Dat is een stroopwafel.", "native": "That is a stroopwafel.", "phonetic": "Dat is un stroop-wah-fel." }
-          ]
-        }
+        { "id": "d2_1_1", "context": "Lost in the city", "lines": [
+            { "speaker": "A", "target": "Pardon, kunt u mij helpen? Ik ben verdwaald.", "native": "Excuse me, can you help me? I'm lost.", "phonetic": "Par-don, kunt u may hel-pen? Ik ben ver-dwahld." },
+            { "speaker": "B", "target": "Natuurlijk. Waar moet u naartoe?", "native": "Of course. Where do you need to go?", "phonetic": "Na-tuur-lijk. Waar moot u naar-too?" }
+        ]},
+        { "id": "d2_1_2", "context": "At a shop, not understanding", "lines": [
+            { "speaker": "A", "target": "Sorry, ik begrijp het niet. Spreekt u Engels?", "native": "Sorry, I don't understand. Do you speak English?", "phonetic": "Sorry, ik be-greyp het neet. Spreekt u eng-els?" },
+            { "speaker": "B", "target": "Een klein beetje. Wat zoekt u?", "native": "A little bit. What are you looking for?", "phonetic": "Un kline beet-ye. Wat zookt u?" }
+        ]},
+        { "id": "d2_1_3", "context": "Needing immediate help", "lines": [
+            { "speaker": "A", "target": "Help! Ik heb hulp nodig!", "native": "Help! I need help!", "phonetic": "Help! Ik heb hulp no-dig!" },
+            { "speaker": "B", "target": "Wat is er aan de hand? Is het een noodgeval?", "native": "What's wrong? Is it an emergency?", "phonetic": "Wat is er an de hand? Is het un noht-ge-val?" }
+        ]},
+        { "id": "d2_1_4", "context": "Asking for repetition", "lines": [
+            { "speaker": "A", "target": "Kunt u dat langzamer zeggen?", "native": "Can you say that slower?", "phonetic": "Kunt u dat lang-za-mer zeg-gen?" },
+            { "speaker": "B", "target": "Ja, natuurlijk. De trein vertrekt om tien uur.", "native": "Yes, of course. The train leaves at ten o'clock.", "phonetic": "Ja, na-tuur-lijk. De trine ver-trekt om teen uur." }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_8_1", "scrambled": ["kunt", "helpen", "u", "mij"], "correct": "Kunt u mij helpen", "nativeHint": "Can you help me" }]
+        "sentenceScramble": [
+          { "id": "ss2_1_1", "scrambled": ["u", "helpen", "kunt", "mij"], "correct": "Kunt u mij helpen", "nativeHint": "Can you help me?" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_1_1", "sentence": "Ik ___ het niet.", "answer": "begrijp", "hint": "I don't understand." }
+        ],
+        "matching": [
+          { "id": "m2_1_1", "target": "Help", "native": "Help" },
+          { "id": "m2_1_2", "target": "Noodgeval", "native": "Emergency" }
+        ]
       },
-      "cultural_note": "The Dutch are generally direct and willing to help, but it's always polite to start with 'Pardon' or 'Sorry'.",
-      "pronunciation_tip": "The 'g' sound in Dutch is a soft, throaty sound, similar to the 'ch' in the Scottish word 'loch'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D8-Help" }
+      "cultural_note": "Dutch people are generally direct and willing to help, but it's always polite to start with 'Pardon' (Excuse me).",
+      "pronunciation_tip": "The 'g' sound in 'begrijp' is a soft, guttural sound from the back of the throat, which can be tricky for English speakers.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D1-Help" }
     },
     {
       "week": 2,
-      "day": 9,
-      "title": "Week 2, Day 9: Understanding Questions",
-      "title_native": "Week 2, Dag 9: Vragen begrijpen",
-      "theme": "Understanding questions",
+      "day": 2,
+      "title": "Week 2, Day 2: Understanding Questions",
+      "title_native": "Week 2, Dag 2: Vragen begrijpen",
+      "theme": "Understanding Questions",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_9_1", "target": "Wie", "phonetic": "Wee", "native_meaning": "Who", "english": "Who", "example_sentence_target": "Wie is dat?", "example_sentence_native": "Who is that?", "example_sentence_phonetic": "Wee is dat?" },
-        { "id": "w2_9_2", "target": "Wat", "phonetic": "Wat", "native_meaning": "What", "english": "What", "example_sentence_target": "Wat is uw naam?", "example_sentence_native": "What is your name?", "example_sentence_phonetic": "Wat is uw naam?" },
-        { "id": "w2_9_3", "target": "Wanneer", "phonetic": "Wan-neer", "native_meaning": "When", "english": "When", "example_sentence_target": "Wanneer vertrekt de trein?", "example_sentence_native": "When does the train leave?", "example_sentence_phonetic": "Wan-neer ver-trekt de trine?" },
-        { "id": "w2_9_4", "target": "Waarom", "phonetic": "Waar-om", "native_meaning": "Why", "english": "Why", "example_sentence_target": "Waarom is de winkel gesloten?", "example_sentence_native": "Why is the store closed?", "example_sentence_phonetic": "Waar-om is de win-kel ges-low-ten?" },
-        { "id": "w2_9_5", "target": "Hoe", "phonetic": "Hoo", "native_meaning": "How", "english": "How", "example_sentence_target": "Hoe gaat het met u?", "example_sentence_native": "How are you?", "example_sentence_phonetic": "Hoo gaat het met u?" },
-        { "id": "w2_9_6", "target": "Hoeveel", "phonetic": "Hoo-veel", "native_meaning": "How much", "english": "How much", "example_sentence_target": "Hoeveel kost dit?", "example_sentence_native": "How much does this cost?", "example_sentence_phonetic": "Hoo-veel kost dit?" }
+        { "id": "w2_2_1", "target": "Wie", "phonetic": "wee", "native_meaning": "Who", "english": "Who", "example_sentence_target": "Wie is dat?", "example_sentence_native": "Who is that?", "example_sentence_phonetic": "Wee is dat?" },
+        { "id": "w2_2_2", "target": "Wat", "phonetic": "wat", "native_meaning": "What", "english": "What", "example_sentence_target": "Wat is uw naam?", "example_sentence_native": "What is your name?", "example_sentence_phonetic": "Wat is uw nahm?" },
+        { "id": "w2_2_3", "target": "Waar", "phonetic": "waar", "native_meaning": "Where", "english": "Where", "example_sentence_target": "Waar is het station?", "example_sentence_native": "Where is the station?", "example_sentence_phonetic": "Waar is het sta-shon?" },
+        { "id": "w2_2_4", "target": "Wanneer", "phonetic": "wan-neer", "native_meaning": "When", "english": "When", "example_sentence_target": "Wanneer vertrekt de bus?", "example_sentence_native": "When does the bus leave?", "example_sentence_phonetic": "Wan-neer ver-trekt de bus?" },
+        { "id": "w2_2_5", "target": "Waarom", "phonetic": "waa-rom", "native_meaning": "Why", "english": "Why", "example_sentence_target": "Waarom is de winkel gesloten?", "example_sentence_native": "Why is the shop closed?", "example_sentence_phonetic": "Waa-rom is de win-kel ge-slo-ten?" },
+        { "id": "w2_2_6", "target": "Hoe", "phonetic": "hoo", "native_meaning": "How", "english": "How", "example_sentence_target": "Hoe kom ik bij het museum?", "example_sentence_native": "How do I get to the museum?", "example_sentence_phonetic": "Hoo kom ik by het mu-say-um?" }
       ],
       "sentences": [
-        { "id": "s2_9_1", "target": "Wie bent u?", "native": "Who are you?", "phonetic": "Wee bent u?" },
-        { "id": "s2_9_2", "target": "Wat is dit?", "native": "What is this?", "phonetic": "Wat is dit?" },
-        { "id": "s2_9_3", "target": "Waarom niet?", "native": "Why not?", "phonetic": "Waar-om neet?" },
-        { "id": "s2_9_4", "target": "Hoe laat is het?", "native": "What time is it?", "phonetic": "Hoo laat is het?" }
+        { "id": "s2_2_1", "target": "Hoeveel kost dit?", "native": "How much does this cost?", "phonetic": "Hoo-veel kost dit?" },
+        { "id": "s2_2_2", "target": "Welke bus gaat naar het centrum?", "native": "Which bus goes to the city center?", "phonetic": "Wel-ke bus gaat naar het sen-trum?" },
+        { "id": "s2_2_3", "target": "Wat raadt u aan?", "native": "What do you recommend?", "phonetic": "Wat raadt u aan?" },
+        { "id": "s2_2_4", "target": "Waar kan ik een kaartje kopen?", "native": "Where can I buy a ticket?", "phonetic": "Waar kan ik un kaart-ye ko-pen?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_9_1", "context": "Asking for the price.",
-          "lines": [
-            { "speaker": "A", "target": "Pardon, hoeveel kost dit?", "native": "Excuse me, how much does this cost?", "phonetic": "Par-don, hoo-veel kost dit?" },
-            { "speaker": "B", "target": "Dat is vijf euro.", "native": "That is five euros.", "phonetic": "Dat is vife euro." }
-          ]
-        },
-        {
-          "id": "d2_9_2", "context": "Asking for someone's name.",
-          "lines": [
-            { "speaker": "A", "target": "Wat is uw naam?", "native": "What is your name?", "phonetic": "Wat is uw naam?" },
-            { "speaker": "B", "target": "Mijn naam is Jan.", "native": "My name is Jan.", "phonetic": "Myne naam is Yan." }
-          ]
-        },
-        {
-          "id": "d2_9_3", "context": "Asking about a train schedule.",
-          "lines": [
-            { "speaker": "A", "target": "Wanneer vertrekt de trein naar Amsterdam?", "native": "When does the train to Amsterdam leave?", "phonetic": "Wan-neer ver-trekt de trine naar Amsterdam?" },
-            { "speaker": "B", "target": "Die vertrekt om tien uur.", "native": "It leaves at ten o'clock.", "phonetic": "Dee ver-trekt om teen uur." }
-          ]
-        },
-        {
-          "id": "d2_9_4", "context": "Simple greeting exchange.",
-          "lines": [
-            { "speaker": "A", "target": "Hallo, hoe gaat het?", "native": "Hello, how is it going?", "phonetic": "Hallo, hoo gaat het?" },
-            { "speaker": "B", "target": "Goed, dank u. En met u?", "native": "Good, thank you. And with you?", "phonetic": "Good, dank u. En met u?" }
-          ]
-        }
+        { "id": "d2_2_1", "context": "At a tourist information desk", "lines": [
+            { "speaker": "A", "target": "Hallo, waar kan ik een stadskaart vinden?", "native": "Hello, where can I find a city map?", "phonetic": "Hal-lo, waar kan ik un stats-kaart vin-den?" },
+            { "speaker": "B", "target": "Die liggen daar op de balie.", "native": "They are over there on the counter.", "phonetic": "Die lig-gen daar op de baa-lie." }
+        ]},
+        { "id": "d2_2_2", "context": "Asking about time", "lines": [
+            { "speaker": "A", "target": "Pardon, wanneer sluit het museum?", "native": "Excuse me, when does the museum close?", "phonetic": "Par-don, wan-neer sluit het mu-say-um?" },
+            { "speaker": "B", "target": "Om vijf uur.", "native": "At five o'clock.", "phonetic": "Om vyf uur." }
+        ]},
+        { "id": "d2_2_3", "context": "At a restaurant", "lines": [
+            { "speaker": "A", "target": "Wat is de soep van de dag?", "native": "What is the soup of the day?", "phonetic": "Wat is de soop van de dag?" },
+            { "speaker": "B", "target": "Vandaag hebben we tomatensoep.", "native": "Today we have tomato soup.", "phonetic": "Van-daag heb-ben we to-mah-ten-soop." }
+        ]},
+        { "id": "d2_2_4", "context": "General question", "lines": [
+            { "speaker": "A", "target": "Wie is de manager?", "native": "Who is the manager?", "phonetic": "Wee is de ma-na-ger?" },
+            { "speaker": "B", "target": "Dat is mevrouw Jansen.", "native": "That is Mrs. Jansen.", "phonetic": "Dat is me-vrow Yan-sen." }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_9_1", "scrambled": ["is", "wat", "naam", "uw"], "correct": "Wat is uw naam", "nativeHint": "What is your name" }]
+        "sentenceScramble": [
+          { "id": "ss2_2_1", "scrambled": ["is", "uw", "naam", "wat"], "correct": "Wat is uw naam", "nativeHint": "What is your name?" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_2_1", "sentence": "___ is het station?", "answer": "Waar", "hint": "Where is the station?" }
+        ],
+        "matching": [
+          { "id": "m2_2_1", "target": "Wanneer", "native": "When" },
+          { "id": "m2_2_2", "target": "Hoeveel", "native": "How much" }
+        ]
       },
-      "cultural_note": "Using the formal 'u' is safer when addressing strangers, especially older people. 'Je' is used for friends and family.",
-      "pronunciation_tip": "The 'ee' in 'Wie' and 'Hoeveel' is a long 'ay' sound, like in the English word 'say'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D9-Questions" }
+      "cultural_note": "In Dutch, the question word (Wie, Wat, Waar, etc.) almost always comes at the beginning of the sentence.",
+      "pronunciation_tip": "The 'W' in Dutch question words like 'Wat' and 'Waar' is pronounced more like a 'V' in English.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D2-Questions" }
     },
     {
       "week": 2,
-      "day": 10,
-      "title": "Week 2, Day 10: Giving Simple Information",
-      "title_native": "Week 2, Dag 10: Eenvoudige informatie geven",
-      "theme": "Giving simple information",
+      "day": 3,
+      "title": "Week 2, Day 3: Giving Simple Information",
+      "title_native": "Week 2, Dag 3: Eenvoudige informatie geven",
+      "theme": "Giving Simple Information",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_10_1", "target": "Ja", "phonetic": "Ya", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Ja, dat klopt.", "example_sentence_native": "Yes, that's correct.", "example_sentence_phonetic": "Ya, dat klopt." },
-        { "id": "w2_10_2", "target": "Nee", "phonetic": "Nay", "native_meaning": "No", "english": "No", "example_sentence_target": "Nee, dat is niet juist.", "example_sentence_native": "No, that is not correct.", "example_sentence_phonetic": "Nay, dat is neet yiced." },
-        { "id": "w2_10_3", "target": "Misschien", "phonetic": "Mis-skeen", "native_meaning": "Maybe", "english": "Maybe", "example_sentence_target": "Misschien kom ik later.", "example_sentence_native": "Maybe I will come later.", "example_sentence_phonetic": "Mis-skeen kom ik lah-ter." },
-        { "id": "w2_10_4", "target": "Ik weet het niet", "phonetic": "Ik weet het neet", "native_meaning": "I don't know", "english": "I don't know", "example_sentence_target": "Sorry, ik weet het niet.", "example_sentence_native": "Sorry, I don't know.", "example_sentence_phonetic": "Sorry, ik weet het neet." },
-        { "id": "w2_10_5", "target": "Mijn naam is...", "phonetic": "Myne naam is...", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Mijn naam is Anna.", "example_sentence_native": "My name is Anna.", "example_sentence_phonetic": "Myne naam is Anna." },
-        { "id": "w2_10_6", "target": "Ik kom uit...", "phonetic": "Ik kom ite...", "native_meaning": "I come from...", "english": "I come from...", "example_sentence_target": "Ik kom uit Sri Lanka.", "example_sentence_native": "I come from Sri Lanka.", "example_sentence_phonetic": "Ik kom ite Sri Lanka." }
+        { "id": "w2_3_1", "target": "Ja", "phonetic": "ya", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Ja, dat klopt.", "example_sentence_native": "Yes, that's right.", "example_sentence_phonetic": "Ya, dat klopt." },
+        { "id": "w2_3_2", "target": "Nee", "phonetic": "nay", "native_meaning": "No", "english": "No", "example_sentence_target": "Nee, dat is niet correct.", "example_sentence_native": "No, that is not correct.", "example_sentence_phonetic": "Nay, dat is neet cor-rect." },
+        { "id": "w2_3_3", "target": "Misschien", "phonetic": "mis-skeen", "native_meaning": "Maybe", "english": "Maybe", "example_sentence_target": "Misschien kom ik later.", "example_sentence_native": "Maybe I will come later.", "example_sentence_phonetic": "Mis-skeen kom ik lah-ter." },
+        { "id": "w2_3_4", "target": "Ik weet het niet", "phonetic": "ik weet het neet", "native_meaning": "I don't know", "english": "I don't know", "example_sentence_target": "Ik weet het antwoord niet.", "example_sentence_native": "I don't know the answer.", "example_sentence_phonetic": "Ik weet het ant-woord neet." },
+        { "id": "w2_3_5", "target": "Hier", "phonetic": "heer", "native_meaning": "Here", "english": "Here", "example_sentence_target": "Het is hier.", "example_sentence_native": "It is here.", "example_sentence_phonetic": "Het is heer." },
+        { "id": "w2_3_6", "target": "Daar", "phonetic": "daar", "native_meaning": "There", "english": "There", "example_sentence_target": "De bushalte is daar.", "example_sentence_native": "The bus stop is there.", "example_sentence_phonetic": "De bus-hal-te is daar." }
       ],
       "sentences": [
-        { "id": "s2_10_1", "target": "Ja, alstublieft.", "native": "Yes, please.", "phonetic": "Ya, al-stu-bleeft." },
-        { "id": "s2_10_2", "target": "Nee, dank u.", "native": "No, thank you.", "phonetic": "Nay, dank u." },
-        { "id": "s2_10_3", "target": "Ik spreek een beetje Nederlands.", "native": "I speak a little Dutch.", "phonetic": "Ik sprayk un beet-ye Nay-der-lands." },
-        { "id": "s2_10_4", "target": "Ik woon in Amsterdam.", "native": "I live in Amsterdam.", "phonetic": "Ik vone in Amsterdam." }
+        { "id": "s2_3_1", "target": "Mijn naam is...", "native": "My name is...", "phonetic": "Mijn naam is..." },
+        { "id": "s2_3_2", "target": "Ik kom uit...", "native": "I come from...", "phonetic": "Ik kom uit..." },
+        { "id": "s2_3_3", "target": "Dat is goed.", "native": "That is good.", "phonetic": "Dat is good." },
+        { "id": "s2_3_4", "target": "Het spijt me.", "native": "I am sorry.", "phonetic": "Het spijt me." }
       ],
       "dialogues": [
-        {
-          "id": "d2_10_1", "context": "Answering where you are from.",
-          "lines": [
-            { "speaker": "A", "target": "Waar komt u vandaan?", "native": "Where do you come from?", "phonetic": "Waar komt u van-daan?" },
-            { "speaker": "B", "target": "Ik kom uit Sri Lanka.", "native": "I come from Sri Lanka.", "phonetic": "Ik kom ite Sri Lanka." }
-          ]
-        },
-        {
-          "id": "d2_10_2", "context": "Answering a yes/no question.",
-          "lines": [
-            { "speaker": "A", "target": "Spreekt u Engels?", "native": "Do you speak English?", "phonetic": "Spraykt u Eng-els?" },
-            { "speaker": "B", "target": "Ja, een beetje.", "native": "Yes, a little.", "phonetic": "Ya, un beet-ye." }
-          ]
-        },
-        {
-          "id": "d2_10_3", "context": "When you don't know the answer.",
-          "lines": [
+        { "id": "d2_3_1", "context": "Answering a simple question", "lines": [
+            { "speaker": "A", "target": "Is dit de trein naar Amsterdam?", "native": "Is this the train to Amsterdam?", "phonetic": "Is dit de trine naar Am-ster-dam?" },
+            { "speaker": "B", "target": "Ja, dat klopt.", "native": "Yes, that's right.", "phonetic": "Ya, dat klopt." }
+        ]},
+        { "id": "d2_3_2", "context": "Declining an offer", "lines": [
+            { "speaker": "A", "target": "Wilt u een tasje?", "native": "Do you want a bag?", "phonetic": "Wilt u een tas-ye?" },
+            { "speaker": "B", "target": "Nee, dank u.", "native": "No, thank you.", "phonetic": "Nay, dank u." }
+        ]},
+        { "id": "d2_3_3", "context": "Introducing yourself", "lines": [
+            { "speaker": "A", "target": "Hallo, ik ben Anna. Wat is uw naam?", "native": "Hello, I am Anna. What is your name?", "phonetic": "Hal-lo, ik ben An-na. Wat is uw nahm?" },
+            { "speaker": "B", "target": "Mijn naam is Mark. Aangenaam.", "native": "My name is Mark. Nice to meet you.", "phonetic": "Mijn naam is Mark. Aan-ge-naam." }
+        ]},
+        { "id": "d2_3_4", "context": "Unsure of an answer", "lines": [
             { "speaker": "A", "target": "Weet u hoe laat het is?", "native": "Do you know what time it is?", "phonetic": "Weet u hoo laat het is?" },
             { "speaker": "B", "target": "Sorry, ik weet het niet.", "native": "Sorry, I don't know.", "phonetic": "Sorry, ik weet het neet." }
-          ]
-        },
-        {
-          "id": "d2_10_4", "context": "Introducing yourself.",
-          "lines": [
-            { "speaker": "A", "target": "Hallo, ik ben Peter. Wat is uw naam?", "native": "Hello, I am Peter. What is your name?", "phonetic": "Hallo, ik ben Peter. Wat is uw naam?" },
-            { "speaker": "B", "target": "Mijn naam is Fatima.", "native": "My name is Fatima.", "phonetic": "Myne naam is Fatima." }
-          ]
-        }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_10_1", "scrambled": ["uit", "ik", "kom", "Sri Lanka"], "correct": "Ik kom uit Sri Lanka", "nativeHint": "I come from Sri Lanka" }]
+        "sentenceScramble": [
+          { "id": "ss2_3_1", "scrambled": ["het", "weet", "niet", "ik"], "correct": "Ik weet het niet", "nativeHint": "I don't know" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_3_1", "sentence": "___, dat klopt.", "answer": "Ja", "hint": "Yes, that's right." }
+        ],
+        "matching": [
+          { "id": "m2_3_1", "target": "Hier", "native": "Here" },
+          { "id": "m2_3_2", "target": "Daar", "native": "There" }
+        ]
       },
-      "cultural_note": "Dutch people appreciate it when you try to speak their language, even if it's just a few words.",
-      "pronunciation_tip": "The 'ij' in 'Mijn' sounds like the 'ay' in the English word 'my'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D10-Info" }
+      "cultural_note": "'U' is the formal 'you', while 'je' is informal. When in doubt, especially with older people or in formal settings, use 'u'.",
+      "pronunciation_tip": "The 'ee' in 'Nee' is a long vowel sound, similar to the 'ay' in the English word 'say'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D3-Info" }
     },
     {
       "week": 2,
-      "day": 11,
-      "title": "Week 2, Day 11: Asking Location",
-      "title_native": "Week 2, Dag 11: Locatie vragen",
-      "theme": "Asking location",
+      "day": 4,
+      "title": "Week 2, Day 4: Asking for Location",
+      "title_native": "Week 2, Dag 4: Vragen naar de locatie",
+      "theme": "Asking for Location",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_11_1", "target": "Station", "phonetic": "Sta-shon", "native_meaning": "Station", "english": "Station", "example_sentence_target": "Waar is het treinstation?", "example_sentence_native": "Where is the train station?", "example_sentence_phonetic": "Waar is het trine-sta-shon?" },
-        { "id": "w2_11_2", "target": "Bushalte", "phonetic": "Bus-hal-te", "native_meaning": "Bus stop", "english": "Bus stop", "example_sentence_target": "Is hier een bushalte?", "native": "Is there a bus stop here?", "example_sentence_phonetic": "Is heer un bus-hal-te?" },
-        { "id": "w2_11_3", "target": "Supermarkt", "phonetic": "Soo-per-markt", "native_meaning": "Supermarket", "english": "Supermarket", "example_sentence_target": "Ik zoek de supermarkt.", "example_sentence_native": "I'm looking for the supermarket.", "example_sentence_phonetic": "Ik zook de soo-per-markt." },
-        { "id": "w2_11_4", "target": "Apotheek", "phonetic": "A-po-take", "native_meaning": "Pharmacy", "english": "Pharmacy", "example_sentence_target": "Waar kan ik een apotheek vinden?", "example_sentence_native": "Where can I find a pharmacy?", "example_sentence_phonetic": "Waar kan ik un a-po-take vin-den?" },
-        { "id": "w2_11_5", "target": "Ziekenhuis", "phonetic": "Zee-ken-hice", "native_meaning": "Hospital", "english": "Hospital", "example_sentence_target": "Breng me naar het ziekenhuis.", "example_sentence_native": "Take me to the hospital.", "example_sentence_phonetic": "Breng me naar het zee-ken-hice." },
-        { "id": "w2_11_6", "target": "Politiebureau", "phonetic": "Po-lee-tsee-bu-ro", "native_meaning": "Police station", "english": "Police station", "example_sentence_target": "Waar is het politiebureau?", "example_sentence_native": "Where is the police station?", "example_sentence_phonetic": "Waar is het po-lee-tsee-bu-ro?" }
+        { "id": "w2_4_1", "target": "Links", "phonetic": "links", "native_meaning": "Left", "english": "Left", "example_sentence_target": "Sla linksaf.", "example_sentence_native": "Turn left.", "example_sentence_phonetic": "Sla links-af." },
+        { "id": "w2_4_2", "target": "Rechts", "phonetic": "rechts", "native_meaning": "Right", "english": "Right", "example_sentence_target": "Het is aan de rechterkant.", "example_sentence_native": "It's on the right side.", "example_sentence_phonetic": "Het is aan de rech-ter-kant." },
+        { "id": "w2_4_3", "target": "Rechtdoor", "phonetic": "recht-door", "native_meaning": "Straight ahead", "english": "Straight ahead", "example_sentence_target": "Ga rechtdoor.", "example_sentence_native": "Go straight ahead.", "example_sentence_phonetic": "Ga recht-door." },
+        { "id": "w2_4_4", "target": "Dichtbij", "phonetic": "dicht-by", "native_meaning": "Near", "english": "Near", "example_sentence_target": "Is er een supermarkt dichtbij?", "example_sentence_native": "Is there a supermarket near?", "example_sentence_phonetic": "Is er un su-per-markt dicht-by?" },
+        { "id": "w2_4_5", "target": "Ver weg", "phonetic": "ver wech", "native_meaning": "Far away", "english": "Far away", "example_sentence_target": "Het vliegveld is ver weg.", "example_sentence_native": "The airport is far away.", "example_sentence_phonetic": "Het vlieg-veld is ver wech." },
+        { "id": "w2_4_6", "target": "Naast", "phonetic": "naast", "native_meaning": "Next to", "english": "Next to", "example_sentence_target": "De bank is naast de apotheek.", "example_sentence_native": "The bank is next to the pharmacy.", "example_sentence_phonetic": "De bank is naast de a-po-theek." }
       ],
       "sentences": [
-        { "id": "s2_11_1", "target": "Pardon, waar is het station?", "native": "Excuse me, where is the station?", "phonetic": "Par-don, waar is het sta-shon?" },
-        { "id": "s2_11_2", "target": "Ik zoek een hotel.", "native": "I am looking for a hotel.", "phonetic": "Ik zook un ho-tel." },
-        { "id": "s2_11_3", "target": "Is er een bank in de buurt?", "native": "Is there a bank nearby?", "phonetic": "Is er un bank in de buurt?" },
-        { "id": "s2_11_4", "target": "Waar is de dichtstbijzijnde apotheek?", "native": "Where is the nearest pharmacy?", "phonetic": "Waar is de dichtst-by-zy-nde a-po-take?" }
+        { "id": "s2_4_1", "target": "Waar is de dichtstbijzijnde geldautomaat?", "native": "Where is the nearest ATM?", "phonetic": "Waar is de dichtst-by-zynde geld-auto-maat?" },
+        { "id": "s2_4_2", "target": "Hoe ver is het naar het hotel?", "native": "How far is it to the hotel?", "phonetic": "Hoe ver is het naar het ho-tel?" },
+        { "id": "s2_4_3", "target": "Is het aan de linkerkant of rechterkant?", "native": "Is it on the left side or right side?", "phonetic": "Is het aan de lin-ker-kant of rech-ter-kant?" },
+        { "id": "s2_4_4", "target": "Kunt u het op de kaart aanwijzen?", "native": "Can you point it out on the map?", "phonetic": "Kunt u het op de kaart aan-wy-zen?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_11_1", "context": "Asking for the train station.",
-          "lines": [
-            { "speaker": "A", "target": "Pardon, weet u waar het treinstation is?", "native": "Excuse me, do you know where the train station is?", "phonetic": "Par-don, weet u waar het trine-sta-shon is?" },
-            { "speaker": "B", "target": "Ja, het is aan het einde van deze straat.", "native": "Yes, it is at the end of this street.", "phonetic": "Ya, het is aan het inde van day-ze straat." }
-          ]
-        },
-        {
-          "id": "d2_11_2", "context": "Looking for a supermarket.",
-          "lines": [
-            { "speaker": "A", "target": "Ik zoek de Albert Heijn supermarkt.", "native": "I am looking for the Albert Heijn supermarket.", "phonetic": "Ik zook de Albert Hine soo-per-markt." },
-            { "speaker": "B", "target": "Die is om de hoek.", "native": "That is around the corner.", "phonetic": "Dee is om de hook." }
-          ]
-        },
-        {
-          "id": "d2_11_3", "context": "Asking for the nearest hospital in an emergency.",
-          "lines": [
-            { "speaker": "A", "target": "Help! Waar is het dichtstbijzijnde ziekenhuis?", "native": "Help! Where is the nearest hospital?", "phonetic": "Help! Waar is het dichtst-by-zy-nde zee-ken-hice?" },
-            { "speaker": "B", "target": "Twee straten verderop. Ik zal u de weg wijzen.", "native": "Two streets away. I will show you the way.", "phonetic": "Tway strah-ten ver-der-op. Ik zal u de weg vy-zen." }
-          ]
-        },
-        {
-          "id": "d2_11_4", "context": "Finding a bus stop.",
-          "lines": [
-            { "speaker": "A", "target": "Is hier een bushalte in de buurt?", "native": "Is there a bus stop near here?", "phonetic": "Is heer un bus-hal-te in de buurt?" },
-            { "speaker": "B", "target": "Ja, daar is er een, tegenover de bakker.", "native": "Yes, there is one over there, opposite the bakery.", "phonetic": "Ya, daar is er een, tay-gen-oh-ver de bak-ker." }
-          ]
-        }
+        { "id": "d2_4_1", "context": "Asking for directions on the street", "lines": [
+            { "speaker": "A", "target": "Pardon, waar is de supermarkt?", "native": "Excuse me, where is the supermarket?", "phonetic": "Par-don, waar is de su-per-markt?" },
+            { "speaker": "B", "target": "Ga hier rechtdoor en dan de tweede straat links.", "native": "Go straight ahead here and then the second street left.", "phonetic": "Ga heer recht-door en dan de tway-de straat links." }
+        ]},
+        { "id": "d2_4_2", "context": "Confirming location", "lines": [
+            { "speaker": "A", "target": "Is het postkantoor dichtbij?", "native": "Is the post office near?", "phonetic": "Is het post-kan-toor dicht-by?" },
+            { "speaker": "B", "target": "Ja, het is naast de bakker.", "native": "Yes, it's next to the bakery.", "phonetic": "Ja, het is naast de bak-ker." }
+        ]},
+        { "id": "d2_4_3", "context": "Lost and asking for help", "lines": [
+            { "speaker": "A", "target": "Ik zoek het Rijksmuseum. Is het ver weg?", "native": "I'm looking for the Rijksmuseum. Is it far away?", "phonetic": "Ik zook het Ryks-mu-say-um. Is het ver wech?" },
+            { "speaker": "B", "target": "Nee, het is ongeveer tien minuten lopen. Ga rechtdoor.", "native": "No, it's about a ten-minute walk. Go straight ahead.", "phonetic": "Nay, het is on-ge-veer teen mi-nu-ten lo-pen. Ga recht-door." }
+        ]},
+        { "id": "d2_4_4", "context": "In a taxi", "lines": [
+            { "speaker": "A", "target": "Kunt u mij naar dit adres brengen, alstublieft?", "native": "Can you take me to this address, please?", "phonetic": "Kunt u my naar dit a-dres bren-gen, al-stu-bleeft?" },
+            { "speaker": "B", "target": "Zeker. We zijn er zo.", "native": "Certainly. We'll be there soon.", "phonetic": "Zay-ker. We zyn er zo." }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_11_1", "scrambled": ["is", "het", "station", "waar"], "correct": "Waar is het station", "nativeHint": "Where is the station" }]
+        "sentenceScramble": [
+          { "id": "ss2_4_1", "scrambled": ["linksaf", "de", "straat", "eerste"], "correct": "de eerste straat linksaf", "nativeHint": "the first street left" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_4_1", "sentence": "Ga hier ___ en dan rechts.", "answer": "rechtdoor", "hint": "Go straight here and then right." }
+        ],
+        "matching": [
+          { "id": "m2_4_1", "target": "Dichtbij", "native": "Near" },
+          { "id": "m2_4_2", "target": "Ver weg", "native": "Far away" }
+        ]
       },
-      "cultural_note": "Many Dutch cities are very walkable or cyclable. Asking for directions is common and people are usually happy to point you in the right direction.",
-      "pronunciation_tip": "The 'ie' in 'ziekenhuis' is a long 'ee' sound, like in 'see'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D11-Location" }
+      "cultural_note": "Cyclists have the right of way in the Netherlands. Always check bike paths before crossing the street or turning.",
+      "pronunciation_tip": "The 'ui' sound in 'rechtdoor' doesn't exist in English. It's a combination of a 'u' and an 'i' sound.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D4-Location" }
     },
     {
       "week": 2,
-      "day": 12,
-      "title": "Week 2, Day 12: Directions",
-      "title_native": "Week 2, Dag 12: Routebeschrijving",
+      "day": 5,
+      "title": "Week 2, Day 5: Directions",
+      "title_native": "Week 2, Dag 5: De weg wijzen",
       "theme": "Directions",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_12_1", "target": "Rechtdoor", "phonetic": "Recht-door", "native_meaning": "Straight ahead", "english": "Straight ahead", "example_sentence_target": "Ga hier rechtdoor.", "example_sentence_native": "Go straight ahead here.", "example_sentence_phonetic": "Ga heer recht-door." },
-        { "id": "w2_12_2", "target": "Links", "phonetic": "Links", "native_meaning": "Left", "english": "Left", "example_sentence_target": "Sla linksaf bij de stoplichten.", "example_sentence_native": "Turn left at the traffic lights.", "example_sentence_phonetic": "Sla links-af by de stop-lich-ten." },
-        { "id": "w2_12_3", "target": "Rechts", "phonetic": "Rechts", "native_meaning": "Right", "english": "Right", "example_sentence_target": "De winkel is aan de rechterkant.", "example_sentence_native": "The store is on the right side.", "example_sentence_phonetic": "De win-kel is aan de rech-ter-kant." },
-        { "id": "w2_12_4", "target": "Dichtbij", "phonetic": "Dicht-by", "native_meaning": "Near", "english": "Near", "example_sentence_target": "Het is hier dichtbij.", "example_sentence_native": "It is near here.", "example_sentence_phonetic": "Het is heer dicht-by." },
-        { "id": "w2_12_5", "target": "Ver weg", "phonetic": "Ver veg", "native_meaning": "Far away", "english": "Far away", "example_sentence_target": "Is het vliegveld ver weg?", "example_sentence_native": "Is the airport far away?", "example_sentence_phonetic": "Is het fleech-veld ver veg?" },
-        { "id": "w2_12_6", "target": "Stoplichten", "phonetic": "Stop-lich-ten", "native_meaning": "Traffic lights", "english": "Traffic lights", "example_sentence_target": "Wacht bij de stoplichten.", "example_sentence_native": "Wait at the traffic lights.", "example_sentence_phonetic": "Wacht by de stop-lich-ten." }
+        { "id": "w2_5_1", "target": "De straat", "phonetic": "de straht", "native_meaning": "The street", "english": "The street", "example_sentence_target": "Wat is de naam van deze straat?", "example_sentence_native": "What is the name of this street?", "example_sentence_phonetic": "Wat is de nahm van day-ze straht?" },
+        { "id": "w2_5_2", "target": "De hoek", "phonetic": "de hook", "native_meaning": "The corner", "english": "The corner", "example_sentence_target": "Het is op de hoek.", "example_sentence_native": "It's on the corner.", "example_sentence_phonetic": "Het is op de hook." },
+        { "id": "w2_5_3", "target": "Het stoplicht", "phonetic": "het stop-licht", "native_meaning": "The traffic light", "english": "The traffic light", "example_sentence_target": "Wacht bij het stoplicht.", "example_sentence_native": "Wait at the traffic light.", "example_sentence_phonetic": "Wacht by het stop-licht." },
+        { "id": "w2_5_4", "target": "Oversteken", "phonetic": "o-ver-stay-ken", "native_meaning": "To cross", "english": "To cross", "example_sentence_target": "Je moet hier oversteken.", "example_sentence_native": "You have to cross here.", "example_sentence_phonetic": "Ye moot heer o-ver-stay-ken." },
+        { "id": "w2_5_5", "target": "De brug", "phonetic": "de bruch", "native_meaning": "The bridge", "english": "The bridge", "example_sentence_target": "Loop over de brug.", "example_sentence_native": "Walk over the bridge.", "example_sentence_phonetic": "Loop o-ver de bruch." },
+        { "id": "w2_5_6", "target": "Het plein", "phonetic": "het pline", "native_meaning": "The square", "english": "The square", "example_sentence_target": "Het restaurant is op het plein.", "example_sentence_native": "The restaurant is on the square.", "example_sentence_phonetic": "Het res-tau-rant is op het pline." }
       ],
       "sentences": [
-        { "id": "s2_12_1", "target": "Ga rechtdoor en dan links.", "native": "Go straight and then left.", "phonetic": "Ga recht-door en dan links." },
-        { "id": "s2_12_2", "target": "Het is de tweede straat rechts.", "native": "It is the second street on the right.", "phonetic": "Het is de tway-de straat rechts." },
-        { "id": "s2_12_3", "target": "U kunt hier niet parkeren.", "native": "You cannot park here.", "phonetic": "U kunt heer neet par-kay-ren." },
-        { "id": "s2_12_4", "target": "Loop tot het einde van de straat.", "native": "Walk to the end of the street.", "phonetic": "Loop tot het inde van de straat." }
+        { "id": "s2_5_1", "target": "Neem de eerste straat rechts.", "native": "Take the first street on the right.", "phonetic": "Name de eer-ste straht rechts." },
+        { "id": "s2_5_2", "target": "Het is tegenover het park.", "native": "It is opposite the park.", "phonetic": "Het is tay-gen-o-ver het park." },
+        { "id": "s2_5_3", "target": "Blijf deze weg volgen.", "native": "Keep following this road.", "phonetic": "Blyf day-ze wech vol-gen." },
+        { "id": "s2_5_4", "target": "U kunt het niet missen.", "native": "You can't miss it.", "phonetic": "U kunt het neet mis-sen." }
       ],
       "dialogues": [
-        {
-          "id": "d2_12_1", "context": "Getting directions to a museum.",
-          "lines": [
-            { "speaker": "A", "target": "Hoe kom ik bij het museum?", "native": "How do I get to the museum?", "phonetic": "Hoo kom ik by het mu-say-um?" },
-            { "speaker": "B", "target": "Ga hier rechtdoor, en dan de eerste straat links. Het is aan uw rechterhand.", "native": "Go straight ahead here, and then the first street left. It is on your right hand.", "phonetic": "Ga heer recht-door, en dan de eer-ste straat links. Het is aan uw rech-ter-hand." }
-          ]
-        },
-        {
-          "id": "d2_12_2", "context": "Confirming directions.",
-          "lines": [
-            { "speaker": "A", "target": "Dus, na de brug rechts?", "native": "So, right after the bridge?", "phonetic": "Dus, na de bruch rechts?" },
-            { "speaker": "B", "target": "Nee, vóór de brug rechts. Bij de stoplichten.", "native": "No, right before the bridge. At the traffic lights.", "phonetic": "Nay, voor de bruch rechts. By de stop-lich-ten." }
-          ]
-        },
-        {
-          "id": "d2_12_3", "context": "Asking how far something is.",
-          "lines": [
-            { "speaker": "A", "target": "Is het ver weg?", "native": "Is it far away?", "phonetic": "Is het ver veg?" },
-            { "speaker": "B", "target": "Nee, het is dichtbij. Ongeveer vijf minuten lopen.", "native": "No, it is near. About a five-minute walk.", "phonetic": "Nay, het is dicht-by. On-ge-veer vife min-oo-ten low-pen." }
-          ]
-        },
-        {
-          "id": "d2_12_4", "context": "In a taxi.",
-          "lines": [
-            { "speaker": "A", "target": "Kunt u hier stoppen, alstublieft?", "native": "Can you stop here, please?", "phonetic": "Kunt u heer stop-pen, al-stu-bleeft?" },
-            { "speaker": "B", "target": "Natuurlijk. Dat is dan 12 euro.", "native": "Of course. That will be 12 euros.", "phonetic": "Na-tuur-luk. Dat is dan twaalf euro." }
-          ]
-        }
+        { "id": "d2_5_1", "context": "Getting directions from a local", "lines": [
+            { "speaker": "A", "target": "Pardon, hoe kom ik bij de bibliotheek?", "native": "Excuse me, how do I get to the library?", "phonetic": "Par-don, hoo kom ik by de bib-lio-theek?" },
+            { "speaker": "B", "target": "Ga rechtdoor tot het stoplicht, en sla dan rechtsaf. Het is op de hoek.", "native": "Go straight until the traffic light, and then turn right. It's on the corner.", "phonetic": "Ga recht-door tot het stop-licht, en sla dan rechts-af. Het is op de hook." }
+        ]},
+        { "id": "d2_5_2", "context": "Clarifying directions", "lines": [
+            { "speaker": "A", "target": "Dus na de brug moet ik links?", "native": "So after the bridge, I should go left?", "phonetic": "Dus na de bruch moot ik links?" },
+            { "speaker": "B", "target": "Nee, na de brug rechts.", "native": "No, after the bridge, right.", "phonetic": "Nay, na de bruch rechts." }
+        ]},
+        { "id": "d2_5_3", "context": "Asking about a square", "lines": [
+            { "speaker": "A", "target": "Waar is het Rembrandtplein?", "native": "Where is the Rembrandt square?", "phonetic": "Waar is het Rem-brant-pline?" },
+            { "speaker": "B", "target": "Volg deze straat. Het is aan het einde.", "native": "Follow this street. It's at the end.", "phonetic": "Volg day-ze straht. Het is aan het ine-de." }
+        ]},
+        { "id": "d2_5_4", "context": "Using a crosswalk", "lines": [
+            { "speaker": "A", "target": "Moeten we hier oversteken?", "native": "Should we cross here?", "phonetic": "Moo-ten we heer o-ver-stay-ken?" },
+            { "speaker": "B", "target": "Ja, bij het zebrapad.", "native": "Yes, at the crosswalk.", "phonetic": "Ja, by het zay-bra-pad." }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_12_1", "scrambled": ["straat", "de", "tweede", "rechts"], "correct": "De tweede straat rechts", "nativeHint": "The second street on the right" }]
+        "sentenceScramble": [
+          { "id": "ss2_5_1", "scrambled": ["op", "hoek", "de", "is", "het"], "correct": "Het is op de hoek", "nativeHint": "It is on the corner" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_5_1", "sentence": "Loop over de ___.", "answer": "brug", "hint": "Walk over the bridge." }
+        ],
+        "matching": [
+          { "id": "m2_5_1", "target": "De straat", "native": "The street" },
+          { "id": "m2_5_2", "target": "Het stoplicht", "native": "The traffic light" }
+        ]
       },
-      "cultural_note": "Cyclists have right of way in many situations in the Netherlands. Always check for bike paths (fietspaden) before crossing a road.",
-      "pronunciation_tip": "The 'ui' sound in 'rechterhuis' is unique to Dutch. It's a bit like saying 'ow' in 'how' but with your lips rounded.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D12-Directions" }
+      "cultural_note": "Many Dutch cities, like Amsterdam, have numerous canals and bridges. They are key landmarks for navigation.",
+      "pronunciation_tip": "The 'g' in 'brug' is soft and throaty. The 'ch' in 'rechts' is a similar sound, but sharper.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D5-Directions" }
     },
     {
       "week": 2,
-      "day": 13,
-      "title": "Week 2, Day 13: Public Places",
-      "title_native": "Week 2, Dag 13: Openbare plaatsen",
-      "theme": "Public places",
+      "day": 6,
+      "title": "Week 2, Day 6: Public Places",
+      "title_native": "Week 2, Dag 6: Openbare plaatsen",
+      "theme": "Public Places",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_13_1", "target": "Restaurant", "phonetic": "Res-tow-rant", "native_meaning": "Restaurant", "english": "Restaurant", "example_sentence_target": "Ik wil in een restaurant eten.", "example_sentence_native": "I want to eat in a restaurant.", "example_sentence_phonetic": "Ik wil in un res-tow-rant ay-ten." },
-        { "id": "w2_13_2", "target": "Café", "phonetic": "Ca-fay", "native_meaning": "Café", "english": "Café", "example_sentence_target": "Zullen we een kopje koffie drinken in het café?", "example_sentence_native": "Shall we have a cup of coffee at the café?", "example_sentence_phonetic": "Zul-len we un kop-ye kof-fie drin-ken in het ca-fay?" },
-        { "id": "w2_13_3", "target": "Park", "phonetic": "Park", "native_meaning": "Park", "english": "Park", "example_sentence_target": "Laten we in het park wandelen.", "example_sentence_native": "Let's walk in the park.", "example_sentence_phonetic": "Lah-ten we in het park wan-de-len." },
-        { "id": "w2_13_4", "target": "Museum", "phonetic": "Mu-say-um", "native_meaning": "Museum", "english": "Museum", "example_sentence_target": "Het Rijksmuseum is beroemd.", "example_sentence_native": "The Rijksmuseum is famous.", "example_sentence_phonetic": "Het Rikes-mu-say-um is be-roomd." },
-        { "id": "w2_13_5", "target": "Bibliotheek", "phonetic": "Bib-lee-o-take", "native_meaning": "Library", "english": "Library", "example_sentence_target": "Ik ga naar de bibliotheek om een boek te lenen.", "example_sentence_native": "I'm going to the library to borrow a book.", "example_sentence_phonetic": "Ik ga naar de bib-lee-o-take om un book te lay-nen." },
-        { "id": "w2_13_6", "target": "Markt", "phonetic": "Markt", "native_meaning": "Market", "english": "Market", "example_sentence_target": "Op zaterdag is er markt.", "example_sentence_native": "On Saturday there is a market.", "example_sentence_phonetic": "Op zah-ter-dag is er markt." }
+        { "id": "w2_6_1", "target": "Het station", "phonetic": "het sta-shon", "native_meaning": "The station", "english": "The station", "example_sentence_target": "Waar is het treinstation?", "example_sentence_native": "Where is the train station?", "example_sentence_phonetic": "Waar is het trine-sta-shon?" },
+        { "id": "w2_6_2", "target": "De luchthaven", "phonetic": "de lucht-haa-ven", "native_meaning": "The airport", "english": "The airport", "example_sentence_target": "We moeten naar de luchthaven.", "example_sentence_native": "We have to go to the airport.", "example_sentence_phonetic": "We moo-ten naar de lucht-haa-ven." },
+        { "id": "w2_6_3", "target": "Het ziekenhuis", "phonetic": "het zee-ken-huis", "native_meaning": "The hospital", "english": "The hospital", "example_sentence_target": "Ik moet naar het ziekenhuis.", "example_sentence_native": "I have to go to the hospital.", "example_sentence_phonetic": "Ik moot naar het zee-ken-huis." },
+        { "id": "w2_6_4", "target": "De apotheek", "phonetic": "de a-po-theek", "native_meaning": "The pharmacy", "english": "The pharmacy", "example_sentence_target": "Is er een apotheek in de buurt?", "example_sentence_native": "Is there a pharmacy nearby?", "example_sentence_phonetic": "Is er een a-po-theek in de buurt?" },
+        { "id": "w2_6_5", "target": "Het hotel", "phonetic": "het ho-tel", "native_meaning": "The hotel", "english": "The hotel", "example_sentence_target": "Ons hotel is in het centrum.", "example_sentence_native": "Our hotel is in the center.", "example_sentence_phonetic": "Ons ho-tel is in het sen-trum." },
+        { "id": "w2_6_6", "target": "Het restaurant", "phonetic": "het res-tau-rant", "native_meaning": "The restaurant", "english": "The restaurant", "example_sentence_target": "Laten we naar een restaurant gaan.", "example_sentence_native": "Let's go to a restaurant.", "example_sentence_phonetic": "Laa-ten we naar un res-tau-rant gaan." }
       ],
       "sentences": [
-        { "id": "s2_13_1", "target": "Ik ga naar de markt.", "native": "I am going to the market.", "phonetic": "Ik ga naar de markt." },
-        { "id": "s2_13_2", "target": "Het park is mooi in de lente.", "native": "The park is beautiful in the spring.", "phonetic": "Het park is moy in de len-te." },
-        { "id": "s2_13_3", "target": "Is dit museum gratis?", "native": "Is this museum free?", "phonetic": "Is dit mu-say-um gra-tis?" },
-        { "id": "s2_13_4", "target": "Waar is de openbare bibliotheek?", "native": "Where is the public library?", "phonetic": "Waar is de oh-pen-bah-re bib-lee-o-take?" }
+        { "id": "s2_6_1", "target": "Waar is het politiebureau?", "native": "Where is the police station?", "phonetic": "Waar is het po-lie-tsie-bu-ro?" },
+        { "id": "s2_6_2", "target": "Ik zoek een supermarkt.", "native": "I am looking for a supermarket.", "phonetic": "Ik zook un su-per-markt." },
+        { "id": "s2_6_3", "target": "Is er een bank dichtbij?", "native": "Is there a bank nearby?", "phonetic": "Is er un bank dicht-by?" },
+        { "id": "s2_6_4", "target": "Het museum opent om negen uur.", "native": "The museum opens at nine o'clock.", "phonetic": "Het mu-say-um o-pent om nay-gen uur." }
       ],
       "dialogues": [
-        {
-          "id": "d2_13_1", "context": "Making plans to go to a restaurant.",
-          "lines": [
-            { "speaker": "A", "target": "Zullen we vanavond in een restaurant eten?", "native": "Shall we eat at a restaurant tonight?", "phonetic": "Zul-len we van-ah-vond in un res-tow-rant ay-ten?" },
-            { "speaker": "B", "target": "Ja, goed idee! Welk restaurant?", "native": "Yes, good idea! Which restaurant?", "phonetic": "Ya, good ee-day! Welk res-tow-rant?" }
-          ]
-        },
-        {
-          "id": "d2_13_2", "context": "At the entrance of a museum.",
-          "lines": [
-            { "speaker": "A", "target": "Twee kaartjes voor het museum, alstublieft.", "native": "Two tickets for the museum, please.", "phonetic": "Tway kaart-yes voor het mu-say-um, al-stu-bleeft." },
-            { "speaker": "B", "target": "Dat is dan dertig euro.", "native": "That will be thirty euros.", "phonetic": "Dat is dan der-tig euro." }
-          ]
-        },
-        {
-          "id": "d2_13_3", "context": "Asking about library hours.",
-          "lines": [
-            { "speaker": "A", "target": "Wanneer sluit de bibliotheek?", "native": "When does the library close?", "phonetic": "Wan-neer slite de bib-lee-o-take?" },
-            { "speaker": "B", "target": "Om vijf uur.", "native": "At five o'clock.", "phonetic": "Om vife uur." }
-          ]
-        },
-        {
-          "id": "d2_13_4", "context": "At a café.",
-          "lines": [
-            { "speaker": "A", "target": "Twee koffie, alstublieft.", "native": "Two coffees, please.", "phonetic": "Tway kof-fie, al-stu-bleeft." },
-            { "speaker": "B", "target": "Komt eraan.", "native": "Coming right up.", "phonetic": "Komt er-aan." }
-          ]
-        }
+        { "id": "d2_6_1", "context": "Looking for a pharmacy", "lines": [
+            { "speaker": "A", "target": "Pardon, weet u waar de dichtstbijzijnde apotheek is?", "native": "Excuse me, do you know where the nearest pharmacy is?", "phonetic": "Par-don, weet u waar de dichtst-by-zynde a-po-theek is?" },
+            { "speaker": "B", "target": "Ja, die is om de hoek, naast de supermarkt.", "native": "Yes, it's around the corner, next to the supermarket.", "phonetic": "Ja, die is om de hook, naast de su-per-markt." }
+        ]},
+        { "id": "d2_6_2", "context": "At the train station", "lines": [
+            { "speaker": "A", "target": "Vanaf welk perron vertrekt de trein naar Utrecht?", "native": "From which platform does the train to Utrecht leave?", "phonetic": "Van-af welk per-ron ver-trekt de trine naar U-trecht?" },
+            { "speaker": "B", "target": "Vanaf spoor 7.", "native": "From track 7.", "phonetic": "Van-af spoor zay-ven." }
+        ]},
+        { "id": "d2_6_3", "context": "In case of emergency", "lines": [
+            { "speaker": "A", "target": "Help, ik moet naar het ziekenhuis!", "native": "Help, I have to go to the hospital!", "phonetic": "Help, ik moot naar het zee-ken-huis!" },
+            { "speaker": "B", "target": "Ik bel meteen een ambulance.", "native": "I'll call an ambulance right away.", "phonetic": "Ik bel me-teen un am-bu-lan-se." }
+        ]},
+        { "id": "d2_6_4", "context": "Checking into a hotel", "lines": [
+            { "speaker": "A", "target": "Goedendag, ik heb een reservering voor het hotel.", "native": "Good day, I have a reservation for the hotel.", "phonetic": "Goo-den-dag, ik heb un re-ser-ve-ring voor het ho-tel." },
+            { "speaker": "B", "target": "Welkom! Mag ik uw naam?", "native": "Welcome! May I have your name?", "phonetic": "Wel-kom! Mag ik uw nahm?" }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_13_1", "scrambled": ["is", "er", "markt", "zaterdag", "op"], "correct": "Op zaterdag is er markt", "nativeHint": "On Saturday there is a market" }]
+        "sentenceScramble": [
+          { "id": "ss2_6_1", "scrambled": ["het", "is", "station", "waar"], "correct": "Waar is het station", "nativeHint": "Where is the station?" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_6_1", "sentence": "Ik moet naar het ___.", "answer": "ziekenhuis", "hint": "I have to go to the hospital." }
+        ],
+        "matching": [
+          { "id": "m2_6_1", "target": "De luchthaven", "native": "The airport" },
+          { "id": "m2_6_2", "target": "Het restaurant", "native": "The restaurant" }
+        ]
       },
-      "cultural_note": "A Dutch 'café' is often more like a pub or bar (a 'brown cafe' or 'bruin café') where people drink beer and socialize, not just coffee.",
-      "pronunciation_tip": "The 'a' in 'Markt' is a short sound, like the 'a' in 'car'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D13-Places" }
+      "cultural_note": "'Apotheek' is a pharmacy for prescriptions. For general toiletries or over-the-counter medicine, you would go to a 'drogist' like 'Etos' or 'Kruidvat'.",
+      "pronunciation_tip": "The 'ui' in 'ziekenhuis' is a unique Dutch sound. Practice it by starting with an 'a' sound and rounding your lips as if you're saying 'oo'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D6-Places" }
     },
     {
       "week": 2,
-      "day": 14,
-      "title": "Week 2, Day 14: Travel",
-      "title_native": "Week 2, Dag 14: Reizen",
+      "day": 7,
+      "title": "Week 2, Day 7: Travel",
+      "title_native": "Week 2, Dag 7: Reizen",
       "theme": "Travel",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w2_14_1", "target": "Trein", "phonetic": "Trine", "native_meaning": "Train", "english": "Train", "example_sentence_target": "Ik neem de trein naar Rotterdam.", "example_sentence_native": "I am taking the train to Rotterdam.", "example_sentence_phonetic": "Ik name de trine naar Rotterdam." },
-        { "id": "w2_14_2", "target": "Bus", "phonetic": "Bus", "native_meaning": "Bus", "english": "Bus", "example_sentence_target": "Welke bus gaat naar het centrum?", "example_sentence_native": "Which bus goes to the city center?", "example_sentence_phonetic": "Wel-ke bus gaat naar het sen-trum?" },
-        { "id": "w2_14_3", "target": "Vliegtuig", "phonetic": "Fleech-tice", "native_meaning": "Airplane", "english": "Airplane", "example_sentence_target": "Het vliegtuig vertrekt op tijd.", "example_sentence_native": "The airplane is departing on time.", "example_sentence_phonetic": "Het fleech-tice ver-trekt op tide." },
-        { "id": "w2_14_4", "target": "Taxi", "phonetic": "Tak-see", "native_meaning": "Taxi", "english": "Taxi", "example_sentence_target": "Kunnen we een taxi nemen?", "example_sentence_native": "Can we take a taxi?", "example_sentence_phonetic": "Kun-nen we un tak-see nay-men?" },
-        { "id": "w2_14_5", "target": "Kaartje", "phonetic": "Kaart-ye", "native_meaning": "Ticket", "english": "Ticket", "example_sentence_target": "Ik moet een kaartje kopen.", "example_sentence_native": "I need to buy a ticket.", "example_sentence_phonetic": "Ik moot un kaart-ye co-pen." },
-        { "id": "w2_14_6", "target": "Vliegveld", "phonetic": "Fleech-veld", "native_meaning": "Airport", "english": "Airport", "example_sentence_target": "Hoe kom ik op het vliegveld?", "example_sentence_native": "How do I get to the airport?", "example_sentence_phonetic": "Hoo kom ik op het fleech-veld?" }
+        { "id": "w2_7_1", "target": "De trein", "phonetic": "de trine", "native_meaning": "The train", "english": "The train", "example_sentence_target": "De trein naar Rotterdam vertrekt zo.", "example_sentence_native": "The train to Rotterdam is leaving soon.", "example_sentence_phonetic": "De trine naar Rot-ter-dam ver-trekt zo." },
+        { "id": "w2_7_2", "target": "De bus", "phonetic": "de bus", "native_meaning": "The bus", "english": "The bus", "example_sentence_target": "Welke bus moet ik nemen?", "example_sentence_native": "Which bus should I take?", "example_sentence_phonetic": "Wel-ke bus moot ik nay-men?" },
+        { "id": "w2_7_3", "target": "De taxi", "phonetic": "de tax-i", "native_meaning": "The taxi", "english": "The taxi", "example_sentence_target": "Laten we een taxi nemen.", "example_sentence_native": "Let's take a taxi.", "example_sentence_phonetic": "Laa-ten we un tax-i nay-men." },
+        { "id": "w2_7_4", "target": "Het kaartje", "phonetic": "het kaart-ye", "native_meaning": "The ticket", "english": "The ticket", "example_sentence_target": "Heeft u uw kaartje?", "example_sentence_native": "Do you have your ticket?", "example_sentence_phonetic": "Heeft u uw kaart-ye?" },
+        { "id": "w2_7_5", "target": "De koffer", "phonetic": "de kof-fer", "native_meaning": "The suitcase", "english": "The suitcase", "example_sentence_target": "Mijn koffer is zwaar.", "example_sentence_native": "My suitcase is heavy.", "example_sentence_phonetic": "Mijn kof-fer is zwaar." },
+        { "id": "w2_7_6", "target": "Het paspoort", "phonetic": "het pas-poort", "native_meaning": "The passport", "english": "The passport", "example_sentence_target": "Vergeet je paspoort niet.", "example_sentence_native": "Don't forget your passport.", "example_sentence_phonetic": "Ver-geet ye pas-poort neet." }
       ],
       "sentences": [
-        { "id": "s2_14_1", "target": "Eén kaartje naar Utrecht, alstublieft.", "native": "One ticket to Utrecht, please.", "phonetic": "Ayn kaart-ye naar Utrecht, al-stu-bleeft." },
-        { "id": "s2_14_2", "target": "Vanaf welk spoor vertrekt de trein?", "native": "From which platform does the train leave?", "phonetic": "Vanaf welk spoor ver-trekt de trine?" },
-        { "id": "s2_14_3", "target": "Ik heb mijn vlucht gemist.", "native": "I missed my flight.", "phonetic": "Ik heb myne vlucht ge-mist." },
-        { "id": "s2_14_4", "target": "Waar kan ik inchecken?", "native": "Where can I check in?", "phonetic": "Waar kan ik in-check-en?" }
+        { "id": "s2_7_1", "target": "Een kaartje naar Den Haag, alstublieft.", "native": "A ticket to The Hague, please.", "phonetic": "Un kaart-ye naar Den Haag, al-stu-bleeft." },
+        { "id": "s2_7_2", "target": "Hoe laat vertrekt het vliegtuig?", "native": "What time does the plane leave?", "phonetic": "Hoe laat ver-trekt het vlieg-tuig?" },
+        { "id": "s2_7_3", "target": "Is dit de juiste bushalte?", "native": "Is this the right bus stop?", "phonetic": "Is dit de yuis-te bus-hal-te?" },
+        { "id": "s2_7_4", "target": "Waar is de bagageafhandeling?", "native": "Where is the baggage claim?", "phonetic": "Waar is de ba-gaa-zje-af-han-de-ling?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_14_1", "context": "Buying a train ticket.",
-          "lines": [
-            { "speaker": "A", "target": "Goedemorgen. Eén kaartje naar Den Haag, alstublieft.", "native": "Good morning. One ticket to The Hague, please.", "phonetic": "Goo-de-mor-gen. Ayn kaart-ye naar Den Haag, al-stu-bleeft." },
-            { "speaker": "B", "target": "Enkele reis of retour?", "native": "Single trip or return?", "phonetic": "En-ke-le rice of re-toor?" }
-          ]
-        },
-        {
-          "id": "d2_14_2", "context": "Asking for the right bus.",
-          "lines": [
-            { "speaker": "A", "target": "Pardon, gaat deze bus naar het centraal station?", "native": "Excuse me, does this bus go to the central station?", "phonetic": "Par-don, gaat day-ze bus naar het sen-traal sta-shon?" },
-            { "speaker": "B", "target": "Nee, u moet bus 22 hebben.", "native": "No, you need to have bus 22.", "phonetic": "Nay, u moot bus tway-en-twin-tig heb-ben." }
-          ]
-        },
-        {
-          "id": "d2_14_3", "context": "At the airport check-in counter.",
-          "lines": [
-            { "speaker": "A", "target": "Ik wil graag inchecken voor de vlucht naar Londen.", "native": "I would like to check in for the flight to London.", "phonetic": "Ik wil graag in-check-en voor de vlucht naar London." },
-            { "speaker": "B", "target": "Mag ik uw paspoort zien?", "native": "May I see your passport?", "phonetic": "Mag ik uw pas-poort zeen?" }
-          ]
-        },
-        {
-          "id": "d2_14_4", "context": "In a taxi to the airport.",
-          "lines": [
-            { "speaker": "A", "target": "Naar het vliegveld Schiphol, alstublieft.", "native": "To Schiphol airport, please.", "phonetic": "Naar het fleech-veld Schip-hol, al-stu-bleeft." },
-            { "speaker": "B", "target": "Oké, geen probleem.", "native": "Okay, no problem.", "phonetic": "Okay, geen pro-bleem." }
-          ]
-        }
+        { "id": "d2_7_1", "context": "Buying a train ticket", "lines": [
+            { "speaker": "A", "target": "Goedemorgen. Een enkeltje naar Leiden, alstublieft.", "native": "Good morning. A single ticket to Leiden, please.", "phonetic": "Goo-de-mor-gen. Un en-kel-tye naar Ly-den, al-stu-bleeft." },
+            { "speaker": "B", "target": "Dat is dan acht euro vijftig.", "native": "That will be eight euros fifty.", "phonetic": "Dat is dan acht eu-ro vyf-tig." }
+        ]},
+        { "id": "d2_7_2", "context": "At the airport check-in", "lines": [
+            { "speaker": "A", "target": "Hier is mijn paspoort. Ik heb één koffer om in te checken.", "native": "Here is my passport. I have one suitcase to check in.", "phonetic": "Heer is mijn pas-poort. Ik heb ayn kof-fer om in te chek-ken." },
+            { "speaker": "B", "target": "Dank u. Plaats uw koffer op de band.", "native": "Thank you. Place your suitcase on the belt.", "phonetic": "Dank u. Plaats uw kof-fer op de band." }
+        ]},
+        { "id": "d2_7_3", "context": "Getting a taxi", "lines": [
+            { "speaker": "A", "target": "Is deze taxi vrij?", "native": "Is this taxi free?", "phonetic": "Is day-ze tax-i vry?" },
+            { "speaker": "B", "target": "Jazeker, stapt u maar in. Waar gaat de reis naartoe?", "native": "Certainly, please get in. Where are you travelling to?", "phonetic": "Ya-zay-ker, stapt u maar in. Waar gaat de rice naar-too?" }
+        ]},
+        { "id": "d2_7_4", "context": "On the bus", "lines": [
+            { "speaker": "A", "target": "Stopt deze bus bij het centraal station?", "native": "Does this bus stop at the central station?", "phonetic": "Stopt day-ze bus by het sen-traal sta-shon?" },
+            { "speaker": "B", "target": "Ja, dat is de eindhalte.", "native": "Yes, that is the final stop.", "phonetic": "Ja, dat is de eind-hal-te." }
+        ]}
       ],
       "exercises": {
-        "sentenceScramble": [{ "id": "ss2_14_1", "scrambled": ["ik", "de", "neem", "trein"], "correct": "Ik neem de trein", "nativeHint": "I take the train" }]
+        "sentenceScramble": [
+          { "id": "ss2_7_1", "scrambled": ["ik", "nemen", "moet", "welke", "bus"], "correct": "Welke bus moet ik nemen", "nativeHint": "Which bus should I take?" }
+        ],
+        "fillBlanks": [
+          { "id": "fb2_7_1", "sentence": "Vergeet je ___ niet.", "answer": "paspoort", "hint": "Don't forget your passport." }
+        ],
+        "matching": [
+          { "id": "m2_7_1", "target": "De koffer", "native": "The suitcase" },
+          { "id": "m2_7_2", "target": "Het kaartje", "native": "The ticket" }
+        ]
       },
-      "cultural_note": "The OV-chipkaart is a rechargeable smart card for all public transport in the Netherlands. It's very convenient if you plan to travel frequently.",
-      "pronunciation_tip": "The 'ei' in 'reizen' and 'trein' has the same sound as 'ij', like the 'ay' in 'my'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D14-Travel" }
+      "cultural_note": "The OV-chipkaart is a rechargeable card used for all public transport in the Netherlands (train, bus, tram, metro). It's much more convenient than buying single tickets.",
+      "pronunciation_tip": "The 'ei' in 'trein' and 'reizen' sounds very similar to the 'ij' in 'mijn'. It's like the 'i' in the English word 'light'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D7-Travel" }
     }
   ]
 }
-
-    

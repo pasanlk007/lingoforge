@@ -7,1325 +7,401 @@
     {
       "week": 2,
       "day": 1,
-      "title": "Week 2 Day 1: Office Vocabulary",
-      "title_native": "Office Vocabulary",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 1: मदद मांगना",
+      "title_native": "Week 2, Dag 1: Hulp vragen",
+      "theme": "Asking for Help",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_1_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_1_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_1_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_1_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_1_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_1_1", "target": "Help", "phonetic": "हेल्प", "native_meaning": "मदद", "english": "Help", "example_sentence_target": "Help! Ik ben verdwaald.", "example_sentence_native": "मदद! मैं खो गया हूँ।", "example_sentence_phonetic": "हेल्प! इक बेन वर-ड्वाल्ड।" },
+        { "id": "w2_1_2", "target": "Kunt u mij helpen?", "phonetic": "कुंट उ माइ हेल्पेन?", "native_meaning": "क्या आप मेरी मदद कर सकते हैं?", "english": "Can you help me?", "example_sentence_target": "Pardon, kunt u mij helpen?", "example_sentence_native": "माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?", "example_sentence_phonetic": "पार-दोन, कुंट उ माइ हेल्पेन?" },
+        { "id": "w2_1_3", "target": "Ik begrijp het niet", "phonetic": "इक बे-ग्रैप हेत नीत", "native_meaning": "मैं समझा नहीं", "english": "I don't understand", "example_sentence_target": "Sorry, ik begrijp het niet.", "example_sentence_native": "माफ़ कीजिए, मैं समझा नहीं।", "example_sentence_phonetic": "सॉरी, इक बे-ग्रैप हेत नीत।" },
+        { "id": "w2_1_4", "target": "Spreekt u Engels?", "phonetic": "स्प्रेक्ट उ एंगेल्स?", "native_meaning": "क्या आप अंग्रेज़ी बोलते हैं?", "english": "Do you speak English?", "example_sentence_target": "Hallo, spreekt u Engels?", "example_sentence_native": "नमस्ते, क्या आप अंग्रेज़ी बोलते हैं?", "example_sentence_phonetic": "हालो, स्प्रेक्ट उ एंगेल्स?" },
+        { "id": "w2_1_5", "target": "Noodgeval", "phonetic": "नोद-गे-वाल", "native_meaning": "आपातकाल", "english": "Emergency", "example_sentence_target": "Dit is een noodgeval.", "example_sentence_native": "यह एक आपातकाल है।", "example_sentence_phonetic": "दित इस एन नोद-गे-वाल।" },
+        { "id": "w2_1_6", "target": "Ik heb hulp nodig", "phonetic": "इक हेब हुल्प नो-दिग", "native_meaning": "मुझे मदद चाहिए", "english": "I need help", "example_sentence_target": "Ik heb nu hulp nodig.", "example_sentence_native": "मुझे अभी मदद चाहिए।", "example_sentence_phonetic": "इक हेब नु हुल्प नो-दिग।" }
+      ],
+      "sentences": [
+        { "id": "s2_1_1", "target": "Waar is het toilet?", "native": "शौचालय कहाँ है?", "phonetic": "वार इस हेत टॉय-लेट?" },
+        { "id": "s2_1_2", "target": "Ik ben mijn portemonnee kwijt.", "native": "मेरा बटुआ खो गया है।", "phonetic": "इक बेन माइन पोर-ते-मो-ने क्वैत।" },
+        { "id": "s2_1_3", "target": "Kunt u dat herhalen, alstublieft?", "native": "क्या आप उसे दोहरा सकते हैं, कृपया?", "phonetic": "कुंट उ दात हेर-हा-लेन, अल-स्तु-ब्लीफ्त?" },
+        { "id": "s2_1_4", "target": "Bel de politie!", "native": "पुलिस को बुलाओ!", "phonetic": "बेल दे पो-ली-त्सी!" }
       ],
       "dialogues": [
-        {
-          "id": "d2_1_1",
-          "context": "Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_1_2",
-          "context": "Formal Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_1_1", "context": "शहर में खो जाना", "lines": [
+            { "speaker": "A", "target": "Pardon, kunt u mij helpen? Ik ben verdwaald.", "native": "माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं? मैं खो गया हूँ।", "phonetic": "पार-दोन, कुंट उ माइ हेल्पेन? इक बेन वर-ड्वाल्ड।" },
+            { "speaker": "B", "target": "Natuurlijk. Waar moet u naartoe?", "native": "ज़रूर। आपको कहाँ जाना है?", "phonetic": "ना-तुर-लेक। वार मूत उ नार-तू?" }
+        ]},
+        { "id": "d2_1_2", "context": "एक दुकान पर, समझ न आना", "lines": [
+            { "speaker": "A", "target": "Sorry, ik begrijp het niet. Spreekt u Engels?", "native": "माफ़ कीजिए, मैं समझा नहीं। क्या आप अंग्रेज़ी बोलते हैं?", "phonetic": "सॉरी, इक बे-ग्रैप हेत नीत। स्प्रेक्ट उ एंगेल्स?" },
+            { "speaker": "B", "target": "Een klein beetje. Wat zoekt u?", "native": "थोड़ी सी। आप क्या ढूंढ रहे हैं?", "phonetic": "एन क्लाइन बे-चे। वात सूक्त उ?" }
+        ]},
+        { "id": "d2_1_3", "context": "तत्काल मदद की आवश्यकता", "lines": [
+            { "speaker": "A", "target": "Help! Ik heb hulp nodig!", "native": "मदद! मुझे मदद चाहिए!", "phonetic": "हेल्प! इक हेब हुल्प नो-दिग!" },
+            { "speaker": "B", "target": "Wat is er aan de hand? Is het een noodgeval?", "native": "क्या हुआ? क्या यह आपातकाल है?", "phonetic": "वात इस एर आन दे हान्द? इस हेत एन नोद-गे-वाल?" }
+        ]},
+        { "id": "d2_1_4", "context": "दोहराने के लिए पूछना", "lines": [
+            { "speaker": "A", "target": "Kunt u dat langzamer zeggen?", "native": "क्या आप उसे धीरे बोल सकते हैं?", "phonetic": "कुंट उ दात लांग-जा-मेर सेग्गेन?" },
+            { "speaker": "B", "target": "Ja, natuurlijk. De trein vertrekt om tien uur.", "native": "हाँ, ज़रूर। ट्रेन दस बजे निकलती है।", "phonetic": "या, ना-तुर-लेक। दे ट्रैन वेर-ट्रेक्ट ओम तीन ऊर।" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_1_1", "scrambled": ["u", "helpen", "kunt", "mij"], "correct": "Kunt u mij helpen", "nativeHint": "क्या आप मेरी मदद कर सकते हैं?" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_1_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_1_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_1_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_1_1", "sentence": "Ik ___ het niet.", "answer": "begrijp", "hint": "मैं समझा नहीं।" }
         ],
         "matching": [
-          {
-            "id": "m2_1_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_1_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_1_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_1_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_1_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_1_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_1_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_1_1", "target": "Help", "native": "मदद" },
+          { "id": "m2_1_2", "target": "Noodgeval", "native": "आपातकाल" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D1"
-      }
+      "cultural_note": "डच लोग आम तौर पर सीधे होते हैं और मदद करने को तैयार रहते हैं, लेकिन 'Pardon' (माफ़ कीजिए) से शुरू करना हमेशा विनम्र होता है।",
+      "pronunciation_tip": "'begrijp' में 'g' की ध्वनि गले के पिछले हिस्से से निकलने वाली एक नरम, ख़राश वाली ध्वनि है, जो अंग्रेज़ी बोलने वालों के लिए मुश्किल हो सकती है।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D1-Help" }
     },
     {
       "week": 2,
       "day": 2,
-      "title": "Week 2 Day 2: Work Phrases",
-      "title_native": "Work Phrases",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 2: प्रश्न समझना",
+      "title_native": "Week 2, Dag 2: Vragen begrijpen",
+      "theme": "Understanding Questions",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_2_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_2_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_2_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_2_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_2_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_2_1", "target": "Wie", "phonetic": "वी", "native_meaning": "कौन", "english": "Who", "example_sentence_target": "Wie is dat?", "example_sentence_native": "वह कौन है?", "example_sentence_phonetic": "वी इस दात?" },
+        { "id": "w2_2_2", "target": "Wat", "phonetic": "वात", "native_meaning": "क्या", "english": "What", "example_sentence_target": "Wat is uw naam?", "example_sentence_native": "आपका नाम क्या है?", "example_sentence_phonetic": "वात इस उव नाम?" },
+        { "id": "w2_2_3", "target": "Waar", "phonetic": "वार", "native_meaning": "कहाँ", "english": "Where", "example_sentence_target": "Waar is het station?", "example_sentence_native": "स्टेशन कहाँ है?", "example_sentence_phonetic": "वार इस हेत स्टा-शोन?" },
+        { "id": "w2_2_4", "target": "Wanneer", "phonetic": "वान-नीर", "native_meaning": "कब", "english": "When", "example_sentence_target": "Wanneer vertrekt de bus?", "example_sentence_native": "बस कब निकलती है?", "example_sentence_phonetic": "वान-नीर वेर-ट्रेक्ट दे बुस?" },
+        { "id": "w2_2_5", "target": "Waarom", "phonetic": "वा-रोम", "native_meaning": "क्यों", "english": "Why", "example_sentence_target": "Waarom is de winkel gesloten?", "example_sentence_native": "दुकान क्यों बंद है?", "example_sentence_phonetic": "वा-रोम इस दे विंकेल गे-स्लो-तेन?" },
+        { "id": "w2_2_6", "target": "Hoe", "phonetic": "हू", "native_meaning": "कैसे", "english": "How", "example_sentence_target": "Hoe kom ik bij het museum?", "example_sentence_native": "मैं संग्रहालय कैसे पहुँच सकता हूँ?", "example_sentence_phonetic": "हू कोम इक बाइ हेत मु-से-उम?" }
+      ],
+      "sentences": [
+        { "id": "s2_2_1", "target": "Hoeveel kost dit?", "native": "यह कितने का है?", "phonetic": "हू-वेल कोस्त दित?" },
+        { "id": "s2_2_2", "target": "Welke bus gaat naar het centrum?", "native": "शहर के केंद्र में कौन सी बस जाती है?", "phonetic": "वेल्के बुस गात नार हेत सेन-त्रुम?" },
+        { "id": "s2_2_3", "target": "Wat raadt u aan?", "native": "आप क्या सलाह देते हैं?", "phonetic": "वात रादत उ आन?" },
+        { "id": "s2_2_4", "target": "Waar kan ik een kaartje kopen?", "native": "मैं टिकट कहाँ से खरीद सकता हूँ?", "phonetic": "वार कान इक एन कार-चे को-पेन?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_2_1",
-          "context": "Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_2_2",
-          "context": "Formal Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_2_1", "context": "एक पर्यटक सूचना डेस्क पर", "lines": [
+            { "speaker": "A", "target": "Hallo, waar kan ik een stadskaart vinden?", "native": "नमस्ते, मुझे शहर का नक्शा कहाँ मिल सकता है?", "phonetic": "हालो, वार कान इक एन स्टाड्स-कार्त विन्देन?" },
+            { "speaker": "B", "target": "Die liggen daar op de balie.", "native": "वे वहाँ काउंटर पर हैं।", "phonetic": "दी लिग्गेन दार ओप दे बा-ली।" }
+        ]},
+        { "id": "d2_2_2", "context": "समय के बारे में पूछना", "lines": [
+            { "speaker": "A", "target": "Pardon, wanneer sluit het museum?", "native": "माफ़ कीजिए, संग्रहालय कब बंद होता है?", "phonetic": "पार-दोन, वान-नीर स्लाउत हेत मु-से-उम?" },
+            { "speaker": "B", "target": "Om vijf uur.", "native": "पाँच बजे।", "phonetic": "ओम वैफ ऊर।" }
+        ]},
+        { "id": "d2_2_3", "context": "एक रेस्तरां में", "lines": [
+            { "speaker": "A", "target": "Wat is de soep van de dag?", "native": "आज का सूप क्या है?", "phonetic": "वात इस दे सूप वान दे दाग?" },
+            { "speaker": "B", "target": "Vandaag hebben we tomatensoep.", "native": "आज हमारे पास टमाटर का सूप है।", "phonetic": "वान-दाग हेब्बेन वे तो-मा-तेन-सूप।" }
+        ]},
+        { "id": "d2_2_4", "context": "सामान्य प्रश्न", "lines": [
+            { "speaker": "A", "target": "Wie is de manager?", "native": "प्रबंधक कौन है?", "phonetic": "वी इस दे मै-ने-जर?" },
+            { "speaker": "B", "target": "Dat is mevrouw Jansen.", "native": "वह श्रीमती जानसेन हैं।", "phonetic": "दात इस मे-व्राउ यान-सेन।" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_2_1", "scrambled": ["is", "uw", "naam", "wat"], "correct": "Wat is uw naam", "nativeHint": "आपका नाम क्या है?" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_2_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_2_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_2_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_2_1", "sentence": "___ is het station?", "answer": "Waar", "hint": "स्टेशन कहाँ है?" }
         ],
         "matching": [
-          {
-            "id": "m2_2_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_2_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_2_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_2_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_2_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_2_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_2_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_2_1", "target": "Wanneer", "native": "कब" },
+          { "id": "m2_2_2", "target": "Hoeveel", "native": "कितना" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D2"
-      }
+      "cultural_note": "डच में, प्रश्नवाचक शब्द (Wie, Wat, Waar, आदि) लगभग हमेशा वाक्य की शुरुआत में आते हैं।",
+      "pronunciation_tip": "'Wat' और 'Waar' जैसे डच प्रश्न शब्दों में 'W' का उच्चारण अंग्रेज़ी 'V' की तरह होता है।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D2-Questions" }
     },
     {
       "week": 2,
       "day": 3,
-      "title": "Week 2 Day 3: Email & Phone",
-      "title_native": "Email & Phone",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 3: सरल जानकारी देना",
+      "title_native": "Week 2, Dag 3: Eenvoudige informatie geven",
+      "theme": "Giving Simple Information",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_3_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_3_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_3_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_3_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_3_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_3_1", "target": "Ja", "phonetic": "या", "native_meaning": "हाँ", "english": "Yes", "example_sentence_target": "Ja, dat klopt.", "example_sentence_native": "हाँ, यह सही है।", "example_sentence_phonetic": "या, दात क्लोप्त।" },
+        { "id": "w2_3_2", "target": "Nee", "phonetic": "ने", "native_meaning": "नहीं", "english": "No", "example_sentence_target": "Nee, dat is niet correct.", "example_sentence_native": "नहीं, यह सही नहीं है।", "example_sentence_phonetic": "ने, दात इस नीत कोर-रेक्ट।" },
+        { "id": "w2_3_3", "target": "Misschien", "phonetic": "मिस-खीन", "native_meaning": "शायद", "english": "Maybe", "example_sentence_target": "Misschien kom ik later.", "example_sentence_native": "शायद मैं बाद में आऊँगा।", "example_sentence_phonetic": "मिस-खीन कोम इक ला-तेर।" },
+        { "id": "w2_3_4", "target": "Ik weet het niet", "phonetic": "इक वेत हेत नीत", "native_meaning": "मुझे नहीं पता", "english": "I don't know", "example_sentence_target": "Ik weet het antwoord niet.", "example_sentence_native": "मुझे जवाब नहीं पता।", "example_sentence_phonetic": "इक वेत हेत आंत-वोर्द नीत।" },
+        { "id": "w2_3_5", "target": "Hier", "phonetic": "हीर", "native_meaning": "यहाँ", "english": "Here", "example_sentence_target": "Het is hier.", "example_sentence_native": "यह यहाँ है।", "example_sentence_phonetic": "हेत इस हीर।" },
+        { "id": "w2_3_6", "target": "Daar", "phonetic": "दार", "native_meaning": "वहाँ", "english": "There", "example_sentence_target": "De bushalte is daar.", "example_sentence_native": "बस स्टॉप वहाँ है।", "example_sentence_phonetic": "दे बुस-हाल्ते इस दार।" }
+      ],
+      "sentences": [
+        { "id": "s2_3_1", "target": "Mijn naam is...", "native": "मेरा नाम है...", "phonetic": "माइन नाम इस..." },
+        { "id": "s2_3_2", "target": "Ik kom uit...", "native": "मैं ... से हूँ।", "phonetic": "इक कोम आउत..." },
+        { "id": "s2_3_3", "target": "Dat is goed.", "native": "यह अच्छा है।", "phonetic": "दात इस खूद।" },
+        { "id": "s2_3_4", "target": "Het spijt me.", "native": "मुझे खेद है।", "phonetic": "हेत स्पैत मे।" }
       ],
       "dialogues": [
-        {
-          "id": "d2_3_1",
-          "context": "Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_3_2",
-          "context": "Formal Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_3_1", "context": "एक सरल प्रश्न का उत्तर देना", "lines": [
+            { "speaker": "A", "target": "Is dit de trein naar Amsterdam?", "native": "क्या यह एम्स्टर्डम जाने वाली ट्रेन है?", "phonetic": "इस दित दे ट्रैन नार आम्स-तेर-दाम?" },
+            { "speaker": "B", "target": "Ja, dat klopt.", "native": "हाँ, यह सही है।", "phonetic": "या, दात क्लोप्त।" }
+        ]},
+        { "id": "d2_3_2", "context": "एक प्रस्ताव को अस्वीकार करना", "lines": [
+            { "speaker": "A", "target": "Wilt u een tasje?", "native": "क्या आप एक बैग चाहते हैं?", "phonetic": "विल्त उ एन ताश-चे?" },
+            { "speaker": "B", "target": "Nee, dank u.", "native": "नहीं, धन्यवाद।", "phonetic": "ने, दांक उ।" }
+        ]},
+        { "id": "d2_3_3", "context": "अपना परिचय देना", "lines": [
+            { "speaker": "A", "target": "Hallo, ik ben Anna. Wat is uw naam?", "native": "नमस्ते, मैं अन्ना हूँ। आपका नाम क्या है?", "phonetic": "हालो, इक बेन आन्ना। वात इस उव नाम?" },
+            { "speaker": "B", "target": "Mijn naam is Mark. Aangenaam.", "native": "मेरा नाम मार्क है। आपसे मिलकर अच्छा लगा।", "phonetic": "माइन नाम इस मार्क। आन-गे-नाम।" }
+        ]},
+        { "id": "d2_3_4", "context": "उत्तर के बारे में अनिश्चित होना", "lines": [
+            { "speaker": "A", "target": "Weet u hoe laat het is?", "native": "क्या आप जानते हैं कि क्या समय हुआ है?", "phonetic": "वेत उ हू लात हेत इस?" },
+            { "speaker": "B", "target": "Sorry, ik weet het niet.", "native": "माफ़ कीजिए, मुझे नहीं पता।", "phonetic": "सॉरी, इक वेत हेत नीत।" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_3_1", "scrambled": ["het", "weet", "niet", "ik"], "correct": "Ik weet het niet", "nativeHint": "मुझे नहीं पता" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_3_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_3_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_3_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_3_1", "sentence": "___, dat klopt.", "answer": "Ja", "hint": "हाँ, यह सही है।" }
         ],
         "matching": [
-          {
-            "id": "m2_3_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_3_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_3_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_3_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_3_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_3_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_3_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_3_1", "target": "Hier", "native": "यहाँ" },
+          { "id": "m2_3_2", "target": "Daar", "native": "वहाँ" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D3"
-      }
+      "cultural_note": "'U' औपचारिक 'आप' है, जबकि 'je' अनौपचारिक 'तुम' है। संदेह होने पर, विशेष रूप से बड़े लोगों के साथ या औपचारिक सेटिंग्स में, 'u' का उपयोग करें।",
+      "pronunciation_tip": "'Nee' में 'ee' एक लंबी स्वर ध्वनि है, जो अंग्रेज़ी के 'say' शब्द में 'ay' की तरह है।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D3-Info" }
     },
     {
       "week": 2,
       "day": 4,
-      "title": "Week 2 Day 4: Meetings",
-      "title_native": "Meetings",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 4: स्थान के लिए पूछना",
+      "title_native": "Week 2, Dag 4: Vragen naar de locatie",
+      "theme": "Asking for Location",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_4_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_4_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_4_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_4_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_4_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_4_1", "target": "Links", "phonetic": "लिंक्स", "native_meaning": "बाएँ", "english": "Left", "example_sentence_target": "Sla linksaf.", "example_sentence_native": "बाएँ मुड़ें।", "example_sentence_phonetic": "स्ला लिंक्स-आफ।" },
+        { "id": "w2_4_2", "target": "Rechts", "phonetic": "रेख्त्स", "native_meaning": "दाएँ", "english": "Right", "example_sentence_target": "Het is aan de rechterkant.", "example_sentence_native": "यह दाईं ओर है।", "example_sentence_phonetic": "हेत इस आन दे रेख्तेर-कांत।" },
+        { "id": "w2_4_3", "target": "Rechtdoor", "phonetic": "रेख़्त-दूर", "native_meaning": "सीधे आगे", "english": "Straight ahead", "example_sentence_target": "Ga rechtdoor.", "example_sentence_native": "सीधे आगे बढ़ो।", "example_sentence_phonetic": "गा रेख़्त-दूर।" },
+        { "id": "w2_4_4", "target": "Dichtbij", "phonetic": "दिख्त-बाइ", "native_meaning": "पास", "english": "Near", "example_sentence_target": "Is er een supermarkt dichtbij?", "example_sentence_native": "क्या पास में कोई सुपरमार्केट है?", "example_sentence_phonetic": "इस एर एन सुपर-मार्क्त दिख्त-बाइ?" },
+        { "id": "w2_4_5", "target": "Ver weg", "phonetic": "फेर वेख़", "native_meaning": "दूर", "english": "Far away", "example_sentence_target": "Het vliegveld is ver weg.", "example_sentence_native": "हवाई अड्डा बहुत दूर है।", "example_sentence_phonetic": "हेत व्लीग-वेल्द इस फेर वेख़।" },
+        { "id": "w2_4_6", "target": "Naast", "phonetic": "नास्त", "native_meaning": "बगल में", "english": "Next to", "example_sentence_target": "De bank is naast de apotheek.", "example_sentence_native": "बैंक फार्मेसी के बगल में है।", "example_sentence_phonetic": "दे बांक इस नास्त दे आपो-थेक।" }
+      ],
+      "sentences": [
+        { "id": "s2_4_1", "target": "Waar is de dichtstbijzijnde geldautomaat?", "native": "सबसे नज़दीकी एटीएम कहाँ है?", "phonetic": "वार इस दे दिख्त-स्त-बाइ-ज़ाइन्-दे गेल्द-औतो-मात?" },
+        { "id": "s2_4_2", "target": "Hoe ver is het naar het hotel?", "native": "होटल कितनी दूर है?", "phonetic": "हू फेर इस हेत नार हेत हो-टेल?" },
+        { "id": "s2_4_3", "target": "Is het aan de linkerkant of rechterkant?", "native": "क्या यह बाईं ओर है या दाईं ओर?", "phonetic": "इस हेत आन दे लिंकर-कांत ओफ रेख्तेर-कांत?" },
+        { "id": "s2_4_4", "target": "Kunt u het op de kaart aanwijzen?", "native": "क्या आप इसे नक्शे पर दिखा सकते हैं?", "phonetic": "कुंत उ हेत ओप दे कार्त आन-वाइ-ज़ेन?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_4_1",
-          "context": "Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_4_2",
-          "context": "Formal Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_4_1", "context": "सड़क पर दिशा-निर्देश पूछना", "lines": [
+            { "speaker": "A", "target": "Pardon, waar is de supermarkt?", "native": "माफ़ कीजिए, सुपरमार्केट कहाँ है?", "phonetic": "पार-दोन, वार इस दे सुपर-मार्क्त?" },
+            { "speaker": "B", "target": "Ga hier rechtdoor en dan de tweede straat links.", "native": "यहाँ से सीधे जाएँ और फिर दूसरी गली से बाएँ मुड़ें।", "phonetic": "गा हीर रेख़्त-दूर एन दान दे ट्वे-दे स्त्रोत लिंक्स।" }
+        ]},
+        { "id": "d2_4_2", "context": "स्थान की पुष्टि करना", "lines": [
+            { "speaker": "A", "target": "Is het postkantoor dichtbij?", "native": "क्या डाकघर पास है?", "phonetic": "इस हेत पोस्त-कान-तोर दिख्त-बाइ?" },
+            { "speaker": "B", "target": "Ja, het is naast de bakker.", "native": "हाँ, यह बेकरी के बगल में है।", "phonetic": "या, हेत इस नास्त दे बाक्कर।" }
+        ]},
+        { "id": "d2_4_3", "context": "खो जाने पर मदद मांगना", "lines": [
+            { "speaker": "A", "target": "Ik zoek het Rijksmuseum. Is het ver weg?", "native": "मैं रिज्क्सम्यूजियम ढूंढ रहा हूँ। क्या यह बहुत दूर है?", "phonetic": "इक सूक हेत रैक्स-मु-से-उम। इस हेत फेर वेख़?" },
+            { "speaker": "B", "target": "Nee, het is ongeveer tien minuten lopen. Ga rechtdoor.", "native": "नहीं, यह लगभग दस मिनट की पैदल दूरी पर है। सीधे आगे बढ़ो।", "phonetic": "ने, हेत इस ओन-गे-वीर तीन मि-नू-तेन लो-पेन। गा रेख़्त-दूर।" }
+        ]},
+        { "id": "d2_4_4", "context": "एक टैक्सी में", "lines": [
+            { "speaker": "A", "target": "Kunt u mij naar dit adres brengen, alstublieft?", "native": "क्या आप मुझे इस पते पर ले जा सकते हैं, कृपया?", "phonetic": "कुंत उ माइ नार दित आ-द्रेस ब्रेन-गेन, अल-स्तु-ब्लीफ्त?" },
+            { "speaker": "B", "target": "Zeker. We zijn er zo.", "native": "ज़रूर। हम जल्द ही वहाँ होंगे।", "phonetic": "ज़े-केर। वे ज़ैन एर ज़ो।" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_4_1", "scrambled": ["linksaf", "de", "straat", "eerste"], "correct": "de eerste straat linksaf", "nativeHint": "पहली गली बाएँ" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_4_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_4_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_4_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_4_1", "sentence": "Ga hier ___ en dan rechts.", "answer": "rechtdoor", "hint": "यहाँ से सीधे जाएँ और फिर दाएँ मुड़ें।" }
         ],
         "matching": [
-          {
-            "id": "m2_4_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_4_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_4_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_4_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_4_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_4_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_4_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_4_1", "target": "Dichtbij", "native": "पास" },
+          { "id": "m2_4_2", "target": "Ver weg", "native": "दूर" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D4"
-      }
+      "cultural_note": "नीदरलैंड में साइकिल चालकों को रास्ते का अधिकार है। सड़क पार करने या मुड़ने से पहले हमेशा बाइक पथ की जाँच करें।",
+      "pronunciation_tip": "'rechtdoor' में 'ui' ध्वनि अंग्रेज़ी में मौजूद नहीं है। यह 'u' और 'i' ध्वनि का संयोजन है।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D4-Location" }
     },
     {
       "week": 2,
       "day": 5,
-      "title": "Week 2 Day 5: Job Titles",
-      "title_native": "Job Titles",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 5: दिशा-निर्देश",
+      "title_native": "Week 2, Dag 5: De weg wijzen",
+      "theme": "Directions",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_5_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_5_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_5_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_5_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_5_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_5_1", "target": "De straat", "phonetic": "दे स्त्रोत", "native_meaning": "गली", "english": "The street", "example_sentence_target": "Wat is de naam van deze straat?", "example_sentence_native": "इस गली का नाम क्या है?", "example_sentence_phonetic": "वात इस दे नाम वान दे-ज़े स्त्रोत?" },
+        { "id": "w2_5_2", "target": "De hoek", "phonetic": "दे हूक", "native_meaning": "कोना", "english": "The corner", "example_sentence_target": "Het is op de hoek.", "example_sentence_native": "यह कोने पर है।", "example_sentence_phonetic": "हेत इस ओप दे हूक।" },
+        { "id": "w2_5_3", "target": "Het stoplicht", "phonetic": "हेत स्टॉप-लिख्त", "native_meaning": "यातायात बत्ती", "english": "The traffic light", "example_sentence_target": "Wacht bij het stoplicht.", "example_sentence_native": "यातायात बत्ती पर प्रतीक्षा करें।", "example_sentence_phonetic": "वाख्त बाइ हेत स्टॉप-लिख्त।" },
+        { "id": "w2_5_4", "target": "Oversteken", "phonetic": "ओ-वेर-स्टे-केन", "native_meaning": "पार करना", "english": "To cross", "example_sentence_target": "Je moet hier oversteken.", "example_sentence_native": "आपको यहाँ पार करना होगा।", "example_sentence_phonetic": "ये मूत हीर ओ-वेर-स्टे-केन।" },
+        { "id": "w2_5_5", "target": "De brug", "phonetic": "दे ब्रुख़", "native_meaning": "पुल", "english": "The bridge", "example_sentence_target": "Loop over de brug.", "example_sentence_native": "पुल के ऊपर से चलो।", "example_sentence_phonetic": "लोप ओ-वेर दे ब्रुख़।" },
+        { "id": "w2_5_6", "target": "Het plein", "phonetic": "हेत प्लैन", "native_meaning": "चौक", "english": "The square", "example_sentence_target": "Het restaurant is op het plein.", "example_sentence_native": "रेस्तरां चौक पर है।", "example_sentence_phonetic": "हेत रेस-तौ-रांत इस ओप हेत प्लैन।" }
+      ],
+      "sentences": [
+        { "id": "s2_5_1", "target": "Neem de eerste straat rechts.", "native": "पहली गली से दाएँ मुड़ें।", "phonetic": "नेम दे एर-स्टे स्त्रोत रेख्त्स।" },
+        { "id": "s2_5_2", "target": "Het is tegenover het park.", "native": "यह पार्क के सामने है।", "phonetic": "हेत इस ते-गेन-ओ-वेर हेत पार्क।" },
+        { "id": "s2_5_3", "target": "Blijf deze weg volgen.", "native": "इस सड़क पर चलते रहें।", "phonetic": "ब्लैफ़ दे-ज़े वेख़ फोल्-गेन।" },
+        { "id": "s2_5_4", "target": "U kunt het niet missen.", "native": "आप इसे चूक नहीं सकते।", "phonetic": "उ कुंत हेत नीत मिस-सेन।" }
       ],
       "dialogues": [
-        {
-          "id": "d2_5_1",
-          "context": "Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_5_2",
-          "context": "Formal Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_5_1", "context": "एक स्थानीय से दिशा-निर्देश प्राप्त करना", "lines": [
+            { "speaker": "A", "target": "Pardon, hoe kom ik bij de bibliotheek?", "native": "माफ़ कीजिए, मैं पुस्तकालय कैसे पहुँच सकता हूँ?", "phonetic": "पार-दोन, हू कोम इक बाइ दे बिब-लियो-थेक?" },
+            { "speaker": "B", "target": "Ga rechtdoor tot het stoplicht, en sla dan rechtsaf. Het is op de hoek.", "native": "यातायात बत्ती तक सीधे जाएँ, और फिर दाएँ मुड़ें। यह कोने पर है।", "phonetic": "गा रेख़्त-दूर तोत हेत स्टॉप-लिख्त, एन स्ला दान रेख्त्स-आफ। हेत इस ओप दे हूक।" }
+        ]},
+        { "id": "d2_5_2", "context": "दिशा-निर्देशों को स्पष्ट करना", "lines": [
+            { "speaker": "A", "target": "Dus na de brug moet ik links?", "native": "तो पुल के बाद, मुझे बाएँ मुड़ना चाहिए?", "phonetic": "दुस ना दे ब्रुख़ मूत इक लिंक्स?" },
+            { "speaker": "B", "target": "Nee, na de brug rechts.", "native": "नहीं, पुल के बाद, दाएँ।", "phonetic": "ने, ना दे ब्रुख़ रेख्त्स।" }
+        ]},
+        { "id": "d2_5_3", "context": "एक चौक के बारे में पूछना", "lines": [
+            { "speaker": "A", "target": "Waar is het Rembrandtplein?", "native": "रेम्ब्रांट चौक कहाँ है?", "phonetic": "वार इस हेत रेम-ब्रांत-प्लान?" },
+            { "speaker": "B", "target": "Volg deze straat. Het is aan het einde.", "native": "इस गली का अनुसरण करें। यह अंत में है।", "phonetic": "फोल्ख़ दे-ज़े स्त्रोत। हेत इस आन हेत आइन-दे।" }
+        ]},
+        { "id": "d2_5_4", "context": "एक ज़ेबरा क्रॉसिंग का उपयोग करना", "lines": [
+            { "speaker": "A", "target": "Moeten we hier oversteken?", "native": "क्या हमें यहाँ पार करना चाहिए?", "phonetic": "मू-तेन वे हीर ओ-वेर-स्टे-केन?" },
+            { "speaker": "B", "target": "Ja, bij het zebrapad.", "native": "हाँ, ज़ेबरा क्रॉसिंग पर।", "phonetic": "या, बाइ हेत ज़े-ब्रा-पाद।" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_5_1", "scrambled": ["op", "hoek", "de", "is", "het"], "correct": "Het is op de hoek", "nativeHint": "यह कोने पर है" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_5_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_5_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_5_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_5_1", "sentence": "Loop over de ___.", "answer": "brug", "hint": "पुल के ऊपर से चलो।" }
         ],
         "matching": [
-          {
-            "id": "m2_5_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_5_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_5_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_5_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_5_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_5_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_5_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_5_1", "target": "De straat", "native": "गली" },
+          { "id": "m2_5_2", "target": "Het stoplicht", "native": "यातायात बत्ती" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D5"
-      }
+      "cultural_note": "एम्स्टर्डम जैसे कई डच शहरों में कई नहरें और पुल हैं। वे नेविगेशन के लिए महत्वपूर्ण स्थल हैं।",
+      "pronunciation_tip": "'brug' में 'g' नरम और ख़राश वाला है। 'rechts' में 'ch' एक समान ध्वनि है, लेकिन तेज है।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D5-Directions" }
     },
     {
       "week": 2,
       "day": 6,
-      "title": "Week 2 Day 6: Working Hours",
-      "title_native": "Working Hours",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 6: सार्वजनिक स्थान",
+      "title_native": "Week 2, Dag 6: Openbare plaatsen",
+      "theme": "Public Places",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_6_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_6_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_6_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_6_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_6_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_6_1", "target": "Het station", "phonetic": "हेत स्टा-शोन", "native_meaning": "स्टेशन", "english": "The station", "example_sentence_target": "Waar is het treinstation?", "example_sentence_native": "ट्रेन स्टेशन कहाँ है?", "example_sentence_phonetic": "वार इस हेत ट्रैन-स्टा-शोन?" },
+        { "id": "w2_6_2", "target": "De luchthaven", "phonetic": "दे लुख़्त-हा-वेन", "native_meaning": "हवाई अड्डा", "english": "The airport", "example_sentence_target": "We moeten naar de luchthaven.", "example_sentence_native": "हमें हवाई अड्डे जाना है।", "example_sentence_phonetic": "वे मू-तेन नार दे लुख़्त-हा-वेन।" },
+        { "id": "w2_6_3", "target": "Het ziekenhuis", "phonetic": "हेत सी-केन-हाउस", "native_meaning": "अस्पताल", "english": "The hospital", "example_sentence_target": "Ik moet naar het ziekenhuis.", "example_sentence_native": "मुझे अस्पताल जाना है।", "example_sentence_phonetic": "इक मूत नार हेत सी-केन-हाउस।" },
+        { "id": "w2_6_4", "target": "De apotheek", "phonetic": "दे आपो-थेक", "native_meaning": "फार्मेसी", "english": "The pharmacy", "example_sentence_target": "Is er een apotheek in de buurt?", "example_sentence_native": "क्या आस-पास कोई फार्मेसी है?", "example_sentence_phonetic": "इस एर एन आपो-थेक इन दे बूर्त?" },
+        { "id": "w2_6_5", "target": "Het hotel", "phonetic": "हेत हो-टेल", "native_meaning": "होटल", "english": "The hotel", "example_sentence_target": "Ons hotel is in het centrum.", "example_sentence_native": "हमारा होटल केंद्र में है।", "example_sentence_phonetic": "ओन्स हो-टेल इस इन हेत सेन-त्रुम।" },
+        { "id": "w2_6_6", "target": "Het restaurant", "phonetic": "हेत रेस-तौ-रांत", "native_meaning": "रेस्तरां", "english": "The restaurant", "example_sentence_target": "Laten we naar een restaurant gaan.", "example_sentence_native": "चलो एक रेस्तरां में चलते हैं।", "example_sentence_phonetic": "ला-तेन वे नार एन रेस-तौ-रांत गान।" }
+      ],
+      "sentences": [
+        { "id": "s2_6_1", "target": "Waar is het politiebureau?", "native": "पुलिस स्टेशन कहाँ है?", "phonetic": "वार इस हेत पो-ली-त्सी-बु-रो?" },
+        { "id": "s2_6_2", "target": "Ik zoek een supermarkt.", "native": "मैं एक सुपरमार्केट ढूंढ रहा हूँ।", "phonetic": "इक सूक एन सुपर-मार्क्त।" },
+        { "id": "s2_6_3", "target": "Is er een bank dichtbij?", "native": "क्या पास में कोई बैंक है?", "phonetic": "इस एर एन बांक दिख्त-बाइ?" },
+        { "id": "s2_6_4", "target": "Het museum opent om negen uur.", "native": "संग्रहालय नौ बजे खुलता है।", "phonetic": "हेत मु-से-उम ओ-पेंट ओम ने-गेन ऊर।" }
       ],
       "dialogues": [
-        {
-          "id": "d2_6_1",
-          "context": "Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_6_2",
-          "context": "Formal Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_6_1", "context": "एक फार्मेसी की तलाश में", "lines": [
+            { "speaker": "A", "target": "Pardon, weet u waar de dichtstbijzijnde apotheek is?", "native": "माफ़ कीजिए, क्या आप जानते हैं कि सबसे नज़दीकी फार्मेसी कहाँ है?", "phonetic": "पार-दोन, वेत उ वार दे दिख्त-स्त-बाइ-ज़ाइन्-दे आपो-थेक इस?" },
+            { "speaker": "B", "target": "Ja, die is om de hoek, naast de supermarkt.", "native": "हाँ, वह कोने के आसपास है, सुपरमार्केट के बगल में।", "phonetic": "या, दी इस ओम दे हूक, नास्त दे सुपर-मार्क्त।" }
+        ]},
+        { "id": "d2_6_2", "context": "ट्रेन स्टेशन पर", "lines": [
+            { "speaker": "A", "target": "Vanaf welk perron vertrekt de trein naar Utrecht?", "native": "यूट्रेक्ट जाने वाली ट्रेन किस प्लेटफॉर्म से निकलती है?", "phonetic": "वान-आफ वेल्क पेर-रोन वेर-ट्रेक्ट दे ट्रैन नार ऊ-ट्रेख्त?" },
+            { "speaker": "B", "target": "Vanaf spoor 7.", "native": "ट्रैक 7 से।", "phonetic": "वान-आफ स्पोर ज़े-वेन।" }
+        ]},
+        { "id": "d2_6_3", "context": "आपातकाल के मामले में", "lines": [
+            { "speaker": "A", "target": "Help, ik moet naar het ziekenhuis!", "native": "मदद, मुझे अस्पताल जाना है!", "phonetic": "हेल्प, इक मूत नार हेत सी-केन-हाउस!" },
+            { "speaker": "B", "target": "Ik bel meteen een ambulance.", "native": "मैं तुरंत एम्बुलेंस बुलाता हूँ।", "phonetic": "इक बेल मे-तीन एन आम्-बु-लांस।" }
+        ]},
+        { "id": "d2_6_4", "context": "एक होटल में चेक-इन करना", "lines": [
+            { "speaker": "A", "target": "Goedendag, ik heb een reservering voor het hotel.", "native": "नमस्ते, मेरे पास होटल के लिए एक आरक्षण है।", "phonetic": "खू-देन-दाख़, इक हेब एन रे-सेर-वे-रिंग वूर हेत हो-टेल।" },
+            { "speaker": "B", "target": "Welkom! Mag ik uw naam?", "native": "स्वागत है! क्या मैं आपका नाम जान सकता हूँ?", "phonetic": "वेलकम! माख़ इक उव नाम?" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_6_1", "scrambled": ["het", "is", "station", "waar"], "correct": "Waar is het station", "nativeHint": "स्टेशन कहाँ है?" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_6_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_6_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_6_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_6_1", "sentence": "Ik moet naar het ___.", "answer": "ziekenhuis", "hint": "मुझे अस्पताल जाना है।" }
         ],
         "matching": [
-          {
-            "id": "m2_6_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_6_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_6_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_6_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_6_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_6_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_6_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_6_1", "target": "De luchthaven", "native": "हवाई अड्डा" },
+          { "id": "m2_6_2", "target": "Het restaurant", "native": "रेस्तरां" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D6"
-      }
+      "cultural_note": "'Apotheek' नुस्खे के लिए एक फार्मेसी है। सामान्य प्रसाधन सामग्री या ओवर-द-काउंटर दवा के लिए, आप 'Etos' या 'Kruidvat' जैसे 'drogist' पर जाएँगे।",
+      "pronunciation_tip": "'ziekenhuis' में 'ui' एक अनोखी डच ध्वनि है। इसे 'a' ध्वनि से शुरू करके और अपने होंठों को गोल करके जैसे कि आप 'oo' कह रहे हैं, अभ्यास करें।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D6-Places" }
     },
     {
       "week": 2,
       "day": 7,
-      "title": "Week 2 Day 7: Work Culture",
-      "title_native": "Work Culture",
-      "theme": "At the Workplace",
+      "title": "सप्ताह 2, दिन 7: यात्रा",
+      "title_native": "Week 2, Dag 7: Reizen",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Hindi",
       "words": [
-        {
-          "id": "w2_7_1",
-          "target": "Werk",
-          "phonetic": "Werk",
-          "native_meaning": "काम",
-          "english": "Work",
-          "example_sentence_target": "Werk.",
-          "example_sentence_native": "काम."
-        },
-        {
-          "id": "w2_7_2",
-          "target": "Kantoor",
-          "phonetic": "Kantoor",
-          "native_meaning": "कार्यालय",
-          "english": "Office",
-          "example_sentence_target": "Kantoor.",
-          "example_sentence_native": "कार्यालय."
-        },
-        {
-          "id": "w2_7_3",
-          "target": "Vergadering",
-          "phonetic": "Vergadering",
-          "native_meaning": "बैठक",
-          "english": "Meeting",
-          "example_sentence_target": "Vergadering.",
-          "example_sentence_native": "बैठक."
-        },
-        {
-          "id": "w2_7_4",
-          "target": "Collega",
-          "phonetic": "Collega",
-          "native_meaning": "सहकर्मी",
-          "english": "Colleague",
-          "example_sentence_target": "Collega.",
-          "example_sentence_native": "सहकर्मी."
-        },
-        {
-          "id": "w2_7_5",
-          "target": "Baas",
-          "phonetic": "Baas",
-          "native_meaning": "बॉस",
-          "english": "Boss",
-          "example_sentence_target": "Baas.",
-          "example_sentence_native": "बॉस."
-        }
+        { "id": "w2_7_1", "target": "De trein", "phonetic": "दे ट्रैन", "native_meaning": "ट्रेन", "english": "The train", "example_sentence_target": "De trein naar Rotterdam vertrekt zo.", "example_sentence_native": "रॉटरडैम जाने वाली ट्रेन जल्द ही निकल रही है।", "example_sentence_phonetic": "दे ट्रैन नार रोट-तेर-दाम वेर-ट्रेक्ट ज़ो।" },
+        { "id": "w2_7_2", "target": "De bus", "phonetic": "दे बुस", "native_meaning": "बस", "english": "The bus", "example_sentence_target": "Welke bus moet ik nemen?", "example_sentence_native": "मुझे कौन सी बस लेनी चाहिए?", "example_sentence_phonetic": "वेल्के बुस मूत इक ने-मेन?" },
+        { "id": "w2_7_3", "target": "De taxi", "phonetic": "दे ताक्सी", "native_meaning": "टैक्सी", "english": "The taxi", "example_sentence_target": "Laten we een taxi nemen.", "example_sentence_native": "चलो एक टैक्सी लेते हैं।", "example_sentence_phonetic": "ला-तेन वे एन ताक्सी ने-मेन।" },
+        { "id": "w2_7_4", "target": "Het kaartje", "phonetic": "हेत कार-चे", "native_meaning": "टिकट", "english": "The ticket", "example_sentence_target": "Heeft u uw kaartje?", "example_sentence_native": "क्या आपके पास अपना टिकट है?", "example_sentence_phonetic": "हेफ्त उ उव कार-चे?" },
+        { "id": "w2_7_5", "target": "De koffer", "phonetic": "दे कोफ्फेर", "native_meaning": "सूटकेस", "english": "The suitcase", "example_sentence_target": "Mijn koffer is zwaar.", "example_sentence_native": "मेरा सूटकेस भारी है।", "example_sentence_phonetic": "माइन कोफ्फेर इस स्वार।" },
+        { "id": "w2_7_6", "target": "Het paspoort", "phonetic": "हेत पास-पोर्त", "native_meaning": "पासपोर्ट", "english": "The passport", "example_sentence_target": "Vergeet je paspoort niet.", "example_sentence_native": "अपना पासपोर्ट मत भूलना।", "example_sentence_phonetic": "वेर-गीत ये पास-पोर्त नीत।" }
+      ],
+      "sentences": [
+        { "id": "s2_7_1", "target": "Een kaartje naar Den Haag, alstublieft.", "native": "द हेग के लिए एक टिकट, कृपया।", "phonetic": "एन कार-चे नार देन हाख़, अल-स्तु-ब्लीफ्त।" },
+        { "id": "s2_7_2", "target": "Hoe laat vertrekt het vliegtuig?", "native": "विमान कितने बजे निकलता है?", "phonetic": "हू लात वेर-ट्रेक्ट हेत व्लीग-ताउख़?" },
+        { "id": "s2_7_3", "target": "Is dit de juiste bushalte?", "native": "क्या यह सही बस स्टॉप है?", "phonetic": "इस दित दे यॉइ-स्टे बुस-हाल्ते?" },
+        { "id": "s2_7_4", "target": "Waar is de bagageafhandeling?", "native": "सामान प्राप्ति कहाँ है?", "phonetic": "वार इस दे बा-गा-ज़े-आफ-हान-दे-लिंग?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_7_1",
-          "context": "Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Werk!",
-              "native": "काम!",
-              "phonetic": "Werk"
-            },
-            {
-              "speaker": "B",
-              "target": "Werk! Kantoor!",
-              "native": "काम! कार्यालय!",
-              "phonetic": "Werk Kantoor"
-            },
-            {
-              "speaker": "A",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            }
-          ]
-        },
-        {
-          "id": "d2_7_2",
-          "context": "Formal Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Kantoor!",
-              "native": "कार्यालय!",
-              "phonetic": "Kantoor"
-            },
-            {
-              "speaker": "B",
-              "target": "Vergadering!",
-              "native": "बैठक!",
-              "phonetic": "Vergadering"
-            },
-            {
-              "speaker": "A",
-              "target": "Collega! Baas!",
-              "native": "सहकर्मी! बॉस!",
-              "phonetic": "Collega Baas"
-            }
-          ]
-        }
+        { "id": "d2_7_1", "context": "एक ट्रेन टिकट खरीदना", "lines": [
+            { "speaker": "A", "target": "Goedemorgen. Een enkeltje naar Leiden, alstublieft.", "native": "नमस्ते। लीडेन के लिए एक तरफा टिकट, कृपया।", "phonetic": "खू-दे-मोर-गेन। एन एन-केल्-चे नार लै-देन, अल-स्तु-ब्लीफ्त।" },
+            { "speaker": "B", "target": "Dat is dan acht euro vijftig.", "native": "वह आठ यूरो पचास का होगा।", "phonetic": "दात इस दान आख्त एउ-रो वैफ-तिख़।" }
+        ]},
+        { "id": "d2_7_2", "context": "हवाई अड्डे पर चेक-इन", "lines": [
+            { "speaker": "A", "target": "Hier is mijn paspoort. Ik heb één koffer om in te checken.", "native": "यह मेरा पासपोर्ट है। मेरे पास चेक-इन करने के लिए एक सूटकेस है।", "phonetic": "हीर इस माइन पास-पोर्त। इक हेब एन कोफ्फेर ओम इन ते चेकेन।" },
+            { "speaker": "B", "target": "Dank u. Plaats uw koffer op de band.", "native": "धन्यवाद। अपना सूटकेस बेल्ट पर रखें।", "phonetic": "दांक उ। प्लात्स उव कोफ्फेर ओप दे बांद।" }
+        ]},
+        { "id": "d2_7_3", "context": "एक टैक्सी लेना", "lines": [
+            { "speaker": "A", "target": "Is deze taxi vrij?", "native": "क्या यह टैक्सी खाली है?", "phonetic": "इस दे-ज़े ताक्सी व्राइ?" },
+            { "speaker": "B", "target": "Jazeker, stapt u maar in. Waar gaat de reis naartoe?", "native": "ज़रूर, कृपया अंदर आ जाइए। आप कहाँ जा रहे हैं?", "phonetic": "या-ज़े-केर, स्ताप्त उ मार इन। वार गात दे रइस नार-तू?" }
+        ]},
+        { "id": "d2_7_4", "context": "बस में", "lines": [
+            { "speaker": "A", "target": "Stopt deze bus bij het centraal station?", "native": "क्या यह बस सेंट्रल स्टेशन पर रुकती है?", "phonetic": "स्तोप्त दे-ज़े बुस बाइ हेत सेन-त्राल स्टा-शोन?" },
+            { "speaker": "B", "target": "Ja, dat is de eindhalte.", "native": "हाँ, वह अंतिम पड़ाव है।", "phonetic": "या, दात इस दे आइंद-हाल्ते।" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss2_7_1", "scrambled": ["ik", "nemen", "moet", "welke", "bus"], "correct": "Welke bus moet ik nemen", "nativeHint": "मुझे कौन सी बस लेनी चाहिए?" }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb2_7_1",
-            "sentence": "___ means 'Work' in Dutch",
-            "answer": "Werk",
-            "hint": "काम"
-          },
-          {
-            "id": "fb2_7_2",
-            "sentence": "___ means 'Office' in Dutch",
-            "answer": "Kantoor",
-            "hint": "कार्यालय"
-          },
-          {
-            "id": "fb2_7_3",
-            "sentence": "___ means 'Meeting' in Dutch",
-            "answer": "Vergadering",
-            "hint": "बैठक"
-          }
+          { "id": "fb2_7_1", "sentence": "Vergeet je ___ niet.", "answer": "paspoort", "hint": "अपना पासपोर्ट मत भूलना।" }
         ],
         "matching": [
-          {
-            "id": "m2_7_1",
-            "target": "Werk",
-            "native": "काम"
-          },
-          {
-            "id": "m2_7_2",
-            "target": "Kantoor",
-            "native": "कार्यालय"
-          },
-          {
-            "id": "m2_7_3",
-            "target": "Vergadering",
-            "native": "बैठक"
-          },
-          {
-            "id": "m2_7_4",
-            "target": "Collega",
-            "native": "सहकर्मी"
-          },
-          {
-            "id": "m2_7_5",
-            "target": "Baas",
-            "native": "बॉस"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_7_1",
-            "question": "What does 'Werk' mean?",
-            "options": [
-              "काम",
-              "कार्यालय",
-              "बैठक",
-              "सहकर्मी"
-            ],
-            "correct": 0,
-            "explanation": "'Werk' means काम in Hindi."
-          },
-          {
-            "id": "mc2_7_2",
-            "question": "How do you say 'कार्यालय' in Dutch?",
-            "options": [
-              "Werk",
-              "Kantoor",
-              "Vergadering",
-              "Collega"
-            ],
-            "correct": 1,
-            "explanation": "'Kantoor' means कार्यालय."
-          }
+          { "id": "m2_7_1", "target": "De koffer", "native": "सूटकेस" },
+          { "id": "m2_7_2", "target": "Het kaartje", "native": "टिकट" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D7"
-      }
+      "cultural_note": "OV-chipkaart एक रिचार्जेबल कार्ड है जिसका उपयोग नीदरलैंड में सभी सार्वजनिक परिवहन (ट्रेन, बस, ट्राम, मेट्रो) के लिए किया जाता है। यह एकल टिकट खरीदने की तुलना में बहुत अधिक सुविधाजनक है।",
+      "pronunciation_tip": "'trein' और 'reizen' में 'ei' की ध्वनि 'mijn' में 'ij' की तरह ही होती है। यह अंग्रेज़ी के 'light' शब्द में 'i' की तरह है।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D7-Travel" }
     }
   ]
 }
