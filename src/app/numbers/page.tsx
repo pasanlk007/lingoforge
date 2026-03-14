@@ -17,26 +17,24 @@ const DataItemCard = ({ item, language }: { item: LessonItem, language: string }
   const isNumberCard = item.english && !isNaN(parseInt(item.english, 10));
 
   return (
-    <Card className="p-6">
-      <div className="grid grid-cols-2 gap-4 items-center">
-        {/* Left Column: Target Language Info */}
-        <div className="space-y-2">
-          <p className="text-5xl font-bold">{item.target}</p>
-           <div className="pt-2">
-            <AudioPlayback text={item.target} languageName={language} />
+    <Card className="p-4 sm:p-6">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Left Part: Target Language & Audio */}
+        <div className="flex flex-1 items-center gap-4">
+          <AudioPlayback text={item.target} languageName={language} />
+          <div className="text-left">
+            <p className="text-3xl sm:text-4xl font-bold">{item.target}</p>
+            <p className="text-muted-foreground">{item.phonetic}</p>
           </div>
         </div>
         
-        {/* Right Column: Details */}
-        <div className="space-y-1 text-right">
-            {isNumberCard ? (
-                // This is a NUMBER card. Display the numeral from the 'english' field.
-                <p className="text-3xl font-bold">{item.english}</p>
-            ) : (
-                // This is a TIME/DAY/MONTH card. Display the native translation.
-                <p className="text-3xl font-bold text-foreground">{item.native_meaning}</p>
-            )}
-            <p className="text-muted-foreground">{item.phonetic}</p>
+        {/* Right Part: Numeral or Native Meaning */}
+        <div className="text-right">
+          {isNumberCard ? (
+            <p className="text-4xl sm:text-5xl font-bold text-foreground">{item.english}</p>
+          ) : (
+            <p className="text-2xl sm:text-3xl font-bold text-foreground">{item.native_meaning}</p>
+          )}
         </div>
       </div>
     </Card>
