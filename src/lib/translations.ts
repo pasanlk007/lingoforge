@@ -1,5 +1,3 @@
-
-
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -199,7 +197,7 @@ export const translations = {
   Sinhala: {
     languagesAvailable: "භාෂා ඇත",
     heroTitle: "විදෙස්ගත ශ්‍රමිකයන්ගේ භාෂා කුසලතා වර්ධනය",
-    heroSub: "විදෙස්ගත ශ්‍රමිකයන් සඳහා ව්‍යුහගත පැවැත්මේ භාෂා මාර්ග.",
+    heroSub: "විදෙස්ගත ශ්‍රමිකයන් සඳහා ව්‍යුහගත භාශා ඉගැන්වීම් සැකසුම",
     startBtn: "start my journey - Free trial",
     viewPaths: "පවතින භාෂා බලන්න",
     journeyTitle: "ඔබේ ගමන මෙතනින් ආරම්භ වේ",
@@ -2133,3 +2131,5 @@ export const targetLanguages = [
 ];
 
 export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali", "Nepali"];
+
+    
