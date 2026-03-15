@@ -45,13 +45,19 @@
           "exercises": {
             "type": "object",
             "properties": {
-              "sentenceScramble": {
-                "type": "array"
-              },
-               "fillBlanks": {
+              "fillBlanks": {
                 "type": "array"
               },
               "matching": {
+                "type": "array"
+              },
+              "multipleChoice": {
+                "type": "array"
+              },
+              "sentenceScramble": {
+                "type": "array"
+              },
+              "writingPractice": {
                 "type": "array"
               }
             }
@@ -112,7 +118,8 @@
                         "minItems": 3,
                         "maxItems": 6
                     }
-                }
+                },
+                "required": ["sentences", "dialogues"]
             }
           }
         ]
