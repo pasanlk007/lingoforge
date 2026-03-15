@@ -17,7 +17,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { nativeLanguages, translations } from "@/lib/translations";
+import { nativeLanguages, targetLanguages, translations } from "@/lib/translations";
 
 
 export function Navigation() {
@@ -33,10 +33,27 @@ export function Navigation() {
   const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
   
   const [isMounted, setIsMounted] = useState(false);
+  const [targetLanguageInfo, setTargetLanguageInfo] = useState<{lang: string; flag: string} | null>(null);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
+  
+  useEffect(() => {
+    if (!isMounted) return;
+
+    const savedTarget = localStorage.getItem("targetLanguage");
+    const currentTargetLang = userProfile?.selectedLanguage || savedTarget;
+
+    if (currentTargetLang) {
+      const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === currentTargetLang.toLowerCase());
+      if (langInfo) {
+        setTargetLanguageInfo({ lang: langInfo.lang, flag: langInfo.flag });
+      }
+    } else {
+        setTargetLanguageInfo(null);
+    }
+  }, [isMounted, userProfile]);
 
   const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
@@ -46,6 +63,17 @@ export function Navigation() {
   const handleLogout = () => {
     if (!auth) return;
     auth.signOut();
+  }
+
+  const TargetLanguageDisplay = () => {
+    if (!isMounted || !targetLanguageInfo) return null;
+    
+    return (
+      <div className="flex items-center gap-2 rounded-full border bg-card p-1 pr-3" title={`Learning ${targetLanguageInfo.lang}`}>
+         <span className="text-xl">{targetLanguageInfo.flag}</span>
+         <span className="text-xs font-bold hidden sm:inline">{targetLanguageInfo.lang}</span>
+      </div>
+    )
   }
 
   return (
@@ -77,108 +105,112 @@ export function Navigation() {
             </Link>
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
-           {isUserLoading ? (
-             <div className="h-10 w-24 animate-pulse rounded-md bg-muted" />
-           ) : user ? (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-                  <Avatar className="h-9 w-9">
-                    <AvatarImage src={user.photoURL || undefined} alt={user.displayName || "User"} />
-                    <AvatarFallback>{user.displayName?.charAt(0) || user.email?.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56" align="end" forceMount>
-                <DropdownMenuLabel className="font-normal">
-                  <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">{user.displayName || 'User'}</p>
-                    <p className="text-xs leading-none text-muted-foreground">
-                      {user.email}
-                    </p>
-                  </div>
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                  <Link href="/profile">{t.profile}</Link>
-                </DropdownMenuItem>
-                 <DropdownMenuItem asChild>
-                   <Link href="/dashboard">{t_dashboard.title}</Link>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem onClick={handleLogout}>
-                  <LogOut className="mr-2 h-4 w-4" />
-                  <span>{t.logOut}</span>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-           ) : (
-            <>
-              <Button variant="ghost" asChild><Link href="/login">{t.logIn}</Link></Button>
-              <Button asChild><Link href="/signup">{t.signUp}</Link></Button>
-            </>
-           )}
-        </div>
+        <div className="flex items-center gap-2">
+          <TargetLanguageDisplay />
+          
+          <div className="hidden items-center gap-2 md:flex">
+             {isUserLoading ? (
+               <div className="h-10 w-24 animate-pulse rounded-md bg-muted" />
+             ) : user ? (
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+                    <Avatar className="h-9 w-9">
+                      <AvatarImage src={user.photoURL || undefined} alt={user.displayName || "User"} />
+                      <AvatarFallback>{user.displayName?.charAt(0) || user.email?.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56" align="end" forceMount>
+                  <DropdownMenuLabel className="font-normal">
+                    <div className="flex flex-col space-y-1">
+                      <p className="text-sm font-medium leading-none">{user.displayName || 'User'}</p>
+                      <p className="text-xs leading-none text-muted-foreground">
+                        {user.email}
+                      </p>
+                    </div>
+                  </DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <Link href="/profile">{t.profile}</Link>
+                  </DropdownMenuItem>
+                   <DropdownMenuItem asChild>
+                     <Link href="/dashboard">{t_dashboard.title}</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem onClick={handleLogout}>
+                    <LogOut className="mr-2 h-4 w-4" />
+                    <span>{t.logOut}</span>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+             ) : (
+              <>
+                <Button variant="ghost" asChild><Link href="/login">{t.logIn}</Link></Button>
+                <Button asChild><Link href="/signup">{t.signUp}</Link></Button>
+              </>
+             )}
+          </div>
 
-        <div className="md:hidden">
-          <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <SheetHeader>
-                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
-              </SheetHeader>
-              <div className="flex h-full flex-col gap-6">
-                <Link href="/" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
-                  <Languages className="h-8 w-8 text-primary" />
-                  <span className="font-headline text-2xl font-bold">LingoForge</span>
-                </Link>
-                <nav className="flex flex-col gap-4">
-                  <Link
-                    href="/paths"
-                    className="text-lg font-medium text-muted-foreground"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {t.pathsAndFeatures}
+          <div className="md:hidden">
+            <Sheet open={isMenuOpen} onOpenChange={setMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                </SheetHeader>
+                <div className="flex h-full flex-col gap-6">
+                  <Link href="/" className="flex items-center gap-2" onClick={() => setMenuOpen(false)}>
+                    <Languages className="h-8 w-8 text-primary" />
+                    <span className="font-headline text-2xl font-bold">LingoForge</span>
                   </Link>
-                   <Link
-                      href="/dashboard"
-                      className="text-lg font-medium text-muted-foreground"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {t_dashboard.title}
-                    </Link>
+                  <nav className="flex flex-col gap-4">
                     <Link
-                      href="/pricing"
+                      href="/paths"
                       className="text-lg font-medium text-muted-foreground"
                       onClick={() => setMenuOpen(false)}
                     >
-                      Pricing
+                      {t.pathsAndFeatures}
                     </Link>
-                </nav>
-                <div className="mt-auto flex flex-col gap-2">
-                   {isUserLoading ? (
-                     <div className="h-10 w-full animate-pulse rounded-md bg-muted" />
-                   ) : user ? (
-                    <>
-                      <Button asChild onClick={() => setMenuOpen(false)}><Link href="/profile">{t.profile}</Link></Button>
-                      <Button variant="ghost" onClick={() => { handleLogout(); setMenuOpen(false); }}>{t.logOut}</Button>
-                    </>
-                   ) : (
-                    <>
-                      <Button variant="ghost" onClick={() => setMenuOpen(false)} asChild><Link href="/login">{t.logIn}</Link></Button>
-                      <Button onClick={() => setMenuOpen(false)} asChild><Link href="/signup">{t.signUp}</Link></Button>
-                    </>
-                   )}
+                     <Link
+                        href="/dashboard"
+                        className="text-lg font-medium text-muted-foreground"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {t_dashboard.title}
+                      </Link>
+                      <Link
+                        href="/pricing"
+                        className="text-lg font-medium text-muted-foreground"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Pricing
+                      </Link>
+                  </nav>
+                  <div className="mt-auto flex flex-col gap-2">
+                     {isUserLoading ? (
+                       <div className="h-10 w-full animate-pulse rounded-md bg-muted" />
+                     ) : user ? (
+                      <>
+                        <Button asChild onClick={() => setMenuOpen(false)}><Link href="/profile">{t.profile}</Link></Button>
+                        <Button variant="ghost" onClick={() => { handleLogout(); setMenuOpen(false); }}>{t.logOut}</Button>
+                      </>
+                     ) : (
+                      <>
+                        <Button variant="ghost" onClick={() => setMenuOpen(false)} asChild><Link href="/login">{t.logIn}</Link></Button>
+                        <Button onClick={() => setMenuOpen(false)} asChild><Link href="/signup">{t.signUp}</Link></Button>
+                      </>
+                     )}
+                  </div>
                 </div>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
