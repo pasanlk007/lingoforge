@@ -7,1325 +7,429 @@
     {
       "week": 2,
       "day": 1,
-      "title": "Week 2 Day 1: Office Vocabulary",
-      "title_native": "Office Vocabulary",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 1: Asking for Help",
+      "title_native": "2 වන සතිය, 1 වන දිනය: උදව් ඉල්ලීම",
+      "theme": "Asking for Help",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_1_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_1_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_1_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_1_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_1_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_1_1", "target": "Help", "phonetic": "හෙල්ප්", "native_meaning": "උදව්", "english": "Help", "example_sentence_target": "Can you help me, please?", "example_sentence_native": "කරුණාකර මට උදව් කරන්න පුලුවන්ද?", "example_sentence_phonetic": "කැන් යූ හෙල්ප් මී, ප්ලීස්?" },
+        { "id": "w2_1_2", "target": "Sorry", "phonetic": "සොරි", "native_meaning": "සමාවන්න", "english": "Sorry", "example_sentence_target": "Sorry, I don't understand.", "example_sentence_native": "සමාවන්න, මට තේරෙන්නේ නැහැ.", "example_sentence_phonetic": "සොරි, අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්." },
+        { "id": "w2_1_3", "target": "Excuse me", "phonetic": "එක්ස්කියුස් මී", "native_meaning": "සමාවෙන්න (අවධානය යොමු කරවා ගැනීමට)", "english": "Excuse me", "example_sentence_target": "Excuse me, where is the toilet?", "example_sentence_native": "සමාවෙන්න, වැසිකිලිය කොහෙද?", "example_sentence_phonetic": "එක්ස්කියුස් මී, වෙයා ඉස් ද ටොයිලට්?" },
+        { "id": "w2_1_4", "target": "Lost", "phonetic": "ලොස්ට්", "native_meaning": " අතරමං වෙලා", "english": "Lost", "example_sentence_target": "I think I am lost.", "example_sentence_native": "මම හිතන්නේ මම අතරමං වෙලා.", "example_sentence_phonetic": "අයි තින්ක් අයි ඇම් ලොස්ට්." },
+        { "id": "w2_1_5", "target": "Need", "phonetic": "නීඩ්", "native_meaning": "අවශ්‍යයි", "english": "Need", "example_sentence_target": "I need a doctor.", "example_sentence_native": "මට දොස්තර කෙනෙක් අවශ්‍යයි.", "example_sentence_phonetic": "අයි නීඩ් අ ඩොක්ටර්." },
+        { "id": "w2_1_6", "target": "Emergency", "phonetic": "ඉමර්ජන්සි", "native_meaning": "හදිසි අවස්ථාවක්", "english": "Emergency", "example_sentence_target": "It is an emergency.", "example_sentence_native": "එය හදිසි අවස්ථාවක්.", "example_sentence_phonetic": "ඉට් ඉස් ඇන් ඉමර්ජන්සි." }
+      ],
+      "sentences": [
+        { "id": "s2_1_1", "target": "Can you speak slowly?", "native": "ඔබට සෙමින් කතා කරන්න පුලුවන්ද?", "phonetic": "කැන් යූ ස්පීක් ස්ලෝලි?" },
+        { "id": "s2_1_2", "target": "I need help with this form.", "native": "මට මේ ෆෝම් එකට උදව් අවශ්‍යයි.", "phonetic": "අයි නීඩ් හෙල්ප් විත් දිස් ෆෝම්." },
+        { "id": "s2_1_3", "target": "What does this word mean?", "native": "මේ වචනයේ තේරුම මොකක්ද?", "phonetic": "වොට් ඩස් දිස් වර්ඩ් මීන්?" },
+        { "id": "s2_1_4", "target": "Please call the police.", "native": "කරුණාකර පොලිසියට කතා කරන්න.", "phonetic": "ප්ලීස් කෝල් ද පොලීස්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_1_1",
-          "context": "Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_1_1", "context": "පාරේදී අතරමං වූ විට.", "lines": [
+            { "speaker": "A", "target": "Excuse me, I am lost. Can you help me?", "native": "සමාවෙන්න, මම අතරමං වෙලා. මට උදව් කරන්න පුලුවන්ද?", "phonetic": "එක්ස්කියුස් මී, අයි ඇම් ලොස්ට්. කැන් යූ හෙල්ප් මී?" },
+            { "speaker": "B", "target": "Of course. Where do you want to go?", "native": "ඇත්තෙන්ම. ඔයාට කොහෙද යන්න ඕන?", "phonetic": "ඔෆ් කෝස්. වෙයා ඩු යූ වෝන්ට් ටු ගෝ?" }
           ]
         },
-        {
-          "id": "d2_1_2",
-          "context": "Formal Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_1_2", "context": "වචනයක් නොතේරෙන විට.", "lines": [
+            { "speaker": "A", "target": "Sorry, I don't understand. What does 'urgent' mean?", "native": "සමාවන්න, මට තේරෙන්නේ නැහැ. 'urgent' කියන එකේ තේරුම මොකක්ද?", "phonetic": "සොරි, අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්. වොට් ඩස් 'අර්ජන්ට්' මීන්?" },
+            { "speaker": "B", "target": "It means it is very important and needs to be done quickly.", "native": "ඒ කියන්නේ එය ඉතා වැදගත් සහ ඉක්මනින් කළ යුතු දෙයක්.", "phonetic": "ඉට් මීන්ස් ඉට් ඉස් වෙරි ඉම්පෝටන්ට් ඇන්ඩ් නීඩ්ස් ටු බී ඩන් ක්වික්ලි." }
+          ]
+        },
+        { "id": "d2_1_3", "context": "දුම්රිය ස්ථානයේදී උදව් ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "Excuse me, which platform for the city center?", "native": "සමාවෙන්න, නගර මධ්‍යයට යන්න මොන ප්ලැට්ෆෝම් එකද?", "phonetic": "එක්ස්කියුස් මී, විච් ප්ලැට්ෆෝම් ෆෝ ද සිටි සෙන්ටර්?" },
+            { "speaker": "B", "target": "Platform 2. The train leaves in 5 minutes.", "native": "ප්ලැට්ෆෝම් 2. කෝච්චිය මිනිත්තු 5කින් පිටත් වෙනවා.", "phonetic": "ප්ලැට්ෆෝම් ටූ. ද ට්‍රේන් ලීව්ස් ඉන් ෆයිව් මිනිට්ස්." }
+          ]
+        },
+        { "id": "d2_1_4", "context": "සුපිරි වෙළඳසැලේදී භාණ්ඩයක් සොයාගැනීමට.", "lines": [
+            { "speaker": "A", "target": "Help, please. Where can I find rice?", "native": "උදව් කරන්න, කරුණාකර. මට හාල් කොහෙන්ද හොයාගන්න පුලුවන්?", "phonetic": "හෙල්ප්, ප්ලීස්. වෙයා කැන් අයි ෆයින්ඩ් රයිස්?" },
+            { "speaker": "B", "target": "Aisle 3, on your right.", "native": "අයිල් 3, ඔයාගේ දකුණු පැත්තේ.", "phonetic": "අයිල් ත්‍රී, ඔන් යัว රයිට්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_1_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_1_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_1_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_1_1", "sentence": "I ___ help, please.", "answer": "need", "hint": "මට උදව් අවශ්‍යයි" }
         ],
         "matching": [
-          {
-            "id": "m2_1_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_1_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_1_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_1_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_1_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_1_1", "target": "I am lost.", "native": "මම අතරමං වෙලා" },
+          { "id": "m2_1_2", "target": "Excuse me.", "native": "සමාවෙන්න" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_1_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_1_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_1_1", "scrambled": ["me", "help", "you", "Can", "?"], "correct": "Can you help me?", "nativeHint": "ඔබට මට උදව් කළ හැකිද?" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D1"
-      }
+      "cultural_note": "බොහෝ රටවල, ආචාරශීලීව උදව් ඉල්ලීමේදී 'please' (කරුණාකර) සහ 'thank you' (ස්තූතියි) කීම ඉතා වැදගත් වේ. එය ඔබගේ ගෞරවය පෙන්වයි.",
+      "pronunciation_tip": "'Help' යන වචනය උච්චාරණය කිරීමේදී, 'හෙල්-ප්' ලෙස කොටස් දෙකකට කඩා උච්චාරණය කිරීමට පුරුදු වන්න. 'p' ශබ්දය පැහැදිලිව කිව යුතුය.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D1-Asker" }
     },
     {
       "week": 2,
       "day": 2,
-      "title": "Week 2 Day 2: Work Phrases",
-      "title_native": "Work Phrases",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 2: Understanding Questions",
+      "title_native": "2 වන සතිය, 2 වන දිනය: ප්‍රශ්න තේරුම් ගැනීම",
+      "theme": "Understanding Questions",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_2_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_2_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_2_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_2_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_2_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_2_1", "target": "What?", "phonetic": "වොට්?", "native_meaning": "මොකක්ද?", "english": "What?", "example_sentence_target": "What is your name?", "example_sentence_native": "ඔයාගේ නම මොකක්ද?", "example_sentence_phonetic": "වොට් ඉස් යัว නේම්?" },
+        { "id": "w2_2_2", "target": "Where?", "phonetic": "වෙයා?", "native_meaning": "කොහෙද?", "english": "Where?", "example_sentence_target": "Where do you live?", "example_sentence_native": "ඔයා ජීවත් වෙන්නේ කොහෙද?", "example_sentence_phonetic": "වෙයා ඩු යූ ලිව්?" },
+        { "id": "w2_2_3", "target": "When?", "phonetic": "වෙන්?", "native_meaning": "කවදාද?", "english": "When?", "example_sentence_target": "When is the meeting?", "example_sentence_native": "රැස්වීම තියෙන්නේ කවදාද?", "example_sentence_phonetic": "වෙන් ඉස් ද මීටින්?" },
+        { "id": "w2_2_4", "target": "Who?", "phonetic": "හූ?", "native_meaning": "කවුද?", "english": "Who?", "example_sentence_target": "Who is that person?", "example_sentence_native": "අර ඉන්නේ කවුද?", "example_sentence_phonetic": "හූ ඉස් දැට් පර්සන්?" },
+        { "id": "w2_2_5", "target": "Why?", "phonetic": "වයි?", "native_meaning": "ඇයි?", "english": "Why?", "example_sentence_target": "Why are you late?", "example_sentence_native": "ඔයා පරක්කු ඇයි?", "example_sentence_phonetic": "වයි ආ යූ ලේට්?" },
+        { "id": "w2_2_6", "target": "How?", "phonetic": "හව්?", "native_meaning": "කොහොමද?", "english": "How?", "example_sentence_target": "How are you?", "example_sentence_native": "ඔයාට කොහොමද?", "example_sentence_phonetic": "හව් ආ යූ?" }
+      ],
+      "sentences": [
+        { "id": "s2_2_1", "target": "How much is this?", "native": "මේක කීයද?", "phonetic": "හව් මච් ඉස් දිස්?" },
+        { "id": "s2_2_2", "target": "What time is it?", "native": "වෙලාව කීයද?", "phonetic": "වොට් ටයිම් ඉස් ඉට්?" },
+        { "id": "s2_2_3", "target": "Where is the nearest hospital?", "native": "ලඟම ඉස්පිරිතාලෙ කොහෙද?", "phonetic": "වෙයා ඉස් ද නියරස්ට් හොස්පිටල්?" },
+        { "id": "s2_2_4", "target": "Can you repeat that, please?", "native": "කරුණාකර ආයෙත් කියන්න පුලුවන්ද?", "phonetic": "කැන් යූ රිපීට් දැට්, ප්ලීස්?" }
       ],
       "dialogues": [
-        {
-          "id": "d2_2_1",
-          "context": "Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_2_1", "context": "මිලක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "Excuse me, how much is this shirt?", "native": "සමාවෙන්න, මේ ෂර්ට් එක කීයද?", "phonetic": "එක්ස්කියුස් මී, හව් මච් ඉස් දිස් ෂර්ට්?" },
+            { "speaker": "B", "target": "It's 20 dollars.", "native": "ඩොලර් 20 යි.", "phonetic": "ඉට්ස් ට්වෙන්ටි ඩොලර්ස්." }
           ]
         },
-        {
-          "id": "d2_2_2",
-          "context": "Formal Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_2_2", "context": "කෙනෙකුගේ නම ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Hello. What is your name?", "native": "ආයුබෝවන්. ඔයාගේ නම මොකක්ද?", "phonetic": "හෙලෝ. වොට් ඉස් යัว නේම්?" },
+            { "speaker": "B", "target": "My name is Priya. What is yours?", "native": "මගේ නම ප්‍රියා. ඔයාගේ නම මොකක්ද?", "phonetic": "මයි නේම් ඉස් ප්‍රියා. වොට් ඉස් යัวස්?" }
+          ]
+        },
+        { "id": "d2_2_3", "context": "දුම්රියක් පිටත්වන වේලාව ඇසීම.", "lines": [
+            { "speaker": "A", "target": "When does the next train to Colombo leave?", "native": "කොළඹට ඊළඟ කෝච්චිය යන්නේ කීයටද?", "phonetic": "වෙන් ඩස් ද නෙක්ස්ට් ට්‍රේන් ටු කලම්බෝ ලීව්?" },
+            { "speaker": "B", "target": "It leaves at 10:30 AM.", "native": "උදේ 10:30 ට පිටත් වෙනවා.", "phonetic": "ඉට් ලීව්ස් ඇට් ටෙන් තර්ටි ඒ.එම්." }
+          ]
+        },
+        { "id": "d2_2_4", "context": "යමක් නොතේරුණු විට පැහැදිලි කරගැනීම.", "lines": [
+            { "speaker": "A", "target": "Sorry, I don't understand. Can you say that again?", "native": "සමාවෙන්න, මට තේරුනේ නෑ. ආයෙත් කියන්න පුලුවන්ද?", "phonetic": "සොරි, අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්. කැන් යූ සේ දැට් අගේන්?" },
+            { "speaker": "B", "target": "Yes, I said the shop is closed.", "native": "ඔව්, මම කිව්වේ කඩේ වහලා කියලා.", "phonetic": "യെස්, අයි සෙඩ් ද ෂොප් ඉස් ක්ලෝස්ඩ්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_2_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_2_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_2_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_2_1", "sentence": "___ is your name?", "answer": "What", "hint": "ඔබගේ නම කුමක්ද?" }
         ],
         "matching": [
-          {
-            "id": "m2_2_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_2_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_2_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_2_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_2_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_2_1", "target": "How much?", "native": "කීයද?" },
+          { "id": "m2_2_2", "target": "What time?", "native": "කීයටද?" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_2_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_2_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_2_1", "scrambled": ["is", "it", "time", "What", "?"], "correct": "What time is it?", "nativeHint": "වේලාව කීයද?" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D2"
-      }
+      "cultural_note": "ප්‍රශ්නයක් ඇසීමට පෙර 'Excuse me' (එක්ස්කියුස් මී) කීම ආචාරශීලී ක්‍රමයකි. එය අන් අයගේ අවධානය ලබා ගැනීමට උපකාරී වේ.",
+      "pronunciation_tip": "ඉංග්‍රීසි භාෂාවේ 'W' ශබ්දය (උදා: What, Where) උච්චාරණය කිරීමේදී, තොල් වටකුරු කර 'ව' ශබ්දයක් නිකුත් කරන්න. එය සිංහල 'ව' ශබ්දයට වඩා මදක් වෙනස් වේ.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D2-Inquirer" }
     },
     {
       "week": 2,
       "day": 3,
-      "title": "Week 2 Day 3: Email & Phone",
-      "title_native": "Email & Phone",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 3: Giving Simple Information",
+      "title_native": "2 වන සතිය, 3 වන දිනය: සරල තොරතුරු ලබා දීම",
+      "theme": "Giving Simple Information",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_3_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_3_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_3_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_3_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_3_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_3_1", "target": "Yes", "phonetic": "യെස්", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Yes, I am a student.", "example_sentence_native": "ඔව්, මම ශිෂ්‍යයෙක්.", "example_sentence_phonetic": "യെස්, අයි ඇම් අ ස්ටුඩන්ට්." },
+        { "id": "w2_3_2", "target": "No", "phonetic": "නෝ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "No, I am not from here.", "example_sentence_native": "නැහැ, මම මෙහේ කෙනෙක් නෙවෙයි.", "example_sentence_phonetic": "නෝ, අයි ඇම් නොට් ෆ්‍රොම් හියර්." },
+        { "id": "w2_3_3", "target": "My name is...", "phonetic": "මයි නේම් ඉස්...", "native_meaning": "මගේ නම...", "english": "My name is...", "example_sentence_target": "My name is Kamal.", "example_sentence_native": "මගේ නම කමල්.", "example_sentence_phonetic": "මයි නේම් ඉස් කමල්." },
+        { "id": "w2_3_4", "target": "I am from...", "phonetic": "අයි ඇම් ෆ්‍රොම්...", "native_meaning": "මම ... සිට", "english": "I am from...", "example_sentence_target": "I am from Sri Lanka.", "example_sentence_native": "මම ශ්‍රී ලංකාවේ සිට.", "example_sentence_phonetic": "අයි ඇම් ෆ්‍රොම් ශ්‍රී ලංකා." },
+        { "id": "w2_3_5", "target": "I speak...", "phonetic": "අයි ස්පීක්...", "native_meaning": "මම ... කතා කරනවා", "english": "I speak...", "example_sentence_target": "I speak Sinhala and a little English.", "example_sentence_native": "මම සිංහල සහ පොඩ්ඩක් ඉංග්‍රීසි කතා කරනවා.", "example_sentence_phonetic": "අයි ස්පීක් සිංහල ඇන්ඩ් අ ලිට්ල් ඉංග්ලිෂ්." },
+        { "id": "w2_3_6", "target": "I live in...", "phonetic": "අයි ලිව් ඉන්...", "native_meaning": "මම ජීවත් වෙන්නේ ...", "english": "I live in...", "example_sentence_target": "I live in Colombo.", "example_sentence_native": "මම ජීවත් වෙන්නේ කොළඹ.", "example_sentence_phonetic": "අයි ලිව් ඉන් කලම්බෝ." }
+      ],
+      "sentences": [
+        { "id": "s2_3_1", "target": "My phone number is 123-456.", "native": "මගේ දුරකථන අංකය 123-456.", "phonetic": "මයි ෆෝන් නම්බර් ඉස් වන්-ටූ-ත්‍රී-ෆෝ-ෆයිව්-සික්ස්." },
+        { "id": "s2_3_2", "target": "Yes, that is correct.", "native": "ඔව්, එය නිවැරදියි.", "phonetic": "യെස්, දැට් ඉස් කරෙක්ට්." },
+        { "id": "s2_3_3", "target": "No, I don't have a car.", "native": "නැහැ, මට කාර් එකක් නැහැ.", "phonetic": "නෝ, අයි ඩෝන්ට් හෑව් අ කාර්." },
+        { "id": "s2_3_4", "target": "I am here for work.", "native": "මම මෙහෙට ආවේ වැඩකට.", "phonetic": "අයි ඇම් හියර් ෆෝ වර්ක්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_3_1",
-          "context": "Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_3_1", "context": "තමන්ව හඳුන්වා දීම.", "lines": [
+            { "speaker": "A", "target": "Hello, what is your name?", "native": "ආයුබෝවන්, ඔයාගේ නම මොකක්ද?", "phonetic": "හෙලෝ, වොට් ඉස් යัว නේම්?" },
+            { "speaker": "B", "target": "My name is Nimal. I am from Sri Lanka.", "native": "මගේ නම නිමල්. මම ශ්‍රී ලංකාවෙන්.", "phonetic": "මයි නේම් ඉස් නිමල්. අයි ඇම් ෆ්‍රොම් ශ්‍රී ලංකා." }
           ]
         },
-        {
-          "id": "d2_3_2",
-          "context": "Formal Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_3_2", "context": "ප්‍රශ්නයකට ඔව්/නැහැ ලෙස පිළිතුරු දීම.", "lines": [
+            { "speaker": "A", "target": "Are you a tourist?", "native": "ඔබ සංචාරකයෙක්ද?", "phonetic": "ආ යූ අ ටුවරිස්ට්?" },
+            { "speaker": "B", "target": "No, I live and work here.", "native": "නැහැ, මම මෙහේ ජීවත් වෙලා වැඩ කරනවා.", "phonetic": "නෝ, අයි ලිව් ඇන්ඩ් වර්ක් හියර්." }
+          ]
+        },
+        { "id": "d2_3_3", "context": "භාෂා හැකියාව ගැන පැවසීම.", "lines": [
+            { "speaker": "A", "target": "Do you speak English?", "native": "ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "ඩු යූ ස්පීක් ඉංග්ලිෂ්?" },
+            { "speaker": "B", "target": "Yes, I speak a little English.", "native": "ඔව්, මම පොඩ්ඩක් ඉංග්‍රීසි කතා කරනවා.", "phonetic": "യെස්, අයි ස්පීක් අ ලිට්ල් ඉංග්ලිෂ්." }
+          ]
+        },
+        { "id": "d2_3_4", "context": "තොරතුරක් තහවුරු කිරීම.", "lines": [
+            { "speaker": "A", "target": "So, you live in Panadura?", "native": "එතකොට, ඔයා ජීවත් වෙන්නේ පානදුරේද?", "phonetic": "සෝ, යූ ලිව් ඉන් පානදුර?" },
+            { "speaker": "B", "target": "Yes, that is correct.", "native": "ඔව්, ඒක හරි.", "phonetic": "യെස්, දැට් ඉස් කරෙක්ට්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_3_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_3_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_3_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_3_1", "sentence": "I am ___ Sri Lanka.", "answer": "from", "hint": "මම ශ්‍රී ලංකාවෙන්" }
         ],
         "matching": [
-          {
-            "id": "m2_3_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_3_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_3_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_3_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_3_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_3_1", "target": "My name is...", "native": "මගේ නම..." },
+          { "id": "m2_3_2", "target": "I speak Sinhala.", "native": "මම සිංහල කතා කරනවා." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_3_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_3_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_3_1", "scrambled": ["from", "I", "am", "Sri Lanka"], "correct": "I am from Sri Lanka", "nativeHint": "මම ශ්‍රී ලංකාවෙන්" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D3"
-      }
+      "cultural_note": "ඔබගේ පෞද්ගලික තොරතුරු (ලිපිනය, දුරකථන අංකය වැනි) ලබා දීමේදී ප්‍රවේශම් වන්න. විශ්වාසවන්ත පුද්ගලයින්ට හෝ නිල ආයතනවලට පමණක් එම තොරතුරු ලබා දෙන්න.",
+      "pronunciation_tip": "'My name is' යන්න වේගයෙන් කීමේදී 'මයි නේ මිස්' ලෙස ඇසෙන්නට පුළුවන. එයට සවන් දී පුරුදු වන්න.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D3-Informer" }
     },
     {
       "week": 2,
       "day": 4,
-      "title": "Week 2 Day 4: Meetings",
-      "title_native": "Meetings",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 4: Asking Location",
+      "title_native": "2 වන සතිය, 4 වන දිනය: ස්ථානයක් ඇසීම",
+      "theme": "Asking Location",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_4_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_4_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_4_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_4_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_4_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_4_1", "target": "Location", "phonetic": "ලොකේෂන්", "native_meaning": "ස්ථානය", "english": "Location", "example_sentence_target": "What is your current location?", "example_sentence_native": "ඔබගේ වත්මන් ස්ථානය කුමක්ද?", "example_sentence_phonetic": "වොට් ඉස් යัว කරන්ට් ලොකේෂන්?" },
+        { "id": "w2_4_2", "target": "Address", "phonetic": "ඇඩ්‍රස්", "native_meaning": "ලිපිනය", "english": "Address", "example_sentence_target": "Can you tell me the address?", "example_sentence_native": "ඔබට ලිපිනය කියන්න පුලුවන්ද?", "example_sentence_phonetic": "කැන් යූ ටෙල් මී ද ඇඩ්‍රස්?" },
+        { "id": "w2_4_3", "target": "Near", "phonetic": "නියර්", "native_meaning": "ළඟ", "english": "Near", "example_sentence_target": "Is there a bank near here?", "example_sentence_native": "මෙතන ළඟ බැංකුවක් තියෙනවද?", "example_sentence_phonetic": "ඉස් දෙයා අ බෑන්ක් නියර් හියර්?" },
+        { "id": "w2_4_4", "target": "Far", "phonetic": "ෆාර්", "native_meaning": "දුර", "english": "Far", "example_sentence_target": "The station is not far.", "example_sentence_native": "ස්ටේෂන් එක දුර නැහැ.", "example_sentence_phonetic": "ද ස්ටේෂන් ඉස් නොට් ෆාර්." },
+        { "id": "w2_4_5", "target": "Map", "phonetic": "ම্যাপ", "native_meaning": "සිතියම", "english": "Map", "example_sentence_target": "Can you show me on the map?", "example_sentence_native": "ඔබට මට සිතියමේ පෙන්වන්න පුලුවන්ද?", "example_sentence_phonetic": "කැන් යූ ෂෝ මී ඔන් ද ම্যাপ?" },
+        { "id": "w2_4_6", "target": "Here", "phonetic": "හියර්", "native_meaning": "මෙතන", "english": "Here", "example_sentence_target": "The restaurant is here.", "example_sentence_native": "රෙස්ටෝරන්ට් එක තියෙන්නේ මෙතන.", "example_sentence_phonetic": "ද රෙස්ටෝරන්ට් ඉස් හියර්." }
+      ],
+      "sentences": [
+        { "id": "s2_4_1", "target": "Where is the bathroom?", "native": "නාන කාමරය කොහෙද?", "phonetic": "වෙයා ඉස් ද බාත්රූම්?" },
+        { "id": "s2_4_2", "target": "I am looking for the supermarket.", "native": "මම සුපර්මාර්කට් එක හොයනවා.", "phonetic": "අයි ඇම් ලුකින් ෆෝ ද සූපර්මාර්කට්." },
+        { "id": "s2_4_3", "target": "Is it far from here?", "native": "ඒක මෙතන ඉඳන් දුරද?", "phonetic": "ඉස් ඉට් ෆාර් ෆ්‍රොම් හියර්?" },
+        { "id": "s2_4_4", "target": "The embassy is on this street.", "native": "තානාපති කාර්යාලය තියෙන්නේ මේ පාරේ.", "phonetic": "ද එම්බසි ඉස් ඔන් දිස් ස්ට්‍රීට්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_4_1",
-          "context": "Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_4_1", "context": "බස් නැවතුම කොහෙදැයි ඇසීම.", "lines": [
+            { "speaker": "A", "target": "Excuse me, where is the bus stop?", "native": "සමාවෙන්න, බස් නැවතුම කොහෙද?", "phonetic": "එක්ස්කියුස් මී, වෙයා ඉස් ද බස් ස්ටොප්?" },
+            { "speaker": "B", "target": "It is just around the corner.", "native": "ඒක තියෙන්නේ මෙතන කෝනර් එකේ.", "phonetic": "ඉට් ඉස් ජස්ට් අරවුන්ඩ් ද කෝනර්." }
           ]
         },
-        {
-          "id": "d2_4_2",
-          "context": "Formal Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_4_2", "context": "ලිපිනයක් සොයා ගැනීම.", "lines": [
+            { "speaker": "A", "target": "I am looking for this address. Can you help me?", "native": "මම මේ ඇඩ්‍රස් එක හොයනවා. මට උදව් කරන්න පුලුවන්ද?", "phonetic": "අයි ඇම් ලුකින් ෆෝ දිස් ඇඩ්‍රස්. කැන් යූ හෙල්ප් මී?" },
+            { "speaker": "B", "target": "Yes, it is that building over there.", "native": "ඔව්, අර තියෙන බිල්ඩින් එක තමයි.", "phonetic": "യെස්, ඉට් ඉස් දැට් බිල්ඩින් ඕවර් දෙයා." }
+          ]
+        },
+        { "id": "d2_4_3", "context": "දුර ප්‍රමාණය ඇසීම.", "lines": [
+            { "speaker": "A", "target": "How far is the airport from here?", "native": "මෙතන ඉඳන් එයාපෝට් එකට කොච්චර දුරද?", "phonetic": "හව් ෆාර් ඉස් ද එයාපෝට් ෆ්‍රොම් හියර්?" },
+            { "speaker": "B", "target": "It's about 30 minutes by taxi.", "native": "ටැක්සියෙන් විනාඩි 30ක් විතර යනවා.", "phonetic": "ඉට්ස් අබවුට් තර්ටි මිනිට්ස් බයි ටැක්සි." }
+          ]
+        },
+        { "id": "d2_4_4", "context": "සිතියමක ස්ථානයක් ඇසීම.", "lines": [
+            { "speaker": "A", "target": "We are here. Where is the museum?", "native": "අපි ඉන්නේ මෙතන. මියුසියම් එක තියෙන්නේ කොහෙද?", "phonetic": "වී ආ හියර්. වෙයා ඉස් ද මියුසියම්?" },
+            { "speaker": "B", "target": "You need to go straight and then turn left.", "native": "ඔයා කෙලින්ම ගිහින් වමට හැරෙන්න ඕන.", "phonetic": "යූ නීඩ් ටು ගෝ ස්ට්‍රේට් ඇන්ඩ් දෙන් ටර්න් ලෙෆ්ට්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_4_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_4_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_4_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_4_1", "sentence": "Where is the ___ station?", "answer": "train", "hint": "දුම්රිය ස්ථානය කොහෙද?" }
         ],
         "matching": [
-          {
-            "id": "m2_4_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_4_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_4_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_4_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_4_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_4_1", "target": "Near here", "native": "මෙතන ළඟ" },
+          { "id": "m2_4_2", "target": "Far from here", "native": "මෙතන ඉඳන් දුර" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_4_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_4_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_4_1", "scrambled": ["is", "the", "Where", "bank", "?"], "correct": "Where is the bank?", "nativeHint": "බැංකුව කොහෙද?" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D4"
-      }
+      "cultural_note": "ස්ථානයක් ගැන විමසීමේදී, ඔබ සතුව ලිපිනය හෝ ස්ථානයේ නම ලියාගත් කඩදාසියක් හෝ දුරකතනයේ පෙන්වීමෙන් සන්නිවේදනය පහසු කරගත හැක.",
+      "pronunciation_tip": "'Where' (වෙයා) සහ 'Here' (හියර්) යන වචන දෙකේ ශබ්දය වෙනස් වේ. 'Where' හි 'ව' ශබ්දයත් 'Here' හි 'හ' ශබ්දයත් නිවැරදිව උච්චාරණය කිරීමට පුරුදු වන්න.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D4-Locator" }
     },
     {
       "week": 2,
       "day": 5,
-      "title": "Week 2 Day 5: Job Titles",
-      "title_native": "Job Titles",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 5: Directions",
+      "title_native": "2 වන සතිය, 5 වන දිනය: දිශාවන්",
+      "theme": "Directions",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_5_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_5_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_5_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_5_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_5_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_5_1", "target": "Right", "phonetic": "රයිට්", "native_meaning": "දකුණ", "english": "Right", "example_sentence_target": "Turn right at the corner.", "example_sentence_native": "කෝනර් එකෙන් දකුණට හැරෙන්න.", "example_sentence_phonetic": "ටර්න් රයිට් ඇට් ද කෝනර්." },
+        { "id": "w2_5_2", "target": "Left", "phonetic": "ලෙෆ්ට්", "native_meaning": "වම", "english": "Left", "example_sentence_target": "The shop is on your left.", "example_sentence_native": "කඩේ තියෙන්නේ ඔයාගේ වම් පැත්තේ.", "example_sentence_phonetic": "ද ෂොප් ඉස් ඔන් යัว ලෙෆ්ට්." },
+        { "id": "w2_5_3", "target": "Straight", "phonetic": "ස්ට්‍රේට්", "native_meaning": "කෙලින්", "english": "Straight", "example_sentence_target": "Go straight ahead.", "example_sentence_native": "කෙලින්ම යන්න.", "example_sentence_phonetic": "ගෝ ස්ට්‍රේට් අහෙඩ්." },
+        { "id": "w2_5_4", "target": "Next to", "phonetic": "නෙක්ස්ට් ටು", "native_meaning": "ඊළඟට", "english": "Next to", "example_sentence_target": "The pharmacy is next to the bank.", "example_sentence_native": "ෆාමසිය තියෙන්නේ බැංකුව ළඟ.", "example_sentence_phonetic": "ද ෆාමසි ඉස් නෙක්ස්ට් ටು ද බෑන්ක්." },
+        { "id": "w2_5_5", "target": "Opposite", "phonetic": "ඔපසිට්", "native_meaning": "ඉදිරිපිට", "english": "Opposite", "example_sentence_target": "My house is opposite the park.", "example_sentence_native": "මගේ ගේ තියෙන්නේ පාර්ක් එක ඉස්සරහ.", "example_sentence_phonetic": "මයි හවුස් ඉස් ඔපසිට් ද පාර්ක්." },
+        { "id": "w2_5_6", "target": "Street", "phonetic": "ස්ට්‍රීට්", "native_meaning": "පාර", "english": "Street", "example_sentence_target": "Walk down this street.", "example_sentence_native": "මේ පාර දිගේ යන්න.", "example_sentence_phonetic": "වෝක් ඩවුන් දිස් ස්ට්‍රීට්." }
+      ],
+      "sentences": [
+        { "id": "s2_5_1", "target": "Go straight for 100 meters.", "native": "මීටර් 100ක් කෙලින් යන්න.", "phonetic": "ගෝ ස්ට්‍රේට් ෆෝ හන්ඩ්‍රඩ් මීටර්ස්." },
+        { "id": "s2_5_2", "target": "Take the second left.", "native": "දෙවනි වම් පැත්තට හැරෙන්න.", "phonetic": "ටේක් ද සෙකන්ඩ් ලෙෆ්ට්." },
+        { "id": "s2_5_3", "target": "The entrance is on the right.", "native": "ඇතුල්වෙන තැන තියෙන්නේ දකුණු පැත්තේ.", "phonetic": "ද එන්ට්‍රන්ස් ඉස් ඔන් ද රයිට්." },
+        { "id": "s2_5_4", "target": "It is opposite the big red building.", "native": "ඒක තියෙන්නේ ලොකු රතු බිල්ඩින් එක ඉස්සරහ.", "phonetic": "ඉට් ඉස් ඔපසිට් ද බිග් රෙඩ් බිල්ඩින්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_5_1",
-          "context": "Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_5_1", "context": "පාර අසා දැන ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Excuse me, how do I get to the post office?", "native": "සමාවෙන්න, මම පෝස්ට් ඔෆිස් එකට යන්නේ කොහොමද?", "phonetic": "එක්ස්කියුස් මී, හව් ඩු අයි ගෙට් ටು ද පෝස්ට් ඔෆිස්?" },
+            { "speaker": "B", "target": "Go straight, then turn right. It's next to the library.", "native": "කෙලින් ගිහින් දකුණට හැරෙන්න. ඒක ලයිබ්‍රිය ළඟ තියෙන්නේ.", "phonetic": "ගෝ ස්ට්‍රේට්, දෙන් ටර්න් රයිට්. ඉට්ස් නෙක්ස්ට් ටು ද ලයිබ්‍රරි." }
           ]
         },
-        {
-          "id": "d2_5_2",
-          "context": "Formal Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_5_2", "context": "ටැක්සි රියදුරෙකුට මග පැවසීම.", "lines": [
+            { "speaker": "A", "target": "Please turn left at the next traffic light.", "native": "කරුණාකර ඊළඟ ට්‍රැෆික් ලයිට් එකෙන් වමට හරවන්න.", "phonetic": "ප්ලීස් ටර්න් ලෙෆ්ට් ඇට් ද නෙක්ස්ට් ට්‍රැෆික් ලයිට්." },
+            { "speaker": "B", "target": "Okay, left turn.", "native": "හරි, වමට හරවනවා.", "phonetic": "ඕකේ, ලෙෆ්ට් ටර්න්." }
+          ]
+        },
+        { "id": "d2_5_3", "context": "නැතිවූ ස්ථානයක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "I am looking for 'Main Street'. Am I going the right way?", "native": "මම 'මේන් ස්ට්‍රීට්' එක හොයනවා. මම යන්නේ හරි පාරෙද?", "phonetic": "අයි ඇම් ලුකින් ෆෝ 'මේන් ස්ට්‍රීට්'. ඇම් අයි ගොයින් ද රයිට් වේ?" },
+            { "speaker": "B", "target": "No, you need to go back. It is in the opposite direction.", "native": "නැහැ, ඔයා ආපහු යන්න ඕන. ඒක තියෙන්නේ අනිත් පැත්තේ.", "phonetic": "නෝ, යූ නීඩ් ටು ගෝ බෑක්. ඉට් ඉස් ඉන් ද ඔපසිට් ඩිරෙක්ෂන්." }
+          ]
+        },
+        { "id": "d2_5_4", "context": "මග පෙන්වීමක් තහවුරු කරගැනීම.", "lines": [
+            { "speaker": "A", "target": "So, I go straight and then the first left?", "native": "එතකොට, මම කෙලින් ගිහින් පළවෙනි වම් පැත්තටද යන්න ඕන?", "phonetic": "සෝ, අයි ගෝ ස්ට්‍රේට් ඇන්ඩ් දෙන් ද ෆර්ස්ට් ලෙෆ්ට්?" },
+            { "speaker": "B", "target": "Yes, that is correct.", "native": "ඔව්, ඒක හරි.", "phonetic": "യെස්, දැට් ඉස් කරෙක්ට්." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_5_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_5_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_5_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_5_1", "sentence": "Turn ___ at the traffic light.", "answer": "right", "hint": "දකුණට හැරෙන්න" }
         ],
         "matching": [
-          {
-            "id": "m2_5_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_5_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_5_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_5_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_5_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_5_1", "target": "Go straight", "native": "කෙලින් යන්න" },
+          { "id": "m2_5_2", "target": "Turn left", "native": "වමට හැරෙන්න" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_5_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_5_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_5_1", "scrambled": ["left", "the", "on", "is", "It"], "correct": "It is on the left", "nativeHint": "එය වම් පසින් ඇත" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D5"
-      }
+      "cultural_note": "දිශාවන් අසන විට, අතින් දිශාව පෙන්වා තහවුරු කරගැනීම වරදවා වටහාගැනීම් වලක්වා ගැනීමට උපකාරී වේ. 'Is this way correct?' (මේ පාර හරිද?) ලෙස ඇසීමෙන් තහවුරු කරගත හැක.",
+      "pronunciation_tip": "'Right' (රයිට්) සහ 'Left' (ලෙෆ්ට්) යන වචන දෙක පැහැදිලිව උච්චාරණය කිරීම ඉතා වැදගත් වේ. 'R' සහ 'L' ශබ්ද අතර වෙනස හොඳින් පුරුදු වන්න.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D5-Navigator" }
     },
     {
       "week": 2,
       "day": 6,
-      "title": "Week 2 Day 6: Working Hours",
-      "title_native": "Working Hours",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 6: Public Places",
+      "title_native": "2 වන සතිය, 6 වන දිනය: පොදු ස්ථාන",
+      "theme": "Public Places",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_6_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_6_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_6_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_6_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_6_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_6_1", "target": "Hospital", "phonetic": "හොස්පිටල්", "native_meaning": "රෝහල", "english": "Hospital", "example_sentence_target": "The hospital is two blocks away.", "example_sentence_native": "රෝහල බ්ලොක් දෙකක් එහායින්.", "example_sentence_phonetic": "ද හොස්පිටල් ඉස් ටූ බ්ලොක්ස් අවේ." },
+        { "id": "w2_6_2", "target": "Bank", "phonetic": "බෑන්ක්", "native_meaning": "බැංකුව", "english": "Bank", "example_sentence_target": "I need to go to the bank.", "example_sentence_native": "මට බැංකුවට යන්න ඕන.", "example_sentence_phonetic": "අයි නීඩ් ටು ගෝ ටು ද බෑන්ක්." },
+        { "id": "w2_6_3", "target": "Supermarket", "phonetic": "සූපර්මාර්කට්", "native_meaning": "සුපිරි වෙළඳසැල", "english": "Supermarket", "example_sentence_target": "Let's go to the supermarket.", "example_sentence_native": "අපි සුපිරි වෙළඳසැලට යමු.", "example_sentence_phonetic": "ලෙට්ස් ගෝ ටು ද සූපර්මාර්කට්." },
+        { "id": "w2_6_4", "target": "Restaurant", "phonetic": "රෙස්ටෝරන්ට්", "native_meaning": "ආපන ශාලාව", "english": "Restaurant", "example_sentence_target": "This is a good restaurant.", "example_sentence_native": "මේක හොඳ ආපන ශාලාවක්.", "example_sentence_phonetic": "දිස් ඉස් අ ගුඩ් රෙස්ටෝරන්ට්." },
+        { "id": "w2_6_5", "target": "Police Station", "phonetic": "පොලීස් ස්ටේෂන්", "native_meaning": "පොලිස් ස්ථානය", "english": "Police Station", "example_sentence_target": "Where is the police station?", "example_sentence_native": "පොලිස් ස්ථානය කොහෙද?", "example_sentence_phonetic": "වෙයා ඉස් ද පොලීස් ස්ටේෂන්?" },
+        { "id": "w2_6_6", "target": "Pharmacy", "phonetic": "ෆාමසි", "native_meaning": "ෆාමසිය", "english": "Pharmacy", "example_sentence_target": "I need to find a pharmacy.", "example_sentence_native": "මට ෆාමසියක් හොයාගන්න ඕන.", "example_sentence_phonetic": "අයි නීඩ් ටು ෆයින්ඩ් අ ෆාමසි." }
+      ],
+      "sentences": [
+        { "id": "s2_6_1", "target": "Is there a park nearby?", "native": "මේ ළඟ පාර්ක් එකක් තියෙනවද?", "phonetic": "ඉස් දෙයා අ පාර්ක් නියර්බායි?" },
+        { "id": "s2_6_2", "target": "The market is open until 9 PM.", "native": "මාකට් එක රෑ 9 වෙනකම් ඇරලා.", "phonetic": "ද මාකට් ඉස් ඕපන් අන්ටිල් නයින් පී.එම්." },
+        { "id": "s2_6_3", "target": "I am going to the library.", "native": "මම ලයිබ්‍රියට යනවා.", "phonetic": "අයි ඇම් ගොයින් ටು ද ලයිබ්‍රරි." },
+        { "id": "s2_6_4", "target": "The school is next to the temple.", "native": "ඉස්කෝලේ තියෙන්නේ පන්සල ළඟ.", "phonetic": "ද ස්කූල් ඉස් නෙක්ස්ට් ටು ද ටෙම්පල්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_6_1",
-          "context": "Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_6_1", "context": "ෆාමසියක් සොයා ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Excuse me, where is the nearest pharmacy?", "native": "සමාවෙන්න, ළඟම තියෙන ෆාමසිය කොහෙද?", "phonetic": "එක්ස්කියුස් මී, වෙයා ඉස් ද නියරස්ට් ෆාමසි?" },
+            { "speaker": "B", "target": "There is one opposite the supermarket.", "native": "සුපර්මාර්කට් එක ඉස්සරහ එකක් තියෙනවා.", "phonetic": "දෙයා ඉස් වන් ඔපසිට් ද සූපර්මාර්කට්." }
           ]
         },
-        {
-          "id": "d2_6_2",
-          "context": "Formal Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_6_2", "context": "බැංකුවක් විවෘත වේලාවන් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "What time does the bank open?", "native": "බැංකුව අරින්නේ කීයටද?", "phonetic": "වොට් ටයිම් ඩස් ද බෑන්ක් ඕපන්?" },
+            { "speaker": "B", "target": "It opens at 9 AM.", "native": "උදේ 9 ට අරිනවා.", "phonetic": "ඉට් ඕපන්ස් ඇට් නයින් ඒ.එම්." }
+          ]
+        },
+        { "id": "d2_6_3", "context": "ආපනශාලාවක් ගැන නිර්දේශයක් ඉල්ලීම.", "lines": [
+            { "speaker": "A", "target": "Is there a good restaurant near here?", "native": "මෙතන ළඟ හොඳ රෙස්ටෝරන්ට් එකක් තියෙනවද?", "phonetic": "ඉස් දෙයා අ ගුඩ් රෙස්ටෝරන්ට් නියර් හියර්?" },
+            { "speaker": "B", "target": "Yes, the Italian restaurant on the next street is very good.", "native": "ඔව්, ඊළඟ පාරේ තියෙන ඉතාලි රෙස්ටෝරන්ට් එක හරිම හොඳයි.", "phonetic": "യെස්, ද ඉටැලියන් රෙස්ටෝරන්ට් ඔන් ද නෙක්ස්ට් ස්ට්‍රීට් ඉස් වෙරි ගුඩ්." }
+          ]
+        },
+        { "id": "d2_6_4", "context": "හදිසි අවස්ථාවකදී පොලිසිය සොයා ගැනීම.", "lines": [
+            { "speaker": "A", "target": "Help! I need the police. Where is the police station?", "native": "උදව්! මට පොලිසිය ඕන. පොලීසිය කොහෙද?", "phonetic": "හෙල්ප්! අයි නීඩ් ද පොලීස්. වෙයා ඉස් ද පොලීස් ස්ටේෂන්?" },
+            { "speaker": "B", "target": "It's two streets away. I will show you.", "native": "පාරවල් දෙකක් එහා. මම ඔයාට පෙන්නන්නම්.", "phonetic": "ඉට්ස් ටූ ස්ට්‍රීට්ස් අවේ. අයි විල් ෂෝ යූ." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_6_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_6_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_6_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_6_1", "sentence": "I need to go to the ___.", "answer": "hospital", "hint": "මට රෝහලට යාමට අවශ්‍යයි." }
         ],
         "matching": [
-          {
-            "id": "m2_6_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_6_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_6_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_6_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_6_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_6_1", "target": "Supermarket", "native": "සුපිරි වෙළඳසැල" },
+          { "id": "m2_6_2", "target": "Police Station", "native": "පොලිස් ස්ථානය" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_6_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_6_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_6_1", "scrambled": ["the", "is", "bank", "Where", "?"], "correct": "Where is the bank?", "nativeHint": "බැංකුව කොහෙද?" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D6"
-      }
+      "cultural_note": "පොදු ස්ථාන වල නම් (Hospital, Bank) ඉංග්‍රීසියෙන් දැන සිටීම ඉතා ප්‍රයෝජනවත් වේ. බොහෝ රටවල මෙම ස්ථානවල නාම පුවරු ඉංග්‍රීසියෙන් ද සඳහන් වේ.",
+      "pronunciation_tip": "'Restaurant' (රෙස්ටෝරන්ට්) යන වචනය උච්චාරණය කිරීමේදී, මැද ඇති 'tau' ශබ්දය මදක් සැහැල්ලුවෙන් කියන්න. 'res-to-ront' ලෙස සිතා පුරුදු වන්න.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D6-Explorer" }
     },
     {
       "week": 2,
       "day": 7,
-      "title": "Week 2 Day 7: Work Culture",
-      "title_native": "Work Culture",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 7: Travel",
+      "title_native": "2 වන සතිය, 7 වන දිනය: ගමන් බිමන්",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w2_7_1",
-          "target": "Work",
-          "phonetic": "Work",
-          "native_meaning": "වැඩ",
-          "english": "Work",
-          "example_sentence_target": "Work.",
-          "example_sentence_native": "වැඩ."
-        },
-        {
-          "id": "w2_7_2",
-          "target": "Office",
-          "phonetic": "Office",
-          "native_meaning": "කාර්යාලය",
-          "english": "Office",
-          "example_sentence_target": "Office.",
-          "example_sentence_native": "කාර්යාලය."
-        },
-        {
-          "id": "w2_7_3",
-          "target": "Meeting",
-          "phonetic": "Meeting",
-          "native_meaning": "රැස්වීම",
-          "english": "Meeting",
-          "example_sentence_target": "Meeting.",
-          "example_sentence_native": "රැස්වීම."
-        },
-        {
-          "id": "w2_7_4",
-          "target": "Colleague",
-          "phonetic": "Colleague",
-          "native_meaning": "සගය",
-          "english": "Colleague",
-          "example_sentence_target": "Colleague.",
-          "example_sentence_native": "සගය."
-        },
-        {
-          "id": "w2_7_5",
-          "target": "Boss",
-          "phonetic": "Boss",
-          "native_meaning": "ලොක්කා",
-          "english": "Boss",
-          "example_sentence_target": "Boss.",
-          "example_sentence_native": "ලොක්කා."
-        }
+        { "id": "w2_7_1", "target": "Bus", "phonetic": "බස්", "native_meaning": "බසය", "english": "Bus", "example_sentence_target": "I take the bus to work.", "example_sentence_native": "මම වැඩට යන්නේ බස් එකේ.", "example_sentence_phonetic": "අයි ටේක් ද බස් ටು වර්ක්." },
+        { "id": "w2_7_2", "target": "Train", "phonetic": "ට්‍රේන්", "native_meaning": "දුම්රිය", "english": "Train", "example_sentence_target": "The train is late.", "example_sentence_native": "දුම්රිය පරක්කුයි.", "example_sentence_phonetic": "ද ට්‍රේන් ඉස් ලේට්." },
+        { "id": "w2_7_3", "target": "Taxi", "phonetic": "ටැක්සි", "native_meaning": "ටැක්සිය", "english": "Taxi", "example_sentence_target": "Let's call a taxi.", "example_sentence_native": "අපි ටැක්සියකට කතා කරමු.", "example_sentence_phonetic": "ලෙට්ස් කෝල් අ ටැක්සි." },
+        { "id": "w2_7_4", "target": "Airport", "phonetic": "එයාපෝට්", "native_meaning": "ගුවන් තොටුපළ", "english": "Airport", "example_sentence_target": "I need to go to the airport.", "example_sentence_native": "මට ගුවන් තොටුපළට යන්න ඕන.", "example_sentence_phonetic": "අයි නීඩ් ටು ගෝ ටು ද එයාපෝට්." },
+        { "id": "w2_7_5", "target": "Ticket", "phonetic": "ටිකට්", "native_meaning": "ටිකට් පත", "english": "Ticket", "example_sentence_target": "One ticket to Kandy, please.", "example_sentence_native": "කරුණාකර මහනුවරට එක ටිකට් එකක්.", "example_sentence_phonetic": "වන් ටිකට් ටು කැන්ඩි, ප්ලීස්." },
+        { "id": "w2_7_6", "target": "Station", "phonetic": "ස්ටේෂන්", "native_meaning": "ස්ථානය", "english": "Station", "example_sentence_target": "This is the final station.", "example_sentence_native": "මේක තමයි අන්තිම ස්ටේෂන් එක.", "example_sentence_phonetic": "දිස් ඉස් ද ෆයිනල් ස්ටේෂන්." }
+      ],
+      "sentences": [
+        { "id": "s2_7_1", "target": "Which bus goes to the city center?", "native": "නගර මධ්‍යයට යන්නේ මොන බස් එකද?", "phonetic": "විච් බස් ගෝස් ටು ද සිටි සෙන්ටර්?" },
+        { "id": "s2_7_2", "target": "How much is a ticket to the airport?", "native": "එයාපෝට් එකට ටිකට් එකක් කීයද?", "phonetic": "හව් මච් ඉස් අ ටිකට් ටು ද එයාපෝට්?" },
+        { "id": "s2_7_3", "target": "The next train arrives in 10 minutes.", "native": "ඊළඟ කෝච්චිය මිනිත්තු 10කින් එනවා.", "phonetic": "ද නෙක්ස්ට් ට්‍රේන් අරයිව්ස් ඉන් ටෙන් මිනිට්ස්." },
+        { "id": "s2_7_4", "target": "I would like to book a flight.", "native": "මම ගුවන් ගමනක් වෙන්කරවා ගන්න කැමතියි.", "phonetic": "අයි වුඩ් ලයික් ටು බුක් අ ෆ්ලයිට්." }
       ],
       "dialogues": [
-        {
-          "id": "d2_7_1",
-          "context": "Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Work!",
-              "native": "වැඩ!",
-              "phonetic": "Work"
-            },
-            {
-              "speaker": "B",
-              "target": "Work! Office!",
-              "native": "වැඩ! කාර්යාලය!",
-              "phonetic": "Work Office"
-            },
-            {
-              "speaker": "A",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            }
+        { "id": "d2_7_1", "context": "බස් ටිකට් පතක් මිලදී ගැනීම.", "lines": [
+            { "speaker": "A", "target": "One ticket to the museum, please.", "native": "කරුණාකර මියුසියම් එකට එක ටිකට් එකක්.", "phonetic": "වන් ටිකට් ටು ද මියුසියම්, ප්ලීස්." },
+            { "speaker": "B", "target": "That will be 2 dollars.", "native": "ඩොලර් 2ක් වෙනවා.", "phonetic": "දැට් විල් බී ටූ ඩොලර්ස්." }
           ]
         },
-        {
-          "id": "d2_7_2",
-          "context": "Formal Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Office!",
-              "native": "කාර්යාලය!",
-              "phonetic": "Office"
-            },
-            {
-              "speaker": "B",
-              "target": "Meeting!",
-              "native": "රැස්වීම!",
-              "phonetic": "Meeting"
-            },
-            {
-              "speaker": "A",
-              "target": "Colleague! Boss!",
-              "native": "සගය! ලොක්කා!",
-              "phonetic": "Colleague Boss"
-            }
+        { "id": "d2_7_2", "context": "දුම්රිය වේදිකාවක් ගැන විමසීම.", "lines": [
+            { "speaker": "A", "target": "Excuse me, which platform is for the train to Galle?", "native": "සමාවෙන්න, ගාල්ලට යන කෝච්චිය තියෙන්නේ මොන ප්ලැට්ෆෝම් එකේද?", "phonetic": "එක්ස්කියුස් මී, විච් ප්ලැට්ෆෝම් ඉස් ෆෝ ද ට්‍රේන් ටು ගෝල්?" },
+            { "speaker": "B", "target": "Platform 4. It is on your left.", "native": "ප්ලැට්ෆෝම් 4. ඒක ඔයාගේ වම් පැත්තේ තියෙන්නේ.", "phonetic": "ප්ලැට්ෆෝම් ෆෝ. ඉට් ඉස් ඔන් යัว ලෙෆ්ට්." }
+          ]
+        },
+        { "id": "d2_7_3", "context": "ටැක්සියක් ඇමතීම.", "lines": [
+            { "speaker": "A", "target": "Can I get a taxi to this address?", "native": "මට මේ ඇඩ්‍රස් එකට ටැක්සියක් ගන්න පුලුවන්ද?", "phonetic": "කැන් අයි ගෙට් අ ටැක්සි ටು දිස් ඇඩ්‍රස්?" },
+            { "speaker": "B", "target": "Yes, a car will be there in 5 minutes.", "native": "ඔව්, විනාඩි 5කින් කාර් එකක් එයි.", "phonetic": "യെස්, අ කාර් විල් බී දෙයා ඉන් ෆයිව් මිනිට්ස්." }
+          ]
+        },
+        { "id": "d2_7_4", "context": "ගුවන් තොටුපලේදී තොරතුරු විමසීම.", "lines": [
+            { "speaker": "A", "target": "Where is the check-in for SriLankan Airlines?", "native": "ශ්‍රී ලංකන් එයාර්ලයින්ස් වල චෙක්-ඉන් කවුන්ටරය කොහෙද?", "phonetic": "වෙයා ඉස් ද චෙක්-ඉන් ෆෝ ශ්‍රී ලංකන් එයාර්ලයින්ස්?" },
+            { "speaker": "B", "target": "It's in Terminal 2, counters 50 to 60.", "native": "ඒක තියෙන්නේ ටර්මිනල් 2 එකේ, කවුන්ටර් 50 ඉඳන් 60 වෙනකම්.", "phonetic": "ඉට්ස් ඉන් ටර්මිනල් ටූ, කවුන්ටර්ස් ෆිෆ්ටි ටು සික්ස්ටි." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb2_7_1",
-            "sentence": "___ means 'Work' in English",
-            "answer": "Work",
-            "hint": "වැඩ"
-          },
-          {
-            "id": "fb2_7_2",
-            "sentence": "___ means 'Office' in English",
-            "answer": "Office",
-            "hint": "කාර්යාලය"
-          },
-          {
-            "id": "fb2_7_3",
-            "sentence": "___ means 'Meeting' in English",
-            "answer": "Meeting",
-            "hint": "රැස්වීම"
-          }
+          { "id": "fb2_7_1", "sentence": "I need one ___ to the city.", "answer": "ticket", "hint": "මට නගරයට එක ටිකට් පතක් අවශ්‍යයි." }
         ],
         "matching": [
-          {
-            "id": "m2_7_1",
-            "target": "Work",
-            "native": "වැඩ"
-          },
-          {
-            "id": "m2_7_2",
-            "target": "Office",
-            "native": "කාර්යාලය"
-          },
-          {
-            "id": "m2_7_3",
-            "target": "Meeting",
-            "native": "රැස්වීම"
-          },
-          {
-            "id": "m2_7_4",
-            "target": "Colleague",
-            "native": "සගය"
-          },
-          {
-            "id": "m2_7_5",
-            "target": "Boss",
-            "native": "ලොක්කා"
-          }
+          { "id": "m2_7_1", "target": "Train station", "native": "දුම්රිය ස්ථානය" },
+          { "id": "m2_7_2", "target": "Bus stop", "native": "බස් නැවතුම" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc2_7_1",
-            "question": "What does 'Work' mean?",
-            "options": [
-              "වැඩ",
-              "කාර්යාලය",
-              "රැස්වීම",
-              "සගය"
-            ],
-            "correct": 0,
-            "explanation": "'Work' means වැඩ in Sinhala."
-          },
-          {
-            "id": "mc2_7_2",
-            "question": "How do you say 'කාර්යාලය' in English?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 1,
-            "explanation": "'Office' means කාර්යාලය."
-          }
+        "sentenceScramble": [
+          { "id": "ss2_7_1", "scrambled": ["to", "go", "I", "airport", "the", "need", "to"], "correct": "I need to go to the airport", "nativeHint": "මට ගුවන් තොටුපළට යාමට අවශ්‍යයි" }
         ]
       },
-      "cultural_note": "Learning English opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice English pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D7"
-      }
+      "cultural_note": "පොදු ප්‍රවාහන සේවා භාවිතා කරන විට, ඔබගේ වාරය එනතුරු පෝලිමේ සිටීම සහ අන් අයට ඉඩ දීම වැදගත් ආචාර ධර්මයකි. සමහර රටවල, බසයට නැගීමට පෙර ටිකට් පතක් මිලදී ගත යුතුය.",
+      "pronunciation_tip": "'Ticket' (ටිකට්) යන වචනයේ 'T' ශබ්දය තදින් උච්චාරණය කරන්න. 'ටී-කට්' ලෙස ශබ්ද කිරීමට පුරුදු වන්න. 'Train' හි 'Tr' ශබ්දය 'ට්‍ර' ලෙස උච්චාරණය කරන්න.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "W2D7-Traveler" }
     }
   ]
 }
