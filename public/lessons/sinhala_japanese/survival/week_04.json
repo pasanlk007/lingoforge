@@ -7,1325 +7,408 @@
     {
       "week": 4,
       "day": 1,
-      "title": "Week 4 Day 1: Telling the Time",
-      "title_native": "Telling the Time",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 1: Basic Food Items",
+      "title_native": "සතිය 4, දිනය 1: මූලික ආහාර ද්‍රව්‍ය",
+      "theme": "Basic Food & Drinks",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_1_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_1_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_1_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_1_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_1_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_1_1","target":"水 (mizu)","phonetic":"මි-සු","native_meaning":"වතුර","english":"water","example_sentence_target":"水をください (mizu o kudasai)","example_sentence_native":" කරුණාකර වතුර දෙන්න","example_sentence_phonetic":"මි-සු-ඔ-කු-ද-සයි"},
+        {"id":"w4_1_2","target":"ご飯 (gohan)","phonetic":"ගො-හන්","native_meaning":"බත්","english":"rice/meal","example_sentence_target":"ご飯を食べます (gohan o tabemasu)","example_sentence_native":"මම බත් කනවා","example_sentence_phonetic":"ගො-හන්-ඔ-ත-බෙ-ම-සු"},
+        {"id":"w4_1_3","target":"パン (pan)","phonetic":"පන්","native_meaning":"පාන්","english":"bread","example_sentence_target":"パンが好きです (pan ga suki desu)","example_sentence_native":"මම පාන් වලට කැමතියි","example_sentence_phonetic":"පන්-ග-සු-කි-දෙ-සු"},
+        {"id":"w4_1_4","target":"肉 (niku)","phonetic":"නි-කු","native_meaning":"මස්","english":"meat","example_sentence_target":"これは何の肉ですか (kore wa nan no niku desu ka)","example_sentence_native":"මේ මොන මස් ද?","example_sentence_phonetic":"කො-රෙ-ව-නන්-නො-නි-කු-දෙ-සු-ක"},
+        {"id":"w4_1_5","target":"魚 (sakana)","phonetic":"ස-ක-නා","native_meaning":"මාළු","english":"fish","example_sentence_target":"魚料理をお願いします (sakana ryouri o onegaishimasu)","example_sentence_native":"කරුණාකර මාළු කෑමක් දෙන්න","example_sentence_phonetic":"ස-ක-නා-ර්යෝ-රි-ඔ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"w4_1_6","target":"野菜 (yasai)","phonetic":"ය-සයි","native_meaning":"එළවළු","english":"vegetable","example_sentence_target":"野菜サラダを食べたいです (yasai sarada o tabetai desu)","example_sentence_native":"මට එළවළු සලාදයක් කන්න අවශ්‍යයි","example_sentence_phonetic":"ය-සයි-ස-ර-දා-ඔ-ත-බෙ-තයි-දෙ-සු"}
+      ],
+      "sentences": [
+        {"id":"s4_1_1","target":"お腹が空きました (onaka ga sukimashita)","native":"මට බඩගිනියි","phonetic":"ඔ-න-කා-ග-සු-කි-ම-ෂි-තා"},
+        {"id":"s4_1_2","target":"喉が渇きました (nodo ga kawakimashita)","native":"මට තිබහයි","phonetic":"නො-දො-ග-ක-ව-කි-ම-ෂි-තා"},
+        {"id":"s4_1_3","target":"これは美味しいです (kore wa oishii desu)","native":"මේක රසයි","phonetic":"කො-රෙ-ව-ඔ-ඉ-ෂී-දෙ-සු"},
+        {"id":"s4_1_4","target":"アレルギーがあります (arerugii ga arimasu)","native":"මට අසාත්මිකතා (ආසාත්මිකතා) තියෙනවා","phonetic":"අ-රෙ-රු-ගී-ග-අ-රි-ම-සු"}
       ],
       "dialogues": [
-        {
-          "id": "d4_1_1",
-          "context": "Telling the Time",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_1_2",
-          "context": "Formal Telling the Time",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_1_1","context":"ආපන ශාලාවකදී වේටර්වරයෙකු සමඟ","lines":[
+          {"speaker":"A","target":"すみません、水を一杯お願いします (sumimasen, mizu o ippai onegaishimasu)","native":"සමාවෙන්න, කරුණාකර වතුර වීදුරුවක් දෙන්න.","phonetic":"සු-මි-ම-සෙන්, මි-සු-ඔ-ඉප්-පයි-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+          {"speaker":"B","target":"はい、かしこまりました (hai, kashikomarimashita)","native":"ඔව්, වහාම ගෙන එන්නම්.","phonetic":"හයි, ක-ෂි-කො-ම-රි-ම-ෂි-තා"}
+        ]},
+        {"id":"d4_1_2","context":"ආහාර ගැන කතා කිරීම","lines":[
+          {"speaker":"A","target":"日本料理では何が好きですか (nihon ryouri dewa nani ga suki desu ka)","native":"ජපන් කෑම වලින් ඔබ මොනවටද කැමති?","phonetic":"නි-හොන්-ර්යෝ-රි-දෙ-ව-න-නි-ග-සු-කි-දෙ-සු-ක"},
+          {"speaker":"B","target":"寿司とラーメンが好きです (sushi to raamen ga suki desu)","native":"මම සුෂී සහ රාමන් වලට කැමතියි.","phonetic":"සු-ෂි-තො-රා-මෙන්-ග-සු-කි-දෙ-සු"}
+        ]},
+        {"id":"d4_1_3","context":"වෙළඳපොළේදී එළවළු මිලදී ගැනීම","lines":[
+          {"speaker":"A","target":"この野菜はいくらですか (kono yasai wa ikura desu ka)","native":"මේ එළවළුව කීයද?","phonetic":"කො-නො-ය-සයි-ව-ඉ-කු-රා-දෙ-සු-ක"},
+          {"speaker":"B","target":"それは三百円です (sore wa sanbyaku en desu)","native":"ඒක යෙන් තුන්සීයයි.","phonetic":"සො-රෙ-ව-සන්-බ්‍ය-කු-එන්-දෙ-සු"}
+        ]},
+        {"id":"d4_1_4","context":"ආසාත්මිකතාවක් ගැන පැවසීම","lines":[
+          {"speaker":"A","target":"卵アレルギーがあります (tamago arerugii ga arimasu)","native":"මට බිත්තර ආසාත්මිකතාවයක් තියෙනවා.","phonetic":"ත-ම-ගො-අ-රෙ-රු-ගී-ග-අ-රි-ම-සු"},
+          {"speaker":"B","target":"わかりました。卵なしで作ります (wakarimashita. tamago nashi de tsukurimasu)","native":"තේරුණා. මම බිත්තර නැතුව හදන්නම්.","phonetic":"ව-ක-රි-ම-ෂි-තා. ත-ම-ගො-න-ෂි-දෙ-ත්සු-කු-රි-ම-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_1_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_1_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_1_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_1_1","sentence":"___ をください (___ o kudasai)","answer":"水 (mizu)","hint":"කරුණාකර වතුර දෙන්න"}
         ],
         "matching": [
-          {
-            "id": "m4_1_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_1_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_1_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_1_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_1_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_1_1","target":"ご飯 (gohan)","native":"බත්"},
+          {"id":"m4_1_2","target":"肉 (niku)","native":"මස්"},
+          {"id":"m4_1_3","target":"魚 (sakana)","native":"මාළු"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_1_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_1_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_1_1","scrambled":["は","これ","美味しい","です"],"correct":"これは美味しいです","nativeHint":"මේක රසයි"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D1"
-      }
+      "cultural_note": "ජපානයේදී, 'ගොහන්' (ご飯) යන්නෙන් 'බත්' සහ 'ආහාර වේල' යන දෙකම අදහස් විය හැකිය. උදෑසන ආහාරය 'අසගොහන්' (朝ご飯), දිවා ආහාරය 'හිරුගොහන්' (昼ご飯) සහ රාත්‍රී ආහාරය 'බන්ගොහන්' (晩ご飯) ලෙස හැඳින්වේ.",
+      "pronunciation_tip": "ජපන් භාෂාවේදී, ස්වර ශබ්ද කෙටි සහ පැහැදිලිය. 'මිසු' (mizu) හි 'u' ශබ්දය ඉංග්‍රීසියෙහි 'blue' හි මෙන් දිගු නොව, 'put' හි මෙන් කෙටිය. සෑම අක්ෂරයකටම සමාන කාලයක් දෙන්න.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D1-FoodBasics"}
     },
     {
       "week": 4,
       "day": 2,
-      "title": "Week 4 Day 2: Days of the Week",
-      "title_native": "Days of the Week",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 2: Ordering in a Restaurant",
+      "title_native": "සතිය 4, දිනය 2: ආපන ශාලාවක ඇණවුම් කිරීම",
+      "theme": "Restaurant Orders",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_2_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_2_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_2_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_2_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_2_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_2_1","target":"メニュー (menyuu)","phonetic":"මෙ-න්‍යු","native_meaning":"මෙනුව","english":"menu","example_sentence_target":"メニューを見せてください (menyuu o misete kudasai)","example_sentence_native":"කරුණාකර මෙනුව පෙන්වන්න","example_sentence_phonetic":"මෙ-න්‍යු-ඔ-මි-සෙ-තෙ-කු-ද-සයි"},
+        {"id":"w4_2_2","target":"注文 (chuumon)","phonetic":"චූ-මොන්","native_meaning":"ඇණවුම","english":"order","example_sentence_target":"注文をお願いします (chuumon o onegaishimasu)","example_sentence_native":"කරුණාකර මගේ ඇණවුම ගන්න","example_sentence_phonetic":"චූ-මොන්-ඔ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"w4_2_3","target":"これ (kore)","phonetic":"කො-රෙ","native_meaning":"මේක","english":"this","example_sentence_target":"これを一つください (kore o hitotsu kudasai)","example_sentence_native":"කරුණාකර මට මෙයින් එකක් දෙන්න","example_sentence_phonetic":"කො-රෙ-ඔ-හි-තො-ත්සු-කු-ද-සයි"},
+        {"id":"w4_2_4","target":"おすすめ (osusume)","phonetic":"ඔ-සු-සු-මෙ","native_meaning":"නිර්දේශය","english":"recommendation","example_sentence_target":"おすすめは何ですか (osusume wa nan desu ka)","example_sentence_native":"ඔබ නිර්දේශ කරන්නේ කුමක්ද?","example_sentence_phonetic":"ඔ-සු-සු-මෙ-ව-නන්-දෙ-සු-ක"},
+        {"id":"w4_2_5","target":"会計 (kaikei)","phonetic":"කයි-කේ","native_meaning":"බිල","english":"bill/check","example_sentence_target":"お会計をお願いします (okaikei o onegaishimasu)","example_sentence_native":"කරුණාකර බිල ගෙන එන්න","example_sentence_phonetic":"ඔ-කයි-කේ-ඔ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"w4_2_6","target":"持ち帰り (mochikaeri)","phonetic":"මො-චි-ක-එ-රි","native_meaning":"රැගෙන යාමට","english":"takeaway","example_sentence_target":"持ち帰りでお願いします (mochikaeri de onegaishimasu)","example_sentence_native":"රැගෙන යාමට දෙන්න, කරුණාකර","example_sentence_phonetic":"මො-චි-ක-එ-රි-දෙ-ඔ-නෙ-ගයි-ෂි-ම-සු"}
+      ],
+      "sentences": [
+        {"id":"s4_2_1","target":"二人です (futari desu)","native":"අපි දෙන්නෙක්.","phonetic":"ෆු-ත-රි-දෙ-සු"},
+        {"id":"s4_2_2","target":"席はありますか (seki wa arimasu ka)","native":"ඉඳගන්න තැන් තියෙනවද?","phonetic":"සෙ-කි-ව-අ-රි-ම-සු-ක"},
+        {"id":"s4_2_3","target":"もう一度お願いします (mou ichido onegaishimasu)","native":"කරුණාකර නැවත කියන්න.","phonetic":"මෝ-ඉ-චි-දො-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"s4_2_4","target":"ごちそうさまでした (gochisousama deshita)","native":"ආහාරයට බොහොම ස්තුතියි.","phonetic":"ගො-චි-සෝ-ස-මා-දෙ-ෂි-තා"}
       ],
       "dialogues": [
-        {
-          "id": "d4_2_1",
-          "context": "Days of the Week",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_2_2",
-          "context": "Formal Days of the Week",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_2_1","context":"ආපන ශාලාවකට ඇතුළු වීම.","lines":[
+          {"speaker":"A","target":"いらっしゃいませ。何名様ですか (irasshaimase. nanmei sama desu ka)","native":"ආයුබෝවන්. කී දෙනෙක් ද?","phonetic":"ඉ-ර-ෂ්-ෂයි-ම-සෙ. නන්-මෙයි-ස-මා-දෙ-සු-ක"},
+          {"speaker":"B","target":"一人です (hitori desu)","native":"එක්කෙනයි.","phonetic":"හි-තො-රි-දෙ-सु"}
+        ]},
+        {"id":"d4_2_2","context":"මෙනුවෙන් යමක් ඇණවුම් කිරීම.","lines":[
+          {"speaker":"A","target":"ご注文はお決まりですか (gochuumon wa okimari desu ka)","native":"ඔබ ඇණවුම් කිරීමට සූදානම් ද?","phonetic":"ගො-චූ-මොන්-ව-ඔ-කි-ම-රි-දෙ-සු-ක"},
+          {"speaker":"B","target":"はい、これをお願いします (hai, kore o onegaishimasu)","native":"ඔව්, කරුණාකර මට මේක දෙන්න.","phonetic":"හයි, කො-රෙ-ඔ-ඔ-නෙ-ගයි-ෂි-ම-සු"}
+        ]},
+        {"id":"d4_2_3","context":"නිර්දේශයක් ඉල්ලීම.","lines":[
+          {"speaker":"A","target":"おすすめの料理は何ですか (osusume no ryouri wa nan desu ka)","native":"නිර්දේශිත ආහාරය කුමක්ද?","phonetic":"ඔ-සු-සු-මෙ-නො-ර්යෝ-රි-ව-නන්-දෙ-සු-ක"},
+          {"speaker":"B","target":"今日のスペシャルは魚料理です (kyou no supesharu wa sakana ryouri desu)","native":"අද විශේෂ ආහාරය මාළු.","phonetic":"ක්යෝ-නො-සු-පෙ-ෂ-රු-ව-ස-ක-නා-ර්යෝ-රි-දෙ-සු"}
+        ]},
+        {"id":"d4_2_4","context":"ආහාර වේල අවසානයේ බිල ඉල්ලීම.","lines":[
+          {"speaker":"A","target":"すみません、お会計をお願いします (sumimasen, okaikei o onegaishimasu)","native":"සමාවෙන්න, කරුණාකර බිල ගෙන එන්න.","phonetic":"සු-මි-ම-සෙන්, ඔ-කයි-කේ-ඔ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+          {"speaker":"B","target":"はい、合計で二千円です (hai, goukei de nisen en desu)","native":"ඔව්, සම්පූර්ණ මුදල යෙන් දෙදාහයි.","phonetic":"හයි, ගෝ-කේ-දෙ-නි-සෙන්-එන්-දෙ-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_2_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_2_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_2_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_2_1","sentence":"___ を見せてください (___ o misete kudasai)","answer":"メニュー (menyuu)","hint":"කරුණාකර මෙනුව පෙන්වන්න"}
         ],
         "matching": [
-          {
-            "id": "m4_2_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_2_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_2_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_2_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_2_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_2_1","target":"注文 (chuumon)","native":"ඇණවුම"},
+          {"id":"m4_2_2","target":"おすすめ (osusume)","native":"නිර්දේශය"},
+          {"id":"m4_2_3","target":"会計 (kaikei)","native":"බිල"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_2_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_2_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_2_1","scrambled":["は","席","ありますか"],"correct":"席はありますか","nativeHint":"ඉඳගන්න තැන් තියෙනවද?"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D2"
-      }
+      "cultural_note": "ජපානයේ බොහෝ ආපන ශාලාවල, 'සුමිමසෙන්!' (すみません!) කියා කෑගැසීමෙන් වේටර්වරයාගේ අවධානය ලබා ගැනීම සාමාන්‍ය දෙයකි. ආහාර ගැනීමෙන් පසු 'ගොචිසෝසම දෙෂිතා' (ごちそうさまでした) කීම ආචාරශීලී ක්‍රියාවක් ලෙස සැලකේ.",
+      "pronunciation_tip": "'චූමොන්' (注文) හි 'චූ' (ちゅう) ශබ්දය දිගු ස්වරයකි. එය 'චු' (ちゅ) ට වඩා දිගට ශබ්ද කළ යුතුය. ජපන් භාෂාවේදී කෙටි සහ දිගු ස්වර අතර වෙනස අර්ථය වෙනස් කළ හැකිය.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D2-RestaurantOrder"}
     },
     {
       "week": 4,
       "day": 3,
-      "title": "Week 4 Day 3: Months & Seasons",
-      "title_native": "Months & Seasons",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 3: Flavors and Textures",
+      "title_native": "සතිය 4, දිනය 3: රස සහ ස්වභාවය",
+      "theme": "Flavors & Textures",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_3_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_3_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_3_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_3_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_3_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_3_1","target":"甘い (amai)","phonetic":"අ-මයි","native_meaning":"පැණි රස","english":"sweet","example_sentence_target":"このケーキはとても甘いです (kono keeki wa totemo amai desu)","example_sentence_native":"මේ කේක් එක ගොඩක් පැණි රසයි","example_sentence_phonetic":"කො-නො-කේ-කි-ව-තො-තෙ-මො-අ-මයි-දෙ-සු"},
+        {"id":"w4_3_2","target":"辛い (karai)","phonetic":"ක-රයි","native_meaning":"සැර","english":"spicy","example_sentence_target":"カレーは辛いですか (karee wa karai desu ka)","example_sentence_native":"කරිය සැරද?","example_sentence_phonetic":"ක-රේ-ව-ක-රයි-දෙ-සු-ක"},
+        {"id":"w4_3_3","target":"塩辛い (shiokarai)","phonetic":"ෂි-ඔ-ක-රයි","native_meaning":"ලුණු රස","english":"salty","example_sentence_target":"このスープは少し塩辛いです (kono suupu wa sukoshi shiokarai desu)","example_sentence_native":"මේ සුප් එක ටිකක් ලුණු රසයි","example_sentence_phonetic":"කො-නො-සූ-පු-ව-සු-කො-ෂි-ෂි-ඔ-ක-රයි-දෙ-සු"},
+        {"id":"w4_3_4","target":"酸っぱい (suppai)","phonetic":"සුප්-පයි","native_meaning":"ඇඹුල්","english":"sour","example_sentence_target":"レモンは酸っぱいです (remon wa suppai desu)","example_sentence_native":"දෙහි ඇඹුල් රසයි","example_sentence_phonetic":"රෙ-මොන්-ව-සුප්-පයි-දෙ-සු"},
+        {"id":"w4_3_5","target":"苦い (nigai)","phonetic":"නි-ගයි","native_meaning":"තිත්ත","english":"bitter","example_sentence_target":"この薬は苦いです (kono kusuri wa nigai desu)","example_sentence_native":"මේ බෙහෙත තිත්තයි","example_sentence_phonetic":"කො-නො-කු-සු-රි-ව-නි-ගයි-දෙ-සු"},
+        {"id":"w4_3_6","target":"熱い (atsui)","phonetic":"අ-ත්සුයි","native_meaning":"උණුසුම්","english":"hot (temperature)","example_sentence_target":"このお茶は熱いです (kono ocha wa atsui desu)","example_sentence_native":"මේ තේ එක උණුසුම්","example_sentence_phonetic":"කො-නො-ඔ-චා-ව-අ-ත්සුයි-දෙ-සු"}
+      ],
+      "sentences": [
+        {"id":"s4_3_1","target":"辛いものは苦手です (karai mono wa nigate desu)","native":"මම සැර කෑම වලට කැමති නෑ.","phonetic":"ක-රයි-මො-නො-ව-නි-ග-තෙ-දෙ-සු"},
+        {"id":"s4_3_2","target":"甘いものが食べたいです (amai mono ga tabetai desu)","native":"මට පැණි රස දෙයක් කන්න ඕන.","phonetic":"අ-මයි-මො-නො-ග-ත-බෙ-තයි-දෙ-සු"},
+        {"id":"s4_3_3","target":"これはちょうどいい味です (kore wa choudo ii aji desu)","native":"මේකේ රස ගානට තියෙනවා.","phonetic":"කො-රෙ-ව-චෝ-දො-ඊ-අ-ජි-දෙ-සු"},
+        {"id":"s4_3_4","target":"冷たい飲み物が欲しいです (tsumetai nomimono ga hoshii desu)","native":"මට සීතල බීමක් ඕන.","phonetic":"ත්සු-මෙ-තයි-නො-මි-මො-නො-ග-හො-ෂී-දෙ-සු"}
       ],
       "dialogues": [
-        {
-          "id": "d4_3_1",
-          "context": "Months & Seasons",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_3_2",
-          "context": "Formal Months & Seasons",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_3_1","context":"කෑමක රස ගැන විමසීම.","lines":[
+          {"speaker":"A","target":"その料理は美味しいですか (sono ryouri wa oishii desu ka)","native":"ඒ කෑම එක රසද?","phonetic":"සො-නො-ර්යෝ-රි-ව-ඔ-ඉ-ෂී-දෙ-සු-ක"},
+          {"speaker":"B","target":"はい、少し甘くて美味しいです (hai, sukoshi amakute oishii desu)","native":"ඔව්, ටිකක් පැණි රසයි සහ රසයි.","phonetic":"හයි, සු-කො-ෂි-අ-ම-කු-තෙ-ඔ-ඉ-ෂී-දෙ-සු"}
+        ]},
+        {"id":"d4_3_2","context":"සැර කෑමක් ගැන අනතුරු ඇඟවීම.","lines":[
+          {"speaker":"A","target":"これはとても辛いですよ (kore wa totemo karai desu yo)","native":"මේක ගොඩක් සැරයි හොඳද.","phonetic":"කො-රෙ-ව-තො-තෙ-මො-ක-රයි-දෙ-සු-යො"},
+          {"speaker":"B","target":"大丈夫です。辛いものが好きです (daijoubu desu. karai mono ga suki desu)","native":"කමක් නෑ. මම සැර කෑමට කැමතියි.","phonetic":"දයි-ජෝ-බු-දෙ-සු. ක-රයි-මො-නො-ග-සු-කි-දෙ-සු"}
+        ]},
+        {"id":"d4_3_3","context":"කෝපි එකක් ගැන අදහස් දැක්වීම.","lines":[
+          {"speaker":"A","target":"このコーヒーは少し苦いですね (kono koohii wa sukoshi nigai desu ne)","native":"මේ කෝපි එක ටිකක් තිත්තයි නේද?","phonetic":"කො-නො-කෝ-හී-ව-සු-කො-ෂි-නි-ගයි-දෙ-සු-නෙ"},
+          {"speaker":"B","target":"砂糖を入れますか (satou o iremasu ka)","native":"සීනි දාන්නද?","phonetic":"ස-තෝ-ඔ-ඉ-රෙ-ම-සු-ක"}
+        ]},
+        {"id":"d4_3_4","context":"උණුසුම් සුප් එකක් ගැන.","lines":[
+          {"speaker":"A","target":"気をつけてください。スープは熱いです (ki o tsukete kudasai. suupu wa atsui desu)","native":"පරිස්සම් වෙන්න. සුප් එක උණුසුම්.","phonetic":"කි-ඔ-ත්සු-කෙ-තෙ-කු-ද-සයි. සූ-පු-ව-අ-ත්සුයි-දෙ-සු"},
+          {"speaker":"B","target":"ありがとうございます (arigatou gozaimasu)","native":"බොහොම ස්තුතියි.","phonetic":"අ-රි-ග-තෝ-ගො-සයි-ම-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_3_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_3_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_3_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_3_1","sentence":"このケーキはとても ___ です (kono keeki wa totemo ___ desu)","answer":"甘い (amai)","hint":"මේ කේක් එක ගොඩක් පැණි රසයි"}
         ],
         "matching": [
-          {
-            "id": "m4_3_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_3_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_3_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_3_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_3_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_3_1","target":"辛い (karai)","native":"සැර"},
+          {"id":"m4_3_2","target":"酸っぱい (suppai)","native":"ඇඹුල්"},
+          {"id":"m4_3_3","target":"熱い (atsui)","native":"උණුසුම්"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_3_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_3_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_3_1","scrambled":["ものは","苦手","です","辛い"],"correct":"辛いものは苦手です","nativeHint":"මම සැර කෑම වලට කැමති නෑ"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D3"
-      }
+      "cultural_note": "ජපන් ආහාර පිසීමේදී 'උමාමි' (旨味) නමින් පස්වන රසයක් හඳුනාගෙන ඇත. එය මස්, මාළු, හතු සහ සෝයා සෝස් වැනි දේවල ඇති රසවත්, ලුණු රසැති ස්වභාවයයි. එය 'ඔයිෂී' (美味しい) එනම් 'රසවත්' යන්නට වඩා ගැඹුරු රසයක් විස්තර කරයි.",
+      "pronunciation_tip": "'සුප්පයි' (酸っぱい) හි 'っ' (කුඩා 'つ') යනු කෙටි නැවතීමක් (glottal stop) නියෝජනය කරයි. 'සු-පයි' ලෙස නොකියා, 'සු' සහ 'පයි' අතර මොහොතක් නතර වී 'සුප්-පයි' ලෙස උච්චාරණය කරන්න.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D3-Flavors"}
     },
     {
       "week": 4,
       "day": 4,
-      "title": "Week 4 Day 4: Daily Routine",
-      "title_native": "Daily Routine",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 4: At the Market",
+      "title_native": "සතිය 4, දිනය 4: වෙළඳපොලේදී",
+      "theme": "Shopping at the Market",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_4_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_4_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_4_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_4_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_4_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_4_1","target":"市場 (ichiba)","phonetic":"ඉ-චි-බා","native_meaning":"වෙළඳපොළ","english":"market","example_sentence_target":"市場へ買い物に行きます (ichiba e kaimono ni ikimasu)","example_sentence_native":"මම බඩු ගන්න වෙළඳපොළට යනවා","example_sentence_phonetic":"ඉ-චි-බා-එ-කයි-මො-නො-නි-ඉ-කි-ම-සු"},
+        {"id":"w4_4_2","target":"いくら (ikura)","phonetic":"ඉ-කු-රා","native_meaning":"කීයද","english":"how much","example_sentence_target":"これはいくらですか (kore wa ikura desu ka)","example_sentence_native":"මේක කීයද?","example_sentence_phonetic":"කො-රෙ-ව-ඉ-කු-රා-දෙ-සු-ක"},
+        {"id":"w4_4_3","target":"グラム (guramu)","phonetic":"ගු-රා-මු","native_meaning":"ග්‍රෑම්","english":"gram","example_sentence_target":"牛肉を二百グラムください (gyuuniku o nihyaku guramu kudasai)","example_sentence_native":"කරුණාකර හරක් මස් ග්‍රෑම් දෙසීයක් දෙන්න","example_sentence_phonetic":"ග්යූ-නි-කු-ඔ-නි-හ්යා-කු-ගු-රා-මු-කු-ද-සයි"},
+        {"id":"w4_4_4","target":"袋 (fukuro)","phonetic":"ෆු-කු-රො","native_meaning":"මල්ල","english":"bag","example_sentence_target":"袋は要りますか (fukuro wa irimasu ka)","example_sentence_native":"ඔබට මල්ලක් අවශ්‍යද?","example_sentence_phonetic":"ෆු-කු-රො-ව-ඉ-රි-ම-සු-ක"},
+        {"id":"w4_4_5","target":"新鮮な (shinsen na)","phonetic":"ෂින්-සෙන්-නා","native_meaning":"අලුත්","english":"fresh","example_sentence_target":"新鮮な魚が欲しいです (shinsen na sakana ga hoshii desu)","example_sentence_native":"මට අලුත් මාළු ඕන","example_sentence_phonetic":"ෂින්-සෙන්-නා-ස-ක-නා-ග-හො-ෂී-දෙ-සු"},
+        {"id":"w4_4_6","target":"全部で (zenbu de)","phonetic":"සෙන්-බු-දෙ","native_meaning":"සියල්ලම එකතුව","english":"in total","example_sentence_target":"全部でいくらですか (zenbu de ikura desu ka)","example_sentence_native":"සියල්ලම එකතුව කීයද?","example_sentence_phonetic":"සෙන්-බු-දෙ-ඉ-කු-රා-දෙ-සු-ක"}
+      ],
+      "sentences": [
+        {"id":"s4_4_1","target":"これをください (kore o kudasai)","native":"කරුණාකර මේක දෙන්න.","phonetic":"කො-රෙ-ඔ-කු-ද-සයි"},
+        {"id":"s4_4_2","target":"もう少し安くなりませんか (mou sukoshi yasuku narimasen ka)","native":"තව ටිකක් මිල අඩු කරන්න බැරිද?","phonetic":"මෝ-සු-කො-ෂි-ය-සු-කු-න-රි-ම-සෙන්-ක"},
+        {"id":"s4_4_3","target":"カードで払えますか (kaado de haraemasu ka)","native":"කාඩ් එකෙන් ගෙවන්න පුලුවන්ද?","phonetic":"කා-දො-දෙ-හ-රා-එ-ම-සු-ක"},
+        {"id":"s4_4_4","target":"領収書をください (ryoushuusho o kudasai)","native":"කරුණාකර රිසිට්පත දෙන්න.","phonetic":"ර්යෝ-ෂූ-ෂො-ඔ-කු-ද-සයි"}
       ],
       "dialogues": [
-        {
-          "id": "d4_4_1",
-          "context": "Daily Routine",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_4_2",
-          "context": "Formal Daily Routine",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_4_1","context":"වෙළඳපොලේදී පළතුරක මිල විමසීම.","lines":[
+          {"speaker":"A","target":"このりんごは一ついくらですか (kono ringo wa hitotsu ikura desu ka)","native":"මේ ඇපල් ගෙඩියක් කීයද?","phonetic":"කො-නො-රින්-ගො-ව-හි-තො-ත්සු-ඉ-කු-රා-දෙ-සු-ක"},
+          {"speaker":"B","target":"一つ百円です (hitotsu hyaku en desu)","native":"එකක් යෙන් සීයයි.","phonetic":"හි-තො-ත්සු-හ්යා-කු-එන්-දෙ-සු"}
+        ]},
+        {"id":"d4_4_2","context":"යමක් කිරා මැන බැලීම.","lines":[
+          {"speaker":"A","target":"豚肉を三百グラムお願いします (butaniku o sanbyaku guramu onegaishimasu)","native":"කරුණාකර ඌරු මස් ග්‍රෑම් තුන්සීයක් දෙන්න.","phonetic":"බු-ත-නි-කු-ඔ-සන්-බ්‍ය-කු-ගු-රා-මු-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+          {"speaker":"B","target":"はい、三百グラムですね (hai, sanbyaku guramu desu ne)","native":"හරි, ග්‍රෑම් තුන්සීයයි නේද.","phonetic":"හයි, සන්-බ්‍ය-කු-ගු-රා-මු-දෙ-සු-නෙ"}
+        ]},
+        {"id":"d4_4_3","context":"මිලදී ගැනීම අවසානයේ.","lines":[
+          {"speaker":"A","target":"袋は要りません (fukuro wa irimasen)","native":"මට මල්ලක් අවශ්‍ය නැහැ.","phonetic":"ෆු-කු-රො-ව-ඉ-රි-ම-සෙන්"},
+          {"speaker":"B","target":"ありがとうございます (arigatou gozaimasu)","native":"බොහොම ස්තුතියි.","phonetic":"අ-රි-ග-තෝ-ගො-සයි-ම-සු"}
+        ]},
+        {"id":"d4_4_4","context":"මුළු මුදල විමසීම.","lines":[
+          {"speaker":"A","target":"全部でいくらになりますか (zenbu de ikura ni narimasu ka)","native":"සියල්ලම එකතුව කීයක් වෙනවද?","phonetic":"සෙන්-බු-දෙ-ඉ-කු-රා-නි-න-රි-ම-සු-ක"},
+          {"speaker":"B","target":"合計で千五百円です (goukei de sen gohyaku en desu)","native":"එකතුව යෙන් එක්දහස් පන්සීයයි.","phonetic":"ගෝ-කේ-දෙ-සෙන්-ගො-හ්යා-කු-එන්-දෙ-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_4_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_4_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_4_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_4_1","sentence":"これは ___ ですか (kore wa ___ desu ka)","answer":"いくら (ikura)","hint":"මේක කීයද?"}
         ],
         "matching": [
-          {
-            "id": "m4_4_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_4_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_4_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_4_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_4_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_4_1","target":"市場 (ichiba)","native":"වෙළඳපොළ"},
+          {"id":"m4_4_2","target":"新鮮な (shinsen na)","native":"අලුත්"},
+          {"id":"m4_4_3","target":"袋 (fukuro)","native":"මල්ල"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_4_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_4_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_4_1","scrambled":["払えますか","で","カード"],"correct":"カードで払えますか","nativeHint":"කාඩ් එකෙන් ගෙවන්න පුලුවන්ද?"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D4"
-      }
+      "cultural_note": "ජපානයේ සුපිරි වෙළඳසැල් සහ දෙපාර්තමේන්තු ගබඩාවල මිල ගණන් ස්ථිර වේ. නමුත් කුඩා, පෞද්ගලික වෙළඳසැල්වල හෝ වෙළඳපොළවල්වල, විශේෂයෙන් ඔබ වැඩිපුර භාණ්ඩ මිලදී ගන්නේ නම්, මෘදු ලෙස මිල අඩු කරවා ගැනීමට උත්සාහ කළ හැකිය ('まけてもらえませんか' - makete moraemasen ka).",
+      "pronunciation_tip": "'ඉචිබා' (市場) හිදී, සෑම අක්ෂරයක්ම පැහැදිලිව උච්චාරණය කරන්න: 'ඉ-චි-බා'. සිංහල භාෂාවේ මෙන් වචනයක අවසාන අක්ෂරය දුර්වල නොකරන්න. සෑම අක්ෂරයකටම සමාන බරක් දෙන්න.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D4-MarketShopping"}
     },
     {
       "week": 4,
       "day": 5,
-      "title": "Week 4 Day 5: Appointments",
-      "title_native": "Appointments",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 5: Paying the Bill",
+      "title_native": "සතිය 4, දිනය 5: බිල ගෙවීම",
+      "theme": "Paying the Bill",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_5_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_5_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_5_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_5_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_5_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_5_1","target":"現金 (genkin)","phonetic":"ගෙන්-කින්","native_meaning":"මුදල්","english":"cash","example_sentence_target":"現金で払います (genkin de haraimasu)","example_sentence_native":"මම මුදලින් ගෙවන්නම්","example_sentence_phonetic":"ගෙන්-කින්-දෙ-හ-රා-ඉ-ම-සු"},
+        {"id":"w4_5_2","target":"クレジットカード (kurejitto kaado)","phonetic":"කු-රෙ-ජිත්-තො කා-දො","native_meaning":"ක්‍රෙඩිට් කාඩ්","english":"credit card","example_sentence_target":"クレジットカードは使えますか (kurejitto kaado wa tsukaemasu ka)","example_sentence_native":"ක්‍රෙඩිට් කාඩ් භාවිතා කරන්න පුලුවන්ද?","example_sentence_phonetic":"කු-රෙ-ජිත්-තො-කා-දො-ව-ත්සු-ක-එ-ම-සු-ක"},
+        {"id":"w4_5_3","target":"別々に (betsu betsu ni)","phonetic":"බෙ-ත්සු බෙ-ත්සු නි","native_meaning":"වෙන වෙනම","english":"separately","example_sentence_target":"別々にお願いします (betsu betsu ni onegaishimasu)","example_sentence_native":"කරුණාකර වෙන වෙනම (බිල්) දෙන්න","example_sentence_phonetic":"බෙ-ත්සු-බෙ-ත්සු-නි-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"w4_5_4","target":"一緒 (issho)","phonetic":"ඉෂ්-ෂො","native_meaning":"එකට","english":"together","example_sentence_target":"会計は一緒でお願いします (kaikei wa issho de onegaishimasu)","example_sentence_native":"බිල එකට දෙන්න, කරුණාකර","example_sentence_phonetic":"කයි-කේ-ව-ඉෂ්-ෂො-දෙ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"w4_5_5","target":"お釣り (otsuri)","phonetic":"ඔ-ත්සු-රි","native_meaning":"ඉතුරු මුදල්","english":"change (money)","example_sentence_target":"お釣りです (otsuri desu)","example_sentence_native":"මේ ඔබේ ඉතුරු මුදල්","example_sentence_phonetic":"ඔ-ත්සු-රි-දෙ-සු"},
+        {"id":"w4_5_6","target":"税込 (zeikomi)","phonetic":"සේ-කො-මි","native_meaning":"බදු ඇතුළුව","english":"tax included","example_sentence_target":"料金は税込ですか (ryoukin wa zeikomi desu ka)","example_sentence_native":"මිලට බදු ඇතුළත්ද?","example_sentence_phonetic":"ර්යෝ-කින්-ව-සේ-කො-මි-දෙ-සු-ක"}
+      ],
+      "sentences": [
+        {"id":"s4_5_1","target":"お会計をお願いします (okaikei o onegaishimasu)","native":"කරුණාකර බිල ගෙන එන්න.","phonetic":"ඔ-කයි-කේ-ඔ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"s4_5_2","target":"これでお願いします (kore de onegaishimasu)","native":"මේ මුදලින් ගන්න, කරුණාකර.","phonetic":"කො-රෙ-දෙ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+        {"id":"s4_5_3","target":"千円札で (sen en satsu de)","native":"යෙන් දාහේ කොලයකින්.","phonetic":"සෙන්-එන්-ස-ත්සු-දෙ"},
+        {"id":"s4_5_4","target":"チップは要りません (chippu wa irimasen)","native":"ටිප් අවශ්‍ය නැත.","phonetic":"චිප්-පු-ව-ඉ-රි-ම-සෙන්"}
       ],
       "dialogues": [
-        {
-          "id": "d4_5_1",
-          "context": "Appointments",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_5_2",
-          "context": "Formal Appointments",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_5_1","context":"ආපන ශාලාවක බිල ඉල්ලීම.","lines":[
+          {"speaker":"A","target":"すみません、お会計お願いします (sumimasen, okaikei onegaishimasu)","native":"සමාවෙන්න, බිල ගෙන එන්න කරුණාකර.","phonetic":"සු-මි-ම-සෙන්, ඔ-කයි-කේ-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+          {"speaker":"B","target":"はい、三千円になります (hai, sanzen en ni narimasu)","native":"හරි, යෙන් තුන්දාහක් වෙනවා.","phonetic":"හයි, සන්-සෙන්-එන්-නි-න-රි-ම-සු"}
+        ]},
+        {"id":"d4_5_2","context":"මිතුරන් සමඟ බිල බෙදා ගැනීම.","lines":[
+          {"speaker":"A","target":"お会計は別々でできますか (okaikei wa betsu betsu de dekimasu ka)","native":"බිල වෙන වෙනම ගෙවන්න පුලුවන්ද?","phonetic":"ඔ-කයි-කේ-ව-බෙ-ත්සු-බෙ-ත්සු-දෙ-දෙ-කි-ම-සු-ක"},
+          {"speaker":"B","target":"はい、できますよ (hai, dekimasu yo)","native":"ඔව්, පුළුවන්.","phonetic":"හයි, දෙ-කි-ම-සු-යො"}
+        ]},
+        {"id":"d4_5_3","context":"කාඩ් එකෙන් ගෙවීම ගැන විමසීම.","lines":[
+          {"speaker":"A","target":"クレジットカードは使えますか (kurejitto kaado wa tsukaemasu ka)","native":"ක්‍රෙඩිට් කාඩ් පාවිච්චි කරන්න පුලුවන්ද?","phonetic":"කු-රෙ-ජිත්-තො-කා-දො-ව-ත්සු-ක-එ-ම-සු-ක"},
+          {"speaker":"B","target":"はい、大丈夫です (hai, daijoubu desu)","native":"ඔව්, ප්‍රශ්නයක් නැහැ.","phonetic":"හයි, දයි-ජෝ-බු-දෙ-සු"}
+        ]},
+        {"id":"d4_5_4","context":"ඉතුරු මුදල් ලැබීම.","lines":[
+          {"speaker":"A","target":"五千円からお願いします (gosen en kara onegaishimasu)","native":"යෙන් පන්දාහකින් ගන්න, කරුණාකර.","phonetic":"ගො-සෙන්-එන්-ක-රා-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+          {"speaker":"B","target":"はい、二千円のお返しです (hai, nisen en no okaeshi desu)","native":"හරි, යෙන් දෙදාහක ඉතුරු මුදල්.","phonetic":"හයි, නි-සෙන්-එන්-නො-ඔ-කා-එ-ෂි-දෙ-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_5_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_5_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_5_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_5_1","sentence":"___ で払います (___ de haraimasu)","answer":"現金 (genkin)","hint":"මම මුදලින් ගෙවන්නම්"}
         ],
         "matching": [
-          {
-            "id": "m4_5_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_5_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_5_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_5_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_5_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_5_1","target":"別々に (betsu betsu ni)","native":"වෙන වෙනම"},
+          {"id":"m4_5_2","target":"お釣り (otsuri)","native":"ඉතුරු මුදල්"},
+          {"id":"m4_5_3","target":"税込 (zeikomi)","native":"බදු ඇතුළුව"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_5_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_5_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_5_1","scrambled":["は","要りません","チップ"],"correct":"チップは要りません","nativeHint":"ටිප් අවශ්‍ය නැත"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D5"
-      }
+      "cultural_note": "ජපානයේ බොහෝ ආපන ශාලා සහ සාප්පු වල ටිප් දීමේ සිරිතක් නැත. සේවාව මිලට ඇතුළත් කර ඇත. ටිප් එකක් දීමට උත්සාහ කළහොත්, එය බොහෝ විට ආචාරශීලීව ප්‍රතික්ෂේප කරනු ඇත, නැතහොත් එය වරදවා වටහා ගැනීමක් ලෙස සලකනු ඇත.",
+      "pronunciation_tip": "'බෙත්සු බෙත්සු නි' (別々に) හිදී 'බෙත්සු' යන වචනය දෙවරක් පුනරාවර්තනය වේ. සෑම වචනයක්ම පැහැදිලිව සහ වෙන් වෙන්ව උච්චාරණය කිරීමට වග බලා ගන්න. ජපන් භාෂාවේදී, පුනරාවර්තන ශබ්ද බොහෝ විට අවධාරණය කිරීමට යොදා ගැනේ.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D5-PayingBill"}
     },
     {
       "week": 4,
       "day": 6,
-      "title": "Week 4 Day 6: Past & Future",
-      "title_native": "Past & Future",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 6: Utensils and Tableware",
+      "title_native": "සතිය 4, දිනය 6: කෑම උපකරණ",
+      "theme": "Utensils & Tableware",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_6_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_6_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_6_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_6_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_6_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_6_1","target":"箸 (hashi)","phonetic":"හ-ෂි","native_meaning":"චොප්ස්ටික්ස්","english":"chopsticks","example_sentence_target":"箸の使い方が分かりません (hashi no tsukaikata ga wakarimasen)","example_sentence_native":"මට චොප්ස්ටික්ස් පාවිච්චි කරන්න තේරෙන්නේ නෑ","example_sentence_phonetic":"හ-ෂි-නො-ත්සු-කයි-ක-තා-ග-ව-ක-රි-ම-සෙන්"},
+        {"id":"w4_6_2","target":"フォーク (fooku)","phonetic":"ෆෝ-කු","native_meaning":"ගෑරුප්පුව","english":"fork","example_sentence_target":"フォークをください (fooku o kudasai)","example_sentence_native":"කරුණාකර ගෑරුප්පුවක් දෙන්න","example_sentence_phonetic":"ෆෝ-කු-ඔ-කු-ද-සයි"},
+        {"id":"w4_6_3","target":"スプーン (supuun)","phonetic":"සු-පූන්","native_meaning":"හැන්ද","english":"spoon","example_sentence_target":"スープにはスプーンが必要です (suupu niwa supuun ga hitsuyou desu)","example_sentence_native":"සුප් එකට හැන්දක් අවශ්‍යයි","example_sentence_phonetic":"සූ-පු-නි-ව-සු-පූන්-ග-හි-ත්සු-යෝ-දෙ-සු"},
+        {"id":"w4_6_4","target":"ナイフ (naifu)","phonetic":"නා-ඉ-ෆු","native_meaning":"පිහිය","english":"knife","example_sentence_target":"ステーキにはナイフを使います (suteeki niwa naifu o tsukaimasu)","example_sentence_native":"ස්ටේක් සඳහා පිහියක් භාවිතා කරයි","example_sentence_phonetic":"සු-තේ-කි-නි-ව-නා-ඉ-ෆු-ඔ-ත්සු-කයි-ම-සු"},
+        {"id":"w4_6_5","target":"皿 (sara)","phonetic":"ස-රා","native_meaning":"පිඟාන","english":"plate","example_sentence_target":"取り皿をください (torizara o kudasai)","native":"බෙදාගන්න පිඟානක් දෙන්න","example_sentence_phonetic":"තො-රි-ස-රා-ඔ-කු-ද-සයි"},
+        {"id":"w4_6_6","target":"コップ (koppu)","phonetic":"කොප්-පු","native_meaning":"වීදුරුව","english":"cup/glass","example_sentence_target":"コップに水を入れてください (koppu ni mizu o irete kudasai)","example_sentence_native":"කරුණාකර වීදුරුවට වතුර දමන්න","example_sentence_phonetic":"කොප්-පු-නි-මි-සු-ඔ-ඉ-රෙ-තෙ-කු-ද-සයි"}
+      ],
+      "sentences": [
+        {"id":"s4_6_1","target":"いただきます (itadakimasu)","native":"(කෑමට පෙර) මම මේ ආහාරය පිළිගන්නවා.","phonetic":"ඉ-ත-ද-කි-ම-සු"},
+        {"id":"s4_6_2","target":"おしぼりをください (oshibori o kudasai)","native":"කරුණාකර උණුසුම් තුවායක් දෙන්න.","phonetic":"ඔ-ෂි-බො-රි-ඔ-කු-ද-සයි"},
+        {"id":"s4_6_3","target":"塩を取ってください (shio o totte kudasai)","native":"කරුණාකර ලුණු පාස් කරන්න.","phonetic":"ෂි-ඔ-ඔ-තොත්-තෙ-කු-ද-සයි"},
+        {"id":"s4_6_4","target":"すみません、これを下げてください (sumimasen, kore o sagete kudasai)","native":"සමාවෙන්න, කරුණාකර මේක අයින් කරන්න.","phonetic":"සු-මි-ම-සෙන්, කො-රෙ-ඔ-ස-ගෙ-තෙ-කු-ද-සයි"}
       ],
       "dialogues": [
-        {
-          "id": "d4_6_1",
-          "context": "Past & Future",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_6_2",
-          "context": "Formal Past & Future",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_6_1","context":"ආපන ශාලාවකදී ගෑරුප්පුවක් ඉල්ලීම.","lines":[
+          {"speaker":"A","target":"すみません、フォークはありますか (sumimasen, fooku wa arimasu ka)","native":"සමාවෙන්න, ගෑරුප්පු තියෙනවද?","phonetic":"සු-මි-ම-සෙන්, ෆෝ-කු-ව-අ-රි-ම-සු-ක"},
+          {"speaker":"B","target":"はい、こちらです (hai, kochira desu)","native":"ඔව්, මෙන්න.","phonetic":"හයි, කො-චි-රා-දෙ-සු"}
+        ]},
+        {"id":"d4_6_2","context":"කෑමට පෙර.","lines":[
+          {"speaker":"A","target":"美味しそうですね。いただきます (oishisou desu ne. itadakimasu)","native":"රස පාටයි නේද? අපි කමු.","phonetic":"ඔ-ඉ-ෂි-සෝ-දෙ-සු-නෙ. ඉ-ත-ද-කි-ම-සු"},
+          {"speaker":"B","target":"いただきます (itadakimasu)","native":"අපි කමු.","phonetic":"ඉ-ත-ද-කි-ම-සු"}
+        ]},
+        {"id":"d4_6_3","context":"අමතර පිඟානක් ඉල්ලීම.","lines":[
+          {"speaker":"A","target":"取り皿をもう一枚ください (torizara o mou ichimai kudasai)","native":"කරුණාකර බෙදාගන්න තව පිඟානක් දෙන්න.","phonetic":"තො-රි-ස-රා-ඔ-මෝ-ඉ-චි-මයි-කු-ද-සයි"},
+          {"speaker":"B","target":"はい、少々お待ちください (hai, shoushou omachi kudasai)","native":"ඔව්, කරුණාකර පොඩ්ඩක් ඉන්න.","phonetic":"හයි, ෂෝ-ෂෝ-ඔ-ම-චි-කු-ද-සයි"}
+        ]},
+        {"id":"d4_6_4","context":"චොප්ස්ටික්ස් ගැන.","lines":[
+          {"speaker":"A","target":"箸を使うのが上手ですね (hashi o tsukau no ga jouzu desu ne)","native":"ඔබ චොප්ස්ටික්ස් පාවිච්චි කරන්න දක්ෂයි නේද.","phonetic":"හ-ෂි-ඔ-ත්සු-ක-උ-නො-ග-ජෝ-සු-දෙ-සු-නෙ"},
+          {"speaker":"B","target":"いえいえ、まだ練習中です (ieie, mada renshuu-chuu desu)","native":"අනේ නෑ, මම තාම පුහුණු වෙනවා.","phonetic":"ඉ-එ-ඉ-එ, ම-දා-රෙන්-ෂූ-චූ-දෙ-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_6_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_6_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_6_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_6_1","sentence":"___ をください (___ o kudasai)","answer":"フォーク (fooku)","hint":"කරුණාකර ගෑරුප්පුවක් දෙන්න"}
         ],
         "matching": [
-          {
-            "id": "m4_6_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_6_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_6_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_6_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_6_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_6_1","target":"箸 (hashi)","native":"චොප්ස්ටික්ස්"},
+          {"id":"m4_6_2","target":"皿 (sara)","native":"පිඟාන"},
+          {"id":"m4_6_3","target":"コップ (koppu)","native":"වීදුරුව"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_6_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_6_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_6_1","scrambled":["を","ください","おしぼり"],"correct":"おしぼりをください","nativeHint":"කරුණාකර උණුසුම් තුවායක් දෙන්න"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D6"
-      }
+      "cultural_note": "ජපානයේ ආහාර වේලක් ආරම්භ කිරීමට පෙර 'ඉතදකිමසු' (いただきます) සහ අවසන් වූ පසු 'ගොචිසෝසම දෙෂිතා' (ごちそうさまでした) කීම ඉතා වැදගත් සිරිතකි. 'ඉතදකිමසු' යනු ආහාරය සහ එය පිළියෙළ කළ සැමට කෘතඥතාව පළ කිරීමකි.",
+      "pronunciation_tip": "'හෂි' (箸) යන වචනයට තවත් අර්ථයක් ('පාලම', 橋) ඇත. උච්චාරණයේ ස්වර රටාව (pitch accent) අනුව අර්ථය වෙනස් වේ. කෑම උපකරණයට 'හ' ශබ්දය ඉහළින් සහ 'ෂි' පහළින් (හ॑ෂි) උච්චාරණය කරන අතර, පාලමට 'හ' පහළින් සහ 'ෂි' ඉහළින් (හෂි॑) උච්චාරණය කරයි.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D6-Tableware"}
     },
     {
       "week": 4,
       "day": 7,
-      "title": "Week 4 Day 7: Time Expressions",
-      "title_native": "Time Expressions",
-      "theme": "Time & Daily Schedule",
+      "title": "Week 4, Day 7: Review and Practice",
+      "title_native": "සතිය 4, දිනය 7: සමාලෝචනය සහ පුහුණුව",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_7_1",
-          "target": "時間",
-          "phonetic": "ජී-කාං",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "時間.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_7_2",
-          "target": "分",
-          "phonetic": "ෆූ-නේ",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_7_3",
-          "target": "今日",
-          "phonetic": "කියෝ",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今日.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_7_4",
-          "target": "明日",
-          "phonetic": "ආ-ෂී-තා",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明日.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_7_5",
-          "target": "昨日",
-          "phonetic": "කී-නෝ",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨日.",
-          "example_sentence_native": "ඊයේ."
-        }
+        {"id":"w4_7_1","target":"美味しい (oishii)","phonetic":"ඔ-ඉ-ෂී","native_meaning":"රසවත්","english":"delicious","example_sentence_target":"この寿司は美味しいです (kono sushi wa oishii desu)","example_sentence_native":"මේ සුෂී එක රසයි","example_sentence_phonetic":"කො-නො-සු-ෂි-ව-ඔ-ඉ-ෂී-දෙ-සු"},
+        {"id":"w4_7_2","target":"まずい (mazui)","phonetic":"ම-සුයි","native_meaning":"රස නැති","english":"bad tasting","example_sentence_target":"このスープはまずいです (kono suupu wa mazui desu)","example_sentence_native":"මේ සුප් එක රස නෑ","example_sentence_phonetic":"කො-නො-සූ-පු-ව-ම-සුයි-දෙ-සු"},
+        {"id":"w4_7_3","target":"お腹いっぱい (onaka ippai)","phonetic":"ඔ-න-කා ඉප්-පයි","native_meaning":"බඩ පිරිලා","english":"full (stomach)","example_sentence_target":"もうお腹いっぱいです (mou onaka ippai desu)","example_sentence_native":"දැන් බඩ පිරිලා","example_sentence_phonetic":"මෝ-ඔ-න-කා-ඉප්-පයි-දෙ-සු"},
+        {"id":"w4_7_4","target":"おかわり (okawari)","phonetic":"ඔ-ක-ව-රි","native_meaning":"තවත් වරක්","english":"second helping/refill","example_sentence_target":"ご飯のおかわりをください (gohan no okawari o kudasai)","example_sentence_native":"කරුණාකර තව බත් ටිකක් දෙන්න","example_sentence_phonetic":"ගො-හන්-නො-ඔ-ක-ව-රි-ඔ-කු-ද-සයි"},
+        {"id":"w4_7_5","target":"アレルギー (arerugii)","phonetic":"අ-රෙ-රු-ගී","native_meaning":"ආසාත්මිකතාව","english":"allergy","example_sentence_target":"ピーナッツアレルギーがあります (piinattsu arerugii ga arimasu)","example_sentence_native":"මට රටකජු ආසාත්මිකතාවයක් තියෙනවා","example_sentence_phonetic":"පී-නත්-ත්සු-අ-රෙ-රු-ගී-ග-අ-රි-ම-සු"},
+        {"id":"w4_7_6","target":"ベジタリアン (bejitarian)","phonetic":"බෙ-ජි-ත-රි-අන්","native_meaning":"නිර්මාංශ","english":"vegetarian","example_sentence_target":"私はベジタリアンです (watashi wa bejitarian desu)","example_sentence_native":"මම නිර්මාංශී","example_sentence_phonetic":"ව-ත-ෂි-ව-බෙ-ජි-ත-රි-අන්-දෙ-සු"}
+      ],
+      "sentences": [
+        {"id":"s4_7_1","target":"予約はありますか (yoyaku wa arimasu ka)","native":"වෙන් කිරීමක් තියෙනවද?","phonetic":"යො-ය-කු-ව-අ-රි-ම-සු-ක"},
+        {"id":"s4_7_2","target":"辛くしないでください (karaku shinaide kudasai)","native":"කරුණාකර සැරට හදන්න එපා.","phonetic":"ක-ර-කු-ෂි-නයි-දෙ-කු-ද-සයි"},
+        {"id":"s4_7_3","target":"これは何ですか (kore wa nan desu ka)","native":"මේ මොකක්ද?","phonetic":"කො-රෙ-ව-නන්-දෙ-සු-ක"},
+        {"id":"s4_7_4","target":"とても楽しかったです (totemo tanoshikatta desu)","native":"ගොඩක් විනෝදජනකයි.","phonetic":"තො-තෙ-මො-ත-නො-ෂි-කත්-තා-දෙ-සු"}
       ],
       "dialogues": [
-        {
-          "id": "d4_7_1",
-          "context": "Time Expressions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "時間!",
-              "native": "පැය!",
-              "phonetic": "ජී-කාං"
-            },
-            {
-              "speaker": "B",
-              "target": "時間! 分!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "ජී-කාං ෆූ-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            }
-          ]
-        },
-        {
-          "id": "d4_7_2",
-          "context": "Formal Time Expressions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "分!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "ෆූ-නේ"
-            },
-            {
-              "speaker": "B",
-              "target": "今日!",
-              "native": "අද!",
-              "phonetic": "කියෝ"
-            },
-            {
-              "speaker": "A",
-              "target": "明日! 昨日!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ආ-ෂී-තා කී-නෝ"
-            }
-          ]
-        }
+        {"id":"d4_7_1","context":"ආපන ශාලාවකදී ආහාර ගැන අදහස් දැක්වීම.","lines":[
+          {"speaker":"A","target":"食事はどうでしたか (shokuji wa dou deshita ka)","native":"කෑම කොහොමද?","phonetic":"ෂො-කු-ජි-ව-දෝ-දෙ-ෂි-තා-ක"},
+          {"speaker":"B","target":"とても美味しかったです (totemo oishikatta desu)","native":"ගොඩක් රසයි.","phonetic":"තො-තෙ-මො-ඔ-ඉ-ෂි-කත්-තා-දෙ-සු"}
+        ]},
+        {"id":"d4_7_2","context":"තවත් බත් ඉල්ලීම.","lines":[
+          {"speaker":"A","target":"すみません、ご飯のおかわりお願いします (sumimasen, gohan no okawari onegaishimasu)","native":"සමාවෙන්න, කරුණාකර තව බත් ටිකක් දෙන්න.","phonetic":"සු-මි-ම-සෙන්, ගො-හන්-නො-ඔ-ක-ව-රි-ඔ-නෙ-ගයි-ෂි-ම-සු"},
+          {"speaker":"B","target":"はい、どうぞ (hai, douzo)","native":"ඔව්, මෙන්න.","phonetic":"හයි, දෝ-සො"}
+        ]},
+        {"id":"d4_7_3","context":"නිර්මාංශ බව පැවසීම.","lines":[
+          {"speaker":"A","target":"肉は食べません。ベジタリアンです (niku wa tabemasen. bejitarian desu)","native":"මම මස් කන්නේ නැහැ. මම නිර්මාංශී.","phonetic":"නි-කු-ව-ත-බෙ-ම-සෙන්. බෙ-ජි-ත-රි-අන්-දෙ-සු"},
+          {"speaker":"B","target":"わかりました。野菜の料理があります (wakarimashita. yasai no ryouri ga arimasu)","native":"තේරුණා. එළවළු කෑම තියෙනවා.","phonetic":"ව-ක-රි-ම-ෂි-තා. ය-සයි-නො-ර්යෝ-රි-ග-අ-රි-ම-සු"}
+        ]},
+        {"id":"d4_7_4","context":"සතියේ ඉගෙන ගත් දේ ගැන කතා කිරීම.","lines":[
+          {"speaker":"A","target":"今週は食べ物の言葉をたくさん勉強しましたね (konshuu wa tabemono no kotoba o takusan benkyou shimashita ne)","native":"මේ සතියේ අපි කෑම ගැන වචන ගොඩක් ඉගෙන ගත්තා නේද.","phonetic":"කොන්-ෂූ-ව-ත-බෙ-මො-නො-නො-කො-තො-බා-ඔ-ත-කු-සන්-බෙන්-ක්යෝ-ෂි-ම-ෂි-තා-නෙ"},
+          {"speaker":"B","target":"はい、レストランで役立ちそうです (hai, resutoran de yakudachisou desu)","native":"ඔව්, ආපන ශාලාවකදී ප්‍රයෝජනවත් වෙයි වගේ.","phonetic":"හයි, රෙ-සු-තො-රන්-දෙ-ය-කු-ද-චි-සෝ-දෙ-සු"}
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb4_7_1",
-            "sentence": "___ means 'Hour' in Japanese",
-            "answer": "時間",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_7_2",
-            "sentence": "___ means 'Minute' in Japanese",
-            "answer": "分",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_7_3",
-            "sentence": "___ means 'Today' in Japanese",
-            "answer": "今日",
-            "hint": "අද"
-          }
+          {"id":"fb4_7_1","sentence":"もうお腹 ___ です (mou onaka ___ desu)","answer":"いっぱいい (ippai)","hint":"දැන් බඩ පිරිලා"}
         ],
         "matching": [
-          {
-            "id": "m4_7_1",
-            "target": "時間",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_7_2",
-            "target": "分",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_7_3",
-            "target": "今日",
-            "native": "අද"
-          },
-          {
-            "id": "m4_7_4",
-            "target": "明日",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_7_5",
-            "target": "昨日",
-            "native": "ඊයේ"
-          }
+          {"id":"m4_7_1","target":"美味しい (oishii)","native":"රසවත්"},
+          {"id":"m4_7_2","target":"おかわり (okawari)","native":"තවත් වරක්"},
+          {"id":"m4_7_3","target":"ベジタリアン (bejitarian)","native":"නිර්මාංශ"}
         ],
-        "multipleChoice": [
-          {
-            "id": "mc4_7_1",
-            "question": "What does '時間' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'時間' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_7_2",
-            "question": "How do you say 'මිනිත්තුව' in Japanese?",
-            "options": [
-              "時間",
-              "分",
-              "今日",
-              "明日"
-            ],
-            "correct": 1,
-            "explanation": "'分' means මිනිත්තුව."
-          }
+        "sentenceScramble": [
+          {"id":"ss4_7_1","scrambled":["は","何","これ","ですか"],"correct":"これは何ですか","nativeHint":"මේ මොකක්ද?"}
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D7"
-      }
+      "cultural_note": "ජපානයේ, 'බෙජිටේරියන්' (ベジタリアン) යන වචනය සැමවිටම බටහිර රටවල මෙන් දැඩි ලෙස වටහා නොගනී. සමහර විට මාළු හෝ මාළු සුප් හොද්ද (dashi) නිර්මාංශ ආහාරයක් ලෙස සැලකිය හැකිය. එබැවින්, ඔබ දැඩි නිර්මාංශී නම්, '肉も魚も食べません' (niku mo sakana mo tabemasen - මම මස් සහ මාළු කන්නේ නැහැ) ලෙස පැවසීම වඩාත් පැහැදිලිය.",
+      "pronunciation_tip": "සමාලෝචනය: දිගු ස්වර කෙරෙහි අවධානය යොමු කරන්න. උදාහරණයක් ලෙස 'ඔයිෂී' (美味しい) හි 'ඊ' ශබ්දය සහ 'ඔකාවරි' (おかわり) හි 'අ' ශබ්ද. මෙම දිගු කිරීම් අර්ථය සඳහා වැදගත් වේ. කෙටි ස්වර සමඟ පටලවා නොගැනීමට වග බලා ගන්න.",
+      "progress": {"xp":50, "streak_bonus":10, "badge":"W4D7-FoodReview"}
     }
   ]
 }
