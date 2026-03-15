@@ -1,5 +1,18 @@
 # Guide for Generating Weekly Language Lessons
 
+## CRITICAL: Output Format Requirements
+
+**THE OUTPUT MUST BE A SINGLE, RAW, VALID JSON OBJECT.**
+
+1.  **No Markdown:** Do **not** wrap the JSON in ` ```json ` or any other markdown code blocks.
+2.  **No Extra Text:** Do **not** include any explanatory text, greetings, or sign-offs before or after the JSON object. The response body must start with `{` and end with `}`.
+3.  **Proper String Escaping:** All string values within the JSON object **must** be properly escaped.
+    *   Backslashes (`\`) must be escaped as `\\`.
+    *   Double quotes (`"`) within a string must be escaped as `\"`.
+    *   **Crucially, all control characters must be escaped.** This includes newlines (`\n` must become `\\n`), carriage returns (`\r` must become `\\r`), tabs (`\t` must become `\\t`), etc. Failure to escape these characters will result in a "Bad control character" parsing error and make the file unreadable.
+
+---
+
 To generate a weekly lesson file that is compatible with the LingoForge application, the output **must** be a single, raw JSON object that validates against the structure defined in `weekly-lesson-schema.json`.
 
 Do not wrap the JSON in markdown code blocks (```json) or any other text. The output must be the JSON object itself.
