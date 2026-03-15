@@ -1,3 +1,4 @@
+
 {
   "week": 3,
   "path": "survival",
@@ -7,1325 +8,368 @@
     {
       "week": 3,
       "day": 1,
-      "title": "Week 3 Day 1: Body Parts",
-      "title_native": "Body Parts",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 1 වන දිනය: දෛනික චර්යාව",
+      "title_native": "Semaine 3, Jour 1 : Routine quotidienne",
+      "theme": "Daily Routine",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_1_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_1_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_1_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_1_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_1_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_1_1", "target": "Se réveiller", "phonetic": "ස රෙ-වෙ-යේ", "native_meaning": "අවදි වෙනවා", "english": "To wake up", "example_sentence_target": "Je me réveille à six heures.", "example_sentence_native": "මම උදේ හයට අවදි වෙනවා.", "example_sentence_phonetic": "ෂ ම රෙ-වෙයි ආ සිස් අර්." },
+        { "id": "w3_1_2", "target": "Manger", "phonetic": "මොන්-ෂේ", "native_meaning": "කනවා", "english": "To eat", "example_sentence_target": "Je vais manger le petit-déjeuner.", "example_sentence_native": "මම උදේ ආහාරය කන්න යනවා.", "example_sentence_phonetic": "ෂ වේ මොන්-ෂේ ල ප-තී-දෙ-ෂු-නෙ." },
+        { "id": "w3_1_3", "target": "Boire", "phonetic": "බුවාර්", "native_meaning": "බොනවා", "english": "To drink", "example_sentence_target": "J'aime boire du café le matin.", "example_sentence_native": "මම උදේට කෝපි බොන්න කැමතියි.", "example_sentence_phonetic": "ෂෙම් බුවාර් දු කැෆේ ල මා-තන්." },
+        { "id": "w3_1_4", "target": "Travailler", "phonetic": "ට්‍ර-වා-යේ", "native_meaning": "වැඩ කරනවා", "english": "To work", "example_sentence_target": "Il commence à travailler à neuf heures.", "example_sentence_native": "ඔහු උදේ නවයට වැඩ පටන් ගන්නවා.", "example_sentence_phonetic": "ඉල් කො-මෝන්ස් ආ ට්‍ර-වා-යේ ආ නෆ් අර්." },
+        { "id": "w3_1_5", "target": "Dormir", "phonetic": "ඩොර්-මීර්", "native_meaning": "නිදාගන්නවා", "english": "To sleep", "example_sentence_target": "Je dois dormir tôt ce soir.", "example_sentence_native": "මට අද රෑ ඉක්මනට නිදාගන්න ඕන.", "example_sentence_phonetic": "ෂ දුවා ඩොර්-මීර් තෝ ස ස්වාර්." }
+      ],
+      "sentences": [
+        { "id": "s3_1_1", "target": "Je me brosse les dents.", "native": "මම දත් මදිනවා.", "phonetic": "ෂ ම බ්‍රොස් ලේ දෝන්." },
+        { "id": "s3_1_2", "target": "Elle prend une douche.", "native": "ඇය නානවා.", "phonetic": "එල් ප්‍රෝන් උන් ඩූෂ්." },
+        { "id": "s3_1_3", "target": "Nous lisons avant de dormir.", "native": "අපි නිදාගන්න කලින් කියවනවා.", "phonetic": "නූ ලි-සෝන් අ-වෝන් ද ඩොර්-මීර්." }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts",
+          "context": "උදෑසන චර්යාව ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Bonjour! Tu te réveilles à quelle heure?", "native": "සුබ උදෑසනක්! ඔයා කීයටද නැගිටින්නේ?", "phonetic": "බොන්-ෂූහ්! තූ ත රෙ-වෙයි ආ කෙල් අර්?" },
+            { "speaker": "B", "target": "Je me réveille à sept heures. Et toi?", "native": "මම හතට නැගිටින්නේ. ඔයා?", "phonetic": "ෂ ම රෙ-වෙයි ආ සෙට් අර්. ඒ තුවා?" }
           ]
         },
         {
           "id": "d3_1_2",
-          "context": "Formal Body Parts",
+          "context": "රාත්‍රී ආහාරය ගැන සැලසුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "Qu'est-ce qu'on mange ce soir?", "native": "අපි අද රෑ මොනවද කන්නේ?", "phonetic": "කෙස්-කෝන් මොන්-ෂ් ස ස්වාර්?" },
+            { "speaker": "B", "target": "On peut manger de la pizza.", "native": "අපිට පීසා කන්න පුළුවන්.", "phonetic": "ඕන් ප මොන්-ෂේ ද ලා පීට්-සා." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_1_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_1_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_1_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_1_1", "sentence": "Je ___ du thé le matin.", "answer": "bois", "hint": "බොනවා" }
         ],
         "matching": [
-          {
-            "id": "m3_1_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_1_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_1_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_1_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_1_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc3_1_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_1_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+          { "id": "m3_1_1", "target": "Dormir", "native": "නිදාගන්නවා" },
+          { "id": "m3_1_2", "target": "Manger", "native": "කනවා" }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D1"
-      }
+      "cultural_note": "ප්‍රංශයේ, දිවා ආහාරය ('le déjeuner') දවසේ ප්‍රධාන ආහාරය විය හැකි අතර එය පැයක් හෝ ඊට වැඩි කාලයක් පැවතිය හැකියි.",
+      "pronunciation_tip": "ප්‍රංශ භාෂාවේ 'r' ශබ්දය උගුරේ පිටුපසින් එන ශබ්දයක් වන අතර, එය ඉංග්‍රීසි 'r' ශබ්දයට වඩා වෙනස් ය.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D1-Routine" }
     },
     {
       "week": 3,
       "day": 2,
-      "title": "Week 3 Day 2: Common Symptoms",
-      "title_native": "Common Symptoms",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 2 වන දිනය: රැකියාව ගැන කතා කිරීම",
+      "title_native": "Semaine 3, Jour 2 : Parler du travail",
+      "theme": "Talking about work",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_2_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_2_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_2_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_2_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_2_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_2_1", "target": "Profession", "phonetic": "ප්‍රො-ෆෙ-ස්යෝන්", "native_meaning": "වෘත්තිය", "english": "Profession", "example_sentence_target": "Quelle est votre profession?", "example_sentence_native": "ඔබේ වෘත්තිය කුමක්ද?", "example_sentence_phonetic": "කෙල් ඒ වොත්-ර ප්‍රො-ෆෙ-ස්යෝන්?" },
+        { "id": "w3_2_2", "target": "Bureau", "phonetic": "බියු-රෝ", "native_meaning": "කාර්යාලය", "english": "Office", "example_sentence_target": "Je travaille dans un bureau.", "example_sentence_native": "මම වැඩ කරන්නේ කාර්යාලයක.", "example_sentence_phonetic": "ෂ ට්‍ර-වායි දෝන් සන් බියු-රෝ." },
+        { "id": "w3_2_3", "target": "Collègue", "phonetic": "කො-ලෙග්", "native_meaning": "සම සේවකයා", "english": "Colleague", "example_sentence_target": "Mon collègue est très gentil.", "example_sentence_native": "මගේ සහායකයා හරිම කරුණාවන්තයි.", "example_sentence_phonetic": "මොන් කො-ලෙග් ඒ ට්‍රේ ෂොන්-තී." },
+        { "id": "w3_2_4", "target": "Réunion", "phonetic": "රෙ-උන්-යෝන්", "native_meaning": "රැස්වීම", "english": "Meeting", "example_sentence_target": "J'ai une réunion à dix heures.", "example_sentence_native": "මට දහයට රැස්වීමක් තියෙනවා.", "example_sentence_phonetic": "ෂේ උන් රෙ-උන්-යෝන් ආ ඩිස් අර්." },
+        { "id": "w3_2_5", "target": "Pause", "phonetic": "පෝස්", "native_meaning": "විවේකය", "english": "Break", "example_sentence_target": "Il est l'heure de la pause déjeuner.", "example_sentence_native": "දැන් දිවා ආහාර විවේක වෙලාව.", "example_sentence_phonetic": "ඉල් ඒ ලර් ද ලා පෝස් දෙ-ෂු-නෙ." }
+      ],
+      "sentences": [
+        { "id": "s3_2_1", "target": "Je suis fatigué de travailler.", "native": "වැඩ කරලා මට මහන්සියි.", "phonetic": "ෂ ස්වී ෆා-ති-ගේ ද ට්‍ර-වා-යේ." },
+        { "id": "s3_2_2", "target": "Le patron est en réunion.", "native": "ලොක්කා රැස්වීමක.", "phonetic": "ල ප-ට්‍රෝන් ඒ ඕන් රෙ-උන්-යෝන්." },
+        { "id": "s3_2_3", "target": "Où sont les toilettes?", "native": "වැසිකිළි කොහෙද?", "phonetic": "ඌ සෝන් ලේ තුවා-ලෙට්?" }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms",
+          "context": "කෙනෙකුගේ රැකියාව ගැන විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Vous faites quoi dans la vie?", "native": "ඔයා ජීවත් වෙන්න මොනවද කරන්නේ?", "phonetic": "වූ ෆෙට් කුවා දොන් ලා වී?" },
+            { "speaker": "B", "target": "Je suis ingénieur. Et vous?", "native": "මම ඉංජිනේරුවෙක්. ඔයා?", "phonetic": "ෂ ස්වී අන්-ෂෙ-නියර්. ඒ වූ?" }
           ]
         },
         {
           "id": "d3_2_2",
-          "context": "Formal Common Symptoms",
+          "context": "වැඩ කරන දිනයක් ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "Ta journée s'est bien passée?", "native": "ඔයාගේ දවස හොඳට ගෙවුනාද?", "phonetic": "තා ෂුර්-නේ සේ බියන් ප-සේ?" },
+            { "speaker": "B", "target": "Oui, mais j'ai eu beaucoup de réunions.", "native": "ඔව්, ඒත් මට රැස්වීම් ගොඩක් තිබුණා.", "phonetic": "වී, මේ ෂේ උ බො-කූ ද රෙ-උන්-යෝන්." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb3_2_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_2_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_2_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_2_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_2_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_2_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_2_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_2_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
+        "sentenceScramble": [
+          { "id": "ss3_2_1", "scrambled": ["un", "travaille", "dans", "je", "bureau"], "correct": "je travaille dans un bureau", "nativeHint": "මම කාර්යාලයක වැඩ කරනවා." }
         ],
         "multipleChoice": [
-          {
-            "id": "mc3_2_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_2_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+          { "id": "mc3_2_1", "question": "'රැස්වීම' සඳහා ප්‍රංශ වචනය කුමක්ද?", "options": ["Bureau", "Pause", "Réunion", "Collègue"], "correct": 2, "explanation": "Réunion යනු 'රැස්වීම' යන්නයි." }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D2"
-      }
+      "cultural_note": "ප්‍රංශයේ, සේවකයින්ට නීතියෙන් හිමිවන පැය 35ක සතියේ වැඩ කාලයක් ඇත, නමුත් බොහෝ දෙනෙක් ඊට වඩා වැඩ කරයි.",
+      "pronunciation_tip": "'Collègue' හි 'gue' ශබ්දය ඉංග්‍රීසි 'get' හි 'g' ශබ්දය මෙනි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D2-Work" }
     },
     {
       "week": 3,
       "day": 3,
-      "title": "Week 3 Day 3: At the Doctor",
-      "title_native": "At the Doctor",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 3 වන දිනය: කාලසටහන ගැන විමසීම",
+      "title_native": "Semaine 3, Jour 3 : Demander l'horaire",
+      "theme": "Asking about schedule",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_3_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_3_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_3_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_3_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_3_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_3_1", "target": "Horaire", "phonetic": "ඔ-රෙර්", "native_meaning": "කාලසටහන", "english": "Schedule", "example_sentence_target": "Quel est l'horaire du magasin?", "example_sentence_native": "කඩේ කාලසටහන මොකක්ද?", "example_sentence_phonetic": "කෙල් ඒ ලො-රෙර් දු ම-ග-සන්?" },
+        { "id": "w3_3_2", "target": "Ouvert", "phonetic": "ඌ-වෙර්", "native_meaning": "විවෘතයි", "english": "Open", "example_sentence_target": "Le musée est ouvert jusqu'à 18h.", "example_sentence_native": "කෞතුකාගාරය සවස 6 වෙනකම් විවෘතයි.", "example_sentence_phonetic": "ල මියු-සේ ඒ ඌ-වෙර් ෂුස්-කා ඩිස්-වීට්-අර්." },
+        { "id": "w3_3_3", "target": "Fermé", "phonetic": "ෆෙර්-මේ", "native_meaning": "වසා ඇත", "english": "Closed", "example_sentence_target": "La banque est fermée le dimanche.", "example_sentence_native": "බැංකුව ඉරිදා වසා ඇත.", "example_sentence_phonetic": "ලා බොන්ක් ඒ ෆෙර්-මේ ල ඩි-මොන්ෂ්." },
+        { "id": "w3_3_4", "target": "Rendez-vous", "phonetic": "රොන්-දෙ-වූ", "native_meaning": "හමුවීම (appointment)", "english": "Appointment", "example_sentence_target": "J'ai un rendez-vous chez le médecin.", "example_sentence_native": "මට දොස්තර හමුවෙන්න වෙලාවක් තියෙනවා.", "example_sentence_phonetic": "ෂේ අන් රොන්-දෙ-වූ ශේ ල මෙඩ්-සන්." },
+        { "id": "w3_3_5", "target": "Tard", "phonetic": "තාර්", "native_meaning": "ප්‍රමාදයි", "english": "Late", "example_sentence_target": "Il est trop tard pour appeler.", "example_sentence_native": "කෝල් කරන්න දැන් පරක්කු වැඩියි.", "example_sentence_phonetic": "ඉල් ඒ ට්‍රෝ තාර් පූර් අ-ප්-ලේ." },
+        { "id": "w3_3_6", "target": "Tôt", "phonetic": "තෝ", "native_meaning": "ඉක්මනින්", "english": "Early", "example_sentence_target": "Je pars tôt demain matin.", "example_sentence_native": "මම හෙට උදේ පාන්දරින් යනවා.", "example_sentence_phonetic": "ෂ පාර් තෝ ද-මන් මා-තන්." }
+      ],
+      "sentences": [
+        { "id": "s3_3_1", "target": "À quelle heure ça ouvre?", "native": "කීයටද අරින්නේ?", "phonetic": "ආ කෙල් අර් සා ඌ-ව්ර?" },
+        { "id": "s3_3_2", "target": "Vous êtes en retard.", "native": "ඔබ පරක්කුයි.", "phonetic": "වූ-සෙට් ඕන් ර-තාර්." },
+        { "id": "s3_3_3", "target": "Le train part à l'heure.", "native": "දුම්රිය වෙලාවට පිටත් වෙනවා.", "phonetic": "ල ට්‍රැන් පාර් ආ ලර්." }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor",
+          "context": "ෆාමසියක් විවෘත කරන වේලාව ගැන විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Excusez-moi, la pharmacie est ouverte?", "native": "සමාවෙන්න, ෆාමසිය ඇරලද?", "phonetic": "එක්ස්-කියු-සේ-මුවා, ලා ෆාර්-මා-සී ඒ ඌ-වෙර්ට්?" },
+            { "speaker": "B", "target": "Oui, elle est ouverte jusqu'à 20h.", "native": "ඔව්, ඒක රෑ 8 වෙනකම් ඇරලා.", "phonetic": "වී, එල් ඒ ඌ-වෙර්ට් ෂුස්-කා වන්-අර්." }
           ]
         },
         {
           "id": "d3_3_2",
-          "context": "Formal At the Doctor",
+          "context": "හමුවීමක් සඳහා වේලාවක් වෙන් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "Je voudrais prendre un rendez-vous, s'il vous plaît.", "native": "මට වෙලාවක් වෙන් කරගන්න ඕන, කරුණාකරලා.", "phonetic": "ෂ වූ-ඩ්‍රේ ප්‍රොන්-ඩ්‍රා අන් රොන්-දෙ-වූ, සිල් වූ ප්ලේ." },
+            { "speaker": "B", "target": "Bien sûr, pour quand?", "native": "හරි, කවදාටද?", "phonetic": "බියන් සූර්, පූර් කෝන්?" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_3_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_3_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_3_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_3_1", "sentence": "Le magasin est ___ le dimanche.", "answer": "fermé", "hint": "වසා ඇත" }
         ],
         "matching": [
-          {
-            "id": "m3_3_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_3_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_3_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_3_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_3_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc3_3_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_3_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+          { "id": "m3_3_1", "target": "Tôt", "native": "ඉක්මනින්" },
+          { "id": "m3_3_2", "target": "Tard", "native": "ප්‍රමාදයි" }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D3"
-      }
+      "cultural_note": "ප්‍රංශයේ බොහෝ කුඩා කඩවල් සහ ව්‍යාපාර දිවා ආහාරය සඳහා පැය දෙකක් පමණ වසා තැබීම සාමාන්‍ය දෙයකි (උදා: දහවල් 12 සිට 2 දක්වා).",
+      "pronunciation_tip": "'Rendez-vous' හි 'en' ශබ්දය නාസിക ශබ්දයකි. ඔබේ නාසය හරහා වාතය පිටකරමින් එය උච්චාරණය කිරීමට උත්සාහ කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D3-Schedule" }
     },
     {
       "week": 3,
       "day": 4,
-      "title": "Week 3 Day 4: Pharmacy",
-      "title_native": "Pharmacy",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 4 වන දිනය: සැලසුම් ගැන කතා කිරීම",
+      "title_native": "Semaine 3, Jour 4 : Parler des projets",
+      "theme": "Talking about plans",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_4_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_4_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_4_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_4_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_4_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_4_1", "target": "Projet", "phonetic": "ප්‍රො-ෂේ", "native_meaning": "සැලසුම / ව්‍යාපෘතිය", "english": "Plan / Project", "example_sentence_target": "Quels sont tes projets pour le week-end?", "example_sentence_native": "සති අන්තෙට ඔයාගෙ සැලසුම් මොනවද?", "example_sentence_phonetic": "කෙල් සෝන් තේ ප්‍රො-ෂේ පූර් ල වීක්-එන්ඩ්?" },
+        { "id": "w3_4_2", "target": "Aller", "phonetic": "අ-ලේ", "native_meaning": "යනවා", "english": "To go", "example_sentence_target": "Je vais aller au cinéma.", "example_sentence_native": "මම සිනමා ශාලාවට යනවා.", "example_sentence_phonetic": "ෂ වේ අ-ලේ ඕ සි-නෙ-මා." },
+        { "id": "w3_4_3", "target": "Faire", "phonetic": "ෆෙයාර්", "native_meaning": "කරනවා", "english": "To do / to make", "example_sentence_target": "Qu'est-ce que tu vas faire demain?", "example_sentence_native": "ඔයා හෙට මොකද කරන්නේ?", "example_sentence_phonetic": "කෙස්-ක තූ වා ෆෙයාර් ද-මන්?" },
+        { "id": "w3_4_4", "target": "Voir", "phonetic": "වුවාර්", "native_meaning": "දකිනවා / බලනවා", "english": "To see", "example_sentence_target": "Je veux voir ce film.", "example_sentence_native": "මට මේ චිත්‍රපටිය බලන්න ඕන.", "example_sentence_phonetic": "ෂ ව වුවාර් ස ෆිල්ම්." },
+        { "id": "w3_4_5", "target": "Peut-être", "phonetic": "ප-ටෙට්‍ර", "native_meaning": "සමහරවිට", "english": "Maybe", "example_sentence_target": "Peut-être que nous irons à la plage.", "example_sentence_native": "සමහරවිට අපි වෙරළට යයි.", "example_sentence_phonetic": "ප-ටෙට්‍ර ක නූ-ස් ඉ-රෝන් ආ ලා ප්ලාෂ්." }
+      ],
+      "sentences": [
+        { "id": "s3_4_1", "target": "Je n'ai pas de projet spécial.", "native": "මට විශේෂ සැලසුමක් නැහැ.", "phonetic": "ෂ නේ පා ද ප්‍රො-ෂේ ස්පෙ-ස්යාල්." },
+        { "id": "s3_4_2", "target": "On pourrait aller au restaurant.", "native": "අපිට රෙස්ටුරන්ට් එකකට යන්න පුළුවන්.", "phonetic": "ඕන් පූ-රේ අ-ලේ ඕ රෙස්-තො-රොන්." },
+        { "id": "s3_4_3", "target": "Ça te dit d'aller boire un verre?", "native": "ගිහින් මොනවාහරි බොන්න කැමතිද?", "phonetic": "සා ත ඩි ද-ලේ බුවාර් අන් වෙයාර්?" }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy",
+          "context": "සති අන්ත සැලසුම් ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Tu fais quoi ce week-end?", "native": "ඔයා මේ සති අන්තයේ මොකද කරන්නේ?", "phonetic": "තූ ෆේ කුවා ස වීක්-එන්ඩ්?" },
+            { "speaker": "B", "target": "Je vais voir des amis. Et toi?", "native": "මම යාලුවෝ බලන්න යනවා. ඔයා?", "phonetic": "ෂ වේ වුවාර් දේ-ස් අමී. ඒ තුවා?" }
           ]
         },
         {
           "id": "d3_4_2",
-          "context": "Formal Pharmacy",
+          "context": "එකට යමක් කිරීමට යෝජනා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "On va au parc cet après-midi?", "native": "අපි අද හවස පාර්ක් එකට යමුද?", "phonetic": "ඕන් වා ඕ පාර්ක් සෙට්-අප්‍රේ-මිඩි?" },
+            { "speaker": "B", "target": "Oui, bonne idée!", "native": "ඔව්, හොඳ අදහසක්!", "phonetic": "වී, බොන් ඉ-ඩේ!" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_4_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_4_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_4_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_4_1", "sentence": "Je vais ___ des courses.", "answer": "faire", "hint": "කරනවා" }
         ],
-        "matching": [
-          {
-            "id": "m3_4_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_4_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_4_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_4_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_4_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc3_4_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_4_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_4_1", "scrambled": ["cinéma", "au", "aller", "vais", "je"], "correct": "je vais aller au cinéma", "nativeHint": "මම සිනමා ශාලාවට යනවා." }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D4"
-      }
+      "cultural_note": "ප්‍රංශ ජාතිකයන් බොහෝ විට ඔවුන්ගේ සමාජ ජීවිතය සති කිහිපයකට පෙර සැලසුම් කරයි, විශේෂයෙන් රාත්‍රී ආහාර සඳහා ආරාධනා කිරීමේදී.",
+      "pronunciation_tip": "'Faire' හි 'ai' ශබ්දය ඉංග්‍රීසි 'bed' හි 'e' ශබ්දයට සමානයි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D4-Plans" }
     },
     {
       "week": 3,
       "day": 5,
-      "title": "Week 3 Day 5: Emergency Phrases",
-      "title_native": "Emergency Phrases",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 5 වන දිනය: අවසර ඉල්ලීම",
+      "title_native": "Semaine 3, Jour 5 : Demander la permission",
+      "theme": "Asking permission",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_5_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_5_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_5_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_5_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_5_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_5_1", "target": "Puis-je", "phonetic": "පුවී-ෂ", "native_meaning": "මට පුළුවන්ද", "english": "May I", "example_sentence_target": "Puis-je utiliser votre téléphone?", "example_sentence_native": "මට ඔබේ දුරකථනය පාවිච්චි කරන්න පුළුවන්ද?", "example_sentence_phonetic": "පුවී-ෂ උ-ති-ලි-සේ වොත්-ර තෙ-ලෙ-ෆෝන්?" },
+        { "id": "w3_5_2", "target": "Est-ce que je peux", "phonetic": "එස්-ක ෂ ප", "native_meaning": "මට පුළුවන්ද", "english": "Can I", "example_sentence_target": "Est-ce que je peux m'asseoir ici?", "example_sentence_native": "මට මෙතන වාඩි වෙන්න පුළුවන්ද?", "example_sentence_phonetic": "එස්-ක ෂ ප ම-සුවාර් ඉ-සී?" },
+        { "id": "w3_5_3", "target": "S'il vous plaît", "phonetic": "සිල් වූ ප්ලේ", "native_meaning": "කරුණාකර", "english": "Please (formal)", "example_sentence_target": "Passez-moi le sel, s'il vous plaît.", "example_sentence_native": "ලුණු එක දෙන්න, කරුණාකර.", "example_sentence_phonetic": "ප-සේ-මුවා ල සෙල්, සිල් වූ ප්ලේ." },
+        { "id": "w3_5_4", "target": "S'il te plaît", "phonetic": "සිල් ත ප්ලේ", "native_meaning": "කරුණාකර", "english": "Please (informal)", "example_sentence_target": "Aide-moi, s'il te plaît.", "example_sentence_native": "මට උදව් කරන්න, කරුණාකර.", "example_sentence_phonetic": "එඩ්-මුවා, සිල් ත ප්ලේ." },
+        { "id": "w3_5_5", "target": "Possible", "phonetic": "පො-සී-බ්ල", "native_meaning": "හැකියි / පුළුවන්", "english": "Possible", "example_sentence_target": "Est-il possible d'avoir de l'eau?", "example_sentence_native": "වතුර ටිකක් ගන්න පුළුවන්ද?", "example_sentence_phonetic": "එ-තිල් පො-සී-බ්ල ද-වුවාර් ද ලෝ?" }
+      ],
+      "sentences": [
+        { "id": "s3_5_1", "target": "Puis-je poser une question?", "native": "මට ප්‍රශ්නයක් අහන්න පුළුවන්ද?", "phonetic": "පුවී-ෂ පො-සේ උන් කෙස්-ත්-යෝන්?" },
+        { "id": "s3_5_2", "target": "Est-ce que je peux entrer?", "native": "මට ඇතුළට එන්න පුළුවන්ද?", "phonetic": "එස්-ක ෂ ප ඕන්-ට්‍රේ?" },
+        { "id": "s3_5_3", "target": "Ce n'est pas possible.", "native": "එය කළ නොහැක.", "phonetic": "ස නේ පා පො-සී-බ්ල." }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases",
+          "context": "ඡායාරූපයක් ගැනීමට අවසර ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Puis-je prendre une photo ici?", "native": "මට මෙතන පින්තූරයක් ගන්න පුළුවන්ද?", "phonetic": "පුවී-ෂ ප්‍රොන්-ඩ්‍රා උන් ෆො-තෝ ඉ-සී?" },
+            { "speaker": "B", "target": "Oui, bien sûr.", "native": "ඔව්, ඇත්තෙන්ම.", "phonetic": "වී, බියන් සූර්." }
           ]
         },
         {
           "id": "d3_5_2",
-          "context": "Formal Emergency Phrases",
+          "context": "කවුළුව විවෘත කිරීමට අවසර ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "Est-ce que je peux ouvrir la fenêtre?", "native": "මට ජනේලය අරින්න පුළුවන්ද?", "phonetic": "එස්-ක ෂ ප ඌ-ව්රීර් ලා ෆ-නෙට්‍ර?" },
+            { "speaker": "B", "target": "Désolé, il fait un peu froid.", "native": "සමාවෙන්න, ටිකක් සීතලයි.", "phonetic": "දෙ-සො-ලේ, ඉල් ෆේ අන් ප ෆ්රුවා." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_5_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_5_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_5_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_5_1", "sentence": "Puis-je avoir un café, ___?", "answer": "s'il vous plaît", "hint": "කරුණාකර (විධිමත්)" }
         ],
         "matching": [
-          {
-            "id": "m3_5_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_5_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_5_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_5_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_5_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc3_5_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_5_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+          { "id": "m3_5_1", "target": "Puis-je?", "native": "මට පුළුවන්ද" },
+          { "id": "m3_5_2", "target": "Possible", "native": "හැකියි" }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D5"
-      }
+      "cultural_note": "ප්‍රංශයේදී, විශේෂයෙන් නාඳුනන පුද්ගලයින් සමඟ කතා කිරීමේදී, 's'il vous plaît' වැනි විධිමත් ආචාරශීලී වචන භාවිතය ඉතා වැදගත් වේ.",
+      "pronunciation_tip": "'Puis-je' හි 'ui' ශබ්දය ඉක්මන් 'වී' ශබ්දයක් මෙන් උච්චාරණය කෙරේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D5-Permission" }
     },
     {
       "week": 3,
       "day": 6,
-      "title": "Week 3 Day 6: Mental Health",
-      "title_native": "Mental Health",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 6 වන දිනය: සරල පිළිතුරු දීම",
+      "title_native": "Semaine 3, Jour 6 : Donner des réponses simples",
+      "theme": "Giving simple answers",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_6_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_6_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_6_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_6_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_6_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_6_1", "target": "Oui", "phonetic": "වී", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Oui, je suis d'accord.", "example_sentence_native": "ඔව්, මම එකඟයි.", "example_sentence_phonetic": "වී, ෂ ස්වී ද-කෝර්." },
+        { "id": "w3_6_2", "target": "Non", "phonetic": "නෝන්", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "Non, je ne veux pas.", "example_sentence_native": "නැහැ, මට ඕන නෑ.", "example_sentence_phonetic": "නෝන්, ෂ න ව පා." },
+        { "id": "w3_6_3", "target": "Bien sûr", "phonetic": "බියන් සූර්", "native_meaning": "ඇත්තෙන්ම", "english": "Of course", "example_sentence_target": "Bien sûr que vous pouvez.", "example_sentence_native": "ඇත්තෙන්ම ඔබට පුළුවන්.", "example_sentence_phonetic": "බියන් සූර් ක වූ පූ-වේ." },
+        { "id": "w3_6_4", "target": "D'accord", "phonetic": "ද-කෝර්", "native_meaning": "හරි / එකඟයි", "english": "Okay / Agreed", "example_sentence_target": "D'accord, on fait comme ça.", "example_sentence_native": "හරි, අපි එහෙම කරමු.", "example_sentence_phonetic": "ද-කෝර්, ඕන් ෆේ කොම් සා." },
+        { "id": "w3_6_5", "target": "Je ne sais pas", "phonetic": "ෂ න සේ පා", "native_meaning": "මම දන්නේ නැහැ", "english": "I don't know", "example_sentence_target": "Je ne sais pas où il est.", "example_sentence_native": "ඔහු කොහෙද ඉන්නේ කියලා මම දන්නේ නැහැ.", "example_sentence_phonetic": "ෂ න සේ පා ඌ ඉල් ඒ." }
+      ],
+      "sentences": [
+        { "id": "s3_6_1", "target": "Oui, avec plaisir.", "native": "ඔව්, සතුටින්.", "phonetic": "වී, අ-වෙක් ප්ලේ-සීර්." },
+        { "id": "s3_6_2", "target": "Non, merci.", "native": "නැහැ, ස්තූතියි.", "phonetic": "නෝන්, මෙර්-සී." },
+        { "id": "s3_6_3", "target": "Je ne comprends pas.", "native": "මට තේරෙන්නේ නැහැ.", "phonetic": "ෂ න කොම්-ප්‍රෝන් පා." }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health",
+          "context": "ආරාධනාවකට පිළිතුරු දීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Tu veux venir avec nous?", "native": "ඔයාට අපිත් එක්ක එන්න ඕනද?", "phonetic": "තූ ව ව-නීර් අ-වෙක් නූ?" },
+            { "speaker": "B", "target": "Oui, avec plaisir!", "native": "ඔව්, සතුටින්!", "phonetic": "වී, අ-වෙක් ප්ලේ-සීර්!" }
           ]
         },
         {
           "id": "d3_6_2",
-          "context": "Formal Mental Health",
+          "context": "යමක් ප්‍රතික්ෂේප කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "Voulez-vous encore du café?", "native": "ඔබට තව කෝපි ඕනද?", "phonetic": "වූ-ලේ-වූ ඕන්-කෝර් දු කැ-ෆේ?" },
+            { "speaker": "B", "target": "Non merci, c'est suffisant.", "native": "නැහැ ස්තූතියි, ඇති.", "phonetic": "නෝන් මෙර්-සී, සේ සූ-ෆි-සෝන්." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb3_6_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_6_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_6_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m3_6_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_6_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_6_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_6_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_6_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
-        ],
         "multipleChoice": [
-          {
-            "id": "mc3_6_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_6_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+          { "id": "mc3_6_1", "question": "'මම දන්නේ නැහැ' යන්න ප්‍රංශ භාෂාවෙන් කියන්නේ කෙසේද?", "options": ["Oui, je sais", "Je ne sais pas", "D'accord", "Non"], "correct": 1, "explanation": "'Je ne sais pas' යනු 'මම දන්නේ නැහැ' යන්නයි." }
+        ],
+        "sentenceScramble": [
+          { "id": "ss3_6_1", "scrambled": ["suis", "d'accord", "je"], "correct": "je suis d'accord", "nativeHint": "මම එකඟයි." }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D6"
-      }
+      "cultural_note": "ප්‍රංශයේ යමක් ප්‍රතික්ෂේප කිරීමේදී 'Non, merci' (නැහැ, ස්තූතියි) යැයි කීම ආචාරශීලී ක්‍රමයයි.",
+      "pronunciation_tip": "'Non' යනු නාසික ශබ්දයකි. ඔබේ මුඛය 'o' හැඩයට තබාගෙන නාසයෙන් ශබ්දය පිට කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D6-Answers" }
     },
     {
       "week": 3,
       "day": 7,
-      "title": "Week 3 Day 7: Health Culture",
-      "title_native": "Health Culture",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 7 වන දිනය: දිශා වචන",
+      "title_native": "Semaine 3, Jour 7 : Mots de direction",
+      "theme": "Directional words",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_7_1",
-          "target": "Médecin",
-          "phonetic": "මේ-ද-සාං",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_7_2",
-          "target": "Hôpital",
-          "phonetic": "ඕ-පී-තාල්",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_7_3",
-          "target": "Douleur",
-          "phonetic": "දූ-ලොර්",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_7_4",
-          "target": "Médicament",
-          "phonetic": "මේ-දී-කා-මාං",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_7_5",
-          "target": "Malade",
-          "phonetic": "මා-ලාද්",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_7_1", "target": "En haut", "phonetic": "ඕන් ඕ", "native_meaning": "ඉහළ", "english": "Up / Upstairs", "example_sentence_target": "Le bureau est en haut.", "example_sentence_native": "කාර්යාලය තියෙන්නේ උඩ තට්ටුවේ.", "example_sentence_phonetic": "ල බියු-රෝ ඒ ඕන් ඕ." },
+        { "id": "w3_7_2", "target": "En bas", "phonetic": "ඕන් බා", "native_meaning": "පහළ", "english": "Down / Downstairs", "example_sentence_target": "La cuisine est en bas.", "example_sentence_native": "මුළුතැන්ගෙය තියෙන්නේ පල්ලෙහා.", "example_sentence_phonetic": "ලා කුයි-සීන් ඒ ඕන් බා." },
+        { "id": "w3_7_3", "target": "Devant", "phonetic": "ද-වෝන්", "native_meaning": "ඉදිරිපස", "english": "In front", "example_sentence_target": "La voiture est devant la maison.", "example_sentence_native": "කාර් එක ගේ ඉස්සරහ තියෙනවා.", "example_sentence_phonetic": "ලා වුවා-තූර් ඒ ද-වෝන් ලා මෙ-සෝන්." },
+        { "id": "w3_7_4", "target": "Derrière", "phonetic": "ඩෙ-රි-යෙර්", "native_meaning": "පිටුපස", "english": "Behind", "example_sentence_target": "Le jardin est derrière la maison.", "example_sentence_native": "වත්ත තියෙන්නේ ගේ පිටිපස්සේ.", "example_sentence_phonetic": "ල ෂාර්-ඩන් ඒ ඩෙ-රි-යෙර් ලා මෙ-සෝන්." },
+        { "id": "w3_7_5", "target": "À côté de", "phonetic": "ආ කෝ-තේ ද", "native_meaning": "ලඟ / поруч", "english": "Next to", "example_sentence_target": "La pharmacie est à côté de la banque.", "example_sentence_native": "ෆාමසිය තියෙන්නේ බැංකුව ළඟ.", "example_sentence_phonetic": "ලා ෆාර්-මා-සී ඒ ආ කෝ-තේ ද ලා බොන්ක්." },
+        { "id": "w3_7_6", "target": "À gauche", "phonetic": "ආ ගෝෂ්", "native_meaning": "වමට", "english": "To the left", "example_sentence_target": "Tournez à gauche.", "example_sentence_native": "වමට හැරෙන්න.", "example_sentence_phonetic": "තූර්-නේ ආ ගෝෂ්." },
+        { "id": "w3_7_7", "target": "À droite", "phonetic": "ආ ඩ්රුවාට්", "native_meaning": "දකුණට", "english": "To the right", "example_sentence_target": "Le restaurant est à droite.", "example_sentence_native": "රෙස්ටුරන්ට් එක තියෙන්නේ දකුණු පැත්තේ.", "example_sentence_phonetic": "ල රෙස්-තො-රොන් ඒ ආ ඩ්රුවාට්." }
+      ],
+      "sentences": [
+        { "id": "s3_7_1", "target": "C'est tout droit.", "native": "කෙලින්ම යන්න.", "phonetic": "සේ තූ ඩ්රුවා." },
+        { "id": "s3_7_2", "target": "Le livre est sur la table.", "native": "පොත මේසය උඩ.", "phonetic": "ල ලී-ව්ර ඒ සූර් ලා තාබ්ල." },
+        { "id": "s3_7_3", "target": "Le chat est sous la chaise.", "native": "පූසා පුටුව යට.", "phonetic": "ල ශා ඒ සූ ලා ශේස්." }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture",
+          "context": "මාර්ගය විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "මේ-ද-සාං"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "මේ-ද-සාං ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            }
+            { "speaker": "A", "target": "Pardon, où est la gare?", "native": "සමාවෙන්න, ස්ටේෂන් එක කොහෙද?", "phonetic": "පාර්-දෝන්, ඌ ඒ ලා ගාර්?" },
+            { "speaker": "B", "target": "C'est à gauche, après le pont.", "native": "ඒක තියෙන්නේ වම් පැත්තේ, පාලම පහු කරලා.", "phonetic": "සේ ආ ගෝෂ්, අප්‍රේ ල පෝන්." }
           ]
         },
         {
           "id": "d3_7_2",
-          "context": "Formal Health Culture",
+          "context": "යමක් කොහේදැයි විස්තර කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "රෝහල!",
-              "phonetic": "ඕ-පී-තාල්"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "වේදනාව!",
-              "phonetic": "දූ-ලොර්"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "මේ-දී-කා-මාං මා-ලාද්"
-            }
+            { "speaker": "A", "target": "Où sont mes clés?", "native": "මගේ යතුරු කොහෙද?", "phonetic": "ඌ සෝන් මේ ක්ලේ?" },
+            { "speaker": "B", "target": "Elles sont sur la table, devant toi.", "native": "ඒවා මේසෙ උඩ, ඔයා ඉස්සරහ.", "phonetic": "එල් සෝන් සූර් ලා තාබ්ල, ද-වෝන් තුවා." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb3_7_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_7_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_7_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "වේදනාව"
-          }
-        ],
         "matching": [
-          {
-            "id": "m3_7_1",
-            "target": "Médecin",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_7_2",
-            "target": "Hôpital",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_7_3",
-            "target": "Douleur",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_7_4",
-            "target": "Médicament",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_7_5",
-            "target": "Malade",
-            "native": "අසනීප"
-          }
+          { "id": "m3_7_1", "target": "En haut", "native": "ඉහළ" },
+          { "id": "m3_7_2", "target": "En bas", "native": "පහළ" },
+          { "id": "m3_7_3", "target": "Devant", "native": "ඉදිරිපස" },
+          { "id": "m3_7_4", "target": "Derrière", "native": "පිටුපස" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_7_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_7_2",
-            "question": "How do you say 'රෝහල' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means රෝහල."
-          }
+        "fillBlanks": [
+          { "id": "fb3_7_1", "sentence": "La boulangerie est ___ de la poste.", "answer": "à côté", "hint": "ලඟ" }
         ]
       },
-      "cultural_note": "ප්‍රංශ රෝහල් ගාස්තු යුරෝපයේ අඩුම ගාස්තු අතර වේ — රජය 70% ගෙවයි!",
-      "pronunciation_tip": "ප්‍රංශ නාසික ශබ්ද — 'an','on','in' ශබ්ද නාසයෙන් නිකුත් කෙරේ.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D7"
-      }
+      "cultural_note": "ප්‍රංශයේ ලිපිනයන්හි, ගොඩනැගිල්ලේ පිහිටීම විස්තර කිරීමට 'bis' (දෙවන) හෝ 'ter' (තුන්වන) වැනි වචන භාවිතා විය හැකිය, උදා: '20bis, Rue de la Paix'.",
+      "pronunciation_tip": "'Droite' හි 'oi' ශබ්දය 'වුවා' ලෙස උච්චාරණය කෙරේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D7-Directions" }
     }
   ]
 }
