@@ -7,1325 +7,527 @@
     {
       "week": 4,
       "day": 1,
-      "title": "Week 4 Day 1: Telling the Time",
-      "title_native": "Telling the Time",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 1 වන දිනය: අවන්හලක",
+      "title_native": "Settimana 4, Giorno 1: Al Ristorante",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_1_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
+          "target": "Ristorante",
+          "phonetic": "රිස්-තො-රාන්-තෙ",
+          "native_meaning": "ආපන ශාලාව",
+          "english": "Restaurant",
+          "example_sentence_target": "",
+          "example_sentence_native": "",
+          "example_sentence_phonetic": ""
         },
         {
           "id": "w4_1_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "Menù",
+          "phonetic": "මෙ-නූ",
+          "native_meaning": "මෙනුව",
+          "english": "Menu",
+          "example_sentence_target": "",
+          "example_sentence_native": "",
+          "example_sentence_phonetic": ""
         },
         {
           "id": "w4_1_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
+          "target": "Cameriere",
+          "phonetic": "ක-මෙ-රි-එ-රෙ",
+          "native_meaning": "වේටර්",
+          "english": "Waiter",
+          "example_sentence_target": "",
+          "example_sentence_native": "",
+          "example_sentence_phonetic": ""
         },
         {
           "id": "w4_1_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
+          "target": "Acqua",
+          "phonetic": "අක්-ක්වා",
+          "native_meaning": "වතුර",
+          "english": "Water",
+          "example_sentence_target": "",
+          "example_sentence_native": "",
+          "example_sentence_phonetic": ""
         },
         {
           "id": "w4_1_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
+          "target": "Conto",
+          "phonetic": "කොන්-තො",
+          "native_meaning": "බිල",
+          "english": "Bill",
+          "example_sentence_target": "",
+          "example_sentence_native": "",
+          "example_sentence_phonetic": ""
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_1_1",
+          "target": "Vorrei un tavolo per due, per favore.",
+          "native": " කරුණාකර මට දෙදෙනෙකු සඳහා මේසයක් අවශ්‍යයි.",
+          "phonetic": "වො-ර්රෙයි උන් තා-වො-ලො περ දු-එ, περ ෆ-වො-රෙ."
+        },
+        {
+          "id": "s4_1_2",
+          "target": "Posso vedere il menù?",
+          "native": "මට මෙනුව බලන්න පුළුවන්ද?",
+          "phonetic": "පොස්-සො වෙ-දෙ-රෙ ඉල් මෙ-නූ?"
+        },
+        {
+          "id": "s4_1_3",
+          "target": "Siamo pronti per ordinare.",
+          "native": "අපි ඇණවුම් කිරීමට සූදානම්.",
+          "phonetic": "සි-ආ-මො προන්-ති περ ඔර්-දි-නා-රෙ."
+        },
+        {
+          "id": "s4_1_4",
+          "target": "Il conto, per favore.",
+          "native": "කරුණාකර බිල ගෙනෙන්න.",
+          "phonetic": "ඉල් කොන්-තො, περ ෆ-වො-රෙ."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time",
+          "context": "ආපන ශාලාවකට ඇතුළු වීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Buonasera, avete un tavolo per due?", "native": "සුබ සන්ධ්‍යාවක්, ඔබට දෙදෙනෙකු සඳහා මේසයක් තිබේද?", "phonetic": "බු-ඔ-න-සෙ-රා, අ-වෙ-තෙ උන් තා-වො-ලො περ දු-එ?" },
+            { "speaker": "B", "target": "Sì, prego. Da questa parte.", "native": "ඔව්, කරුණාකර. මේ පැත්තෙන්.", "phonetic": "සී, πρε-ගො. දා ක්වෙස්-තා παර්-තෙ." }
           ]
         },
         {
           "id": "d4_1_2",
-          "context": "Formal Telling the Time",
+          "context": "මෙනුව ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Scusi, possiamo avere il menù?", "native": "සමාවෙන්න, අපට මෙනුව ලබා ගත හැකිද?", "phonetic": "ස්කු-සි, ποස්-සි-ආ-මො අ-වෙ-රෙ ඉල් මෙ-නූ?" },
+            { "speaker": "B", "target": "Certo, ecco a voi.", "native": "ඇත්තෙන්ම, මෙන්න.", "phonetic": "චෙර්-තො, එක්-කො ආ වොයි." }
+          ]
+        },
+        {
+          "id": "d4_1_3",
+          "context": "වතුර ඇණවුම් කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Vorremmo una bottiglia d'acqua naturale.", "native": "අපට සාමාන්‍ය වතුර බෝතලයක් අවශ්‍යයි.", "phonetic": "වො-ර්රෙම්-මො උ-නා බොත්-ති-ග්ලි-ආ ද්'අක්-ක්වා න-තු-රා-ලෙ." },
+            { "speaker": "B", "target": "Subito.", "native": "වහාම.", "phonetic": "සු-බි-තො." }
+          ]
+        },
+        {
+          "id": "d4_1_4",
+          "context": "බිල ඉල්ලීම.",
+          "lines": [
+            { "speaker": "A", "target": "Cameriere, il conto per favore.", "native": "වේටර්, කරුණාකර බිල.", "phonetic": "ක-මෙ-රි-එ-රෙ, ඉල් කොන්-තො περ ෆ-වො-රෙ." },
+            { "speaker": "B", "target": "Arriva subito.", "native": "වහාම ගෙන එනවා.", "phonetic": "අර්-රි-වා සු-බි-තො." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_1_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_1_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_1_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_1_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_1_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_1_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_1_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_1_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_1_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_1_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "ඉතාලි භාෂාවේ 'r' ශබ්දය සිංහල 'ර' ශබ්දයට සමාන වන අතර, එය දිව ඉදිරියෙන් උච්චාරණය කෙරේ. 'Ristorante' වැනි වචන පුහුණු වන්න.",
+      "cultural_note": "ඉතාලියේ, බොහෝ ආපනශාලා වල 'coperto' (කවර ගාස්තුව) නමින් බිලට කුඩා ගාස්තුවක් එකතු වේ. මෙය පාන් සහ මේස සැකසීම සඳහා වේ.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D1"
+        "badge": "W4D1-Dining"
       }
     },
     {
       "week": 4,
       "day": 2,
-      "title": "Week 4 Day 2: Days of the Week",
-      "title_native": "Days of the Week",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 2 වන දිනය: ආහාර ඇණවුම් කිරීම",
+      "title_native": "Settimana 4, Giorno 2: Ordinare il Cibo",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_2_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_2_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_2_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_2_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_2_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
-        }
+        { "id": "w4_2_1", "target": "Antipasto", "phonetic": "අන්-ති-πස්-තො", "native_meaning": "ආරම්භක ආහාරය", "english": "Appetizer", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_2_2", "target": "Primo", "phonetic": "πρι-මො", "native_meaning": "පළමු ආහාරය (පැස්ටා/රයිස්)", "english": "First course", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_2_3", "target": "Secondo", "phonetic": "සෙ-කොන්-දො", "native_meaning": "දෙවන ආහාරය (මාළු/මස්)", "english": "Second course", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_2_4", "target": "Dolce", "phonetic": "දොල්-චෙ", "native_meaning": "අතුරුපස", "english": "Dessert", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_2_5", "target": "Bevanda", "phonetic": "බෙ-වන්-දා", "native_meaning": "පානය", "english": "Drink", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_2_6", "target": "Vino", "phonetic": "වී-නො", "native_meaning": "වයින්", "english": "Wine", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" }
+      ],
+      "sentences": [
+        { "id": "s4_2_1", "target": "Cosa mi consiglia?", "native": "ඔබ මට කුමක් නිර්දේශ කරනවාද?", "phonetic": "කො-සා මි කොන්-සි-ග්ලි-ආ?" },
+        { "id": "s4_2_2", "target": "Prendo la pasta al pomodoro.", "native": "මම තක්කාලි සෝස් සමග පැස්ටා ගන්නවා.", "phonetic": "πρεν-දො ලා παස්-තා අල් πο-මො-දො-රො." },
+        { "id": "s4_2_3", "target": "Per me, il pesce alla griglia.", "native": "මට, ග්‍රිල් කළ මාළු.", "phonetic": "περ මෙ, ඉල් πε-ෂෙ අල්-ලා γρι-ග්ලි-ආ." },
+        { "id": "s4_2_4", "target": "Avete dei dolci fatti in casa?", "native": "ඔබ ළඟ ගෙදර හැදූ අතුරුපස තිබේද?", "phonetic": "අ-වෙ-තෙ දෙයි දොල්-චි ෆත්-ති ඉන් කා-සා?" }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week",
+          "context": "නිර්දේශයක් ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Cosa ci consiglia come primo?", "native": "පළමු ආහාරය ලෙස ඔබ අපට කුමක් නිර්දේශ කරනවාද?", "phonetic": "කො-සා චි කොන්-සි-ග්ලි-ආ කො-මෙ πρι-මො?" },
+            { "speaker": "B", "target": "Le lasagne sono molto buone oggi.", "native": "අද ලසඤ්ඤා ඉතා හොඳයි.", "phonetic": "ලෙ ල-ස-ඤ්ඤෙ සො-නො මොල්-තො බු-ඔ-නෙ ඔජ්-ජි." }
           ]
         },
         {
           "id": "d4_2_2",
-          "context": "Formal Days of the Week",
+          "context": "පැස්ටා ඇණවුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Allora prendo le lasagne.", "native": "එසේනම් මම ලසඤ්ඤා ගන්නවා.", "phonetic": "අල්-ලො-රා πρεν-දො ලෙ ල-ස-ඤ්ඤෙ." },
+            { "speaker": "B", "target": "Ottima scelta.", "native": "විශිෂ්ට තේරීමක්.", "phonetic": "ඔත්-ති-මා ෂෙල්-තා." }
+          ]
+        },
+        {
+          "id": "d4_2_3",
+          "context": "පානයක් ඇණවුම් කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "E da bere, un bicchiere di vino rosso.", "native": "සහ බීමට, රතු වයින් වීදුරුවක්.", "phonetic": "එ දා බෙ-රෙ, උන් බික්-කි-එ-රෙ දි වී-නො රොස්-සො." },
+            { "speaker": "B", "target": "Perfetto.", "native": "නියමයි.", "phonetic": "περ-ෆෙත්-තො." }
+          ]
+        },
+        {
+          "id": "d4_2_4",
+          "context": "අතුරුපස ගැන විමසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Quali dolci avete?", "native": "ඔබ ළඟ මොන අතුරුපසද තියෙන්නේ?", "phonetic": "ක්වා-ලි දොල්-චි අ-වෙ-තෙ?" },
+            { "speaker": "B", "target": "Abbiamo tiramisù e panna cotta.", "native": "අප ළඟ ටිරාමිසූ සහ පනා කොටා තිබෙනවා.", "phonetic": "අබ්-බි-ආ-මො ති-රා-මි-සූ එ παන්-නා කොත්-තා." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_2_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_2_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_2_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_2_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_2_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_2_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_2_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_2_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_2_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_2_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "ඉතාලි භාෂාවේ ද්විත්ව ව්‍යඤ්ජනාක්ෂර ('doppie') ශබ්දය දිගු කර උච්චාරණය කෙරේ. උදාහරණයක් ලෙස 'panna cotta' හි 'nn' සහ 'tt' ශබ්ද.",
+      "cultural_note": "ඉතාලියේ සාමාන්‍ය ආහාර වේලක් 'antipasto', 'primo', 'secondo', සහ 'dolce' ලෙස කොටස් හතරකින් සමන්විත වේ. ඔබට අවශ්‍ය නම් ඕනෑම කොටසක් මඟ හැරිය හැක.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D2"
+        "badge": "W4D2-Ordering"
       }
     },
     {
       "week": 4,
       "day": 3,
-      "title": "Week 4 Day 3: Months & Seasons",
-      "title_native": "Months & Seasons",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 3 වන දිනය: වෙළඳපොලේ",
+      "title_native": "Settimana 4, Giorno 3: Al Mercato",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_3_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_3_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_3_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_3_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_3_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
-        }
+        { "id": "w4_3_1", "target": "Mercato", "phonetic": "මෙර්-කා-තො", "native_meaning": "වෙළඳපොල", "english": "Market", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_3_2", "target": "Frutta", "phonetic": "ෆෘත්-තා", "native_meaning": "පලතුරු", "english": "Fruit", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_3_3", "target": "Verdura", "phonetic": "වෙර්-දු-රා", "native_meaning": "එළවළු", "english": "Vegetables", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_3_4", "target": "Pane", "phonetic": "පා-නෙ", "native_meaning": "පාන්", "english": "Bread", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_3_5", "target": "Formaggio", "phonetic": "ෆොර්-මජ්-ජො", "native_meaning": "චීස්", "english": "Cheese", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" }
+      ],
+      "sentences": [
+        { "id": "s4_3_1", "target": "Quanto costa un chilo di mele?", "native": "ඇපල් කිලෝවක් කීයද?", "phonetic": "ක්වන්-තො කොස්-තා උන් කි-ලො දි මෙ-ලෙ?" },
+        { "id": "s4_3_2", "target": "Vorrei mezzo chilo di pomodori.", "native": "මට තක්කාලි කිලෝ භාගයක් අවශ්‍යයි.", "phonetic": "වො-ර්රෙයි මෙඩ්-සො කි-ලො දි πο-මො-දො-රි." },
+        { "id": "s4_3_3", "target": "Questo formaggio è fresco?", "native": "මේ චීස් අලුත්ද?", "phonetic": "ක්වෙස්-තො ෆොර්-මජ්-ජො එ ෆ්‍රෙස්-කො?" },
+        { "id": "s4_3_4", "target": "Prendo una pagnotta di pane.", "native": "මම පාන් ගෙඩියක් ගන්නවා.", "phonetic": "πρεν-දො උ-නා πα-ඤ්ඤොත්-තා දි පා-නෙ." }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons",
+          "context": "මිල විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Buongiorno, quanto costano le fragole?", "native": "සුබ උදෑසනක්, ස්ට්‍රෝබෙරි කීයද?", "phonetic": "බු-ඔන්-ජොර්-නො, ක්වන්-තො කොස්-තා-නො ලෙ ෆ්‍ර-ගො-ලෙ?" },
+            { "speaker": "B", "target": "Quattro euro al cestino.", "native": "එක කූඩයක් යුරෝ හතරයි.", "phonetic": "ක්වත්-త్రො එ-උ-රො අල් චෙස්-ති-නො." }
           ]
         },
         {
           "id": "d4_3_2",
-          "context": "Formal Months & Seasons",
+          "context": "යමක් මිලදී ගැනීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Ne prendo uno, per favore.", "native": "කරුණාකර මට එකක් දෙන්න.", "phonetic": "නෙ πρεν-දො උ-නො, περ ෆ-වො-රෙ." },
+            { "speaker": "B", "target": "Ecco a lei. Altro?", "native": "මෙන්න. තව මොනවහරි?", "phonetic": "එක්-කො ආ ලෙයි. අල්-త్రො?" }
+          ]
+        },
+        {
+          "id": "d4_3_3",
+          "context": "එළවළු තෝරාගැනීම.",
+          "lines": [
+            { "speaker": "A", "target": "Vorrei anche delle zucchine.", "native": "මට සූකිනිත් ටිකක් අවශ්‍යයි.", "phonetic": "වො-ර්රෙයි අන්-කෙ දෙල්-ලෙ ৎසුක්-කි-නෙ." },
+            { "speaker": "B", "target": "Quante ne vuole?", "native": "ඔබට කොපමණ අවශ්‍යද?", "phonetic": "ක්වන්-තෙ නෙ වු-ඔ-ලෙ?" }
+          ]
+        },
+        {
+          "id": "d4_3_4",
+          "context": "ගෙවීම.",
+          "lines": [
+            { "speaker": "A", "target": "Basta così, grazie. Quant'è in totale?", "native": "එච්චරයි, ස්තූතියි. මුළු එකතුව කීයද?", "phonetic": "බස්-තා කො-සි, γ్రా-ৎසි-එ. ක්වන්-තෙ ඉන් තො-තා-ලෙ?" },
+            { "speaker": "B", "target": "Sono sette euro.", "native": "යුරෝ හතයි.", "phonetic": "සො-නො සෙත්-තෙ එ-උ-රො." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_3_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_3_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_3_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_3_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_3_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_3_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_3_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_3_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_3_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_3_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "ඉතාලි භාෂාවේ 'c' අකුර 'e' හෝ 'i' ට පෙර 'ච' ලෙසද, අනෙක් අකුරු වලට පෙර 'ක' ලෙසද ශබ්ද වේ. උදා: 'cestino' (චෙස්-ති-නො) සහ 'costa' (කොස්-තා).",
+      "cultural_note": "ඉතාලියේ එළිමහන් වෙළඳපොලවල් (mercati) ඉතා ජනප්‍රියයි. එහි නැවුම් පළතුරු, එළවළු, චීස් සහ මස් වර්ග අඩු මිලට ලබාගත හැක.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D3"
+        "badge": "W4D3-Market"
       }
     },
     {
       "week": 4,
       "day": 4,
-      "title": "Week 4 Day 4: Daily Routine",
-      "title_native": "Daily Routine",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 4 වන දිනය: කෝපි සහ බීම",
+      "title_native": "Settimana 4, Giorno 4: Caffè e Bevande",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_4_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_4_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_4_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_4_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_4_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
-        }
+        { "id": "w4_4_1", "target": "Bar", "phonetic": "බාර්", "native_meaning": "කෝපි කඩේ/බාර්", "english": "Café/Bar", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_4_2", "target": "Caffè", "phonetic": "කෆ්-ෆෙ", "native_meaning": "කෝපි (එස්ප්‍රෙසෝ)", "english": "Coffee (Espresso)", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_4_3", "target": "Cappuccino", "phonetic": "කප්-පුච්-චී-නො", "native_meaning": "කැපුචීනෝ", "english": "Cappuccino", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_4_4", "target": "Zucchero", "phonetic": "ৎසුක්-කෙ-රො", "native_meaning": "සීනි", "english": "Sugar", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_4_5", "target": "Succo", "phonetic": "සුක්-කො", "native_meaning": "පළතුරු යුෂ", "english": "Juice", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_4_6", "target": "Birra", "phonetic": "බිර්-රා", "native_meaning": "බියර්", "english": "Beer", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" }
+      ],
+      "sentences": [
+        { "id": "s4_4_1", "target": "Un caffè, per favore.", "native": "කරුණාකර කෝපි එකක්.", "phonetic": "උන් කෆ්-ෆෙ, περ ෆ-වො-රෙ." },
+        { "id": "s4_4_2", "target": "Vorrei un cappuccino e un cornetto.", "native": "මට කැපුචීනෝ එකක් සහ ක්‍රොසන්ට් එකක් අවශ්‍යයි.", "phonetic": "වො-ර්රෙයි උන් කප්-පුච්-චී-නො එ උන් කොර්-නෙත්-තො." },
+        { "id": "s4_4_3", "target": "Posso avere un po' di zucchero?", "native": "මට සීනි ටිකක් ගන්න පුළුවන්ද?", "phonetic": "පොස්-සො අ-වෙ-රෙ උන් πο' දි ৎසුක්-කෙ-රො?" },
+        { "id": "s4_4_4", "target": "Prendiamo due birre piccole.", "native": "අපි පොඩි බියර් දෙකක් ගමු.", "phonetic": "πρεν-දි-ආ-මො දු-එ බිර්-රෙ πικ්-කො-ලෙ." }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine",
+          "context": "කෝපි කඩේකදී ඇණවුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Buongiorno, vorrei un caffè.", "native": "සුබ උදෑසනක්, මට කෝපි එකක් අවශ්‍යයි.", "phonetic": "බු-ඔන්-ජොර්-නො, වො-ර්රෙයි උන් කෆ්-ෆෙ." },
+            { "speaker": "B", "target": "Certo. Al banco o al tavolo?", "native": "ඇත්තෙන්ම. කවුන්ටරයේද නැත්නම් මේසයේද?", "phonetic": "චෙර්-තො. අල් බන්-කො ඔ අල් තා-වො-ලො?" }
           ]
         },
         {
           "id": "d4_4_2",
-          "context": "Formal Daily Routine",
+          "context": "කැපුචීනෝ එකක් ඇණවුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Un cappuccino, per favore.", "native": "කරුණාකර, කැපුචීනෝ එකක්.", "phonetic": "උන් කප්-පුච්-චී-නො, περ ෆ-වො-රෙ." },
+            { "speaker": "B", "target": "Ecco a lei.", "native": "මෙන්න.", "phonetic": "එක්-කො ආ ලෙයි." }
+          ]
+        },
+        {
+          "id": "d4_4_3",
+          "context": "පළතුරු යුෂ ඉල්ලීම.",
+          "lines": [
+            { "speaker": "A", "target": "Che succhi di frutta avete?", "native": "ඔබ ළඟ මොන පළතුරු යුෂද තියෙන්නේ?", "phonetic": "කෙ සුක්-කි දි ෆෘත්-තා අ-වෙ-තෙ?" },
+            { "speaker": "B", "target": "Arancia, ananas e pesca.", "native": "දොඩම්, අන්නාසි සහ පීච්.", "phonetic": "අ-රන්-චා, අ-න-නස් එ πεස්-කා." }
+          ]
+        },
+        {
+          "id": "d4_4_4",
+          "context": "ගෙවීම.",
+          "lines": [
+            { "speaker": "A", "target": "Pago subito. Quant'è?", "native": "මම දැන්ම ගෙවනවා. කීයද?", "phonetic": "පා-ගො සු-බි-තො. ක්වන්-තෙ?" },
+            { "speaker": "B", "target": "Sono due euro e cinquanta.", "native": "යුරෝ දෙකයි පනහයි.", "phonetic": "සො-නො දු-එ එ-උ-රො එ චින්-ක්වන්-තා." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_4_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_4_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_4_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_4_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_4_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_4_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_4_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_4_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_4_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_4_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "'Caffè' යන වචනයේ අවසාන 'e' අකුර මත ආතතිය යෙදේ. එය 'කෆ්-ෆෙ' ලෙස උච්චාරණය කරන්න, 'කෆේ' ලෙස නොවේ.",
+      "cultural_note": "ඉතාලියේ, 'caffè' යනු සාමාන්‍යයෙන් එස්ප්‍රෙසෝ කෝපි වේ. උදෑසන 11 න් පසු කිරි සහිත කෝපි (කැපුචීනෝ වැනි) පානය කිරීම සාමාන්‍ය දෙයක් නොවේ.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D4"
+        "badge": "W4D4-Coffee"
       }
     },
     {
       "week": 4,
       "day": 5,
-      "title": "Week 4 Day 5: Appointments",
-      "title_native": "Appointments",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 5 වන දිනය: ආහාර සම්බන්ධ ගැටළු",
+      "title_native": "Settimana 4, Giorno 5: Problemi con il Cibo",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_5_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_5_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_5_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_5_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_5_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
-        }
+        { "id": "w4_5_1", "target": "Freddo", "phonetic": "ෆ්‍රෙද්-දො", "native_meaning": "සීතල", "english": "Cold", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_5_2", "target": "Caldo", "phonetic": "කල්-දො", "native_meaning": "උණුසුම්", "english": "Hot", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_5_3", "target": "Sbagliato", "phonetic": "ස්බ-ල්යා-තො", "native_meaning": "වැරදි", "english": "Wrong", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_5_4", "target": "Manca", "phonetic": "මන්-කා", "native_meaning": "අඩුයි / නැහැ", "english": "Is missing", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_5_5", "target": "Allergia", "phonetic": "අල්-ලෙර්-ජී-ආ", "native_meaning": "ආසාත්මිකතාව", "english": "Allergy", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" }
+      ],
+      "sentences": [
+        { "id": "s4_5_1", "target": "Scusi, la mia zuppa è fredda.", "native": "සමාවෙන්න, මගේ සුප් එක සීතලයි.", "phonetic": "ස්කු-සි, ලා මී-ආ ৎසුප්-πα එ ෆ්‍රෙද්-දා." },
+        { "id": "s4_5_2", "target": "Questo non è quello che ho ordinato.", "native": "මේ මම ඇණවුම් කළ දේ නෙවෙයි.", "phonetic": "ක්වෙස්-තො නොන් එ ක්වෙල්-ලො කෙ ඔ ඔර්-දි-නා-තො." },
+        { "id": "s4_5_3", "target": "Manca una forchetta.", "native": "ගෑරප්පුවක් අඩුයි.", "phonetic": "මන්-කා උ-නා ෆොර්-කෙත්-තා." },
+        { "id": "s4_5_4", "target": "Sono allergico alle noci.", "native": "මට රටකජු ආසාත්මිකයි.", "phonetic": "සො-නො අල්-ලෙර්-ජි-කො අල්-ලෙ නො-චි." }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments",
+          "context": "සීතල ආහාරයක් ගැන පැමිණිලි කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Mi scusi, questo piatto è freddo.", "native": "සමාවෙන්න, මේ කෑම එක සීතලයි.", "phonetic": "මි ස්කු-සි, ක්වෙස්-තො πιαත්-තො එ ෆ්‍රෙද්-දො." },
+            { "speaker": "B", "target": "Mi dispiace, lo faccio scaldare subito.", "native": "කණගාටුයි, මම එය වහාම රත් කරවන්නම්.", "phonetic": "මි දිස්-πια-චෙ, ලො ෆච්-චො ස්කල්-දා-රෙ සු-බි-තො." }
           ]
         },
         {
           "id": "d4_5_2",
-          "context": "Formal Appointments",
+          "context": "වැරදි ඇණවුමක් ලැබීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Scusi, ma io non ho ordinato questo.", "native": "සමාවෙන්න, නමුත් මම මේක ඇණවුම් කළේ නැහැ.", "phonetic": "ස්කු-සි, මා ඉ-ඔ නොන් ඔ ඔර්-දි-නා-තො ක්වෙස්-තො." },
+            { "speaker": "B", "target": "Chiedo scusa, porto subito il piatto giusto.", "native": "සමාව ඉල්ලනවා, මම වහාම හරි කෑම එක ගේන්නම්.", "phonetic": "කි-එ-දො ස්කු-සා, ποර්-තො සු-බි-තො ඉල් πιαත්-තො ජුස්-තො." }
+          ]
+        },
+        {
+          "id": "d4_5_3",
+          "context": "යමක් අඩු බව පැවසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Potrebbe portarmi un altro bicchiere?", "native": "මට තව වීදුරුවක් ගෙනත් දෙන්න පුළුවන්ද?", "phonetic": "πο-τρεබ්-බෙ ποර්-තාර්-මි උන් අල්-త్రො බික්-කි-එ-රෙ?" },
+            { "speaker": "B", "target": "Certo, glielo porto subito.", "native": "ඇත්තෙන්ම, මම එය වහාම ගෙන එන්නම්.", "phonetic": "චෙර්-තො, ග්ල්യെ-ලො ποර්-තො සු-බි-තො." }
+          ]
+        },
+        {
+          "id": "d4_5_4",
+          "context": "ආසාත්මිකතාවක් ගැන දැනුම් දීම.",
+          "lines": [
+            { "speaker": "A", "target": "Questo piatto contiene latticini? Sono allergico.", "native": "මේ කෑම එකේ කිරි නිෂ්පාදන අඩංගුද? මම ආසාත්මිකයි.", "phonetic": "ක්වෙස්-තො πιαත්-තො කොන්-ති-එ-නෙ ලත්-ති-චී-නි? සො-නො අල්-ලෙර්-ජි-කො." },
+            { "speaker": "B", "target": "No, non si preoccupi, non ce ne sono.", "native": "නැහැ, කරදර වෙන්න එපා, එහි ඒවා නැහැ.", "phonetic": "නො, නොන් සි πρε-ఒක්-කු-πι, නොන් චෙ නෙ සො-නො." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_5_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_5_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_5_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_5_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_5_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_5_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_5_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_5_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_5_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_5_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "'Scusi' (ස්කු-සි) යනු ඔබ නොදන්නා කෙනෙකුගෙන් සමාව ඉල්ලීමට හෝ අවධානය ලබා ගැනීමට භාවිතා කරන ආචාරශීලී වචනයකි.",
+      "cultural_note": "ඉතාලියේ ආහාර වේලකදී යම් ගැටලුවක් ඇත්නම්, එය ආචාරශීලීව වේටර්ට දැනුම් දීම සාමාන්‍ය දෙයකි. ඔවුන් සාමාන්‍යයෙන් එය වහාම විසඳීමට උත්සාහ කරයි.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D5"
+        "badge": "W4D5-Issues"
       }
     },
     {
       "week": 4,
       "day": 6,
-      "title": "Week 4 Day 6: Past & Future",
-      "title_native": "Past & Future",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 6 වන දිනය: සුපිරි වෙළඳසැල",
+      "title_native": "Settimana 4, Giorno 6: Al Supermercato",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_6_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_6_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_6_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_6_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_6_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
-        }
+        { "id": "w4_6_1", "target": "Supermercato", "phonetic": "සු-περ-මෙර්-කා-තො", "native_meaning": "සුපිරි වෙළඳසැල", "english": "Supermarket", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_6_2", "target": "Carrello", "phonetic": "කර්-රෙල්-ලො", "native_meaning": "ට්‍රොලිය", "english": "Shopping cart", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_6_3", "target": "Cassa", "phonetic": "කස්-සා", "native_meaning": "කැෂියර් කවුන්ටරය", "english": "Checkout", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_6_4", "target": "Busta", "phonetic": "බුස්-තා", "native_meaning": "බෑගය", "english": "Bag", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_6_5", "target": "Offerta", "phonetic": "ඔෆ්-ෆෙර්-තා", "native_meaning": "විශේෂ දීමනාව", "english": "Special offer", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_6_6", "target": "Sconto", "phonetic": "ස්කොන්-තො", "native_meaning": "වට්ටම", "english": "Discount", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" }
+      ],
+      "sentences": [
+        { "id": "s4_6_1", "target": "Dove sono i carrelli?", "native": "ට්‍රොලි කොහෙද තියෙන්නේ?", "phonetic": "දො-වෙ සො-නො ඉ කර්-රෙල්-ලි?" },
+        { "id": "s4_6_2", "target": "Vorrei pagare con la carta.", "native": "මම කාඩ් එකෙන් ගෙවන්න කැමතියි.", "phonetic": "වො-ර්රෙයි πα-ගා-රෙ කොන් ලා කර්-තා." },
+        { "id": "s4_6_3", "target": "Posso avere una busta, per favore?", "native": "කරුණාකර මට බෑගයක් ගන්න පුළුවන්ද?", "phonetic": "පොස්-සො අ-වෙ-රෙ උ-නා බුස්-තා, περ ෆ-වො-රෙ?" },
+        { "id": "s4_6_4", "target": "Questo prodotto è in offerta?", "native": "මේ නිෂ්පාදනය විශේෂ දීමනාවක තිබේද?", "phonetic": "ක්වෙස්-තො προ-දොත්-තො එ ඉන් ඔෆ්-ෆෙර්-තා?" }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future",
+          "context": "යමක් කොහේදැයි ඇසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Scusi, dove trovo il latte?", "native": "සමාවෙන්න, කිරි කොහෙන්ද හොයාගන්න පුළුවන්?", "phonetic": "ස්කු-සි, දො-වෙ త్రొ-වො ඉල් ලත්-තෙ?" },
+            { "speaker": "B", "target": "Nel reparto latticini, in fondo a destra.", "native": "කිරි නිෂ්පාදන අංශයේ, කෙලවරේ දකුණු පැත්තේ.", "phonetic": "නෙල් රෙ-παර්-තො ලත්-ති-චී-නි, ඉන් ෆොන්-දො ආ දෙස්-త్రా." }
           ]
         },
         {
           "id": "d4_6_2",
-          "context": "Formal Past & Future",
+          "context": "කැෂියර් කවුන්ටරයේදී.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Buongiorno.", "native": "සුබ උදෑසනක්.", "phonetic": "බු-ඔන්-ජොර්-නො." },
+            { "speaker": "B", "target": "Buongiorno. Ha la tessera fedeltà?", "native": "සුබ උදෑසනක්. ඔබ ළඟ පක්ෂපාතී කාඩ්පත තිබේද?", "phonetic": "බු-ඔන්-ජොර්-නො. ආ ලා තෙස්-සෙ-රා ෆෙ-දෙල්-තා?" }
+          ]
+        },
+        {
+          "id": "d4_6_3",
+          "context": "බෑගයක් ඉල්ලීම.",
+          "lines": [
+            { "speaker": "A", "target": "No, non ce l'ho. Vorrei una busta.", "native": "නැහැ, මා ළඟ නැහැ. මට බෑගයක් අවශ්‍යයි.", "phonetic": "නො, නොන් චෙ ල්'ඔ. වො-ර්රෙයි උ-නා බුස්-තා." },
+            { "speaker": "B", "target": "Certo.", "native": "ඇත්තෙන්ම.", "phonetic": "චෙර්-තො." }
+          ]
+        },
+        {
+          "id": "d4_6_4",
+          "context": "මුදල් ගෙවා අවසන් කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Ecco. Grazie, arrivederci.", "native": "මෙන්න. ස්තූතියි, ආයුබෝවන්.", "phonetic": "එක්-කො. γ్రా-ৎසි-එ, අර්-රි-වෙ-දෙර්-චි." },
+            { "speaker": "B", "target": "Arrivederci.", "native": "ආයුබෝවන්.", "phonetic": "අර්-රි-වෙ-දෙර්-චි." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_6_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_6_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_6_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_6_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_6_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_6_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_6_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_6_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_6_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_6_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "'gn' සංයෝගය 'ඤ' ශබ්දයක් මෙන් උච්චාරණය කෙරේ. උදා: 'pagnotta' (πα-ඤ්ඤොත්-තා).",
+      "cultural_note": "ඉතාලියේ බොහෝ සුපිරි වෙළඳසැල් වල, ප්ලාස්ටික් බෑග් සඳහා මුදල් අය කෙරේ. පරිසරය සුරැකීමට බොහෝ දෙනා නැවත භාවිතා කළ හැකි බෑග් රැගෙන යයි.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D6"
+        "badge": "W4D6-Supermarket"
       }
     },
     {
       "week": 4,
       "day": 7,
-      "title": "Week 4 Day 7: Time Expressions",
-      "title_native": "Time Expressions",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 7 වන දිනය: සතියේ සමාලෝචනය",
+      "title_native": "Settimana 4, Giorno 7: Revisione Settimanale",
+      "theme": "Food & Dining",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_7_1",
-          "target": "Ora",
-          "phonetic": "Ora",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "Ora.",
-          "example_sentence_native": "පැය."
-        },
-        {
-          "id": "w4_7_2",
-          "target": "Minuto",
-          "phonetic": "Minuto",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "Minuto.",
-          "example_sentence_native": "මිනිත්තුව."
-        },
-        {
-          "id": "w4_7_3",
-          "target": "Oggi",
-          "phonetic": "Oggi",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "Oggi.",
-          "example_sentence_native": "අද."
-        },
-        {
-          "id": "w4_7_4",
-          "target": "Domani",
-          "phonetic": "Domani",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "Domani.",
-          "example_sentence_native": "හෙට."
-        },
-        {
-          "id": "w4_7_5",
-          "target": "Ieri",
-          "phonetic": "Ieri",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "Ieri.",
-          "example_sentence_native": "ඊයේ."
-        }
+        { "id": "w4_7_1", "target": "Ordinare", "phonetic": "ඔර්-දි-නා-රෙ", "native_meaning": "ඇණවුම් කරනවා", "english": "To order", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_7_2", "target": "Pagare", "phonetic": "πα-ගා-රෙ", "native_meaning": "ගෙවනවා", "english": "To pay", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_7_3", "target": "Mangiare", "phonetic": "මන්-ජා-රෙ", "native_meaning": "කනවා", "english": "To eat", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_7_4", "target": "Bere", "phonetic": "බෙ-රෙ", "native_meaning": "බොනවා", "english": "To drink", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_7_5", "target": "Comprare", "phonetic": "කොම්-πρά-රෙ", "native_meaning": "මිලදී ගන්නවා", "english": "To buy", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" },
+        { "id": "w4_7_6", "target": "Delizioso", "phonetic": "දෙ-ලි-ৎසි-ඔ-සො", "native_meaning": "රසවත්", "english": "Delicious", "example_sentence_target": "", "example_sentence_native": "", "example_sentence_phonetic": "" }
+      ],
+      "sentences": [
+        { "id": "s4_7_1", "target": "Mi piace mangiare la pizza.", "native": "මම පීසා කන්න කැමතියි.", "phonetic": "මි πια-චෙ මන්-ජා-රෙ ලා πίৎ-සා." },
+        { "id": "s4_7_2", "target": "Cosa vuoi bere?", "native": "ඔබට බොන්න මොනවද ඕන?", "phonetic": "කො-සා වු-ඔයි බෙ-රෙ?" },
+        { "id": "s4_7_3", "target": "Andiamo a comprare la frutta.", "native": "අපි පලතුරු මිලදී ගන්න යමු.", "phonetic": "අන්-දි-ආ-මො ආ කොම්-πρά-රෙ ලා ෆෘත්-තා." },
+        { "id": "s4_7_4", "target": "La cena era deliziosa.", "native": "රාත්‍රී ආහාරය ඉතා රසවත්.", "phonetic": "ලා චෙ-නා එ-රා දෙ-ලි-ৎසි-ඔ-සා." }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions",
+          "context": "කෑම වේලක් ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ora!",
-              "native": "පැය!",
-              "phonetic": "Ora"
-            },
-            {
-              "speaker": "B",
-              "target": "Ora! Minuto!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "Ora Minuto"
-            },
-            {
-              "speaker": "A",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            }
+            { "speaker": "A", "target": "Ti è piaciuta la cena?", "native": "ඔබ රාත්‍රී ආහාරයට කැමති වුණාද?", "phonetic": "ති එ πια-චු-තා ලා චෙ-නා?" },
+            { "speaker": "B", "target": "Sì, era tutto molto delizioso.", "native": "ඔව්, හැමදේම හරිම රසවත්.", "phonetic": "සී, එ-රා තුත්-තො මොල්-තො දෙ-ලි-ৎසි-ඔ-සො." }
           ]
         },
         {
           "id": "d4_7_2",
-          "context": "Formal Time Expressions",
+          "context": "ඊළඟට කුමක් කළ යුතු දැයි සැලසුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Minuto!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "Minuto"
-            },
-            {
-              "speaker": "B",
-              "target": "Oggi!",
-              "native": "අද!",
-              "phonetic": "Oggi"
-            },
-            {
-              "speaker": "A",
-              "target": "Domani! Ieri!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "Domani Ieri"
-            }
+            { "speaker": "A", "target": "Cosa facciamo adesso? Prendiamo un caffè?", "native": "දැන් මොකද කරන්නේ? කෝපි එකක් බොමුද?", "phonetic": "කො-සා ෆච්-චි-ආ-මො අ-දෙස්-සො? πρεν-දි-ආ-මො උන් කෆ්-ෆෙ?" },
+            { "speaker": "B", "target": "Sì, buona idea.", "native": "ඔව්, හොඳ අදහසක්.", "phonetic": "සී, බු-ඔ-නා ඉ-දෙ-ආ." }
+          ]
+        },
+        {
+          "id": "d4_7_3",
+          "context": "වෙළඳපොළට යාම ගැන කතා කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Domani mattina vado al mercato.", "native": "මම හෙට උදේ වෙළඳපොළට යනවා.", "phonetic": "දො-මා-නි මත්-ති-නා වා-දො අල් මෙර්-කා-තො." },
+            { "speaker": "B", "target": "Perfetto, dobbiamo comprare verdura.", "native": "නියමයි, අපිට එළවළු ගන්න ඕන.", "phonetic": "περ-ෆෙත්-තො, දොබ්-බි-ආ-මො කොම්-πρά-රෙ වෙර්-දු-රා." }
+          ]
+        },
+        {
+          "id": "d4_7_4",
+          "context": "ආපන ශාලාවක් නිර්දේශ කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Conosci un buon ristorante qui vicino?", "native": "ඔබ මේ ළඟ හොඳ ආපන ශාලාවක් දන්නවාද?", "phonetic": "කො-නො-ෂි උන් බු-ඔන් රිස්-තො-රාන්-තෙ ක්වි වි-චී-නො?" },
+            { "speaker": "B", "target": "Sì, la trattoria all'angolo è ottima.", "native": "ඔව්, කෙළවරේ තියෙන ට්‍රැටෝරියාව නියමයි.", "phonetic": "සී, ලා త్రత్-తొ-රී-ආ අල්-අන්-ගො-ලො එ ඔත්-ති-මා." }
           ]
         }
       ],
-      "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb4_7_1",
-            "sentence": "___ means 'Hour' in Italian",
-            "answer": "Ora",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_7_2",
-            "sentence": "___ means 'Minute' in Italian",
-            "answer": "Minuto",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_7_3",
-            "sentence": "___ means 'Today' in Italian",
-            "answer": "Oggi",
-            "hint": "අද"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m4_7_1",
-            "target": "Ora",
-            "native": "පැය"
-          },
-          {
-            "id": "m4_7_2",
-            "target": "Minuto",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_7_3",
-            "target": "Oggi",
-            "native": "අද"
-          },
-          {
-            "id": "m4_7_4",
-            "target": "Domani",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_7_5",
-            "target": "Ieri",
-            "native": "ඊයේ"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc4_7_1",
-            "question": "What does 'Ora' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'Ora' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_7_2",
-            "question": "How do you say 'මිනිත්තුව' in Italian?",
-            "options": [
-              "Ora",
-              "Minuto",
-              "Oggi",
-              "Domani"
-            ],
-            "correct": 1,
-            "explanation": "'Minuto' means මිනිත්තුව."
-          }
-        ]
-      },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
+      "exercises": {},
+      "pronunciation_tip": "ඉතාලි ක්‍රියාපද '-are', '-ere', හෝ '-ire' වලින් අවසන් වේ. උදා: 'mangiare', 'bere', 'ordinare'. මෙම රටා හඳුනා ගැනීමෙන් ඔබට නව ක්‍රියාපද ඉගෙනීම පහසු වේ.",
+      "cultural_note": "ඉතාලියේ, ආහාර ගැනීම යනු ඉක්මනින් කරන දෙයක් නොවේ. එය මිතුරන් සහ පවුලේ අය සමඟ එකතු වී සතුටු වීමට අවස්ථාවකි. ආහාර වේල් බොහෝ විට පැය ගණනක් පැවතිය හැක.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D7"
+        "badge": "W4D7-Review"
       }
     }
   ]
 }
+    
