@@ -20,6 +20,7 @@ function FillInTheBlanks({ exercises, onComplete, t }: { exercises: Exercises['f
   if (!exercises || exercises.length === 0) return null;
 
   const [fbAnswers, setFbAnswers] = useState<string[]>(Array(exercises.length).fill(''));
+  const [correctlyAnsweredIds, setCorrectlyAnsweredIds] = useState<string[]>([]);
 
   return (
     <div>
@@ -37,7 +38,11 @@ function FillInTheBlanks({ exercises, onComplete, t }: { exercises: Exercises['f
                   const newAnswers = [...fbAnswers];
                   newAnswers[index] = e.target.value;
                   setFbAnswers(newAnswers);
-                  if (e.target.value.toLowerCase() === ex.answer.toLowerCase()) {
+
+                  const isNowCorrect = e.target.value.toLowerCase() === ex.answer.toLowerCase();
+                  
+                  if (isNowCorrect && !correctlyAnsweredIds.includes(ex.id)) {
+                    setCorrectlyAnsweredIds(prev => [...prev, ex.id]);
                     onComplete(true);
                   }
                 }}
