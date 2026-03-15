@@ -14,11 +14,12 @@ import {
   Github,
   Linkedin,
   Check,
+  BadgeCheck,
 } from "lucide-react";
 import Link from "next/link";
 
 import { Navigation } from "@/components/Navigation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -135,53 +136,69 @@ export default function PathsPage() {
           </div>
         </section>
 
-        <section id="pricing" className="py-20 sm:py-32">
+        <section className="py-20 sm:py-24 bg-slate-900/50">
           <div className="container mx-auto px-4">
-            <h2 className="text-center font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Simple, Transparent Pricing
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground">
-              Start for free, then unlock everything with one simple plan.
-            </p>
-            <div className="mt-16 flex flex-col items-center justify-center gap-8 lg:flex-row lg:items-stretch">
-              <Card className="w-full max-w-sm border-2 border-transparent">
-                <CardHeader className="text-center">
-                  <CardTitle className="font-headline text-2xl">Monthly</CardTitle>
+            <div className="text-center mb-12">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold">Flexible Plans for Every Learner</h2>
+              <p className="text-lg text-slate-300 mt-2">Start free, then choose a plan that fits your journey.</p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+              <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
+                <CardHeader className="p-0">
+                  <CardTitle className="font-bold text-xl">Single Language</CardTitle>
+                  <p className="text-4xl font-extrabold mt-2">$4.99<span className="text-base font-medium text-slate-400">/week</span></p>
+                  <p className="text-sm text-slate-400 mt-1">Master one language. Renews weekly.</p>
                 </CardHeader>
-                <CardContent className="flex flex-col gap-6 text-center">
-                  <p className="text-4xl font-bold">
-                    €9<span className="text-lg font-normal text-muted-foreground">/mo</span>
-                  </p>
-                  <ul className="space-y-3 text-left">
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> All 3 Learning Paths</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> All 48 weeks of content</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Native audio pronunciation</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> AI Guide for questions</li>
+                <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                  <ul className="space-y-3 text-slate-300 my-6">
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Access to one chosen language</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All 3 learning paths for that language</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All interactive exercises & audio</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Cancel anytime</li>
                   </ul>
-                  <Button size="lg" className="w-full" asChild>
+                  <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
                     <Link href="/pricing">Get Started</Link>
                   </Button>
                 </CardContent>
               </Card>
-              <Card className="relative w-full max-w-sm border-2 border-primary">
-                 <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground">⭐ BEST VALUE</Badge>
-                <CardHeader className="text-center">
-                  <CardTitle className="font-headline text-2xl">Yearly</CardTitle>
+              
+              <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
+                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">⭐ BEST VALUE</Badge>
+                <CardHeader className="p-0">
+                  <CardTitle className="font-bold text-xl">Survive Anywhere</CardTitle>
+                   <p className="text-4xl font-extrabold mt-2">$79<span className="text-base font-medium text-slate-400">/one-time</span></p>
+                   <p className="text-sm font-semibold text-yellow-400">One-time payment for lifetime access to ALL languages.</p>
                 </CardHeader>
-                <CardContent className="flex flex-col gap-6 text-center">
-                   <p className="text-4xl font-bold">
-                    €99<span className="text-lg font-normal text-muted-foreground">/yr</span>
-                  </p>
-                  <p className="text-sm text-muted-foreground -mt-4">(Save €9!)</p>
-                  <ul className="space-y-3 text-left">
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> All 3 Learning Paths</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> All 48 weeks of content</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Native audio pronunciation</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> AI Guide for questions</li>
-                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> Priority Support</li>
+                <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                  <ul className="space-y-3 text-slate-300 my-6">
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Everything in Single Course</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Lifetime access to ALL current & future languages</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Priority Support</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Become a polyglot!</li>
                   </ul>
-                  <Button size="lg" className="w-full" asChild>
-                    <Link href="/pricing">Get Best Value</Link>
+                  <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
+                    <Link href="/pricing">Get Started</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
+                <Badge variant="default" className="w-fit mb-4">POPULAR</Badge>
+                <CardHeader className="p-0">
+                  <CardTitle className="font-bold text-xl">Single Course</CardTitle>
+                  <p className="text-4xl font-extrabold mt-2">$49<span className="text-base font-medium text-slate-400">/one-time</span></p>
+                  <p className="text-sm text-slate-400 mt-1">One-time payment for one full language course.</p>
+                </CardHeader>
+                <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                  <ul className="space-y-3 text-slate-300 my-6">
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Everything in Single Language</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Lifetime access to one language course</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Full 12-week curriculum</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Email support</li>
+                  </ul>
+                  <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                    <Link href="/pricing">Get Started</Link>
                   </Button>
                 </CardContent>
               </Card>

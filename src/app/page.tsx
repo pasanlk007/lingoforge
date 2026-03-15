@@ -270,16 +270,16 @@ export default function LandingPage() {
             <div className="container mx-auto px-4">
                  <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-8">
                     {[
-                      { icon: <Sparkles/>, title: t.features.ai.title },
-                      { icon: <Volume2/>, title: t.features.audio.title },
-                      { icon: <MessageSquare/>, title: t.features.dialogues.title },
-                      { icon: <Pencil/>, title: t.features.exercises.title },
-                      { icon: <Flame/>, title: t.features.streak.title },
-                      { icon: <BarChart/>, title: t.features.progress.title },
-                      { icon: <BadgeCheck/>, title: t.features.certs.title },
-                      { icon: <Globe/>, title: t.features.langs.title }
-                    ].map(feature => (
-                        <div key={feature.title} className="flex justify-center" title={feature.title}>
+                      { icon: <Sparkles/> },
+                      { icon: <Volume2/> },
+                      { icon: <MessageSquare/> },
+                      { icon: <Pencil/> },
+                      { icon: <Flame/> },
+                      { icon: <BarChart/> },
+                      { icon: <BadgeCheck/> },
+                      { icon: <Globe/> }
+                    ].map((feature, index) => (
+                        <div key={index} className="flex justify-center">
                             <div className="w-20 h-20 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400 hover:bg-slate-700 transition-colors">
                                {React.cloneElement(feature.icon, { className: 'w-10 h-10'})}
                             </div>
