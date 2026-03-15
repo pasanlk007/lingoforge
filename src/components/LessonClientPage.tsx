@@ -18,7 +18,7 @@ import { ProgressBar } from '@/components/ProgressBar';
 import Confetti from 'react-dom-confetti';
 import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
-import { translations } from '@/lib/translations';
+import { translations, targetLanguages } from '@/lib/translations';
 import { TooltipProvider } from './ui/tooltip';
 import { differenceInCalendarDays } from 'date-fns';
 
@@ -162,6 +162,9 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
 
     const weekProgress = (currentDay / 7) * 100;
     const streakCount = userProfile?.currentStreak || 0;
+    
+    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === lesson.language.toLowerCase());
+    const flag = langInfo ? langInfo.flag : '🌍';
 
     return (
         <TooltipProvider>
@@ -175,7 +178,10 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                             <h1 className="font-bold text-lg">{dayData.title}</h1>
                             <p className="text-sm text-muted-foreground">{dayData.theme}</p>
                          </div>
-                         <StreakCounter count={streakCount} />
+                         <div className="flex items-center gap-2">
+                           <span className="text-3xl">{flag}</span>
+                           <StreakCounter count={streakCount} />
+                         </div>
                     </div>
                      <div className="space-y-2">
                         <div className="flex items-center gap-2">

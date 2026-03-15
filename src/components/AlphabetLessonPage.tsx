@@ -11,7 +11,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { WordCard } from '@/components/WordCard';
 import { StreakCounter } from '@/components/StreakCounter';
 import Confetti from 'react-dom-confetti';
-import { translations } from '@/lib/translations';
+import { translations, targetLanguages } from '@/lib/translations';
 import { differenceInCalendarDays } from 'date-fns';
 import { WritingPractice } from './WritingPractice';
 import { AudioPlayback } from './AudioPlayback';
@@ -113,6 +113,9 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
   
   const writingExercise = dayData.exercises.writingPractice?.[0];
 
+  const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase());
+  const flag = langInfo ? langInfo.flag : '🌍';
+
   return (
     <TooltipProvider>
       <div className="container mx-auto max-w-3xl py-8 px-4">
@@ -125,7 +128,10 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
               <h1 className="font-bold text-lg">{dayData.title}</h1>
               <p className="text-sm text-muted-foreground">{dayData.theme}</p>
             </div>
-            <StreakCounter count={userProfile?.currentStreak || 0} />
+            <div className="flex items-center gap-2">
+              <span className="text-3xl">{flag}</span>
+              <StreakCounter count={userProfile?.currentStreak || 0} />
+            </div>
           </div>
         </header>
 
