@@ -298,7 +298,7 @@ export const translations = {
       welcome: "නැවතත් සාදරයෙන් පිළිගනිමු",
       ready: "ඔබේ භාෂා ගමන ඉදිරියට ගෙන යාමට සූදානම්ද? අපි එය කරමු.",
       currentStreak: "වර්තමාන Streak",
-      keepFlame: "ගිනිදැල් තබාගන්න!",
+      keepFlame: "දිනකට අවම වචන 5 පාඩම් කිරීමට උත්සහ කරන්න",
       xpPoints: "XP ලකුණු",
       toNextLevel: "මට්ටමට",
       level: "මට්ටම",
@@ -2198,5 +2198,7 @@ export const targetLanguages = [
 ];
 
 export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali", "Nepali"];
+
+    
 
     
