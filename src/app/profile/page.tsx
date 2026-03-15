@@ -32,7 +32,7 @@ function ProfilePageLoading() {
   );
 }
 
-const EMOJIS = ['😀', '😎', '🥸', '🥳', '👽', '🤖', '👾', '👻', '🤠', '🤡', '🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼'];
+const EMOJIS = ['😀', '😎', '🥸', '🥳', '👽', '🤖', '👾', '👻', '🤠', '🤡', '🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🦁', '🐯', '🦄', '🐲', '🐳', '🚀', '🌟', '🎸'];
 const profileAvatars = PlaceHolderImages.filter(p => p.id.startsWith('avatar-'));
 
 function AvatarSelector({ onSelect }: { onSelect: (url: string) => void }) {
