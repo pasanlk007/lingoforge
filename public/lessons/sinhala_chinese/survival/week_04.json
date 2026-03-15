@@ -1,3 +1,4 @@
+
 {
   "week": 4,
   "path": "survival",
@@ -7,105 +8,160 @@
     {
       "week": 4,
       "day": 1,
-      "title": "Week 4 Day 1: Telling the Time",
-      "title_native": "Telling the Time",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 1 වන දිනය: ආපනශාලාවකදී",
+      "title_native": "第四周，第一天：在餐厅",
+      "theme": "Ordering at a Restaurant",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_1_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "菜单",
+          "phonetic": "සයි-ඩාන්",
+          "native_meaning": "මෙනුව",
+          "english": "Menu",
+          "example_sentence_target": "请给我菜单。",
+          "example_sentence_native": "කරුණාකර මට මෙනුව දෙන්න.",
+          "example_sentence_phonetic": "චිං ගෙයි වෝ සයි-ඩාන්."
         },
         {
           "id": "w4_1_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "点菜",
+          "phonetic": "ඩියෙන්-සයි",
+          "native_meaning": "කෑම ඇණවුම් කරනවා",
+          "english": "To order food",
+          "example_sentence_target": "你好，我要点菜。",
+          "example_sentence_native": "ආයුබෝවන්, මට කෑම ඇණවුම් කරන්න අවශ්‍යයි.",
+          "example_sentence_phonetic": "නී හાઓ, වෝ යාඕ ඩියෙන්-සයි."
         },
         {
           "id": "w4_1_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "这个",
+          "phonetic": "ජ-ග",
+          "native_meaning": "මේක",
+          "english": "This one",
+          "example_sentence_target": "我要这个。",
+          "example_sentence_native": "මට මේක ඕන.",
+          "example_sentence_phonetic": "වෝ යාඕ ජ-ග."
         },
         {
           "id": "w4_1_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "米饭",
+          "phonetic": "මී-ෆාන්",
+          "native_meaning": "බත්",
+          "english": "Cooked rice",
+          "example_sentence_target": "请给我一碗米饭。",
+          "example_sentence_native": "කරුණාකර මට බත් කෝප්පයක් දෙන්න.",
+          "example_sentence_phonetic": "චිං ගෙයි වෝ යී වන් මී-ෆාන්."
         },
         {
           "id": "w4_1_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "买单",
+          "phonetic": "මායි-ඩාන්",
+          "native_meaning": "බිල ගෙවනවා",
+          "english": "To pay the bill",
+          "example_sentence_target": "服务员，买单。",
+          "example_sentence_native": "වේටර්, බිල දෙන්න.",
+          "example_sentence_phonetic": "ෆු-වූ-යුවාන්, මායි-ඩාන්."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_1_1",
+          "target": "这里有人吗？",
+          "native": "මෙතන කවුරුහරි ඉන්නවද?",
+          "phonetic": "ජ-ලී යෝ රෙන් මා?"
+        },
+        {
+          "id": "s4_1_2",
+          "target": "你们有什么推荐的？",
+          "native": "ඔබ නිර්දේශ කරන්නේ මොනවද?",
+          "phonetic": "නී-මන් යෝ ෂෙන්-ම ටුයි-ජියෙන් ද?"
+        },
+        {
+          "id": "s4_1_3",
+          "target": "我不要辣的。",
+          "native": "මට සැර එපා.",
+          "phonetic": "වෝ බූ යාඕ ලා ද."
+        },
+        {
+          "id": "s4_1_4",
+          "target": "请给我一杯水。",
+          "native": "කරුණාකර මට වතුර වීදුරුවක් දෙන්න.",
+          "phonetic": "චිං ගෙයි වෝ යී බේයි ෂුයි."
         }
       ],
       "dialogues": [
         {
           "id": "d4_1_1",
-          "context": "Telling the Time",
+          "context": "ආපනශාලාවකට ඇතුළු වීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "你好，两位。",
+              "native": "ආයුබෝවන්, දෙන්නෙක්.",
+              "phonetic": "නී හાઓ, ලියං වෙයි."
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "好的，请这边坐。",
+              "native": "හොඳයි, කරුණාකර මෙතනින් වාඩිවෙන්න.",
+              "phonetic": "හાઓ ද, චිං ජ-බියෙන් සුවෝ."
             }
           ]
         },
         {
           "id": "d4_1_2",
-          "context": "Formal Telling the Time",
+          "context": "මෙනුව ඉල්ලීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "你好，请给我菜单。",
+              "native": "ආයුබෝවන්, කරුණාකර මට මෙනුව දෙන්න.",
+              "phonetic": "නී හાઓ, චිං ගෙයි වෝ සයි-ඩාන්."
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
+              "target": "好的，给你。",
+              "native": "හොඳයි, මෙන්න ගන්න.",
+              "phonetic": "හાઓ ද, ගෙයි නී."
+            }
+          ]
+        },
+        {
+          "id": "d4_1_3",
+          "context": "කෑමක් ගැන ඇසීම.",
+          "lines": [
             {
               "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "这个是什么菜？",
+              "native": "මේ මොන කෑමක්ද?",
+              "phonetic": "ජ-ග ෂී ෂෙන්-ම සයි?"
+            },
+            {
+              "speaker": "B",
+              "target": "这是北京烤鸭。",
+              "native": "මේ බීජිං තාරා.",
+              "phonetic": "ජ-ෂී බේ-ජිං කාඕ-යා."
+            }
+          ]
+        },
+        {
+          "id": "d4_1_4",
+          "context": "බිල ඉල්ලීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "服务员，买单。",
+              "native": "වේටර්, බිල දෙන්න.",
+              "phonetic": "ෆු-වූ-යුවාන්, මායි-ඩාන්."
+            },
+            {
+              "speaker": "B",
+              "target": "好的，一共一百元。",
+              "native": "හොඳයි, මුළු යුවාන් සියයයි.",
+              "phonetic": "හાઓ ද, යී-ගොං යී-බායි යුවාන්."
             }
           ]
         }
@@ -114,754 +170,814 @@
         "fillBlanks": [
           {
             "id": "fb4_1_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_1_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_1_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "请给我 ___。",
+            "answer": "菜单",
+            "hint": "මෙනුව"
           }
         ],
         "matching": [
           {
             "id": "m4_1_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "我要这个。",
+            "native": "මට මේක ඕන."
           },
           {
             "id": "m4_1_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_1_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_1_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_1_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "买单",
+            "native": "බිල ගෙවනවා"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_1_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_1_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_1_1",
+            "scrambled": ["我", "米饭", "要"],
+            "correct": "我要米饭。",
+            "nativeHint": "මට බත් ඕන."
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "චීනයේදී, විශේෂයෙන් කණ්ඩායමක් සමඟ ආහාර ගන්නා විට, ආහාර බෙදා ගැනීම ඉතා සාමාන්‍ය දෙයකි. මේසයේ සිටින සැමට බෙදා ගැනීමට විවිධ කෑම වර්ග කිහිපයක් ඇණවුම් කිරීම සිරිතකි.",
+      "pronunciation_tip": "චීන භාෂාවේ ස්වර (tones) ඉතා වැදගත්. 'mǎidān' (买单 - බිල ගෙවීම) සහ 'màidān' (卖单 - බිල විකිණීම) අතර වෙනස තේරුම් ගන්න. තුන්වන ස්වරය (පහළට ගොස් ඉහළට) සහ හතරවන ස්වරය (තදින් පහළට) පුහුණු වන්න.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D1"
+        "badge": "W4D1-Restaurant"
       }
     },
     {
       "week": 4,
       "day": 2,
-      "title": "Week 4 Day 2: Days of the Week",
-      "title_native": "Days of the Week",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 2 වන දිනය: වෙළඳපොලේ",
+      "title_native": "第四周，第二天：在市场",
+      "theme": "At the Market",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_2_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "多少钱",
+          "phonetic": "ඩුවෝ-ෂාඕ චියෙන්",
+          "native_meaning": "කීයද?",
+          "english": "How much money?",
+          "example_sentence_target": "这个多少钱？",
+          "example_sentence_native": "මේක කීයද?",
+          "example_sentence_phonetic": "ජ-ග ඩුවෝ-ෂාඕ චියෙන්?"
         },
         {
           "id": "w4_2_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "太贵了",
+          "phonetic": "ටායි ගුයි ල",
+          "native_meaning": "ගණන් වැඩියි",
+          "english": "Too expensive",
+          "example_sentence_target": "太贵了，便宜一点吧。",
+          "example_sentence_native": "ගණන් වැඩියි, ටිකක් අඩු කරන්න.",
+          "example_sentence_phonetic": "ටායි ගුයි ල, පියෙන්-යී යී-ඩියෙන් බා."
         },
         {
           "id": "w4_2_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "斤",
+          "phonetic": "ජින්",
+          "native_meaning": "ජින් (ග්‍රෑම් 500)",
+          "english": "Jin (500 grams)",
+          "example_sentence_target": "我要一斤苹果。",
+          "example_sentence_native": "මට ඇපල් ජින් එකක් ඕන.",
+          "example_sentence_phonetic": "වෝ යාඕ යී ජින් පිං-ගුවෝ."
         },
         {
           "id": "w4_2_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "水果",
+          "phonetic": "ෂුයි-ගුවෝ",
+          "native_meaning": "පළතුරු",
+          "english": "Fruit",
+          "example_sentence_target": "你喜欢吃什么水果？",
+          "example_sentence_native": "ඔයා මොන පළතුරු කන්නද කැමති?",
+          "example_sentence_phonetic": "නී ශී-හුවන් ච(ර්) ෂෙන්-ම ෂුයි-ගුවෝ?"
         },
         {
           "id": "w4_2_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "蔬菜",
+          "phonetic": "ෂූ-සයි",
+          "native_meaning": "එළවළු",
+          "english": "Vegetables",
+          "example_sentence_target": "这些蔬菜很新鲜。",
+          "example_sentence_native": "මේ එළවළු හරිම නැවුම්.",
+          "example_sentence_phonetic": "ජ-ෂියේ ෂූ-සයි හෙන් ෂින්-ෂියෙන්."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_2_1",
+          "target": "可以便宜一点吗？",
+          "native": "ටිකක් අඩු කරන්න පුළුවන්ද?",
+          "phonetic": "ක-යී පියෙන්-යී යී-ඩියෙන් මා?"
+        },
+        {
+          "id": "s4_2_2",
+          "target": "我要买两斤西红柿。",
+          "native": "මට තක්කාලි ජින් දෙකක් ගන්න ඕන.",
+          "phonetic": "වෝ යාඕ මායි ලියං ජින් ෂී-හොං-ෂ(ර්)."
+        },
+        {
+          "id": "s4_2_3",
+          "target": "这个怎么卖？",
+          "native": "මේක විකුණන්නේ කොහොමද?",
+          "phonetic": "ජ-ග සෙන්-ම මායි?"
+        },
+        {
+          "id": "s4_2_4",
+          "target": "这些都很新鲜。",
+          "native": "මේවා ඔක්කොම හරිම නැවුම්.",
+          "phonetic": "ජ-ෂියේ ඩෝ හෙන් ෂින්-ෂියෙන්."
         }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "Days of the Week",
+          "context": "මිල ඇසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "老板，苹果多少钱一斤？",
+              "native": "ලොක්කා, ඇපල් ජින් එකක් කීයද?",
+              "phonetic": "ලාඕ-බාන්, පිං-ගුවෝ ඩුවෝ-ෂාඕ චියෙන් යී ජින්?"
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "五块钱一斤。",
+              "native": "ජින් එකක් යුවාන් පහයි.",
+              "phonetic": "වූ කුවායි චියෙන් යී ජින්."
             }
           ]
         },
         {
           "id": "d4_2_2",
-          "context": "Formal Days of the Week",
+          "context": "මිල අඩු කිරීමට ඉල්ලීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "太贵了，便宜一点吧。",
+              "native": "ගණන් වැඩියි, ටිකක් අඩු කරන්න.",
+              "phonetic": "ටායි ගුයි ල, පියෙන්-යී යී-ඩියෙන් බා."
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "好吧，四块五。",
+              "native": "හරි, හතරයි පනහයි.",
+              "phonetic": "හાઓ බා, ස(ර්) කුවායි වූ."
             }
           ]
+        },
+        {
+          "id": "d4_2_3",
+          "context": "යමක් මිලදී ගැනීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "那给我来两斤。",
+              "native": "එහෙනම් මට ජින් දෙකක් දෙන්න.",
+              "phonetic": "නා ගෙයි වෝ ලායි ලියං ජින්."
+            },
+            {
+              "speaker": "B",
+              "target": "好的，一共九块钱。",
+              "native": "හොඳයි, මුළු යුවාන් නවයයි.",
+              "phonetic": "හાઓ ද, යී-ගොං ජියෝ කුවායි චියෙන්."
+            }
+          ]
+        },
+        {
+            "id": "d4_2_4",
+            "context": "නැවුම්බව ගැන ඇසීම.",
+            "lines": [
+                {
+                    "speaker": "A",
+                    "target": "这个鱼新鲜吗？",
+                    "native": "මේ මාළු නැවුම්ද?",
+                    "phonetic": "ජ-ග යූ ෂින්-ෂියෙන් මා?"
+                },
+                {
+                    "speaker": "B",
+                    "target": "是今天早上刚到的。",
+                    "native": "ඔව්, අද උදේ ආවේ.",
+                    "phonetic": "ෂී ජින්-ටියෙන් සාඕ-ෂං ගං ඩාඕ ද."
+                }
+            ]
         }
       ],
       "exercises": {
         "fillBlanks": [
           {
             "id": "fb4_2_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_2_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_2_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "这个 ___ 钱？",
+            "answer": "多少",
+            "hint": "කීයද?"
           }
         ],
         "matching": [
           {
             "id": "m4_2_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "太贵了",
+            "native": "ගණන් වැඩියි"
           },
           {
             "id": "m4_2_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_2_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_2_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_2_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "水果",
+            "native": "පළතුරු"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_2_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_2_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_2_1",
+            "scrambled": ["一斤", "苹果", "多少钱"],
+            "correct": "苹果一斤多少钱？",
+            "nativeHint": "ඇපල් ජින් එකක් කීයද?"
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "චීනයේ බොහෝ දේශීය වෙළඳපොළවල් වලදී, මිල ගණන් කේවල් කිරීම සාමාන්‍ය දෙයකි. විශේෂයෙන් ඔබ වැඩි ප්‍රමාණයක් මිලදී ගන්නා විට, ආචාරශීලීව මිල අඩු කරන ලෙස ඉල්ලා සිටීමට බිය නොවන්න.",
+      "pronunciation_tip": "'q' අක්ෂරය 'ච' ශබ්දයට සමාන නමුත්, දිවේ තුඩ යටි දත් පිටුපස තබා උච්චාරණය කරයි (උදා: 'qián' - 钱). 'x' අක්ෂරය 'ශ' ශබ්දයට සමාන නමුත් මෘදුයි (උදා: 'xīnxiān' - 新鲜).",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D2"
+        "badge": "W4D2-Market"
       }
     },
     {
       "week": 4,
       "day": 3,
-      "title": "Week 4 Day 3: Months & Seasons",
-      "title_native": "Months & Seasons",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 3 වන දිනය: රස уподобання",
+      "title_native": "第四周，第三天：口味偏好",
+      "theme": "Food Preferences",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_3_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "辣",
+          "phonetic": "ලා",
+          "native_meaning": "සැර",
+          "english": "Spicy",
+          "example_sentence_target": "我喜欢吃辣的。",
+          "example_sentence_native": "මම සැර කෑම කන්න කැමතියි.",
+          "example_sentence_phonetic": "වෝ ශී-හුවන් ච(ර්) ලා ද."
         },
         {
           "id": "w4_3_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "甜",
+          "phonetic": "ටියෙන්",
+          "native_meaning": "පැණිරස",
+          "english": "Sweet",
+          "example_sentence_target": "这个太甜了。",
+          "example_sentence_native": "මේක පැණිරස වැඩියි.",
+          "example_sentence_phonetic": "ජ-ග ටායි ටියෙන් ල."
         },
         {
           "id": "w4_3_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "咸",
+          "phonetic": "ෂියෙන්",
+          "native_meaning": "ලුණු රස",
+          "english": "Salty",
+          "example_sentence_target": "这个菜有点咸。",
+          "example_sentence_native": "මේ කෑමේ ලුණු ටිකක් වැඩියි.",
+          "example_sentence_phonetic": "ජ-ග සයි යෝ-ඩියෙන් ෂියෙන්."
         },
         {
           "id": "w4_3_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "酸",
+          "phonetic": "සුවාන්",
+          "native_meaning": "ඇඹුල්",
+          "english": "Sour",
+          "example_sentence_target": "我喜欢酸辣汤。",
+          "example_sentence_native": "මම ඇඹුල් සහ සැර සුප් වලට කැමතියි.",
+          "example_sentence_phonetic": "වෝ ශී-හුවන් සුවාන්-ලා ටං."
         },
         {
           "id": "w4_3_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "好吃",
+          "phonetic": "හાઓ-ච(ර්)",
+          "native_meaning": "රසයි",
+          "english": "Delicious",
+          "example_sentence_target": "这个很好吃。",
+          "example_sentence_native": "මේක හරිම රසයි.",
+          "example_sentence_phonetic": "ජ-ග හෙන් හાઓ-ච(ර්)."
+        },
+        {
+          "id": "w4_3_6",
+          "target": "过敏",
+          "phonetic": "ගුවෝ-මින්",
+          "native_meaning": "ආසාත්මිකතා",
+          "english": "Allergy",
+          "example_sentence_target": "我对花生过敏。",
+          "example_sentence_native": "මට රටකජු ආසාත්මිකයි.",
+          "example_sentence_phonetic": "වෝ ඩුයි හුවා-ෂෙං ගුවෝ-මින්."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_3_1",
+          "target": "我不能吃辣的。",
+          "native": "මට සැර කෑම කන්න බෑ.",
+          "phonetic": "වෝ බූ නෙං ච(ර්) ලා ද."
+        },
+        {
+          "id": "s4_3_2",
+          "target": "请不要放糖。",
+          "native": "කරුණාකර සීනි දාන්න එපා.",
+          "phonetic": "චිං බූ යාඕ ෆං ටං."
+        },
+        {
+          "id": "s4_3_3",
+          "target": "这个菜太咸了。",
+          "native": "මේ කෑමේ ලුණු රස වැඩියි.",
+          "phonetic": "ජ-ග සයි ටායි ෂියෙන් ල."
+        },
+        {
+          "id": "s4_3_4",
+          "target": "你喜欢甜的还是咸的？",
+          "native": "ඔයා කැමති පැණිරස ද ලුණු රසට ද?",
+          "phonetic": "නී ශී-හුවන් ටියෙන් ද හායි-ෂී ෂියෙන් ද?"
         }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "Months & Seasons",
+          "context": "කෑමක රස ගැන ඇසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "这个菜辣不辣？",
+              "native": "මේ කෑම සැරද?",
+              "phonetic": "ජ-ග සයි ලා බූ ලා?"
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "有一点点辣。",
+              "native": "ටිකක් සැරයි.",
+              "phonetic": "යෝ යී-ඩියෙන්-ඩියෙන් ලා."
             }
           ]
         },
         {
           "id": "d4_3_2",
-          "context": "Formal Months & Seasons",
+          "context": "ආසාත්මිකතාවයක් ගැන පැවසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "我不能吃海鲜，我过敏。",
+              "native": "මට මුහුදු ආහාර කන්න බෑ, මට ආසාත්මිකයි.",
+              "phonetic": "වෝ බූ නෙං ච(ර්) හායි-ෂියෙන්, වෝ ගුවෝ-මින්."
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "好的，我知道了。",
+              "native": "හොඳයි, මම දැනගත්තා.",
+              "phonetic": "හાઓ ද, වෝ ජ(ර්)-ඩාඕ ල."
             }
           ]
+        },
+        {
+          "id": "d4_3_3",
+          "context": "කෑමක් ගැන මතය ප්‍රකාශ කිරීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "这个汤太咸了。",
+              "native": "මේ සුප් එකේ ලුණු වැඩියි.",
+              "phonetic": "ජ-ග ටං ටායි ෂියෙන් ල."
+            },
+            {
+              "speaker": "B",
+              "target": "真的吗？我觉得还好。",
+              "native": "ඇත්තද? මට නම් හොඳයි වගේ.",
+              "phonetic": "ජෙන් ද මා? වෝ ජුවේ-ද හායි-හાઓ."
+            }
+          ]
+        },
+        {
+            "id": "d4_3_4",
+            "context": "පැණිරස ගැන ඇසීම.",
+            "lines": [
+                {
+                    "speaker": "A",
+                    "target": "你喜欢吃甜的吗？",
+                    "native": "ඔයා පැණිරස කෑම කන්න කැමතිද?",
+                    "phonetic": "නී ශී-හුවන් ච(ර්) ටියෙන් ද මා?"
+                },
+                {
+                    "speaker": "B",
+                    "target": "喜欢，特别是蛋糕。",
+                    "native": "කැමතියි, විශේෂයෙන්ම කේක්.",
+                    "phonetic": "ශී-හුවන්, ට(ර්)-බියේ ෂී ඩන්-ගාඕ."
+                }
+            ]
         }
       ],
       "exercises": {
         "fillBlanks": [
           {
             "id": "fb4_3_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_3_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_3_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "这个很 ___。",
+            "answer": "好吃",
+            "hint": "රසයි"
           }
         ],
         "matching": [
           {
             "id": "m4_3_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "辣",
+            "native": "සැර"
           },
           {
             "id": "m4_3_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_3_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_3_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_3_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "甜",
+            "native": "පැණිරස"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_3_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_3_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_3_1",
+            "scrambled": ["吃辣的", "我", "不能"],
+            "correct": "我不能吃辣的。",
+            "nativeHint": "මට සැර කෑම කන්න බෑ."
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "චීන ආහාර පිසීමේදී, රස පහ (පැණිරස, ඇඹුල්, ලුණු, තිත්ත, සැර) සමබරව තබා ගැනීම වැදගත් සංකල්පයකි. බොහෝ කලාපීය ආහාර වර්ග මෙම රසයන්ගෙන් එකක් හෝ කිහිපයක් ඉස්මතු කර දක්වයි. උදාහරණයක් ලෙස සිචුවාන් ආහාර සැර රසයට ප්‍රසිද්ධය.",
+      "pronunciation_tip": "'chī' (吃 - කනවා) වැනි වචනවල 'ch' ශබ්දය ඉංග්‍රීසි 'church' හි මෙන් වේ. 'shī' (是 - වෙනවා) හි 'sh' ශබ්දය ඉංග්‍රීසි 'shoe' හි මෙන් වේ. මෙම වෙනස පුහුණු වන්න.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D3"
+        "badge": "W4D3-Preferences"
       }
     },
     {
       "week": 4,
       "day": 4,
-      "title": "Week 4 Day 4: Daily Routine",
-      "title_native": "Daily Routine",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 4 වන දිනය: බීම ඇණවුම් කිරීම",
+      "title_native": "第四周，第四天：点饮料",
+      "theme": "Ordering Drinks",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_4_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "喝",
+          "phonetic": "හ(ර්)",
+          "native_meaning": "බොනවා",
+          "english": "To drink",
+          "example_sentence_target": "你想喝什么？",
+          "example_sentence_native": "ඔයාට මොනවද බොන්න ඕන?",
+          "example_sentence_phonetic": "නී ෂියං හ(ර්) ෂෙන්-ම?"
         },
         {
           "id": "w4_4_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "水",
+          "phonetic": "ෂුයි",
+          "native_meaning": "වතුර",
+          "english": "Water",
+          "example_sentence_target": "请给我一杯水。",
+          "example_sentence_native": "කරුණාකර මට වතුර වීදුරුවක් දෙන්න.",
+          "example_sentence_phonetic": "චිං ගෙයි වෝ යී බේයි ෂුයි."
         },
         {
           "id": "w4_4_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "茶",
+          "phonetic": "චා",
+          "native_meaning": "තේ",
+          "english": "Tea",
+          "example_sentence_target": "中国人喜欢喝茶。",
+          "example_sentence_native": "චීන ජාතිකයන් තේ බොන්න කැමතියි.",
+          "example_sentence_phonetic": "ජොං-ගුවෝ-රෙන් ශී-හුවන් හ(ර්) චා."
         },
         {
           "id": "w4_4_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "咖啡",
+          "phonetic": "කා-ෆේ",
+          "native_meaning": "කෝපි",
+          "english": "Coffee",
+          "example_sentence_target": "我要一杯热咖啡。",
+          "example_sentence_native": "මට උණුසුම් කෝපි එකක් ඕන.",
+          "example_sentence_phonetic": "වෝ යාඕ යී බේයි ර(ර්) කා-ෆේ."
         },
         {
           "id": "w4_4_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "冰的",
+          "phonetic": "බිං ද",
+          "native_meaning": "අයිස් දැමූ/සීතල",
+          "english": "Iced/Cold",
+          "example_sentence_target": "我要冰的茶。",
+          "example_sentence_native": "මට අයිස් තේ ඕන.",
+          "example_sentence_phonetic": "වෝ යාඕ බිං ද චා."
+        },
+        {
+          "id": "w4_4_6",
+          "target": "热的",
+          "phonetic": "ර(ර්) ද",
+          "native_meaning": "උණුසුම්",
+          "english": "Hot",
+          "example_sentence_target": "天气冷，喝点热的吧。",
+          "example_sentence_native": "කාලගුණය සීතලයි, උණුසුම් දෙයක් බොමු.",
+          "example_sentence_phonetic": "ටියෙන්-චී ලෙං, හ(ර්) ඩියෙන් ර(ර්) ද බා."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_4_1",
+          "target": "你喝茶还是咖啡？",
+          "native": "ඔයා තේ ද කෝපි ද බොන්නේ?",
+          "phonetic": "නී හ(ර්) චා හායි-ෂී කා-ෆේ?"
+        },
+        {
+          "id": "s4_4_2",
+          "target": "我要一杯冰咖啡。",
+          "native": "මට අයිස් කෝපි එකක් ඕන.",
+          "phonetic": "වෝ යාඕ යී බේයි බිං කා-ෆේ."
+        },
+        {
+          "id": "s4_4_3",
+          "target": "请不要加冰。",
+          "native": "කරුණාකර අයිස් දාන්න එපා.",
+          "phonetic": "චිං බූ යාඕ ජියා බිං."
+        },
+        {
+          "id": "s4_4_4",
+          "target": "这里有热水吗？",
+          "native": "මෙතන උණු වතුර තියෙනවද?",
+          "phonetic": "ජ-ලී යෝ ර(ර්) ෂුයි මා?"
         }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "Daily Routine",
+          "context": "කැෆේ එකක බීම ඇණවුම් කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "你好，我想点一杯咖啡。",
+              "native": "ආයුබෝවන්, මට කෝපි එකක් ඇණවුම් කරන්න ඕන.",
+              "phonetic": "නී හાઓ, වෝ ෂියං ඩියෙන් යී බේයි කා-ෆේ."
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "好的，要热的还是冰的？",
+              "native": "හොඳයි, උණුසුම් එකක්ද අයිස් දාපු එකක්ද?",
+              "phonetic": "හાઓ ද, යාඕ ර(ර්) ද හායි-ෂී බිං ද?"
             }
           ]
         },
         {
           "id": "d4_4_2",
-          "context": "Formal Daily Routine",
+          "context": "උණුසුම් හෝ සීතල තෝරා ගැනීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "我要冰的，谢谢。",
+              "native": "මට අයිස් දාපු එකක් ඕන, ස්තූතියි.",
+              "phonetic": "වෝ යාඕ බිං ද, ෂියේ-ෂියේ."
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
-            {
-              "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "好的，请稍等。",
+              "native": "හොඳයි, කරුණාකර ටිකක් ඉන්න.",
+              "phonetic": "හાઓ ද, චිං ෂාඕ ඩෙං."
             }
           ]
+        },
+        {
+          "id": "d4_4_3",
+          "context": "තේ ඇණවුම් කිරීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "你们有什么茶？",
+              "native": "ඔයාලා ගාව මොන තේ වර්ගද තියෙන්නේ?",
+              "phonetic": "නී-මන් යෝ ෂෙන්-ම චා?"
+            },
+            {
+              "speaker": "B",
+              "target": "我们有红茶和绿茶。",
+              "native": "අපි ගාව කළු තේ සහ කොළ තේ තියෙනවා.",
+              "phonetic": "වෝ-මන් යෝ හොං-චා හ(ර්) ලූ-චා."
+            }
+          ]
+        },
+        {
+            "id": "d4_4_4",
+            "context": "වතුර ඉල්ලීම.",
+            "lines": [
+                {
+                    "speaker": "A",
+                    "target": "你好，能给我一杯水吗？",
+                    "native": "ආයුබෝවන්, මට වතුර වීදුරුවක් දෙන්න පුලුවන්ද?",
+                    "phonetic": "නී හાઓ, නෙං ගෙයි වෝ යී බේයි ෂුයි මා?"
+                },
+                {
+                    "speaker": "B",
+                    "target": "当然可以。",
+                    "native": "ඇත්තෙන්ම පුළුවන්.",
+                    "phonetic": "ඩාং-රාන් ක-යී."
+                }
+            ]
         }
       ],
       "exercises": {
         "fillBlanks": [
           {
             "id": "fb4_4_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_4_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_4_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "我想 ___ 一杯茶。",
+            "answer": "喝",
+            "hint": "බොනවා"
           }
         ],
         "matching": [
           {
             "id": "m4_4_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "咖啡",
+            "native": "කෝපි"
           },
           {
             "id": "m4_4_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_4_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_4_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_4_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "冰的",
+            "native": "අයිස් දැමූ"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_4_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_4_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_4_1",
+            "scrambled": ["一杯", "我要", "水"],
+            "correct": "我要一杯水。",
+            "nativeHint": "මට වතුර වීදුරුවක් ඕන."
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "බොහෝ චීන ආපනශාලා වල, ආහාර සමඟ නොමිලේ උණුසුම් තේ පිරිනමනු ලැබේ. සීතල වතුර ඉල්ලීම සාමාන්‍ය දෙයක් නොවිය හැකි අතර, සමහර විට ඔබට එය විශේෂයෙන් ඉල්ලා සිටීමට සිදු වේ.",
+      "pronunciation_tip": "'hē' (喝) හි 'h' ශබ්දය උගුරේ පිටුපසින් එන 'හ' ශබ්දයකි, හරියට උණුසුම් දෙයකට පිඹිනවා වැනිය. එය සිංහල 'හ' ශබ්දයට වඩා මෘදුයි.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D4"
+        "badge": "W4D4-Drinks"
       }
     },
     {
       "week": 4,
       "day": 5,
-      "title": "Week 4 Day 5: Appointments",
-      "title_native": "Appointments",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 5 වන දිනය: ගෙවීම",
+      "title_native": "第四周，第五天：付款",
+      "theme": "Paying for the Meal",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_5_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "元",
+          "phonetic": "යුවාන්",
+          "native_meaning": "යුවාන් (මුදල් ඒකකය)",
+          "english": "Yuan (currency unit)",
+          "example_sentence_target": "这个十元。",
+          "example_sentence_native": "මේක යුවාන් දහයයි.",
+          "example_sentence_phonetic": "ජ-ග ෂ(ර්) යුවාන්."
         },
         {
           "id": "w4_5_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "现金",
+          "phonetic": "ෂියෙන්-ජින්",
+          "native_meaning": "මුදල්",
+          "english": "Cash",
+          "example_sentence_target": "你收现金吗？",
+          "example_sentence_native": "ඔබ මුදල් භාරගන්නවාද?",
+          "example_sentence_phonetic": "නී ෂෝ ෂියෙන්-ජින් මා?"
         },
         {
           "id": "w4_5_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "信用卡",
+          "phonetic": "ෂින්-යොං-කා",
+          "native_meaning": "ක්‍රෙඩිට් කාඩ්",
+          "english": "Credit card",
+          "example_sentence_target": "我可以用信用卡吗？",
+          "example_sentence_native": "මට ක්‍රෙඩිට් කාඩ් එක පාවිච්චි කරන්න පුළුවන්ද?",
+          "example_sentence_phonetic": "වෝ ක-යී යොං ෂින්-යොං-කා මා?"
         },
         {
           "id": "w4_5_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "微信支付",
+          "phonetic": "වෙයි-ෂින් ජ(ර්)-ෆූ",
+          "native_meaning": "වීචැට් පේ",
+          "english": "WeChat Pay",
+          "example_sentence_target": "我用微信支付。",
+          "example_sentence_native": "මම වීචැට් පේ වලින් ගෙවන්නම්.",
+          "example_sentence_phonetic": "වෝ යොං වෙයි-ෂින් ජ(ර්)-ෆූ."
         },
         {
           "id": "w4_5_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "支付宝",
+          "phonetic": "ජ(ර්)-ෆූ-බාඕ",
+          "native_meaning": "ඇලිපේ",
+          "english": "Alipay",
+          "example_sentence_target": "这里可以用支付宝吗？",
+          "example_sentence_native": "මෙතන ඇලිපේ පාවිච්චි කරන්න පුළුවන්ද?",
+          "example_sentence_phonetic": "ජ-ලී ක-යී යොං ජ(ර්)-ෆූ-බාඕ මා?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_5_1",
+          "target": "一共多少钱？",
+          "native": "මුළු එකතුව කීයද?",
+          "phonetic": "යී-ගොං ඩුවෝ-ෂාඕ චියෙන්?"
+        },
+        {
+          "id": "s4_5_2",
+          "target": "可以刷卡吗？",
+          "native": "කාඩ් එකෙන් ගෙවන්න පුළුවන්ද?",
+          "phonetic": "ක-යී ෂුවා කා මා?"
+        },
+        {
+          "id": "s4_5_3",
+          "target": "请给我发票。",
+          "native": "කරුණාකර මට බිල්පත දෙන්න.",
+          "phonetic": "චිං ගෙයි වෝ ෆා-පියාඕ."
+        },
+        {
+          "id": "s4_5_4",
+          "target": "不用找了。",
+          "native": "ඉතුරු සල්ලි ඕන නෑ.",
+          "phonetic": "බූ යොං ජාඕ ල."
         }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "Appointments",
+          "context": "මුළු ගණන ඇසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "买单，一共多少钱？",
+              "native": "බිල දෙන්න, මුළු එකතුව කීයද?",
+              "phonetic": "මායි-ඩාන්, යී-ගොං ඩුවෝ-ෂාඕ චියෙන්?"
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "一共八十八元。",
+              "native": "මුළු යුවාන් අසූ අටයි.",
+              "phonetic": "යී-ගොං බා-ෂ(ර්)-බා යුවාන්."
             }
           ]
         },
         {
           "id": "d4_5_2",
-          "context": "Formal Appointments",
+          "context": "ගෙවීමේ ක්‍රමය ගැන ඇසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "我可以用信用卡吗？",
+              "native": "මට ක්‍රෙඩිට් කාඩ් එක පාවිච්චි කරන්න පුළුවන්ද?",
+              "phonetic": "වෝ ක-යී යොං ෂින්-යොං-කා මා?"
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
+              "target": "可以，我们也收微信和支付宝。",
+              "native": "පුළුවන්, අපි වීචැට් සහ ඇලිපේත් භාරගන්නවා.",
+              "phonetic": "ක-යී, වෝ-මන් යේ ෂෝ වෙයි-ෂින් හ(ර්) ජ(ර්)-ෆූ-බාඕ."
+            }
+          ]
+        },
+        {
+          "id": "d4_5_3",
+          "context": "මුදලින් ගෙවීම.",
+          "lines": [
             {
               "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "给你一百块。",
+              "native": "මෙන්න යුවාන් සීයයක්.",
+              "phonetic": "ගෙයි නී යී-බායි කුවායි."
+            },
+            {
+              "speaker": "B",
+              "target": "好的，找你十二块。",
+              "native": "හොඳයි, ඔබට ඉතුරු යුවාන් දොළහක්.",
+              "phonetic": "හાઓ ද, ජාඕ නී ෂ(ර්)-අ(ර්) කුවායි."
+            }
+          ]
+        },
+        {
+          "id": "d4_5_4",
+          "context": "බිල්පත ඉල්ලීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "可以给我一张发票吗？",
+              "native": "මට බිල්පතක් දෙන්න පුළුවන්ද?",
+              "phonetic": "ක-යී ගෙයි වෝ යී ජං ෆා-පියාඕ මා?"
+            },
+            {
+              "speaker": "B",
+              "target": "当然，请稍等。",
+              "native": "ඇත්තෙන්ම, කරුණාකර ටිකක් ඉන්න.",
+              "phonetic": "ඩාং-රාන්, චිං ෂාඕ ඩෙං."
             }
           ]
         }
@@ -870,187 +986,197 @@
         "fillBlanks": [
           {
             "id": "fb4_5_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_5_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_5_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "我可以用 ___ 吗？",
+            "answer": "信用卡",
+            "hint": "ක්‍රෙඩිට් කාඩ්"
           }
         ],
         "matching": [
           {
             "id": "m4_5_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "现金",
+            "native": "මුදල්"
           },
           {
             "id": "m4_5_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_5_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_5_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_5_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "一共多少钱？",
+            "native": "මුළු එකතුව කීයද?"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_5_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_5_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_5_1",
+            "scrambled": ["刷卡", "可以", "吗"],
+            "correct": "可以刷卡吗？",
+            "nativeHint": "කාඩ් එකෙන් ගෙවන්න පුළුවන්ද?"
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "චීනයේ, විශේෂයෙන්ම නගරවල, ජංගම දුරකථන ගෙවීම් (mobile payments) වන WeChat Pay (微信支付) සහ Alipay (支付宝) ඉතා ජනප්‍රියයි. බොහෝ ස්ථානවල ක්‍රෙඩිට් කාඩ් වලට වඩා මේවා බහුලව භාවිතා වේ. මුදල් තවමත් පිළිගත්තද, බොහෝ දෙනෙක් QR කේතයක් ස්කෑන් කර ගෙවීමට කැමැත්තක් දක්වයි.",
+      "pronunciation_tip": "'x' සහ 'sh' ශබ්ද අතර වෙනස වැදගත්. 'xiànjīn' (现金 - මුදල්) හි 'x' ශබ්දය මෘදු වන අතර, 'shuākǎ' (刷卡 - කාඩ් එකෙන් ගෙවීම) හි 'sh' ශබ්දය තදින් උච්චාරණය වේ.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D5"
+        "badge": "W4D5-Payment"
       }
     },
     {
       "week": 4,
       "day": 6,
-      "title": "Week 4 Day 6: Past & Future",
-      "title_native": "Past & Future",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 6 වන දිනය: ආහාර ගැනීමේ ආචාරධර්ම",
+      "title_native": "第四周，第六天：用餐礼仪",
+      "theme": "Dining Etiquette",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_6_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "筷子",
+          "phonetic": "කුවායි-ස(ර්)",
+          "native_meaning": "චොප්ස්ටික්",
+          "english": "Chopsticks",
+          "example_sentence_target": "我会用筷子。",
+          "example_sentence_native": "මට චොප්ස්ටික් පාවිච්චි කරන්න පුළුවන්.",
+          "example_sentence_phonetic": "වෝ හුයි යොං කුවායි-ස(ර්)."
         },
         {
           "id": "w4_6_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "碗",
+          "phonetic": "වන්",
+          "native_meaning": "කෝප්පය/බඳුන",
+          "english": "Bowl",
+          "example_sentence_target": "请再给我一个碗。",
+          "example_sentence_native": "කරුණාකර මට තව කෝප්පයක් දෙන්න.",
+          "example_sentence_phonetic": "චිං සායි ගෙයි වෝ යී-ග වන්."
         },
         {
           "id": "w4_6_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "干杯",
+          "phonetic": "ගන්-බේයි",
+          "native_meaning": "චියර්ස්!",
+          "english": "Cheers!",
+          "example_sentence_target": "我们一起干杯！",
+          "example_sentence_native": "අපි එකට චියර්ස් කරමු!",
+          "example_sentence_phonetic": "වෝ-මන් යී-චී ගන්-බේයි!"
         },
         {
           "id": "w4_6_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "请慢用",
+          "phonetic": "චිං මන්-යොං",
+          "native_meaning": "සෙමින් රසවිඳින්න",
+          "english": "Enjoy your meal (Bon appétit)",
+          "example_sentence_target": "菜来了，请慢用。",
+          "example_sentence_native": "කෑම ආවා, කරුණාකර සෙමින් රසවිඳින්න.",
+          "example_sentence_phonetic": "සයි ලායි ල, චිං මන්-යොං."
         },
         {
           "id": "w4_6_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "服务员",
+          "phonetic": "ෆු-වූ-යුවාන්",
+          "native_meaning": "වේටර්/වේටර්වරිය",
+          "english": "Waiter/Waitress",
+          "example_sentence_target": "服务员，可以加点水吗？",
+          "example_sentence_native": "වේටර්, තව වතුර ටිකක් දාන්න පුළුවන්ද?",
+          "example_sentence_phonetic": "ෆු-වූ-යුවාන්, ක-යී ජියා-ඩියෙන් ෂුයි මා?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_6_1",
+          "target": "我不太会用筷子。",
+          "native": "මට චොප්ස්ටික් එච්චර පාවිච්චि කරන්න බෑ.",
+          "phonetic": "වෝ බූ-ටායි හුයි යොං කුවායි-ස(ර්)."
+        },
+        {
+          "id": "s4_6_2",
+          "target": "可以给我一个勺子吗？",
+          "native": "මට හැන්දක් දෙන්න පුළුවන්ද?",
+          "phonetic": "ක-යී ගෙයි වෝ යී-ග ෂාඕ-ස(ර්) මා?"
+        },
+        {
+          "id": "s4_6_3",
+          "target": "谢谢你的招待。",
+          "native": "ඔබගේ සංග්‍රහයට ස්තූතියි.",
+          "phonetic": "ෂියේ-ෂියේ නී-ද ජාඕ-ඩායි."
+        },
+        {
+          "id": "s4_6_4",
+          "target": "这顿饭很好吃。",
+          "native": "මේ කෑම වේල හරිම රසයි.",
+          "phonetic": "ජ-ඩුන් ෆාන් හෙන් හાઓ-ච(ර්)."
         }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "Past & Future",
+          "context": "හැඳි ගෑරුප්පු ඉල්ලීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "不好意思，可以给我叉子和勺子吗？",
+              "native": "සමාවෙන්න, මට ගෑරුප්පුවකුයි හැන්දකුයි දෙන්න පුළුවන්ද?",
+              "phonetic": "බූ හાઓ-යී-ස(ර්), ක-යී ගෙයි වෝ චා-ස(ර්) හ(ර්) ෂාඕ-ස(ර්) මා?"
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "当然，马上来。",
+              "native": "ඇත්තෙන්ම, දැන්ම ගේන්නම්.",
+              "phonetic": "ඩාং-රාන්, මා-ෂං ලායි."
             }
           ]
         },
         {
           "id": "d4_6_2",
-          "context": "Formal Past & Future",
+          "context": "සංග්‍රහයට ස්තූති කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "今天谢谢你的招待，饭菜很好吃。",
+              "native": "අද ඔබගේ සංග්‍රහයට ස්තූතියි, කෑම හරිම රසයි.",
+              "phonetic": "ජින්-ටියෙන් ෂියේ-ෂියේ නී-ද ජාඕ-ඩායි, ෆාන්-සයි හෙන් හાઓ-ච(ර්)."
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
+              "target": "不客气，你喜欢就好。",
+              "native": "සුළු දෙයක්, ඔයා කැමති නම් හොඳයි.",
+              "phonetic": "බූ ක(ර්)-චී, නී ශී-හුවන් ජියෝ හાઓ."
+            }
+          ]
+        },
+        {
+          "id": "d4_6_3",
+          "context": "'චියර්ස්' කිරීම.",
+          "lines": [
             {
               "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "为了我们的友谊，干杯！",
+              "native": "අපේ මිත්‍රත්වය වෙනුවෙන්, චියර්ස්!",
+              "phonetic": "වෙයි-ල වෝ-මන් ද යෝ-යී, ගන්-බේයි!"
+            },
+            {
+              "speaker": "B",
+              "target": "干杯！",
+              "native": "චියර්ස්!",
+              "phonetic": "ගන්-බේයි!"
+            }
+          ]
+        },
+        {
+          "id": "d4_6_4",
+          "context": "කෑම රසවිඳින ලෙස පැවසීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "菜都上齐了，大家快吃吧。",
+              "native": "කෑම ඔක්කොම ආවා, හැමෝම ඉක්මනට කන්න.",
+              "phonetic": "සයි ඩෝ ෂං චී ල, ඩා-ජියා කුවායි ච(ර්) බා."
+            },
+            {
+              "speaker": "B",
+              "target": "好的，请慢用。",
+              "native": "හොඳයි, කරුණාකර සෙමින් රසවිඳින්න.",
+              "phonetic": "හાઓ ද, චිං මන්-යොං."
             }
           ]
         }
@@ -1059,187 +1185,179 @@
         "fillBlanks": [
           {
             "id": "fb4_6_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
-          },
-          {
-            "id": "fb4_6_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_6_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "我会用 ___。",
+            "answer": "筷子",
+            "hint": "චොප්ස්ටික්"
           }
         ],
         "matching": [
           {
             "id": "m4_6_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "干杯",
+            "native": "චියර්ස්!"
           },
           {
             "id": "m4_6_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
-          },
-          {
-            "id": "m4_6_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_6_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_6_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "碗",
+            "native": "කෝප්පය/බඳුන"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_6_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_6_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_6_1",
+            "scrambled": ["一个", "可以给我", "勺子吗"],
+            "correct": "可以给我一个勺子吗？",
+            "nativeHint": "මට හැන්දක් දෙන්න පුළුවන්ද?"
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "චීන ආහාර වේලකදී, චොප්ස්ටික් බත් කෝප්පය තුල සිරස් අතට තැබීමෙන් වළකින්න. එය අවමංගල්‍ය චාරිත්‍රයක් වන සුවඳ දුම් පූජා කිරීමක් සිහි ගන්වන බැවින් එය අවාසනාවන්ත ලකුණක් ලෙස සැලකේ. භාවිතයේ නොමැති විට, චොප්ස්ටික් බඳුන මත හෝ ඒ අසල ඇති රඳවනය මත තබන්න.",
+      "pronunciation_tip": "'qǐng' (请 - කරුණාකර) සහ 'jīn' (斤 - ඒකකය) යන වචනවල ශබ්ද වෙනසට සවන් දෙන්න. 'q' ශබ්දය 'ච' ට සමාන වන අතර 'j' ශබ්දය 'ජ' ට සමාන වේ. දෙකම සිංහල ශබ්ද වලට වඩා මෘදු ලෙස උච්චාරණය කෙරේ.",
       "progress": {
-        "xp": 130,
+        "xp": 100,
         "streak_bonus": 20,
-        "badge": "W4D6"
+        "badge": "W4D6-Etiquette"
       }
     },
     {
       "week": 4,
       "day": 7,
-      "title": "Week 4 Day 7: Time Expressions",
-      "title_native": "Time Expressions",
-      "theme": "Time & Daily Schedule",
+      "title": "4 වන සතිය, 7 වන දිනය: සතිපතා සමාලෝචනය",
+      "title_native": "第四周，第七天：每周复习",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Chinese",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w4_7_1",
-          "target": "小时",
-          "phonetic": "xiao-SHI",
-          "native_meaning": "පැය",
-          "english": "Hour",
-          "example_sentence_target": "小时.",
-          "example_sentence_native": "පැය."
+          "target": "菜单",
+          "phonetic": "සයි-ඩාන්",
+          "native_meaning": "මෙනුව",
+          "english": "Menu",
+          "example_sentence_target": "请给我菜单。",
+          "example_sentence_native": "කරුණාකර මට මෙනුව දෙන්න.",
+          "example_sentence_phonetic": "චිං ගෙයි වෝ සයි-ඩාන්."
         },
         {
           "id": "w4_7_2",
-          "target": "分钟",
-          "phonetic": "fen-ZHONG",
-          "native_meaning": "මිනිත්තුව",
-          "english": "Minute",
-          "example_sentence_target": "分钟.",
-          "example_sentence_native": "මිනිත්තුව."
+          "target": "多少钱",
+          "phonetic": "ඩුවෝ-ෂාඕ චියෙන්",
+          "native_meaning": "කීයද?",
+          "english": "How much money?",
+          "example_sentence_target": "这个多少钱？",
+          "example_sentence_native": "මේක කීයද?",
+          "example_sentence_phonetic": "ජ-ග ඩුවෝ-ෂාඕ චියෙන්?"
         },
         {
           "id": "w4_7_3",
-          "target": "今天",
-          "phonetic": "jin-TIAN",
-          "native_meaning": "අද",
-          "english": "Today",
-          "example_sentence_target": "今天.",
-          "example_sentence_native": "අද."
+          "target": "好吃",
+          "phonetic": "හાઓ-ච(ර්)",
+          "native_meaning": "රසයි",
+          "english": "Delicious",
+          "example_sentence_target": "这个菜很好吃。",
+          "example_sentence_native": "මේ කෑම හරිම රසයි.",
+          "example_sentence_phonetic": "ජ-ග සයි හෙන් හાઓ-ච(ර්)."
         },
         {
           "id": "w4_7_4",
-          "target": "明天",
-          "phonetic": "ming-TIAN",
-          "native_meaning": "හෙට",
-          "english": "Tomorrow",
-          "example_sentence_target": "明天.",
-          "example_sentence_native": "හෙට."
+          "target": "买单",
+          "phonetic": "මායි-ඩාන්",
+          "native_meaning": "බිල ගෙවනවා",
+          "english": "To pay the bill",
+          "example_sentence_target": "服务员，买单。",
+          "example_sentence_native": "වේටර්, බිල දෙන්න.",
+          "example_sentence_phonetic": "ෆු-වූ-යුවාන්, මායි-ඩාන්."
         },
         {
           "id": "w4_7_5",
-          "target": "昨天",
-          "phonetic": "zuo-TIAN",
-          "native_meaning": "ඊයේ",
-          "english": "Yesterday",
-          "example_sentence_target": "昨天.",
-          "example_sentence_native": "ඊයේ."
+          "target": "喝",
+          "phonetic": "හ(ර්)",
+          "native_meaning": "බොනවා",
+          "english": "To drink",
+          "example_sentence_target": "你想喝茶吗？",
+          "example_sentence_native": "ඔබට තේ බොන්න අවශ්‍යද?",
+          "example_sentence_phonetic": "නී ෂියං හ(ර්) චා මා?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s4_7_1",
+          "target": "我可以用微信支付吗？",
+          "native": "මට වීචැට් පේ වලින් ගෙවන්න පුළුවන්ද?",
+          "phonetic": "වෝ ක-යී යොං වෙයි-ෂින් ජ(ර්)-ෆූ මා?"
+        },
+        {
+          "id": "s4_7_2",
+          "target": "这个菜太辣了。",
+          "native": "මේ කෑම හරිම සැරයි.",
+          "phonetic": "ජ-ග සයි ටායි ලා ල."
+        },
+        {
+          "id": "s4_7_3",
+          "target": "我要一斤苹果和两斤香蕉。",
+          "native": "මට ඇපල් ජින් එකකුයි කෙසෙල් ජින් දෙකකුයි ඕන.",
+          "phonetic": "වෝ යාඕ යී ජින් පිං-ගුවෝ හ(ර්) ලියං ජින් ෂියං-ජියාඕ."
+        },
+        {
+            "id": "s4_7_4",
+            "target": "请慢用。",
+            "native": "සෙමින් රසවිඳින්න.",
+            "phonetic": "චිං මන්-යොං."
         }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "Time Expressions",
+          "context": "ආපනශාලාවකදී සම්පූර්ණ සංවාදයක්.",
           "lines": [
             {
               "speaker": "A",
-              "target": "小时!",
-              "native": "පැය!",
-              "phonetic": "xiao-SHI"
+              "target": "你好，请给我菜单。",
+              "native": "ආයුබෝවන්, කරුණාකර මට මෙනුව දෙන්න.",
+              "phonetic": "නී හાઓ, චිං ගෙයි වෝ සයි-ඩාන්."
             },
             {
               "speaker": "B",
-              "target": "小时! 分钟!",
-              "native": "පැය! මිනිත්තුව!",
-              "phonetic": "xiao-SHI fen-ZHONG"
-            },
-            {
-              "speaker": "A",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
+              "target": "好的。你想吃点什么？",
+              "native": "හොඳයි. ඔයාට මොනවද කන්න ඕන?",
+              "phonetic": "හાઓ ද. නී ෂියං ච(ර්) ඩියෙන් ෂෙන්-ම?"
             }
           ]
         },
         {
           "id": "d4_7_2",
-          "context": "Formal Time Expressions",
+          "context": "ඇණවුම තහවුරු කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "分钟!",
-              "native": "මිනිත්තුව!",
-              "phonetic": "fen-ZHONG"
+              "target": "我要一个宫保鸡丁和一碗米饭。",
+              "native": "මට කුං පාඕ චිකන් එකකුයි බත් කෝප්පයකුයි ඕන.",
+              "phonetic": "වෝ යාඕ යී-ග ගොං-බාඕ-ජී-ඩිං හ(ර්) යී වන් මී-ෆාන්."
             },
             {
               "speaker": "B",
-              "target": "今天!",
-              "native": "අද!",
-              "phonetic": "jin-TIAN"
-            },
+              "target": "好的，要喝点什么吗？",
+              "native": "හොඳයි, මොනවහරි බොන්න ඕනද?",
+              "phonetic": "හાઓ ද, යාඕ හ(ර්) ඩියෙන් ෂෙන්-ම මා?"
+            }
+          ]
+        },
+        {
+          "id": "d4_7_3",
+          "context": "ගෙවීම සහ පිටවීම.",
+          "lines": [
             {
               "speaker": "A",
-              "target": "明天! 昨天!",
-              "native": "හෙට! ඊයේ!",
-              "phonetic": "ming-TIAN zuo-TIAN"
+              "target": "我喝茶。吃完饭后，请买单。",
+              "native": "මම තේ බොනවා. කාලා ඉවර වුණාම, බිල දෙන්න.",
+              "phonetic": "වෝ හ(ර්) චා. ච(ර්) වන් ෆාන් හෝ, චිං මායි-ඩාන්."
+            },
+            {
+              "speaker": "B",
+              "target": "好的，一共五十八元。您可以用支付宝。",
+              "native": "හොඳයි, මුළු යුවාන් පනස් අටයි. ඔබට ඇලිපේ පාවිච්චි කරන්න පුළුවන්.",
+              "phonetic": "හાઓ ද, යී-ගොං වූ-ෂ(ර්)-බා යුවාන්. නින් ක-යී යොං ජ(ර්)-ෆූ-බාඕ."
             }
           ]
         }
@@ -1248,84 +1366,52 @@
         "fillBlanks": [
           {
             "id": "fb4_7_1",
-            "sentence": "___ means 'Hour' in Chinese",
-            "answer": "小时",
-            "hint": "පැය"
+            "sentence": "这个苹果 ___ 钱？",
+            "answer": "多少",
+            "hint": "කීයද"
           },
           {
             "id": "fb4_7_2",
-            "sentence": "___ means 'Minute' in Chinese",
-            "answer": "分钟",
-            "hint": "මිනිත්තුව"
-          },
-          {
-            "id": "fb4_7_3",
-            "sentence": "___ means 'Today' in Chinese",
-            "answer": "今天",
-            "hint": "අද"
+            "sentence": "我喜欢吃 ___ 的菜。",
+            "answer": "辣",
+            "hint": "සැර"
           }
         ],
         "matching": [
           {
             "id": "m4_7_1",
-            "target": "小时",
-            "native": "පැය"
+            "target": "信用卡",
+            "native": "ක්‍රෙඩිට් කාඩ්"
           },
           {
             "id": "m4_7_2",
-            "target": "分钟",
-            "native": "මිනිත්තුව"
+            "target": "干杯",
+            "native": "චියර්ස්!"
           },
           {
             "id": "m4_7_3",
-            "target": "今天",
-            "native": "අද"
-          },
-          {
-            "id": "m4_7_4",
-            "target": "明天",
-            "native": "හෙට"
-          },
-          {
-            "id": "m4_7_5",
-            "target": "昨天",
-            "native": "ඊයේ"
+            "target": "太贵了",
+            "native": "ගණන් වැඩියි"
           }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc4_7_1",
-            "question": "What does '小时' mean?",
-            "options": [
-              "පැය",
-              "මිනිත්තුව",
-              "අද",
-              "හෙට"
-            ],
-            "correct": 0,
-            "explanation": "'小时' means පැය in Sinhala."
-          },
-          {
-            "id": "mc4_7_2",
-            "question": "How do you say 'මිනිත්තුව' in Chinese?",
-            "options": [
-              "小时",
-              "分钟",
-              "今天",
-              "明天"
-            ],
-            "correct": 1,
-            "explanation": "'分钟' means මිනිත්තුව."
+            "id": "ss4_7_1",
+            "scrambled": ["我", "用", "可以", "筷子吗"],
+            "correct": "我可以用筷子吗？",
+            "nativeHint": "මට චොප්ස්ටික් පාවිච්චි කරන්න පුළුවන්ද?"
           }
         ]
       },
-      "cultural_note": "Learning Chinese opens doors to new cultures and opportunities! Week 4 focus: Time & Daily Schedule.",
-      "pronunciation_tip": "Practice Chinese pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "ඔබට යමෙකු විසින් ආහාර වේලකට ආරාධනා කළහොත්, ඔවුන් බිල ගෙවීමට උත්සාහ කරනු ඇත. ආචාරශීලීව බිල ගෙවීමට ඉදිරිපත් වීම හොඳ සිරිතකි, නමුත් ඔවුන් එය ප්‍රතික්ෂේප කළහොත්, ඔබට ඊළඟ වතාවේ සංග්‍රහ කළ හැකි බව පැවසීමෙන් කාරුණිකව පිළිගන්න.",
+      "pronunciation_tip": "සතිය පුරා ඔබ ඉගෙන ගත් වචන නැවත නැවත කියන්න. 'z', 'c', 's' සහ 'zh', 'ch', 'sh' අතර ශබ්ද වෙනස්කම් කෙරෙහි විශේෂ අවධානයක් යොමු කරන්න. නිවැරදි උච්චාරණය සඳහා ශ්‍රව්‍ය පටිගත කිරීම් වලට සවන් දෙන්න.",
       "progress": {
-        "xp": 130,
-        "streak_bonus": 20,
-        "badge": "W4D7"
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W4-FoodMaster"
       }
     }
   ]
 }
+
+    
