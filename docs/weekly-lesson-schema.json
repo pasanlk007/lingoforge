@@ -65,17 +65,10 @@
           {
             "if": {
               "properties": {
-                "path": {
-                  "const": "survival"
-                },
-                "week": {
-                  "const": 2
-                }
+                "path": { "const": "survival" },
+                "week": { "const": 2 }
               },
-              "required": [
-                "path",
-                "week"
-              ]
+              "required": ["path", "week"]
             },
             "then": {
               "properties": {
@@ -95,6 +88,31 @@
                   "maxItems": 4
                 }
               }
+            }
+          },
+          {
+            "if": {
+                "properties": { "path": { "const": "survival" }, "week": { "const": 3 } },
+                "required": ["path", "week"]
+            },
+            "then": {
+                "properties": {
+                    "words": {
+                        "description": "A list of 5 to 8 vocabulary words for the day.",
+                        "minItems": 5,
+                        "maxItems": 8
+                    },
+                    "sentences": {
+                        "description": "A list of 3 to 6 standalone example sentences for practice.",
+                        "minItems": 3,
+                        "maxItems": 6
+                    },
+                    "dialogues": {
+                        "description": "A list of 3 to 6 dialogues for conversational practice.",
+                        "minItems": 3,
+                        "maxItems": 6
+                    }
+                }
             }
           }
         ]
