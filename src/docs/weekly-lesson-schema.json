@@ -1,0 +1,129 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Weekly Language Lesson Plan",
+  "description": "The complete structure for a 7-day language lesson plan, designed to be in a single file per week (e.g., week_1.json).",
+  "type": "object",
+  "properties": {
+    "week": {
+      "description": "The week number this lesson plan is for.",
+      "type": "number"
+    },
+    "path": {
+      "description": "The learning path this lesson belongs to.",
+      "type": "string",
+      "enum": ["survival", "alphabet", "numbers"]
+    },
+    "targetLanguage": {
+      "description": "The language being taught (e.g., 'French').",
+      "type": "string"
+    },
+    "nativeLanguage": {
+      "description": "The user's native language for translations (e.g., 'English', 'Sinhala').",
+      "type": "string"
+    },
+    "days": {
+      "type": "array",
+      "description": "An array containing exactly 7 daily lesson objects.",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "description": "The full object for a single day's lesson. This should conform to the daily lesson schema.",
+        "type": "object",
+        "properties": {
+          "week": { "type": "number" },
+          "day": { "type": "number", "minimum": 1, "maximum": 7 },
+          "letter": { "type": "string" },
+          "title": { "type": "string" },
+          "title_native": { "type": "string" },
+          "theme": { "type": "string" },
+          "path": { "type": "string", "enum": ["survival", "alphabet", "numbers"] },
+          "targetLanguage": { "type": "string" },
+          "nativeLanguage": { "type": "string" },
+          "words": { "type": "array" },
+          "sentences": { "type": "array" },
+          "dialogues": { "type": "array" },
+          "exercises": {
+            "type": "object",
+            "properties": {
+              "fillBlanks": {
+                "type": "array"
+              },
+              "matching": {
+                "type": "array"
+              },
+              "multipleChoice": {
+                "type": "array"
+              },
+              "sentenceScramble": {
+                "type": "array"
+              },
+              "writingPractice": {
+                "type": "array"
+              }
+            }
+          },
+          "cultural_note": { "type": "string" },
+          "pronunciation_tip": { "type": "string" },
+          "progress": { "type": "object" }
+        },
+        "required": ["week", "day", "title", "title_native", "theme", "path", "targetLanguage", "nativeLanguage", "words", "exercises", "cultural_note", "pronunciation_tip", "progress"],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "path": { "const": "survival" },
+                "week": { "const": 2 }
+              },
+              "required": ["path", "week"]
+            },
+            "then": {
+              "properties": {
+                "words": {
+                  "description": "A list of exactly 6 vocabulary words for the day.",
+                  "minItems": 6,
+                  "maxItems": 6
+                },
+                "sentences": {
+                  "description": "A list of exactly 4 standalone example sentences for practice.",
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "dialogues": {
+                  "description": "A list of exactly 4 dialogues for conversational practice.",
+                  "minItems": 4,
+                  "maxItems": 4
+                }
+              }
+            }
+          },
+          {
+            "if": {
+                "properties": { "path": { "const": "survival" }, "week": { "const": 3 } },
+                "required": ["path", "week"]
+            },
+            "then": {
+                "properties": {
+                    "words": {
+                        "description": "A list of 5 to 8 vocabulary words for the day.",
+                        "minItems": 5,
+                        "maxItems": 8
+                    },
+                    "sentences": {
+                        "description": "A list of 3 to 6 standalone example sentences for practice.",
+                        "minItems": 3,
+                        "maxItems": 6
+                    },
+                    "dialogues": {
+                        "description": "A list of 3 to 6 dialogues for conversational practice.",
+                        "minItems": 3,
+                        "maxItems": 6
+                    }
+                }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": ["week", "path", "targetLanguage", "nativeLanguage", "days"]
+}
