@@ -268,23 +268,21 @@ export default function LandingPage() {
 
         <section className="py-20 sm:py-24 bg-slate-900">
             <div className="container mx-auto px-4">
-                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-8">
                     {[
-                      { icon: <Sparkles/>, title: t.features.ai.title, desc: t.features.ai.desc },
-                      { icon: <Volume2/>, title: t.features.audio.title, desc: t.features.audio.desc },
-                      { icon: <MessageSquare/>, title: t.features.dialogues.title, desc: t.features.dialogues.desc },
-                      { icon: <Pencil/>, title: t.features.exercises.title, desc: t.features.exercises.desc },
-                      { icon: <Flame/>, title: t.features.streak.title, desc: t.features.streak.desc },
-                      { icon: <BarChart/>, title: t.features.progress.title, desc: t.features.progress.desc },
-                      { icon: <BadgeCheck/>, title: t.features.certs.title, desc: t.features.certs.desc },
-                      { icon: <Globe/>, title: t.features.langs.title, desc: t.features.langs.desc }
+                      { icon: <Sparkles/>, title: t.features.ai.title },
+                      { icon: <Volume2/>, title: t.features.audio.title },
+                      { icon: <MessageSquare/>, title: t.features.dialogues.title },
+                      { icon: <Pencil/>, title: t.features.exercises.title },
+                      { icon: <Flame/>, title: t.features.streak.title },
+                      { icon: <BarChart/>, title: t.features.progress.title },
+                      { icon: <BadgeCheck/>, title: t.features.certs.title },
+                      { icon: <Globe/>, title: t.features.langs.title }
                     ].map(feature => (
-                        <div key={feature.title} className="text-center">
-                            <div className="mx-auto w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400 mb-3">
-                               {React.cloneElement(feature.icon, { className: 'w-6 h-6'})}
+                        <div key={feature.title} className="flex justify-center" title={feature.title}>
+                            <div className="w-20 h-20 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400 hover:bg-slate-700 transition-colors">
+                               {React.cloneElement(feature.icon, { className: 'w-10 h-10'})}
                             </div>
-                            <h3 className="font-semibold text-white">{feature.title}</h3>
-                            <p className="text-sm text-slate-400">{feature.desc}</p>
                         </div>
                     ))}
                  </div>
@@ -301,25 +299,6 @@ export default function LandingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
               <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">{t.freePlan.title}</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">{t.freePlan.price}</p>
-                </CardHeader>
-                <CardContent className="p-0 flex-1 flex flex-col justify-between">
-                  <ul className="space-y-3 text-slate-400 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-green-500"/> {t.freePlan.feat1}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-green-500"/> {t.freePlan.feat2}</li>
-                    <li className="flex items-center gap-2 opacity-50"><XCircle className="w-5 h-5"/> {t.freePlan.feat3}</li>
-                    <li className="flex items-center gap-2 opacity-50"><XCircle className="w-5 h-5"/> {t.freePlan.feat4}</li>
-                    <li className="flex items-center gap-2 opacity-50"><XCircle className="w-5 h-5"/> {t.freePlan.feat5}</li>
-                  </ul>
-                  <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
-                    <Link href="/dashboard">{t.freePlan.btn}</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
-                <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">{t.weeklyPlan.title}</CardTitle>
                   <p className="text-4xl font-extrabold mt-2">{t.weeklyPlan.price}<span className="text-base font-medium text-slate-400">{t.weeklyPlan.per}</span></p>
                   <p className="text-sm text-slate-400 mt-1">{t.weeklyPlan.desc}</p>
@@ -330,31 +309,49 @@ export default function LandingPage() {
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat2}</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat3}</li>
                     <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat4}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat5}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat6}</li>
                   </ul>
-                  <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
-                    <Link href="/dashboard">{t.getStarted}</Link>
+                  <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                    <Link href="/pricing">{t.getStarted}</Link>
                   </Button>
                 </CardContent>
               </Card>
               
               <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
-                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">{t.completePlan.badge}</Badge>
+                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">{t.lifetimePlan.badge}</Badge>
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">{t.completePlan.title}</CardTitle>
-                   <p className="text-4xl font-extrabold mt-2">{t.completePlan.price}<span className="text-base font-medium text-slate-400">{t.completePlan.per}</span></p>
-                   <p className="text-sm font-semibold text-yellow-400">{t.completePlan.desc}</p>
+                  <CardTitle className="font-bold text-xl">{t.lifetimePlan.title}</CardTitle>
+                   <p className="text-4xl font-extrabold mt-2">{t.lifetimePlan.price}<span className="text-base font-medium text-slate-400">{t.lifetimePlan.per}</span></p>
+                   <p className="text-sm font-semibold text-yellow-400">{t.lifetimePlan.desc}</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat1}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat2}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat3}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat4}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat1}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat2}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat3}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat4}</li>
                   </ul>
                   <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
-                    <Link href="/dashboard">{t.getStarted}</Link>
+                    <Link href="/pricing">{t.getStarted}</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
+                <Badge variant="default" className="w-fit mb-4">{t.completePlan.badge}</Badge>
+                <CardHeader className="p-0">
+                  <CardTitle className="font-bold text-xl">{t.completePlan.title}</CardTitle>
+                  <p className="text-4xl font-extrabold mt-2">{t.completePlan.price}<span className="text-base font-medium text-slate-400">{t.completePlan.per}</span></p>
+                  <p className="text-sm text-slate-400 mt-1">{t.completePlan.desc}</p>
+                </CardHeader>
+                <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                  <ul className="space-y-3 text-slate-300 my-6">
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat1}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat2}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat3}</li>
+                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat4}</li>
+                  </ul>
+                  <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                    <Link href="/pricing">{t.getStarted}</Link>
                   </Button>
                 </CardContent>
               </Card>

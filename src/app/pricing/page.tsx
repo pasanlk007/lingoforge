@@ -64,6 +64,22 @@ export default function PricingPage() {
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
 
+  const renderPaymentButtons = () => (
+     <div className="flex flex-col gap-3">
+       <Button size="lg" className="w-full">
+          Pay with Card
+       </Button>
+       <div className="flex w-full gap-3">
+         <Button variant="secondary" className="w-full bg-black text-white hover:bg-gray-800">
+            <ApplePayLogo />
+         </Button>
+         <Button variant="secondary" className="w-full bg-white text-black hover:bg-gray-200">
+            <GooglePayLogo />
+         </Button>
+       </div>
+    </div>
+  );
+
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
       <Navigation />
@@ -80,28 +96,7 @@ export default function PricingPage() {
             </div>
 
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              {/* Free Plan */}
-              <Card className="flex flex-col">
-                <CardHeader>
-                  <CardTitle className="font-headline text-2xl">{t.freePlan.title}</CardTitle>
-                  <CardDescription>{t.freePlan.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <p className="text-4xl font-bold">{t.freePlan.price}</p>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> {t.freePlan.feat1}</li>
-                    <li className="flex items-center gap-2"><Check className="h-5 w-5 text-primary" /> {t.freePlan.feat2}</li>
-                    <li className="flex items-center gap-2 text-muted-foreground/70"><Check className="h-5 w-5 text-muted-foreground/50"/> {t.freePlan.feat3}</li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="/signup">{t.startFree}</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Weekly Plan */}
+              {/* Single Language Plan */}
               <Card className="flex flex-col">
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl">{t.weeklyPlan.title}</CardTitle>
@@ -116,39 +111,49 @@ export default function PricingPage() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat2}</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat3}</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat4}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat5}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat6}</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3">
-                   <Button size="lg" className="w-full">
-                      Pay with Card
-                   </Button>
-                   <div className="flex w-full gap-3">
-                     <Button variant="secondary" className="w-full bg-black text-white hover:bg-gray-800">
-                        <ApplePayLogo />
-                     </Button>
-                     <Button variant="secondary" className="w-full bg-white text-black hover:bg-gray-200">
-                        <GooglePayLogo />
-                     </Button>
-                   </div>
+                  {renderPaymentButtons()}
                 </CardFooter>
               </Card>
 
-              {/* Complete Package Plan */}
+              {/* Survive Anywhere Plan */}
               <Card className="relative flex flex-col border-2 border-primary shadow-2xl shadow-primary/20">
                 <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  {t.completePlan.badge}
+                  {t.lifetimePlan.badge}
                 </Badge>
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">{t.completePlan.title}</CardTitle>
-                  <CardDescription>{t.completePlan.desc}</CardDescription>
+                  <CardTitle className="font-headline text-2xl">{t.lifetimePlan.title}</CardTitle>
+                  <CardDescription>{t.lifetimePlan.desc}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">
+                    {t.lifetimePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.lifetimePlan.per}</span>
+                  </p>
+                  <ul className="space-y-3">
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat1}</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat2}</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat3}</li>
+                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat4}</li>
+                  </ul>
+                </CardContent>
+                <CardFooter className="flex-col gap-3">
+                   {renderPaymentButtons()}
+                </CardFooter>
+              </Card>
+
+              {/* Single Course Plan */}
+              <Card className="flex flex-col">
+                 <CardHeader>
+                  <Badge variant="secondary" className="w-fit">{t.completePlan.badge}</Badge>
+                  <CardTitle className="font-headline text-2xl mt-2">{t.completePlan.title}</CardTitle>
+                  <CardDescription>{t.completePlan.desc}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-1 space-y-6">
+                   <p className="text-4xl font-bold">
                     {t.completePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.completePlan.per}</span>
                   </p>
-                  <Badge variant="secondary" className="w-fit text-green-500 border border-green-500/50 bg-green-500/10">{t.completePlan.subtext}</Badge>
                   <ul className="space-y-3">
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat1}</li>
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat2}</li>
@@ -157,19 +162,23 @@ export default function PricingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3">
-                   <Button size="lg" className="w-full">
-                      Pay with Card
-                   </Button>
-                   <div className="flex w-full gap-3">
-                     <Button variant="secondary" className="w-full bg-black text-white hover:bg-gray-800">
-                        <ApplePayLogo />
-                     </Button>
-                     <Button variant="secondary" className="w-full bg-white text-black hover:bg-gray-200">
-                        <GooglePayLogo />
-                     </Button>
-                   </div>
+                   {renderPaymentButtons()}
                 </CardFooter>
               </Card>
+            </div>
+
+             <div className="mt-16 text-center">
+                <h3 className="font-headline text-2xl font-bold">{t.freePlan.title}</h3>
+                <p className="text-muted-foreground mt-2">{t.freePlan.description}</p>
+                <ul className="mt-4 inline-flex gap-4 text-muted-foreground">
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {t.freePlan.feat1}</li>
+                    <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {t.freePlan.feat2}</li>
+                </ul>
+                <div className="mt-6">
+                    <Button variant="outline" asChild>
+                        <Link href="/signup">{t.freePlan.btn}</Link>
+                    </Button>
+                </div>
             </div>
             
             <div className="mt-16 text-center text-muted-foreground text-sm">

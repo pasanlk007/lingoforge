@@ -2,21 +2,32 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useUser, useFirestore, useCollection, useDoc, useMemoFirebase } from '@/firebase';
-import { collection, doc } from 'firebase/firestore';
-import type { UserProfile, UserWeekProgress } from '@/lib/types';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { UserProfile, LessonDay } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { CheckCircle, Star } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations, targetLanguages } from '@/lib/translations';
+import { getOrGenerateLesson } from '@/lib/lessonCache';
+
+const LoadingSkeleton = () => (
+    <div className="flex min-h-dvh flex-col bg-background">
+      <Navigation />
+      <main className="flex-1 container mx-auto max-w-4xl py-12 px-4 space-y-4">
+          <Skeleton className="h-10 w-1/2" />
+          <Skeleton className="h-6 w-3/4" />
+          <div className="mt-8 grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 gap-3">
+            {Array.from({ length: 26 }).map((_, i) => (
+              <Skeleton key={i} className="h-16 w-16" />
+            ))}
+          </div>
+      </main>
+    </div>
+);
 
 export default function AlphabetPathPage() {
-  const router = useRouter();
-  const { user, isUserLoading: isUserLoading } = useUser();
+  const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
 
   const userProfileRef = useMemoFirebase(() => {
@@ -25,15 +36,11 @@ export default function AlphabetPathPage() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-
-  const progressCollectionRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
-    return collection(firestore, 'userProgress', user.uid, 'alphabet');
-  }, [user, firestore]);
-
-  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
   
   const [isMounted, setIsMounted] = useState(false);
+  const [allLessonData, setAllLessonData] = useState<LessonDay[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -43,49 +50,53 @@ export default function AlphabetPathPage() {
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
 
+  const targetLanguageInfo = useMemo(() => targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase()), [targetLanguage]);
+  const alphabetSize = targetLanguageInfo?.alphabetSize || 0;
+  const totalWeeks = alphabetSize > 0 ? Math.ceil(alphabetSize / 7) : 0;
+
   useEffect(() => {
-    if (isMounted && ['Chinese', 'Tamil'].includes(targetLanguage)) {
-      router.replace('/dashboard');
+    const fetchAllLessons = async () => {
+      if (totalWeeks === 0) {
+        setAllLessonData([]);
+        setIsLoading(false);
+        return;
+      }
+      setIsLoading(true);
+      const allDays: LessonDay[] = [];
+      for (let week = 1; week <= totalWeeks; week++) {
+        const weeklyLesson = await getOrGenerateLesson(
+          targetLanguage.toLowerCase(),
+          'alphabet',
+          week,
+          validNativeLanguage,
+          1 // Dummy day, we get the whole week
+        );
+        if (weeklyLesson && weeklyLesson.days) {
+          allDays.push(...weeklyLesson.days);
+        }
+      }
+      // Ensure we only have as many days as there are letters in the alphabet
+      setAllLessonData(allDays.slice(0, alphabetSize));
+      setIsLoading(false);
+    };
+
+    if (isMounted && targetLanguage && validNativeLanguage) {
+      fetchAllLessons();
     }
-  }, [targetLanguage, router, isMounted]);
-  
-  const targetLanguageInfo = targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase());
-  const alphabetSize = targetLanguageInfo?.alphabetSize || 26; // Default for safety
-  const totalWeeks = Math.ceil(alphabetSize / 7);
+  }, [isMounted, targetLanguage, validNativeLanguage, totalWeeks, alphabetSize]);
 
-  const completedDays = useMemo(() => {
-    if (!progressData) return {};
-    const completedDaysMap: { [week: number]: number[] } = {};
-    progressData.forEach(weekProgress => {
-      completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-    });
-    return completedDaysMap;
-  }, [progressData]);
-
-  if (!isMounted || isUserLoading || isProgressLoading) {
-    return (
-      <div className="flex min-h-dvh flex-col bg-background">
-        <Navigation />
-        <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 space-y-4">
-            <Skeleton className="h-10 w-1/2 mx-auto" />
-            <Skeleton className="h-6 w-3/4 mx-auto" />
-            <div className="mt-8 space-y-2">
-                <Skeleton className="h-14 w-full" />
-                <Skeleton className="h-14 w-full opacity-70" />
-                <Skeleton className="h-14 w-full opacity-70" />
-                <Skeleton className="h-14 w-full opacity-70" />
-            </div>
-        </main>
-      </div>
-    );
+  if (isLoading || isUserLoading || !isMounted || isProfileLoading) {
+    return <LoadingSkeleton />;
   }
 
-  if (['Chinese', 'Tamil'].includes(targetLanguage)) {
+  if (alphabetSize === 0) {
     return (
         <div className="flex min-h-dvh flex-col bg-background">
             <Navigation />
             <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 text-center">
-                <p>The Alphabet Path is not available for {targetLanguage}. Redirecting to dashboard...</p>
+                <h1 className="text-4xl font-bold tracking-tight">Alphabet Path</h1>
+                <p className="mt-4 text-lg text-muted-foreground">The Alphabet Path is not applicable for {targetLanguage}.</p>
+                <Button asChild className="mt-6"><Link href="/dashboard">Back to Dashboard</Link></Button>
             </main>
         </div>
     );
@@ -95,54 +106,21 @@ export default function AlphabetPathPage() {
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <div className="container mx-auto max-w-3xl py-12 px-4">
+        <div className="container mx-auto max-w-4xl py-12 px-4">
           <header className="mb-8 text-center">
             <h1 className="text-4xl font-bold tracking-tight">Alphabet Path</h1>
             <p className="mt-2 text-muted-foreground">A journey to master the writing system of {targetLanguage}.</p>
           </header>
 
-          <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
-            {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
-              const completedDaysInWeek = completedDays[week] || [];
-              const daysInThisWeek = (week === totalWeeks && alphabetSize % 7 !== 0) ? alphabetSize % 7 : 7;
-              const isWeekCompleted = completedDaysInWeek.length === daysInThisWeek;
-              
-              return (
-                <AccordionItem key={week} value={`item-${week}`}>
-                  <AccordionTrigger className="text-lg hover:no-underline">
-                    <div className="flex w-full items-center justify-between pr-4">
-                      <span className="flex items-center gap-3">
-                         {isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Star className="h-5 w-5 text-blue-400" />}
-                         {t.week} {week}
-                      </span>
-                      
-                      {!isWeekCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
-                            {completedDaysInWeek.length} / {daysInThisWeek} {t.days}
-                        </span>
-                      )}
-                      {isWeekCompleted && (
-                        <span className="text-xs font-semibold uppercase tracking-wider text-green-500">{t.completed}</span>
-                      )}
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-                      {Array.from({ length: daysInThisWeek }, (_, j) => j + 1).map((day) => {
-                        return (
-                          <Button asChild variant="secondary" key={day}>
-                            <Link href={`/lessons/${targetLanguage.toLowerCase()}/alphabet/${week}/${day}`}>
-                              {`${t.day} ${day}`}
-                            </Link>
-                          </Button>
-                        )
-                      })}
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              );
-            })}
-          </Accordion>
+          <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
+            {allLessonData.map((day) => (
+              <Button key={`${day.week}-${day.day}`} asChild variant="secondary" className="h-20 text-3xl font-bold">
+                <Link href={`/lessons/${targetLanguage.toLowerCase()}/alphabet/${day.week}/${day.day}`}>
+                  {day.letter}
+                </Link>
+              </Button>
+            ))}
+          </div>
         </div>
       </main>
     </div>
