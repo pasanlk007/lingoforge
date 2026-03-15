@@ -7,1325 +7,387 @@
     {
       "week": 3,
       "day": 1,
-      "title": "Week 3 Day 1: Body Parts",
-      "title_native": "Body Parts",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 1 වන දිනය: උදෑසන චර්යාව",
+      "title_native": "வாரம் 3, நாள் 1: காலை பழக்கவழக்கங்கள்",
+      "theme": "Morning Routine",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_1_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_1_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_1_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_1_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_1_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_1_1", "target": "எழுந்திரு", "phonetic": "elunthiru", "native_meaning": "අවදි වන්න", "english": "Wake up", "example_sentence_target": "நான் காலை 6 மணிக்கு எழுந்திருப்பேன்.", "example_sentence_native": "මම උදේ 6ට අවදි වෙනවා.", "example_sentence_phonetic": "Naan kaalai aaru manikku elunthiruppen." },
+        { "id": "w3_1_2", "target": "பல் துலக்கு", "phonetic": "pal thulakku", "native_meaning": "දත් මදින්න", "english": "Brush teeth", "example_sentence_target": "நான் தினமும் காலையில் பல் துலக்குவேன்.", "example_sentence_native": "මම හැමදාම උදේට දත් මදිනවා.", "example_sentence_phonetic": "Naan thinamum kaalaiyil pal thulakkuven." },
+        { "id": "w3_1_3", "target": "குளி", "phonetic": "kuli", "native_meaning": "නාන්න", "english": "Bathe/Shower", "example_sentence_target": "நான் வேலைக்குச் செல்வதற்கு முன் குளிப்பேன்.", "example_sentence_native": "මම වැඩට යන්න කලින් නානවා.", "example_sentence_phonetic": "Naan velaikku selvatharku mun kulippen." },
+        { "id": "w3_1_4", "target": "காலை உணவு", "phonetic": "kaalai unavu", "native_meaning": "උදෑසන ආහාරය", "english": "Breakfast", "example_sentence_target": "காலை உணவு சாப்பிடுவது மிகவும் முக்கியம்.", "example_sentence_native": "උදේ කෑම ගැනීම ගොඩක් වැදගත්.", "example_sentence_phonetic": "Kaalai unavu saappiduvathu mikavum mukkiyam." },
+        { "id": "w3_1_5", "target": "உடை அணி", "phonetic": "udai ani", "native_meaning": "ඇඳුම් ඇඳගන්න", "english": "Get dressed", "example_sentence_target": "நான் வேலைக்குச் செல்ல உடை அணிகிறேன்.", "example_sentence_native": "මම වැඩට යන්න ඇඳුම් අඳිනවා.", "example_sentence_phonetic": "Naan velaikku sella udai anikiren." }
+      ],
+      "sentences": [
+          { "id": "s3_1_1", "target": "நான் சீக்கிரம் எழுந்திருக்க வேண்டும்.", "native": "මට ඉක්මනට නැගිටින්න ඕන.", "phonetic": "Naan seekkiram elunthirukka vendum." },
+          { "id": "s3_1_2", "target": "காலை உணவிற்கு என்ன இருக்கிறது?", "native": "උදේ කෑමට මොනවද තියෙන්නේ?", "phonetic": "Kaalai unavirku enna irukkirathu?" },
+          { "id": "s3_1_3", "target": "நான் தயாராகிக் கொண்டிருக்கிறேன்.", "native": "මම ලෑස්ති වෙනවා.", "phonetic": "Naan thayaraakik kondirukkiren." }
       ],
       "dialogues": [
         {
           "id": "d3_1_1",
-          "context": "Body Parts",
+          "context": "උදෑසන සූදානම් වීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "நீங்கள் எழுந்துவிட்டீர்களா?", "native": "ඔයා නැගිට්ටද?", "phonetic": "Neengal elunthuvitteerkala?" },
+            { "speaker": "B", "target": "ஆம், நான் இப்போதுதான் எழுந்தேன்.", "native": "ඔව්, මම දැන් නැගිට්ටේ.", "phonetic": "Aam, naan ippothuthaan elunthen." }
           ]
         },
         {
           "id": "d3_1_2",
-          "context": "Formal Body Parts",
+          "context": "උදෑසන ආහාරය ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "காலை உணவிற்கு என்ன செய்யலாம்?", "native": "උදේ කෑමට මොනවද හදන්නේ?", "phonetic": "Kaalai unavirku enna seyyalaam?" },
+            { "speaker": "B", "target": "நாம் தோசை சாப்பிடலாம்.", "native": "අපි තෝසේ කමු.", "phonetic": "Naam thosai saappidalaam." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_1_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_1_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_1_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_1_1", "sentence": "நான் வேலைக்குச் செல்வதற்கு முன் ___.", "answer": "குளிப்பேன்", "hint": "නානවා" }
         ],
         "matching": [
-          {
-            "id": "m3_1_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_1_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_1_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_1_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_1_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_1_1", "target": "எழுந்திரு", "native": "අවදි වන්න" },
+          { "id": "m3_1_2", "target": "காலை உணவு", "native": "උදෑසන ආහාරය" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_1_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_1_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+            { "id": "ss3_1_1", "scrambled": ["காலை", "நான்", "சாப்பிடுகிறேன்", "உணவு"], "correct": "நான் காலை உணவு சாப்பிடுகிறேன்", "nativeHint": "මම උදේ කෑම කනවා." }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D1"
-      }
+      "cultural_note": "දකුණු ඉන්දියාවේ සහ ශ්‍රී ලංකාවේ බොහෝ දමිළ පවුල්වල, දවස ආරම්භ කිරීම සඳහා උදෑසන ආහාරය ලෙස ඉඩ්ලි, දෝසා හෝ පොංගල් වැනි සම්ප්‍රදායික ආහාර ගැනීම සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "දෙමළ භාෂාවේ 'ழ' (zha) අක්ෂරය විශේෂ ශබ්දයකි. 'Kaalai' (காலை) වැනි වචනවල එය නිවැරදිව උච්චාරණය කිරීමට පුරුදු වන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D1-TamilMorning" }
     },
     {
       "week": 3,
       "day": 2,
-      "title": "Week 3 Day 2: Common Symptoms",
-      "title_native": "Common Symptoms",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 2 වන දිනය: ආහාර ගැනීම",
+      "title_native": "வாரம் 3, நாள் 2: உணவு உண்ணுதல்",
+      "theme": "Eating Meals",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_2_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_2_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_2_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_2_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_2_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_2_1", "target": "மதிய உணவு", "phonetic": "mathiya unavu", "native_meaning": "දිවා ආහාරය", "english": "Lunch", "example_sentence_target": "மதிய உணவிற்கு என்ன இருக்கிறது?", "example_sentence_native": "දවල් කෑමට මොනවද තියෙන්නෙ?", "example_sentence_phonetic": "Mathiya unavirku enna irukkirathu?" },
+        { "id": "w3_2_2", "target": "இரவு உணவு", "phonetic": "iravu unavu", "native_meaning": "රාත්‍රී ආහාරය", "english": "Dinner", "example_sentence_target": "நாம் இரவு உணவை ஒன்றாகச் சாப்பிடலாம்.", "example_sentence_native": "අපි රෑ කෑම එකට කමු.", "example_sentence_phonetic": "Naam iravu unavai ondraaga saappidalaam." },
+        { "id": "w3_2_3", "target": "சாப்பிடு", "phonetic": "saappidu", "native_meaning": "කන්න", "english": "Eat", "example_sentence_target": "தயவுசெய்து சாப்பிடுங்கள்.", "example_sentence_native": "කරුණාකර කෑම කන්න.", "example_sentence_phonetic": "Thayavuseithu saappidungal." },
+        { "id": "w3_2_4", "target": "தண்ணீர்", "phonetic": "thanneer", "native_meaning": "වතුර", "english": "Water", "example_sentence_target": "எனக்கு கொஞ்சம் தண்ணீர் வேண்டும்.", "example_sentence_native": "මට වතුර ටිකක් ඕන.", "example_sentence_phonetic": "Enakku konjam thanneer vendum." },
+        { "id": "w3_2_5", "target": "பசி", "phonetic": "pasi", "native_meaning": "බඩගිනියි", "english": "Hungry", "example_sentence_target": "எனக்கு மிகவும் பசிக்கிறது.", "example_sentence_native": "මට ගොඩක් බඩගිනියි.", "example_sentence_phonetic": "Enakku mikavum pasikkirathu." }
+      ],
+      "sentences": [
+        { "id": "s3_2_1", "target": "உணவு மிகவும் சுவையாக இருக்கிறது.", "native": "කෑම හරිම රසයි.", "phonetic": "Unavu mikavum suvaiyaaka irukkirathu." },
+        { "id": "s3_2_2", "target": "இன்னும் கொஞ்சம் சாதம் కావాలి.", "native": "තව බත් ටිකක් ඕන.", "phonetic": "Innum konjam saatham vendum." },
+        { "id": "s3_2_3", "target": "எனக்கு தாகமாக இருக்கிறது.", "native": "මට තිබහයි.", "phonetic": "Enakku thaakamaaka irukkirathu." }
       ],
       "dialogues": [
         {
           "id": "d3_2_1",
-          "context": "Common Symptoms",
+          "context": "දිවා ආහාරය ඇණවුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "நீங்கள் மதிய உணவிற்கு என்ன விரும்புகிறீர்கள்?", "native": "ඔයා දවල් කෑමට මොනවද කැමති?", "phonetic": "Neengal mathiya unavirku enna virumbukireerkal?" },
+            { "speaker": "B", "target": "நான் ஒரு சைவ சாப்பாடு விரும்புகிறேன்.", "native": "මම නිර්මාංශ ආහාර වේලකට කැමතියි.", "phonetic": "Naan oru saiva saappaadu virumbukiren." }
           ]
         },
         {
           "id": "d3_2_2",
-          "context": "Formal Common Symptoms",
+          "context": "බඩගිනි බව පැවසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "உங்களுக்கு பசிக்கிறதா?", "native": "ඔයාට බඩගිනිද?", "phonetic": "Unkalukku pasikkiratha?" },
+            { "speaker": "B", "target": "ஆம், எனக்கு மிகவும் பசிக்கிறது.", "native": "ඔව්, මට ගොඩක් බඩගිනියි.", "phonetic": "Aam, enakku mikavum pasikkirathu." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_2_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_2_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_2_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_2_1", "sentence": "எனக்கு கொஞ்சம் ___ வேண்டும்.", "answer": "தண்ணீர்", "hint": "වතුර" }
         ],
         "matching": [
-          {
-            "id": "m3_2_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_2_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_2_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_2_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_2_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_2_1", "target": "பசி", "native": "බඩගිනියි" },
+          { "id": "m3_2_2", "target": "இரவு உணவு", "native": "රාත්‍රී ආහාරය" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_2_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_2_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_2_1", "scrambled": ["சுவையாக", "இருக்கிறது", "உணவு", "மிகவும்"], "correct": "உணவு மிகவும் சுவையாக இருக்கிறது", "nativeHint": "කෑම හරිම රසයි." }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D2"
-      }
+      "cultural_note": "දෙමළ සංස්කෘතිය තුළ, විශේෂයෙන්ම වැඩිහිටියන්ට ආහාර පිරිනැමීම සහ ඔවුන් ආහාරයට ගෙන අවසන් වන තුරු බලා සිටීම ගෞරවයේ සලකුණකි.",
+      "pronunciation_tip": "'தண்ணீர்' (thanneer) වැනි වචනවල 'ண' ශබ්දය නාසික 'න' ශබ්දයකි. එය නිවැරදිව උච්චාරණය කිරීමට පුරුදු වන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D2-TamilMeals" }
     },
     {
       "week": 3,
       "day": 3,
-      "title": "Week 3 Day 3: At the Doctor",
-      "title_native": "At the Doctor",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 3 වන දිනය: දෛනික වැඩ",
+      "title_native": "வாரம் 3, நாள் 3: தினசரி வேலை",
+      "theme": "Daily Work",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_3_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_3_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_3_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_3_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_3_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_3_1", "target": "வேலை", "phonetic": "velai", "native_meaning": "රැකියාව", "english": "Work", "example_sentence_target": "நான் வேலைக்குச் செல்கிறேன்.", "example_sentence_native": "මම වැඩට යනවා.", "example_sentence_phonetic": "Naan velaikku selkiren." },
+        { "id": "w3_3_2", "target": "அலுவலகம்", "phonetic": "aluvalakam", "native_meaning": "කාර්යාලය", "english": "Office", "example_sentence_target": "எனது அலுவலகம் நகரத்தில் உள்ளது.", "example_sentence_native": "මගේ ඔෆිස් එක තියෙන්නේ නගරයේ.", "example_sentence_phonetic": "Enathu aluvalakam nakaraththil ullathu." },
+        { "id": "w3_3_3", "target": "சந்திப்பு", "phonetic": "santhippu", "native_meaning": "රැස්වීම", "english": "Meeting", "example_sentence_target": "இன்று காலை ஒரு முக்கியமான சந்திப்பு உள்ளது.", "example_sentence_native": "අද උදේ වැදගත් මීටින් එකක් තියෙනවා.", "example_sentence_phonetic": "Indru kaalai oru mukkiyamaana santhippu ullathu." },
+        { "id": "w3_3_4", "target": "சக பணியாளர்", "phonetic": "saha paniyaalar", "native_meaning": "සම සේවකයා", "english": "Colleague", "example_sentence_target": "அவர் எனது சக பணியாளர்.", "example_sentence_native": "ඔහු මගේ സഹപ്രവർത്തകനാണ്.", "example_sentence_phonetic": "Avar enathu saha paniyaalar." },
+        { "id": "w3_3_5", "target": "முடி", "phonetic": "mudi", "native_meaning": "අවසන් කරන්න", "english": "Finish", "example_sentence_target": "நான் எனது வேலையை 5 மணிக்கு முடிப்பேன்.", "example_sentence_native": "මම මගේ වැඩ ඉවර කරන්නේ 5ට.", "example_sentence_phonetic": "Naan enathu velaiyai ainthu manikku mudippen." }
+      ],
+      "sentences": [
+        { "id": "s3_3_1", "target": "இன்று நான் மிகவும் பிஸியாக இருக்கிறேன்.", "native": "අද මම ගොඩක් කාර්යබහුලයි.", "phonetic": "Indru naan mikavum pisiyaaka irukkiren." },
+        { "id": "s3_3_2", "target": "சந்திப்பு எப்போது தொடங்கும்?", "native": "රැස්වීම පටන් ගන්නේ කීයටද?", "phonetic": "Santhippu eppothu thodangum?" },
+        { "id": "s3_3_3", "target": "நான் ஒரு மின்னஞ்சல் அனுப்ப வேண்டும்.", "native": "මට ඊමේල් එකක් යවන්න ඕන.", "phonetic": "Naan oru minnanjal anuppa vendum." }
       ],
       "dialogues": [
         {
           "id": "d3_3_1",
-          "context": "At the Doctor",
+          "context": "රැකියාව ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "இன்று வேலை எப்படி இருந்தது?", "native": "අද වැඩ කොහොමද?", "phonetic": "Indru velai eppadi irunthathu?" },
+            { "speaker": "B", "target": "மிகவும் பரபரப்பாக இருந்தது.", "native": "ගොඩක් කාර්යබහුල වුණා.", "phonetic": "Mikavum paraparappaaka irunthathu." }
           ]
         },
         {
           "id": "d3_3_2",
-          "context": "Formal At the Doctor",
+          "context": "රැස්වීමක් සැලසුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "ನಾಳೆ ஒரு சந்திப்பை ஏற்பாடு செய்யலாமா?", "native": "හෙට මීටින් එකක් දාගමුද?", "phonetic": "Naalai oru santhippai erpaadu seyyalaama?" },
+            { "speaker": "B", "target": "நிச்சயமாக, காலை 10 மணி எப்படி?", "native": "හරි, උදේ 10 හොඳද?", "phonetic": "Nichayamaaka, kaalai paththu mani eppadi?" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_3_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_3_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_3_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_3_1", "sentence": "நான் எனது வேலையை 5 மணிக்கு ___.", "answer": "முடிப்பேன்", "hint": "අවසන් කරනවා" }
         ],
         "matching": [
-          {
-            "id": "m3_3_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_3_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_3_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_3_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_3_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_3_1", "target": "அலுவலகம்", "native": "කාර්යාලය" },
+          { "id": "m3_3_2", "target": "சந்திப்பு", "native": "රැස්වීම" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_3_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_3_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_3_1", "scrambled": ["வேலைக்குச்", "நான்", "செல்கிறேன்"], "correct": "நான் வேலைக்குச் செல்கிறேன்", "nativeHint": "මම වැඩට යනවා." }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D3"
-      }
+      "cultural_note": "දෙමළ වැඩ පරිසරයන්හිදී, ජ්‍යෙෂ්ඨ සේවකයින්ට සහ කළමනාකරුවන්ට ගෞරවයෙන් සැලකීම වැදගත් වේ. 'සර්' හෝ 'මැඩම්' වැනි ගෞරවාන්විත වචන භාවිතය සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "'வேலை' (velai) හි 'ல' ශබ්දය, 'பல்' (pal) හි 'ல' ශබ්දයට වඩා මෘදුය. මේ දෙක අතර වෙනස පුරුදු වන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D3-TamilWork" }
     },
     {
       "week": 3,
       "day": 4,
-      "title": "Week 3 Day 4: Pharmacy",
-      "title_native": "Pharmacy",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 4 වන දිනය: සාප්පු සවාරි",
+      "title_native": "வாரம் 3, நாள் 4: ஷாப்பிங்",
+      "theme": "Shopping",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_4_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_4_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_4_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_4_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_4_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_4_1", "target": "கடை", "phonetic": "kadai", "native_meaning": "කඩේ", "english": "Shop/Store", "example_sentence_target": "நான் கடைக்குச் செல்கிறேன்.", "example_sentence_native": "මම කඩේට යනවා.", "example_sentence_phonetic": "Naan kadaikku selkiren." },
+        { "id": "w3_4_2", "target": "வாங்கு", "phonetic": "vaangu", "native_meaning": "මිලදී ගන්න", "english": "Buy", "example_sentence_target": "நான் சில காய்கறிகளை வாங்க வேண்டும்.", "example_sentence_native": "මට එළවළු ටිකක් ගන්න ඕන.", "example_sentence_phonetic": "Naan sila kaaykarikalai vaanga vendum." },
+        { "id": "w3_4_3", "target": "பணம்", "phonetic": "panam", "native_meaning": "මුදල්", "english": "Money", "example_sentence_target": "உங்களிடம் பணம் இருக்கிறதா?", "example_sentence_native": "ඔයා ගාව සල්ලි තියෙනවද?", "example_sentence_phonetic": "Unkalidam panam irukkiratha?" },
+        { "id": "w3_4_4", "target": "விலை", "phonetic": "vilai", "native_meaning": "මිල", "english": "Price", "example_sentence_target": "இதன் விலை என்ன?", "example_sentence_native": "මේකේ මිල කීයද?", "example_sentence_phonetic": "Ithan vilai enna?" },
+        { "id": "w3_4_5", "target": "சந்தை", "phonetic": "santhai", "native_meaning": "වෙළඳපොළ", "english": "Market", "example_sentence_target": "நான் காய்கறி சந்தைக்குச் செல்கிறேன்.", "example_sentence_native": "මම එළවළු මාර්කට් එකට යනවා.", "example_sentence_phonetic": "Naan kaaykari santhaikku selkiren." }
+      ],
+      "sentences": [
+        { "id": "s3_4_1", "target": "எனக்கு ஒரு கிலோ அரிசி வேண்டும்.", "native": "මට හාල් කිලෝ එකක් ඕන.", "phonetic": "Enakku oru kilo arisi vendum." },
+        { "id": "s3_4_2", "target": "கடன் அட்டை ஏற்கப்படுமா?", "native": "ක්‍රෙඩිට් කාඩ් භාරගන්නවද?", "phonetic": "Kadan attai erkappadumaa?" },
+        { "id": "s3_4_3", "target": "இது மிகவும் விலை உயர்ந்தது.", "native": "මේක ගොඩක් ගණන්.", "phonetic": "Ithu mikavum vilai uyarnthathu." }
       ],
       "dialogues": [
         {
           "id": "d3_4_1",
-          "context": "Pharmacy",
+          "context": "කඩයක මිල විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "வணக்கம், இதன் விலை என்ன?", "native": "ආයුබෝවන්, මේකේ මිල කීයද?", "phonetic": "Vanakam, ithan vilai enna?" },
+            { "speaker": "B", "target": "இது நூறு ரூபாய்.", "native": "මේක රුපියල් සීයයි.", "phonetic": "Ithu nooru roopaay." }
           ]
         },
         {
           "id": "d3_4_2",
-          "context": "Formal Pharmacy",
+          "context": "මිල අඩු කිරීමක් ගැන විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "ஏதேனும் தள்ளுபடி உள்ளதா?", "native": "වට්ටමක් තියෙනවද?", "phonetic": "Ethenum thallupadi ullathaa?" },
+            { "speaker": "B", "target": "மன்னிக்கவும், இது நிலையான விலை.", "native": "සමාවෙන්න, මේක නියමිත මිල.", "phonetic": "Mannikkavum, ithu nilaiyaana vilai." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_4_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_4_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_4_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_4_1", "sentence": "இதன் ___ என்ன?", "answer": "விலை", "hint": "මිල" }
         ],
         "matching": [
-          {
-            "id": "m3_4_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_4_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_4_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_4_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_4_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_4_1", "target": "பணம்", "native": "මුදල්" },
+          { "id": "m3_4_2", "target": "கடை", "native": "කඩේ" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_4_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_4_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_4_1", "scrambled": ["விலை", "என்ன", "இதன்"], "correct": "இதன் விலை என்ன", "nativeHint": "මේකේ මිල කීයද?" }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D4"
-      }
+      "cultural_note": "ඉන්දියාවේ සහ ශ්‍රී ලංකාවේ බොහෝ දේශීය වෙළඳපොළවල්වල සහ කුඩා කඩ සාප්පුවල මිල ගණන් කේවල් කිරීම සාමාන්‍ය දෙයකි. නමුත් සුපිරි වෙළඳසැල්වල මිල නියතය.",
+      "pronunciation_tip": "'வாங்கு' (vaangu) වැනි වචනවල 'ங' ශබ්දය ඉංග්‍රීසි 'sing' හි 'ng' ශබ්දයට සමාන වේ. එය නිවැරදිව උච්චාරණය කිරීම වැදගත් වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D4-TamilShopping" }
     },
     {
       "week": 3,
       "day": 5,
-      "title": "Week 3 Day 5: Emergency Phrases",
-      "title_native": "Emergency Phrases",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 5 වන දිනය: විවේකය",
+      "title_native": "வாரம் 3, நாள் 5: ஓய்வு",
+      "theme": "Leisure",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_5_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_5_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_5_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_5_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_5_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_5_1", "target": "திரைப்படம்", "phonetic": "thiraippadam", "native_meaning": "චිත්‍රපටිය", "english": "Movie", "example_sentence_target": "நாம் ஒரு திரைப்படம் பார்க்கலாமா?", "example_sentence_native": "අපි ෆිල්ම් එකක් බලමුද?", "example_sentence_phonetic": "Naam oru thiraippadam paarkkalaamaa?" },
+        { "id": "w3_5_2", "target": "இசை", "phonetic": "isai", "native_meaning": "සංගීතය", "english": "Music", "example_sentence_target": "எனக்கு இசை கேட்பது பிடிக்கும்.", "example_sentence_native": "මම සින්දු අහන්න ආසයි.", "example_sentence_phonetic": "Enakku isai ketpathu pidikkum." },
+        { "id": "w3_5_3", "target": "நண்பர்கள்", "phonetic": "nanparkal", "native_meaning": "මිතුරන්", "english": "Friends", "example_sentence_target": "நான் எனது நண்பர்களுடன் வெளியே செல்கிறேன்.", "example_sentence_native": "මම මගේ යාළුවොත් එක්ක එළියට යනවා.", "example_sentence_phonetic": "Naan enathu nanparkaludan veliye selkiren." },
+        { "id": "w3_5_4", "target": "பூங்கா", "phonetic": "poongaa", "native_meaning": "උද්‍යානය", "english": "Park", "example_sentence_target": "குழந்தைகள் பூங்காவில் விளையாடுகிறார்கள்.", "example_sentence_native": "ළමයි පාර්ක් එකේ සෙල්ලම් කරනවා.", "example_sentence_phonetic": "Kulanthaikal poongaavil vilaiyaadukiraarkal." },
+        { "id": "w3_5_5", "target": "விளையாடு", "phonetic": "vilaiyaadu", "native_meaning": "සෙල්ලම් කරන්න", "english": "Play", "example_sentence_target": "நாம் கிரிக்கெட் விளையாடலாமா?", "example_sentence_native": "අපි ක්‍රිකට් ගහමුද?", "example_sentence_phonetic": "Naam cricket vilaiyaadalaamaa?" }
+      ],
+      "sentences": [
+        { "id": "s3_5_1", "target": "உங்களுக்குப் பிடித்த பாடல் எது?", "native": "ඔයාගෙ කැමතිම සින්දුව මොකක්ද?", "phonetic": "Unkalukku pidiththa paadal ethu?" },
+        { "id": "s3_5_2", "target": "நான் ஒரு புத்தகம் படிக்க விரும்புகிறேன்.", "native": "මට පොතක් කියවන්න ආසයි.", "phonetic": "Naan oru puththakam padikka virumbukiren." },
+        { "id": "s3_5_3", "target": "வார இறுதியில் உங்கள் திட்டம் என்ன?", "native": "සති අන්තෙට ඔයාගෙ ප්ලෑන් මොකක්ද?", "phonetic": "Vaara iruthiyil unkal thittam enna?" }
       ],
       "dialogues": [
         {
           "id": "d3_5_1",
-          "context": "Emergency Phrases",
+          "context": "චිත්‍රපටියක් බැලීමට සැලසුම් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "இன்று மாலை ஒரு திரைப்படம் பார்க்கலாமா?", "native": "අද හවස ෆිල්ම් එකක් බලමුද?", "phonetic": "Indru maalai oru thiraippadam paarkkalaamaa?" },
+            { "speaker": "B", "target": "நல்ல யோசனை! எந்த திரைப்படம்?", "native": "හොඳ අදහසක්! මොන ෆිල්ම් එකද?", "phonetic": "Nalla yosanai! Entha thiraippadam?" }
           ]
         },
         {
           "id": "d3_5_2",
-          "context": "Formal Emergency Phrases",
+          "context": "මිතුරෙකුට ආරාධනා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "நாளை நீங்கள் ஓய்வாக இருக்கிறீர்களா?", "native": "හෙට ඔයා free ද?", "phonetic": "Naalai neengal oyvaaka irukkireerkala?" },
+            { "speaker": "B", "target": "ஆம், ஏன் கேட்கிறீர்கள்?", "native": "ඔව්, ඇයි ඇහුවෙ?", "phonetic": "Aam, en ketkireerkal?" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_5_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_5_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_5_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_5_1", "sentence": "எனக்கு ___ கேட்பது பிடிக்கும்.", "answer": "இசை", "hint": "සංගීතය" }
         ],
         "matching": [
-          {
-            "id": "m3_5_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_5_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_5_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_5_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_5_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_5_1", "target": "நண்பர்கள்", "native": "මිතුරන්" },
+          { "id": "m3_5_2", "target": "பூங்கா", "native": "උද්‍යානය" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_5_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_5_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_5_1", "scrambled": ["ஒரு", "பார்க்கலாமா", "திரைப்படம்", "நாம்"], "correct": "நாம் ஒரு திரைப்படம் பார்க்கலாமா", "nativeHint": "අපි ෆිල්ම් එකක් බලමුද?" }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D5"
-      }
+      "cultural_note": "දෙමළ ජනතාව අතර ක්‍රිකට් ඉතා ජනප්‍රිය ක්‍රීඩාවකි. මිතුරන් සමඟ සති අන්තයේ ක්‍රිකට් ක්‍රීඩා කිරීම සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "'நண்பர்கள்' (nanparkal) වචනයේ 'ண' සහ 'ன' ශබ්ද අතර වෙනස හඳුනා ගන්න. 'ண' නාසික වන අතර 'ன' එසේ නොවේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D5-TamilLeisure" }
     },
     {
       "week": 3,
       "day": 6,
-      "title": "Week 3 Day 6: Mental Health",
-      "title_native": "Mental Health",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 6 වන දිනය: සමාජගත වීම",
+      "title_native": "வாரம் 3, நாள் 6: சமூகமயமாதல்",
+      "theme": "Socializing",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_6_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_6_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_6_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_6_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_6_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_6_1", "target": "பேசு", "phonetic": "pesu", "native_meaning": "කතා කරන්න", "english": "Speak/Talk", "example_sentence_target": "நீங்கள் தமிழ் பேசுவீர்களா?", "example_sentence_native": "ඔයා දෙමළ කතා කරනවද?", "example_sentence_phonetic": "Neengal thamil pesuveerkala?" },
+        { "id": "w3_6_2", "target": "சிரி", "phonetic": "siri", "native_meaning": "හිනාවෙන්න", "english": "Laugh", "example_sentence_target": "அவரது நகைச்சுவைக்கு அனைவரும் சிரித்தார்கள்.", "example_sentence_native": "ඔහුගේ විහිළුවට හැමෝම හිනා වුණා.", "example_sentence_phonetic": "Avarathu nakaichchuvaikku anaivarum siritthaarkal." },
+        { "id": "w3_6_3", "target": "உதவி", "phonetic": "uthavi", "native_meaning": "උදව්", "english": "Help", "example_sentence_target": "உங்களுக்கு உதவி தேவையா?", "example_sentence_native": "ඔයාට උදව්වක් ඕනද?", "example_sentence_phonetic": "Unkalukku uthavi thevaiyaa?" },
+        { "id": "w3_6_4", "target": "கதை", "phonetic": "kathai", "native_meaning": "කතාව", "english": "Story", "example_sentence_target": "நான் ஒரு கதை சொல்கிறேன்.", "example_sentence_native": "මම කතාවක් කියනවා.", "example_sentence_phonetic": "Naan oru kathai solkiren." },
+        { "id": "w3_6_5", "target": "கேள்வி", "phonetic": "kelvi", "native_meaning": "ප්‍රශ්නය", "english": "Question", "example_sentence_target": "எனக்கு ஒரு கேள்வி இருக்கிறது.", "example_sentence_native": "මට ප්‍රශ්නයක් තියෙනවා.", "example_sentence_phonetic": "Enakku oru kelvi irukkirathu." }
+      ],
+      "sentences": [
+        { "id": "s3_6_1", "target": "நாம் சிறிது நேரம் பேசலாமா?", "native": "අපි ටිකක් කතා කරමුද?", "phonetic": "Naam sirithu neram pesalaamaa?" },
+        { "id": "s3_6_2", "target": "தயவுசெய்து எனக்கு உதவ முடியுமா?", "native": "කරුණාකර මට උදව් කරන්න පුලුවන්ද?", "phonetic": "Thayavuseithu enakku uthava mudiyumaa?" },
+        { "id": "s3_6_3", "target": "நீங்கள் சொல்வது எனக்குப் புரிகிறது.", "native": "මට ඔයා කියන දේ තේරෙනවා.", "phonetic": "Neengal solvathu enakku purikirathu." }
       ],
       "dialogues": [
         {
           "id": "d3_6_1",
-          "context": "Mental Health",
+          "context": "උදව් ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "மன்னிக்கவும், எனக்கு ஒரு உதவி வேண்டும்.", "native": "සමාවෙන්න, මට උදව්වක් ඕන.", "phonetic": "Mannikkavum, enakku oru uthavi vendum." },
+            { "speaker": "B", "target": "சொல்லுங்கள், நான் என்ன செய்ய வேண்டும்?", "native": "කියන්න, මම මොකද කරන්න ඕන?", "phonetic": "Sollungal, naan enna seyya vendum?" }
           ]
         },
         {
           "id": "d3_6_2",
-          "context": "Formal Mental Health",
+          "context": "සාමාන්‍ය කතාබහක්.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "உங்கள் நாள் எப்படி இருந்தது?", "native": "ඔයාගෙ දවස කොහොමද ගෙවුනේ?", "phonetic": "Unkal naal eppadi irunthathu?" },
+            { "speaker": "B", "target": "நன்றாக இருந்தது, நன்றி. உங்களுடையது?", "native": "හොඳින් ගෙවුනා, ස්තූතියි. ඔයාගෙ?", "phonetic": "Nandraaka irunthathu, nandri. Unkalutaiyathu?" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_6_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_6_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_6_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_6_1", "sentence": "உங்களுக்கு ___ தேவையா?", "answer": "உதவி", "hint": "උදව්" }
         ],
         "matching": [
-          {
-            "id": "m3_6_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_6_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_6_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_6_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_6_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_6_1", "target": "கேள்வி", "native": "ප්‍රශ්නය" },
+          { "id": "m3_6_2", "target": "பேசு", "native": "කතා කරන්න" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_6_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_6_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_6_1", "scrambled": ["ஒரு", "இருக்கிறது", "எனக்கு", "கேள்வி"], "correct": "எனக்கு ஒரு கேள்வி இருக்கிறது", "nativeHint": "මට ප්‍රශ්නයක් තියෙනවා." }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D6"
-      }
+      "cultural_note": "දෙමළ කතා කරන ප්‍රජාවන්හිදී, අමුත්තන්ට තේ හෝ කෝපි පිරිනැමීම සාමාන්‍ය ආගන්තුක සත්කාරයකි. එය ප්‍රතික්ෂේප කිරීම අගෞරවයක් ලෙස සැලකිය හැකිය.",
+      "pronunciation_tip": "'கேள்வி' (kelvi) හි 'ள' ශබ්දය උච්චාරණය කිරීමේදී දිව මුඛයේ ඉහල කොටසට ගෙන යා යුතුය. එය ඉංග්‍රීසි 'l' ශබ්දයට වඩා වෙනස්ය.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D6-TamilSocial" }
     },
     {
       "week": 3,
       "day": 7,
-      "title": "Week 3 Day 7: Health Culture",
-      "title_native": "Health Culture",
-      "theme": "Health & Sickness",
+      "title": "3 වන සතිය, 7 වන දිනය: සවස සහ නින්ද",
+      "title_native": "வாரம் 3, நாள் 7: மாலை மற்றும் உறக்கம்",
+      "theme": "Evening and Bedtime",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w3_7_1",
-          "target": "மருத்துவர்",
-          "phonetic": "மருத்துவர்",
-          "native_meaning": "වෛද්‍යවරයා",
-          "english": "Doctor",
-          "example_sentence_target": "மருத்துவர்.",
-          "example_sentence_native": "වෛද්‍යවරයා."
-        },
-        {
-          "id": "w3_7_2",
-          "target": "மருத்துவமனை",
-          "phonetic": "மருத்துவமனை",
-          "native_meaning": "රෝහල",
-          "english": "Hospital",
-          "example_sentence_target": "மருத்துவமனை.",
-          "example_sentence_native": "රෝහල."
-        },
-        {
-          "id": "w3_7_3",
-          "target": "வலி",
-          "phonetic": "வலி",
-          "native_meaning": "වේදනාව",
-          "english": "Pain",
-          "example_sentence_target": "வலி.",
-          "example_sentence_native": "වේදනාව."
-        },
-        {
-          "id": "w3_7_4",
-          "target": "மருந்து",
-          "phonetic": "மருந்து",
-          "native_meaning": "බෙහෙත",
-          "english": "Medicine",
-          "example_sentence_target": "மருந்து.",
-          "example_sentence_native": "බෙහෙත."
-        },
-        {
-          "id": "w3_7_5",
-          "target": "நோய்வாய்ப்பட்ட",
-          "phonetic": "நோய்வாய்ப்பட்ட",
-          "native_meaning": "අසනීප",
-          "english": "Sick",
-          "example_sentence_target": "நோய்வாய்ப்பட்ட.",
-          "example_sentence_native": "අසනීප."
-        }
+        { "id": "w3_7_1", "target": "மாலை", "phonetic": "maalai", "native_meaning": "සවස", "english": "Evening", "example_sentence_target": "மாலை வணக்கம்.", "example_sentence_native": "සුබ සන්ධ්‍යාවක්.", "example_sentence_phonetic": "Maalai vanakkam." },
+        { "id": "w3_7_2", "target": "தூங்கு", "phonetic": "thoongu", "native_meaning": "නිදාගන්න", "english": "Sleep", "example_sentence_target": "நான் பத்து மணிக்கு தூங்குவேன்.", "example_sentence_native": "මම දහයට නිදාගන්නවා.", "example_sentence_phonetic": "Naan paththu manikku thoonguven." },
+        { "id": "w3_7_3", "target": "படுக்கை", "phonetic": "padukkai", "native_meaning": "ඇඳ", "english": "Bed", "example_sentence_target": "நான் எனது படுக்கைக்குச் செல்கிறேன்.", "example_sentence_native": "මම මගේ ඇඳට යනවා.", "example_sentence_phonetic": "Naan enathu padukkaikku selkiren." },
+        { "id": "w3_7_4", "target": "கனவு", "phonetic": "kanavu", "native_meaning": "සිහිනය", "english": "Dream", "example_sentence_target": "நான் ஒரு நல்ல கனவு கண்டேன்.", "example_sentence_native": "මම හොඳ හීනයක් දැක්කා.", "example_sentence_phonetic": "Naan oru nalla kanavu kanden." },
+        { "id": "w3_7_5", "target": "இனிய இரவு", "phonetic": "iniya iravu", "native_meaning": "සුභ රාත්‍රියක්", "english": "Good night", "example_sentence_target": "இனிய இரவு, நாளை சந்திப்போம்.", "example_sentence_native": "සුභ රාත්‍රියක්, හෙට හමුවෙමු.", "example_sentence_phonetic": "Iniya iravu, naalai santhippom." }
+      ],
+      "sentences": [
+        { "id": "s3_7_1", "target": "எனக்கு தூக்கம் வருகிறது.", "native": "මට නින්දමතයි.", "phonetic": "Enakku thookkam varukirathu." },
+        { "id": "s3_7_2", "target": "விளக்கை அணைக்கவும்.", "native": "ලයිට් එක ඕෆ් කරන්න.", "phonetic": "Vilakkai anaikkavum." },
+        { "id": "s3_7_3", "target": "காலையில் சீக்கிரம் எழ வேண்டும்.", "native": "උදේ ඉක්මනට නැගිටින්න ඕන.", "phonetic": "Kaalaiyil seekkiram ela vendum." }
       ],
       "dialogues": [
         {
           "id": "d3_7_1",
-          "context": "Health Culture",
+          "context": "නින්දට යාම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவர்!",
-              "native": "වෛද්‍යවරයා!",
-              "phonetic": "மருத்துவர்"
-            },
-            {
-              "speaker": "B",
-              "target": "மருத்துவர்! மருத்துவமனை!",
-              "native": "වෛද්‍යවරයා! රෝහල!",
-              "phonetic": "மருத்துவர் மருத்துவமனை"
-            },
-            {
-              "speaker": "A",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            }
+            { "speaker": "A", "target": "நான் தூங்கப் போகிறேன். இனிய இரவு.", "native": "මම නිදාගන්න යනවා. සුභ රාත්‍රියක්.", "phonetic": "Naan thoongap pokiren. Iniya iravu." },
+            { "speaker": "B", "target": "இனிய இரவு.", "native": "සුභ රාත්‍රියක්.", "phonetic": "Iniya iravu." }
           ]
         },
         {
           "id": "d3_7_2",
-          "context": "Formal Health Culture",
+          "context": "නින්දමත ගැන කතා කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "மருத்துவமனை!",
-              "native": "රෝහල!",
-              "phonetic": "மருத்துவமனை"
-            },
-            {
-              "speaker": "B",
-              "target": "வலி!",
-              "native": "වේදනාව!",
-              "phonetic": "வலி"
-            },
-            {
-              "speaker": "A",
-              "target": "மருந்து! நோய்வாய்ப்பட்ட!",
-              "native": "බෙහෙත! අසනීප!",
-              "phonetic": "மருந்து நோய்வாய்ப்பட்ட"
-            }
+            { "speaker": "A", "target": "நீங்கள் சோர்வாகத் தெரிகிறீர்கள்.", "native": "ඔයාට මහන්සි පාටයි.", "phonetic": "Neengal sorvaakath therikireerkal." },
+            { "speaker": "B", "target": "ஆம், எனக்கு தூக்கம் வருகிறது.", "native": "ඔව්, මට නින්දමතයි.", "phonetic": "Aam, enakku thookkam varukirathu." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_7_1",
-            "sentence": "___ means 'Doctor' in Tamil",
-            "answer": "மருத்துவர்",
-            "hint": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "fb3_7_2",
-            "sentence": "___ means 'Hospital' in Tamil",
-            "answer": "மருத்துவமனை",
-            "hint": "රෝහල"
-          },
-          {
-            "id": "fb3_7_3",
-            "sentence": "___ means 'Pain' in Tamil",
-            "answer": "வலி",
-            "hint": "වේදනාව"
-          }
+          { "id": "fb3_7_1", "sentence": "நான் பத்து மணிக்கு ___.", "answer": "தூங்குவேன்", "hint": "නිදාගන්නවා" }
         ],
         "matching": [
-          {
-            "id": "m3_7_1",
-            "target": "மருத்துவர்",
-            "native": "වෛද්‍යවරයා"
-          },
-          {
-            "id": "m3_7_2",
-            "target": "மருத்துவமனை",
-            "native": "රෝහල"
-          },
-          {
-            "id": "m3_7_3",
-            "target": "வலி",
-            "native": "වේදනාව"
-          },
-          {
-            "id": "m3_7_4",
-            "target": "மருந்து",
-            "native": "බෙහෙත"
-          },
-          {
-            "id": "m3_7_5",
-            "target": "நோய்வாய்ப்பட்ட",
-            "native": "අසනීප"
-          }
+          { "id": "m3_7_1", "target": "இனிய இரவு", "native": "සුභ රාත්‍රියක්" },
+          { "id": "m3_7_2", "target": "படுக்கை", "native": "ඇඳ" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_7_1",
-            "question": "What does 'மருத்துவர்' mean?",
-            "options": [
-              "වෛද්‍යවරයා",
-              "රෝහල",
-              "වේදනාව",
-              "බෙහෙත"
-            ],
-            "correct": 0,
-            "explanation": "'மருத்துவர்' means වෛද්‍යවරයා in Sinhala."
-          },
-          {
-            "id": "mc3_7_2",
-            "question": "How do you say 'රෝහල' in Tamil?",
-            "options": [
-              "மருத்துவர்",
-              "மருத்துவமனை",
-              "வலி",
-              "மருந்து"
-            ],
-            "correct": 1,
-            "explanation": "'மருத்துவமனை' means රෝහල."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_7_1", "scrambled": ["இரவு", "இனிய"], "correct": "இனிய இரவு", "nativeHint": "සුභ රාත්‍රියක්" }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 3 focus: Health & Sickness.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D7"
-      }
+      "cultural_note": "පවුලේ සාමාජිකයන්ට, විශේෂයෙන්ම දරුවන්ට, නින්දට යාමට පෙර 'இனிய இரவு' (සුභ රාත්‍රියක්) කීම සහ ඔවුන්ට ආශීර්වාද කිරීම සාමාන්‍ය සිරිතකි.",
+      "pronunciation_tip": "'தூங்கு' (thoongu) වැනි වචනවල 'ங' ශබ්දය ඉංග්‍රීසි 'sing' හි 'ng' ශබ්දයට සමාන වේ. මෙම නාසික ශබ්දය පුරුදු වීම වැදගත් වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W3D7-TamilEvening" }
     }
   ]
 }
