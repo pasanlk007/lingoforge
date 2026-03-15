@@ -1,3 +1,4 @@
+
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -7,7 +8,7 @@ export const translations = {
     languagesAvailable: "Languages Available",
     heroTitle: "Developing Language Skills for Migrant Workers",
     heroSub: "Structured language survival paths for migrant workers.",
-    startBtn: "Start My Journey - Free",
+    startBtn: "Start My Journey - Free trial",
     viewPaths: "View Available Languages",
     journeyTitle: "Your Journey Starts Here",
     journeyLeaving: "Leaving home",
@@ -15,6 +16,10 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -53,6 +58,8 @@ export const translations = {
       feat1: "Week 1 of Survival Path",
       feat2: "5 new words per day",
       feat3: "Basic exercises",
+      feat4: "AI lesson generation",
+      feat5: "Community support",
       btn: "Start for Free"
     },
     weeklyPlan: {
@@ -198,7 +205,7 @@ export const translations = {
     languagesAvailable: "භාෂා ඇත",
     heroTitle: "විදෙස්ගත ශ්‍රමිකයන්ගේ භාෂා කුසලතා වර්ධනය",
     heroSub: "විදෙස්ගත ශ්‍රමිකයන් සඳහා ව්‍යුහගත භාශා ඉගැන්වීම් සැකසුම",
-    startBtn: "start my journey - Free trial",
+    startBtn: "start my journey -Fre trial",
     viewPaths: "පවතින භාෂා බලන්න",
     journeyTitle: "ඔබේ ගමන මෙතනින් ආරම්භ වේ",
     journeyLeaving: "නිවස හැරයාම",
@@ -206,6 +213,10 @@ export const translations = {
     journeyWorking: "වැඩ කිරීම",
     journeySpeaking: "කතා කිරීම",
     journeyBelonging: "අයිති වීම",
+    redesign_title: "නිහඬ විදේශිකයෙක් නොවන්න.",
+    redesign_subtitle: "දිනකට මිනිත්තු 10ක් — දින 84කින් විදේශ රටක විශ්වාසයෙන් කතා කරන්න.",
+    redesign_cta_text: "විදේශ රටක ජීවිතය පහසු කරන භාෂාව.",
+    redesign_cta_button: "Start here",
     scenario1Title: "හදිසි අවස්ථාවක්",
     scenario1Desc: "ඔබේ දරුවා අසනීපයි. ඔබට වෛද්‍යවරයෙකුට රෝග ලක්ෂණ පැහැදිලි කිරීමට අවශ්‍යයි. ඔබ වචන දන්නවාද?",
     scenario1Btn: "වෛද්‍ය වචන ඉගෙන ගන්න",
@@ -244,6 +255,8 @@ export const translations = {
       feat1: "පැවැත්මේ මාවතේ 1 වන සතිය",
       feat2: "දිනකට නව වචන 5 ක්",
       feat3: "මූලික අභ්‍යාස",
+      feat4: "AI පාඩම් උත්පාදනය",
+      feat5: "ප්‍රජා සහාය",
       btn: "නොමිලේ අරඹන්න"
     },
     weeklyPlan: {
@@ -397,6 +410,10 @@ export const translations = {
     journeyWorking: "काम करना",
     journeySpeaking: "बोलना",
     journeyBelonging: "अपनापन",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "आपातकाल",
     scenario1Desc: "आपका बच्चा बीमार है। आपको डॉक्टर को लक्षण समझाने की ज़रूरत है। क्या आप शब्द जानते हैं?",
     scenario1Btn: "चिकित्सा शब्दावली सीखें",
@@ -435,6 +452,8 @@ export const translations = {
       feat1: "जीवन रक्षा पथ का सप्ताह 1",
       feat2: "प्रति दिन 5 नए शब्द",
       feat3: "बुनियादी अभ्यास",
+      feat4: "एआई पाठ निर्माण",
+      feat5: "सामुदायिक समर्थन",
       btn: "मुफ्त में शुरू करें"
     },
     weeklyPlan: {
@@ -588,6 +607,10 @@ export const translations = {
     journeyWorking: "کام کرنا",
     journeySpeaking: "بولنا",
     journeyBelonging: "اپنانا",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "ہنگامی صورتحال",
     scenario1Desc: "آپ کا بچہ بیمار ہے۔ آپ کو ڈاکٹر کو علامات بتانے کی ضرورت ہے۔ کیا آپ کو الفاظ آتے ہیں؟",
     scenario1Btn: "طبی الفاظ سیکھیں",
@@ -626,6 +649,8 @@ export const translations = {
       feat1: "بقا کے راستے کا پہلا ہفتہ",
       feat2: "روزانہ 5 نئے الفاظ",
       feat3: "بنیادی مشقیں",
+      feat4: "اے آئی سبق کی نسل",
+      feat5: "کمیونٹی سپورٹ",
       btn: "مفت میں شروع کریں"
     },
     weeklyPlan: {
@@ -779,6 +804,10 @@ export const translations = {
     journeyWorking: "কাজ করা",
     journeySpeaking: "কথা বলা",
     journeyBelonging: "একাত্ম হওয়া",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "জরুরী অবস্থা",
     scenario1Desc: "আপনার সন্তান অসুস্থ। আপনাকে একজন ডাক্তারকে উপসর্গ ব্যাখ্যা করতে হবে। আপনি কি শব্দগুলো জানেন?",
     scenario1Btn: "চিকিৎসা শব্দভান্ডার শিখুন",
@@ -817,6 +846,8 @@ export const translations = {
       feat1: "বেঁচে থাকার পথের সপ্তাহ 1",
       feat2: "প্রতিদিন 5টি নতুন শব্দ",
       feat3: "মৌলিক অনুশীলন",
+      feat4: "এআই পাঠ তৈরি",
+      feat5: "সম্প্রদায় সমর্থন",
       btn: "বিনামূল্যে শুরু করুন"
     },
     weeklyPlan: {
@@ -970,6 +1001,10 @@ export const translations = {
     journeyWorking: "काम गर्दै",
     journeySpeaking: "बोल्दै",
     journeyBelonging: "सम्बन्धित",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "आपतकालिन",
     scenario1Desc: "तपाईंको बच्चा बिरामी छ। तपाईंले डाक्टरलाई लक्षणहरू व्याख्या गर्न आवश्यक छ। के तपाईंलाई शब्दहरू थाहा छ?",
     scenario1Btn: "चिकित्सा शब्दावली सिक्नुहोस्",
@@ -1008,6 +1043,8 @@ export const translations = {
       feat1: "जीवन रक्षा मार्गको हप्ता १",
       feat2: "प्रति दिन ५ नयाँ शब्दहरू",
       feat3: "आधारभूत अभ्यासहरू",
+      feat4: "एआई पाठ उत्पादन",
+      feat5: "सामुदायिक समर्थन",
       btn: "नि:शुल्क सुरु गर्नुहोस्"
     },
     weeklyPlan: {
@@ -1161,6 +1198,10 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1199,6 +1240,8 @@ export const translations = {
       feat1: "Week 1 of Survival Path",
       feat2: "5 new words per day",
       feat3: "Basic exercises",
+      feat4: "AI lesson generation",
+      feat5: "Community support",
       btn: "Start for Free"
     },
     weeklyPlan: {
@@ -1352,6 +1395,10 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1390,6 +1437,8 @@ export const translations = {
       feat1: "Week 1 of Survival Path",
       feat2: "5 new words per day",
       feat3: "Basic exercises",
+      feat4: "AI lesson generation",
+      feat5: "Community support",
       btn: "Start for Free"
     },
     weeklyPlan: {
@@ -1543,6 +1592,10 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1581,6 +1634,8 @@ export const translations = {
       feat1: "Week 1 of Survival Path",
       feat2: "5 new words per day",
       feat3: "Basic exercises",
+      feat4: "AI lesson generation",
+      feat5: "Community support",
       btn: "Start for Free"
     },
     weeklyPlan: {
@@ -1734,6 +1789,10 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1772,6 +1831,8 @@ export const translations = {
       feat1: "Week 1 of Survival Path",
       feat2: "5 new words per day",
       feat3: "Basic exercises",
+      feat4: "AI lesson generation",
+      feat5: "Community support",
       btn: "Start for Free"
     },
     weeklyPlan: {
@@ -1925,6 +1986,10 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
+    redesign_title: "Don't be a silent foreigner.",
+    redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
+    redesign_cta_text: "The language that makes life easier in a foreign country.",
+    redesign_cta_button: "Start here",
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1963,6 +2028,8 @@ export const translations = {
       feat1: "Week 1 of Survival Path",
       feat2: "5 new words per day",
       feat3: "Basic exercises",
+      feat4: "AI lesson generation",
+      feat5: "Community support",
       btn: "Start for Free"
     },
     weeklyPlan: {

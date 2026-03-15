@@ -8,6 +8,7 @@ import Link from "next/link";
 import { 
   Languages, 
   ChevronDown, 
+  ChevronRight,
   Globe, 
   PlaneTakeoff, 
   Home, 
@@ -167,61 +168,34 @@ export default function LandingPage() {
               <CardContent>
                 <div className="flex justify-between items-center text-center text-xs sm:text-sm mb-12 px-2">
                   {[
-                    { icon: <PlaneTakeoff/>, label: t.journeyLeaving },
-                    { icon: <Home/>, label: t.journeyArriving },
-                    { icon: <Briefcase/>, label: t.journeyWorking },
-                    { icon: <MessageSquare/>, label: t.journeySpeaking },
-                    { icon: <Award/>, label: t.journeyBelonging },
+                    { icon: <PlaneTakeoff/> },
+                    { icon: <Home/> },
+                    { icon: <Briefcase/> },
+                    { icon: <MessageSquare/> },
+                    { icon: <Award/> },
                   ].map((item, index) => (
-                    <React.Fragment key={item.label}>
+                    <React.Fragment key={index}>
                       <div className="flex flex-col items-center gap-2 w-1/5">
                         <div className="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-cyan-900/50 border-2 border-cyan-500/50 text-cyan-400">
                           {React.cloneElement(item.icon, { className: 'w-6 h-6 sm:w-8 sm:h-8' })}
                         </div>
-                        <p className="font-semibold">{item.label}</p>
                       </div>
-                      {index < 4 && <div className="flex-1 h-px bg-slate-600 hidden sm:block"></div>}
+                      {index < 4 && <div className="flex-1 h-px bg-slate-600 hidden sm:block self-center"></div>}
                     </React.Fragment>
                   ))}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                   <Card className="bg-slate-800 border-slate-700">
-                     <CardHeader>
-                       <div className="mx-auto w-12 h-12 rounded-full bg-red-900/50 flex items-center justify-center text-red-400"><Stethoscope/></div>
-                       <CardTitle>{t.scenario1Title}</CardTitle>
-                       <CardDescription className="text-slate-400">{t.scenario1Desc}</CardDescription>
-                     </CardHeader>
-                     <CardContent>
-                        <Button variant="link" asChild className="text-cyan-400">
-                            <Link href="/dashboard">{t.scenario1Btn}</Link>
+                <div className="text-center border-t border-slate-700 pt-12">
+                    <h2 className="font-headline text-3xl font-bold text-white">{t.redesign_title}</h2>
+                    <p className="mt-2 text-lg text-slate-300 max-w-2xl mx-auto">{t.redesign_subtitle}</p>
+                    <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                        <p className="font-semibold text-lg text-slate-200">{t.redesign_cta_text}</p>
+                        <Button asChild className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold animate-pulse">
+                            <Link href="/dashboard">
+                                {t.redesign_cta_button} <ChevronRight className="ml-2 h-5 w-5" />
+                            </Link>
                         </Button>
-                     </CardContent>
-                   </Card>
-                   <Card className="bg-slate-800 border-slate-700">
-                     <CardHeader>
-                        <div className="mx-auto w-12 h-12 rounded-full bg-green-900/50 flex items-center justify-center text-green-400"><Landmark/></div>
-                       <CardTitle>{t.scenario2Title}</CardTitle>
-                       <CardDescription className="text-slate-400">{t.scenario2Desc}</CardDescription>
-                     </CardHeader>
-                     <CardContent>
-                        <Button variant="link" asChild className="text-cyan-400">
-                            <Link href="/dashboard">{t.scenario2Btn}</Link>
-                        </Button>
-                     </CardContent>
-                   </Card>
-                   <Card className="bg-slate-800 border-slate-700">
-                     <CardHeader>
-                       <div className="mx-auto w-12 h-12 rounded-full bg-yellow-900/50 flex items-center justify-center text-yellow-400"><Bus/></div>
-                       <CardTitle>{t.scenario3Title}</CardTitle>
-                       <CardDescription className="text-slate-400">{t.scenario3Desc}</CardDescription>
-                     </CardHeader>
-                     <CardContent>
-                        <Button variant="link" asChild className="text-cyan-400">
-                            <Link href="/dashboard">{t.scenario3Btn}</Link>
-                        </Button>
-                     </CardContent>
-                   </Card>
+                    </div>
                 </div>
               </CardContent>
             </Card>
