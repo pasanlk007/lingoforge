@@ -381,6 +381,7 @@ export default function LandingPage() {
                       <li><Link href="/pricing" className="text-slate-400 hover:text-white">{t.footerLinks.pricing}</Link></li>
                       <li><Link href="/privacy" className="text-slate-400 hover:text-white">{t.footerLinks.privacy}</Link></li>
                       <li><Link href="/terms" className="text-slate-400 hover:text-white">{t.footerLinks.terms}</Link></li>
+                      <li><a href="mailto:support@lingoforge.app" className="text-slate-400 hover:text-white">Contact Us</a></li>
                   </ul>
               </div>
                <div>

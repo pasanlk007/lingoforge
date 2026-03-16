@@ -181,9 +181,10 @@ export default function PricingPage() {
                 </div>
             </div>
             
-            <div className="mt-16 text-center text-muted-foreground text-sm">
+            <div className="mt-16 text-center text-muted-foreground text-sm space-y-1">
                 <p>Prices are in USD. Your payment provider will convert the currency for you.</p>
-                <p>For any questions, please <Link href="#" className="underline hover:text-foreground">contact support</Link>.</p>
+                <p>For any questions, please <a href="mailto:support@lingoforge.app" className="underline hover:text-foreground">contact support</a>.</p>
+                <p className="pt-2 italic">Please note: Payment buttons are for demonstration purposes only and are not connected to a live payment system.</p>
             </div>
 
           </div>

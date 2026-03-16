@@ -278,7 +278,7 @@ export default function PathsPage() {
                 <ul className="mt-4 space-y-2">
                   <li><Link href="/privacy" className="text-muted-foreground hover:text-foreground">Privacy</Link></li>
                   <li><Link href="/terms" className="text-muted-foreground hover:text-foreground">Terms</Link></li>
-                  <li><Link href="#" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
+                  <li><a href="mailto:support@lingoforge.app" className="text-muted-foreground hover:text-foreground">Contact</a></li>
                 </ul>
               </div>
             </div>

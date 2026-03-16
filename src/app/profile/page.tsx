@@ -7,19 +7,32 @@ import { doc } from 'firebase/firestore';
 import { useDoc } from '@/firebase/firestore/use-doc';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { UserProfile } from '@/lib/types';
 import { Navigation } from '@/components/Navigation';
 import type { User } from 'firebase/auth';
-import { updateProfile } from 'firebase/auth';
-import { updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
+import { updateProfile, deleteUser } from 'firebase/auth';
+import { deleteDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { Pencil } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { useToast } from '@/hooks/use-toast';
+
 
 function ProfilePageLoading() {
   return (
@@ -71,6 +84,7 @@ function ProfileContent({ user }: { user: User }) {
   const auth = useAuth();
   const firestore = useFirestore();
   const router = useRouter();
+  const { toast } = useToast();
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -83,6 +97,38 @@ function ProfileContent({ user }: { user: User }) {
     if (!auth) return;
     auth.signOut();
     router.push('/');
+  };
+
+  const handleDeleteAccount = async () => {
+    if (!auth?.currentUser || !userProfileRef) {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: "Could not delete account. User not found.",
+      });
+      return;
+    }
+    
+    // First, delete Firestore data. This only deletes the main profile.
+    // A complete solution would use a Cloud Function to delete all user-related data.
+    deleteDocumentNonBlocking(userProfileRef);
+
+    // Then, delete the user from Firebase Auth
+    try {
+      await deleteUser(auth.currentUser);
+      toast({
+        title: "Account Deleted",
+        description: "Your account and all associated data have been deleted.",
+      });
+      router.push('/');
+    } catch (error: any) {
+      console.error("Error deleting account:", error);
+      toast({
+        variant: "destructive",
+        title: "Deletion Failed",
+        description: `This is a sensitive operation that requires a recent login. Please log out, log back in, and try again. Error: ${error.message}`,
+      });
+    }
   };
 
   const handleUpdateProfilePicture = (newPhotoURL: string) => {
@@ -149,7 +195,7 @@ function ProfileContent({ user }: { user: User }) {
                 </div>
               </div>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 pt-4">
                 <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
                         <p className="font-semibold text-muted-foreground">XP Points</p>
@@ -169,9 +215,31 @@ function ProfileContent({ user }: { user: User }) {
                     </div>
                 </div>
 
-              <Button variant="outline" onClick={handleLogout} className="w-full">
-                Log Out
-              </Button>
+              <div className="flex flex-col space-y-2 pt-4 border-t">
+                <Button variant="outline" onClick={handleLogout} className="w-full">
+                  Log Out
+                </Button>
+                <AlertDialog>
+                  <AlertDialogTrigger asChild>
+                    <Button variant="destructive" className="w-full">Delete Account</Button>
+                  </AlertDialogTrigger>
+                  <AlertDialogContent>
+                    <AlertDialogHeader>
+                      <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                      <AlertDialogDescription>
+                        This action cannot be undone. This will permanently delete your
+                        account and remove your data from our servers.
+                      </AlertDialogDescription>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                      <AlertDialogCancel>Cancel</AlertDialogCancel>
+                      <AlertDialogAction onClick={handleDeleteAccount} className={buttonVariants({ variant: "destructive" })}>
+                        Yes, delete my account
+                      </AlertDialogAction>
+                    </AlertDialogFooter>
+                  </AlertDialogContent>
+                </AlertDialog>
+              </div>
             </CardContent>
           </Card>
         </div>
