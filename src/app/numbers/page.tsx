@@ -1,61 +1,39 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import Link from 'next/link';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { doc } from 'firebase/firestore';
 import type { UserProfile, LessonDay, LessonItem } from '@/lib/types';
 import { Navigation } from '@/components/Navigation';
 import { Skeleton } from '@/components/ui/skeleton';
-import { nativeLanguages, translations, targetLanguages } from '@/lib/translations';
+import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 import { Card } from '@/components/ui/card';
-import { AudioPlayback } from '@/components/AudioPlayback';
-import { TooltipProvider } from '@/components/ui/tooltip';
-
-const DataItemCard = ({ item, language }: { item: LessonItem, language: string }) => {
-  const isNumberCard = item.english && !isNaN(parseInt(item.english, 10));
-
-  return (
-    <Card className="p-4">
-      <div className="grid grid-cols-3 items-center gap-4">
-        {/* Numeral or Native Meaning (Takes up 1 column) */}
-        <div className="col-span-1 text-center">
-          {isNumberCard ? (
-            <p className="text-4xl font-bold text-primary">{item.english}</p>
-          ) : (
-            <p className="text-lg font-bold">{item.native_meaning}</p>
-          )}
-        </div>
-
-        {/* Target Language & Phonetics (Takes up 2 columns) */}
-        <div className="col-span-2 flex items-center gap-4">
-          <AudioPlayback text={item.target} languageName={language} />
-          <div>
-            <p className="text-xl font-bold">{item.target}</p>
-            <p className="text-sm text-muted-foreground">{item.phonetic}</p>
-          </div>
-        </div>
-      </div>
-    </Card>
-  );
-};
-
+import { Button } from '@/components/ui/button';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
-      <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 space-y-4">
+      <main className="flex-1 container mx-auto max-w-4xl py-12 px-4 space-y-4">
           <Skeleton className="h-10 w-1/2" />
           <Skeleton className="h-6 w-3/4" />
-          <div className="mt-8 space-y-2">
-            <Skeleton className="h-20 w-full" />
-            <Skeleton className="h-20 w-full" />
-            <Skeleton className="h-20 w-full" />
-            <Skeleton className="h-20 w-full" />
+          <div className="mt-8 space-y-4">
+            <Skeleton className="h-8 w-1/3" />
+            <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
+              {Array.from({ length: 20 }).map((_, i) => <Skeleton key={i} className="h-16 w-16" />)}
+            </div>
+            <Skeleton className="h-8 w-1/3 pt-8" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {Array.from({ length: 4 }).map((_, i) => <Skeleton key={i} className="h-16 w-full" />)}
+            </div>
           </div>
       </main>
     </div>
 );
+
+// This is a custom type that attaches week and day to a LessonItem
+type LessonItemWithOrigin = LessonItem & { week: number; day: number };
 
 export default function NumbersPathPage() {
   const { user, isUserLoading } = useUser();
@@ -69,7 +47,7 @@ export default function NumbersPathPage() {
     return doc(firestore, "userProfiles", user.uid);
   }, [user, firestore]);
 
-  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+  const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
   
   const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
@@ -79,7 +57,6 @@ export default function NumbersPathPage() {
   const nativeLanguage = userProfile?.nativeLanguage || (isMounted && localStorage.getItem('nativeLanguage')) || 'English';
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
-  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
   
   const totalWeeksForNumbers = 4; // This is for data fetching only, not UI.
 
@@ -88,16 +65,13 @@ export default function NumbersPathPage() {
       setIsLoading(true);
       const allDays: LessonDay[] = [];
       
-      // The loop below fetches all lesson files for the Numbers Path.
-      // This data is then combined into a single list for display on one page.
       for (let week = 1; week <= totalWeeksForNumbers; week++) {
-        // We pass a dummy day `1` because getOrGenerateLesson returns the whole week file
         const weeklyLesson = await getOrGenerateLesson(
           targetLanguage.toLowerCase(),
           'numbers',
           week,
           validNativeLanguage,
-          1
+          1 // dummy day
         );
 
         if (weeklyLesson && weeklyLesson.days) {
@@ -118,7 +92,7 @@ export default function NumbersPathPage() {
       return { numbers: [], timesOfDay: [], daysOfWeek: [], months: [] };
     }
 
-    const allWords = allLessonData.flatMap(day => 
+    const allWords: LessonItemWithOrigin[] = allLessonData.flatMap(day => 
         (day.words || []).map(word => ({...word, week: day.week, day: day.day }))
     );
 
@@ -140,11 +114,11 @@ export default function NumbersPathPage() {
 
     const daysOfWeekList = weekDayNames.map(dayName => {
         return calendarWords.find(word => word.english === dayName);
-    }).filter((item): item is LessonItem => !!item);
+    }).filter((item): item is LessonItemWithOrigin => !!item);
 
     const monthsList = monthNames.map(monthName => {
         return calendarWords.find(word => word.english === monthName);
-    }).filter((item): item is LessonItem => !!item);
+    }).filter((item): item is LessonItemWithOrigin => !!item);
 
     return { numbers: numbersList, timesOfDay: timesOfDayList, daysOfWeek: daysOfWeekList, months: monthsList };
   }, [allLessonData]);
@@ -154,52 +128,38 @@ export default function NumbersPathPage() {
     return <LoadingSkeleton />;
   }
 
+  const renderSection = (title: string, items: LessonItemWithOrigin[], gridClass: string, displayKey: keyof LessonItemWithOrigin = 'target') => {
+    if (items.length === 0) return null;
+    return (
+        <section>
+            <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">{title}</h2>
+            <div className={gridClass}>
+            {items.map((item) => (
+                <Button key={item.id} asChild variant="secondary" className="h-20 text-lg font-bold">
+                    <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/${item.week}/${item.day}`}>
+                        {item[displayKey] as string}
+                    </Link>
+                </Button>
+            ))}
+            </div>
+        </section>
+    );
+  }
+
   return (
-    <TooltipProvider>
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
         <main className="flex-1">
-          <div className="container mx-auto max-w-3xl py-12 px-4">
-            <header className="mb-8">
+          <div className="container mx-auto max-w-4xl py-12 px-4">
+            <header className="mb-8 text-center">
               <h1 className="text-4xl font-bold tracking-tight">Numbers Path</h1>
-              <p className="mt-2 text-muted-foreground">Master counting, time, and money in {targetLanguage}.</p>
+              <p className="mt-2 text-muted-foreground">Master counting, time, and dates in {targetLanguage}.</p>
             </header>
 
-            {numbers.length > 0 && (
-              <section>
-                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Numbers</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {numbers.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
-                </div>
-              </section>
-            )}
-
-            {timesOfDay.length > 0 && (
-              <section>
-                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Times of the Day</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {timesOfDay.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
-                </div>
-              </section>
-            )}
-            
-            {daysOfWeek.length > 0 && (
-              <section>
-                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Days of the Week</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {daysOfWeek.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
-                </div>
-              </section>
-            )}
-
-            {months.length > 0 && (
-              <section>
-                <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">Months of the Year</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {months.map((item) => <DataItemCard key={item.id} item={item} language={targetLanguage} />)}
-                </div>
-              </section>
-            )}
+            {renderSection("Numbers", numbers, "grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3", 'english')}
+            {renderSection("Times of the Day", timesOfDay, "grid grid-cols-2 md:grid-cols-4 gap-3")}
+            {renderSection("Days of the Week", daysOfWeek, "grid grid-cols-2 md:grid-cols-4 gap-3")}
+            {renderSection("Months of the Year", months, "grid grid-cols-2 md:grid-cols-4 gap-3")}
 
             {allLessonData.length === 0 && !isLoading && (
                  <Card className="p-8 text-center">
@@ -210,10 +170,8 @@ export default function NumbersPathPage() {
                     </p>
                 </Card>
             )}
-
           </div>
         </main>
       </div>
-    </TooltipProvider>
   );
 }
