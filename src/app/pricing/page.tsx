@@ -8,7 +8,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
-import { translations, nativeLanguages } from '@/lib/translations';
+import { translations, nativeLanguages, targetLanguages as allTargetLangs } from '@/lib/translations';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { UserProfile } from '@/lib/types';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const GooglePayLogo = () => (
     <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline-block">
@@ -49,6 +53,16 @@ export default function PricingPage() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
 
+  const { user, isUserLoading } = useUser();
+  const firestore = useFirestore();
+
+  const userProfileRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return doc(firestore, 'userProfiles', user.uid);
+  }, [user, firestore]);
+
+  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+
   useEffect(() => {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) {
@@ -63,6 +77,9 @@ export default function PricingPage() {
   
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
+  
+  const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
+  const targetLanguageInfo = allTargetLangs.find(l => l.lang === targetLanguage);
 
   const renderPaymentButtons = () => (
      <div className="flex flex-col gap-3">
@@ -79,6 +96,22 @@ export default function PricingPage() {
        </div>
     </div>
   );
+
+  const LanguagePurchaseContext = () => {
+    if (isProfileLoading) return <Skeleton className="h-12 w-full" />;
+    if (!targetLanguageInfo) return null;
+
+    return (
+        <div className="my-4">
+            <p className="text-sm font-semibold text-muted-foreground">{t.pricingPage.purchasingFor}</p>
+            <div className="mt-2 flex items-center gap-3 rounded-md border bg-muted p-2">
+                <span className="text-2xl">{targetLanguageInfo.flag}</span>
+                <span className="font-bold">{targetLanguageInfo.lang}</span>
+            </div>
+            <p className="text-xs text-muted-foreground mt-1">{t.pricingPage.changeLanguageNote}</p>
+        </div>
+    );
+  };
 
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -106,7 +139,9 @@ export default function PricingPage() {
                   <p className="text-4xl font-bold">
                     {t.weeklyPlan.price}<span className="text-lg font-normal text-muted-foreground">{t.weeklyPlan.per}</span>
                   </p>
-                  <ul className="space-y-3">
+                  <p className="text-xs text-muted-foreground">{t.pricingPage.autoRenewNote}</p>
+                  <LanguagePurchaseContext />
+                  <ul className="space-y-3 pt-4 border-t">
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat1}</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat2}</li>
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat3}</li>
@@ -131,7 +166,7 @@ export default function PricingPage() {
                   <p className="text-4xl font-bold">
                     {t.lifetimePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.lifetimePlan.per}</span>
                   </p>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 pt-4 border-t">
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat1}</li>
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat2}</li>
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat3}</li>
@@ -154,7 +189,8 @@ export default function PricingPage() {
                    <p className="text-4xl font-bold">
                     {t.completePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.completePlan.per}</span>
                   </p>
-                  <ul className="space-y-3">
+                  <LanguagePurchaseContext />
+                  <ul className="space-y-3 pt-4 border-t">
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat1}</li>
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat2}</li>
                      <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat3}</li>
@@ -170,7 +206,7 @@ export default function PricingPage() {
              <div className="mt-16 text-center">
                 <h3 className="font-headline text-2xl font-bold">{t.freePlan.title}</h3>
                 <p className="text-muted-foreground mt-2">{t.freePlan.description}</p>
-                <ul className="mt-4 inline-flex gap-4 text-muted-foreground">
+                <ul className="mt-4 inline-flex flex-col sm:flex-row gap-x-4 gap-y-1 text-muted-foreground">
                     <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {t.freePlan.feat1}</li>
                     <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {t.freePlan.feat2}</li>
                 </ul>
