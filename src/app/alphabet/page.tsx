@@ -95,7 +95,7 @@ export default function AlphabetPathPage() {
             <Navigation />
             <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 text-center">
                 <h1 className="text-4xl font-bold tracking-tight">Alphabet Path</h1>
-                <p className="mt-4 text-lg text-muted-foreground">The Alphabet Path is not applicable for {targetLanguage}.</p>
+                <p className="mt-4 text-lg text-muted-foreground">The Alphabet Path is not applicable for {targetLanguage} due to its complex writing system. Please use the Survival and Numbers paths.</p>
                 <Button asChild className="mt-6"><Link href="/dashboard">Back to Dashboard</Link></Button>
             </main>
         </div>

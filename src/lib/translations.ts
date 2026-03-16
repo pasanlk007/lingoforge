@@ -2241,7 +2241,7 @@ export const targetLanguages = [
   { lang: "English", flag: "🇬🇧", countries: ["en-US", "Australia", "Canada", "USA", "en-GB"], alphabetSize: 26 },
   { lang: "Turkish", flag: "🇹🇷", countries: ["tr-TR"], alphabetSize: 29 },
   { lang: "Hindi", flag: "🇮🇳", countries: ["hi-IN"], alphabetSize: 46 },
-  { lang: "Tamil", flag: "🇮🇳", countries: ["ta-IN", "Sri Lanka", "Singapore"], alphabetSize: 247 },
+  { lang: "Tamil", flag: "🇮🇳", countries: ["ta-IN", "Sri Lanka", "Singapore"], alphabetSize: 0 },
   { lang: "Chinese", flag: "🇨🇳", countries: ["zh-CN", "Singapore", "Taiwan"], alphabetSize: 0 }, // Not alphabet-based
 ];
 
@@ -2250,3 +2250,4 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
