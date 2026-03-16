@@ -66,15 +66,15 @@ export default function PricingPage() {
 
   const renderPaymentButtons = () => (
      <div className="flex flex-col gap-3">
-       <Button size="lg" className="w-full">
-          Pay with Card
+       <Button size="lg" className="w-full" asChild>
+          <Link href="#">Pay with Card</Link>
        </Button>
        <div className="flex w-full gap-3">
-         <Button variant="secondary" className="w-full bg-black text-white hover:bg-gray-800">
-            <ApplePayLogo />
+         <Button variant="secondary" className="w-full bg-black text-white hover:bg-gray-800" asChild>
+            <Link href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer"><ApplePayLogo /></Link>
          </Button>
-         <Button variant="secondary" className="w-full bg-white text-black hover:bg-gray-200">
-            <GooglePayLogo />
+         <Button variant="secondary" className="w-full bg-white text-black hover:bg-gray-200" asChild>
+            <Link href="https://play.google.com/store" target="_blank" rel="noopener noreferrer"><GooglePayLogo /></Link>
          </Button>
        </div>
     </div>
