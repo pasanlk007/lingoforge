@@ -134,7 +134,8 @@ export interface UserProfile {
   email: string;
   nativeLanguage: string;
   selectedLanguage: string;
-  subscriptionType: 'free' | 'monthly' | 'yearly';
+  subscriptionType: 'free' | 'weekly' | 'course' | 'lifetime';
+  subscriptionStartDate?: string; // ISO 8601 date string
   subscriptionExpiry?: string; // ISO 8601 date string
   xpPoints: number;
   currentStreak: number;

@@ -8,10 +8,11 @@ import type { UserProfile, UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { CheckCircle, Star } from 'lucide-react';
+import { CheckCircle, Star, Lock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations } from '@/lib/translations';
+import { differenceInCalendarWeeks } from 'date-fns';
 
 export default function SurvivalPathPage() {
   const { user, isUserLoading: isUserLoading } = useUser();
@@ -52,7 +53,44 @@ export default function SurvivalPathPage() {
     return completedDaysMap;
   }, [progressData]);
 
-  if (!isMounted || isUserLoading || isProgressLoading) {
+  const { unlockedWeeks, showUpgradeButton } = useMemo(() => {
+    let unlockedWeeks = 1;
+    let showUpgradeButton = true;
+    const now = new Date();
+
+    if (userProfile) {
+        const { subscriptionType, subscriptionStartDate, subscriptionExpiry } = userProfile;
+
+        switch (subscriptionType) {
+            case 'lifetime':
+                unlockedWeeks = 12;
+                showUpgradeButton = false; // No upgrade from lifetime
+                break;
+            case 'course':
+                unlockedWeeks = 12;
+                showUpgradeButton = true; // Can upgrade to lifetime
+                break;
+            case 'weekly':
+                const startDate = subscriptionStartDate ? new Date(subscriptionStartDate) : null;
+                const expiryDate = subscriptionExpiry ? new Date(subscriptionExpiry) : null;
+
+                if (startDate && (!expiryDate || now < expiryDate)) {
+                    // Active weekly subscription
+                    const weeksPassed = differenceInCalendarWeeks(now, startDate, { weekStartsOn: 1 });
+                    unlockedWeeks = Math.min(weeksPassed + 1, 12);
+                }
+                // If expired or invalid, defaults to 1 week
+                break;
+            case 'free':
+            default:
+                // Defaults to 1 week
+                break;
+        }
+    }
+    return { unlockedWeeks, showUpgradeButton };
+  }, [userProfile]);
+
+  if (!isMounted || isUserLoading || isProgressLoading || isProfileLoading) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -84,38 +122,55 @@ export default function SurvivalPathPage() {
             {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
               const completedDaysInWeek = completedDays[week] || [];
               const isWeekCompleted = completedDaysInWeek.length === 7;
+              const isLocked = week > unlockedWeeks;
 
               return (
-                <AccordionItem key={week} value={`item-${week}`}>
-                  <AccordionTrigger className="text-lg hover:no-underline">
+                <AccordionItem key={week} value={`item-${week}`} disabled={isLocked}>
+                  <AccordionTrigger className="text-lg hover:no-underline data-[disabled]:cursor-not-allowed">
                     <div className="flex w-full items-center justify-between pr-4">
                       <span className="flex items-center gap-3">
-                         {isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Star className="h-5 w-5 text-blue-400" />}
+                         {isLocked ? <Lock className="h-5 w-5 text-muted-foreground" /> :
+                          isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Star className="h-5 w-5 text-blue-400" />}
                          {t.week} {week}
                       </span>
                       
-                      {!isWeekCompleted && (
+                      {!isLocked && !isWeekCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
                             {completedDaysInWeek.length} / 7 {t.days}
                         </span>
                       )}
-                      {isWeekCompleted && (
+                      {!isLocked && isWeekCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-green-500">{t.completed}</span>
+                      )}
+                      {isLocked && (
+                          <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.locked}</span>
                       )}
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-                      {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
-                        return (
-                          <Button asChild variant="secondary" key={day}>
-                            <Link href={`/lessons/${targetLanguage.toLowerCase()}/survival/${week}/${day}`}>
-                              {`${t.day} ${day}`}
-                            </Link>
-                          </Button>
-                        )
-                      })}
-                    </div>
+                    {isLocked ? (
+                        <div className="text-center p-4 bg-muted/50 rounded-md">
+                            <p className="font-semibold">{t.lessonsLocked}</p>
+                            <p className="text-sm text-muted-foreground mb-4">{t.upgradeToUnlock}</p>
+                            {showUpgradeButton && (
+                                <Button asChild>
+                                    <Link href="/pricing">{t.upgradePlan}</Link>
+                                </Button>
+                            )}
+                        </div>
+                    ) : (
+                      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+                        {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
+                          return (
+                            <Button asChild variant="secondary" key={day}>
+                              <Link href={`/lessons/${targetLanguage.toLowerCase()}/survival/${week}/${day}`}>
+                                {`${t.day} ${day}`}
+                              </Link>
+                            </Button>
+                          )
+                        })}
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               );

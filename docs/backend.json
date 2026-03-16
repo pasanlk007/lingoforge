@@ -28,11 +28,22 @@
         },
         "subscriptionType": {
           "type": "string",
-          "description": "The user's current subscription level: 'free', 'monthly', or 'yearly'."
+          "description": "The user's current subscription level: 'free', 'weekly', 'course', or 'lifetime'.",
+          "enum": [
+            "free",
+            "weekly",
+            "course",
+            "lifetime"
+          ]
+        },
+        "subscriptionStartDate": {
+          "type": "string",
+          "description": "The date when the user's current subscription started. Applicable for 'weekly' plans.",
+          "format": "date"
         },
         "subscriptionExpiry": {
           "type": "string",
-          "description": "The date when the user's current subscription expires. Not applicable for 'free' tier.",
+          "description": "The date when the user's current subscription expires. Applicable for 'weekly' plans.",
           "format": "date"
         },
         "xpPoints": {
