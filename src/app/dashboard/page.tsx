@@ -288,6 +288,7 @@ function DashboardContent({ user }: { user: User }) {
                         onClick={() => handleNativeLanguageChange(lang)}
                         variant={nativeLanguage === lang ? "default" : "outline"}
                         size="sm"
+                        disabled={['Hindi', 'Bengali', 'Nepali', 'Urdu'].includes(lang)}
                       >
                         {lang}
                       </Button>
