@@ -1,5 +1,3 @@
-
-
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -94,7 +92,7 @@ export default function LandingPage() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-slate-800 border-slate-700 text-white">
-                {nativeLanguages.map((lang) => (
+                {nativeLanguages.filter(l => ['English', 'Sinhala'].includes(l)).map((lang) => (
                   <DropdownMenuItem
                     key={lang}
                     onSelect={() => {
@@ -395,7 +393,7 @@ export default function LandingPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-slate-800 border-slate-700 text-white">
-                    {nativeLanguages.map((lang) => (
+                    {nativeLanguages.filter(l => ['English', 'Sinhala'].includes(l)).map((lang) => (
                       <DropdownMenuItem
                         key={lang}
                         onSelect={() => {
