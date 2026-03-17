@@ -135,7 +135,7 @@ export default function NumbersPathPage() {
             <h2 className="text-2xl font-bold tracking-tight mt-12 mb-4">{title}</h2>
             <div className={gridClass}>
             {items.map((item) => (
-                <Button key={item.id} asChild variant="secondary" className="h-20 text-lg font-bold">
+                <Button key={item.id} asChild variant="secondary" className="h-20 p-1 text-center flex items-center justify-center font-bold text-base">
                     <Link href={`/lessons/${targetLanguage.toLowerCase()}/numbers/${item.week}/${item.day}`}>
                         {item[displayKey] as string}
                     </Link>
