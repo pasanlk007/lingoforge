@@ -54,6 +54,11 @@ export default function SurvivalPathPage() {
   }, [progressData]);
 
   const { unlockedWeeks, showUpgradeButton } = useMemo(() => {
+    // Admin check
+    if (user?.email === 'Pasan.lankathilakadpl@gmail.com') {
+      return { unlockedWeeks: 12, showUpgradeButton: false };
+    }
+
     let unlockedWeeks = 1;
     let showUpgradeButton = true;
     const now = new Date();
@@ -88,7 +93,7 @@ export default function SurvivalPathPage() {
         }
     }
     return { unlockedWeeks, showUpgradeButton };
-  }, [userProfile]);
+  }, [userProfile, user]);
 
   if (!isMounted || isUserLoading || isProgressLoading || isProfileLoading) {
     return (
