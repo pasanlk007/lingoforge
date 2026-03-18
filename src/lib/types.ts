@@ -134,7 +134,7 @@ export interface UserProfile {
   email: string;
   nativeLanguage: string;
   selectedLanguage: string;
-  subscriptionType: 'free' | 'weekly' | 'course' | 'lifetime';
+  subscriptionType: 'free' | 'weekly' | 'monthly' | 'course' | 'lifetime';
   subscriptionStartDate?: string; // ISO 8601 date string
   subscriptionExpiry?: string; // ISO 8601 date string
   xpPoints: number;
@@ -145,6 +145,10 @@ export interface UserProfile {
   activePath: 'survival' | 'alphabet' | 'numbers';
   lastLessonWeek: number;
   lastLessonDay: number;
+  stripeCustomerId?: string;
+  stripeSubscriptionId?: string;
+  stripePriceId?: string;
+  stripeCurrentPeriodEnd?: string; // ISO 8601 date-time string
 }
 
 export interface UserLessonProgress {

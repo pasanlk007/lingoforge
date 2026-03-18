@@ -54,7 +54,6 @@ export default function SurvivalPathPage() {
   }, [progressData]);
 
   const { unlockedWeeks, showUpgradeButton } = useMemo(() => {
-    // Admin check
     if (user?.email === 'Pasan.lankathilakadpl@gmail.com') {
       return { unlockedWeeks: 12, showUpgradeButton: false };
     }
@@ -64,31 +63,34 @@ export default function SurvivalPathPage() {
     const now = new Date();
 
     if (userProfile) {
-        const { subscriptionType, subscriptionStartDate, subscriptionExpiry } = userProfile;
+        const { subscriptionType, subscriptionStartDate, subscriptionExpiry, stripeCurrentPeriodEnd } = userProfile;
+        const subExpiry = subscriptionExpiry ? new Date(subscriptionExpiry) : null;
+        const stripeExpiry = stripeCurrentPeriodEnd ? new Date(stripeCurrentPeriodEnd) : null;
 
         switch (subscriptionType) {
             case 'lifetime':
                 unlockedWeeks = 12;
-                showUpgradeButton = false; // No upgrade from lifetime
+                showUpgradeButton = false;
                 break;
             case 'course':
                 unlockedWeeks = 12;
+                showUpgradeButton = true; // Can still upgrade to lifetime
+                break;
+            case 'monthly':
+                if (stripeExpiry && now < stripeExpiry) {
+                    unlockedWeeks = 12; // Full access during active subscription
+                }
                 showUpgradeButton = true; // Can upgrade to lifetime
                 break;
             case 'weekly':
                 const startDate = subscriptionStartDate ? new Date(subscriptionStartDate) : null;
-                const expiryDate = subscriptionExpiry ? new Date(subscriptionExpiry) : null;
-
-                if (startDate && (!expiryDate || now < expiryDate)) {
-                    // Active weekly subscription
+                if (startDate && (!subExpiry || now < subExpiry)) {
                     const weeksPassed = differenceInCalendarWeeks(now, startDate, { weekStartsOn: 1 });
                     unlockedWeeks = Math.min(weeksPassed + 1, 12);
                 }
-                // If expired or invalid, defaults to 1 week
                 break;
             case 'free':
             default:
-                // Defaults to 1 week
                 break;
         }
     }

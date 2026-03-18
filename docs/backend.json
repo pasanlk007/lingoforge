@@ -28,10 +28,11 @@
         },
         "subscriptionType": {
           "type": "string",
-          "description": "The user's current subscription level: 'free', 'weekly', 'course', or 'lifetime'.",
+          "description": "The user's current subscription level.",
           "enum": [
             "free",
             "weekly",
+            "monthly",
             "course",
             "lifetime"
           ]
@@ -43,7 +44,7 @@
         },
         "subscriptionExpiry": {
           "type": "string",
-          "description": "The date when the user's current subscription expires. Applicable for 'weekly' plans.",
+          "description": "The date when the user's current subscription expires. Applicable for 'weekly' and 'monthly' plans.",
           "format": "date"
         },
         "xpPoints": {
@@ -74,6 +75,23 @@
         "lastLessonDay": {
           "type": "number",
           "description": "The day number of the user's last completed lesson."
+        },
+        "stripeCustomerId": {
+            "type": "string",
+            "description": "The user's Stripe Customer ID."
+        },
+        "stripeSubscriptionId": {
+            "type": "string",
+            "description": "The user's active Stripe Subscription ID."
+        },
+        "stripePriceId": {
+          "type": "string",
+          "description": "The price ID of the user's active subscription."
+        },
+        "stripeCurrentPeriodEnd": {
+          "type": "string",
+          "description": "The end date of the current subscription period, in ISO 8601 format.",
+          "format": "date-time"
         }
       },
       "required": [
