@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { stripe } from '@/lib/stripe';
 import { initializeFirebase } from '@/firebase/server-init';
-import { doc, updateDoc, setDoc } from 'firebase/firestore';
 
 export const config = {
   api: {
@@ -21,7 +20,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
     return;
   }
 
-  const userDocRef = doc(firestore, 'userProfiles', userId);
+  const userDocRef = firestore.collection('userProfiles').doc(userId);
 
   if (session.mode === 'subscription') {
     const subscriptionId = typeof session.subscription === 'string' ? session.subscription : session.subscription?.id;
@@ -32,7 +31,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
     const subscription = await stripe.subscriptions.retrieve(subscriptionId);
 
     // For a new subscription, set the user as active.
-    await updateDoc(userDocRef, {
+    await userDocRef.update({
       stripeCustomerId: stripeCustomerId,
       stripeSubscriptionId: subscription.id,
       subscriptionActive: true,
@@ -42,7 +41,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
 
   } else if (session.mode === 'payment') {
     // This is for one-time payments (e.g., lifetime access).
-    await updateDoc(userDocRef, {
+    await userDocRef.update({
       stripeCustomerId: stripeCustomerId,
       subscriptionActive: true,
       subscriptionSource: 'stripe',
@@ -60,10 +59,10 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
         console.error('Webhook Error: Missing firebaseUID in subscription metadata.');
         return;
     }
-    const userDocRef = doc(firestore, 'userProfiles', userId);
+    const userDocRef = firestore.collection('userProfiles').doc(userId);
 
     // Update the user's profile with the new subscription details.
-    await updateDoc(userDocRef, {
+    await userDocRef.update({
         subscriptionActive: true, // Ensure user is marked as active
         stripeSubscriptionId: subscription.id,
         subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString(),
@@ -78,10 +77,10 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
         console.error('Webhook Error: Missing firebaseUID in subscription metadata during deletion.');
         return;
     }
-    const userDocRef = doc(firestore, 'userProfiles', userId);
+    const userDocRef = firestore.collection('userProfiles').doc(userId);
 
     // Revert the user to a free plan.
-    await updateDoc(userDocRef, {
+    await userDocRef.update({
         subscriptionActive: false,
         subscriptionSource: 'none',
         subscriptionExpiry: null,

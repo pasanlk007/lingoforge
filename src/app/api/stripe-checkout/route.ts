@@ -1,13 +1,12 @@
 import { NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import { initializeFirebase } from '@/firebase/server-init';
-import { doc, getDoc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 
 // This function handles POST requests to create a Stripe Checkout session.
 export async function POST(req: Request) {
   try {
-    const { firebaseApp, auth, firestore } = initializeFirebase();
+    const { auth, firestore } = initializeFirebase();
     const token = req.headers.get('Authorization')?.split('Bearer ')[1];
 
     if (!token) {
@@ -23,8 +22,8 @@ export async function POST(req: Request) {
       return new NextResponse(JSON.stringify({ error: 'Missing required parameters' }), { status: 400 });
     }
 
-    const userDocRef = doc(firestore, 'userProfiles', userId);
-    const userDoc = await getDoc(userDocRef);
+    const userDocRef = firestore.collection('userProfiles').doc(userId);
+    const userDoc = await userDocRef.get();
     let userProfile = userDoc.data() as UserProfile;
 
     let stripeCustomerId = userProfile?.stripeCustomerId;
@@ -39,8 +38,8 @@ export async function POST(req: Request) {
         },
       });
       stripeCustomerId = customer.id;
-      // Note: In a real app, you'd save this to the user's profile in Firestore here.
-      // The webhook will also save it to prevent race conditions.
+      // Note: The webhook will also save this to prevent race conditions.
+      await userDocRef.update({ stripeCustomerId: stripeCustomerId });
     }
 
     const successUrl = `${process.env.NEXT_PUBLIC_APP_URL}${successPath}`;

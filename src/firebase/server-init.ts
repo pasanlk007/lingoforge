@@ -4,30 +4,17 @@
  *
  * DO NOT use this file on the client-side.
  */
-import { initializeApp, getApps, App, cert } from 'firebase-admin/app';
+import { initializeApp, getApps, App } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
 
-// IMPORTANT: Path to your service account key file.
-// You must download this from your Firebase project settings.
-// Store it securely and DO NOT commit it to your repository.
-// It's recommended to use environment variables to store the key's content.
-const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT_KEY
-  ? JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY)
-  : undefined;
-
 let adminApp: App;
 
+// This logic ensures that we don't try to initialize the app more than once.
 if (!getApps().length) {
-  if (serviceAccount) {
-    adminApp = initializeApp({
-      credential: cert(serviceAccount),
-    });
-  } else {
-    // This will initialize the app using Application Default Credentials
-    // which is the recommended way for services like Cloud Run or Cloud Functions.
-    adminApp = initializeApp();
-  }
+  // initializeApp() with no arguments will use Application Default Credentials.
+  // This is the recommended way for services like Cloud Run or Firebase Functions.
+  adminApp = initializeApp();
 } else {
   adminApp = getApps()[0];
 }
