@@ -1,15 +1,225 @@
+
 {
   "week": 1,
   "path": "numbers",
   "targetLanguage": "Serbian",
   "nativeLanguage": "Sinhala",
   "days": [
-    { "week": 1, "day": 1, "title": "Week 1 Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder" }},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder" }},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder" }},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder" }},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder" }},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder" }},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Serbian", "nativeLanguage": "Sinhala", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder" }}
+    {
+      "week": 1,
+      "day": 1,
+      "title": "1 වන දිනය: අංක 1-5",
+      "title_native": "Dan 1: Brojevi 1-5",
+      "theme": "සර්බියානු භාෂාවෙන් 1 සිට 5 දක්වා ගණන් කිරීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_1_1", "target": "jedan", "phonetic": "යේ-දන්", "native_meaning": "එක", "english": "one" },
+        { "id": "w1_1_2", "target": "dva", "phonetic": "ද්වා", "native_meaning": "දෙක", "english": "two" },
+        { "id": "w1_1_3", "target": "tri", "phonetic": "ත්රී", "native_meaning": "තුන", "english": "three" },
+        { "id": "w1_1_4", "target": "četiri", "phonetic": "චේ-ති-රි", "native_meaning": "හතර", "english": "four" },
+        { "id": "w1_1_5", "target": "pet", "phonetic": "පෙත්", "native_meaning": "පහ", "english": "five" }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "වස්තූන් ගණන් කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Imam jednu jabuku.", "native": "මා සතුව එක් ඇපල් ගෙඩියක් ඇත.", "phonetic": "ඉ-මම් යෙද්-නු යා-බු-කු." },
+            { "speaker": "B", "target": "Ja imam dve jabuke.", "native": "මා සතුව ඇපල් ගෙඩි දෙකක් ඇත.", "phonetic": "යා ඉ-මම් ද්වේ යා-බු-කේ." }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "jedan", "native": "එක" },
+          { "id": "m1_1_2", "target": "dva", "native": "දෙක" },
+          { "id": "m1_1_3", "target": "tri", "native": "තුන" }
+        ]
+      },
+      "cultural_note": "සර්බියානු භාෂාවේදී, අංක සමඟ භාවිතා කරන විට නාම පදවලට විවිධ අවසානයන් තිබිය හැක. උදාහරණයක් ලෙස, 'jedna jabuka' (එක් ඇපල් ගෙඩියක්), නමුත් 'dve jabuke' (ඇපල් ගෙඩි දෙකක්).",
+      "pronunciation_tip": "'četiri' හි 'č' ශබ්දය ඉංග්‍රීසි 'church' හි 'ch' ශබ්දයට සමාන වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "NUM_W1D1_SR_SI" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "2 වන දිනය: අංක 6-10",
+      "title_native": "Dan 2: Brojevi 6-10",
+      "theme": "සර්බියානු භාෂාවෙන් 6 සිට 10 දක්වා ගණන් කිරීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_2_1", "target": "šest", "phonetic": "ෂෙස්ත්", "native_meaning": "හය", "english": "six" },
+        { "id": "w1_2_2", "target": "sedam", "phonetic": "සේ-දම්", "native_meaning": "හත", "english": "seven" },
+        { "id": "w1_2_3", "target": "osam", "phonetic": "ඕ-සම්", "native_meaning": "අට", "english": "eight" },
+        { "id": "w1_2_4", "target": "devet", "phonetic": "දේ-වෙත්", "native_meaning": "නවය", "english": "nine" },
+        { "id": "w1_2_5", "target": "deset", "phonetic": "දේ-සෙත්", "native_meaning": "දහය", "english": "ten" }
+      ],
+       "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "වයස ගැන කතා කිරීම.",
+          "lines": [
+            { "speaker": "A", "target": "Imam osam godina.", "native": "මට වයස අවුරුදු අටයි.", "phonetic": "ඉ-මම් ඕ-සම් ගෝ-දි-නා." },
+            { "speaker": "B", "target": "Moj brat ima deset godina.", "native": "මගේ සහෝදරයාට වයස අවුරුදු දහයයි.", "phonetic": "මෝයි බ්රාත් ඉ-මා දේ-සෙත් ගෝ-දි-නා." }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [{
+          "id": "ss1_2_1",
+          "scrambled": ["godina", "sedam", "Imam"],
+          "correct": "Imam sedam godina",
+          "nativeHint": "මට වයස අවුරුදු හතයි."
+        }]
+      },
+      "cultural_note": "මිල ගණන් හෝ ප්‍රමාණ ගැන කතා කරන විට, වෙළඳපොලේදී සහ සාප්පු වලදී අංක බහුලව භාවිතා වේ.",
+      "pronunciation_tip": "'šest' හි 'š' ශබ්දය ඉංග්‍රීසි 'shoe' හි 'sh' ශබ්දයට සමාන වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "NUM_W1D2_SR_SI" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "3 වන දිනය: 1-10 නැවත බැලීම",
+      "title_native": "Dan 3: Pregled 1-10",
+      "theme": "අංක 1-10 නැවත බැලීම සහ පුහුණු වීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [],
+      "dialogues": [],
+      "exercises": {
+          "fillBlanks": [
+            { "id": "fb1_3_1", "sentence": "Ima ___ dana u nedelji.", "answer": "sedam", "hint": "සතියට දින කීයද?" },
+            { "id": "fb1_3_2", "sentence": "Imam ___ prstiju na rukama.", "answer": "deset", "hint": "අත්වල ඇඟිලි කීයද?" }
+        ],
+        "matching": [
+            {"id": "m1_3_1", "target": "četiri", "native": "හතර"},
+            {"id": "m1_3_2", "target": "šest", "native": "හය"},
+            {"id": "m1_3_3", "target": "devet", "native": "නවය"}
+        ]
+      },
+      "cultural_note": "සර්බියාවේ, දුරකථන අංක බොහෝ විට ඉලක්කම් 2-3 කණ්ඩායම් වශයෙන් කියනු ලැබේ.",
+      "pronunciation_tip": "අංක නැවත නැවත ශබ්ද නඟා කීමෙන් උච්චාරණය පුහුණු වන්න.",
+      "progress": { "xp": 120, "streak_bonus": 25, "badge": "NUM_W1D3_SR_SI" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "4 වන දිනය: අංක 11-15",
+      "title_native": "Dan 4: Brojevi 11-15",
+      "theme": "සර්බියානු භාෂාවෙන් 11 සිට 15 දක්වා ගණන් කිරීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_4_1", "target": "jedanaest", "phonetic": "යේ-දා-නා-එස්ත්", "native_meaning": "එකොළහ", "english": "eleven" },
+        { "id": "w1_4_2", "target": "dvanaest", "phonetic": "ද්වා-නා-එස්ත්", "native_meaning": "දොළහ", "english": "twelve" },
+        { "id": "w1_4_3", "target": "trinaest", "phonetic": "ත්රී-නා-එස්ත්", "native_meaning": "දහතුන", "english": "thirteen" },
+        { "id": "w1_4_4", "target": "četrnaest", "phonetic": "චේ-තර්-නා-එස්ත්", "native_meaning": "දාහතර", "english": "fourteen" },
+        { "id": "w1_4_5", "target": "petnaest", "phonetic": "පෙත්-නා-එස්ත්", "native_meaning": "පහළව", "english": "fifteen" }
+      ],
+      "dialogues": [],
+      "exercises": {
+          "matching": [
+            {"id": "m1_4_1", "target": "jedanaest", "native": "එකොළහ"},
+            {"id": "m1_4_2", "target": "trinaest", "native": "දහතුන"},
+            {"id": "m1_4_3", "target": "petnaest", "native": "පහළව"}
+          ]
+      },
+      "cultural_note": "11 සිට 19 දක්වා අංක සෑදී ඇත්තේ පළමු ඉලක්කමට '-naest' එකතු කිරීමෙනි.",
+      "pronunciation_tip": "මෙම අංකවල '-naest' කොටස අවධාරණය කිරීමට උත්සාහ කරන්න.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "NUM_W1D4_SR_SI" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "5 වන දිනය: අංක 16-20",
+      "title_native": "Dan 5: Brojevi 16-20",
+      "theme": "සර්බියානු භාෂාවෙන් 16 සිට 20 දක්වා ගණන් කිරීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_5_1", "target": "šesnaest", "phonetic": "ෂෙස්-නා-එස්ත්", "native_meaning": "දහසය", "english": "sixteen" },
+        { "id": "w1_5_2", "target": "sedamnaest", "phonetic": "සේ-දම්-නා-එස්ත්", "native_meaning": "දහහත", "english": "seventeen" },
+        { "id": "w1_5_3", "target": "osamnaest", "phonetic": "ඕ-සම්-නා-එස්ත්", "native_meaning": "දහඅට", "english": "eighteen" },
+        { "id": "w1_5_4", "target": "devetnaest", "phonetic": "දේ-වෙත්-නා-එස්ත්", "native_meaning": "දහනවය", "english": "nineteen" },
+        { "id": "w1_5_5", "target": "dvadeset", "phonetic": "ද්වා-දේ-සෙත්", "native_meaning": "විස්ස", "english": "twenty" }
+      ],
+      "dialogues": [],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb1_5_1", "sentence": "Imam ___ godina.", "answer": "dvadeset", "hint": "මට වයස අවුරුදු 20 යි."}
+        ]
+      },
+      "cultural_note": "සර්බියානු භාෂාවෙන්, 1-20 දක්වා අංක ඉගෙන ගැනීම විශාල සංඛ්‍යා තැනීම සඳහා අත්‍යවශ්‍ය පදනමකි.",
+      "pronunciation_tip": "'dvadeset' හි 'dva' යනු 'දෙක' සහ 'deset' යනු 'දහය' යි. නමුත් මෙහි එය 'විස්ස' ලෙස එකට එකතු වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "NUM_W1D5_SR_SI" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "6 වන දිනය: 11-20 නැවත බැලීම",
+      "title_native": "Dan 6: Pregled 11-20",
+      "theme": "අංක 11-20 නැවත බැලීම සහ පුහුණු වීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [],
+      "dialogues": [],
+      "exercises": {
+        "sentenceScramble": [{
+          "id": "ss1_6_1",
+          "scrambled": ["To", "košta", "evra", "dvanaest"],
+          "correct": "To košta dvanaest evra",
+          "nativeHint": "ඒ සඳහා යුරෝ දොළහක් වැය වේ."
+        }],
+         "matching": [
+            {"id": "m1_6_1", "target": "šesnaest", "native": "දහසය"},
+            {"id": "m1_6_2", "target": "osamnaest", "native": "දහඅට"},
+            {"id": "m1_6_3", "target": "dvadeset", "native": "විස්ස"}
+          ]
+      },
+      "cultural_note": "සාප්පු සවාරි යන විට සහ මිල ගණන් විමසීමේදී මෙම අංක ඉතා ප්‍රයෝජනවත් වේ.",
+      "pronunciation_tip": "වේගයෙන් කතා කරන විට, 'jedanaest' වැනි වචන 'jedan'est' ලෙස ඇසෙනු ඇත.",
+      "progress": { "xp": 120, "streak_bonus": 25, "badge": "NUM_W1D6_SR_SI" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "7 වන දිනය: ප්‍රශ්න කිරීම",
+      "title_native": "Dan 7: Postavljanje pitanja",
+      "theme": "ප්‍රමාණය ගැන විමසීමට ඉගෙනීම.",
+      "path": "numbers",
+      "targetLanguage": "Serbian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w1_7_1", "target": "Koliko?", "phonetic": "කෝ-ලි-කෝ?", "native_meaning": "කෙතරම් ද?", "english": "How many/much?" },
+        { "id": "w1_7_2", "target": "košta", "phonetic": "කෝෂ්-ටා", "native_meaning": "මිල", "english": "costs" },
+        { "id": "w1_7_3", "target": "evra", "phonetic": "එව්-රා", "native_meaning": "යුරෝ", "english": "euros" }
+      ],
+      "dialogues": [{
+        "id": "d1_7_1",
+        "context": "වෙළඳසැලක මිල විමසීම.",
+        "lines": [
+          { "speaker": "A", "target": "Izvinite, koliko košta ovo?", "native": "සමාවන්න, దీని ధర ఎంత?", "phonetic": "ඉස්-වි-නී-තේ, කෝ-ලි-කෝ කෝෂ්-ටා ඕ-වෝ?" },
+          { "speaker": "B", "target": "To košta petnaest evra.", "native": "ඒ සඳහා යුරෝ පහළවක් වැය වේ.", "phonetic": "තෝ කෝෂ්-ටා පෙත්-නා-එස්ත් එව්-රා." }
+        ]
+      }],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb1_7_1", "sentence": "___ košta kafa?", "answer": "Koliko", "hint": "කෝපි එකක මිල අසන්න."}
+        ]
+      },
+      "cultural_note": "සර්බියාවේ මුදල් ඒකකය සර්බියානු ඩිනාර් (RSD), නමුත් සමහර විට මිල ගණන්, විශේෂයෙන් විශාල මිලදී ගැනීම් සඳහා යුරෝ වලින් ද ප්‍රකාශ කරනු ලැබේ.",
+      "pronunciation_tip": "'koliko' හි 'k' ශබ්දය දෙකම පැහැදිලිව උච්චාරණය කරන්න.",
+      "progress": { "xp": 150, "streak_bonus": 30, "badge": "NUM_W1D7_SR_SI" }
+    }
   ]
 }
+
+    
