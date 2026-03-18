@@ -8,14 +8,16 @@ import type { UserProfile, UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { CheckCircle, Star, Lock } from 'lucide-react';
+import { CheckCircle, Star, Lock, Construction } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations } from '@/lib/translations';
-import { differenceInCalendarWeeks } from 'date-fns';
+import { useAppConfig } from '@/hooks/useAppConfig';
+import { useFreeTrial } from '@/hooks/useFreeTrial';
+import { canAccessWeek } from '@/lib/accessControl';
 
 export default function SurvivalPathPage() {
-  const { user, isUserLoading: isUserLoading } = useUser();
+  const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
 
   const userProfileRef = useMemoFirebase(() => {
@@ -33,6 +35,9 @@ export default function SurvivalPathPage() {
   const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
   
   const [isMounted, setIsMounted] = useState(false);
+  const { config, isLoading: isConfigLoading } = useAppConfig();
+  const { trialDaysUsed, isTrialLoading } = useFreeTrial();
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -53,49 +58,7 @@ export default function SurvivalPathPage() {
     return completedDaysMap;
   }, [progressData]);
 
-  const { unlockedWeeks, showUpgradeButton } = useMemo(() => {
-    if (user?.email === 'Pasan.lankathilakadpl@gmail.com') {
-      return { unlockedWeeks: 12, showUpgradeButton: false };
-    }
-
-    let unlockedWeeks = 1;
-    let showUpgradeButton = true;
-    const now = new Date();
-
-    if (userProfile) {
-        const { subscriptionType, subscriptionStartDate, subscriptionExpiry, stripeCurrentPeriodEnd } = userProfile;
-        const subExpiry = subscriptionExpiry ? new Date(subscriptionExpiry) : null;
-        const stripeExpiry = stripeCurrentPeriodEnd ? new Date(stripeCurrentPeriodEnd) : null;
-
-        switch (subscriptionType) {
-            case 'lifetime':
-                unlockedWeeks = 12;
-                showUpgradeButton = false;
-                break;
-            case 'course':
-                unlockedWeeks = 12;
-                showUpgradeButton = true; // Can still upgrade to lifetime
-                break;
-            case 'monthly':
-                if (stripeExpiry && now < stripeExpiry) {
-                    unlockedWeeks = 12; // Full access during active subscription
-                }
-                showUpgradeButton = true; // Can upgrade to lifetime
-                break;
-            case 'weekly':
-                const startDate = subscriptionStartDate ? new Date(subscriptionStartDate) : null;
-                if (startDate && (!subExpiry || now < subExpiry)) {
-                    const weeksPassed = differenceInCalendarWeeks(now, startDate, { weekStartsOn: 1 });
-                    unlockedWeeks = Math.min(weeksPassed + 1, 12);
-                }
-                break;
-            case 'free':
-            default:
-                break;
-        }
-    }
-    return { unlockedWeeks, showUpgradeButton };
-  }, [userProfile, user]);
+  const isAdmin = useMemo(() => user?.email === 'Pasan.lankathilakadpl@gmail.com', [user]);
 
   if (isMounted && nativeLanguage === 'English' && targetLanguage === 'English') {
     return (
@@ -112,7 +75,7 @@ export default function SurvivalPathPage() {
     );
   }
 
-  if (!isMounted || isUserLoading || isProgressLoading || isProfileLoading) {
+  if (!isMounted || isUserLoading || isProgressLoading || isProfileLoading || isConfigLoading || isTrialLoading) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -130,6 +93,19 @@ export default function SurvivalPathPage() {
     );
   }
 
+  if (config.app_mode === 'maintenance') {
+    return (
+       <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 text-center">
+            <Construction className="h-16 w-16 mx-auto text-yellow-500 mb-4" />
+            <h1 className="text-4xl font-bold tracking-tight">Under Maintenance</h1>
+            <p className="mt-2 text-muted-foreground">LingoForge is currently undergoing maintenance. Please check back later.</p>
+        </main>
+      </div>
+    )
+  }
+
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
@@ -144,41 +120,53 @@ export default function SurvivalPathPage() {
             {Array.from({ length: totalWeeks }, (_, i) => i + 1).map((week) => {
               const completedDaysInWeek = completedDays[week] || [];
               const isWeekCompleted = completedDaysInWeek.length === 7;
-              const isLocked = week > unlockedWeeks;
+              
+              // Determine week status based on Remote Config and user data
+              const weekIsEnabled = config.lessons_weeks_enabled[`week${week}`] !== false;
+              const hasAccess = isAdmin || canAccessWeek(week, { profile: userProfile, progress: progressData, trialDaysUsed }, config);
+              
+              const isLocked = weekIsEnabled && !hasAccess;
+              const isComingSoon = !weekIsEnabled;
 
               return (
-                <AccordionItem key={week} value={`item-${week}`} disabled={isLocked}>
+                <AccordionItem key={week} value={`item-${week}`} disabled={isLocked || isComingSoon}>
                   <AccordionTrigger className="text-lg hover:no-underline data-[disabled]:cursor-not-allowed">
                     <div className="flex w-full items-center justify-between pr-4">
                       <span className="flex items-center gap-3">
-                         {isLocked ? <Lock className="h-5 w-5 text-muted-foreground" /> :
+                         {isLocked || isComingSoon ? <Lock className="h-5 w-5 text-muted-foreground" /> :
                           isWeekCompleted ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Star className="h-5 w-5 text-blue-400" />}
                          {t.week} {week}
                       </span>
                       
-                      {!isLocked && !isWeekCompleted && (
+                      {!isLocked && !isComingSoon && !isWeekCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
                             {completedDaysInWeek.length} / 7 {t.days}
                         </span>
                       )}
-                      {!isLocked && isWeekCompleted && (
+                      {!isLocked && !isComingSoon && isWeekCompleted && (
                         <span className="text-xs font-semibold uppercase tracking-wider text-green-500">{t.completed}</span>
                       )}
                       {isLocked && (
                           <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.locked}</span>
                       )}
+                       {isComingSoon && (
+                          <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Coming Soon</span>
+                      )}
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    {isLocked ? (
+                    {isComingSoon ? (
+                        <div className="text-center p-4 bg-muted/50 rounded-md">
+                            <p className="font-semibold">Coming Soon!</p>
+                            <p className="text-sm text-muted-foreground mb-4">New lessons for this week are being prepared.</p>
+                        </div>
+                    ) : isLocked ? (
                         <div className="text-center p-4 bg-muted/50 rounded-md">
                             <p className="font-semibold">{t.lessonsLocked}</p>
                             <p className="text-sm text-muted-foreground mb-4">{t.upgradeToUnlock}</p>
-                            {showUpgradeButton && (
-                                <Button asChild>
-                                    <Link href="/pricing">{t.upgradePlan}</Link>
-                                </Button>
-                            )}
+                            <Button asChild>
+                                <Link href="/pricing">{t.upgradePlan}</Link>
+                            </Button>
                         </div>
                     ) : (
                       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">

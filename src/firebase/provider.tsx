@@ -5,12 +5,14 @@ import { FirebaseApp } from 'firebase/app';
 import { Firestore } from 'firebase/firestore';
 import { Auth, User, onAuthStateChanged } from 'firebase/auth';
 import { FirebaseErrorListener } from '@/components/FirebaseErrorListener'
+import type { RemoteConfig } from 'firebase/remote-config';
 
 interface FirebaseProviderProps {
   children: ReactNode;
   firebaseApp?: FirebaseApp;
   firestore?: Firestore;
   auth?: Auth;
+  remoteConfig?: RemoteConfig;
 }
 
 // Internal state for user authentication
@@ -26,6 +28,7 @@ export interface FirebaseContextState {
   firebaseApp: FirebaseApp | null;
   firestore: Firestore | null;
   auth: Auth | null; // The Auth service instance
+  remoteConfig: RemoteConfig | null;
   // User authentication state
   user: User | null;
   isUserLoading: boolean; // True during initial auth check
@@ -37,6 +40,7 @@ export interface FirebaseServicesAndUser {
   firebaseApp: FirebaseApp | null;
   firestore: Firestore | null;
   auth: Auth | null;
+  remoteConfig: RemoteConfig | null;
   user: User | null;
   isUserLoading: boolean;
   userError: Error | null;
@@ -60,6 +64,7 @@ export const FirebaseProvider: React.FC<FirebaseProviderProps> = ({
   firebaseApp,
   firestore,
   auth,
+  remoteConfig,
 }) => {
   const [userAuthState, setUserAuthState] = useState<UserAuthState>({
     user: null,
@@ -92,18 +97,19 @@ export const FirebaseProvider: React.FC<FirebaseProviderProps> = ({
 
   // Memoize the context value
   const contextValue = useMemo((): FirebaseContextState => {
-    const servicesAvailable = !!(firebaseApp && firestore && auth);
+    const servicesAvailable = !!(firebaseApp && firestore && auth && remoteConfig);
     return {
       areServicesAvailable: servicesAvailable,
       firebaseApp: servicesAvailable ? firebaseApp : null,
       firestore: servicesAvailable ? firestore : null,
       auth: servicesAvailable ? auth : null,
+      remoteConfig: servicesAvailable ? remoteConfig : null,
       // User authentication state
       user: userAuthState.user,
       isUserLoading: userAuthState.isUserLoading,
       userError: userAuthState.userError,
     };
-  }, [firebaseApp, firestore, auth, userAuthState]);
+  }, [firebaseApp, firestore, auth, remoteConfig, userAuthState]);
 
   return (
     <FirebaseContext.Provider value={contextValue}>
@@ -128,6 +134,7 @@ export const useFirebase = (): FirebaseServicesAndUser => {
     firebaseApp: context.firebaseApp,
     firestore: context.firestore,
     auth: context.auth,
+    remoteConfig: context.remoteConfig,
     user: context.user,
     isUserLoading: context.isUserLoading,
     userError: context.userError,
@@ -150,6 +157,12 @@ export const useFirestore = (): Firestore | null => {
 export const useFirebaseApp = (): FirebaseApp | null => {
   const { firebaseApp } = useFirebase();
   return firebaseApp;
+};
+
+/** Hook to access Remote Config instance. */
+export const useRemoteConfig = (): RemoteConfig | null => {
+  const { remoteConfig } = useFirebase();
+  return remoteConfig;
 };
 
 type MemoFirebase <T> = T & {__memo?: boolean};
