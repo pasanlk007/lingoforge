@@ -17,7 +17,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { useToast } from '@/hooks/use-toast';
 
 interface CheckoutButtonProps {
-  priceId: string;
+  priceId?: string;
   mode: 'subscription' | 'payment';
   planName: string;
 }
@@ -33,6 +33,16 @@ function CheckoutButton({ priceId, mode, planName }: CheckoutButtonProps) {
     setIsLoading(true);
     if (!user || !auth) {
       router.push(`/login?redirect=/pricing`);
+      return;
+    }
+    
+    if (!priceId) {
+      toast({
+        variant: 'destructive',
+        title: 'Configuration Error',
+        description: `The price ID for the ${planName} plan is not set up yet.`,
+      });
+      setIsLoading(false);
       return;
     }
 
@@ -72,7 +82,7 @@ function CheckoutButton({ priceId, mode, planName }: CheckoutButtonProps) {
   };
 
   return (
-    <Button size="lg" className="w-full" onClick={handleCheckout} disabled={isLoading}>
+    <Button size="lg" className="w-full" onClick={handleCheckout} disabled={isLoading || !priceId}>
       {isLoading ? 'Processing...' : `Get ${planName}`}
     </Button>
   );
@@ -148,9 +158,9 @@ export default function PricingPage() {
     );
   };
 
-  const monthlyPriceId = process.env.NEXT_PUBLIC_STRIPE_MONTHLY_PRICE_ID!;
-  const coursePriceId = process.env.NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID!;
-  const lifetimePriceId = process.env.NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID!;
+  const monthlyPriceId = process.env.NEXT_PUBLIC_STRIPE_MONTHLY_PRICE_ID;
+  const coursePriceId = process.env.NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID;
+  const lifetimePriceId = process.env.NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
