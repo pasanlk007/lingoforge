@@ -7,1325 +7,268 @@
     {
       "week": 2,
       "day": 1,
-      "title": "Week 2 Day 1: Office Vocabulary",
-      "title_native": "Office Vocabulary",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 1: Asking for Help",
+      "title_native": "Woche 2, Tag 1: Um Hilfe bitten",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_1_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_1_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_1_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_1_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_1_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_1_1","target":"Hilfe","phonetic":"Hil-fuh","native_meaning":"Help","english":"Help","example_sentence_target":"Können Sie mir helfen?","example_sentence_native":"Can you help me?","example_sentence_phonetic":"Kurn-en zee meer hel-fen?"},
+        {"id":"w2_1_2","target":"Entschuldigung","phonetic":"Ent-shool-di-goong","native_meaning":"Excuse me / Sorry","english":"Excuse me / Sorry","example_sentence_target":"Entschuldigung, wo ist der Bahnhof?","example_sentence_native":"Excuse me, where is the train station?","example_sentence_phonetic":"Ent-shool-di-goong, vo ist der barn-hohf?"},
+        {"id":"w2_1_3","target":"Ich brauche...","phonetic":"Ish brow-khuh...","native_meaning":"I need...","english":"I need...","example_sentence_target":"Ich brauche Hilfe.","example_sentence_native":"I need help.","example_sentence_phonetic":"Ish brow-khuh hil-fuh."},
+        {"id":"w2_1_4","target":"Sprechen Sie Englisch?","phonetic":"Shpre-khen zee Eng-lish?","native_meaning":"Do you speak English?","english":"Do you speak English?","example_sentence_target":"Entschuldigung, sprechen Sie Englisch?","example_sentence_native":"Excuse me, do you speak English?","example_sentence_phonetic":"Ent-shool-di-goong, shpre-khen zee Eng-lish?"},
+        {"id":"w2_1_5","target":"Ich verstehe nicht.","phonetic":"Ish fer-shtay-uh nisht.","native_meaning":"I don't understand.","english":"I don't understand.","example_sentence_target":"Es tut mir leid, ich verstehe nicht.","example_sentence_native":"I'm sorry, I don't understand.","example_sentence_phonetic":"Es toot meer lite, ish fer-shtay-uh nisht."},
+        {"id":"w2_1_6","target":"Können Sie das wiederholen?","phonetic":"Kurn-en zee das vee-der-hoh-len?","native_meaning":"Can you repeat that?","english":"Can you repeat that?","example_sentence_target":"Können Sie das bitte wiederholen?","example_sentence_native":"Can you please repeat that?","example_sentence_phonetic":"Kurn-en zee das bit-tuh vee-der-hoh-len?"}
+      ],
+      "sentences": [
+        {"id":"s2_1_1","target":"Ich habe mich verlaufen.","native":"I am lost.","phonetic":"Ish ha-buh mish fer-low-fen."},
+        {"id":"s2_1_2","target":"Wo finde ich eine Toilette?","native":"Where can I find a toilet?","phonetic":"Vo fin-duh ish eyen-uh toy-let-uh?"},
+        {"id":"s2_1_3","target":"Wie viel kostet das?","native":"How much does this cost?","phonetic":"Vee feel kos-tet das?"},
+        {"id":"s2_1_4","target":"Ein Moment, bitte.","native":"One moment, please.","phonetic":"Eyen mo-ment, bit-tuh."}
       ],
       "dialogues": [
-        {
-          "id": "d2_1_1",
-          "context": "Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_1_2",
-          "context": "Formal Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_1_1","context":"Asking for directions.","lines":[{"speaker":"A","target":"Entschuldigung, können Sie mir helfen?","native":"Excuse me, can you help me?","phonetic":"Ent-shool-di-goong, kurn-en zee meer hel-fen?"},{"speaker":"B","target":"Ja, natürlich. Was suchen Sie?","native":"Yes, of course. What are you looking for?","phonetic":"Ya, na-teer-lish. Vas zoo-khen zee?"}]},
+        {"id":"d2_1_2","context":"Not understanding someone.","lines":[{"speaker":"A","target":"Der Bus fährt um drei Uhr ab.","native":"The bus leaves at three o'clock.","phonetic":"Der boos fairt oom dry oor ap."},{"speaker":"B","target":"Entschuldigung, ich verstehe nicht. Können Sie das wiederholen?","native":"Sorry, I don't understand. Can you repeat that?","phonetic":"Ent-shool-di-goong, ish fer-shtay-uh nisht. Kurn-en zee das vee-der-hoh-len?"}]},
+        {"id":"d2_1_3","context":"Checking if someone speaks English.","lines":[{"speaker":"A","target":"Sprechen Sie Englisch?","native":"Do you speak English?","phonetic":"Shpre-khen zee Eng-lish?"},{"speaker":"B","target":"Ein wenig. Wie kann ich Ihnen helfen?","native":"A little. How can I help you?","phonetic":"Eyen vay-nish. Vee kan ish ee-nen hel-fen?"}]},
+        {"id":"d2_1_4","context":"Needing help in a shop.","lines":[{"speaker":"A","target":"Guten Tag. Ich brauche Hilfe.","native":"Good day. I need help.","phonetic":"Goo-ten tahk. Ish brow-khuh hil-fuh."},{"speaker":"B","target":"Sicher. Was brauchen Sie?","native":"Certainly. What do you need?","phonetic":"Zish-er. Vas brow-khen zee?"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_1_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_1_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_1_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_1_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_1_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_1_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_1_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_1_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_1_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_1_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_1_1","sentence":"___ Sie mir helfen?","answer":"Können","hint":"Can you help me?"}],
+        "matching": [{"id":"m2_1_1","target":"Ich verstehe nicht.","native":"I don't understand."}],
+        "sentenceScramble": [{"id":"ss2_1_1","scrambled":["Sie","Englisch","sprechen","?"],"correct":"Sprechen Sie Englisch?","nativeHint":"Do you speak English?"}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D1"
-      }
+      "cultural_note": "Germans are generally direct and appreciate politeness. Starting a request with 'Entschuldigung' (Excuse me) is always a good idea.",
+      "pronunciation_tip": "The German 'ch' sound in 'Ich' is soft, made in the front of the mouth. It's different from the harder 'ch' in 'Bach' which comes from the back of the throat.",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D1-Help"}
     },
     {
       "week": 2,
       "day": 2,
-      "title": "Week 2 Day 2: Work Phrases",
-      "title_native": "Work Phrases",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 2: Understanding Questions",
+      "title_native": "Woche 2, Tag 2: Fragen verstehen",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_2_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_2_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_2_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_2_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_2_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_2_1","target":"Wer?","phonetic":"Vair?","native_meaning":"Who?","english":"Who?","example_sentence_target":"Wer ist das?","example_sentence_native":"Who is that?","example_sentence_phonetic":"Vair ist das?"},
+        {"id":"w2_2_2","target":"Was?","phonetic":"Vas?","native_meaning":"What?","english":"What?","example_sentence_target":"Was ist das?","example_sentence_native":"What is that?","example_sentence_phonetic":"Vas ist das?"},
+        {"id":"w2_2_3","target":"Wann?","phonetic":"Van?","native_meaning":"When?","english":"When?","example_sentence_target":"Wann kommt der Zug?","example_sentence_native":"When does the train arrive?","example_sentence_phonetic":"Van komt der tsook?"},
+        {"id":"w2_2_4","target":"Wo?","phonetic":"Vo?","native_meaning":"Where?","english":"Where?","example_sentence_target":"Wo wohnen Sie?","example_sentence_native":"Where do you live?","example_sentence_phonetic":"Vo voh-nen zee?"},
+        {"id":"w2_2_5","target":"Warum?","phonetic":"Va-room?","native_meaning":"Why?","english":"Why?","example_sentence_target":"Warum ist der Laden geschlossen?","example_sentence_native":"Why is the shop closed?","example_sentence_phonetic":"Va-room ist der lah-den ge-shlos-en?"},
+        {"id":"w2_2_6","target":"Wie?","phonetic":"Vee?","native_meaning":"How?","english":"How?","example_sentence_target":"Wie geht es Ihnen?","example_sentence_native":"How are you?","example_sentence_phonetic":"Vee gayt es ee-nen?"}
+      ],
+      "sentences": [
+        {"id":"s2_2_1","target":"Wo ist die Apotheke?","native":"Where is the pharmacy?","phonetic":"Vo ist dee apo-tay-kuh?"},
+        {"id":"s2_2_2","target":"Was ist Ihre Adresse?","native":"What is your address?","phonetic":"Vas ist ee-ruh a-dres-uh?"},
+        {"id":"s2_2_3","target":"Wann öffnet das Museum?","native":"When does the museum open?","phonetic":"Van urf-net das moo-zay-oom?"},
+        {"id":"s2_2_4","target":"Wer ist der Manager?","native":"Who is the manager?","phonetic":"Vair ist der ma-na-jer?"}
       ],
       "dialogues": [
-        {
-          "id": "d2_2_1",
-          "context": "Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_2_2",
-          "context": "Formal Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_2_1","context":"Asking what something is.","lines":[{"speaker":"A","target":"Entschuldigung, was ist das?","native":"Excuse me, what is that?","phonetic":"Ent-shool-di-goong, vas ist das?"},{"speaker":"B","target":"Das ist ein Apfelstrudel.","native":"That is an apple strudel.","phonetic":"Das ist eyn ap-fel-shtroo-del."}]},
+        {"id":"d2_2_2","context":"Asking for a location.","lines":[{"speaker":"A","target":"Wo ist der nächste Supermarkt?","native":"Where is the nearest supermarket?","phonetic":"Vo ist der naykh-stuh zoo-per-markt?"},{"speaker":"B","target":"Gehen Sie geradeaus, dann links.","native":"Go straight, then left.","phonetic":"Gay-en zee ge-rah-duh-ows, dan links."}]},
+        {"id":"d2_2_3","context":"Asking for the time.","lines":[{"speaker":"A","target":"Wann schließt die Bank?","native":"When does the bank close?","phonetic":"Van shleest dee bank?"},{"speaker":"B","target":"Um fünf Uhr.","native":"At five o'clock.","phonetic":"Oom fewnf oor."}]},
+        {"id":"d2_2_4","context":"Asking how to do something.","lines":[{"speaker":"A","target":"Wie komme ich zum Flughafen?","native":"How do I get to the airport?","phonetic":"Vee kom-uh ish tsoom flook-hah-fen?"},{"speaker":"B","target":"Nehmen Sie die U-Bahn, Linie U6.","native":"Take the subway, line U6.","phonetic":"Nay-men zee dee oo-bahn, lee-nee-uh oo-zeks."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_2_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_2_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_2_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_2_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_2_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_2_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_2_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_2_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_2_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_2_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_2_1","sentence":"___ ist die nächste Haltestelle?","answer":"Wo","hint":"Where is the next stop?"}],
+        "matching": [{"id":"m2_2_1","target":"Wann?","native":"When?"}],
+        "sentenceScramble": [{"id":"ss2_2_1","scrambled":["ist","das","Was","?"],"correct":"Was ist das?","nativeHint":"What is that?"}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D2"
-      }
+      "cultural_note": "German question words (W-Fragen) like Wer, Was, Wann, Wo, Warum, Wie usually come at the beginning of the sentence.",
+      "pronunciation_tip": "The 'W' in German words like 'Wo' and 'Was' is pronounced like the English 'V'.",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D2-Questions"}
     },
     {
       "week": 2,
       "day": 3,
-      "title": "Week 2 Day 3: Email & Phone",
-      "title_native": "Email & Phone",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 3: Giving Simple Information",
+      "title_native": "Woche 2, Tag 3: Einfache Informationen geben",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_3_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_3_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_3_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_3_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_3_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_3_1","target":"Ja","phonetic":"Ya","native_meaning":"Yes","english":"Yes","example_sentence_target":"Ja, bitte.","example_sentence_native":"Yes, please.","example_sentence_phonetic":"Ya, bit-tuh."},
+        {"id":"w2_3_2","target":"Nein","phonetic":"Nine","native_meaning":"No","english":"No","example_sentence_target":"Nein, danke.","example_sentence_native":"No, thank you.","example_sentence_phonetic":"Nine, dan-kuh."},
+        {"id":"w2_3_3","target":"Ich bin...","phonetic":"Ish bin...","native_meaning":"I am...","english":"I am...","example_sentence_target":"Ich bin aus Amerika.","example_sentence_native":"I am from America.","example_sentence_phonetic":"Ish bin ows a-may-ree-ka."},
+        {"id":"w2_3_4","target":"Ich habe...","phonetic":"Ish ha-buh...","native_meaning":"I have...","english":"I have...","example_sentence_target":"Ich habe eine Frage.","example_sentence_native":"I have a question.","example_sentence_phonetic":"Ish ha-buh eyen-uh frah-guh."},
+        {"id":"w2_3_5","target":"Hier","phonetic":"Heer","native_meaning":"Here","english":"Here","example_sentence_target":"Der Eingang ist hier.","example_sentence_native":"The entrance is here.","example_sentence_phonetic":"Der eyn-gang ist heer."},
+        {"id":"w2_3_6","target":"Dort","phonetic":"Dort","native_meaning":"There","english":"There","example_sentence_target":"Die Kasse ist dort.","example_sentence_native":"The checkout is there.","example_sentence_phonetic":"Dee kas-suh ist dort."}
+      ],
+      "sentences": [
+        {"id":"s2_3_1","target":"Mein Name ist Anna.","native":"My name is Anna.","phonetic":"Meyn nah-muh ist Anna."},
+        {"id":"s2_3_2","target":"Ich komme aus Kanada.","native":"I come from Canada.","phonetic":"Ish kom-uh ows Ka-na-da."},
+        {"id":"s2_3_3","target":"Das ist richtig.","native":"That is correct.","phonetic":"Das ist rish-tish."},
+        {"id":"s2_3_4","target":"Das ist falsch.","native":"That is wrong.","phonetic":"Das ist falsh."}
       ],
       "dialogues": [
-        {
-          "id": "d2_3_1",
-          "context": "Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_3_2",
-          "context": "Formal Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_3_1","context":"Answering a yes/no question.","lines":[{"speaker":"A","target":"Sprechen Sie Deutsch?","native":"Do you speak German?","phonetic":"Shpre-khen zee Doytsh?"},{"speaker":"B","target":"Ja, ein bisschen.","native":"Yes, a little bit.","phonetic":"Ya, eyn bis-khen."}]},
+        {"id":"d2_3_2","context":"Stating your name.","lines":[{"speaker":"A","target":"Wie heißen Sie?","native":"What is your name?","phonetic":"Vee heyess-en zee?"},{"speaker":"B","target":"Ich bin Paul.","native":"I am Paul.","phonetic":"Ish bin Paul."}]},
+        {"id":"d2_3_3","context":"Pointing something out.","lines":[{"speaker":"A","target":"Wo ist mein Koffer?","native":"Where is my suitcase?","phonetic":"Vo ist meyn kof-fer?"},{"speaker":"B","target":"Ihr Koffer ist dort.","native":"Your suitcase is there.","phonetic":"Eer kof-fer ist dort."}]},
+        {"id":"d2_3_4","context":"Confirming information.","lines":[{"speaker":"A","target":"Ist das der Zug nach Berlin?","native":"Is this the train to Berlin?","phonetic":"Ist das der tsook nakh Ber-leen?"},{"speaker":"B","target":"Ja, das ist richtig.","native":"Yes, that is correct.","phonetic":"Ya, das ist rish-tish."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_3_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_3_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_3_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_3_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_3_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_3_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_3_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_3_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_3_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_3_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_3_1","sentence":"___, ich spreche ein wenig Deutsch.","answer":"Ja","hint":"Yes, I speak a little German."}],
+        "matching": [{"id":"m2_3_1","target":"Hier","native":"Here"}],
+        "sentenceScramble": [{"id":"ss2_3_1","scrambled":["ist","Name","Mein","Peter"],"correct":"Mein Name ist Peter","nativeHint":"My name is Peter"}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D3"
-      }
+      "cultural_note": "When giving your name, you can say 'Ich bin [Name]' (I am [Name]) or 'Mein Name ist [Name]' (My name is [Name]). Both are common.",
+      "pronunciation_tip": "The 'ei' in 'Nein' is pronounced like the 'i' in the English word 'nine'.",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D3-Info"}
     },
     {
       "week": 2,
       "day": 4,
-      "title": "Week 2 Day 4: Meetings",
-      "title_native": "Meetings",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 4: Asking for Location",
+      "title_native": "Woche 2, Tag 4: Nach dem Ort fragen",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_4_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_4_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_4_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_4_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_4_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_4_1","target":"die Straße","phonetic":"dee Shtrah-suh","native_meaning":"the street","english":"the street","example_sentence_target":"Wie heißt diese Straße?","example_sentence_native":"What is the name of this street?","example_sentence_phonetic":"Vee heysst dee-zuh shtrah-suh?"},
+        {"id":"w2_4_2","target":"die Stadt","phonetic":"dee Shtat","native_meaning":"the city","english":"the city","example_sentence_target":"Ich wohne in der Stadt.","example_sentence_native":"I live in the city.","example_sentence_phonetic":"Ish voh-nuh in der shtat."},
+        {"id":"w2_4_3","target":"in der Nähe","phonetic":"in der Nay-uh","native_meaning":"nearby","english":"nearby","example_sentence_target":"Gibt es hier ein Café in der Nähe?","example_sentence_native":"Is there a cafe nearby?","example_sentence_phonetic":"Gipt es heer eyn ka-fay in der nay-uh?"},
+        {"id":"w2_4_4","target":"weit weg","phonetic":"veyt vek","native_meaning":"far away","english":"far away","example_sentence_target":"Der Flughafen ist weit weg.","example_sentence_native":"The airport is far away.","example_sentence_phonetic":"Der flook-hah-fen ist veyt vek."},
+        {"id":"w2_4_5","target":"die Adresse","phonetic":"dee a-dres-uh","native_meaning":"the address","english":"the address","example_sentence_target":"Was ist die Adresse?","example_sentence_native":"What is the address?","example_sentence_phonetic":"Vas ist dee a-dres-uh?"},
+        {"id":"w2_4_6","target":"die Karte","phonetic":"dee Kar-tuh","native_meaning":"the map / card","english":"the map / card","example_sentence_target":"Kann ich das auf der Karte sehen?","example_sentence_native":"Can I see that on the map?","example_sentence_phonetic":"Kan ish das owf der kar-tuh zay-en?"}
+      ],
+      "sentences": [
+        {"id":"s2_4_1","target":"Ich suche die Post.","native":"I am looking for the post office.","phonetic":"Ish zoo-khuh dee post."},
+        {"id":"s2_4_2","target":"Ist das in der Nähe?","native":"Is that nearby?","phonetic":"Ist das in der nay-uh?"},
+        {"id":"s2_4_3","target":"Das Hotel ist in der Schillerstraße.","native":"The hotel is on Schiller Street.","phonetic":"Das ho-tel ist in der Shil-ler-shtrah-suh."},
+        {"id":"s2_4_4","target":"Zeigen Sie es mir auf der Karte.","native":"Show it to me on the map.","phonetic":"Tseyegen zee es meer owf der kar-tuh."}
       ],
       "dialogues": [
-        {
-          "id": "d2_4_1",
-          "context": "Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_4_2",
-          "context": "Formal Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_4_1","context":"Looking for a specific street.","lines":[{"speaker":"A","target":"Entschuldigung, wo ist die Hauptstraße?","native":"Excuse me, where is Main Street?","phonetic":"Ent-shool-di-goong, vo ist dee howpt-shtrah-suh?"},{"speaker":"B","target":"Die Hauptstraße ist da vorne.","native":"Main Street is up ahead.","phonetic":"Dee howpt-shtrah-suh ist da for-nuh."}]},
+        {"id":"d2_4_2","context":"Asking if a place is far.","lines":[{"speaker":"A","target":"Ist das Museum weit weg?","native":"Is the museum far away?","phonetic":"Ist das moo-zay-oom veyt vek?"},{"speaker":"B","target":"Nein, es sind nur fünf Minuten zu Fuß.","native":"No, it's only a five-minute walk.","phonetic":"Nine, es zint noor fewnf mi-noo-ten tsoo foos."}]},
+        {"id":"d2_4_3","context":"Asking for the address.","lines":[{"speaker":"A","target":"Was ist die Adresse vom Restaurant?","native":"What is the restaurant's address?","phonetic":"Vas ist dee a-dres-uh fom res-to-rong?"},{"speaker":"B","target":"Die Adresse ist Goethestraße 10.","native":"The address is Goethe Street 10.","phonetic":"Dee a-dres-uh ist Gur-tuh-shtrah-suh tsayn."}]},
+        {"id":"d2_4_4","context":"Finding a place on a map.","lines":[{"speaker":"A","target":"Ich kann es nicht finden.","native":"I can't find it.","phonetic":"Ish kan es nisht fin-den."},{"speaker":"B","target":"Hier, ich zeige es Ihnen auf der Karte.","native":"Here, I'll show you on the map.","phonetic":"Heer, ish tseye-guh es ee-nen owf der kar-tuh."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_4_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_4_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_4_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_4_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_4_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_4_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_4_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_4_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_4_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_4_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_4_1","sentence":"Gibt es hier ein Hotel ___?","answer":"in der Nähe","hint":"Is there a hotel nearby?"}],
+        "matching": [{"id":"m2_4_1","target":"die Stadt","native":"the city"}],
+        "sentenceScramble": [{"id":"ss2_4_1","scrambled":["ist","Wo","Bahnhof","der","?"],"correct":"Wo ist der Bahnhof?","nativeHint":"Where is the train station?"}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D4"
-      }
+      "cultural_note": "In Germany, street names often come after the name (e.g., 'Goethestraße'). The number follows the street name.",
+      "pronunciation_tip": "The 'ß' (called 'Eszett') is pronounced like a sharp 's' sound. It's found in words like 'Straße' (street).",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D4-Location"}
     },
     {
       "week": 2,
       "day": 5,
-      "title": "Week 2 Day 5: Job Titles",
-      "title_native": "Job Titles",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 5: Directions",
+      "title_native": "Woche 2, Tag 5: Wegbeschreibungen",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_5_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_5_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_5_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_5_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_5_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_5_1","target":"links","phonetic":"links","native_meaning":"left","english":"left","example_sentence_target":"Gehen Sie an der Ampel links.","example_sentence_native":"Turn left at the traffic light.","example_sentence_phonetic":"Gay-en zee an der am-pel links."},
+        {"id":"w2_5_2","target":"rechts","phonetic":"reshts","native_meaning":"right","english":"right","example_sentence_target":"Die Bäckerei ist auf der rechten Seite.","example_sentence_native":"The bakery is on the right side.","example_sentence_phonetic":"Dee bek-uh-reye ist owf der resh-ten zeye-tuh."},
+        {"id":"w2_5_3","target":"geradeaus","phonetic":"ge-rah-duh-ows","native_meaning":"straight ahead","english":"straight ahead","example_sentence_target":"Gehen Sie einfach geradeaus.","example_sentence_native":"Just go straight ahead.","example_sentence_phonetic":"Gay-en zee eyn-fakh ge-rah-duh-ows."},
+        {"id":"w2_5_4","target":"an der Ecke","phonetic":"an der Ek-uh","native_meaning":"at the corner","english":"at the corner","example_sentence_target":"Die Apotheke ist an der Ecke.","example_sentence_native":"The pharmacy is at the corner.","example_sentence_phonetic":"Dee apo-tay-kuh ist an der ek-uh."},
+        {"id":"w2_5_5","target":"über die Straße","phonetic":"ew-ber dee Shtrah-suh","native_meaning":"across the street","english":"across the street","example_sentence_target":"Der Park ist über die Straße.","example_sentence_native":"The park is across the street.","example_sentence_phonetic":"Der park ist ew-ber dee shtrah-suh."},
+        {"id":"w2_5_6","target":"neben","phonetic":"nay-ben","native_meaning":"next to","english":"next to","example_sentence_target":"Die Bank ist neben der Post.","example_sentence_native":"The bank is next to the post office.","example_sentence_phonetic":"Dee bank ist nay-ben der post."}
+      ],
+      "sentences": [
+        {"id":"s2_5_1","target":"Die erste Straße links.","native":"The first street on the left.","phonetic":"Dee air-stuh shtrah-suh links."},
+        {"id":"s2_5_2","target":"Die zweite Straße rechts.","native":"The second street on the right.","phonetic":"Dee tsveye-tuh shtrah-suh reshts."},
+        {"id":"s2_5_3","target":"Gehen Sie bis zur Kreuzung.","native":"Go to the intersection.","phonetic":"Gay-en zee bis tsoor kroy-tsoong."},
+        {"id":"s2_5_4","target":"Es ist auf der linken Seite.","native":"It's on the left side.","phonetic":"Es ist owf der lin-ken zeye-tuh."}
       ],
       "dialogues": [
-        {
-          "id": "d2_5_1",
-          "context": "Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_5_2",
-          "context": "Formal Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_5_1","context":"Getting directions to a pharmacy.","lines":[{"speaker":"A","target":"Entschuldigung, wo ist die Apotheke?","native":"Excuse me, where is the pharmacy?","phonetic":"Ent-shool-di-goong, vo ist dee apo-tay-kuh?"},{"speaker":"B","target":"Gehen Sie geradeaus und dann die erste Straße rechts.","native":"Go straight and then the first street on the right.","phonetic":"Gay-en zee ge-rah-duh-ows oont dan dee air-stuh shtrah-suh reshts."}]},
+        {"id":"d2_5_2","context":"Confirming a location.","lines":[{"speaker":"A","target":"Ist das Restaurant an der Ecke?","native":"Is the restaurant on the corner?","phonetic":"Ist das res-to-rong an der ek-uh?"},{"speaker":"B","target":"Ja, genau. Neben dem Kino.","native":"Yes, exactly. Next to the cinema.","phonetic":"Ya, ge-now. Nay-ben dem kee-no."}]},
+        {"id":"d2_5_3","context":"Asking for directions to the subway.","lines":[{"speaker":"A","target":"Wie komme ich zur U-Bahn?","native":"How do I get to the subway?","phonetic":"Vee kom-uh ish tsoor oo-bahn?"},{"speaker":"B","target":"Über die Straße, dann links.","native":"Across the street, then left.","phonetic":"Ew-ber dee shtrah-suh, dan links."}]},
+        {"id":"d2_5_4","context":"Being told you're going the wrong way.","lines":[{"speaker":"A","target":"Gehen Sie in die andere Richtung.","native":"You are going in the other direction.","phonetic":"Gay-en zee in dee an-duh-ruh rish-toong."},{"speaker":"B","target":"Oh, danke!","native":"Oh, thanks!","phonetic":"Oh, dan-kuh!"}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_5_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_5_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_5_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_5_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_5_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_5_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_5_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_5_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_5_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_5_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_5_1","sentence":"Gehen Sie an der Kreuzung ___.","answer":"rechts","hint":"Turn right at the intersection."}],
+        "matching": [{"id":"m2_5_1","target":"geradeaus","native":"straight ahead"}],
+        "sentenceScramble": [{"id":"ss2_5_1","scrambled":["Die","ist","Post","neben","der","Bank"],"correct":"Die Bank ist neben der Post","nativeHint":"The bank is next to the post office."}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D5"
-      }
+      "cultural_note": "Germans often use landmarks for directions. It's helpful to know words like 'die Ampel' (traffic light), 'die Kreuzung' (intersection), and 'die Brücke' (bridge).",
+      "pronunciation_tip": "The 'r' at the start of a word like 'rechts' is lightly rolled or gargled in the back of the throat in standard German.",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D5-Directions"}
     },
     {
       "week": 2,
       "day": 6,
-      "title": "Week 2 Day 6: Working Hours",
-      "title_native": "Working Hours",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 6: Public Places",
+      "title_native": "Woche 2, Tag 6: Öffentliche Orte",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_6_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_6_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_6_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_6_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_6_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_6_1","target":"der Bahnhof","phonetic":"der Barn-hohf","native_meaning":"the train station","english":"the train station","example_sentence_target":"Der Zug fährt vom Bahnhof ab.","example_sentence_native":"The train departs from the station.","example_sentence_phonetic":"Der tsook fairt fom barn-hohf ap."},
+        {"id":"w2_6_2","target":"der Flughafen","phonetic":"der Flook-hah-fen","native_meaning":"the airport","english":"the airport","example_sentence_target":"Wir müssen zum Flughafen.","example_sentence_native":"We have to go to the airport.","example_sentence_phonetic":"Veer mews-en tsoom flook-hah-fen."},
+        {"id":"w2_6_3","target":"das Krankenhaus","phonetic":"das Kran-ken-hows","native_meaning":"the hospital","english":"the hospital","example_sentence_target":"Ich muss ins Krankenhaus.","example_sentence_native":"I have to go to the hospital.","example_sentence_phonetic":"Ish moos ins kran-ken-hows."},
+        {"id":"w2_6_4","target":"die Polizei","phonetic":"dee Po-li-tseye","native_meaning":"the police","english":"the police","example_sentence_target":"Rufen Sie die Polizei!","example_sentence_native":"Call the police!","example_sentence_phonetic":"Roo-fen zee dee po-li-tseye!"},
+        {"id":"w2_6_5","target":"die Bank","phonetic":"dee Bank","native_meaning":"the bank","english":"the bank","example_sentence_target":"Ich gehe zur Bank, um Geld abzuheben.","example_sentence_native":"I'm going to the bank to withdraw money.","example_sentence_phonetic":"Ish gay-uh tsoor bank, oom gelt ap-tsoo-hay-ben."},
+        {"id":"w2_6_6","target":"das Restaurant","phonetic":"das Res-to-rong","native_meaning":"the restaurant","english":"the restaurant","example_sentence_target":"Lass uns in ein Restaurant gehen.","example_sentence_native":"Let's go to a restaurant.","example_sentence_phonetic":"Las oons in eyn res-to-rong gay-en."}
+      ],
+      "sentences": [
+        {"id":"s2_6_1","target":"Wo ist das nächste Krankenhaus?","native":"Where is the nearest hospital?","phonetic":"Vo ist das naykh-stuh kran-ken-hows?"},
+        {"id":"s2_6_2","target":"Ich muss zum Bahnhof.","native":"I have to go to the train station.","phonetic":"Ish moos tsoom barn-hohf."},
+        {"id":"s2_6_3","target":"Gibt es hier eine Bank in der Nähe?","native":"Is there a bank nearby?","phonetic":"Gipt es heer eyen-uh bank in der nay-uh?"},
+        {"id":"s2_6_4","target":"Der Flughafen ist nicht weit von hier.","native":"The airport is not far from here.","phonetic":"Der flook-hah-fen ist nisht veyt fon heer."}
       ],
       "dialogues": [
-        {
-          "id": "d2_6_1",
-          "context": "Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_6_2",
-          "context": "Formal Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_6_1","context":"Asking for the hospital.","lines":[{"speaker":"A","target":"Entschuldigung, ich suche das Krankenhaus.","native":"Excuse me, I'm looking for the hospital.","phonetic":"Ent-shool-di-goong, ish zoo-khuh das kran-ken-hows."},{"speaker":"B","target":"Es ist zwei Straßen weiter, auf der rechten Seite.","native":"It's two streets further, on the right side.","phonetic":"Es ist tsveye shtrah-sen veye-ter, owf der resh-ten zeye-tuh."}]},
+        {"id":"d2_6_2","context":"In a taxi to the airport.","lines":[{"speaker":"A","target":"Zum Flughafen, bitte.","native":"To the airport, please.","phonetic":"Tsoom flook-hah-fen, bit-tuh."},{"speaker":"B","target":"Sicher, sofort.","native":"Certainly, right away.","phonetic":"Zish-er, zo-fort."}]},
+        {"id":"d2_6_3","context":"Reporting an emergency.","lines":[{"speaker":"A","target":"Hilfe! Rufen Sie die Polizei!","native":"Help! Call the police!","phonetic":"Hil-fuh! Roo-fen zee dee po-li-tseye!"},{"speaker":"B","target":"Was ist passiert?","native":"What happened?","phonetic":"Vas ist pas-seert?"}]},
+        {"id":"d2_6_4","context":"Looking for a restaurant.","lines":[{"speaker":"A","target":"Können Sie ein gutes Restaurant empfehlen?","native":"Can you recommend a good restaurant?","phonetic":"Kurn-en zee eyn goo-tes res-to-rong em-fay-len?"},{"speaker":"B","target":"Ja, das Restaurant 'Zum Bären' ist sehr gut.","native":"Yes, the restaurant 'To the Bear' is very good.","phonetic":"Ya, das res-to-rong 'Tsoom Bay-ren' ist zair goot."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_6_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_6_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_6_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_6_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_6_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_6_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_6_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_6_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_6_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_6_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_6_1","sentence":"Der Zug nach München fährt von ___ 5 ab.","answer":"Bahnhof","hint":"The train to Munich leaves from station 5."}],
+        "matching": [{"id":"m2_6_1","target":"die Polizei","native":"the police"}],
+        "sentenceScramble": [{"id":"ss2_6_1","scrambled":["Krankenhaus","das","ist","Wo","?"],"correct":"Wo ist das Krankenhaus?","nativeHint":"Where is the hospital?"}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D6"
-      }
+      "cultural_note": "In Germany, public services like hospitals and police are very reliable. The emergency number for police is 110 and for an ambulance/fire department is 112.",
+      "pronunciation_tip": "The 'h' in 'Bahnhof' is silent; it lengthens the 'a' vowel sound before it. So it sounds like 'Barn-hohf'.",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D6-Places"}
     },
     {
       "week": 2,
       "day": 7,
-      "title": "Week 2 Day 7: Work Culture",
-      "title_native": "Work Culture",
-      "theme": "At the Workplace",
+      "title": "Week 2, Day 7: Travel",
+      "title_native": "Woche 2, Tag 7: Reisen",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_7_1",
-          "target": "Arbeit",
-          "phonetic": "AR-bite",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Arbeit.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_7_2",
-          "target": "Büro",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Büro.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_7_3",
-          "target": "Besprechung",
-          "phonetic": "beh-SHPRE-shoong",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Besprechung.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_7_4",
-          "target": "Kollege",
-          "phonetic": "ko-LAY-guh",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Kollege.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_7_5",
-          "target": "Chef",
-          "phonetic": "shef",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Chef.",
-          "example_sentence_native": "Boss."
-        }
+        {"id":"w2_7_1","target":"der Zug","phonetic":"der Tsook","native_meaning":"the train","english":"the train","example_sentence_target":"Wann fährt der nächste Zug?","example_sentence_native":"When does the next train leave?","example_sentence_phonetic":"Van fairt der naykh-stuh tsook?"},
+        {"id":"w2_7_2","target":"der Bus","phonetic":"der Boos","native_meaning":"the bus","english":"the bus","example_sentence_target":"Ich nehme den Bus.","example_sentence_native":"I'm taking the bus.","example_sentence_phonetic":"Ish nay-muh den boos."},
+        {"id":"w2_7_3","target":"das Taxi","phonetic":"das Tak-see","native_meaning":"the taxi","english":"the taxi","example_sentence_target":"Können Sie mir ein Taxi rufen?","example_sentence_native":"Can you call me a taxi?","phonetic":"Kurn-en zee meer eyn tak-see roo-fen?"},
+        {"id":"w2_7_4","target":"die Fahrkarte","phonetic":"dee Far-kar-tuh","native_meaning":"the ticket","english":"the ticket","example_sentence_target":"Ich brauche eine Fahrkarte nach Berlin.","example_sentence_native":"I need a ticket to Berlin.","example_sentence_phonetic":"Ish brow-khuh eyen-uh far-kar-tuh nakh Ber-leen."},
+        {"id":"w2_7_5","target":"der Koffer","phonetic":"der Kof-fer","native_meaning":"the suitcase","english":"the suitcase","example_sentence_target":"Mein Koffer ist sehr schwer.","example_sentence_native":"My suitcase is very heavy.","example_sentence_phonetic":"Meyn kof-fer ist zair shvair."},
+        {"id":"w2_7_6","target":"das Gleis","phonetic":"das Gleyss","native_meaning":"the platform (train)","english":"the platform (train)","example_sentence_target":"Der Zug fährt von Gleis 3.","example_sentence_native":"The train departs from platform 3.","example_sentence_phonetic":"Der tsook fairt fon gleyss dry."}
+      ],
+      "sentences": [
+        {"id":"s2_7_1","target":"Eine Fahrkarte, bitte.","native":"One ticket, please.","phonetic":"Eyen-uh far-kar-tuh, bit-tuh."},
+        {"id":"s2_7_2","target":"Wo ist die Bushaltestelle?","native":"Where is the bus stop?","phonetic":"Vo ist dee boos-hal-tuh-shtel-uh?"},
+        {"id":"s2_7_3","target":"Ist dieser Platz frei?","native":"Is this seat free?","phonetic":"Ist dee-zer plats freye?"},
+        {"id":"s2_7_4","target":"Ich möchte nach Hamburg.","native":"I would like to go to Hamburg.","phonetic":"Ish mersh-tuh nakh Ham-boork."}
       ],
       "dialogues": [
-        {
-          "id": "d2_7_1",
-          "context": "Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Arbeit!",
-              "native": "Work!",
-              "phonetic": "AR-bite"
-            },
-            {
-              "speaker": "B",
-              "target": "Arbeit! Büro!",
-              "native": "Work! Office!",
-              "phonetic": "AR-bite byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            }
-          ]
-        },
-        {
-          "id": "d2_7_2",
-          "context": "Formal Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Büro!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Besprechung!",
-              "native": "Meeting!",
-              "phonetic": "beh-SHPRE-shoong"
-            },
-            {
-              "speaker": "A",
-              "target": "Kollege! Chef!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LAY-guh shef"
-            }
-          ]
-        }
+        {"id":"d2_7_1","context":"Buying a train ticket.","lines":[{"speaker":"A","target":"Eine Fahrkarte nach München, bitte.","native":"A ticket to Munich, please.","phonetic":"Eyen-uh far-kar-tuh nakh Mewn-khen, bit-tuh."},{"speaker":"B","target":"Einfach oder hin und zurück?","native":"Single or return?","phonetic":"Eyen-fakh oh-der hin oont tsoo-rewk?"}]},
+        {"id":"d2_7_2","context":"Finding the correct platform.","lines":[{"speaker":"A","target":"Von welchem Gleis fährt der Zug?","native":"From which platform does the train depart?","phonetic":"Fon vel-shem gleyss fairt der tsook?"},{"speaker":"B","target":"Von Gleis sieben.","native":"From platform seven.","phonetic":"Fon gleyss zee-ben."}]},
+        {"id":"d2_7_3","context":"Asking a bus driver.","lines":[{"speaker":"A","target":"Fährt dieser Bus zum Zentrum?","native":"Does this bus go to the city center?","phonetic":"Fairt dee-zer boos tsoom tsen-troom?"},{"speaker":"B","target":"Nein, Sie müssen den Bus Nummer 5 nehmen.","native":"No, you have to take bus number 5.","phonetic":"Nine, zee mews-en den boos noom-mer fewnf nay-men."}]},
+        {"id":"d2_7_4","context":"At the airport check-in.","lines":[{"speaker":"A","target":"Ich habe einen Koffer zum Aufgeben.","native":"I have one suitcase to check in.","phonetic":"Ish ha-buh eyen-en kof-fer tsoom owf-gay-ben."},{"speaker":"B","target":"Stellen Sie ihn bitte auf die Waage.","native":"Please put it on the scale.","phonetic":"Shtel-en zee een bit-tuh owf dee vah-guh."}]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_7_1",
-            "sentence": "___ means 'Work' in German",
-            "answer": "Arbeit",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_7_2",
-            "sentence": "___ means 'Office' in German",
-            "answer": "Büro",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_7_3",
-            "sentence": "___ means 'Meeting' in German",
-            "answer": "Besprechung",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_7_1",
-            "target": "Arbeit",
-            "native": "Work"
-          },
-          {
-            "id": "m2_7_2",
-            "target": "Büro",
-            "native": "Office"
-          },
-          {
-            "id": "m2_7_3",
-            "target": "Besprechung",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_7_4",
-            "target": "Kollege",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_7_5",
-            "target": "Chef",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_7_1",
-            "question": "What does 'Arbeit' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Arbeit' means Work in English."
-          },
-          {
-            "id": "mc2_7_2",
-            "question": "How do you say 'Office' in German?",
-            "options": [
-              "Arbeit",
-              "Büro",
-              "Besprechung",
-              "Kollege"
-            ],
-            "correct": 1,
-            "explanation": "'Büro' means Office."
-          }
-        ]
+        "fillBlanks": [{"id":"fb2_7_1","sentence":"Ich brauche eine ___ nach Köln.","answer":"Fahrkarte","hint":"I need a ticket to Cologne."}],
+        "matching": [{"id":"m2_7_1","target":"der Zug","native":"the train"}],
+        "sentenceScramble": [{"id":"ss2_7_1","scrambled":["Bus","den","nehme","Ich"],"correct":"Ich nehme den Bus","nativeHint":"I'm taking the bus."}]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 2 focus: At the Workplace.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D7"
-      }
+      "cultural_note": "In Germany, you often need to validate (stamp) your ticket in a small machine before boarding a train, tram, or bus. Forgetting to do this can result in a fine.",
+      "pronunciation_tip": "The 'z' in 'Zug' is pronounced like 'ts' in English 'cats'. So, 'Tsook'.",
+      "progress": {"xp":100,"streak_bonus":20,"badge":"W2D7-Travel"}
     }
   ]
 }
