@@ -42,8 +42,9 @@ export async function POST(req: Request) {
       await userDocRef.update({ stripeCustomerId: stripeCustomerId });
     }
 
-    const successUrl = `${process.env.NEXT_PUBLIC_APP_URL}${successPath}`;
-    const cancelUrl = `${process.env.NEXT_PUBLIC_APP_URL}${cancelPath}`;
+    const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:9002';
+    const successUrl = `${appUrl}${successPath}`;
+    const cancelUrl = `${appUrl}${cancelPath}`;
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
