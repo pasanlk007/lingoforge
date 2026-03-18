@@ -10,21 +10,7 @@ export const config = {
   },
 };
 
-const getSubscriptionTypeFromPriceId = (priceId: string | undefined): 'monthly' | 'course' | 'lifetime' | 'free' => {
-  if (!priceId) return 'free';
-
-  if (priceId === process.env.NEXT_PUBLIC_STRIPE_MONTHLY_PRICE_ID) {
-    return 'monthly';
-  }
-  if (priceId === process.env.NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID) {
-    return 'course';
-  }
-  if (priceId === process.env.NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID) {
-    return 'lifetime';
-  }
-  return 'free';
-}
-
+// This function handles the "checkout.session.completed" event.
 async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
   const { firestore } = initializeFirebase();
   const userId = session.client_reference_id;
@@ -39,44 +25,52 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
 
   if (session.mode === 'subscription') {
     const subscriptionId = typeof session.subscription === 'string' ? session.subscription : session.subscription?.id;
-    const subscription = await stripe.subscriptions.retrieve(subscriptionId!);
+    if (!subscriptionId) {
+        console.error('Webhook Error: Missing subscription ID in checkout session.');
+        return;
+    }
+    const subscription = await stripe.subscriptions.retrieve(subscriptionId);
 
+    // For a new subscription, set the user as active.
     await updateDoc(userDocRef, {
       stripeCustomerId: stripeCustomerId,
       stripeSubscriptionId: subscription.id,
-      stripePriceId: subscription.items.data[0].price.id,
-      stripeCurrentPeriodEnd: new Date(subscription.current_period_end * 1000).toISOString(),
-      subscriptionType: getSubscriptionTypeFromPriceId(subscription.items.data[0].price.id),
-      subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString().split('T')[0],
+      subscriptionActive: true,
+      subscriptionSource: 'stripe',
+      subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString(),
     });
+
   } else if (session.mode === 'payment') {
-    const priceId = session.line_items?.data[0].price?.id;
+    // This is for one-time payments (e.g., lifetime access).
     await updateDoc(userDocRef, {
       stripeCustomerId: stripeCustomerId,
-      stripePriceId: priceId,
-      subscriptionType: getSubscriptionTypeFromPriceId(priceId),
-      subscriptionExpiry: null, // one-time payments do not expire
+      subscriptionActive: true,
+      subscriptionSource: 'stripe',
+      subscriptionExpiry: null, // Null expiry means lifetime access
     });
   }
 }
 
+// This function handles recurring subscription payments.
 async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
     const { firestore } = initializeFirebase();
+    // Retrieve the user ID from the subscription metadata, which we set during checkout.
     const userId = subscription.metadata.firebaseUID;
     if (!userId) {
         console.error('Webhook Error: Missing firebaseUID in subscription metadata.');
         return;
     }
     const userDocRef = doc(firestore, 'userProfiles', userId);
+
+    // Update the user's profile with the new subscription details.
     await updateDoc(userDocRef, {
+        subscriptionActive: true, // Ensure user is marked as active
         stripeSubscriptionId: subscription.id,
-        stripePriceId: subscription.items.data[0].price.id,
-        stripeCurrentPeriodEnd: new Date(subscription.current_period_end * 1000).toISOString(),
-        subscriptionType: getSubscriptionTypeFromPriceId(subscription.items.data[0].price.id),
-        subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString().split('T')[0],
+        subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString(),
     });
 }
 
+// This function handles when a subscription is canceled or expires.
 async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
     const { firestore } = initializeFirebase();
     const userId = subscription.metadata.firebaseUID;
@@ -85,16 +79,17 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
         return;
     }
     const userDocRef = doc(firestore, 'userProfiles', userId);
+
+    // Revert the user to a free plan.
     await updateDoc(userDocRef, {
-        subscriptionType: 'free',
-        stripeSubscriptionId: null,
-        stripePriceId: null,
-        stripeCurrentPeriodEnd: null,
+        subscriptionActive: false,
+        subscriptionSource: 'none',
         subscriptionExpiry: null,
+        stripeSubscriptionId: null,
     });
 }
 
-
+// The main webhook handler function.
 export async function POST(req: Request) {
   const body = await req.text();
   const sig = req.headers.get('stripe-signature') as string;
@@ -107,6 +102,7 @@ export async function POST(req: Request) {
       console.error("Webhook secret or signature not found.");
       return new NextResponse('Webhook secret not configured', { status: 400 });
     }
+    // Verify the event came from Stripe.
     event = stripe.webhooks.constructEvent(body, sig, webhookSecret);
   } catch (err: any) {
     console.error(`Webhook signature verification failed: ${err.message}`);
@@ -114,6 +110,7 @@ export async function POST(req: Request) {
   }
 
   try {
+    // Handle the event based on its type.
     switch (event.type) {
       case 'checkout.session.completed':
         await handleCheckoutSessionCompleted(event.data.object as Stripe.Checkout.Session);
@@ -121,21 +118,25 @@ export async function POST(req: Request) {
       case 'invoice.payment_succeeded':
         const invoice = event.data.object as Stripe.Invoice;
         if (invoice.subscription) {
+            // For recurring payments, we get an invoice. We need to fetch the subscription
+            // object to get the latest details.
             const subscriptionId = typeof invoice.subscription === 'string' ? invoice.subscription : invoice.subscription.id;
             const subscription = await stripe.subscriptions.retrieve(subscriptionId);
             await handleSubscriptionUpdated(subscription);
         }
         break;
       case 'customer.subscription.deleted':
+        // This event fires when a subscription is canceled at the end of the billing period.
         await handleSubscriptionDeleted(event.data.object as Stripe.Subscription);
         break;
       default:
-        // console.log(`Unhandled event type ${event.type}`);
+        // Unhandled event type
     }
   } catch (error) {
     console.error("Error handling webhook event:", error);
     return new NextResponse('Webhook handler failed. View logs.', { status: 500 });
   }
 
+  // Acknowledge receipt of the event.
   return new NextResponse(JSON.stringify({ received: true }), { status: 200 });
 }

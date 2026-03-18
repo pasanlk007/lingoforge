@@ -155,6 +155,10 @@ function ProfileContent({ user }: { user: User }) {
   const photoURL = userProfile?.photoURL || user.photoURL;
   const isEmoji = photoURL && !photoURL.startsWith('http');
 
+  const subscriptionStatus = userProfile?.subscriptionActive ? "Active" : "Free Plan";
+  const subscriptionSource = userProfile?.subscriptionSource !== 'none' ? userProfile?.subscriptionSource : '';
+  const subscriptionExpiry = userProfile?.subscriptionExpiry ? new Date(userProfile.subscriptionExpiry).toLocaleDateString() : 'Lifetime';
+
   return (
      <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
@@ -207,8 +211,20 @@ function ProfileContent({ user }: { user: User }) {
                     </div>
                     <div>
                         <p className="font-semibold text-muted-foreground">Subscription</p>
-                        <p className="text-lg font-bold capitalize">{userProfile?.subscriptionType || 'free'}</p>
+                        <p className="text-lg font-bold capitalize">{subscriptionStatus}</p>
                     </div>
+                     {userProfile?.subscriptionActive && (
+                        <>
+                          <div>
+                              <p className="font-semibold text-muted-foreground">Source</p>
+                              <p className="text-lg font-bold capitalize">{subscriptionSource}</p>
+                          </div>
+                          <div>
+                              <p className="font-semibold text-muted-foreground">Expires</p>
+                              <p className="text-lg font-bold">{subscriptionExpiry}</p>
+                          </div>
+                        </>
+                    )}
                      <div>
                         <p className="font-semibold text-muted-foreground">Selected Language</p>
                         <p className="text-lg font-bold">{userProfile?.selectedLanguage}</p>

@@ -9,47 +9,43 @@ export interface UserAccessData {
 }
 
 /**
- * Determines if a user can access a specific week based on their status and remote config.
- * This follows the safe access logic specified.
+ * Determines if a user can access a specific week based on their subscription status and remote config.
  */
 export function canAccessWeek(weekNumber: number, userData: UserAccessData, config: AppConfig): boolean {
-    // 1. Maintenance mode blocks everything safely.
+    // 1. Maintenance mode blocks all access immediately.
     if (config.app_mode === 'maintenance') {
         return false;
     }
     
-    // 2. If user profile is not loaded, apply safe default (only week 1).
+    // 2. If the user profile is still loading, provide a safe default (allow only week 1).
     if (!userData.profile) {
-        return weekNumber === 1;
+        return weekNumber <= config.max_free_weeks;
     }
     
-    // 3. Subscription overrides all other rules.
-    const isSubscribed = userData.profile.subscriptionType !== 'free';
-    if (isSubscribed) {
+    // 3. If the user has an active subscription, they have full access.
+    if (userData.profile.subscriptionActive) {
         return true;
     }
 
-    // 4. Free trial access overrides other rules for the duration.
+    // --- Logic for Free Users ---
+
+    // 4. Free trial period grants access to all enabled weeks.
     if (userData.trialDaysUsed < config.free_trial_days) {
         return true;
     }
 
-    // 5. Week 1 is always accessible for free users post-trial.
-    if (weekNumber === 1) {
-        return true;
-    }
-
-    // 6. Limit access based on the maximum number of free weeks.
+    // 5. After trial, check if the week is within the allowed free week limit.
     if (weekNumber > config.max_free_weeks) {
         return false;
     }
 
-    // 7. If sequential unlock is required, check if previous week is completed.
+    // 6. If sequential unlocking is required, check if the previous week is completed.
     if (config.require_previous_week_completion && weekNumber > 1) {
         const prevWeekProgress = userData.progress?.find(p => p.week === weekNumber - 1);
+        // A week is completed if the 'weekCompleted' flag is true.
         return prevWeekProgress?.weekCompleted || false;
     }
 
-    // 8. If none of the above conditions blocked access, it's allowed.
+    // 7. If none of the above conditions blocked access, the free user can access the week.
     return true;
 }

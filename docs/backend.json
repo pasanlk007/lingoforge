@@ -26,26 +26,19 @@
           "type": "string",
           "description": "The target language the user is currently learning (e.g., 'French')."
         },
-        "subscriptionType": {
-          "type": "string",
-          "description": "The user's current subscription level.",
-          "enum": [
-            "free",
-            "weekly",
-            "monthly",
-            "course",
-            "lifetime"
-          ]
+        "subscriptionActive": {
+          "type": "boolean",
+          "description": "True if the user has an active subscription from any source."
         },
-        "subscriptionStartDate": {
-          "type": "string",
-          "description": "The date when the user's current subscription started. Applicable for 'weekly' plans.",
-          "format": "date"
+        "subscriptionSource": {
+            "type": "string",
+            "description": "The source of the active subscription.",
+            "enum": ["stripe", "google_play", "apple_iap", "none"]
         },
         "subscriptionExpiry": {
-          "type": "string",
-          "description": "The date when the user's current subscription expires. Applicable for 'weekly' and 'monthly' plans.",
-          "format": "date"
+          "type": ["string", "null"],
+          "description": "The date when the user's current subscription expires. Null for lifetime access.",
+          "format": "date-time"
         },
         "xpPoints": {
           "type": "number",
@@ -83,15 +76,6 @@
         "stripeSubscriptionId": {
             "type": "string",
             "description": "The user's active Stripe Subscription ID."
-        },
-        "stripePriceId": {
-          "type": "string",
-          "description": "The price ID of the user's active subscription."
-        },
-        "stripeCurrentPeriodEnd": {
-          "type": "string",
-          "description": "The end date of the current subscription period, in ISO 8601 format.",
-          "format": "date-time"
         }
       },
       "required": [
@@ -100,7 +84,7 @@
         "email",
         "nativeLanguage",
         "selectedLanguage",
-        "subscriptionType",
+        "subscriptionActive",
         "xpPoints",
         "currentStreak",
         "lastActiveDate",

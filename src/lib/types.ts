@@ -134,9 +134,9 @@ export interface UserProfile {
   email: string;
   nativeLanguage: string;
   selectedLanguage: string;
-  subscriptionType: 'free' | 'weekly' | 'monthly' | 'course' | 'lifetime';
-  subscriptionStartDate?: string; // ISO 8601 date string
-  subscriptionExpiry?: string; // ISO 8601 date string
+  subscriptionActive: boolean;
+  subscriptionSource?: 'stripe' | 'google_play' | 'apple_iap' | 'none';
+  subscriptionExpiry: string | null; // ISO date string, or null for lifetime
   xpPoints: number;
   currentStreak: number;
   lastActiveDate: string; // ISO 8601 date string
@@ -147,8 +147,6 @@ export interface UserProfile {
   lastLessonDay: number;
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
-  stripePriceId?: string;
-  stripeCurrentPeriodEnd?: string; // ISO 8601 date-time string
 }
 
 export interface UserLessonProgress {
