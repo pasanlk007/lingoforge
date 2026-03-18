@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,24 +8,741 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1, Day 1: Placeholder",
-      "title_native": "Placeholder",
-      "theme": "Placeholder",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "Tag 1: Grundlegende Begrüßungen",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "English",
-      "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}],
-      "dialogues": [],
-      "exercises": {},
-      "cultural_note": "Placeholder cultural note.",
-      "pronunciation_tip": "Placeholder pronunciation tip.",
-      "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder"}
+      "words": [
+        {
+          "id": "w1_1_1",
+          "target": "Hallo",
+          "phonetic": "hah-low",
+          "native_meaning": "Hello",
+          "english": "Hello",
+          "example_sentence_target": "Hallo, wie geht's?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "hah-low, vee gayts?"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "Guten Tag",
+          "phonetic": "goo-ten tahk",
+          "native_meaning": "Good day",
+          "english": "Good day",
+          "example_sentence_target": "Guten Tag, Herr Schmidt.",
+          "example_sentence_native": "Good day, Mr. Schmidt.",
+          "example_sentence_phonetic": "goo-ten tahk, hair shmit."
+        },
+        {
+          "id": "w1_1_3",
+          "target": "Tschüss",
+          "phonetic": "chooss",
+          "native_meaning": "Bye (informal)",
+          "english": "Bye (informal)",
+          "example_sentence_target": "Tschüss, bis morgen!",
+          "example_sentence_native": "Bye, see you tomorrow!",
+          "example_sentence_phonetic": "chooss, biss mor-gen!"
+        },
+        {
+          "id": "w1_1_4",
+          "target": "Auf Wiedersehen",
+          "phonetic": "owf vee-der-zay-en",
+          "native_meaning": "Goodbye (formal)",
+          "english": "Goodbye (formal)",
+          "example_sentence_target": "Auf Wiedersehen, Frau Meier.",
+          "example_sentence_native": "Goodbye, Mrs. Meier.",
+          "example_sentence_phonetic": "owf vee-der-zay-en, frow my-er."
+        },
+        {
+          "id": "w1_1_5",
+          "target": "Danke",
+          "phonetic": "dahn-keh",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Danke für Ihre Hilfe.",
+          "example_sentence_native": "Thank you for your help.",
+          "example_sentence_phonetic": "dahn-keh fewr ee-reh hil-feh."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Meeting someone for the first time.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Hallo, ich bin Anna.",
+              "native": "Hello, I am Anna.",
+              "phonetic": "hah-low, ish bin Anna."
+            },
+            {
+              "speaker": "B",
+              "target": "Hallo Anna, ich heiße Mark.",
+              "native": "Hello Anna, my name is Mark.",
+              "phonetic": "hah-low Anna, ish high-seh Mark."
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "Leaving a shop.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Danke schön. Auf Wiedersehen.",
+              "native": "Thank you very much. Goodbye.",
+              "phonetic": "dahn-keh shurn. owf vee-der-zay-en."
+            },
+            {
+              "speaker": "B",
+              "target": "Auf Wiedersehen.",
+              "native": "Goodbye.",
+              "phonetic": "owf vee-der-zay-en."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_1_1",
+            "scrambled": ["Tag", "Guten"],
+            "correct": "Guten Tag",
+            "nativeHint": "A common formal greeting during the day."
+          }
+        ],
+        "fillBlanks": [
+          {
+            "id": "fb1_1_1",
+            "sentence": "___ schön!",
+            "answer": "Danke",
+            "hint": "How do you say 'Thank you'?"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_1_1",
+            "target": "Hallo",
+            "native": "Hello"
+          },
+          {
+            "id": "m1_1_2",
+            "target": "Tschüss",
+            "native": "Bye"
+          }
+        ]
+      },
+      "cultural_note": "In Germany, it's common to use 'Guten Tag' as a formal greeting throughout the day. 'Hallo' is more informal and used among friends or younger people.",
+      "pronunciation_tip": "The German 'a' in 'Tag' or 'Hallo' is a short, open sound, similar to the 'a' in the English word 'father'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-German-Greetings"
+      }
     },
-    { "week": 1, "day": 2, "title": "Week 1, Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "German", "nativeLanguage": "English", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder cultural note.", "pronunciation_tip": "Placeholder pronunciation tip.", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder"}},
-    { "week": 1, "day": 3, "title": "Week 1, Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "German", "nativeLanguage": "English", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder cultural note.", "pronunciation_tip": "Placeholder pronunciation tip.", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder"}},
-    { "week": 1, "day": 4, "title": "Week 1, Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "German", "nativeLanguage": "English", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder cultural note.", "pronunciation_tip": "Placeholder pronunciation tip.", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder"}},
-    { "week": 1, "day": 5, "title": "Week 1, Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "German", "nativeLanguage": "English", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder cultural note.", "pronunciation_tip": "Placeholder pronunciation tip.", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder"}},
-    { "week": 1, "day": 6, "title": "Week 1, Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "German", "nativeLanguage": "English", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder cultural note.", "pronunciation_tip": "Placeholder pronunciation tip.", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder"}},
-    { "week": 1, "day": 7, "title": "Week 1, Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "German", "nativeLanguage": "English", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder cultural note.", "pronunciation_tip": "Placeholder pronunciation tip.", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder"}}
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Day 2: Well-being & Courtesy",
+      "title_native": "Tag 2: Wohlbefinden & Höflichkeit",
+      "theme": "Courtesy",
+      "path": "survival",
+      "targetLanguage": "German",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "Bitte",
+          "phonetic": "bit-teh",
+          "native_meaning": "Please / You're welcome",
+          "english": "Please / You're welcome",
+          "example_sentence_target": "Einen Kaffee, bitte.",
+          "example_sentence_native": "One coffee, please.",
+          "example_sentence_phonetic": "eye-nen kah-fee, bit-teh."
+        },
+        {
+          "id": "w1_2_2",
+          "target": "Ja",
+          "phonetic": "yah",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Ja, bitte.",
+          "example_sentence_native": "Yes, please.",
+          "example_sentence_phonetic": "yah, bit-teh."
+        },
+        {
+          "id": "w1_2_3",
+          "target": "Nein",
+          "phonetic": "nine",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Nein, danke.",
+          "example_sentence_native": "No, thank you.",
+          "example_sentence_phonetic": "nine, dahn-keh."
+        },
+        {
+          "id": "w1_2_4",
+          "target": "Wie geht es Ihnen?",
+          "phonetic": "vee gayt ess ee-nen?",
+          "native_meaning": "How are you? (formal)",
+          "english": "How are you? (formal)",
+          "example_sentence_target": "Guten Tag, wie geht es Ihnen?",
+          "example_sentence_native": "Good day, how are you?",
+          "example_sentence_phonetic": "goo-ten tahk, vee gayt ess ee-nen?"
+        },
+        {
+          "id": "w1_2_5",
+          "target": "Gut, danke.",
+          "phonetic": "goot, dahn-keh",
+          "native_meaning": "Good, thank you.",
+          "english": "Good, thank you.",
+          "example_sentence_target": "Mir geht es gut, danke.",
+          "example_sentence_native": "I am doing well, thank you.",
+          "example_sentence_phonetic": "meer gayt ess goot, dahn-keh."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "A formal conversation asking about well-being.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Guten Morgen, Herr Weber. Wie geht es Ihnen?",
+              "native": "Good morning, Mr. Weber. How are you?",
+              "phonetic": "goo-ten mor-gen, hair vay-ber. vee gayt ess ee-nen?"
+            },
+            {
+              "speaker": "B",
+              "target": "Gut, danke. Und Ihnen?",
+              "native": "Good, thank you. And you?",
+              "phonetic": "goot, dahn-keh. oont ee-nen?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          {
+            "id": "mc1_2_1",
+            "question": "How do you say 'Yes' in German?",
+            "options": ["Nein", "Ja", "Bitte", "Danke"],
+            "correct": 1,
+            "explanation": "'Ja' is the German word for 'Yes'."
+          }
+        ]
+      },
+      "cultural_note": "The word 'bitte' is very versatile. It can mean 'please', 'you're welcome', 'pardon?', and 'here you go'. Context is key!",
+      "pronunciation_tip": "The 'w' in 'Wie' sounds like the 'v' in the English word 'very'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D2-German-Courtesy"
+      }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Day 3: Introductions",
+      "title_native": "Tag 3: Vorstellungen",
+      "theme": "Introductions",
+      "path": "survival",
+      "targetLanguage": "German",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "Ich heiße...",
+          "phonetic": "ish high-seh...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Ich heiße Maria.",
+          "example_sentence_native": "My name is Maria.",
+          "example_sentence_phonetic": "ish high-seh Maria."
+        },
+        {
+          "id": "w1_3_2",
+          "target": "Wie heißen Sie?",
+          "phonetic": "vee high-sen zee?",
+          "native_meaning": "What is your name? (formal)",
+          "english": "What is your name? (formal)",
+          "example_sentence_target": "Entschuldigung, wie heißen Sie?",
+          "example_sentence_native": "Excuse me, what is your name?",
+          "example_sentence_phonetic": "ent-shool-di-goong, vee high-sen zee?"
+        },
+        {
+          "id": "w1_3_3",
+          "target": "Mein Name ist...",
+          "phonetic": "mine nah-meh ist...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Mein Name ist Paul.",
+          "example_sentence_native": "My name is Paul.",
+          "example_sentence_phonetic": "mine nah-meh ist Paul."
+        },
+        {
+          "id": "w1_3_4",
+          "target": "Freut mich",
+          "phonetic": "froyt mish",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Hallo, ich bin Tom. Freut mich.",
+          "example_sentence_native": "Hello, I'm Tom. Nice to meet you.",
+          "example_sentence_phonetic": "hah-low, ish bin Tom. froyt mish."
+        },
+        {
+          "id": "w1_3_5",
+          "target": "Woher kommen Sie?",
+          "phonetic": "vo-hair kom-men zee?",
+          "native_meaning": "Where are you from? (formal)",
+          "english": "Where are you from? (formal)",
+          "example_sentence_target": "Woher kommen Sie, Frau Lee?",
+          "example_sentence_native": "Where are you from, Ms. Lee?",
+          "example_sentence_phonetic": "vo-hair kom-men zee, frow Lee?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "Introducing yourself at a business meeting.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Guten Tag. Mein Name ist Müller. Und wie heißen Sie?",
+              "native": "Good day. My name is Müller. And what is your name?",
+              "phonetic": "goo-ten tahk. mine nah-meh ist Müller. oont vee high-sen zee?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ich heiße Chen. Freut mich.",
+              "native": "My name is Chen. Nice to meet you.",
+              "phonetic": "ish high-seh Chen. froyt mish."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {
+            "id": "m1_3_1",
+            "target": "Wie heißen Sie?",
+            "native": "What is your name?"
+          },
+          {
+            "id": "m1_3_2",
+            "target": "Freut mich",
+            "native": "Nice to meet you"
+          }
+        ]
+      },
+      "cultural_note": "When introducing yourself in a formal setting, it's common to use your last name. 'Ich heiße...' and 'Mein Name ist...' are largely interchangeable.",
+      "pronunciation_tip": "The 'ß' in 'heiße' is called an 'Eszett' or 'scharfes S'. It's pronounced like a sharp 's' sound, as in 'hiss'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D3-German-Introductions"
+      }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Day 4: Apologies & Thanks",
+      "title_native": "Tag 4: Entschuldigungen & Dank",
+      "theme": "Politeness",
+      "path": "survival",
+      "targetLanguage": "German",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "Entschuldigung",
+          "phonetic": "ent-shool-di-goong",
+          "native_meaning": "Excuse me / Sorry",
+          "english": "Excuse me / Sorry",
+          "example_sentence_target": "Entschuldigung, wo ist der Bahnhof?",
+          "example_sentence_native": "Excuse me, where is the train station?",
+          "example_sentence_phonetic": "ent-shool-di-goong, vo ist dair ban-hof?"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "Es tut mir leid",
+          "phonetic": "es toot meer lide",
+          "native_meaning": "I am sorry",
+          "english": "I am sorry",
+          "example_sentence_target": "Oh, es tut mir leid.",
+          "example_sentence_native": "Oh, I am sorry.",
+          "example_sentence_phonetic": "oh, es toot meer lide."
+        },
+        {
+          "id": "w1_4_3",
+          "target": "Gern geschehen",
+          "phonetic": "gairn geh-shay-en",
+          "native_meaning": "You're welcome",
+          "english": "You're welcome",
+          "example_sentence_target": "Danke! - Gern geschehen.",
+          "example_sentence_native": "Thanks! - You're welcome.",
+          "example_sentence_phonetic": "dahn-keh! - gairn geh-shay-en."
+        },
+        {
+          "id": "w1_4_4",
+          "target": "Kein Problem",
+          "phonetic": "kine pro-blame",
+          "native_meaning": "No problem",
+          "english": "No problem",
+          "example_sentence_target": "Entschuldigung! - Kein Problem.",
+          "example_sentence_native": "Sorry! - No problem.",
+          "example_sentence_phonetic": "ent-shool-di-goong! - kine pro-blame."
+        },
+        {
+          "id": "w1_4_5",
+          "target": "Ich verstehe nicht",
+          "phonetic": "ish fer-shtay-eh nisht",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Entschuldigung, ich verstehe nicht.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "ent-shool-di-goong, ish fer-shtay-eh nisht."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "Apologizing for bumping into someone.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Oh, Entschuldigung!",
+              "native": "Oh, sorry!",
+              "phonetic": "oh, ent-shool-di-goong!"
+            },
+            {
+              "speaker": "B",
+              "target": "Kein Problem.",
+              "native": "No problem.",
+              "phonetic": "kine pro-blame."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_4_1",
+            "sentence": "Es tut mir ___.",
+            "answer": "leid",
+            "hint": "How do you say 'I am sorry'?"
+          }
+        ]
+      },
+      "cultural_note": "'Entschuldigung' is used for both getting someone's attention ('Excuse me') and for apologizing ('Sorry'). 'Es tut mir leid' is more for expressing sympathy or regret.",
+      "pronunciation_tip": "The 'ch' sound in 'Ich' is a soft sound made in the front of the mouth. It's different from the harder 'ch' in 'ach'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D4-German-Politeness"
+      }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Day 5: Basic Questions",
+      "title_native": "Tag 5: Grundlegende Fragen",
+      "theme": "Questions",
+      "path": "survival",
+      "targetLanguage": "German",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "Wo?",
+          "phonetic": "vo",
+          "native_meaning": "Where?",
+          "english": "Where?",
+          "example_sentence_target": "Wo ist die Toilette?",
+          "example_sentence_native": "Where is the toilet?",
+          "example_sentence_phonetic": "vo ist dee toy-let-teh?"
+        },
+        {
+          "id": "w1_5_2",
+          "target": "Was?",
+          "phonetic": "vass",
+          "native_meaning": "What?",
+          "english": "What?",
+          "example_sentence_target": "Was ist das?",
+          "example_sentence_native": "What is that?",
+          "example_sentence_phonetic": "vass ist dass?"
+        },
+        {
+          "id": "w1_5_3",
+          "target": "Wann?",
+          "phonetic": "vann",
+          "native_meaning": "When?",
+          "english": "When?",
+          "example_sentence_target": "Wann fährt der Zug?",
+          "example_sentence_native": "When does the train leave?",
+          "example_sentence_phonetic": "vann fairt dair tsook?"
+        },
+        {
+          "id": "w1_5_4",
+          "target": "Wie?",
+          "phonetic": "vee",
+          "native_meaning": "How?",
+          "english": "How?",
+          "example_sentence_target": "Wie bitte?",
+          "example_sentence_native": "How's that? / Pardon?",
+          "example_sentence_phonetic": "vee bit-teh?"
+        },
+        {
+          "id": "w1_5_5",
+          "target": "Warum?",
+          "phonetic": "vah-room",
+          "native_meaning": "Why?",
+          "english": "Why?",
+          "example_sentence_target": "Warum nicht?",
+          "example_sentence_native": "Why not?",
+          "example_sentence_phonetic": "vah-room nisht?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "Asking for the location of something.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Entschuldigung, wo ist der Supermarkt?",
+              "native": "Excuse me, where is the supermarket?",
+              "phonetic": "ent-shool-di-goong, vo ist dair zoo-per-markt?"
+            },
+            {
+              "speaker": "B",
+              "target": "Dort drüben.",
+              "native": "Over there.",
+              "phonetic": "dort droo-ben."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_5_1",
+            "scrambled": ["ist", "Wo", "Toilette", "die"],
+            "correct": "Wo ist die Toilette",
+            "nativeHint": "Ask where the restroom is."
+          }
+        ]
+      },
+      "cultural_note": "Question words (W-Fragen) like Wo, Was, Wann are essential for navigating basic situations and gathering information.",
+      "pronunciation_tip": "The 'v' in 'Was' and 'Warum' is pronounced like an 'f' sound in English. So 'Was' sounds like 'vass'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D5-German-Questions"
+      }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Day 6: Origin and Nationality",
+      "title_native": "Tag 6: Herkunft und Nationalität",
+      "theme": "Origin",
+      "path": "survival",
+      "targetLanguage": "German",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "Ich komme aus...",
+          "phonetic": "ish kom-meh ows...",
+          "native_meaning": "I come from...",
+          "english": "I come from...",
+          "example_sentence_target": "Ich komme aus England.",
+          "example_sentence_native": "I come from England.",
+          "example_sentence_phonetic": "ish kom-meh ows eng-lant."
+        },
+        {
+          "id": "w1_6_2",
+          "target": "England",
+          "phonetic": "eng-lant",
+          "native_meaning": "England",
+          "english": "England",
+          "example_sentence_target": "Er kommt aus England.",
+          "example_sentence_native": "He comes from England.",
+          "example_sentence_phonetic": "air komt ows eng-lant."
+        },
+        {
+          "id": "w1_6_3",
+          "target": "Amerika",
+          "phonetic": "ah-meh-ree-kah",
+          "native_meaning": "America",
+          "english": "America",
+          "example_sentence_target": "Sie kommt aus Amerika.",
+          "example_sentence_native": "She comes from America.",
+          "example_sentence_phonetic": "zee komt ows ah-meh-ree-kah."
+        },
+        {
+          "id": "w1_6_4",
+          "target": "Deutschland",
+          "phonetic": "doytch-lant",
+          "native_meaning": "Germany",
+          "english": "Germany",
+          "example_sentence_target": "Ich wohne in Deutschland.",
+          "example_sentence_native": "I live in Germany.",
+          "example_sentence_phonetic": "ish voh-neh in doytch-lant."
+        },
+        {
+          "id": "w1_6_5",
+          "target": "Sprache",
+          "phonetic": "shpra-kheh",
+          "native_meaning": "Language",
+          "english": "Language",
+          "example_sentence_target": "Welche Sprache sprechen Sie?",
+          "example_sentence_native": "Which language do you speak?",
+          "example_sentence_phonetic": "vel-sheh shpra-kheh shpre-shen zee?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "Talking about where you are from.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Hallo, woher kommen Sie?",
+              "native": "Hello, where are you from?",
+              "phonetic": "hah-low, vo-hair kom-men zee?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ich komme aus Amerika. Und Sie?",
+              "native": "I come from America. And you?",
+              "phonetic": "ish kom-meh ows ah-meh-ree-kah. oont zee?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_6_1",
+            "sentence": "Ich komme aus ___.",
+            "answer": "England",
+            "hint": "Where is London?"
+          }
+        ]
+      },
+      "cultural_note": "When people ask 'Woher kommen Sie?', they are asking for your country or city of origin, not your current residence.",
+      "pronunciation_tip": "The 'eu' in 'Deutschland' makes an 'oy' sound, as in the English word 'boy'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D6-German-Origin"
+      }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Day 7: Weekly Review",
+      "title_native": "Tag 7: Wöchentliche Wiederholung",
+      "theme": "Review",
+      "path": "survival",
+      "targetLanguage": "German",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_7_1",
+          "target": "Sprechen Sie Englisch?",
+          "phonetic": "shpre-shen zee eng-lish?",
+          "native_meaning": "Do you speak English?",
+          "english": "Do you speak English?",
+          "example_sentence_target": "Entschuldigung, sprechen Sie Englisch?",
+          "example_sentence_native": "Excuse me, do you speak English?",
+          "example_sentence_phonetic": "ent-shool-di-goong, shpre-shen zee eng-lish?"
+        },
+        {
+          "id": "w1_7_2",
+          "target": "Langsam, bitte",
+          "phonetic": "lang-zahm, bit-teh",
+          "native_meaning": "Slowly, please",
+          "english": "Slowly, please",
+          "example_sentence_target": "Können Sie bitte langsam sprechen?",
+          "example_sentence_native": "Can you please speak slowly?",
+          "example_sentence_phonetic": "ker-nen zee bit-teh lang-zahm shpre-shen?"
+        },
+        {
+          "id": "w1_7_3",
+          "target": "Was bedeutet das?",
+          "phonetic": "vass be-doy-tet dass?",
+          "native_meaning": "What does that mean?",
+          "english": "What does that mean?",
+          "example_sentence_target": "Entschuldigung, was bedeutet das?",
+          "example_sentence_native": "Excuse me, what does that mean?",
+          "example_sentence_phonetic": "ent-shool-di-goong, vass be-doy-tet dass?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "Reviewing everything learned in a longer conversation.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Guten Tag. Ich heiße David. Wie heißen Sie?",
+              "native": "Good day. My name is David. What is your name?",
+              "phonetic": "goo-ten tahk. ish high-seh David. vee high-sen zee?"
+            },
+            {
+              "speaker": "B",
+              "target": "Hallo David. Mein Name ist Sofia. Woher kommen Sie?",
+              "native": "Hello David. My name is Sofia. Where are you from?",
+              "phonetic": "hah-low David. mine nah-meh ist Sofia. vo-hair kom-men zee?"
+            },
+            {
+              "speaker": "A",
+              "target": "Ich komme aus Amerika. Ich verstehe nicht gut Deutsch. Sprechen Sie Englisch?",
+              "native": "I come from America. I don't understand German well. Do you speak English?",
+              "phonetic": "ish kom-meh ows ah-meh-ree-kah. ish fer-shtay-eh nisht goot doytch. shpre-shen zee eng-lish?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ja, ein bisschen. Kein Problem.",
+              "native": "Yes, a little. No problem.",
+              "phonetic": "yah, ine biss-yen. kine pro-blame."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {
+            "id": "m1_7_1",
+            "target": "Sprechen Sie Englisch?",
+            "native": "Do you speak English?"
+          },
+          {
+            "id": "m1_7_2",
+            "target": "Was bedeutet das?",
+            "native": "What does that mean?"
+          },
+          {
+            "id": "m1_7_3",
+            "target": "Langsam, bitte",
+            "native": "Slowly, please"
+          }
+        ]
+      },
+      "cultural_note": "Don't be afraid to ask people if they speak English. Many Germans, especially in cities and younger generations, speak English very well and are happy to help.",
+      "pronunciation_tip": "Review the 'ch', 'w', and 'eu' sounds from this week. Consistent practice is the key to improving your German pronunciation!",
+      "progress": {
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-German-Complete"
+      }
+    }
   ]
 }
+
+    
