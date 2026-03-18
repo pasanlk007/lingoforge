@@ -123,6 +123,20 @@ export default function NumbersPathPage() {
     return { numbers: numbersList, timesOfDay: timesOfDayList, daysOfWeek: daysOfWeekList, months: monthsList };
   }, [allLessonData]);
 
+  if (isMounted && nativeLanguage === 'English' && targetLanguage === 'English') {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1 container mx-auto max-w-3xl py-12 px-4 text-center">
+            <h1 className="text-4xl font-bold tracking-tight">Invalid Language Selection</h1>
+            <p className="mt-4 text-lg text-muted-foreground">
+                You cannot learn a language that is also set as your native language. Please select a different target language from your dashboard.
+            </p>
+            <Button asChild className="mt-6"><Link href="/dashboard">Back to Dashboard</Link></Button>
+        </main>
+      </div>
+    );
+  }
 
   if (isLoading || isUserLoading || !isMounted) {
     return <LoadingSkeleton />;

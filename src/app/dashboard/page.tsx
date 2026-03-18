@@ -79,40 +79,53 @@ function DashboardContent({ user }: { user: User }) {
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
-  const [nativeLanguage, setNativeLanguage] = useState(userProfile?.nativeLanguage || 'English');
-  const [targetLanguage, setTargetLanguage] = useState(userProfile?.selectedLanguage || 'French');
+  const [nativeLanguage, setNativeLanguage] = useState('English');
+  const [targetLanguage, setTargetLanguage] = useState('French');
 
-  useEffect(() => {
-    setIsMounted(true);
-    const savedNative = localStorage.getItem("nativeLanguage");
-    const savedTarget = localStorage.getItem("targetLanguage");
-
-    let initialNative = userProfile?.nativeLanguage || savedNative || 'English';
-    let initialTarget = userProfile?.selectedLanguage || savedTarget || 'French';
-    
-    if (nativeLanguages.includes(initialNative)) {
-        setNativeLanguage(initialNative);
-    } else {
-        setNativeLanguage('English');
-    }
-    setTargetLanguage(initialTarget);
-
-  }, [userProfile]);
-
-  const handleNativeLanguageChange = (newLang: string) => {
-    setNativeLanguage(newLang);
-    if (userProfileRef) {
-        updateDocumentNonBlocking(userProfileRef, { nativeLanguage: newLang });
-    }
-    localStorage.setItem("nativeLanguage", newLang);
-  };
-  
   const handleTargetLanguageChange = (newLang: string) => {
     setTargetLanguage(newLang);
     if (userProfileRef) {
         updateDocumentNonBlocking(userProfileRef, { selectedLanguage: newLang });
     }
     localStorage.setItem("targetLanguage", newLang);
+  };
+  
+  useEffect(() => {
+    setIsMounted(true);
+    let initialNative = userProfile?.nativeLanguage || localStorage.getItem("nativeLanguage") || 'English';
+    let initialTarget = userProfile?.selectedLanguage || localStorage.getItem("targetLanguage") || 'French';
+
+    if (!nativeLanguages.includes(initialNative)) {
+      initialNative = 'English';
+    }
+
+    if (initialNative === 'English' && initialTarget === 'English') {
+      initialTarget = 'French';
+    }
+    
+    setNativeLanguage(initialNative);
+    setTargetLanguage(initialTarget);
+    
+    localStorage.setItem("nativeLanguage", initialNative);
+    localStorage.setItem("targetLanguage", initialTarget);
+    
+    if (userProfileRef && (userProfile?.nativeLanguage !== initialNative || userProfile?.selectedLanguage !== initialTarget)) {
+        updateDocumentNonBlocking(userProfileRef, { nativeLanguage: initialNative, selectedLanguage: initialTarget });
+    }
+  }, [userProfile, userProfileRef]);
+
+
+  const handleNativeLanguageChange = (newLang: string) => {
+    setNativeLanguage(newLang);
+    localStorage.setItem("nativeLanguage", newLang);
+
+    if (newLang === 'English' && targetLanguage === 'English') {
+      handleTargetLanguageChange('French');
+    } else {
+       if (userProfileRef) {
+        updateDocumentNonBlocking(userProfileRef, { nativeLanguage: newLang });
+       }
+    }
   };
 
   const lastActiveWeek = userProfile?.lastLessonWeek || 1;
@@ -124,6 +137,13 @@ function DashboardContent({ user }: { user: User }) {
   }, [user, firestore, lastActivePath, lastActiveWeek]);
 
   const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
+  
+  const availableTargetLanguages = useMemo(() => {
+    if (nativeLanguage === 'English') {
+        return targetLanguages.filter(l => l.lang !== 'English');
+    }
+    return targetLanguages;
+  }, [nativeLanguage]);
 
 
   if (!isMounted || isProfileLoading || !userProfile) {
@@ -311,7 +331,7 @@ function DashboardContent({ user }: { user: User }) {
                         <SelectValue placeholder={t.selectTargetLanguage} />
                     </SelectTrigger>
                     <SelectContent className="max-h-80">
-                      {targetLanguages.map(lang => (
+                      {availableTargetLanguages.map(lang => (
                         <SelectItem key={lang.lang} value={lang.lang}>
                           <div className="flex items-center gap-3">
                             <span className="text-xl">{lang.flag}</span>
