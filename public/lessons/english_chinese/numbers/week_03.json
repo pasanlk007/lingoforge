@@ -8,122 +8,251 @@
     {
       "week": 3,
       "day": 1,
-      "title": "Ten Thousand & Hundred Million",
-      "title_native": "万和亿",
-      "theme": "Very Large Numbers",
+      "title": "Telling Time: Hours",
+      "title_native": "说时间：小时 (Shuō shíjiān: Xiǎoshí)",
+      "theme": "O'clock",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w3_1_1", "target": "一万", "phonetic": "yí wàn", "native_meaning": "Ten thousand", "english": "10000", "example_sentence_target": "一万步", "example_sentence_native": "Ten thousand steps", "example_sentence_phonetic": "Yí wàn bù."},
-        {"id": "w3_1_2", "target": "十万", "phonetic": "shí wàn", "native_meaning": "One hundred thousand", "english": "100000", "example_sentence_target": "十万火急", "example_sentence_native": "Extremely urgent", "example_sentence_phonetic": "Shíwàn huǒjí."},
-        {"id": "w3_1_3", "target": "一百万", "phonetic": "yì bǎi wàn", "native_meaning": "One million", "english": "1000000", "example_sentence_target": "一百万个理由", "example_sentence_native": "A million reasons", "example_sentence_phonetic": "Yì bǎi wàn ge lǐyóu."},
-        {"id": "w3_1_4", "target": "一千万", "phonetic": "yì qiān wàn", "native_meaning": "Ten million", "english": "10000000", "example_sentence_target": "一千万人口", "example_sentence_native": "A population of ten million", "example_sentence_phonetic": "Yì qiān wàn rénkǒu."},
-        {"id": "w3_1_5", "target": "一亿", "phonetic": "yí yì", "native_meaning": "One hundred million", "english": "100000000", "example_sentence_target": "中国有十三亿人口。", "example_sentence_native": "China has a population of 1.3 billion.", "example_sentence_phonetic": "Zhōngguó yǒu shísān yì rénkǒu."}
+        {"id": "w3_1_1", "target": "点", "phonetic": "diǎn", "native_meaning": "O'clock / a little bit", "english": "o'clock", "example_sentence_target": "现在几点了？", "example_sentence_native": "What time is it now?", "example_sentence_phonetic": "Xiànzài jǐ diǎn le?"},
+        {"id": "w3_1_2", "target": "现在", "phonetic": "xiànzài", "native_meaning": "Now", "english": "now", "example_sentence_target": "你现在在哪儿？", "example_sentence_native": "Where are you now?", "example_sentence_phonetic": "Nǐ xiànzài zài nǎ'er?"},
+        {"id": "w3_1_3", "target": "一点", "phonetic": "yī diǎn", "native_meaning": "One o'clock", "english": "1:00", "example_sentence_target": "现在是一点。", "example_sentence_native": "It is one o'clock now.", "example_sentence_phonetic": "Xiànzài shì yī diǎn."},
+        {"id": "w3_1_4", "target": "两点", "phonetic": "liǎng diǎn", "native_meaning": "Two o'clock", "english": "2:00", "example_sentence_target": "会议是下午两点。", "example_sentence_native": "The meeting is at 2 PM.", "example_sentence_phonetic": "Huìyì shì xiàwǔ liǎng diǎn."},
+        {"id": "w3_1_5", "target": "十二点", "phonetic": "shí'èr diǎn", "native_meaning": "Twelve o'clock", "english": "12:00", "example_sentence_target": "我们十二点吃午饭。", "example_sentence_native": "We eat lunch at twelve o'clock.", "example_sentence_phonetic": "Wǒmen shí'èr diǎn chī wǔfàn."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D1"}
+      "dialogues": [
+        {
+          "id": "d3_1_1",
+          "context": "Asking for the time",
+          "lines": [
+            {"speaker": "A", "target": "请问，现在几点了？", "native": "Excuse me, what time is it now?", "phonetic": "Qǐngwèn, xiànzài jǐ diǎn le?"},
+            {"speaker": "B", "target": "现在三点。", "native": "It's three o'clock.", "phonetic": "Xiànzài sān diǎn."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m3_1_1", "target": "一点", "native": "1:00"},
+          {"id": "m3_1_2", "target": "两点", "native": "2:00"},
+          {"id": "m3_1_3", "target": "十二点", "native": "12:00"}
+        ]
+      },
+      "cultural_note": "To say the hour, you simply say the number followed by 点 (diǎn). For 2 o'clock, you must use 两 (liǎng) instead of 二 (èr), making it 'liǎng diǎn'.",
+      "pronunciation_tip": "点 (diǎn) is third tone. It should dip down and then rise up slightly. Practice saying 'sān diǎn' (3:00) with a high flat tone followed by a dipping tone.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W3D1"}
     },
     {
       "week": 3,
       "day": 2,
-      "title": "Measure Words",
-      "title_native": "量词",
-      "theme": "Counting Objects",
+      "title": "Telling Time: Minutes",
+      "title_native": "说时间：分钟 (Shuō shíjiān: Fēnzhōng)",
+      "theme": "Minutes",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w3_2_1", "target": "个", "phonetic": "gè", "native_meaning": "a measure word for people or objects in general", "english": "ge (m.w.)", "example_sentence_target": "一个人", "example_sentence_native": "One person", "example_sentence_phonetic": "Yī gè rén."},
-        {"id": "w3_2_2", "target": "只", "phonetic": "zhī", "native_meaning": "a measure word for animals", "english": "zhī (m.w.)", "example_sentence_target": "一只猫", "example_sentence_native": "One cat", "example_sentence_phonetic": "Yī zhī māo."},
-        {"id": "w3_2_3", "target": "本", "phonetic": "běn", "native_meaning": "a measure word for books", "english": "běn (m.w.)", "example_sentence_target": "一本书", "example_sentence_native": "One book", "example_sentence_phonetic": "Yī běn shū."},
-        {"id": "w3_2_4", "target": "张", "phonetic": "zhāng", "native_meaning": "a measure word for flat objects", "english": "zhāng (m.w.)", "example_sentence_target": "一张纸", "example_sentence_native": "A piece of paper", "example_sentence_phonetic": "Yī zhāng zhǐ."},
-        {"id": "w3_2_5", "target": "杯", "phonetic": "bēi", "native_meaning": "cup; a measure word for things in a cup", "english": "bēi (m.w.)", "example_sentence_target": "一杯茶", "example_sentence_native": "A cup of tea", "example_sentence_phonetic": "Yī bēi chá."}
+        {"id": "w3_2_1", "target": "分", "phonetic": "fēn", "native_meaning": "Minute", "english": "minute", "example_sentence_target": "现在是三点十分。", "example_sentence_native": "It is 3:10 now.", "example_sentence_phonetic": "Xiànzài shì sān diǎn shí fēn."},
+        {"id": "w3_2_2", "target": "三点十分", "phonetic": "sān diǎn shí fēn", "native_meaning": "Ten past three", "english": "3:10", "example_sentence_target": "火车三点十分开。", "example_sentence_native": "The train leaves at 3:10.", "example_sentence_phonetic": "Huǒchē sān diǎn shí fēn kāi."},
+        {"id": "w3_2_3", "target": "五点二十五分", "phonetic": "wǔ diǎn èrshíwǔ fēn", "native_meaning": "Twenty-five past five", "english": "5:25", "example_sentence_target": "我们五点二十五分见。", "example_sentence_native": "Let's meet at 5:25.", "example_sentence_phonetic": "Wǒmen wǔ diǎn èrshíwǔ fēn jiàn."},
+        {"id": "w3_2_4", "target": "秒", "phonetic": "miǎo", "native_meaning": "Second", "english": "second", "example_sentence_target": "请等我几秒钟。", "example_sentence_native": "Please wait for me for a few seconds.", "example_sentence_phonetic": "Qǐng děng wǒ jǐ miǎo zhōng."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D2"}
+      "dialogues": [
+        {
+          "id": "d3_2_1",
+          "context": "Arranging a meeting time",
+          "lines": [
+            {"speaker": "A", "target": "我们几点见？", "native": "What time shall we meet?", "phonetic": "Wǒmen jǐ diǎn jiàn?"},
+            {"speaker": "B", "target": "六点十五分，可以吗？", "native": "6:15, is that okay?", "phonetic": "Liù diǎn shíwǔ fēn, kěyǐ ma?"}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb3_2_1", "sentence": "现在是八点二十___。", "answer": "分", "hint": "minute"}
+        ]
+      },
+      "cultural_note": "To state the time with minutes, you say the hour, then '点' (diǎn), then the number of minutes, then '分' (fēn). For example, 4:30 is 'sì diǎn sān shí fēn'.",
+      "pronunciation_tip": "分 (fēn) is a first, high flat tone. Keep your voice level when you say it.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W3D2"}
     },
     {
       "week": 3,
       "day": 3,
-      "title": "Telling Time (Hours)",
-      "title_native": "说时间（小时）",
-      "theme": "Time",
+      "title": "Telling Time: Half and Quarter",
+      "title_native": "说时间：半和刻 (Shuō shíjiān: Bàn hé kè)",
+      "theme": "Half past and quarter past/to",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w3_3_1", "target": "点", "phonetic": "diǎn", "native_meaning": "o'clock", "english": "o'clock", "example_sentence_target": "现在几点？", "example_sentence_native": "What time is it now?", "example_sentence_phonetic": "Xiànzài jǐ diǎn?"},
-        {"id": "w3_3_2", "target": "一点", "phonetic": "yī diǎn", "native_meaning": "One o'clock", "english": "1:00", "example_sentence_target": "现在是一点。", "example_sentence_native": "It's one o'clock.", "example_sentence_phonetic": "Xiànzài shì yī diǎn."},
-        {"id": "w3_3_3", "target": "三点", "phonetic": "sān diǎn", "native_meaning": "Three o'clock", "english": "3:00", "example_sentence_target": "我们三点见。", "example_sentence_native": "See you at three.", "example_sentence_phonetic": "Wǒmen sān diǎn jiàn."},
-        {"id": "w3_3_4", "target": "七点", "phonetic": "qī diǎn", "native_meaning": "Seven o'clock", "english": "7:00", "example_sentence_target": "我七点起床。", "example_sentence_native": "I get up at seven.", "example_sentence_phonetic": "Wǒ qī diǎn qǐchuáng."},
-        {"id": "w3_3_5", "target": "十二点", "phonetic": "shí èr diǎn", "native_meaning": "Twelve o'clock", "english": "12:00", "example_sentence_target": "现在是十二点。", "example_sentence_native": "It is twelve o'clock now.", "example_sentence_phonetic": "Xiànzài shì shí'èr diǎn."}
+        {"id": "w3_3_1", "target": "半", "phonetic": "bàn", "native_meaning": "Half", "english": "half", "example_sentence_target": "现在是七点半。", "example_sentence_native": "It's half past seven now.", "example_sentence_phonetic": "Xiànzài shì qī diǎn bàn."},
+        {"id": "w3_3_2", "target": "刻", "phonetic": "kè", "native_meaning": "Quarter of an hour", "english": "quarter", "example_sentence_target": "现在是九点一刻。", "example_sentence_native": "It is a quarter past nine.", "example_sentence_phonetic": "Xiànzài shì jiǔ diǎn yī kè."},
+        {"id": "w3_3_3", "target": "差", "phonetic": "chà", "native_meaning": "To lack / short of", "english": "short of", "example_sentence_target": "差一刻十点。", "example_sentence_native": "It's a quarter to ten.", "example_sentence_phonetic": "Chà yī kè shí diǎn."},
+        {"id": "w3_3_4", "target": "九点一刻", "phonetic": "jiǔ diǎn yī kè", "native_meaning": "A quarter past nine", "english": "9:15", "example_sentence_target": "请在九点一刻到。", "example_sentence_native": "Please arrive at 9:15.", "example_sentence_phonetic": "Qǐng zài jiǔ diǎn yī kè dào."},
+        {"id": "w3_3_5", "target": "差五分十点", "phonetic": "chà wǔ fēn shí diǎn", "native_meaning": "Five to ten", "english": "9:55", "example_sentence_target": "现在差五分十点。", "example_sentence_native": "It's five to ten now.", "example_sentence_phonetic": "Xiànzài chà wǔ fēn shí diǎn."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D3"}
+      "dialogues": [
+        {
+          "id": "d3_3_1",
+          "context": "Checking the time",
+          "lines": [
+            {"speaker": "A", "target": "现在几点了？", "native": "What time is it?", "phonetic": "Xiànzài jǐ diǎn le?"},
+            {"speaker": "B", "target": "差一刻十二点。", "native": "It's a quarter to twelve.", "phonetic": "Chà yī kè shí'èr diǎn."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m3_3_1", "target": "七点半", "native": "7:30"},
+          {"id": "m3_3_2", "target": "九点一刻", "native": "9:15"},
+          {"id": "m3_3_3", "target": "差一刻十点", "native": "9:45"}
+        ]
+      },
+      "cultural_note": "Using '半' (bàn) for 'half past' is very common. '刻' (kè) for 'quarter' is also used, but saying the minutes (e.g., 'shí wǔ fēn' for 15) is equally common. To say 'quarter to', you use '差一刻' (chà yī kè) + the next hour.",
+      "pronunciation_tip": "差 (chà) is a fourth, falling tone. Make it sharp. 半 (bàn) is also a fourth tone.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W3D3"}
     },
     {
       "week": 3,
       "day": 4,
-      "title": "Telling Time (Minutes & Half)",
-      "title_native": "说时间（分钟和半）",
-      "theme": "Time",
+      "title": "AM/PM and Time of Day",
+      "title_native": "上午/下午和一天中的时间 (Shàngwǔ/xiàwǔ hé yītiān zhōng de shíjiān)",
+      "theme": "Morning, Afternoon, Night",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w3_4_1", "target": "分", "phonetic": "fēn", "native_meaning": "minute", "english": "minute", "example_sentence_target": "现在是三点十分。", "example_sentence_native": "It's ten past three.", "example_sentence_phonetic": "Xiànzài shì sān diǎn shí fēn."},
-        {"id": "w3_4_2", "target": "半", "phonetic": "bàn", "native_meaning": "half", "english": "half", "example_sentence_target": "现在是两点半。", "example_sentence_native": "It's half past two.", "example_sentence_phonetic": "Xiànzài shì liǎng diǎn bàn."},
-        {"id": "w3_4_3", "target": "刻", "phonetic": "kè", "native_meaning": "quarter (of an hour)", "english": "quarter", "example_sentence_target": "现在是四点一刻。", "example_sentence_native": "It's a quarter past four.", "example_sentence_phonetic": "Xiànzài shì sì diǎn yī kè."},
-        {"id": "w3_4_4", "target": "差", "phonetic": "chà", "native_meaning": "to be short of; to differ", "english": "to", "example_sentence_target": "差十分五点。", "example_sentence_native": "It's ten to five.", "example_sentence_phonetic": "Chà shí fēn wǔ diǎn."},
-        {"id": "w3_4_5", "target": "小时", "phonetic": "xiǎo shí", "native_meaning": "hour", "english": "hour", "example_sentence_target": "我工作八个小时。", "example_sentence_native": "I work for eight hours.", "example_sentence_phonetic": "Wǒ gōngzuò bā gè xiǎoshí."}
+        {"id": "w3_4_1", "target": "早上", "phonetic": "zǎoshang", "native_meaning": "Early morning (around 6-9 AM)", "english": "morning", "example_sentence_target": "早上好！", "example_sentence_native": "Good morning!", "example_sentence_phonetic": "Zǎoshang hǎo!"},
+        {"id": "w3_4_2", "target": "上午", "phonetic": "shàngwǔ", "native_meaning": "Morning (around 9 AM - 12 PM)", "english": "AM", "example_sentence_target": "我上午有课。", "example_sentence_native": "I have class in the morning.", "example_sentence_phonetic": "Wǒ shàngwǔ yǒu kè."},
+        {"id": "w3_4_3", "target": "中午", "phonetic": "zhōngwǔ", "native_meaning": "Noon", "english": "noon", "example_sentence_target": "我们中午吃饭。", "example_sentence_native": "We eat at noon.", "example_sentence_phonetic": "Wǒmen zhōngwǔ chīfàn."},
+        {"id": "w3_4_4", "target": "下午", "phonetic": "xiàwǔ", "native_meaning": "Afternoon", "english": "PM", "example_sentence_target": "下午好！", "example_sentence_native": "Good afternoon!", "example_sentence_phonetic": "Xiàwǔ hǎo!"},
+        {"id": "w3_4_5", "target": "晚上", "phonetic": "wǎnshang", "native_meaning": "Evening / Night", "english": "evening/night", "example_sentence_target": "晚上见！", "example_sentence_native": "See you in the evening!", "example_sentence_phonetic": "Wǎnshang jiàn!"}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D4"}
+      "dialogues": [
+        {
+          "id": "d3_4_1",
+          "context": "Specifying time of day",
+          "lines": [
+            {"speaker": "A", "target": "我们什么时候见面？", "native": "When are we meeting?", "phonetic": "Wǒmen shénme shíhòu jiànmiàn?"},
+            {"speaker": "B", "target": "明天下午三点怎么样？", "native": "How about 3 PM tomorrow?", "phonetic": "Míngtiān xiàwǔ sān diǎn zěnmeyàng?"}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb3_4_1", "sentence": "___ 好！ (greeting in the afternoon)", "answer": "下午", "hint": "afternoon"}
+        ]
+      },
+      "cultural_note": "In Chinese, the time of day (早上, 上午, 下午, 晚上) comes BEFORE the specific time. So, '8 PM' is '晚上八点' (wǎnshang bā diǎn).",
+      "pronunciation_tip": "早上 (zǎoshang) - 'zǎo' is third tone (dip-rise) and 'shang' is a neutral tone (light and short).",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W3D4"}
     },
     {
       "week": 3,
       "day": 5,
-      "title": "Times of Day",
-      "title_native": "一天中的时间",
-      "theme": "Time",
+      "title": "Days of the Week: Part 1",
+      "title_native": "星期：第一部分 (Xīngqī: Dì yī bùfèn)",
+      "theme": "Monday to Thursday",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w3_5_1", "target": "早上", "phonetic": "zǎo shang", "native_meaning": "Morning", "english": "Morning", "example_sentence_target": "早上好！", "example_sentence_native": "Good morning!", "example_sentence_phonetic": "Zǎo shang hǎo!"},
-        {"id": "w3_5_2", "target": "上午", "phonetic": "shàng wǔ", "native_meaning": "Morning (before noon)", "english": "AM", "example_sentence_target": "我上午有课。", "example_sentence_native": "I have class in the morning.", "example_sentence_phonetic": "Wǒ shàngwǔ yǒu kè."},
-        {"id": "w3_5_3", "target": "中午", "phonetic": "zhōng wǔ", "native_meaning": "Noon", "english": "Noon", "example_sentence_target": "我们中午吃饭。", "example_sentence_native": "We eat lunch at noon.", "example_sentence_phonetic": "Wǒmen zhōngwǔ chīfàn."},
-        {"id": "w3_5_4", "target": "下午", "phonetic": "xià wǔ", "native_meaning": "Afternoon", "english": "PM", "example_sentence_target": "下午好！", "example_sentence_native": "Good afternoon!", "example_sentence_phonetic": "Xiàwǔ hǎo!"},
-        {"id": "w3_5_5", "target": "晚上", "phonetic": "wǎn shang", "native_meaning": "Evening / Night", "english": "Evening", "example_sentence_target": "晚上好！", "example_sentence_native": "Good evening!", "example_sentence_phonetic": "Wǎn shàng hǎo!"}
+        {"id": "w3_5_1", "target": "星期", "phonetic": "xīngqī", "native_meaning": "Week", "english": "week", "example_sentence_target": "一个星期有七天。", "example_sentence_native": "A week has seven days.", "example_sentence_phonetic": "Yī gè xīngqī yǒu qī tiān."},
+        {"id": "w3_5_2", "target": "星期一", "phonetic": "xīngqī yī", "native_meaning": "Monday", "english": "Monday", "example_sentence_target": "我星期一很忙。", "example_sentence_native": "I am busy on Monday.", "example_sentence_phonetic": "Wǒ xīngqī yī hěn máng."},
+        {"id": "w3_5_3", "target": "星期二", "phonetic": "xīngqī èr", "native_meaning": "Tuesday", "english": "Tuesday", "example_sentence_target": "星期二我有中文课。", "example_sentence_native": "I have Chinese class on Tuesday.", "example_sentence_phonetic": "Xīngqī èr wǒ yǒu zhōngwén kè."},
+        {"id": "w3_5_4", "target": "星期三", "phonetic": "xīngqī sān", "native_meaning": "Wednesday", "english": "Wednesday", "example_sentence_target": "我们星期三去看电影。", "example_sentence_native": "We will go to the movies on Wednesday.", "example_sentence_phonetic": "Wǒmen xīngqī sān qù kàn diànyǐng."},
+        {"id": "w3_5_5", "target": "星期四", "phonetic": "xīngqī sì", "native_meaning": "Thursday", "english": "Thursday", "example_sentence_target": "星期四是我的生日。", "example_sentence_native": "Thursday is my birthday.", "example_sentence_phonetic": "Xīngqī sì shì wǒ de shēngrì."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D5"}
+      "dialogues": [
+        {
+          "id": "d3_5_1",
+          "context": "Asking about the day",
+          "lines": [
+            {"speaker": "A", "target": "今天星期几？", "native": "What day is it today?", "phonetic": "Jīntiān xīngqī jǐ?"},
+            {"speaker": "B", "target": "今天星期一。", "native": "Today is Monday.", "phonetic": "Jīntiān xīngqī yī."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m3_5_1", "target": "星期一", "native": "Monday"},
+          {"id": "m3_5_2", "target": "星期三", "native": "Wednesday"}
+        ]
+      },
+      "cultural_note": "The days of the week are very logical. Just add the number (1-6) after '星期' (xīngqī). Monday is 'week one', Tuesday is 'week two', and so on. Sunday is the exception.",
+      "pronunciation_tip": "The 'x' in 星期 (xīngqī) is a tricky sound. It's made by touching the tip of your tongue to the back of your bottom teeth and smiling, then pushing air out.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W3D5"}
     },
     {
       "week": 3,
       "day": 6,
-      "title": "Dates (Year, Month, Day)",
-      "title_native": "日期（年、月、日）",
-      "theme": "Calendar",
+      "title": "Days of the Week: Part 2",
+      "title_native": "星期：第二部分 (Xīngqī: Dì èr bùfèn)",
+      "theme": "Friday to Sunday",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w3_6_1", "target": "年", "phonetic": "nián", "native_meaning": "Year", "english": "Year", "example_sentence_target": "今年是2024年。", "example_sentence_native": "This year is 2024.", "example_sentence_phonetic": "Jīnnián shì èr líng èr sì nián."},
-        {"id": "w3_6_2", "target": "月", "phonetic": "yuè", "native_meaning": "Month", "english": "Month", "example_sentence_target": "现在是几月？", "example_sentence_native": "What month is it now?", "example_sentence_phonetic": "Xiànzài shì jǐ yuè?"},
-        {"id": "w3_6_3", "target": "日", "phonetic": "rì", "native_meaning": "Day (formal)", "english": "Day", "example_sentence_target": "今天是10月1日。", "example_sentence_native": "Today is October 1st.", "example_sentence_phonetic": "Jīntiān shì shí yuè yī rì."},
-        {"id": "w3_6_4", "target": "号", "phonetic": "hào", "native_meaning": "Day (colloquial)", "english": "Day (colloquial)", "example_sentence_target": "今天是几号？", "example_sentence_native": "What is the date today?", "example_sentence_phonetic": "Jīntiān shì jǐ hào?"},
-        {"id": "w3_6_5", "target": "今天", "phonetic": "jīn tiān", "native_meaning": "Today", "english": "Today", "example_sentence_target": "今天天气很好。", "example_sentence_native": "The weather is very good today.", "example_sentence_phonetic": "Jīntiān tiānqì hěn hǎo."}
+        {"id": "w3_6_1", "target": "星期五", "phonetic": "xīngqī wǔ", "native_meaning": "Friday", "english": "Friday", "example_sentence_target": "我喜欢星期五。", "example_sentence_native": "I like Friday.", "example_sentence_phonetic": "Wǒ xǐhuān xīngqī wǔ."},
+        {"id": "w3_6_2", "target": "星期六", "phonetic": "xīngqī liù", "native_meaning": "Saturday", "english": "Saturday", "example_sentence_target": "星期六我休息。", "example_sentence_native": "I rest on Saturday.", "example_sentence_phonetic": "Xīngqī liù wǒ xiūxí."},
+        {"id": "w3_6_3", "target": "星期天", "phonetic": "xīngqī tiān", "native_meaning": "Sunday", "english": "Sunday", "example_sentence_target": "星期天是周末。", "example_sentence_native": "Sunday is the weekend.", "example_sentence_phonetic": "Xīngqī tiān shì zhōumò."},
+        {"id": "w3_6_4", "target": "星期日", "phonetic": "xīngqī rì", "native_meaning": "Sunday (more formal)", "english": "Sunday", "example_sentence_target": "商店星期日关门。", "example_sentence_native": "The store is closed on Sunday.", "example_sentence_phonetic": "Shāngdiàn xīngqī rì guānmén."},
+        {"id": "w3_6_5", "target": "周末", "phonetic": "zhōumò", "native_meaning": "Weekend", "english": "weekend", "example_sentence_target": "你周末有什么计划？", "example_sentence_native": "What are your plans for the weekend?", "example_sentence_phonetic": "Nǐ zhōumò yǒu shénme jìhuà?"}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D6"}
+      "dialogues": [
+        {
+          "id": "d3_6_1",
+          "context": "Making weekend plans",
+          "lines": [
+            {"speaker": "A", "target": "这个周末你忙吗？", "native": "Are you busy this weekend?", "phonetic": "Zhège zhōumò nǐ máng ma?"},
+            {"speaker": "B", "target": "不忙，我星期天有空。", "native": "Not busy, I'm free on Sunday.", "phonetic": "Bù máng, wǒ xīngqī tiān yǒu kòng."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb3_6_1", "sentence": "我喜欢 ___，因为第二天是星期六。", "answer": "星期五", "hint": "Friday"}
+        ]
+      },
+      "cultural_note": "Sunday is the exception to the numbering rule. It's called '星期天' (xīngqī tiān - 'week day/sky') or more formally '星期日' (xīngqī rì - 'week sun'). '天' is more common in spoken language.",
+      "pronunciation_tip": "周末 (zhōumò) - the 'zh' is a retroflex 'j' sound, like in 'jam' but with your tongue curled up. 'mò' is a fourth, falling tone.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W3D6"}
     },
     {
       "week": 3,
       "day": 7,
-      "title": "Review Time & Dates",
-      "title_native": "复习时间和日期",
-      "theme": "Time & Calendar Review",
+      "title": "Week 3 Review",
+      "title_native": "第三周复习 (Dì sān zhōu fùxí)",
+      "theme": "Reviewing time and days",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
-      "words": [],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W3D7"}
+      "words": [
+        {"id": "w3_7_1", "target": "时间", "phonetic": "shíjiān", "native_meaning": "Time", "english": "time", "example_sentence_target": "你有什么时间？", "example_sentence_native": "When are you free?", "example_sentence_phonetic": "Nǐ yǒu shénme shíjiān?"},
+        {"id": "w3_7_2", "target": "今天", "phonetic": "jīntiān", "native_meaning": "Today", "english": "today", "example_sentence_target": "今天天气很好。", "example_sentence_native": "The weather is very good today.", "example_sentence_phonetic": "Jīntiān tiānqì hěn hǎo."},
+        {"id": "w3_7_3", "target": "明天", "phonetic": "míngtiān", "native_meaning": "Tomorrow", "english": "tomorrow", "example_sentence_target": "明天见。", "example_sentence_native": "See you tomorrow.", "example_sentence_phonetic": "Míngtiān jiàn."}
+      ],
+      "dialogues": [
+        {
+          "id": "d3_7_1",
+          "context": "Arranging a meeting",
+          "lines": [
+            {"speaker": "A", "target": "我们明天下午两点半见，好吗？", "native": "Let's meet at 2:30 PM tomorrow, okay?", "phonetic": "Wǒmen míngtiān xiàwǔ liǎng diǎn bàn jiàn, hǎo ma?"},
+            {"speaker": "B", "target": "好的，明天见。", "native": "Okay, see you tomorrow.", "phonetic": "Hǎo de, míngtiān jiàn."}
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {"id": "ss3_7_1", "scrambled": ["星期几", "今天"], "correct": "今天星期几", "nativeHint": "What day is it today?"}
+        ]
+      },
+      "cultural_note": "In Chinese, time expressions are typically ordered from largest unit to smallest: Year, Month, Day, Time of Day, Hour, Minute. (e.g., 明天下午三点 - Tomorrow afternoon 3 o'clock).",
+      "pronunciation_tip": "Practice linking time of day with the hour. For example, 上午十点 (shàngwǔ shí diǎn - 10 AM), 下午四点半 (xiàwǔ sì diǎn bàn - 4:30 PM).",
+      "progress": {"xp": 100, "streak_bonus": 20, "badge": "NUM-CH-W3-COMPLETE"}
     }
   ]
 }
+
+    

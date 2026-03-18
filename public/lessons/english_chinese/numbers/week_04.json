@@ -8,117 +8,219 @@
     {
       "week": 4,
       "day": 1,
-      "title": "Days of the Week (Part 1)",
-      "title_native": "星期（第一部分）",
-      "theme": "Calendar",
+      "title": "Months of the Year: Part 1",
+      "title_native": "一年中的月份：第一部分 (Yī nián zhōng de yuèfèn: Dì yī bùfèn)",
+      "theme": "January to June",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w4_1_1", "target": "星期", "phonetic": "xīng qī", "native_meaning": "Week", "english": "Week", "example_sentence_target": "一个星期有七天。", "example_sentence_native": "There are seven days in a week.", "example_sentence_phonetic": "Yīge xīngqí yǒu qī tiān."},
-        {"id": "w4_1_2", "target": "星期一", "phonetic": "xīng qī yī", "native_meaning": "Monday", "english": "Monday", "example_sentence_target": "星期一我上班。", "example_sentence_native": "I work on Monday.", "example_sentence_phonetic": "Xīngqīyī wǒ shàngbān."},
-        {"id": "w4_1_3", "target": "星期二", "phonetic": "xīng qī èr", "native_meaning": "Tuesday", "english": "Tuesday", "example_sentence_target": "星期二我有会议。", "example_sentence_native": "I have a meeting on Tuesday.", "example_sentence_phonetic": "Xīngqī'èr wǒ yǒu huìyì."},
-        {"id": "w4_1_4", "target": "星期三", "phonetic": "xīng qī sān", "native_meaning": "Wednesday", "english": "Wednesday", "example_sentence_target": "星期三是周中。", "example_sentence_native": "Wednesday is midweek.", "example_sentence_phonetic": "Xīngqīsān shì zhōuzhōng."}
+        {"id": "w4_1_1", "target": "月", "phonetic": "yuè", "native_meaning": "Month / Moon", "english": "month", "example_sentence_target": "现在是几月？", "example_sentence_native": "What month is it now?", "example_sentence_phonetic": "Xiànzài shì jǐ yuè?"},
+        {"id": "w4_1_2", "target": "一月", "phonetic": "yī yuè", "native_meaning": "January", "english": "January", "example_sentence_target": "一月是一年的第一个月。", "example_sentence_native": "January is the first month of the year.", "example_sentence_phonetic": "Yī yuè shì yī nián de dì yī gè yuè."},
+        {"id": "w4_1_3", "target": "二月", "phonetic": "èr yuè", "native_meaning": "February", "english": "February", "example_sentence_target": "二月有春节。", "example_sentence_native": "February has the Spring Festival.", "example_sentence_phonetic": "Èr yuè yǒu chūnjié."},
+        {"id": "w4_1_4", "target": "三月", "phonetic": "sān yuè", "native_meaning": "March", "english": "March", "example_sentence_target": "三月天气变暖了。", "example_sentence_native": "The weather gets warmer in March.", "example_sentence_phonetic": "Sān yuè tiānqì biàn nuǎn le."},
+        {"id": "w4_1_5", "target": "四月", "phonetic": "sì yuè", "native_meaning": "April", "english": "April", "example_sentence_target": "四月一日是愚人节。", "example_sentence_native": "April 1st is April Fools' Day.", "example_sentence_phonetic": "Sì yuè yī rì shì yúrénjié."},
+        {"id": "w4_1_6", "target": "五月", "phonetic": "wǔ yuè", "native_meaning": "May", "english": "May", "example_sentence_target": "五月有劳动节。", "example_sentence_native": "May has Labor Day.", "example_sentence_phonetic": "Wǔ yuè yǒu láodòngjié."},
+        {"id": "w4_1_7", "target": "六月", "phonetic": "liù yuè", "native_meaning": "June", "english": "June", "example_sentence_target": "六月一日是儿童节。", "example_sentence_native": "June 1st is Children's Day.", "example_sentence_phonetic": "Liù yuè yī rì shì értóngjié."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D1"}
+      "dialogues": [
+        {
+          "id": "d4_1_1",
+          "context": "Asking for the month",
+          "lines": [
+            {"speaker": "A", "target": "现在是几月？", "native": "What month is it?", "phonetic": "Xiànzài shì jǐ yuè?"},
+            {"speaker": "B", "target": "现在是三月。", "native": "It's March.", "phonetic": "Xiànzài shì sān yuè."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m4_1_1", "target": "一月", "native": "January"},
+          {"id": "m4_1_2", "target": "六月", "native": "June"}
+        ]
+      },
+      "cultural_note": "Just like the days of the week, the months of the year are very logical in Chinese. You just say the number (1-12) followed by '月' (yuè).",
+      "pronunciation_tip": "月 (yuè) can be a difficult sound. Start by saying 'you' and then purse your lips tightly as if you're going to whistle, while trying to say 'eh'.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W4D1"}
     },
     {
       "week": 4,
       "day": 2,
-      "title": "Days of the Week (Part 2)",
-      "title_native": "星期（第二部分）",
-      "theme": "Calendar",
+      "title": "Months of the Year: Part 2",
+      "title_native": "一年中的月份：第二部分 (Yī nián zhōng de yuèfèn: Dì èr bùfèn)",
+      "theme": "July to December",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w4_2_1", "target": "星期四", "phonetic": "xīng qī sì", "native_meaning": "Thursday", "english": "Thursday", "example_sentence_target": "我们星期四去看电影。", "example_sentence_native": "We are going to the movies on Thursday.", "example_sentence_phonetic": "Wǒmen xīngqīsì qù kàn diànyǐng."},
-        {"id": "w4_2_2", "target": "星期五", "phonetic": "xīng qī wǔ", "native_meaning": "Friday", "english": "Friday", "example_sentence_target": "星期五是周末的开始。", "example_sentence_native": "Friday is the beginning of the weekend.", "example_sentence_phonetic": "Xīngqīwǔ shì zhōumò de kāishǐ."},
-        {"id": "w4_2_3", "target": "星期六", "phonetic": "xīng qī liù", "native_meaning": "Saturday", "english": "Saturday", "example_sentence_target": "我星期六休息。", "example_sentence_native": "I rest on Saturday.", "example_sentence_phonetic": "Wǒ xīngqīliù xiūxi."},
-        {"id": "w4_2_4", "target": "星期日 / 星期天", "phonetic": "xīng qī rì / xīng qī tiān", "native_meaning": "Sunday", "english": "Sunday", "example_sentence_target": "星期天是休息日。", "example_sentence_native": "Sunday is a day of rest.", "example_sentence_phonetic": "Xīngqītiān shì xiūxírì."}
+        {"id": "w4_2_1", "target": "七月", "phonetic": "qī yuè", "native_meaning": "July", "english": "July", "example_sentence_target": "七月很热。", "example_sentence_native": "July is very hot.", "example_sentence_phonetic": "Qī yuè hěn rè."},
+        {"id": "w4_2_2", "target": "八月", "phonetic": "bā yuè", "native_meaning": "August", "english": "August", "example_sentence_target": "我八月去度假。", "example_sentence_native": "I go on vacation in August.", "example_sentence_phonetic": "Wǒ bā yuè qù dùjià."},
+        {"id": "w4_2_3", "target": "九月", "phonetic": "jiǔ yuè", "native_meaning": "September", "english": "September", "example_sentence_target": "九月开学。", "example_sentence_native": "School starts in September.", "example_sentence_phonetic": "Jiǔ yuè kāixué."},
+        {"id": "w4_2_4", "target": "十月", "phonetic": "shí yuè", "native_meaning": "October", "english": "October", "example_sentence_target": "十月一日是国庆节。", "example_sentence_native": "October 1st is National Day.", "example_sentence_phonetic": "Shí yuè yī rì shì guóqìngjié."},
+        {"id": "w4_2_5", "target": "十一月", "phonetic": "shíyī yuè", "native_meaning": "November", "english": "November", "example_sentence_target": "十一月天气冷了。", "example_sentence_native": "The weather gets cold in November.", "example_sentence_phonetic": "Shíyī yuè tiānqì lěng le."},
+        {"id": "w4_2_6", "target": "十二月", "phonetic": "shí'èr yuè", "native_meaning": "December", "english": "December", "example_sentence_target": "十二月有圣诞节。", "example_sentence_native": "December has Christmas.", "example_sentence_phonetic": "Shí'èr yuè yǒu shèngdànjié."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D2"}
+      "dialogues": [
+        {
+          "id": "d4_2_1",
+          "context": "Talking about birthdays",
+          "lines": [
+            {"speaker": "A", "target": "你的生日是几月？", "native": "What month is your birthday in?", "phonetic": "Nǐ de shēngrì shì jǐ yuè?"},
+            {"speaker": "B", "target": "我的生日在十二月。", "native": "My birthday is in December.", "phonetic": "Wǒ de shēngrì zài shí'èr yuè."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb4_2_1", "sentence": "学校在 ___ 开学。", "answer": "九月", "hint": "September"}
+        ]
+      },
+      "cultural_note": "Many important Chinese holidays are based on the lunar calendar, not the Gregorian calendar we are learning here. For example, Chinese New Year (春节, Chūnjié) usually falls in late January or February.",
+      "pronunciation_tip": "Practice the tones for the months: 七月 (qī yuè, 1st-4th), 八月 (bā yuè, 1st-4th), 九月 (jiǔ yuè, 3rd-4th).",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W4D2"}
     },
     {
       "week": 4,
       "day": 3,
-      "title": "Months (Jan - Apr)",
-      "title_native": "月份（一月 - 四月）",
-      "theme": "Calendar",
+      "title": "Dates",
+      "title_native": "日期 (Rìqī)",
+      "theme": "Day of the month",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w4_3_1", "target": "一月", "phonetic": "yī yuè", "native_meaning": "January", "english": "January", "example_sentence_target": "一月是新年的开始。", "example_sentence_native": "January is the start of the new year.", "example_sentence_phonetic": "Yīyuè shì xīnnián de kāishǐ."},
-        {"id": "w4_3_2", "target": "二月", "phonetic": "èr yuè", "native_meaning": "February", "english": "February", "example_sentence_target": "二月有春节。", "example_sentence_native": "February has the Spring Festival.", "example_sentence_phonetic": "Èryuè yǒu Chūnjié."},
-        {"id": "w4_3_3", "target": "三月", "phonetic": "sān yuè", "native_meaning": "March", "english": "March", "example_sentence_target": "三月天气变暖。", "example_sentence_native": "The weather gets warmer in March.", "example_sentence_phonetic": "Sānyuè tiānqì biàn nuǎn."},
-        {"id": "w4_3_4", "target": "四月", "phonetic": "sì yuè", "native_meaning": "April", "english": "April", "example_sentence_target": "四月是春天。", "example_sentence_native": "April is in the spring.", "example_sentence_phonetic": "Sìyuè shì chūntiān."}
+        {"id": "w4_3_1", "target": "日", "phonetic": "rì", "native_meaning": "Day / Sun (formal)", "english": "day", "example_sentence_target": "今天是几月几日？", "example_sentence_native": "What is the date today?", "example_sentence_phonetic": "Jīntiān shì jǐ yuè jǐ rì?"},
+        {"id": "w4_3_2", "target": "号", "phonetic": "hào", "native_meaning": "Day of the month (colloquial)", "english": "date number", "example_sentence_target": "今天是几号？", "example_sentence_native": "What is the date today?", "example_sentence_phonetic": "Jīntiān shì jǐ hào?"},
+        {"id": "w4_3_3", "target": "一号", "phonetic": "yī hào", "native_meaning": "The first (day of month)", "english": "1st", "example_sentence_target": "明天是一号。", "example_sentence_native": "Tomorrow is the first.", "example_sentence_phonetic": "Míngtiān shì yī hào."},
+        {"id": "w4_3_4", "target": "三十一号", "phonetic": "sānshíyī hào", "native_meaning": "The thirty-first", "english": "31st", "example_sentence_target": "十二月有三十一号。", "example_sentence_native": "December has a 31st.", "example_sentence_phonetic": "Shí'èr yuè yǒu sānshíyī hào."},
+        {"id": "w4_3_5", "target": "生日", "phonetic": "shēngrì", "native_meaning": "Birthday", "english": "birthday", "example_sentence_target": "祝你生日快乐！", "example_sentence_native": "Happy birthday to you!", "example_sentence_phonetic": "Zhù nǐ shēngrì kuàilè!"}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D3"}
+      "dialogues": [
+        {
+          "id": "d4_3_1",
+          "context": "Stating the full date",
+          "lines": [
+            {"speaker": "A", "target": "今天几月几号？", "native": "What's the date today?", "phonetic": "Jīntiān jǐ yuè jǐ hào?"},
+            {"speaker": "B", "target": "今天十月二十号。", "native": "Today is October 20th.", "phonetic": "Jīntiān shí yuè èrshí hào."}
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {"id": "ss4_3_1", "scrambled": ["是", "生日", "我的", "今天"], "correct": "今天是我生日", "nativeHint": "Today is my birthday."}
+        ]
+      },
+      "cultural_note": "To say the date, you use '号' (hào) for the day of the month in spoken Chinese. '日' (rì) is more for written and formal contexts. The order is always Month then Day: e.g., 'October 1st' is '十月一号' (shí yuè yī hào).",
+      "pronunciation_tip": "The 'r' in 日 (rì) is a sound that doesn't exist in English. It's like the 's' in 'pleasure' but with your tongue curled up.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W4D3"}
     },
     {
       "week": 4,
       "day": 4,
-      "title": "Months (May - Aug)",
-      "title_native": "月份（五月 - 八月）",
-      "theme": "Calendar",
+      "title": "Putting it all together: Full Dates",
+      "title_native": "完整的日期 (Wánzhěng de rìqī)",
+      "theme": "Year, Month, Day",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w4_4_1", "target": "五月", "phonetic": "wǔ yuè", "native_meaning": "May", "english": "May", "example_sentence_target": "五月有劳动节。", "example_sentence_native": "May has Labor Day.", "example_sentence_phonetic": "Wǔyuè yǒu láodòng jié."},
-        {"id": "w4_4_2", "target": "六月", "phonetic": "liù yuè", "native_meaning": "June", "english": "June", "example_sentence_target": "六月是夏天。", "example_sentence_native": "June is in the summer.", "example_sentence_phonetic": "Liùyuè shì xiàtiān."},
-        {"id": "w4_4_3", "target": "七月", "phonetic": "qī yuè", "native_meaning": "July", "english": "July", "example_sentence_target": "七月很热。", "example_sentence_native": "July is very hot.", "example_sentence_phonetic": "Qīyuè hěn rè."},
-        {"id": "w4_4_4", "target": "八月", "phonetic": "bā yuè", "native_meaning": "August", "english": "August", "example_sentence_target": "八月是暑假。", "example_sentence_native": "August is summer vacation.", "example_sentence_phonetic": "Bāyuè shì shǔjià."}
+        {"id": "w4_4_1", "target": "年", "phonetic": "nián", "native_meaning": "Year", "english": "year", "example_sentence_target": "今年是哪一年？", "example_sentence_native": "What year is it this year?", "example_sentence_phonetic": "Jīnnián shì nǎ yī nián?"},
+        {"id": "w4_4_2", "target": "今年", "phonetic": "jīnnián", "native_meaning": "This year", "english": "this year", "example_sentence_target": "我今年二十五岁。", "example_sentence_native": "I am 25 years old this year.", "example_sentence_phonetic": "Wǒ jīnnián èrshíwǔ suì."},
+        {"id": "w4_4_3", "target": "明年", "phonetic": "míngnián", "native_meaning": "Next year", "english": "next year", "example_sentence_target": "我明年去中国。", "example_sentence_native": "I will go to China next year.", "example_sentence_phonetic": "Wǒ míngnián qù zhōngguó."},
+        {"id": "w4_4_4", "target": "去年", "phonetic": "qùnián", "native_meaning": "Last year", "english": "last year", "example_sentence_target": "我去年大学毕业了。", "example_sentence_native": "I graduated from university last year.", "example_sentence_phonetic": "Wǒ qùnián dàxué bìyè le."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D4"}
+      "dialogues": [
+        {
+          "id": "d4_4_1",
+          "context": "Stating a full date",
+          "lines": [
+            {"speaker": "A", "target": "你的生日是几月几号？", "native": "When is your birthday (month and day)?", "phonetic": "Nǐ de shēngrì shì jǐ yuè jǐ hào?"},
+            {"speaker": "B", "target": "我的生日是二零零零年一月一号。", "native": "My birthday is January 1st, 2000.", "phonetic": "Wǒ de shēngrì shì èr líng líng líng nián yī yuè yī hào."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb4_4_1", "sentence": "明年是二零二五___。", "answer": "年", "hint": "year"}
+        ]
+      },
+      "cultural_note": "The date format in Chinese is always from the largest unit to the smallest: Year-Month-Day. For example, December 25, 2024 would be written and said as '二零二四年十二月二十五号' (èr líng èr sì nián shí'èr yuè èrshíwǔ hào).",
+      "pronunciation_tip": "Remember to read the year digit by digit. 2024 is 'èr líng èr sì nián', not 'liǎng qiān...' etc.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W4D4"}
     },
     {
       "week": 4,
       "day": 5,
-      "title": "Months (Sep - Dec)",
-      "title_native": "月份（九月 - 十二月）",
-      "theme": "Calendar",
-      "path": "numbers",
-      "targetLanguage": "Chinese",
-      "nativeLanguage": "English",
-      "words": [
-        {"id": "w4_5_1", "target": "九月", "phonetic": "jiǔ yuè", "native_meaning": "September", "english": "September", "example_sentence_target": "九月开学。", "example_sentence_native": "School starts in September.", "example_sentence_phonetic": "Jiǔyuè kāixué."},
-        {"id": "w4_5_2", "target": "十月", "phonetic": "shí yuè", "native_meaning": "October", "english": "October", "example_sentence_target": "十月有国庆节。", "example_sentence_native": "October has the National Day.", "example_sentence_phonetic": "Shíyuè yǒu Guóqìngjié."},
-        {"id": "w4_5_3", "target": "十一月", "phonetic": "shí yī yuè", "native_meaning": "November", "english": "November", "example_sentence_target": "十一月天气变冷。", "example_sentence_native": "The weather gets cold in November.", "example_sentence_phonetic": "Shíyīyuè tiānqì biàn lěng."},
-        {"id": "w4_5_4", "target": "十二月", "phonetic": "shí èr yuè", "native_meaning": "December", "english": "December", "example_sentence_target": "十二月有圣诞节。", "example_sentence_native": "December has Christmas.", "example_sentence_phonetic": "Shí'èryuè yǒu Shèngdànjié."}
-      ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D5"}
-    },
-    {
-      "week": 4,
-      "day": 6,
-      "title": "Money",
-      "title_native": "钱",
-      "theme": "Finance",
-      "path": "numbers",
-      "targetLanguage": "Chinese",
-      "nativeLanguage": "English",
-      "words": [
-        {"id": "w4_6_1", "target": "元 / 块", "phonetic": "yuán / kuài", "native_meaning": "Yuan (Chinese currency)", "english": "Yuan", "example_sentence_target": "这个多少钱？十块。", "example_sentence_native": "How much is this? Ten yuan.", "example_sentence_phonetic": "Zhège duōshǎo qián? Shí kuài."},
-        {"id": "w4_6_2", "target": "角 / 毛", "phonetic": "jiǎo / máo", "native_meaning": "Jiao (1/10 of a Yuan)", "english": "Jiao", "example_sentence_target": "五毛钱", "example_sentence_native": "Fifty cents (five jiao).", "example_sentence_phonetic": "Wǔ máo qián."},
-        {"id": "w4_6_3", "target": "分", "phonetic": "fēn", "native_meaning": "Fen (1/100 of a Yuan)", "english": "Fen", "example_sentence_target": "这东西不值一分钱。", "example_sentence_native": "This thing isn't worth a fen.", "example_sentence_phonetic": "Zhè dōngxi bùzhí yī fēn qián."},
-        {"id": "w4_6_4", "target": "钱", "phonetic": "qián", "native_meaning": "Money", "english": "Money", "example_sentence_target": "你有钱吗？", "example_sentence_native": "Do you have money?", "example_sentence_phonetic": "Nǐ yǒu qián ma?"},
-        {"id": "w4_6_5", "target": "人民币", "phonetic": "rén mín bì", "native_meaning": "RMB (official name for currency)", "english": "RMB", "example_sentence_target": "这是人民币。", "example_sentence_native": "This is RMB.", "example_sentence_phonetic": "Zhè shì rénmínbì."}
-      ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D6"}
-    },
-    {
-      "week": 4,
-      "day": 7,
-      "title": "Final Review",
-      "title_native": "总复习",
-      "theme": "Numbers Path Review",
+      "title": "Week 4 Review",
+      "title_native": "第四周复习 (Dì sì zhōu fùxí)",
+      "theme": "Reviewing Dates and Months",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W4D7"}
+      "dialogues": [
+        {
+          "id": "d4_5_1",
+          "context": "Asking about an important date",
+          "lines": [
+            {"speaker": "A", "target": "国庆节是几月几号？", "native": "What is the date of the National Day?", "phonetic": "Guóqìngjié shì jǐ yuè jǐ hào?"},
+            {"speaker": "B", "target": "是十月一号。", "native": "It's October 1st.", "phonetic": "Shì shí yuè yī hào."}
+          ]
+        },
+        {
+          "id": "d4_5_2",
+          "context": "Scheduling a meeting",
+          "lines": [
+            {"speaker": "A", "target": "我们下周三见面，可以吗？", "native": "Let's meet next Wednesday, okay?", "phonetic": "Wǒmen xià zhōu sān jiànmiàn, kěyǐ ma?"},
+            {"speaker": "B", "target": "好的。下午两点？", "native": "Okay. At 2 PM?", "phonetic": "Hǎo de. Xiàwǔ liǎng diǎn?"}
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {"id": "ss4_5_1", "scrambled": ["是", "今天", "星期天"], "correct": "今天是星期天", "nativeHint": "Today is Sunday."}
+        ],
+        "fillBlanks": [
+          {"id": "fb4_5_1", "sentence": "今天是二零二四年三月十___。", "answer": "号", "hint": "date number"}
+        ]
+      },
+      "cultural_note": "You've now learned all the basic components to talk about time and dates! Practice by saying today's date, your birthday, and other important dates in Chinese.",
+      "pronunciation_tip": "Pay close attention to the tones of each number, month, and day. Correct tones are essential for being understood.",
+      "progress": {"xp": 100, "streak_bonus": 20, "badge": "NUM-CH-W4-COMPLETE"}
+    },
+    {
+      "week": 4,
+      "day": 6,
+      "title": "Placeholder Day",
+      "title_native": "占位符日",
+      "theme": "Placeholder",
+      "path": "numbers",
+      "targetLanguage": "Chinese",
+      "nativeLanguage": "English",
+      "words": [],
+      "dialogues": [],
+      "exercises": {},
+      "cultural_note": "This is a placeholder.",
+      "pronunciation_tip": "This is a placeholder.",
+      "progress": {"xp": 0, "streak_bonus": 0, "badge": "NUM-CH-W4D6-PH"}
+    },
+    {
+      "week": 4,
+      "day": 7,
+      "title": "Placeholder Day",
+      "title_native": "占位符日",
+      "theme": "Placeholder",
+      "path": "numbers",
+      "targetLanguage": "Chinese",
+      "nativeLanguage": "English",
+      "words": [],
+      "dialogues": [],
+      "exercises": {},
+      "cultural_note": "This is a placeholder.",
+      "pronunciation_tip": "This is a placeholder.",
+      "progress": {"xp": 0, "streak_bonus": 0, "badge": "NUM-CH-W4D7-PH"}
     }
   ]
 }
+
+    

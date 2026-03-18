@@ -8,114 +8,258 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Numbers 0-2",
-      "title_native": "数字 0-2",
-      "theme": "Basic Counting",
+      "title": "Numbers 1-5",
+      "title_native": "数字 1-5 (Shùzì 1-5)",
+      "theme": "Basic Counting 1-5",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w1_1_1", "target": "零", "phonetic": "líng", "native_meaning": "Zero", "english": "0", "example_sentence_target": "现在是零度。", "example_sentence_native": "It is zero degrees now.", "example_sentence_phonetic": "Xiànzài shì líng dù."},
-        {"id": "w1_1_2", "target": "一", "phonetic": "yī", "native_meaning": "One", "english": "1", "example_sentence_target": "我有一个苹果。", "example_sentence_native": "I have one apple.", "example_sentence_phonetic": "Wǒ yǒu yīge píngguǒ."},
-        {"id": "w1_1_3", "target": "二", "phonetic": "èr", "native_meaning": "Two", "english": "2", "example_sentence_target": "我有两本书。", "example_sentence_native": "I have two books.", "example_sentence_phonetic": "Wǒ yǒu liǎng běn shū."}
+        {"id": "w1_1_1", "target": "一", "phonetic": "yī", "native_meaning": "One", "english": "1", "example_sentence_target": "我有一个苹果。", "example_sentence_native": "I have one apple.", "example_sentence_phonetic": "Wǒ yǒu yī gè píngguǒ."},
+        {"id": "w1_1_2", "target": "二", "phonetic": "èr", "native_meaning": "Two", "english": "2", "example_sentence_target": "我有两本书。", "example_sentence_native": "I have two books.", "example_sentence_phonetic": "Wǒ yǒu liǎng běn shū."},
+        {"id": "w1_1_3", "target": "三", "phonetic": "sān", "native_meaning": "Three", "english": "3", "example_sentence_target": "这里有三个人。", "example_sentence_native": "There are three people here.", "example_sentence_phonetic": "Zhèli yǒu sān gè rén."},
+        {"id": "w1_1_4", "target": "四", "phonetic": "sì", "native_meaning": "Four", "english": "4", "example_sentence_target": "桌子有四条腿。", "example_sentence_native": "The table has four legs.", "example_sentence_phonetic": "Zhuōzi yǒu sì tiáo tuǐ."},
+        {"id": "w1_1_5", "target": "五", "phonetic": "wǔ", "native_meaning": "Five", "english": "5", "example_sentence_target": "他五岁了。", "example_sentence_native": "He is five years old.", "example_sentence_phonetic": "Tā wǔ suì le."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D1"}
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Counting items",
+          "lines": [
+            {"speaker": "A", "target": "这里有几个杯子？", "native": "How many cups are here?", "phonetic": "Zhèli yǒu jǐ gè bēizi?"},
+            {"speaker": "B", "target": "有五个杯子。", "native": "There are five cups.", "phonetic": "Yǒu wǔ gè bēizi."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m1_1_1", "target": "一", "native": "1"},
+          {"id": "m1_1_2", "target": "三", "native": "3"},
+          {"id": "m1_1_3", "target": "五", "native": "5"}
+        ],
+        "sentenceScramble": [
+          {"id": "ss1_1_1", "scrambled": ["有", "我", "苹果", "一个"], "correct": "我有一个苹果", "nativeHint": "I have one apple."}
+        ]
+      },
+      "cultural_note": "The character 二 (èr) is used for counting, but when specifying a quantity of two items, 两 (liǎng) is often used instead, as in '两本书' (liǎng běn shū) for 'two books'.",
+      "pronunciation_tip": "Pay attention to the tones. For example, 一 (yī) is first tone (high and flat), while 四 (sì) is fourth tone (falling).",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W1D1"}
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Numbers 3-4",
-      "title_native": "数字 3-4",
-      "theme": "Basic Counting",
+      "title": "Numbers 6-10",
+      "title_native": "数字 6-10 (Shùzì 6-10)",
+      "theme": "Basic Counting 6-10",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w1_2_1", "target": "三", "phonetic": "sān", "native_meaning": "Three", "english": "3", "example_sentence_target": "三个朋友", "example_sentence_native": "Three friends", "example_sentence_phonetic": "Sān ge péngyǒu."},
-        {"id": "w1_2_2", "target": "四", "phonetic": "sì", "native_meaning": "Four", "english": "4", "example_sentence_target": "四个季节", "example_sentence_native": "Four seasons", "example_sentence_phonetic": "Sì ge jìjié."}
+        {"id": "w1_2_1", "target": "六", "phonetic": "liù", "native_meaning": "Six", "english": "6", "example_sentence_target": "我有六支笔。", "example_sentence_native": "I have six pens.", "example_sentence_phonetic": "Wǒ yǒu liù zhī bǐ."},
+        {"id": "w1_2_2", "target": "七", "phonetic": "qī", "native_meaning": "Seven", "english": "7", "example_sentence_target": "一个星期有七天。", "example_sentence_native": "A week has seven days.", "example_sentence_phonetic": "Yī gè xīngqī yǒu qī tiān."},
+        {"id": "w1_2_3", "target": "八", "phonetic": "bā", "native_meaning": "Eight", "english": "8", "example_sentence_target": "八是一个吉利的数字。", "example_sentence_native": "Eight is a lucky number.", "example_sentence_phonetic": "Bā shì yī gè jíli de shùzì."},
+        {"id": "w1_2_4", "target": "九", "phonetic": "jiǔ", "native_meaning": "Nine", "english": "9", "example_sentence_target": "现在是九点。", "example_sentence_native": "It's nine o'clock now.", "example_sentence_phonetic": "Xiànzài shì jiǔ diǎn."},
+        {"id": "w1_2_5", "target": "十", "phonetic": "shí", "native_meaning": "Ten", "english": "10", "example_sentence_target": "他十岁了。", "example_sentence_native": "He is ten years old.", "example_sentence_phonetic": "Tā shí suì le."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D2"}
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "Asking for a quantity",
+          "lines": [
+            {"speaker": "A", "target": "你要几个？", "native": "How many do you want?", "phonetic": "Nǐ yào jǐ gè?"},
+            {"speaker": "B", "target": "我要八个。", "native": "I want eight.", "phonetic": "Wǒ yào bā gè."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb1_2_1", "sentence": "一个星期有 ___ 天。", "answer": "七", "hint": "seven"}
+        ]
+      },
+      "cultural_note": "The number 8 (八, bā) is considered very lucky in Chinese culture because it sounds similar to the word for 'wealth' or 'fortune' (发, fā).",
+      "pronunciation_tip": "The 'q' in 七 (qī) is like the 'ch' in 'cheese', but with the tongue positioned further forward.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W1D2"}
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Numbers 5-6",
-      "title_native": "数字 5-6",
-      "theme": "Basic Counting",
+      "title": "Numbers 11-15",
+      "title_native": "数字 11-15 (Shùzì 11-15)",
+      "theme": "Counting Teens",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w1_3_1", "target": "五", "phonetic": "wǔ", "native_meaning": "Five", "english": "5", "example_sentence_target": "五分钟", "example_sentence_native": "Five minutes", "example_sentence_phonetic": "Wǔ fēnzhōng."},
-        {"id": "w1_3_2", "target": "六", "phonetic": "liù", "native_meaning": "Six", "english": "6", "example_sentence_target": "六点钟", "example_sentence_native": "Six o'clock", "example_sentence_phonetic": "Liù diǎn zhōng."}
+        {"id": "w1_3_1", "target": "十一", "phonetic": "shí yī", "native_meaning": "Eleven", "english": "11", "example_sentence_target": "十一加一等于十二。", "example_sentence_native": "Eleven plus one equals twelve.", "example_sentence_phonetic": "Shí yī jiā yī děngyú shí èr."},
+        {"id": "w1_3_2", "target": "十二", "phonetic": "shí èr", "native_meaning": "Twelve", "english": "12", "example_sentence_target": "一年有十二个月。", "example_sentence_native": "A year has twelve months.", "example_sentence_phonetic": "Yī nián yǒu shí èr gè yuè."},
+        {"id": "w1_3_3", "target": "十三", "phonetic": "shí sān", "native_meaning": "Thirteen", "english": "13", "example_sentence_target": "这件T恤十三块钱。", "example_sentence_native": "This T-shirt is thirteen dollars.", "example_sentence_phonetic": "Zhè jiàn T-xù shí sān kuài qián."},
+        {"id": "w1_3_4", "target": "十四", "phonetic": "shí sì", "native_meaning": "Fourteen", "english": "14", "example_sentence_target": "我的弟弟十四岁。", "example_sentence_native": "My younger brother is fourteen years old.", "example_sentence_phonetic": "Wǒ de dìdi shí sì suì."},
+        {"id": "w1_3_5", "target": "十五", "phonetic": "shí wǔ", "native_meaning": "Fifteen", "english": "15", "example_sentence_target": "会议室在十五楼。", "example_sentence_native": "The meeting room is on the fifteenth floor.", "example_sentence_phonetic": "Huìyìshì zài shí wǔ lóu."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D3"}
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "Asking about age",
+          "lines": [
+            {"speaker": "A", "target": "你几岁？", "native": "How old are you?", "phonetic": "Nǐ jǐ suì?"},
+            {"speaker": "B", "target": "我十二岁。", "native": "I am twelve years old.", "phonetic": "Wǒ shí èr suì."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m1_3_1", "target": "十一", "native": "11"},
+          {"id": "m1_3_2", "target": "十四", "native": "14"}
+        ]
+      },
+      "cultural_note": "Chinese numbers 11-19 follow a simple pattern: 'ten' + 'number'. So, 11 is 'ten-one' (十一), 12 is 'ten-two' (十二), and so on. It's very logical!",
+      "pronunciation_tip": "In 十一 (shí yī), both characters are second tone (rising). Practice the rising inflection for both.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W1D3"}
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Numbers 7-8",
-      "title_native": "数字 7-8",
-      "theme": "Basic Counting",
+      "title": "Numbers 16-20",
+      "title_native": "数字 16-20 (Shùzì 16-20)",
+      "theme": "More Teen Counting",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w1_4_1", "target": "七", "phonetic": "qī", "native_meaning": "Seven", "english": "7", "example_sentence_target": "一个星期有七天。", "example_sentence_native": "There are seven days in a week.", "example_sentence_phonetic": "Yīge xīngqí yǒu qī tiān."},
-        {"id": "w1_4_2", "target": "八", "phonetic": "bā", "native_meaning": "Eight", "english": "8", "example_sentence_target": "八月", "example_sentence_native": "August", "example_sentence_phonetic": "Bā yuè."}
+        {"id": "w1_4_1", "target": "十六", "phonetic": "shí liù", "native_meaning": "Sixteen", "english": "16", "example_sentence_target": "她住在十六号。", "example_sentence_native": "She lives at number sixteen.", "example_sentence_phonetic": "Tā zhù zài shí liù hào."},
+        {"id": "w1_4_2", "target": "十七", "phonetic": "shí qī", "native_meaning": "Seventeen", "english": "17", "example_sentence_target": "这趟公交车是十七路。", "example_sentence_native": "This is bus number seventeen.", "example_sentence_phonetic": "Zhè tàng gōngjiāo chē shì shí qī lù."},
+        {"id": "w1_4_3", "target": "十八", "phonetic": "shí bā", "native_meaning": "Eighteen", "english": "18", "example_sentence_target": "他十八岁就可以开车了。", "example_sentence_native": "He can drive when he's eighteen.", "example_sentence_phonetic": "Tā shí bā suì jiù kěyǐ kāichē le."},
+        {"id": "w1_4_4", "target": "十九", "phonetic": "shí jiǔ", "native_meaning": "Nineteen", "english": "19", "example_sentence_target": "十九页有问题。", "example_sentence_native": "There is a problem on page nineteen.", "example_sentence_phonetic": "Shí jiǔ yè yǒu wèntí."},
+        {"id": "w1_4_5", "target": "二十", "phonetic": "èr shí", "native_meaning": "Twenty", "english": "20", "example_sentence_target": "这个二十块钱。", "example_sentence_native": "This is twenty dollars.", "example_sentence_phonetic": "Zhège èr shí kuài qián."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D4"}
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "Asking for the price",
+          "lines": [
+            {"speaker": "A", "target": "这个多少钱？", "native": "How much is this?", "phonetic": "Zhège duōshǎo qián?"},
+            {"speaker": "B", "target": "二十块。", "native": "Twenty dollars.", "phonetic": "Èr shí kuài."}
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {"id": "ss1_4_1", "scrambled": ["二十", "这个", "块钱"], "correct": "这个二十块钱", "nativeHint": "This is twenty dollars."}
+        ]
+      },
+      "cultural_note": "While 四 (sì) can be considered unlucky because it sounds like 'death' (死 sǐ), 十四 (shí sì) or '14' is not as strongly associated with bad luck as the single digit.",
+      "pronunciation_tip": "For 二十 (èr shí), start with a falling tone for 'èr' and immediately go into the rising tone for 'shí'.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W1D4"}
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Numbers 9-10",
-      "title_native": "数字 9-10",
-      "theme": "Basic Counting",
+      "title": "Asking for Quantities",
+      "title_native": "询问数量 (Xúnwèn shùliàng)",
+      "theme": "How many?",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w1_5_1", "target": "九", "phonetic": "jiǔ", "native_meaning": "Nine", "english": "9", "example_sentence_target": "九条命", "example_sentence_native": "Nine lives", "example_sentence_phonetic": "Jiǔ tiáo mìng."},
-        {"id": "w1_5_2", "target": "十", "phonetic": "shí", "native_meaning": "Ten", "english": "10", "example_sentence_target": "十个手指", "example_sentence_native": "Ten fingers", "example_sentence_phonetic": "Shí ge shǒuzhǐ."}
+        {"id": "w1_5_1", "target": "几", "phonetic": "jǐ", "native_meaning": "How many (for small numbers, usually under 10)", "english": "how many", "example_sentence_target": "你有几个兄弟姐妹？", "example_sentence_native": "How many siblings do you have?", "example_sentence_phonetic": "Nǐ yǒu jǐ gè xiōngdì jiěmèi?"},
+        {"id": "w1_5_2", "target": "多少", "phonetic": "duōshǎo", "native_meaning": "How many/how much (for any number)", "english": "how many/much", "example_sentence_target": "这里有多少人？", "example_sentence_native": "How many people are here?", "example_sentence_phonetic": "Zhèli yǒu duōshǎo rén?"},
+        {"id": "w1_5_3", "target": "个", "phonetic": "gè", "native_meaning": "A general measure word", "english": "measure word", "example_sentence_target": "一个苹果", "example_sentence_native": "one apple", "example_sentence_phonetic": "yī gè píngguǒ"},
+        {"id": "w1_5_4", "target": "钱", "phonetic": "qián", "native_meaning": "Money", "english": "money", "example_sentence_target": "多少钱？", "example_sentence_native": "How much money?", "example_sentence_phonetic": "Duōshǎo qián?"},
+        {"id": "w1_5_5", "target": "块", "phonetic": "kuài", "native_meaning": "Colloquial term for Chinese currency (like 'buck')", "english": "dollar/buck", "example_sentence_target": "十块钱", "example_sentence_native": "ten dollars", "example_sentence_phonetic": "shí kuài qián"}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D5"}
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "At a market",
+          "lines": [
+            {"speaker": "A", "target": "苹果多少钱一斤？", "native": "How much are apples per jin (half a kilo)?", "phonetic": "Píngguǒ duōshǎo qián yī jīn?"},
+            {"speaker": "B", "target": "十块钱一斤。", "native": "Ten dollars per jin.", "phonetic": "Shí kuài qián yī jīn."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb1_5_1", "sentence": "这个东西 ___ 钱？", "answer": "多少", "hint": "how much"}
+        ]
+      },
+      "cultural_note": "Measure words (like 个, gè) are a critical part of Chinese grammar. They are used between a number and a noun. While '个' is a general-purpose one, many different nouns have their own specific measure words.",
+      "pronunciation_tip": "The 'j' in 几 (jǐ) is pronounced like the 'j' in 'jeep'.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W1D5"}
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Review 0-10",
-      "title_native": "复习 0-10",
-      "theme": "Basic Counting Review",
+      "title": "Phone Numbers",
+      "title_native": "电话号码 (Diànhuà hàomǎ)",
+      "theme": "Exchanging numbers",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
       "words": [
-        {"id": "w1_6_1", "target": "零", "phonetic": "líng", "native_meaning": "Zero", "english": "0", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_2", "target": "一", "phonetic": "yī", "native_meaning": "One", "english": "1", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_3", "target": "二", "phonetic": "èr", "native_meaning": "Two", "english": "2", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_4", "target": "三", "phonetic": "sān", "native_meaning": "Three", "english": "3", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_5", "target": "四", "phonetic": "sì", "native_meaning": "Four", "english": "4", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_6", "target": "五", "phonetic": "wǔ", "native_meaning": "Five", "english": "5", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_7", "target": "六", "phonetic": "liù", "native_meaning": "Six", "english": "6", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_8", "target": "七", "phonetic": "qī", "native_meaning": "Seven", "english": "7", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_9", "target": "八", "phonetic": "bā", "native_meaning": "Eight", "english": "8", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_10", "target": "九", "phonetic": "jiǔ", "native_meaning": "Nine", "english": "9", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "},
-        {"id": "w1_6_11", "target": "十", "phonetic": "shí", "native_meaning": "Ten", "english": "10", "example_sentence_target": " ", "example_sentence_native": " ", "example_sentence_phonetic": " "}
+        {"id": "w1_6_1", "target": "电话", "phonetic": "diànhuà", "native_meaning": "Telephone", "english": "telephone", "example_sentence_target": "我能用一下你的电话吗？", "example_sentence_native": "Can I use your telephone?", "example_sentence_phonetic": "Wǒ néng yòng yīxià nǐ de diànhuà ma?"},
+        {"id": "w1_6_2", "target": "号码", "phonetic": "hàomǎ", "native_meaning": "Number", "english": "number", "example_sentence_target": "你的房间号码是多少？", "example_sentence_native": "What is your room number?", "example_sentence_phonetic": "Nǐ de fángjiān hàomǎ shì duōshǎo?"},
+        {"id": "w1_6_3", "target": "手机", "phonetic": "shǒujī", "native_meaning": "Mobile phone", "english": "mobile phone", "example_sentence_target": "我的手机没电了。", "example_sentence_native": "My mobile phone is out of battery.", "example_sentence_phonetic": "Wǒ de shǒujī méi diàn le."},
+        {"id": "w1_6_4", "target": "是", "phonetic": "shì", "native_meaning": "Is, am, are", "english": "to be", "example_sentence_target": "我是学生。", "example_sentence_native": "I am a student.", "example_sentence_phonetic": "Wǒ shì xuéshēng."},
+        {"id": "w1_6_5", "target": "零", "phonetic": "líng", "native_meaning": "Zero", "english": "0", "example_sentence_target": "今天是零度。", "example_sentence_native": "It is zero degrees today.", "example_sentence_phonetic": "Jīntiān shì líng dù."}
       ],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D6"}
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "Asking for a phone number",
+          "lines": [
+            {"speaker": "A", "target": "你的电话号码是多少？", "native": "What is your phone number?", "phonetic": "Nǐ de diànhuà hàomǎ shì duōshǎo?"},
+            {"speaker": "B", "target": "我的是一三九一二三四五六七八。", "native": "Mine is 13912345678.", "phonetic": "Wǒ de shì yī sān jiǔ yī èr sān sì wǔ liù qī bā."}
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          {"id": "m1_6_1", "target": "电话号码", "native": "Phone number"},
+          {"id": "m1_6_2", "target": "手机", "native": "Mobile phone"},
+          {"id": "m1_6_3", "target": "零", "native": "0"}
+        ]
+      },
+      "cultural_note": "When reading a phone number or any string of digits, the number one (一) is often pronounced as 'yāo' instead of 'yī' to avoid confusion with the number seven (七, qī).",
+      "pronunciation_tip": "零 (líng) is a second (rising) tone. Practice saying it with a questioning intonation.",
+      "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM-CH-W1D6"}
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Practice 0-10",
-      "title_native": "练习 0-10",
-      "theme": "Basic Counting Practice",
+      "title": "Week 1 Review",
+      "title_native": "第一周复习 (Dì yī zhōu fùxí)",
+      "theme": "Reviewing numbers 0-20",
       "path": "numbers",
       "targetLanguage": "Chinese",
       "nativeLanguage": "English",
-      "words": [],
-      "exercises": {}, "progress": {"xp": 50, "streak_bonus": 10, "badge": "NUM_CN_W1D7"}
+      "words": [
+        {"id": "w1_7_1", "target": "一到十", "phonetic": "yī dào shí", "native_meaning": "One to ten", "english": "1-10", "example_sentence_target": "请从一数到十。", "example_sentence_native": "Please count from one to ten.", "example_sentence_phonetic": "Qǐng cóng yī shǔ dào shí."},
+        {"id": "w1_7_2", "target": "十一到二十", "phonetic": "shí yī dào èr shí", "native_meaning": "Eleven to twenty", "english": "11-20", "example_sentence_target": "我们学了十一到二十。", "example_sentence_native": "We learned eleven to twenty.", "example_sentence_phonetic": "Wǒmen xué le shí yī dào èr shí."},
+        {"id": "w1_7_3", "target": "复习", "phonetic": "fùxí", "native_meaning": "Review", "english": "review", "example_sentence_target": "我们需要复习第一课。", "example_sentence_native": "We need to review lesson one.", "example_sentence_phonetic": "Wǒmen xūyào fùxí dì yī kè."}
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "Reviewing numbers",
+          "lines": [
+            {"speaker": "A", "target": "十五用中文怎么说？", "native": "How do you say fifteen in Chinese?", "phonetic": "Shí wǔ yòng zhōngwén zěnme shuō?"},
+            {"speaker": "B", "target": "是“十五”。", "native": "It's 'shí wǔ'.", "phonetic": "Shì 'shí wǔ'."}
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {"id": "fb1_7_1", "sentence": "十加九等于 ___。", "answer": "十九", "hint": "nineteen"}
+        ],
+        "sentenceScramble": [
+          {"id": "ss1_7_1", "scrambled": ["是多少", "号码", "你的", "电话"], "correct": "你的电话号码是多少", "nativeHint": "What is your phone number?"}
+        ]
+      },
+      "cultural_note": "Consistent review (复习, fùxí) is key to learning a character-based language like Chinese. Spend time each day reviewing the characters you've learned.",
+      "pronunciation_tip": "Practice all four main tones using the numbers: 一 (yī, 1st), 八 (bā, 1st), 十 (shí, 2nd), 五 (wǔ, 3rd), 四 (sì, 4th).",
+      "progress": {"xp": 100, "streak_bonus": 20, "badge": "NUM-CH-W1-COMPLETE"}
     }
   ]
 }
+
+    
