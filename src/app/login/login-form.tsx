@@ -3,21 +3,27 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { useAuth } from '@/firebase/provider';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useAuth, useFirestore } from '@/firebase/provider';
+import { setDocumentNonBlocking } from '@/firebase/non-blocking-updates';
+import { doc, getDoc } from 'firebase/firestore';
+import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Languages } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
+import type { UserProfile } from '@/lib/types';
 
 export function LoginFormContent() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isGoogleLoading, setGoogleLoading] = useState(false);
   const searchParams = useSearchParams();
   const auth = useAuth();
+  const firestore = useFirestore();
   const { toast } = useToast();
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -65,6 +71,62 @@ export function LoginFormContent() {
     }
   };
 
+  const handleGoogleSignIn = async () => {
+    setGoogleLoading(true);
+    if (!auth || !firestore) {
+        toast({ variant: "destructive", title: "Error", description: "Authentication services are not ready." });
+        setGoogleLoading(false);
+        return;
+    }
+    
+    const provider = new GoogleAuthProvider();
+    try {
+        const result = await signInWithPopup(auth, provider);
+        const user = result.user;
+
+        // Check if a user profile already exists in Firestore.
+        const userDocRef = doc(firestore, 'userProfiles', user.uid);
+        const userDocSnap = await getDoc(userDocRef);
+
+        if (!userDocSnap.exists()) {
+            // If the user is new, create their profile with default values.
+            const now = new Date();
+            const newUserProfile: UserProfile = {
+                id: user.uid,
+                displayName: user.displayName || 'New User',
+                email: user.email!,
+                photoURL: user.photoURL || undefined,
+                nativeLanguage: 'English',
+                selectedLanguage: 'French',
+                subscriptionActive: false,
+                subscriptionSource: 'none',
+                subscriptionExpiry: null,
+                xpPoints: 0,
+                currentStreak: 0,
+                lastActiveDate: now.toISOString().split('T')[0],
+                aiPlanningEnabled: false,
+                activePath: 'survival',
+                lastLessonWeek: 1,
+                lastLessonDay: 0, // Start before Day 1
+            };
+            // Use a non-blocking write to create the profile.
+            setDocumentNonBlocking(userDocRef, newUserProfile, { merge: true });
+        }
+
+        toast({ title: "Login Successful", description: "Welcome back!" });
+        const redirectUrl = searchParams?.get('redirect');
+        window.location.href = redirectUrl || '/dashboard';
+
+    } catch (error: any) {
+        // Don't show an error toast if the user closes the popup.
+        if (error.code !== 'auth/popup-closed-by-user') {
+            toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
+        }
+        setGoogleLoading(false);
+    }
+  };
+
+
   return (
     <div className="w-full max-w-md">
       <div className="text-center mb-6">
@@ -79,34 +141,47 @@ export function LoginFormContent() {
           <CardDescription>Log in to continue your language journey.</CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleLogin} className="space-y-4">
-            <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="you@example.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                disabled={isLoading}
-              />
+          <div className="space-y-4">
+             <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
+               {isGoogleLoading ? 'Signing In...' : 'Continue with Google'}
+             </Button>
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
+              </div>
             </div>
-            <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
-              <Input
-                id="password"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                disabled={isLoading}
-              />
-            </div>
-            <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? 'Logging In...' : 'Log In'}
-            </Button>
-          </form>
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  disabled={isLoading || isGoogleLoading}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="password">Password</Label>
+                <Input
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  disabled={isLoading || isGoogleLoading}
+                />
+              </div>
+              <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading}>
+                {isLoading ? 'Logging In...' : 'Log In with Email'}
+              </Button>
+            </form>
+          </div>
         </CardContent>
         <CardFooter className="text-center text-sm">
           <p className="w-full">
