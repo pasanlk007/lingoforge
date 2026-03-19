@@ -1,7 +1,24 @@
-# Settings to manage and configure a Firebase App Hosting backend.
-# https://firebase.google.com/docs/app-hosting/configure
-
 runConfig:
-  # Increase this value if you'd like to automatically spin up
-  # more instances in response to increased traffic.
   maxInstances: 1
+
+env:
+  - variable: STRIPE_API_KEY
+    secret: STRIPE_API_KEY
+
+  - variable: STRIPE_WEBHOOK_SECRET
+    secret: STRIPE_WEBHOOK_SECRET
+
+  - variable: NEXT_PUBLIC_STRIPE_WEEKLY_PRICE_ID
+    secret: NEXT_PUBLIC_STRIPE_WEEKLY_PRICE_ID
+
+  - variable: NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID
+    secret: NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID
+
+  - variable: NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID
+    secret: NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID
+
+  - variable: NEXT_PUBLIC_APP_URL
+    value: https://lingoforge.app
+
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    secret: NEXT_PUBLIC_FIREBASE_API_KEY

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 import { useAuth } from '@/firebase';
@@ -16,6 +16,66 @@ import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useToast } from '@/hooks/use-toast';
 
+// Define the loading skeleton component
+function PricingPageLoading() {
+  return (
+    <div className="flex min-h-dvh flex-col bg-background">
+      <Navigation />
+      <main className="flex-1">
+        <section className="py-20 sm:py-24">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-2xl text-center">
+              <Skeleton className="h-12 w-3/4 mx-auto" />
+              <Skeleton className="h-6 w-full mt-4" />
+            </div>
+            <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+              {/* Card Skeleton */}
+              <Card className="flex flex-col">
+                <CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader>
+                <CardContent className="flex-1 space-y-6">
+                  <Skeleton className="h-10 w-1/3" />
+                  <Skeleton className="h-12 w-full" />
+                  <div className="space-y-3 pt-4 border-t">
+                    <Skeleton className="h-5 w-full" />
+                    <Skeleton className="h-5 w-full" />
+                  </div>
+                </CardContent>
+                <CardFooter><Skeleton className="h-12 w-full" /></CardFooter>
+              </Card>
+              {/* Card Skeleton (Featured) */}
+              <Card className="flex flex-col border-2 border-primary">
+                 <CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader>
+                <CardContent className="flex-1 space-y-6">
+                  <Skeleton className="h-10 w-1/3" />
+                   <div className="space-y-3 pt-4 border-t">
+                    <Skeleton className="h-5 w-full" />
+                    <Skeleton className="h-5 w-full" />
+                  </div>
+                </CardContent>
+                <CardFooter><Skeleton className="h-12 w-full" /></CardFooter>
+              </Card>
+              {/* Card Skeleton */}
+              <Card className="flex flex-col">
+                 <CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader>
+                <CardContent className="flex-1 space-y-6">
+                  <Skeleton className="h-10 w-1/3" />
+                  <Skeleton className="h-12 w-full" />
+                   <div className="space-y-3 pt-4 border-t">
+                    <Skeleton className="h-5 w-full" />
+                    <Skeleton className="h-5 w-full" />
+                  </div>
+                </CardContent>
+                <CardFooter><Skeleton className="h-12 w-full" /></CardFooter>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+// The component that uses the problematic hook
 interface CheckoutButtonProps {
   priceId?: string;
   mode: 'subscription' | 'payment';
@@ -88,8 +148,8 @@ function CheckoutButton({ priceId, mode, planName }: CheckoutButtonProps) {
   );
 }
 
-
-export default function PricingPage() {
+// All the original page logic moves into this component
+function PricingPageContent() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const { user, isUserLoading } = useUser();
@@ -132,8 +192,10 @@ export default function PricingPage() {
 
   }, [searchParams, router, toast]);
 
-  if (!isMounted) {
-    return <div className="flex min-h-dvh flex-col bg-background" />;
+  if (!isMounted || isUserLoading) {
+    // Render loading state while waiting for client-side mount
+    // to avoid hydration mismatch with server-rendered content.
+    return <PricingPageLoading />;
   }
   
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
@@ -158,7 +220,7 @@ export default function PricingPage() {
     );
   };
 
-  const monthlyPriceId = process.env.NEXT_PUBLIC_STRIPE_MONTHLY_PRICE_ID;
+  const weeklyPriceId = process.env.NEXT_PUBLIC_STRIPE_WEEKLY_PRICE_ID;
   const coursePriceId = process.env.NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID;
   const lifetimePriceId = process.env.NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID;
 
@@ -178,26 +240,26 @@ export default function PricingPage() {
             </div>
 
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              {/* Monthly Plan */}
+              {/* Weekly Plan */}
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">Monthly</CardTitle>
-                  <CardDescription>Full access to one language, renewed monthly.</CardDescription>
+                  <CardTitle className="font-headline text-2xl">{t.weeklyPlan.title}</CardTitle>
+                  <CardDescription>{t.weeklyPlan.desc}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-6">
                   <p className="text-4xl font-bold">
-                    $9.99<span className="text-lg font-normal text-muted-foreground">/month</span>
+                    {t.weeklyPlan.price}<span className="text-lg font-normal text-muted-foreground">{t.weeklyPlan.per}</span>
                   </p>
                   <LanguagePurchaseContext />
                   <ul className="space-y-3 pt-4 border-t">
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Full access to one language</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All learning paths</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> All interactive exercises</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> Cancel anytime</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat1}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat2}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat3}</li>
+                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat4}</li>
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <CheckoutButton priceId={monthlyPriceId} mode="subscription" planName="Monthly" />
+                  <CheckoutButton priceId={weeklyPriceId} mode="subscription" planName={t.weeklyPlan.title} />
                 </CardFooter>
               </Card>
 
@@ -222,7 +284,7 @@ export default function PricingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <CheckoutButton priceId={lifetimePriceId} mode="payment" planName="Lifetime" />
+                  <CheckoutButton priceId={lifetimePriceId} mode="payment" planName={t.lifetimePlan.title} />
                 </CardFooter>
               </Card>
 
@@ -246,7 +308,7 @@ export default function PricingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                   <CheckoutButton priceId={coursePriceId} mode="payment" planName="Course" />
+                   <CheckoutButton priceId={coursePriceId} mode="payment" planName={t.completePlan.title} />
                 </CardFooter>
               </Card>
             </div>
@@ -274,5 +336,15 @@ export default function PricingPage() {
         </section>
       </main>
     </div>
+  );
+}
+
+
+// The main export for the page wraps the content in Suspense
+export default function PricingPage() {
+  return (
+    <Suspense fallback={<PricingPageLoading />}>
+      <PricingPageContent />
+    </Suspense>
   );
 }
