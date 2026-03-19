@@ -13,8 +13,11 @@ let adminApp: App;
 // This logic ensures that we don't try to initialize the app more than once.
 if (!getApps().length) {
   // initializeApp() with no arguments will use Application Default Credentials.
-  // This is the recommended way for services like Cloud Run or Firebase Functions.
-  adminApp = initializeApp();
+  // We explicitly set the projectId to match the client-side configuration
+  // to prevent audience claim mismatches.
+  adminApp = initializeApp({
+    projectId: 'studio-3754329818-ee8cf',
+  });
 } else {
   adminApp = getApps()[0];
 }
