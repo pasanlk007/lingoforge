@@ -16,11 +16,11 @@ env:
 
   - variable: NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID
     secret: NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID
-
+  
+    - variable: FIREBASE_ADMIN_SDK_KEY
+    secret: FIREBASE_ADMIN_SDK_KEY
   - variable: NEXT_PUBLIC_APP_URL
     value: https://lingoforge.app
 
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
     secret: NEXT_PUBLIC_FIREBASE_API_KEY
-  - variable: FIREBASE_ADMIN_SDK_KEY
-    secret: FIREBASE_ADMIN_SDK_KEY 

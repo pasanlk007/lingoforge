@@ -9,6 +9,31 @@ export interface UserAccessData {
 }
 
 /**
+ * Checks if a user has an active, valid subscription.
+ * @param profile The user's profile.
+ * @returns True if the subscription is active and not expired.
+ */
+function isSubscriptionValid(profile: UserProfile): boolean {
+    if (!profile.subscriptionActive) {
+        return false;
+    }
+    // Lifetime access is denoted by a null expiry date.
+    if (profile.subscriptionExpiry === null) {
+        return true;
+    }
+    // For recurring subscriptions, check if the expiry date is in the future.
+    try {
+        const expiryDate = new Date(profile.subscriptionExpiry);
+        const now = new Date();
+        // The expiry date is valid if it's a valid date and in the future.
+        return !isNaN(expiryDate.getTime()) && expiryDate > now;
+    } catch (e) {
+        // If the date string is invalid, treat it as expired.
+        return false;
+    }
+}
+
+/**
  * Determines if a user can access a specific week based on their subscription status and remote config.
  */
 export function canAccessWeek(weekNumber: number, userData: UserAccessData, config: AppConfig): boolean {
@@ -17,13 +42,14 @@ export function canAccessWeek(weekNumber: number, userData: UserAccessData, conf
         return false;
     }
     
-    // 2. If the user profile is still loading, provide a safe default (allow only week 1).
+    // 2. If the user profile is still loading, provide a safe default (allow only free weeks).
     if (!userData.profile) {
         return weekNumber <= config.max_free_weeks;
     }
-    
-    // 3. If the user has an active subscription, they have full access.
-    if (userData.profile.subscriptionActive) {
+
+    // 3. If the user has a valid subscription, they have full access.
+    // This now checks the expiry date for added safety.
+    if (isSubscriptionValid(userData.profile)) {
         return true;
     }
 
@@ -47,5 +73,6 @@ export function canAccessWeek(weekNumber: number, userData: UserAccessData, conf
     }
 
     // 7. If none of the above conditions blocked access, the free user can access the week.
+    // This applies to weeks within the `max_free_weeks` limit.
     return true;
 }
