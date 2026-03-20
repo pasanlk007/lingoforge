@@ -145,8 +145,8 @@ export interface UserProfile {
   activePath: 'survival' | 'alphabet' | 'numbers';
   lastLessonWeek: number;
   lastLessonDay: number;
-  stripeCustomerId?: string;
-  stripeSubscriptionId?: string;
+  paymentProviderCustomerId?: string;
+  paymentProviderSubscriptionId?: string;
 }
 
 export interface UserLessonProgress {

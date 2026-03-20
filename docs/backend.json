@@ -69,13 +69,13 @@
           "type": "number",
           "description": "The day number of the user's last completed lesson."
         },
-        "stripeCustomerId": {
+        "paymentProviderCustomerId": {
             "type": "string",
-            "description": "The user's Stripe Customer ID."
+            "description": "The customer ID from the payment provider (e.g., Stripe, Google Play)."
         },
-        "stripeSubscriptionId": {
+        "paymentProviderSubscriptionId": {
             "type": "string",
-            "description": "The user's active Stripe Subscription ID."
+            "description": "The active subscription ID from the payment provider."
         }
       },
       "required": [

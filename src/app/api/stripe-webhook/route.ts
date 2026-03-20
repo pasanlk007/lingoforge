@@ -13,7 +13,7 @@ export const config = {
 async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
   const { firestore } = initializeFirebase();
   const userId = session.client_reference_id;
-  const stripeCustomerId = typeof session.customer === 'string' ? session.customer : session.customer?.id;
+  const paymentProviderCustomerId = typeof session.customer === 'string' ? session.customer : session.customer?.id;
 
   if (!userId) {
     console.error('Webhook Error: Missing client_reference_id (Firebase UID) in checkout session.');
@@ -32,8 +32,8 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
 
     // For a new subscription, set the user as active.
     await userDocRef.update({
-      stripeCustomerId: stripeCustomerId,
-      stripeSubscriptionId: subscription.id,
+      paymentProviderCustomerId: paymentProviderCustomerId,
+      paymentProviderSubscriptionId: subscription.id,
       subscriptionActive: true,
       subscriptionSource: 'stripe',
       subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString(),
@@ -42,7 +42,7 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
   } else if (session.mode === 'payment') {
     // This is for one-time payments (e.g., lifetime access).
     await userDocRef.update({
-      stripeCustomerId: stripeCustomerId,
+      paymentProviderCustomerId: paymentProviderCustomerId,
       subscriptionActive: true,
       subscriptionSource: 'stripe',
       subscriptionExpiry: null, // Null expiry means lifetime access
@@ -64,7 +64,7 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
     // Update the user's profile with the new subscription details.
     await userDocRef.update({
         subscriptionActive: true, // Ensure user is marked as active
-        stripeSubscriptionId: subscription.id,
+        paymentProviderSubscriptionId: subscription.id,
         subscriptionExpiry: new Date(subscription.current_period_end * 1000).toISOString(),
     });
 }
@@ -84,7 +84,7 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
         subscriptionActive: false,
         subscriptionSource: 'none',
         subscriptionExpiry: null,
-        stripeSubscriptionId: null,
+        paymentProviderSubscriptionId: null,
     });
 }
 

@@ -26,10 +26,10 @@ export async function POST(req: Request) {
     const userDoc = await userDocRef.get();
     let userProfile = userDoc.data() as UserProfile;
 
-    let stripeCustomerId = userProfile?.stripeCustomerId;
+    let paymentProviderCustomerId = userProfile?.paymentProviderCustomerId;
 
     // Create a new Stripe customer if one doesn't exist for the user
-    if (!stripeCustomerId) {
+    if (!paymentProviderCustomerId) {
       const customer = await stripe.customers.create({
         email: userProfile.email,
         name: userProfile.displayName,
@@ -37,9 +37,9 @@ export async function POST(req: Request) {
           firebaseUID: userId,
         },
       });
-      stripeCustomerId = customer.id;
+      paymentProviderCustomerId = customer.id;
       // Note: The webhook will also save this to prevent race conditions.
-      await userDocRef.update({ stripeCustomerId: stripeCustomerId });
+      await userDocRef.update({ paymentProviderCustomerId: paymentProviderCustomerId });
     }
 
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:9002';
@@ -49,7 +49,7 @@ export async function POST(req: Request) {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       mode: mode,
-      customer: stripeCustomerId,
+      customer: paymentProviderCustomerId,
       line_items: [{
         price: priceId,
         quantity: 1,
