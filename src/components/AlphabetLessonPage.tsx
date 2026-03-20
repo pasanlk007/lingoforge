@@ -74,12 +74,16 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
 
     let newStreak = userProfile.currentStreak || 0;
     const today = new Date();
-    const lastActive = new Date(userProfile.lastActiveDate);
-    const daysDifference = differenceInCalendarDays(today, lastActive);
+    const lastActiveDate = new Date(userProfile.lastActiveDate);
+    const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
 
-    if (daysDifference === 1) {
-        newStreak++;
-    } else if (daysDifference > 1) {
+    if (daysSinceLastActive > 0) {
+        if (daysSinceLastActive === 1) {
+            newStreak++;
+        } else {
+            newStreak = 1;
+        }
+    } else if (newStreak === 0) {
         newStreak = 1;
     }
 
@@ -178,7 +182,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
                           <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                       </Alert>
                   ) : (
-                      <Button size="lg" onClick={handleCompleteDay}>
+                      <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}

@@ -135,14 +135,18 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         
         let newStreak = userProfile.currentStreak || 0;
         const today = new Date();
-        const lastActive = new Date(userProfile.lastActiveDate);
-        const daysDifference = differenceInCalendarDays(today, lastActive);
+        const lastActiveDate = new Date(userProfile.lastActiveDate);
+        const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
 
-        if (daysDifference === 1) {
-            newStreak++; // Consecutive day
-        } else if (daysDifference > 1) {
-            newStreak = 1; // Streak broken, reset to 1
-        } // if daysDifference is 0 or less, streak doesn't change today
+        if (daysSinceLastActive > 0) {
+            if (daysSinceLastActive === 1) {
+                newStreak++;
+            } else {
+                newStreak = 1;
+            }
+        } else if (newStreak === 0) {
+            newStreak = 1;
+        }
 
         updateDocumentNonBlocking(userProfileRef, {
             xpPoints: newXp,
@@ -229,7 +233,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} t={t} />
                     )}
                     
-                    {/* Notes Section */}
                     {(hasPronunciationTip || hasCulturalNote) && (
                       <Card>
                         <CardHeader><CardTitle className="flex items-center gap-2"><LanguagesIcon className="h-6 w-6"/>{t.tipsAndCulture}</CardTitle></CardHeader>
@@ -265,7 +268,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                     </AlertDescription>
                                 </Alert>
                             ) : (
-                                 <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay}>
+                                 <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay || !userProfile}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
                                  </Button>
                             )}
