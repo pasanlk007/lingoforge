@@ -1,4 +1,3 @@
-
 {
   "week": 4,
   "path": "survival",
@@ -8,1174 +7,390 @@
     {
       "week": 4,
       "day": 1,
-      "title": "4 වන සතිය, 1 වන දිනය: සුපිරි වෙළඳසැලේදී",
-      "title_native": "Săptămâna 4, Ziua 1: La supermarket",
+      "title": "4 වන සතිය, 1 වන දිනය: සිහිවටන මිලදී ගැනීම",
+      "title_native": "Săptămâna 4, Ziua 1: Cumpărături de suveniruri",
+      "theme": "Shopping for Souvenirs",
+      "path": "survival",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Sinhala",
+      "words": [
+        { "id": "w4_1_1", "target": "Magazin", "phonetic": "මගසීන්", "native_meaning": "සාප්පුව", "english": "Shop", "example_sentence_target": "Unde este un magazin de suveniruri?", "example_sentence_native": "සිහිවටන සාප්පුවක් කොහෙද තියෙන්නේ?", "example_sentence_phonetic": "උන්දෙ එස්තේ උන් මගසීන් දේ සුවෙනිරුරි?" },
+        { "id": "w4_1_2", "target": "Suvenir", "phonetic": "සුවෙනිර්", "native_meaning": "සිහිවටනය", "english": "Souvenir", "example_sentence_target": "Vreau să cumpăr un suvenir.", "example_sentence_native": "මට සිහිවටනයක් මිලදී ගැනීමට අවශ්‍යයි.", "example_sentence_phonetic": "ව්රාවු ස කුම්පර් උන් සුවෙනිර්." },
+        { "id": "w4_1_3", "target": "Preț", "phonetic": "ප්රෙට්ස්", "native_meaning": "මිල", "english": "Price", "example_sentence_target": "Care este prețul?", "example_sentence_native": "මිල කීයද?", "example_sentence_phonetic": "කාරේ එස්තේ ප්රෙට්සුල්?" },
+        { "id": "w4_1_4", "target": "Scump", "phonetic": "ස්කුම්ප්", "native_meaning": "මිල අධික", "english": "Expensive", "example_sentence_target": "Este prea scump.", "example_sentence_native": "එය මිල අධික වැඩියි.", "example_sentence_phonetic": "එස්තේ ප්රියා ස්කුම්ප්." },
+        { "id": "w4_1_5", "target": "Ieftin", "phonetic": "යෙෆ්ටින්", "native_meaning": "ලාභයි", "english": "Cheap", "example_sentence_target": "Aveți ceva mai ieftin?", "example_sentence_native": "ඔබට මීට වඩා ලාභ දෙයක් තිබේද?", "example_sentence_phonetic": "අවෙට්ස් චෙවා මයි යෙෆ්ටින්?" }
+      ],
+      "sentences": [
+        { "id": "s4_1_1", "target": "Pot să plătesc cu cardul?", "native": "මට කාඩ් එකෙන් ගෙවන්න පුලුවන්ද?", "phonetic": "පොත් ස ප්ලතෙස්ක් කු කාර්දුල්?" },
+        { "id": "s4_1_2", "target": "Cât costă acest magnet?", "native": "මේ චුම්බකයේ මිල කීයද?", "phonetic": "කත් කොස්ත අචෙස්ත් මග්නෙත්?" },
+        { "id": "s4_1_3", "target": "Aș dori o pungă, vă rog.", "native": " කරුණාකර මට බෑගයක් දෙන්න.", "phonetic": "අශ් දොරී ඔ පුංග, ව රොග්." }
+      ],
+      "dialogues": [
+        {
+          "id": "d4_1_1",
+          "context": "සිහිවටන සාප්පුවක මිල විමසීම.",
+          "lines": [
+            { "speaker": "A", "target": "Bună ziua, cât costă această carte poștală?", "native": "සුබ දවසක්, මෙම තැපැල් පතේ මිල කීයද?", "phonetic": "බුන සියුවා, කත් කොස්ත අචස්ත කාර්තේ පොෂ්තාලා?" },
+            { "speaker": "B", "target": "Costă 5 lei.", "native": "මිල ලී 5 යි.", "phonetic": "කොස්ත චින්ච් ලෙයි." }
+          ]
+        },
+        {
+          "id": "d4_1_2",
+          "context": "වට්ටමක් ඉල්ලීම.",
+          "lines": [
+            { "speaker": "A", "target": "Este un pic cam scump. Puteți face o reducere?", "native": "ටිකක් මිල අධිකයි. ඔබට වට්ටමක් ලබා දිය හැකිද?", "phonetic": "එස්තේ උන් පික් කම් ස්කුම්ප්. පුතෙට්ස් ෆාචෙ ඔ රෙදුචෙරේ?" },
+            { "speaker": "B", "target": "Sigur, pentru dumneavoastră, 4 lei.", "native": "හොඳයි, ඔබට ලී 4 යි.", "phonetic": "සිගුර්, පෙන්ත්රු දුම්නියාවොස්ත්ර, පාත්රු ලෙයි." }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_1_1", "sentence": "Care este ___?", "answer": "prețul", "hint": "මිල" }
+        ],
+        "matching": [
+          { "id": "m4_1_1", "target": "Magazin", "native": "සාප්පුව" },
+          { "id": "m4_1_2", "target": "Scump", "native": "මිල අධික" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_1_1", "scrambled": ["un", "cumpăr", "să", "suvenir", "Vreau"], "correct": "Vreau să cumpăr un suvenir.", "nativeHint": "මට සිහිවටනයක් මිලදී ගැනීමට අවශ්‍යයි." }
+        ]
+      },
+      "cultural_note": "රුමේනියාවේ, විශේෂයෙන්ම කුඩා වෙළඳසැල්වල හෝ වෙළඳපොළවල මිල ගණන් කේවල් කිරීම සාමාන්‍ය දෙයකි. එය ආචාරශීලීව කරන්න.",
+      "pronunciation_tip": "'Preț' හි 'ț' අක්ෂරය ඉංග්‍රීසි 'cats' හි 'ts' ශබ්දයට සමාන වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D1-Souvenirs" }
+    },
+    {
+      "week": 4,
+      "day": 2,
+      "title": "4 වන සතිය, 2 වන දිනය: සුපිරි වෙළඳසැලේ",
+      "title_native": "Săptămâna 4, Ziua 2: La supermarket",
       "theme": "At the Supermarket",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_1_1",
-          "target": "Coș",
-          "phonetic": "කොෂ්",
-          "native_meaning": "බාස්කට් එක",
-          "english": "Basket",
-          "example_sentence_target": "Am nevoie de un coș.",
-          "example_sentence_native": "මට බාස්කට් එකක් අවශ්‍යයි.",
-          "example_sentence_phonetic": "අම් නෙවොයෙ ද උන් කොෂ්."
-        },
-        {
-          "id": "w4_1_2",
-          "target": "Cărucior",
-          "phonetic": "කරුචොර්",
-          "native_meaning": "ට්‍රොලිය",
-          "english": "Cart",
-          "example_sentence_target": "Unde găsesc un cărucior?",
-          "example_sentence_native": "මට ට්‍රොලියක් හොයාගන්න පුළුවන් කොහෙන්ද?",
-          "example_sentence_phonetic": "උන්දෙ ගසෙස්ක් උන් කරුචොර්?"
-        },
-        {
-          "id": "w4_1_3",
-          "target": "Raft",
-          "phonetic": "රාෆ්ත්",
-          "native_meaning": "රාක්කය",
-          "english": "Shelf",
-          "example_sentence_target": "Pâinea este pe raftul de sus.",
-          "example_sentence_native": "පාන් උඩ රාක්කයේ තියෙනවා.",
-          "example_sentence_phonetic": "පීනෙයා එස්තෙ පෙ රාෆ්තුල් ද සස්."
-        },
-        {
-          "id": "w4_1_4",
-          "target": "Casă de marcat",
-          "phonetic": "කාස ද මර්කාත්",
-          "native_meaning": "කැෂියර් කවුන්ටරය",
-          "english": "Checkout counter",
-          "example_sentence_target": "Mergem la casa de marcat.",
-          "example_sentence_native": "අපි කැෂියර් කවුන්ටරයට යමු.",
-          "example_sentence_phonetic": "මෙර්ජෙම් ලා කාස ද මර්කාත්."
-        },
-        {
-          "id": "w4_1_5",
-          "target": "Pungă",
-          "phonetic": "පුන්ග",
-          "native_meaning": "බෑගය",
-          "english": "Bag",
-          "example_sentence_target": "Vreau o pungă, vă rog.",
-          "example_sentence_native": "කරුණාකර මට බෑගයක් දෙන්න.",
-          "example_sentence_phonetic": "വ്രিয়াਉ ഓ പുങ്ക, വാ രൊഗ്."
-        }
+        { "id": "w4_2_1", "target": "Supermarket", "phonetic": "සුපර්මාකෙට්", "native_meaning": "සුපිරි වෙළඳසැල", "english": "Supermarket", "example_sentence_target": "Merg la supermarket.", "example_sentence_native": "මම සුපිරි වෙළඳසැලට යනවා.", "example_sentence_phonetic": "මෙර්ග් ලා සුපර්මාකෙට්." },
+        { "id": "w4_2_2", "target": "Coș", "phonetic": "කොෂ්", "native_meaning": "කරත්තය/ตะกร้า", "english": "Basket/Cart", "example_sentence_target": "Am nevoie de un coș.", "example_sentence_native": "මට කරත්තයක් අවශ්‍යයි.", "example_sentence_phonetic": "අම් නෙවොයෙ දේ උන් කොෂ්." },
+        { "id": "w4_2_3", "target": "Pâine", "phonetic": "පයිනෙ", "native_meaning": "පාන්", "english": "Bread", "example_sentence_target": "Vreau o pâine, vă rog.", "example_sentence_native": "කරුණාකර මට පාන් ගෙඩියක් දෙන්න.", "example_sentence_phonetic": "ව්රාවු ඔ පයිනෙ, ව රොග්." },
+        { "id": "w4_2_4", "target": "Apă", "phonetic": "අප", "native_meaning": "වතුර", "english": "Water", "example_sentence_target": "O sticlă de apă, vă rog.", "example_sentence_native": "කරුණාකර වතුර බෝතලයක්.", "example_sentence_phonetic": "ඔ ස්තික්ල දේ අප, ව රොග්." },
+        { "id": "w4_2_5", "target": "Lapte", "phonetic": "ලප්තෙ", "native_meaning": "කිරි", "english": "Milk", "example_sentence_target": "Unde găsesc lapte?", "example_sentence_native": "කිරි කොහෙන්ද හොයාගන්න පුළුවන්?", "example_sentence_phonetic": "උන්දෙ ගසෙස්ක් ලප්තෙ?" },
+        { "id": "w4_2_6", "target": "Casă", "phonetic": "කාස", "native_meaning": "මුදල් කවුන්ටරය", "english": "Cash register/Checkout", "example_sentence_target": "Unde este casa?", "example_sentence_native": "මුදල් කවුන්ටරය කොහෙද?", "example_sentence_phonetic": "උන්දෙ එස්තේ කාස?" }
       ],
       "sentences": [
-        {
-          "id": "s4_1_1",
-          "target": "Unde este secțiunea de lactate?",
-          "native": "කිරි නිෂ්පාදන අංශය කොහෙද තියෙන්නේ?",
-          "phonetic": "උන්දෙ එස්තෙ සෙක්ශියුනා ද ලක්තාතෙ?"
-        },
-        {
-          "id": "s4_1_2",
-          "target": "Aveți pâine proaspătă?",
-          "native": "ඔබ ළඟ නැවුම් පාන් තියෙනවද?",
-          "phonetic": "අවෙත්ස් පීනෙ ප්‍රොඅස්පත?"
-        },
-        {
-          "id": "s4_1_3",
-          "target": "Aș dori niște fructe.",
-          "native": "මට පළතුරු ටිකක් ගන්න අවශ්‍යයි.",
-          "phonetic": "අශ් දොරි නිශ්තෙ ෆෘක්තෙ."
-        },
-        {
-          "id": "s4_1_4",
-          "target": "Plătesc cu cardul.",
-          "native": "මම කාඩ් එකෙන් ගෙවන්නම්.",
-          "phonetic": "ප්ලතෙස්ක් කු කාර්දුල්."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d4_1_1",
-          "context": "වෙළඳසැලේ සේවකයෙකුගෙන් උදව් ඉල්ලීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Scuzați-mă, unde găsesc orezul?",
-              "native": "සමාවෙන්න, හාල් හොයාගන්න පුළුවන් කොහෙන්ද?",
-              "phonetic": "ස්කුශාත්සි-ම, උන්දෙ ගසෙස්ක් ඔරෙසුල්?"
-            },
-            {
-              "speaker": "B",
-              "target": "Pe culoarul 5, la mijloc.",
-              "native": "අන්තරාල 5 මැද.",
-              "phonetic": "පෙ කුලොආරුල් චින්ච්, ලා මිජ්ලොක්."
-            }
-          ]
-        },
-        {
-          "id": "d4_1_2",
-          "context": "නිශ්චිත දෙයක් ගැන විමසීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Aveți lapte fără lactoză?",
-              "native": "ඔබ ළඟ ලැක්ටෝස් රහිත කිරි තියෙනවද?",
-              "phonetic": "අවෙත්ස් ලප්තෙ ෆර ලක්තොස?"
-            },
-            {
-              "speaker": "B",
-              "target": "Da, este în frigiderul de acolo.",
-              "native": "ඔව්, එතන ෆ්‍රිජ් එකේ තියෙනවා.",
-              "phonetic": "දා, එස්තෙ ඉන් ෆ්‍රිජිදෙරුල් ද අකොලො."
-            }
-          ]
-        },
-        {
-          "id": "d4_1_3",
-          "context": "ගෙවීම් කවුන්ටරයේදී.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Asta e tot.",
-              "native": "මේ ටික විතරයි.",
-              "phonetic": "අස්ත එ තොත්."
-            },
-            {
-              "speaker": "B",
-              "target": "Doriți o pungă?",
-              "native": "ඔබට බෑගයක් අවශ්‍යද?",
-              "phonetic": "දොරිත්ස් ඔ පුන්ග?"
-            }
-          ]
-        },
-        {
-          "id": "d4_1_4",
-          "context": "ගෙවීමෙන් පසු.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Mulțumesc! O zi bună!",
-              "native": "ස්තූතියි! සුභ දවසක්!",
-              "phonetic": "මුල්ශුමස්ක්! ඔ සි බුන!"
-            },
-            {
-              "speaker": "B",
-              "target": "La revedere!",
-              "native": "ගිහින් එන්නම්!",
-              "phonetic": "ලා රෙවදෙරෙ!"
-            }
-          ]
-        }
-      ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියානු සුපිරි වෙළඳසැල්වල සාමාන්‍යයෙන් නැවුම් නිෂ්පාදන, මස් සහ බේකරි සඳහා වෙනම කවුන්ටර ඇත. සාප්පු සවාරි සඳහා නැවත භාවිතා කළ හැකි බෑග් රැගෙන යාම සාමාන්‍ය දෙයකි. සමහර වෙළඳසැල් ප්ලාස්ටික් බෑග් සඳහා කුඩා මුදලක් අය කරයි.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ 'ț' (t cu sedilă) අකුර ඉංග්‍රීසි 'ts' ශබ්දයට සමානයි, 'cats' යන වචනයේ මෙන්. උදාහරණයක් ලෙස 'piață' (වෙළඳපොළ) යන වචනයේ. 'ș' (s cu sedilă) අකුර 'shoe' හි 'sh' ශබ්දයට සමානයි. 'coș' (බාස්කට්) යන වචනයේ මෙන්.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D1-Supermarket" }
-    },
-    {
-      "week": 4,
-      "day": 2,
-      "title": "4 වන සතිය, 2 වන දිනය: මිල ගණන් විමසීම",
-      "title_native": "Săptămâna 4, Ziua 2: Întrebând prețuri",
-      "theme": "Asking for Prices",
-      "path": "survival",
-      "targetLanguage": "Romanian",
-      "nativeLanguage": "Sinhala",
-      "words": [
-        {
-          "id": "w4_2_1",
-          "target": "Cât costă?",
-          "phonetic": "කත් කොස්ත?",
-          "native_meaning": "මිල කීයද?",
-          "english": "How much does it cost?",
-          "example_sentence_target": "Cât costă acest măr?",
-          "example_sentence_native": "මේ ඇපල් ගෙඩියේ මිල කීයද?",
-          "example_sentence_phonetic": "කත් කොස්ත අචෙස්ත් මර්?"
-        },
-        {
-          "id": "w4_2_2",
-          "target": "Preț",
-          "phonetic": "ප්‍රෙත්ස්",
-          "native_meaning": "මිල",
-          "english": "Price",
-          "example_sentence_target": "Care este prețul final?",
-          "example_sentence_native": "අවසාන මිල කුමක්ද?",
-          "example_sentence_phonetic": "කාරෙ එස්තෙ ප්‍රෙත්සුල් ෆිනාල්?"
-        },
-        {
-          "id": "w4_2_3",
-          "target": "Scump",
-          "phonetic": "ස්කුම්ප්",
-          "native_meaning": "මිල අධික",
-          "english": "Expensive",
-          "example_sentence_target": "Este prea scump pentru mine.",
-          "example_sentence_native": "ඒක මට ගණන් වැඩියි.",
-          "example_sentence_phonetic": "එස්තෙ ප්‍රෙයා ස්කුම්ප් පෙන්τρου මීනෙ."
-        },
-        {
-          "id": "w4_2_4",
-          "target": "Ieftin",
-          "phonetic": "യെഫ്തിൻ",
-          "native_meaning": "ලාභයි",
-          "english": "Cheap",
-          "example_sentence_target": "Caut ceva mai ieftin.",
-          "example_sentence_native": "මම තව ටිකක් ලාභ දෙයක් හොයනවා.",
-          "example_sentence_phonetic": "කවුත් චෙවා මායි යෙഫ്തിൻ."
-        },
-        {
-          "id": "w4_2_5",
-          "target": "Reducere",
-          "phonetic": "රෙදුචෙරේ",
-          "native_meaning": "වට්ටමක්",
-          "english": "Discount",
-          "example_sentence_target": "Aveți vreo reducere?",
-          "example_sentence_native": "ඔබ ළඟ වට්ටමක් තියෙනවද?",
-          "example_sentence_phonetic": "අවෙත්ස් ವ്രিয়ോ രെദുചെരെ?"
-        }
-      ],
-      "sentences": [
-        {
-          "id": "s4_2_1",
-          "target": "Cât costă un kilogram de roșii?",
-          "native": "තක්කාලි කිලෝ එකක් කීයද?",
-          "phonetic": "කත් කොස්ත උන් කිලෝග්‍රාම් ද රොෂි?"
-        },
-        {
-          "id": "s4_2_2",
-          "target": "Este un preț bun.",
-          "native": "ඒක හොඳ මිලක්.",
-          "phonetic": "එස්තෙ උන් ප්‍රෙත්ස් බුන්."
-        },
-        {
-          "id": "s4_2_3",
-          "target": "Puteți să-mi faceți o reducere?",
-          "native": "ඔබට මට වට්ටමක් දෙන්න පුළුවන්ද?",
-          "phonetic": "පුතෙත්ස් ස-මි ෆචෙත්ස් ඔ රෙදුචෙරේ?"
-        },
-        {
-          "id": "s4_2_4",
-          "target": "Voi lua asta.",
-          "native": "මම මේක ගන්නම්.",
-          "phonetic": "වොයි ලුආ අස්ත."
-        }
+        { "id": "s4_2_1", "target": "Cât costă laptele?", "native": "කිරි මිල කීයද?", "phonetic": "කත් කොස්ත ලප්තෙ?" },
+        { "id": "s4_2_2", "target": "Aveți fructe proaspete?", "native": "ඔබ ළඟ නැවුම් පලතුරු තිබේද?", "phonetic": "අවෙට්ස් ෆෘක්තේ ප්රොඅස්පෙතේ?" },
+        { "id": "s4_2_3", "target": "Vreau să plătesc.", "native": "මට ගෙවන්න ඕන.", "phonetic": "ව්රාවු ස ප්ලතෙස්ක්." }
       ],
       "dialogues": [
         {
           "id": "d4_2_1",
-          "context": "නිෂ්පාදනයක මිල විමසීම.",
+          "context": "යමක් තිබෙන ස්ථානය ඇසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua, cât costă această carte?",
-              "native": "සුභ දවසක්, මේ පොතේ මිල කීයද?",
-              "phonetic": "බුන සිඋවා, කත් කොස්ත අචස්ත කාර්තෙ?"
-            },
-            {
-              "speaker": "B",
-              "target": "Costă 50 de lei.",
-              "native": "ලී 50 යි.",
-              "phonetic": "කොස්ත චින්ච්සෙච් ද ලෙයි."
-            }
+            { "speaker": "A", "target": "Scuzați-mă, unde găsesc pâinea?", "native": "සමාවෙන්න, පාන් කොහෙන්ද හොයාගන්න පුළුවන්?", "phonetic": "ස්කුසට්සි-ම, උන්දෙ ගසෙස්ක් පයිනෙ?" },
+            { "speaker": "B", "target": "Pe culoarul trei, la dreapta.", "native": "තුන්වන පේළියේ, දකුණු පැත්තේ.", "phonetic": "පේ කුලොආරුල් තෙයි, ලා ද්රෙඅප්ත." }
           ]
         },
         {
           "id": "d4_2_2",
-          "context": "මිල අධික යැයි පැවසීම.",
+          "context": "මුදල් කවුන්ටරයේදී.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "50 de lei? Este cam scump.",
-              "native": "ලී 50? ඒක ටිකක් ගණන් වැඩියි.",
-              "phonetic": "චින්ච්සෙච් ද ලෙයි? එස්තෙ කම් ස්කුම්ප්."
-            },
-            {
-              "speaker": "B",
-              "target": "Este o ediție specială.",
-              "native": "ඒක විශේෂ මුද්‍රණයක්.",
-              "phonetic": "එස්තෙ ඔ එදිශിയെ സ്പെഷ്യല."
-            }
-          ]
-        },
-        {
-          "id": "d4_2_3",
-          "context": "වට්ටමක් ඉල්ලීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Există vreo reducere pentru studenți?",
-              "native": "ශිෂ්‍යයන්ට වට්ටමක් තියෙනවද?",
-              "phonetic": "എക്സിസ്ത ವ്രিয়ോ രെദുചെരെ പെൻട്രു സ്റ്റുദെൻറ്സ്?"
-            },
-            {
-              "speaker": "B",
-              "target": "Da, 10 la sută.",
-              "native": "ඔව්, සියයට 10ක්.",
-              "phonetic": "දා, සෙචෙ ලා සුත."
-            }
-          ]
-        },
-        {
-          "id": "d4_2_4",
-          "context": "වඩා ලාභ දෙයක් සෙවීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Aveți ceva mai ieftin?",
-              "native": "ඔබ ළඟ මීට වඩා ලාභ දෙයක් තියෙනවද?",
-              "phonetic": "අවෙත්ස් චෙවා මායි යෙഫ്തിൻ?"
-            },
-            {
-              "speaker": "B",
-              "target": "Sigur, uitați-vă la aceste cărți.",
-              "native": "ඔව්, මේ පොත් බලන්න.",
-              "phonetic": "സിഗുർ, ഉയിതാശി-വ ലാ അചെസ്തെ കർശ്."
-            }
+            { "speaker": "A", "target": "Atât, mulțumesc.", "native": "එච්චරයි, ස්තූතියි.", "phonetic": "අතත්, මුල්සුමෙස්ක්." },
+            { "speaker": "B", "target": "Sunt 25 de lei. Plătiți cu cardul sau numerar?", "native": "ලී 25 යි. කාඩ් එකෙන්ද නැත්නම් මුදලින්ද ගෙවන්නේ?", "phonetic": "සුන්ත් දොවසිචින්ච් දේ ලෙයි. ප්ලතිට්ස් කු කාර්දුල් සව් නුමරಾರ್?" }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියාවේ, විශේෂයෙන්ම කුඩා වෙළඳසැල්වල හෝ වෙළඳපොළවල්වල මිල ගණන් කේවල් කිරීම සමහර විට පිළිගත හැකිය. නමුත් සුපිරි වෙළඳසැල්වල සහ විශාල වෙළඳසැල්වල මිල ගණන් නියත වේ. 'Lei' (ලී) යනු රුමේනියානු මුදල් ඒකකයයි.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ 'ce' සහ 'ci' උච්චාරණය කරන්නේ ඉංග්‍රීසි 'che' (cheese) සහ 'chi' (chilly) ලෙසයි. උදාහරණයක් ලෙස, 'ieftin' (യെഫ്തിൻ) සහ 'cinci' (චින්ච්). 'che' සහ 'chi' උච්චාරණය කරන්නේ 'k' ශබ්දයක් ලෙසයි, 'cheamă' (කේයාම) හි මෙන්.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D2-Prices" }
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_2_1", "sentence": "Vreau o sticlă de ___.", "answer": "apă", "hint": "වතුර" }
+        ],
+        "matching": [
+          { "id": "m4_2_1", "target": "Pâine", "native": "පාන්" },
+          { "id": "m4_2_2", "target": "Lapte", "native": "කිරි" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_2_1", "scrambled": ["este", "casa", "Unde"], "correct": "Unde este casa?", "nativeHint": "මුදල් කවුන්ටරය කොහෙද?" }
+        ]
+      },
+      "cultural_note": "රුමේනියානු සුපිරි වෙළඳසැල්වල සාමාන්‍යයෙන් නැවුම් නිෂ්පාදන කිරා මැන බැලීම සහ මිල ඇලවීම සඳහා වෙනම කිරුම්හලක් ඇත.",
+      "pronunciation_tip": "'Pâine' හි 'â' අක්ෂරය ඉංග්‍රීසි 'uh' ශබ්දයට සමාන ශබ්දයක් වන අතර, උගුරෙන් නිකුත් වේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D2-Supermarket" }
     },
     {
       "week": 4,
       "day": 3,
-      "title": "4 වන සතිය, 3 වන දිනය: ඇඳුම් සාප්පුවේදී",
-      "title_native": "Săptămâna 4, Ziua 3: La magazinul de haine",
-      "theme": "At the Clothing Store",
+      "title": "4 වන සතිය, 3 වන දිනය: ඇඳුම් මිලදී ගැනීම",
+      "title_native": "Săptămâna 4, Ziua 3: Cumpărături de haine",
+      "theme": "Buying Clothes",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_3_1",
-          "target": "Haine",
-          "phonetic": "හයිනෙ",
-          "native_meaning": "ඇඳුම්",
-          "english": "Clothes",
-          "example_sentence_target": "Vreau să cumpăr niște haine.",
-          "example_sentence_native": "මට ඇඳුම් ටිකක් මිලදී ගන්න අවශ්‍යයි.",
-          "example_sentence_phonetic": "വ്രিয়াਉ സ കുമ്പാർ നിശ്തെ ഹയ്നെ."
-        },
-        {
-          "id": "w4_3_2",
-          "target": "Tricou",
-          "phonetic": "త్రికોउ",
-          "native_meaning": "ටී-ෂර්ට්",
-          "english": "T-shirt",
-          "example_sentence_target": "Îmi place acest tricou.",
-          "example_sentence_native": "මම මේ ටී-ෂර්ට් එකට කැමතියි.",
-          "example_sentence_phonetic": "ഇം പ്ലാചെ അചെസ്ത് త్రికోउ."
-        },
-        {
-          "id": "w4_3_3",
-          "target": "Pantaloni",
-          "phonetic": "පන්තලොන්",
-          "native_meaning": "කලිසම්",
-          "english": "Pants",
-          "example_sentence_target": "Am nevoie de o pereche de pantaloni.",
-          "example_sentence_native": "මට කලිසමක් අවශ්‍යයි.",
-          "example_sentence_phonetic": "അം നെവോയെ ദെ ഓ പെരെകെ ദെ പന്തലൊൻ."
-        },
-        {
-          "id": "w4_3_4",
-          "target": "Rochie",
-          "phonetic": "ରୋଖిയെ",
-          "native_meaning": "ගවුම",
-          "english": "Dress",
-          "example_sentence_target": "Această rochie este frumoasă.",
-          "example_sentence_native": "මේ ගවුම ලස්සනයි.",
-          "example_sentence_phonetic": "അചാസ്ത രോഖിയെ എസ്തേ ഫ്രുമൊആസ."
-        },
-        {
-          "id": "w4_3_5",
-          "target": "Cabină de probă",
-          "phonetic": "කබීන ද ප්‍රොබ",
-          "native_meaning": "ට්‍රයල් රූම්",
-          "english": "Fitting room",
-          "example_sentence_target": "Unde este cabina de probă?",
-          "example_sentence_native": "ට්‍රයල් රූම් එක කොහෙද?",
-          "example_sentence_phonetic": "උන්දෙ එස්තෙ කබීන ද ප්‍රොබ?"
-        }
+        { "id": "w4_3_1", "target": "Haine", "phonetic": "හයිනෙ", "native_meaning": "ඇඳුම්", "english": "Clothes", "example_sentence_target": "Mă uit la niște haine.", "example_sentence_native": "මම ඇඳුම් කිහිපයක් බලනවා.", "example_sentence_phonetic": "ම උයිත් ලා නිෂ්තේ හයිනෙ." },
+        { "id": "w4_3_2", "target": "Tricou", "phonetic": "ත්රිකොව්", "native_meaning": "ටී-ෂර්ට්", "english": "T-shirt", "example_sentence_target": "Cât costă acest tricou?", "example_sentence_native": "මේ ටී-ෂර්ට් එකේ මිල කීයද?", "example_sentence_phonetic": "කත් කොස්ත අචෙස්ත් ත්රිකොව්?" },
+        { "id": "w4_3_3", "target": "Pantaloni", "phonetic": "පන්තලොනි", "native_meaning": "කලිසම්", "english": "Trousers", "example_sentence_target": "Am nevoie de o pereche de pantaloni.", "example_sentence_native": "මට කලිසමක් අවශ්‍යයි.", "example_sentence_phonetic": "අම් නෙවොයෙ දේ ඔ පෙරෙකෙ දේ පන්තලොනි." },
+        { "id": "w4_3_4", "target": "Mărime", "phonetic": "මරිමෙ", "native_meaning": "ප්‍රමාණය", "english": "Size", "example_sentence_target": "Ce mărime purtați?", "example_sentence_native": "ඔබ අඳින ප්‍රමාණය කුමක්ද?", "example_sentence_phonetic": "චෙ මරිමෙ පුර්තාට්ස්?" },
+        { "id": "w4_3_5", "target": "Cabină de probă", "phonetic": "කාබින දේ ප්රොබ", "native_meaning": "ඇඳුම් මාරු කරන කාමරය", "english": "Fitting room", "example_sentence_target": "Unde este cabina de probă?", "example_sentence_native": "ඇඳුම් මාරු කරන කාමරය කොහෙද?", "example_sentence_phonetic": "උන්දෙ එස්තේ කාබින දේ ප්රොබ?" }
       ],
       "sentences": [
-        {
-          "id": "s4_3_1",
-          "target": "Pot să probez asta?",
-          "native": "මට මේක ඇඳලා බලන්න පුළුවන්ද?",
-          "phonetic": "പൊത് സ പ്രൊബെസ് അസ്ത?"
-        },
-        {
-          "id": "s4_3_2",
-          "target": "Ce mărime purtați?",
-          "native": "ඔබ අඳින්නේ මොන සයිස් එකද?",
-          "phonetic": "ചെ മരിമെ പുർത്താശ്?"
-        },
-        {
-          "id": "s4_3_3",
-          "target": "Caut o cămașă albă.",
-          "native": "මම සුදු කමිසයක් හොයනවා.",
-          "phonetic": "കവുത് ഓ കമാഷ അൽബ."
-        },
-        {
-          "id": "s4_3_4",
-          "target": "Nu mi se potrivește.",
-          "native": "මේක මට හරියන්නේ නෑ.",
-          "phonetic": "നു മി സെ പൊτριവെഷ്ತೆ."
-        }
+        { "id": "s4_3_1", "target": "Pot să probez asta?", "native": "මට මේක ඇඳලා බලන්න පුලුවන්ද?", "phonetic": "පොත් ස ප්රොබෙස් අස්ත?" },
+        { "id": "s4_3_2", "target": "Aveți o mărime mai mare?", "native": "ඔබට මීට වඩා ලොකු ප්‍රමාණයක් තිබේද?", "phonetic": "අවෙට්ස් ඔ මරිමෙ මයි මාරෙ?" },
+        { "id": "s4_3_3", "target": "Îmi place această culoare.", "native": "මම මේ පාටට කැමතියි.", "phonetic": "ඉම් ප්ලාචෙ අචස්ත කුලොආරේ." }
       ],
       "dialogues": [
         {
           "id": "d4_3_1",
-          "context": "ට්‍රයල් රූම් එක ගැන විමසීම.",
+          "context": "ඇඳුම් සාප්පුවකදී උදව් ඉල්ලීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Scuzați-mă, aș vrea să probez acești pantaloni. Unde este cabina?",
-              "native": "සමාවෙන්න, මට මේ කලිසම ඇඳලා බලන්න ඕන. ට්‍රයල් රූම් එක කොහෙද?",
-              "phonetic": "സ്കുസാശി-മ, അശ് വ്രിയാ സ പ്രൊബെസ് അചെഷ് పంతలొన్. ഉන්දെ എസ്തേ കബീന?"
-            },
-            {
-              "speaker": "B",
-              "target": "Este în spate, pe partea dreaptă.",
-              "native": "පිටුපස, දකුණු පැත්තේ.",
-              "phonetic": "എസ്തേ ഇൻ സ്പാതെ, പെ പാർത്തെയാ ദ്രിയാപ്ത."
-            }
+            { "speaker": "A", "target": "Scuzați-mă, mă puteți ajuta?", "native": "සමාවෙන්න, මට උදව් කරන්න පුලුවන්ද?", "phonetic": "ස්කුසට්සි-ම, ම පුතෙට්ස් අජුතා?" },
+            { "speaker": "B", "target": "Sigur. Ce anume căutați?", "native": "හොඳයි. ඔබ මොනවද හොයන්නේ?", "phonetic": "සිගුර්. චෙ අනුමෙ කවුතාට්ස්?" }
           ]
         },
         {
           "id": "d4_3_2",
-          "context": "ඇඳුමක් ගැළපෙන්නේ නැති විට.",
+          "context": "ඇඳුමක් ඇඳ බැලීමෙන් පසු.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Acest tricou este prea mic.",
-              "native": "මේ ටී-ෂර්ට් එක මට පොඩි වැඩියි.",
-              "phonetic": "അചെസ്ത് త్రికోउ എസ്തേ പ്രിയാ മിക്."
-            },
-            {
-              "speaker": "B",
-              "target": "Doriți o mărime mai mare?",
-              "native": "ඔබට ඊට වඩා ලොකු සයිස් එකක් අවශ්‍යද?",
-              "phonetic": "ദൊരിശ് ഓ മരിമെ മാයි മാരെ?"
-            }
-          ]
-        },
-        {
-          "id": "d4_3_3",
-          "context": "වෙනත් වර්ණයක් ගැන විමසීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Aveți această rochie pe albastru?",
-              "native": "මේ ගවුමේ නිල් පාට තියෙනවද?",
-              "phonetic": "അവെശ് അചാസ്ത രോഖിയെ പെ അൽബാസ്ത്രു?"
-            },
-            {
-              "speaker": "B",
-              "target": "Da, imediat aduc.",
-              "native": "ඔව්, දැන්ම ගේන්නම්.",
-              "phonetic": "ദാ, ഇമെദിയാത് അതുക്."
-            }
-          ]
-        },
-        {
-          "id": "d4_3_4",
-          "context": "මිලදී ගැනීමට තීරණය කිරීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Perfect. Voi lua acești pantaloni.",
-              "native": "නියමයි. මම මේ කලිසම ගන්නවා.",
-              "phonetic": "പെർഫെക്ത്. വോയ് ലുവാ അചെഷ് పంతలొൻ."
-            },
-            {
-              "speaker": "B",
-              "target": "Excelent. Mergem la casă.",
-              "native": "නියමයි. අපි කැෂියර් එකට යමු.",
-              "phonetic": "എക്സലെൻറ്. മെർജെം ലാ കാസ."
-            }
+            { "speaker": "A", "target": "Îmi vine perfect. O să-l iau.", "native": "මට මේක හොඳටම ගැලපෙනවා. මම මේක ගන්නවා.", "phonetic": "ඉම් විනෙ පෙර්ෆෙක්ත්. ඔ ස-ල් යව්." },
+            { "speaker": "B", "target": "Excelent! Vă ajut cu altceva?", "native": "නියමයි! මම ඔබට වෙනත් දෙයකින් උදව් කරන්නද?", "phonetic": "එක්ස්චෙලෙන්ත්! ව අජුත් කු අල්ත්චෙවා?" }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියාවේ බොහෝ ඇඳුම් සාප්පු වල ට්‍රයල් රූම් ඇත. සාමාන්‍යයෙන් ඔබට එකවර ඇඳුම් කිහිපයක් ඇඳ බැලීමට අවසර ලැබේ. සේවකයින් බොහෝ විට උදව් කිරීමට කැමැත්තෙන් සිටින අතර, ඔබට අවශ්‍ය සයිස් එක හෝ වර්ණය සොයා දීමට ඔවුන්ට පුළුවන.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ 'ge' සහ 'gi' උච්චාරණය කරන්නේ ඉංග්‍රීසි 'je' (jet) සහ 'ji' (jigsaw) ලෙසයි. උදාහරණයක් ලෙස, 'geantă' (ජන්තා - බෑගය). 'ghe' සහ 'ghi' උච්චාරණය කරන්නේ 'g' ශබ්දයක් ලෙසයි, 'ghete' (ගෙතේ - සපත්තු) හි මෙන්.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D3-Clothes" }
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_3_1", "sentence": "Ce ___ purtați?", "answer": "mărime", "hint": "ප්‍රමාණය" }
+        ],
+        "matching": [
+          { "id": "m4_3_1", "target": "Tricou", "native": "ටී-ෂර්ට්" },
+          { "id": "m4_3_2", "target": "Pantaloni", "native": "කලිසම්" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_3_1", "scrambled": ["să", "Pot", "asta", "probez"], "correct": "Pot să probez asta?", "nativeHint": "මට මේක ඇඳලා බලන්න පුලුවන්ද?" }
+        ]
+      },
+      "cultural_note": "රුමේනියාවේ බොහෝ නවීන ඇඳුම් සාප්පු වල ස්ථාවර මිල ගණන් ඇත, නමුත් කුඩා කඩවල හෝ වෙළඳපොළවල කේවල් කිරීම පිළිගත හැකිය.",
+      "pronunciation_tip": "'Haine' හි 'H' අක්ෂරය උච්චාරණය කෙරේ, එය ඉංග්‍රීසි 'h' ශබ්දයට සමාන වේ. එය නිහඬ නොවේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D3-ClothesShopping" }
     },
     {
       "week": 4,
       "day": 4,
-      "title": "4 වන සතිය, 4 වන දිනය: සයිස් සහ වර්ණ",
-      "title_native": "Săptămâna 4, Ziua 4: Mărimi și culori",
-      "theme": "Sizes and Colors",
+      "title": "4 වන සතිය, 4 වන දිනය: පොදු ප්‍රවාහනය",
+      "title_native": "Săptămâna 4, Ziua 4: Transportul public",
+      "theme": "Public Transportation",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_4_1",
-          "target": "Mărime",
-          "phonetic": "මරිමෙ",
-          "native_meaning": "සයිස්",
-          "english": "Size",
-          "example_sentence_target": "Ce mărime este aceasta?",
-          "example_sentence_native": "මේක මොන සයිස් එකද?",
-          "example_sentence_phonetic": "ചെ മരിമെ എസ്തേ അചാസ്ത?"
-        },
-        {
-          "id": "w4_4_2",
-          "target": "Culoare",
-          "phonetic": "කුලෝරේ",
-          "native_meaning": "වර්ණය",
-          "english": "Color",
-          "example_sentence_target": "Ce culoare preferați?",
-          "example_sentence_native": "ඔබ කැමති මොන පාටටද?",
-          "example_sentence_phonetic": "ചെ കുലൊരെ പ്രെഫെരാസ്?"
-        },
-        {
-          "id": "w4_4_3",
-          "target": "Roșu",
-          "phonetic": "రొషు",
-          "native_meaning": "රතු",
-          "english": "Red",
-          "example_sentence_target": "Vreau un pulover roșu.",
-          "example_sentence_native": "මට රතු පුලෝවර් එකක් අවශ්‍යයි.",
-          "example_sentence_phonetic": "വ്രিয়াਉ ഉൻ പുലൊവെർ രൊഷു."
-        },
-        {
-          "id": "w4_4_4",
-          "target": "Albastru",
-          "phonetic": "අල්බාස්τρου",
-          "native_meaning": "නිල්",
-          "english": "Blue",
-          "example_sentence_target": "Pantalonii sunt albaștri.",
-          "example_sentence_native": "කලිසම නිල් පාටයි.",
-          "example_sentence_phonetic": "പന്തലൊനി സന്ത് അൽബാഷ്ട്രി."
-        },
-        {
-          "id": "w4_4_5",
-          "target": "Negru",
-          "phonetic": "ନେଗ୍ରୁ",
-          "native_meaning": "කළු",
-          "english": "Black",
-          "example_sentence_target": "Am o geantă neagră.",
-          "example_sentence_native": "මා ළඟ කළු බෑගයක් තියෙනවා.",
-          "example_sentence_phonetic": "അം ഓ ജന്താ നെഗ്രാ."
-        },
-        {
-          "id": "w4_4_6",
-          "target": "Alb",
-          "phonetic": "අල්බ්",
-          "native_meaning": "සුදු",
-          "english": "White",
-          "example_sentence_target": "Port un tricou alb.",
-          "example_sentence_native": "මම සුදු ටී-ෂර්ට් එකක් ඇඳගෙන ඉන්නවා.",
-          "example_sentence_phonetic": "പോർത് ഉൻ త్రికోउ അൽബ്."
-        }
+        { "id": "w4_4_1", "target": "Autobuz", "phonetic": "අවුතොබුස්", "native_meaning": "බස් රථය", "english": "Bus", "example_sentence_target": "Unde este stația de autobuz?", "example_sentence_native": "බස් නැවතුම කොහෙද?", "example_sentence_phonetic": "උන්දෙ එස්තේ ස්තාට්සියා දේ අවුතොබුස්?" },
+        { "id": "w4_4_2", "target": "Tren", "phonetic": "ත්‍රෙන්", "native_meaning": "දුම්රිය", "english": "Train", "example_sentence_target": "La ce oră pleacă trenul?", "example_sentence_native": "දුම්රිය පිටත් වන්නේ කීයටද?", "example_sentence_phonetic": "ලා චෙ ඔර ප්ලෙකා ත්රෙනුල්?" },
+        { "id": "w4_4_3", "target": "Metrou", "phonetic": "මෙත්රොව්", "native_meaning": "මෙට්රෝව", "english": "Subway/Metro", "example_sentence_target": "Vreau să iau metroul.", "example_sentence_native": "මට මෙට්රෝවෙන් යන්න ඕන.", "example_sentence_phonetic": "ව්රාවු ස යව් මෙත්රොවුල්." },
+        { "id": "w4_4_4", "target": "Bilet", "phonetic": "බිලෙත්", "native_meaning": "ටිකට් පත", "english": "Ticket", "example_sentence_target": "Un bilet, vă rog.", "example_sentence_native": "කරුණාකර ටිකට් එකක්.", "example_sentence_phonetic": "උන් බිලෙත්, ව රොග්." },
+        { "id": "w4_4_5", "target": "Stație", "phonetic": "ස්තාට්සියෙ", "native_meaning": "නැවතුම්පළ", "english": "Station/Stop", "example_sentence_target": "Care este următoarea stație?", "example_sentence_native": "ඊළඟ නැවතුම කුමක්ද?", "example_sentence_phonetic": "කාරේ එස්තේ උර්මතොආරෙ ස්තාට්සියෙ?" }
       ],
       "sentences": [
-        {
-          "id": "s4_4_1",
-          "target": "Aveți mărimea M?",
-          "native": "ඔබ ළඟ M සයිස් එක තියෙනවද?",
-          "phonetic": "അവെശ് മരിമെയാ എം?"
-        },
-        {
-          "id": "s4_4_2",
-          "target": "Este prea mare pentru mine.",
-          "native": "මේක මට ලොකු වැඩියි.",
-          "phonetic": "എസ്തേ പ്രിയാ മാരെ പെൻട്രു മീനെ."
-        },
-        {
-          "id": "s4_4_3",
-          "target": "Îmi place culoarea verde.",
-          "native": "මම කොළ පාටට කැමතියි.",
-          "phonetic": "ഇം പ്ലാചെ കുലൊരെയ വെർദെ."
-        },
-        {
-          "id": "s4_4_4",
-          "target": "Se potrivește perfect.",
-          "native": "මේක නියමෙටම ගැලපෙනවා.",
-          "phonetic": "സെ പൊτριവെഷ്ತೆ പെർഫെക്ത്."
-        }
+        { "id": "s4_4_1", "target": "Acest autobuz merge la centru?", "native": "මේ බස් එක නගර මධ්‍යයට යනවාද?", "phonetic": "අචෙස්ත් අවුතොබුස් මෙර්ජෙ ලා චෙන්ත්රු?" },
+        { "id": "s4_4_2", "target": "Trebuie să validez biletul?", "native": "මම ටිකට් පත වලංගු කළ යුතුද?", "phonetic": "ත්රෙබුයෙ ස වලිදෙස් බිලෙතුල්?" },
+        { "id": "s4_4_3", "target": "De la ce peron pleacă trenul?", "native": "දුම්රිය පිටත් වන්නේ කුමන වේදිකාවෙන්ද?", "phonetic": "දේ ලා චෙ පෙරොන් ප්ලෙකා ත්රෙනුල්?" }
       ],
       "dialogues": [
         {
           "id": "d4_4_1",
-          "context": "නිවැරදි සයිස් එක ඉල්ලීම.",
+          "context": "බස් නැවතුමකදී.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Această cămașă este mărimea L. Aveți M?",
-              "native": "මේ ෂර්ට් එක L සයිස්. ඔබ ළඟ M තියෙනවද?",
-              "phonetic": "അചാസ്ത കമാഷ എസ്തേ മരിമെയാ എൽ. അവെശ് എം?"
-            },
-            {
-              "speaker": "B",
-              "target": "Sigur, poftiți.",
-              "native": "ඔව්, මෙන්න.",
-              "phonetic": "സിഗുർ, പൊഫ്തിശ്."
-            }
+            { "speaker": "A", "target": "Scuzați-mă, ce autobuz merge la Gara de Nord?", "native": "සමාවෙන්න, උතුරු දුම්රිය ස්ථානයට යන්නේ කුමන බස් රථයද?", "phonetic": "ස්කුසට්සි-ම, චෙ අවුතොබුස් මෙර්ජෙ ලා ගාරා දේ නොර්ද්?" },
+            { "speaker": "B", "target": "Autobuzul 178.", "native": "බස් අංක 178.", "phonetic": "අවුතොබුසුල් ඔසුත ශප්තෙසෙචොප්ත්." }
           ]
         },
         {
           "id": "d4_4_2",
-          "context": "ඇඳුමක වර්ණය ගැන කතා කිරීම.",
+          "context": "ටිකට් පතක් මිලදී ගැනීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ce culoare frumoasă! Este roz?",
-              "native": "මොනතරම් ලස්සන පාටක්ද! රෝස පාටද?",
-              "phonetic": "ചെ കുലൊരെ ഫ്രുമൊആസ! എസ്തേ രൊസ്?"
-            },
-            {
-              "speaker": "B",
-              "target": "Da, este un roz pal.",
-              "native": "ඔව්, ලා රෝස පාටක්.",
-              "phonetic": "ദാ, എസ്തേ ഉൻ രൊസ് പാൽ."
-            }
-          ]
-        },
-        {
-          "id": "d4_4_3",
-          "context": "ඇඳුමක් ගැලපෙන බව පැවසීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Cred că aceasta mi se potrivește.",
-              "native": "මම හිතන්නේ මේක මට ගැලපෙනවා.",
-              "phonetic": "ക്രെദ് ക അചാസ്ത മി സെ പൊτριവെഷ്ತೆ."
-            },
-            {
-              "speaker": "B",
-              "target": "Arată foarte bine pe dumneavoastră.",
-              "native": "ඔබට ගොඩක් ලස්සනට පේනවා.",
-              "phonetic": "അരാത ഫൊആർതെ ബിനെ പെ ദുംനെഅവൊആസ്ത്ര."
-            }
-          ]
-        },
-        {
-          "id": "d4_4_4",
-          "context": "නිශ්චිත වර්ණයක් නොමැති විට.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Nu aveți pe galben?",
-              "native": "ඔබ ළඟ කහ පාට නැද්ද?",
-              "phonetic": "നു അവെശ് പെ ഗാൽബെൻ?"
-            },
-            {
-              "speaker": "B",
-              "target": "Din păcate, nu. Doar pe negru și roșu.",
-              "native": "කණගාටුයි, නෑ. කළු සහ රතු විතරයි තියෙන්නේ.",
-              "phonetic": "ദിൻ പകാതെ, നു. ദൊഅർ പെ നെഗ്രു ഷി രൊഷു."
-            }
+            { "speaker": "A", "target": "Bună ziua, aș dori un bilet pentru o călătorie.", "native": "සුබ දවසක්, මට එක ගමනක් සඳහා ටිකට් පතක් අවශ්‍යයි.", "phonetic": "බුන සියුවා, අශ් දොරී උන් බිලෙත් පෙන්ත්රු ඔ කලතොරියේ." },
+            { "speaker": "B", "target": "Sigur, costă 3 lei.", "native": "හොඳයි, මිල ලී 3 යි.", "phonetic": "සිගුර්, කොස්ත තෙයි ලෙයි." }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියාවේ, ඇඳුම්වල සයිස් යුරෝපීය ප්‍රමිතීන්ට අනුව (උදා: 38, 40, 42) හෝ ජාත්‍යන්තර ප්‍රමිතීන්ට (S, M, L) අනුව විය හැකිය. මිලදී ගැනීමට පෙර සයිස් ටැගය පරීක්ෂා කිරීම හොඳ පුරුද්දකි. බොහෝ රුමේනියානුවන් විලාසිතා ගැන සැලකිලිමත් වන අතර, විශේෂයෙන් නගරවල මිනිසුන් හොඳින් ඇඳ පැළඳ සිටිනු දැකිය හැකිය.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ වචනවල අවසානයේ ඇති 'i' අකුර බොහෝ විට ඉතා කෙටියෙන් සහ මෘදුව උච්චාරණය කරයි, එය 'whispered i' ලෙස හැඳින්වේ. එය ශබ්දයට වඩා හුස්මක් මෙනි. උදාහරණයක් ලෙස 'albaștri' (අල්බාഷ്ട്രි - නිල්) යන වචනයේ අවසාන 'i' ශබ්දය ඉතා මෘදුයි.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D4-SizesColors" }
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_4_1", "sentence": "Un ___, vă rog.", "answer": "bilet", "hint": "ටිකට් පත" }
+        ],
+        "matching": [
+          { "id": "m4_4_1", "target": "Autobuz", "native": "බස් රථය" },
+          { "id": "m4_4_2", "target": "Tren", "native": "දුම්රිය" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_4_1", "scrambled": ["următoarea", "este", "Care", "stație"], "correct": "Care este următoarea stație?", "nativeHint": "ඊළඟ නැවතුම කුමක්ද?" }
+        ]
+      },
+      "cultural_note": "බුකාරෙස්ට් වැනි විශාල රුමේනියානු නගරවල, පොදු ප්‍රවාහනය සඳහා නැවත ආරෝපණය කළ හැකි කාඩ්පතක් (Card Activ) භාවිතා කිරීම බහුලව දක්නට ලැබේ.",
+      "pronunciation_tip": "'Stație' හි 'ț' අක්ෂරය නැවතත් 'ts' ශබ්දයක් ලෙස උච්චාරණය කෙරේ.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D4-PublicTransport" }
     },
     {
       "week": 4,
       "day": 5,
-      "title": "4 වන සතිය, 5 වන දිනය: බඩු සඳහා ගෙවීම",
-      "title_native": "Săptămâna 4, Ziua 5: Plata pentru articole",
-      "theme": "Paying for Items",
+      "title": "4 වන සතිය, 5 වන දිනය: ටැක්සියක් ගැනීම",
+      "title_native": "Săptămâna 4, Ziua 5: Luarea unui taxi",
+      "theme": "Taking a Taxi",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_5_1",
-          "target": "Card",
-          "phonetic": "කාර්ඩ්",
-          "native_meaning": "කාඩ්පත",
-          "english": "Card",
-          "example_sentence_target": "Pot plăti cu cardul?",
-          "native": "මට කාඩ් එකෙන් ගෙවන්න පුළුවන්ද?",
-          "example_sentence_phonetic": "പൊത് പ്ലതി കു കാർദുൽ?"
-        },
-        {
-          "id": "w4_5_2",
-          "target": "Numerar",
-          "phonetic": "නුමෙරාර්",
-          "native_meaning": "මුදල්",
-          "english": "Cash",
-          "example_sentence_target": "Plătesc numerar.",
-          "native": "මම මුදලින් ගෙවන්නම්.",
-          "example_sentence_phonetic": "പ്ലതെസ്ക് നുമെരാർ."
-        },
-        {
-          "id": "w4_5_3",
-          "target": "Bon",
-          "phonetic": "බොන්",
-          "native_meaning": "බිල්පත/රිසිට්පත",
-          "english": "Receipt",
-          "example_sentence_target": "Aș dori bonul, vă rog.",
-          "native": "මට බිල දෙන්න, කරුණාකර.",
-          "example_sentence_phonetic": "അശ് ദൊരി ബോനുൽ, വാ രൊഗ്."
-        },
-        {
-          "id": "w4_5_4",
-          "target": "Rest",
-          "phonetic": "రెస్ట్",
-          "native_meaning": "ඉතිරි මුදල",
-          "english": "Change (money)",
-          "example_sentence_target": "Acesta este restul dumneavoastră.",
-          "native": "මේ ඔබේ ඉතිරි මුදල.",
-          "example_sentence_phonetic": "അചെസ്ത എസ്തേ റെസ്തുൽ ദുംനെഅവൊആസ്ത്ര."
-        },
-        {
-          "id": "w4_5_5",
-          "target": "Total",
-          "phonetic": "තොතාල්",
-          "native_meaning": "මුළු එකතුව",
-          "english": "Total",
-          "example_sentence_target": "Totalul este 100 de lei.",
-          "example_sentence_native": "මුළු එකතුව ලී 100 යි.",
-          "example_sentence_phonetic": "തൊതാലുൽ എസ്തേ ഓ സുത ദെ ലെയ്."
-        }
+        { "id": "w4_5_1", "target": "Taxi", "phonetic": "තක්සි", "native_meaning": "ටැක්සිය", "english": "Taxi", "example_sentence_target": "Am nevoie de un taxi.", "example_sentence_native": "මට ටැක්සියක් අවශ්‍යයි.", "example_sentence_phonetic": "අම් නෙවොයෙ දේ උන් තක්සි." },
+        { "id": "w4_5_2", "target": "Adresă", "phonetic": "අද્રેස", "native_meaning": "ලිපිනය", "english": "Address", "example_sentence_target": "Care este adresa?", "example_sentence_native": "ලිපිනය කුමක්ද?", "example_sentence_phonetic": "කාරේ එස්තේ අද્રેස?" },
+        { "id": "w4_5_3", "target": "Dreapta", "phonetic": "ද්රෙඅප්ත", "native_meaning": "දකුණ", "english": "Right", "example_sentence_target": "La dreapta, vă rog.", "example_sentence_native": "දකුණට, කරුණාකර.", "example_sentence_phonetic": "ලා ද්රෙඅප්ත, ව රොග්." },
+        { "id": "w4_5_4", "target": "Stânga", "phonetic": "ස්තංග", "native_meaning": "වම", "english": "Left", "example_sentence_target": "Faceți la stânga aici.", "example_sentence_native": "මෙතනින් වමට හරවන්න.", "example_sentence_phonetic": "ෆචෙට්ස් ලා ස්තංග අයිච්." },
+        { "id": "w4_5_5", "target": "Așteptați", "phonetic": "අෂ්තෙප්තට්ස්", "native_meaning": "ඉන්න", "english": "Wait", "example_sentence_target": "Așteptați aici, vă rog.", "example_sentence_native": "කරුණාකර මෙතන ඉන්න.", "example_sentence_phonetic": "අෂ්තෙප්තට්ස් අයිච්, ව රොග්." }
       ],
       "sentences": [
-        {
-          "id": "s4_5_1",
-          "target": "Acceptați carduri de credit?",
-          "native": "ඔබ ක්‍රෙඩිට් කාඩ්පත් භාරගන්නවද?",
-          "phonetic": "അക്ചെപ്താസ് കാർദുരി ദെ ക്രെദിത്?"
-        },
-        {
-          "id": "s4_5_2",
-          "target": "Păstrați restul.",
-          "native": "ඉතිරි සල්ලි තියාගන්න.",
-          "phonetic": "പസ്ത്രശ് റെസ്തുൽ."
-        },
-        {
-          "id": "s4_5_3",
-          "target": "Am nevoie de o factură.",
-          "native": "මට බිල්පතක් අවශ්‍යයි.",
-          "phonetic": "അം നെവോയെ ദെ ഓ ഫക്തുര."
-        },
-        {
-          "id": "s4_5_4",
-          "target": "Introduceți PIN-ul, vă rog.",
-          "native": "කරුණාකර PIN අංකය ඇතුළත් කරන්න.",
-          "phonetic": "ഇന്ത്രൊദുചെശ് പിൻ-ഉൽ, വാ രൊഗ്."
-        }
+        { "id": "s4_5_1", "target": "Mă puteți duce la această adresă?", "native": "ඔබට මාව මේ ලිපිනයට ගෙනියන්න පුලුවන්ද?", "phonetic": "ම පුතෙට්ස් දුචෙ ලා අචස්ත අද્રેස?" },
+        { "id": "s4_5_2", "target": "Cât durează călătoria?", "native": "ගමනට කොච්චර වෙලා යනවද?", "phonetic": "කත් දුරේසා කලතොරියා?" },
+        { "id": "s4_5_3", "target": "Opriți aici, vă rog.", "native": "කරුණාකර මෙතන නවත්වන්න.", "phonetic": "ඔප්රිට්ස් අයිච්, ව රොග්." }
       ],
       "dialogues": [
         {
           "id": "d4_5_1",
-          "context": "ගෙවීමේ ක්‍රමය තෝරා ගැනීම.",
+          "context": "ටැක්සියක් ඇමතීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Plătiți cu cardul sau numerar?",
-              "native": "ඔබ ගෙවන්නේ කාඩ් එකෙන්ද නැත්නම් මුදලින්ද?",
-              "phonetic": "പ്ലതിശ് കു കാർദുൽ സവു നുമെരാർ?"
-            },
-            {
-              "speaker": "B",
-              "target": "Cu cardul, vă rog.",
-              "native": "කාඩ් එකෙන්, කරුණාකර.",
-              "phonetic": "കു കാർദുൽ, വാ രൊഗ്."
-            }
+            { "speaker": "A", "target": "Bună ziua, aș dori un taxi la strada Victoriei, numărul 10.", "native": "සුබ දවසක්, මට වික්ටෝරියා වීදියේ අංක 10 ට ටැක්සියක් අවශ්‍යයි.", "phonetic": "බුන සියුවා, අශ් දොරී උන් තක්සි ලා ස්ත්රාදා වික්තොරියේ, නුමරුල් සෙචෙ." },
+            { "speaker": "B", "target": "Sigur, trimit o mașină imediat.", "native": "හොඳයි, මම දැන්ම වාහනයක් එවනවා.", "phonetic": "සිගුර්, තිමිත් ඔ මශින ඉමෙදියත්." }
           ]
         },
         {
           "id": "d4_5_2",
-          "context": "කාඩ් එක වැඩ නොකරන විට.",
+          "context": "ගමන අවසානයේදී.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Îmi pare rău, cardul a fost refuzat.",
-              "native": "කණගාටුයි, කාඩ් එක ප්‍රතික්ෂේප වුණා.",
-              "phonetic": "ഇം പാരെ രവു, കാർദുൽ അ ഫൊസ്ത് രെഫുസത്."
-            },
-            {
-              "speaker": "B",
-              "target": "Ciudat. Voi plăti numerar atunci.",
-              "native": "පුදුමයි. එහෙනම් මම මුදලින් ගෙවන්නම්.",
-              "phonetic": "ചുദത്. വോയ് പ്ലതി നുമെരാർ അതുൻച്."
-            }
-          ]
-        },
-        {
-          "id": "d4_5_3",
-          "context": "ඉතිරි මුදල් ලබා ගැනීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Poftim, 20 de lei rest.",
-              "native": "මෙන්න, ඉතිරි ලී 20.",
-              "phonetic": "പൊഫ്തിം, ദൊവഅസെച് ദെ ലെയ് രെസ്ത്."
-            },
-            {
-              "speaker": "B",
-              "target": "Mulțumesc.",
-              "native": "ස්තූතියි.",
-              "phonetic": "മുൽശുമെസ്ക്."
-            }
-          ]
-        },
-        {
-          "id": "d4_5_4",
-          "context": "රිසිට්පතක් ඉල්ලීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Aș putea avea bonul, vă rog?",
-              "native": "මට කරුණාකර බිල ගන්න පුළුවන්ද?",
-              "phonetic": "അശ് പുതെയാ അവെയാ ബോനുൽ, വാ രൊഗ്?"
-            },
-            {
-              "speaker": "B",
-              "target": "Desigur, poftiți.",
-              "native": "ඇත්තෙන්ම, මෙන්න.",
-              "phonetic": "ദെസിഗുർ, പൊഫ്തിശ്."
-            }
+            { "speaker": "A", "target": "Cât vă datorez?", "native": "මම ඔබට කොපමණ ණයද?", "phonetic": "කත් ව දතොරෙස්?" },
+            { "speaker": "B", "target": "Sunt 15 lei.", "native": "ලී 15 යි.", "phonetic": "සුන්ත් චින්ස්ප්‍රෙසෙචෙ ලෙයි." }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියාවේ බොහෝ ස්ථානවල, විශේෂයෙන්ම නගරවල, කාඩ්පත් මගින් ගෙවීම් බහුලව පිළිගනු ලැබේ. කෙසේ වෙතත්, කුඩා වෙළඳසැල්වල හෝ වෙළඳපොළවල්වල මුදල් පමණක් භාරගත හැකි බැවින්, සෑම විටම සුළු මුදලක් ළඟ තබා ගැනීම නුවණට හුරුය. ටිප් දීම සාමාන්‍ය දෙයක් වුවත්, සාප්පු වලදී එය අනිවාර්ය නොවේ.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ 'j' අකුර ඉංග්‍රීසි 'pleasure' හෝ 'measure' වචනවල 's' ශබ්දයට සමානයි. එය ප්‍රංශ 'j' ශබ්දයටත් සමානයි. උදාහරණයක් ලෙස 'jos' (ජොස් - පහළ) යන වචනයේ. එය කිසි විටෙකත් ඉංග්‍රීසි 'jump' හි 'j' ශබ්දය මෙන් උච්චාරණය නොකරයි.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D5-Payment" }
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_5_1", "sentence": "Am nevoie de un ___.", "answer": "taxi", "hint": "ටැක්සිය" }
+        ],
+        "matching": [
+          { "id": "m4_5_1", "target": "Adresă", "native": "ලිපිනය" },
+          { "id": "m4_5_2", "target": "Stânga", "native": "වම" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_5_1", "scrambled": ["aici", "Opriți", "rog", "vă"], "correct": "Opriți aici, vă rog.", "nativeHint": "කරුණාකර මෙතන නවත්වන්න." }
+        ]
+      },
+      "cultural_note": "රුමේනියාවේ, ටැක්සි මීටරය ක්‍රියාත්මක කර ඇති බවට වග බලා ගන්න. Uber සහ Bolt වැනි Ride-sharing යෙදුම් ද විශාල නගරවල ජනප්‍රියයි.",
+      "pronunciation_tip": "'Adresă' හි 'ă' අක්ෂරය ඉංග්‍රීසි 'sofa' හි 'a' ශබ්දයට සමානයි.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D5-Taxi" }
     },
     {
       "week": 4,
       "day": 6,
-      "title": "4 වන සතිය, 6 වන දිනය: වෙළඳපොළේදී",
+      "title": "4 වන සතිය, 6 වන දිනය: වෙළඳපොලේ",
       "title_native": "Săptămâna 4, Ziua 6: La piață",
       "theme": "At the Market",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_6_1",
-          "target": "Piață",
-          "phonetic": "පියාτസ",
-          "native_meaning": "වෙළඳපොළ",
-          "english": "Market",
-          "example_sentence_target": "Mergem la piață sâmbătă.",
-          "example_sentence_native": "අපි සෙනසුරාදා වෙළඳපොළට යනවා.",
-          "example_sentence_phonetic": "മെർജെം ലാ പിയാτസ സംബത."
-        },
-        {
-          "id": "w4_6_2",
-          "target": "Legume",
-          "phonetic": "ලෙගුමෙ",
-          "native_meaning": "එළවළු",
-          "english": "Vegetables",
-          "example_sentence_target": "Vreau să cumpăr legume proaspete.",
-          "example_sentence_native": "මට නැවුම් එළවළු මිලදී ගන්න අවශ්‍යයි.",
-          "example_sentence_phonetic": "വ്രিয়াਉ സ കുമ്പാർ ലെഗുമെ പ്രൊആസ്പെതെ."
-        },
-        {
-          "id": "w4_6_3",
-          "target": "Fructe",
-          "phonetic": "ෆෘක්තෙ",
-          "native_meaning": "පළතුරු",
-          "english": "Fruits",
-          "example_sentence_target": "Aceste fructe sunt delicioase.",
-          "example_sentence_native": "මේ පළතුරු රසවත්.",
-          "example_sentence_phonetic": "അചെസ്തെ ഫ്രുക്തെ സന്ത് ദെലിചിഒആസെ."
-        },
-        {
-          "id": "w4_6_4",
-          "target": "Brânză",
-          "phonetic": "බ්‍රන්സ",
-          "native_meaning": "චීස්",
-          "english": "Cheese",
-          "example_sentence_target": "Îmi place brânza de oaie.",
-          "example_sentence_native": "මම බැටළු චීස් වලට කැමතියි.",
-          "example_sentence_phonetic": "ഇം പ്ലാചെ ബ്രൻസ ദെ ഒആയെ."
-        },
-        {
-          "id": "w4_6_5",
-          "target": "Vânzător",
-          "phonetic": "වන්സతోර්",
-          "native_meaning": "විකුණුම්කරු",
-          "english": "Vendor/Seller",
-          "example_sentence_target": "Vânzătorul este foarte amabil.",
-          "example_sentence_native": "විකුණුම්කරු ඉතා කරුණාවන්තයි.",
-          "example_sentence_phonetic": "വന്സతోര് എസ്തേ ഫൊആര്തെ അമാബില്."
-        }
+        { "id": "w4_6_1", "target": "Piață", "phonetic": "පියාට්ස", "native_meaning": "වෙළඳපොළ", "english": "Market", "example_sentence_target": "Mergem la piață.", "example_sentence_native": "අපි වෙළඳපොළට යනවා.", "example_sentence_phonetic": "මෙර්ජෙම් ලා පියාට්ස." },
+        { "id": "w4_6_2", "target": "Legume", "phonetic": "ලෙගුමෙ", "native_meaning": "එළවළු", "english": "Vegetables", "example_sentence_target": "Vreau să cumpăr legume proaspete.", "example_sentence_native": "මට නැවුම් එළවළු මිලදී ගැනීමට අවශ්‍යයි.", "example_sentence_phonetic": "ව්රාවු ස කුම්පර් ලෙගුමෙ ප්රොඅස්පෙතේ." },
+        { "id": "w4_6_3", "target": "Fructe", "phonetic": "ෆෘක්තේ", "native_meaning": "පලතුරු", "english": "Fruits", "example_sentence_target": "Ce fructe aveți?", "example_sentence_native": "ඔබ ළඟ මොන පලතුරුද තියෙන්නේ?", "example_sentence_phonetic": "චෙ ෆෘක්තේ අවෙට්ස්?" },
+        { "id": "w4_6_4", "target": "Un kilogram", "phonetic": "උන් කිලෝග්‍රාම්", "native_meaning": "කිලෝග්‍රෑමයක්", "english": "One kilogram", "example_sentence_target": "Aș dori un kilogram de mere.", "example_sentence_native": "මට ඇපල් කිලෝ එකක් ඕන.", "example_sentence_phonetic": "අශ් දොරී උන් කිලෝග්‍රාම් දේ මෙරේ." },
+        { "id": "w4_6_5", "target": "Proaspăt", "phonetic": "ප්රොඅස්පත්", "native_meaning": "නැවුම්", "english": "Fresh", "example_sentence_target": "Este proaspăt?", "example_sentence_native": "මේක නැවුම්ද?", "example_sentence_phonetic": "එස්තේ ප්රොඅස්පත්?" }
       ],
       "sentences": [
-        {
-          "id": "s4_6_1",
-          "target": "Aș dori un kilogram de mere.",
-          "native": "මට ඇපල් කිලෝ එකක් ඕන.",
-          "phonetic": "അശ് ദൊരി ഉൻ കിലോഗ്രാം ദെ മെരെ."
-        },
-        {
-          "id": "s4_6_2",
-          "target": "Sunt proaspete aceste roșii?",
-          "native": "මේ තක්කාලි නැවුම්ද?",
-          "phonetic": "സന്ത് പ്രൊആസ്പെതെ അചെസ്തെ രോഷി?"
-        },
-        {
-          "id": "s4_6_3",
-          "target": "Cât costă legătura de pătrunjel?",
-          "native": "පාස්ලි මිටියක් කීයද?",
-          "phonetic": "കത് കോസ്താ ലെഗതുരാ ദെ പത്രുന്ജേൽ?"
-        },
-        {
-          "id": "s4_6_4",
-          "target": "Pot să gust o bucată de brânză?",
-          "native": "මට චීස් කෑල්ලක් කාල බලන්න පුළුවන්ද?",
-          "phonetic": "പൊത് സ ഗുസ്ത് ഓ ബുകാത ദെ ബ്രൻസ?"
-        }
+        { "id": "s4_6_1", "target": "Cât costă un kilogram de roșii?", "native": "තක්කාලි කිලෝ එකක් කීයද?", "phonetic": "කත් කොස්ත උන් කිලෝග්‍රාම් දේ රොෂි?" },
+        { "id": "s4_6_2", "target": "Vreau jumătate de kilogram de struguri.", "native": "මට මිදි කිලෝ භාගයක් ඕන.", "phonetic": "ව්රාවු ජුමතාතේ දේ කිලෝග්‍රාම් දේ ස්ත්රුගුරි." },
+        { "id": "s4_6_3", "target": "Sunt gustoase aceste piersici?", "native": "මේ පීච් රසවත්ද?", "phonetic": "සුන්ත් ගුස්තොඅසේ අචෙස්තේ පියෙර්සිච්?" }
       ],
       "dialogues": [
         {
           "id": "d4_6_1",
-          "context": "එළවළු මිලදී ගැනීම.",
+          "context": "වෙළඳපොලේ පලතුරු මිලදී ගැනීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua. Cât costă cartofii?",
-              "native": "සුභ දවසක්. අර්තාපල් කීයද?",
-              "phonetic": "ബുന സിഉവാ. കത് കോസ്താ കാർതൊഫി?"
-            },
-            {
-              "speaker": "B",
-              "target": "5 lei kilogramul.",
-              "native": "කිලෝ එක ලී 5 යි.",
-              "phonetic": "ചീൻച് ലെയ് കിലോഗ്രാമുൽ."
-            }
+            { "speaker": "A", "target": "Bună ziua. Cât costă cireșele?", "native": "සුබ දවසක්. චෙරි මිල කීයද?", "phonetic": "බුන සියුවා. කත් කොස්ත චිරෙශෙලෙ?" },
+            { "speaker": "B", "target": "15 lei kilogramul. Sunt foarte dulci.", "native": "කිලෝ එක ලී 15 යි. ඒවා හරිම පැණිරසයි.", "phonetic": "චින්ස්ප්‍රෙසෙචෙ ලෙයි කිලෝග්‍රාමුල්. සුන්ත් ෆොආර්තේ දුල්චි." }
           ]
         },
         {
           "id": "d4_6_2",
-          "context": "නැවුම් බව ගැන විමසීම.",
+          "context": "එළවළු ගැන විමසීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Căpșunile sunt proaspete?",
-              "native": "ස්ට්‍රෝබෙරි නැවුම්ද?",
-              "phonetic": "കപ്ഷുനിലെ സന്ത് പ്രൊആസ്പെതെ?"
-            },
-            {
-              "speaker": "B",
-              "target": "Da, sunt de azi dimineață.",
-              "native": "ඔව්, අද උදේ ගෙනාවේ.",
-              "phonetic": "ദാ, സന്ത് ദെ അസ് ദിമിനെയാസ."
-            }
-          ]
-        },
-        {
-          "id": "d4_6_3",
-          "context": "නිශ්චිත ප්‍රමාණයක් ඉල්ලීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Vreau jumătate de kilogram de cireșe.",
-              "native": "මට චෙරි කිලෝ භාගයක් ඕන.",
-              "phonetic": "വ്രিয়াਉ ജുമാതാതെ ദെ കിലോഗ്രാം ദെ ചിരേഷെ."
-            },
-            {
-              "speaker": "B",
-              "target": "Imediat.",
-              "native": "දැන්ම දෙන්නම්.",
-              "phonetic": "ഇമെദിയാത്."
-            }
-          ]
-        },
-        {
-          "id": "d4_6_4",
-          "context": "රස බැලීමට ඉල්ලීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Pot să gust o măslină?",
-              "native": "මට ඔලිව් ගෙඩියක් කාල බලන්න පුළුවන්ද?",
-              "phonetic": "പൊത് സ ഗുസ്ത് ഓ മസ്ലിന?"
-            },
-            {
-              "speaker": "B",
-              "target": "Sigur, serviți-vă.",
-              "native": "ඇත්තෙන්ම, ගන්න.",
-              "phonetic": "സിഗുർ, സെർവിശി-വ."
-            }
+            { "speaker": "A", "target": "Aveți ardei iuți?", "native": "ඔබ ළඟ මිරිස් කරල් තියෙනවද?", "phonetic": "අවෙට්ස් අර්දෙයි යුට්ස්?" },
+            { "speaker": "B", "target": "Da, desigur. Cât doriți?", "native": "ඔව්, ඇත්තෙන්ම. කොච්චරක් ඕනද?", "phonetic": "දා, දේසිගුර්. කත් දොරිත්ස්?" }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියාවේ ගොවි වෙළඳපොළ (piață) යනු නැවුම්, දේශීය නිෂ්පාදන මිලදී ගැනීමට හොඳම ස්ථානයකි. බොහෝ විකුණුම්කරුවන් තමන්ගේම ගෙවතුවල නිෂ්පාදන විකුණන අතර, ඔවුන්ගේ නිෂ්පාදන ගැන ආඩම්බර වෙති. මෙහිදී මිල ගණන් කේවල් කිරීම සුලබ වන අතර, එය ගනුදෙනුවේ කොටසක් ලෙස සැලකේ.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ 'ă' (a cu breve) අකුර ඉංග්‍රීසි 'about' වචනයේ 'a' ශබ්දයට හෝ 'sofa' වචනයේ 'a' ශබ්දයට සමානයි. එය කෙටි, උදාසීන ස්වරයකි. උදාහරණයක් ලෙස, 'piață' (පියාτസ) සහ 'pâine' (පීනෙ) යන වචනවල මෙම ශබ්දය අඩංගු වේ.",
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_6_1", "sentence": "Mergem la ___.", "answer": "piață", "hint": "වෙළඳපොළ" }
+        ],
+        "matching": [
+          { "id": "m4_6_1", "target": "Legume", "native": "එළවළු" },
+          { "id": "m4_6_2", "target": "Fructe", "native": "පලතුරු" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_6_1", "scrambled": ["de", "kilogram", "un", "dori", "Aș", "mere"], "correct": "Aș dori un kilogram de mere.", "nativeHint": "මට ඇපල් කිලෝ එකක් ඕන." }
+        ]
+      },
+      "cultural_note": "රුමේනියානු ගොවි වෙළඳපොළවල් (piețe) නැවුම්, දේශීය නිෂ්පාදන මිලදී ගැනීමට හොඳම ස්ථාන වේ. විකුණුම්කරුවන් සමඟ සුහදව කතා කිරීම අගය කරනු ලැබේ.",
+      "pronunciation_tip": "'Piață' හි 'ia' යනු 'ya' ශබ්දයට සමානයි. එය එක් ශබ්දයක් ලෙස උච්චාරණය කෙරේ.",
       "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D6-Market" }
     },
     {
       "week": 4,
       "day": 7,
-      "title": "4 වන සතිය, 7 වන දිනය: සිහිවටන සහ තෑගි",
-      "title_native": "Săptămâna 4, Ziua 7: Suveniruri și cadouri",
-      "theme": "Souvenirs and Gifts",
+      "title": "4 වන සතිය, 7 වන දිනය: සතියේ සමාලෝචනය",
+      "title_native": "Săptămâna 4, Ziua 7: Revizuirea săptămânii",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Romanian",
       "nativeLanguage": "Sinhala",
       "words": [
-        {
-          "id": "w4_7_1",
-          "target": "Suvenir",
-          "phonetic": "സുവെനിർ",
-          "native_meaning": "සිහිවටනය",
-          "english": "Souvenir",
-          "example_sentence_target": "Caut un suvenir din România.",
-          "example_sentence_native": "මම රුමේනියාවෙන් සිහිවටනයක් හොයනවා.",
-          "example_sentence_phonetic": "കവുത് ഉൻ സുവെനിർ ദിൻ റൊമാനിയ."
-        },
-        {
-          "id": "w4_7_2",
-          "target": "Cadou",
-          "phonetic": "കാദോউ",
-          "native_meaning": "තෑග්ග",
-          "english": "Gift",
-          "example_sentence_target": "Acesta este un cadou pentru tine.",
-          "example_sentence_native": "මේක ඔයාට තෑග්ගක්.",
-          "example_sentence_phonetic": "അചെസ്ത എസ്തേ ഉൻ കാദോউ പെൻട്രു തിനെ."
-        },
-        {
-          "id": "w4_7_3",
-          "target": "Tradițional",
-          "phonetic": "ത്രാദിസിയോണാൽ",
-          "native_meaning": "සාම්ප්‍රදායික",
-          "english": "Traditional",
-          "example_sentence_target": "Vreau ceva tradițional românesc.",
-          "example_sentence_native": "මට සාම්ප්‍රදායික රුමේනියානු දෙයක් අවශ්‍යයි.",
-          "example_sentence_phonetic": "വ്രিয়াਉ ചെവാ ത്രാദിസിയോണാൽ രൊമനെസ്ക്."
-        },
-        {
-          "id": "w4_7_4",
-          "target": "Local",
-          "phonetic": "ලොකාල්",
-          "native_meaning": "දේශීය",
-          "english": "Local",
-          "example_sentence_target": "Acesta este un produs local.",
-          "example_sentence_native": "මේක දේශීය නිෂ්පාදනයක්.",
-          "example_sentence_phonetic": "അചെസ്ത എസ്തേ ഉൻ പ്രൊദുസ് ലൊകാൽ."
-        },
-        {
-          "id": "w4_7_5",
-          "target": "Ambalaj",
-          "phonetic": "අම්බලාජ්",
-          "native_meaning": "ඇසුරුම/දවටනය",
-          "english": "Packaging/Wrapping",
-          "example_sentence_target": "Puteți să-l ambalați pentru cadou?",
-          "example_sentence_native": "ඔබට මේක තෑග්ගක් විදියට ඔතන්න පුළුවන්ද?",
-          "example_sentence_phonetic": "പുതെശ് സ-ൽ അംബലാശ് പെൻട്രു കാദോউ?"
-        }
+        { "id": "w4_7_1", "target": "A cumpăra", "phonetic": "අ කුම්පර", "native_meaning": "මිලදී ගැනීමට", "english": "To buy", "example_sentence_target": "Vreau să cumpăr ceva.", "example_sentence_native": "මට යමක් මිලදී ගැනීමට අවශ්‍යයි.", "example_sentence_phonetic": "ව්රාවු ස කුම්පර් චෙවා." },
+        { "id": "w4_7_2", "target": "A plăti", "phonetic": "අ ප්ලති", "native_meaning": "ගෙවීමට", "english": "To pay", "example_sentence_target": "Unde pot să plătesc?", "example_sentence_native": "මට කොහේද ගෙවන්න පුළුවන්?", "example_sentence_phonetic": "උන්දෙ පොත් ස ප්ලති?" },
+        { "id": "w4_7_3", "target": "A merge", "phonetic": "අ මෙර්ජෙ", "native_meaning": "යාමට", "english": "To go", "example_sentence_target": "Mergem la gară.", "example_sentence_native": "අපි දුම්රිය ස්ථානයට යනවා.", "example_sentence_phonetic": "මෙර්ජෙම් ලා ගාර." },
+        { "id": "w4_7_4", "target": "A întreba", "phonetic": "අ ඉන්ත්රෙබා", "native_meaning": "ඇසීමට", "english": "To ask", "example_sentence_target": "Vreau să întreb ceva.", "example_sentence_native": "මට යමක් ඇසීමට අවශ්‍යයි.", "example_sentence_phonetic": "ව්රාවු ස ඉන්ත්රෙබ් චෙවා." },
+        { "id": "w4_7_5", "target": "A costa", "phonetic": "අ කොස්ත", "native_meaning": "මිල වීමට", "english": "To cost", "example_sentence_target": "Cât costă biletul?", "example_sentence_native": "ටිකට් පතේ මිල කීයද?", "example_sentence_phonetic": "කත් කොස්ත බිලෙතුල්?" }
       ],
       "sentences": [
-        {
-          "id": "s4_7_1",
-          "target": "Unde pot găsi suveniruri?",
-          "native": "මට සිහිවටන හොයාගන්න පුළුවන් කොහෙන්ද?",
-          "phonetic": "ഉන්දെ പൊത് ഗസി സുവെനിരുരി?"
-        },
-        {
-          "id": "s4_7_2",
-          "target": "Acesta este lucrat manual.",
-          "native": "මේක අතින් හදපුවා.",
-          "phonetic": "അചെസ്ത എസ്തേ ലുക്രത് മാനുആൽ."
-        },
-        {
-          "id": "s4_7_3",
-          "target": "Aș dori să-l împachetați.",
-          "native": "මට මේක ඔතලා දෙන්න.",
-          "phonetic": "അശ് ദൊരി സ-ൽ ഇംപാകെതാശ്."
-        },
-        {
-          "id": "s4_7_4",
-          "target": "Cât costă acest magnet de frigider?",
-          "native": "මේ ෆ්‍රිජ් මැග්නට් එක කීයද?",
-          "phonetic": "കത് കോസ്താ അചെസ്ത് മാഗ്നെത് ദെ ഫ്രിജിദെർ?"
-        }
+        { "id": "s4_7_1", "target": "Cât costă un bilet de autobuz?", "native": "බස් ටිකට් එකක් කීයද?", "phonetic": "කත් කොස්ත උන් බිලෙත් දේ අවුතොබුස්?" },
+        { "id": "s4_7_2", "target": "Vreau să cumpăr aceste fructe.", "native": "මට මේ පලතුරු මිලදී ගන්න ඕන.", "phonetic": "ව්රාවු ස කුම්පර් අචෙස්තේ ෆෘක්තේ." },
+        { "id": "s4_7_3", "target": "Puteți să mă duceți la aeroport?", "native": "ඔබට මාව ගුවන් තොටුපළට ගෙනියන්න පුලුවන්ද?", "phonetic": "පුතෙට්ස් ස ම දුචෙට්ස් ලා අඑරොපොර්ත්?" }
       ],
       "dialogues": [
         {
           "id": "d4_7_1",
-          "context": "සිහිවටන සාප්පුවකදී.",
+          "context": "සාප්පු සවාරි සහ ප්‍රවාහනය පිළිබඳ සාමාන්‍ය සංවාදයක්.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Bună ziua, ce suveniruri tradiționale aveți?",
-              "native": "සුභ දවසක්, ඔබ ළඟ මොනවද සාම්ප්‍රදායික සිහිවටන තියෙන්නේ?",
-              "phonetic": "ബുന സിഉവാ, ചെ സുവെനിരുരി ത്രാദിസിയൊണാലെ അവെശ്?"
-            },
-            {
-              "speaker": "B",
-              "target": "Avem ceramică pictată manual și ii, bluzele tradiționale.",
-              "native": "අප ළඟ අතින් පින්තාරු කරපු සෙරමික් බඩු සහ සාම්ප්‍රදායික බ්ලවුස් වන 'ii' තියෙනවා.",
-              "phonetic": "അവെം ചെരാമിക പിക്താത മാനുആൽ ഷി ഈ, ബ്ലുസെലെ ത്രാദിസിയൊണാലെ."
-            }
+            { "speaker": "A", "target": "Bună, știi cum ajung la piață?", "native": "හායි, වෙළඳපොළට යන්නේ කොහොමද කියලා දන්නවද?", "phonetic": "බුන, ශ්ති කුම් අජුන්ග් ලා පියාට්ස?" },
+            { "speaker": "B", "target": "Poți lua autobuzul 381. Stația este aproape.", "native": "ඔබට 381 බස් එක ගන්න පුළුවන්. නැවතුම ළඟ තියෙන්නේ.", "phonetic": "පොට්ස් ලුවා අවුතොබුසුල් තෙයි සුතේ ඔප්සෙචුනු. ස්තාට්සියා එස්තේ අප්රොඅපේ." }
           ]
         },
         {
           "id": "d4_7_2",
-          "context": "තෑග්ගක් ඔතන ලෙස ඉල්ලීම.",
+          "context": "ගෙවීමක් කිරීම.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Voi lua aceasta. Puteți să o ambalați, vă rog?",
-              "native": "මම මේක ගන්නවා. කරුණාකර මේක ඔතලා දෙන්න පුළුවන්ද?",
-              "phonetic": "വോയ് ലുവാ അചാസ്ത. പുതെശ് സ ഓ അംബലാശ്, വാ രൊഗ്?"
-            },
-            {
-              "speaker": "B",
-              "target": "Desigur. Este pentru un cadou?",
-              "native": "ඇත්තෙන්ම. තෑග්ගකටද?",
-              "phonetic": "ദെസിഗുർ. എസ്തേ പെൻട്രു ഉൻ കാദോউ?"
-            }
-          ]
-        },
-        {
-          "id": "d4_7_3",
-          "context": "නිෂ්පාදනයක මූලාරම්භය ගැන විමසීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Este acest produs fabricat în România?",
-              "native": "මේ නිෂ්පාදනය රුමේනියාවේ හදපුවාද?",
-              "phonetic": "എസ്തേ അചെസ്ത് പ്രൊദുസ് ഫബ്രിചത് ഇൻ റൊമാനിയ?"
-            },
-            {
-              "speaker": "B",
-              "target": "Da, este un produs local, artizanal.",
-              "native": "ඔව්, ඒක දේශීය, අත්කම් භාණ්ඩයක්.",
-              "phonetic": "ദാ, എസ്തേ ഉൻ പ്രൊദുസ് ലൊകാൽ, ആര്തിസനാൽ."
-            }
-          ]
-        },
-        {
-          "id": "d4_7_4",
-          "context": "මිල ගැන සෑහීමකට පත්වීම.",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Perfect. Voi lua două.",
-              "native": "නියමයි. මම දෙකක් ගන්නවා.",
-              "phonetic": "പെർഫെക്ത്. വോയ് ലുവാ ദൊവഅ."
-            },
-            {
-              "speaker": "B",
-              "target": "Mulțumesc! O zi excelentă!",
-              "native": "ස්තූතියි! ඔබට සුභම සුභ දවසක්!",
-              "phonetic": "മുൽശുമെസ്ക്! ഓ സി എക്സ്ചെലെന്ത!"
-            }
+            { "speaker": "A", "target": "Perfect. Și cât costă un bilet?", "native": "නියමයි. ටිකට් එකක් කීයද?", "phonetic": "පෙර්ෆෙක්ත්. ශි කත් කොස්ත උන් බිලෙත්?" },
+            { "speaker": "B", "target": "Un bilet este 3 lei, dar un abonament pe o zi este 8 lei.", "native": "එක ටිකට් එකක් ලී 3 යි, නමුත් දවසක පාස් එකක් ලී 8 යි.", "phonetic": "උන් බිලෙත් එස්තේ තෙයි ලෙයි, දාර් උන් අබොනමෙන්ත් පෙ ඔ සි එස්තේ ඔප්ත් ලෙයි." }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [], "matching": [], "multipleChoice": [], "sentenceScramble": [] },
-      "cultural_note": "රුමේනියාවේ ජනප්‍රිය සිහිවටන අතරට 'ii' (සාම්ප්‍රදායික එම්බ්‍රොයිඩර් බ්ලවුස්), හොරෙසු (Horezu) වලින් පින්තාරු කරන ලද සෙරමික්, සහ ලී කැටයම් ඇතුළත් වේ. තෑගි දීම රුමේනියානු සංස්කෘතියේ වැදගත් අංගයක් වන අතර, විශේෂයෙන්ම කෙනෙකුගේ නිවසකට ආරාධනා කළ විට කුඩා තෑග්ගක් (මල්, චොකලට්) රැගෙන යාම සිරිතකි.",
-      "pronunciation_tip": "රුමේනියානු භාෂාවේ ද්විත්ව ස්වර (diphthongs) බහුලව දක්නට ලැබේ. උදාහරණයක් ලෙස 'oa' in 'noapte' (නොඅප්තේ - රාත්‍රිය) යනු එක ශබ්දයක් ලෙස උච්චාරණය කරන ස්වර දෙකකි. 'ea' in 'cafea' (කෆෙයා - කෝපි) ද එසේමය. මෙම ශබ්ද දෙක එකට, වේගයෙන් පැවසීමට පුරුදු වන්න.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W4D7-Gifts" }
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb4_7_1", "sentence": "Vreau să ___ un taxi.", "answer": "iau", "hint": "ගන්න (වාහනයක්)" },
+          { "id": "fb4_7_2", "sentence": "Cât ___ un kilogram de banane?", "answer": "costă", "hint": "මිල" }
+        ],
+        "matching": [
+          { "id": "m4_7_1", "target": "A cumpăra", "native": "මිලදී ගැනීමට" },
+          { "id": "m4_7_2", "target": "A plăti", "native": "ගෙවීමට" },
+          { "id": "m4_7_3", "target": "A merge", "native": "යාමට" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss4_7_1", "scrambled": ["aceste", "cumpăr", "să", "fructe", "Vreau"], "correct": "Vreau să cumpăr aceste fructe.", "nativeHint": "මට මේ පලතුරු මිලදී ගන්න ඕන." }
+        ]
+      },
+      "cultural_note": "සතිය පුරා ඔබ ඉගෙන ගත් දේ පුහුණු වීමට උත්සාහ කරන්න. දේශීය වෙළඳපොළකට ගොස් කුඩා දෙයක් මිලදී ගන්න, නැතහොත් බස් රථයක කෙටි ගමනක් යන්න!",
+      "pronunciation_tip": "රුමේනියානු භාෂාවේ ක්‍රියාපද පුහුණු වන්න. 'a cumpăra' (මිලදී ගැනීමට), 'a plăti' (ගෙවීමට) වැනි ක්‍රියාපද එදිනෙදා ජීවිතයේදී ඉතා වැදගත් වේ.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W4-Review" }
     }
   ]
 }
