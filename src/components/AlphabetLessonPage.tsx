@@ -33,7 +33,6 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
 
   const { user } = useUser();
   const firestore = useFirestore();
@@ -68,7 +67,6 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
   const handleCompleteDay = () => {
     if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile || isDayCompleted) return;
 
-    setShowConfetti(true);
     setIsComplete(true);
 
     const xpToAdd = (dayData.progress?.xp || 0);
@@ -173,7 +171,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
 
           <section className="text-center py-6 flex flex-col items-center">
               <div className="relative">
-                  <div className="absolute -inset-20"><Confetti active={showConfetti || isDayCompleted} config={confettiConfig} /></div>
+                  <div className="absolute -inset-20"><Confetti active={isComplete} config={confettiConfig} /></div>
                   {isComplete ? (
                       <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
                           <CheckCircle className="h-4 w-4" />

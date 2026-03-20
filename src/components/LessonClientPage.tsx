@@ -38,7 +38,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [exercisesCorrect, setExercisesCorrect] = useState(0);
-    const [showConfetti, setShowConfetti] = useState(false);
+    const [isComplete, setIsComplete] = useState(false);
 
     const { user } = useUser();
     const firestore = useFirestore();
@@ -68,7 +68,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
           setNativeLanguage(savedNativeLang);
         }
         setIsMounted(true);
-    }, []);
+        setIsComplete(isDayCompleted);
+    }, [isDayCompleted]);
 
     const handleExercisesComplete = useCallback((isCorrect: boolean) => {
         if (isCorrect) {
@@ -113,12 +114,9 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     }
     
     const handleCompleteDay = () => {
-        if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile) return;
+        if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile || isDayCompleted) return;
 
-        setShowConfetti(true);
-
-        // Don't award points if day is already completed
-        if (isDayCompleted) return;
+        setIsComplete(true);
 
         // 1. Update week progress
         const currentCompletedDays = weekProgressData?.daysCompleted || [];
@@ -255,8 +253,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                     
                     <section className="text-center py-6 flex flex-col items-center">
                         <div className="relative">
-                            <div className="absolute -inset-20"><Confetti active={showConfetti || isDayCompleted} config={confettiConfig} /></div>
-                            {isDayCompleted ? (
+                            <div className="absolute -inset-20"><Confetti active={isComplete} config={confettiConfig} /></div>
+                            {isComplete ? (
                                  <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
                                     <CheckCircle className="h-4 w-4" />
                                     <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
@@ -271,7 +269,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                     <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
                                  </Button>
                             )}
-                            {!isDayCompleted && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
+                            {!isComplete && !canCompleteDay && <p className="text-xs text-muted-foreground mt-2">{t.complete50Percent}</p>}
                         </div>
                     </section>
                 </main>
