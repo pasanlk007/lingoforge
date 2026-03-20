@@ -3,10 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { useAuth, useFirestore } from '@/firebase/provider';
-import { setDocumentNonBlocking } from '@/firebase/non-blocking-updates';
-import { doc, getDoc } from 'firebase/firestore';
-import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { useAuth, useFirestore, initiateGoogleSignIn } from '@/firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -14,7 +12,6 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Languages } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import type { UserProfile } from '@/lib/types';
 
 export function LoginFormContent() {
   const [email, setEmail] = useState('');
@@ -79,39 +76,8 @@ export function LoginFormContent() {
         return;
     }
     
-    const provider = new GoogleAuthProvider();
     try {
-        const result = await signInWithPopup(auth, provider);
-        const user = result.user;
-
-        // Check if a user profile already exists in Firestore.
-        const userDocRef = doc(firestore, 'userProfiles', user.uid);
-        const userDocSnap = await getDoc(userDocRef);
-
-        if (!userDocSnap.exists()) {
-            // If the user is new, create their profile with default values.
-            const now = new Date();
-            const newUserProfile: UserProfile = {
-                id: user.uid,
-                displayName: user.displayName || 'New User',
-                email: user.email!,
-                photoURL: user.photoURL || undefined,
-                nativeLanguage: 'English',
-                selectedLanguage: 'French',
-                subscriptionActive: false,
-                subscriptionSource: 'none',
-                subscriptionExpiry: null,
-                xpPoints: 0,
-                currentStreak: 0,
-                lastActiveDate: now.toISOString().split('T')[0],
-                aiPlanningEnabled: false,
-                activePath: 'survival',
-                lastLessonWeek: 1,
-                lastLessonDay: 0, // Start before Day 1
-            };
-            // Use a non-blocking write to create the profile.
-            setDocumentNonBlocking(userDocRef, newUserProfile, { merge: true });
-        }
+        await initiateGoogleSignIn(auth, firestore);
 
         toast({ title: "Login Successful", description: "Welcome back!" });
         const redirectUrl = searchParams?.get('redirect');

@@ -2,11 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useAuth, useFirestore } from '@/firebase/provider';
+import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp } from '@/firebase';
 import { setDocumentNonBlocking } from '@/firebase/non-blocking-updates';
-import { doc, getDoc } from 'firebase/firestore';
-import { createUserWithEmailAndPassword, updateProfile, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { doc } from 'firebase/firestore';
+import { updateProfile } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -27,7 +26,6 @@ export default function SignupPage() {
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setGoogleLoading] = useState(false);
-  const router = useRouter();
   const auth = useAuth();
   const firestore = useFirestore();
   const { toast } = useToast();
@@ -40,39 +38,12 @@ export default function SignupPage() {
         return;
     }
     
-    const provider = new GoogleAuthProvider();
     try {
-        const result = await signInWithPopup(auth, provider);
-        const user = result.user;
-
-        const userDocRef = doc(firestore, 'userProfiles', user.uid);
-        const userDocSnap = await getDoc(userDocRef);
-
-        if (!userDocSnap.exists()) {
-            const now = new Date();
-            const newUserProfile: UserProfile = {
-                id: user.uid,
-                displayName: user.displayName || 'New User',
-                email: user.email!,
-                photoURL: user.photoURL || undefined,
-                nativeLanguage: 'English',
-                selectedLanguage: 'French',
-                subscriptionActive: false,
-                subscriptionSource: 'none',
-                subscriptionExpiry: null,
-                xpPoints: 0,
-                currentStreak: 0,
-                lastActiveDate: now.toISOString().split('T')[0],
-                aiPlanningEnabled: false,
-                activePath: 'survival',
-                lastLessonWeek: 1,
-                lastLessonDay: 0,
-            };
-            setDocumentNonBlocking(userDocRef, newUserProfile, { merge: true });
-        }
+        await initiateGoogleSignIn(auth, firestore);
 
         toast({ title: "Sign-In Successful", description: "Welcome to LingoForge!" });
-        router.push('/dashboard');
+        // Force a full page reload to ensure auth state is propagated correctly.
+        window.location.href = '/dashboard';
 
     } catch (error: any) {
         if (error.code !== 'auth/popup-closed-by-user') {
@@ -97,7 +68,7 @@ export default function SignupPage() {
     }
 
     try {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const userCredential = await initiateEmailSignUp(auth, email, password);
       const user = userCredential.user;
 
       await updateProfile(user, { displayName });
@@ -127,7 +98,8 @@ export default function SignupPage() {
         description: "You're all set. Welcome to LingoForge!",
       });
 
-      router.push('/dashboard');
+      // Also use full reload here for consistency.
+      window.location.href = '/dashboard';
 
     } catch (error: any) {
       console.error("Signup failed:", error);
