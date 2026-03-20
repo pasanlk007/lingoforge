@@ -28,12 +28,16 @@ import { cn } from "@/lib/utils";
 import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ReminderCard } from "@/components/ReminderCard";
-import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from "@/firebase";
-import { doc } from "firebase/firestore";
+import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking, useCollection } from "@/firebase";
+import { doc, collection } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { UserProfile, UserWeekProgress } from "@/lib/types";
 import type { User } from 'firebase/auth';
+import { useAppConfig } from "@/hooks/useAppConfig";
+import { useFreeTrial } from "@/hooks/useFreeTrial";
+import { canAccessWeek } from "@/lib/accessControl";
+
 
 function DashboardLoading() {
   return (
@@ -78,6 +82,9 @@ function DashboardContent({ user }: { user: User }) {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+
+  const { config, isLoading: isConfigLoading } = useAppConfig();
+  const { trialDaysUsed, isTrialLoading } = useFreeTrial();
 
   const [nativeLanguage, setNativeLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
@@ -128,16 +135,23 @@ function DashboardContent({ user }: { user: User }) {
     }
   };
 
+  const activePathForQuery = userProfile?.activePath || 'survival';
   const lastActiveWeek = userProfile?.lastLessonWeek || 1;
-  const lastActivePath = userProfile?.activePath || 'survival';
 
   const weekProgressRef = useMemoFirebase(() => {
-    if (!user || !firestore || !lastActivePath || !lastActiveWeek) return null;
-    return doc(firestore, 'userProgress', user.uid, lastActivePath, `week_${lastActiveWeek}`);
-  }, [user, firestore, lastActivePath, lastActiveWeek]);
+    if (!user || !firestore || !activePathForQuery || !lastActiveWeek) return null;
+    return doc(firestore, 'userProgress', user.uid, activePathForQuery, `week_${lastActiveWeek}`);
+  }, [user, firestore, activePathForQuery, lastActiveWeek]);
 
   const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
   
+  const allProgressForActivePathRef = useMemoFirebase(() => {
+    if (!user || !firestore || !activePathForQuery) return null;
+    return collection(firestore, 'userProgress', user.uid, activePathForQuery);
+  }, [user, firestore, activePathForQuery]);
+
+  const { data: allProgressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(allProgressForActivePathRef);
+
   const availableTargetLanguages = useMemo(() => {
     if (nativeLanguage === 'English') {
         return targetLanguages.filter(l => l.lang !== 'English');
@@ -146,7 +160,7 @@ function DashboardContent({ user }: { user: User }) {
   }, [nativeLanguage]);
 
 
-  if (!isMounted || isProfileLoading || !userProfile) {
+  if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading || isProgressLoading) {
       return <DashboardLoading />;
   }
   
@@ -171,6 +185,7 @@ function DashboardContent({ user }: { user: User }) {
 
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
+  const t_ui = translations[validNativeLanguage as keyof typeof translations].ui;
   
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
@@ -180,6 +195,12 @@ function DashboardContent({ user }: { user: User }) {
     ? PATHS.filter(p => p.id !== 'alphabet')
     : PATHS;
 
+  const hasAccessToNextWeek = canAccessWeek(nextWeek, {
+    profile: userProfile,
+    progress: allProgressData,
+    trialDaysUsed: trialDaysUsed,
+    userEmail: user.email,
+  }, config);
 
   return (
     <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -262,11 +283,19 @@ function DashboardContent({ user }: { user: User }) {
                     </div>
                 </CardContent>
                 <CardFooter>
-                  <Button asChild className="w-full sm:w-auto">
-                    <Link href={nextLessonUrl}>
-                      {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  {hasAccessToNextWeek ? (
+                    <Button asChild className="w-full sm:w-auto">
+                      <Link href={nextLessonUrl}>
+                        {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Button asChild className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+                      <Link href="/pricing">
+                        {t_ui.upgradeToUnlock} <ChevronRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
 

@@ -173,7 +173,7 @@ export const translations = {
       day: "Day",
       upgradePlan: "Upgrade Plan",
       lessonsLocked: "This week's lessons are locked.",
-      upgradeToUnlock: "Upgrade your plan to unlock this week and more.",
+      upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
       errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
@@ -387,7 +387,7 @@ export const translations = {
       day: "දිනය",
       upgradePlan: "සැලැස්ම වැඩි දියුණු කරන්න",
       lessonsLocked: "මෙම සතියේ පාඩම් අගුළු දමා ඇත.",
-      upgradeToUnlock: "මෙම සතිය සහ තවත් දේ අගුළු ඇරීමට ඔබේ සැලැස්ම වැඩි දියුණු කරන්න.",
+      upgradeToUnlock: "අගුළු ඇරීමට උත්ශ්‍රේණි කරන්න",
       // lesson page errors
       errorTitle: "පාඩම පූරණය කළ නොහැක",
       errorWeekNotFound: "{path} මාර්ගයේ {week} වන සතිය සඳහා පාඩම් අන්තර්ගතය නොමැත. කරුණාකර 'public{lessonPath}' හි ගොනුව සාදන්න.",
@@ -601,7 +601,7 @@ export const translations = {
       day: "दिन",
       upgradePlan: "योजना अपग्रेड करें",
       lessonsLocked: "इस सप्ताह के पाठ बंद हैं।",
-      upgradeToUnlock: "इस सप्ताह और अधिक अनलॉक करने के लिए अपनी योजना अपग्रेड करें।",
+      upgradeToUnlock: "अनलॉक करने के लिए अपग्रेड करें",
       // lesson page errors
       errorTitle: "पाठ लोड नहीं हो सका",
       errorWeekNotFound: "{path} पथ के सप्ताह {week} के लिए पाठ सामग्री मौजूद नहीं है। कृपया 'public{lessonPath}' पर फ़ाइल बनाएँ।",
@@ -815,7 +815,7 @@ export const translations = {
       day: "دن",
       upgradePlan: "منصوبہ اپ گریڈ کریں",
       lessonsLocked: "اس ہفتے کے اسباق مقفل ہیں۔",
-      upgradeToUnlock: "اس ہفتے اور مزید کو غیر مقفل کرنے کے لئے اپنے منصوبے کو اپ گریڈ کریں۔",
+      upgradeToUnlock: "انلاک کرنے کے لیے اپ گریڈ کریں۔",
       // lesson page errors
       errorTitle: "سبق لوڈ نہیں ہو سکا",
       errorWeekNotFound: "{path} راستے کے ہفتہ {week} کے لئے سبق کا مواد موجود نہیں ہے۔ براہ کرم 'public{lessonPath}' پر فائل بنائیں۔",
@@ -1029,7 +1029,7 @@ export const translations = {
       day: "দিন",
       upgradePlan: "পরিকল্পনা আপগ্রেড করুন",
       lessonsLocked: "এই সপ্তাহের পাঠগুলি লক করা আছে।",
-      upgradeToUnlock: "এই সপ্তাহ এবং আরও অনেক কিছু আনলক করতে আপনার পরিকল্পনা আপগ্রেড করুন।",
+      upgradeToUnlock: "আনলক করতে আপগ্রেড করুন",
       // lesson page errors
       errorTitle: "পাঠ লোড করা যায়নি",
       errorWeekNotFound: "{path} পথের সপ্তাহ {week} এর জন্য পাঠের বিষয়বস্তু বিদ্যমান নেই। অনুগ্রহ করে 'public{lessonPath}' এ ফাইলটি তৈরি করুন।",
@@ -1243,7 +1243,7 @@ export const translations = {
       day: "दिन",
       upgradePlan: "योजना अपग्रेड गर्नुहोस्",
       lessonsLocked: "यस हप्ताका पाठहरू लक गरिएका छन्।",
-      upgradeToUnlock: "यो हप्ता र थप अनलक गर्न आफ्नो योजना अपग्रेड गर्नुहोस्।",
+      upgradeToUnlock: "अनलक गर्न अपग्रेड गर्नुहोस्",
       // lesson page errors
       errorTitle: "पाठ लोड गर्न सकिएन",
       errorWeekNotFound: "{path} मार्गको हप्ता {week} को लागि पाठ सामग्री अवस्थित छैन। कृपया 'public{lessonPath}' मा फाइल सिर्जना गर्नुहोस्।",
@@ -2304,6 +2304,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
