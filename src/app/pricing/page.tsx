@@ -132,10 +132,14 @@ function CheckoutButton({ priceId, mode, planName }: CheckoutButtonProps) {
       }
     } catch (error: any) {
       console.error('Checkout failed:', error);
+      const description = (error.message && error.message.includes('No such price'))
+        ? `The configuration for the "${planName}" plan is incorrect. Please contact support.`
+        : error.message || 'Could not initiate the payment process.';
+
       toast({
         variant: 'destructive',
         title: 'Checkout Failed',
-        description: error.message || 'Could not initiate the payment process.',
+        description: description,
       });
       setIsLoading(false);
     }
