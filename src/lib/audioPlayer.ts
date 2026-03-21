@@ -1,6 +1,9 @@
 'use client';
 
 import { targetLanguages } from '@/lib/translations';
+import { Capacitor } from '@capacitor/core';
+import { TextToSpeech } from '@capacitor-community/text-to-speech';
+
 
 class AudioPlayer {
   private utteranceRef: SpeechSynthesisUtterance | null = null;
@@ -13,20 +16,22 @@ class AudioPlayer {
       if (window.speechSynthesis.onvoiceschanged !== undefined) {
         window.speechSynthesis.onvoiceschanged = () => this.loadVoices();
       }
-      // Unlock audio on first user interaction
+      // Unlock audio on first user interaction for web
       document.addEventListener('touchstart', () => this.unlockAudio(), { once: true });
       document.addEventListener('click', () => this.unlockAudio(), { once: true });
     }
   }
 
   private unlockAudio() {
-    if (this.isUnlocked) return;
+    if (this.isUnlocked || Capacitor.isNativePlatform()) return;
     try {
       const utterance = new SpeechSynthesisUtterance('');
       window.speechSynthesis.speak(utterance);
       window.speechSynthesis.cancel();
       this.isUnlocked = true;
-    } catch (e) {}
+    } catch (e) {
+      console.warn('Could not unlock audio context:', e)
+    }
   }
 
   private loadVoices() {
@@ -54,14 +59,31 @@ class AudioPlayer {
   }
 
   public async speak(text: string, languageName: string, rate: number = 1.0): Promise<void> {
-    if (typeof window === 'undefined' || !window.speechSynthesis || !text) return;
+    if (!text) return;
+
+    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === languageName.toLowerCase());
+    const langCode = langInfo?.countries[0] || 'en-US';
+
+    // NATIVE PLATFORM (ANDROID/IOS)
+    if (Capacitor.isNativePlatform()) {
+      try {
+        await TextToSpeech.speak({
+          text: text,
+          lang: langCode,
+          rate: rate,
+        });
+      } catch (e) {
+        console.error('[AudioPlayer] Capacitor TextToSpeech error:', e);
+      }
+      return;
+    }
+
+    // WEB PLATFORM
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
 
     window.speechSynthesis.cancel();
 
     const voices = await this.getVoices();
-    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === languageName.toLowerCase());
-    const langCode = langInfo ? targetLanguages.find(l => l.lang === langInfo.lang)?.countries[0] || 'en-US' : 'en-US';
-
     const utterance = new SpeechSynthesisUtterance(text);
     this.utteranceRef = utterance;
     utterance.lang = langCode;
@@ -76,13 +98,13 @@ class AudioPlayer {
 
     utterance.onend = () => { this.utteranceRef = null; };
     utterance.onerror = (event) => {
-      console.warn('[AudioPlayer] error', event);
+      console.warn('[AudioPlayer] Web Speech API error', event);
       this.utteranceRef = null;
     };
 
     window.speechSynthesis.speak(utterance);
 
-    // Android Chrome fix - prevent speech from pausing
+    // Android Chrome browser fix (not WebView)
     const androidFix = setInterval(() => {
       if (!window.speechSynthesis.speaking) {
         clearInterval(androidFix);
@@ -95,7 +117,9 @@ class AudioPlayer {
   }
 
   public cancel(): void {
-    if (typeof window !== 'undefined' && window.speechSynthesis) {
+    if (Capacitor.isNativePlatform()) {
+      TextToSpeech.stop();
+    } else if (typeof window !== 'undefined' && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       this.utteranceRef = null;
     }
