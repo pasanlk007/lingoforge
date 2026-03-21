@@ -8,20 +8,34 @@ import { initializeApp, getApps, App, cert, ServiceAccount } from 'firebase-admi
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
 
-// The service account key is imported directly from the JSON file.
+// The service account key is imported directly from the JSON file as a fallback.
 import serviceAccountInfo from '../../studio-3754329818-ee8cf-firebase-adminsdk-fbsvc-45e2e677f9.json';
-
-// Cast the imported JSON to the ServiceAccount type for type safety.
-const serviceAccount = serviceAccountInfo as ServiceAccount;
 
 let adminApp: App;
 
 // This logic ensures that we don't try to initialize the app more than once.
 if (!getApps().length) {
-  // Initialize the app using the explicit service account credentials.
+  let serviceAccount: ServiceAccount;
+
+  // In a deployed environment (like App Hosting), the service account key
+  // should be provided as an environment variable.
+  if (process.env.FIREBASE_ADMIN_SDK_KEY) {
+    try {
+      serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_SDK_KEY);
+    } catch (e) {
+      console.error('Failed to parse FIREBASE_ADMIN_SDK_KEY from environment variables.', e);
+      // Fallback to the imported JSON if parsing fails
+      serviceAccount = serviceAccountInfo as ServiceAccount;
+    }
+  } else {
+    // For local development, use the imported JSON file.
+    serviceAccount = serviceAccountInfo as ServiceAccount;
+  }
+  
   adminApp = initializeApp({
     credential: cert(serviceAccount)
   });
+
 } else {
   adminApp = getApps()[0];
 }

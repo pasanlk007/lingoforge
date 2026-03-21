@@ -167,7 +167,7 @@ function PricingPageContent() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-
+  
   useEffect(() => {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) {
