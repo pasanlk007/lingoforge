@@ -1,4 +1,3 @@
-'use client';
 /**
  * IMPORTANT: This file is used for server-side Firebase initializations,
  * such as in API routes or server components. It uses the Firebase Admin SDK.
