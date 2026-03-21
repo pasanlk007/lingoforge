@@ -16,7 +16,7 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -2392,6 +2392,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
