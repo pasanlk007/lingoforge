@@ -84,7 +84,14 @@ class AudioPlayer {
       this.utteranceRef = null;
     };
 
+    // Android WebView requires user gesture unlock
+    const resume = () => window.speechSynthesis.resume();
     window.speechSynthesis.speak(utterance);
+    // Fix for Android Chrome bug where speech pauses
+    const androidFix = setInterval(() => {
+      if (window.speechSynthesis.paused) resume();
+      if (!window.speechSynthesis.speaking) clearInterval(androidFix);
+    }, 100);
   }
 
   public cancel(): void {

@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { FirebaseClientProvider } from '@/firebase/client-provider';
+import { CapacitorBackButton } from '@/components/CapacitorBackButton';
 
 export const metadata: Metadata = {
   title: 'LingoForge',
@@ -24,6 +25,7 @@ export default function RootLayout({
         <FirebaseClientProvider>
           {children}
         </FirebaseClientProvider>
+        <CapacitorBackButton />
         <Toaster />
       </body>
     </html>
