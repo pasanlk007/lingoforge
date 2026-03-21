@@ -1,3 +1,4 @@
+'use client';
 /**
  * IMPORTANT: This file is used for server-side Firebase initializations,
  * such as in API routes or server components. It uses the Firebase Admin SDK.
@@ -33,7 +34,8 @@ if (!getApps().length) {
   }
   
   adminApp = initializeApp({
-    credential: cert(serviceAccount)
+    credential: cert(serviceAccount),
+    projectId: 'studio-3754329818-ee8cf'
   });
 
 } else {
