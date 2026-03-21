@@ -40,6 +40,7 @@ import { canAccessWeek } from "@/lib/accessControl";
 import { ReferralCard } from "@/components/ReferralCard";
 import { TrialEndBanner } from "@/components/TrialEndBanner";
 import { TrialEndModal } from "@/components/TrialEndModal";
+import { differenceInCalendarDays } from 'date-fns';
 
 
 function DashboardLoading() {
@@ -117,6 +118,21 @@ function DashboardContent({ user }: { user: User }) {
         localStorage.setItem("targetLanguage", initialTarget);
     }
   }, [userProfile]);
+
+  useEffect(() => {
+    if (userProfileRef && userProfile && userProfile.currentStreak > 0) {
+      const today = new Date();
+      // Ensure lastActiveDate is a valid date string before creating a Date object
+      const lastActive = userProfile.lastActiveDate ? new Date(userProfile.lastActiveDate) : new Date();
+      const daysSinceLastActive = differenceInCalendarDays(today, lastActive);
+
+      // If it's been more than 1 day since the last activity, the streak is broken.
+      if (daysSinceLastActive > 1) {
+        updateDocumentNonBlocking(userProfileRef, { currentStreak: 0 });
+      }
+    }
+  }, [userProfile, userProfileRef]);
+
 
   const handleTargetLanguageChange = (newLang: string) => {
     setTargetLanguage(newLang);
