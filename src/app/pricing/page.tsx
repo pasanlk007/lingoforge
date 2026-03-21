@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
-import { useAuth } from '@/firebase';
+
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -188,9 +188,9 @@ function PricingPageContent() {
     );
   };
 
-  const weeklyPaymentLink = "YOUR_WEEKLY_PAYMENT_LINK_HERE";
-  const coursePaymentLink = "YOUR_COURSE_PAYMENT_LINK_HERE";
-  const lifetimePaymentLink = "YOUR_LIFETIME_PAYMENT_LINK_HERE";
+  const weeklyPaymentLink = process.env.NEXT_PUBLIC_STRIPE_LINK_WEEKLY;
+  const coursePaymentLink = process.env.NEXT_PUBLIC_STRIPE_LINK_COURSE;
+  const lifetimePaymentLink = process.env.NEXT_PUBLIC_STRIPE_LINK_LIFETIME;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>

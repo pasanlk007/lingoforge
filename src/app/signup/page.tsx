@@ -3,8 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp } from '@/firebase';
-import { setDocumentNonBlocking } from '@/firebase/non-blocking-updates';
-import { doc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -94,7 +93,7 @@ export default function SignupPage() {
       };
 
       const userDocRef = doc(firestore, 'userProfiles', user.uid);
-      setDocumentNonBlocking(userDocRef, userProfile, { merge: true });
+      await setDoc(userDocRef, userProfile, { merge: true });
       toast({
         title: "Account Created!",
         description: "You're all set. Welcome to LingoForge!",

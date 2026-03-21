@@ -90,6 +90,32 @@ function DashboardContent({ user }: { user: User }) {
   const [nativeLanguage, setNativeLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
 
+  useEffect(() => {
+    setIsMounted(true);
+
+    // When the user profile loads, it becomes the source of truth
+    if (userProfile) {
+        let initialNative = userProfile.nativeLanguage || 'English';
+        let initialTarget = userProfile.selectedLanguage || 'French';
+
+        // Ensure language combinations are valid
+        if (!nativeLanguages.includes(initialNative)) {
+            initialNative = 'English';
+        }
+        if (initialNative === 'English' && initialTarget === 'English') {
+            initialTarget = 'French'; // Prevent learning English in English
+        }
+
+        // Set component state
+        setNativeLanguage(initialNative);
+        setTargetLanguage(initialTarget);
+
+        // Sync to localStorage
+        localStorage.setItem("nativeLanguage", initialNative);
+        localStorage.setItem("targetLanguage", initialTarget);
+    }
+  }, [userProfile]);
+
   const handleTargetLanguageChange = (newLang: string) => {
     setTargetLanguage(newLang);
     if (userProfileRef) {
@@ -97,31 +123,6 @@ function DashboardContent({ user }: { user: User }) {
     }
     localStorage.setItem("targetLanguage", newLang);
   };
-  
-  useEffect(() => {
-    setIsMounted(true);
-    let initialNative = userProfile?.nativeLanguage || localStorage.getItem("nativeLanguage") || 'English';
-    let initialTarget = userProfile?.selectedLanguage || localStorage.getItem("targetLanguage") || 'French';
-
-    if (!nativeLanguages.includes(initialNative)) {
-      initialNative = 'English';
-    }
-
-    if (initialNative === 'English' && initialTarget === 'English') {
-      initialTarget = 'French';
-    }
-    
-    setNativeLanguage(initialNative);
-    setTargetLanguage(initialTarget);
-    
-    localStorage.setItem("nativeLanguage", initialNative);
-    localStorage.setItem("targetLanguage", initialTarget);
-    
-    if (userProfileRef && (userProfile?.nativeLanguage !== initialNative || userProfile?.selectedLanguage !== initialTarget)) {
-        updateDocumentNonBlocking(userProfileRef, { nativeLanguage: initialNative, selectedLanguage: initialTarget });
-    }
-  }, [userProfile, userProfileRef]);
-
 
   const handleNativeLanguageChange = (newLang: string) => {
     setNativeLanguage(newLang);

@@ -7,8 +7,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
 } from 'firebase/auth';
-import { doc, getDoc, Firestore } from 'firebase/firestore';
-import { setDocumentNonBlocking } from '@/firebase/non-blocking-updates';
+import { doc, getDoc, Firestore, setDoc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 
 
@@ -62,8 +61,8 @@ export async function initiateGoogleSignIn(auth: Auth, firestore: Firestore): Pr
             lastLessonWeek: 1,
             lastLessonDay: 0,
         };
-        // Use a non-blocking write to create the profile.
-        setDocumentNonBlocking(userDocRef, newUserProfile, { merge: true });
+        // Use a BLOCKING write to create the profile before the function returns.
+        await setDoc(userDocRef, newUserProfile, { merge: true });
     }
 
     return result;
