@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { setDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
@@ -39,6 +40,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [exercisesCorrect, setExercisesCorrect] = useState(0);
     const [isComplete, setIsComplete] = useState(false);
+    const router = useRouter();
 
     const { user } = useUser();
     const firestore = useFirestore();
@@ -258,6 +260,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         <div className="relative">
                             <div className="absolute -inset-20"><Confetti active={isComplete} config={confettiConfig} /></div>
                             {isComplete ? (
+                                <div>
                                  <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
                                     <CheckCircle className="h-4 w-4" />
                                     <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
@@ -267,6 +270,10 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                         .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
                                     </AlertDescription>
                                 </Alert>
+                                <Button className="w-full mt-3" onClick={() => router.push("/dashboard")}>
+                                  Go to Dashboard
+                                </Button>
+                                </div>
                             ) : (
                                  <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay || !userProfile}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}

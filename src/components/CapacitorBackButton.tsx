@@ -13,7 +13,11 @@ export function CapacitorBackButton() {
       try {
         const { App } = await import('@capacitor/app');
         const listener = await App.addListener('backButton', ({ canGoBack }) => {
-          if (canGoBack) {
+          const currentPath = window.location.pathname;
+          const noBackPaths = ['/login', '/dashboard', '/'];
+          if (noBackPaths.includes(currentPath)) {
+            App.minimizeApp();
+          } else if (canGoBack) {
             router.back();
           } else {
             App.minimizeApp();
