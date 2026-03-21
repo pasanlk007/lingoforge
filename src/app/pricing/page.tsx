@@ -351,7 +351,3 @@ export default function PricingPage() {
     </Suspense>
   );
 }
-
-    
-
-    
