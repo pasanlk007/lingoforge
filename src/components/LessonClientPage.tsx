@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { setDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
@@ -40,7 +39,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [exercisesCorrect, setExercisesCorrect] = useState(0);
     const [isComplete, setIsComplete] = useState(false);
-    const router = useRouter();
 
     const { user } = useUser();
     const firestore = useFirestore();
@@ -270,7 +268,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                         .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
                                     </AlertDescription>
                                 </Alert>
-                                <Button className="w-full mt-3" onClick={() => router.push("/dashboard")}>
+                                <Button className="w-full mt-3" onClick={() => (window.location.href = "/dashboard")}>
                                   Go to Dashboard
                                 </Button>
                                 </div>
