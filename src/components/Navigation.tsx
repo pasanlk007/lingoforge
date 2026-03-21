@@ -170,27 +170,21 @@ export function Navigation() {
                     <span className="font-headline text-2xl font-bold">LingoForge</span>
                   </Link>
                   <nav className="flex flex-col gap-4">
-                    <Link
-                      href="/paths"
-                      className="text-lg font-medium text-muted-foreground"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {t.pathsAndFeatures}
-                    </Link>
-                     <Link
-                        href="/dashboard"
-                        className="text-lg font-medium text-muted-foreground"
-                        onClick={() => setMenuOpen(false)}
-                      >
+                    <Button variant="outline" asChild>
+                      <Link href="/paths" onClick={() => setMenuOpen(false)}>
+                        {t.pathsAndFeatures}
+                      </Link>
+                    </Button>
+                     <Button variant="outline" asChild>
+                      <Link href="/dashboard" onClick={() => setMenuOpen(false)}>
                         {t_dashboard.title}
                       </Link>
-                      <Link
-                        href="/pricing"
-                        className="text-lg font-medium text-muted-foreground"
-                        onClick={() => setMenuOpen(false)}
-                      >
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <Link href="/pricing" onClick={() => setMenuOpen(false)}>
                         Pricing
                       </Link>
+                    </Button>
                   </nav>
                   <div className="mt-auto flex flex-col gap-2">
                      {isUserLoading ? (
