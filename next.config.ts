@@ -1,2 +1,4 @@
-// This file has been replaced by next.config.js to fix a build error.
-// You can safely delete this file.
+/** @type {import('next').NextConfig} */
+const nextConfig = require('./next.config.js');
+
+module.exports = nextConfig;
