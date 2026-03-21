@@ -38,6 +38,8 @@ import { useAppConfig } from "@/hooks/useAppConfig";
 import { useFreeTrial } from "@/hooks/useFreeTrial";
 import { canAccessWeek } from "@/lib/accessControl";
 import { ReferralCard } from "@/components/ReferralCard";
+import { TrialEndBanner } from "@/components/TrialEndBanner";
+import { TrialEndModal } from "@/components/TrialEndModal";
 
 
 function DashboardLoading() {
@@ -209,6 +211,8 @@ function DashboardContent({ user }: { user: User }) {
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto py-8 sm:py-12 px-4">
+          <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} />
+          <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} />
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
               {t.welcome}, {displayName}!
