@@ -1,9 +1,8 @@
 'use client';
 
 import { useState, useEffect, Suspense } from 'react';
-import { Check, Clock } from 'lucide-react';
+import { Check } from 'lucide-react';
 import Link from 'next/link';
-
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -13,6 +12,10 @@ import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
+
+const WEEKLY_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/7571db01-c3b2-44e4-ba60-bba6446b4835';
+const LIFETIME_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/04515a8a-6b96-44e0-af28-45a1f159c15e?discount=0';
+const COURSE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/021d6f05-39f3-4eaf-bc74-63855ed15b19';
 
 function PricingPageLoading() {
   return (
@@ -26,59 +29,13 @@ function PricingPageLoading() {
               <Skeleton className="h-6 w-full mt-4" />
             </div>
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              <Card className="flex flex-col">
-                <CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <Skeleton className="h-10 w-1/3" />
-                  <Skeleton className="h-12 w-full" />
-                  <div className="space-y-3 pt-4 border-t">
-                    <Skeleton className="h-5 w-full" />
-                    <Skeleton className="h-5 w-full" />
-                  </div>
-                </CardContent>
-                <CardFooter><Skeleton className="h-12 w-full" /></CardFooter>
-              </Card>
-              <Card className="flex flex-col border-2 border-primary">
-                <CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <Skeleton className="h-10 w-1/3" />
-                  <div className="space-y-3 pt-4 border-t">
-                    <Skeleton className="h-5 w-full" />
-                    <Skeleton className="h-5 w-full" />
-                  </div>
-                </CardContent>
-                <CardFooter><Skeleton className="h-12 w-full" /></CardFooter>
-              </Card>
-              <Card className="flex flex-col">
-                <CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <Skeleton className="h-10 w-1/3" />
-                  <Skeleton className="h-12 w-full" />
-                  <div className="space-y-3 pt-4 border-t">
-                    <Skeleton className="h-5 w-full" />
-                    <Skeleton className="h-5 w-full" />
-                  </div>
-                </CardContent>
-                <CardFooter><Skeleton className="h-12 w-full" /></CardFooter>
-              </Card>
+              <Card className="flex flex-col"><CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader><CardContent className="flex-1 space-y-6"><Skeleton className="h-10 w-1/3" /><Skeleton className="h-12 w-full" /></CardContent><CardFooter><Skeleton className="h-12 w-full" /></CardFooter></Card>
+              <Card className="flex flex-col border-2 border-primary"><CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader><CardContent className="flex-1 space-y-6"><Skeleton className="h-10 w-1/3" /></CardContent><CardFooter><Skeleton className="h-12 w-full" /></CardFooter></Card>
+              <Card className="flex flex-col"><CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader><CardContent className="flex-1 space-y-6"><Skeleton className="h-10 w-1/3" /><Skeleton className="h-12 w-full" /></CardContent><CardFooter><Skeleton className="h-12 w-full" /></CardFooter></Card>
             </div>
           </div>
         </section>
       </main>
-    </div>
-  );
-}
-
-function ComingSoonButton() {
-  return (
-    <div className="w-full space-y-2">
-      <Button size="lg" className="w-full" disabled>
-        <Clock className="mr-2 h-4 w-4" />
-        Coming Soon
-      </Button>
-      <p className="text-xs text-center text-muted-foreground">
-        Payments launching very soon!
-      </p>
     </div>
   );
 }
@@ -98,15 +55,11 @@ function PricingPageContent() {
 
   useEffect(() => {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
-    if (savedLang && translations[savedLang]) {
-      setDisplayLanguage(savedLang);
-    }
+    if (savedLang && translations[savedLang]) setDisplayLanguage(savedLang);
     setIsMounted(true);
   }, []);
 
-  if (!isMounted || isUserLoading) {
-    return <PricingPageLoading />;
-  }
+  if (!isMounted || isUserLoading) return <PricingPageLoading />;
 
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
@@ -134,21 +87,13 @@ function PricingPageContent() {
       <main className="flex-1">
         <section className="py-20 sm:py-24">
           <div className="container mx-auto px-4">
-
-            <div className="mx-auto max-w-2xl mb-10 rounded-xl border border-yellow-400/40 bg-yellow-400/10 px-6 py-4 text-center">
-              <p className="text-sm font-semibold text-yellow-600 dark:text-yellow-400">
-                🚀 Payments launching very soon! Try free lessons while you wait.
-              </p>
-            </div>
-
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-                {t.pricingTitle}
-              </h1>
+              <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">{t.pricingTitle}</h1>
               <p className="mt-4 text-lg text-muted-foreground">{t.pricingSub}</p>
             </div>
 
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+              {/* Weekly Plan */}
               <Card className="flex flex-col">
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl">{t.weeklyPlan.title}</CardTitle>
@@ -164,9 +109,14 @@ function PricingPageContent() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat4}</li>
                   </ul>
                 </CardContent>
-                <CardFooter><ComingSoonButton /></CardFooter>
+                <CardFooter>
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href={WEEKLY_URL} target="_blank">Get {t.weeklyPlan.title}</Link>
+                  </Button>
+                </CardFooter>
               </Card>
 
+              {/* Lifetime Plan */}
               <Card className="relative flex flex-col border-2 border-primary shadow-2xl shadow-primary/20">
                 <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2">{t.lifetimePlan.badge}</Badge>
                 <CardHeader>
@@ -182,9 +132,14 @@ function PricingPageContent() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat4}</li>
                   </ul>
                 </CardContent>
-                <CardFooter><ComingSoonButton /></CardFooter>
+                <CardFooter>
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href={LIFETIME_URL} target="_blank">Get {t.lifetimePlan.title}</Link>
+                  </Button>
+                </CardFooter>
               </Card>
 
+              {/* Single Course Plan */}
               <Card className="flex flex-col">
                 <CardHeader>
                   <Badge variant="secondary" className="w-fit">{t.completePlan.badge}</Badge>
@@ -201,7 +156,11 @@ function PricingPageContent() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat4}</li>
                   </ul>
                 </CardContent>
-                <CardFooter><ComingSoonButton /></CardFooter>
+                <CardFooter>
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href={COURSE_URL} target="_blank">Get {t.completePlan.title}</Link>
+                  </Button>
+                </CardFooter>
               </Card>
             </div>
 
@@ -223,7 +182,6 @@ function PricingPageContent() {
               <p>Prices are in USD. Your payment provider will convert the currency for you.</p>
               <p>For any questions, please <a href="mailto:support@lingoforge.app" className="underline hover:text-foreground">contact support</a>.</p>
             </div>
-
           </div>
         </section>
       </main>
