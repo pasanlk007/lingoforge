@@ -4,7 +4,6 @@ import { useState, useEffect, Suspense } from 'react';
 import { Check } from 'lucide-react';
 import Link from 'next/link';
 
-import { useRouter, useSearchParams } from 'next/navigation';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -14,7 +13,6 @@ import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
-import { useToast } from '@/hooks/use-toast';
 
 // Define the loading skeleton component
 function PricingPageLoading() {
@@ -75,91 +73,12 @@ function PricingPageLoading() {
   );
 }
 
-interface CheckoutButtonProps {
-  priceId?: string;
-  mode: 'payment' | 'subscription';
-  planName: string;
-}
-
-function CheckoutButton({ priceId, mode, planName }: CheckoutButtonProps) {
-  const [isLoading, setIsLoading] = useState(false);
-  const { user } = useUser();
-  const router = useRouter();
-  const { toast } = useToast();
-
-  const handleCheckout = async () => {
-    setIsLoading(true);
-    if (!user) {
-      router.push(`/login?redirect=/pricing`);
-      return;
-    }
-    
-    if (!priceId) {
-      toast({
-        variant: 'destructive',
-        title: 'Configuration Error',
-        description: `The Price ID for the ${planName} plan is not set up.`,
-      });
-      setIsLoading(false);
-      return;
-    }
-
-    try {
-      const idToken = await user.getIdToken();
-      const response = await fetch('/api/stripe-checkout', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${idToken}`,
-        },
-        body: JSON.stringify({ 
-            priceId, 
-            mode,
-            successPath: '/pricing?payment=success',
-            cancelPath: '/pricing?payment=cancelled',
-        }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok && data.url) {
-        window.location.href = data.url;
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Payment Error',
-          description: data.error || 'Failed to create checkout session.',
-        });
-        setIsLoading(false);
-      }
-    } catch (error: any) {
-      console.error('Checkout failed:', error);
-      toast({
-        variant: 'destructive',
-        title: 'Payment Error',
-        description: error.message || 'Could not initiate the payment process. Please try again.',
-      });
-      setIsLoading(false);
-    }
-  };
-
-  return (
-    <Button size="lg" className="w-full" onClick={handleCheckout} disabled={isLoading || !priceId}>
-      {isLoading ? 'Redirecting...' : `Get ${planName}`}
-    </Button>
-  );
-}
-
-
 // All the original page logic moves into this component
 function PricingPageContent() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const { toast } = useToast();
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -174,26 +93,7 @@ function PricingPageContent() {
       setDisplayLanguage(savedLang);
     }
     setIsMounted(true);
-    
-    if (searchParams.get('payment') === 'success') {
-        toast({
-            title: 'Payment Successful!',
-            description: 'Your subscription has been activated. Welcome!',
-            duration: 5000,
-        });
-        router.replace('/pricing'); // remove query params
-    }
-     if (searchParams.get('payment') === 'cancelled') {
-        toast({
-            variant: 'destructive',
-            title: 'Payment Cancelled',
-            description: 'Your payment process was cancelled. You can try again anytime.',
-            duration: 5000,
-        });
-        router.replace('/pricing'); // remove query params
-    }
-
-  }, [searchParams, router, toast]);
+  }, []);
 
   if (!isMounted || isUserLoading) {
     // Render loading state while waiting for client-side mount
@@ -222,10 +122,6 @@ function PricingPageContent() {
         </div>
     );
   };
-  
-  const weeklyPriceId = process.env.NEXT_PUBLIC_STRIPE_WEEKLY_PRICE_ID;
-  const coursePriceId = process.env.NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID;
-  const lifetimePriceId = process.env.NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -262,7 +158,9 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <CheckoutButton priceId={weeklyPriceId} mode="subscription" planName={t.weeklyPlan.title} />
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href="LEMONSQUEEZY_WEEKLY_URL">Get {t.weeklyPlan.title}</Link>
+                  </Button>
                 </CardFooter>
               </Card>
 
@@ -287,7 +185,9 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <CheckoutButton priceId={lifetimePriceId} mode="payment" planName={t.lifetimePlan.title} />
+                  <Button size="lg" className="w-full" asChild>
+                    <Link href="LEMONSQUEEZY_LIFETIME_URL">Get {t.lifetimePlan.title}</Link>
+                  </Button>
                 </CardFooter>
               </Card>
 
@@ -311,7 +211,9 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                   <CheckoutButton priceId={coursePriceId} mode="payment" planName={t.completePlan.title} />
+                   <Button size="lg" className="w-full" asChild>
+                    <Link href="LEMONSQUEEZY_COURSE_URL">Get {t.completePlan.title}</Link>
+                  </Button>
                 </CardFooter>
               </Card>
             </div>
