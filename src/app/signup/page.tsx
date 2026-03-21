@@ -23,6 +23,7 @@ export default function SignupPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [nativeLanguage, setNativeLanguage] = useState('English');
+  const [referralCode, setReferralCode] = useState('');
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setGoogleLoading] = useState(false);
@@ -89,6 +90,7 @@ export default function SignupPage() {
         activePath: 'survival',
         lastLessonWeek: 1,
         lastLessonDay: 0,
+        referredBy: referralCode.trim() || undefined,
       };
 
       const userDocRef = doc(firestore, 'userProfiles', user.uid);
@@ -175,6 +177,18 @@ export default function SignupPage() {
                     required
                     disabled={isLoading || isGoogleLoading}
                     minLength={6}
+                  />
+                </div>
+
+                 <div className="space-y-2">
+                  <Label htmlFor="referralCode">Referral Code (Optional)</Label>
+                  <Input
+                    id="referralCode"
+                    type="text"
+                    placeholder="ABC1234"
+                    value={referralCode}
+                    onChange={(e) => setReferralCode(e.target.value)}
+                    disabled={isLoading || isGoogleLoading}
                   />
                 </div>
 

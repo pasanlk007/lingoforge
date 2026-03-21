@@ -152,6 +152,14 @@ export const translations = {
         save: "Save Reminder",
         saved: "Reminder settings saved!",
       },
+      referrals: {
+        title: "Refer a Friend",
+        description: "Share your code with a friend. When they sign up, you both get a bonus!",
+        yourCode: "Your Referral Code",
+        copyCode: "Copy Code",
+        copied: "Copied!",
+        bonus: "You both get 1 week of free premium access!"
+      },
     },
     notifications: {
       title: "Time for your LingoForge lesson!",
@@ -365,6 +373,14 @@ export const translations = {
         grantPermission: "අවසරය ලබා දෙන්න",
         save: "මතක් කිරීම සුරකින්න",
         saved: "මතක් කිරීමේ සැකසුම් සුරකින ලදි!",
+      },
+      referrals: {
+        title: "මිතුරෙකුට යොමු කරන්න",
+        description: "ඔබේ කේතය මිතුරෙකු සමඟ බෙදා ගන්න. ඔවුන් ලියාපදිංචි වූ විට, ඔබ දෙදෙනාටම බෝනස් එකක් ලැබේ!",
+        yourCode: "ඔබේ යොමු කිරීමේ කේතය",
+        copyCode: "කේතය පිටපත් කරන්න",
+        copied: "පිටපත් කරන ලදී!",
+        bonus: "ඔබ දෙදෙනාටම සති 1ක නොමිලේ වාරික ප්‍රවේශය ලැබේ!"
       },
     },
     notifications: {
@@ -580,6 +596,14 @@ export const translations = {
         save: "अनुस्मारक सहेजें",
         saved: "अनुस्मारक सेटिंग्स सहेजी गईं!",
       },
+      referrals: {
+        title: "मित्र को रेफर करें",
+        description: "अपना कोड किसी मित्र के साथ साझा करें। जब वे साइन अप करते हैं, तो आप दोनों को एक बोनस मिलता है!",
+        yourCode: "आपका रेफरल कोड",
+        copyCode: "कोड कॉपी करें",
+        copied: "कॉपी किया गया!",
+        bonus: "आप दोनों को 1 सप्ताह का मुफ्त प्रीमियम एक्सेस मिलता है!"
+      }
     },
     notifications: {
       title: "आपके लिंगोफोर्ज पाठ का समय!",
@@ -793,6 +817,14 @@ export const translations = {
         grantPermission: "اجازت دیں",
         save: "یاد دہانی محفوظ کریں",
         saved: "یاد دہانی کی ترتیبات محفوظ ہوگئیں!",
+      },
+      referrals: {
+        title: "دوست کو ریفر کریں",
+        description: "اپنا کوڈ دوست کے ساتھ شیئر کریں۔ جب وہ سائن اپ کریں گے تو آپ دونوں کو بونس ملے گا!",
+        yourCode: "آپ کا ریفرل کوڈ",
+        copyCode: "کوڈ کاپی کریں",
+        copied: "کاپی ہو گیا!",
+        bonus: "آپ دونوں کو 1 ہفتے کی مفت پریمیم رسائی ملتی ہے!"
       },
     },
     notifications: {
@@ -1008,6 +1040,14 @@ export const translations = {
         save: "অনুস্মারক সংরক্ষণ করুন",
         saved: "অনুস্মারক সেটিংস সংরক্ষিত হয়েছে!",
       },
+       referrals: {
+        title: "বন্ধুকে রেফার করুন",
+        description: "আপনার কোড বন্ধুর সাথে শেয়ার করুন। তারা সাইন আপ করলে আপনারা দুজনই বোনাস পাবেন!",
+        yourCode: "আপনার রেফারেল কোড",
+        copyCode: "কোড কপি করুন",
+        copied: "কপি করা হয়েছে!",
+        bonus: "আপনারা দুজনেই ১ সপ্তাহের বিনামূল্যে প্রিমিয়াম অ্যাক্সেস পাবেন!"
+      }
     },
     notifications: {
       title: "আপনার লিঙ্গোফোরজ পাঠের জন্য সময়!",
@@ -1222,6 +1262,14 @@ export const translations = {
         save: "रिमाइन्डर बचत गर्नुहोस्",
         saved: "रिमाइन्डर सेटिङहरू बचत गरियो!",
       },
+      referrals: {
+        title: "साथीलाई रेफर गर्नुहोस्",
+        description: "आफ्नो कोड साथीसँग साझा गर्नुहोस्। जब उनीहरूले साइन अप गर्छन्, तपाईं दुबैले बोनस पाउनुहुन्छ!",
+        yourCode: "तपाईंको रेफरल कोड",
+        copyCode: "कोड प्रतिलिपि गर्नुहोस्",
+        copied: "प्रतिलिपि गरियो!",
+        bonus: "तपाईं दुबैले १ हप्ताको निःशुल्क प्रिमियम पहुँच पाउनुहुन्छ!"
+      }
     },
     notifications: {
       title: "तपाईंको लिंगोफोर्ज पाठको लागि समय!",
@@ -1422,6 +1470,14 @@ export const translations = {
         save: "Save Reminder",
         saved: "Reminder settings saved!",
       },
+      referrals: {
+        title: "Refer a Friend",
+        description: "Share your code with a friend. When they sign up, you both get a bonus!",
+        yourCode: "Your Referral Code",
+        copyCode: "Copy Code",
+        copied: "Copied!",
+        bonus: "You both get 1 week of free premium access!"
+      },
     },
     notifications: {
       title: "Time for your LingoForge lesson!",
@@ -1618,6 +1674,14 @@ export const translations = {
         grantPermission: "Grant Permission",
         save: "Save Reminder",
         saved: "Reminder settings saved!",
+      },
+      referrals: {
+        title: "Refer a Friend",
+        description: "Share your code with a friend. When they sign up, you both get a bonus!",
+        yourCode: "Your Referral Code",
+        copyCode: "Copy Code",
+        copied: "Copied!",
+        bonus: "You both get 1 week of free premium access!"
       },
     },
     notifications: {
@@ -1816,6 +1880,14 @@ export const translations = {
         save: "Save Reminder",
         saved: "Reminder settings saved!",
       },
+      referrals: {
+        title: "Refer a Friend",
+        description: "Share your code with a friend. When they sign up, you both get a bonus!",
+        yourCode: "Your Referral Code",
+        copyCode: "Copy Code",
+        copied: "Copied!",
+        bonus: "You both get 1 week of free premium access!"
+      },
     },
     notifications: {
       title: "Time for your LingoForge lesson!",
@@ -2012,6 +2084,14 @@ export const translations = {
         grantPermission: "Grant Permission",
         save: "Save Reminder",
         saved: "Reminder settings saved!",
+      },
+      referrals: {
+        title: "Refer a Friend",
+        description: "Share your code with a friend. When they sign up, you both get a bonus!",
+        yourCode: "Your Referral Code",
+        copyCode: "Copy Code",
+        copied: "Copied!",
+        bonus: "You both get 1 week of free premium access!"
       },
     },
     notifications: {
@@ -2210,6 +2290,14 @@ export const translations = {
         save: "Save Reminder",
         saved: "Reminder settings saved!",
       },
+      referrals: {
+        title: "Refer a Friend",
+        description: "Share your code with a friend. When they sign up, you both get a bonus!",
+        yourCode: "Your Referral Code",
+        copyCode: "Copy Code",
+        copied: "Copied!",
+        bonus: "You both get 1 week of free premium access!"
+      },
     },
     notifications: {
       title: "Time for your LingoForge lesson!",
@@ -2304,6 +2392,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 

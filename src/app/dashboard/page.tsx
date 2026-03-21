@@ -37,6 +37,7 @@ import type { User } from 'firebase/auth';
 import { useAppConfig } from "@/hooks/useAppConfig";
 import { useFreeTrial } from "@/hooks/useFreeTrial";
 import { canAccessWeek } from "@/lib/accessControl";
+import { ReferralCard } from "@/components/ReferralCard";
 
 
 function DashboardLoading() {
@@ -373,6 +374,7 @@ function DashboardContent({ user }: { user: User }) {
                 </CardContent>
               </Card>
               <ReminderCard />
+              <ReferralCard />
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">

@@ -147,6 +147,8 @@ export interface UserProfile {
   lastLessonDay: number;
   paymentProviderCustomerId?: string;
   paymentProviderSubscriptionId?: string;
+  referralCode?: string;
+  referredBy?: string;
 }
 
 export interface UserLessonProgress {

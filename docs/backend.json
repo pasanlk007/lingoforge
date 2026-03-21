@@ -76,6 +76,14 @@
         "paymentProviderSubscriptionId": {
             "type": "string",
             "description": "The active subscription ID from the payment provider."
+        },
+        "referralCode": {
+          "type": "string",
+          "description": "A unique code assigned to the user for referring others."
+        },
+        "referredBy": {
+          "type": "string",
+          "description": "The referral code of the user who referred this user."
         }
       },
       "required": [
