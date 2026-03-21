@@ -7,12 +7,20 @@
 import { initializeApp, getApps, App, cert, ServiceAccount } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
+import * as fs from 'fs';
+import * as path from 'path';
 
-// The service account key is imported directly from the JSON file as a fallback for local development.
+// The service account key is loaded from a local file as a fallback for development.
 // This file is in .gitignore and WILL NOT be available in production.
 let serviceAccountInfo;
 try {
-  serviceAccountInfo = require('../../studio-3754329818-ee8cf-firebase-adminsdk-fbsvc-45e2e677f9.json');
+  const serviceAccountPath = path.join(process.cwd(), 'studio-3754329818-ee8cf-firebase-adminsdk-fbsvc-45e2e677f9.json');
+  if (fs.existsSync(serviceAccountPath)) {
+      const fileContents = fs.readFileSync(serviceAccountPath, 'utf8');
+      serviceAccountInfo = JSON.parse(fileContents);
+  } else {
+      serviceAccountInfo = null;
+  }
 } catch (e) {
   // This is expected in production where the file is not deployed.
   serviceAccountInfo = null;
@@ -35,7 +43,7 @@ if (!getApps().length) {
       throw new Error('Could not parse service account key from environment variable. Ensure it is valid JSON.');
     }
   } else if (serviceAccountInfo) {
-    // For local development, use the imported JSON file.
+    // For local development, use the loaded JSON file content.
     console.warn("Auth: Using local service account file. This is for local development only.");
     serviceAccount = serviceAccountInfo as ServiceAccount;
   }
