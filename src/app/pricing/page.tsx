@@ -75,41 +75,76 @@ function PricingPageLoading() {
   );
 }
 
-interface StripePaymentButtonProps {
-  paymentLinkUrl?: string;
+interface CheckoutButtonProps {
+  priceId?: string;
+  mode: 'payment' | 'subscription';
   planName: string;
 }
 
-function StripePaymentButton({ paymentLinkUrl, planName }: StripePaymentButtonProps) {
+function CheckoutButton({ priceId, mode, planName }: CheckoutButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const { user } = useUser();
   const router = useRouter();
   const { toast } = useToast();
 
-  const handlePayment = () => {
+  const handleCheckout = async () => {
     setIsLoading(true);
     if (!user) {
       router.push(`/login?redirect=/pricing`);
       return;
     }
-
-    if (!paymentLinkUrl) {
+    
+    if (!priceId) {
       toast({
         variant: 'destructive',
         title: 'Configuration Error',
-        description: `The payment link for the ${planName} plan is not set up.`,
+        description: `The Price ID for the ${planName} plan is not set up.`,
       });
       setIsLoading(false);
       return;
     }
 
-    // Append client_reference_id to the URL for the webhook to identify the user
-    const finalUrl = `${paymentLinkUrl}?client_reference_id=${user.uid}`;
-    window.location.href = finalUrl;
+    try {
+      const idToken = await user.getIdToken();
+      const response = await fetch('/api/stripe-checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${idToken}`,
+        },
+        body: JSON.stringify({ 
+            priceId, 
+            mode,
+            successPath: '/pricing?payment=success',
+            cancelPath: '/pricing?payment=cancelled',
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.url) {
+        window.location.href = data.url;
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Payment Error',
+          description: data.error || 'Failed to create checkout session.',
+        });
+        setIsLoading(false);
+      }
+    } catch (error: any) {
+      console.error('Checkout failed:', error);
+      toast({
+        variant: 'destructive',
+        title: 'Payment Error',
+        description: error.message || 'Could not initiate the payment process. Please try again.',
+      });
+      setIsLoading(false);
+    }
   };
 
   return (
-    <Button size="lg" className="w-full" onClick={handlePayment} disabled={isLoading || !paymentLinkUrl}>
+    <Button size="lg" className="w-full" onClick={handleCheckout} disabled={isLoading || !priceId}>
       {isLoading ? 'Redirecting...' : `Get ${planName}`}
     </Button>
   );
@@ -187,10 +222,10 @@ function PricingPageContent() {
         </div>
     );
   };
-
-  const weeklyPaymentLink = process.env.NEXT_PUBLIC_STRIPE_LINK_WEEKLY;
-  const coursePaymentLink = process.env.NEXT_PUBLIC_STRIPE_LINK_COURSE;
-  const lifetimePaymentLink = process.env.NEXT_PUBLIC_STRIPE_LINK_LIFETIME;
+  
+  const weeklyPriceId = process.env.NEXT_PUBLIC_STRIPE_WEEKLY_PRICE_ID;
+  const coursePriceId = process.env.NEXT_PUBLIC_STRIPE_COURSE_PRICE_ID;
+  const lifetimePriceId = process.env.NEXT_PUBLIC_STRIPE_LIFETIME_PRICE_ID;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -227,7 +262,7 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <StripePaymentButton paymentLinkUrl={weeklyPaymentLink} planName={t.weeklyPlan.title} />
+                  <CheckoutButton priceId={weeklyPriceId} mode="subscription" planName={t.weeklyPlan.title} />
                 </CardFooter>
               </Card>
 
@@ -252,7 +287,7 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <StripePaymentButton paymentLinkUrl={lifetimePaymentLink} planName={t.lifetimePlan.title} />
+                  <CheckoutButton priceId={lifetimePriceId} mode="payment" planName={t.lifetimePlan.title} />
                 </CardFooter>
               </Card>
 
@@ -276,7 +311,7 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                   <StripePaymentButton paymentLinkUrl={coursePaymentLink} planName={t.completePlan.title} />
+                   <CheckoutButton priceId={coursePriceId} mode="payment" planName={t.completePlan.title} />
                 </CardFooter>
               </Card>
             </div>
@@ -316,5 +351,7 @@ export default function PricingPage() {
     </Suspense>
   );
 }
+
+    
 
     
