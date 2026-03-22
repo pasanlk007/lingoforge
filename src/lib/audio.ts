@@ -36,7 +36,7 @@ const voiceMap: { [key: string]: string } = {
     'finnish': 'Finnish Female',
     'hebrew': 'Hebrew Male', // Female voice not available
     'tamil': 'Tamil Male',
-    'sinhala': 'Sinhala', // This is a custom voice name, assuming it's supported
+    'sinhala': 'Sinhala',
     'bengali': 'Bengali Female',
     'nepali': 'Nepali Female',
 };
@@ -44,6 +44,7 @@ const voiceMap: { [key: string]: string } = {
 class AudioEngine {
   private isReady = false;
   private readyCallbacks: (() => void)[] = [];
+  private readyCheckInterval: ReturnType<typeof setInterval> | null = null;
 
   constructor() {
     this.initialize();
@@ -52,17 +53,22 @@ class AudioEngine {
   private initialize() {
     if (typeof window === 'undefined') return;
 
-    // Check if the library is already loaded
-    if (window.responsiveVoice && typeof window.responsiveVoice.speak === 'function') {
+    if (this.readyCheckInterval) {
+        clearInterval(this.readyCheckInterval);
+    }
+    
+    // Check if the library is already loaded and supported
+    if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
       this.isReady = true;
       return;
     }
 
-    // Wait for the library to load. It's included via a <script> tag.
-    const interval = setInterval(() => {
-      if (window.responsiveVoice && typeof window.responsiveVoice.speak === 'function') {
+    // Poll until the library is loaded and supported.
+    this.readyCheckInterval = setInterval(() => {
+      // The `voiceSupport()` check is more reliable than just checking for `speak`.
+      if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
         this.isReady = true;
-        clearInterval(interval);
+        if(this.readyCheckInterval) clearInterval(this.readyCheckInterval);
         this.executeReadyCallbacks();
       }
     }, 100);
@@ -77,22 +83,24 @@ class AudioEngine {
   }
 
   private executeReadyCallbacks() {
-    this.readyCallbacks.forEach(cb => cb());
-    this.readyCallbacks = [];
+    while(this.readyCallbacks.length) {
+        const cb = this.readyCallbacks.shift();
+        if (cb) cb();
+    }
   }
 
   play(text: string, languageName: string, rate = 1) {
     this.onReady(() => {
-      const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
-      
-      if (window.responsiveVoice.isPlaying()) {
-        window.responsiveVoice.cancel();
-      }
-      
-      // Add a small delay to ensure cancel has taken effect on all platforms
-      setTimeout(() => {
+      try {
+        const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
+        // A new speak call should interrupt the previous one.
         window.responsiveVoice.speak(text, voice, { rate });
-      }, 50);
+      } catch (e) {
+        console.error("ResponsiveVoice failed to speak. Re-initializing.", e);
+        // If speaking fails, the library might be in a bad state. Re-init.
+        this.isReady = false;
+        this.initialize();
+      }
     });
   }
 
