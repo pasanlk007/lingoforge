@@ -1,42 +1,43 @@
 'use client';
 
-import { Snail, Volume2 } from 'lucide-react';
-import { audioPlayer } from '@/lib/audioPlayer';
-import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import { audioEngine } from '@/lib/audio';
+import { getAudioUrl } from '@/lib/audioUrls';
 
-interface AudioPlaybackProps {
-  text: string;
-  languageName: string;
-}
+type Props = {
+  url?: string;
+  text?: string;
+  languageName?: string;
+  week?: number;
+  day?: number;
+};
 
-export function AudioPlayback({ text, languageName }: AudioPlaybackProps) {
-  const play = (e: React.MouseEvent, rate: number) => {
-    e.stopPropagation();
-    audioPlayer.speak(text, languageName, rate);
+export function AudioPlayback({ url, text, languageName, week = 1, day = 1 }: Props) {
+  const handlePlay = () => {
+    let finalUrl = url;
+
+    // 🔥 fallback: build URL from text
+    if (!finalUrl && text && languageName) {
+      finalUrl = getAudioUrl(
+        languageName.toLowerCase(),
+        week,
+        day,
+        text
+      );
+    }
+
+    if (finalUrl) {
+      audioEngine.play(finalUrl);
+    } else {
+      console.warn('[AudioPlayback] No audio source');
+    }
   };
 
   return (
-    <div className="flex items-center rounded-full border bg-muted/50" onClick={(e) => e.stopPropagation()}>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button variant="ghost" size="icon" className="rounded-full" onClick={(e) => play(e, 1.0)}>
-            <Volume2 className="h-5 w-5" />
-            <span className="sr-only">Play audio normally for "{text}"</span>
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent><p>Play Normal</p></TooltipContent>
-      </Tooltip>
-      <div className="h-6 w-px bg-border"></div>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button variant="ghost" size="icon" className="rounded-full" onClick={(e) => play(e, 0.7)}>
-            <Snail className="h-5 w-5" />
-            <span className="sr-only">Play audio slowly for "{text}"</span>
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent><p>Play Slow</p></TooltipContent>
-      </Tooltip>
-    </div>
+    <button
+      onClick={handlePlay}
+      className="px-3 py-2 bg-blue-500 text-white rounded"
+    >
+      🔊 Play
+    </button>
   );
 }
