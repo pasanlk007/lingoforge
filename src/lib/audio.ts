@@ -1,7 +1,5 @@
 'use client';
 
-// This file contains all translation data and language constants for the app.
-
 // Define the ResponsiveVoice interface for TypeScript
 declare global {
   interface Window {
@@ -35,64 +33,78 @@ const voiceMap: { [key: string]: string } = {
     'arabic': 'Arabic Female',
     'turkish': 'Turkish Female',
     'greek': 'Greek Female',
-    'serbian': 'Serbian Male', // Female voice not available
+    'serbian': 'Serbian Male',
     'finnish': 'Finnish Female',
-    'hebrew': 'Hebrew Male', // Female voice not available
+    'hebrew': 'Hebrew Male',
     'tamil': 'Tamil Male',
     'sinhala': 'Sinhala',
     'bengali': 'Bengali Female',
     'nepali': 'Nepali Female',
 };
 
-/**
- * A simple, direct-play function that checks for readiness.
- * It includes a single retry mechanism to handle initialization race conditions.
- */
-function playAudio(text: string, languageName: string, rate: number) {
-  // Guard against server-side rendering
-  if (typeof window === 'undefined' || typeof window.responsiveVoice === 'undefined') {
-    console.error("AudioEngine: Environment is not ready for audio playback.");
-    return;
-  }
+let isVoiceReady = false;
+const pendingPlayCalls: (() => void)[] = [];
 
-  // Check if the library is loaded and has voices.
-  if (window.responsiveVoice.voiceSupport()) {
-    const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
-    window.responsiveVoice.cancel(); // Stop any currently playing audio.
-    window.responsiveVoice.speak(text, voice, { rate });
-  } else {
-    // If not ready, wait a bit and try one more time.
-    // This is a simple way to handle the race condition where the `play`
-    // function is called before the `OnVoiceReady` event has fired.
-    console.warn("ResponsiveVoice not ready. Retrying in 250ms.");
-    setTimeout(() => {
-        if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
-            const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
-            window.responsiveVoice.cancel();
-            window.responsiveVoice.speak(text, voice, { rate });
-        } else {
-            console.error("AudioEngine: ResponsiveVoice failed to initialize in time.");
-        }
-    }, 250);
-  }
+// This function will be assigned to the window object.
+// ResponsiveVoice will call it when its scripts are loaded and ready.
+if (typeof window !== 'undefined') {
+  window.OnVoiceReady = () => {
+    isVoiceReady = true;
+    // Execute any calls that were queued while the voice engine was loading.
+    pendingPlayCalls.forEach(call => call());
+    // Clear the queue
+    pendingPlayCalls.length = 0;
+  };
 }
 
+/**
+ * A robust, event-driven audio engine for ResponsiveVoice.js.
+ * It queues audio playback requests until the voice engine is fully initialized,
+ * preventing race conditions and silent failures in WebViews.
+ */
 export const audioEngine = {
   /**
    * Plays the given text using the specified language.
+   * If the voice engine is not ready, the request is queued.
    * @param text The text to speak.
    * @param languageName The name of the language (e.g., "French").
    * @param rate The speech rate (default is 1).
    */
   play: (text: string, languageName: string, rate = 1) => {
-    playAudio(text, languageName, rate);
+    const playLogic = () => {
+      // Guard against calls made in a non-browser environment.
+      if (typeof window === 'undefined' || typeof window.responsiveVoice === 'undefined') {
+        console.error("Audio playback is only supported in the browser.");
+        return;
+      }
+      
+      const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
+      
+      // Always cancel previous audio to prevent overlap.
+      if (window.responsiveVoice.isPlaying()) {
+        window.responsiveVoice.cancel();
+      }
+
+      // A tiny delay can help ensure the 'cancel' command is processed on all devices
+      // before the new 'speak' command is issued.
+      setTimeout(() => {
+        window.responsiveVoice.speak(text, voice, { rate });
+      }, 50);
+    };
+
+    if (isVoiceReady) {
+      playLogic();
+    } else {
+      // If the voice engine isn't ready, queue the playback call.
+      pendingPlayCalls.push(playLogic);
+    }
   },
 
   /**
    * Stops any currently playing audio.
    */
   stop: () => {
-    if (typeof window !== 'undefined' && window.responsiveVoice && window.responsiveVoice.isPlaying()) {
+    if (isVoiceReady && typeof window.responsiveVoice !== 'undefined' && window.responsiveVoice.isPlaying()) {
       window.responsiveVoice.cancel();
     }
   },
