@@ -461,7 +461,7 @@ export const translations = {
     journeyWorking: "काम करना",
     journeySpeaking: "बोलना",
     journeyBelonging: "अपनापन",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -683,7 +683,7 @@ export const translations = {
     journeyWorking: "کام کرنا",
     journeySpeaking: "بولنا",
     journeyBelonging: "اپنانا",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -897,7 +897,7 @@ export const translations = {
     journeyWorking: "কাজ করা",
     journeySpeaking: "কথা বলা",
     journeyBelonging: "একাত্ম হওয়া",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -1119,7 +1119,7 @@ export const translations = {
     journeyWorking: "काम गर्दै",
     journeySpeaking: "बोल्दै",
     journeyBelonging: "सम्बन्धित",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -1341,7 +1341,7 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -1376,6 +1376,12 @@ export const translations = {
     },
     pricingTitle: "Simple Pricing",
     pricingSub: "Start free. Upgrade when ready.",
+     pricingPage: {
+        purchasingFor: "You are purchasing for:",
+        changeLanguageNote: "Change your target language on the dashboard.",
+        autoRenewNote: "This plan auto-renews. Cancel anytime.",
+        freeTrialNote: "Access Week 1 of the Survival Path for free. No credit card required.",
+    },
     freePlan: {
       title: "Free",
       price: "$0",
@@ -1502,6 +1508,8 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradePlan: "Upgrade Plan",
+      lessonsLocked: "This week's lessons are locked.",
       upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
@@ -1559,7 +1567,7 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -1594,6 +1602,12 @@ export const translations = {
     },
     pricingTitle: "Simple Pricing",
     pricingSub: "Start free. Upgrade when ready.",
+     pricingPage: {
+        purchasingFor: "You are purchasing for:",
+        changeLanguageNote: "Change your target language on the dashboard.",
+        autoRenewNote: "This plan auto-renews. Cancel anytime.",
+        freeTrialNote: "Access Week 1 of the Survival Path for free. No credit card required.",
+    },
     freePlan: {
       title: "Free",
       price: "$0",
@@ -1720,6 +1734,8 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradePlan: "Upgrade Plan",
+      lessonsLocked: "This week's lessons are locked.",
       upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
@@ -1777,7 +1793,7 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -1812,6 +1828,12 @@ export const translations = {
     },
     pricingTitle: "Simple Pricing",
     pricingSub: "Start free. Upgrade when ready.",
+     pricingPage: {
+        purchasingFor: "You are purchasing for:",
+        changeLanguageNote: "Change your target language on the dashboard.",
+        autoRenewNote: "This plan auto-renews. Cancel anytime.",
+        freeTrialNote: "Access Week 1 of the Survival Path for free. No credit card required.",
+    },
     freePlan: {
       title: "Free",
       price: "$0",
@@ -1938,6 +1960,8 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradePlan: "Upgrade Plan",
+      lessonsLocked: "This week's lessons are locked.",
       upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
@@ -1995,7 +2019,7 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -2030,6 +2054,12 @@ export const translations = {
     },
     pricingTitle: "Simple Pricing",
     pricingSub: "Start free. Upgrade when ready.",
+     pricingPage: {
+        purchasingFor: "You are purchasing for:",
+        changeLanguageNote: "Change your target language on the dashboard.",
+        autoRenewNote: "This plan auto-renews. Cancel anytime.",
+        freeTrialNote: "Access Week 1 of the Survival Path for free. No credit card required.",
+    },
     freePlan: {
       title: "Free",
       price: "$0",
@@ -2156,6 +2186,8 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradePlan: "Upgrade Plan",
+      lessonsLocked: "This week's lessons are locked.",
       upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
@@ -2213,7 +2245,7 @@ export const translations = {
     journeyWorking: "Working",
     journeySpeaking: "Speaking",
     journeyBelonging: "Belonging",
-    redesign_title: "Don't be a silent foreigner.",
+    redesign_title: "Just 10 minutes a day can change everything.",
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
@@ -2248,6 +2280,12 @@ export const translations = {
     },
     pricingTitle: "Simple Pricing",
     pricingSub: "Start free. Upgrade when ready.",
+     pricingPage: {
+        purchasingFor: "You are purchasing for:",
+        changeLanguageNote: "Change your target language on the dashboard.",
+        autoRenewNote: "This plan auto-renews. Cancel anytime.",
+        freeTrialNote: "Access Week 1 of the Survival Path for free. No credit card required.",
+    },
     freePlan: {
       title: "Free",
       price: "$0",
@@ -2374,6 +2412,8 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradePlan: "Upgrade Plan",
+      lessonsLocked: "This week's lessons are locked.",
       upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
@@ -2450,6 +2490,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
