@@ -10,6 +10,7 @@ declare global {
       cancel: () => void;
       isPlaying: () => boolean;
     };
+    OnVoiceReady?: () => void;
   }
 }
 
@@ -44,34 +45,48 @@ const voiceMap: { [key: string]: string } = {
 class AudioEngine {
   private isReady = false;
   private readyCallbacks: (() => void)[] = [];
-  private readyCheckInterval: ReturnType<typeof setInterval> | null = null;
 
   constructor() {
     this.initialize();
   }
 
   private initialize() {
-    if (typeof window === 'undefined') return;
-
-    if (this.readyCheckInterval) {
-        clearInterval(this.readyCheckInterval);
-    }
-    
-    // Check if the library is already loaded and supported
-    if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
-      this.isReady = true;
+    if (typeof window === 'undefined') {
       return;
     }
 
-    // Poll until the library is loaded and supported.
-    this.readyCheckInterval = setInterval(() => {
-      // The `voiceSupport()` check is more reliable than just checking for `speak`.
-      if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
+    // If the library is already loaded and supports voices, we are ready.
+    if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
+      if (!this.isReady) {
+          this.isReady = true;
+          this.executeReadyCallbacks();
+      }
+      return;
+    }
+
+    // Set the official callback. The library will call this function when it's initialized.
+    window.OnVoiceReady = () => {
+      if (!this.isReady) {
         this.isReady = true;
-        if(this.readyCheckInterval) clearInterval(this.readyCheckInterval);
         this.executeReadyCallbacks();
       }
-    }, 100);
+    };
+    
+    // Fallback polling for scenarios where OnVoiceReady might have already fired.
+    const pollForReady = () => {
+        if (this.isReady) return;
+        if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
+             if (!this.isReady) {
+                this.isReady = true;
+                this.executeReadyCallbacks();
+            }
+        } else {
+            setTimeout(pollForReady, 150);
+        }
+    }
+    
+    // Start polling after a short delay to allow the script to load.
+    setTimeout(pollForReady, 100);
   }
 
   private onReady(callback: () => void) {
@@ -83,30 +98,46 @@ class AudioEngine {
   }
 
   private executeReadyCallbacks() {
-    while(this.readyCallbacks.length) {
+    while(this.readyCallbacks.length > 0) {
         const cb = this.readyCallbacks.shift();
-        if (cb) cb();
+        if (cb) {
+          try {
+            cb();
+          } catch (e) {
+            console.error("Error executing ready callback", e);
+          }
+        }
     }
   }
 
   play(text: string, languageName: string, rate = 1) {
     this.onReady(() => {
+      if (!window.responsiveVoice) {
+        console.error("AudioEngine: ResponsiveVoice is not available.");
+        return;
+      }
+      
+      const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
+      
       try {
-        const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
-        // A new speak call should interrupt the previous one.
-        window.responsiveVoice.speak(text, voice, { rate });
+        // Stop any currently playing audio to prevent overlap.
+        window.responsiveVoice.cancel();
+        
+        // A short delay ensures the 'cancel' command is processed before 'speak' is called,
+        // which is a common requirement for web audio APIs on mobile devices.
+        setTimeout(() => {
+          window.responsiveVoice.speak(text, voice, { rate });
+        }, 100);
+
       } catch (e) {
-        console.error("ResponsiveVoice failed to speak. Re-initializing.", e);
-        // If speaking fails, the library might be in a bad state. Re-init.
-        this.isReady = false;
-        this.initialize();
+        console.error("AudioEngine: ResponsiveVoice failed to speak.", e);
       }
     });
   }
 
   stop() {
     this.onReady(() => {
-      if (window.responsiveVoice.isPlaying()) {
+      if (window.responsiveVoice && window.responsiveVoice.isPlaying()) {
         window.responsiveVoice.cancel();
       }
     });
