@@ -1,5 +1,4 @@
-import { playAudio } from "@/lib/audioPlayer";
-'use client';
+"use client";
 
 import { audioEngine } from '@/lib/audio';
 import { Button } from '@/components/ui/button';
