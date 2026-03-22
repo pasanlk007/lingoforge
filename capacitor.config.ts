@@ -4,9 +4,6 @@ const config: CapacitorConfig = {
   appId: 'com.lingoforge.app',
   appName: 'LingoForge',
   webDir: 'out',
-  server: {
-    cleartext: false,
-  },
   android: {
     allowMixedContent: false,
     backgroundColor: '#0f1923',
