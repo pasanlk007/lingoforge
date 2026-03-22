@@ -2,41 +2,66 @@
 
 import { targetLanguages } from '@/lib/translations';
 
-class AudioPlayer {
-  private currentAudio: HTMLAudioElement | null = null;
+declare const responsiveVoice: any;
 
-  private getLangCode(languageName: string): string {
-    const langInfo = targetLanguages.find(
-      l => l.lang.toLowerCase() === languageName.toLowerCase()
-    );
-    return langInfo?.countries[0]?.split('-')[0] || 'en';
+class AudioPlayer {
+
+  private getLangVoice(languageName: string): string {
+    const voiceMap: Record<string, string> = {
+      'French': 'French Female',
+      'German': 'Deutsch Female',
+      'Spanish': 'Spanish Female',
+      'Italian': 'Italian Female',
+      'Portuguese': 'Portuguese Female',
+      'Romanian': 'Romanian Female',
+      'Dutch': 'Dutch Female',
+      'Polish': 'Polish Female',
+      'Russian': 'Russian Female',
+      'Arabic': 'Arabic Female',
+      'Japanese': 'Japanese Female',
+      'Korean': 'Korean Female',
+      'Chinese': 'Chinese Female',
+      'Turkish': 'Turkish Female',
+      'Greek': 'Greek Female',
+      'Hindi': 'Hindi Female',
+      'English': 'UK English Female',
+    };
+    return voiceMap[languageName] || 'UK English Female';
   }
 
   public async speak(text: string, languageName: string, rate: number = 1.0): Promise<void> {
     if (!text) return;
     this.cancel();
 
-    const langCode = this.getLangCode(languageName);
-    const encodedText = encodeURIComponent(text);
-    const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodedText}&tl=${langCode}&client=tw-ob`;
-
     try {
-      const audio = new Audio(url);
-      audio.playbackRate = rate;
-      this.currentAudio = audio;
-      await audio.play();
-      audio.onended = () => { this.currentAudio = null; };
-      audio.onerror = () => { this.currentAudio = null; };
-    } catch (e) {
-      console.warn('[AudioPlayer] Failed:', e);
+      if (typeof responsiveVoice !== 'undefined') {
+        const voice = this.getLangVoice(languageName);
+        responsiveVoice.speak(text, voice, { rate: rate });
+        return;
+      }
+    } catch (e) {}
+
+    // Fallback: Web Speech API
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+      const langInfo = targetLanguages.find(
+        l => l.lang.toLowerCase() === languageName.toLowerCase()
+      );
+      const langCode = langInfo?.countries[0] || 'en-US';
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = langCode;
+      utterance.rate = rate;
+      window.speechSynthesis.speak(utterance);
     }
   }
 
   public cancel(): void {
-    if (this.currentAudio) {
-      this.currentAudio.pause();
-      this.currentAudio.src = '';
-      this.currentAudio = null;
+    try {
+      if (typeof responsiveVoice !== 'undefined') {
+        responsiveVoice.cancel();
+      }
+    } catch (e) {}
+    if (typeof window !== 'undefined' && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
     }
   }
 }
