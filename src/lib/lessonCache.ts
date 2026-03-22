@@ -10,10 +10,10 @@ export async function getOrGenerateLesson(
   try {
     const native = nativeLanguage.toLowerCase();
     const target = language.toLowerCase();
-
     const weekPadded = String(week).padStart(2, '0');
-    // This path is more standard: e.g., /lessons/french/sinhala/survival/week_01.json
-    const filePath = `lessons/${target}/${native}/${path}/week_${weekPadded}.json`;
+    
+    // Corrected path to match user's example format: sinhala_romanian_survival_week01.json
+    const filePath = `lessons/${native}_${target}_${path}_week${weekPadded}.json`;
 
     let weekData: WeeklyLessonPlan | null = null;
 
