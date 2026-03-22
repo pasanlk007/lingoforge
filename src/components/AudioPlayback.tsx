@@ -39,7 +39,7 @@ export function AudioPlayback({ text, languageName }: Props) {
           <Button
             variant="outline"
             size="icon"
-            onClick={() => playAudio(text)}
+            onClick={() => playAudio(text || "")}
             aria-label="Play slow"
           >
             <TortoiseIcon />
@@ -55,7 +55,7 @@ export function AudioPlayback({ text, languageName }: Props) {
           <Button
             variant="outline"
             size="icon"
-            onClick={() => playAudio(text)}
+            onClick={() => playAudio(text || "")}
             aria-label="Play normal"
           >
              <VolumeIcon />
