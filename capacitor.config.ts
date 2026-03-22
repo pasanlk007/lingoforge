@@ -5,7 +5,6 @@ const config: CapacitorConfig = {
   appName: 'LingoForge',
   webDir: 'out',
   server: {
-    url: 'https://lingoforge.app',
     cleartext: false,
   },
   android: {
