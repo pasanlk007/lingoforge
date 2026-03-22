@@ -1,8 +1,7 @@
 "use client";
-
-import { audioEngine } from '@/lib/audio';
-import { Button } from '@/components/ui/button';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { playAudio } from "@/lib/audioPlayer";
+import { audioEngine } from "@/lib/audio";
+import { Button } from "@/components/ui/button";
 
 type Props = {
   text?: string;
