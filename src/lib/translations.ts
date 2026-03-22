@@ -238,7 +238,7 @@ export const translations = {
     journeyWorking: "වැඩ කිරීම",
     journeySpeaking: "කතා කිරීම",
     journeyBelonging: "අයිති වීම",
-    redesign_title: "නිහඬ විදේශිකයෙක් නොවන්න.",
+    redesign_title: "දිනකට මිනිත්තු 10ක් සියල්ල වෙනස් කළ හැකිය.",
     redesign_subtitle: "දිනකට මිනිත්තු 10ක් — දින 84කින් විදේශ රටක විශ්වාසයෙන් කතා කරන්න.",
     redesign_cta_text: "විදේශ රටක ජීවිතය පහසු කරන භාෂාව.",
     redesign_cta_button: "Start here",
@@ -817,14 +817,6 @@ export const translations = {
         grantPermission: "اجازت دیں",
         save: "یاد دہانی محفوظ کریں",
         saved: "یاد دہانی کی ترتیبات محفوظ ہوگئیں!",
-      },
-      referrals: {
-        title: "دوست کو ریفر کریں",
-        description: "اپنا کوڈ دوست کے ساتھ شیئر کریں۔ جب وہ سائن اپ کریں گے تو آپ دونوں کو بونس ملے گا!",
-        yourCode: "آپ کا ریفرل کوڈ",
-        copyCode: "کوڈ کاپی کریں",
-        copied: "کاپی ہو گیا!",
-        bonus: "آپ دونوں کو 1 ہفتے کی مفت پریمیم رسائی ملتی ہے!"
       },
     },
     notifications: {
@@ -1497,6 +1489,7 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
       errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
@@ -1702,6 +1695,7 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
       errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
@@ -1907,6 +1901,7 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
       errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
@@ -2112,6 +2107,7 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
       errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
@@ -2317,6 +2313,7 @@ export const translations = {
       days: "Days",
       completed: "Completed",
       day: "Day",
+      upgradeToUnlock: "Upgrade to Unlock",
       // lesson page errors
       errorTitle: "Could Not Load Lesson",
       errorWeekNotFound: "Lesson content for Week {week} of the {path} path does not exist. Please create the file at 'public{lessonPath}'.",
@@ -2392,6 +2389,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
