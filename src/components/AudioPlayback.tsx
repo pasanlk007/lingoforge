@@ -1,4 +1,5 @@
 "use client";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
 import { playAudio } from "@/lib/audioPlayer";
 import { audioEngine } from "@/lib/audio";
 import { Button } from "@/components/ui/button";
