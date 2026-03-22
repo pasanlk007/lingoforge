@@ -3,7 +3,7 @@
 class AudioEngine {
   private audio: HTMLAudioElement | null = null;
 
-  play(url: string) {
+  play(url: string, rate: number = 1) {
     if (!url) return;
 
     try {
@@ -14,6 +14,7 @@ class AudioEngine {
 
       this.audio = new Audio(url);
       this.audio.preload = 'auto';
+      this.audio.playbackRate = rate;
 
       this.audio.play().catch((err) => {
         console.warn('[AudioEngine] Play failed:', err);

@@ -4,40 +4,42 @@ import { audioEngine } from '@/lib/audio';
 import { getAudioUrl } from '@/lib/audioUrls';
 
 type Props = {
-  url?: string;
   text?: string;
   languageName?: string;
   week?: number;
   day?: number;
 };
 
-export function AudioPlayback({ url, text, languageName, week = 1, day = 1 }: Props) {
-  const handlePlay = () => {
-    let finalUrl = url;
+export function AudioPlayback({ text, languageName, week = 1, day = 1 }: Props) {
 
-    // 🔥 fallback: build URL from text
-    if (!finalUrl && text && languageName) {
-      finalUrl = getAudioUrl(
-        languageName.toLowerCase(),
-        week,
-        day,
-        text
-      );
-    }
+  const play = (rate: number) => {
+    if (!text || !languageName) return;
 
-    if (finalUrl) {
-      audioEngine.play(finalUrl);
-    } else {
-      console.warn('[AudioPlayback] No audio source');
-    }
+    const url = getAudioUrl(
+      languageName.toLowerCase(),
+      week,
+      day,
+      text
+    );
+
+    audioEngine.play(url, rate);
   };
 
   return (
-    <button
-      onClick={handlePlay}
-      className="px-3 py-2 bg-blue-500 text-white rounded"
-    >
-      🔊 Play
-    </button>
+    <div className="flex gap-2">
+      <button
+        onClick={() => play(0.7)}
+        className="px-2 py-1 bg-gray-500 text-white rounded"
+      >
+        🐢 Slow
+      </button>
+
+      <button
+        onClick={() => play(1)}
+        className="px-2 py-1 bg-blue-500 text-white rounded"
+      >
+        🔊 Play
+      </button>
+    </div>
   );
 }
