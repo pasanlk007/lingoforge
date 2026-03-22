@@ -1,127 +1,42 @@
 'use client';
 
 import { targetLanguages } from '@/lib/translations';
-import { Capacitor } from '@capacitor/core';
-import { TextToSpeech } from '@capacitor-community/text-to-speech';
-
 
 class AudioPlayer {
-  private utteranceRef: SpeechSynthesisUtterance | null = null;
-  private voices: SpeechSynthesisVoice[] = [];
-  private isUnlocked = false;
+  private currentAudio: HTMLAudioElement | null = null;
 
-  constructor() {
-    if (typeof window !== 'undefined' && window.speechSynthesis) {
-      this.loadVoices();
-      if (window.speechSynthesis.onvoiceschanged !== undefined) {
-        window.speechSynthesis.onvoiceschanged = () => this.loadVoices();
-      }
-      // Unlock audio on first user interaction for web
-      document.addEventListener('touchstart', () => this.unlockAudio(), { once: true });
-      document.addEventListener('click', () => this.unlockAudio(), { once: true });
-    }
-  }
-
-  private unlockAudio() {
-    if (this.isUnlocked || Capacitor.isNativePlatform()) return;
-    try {
-      const utterance = new SpeechSynthesisUtterance('');
-      window.speechSynthesis.speak(utterance);
-      window.speechSynthesis.cancel();
-      this.isUnlocked = true;
-    } catch (e) {
-      console.warn('Could not unlock audio context:', e)
-    }
-  }
-
-  private loadVoices() {
-    this.voices = window.speechSynthesis.getVoices();
-  }
-
-  private getVoices(): Promise<SpeechSynthesisVoice[]> {
-    return new Promise(resolve => {
-      this.loadVoices();
-      if (this.voices.length > 0) return resolve(this.voices);
-
-      const voiceLoadInterval = setInterval(() => {
-        this.loadVoices();
-        if (this.voices.length > 0) {
-          clearInterval(voiceLoadInterval);
-          resolve(this.voices);
-        }
-      }, 100);
-
-      setTimeout(() => {
-        clearInterval(voiceLoadInterval);
-        resolve(this.voices);
-      }, 3000);
-    });
+  private getLangCode(languageName: string): string {
+    const langInfo = targetLanguages.find(
+      l => l.lang.toLowerCase() === languageName.toLowerCase()
+    );
+    return langInfo?.countries[0]?.split('-')[0] || 'en';
   }
 
   public async speak(text: string, languageName: string, rate: number = 1.0): Promise<void> {
     if (!text) return;
+    this.cancel();
 
-    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === languageName.toLowerCase());
-    const langCode = langInfo?.countries[0] || 'en-US';
+    const langCode = this.getLangCode(languageName);
+    const encodedText = encodeURIComponent(text);
+    const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodedText}&tl=${langCode}&client=tw-ob`;
 
-    // NATIVE PLATFORM (ANDROID/IOS)
-    if (Capacitor.isNativePlatform()) {
-      try {
-        await TextToSpeech.speak({
-          text: text,
-          lang: langCode,
-          rate: rate,
-        });
-      } catch (e) {
-        console.error('[AudioPlayer] Capacitor TextToSpeech error:', e);
-      }
-      return;
+    try {
+      const audio = new Audio(url);
+      audio.playbackRate = rate;
+      this.currentAudio = audio;
+      await audio.play();
+      audio.onended = () => { this.currentAudio = null; };
+      audio.onerror = () => { this.currentAudio = null; };
+    } catch (e) {
+      console.warn('[AudioPlayer] Failed:', e);
     }
-
-    // WEB PLATFORM
-    if (typeof window === 'undefined' || !window.speechSynthesis) return;
-
-    window.speechSynthesis.cancel();
-
-    const voices = await this.getVoices();
-    const utterance = new SpeechSynthesisUtterance(text);
-    this.utteranceRef = utterance;
-    utterance.lang = langCode;
-    utterance.rate = rate;
-
-    let voice = voices.find(v => v.lang === langCode);
-    if (!voice) {
-      const primaryLang = langCode.split('-')[0];
-      voice = voices.find(v => v.lang.startsWith(primaryLang));
-    }
-    if (voice) utterance.voice = voice;
-
-    utterance.onend = () => { this.utteranceRef = null; };
-    utterance.onerror = (event) => {
-      console.warn('[AudioPlayer] Web Speech API error', event);
-      this.utteranceRef = null;
-    };
-
-    window.speechSynthesis.speak(utterance);
-
-    // Android Chrome browser fix (not WebView)
-    const androidFix = setInterval(() => {
-      if (!window.speechSynthesis.speaking) {
-        clearInterval(androidFix);
-        return;
-      }
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-      }
-    }, 100);
   }
 
   public cancel(): void {
-    if (Capacitor.isNativePlatform()) {
-      TextToSpeech.stop();
-    } else if (typeof window !== 'undefined' && window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-      this.utteranceRef = null;
+    if (this.currentAudio) {
+      this.currentAudio.pause();
+      this.currentAudio.src = '';
+      this.currentAudio = null;
     }
   }
 }
