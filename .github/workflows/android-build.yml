@@ -32,7 +32,7 @@ jobs:
         run: mkdir -p android/app/src/main/assets
 
       - name: Sync Capacitor
-        run: npx cap sync android
+        run: mkdir -p out && npx cap sync android
 
       - name: Make gradlew executable
         run: chmod +x android/gradlew
