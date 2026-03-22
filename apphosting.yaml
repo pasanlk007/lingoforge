@@ -2,6 +2,7 @@ runConfig:
   runtime: nodejs20
   maxInstances: 1
 build:
+  command: npm run build
   env:
     - variable: FIREBASE_ADMIN_SDK_KEY
       secret: FIREBASE_ADMIN_SDK_KEY
