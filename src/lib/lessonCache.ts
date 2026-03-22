@@ -1,3 +1,4 @@
+
 import type { LanguageLesson, LearningPath, WeeklyLessonPlan } from "./types";
 
 export async function getOrGenerateLesson(
@@ -12,8 +13,8 @@ export async function getOrGenerateLesson(
     const target = language.toLowerCase();
     const weekPadded = String(week).padStart(2, '0');
     
-    // Corrected path to match user's flat file name format: english_romanian_survival_week01.json
-    const filePath = `lessons/${native}_${target}_${path}_week${weekPadded}.json`;
+    // Corrected path to match user's flat file name format: native_target-path_week01.json
+    const filePath = `lessons/${native}_${target}-${path}_week${weekPadded}.json`;
 
     let weekData: WeeklyLessonPlan | null = null;
 
