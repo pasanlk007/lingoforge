@@ -1,14 +1,3 @@
-export const getAudioUrl = (
-  lang: string,
-  week: number,
-  day: number,
-  word: string
-) => {
-  const cleanWord = word
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9\-]/g, '');
-
-  return `https://your-cdn.com/audio/${lang}/week${week}/day${day}/${cleanWord}.mp3`;
+export const getAudioUrl = () => {
+  return "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
 };
