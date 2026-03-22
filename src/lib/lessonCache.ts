@@ -13,8 +13,8 @@ export async function getOrGenerateLesson(
     const target = language.toLowerCase();
     const weekPadded = String(week).padStart(2, '0');
     
-    // Corrected path to use underscores as separators: native_target_path_week01.json
-    const filePath = `lessons/${native}_${target}_${path}_week${weekPadded}.json`;
+    // Corrected path to use the nested directory structure: <native>_<target>/<path>/week_<week>.json
+    const filePath = `lessons/${native}_${target}/${path}/week_${weekPadded}.json`;
 
     let weekData: WeeklyLessonPlan | null = null;
 
