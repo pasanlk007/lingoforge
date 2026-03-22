@@ -24,6 +24,10 @@ class AudioPlayer {
       'Turkish': 'Turkish Female',
       'Greek': 'Greek Female',
       'Hindi': 'Hindi Female',
+      'Hebrew': 'Hebrew Female',
+      'Finnish': 'Finnish Female',
+      'Serbian': 'Serbian Male',
+      'Tamil': 'Tamil Female',
       'English': 'UK English Female',
     };
     return voiceMap[languageName] || 'UK English Female';
