@@ -1,5 +1,7 @@
 'use client';
 
+// This file contains all translation data and language constants for the app.
+
 // Define the ResponsiveVoice interface for TypeScript
 declare global {
   interface Window {
@@ -42,106 +44,56 @@ const voiceMap: { [key: string]: string } = {
     'nepali': 'Nepali Female',
 };
 
-class AudioEngine {
-  private isReady = false;
-  private readyCallbacks: (() => void)[] = [];
-
-  constructor() {
-    this.initialize();
+/**
+ * A simple, direct-play function that checks for readiness.
+ * It includes a single retry mechanism to handle initialization race conditions.
+ */
+function playAudio(text: string, languageName: string, rate: number) {
+  // Guard against server-side rendering
+  if (typeof window === 'undefined' || typeof window.responsiveVoice === 'undefined') {
+    console.error("AudioEngine: Environment is not ready for audio playback.");
+    return;
   }
 
-  private initialize() {
-    if (typeof window === 'undefined') {
-      return;
-    }
-
-    // If the library is already loaded and supports voices, we are ready.
-    if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
-      if (!this.isReady) {
-          this.isReady = true;
-          this.executeReadyCallbacks();
-      }
-      return;
-    }
-
-    // Set the official callback. The library will call this function when it's initialized.
-    window.OnVoiceReady = () => {
-      if (!this.isReady) {
-        this.isReady = true;
-        this.executeReadyCallbacks();
-      }
-    };
-    
-    // Fallback polling for scenarios where OnVoiceReady might have already fired.
-    const pollForReady = () => {
-        if (this.isReady) return;
+  // Check if the library is loaded and has voices.
+  if (window.responsiveVoice.voiceSupport()) {
+    const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
+    window.responsiveVoice.cancel(); // Stop any currently playing audio.
+    window.responsiveVoice.speak(text, voice, { rate });
+  } else {
+    // If not ready, wait a bit and try one more time.
+    // This is a simple way to handle the race condition where the `play`
+    // function is called before the `OnVoiceReady` event has fired.
+    console.warn("ResponsiveVoice not ready. Retrying in 250ms.");
+    setTimeout(() => {
         if (window.responsiveVoice && window.responsiveVoice.voiceSupport()) {
-             if (!this.isReady) {
-                this.isReady = true;
-                this.executeReadyCallbacks();
-            }
+            const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
+            window.responsiveVoice.cancel();
+            window.responsiveVoice.speak(text, voice, { rate });
         } else {
-            setTimeout(pollForReady, 150);
+            console.error("AudioEngine: ResponsiveVoice failed to initialize in time.");
         }
-    }
-    
-    // Start polling after a short delay to allow the script to load.
-    setTimeout(pollForReady, 100);
-  }
-
-  private onReady(callback: () => void) {
-    if (this.isReady) {
-      callback();
-    } else {
-      this.readyCallbacks.push(callback);
-    }
-  }
-
-  private executeReadyCallbacks() {
-    while(this.readyCallbacks.length > 0) {
-        const cb = this.readyCallbacks.shift();
-        if (cb) {
-          try {
-            cb();
-          } catch (e) {
-            console.error("Error executing ready callback", e);
-          }
-        }
-    }
-  }
-
-  play(text: string, languageName: string, rate = 1) {
-    this.onReady(() => {
-      if (!window.responsiveVoice) {
-        console.error("AudioEngine: ResponsiveVoice is not available.");
-        return;
-      }
-      
-      const voice = voiceMap[languageName.toLowerCase()] || 'UK English Female';
-      
-      try {
-        // Stop any currently playing audio to prevent overlap.
-        window.responsiveVoice.cancel();
-        
-        // A short delay ensures the 'cancel' command is processed before 'speak' is called,
-        // which is a common requirement for web audio APIs on mobile devices.
-        setTimeout(() => {
-          window.responsiveVoice.speak(text, voice, { rate });
-        }, 100);
-
-      } catch (e) {
-        console.error("AudioEngine: ResponsiveVoice failed to speak.", e);
-      }
-    });
-  }
-
-  stop() {
-    this.onReady(() => {
-      if (window.responsiveVoice && window.responsiveVoice.isPlaying()) {
-        window.responsiveVoice.cancel();
-      }
-    });
+    }, 250);
   }
 }
 
-export const audioEngine = new AudioEngine();
+export const audioEngine = {
+  /**
+   * Plays the given text using the specified language.
+   * @param text The text to speak.
+   * @param languageName The name of the language (e.g., "French").
+   * @param rate The speech rate (default is 1).
+   */
+  play: (text: string, languageName: string, rate = 1) => {
+    playAudio(text, languageName, rate);
+  },
+
+  /**
+   * Stops any currently playing audio.
+   */
+  stop: () => {
+    if (typeof window !== 'undefined' && window.responsiveVoice && window.responsiveVoice.isPlaying()) {
+      window.responsiveVoice.cancel();
+    }
+  },
+};
