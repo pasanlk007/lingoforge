@@ -1,4 +1,5 @@
 
+
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -1410,6 +1411,18 @@ export const translations = {
       feat3: "Lifetime access",
       feat4: "Priority email support",
     },
+    lifetimePlan: {
+      title: "Survive Anywhere",
+      price: "$79",
+      per: "/one-time",
+      badge: "⭐ BEST VALUE",
+      desc: "One-time payment for lifetime access to ALL languages.",
+      subtext: "One plan to rule them all.",
+      feat1: "Everything in Single Course",
+      feat2: "Lifetime access to ALL current & future languages",
+      feat3: "Priority Support",
+      feat4: "Become a polyglot!",
+    },
     footerTagline: "Language survival for the modern migrant.",
     footerLinks: {
       company: "Company",
@@ -1615,6 +1628,18 @@ export const translations = {
       feat2: "All 12 weeks of content",
       feat3: "Lifetime access",
       feat4: "Priority email support",
+    },
+    lifetimePlan: {
+      title: "Survive Anywhere",
+      price: "$79",
+      per: "/one-time",
+      badge: "⭐ BEST VALUE",
+      desc: "One-time payment for lifetime access to ALL languages.",
+      subtext: "One plan to rule them all.",
+      feat1: "Everything in Single Course",
+      feat2: "Lifetime access to ALL current & future languages",
+      feat3: "Priority Support",
+      feat4: "Become a polyglot!",
     },
     footerTagline: "Language survival for the modern migrant.",
     footerLinks: {
@@ -1822,6 +1847,18 @@ export const translations = {
       feat3: "Lifetime access",
       feat4: "Priority email support",
     },
+    lifetimePlan: {
+      title: "Survive Anywhere",
+      price: "$79",
+      per: "/one-time",
+      badge: "⭐ BEST VALUE",
+      desc: "One-time payment for lifetime access to ALL languages.",
+      subtext: "One plan to rule them all.",
+      feat1: "Everything in Single Course",
+      feat2: "Lifetime access to ALL current & future languages",
+      feat3: "Priority Support",
+      feat4: "Become a polyglot!",
+    },
     footerTagline: "Language survival for the modern migrant.",
     footerLinks: {
       company: "Company",
@@ -2027,6 +2064,18 @@ export const translations = {
       feat2: "All 12 weeks of content",
       feat3: "Lifetime access",
       feat4: "Priority email support",
+    },
+    lifetimePlan: {
+      title: "Survive Anywhere",
+      price: "$79",
+      per: "/one-time",
+      badge: "⭐ BEST VALUE",
+      desc: "One-time payment for lifetime access to ALL languages.",
+      subtext: "One plan to rule them all.",
+      feat1: "Everything in Single Course",
+      feat2: "Lifetime access to ALL current & future languages",
+      feat3: "Priority Support",
+      feat4: "Become a polyglot!",
     },
     footerTagline: "Language survival for the modern migrant.",
     footerLinks: {
@@ -2234,6 +2283,18 @@ export const translations = {
       feat3: "Lifetime access",
       feat4: "Priority email support",
     },
+    lifetimePlan: {
+      title: "Survive Anywhere",
+      price: "$79",
+      per: "/one-time",
+      badge: "⭐ BEST VALUE",
+      desc: "One-time payment for lifetime access to ALL languages.",
+      subtext: "One plan to rule them all.",
+      feat1: "Everything in Single Course",
+      feat2: "Lifetime access to ALL current & future languages",
+      feat3: "Priority Support",
+      feat4: "Become a polyglot!",
+    },
     footerTagline: "Language survival for the modern migrant.",
     footerLinks: {
       company: "Company",
@@ -2389,6 +2450,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
