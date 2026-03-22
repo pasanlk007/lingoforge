@@ -1,10 +1,11 @@
+runConfig:
+  runtime: nodejs20
+  maxInstances: 1
 build:
   env:
     - variable: FIREBASE_ADMIN_SDK_KEY
       secret: FIREBASE_ADMIN_SDK_KEY
 
-runConfig:
-  maxInstances: 1
 
 env:
   - variable: NEXT_PUBLIC_APP_URL
