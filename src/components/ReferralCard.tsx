@@ -38,6 +38,7 @@ export function ReferralCard() {
   const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
   const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard) ? translations[nativeLanguage].dashboard : translations.English.dashboard;
+  const t_referrals = (t_dashboard as any)?.referrals || translations.English.dashboard.referrals;
 
   useEffect(() => {
     setIsMounted(true);
@@ -58,7 +59,7 @@ export function ReferralCard() {
     if (!userProfile?.referralCode) return;
     navigator.clipboard.writeText(userProfile.referralCode);
     toast({
-      title: t_dashboard.referrals.copied,
+      title: t_referrals.copied,
     });
   }
 
@@ -71,14 +72,14 @@ export function ReferralCard() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <Gift className="h-5 w-5 text-primary" />
-          {t_dashboard.referrals.title}
+          {t_referrals.title}
         </CardTitle>
         <CardDescription>
-          {t_dashboard.referrals.description}
+          {t_referrals.description}
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <p className="text-sm font-semibold text-green-500 text-center">{t_dashboard.referrals.bonus}</p>
+        <p className="text-sm font-semibold text-green-500 text-center">{t_referrals.bonus}</p>
         <div className="flex gap-2">
             <Input readOnly value={userProfile.referralCode || '...'} aria-label="Referral Code" />
             <Button onClick={handleCopyCode} variant="outline" size="icon" disabled={!userProfile.referralCode}>

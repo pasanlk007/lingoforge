@@ -122,7 +122,7 @@ export default function SurvivalPathPage() {
               const isWeekCompleted = completedDaysInWeek.length === 7;
               
               // Determine week status based on Remote Config and user data
-              const weekIsEnabled = config.lessons_weeks_enabled[`week${week}`] !== false;
+              const weekIsEnabled = (config.lessons_weeks_enabled as Record<string, boolean>)[`week${week}`] !== false;
               const hasAccess = isAdmin || canAccessWeek(week, { profile: userProfile, progress: progressData, trialDaysUsed }, config);
               
               const isLocked = weekIsEnabled && !hasAccess;
