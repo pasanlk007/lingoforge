@@ -1,23 +1,26 @@
-export async function playAudio(text: string) {
-  try {
-    const res = await fetch("/api/tts", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ text }),
-    });
+let isSpeaking = false;
 
-    const data = await res.json();
+export function playAudio(
+  text: string,
+  lang: string = "en-US",
+  rate: number = 1
+) {
+  if (!text) return;
 
-    if (!data.audioUrl) {
-      throw new Error("No audio returned");
-    }
-
-    const audio = new Audio(data.audioUrl);
-    await audio.play();
-
-  } catch (err) {
-    console.error("TTS ERROR:", err);
+  if (isSpeaking) {
+    window.speechSynthesis.cancel();
+    isSpeaking = false;
   }
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = lang;
+  utterance.rate = rate;
+  utterance.pitch = 1;
+
+  utterance.onstart = () => (isSpeaking = true);
+  utterance.onend = () => (isSpeaking = false);
+  utterance.onerror = () => (isSpeaking = false);
+
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utterance);
 }
