@@ -8,11 +8,12 @@ export async function getOrGenerateLesson(
   day: number = 1 // day is passed but not used to select the day, as per instructions to return the week data
 ): Promise<LanguageLesson | null> {
   try {
-    let native = nativeLanguage.toLowerCase();
+    const native = nativeLanguage.toLowerCase();
     const target = language.toLowerCase();
 
     const weekPadded = String(week).padStart(2, '0');
-    const filePath = `lessons/${native}_${target}/${path}/week_${weekPadded}.json`;
+    // This path is more standard: e.g., /lessons/french/sinhala/survival/week_01.json
+    const filePath = `lessons/${target}/${native}/${path}/week_${weekPadded}.json`;
 
     let weekData: WeeklyLessonPlan | null = null;
 
