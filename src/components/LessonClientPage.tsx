@@ -35,53 +35,73 @@ const confettiConfig = {
 };
 
 export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) {
-    const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
-    const [isMounted, setIsMounted] = useState(false);
-    const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [exercisesCorrect, setExercisesCorrect] = useState(0);
-    const [isComplete, setIsComplete] = useState(false);
+    const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English'</>
+);
+    const [isMounted, setIsMounted] = useState(false</>
+);
+    const [currentWordIndex, setCurrentWordIndex] = useState(0</>
+);
+    const [exercisesCorrect, setExercisesCorrect] = useState(0</>
+);
+    const [isComplete, setIsComplete] = useState(false</>
+);
 
-    const { user } = useUser();
-    const firestore = useFirestore();
+    const { user } = useUser(</>
+);
+    const firestore = useFirestore(</>
+);
 
     const dayData: LessonDay | undefined = lesson?.days?.[0];
 
     const userProfileRef = useMemoFirebase(() => {
         if (!user || !firestore) return null;
-        return doc(firestore, 'userProfiles', user.uid);
-    }, [user, firestore]);
-    const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
+        return doc(firestore, 'userProfiles', user.uid</>
+);
+    }, [user, firestore]</>
+);
+    const { data: userProfile } = useDoc<UserProfile>(userProfileRef</>
+);
 
     const weekProgressRef = useMemoFirebase(() => {
         if (!user || !firestore || !dayData) return null;
-        return doc(firestore, 'userProgress', user.uid, dayData.path, `week_${dayData.week}`);
-    }, [user, firestore, dayData]);
-    const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
+        return doc(firestore, 'userProgress', user.uid, dayData.path, `week_${dayData.week}`</>
+);
+    }, [user, firestore, dayData]</>
+);
+    const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef</>
+);
 
     const isDayCompleted = useMemo(() => {
         return weekProgressData?.daysCompleted?.includes(currentDay) || false;
-    }, [weekProgressData, currentDay]);
+    }, [weekProgressData, currentDay]</>
+);
 
 
     useEffect(() => {
         const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
         if (savedNativeLang && translations[savedNativeLang]) {
-          setNativeLanguage(savedNativeLang);
+          setNativeLanguage(savedNativeLang</>
+);
         }
-        setIsMounted(true);
-        setIsComplete(isDayCompleted);
-    }, [isDayCompleted]);
+        setIsMounted(true</>
+);
+        setIsComplete(isDayCompleted</>
+);
+    }, [isDayCompleted]</>
+);
 
     const handleExercisesComplete = useCallback((isCorrect: boolean) => {
         if (isCorrect) {
-          setExercisesCorrect(prev => prev + 1);
+          setExercisesCorrect(prev => prev + 1</>
+);
         }
-    }, []);
+    }, []</>
+);
 
     const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
     
     if (!dayData || !isMounted) {
-        return (
+        return (<>
   <VoiceInit />
 
           <div className="container mx-auto py-10">
@@ -103,23 +123,27 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const hasExercises = exercises && (
       (Array.isArray(exercises.fillBlanks) && exercises.fillBlanks.length > 0) ||
       (Array.isArray(exercises.matching) && exercises.matching.length > 0)
-    );
+    </>
+);
     const hasSentenceScramble = exercises && Array.isArray(exercises.sentenceScramble) && exercises.sentenceScramble.length > 0;
 
     const handleNextWord = () => {
         if (!hasWords) return;
-        setCurrentWordIndex(prev => (prev + 1) % (words.length || 1));
+        setCurrentWordIndex(prev => (prev + 1) % (words.length || 1)</>
+);
     }
 
     const handlePrevWord = () => {
         if (!hasWords) return;
-        setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1));
+        setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1)</>
+);
     }
     
     const handleCompleteDay = () => {
         if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile || isDayCompleted) return;
 
-        setIsComplete(true);
+        setIsComplete(true</>
+);
 
         // 1. Update week progress
         const currentCompletedDays = weekProgressData?.daysCompleted || [];
@@ -130,16 +154,21 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
             week: dayData.week,
             weekCompleted: newCompletedDays.length === 7,
         };
-        setDocumentNonBlocking(weekProgressRef, weekData, { merge: true });
+        setDocumentNonBlocking(weekProgressRef, weekData, { merge: true }</>
+);
 
         // 2. Update user profile (XP and Streak)
-        const xpToAdd = (progress?.xp || 0) + (progress?.streak_bonus || 0);
+        const xpToAdd = (progress?.xp || 0) + (progress?.streak_bonus || 0</>
+);
         const newXp = (userProfile.xpPoints || 0) + xpToAdd;
         
         let newStreak = userProfile.currentStreak || 0;
-        const today = new Date();
-        const lastActiveDate = new Date(userProfile.lastActiveDate);
-        const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
+        const today = new Date(</>
+);
+        const lastActiveDate = new Date(userProfile.lastActiveDate</>
+);
+        const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate</>
+);
 
         if (daysSinceLastActive > 0) {
             if (daysSinceLastActive === 1) {
@@ -158,20 +187,23 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
             activePath: dayData.path,
             lastLessonWeek: dayData.week,
             lastLessonDay: currentDay
-        });
+        }</>
+);
     }
 
-    const totalExercises = (exercises?.fillBlanks?.length ?? 0) + (exercises?.matching?.length ?? 0) + (exercises?.sentenceScramble?.length ?? 0);
+    const totalExercises = (exercises?.fillBlanks?.length ?? 0) + (exercises?.matching?.length ?? 0) + (exercises?.sentenceScramble?.length ?? 0</>
+);
     const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCorrect / totalExercises) * 100, 100) : 100; // default to 100 if no exercises
     const canCompleteDay = exerciseProgress >= 50;
 
     const weekProgress = (currentDay / 7) * 100;
     const streakCount = userProfile?.currentStreak || 0;
     
-    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === lesson.language.toLowerCase());
+    const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === lesson.language.toLowerCase()</>
+);
     const flag = langInfo ? langInfo.flag : '🌍';
 
-    return (
+    return (<>
   <VoiceInit />
 
         <TooltipProvider>
@@ -288,5 +320,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 </main>
             </div>
         </TooltipProvider>
-    );
+    </>
+);
 }
