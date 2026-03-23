@@ -48,9 +48,9 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
 
     const userProfileRef = useMemoFirebase(() => {
         if (!user || !firestore) return null;
-        return doc(firestore, 'userProfiles', user.uid
-    }, [user, firestore]
-    const { data: userProfile } = useDoc<UserProfile>(userProfileRef
+        return doc(firestore, 'userProfiles', user.uid);
+    }, [user, firestore]);
+    const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
     const weekProgressRef = useMemoFirebase(() => {
         if (!user || !firestore || !dayData) return null;
