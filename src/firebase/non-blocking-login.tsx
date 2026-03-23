@@ -33,6 +33,9 @@ export function initiateEmailSignUp(authInstance: Auth, email: string, password:
  */
 export async function initiateGoogleSignIn(auth: Auth, firestore: Firestore): Promise<UserCredential> {
     const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({
+      prompt: 'select_account'
+    });
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
 
