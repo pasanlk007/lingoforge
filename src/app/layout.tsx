@@ -1,4 +1,5 @@
 import "./globals.css";
+import { FirebaseClientProvider } from "@/firebase/client-provider";
 
 export const metadata = {
   title: "LingoForge",
@@ -12,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body>{children}</body>
+      <body><FirebaseClientProvider>{children}</FirebaseClientProvider></body>
     </html>
   );
 }
