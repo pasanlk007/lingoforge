@@ -32,6 +32,8 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { useToast } from '@/hooks/use-toast';
+import { VoiceSelector } from '@/components/VoiceSelector';
+import VoiceInit from '@/components/VoiceInit';
 
 
 function ProfilePageLoading() {
@@ -161,9 +163,10 @@ function ProfileContent({ user }: { user: User }) {
 
   return (
      <div className="flex min-h-dvh flex-col bg-background">
+      <VoiceInit />
       <Navigation />
       <main className="flex-1">
-        <div className="container mx-auto max-w-2xl py-12">
+        <div className="container mx-auto max-w-2xl py-12 space-y-8">
           <Card>
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -258,6 +261,9 @@ function ProfileContent({ user }: { user: User }) {
               </div>
             </CardContent>
           </Card>
+          
+          <VoiceSelector />
+
         </div>
       </main>
     </div>

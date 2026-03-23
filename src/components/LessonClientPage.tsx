@@ -178,9 +178,9 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === lesson.language.toLowerCase());
     const flag = langInfo ? langInfo.flag : '🌍';
 
-    return (<>
-  <VoiceInit />
-
+    return (
+      <>
+        <VoiceInit />
         <TooltipProvider>
             <div className="container mx-auto max-w-3xl py-8 px-4">
                 <header className="mb-6">
@@ -289,5 +289,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                 </main>
             </div>
         </TooltipProvider>
-    </>);
+      </>
+    );
 }
