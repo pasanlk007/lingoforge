@@ -1,4 +1,5 @@
 'use client';
+import VoiceInit from "@/components/VoiceInit";
 
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
@@ -81,6 +82,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     
     if (!dayData || !isMounted) {
         return (
+  <VoiceInit />
+
           <div className="container mx-auto py-10">
             <Alert variant="destructive">
               <AlertTitle>Error</AlertTitle>
@@ -169,6 +172,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const flag = langInfo ? langInfo.flag : '🌍';
 
     return (
+  <VoiceInit />
+
         <TooltipProvider>
             <div className="container mx-auto max-w-3xl py-8 px-4">
                 <header className="mb-6">
