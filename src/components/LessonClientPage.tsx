@@ -41,8 +41,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const [exercisesCorrect, setExercisesCorrect] = useState(0);
     const [isComplete, setIsComplete] = useState(false);
 
-    const { user } = useUser(
-    const firestore = useFirestore(
+    const { user } = useUser();
+    const firestore = useFirestore();
 
     const dayData: LessonDay | undefined = lesson?.days?.[0];
 
