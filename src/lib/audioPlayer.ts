@@ -10,8 +10,6 @@ const langNameToCode = {
   'Hindi': 'hi-IN', 'Tamil': 'ta-IN', 'Chinese': 'zh-CN',
 };
 
-let isSpeaking = false;
-
 function getSavedVoiceName(langCode) {
   const perLang = localStorage.getItem(`tts_voice_${langCode}`);
   if (perLang) return perLang;
@@ -38,18 +36,30 @@ function getBestVoice(lang) {
   return voices[0] || null;
 }
 
+function safeCancelAndSpeak(utterance) {
+  // Always cancel first
+  speechSynthesis.cancel();
+  // Small delay lets the browser fully reset before speaking
+  setTimeout(() => {
+    speechSynthesis.speak(utterance);
+  }, 50);
+}
+
 export function playAudio(text, languageName, rate) {
-  if (isSpeaking) { speechSynthesis.cancel(); isSpeaking = false; }
+
   const langCode = langNameToCode[languageName] || 'en-US';
   const effectiveRate = rate !== undefined ? rate : getSavedRate(1);
+
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = langCode;
   utterance.rate = effectiveRate;
   utterance.pitch = 1;
+
   const voice = getBestVoice(langCode);
   if (voice) utterance.voice = voice;
-  utterance.onstart = () => { isSpeaking = true; };
-  utterance.onend = () => { isSpeaking = false; };
-  utterance.onerror = () => { isSpeaking = false; };
-  speechSynthesis.speak(utterance);
+
+  // Chrome bug fix: speechSynthesis can get stuck — resume before speaking
+  if (speechSynthesis.paused) speechSynthesis.resume();
+
+  safeCancelAndSpeak(utterance);
 }
