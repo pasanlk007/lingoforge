@@ -29,7 +29,7 @@ import { nativeLanguages, translations, targetLanguages } from "@/lib/translatio
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ReminderCard } from "@/components/ReminderCard";
 import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking, useCollection } from "@/firebase";
-import { doc, collection } from "firebase/firestore";
+import { doc, collection, setDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { UserProfile, UserWeekProgress } from "@/lib/types";
@@ -92,6 +92,40 @@ function DashboardContent({ user }: { user: User }) {
 
   const [nativeLanguage, setNativeLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
+
+  useEffect(() => {
+    // This effect handles the case where a user is authenticated but has no profile document.
+    if (isMounted && !isProfileLoading && !userProfile && user && userProfileRef && firestore) {
+      const createUserProfile = async () => {
+        const now = new Date();
+        const newUserProfile: UserProfile = {
+            id: user.uid,
+            displayName: user.displayName || 'New User',
+            email: user.email!,
+            photoURL: user.photoURL || undefined,
+            nativeLanguage: localStorage.getItem('nativeLanguage') || 'English',
+            selectedLanguage: localStorage.getItem('targetLanguage') || 'French',
+            subscriptionActive: false,
+            subscriptionSource: 'none',
+            subscriptionExpiry: null,
+            xpPoints: 0,
+            currentStreak: 0,
+            lastActiveDate: now.toISOString().split('T')[0],
+            aiPlanningEnabled: false,
+            activePath: 'survival',
+            lastLessonWeek: 1,
+            lastLessonDay: 0,
+        };
+        // Using a blocking write here is intentional. It ensures the profile exists
+        // before any other logic on the dashboard tries to access it. The `useDoc`
+        // hook will then pick up this new document and trigger a re-render,
+        // correctly populating the dashboard.
+        await setDoc(userProfileRef, newUserProfile, { merge: true });
+      };
+
+      createUserProfile().catch(console.error);
+    }
+  }, [isMounted, isProfileLoading, userProfile, user, userProfileRef, firestore]);
 
   useEffect(() => {
     setIsMounted(true);
