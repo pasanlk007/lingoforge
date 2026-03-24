@@ -12,7 +12,7 @@ export interface UserAccessData {
 const ADMIN_EMAILS = ['Pasan.lankathilakadpl@gmail.com'];
 
 function isAdmin(email?: string | null): boolean {
-    return !!email && ADMIN_EMAILS.includes(email);
+    return !!email && ADMIN_EMAILS.map(e => e.toLowerCase()).includes(email.toLowerCase());
 }
 
 function isSubscriptionValid(profile: UserProfile): boolean {
@@ -53,7 +53,8 @@ export function canAccessWeek(weekNumber: number, userData: UserAccessData, conf
 
     // Trial still active = access up to max_free_weeks
     if (isTrialActive(userData.trialDaysUsed, config)) {
-        if (weekNumber > config.max_free_weeks) {
+        const effectiveMaxWeeks = config.max_free_weeks + (userData.profile?.bonusWeeks || 0);
+    if (weekNumber > effectiveMaxWeeks) {
             return false;
         }
         if (config.require_previous_week_completion && weekNumber > 1) {

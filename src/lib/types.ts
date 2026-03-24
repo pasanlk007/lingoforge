@@ -149,6 +149,8 @@ export interface UserProfile {
   paymentProviderSubscriptionId?: string;
   referralCode?: string;
   referredBy?: string;
+  bonusWeeks?: number;
+  referralCount?: number;
 }
 
 export interface UserLessonProgress {

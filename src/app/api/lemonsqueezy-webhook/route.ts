@@ -41,10 +41,13 @@ export async function POST(req: Request) {
 
     if (eventName === 'subscription_created' || eventName === 'order_created') {
       // Payment successful - activate subscription
+      const renewsAt = payload.data?.attributes?.renews_at || null;
+      const endsAt = payload.data?.attributes?.ends_at || null;
+      const expiryDate = renewsAt || endsAt || null;
       await userDoc.ref.update({
         subscriptionActive: true,
         subscriptionSource: 'lemonsqueezy',
-        subscriptionExpiry: null,
+        subscriptionExpiry: expiryDate,
         paymentProviderSubscriptionId: payload.data?.id || null,
       });
       console.log('Subscription activated for:', userEmail);

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp } from '@/firebase';
-import { doc, setDoc } from 'firebase/firestore';
+import { doc, setDoc, collection, query, where, getDocs, updateDoc, increment } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -94,6 +94,27 @@ export default function SignupPage() {
 
       const userDocRef = doc(firestore, 'userProfiles', user.uid);
       await setDoc(userDocRef, userProfile, { merge: true });
+
+      // Referral reward logic
+      if (referralCode.trim()) {
+        try {
+          const referrersQuery = query(
+            collection(firestore, 'userProfiles'),
+            where('referralCode', '==', referralCode.trim().toUpperCase())
+          );
+          const referrersSnapshot = await getDocs(referrersQuery);
+          if (!referrersSnapshot.empty) {
+            const referrerDoc = referrersSnapshot.docs[0];
+            await updateDoc(referrerDoc.ref, {
+              bonusWeeks: increment(2),
+              referralCount: increment(1),
+            });
+          }
+        } catch (e) {
+          console.error('Referral reward failed:', e);
+        }
+      }
+
       toast({
         title: "Account Created!",
         description: "You're all set. Welcome to LingoForge!",
