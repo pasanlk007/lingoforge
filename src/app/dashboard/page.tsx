@@ -433,14 +433,21 @@ function DashboardContent({ user }: { user: User }) {
 export default function DashboardPage() {
   const { user, isUserLoading } = useUser();
   const router = useRouter();
+  const [waitedForAuth, setWaitedForAuth] = useState(false);
 
   useEffect(() => {
-    if (!isUserLoading && !user) {
+    // Wait at least 2 seconds before redirecting to allow Firebase to initialize
+    const timer = setTimeout(() => setWaitedForAuth(true), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (waitedForAuth && !isUserLoading && !user) {
       router.push('/login?redirect=/dashboard');
     }
-  }, [user, isUserLoading, router]);
+  }, [user, isUserLoading, router, waitedForAuth]);
 
-  if (isUserLoading || !user) {
+  if (isUserLoading || !user || !waitedForAuth) {
     return <DashboardLoading />;
   }
 
