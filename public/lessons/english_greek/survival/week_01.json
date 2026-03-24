@@ -7,36 +7,340 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Εβδομάδα 1 Ημέρα 1: Βασικοί Χαιρετισμοί",
-      "theme": "Greetings & Essentials",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Εβδομάδα 1, Ημέρα 1: Βασικοί Χαιρετισμοί",
+      "theme": "Basic Greetings",
       "path": "survival",
       "targetLanguage": "Greek",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_1_1", "target": "Γεια σου", "phonetic": "ya soo", "native_meaning": "Hello (informal)", "english": "Hello (informal)", "example_sentence_target": "Γεια σου, τι κάνεις;", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "Ya soo, ti kanis?" },
-        { "id": "w1_1_2", "target": "Γεια σας", "phonetic": "ya sas", "native_meaning": "Hello (formal/plural)", "english": "Hello (formal/plural)", "example_sentence_target": "Γεια σας, κύριε Παπαδόπουλε.", "example_sentence_native": "Hello, Mr. Papadopoulos.", "example_sentence_phonetic": "Ya sas, kyrie Papadopoule." },
-        { "id": "w1_1_3", "target": "Ευχαριστώ", "phonetic": "ef-ha-ri-sto", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Ευχαριστώ πολύ.", "example_sentence_native": "Thank you very much.", "example_sentence_phonetic": "Efharisto poli." },
-        { "id": "w1_1_4", "target": "Παρακαλώ", "phonetic": "pa-ra-ka-lo", "native_meaning": "Please / You're welcome", "english": "Please / You're welcome", "example_sentence_target": "Ένα καφέ, παρακαλώ.", "example_sentence_native": "One coffee, please.", "example_sentence_phonetic": "Ena kafe, parakalo." },
-        { "id": "w1_1_5", "target": "Ναι / Όχι", "phonetic": "ne / o-hi", "native_meaning": "Yes / No", "english": "Yes / No", "example_sentence_target": "Ναι, παρακαλώ.", "example_sentence_native": "Yes, please.", "example_sentence_phonetic": "Ne, parakalo." }
+        {
+          "id": "w1_1_1",
+          "target": "Γεια σας",
+          "phonetic": "Yia sas",
+          "native_meaning": "Hello (formal)",
+          "english": "Hello (formal)",
+          "example_sentence_target": "Γεια σας, τι κάνετε;",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Yia sas, ti kanete?"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "Γεια σου",
+          "phonetic": "Yia sou",
+          "native_meaning": "Hello (informal)",
+          "english": "Hello (informal)",
+          "example_sentence_target": "Γεια σου, Μαρία.",
+          "example_sentence_native": "Hello, Maria.",
+          "example_sentence_phonetic": "Yia sou, Maria."
+        },
+        {
+          "id": "w1_1_3",
+          "target": "Καλημέρα",
+          "phonetic": "Kalimera",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "Καλημέρα, κύριε Παππά.",
+          "example_sentence_native": "Good morning, Mr. Pappas.",
+          "example_sentence_phonetic": "Kalimera, kyrie Pappa."
+        },
+        {
+          "id": "w1_1_4",
+          "target": "Καλησπέρα",
+          "phonetic": "Kalispera",
+          "native_meaning": "Good afternoon/evening",
+          "english": "Good afternoon/evening",
+          "example_sentence_target": "Καλησπέρα σε όλους.",
+          "example_sentence_native": "Good evening everyone.",
+          "example_sentence_phonetic": "Kalispera se olous."
+        },
+        {
+          "id": "w1_1_5",
+          "target": "Καληνύχτα",
+          "phonetic": "Kalinihta",
+          "native_meaning": "Good night",
+          "english": "Good night",
+          "example_sentence_target": "Καληνύχτα και όνειρα γλυκά.",
+          "example_sentence_native": "Good night and sweet dreams.",
+          "example_sentence_phonetic": "Kalinihta ke onira glyka."
+        }
       ],
-      "dialogues": [],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Meeting someone for the first time in the morning.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Καλημέρα.",
+              "native": "Good morning.",
+              "phonetic": "Kalimera."
+            },
+            {
+              "speaker": "B",
+              "target": "Καλημέρα. Τι κάνετε;",
+              "native": "Good morning. How are you?",
+              "phonetic": "Kalimera. Ti kanete?"
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "Greeting a friend in the evening.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Γεια σου, Νίκο. Καλησπέρα.",
+              "native": "Hello, Nikos. Good evening.",
+              "phonetic": "Yia sou, Niko. Kalispera."
+            },
+            {
+              "speaker": "B",
+              "target": "Γεια σου, Άννα. Καλησπέρα.",
+              "native": "Hello, Anna. Good evening.",
+              "phonetic": "Yia sou, Anna. Kalispera."
+            }
+          ]
+        }
+      ],
       "exercises": {
         "matching": [
-          { "id": "m1_1_1", "target": "Γεια σου", "native": "Hello (informal)" },
-          { "id": "m1_1_2", "target": "Ευχαριστώ", "native": "Thank you" },
-          { "id": "m1_1_3", "target": "Όχι", "native": "No" }
+          { "id": "m1_1_1", "target": "Καλημέρα", "native": "Good morning" },
+          { "id": "m1_1_2", "target": "Καλησπέρα", "native": "Good evening" },
+          { "id": "m1_1_3", "target": "Καληνύχτα", "native": "Good night" }
+        ],
+        "fillBlanks": [
+          { "id": "fb1_1_1", "sentence": "___, τι κάνετε;", "answer": "Γεια σας", "hint": "Formal hello" }
         ]
       },
-      "cultural_note": "Greeks are generally warm and hospitable. Using formal 'Γεια σας' with elders or in official settings is a sign of respect.",
-      "pronunciation_tip": "The Greek 'χ' in 'Ευχαριστώ' is a sound made in the back of the throat, similar to the 'ch' in the Scottish word 'loch'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Survival-GR" }
+      "cultural_note": "Greeks are generally warm and expressive. A handshake is common when meeting someone for the first time. Friends and family often greet each other with a hug or a kiss on each cheek.",
+      "pronunciation_tip": "The 'Γ' (gamma) sound in 'Γεια' is a soft sound, produced in the back of the throat. It's not a hard 'G' like in 'go'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "GR-W1D1-Greetings" }
     },
-    { "week": 1, "day": 2, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Greek", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 3, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Greek", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 4, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Greek", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 5, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Greek", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 6, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Greek", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 7, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Greek", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }}
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Week 1, Day 2: Politeness",
+      "title_native": "Εβδομάδα 1, Ημέρα 2: Ευγένεια",
+      "theme": "Politeness",
+      "path": "survival",
+      "targetLanguage": "Greek",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_2_1", "target": "Ευχαριστώ", "phonetic": "Efharisto", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Ευχαριστώ για τη βοήθεια.", "example_sentence_native": "Thank you for the help.", "example_sentence_phonetic": "Efharisto yia ti voithia." },
+        { "id": "w1_2_2", "target": "Παρακαλώ", "phonetic": "Parakalo", "native_meaning": "Please / You're welcome", "english": "Please / You're welcome", "example_sentence_target": "Μια μπύρα, παρακαλώ.", "example_sentence_native": "One beer, please.", "example_sentence_phonetic": "Mia bira, parakalo." },
+        { "id": "w1_2_3", "target": "Συγγνώμη", "phonetic": "Signomi", "native_meaning": "Sorry / Excuse me", "english": "Sorry / Excuse me", "example_sentence_target": "Συγγνώμη, πού είναι η τουαλέτα;", "example_sentence_native": "Excuse me, where is the toilet?", "example_sentence_phonetic": "Signomi, pou ine i toualeta?" },
+        { "id": "w1_2_4", "target": "Ναι", "phonetic": "Ne", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Ναι, παρακαλώ.", "example_sentence_native": "Yes, please.", "example_sentence_phonetic": "Ne, parakalo." },
+        { "id": "w1_2_5", "target": "Όχι", "phonetic": "Ohi", "native_meaning": "No", "english": "No", "example_sentence_target": "Όχι, ευχαριστώ.", "example_sentence_native": "No, thank you.", "example_sentence_phonetic": "Ohi, efharisto." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "Ordering a coffee.",
+          "lines": [
+            { "speaker": "A", "target": "Έναν καφέ, παρακαλώ.", "native": "One coffee, please.", "phonetic": "Enan kafe, parakalo." },
+            { "speaker": "B", "target": "Ορίστε. Ευχαριστώ.", "native": "Here you are. Thank you.", "phonetic": "Oriste. Efharisto." }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          { "id": "ss1_2_1", "scrambled": ["για", "Ευχαριστώ", "βοήθεια", "τη"], "correct": "Ευχαριστώ για τη βοήθεια", "nativeHint": "Thank you for the help" }
+        ],
+        "multipleChoice": [
+          { "id": "mc1_2_1", "question": "How do you say 'Please'?", "options": ["Ναι", "Όχι", "Παρακαλώ", "Συγγνώμη"], "correct": 2, "explanation": "'Παρακαλώ' means 'Please' or 'You're welcome'." }
+        ]
+      },
+      "cultural_note": "'Παρακαλώ' is a very versatile word. It can mean 'please', 'you're welcome', 'pardon me?', or 'how can I help you?'. Context is key!",
+      "pronunciation_tip": "Be careful with 'Ναι' (Ne) which means 'Yes'. It sounds like 'nay' or 'neh', which can be confusing for English speakers who might associate it with 'no'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "GR-W1D2-Polite" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Week 1, Day 3: Introductions",
+      "title_native": "Εβδομάδα 1, Ημέρα 3: Συστάσεις",
+      "theme": "Introductions",
+      "path": "survival",
+      "targetLanguage": "Greek",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_3_1", "target": "Με λένε...", "phonetic": "Me lene...", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Με λένε Γιάννη.", "example_sentence_native": "My name is Yiannis.", "example_sentence_phonetic": "Me lene Yianni." },
+        { "id": "w1_3_2", "target": "Πώς σε λένε;", "phonetic": "Pos se lene?", "native_meaning": "What is your name? (informal)", "english": "What is your name? (informal)", "example_sentence_target": "Με λένε Μαρία. Εσένα πώς σε λένε;", "example_sentence_native": "My name is Maria. What is your name?", "example_sentence_phonetic": "Me lene Maria. Esena pos se lene?" },
+        { "id": "w1_3_3", "target": "Χαίρω πολύ", "phonetic": "Hero poly", "native_meaning": "Nice to meet you", "english": "Nice to meet you", "example_sentence_target": "Γεια, με λένε Άννα. Χαίρω πολύ.", "example_sentence_native": "Hi, my name is Anna. Nice to meet you.", "example_sentence_phonetic": "Yia, me lene Anna. Hero poly." },
+        { "id": "w1_3_4", "target": "Από πού είσαι;", "phonetic": "Apo pou ise?", "native_meaning": "Where are you from?", "english": "Where are you from?", "example_sentence_target": "Είμαι από την Αγγλία. Εσύ από πού είσαι;", "example_sentence_native": "I am from England. Where are you from?", "example_sentence_phonetic": "Ime apo tin Anglia. Esy apo pou ise?" },
+        { "id": "w1_3_5", "target": "Είμαι από...", "phonetic": "Ime apo...", "native_meaning": "I am from...", "english": "I am from...", "example_sentence_target": "Είμαι από την Αμερική.", "example_sentence_native": "I am from America.", "example_sentence_phonetic": "Ime apo tin Ameriki." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "Introducing yourself to a new colleague.",
+          "lines": [
+            { "speaker": "A", "target": "Γεια σας. Με λένε Πωλ.", "native": "Hello. My name is Paul.", "phonetic": "Yia sas. Me lene Paul." },
+            { "speaker": "B", "target": "Γεια σου, Πωλ. Εγώ είμαι η Ελένη. Χαίρω πολύ.", "native": "Hello, Paul. I am Eleni. Nice to meet you.", "phonetic": "Yia sou, Paul. Ego ime i Eleni. Hero poly." }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb1_3_1", "sentence": "___ την Αγγλία.", "answer": "Είμαι από", "hint": "I am from" }
+        ],
+        "matching": [
+          { "id": "m1_3_1", "target": "Πώς σε λένε;", "native": "What is your name?" },
+          { "id": "m1_3_2", "target": "Χαίρω πολύ", "native": "Nice to meet you" }
+        ]
+      },
+      "cultural_note": "When introducing themselves, Greeks often state their first name. Surnames are used in more formal or official contexts.",
+      "pronunciation_tip": "In 'Χαίρω' (Hero), the 'Χ' (chi) is a strong 'h' sound from the back of your throat, similar to the 'ch' in the Scottish 'loch'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "GR-W1D3-Intro" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Week 1, Day 4: How are you?",
+      "title_native": "Εβδομάδα 1, Ημέρα 4: Τι κάνεις;",
+      "theme": "Asking how someone is",
+      "path": "survival",
+      "targetLanguage": "Greek",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_4_1", "target": "Τι κάνεις;", "phonetic": "Ti kanis?", "native_meaning": "How are you? (informal)", "english": "How are you? (informal)", "example_sentence_target": "Γεια σου, Κώστα. Τι κάνεις;", "example_sentence_native": "Hello, Kostas. How are you?", "example_sentence_phonetic": "Yia sou, Kosta. Ti kanis?" },
+        { "id": "w1_4_2", "target": "Τι κάνετε;", "phonetic": "Ti kanete?", "native_meaning": "How are you? (formal/plural)", "english": "How are you? (formal/plural)", "example_sentence_target": "Καλημέρα, κύριε Γιώργο. Τι κάνετε;", "example_sentence_native": "Good morning, Mr. Giorgos. How are you?", "example_sentence_phonetic": "Kalimera, kyrie Yiorgo. Ti kanete?" },
+        { "id": "w1_4_3", "target": "Καλά, ευχαριστώ.", "phonetic": "Kala, efharisto.", "native_meaning": "Fine, thank you.", "english": "Fine, thank you.", "example_sentence_target": "Είμαι καλά, ευχαριστώ. Εσύ;", "example_sentence_native": "I am fine, thank you. You?", "example_sentence_phonetic": "Ime kala, efharisto. Esy?" },
+        { "id": "w1_4_4", "target": "Πολύ καλά", "phonetic": "Poly kala", "native_meaning": "Very well", "english": "Very well", "example_sentence_target": "Όλα πολύ καλά, ευχαριστώ.", "example_sentence_native": "Everything is very well, thank you.", "example_sentence_phonetic": "Ola poly kala, efharisto." },
+        { "id": "w1_4_5", "target": "Έτσι κι έτσι", "phonetic": "Etsi ki etsi", "native_meaning": "So-so", "english": "So-so", "example_sentence_target": "Πώς είσαι; - Έτσι κι έτσι.", "example_sentence_native": "How are you? - So-so.", "example_sentence_phonetic": "Pos ise? - Etsi ki etsi." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "A casual conversation between friends.",
+          "lines": [
+            { "speaker": "A", "target": "Γεια, Μαρία! Τι κάνεις;", "native": "Hi, Maria! How are you?", "phonetic": "Yia, Maria! Ti kanis?" },
+            { "speaker": "B", "target": "Γεια, Γιάννη! Πολύ καλά. Εσύ;", "native": "Hi, Yiannis! Very well. You?", "phonetic": "Yia, Yianni! Poly kala. Esy?" }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          { "id": "ss1_4_1", "scrambled": ["κάνεις", "Τι", ";"], "correct": "Τι κάνεις;", "nativeHint": "How are you?" }
+        ],
+        "multipleChoice": [
+          { "id": "mc1_4_1", "question": "A formal way to ask 'How are you?' is:", "options": ["Τι κάνεις;", "Πώς σε λένε;", "Τι κάνετε;", "Έτσι κι έτσι"], "correct": 2, "explanation": "'Τι κάνετε;' is used for formal situations or when addressing more than one person." }
+        ]
+      },
+      "cultural_note": "Asking 'Τι κάνεις;' is a very common part of a greeting in Greece. It's often asked immediately after 'Γεια σου'.",
+      "pronunciation_tip": "The 'τσ' in 'Έτσι' (Etsi) makes a 'ts' sound, like the end of the word 'cats'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "GR-W1D4-HowAreYou" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Week 1, Day 5: Numbers 1-5",
+      "title_native": "Εβδομάδα 1, Ημέρα 5: Αριθμοί 1-5",
+      "theme": "Numbers 1-5",
+      "path": "survival",
+      "targetLanguage": "Greek",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_5_1", "target": "ένα", "phonetic": "ena", "native_meaning": "one", "english": "one", "example_sentence_target": "Θέλω ένα εισιτήριο.", "example_sentence_native": "I want one ticket.", "example_sentence_phonetic": "Thelo ena isitirio." },
+        { "id": "w1_5_2", "target": "δύο", "phonetic": "dyo", "native_meaning": "two", "english": "two", "example_sentence_target": "Δύο καφέδες, παρακαλώ.", "example_sentence_native": "Two coffees, please.", "example_sentence_phonetic": "Dyo kafedes, parakalo." },
+        { "id": "w1_5_3", "target": "τρία", "phonetic": "tria", "native_meaning": "three", "english": "three", "example_sentence_target": "Έχω τρία παιδιά.", "example_sentence_native": "I have three children.", "example_sentence_phonetic": "Eho tria pedia." },
+        { "id": "w1_5_4", "target": "τέσσερα", "phonetic": "tessera", "native_meaning": "four", "english": "four", "example_sentence_target": "Το τραπέζι είναι για τέσσερα άτομα.", "example_sentence_native": "The table is for four people.", "example_sentence_phonetic": "To trapezi ine yia tessera atoma." },
+        { "id": "w1_5_5", "target": "πέντε", "phonetic": "pente", "native_meaning": "five", "english": "five", "example_sentence_target": "Η ώρα είναι πέντε.", "example_sentence_native": "The time is five o'clock.", "example_sentence_phonetic": "I ora ine pente." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "At a bakery.",
+          "lines": [
+            { "speaker": "A", "target": "Θα ήθελα δύο ψωμιά, παρακαλώ.", "native": "I would like two breads, please.", "phonetic": "Tha ithela dyo psomia, parakalo." },
+            { "speaker": "B", "target": "Ορίστε. Κάτι άλλο;", "native": "Here you are. Anything else?", "phonetic": "Oriste. Kati allo?" }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_5_1", "target": "ένα", "native": "one" },
+          { "id": "m1_5_2", "target": "τρία", "native": "three" },
+          { "id": "m1_5_3", "target": "πέντε", "native": "five" }
+        ]
+      },
+      "cultural_note": "In Greece, it is common to use hand gestures for numbers. The 'five' gesture is an open palm, but be careful not to extend it towards someone's face, as this is an insult known as the 'moutza'.",
+      "pronunciation_tip": "The 'δ' (delta) in 'δύο' (dyo) is a soft 'th' sound, like in the English word 'this' or 'that'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "GR-W1D5-Numbers1" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Week 1, Day 6: Where is...?",
+      "title_native": "Εβδομάδα 1, Ημέρα 6: Πού είναι...;",
+      "theme": "Asking for locations",
+      "path": "survival",
+      "targetLanguage": "Greek",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_6_1", "target": "Πού είναι...;", "phonetic": "Pou ine...?", "native_meaning": "Where is...?", "english": "Where is...?", "example_sentence_target": "Συγγνώμη, πού είναι η τράπεζα;", "example_sentence_native": "Excuse me, where is the bank?", "example_sentence_phonetic": "Signomi, pou ine i trapeza?" },
+        { "id": "w1_6_2", "target": "η τράπεζα", "phonetic": "i trapeza", "native_meaning": "the bank", "english": "the bank", "example_sentence_target": "Η τράπεζα είναι δεξιά.", "example_sentence_native": "The bank is on the right.", "example_sentence_phonetic": "I trapeza ine dexia." },
+        { "id": "w1_6_3", "target": "το ξενοδοχείο", "phonetic": "to xenodohio", "native_meaning": "the hotel", "english": "the hotel", "example_sentence_target": "Μένω σε ένα μικρό ξενοδοχείο.", "example_sentence_native": "I'm staying in a small hotel.", "example_sentence_phonetic": "Meno se ena mikro xenodohio." },
+        { "id": "w1_6_4", "target": "το εστιατόριο", "phonetic": "to estiatorio", "native_meaning": "the restaurant", "english": "the restaurant", "example_sentence_target": "Πάμε σε ένα εστιατόριο απόψε;", "example_sentence_native": "Shall we go to a restaurant tonight?", "example_sentence_phonetic": "Pame se ena estiatorio apopse?" },
+        { "id": "w1_6_5", "target": "η τουαλέτα", "phonetic": "i toualeta", "native_meaning": "the toilet", "english": "the toilet", "example_sentence_target": "Η τουαλέτα είναι στο πίσω μέρος.", "example_sentence_native": "The toilet is at the back.", "example_sentence_phonetic": "I toualeta ine sto piso meros." }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "A tourist asking for directions.",
+          "lines": [
+            { "speaker": "A", "target": "Συγγνώμη, πού είναι το εστιατόριο 'Ζορμπάς';", "native": "Excuse me, where is the restaurant 'Zorbas'?", "phonetic": "Signomi, pou ine to estiatorio 'Zorbas'?" },
+            { "speaker": "B", "target": "Είναι ευθεία και μετά αριστερά.", "native": "It's straight ahead and then left.", "phonetic": "Ine eftheia ke meta aristera." }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb1_6_1", "sentence": "Συγγνώμη, ___ η τουαλέτα;", "answer": "πού είναι", "hint": "where is" }
+        ]
+      },
+      "cultural_note": "Don't be afraid to ask for directions. Greeks are usually very willing to help tourists, even if they don't speak much English.",
+      "pronunciation_tip": "In 'ξενοδοχείο' (xenodohio), the 'ξ' (xi) makes a 'ks' sound, like the 'x' in 'box'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "GR-W1D6-Locations" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Week 1, Day 7: Review",
+      "title_native": "Εβδομάδα 1, Ημέρα 7: Επανάληψη",
+      "theme": "Weekly Review",
+      "path": "survival",
+      "targetLanguage": "Greek",
+      "nativeLanguage": "English",
+      "words": [
+        { "id": "w1_7_1", "target": "Γεια σας", "phonetic": "Yia sas", "native_meaning": "Hello (formal)", "english": "Hello (formal)", "example_sentence_target": "Γεια σας, τι κάνετε;", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "Yia sas, ti kanete?" },
+        { "id": "w1_7_2", "target": "Ευχαριστώ", "phonetic": "Efharisto", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Ευχαριστώ πολύ.", "example_sentence_native": "Thank you very much.", "example_sentence_phonetic": "Efharisto poly." },
+        { "id": "w1_7_3", "target": "Με λένε...", "phonetic": "Me lene...", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Με λένε Μαρία.", "example_sentence_native": "My name is Maria.", "example_sentence_phonetic": "Me lene Maria." },
+        { "id": "w1_7_4", "target": "Τι κάνεις;", "phonetic": "Ti kanis?", "native_meaning": "How are you? (informal)", "english": "How are you? (informal)", "example_sentence_target": "Γεια, τι κάνεις;", "example_sentence_native": "Hi, how are you?", "example_sentence_phonetic": "Yia, ti kanis?" },
+        { "id": "w1_7_5", "target": "Πού είναι η τουαλέτα;", "phonetic": "Pou ine i toualeta?", "native_meaning": "Where is the toilet?", "english": "Where is the toilet?", "example_sentence_target": "Συγγνώμη, πού είναι η τουαλέτα;", "example_sentence_native": "Excuse me, where is the toilet?", "example_sentence_phonetic": "Signomi, pou ine i toualeta?" }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "A short, complete conversation.",
+          "lines": [
+            { "speaker": "A", "target": "Καλημέρα. Με λένε Άννα. Πώς σε λένε;", "native": "Good morning. My name is Anna. What's your name?", "phonetic": "Kalimera. Me lene Anna. Pos se lene?" },
+            { "speaker": "B", "target": "Γεια σου Άννα. Με λένε Νίκο. Χαίρω πολύ.", "native": "Hello Anna. My name is Nikos. Nice to meet you.", "phonetic": "Yia sou Anna. Me lene Niko. Hero poly." }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          { "id": "ss1_7_1", "scrambled": ["λένε", "Με", "Γιάννη"], "correct": "Με λένε Γιάννη", "nativeHint": "My name is Yiannis" }
+        ],
+        "multipleChoice": [
+          { "id": "mc1_7_1", "question": "What does 'Ευχαριστώ' mean?", "options": ["Please", "Thank you", "Sorry", "Yes"], "correct": 1, "explanation": "'Ευχαριστώ' means 'Thank you'." }
+        ]
+      },
+      "cultural_note": "Reviewing what you've learned is crucial. Try using these simple phrases in a Greek restaurant or shop – people will appreciate the effort!",
+      "pronunciation_tip": "Keep practicing the 'Γ' (gamma) and 'Δ' (delta) sounds. They are fundamental to speaking Greek clearly.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "GR-W1-Complete" }
+    }
   ]
 }
