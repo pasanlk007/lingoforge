@@ -31,25 +31,38 @@ function isSubscriptionValid(profile: UserProfile): boolean {
     }
 }
 
+function isTrialActive(trialDaysUsed: number, config: AppConfig): boolean {
+    return trialDaysUsed < config.free_trial_days;
+}
+
 export function canAccessWeek(weekNumber: number, userData: UserAccessData, config: AppConfig): boolean {
+    // Admin always has full access
     if (isAdmin(userData.userEmail)) {
         return true;
     }
+
+    // Maintenance mode blocks everyone
     if (config.app_mode === 'maintenance') {
         return false;
     }
-    if (!userData.profile) {
-        return weekNumber <= config.max_free_weeks;
-    }
-    if (isSubscriptionValid(userData.profile)) {
+
+    // Valid subscription = full access
+    if (userData.profile && isSubscriptionValid(userData.profile)) {
         return true;
     }
-    if (weekNumber > config.max_free_weeks) {
-        return false;
+
+    // Trial still active = access up to max_free_weeks
+    if (isTrialActive(userData.trialDaysUsed, config)) {
+        if (weekNumber > config.max_free_weeks) {
+            return false;
+        }
+        if (config.require_previous_week_completion && weekNumber > 1) {
+            const prevWeekProgress = userData.progress?.find(p => p.week === weekNumber - 1);
+            return prevWeekProgress?.weekCompleted || false;
+        }
+        return true;
     }
-    if (config.require_previous_week_completion && weekNumber > 1) {
-        const prevWeekProgress = userData.progress?.find(p => p.week === weekNumber - 1);
-        return prevWeekProgress?.weekCompleted || false;
-    }
-    return true;
+
+    // Trial expired, no subscription = no access
+    return false;
 }
