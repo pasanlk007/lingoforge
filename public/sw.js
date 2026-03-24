@@ -1,20 +1,7 @@
-const CACHE_NAME = 'lingoforge-v1';
-const urlsToCache = [
-  '/',
-  '/dashboard',
-  '/login',
-];
-
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache))
-  );
-});
-
+// This is a basic service worker file.
+// It's required for a web app to be considered a PWA and be installable.
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
+  // For this basic setup, we're not implementing any caching strategies.
+  // The service worker will just pass through the requests.
+  event.respondWith(fetch(event.request));
 });
