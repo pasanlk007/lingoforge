@@ -7,282 +7,724 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1, Day 1: Basic Greetings",
-      "title_native": "Semaine 1, Jour 1 : Salutations de base",
-      "theme": "Basic Communication",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "Jour 1 : Salutations de base",
+      "theme": "Basic Greetings",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_1_1", "target": "Bonjour", "phonetic": "bon-zhoor", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "Bonjour, comment ça va ?", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "bon-zhoor, kom-mon sa va?" },
-        { "id": "w1_1_2", "target": "Salut", "phonetic": "sa-loo", "native_meaning": "Hi (informal)", "english": "Hi", "example_sentence_target": "Salut, ça va ?", "example_sentence_native": "Hi, how's it going?", "example_sentence_phonetic": "sa-loo, sa va?" },
-        { "id": "w1_1_3", "target": "Merci", "phonetic": "mer-see", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Merci beaucoup.", "example_sentence_native": "Thank you very much.", "example_sentence_phonetic": "mer-see bo-koo" },
-        { "id": "w1_1_4", "target": "De rien", "phonetic": "duh ree-an", "native_meaning": "You're welcome", "english": "You're welcome", "example_sentence_target": "De rien, monsieur.", "example_sentence_native": "You're welcome, sir.", "example_sentence_phonetic": "duh ree-an, muh-syuh" },
-        { "id": "w1_1_5", "target": "Au revoir", "phonetic": "oh ruh-vwar", "native_meaning": "Goodbye", "english": "Goodbye", "example_sentence_target": "Au revoir, à demain.", "example_sentence_native": "Goodbye, see you tomorrow.", "example_sentence_phonetic": "oh ruh-vwar, a duh-man" },
-        { "id": "w1_1_6", "target": "À bientôt", "phonetic": "a bee-an-toh", "native_meaning": "See you soon", "english": "See you soon", "example_sentence_target": "À bientôt, j'espère.", "example_sentence_native": "See you soon, I hope.", "example_sentence_phonetic": "a bee-an-toh, zhes-pair" },
-        { "id": "w1_1_7", "target": "Bonsoir", "phonetic": "bon-swar", "native_meaning": "Good evening", "english": "Good evening", "example_sentence_target": "Bonsoir, madame.", "example_sentence_native": "Good evening, madam.", "example_sentence_phonetic": "bon-swar, ma-dam" },
-        { "id": "w1_1_8", "target": "Bonne nuit", "phonetic": "bon nwee", "native_meaning": "Good night", "english": "Good night", "example_sentence_target": "Bonne nuit, fais de beaux rêves.", "example_sentence_native": "Good night, have sweet dreams.", "example_sentence_phonetic": "bon nwee, fay duh bo rev" }
-      ],
-      "sentences": [
-        { "id": "s1_1_1", "target": "Bonjour, je suis enchanté.", "native": "Hello, I am delighted (to meet you).", "phonetic": "bon-zhoor, zhuh sweez on-shon-tay" },
-        { "id": "s1_1_2", "target": "Merci pour votre aide.", "native": "Thank you for your help.", "phonetic": "mer-see poor vo-truh ed" },
-        { "id": "s1_1_3", "target": "Salut ! Quoi de neuf ?", "native": "Hi! What's new?", "phonetic": "sa-loo! kwa duh nuhf?" },
-        { "id": "s1_1_4", "target": "Bonsoir, tout le monde.", "native": "Good evening, everyone.", "phonetic": "bon-swar, too luh mond" },
-        { "id": "s1_1_5", "target": "Au revoir et bonne journée.", "native": "Goodbye and have a good day.", "phonetic": "oh ruh-vwar ay bon zhoor-nay" },
-        { "id": "s1_1_6", "target": "Il n'y a pas de quoi, de rien.", "native": "It's nothing, you're welcome.", "phonetic": "eel nee a pa duh kwa, duh ree-an" },
-        { "id": "s1_1_7", "target": "À bientôt, mon ami.", "native": "See you soon, my friend.", "phonetic": "a bee-an-toh, mon a-mee" },
-        { "id": "s1_1_8", "target": "Je vais dormir. Bonne nuit.", "native": "I'm going to sleep. Good night.", "phonetic": "zhuh vay dor-meer. bon nwee" }
+        {
+          "id": "w1_1_1",
+          "target": "Bonjour",
+          "phonetic": "bon-zhoor",
+          "native_meaning": "Hello / Good day",
+          "english": "Hello / Good day",
+          "example_sentence_target": "Bonjour, Madame.",
+          "example_sentence_native": "Hello, Madam.",
+          "example_sentence_phonetic": "bon-zhoor, ma-dam"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "Bonsoir",
+          "phonetic": "bon-swah",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "Bonsoir, Monsieur.",
+          "example_sentence_native": "Good evening, Sir.",
+          "example_sentence_phonetic": "bon-swah, mon-syer"
+        },
+        {
+          "id": "w1_1_3",
+          "target": "Au revoir",
+          "phonetic": "o ruh-vwah",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "Au revoir, à demain.",
+          "example_sentence_native": "Goodbye, see you tomorrow.",
+          "example_sentence_phonetic": "o ruh-vwah, ah duh-man"
+        },
+        {
+          "id": "w1_1_4",
+          "target": "Salut",
+          "phonetic": "sa-loo",
+          "native_meaning": "Hi / Bye (informal)",
+          "english": "Hi / Bye (informal)",
+          "example_sentence_target": "Salut, ça va ?",
+          "example_sentence_native": "Hi, how's it going?",
+          "example_sentence_phonetic": "sa-loo, sa va?"
+        },
+        {
+          "id": "w1_1_5",
+          "target": "Merci",
+          "phonetic": "mehr-see",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Merci beaucoup.",
+          "example_sentence_native": "Thank you very much.",
+          "example_sentence_phonetic": "mehr-see bo-koo"
+        }
       ],
       "dialogues": [
-        { "id": "d1_1_1", "context": "Meeting a stranger in the morning.", "lines": [ { "speaker": "A", "target": "Bonjour, monsieur.", "native": "Hello, sir.", "phonetic": "bon-zhoor, muh-syuh" }, { "speaker": "B", "target": "Bonjour. Comment allez-vous ?", "native": "Hello. How are you?", "phonetic": "bon-zhoor. kom-mon a-lay voo?" } ] },
-        { "id": "d1_1_2", "context": "Thanking someone for a small favor.", "lines": [ { "speaker": "A", "target": "Voici votre café.", "native": "Here is your coffee.", "phonetic": "vwa-see vo-truh ca-fay" }, { "speaker": "B", "target": "Merci beaucoup.", "native": "Thank you very much.", "phonetic": "mer-see bo-koo" } ] },
-        { "id": "d1_1_3", "context": "Leaving a shop.", "lines": [ { "speaker": "A", "target": "Au revoir, madame.", "native": "Goodbye, madam.", "phonetic": "oh ruh-vwar, ma-dam" }, { "speaker": "B", "target": "Au revoir, bonne journée !", "native": "Goodbye, have a good day!", "phonetic": "oh ruh-vwar, bon zhoor-nay!" } ] },
-        { "id": "d1_1_4", "context": "Saying good night to a family member.", "lines": [ { "speaker": "A", "target": "Je suis fatigué.", "native": "I am tired.", "phonetic": "zhuh swee fa-tee-gay" }, { "speaker": "B", "target": "D'accord, bonne nuit.", "native": "Okay, good night.", "phonetic": "da-kor, bon nwee" } ] }
+        {
+          "id": "d1_1_1",
+          "context": "Greeting someone in a shop.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour, Monsieur.",
+              "native": "Hello, Sir.",
+              "phonetic": "bon-zhoor, mon-syer"
+            },
+            {
+              "speaker": "B",
+              "target": "Bonjour, Madame. Je peux vous aider ?",
+              "native": "Hello, Madam. Can I help you?",
+              "phonetic": "bon-zhoor, ma-dam. zhuh puh voo zay-day?"
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "Saying goodbye to a friend.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Je dois partir. Au revoir !",
+              "native": "I have to go. Goodbye!",
+              "phonetic": "zhuh dwah par-teer. o ruh-vwah!"
+            },
+            {
+              "speaker": "B",
+              "target": "Salut ! À bientôt.",
+              "native": "Bye! See you soon.",
+              "phonetic": "sa-loo! ah byan-toe"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_1_1", "target": "Bonjour", "native": "Hello" }, { "id": "m1_1_2", "target": "Merci", "native": "Thank you" }, { "id": "m1_1_3", "target": "Au revoir", "native": "Goodbye" }, { "id": "m1_1_4", "target": "De rien", "native": "You're welcome" } ] },
-      "cultural_note": "In France, it's customary to greet shopkeepers with 'Bonjour' when entering and 'Au revoir' when leaving. It's considered polite.",
-      "pronunciation_tip": "The French 'r' sound in 'Bonjour' and 'Au revoir' is produced in the back of the throat, different from the English 'r'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Greetings" }
+      "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "Bonjour", "native": "Hello" },
+          { "id": "m1_1_2", "target": "Au revoir", "native": "Goodbye" },
+          { "id": "m1_1_3", "target": "Merci", "native": "Thank you" },
+          { "id": "m1_1_4", "target": "Salut", "native": "Hi (informal)" }
+        ]
+      },
+      "cultural_note": "In France, it's very important to say 'Bonjour' when entering a shop and 'Au revoir' when leaving. It's considered polite and is expected.",
+      "pronunciation_tip": "The French 'r' sound in 'Bonjour' and 'Au revoir' is made in the back of the throat, different from the English 'r'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W1D1-GreetingsFR"
+      }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1, Day 2: Introducing Yourself",
-      "title_native": "Semaine 1, Jour 2 : Se présenter",
-      "theme": "Basic Communication",
+      "title": "Day 2: Politeness",
+      "title_native": "Jour 2 : La politesse",
+      "theme": "Polite Expressions",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_2_1", "target": "Je m'appelle...", "phonetic": "zhuh ma-pel", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Bonjour, je m'appelle Paul.", "example_sentence_native": "Hello, my name is Paul.", "example_sentence_phonetic": "bon-zhoor, zhuh ma-pel pol" },
-        { "id": "w1_2_2", "target": "Je suis...", "phonetic": "zhuh swee", "native_meaning": "I am...", "english": "I am...", "example_sentence_target": "Je suis de Paris.", "example_sentence_native": "I am from Paris.", "example_sentence_phonetic": "zhuh swee duh pa-ree" },
-        { "id": "w1_2_3", "target": "Et vous ?", "phonetic": "ay voo", "native_meaning": "And you? (formal)", "english": "And you? (formal)", "example_sentence_target": "Je m'appelle Marie. Et vous ?", "example_sentence_native": "My name is Marie. And you?", "example_sentence_phonetic": "zhuh ma-pel ma-ree. ay voo?" },
-        { "id": "w1_2_4", "target": "Et toi ?", "phonetic": "ay twa", "native_meaning": "And you? (informal)", "english": "And you? (informal)", "example_sentence_target": "Ça va bien. Et toi ?", "example_sentence_native": "I'm doing well. And you?", "example_sentence_phonetic": "sa va bee-an. ay twa?" },
-        { "id": "w1_2_5", "target": "Enchanté", "phonetic": "on-shon-tay", "native_meaning": "Pleased to meet you (male)", "english": "Pleased to meet you", "example_sentence_target": "Enchanté de faire votre connaissance.", "example_sentence_native": "Pleased to make your acquaintance.", "example_sentence_phonetic": "on-shon-tay duh fair vo-truh kon-ay-sonce" },
-        { "id": "w1_2_6", "target": "Enchantée", "phonetic": "on-shon-tay", "native_meaning": "Pleased to meet you (female)", "english": "Pleased to meet you", "example_sentence_target": "Enchantée, monsieur.", "example_sentence_native": "Pleased to meet you, sir.", "example_sentence_phonetic": "on-shon-tay, muh-syuh" },
-        { "id": "w1_2_7", "target": "Comment", "phonetic": "kom-mon", "native_meaning": "How", "english": "How", "example_sentence_target": "Comment allez-vous ?", "example_sentence_native": "How are you?", "example_sentence_phonetic": "kom-mon a-lay voo?" },
-        { "id": "w1_2_8", "target": "s'appeler", "phonetic": "sa-puh-lay", "native_meaning": "to be called", "english": "to be called", "example_sentence_target": "Il s'appelle Jean.", "example_sentence_native": "His name is John.", "example_sentence_phonetic": "eel sa-pel zhon" }
-      ],
-      "sentences": [
-        { "id": "s1_2_1", "target": "Je suis ingénieur.", "native": "I am an engineer.", "phonetic": "zhuh sweez an-zhay-nee-uhr" },
-        { "id": "s1_2_2", "target": "Bonjour, je m'appelle Sophie.", "native": "Hello, my name is Sophie.", "phonetic": "bon-zhoor, zhuh ma-pel so-fee" },
-        { "id": "s1_2_3", "target": "Lui, il est docteur. Et vous ?", "native": "He is a doctor. And you?", "phonetic": "lwee, eel ay dok-tuhr. ay voo?" },
-        { "id": "s1_2_4", "target": "Je vais bien, merci. Et toi ?", "native": "I'm fine, thanks. And you?", "phonetic": "zhuh vay bee-an, mer-see. ay twa?" },
-        { "id": "s1_2_5", "target": "Enchanté, Paul.", "native": "Pleased to meet you, Paul.", "phonetic": "on-shon-tay, pol" },
-        { "id": "s1_2_6", "target": "Je suis le nouveau voisin.", "native": "I am the new neighbor.", "phonetic": "zhuh swee luh noo-vo vwa-zan" },
-        { "id": "s1_2_7", "target": "Comment tu t'appelles ?", "native": "What is your name? (informal)", "phonetic": "kom-mon too ta-pel?" },
-        { "id": "s1_2_8", "target": "Elle s'appelle Anne.", "native": "Her name is Anne.", "phonetic": "el sa-pel an" }
+        {
+          "id": "w1_2_1",
+          "target": "S'il vous plaît",
+          "phonetic": "seel voo pleh",
+          "native_meaning": "Please (formal)",
+          "english": "Please (formal)",
+          "example_sentence_target": "Un café, s'il vous plaît.",
+          "example_sentence_native": "A coffee, please.",
+          "example_sentence_phonetic": "un ca-fay, seel voo pleh"
+        },
+        {
+          "id": "w1_2_2",
+          "target": "Oui",
+          "phonetic": "wee",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Oui, je comprends.",
+          "example_sentence_native": "Yes, I understand.",
+          "example_sentence_phonetic": "wee, zhuh kom-pron"
+        },
+        {
+          "id": "w1_2_3",
+          "target": "Non",
+          "phonetic": "non",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Non, merci.",
+          "example_sentence_native": "No, thank you.",
+          "example_sentence_phonetic": "non, mehr-see"
+        },
+        {
+          "id": "w1_2_4",
+          "target": "Excusez-moi",
+          "phonetic": "ex-kew-zay mwah",
+          "native_meaning": "Excuse me",
+          "english": "Excuse me",
+          "example_sentence_target": "Excusez-moi, où est la gare ?",
+          "example_sentence_native": "Excuse me, where is the station?",
+          "example_sentence_phonetic": "ex-kew-zay mwah, oo ay la gar?"
+        },
+        {
+          "id": "w1_2_5",
+          "target": "Pardon",
+          "phonetic": "par-don",
+          "native_meaning": "Pardon / Sorry",
+          "english": "Pardon / Sorry",
+          "example_sentence_target": "Pardon, je n'ai pas entendu.",
+          "example_sentence_native": "Sorry, I didn't hear.",
+          "example_sentence_phonetic": "par-don, zhuh nay pah on-ton-doo"
+        }
       ],
       "dialogues": [
-        { "id": "d1_2_1", "context": "Two people introducing themselves formally.", "lines": [ { "speaker": "A", "target": "Bonjour, je m'appelle David.", "native": "Hello, my name is David.", "phonetic": "bon-zhoor, zhuh ma-pel da-veed" }, { "speaker": "B", "target": "Enchanté, David. Je suis Claire.", "native": "Pleased to meet you, David. I am Claire.", "phonetic": "on-shon-tay, da-veed. zhuh swee clair" } ] },
-        { "id": "d1_2_2", "context": "A student introducing themselves to a teacher.", "lines": [ { "speaker": "A", "target": "Excusez-moi, je suis la nouvelle étudiante.", "native": "Excuse me, I am the new student (female).", "phonetic": "ex-koo-zay mwa, zhuh swee la noo-vel ay-too-dee-ont" }, { "speaker": "B", "target": "Bonjour. Et comment vous appelez-vous ?", "native": "Hello. And what is your name?", "phonetic": "bon-zhoor. ay kom-mon vooz a-play voo?" } ] },
-        { "id": "d1_2_3", "context": "Two young people meeting at a party.", "lines": [ { "speaker": "A", "target": "Salut, moi c'est Léo. Et toi ?", "native": "Hi, I'm Léo. And you?", "phonetic": "sa-loo, mwa say lay-o. ay twa?" }, { "speaker": "B", "target": "Salut Léo. Je m'appelle Mia.", "native": "Hi Léo. My name is Mia.", "phonetic": "sa-loo lay-o. zhuh ma-pel mee-a" } ] },
-        { "id": "d1_2_4", "context": "A man and woman are introduced.", "lines": [ { "speaker": "A", "target": "Marc, je te présente Sophie.", "native": "Marc, I'd like to introduce you to Sophie.", "phonetic": "mark, zhuh tuh pray-zont so-fee" }, { "speaker": "B", "target": "Enchanté, Sophie.", "native": "Pleased to meet you, Sophie.", "phonetic": "on-shon-tay, so-fee" } ] }
+        {
+          "id": "d1_2_1",
+          "context": "Ordering a drink.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour, un café s'il vous plaît.",
+              "native": "Hello, a coffee please.",
+              "phonetic": "bon-zhoor, un ca-fay seel voo pleh"
+            },
+            {
+              "speaker": "B",
+              "target": "Oui, tout de suite.",
+              "native": "Yes, right away.",
+              "phonetic": "wee, too duh sweet"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_2_1", "target": "Je m'appelle...", "native": "My name is..." }, { "id": "m1_2_2", "target": "Et vous ?", "native": "And you? (formal)" }, { "id": "m1_2_3", "target": "Enchantée", "native": "Pleased to meet you (female)" }, { "id": "m1_2_4", "target": "Je suis...", "native": "I am..." } ] },
-      "cultural_note": "The choice between 'vous' (formal) and 'toi' (informal) is very important in French. Use 'vous' with strangers, elders, and in professional settings.",
-      "pronunciation_tip": "In 'je m'appelle', the 'e' at the end of 'appelle' is silent. It sounds like 'ma-pel'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-Introductions" }
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_2_1",
+            "sentence": "Un croissant, ___ vous plaît.",
+            "answer": "s'il",
+            "hint": "Please"
+          },
+          {
+            "id": "fb1_2_2",
+            "sentence": "___, je ne parle pas français.",
+            "answer": "Pardon",
+            "hint": "Sorry"
+          }
+        ]
+      },
+      "cultural_note": "Using 's'il vous plaît' (formal) and 's'il te plaît' (informal) is a key part of daily French etiquette, even for small requests.",
+      "pronunciation_tip": "The 'on' in 'Pardon' is a nasal sound. Try to say 'on' without closing your lips completely.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W1D2-PolitenessFR"
+      }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1, Day 3: Asking for a Name",
-      "title_native": "Semaine 1, Jour 3 : Demander le nom",
-      "theme": "Basic Communication",
+      "title": "Day 3: Introductions",
+      "title_native": "Jour 3 : Les présentations",
+      "theme": "Introducing Yourself",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_3_1", "target": "Comment vous appelez-vous ?", "phonetic": "kom-mon vooz a-play voo", "native_meaning": "What is your name? (formal)", "english": "What is your name? (formal)", "example_sentence_target": "Pardon, comment vous appelez-vous ?", "example_sentence_native": "Pardon, what is your name?", "example_sentence_phonetic": "par-don, kom-mon vooz a-play voo?" },
-        { "id": "w1_3_2", "target": "Comment tu t'appelles ?", "phonetic": "kom-mon too ta-pel", "native_meaning": "What is your name? (informal)", "english": "What is your name? (informal)", "example_sentence_target": "Salut, comment tu t'appelles ?", "example_sentence_native": "Hi, what is your name?", "example_sentence_phonetic": "sa-loo, kom-mon too ta-pel?" },
-        { "id": "w1_3_3", "target": "Quel est votre nom ?", "phonetic": "kel ay vo-truh nom", "native_meaning": "What is your name? (lit.)", "english": "What is your name?", "example_sentence_target": "Quel est votre nom de famille ?", "example_sentence_native": "What is your last name?", "example_sentence_phonetic": "kel ay vo-truh nom duh fa-mee-yuh" },
-        { "id": "w1_3_4", "target": "Mon nom est...", "phonetic": "mon nom ay", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Mon nom est Dubois.", "example_sentence_native": "My name is Dubois.", "example_sentence_phonetic": "mon nom ay doo-bwa" },
-        { "id": "w1_3_5", "target": "C'est...", "phonetic": "say", "native_meaning": "It is... / This is...", "english": "It is...", "example_sentence_target": "C'est ma femme, Hélène.", "example_sentence_native": "This is my wife, Hélène.", "example_sentence_phonetic": "say ma fam, ay-len" },
-        { "id": "w1_3_6", "target": "Pardon", "phonetic": "par-don", "native_meaning": "Pardon / Excuse me", "english": "Pardon / Excuse me", "example_sentence_target": "Pardon ? Je n'ai pas compris.", "example_sentence_native": "Pardon? I didn't understand.", "example_sentence_phonetic": "par-don? zhuh nay pa kom-pree" },
-        { "id": "w1_3_7", "target": "Moi", "phonetic": "mwa", "native_meaning": "Me / I", "english": "Me / I", "example_sentence_target": "Moi, je m'appelle Luc.", "example_sentence_native": "Me, my name is Luc.", "example_sentence_phonetic": "mwa, zhuh ma-pel look" },
-        { "id": "w1_3_8", "target": "Lui / Elle", "phonetic": "lwee / el", "native_meaning": "Him / Her", "english": "Him / Her", "example_sentence_target": "Comment s'appelle-t-elle ?", "example_sentence_native": "What is her name?", "example_sentence_phonetic": "kom-mon sa-pel tel?" }
-      ],
-      "sentences": [
-        { "id": "s1_3_1", "target": "Pardon madame, comment vous appelez-vous ?", "native": "Excuse me madam, what is your name?", "phonetic": "par-don ma-dam, kom-mon vooz a-play voo?" },
-        { "id": "s1_3_2", "target": "C'est qui ? Comment il s'appelle ?", "native": "Who is that? What is his name?", "phonetic": "say kee? kom-mon eel sa-pel?" },
-        { "id": "s1_3_3", "target": "Moi, c'est Pierre. Et toi ?", "native": "I'm Pierre. And you?", "phonetic": "mwa, say pee-air. ay twa?" },
-        { "id": "s1_3_4", "target": "Mon nom est Martin, et mon prénom est Jean.", "native": "My last name is Martin, and my first name is Jean.", "phonetic": "mon nom ay mar-tan, ay mon pray-nom ay zhon" },
-        { "id": "s1_3_5", "target": "Excusez-moi, quel est votre nom ?", "native": "Excuse me, what is your name?", "phonetic": "ex-koo-zay mwa, kel ay vo-truh nom?" },
-        { "id": "s1_3_6", "target": "Elle s'appelle Nathalie.", "native": "Her name is Nathalie.", "phonetic": "el sa-pel na-ta-lee" },
-        { "id": "s1_3_7", "target": "Comment s'appelle ton ami ?", "native": "What is your friend's name?", "phonetic": "kom-mon sa-pel ton a-mee?" },
-        { "id": "s1_3_8", "target": "Je ne connais pas son nom.", "native": "I don't know his/her name.", "phonetic": "zhuh nuh kon-nay pa son nom" }
+        {
+          "id": "w1_3_1",
+          "target": "Je m'appelle...",
+          "phonetic": "zhuh ma-pell",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Bonjour, je m'appelle Paul.",
+          "example_sentence_native": "Hello, my name is Paul.",
+          "example_sentence_phonetic": "bon-zhoor, zhuh ma-pell pol"
+        },
+        {
+          "id": "w1_3_2",
+          "target": "Comment vous appelez-vous ?",
+          "phonetic": "ko-mon voo za-play voo",
+          "native_meaning": "What is your name? (formal)",
+          "english": "What is your name? (formal)",
+          "example_sentence_target": "Comment vous appelez-vous ?",
+          "example_sentence_native": "What is your name?",
+          "example_sentence_phonetic": "ko-mon voo za-play voo"
+        },
+        {
+          "id": "w1_3_3",
+          "target": "Enchanté / Enchantée",
+          "phonetic": "on-shon-tay",
+          "native_meaning": "Pleased to meet you",
+          "english": "Pleased to meet you",
+          "example_sentence_target": "Enchantée de vous rencontrer.",
+          "example_sentence_native": "Pleased to meet you (said by a female).",
+          "example_sentence_phonetic": "on-shon-tay duh voo ron-kon-tray"
+        },
+        {
+          "id": "w1_3_4",
+          "target": "Monsieur",
+          "phonetic": "mon-syer",
+          "native_meaning": "Sir / Mr.",
+          "english": "Sir / Mr.",
+          "example_sentence_target": "Bonjour Monsieur Dupont.",
+          "example_sentence_native": "Hello Mr. Dupont.",
+          "example_sentence_phonetic": "bon-zhoor mon-syer doo-pon"
+        },
+        {
+          "id": "w1_3_5",
+          "target": "Madame",
+          "phonetic": "ma-dam",
+          "native_meaning": "Madam / Mrs.",
+          "english": "Madam / Mrs.",
+          "example_sentence_target": "Merci Madame.",
+          "example_sentence_native": "Thank you, Madam.",
+          "example_sentence_phonetic": "mehr-see ma-dam"
+        }
       ],
       "dialogues": [
-        { "id": "d1_3_1", "context": "At a reception desk.", "lines": [ { "speaker": "A", "target": "Bonjour. Quel est votre nom, s'il vous plaît ?", "native": "Hello. What is your name, please?", "phonetic": "bon-zhoor. kel ay vo-truh nom, seel voo play?" }, { "speaker": "B", "target": "Mon nom est Smith.", "native": "My name is Smith.", "phonetic": "mon nom ay smith" } ] },
-        { "id": "d1_3_2", "context": "Two children meeting in a park.", "lines": [ { "speaker": "A", "target": "Salut ! Comment tu t'appelles ?", "native": "Hi! What's your name?", "phonetic": "sa-loo! kom-mon too ta-pel?" }, { "speaker": "B", "target": "Je m'appelle Hugo. Et toi ?", "native": "My name is Hugo. And you?", "phonetic": "zhuh ma-pel oo-go. ay twa?" } ] },
-        { "id": "d1_3_3", "context": "Trying to remember someone's name.", "lines": [ { "speaker": "A", "target": "Comment s'appelle-t-il, déjà ?", "native": "What's his name again?", "phonetic": "kom-mon sa-pel-teel, day-zha?" }, { "speaker": "B", "target": "Lui ? Il s'appelle Thomas.", "native": "Him? His name is Thomas.", "phonetic": "lwee? eel sa-pel to-ma" } ] },
-        { "id": "d1_3_4", "context": "A phone call with someone you don't know.", "lines": [ { "speaker": "A", "target": "Allô ? C'est qui à l'appareil ?", "native": "Hello? Who is speaking?", "phonetic": "a-lo? say kee a la-pa-ray?" }, { "speaker": "B", "target": "Bonjour, c'est Marie. Pardon, comment vous appelez-vous ?", "native": "Hello, this is Marie. Pardon, what is your name?", "phonetic": "bon-zhoor, say ma-ree. par-don, kom-mon vooz a-play voo?" } ] }
+        {
+          "id": "d1_3_1",
+          "context": "Meeting someone for the first time.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour, je m'appelle Marie.",
+              "native": "Hello, my name is Marie.",
+              "phonetic": "bon-zhoor, zhuh ma-pell ma-ree"
+            },
+            {
+              "speaker": "B",
+              "target": "Enchanté Marie. Je m'appelle Jean.",
+              "native": "Pleased to meet you, Marie. My name is Jean.",
+              "phonetic": "on-shon-tay ma-ree. zhuh ma-pell zhon"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_3_1", "target": "Comment tu t'appelles ?", "native": "What is your name? (informal)" }, { "id": "m1_3_2", "target": "Mon nom est...", "native": "My name is..." }, { "id": "m1_3_3", "target": "C'est...", "native": "It is..." }, { "id": "m1_3_4", "target": "Pardon", "native": "Excuse me" } ] },
-      "cultural_note": "While 'Quel est votre nom ?' is grammatically correct, 'Comment vous appelez-vous ?' is much more common in everyday conversation for asking someone's name.",
-      "pronunciation_tip": "The 'ent' at the end of 'comment' is silent. The word is pronounced 'kom-mon'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-AskingName" }
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["vous", "appelez-vous", "Comment", "?"],
+            "correct": "Comment vous appelez-vous ?",
+            "nativeHint": "What is your name?"
+          }
+        ]
+      },
+      "cultural_note": "'Enchanté' is used by males, and 'Enchantée' (with an extra 'e') is used by females. The pronunciation is the same.",
+      "pronunciation_tip": "In 'je m'appelle', the 'e' at the end of 'appelle' is silent. It sounds like 'appell'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W1D3-IntroductionsFR"
+      }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1, Day 4: Nationality and Country",
-      "title_native": "Semaine 1, Jour 4 : Nationalité et pays",
-      "theme": "Basic Communication",
+      "title": "Day 4: How are you?",
+      "title_native": "Jour 4 : Comment ça va ?",
+      "theme": "Asking how someone is",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_4_1", "target": "Français / Française", "phonetic": "fron-say / fron-sez", "native_meaning": "French (m/f)", "english": "French", "example_sentence_target": "Je suis français.", "example_sentence_native": "I am French.", "example_sentence_phonetic": "zhuh swee fron-say" },
-        { "id": "w1_4_2", "target": "La France", "phonetic": "la fronse", "native_meaning": "France", "english": "France", "example_sentence_target": "J'habite en France.", "example_sentence_native": "I live in France.", "example_sentence_phonetic": "zha-beet on fronse" },
-        { "id": "w1_4_3", "target": "D'où venez-vous ?", "phonetic": "doo vuh-nay voo", "native_meaning": "Where are you from? (formal)", "english": "Where are you from?", "example_sentence_target": "D'où venez-vous, madame ?", "example_sentence_native": "Where are you from, madam?", "example_sentence_phonetic": "doo vuh-nay voo, ma-dam?" },
-        { "id": "w1_4_4", "target": "D'où viens-tu ?", "phonetic": "doo vee-an too", "native_meaning": "Where are you from? (informal)", "english": "Where are you from?", "example_sentence_target": "Et toi, d'où viens-tu ?", "example_sentence_native": "And you, where are you from?", "example_sentence_phonetic": "ay twa, doo vee-an too?" },
-        { "id": "w1_4_5", "target": "Je viens de...", "phonetic": "zhuh vee-an duh", "native_meaning": "I come from...", "english": "I come from...", "example_sentence_target": "Je viens des États-Unis.", "example_sentence_native": "I come from the United States.", "example_sentence_phonetic": "zhuh vee-an dayz ay-taz-oo-nee" },
-        { "id": "w1_4_6", "target": "Un pays", "phonetic": "un pay-ee", "native_meaning": "A country", "english": "A country", "example_sentence_target": "Quel est votre pays d'origine ?", "example_sentence_native": "What is your country of origin?", "example_sentence_phonetic": "kel ay vo-truh pay-ee do-ree-zheen?" },
-        { "id": "w1_4_7", "target": "Nationalité", "phonetic": "na-syon-a-lee-tay", "native_meaning": "Nationality", "english": "Nationality", "example_sentence_target": "Quelle est votre nationalité ?", "example_sentence_native": "What is your nationality?", "example_sentence_phonetic": "kel ay vo-truh na-syon-a-lee-tay?" },
-        { "id": "w1_4_8", "target": "J'habite à...", "phonetic": "zha-beet a", "native_meaning": "I live in...", "english": "I live in...", "example_sentence_target": "J'habite à Londres.", "example_sentence_native": "I live in London.", "example_sentence_phonetic": "zha-beet a lon-druh" }
-      ],
-      "sentences": [
-        { "id": "s1_4_1", "target": "Quelle est votre nationalité ?", "native": "What is your nationality?", "phonetic": "kel ay vo-truh na-syon-a-lee-tay?" },
-        { "id": "s1_4_2", "target": "Je suis américain.", "native": "I am American (male).", "phonetic": "zhuh sweez a-may-ree-can" },
-        { "id": "s1_4_3", "target": "Elle est canadienne.", "native": "She is Canadian (female).", "phonetic": "el ay ca-na-dyen" },
-        { "id": "s1_4_4", "target": "D'où venez-vous ?", "native": "Where are you from?", "phonetic": "doo vuh-nay voo?" },
-        { "id": "s1_4_5", "target": "Je viens d'Inde.", "native": "I come from India.", "phonetic": "zhuh vee-an d'and" },
-        { "id": "s1_4_6", "target": "Il habite en Allemagne.", "native": "He lives in Germany.", "phonetic": "eel a-beet on al-ma-nyuh" },
-        { "id": "s1_4_7", "target": "La France est un beau pays.", "native": "France is a beautiful country.", "phonetic": "la fronse ay un bo pay-ee" },
-        { "id": "s1_4_8", "target": "Nous venons du Royaume-Uni.", "native": "We come from the United Kingdom.", "phonetic": "noo vuh-non doo rwa-yohm-oo-nee" }
+        {
+          "id": "w1_4_1",
+          "target": "Comment ça va ?",
+          "phonetic": "ko-mon sa va",
+          "native_meaning": "How are you? / How's it going?",
+          "english": "How are you? / How's it going?",
+          "example_sentence_target": "Salut, comment ça va ?",
+          "example_sentence_native": "Hi, how's it going?",
+          "example_sentence_phonetic": "sa-loo, ko-mon sa va"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "Ça va bien",
+          "phonetic": "sa va byan",
+          "native_meaning": "It's going well / I'm fine",
+          "english": "It's going well / I'm fine",
+          "example_sentence_target": "Ça va bien, merci.",
+          "example_sentence_native": "I'm fine, thank you.",
+          "example_sentence_phonetic": "sa va byan, mehr-see"
+        },
+        {
+          "id": "w1_4_3",
+          "target": "Et vous ?",
+          "phonetic": "ay voo",
+          "native_meaning": "And you? (formal)",
+          "english": "And you? (formal)",
+          "example_sentence_target": "Ça va bien, et vous ?",
+          "example_sentence_native": "I'm fine, and you?",
+          "example_sentence_phonetic": "sa va byan, ay voo"
+        },
+        {
+          "id": "w1_4_4",
+          "target": "Pas mal",
+          "phonetic": "pa mal",
+          "native_meaning": "Not bad",
+          "english": "Not bad",
+          "example_sentence_target": "Comment ça va ? Pas mal.",
+          "example_sentence_native": "How are you? Not bad.",
+          "example_sentence_phonetic": "ko-mon sa va? pa mal"
+        },
+        {
+          "id": "w1_4_5",
+          "target": "Très bien",
+          "phonetic": "treh byan",
+          "native_meaning": "Very well",
+          "english": "Very well",
+          "example_sentence_target": "Je vais très bien, merci.",
+          "example_sentence_native": "I am doing very well, thank you.",
+          "example_sentence_phonetic": "zhuh vay treh byan, mehr-see"
+        }
       ],
       "dialogues": [
-        { "id": "d1_4_1", "context": "At passport control.", "lines": [ { "speaker": "A", "target": "Bonjour. D'où venez-vous ?", "native": "Hello. Where do you come from?", "phonetic": "bon-zhoor. doo vuh-nay voo?" }, { "speaker": "B", "target": "Je viens du Canada.", "native": "I come from Canada.", "phonetic": "zhuh vee-an doo ca-na-da" } ] },
-        { "id": "d1_4_2", "context": "Two tourists meet and chat.", "lines": [ { "speaker": "A", "target": "Vous n'êtes pas d'ici, n'est-ce pas ?", "native": "You are not from here, are you?", "phonetic": "voo net pa dee-see, nes-pa?" }, { "speaker": "B", "target": "Non, je suis italienne. Et vous ?", "native": "No, I am Italian (female). And you?", "phonetic": "non, zhuh sweez ee-ta-lyen. ay voo?" } ] },
-        { "id": "d1_4_3", "context": "Filling out a form.", "lines": [ { "speaker": "A", "target": "Quelle est votre nationalité ?", "native": "What is your nationality?", "phonetic": "kel ay vo-truh na-syon-a-lee-tay?" }, { "speaker": "B", "target": "Je suis britannique.", "native": "I am British.", "phonetic": "zhuh swee bree-ta-neek" } ] },
-        { "id": "d1_4_4", "context": "Talking about where you live.", "lines": [ { "speaker": "A", "target": "J'habite à Paris. Et toi ?", "native": "I live in Paris. And you?", "phonetic": "zha-beet a pa-ree. ay twa?" }, { "speaker": "B", "target": "Moi, j'habite à Lyon.", "native": "Me, I live in Lyon.", "phonetic": "mwa, zha-beet a lee-on" } ] }
+        {
+          "id": "d1_4_1",
+          "context": "A standard greeting exchange.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour ! Comment ça va ?",
+              "native": "Hello! How are you?",
+              "phonetic": "bon-zhoor! ko-mon sa va"
+            },
+            {
+              "speaker": "B",
+              "target": "Ça va bien, merci. Et vous ?",
+              "native": "I'm fine, thanks. And you?",
+              "phonetic": "sa va byan, mehr-see. ay voo"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_4_1", "target": "La France", "native": "France" }, { "id": "m1_4_2", "target": "D'où venez-vous ?", "native": "Where are you from?" }, { "id": "m1_4_3", "target": "Je viens de...", "native": "I come from..." }, { "id": "m1_4_4", "target": "Nationalité", "native": "Nationality" } ] },
-      "cultural_note": "Adjectives for nationality change based on gender. For example, 'américain' (m) becomes 'américaine' (f). Most follow this pattern.",
-      "pronunciation_tip": "The 'en' in 'France' is a nasal sound. Try to say 'on' without closing your lips completely.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D4-Nationality" }
+      "exercises": {
+        "multipleChoice": [
+          {
+            "id": "mc1_4_1",
+            "question": "How do you say 'I'm fine, thank you.'?",
+            "options": ["Ça va bien, merci.", "Comment ça va ?", "Pas mal.", "Et vous ?"],
+            "correct": 0,
+            "explanation": "'Ça va bien' means 'I'm fine' and 'merci' means 'thank you'."
+          }
+        ]
+      },
+      "cultural_note": "'Comment ça va?' is very common and can be used in both formal and informal settings. The response is often a simple 'Ça va' as well.",
+      "pronunciation_tip": "The 'ent' at the end of 'comment' is silent. It's pronounced 'ko-mon'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W1D4-HowAreYouFR"
+      }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1, Day 5: Polite Expressions",
-      "title_native": "Semaine 1, Jour 5 : Expressions de politesse",
-      "theme": "Basic Communication",
+      "title": "Day 5: Essential Questions",
+      "title_native": "Jour 5 : Questions essentielles",
+      "theme": "Basic Question Words",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_5_1", "target": "S'il vous plaît", "phonetic": "seel voo play", "native_meaning": "Please (formal)", "english": "Please", "example_sentence_target": "Un café, s'il vous plaît.", "example_sentence_native": "A coffee, please.", "example_sentence_phonetic": "un ca-fay, seel voo play" },
-        { "id": "w1_5_2", "target": "S'il te plaît", "phonetic": "seel tuh play", "native_meaning": "Please (informal)", "english": "Please", "example_sentence_target": "Passe-moi le sel, s'il te plaît.", "example_sentence_native": "Pass me the salt, please.", "example_sentence_phonetic": "pass-mwa luh sel, seel tuh play" },
-        { "id": "w1_5_3", "target": "Excusez-moi", "phonetic": "ex-koo-zay mwa", "native_meaning": "Excuse me (formal)", "english": "Excuse me", "example_sentence_target": "Excusez-moi, où est la gare ?", "example_sentence_native": "Excuse me, where is the train station?", "example_sentence_phonetic": "ex-koo-zay mwa, oo ay la gar?" },
-        { "id": "w1_5_4", "target": "Excuse-moi", "phonetic": "ex-kooz mwa", "native_meaning": "Excuse me (informal)", "english": "Excuse me", "example_sentence_target": "Excuse-moi, tu as l'heure ?", "example_sentence_native": "Excuse me, do you have the time?", "example_sentence_phonetic": "ex-kooz mwa, too a l'uhr?" },
-        { "id": "w1_5_5", "target": "Désolé / Désolée", "phonetic": "day-zo-lay", "native_meaning": "Sorry (m/f)", "english": "Sorry", "example_sentence_target": "Je suis désolé pour le retard.", "example_sentence_native": "I am sorry for the delay.", "example_sentence_phonetic": "zhuh swee day-zo-lay poor luh ruh-tar" },
-        { "id": "w1_5_6", "target": "Avec plaisir", "phonetic": "a-vek play-zeer", "native_meaning": "With pleasure", "english": "With pleasure", "example_sentence_target": "J'accepte avec plaisir.", "example_sentence_native": "I accept with pleasure.", "example_sentence_phonetic": "zh'ak-sept a-vek play-zeer" },
-        { "id": "w1_5_7", "target": "Pas de problème", "phonetic": "pa duh prob-lem", "native_meaning": "No problem", "english": "No problem", "example_sentence_target": "Ce n'est pas grave, pas de problème.", "example_sentence_native": "It's not serious, no problem.", "example_sentence_phonetic": "suh n'ay pa grav, pa duh prob-lem" },
-        { "id": "w1_5_8", "target": "Bien sûr", "phonetic": "bee-an soor", "native_meaning": "Of course", "english": "Of course", "example_sentence_target": "Bien sûr que vous pouvez.", "example_sentence_native": "Of course you can.", "example_sentence_phonetic": "bee-an soor kuh voo poo-vay" }
-      ],
-      "sentences": [
-        { "id": "s1_5_1", "target": "L'addition, s'il vous plaît.", "native": "The bill, please.", "phonetic": "la-dee-syon, seel voo play" },
-        { "id": "s1_5_2", "target": "Désolé, je ne parle pas français.", "native": "Sorry, I don't speak French.", "phonetic": "day-zo-lay, zhuh nuh parl pa fron-say" },
-        { "id": "s1_5_3", "target": "Excusez-moi, je cherche la rue Victor Hugo.", "native": "Excuse me, I'm looking for Victor Hugo street.", "phonetic": "ex-koo-zay mwa, zhuh shersh la roo veek-tor oo-go" },
-        { "id": "s1_5_4", "target": "Tu peux m'aider, s'il te plaît ?", "native": "Can you help me, please? (informal)", "phonetic": "too puh may-day, seel tuh play?" },
-        { "id": "s1_5_5", "target": "Pas de problème, je comprends.", "native": "No problem, I understand.", "phonetic": "pa duh prob-lem, zhuh kom-pron" },
-        { "id": "s1_5_6", "target": "Bien sûr, asseyez-vous.", "native": "Of course, have a seat.", "phonetic": "bee-an soor, a-say-yay-voo" },
-        { "id": "s1_5_7", "target": "Je vous en prie, entrez.", "native": "Please, come in. (formal)", "phonetic": "zhuh voo zon pree, on-tray" },
-        { "id": "s1_5_8", "target": "Je suis vraiment désolée.", "native": "I am really sorry (female).", "phonetic": "zhuh swee vray-mon day-zo-lay" }
+        {
+          "id": "w1_5_1",
+          "target": "Où",
+          "phonetic": "oo",
+          "native_meaning": "Where",
+          "english": "Where",
+          "example_sentence_target": "Où sont les toilettes ?",
+          "example_sentence_native": "Where is the restroom?",
+          "example_sentence_phonetic": "oo son lay twa-let"
+        },
+        {
+          "id": "w1_5_2",
+          "target": "Quand",
+          "phonetic": "kon",
+          "native_meaning": "When",
+          "english": "When",
+          "example_sentence_target": "Quand est-ce que le train part ?",
+          "example_sentence_native": "When does the train leave?",
+          "example_sentence_phonetic": "kon ess kuh luh tran par"
+        },
+        {
+          "id": "w1_5_3",
+          "target": "Comment",
+          "phonetic": "ko-mon",
+          "native_meaning": "How",
+          "english": "How",
+          "example_sentence_target": "Comment allez-vous ?",
+          "example_sentence_native": "How are you? (formal)",
+          "example_sentence_phonetic": "ko-mon alay-voo"
+        },
+        {
+          "id": "w1_5_4",
+          "target": "Pourquoi",
+          "phonetic": "poor-kwah",
+          "native_meaning": "Why",
+          "english": "Why",
+          "example_sentence_target": "Pourquoi pas ?",
+          "example_sentence_native": "Why not?",
+          "example_sentence_phonetic": "poor-kwah pa"
+        },
+        {
+          "id": "w1_5_5",
+          "target": "Combien",
+          "phonetic": "kom-byan",
+          "native_meaning": "How much / How many",
+          "english": "How much / How many",
+          "example_sentence_target": "Combien ça coûte ?",
+          "example_sentence_native": "How much does it cost?",
+          "example_sentence_phonetic": "kom-byan sa koot"
+        }
       ],
       "dialogues": [
-        { "id": "d1_5_1", "context": "Getting a waiter's attention.", "lines": [ { "speaker": "A", "target": "Excusez-moi, monsieur.", "native": "Excuse me, sir.", "phonetic": "ex-koo-zay mwa, muh-syuh" }, { "speaker": "B", "target": "Oui ? L'addition, s'il vous plaît.", "native": "Yes? The bill, please.", "phonetic": "wee? la-dee-syon, seel voo play" } ] },
-        { "id": "d1_5_2", "context": "Bumping into someone accidentally.", "lines": [ { "speaker": "A", "target": "Oh, pardon ! Je suis désolé.", "native": "Oh, pardon! I am sorry.", "phonetic": "oh, par-don! zhuh swee day-zo-lay" }, { "speaker": "B", "target": "Ce n'est rien. Pas de problème.", "native": "It's nothing. No problem.", "phonetic": "suh n'ay ree-an. pa duh prob-lem" } ] },
-        { "id": "d1_5_3", "context": "Asking a friend for a pen.", "lines": [ { "speaker": "A", "target": "Excuse-moi, est-ce que je peux emprunter ton stylo, s'il te plaît ?", "native": "Excuse me, can I borrow your pen, please?", "phonetic": "ex-kooz mwa, es-kuh zhuh puh om-prun-tay ton stee-lo, seel tuh play?" }, { "speaker": "B", "target": "Bien sûr, voilà.", "native": "Of course, here you are.", "phonetic": "bee-an soor, vwa-la" } ] },
-        { "id": "d1_5_4", "context": "Accepting an invitation.", "lines": [ { "speaker": "A", "target": "Voulez-vous venir avec nous ?", "native": "Do you want to come with us?", "phonetic": "voo-lay voo vuh-neer a-vek noo?" }, { "speaker": "B", "target": "Oui, avec plaisir !", "native": "Yes, with pleasure!", "phonetic": "wee, a-vek play-zeer!" } ] }
+        {
+          "id": "d1_5_1",
+          "context": "Asking for the price of an item.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Excusez-moi, combien ça coûte ?",
+              "native": "Excuse me, how much does this cost?",
+              "phonetic": "ex-kew-zay mwah, kom-byan sa koot"
+            },
+            {
+              "speaker": "B",
+              "target": "Ça coûte dix euros.",
+              "native": "It costs ten euros.",
+              "phonetic": "sa koot deez euro"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_5_1", "target": "S'il vous plaît", "native": "Please (formal)" }, { "id": "m1_5_2", "target": "Excusez-moi", "native": "Excuse me" }, { "id": "m1_5_3", "target": "Désolé", "native": "Sorry" }, { "id": "m1_5_4", "target": "Pas de problème", "native": "No problem" } ] },
-      "cultural_note": "Using polite expressions like 's'il vous plaît' and 'merci' is extremely important in French culture, even for very small interactions.",
-      "pronunciation_tip": "In 's'il vous plaît', the 's' in 'vous' links with the 'î' in 'plaît', creating a 'z' sound: 'seel voo play'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-Politeness" }
+      "exercises": {
+        "matching": [
+          { "id": "m1_5_1", "target": "Où", "native": "Where" },
+          { "id": "m1_5_2", "target": "Quand", "native": "When" },
+          { "id": "m1_5_3", "target": "Combien", "native": "How much" },
+          { "id": "m1_5_4", "target": "Pourquoi", "native": "Why" }
+        ]
+      },
+      "cultural_note": "Asking 'Combien ça coûte?' is essential for shopping in markets where prices might not be displayed.",
+      "pronunciation_tip": "'Quand' ends with a nasal sound, similar to 'comment'. The final 'd' is silent.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W1D5-QuestionsFR"
+      }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1, Day 6: Yes / No / Maybe",
-      "title_native": "Semaine 1, Jour 6 : Oui / Non / Peut-être",
-      "theme": "Basic Communication",
+      "title": "Day 6: Understanding and Numbers 0-5",
+      "title_native": "Jour 6 : Compréhension et nombres 0-5",
+      "theme": "Understanding & Basic Numbers",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_6_1", "target": "Oui", "phonetic": "wee", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Oui, je veux bien.", "example_sentence_native": "Yes, I would like that.", "example_sentence_phonetic": "wee, zhuh vuh bee-an" },
-        { "id": "w1_6_2", "target": "Non", "phonetic": "non", "native_meaning": "No", "english": "No", "example_sentence_target": "Non, merci.", "example_sentence_native": "No, thank you.", "example_sentence_phonetic": "non, mer-see" },
-        { "id": "w1_6_3", "target": "Peut-être", "phonetic": "puh-tet-ruh", "native_meaning": "Maybe", "english": "Maybe", "example_sentence_target": "Peut-être plus tard.", "example_sentence_native": "Maybe later.", "example_sentence_phonetic": "puh-tet-ruh ploo tar" },
-        { "id": "w1_6_4", "target": "D'accord", "phonetic": "da-kor", "native_meaning": "Okay / Agreed", "english": "Okay / Agreed", "example_sentence_target": "D'accord, on fait comme ça.", "example_sentence_native": "Okay, we'll do it like that.", "example_sentence_phonetic": "da-kor, on fay kom sa" },
-        { "id": "w1_6_5", "target": "Bien sûr", "phonetic": "bee-an soor", "native_meaning": "Of course", "english": "Of course", "example_sentence_target": "Oui, bien sûr.", "example_sentence_native": "Yes, of course.", "example_sentence_phonetic": "wee, bee-an soor" },
-        { "id": "w1_6_6", "target": "Je ne sais pas", "phonetic": "zhuh nuh say pa", "native_meaning": "I don't know", "english": "I don't know", "example_sentence_target": "Je ne sais pas où c'est.", "example_sentence_native": "I don't know where it is.", "example_sentence_phonetic": "zhuh nuh say pa oo say" },
-        { "id": "w1_6_7", "target": "Je comprends", "phonetic": "zhuh kom-pron", "native_meaning": "I understand", "english": "I understand", "example_sentence_target": "Oui, je comprends la question.", "example_sentence_native": "Yes, I understand the question.", "example_sentence_phonetic": "wee, zhuh kom-pron la kes-tyon" },
-        { "id": "w1_6_8", "target": "Je ne comprends pas", "phonetic": "zhuh nuh kom-pron pa", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Désolé, je ne comprends pas.", "example_sentence_native": "Sorry, I don't understand.", "example_sentence_phonetic": "day-zo-lay, zhuh nuh kom-pron pa" }
-      ],
-      "sentences": [
-        { "id": "s1_6_1", "target": "Oui, s'il vous plaît.", "native": "Yes, please.", "phonetic": "wee, seel voo play" },
-        { "id": "s1_6_2", "target": "Non, je ne suis pas d'accord.", "native": "No, I don't agree.", "phonetic": "non, zhuh nuh swee pa da-kor" },
-        { "id": "s1_6_3", "target": "Peut-être que nous irons demain.", "native": "Maybe we will go tomorrow.", "phonetic": "puh-tet-ruh kuh noo zee-ron duh-man" },
-        { "id": "s1_6_4", "target": "D'accord, à quelle heure ?", "native": "Okay, at what time?", "phonetic": "da-kor, a kel uhr?" },
-        { "id": "s1_6_5", "target": "Je ne sais pas la réponse.", "native": "I don't know the answer.", "phonetic": "zhuh nuh say pa la ray-ponse" },
-        { "id": "s1_6_6", "target": "Vous comprenez ? Oui, je comprends.", "native": "Do you understand? Yes, I understand.", "phonetic": "voo kom-pruh-nay? wee, zhuh kom-pron" },
-        { "id": "s1_6_7", "target": "Parlez plus lentement, je ne comprends pas.", "native": "Speak more slowly, I don't understand.", "phonetic": "par-lay ploo lon-tuh-mon, zhuh nuh kom-pron pa" },
-        { "id": "s1_6_8", "target": "Bien sûr, c'est possible.", "native": "Of course, it's possible.", "phonetic": "bee-an soor, say po-see-bluh" }
+        {
+          "id": "w1_6_1",
+          "target": "Je comprends",
+          "phonetic": "zhuh kom-pron",
+          "native_meaning": "I understand",
+          "english": "I understand",
+          "example_sentence_target": "Oui, je comprends un peu.",
+          "example_sentence_native": "Yes, I understand a little.",
+          "example_sentence_phonetic": "wee, zhuh kom-pron un puh"
+        },
+        {
+          "id": "w1_6_2",
+          "target": "Je ne comprends pas",
+          "phonetic": "zhuh nuh kom-pron pa",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Pardon, je ne comprends pas.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "par-don, zhuh nuh kom-pron pa"
+        },
+        {
+          "id": "w1_6_3",
+          "target": "Un / Une",
+          "phonetic": "un / oon",
+          "native_meaning": "One",
+          "english": "One",
+          "example_sentence_target": "Un café et une bouteille d'eau.",
+          "example_sentence_native": "One coffee and one bottle of water.",
+          "example_sentence_phonetic": "un ca-fay ay oon boo-tay doh"
+        },
+        {
+          "id": "w1_6_4",
+          "target": "Deux",
+          "phonetic": "duh",
+          "native_meaning": "Two",
+          "english": "Two",
+          "example_sentence_target": "Je voudrais deux croissants.",
+          "example_sentence_native": "I would like two croissants.",
+          "example_sentence_phonetic": "zhuh voo-dray duh krwa-son"
+        },
+        {
+          "id": "w1_6_5",
+          "target": "Trois",
+          "phonetic": "trwah",
+          "native_meaning": "Three",
+          "english": "Three",
+          "example_sentence_target": "Nous sommes trois.",
+          "example_sentence_native": "There are three of us.",
+          "example_sentence_phonetic": "noo som trwah"
+        }
       ],
       "dialogues": [
-        { "id": "d1_6_1", "context": "Answering a simple question.", "lines": [ { "speaker": "A", "target": "Vous parlez anglais ?", "native": "Do you speak English?", "phonetic": "voo par-lay on-glay?" }, { "speaker": "B", "target": "Oui, un peu.", "native": "Yes, a little.", "phonetic": "wee, un puh" } ] },
-        { "id": "d1_6_2", "context": "Declining an offer.", "lines": [ { "speaker": "A", "target": "Voulez-vous du dessert ?", "native": "Would you like some dessert?", "phonetic": "voo-lay voo doo des-ser?" }, { "speaker": "B", "target": "Non, merci. Je n'ai plus faim.", "native": "No, thank you. I'm not hungry anymore.", "phonetic": "non, mer-see. zhuh nay ploo fam" } ] },
-        { "id": "d1_6_3", "context": "Being unsure about plans.", "lines": [ { "speaker": "A", "target": "Tu viens au cinéma ce soir ?", "native": "Are you coming to the cinema tonight?", "phonetic": "too vee-an o see-nay-ma suh swar?" }, { "speaker": "B", "target": "Peut-être. Je ne sais pas encore.", "native": "Maybe. I don't know yet.", "phonetic": "puh-tet-ruh. zhuh nuh say paz on-kor" } ] },
-        { "id": "d1_6_4", "context": "Not understanding directions.", "lines": [ { "speaker": "A", "target": "Continuez tout droit, puis tournez à gauche.", "native": "Continue straight, then turn left.", "phonetic": "kon-tee-noo-ay too drwa, pwee toor-nay a go-sh" }, { "speaker": "B", "target": "Désolé, je ne comprends pas. Pouvez-vous répéter ?", "native": "Sorry, I don't understand. Can you repeat?", "phonetic": "day-zo-lay, zhuh nuh kom-pron pa. poo-vay voo ray-pay-tay?" } ] }
+        {
+          "id": "d1_6_1",
+          "context": "Not understanding what someone said.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Vous pouvez répéter, s'il vous plaît ?",
+              "native": "Can you repeat, please?",
+              "phonetic": "voo poo-vay ray-pay-tay, seel voo pleh"
+            },
+            {
+              "speaker": "B",
+              "target": "Oui, bien sûr. Je disais que le musée est fermé.",
+              "native": "Yes, of course. I was saying that the museum is closed.",
+              "phonetic": "wee, byan soor. zhuh dee-zay kuh luh mew-zay ay fer-may"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_6_1", "target": "Oui", "native": "Yes" }, { "id": "m1_6_2", "target": "Non", "native": "No" }, { "id": "m1_6_3", "target": "Peut-être", "native": "Maybe" }, { "id": "m1_6_4", "target": "Je ne sais pas", "native": "I don't know" } ] },
-      "cultural_note": "If you don't understand, saying 'Je ne comprends pas' is much better than just staying silent. French people will usually be happy to repeat or rephrase.",
-      "pronunciation_tip": "The 'on' sound in 'Non' and 'comprends' is nasal. Try to push the air through your nose as you say it.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-YesNo" }
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_6_1",
+            "sentence": "Pardon, je ne ___ pas.",
+            "answer": "comprends",
+            "hint": "understand"
+          }
+        ]
+      },
+      "cultural_note": "Don't be afraid to say 'Je ne comprends pas'. French people are generally happy to repeat themselves or speak more slowly.",
+      "pronunciation_tip": "'Deux' has a soft 'd' sound, and the 'eux' is similar to the 'u' in 'put', but with rounded lips.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W1D6-NumbersFR"
+      }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1, Day 7: Simple Conversation Practice",
-      "title_native": "Semaine 1, Jour 7 : Pratique de conversation simple",
-      "theme": "Basic Communication",
+      "title": "Day 7: Weekly Review",
+      "title_native": "Jour 7 : Révision de la semaine",
+      "theme": "Review",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_7_1", "target": "Ça va ?", "phonetic": "sa va", "native_meaning": "How are you? (informal)", "english": "How are you?", "example_sentence_target": "Salut, ça va ?", "example_sentence_native": "Hi, how are you?", "example_sentence_phonetic": "sa-loo, sa va?" },
-        { "id": "w1_7_2", "target": "Ça va bien.", "phonetic": "sa va bee-an", "native_meaning": "I'm doing well.", "english": "I'm doing well.", "example_sentence_target": "Oui, ça va bien, merci.", "example_sentence_native": "Yes, I'm doing well, thank you.", "example_sentence_phonetic": "wee, sa va bee-an, mer-see" },
-        { "id": "w1_7_3", "target": "Comment allez-vous ?", "phonetic": "kom-mon a-lay voo", "native_meaning": "How are you? (formal)", "english": "How are you?", "example_sentence_target": "Bonjour, comment allez-vous ?", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "bon-zhoor, kom-mon a-lay voo?" },
-        { "id": "w1_7_4", "target": "Je vais bien.", "phonetic": "zhuh vay bee-an", "native_meaning": "I am doing well.", "english": "I am doing well.", "example_sentence_target": "Je vais bien, et vous ?", "example_sentence_native": "I am doing well, and you?", "example_sentence_phonetic": "zhuh vay bee-an, ay voo?" },
-        { "id": "w1_7_5", "target": "Et vous ?", "phonetic": "ay voo", "native_meaning": "And you? (formal)", "english": "And you? (formal)", "example_sentence_target": "Très bien, merci. Et vous ?", "example_sentence_native": "Very well, thank you. And you?", "example_sentence_phonetic": "tray bee-an, mer-see. ay voo?" },
-        { "id": "w1_7_6", "target": "S'il vous plaît", "phonetic": "seel voo play", "native_meaning": "Please", "english": "Please", "example_sentence_target": "Répétez, s'il vous plaît.", "example_sentence_native": "Repeat, please.", "example_sentence_phonetic": "ray-pay-tay, seel voo play" },
-        { "id": "w1_7_7", "target": "Parlez-vous anglais ?", "phonetic": "par-lay voo on-glay", "native_meaning": "Do you speak English?", "english": "Do you speak English?", "example_sentence_target": "Excusez-moi, parlez-vous anglais ?", "example_sentence_native": "Excuse me, do you speak English?", "example_sentence_phonetic": "ex-koo-zay mwa, par-lay voo on-glay?" },
-        { "id": "w1_7_8", "target": "Où sont les toilettes ?", "phonetic": "oo son lay twa-let", "native_meaning": "Where are the toilets?", "english": "Where are the toilets?", "example_sentence_target": "S'il vous plaît, où sont les toilettes ?", "example_sentence_native": "Please, where are the toilets?", "example_sentence_phonetic": "seel voo play, oo son lay twa-let?" }
-      ],
-      "sentences": [
-        { "id": "s1_7_1", "target": "Bonjour, comment allez-vous ?", "native": "Hello, how are you?", "phonetic": "bon-zhoor, kom-mon a-lay voo?" },
-        { "id": "s1_7_2", "target": "Je m'appelle Anna. Et vous ?", "native": "My name is Anna. And you?", "phonetic": "zhuh ma-pel a-na. ay voo?" },
-        { "id": "s1_7_3", "target": "Je viens des États-Unis.", "native": "I come from the United States.", "phonetic": "zhuh vee-an dayz ay-taz-oo-nee" },
-        { "id": "s1_7_4", "target": "Désolé, je ne comprends pas.", "native": "Sorry, I don't understand.", "phonetic": "day-zo-lay, zhuh nuh kom-pron pa" },
-        { "id": "s1_7_5", "target": "Parlez plus lentement, s'il vous plaît.", "native": "Speak more slowly, please.", "phonetic": "par-lay ploo lon-tuh-mon, seel voo play" },
-        { "id": "s1_7_6", "target": "Oui, je parle un peu français.", "native": "Yes, I speak a little French.", "phonetic": "wee, zhuh parl un puh fron-say" },
-        { "id": "s1_7_7", "target": "Merci beaucoup et au revoir.", "native": "Thank you very much and goodbye.", "phonetic": "mer-see bo-koo ay oh ruh-vwar" },
-        { "id": "s1_7_8", "target": "Excusez-moi, où sont les toilettes ?", "native": "Excuse me, where are the toilets?", "phonetic": "ex-koo-zay mwa, oo son lay twa-let?" }
+        {
+          "id": "w1_7_1",
+          "target": "Je suis",
+          "phonetic": "zhuh swee",
+          "native_meaning": "I am",
+          "english": "I am",
+          "example_sentence_target": "Je suis anglais.",
+          "example_sentence_native": "I am English.",
+          "example_sentence_phonetic": "zhuh swee on-glay"
+        },
+        {
+          "id": "w1_7_2",
+          "target": "Vous êtes",
+          "phonetic": "voo zet",
+          "native_meaning": "You are (formal)",
+          "english": "You are (formal)",
+          "example_sentence_target": "Vous êtes de Paris ?",
+          "example_sentence_native": "Are you from Paris?",
+          "example_sentence_phonetic": "voo zet duh pa-ree"
+        },
+        {
+          "id": "w1_7_3",
+          "target": "C'est",
+          "phonetic": "say",
+          "native_meaning": "It is / This is",
+          "english": "It is / This is",
+          "example_sentence_target": "C'est combien ?",
+          "example_sentence_native": "How much is it?",
+          "example_sentence_phonetic": "say kom-byan"
+        },
+        {
+          "id": "w1_7_4",
+          "target": "À bientôt",
+          "phonetic": "ah byan-toe",
+          "native_meaning": "See you soon",
+          "english": "See you soon",
+          "example_sentence_target": "D'accord, à bientôt !",
+          "example_sentence_native": "Okay, see you soon!",
+          "example_sentence_phonetic": "da-kor, ah byan-toe"
+        },
+        {
+          "id": "w1_7_5",
+          "target": "S'il te plaît",
+          "phonetic": "seel tuh pleh",
+          "native_meaning": "Please (informal)",
+          "english": "Please (informal)",
+          "example_sentence_target": "Passe-moi le sel, s'il te plaît.",
+          "example_sentence_native": "Pass me the salt, please.",
+          "example_sentence_phonetic": "pass-mwah luh sell, seel tuh pleh"
+        }
       ],
       "dialogues": [
-        { "id": "d1_7_1", "context": "A tourist asking for help.", "lines": [ { "speaker": "A", "target": "Excusez-moi, parlez-vous anglais ?", "native": "Excuse me, do you speak English?", "phonetic": "ex-koo-zay mwa, par-lay voo on-glay?" }, { "speaker": "B", "target": "Oui. Comment puis-je vous aider ?", "native": "Yes. How can I help you?", "phonetic": "wee. kom-mon pweezh vooz ay-day?" } ] },
-        { "id": "d1_7_2", "context": "Meeting someone for the first time.", "lines": [ { "speaker": "A", "target": "Bonjour, je m'appelle Jean. Et vous, comment vous appelez-vous ?", "native": "Hello, my name is Jean. And you, what is your name?", "phonetic": "bon-zhoor, zhuh ma-pel zhon. ay voo, kom-mon vooz a-play voo?" }, { "speaker": "B", "target": "Enchantée, je suis Marie. Je viens de Belgique.", "native": "Pleased to meet you, I'm Marie. I come from Belgium.", "phonetic": "on-shon-tay, zhuh swee ma-ree. zhuh vee-an duh bel-zheek" } ] },
-        { "id": "d1_7_3", "context": "A basic informal chat.", "lines": [ { "speaker": "A", "target": "Salut Léo, ça va ?", "native": "Hi Léo, how's it going?", "phonetic": "sa-loo lay-o, sa va?" }, { "speaker": "B", "target": "Ça va bien, merci. Et toi ?", "native": "It's going well, thanks. And you?", "phonetic": "sa va bee-an, mer-see. ay twa?" } ] },
-        { "id": "d1_7_4", "context": "A tourist who is lost.", "lines": [ { "speaker": "A", "target": "Pardon, je suis perdu. Je ne comprends pas la carte.", "native": "Pardon, I am lost. I don't understand the map.", "phonetic": "par-don, zhuh swee per-doo. zhuh nuh kom-pron pa la kart" }, { "speaker": "B", "target": "D'accord. Où voulez-vous aller ?", "native": "Okay. Where do you want to go?", "phonetic": "da-kor. oo voo-lay voo a-lay?" } ] }
+        {
+          "id": "d1_7_1",
+          "context": "A full, simple conversation putting everything together.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Bonjour Monsieur. Comment ça va ?",
+              "native": "Hello Sir. How's it going?",
+              "phonetic": "bon-zhoor mon-syer. ko-mon sa va"
+            },
+            {
+              "speaker": "B",
+              "target": "Bonjour. Ça va très bien, merci. Et vous ?",
+              "native": "Hello. It's going very well, thank you. And you?",
+              "phonetic": "bon-zhoor. sa va treh byan, mehr-see. ay voo"
+            }
+          ]
+        }
       ],
-      "exercises": { "matching": [ { "id": "m1_7_1", "target": "Ça va ?", "native": "How are you?" }, { "id": "m1_7_2", "target": "Parlez-vous anglais ?", "native": "Do you speak English?" }, { "id": "m1_7_3", "target": "Je viens de...", "native": "I come from..." }, { "id": "m1_7_4", "target": "Où sont les toilettes ?", "native": "Where are the toilets?" } ] },
-      "cultural_note": "Don't be afraid to mix and match the phrases you've learned. Even simple combinations can help you communicate a lot!",
-      "pronunciation_tip": "Focus on the rhythm of French sentences. Questions often have a rising intonation at the end.",
-      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W1-Complete" }
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_7_1",
+            "scrambled": ["ne", "pas", "Je", "comprends"],
+            "correct": "Je ne comprends pas",
+            "nativeHint": "I don't understand"
+          }
+        ],
+        "fillBlanks": [
+          {
+            "id": "fb1_7_1",
+            "sentence": "___ ça coûte ?",
+            "answer": "Combien",
+            "hint": "How much"
+          }
+        ]
+      },
+      "cultural_note": "Reviewing what you've learned is crucial. Try using the phrases from this week in your head as you go about your day.",
+      "pronunciation_tip": "Pay attention to liaisons, like in 'vous êtes' where the 's' is pronounced like a 'z' because it links to the vowel in 'êtes'. It sounds like 'voo-zet'.",
+      "progress": {
+        "xp": 150,
+        "streak_bonus": 20,
+        "badge": "W1-ReviewFR"
+      }
     }
   ]
 }
