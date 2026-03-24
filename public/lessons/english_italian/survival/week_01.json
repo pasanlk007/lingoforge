@@ -7,9 +7,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Settimana 1, Giorno 1: Saluti di base",
+      "theme": "Basic Greetings",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
@@ -17,1315 +17,307 @@
         {
           "id": "w1_1_1",
           "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
+          "phonetic": "Chow",
+          "native_meaning": "Hello / Hi / Bye",
+          "english": "Hello / Hi / Bye",
+          "example_sentence_target": "Ciao, come stai?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Chow, koh-meh sty?"
         },
         {
           "id": "w1_1_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
+          "target": "Buongiorno",
+          "phonetic": "Bwon-jor-no",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "Buongiorno, signore.",
+          "example_sentence_native": "Good morning, sir.",
+          "example_sentence_phonetic": "Bwon-jor-no, seen-yo-reh."
         },
         {
           "id": "w1_1_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
+          "target": "Buonasera",
+          "phonetic": "Bwo-nah-seh-rah",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "Buonasera, come va?",
+          "example_sentence_native": "Good evening, how is it going?",
+          "example_sentence_phonetic": "Bwo-nah-seh-rah, koh-meh vah?"
         },
         {
           "id": "w1_1_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
+          "target": "Arrivederci",
+          "phonetic": "Ah-ree-veh-dehr-chee",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "Arrivederci, a domani!",
+          "example_sentence_native": "Goodbye, see you tomorrow!",
+          "example_sentence_phonetic": "Ah-ree-veh-dehr-chee, ah doh-mah-nee!"
         },
         {
           "id": "w1_1_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
+          "target": "Grazie",
+          "phonetic": "Graht-see-eh",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Grazie mille!",
+          "example_sentence_native": "Thank you very much!",
+          "example_sentence_phonetic": "Graht-see-eh mee-leh!"
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Meeting someone for the first time.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
+            { "speaker": "A", "target": "Ciao, io sono Marco.", "native": "Hi, I'm Marco.", "phonetic": "Chow, ee-oh soh-no Marco." },
+            { "speaker": "B", "target": "Ciao Marco, io sono Anna.", "native": "Hi Marco, I'm Anna.", "phonetic": "Chow Marco, ee-oh soh-no Anna." }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "Entering a shop in the morning.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
+            { "speaker": "A", "target": "Buongiorno.", "native": "Good morning.", "phonetic": "Bwon-jor-no." },
+            { "speaker": "B", "target": "Buongiorno, come posso aiutarla?", "native": "Good morning, how can I help you?", "phonetic": "Bwon-jor-no, koh-meh pos-soh ah-yoo-tar-la?" }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
+          { "id": "m1_1_1", "target": "Ciao", "native": "Hello" },
+          { "id": "m1_1_2", "target": "Grazie", "native": "Thank you" },
+          { "id": "m1_1_3", "target": "Buongiorno", "native": "Good morning" },
+          { "id": "m1_1_4", "target": "Arrivederci", "native": "Goodbye" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+        "sentenceScramble": [
+            { "id": "ss1_1_1", "scrambled": ["stai", "come", "?"], "correct": "come stai ?", "nativeHint": "How are you?" }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "In Italy, it's common to use 'Buongiorno' until the afternoon, and 'Buonasera' for the rest of the day. 'Ciao' is informal and used with friends and family.",
+      "pronunciation_tip": "The 'ci' in 'Arrivederci' is pronounced like 'ch' in 'cheese'. Italian vowels are always pronounced clearly.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D1-Greetings-IT" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 2: Introductions",
+      "title_native": "Settimana 1, Giorno 2: Presentazioni",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_2_1", "target": "Mi chiamo...", "phonetic": "Mee kyah-moh", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Ciao, mi chiamo David.", "example_sentence_native": "Hi, my name is David.", "example_sentence_phonetic": "Chow, mee kyah-moh David." },
+        { "id": "w1_2_2", "target": "Piacere", "phonetic": "Pyah-cheh-reh", "native_meaning": "Nice to meet you", "english": "Nice to meet you", "example_sentence_target": "Piacere di conoscerti.", "example_sentence_native": "Nice to meet you.", "example_sentence_phonetic": "Pyah-cheh-reh dee koh-noh-sher-tee." },
+        { "id": "w1_2_3", "target": "Come ti chiami?", "phonetic": "Koh-meh tee kyah-mee?", "native_meaning": "What is your name?", "english": "What is your name?", "example_sentence_target": "Ciao, come ti chiami?", "example_sentence_native": "Hi, what is your name?", "example_sentence_phonetic": "Chow, koh-meh tee kyah-mee?" },
+        { "id": "w1_2_4", "target": "Sono...", "phonetic": "Soh-noh", "native_meaning": "I am...", "english": "I am...", "example_sentence_target": "Sono americano.", "example_sentence_native": "I am American.", "example_sentence_phonetic": "Soh-noh ah-meh-ree-kah-noh." },
+        { "id": "w1_2_5", "target": "E tu?", "phonetic": "Eh too?", "native_meaning": "And you?", "english": "And you?", "example_sentence_target": "Sto bene, grazie. E tu?", "example_sentence_native": "I am fine, thank you. And you?", "example_sentence_phonetic": "Stoh beh-neh, graht-see-eh. Eh too?" }
       ],
       "dialogues": [
-        {
-          "id": "d1_2_1",
-          "context": "Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_2_1", "context": "Introducing yourself to a new colleague.", "lines": [
+            { "speaker": "A", "target": "Buongiorno, mi chiamo John. E tu, come ti chiami?", "native": "Good morning, my name is John. And you, what is your name?", "phonetic": "Bwon-jor-no, mee kyah-moh John. Eh too, koh-meh tee kyah-mee?" },
+            { "speaker": "B", "target": "Piacere John, mi chiamo Sofia.", "native": "Nice to meet you John, my name is Sofia.", "phonetic": "Pyah-cheh-reh John, mee kyah-moh Sofia." }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
+          { "id": "fb1_2_1", "sentence": "Ciao, ___ chiamo Maria.", "answer": "mi", "hint": "My name is" }
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+            { "id": "mc1_2_1", "question": "How do you say 'Nice to meet you'?", "options": ["Arrivederci", "Piacere", "Grazie", "Scusi"], "correct": 1, "explanation": "'Piacere' means 'Pleasure' or 'Nice to meet you'." }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "When meeting someone for the first time, a handshake is common. 'Piacere' is the standard response after someone introduces themselves.",
+      "pronunciation_tip": "The 'gn' in 'Buongiorno' is a nasal sound, similar to the 'ny' in 'canyon'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D2-Introductions-IT" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 3: Being Polite",
+      "title_native": "Settimana 1, Giorno 3: Essere educati",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_3_1", "target": "Per favore", "phonetic": "Pehr fah-voh-reh", "native_meaning": "Please", "english": "Please", "example_sentence_target": "Un caffè, per favore.", "example_sentence_native": "A coffee, please.", "example_sentence_phonetic": "Oon kahf-feh, pehr fah-voh-reh." },
+        { "id": "w1_3_2", "target": "Prego", "phonetic": "Preh-goh", "native_meaning": "You're welcome", "english": "You're welcome", "example_sentence_target": "Grazie! - Prego!", "example_sentence_native": "Thank you! - You're welcome!", "example_sentence_phonetic": "Graht-see-eh! - Preh-goh!" },
+        { "id": "w1_3_3", "target": "Scusi", "phonetic": "Skoo-zee", "native_meaning": "Excuse me (formal)", "english": "Excuse me (formal)", "example_sentence_target": "Scusi, dov'è il bagno?", "example_sentence_native": "Excuse me, where is the bathroom?", "example_sentence_phonetic": "Skoo-zee, doh-veh eel bahn-yoh?" },
+        { "id": "w1_3_4", "target": "Sì", "phonetic": "See", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Sì, parlo un po' di italiano.", "example_sentence_native": "Yes, I speak a little Italian.", "example_sentence_phonetic": "See, par-loh oon poh dee ee-tah-lyah-noh." },
+        { "id": "w1_3_5", "target": "No", "phonetic": "Noh", "native_meaning": "No", "english": "No", "example_sentence_target": "No, non capisco.", "example_sentence_native": "No, I don't understand.", "example_sentence_phonetic": "Noh, nohn kah-pees-koh." }
       ],
       "dialogues": [
-        {
-          "id": "d1_3_1",
-          "context": "Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_3_1", "context": "Ordering a coffee.", "lines": [
+            { "speaker": "A", "target": "Buongiorno. Un caffè, per favore.", "native": "Good morning. A coffee, please.", "phonetic": "Bwon-jor-no. Oon kahf-feh, pehr fah-voh-reh." },
+            { "speaker": "B", "target": "Certo. Ecco a lei.", "native": "Certainly. Here you are.", "phonetic": "Chair-toh. Ek-koh ah lay." }
+        ]},
+        { "id": "d1_3_2", "context": "Getting someone's attention.", "lines": [
+            { "speaker": "A", "target": "Scusi, signora.", "native": "Excuse me, madam.", "phonetic": "Skoo-zee, seen-yoh-rah." },
+            { "speaker": "B", "target": "Sì, mi dica.", "native": "Yes, tell me.", "phonetic": "See, mee dee-kah." }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
+         "multipleChoice": [
+            { "id": "mc1_3_1", "question": "Someone says 'Grazie'. What is a polite response?", "options": ["Ciao", "Scusi", "Prego", "Sì"], "correct": 2, "explanation": "'Prego' is the common way to say 'You're welcome'." }
         ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+          { "id": "m1_3_1", "target": "Per favore", "native": "Please" },
+          { "id": "m1_3_2", "target": "Sì", "native": "Yes" },
+          { "id": "m1_3_3", "target": "Scusi", "native": "Excuse me" },
+          { "id": "m1_3_4", "target": "No", "native": "No" }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "'Prego' is a very versatile word. It means 'You're welcome', but also 'Come in', 'After you', or 'How can I help?'.",
+      "pronunciation_tip": "The 's' in 'Scusi' is pronounced like a 'z' when it comes between two vowels, but like an 's' at the beginning of a word.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D3-Politeness-IT" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 4: How are you?",
+      "title_native": "Settimana 1, Giorno 4: Come stai?",
+      "theme": "Well-being",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_4_1", "target": "Come stai?", "phonetic": "Koh-meh sty?", "native_meaning": "How are you? (informal)", "english": "How are you? (informal)", "example_sentence_target": "Ciao Anna, come stai?", "example_sentence_native": "Hi Anna, how are you?", "example_sentence_phonetic": "Chow Anna, koh-meh sty?" },
+        { "id": "w1_4_2", "target": "Come sta?", "phonetic": "Koh-meh stah?", "native_meaning": "How are you? (formal)", "english": "How are you? (formal)", "example_sentence_target": "Buongiorno Signor Rossi, come sta?", "example_sentence_native": "Good morning Mr. Rossi, how are you?", "example_sentence_phonetic": "Bwon-jor-no Seen-yor Rossi, koh-meh stah?" },
+        { "id": "w1_4_3", "target": "Sto bene", "phonetic": "Stoh beh-neh", "native_meaning": "I'm fine", "english": "I'm fine", "example_sentence_target": "Sto bene, grazie.", "example_sentence_native": "I'm fine, thank you.", "example_sentence_phonetic": "Stoh beh-neh, graht-see-eh." },
+        { "id": "w1_4_4", "target": "Molto bene", "phonetic": "Mohl-toh beh-neh", "native_meaning": "Very well", "english": "Very well", "example_sentence_target": "Oggi sto molto bene!", "example_sentence_native": "Today I am very well!", "example_sentence_phonetic": "Oh-jee stoh mohl-toh beh-neh!" },
+        { "id": "w1_4_5", "target": "Così così", "phonetic": "Koh-see koh-see", "native_meaning": "So-so", "english": "So-so", "example_sentence_target": "Come stai? - Così così.", "example_sentence_native": "How are you? - So-so.", "example_sentence_phonetic": "Koh-meh sty? - Koh-see koh-see." }
       ],
       "dialogues": [
-        {
-          "id": "d1_4_1",
-          "context": "Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_4_1", "context": "A casual chat between friends.", "lines": [
+            { "speaker": "A", "target": "Ciao Luca, come stai?", "native": "Hi Luca, how are you?", "phonetic": "Chow Luca, koh-meh sty?" },
+            { "speaker": "B", "target": "Ciao! Sto molto bene, grazie. E tu?", "native": "Hi! I'm very well, thanks. And you?", "phonetic": "Chow! Stoh mohl-toh beh-neh, graht-see-eh. Eh too?" }
+        ]}
       ],
       "exercises": {
+        "sentenceScramble": [
+          { "id": "ss1_4_1", "scrambled": ["bene", "sto", "grazie", "."], "correct": "sto bene grazie .", "nativeHint": "I am fine thank you." }
+        ],
         "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+          { "id": "fb1_4_1", "sentence": "Buongiorno, come ___?", "answer": "sta", "hint": "How are you? (formal)" }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "Italians often use gestures when speaking. When saying 'così così', you might see someone wave their hand back and forth, palm down.",
+      "pronunciation_tip": "In 'bene', the final 'e' is pronounced like the 'e' in 'bed', not silent.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D4-Wellbeing-IT" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 5: Where are you from?",
+      "title_native": "Settimana 1, Giorno 5: Di dove sei?",
+      "theme": "Origins",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_5_1", "target": "Di dove sei?", "phonetic": "Dee doh-veh say?", "native_meaning": "Where are you from?", "english": "Where are you from?", "example_sentence_target": "Piacere, di dove sei?", "example_sentence_native": "Nice to meet you, where are you from?", "example_sentence_phonetic": "Pyah-cheh-reh, dee doh-veh say?" },
+        { "id": "w1_5_2", "target": "Sono di...", "phonetic": "Soh-noh dee", "native_meaning": "I am from...", "english": "I am from...", "example_sentence_target": "Sono di Londra.", "example_sentence_native": "I am from London.", "example_sentence_phonetic": "Soh-noh dee Lohn-drah." },
+        { "id": "w1_5_3", "target": "Paese", "phonetic": "Pah-eh-zeh", "native_meaning": "Country", "english": "Country", "example_sentence_target": "L'Italia è un bel paese.", "example_sentence_native": "Italy is a beautiful country.", "example_sentence_phonetic": "Lee-tah-lyah eh oon bel pah-eh-zeh." },
+        { "id": "w1_5_4", "target": "Città", "phonetic": "Cheet-tah", "native_meaning": "City", "english": "City", "example_sentence_target": "Roma è una città grande.", "example_sentence_native": "Rome is a big city.", "example_sentence_phonetic": "Roh-mah eh oo-nah cheet-tah grahn-deh." },
+        { "id": "w1_5_5", "target": "Americano/a", "phonetic": "Ah-meh-ree-kah-noh/nah", "native_meaning": "American (m/f)", "english": "American (m/f)", "example_sentence_target": "Lui è americano, lei è americana.", "example_sentence_native": "He is American, she is American.", "example_sentence_phonetic": "Loo-ee eh ah-meh-ree-kah-noh, lay eh ah-meh-ree-kah-nah." }
       ],
       "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_5_1", "context": "Making small talk.", "lines": [
+            { "speaker": "A", "target": "Ciao! Di dove sei?", "native": "Hi! Where are you from?", "phonetic": "Chow! Dee doh-veh say?" },
+            { "speaker": "B", "target": "Sono di New York. E tu?", "native": "I am from New York. And you?", "phonetic": "Soh-noh dee New York. Eh too?" }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
+          { "id": "m1_5_1", "target": "Di dove sei?", "native": "Where are you from?" },
+          { "id": "m1_5_2", "target": "Sono di...", "native": "I am from..." },
+          { "id": "m1_5_3", "target": "Città", "native": "City" },
+          { "id": "m1_5_4", "target": "Paese", "native": "Country" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+        "fillBlanks": [
+          { "id": "fb1_5_1", "sentence": "Lei è di Roma, una ___ italiana.", "answer": "città", "hint": "City" }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "Italians are often proud of their specific city or region of origin, not just the country as a whole. Expect to be asked which city you are from!",
+      "pronunciation_tip": "The double 't' in 'città' is pronounced with more emphasis and held slightly longer than a single 't'.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D5-Origins-IT" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 6: Basic Needs",
+      "title_native": "Settimana 1, Giorno 6: Bisogni di base",
+      "theme": "Comprehension & Numbers",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_6_1", "target": "Non capisco", "phonetic": "Nohn kah-pees-koh", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "Scusi, non capisco.", "example_sentence_native": "Excuse me, I don't understand.", "example_sentence_phonetic": "Skoo-zee, nohn kah-pees-koh." },
+        { "id": "w1_6_2", "target": "Parla inglese?", "phonetic": "Par-lah een-gleh-zeh?", "native_meaning": "Do you speak English?", "english": "Do you speak English?", "example_sentence_target": "Mi scusi, parla inglese?", "example_sentence_native": "Excuse me, do you speak English?", "example_sentence_phonetic": "Mee skoo-zee, par-lah een-gleh-zeh?" },
+        { "id": "w1_6_3", "target": "Uno", "phonetic": "Oo-noh", "native_meaning": "One", "english": "One", "example_sentence_target": "Vorrei un caffè.", "example_sentence_native": "I would like one coffee.", "example_sentence_phonetic": "Vor-ray oon kahf-feh." },
+        { "id": "w1_6_4", "target": "Due", "phonetic": "Doo-eh", "native_meaning": "Two", "english": "Two", "example_sentence_target": "Due biglietti, per favore.", "example_sentence_native": "Two tickets, please.", "example_sentence_phonetic": "Doo-eh beel-yet-tee, pehr fah-voh-reh." },
+        { "id": "w1_6_5", "target": "Tre", "phonetic": "Treh", "native_meaning": "Three", "english": "Three", "example_sentence_target": "Sono le tre.", "example_sentence_native": "It's three o'clock.", "example_sentence_phonetic": "Soh-noh leh treh." }
       ],
       "dialogues": [
-        {
-          "id": "d1_6_1",
-          "context": "Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_6_1", "context": "Struggling to communicate.", "lines": [
+            { "speaker": "A", "target": "Mi scusi, non capisco. Parla inglese?", "native": "Excuse me, I don't understand. Do you speak English?", "phonetic": "Mee skoo-zee, nohn kah-pees-koh. Par-lah een-gleh-zeh?" },
+            { "speaker": "B", "target": "Sì, un poco. Come posso aiutare?", "native": "Yes, a little. How can I help?", "phonetic": "See, oon poh-koh. Koh-meh pos-soh ah-yoo-tah-reh?" }
+        ]}
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+            { "id": "mc1_6_1", "question": "How do you ask 'Do you speak English?'", "options": ["Non capisco", "Parla inglese?", "Come stai?", "Di dove sei?"], "correct": 1, "explanation": "'Parla inglese?' is the formal way to ask if someone speaks English." }
+        ],
+        "sentenceScramble": [
+            { "id": "ss1_6_1", "scrambled": ["capisco", "non", "."], "correct": "non capisco .", "nativeHint": "I don't understand." }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "Don't be afraid to say 'Non capisco'. Most Italians will appreciate the effort and try to help, either by speaking slower or finding someone who speaks English.",
+      "pronunciation_tip": "The 'r' in 'Parla' is a rolled 'r', made by flapping the tip of your tongue against the roof of your mouth.",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "W1D6-Needs-IT" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 7: Review",
+      "title_native": "Settimana 1, Giorno 7: Revisione",
+      "theme": "Week 1 Review",
       "path": "survival",
       "targetLanguage": "Italian",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Ciao",
-          "phonetic": "Ciao",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Ciao.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Grazie",
-          "phonetic": "Grazie",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Grazie.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Arrivederci",
-          "phonetic": "Arrivederci",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Arrivederci.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "Per favore",
-          "phonetic": "Per favore",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Per favore.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Scusi",
-          "phonetic": "Scusi",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Scusi.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_7_1", "target": "Ciao", "phonetic": "Chow", "native_meaning": "Hello / Bye", "english": "Hello / Bye", "example_sentence_target": "Ciao!", "example_sentence_native": "Hi!", "example_sentence_phonetic": "Chow!" },
+        { "id": "w1_7_2", "target": "Grazie", "phonetic": "Graht-see-eh", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Grazie mille!", "example_sentence_native": "Thank you very much!", "example_sentence_phonetic": "Graht-see-eh mee-leh!" },
+        { "id": "w1_7_3", "target": "Per favore", "phonetic": "Pehr fah-voh-reh", "native_meaning": "Please", "english": "Please", "example_sentence_target": "Un bicchiere d'acqua, per favore.", "example_sentence_native": "A glass of water, please.", "example_sentence_phonetic": "Oon beek-kyeh-reh dak-kwah, pehr fah-voh-reh." },
+        { "id": "w1_7_4", "target": "Come stai?", "phonetic": "Koh-meh sty?", "native_meaning": "How are you?", "english": "How are you?", "example_sentence_target": "Ciao, come stai?", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "Chow, koh-meh sty?" },
+        { "id": "w1_7_5", "target": "Mi chiamo...", "phonetic": "Mee kyah-moh", "native_meaning": "My name is...", "english": "My name is...", "example_sentence_target": "Piacere, mi chiamo Alex.", "example_sentence_native": "Nice to meet you, my name is Alex.", "example_sentence_phonetic": "Pyah-cheh-reh, mee kyah-moh Alex." }
       ],
       "dialogues": [
-        {
-          "id": "d1_7_1",
-          "context": "Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Ciao!",
-              "native": "Hello!",
-              "phonetic": "Ciao"
-            },
-            {
-              "speaker": "B",
-              "target": "Ciao! Grazie!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Ciao Grazie"
-            },
-            {
-              "speaker": "A",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Grazie!",
-              "native": "Thank you!",
-              "phonetic": "Grazie"
-            },
-            {
-              "speaker": "B",
-              "target": "Arrivederci!",
-              "native": "Goodbye!",
-              "phonetic": "Arrivederci"
-            },
-            {
-              "speaker": "A",
-              "target": "Per favore! Scusi!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Per favore Scusi"
-            }
-          ]
-        }
+        { "id": "d1_7_1", "context": "A complete short conversation at a cafe.", "lines": [
+            { "speaker": "A", "target": "Buongiorno. Un caffè, per favore.", "native": "Good morning. A coffee, please.", "phonetic": "Bwon-jor-no. Oon kahf-feh, pehr fah-voh-reh." },
+            { "speaker": "B", "target": "Sì. Come ti chiami?", "native": "Yes. What's your name?", "phonetic": "See. Koh-meh tee kyah-mee?" },
+            { "speaker": "A", "target": "Mi chiamo Maria. E tu?", "native": "My name is Maria. And you?", "phonetic": "Mee kyah-moh Maria. Eh too?" },
+            { "speaker": "B", "target": "Piacere, sono Luca. Ecco il caffè.", "native": "Nice to meet you, I'm Luca. Here is the coffee.", "phonetic": "Pyah-cheh-reh, soh-noh Luca. Ek-koh eel kahf-feh." },
+            { "speaker": "A", "target": "Grazie Luca. Arrivederci!", "native": "Thank you Luca. Goodbye!", "phonetic": "Graht-see-eh Luca. Ah-ree-veh-dehr-chee!" }
+        ]}
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Italian",
-            "answer": "Ciao",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Italian",
-            "answer": "Grazie",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Italian",
-            "answer": "Arrivederci",
-            "hint": "Goodbye"
-          }
+          { "id": "fb1_7_1", "sentence": "___, mi chiamo Paolo.", "answer": "Ciao", "hint": "Hello (informal)" },
+          { "id": "fb1_7_2", "sentence": "Un'acqua, per ___.", "answer": "favore", "hint": "Please" }
         ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Ciao",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Grazie",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Arrivederci",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Per favore",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Scusi",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Ciao' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Ciao' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Italian?",
-            "options": [
-              "Ciao",
-              "Grazie",
-              "Arrivederci",
-              "Per favore"
-            ],
-            "correct": 1,
-            "explanation": "'Grazie' means Thank you."
-          }
+            { "id": "m1_7_1", "target": "Come stai?", "native": "How are you?" },
+            { "id": "m1_7_2", "target": "Grazie", "native": "Thank you" },
+            { "id": "m1_7_3", "target": "Sì", "native": "Yes" },
+            { "id": "m1_7_4", "target": "Mi chiamo...", "native": "My name is..." }
         ]
       },
-      "cultural_note": "Learning Italian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Italian pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "Reviewing what you've learned is key. Try using these phrases in a real or imagined conversation to solidify your knowledge.",
+      "pronunciation_tip": "Pay attention to vowel sounds. Unlike English, Italian vowels are short, clear, and consistent.",
+      "progress": { "xp": 150, "streak_bonus": 20, "badge": "W1-Complete-IT" }
     }
   ]
 }
