@@ -280,7 +280,7 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                                 </Button>
                                 </div>
                             ) : (
-                                 <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay || !userProfile}>
+                                 <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay || !userProfile || isDayCompleted}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
                                  </Button>
                             )}
