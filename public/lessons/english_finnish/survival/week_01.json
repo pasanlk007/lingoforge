@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -9,28 +10,695 @@
       "day": 1,
       "title": "Day 1: Basic Greetings",
       "title_native": "Päivä 1: Perustervehdykset",
-      "theme": "Basic Greetings & Essentials",
+      "theme": "Greetings & Politeness",
       "path": "survival",
       "targetLanguage": "Finnish",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_1_1", "target": "Hei", "phonetic": "hey", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "Hei, mitä kuuluu?", "example_sentence_native": "Hello, how are you?", "example_sentence_phonetic": "hey, mi-ta koo-loo" },
-        { "id": "w1_1_2", "target": "Kyllä", "phonetic": "kul-la", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "Kyllä, kiitos.", "example_sentence_native": "Yes, thank you.", "example_sentence_phonetic": "kul-la, kee-tos" },
-        { "id": "w1_1_3", "target": "Ei", "phonetic": "ay", "native_meaning": "No", "english": "No", "example_sentence_target": "Ei, kiitos.", "example_sentence_native": "No, thank you.", "example_sentence_phonetic": "ay, kee-tos" },
-        { "id": "w1_1_4", "target": "Kiitos", "phonetic": "kee-tos", "native_meaning": "Thank you", "english": "Thank you", "example_sentence_target": "Kiitos paljon.", "example_sentence_native": "Thank you very much.", "example_sentence_phonetic": "kee-tos pal-yon" },
-        { "id": "w1_1_5", "target": "Anteeksi", "phonetic": "an-teak-see", "native_meaning": "Excuse me / Sorry", "english": "Excuse me / Sorry", "example_sentence_target": "Anteeksi, missä on vessa?", "example_sentence_native": "Excuse me, where is the toilet?", "example_sentence_phonetic": "an-teak-see, mis-sa on ves-sa" }
+        {
+          "id": "w1_1_1",
+          "target": "Hei",
+          "phonetic": "hey",
+          "native_meaning": "Hello",
+          "english": "Hello",
+          "example_sentence_target": "Hei, mitä kuuluu?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "hey, mee-ta koo-loo"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "Kyllä",
+          "phonetic": "kul-la",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Puhutko englantia? Kyllä.",
+          "example_sentence_native": "Do you speak English? Yes.",
+          "example_sentence_phonetic": "poo-hoot-koh eng-lahn-tee-ah? kul-la"
+        },
+        {
+          "id": "w1_1_3",
+          "target": "Ei",
+          "phonetic": "ay",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Haluatko kahvia? Ei, kiitos.",
+          "example_sentence_native": "Do you want coffee? No, thank you.",
+          "example_sentence_phonetic": "hah-loo-aht-koh kah-vee-ah? ay, kee-tohs"
+        },
+        {
+          "id": "w1_1_4",
+          "target": "Kiitos",
+          "phonetic": "kee-tohs",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Tässä on kahvisi. Kiitos!",
+          "example_sentence_native": "Here is your coffee. Thank you!",
+          "example_sentence_phonetic": "tas-sa on kah-vee-see. kee-tohs"
+        },
+        {
+          "id": "w1_1_5",
+          "target": "Anteeksi",
+          "phonetic": "ahn-tayk-see",
+          "native_meaning": "Excuse me / Sorry",
+          "english": "Excuse me / Sorry",
+          "example_sentence_target": "Anteeksi, missä on WC?",
+          "example_sentence_native": "Excuse me, where is the toilet?",
+          "example_sentence_phonetic": "ahn-tayk-see, mees-sa on vay-say"
+        }
       ],
-      "dialogues": [{ "id": "d1_1_1", "context": "Greeting someone in a shop.", "lines": [{ "speaker": "A", "target": "Hei!", "native": "Hello!", "phonetic": "hey" }, { "speaker": "B", "target": "Hei, voinko auttaa?", "native": "Hello, can I help?", "phonetic": "hey, voyn-ko ow-tah" }] }],
-      "exercises": { "matching": [{ "id": "m1_1_1", "target": "Hei", "native": "Hello" }, { "id": "m1_1_2", "target": "Kiitos", "native": "Thank you" }] },
-      "cultural_note": "Finns are often reserved at first but are very warm once you get to know them. A simple 'Hei' is a perfectly normal and sufficient greeting.",
-      "pronunciation_tip": "Finnish pronunciation is very consistent. Each letter usually corresponds to a single sound. For example, 'i' is always pronounced like the 'ee' in 'see'.",
-      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Finnish-Greetings" }
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Greeting someone in a shop.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Hei!",
+              "native": "Hello!",
+              "phonetic": "hey"
+            },
+            {
+              "speaker": "B",
+              "target": "Hei! Miten voin auttaa?",
+              "native": "Hello! How can I help?",
+              "phonetic": "hey! mee-ten voyn owt-tah"
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "Responding to an offer.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Haluatko teetä?",
+              "native": "Do you want tea?",
+              "phonetic": "hah-loo-aht-koh tay-ta"
+            },
+            {
+              "speaker": "B",
+              "target": "Kyllä, kiitos.",
+              "native": "Yes, please.",
+              "phonetic": "kul-la, kee-tohs"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "Hei", "native": "Hello" },
+          { "id": "m1_1_2", "target": "Kiitos", "native": "Thank you" },
+          { "id": "m1_1_3", "target": "Kyllä", "native": "Yes" },
+          { "id": "m1_1_4", "target": "Ei", "native": "No" }
+        ],
+        "fillBlanks": [
+          {
+            "id": "fb1_1_1",
+            "sentence": "Haluatko kahvia? ___, kiitos.",
+            "answer": "Ei",
+            "hint": "Say no"
+          }
+        ]
+      },
+      "cultural_note": "Finns are often reserved at first, but are very warm once you get to know them. A simple 'Hei' is a perfectly normal and friendly way to greet people.",
+      "pronunciation_tip": "Finnish pronunciation is very consistent. Each letter generally has only one sound. For example, 'i' is always pronounced like the 'ee' in 'see'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-FinnishGreetings"
+      }
     },
-    { "week": 1, "day": 2, "title": "Day 2 Placeholder", "title_native": "Päivä 2 paikkamerkki", "theme": "...", "path": "survival", "targetLanguage": "Finnish", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "...", "pronunciation_tip": "...", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } },
-    { "week": 1, "day": 3, "title": "Day 3 Placeholder", "title_native": "Päivä 3 paikkamerkki", "theme": "...", "path": "survival", "targetLanguage": "Finnish", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "...", "pronunciation_tip": "...", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } },
-    { "week": 1, "day": 4, "title": "Day 4 Placeholder", "title_native": "Päivä 4 paikkamerkki", "theme": "...", "path": "survival", "targetLanguage": "Finnish", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "...", "pronunciation_tip": "...", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } },
-    { "week": 1, "day": 5, "title": "Day 5 Placeholder", "title_native": "Päivä 5 paikkamerkki", "theme": "...", "path": "survival", "targetLanguage": "Finnish", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "...", "pronunciation_tip": "...", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } },
-    { "week": 1, "day": 6, "title": "Day 6 Placeholder", "title_native": "Päivä 6 paikkamerkki", "theme": "...", "path": "survival", "targetLanguage": "Finnish", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "...", "pronunciation_tip": "...", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } },
-    { "week": 1, "day": 7, "title": "Day 7 Placeholder", "title_native": "Päivä 7 paikkamerkki", "theme": "...", "path": "survival", "targetLanguage": "Finnish", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "...", "pronunciation_tip": "...", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } }
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Day 2: Introductions",
+      "title_native": "Päivä 2: Esittäytyminen",
+      "theme": "Introductions",
+      "path": "survival",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "Minun nimeni on...",
+          "phonetic": "mee-noon nee-meh-nee on",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Minun nimeni on David.",
+          "example_sentence_native": "My name is David.",
+          "example_sentence_phonetic": "mee-noon nee-meh-nee on David"
+        },
+        {
+          "id": "w1_2_2",
+          "target": "Mikä sinun nimesi on?",
+          "phonetic": "mee-ka see-noon nee-meh-see on",
+          "native_meaning": "What is your name?",
+          "english": "What is your name?",
+          "example_sentence_target": "Hei! Mikä sinun nimesi on?",
+          "example_sentence_native": "Hello! What is your name?",
+          "example_sentence_phonetic": "hey! mee-ka see-noon nee-meh-see on"
+        },
+        {
+          "id": "w1_2_3",
+          "target": "Hauska tutustua",
+          "phonetic": "hows-kah too-toos-too-ah",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Hauska tutustua, Maria.",
+          "example_sentence_native": "Nice to meet you, Maria.",
+          "example_sentence_phonetic": "hows-kah too-toos-too-ah, Maria"
+        },
+        {
+          "id": "w1_2_4",
+          "target": "Mistä olet kotoisin?",
+          "phonetic": "mees-ta oh-let koh-toy-seen",
+          "native_meaning": "Where are you from?",
+          "english": "Where are you from?",
+          "example_sentence_target": "Mistä sinä olet kotoisin?",
+          "example_sentence_native": "Where are you from?",
+          "example_sentence_phonetic": "mees-ta see-na oh-let koh-toy-seen"
+        },
+        {
+          "id": "w1_2_5",
+          "target": "Olen kotoisin...",
+          "phonetic": "oh-len koh-toy-seen",
+          "native_meaning": "I am from...",
+          "english": "I am from...",
+          "example_sentence_target": "Olen kotoisin Englannista.",
+          "example_sentence_native": "I am from England.",
+          "example_sentence_phonetic": "oh-len koh-toy-seen eng-lahn-nees-tah"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "Meeting someone for the first time.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Hei, minun nimeni on Anna. Mikä sinun nimesi on?",
+              "native": "Hi, my name is Anna. What is your name?",
+              "phonetic": "hey, mee-noon nee-meh-nee on Anna. mee-ka see-noon nee-meh-see on"
+            },
+            {
+              "speaker": "B",
+              "target": "Hei Anna. Minun nimeni on Pekka. Hauska tutustua.",
+              "native": "Hi Anna. My name is Pekka. Nice to meet you.",
+              "phonetic": "hey Anna. mee-noon nee-meh-nee on Pekka. hows-kah too-toos-too-ah"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_2_1",
+            "scrambled": ["nimesi", "on?", "sinun", "Mikä"],
+            "correct": "Mikä sinun nimesi on?",
+            "nativeHint": "Ask for someone's name."
+          }
+        ]
+      },
+      "cultural_note": "When introducing yourself, a firm handshake and direct eye contact are common and considered polite in Finland.",
+      "pronunciation_tip": "The 'h' in Finnish is always pronounced, like in the English word 'hat'. It's never silent.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D2-FinnishIntros"
+      }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Day 3: Well-being",
+      "title_native": "Päivä 3: Hyvinvointi",
+      "theme": "Asking and answering about well-being",
+      "path": "survival",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "Mitä kuuluu?",
+          "phonetic": "mee-ta koo-loo",
+          "native_meaning": "How are you?",
+          "english": "How are you?",
+          "example_sentence_target": "Hei, mitä kuuluu?",
+          "example_sentence_native": "Hi, how are you?",
+          "example_sentence_phonetic": "hey, mee-ta koo-loo"
+        },
+        {
+          "id": "w1_3_2",
+          "target": "Hyvää kuuluu",
+          "phonetic": "hu-va koo-loo",
+          "native_meaning": "I'm fine / Good",
+          "english": "I'm fine / Good",
+          "example_sentence_target": "Kiitos, hyvää kuuluu.",
+          "example_sentence_native": "Thanks, I'm fine.",
+          "example_sentence_phonetic": "kee-tohs, hu-va koo-loo"
+        },
+        {
+          "id": "w1_3_3",
+          "target": "Entä sinulle?",
+          "phonetic": "en-ta see-nool-leh",
+          "native_meaning": "And you?",
+          "english": "And you?",
+          "example_sentence_target": "Hyvää kuuluu. Entä sinulle?",
+          "example_sentence_native": "I'm fine. And you?",
+          "example_sentence_phonetic": "hu-va koo-loo. en-ta see-nool-leh"
+        },
+        {
+          "id": "w1_3_4",
+          "target": "Huomenta",
+          "phonetic": "huo-men-tah",
+          "native_meaning": "Morning (short for Good Morning)",
+          "english": "Morning",
+          "example_sentence_target": "Huomenta, Pekka!",
+          "example_sentence_native": "Morning, Pekka!",
+          "example_sentence_phonetic": "huo-men-tah, Pekka"
+        },
+        {
+          "id": "w1_3_5",
+          "target": "Päivää",
+          "phonetic": "pai-va",
+          "native_meaning": "Good day",
+          "english": "Good day",
+          "example_sentence_target": "Päivää, rouva Virtanen.",
+          "example_sentence_native": "Good day, Mrs. Virtanen.",
+          "example_sentence_phonetic": "pai-va, ro-va Veer-tah-nen"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "A typical morning greeting.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Huomenta! Mitä kuuluu?",
+              "native": "Morning! How are you?",
+              "phonetic": "huo-men-tah! mee-ta koo-loo"
+            },
+            {
+              "speaker": "B",
+              "target": "Huomenta! Hyvää kuuluu, kiitos. Entä sinulle?",
+              "native": "Morning! I'm fine, thanks. And you?",
+              "phonetic": "huo-men-tah! hu-va koo-loo, kee-tohs. en-ta see-nool-leh"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          {
+            "id": "mc1_3_1",
+            "question": "How do you ask 'How are you?' in Finnish?",
+            "options": ["Hyvää kuuluu", "Mitä kuuluu?", "Hauska tutustua", "Kiitos"],
+            "correct": 1,
+            "explanation": "'Mitä kuuluu?' is the standard way to ask how someone is."
+          }
+        ]
+      },
+      "cultural_note": "Asking 'Mitä kuuluu?' is very common. The standard reply is 'Hyvää kuuluu' (I'm fine), even if you're having a bad day. It's more of a pleasantry than a genuine question about your well-being unless you're talking to a close friend.",
+      "pronunciation_tip": "Double vowels in Finnish, like the 'uu' in 'kuuluu', mean you hold the sound for longer. It's like 'koo-loo', not 'ko-loo'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D3-FinnishWellness"
+      }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Day 4: Basic Needs",
+      "title_native": "Päivä 4: Perustarpeet",
+      "theme": "Asking for basic things",
+      "path": "survival",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "Vesi",
+          "phonetic": "veh-see",
+          "native_meaning": "Water",
+          "english": "Water",
+          "example_sentence_target": "Saisinko lasin vettä, kiitos.",
+          "example_sentence_native": "Could I have a glass of water, please.",
+          "example_sentence_phonetic": "say-seen-koh lah-seen vet-ta, kee-tohs"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "Ruoka",
+          "phonetic": "ruo-kah",
+          "native_meaning": "Food",
+          "english": "Food",
+          "example_sentence_target": "Ruoka on hyvää.",
+          "example_sentence_native": "The food is good.",
+          "example_sentence_phonetic": "ruo-kah on hu-va"
+        },
+        {
+          "id": "w1_4_3",
+          "target": "WC / Vessa",
+          "phonetic": "vay-say / ves-sah",
+          "native_meaning": "Toilet",
+          "english": "Toilet",
+          "example_sentence_target": "Anteeksi, missä on WC?",
+          "example_sentence_native": "Excuse me, where is the toilet?",
+          "example_sentence_phonetic": "ahn-tayk-see, mees-sa on vay-say"
+        },
+        {
+          "id": "w1_4_4",
+          "target": "Apua",
+          "phonetic": "ah-poo-ah",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "Apua! Tarvitsen apua.",
+          "example_sentence_native": "Help! I need help.",
+          "example_sentence_phonetic": "ah-poo-ah! tar-vee-tsen ah-poo-ah"
+        },
+        {
+          "id": "w1_4_5",
+          "target": "Missä",
+          "phonetic": "mees-sa",
+          "native_meaning": "Where",
+          "english": "Where",
+          "example_sentence_target": "Missä on lähin kauppa?",
+          "example_sentence_native": "Where is the nearest shop?",
+          "example_sentence_phonetic": "mees-sa on la-heen kowp-pah"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "Asking for the toilet in a cafe.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Anteeksi, missä on WC?",
+              "native": "Excuse me, where is the toilet?",
+              "phonetic": "ahn-tayk-see, mees-sa on vay-say"
+            },
+            {
+              "speaker": "B",
+              "target": "Se on tuolla takana, oikealla.",
+              "native": "It's back there, on the right.",
+              "phonetic": "seh on too-ol-lah tah-kah-nah, oy-kay-al-lah"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_4_1",
+            "sentence": "Anteeksi, ___ on WC?",
+            "answer": "missä",
+            "hint": "Ask 'where'"
+          }
+        ]
+      },
+      "cultural_note": "Public toilets (WC) are usually very clean and easy to find in cities and at service stations. Sometimes they may require a small fee to use.",
+      "pronunciation_tip": "The Finnish 'r' is a rolled or trilled 'r', similar to Spanish. It's made by vibrating the tip of the tongue against the roof of the mouth.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D4-FinnishNeeds"
+      }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Day 5: Numbers 1-5",
+      "title_native": "Päivä 5: Numerot 1-5",
+      "theme": "Counting",
+      "path": "survival",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "Yksi",
+          "phonetic": "uk-see",
+          "native_meaning": "One",
+          "english": "One",
+          "example_sentence_target": "Yksi kahvi, kiitos.",
+          "example_sentence_native": "One coffee, please.",
+          "example_sentence_phonetic": "uk-see kah-vee, kee-tohs"
+        },
+        {
+          "id": "w1_5_2",
+          "target": "Kaksi",
+          "phonetic": "kak-see",
+          "native_meaning": "Two",
+          "english": "Two",
+          "example_sentence_target": "Kaksi lippua, kiitos.",
+          "example_sentence_native": "Two tickets, please.",
+          "example_sentence_phonetic": "kak-see leep-poo-ah, kee-tohs"
+        },
+        {
+          "id": "w1_5_3",
+          "target": "Kolme",
+          "phonetic": "kol-meh",
+          "native_meaning": "Three",
+          "english": "Three",
+          "example_sentence_target": "Hinta on kolme euroa.",
+          "example_sentence_native": "The price is three euros.",
+          "example_sentence_phonetic": "heen-tah on kol-meh eh-oo-ro-ah"
+        },
+        {
+          "id": "w1_5_4",
+          "target": "Neljä",
+          "phonetic": "nel-ya",
+          "native_meaning": "Four",
+          "english": "Four",
+          "example_sentence_target": "Minulla on neljä ystävää.",
+          "example_sentence_native": "I have four friends.",
+          "example_sentence_phonetic": "mee-nool-lah on nel-ya us-ta-va"
+        },
+        {
+          "id": "w1_5_5",
+          "target": "Viisi",
+          "phonetic": "vee-see",
+          "native_meaning": "Five",
+          "english": "Five",
+          "example_sentence_target": "Kello on viisi.",
+          "example_sentence_native": "It's five o'clock.",
+          "example_sentence_phonetic": "kel-loh on vee-see"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "Ordering at a cafe.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Hei! Kaksi kahvia, kiitos.",
+              "native": "Hello! Two coffees, please.",
+              "phonetic": "hey! kak-see kah-vee-ah, kee-tohs"
+            },
+            {
+              "speaker": "B",
+              "target": "Selvä. Se tekee viisi euroa.",
+              "native": "Okay. That will be five euros.",
+              "phonetic": "sel-va. seh teh-kay vee-see eh-oo-ro-ah"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_5_1", "target": "Yksi", "native": "One" },
+          { "id": "m1_5_2", "target": "Kaksi", "native": "Two" },
+          { "id": "m1_5_3", "target": "Kolme", "native": "Three" },
+          { "id": "m1_5_4", "target": "Neljä", "native": "Four" },
+          { "id": "m1_5_5", "target": "Viisi", "native": "Five" }
+        ]
+      },
+      "cultural_note": "Finland uses the Euro (€). When shopping, prices are clearly marked, so practicing your numbers is very useful for daily transactions.",
+      "pronunciation_tip": "Pay attention to the 'ä' sound, as in 'päivää'. It's like the 'a' in the English word 'cat'. It is different from the Finnish 'a', which is like the 'a' in 'father'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D5-FinnishNumbers"
+      }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Day 6: Understanding",
+      "title_native": "Päivä 6: Ymmärtäminen",
+      "theme": "Communication difficulties",
+      "path": "survival",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "En ymmärrä",
+          "phonetic": "en um-mar-ra",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Anteeksi, en ymmärrä.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "ahn-tayk-see, en um-mar-ra"
+        },
+        {
+          "id": "w1_6_2",
+          "target": "Puhutko englantia?",
+          "phonetic": "poo-hoot-koh eng-lahn-tee-ah",
+          "native_meaning": "Do you speak English?",
+          "english": "Do you speak English?",
+          "example_sentence_target": "Anteeksi, puhutko englantia?",
+          "example_sentence_native": "Excuse me, do you speak English?",
+          "example_sentence_phonetic": "ahn-tayk-see, poo-hoot-koh eng-lahn-tee-ah"
+        },
+        {
+          "id": "w1_6_3",
+          "target": "Hitaammin, kiitos",
+          "phonetic": "hee-tahm-meen, kee-tohs",
+          "native_meaning": "Slower, please",
+          "english": "Slower, please",
+          "example_sentence_target": "Voisitko puhua hitaammin, kiitos?",
+          "example_sentence_native": "Could you speak slower, please?",
+          "example_sentence_phonetic": "voy-seet-koh poo-hoo-ah hee-tahm-meen, kee-tohs"
+        },
+        {
+          "id": "w1_6_4",
+          "target": "Hyvää yötä",
+          "phonetic": "hu-va uo-ta",
+          "native_meaning": "Good night",
+          "english": "Good night",
+          "example_sentence_target": "Hyvää yötä, nähdään huomenna.",
+          "example_sentence_native": "Good night, see you tomorrow.",
+          "example_sentence_phonetic": "hu-va uo-ta, nah-dan huo-men-nah"
+        },
+        {
+          "id": "w1_6_5",
+          "target": "Näkemiin",
+          "phonetic": "nak-eh-meen",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "Kiitos avusta, näkemiin!",
+          "example_sentence_native": "Thanks for the help, goodbye!",
+          "example_sentence_phonetic": "kee-tohs ah-voos-tah, nak-eh-meen"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "When you don't understand someone.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Rautatieasema on tuolla, sinun täytyy kääntyä vasemmalle.",
+              "native": "The train station is over there, you have to turn left.",
+              "phonetic": "row-tah-tee-eh-ah-seh-mah on too-ol-lah, see-noon tai-tu kahn-tu-ah vah-sem-mal-leh"
+            },
+            {
+              "speaker": "B",
+              "target": "Anteeksi, en ymmärrä. Puhutko englantia?",
+              "native": "Sorry, I don't understand. Do you speak English?",
+              "phonetic": "ahn-tayk-see, en um-mar-ra. poo-hoot-koh eng-lahn-tee-ah"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_6_1",
+            "scrambled": ["ymmärrä", "En"],
+            "correct": "En ymmärrä",
+            "nativeHint": "Say you don't understand."
+          }
+        ]
+      },
+      "cultural_note": "Most Finns, especially younger generations in cities, speak excellent English and are usually happy to switch languages to help you.",
+      "pronunciation_tip": "The letter 'y' in Finnish is a front vowel, similar to the 'u' in French ('tu') or the 'ü' in German ('über'). It has no direct equivalent in English. Try rounding your lips as if to say 'oo' but say 'ee' instead.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D6-FinnishUnderstanding"
+      }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Day 7: Weekly Review",
+      "title_native": "Päivä 7: Viikon kertaus",
+      "theme": "Review and Practice",
+      "path": "survival",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "English",
+      "words": [],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "A complete short conversation.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Hei! Minun nimeni on Alex. Mikä sinun nimesi on?",
+              "native": "Hello! My name is Alex. What is your name?",
+              "phonetic": "hey! mee-noon nee-meh-nee on Alex. mee-ka see-noon nee-meh-see on"
+            },
+            {
+              "speaker": "B",
+              "target": "Hei Alex. Minun nimeni on Elina. Hauska tutustua.",
+              "native": "Hello Alex. My name is Elina. Nice to meet you.",
+              "phonetic": "hey Alex. mee-noon nee-meh-nee on Elina. hows-kah too-toos-too-ah"
+            },
+            {
+              "speaker": "A",
+              "target": "Kiitos, samoin. Mitä kuuluu?",
+              "native": "Thank you, likewise. How are you?",
+              "phonetic": "kee-tohs, sah-moyn. mee-ta koo-loo"
+            },
+            {
+              "speaker": "B",
+              "target": "Hyvää kuuluu, kiitos. Entä sinulle?",
+              "native": "I'm fine, thanks. And you?",
+              "phonetic": "hu-va koo-loo, kee-tohs. en-ta see-nool-leh"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_7_1",
+            "sentence": "Anteeksi, ___ puhua hitaammin?",
+            "answer": "voisitko",
+            "hint": "Ask 'could you'"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_7_1",
+            "question": "Which phrase means 'Nice to meet you'?",
+            "options": ["Mitä kuuluu?", "Hauska tutustua", "Hyvää yötä", "En ymmärrä"],
+            "correct": 1,
+            "explanation": "'Hauska tutustua' is the correct phrase for 'Nice to meet you'."
+          }
+        ],
+        "matching": [
+          { "id": "m1_7_1", "target": "Missä on WC?", "native": "Where is the toilet?" },
+          { "id": "m1_7_2", "target": "En ymmärrä", "native": "I don't understand" },
+          { "id": "m1_7_3", "target": "Puhutko englantia?", "native": "Do you speak English?" },
+          { "id": "m1_7_4", "target": "Yksi vesi, kiitos", "native": "One water, please" }
+        ]
+      },
+      "cultural_note": "Review: Being polite ('Kiitos', 'Anteeksi') goes a long way in Finland. Don't be afraid to try speaking, even if it's just a few words. Finns will appreciate the effort.",
+      "pronunciation_tip": "Review: Remember that stress in Finnish is always on the first syllable of the word. For example, 'ANteeksi', not 'anTEEksi'.",
+      "progress": {
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-FinnishComplete"
+      }
+    }
   ]
 }
+
+    
