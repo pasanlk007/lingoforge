@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,8 +8,8 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "Dia 1: Saudações Básicas",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Portuguese",
@@ -17,95 +18,88 @@
         {
           "id": "w1_1_1",
           "target": "Olá",
-          "phonetic": "Olá",
+          "phonetic": "Oh-lah",
           "native_meaning": "Hello",
           "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
+          "example_sentence_target": "Olá, como está?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Oh-lah, coh-moo esh-tah?"
         },
         {
           "id": "w1_1_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
+          "target": "Bom dia",
+          "phonetic": "Bong dee-ah",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "Bom dia, senhora.",
+          "example_sentence_native": "Good morning, madam.",
+          "example_sentence_phonetic": "Bong dee-ah, sen-yor-ah."
         },
         {
           "id": "w1_1_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
+          "target": "Boa tarde",
+          "phonetic": "Boh-ah tard",
+          "native_meaning": "Good afternoon",
+          "english": "Good afternoon",
+          "example_sentence_target": "Boa tarde, tudo bem?",
+          "example_sentence_native": "Good afternoon, everything okay?",
+          "example_sentence_phonetic": "Boh-ah tard, too-doo beng?"
         },
         {
           "id": "w1_1_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
+          "target": "Boa noite",
+          "phonetic": "Boh-ah noytch",
+          "native_meaning": "Good evening / Good night",
+          "english": "Good evening / Good night",
+          "example_sentence_target": "Boa noite, até amanhã.",
+          "example_sentence_native": "Good night, see you tomorrow.",
+          "example_sentence_phonetic": "Boh-ah noytch, ah-tay ah-man-yan."
         },
         {
           "id": "w1_1_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
+          "target": "Adeus",
+          "phonetic": "Ah-deush",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "Adeus, foi um prazer.",
+          "example_sentence_native": "Goodbye, it was a pleasure.",
+          "example_sentence_phonetic": "Ah-deush, foy oom prah-zer."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Meeting someone for the first time.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
+              "target": "Olá, eu sou o Alex.",
+              "native": "Hello, I am Alex.",
+              "phonetic": "Oh-lah, eh-oo so ooh Alex."
             },
             {
               "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
+              "target": "Olá Alex, eu sou a Maria.",
+              "native": "Hello Alex, I am Maria.",
+              "phonetic": "Oh-lah Alex, eh-oo so ah Maria."
             }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "Greeting someone in the morning.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
+              "target": "Bom dia, Sr. Silva.",
+              "native": "Good morning, Mr. Silva.",
+              "phonetic": "Bong dee-ah, Sen-yor Silva."
             },
             {
               "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
+              "target": "Bom dia. Tudo bem?",
+              "native": "Good morning. All good?",
+              "phonetic": "Bong dee-ah. Too-doo beng?"
             }
           ]
         }
@@ -114,565 +108,322 @@
         "fillBlanks": [
           {
             "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Portuguese",
+            "sentence": "___, como está?",
             "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
+            "hint": "A common greeting."
           }
         ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Com licença",
-            "native": "Excuse me"
-          }
+          { "id": "m1_1_1", "target": "Bom dia", "native": "Good morning" },
+          { "id": "m1_1_2", "target": "Boa noite", "native": "Good night" },
+          { "id": "m1_1_3", "target": "Adeus", "native": "Goodbye" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
-          }
+        "sentenceScramble": [
+            {
+                "id": "ss1_1_1",
+                "scrambled": ["está", "como", "?"],
+                "correct": "como está ?",
+                "nativeHint": "How are you?"
+            }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "In Portugal, it's common to greet people with a 'bom dia' or 'boa tarde' even in shops and restaurants. A simple greeting is always appreciated.",
+      "pronunciation_tip": "The 'ão' sound in words like 'amanhã' is nasal. Try to say 'ow' while breathing out through your nose.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-PT-Greetings" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Politeness",
+      "title_native": "Dia 2: Cortesia",
+      "theme": "Politeness & Basic Phrases",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_2_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
+          "target": "Por favor",
+          "phonetic": "Poor fah-vor",
+          "native_meaning": "Please",
+          "english": "Please",
+          "example_sentence_target": "Um café, por favor.",
+          "example_sentence_native": "A coffee, please.",
+          "example_sentence_phonetic": "Oom cah-fay, poor fah-vor."
         },
         {
           "id": "w1_2_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
+          "target": "Obrigado/Obrigada",
+          "phonetic": "Oh-bree-gah-doo / Oh-bree-gah-dah",
+          "native_meaning": "Thank you (male/female speaker)",
           "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
+          "example_sentence_target": "Obrigado pela ajuda.",
+          "example_sentence_native": "Thank you for the help.",
+          "example_sentence_phonetic": "Oh-bree-gah-doo peh-lah ah-joo-dah."
         },
         {
           "id": "w1_2_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
+          "target": "De nada",
+          "phonetic": "Deh nah-dah",
+          "native_meaning": "You're welcome",
+          "english": "You're welcome",
+          "example_sentence_target": "Obrigado! De nada.",
+          "example_sentence_native": "Thank you! You're welcome.",
+          "example_sentence_phonetic": "Oh-bree-gah-doo! Deh nah-dah."
         },
         {
           "id": "w1_2_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
+          "target": "Desculpe",
+          "phonetic": "Desh-culp",
+          "native_meaning": "Sorry / Excuse me",
+          "english": "Sorry / Excuse me",
+          "example_sentence_target": "Desculpe, onde fica a casa de banho?",
+          "example_sentence_native": "Excuse me, where is the bathroom?",
+          "example_sentence_phonetic": "Desh-culp, on-deh fee-cah ah cah-za deh ban-yo?"
         },
         {
           "id": "w1_2_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
+          "target": "Sim / Não",
+          "phonetic": "Seeng / Nown",
+          "native_meaning": "Yes / No",
+          "english": "Yes / No",
+          "example_sentence_target": "Você fala inglês? Sim.",
+          "example_sentence_native": "Do you speak English? Yes.",
+          "example_sentence_phonetic": "Voh-say fah-lah een-glesh? Seeng."
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Ordering coffee.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
+              "target": "Um café, por favor.",
+              "native": "A coffee, please.",
+              "phonetic": "Oom cah-fay, poor fah-vor."
             },
             {
               "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
+              "target": "Sim. Aqui está.",
+              "native": "Yes. Here you are.",
+              "phonetic": "Seeng. Ah-kee esh-tah."
             },
             {
               "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
+              "target": "Obrigado.",
+              "native": "Thank you.",
+              "phonetic": "Oh-bree-gah-doo."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Com licença",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc1_2_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
+            "question": "How do you say 'Please'?",
+            "options": ["De nada", "Obrigado", "Por favor", "Desculpe"],
+            "correct": 2,
+            "explanation": "'Por favor' is the Portuguese word for 'Please'."
+          }
+        ],
+        "fillBlanks": [
           {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
+            "id": "fb1_2_1",
+            "sentence": "Se você é homem, diz ___.",
+            "answer": "Obrigado",
+            "hint": "Thank you (male)."
           }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "A male speaker says 'Obrigado' (Thank you) and a female speaker says 'Obrigada'. The response is always 'De nada'.",
+      "pronunciation_tip": "The 'nh' in 'banho' is like the 'ny' in the English word 'canyon'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-PT-Politeness" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Introductions",
+      "title_native": "Dia 3: Apresentações",
+      "theme": "Introducing yourself",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_3_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
+          "target": "Como se chama?",
+          "phonetic": "Coh-moo seh shah-mah?",
+          "native_meaning": "What is your name? (formal)",
+          "english": "What is your name?",
+          "example_sentence_target": "Olá, como se chama?",
+          "example_sentence_native": "Hello, what is your name?",
+          "example_sentence_phonetic": "Oh-lah, coh-moo seh shah-mah?"
         },
         {
           "id": "w1_3_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
+          "target": "Chamo-me...",
+          "phonetic": "Shah-moo meh...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Chamo-me John.",
+          "example_sentence_native": "My name is John.",
+          "example_sentence_phonetic": "Shah-moo meh John."
         },
         {
           "id": "w1_3_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
+          "target": "Muito prazer",
+          "phonetic": "Mween-too prah-zer",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Chamo-me Ana. Muito prazer.",
+          "example_sentence_native": "My name is Ana. Nice to meet you.",
+          "example_sentence_phonetic": "Shah-moo meh Ana. Mween-too prah-zer."
         },
         {
           "id": "w1_3_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
+          "target": "De onde é?",
+          "phonetic": "Deh on-deh eh?",
+          "native_meaning": "Where are you from? (formal)",
+          "english": "Where are you from?",
+          "example_sentence_target": "De onde é o senhor?",
+          "example_sentence_native": "Where are you from, sir?",
+          "example_sentence_phonetic": "Deh on-deh eh ooh sen-yor?"
         },
         {
           "id": "w1_3_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
+          "target": "Eu sou de...",
+          "phonetic": "Eh-oo so deh...",
+          "native_meaning": "I am from...",
+          "english": "I am from...",
+          "example_sentence_target": "Eu sou dos Estados Unidos.",
+          "example_sentence_native": "I am from the United States.",
+          "example_sentence_phonetic": "Eh-oo so doosh Esh-tah-doosh Oo-nee-doosh."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "A formal introduction.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
+              "target": "Bom dia. Como se chama?",
+              "native": "Good morning. What is your name?",
+              "phonetic": "Bong dee-ah. Coh-moo seh shah-mah?"
             },
             {
               "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
+              "target": "Chamo-me Sofia. E o senhor?",
+              "native": "My name is Sofia. And you sir?",
+              "phonetic": "Shah-moo meh Sofia. Ee ooh sen-yor?"
             },
             {
               "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
+              "target": "Chamo-me Pedro. Muito prazer.",
+              "native": "My name is Pedro. Nice to meet you.",
+              "phonetic": "Shah-moo meh Pedro. Mween-too prah-zer."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Com licença",
-            "native": "Excuse me"
-          }
+          { "id": "m1_3_1", "target": "Como se chama?", "native": "What is your name?" },
+          { "id": "m1_3_2", "target": "De onde é?", "native": "Where are you from?" },
+          { "id": "m1_3_3", "target": "Eu sou de...", "native": "I am from..." }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
-          }
+        "sentenceScramble": [
+            {
+                "id": "ss1_3_1",
+                "scrambled": ["prazer", "Muito"],
+                "correct": "Muito prazer",
+                "nativeHint": "Nice to meet you"
+            }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "'Como se chama?' is formal. With friends or younger people, you would say 'Como te chamas?'. Using the formal version is safer when you're unsure.",
+      "pronunciation_tip": "The 'ch' in 'chamo-me' is pronounced like 'sh' in English.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-PT-Introductions" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Basic Understanding",
+      "title_native": "Dia 4: Compreensão Básica",
+      "theme": "Understanding and asking for help",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_4_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
+          "target": "Eu não percebo",
+          "phonetic": "Eh-oo nown per-say-boo",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Desculpe, eu não percebo.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "Desh-culp, eh-oo nown per-say-boo."
         },
         {
           "id": "w1_4_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
+          "target": "Fala inglês?",
+          "phonetic": "Fah-lah een-glesh?",
+          "native_meaning": "Do you speak English?",
+          "english": "Do you speak English?",
+          "example_sentence_target": "Desculpe, fala inglês?",
+          "example_sentence_native": "Excuse me, do you speak English?",
+          "example_sentence_phonetic": "Desh-culp, fah-lah een-glesh?"
         },
         {
           "id": "w1_4_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
+          "target": "Pode repetir?",
+          "phonetic": "Pod reh-peh-teer?",
+          "native_meaning": "Can you repeat?",
+          "english": "Can you repeat?",
+          "example_sentence_target": "Pode repetir, por favor?",
+          "example_sentence_native": "Can you repeat, please?",
+          "example_sentence_phonetic": "Pod reh-peh-teer, poor fah-vor?"
         },
         {
           "id": "w1_4_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
+          "target": "O que significa...?",
+          "phonetic": "Ooh keh seeg-nee-fee-kah...?",
+          "native_meaning": "What does ... mean?",
+          "english": "What does ... mean?",
+          "example_sentence_target": "O que significa 'saudade'?",
+          "example_sentence_native": "What does 'saudade' mean?",
+          "example_sentence_phonetic": "Ooh keh seeg-nee-fee-kah 'sow-dahd'?"
         },
         {
           "id": "w1_4_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
+          "target": "Ajuda",
+          "phonetic": "Ah-joo-dah",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "Preciso de ajuda, por favor.",
+          "example_sentence_native": "I need help, please.",
+          "example_sentence_phonetic": "Preh-see-zoo deh ah-joo-dah, poor fah-vor."
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "Not understanding someone.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
+              "target": "A estação de comboios fica ali.",
+              "native": "The train station is over there.",
+              "phonetic": "Ah esh-tah-sown deh com-boy-oosh fee-kah ah-lee."
             },
             {
               "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
+              "target": "Desculpe, eu não percebo. Pode repetir?",
+              "native": "Sorry, I don't understand. Can you repeat?",
+              "phonetic": "Desh-culp, eh-oo nown per-say-boo. Pod reh-peh-teer?"
             }
           ]
         }
@@ -681,377 +432,82 @@
         "fillBlanks": [
           {
             "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Com licença",
-            "native": "Excuse me"
+            "sentence": "Desculpe, você ___ inglês?",
+            "answer": "fala",
+            "hint": "Verb for 'to speak' (you formal)."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
+            "question": "What phrase means 'I don't understand'?",
+            "options": ["Fala inglês?", "Eu não percebo", "Pode repetir?", "O que significa?"],
             "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
+            "explanation": "'Eu não percebo' is how you say 'I don't understand'."
           }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "Don't be afraid to say 'Eu não percebo'. Portuguese people are generally very patient and will try to help you.",
+      "pronunciation_tip": "The 's' at the end of words is often pronounced like 'sh', as in 'inglês' (een-glesh).",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D4-PT-Understanding" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Numbers 1-10",
+      "title_native": "Dia 5: Números 1-10",
+      "theme": "Numbers and Counting",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_5_1", "target": "Um / Uma", "phonetic": "Oom / Oo-mah", "native_meaning": "One", "english": "One", "example_sentence_target": "Uma cerveja, por favor.", "example_sentence_native": "One beer, please.", "example_sentence_phonetic": "Oo-mah ser-vay-jah, poor fah-vor." },
+        { "id": "w1_5_2", "target": "Dois / Duas", "phonetic": "Doysh / Doo-ash", "native_meaning": "Two", "english": "Two", "example_sentence_target": "Dois cafés.", "example_sentence_native": "Two coffees.", "example_sentence_phonetic": "Doysh cah-faysh." },
+        { "id": "w1_5_3", "target": "Três", "phonetic": "Tresh", "native_meaning": "Three", "english": "Three", "example_sentence_target": "Três bilhetes.", "example_sentence_native": "Three tickets.", "example_sentence_phonetic": "Tresh beel-yet-esh." },
+        { "id": "w1_5_4", "target": "Quatro", "phonetic": "Kwah-troo", "native_meaning": "Four", "english": "Four", "example_sentence_target": "Quatro pessoas.", "example_sentence_native": "Four people.", "example_sentence_phonetic": "Kwah-troo pess-so-ash." },
+        { "id": "w1_5_5", "target": "Cinco", "phonetic": "Seen-coo", "native_meaning": "Five", "english": "Five", "example_sentence_target": "São cinco euros.", "example_sentence_native": "It's five euros.", "example_sentence_phonetic": "Sown seen-coo eh-oo-roosh." },
+        { "id": "w1_5_6", "target": "Seis", "phonetic": "Saysh", "native_meaning": "Six", "english": "Six", "example_sentence_target": "Seis horas.", "example_sentence_native": "Six o'clock.", "example_sentence_phonetic": "Saysh or-ash." },
+        { "id": "w1_5_7", "target": "Sete", "phonetic": "Set", "native_meaning": "Seven", "english": "Seven", "example_sentence_target": "Sete dias.", "example_sentence_native": "Seven days.", "example_sentence_phonetic": "Set dee-ash." },
+        { "id": "w1_5_8", "target": "Oito", "phonetic": "Oy-too", "native_meaning": "Eight", "english": "Eight", "example_sentence_target": "Oito amigos.", "example_sentence_native": "Eight friends.", "example_sentence_phonetic": "Oy-too ah-mee-goosh." },
+        { "id": "w1_5_9", "target": "Nove", "phonetic": "Nov", "native_meaning": "Nine", "english": "Nine", "example_sentence_target": "Nove gatos.", "example_sentence_native": "Nine cats.", "example_sentence_phonetic": "Nov gah-toosh." },
+        { "id": "w1_5_10", "target": "Dez", "phonetic": "Dez", "native_meaning": "Ten", "english": "Ten", "example_sentence_target": "Dez minutos.", "example_sentence_native": "Ten minutes.", "example_sentence_phonetic": "Dez mee-noo-toosh." }
       ],
-      "dialogues": [
-        {
-          "id": "d1_5_1",
-          "context": "Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
-            }
-          ]
-        }
-      ],
+      "dialogues": [],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Com licença",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
-          }
+          { "id": "m1_5_1", "target": "Um", "native": "One" },
+          { "id": "m1_5_2", "target": "Sete", "native": "Seven" },
+          { "id": "m1_5_3", "target": "Dez", "native": "Ten" }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "'Um' and 'Dois' change based on gender. 'Um' becomes 'Uma' for feminine nouns (uma casa - one house), and 'Dois' becomes 'Duas' (duas casas - two houses).",
+      "pronunciation_tip": "Pay attention to the final 's' in numbers like 'dois', 'três', 'seis', it has a 'sh' sound in European Portuguese.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-PT-Numbers" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Food and Drink",
+      "title_native": "Dia 6: Comida e Bebida",
+      "theme": "Basic food and drink",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_6_1", "target": "Água", "phonetic": "Ah-gwah", "native_meaning": "Water", "english": "Water", "example_sentence_target": "Uma garrafa de água, por favor.", "example_sentence_native": "A bottle of water, please.", "example_sentence_phonetic": "Oo-mah gah-ha-fah deh ah-gwah, poor fah-vor." },
+        { "id": "w1_6_2", "target": "Café", "phonetic": "Cah-fay", "native_meaning": "Coffee", "english": "Coffee", "example_sentence_target": "Eu quero um café.", "example_sentence_native": "I want a coffee.", "example_sentence_phonetic": "Eh-oo keh-roo oom cah-fay." },
+        { "id": "w1_6_3", "target": "Pão", "phonetic": "Pown", "native_meaning": "Bread", "english": "Bread", "example_sentence_target": "Queria pão com queijo.", "example_sentence_native": "I would like bread with cheese.", "example_sentence_phonetic": "Keh-ree-ah pown cong kay-joo." },
+        { "id": "w1_6_4", "target": "A conta", "phonetic": "Ah con-tah", "native_meaning": "The bill", "english": "The bill", "example_sentence_target": "A conta, por favor.", "example_sentence_native": "The bill, please.", "example_sentence_phonetic": "Ah con-tah, poor fah-vor." },
+        { "id": "w1_6_5", "target": "Comida", "phonetic": "Coh-mee-dah", "native_meaning": "Food", "english": "Food", "example_sentence_target": "A comida está boa.", "example_sentence_native": "The food is good.", "example_sentence_phonetic": "Ah coh-mee-dah esh-tah boh-ah." }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "At a café.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
-            }
+            { "speaker": "A", "target": "Bom dia. Queria um café e um pão com queijo.", "native": "Good morning. I'd like a coffee and a bread with cheese.", "phonetic": "Bong dee-ah. Keh-ree-ah oom cah-fay ee oom pown cong kay-joo." },
+            { "speaker": "B", "target": "Claro. Mais alguma coisa?", "native": "Of course. Anything else?", "phonetic": "Clah-roo. Maysh al-goo-mah coy-zah?" },
+            { "speaker": "A", "target": "Não, obrigado. A conta, por favor.", "native": "No, thank you. The bill, please.", "phonetic": "Nown, oh-bree-gah-doo. Ah con-tah, poor fah-vor." }
           ]
         }
       ],
@@ -1059,273 +515,68 @@
         "fillBlanks": [
           {
             "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Com licença",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
+            "sentence": "A ___, por favor.",
+            "answer": "conta",
+            "hint": "What you ask for when you want to pay."
           }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "A 'café' in Portugal is a small, strong espresso. If you want a larger coffee with milk, you might ask for a 'meia de leite' or a 'galão'.",
+      "pronunciation_tip": "The 'ou' in 'conta' sounds like the 'o' in 'go'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-PT-Food" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Review",
+      "title_native": "Dia 7: Revisão",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Portuguese",
       "nativeLanguage": "English",
-      "words": [
-        {
-          "id": "w1_7_1",
-          "target": "Olá",
-          "phonetic": "Olá",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Olá.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "Obrigado",
-          "phonetic": "Obrigado",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Obrigado.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "Adeus",
-          "phonetic": "Adeus",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Adeus.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "Por favor",
-          "phonetic": "Por favor",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Por favor.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Com licença",
-          "phonetic": "Com licença",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Com licença.",
-          "example_sentence_native": "Excuse me."
-        }
-      ],
+      "words": [],
       "dialogues": [
-        {
+         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A complete interaction at a shop.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Olá!",
-              "native": "Hello!",
-              "phonetic": "Olá"
-            },
-            {
-              "speaker": "B",
-              "target": "Olá! Obrigado!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Olá Obrigado"
-            },
-            {
-              "speaker": "A",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Obrigado!",
-              "native": "Thank you!",
-              "phonetic": "Obrigado"
-            },
-            {
-              "speaker": "B",
-              "target": "Adeus!",
-              "native": "Goodbye!",
-              "phonetic": "Adeus"
-            },
-            {
-              "speaker": "A",
-              "target": "Por favor! Com licença!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Por favor Com licença"
-            }
+            { "speaker": "A", "target": "Bom dia. Fala inglês?", "native": "Good morning. Do you speak English?", "phonetic": "Bong dee-ah. Fah-lah een-glesh?" },
+            { "speaker": "B", "target": "Um pouco. Como posso ajudar?", "native": "A little. How can I help?", "phonetic": "Oom poh-coo. Coh-moo poss-oh ah-joo-dar?" },
+            { "speaker": "A", "target": "Queria duas garrafas de água, por favor.", "native": "I would like two bottles of water, please.", "phonetic": "Keh-ree-ah doo-ash gah-ha-fash deh ah-gwah, poor fah-vor." },
+            { "speaker": "B", "target": "Aqui estão. São dois euros.", "native": "Here they are. That's two euros.", "phonetic": "Ah-kee esh-town. Sown doysh eh-oo-roosh." },
+            { "speaker": "A", "target": "Obrigado. Adeus.", "native": "Thank you. Goodbye.", "phonetic": "Oh-bree-gah-doo. Ah-deush." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Portuguese",
-            "answer": "Olá",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Portuguese",
-            "answer": "Obrigado",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Portuguese",
-            "answer": "Adeus",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Olá",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Obrigado",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Adeus",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Por favor",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Com licença",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc1_7_1",
-            "question": "What does 'Olá' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Olá' means Hello in English."
-          },
+            "question": "Which phrase is used to say 'Thank you' by a female speaker?",
+            "options": ["Obrigado", "Desculpe", "De nada", "Obrigada"],
+            "correct": 3,
+            "explanation": "Females say 'Obrigada', while males say 'Obrigado'."
+          }
+        ],
+        "matching": [
+          { "id": "m1_7_1", "target": "Eu não percebo", "native": "I don't understand" },
+          { "id": "m1_7_2", "target": "A conta, por favor", "native": "The bill, please" },
+          { "id": "m1_7_3", "target": "Como se chama?", "native": "What is your name?" }
+        ],
+        "sentenceScramble": [
           {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Portuguese?",
-            "options": [
-              "Olá",
-              "Obrigado",
-              "Adeus",
-              "Por favor"
-            ],
-            "correct": 1,
-            "explanation": "'Obrigado' means Thank you."
+            "id": "ss1_7_1",
+            "scrambled": ["repetir", "Pode", "favor", "por", "?"],
+            "correct": "Pode repetir por favor ?",
+            "nativeHint": "Can you repeat please?"
           }
         ]
       },
-      "cultural_note": "Learning Portuguese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Portuguese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "Reviewing what you've learned is key. Try to use these phrases in a real or imagined situation to build confidence.",
+      "pronunciation_tip": "Listen to the dialogues again. Can you hear the difference between the 's' and 'sh' sounds at the end of words? This is a key feature of European Portuguese.",
+      "progress": { "xp": 150, "streak_bonus": 50, "badge": "W1-PT-Complete" }
     }
   ]
 }
+
+    
