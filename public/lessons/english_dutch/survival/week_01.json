@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,9 +8,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "Dag 1: Basisgroeten",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
@@ -17,284 +18,167 @@
         {
           "id": "w1_1_1",
           "target": "Hallo",
-          "phonetic": "Hallo",
+          "phonetic": "hah-loh",
           "native_meaning": "Hello",
           "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "example_sentence_target": "Hallo, hoe gaat het?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "hah-loh, hoo ghaat het?"
         },
         {
           "id": "w1_1_2",
-          "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "target": "Goedemorgen",
+          "phonetic": "khoo-duh-mor-ghuh",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "Goedemorgen, heeft u goed geslapen?",
+          "example_sentence_native": "Good morning, did you sleep well?",
+          "example_sentence_phonetic": "khoo-duh-mor-ghuh, hayft uu khoot guh-slaa-puhn?"
         },
         {
           "id": "w1_1_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "Goedendag",
+          "phonetic": "khoo-dun-dakh",
+          "native_meaning": "Good day",
+          "english": "Good day",
+          "example_sentence_target": "Goedendag, mag ik u iets vragen?",
+          "example_sentence_native": "Good day, may I ask you something?",
+          "example_sentence_phonetic": "khoo-dun-dakh, makh ik uu eets vraa-ghuhn?"
         },
         {
           "id": "w1_1_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "Goedenavond",
+          "phonetic": "khoo-dun-aa-font",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "Goedenavond, een tafel voor twee, alstublieft.",
+          "example_sentence_native": "Good evening, a table for two, please.",
+          "example_sentence_phonetic": "khoo-dun-aa-font, un taa-ful vor tway, al-stuu-bleeft."
         },
         {
           "id": "w1_1_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "Tot ziens",
+          "phonetic": "tot zeens",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "Dank u wel en tot ziens!",
+          "example_sentence_native": "Thank you and goodbye!",
+          "example_sentence_phonetic": "dank uu wel en tot zeens!"
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Greeting someone in a shop.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Hallo, goedendag.",
+              "native": "Hello, good day.",
+              "phonetic": "hah-loh, khoo-dun-dakh."
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
-            },
-            {
-              "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Goedendag, kan ik u helpen?",
+              "native": "Good day, can I help you?",
+              "phonetic": "khoo-dun-dakh, kan ik uu hel-puhn?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
-            "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
-          }
+          { "id": "m1_1_1", "target": "Hallo", "native": "Hello" },
+          { "id": "m1_1_2", "target": "Goedemorgen", "native": "Good morning" },
+          { "id": "m1_1_3", "target": "Goedenavond", "native": "Good evening" },
+          { "id": "m1_1_4", "target": "Tot ziens", "native": "Goodbye" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "The Dutch are known for their directness in communication. A simple 'Hallo' is a common and friendly way to greet anyone.",
+      "pronunciation_tip": "The Dutch 'g' sound is pronounced in the back of the throat, similar to the 'ch' in the Scottish word 'loch'. It's a key sound to practice.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D1"
+        "badge": "W1D1-Dutch-Greetings"
       }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Introductions",
+      "title_native": "Dag 2: Jezelf voorstellen",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_2_1",
-          "target": "Hallo",
-          "phonetic": "Hallo",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "target": "Ik ben...",
+          "phonetic": "ik ben...",
+          "native_meaning": "I am...",
+          "english": "I am...",
+          "example_sentence_target": "Hallo, ik ben Alex.",
+          "example_sentence_native": "Hello, I am Alex.",
+          "example_sentence_phonetic": "hah-loh, ik ben Alex."
         },
         {
           "id": "w1_2_2",
-          "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "target": "Hoe heet je?",
+          "phonetic": "hoo hayt yuh?",
+          "native_meaning": "What is your name?",
+          "english": "What is your name?",
+          "example_sentence_target": "Hoe heet je? Ik heet Maria.",
+          "example_sentence_native": "What is your name? My name is Maria.",
+          "example_sentence_phonetic": "hoo hayt yuh? ik hayt Maria."
         },
         {
           "id": "w1_2_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "Aangenaam",
+          "phonetic": "aan-guh-naam",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Aangenaam kennis te maken.",
+          "example_sentence_native": "Nice to meet you.",
+          "example_sentence_phonetic": "aan-guh-naam ken-nis tuh maa-kuhn."
         },
         {
           "id": "w1_2_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "Waar kom je vandaan?",
+          "phonetic": "waar kom yeh van-daan?",
+          "native_meaning": "Where are you from?",
+          "english": "Where are you from?",
+          "example_sentence_target": "Waar kom je vandaan? Ik kom uit Canada.",
+          "example_sentence_native": "Where are you from? I come from Canada.",
+          "example_sentence_phonetic": "waar kom yeh van-daan? ik kom uyt Canada."
         },
         {
           "id": "w1_2_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "Ik kom uit...",
+          "phonetic": "ik kom uyt...",
+          "native_meaning": "I come from...",
+          "english": "I come from...",
+          "example_sentence_target": "Ik kom uit Engeland.",
+          "example_sentence_native": "I come from England.",
+          "example_sentence_phonetic": "ik kom uyt Eng-guh-land."
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Meeting someone for the first time.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Hallo, ik ben David.",
+              "native": "Hello, I am David.",
+              "phonetic": "hah-loh, ik ben David."
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
-            },
-            {
-              "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Hallo David. Ik heet Eva. Aangenaam.",
+              "native": "Hello David. My name is Eva. Nice to meet you.",
+              "phonetic": "hah-loh David. ik hayt Eva. aan-guh-naam."
             }
           ]
         }
@@ -303,565 +187,302 @@
         "fillBlanks": [
           {
             "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
-            "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
+            "sentence": "Hallo, ___ ___ Mark.",
+            "answer": "ik ben",
+            "hint": "Hello, I am Mark."
           }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "When meeting someone for the first time in the Netherlands, a firm, brief handshake is common. It's polite to state your name clearly.",
+      "pronunciation_tip": "The 'ee' in 'heet' is a long vowel sound, like the 'ay' in 'say'. The 'aa' in 'aangenaam' is also long, like the 'a' in 'father'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D2"
+        "badge": "W1D2-Dutch-Intros"
       }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Politeness",
+      "title_native": "Dag 3: Beleefdheid",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_3_1",
-          "target": "Hallo",
-          "phonetic": "Hallo",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "target": "Dank u wel",
+          "phonetic": "dank uu wel",
+          "native_meaning": "Thank you (formal)",
+          "english": "Thank you (formal)",
+          "example_sentence_target": "Dank u wel voor uw hulp.",
+          "example_sentence_native": "Thank you for your help.",
+          "example_sentence_phonetic": "dank uu wel vor uw hulp."
         },
         {
           "id": "w1_3_2",
           "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "phonetic": "dank yeh wel",
+          "native_meaning": "Thank you (informal)",
+          "english": "Thank you (informal)",
+          "example_sentence_target": "Dank je wel, dat is erg aardig.",
+          "example_sentence_native": "Thank you, that is very kind.",
+          "example_sentence_phonetic": "dank yeh wel, dat is erkh aar-dikh."
         },
         {
           "id": "w1_3_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "Alstublieft",
+          "phonetic": "al-stuu-bleeft",
+          "native_meaning": "Please / Here you are",
+          "english": "Please / Here you are",
+          "example_sentence_target": "Een koffie, alstublieft.",
+          "example_sentence_native": "One coffee, please.",
+          "example_sentence_phonetic": "ayn koh-fee, al-stuu-bleeft."
         },
         {
           "id": "w1_3_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "Pardon",
+          "phonetic": "par-don",
+          "native_meaning": "Excuse me / Pardon",
+          "english": "Excuse me / Pardon",
+          "example_sentence_target": "Pardon, mag ik er even langs?",
+          "example_sentence_native": "Excuse me, may I pass?",
+          "example_sentence_phonetic": "par-don, makh ik er ay-vuhn langs?"
         },
         {
           "id": "w1_3_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "Sorry",
+          "phonetic": "sor-ree",
+          "native_meaning": "Sorry",
+          "english": "Sorry",
+          "example_sentence_target": "Oh, sorry!",
+          "example_sentence_native": "Oh, sorry!",
+          "example_sentence_phonetic": "oh, sor-ree!"
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "Ordering a coffee.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Goedendag. Een koffie, alstublieft.",
+              "native": "Good day. One coffee, please.",
+              "phonetic": "khoo-dun-dakh. ayn koh-fee, al-stuu-bleeft."
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
+              "target": "Alstublieft. Dat is twee euro.",
+              "native": "Here you are. That is two euros.",
+              "phonetic": "al-stuu-bleeft. dat is tway eu-roh."
             },
             {
               "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Dank u wel.",
+              "native": "Thank you.",
+              "phonetic": "dank uu wel."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
-            "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
+            "id": "ss1_3_1",
+            "scrambled": ["wel", "dank", "je"],
+            "correct": "dank je wel",
+            "nativeHint": "Thank you (informal)"
           }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "'Alstublieft' is a very versatile word. It means 'please' when you're asking for something, and 'here you are' when you're giving something.",
+      "pronunciation_tip": "The 'ie' in 'alstublieft' is a long 'ee' sound, like in 'see'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D3"
+        "badge": "W1D3-Dutch-Polite"
       }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Yes, No & Understanding",
+      "title_native": "Dag 4: Ja, Nee & Begrijpen",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_4_1",
-          "target": "Hallo",
-          "phonetic": "Hallo",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "target": "Ja",
+          "phonetic": "yaa",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Ja, graag.",
+          "example_sentence_native": "Yes, please.",
+          "example_sentence_phonetic": "yaa, khraakh."
         },
         {
           "id": "w1_4_2",
-          "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "target": "Nee",
+          "phonetic": "nay",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Nee, dank u.",
+          "example_sentence_native": "No, thank you.",
+          "example_sentence_phonetic": "nay, dank uu."
         },
         {
           "id": "w1_4_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "Ik begrijp het niet",
+          "phonetic": "ik buh-khreyp het neet",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Sorry, ik begrijp het niet.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "sor-ree, ik buh-khreyp het neet."
         },
         {
           "id": "w1_4_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "Spreekt u Engels?",
+          "phonetic": "spraykt uu eng-uhls?",
+          "native_meaning": "Do you speak English?",
+          "english": "Do you speak English?",
+          "example_sentence_target": "Pardon, spreekt u Engels?",
+          "example_sentence_native": "Excuse me, do you speak English?",
+          "example_sentence_phonetic": "par-don, spraykt uu eng-uhls?"
         },
         {
           "id": "w1_4_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "Kunt u dat herhalen?",
+          "phonetic": "kunt uu dat her-haa-luhn?",
+          "native_meaning": "Can you repeat that?",
+          "english": "Can you repeat that?",
+          "example_sentence_target": "Kunt u dat herhalen, alstublieft?",
+          "example_sentence_native": "Can you repeat that, please?",
+          "example_sentence_phonetic": "kunt uu dat her-haa-luhn, al-stuu-bleeft?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "Struggling to understand someone.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Pardon, spreekt u Engels?",
+              "native": "Excuse me, do you speak English?",
+              "phonetic": "par-don, spraykt uu eng-uhls?"
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
-            },
-            {
-              "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Ja, een beetje. Hoe kan ik u helpen?",
+              "native": "Yes, a little. How can I help you?",
+              "phonetic": "yaa, uhn bay-tyuh. hoo kan ik uu hel-puhn?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
+            "question": "How do you say 'I don't understand'?",
+            "options": ["Ja, graag", "Ik begrijp het niet", "Spreekt u Engels?", "Nee, dank u"],
             "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
+            "explanation": "'Ik begrijp het niet' is the correct phrase for 'I don't understand'."
           }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Most Dutch people, especially in cities and younger generations, speak excellent English. They often switch to English to be helpful if they notice you're struggling.",
+      "pronunciation_tip": "The 'ij' in 'begrijp' is a typical Dutch sound, similar to the 'ay' in 'my' but can vary.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D4"
+        "badge": "W1D4-Dutch-Basics"
       }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Asking for Help",
+      "title_native": "Dag 5: Hulp vragen",
+      "theme": "Navigation & Help",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_5_1",
-          "target": "Hallo",
-          "phonetic": "Hallo",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "target": "Kunt u mij helpen?",
+          "phonetic": "kunt uu my hel-puhn?",
+          "native_meaning": "Can you help me?",
+          "english": "Can you help me?",
+          "example_sentence_target": "Pardon, kunt u mij helpen?",
+          "example_sentence_native": "Excuse me, can you help me?",
+          "example_sentence_phonetic": "par-don, kunt uu my hel-puhn?"
         },
         {
           "id": "w1_5_2",
-          "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "target": "Ik heb hulp nodig",
+          "phonetic": "ik hep hulp noh-dikh",
+          "native_meaning": "I need help",
+          "english": "I need help",
+          "example_sentence_target": "Ik ben verdwaald. Ik heb hulp nodig.",
+          "example_sentence_native": "I am lost. I need help.",
+          "example_sentence_phonetic": "ik ben ver-dwaalt. ik hep hulp noh-dikh."
         },
         {
           "id": "w1_5_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "Waar is...?",
+          "phonetic": "waar is...?",
+          "native_meaning": "Where is...?",
+          "english": "Where is...?",
+          "example_sentence_target": "Waar is het toilet?",
+          "example_sentence_native": "Where is the toilet?",
+          "example_sentence_phonetic": "waar is het twa-let?"
         },
         {
           "id": "w1_5_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "het toilet",
+          "phonetic": "het twa-let",
+          "native_meaning": "the toilet",
+          "english": "the toilet",
+          "example_sentence_target": "Pardon, waar is het toilet?",
+          "example_sentence_native": "Excuse me, where is the toilet?",
+          "example_sentence_phonetic": "par-don, waar is het twa-let?"
         },
         {
           "id": "w1_5_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "het station",
+          "phonetic": "het sta-shon",
+          "native_meaning": "the station",
+          "english": "the station",
+          "example_sentence_target": "Waar is het centraal station?",
+          "example_sentence_native": "Where is the central station?",
+          "example_sentence_phonetic": "waar is het sen-traal sta-shon?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "Asking for directions.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Pardon, kunt u mij helpen? Waar is het station?",
+              "native": "Excuse me, can you help me? Where is the station?",
+              "phonetic": "par-don, kunt uu my hel-puhn? waar is het sta-shon?"
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
-            },
-            {
-              "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Het station is daar, rechtdoor.",
+              "native": "The station is there, straight ahead.",
+              "phonetic": "het sta-shon is daar, rekht-door."
             }
           ]
         }
@@ -870,376 +491,195 @@
         "fillBlanks": [
           {
             "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
-            "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
+            "sentence": "Pardon, ___ ___ het toilet?",
+            "answer": "waar is",
+            "hint": "Excuse me, where is the toilet?"
           }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Don't hesitate to ask for directions in the Netherlands. People are generally willing to help tourists and visitors.",
+      "pronunciation_tip": "The 'oo' in 'rechtdoor' is a long sound, like the 'o' in 'go'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D5"
+        "badge": "W1D5-Dutch-Help"
       }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Numbers 1-5",
+      "title_native": "Dag 6: Cijfers 1-5",
+      "theme": "Numbers",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_6_1",
-          "target": "Hallo",
-          "phonetic": "Hallo",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "target": "een",
+          "phonetic": "ayn",
+          "native_meaning": "one",
+          "english": "one",
+          "example_sentence_target": "Ik wil graag een koffie.",
+          "example_sentence_native": "I would like one coffee.",
+          "example_sentence_phonetic": "ik wil khraakh ayn koh-fee."
         },
         {
           "id": "w1_6_2",
-          "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "target": "twee",
+          "phonetic": "tway",
+          "native_meaning": "two",
+          "english": "two",
+          "example_sentence_target": "Twee kaartjes, alstublieft.",
+          "example_sentence_native": "Two tickets, please.",
+          "example_sentence_phonetic": "tway kaart-yus, al-stuu-bleeft."
         },
         {
           "id": "w1_6_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "drie",
+          "phonetic": "dree",
+          "native_meaning": "three",
+          "english": "three",
+          "example_sentence_target": "Ik heb drie broers.",
+          "example_sentence_native": "I have three brothers.",
+          "example_sentence_phonetic": "ik hep dree broors."
         },
         {
           "id": "w1_6_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "vier",
+          "phonetic": "feer",
+          "native_meaning": "four",
+          "english": "four",
+          "example_sentence_target": "Het is vier uur.",
+          "example_sentence_native": "It is four o'clock.",
+          "example_sentence_phonetic": "het is feer uur."
         },
         {
           "id": "w1_6_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "vijf",
+          "phonetic": "feyf",
+          "native_meaning": "five",
+          "english": "five",
+          "example_sentence_target": "Dat kost vijf euro.",
+          "example_sentence_native": "That costs five euros.",
+          "example_sentence_phonetic": "dat kost feyf eu-roh."
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "At a bakery.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Hallo, ik wil graag twee broden.",
+              "native": "Hello, I would like two loaves of bread.",
+              "phonetic": "hah-loh, ik wil khraakh tway broh-duhn."
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
-            },
-            {
-              "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Alstublieft. Anders nog iets?",
+              "native": "Here you are. Anything else?",
+              "phonetic": "al-stuu-bleeft. an-ders nokh eets?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
-            "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
-          }
+          { "id": "m1_6_1", "target": "een", "native": "one" },
+          { "id": "m1_6_2", "target": "twee", "native": "two" },
+          { "id": "m1_6_3", "target": "drie", "native": "three" },
+          { "id": "m1_6_4", "target": "vier", "native": "four" },
+          { "id": "m1_6_5", "target": "vijf", "native": "five" }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "In shops, prices are displayed with a comma instead of a decimal point, for example, €2,50.",
+      "pronunciation_tip": "The 'v' in 'vier' and 'vijf' is soft, almost like an 'f' sound.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D6"
+        "badge": "W1D6-Dutch-Numbers"
       }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Review & Common Phrases",
+      "title_native": "Dag 7: Herhaling & Veelvoorkomende zinnen",
+      "theme": "Review",
       "path": "survival",
       "targetLanguage": "Dutch",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_7_1",
-          "target": "Hallo",
-          "phonetic": "Hallo",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Hallo.",
-          "example_sentence_native": "Hello."
+          "target": "Hoe gaat het?",
+          "phonetic": "hoo ghaat het?",
+          "native_meaning": "How are you?",
+          "english": "How are you?",
+          "example_sentence_target": "Hallo Jan, hoe gaat het?",
+          "example_sentence_native": "Hello Jan, how are you?",
+          "example_sentence_phonetic": "hah-loh yan, hoo ghaat het?"
         },
         {
           "id": "w1_7_2",
-          "target": "Dank je wel",
-          "phonetic": "Dank je wel",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dank je wel.",
-          "example_sentence_native": "Thank you."
+          "target": "Goed, dank u",
+          "phonetic": "khoot, dank uu",
+          "native_meaning": "Fine, thank you",
+          "english": "Fine, thank you",
+          "example_sentence_target": "Het gaat goed, dank u.",
+          "example_sentence_native": "I'm doing fine, thank you.",
+          "example_sentence_phonetic": "het ghaat khoot, dank uu."
         },
         {
           "id": "w1_7_3",
-          "target": "Tot ziens",
-          "phonetic": "Tot ziens",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Tot ziens.",
-          "example_sentence_native": "Goodbye."
+          "target": "En met u?",
+          "phonetic": "en met uu?",
+          "native_meaning": "And you? (formal)",
+          "english": "And you? (formal)",
+          "example_sentence_target": "Goed, dank u. En met u?",
+          "example_sentence_native": "Fine, thank you. And you?",
+          "example_sentence_phonetic": "khoot, dank uu. en met uu?"
         },
         {
           "id": "w1_7_4",
-          "target": "Alsjeblieft",
-          "phonetic": "Alsjeblieft",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Alsjeblieft.",
-          "example_sentence_native": "Please."
+          "target": "Ik weet het niet",
+          "phonetic": "ik wayt het neet",
+          "native_meaning": "I don't know",
+          "english": "I don't know",
+          "example_sentence_target": "Waar is hij? Ik weet het niet.",
+          "example_sentence_native": "Where is he? I don't know.",
+          "example_sentence_phonetic": "waar is hey? ik wayt het neet."
         },
         {
           "id": "w1_7_5",
-          "target": "Excuseer",
-          "phonetic": "Excuseer",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Excuseer.",
-          "example_sentence_native": "Excuse me."
+          "target": "Een moment",
+          "phonetic": "ayn moh-ment",
+          "native_meaning": "One moment",
+          "english": "One moment",
+          "example_sentence_target": "Een moment, alstublieft.",
+          "example_sentence_native": "One moment, please.",
+          "example_sentence_phonetic": "ayn moh-ment, al-stuu-bleeft."
         }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A polite conversation.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Hallo!",
-              "native": "Hello!",
-              "phonetic": "Hallo"
+              "target": "Goedemorgen! Hoe gaat het?",
+              "native": "Good morning! How are you?",
+              "phonetic": "khoo-duh-mor-ghuh! hoo ghaat het?"
             },
             {
               "speaker": "B",
-              "target": "Hallo! Dank je wel!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Hallo Dank je wel"
-            },
-            {
-              "speaker": "A",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dank je wel!",
-              "native": "Thank you!",
-              "phonetic": "Dank je wel"
-            },
-            {
-              "speaker": "B",
-              "target": "Tot ziens!",
-              "native": "Goodbye!",
-              "phonetic": "Tot ziens"
-            },
-            {
-              "speaker": "A",
-              "target": "Alsjeblieft! Excuseer!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Alsjeblieft Excuseer"
+              "target": "Goed, dank u. En met u?",
+              "native": "Fine, thank you. And you?",
+              "phonetic": "khoot, dank uu. en met uu?"
             }
           ]
         }
@@ -1248,83 +688,26 @@
         "fillBlanks": [
           {
             "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Dutch",
-            "answer": "Hallo",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Dutch",
-            "answer": "Dank je wel",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Dutch",
-            "answer": "Tot ziens",
-            "hint": "Goodbye"
+            "sentence": "Hoe ___ het?",
+            "answer": "gaat",
+            "hint": "How are you?"
           }
         ],
-        "matching": [
+        "sentenceScramble": [
           {
-            "id": "m1_7_1",
-            "target": "Hallo",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Dank je wel",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Tot ziens",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Alsjeblieft",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Excuseer",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Hallo' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Hallo' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Dutch?",
-            "options": [
-              "Hallo",
-              "Dank je wel",
-              "Tot ziens",
-              "Alsjeblieft"
-            ],
-            "correct": 1,
-            "explanation": "'Dank je wel' means Thank you."
+            "id": "ss1_7_1",
+            "scrambled": ["ik", "niet", "het", "weet"],
+            "correct": "ik weet het niet",
+            "nativeHint": "I don't know"
           }
         ]
       },
-      "cultural_note": "Learning Dutch opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Dutch pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Repetition is key to language learning. Don't be afraid to reuse the phrases you've learned this week in different situations.",
+      "pronunciation_tip": "Pay attention to the word order. In Dutch, the verb often comes in the second position in a main clause, e.g., 'Ik ben Alex' (I am Alex).",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D7"
+        "badge": "W1D7-Dutch-Review"
       }
     }
   ]
