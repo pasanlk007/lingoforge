@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp } from '@/firebase';
+import { useRouter } from 'next/navigation';
+import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp, useUser } from '@/firebase';
 import { doc, setDoc, collection, query, where, getDocs, updateDoc, increment } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
@@ -16,6 +17,48 @@ import type { UserProfile } from '@/lib/types';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { nativeLanguages } from '@/lib/translations';
 import { Separator } from '@/components/ui/separator';
+import { Skeleton } from '@/components/ui/skeleton';
+
+function SignupPageLoading() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-background p-4">
+      <div className="w-full max-w-md">
+        <div className="text-center mb-6">
+          <Link href="/" className="inline-flex items-center gap-2">
+            <Languages className="h-8 w-8 text-primary" />
+            <span className="font-headline text-2xl font-black">LingoForge</span>
+          </Link>
+        </div>
+        <Card>
+          <CardHeader className="text-center">
+            <Skeleton className="h-7 w-3/5 mx-auto" />
+            <Skeleton className="h-5 w-4/5 mx-auto mt-2" />
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <Skeleton className="h-10 w-full" />
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="w-full border-t"></span>
+              <span className="absolute top-1/2 -translate-y-1/2 bg-background px-2">
+                <Skeleton className="h-4 w-24" />
+              </span>
+            </div>
+            <div className="space-y-4">
+              <div className="space-y-2"><Skeleton className="h-4 w-24" /><Skeleton className="h-10 w-full" /></div>
+              <div className="space-y-2"><Skeleton className="h-4 w-12" /><Skeleton className="h-10 w-full" /></div>
+              <div className="space-y-2"><Skeleton className="h-4 w-16" /><Skeleton className="h-10 w-full" /></div>
+              <div className="space-y-2"><Skeleton className="h-4 w-40" /><Skeleton className="h-10 w-full" /></div>
+              <div className="flex items-start space-x-3 pt-2"><Skeleton className="h-4 w-4 mt-1" /><Skeleton className="h-8 w-full" /></div>
+              <Skeleton className="h-10 w-full" />
+            </div>
+          </CardContent>
+          <CardFooter className="justify-center">
+            <Skeleton className="h-5 w-48" />
+          </CardFooter>
+        </Card>
+      </div>
+    </div>
+  );
+}
 
 export default function SignupPage() {
   const [displayName, setDisplayName] = useState('');
@@ -29,6 +72,15 @@ export default function SignupPage() {
   const auth = useAuth();
   const firestore = useFirestore();
   const { toast } = useToast();
+  
+  const { user, isUserLoading } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isUserLoading && user) {
+      router.push('/dashboard');
+    }
+  }, [user, isUserLoading, router]);
 
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
@@ -42,7 +94,6 @@ export default function SignupPage() {
         await initiateGoogleSignIn(auth, firestore);
 
         toast({ title: "Sign-In Successful", description: "Welcome to LingoForge!" });
-        // Force a full page reload to ensure auth state is propagated correctly.
         window.location.href = '/dashboard';
 
     } catch (error: any) {
@@ -95,7 +146,6 @@ export default function SignupPage() {
       const userDocRef = doc(firestore, 'userProfiles', user.uid);
       await setDoc(userDocRef, userProfile, { merge: true });
 
-      // Referral reward logic
       if (referralCode.trim()) {
         try {
           const referrersQuery = query(
@@ -120,7 +170,6 @@ export default function SignupPage() {
         description: "You're all set. Welcome to LingoForge!",
       });
 
-      // Also use full reload here for consistency.
       window.location.href = '/dashboard';
 
     } catch (error: any) {
@@ -133,6 +182,10 @@ export default function SignupPage() {
       setIsLoading(false);
     }
   };
+
+  if (isUserLoading || user) {
+    return <SignupPageLoading />;
+  }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4">

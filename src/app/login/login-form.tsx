@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
-import { useAuth, useFirestore, initiateGoogleSignIn } from '@/firebase';
+import { useSearchParams, useRouter } from 'next/navigation';
+import { useAuth, useFirestore, initiateGoogleSignIn, useUser } from '@/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,6 +12,44 @@ import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { Languages } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
+import { Skeleton } from '@/components/ui/skeleton';
+
+function AuthCheckLoading() {
+  return (
+    <div className="w-full max-w-md">
+      <div className="text-center mb-6">
+        <Link href="/" className="inline-flex items-center gap-2">
+          <Languages className="h-8 w-8 text-primary" />
+          <span className="font-headline text-2xl font-black">LingoForge</span>
+        </Link>
+      </div>
+      <Card>
+        <CardHeader className="text-center">
+          <Skeleton className="h-7 w-3/5 mx-auto" />
+          <Skeleton className="h-5 w-4/5 mx-auto mt-2" />
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <Skeleton className="h-10 w-full" />
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="w-full border-t"></span>
+            <span className="absolute top-1/2 -translate-y-1/2 bg-background px-2">
+              <Skeleton className="h-4 w-20" />
+            </span>
+          </div>
+          <div className="space-y-4">
+             <div className="space-y-2"><Skeleton className="h-4 w-12" /><Skeleton className="h-10 w-full" /></div>
+             <div className="space-y-2"><Skeleton className="h-4 w-16" /><Skeleton className="h-10 w-full" /></div>
+          </div>
+          <Skeleton className="h-10 w-full" />
+        </CardContent>
+        <CardFooter className="justify-center">
+          <Skeleton className="h-5 w-48" />
+        </CardFooter>
+      </Card>
+    </div>
+  );
+}
+
 
 export function LoginFormContent() {
   const [email, setEmail] = useState('');
@@ -22,6 +60,16 @@ export function LoginFormContent() {
   const auth = useAuth();
   const firestore = useFirestore();
   const { toast } = useToast();
+  
+  const { user, isUserLoading } = useUser();
+  const router = useRouter();
+  const redirectUrl = searchParams?.get('redirect') || '/dashboard';
+
+  useEffect(() => {
+    if (!isUserLoading && user) {
+      router.push(redirectUrl);
+    }
+  }, [user, isUserLoading, router, redirectUrl]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,13 +90,10 @@ export function LoginFormContent() {
         
         toast({
           title: "Login Successful",
-          description: "You are being redirected to your dashboard.",
+          description: "You are being redirected.",
         });
-
-        const redirectUrl = searchParams?.get('redirect');
         
-        // Force a full page reload to ensure auth state is propagated.
-        window.location.href = redirectUrl || '/dashboard';
+        window.location.href = redirectUrl;
 
     } catch (error: any) {
         console.error("Login failed:", error);
@@ -80,11 +125,9 @@ export function LoginFormContent() {
         await initiateGoogleSignIn(auth, firestore);
 
         toast({ title: "Login Successful", description: "Welcome back!" });
-        const redirectUrl = searchParams?.get('redirect');
-        window.location.href = redirectUrl || '/dashboard';
+        window.location.href = redirectUrl;
 
     } catch (error: any) {
-        // Don't show an error toast if the user closes the popup.
         if (error.code !== 'auth/popup-closed-by-user') {
             toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
         }
@@ -92,6 +135,9 @@ export function LoginFormContent() {
     }
   };
 
+  if (isUserLoading || user) {
+    return <AuthCheckLoading />;
+  }
 
   return (
     <div className="w-full max-w-md">
