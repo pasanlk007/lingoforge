@@ -7,9 +7,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Tydzień 1, Dzień 1: Podstawowe powitania",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
@@ -17,284 +17,193 @@
         {
           "id": "w1_1_1",
           "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "phonetic": "Cheshch",
+          "native_meaning": "Hello / Hi / Bye (informal)",
+          "english": "Hello / Hi / Bye (informal)",
+          "example_sentence_target": "Cześć, jak się masz?",
+          "example_sentence_native": "Hi, how are you?",
+          "example_sentence_phonetic": "Cheshch, yak shyeh mash?"
         },
         {
           "id": "w1_1_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "Dzień dobry",
+          "phonetic": "Jen doh-bri",
+          "native_meaning": "Good morning / Good day (formal)",
+          "english": "Good morning / Good day (formal)",
+          "example_sentence_target": "Dzień dobry, pani Nowicka.",
+          "example_sentence_native": "Good morning, Mrs. Nowicka.",
+          "example_sentence_phonetic": "Jen doh-bri, pa-nee No-veets-ka."
         },
         {
           "id": "w1_1_3",
           "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "phonetic": "Doh vee-dzen-ya",
+          "native_meaning": "Goodbye (formal)",
+          "english": "Goodbye (formal)",
+          "example_sentence_target": "Do widzenia, do jutra.",
+          "example_sentence_native": "Goodbye, see you tomorrow.",
+          "example_sentence_phonetic": "Doh vee-dzen-ya, doh yoo-tra."
         },
         {
           "id": "w1_1_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "Dziękuję",
+          "phonetic": "Jen-koo-yeh",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Dziękuję za pomoc.",
+          "example_sentence_native": "Thank you for your help.",
+          "example_sentence_phonetic": "Jen-koo-yeh za po-mots."
         },
         {
           "id": "w1_1_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "Proszę",
+          "phonetic": "Pro-sheh",
+          "native_meaning": "Please / You're welcome",
+          "english": "Please / You're welcome",
+          "example_sentence_target": "Proszę, oto pańska kawa.",
+          "example_sentence_native": "Here is your coffee, please.",
+          "example_sentence_phonetic": "Pro-sheh, o-to pan-ska ka-va."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Meeting someone for the first time (formal).",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Dzień dobry.",
+              "native": "Good day.",
+              "phonetic": "Jen doh-bri."
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
-            },
-            {
-              "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
+              "target": "Dzień dobry. Jak się pan ma?",
+              "native": "Good day. How are you, sir?",
+              "phonetic": "Jen doh-bri. Yak shyeh pan ma?"
             }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "Greeting a friend (informal).",
           "lines": [
             {
               "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
+              "target": "Cześć, Ania!",
+              "native": "Hi, Ania!",
+              "phonetic": "Cheshch, An-ya!"
             },
             {
               "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            },
-            {
-              "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Cześć, Tomek! Co słychać?",
+              "native": "Hi, Tomek! What's up?",
+              "phonetic": "Cheshch, To-mek! Tso swi-hatch?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
-          }
+          { "id": "m1_1_1", "target": "Cześć", "native": "Hello (informal)" },
+          { "id": "m1_1_2", "target": "Dzień dobry", "native": "Good day" },
+          { "id": "m1_1_3", "target": "Dziękuję", "native": "Thank you" },
+          { "id": "m1_1_4", "target": "Do widzenia", "native": "Goodbye" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc1_1_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "id": "ss1_1_1",
+            "scrambled": ["się", "jak", "masz?"],
+            "correct": "jak się masz?",
+            "nativeHint": "How are you?"
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "In Poland, 'Dzień dobry' is a very common and polite greeting used until dusk. 'Cześć' is reserved for friends, family, and younger people.",
+      "pronunciation_tip": "The Polish 'cz' sound in 'Cześć' is like the 'ch' in 'cheese'. The 'sz' sound is like 'sh' in 'shoe'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D1"
+        "badge": "W1D1-Polish-Greetings"
       }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 2: Introductions",
+      "title_native": "Tydzień 1, Dzień 2: Przedstawianie się",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_2_1",
-          "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "target": "Nazywam się...",
+          "phonetic": "Na-zi-vam shyeh...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Nazywam się John.",
+          "example_sentence_native": "My name is John.",
+          "example_sentence_phonetic": "Na-zi-vam shyeh John."
         },
         {
           "id": "w1_2_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "Jestem z...",
+          "phonetic": "Yes-tem z...",
+          "native_meaning": "I am from...",
+          "english": "I am from...",
+          "example_sentence_target": "Jestem z Anglii.",
+          "example_sentence_native": "I am from England.",
+          "example_sentence_phonetic": "Yes-tem z An-glee-ee."
         },
         {
           "id": "w1_2_3",
-          "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "target": "Miło mi",
+          "phonetic": "Mee-wo mee",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Cześć, jestem Anna. Miło mi.",
+          "example_sentence_native": "Hi, I'm Anna. Nice to meet you.",
+          "example_sentence_phonetic": "Cheshch, yes-tem An-na. Mee-wo mee."
         },
         {
           "id": "w1_2_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "Jak się masz?",
+          "phonetic": "Yak shyeh mash?",
+          "native_meaning": "How are you? (informal)",
+          "english": "How are you? (informal)",
+          "example_sentence_target": "Cześć, jak się masz?",
+          "example_sentence_native": "Hi, how are you?",
+          "example_sentence_phonetic": "Cheshch, yak shyeh mash?"
         },
         {
           "id": "w1_2_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "Dobrze",
+          "phonetic": "Dob-zheh",
+          "native_meaning": "Good / Well",
+          "english": "Good / Well",
+          "example_sentence_target": "Dziękuję, dobrze.",
+          "example_sentence_native": "Thank you, I'm well.",
+          "example_sentence_phonetic": "Jen-koo-yeh, dob-zheh."
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Introducing yourself to a new colleague.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Dzień dobry. Nazywam się Ewa. Jestem nową menedżerką.",
+              "native": "Good day. My name is Ewa. I am the new manager.",
+              "phonetic": "Jen doh-bri. Na-zi-vam shyeh E-va. Yes-tem no-von me-ne-jer-kon."
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
-            },
-            {
-              "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
-            },
-            {
-              "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            },
-            {
-              "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Dzień dobry. Nazywam się Piotr. Miło mi panią poznać.",
+              "native": "Good day. My name is Piotr. Nice to meet you, ma'am.",
+              "phonetic": "Jen doh-bri. Na-zi-vam shyeh Pyotr. Mee-wo mee pa-nyon poz-natch."
             }
           ]
         }
@@ -303,376 +212,211 @@
         "fillBlanks": [
           {
             "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
+            "sentence": "___ się Adam.",
+            "answer": "Nazywam",
+            "hint": "My name is Adam."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc1_2_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "question": "How do you say 'I am from America'?",
+            "options": ["Jestem z Anglii.", "Jestem z Polski.", "Jestem z Ameryki.", "Jestem w domu."],
+            "correct": 2,
+            "explanation": "'Jestem z...' means 'I am from...', and 'Ameryki' is the genitive form of 'Ameryka' (America)."
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "When meeting for the first time in a formal or business context, a firm handshake is common. Direct eye contact shows confidence and sincerity.",
+      "pronunciation_tip": "The Polish 'ś' and 'sz' are distinct sounds. 'ś' is softer, like in 'si'. 'sz' is harder, like 'sh' in 'shoe'. Listen carefully to 'Cześć' vs 'proszę'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D2"
+        "badge": "W1D2-Polish-Intros"
       }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 3: Yes, No, and Basic Questions",
+      "title_native": "Tydzień 1, Dzień 3: Tak, Nie i Podstawowe pytania",
+      "theme": "Basic Questions",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_3_1",
-          "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "target": "Tak",
+          "phonetic": "Tahk",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Czy to jest dla mnie? Tak.",
+          "example_sentence_native": "Is this for me? Yes.",
+          "example_sentence_phonetic": "Chi to yest dla mnyeh? Tahk."
         },
         {
           "id": "w1_3_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "Nie",
+          "phonetic": "Nyeh",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Czy mówisz po hiszpańsku? Nie.",
+          "example_sentence_native": "Do you speak Spanish? No.",
+          "example_sentence_phonetic": "Chi moo-vish po hish-pan-skoo? Nyeh."
         },
         {
           "id": "w1_3_3",
-          "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "target": "Gdzie jest...?",
+          "phonetic": "G-jeh yest...?",
+          "native_meaning": "Where is...?",
+          "english": "Where is...?",
+          "example_sentence_target": "Gdzie jest toaleta?",
+          "example_sentence_native": "Where is the toilet?",
+          "example_sentence_phonetic": "G-jeh yest to-a-le-ta?"
         },
         {
           "id": "w1_3_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "Co to jest?",
+          "phonetic": "Tso to yest?",
+          "native_meaning": "What is this?",
+          "english": "What is this?",
+          "example_sentence_target": "Co to jest? To jest pierogi.",
+          "example_sentence_native": "What is this? This is pierogi.",
+          "example_sentence_phonetic": "Tso to yest? To yest pye-ro-gee."
         },
         {
           "id": "w1_3_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "Rozumiem",
+          "phonetic": "Ro-zoo-myem",
+          "native_meaning": "I understand",
+          "english": "I understand",
+          "example_sentence_target": "Mówisz powoli, więc rozumiem.",
+          "example_sentence_native": "You speak slowly, so I understand.",
+          "example_sentence_phonetic": "Moo-vish po-vo-lee, vents ro-zoo-myem."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "Asking for the location of something.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Przepraszam, gdzie jest dworzec?",
+              "native": "Excuse me, where is the train station?",
+              "phonetic": "Pshe-pra-sham, g-jeh yest dvo-zhets?"
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
-            },
-            {
-              "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
-            },
-            {
-              "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            },
-            {
-              "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Dworzec jest prosto, a potem w prawo.",
+              "native": "The station is straight ahead, and then to the right.",
+              "phonetic": "Dvo-zhets yest pros-to, a po-tem f pra-vo."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
-          }
+          { "id": "m1_3_1", "target": "Gdzie jest...?", "native": "Where is...?" },
+          { "id": "m1_3_2", "target": "Tak", "native": "Yes" },
+          { "id": "m1_3_3", "target": "Co to jest?", "native": "What is this?" },
+          { "id": "m1_3_4", "target": "Nie", "native": "No" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc1_3_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "id": "ss1_3_1",
+            "scrambled": ["toaleta?", "jest", "gdzie"],
+            "correct": "gdzie jest toaleta?",
+            "nativeHint": "Where is the toilet?"
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Poles are generally direct in their communication. A simple 'tak' (yes) or 'nie' (no) is often sufficient and not considered rude.",
+      "pronunciation_tip": "Nasal vowels are a key feature of Polish. 'ą' sounds like 'on' in French (or 'own' in 'sown'). 'ę' sounds like 'en' in French (or 'en' in 'end' before a consonant).",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D3"
+        "badge": "W1D3-Polish-Questions"
       }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 4: Numbers and Price",
+      "title_native": "Tydzień 1, Dzień 4: Liczby i cena",
+      "theme": "Numbers & Shopping",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_4_1",
-          "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "target": "jeden",
+          "phonetic": "ye-den",
+          "native_meaning": "one",
+          "english": "one",
+          "example_sentence_target": "Poproszę jeden bilet.",
+          "example_sentence_native": "One ticket, please.",
+          "example_sentence_phonetic": "Po-pro-sheh ye-den bee-let."
         },
         {
           "id": "w1_4_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "dwa",
+          "phonetic": "dva",
+          "native_meaning": "two",
+          "english": "two",
+          "example_sentence_target": "Poproszę dwie kawy.",
+          "example_sentence_native": "Two coffees, please.",
+          "example_sentence_phonetic": "Po-pro-sheh dvyeh ka-vi."
         },
         {
           "id": "w1_4_3",
-          "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "target": "trzy",
+          "phonetic": "tshi",
+          "native_meaning": "three",
+          "english": "three",
+          "example_sentence_target": "Mamy trzy jabłka.",
+          "example_sentence_native": "We have three apples.",
+          "example_sentence_phonetic": "Ma-mi tshi yab-ka."
         },
         {
           "id": "w1_4_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "Ile to kosztuje?",
+          "phonetic": "Ee-leh to kosh-too-yeh?",
+          "native_meaning": "How much is this?",
+          "english": "How much is this?",
+          "example_sentence_target": "Przepraszam, ile to kosztuje?",
+          "example_sentence_native": "Excuse me, how much is this?",
+          "example_sentence_phonetic": "Pshe-pra-sham, ee-leh to kosh-too-yeh?"
         },
         {
           "id": "w1_4_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "złoty",
+          "phonetic": "zwo-ti",
+          "native_meaning": "zloty (Polish currency)",
+          "english": "zloty (Polish currency)",
+          "example_sentence_target": "To kosztuje pięć złotych.",
+          "example_sentence_native": "It costs five zlotys.",
+          "example_sentence_phonetic": "To kosh-too-yeh pyench zwo-tih."
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "In a small shop.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Dzień dobry. Ile kosztuje ta woda?",
+              "native": "Good day. How much is this water?",
+              "phonetic": "Jen doh-bri. Ee-leh kosh-too-yeh ta vo-da?"
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
-            },
-            {
-              "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
-            },
-            {
-              "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            },
-            {
-              "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Trzy złote.",
+              "native": "Three zlotys.",
+              "phonetic": "Tshi zwo-teh."
             }
           ]
         }
@@ -681,650 +425,362 @@
         "fillBlanks": [
           {
             "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
+            "sentence": "Ile to ___?",
+            "answer": "kosztuje",
+            "hint": "How much is it?"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "question": "What is the Polish currency?",
+            "options": ["Euro", "Dolar", "Funt", "Złoty"],
+            "correct": 3,
+            "explanation": "The currency of Poland is the Złoty (PLN)."
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "The Polish currency is the Złoty (PLN). It's always good to have some cash, especially for smaller shops and markets, although card payments are very common.",
+      "pronunciation_tip": "The 'rz' sound, as in 'dobrze' or 'trzy', is pronounced like the 's' in 'measure' or 'pleasure'. It's a voiced 'sh' sound.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D4"
+        "badge": "W1D4-Polish-Numbers"
       }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 5: Food and Drink",
+      "title_native": "Tydzień 1, Dzień 5: Jedzenie i picie",
+      "theme": "Food & Drink",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_5_1",
-          "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "target": "woda",
+          "phonetic": "vo-da",
+          "native_meaning": "water",
+          "english": "water",
+          "example_sentence_target": "Poproszę butelkę wody.",
+          "example_sentence_native": "A bottle of water, please.",
+          "example_sentence_phonetic": "Po-pro-sheh boo-tel-keh vo-di."
         },
         {
           "id": "w1_5_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "kawa",
+          "phonetic": "ka-va",
+          "native_meaning": "coffee",
+          "english": "coffee",
+          "example_sentence_target": "Czy napijesz się kawy?",
+          "example_sentence_native": "Would you like some coffee?",
+          "example_sentence_phonetic": "Chi na-pye-yesh shyeh ka-vi?"
         },
         {
           "id": "w1_5_3",
-          "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "target": "herbata",
+          "phonetic": "her-ba-ta",
+          "native_meaning": "tea",
+          "english": "tea",
+          "example_sentence_target": "Wolę herbatę niż kawę.",
+          "example_sentence_native": "I prefer tea to coffee.",
+          "example_sentence_phonetic": "Vo-leh her-ba-teh neezh ka-veh."
         },
         {
           "id": "w1_5_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "chleb",
+          "phonetic": "hleb",
+          "native_meaning": "bread",
+          "english": "bread",
+          "example_sentence_target": "Chcę kupić świeży chleb.",
+          "example_sentence_native": "I want to buy fresh bread.",
+          "example_sentence_phonetic": "Htseh koo-peech shvyeh-zhi hleb."
         },
         {
           "id": "w1_5_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "piwo",
+          "phonetic": "pee-vo",
+          "native_meaning": "beer",
+          "english": "beer",
+          "example_sentence_target": "Dwa piwa, proszę.",
+          "example_sentence_native": "Two beers, please.",
+          "example_sentence_phonetic": "Dva pee-va, pro-sheh."
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "Ordering at a cafe.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Dzień dobry. Poproszę jedną kawę i wodę.",
+              "native": "Good day. I'd like one coffee and a water.",
+              "phonetic": "Jen doh-bri. Po-pro-sheh yed-non ka-veh ee vo-deh."
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
-            },
-            {
-              "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
-            },
-            {
-              "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            },
-            {
-              "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Proszę bardzo. Coś jeszcze?",
+              "native": "Here you are. Anything else?",
+              "phonetic": "Pro-sheh bar-dzo. Tsosh yesh-cheh?"
             }
           ]
         }
       ],
       "exercises": {
+        "matching": [
+          { "id": "m1_5_1", "target": "kawa", "native": "coffee" },
+          { "id": "m1_5_2", "target": "woda", "native": "water" },
+          { "id": "m1_5_3", "target": "herbata", "native": "tea" },
+          { "id": "m1_5_4", "target": "piwo", "native": "beer" }
+        ],
         "fillBlanks": [
           {
             "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "sentence": "Poproszę jedną ___, proszę.",
+            "answer": "kawę",
+            "hint": "I would like one coffee, please."
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Polish cuisine is rich and hearty. Don't leave without trying 'pierogi' (dumplings), 'żurek' (sour rye soup), and 'bigos' (hunter's stew).",
+      "pronunciation_tip": "The Polish 'ch' (as in 'chleb') is pronounced the same as 'h'. It's a soft, breathy sound from the back of your throat, similar to the 'h' in 'hat'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D5"
+        "badge": "W1D5-Polish-Food"
       }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 6: Help and Apologies",
+      "title_native": "Tydzień 1, Dzień 6: Pomoc i przeprosiny",
+      "theme": "Help & Apologies",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_6_1",
-          "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "target": "Przepraszam",
+          "phonetic": "Pshe-pra-sham",
+          "native_meaning": "Excuse me / I'm sorry",
+          "english": "Excuse me / I'm sorry",
+          "example_sentence_target": "Przepraszam, która jest godzina?",
+          "example_sentence_native": "Excuse me, what time is it?",
+          "example_sentence_phonetic": "Pshe-pra-sham, ktoo-ra yest go-jee-na?"
         },
         {
           "id": "w1_6_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "Pomocy!",
+          "phonetic": "Po-mo-tsi!",
+          "native_meaning": "Help!",
+          "english": "Help!",
+          "example_sentence_target": "Pomocy! Zgubiłem się.",
+          "example_sentence_native": "Help! I'm lost.",
+          "example_sentence_phonetic": "Po-mo-tsi! Zgoo-bee-wem shyeh."
         },
         {
           "id": "w1_6_3",
-          "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "target": "Nie rozumiem",
+          "phonetic": "Nyeh ro-zoo-myem",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Przepraszam, nie rozumiem po polsku.",
+          "example_sentence_native": "I'm sorry, I don't understand Polish.",
+          "example_sentence_phonetic": "Pshe-pra-sham, nyeh ro-zoo-myem po pol-skoo."
         },
         {
           "id": "w1_6_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "Mówisz po angielsku?",
+          "phonetic": "Moo-vish po an-gyel-skoo?",
+          "native_meaning": "Do you speak English? (informal)",
+          "english": "Do you speak English? (informal)",
+          "example_sentence_target": "Przepraszam, mówisz po angielsku?",
+          "example_sentence_native": "Excuse me, do you speak English?",
+          "example_sentence_phonetic": "Pshe-pra-sham, moo-vish po an-gyel-skoo?"
         },
         {
           "id": "w1_6_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "Toaleta",
+          "phonetic": "to-a-le-ta",
+          "native_meaning": "Toilet",
+          "english": "Toilet",
+          "example_sentence_target": "Gdzie jest toaleta?",
+          "example_sentence_native": "Where is the toilet?",
+          "example_sentence_phonetic": "G-jeh yest to-a-le-ta?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "Lost and asking for help.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Przepraszam, nie rozumiem. Mówi pan po angielsku?",
+              "native": "I'm sorry, I don't understand. Do you speak English, sir?",
+              "phonetic": "Pshe-pra-sham, nyeh ro-zoo-myem. Moo-vee pan po an-gyel-skoo?"
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
-            },
-            {
-              "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
-            },
-            {
-              "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            },
-            {
-              "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Tak, trochę. W czym mogę pomóc?",
+              "native": "Yes, a little. How can I help?",
+              "phonetic": "Tahk, tro-heh. F chim mo-geh po-moots?"
             }
           ]
         }
       ],
       "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_6_1",
+            "scrambled": ["nie", "rozumiem", "polsku", "po"],
+            "correct": "nie rozumiem po polsku",
+            "nativeHint": "I don't understand Polish"
+          }
+        ],
         "fillBlanks": [
           {
             "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "sentence": "Przepraszam, gdzie jest ___?",
+            "answer": "toaleta",
+            "hint": "Excuse me, where is the toilet?"
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "'Przepraszam' is a very versatile word. You can use it to get someone's attention (like 'excuse me'), to apologize ('I'm sorry'), or to say 'pardon me' if you didn't hear something.",
+      "pronunciation_tip": "The 'szcz' cluster in 'przepraszam' can be tricky. Break it down: 'pshe' + 'pra' + 'sham'. The 'szcz' sound is like 'sh-ch' said quickly together.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D6"
+        "badge": "W1D6-Polish-Help"
       }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 7: Review",
+      "title_native": "Tydzień 1, Dzień 7: Powtórka",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Polish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_7_1",
-          "target": "Cześć",
-          "phonetic": "Cześć",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Cześć.",
-          "example_sentence_native": "Hello."
+          "target": "Dzień dobry",
+          "phonetic": "Jen doh-bri",
+          "native_meaning": "Good day",
+          "english": "Good day",
+          "example_sentence_target": "Dzień dobry, poproszę kawę.",
+          "example_sentence_native": "Good day, I'd like a coffee.",
+          "example_sentence_phonetic": "Jen doh-bri, po-pro-sheh ka-veh."
         },
         {
           "id": "w1_7_2",
-          "target": "Dziękuję",
-          "phonetic": "Dziękuję",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Dziękuję.",
-          "example_sentence_native": "Thank you."
+          "target": "Nazywam się...",
+          "phonetic": "Na-zi-vam shyeh...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Nazywam się Maria.",
+          "example_sentence_native": "My name is Maria.",
+          "example_sentence_phonetic": "Na-zi-vam shyeh Ma-rya."
         },
         {
           "id": "w1_7_3",
-          "target": "Do widzenia",
-          "phonetic": "Do widzenia",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Do widzenia.",
-          "example_sentence_native": "Goodbye."
+          "target": "Dziękuję",
+          "phonetic": "Jen-koo-yeh",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Dziękuję bardzo.",
+          "example_sentence_native": "Thank you very much.",
+          "example_sentence_phonetic": "Jen-koo-yeh bar-dzo."
         },
         {
           "id": "w1_7_4",
-          "target": "Proszę",
-          "phonetic": "Proszę",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Proszę.",
-          "example_sentence_native": "Please."
+          "target": "Gdzie jest...?",
+          "phonetic": "G-jeh yest...?",
+          "native_meaning": "Where is...?",
+          "english": "Where is...?",
+          "example_sentence_target": "Przepraszam, gdzie jest muzeum?",
+          "example_sentence_native": "Excuse me, where is the museum?",
+          "example_sentence_phonetic": "Pshe-pra-sham, g-jeh yest moo-ze-oom?"
         },
         {
           "id": "w1_7_5",
-          "target": "Przepraszam",
-          "phonetic": "Przepraszam",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Przepraszam.",
-          "example_sentence_native": "Excuse me."
+          "target": "Nie rozumiem",
+          "phonetic": "Nyeh ro-zoo-myem",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Proszę mówić wolniej, nie rozumiem.",
+          "example_sentence_native": "Please speak slower, I don't understand.",
+          "example_sentence_phonetic": "Pro-sheh moo-veech vol-nyey, nyeh ro-zoo-myem."
         }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A full conversation at a tourist information center.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Cześć!",
-              "native": "Hello!",
-              "phonetic": "Cześć"
+              "target": "Dzień dobry. Nazywam się Paul. Jestem z Kanady.",
+              "native": "Good day. My name is Paul. I am from Canada.",
+              "phonetic": "Jen doh-bri. Na-zi-vam shyeh Paul. Yes-tem z Ka-na-di."
             },
             {
               "speaker": "B",
-              "target": "Cześć! Dziękuję!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Cześć Dziękuję"
+              "target": "Dzień dobry, miło mi. W czym mogę pomóc?",
+              "native": "Good day, nice to meet you. How can I help?",
+              "phonetic": "Jen doh-bri, mee-wo mee. F chim mo-geh po-moots?"
             },
             {
               "speaker": "A",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Dziękuję!",
-              "native": "Thank you!",
-              "phonetic": "Dziękuję"
+              "target": "Gdzie jest Zamek Królewski?",
+              "native": "Where is the Royal Castle?",
+              "phonetic": "G-jeh yest Za-mek Kroo-lev-ski?"
             },
             {
               "speaker": "B",
-              "target": "Do widzenia!",
-              "native": "Goodbye!",
-              "phonetic": "Do widzenia"
+              "target": "To jest bardzo blisko. Prosto i w lewo.",
+              "native": "It's very close. Straight and to the left.",
+              "phonetic": "To yest bar-dzo blees-ko. Pros-to ee v le-vo."
             },
             {
               "speaker": "A",
-              "target": "Proszę! Przepraszam!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Proszę Przepraszam"
+              "target": "Dziękuję bardzo!",
+              "native": "Thank you very much!",
+              "phonetic": "Jen-koo-yeh bar-dzo!"
             }
           ]
         }
       ],
       "exercises": {
+        "matching": [
+          { "id": "m1_7_1", "target": "Dziękuję", "native": "Thank you" },
+          { "id": "m1_7_2", "target": "Gdzie jest...?", "native": "Where is...?" },
+          { "id": "m1_7_3", "target": "Nazywam się...", "native": "My name is..." },
+          { "id": "m1_7_4", "target": "Nie rozumiem", "native": "I don't understand" }
+        ],
         "fillBlanks": [
           {
             "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Polish",
-            "answer": "Cześć",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Polish",
-            "answer": "Dziękuję",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Polish",
-            "answer": "Do widzenia",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Cześć",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Dziękuję",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Do widzenia",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Proszę",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Przepraszam",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Cześć' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Cześć' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Polish?",
-            "options": [
-              "Cześć",
-              "Dziękuję",
-              "Do widzenia",
-              "Proszę"
-            ],
-            "correct": 1,
-            "explanation": "'Dziękuję' means Thank you."
+            "sentence": "Przepraszam, ___ to kosztuje?",
+            "answer": "ile",
+            "hint": "Excuse me, how much is this?"
           }
         ]
       },
-      "cultural_note": "Learning Polish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Polish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "You've learned some key phrases! Remember that using even a little bit of Polish, like 'Dzień dobry' and 'Dziękuję', shows respect and is greatly appreciated by locals.",
+      "pronunciation_tip": "Keep practicing the difficult sounds: 'cz', 'sz', 'szcz', 'rz', and the nasal vowels 'ą' and 'ę'. Repetition is key to mastering Polish pronunciation.",
       "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-Polish-Complete"
       }
     }
   ]
