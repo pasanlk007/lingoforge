@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,9 +8,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "第一週、一日目：基本的な挨拶",
+      "theme": "Basic Greetings",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
@@ -17,1315 +18,302 @@
         {
           "id": "w1_1_1",
           "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
+          "phonetic": "Konnichiwa",
+          "native_meaning": "Hello / Good afternoon",
+          "english": "Hello / Good afternoon",
+          "example_sentence_target": "こんにちは、田中さん。",
+          "example_sentence_native": "Hello, Mr. Tanaka.",
+          "example_sentence_phonetic": "Konnichiwa, Tanaka-san."
         },
         {
           "id": "w1_1_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
+          "target": "おはようございます",
+          "phonetic": "Ohayou gozaimasu",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "おはようございます、先生。",
+          "example_sentence_native": "Good morning, teacher.",
+          "example_sentence_phonetic": "Ohayou gozaimasu, sensei."
         },
         {
           "id": "w1_1_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
+          "target": "こんばんは",
+          "phonetic": "Konbanwa",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "こんばんは。お元気ですか。",
+          "example_sentence_native": "Good evening. How are you?",
+          "example_sentence_phonetic": "Konbanwa. O-genki desu ka."
         },
         {
           "id": "w1_1_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
+          "target": "さようなら",
+          "phonetic": "Sayounara",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "では、さようなら。",
+          "example_sentence_native": "Well then, goodbye.",
+          "example_sentence_phonetic": "Dewa, sayounara."
         },
         {
           "id": "w1_1_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
+          "target": "ありがとうございます",
+          "phonetic": "Arigatou gozaimasu",
+          "native_meaning": "Thank you (polite)",
+          "english": "Thank you (polite)",
+          "example_sentence_target": "ありがとうございます。助かります。",
+          "example_sentence_native": "Thank you. That's a great help.",
+          "example_sentence_phonetic": "Arigatou gozaimasu. Tasukarimasu."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Greeting someone in the afternoon.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
+            { "speaker": "A", "target": "こんにちは。", "native": "Hello.", "phonetic": "Konnichiwa." },
+            { "speaker": "B", "target": "こんにちは。", "native": "Hello.", "phonetic": "Konnichiwa." }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "Thanking someone for a small favor.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "どうぞ。", "native": "Here you go.", "phonetic": "Douzo." },
+            { "speaker": "B", "target": "ありがとうございます。", "native": "Thank you.", "phonetic": "Arigatou gozaimasu." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+          { "id": "m1_1_1", "target": "こんにちは", "native": "Hello" },
+          { "id": "m1_1_2", "target": "おはようございます", "native": "Good morning" },
+          { "id": "m1_1_3", "target": "こんばんは", "native": "Good evening" },
+          { "id": "m1_1_4", "target": "さようなら", "native": "Goodbye" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "Bowing (お辞儀 - ojigi) is a very important part of Japanese culture. The depth of the bow depends on the situation and the social status of the person you are bowing to.",
+      "pronunciation_tip": "Japanese vowels are pure and short: 'a' as in 'father', 'i' as in 'see', 'u' as in 'flute', 'e' as in 'bet', and 'o' as in 'boat'. Try to keep them crisp.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-JP-Greetings" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 2: Introductions",
+      "title_native": "第一週、二日目：自己紹介",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_2_1", "target": "私", "phonetic": "Watashi", "native_meaning": "I / Me", "english": "I / Me", "example_sentence_target": "私は学生です。", "example_sentence_native": "I am a student.", "example_sentence_phonetic": "Watashi wa gakusei desu." },
+        { "id": "w1_2_2", "target": "あなた", "phonetic": "Anata", "native_meaning": "You", "english": "You", "example_sentence_target": "あなたは先生ですか。", "example_sentence_native": "Are you a teacher?", "example_sentence_phonetic": "Anata wa sensei desu ka." },
+        { "id": "w1_2_3", "target": "名前", "phonetic": "Namae", "native_meaning": "Name", "english": "Name", "example_sentence_target": "お名前は何ですか。", "example_sentence_native": "What is your name?", "example_sentence_phonetic": "O-namae wa nan desu ka." },
+        { "id": "w1_2_4", "target": "です", "phonetic": "desu", "native_meaning": "is / am / are", "english": "is / am / are", "example_sentence_target": "これはペンです。", "example_sentence_native": "This is a pen.", "example_sentence_phonetic": "Kore wa pen desu." },
+        { "id": "w1_2_5", "target": "はじめまして", "phonetic": "Hajimemashite", "native_meaning": "Nice to meet you (for the first time)", "english": "Nice to meet you", "example_sentence_target": "はじめまして。どうぞよろしく。", "example_sentence_native": "Nice to meet you. Please be kind to me.", "example_sentence_phonetic": "Hajimemashite. Douzo yoroshiku." }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Meeting someone for the first time.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "はじめまして。私はマリアです。", "native": "Nice to meet you. I am Maria.", "phonetic": "Hajimemashite. Watashi wa Maria desu." },
+            { "speaker": "B", "target": "はじめまして。田中です。どうぞよろしく。", "native": "Nice to meet you. I am Tanaka. Please be kind to me.", "phonetic": "Hajimemashite. Tanaka desu. Douzo yoroshiku." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+        "sentenceScramble": [
+          { "id": "ss1_2_1", "scrambled": ["は", "学生", "私", "です"], "correct": "私は学生です", "nativeHint": "I am a student." }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "In introductions, it's common to state your family name rather than your given name. Also, 'Anata' (you) can sometimes sound too direct. It's often better to use the person's name with '-san', like 'Tanaka-san'.",
+      "pronunciation_tip": "The 'u' sound in 'desu' is often devoiced or dropped, so it sounds more like 'dess'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-JP-Intros" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 3: Politeness",
+      "title_native": "第一週、三日目：丁寧な表現",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_3_1", "target": "すみません", "phonetic": "Sumimasen", "native_meaning": "Excuse me / Sorry", "english": "Excuse me / Sorry", "example_sentence_target": "すみません、駅はどこですか。", "example_sentence_native": "Excuse me, where is the station?", "example_sentence_phonetic": "Sumimasen, eki wa doko desu ka." },
+        { "id": "w1_3_2", "target": "ごめんなさい", "phonetic": "Gomen nasai", "native_meaning": "I'm sorry (more personal)", "english": "I'm sorry", "example_sentence_target": "遅れてごめんなさい。", "example_sentence_native": "I'm sorry for being late.", "example_sentence_phonetic": "Okurete gomen nasai." },
+        { "id": "w1_3_3", "target": "お願いします", "phonetic": "Onegaishimasu", "native_meaning": "Please (when requesting something)", "english": "Please", "example_sentence_target": "水をお願いします。", "example_sentence_native": "Water, please.", "example_sentence_phonetic": "Mizu o onegaishimasu." },
+        { "id": "w1_3_4", "target": "どうぞ", "phonetic": "Douzo", "native_meaning": "Please / Here you go", "english": "Please / Here you go", "example_sentence_target": "どうぞ、お入りください。", "example_sentence_native": "Please, come in.", "example_sentence_phonetic": "Douzo, o-hairi kudasai." },
+        { "id": "w1_3_5", "target": "どうも", "phonetic": "Doumo", "native_meaning": "Thanks (casual)", "english": "Thanks", "example_sentence_target": "どうも。", "example_sentence_native": "Thanks.", "example_sentence_phonetic": "Doumo." }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "Getting a waiter's attention.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "すみません。", "native": "Excuse me.", "phonetic": "Sumimasen." },
+            { "speaker": "B", "target": "はい、どうぞ。", "native": "Yes, what can I do for you?", "phonetic": "Hai, douzo." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+          { "id": "fb1_3_1", "sentence": "水をお願い___。", "answer": "します", "hint": "Water, please." }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "'Sumimasen' is a very versatile word. It can be used to say 'excuse me', 'sorry', and even 'thank you' in certain situations, like when someone does you a favor you didn't ask for.",
+      "pronunciation_tip": "The Japanese 'r' sound is a flap, similar to the 'tt' in the American English pronunciation of 'butter'. It's made by lightly tapping the tip of your tongue against the ridge behind your top teeth.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-JP-Polite" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 4: Yes, No, & Understanding",
+      "title_native": "第一週、四日目：はい、いいえ、理解",
+      "theme": "Yes, No, & Understanding",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_4_1", "target": "はい", "phonetic": "Hai", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "はい、そうです。", "example_sentence_native": "Yes, that's right.", "example_sentence_phonetic": "Hai, sou desu." },
+        { "id": "w1_4_2", "target": "いいえ", "phonetic": "Iie", "native_meaning": "No", "english": "No", "example_sentence_target": "いいえ、違います。", "example_sentence_native": "No, that's wrong.", "example_sentence_phonetic": "Iie, chigaimasu." },
+        { "id": "w1_4_3", "target": "わかりません", "phonetic": "Wakarimasen", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "すみません、わかりません。", "example_sentence_native": "Sorry, I don't understand.", "example_sentence_phonetic": "Sumimasen, wakarimasen." },
+        { "id": "w1_4_4", "target": "もう一度", "phonetic": "Mou ichido", "native_meaning": "One more time", "english": "One more time", "example_sentence_target": "もう一度お願いします。", "example_sentence_native": "One more time, please.", "example_sentence_phonetic": "Mou ichido onegaishimasu." },
+        { "id": "w1_4_5", "target": "ゆっくり", "phonetic": "Yukkuri", "native_meaning": "Slowly", "english": "Slowly", "example_sentence_target": "ゆっくり話してください。", "example_sentence_native": "Please speak slowly.", "example_sentence_phonetic": "Yukkuri hanashite kudasai." }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "Not understanding what someone said.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "これはいくらですか。", "native": "How much is this?", "phonetic": "Kore wa ikura desu ka." },
+            { "speaker": "B", "target": "すみません、わかりません。ゆっくりお願いします。", "native": "Sorry, I don't understand. Slowly, please.", "phonetic": "Sumimasen, wakarimasen. Yukkuri onegaishimasu." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+          { "id": "mc1_4_1", "question": "How do you say 'I don't understand'?", "options": ["Hai", "Wakarimasen", "Iie", "Yukkuri"], "correct": 1, "explanation": "'Wakarimasen' means 'I don't understand'." }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "Japanese communication can be indirect. A direct 'iie' (no) can sometimes sound too harsh. People might use phrases like 'Chotto...' (It's a little...) to refuse something politely.",
+      "pronunciation_tip": "Pay attention to long vs. short vowels. For example, 'koko' (here) and 'koukou' (high school) are different words. 'Ohayou' has a long 'o' at the end.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D4-JP-Understand" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 5: Basic Questions",
+      "title_native": "第一週、五日目：基本的な質問",
+      "theme": "Basic Questions",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_5_1", "target": "これ", "phonetic": "Kore", "native_meaning": "This", "english": "This", "example_sentence_target": "これは何ですか。", "example_sentence_native": "What is this?", "example_sentence_phonetic": "Kore wa nan desu ka." },
+        { "id": "w1_5_2", "target": "それ", "phonetic": "Sore", "native_meaning": "That (near listener)", "english": "That", "example_sentence_target": "それは本です。", "example_sentence_native": "That is a book.", "example_sentence_phonetic": "Sore wa hon desu." },
+        { "id": "w1_5_3", "target": "あれ", "phonetic": "Are", "native_meaning": "That (over there)", "english": "That over there", "example_sentence_target": "あれは駅です。", "example_sentence_native": "That over there is the station.", "example_sentence_phonetic": "Are wa eki desu." },
+        { "id": "w1_5_4", "target": "何", "phonetic": "Nan / Nani", "native_meaning": "What", "english": "What", "example_sentence_target": "お名前は何ですか。", "example_sentence_native": "What is your name?", "example_sentence_phonetic": "O-namae wa nan desu ka." },
+        { "id": "w1_5_5", "target": "か", "phonetic": "ka", "native_meaning": "(question particle)", "english": "(question particle)", "example_sentence_target": "あなたは学生ですか。", "example_sentence_native": "Are you a student?", "example_sentence_phonetic": "Anata wa gakusei desu ka." }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "Asking what something is.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "すみません、これは何ですか。", "native": "Excuse me, what is this?", "phonetic": "Sumimasen, kore wa nan desu ka." },
+            { "speaker": "B", "target": "それはお茶です。", "native": "That is tea.", "phonetic": "Sore wa o-cha desu." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+          { "id": "m1_5_1", "target": "これ", "native": "This" },
+          { "id": "m1_5_2", "target": "それ", "native": "That (near you)" },
+          { "id": "m1_5_3", "target": "あれ", "native": "That (over there)" },
+          { "id": "m1_5_4", "target": "何", "native": "What" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "Pointing directly at people with your index finger is considered rude in Japan. It's better to gesture with an open hand.",
+      "pronunciation_tip": "When 'ka' is at the end of a sentence to make a question, your voice intonation should rise slightly.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-JP-Questions" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 6: Numbers and Price",
+      "title_native": "第一週、六日目：数字と値段",
+      "theme": "Numbers and Price",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_6_1", "target": "一 (いち)", "phonetic": "Ichi", "native_meaning": "One", "english": "One", "example_sentence_target": "一つください。", "example_sentence_native": "One, please.", "example_sentence_phonetic": "Hitotsu kudasai." },
+        { "id": "w1_6_2", "target": "二 (に)", "phonetic": "Ni", "native_meaning": "Two", "english": "Two", "example_sentence_target": "二つあります。", "example_sentence_native": "There are two.", "example_sentence_phonetic": "Futatsu arimasu." },
+        { "id": "w1_6_3", "target": "三 (さん)", "phonetic": "San", "native_meaning": "Three", "english": "Three", "example_sentence_target": "三時です。", "example_sentence_native": "It's three o'clock.", "example_sentence_phonetic": "San-ji desu." },
+        { "id": "w1_6_4", "target": "四 (し/よん)", "phonetic": "Shi / Yon", "native_meaning": "Four", "english": "Four", "example_sentence_target": "四人です。", "example_sentence_native": "There are four people.", "example_sentence_phonetic": "Yo-nin desu." },
+        { "id": "w1_6_5", "target": "いくら", "phonetic": "Ikura", "native_meaning": "How much?", "english": "How much?", "example_sentence_target": "これはいくらですか。", "example_sentence_native": "How much is this?", "example_sentence_phonetic": "Kore wa ikura desu ka." }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "Asking for the price of an item in a shop.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "すみません、これはいくらですか。", "native": "Excuse me, how much is this?", "phonetic": "Sumimasen, kore wa ikura desu ka." },
+            { "speaker": "B", "target": "それは三百円です。", "native": "That is 300 yen.", "phonetic": "Sore wa san-byaku en desu." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+          { "id": "fb1_6_1", "sentence": "これは___ですか。", "answer": "いくら", "hint": "How much is this?" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "The number four can be read as 'shi' or 'yon'. 'Shi' is sometimes avoided because it sounds like the word for death (死).",
+      "pronunciation_tip": "The pitch accent in Japanese is important. For 'ichi', the pitch is high-low. For 'ni', it's high. Listening carefully is key!",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-JP-Numbers" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 7: Review",
+      "title_native": "第一週、七日目：復習",
+      "theme": "Review",
       "path": "survival",
       "targetLanguage": "Japanese",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "こんにちは",
-          "phonetic": "kon-ni-chi-WA",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "こんにちは.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "ありがとう",
-          "phonetic": "a-ri-GA-to",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "ありがとう.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "さようなら",
-          "phonetic": "sa-yo-NA-ra",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "さようなら.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "お願いします",
-          "phonetic": "o-ne-GAI-shi-mas",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "お願いします.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "すみません",
-          "phonetic": "su-mi-MA-sen",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "すみません.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_7_1", "target": "お願いします", "phonetic": "Onegaishimasu", "native_meaning": "Please", "english": "Please", "example_sentence_target": "もう一度お願いします。", "example_sentence_native": "One more time, please.", "example_sentence_phonetic": "Mou ichido onegaishimasu." },
+        { "id": "w1_7_2", "target": "わかりません", "phonetic": "Wakarimasen", "native_meaning": "I don't understand", "english": "I don't understand", "example_sentence_target": "すみません、日本語がわかりません。", "example_sentence_native": "Sorry, I don't understand Japanese.", "example_sentence_phonetic": "Sumimasen, Nihongo ga wakarimasen." },
+        { "id": "w1_7_3", "target": "はい", "phonetic": "Hai", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "はい、日本人です。", "example_sentence_native": "Yes, I am Japanese.", "example_sentence_phonetic": "Hai, Nihon-jin desu." },
+        { "id": "w1_7_4", "target": "名前", "phonetic": "Namae", "native_meaning": "Name", "english": "Name", "example_sentence_target": "私の名前はジョンです。", "example_sentence_native": "My name is John.", "example_sentence_phonetic": "Watashi no namae wa Jon desu." },
+        { "id": "w1_7_5", "target": "こんにちは", "phonetic": "Konnichiwa", "native_meaning": "Hello", "english": "Hello", "example_sentence_target": "こんにちは、スミスさん。", "example_sentence_native": "Hello, Mr. Smith.", "example_sentence_phonetic": "Konnichiwa, Sumisu-san." }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A tourist asking for help.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "こんにちは!",
-              "native": "Hello!",
-              "phonetic": "kon-ni-chi-WA"
-            },
-            {
-              "speaker": "B",
-              "target": "こんにちは! ありがとう!",
-              "native": "Hello! Thank you!",
-              "phonetic": "kon-ni-chi-WA a-ri-GA-to"
-            },
-            {
-              "speaker": "A",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "ありがとう!",
-              "native": "Thank you!",
-              "phonetic": "a-ri-GA-to"
-            },
-            {
-              "speaker": "B",
-              "target": "さようなら!",
-              "native": "Goodbye!",
-              "phonetic": "sa-yo-NA-ra"
-            },
-            {
-              "speaker": "A",
-              "target": "お願いします! すみません!",
-              "native": "Please! Excuse me!",
-              "phonetic": "o-ne-GAI-shi-mas su-mi-MA-sen"
-            }
+            { "speaker": "A", "target": "すみません、わかりません。ゆっくりお願いします。", "native": "Excuse me, I don't understand. Slowly, please.", "phonetic": "Sumimasen, wakarimasen. Yukkuri onegaishimasu." },
+            { "speaker": "B", "target": "はい、わかりました。", "native": "Yes, I understand.", "phonetic": "Hai, wakarimashita." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Japanese",
-            "answer": "こんにちは",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Japanese",
-            "answer": "ありがとう",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Japanese",
-            "answer": "さようなら",
-            "hint": "Goodbye"
-          }
+        "sentenceScramble": [
+          { "id": "ss1_7_1", "scrambled": ["は", "何", "これ", "ですか"], "correct": "これは何ですか", "nativeHint": "What is this?" }
         ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "こんにちは",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "ありがとう",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "さようなら",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "お願いします",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "すみません",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'こんにちは' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'こんにちは' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Japanese?",
-            "options": [
-              "こんにちは",
-              "ありがとう",
-              "さようなら",
-              "お願いします"
-            ],
-            "correct": 1,
-            "explanation": "'ありがとう' means Thank you."
-          }
+            { "id": "m1_7_1", "target": "お願いします", "native": "Please" },
+            { "id": "m1_7_2", "target": "わかりません", "native": "I don't understand" }
         ]
       },
-      "cultural_note": "Learning Japanese opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Japanese pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "Consistency is key to learning a language. Reviewing a little bit every day is more effective than studying for many hours once a week. Keep up the great work!",
+      "pronunciation_tip": "Try shadowing! Listen to a line from a dialogue and try to repeat it at the same time, mimicking the speed, rhythm, and intonation. This is a great way to improve your accent.",
+      "progress": { "xp": 100, "streak_bonus": 50, "badge": "W1D7-JP-Review" }
     }
   ]
 }
+
+    
