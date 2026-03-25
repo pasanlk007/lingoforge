@@ -41,6 +41,8 @@ import { ReferralCard } from "@/components/ReferralCard";
 import { TrialEndBanner } from "@/components/TrialEndBanner";
 import { TrialEndModal } from "@/components/TrialEndModal";
 import { differenceInCalendarDays } from 'date-fns';
+import { VoiceSelector } from "@/components/VoiceSelector";
+import VoiceInit from "@/components/VoiceInit";
 
 
 function DashboardLoading() {
@@ -237,7 +239,7 @@ function DashboardContent({ user }: { user: User }) {
   const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
   const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/${(activePath || 'survival').toLowerCase()}/${nextWeek}/${nextDay}`;
 
-  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage)) ? nativeLanguage : 'English';
+  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
   const t_ui = translations[validNativeLanguage as keyof typeof translations].ui;
   
@@ -258,6 +260,7 @@ function DashboardContent({ user }: { user: User }) {
 
   return (
     <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
+      <VoiceInit />
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto py-8 sm:py-12 px-4">
@@ -430,6 +433,7 @@ function DashboardContent({ user }: { user: User }) {
               </Card>
               <ReminderCard />
               <ReferralCard />
+              <VoiceSelector />
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">

@@ -26,8 +26,6 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { useToast } from '@/hooks/use-toast';
-import { VoiceSelector } from '@/components/VoiceSelector';
-import VoiceInit from '@/components/VoiceInit';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -116,7 +114,6 @@ function ProfileContent({ user }: { user: User }) {
               <div className="absolute inset-0 bg-background/50"></div>
           </div>
       )}
-      <VoiceInit />
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto max-w-2xl py-12 space-y-8">
@@ -194,8 +191,6 @@ function ProfileContent({ user }: { user: User }) {
             </CardContent>
           </Card>
           
-          <VoiceSelector />
-
         </div>
       </main>
     </div>
