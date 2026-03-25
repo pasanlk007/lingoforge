@@ -12,14 +12,8 @@ import { Skeleton } from '@/components/ui/skeleton';
 import type { UserProfile } from '@/lib/types';
 import { Navigation } from '@/components/Navigation';
 import type { User } from 'firebase/auth';
-import { updateProfile, deleteUser } from 'firebase/auth';
-import { deleteDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import Image from 'next/image';
-import { Pencil } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { deleteUser } from 'firebase/auth';
+import { deleteDocumentNonBlocking } from '@/firebase/non-blocking-updates';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -34,7 +28,8 @@ import {
 import { useToast } from '@/hooks/use-toast';
 import { VoiceSelector } from '@/components/VoiceSelector';
 import VoiceInit from '@/components/VoiceInit';
-
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 function ProfilePageLoading() {
   return (
@@ -46,41 +41,6 @@ function ProfilePageLoading() {
     </>
   );
 }
-
-const EMOJIS = ['😀', '😎', '🥸', '🥳', '👽', '🤖', '👾', '👻', '🤠', '🤡', '🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🦁', '🐯', '🦄', '🐲', '🐳', '🚀', '🌟', '🎸'];
-const profileAvatars = PlaceHolderImages.filter(p => p.id.startsWith('avatar-'));
-
-function AvatarSelector({ onSelect }: { onSelect: (url: string) => void }) {
-  return (
-    <Tabs defaultValue="pictures" className="w-full">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="pictures">Pictures</TabsTrigger>
-        <TabsTrigger value="emojis">Emojis</TabsTrigger>
-      </TabsList>
-      <TabsContent value="pictures">
-        <p className="text-sm text-muted-foreground text-center py-2">Select a funny picture</p>
-        <div className="grid grid-cols-4 gap-4 py-4">
-          {profileAvatars.map(avatar => (
-            <button key={avatar.id} onClick={() => onSelect(avatar.imageUrl)} className="rounded-full overflow-hidden aspect-square border-2 border-transparent hover:border-primary focus:border-primary focus:outline-none transition-all">
-              <Image src={avatar.imageUrl} alt={avatar.description} width={100} height={100} className="w-full h-full object-cover" data-ai-hint={avatar.imageHint} />
-            </button>
-          ))}
-        </div>
-      </TabsContent>
-      <TabsContent value="emojis">
-        <p className="text-sm text-muted-foreground text-center py-2">Select an emoji</p>
-        <div className="grid grid-cols-6 sm:grid-cols-8 gap-2 py-4">
-          {EMOJIS.map(emoji => (
-            <button key={emoji} onClick={() => onSelect(emoji)} className="flex items-center justify-center text-3xl sm:text-4xl p-2 rounded-lg hover:bg-muted focus:bg-muted focus:outline-none transition-all">
-              {emoji}
-            </button>
-          ))}
-        </div>
-      </TabsContent>
-    </Tabs>
-  );
-}
-
 
 function ProfileContent({ user }: { user: User }) {
   const auth = useAuth();
@@ -111,11 +71,8 @@ function ProfileContent({ user }: { user: User }) {
       return;
     }
     
-    // First, delete Firestore data. This only deletes the main profile.
-    // A complete solution would use a Cloud Function to delete all user-related data.
     deleteDocumentNonBlocking(userProfileRef);
 
-    // Then, delete the user from Firebase Auth
     try {
       await deleteUser(auth.currentUser);
       toast({
@@ -133,68 +90,43 @@ function ProfileContent({ user }: { user: User }) {
     }
   };
 
-  const handleUpdateProfilePicture = (newPhotoURL: string) => {
-    if (!user || !userProfileRef || !auth?.currentUser) return;
-    
-    // Update firestore user profile
-    updateDocumentNonBlocking(userProfileRef, { photoURL: newPhotoURL });
-
-    // If it's a URL, update auth profile too.
-    // If it's an emoji, clear the auth photoURL to avoid invalid URL errors.
-    const isUrl = newPhotoURL.startsWith('http');
-    updateProfile(auth.currentUser, {
-        photoURL: isUrl ? newPhotoURL : '' // Set to empty string for emoji
-    }).catch(error => {
-        // This is not a critical error, so we can just log it.
-        console.error("Failed to update auth profile picture", error);
-    });
-  };
+  const profileBg = PlaceHolderImages.find(p => p.id === 'profile-background');
 
   if (isProfileLoading) {
     return <ProfilePageLoading />;
   }
   
-  const photoURL = userProfile?.photoURL || user.photoURL;
-  const isEmoji = photoURL && !photoURL.startsWith('http');
+  const photoURL = user.photoURL;
 
   const subscriptionStatus = userProfile?.subscriptionActive ? "Active" : "Free Plan";
   const subscriptionSource = userProfile?.subscriptionSource !== 'none' ? userProfile?.subscriptionSource : '';
   const subscriptionExpiry = userProfile?.subscriptionExpiry ? new Date(userProfile.subscriptionExpiry).toLocaleDateString() : 'Lifetime';
 
   return (
-     <div className="flex min-h-dvh flex-col bg-background">
+     <div className="relative min-h-dvh flex flex-col">
+      {profileBg && (
+          <div className="fixed inset-0 z-[-1] opacity-20">
+              <Image
+                  src={profileBg.imageUrl}
+                  alt={profileBg.description}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  data-ai-hint={profileBg.imageHint}
+              />
+              <div className="absolute inset-0 bg-background/50"></div>
+          </div>
+      )}
       <VoiceInit />
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto max-w-2xl py-12 space-y-8">
-          <Card>
+          <Card className="bg-card/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4">
-                <div className="relative">
-                  <Avatar className={cn("h-16 w-16", isEmoji && "flex items-center justify-center bg-muted")}>
-                    {isEmoji ? (
-                      <span className="text-4xl">{photoURL}</span>
-                    ) : (
-                      <>
-                        <AvatarImage src={photoURL || undefined} alt={userProfile?.displayName} />
-                        <AvatarFallback>{userProfile?.displayName?.charAt(0) || 'U'}</AvatarFallback>
-                      </>
-                    )}
-                  </Avatar>
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button size="icon" variant="secondary" className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full border-2 border-background">
-                        <Pencil className="h-4 w-4" />
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent>
-                      <DialogHeader>
-                        <DialogTitle>Choose your new avatar</DialogTitle>
-                      </DialogHeader>
-                      <AvatarSelector onSelect={handleUpdateProfilePicture} />
-                    </DialogContent>
-                  </Dialog>
-                </div>
+                <Avatar className="h-16 w-16">
+                    <AvatarImage src={photoURL || undefined} alt={userProfile?.displayName} />
+                    <AvatarFallback>{userProfile?.displayName?.charAt(0) || 'U'}</AvatarFallback>
+                </Avatar>
 
                 <div>
                   <CardTitle className="text-3xl">{userProfile?.displayName}</CardTitle>
