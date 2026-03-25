@@ -19,53 +19,59 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   const [tool, setTool] = useState<'pen' | 'highlighter'>('pen');
   const [color, setColor] = useState(COLORS[0]);
   const [size, setSize] = useState(10);
+  const contextRef = useRef<CanvasRenderingContext2D | null>(null);
 
-  const drawLetter = (context: CanvasRenderingContext2D, char: string) => {
-    const { width, height } = context.canvas;
-    context.clearRect(0, 0, width, height); // Clear canvas first
-    context.fillStyle = 'hsl(var(--muted-foreground) / 0.2)';
-    const dpr = window.devicePixelRatio || 1;
-    context.font = `bold ${width * 0.7 / dpr}px sans-serif`;
-    context.textAlign = 'center';
-    context.textBaseline = 'middle';
-    context.fillText(char, width / 2 / dpr, height / 2 / dpr);
-  };
-  
-  const clearCanvas = () => {
-    const canvas = canvasRef.current;
-    if (canvas) {
-      const context = canvas.getContext('2d');
-      if (context) {
-        const dpr = window.devicePixelRatio || 1;
-        context.setTransform(dpr, 0, 0, dpr, 0, 0);
-        context.clearRect(0, 0, canvas.width, canvas.height);
-        drawLetter(context, letter);
-      }
-    }
+  // Function to draw the background guide letter
+  const drawGuideLetter = (ctx: CanvasRenderingContext2D, char: string, cssWidth: number, cssHeight: number) => {
+    ctx.clearRect(0, 0, cssWidth, cssHeight); // Use CSS dimensions for clearing in scaled context
+    ctx.fillStyle = 'hsl(var(--muted-foreground) / 0.2)';
+    ctx.font = `bold ${cssWidth * 0.7}px sans-serif`; // Font size based on CSS width
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(char, cssWidth / 2, cssHeight / 2);
   };
 
+  // Effect for initial setup and resizing
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     
     const context = canvas.getContext('2d');
     if (!context) return;
-    
+    contextRef.current = context;
+
     const resizeCanvas = () => {
-      const { width, height } = canvas.getBoundingClientRect();
+      const { width, height } = canvas.getBoundingClientRect(); // CSS pixels
       const dpr = window.devicePixelRatio || 1;
+      
       canvas.width = width * dpr;
       canvas.height = height * dpr;
-      context.scale(dpr, dpr);
-      drawLetter(context, letter);
+
+      context.resetTransform(); // Reset transform before scaling
+      context.scale(dpr, dpr); // Scale once
+
+      // All subsequent drawing operations should use CSS pixel dimensions.
+      drawGuideLetter(context, letter, width, height);
     }
     
     window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
+    resizeCanvas(); // Initial setup
 
     return () => window.removeEventListener('resize', resizeCanvas);
   }, [letter]);
 
+  // Function to clear user drawings and redraw the guide letter
+  const clearCanvas = () => {
+    const canvas = canvasRef.current;
+    const context = contextRef.current;
+    if (canvas && context) {
+      const { width, height } = canvas.getBoundingClientRect();
+      // No transform changes needed, just redraw the guide letter which clears everything
+      drawGuideLetter(context, letter, width, height);
+    }
+  };
+
+  // Helper to get coordinates correctly on mouse and touch events
   const getCoords = (e: React.MouseEvent | React.TouchEvent) => {
     const canvas = canvasRef.current;
     if (!canvas) return { offsetX: 0, offsetY: 0 };
@@ -87,14 +93,14 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
 
   const startDrawing = (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
-    const context = canvasRef.current?.getContext('2d');
+    const context = contextRef.current;
     if (!context) return;
     
     const { offsetX, offsetY } = getCoords(e);
     context.globalAlpha = tool === 'pen' ? 1.0 : 0.3;
     context.strokeStyle = tool === 'highlighter' ? '#FBBF24' : color;
     context.lineWidth = size;
-    context.lineCap = tool === 'pen' ? 'round' : 'square';
+    context.lineCap = 'round';
     context.lineJoin = 'round';
     context.beginPath();
     context.moveTo(offsetX, offsetY);
@@ -103,7 +109,7 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
 
   const finishDrawing = (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
-    const context = canvasRef.current?.getContext('2d');
+    const context = contextRef.current;
     if (context) {
       context.closePath();
       setIsDrawing(false);
@@ -114,7 +120,7 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     if (!isDrawing) return;
     e.preventDefault();
     const { offsetX, offsetY } = getCoords(e);
-    const context = canvasRef.current?.getContext('2d');
+    const context = contextRef.current;
     if (context) {
       context.lineTo(offsetX, offsetY);
       context.stroke();
