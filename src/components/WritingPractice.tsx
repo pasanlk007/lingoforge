@@ -143,22 +143,24 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   };
 
   return (
-    <Card className="w-full aspect-square max-w-md mx-auto p-0 overflow-hidden relative">
-      <canvas
-        ref={canvasRef}
-        className="w-full h-full cursor-crosshair touch-none"
-        onMouseDown={startDrawing}
-        onMouseUp={finishDrawing}
-        onMouseMove={draw}
-        onMouseLeave={finishDrawing}
-        onTouchStart={startDrawing}
-        onTouchEnd={finishDrawing}
-        onTouchMove={draw}
-      />
+    <div className="w-full max-w-md mx-auto flex flex-col gap-4">
+      <Card className="w-full aspect-square p-0 overflow-hidden">
+        <canvas
+          ref={canvasRef}
+          className="w-full h-full cursor-crosshair touch-none"
+          onMouseDown={startDrawing}
+          onMouseUp={finishDrawing}
+          onMouseMove={draw}
+          onMouseLeave={finishDrawing}
+          onTouchStart={startDrawing}
+          onTouchEnd={finishDrawing}
+          onTouchMove={draw}
+        />
+      </Card>
       
-      <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-3">
+      <div className="flex flex-col gap-3">
         {/* Toolbar */}
-        <div className="flex items-center justify-between gap-4 p-2 rounded-xl bg-background/80 backdrop-blur-sm border shadow-lg">
+        <div className="flex items-center justify-between gap-4 p-2 rounded-xl bg-card border shadow-lg">
           <ToggleGroup type="single" value={tool} onValueChange={(value: 'pen' | 'highlighter') => value && setTool(value)} className="gap-1">
             <ToggleGroupItem value="pen" aria-label="Pen" className="h-9 w-9">
               <Pen className="h-5 w-5" />
@@ -183,7 +185,7 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
         </div>
         
         {/* Color Palette */}
-        <div className="flex items-center justify-center gap-2 p-2 rounded-xl bg-background/80 backdrop-blur-sm border shadow-lg">
+        <div className="flex items-center justify-center gap-2 p-2 rounded-xl bg-card border shadow-lg">
           {COLORS.map((c) => (
             <button
               key={c}
@@ -200,6 +202,6 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
           ))}
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
