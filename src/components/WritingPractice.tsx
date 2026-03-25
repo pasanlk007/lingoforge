@@ -20,15 +20,20 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   const [color, setColor] = useState(COLORS[0]);
   const [size, setSize] = useState(10);
   const contextRef = useRef<CanvasRenderingContext2D | null>(null);
+  const guideColorsRef = useRef({ background: '', foreground: '' });
 
   // Function to draw the background guide letter
   const drawGuideLetter = (ctx: CanvasRenderingContext2D, char: string, cssWidth: number, cssHeight: number) => {
+    // Use the computed HSL values from the ref. These are strings like "240 4% 20%".
+    const bgHsl = guideColorsRef.current.background;
+    const fgHsl = guideColorsRef.current.foreground;
+
     // Clear the canvas and set the background color
-    ctx.fillStyle = 'hsl(var(--muted) / 0.5)';
+    ctx.fillStyle = `hsl(${bgHsl} / 0.5)`;
     ctx.fillRect(0, 0, cssWidth, cssHeight);
     
     // Draw the guide letter
-    ctx.fillStyle = 'hsl(var(--muted-foreground) / 0.2)';
+    ctx.fillStyle = `hsl(${fgHsl} / 0.2)`;
     ctx.font = `bold ${cssWidth * 0.7}px sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
@@ -43,6 +48,13 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     const context = canvas.getContext('2d');
     if (!context) return;
     contextRef.current = context;
+
+    // Get computed styles for canvas colors from the root element
+    const computedStyle = getComputedStyle(document.documentElement);
+    guideColorsRef.current = {
+      background: computedStyle.getPropertyValue('--muted').trim(),
+      foreground: computedStyle.getPropertyValue('--muted-foreground').trim(),
+    };
 
     const resizeCanvas = () => {
       const { width, height } = canvas.getBoundingClientRect(); // CSS pixels
