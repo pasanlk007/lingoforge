@@ -23,9 +23,13 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
 
   // Function to draw the background guide letter
   const drawGuideLetter = (ctx: CanvasRenderingContext2D, char: string, cssWidth: number, cssHeight: number) => {
-    ctx.clearRect(0, 0, cssWidth, cssHeight); // Use CSS dimensions for clearing in scaled context
+    // Clear the canvas and set the background color
+    ctx.fillStyle = 'hsl(var(--muted) / 0.5)';
+    ctx.fillRect(0, 0, cssWidth, cssHeight);
+    
+    // Draw the guide letter
     ctx.fillStyle = 'hsl(var(--muted-foreground) / 0.2)';
-    ctx.font = `bold ${cssWidth * 0.7}px sans-serif`; // Font size based on CSS width
+    ctx.font = `bold ${cssWidth * 0.7}px sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(char, cssWidth / 2, cssHeight / 2);
@@ -66,7 +70,6 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     const context = contextRef.current;
     if (canvas && context) {
       const { width, height } = canvas.getBoundingClientRect();
-      // No transform changes needed, just redraw the guide letter which clears everything
       drawGuideLetter(context, letter, width, height);
     }
   };
@@ -128,32 +131,31 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   };
 
   return (
-    <Card className="w-full aspect-square max-w-md mx-auto p-4 overflow-hidden">
-      <div className="relative w-full h-full">
-         <canvas
-            ref={canvasRef}
-            className="w-full h-full rounded-md bg-muted/50 cursor-crosshair touch-none"
-            onMouseDown={startDrawing}
-            onMouseUp={finishDrawing}
-            onMouseMove={draw}
-            onMouseLeave={finishDrawing}
-            onTouchStart={startDrawing}
-            onTouchEnd={finishDrawing}
-            onTouchMove={draw}
-         />
-      </div>
-      <div className="mt-4 flex flex-col gap-4">
+    <Card className="w-full aspect-square max-w-md mx-auto p-0 overflow-hidden relative">
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full cursor-crosshair touch-none"
+        onMouseDown={startDrawing}
+        onMouseUp={finishDrawing}
+        onMouseMove={draw}
+        onMouseLeave={finishDrawing}
+        onTouchStart={startDrawing}
+        onTouchEnd={finishDrawing}
+        onTouchMove={draw}
+      />
+      
+      <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-3">
         {/* Toolbar */}
-        <div className="flex items-center justify-between gap-4 p-2 rounded-lg bg-background/50 border">
-          <ToggleGroup type="single" value={tool} onValueChange={(value: 'pen' | 'highlighter') => value && setTool(value)} className="gap-2">
-            <ToggleGroupItem value="pen" aria-label="Pen">
+        <div className="flex items-center justify-between gap-4 p-2 rounded-xl bg-background/80 backdrop-blur-sm border shadow-lg">
+          <ToggleGroup type="single" value={tool} onValueChange={(value: 'pen' | 'highlighter') => value && setTool(value)} className="gap-1">
+            <ToggleGroupItem value="pen" aria-label="Pen" className="h-9 w-9">
               <Pen className="h-5 w-5" />
             </ToggleGroupItem>
-            <ToggleGroupItem value="highlighter" aria-label="Highlighter">
+            <ToggleGroupItem value="highlighter" aria-label="Highlighter" className="h-9 w-9">
               <Highlighter className="h-5 w-5" />
             </ToggleGroupItem>
           </ToggleGroup>
-          <div className="flex-1 flex items-center gap-2">
+          <div className="flex-1 flex items-center gap-2 px-2">
             <div className="w-2 h-6 rounded-full" style={{ backgroundColor: tool === 'pen' ? color : '#FBBF24', opacity: tool === 'pen' ? 1 : 0.3 }}/>
             <Slider
                 value={[size]}
@@ -163,12 +165,13 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
                 step={2}
               />
           </div>
-          <Button variant="ghost" size="icon" onClick={clearCanvas}>
+          <Button variant="ghost" size="icon" onClick={clearCanvas} className="h-9 w-9">
             <Eraser className="h-5 w-5" />
           </Button>
         </div>
+        
         {/* Color Palette */}
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 p-2 rounded-xl bg-background/80 backdrop-blur-sm border shadow-lg">
           {COLORS.map((c) => (
             <button
               key={c}
