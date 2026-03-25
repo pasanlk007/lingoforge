@@ -1,25 +1,34 @@
 'use client';
 import { useRef, useState, useEffect } from 'react';
 import { Button } from './ui/button';
-import { Card, CardContent } from './ui/card';
-import { Eraser } from 'lucide-react';
+import { Card } from './ui/card';
+import { Eraser, Pen, Highlighter } from 'lucide-react';
+import { Slider } from './ui/slider';
+import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
+import { cn } from '@/lib/utils';
 
 interface WritingPracticeProps {
   letter: string;
 }
 
+const COLORS = ['#FFFFFF', '#EF4444', '#3B82F6', '#22C55E', '#F97316', '#A855F7'];
+
 export function WritingPractice({ letter }: WritingPracticeProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isDrawing, setIsDrawing] = useState(false);
+  const [tool, setTool] = useState<'pen' | 'highlighter'>('pen');
+  const [color, setColor] = useState(COLORS[0]);
+  const [size, setSize] = useState(10);
 
   const drawLetter = (context: CanvasRenderingContext2D, char: string) => {
     const { width, height } = context.canvas;
     context.clearRect(0, 0, width, height); // Clear canvas first
     context.fillStyle = 'hsl(var(--muted-foreground) / 0.2)';
-    context.font = `bold ${width * 0.7}px sans-serif`;
+    const dpr = window.devicePixelRatio || 1;
+    context.font = `bold ${width * 0.7 / dpr}px sans-serif`;
     context.textAlign = 'center';
     context.textBaseline = 'middle';
-    context.fillText(char, width / 2, height / 2);
+    context.fillText(char, width / 2 / dpr, height / 2 / dpr);
   };
   
   const clearCanvas = () => {
@@ -27,6 +36,9 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     if (canvas) {
       const context = canvas.getContext('2d');
       if (context) {
+        const dpr = window.devicePixelRatio || 1;
+        context.setTransform(dpr, 0, 0, dpr, 0, 0);
+        context.clearRect(0, 0, canvas.width, canvas.height);
         drawLetter(context, letter);
       }
     }
@@ -34,19 +46,22 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
+    
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    
     const resizeCanvas = () => {
-      if (canvas) {
-        const context = canvas.getContext('2d');
-        if (context) {
-          const { width, height } = canvas.getBoundingClientRect();
-          canvas.width = width;
-          canvas.height = height;
-          drawLetter(context, letter);
-        }
-      }
+      const { width, height } = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      context.scale(dpr, dpr);
+      drawLetter(context, letter);
     }
+    
     window.addEventListener('resize', resizeCanvas);
-    resizeCanvas(); // initial draw
+    resizeCanvas();
 
     return () => window.removeEventListener('resize', resizeCanvas);
   }, [letter]);
@@ -56,29 +71,34 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     if (!canvas) return { offsetX: 0, offsetY: 0 };
     const rect = canvas.getBoundingClientRect();
 
-    if ('touches' in e) { // Touch event
-        return {
-          offsetX: e.touches[0].clientX - rect.left,
-          offsetY: e.touches[0].clientY - rect.top,
-        };
+    let clientX, clientY;
+    if ('touches' in e) {
+      clientX = e.touches[0].clientX;
+      clientY = e.touches[0].clientY;
+    } else {
+      clientX = e.clientX;
+      clientY = e.clientY;
     }
-    // Mouse event
-    return { offsetX: e.clientX - rect.left, offsetY: e.clientY - rect.top };
+    return {
+      offsetX: clientX - rect.left,
+      offsetY: clientY - rect.top,
+    };
   }
 
   const startDrawing = (e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
-    const { offsetX, offsetY } = getCoords(e);
     const context = canvasRef.current?.getContext('2d');
-    if (context) {
-      context.strokeStyle = '#FFFFFF';
-      context.lineWidth = 10;
-      context.lineCap = 'round';
-      context.lineJoin = 'round';
-      context.beginPath();
-      context.moveTo(offsetX, offsetY);
-      setIsDrawing(true);
-    }
+    if (!context) return;
+    
+    const { offsetX, offsetY } = getCoords(e);
+    context.globalAlpha = tool === 'pen' ? 1.0 : 0.3;
+    context.strokeStyle = tool === 'highlighter' ? '#FBBF24' : color;
+    context.lineWidth = size;
+    context.lineCap = tool === 'pen' ? 'round' : 'square';
+    context.lineJoin = 'round';
+    context.beginPath();
+    context.moveTo(offsetX, offsetY);
+    setIsDrawing(true);
   };
 
   const finishDrawing = (e: React.MouseEvent | React.TouchEvent) => {
@@ -101,26 +121,63 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     }
   };
 
-
   return (
-    <Card className="w-full aspect-square max-w-md mx-auto p-4">
+    <Card className="w-full aspect-square max-w-md mx-auto p-4 overflow-hidden">
       <div className="relative w-full h-full">
          <canvas
             ref={canvasRef}
             className="w-full h-full rounded-md bg-muted/50 cursor-crosshair touch-none"
-            onMouseDown={(e) => startDrawing(e)}
-            onMouseUp={(e) => finishDrawing(e)}
-            onMouseMove={(e) => draw(e)}
-            onMouseLeave={(e) => finishDrawing(e)}
-            onTouchStart={(e) => startDrawing(e)}
-            onTouchEnd={(e) => finishDrawing(e)}
-            onTouchMove={(e) => draw(e)}
+            onMouseDown={startDrawing}
+            onMouseUp={finishDrawing}
+            onMouseMove={draw}
+            onMouseLeave={finishDrawing}
+            onTouchStart={startDrawing}
+            onTouchEnd={finishDrawing}
+            onTouchMove={draw}
          />
       </div>
-      <div className="mt-4 flex justify-center">
-        <Button variant="outline" onClick={clearCanvas}>
-          <Eraser className="mr-2" /> Clear
-        </Button>
+      <div className="mt-4 flex flex-col gap-4">
+        {/* Toolbar */}
+        <div className="flex items-center justify-between gap-4 p-2 rounded-lg bg-background/50 border">
+          <ToggleGroup type="single" value={tool} onValueChange={(value: 'pen' | 'highlighter') => value && setTool(value)} className="gap-2">
+            <ToggleGroupItem value="pen" aria-label="Pen">
+              <Pen className="h-5 w-5" />
+            </ToggleGroupItem>
+            <ToggleGroupItem value="highlighter" aria-label="Highlighter">
+              <Highlighter className="h-5 w-5" />
+            </ToggleGroupItem>
+          </ToggleGroup>
+          <div className="flex-1 flex items-center gap-2">
+            <div className="w-2 h-6 rounded-full" style={{ backgroundColor: tool === 'pen' ? color : '#FBBF24', opacity: tool === 'pen' ? 1 : 0.3 }}/>
+            <Slider
+                value={[size]}
+                onValueChange={(v) => setSize(v[0])}
+                min={2}
+                max={40}
+                step={2}
+              />
+          </div>
+          <Button variant="ghost" size="icon" onClick={clearCanvas}>
+            <Eraser className="h-5 w-5" />
+          </Button>
+        </div>
+        {/* Color Palette */}
+        <div className="flex items-center justify-center gap-2">
+          {COLORS.map((c) => (
+            <button
+              key={c}
+              onClick={() => setColor(c)}
+              disabled={tool === 'highlighter'}
+              className={cn(
+                "h-7 w-7 rounded-full border-2 transition-transform hover:scale-110",
+                color === c && tool === 'pen' ? "border-primary scale-110" : "border-transparent",
+                tool === 'highlighter' && 'opacity-30 cursor-not-allowed'
+              )}
+              style={{ backgroundColor: c }}
+              aria-label={`Select color ${c}`}
+            />
+          ))}
+        </div>
       </div>
     </Card>
   );
