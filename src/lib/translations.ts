@@ -69,7 +69,7 @@ export const translations = {
     },
     weeklyPlan: {
       title: "Single Language",
-      price: "$4.99",
+      price: "$3.99",
       per: "/week",
       desc: "Master one language.",
       feat1: "Access to one chosen language",
@@ -79,7 +79,7 @@ export const translations = {
     },
     completePlan: {
       title: "Single Course",
-      price: "$49",
+      price: "$39",
       per: "/one-time",
       badge: "POPULAR",
       desc: "One-time payment for one full language course.",
@@ -91,7 +91,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "Survive Anywhere",
-      price: "$79",
+      price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access to ALL languages.",
@@ -291,7 +291,7 @@ export const translations = {
     },
     weeklyPlan: {
       title: "තනි භාෂාව",
-      price: "$4.99",
+      price: "$3.99",
       per: "/සතියකට",
       desc: "එක් භාෂාවක් ප්‍රගුණ කරන්න.",
       feat1: "තෝරාගත් එක් භාෂාවකට ප්‍රවේශය",
@@ -301,7 +301,7 @@ export const translations = {
     },
     completePlan: {
       title: "සම්පූර්ණ එක භාෂාවක්",
-      price: "$49",
+      price: "$39",
       per: "/එක් වරක්",
       badge: "ජනප්‍රිය",
       desc: "එක් සම්පූර්ණ භාෂා පාඨමාලාවක් සඳහා එක් වරක් ගෙවීම.",
@@ -313,7 +313,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "ඕනෑම තැනක ජීවත් වන්න",
-      price: "$79",
+      price: "$99",
       per: "/එක් වරක්",
       badge: "⭐ හොඳම වටිනාකම",
       desc: "සියලුම භාෂා සඳහා ජීවිත කාලය පුරාම ප්‍රවේශය සඳහා එක් වරක් ගෙවීම.",
@@ -513,7 +513,7 @@ export const translations = {
     },
     weeklyPlan: {
       title: "एकल भाषा",
-      price: "$4.99",
+      price: "$3.99",
       per: "/सप्ताह",
       desc: "एक भाषा में महारत हासिल करें।",
       feat1: "चुनी हुई एक भाषा तक पहुंच",
@@ -523,7 +523,7 @@ export const translations = {
     },
     completePlan: {
       title: "एकल कोर्स",
-      price: "$49",
+      price: "$39",
       per: "/एक बार",
       badge: "लोकप्रिय",
       desc: "एक पूर्ण भाषा पाठ्यक्रम के लिए एक बार का भुगतान।",
@@ -535,7 +535,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "कहीं भी जीवित रहें",
-      price: "$79",
+      price: "$99",
       per: "/एक बार",
       badge: "⭐ सर्वोत्तम मूल्य",
       desc: "सभी भाषाओं के लिए आजीवन पहुंच के लिए एक बार का भुगतान।",
@@ -735,7 +735,7 @@ export const translations = {
     },
     weeklyPlan: {
       title: "واحد زبان",
-      price: "$4.99",
+      price: "$3.99",
       per: "/ہفتہ",
       desc: "ایک زبان میں مہارت حاصل کریں۔",
       feat1: "منتخب کردہ ایک زبان تک رسائی",
@@ -745,7 +745,7 @@ export const translations = {
     },
     completePlan: {
       title: "واحد کورس",
-      price: "$49",
+      price: "$39",
       per: "/یک مشت",
       badge: "مقبول",
       desc: "ایک مکمل زبان کے کورس کے لیے یک مشت ادائیگی۔",
@@ -757,7 +757,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "کہیں بھی زندہ رہو",
-      price: "$79",
+      price: "$99",
       per: "/یک مشت",
       badge: "⭐ بہترین قیمت",
       desc: "تمام زبانوں کے لیے تاحیات رسائی کے لیے یک مشت ادائیگی۔",
@@ -949,7 +949,7 @@ export const translations = {
     },
     weeklyPlan: {
       title: "একক ভাষা",
-      price: "$4.99",
+      price: "$3.99",
       per: "/সপ্তাহ",
       desc: "একটি ভাষায় দক্ষতা অর্জন করুন।",
       feat1: "নির্বাচিত একটি ভাষায় অ্যাক্সেস",
@@ -959,7 +959,7 @@ export const translations = {
     },
     completePlan: {
       title: "একক কোর্স",
-      price: "$49",
+      price: "$39",
       per: "/এককালীন",
       badge: "জনপ্রিয়",
       desc: "একটি সম্পূর্ণ ভাষা কোর্সের জন্য এককালীন অর্থপ্রদান।",
@@ -971,7 +971,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "যেকোনো জায়গায় বেঁচে থাকুন",
-      price: "$79",
+      price: "$99",
       per: "/এককালীন",
       badge: "⭐ সেরা মূল্য",
       desc: "সমস্ত ভাষার জন্য আজীবন অ্যাক্সেসের জন্য এককালীন অর্থপ্রদান।",
@@ -1171,7 +1171,7 @@ export const translations = {
     },
     weeklyPlan: {
       title: "एकल भाषा",
-      price: "$4.99",
+      price: "$3.99",
       per: "/हप्ता",
       desc: "एक भाषामा महारत हासिल गर्नुहोस्।",
       feat1: "छानिएको एक भाषामा पहुँच",
@@ -1181,7 +1181,7 @@ export const translations = {
     },
     completePlan: {
       title: "एकल पाठ्यक्रम",
-      price: "$49",
+      price: "$39",
       per: "/एक पटक",
       badge: "लोकप्रिय",
       desc: "एक पूर्ण भाषा पाठ्यक्रमको लागि एक पटकको भुक्तानी।",
@@ -1193,7 +1193,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "जहाँ पनि बाँच्नुहोस्",
-      price: "$79",
+      price: "$99",
       per: "/एक पटक",
       badge: "⭐ उत्तम मूल्य",
       desc: "सबै भाषाहरूको लागि आजीवन पहुँचको लागि एक पटकको भुक्तानी।",
@@ -1407,7 +1407,7 @@ export const translations = {
     },
     completePlan: {
       title: "Complete Package",
-      price: "$49",
+      price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access.",
@@ -1419,7 +1419,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "Survive Anywhere",
-      price: "$79",
+      price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access to ALL languages.",
@@ -1633,7 +1633,7 @@ export const translations = {
     },
     completePlan: {
       title: "Complete Package",
-      price: "$49",
+      price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access.",
@@ -1645,7 +1645,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "Survive Anywhere",
-      price: "$79",
+      price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access to ALL languages.",
@@ -1859,7 +1859,7 @@ export const translations = {
     },
     completePlan: {
       title: "Complete Package",
-      price: "$49",
+      price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access.",
@@ -1871,7 +1871,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "Survive Anywhere",
-      price: "$79",
+      price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access to ALL languages.",
@@ -2085,7 +2085,7 @@ export const translations = {
     },
     completePlan: {
       title: "Complete Package",
-      price: "$49",
+      price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access.",
@@ -2097,7 +2097,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "Survive Anywhere",
-      price: "$79",
+      price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access to ALL languages.",
@@ -2311,7 +2311,7 @@ export const translations = {
     },
     completePlan: {
       title: "Complete Package",
-      price: "$49",
+      price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access.",
@@ -2323,7 +2323,7 @@ export const translations = {
     },
     lifetimePlan: {
       title: "Survive Anywhere",
-      price: "$79",
+      price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
       desc: "One-time payment for lifetime access to ALL languages.",
