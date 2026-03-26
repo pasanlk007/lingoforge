@@ -202,20 +202,45 @@ export default function LandingPage() {
         
         <section className="py-20 sm:py-24 bg-slate-900/50">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+              {/* Survival Bundle */}
               <Card className="flex flex-col border-2 border-green-500 bg-gradient-to-br from-green-900/30 to-slate-900 shadow-lg shadow-green-500/10">
                 <CardHeader>
-                  <Badge className="w-fit bg-green-500 text-green-950 font-bold mb-2">{t.path1Badge}</Badge>
+                  <Badge className="w-fit bg-green-500 text-green-950 font-bold mb-2">FREE TO START</Badge>
                   <div className="flex items-center gap-4">
-                    <span className="text-4xl">🌍</span>
-                    <CardTitle className="font-headline text-2xl font-bold">{t.path1Title}</CardTitle>
+                    <span className="text-4xl">🌱</span>
+                    <div>
+                      <CardTitle className="font-headline text-2xl font-bold">Survival Bundle</CardTitle>
+                      <p className="text-sm text-slate-400 mt-1">මේ ඉගෙනීමේ මාර්ගය</p>
+                    </div>
                   </div>
-                  <CardDescription className="pt-2 text-slate-300">{t.path1Desc}</CardDescription>
+                  <CardDescription className="pt-2 text-slate-300">Survive and open new opportunities.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between gap-4">
-                  <div>
-                    <p className="text-sm font-semibold text-slate-400">{t.pathDetails}</p>
-                    <p className="mt-2 text-sm bg-green-900/40 p-2 rounded-md text-slate-300 font-mono">"Bonjour • Merci • S'il vous plaît"</p>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-green-900/20">
+                      <span className="text-xl">🌍</span>
+                      <div>
+                        <p className="font-semibold text-sm">Survival Language Lessons</p>
+                        <p className="text-xs text-slate-400">12 weeks of essential daily phrases</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-green-900/20">
+                      <span className="text-xl">🔢</span>
+                      <div>
+                        <p className="font-semibold text-sm">Number Learning</p>
+                        <p className="text-xs text-slate-400">Time, money & transport numbers</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-green-900/20">
+                      <span className="text-xl">🔤</span>
+                      <div>
+                        <p className="font-semibold text-sm">Alphabet & Writing Practice</p>
+                        <p className="text-xs text-slate-400">Learn the script from scratch</p>
+                      </div>
+                    </div>
+                    <p className="text-xs text-green-400 font-semibold text-center pt-2">⏱ 10 minutes per day</p>
                   </div>
                   <Button asChild className="w-full bg-green-500 hover:bg-green-600 text-white font-bold">
                     <Link href="/dashboard">{t.startFree}</Link>
@@ -223,43 +248,58 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-              <Card className="flex flex-col bg-gradient-to-br from-blue-900/30 to-slate-900 border border-slate-700">
+              {/* Pro Path - Coming Soon */}
+              <Card className="flex flex-col border-2 border-purple-500/50 bg-gradient-to-br from-purple-900/20 to-slate-900 shadow-lg shadow-purple-500/10 relative overflow-hidden">
+                <div className="absolute top-4 right-4">
+                  <Badge className="bg-purple-500 text-white font-bold">COMING SOON</Badge>
+                </div>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <span className="text-4xl">🔤</span>
-                    <CardTitle className="font-headline text-2xl font-bold">{t.path2Title}</CardTitle>
+                    <span className="text-4xl">🏛️</span>
+                    <div>
+                      <CardTitle className="font-headline text-2xl font-bold">LingoForge Pro</CardTitle>
+                      <p className="text-sm text-purple-400 mt-1">Citizenship & Integration Track</p>
+                    </div>
                   </div>
-                  <CardDescription className="pt-2 text-slate-300">{t.path2Desc}</CardDescription>
+                  <CardDescription className="pt-2 text-slate-300">රටේ settle වෙන්න full preparation.</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1 flex flex-col justify-between gap-4">
-                   <div>
-                      <p className="text-sm font-semibold text-slate-400">{t.pathDetails}</p>
-                      <p className="mt-2 text-sm bg-blue-900/40 p-2 rounded-md text-slate-300 font-mono">"A B C • あ い う • 가 나 다"</p>
-                   </div>
-                  <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
-                    <Link href="/dashboard">{t.getStarted}</Link>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-purple-900/20">
+                      <span className="text-xl">🛂</span>
+                      <div>
+                        <p className="font-semibold text-sm">Citizenship Preparation</p>
+                        <p className="text-xs text-slate-400">Application process guidance</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-purple-900/20">
+                      <span className="text-xl">📜</span>
+                      <div>
+                        <p className="font-semibold text-sm">Legal Framework</p>
+                        <p className="text-xs text-slate-400">Rights, documents & procedures</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-purple-900/20">
+                      <span className="text-xl">🎓</span>
+                      <div>
+                        <p className="font-semibold text-sm">Exam Preparation</p>
+                        <p className="text-xs text-slate-400">Language & civic tests</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 p-2 rounded-md bg-purple-900/20">
+                      <span className="text-xl">✍️</span>
+                      <div>
+                        <p className="font-semibold text-sm">Grammar & Culture</p>
+                        <p className="text-xs text-slate-400">Moderate level + daily AI lessons</p>
+                      </div>
+                    </div>
+                  </div>
+                  <Button disabled className="w-full bg-purple-500/50 text-white font-bold cursor-not-allowed">
+                    🔒 Coming Soon
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="flex flex-col bg-gradient-to-br from-purple-900/30 to-slate-900 border border-slate-700">
-                <CardHeader>
-                  <div className="flex items-center gap-4">
-                    <span className="text-4xl">🔢</span>
-                    <CardTitle className="font-headline text-2xl font-bold">{t.path3Title}</CardTitle>
-                  </div>
-                  <CardDescription className="pt-2 text-slate-300">{t.path3Desc}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1 flex flex-col justify-between gap-4">
-                  <div>
-                    <p className="text-sm font-semibold text-slate-400">{t.pathDetails}</p>
-                    <p className="mt-2 text-sm bg-purple-900/40 p-2 rounded-md text-slate-300 font-mono">"1 2 3 • Ein Zwei Drei • 一 二 三"</p>
-                  </div>
-                  <Button asChild variant="secondary" className="w-full bg-slate-700 hover:bg-slate-600">
-                     <Link href="/dashboard">{t.getStarted}</Link>
-                  </Button>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
