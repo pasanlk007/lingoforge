@@ -449,6 +449,13 @@ function DashboardContent({ user }: { user: User }) {
                         </div>
                       ))}
                     </CardContent>
+                    <div className="p-4 pt-0">
+                      <a href="/dashboard/lesson-map">
+                        <button className="w-full py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2">
+                          🗺️ Explore Lesson Map
+                        </button>
+                      </a>
+                    </div>
                   </Card>
                 </div>
               </div>
