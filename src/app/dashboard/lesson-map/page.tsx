@@ -185,6 +185,8 @@ function LessonMapPage() {
   const [selectedLesson, setSelectedLesson] = useState<LessonNode | null>(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
+  const nodeColors = ["#FF6B6B", "#FF9F43", "#FECA57", "#48DBFB", "#FF9FF3", "#54A0FF", "#5F27CD", "#00D2D3", "#1DD1A1"];
+
   const userProfileRef = useMemoFirebase(() => user && firestore ? doc(firestore, "userProfiles", user.uid) : null, [user, firestore]);
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
@@ -215,38 +217,57 @@ function LessonMapPage() {
 
         <div className="relative w-full">
           {/* Center line */}
-          <div className="absolute left-1/2 top-8 bottom-8 w-1 -translate-x-1/2 bg-border/50 rounded-full" />
-          
-          <div className="space-y-4">
-          {proPathLessons.map((lesson, index) => (
-            <div key={lesson.day} className="relative w-full flex items-center justify-center">
-              <div className={cn("w-1/2 flex", index % 2 === 0 ? 'justify-end pr-10' : 'justify-start pl-10')}>
-                <button
-                  onClick={() => handleNodeClick(lesson)}
-                  disabled={!lesson.unlocked}
-                  className={cn(
-                    "w-full max-w-xs p-4 rounded-lg border text-left transition-all hover:border-primary",
-                    lesson.unlocked ? "bg-card cursor-pointer" : "bg-card/50 text-muted-foreground cursor-not-allowed"
-                  )}
-                >
-                  <p className="text-sm font-bold">Day {lesson.day}</p>
-                  <p className="text-xs">{lesson.topic}</p>
-                </button>
-              </div>
-              {/* Node on the center line */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                <div
-                  onClick={() => handleNodeClick(lesson)}
-                  className={cn(
-                    "h-14 w-14 rounded-full flex items-center justify-center border-4",
-                    lesson.unlocked ? "bg-card border-primary cursor-pointer" : "bg-muted border-border cursor-not-allowed"
-                  )}
-                >
-                  <span className="text-2xl">{lesson.icon}</span>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="absolute left-1/2 top-8 bottom-8 w-px -translate-x-1/2 border-l-2 border-dashed border-border/30" />
+
+          {/* Lessons */}
+          <div className="space-y-1">
+            {proPathLessons.map((lesson, index) => {
+                const color = nodeColors[index % nodeColors.length];
+                const isCardOnLeft = index % 2 === 0;
+
+                return (
+                    <div key={lesson.day} className={cn("relative flex items-center py-4", isCardOnLeft ? 'justify-start' : 'justify-end')}>
+                        {/* Card */}
+                        <div className="w-1/2 px-8">
+                            <button
+                                onClick={() => handleNodeClick(lesson)}
+                                disabled={!lesson.unlocked}
+                                className={cn(
+                                    "w-full p-4 rounded-lg border-t-2 border-b-2 transition-shadow duration-300",
+                                    isCardOnLeft ? 'text-left border-l-4' : 'text-right border-r-4',
+                                    lesson.unlocked 
+                                        ? "bg-card cursor-pointer hover:shadow-lg" 
+                                        : "bg-card/50 text-muted-foreground cursor-not-allowed border-border"
+                                )}
+                                style={lesson.unlocked ? {
+                                    borderColor: color,
+                                    boxShadow: `0 0 20px ${color}15`
+                                } : {}}
+                            >
+                                <p className="font-bold" style={lesson.unlocked ? { color } : {}}>Day {lesson.day}</p>
+                                <p className="text-sm mt-1">{lesson.topic}</p>
+                            </button>
+                        </div>
+                        {/* Node on the center line */}
+                        <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
+                            <div
+                                onClick={() => handleNodeClick(lesson)}
+                                className={cn(
+                                    "h-16 w-16 rounded-full flex items-center justify-center border-4 transition-transform",
+                                    lesson.unlocked ? "cursor-pointer hover:scale-105" : "bg-muted border-border cursor-not-allowed"
+                                )}
+                                style={lesson.unlocked ? {
+                                    borderColor: color,
+                                    backgroundColor: `${color}33`,
+                                } : {}}
+                            >
+                                <span className="text-3xl">{lesson.icon}</span>
+                            </div>
+        
+                        </div>
+                    </div>
+                );
+            })}
           </div>
         </div>
         
@@ -292,4 +313,3 @@ function LessonMapPage() {
 }
 
 export default LessonMapPage;
-
