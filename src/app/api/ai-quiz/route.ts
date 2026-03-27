@@ -55,7 +55,7 @@ Instructions:
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-3-haiku-20240307', // Using Haiku as requested (mapping to latest version)
+        model: 'claude-haiku-4-5-20251001', // Using Haiku as requested (mapping to latest version)
         system: systemPrompt,
         messages: [{ role: 'user', content: userPrompt }],
         max_tokens: 1024,
