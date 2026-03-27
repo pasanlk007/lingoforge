@@ -359,22 +359,64 @@ function DashboardContent({ user }: { user: User }) {
               </Card>
 
               <div>
-                <h2 className="text-2xl font-bold tracking-tight mb-4">
-                  {t.explorePaths}
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {availablePaths.map((path) => (
-                    <PathCard
-                      key={path.id}
-                      id={path.id}
-                      icon={path.icon}
-                      title={path.title}
-                      description={path.description}
-                      details={path.details}
-                      language={targetLanguage}
-                    />
-                  ))}
+              <div>
+                <h2 className="text-2xl font-bold tracking-tight mb-4">{t.explorePaths}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Card className="flex flex-col border-2 border-green-500/50 bg-gradient-to-br from-green-900/20 to-card">
+                    <CardHeader>
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl">🌱</span>
+                        <div>
+                          <CardTitle className="text-xl">Survival Bundle</CardTitle>
+                          <p className="text-xs text-muted-foreground mt-1">10 minutes per day</p>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-1 space-y-2">
+                      {availablePaths.map((path) => (
+                        <Link key={path.id} href={`/${path.id}`} className="flex items-center gap-3 p-2 rounded-md hover:bg-green-900/20 transition-colors">
+                          <span className="text-xl">{path.icon}</span>
+                          <div>
+                            <p className="font-semibold text-sm">{path.title}</p>
+                            <p className="text-xs text-muted-foreground">{path.description}</p>
+                          </div>
+                          <ChevronRight className="h-4 w-4 ml-auto text-muted-foreground" />
+                        </Link>
+                      ))}
+                    </CardContent>
+                  </Card>
+                  <Card className="flex flex-col border-2 border-purple-500/30 bg-gradient-to-br from-purple-900/10 to-card">
+                    <CardHeader>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <span className="text-3xl">🏛️</span>
+                          <div>
+                            <CardTitle className="text-xl">LingoForge Pro</CardTitle>
+                            <p className="text-xs text-purple-400 mt-1">Citizenship & Integration</p>
+                          </div>
+                        </div>
+                        <Badge className="bg-purple-500/20 text-purple-300 border border-purple-500/30">Coming Soon</Badge>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex-1 space-y-2">
+                      {[
+                        { icon: "🛂", title: "Citizenship Prep", desc: "Application guidance" },
+                        { icon: "📜", title: "Legal Framework", desc: "Rights & documents" },
+                        { icon: "🎓", title: "Exam Preparation", desc: "Language & civic tests" },
+                        { icon: "✍️", title: "Daily AI Lessons", desc: "Grammar & culture" },
+                      ].map((item) => (
+                        <div key={item.title} className="flex items-center gap-3 p-2 rounded-md opacity-60">
+                          <span className="text-xl">{item.icon}</span>
+                          <div>
+                            <p className="font-semibold text-sm">{item.title}</p>
+                            <p className="text-xs text-muted-foreground">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </CardContent>
+                  </Card>
                 </div>
+              </div>
               </div>
             </div>
 
