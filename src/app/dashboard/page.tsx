@@ -409,13 +409,13 @@ function DashboardContent({ user }: { user: User }) {
                     </CardHeader>
                     <CardContent className="flex-1 space-y-2">
                       {availablePaths.map((path) => (
-                        <Link key={path.id} href={`/${path.id}`} className="flex items-center gap-3 p-2 rounded-md hover:bg-green-900/20 transition-colors">
+                        <Link key={path.id} href={`/${path.id}`} className="flex items-center gap-3 p-2 rounded-md transition-colors group">
                           <span className="text-xl">{path.icon}</span>
                           <div>
-                            <p className="font-semibold text-sm">{path.title}</p>
+                            <p className="font-semibold text-sm transition-colors group-hover:text-primary">{path.title}</p>
                             <p className="text-xs text-muted-foreground">{path.description}</p>
                           </div>
-                          <ChevronRight className="h-4 w-4 ml-auto text-muted-foreground" />
+                          <ChevronRight className="h-4 w-4 ml-auto text-muted-foreground transition-colors group-hover:text-primary" />
                         </Link>
                       ))}
                     </CardContent>
