@@ -265,8 +265,8 @@ function DashboardContent({ user }: { user: User }) {
       <Navigation />
       <main className="flex-1">
         <div className="container mx-auto py-8 sm:py-12 px-4">
-          <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} />
-          <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} />
+          <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
+          <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
           <header className="mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
               {t.welcome}, {displayName}!

@@ -8,9 +8,10 @@ import Link from 'next/link';
 interface TrialEndModalProps {
   trialDaysUsed: number;
   subscriptionActive: boolean;
+  userEmail?: string | null;
 }
 
-export function TrialEndModal({ trialDaysUsed, subscriptionActive }: TrialEndModalProps) {
+export function TrialEndModal({ trialDaysUsed, subscriptionActive, userEmail }: TrialEndModalProps) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {

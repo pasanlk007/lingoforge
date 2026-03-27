@@ -8,12 +8,14 @@ import Link from 'next/link';
 interface TrialEndBannerProps {
   trialDaysUsed: number;
   subscriptionActive: boolean;
+  userEmail?: string | null;
 }
 
-export function TrialEndBanner({ trialDaysUsed, subscriptionActive }: TrialEndBannerProps) {
+export function TrialEndBanner({ trialDaysUsed, subscriptionActive, userEmail }: TrialEndBannerProps) {
   const [dismissed, setDismissed] = useState(false);
 
-  if (subscriptionActive || dismissed) return null;
+  const ADMIN_EMAILS = ['pasan.lankathilakadpl@gmail.com'];
+  if (subscriptionActive || dismissed || ADMIN_EMAILS.includes((userEmail || '').toLowerCase())) return null;
 
   // Show warning on day 2
   if (trialDaysUsed === 2) {
