@@ -7,9 +7,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Hafta 1, Gün 1: Temel Selamlaşmalar",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
@@ -17,473 +17,319 @@
         {
           "id": "w1_1_1",
           "target": "Merhaba",
-          "phonetic": "Merhaba",
+          "phonetic": "Mehr-hah-bah",
           "native_meaning": "Hello",
           "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "example_sentence_target": "Merhaba, nasılsın?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Mehr-hah-bah, nah-suhl-suhn?"
         },
         {
           "id": "w1_1_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "target": "Günaydın",
+          "phonetic": "Goon-eye-duhn",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "Günaydın! Kahve ister misin?",
+          "example_sentence_native": "Good morning! Would you like coffee?",
+          "example_sentence_phonetic": "Goon-eye-duhn! Kah-veh iss-ter mi-sin?"
         },
         {
           "id": "w1_1_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "İyi akşamlar",
+          "phonetic": "Ee-yee ak-shahm-lar",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "İyi akşamlar, görüşürüz.",
+          "example_sentence_native": "Good evening, see you later.",
+          "example_sentence_phonetic": "Ee-yee ak-shahm-lar, go-roosh-oo-rooz."
         },
         {
           "id": "w1_1_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "Nasılsın?",
+          "phonetic": "Nah-suhl-suhn?",
+          "native_meaning": "How are you?",
+          "english": "How are you? (informal)",
+          "example_sentence_target": "Merhaba Ali, nasılsın?",
+          "example_sentence_native": "Hello Ali, how are you?",
+          "example_sentence_phonetic": "Mehr-hah-bah Ah-li, nah-suhl-suhn?"
         },
         {
           "id": "w1_1_5",
-          "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "target": "İyiyim",
+          "phonetic": "Ee-yee-yim",
+          "native_meaning": "I'm fine",
+          "english": "I'm fine",
+          "example_sentence_target": "İyiyim, teşekkür ederim.",
+          "example_sentence_native": "I'm fine, thank you.",
+          "example_sentence_phonetic": "Ee-yee-yim, tesh-ek-kur ed-er-im."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Two friends meeting in the morning.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Merhaba!",
-              "native": "Hello!",
-              "phonetic": "Merhaba"
+              "target": "Günaydın, Ayşe.",
+              "native": "Good morning, Ayşe.",
+              "phonetic": "Goon-eye-duhn, Eye-sheh."
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
+              "target": "Günaydın, Mehmet. Nasılsın?",
+              "native": "Good morning, Mehmet. How are you?",
+              "phonetic": "Goon-eye-duhn, Meh-met. Nah-suhl-suhn?"
             },
             {
               "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
+              "target": "İyiyim, teşekkürler. Sen nasılsın?",
+              "native": "I'm fine, thanks. How are you?",
+              "phonetic": "Ee-yee-yim, tesh-ek-kur-ler. Sen nah-suhl-suhn?"
             },
             {
               "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            },
-            {
-              "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "Ben de iyiyim.",
+              "native": "I'm fine too.",
+              "phonetic": "Ben deh ee-yee-yim."
             }
           ]
         }
       ],
       "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "Merhaba", "native": "Hello" },
+          { "id": "m1_1_2", "target": "Günaydın", "native": "Good morning" },
+          { "id": "m1_1_3", "target": "Nasılsın?", "native": "How are you?" },
+          { "id": "m1_1_4", "target": "İyiyim", "native": "I'm fine" }
+        ],
         "fillBlanks": [
           {
             "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Turkish",
+            "sentence": "___, nasılsın?",
             "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
-            "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
+            "hint": "Greeting someone."
           }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "In Turkey, it's common to greet shopkeepers and people you interact with throughout the day with 'Merhaba' or 'İyi günler' (Have a good day).",
+      "pronunciation_tip": "The Turkish 'ı' (undotted i) sounds like the 'uh' sound in 'duh'. It's a sound made at the back of your throat.",
       "progress": {
         "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
+        "streak_bonus": 10,
+        "badge": "W1D1-Turkish-Greetings"
       }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 2: Polite Expressions",
+      "title_native": "Hafta 1, Gün 2: Nezaket İfadeleri",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_2_1",
-          "target": "Merhaba",
-          "phonetic": "Merhaba",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "target": "Teşekkür ederim",
+          "phonetic": "Tesh-ek-kur ed-er-im",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Yardımın için teşekkür ederim.",
+          "example_sentence_native": "Thank you for your help.",
+          "example_sentence_phonetic": "Yar-duh-muhn ich-in tesh-ek-kur ed-er-im."
         },
         {
           "id": "w1_2_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "target": "Rica ederim",
+          "phonetic": "Ree-jah ed-er-im",
+          "native_meaning": "You're welcome",
+          "english": "You're welcome",
+          "example_sentence_target": "Rica ederim, ne demek.",
+          "example_sentence_native": "You're welcome, it's nothing.",
+          "example_sentence_phonetic": "Ree-jah ed-er-im, neh dem-ek."
         },
         {
           "id": "w1_2_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "Lütfen",
+          "phonetic": "Loot-fen",
+          "native_meaning": "Please",
+          "english": "Please",
+          "example_sentence_target": "Bir su, lütfen.",
+          "example_sentence_native": "One water, please.",
+          "example_sentence_phonetic": "Bir soo, loot-fen."
         },
         {
           "id": "w1_2_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "Pardon",
+          "phonetic": "Par-don",
+          "native_meaning": "Excuse me / Pardon",
+          "english": "Excuse me / Pardon",
+          "example_sentence_target": "Pardon, bakar mısınız?",
+          "example_sentence_native": "Excuse me, can you look (e.g. to a waiter)?",
+          "example_sentence_phonetic": "Par-don, bah-kar muh-suh-nuhz?"
         },
         {
           "id": "w1_2_5",
           "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "phonetic": "Oh-zur dee-ler-im",
+          "native_meaning": "I'm sorry / I apologize",
+          "english": "I'm sorry / I apologize",
+          "example_sentence_target": "Geç kaldığım için özür dilerim.",
+          "example_sentence_native": "I'm sorry for being late.",
+          "example_sentence_phonetic": "Gech kal-duh-uhm ich-in oh-zur dee-ler-im."
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "In a cafe.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Merhaba!",
-              "native": "Hello!",
-              "phonetic": "Merhaba"
+              "target": "Pardon, bir kahve lütfen.",
+              "native": "Excuse me, one coffee please.",
+              "phonetic": "Par-don, bir kah-veh loot-fen."
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
+              "target": "Tabii, hemen.",
+              "native": "Of course, right away.",
+              "phonetic": "Tah-bee, hem-en."
             },
             {
               "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
+              "target": "Teşekkür ederim.",
+              "native": "Thank you.",
+              "phonetic": "Tesh-ek-kur ed-er-im."
             },
             {
               "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            },
-            {
-              "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "Rica ederim.",
+              "native": "You're welcome.",
+              "phonetic": "Ree-jah ed-er-im."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Turkish",
-            "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
+            "id": "ss1_2_1",
+            "scrambled": ["ederim", "teşekkür"],
+            "correct": "teşekkür ederim",
+            "nativeHint": "How to say 'Thank you'."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc1_2_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
+            "question": "How do you say 'Please'?",
+            "options": ["Pardon", "Lütfen", "Evet", "Hayır"],
             "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
+            "explanation": "Lütfen is the Turkish word for Please."
           }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "'Teşekkürler' is a shorter, more common way to say 'Thanks' among friends. 'Teşekkür ederim' is slightly more formal and complete.",
+      "pronunciation_tip": "The Turkish 'ş' sounds like 'sh' in 'shoe'. The 'ç' sounds like 'ch' in 'church'.",
       "progress": {
         "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
+        "streak_bonus": 10,
+        "badge": "W1D2-Turkish-Politeness"
       }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 3: Introductions",
+      "title_native": "Hafta 1, Gün 3: Tanışma",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_3_1",
-          "target": "Merhaba",
-          "phonetic": "Merhaba",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "target": "Benim adım...",
+          "phonetic": "Ben-im ah-duhm...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Benim adım John.",
+          "example_sentence_native": "My name is John.",
+          "example_sentence_phonetic": "Ben-im ah-duhm John."
         },
         {
           "id": "w1_3_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "target": "Sizin adınız ne?",
+          "phonetic": "Siz-in ah-duh-nuhz neh?",
+          "native_meaning": "What is your name?",
+          "english": "What is your name? (formal)",
+          "example_sentence_target": "Pardon, sizin adınız ne?",
+          "example_sentence_native": "Excuse me, what is your name?",
+          "example_sentence_phonetic": "Par-don, siz-in ah-duh-nuhz neh?"
         },
         {
           "id": "w1_3_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "Memnun oldum",
+          "phonetic": "Mem-noon ol-dum",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Tanıştığımıza memnun oldum.",
+          "example_sentence_native": "I'm pleased to have met you.",
+          "example_sentence_phonetic": "Tan-ish-tuh-uh-muh-za mem-noon ol-dum."
         },
         {
           "id": "w1_3_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "Nerelisiniz?",
+          "phonetic": "Neh-reh-li-si-niz?",
+          "native_meaning": "Where are you from?",
+          "english": "Where are you from? (formal)",
+          "example_sentence_target": "Siz nerelisiniz?",
+          "example_sentence_native": "Where are you from?",
+          "example_sentence_phonetic": "Siz neh-reh-li-si-niz?"
         },
         {
           "id": "w1_3_5",
-          "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "target": "Ben ...liyim",
+          "phonetic": "Ben ...lee-yim",
+          "native_meaning": "I am from...",
+          "english": "I am from...",
+          "example_sentence_target": "Ben Amerikalıyım.",
+          "example_sentence_native": "I am from America.",
+          "example_sentence_phonetic": "Ben Ah-meri-kah-luh-yuhm."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "Two people meeting for the first time.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Merhaba!",
-              "native": "Hello!",
-              "phonetic": "Merhaba"
+              "target": "Merhaba, benim adım Zeynep.",
+              "native": "Hello, my name is Zeynep.",
+              "phonetic": "Mehr-hah-bah, ben-im ah-duhm Zey-nep."
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
+              "target": "Merhaba, ben de David. Memnun oldum.",
+              "native": "Hello, I'm David. Nice to meet you.",
+              "phonetic": "Mehr-hah-bah, ben deh David. Mem-noon ol-dum."
             },
             {
               "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
+              "target": "Ben de memnun oldum. Nerelisiniz, David?",
+              "native": "Nice to meet you too. Where are you from, David?",
+              "phonetic": "Ben deh mem-noon ol-dum. Neh-reh-li-si-niz, David?"
             },
             {
               "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            },
-            {
-              "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "İngiltereliyim. Siz?",
+              "native": "I'm from England. And you?",
+              "phonetic": "In-gil-tere-li-yim. Siz?"
             }
           ]
         }
@@ -492,658 +338,345 @@
         "fillBlanks": [
           {
             "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Turkish",
-            "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
+            "sentence": "Benim ___ Zeynep.",
+            "answer": "adım",
+            "hint": "Word for 'name'."
           }
         ],
         "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
-            "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
-          }
+          { "id": "m1_3_1", "target": "Memnun oldum", "native": "Nice to meet you" },
+          { "id": "m1_3_2", "target": "Nerelisiniz?", "native": "Where are you from?" }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Turkish has formal ('siz') and informal ('sen') ways of addressing people. When meeting someone for the first time, especially if they are older, it's safer to use the formal 'siz'.",
+      "pronunciation_tip": "Turkish features 'vowel harmony'. This means vowels in a word are often of a similar type (e.g., all front vowels or all back vowels). You'll notice this pattern as you learn more words.",
       "progress": {
         "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
+        "streak_bonus": 10,
+        "badge": "W1D3-Turkish-Introductions"
       }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 4: Yes, No & Understanding",
+      "title_native": "Hafta 1, Gün 4: Evet, Hayır ve Anlama",
+      "theme": "Basic Responses",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_4_1",
-          "target": "Merhaba",
-          "phonetic": "Merhaba",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "target": "Evet",
+          "phonetic": "Ev-et",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Türkçe biliyor musunuz? Evet, biraz.",
+          "example_sentence_native": "Do you know Turkish? Yes, a little.",
+          "example_sentence_phonetic": "Turk-cheh bil-i-yor mu-su-nuz? Ev-et, bir-az."
         },
         {
           "id": "w1_4_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "target": "Hayır",
+          "phonetic": "Hah-yuhr",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Hayır, istemiyorum.",
+          "example_sentence_native": "No, I don't want it.",
+          "example_sentence_phonetic": "Hah-yuhr, iss-tem-i-yo-rum."
         },
         {
           "id": "w1_4_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "Anlamadım",
+          "phonetic": "An-lah-mah-duhm",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Pardon, anlamadım.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "Par-don, an-lah-mah-duhm."
         },
         {
           "id": "w1_4_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "Bu ne?",
+          "phonetic": "Boo neh?",
+          "native_meaning": "What is this?",
+          "english": "What is this?",
+          "example_sentence_target": "Pardon, bu ne?",
+          "example_sentence_native": "Excuse me, what is this?",
+          "example_sentence_phonetic": "Par-don, boo neh?"
         },
         {
           "id": "w1_4_5",
-          "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "target": "Tekrar eder misiniz?",
+          "phonetic": "Tek-rar ed-er mi-si-niz?",
+          "native_meaning": "Can you repeat?",
+          "english": "Can you repeat? (formal)",
+          "example_sentence_target": "Lütfen tekrar eder misiniz?",
+          "example_sentence_native": "Can you repeat, please?",
+          "example_sentence_phonetic": "Loot-fen tek-rar ed-er mi-si-niz?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "A tourist at a market.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Merhaba!",
-              "native": "Hello!",
-              "phonetic": "Merhaba"
+              "target": "Merhaba, bu ne?",
+              "native": "Hello, what is this?",
+              "phonetic": "Mehr-hah-bah, boo neh?"
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
+              "target": "Bu, lokum.",
+              "native": "This is Turkish delight.",
+              "phonetic": "Boo, lo-koom."
             },
             {
               "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
+              "target": "Lokum? Anlamadım.",
+              "native": "Lokum? I don't understand.",
+              "phonetic": "Lo-koom? An-lah-mah-duhm."
             },
             {
               "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            },
-            {
-              "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "Tatlı. Turkish delight.",
+              "native": "Sweet. Turkish delight.",
+              "phonetic": "Tat-luh. Turkish delight."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Turkish",
-            "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
-            "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
+            "question": "What does 'Hayır' mean?",
+            "options": ["Yes", "Maybe", "No", "Please"],
+            "correct": 2,
+            "explanation": "'Hayır' means No in Turkish."
           }
+        ],
+        "sentenceScramble": [
+            {
+                "id": "ss1_4_1",
+                "scrambled": ["ne", "bu", "?"],
+                "correct": "bu ne ?",
+                "nativeHint": "Asking what something is."
+            }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "A slight upward nod of the head can also mean 'no' in Turkey, which can sometimes be confusing for foreigners. A clear 'evet' or 'hayır' is always best.",
+      "pronunciation_tip": "The 'ğ' (soft g) in Turkish is usually silent. It lengthens the preceding vowel. For example, 'dağ' (mountain) is pronounced like 'daa'.",
       "progress": {
         "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
+        "streak_bonus": 10,
+        "badge": "W1D4-Turkish-Responses"
       }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 5: Saying Goodbye",
+      "title_native": "Hafta 1, Gün 5: Vedalaşma",
+      "theme": "Farewells",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_5_1",
-          "target": "Merhaba",
-          "phonetic": "Merhaba",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "target": "Hoşça kal",
+          "phonetic": "Hosh-cha kal",
+          "native_meaning": "Goodbye (said by person staying)",
+          "english": "Goodbye (said by person staying)",
+          "example_sentence_target": "Ben gidiyorum, hoşça kal.",
+          "example_sentence_native": "I'm going, goodbye.",
+          "example_sentence_phonetic": "Ben gid-i-yo-rum, hosh-cha kal."
         },
         {
           "id": "w1_5_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "target": "Güle güle",
+          "phonetic": "Goo-leh goo-leh",
+          "native_meaning": "Goodbye (said by person leaving)",
+          "english": "Goodbye (said by person leaving)",
+          "example_sentence_target": "Tamam, güle güle.",
+          "example_sentence_native": "Okay, goodbye.",
+          "example_sentence_phonetic": "Ta-mam, goo-leh goo-leh."
         },
         {
           "id": "w1_5_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "Görüşürüz",
+          "phonetic": "Go-roosh-oo-rooz",
+          "native_meaning": "See you later",
+          "english": "See you later",
+          "example_sentence_target": "Yarın görüşürüz.",
+          "example_sentence_native": "See you tomorrow.",
+          "example_sentence_phonetic": "Ya-ruhn go-roosh-oo-rooz."
         },
         {
           "id": "w1_5_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "İyi günler",
+          "phonetic": "Ee-yee goon-ler",
+          "native_meaning": "Have a good day",
+          "english": "Have a good day",
+          "example_sentence_target": "İyi günler dilerim.",
+          "example_sentence_native": "I wish you a good day.",
+          "example_sentence_phonetic": "Ee-yee goon-ler di-ler-im."
         },
         {
           "id": "w1_5_5",
-          "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "target": "İyi geceler",
+          "phonetic": "Ee-yee geh-jeh-ler",
+          "native_meaning": "Good night",
+          "english": "Good night",
+          "example_sentence_target": "İyi geceler, tatlı rüyalar.",
+          "example_sentence_native": "Good night, sweet dreams.",
+          "example_sentence_phonetic": "Ee-yee geh-jeh-ler, tat-luh roo-ya-lar."
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "Two colleagues leaving work.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Merhaba!",
-              "native": "Hello!",
-              "phonetic": "Merhaba"
+              "target": "Ben çıkıyorum. İyi akşamlar.",
+              "native": "I'm leaving. Have a good evening.",
+              "phonetic": "Ben chik-i-yo-rum. Ee-yee ak-sham-lar."
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
-            },
-            {
-              "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
-            },
-            {
-              "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            },
-            {
-              "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "Tamam, sana da. Yarın görüşürüz.",
+              "native": "Okay, you too. See you tomorrow.",
+              "phonetic": "Ta-mam, san-a da. Ya-ruhn go-roosh-oo-rooz."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Turkish",
-            "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
-            "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
-          }
+          { "id": "m1_5_1", "target": "Görüşürüz", "native": "See you later" },
+          { "id": "m1_5_2", "target": "İyi geceler", "native": "Good night" },
+          { "id": "m1_5_3", "target": "Hoşça kal", "native": "Goodbye (said by person staying)" },
+          { "id": "m1_5_4", "target": "Güle güle", "native": "Goodbye (said by person leaving)" }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "The person leaving says 'Hoşça kal' (Stay well), and the person who is staying replies with 'Güle güle' (Go with a smile). It's a key conversational exchange.",
+      "pronunciation_tip": "Pay attention to the front rounded vowels 'ö' and 'ü'. 'ö' is like the 'u' in 'burn' but with rounded lips. 'ü' is like the 'ee' in 'see' but with lips pursed as if to whistle.",
       "progress": {
         "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
+        "streak_bonus": 10,
+        "badge": "W1D5-Turkish-Farewells"
       }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 6: Numbers 1-5",
+      "title_native": "Hafta 1, Gün 6: Sayılar 1-5",
+      "theme": "Basic Numbers",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_6_1",
-          "target": "Merhaba",
-          "phonetic": "Merhaba",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "target": "Bir",
+          "phonetic": "Beer",
+          "native_meaning": "One",
+          "english": "One",
+          "example_sentence_target": "Bir elma, lütfen.",
+          "example_sentence_native": "One apple, please.",
+          "example_sentence_phonetic": "Beer el-ma, loot-fen."
         },
         {
           "id": "w1_6_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "target": "İki",
+          "phonetic": "Icky",
+          "native_meaning": "Two",
+          "english": "Two",
+          "example_sentence_target": "İki bilet istiyorum.",
+          "example_sentence_native": "I want two tickets.",
+          "example_sentence_phonetic": "Icky bil-et iss-ti-yo-rum."
         },
         {
           "id": "w1_6_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "Üç",
+          "phonetic": "Ooch",
+          "native_meaning": "Three",
+          "english": "Three",
+          "example_sentence_target": "Saat üç.",
+          "example_sentence_native": "It's three o'clock.",
+          "example_sentence_phonetic": "Sa-at ooch."
         },
         {
           "id": "w1_6_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "Dört",
+          "phonetic": "Dort",
+          "native_meaning": "Four",
+          "english": "Four",
+          "example_sentence_target": "Dört kişi var.",
+          "example_sentence_native": "There are four people.",
+          "example_sentence_phonetic": "Dort kish-i var."
         },
         {
           "id": "w1_6_5",
-          "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "target": "Beş",
+          "phonetic": "Besh",
+          "native_meaning": "Five",
+          "english": "Five",
+          "example_sentence_target": "Beş lira.",
+          "example_sentence_native": "Five lira.",
+          "example_sentence_phonetic": "Besh lee-ra."
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "Ordering items.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Merhaba!",
-              "native": "Hello!",
-              "phonetic": "Merhaba"
+              "target": "İki çay, lütfen.",
+              "native": "Two teas, please.",
+              "phonetic": "Icky chai, loot-fen."
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
-            },
-            {
-              "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
-            },
-            {
-              "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            },
-            {
-              "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "Hemen. Beş lira.",
+              "native": "Right away. Five lira.",
+              "phonetic": "Hem-en. Besh lee-ra."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Turkish",
-            "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
-            "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
-          }
+          { "id": "m1_6_1", "target": "Bir", "native": "One" },
+          { "id": "m1_6_2", "target": "İki", "native": "Two" },
+          { "id": "m1_6_3", "target": "Üç", "native": "Three" },
+          { "id": "m1_6_4", "target": "Dört", "native": "Four" },
+          { "id": "m1_6_5", "target": "Beş", "native": "Five" }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "When you specify a number before a noun in Turkish, the noun does not become plural. For example, 'iki elma' (two apple), not 'iki elmalar'.",
+      "pronunciation_tip": "The 'ü' in 'üç' is a front vowel. To make it, say 'ee' and then round your lips. The 'ö' in 'dört' is also a front vowel; say 'eh' and round your lips.",
       "progress": {
         "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
+        "streak_bonus": 10,
+        "badge": "W1D6-Turkish-Numbers"
       }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 7: Weekly Review",
+      "title_native": "Hafta 1, Gün 7: Haftalık Tekrar",
+      "theme": "Review",
       "path": "survival",
       "targetLanguage": "Turkish",
       "nativeLanguage": "English",
@@ -1151,95 +684,88 @@
         {
           "id": "w1_7_1",
           "target": "Merhaba",
-          "phonetic": "Merhaba",
+          "phonetic": "Mehr-hah-bah",
           "native_meaning": "Hello",
           "english": "Hello",
-          "example_sentence_target": "Merhaba.",
-          "example_sentence_native": "Hello."
+          "example_sentence_target": "Merhaba, benim adım Elif.",
+          "example_sentence_native": "Hello, my name is Elif.",
+          "example_sentence_phonetic": "Mehr-hah-bah, ben-im ah-duhm El-if."
         },
         {
           "id": "w1_7_2",
-          "target": "Teşekkürler",
-          "phonetic": "Teşekkürler",
+          "target": "Teşekkür ederim",
+          "phonetic": "Tesh-ek-kur ed-er-im",
           "native_meaning": "Thank you",
           "english": "Thank you",
-          "example_sentence_target": "Teşekkürler.",
-          "example_sentence_native": "Thank you."
+          "example_sentence_target": "Çok teşekkür ederim.",
+          "example_sentence_native": "Thank you very much.",
+          "example_sentence_phonetic": "Chok tesh-ek-kur ed-er-im."
         },
         {
           "id": "w1_7_3",
-          "target": "Hoşçakal",
-          "phonetic": "Hoşçakal",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "Hoşçakal.",
-          "example_sentence_native": "Goodbye."
+          "target": "Lütfen",
+          "phonetic": "Loot-fen",
+          "native_meaning": "Please",
+          "english": "Please",
+          "example_sentence_target": "Hesap, lütfen.",
+          "example_sentence_native": "The bill, please.",
+          "example_sentence_phonetic": "Hes-ap, loot-fen."
         },
         {
           "id": "w1_7_4",
-          "target": "Lütfen",
-          "phonetic": "Lütfen",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Lütfen.",
-          "example_sentence_native": "Please."
+          "target": "Görüşürüz",
+          "phonetic": "Go-roosh-oo-rooz",
+          "native_meaning": "See you later",
+          "english": "See you later",
+          "example_sentence_target": "Akşam görüşürüz.",
+          "example_sentence_native": "See you in the evening.",
+          "example_sentence_phonetic": "Ak-sham go-roosh-oo-rooz."
         },
         {
           "id": "w1_7_5",
-          "target": "Özür dilerim",
-          "phonetic": "Özür dilerim",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Özür dilerim.",
-          "example_sentence_native": "Excuse me."
+          "target": "Anlamadım",
+          "phonetic": "An-lah-mah-duhm",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Özür dilerim, anlamadım.",
+          "example_sentence_native": "I'm sorry, I don't understand.",
+          "example_sentence_phonetic": "Oh-zur dee-ler-im, an-lah-mah-duhm."
         }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A short, complete conversation.",
           "lines": [
             {
               "speaker": "A",
               "target": "Merhaba!",
               "native": "Hello!",
-              "phonetic": "Merhaba"
+              "phonetic": "Mehr-hah-bah!"
             },
             {
               "speaker": "B",
-              "target": "Merhaba! Teşekkürler!",
-              "native": "Hello! Thank you!",
-              "phonetic": "Merhaba Teşekkürler"
+              "target": "Merhaba. Nasılsınız?",
+              "native": "Hello. How are you? (formal)",
+              "phonetic": "Mehr-hah-bah. Nah-suhl-suh-nuhz?"
             },
             {
               "speaker": "A",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Teşekkürler!",
-              "native": "Thank you!",
-              "phonetic": "Teşekkürler"
+              "target": "İyiyim, teşekkürler. Sizin adınız ne?",
+              "native": "I'm fine, thanks. What is your name?",
+              "phonetic": "Ee-yee-yim, tesh-ek-kur-ler. Siz-in ah-duh-nuhz neh?"
             },
             {
               "speaker": "B",
-              "target": "Hoşçakal!",
-              "native": "Goodbye!",
-              "phonetic": "Hoşçakal"
+              "target": "Benim adım Leyla. Memnun oldum.",
+              "native": "My name is Leyla. Nice to meet you.",
+              "phonetic": "Ben-im ah-duhm Ley-la. Mem-noon ol-dum."
             },
-            {
+             {
               "speaker": "A",
-              "target": "Lütfen! Özür dilerim!",
-              "native": "Please! Excuse me!",
-              "phonetic": "Lütfen Özür dilerim"
+              "target": "Ben de. Görüşürüz!",
+              "native": "Me too. See you later!",
+              "phonetic": "Ben deh. Go-roosh-oo-rooz!"
             }
           ]
         }
@@ -1248,83 +774,27 @@
         "fillBlanks": [
           {
             "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Turkish",
-            "answer": "Merhaba",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Turkish",
-            "answer": "Teşekkürler",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Turkish",
-            "answer": "Hoşçakal",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Merhaba",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Teşekkürler",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "Hoşçakal",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Lütfen",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Özür dilerim",
-            "native": "Excuse me"
+            "sentence": "Benim ___ David.",
+            "answer": "adım",
+            "hint": "My name is David."
           }
         ],
         "multipleChoice": [
           {
             "id": "mc1_7_1",
-            "question": "What does 'Merhaba' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Merhaba' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Turkish?",
-            "options": [
-              "Merhaba",
-              "Teşekkürler",
-              "Hoşçakal",
-              "Lütfen"
-            ],
-            "correct": 1,
-            "explanation": "'Teşekkürler' means Thank you."
+            "question": "Which phrase means 'I don't understand'?",
+            "options": ["Memnun oldum", "Teşekkür ederim", "Anlamadım", "İyiyim"],
+            "correct": 2,
+            "explanation": "'Anlamadım' means 'I don't understand'."
           }
         ]
       },
-      "cultural_note": "Learning Turkish opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Turkish pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Turkish people are known for their hospitality. Don't be surprised if you are offered tea ('çay') wherever you go. Accepting it is a polite way to build a connection.",
+      "pronunciation_tip": "Practice the vowel sounds this week: a, e, ı, i, o, ö, u, ü. Getting these right is the foundation of good Turkish pronunciation.",
       "progress": {
-        "xp": 100,
+        "xp": 150,
         "streak_bonus": 20,
-        "badge": "W1D7"
+        "badge": "W1-Turkish-Foundation"
       }
     }
   ]
