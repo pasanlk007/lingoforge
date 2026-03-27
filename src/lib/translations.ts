@@ -20,7 +20,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        title: "Essential Sentences - Systematic Learning Path",
         subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
@@ -71,7 +71,7 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Single Language",
+      title: "Weekly",
       price: "$3.99",
       per: "/week",
       desc: "Master one language.",
@@ -93,7 +93,7 @@ export const translations = {
       feat4: "Email support",
     },
     lifetimePlan: {
-      title: "Survive Anywhere",
+      title: "Lifetime",
       price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
@@ -247,7 +247,7 @@ export const translations = {
     redesign_cta_text: "විදේශ රටක ජීවිතය පහසු කරන භාෂාව.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "විදේශගතවීමට බලාපොරොත්තුවන සහ දැනට විදේශගතව සිටින ඔබට ප්‍රායෝගික ව්‍යුහගත සති 12ක භාෂා පාඨමාලා..",
+        title: "අත්‍යවශ්‍ය වාක්‍ය - ක්‍රමානුකූල ඉගෙනුම් මාවත",
         subtitle: "දෛනික ජීවිතයට • රැකියාවට",
         tagline: "unfold your opportunities"
     },
@@ -298,7 +298,7 @@ export const translations = {
       btn: "නොමිලේ ආරම්භ කරන්න"
     },
     weeklyPlan: {
-      title: "තනි භාෂාව",
+      title: "සතිපතා",
       price: "$3.99",
       per: "/සතියකට",
       desc: "එක් භාෂාවක් ප්‍රගුණ කරන්න.",
@@ -308,7 +308,7 @@ export const translations = {
       feat4: "ඕනෑම වේලාවක අවලංගු කරන්න",
     },
     completePlan: {
-      title: "සම්පූර්ණ එක භාෂාවක්",
+      title: "තනි පාඨමාලාව",
       price: "$39",
       per: "/එක් වරක්",
       badge: "ජනප්‍රිය",
@@ -320,7 +320,7 @@ export const translations = {
       feat4: "විද්‍යුත් තැපැල් සහාය",
     },
     lifetimePlan: {
-      title: "ඕනෑම තැනක ජීවත් වන්න",
+      title: "ජීවිත කාලය",
       price: "$99",
       per: "/එක් වරක්",
       badge: "⭐ හොඳම වටිනාකම",
@@ -474,7 +474,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "विदेश जाने की योजना बना रहे और वर्तमान में विदेश में रह रहे लोगों के लिए एक व्यावहारिक, संरचित 12-सप्ताह का भाषा पाठ्यक्रम।",
+        title: "आवश्यक वाक्य - व्यवस्थित शिक्षण पथ",
         subtitle: "दैनिक जीवन के लिए • काम के लिए",
         tagline: "unfold your opportunities"
     },
@@ -525,7 +525,7 @@ export const translations = {
       btn: "मुफ्त में शुरू करें"
     },
     weeklyPlan: {
-      title: "एकल भाषा",
+      title: "साप्ताहिक",
       price: "$3.99",
       per: "/सप्ताह",
       desc: "एक भाषा में महारत हासिल करें।",
@@ -547,7 +547,7 @@ export const translations = {
       feat4: "ईमेल समर्थन",
     },
     lifetimePlan: {
-      title: "कहीं भी जीवित रहें",
+      title: "लाइफटाइम",
       price: "$99",
       per: "/एक बार",
       badge: "⭐ सर्वोत्तम मूल्य",
@@ -701,7 +701,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "بیرون ملک جانے کی منصوبہ بندی کرنے والے اور فی الحال بیرون ملک مقیم افراد کے لیے ایک عملی، منظم 12 ہفتے کا زبان کا کورس۔",
+        title: "ضروری جملے - منظم سیکھنے کا راستہ",
         subtitle: "روزمرہ کی زندگی کے لیے • کام کے لیے",
         tagline: "unfold your opportunities"
     },
@@ -752,7 +752,7 @@ export const translations = {
       btn: "مفت میں شروع کریں"
     },
     weeklyPlan: {
-      title: "واحد زبان",
+      title: "ہفتہ وار",
       price: "$3.99",
       per: "/ہفتہ",
       desc: "ایک زبان میں مہارت حاصل کریں۔",
@@ -774,7 +774,7 @@ export const translations = {
       feat4: "ای میل سپورٹ",
     },
     lifetimePlan: {
-      title: "کہیں بھی زندہ رہو",
+      title: "لائف ٹائم",
       price: "$99",
       per: "/یک مشت",
       badge: "⭐ بہترین قیمت",
@@ -919,7 +919,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "যারা বিদেশে যাওয়ার পরিকল্পনা করছেন এবং বর্তমানে বিদেশে আছেন তাদের জন্য একটি বাস্তব, কাঠামোবদ্ধ ১২-সপ্তাহের ভাষা কোর্স।",
+        title: "প্রয়োজনীয় বাক্য - পদ্ধতিগত শেখার পথ",
         subtitle: "দৈনন্দিন জীবনের জন্য • কাজের জন্য",
         tagline: "unfold your opportunities"
     },
@@ -970,7 +970,7 @@ export const translations = {
       btn: "বিনামূল্যে শুরু করুন"
     },
     weeklyPlan: {
-      title: "একক ভাষা",
+      title: "সাপ্তাহিক",
       price: "$3.99",
       per: "/সপ্তাহ",
       desc: "একটি ভাষায় দক্ষতা অর্জন করুন।",
@@ -992,7 +992,7 @@ export const translations = {
       feat4: "ইমেল সমর্থন",
     },
     lifetimePlan: {
-      title: "যেকোনো জায়গায় বেঁচে থাকুন",
+      title: "আজীবন",
       price: "$99",
       per: "/এককালীন",
       badge: "⭐ সেরা মূল্য",
@@ -1146,7 +1146,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "विदेश जाने योजना बनाइरहेका र हाल विदेशमा रहेकाहरूका लागि एक व्यावहारिक, संरचित १२-हप्ते भाषा पाठ्यक्रम।",
+        title: "आवश्यक वाक्यहरू - व्यवस्थित सिकाइ मार्ग",
         subtitle: "दैनिक जीवनको लागि • कामको लागि",
         tagline: "unfold your opportunities"
     },
@@ -1197,7 +1197,7 @@ export const translations = {
       btn: "नि:शुल्क सुरु गर्नुहोस्"
     },
     weeklyPlan: {
-      title: "एकल भाषा",
+      title: "साप्ताहिक",
       price: "$3.99",
       per: "/हप्ता",
       desc: "एक भाषामा महारत हासिल गर्नुहोस्।",
@@ -1219,7 +1219,7 @@ export const translations = {
       feat4: "इमेल समर्थन",
     },
     lifetimePlan: {
-      title: "जहाँ पनि बाँच्नुहोस्",
+      title: "जीवनभर",
       price: "$99",
       per: "/एक पटक",
       badge: "⭐ उत्तम मूल्य",
@@ -1373,7 +1373,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        title: "Essential Sentences - Systematic Learning Path",
         subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
@@ -1426,7 +1426,7 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Single Language",
+      title: "Weekly",
       price: "$3.99",
       per: "/week",
       desc: "Master one language.",
@@ -1450,7 +1450,7 @@ export const translations = {
       feat4: "Priority email support",
     },
     lifetimePlan: {
-      title: "Survive Anywhere",
+      title: "Lifetime",
       price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
@@ -1604,7 +1604,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        title: "Essential Sentences - Systematic Learning Path",
         subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
@@ -1657,7 +1657,7 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Single Language",
+      title: "Weekly",
       price: "$3.99",
       per: "/week",
       desc: "Master one language.",
@@ -1681,7 +1681,7 @@ export const translations = {
       feat4: "Priority email support",
     },
     lifetimePlan: {
-      title: "Survive Anywhere",
+      title: "Lifetime",
       price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
@@ -1835,7 +1835,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        title: "Essential Sentences - Systematic Learning Path",
         subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
@@ -1888,7 +1888,7 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Single Language",
+      title: "Weekly",
       price: "$3.99",
       per: "/week",
       desc: "Master one language.",
@@ -1912,7 +1912,7 @@ export const translations = {
       feat4: "Priority email support",
     },
     lifetimePlan: {
-      title: "Survive Anywhere",
+      title: "Lifetime",
       price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
@@ -2066,7 +2066,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        title: "Essential Sentences - Systematic Learning Path",
         subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
@@ -2119,7 +2119,7 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Single Language",
+      title: "Weekly",
       price: "$3.99",
       per: "/week",
       desc: "Master one language.",
@@ -2143,7 +2143,7 @@ export const translations = {
       feat4: "Priority email support",
     },
     lifetimePlan: {
-      title: "Survive Anywhere",
+      title: "Lifetime",
       price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
@@ -2297,7 +2297,7 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        title: "Essential Sentences - Systematic Learning Path",
         subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
@@ -2350,7 +2350,7 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Single Language",
+      title: "Weekly",
       price: "$3.99",
       per: "/week",
       desc: "Master one language.",
@@ -2374,7 +2374,7 @@ export const translations = {
       feat4: "Priority email support",
     },
     lifetimePlan: {
-      title: "Survive Anywhere",
+      title: "Lifetime",
       price: "$99",
       per: "/one-time",
       badge: "⭐ BEST VALUE",
@@ -2542,6 +2542,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
