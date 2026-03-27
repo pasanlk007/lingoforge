@@ -21,6 +21,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        subtitle: "For daily life • For work",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -243,6 +248,11 @@ export const translations = {
     redesign_subtitle: "දිනකට මිනිත්තු 10ක් — දින 84කින් විදේශ රටක විශ්වාසයෙන් කතා කරන්න.",
     redesign_cta_text: "විදේශ රටක ජීවිතය පහසු කරන භාෂාව.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "විදේශගතවීමට බලාපොරොත්තුවන සහ දැනට විදේශගතව සිටින ඔබට ප්‍රායෝගික ව්‍යුහගත සති 12ක භාෂා පාඨමාලා..",
+        subtitle: "දෛනික ජීවිතයට • රැකියාවට",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "හදිසි අවස්ථාවක්",
     scenario1Desc: "ඔබේ දරුවා අසනීපයි. ඔබට වෛද්‍යවරයෙකුට රෝග ලක්ෂණ පැහැදිලි කිරීමට අවශ්‍යයි. ඔබ වචන දන්නවාද?",
     scenario1Btn: "වෛද්‍ය වචන ඉගෙන ගන්න",
@@ -465,6 +475,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "विदेश जाने की योजना बना रहे और वर्तमान में विदेश में रह रहे लोगों के लिए एक व्यावहारिक, संरचित 12-सप्ताह का भाषा पाठ्यक्रम।",
+        subtitle: "दैनिक जीवन के लिए • काम के लिए",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "आपातकाल",
     scenario1Desc: "आपका बच्चा बीमार है। आपको डॉक्टर को लक्षण समझाने की ज़रूरत है। क्या आप शब्द जानते हैं?",
     scenario1Btn: "चिकित्सा शब्दावली सीखें",
@@ -687,6 +702,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "بیرون ملک جانے کی منصوبہ بندی کرنے والے اور فی الحال بیرون ملک مقیم افراد کے لیے ایک عملی، منظم 12 ہفتے کا زبان کا کورس۔",
+        subtitle: "روزمرہ کی زندگی کے لیے • کام کے لیے",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "ہنگامی صورتحال",
     scenario1Desc: "آپ کا بچہ بیمار ہے۔ آپ کو ڈاکٹر کو علامات بتانے کی ضرورت ہے۔ کیا آپ کو الفاظ آتے ہیں؟",
     scenario1Btn: "طبی الفاظ سیکھیں",
@@ -901,6 +921,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "যারা বিদেশে যাওয়ার পরিকল্পনা করছেন এবং বর্তমানে বিদেশে আছেন তাদের জন্য একটি বাস্তব, কাঠামোবদ্ধ ১২-সপ্তাহের ভাষা কোর্স।",
+        subtitle: "দৈনন্দিন জীবনের জন্য • কাজের জন্য",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "জরুরী অবস্থা",
     scenario1Desc: "আপনার সন্তান অসুস্থ। আপনাকে একজন ডাক্তারকে উপসর্গ ব্যাখ্যা করতে হবে। আপনি কি শব্দগুলো জানেন?",
     scenario1Btn: "চিকিৎসা শব্দভান্ডার শিখুন",
@@ -1123,6 +1148,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "विदेश जाने योजना बनाइरहेका र हाल विदेशमा रहेकाहरूका लागि एक व्यावहारिक, संरचित १२-हप्ते भाषा पाठ्यक्रम।",
+        subtitle: "दैनिक जीवनको लागि • कामको लागि",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "आपतकालिन",
     scenario1Desc: "तपाईंको बच्चा बिरामी छ। तपाईंले डाक्टरलाई लक्षणहरू व्याख्या गर्न आवश्यक छ। के तपाईंलाई शब्दहरू थाहा छ?",
     scenario1Btn: "चिकित्सा शब्दावली सिक्नुहोस्",
@@ -1345,6 +1375,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        subtitle: "For daily life • For work",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1571,6 +1606,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        subtitle: "For daily life • For work",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -1797,6 +1837,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        subtitle: "For daily life • For work",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -2023,6 +2068,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        subtitle: "For daily life • For work",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -2249,6 +2299,11 @@ export const translations = {
     redesign_subtitle: "10 minutes a day — speak confidently in a foreign country in 84 days.",
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
+    poster: {
+        title: "A practical, structured 12-week language course for those planning to go abroad and those currently abroad.",
+        subtitle: "For daily life • For work",
+        tagline: "unfold your opportunities"
+    },
     scenario1Title: "Emergency",
     scenario1Desc: "Your child is sick. You need to explain symptoms to a doctor. Do you know the words?",
     scenario1Btn: "Learn Medical Vocab",
@@ -2490,6 +2545,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 

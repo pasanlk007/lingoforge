@@ -157,6 +157,25 @@ export default function LandingPage() {
           </div>
         </section>
 
+        <section className="py-16 bg-slate-900">
+          <div className="container mx-auto px-4">
+            <div className="relative rounded-xl border-2 border-green-500/80 bg-gradient-to-br from-green-900/30 to-slate-900 p-8 text-center shadow-2xl shadow-green-500/15">
+              <div className="absolute -top-2 -left-2 h-8 w-8 border-t-2 border-l-2 border-green-500 rounded-tl-xl opacity-70"></div>
+              <div className="absolute -bottom-2 -right-2 h-8 w-8 border-b-2 border-r-2 border-green-500 rounded-br-xl opacity-70"></div>
+
+              <h2 className="text-xl md:text-2xl font-semibold leading-relaxed text-white">
+                {t.poster.title}
+              </h2>
+              <p className="mt-4 text-lg text-green-300">
+                {t.poster.subtitle}
+              </p>
+              <p className="mt-3 text-2xl font-bold uppercase tracking-widest text-green-400 font-headline">
+                {t.poster.tagline}
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 sm:py-24 bg-slate-900">
           <div className="container mx-auto px-4">
             <Card className="bg-slate-800/50 border-2 border-cyan-500/30 shadow-[0_0_30px_rgba(56,189,248,0.2)]">
