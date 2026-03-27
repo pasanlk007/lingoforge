@@ -8,9 +8,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1, Day 1: Basic Greetings",
-      "title_native": "שבוע 1, יום 1: ברכות בסיסיות",
-      "theme": "Basic Greetings",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "יום 1: ברכות בסיסיות",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "English",
@@ -19,21 +19,51 @@
           "id": "w1_1_1",
           "target": "שלום",
           "phonetic": "Sha-lom",
-          "native_meaning": "Hello / Peace",
-          "english": "Hello / Peace",
-          "example_sentence_target": "שלום, מה שלומך?",
-          "example_sentence_native": "Hello, how are you?",
-          "example_sentence_phonetic": "Shalom, ma shlom-kha?"
+          "native_meaning": "Hello / Goodbye / Peace",
+          "english": "Hello / Goodbye / Peace",
+          "example_sentence_target": "שלום, נעים להכיר",
+          "example_sentence_native": "Hello, nice to meet you.",
+          "example_sentence_phonetic": "Shalom, na'im lehakir."
         },
         {
           "id": "w1_1_2",
-          "target": "תודה",
-          "phonetic": "To-da",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "תודה רבה!",
-          "example_sentence_native": "Thank you very much!",
-          "example_sentence_phonetic": "Toda raba!"
+          "target": "בוקר טוב",
+          "phonetic": "Bo-ker tov",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "בוקר טוב, מה שלומך?",
+          "example_sentence_native": "Good morning, how are you?",
+          "example_sentence_phonetic": "Boker tov, ma shlom'cha?"
+        },
+        {
+          "id": "w1_1_3",
+          "target": "ערב טוב",
+          "phonetic": "E-rev tov",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "ערב טוב לכולם",
+          "example_sentence_native": "Good evening everyone.",
+          "example_sentence_phonetic": "Erev tov le'kulam."
+        },
+        {
+          "id": "w1_1_4",
+          "target": "לילה טוב",
+          "phonetic": "Lai-la tov",
+          "native_meaning": "Good night",
+          "english": "Good night",
+          "example_sentence_target": "לילה טוב וחלומות פז",
+          "example_sentence_native": "Good night and sweet dreams.",
+          "example_sentence_phonetic": "Laila tov ve'chalomot paz."
+        },
+        {
+          "id": "w1_1_5",
+          "target": "מה שלומך?",
+          "phonetic": "Ma shlom'cha? / Ma shlo'mech?",
+          "native_meaning": "How are you? (m/f)",
+          "english": "How are you? (m/f)",
+          "example_sentence_target": "היי דני, מה שלומך?",
+          "example_sentence_native": "Hi Danny, how are you?",
+          "example_sentence_phonetic": "Hi Danny, ma shlom'cha?"
         }
       ],
       "dialogues": [
@@ -41,54 +71,717 @@
           "id": "d1_1_1",
           "context": "Meeting someone for the first time.",
           "lines": [
-            { "speaker": "A", "target": "שלום, אני דן.", "native": "Hello, I'm Dan.", "phonetic": "Shalom, ani Dan." },
-            { "speaker": "B", "target": "שלום דן, נעים מאוד. אני שרה.", "native": "Hello Dan, nice to meet you. I'm Sarah.", "phonetic": "Shalom Dan, na'im me'od. Ani Sarah." }
+            {
+              "speaker": "A",
+              "target": "שלום, אני דוד.",
+              "native": "Hello, I'm David.",
+              "phonetic": "Shalom, ani David."
+            },
+            {
+              "speaker": "B",
+              "target": "שלום דוד, אני שרה.",
+              "native": "Hello David, I'm Sarah.",
+              "phonetic": "Shalom David, ani Sarah."
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "A morning greeting.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "בוקר טוב!",
+              "native": "Good morning!",
+              "phonetic": "Boker tov!"
+            },
+            {
+              "speaker": "B",
+              "target": "בוקר אור. מה שלומך?",
+              "native": "Morning light. How are you?",
+              "phonetic": "Boker or. Ma shlom'cha?"
+            }
           ]
         }
       ],
       "exercises": {
         "matching": [
           { "id": "m1_1_1", "target": "שלום", "native": "Hello" },
-          { "id": "m1_1_2", "target": "תודה", "native": "Thank you" }
+          { "id": "m1_1_2", "target": "בוקר טוב", "native": "Good morning" },
+          { "id": "m1_1_3", "target": "לילה טוב", "native": "Good night" }
+        ],
+        "sentenceScramble": [
+            {
+                "id": "ss1_1_1",
+                "scrambled": ["שלומך", "מה", "?"],
+                "correct": "מה שלומך?",
+                "nativeHint": "How are you?"
+            }
         ]
       },
-      "cultural_note": "Shalom is a very versatile word in Hebrew. It can mean hello, goodbye, and peace. It's used in both formal and informal situations.",
-      "pronunciation_tip": "The 'kh' sound at the end of 'shlom-kha' is a guttural sound made in the back of the throat, similar to the 'ch' in 'Bach'.",
-      "progress": { "xp": 50, "streak_bonus": 10, "badge": "W1D1-Hebrew-Greetings" }
+      "cultural_note": "'Shalom' is a very versatile word in Hebrew. It means 'hello', 'goodbye', and 'peace'. You will hear it everywhere!",
+      "pronunciation_tip": "The 'ch' sound in 'shlom'cha' comes from the back of the throat, similar to the 'ch' in the Scottish word 'loch'. It's a key sound in Hebrew.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-Hebrew-Greetings"
+      }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1, Day 2: Yes, No, Please",
-      "title_native": "שבוע 1, יום 2: כן, לא, בבקשה",
-      "theme": "Basic Politeness",
+      "title": "Day 2: Politeness",
+      "title_native": "יום 2: נימוסים",
+      "theme": "Please, Thank You, Sorry",
       "path": "survival",
       "targetLanguage": "Hebrew",
       "nativeLanguage": "English",
       "words": [
-        { "id": "w1_2_1", "target": "כן", "phonetic": "Ken", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "כן, בבקשה.", "example_sentence_native": "Yes, please.", "example_sentence_phonetic": "Ken, bevakasha." },
-        { "id": "w1_2_2", "target": "לא", "phonetic": "Lo", "native_meaning": "No", "english": "No", "example_sentence_target": "לא, תודה.", "example_sentence_native": "No, thank you.", "example_sentence_phonetic": "Lo, toda." },
-        { "id": "w1_2_3", "target": "בבקשה", "phonetic": "Be-va-ka-sha", "native_meaning": "Please / You're welcome", "english": "Please / You're welcome", "example_sentence_target": "קפה, בבקשה.", "example_sentence_native": "Coffee, please.", "example_sentence_phonetic": "Kafe, bevakasha." }
+        {
+          "id": "w1_2_1",
+          "target": "בבקשה",
+          "phonetic": "Be-va-ka-sha",
+          "native_meaning": "Please / You're welcome",
+          "english": "Please / You're welcome",
+          "example_sentence_target": "תן לי מים, בבקשה.",
+          "example_sentence_native": "Give me water, please.",
+          "example_sentence_phonetic": "Ten li mayim, bevakasha."
+        },
+        {
+          "id": "w1_2_2",
+          "target": "תודה",
+          "phonetic": "To-da",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "תודה רבה!",
+          "example_sentence_native": "Thank you very much!",
+          "example_sentence_phonetic": "Toda raba!"
+        },
+        {
+          "id": "w1_2_3",
+          "target": "סליחה",
+          "phonetic": "Sli-cha",
+          "native_meaning": "Excuse me / Sorry",
+          "english": "Excuse me / Sorry",
+          "example_sentence_target": "סליחה, איפה השירותים?",
+          "example_sentence_native": "Excuse me, where is the bathroom?",
+          "example_sentence_phonetic": "Slicha, eifo ha'sherutim?"
+        },
+        {
+          "id": "w1_2_4",
+          "target": "כן",
+          "phonetic": "Ken",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "כן, אני רוצה קפה.",
+          "example_sentence_native": "Yes, I want coffee.",
+          "example_sentence_phonetic": "Ken, ani rotze kafe."
+        },
+        {
+          "id": "w1_2_5",
+          "target": "לא",
+          "phonetic": "Lo",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "לא, תודה.",
+          "example_sentence_native": "No, thank you.",
+          "example_sentence_phonetic": "Lo, toda."
+        }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Ordering a coffee.",
+          "context": "At a cafe.",
           "lines": [
-            { "speaker": "A", "target": "שלום, אפשר קפה?", "native": "Hello, can I have a coffee?", "phonetic": "Shalom, efshar kafe?" },
-            { "speaker": "B", "target": "כן, בבקשה.", "native": "Yes, please/here you go.", "phonetic": "Ken, bevakasha." }
+            {
+              "speaker": "A",
+              "target": "אפשר קפה בבקשה?",
+              "native": "Can I have coffee please?",
+              "phonetic": "Efshar kafe bevakasha?"
+            },
+            {
+              "speaker": "B",
+              "target": "כן, בטח. הנה.",
+              "native": "Yes, sure. Here you go.",
+              "phonetic": "Ken, betach. Hine."
+            }
+          ]
+        },
+        {
+          "id": "d1_2_2",
+          "context": "Responding to thanks.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "תודה על העזרה!",
+              "native": "Thanks for the help!",
+              "phonetic": "Toda al ha'ezra!"
+            },
+            {
+              "speaker": "B",
+              "target": "בבקשה.",
+              "native": "You're welcome.",
+              "phonetic": "Bevakasha."
+            }
           ]
         }
       ],
-      "exercises": { "fillBlanks": [{ "id": "fb1_2_1", "sentence": "___, אני רוצה מים.", "answer": "כן", "hint": "Affirmative answer" }] },
-      "cultural_note": "'Bevakasha' is used for both 'please' when asking for something, and 'you're welcome' after someone says 'toda' (thank you).",
-      "pronunciation_tip": "The word 'Lo' (No) is short and sharp. Make sure not to drag out the 'o' sound.",
-      "progress": { "xp": 50, "streak_bonus": 10, "badge": "W1D2-Hebrew-Politeness" }
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_2_1",
+            "sentence": "קפה, ___",
+            "answer": "בבקשה",
+            "hint": "Please"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_2_1",
+            "question": "How do you say 'Yes' in Hebrew?",
+            "options": ["לא", "כן", "שלום", "תודה"],
+            "correct": 1,
+            "explanation": "'כן' (Ken) means 'Yes'."
+          }
+        ]
+      },
+      "cultural_note": "Don't be surprised to hear 'Bevakasha' for both 'please' and 'you're welcome'. Context makes the meaning clear.",
+      "pronunciation_tip": "The 'o' sound in 'Lo' (No) is short and sharp, not drawn out like in the English word 'low'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D2-Hebrew-Politeness"
+      }
     },
-    { "week": 1, "day": 3, "title": "Day 3 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 4, "title": "Day 4 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 5, "title": "Day 5 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 6, "title": "Day 6 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 7, "title": "Day 7 Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "survival", "targetLanguage": "Hebrew", "nativeLanguage": "English", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }}
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Day 3: Introductions",
+      "title_native": "יום 3: היכרות",
+      "theme": "Meeting People",
+      "path": "survival",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "אני",
+          "phonetic": "A-ni",
+          "native_meaning": "I",
+          "english": "I",
+          "example_sentence_target": "אני מישראל.",
+          "example_sentence_native": "I am from Israel.",
+          "example_sentence_phonetic": "Ani me'yisrael."
+        },
+        {
+          "id": "w1_3_2",
+          "target": "אתה",
+          "phonetic": "A-ta",
+          "native_meaning": "You (masculine)",
+          "english": "You (masculine)",
+          "example_sentence_target": "אתה מדבר אנגלית?",
+          "example_sentence_native": "Do you speak English?",
+          "example_sentence_phonetic": "Ata medaber anglit?"
+        },
+        {
+          "id": "w1_3_3",
+          "target": "את",
+          "phonetic": "At",
+          "native_meaning": "You (feminine)",
+          "english": "You (feminine)",
+          "example_sentence_target": "את מישראל?",
+          "example_sentence_native": "Are you from Israel?",
+          "example_sentence_phonetic": "At me'yisrael?"
+        },
+        {
+          "id": "w1_3_4",
+          "target": "נעים מאוד",
+          "phonetic": "Na-im me-od",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "שלום, אני דנה. נעים מאוד.",
+          "example_sentence_native": "Hello, I'm Dana. Nice to meet you.",
+          "example_sentence_phonetic": "Shalom, ani Dana. Na'im me'od."
+        },
+        {
+          "id": "w1_3_5",
+          "target": "מה שמך?",
+          "phonetic": "Ma shim'cha? / Ma sh'mech?",
+          "native_meaning": "What is your name? (m/f)",
+          "english": "What is your name? (m/f)",
+          "example_sentence_target": "סליחה, מה שמך?",
+          "example_sentence_native": "Excuse me, what is your name?",
+          "example_sentence_phonetic": "Slicha, ma shim'cha?"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "Introducing oneself.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "שלום, קוראים לי משה. מה שמך?",
+              "native": "Hello, my name is Moshe. What is your name?",
+              "phonetic": "Shalom, kor'im li Moshe. Ma shim'cha?"
+            },
+            {
+              "speaker": "B",
+              "target": "אני רבקה. נעים מאוד.",
+              "native": "I'm Rivka. Nice to meet you.",
+              "phonetic": "Ani Rivka. Na'im me'od."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["מאוד", "נעים"],
+            "correct": "נעים מאוד",
+            "nativeHint": "Nice to meet you"
+          }
+        ],
+        "matching": [
+          { "id": "m1_3_1", "target": "אני", "native": "I" },
+          { "id": "m1_3_2", "target": "אתה", "native": "You (m)" },
+          { "id": "m1_3_3", "target": "את", "native": "You (f)" }
+        ]
+      },
+      "cultural_note": "In Israel, people are often quite direct and may ask personal questions soon after meeting you. It's usually a sign of friendliness!",
+      "pronunciation_tip": "Pay close attention to the difference between 'ata' (you, masculine) and 'at' (you, feminine). The 'a' sound at the end makes a big difference.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D3-Hebrew-Intros"
+      }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Day 4: Where are you from?",
+      "title_native": "יום 4: מאיפה אתה?",
+      "theme": "Origins",
+      "path": "survival",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "איפה",
+          "phonetic": "Ei-fo",
+          "native_meaning": "Where",
+          "english": "Where",
+          "example_sentence_target": "איפה זה?",
+          "example_sentence_native": "Where is it?",
+          "example_sentence_phonetic": "Eifo ze?"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "מאיפה",
+          "phonetic": "Me-ei-fo",
+          "native_meaning": "From where",
+          "english": "From where",
+          "example_sentence_target": "מאיפה אתה?",
+          "example_sentence_native": "Where are you from?",
+          "example_sentence_phonetic": "Me'eifo ata?"
+        },
+        {
+          "id": "w1_4_3",
+          "target": "אנגלית",
+          "phonetic": "An-glit",
+          "native_meaning": "English",
+          "english": "English",
+          "example_sentence_target": "אני מדבר אנגלית.",
+          "example_sentence_native": "I speak English.",
+          "example_sentence_phonetic": "Ani medaber anglit."
+        },
+        {
+          "id": "w1_4_4",
+          "target": "גר",
+          "phonetic": "Gar",
+          "native_meaning": "Live (m, singular)",
+          "english": "Live (m, singular)",
+          "example_sentence_target": "אני גר בתל אביב.",
+          "example_sentence_native": "I live in Tel Aviv.",
+          "example_sentence_phonetic": "Ani gar be'Tel Aviv."
+        },
+        {
+          "id": "w1_4_5",
+          "target": "פה",
+          "phonetic": "Po",
+          "native_meaning": "Here",
+          "english": "Here",
+          "example_sentence_target": "אני פה.",
+          "example_sentence_native": "I am here.",
+          "example_sentence_phonetic": "Ani po."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "Asking about origin.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "שלום, מאיפה את?",
+              "native": "Hello, where are you from? (to a female)",
+              "phonetic": "Shalom, me'eifo at?"
+            },
+            {
+              "speaker": "B",
+              "target": "אני מאמריקה. ואתה?",
+              "native": "I am from America. And you?",
+              "phonetic": "Ani me'amerika. Ve'ata?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_4_1",
+            "sentence": "___ אתה?",
+            "answer": "מאיפה",
+            "hint": "From where"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_4_1",
+            "question": "What does 'פה' mean?",
+            "options": ["Here", "There", "Where", "Now"],
+            "correct": 0,
+            "explanation": "'פה' (Po) means 'Here'."
+          }
+        ]
+      },
+      "cultural_note": "Hebrew has grammatical gender for almost everything, including verbs and adjectives. You'll use different forms depending on whether you're talking to a man or a woman.",
+      "pronunciation_tip": "The Hebrew 'R' (ר) is pronounced differently than in English. It's a sound made in the back of the throat, similar to the French 'R'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D4-Hebrew-Origins"
+      }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Day 5: Numbers 1-5",
+      "title_native": "יום 5: מספרים 1-5",
+      "theme": "Counting",
+      "path": "survival",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "אחת",
+          "phonetic": "A-chat",
+          "native_meaning": "One (f)",
+          "english": "One (f)",
+          "example_sentence_target": "בננה אחת, בבקשה.",
+          "example_sentence_native": "One banana, please.",
+          "example_sentence_phonetic": "Banana achat, bevakasha."
+        },
+        {
+          "id": "w1_5_2",
+          "target": "שתיים",
+          "phonetic": "Shta-yim",
+          "native_meaning": "Two (f)",
+          "english": "Two (f)",
+          "example_sentence_target": "אני רוצה שתי כוסות.",
+          "example_sentence_native": "I want two cups.",
+          "example_sentence_phonetic": "Ani rotza shtei cosot."
+        },
+        {
+          "id": "w1_5_3",
+          "target": "שלוש",
+          "phonetic": "Sha-losh",
+          "native_meaning": "Three",
+          "english": "Three",
+          "example_sentence_target": "יש לי שלוש שאלות.",
+          "example_sentence_native": "I have three questions.",
+          "example_sentence_phonetic": "Yesh li shalosh she'elot."
+        },
+        {
+          "id": "w1_5_4",
+          "target": "ארבע",
+          "phonetic": "Ar-ba",
+          "native_meaning": "Four",
+          "english": "Four",
+          "example_sentence_target": "השעה ארבע.",
+          "example_sentence_native": "It's four o'clock.",
+          "example_sentence_phonetic": "Ha'sha'a arba."
+        },
+        {
+          "id": "w1_5_5",
+          "target": "חמש",
+          "phonetic": "Cha-mesh",
+          "native_meaning": "Five",
+          "english": "Five",
+          "example_sentence_target": "חמישה שקלים, בבקשה.",
+          "example_sentence_native": "Five shekels, please.",
+          "example_sentence_phonetic": "Chamisha shkalim, bevakasha."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "Buying things at a market.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "כמה זה עולה?",
+              "native": "How much does this cost?",
+              "phonetic": "Kama ze ole?"
+            },
+            {
+              "speaker": "B",
+              "target": "חמישה שקלים.",
+              "native": "Five shekels.",
+              "phonetic": "Chamisha shkalim."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          {
+            "id": "mc1_5_1",
+            "question": "Which number is 'Three'?",
+            "options": ["אחת", "חמש", "שלוש", "שתיים"],
+            "correct": 2,
+            "explanation": "'שלוש' (Shalosh) means 'Three'."
+          }
+        ],
+        "matching": [
+          { "id": "m1_5_1", "target": "1", "native": "אחת" },
+          { "id": "m1_5_2", "target": "2", "native": "שתיים" },
+          { "id": "m1_5_3", "target": "4", "native": "ארבע" }
+        ]
+      },
+      "cultural_note": "Hebrew numbers have masculine and feminine forms. The form you use depends on the noun you are counting. We are learning the feminine forms first, which are commonly used for general counting.",
+      "pronunciation_tip": "The 'ch' in 'achat' and 'chamesh' is that same throaty sound from Day 1. Practice it!",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D5-Hebrew-Numbers"
+      }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Day 6: Asking for Help",
+      "title_native": "יום 6: לבקש עזרה",
+      "theme": "Help & Needs",
+      "path": "survival",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "עזרה",
+          "phonetic": "Ez-ra",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "אני צריך עזרה.",
+          "example_sentence_native": "I need help.",
+          "example_sentence_phonetic": "Ani tsarich ezra."
+        },
+        {
+          "id": "w1_6_2",
+          "target": "אני צריך",
+          "phonetic": "Ani tsa-rich",
+          "native_meaning": "I need (m)",
+          "english": "I need (m)",
+          "example_sentence_target": "אני צריך מונית.",
+          "example_sentence_native": "I need a taxi.",
+          "example_sentence_phonetic": "Ani tsarich monit."
+        },
+        {
+          "id": "w1_6_3",
+          "target": "אני צריכה",
+          "phonetic": "Ani tsri-cha",
+          "native_meaning": "I need (f)",
+          "english": "I need (f)",
+          "example_sentence_target": "אני צריכה מים.",
+          "example_sentence_native": "I need water.",
+          "example_sentence_phonetic": "Ani tsricha mayim."
+        },
+        {
+          "id": "w1_6_4",
+          "target": "יכול",
+          "phonetic": "Ya-chol",
+          "native_meaning": "Can / Able to (m)",
+          "english": "Can / Able to (m)",
+          "example_sentence_target": "אתה יכול לעזור לי?",
+          "example_sentence_native": "Can you help me?",
+          "example_sentence_phonetic": "Ata yachol la'azor li?"
+        },
+        {
+          "id": "w1_6_5",
+          "target": "לא מבין",
+          "phonetic": "Lo me-vin",
+          "native_meaning": "I don't understand (m)",
+          "english": "I don't understand (m)",
+          "example_sentence_target": "סליחה, אני לא מבין.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "Slicha, ani lo mevin."
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "Lost in the city.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "סליחה, אתה יכול לעזור לי? אני לא מבין איפה אני.",
+              "native": "Excuse me, can you help me? I don't understand where I am.",
+              "phonetic": "Slicha, ata yachol la'azor li? Ani lo mevin eifo ani."
+            },
+            {
+              "speaker": "B",
+              "target": "כן, בטח. איפה אתה צריך להיות?",
+              "native": "Yes, of course. Where do you need to be?",
+              "phonetic": "Ken, betach. Eifo ata tsarich lihiyot?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_6_1",
+            "sentence": "אני ___ עזרה.",
+            "answer": "צריך",
+            "hint": "I need (m)"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_6_1",
+            "scrambled": ["מבין", "לא", "אני"],
+            "correct": "אני לא מבין",
+            "nativeHint": "I don't understand"
+          }
+        ]
+      },
+      "cultural_note": "Israelis are generally very informal and direct. Don't be afraid to approach someone on the street and ask for help - they will usually be happy to assist.",
+      "pronunciation_tip": "The 'ayin' (ע) sound at the beginning of 'ezra' (help) is a voiced sound from the throat that doesn't exist in English. For now, you can pronounce it like a short 'e', but listen carefully to how native speakers say it.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D6-Hebrew-Help"
+      }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Day 7: Weekly Review",
+      "title_native": "יום 7: סיכום שבועי",
+      "theme": "Review",
+      "path": "survival",
+      "targetLanguage": "Hebrew",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_7_1",
+          "target": "מה",
+          "phonetic": "Ma",
+          "native_meaning": "What",
+          "english": "What",
+          "example_sentence_target": "מה זה?",
+          "example_sentence_native": "What is this?",
+          "example_sentence_phonetic": "Ma ze?"
+        },
+        {
+          "id": "w1_7_2",
+          "target": "מי",
+          "phonetic": "Mi",
+          "native_meaning": "Who",
+          "english": "Who",
+          "example_sentence_target": "מי זה?",
+          "example_sentence_native": "Who is this?",
+          "example_sentence_phonetic": "Mi ze?"
+        },
+        {
+          "id": "w1_7_3",
+          "target": "איך",
+          "phonetic": "Eich",
+          "native_meaning": "How",
+          "english": "How",
+          "example_sentence_target": "איך אומרים 'water' בעברית?",
+          "example_sentence_native": "How do you say 'water' in Hebrew?",
+          "example_sentence_phonetic": "Eich omrim 'water' be'ivrit?"
+        },
+        {
+          "id": "w1_7_4",
+          "target": "טוב מאוד",
+          "phonetic": "Tov me-od",
+          "native_meaning": "Very good",
+          "english": "Very good",
+          "example_sentence_target": "העברית שלך טובה מאוד!",
+          "example_sentence_native": "Your Hebrew is very good!",
+          "example_sentence_phonetic": "Ha'ivrit shelcha tova me'od!"
+        },
+        {
+          "id": "w1_7_5",
+          "target": "להתראות",
+          "phonetic": "Le-hit-ra-ot",
+          "native_meaning": "See you later / Goodbye",
+          "english": "See you later / Goodbye",
+          "example_sentence_target": "תודה, להתראות!",
+          "example_sentence_native": "Thanks, see you later!",
+          "example_sentence_phonetic": "Toda, lehitraot!"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "A review conversation.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "שלום! מה שלומך?",
+              "native": "Hello! How are you?",
+              "phonetic": "Shalom! Ma shlom'cha?"
+            },
+            {
+              "speaker": "B",
+              "target": "תודה, טוב. ואת?",
+              "native": "Thanks, good. And you? (to a female)",
+              "phonetic": "Toda, tov. Ve'at?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_7_1", "target": "מה", "native": "What" },
+          { "id": "m1_7_2", "target": "מי", "native": "Who" },
+          { "id": "m1_7_3", "target": "איך", "native": "How" },
+          { "id": "m1_7_4", "target": "להתראות", "native": "Goodbye" }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_7_1",
+            "question": "You learned 'Shalom' means 'Hello', 'Goodbye', and...",
+            "options": ["Peace", "Love", "Water", "Food"],
+            "correct": 0,
+            "explanation": "Shalom comes from the root word for 'peace' or 'wholeness'."
+          }
+        ]
+      },
+      "cultural_note": "You've learned some of the most important words for being polite and starting conversations. Using 'shalom', 'toda', and 'bevakasha' will make a great impression!",
+      "pronunciation_tip": "Review the 'ch' (ח ,כ), 'r' (ר), and 'a' (ע) sounds. These are foundational for good Hebrew pronunciation. Keep listening and practicing!",
+      "progress": {
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-Hebrew-Complete"
+      }
+    }
   ]
 }
