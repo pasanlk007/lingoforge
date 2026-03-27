@@ -53,54 +53,8 @@ function DashboardLoading() {
       <main className="flex-1">
         <div className="container mx-auto py-8 sm:py-12 px-4">
           <header className="mb-8">
-            <div className="flex flex-wrap items-start justify-between gap-4">
-              <div>
-                <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-                  {t.welcome}, {displayName}!
-                </h1>
-                <p className="text-muted-foreground mt-2">{t.ready}</p>
-              </div>
-              <div className="flex flex-col gap-3 p-4 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm shadow-sm">
-                <div className="flex flex-col gap-1">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I speak</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {nativeLanguages.map((lang) => (
-                      <button
-                        key={lang}
-                        onClick={() => handleNativeLanguageChange(lang)}
-                        disabled={['Hindi', 'Bengali', 'Nepali', 'Urdu'].includes(lang)}
-                        className={`px-3 py-1 rounded-full text-xs font-semibold border transition-all ${
-                          nativeLanguage === lang
-                            ? 'bg-primary text-primary-foreground border-primary shadow-sm shadow-primary/30'
-                            : 'bg-transparent text-muted-foreground border-border/50 hover:border-primary/50 hover:text-foreground'
-                        } disabled:opacity-30 disabled:cursor-not-allowed`}
-                      >
-                        {lang}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                <div className="w-full h-px bg-border/30" />
-                <div className="flex flex-col gap-1">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I'm learning</p>
-                  <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
-                    <SelectTrigger className="w-full border-border/50 bg-transparent hover:bg-accent/50 transition-colors">
-                      <SelectValue placeholder="Select language" />
-                    </SelectTrigger>
-                    <SelectContent className="max-h-80">
-                      {availableTargetLanguages.map(lang => (
-                        <SelectItem key={lang.lang} value={lang.lang}>
-                          <div className="flex items-center gap-2">
-                            <span className="text-lg">{lang.flag}</span>
-                            <span>{lang.lang}</span>
-                          </div>
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-            </div>
+            <Skeleton className="h-10 w-1/2" />
+            <Skeleton className="h-4 w-3/4 mt-2" />
           </header>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
             <Skeleton className="h-32 w-full" />
@@ -322,6 +276,54 @@ function DashboardContent({ user }: { user: User }) {
             </p>
           </header>
 
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">
+                  {t.currentStreak}
+                </CardTitle>
+                <Flame className="h-5 w-5 text-orange-500" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">{currentStreak || 0} days</div>
+                <p className="text-xs text-muted-foreground">{t.keepFlame}</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">{t.xpPoints}</CardTitle>
+                <Star className="h-5 w-5 text-yellow-500" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">{(xpPoints || 0).toLocaleString()}</div>
+                <p className="text-xs text-muted-foreground">
+                  {xpToNextLevel.toLocaleString()} {t.toNextLevel} {level + 1}
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">{t.level}</CardTitle>
+                <Zap className="h-5 w-5 text-green-500" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">{level}</div>
+                <p className="text-xs text-muted-foreground">{t.advancing}</p>
+              </CardContent>
+            </Card>
+             <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">{t.currentPath}</CardTitle>
+                <Target className="h-5 w-5 text-blue-500" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold capitalize">{activePath || 'Survival'}</div>
+                <p className="text-xs text-muted-foreground">{t.language}: {targetLanguage}</p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-8">
               
               <Card className="border-2 border-primary shadow-lg shadow-primary/10">
