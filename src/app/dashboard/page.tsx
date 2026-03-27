@@ -268,12 +268,46 @@ function DashboardContent({ user }: { user: User }) {
           <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
           <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
           <header className="mb-8">
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
-              {t.welcome}, {displayName}!
-            </h1>
-            <p className="text-muted-foreground mt-2">
-              {t.ready}
-            </p>
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+                  {t.welcome}, {displayName}!
+                </h1>
+                <p className="text-muted-foreground mt-2">{t.ready}</p>
+              </div>
+              <div className="flex flex-col gap-3 p-4 rounded-xl border border-border/50 bg-card/50 shadow-sm">
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I speak</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {nativeLanguages.map((lang) => (
+                    <button
+                      key={lang}
+                      onClick={() => handleNativeLanguageChange(lang)}
+                      disabled={["Hindi", "Bengali", "Nepali", "Urdu"].includes(lang)}
+                      className={cn("px-3 py-1 rounded-full text-xs font-semibold border transition-all disabled:opacity-30 disabled:cursor-not-allowed", nativeLanguage === lang ? "bg-primary text-primary-foreground border-primary" : "bg-transparent text-muted-foreground border-border/50 hover:border-primary/50")}
+                    >
+                      {lang}
+                    </button>
+                  ))}
+                </div>
+                <div className="w-full h-px bg-border/30" />
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I am learning</p>
+                <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
+                  <SelectTrigger className="w-full border-border/50 bg-transparent">
+                    <SelectValue placeholder="Select language" />
+                  </SelectTrigger>
+                  <SelectContent className="max-h-80">
+                    {availableTargetLanguages.map(lang => (
+                      <SelectItem key={lang.lang} value={lang.lang}>
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">{lang.flag}</span>
+                          <span>{lang.lang}</span>
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
           </header>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
