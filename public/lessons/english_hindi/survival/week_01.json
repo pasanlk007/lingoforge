@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,9 +8,9 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Day 1: Basic Greetings",
+      "title_native": "दिन १: सामान्य अभिवादन",
+      "theme": "Greetings & Politeness",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
@@ -17,1315 +18,294 @@
         {
           "id": "w1_1_1",
           "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
+          "phonetic": "Na-mas-te",
+          "native_meaning": "Hello / Goodbye",
+          "english": "Hello / Goodbye",
+          "example_sentence_target": "नमस्ते, आप कैसे हैं?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Namaste, aap kaise hain?"
         },
         {
           "id": "w1_1_2",
           "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
+          "phonetic": "Dhan-ya-vaad",
           "native_meaning": "Thank you",
           "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
+          "example_sentence_target": "आपकी मदद के लिए धन्यवाद।",
+          "example_sentence_native": "Thank you for your help.",
+          "example_sentence_phonetic": "Aapki madad ke liye dhanyavaad."
         },
         {
           "id": "w1_1_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
+          "target": "आप कैसे हैं?",
+          "phonetic": "Aap kai-se hain?",
+          "native_meaning": "How are you? (formal)",
+          "english": "How are you? (formal)",
+          "example_sentence_target": "नमस्ते! आप कैसे हैं?",
+          "example_sentence_native": "Hello! How are you?",
+          "example_sentence_phonetic": "Namaste! Aap kaise hain?"
         },
         {
           "id": "w1_1_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
+          "target": "मैं ठीक हूँ।",
+          "phonetic": "Main theek hoon.",
+          "native_meaning": "I am fine.",
+          "english": "I am fine.",
+          "example_sentence_target": "मैं ठीक हूँ, धन्यवाद।",
+          "example_sentence_native": "I am fine, thank you.",
+          "example_sentence_phonetic": "Main theek hoon, dhanyavaad."
         },
         {
           "id": "w1_1_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
+          "target": "कृपया",
+          "phonetic": "Krip-ya",
+          "native_meaning": "Please",
+          "english": "Please",
+          "example_sentence_target": "कृपया, मेरी मदद करें।",
+          "example_sentence_native": "Please, help me.",
+          "example_sentence_phonetic": "Kripya, meri madad karein."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Meeting someone for the first time.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "नमस्ते।", "native": "Hello.", "phonetic": "Namaste." },
+            { "speaker": "B", "target": "नमस्ते। आप कैसे हैं?", "native": "Hello. How are you?", "phonetic": "Namaste. Aap kaise hain?" },
+            { "speaker": "A", "target": "मैं ठीक हूँ, धन्यवाद। और आप?", "native": "I am fine, thank you. And you?", "phonetic": "Main theek hoon, dhanyavaad. Aur aap?" },
+            { "speaker": "B", "target": "मैं भी ठीक हूँ।", "native": "I am fine too.", "phonetic": "Main bhi theek hoon." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
+        "sentenceScramble": [
+          { "id": "ss1_1_1", "scrambled": ["कैसे", "हैं", "आप", "?"], "correct": "आप कैसे हैं?", "nativeHint": "How are you?" }
         ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_1_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+          { "id": "m1_1_1", "target": "नमस्ते", "native": "Hello" },
+          { "id": "m1_1_2", "target": "धन्यवाद", "native": "Thank you" }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1"
-      }
+      "cultural_note": "‘नमस्ते’ (Namaste) is a respectful greeting performed by pressing the palms together and bowing slightly. It can be used for hello and goodbye.",
+      "pronunciation_tip": "The 'a' sound in Hindi is often short, like the 'a' in 'sofa'. For example, in 'Namaste'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D1-Hindi-Greetings" }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Day 2: Common Courtesies",
+      "title_native": "दिन २: सामान्य शिष्टाचार",
+      "theme": "Politeness & Apologies",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_2_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_2_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_2_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_2_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_2_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_2_1", "target": "माफ़ कीजिए", "phonetic": "Maaf kee-ji-ye", "native_meaning": "Excuse me / Sorry", "english": "Excuse me / Sorry", "example_sentence_target": "माफ़ कीजिए, क्या आप मेरी मदद कर सकते हैं?", "example_sentence_native": "Excuse me, can you help me?", "example_sentence_phonetic": "Maaf kijiye, kya aap meri madad kar sakte hain?" },
+        { "id": "w1_2_2", "target": "स्वागत है", "phonetic": "Swaa-gat hai", "native_meaning": "Welcome", "english": "Welcome", "example_sentence_target": "भारत में आपका स्वागत है।", "example_sentence_native": "Welcome to India.", "example_sentence_phonetic": "Bharat mein aapka swaagat hai." },
+        { "id": "w1_2_3", "target": "कोई बात नहीं", "phonetic": "Koi baat na-heen", "native_meaning": "No problem / It's okay", "english": "No problem / It's okay", "example_sentence_target": "धन्यवाद! - कोई बात नहीं।", "example_sentence_native": "Thank you! - No problem.", "example_sentence_phonetic": "Dhanyavaad! - Koi baat nahin." },
+        { "id": "w1_2_4", "target": "हाँ", "phonetic": "Haan", "native_meaning": "Yes", "english": "Yes", "example_sentence_target": "क्या आप तैयार हैं? - हाँ।", "example_sentence_native": "Are you ready? - Yes.", "example_sentence_phonetic": "Kya aap taiyar hain? - Haan." },
+        { "id": "w1_2_5", "target": "नहीं", "phonetic": "Na-heen", "native_meaning": "No", "english": "No", "example_sentence_target": "क्या आपको कुछ चाहिए? - नहीं, धन्यवाद।", "example_sentence_native": "Do you need anything? - No, thank you.", "example_sentence_phonetic": "Kya aapko kuch chahiye? - Nahin, dhanyavaad." }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Apologizing for bumping into someone.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "ओह, माफ़ कीजिए!", "native": "Oh, excuse me!", "phonetic": "Oh, maaf kijiye!" },
+            { "speaker": "B", "target": "कोई बात नहीं।", "native": "No problem.", "phonetic": "Koi baat nahin." }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+          { "id": "fb1_2_1", "sentence": "___, बाथरूम कहाँ है?", "answer": "माफ़ कीजिए", "hint": "Excuse me, where is the bathroom?" }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D2"
-      }
+      "cultural_note": "Using formal terms like 'Aap' for 'you' shows respect, especially when talking to elders or strangers.",
+      "pronunciation_tip": "Hindi has nasal sounds. The 'n' in 'nahin' (नहीं) is pronounced with air passing through the nose.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D2-Hindi-Courtesies" }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Day 3: Introductions",
+      "title_native": "दिन ३: परिचय",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_3_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_3_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_3_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_3_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_3_1", "target": "मेरा नाम ... है।", "phonetic": "Mera naam ... hai.", "native_meaning": "My name is ...", "english": "My name is ...", "example_sentence_target": "मेरा नाम पॉल है।", "example_sentence_native": "My name is Paul.", "example_sentence_phonetic": "Mera naam Paul hai." },
+        { "id": "w1_3_2", "target": "आपका नाम क्या है?", "phonetic": "Aap-ka naam kya hai?", "native_meaning": "What is your name?", "english": "What is your name?", "example_sentence_target": "नमस्ते, आपका नाम क्या है?", "example_sentence_native": "Hello, what is your name?", "example_sentence_phonetic": "Namaste, aapka naam kya hai?" },
+        { "id": "w1_3_3", "target": "आपसे मिलकर ख़ुशी हुई।", "phonetic": "Aap-se mil-kar khu-shi hoo-ee.", "native_meaning": "Nice to meet you.", "english": "Nice to meet you.", "example_sentence_target": "आपसे मिलकर ख़ुशी हुई।", "example_sentence_native": "Nice to meet you.", "example_sentence_phonetic": "Aap-se mil-kar khushi hoo-ee." },
+        { "id": "w1_3_4", "target": "मैं ... से हूँ।", "phonetic": "Main ... se hoon.", "native_meaning": "I am from ...", "english": "I am from ...", "example_sentence_target": "मैं अमेरिका से हूँ।", "example_sentence_native": "I am from America.", "example_sentence_phonetic": "Main America se hoon." },
+        { "id": "w1_3_5", "target": "शुभ रात्रि", "phonetic": "Shubh raa-tri", "native_meaning": "Good night", "english": "Good night", "example_sentence_target": "ठीक है, शुभ रात्रि।", "example_sentence_native": "Okay, good night.", "example_sentence_phonetic": "Theek hai, shubh raatri." }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "Introducing yourself to a new colleague.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "नमस्ते, मेरा नाम अनिल है।", "native": "Hello, my name is Anil.", "phonetic": "Namaste, mera naam Anil hai." },
+            { "speaker": "B", "target": "नमस्ते अनिल, मेरा नाम सोनिया है। आपसे मिलकर ख़ुशी हुई।", "native": "Hello Anil, my name is Sonia. Nice to meet you.", "phonetic": "Namaste Anil, mera naam Sonia hai. Aapse milkar khushi hui." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+        "sentenceScramble": [
+          { "id": "ss1_3_1", "scrambled": ["नाम", "क्या", "है", "आपका", "?"], "correct": "आपका नाम क्या है?", "nativeHint": "What is your name?" }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D3"
-      }
+      "cultural_note": "Family is very important in Indian culture. It's common to be asked about your family in initial conversations.",
+      "pronunciation_tip": "The 'kh' sound (ख़) is like clearing your throat, a bit stronger than the 'k' sound.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D3-Hindi-Intros" }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Day 4: Basic Questions",
+      "title_native": "दिन ४: सामान्य प्रश्न",
+      "theme": "Asking Questions",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_4_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_4_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_4_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_4_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_4_1", "target": "यह क्या है?", "phonetic": "Yeh kya hai?", "native_meaning": "What is this?", "english": "What is this?", "example_sentence_target": "माफ़ कीजिए, यह क्या है?", "example_sentence_native": "Excuse me, what is this?", "example_sentence_phonetic": "Maaf kijiye, yeh kya hai?" },
+        { "id": "w1_4_2", "target": "कितने का है?", "phonetic": "Kit-ne ka hai?", "native_meaning": "How much is it?", "english": "How much is it?", "example_sentence_target": "यह आम कितने का है?", "example_sentence_native": "How much is this mango?", "example_sentence_phonetic": "Yeh aam kitne ka hai?" },
+        { "id": "w1_4_3", "target": "कहाँ", "phonetic": "Ka-haan", "native_meaning": "Where", "english": "Where", "example_sentence_target": "रेलवे स्टेशन कहाँ है?", "example_sentence_native": "Where is the railway station?", "example_sentence_phonetic": "Railway station kahaan hai?" },
+        { "id": "w1_4_4", "target": "कब", "phonetic": "Kab", "native_meaning": "When", "english": "When", "example_sentence_target": "बस कब आएगी?", "example_sentence_native": "When will the bus come?", "example_sentence_phonetic": "Bus kab aayegi?" },
+        { "id": "w1_4_5", "target": "क्यों", "phonetic": "Kyon", "native_meaning": "Why", "english": "Why", "example_sentence_target": "आप क्यों हँस रहे हैं?", "example_sentence_native": "Why are you laughing?", "example_sentence_phonetic": "Aap kyon hans rahe hain?" }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "At a shop.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "नमस्ते, यह क्या है?", "native": "Hello, what is this?", "phonetic": "Namaste, yeh kya hai?" },
+            { "speaker": "B", "target": "यह एक साड़ी है।", "native": "This is a sari.", "phonetic": "Yeh ek sari hai." },
+            { "speaker": "A", "target": "यह कितने का है?", "native": "How much is it?", "phonetic": "Yeh kitne ka hai?" },
+            { "speaker": "B", "target": "पाँच सौ रुपये।", "native": "Five hundred rupees.", "phonetic": "Paanch sau rupaye." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_4_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+          { "id": "m1_4_1", "target": "कहाँ", "native": "Where" },
+          { "id": "m1_4_2", "target": "कब", "native": "When" },
+          { "id": "m1_4_3", "target": "क्यों", "native": "Why" }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D4"
-      }
+      "cultural_note": "Bargaining is common in many local markets in India, but usually not in larger stores or malls with fixed prices.",
+      "pronunciation_tip": "Differentiate between 'k' (क) and 'kh' (ख). 'k' is like in 'sky', while 'kh' has a slight breathy sound after it.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D4-Hindi-Questions" }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Day 5: Numbers & Help",
+      "title_native": "दिन ५: संख्याएँ और मदद",
+      "theme": "Numbers & Help",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_5_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_5_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_5_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_5_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_5_1", "target": "एक", "phonetic": "Ek", "native_meaning": "One", "english": "One", "example_sentence_target": "मुझे एक पानी की बोतल चाहिए।", "example_sentence_native": "I want one water bottle.", "example_sentence_phonetic": "Mujhe ek paani ki botal chahiye." },
+        { "id": "w1_5_2", "target": "दो", "phonetic": "Do", "native_meaning": "Two", "english": "Two", "example_sentence_target": "मुझे दो टिकट चाहिए।", "example_sentence_native": "I want two tickets.", "example_sentence_phonetic": "Mujhe do ticket chahiye." },
+        { "id": "w1_5_3", "target": "तीन", "phonetic": "Teen", "native_meaning": "Three", "english": "Three", "example_sentence_target": "तीन केले, कृपया।", "example_sentence_native": "Three bananas, please.", "example_sentence_phonetic": "Teen kele, kripya." },
+        { "id": "w1_5_4", "target": "चार", "phonetic": "Chaar", "native_meaning": "Four", "english": "Four", "example_sentence_target": "हम चार लोग हैं।", "example_sentence_native": "We are four people.", "example_sentence_phonetic": "Hum chaar log hain." },
+        { "id": "w1_5_5", "target": "मदद!", "phonetic": "Ma-dad!", "native_meaning": "Help!", "english": "Help!", "example_sentence_target": "मदद! मेरी बस छूट गई।", "example_sentence_native": "Help! I missed my bus.", "example_sentence_phonetic": "Madad! Meri bus chhoot gayi." }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "Buying fruits.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "नमस्ते। मुझे दो सेब चाहिए।", "native": "Hello. I want two apples.", "phonetic": "Namaste. Mujhe do seb chahiye." },
+            { "speaker": "B", "target": "ठीक है, और कुछ?", "native": "Okay, anything else?", "phonetic": "Theek hai, aur kuch?" }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+          { "id": "mc1_5_1", "question": "What is the number 'Three' in Hindi?", "options": ["एक", "दो", "तीन", "चार"], "correct": 2, "explanation": "‘तीन’ (Teen) means Three." }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D5"
-      }
+      "cultural_note": "In India, the number system is widely used, but you'll also hear terms like 'lakh' (100,000) and 'crore' (10,000,000) for large numbers.",
+      "pronunciation_tip": "The 'd' sound in 'madad' is a soft 'd', with the tongue touching the back of the front teeth, not the roof of the mouth.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D5-Hindi-Numbers" }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Day 6: Food & Drink",
+      "title_native": "दिन ६: खाना और पीना",
+      "theme": "Food & Drink",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_6_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_6_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_6_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_6_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_6_1", "target": "पानी", "phonetic": "Paa-ni", "native_meaning": "Water", "english": "Water", "example_sentence_target": "कृपया, एक गिलास पानी।", "example_sentence_native": "Please, one glass of water.", "example_sentence_phonetic": "Kripya, ek glass paani." },
+        { "id": "w1_6_2", "target": "खाना", "phonetic": "Khaa-na", "native_meaning": "Food", "english": "Food", "example_sentence_target": "खाना बहुत स्वादिष्ट है।", "example_sentence_native": "The food is very tasty.", "example_sentence_phonetic": "Khaana bahut swaadisht hai." },
+        { "id": "w1_6_3", "target": "चाय", "phonetic": "Chai", "native_meaning": "Tea", "english": "Tea", "example_sentence_target": "क्या आप चाय पिएंगे?", "example_sentence_native": "Will you drink tea?", "example_sentence_phonetic": "Kya aap chai piyenge?" },
+        { "id": "w1_6_4", "target": "स्वादिष्ट", "phonetic": "Swaa-disht", "native_meaning": "Delicious", "english": "Delicious", "example_sentence_target": "यह खाना बहुत स्वादिष्ट है।", "example_sentence_native": "This food is very delicious.", "example_sentence_phonetic": "Yeh khaana bahut swaadisht hai." },
+        { "id": "w1_6_5", "target": "और", "phonetic": "Aur", "native_meaning": "More / And", "english": "More / And", "example_sentence_target": "मुझे थोड़ा और पानी चाहिए।", "example_sentence_native": "I want a little more water.", "example_sentence_phonetic": "Mujhe thoda aur paani chahiye." }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "At a restaurant.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "माफ़ कीजिए, मेनू मिलेगा?", "native": "Excuse me, can I get the menu?", "phonetic": "Maaf kijiye, menu milega?" },
+            { "speaker": "B", "target": "हाँ, ज़रूर। आप क्या लेना चाहेंगे?", "native": "Yes, of course. What would you like to have?", "phonetic": "Haan, zaroor. Aap kya lena chahenge?" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+          { "id": "fb1_6_1", "sentence": "मुझे एक कप ___ चाहिए।", "answer": "चाय", "hint": "I want one cup of tea." }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D6"
-      }
+      "cultural_note": "'Chai' is an integral part of daily life in India. It's often milky, sweet, and spiced (masala chai).",
+      "pronunciation_tip": "The 'ch' sound in 'chai' (च) is like the 'ch' in 'church'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D6-Hindi-Food" }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Day 7: Simple Directions",
+      "title_native": "दिन ७: सरल दिशाएँ",
+      "theme": "Directions",
       "path": "survival",
       "targetLanguage": "Hindi",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w1_7_1",
-          "target": "नमस्ते",
-          "phonetic": "नमस्ते",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "नमस्ते.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "धन्यवाद",
-          "phonetic": "धन्यवाद",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "धन्यवाद.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "अलविदा",
-          "phonetic": "अलविदा",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "अलविदा.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "कृपया",
-          "phonetic": "कृपया",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "कृपया.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "माफ करें",
-          "phonetic": "माफ करें",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "माफ करें.",
-          "example_sentence_native": "Excuse me."
-        }
+        { "id": "w1_7_1", "target": "यहाँ", "phonetic": "Ya-haan", "native_meaning": "Here", "english": "Here", "example_sentence_target": "शौचालय यहाँ है।", "example_sentence_native": "The toilet is here.", "example_sentence_phonetic": "Shauchalay yahaan hai." },
+        { "id": "w1_7_2", "target": "वहाँ", "phonetic": "Wa-haan", "native_meaning": "There", "english": "There", "example_sentence_target": "दुकान वहाँ है।", "example_sentence_native": "The shop is there.", "example_sentence_phonetic": "Dukaan wahaan hai." },
+        { "id": "w1_7_3", "target": "सीधे", "phonetic": "See-dhe", "native_meaning": "Straight", "english": "Straight", "example_sentence_target": "सीधे जाइए।", "example_sentence_native": "Go straight.", "example_sentence_phonetic": "Seedhe jaiye." },
+        { "id": "w1_7_4", "target": "बाएँ", "phonetic": "Baa-ein", "native_meaning": "Left", "english": "Left", "example_sentence_target": "बाएँ मुड़ें।", "example_sentence_native": "Turn left.", "example_sentence_phonetic": "Baaein mudein." },
+        { "id": "w1_7_5", "target": "दाएँ", "phonetic": "Daa-ein", "native_meaning": "Right", "english": "Right", "example_sentence_target": "दाएँ मुड़ें।", "example_sentence_native": "Turn right.", "example_sentence_phonetic": "Daaein mudein." }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "Asking for directions to the toilet.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "नमस्ते!",
-              "native": "Hello!",
-              "phonetic": "नमस्ते"
-            },
-            {
-              "speaker": "B",
-              "target": "नमस्ते! धन्यवाद!",
-              "native": "Hello! Thank you!",
-              "phonetic": "नमस्ते धन्यवाद"
-            },
-            {
-              "speaker": "A",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "धन्यवाद!",
-              "native": "Thank you!",
-              "phonetic": "धन्यवाद"
-            },
-            {
-              "speaker": "B",
-              "target": "अलविदा!",
-              "native": "Goodbye!",
-              "phonetic": "अलविदा"
-            },
-            {
-              "speaker": "A",
-              "target": "कृपया! माफ करें!",
-              "native": "Please! Excuse me!",
-              "phonetic": "कृपया माफ करें"
-            }
+            { "speaker": "A", "target": "माफ़ कीजिए, शौचालय कहाँ है?", "native": "Excuse me, where is the toilet?", "phonetic": "Maaf kijiye, shauchalay kahaan hai?" },
+            { "speaker": "B", "target": "सीधे जाइए और फिर दाएँ।", "native": "Go straight and then right.", "phonetic": "Seedhe jaiye aur phir daaein." }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Hindi",
-            "answer": "नमस्ते",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Hindi",
-            "answer": "धन्यवाद",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Hindi",
-            "answer": "अलविदा",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "नमस्ते",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "धन्यवाद",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "अलविदा",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "कृपया",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "माफ करें",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'नमस्ते' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'नमस्ते' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Hindi?",
-            "options": [
-              "नमस्ते",
-              "धन्यवाद",
-              "अलविदा",
-              "कृपया"
-            ],
-            "correct": 1,
-            "explanation": "'धन्यवाद' means Thank you."
-          }
+          { "id": "m1_7_1", "target": "बाएँ", "native": "Left" },
+          { "id": "m1_7_2", "target": "दाएँ", "native": "Right" },
+          { "id": "m1_7_3", "target": "सीधे", "native": "Straight" }
         ]
       },
-      "cultural_note": "Learning Hindi opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Hindi pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
-      }
+      "cultural_note": "People in India are generally very helpful. Don't be afraid to ask for directions, but be aware that gestures like a head wobble can mean 'yes' or 'okay'.",
+      "pronunciation_tip": "Hindi has retroflex consonants like 'ट' (t) and 'ड' (d), where the tongue curls back to touch the roof of the mouth. This is different from the dental 'त' (t) and 'द' (d).",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1D7-Hindi-Directions" }
     }
   ]
 }
