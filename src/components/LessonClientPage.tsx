@@ -80,6 +80,10 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const t = (isMounted && translations[nativeLanguage]?.ui)
       ? translations[nativeLanguage].ui
       : translations.English.ui;
+    
+    const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard)
+      ? translations[nativeLanguage].dashboard
+      : translations.English.dashboard;
 
     
     if (!dayData || !isMounted) {
@@ -178,6 +182,10 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
     const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === lesson.language.toLowerCase());
     const flag = langInfo ? langInfo.flag : '🌍';
 
+    const nextDay = currentDay < 7 ? currentDay + 1 : 1;
+    const nextWeek = currentDay < 7 ? dayData.week : dayData.week + 1;
+    const nextLessonUrl = `/lessons/${lesson.language.toLowerCase()}/${lesson.path}/${nextWeek}/${nextDay}`;
+
     return (
       <>
         <VoiceInit />
@@ -265,19 +273,28 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                         <div className="relative">
                             <div className="absolute -inset-20"><Confetti active={isComplete} config={confettiConfig} /></div>
                             {isComplete ? (
-                                <div>
-                                 <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
-                                    <CheckCircle className="h-4 w-4" />
-                                    <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
-                                    <AlertDescription className="text-xs">
-                                      {t.earnedXP
-                                        .replace('{xp}', progress?.xp.toString() ?? '0')
-                                        .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
-                                    </AlertDescription>
-                                </Alert>
-                                <Button className="w-full mt-3" onClick={() => (window.location.href = "/dashboard")}>
-                                  Go to Dashboard
-                                </Button>
+                                <div className="w-full max-w-xs">
+                                    <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
+                                        <CheckCircle className="h-4 w-4" />
+                                        <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
+                                        <AlertDescription className="text-xs">
+                                        {t.earnedXP
+                                            .replace('{xp}', progress?.xp.toString() ?? '0')
+                                            .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
+                                        </AlertDescription>
+                                    </Alert>
+                                    <div className="mt-4 grid grid-cols-1 gap-2">
+                                        <Button asChild className="w-full">
+                                            <Link href={nextLessonUrl}>
+                                                {t_dashboard.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
+                                            </Link>
+                                        </Button>
+                                        <Button variant="outline" asChild className="w-full">
+                                            <Link href="/dashboard">
+                                                {t.backToDashboard}
+                                            </Link>
+                                        </Button>
+                                    </div>
                                 </div>
                             ) : (
                                  <Button size="lg" onClick={handleCompleteDay} disabled={!canCompleteDay || !userProfile || isDayCompleted}>
