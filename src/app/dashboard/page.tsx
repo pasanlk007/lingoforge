@@ -82,7 +82,7 @@ function DashboardLoading() {
                 </div>
                 <div className="w-full h-px bg-border/30" />
                 <div className="flex flex-col gap-1">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I&apos;m learning</p>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I'm learning</p>
                   <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
                     <SelectTrigger className="w-full border-border/50 bg-transparent hover:bg-accent/50 transition-colors">
                       <SelectValue placeholder="Select language" />
