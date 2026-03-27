@@ -8,7 +8,7 @@ import type { UserProfile, UserWeekProgress } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
-import { CheckCircle, Star, Lock, Construction } from 'lucide-react';
+import { CheckCircle, Star, Lock, Construction, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations } from '@/lib/translations';
@@ -171,9 +171,11 @@ export default function SurvivalPathPage() {
                     ) : (
                       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                         {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
+                          const isDayCompleted = completedDaysInWeek.includes(day);
                           return (
-                            <Button asChild variant="secondary" key={day}>
+                            <Button asChild variant="secondary" key={day} className={cn(isDayCompleted && 'bg-green-600 text-white hover:bg-green-700')}>
                               <Link href={`/lessons/${targetLanguage.toLowerCase()}/survival/${week}/${day}`}>
+                                {isDayCompleted && <Check className="mr-1 h-4 w-4" />}
                                 {`${t.day} ${day}`}
                               </Link>
                             </Button>
