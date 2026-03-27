@@ -46,7 +46,7 @@ export function TrialEndBanner({ trialDaysUsed, subscriptionActive, userEmail }:
           <Zap className="h-5 w-5 text-red-500 shrink-0" />
           <div className="flex-1">
             <p className="font-semibold text-red-700 dark:text-red-400">🔒 Your free trial has ended</p>
-            <p className="text-sm text-muted-foreground mt-0.5">Upgrade to continue your language journey. Plans start at $4.99/week.</p>
+            <p className="text-sm text-muted-foreground mt-0.5">Upgrade to continue your language journey. Plans start at $3.99/week.</p>
           </div>
           <Button size="sm" asChild className="shrink-0 bg-red-600 hover:bg-red-700">
             <Link href="/pricing">Upgrade Now</Link>

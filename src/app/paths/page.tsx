@@ -147,7 +147,7 @@ export default function PathsPage() {
               <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">Single Language</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">$4.99<span className="text-base font-medium text-slate-400">/week</span></p>
+                  <p className="text-4xl font-extrabold mt-2">$3.99<span className="text-base font-medium text-slate-400">/week</span></p>
                   <p className="text-sm text-slate-400 mt-1">Master one language. Renews weekly.</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
@@ -167,7 +167,7 @@ export default function PathsPage() {
                 <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">⭐ BEST VALUE</Badge>
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">Survive Anywhere</CardTitle>
-                   <p className="text-4xl font-extrabold mt-2">$79<span className="text-base font-medium text-slate-400">/one-time</span></p>
+                   <p className="text-4xl font-extrabold mt-2">$99<span className="text-base font-medium text-slate-400">/one-time</span></p>
                    <p className="text-sm font-semibold text-yellow-400">One-time payment for lifetime access to ALL languages.</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
@@ -187,7 +187,7 @@ export default function PathsPage() {
                 <Badge variant="default" className="w-fit mb-4">POPULAR</Badge>
                 <CardHeader className="p-0">
                   <CardTitle className="font-bold text-xl">Single Course</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">$49<span className="text-base font-medium text-slate-400">/one-time</span></p>
+                  <p className="text-4xl font-extrabold mt-2">$39<span className="text-base font-medium text-slate-400">/one-time</span></p>
                   <p className="text-sm text-slate-400 mt-1">One-time payment for one full language course.</p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">

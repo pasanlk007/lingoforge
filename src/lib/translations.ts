@@ -1,5 +1,3 @@
-
-
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -819,7 +817,6 @@ export const translations = {
       siteLanguageDesc: "ویب سائٹ انٹرفیس کے لیے زبان کا انتخاب کریں۔",
       targetLanguage: "ہدف زبان",
       targetLanguageDesc: "وہ زبان منتخب کریں جو آپ سیکھنا چاہتے ہیں۔",
-      selectTargetLanguage: "سیکھنے کے لیے زبان منتخب کریں",
       weeklyProgress: "اس ہفتے کی پیشرفت",
       days: {
         mon: 'پیر',
@@ -1429,10 +1426,10 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Weekly",
-      price: "$5",
+      title: "Single Language",
+      price: "$3.99",
       per: "/week",
-      desc: "Renews automatically every 7 days.",
+      desc: "Master one language.",
       feat1: "All 3 Learning Paths",
       feat2: "Full week of content",
       feat3: "Native audio for all words",
@@ -1441,11 +1438,11 @@ export const translations = {
       feat6: "Cancel anytime",
     },
     completePlan: {
-      title: "Complete Package",
+      title: "Single Course",
       price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
-      desc: "One-time payment for lifetime access.",
+      desc: "One-time payment for one full language course.",
       subtext: "Pay once, learn forever!",
       feat1: "Everything in Weekly",
       feat2: "All 12 weeks of content",
@@ -1660,10 +1657,10 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Weekly",
-      price: "$5",
+      title: "Single Language",
+      price: "$3.99",
       per: "/week",
-      desc: "Renews automatically every 7 days.",
+      desc: "Master one language.",
       feat1: "All 3 Learning Paths",
       feat2: "Full week of content",
       feat3: "Native audio for all words",
@@ -1672,11 +1669,11 @@ export const translations = {
       feat6: "Cancel anytime",
     },
     completePlan: {
-      title: "Complete Package",
+      title: "Single Course",
       price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
-      desc: "One-time payment for lifetime access.",
+      desc: "One-time payment for one full language course.",
       subtext: "Pay once, learn forever!",
       feat1: "Everything in Weekly",
       feat2: "All 12 weeks of content",
@@ -1891,10 +1888,10 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Weekly",
-      price: "$5",
+      title: "Single Language",
+      price: "$3.99",
       per: "/week",
-      desc: "Renews automatically every 7 days.",
+      desc: "Master one language.",
       feat1: "All 3 Learning Paths",
       feat2: "Full week of content",
       feat3: "Native audio for all words",
@@ -1903,11 +1900,11 @@ export const translations = {
       feat6: "Cancel anytime",
     },
     completePlan: {
-      title: "Complete Package",
+      title: "Single Course",
       price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
-      desc: "One-time payment for lifetime access.",
+      desc: "One-time payment for one full language course.",
       subtext: "Pay once, learn forever!",
       feat1: "Everything in Weekly",
       feat2: "All 12 weeks of content",
@@ -2122,10 +2119,10 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Weekly",
-      price: "$5",
+      title: "Single Language",
+      price: "$3.99",
       per: "/week",
-      desc: "Renews automatically every 7 days.",
+      desc: "Master one language.",
       feat1: "All 3 Learning Paths",
       feat2: "Full week of content",
       feat3: "Native audio for all words",
@@ -2134,11 +2131,11 @@ export const translations = {
       feat6: "Cancel anytime",
     },
     completePlan: {
-      title: "Complete Package",
+      title: "Single Course",
       price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
-      desc: "One-time payment for lifetime access.",
+      desc: "One-time payment for one full language course.",
       subtext: "Pay once, learn forever!",
       feat1: "Everything in Weekly",
       feat2: "All 12 weeks of content",
@@ -2353,10 +2350,10 @@ export const translations = {
       btn: "Start for Free"
     },
     weeklyPlan: {
-      title: "Weekly",
-      price: "$5",
+      title: "Single Language",
+      price: "$3.99",
       per: "/week",
-      desc: "Renews automatically every 7 days.",
+      desc: "Master one language.",
       feat1: "All 3 Learning Paths",
       feat2: "Full week of content",
       feat3: "Native audio for all words",
@@ -2365,11 +2362,11 @@ export const translations = {
       feat6: "Cancel anytime",
     },
     completePlan: {
-      title: "Complete Package",
+      title: "Single Course",
       price: "$39",
       per: " / one-time",
       badge: "⭐ BEST VALUE",
-      desc: "One-time payment for lifetime access.",
+      desc: "One-time payment for one full language course.",
       subtext: "Pay once, learn forever!",
       feat1: "Everything in Weekly",
       feat2: "All 12 weeks of content",
@@ -2545,6 +2542,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
