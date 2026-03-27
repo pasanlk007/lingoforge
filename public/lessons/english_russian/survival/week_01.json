@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -7,294 +8,193 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "Неделя 1, День 1: Основные приветствия",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_1_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
+          "target": "Здравствуйте",
+          "phonetic": "Zdrast-vuy-tye",
+          "native_meaning": "Hello (formal)",
           "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "example_sentence_target": "Здравствуйте, как вы поживаете?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Zdrast-vuy-tye, kak vy pazhivayete?"
         },
         {
           "id": "w1_1_2",
-          "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "target": "Привет",
+          "phonetic": "Pree-vyet",
+          "native_meaning": "Hi (informal)",
+          "english": "Hi",
+          "example_sentence_target": "Привет, как дела?",
+          "example_sentence_native": "Hi, how are things?",
+          "example_sentence_phonetic": "Pree-vyet, kak dye-la?"
         },
         {
           "id": "w1_1_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Да",
+          "phonetic": "Da",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "Вы говорите по-русски? Да.",
+          "example_sentence_native": "Do you speak Russian? Yes.",
+          "example_sentence_phonetic": "Vy gavaritye pa-ruski? Da."
         },
         {
           "id": "w1_1_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
+          "target": "Нет",
+          "phonetic": "Nyet",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "Это ваш чемодан? Нет.",
+          "example_sentence_native": "Is this your suitcase? No.",
+          "example_sentence_phonetic": "Eta vash che-ma-dan? Nyet."
         },
         {
           "id": "w1_1_5",
-          "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "target": "Спасибо",
+          "phonetic": "Spa-see-ba",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "Вот ваш кофе. Спасибо.",
+          "example_sentence_native": "Here is your coffee. Thank you.",
+          "example_sentence_phonetic": "Vot vash ko-fe. Spa-see-ba."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Meeting a stranger for the first time formally.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Здравствуйте.",
+              "native": "Hello.",
+              "phonetic": "Zdrast-vuy-tye."
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
+              "target": "Здравствуйте.",
+              "native": "Hello.",
+              "phonetic": "Zdrast-vuy-tye."
             }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "Greeting a friend.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
+              "target": "Привет, Анна!",
+              "native": "Hi, Anna!",
+              "phonetic": "Pree-vyet, Anna!"
             },
             {
               "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Привет, Марк!",
+              "native": "Hi, Mark!",
+              "phonetic": "Pree-vyet, Mark!"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
+          { "id": "m1_1_1", "target": "Здравствуйте", "native": "Hello (formal)" },
+          { "id": "m1_1_2", "target": "Привет", "native": "Hi (informal)" },
+          { "id": "m1_1_3", "target": "Да", "native": "Yes" },
+          { "id": "m1_1_4", "target": "Спасибо", "native": "Thank you" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc1_1_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
+            "id": "ss1_1_1",
+            "scrambled": ["как", "дела", "?"],
+            "correct": "как дела?",
+            "nativeHint": "How are things?"
           }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "In Russia, 'Здравствуйте' (Zdrast-vuy-tye) is the formal way to say 'hello' and is used with strangers, elders, and in professional settings. 'Привет' (Pree-vyet) is informal and used with friends, family, and people you know well.",
+      "pronunciation_tip": "The Russian 'р' (r) is rolled, similar to the Spanish 'r'. Try tapping the tip of your tongue against the roof of your mouth, just behind your front teeth.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D1"
+        "badge": "W1D1-RussianGreetings"
       }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 2: Farewells and Politeness",
+      "title_native": "Неделя 1, День 2: Прощания и вежливость",
+      "theme": "Farewells & Politeness",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_2_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "target": "До свидания",
+          "phonetic": "Do svee-da-nee-ya",
+          "native_meaning": "Goodbye (formal)",
+          "english": "Goodbye",
+          "example_sentence_target": "Спасибо за встречу. До свидания.",
+          "example_sentence_native": "Thank you for the meeting. Goodbye.",
+          "example_sentence_phonetic": "Spa-see-ba za vstre-chu. Do svee-da-nee-ya."
         },
         {
           "id": "w1_2_2",
-          "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "target": "Пока",
+          "phonetic": "Pa-ka",
+          "native_meaning": "Bye (informal)",
+          "english": "Bye",
+          "example_sentence_target": "Увидимся завтра. Пока!",
+          "example_sentence_native": "See you tomorrow. Bye!",
+          "example_sentence_phonetic": "Oo-vee-deem-sya zav-tra. Pa-ka!"
         },
         {
           "id": "w1_2_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Пожалуйста",
+          "phonetic": "Pa-zhal-sta",
+          "native_meaning": "Please / You're welcome",
+          "english": "Please / You're welcome",
+          "example_sentence_target": "Дайте, пожалуйста, меню.",
+          "example_sentence_native": "Give me the menu, please.",
+          "example_sentence_phonetic": "Day-tye, pa-zhal-sta, me-nyu."
         },
         {
           "id": "w1_2_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_2_5",
           "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "phonetic": "Eez-vee-nee-tye",
+          "native_meaning": "Excuse me / Sorry",
+          "english": "Excuse me / Sorry",
+          "example_sentence_target": "Извините, где здесь туалет?",
+          "example_sentence_native": "Excuse me, where is the toilet here?",
+          "example_sentence_phonetic": "Eez-vee-nee-tye, gdye zdyes' tua-lyet?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Asking for something politely.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Можно мне воды, пожалуйста?",
+              "native": "Can I have some water, please?",
+              "phonetic": "Mozh-no mnye va-dy, pa-zhal-sta?"
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
-            },
-            {
-              "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Да, конечно. Вот, пожалуйста.",
+              "native": "Yes, of course. Here you are.",
+              "phonetic": "Da, ka-nyesh-na. Vot, pa-zhal-sta."
             }
           ]
         }
@@ -303,754 +203,372 @@
         "fillBlanks": [
           {
             "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
+            "sentence": "Дайте мне, ___, счёт.",
+            "answer": "пожалуйста",
+            "hint": "Give me the bill, please."
           },
           {
             "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_2_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
+            "sentence": "___, я не говорю по-русски.",
+            "answer": "Извините",
+            "hint": "Sorry, I don't speak Russian."
           }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "'Пожалуйста' (Pa-zhal-sta) is a very versatile word. It means 'please' when making a request, and 'you're welcome' in response to 'thank you'.",
+      "pronunciation_tip": "The 'ж' sound in 'пожалуйста' is like the 's' in 'treasure' or 'pleasure'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D2"
+        "badge": "W1D2-RussianPoliteness"
       }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 3: Introducing Yourself",
+      "title_native": "Неделя 1, День 3: Представление себя",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_3_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "target": "Меня зовут...",
+          "phonetic": "Me-nya za-voot...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "Здравствуйте, меня зовут Анна.",
+          "example_sentence_native": "Hello, my name is Anna.",
+          "example_sentence_phonetic": "Zdrast-vuy-tye, me-nya za-voot Anna."
         },
         {
           "id": "w1_3_2",
-          "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "target": "Как вас зовут?",
+          "phonetic": "Kak vas za-voot?",
+          "native_meaning": "What is your name? (formal)",
+          "english": "What is your name? (formal)",
+          "example_sentence_target": "Извините, как вас зовут?",
+          "example_sentence_native": "Excuse me, what is your name?",
+          "example_sentence_phonetic": "Eez-vee-nee-tye, kak vas za-voot?"
         },
         {
           "id": "w1_3_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Очень приятно",
+          "phonetic": "O-chen' pree-yat-na",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Меня зовут Иван. Очень приятно.",
+          "example_sentence_native": "My name is Ivan. Nice to meet you.",
+          "example_sentence_phonetic": "Me-nya za-voot Ivan. O-chen' pree-yat-na."
         },
         {
           "id": "w1_3_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_3_5",
-          "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "target": "Я из...",
+          "phonetic": "Ya eez...",
+          "native_meaning": "I am from...",
+          "english": "I am from...",
+          "example_sentence_target": "Я из Америки.",
+          "example_sentence_native": "I am from America.",
+          "example_sentence_phonetic": "Ya eez A-mye-ree-kee."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "A formal introduction between two people.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Здравствуйте. Меня зовут Борис. А вас?",
+              "native": "Hello. My name is Boris. And you?",
+              "phonetic": "Zdrast-vuy-tye. Me-nya za-voot Boris. A vas?"
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
-            },
-            {
-              "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Меня зовут Светлана. Очень приятно.",
+              "native": "My name is Svetlana. Nice to meet you.",
+              "phonetic": "Me-nya za-voot Svetlana. O-chen' pree-yat-na."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["вас", "зовут", "Как", "?"],
+            "correct": "Как вас зовут?",
+            "nativeHint": "What is your name? (formal)"
+          }
+        ],
+         "fillBlanks": [
           {
             "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
+            "sentence": "Меня ___ Мария.",
+            "answer": "зовут",
+            "hint": "My name is Maria."
           }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Russians use formal ('вы', 'vas') and informal ('ты', 'tebya') forms of 'you'. Always use the formal 'вы' with people you don't know, elders, and in professional settings. Only switch to 'ты' if invited to.",
+      "pronunciation_tip": "Russian words have a main stress, and unstressed vowels are often reduced. For example, in 'хорошо' (ha-ra-sho), the stress is on the last 'о', so the first two 'o's sound more like 'a'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D3"
+        "badge": "W1D3-RussianIntros"
       }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 4: How are you?",
+      "title_native": "Неделя 1, День 4: Как дела?",
+      "theme": "Well-being",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_4_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "target": "Как дела?",
+          "phonetic": "Kak dye-la?",
+          "native_meaning": "How are you? / How are things?",
+          "english": "How are you?",
+          "example_sentence_target": "Привет! Как дела?",
+          "example_sentence_native": "Hi! How are you?",
+          "example_sentence_phonetic": "Pree-vyet! Kak dye-la?"
         },
         {
           "id": "w1_4_2",
-          "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "target": "Хорошо",
+          "phonetic": "Ha-ra-sho",
+          "native_meaning": "Good / Well",
+          "english": "Good",
+          "example_sentence_target": "Спасибо, у меня всё хорошо.",
+          "example_sentence_native": "Thank you, everything is good with me.",
+          "example_sentence_phonetic": "Spa-see-ba, u me-nya fsyo ha-ra-sho."
         },
         {
           "id": "w1_4_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Плохо",
+          "phonetic": "Plo-ha",
+          "native_meaning": "Bad",
+          "english": "Bad",
+          "example_sentence_target": "Сегодня погода плохая.",
+          "example_sentence_native": "The weather is bad today.",
+          "example_sentence_phonetic": "Se-vod-nya pa-go-da plo-ha-ya."
         },
         {
           "id": "w1_4_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_4_5",
-          "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "target": "Нормально",
+          "phonetic": "Nar-mal'-na",
+          "native_meaning": "Okay / So-so",
+          "english": "Okay",
+          "example_sentence_target": "Как дела? Нормально.",
+          "example_sentence_native": "How are you? Okay.",
+          "example_sentence_phonetic": "Kak dye-la? Nar-mal'-na."
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "Catching up with a friend.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Привет, Иван! Как дела?",
+              "native": "Hi, Ivan! How are things?",
+              "phonetic": "Pree-vyet, Ivan! Kak dye-la?"
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
-            },
-            {
-              "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Привет! У меня всё хорошо, спасибо. А у тебя?",
+              "native": "Hi! Everything's good with me, thanks. And you?",
+              "phonetic": "Pree-vyet! U me-nya fsyo ha-ra-sho, spa-see-ba. A u te-bya?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
+            "question": "How do you say 'Good' in Russian?",
+            "options": ["Плохо", "Нормально", "Хорошо", "Привет"],
+            "correct": 2,
+            "explanation": "'Хорошо' (Ha-ra-sho) means 'Good' or 'Well'."
           }
+        ],
+        "matching": [
+            { "id": "m1_4_1", "target": "Как дела?", "native": "How are you?" },
+            { "id": "m1_4_2", "target": "Хорошо", "native": "Good" },
+            { "id": "m1_4_3", "target": "Плохо", "native": "Bad" }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Unlike in some English-speaking cultures where 'How are you?' is just a greeting, in Russia, 'Как дела?' is often a genuine question. People may give a more detailed answer than just 'good'. 'Нормально' is a very common, neutral response.",
+      "pronunciation_tip": "The Russian letter 'ы' can be tricky. It's a sound that doesn't exist in English. Try to make an 'ee' sound, but pull your tongue back in your mouth. It's like the 'i' in the word 'ill', but further back.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D4"
+        "badge": "W1D4-RussianWellbeing"
       }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 5: Basic Questions",
+      "title_native": "Неделя 1, День 5: Основные вопросы",
+      "theme": "Question Words",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_5_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "target": "Что?",
+          "phonetic": "Shto?",
+          "native_meaning": "What?",
+          "english": "What?",
+          "example_sentence_target": "Что это?",
+          "example_sentence_native": "What is this?",
+          "example_sentence_phonetic": "Shto e-ta?"
         },
         {
           "id": "w1_5_2",
-          "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "target": "Где?",
+          "phonetic": "Gdye?",
+          "native_meaning": "Where?",
+          "english": "Where?",
+          "example_sentence_target": "Где находится отель?",
+          "example_sentence_native": "Where is the hotel located?",
+          "example_sentence_phonetic": "Gdye na-ho-deet-sya a-tel'?"
         },
         {
           "id": "w1_5_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Кто?",
+          "phonetic": "Kto?",
+          "native_meaning": "Who?",
+          "english": "Who?",
+          "example_sentence_target": "Кто это?",
+          "example_sentence_native": "Who is that?",
+          "example_sentence_phonetic": "Kto e-ta?"
         },
         {
           "id": "w1_5_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_5_5",
-          "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "target": "Когда?",
+          "phonetic": "Kag-da?",
+          "native_meaning": "When?",
+          "english": "When?",
+          "example_sentence_target": "Когда открывается магазин?",
+          "example_sentence_native": "When does the store open?",
+          "example_sentence_phonetic": "Kag-da at-kry-va-yet-sya ma-ga-zeen?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "Asking for the location of the metro.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Извините, где метро?",
+              "native": "Excuse me, where is the metro?",
+              "phonetic": "Eez-vee-nee-tye, gdye metro?"
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
-            },
-            {
-              "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Метро там, прямо.",
+              "native": "The metro is there, straight ahead.",
+              "phonetic": "Metro tam, prya-ma."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
-          }
+          { "id": "m1_5_1", "target": "Что?", "native": "What?" },
+          { "id": "m1_5_2", "target": "Где?", "native": "Where?" },
+          { "id": "m1_5_3", "target": "Кто?", "native": "Who?" },
+          { "id": "m1_5_4", "target": "Когда?", "native": "When?" }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "In Russian, you can often form a yes/no question simply by changing your intonation, without changing the word order. A rising intonation at the end of a statement turns it into a question. E.g., 'Это ваш дом.' (This is your house.) vs 'Это ваш дом?' (Is this your house?).",
+      "pronunciation_tip": "The letter 'ч' in 'Что' (shto) is pronounced like 'ch' in 'cheese'. However, in the word 'Что', it is traditionally pronounced as 'sh'. This is an exception.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D5"
+        "badge": "W1D5-RussianQuestions"
       }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 6: Understanding",
+      "title_native": "Неделя 1, День 6: Понимание",
+      "theme": "Understanding",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_6_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "target": "Я понимаю",
+          "phonetic": "Ya pa-nee-ma-yu",
+          "native_meaning": "I understand",
+          "english": "I understand",
+          "example_sentence_target": "Да, я понимаю по-русски.",
+          "example_sentence_native": "Yes, I understand Russian.",
+          "example_sentence_phonetic": "Da, ya pa-nee-ma-yu pa-rus-ki."
         },
         {
           "id": "w1_6_2",
-          "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "target": "Я не понимаю",
+          "phonetic": "Ya nye pa-nee-ma-yu",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Извините, я не понимаю.",
+          "example_sentence_native": "Sorry, I don't understand.",
+          "example_sentence_phonetic": "Eez-vee-nee-tye, ya nye pa-nee-ma-yu."
         },
         {
           "id": "w1_6_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Вы говорите по-английски?",
+          "phonetic": "Vy ga-va-ree-tye pa-ang-gliys-ki?",
+          "native_meaning": "Do you speak English? (formal)",
+          "english": "Do you speak English?",
+          "example_sentence_target": "Извините, вы говорите по-английски?",
+          "example_sentence_native": "Excuse me, do you speak English?",
+          "example_sentence_phonetic": "Eez-vee-nee-tye, vy ga-va-ree-tye pa-ang-gliys-ki?"
         },
         {
           "id": "w1_6_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_6_5",
-          "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "target": "Повторите, пожалуйста",
+          "phonetic": "Pav-ta-ree-tye, pa-zhal-sta",
+          "native_meaning": "Please repeat",
+          "english": "Please repeat",
+          "example_sentence_target": "Я не понимаю. Повторите, пожалуйста.",
+          "example_sentence_native": "I don't understand. Please repeat.",
+          "example_sentence_phonetic": "Ya nye pa-nee-ma-yu. Pav-ta-ree-tye, pa-zhal-sta."
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "Struggling to understand directions.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Извините, я не понимаю. Вы говорите по-английски?",
+              "native": "Excuse me, I don't understand. Do you speak English?",
+              "phonetic": "Eez-vee-nee-tye, ya nye pa-nee-ma-yu. Vy ga-va-ree-tye pa-ang-gliys-ki?"
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
-            },
-            {
-              "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Да, немного. Что вы ищете?",
+              "native": "Yes, a little. What are you looking for?",
+              "phonetic": "Da, neem-no-ga. Shto vy ee-shche-tye?"
             }
           ]
         }
@@ -1059,272 +577,121 @@
         "fillBlanks": [
           {
             "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
+            "sentence": "Я не ___. Повторите, пожалуйста.",
+            "answer": "понимаю",
+            "hint": "I don't ___. Please repeat."
           }
         ],
-        "matching": [
+        "sentenceScramble": [
           {
-            "id": "m1_6_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
+            "id": "ss1_6_1",
+            "scrambled": ["Вы", "по-английски", "говорите", "?"],
+            "correct": "Вы говорите по-английски?",
+            "nativeHint": "Do you speak English?"
           }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Most Russians, especially in big cities like Moscow and St. Petersburg, have studied English in school. Younger people are more likely to speak it confidently. Don't be afraid to ask 'Вы говорите по-английски?'.",
+      "pronunciation_tip": "Consonant clusters can be challenging. Practice saying them slowly first. For example, in 'Здравствуйте' (Zdrast-vuy-tye), break it down: 'Zdrast' - 'vuy' - 'tye'.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D6"
+        "badge": "W1D6-RussianUnderstanding"
       }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 7: Weekly Review",
+      "title_native": "Неделя 1, День 7: Обзор недели",
+      "theme": "Review",
       "path": "survival",
       "targetLanguage": "Russian",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_7_1",
-          "target": "Привет",
-          "phonetic": "pri-VYET",
-          "native_meaning": "Hello",
+          "target": "Здравствуйте",
+          "phonetic": "Zdrast-vuy-tye",
+          "native_meaning": "Hello (formal)",
           "english": "Hello",
-          "example_sentence_target": "Привет.",
-          "example_sentence_native": "Hello."
+          "example_sentence_target": "Здравствуйте, меня зовут...",
+          "example_sentence_native": "Hello, my name is...",
+          "example_sentence_phonetic": "Zdrast-vuy-tye, me-nya za-voot..."
         },
         {
           "id": "w1_7_2",
           "target": "Спасибо",
-          "phonetic": "spa-SI-ba",
+          "phonetic": "Spa-see-ba",
           "native_meaning": "Thank you",
           "english": "Thank you",
-          "example_sentence_target": "Спасибо.",
-          "example_sentence_native": "Thank you."
+          "example_sentence_target": "Спасибо за помощь.",
+          "example_sentence_native": "Thank you for the help.",
+          "example_sentence_phonetic": "Spa-see-ba za po-mashch."
         },
         {
           "id": "w1_7_3",
-          "target": "До свидания",
-          "phonetic": "da-svi-DA-ni-ya",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "До свидания.",
-          "example_sentence_native": "Goodbye."
+          "target": "Извините",
+          "phonetic": "Eez-vee-nee-tye",
+          "native_meaning": "Excuse me / Sorry",
+          "english": "Excuse me / Sorry",
+          "example_sentence_target": "Извините, где банк?",
+          "example_sentence_native": "Excuse me, where is the bank?",
+          "example_sentence_phonetic": "Eez-vee-nee-tye, gdye bank?"
         },
         {
           "id": "w1_7_4",
-          "target": "Пожалуйста",
-          "phonetic": "po-ZHA-lu-sta",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "Пожалуйста.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "Извините",
-          "phonetic": "eez-vi-NI-te",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "Извините.",
-          "example_sentence_native": "Excuse me."
+          "target": "Я не понимаю",
+          "phonetic": "Ya nye pa-nee-ma-yu",
+          "native_meaning": "I don't understand",
+          "english": "I don't understand",
+          "example_sentence_target": "Извините, я не понимаю по-русски.",
+          "example_sentence_native": "Sorry, I don't understand Russian.",
+          "example_sentence_phonetic": "Eez-vee-nee-tye, ya nye pa-nee-ma-yu pa-rus-ki."
         }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A tourist asking for directions.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Привет!",
-              "native": "Hello!",
-              "phonetic": "pri-VYET"
+              "target": "Здравствуйте. Извините, вы говорите по-английски?",
+              "native": "Hello. Excuse me, do you speak English?",
+              "phonetic": "Zdrast-vuy-tye. Eez-vee-nee-tye, vy ga-va-ree-tye pa-ang-gliys-ki?"
             },
             {
               "speaker": "B",
-              "target": "Привет! Спасибо!",
-              "native": "Hello! Thank you!",
-              "phonetic": "pri-VYET spa-SI-ba"
-            },
-            {
-              "speaker": "A",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Спасибо!",
-              "native": "Thank you!",
-              "phonetic": "spa-SI-ba"
-            },
-            {
-              "speaker": "B",
-              "target": "До свидания!",
-              "native": "Goodbye!",
-              "phonetic": "da-svi-DA-ni-ya"
-            },
-            {
-              "speaker": "A",
-              "target": "Пожалуйста! Извините!",
-              "native": "Please! Excuse me!",
-              "phonetic": "po-ZHA-lu-sta eez-vi-NI-te"
+              "target": "Нет, извините. Я не понимаю.",
+              "native": "No, sorry. I don't understand.",
+              "phonetic": "Nyet, eez-vee-nee-tye. Ya nye pa-nee-ma-yu."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Russian",
-            "answer": "Привет",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Russian",
-            "answer": "Спасибо",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Russian",
-            "answer": "До свидания",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "Привет",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "Спасибо",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "До свидания",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "Пожалуйста",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "Извините",
-            "native": "Excuse me"
-          }
+          { "id": "m1_7_1", "target": "Привет", "native": "Hi (informal)" },
+          { "id": "m1_7_2", "target": "До свидания", "native": "Goodbye (formal)" },
+          { "id": "m1_7_3", "target": "Как дела?", "native": "How are you?" },
+          { "id": "m1_7_4", "target": "Что это?", "native": "What is this?" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'Привет' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'Привет' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Russian?",
-            "options": [
-              "Привет",
-              "Спасибо",
-              "До свидания",
-              "Пожалуйста"
-            ],
-            "correct": 1,
-            "explanation": "'Спасибо' means Thank you."
-          }
+        "fillBlanks": [
+            {
+                "id": "fb1_7_1",
+                "sentence": "Меня ___ Джон. Очень ___.",
+                "answer": "зовут, приятно",
+                "hint": "My name is John. Nice to meet you."
+            }
         ]
       },
-      "cultural_note": "Learning Russian opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Russian pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Persistence is key when learning a new language. Don't be discouraged if you make mistakes. Russians are generally patient and will appreciate your effort to communicate in their language.",
+      "pronunciation_tip": "Review the sounds from this week: the rolled 'р', the 'ж' sound (like in 'pleasure'), and the unique 'ы' vowel. Listen to native speakers and imitate them as much as possible.",
       "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-RussianComplete"
       }
     }
   ]
