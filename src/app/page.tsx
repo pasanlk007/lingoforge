@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect, useRef } from "react";
@@ -111,7 +112,7 @@ export default function LandingPage() {
 
       <main>
         <section 
-          className="relative min-h-screen w-full overflow-hidden flex items-center"
+          className="relative w-full overflow-hidden flex items-center py-24 lg:min-h-screen lg:py-0"
           style={{
             background: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)"
           }}
@@ -157,7 +158,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-slate-900">
+        <section className="pb-16 lg:py-16 bg-slate-900">
           <div className="container mx-auto px-4">
             <div className="relative rounded-xl border-2 border-green-500/80 bg-gradient-to-br from-green-900/30 to-slate-900 p-8 text-center shadow-2xl shadow-green-500/15">
               <div className="absolute -top-2 -left-2 h-8 w-8 border-t-2 border-l-2 border-green-500 rounded-tl-xl opacity-70"></div>
