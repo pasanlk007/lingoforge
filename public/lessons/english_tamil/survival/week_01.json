@@ -7,8 +7,8 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1 Day 1: Basic Greetings",
-      "title_native": "Basic Greetings",
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "வாரம் 1, நாள் 1: அடிப்படை வாழ்த்துக்கள்",
       "theme": "Greetings & Introductions",
       "path": "survival",
       "targetLanguage": "Tamil",
@@ -17,284 +17,195 @@
         {
           "id": "w1_1_1",
           "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
+          "phonetic": "Va-nak-kam",
+          "native_meaning": "Hello / Greetings",
+          "english": "Hello / Greetings",
+          "example_sentence_target": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Vanakkam, neengal eppadi irukkireergal?"
         },
         {
           "id": "w1_1_2",
           "target": "நன்றி",
-          "phonetic": "நன்றி",
+          "phonetic": "Nan-dri",
           "native_meaning": "Thank you",
           "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
+          "example_sentence_target": "உதவிக்கு நன்றி.",
+          "example_sentence_native": "Thank you for the help.",
+          "example_sentence_phonetic": "Uthavikku nandri."
         },
         {
           "id": "w1_1_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
+          "target": "ஆம்",
+          "phonetic": "Aam",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "ஆம், எனக்கு அது வேண்டும்.",
+          "example_sentence_native": "Yes, I want that.",
+          "example_sentence_phonetic": "Aam, enakku athu vendum."
         },
         {
           "id": "w1_1_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
+          "target": "இல்லை",
+          "phonetic": "Il-lai",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "இல்லை, நன்றி.",
+          "example_sentence_native": "No, thank you.",
+          "example_sentence_phonetic": "Illai, nandri."
         },
         {
           "id": "w1_1_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
+          "target": "சரி",
+          "phonetic": "Sari",
+          "native_meaning": "Okay / Alright",
+          "english": "Okay / Alright",
+          "example_sentence_target": "சரி, நான் வருகிறேன்.",
+          "example_sentence_native": "Okay, I am coming.",
+          "example_sentence_phonetic": "Sari, naan varugiren."
         }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Basic Greetings",
+          "context": "Greeting someone for the first time.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "வணக்கம்.",
+              "native": "Hello.",
+              "phonetic": "Vanakkam."
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
-            },
-            {
-              "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
+              "target": "வணக்கம். நீங்கள் எப்படி இருக்கிறீர்கள்?",
+              "native": "Hello. How are you?",
+              "phonetic": "Vanakkam. Neengal eppadi irukkireergal?"
             }
           ]
         },
         {
           "id": "d1_1_2",
-          "context": "Formal Basic Greetings",
+          "context": "Responding to an offer.",
           "lines": [
             {
               "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
+              "target": "உங்களுக்கு காபி வேண்டுமா?",
+              "native": "Do you want coffee?",
+              "phonetic": "Ungalukku kaapi venduma?"
             },
             {
               "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            },
-            {
-              "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "ஆம், நன்றி.",
+              "native": "Yes, thank you.",
+              "phonetic": "Aam, nandri."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_1_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_1_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_1_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_1_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_1_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_1_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_1_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_1_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
+          { "id": "m1_1_1", "target": "வணக்கம்", "native": "Hello" },
+          { "id": "m1_1_2", "target": "நன்றி", "native": "Thank you" },
+          { "id": "m1_1_3", "target": "ஆம்", "native": "Yes" },
+          { "id": "m1_1_4", "target": "இல்லை", "native": "No" },
+          { "id": "m1_1_5", "target": "சரி", "native": "Okay" }
         ],
         "multipleChoice": [
           {
             "id": "mc1_1_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_1_2",
             "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
+            "options": ["வணக்கம்", "நன்றி", "ஆம்", "சரி"],
             "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
+            "explanation": "'நன்றி' (Nandri) means 'Thank you'."
           }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "In Tamil culture, 'Vanakkam' is a traditional greeting often accompanied by placing the palms together in a prayer-like gesture (Anjali Mudra). It shows respect to the person you are greeting.",
+      "pronunciation_tip": "The 'zh' in Tamil, like in 'vaazhga' (வாழ்க), represents a unique retroflex approximant sound /ɻ/. It's similar to the 'r' in American English but with the tongue curled further back. Practice this sound for authentic pronunciation.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D1"
+        "badge": "W1D1-TML-Greetings"
       }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1 Day 2: Introducing Yourself",
-      "title_native": "Introducing Yourself",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 2: Polite Expressions",
+      "title_native": "வாரம் 1, நாள் 2: höflichkeit",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_2_1",
-          "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
+          "target": "தயவுசெய்து",
+          "phonetic": "Tha-ya-vu-sey-thu",
+          "native_meaning": "Please",
+          "english": "Please",
+          "example_sentence_target": "தயவுசெய்து எனக்கு உதவுங்கள்.",
+          "example_sentence_native": "Please help me.",
+          "example_sentence_phonetic": "Thayavuseythu enakku uthavungal."
         },
         {
           "id": "w1_2_2",
-          "target": "நன்றி",
-          "phonetic": "நன்றி",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
+          "target": "மன்னிக்கவும்",
+          "phonetic": "Man-nik-ka-vum",
+          "native_meaning": "Sorry / Excuse me",
+          "english": "Sorry / Excuse me",
+          "example_sentence_target": "மன்னிக்கவும், நான் தாமதமாகிவிட்டேன்.",
+          "example_sentence_native": "Sorry, I am late.",
+          "example_sentence_phonetic": "Mannikkavum, naan thaamathamaakivitten."
         },
         {
           "id": "w1_2_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
+          "target": "பரவாயில்லை",
+          "phonetic": "Pa-ra-vaa-yil-lai",
+          "native_meaning": "It's okay / No problem",
+          "english": "It's okay / No problem",
+          "example_sentence_target": "அது பரவாயில்லை.",
+          "example_sentence_native": "That's okay.",
+          "example_sentence_phonetic": "Athu paravaayillai."
         },
         {
           "id": "w1_2_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
+          "target": "உதவி",
+          "phonetic": "U-tha-vi",
+          "native_meaning": "Help",
+          "english": "Help",
+          "example_sentence_target": "எனக்கு உதவி தேவை.",
+          "example_sentence_native": "I need help.",
+          "example_sentence_phonetic": "Enakku uthavi thevai."
         },
         {
           "id": "w1_2_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
+          "target": "பெயர்",
+          "phonetic": "Peyar",
+          "native_meaning": "Name",
+          "english": "Name",
+          "example_sentence_target": "உங்கள் பெயர் என்ன?",
+          "example_sentence_native": "What is your name?",
+          "example_sentence_phonetic": "Ungal peyar enna?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Introducing Yourself",
+          "context": "Asking for help politely.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "மன்னிக்கவும், எனக்கு ஒரு உதவி வேண்டும்.",
+              "native": "Excuse me, I need some help.",
+              "phonetic": "Mannikkavum, enakku oru uthavi vendum."
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
-            },
-            {
-              "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            }
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Formal Introducing Yourself",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
-            },
-            {
-              "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            },
-            {
-              "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "ஆம், சொல்லுங்கள்.",
+              "native": "Yes, please tell me.",
+              "phonetic": "Aam, sollungal."
             }
           ]
         }
@@ -303,754 +214,428 @@
         "fillBlanks": [
           {
             "id": "fb1_2_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_2_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_2_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
+            "sentence": "___ எனக்கு உதவுங்கள்.",
+            "answer": "தயவுசெய்து",
+            "hint": "Please help me."
           }
         ],
-        "matching": [
+        "sentenceScramble": [
           {
-            "id": "m1_2_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_2_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_2_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_2_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_2_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_2_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_2_2",
-            "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
-            "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
+            "id": "ss1_2_1",
+            "scrambled": ["பெயர்", "என்ன", "உங்கள்"],
+            "correct": "உங்கள் பெயர் என்ன",
+            "nativeHint": "What is your name?"
           }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Using 'Neengal' (நீங்கள்) for 'you' is the formal and respectful form, appropriate for strangers, elders, and in professional settings. 'Nee' (நீ) is the informal version used with close friends and family.",
+      "pronunciation_tip": "Tamil has dental consonants like 'த்' (th) where the tongue touches the back of the upper teeth, different from the English 'th' sound.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D2"
+        "badge": "W1D2-TML-Politeness"
       }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1 Day 3: Polite Phrases",
-      "title_native": "Polite Phrases",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 3: Introductions",
+      "title_native": "வாரம் 1, நாள் 3: அறிமுகங்கள்",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_3_1",
-          "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
+          "target": "என் பெயர்...",
+          "phonetic": "En peyar...",
+          "native_meaning": "My name is...",
+          "english": "My name is...",
+          "example_sentence_target": "என் பெயர் குமார்.",
+          "example_sentence_native": "My name is Kumar.",
+          "example_sentence_phonetic": "En peyar Kumar."
         },
         {
           "id": "w1_3_2",
-          "target": "நன்றி",
-          "phonetic": "நன்றி",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
+          "target": "உங்கள் பெயர் என்ன?",
+          "phonetic": "Ungal peyar enna?",
+          "native_meaning": "What is your name?",
+          "english": "What is your name?",
+          "example_sentence_target": "வணக்கம், உங்கள் பெயர் என்ன?",
+          "example_sentence_native": "Hello, what is your name?",
+          "example_sentence_phonetic": "Vanakkam, ungal peyar enna?"
         },
         {
           "id": "w1_3_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
+          "target": "நான்...",
+          "phonetic": "Naan...",
+          "native_meaning": "I am...",
+          "english": "I am...",
+          "example_sentence_target": "நான் ஒரு மாணவன்.",
+          "example_sentence_native": "I am a student.",
+          "example_sentence_phonetic": "Naan oru maanavan."
         },
         {
           "id": "w1_3_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
+          "target": "நீங்கள்...",
+          "phonetic": "Neengal...",
+          "native_meaning": "You are...",
+          "english": "You are...",
+          "example_sentence_target": "நீங்கள் ஒரு ஆசிரியர்.",
+          "example_sentence_native": "You are a teacher.",
+          "example_sentence_phonetic": "Neengal oru aasiriyar."
         },
         {
           "id": "w1_3_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
+          "target": "சந்திப்பதில் மகிழ்ச்சி",
+          "phonetic": "San-thip-pa-thil ma-gil-chchi",
+          "native_meaning": "Nice to meet you",
+          "english": "Nice to meet you",
+          "example_sentence_target": "உங்களை சந்தித்ததில் மகிழ்ச்சி.",
+          "example_sentence_native": "Nice to meet you.",
+          "example_sentence_phonetic": "Ungalai santhithathil magizhchi."
         }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "Polite Phrases",
+          "context": "Introducing each other.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "வணக்கம், என் பெயர் ரவி.",
+              "native": "Hello, my name is Ravi.",
+              "phonetic": "Vanakkam, en peyar Ravi."
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
-            },
-            {
-              "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            }
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Formal Polite Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
-            },
-            {
-              "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            },
-            {
-              "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "வணக்கம் ரவி. என் பெயர் பிரியா. உங்களை சந்தித்ததில் மகிழ்ச்சி.",
+              "native": "Hello Ravi. My name is Priya. Nice to meet you.",
+              "phonetic": "Vanakkam Ravi. En peyar Priya. Ungalai santhithathil magizhchi."
             }
           ]
         }
       ],
       "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["மகிழ்ச்சி", "சந்திப்பதில்", "உங்களை"],
+            "correct": "உங்களை சந்தித்ததில் மகிழ்ச்சி",
+            "nativeHint": "Nice to meet you."
+          }
+        ],
         "fillBlanks": [
           {
             "id": "fb1_3_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_3_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_3_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_3_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_3_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_3_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_3_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_3_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_3_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_3_2",
-            "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
-            "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
+            "sentence": "என் ___ குமார்.",
+            "answer": "பெயர்",
+            "hint": "My name is Kumar."
           }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "When introducing yourself, it is common to state your name and then perhaps where you are from ('Naan ... ilirunthu varugiren'). A simple, friendly smile goes a long way.",
+      "pronunciation_tip": "Pay attention to long vs. short vowels. For example, 'a' (அ) as in 'amma' (mother) is short, while 'aa' (ஆ) as in 'aamai' (turtle) is long. This difference can change the meaning of a word.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D3"
+        "badge": "W1D3-TML-Introductions"
       }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1 Day 4: Asking Questions",
-      "title_native": "Asking Questions",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 4: Well-being",
+      "title_native": "வாரம் 1, நாள் 4: நலன் விசாரித்தல்",
+      "theme": "How are you?",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_4_1",
-          "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
+          "target": "நீங்கள் எப்படி இருக்கிறீர்கள்?",
+          "phonetic": "Neengal eppadi irukkireergal?",
+          "native_meaning": "How are you? (formal)",
+          "english": "How are you? (formal)",
+          "example_sentence_target": "வணக்கம், நீங்கள் எப்படி இருக்கிறீர்கள்?",
+          "example_sentence_native": "Hello, how are you?",
+          "example_sentence_phonetic": "Vanakkam, neengal eppadi irukkireergal?"
         },
         {
           "id": "w1_4_2",
-          "target": "நன்றி",
-          "phonetic": "நன்றி",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
+          "target": "நான் நலமாக இருக்கிறேன்",
+          "phonetic": "Naan nala-maaga iruk-ki-ren",
+          "native_meaning": "I am fine",
+          "english": "I am fine",
+          "example_sentence_target": "நன்றி, நான் நலமாக இருக்கிறேன்.",
+          "example_sentence_native": "Thank you, I am fine.",
+          "example_sentence_phonetic": "Nandri, naan nalamaaga irukkiren."
         },
         {
           "id": "w1_4_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
+          "target": "நீ எப்படி இருக்கிறாய்?",
+          "phonetic": "Nee eppadi iruk-ki-raai?",
+          "native_meaning": "How are you? (informal)",
+          "english": "How are you? (informal)",
+          "example_sentence_target": "வணக்கம் நண்பா, நீ எப்படி இருக்கிறாய்?",
+          "example_sentence_native": "Hello friend, how are you?",
+          "example_sentence_phonetic": "Vanakkam nanba, nee eppadi irukkiraai?"
         },
         {
           "id": "w1_4_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
+          "target": "மிகவும் நன்றி",
+          "phonetic": "Mi-ga-vum nan-dri",
+          "native_meaning": "Thank you very much",
+          "english": "Thank you very much",
+          "example_sentence_target": "உங்கள் உதவிக்கு மிகவும் நன்றி.",
+          "example_sentence_native": "Thank you very much for your help.",
+          "example_sentence_phonetic": "Ungal uthavikku migavum nandri."
         },
         {
           "id": "w1_4_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
+          "target": "பிறகு பார்க்கலாம்",
+          "phonetic": "Pi-ra-gu paar-ka-laam",
+          "native_meaning": "See you later",
+          "english": "See you later",
+          "example_sentence_target": "சரி, பிறகு பார்க்கலாம்.",
+          "example_sentence_native": "Okay, see you later.",
+          "example_sentence_phonetic": "Sari, piragu paarkalaam."
         }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking Questions",
+          "context": "A casual conversation.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "வணக்கம்! நீங்கள் எப்படி இருக்கிறீர்கள்?",
+              "native": "Hello! How are you?",
+              "phonetic": "Vanakkam! Neengal eppadi irukkireergal?"
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
-            },
-            {
-              "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            }
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Formal Asking Questions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
-            },
-            {
-              "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            },
-            {
-              "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "நான் நலமாக இருக்கிறேன், நன்றி. நீங்கள் எப்படி இருக்கிறீர்கள்?",
+              "native": "I'm fine, thank you. And you?",
+              "phonetic": "Naan nalamaaga irukkiren, nandri. Neengal eppadi irukkireergal?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_4_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_4_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_4_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_4_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_4_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_4_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_4_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_4_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
+            "question": "Which phrase means 'I am fine'?",
+            "options": ["நான் நலமாக இருக்கிறேன்", "உங்கள் பெயர் என்ன?", "பிறகு பார்க்கலாம்", "வணக்கம்"],
             "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_4_2",
-            "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
-            "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
+            "explanation": "'நான் நலமாக இருக்கிறேன்' (Naan nalamaaga irukkiren) is the correct way to say 'I am fine'."
           }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Asking about someone's well-being is a very common part of any conversation, even with strangers you've just met. The expected answer is usually a positive one like 'Nalamaaga irukkiren'.",
+      "pronunciation_tip": "Tamil has a distinction between voiced and unvoiced stops (like 'p' vs 'b', 't' vs 'd'). The same letter can be pronounced differently depending on its position in a word. For example, 'ப' is 'p' at the start of a word (pattam) but 'b' in the middle (ambalam).",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D4"
+        "badge": "W1D4-TML-Wellbeing"
       }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1 Day 5: Farewells",
-      "title_native": "Farewells",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 5: Numbers and Questions",
+      "title_native": "வாரம் 1, நாள் 5: எண்கள் மற்றும் கேள்விகள்",
+      "theme": "Numbers 1-5 & How much?",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_5_1",
-          "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
+          "target": "ஒன்று",
+          "phonetic": "On-ru",
+          "native_meaning": "One",
+          "english": "One",
+          "example_sentence_target": "எனக்கு ஒன்று வேண்டும்.",
+          "example_sentence_native": "I want one.",
+          "example_sentence_phonetic": "Enakku onru vendum."
         },
         {
           "id": "w1_5_2",
-          "target": "நன்றி",
-          "phonetic": "நன்றி",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
+          "target": "இரண்டு",
+          "phonetic": "I-ran-du",
+          "native_meaning": "Two",
+          "english": "Two",
+          "example_sentence_target": "இரண்டு காபி, தயவுசெய்து.",
+          "example_sentence_native": "Two coffees, please.",
+          "example_sentence_phonetic": "Irandu kaapi, thayavuseythu."
         },
         {
           "id": "w1_5_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
+          "target": "மூன்று",
+          "phonetic": "Moon-dru",
+          "native_meaning": "Three",
+          "english": "Three",
+          "example_sentence_target": "மூன்று பேர் வருகிறார்கள்.",
+          "example_sentence_native": "Three people are coming.",
+          "example_sentence_phonetic": "Moondru per varugiraargal."
         },
         {
           "id": "w1_5_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
+          "target": "நான்கு",
+          "phonetic": "Naan-gu",
+          "native_meaning": "Four",
+          "english": "Four",
+          "example_sentence_target": "நான்கு டிக்கெட்டுகள் வேண்டும்.",
+          "example_sentence_native": "I need four tickets.",
+          "example_sentence_phonetic": "Naangu ticketkal vendum."
         },
         {
           "id": "w1_5_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
+          "target": "ஐந்து",
+          "phonetic": "Ain-dhu",
+          "native_meaning": "Five",
+          "english": "Five",
+          "example_sentence_target": "ஐந்து நிமிடங்கள் காத்திருங்கள்.",
+          "example_sentence_native": "Wait for five minutes.",
+          "example_sentence_phonetic": "Ainthu nimidangal kaathirungal."
+        },
+        {
+          "id": "w1_5_6",
+          "target": "எவ்வளவு?",
+          "phonetic": "Ev-va-la-vu?",
+          "native_meaning": "How much?",
+          "english": "How much?",
+          "example_sentence_target": "இதன் விலை எவ்வளவு?",
+          "example_sentence_native": "How much does this cost?",
+          "example_sentence_phonetic": "Ithan vilai evvalavu?"
         }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "Farewells",
+          "context": "At a shop.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "வணக்கம். இதன் விலை எவ்வளவு?",
+              "native": "Hello. How much is this?",
+              "phonetic": "Vanakkam. Ithan vilai evvalavu?"
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
-            },
-            {
-              "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            }
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Formal Farewells",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
-            },
-            {
-              "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            },
-            {
-              "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "இது ஐந்து ரூபாய்.",
+              "native": "This is five rupees.",
+              "phonetic": "Ithu ainthu roobaai."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb1_5_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_5_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_5_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
-          }
-        ],
         "matching": [
-          {
-            "id": "m1_5_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_5_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_5_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_5_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_5_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_5_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_5_2",
-            "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
-            "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
-          }
+          { "id": "m1_5_1", "target": "ஒன்று", "native": "One" },
+          { "id": "m1_5_2", "target": "மூன்று", "native": "Three" },
+          { "id": "m1_5_3", "target": "ஐந்து", "native": "Five" }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "When shopping in local markets in Tamil Nadu or Sri Lanka, bargaining is common. Knowing your numbers is the first step to getting a fair price!",
+      "pronunciation_tip": "The 'L' sound in Tamil can be tricky. There's a dental 'ல' (la, tongue at teeth) and a retroflex 'ள' (La, tongue curled back), as in 'பழம்' (pazham - fruit). Distinguishing them is key to being understood.",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D5"
+        "badge": "W1D5-TML-Numbers"
       }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1 Day 6: Review & Practice",
-      "title_native": "Review & Practice",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 6: Food and Drink",
+      "title_native": "வாரம் 1, நாள் 6: உணவு மற்றும் பானம்",
+      "theme": "Food & Drink",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w1_6_1",
-          "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
+          "target": "தண்ணீர்",
+          "phonetic": "Than-neer",
+          "native_meaning": "Water",
+          "english": "Water",
+          "example_sentence_target": "எனக்கு தண்ணீர் வேண்டும்.",
+          "example_sentence_native": "I want water.",
+          "example_sentence_phonetic": "Enakku thanneer vendum."
         },
         {
           "id": "w1_6_2",
-          "target": "நன்றி",
-          "phonetic": "நன்றி",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
+          "target": "உணவு",
+          "phonetic": "U-na-vu",
+          "native_meaning": "Food",
+          "english": "Food",
+          "example_sentence_target": "உணவு நன்றாக இருக்கிறது.",
+          "example_sentence_native": "The food is good.",
+          "example_sentence_phonetic": "Unavu nandraaga irukkirathu."
         },
         {
           "id": "w1_6_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
+          "target": "வேண்டும்",
+          "phonetic": "Ven-dum",
+          "native_meaning": "Want",
+          "english": "Want",
+          "example_sentence_target": "எனக்கு காபி வேண்டும்.",
+          "example_sentence_native": "I want coffee.",
+          "example_sentence_phonetic": "Enakku kaapi vendum."
         },
         {
           "id": "w1_6_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
+          "target": "வேண்டாம்",
+          "phonetic": "Ven-daam",
+          "native_meaning": "Don't want",
+          "english": "Don't want",
+          "example_sentence_target": "எனக்கு வேண்டாம், நன்றி.",
+          "example_sentence_native": "I don't want, thank you.",
+          "example_sentence_phonetic": "Enakku vendaam, nandri."
         },
         {
           "id": "w1_6_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
+          "target": "காபி",
+          "phonetic": "Kaapi",
+          "native_meaning": "Coffee",
+          "english": "Coffee",
+          "example_sentence_target": "ஒரு காபி, தயவுசெய்து.",
+          "example_sentence_native": "One coffee, please.",
+          "example_sentence_phonetic": "Oru kaapi, thayavuseythu."
+        },
+        {
+          "id": "w1_6_6",
+          "target": "தேநீர்",
+          "phonetic": "The-neer",
+          "native_meaning": "Tea",
+          "english": "Tea",
+          "example_sentence_target": "எனக்கு தேநீர் வேண்டும்.",
+          "example_sentence_native": "I want tea.",
+          "example_sentence_phonetic": "Enakku theneer vendum."
         }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Review & Practice",
+          "context": "Ordering a drink.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "வணக்கம், உங்களுக்கு என்ன வேண்டும்?",
+              "native": "Hello, what do you want?",
+              "phonetic": "Vanakkam, ungalukku enna vendum?"
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
-            },
-            {
-              "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            }
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Formal Review & Practice",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
-            },
-            {
-              "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            },
-            {
-              "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "எனக்கு தண்ணீர் வேண்டும், தயவுசெய்து.",
+              "native": "I want water, please.",
+              "phonetic": "Enakku thanneer vendum, thayavuseythu."
             }
           ]
         }
@@ -1059,272 +644,105 @@
         "fillBlanks": [
           {
             "id": "fb1_6_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
+            "sentence": "எனக்கு ___ வேண்டும்.",
+            "answer": "தண்ணீர்",
+            "hint": "I want water."
           },
           {
             "id": "fb1_6_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_6_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m1_6_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_6_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_6_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_6_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_6_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc1_6_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_6_2",
-            "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
-            "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
+            "sentence": "எனக்கு காபி ___.",
+            "answer": "வேண்டாம்",
+            "hint": "I don't want coffee."
           }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Filter coffee, known as 'filter kaapi', is a staple in South India. It's strong, often mixed with milk and sugar, and served in a traditional tumbler and dabarah (a small metal cup and saucer).",
+      "pronunciation_tip": "The difference between 'n' sounds is important. There is a dental 'ந்' (na) and a retroflex 'ண்' (Na). For example, 'நன்றி' (nandri - thank you) vs 'தண்ணீர்' (thanneer - water).",
       "progress": {
         "xp": 100,
         "streak_bonus": 20,
-        "badge": "W1D6"
+        "badge": "W1D6-TML-Food"
       }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1 Day 7: Culture Day",
-      "title_native": "Culture Day",
-      "theme": "Greetings & Introductions",
+      "title": "Week 1, Day 7: Review",
+      "title_native": "வாரம் 1, நாள் 7: மறுபார்வை",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "Tamil",
       "nativeLanguage": "English",
-      "words": [
-        {
-          "id": "w1_7_1",
-          "target": "வணக்கம்",
-          "phonetic": "வணக்கம்",
-          "native_meaning": "Hello",
-          "english": "Hello",
-          "example_sentence_target": "வணக்கம்.",
-          "example_sentence_native": "Hello."
-        },
-        {
-          "id": "w1_7_2",
-          "target": "நன்றி",
-          "phonetic": "நன்றி",
-          "native_meaning": "Thank you",
-          "english": "Thank you",
-          "example_sentence_target": "நன்றி.",
-          "example_sentence_native": "Thank you."
-        },
-        {
-          "id": "w1_7_3",
-          "target": "சென்று வாருங்கள்",
-          "phonetic": "சென்று வாருங்கள்",
-          "native_meaning": "Goodbye",
-          "english": "Goodbye",
-          "example_sentence_target": "சென்று வாருங்கள்.",
-          "example_sentence_native": "Goodbye."
-        },
-        {
-          "id": "w1_7_4",
-          "target": "தயவுசெய்து",
-          "phonetic": "தயவுசெய்து",
-          "native_meaning": "Please",
-          "english": "Please",
-          "example_sentence_target": "தயவுசெய்து.",
-          "example_sentence_native": "Please."
-        },
-        {
-          "id": "w1_7_5",
-          "target": "மன்னிக்கவும்",
-          "phonetic": "மன்னிக்கவும்",
-          "native_meaning": "Excuse me",
-          "english": "Excuse me",
-          "example_sentence_target": "மன்னிக்கவும்.",
-          "example_sentence_native": "Excuse me."
-        }
-      ],
+      "words": [],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "Culture Day",
+          "context": "A short conversation at a cafe.",
           "lines": [
             {
               "speaker": "A",
-              "target": "வணக்கம்!",
-              "native": "Hello!",
-              "phonetic": "வணக்கம்"
+              "target": "வணக்கம். என் பெயர் அருண்.",
+              "native": "Hello. My name is Arun.",
+              "phonetic": "Vanakkam. En peyar Arun."
             },
             {
               "speaker": "B",
-              "target": "வணக்கம்! நன்றி!",
-              "native": "Hello! Thank you!",
-              "phonetic": "வணக்கம் நன்றி"
+              "target": "வணக்கம் அருண். என் பெயர் சீதா. நீங்கள் எப்படி இருக்கிறீர்கள்?",
+              "native": "Hello Arun. My name is Sita. How are you?",
+              "phonetic": "Vanakkam Arun. En peyar Sita. Neengal eppadi irukkireergal?"
             },
             {
               "speaker": "A",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
-            }
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Formal Culture Day",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "நன்றி!",
-              "native": "Thank you!",
-              "phonetic": "நன்றி"
+              "target": "நான் நலமாக இருக்கிறேன், நன்றி. எனக்கு ஒரு காபி வேண்டும்.",
+              "native": "I am fine, thank you. I want one coffee.",
+              "phonetic": "Naan nalamaaga irukkiren, nandri. Enakku oru kaapi vendum."
             },
             {
               "speaker": "B",
-              "target": "சென்று வாருங்கள்!",
-              "native": "Goodbye!",
-              "phonetic": "சென்று வாருங்கள்"
+              "target": "சரி. விலை ஐந்து ரூபாய். இதோ உங்கள் காபி.",
+              "native": "Okay. The price is five rupees. Here is your coffee.",
+              "phonetic": "Sari. Vilai ainthu roobaai. Itho ungal kaapi."
             },
             {
               "speaker": "A",
-              "target": "தயவுசெய்து! மன்னிக்கவும்!",
-              "native": "Please! Excuse me!",
-              "phonetic": "தயவுசெய்து மன்னிக்கவும்"
+              "target": "மிகவும் நன்றி. பிறகு பார்க்கலாம்.",
+              "native": "Thank you very much. See you later.",
+              "phonetic": "Migavum nandri. Piragu paarkalaam."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb1_7_1",
-            "sentence": "___ means 'Hello' in Tamil",
-            "answer": "வணக்கம்",
-            "hint": "Hello"
-          },
-          {
-            "id": "fb1_7_2",
-            "sentence": "___ means 'Thank you' in Tamil",
-            "answer": "நன்றி",
-            "hint": "Thank you"
-          },
-          {
-            "id": "fb1_7_3",
-            "sentence": "___ means 'Goodbye' in Tamil",
-            "answer": "சென்று வாருங்கள்",
-            "hint": "Goodbye"
+            "id": "ss1_7_1",
+            "scrambled": ["விலை", "எவ்வளவு", "இதன்"],
+            "correct": "இதன் விலை எவ்வளவு",
+            "nativeHint": "How much is this?"
           }
         ],
         "matching": [
-          {
-            "id": "m1_7_1",
-            "target": "வணக்கம்",
-            "native": "Hello"
-          },
-          {
-            "id": "m1_7_2",
-            "target": "நன்றி",
-            "native": "Thank you"
-          },
-          {
-            "id": "m1_7_3",
-            "target": "சென்று வாருங்கள்",
-            "native": "Goodbye"
-          },
-          {
-            "id": "m1_7_4",
-            "target": "தயவுசெய்து",
-            "native": "Please"
-          },
-          {
-            "id": "m1_7_5",
-            "target": "மன்னிக்கவும்",
-            "native": "Excuse me"
-          }
+            { "id": "m1_7_1", "target": "தயவுசெய்து", "native": "Please" },
+            { "id": "m1_7_2", "target": "மன்னிக்கவும்", "native": "Excuse me" },
+            { "id": "m1_7_3", "target": "பிறகு பார்க்கலாம்", "native": "See you later" },
+            { "id": "m1_7_4", "target": "தண்ணீர்", "native": "Water" }
         ],
         "multipleChoice": [
-          {
-            "id": "mc1_7_1",
-            "question": "What does 'வணக்கம்' mean?",
-            "options": [
-              "Hello",
-              "Thank you",
-              "Goodbye",
-              "Please"
-            ],
-            "correct": 0,
-            "explanation": "'வணக்கம்' means Hello in English."
-          },
-          {
-            "id": "mc1_7_2",
-            "question": "How do you say 'Thank you' in Tamil?",
-            "options": [
-              "வணக்கம்",
-              "நன்றி",
-              "சென்று வாருங்கள்",
-              "தயவுசெய்து"
-            ],
-            "correct": 1,
-            "explanation": "'நன்றி' means Thank you."
-          }
+            {
+              "id": "mc1_7_1",
+              "question": "What is the formal way to ask 'How are you?'",
+              "options": ["நீ எப்படி இருக்கிறாய்?", "உங்கள் பெயர் என்ன?", "நீங்கள் எப்படி இருக்கிறீர்கள்?", "சந்திப்பதில் மகிழ்ச்சி"],
+              "correct": 2,
+              "explanation": "'நீங்கள் எப்படி இருக்கிறீர்கள்?' is the formal way to ask 'How are you?'. 'நீ எப்படி இருக்கிறாய்?' is informal."
+            }
         ]
       },
-      "cultural_note": "Learning Tamil opens doors to new cultures and opportunities! Week 1 focus: Greetings & Introductions.",
-      "pronunciation_tip": "Practice Tamil pronunciation slowly, then increase your speed gradually.",
+      "cultural_note": "Reviewing what you've learned is crucial for language retention. Try to use the phrases you've learned this week in a real or imagined conversation to solidify your knowledge.",
+      "pronunciation_tip": "Listen to native speakers as much as possible. Movies, music, and news broadcasts can help you get used to the rhythm and flow of Tamil.",
       "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D7"
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-TML-Complete"
       }
     }
   ]
