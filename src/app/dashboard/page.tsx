@@ -456,58 +456,6 @@ function DashboardContent({ user }: { user: User }) {
             </div>
 
             <div className="space-y-8">
-               <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Globe className="h-5 w-5" />
-                    {t.siteLanguage}
-                  </CardTitle>
-                  <CardDescription>
-                    {t.siteLanguageDesc}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex flex-wrap gap-2">
-                    {nativeLanguages.map((lang) => (
-                      <Button
-                        key={lang}
-                        onClick={() => handleNativeLanguageChange(lang)}
-                        variant={nativeLanguage === lang ? "default" : "outline"}
-                        size="sm"
-                        disabled={['Hindi', 'Bengali', 'Nepali', 'Urdu'].includes(lang)}
-                      >
-                        {lang}
-                      </Button>
-                    ))}
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                        <Target className="h-5 w-5"/>
-                        {t.targetLanguage}
-                    </CardTitle>
-                    <CardDescription>
-                        {t.targetLanguageDesc}
-                    </CardDescription>
-                </CardHeader>
-                <CardContent>
-                   <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
-                    <SelectTrigger className="w-full">
-                        <SelectValue placeholder={t.selectTargetLanguage} />
-                    </SelectTrigger>
-                    <SelectContent className="max-h-80">
-                      {availableTargetLanguages.map(lang => (
-                        <SelectItem key={lang.lang} value={lang.lang}>
-                          <div className="flex items-center gap-3">
-                            <span className="text-xl">{lang.flag}</span>
-                            <span>{lang.lang}</span>
-                          </div>
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </CardContent>
-              </Card>
               <ReminderCard />
               <ReferralCard />
               <VoiceSelector />
