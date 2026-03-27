@@ -1,21 +1,965 @@
 {
-  "lesson": "sample",
-  "target_language": "Arabic",
-  "native_language": "English",
-  "items": [
+  "week": 1,
+  "path": "survival",
+  "targetLanguage": "Arabic",
+  "nativeLanguage": "English",
+  "days": [
     {
-      "target": "نعم",
-      "phonetic": "na'am",
-      "native_meaning": "Yes",
-      "example_sentence_target": "نعم، أريد الماء",
-      "example_sentence_native": "Yes, I want water"
+      "week": 1,
+      "day": 1,
+      "title": "Week 1, Day 1: Basic Greetings",
+      "title_native": "الأسبوع 1، اليوم 1: التحيات الأساسية",
+      "theme": "Basic Greetings",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_1_1",
+          "target": "مرحباً",
+          "phonetic": "Mar-ha-ban",
+          "native_meaning": "Hello",
+          "english": "Hello",
+          "example_sentence_target": "مرحباً يا صديقي",
+          "example_sentence_native": "Hello, my friend.",
+          "example_sentence_phonetic": "Mar-ha-ban ya sa-dii-qii"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "مع السلامة",
+          "phonetic": "Ma'a as-sa-laa-ma",
+          "native_meaning": "Goodbye",
+          "english": "Goodbye",
+          "example_sentence_target": "أراك لاحقاً, مع السلامة",
+          "example_sentence_native": "See you later, goodbye.",
+          "example_sentence_phonetic": "A-raa-ka laa-hi-qan, ma'a as-sa-laa-ma"
+        },
+        {
+          "id": "w1_1_3",
+          "target": "نعم",
+          "phonetic": "Na'am",
+          "native_meaning": "Yes",
+          "english": "Yes",
+          "example_sentence_target": "نعم، أنا أفهم",
+          "example_sentence_native": "Yes, I understand.",
+          "example_sentence_phonetic": "Na'am, a-na af-ham"
+        },
+        {
+          "id": "w1_1_4",
+          "target": "لا",
+          "phonetic": "Laa",
+          "native_meaning": "No",
+          "english": "No",
+          "example_sentence_target": "لا، شكراً",
+          "example_sentence_native": "No, thank you.",
+          "example_sentence_phonetic": "Laa, shuk-ran"
+        },
+        {
+          "id": "w1_1_5",
+          "target": "شكراً",
+          "phonetic": "Shuk-ran",
+          "native_meaning": "Thank you",
+          "english": "Thank you",
+          "example_sentence_target": "شكراً لك على مساعدتك",
+          "example_sentence_native": "Thank you for your help.",
+          "example_sentence_phonetic": "Shuk-ran la-ka 'a-la mu-sa-'a-da-tik"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_1_1",
+          "context": "Meeting someone for the first time.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "مرحباً",
+              "native": "Hello",
+              "phonetic": "Mar-ha-ban"
+            },
+            {
+              "speaker": "B",
+              "target": "مرحباً بك",
+              "native": "Hello to you",
+              "phonetic": "Mar-ha-ban bik"
+            }
+          ]
+        },
+        {
+          "id": "d1_1_2",
+          "context": "Receiving help.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "تفضل",
+              "native": "Here you go.",
+              "phonetic": "Ta-fad-dal"
+            },
+            {
+              "speaker": "B",
+              "target": "شكراً",
+              "native": "Thank you.",
+              "phonetic": "Shuk-ran"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_1_1",
+            "sentence": "___، أنا أفهم",
+            "answer": "نعم",
+            "hint": "How do you say 'Yes'?"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_1_1",
+            "question": "What does 'مع السلامة' mean?",
+            "options": [
+              "Hello",
+              "Goodbye",
+              "Thank you",
+              "Yes"
+            ],
+            "correct": 1,
+            "explanation": "'مع السلامة' (Ma'a as-salama) is a common way to say 'Goodbye' in Arabic, literally meaning 'with peace'."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_1_1",
+            "target": "مرحباً",
+            "native": "Hello"
+          },
+          {
+            "id": "m1_1_2",
+            "target": "شكراً",
+            "native": "Thank you"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_1_1",
+            "scrambled": ["لك", "شكراً", "مساعدتك", "على"],
+            "correct": "شكراً لك على مساعدتك",
+            "nativeHint": "Thank you for your help"
+          }
+        ]
+      },
+      "cultural_note": "Greetings are very important in Arabic culture. It's considered polite to greet people when you enter a room, shop, or even an elevator.",
+      "pronunciation_tip": "The 'ح' (ha) sound in 'Marhaban' is a breathy 'h' sound made from the back of your throat, different from the English 'h'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-AR-Greetings"
+      }
     },
     {
-      "target": "لا",
-      "phonetic": "la",
-      "native_meaning": "No",
-      "example_sentence_target": "لا أريد ذلك",
-      "example_sentence_native": "I do not want that"
+      "week": 1,
+      "day": 2,
+      "title": "Week 1, Day 2: Formal Greetings",
+      "title_native": "الأسبوع 1، اليوم 2: التحيات الرسمية",
+      "theme": "Formal Greetings",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "السلام عليكم",
+          "phonetic": "As-sa-laa-mu 'a-lay-kum",
+          "native_meaning": "Peace be upon you",
+          "english": "Peace be upon you",
+          "example_sentence_target": "السلام عليكم، كيف حالك؟",
+          "example_sentence_native": "Peace be upon you, how are you?",
+          "example_sentence_phonetic": "As-sa-laa-mu 'a-lay-kum, kay-fa haa-luk?"
+        },
+        {
+          "id": "w1_2_2",
+          "target": "وعليكم السلام",
+          "phonetic": "Wa 'a-lay-kum as-sa-laam",
+          "native_meaning": "And upon you, peace",
+          "english": "And upon you, peace",
+          "example_sentence_target": "وعليكم السلام ورحمة الله",
+          "example_sentence_native": "And upon you, peace and God's mercy.",
+          "example_sentence_phonetic": "Wa 'a-lay-kum as-sa-laam wa rah-ma-tul-lah"
+        },
+        {
+          "id": "w1_2_3",
+          "target": "صباح الخير",
+          "phonetic": "Sa-baah al-khayr",
+          "native_meaning": "Good morning",
+          "english": "Good morning",
+          "example_sentence_target": "صباح الخير يا أحمد",
+          "example_sentence_native": "Good morning, Ahmed.",
+          "example_sentence_phonetic": "Sa-baah al-khayr ya Ah-mad"
+        },
+        {
+          "id": "w1_2_4",
+          "target": "مساء الخير",
+          "phonetic": "Ma-saa' al-khayr",
+          "native_meaning": "Good evening",
+          "english": "Good evening",
+          "example_sentence_target": "مساء الخير، هل المطعم مفتوح؟",
+          "example_sentence_native": "Good evening, is the restaurant open?",
+          "example_sentence_phonetic": "Ma-saa' al-khayr, hal al-mat-'am maf-tooh?"
+        },
+        {
+          "id": "w1_2_5",
+          "target": "أهلاً بك",
+          "phonetic": "Ah-lan bi-ka",
+          "native_meaning": "Welcome (to a male)",
+          "english": "Welcome",
+          "example_sentence_target": "أهلاً بك في بيتي",
+          "example_sentence_native": "Welcome to my home.",
+          "example_sentence_phonetic": "Ah-lan bi-ka fii bay-tii"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_2_1",
+          "context": "A formal greeting between two people.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "السلام عليكم",
+              "native": "Peace be upon you.",
+              "phonetic": "As-sa-laa-mu 'a-lay-kum"
+            },
+            {
+              "speaker": "B",
+              "target": "وعليكم السلام",
+              "native": "And upon you, peace.",
+              "phonetic": "Wa 'a-lay-kum as-sa-laam"
+            }
+          ]
+        },
+        {
+          "id": "d1_2_2",
+          "context": "Greeting someone in the morning.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "صباح الخير",
+              "native": "Good morning.",
+              "phonetic": "Sa-baah al-khayr"
+            },
+            {
+              "speaker": "B",
+              "target": "صباح النور",
+              "native": "Morning of light (response).",
+              "phonetic": "Sa-baah an-noor"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_2_1",
+            "sentence": "___ الخير",
+            "answer": "صباح",
+            "hint": "How do you say 'Good morning'?"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_2_1",
+            "question": "What is the standard response to 'السلام عليكم'?",
+            "options": [
+              "مرحباً",
+              "صباح الخير",
+              "وعليكم السلام",
+              "شكراً"
+            ],
+            "correct": 2,
+            "explanation": "The correct and formal response to 'As-salamu alaykum' is 'Wa alaykum as-salam'."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_2_1",
+            "target": "صباح الخير",
+            "native": "Good morning"
+          },
+          {
+            "id": "m1_2_2",
+            "target": "مساء الخير",
+            "native": "Good evening"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_2_1",
+            "scrambled": ["الخير", "صباح", "أحمد", "يا"],
+            "correct": "صباح الخير يا أحمد",
+            "nativeHint": "Good morning, Ahmed"
+          }
+        ]
+      },
+      "cultural_note": "'As-salamu alaykum' is a very common and respectful greeting used by Muslims and non-Muslims alike in Arabic-speaking countries. Responding with 'Wa alaykum as-salam' is expected.",
+      "pronunciation_tip": "The 'ع' ('ayn) in 'alaykum' is a deep guttural sound made by constricting your throat. It has no equivalent in English and takes practice.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D2-AR-FormalGreetings"
+      }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Week 1, Day 3: Introductions",
+      "title_native": "الأسبوع 1، اليوم 3: التعريف بالنفس",
+      "theme": "Introductions",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "اسمي",
+          "phonetic": "Is-mii",
+          "native_meaning": "My name is",
+          "english": "My name is",
+          "example_sentence_target": "اسمي جون",
+          "example_sentence_native": "My name is John.",
+          "example_sentence_phonetic": "Is-mii John"
+        },
+        {
+          "id": "w1_3_2",
+          "target": "ما اسمك؟",
+          "phonetic": "Maa is-mu-ka? (to male) / Maa is-mu-ki? (to female)",
+          "native_meaning": "What is your name?",
+          "english": "What is your name?",
+          "example_sentence_target": "مرحباً, ما اسمك؟",
+          "example_sentence_native": "Hello, what is your name?",
+          "example_sentence_phonetic": "Mar-ha-ban, maa is-mu-ka?"
+        },
+        {
+          "id": "w1_3_3",
+          "target": "أنا من",
+          "phonetic": "A-na min",
+          "native_meaning": "I am from",
+          "english": "I am from",
+          "example_sentence_target": "أنا من أمريكا",
+          "example_sentence_native": "I am from America.",
+          "example_sentence_phonetic": "A-na min Am-rii-ka"
+        },
+        {
+          "id": "w1_3_4",
+          "target": "من أين أنت؟",
+          "phonetic": "Min ay-na an-ta? (to male) / Min ay-na an-ti? (to female)",
+          "native_meaning": "Where are you from?",
+          "english": "Where are you from?",
+          "example_sentence_target": "من أين أنت يا سارة؟",
+          "example_sentence_native": "Where are you from, Sarah?",
+          "example_sentence_phonetic": "Min ay-na an-ti ya Sa-rah?"
+        },
+        {
+          "id": "w1_3_5",
+          "target": "تشرفنا",
+          "phonetic": "Ta-shar-raf-naa",
+          "native_meaning": "Pleased to meet you",
+          "english": "Pleased to meet you",
+          "example_sentence_target": "تشرفنا بمعرفتك",
+          "example_sentence_native": "Pleased to meet you.",
+          "example_sentence_phonetic": "Ta-shar-raf-naa bi-ma'-ri-fa-tik"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_3_1",
+          "context": "Introducing yourself to someone.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "مرحباً, اسمي علي. ما اسمك؟",
+              "native": "Hello, my name is Ali. What is your name?",
+              "phonetic": "Mar-ha-ban, is-mii Ali. Maa is-mu-ka?"
+            },
+            {
+              "speaker": "B",
+              "target": "أهلاً علي, اسمي فاطمة. تشرفنا.",
+              "native": "Hello Ali, my name is Fatima. Pleased to meet you.",
+              "phonetic": "Ah-lan Ali, is-mii Fa-ti-ma. Ta-shar-raf-naa."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_3_1",
+            "sentence": "أنا ___ أمريكا",
+            "answer": "من",
+            "hint": "How do you say 'from'?"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_3_1",
+            "question": "How would you ask a woman for her name?",
+            "options": [
+              "ما اسمك؟ (Maa ismuka?)",
+              "ما اسمها؟ (Maa ismuha?)",
+              "ما اسمكِ؟ (Maa ismuki?)",
+              "ما اسمي؟ (Maa ismee?)"
+            ],
+            "correct": 2,
+            "explanation": "In Arabic, pronouns and verb conjugations change for gender. 'Ismuka' is for a male, while 'ismuki' is for a female."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_3_1",
+            "target": "اسمي",
+            "native": "My name is"
+          },
+          {
+            "id": "m1_3_2",
+            "target": "من أين أنت؟",
+            "native": "Where are you from?"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["أنت؟", "أين", "من"],
+            "correct": "من أين أنت؟",
+            "nativeHint": "Where are you from?"
+          }
+        ]
+      },
+      "cultural_note": "When asking personal questions like 'Where are you from?', it's common to first establish a friendly rapport. Arabs are generally very welcoming to foreigners.",
+      "pronunciation_tip": "The question word 'Maa' (ما) is a flat 'a' sound, as in 'cat', not a long 'ah' sound.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D3-AR-Introductions"
+      }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Week 1, Day 4: How are you?",
+      "title_native": "الأسبوع 1، اليوم 4: كيف حالك؟",
+      "theme": "Well-being",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "كيف حالك؟",
+          "phonetic": "Kay-fa haa-lu-ka? (to male) / Kay-fa haa-lu-ki? (to female)",
+          "native_meaning": "How are you?",
+          "english": "How are you?",
+          "example_sentence_target": "السلام عليكم، كيف حالك؟",
+          "example_sentence_native": "Peace be upon you, how are you?",
+          "example_sentence_phonetic": "As-sa-laa-mu 'a-lay-kum, kay-fa haa-lu-ka?"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "أنا بخير",
+          "phonetic": "A-na bi-khayr",
+          "native_meaning": "I am fine",
+          "english": "I am fine",
+          "example_sentence_target": "أنا بخير، شكراً لك",
+          "example_sentence_native": "I am fine, thank you.",
+          "example_sentence_phonetic": "A-na bi-khayr, shuk-ran la-ka"
+        },
+        {
+          "id": "w1_4_3",
+          "target": "الحمد لله",
+          "phonetic": "Al-ham-du lil-lah",
+          "native_meaning": "Praise be to God",
+          "english": "Praise be to God",
+          "example_sentence_target": "أنا بخير، الحمد لله",
+          "example_sentence_native": "I am fine, praise be to God.",
+          "example_sentence_phonetic": "A-na bi-khayr, al-ham-du lil-lah"
+        },
+        {
+          "id": "w1_4_4",
+          "target": "و أنت؟",
+          "phonetic": "Wa an-ta? (to male) / Wa an-ti? (to female)",
+          "native_meaning": "And you?",
+          "english": "And you?",
+          "example_sentence_target": "أنا بخير. و أنت؟",
+          "example_sentence_native": "I am fine. And you?",
+          "example_sentence_phonetic": "A-na bi-khayr. Wa an-ta?"
+        },
+        {
+          "id": "w1_4_5",
+          "target": "جيد",
+          "phonetic": "Jay-yid",
+          "native_meaning": "Good",
+          "english": "Good",
+          "example_sentence_target": "هذا جيد جداً",
+          "example_sentence_native": "This is very good.",
+          "example_sentence_phonetic": "Haa-dha jay-yid jid-dan"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_4_1",
+          "context": "Asking how someone is.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "صباح الخير، كيف حالك؟",
+              "native": "Good morning, how are you?",
+              "phonetic": "Sa-baah al-khayr, kay-fa haa-lu-ka?"
+            },
+            {
+              "speaker": "B",
+              "target": "صباح النور. أنا بخير، الحمد لله. و أنت؟",
+              "native": "Morning of light. I am fine, praise be to God. And you?",
+              "phonetic": "Sa-baah an-noor. A-na bi-khayr, al-ham-du lil-lah. Wa an-ta?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_4_1",
+            "sentence": "أنا __، شكراً لك",
+            "answer": "بخير",
+            "hint": "How do you say 'fine'?"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_4_1",
+            "question": "What is a very common phrase to add after saying you are fine?",
+            "options": [
+              "شكراً",
+              "مع السلامة",
+              "الحمد لله",
+              "أنا من"
+            ],
+            "correct": 2,
+            "explanation": "'Al-hamdu lillah' (Praise be to God) is very commonly said after stating one's well-being, expressing gratitude."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_4_1",
+            "target": "كيف حالك؟",
+            "native": "How are you?"
+          },
+          {
+            "id": "m1_4_2",
+            "target": "أنا بخير",
+            "native": "I am fine"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_4_1",
+            "scrambled": ["أنت؟", "و"],
+            "correct": "و أنت؟",
+            "nativeHint": "And you?"
+          }
+        ]
+      },
+      "cultural_note": "The phrase 'Al-hamdu lillah' is used by Arabic speakers of all religions, not just Muslims. It's a cultural expression of gratitude for both good and bad situations.",
+      "pronunciation_tip": "In 'Kayfa', the 'ay' sound is like the 'ay' in 'say'.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D4-AR-WellBeing"
+      }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Week 1, Day 5: Politeness",
+      "title_native": "الأسبوع 1، اليوم 5: الأدب",
+      "theme": "Politeness",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "من فضلك",
+          "phonetic": "Min fad-lik (to male) / Min fad-liki (to female)",
+          "native_meaning": "Please",
+          "english": "Please",
+          "example_sentence_target": "أعطني الماء، من فضلك",
+          "example_sentence_native": "Give me the water, please.",
+          "example_sentence_phonetic": "A'-ti-ni al-maa', min fad-lik"
+        },
+        {
+          "id": "w1_5_2",
+          "target": "عفواً",
+          "phonetic": "'Af-wan",
+          "native_meaning": "You're welcome / Excuse me",
+          "english": "You're welcome / Excuse me",
+          "example_sentence_target": "شكراً لك. عفواً.",
+          "example_sentence_native": "Thank you. You're welcome.",
+          "example_sentence_phonetic": "Shuk-ran lak. 'Af-wan."
+        },
+        {
+          "id": "w1_5_3",
+          "target": "آسف",
+          "phonetic": "Aa-sif (male) / Aa-si-fa (female)",
+          "native_meaning": "Sorry",
+          "english": "Sorry",
+          "example_sentence_target": "أنا آسف، لم أفهم",
+          "example_sentence_native": "I'm sorry, I did not understand.",
+          "example_sentence_phonetic": "A-na aa-sif, lam af-ham"
+        },
+        {
+          "id": "w1_5_4",
+          "target": "لو سمحت",
+          "phonetic": "Law sa-maht (to male) / Law sa-mah-ti (to female)",
+          "native_meaning": "Excuse me / If you please",
+          "english": "Excuse me",
+          "example_sentence_target": "لو سمحت، أين الحمام؟",
+          "example_sentence_native": "Excuse me, where is the bathroom?",
+          "example_sentence_phonetic": "Law sa-maht, ay-na al-ham-mam?"
+        },
+        {
+          "id": "w1_5_5",
+          "target": "تفضل",
+          "phonetic": "Ta-fad-dal (to male) / Ta-fad-da-li (to female)",
+          "native_meaning": "Please (go ahead) / Here you are",
+          "english": "Go ahead",
+          "example_sentence_target": "تفضل بالجلوس",
+          "example_sentence_native": "Please, have a seat.",
+          "example_sentence_phonetic": "Ta-fad-dal bil-ju-loos"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_5_1",
+          "context": "Asking for something politely.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "لو سمحت، هل يمكنك مساعدتي؟",
+              "native": "Excuse me, can you help me?",
+              "phonetic": "Law sa-maht, hal yum-ki-nu-ka mu-sa-'a-da-tii?"
+            },
+            {
+              "speaker": "B",
+              "target": "نعم، تفضل.",
+              "native": "Yes, go ahead.",
+              "phonetic": "Na'am, ta-fad-dal."
+            }
+          ]
+        },
+        {
+          "id": "d1_5_2",
+          "context": "Apologizing.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "آسف على التأخير",
+              "native": "Sorry for the delay.",
+              "phonetic": "Aa-sif 'a-la at-ta'-kheer"
+            },
+            {
+              "speaker": "B",
+              "target": "لا مشكلة",
+              "native": "No problem.",
+              "phonetic": "La mush-ki-la"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_5_1",
+            "sentence": "أنا ___ على التأخير",
+            "answer": "آسف",
+            "hint": "How do you say 'Sorry' (male)?"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_5_1",
+            "question": "Which phrase can mean both 'You're welcome' and 'Excuse me'?",
+            "options": [
+              "شكراً",
+              "عفواً",
+              "آسف",
+              "من فضلك"
+            ],
+            "correct": 1,
+            "explanation": "'Afwan' is a versatile word. It's the standard reply to 'Shukran' (Thank you), but can also be used to get someone's attention, similar to 'Excuse me'."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_5_1",
+            "target": "من فضلك",
+            "native": "Please"
+          },
+          {
+            "id": "m1_5_2",
+            "target": "آسف",
+            "native": "Sorry"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_5_1",
+            "scrambled": ["الحمام؟", "أين", "سمحت", "لو"],
+            "correct": "لو سمحت أين الحمام؟",
+            "nativeHint": "Excuse me, where is the bathroom?"
+          }
+        ]
+      },
+      "cultural_note": "Politeness is highly valued. Using phrases like 'min fadlik' and 'law samaht' shows respect and will make interactions smoother.",
+      "pronunciation_tip": "The 'ض' (Daad) in 'fadlik' is a heavy 'd' sound, unique to Arabic. It's pronounced with the tongue covering a larger area of the roof of the mouth.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D5-AR-Politeness"
+      }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Week 1, Day 6: Basic Titles",
+      "title_native": "الأسبوع 1، اليوم 6: الألقاب الأساسية",
+      "theme": "Titles",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "سيد",
+          "phonetic": "Say-yid",
+          "native_meaning": "Mr. / Sir",
+          "english": "Mr.",
+          "example_sentence_target": "مرحباً سيد أحمد",
+          "example_sentence_native": "Hello Mr. Ahmed.",
+          "example_sentence_phonetic": "Mar-ha-ban Say-yid Ah-mad"
+        },
+        {
+          "id": "w1_6_2",
+          "target": "سيدة",
+          "phonetic": "Say-yi-da",
+          "native_meaning": "Mrs. / Madam",
+          "english": "Mrs.",
+          "example_sentence_target": "تفضلي يا سيدة فاطمة",
+          "example_sentence_native": "Go ahead, Mrs. Fatima.",
+          "example_sentence_phonetic": "Ta-fad-da-li ya Say-yi-da Fa-ti-ma"
+        },
+        {
+          "id": "w1_6_3",
+          "target": "آنسة",
+          "phonetic": "Aa-ni-sa",
+          "native_meaning": "Miss",
+          "english": "Miss",
+          "example_sentence_target": "شكراً لكِ يا آنسة",
+          "example_sentence_native": "Thank you, Miss.",
+          "example_sentence_phonetic": "Shuk-ran la-ki ya Aa-ni-sa"
+        },
+        {
+          "id": "w1_6_4",
+          "target": "صديق",
+          "phonetic": "Sa-deeq",
+          "native_meaning": "Friend (male)",
+          "english": "Friend (male)",
+          "example_sentence_target": "هو صديقي",
+          "example_sentence_native": "He is my friend.",
+          "example_sentence_phonetic": "Hu-wa sa-dii-qii"
+        },
+        {
+          "id": "w1_6_5",
+          "target": "صديقة",
+          "phonetic": "Sa-dii-qa",
+          "native_meaning": "Friend (female)",
+          "english": "Friend (female)",
+          "example_sentence_target": "هي صديقتي",
+          "example_sentence_native": "She is my friend.",
+          "example_sentence_phonetic": "Hi-ya sa-dii-qa-tii"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "d1_6_1",
+          "context": "Addressing someone formally.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "مساء الخير يا سيد علي",
+              "native": "Good evening, Mr. Ali.",
+              "phonetic": "Ma-saa' al-khayr ya Say-yid Ali"
+            },
+            {
+              "speaker": "B",
+              "target": "مساء النور. كيف يمكنني أن أساعدك؟",
+              "native": "Evening of light. How can I help you?",
+              "phonetic": "Ma-saa' an-noor. Kay-fa yum-ki-nu-ni an u-saa-'i-dak?"
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_6_1",
+            "sentence": "هو ___",
+            "answer": "صديقي",
+            "hint": "How do you say 'my friend' (male)?"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_6_1",
+            "question": "How do you address an unmarried woman formally?",
+            "options": [
+              "سيد",
+              "سيدة",
+              "صديقة",
+              "آنسة"
+            ],
+            "correct": 3,
+            "explanation": "'آنسة' (Anisa) is the equivalent of 'Miss' and is used for unmarried women."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_6_1",
+            "target": "سيد",
+            "native": "Mr."
+          },
+          {
+            "id": "m1_6_2",
+            "target": "سيدة",
+            "native": "Mrs."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_6_1",
+            "scrambled": ["صديقتي", "هي"],
+            "correct": "هي صديقتي",
+            "nativeHint": "She is my friend."
+          }
+        ]
+      },
+      "cultural_note": "Using titles like 'Sayyid' and 'Sayyida' is a sign of respect, especially with elders or in professional settings. It's often followed by the first name.",
+      "pronunciation_tip": "In 'Anisa', the 's' sound is soft, like the 's' in 'see', not a 'z' sound.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D6-AR-Titles"
+      }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Week 1, Day 7: Weekly Review",
+      "title_native": "الأسبوع 1، اليوم 7: مراجعة أسبوعية",
+      "theme": "Review",
+      "path": "survival",
+      "targetLanguage": "Arabic",
+      "nativeLanguage": "English",
+      "words": [],
+      "dialogues": [
+        {
+          "id": "d1_7_1",
+          "context": "A complete short conversation using this week's phrases.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "السلام عليكم، اسمي محمد. ما اسمكِ؟",
+              "native": "Peace be upon you, my name is Mohammed. What is your name (to female)?",
+              "phonetic": "As-sa-laa-mu 'a-lay-kum, is-mii Mu-ham-mad. Maa is-mu-ki?"
+            },
+            {
+              "speaker": "B",
+              "target": "وعليكم السلام. اسمي ليلى. تشرفنا.",
+              "native": "And upon you, peace. My name is Layla. Pleased to meet you.",
+              "phonetic": "Wa 'a-lay-kum as-sa-laam. Is-mii Lay-la. Ta-shar-raf-naa."
+            },
+            {
+              "speaker": "A",
+              "target": "أنا بخير، الحمد لله. و أنتِ؟",
+              "native": "I am fine, praise be to God. And you (female)?",
+              "phonetic": "A-na bi-khayr, al-ham-du lil-lah. Wa an-ti?"
+            },
+            {
+              "speaker": "B",
+              "target": "أنا بخير أيضاً، شكراً. مع السلامة.",
+              "native": "I am fine also, thank you. Goodbye.",
+              "phonetic": "A-na bi-khayr ay-dan, shuk-ran. Ma'a as-sa-laa-ma."
+            }
+          ]
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          {
+            "id": "fb1_7_1",
+            "sentence": "كيف ___؟",
+            "answer": "حالك",
+            "hint": "Complete the phrase 'How are you?'"
+          },
+          {
+            "id": "fb1_7_2",
+            "sentence": "من ___ أنت؟",
+            "answer": "أين",
+            "hint": "Complete the phrase 'Where are you from?'"
+          }
+        ],
+        "multipleChoice": [
+          {
+            "id": "mc1_7_1",
+            "question": "You bump into someone. What do you say?",
+            "options": [
+              "شكراً",
+              "مرحباً",
+              "آسف",
+              "نعم"
+            ],
+            "correct": 2,
+            "explanation": "'Asif' means 'Sorry' and is the appropriate thing to say."
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_7_1",
+            "target": "ما اسمك؟",
+            "native": "What is your name?"
+          },
+          {
+            "id": "m1_7_2",
+            "target": "أنا بخير",
+            "native": "I am fine"
+          },
+          {
+            "id": "m1_7_3",
+            "target": "من فضلك",
+            "native": "Please"
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss1_7_1",
+            "scrambled": ["أمريكا", "من", "أنا"],
+            "correct": "أنا من أمريكا",
+            "nativeHint": "I am from America"
+          }
+        ]
+      },
+      "cultural_note": "Reviewing what you've learned is key. Try to use these phrases with Arabic speakers if you can. Even small attempts are usually appreciated!",
+      "pronunciation_tip": "Listen to the dialogues again and try to mimic the rhythm and intonation of the speakers. This is just as important as pronouncing individual words.",
+      "progress": {
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-AR-Complete"
+      }
     }
   ]
 }
