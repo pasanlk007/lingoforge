@@ -13,9 +13,9 @@ import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 
-const WEEKLY_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/7571db01-c3b2-44e4-ba60-bba6446b4835';
-const LIFETIME_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/04515a8a-6b96-44e0-af28-45a1f159c15e?discount=0';
-const COURSE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/021d6f05-39f3-4eaf-bc74-63855ed15b19';
+const WEEKLY_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
+const LIFETIME_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
+const COURSE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
 
 function PricingPageLoading() {
   return (
