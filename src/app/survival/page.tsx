@@ -127,7 +127,7 @@ export default function SurvivalPathPage() {
                 path: 'survival',
                 week,
                 day: 1,
-                language: selectedLanguage,
+                language: targetLanguage,
                 userEmail: user?.email,
                 profile: userProfile || null,
               });
