@@ -138,6 +138,7 @@ function DashboardContent({ user }: { user: User }) {
             photoURL: user.photoURL || undefined,
             nativeLanguage: localStorage.getItem('nativeLanguage') || 'English',
             selectedLanguage: localStorage.getItem('targetLanguage') || 'French',
+            createdAt: now.toISOString(),
             subscriptionActive: false,
             subscriptionSource: 'none',
             subscriptionExpiry: null,
@@ -448,7 +449,6 @@ function DashboardContent({ user }: { user: User }) {
               </Card>
 
               <div>
-              <div>
                 <h2 className="text-2xl font-bold tracking-tight mb-4">{si_t('Explore Learning Paths')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <Card className="flex flex-col border-2 border-green-500/50 bg-gradient-to-br from-green-900/20 to-card">
@@ -507,7 +507,6 @@ function DashboardContent({ user }: { user: User }) {
                     </div>
                   </Card>
                 </div>
-              </div>
               </div>
             </div>
 
