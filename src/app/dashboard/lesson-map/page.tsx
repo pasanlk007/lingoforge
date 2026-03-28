@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect, useMemo, Suspense } from 'react';
@@ -34,6 +33,15 @@ interface QuizQuestion {
 interface QuizData {
   questions: QuizQuestion[];
 }
+
+const PRO_LANGUAGE_MAP: Record<string, { countries: { name: string; flag: string; code: string }[] }> = {
+  'Romanian': { countries: [{ name: 'Romania', flag: '🇷🇴', code: 'RO' }] },
+  'German': { countries: [{ name: 'Germany', flag: '🇩🇪', code: 'DE' }] },
+  'Italian': { countries: [{ name: 'Italy', flag: '🇮🇹', code: 'IT' }] },
+  'French': { countries: [{ name: 'France', flag: '🇫🇷', code: 'FR' }, { name: 'Canada', flag: '🇨🇦', code: 'CA' }] },
+  'English': { countries: [{ name: 'USA', flag: '🇺🇸', code: 'US' }, { name: 'UK', flag: '🇬🇧', code: 'GB' }, { name: 'Canada', flag: '🇨🇦', code: 'CA' }, { name: 'Singapore', flag: '🇸🇬', code: 'SG' }, { name: 'Ireland', flag: '🇮🇪', code: 'IE' }] },
+  'Tamil': { countries: [{ name: 'Singapore', flag: '🇸🇬', code: 'SG' }, { name: 'Canada', flag: '🇨🇦', code: 'CA' }] },
+};
 
 // --- Data ---
 const proPathLessons: LessonNode[] = Array.from({ length: 30 }, (_, i) => {
@@ -184,6 +192,7 @@ function LessonMapPage() {
   const [isMounted, setIsMounted] = useState(false);
   const [selectedLesson, setSelectedLesson] = useState<LessonNode | null>(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
 
   const nodeColors = ["#FF6B6B", "#FF9F43", "#FECA57", "#48DBFB", "#FF9FF3", "#54A0FF", "#5F27CD", "#00D2D3", "#1DD1A1"];
 
@@ -204,6 +213,56 @@ function LessonMapPage() {
 
   if (!isMounted || isUserLoading || isProfileLoading) {
     return <LoadingSkeleton />;
+  }
+
+  const proConfig = PRO_LANGUAGE_MAP[targetLanguage];
+
+  // Not a Pro language
+  if (!proConfig) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="container mx-auto max-w-4xl py-12 px-4 text-center">
+          <div className="text-6xl mb-6">🚧</div>
+          <h1 className="text-3xl font-bold">Coming Soon</h1>
+          <p className="text-muted-foreground mt-3">Pro Path for {targetLanguage} is coming soon. Currently available for: Romanian, German, French, Italian, English, Tamil.</p>
+          <Button className="mt-8" onClick={() => window.history.back()}>Go Back</Button>
+        </main>
+      </div>
+    );
+  }
+
+  // Multiple countries — show picker
+  if (proConfig.countries.length > 1 && !selectedCountry) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="container mx-auto max-w-4xl py-12 px-4">
+          <header className="text-center mb-12">
+            <div className="text-5xl mb-4">🌍</div>
+            <h1 className="text-3xl font-bold">Choose Your Country</h1>
+            <p className="text-muted-foreground mt-2">Select the country where you want to use {targetLanguage}</p>
+          </header>
+          <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+            {proConfig.countries.map((country) => (
+              <button
+                key={country.code}
+                onClick={() => setSelectedCountry(country.name)}
+                className="p-6 rounded-2xl border-2 border-border hover:border-primary bg-card flex flex-col items-center gap-3 transition-all hover:scale-105"
+              >
+                <span className="text-5xl">{country.flag}</span>
+                <span className="font-bold text-sm">{country.name}</span>
+              </button>
+            ))}
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  // Single country — auto select
+  if (proConfig.countries.length === 1 && !selectedCountry) {
+    setSelectedCountry(proConfig.countries[0].name);
   }
 
   return (
