@@ -63,8 +63,6 @@ export default function LessonPage() {
     language: language as string,
     userEmail: user?.email,
     profile: userProfile || null,
-    config,
-    trialDaysUsed,
   });
   const hasAccess = accessResult.allowed;
 
