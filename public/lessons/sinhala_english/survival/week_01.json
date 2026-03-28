@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "survival",
@@ -9,630 +10,896 @@
       "day": 1,
       "title": "Week 1, Day 1: Basic Greetings",
       "title_native": "1 වන සතිය, 1 වන දිනය: මූලික සුබ පැතුම්",
-      "theme": "Greetings & Introductions",
+      "theme": "Greetings",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_1_1", "target": "Hello", "phonetic": "හෙලෝ", "native_meaning": "ආයුබෝවන්", "english": "Hello", "example_sentence_target": "Hello, my name is John.", "example_sentence_native": "ආයුබෝවන්, මගේ නම ජෝන්.", "example_sentence_phonetic": "හෙලෝ, මයි නේම් ඉස් ජෝන්."},
-        {"id": "w1_1_2", "target": "Goodbye", "phonetic": "ගුඩ්බායි", "native_meaning": "ගිහින් එන්නම්", "english": "Goodbye", "example_sentence_target": "Goodbye, see you tomorrow.", "example_sentence_native": "ගිහින් එන්නම්, හෙට හමුවෙමු.", "example_sentence_phonetic": "ගුඩ්බායි, සී යූ ටුමෝරෝ."},
-        {"id": "w1_1_3", "target": "Yes", "phonetic": "යෙස්", "native_meaning": "ඔව්", "english": "Yes", "example_sentence_target": "Yes, I understand.", "example_sentence_native": "ඔව්, මට තේරෙනවා.", "example_sentence_phonetic": "යෙස්, අයි අන්ඩර්ස්ටෑන්ඩ්."},
-        {"id": "w1_1_4", "target": "No", "phonetic": "නෝ", "native_meaning": "නැහැ", "english": "No", "example_sentence_target": "No, I don't know.", "example_sentence_native": "නැහැ, මම දන්නේ නැහැ.", "example_sentence_phonetic": "නෝ, අයි ඩෝන්ට් නෝ."},
-        {"id": "w1_1_5", "target": "Thank you", "phonetic": "තෑන්ක් යූ", "native_meaning": "ස්තූතියි", "english": "Thank you", "example_sentence_target": "Thank you for your help.", "example_sentence_native": "ඔබගේ උදව්වට ස්තූතියි.", "example_sentence_phonetic": "තෑන්ක් යූ ෆෝ යුවර් හෙල්ප්."},
-        {"id": "w1_1_6", "target": "Please", "phonetic": "ප්ලීස්", "native_meaning": "කරුණාකර", "english": "Please", "example_sentence_target": "Please help me.", "example_sentence_native": "කරුණාකර මට උදව් කරන්න.", "example_sentence_phonetic": "ප්ලීස් හෙල්ප් මී."},
-        {"id": "w1_1_7", "target": "Sorry", "phonetic": "සොරි", "native_meaning": "සමාවන්න", "english": "Sorry", "example_sentence_target": "I am sorry, I am late.", "example_sentence_native": "මට සමාවන්න, මම පරක්කු වුණා.", "example_sentence_phonetic": "අයම් සොරි, අයම් ලේට්."},
-        {"id": "w1_1_8", "target": "Excuse me", "phonetic": "එක්ස්කියුස් මී", "native_meaning": "සමාවෙන්න (අවධානය ලබා ගැනීමට)", "english": "Excuse me", "example_sentence_target": "Excuse me, where is the station?", "example_sentence_native": "සමාවෙන්න, ස්ටේෂන් එක කොහෙද?", "example_sentence_phonetic": "එක්ස්කියුස් මී, වෙයාර් ඉස් ද ස්ටේෂන්?"}
-      ],
-      "sentences": [
-        {"id": "s1_1_1", "target": "What is your name?", "native": "ඔබේ නම කුමක්ද?", "phonetic": "වට් ඉස් යුවර් නේම්?"},
-        {"id": "s1_1_2", "target": "My name is Maria.", "native": "මගේ නම මරියා.", "phonetic": "මයි නේම් ඉස් මරියා."},
-        {"id": "s1_1_3", "target": "How are you?", "native": "ඔබට කොහොමද?", "phonetic": "හව් ආර් යූ?"},
-        {"id": "s1_1_4", "target": "I am fine, thank you.", "native": "මම හොඳින්, ස්තූතියි.", "phonetic": "අයම් ෆයින්, තෑන්ක් යූ."},
-        {"id": "s1_1_5", "target": "Nice to meet you.", "native": "ඔබව හමුවීම සතුටක්.", "phonetic": "නයිස් ටු මීට් යූ."},
-        {"id": "s1_1_6", "target": "Where are you from?", "native": "ඔබ කොහේ සිටද?", "phonetic": "වෙයාර් ආර් යූ ෆ්‍රොම්?"},
-        {"id": "s1_1_7", "target": "I am from Sri Lanka.", "native": "මම ශ්‍රී ලංකාවෙන්.", "phonetic": "අයම් ෆ්‍රොම් ශ්‍රී ලංකා."},
-        {"id": "s1_1_8", "target": "Do you speak English?", "native": "ඔබ ඉංග්‍රීසි කතා කරනවාද?", "phonetic": "ඩූ යූ ස්පීක් ඉංග්ලිෂ්?"}
+        {
+          "id": "w1_1_1",
+          "target": "Hello",
+          "phonetic": "හලෝ",
+          "native_meaning": "ආයුබෝවන්",
+          "english": "Hello",
+          "example_sentence_target": "Hello, how are you?",
+          "example_sentence_native": "ආයුබෝවන්, ඔබට කොහොමද?",
+          "example_sentence_phonetic": "හලෝ, හව් ආ යූ?"
+        },
+        {
+          "id": "w1_1_2",
+          "target": "Good morning",
+          "phonetic": "ගුඩ් මෝනින්",
+          "native_meaning": "සුබ උදෑසනක්",
+          "english": "Good morning",
+          "example_sentence_target": "Good morning, everyone.",
+          "example_sentence_native": "හැමෝටම සුබ උදෑසනක්.",
+          "example_sentence_phonetic": "ගුඩ් මෝනින්, එව්රිවන්."
+        },
+        {
+          "id": "w1_1_3",
+          "target": "Good afternoon",
+          "phonetic": "ගුඩ් ආෆ්ටර්නූන්",
+          "native_meaning": "සුබ දහවලක්",
+          "english": "Good afternoon",
+          "example_sentence_target": "Good afternoon, sir.",
+          "example_sentence_native": "සුබ දහවලක්, මහත්මයා.",
+          "example_sentence_phonetic": "ගුඩ් ආෆ්ටර්නූන්, සර්."
+        },
+        {
+          "id": "w1_1_4",
+          "target": "Good evening",
+          "phonetic": "ගුඩ් ඊව්නින්",
+          "native_meaning": "සුබ සන්ධ්‍යාවක්",
+          "english": "Good evening",
+          "example_sentence_target": "Good evening, nice to see you.",
+          "example_sentence_native": "සුබ සන්ධ්‍යාවක්, ඔබව හමුවීම සතුටක්.",
+          "example_sentence_phonetic": "ගුඩ් ඊව්නින්, නයිස් ටු සී යූ."
+        },
+        {
+          "id": "w1_1_5",
+          "target": "Goodbye",
+          "phonetic": "ගුඩ්බායි",
+          "native_meaning": "ගිහින් එන්නම්",
+          "english": "Goodbye",
+          "example_sentence_target": "Goodbye, see you tomorrow.",
+          "example_sentence_native": "ගිහින් එන්නම්, හෙට හමුවෙමු.",
+          "example_sentence_phonetic": "ගුඩ්බායි, සී යූ ටුමෝරෝ."
+        }
       ],
       "dialogues": [
         {
           "id": "d1_1_1",
-          "context": "Meeting someone for the first time.",
+          "context": "පළමු වරට කෙනෙකු හමුවීම.",
           "lines": [
-            {"speaker": "A", "target": "Hello!", "native": "ආයුබෝවන්!", "phonetic": "හෙලෝ!"},
-            {"speaker": "B", "target": "Hello! How are you?", "native": "ආයුබෝවන්! ඔබට කොහොමද?", "phonetic": "හෙලෝ! හව් ආර් යූ?"}
-          ]
-        },
-        {
-          "id": "d1_1_2",
-          "context": "Introducing yourself.",
-          "lines": [
-            {"speaker": "A", "target": "What is your name?", "native": "ඔබේ නම කුමක්ද?", "phonetic": "වට් ඉස් යුවර් නේම්?"},
-            {"speaker": "B", "target": "My name is Sunil. What is your name?", "native": "මගේ නම සුනිල්. ඔබේ නම කුමක්ද?", "phonetic": "මයි නේම් ඉස් සුනිල්. වට් ඉස් යුවර් නේම්?"}
-          ]
-        },
-        {
-          "id": "d1_1_3",
-          "context": "Asking for help.",
-          "lines": [
-            {"speaker": "A", "target": "Excuse me, can you help me please?", "native": "සමාවෙන්න, කරුණාකර මට උදව් කරන්න පුළුවන්ද?", "phonetic": "එක්ස්කියුස් මී, කැන් යූ හෙල්ප් මී ප්ලීස්?"},
-            {"speaker": "B", "target": "Yes, of course.", "native": "ඔව්, ඇත්තෙන්ම.", "phonetic": "යෙස්, ඔෆ් කෝස්."}
-          ]
-        },
-        {
-          "id": "d1_1_4",
-          "context": "Saying goodbye.",
-          "lines": [
-            {"speaker": "A", "target": "Thank you. Goodbye!", "native": "ස්තූතියි. ගිහින් එන්නම්!", "phonetic": "තෑන්ක් යූ. ගුඩ්බායි!"},
-            {"speaker": "B", "target": "Goodbye!", "native": "ගිහින් එන්නම්!", "phonetic": "ගුඩ්බායි!"}
+            {
+              "speaker": "A",
+              "target": "Hello, my name is Pasan.",
+              "native": "ආයුබෝවන්, මගේ නම පසන්.",
+              "phonetic": "හලෝ, මයි නේම් ඉස් පසන්."
+            },
+            {
+              "speaker": "B",
+              "target": "Hello Pasan. I'm Sarah. Nice to meet you.",
+              "native": "ආයුබෝවන් පසන්. මම සාරා. ඔබව හමුවීම සතුටක්.",
+              "phonetic": "හලෝ පසන්. අයිම් සාරා. නයිස් ටු මීට් යූ."
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_1_1", "sentence": "My name ___ John.", "answer": "is", "hint": "මගේ නම ජෝන්."}
+          {
+            "id": "fb1_1_1",
+            "sentence": "___, how are you?",
+            "answer": "Hello",
+            "hint": "ආයුබෝවන්"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_1_1",
+            "target": "Good morning",
+            "native": "සුබ උදෑසනක්"
+          },
+          {
+            "id": "m1_1_2",
+            "target": "Goodbye",
+            "native": "ගිහින් එන්නම්"
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_1_1",
-            "question": "'ආයුබෝවන්' in English is:",
-            "options": ["Goodbye", "Hello", "Thank you", "Sorry"],
+            "question": "'Good afternoon' යන්නෙහි තේරුම කුමක්ද?",
+            "options": ["සුබ උදෑසනක්", "සුබ දහවලක්", "සුබ සන්ධ්‍යාවක්", "සුබ රාත්‍රියක්"],
             "correct": 1,
-            "explanation": "'Hello' is the standard greeting in English."
+            "explanation": "'Good afternoon' යනු දහවල් කාලයේදී භාවිතා කරන සුබ පැතුමකි."
           }
         ],
-        "matching": [
-          {"id": "m1_1_1", "target": "Yes", "native": "ඔව්"},
-          {"id": "m1_1_2", "target": "No", "native": "නැහැ"},
-          {"id": "m1_1_3", "target": "Please", "native": "කරුණාකර"},
-          {"id": "m1_1_4", "target": "Thank you", "native": "ස්තූතියි"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_1_1", "scrambled": ["name", "is", "what", "your", "?"], "correct": "What is your name?", "nativeHint": "ඔබේ නම කුමක්ද?"}
+          {
+            "id": "ss1_1_1",
+            "scrambled": ["are", "you", "how", "?"],
+            "correct": "how are you ?",
+            "nativeHint": "ඔබට කොහොමද?"
+          }
         ]
       },
-      "cultural_note": "A firm handshake is a common way to greet someone for the first time in many English-speaking countries, especially in formal or business settings.",
-      "pronunciation_tip": "The 'H' in 'Hello' should be audible. It's not silent. Practice a gentle puff of air from your mouth.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D1-Greetings"}
+      "cultural_note": "බටහිර රටවල, ආගන්තුකයන්ට පවා 'hello' කියා ආචාර කිරීම සහ අතට අත දීම සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "'Hello' හි 'H' ශබ්දය පැහැදිලිව උච්චාරණය කරන්න. එය සිංහල 'හ' ශබ්දයට සමාන නමුත් මදක් සැහැල්ලුයි.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D1-Greetings"
+      }
     },
     {
       "week": 1,
       "day": 2,
-      "title": "Week 1, Day 2: Basic Questions",
-      "title_native": "1 වන සතිය, 2 වන දිනය: මූලික ප්‍රශ්න",
-      "theme": "Asking Questions",
+      "title": "Week 1, Day 2: Introductions",
+      "title_native": "1 වන සතිය, 2 වන දිනය: හඳුන්වා දීම්",
+      "theme": "Introductions",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_2_1", "target": "Where", "phonetic": "වෙයාර්", "native_meaning": "කොහෙද", "english": "Where", "example_sentence_target": "Where is the bathroom?", "example_sentence_native": "නානකාමරය කොහෙද?", "example_sentence_phonetic": "වෙයාර් ඉස් ද බාත්රූම්?"},
-        {"id": "w1_2_2", "target": "What", "phonetic": "වට්", "native_meaning": "මොකක්ද", "english": "What", "example_sentence_target": "What is this?", "example_sentence_native": "මේ මොකක්ද?", "example_sentence_phonetic": "වට් ඉස් දිස්?"},
-        {"id": "w1_2_3", "target": "Who", "phonetic": "හූ", "native_meaning": "කවුද", "english": "Who", "example_sentence_target": "Who is that?", "example_sentence_native": "අර කවුද?", "example_sentence_phonetic": "හූ ඉස් දැට්?"},
-        {"id": "w1_2_4", "target": "When", "phonetic": "වෙන්", "native_meaning": "කවදාද", "english": "When", "example_sentence_target": "When is the meeting?", "example_sentence_native": "රැස්වීම තියෙන්නේ කවදාද?", "example_sentence_phonetic": "වෙන් ඉස් ද මීටින්?"},
-        {"id": "w1_2_5", "target": "Why", "phonetic": "වයි", "native_meaning": "ඇයි", "english": "Why", "example_sentence_target": "Why are you late?", "example_sentence_native": "ඔබ පරක්කු ඇයි?", "example_sentence_phonetic": "වයි ආර් යූ ලේට්?"},
-        {"id": "w1_2_6", "target": "How", "phonetic": "හව්", "native_meaning": "කොහොමද", "english": "How", "example_sentence_target": "How do I get there?", "example_sentence_native": "මම එතනට යන්නේ කොහොමද?", "example_sentence_phonetic": "හව් ඩූ අයි ගෙට් දෙයා?"},
-        {"id": "w1_2_7", "target": "How much", "phonetic": "හව් මච්", "native_meaning": "කීයක් ද", "english": "How much", "example_sentence_target": "How much is this?", "example_sentence_native": "මේක කීයද?", "example_sentence_phonetic": "හව් මච් ඉස් දිස්?"},
-        {"id": "w1_2_8", "target": "Help", "phonetic": "හෙල්ප්", "native_meaning": "උදව්", "english": "Help", "example_sentence_target": "I need help.", "example_sentence_native": "මට උදව් අවශ්‍යයි.", "example_sentence_phonetic": "අයි නීඩ් හෙල්ප්."}
-      ],
-      "sentences": [
-        {"id": "s1_2_1", "target": "I don't understand.", "native": "මට තේරෙන්නේ නැහැ.", "phonetic": "අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්."},
-        {"id": "s1_2_2", "target": "Can you repeat that, please?", "native": "කරුණාකර එය නැවත කියන්න පුලුවන්ද?", "phonetic": "කැන් යූ රිපීට් දැට්, ප්ලීස්?"},
-        {"id": "s1_2_3", "target": "Can you speak slowly?", "native": "ඔබට සෙමින් කතා කරන්න පුලුවන්ද?", "phonetic": "කැන් යූ ස්පීක් ස්ලෝලි?"},
-        {"id": "s1_2_4", "target": "Where is the nearest hospital?", "native": "ළඟම ඇති රෝහල කොහේද?", "phonetic": "වෙයාර් ඉස් ද නියරස්ට් හොස්පිටල්?"},
-        {"id": "s1_2_5", "target": "How much does this cost?", "native": "මෙය මිල කීයද?", "phonetic": "හව් මච් ඩස් දිස් කොස්ට්?"},
-        {"id": "s1_2_6", "target": "What time is it?", "native": "දැන් වෙලාව කීයද?", "phonetic": "වට් ටයිම් ඉස් ඉට්?"},
-        {"id": "s1_2_7", "target": "My name is Nimal.", "native": "මගේ නම නිමල්.", "phonetic": "මයි නේම් ඉස් නිමල්."},
-        {"id": "s1_2_8", "target": "I am looking for a job.", "native": "මම රැකියාවක් සොයමින් සිටිමි.", "phonetic": "අයම් ලුකින් ෆෝ අ ජොබ්."}
+        {
+          "id": "w1_2_1",
+          "target": "What is your name?",
+          "phonetic": "වොට් ඉස් යුවර් නේම්?",
+          "native_meaning": "ඔබේ නම කුමක්ද?",
+          "english": "What is your name?",
+          "example_sentence_target": "Excuse me, what is your name?",
+          "example_sentence_native": "සමාවෙන්න, ඔබේ නම කුමක්ද?",
+          "example_sentence_phonetic": "එක්ස්කියුස් මී, වොට් ඉස් යුවර් නේම්?"
+        },
+        {
+          "id": "w1_2_2",
+          "target": "My name is...",
+          "phonetic": "මයි නේම් ඉස්...",
+          "native_meaning": "මගේ නම...",
+          "english": "My name is...",
+          "example_sentence_target": "My name is Nimal.",
+          "example_sentence_native": "මගේ නම නිමල්.",
+          "example_sentence_phonetic": "මයි නේම් ඉස් නිමල්."
+        },
+        {
+          "id": "w1_2_3",
+          "target": "Nice to meet you",
+          "phonetic": "නයිස් ටු මීට් යූ",
+          "native_meaning": "ඔබව හමුවීම සතුටක්",
+          "english": "Nice to meet you",
+          "example_sentence_target": "Nice to meet you, Nimal.",
+          "example_sentence_native": "නිමල්, ඔබව හමුවීම සතුටක්.",
+          "example_sentence_phonetic": "නයිස් ටු මීට් යූ, නිමල්."
+        },
+        {
+          "id": "w1_2_4",
+          "target": "Where are you from?",
+          "phonetic": "වෙයාර් ආ යූ ෆ්‍රොම්?",
+          "native_meaning": "ඔබ කොහේ සිටද?",
+          "english": "Where are you from?",
+          "example_sentence_target": "Where are you from, Sarah?",
+          "example_sentence_native": "සාරා, ඔබ කොහේ සිටද?",
+          "example_sentence_phonetic": "වෙයාර් ආ යූ ෆ්‍රොම්, සාරා?"
+        },
+        {
+          "id": "w1_2_5",
+          "target": "I am from...",
+          "phonetic": "අයි ඇම් ෆ්‍රොම්...",
+          "native_meaning": "මම ... සිට",
+          "english": "I am from...",
+          "example_sentence_target": "I am from Sri Lanka.",
+          "example_sentence_native": "මම ශ්‍රී ලංකාවේ සිට.",
+          "example_sentence_phonetic": "අයි ඇම් ෆ්‍රොම් ශ්‍රී ලංකා."
+        }
       ],
       "dialogues": [
         {
           "id": "d1_2_1",
-          "context": "Asking for the price.",
+          "context": "රැකියාවේදී නව සගයෙකු හමුවීම.",
           "lines": [
-            {"speaker": "A", "target": "Excuse me, how much is this?", "native": "සමාවෙන්න, මේක කීයද?", "phonetic": "එක්ස්කියුස් මී, හව් මච් ඉස් දිස්?"},
-            {"speaker": "B", "target": "It is ten dollars.", "native": "එය ඩොලර් දහයයි.", "phonetic": "ඉට් ඉස් ටෙන් ඩොලර්ස්."}
-          ]
-        },
-        {
-          "id": "d1_2_2",
-          "context": "Asking for directions.",
-          "lines": [
-            {"speaker": "A", "target": "Sorry, where is the train station?", "native": "සමාවන්න, දුම්රිය ස්ථානය කොහෙද?", "phonetic": "සොරි, වෙයාර් ඉස් ද ට්‍රේන් ස්ටේෂන්?"},
-            {"speaker": "B", "target": "It is over there, on the right.", "native": "එය අතන, දකුණු පැත්තේ.", "phonetic": "ඉට් ඉස් ඕවර් දෙයා, ඔන් ද රයිට්."}
-          ]
-        },
-        {
-          "id": "d1_2_3",
-          "context": "Not understanding something.",
-          "lines": [
-            {"speaker": "A", "target": "The meeting is at quarter past three.", "native": "රැස්වීම තියෙන්නේ තුනයි කාලට.", "phonetic": "ද මීටින් ඉස් ඇට් ක්වාටර් පාස්ට් ත්‍රී."},
-            {"speaker": "B", "target": "Sorry, I don't understand. Can you repeat please?", "native": "සමාවන්න, මට තේරෙන්නේ නැහැ. කරුණාකර නැවත කියනවද?", "phonetic": "සොරි, අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්. කැන් යූ රිපීට් ප්ලීස්?"}
-          ]
-        },
-        {
-          "id": "d1_2_4",
-          "context": "Asking what something is.",
-          "lines": [
-            {"speaker": "A", "target": "What is this?", "native": "මේ මොකක්ද?", "phonetic": "වට් ඉස් දිස්?"},
-            {"speaker": "B", "target": "This is a ticket for the bus.", "native": "මේක බස් එකේ ටිකට් එකක්.", "phonetic": "දිස් ඉස් අ ටිකට් ෆෝ ද බස්."}
+            {
+              "speaker": "A",
+              "target": "Hi, I'm Kumar. What is your name?",
+              "native": "හායි, මම කුමාර්. ඔයාගේ නම මොකක්ද?",
+              "phonetic": "හායි, අයිම් කුමාර්. වොට් ඉස් යුවර් නේම්?"
+            },
+            {
+              "speaker": "B",
+              "target": "My name is David. Nice to meet you.",
+              "native": "මගේ නම ඩේවිඩ්. ඔබව හමුවීම සතුටක්.",
+              "phonetic": "මයි නේම් ඉස් ඩේවිඩ්. නයිස් ටු මීට් යූ."
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_2_1", "sentence": "___ is the time?", "answer": "What", "hint": "වෙලාව කීයද?"}
+          {
+            "id": "fb1_2_1",
+            "sentence": "Nice to ___ you.",
+            "answer": "meet",
+            "hint": "හමුවීම"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_2_1",
+            "target": "What is your name?",
+            "native": "ඔබේ නම කුමක්ද?"
+          },
+          {
+            "id": "m1_2_2",
+            "target": "I am from Sri Lanka.",
+            "native": "මම ශ්‍රී ලංකාවේ සිට."
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_2_1",
-            "question": "To ask for the price, you say:",
-            "options": ["How are you?", "How much is this?", "Where is it?", "What is your name?"],
-            "correct": 1,
-            "explanation": "'How much' is used to ask about price or cost."
+            "question": "'ඔබ කොහේ සිටද?' යන්න ඉංග්‍රීසියෙන් අසන්නේ කෙසේද?",
+            "options": ["What is your name?", "How are you?", "Where are you from?", "My name is..."],
+            "correct": 2,
+            "explanation": "'Where are you from?' යනු කෙනෙකුගේ උපන් රට හෝ නගරය ගැන විමසීමට භාවිතා කරයි."
           }
         ],
-        "matching": [
-          {"id": "m1_2_1", "target": "Where?", "native": "කොහෙද?"},
-          {"id": "m1_2_2", "target": "What?", "native": "මොකක්ද?"},
-          {"id": "m1_2_3", "target": "When?", "native": "කවදාද?"},
-          {"id": "m1_2_4", "target": "Why?", "native": "ඇයි?"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_2_1", "scrambled": ["is", "the", "where", "bathroom", "?"], "correct": "Where is the bathroom?", "nativeHint": "නානකාමරය කොහෙද?"}
+          {
+            "id": "ss1_2_1",
+            "scrambled": ["name", "is", "my", "Sunil"],
+            "correct": "my name is Sunil",
+            "nativeHint": "මගේ නම සුනිල්."
+          }
         ]
       },
-      "cultural_note": "In many English-speaking cultures, it's polite to say 'please' and 'thank you' very often, even for small things. It shows respect.",
-      "pronunciation_tip": "The 'W' sound in 'Where', 'What', 'When' is made by rounding your lips like you are about to whistle, then releasing the sound.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D2-Questions"}
+      "cultural_note": "කෙනෙකු හඳුනාගැනීමේදී ඔවුන්ගේ නම සහ ඔවුන් පැමිණි රට ගැන ඇසීම සුහදශීලී සංවාදයක් ආරම්භ කිරීමට හොඳ ක්‍රමයකි.",
+      "pronunciation_tip": "'What' හි 'W' ශබ්දය සිංහල 'ව' ශබ්දයට වඩා තොල් වටකර උච්චාරණය කෙරේ.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D2-Introductions"
+      }
     },
     {
       "week": 1,
       "day": 3,
-      "title": "Week 1, Day 3: Numbers 1-10",
-      "title_native": "1 වන සතිය, 3 වන දිනය: අංක 1-10",
-      "theme": "Numbers & Counting",
+      "title": "Week 1, Day 3: Politeness",
+      "title_native": "1 වන සතිය, 3 වන දිනය: ආචාරශීලී බව",
+      "theme": "Politeness",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_3_1", "target": "One", "phonetic": "වන්", "native_meaning": "එක", "english": "One", "example_sentence_target": "I have one brother.", "example_sentence_native": "මට සහෝදරයෙක් ඉන්නවා.", "example_sentence_phonetic": "අයි හැව් වන් බ්‍රදර්."},
-        {"id": "w1_3_2", "target": "Two", "phonetic": "ටූ", "native_meaning": "දෙක", "english": "Two", "example_sentence_target": "I need two tickets.", "example_sentence_native": "මට ටිකට් දෙකක් අවශ්‍යයි.", "example_sentence_phonetic": "අයි නීඩ් ටූ ටිකට්ස්."},
-        {"id": "w1_3_3", "target": "Three", "phonetic": "ත්‍රී", "native_meaning": "තුන", "english": "Three", "example_sentence_target": "There are three books.", "example_sentence_native": "පොත් තුනක් තිබේ.", "example_sentence_phonetic": "දෙයාර් ආ ත්‍රී බුක්ස්."},
-        {"id": "w1_3_4", "target": "Four", "phonetic": "ෆෝ", "native_meaning": "හතර", "english": "Four", "example_sentence_target": "The car has four wheels.", "example_sentence_native": "කාර් එකේ රෝද හතරක් තියෙනවා.", "example_sentence_phonetic": "ද කාර් හැස් ෆෝ වීල්ස්."},
-        {"id": "w1_3_5", "target": "Five", "phonetic": "ෆයිව්", "native_meaning": "පහ", "english": "Five", "example_sentence_target": "I work five days a week.", "example_sentence_native": "මම සතියට දවස් පහක් වැඩ කරනවා.", "example_sentence_phonetic": "අයි වර්ක් ෆයිව් ඩේස් අ වීක්."},
-        {"id": "w1_3_6", "target": "Six", "phonetic": "සික්ස්", "native_meaning": "හය", "english": "Six", "example_sentence_target": "My son is six years old.", "example_sentence_native": "මගේ පුතාට වයස අවුරුදු හයයි.", "example_sentence_phonetic": "මයි සන් ඉස් සික්ස් ඉයර්ස් ඕල්ඩ්."},
-        {"id": "w1_3_7", "target": "Seven", "phonetic": "සෙවන්", "native_meaning": "හත", "english": "Seven", "example_sentence_target": "There are seven days in a week.", "example_sentence_native": "සතියට දවස් හතක් ඇත.", "example_sentence_phonetic": "දෙයාර් ආ සෙවන් ඩේස් ඉන් අ වීක්."},
-        {"id": "w1_3_8", "target": "Eight", "phonetic": "එයිට්", "native_meaning": "අට", "english": "Eight", "example_sentence_target": "The train leaves at eight o'clock.", "example_sentence_native": "දුම්රිය පිටත් වන්නේ අටටයි.", "example_sentence_phonetic": "ද ට්‍රේන් ලීව්ස් ඇට් එයිට් ඔක්ලොක්."}
-      ],
-      "sentences": [
-        {"id": "s1_3_1", "target": "I need three kilos of rice.", "native": "මට හාල් කිලෝ තුනක් අවශ්‍යයි.", "phonetic": "අයි නීඩ් ත්‍රී කිලෝස් ඔෆ් රයිස්."},
-        {"id": "s1_3_2", "target": "My phone number is five-five-five, one-two-three-four.", "native": "මගේ දුරකථන අංකය පහයි-පහයි-පහයි, එකයි-දෙකයි-තුනයි-හතරයි.", "phonetic": "මයි ෆෝන් නම්බර් ඉස් ෆයිව්-ෆයිව්-ෆයිව්, වන්-ටූ-ත්‍රී-ෆෝ."},
-        {"id": "s1_3_3", "target": "There are four people in my family.", "native": "මගේ පවුලේ හතර දෙනෙක් ඉන්නවා.", "phonetic": "දෙයාර් ආ ෆෝ පීපල් ඉන් මයි ෆැමිලි."},
-        {"id": "s1_3_4", "target": "He has two children.", "native": "ඔහුට දරුවන් දෙදෙනෙක් සිටී.", "phonetic": "හී හැස් ටූ චිල්ඩ්‍රන්."},
-        {"id": "s1_3_5", "target": "I want one coffee, please.", "native": "මට කරුණාකර කෝපි එකක් අවශ්‍යයි.", "phonetic": "අයි වෝන්ට් වන් කොෆී, ප්ලීස්."},
-        {"id": "s1_3_6", "target": "The address is number six.", "native": "ලිපිනය අංක හය.", "phonetic": "ද ඇඩ්‍රස් ඉස් නම්බර් සික්ස්."},
-        {"id": "s1_3_7", "target": "Can I have seven apples?", "native": "මට ඇපල් හතක් ගන්න පුලුවන්ද?", "phonetic": "කැන් අයි හැව් සෙවන් ඇපල්ස්?"},
-        {"id": "s1_3_8", "target": "It costs eight dollars.", "native": "එය ඩොලර් අටක් වේ.", "phonetic": "ඉට් කොස්ට්ස් එයිට් ඩොලර්ස්."}
+        {
+          "id": "w1_3_1",
+          "target": "Please",
+          "phonetic": "ප්ලීස්",
+          "native_meaning": "කරුණාකර",
+          "english": "Please",
+          "example_sentence_target": "Can you help me, please?",
+          "example_sentence_native": "කරුණාකර මට උදව් කරන්න පුළුවන්ද?",
+          "example_sentence_phonetic": "කැන් යූ හෙල්ප් මී, ප්ලීස්?"
+        },
+        {
+          "id": "w1_3_2",
+          "target": "Thank you",
+          "phonetic": "තෑන්ක් යූ",
+          "native_meaning": "ස්තූතියි",
+          "english": "Thank you",
+          "example_sentence_target": "Thank you for your help.",
+          "example_sentence_native": "ඔබගේ උදව්වට ස්තූතියි.",
+          "example_sentence_phonetic": "තෑන්ක් යූ ෆෝ යුවර් හෙල්ප්."
+        },
+        {
+          "id": "w1_3_3",
+          "target": "You're welcome",
+          "phonetic": "යූ ආර් වෙල්කම්",
+          "native_meaning": "ඔබව සාදරයෙන් පිළිගනිමු / කමක් නෑ",
+          "english": "You're welcome",
+          "example_sentence_target": "A: Thank you. B: You're welcome.",
+          "example_sentence_native": "A: ස්තූතියි. B: කමක් නෑ.",
+          "example_sentence_phonetic": "A: තෑන්ක් යූ. B: යූ ආර් වෙල්කම්."
+        },
+        {
+          "id": "w1_3_4",
+          "target": "Excuse me",
+          "phonetic": "එක්ස්කියුස් මී",
+          "native_meaning": "සමාවෙන්න",
+          "english": "Excuse me",
+          "example_sentence_target": "Excuse me, where is the toilet?",
+          "example_sentence_native": "සමාවෙන්න, වැසිකිළිය කොහෙද?",
+          "example_sentence_phonetic": "එක්ස්කියුස් මී, වෙයාර් ඉස් ද ටොයිලට්?"
+        },
+        {
+          "id": "w1_3_5",
+          "target": "I am sorry",
+          "phonetic": "අයි ඇම් සොරි",
+          "native_meaning": "මට කණගාටුයි",
+          "english": "I am sorry",
+          "example_sentence_target": "I am sorry, I made a mistake.",
+          "example_sentence_native": "මට කණගාටුයි, මගෙන් වැරැද්දක් වුනා.",
+          "example_sentence_phonetic": "අයි ඇම් සොරි, අයි මේඩ් අ මිස්ටේක්."
+        }
       ],
       "dialogues": [
         {
           "id": "d1_3_1",
-          "context": "At a shop.",
+          "context": "යමක් ආචාරශීලීව ඉල්ලා සිටීම.",
           "lines": [
-            {"speaker": "A", "target": "How much for two kilos of sugar?", "native": "සීනි කිලෝ දෙකක් කීයද?", "phonetic": "හව් මච් ෆෝ ටූ කිලෝස් ඔෆ් ෂුගර්?"},
-            {"speaker": "B", "target": "That will be four dollars.", "native": "ඒක ඩොලර් හතරක් වෙනවා.", "phonetic": "දැට් විල් බී ෆෝ ඩොලර්ස්."}
-          ]
-        },
-        {
-          "id": "d1_3_2",
-          "context": "Giving a phone number.",
-          "lines": [
-            {"speaker": "A", "target": "What is your phone number?", "native": "ඔබේ දුරකථන අංකය කුමක්ද?", "phonetic": "වට් ඉස් යුවර් ෆෝන් නම්බර්?"},
-            {"speaker": "B", "target": "It is seven-eight-one-two-three-four.", "native": "එය හතයි-අටයි-එකයි-දෙකයි-තුනයි-හතරයි.", "phonetic": "ඉට් ඉස් සෙවන්-එයිට්-වන්-ටූ-ත්‍රී-ෆෝ."}
-          ]
-        },
-        {
-          "id": "d1_3_3",
-          "context": "Ordering food.",
-          "lines": [
-            {"speaker": "A", "target": "I will have one tea and one sandwich.", "native": "මම තේ එකකුයි සැන්ඩ්විච් එකකුයි ගන්නම්.", "phonetic": "අයි විල් හෑව් වන් ටී ඇන්ඩ් වන් සැන්ඩ්විච්."},
-            {"speaker": "B", "target": "Okay, that is five dollars.", "native": "හරි, ඒක ඩොලර් පහයි.", "phonetic": "ඕකේ, දැට් ඉස් ෆයිව් ඩොලර්ස්."}
-          ]
-        },
-        {
-          "id": "d1_3_4",
-          "context": "Talking about family.",
-          "lines": [
-            {"speaker": "A", "target": "How many children do you have?", "native": "ඔබට දරුවන් කී දෙනෙක් සිටීද?", "phonetic": "හව් මෙනි චිල්ඩ්‍රන් ඩූ යූ හෑව්?"},
-            {"speaker": "B", "target": "I have three children.", "native": "මට දරුවන් තුන් දෙනෙක් සිටී.", "phonetic": "අයි හෑව් ත්‍රී චිල්ඩ්‍රන්."}
+            {
+              "speaker": "A",
+              "target": "Excuse me, can you pass the salt, please?",
+              "native": "සමාවෙන්න, කරුණාකර ලුණු ටික දෙන්න පුළුවන්ද?",
+              "phonetic": "එක්ස්කියුස් මී, කැන් යූ පාස් ද සෝල්ට්, ප්ලීස්?"
+            },
+            {
+              "speaker": "B",
+              "target": "Here you are. Anything else?",
+              "native": "මෙන්න. තව මොනවාහරි අවශ්‍යද?",
+              "phonetic": "හියර් යූ ආ. එනිතින් එල්ස්?"
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_3_1", "sentence": "There are ___ days in a week.", "answer": "seven", "hint": "සතියට දින හතක් ඇත."}
+          {
+            "id": "fb1_3_1",
+            "sentence": "___ you for the gift.",
+            "answer": "Thank",
+            "hint": "ස්තූතියි"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_3_1",
+            "target": "Please",
+            "native": "කරුණාකර"
+          },
+          {
+            "id": "m1_3_2",
+            "target": "I am sorry",
+            "native": "මට කණගාටුයි"
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_3_1",
-            "question": "What number comes after five?",
-            "options": ["Four", "Seven", "Six", "Three"],
+            "question": "කෙනෙකුගේ අවධානය ලබා ගැනීමට ඔබ භාවිතා කරන්නේ කුමන වාක්‍ය ඛණ්ඩයද?",
+            "options": ["Thank you", "You're welcome", "Excuse me", "I am sorry"],
             "correct": 2,
-            "explanation": "Six comes after five in counting order."
+            "explanation": "'Excuse me' යනු කෙනෙකුට කතා කිරීමට පෙර ඔවුන්ගේ අවධානය ලබා ගැනීමට භාවිතා කරයි."
           }
         ],
-        "matching": [
-          {"id": "m1_3_1", "target": "One", "native": "එක"},
-          {"id": "m1_3_2", "target": "Two", "native": "දෙක"},
-          {"id": "m1_3_3", "target": "Three", "native": "තුන"},
-          {"id": "m1_3_4", "target": "Four", "native": "හතර"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_3_1", "scrambled": ["I", "have", "brothers", "two", "."], "correct": "I have two brothers.", "nativeHint": "මට සහෝදරයන් දෙදෙනෙක් ඉන්නවා."}
+          {
+            "id": "ss1_3_1",
+            "scrambled": ["help", "me", "you", "can", "please", "?"],
+            "correct": "can you help me please ?",
+            "nativeHint": "කරුණාකර මට උදව් කරන්න පුලුවන්ද?"
+          }
         ]
       },
-      "cultural_note": "When saying phone numbers, English speakers often say 'oh' for the number 0. For example, '555-0102' could be said 'five-five-five, oh-one-oh-two'.",
-      "pronunciation_tip": "For the number 'Three', make sure to place your tongue between your teeth for the 'Th' sound. It's different from the 'T' sound.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D3-Numbers"}
+      "cultural_note": "ඉංග්‍රීසි කතා කරන රටවල, කුඩා දේකට වුවද 'please' සහ 'thank you' නිතර භාවිතා කිරීම ඉතා වැදගත් වේ.",
+      "pronunciation_tip": "'Thank you' හි 'th' ශබ්දය දිවේ තුඩ ඉදිරිපස දත් දෙක අතර තබා උච්චාරණය කරන්න. එය සිංහල 'ත' හෝ 'ද' ශබ්දයට වඩා වෙනස්.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D3-Politeness"
+      }
     },
     {
       "week": 1,
       "day": 4,
-      "title": "Week 1, Day 4: Days & Time",
-      "title_native": "1 වන සතිය, 4 වන දිනය: දවස් සහ වේලාව",
-      "theme": "Time & Schedule",
+      "title": "Week 1, Day 4: Basic Questions",
+      "title_native": "1 වන සතිය, 4 වන දිනය: මූලික ප්‍රශ්න",
+      "theme": "Basic Questions",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_4_1", "target": "Day", "phonetic": "ඩේ", "native_meaning": "දවස", "english": "Day", "example_sentence_target": "Today is a good day.", "example_sentence_native": "අද හොඳ දවසක්.", "example_sentence_phonetic": "ටුඩේ ඉස් අ ගුඩ් ඩේ."},
-        {"id": "w1_4_2", "target": "Week", "phonetic": "වීක්", "native_meaning": "සතිය", "english": "Week", "example_sentence_target": "I will see you next week.", "example_sentence_native": "මම ඔබව ලබන සතියේ හමුවෙන්නම්.", "example_sentence_phonetic": "අයි විල් සී යූ නෙක්ස්ට් වීක්."},
-        {"id": "w1_4_3", "target": "Today", "phonetic": "ටුඩේ", "native_meaning": "අද", "english": "Today", "example_sentence_target": "Today is Monday.", "example_sentence_native": "අද සඳුදා.", "example_sentence_phonetic": "ටුඩේ ඉස් මන්ඩේ."},
-        {"id": "w1_4_4", "target": "Tomorrow", "phonetic": "ටුමෝරෝ", "native_meaning": "හෙට", "english": "Tomorrow", "example_sentence_target": "The shop is closed tomorrow.", "example_sentence_native": "හෙට කඩේ වහලා.", "example_sentence_phonetic": "ද ෂොප් ඉස් ක්ලෝස්ඩ් ටුමෝරෝ."},
-        {"id": "w1_4_5", "target": "Yesterday", "phonetic": "යෙස්ටර්ඩේ", "native_meaning": "ඊයේ", "english": "Yesterday", "example_sentence_target": "I was busy yesterday.", "example_sentence_native": "මම ඊයේ කාර්යබහුල වුණා.", "example_sentence_phonetic": "අයි වෝස් බිසී යෙස්ටර්ඩේ."},
-        {"id": "w1_4_6", "target": "Time", "phonetic": "ටයිම්", "native_meaning": "වෙලාව", "english": "Time", "example_sentence_target": "What time is it?", "example_sentence_native": "වෙලාව කීයද?", "example_sentence_phonetic": "වට් ටයිම් ඉස් ඉට්?"},
-        {"id": "w1_4_7", "target": "Morning", "phonetic": "මෝනිං", "native_meaning": "උදෑසන", "english": "Morning", "example_sentence_target": "Good morning!", "example_sentence_native": "සුබ උදෑසනක්!", "example_sentence_phonetic": "ගුඩ් මෝනිං!"},
-        {"id": "w1_4_8", "target": "Night", "phonetic": "නයිට්", "native_meaning": "රාත්‍රිය", "english": "Night", "example_sentence_target": "Good night!", "example_sentence_native": "සුබ රාත්‍රියක්!", "example_sentence_phonetic": "ගුඩ් නයිට්!"}
-      ],
-      "sentences": [
-        {"id": "s1_4_1", "target": "The store opens at 9 in the morning.", "native": "කඩේ උදේ 9ට අරිනවා.", "phonetic": "ද ස්ටෝර් ඕපන්ස් ඇට් නයින් ඉන් ද මෝනිං."},
-        {"id": "s1_4_2", "target": "The appointment is on Wednesday.", "native": "ඇපොයින්ට්මන්ට් එක බදාදා.", "phonetic": "ද ඇපොයින්ට්මන්ට් ඉස් ඔන් වෙන්ස්ඩේ."},
-        {"id": "s1_4_3", "target": "I work from Monday to Friday.", "native": "මම සඳුදා සිට සිකුරාදා දක්වා වැඩ කරනවා.", "phonetic": "අයි වර්ක් ෆ්‍රොම් මන්ඩේ ටු ෆ්‍රයිඩේ."},
-        {"id": "s1_4_4", "target": "See you tomorrow morning.", "native": "හෙට උදේ හමුවෙමු.", "phonetic": "සී යූ ටුමෝරෝ මෝනිං."},
-        {"id": "s1_4_5", "target": "Yesterday was a holiday.", "native": "ඊයේ නිවාඩු දවසක්.", "phonetic": "යෙස්ටර්ඩේ වෝස් අ හොලිඩේ."},
-        {"id": "s1_4_6", "target": "I sleep at night.", "native": "මම රෑට නිදාගන්නවා.", "phonetic": "අයි ස්ලීප් ඇට් නයිට්."},
-        {"id": "s1_4_7", "target": "What day is it today?", "native": "අද මොන දවසද?", "phonetic": "වට් ඩේ ඉස් ඉට් ටුඩේ?"},
-        {"id": "s1_4_8", "target": "The bus arrives in five minutes.", "native": "බස් එක විනාඩි පහකින් එනවා.", "phonetic": "ද බස් అరైవ్ස් ඉන් ෆයිව් මිනිට්ස්."}
+        {
+          "id": "w1_4_1",
+          "target": "Who",
+          "phonetic": "හූ",
+          "native_meaning": "කවුද",
+          "english": "Who",
+          "example_sentence_target": "Who is that person?",
+          "example_sentence_native": "අර පුද්ගලයා කවුද?",
+          "example_sentence_phonetic": "හූ ඉස් දැට් පර්සන්?"
+        },
+        {
+          "id": "w1_4_2",
+          "target": "What",
+          "phonetic": "වොට්",
+          "native_meaning": "මොකක්ද",
+          "english": "What",
+          "example_sentence_target": "What is this?",
+          "example_sentence_native": "මේ මොකක්ද?",
+          "example_sentence_phonetic": "වොට් ඉස් දිස්?"
+        },
+        {
+          "id": "w1_4_3",
+          "target": "Where",
+          "phonetic": "වෙයාර්",
+          "native_meaning": "කොහෙද",
+          "english": "Where",
+          "example_sentence_target": "Where is the bus stop?",
+          "example_sentence_native": "බස් නැවතුම කොහෙද?",
+          "example_sentence_phonetic": "වෙයාර් ඉස් ද බස් ස්ටොප්?"
+        },
+        {
+          "id": "w1_4_4",
+          "target": "When",
+          "phonetic": "වෙන්",
+          "native_meaning": "කවදාද",
+          "english": "When",
+          "example_sentence_target": "When does the shop open?",
+          "example_sentence_native": "කඩේ අරින්නේ කවදාද?",
+          "example_sentence_phonetic": "වෙන් ඩස් ද ෂොප් ඕපන්?"
+        },
+        {
+          "id": "w1_4_5",
+          "target": "How",
+          "phonetic": "හව්",
+          "native_meaning": "කොහොමද",
+          "english": "How",
+          "example_sentence_target": "How do I get to the station?",
+          "example_sentence_native": "මම ස්ටේෂමට යන්නේ කොහොමද?",
+          "example_sentence_phonetic": "හව් ඩු අයි ගෙට් ටු ද ස්ටේෂන්?"
+        }
       ],
       "dialogues": [
         {
           "id": "d1_4_1",
-          "context": "Asking for the time.",
+          "context": "ස්ථානයක් ගැන විමසීම.",
           "lines": [
-            {"speaker": "A", "target": "Excuse me, what time is it?", "native": "සමාවෙන්න, වෙලාව කීයද?", "phonetic": "එක්ස්කියුස් මී, වට් ටයිම් ඉස් ඉට්?"},
-            {"speaker": "B", "target": "It is two o'clock.", "native": "දැන් වෙලාව දෙකයි.", "phonetic": "ඉට් ඉස් ටූ ඔක්ලොක්."}
-          ]
-        },
-        {
-          "id": "d1_4_2",
-          "context": "Making plans.",
-          "lines": [
-            {"speaker": "A", "target": "Can we meet tomorrow?", "native": "අපිට හෙට හමුවෙන්න පුලුවන්ද?", "phonetic": "කැන් වී මීට් ටුමෝරෝ?"},
-            {"speaker": "B", "target": "Yes, tomorrow morning is good.", "native": "ඔව්, හෙට උදේ හොඳයි.", "phonetic": "යෙස්, ටුමෝරෝ මෝනිං ඉස් ගුඩ්."}
-          ]
-        },
-        {
-          "id": "d1_4_3",
-          "context": "Talking about the past.",
-          "lines": [
-            {"speaker": "A", "target": "Where were you yesterday?", "native": "ඔබ ඊයේ කොහෙද හිටියේ?", "phonetic": "වෙයාර් වර් යූ යෙස්ටර්ඩේ?"},
-            {"speaker": "B", "target": "I was at work yesterday.", "native": "මම ඊයේ වැඩට ගියා.", "phonetic": "අයි වෝස් ඇට් වර්ක් යෙස්ටර්ඩේ."}
-          ]
-        },
-        {
-          "id": "d1_4_4",
-          "context": "Saying good night.",
-          "lines": [
-            {"speaker": "A", "target": "I am going to sleep now. Good night!", "native": "මම දැන් නිදාගන්න යනවා. සුබ රාත්‍රියක්!", "phonetic": "අයම් ගොයින් ටු ස්ලීප් නව්. ගුඩ් නයිට්!"},
-            {"speaker": "B", "target": "Good night! Sleep well.", "native": "සුබ රාත්‍රියක්! හොඳින් නිදාගන්න.", "phonetic": "ගුඩ් නයිට්! ස්ලීප් වෙල්."}
+            {
+              "speaker": "A",
+              "target": "Excuse me, where is the supermarket?",
+              "native": "සමාවෙන්න, සුපර්මාකට් එක කොහෙද?",
+              "phonetic": "එක්ස්කියුස් මී, වෙයාර් ඉස් ද සුපර්මාකට්?"
+            },
+            {
+              "speaker": "B",
+              "target": "It's on the next street, on your right.",
+              "native": "ඒක ඊළඟ පාරේ, ඔයාගේ දකුණු පැත්තේ.",
+              "phonetic": "ඉට්ස් ඔන් ද නෙක්ස්ට් ස්ට්‍රීට්, ඔන් යුවර් රයිට්."
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_4_1", "sentence": "What ___ is it?", "answer": "time", "hint": "වෙලාව කීයද?"}
+          {
+            "id": "fb1_4_1",
+            "sentence": "___ is your birthday?",
+            "answer": "When",
+            "hint": "කවදාද"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_4_1",
+            "target": "Who",
+            "native": "කවුද"
+          },
+          {
+            "id": "m1_4_2",
+            "target": "Where",
+            "native": "කොහෙද"
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_4_1",
-            "question": "What is the day after today?",
-            "options": ["Yesterday", "Tomorrow", "Week", "Morning"],
+            "question": "යමක් ගැන විස්තරයක් ඇසීමට භාවිතා කරන්නේ කුමන වචනයද?",
+            "options": ["Who", "What", "When", "Where"],
             "correct": 1,
-            "explanation": "'Tomorrow' is the day that follows today."
+            "explanation": "'What' යනු යමක් හෝ දෙයක් ගැන විමසීමට භාවිතා කරයි."
           }
         ],
-        "matching": [
-          {"id": "m1_4_1", "target": "Today", "native": "අද"},
-          {"id": "m1_4_2", "target": "Tomorrow", "native": "හෙට"},
-          {"id": "m1_4_3", "target": "Yesterday", "native": "ඊයේ"},
-          {"id": "m1_4_4", "target": "Morning", "native": "උදෑසන"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_4_1", "scrambled": ["is", "it", "what", "time", "?"], "correct": "What time is it?", "nativeHint": "වෙලාව කීයද?"}
+          {
+            "id": "ss1_4_1",
+            "scrambled": ["is", "this", "what", "?"],
+            "correct": "what is this ?",
+            "nativeHint": "මේ මොකක්ද?"
+          }
         ]
       },
-      "cultural_note": "Most English-speaking countries use a 12-hour clock in daily conversation (e.g., '2 PM'), but a 24-hour clock (e.g., '14:00') is often used for official schedules like flights and trains.",
-      "pronunciation_tip": "In 'Yesterday', the stress is on the first syllable: 'YES-ter-day'. Don't stress the 'day' at the end.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D4-Time"}
+      "cultural_note": "යමක් නොතේරෙන විට ප්‍රශ්න ඇසීමට බිය නොවන්න. බොහෝ දෙනා ඔබට උදව් කිරීමට කැමති වනු ඇත.",
+      "pronunciation_tip": "'Who' (හූ) සහ 'How' (හව්) යන වචන දෙකේ උච්චාරණය සහ තේරුම සම්පූර්ණයෙන්ම වෙනස්. ඒ ගැන සැලකිලිමත් වන්න.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D4-Questions"
+      }
     },
     {
       "week": 1,
       "day": 5,
-      "title": "Week 1, Day 5: Food & Drink",
-      "title_native": "1 වන සතිය, 5 වන දිනය: කෑම සහ බීම",
-      "theme": "Food & Ordering",
+      "title": "Week 1, Day 5: Numbers 1-10",
+      "title_native": "1 වන සතිය, 5 වන දිනය: ඉලක්කම් 1-10",
+      "theme": "Numbers 1-10",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_5_1", "target": "Food", "phonetic": "ෆුඩ්", "native_meaning": "කෑම", "english": "Food", "example_sentence_target": "I am hungry, I need food.", "example_sentence_native": "මට බඩගිනියි, මට කෑම ඕන.", "example_sentence_phonetic": "අයම් හන්ග්‍රි, අයි නීඩ් ෆුඩ්."},
-        {"id": "w1_5_2", "target": "Water", "phonetic": "වෝටර්", "native_meaning": "වතුර", "english": "Water", "example_sentence_target": "Can I have some water, please?", "example_sentence_native": "කරුණාකර මට වතුර ටිකක් ගන්න පුලුවන්ද?", "example_sentence_phonetic": "කැන් අයි හෑව් සම් වෝටර්, ප්ලීස්?"},
-        {"id": "w1_5_3", "target": "Rice", "phonetic": "රයිස්", "native_meaning": "බත්", "english": "Rice", "example_sentence_target": "I eat rice every day.", "example_sentence_native": "මම හැමදාම බත් කනවා.", "example_sentence_phonetic": "අයි ඊට් රයිස් එව්රි ඩේ."},
-        {"id": "w1_5_4", "target": "Tea", "phonetic": "ටී", "native_meaning": "තේ", "english": "Tea", "example_sentence_target": "I would like a cup of tea.", "example_sentence_native": "මම තේ කෝප්පයක් කැමතියි.", "example_sentence_phonetic": "අයි වුඩ් ලයික් අ කප් ඔෆ් ටී."},
-        {"id": "w1_5_5", "target": "Coffee", "phonetic": "කොෆී", "native_meaning": "කෝපි", "english": "Coffee", "example_sentence_target": "He drinks coffee in the morning.", "example_sentence_native": "ඔහු උදේට කෝපි බොනවා.", "example_sentence_phonetic": "හී ඩ්‍රින්ක්ස් කොෆී ඉන් ද මෝනිං."},
-        {"id": "w1_5_6", "target": "Bread", "phonetic": "බ්‍රෙඩ්", "native_meaning": "පාන්", "english": "Bread", "example_sentence_target": "I need to buy some bread.", "example_sentence_native": "මට පාන් ටිකක් ගන්න ඕන.", "example_sentence_phonetic": "අයි නීඩ් ටු බයි සම් බ්‍රෙඩ්."},
-        {"id": "w1_5_7", "target": "Eat", "phonetic": "ඊට්", "native_meaning": "කනවා", "english": "Eat", "example_sentence_target": "What do you want to eat?", "example_sentence_native": "ඔබට මොනවද කන්න ඕන?", "example_sentence_phonetic": "වට් ඩූ යූ වෝන්ට් ටු ඊට්?"},
-        {"id": "w1_5_8", "target": "Drink", "phonetic": "ඩ්‍රින්ක්", "native_meaning": "බොනවා", "english": "Drink", "example_sentence_target": "I want something to drink.", "example_sentence_native": "මට බොන්න දෙයක් ඕන.", "example_sentence_phonetic": "අයි වෝන්ට් සම්තින් ටු ඩ්‍රින්ක්."}
-      ],
-      "sentences": [
-        {"id": "s1_5_1", "target": "I am hungry.", "native": "මට බඩගිනියි.", "phonetic": "අයම් හන්ග්‍රි."},
-        {"id": "s1_5_2", "target": "I am thirsty.", "native": "මට තිබහයි.", "phonetic": "අයම් තර්ස්ටි."},
-        {"id": "s1_5_3", "target": "Can I have the menu, please?", "native": "කරුණාකර මට මෙනු එක ගන්න පුලුවන්ද?", "phonetic": "කැන් අයි හෑව් ද මෙනු, ප්ලීස්?"},
-        {"id": "s1_5_4", "target": "I would like to order now.", "native": "මම දැන් ඕඩර් කරන්න කැමතියි.", "phonetic": "අයි වුඩ් ලයික් ටු ඕඩර් නව්."},
-        {"id": "s1_5_5", "target": "This food is delicious.", "native": "මේ කෑම රසයි.", "phonetic": "දිස් ෆුඩ් ඉස් ඩිලිෂස්."},
-        {"id": "s1_5_6", "target": "The bill, please.", "native": "කරුණාකර බිල ගේන්න.", "phonetic": "ද බිල්, ප්ලීස්."},
-        {"id": "s1_5_7", "target": "Is there a restaurant nearby?", "native": "මේ ළඟ පාත අවන්හලක් තියෙනවද?", "phonetic": "ඉස් දෙයා අ රෙස්ටුරන්ට් නියර්බායි?"},
-        {"id": "s1_5_8", "target": "One coffee with milk and sugar.", "native": "කිරි සහ සීනි දාපු කෝපි එකක්.", "phonetic": "වන් කොෆී විත් මිල්ක් ඇන්ඩ් ෂුගර්."}
+        {
+          "id": "w1_5_1",
+          "target": "One",
+          "phonetic": "වන්",
+          "native_meaning": "එක",
+          "english": "One",
+          "example_sentence_target": "I have one brother.",
+          "example_sentence_native": "මට එක සහෝදරයෙක් ඉන්නවා.",
+          "example_sentence_phonetic": "අයි හෑව් වන් බ්‍රදර්."
+        },
+        {
+          "id": "w1_5_2",
+          "target": "Two",
+          "phonetic": "ටූ",
+          "native_meaning": "දෙක",
+          "english": "Two",
+          "example_sentence_target": "I need two tickets.",
+          "example_sentence_native": "මට ටිකට් දෙකක් අවශ්‍යයි.",
+          "example_sentence_phonetic": "අයි නීඩ් ටූ ටිකට්ස්."
+        },
+        {
+          "id": "w1_5_3",
+          "target": "Three",
+          "phonetic": "ත්‍රී",
+          "native_meaning": "තුන",
+          "english": "Three",
+          "example_sentence_target": "There are three books.",
+          "example_sentence_native": "පොත් තුනක් තියෙනවා.",
+          "example_sentence_phonetic": "දෙයාර් ආ ත්‍රී බුක්ස්."
+        },
+        {
+          "id": "w1_5_4",
+          "target": "Four",
+          "phonetic": "ෆෝ",
+          "native_meaning": "හතර",
+          "english": "Four",
+          "example_sentence_target": "The meeting is at four o'clock.",
+          "example_sentence_native": "රැස්වීම හතරට.",
+          "example_sentence_phonetic": "ද මීටින් ඉස් ඇට් ෆෝ ඔක්ලොක්."
+        },
+        {
+          "id": "w1_5_5",
+          "target": "Five",
+          "phonetic": "ෆයිව්",
+          "native_meaning": "පහ",
+          "english": "Five",
+          "example_sentence_target": "I will be back in five minutes.",
+          "example_sentence_native": "මම විනාඩි පහකින් එන්නම්.",
+          "example_sentence_phonetic": "අයි විල් බී බෑක් ඉන් ෆයිව් මිනිට්ස්."
+        }
       ],
       "dialogues": [
         {
           "id": "d1_5_1",
-          "context": "In a cafe.",
+          "context": "වෙළඳසැලකදී යමක් මිලදී ගැනීම.",
           "lines": [
-            {"speaker": "A", "target": "What would you like to drink?", "native": "ඔබ මොනවද බොන්න කැමති?", "phonetic": "වට් වුඩ් යූ ලයික් ටු ඩ්‍රින්ක්?"},
-            {"speaker": "B", "target": "One tea, please.", "native": "කරුණාකර තේ එකක්.", "phonetic": "වන් ටී, ප්ලීස්."}
-          ]
-        },
-        {
-          "id": "d1_5_2",
-          "context": "Feeling hungry.",
-          "lines": [
-            {"speaker": "A", "target": "I am hungry. Let's eat.", "native": "මට බඩගිනියි. අපි කමු.", "phonetic": "අයම් හන්ග්‍රි. ලෙට්ස් ඊට්."},
-            {"speaker": "B", "target": "Good idea. What do you want to eat?", "native": "හොඳ අදහසක්. ඔයාට මොනවද කන්න ඕන?", "phonetic": "ගුඩ් අයිඩියා. වට් ඩූ යූ වෝන්ට් ටු ඊට්?"}
-          ]
-        },
-        {
-          "id": "d1_5_3",
-          "context": "Ordering in a restaurant.",
-          "lines": [
-            {"speaker": "A", "target": "I would like rice and chicken curry.", "native": "මම බතුයි චිකන් කරියකුයි කැමතියි.", "phonetic": "අයි වුඩ් ලයික් රයිස් ඇන්ඩ් චිකන් කරි."},
-            {"speaker": "B", "target": "And to drink?", "native": "බොන්න මොනවද?", "phonetic": "ඇන්ඩ් ටු ඩ්‍රින්ක්?"}
-          ]
-        },
-        {
-          "id": "d1_5_4",
-          "context": "Asking for water.",
-          "lines": [
-            {"speaker": "A", "target": "Excuse me, can I have a glass of water?", "native": "සමාවෙන්න, මට වතුර වීදුරුවක් ගන්න පුලුවන්ද?", "phonetic": "එක්ස්කියුස් මී, කැන් අයි හෑව් අ ග්ලාස් ඔෆ් වෝටර්?"},
-            {"speaker": "B", "target": "Certainly. Here you are.", "native": "ඇත්තෙන්ම. මෙන්න.", "phonetic": "සර්ටන්ලි. හියර් යූ ආර්."}
+            {
+              "speaker": "A",
+              "target": "Hello, can I have three apples, please?",
+              "native": "ආයුබෝවන්, මට ඇපල් ගෙඩි තුනක් ගන්න පුළුවන්ද?",
+              "phonetic": "හලෝ, කැන් අයි හෑව් ත්‍රී ඇපල්ස්, ප්ලීස්?"
+            },
+            {
+              "speaker": "B",
+              "target": "Sure. That will be two dollars.",
+              "native": "හරි. ඩොලර් දෙකක් වෙනවා.",
+              "phonetic": "ෂුවර්. දැට් විල් බී ටූ ඩොලර්ස්."
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_5_1", "sentence": "I am ___, I need water.", "answer": "thirsty", "hint": "මට තිබහයි."}
+          {
+            "id": "fb1_5_1",
+            "sentence": "One, two, ___.",
+            "answer": "three",
+            "hint": "තුන"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_5_1",
+            "target": "Five",
+            "native": "5"
+          },
+          {
+            "id": "m1_5_2",
+            "target": "One",
+            "native": "1"
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_5_1",
-            "question": "What do you ask for at the end of a meal in a restaurant?",
-            "options": ["The menu", "The food", "The bill", "The water"],
+            "question": "'Four' ට පසුව එන ඉලක්කම කුමක්ද?",
+            "options": ["Two", "Three", "Five", "Six"],
             "correct": 2,
-            "explanation": "'The bill, please' is used to ask for the check to pay for the meal."
+            "explanation": "The number after four is five."
           }
         ],
-        "matching": [
-          {"id": "m1_5_1", "target": "Food", "native": "කෑම"},
-          {"id": "m1_5_2", "target": "Water", "native": "වතුර"},
-          {"id": "m1_5_3", "target": "Eat", "native": "කනවා"},
-          {"id": "m1_5_4", "target": "Drink", "native": "බොනවා"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_5_1", "scrambled": ["am", "I", "hungry", "."], "correct": "I am hungry.", "nativeHint": "මට බඩගිනියි."}
+          {
+            "id": "ss1_5_1",
+            "scrambled": ["cats", "two", "have", "I"],
+            "correct": "I have two cats",
+            "nativeHint": "මට බළලුන් දෙදෙනෙක් ඉන්නවා."
+          }
         ]
       },
-      "cultural_note": "Tipping is common in restaurants in countries like the USA and Canada (around 15-20%), but less common or included in the price in places like the UK and Australia.",
-      "pronunciation_tip": "The 'oo' sound in 'Food' is a long sound, like in 'moon'. The 'oo' in 'Good' is shorter, like in 'book'. Pay attention to the length.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D5-Food"}
+      "cultural_note": "බොහෝ රටවල, ඇඟිලි භාවිතා කර ගණන් කිරීම සාමාන්‍ය දෙයකි. නමුත් සමහර සංස්කෘතීන් වල එයට විශේෂ ක්‍රම තිබිය හැක.",
+      "pronunciation_tip": "'Three' හි 'th' ශබ්දය නිවැරදිව උච්චාරණය කිරීමට පුරුදු වන්න. එය 'tree' (ගස) යන වචනයෙන් වෙනස් වේ.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D5-Numbers"
+      }
     },
     {
       "week": 1,
       "day": 6,
-      "title": "Week 1, Day 6: People & Family",
-      "title_native": "1 වන සතිය, 6 වන දිනය: මිනිසුන් සහ පවුල",
-      "theme": "Family & Relationships",
+      "title": "Week 1, Day 6: Understanding",
+      "title_native": "1 වන සතිය, 6 වන දිනය: තේරුම් ගැනීම",
+      "theme": "Understanding",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_6_1", "target": "Man", "phonetic": "මෑන්", "native_meaning": "පිරිමියා", "english": "Man", "example_sentence_target": "That man is my boss.", "example_sentence_native": "අර පිරිමියා මගේ ප්‍රධානියා.", "example_sentence_phonetic": "දැට් මෑන් ඉස් මයි බොස්."},
-        {"id": "w1_6_2", "target": "Woman", "phonetic": "වුමන්", "native_meaning": "කාන්තාව", "english": "Woman", "example_sentence_target": "The woman is a doctor.", "example_sentence_native": "ඒ කාන්තාව වෛද්‍යවරියක්.", "example_sentence_phonetic": "ද වුමන් ඉස් අ ඩොක්ටර්."},
-        {"id": "w1_6_3", "target": "Family", "phonetic": "ෆැමිලි", "native_meaning": "පවුල", "english": "Family", "example_sentence_target": "I live with my family.", "example_sentence_native": "මම මගේ පවුල සමඟ ජීවත් වෙනවා.", "example_sentence_phonetic": "අයි ලිව් විත් මයි ෆැමිලි."},
-        {"id": "w1_6_4", "target": "Father", "phonetic": "ෆාදර්", "native_meaning": "තාත්තා", "english": "Father", "example_sentence_target": "My father is a teacher.", "example_sentence_native": "මගේ තාත්තා ගුරුවරයෙක්.", "example_sentence_phonetic": "මයි ෆාදර් ඉස් අ ටීචර්."},
-        {"id": "w1_6_5", "target": "Mother", "phonetic": "මදර්", "native_meaning": "අම්මා", "english": "Mother", "example_sentence_target": "My mother is very kind.", "example_sentence_native": "මගේ අම්මා හරිම කරුණාවන්තයි.", "example_sentence_phonetic": "මයි මදර් ඉස් වෙරි කයින්ඩ්."},
-        {"id": "w1_6_6", "target": "Brother", "phonetic": "බ්‍රදර්", "native_meaning": "සහෝදරයා", "english": "Brother", "example_sentence_target": "I have one older brother.", "example_sentence_native": "මට එක වැඩිමල් සහෝදරයෙක් ඉන්නවා.", "example_sentence_phonetic": "අයි හෑව් වන් ඕල්ඩර් බ්‍රදර්."},
-        {"id": "w1_6_7", "target": "Sister", "phonetic": "සිස්ටර්", "native_meaning": "සහෝදරිය", "english": "Sister", "example_sentence_target": "My sister lives in another city.", "example_sentence_native": "මගේ සහෝදරිය ජීවත් වෙන්නේ වෙනත් නගරයක.", "example_sentence_phonetic": "මයි සිස්ටර් ලිව්ස් ඉන් අනදර් සිටි."},
-        {"id": "w1_6_8", "target": "Friend", "phonetic": "ෆ්‍රෙන්ඩ්", "native_meaning": "මිතුරා / මිතුරිය", "english": "Friend", "example_sentence_target": "This is my friend, Kamal.", "example_sentence_native": "මේ මගේ මිතුරා, කමල්.", "example_sentence_phonetic": "දිස් ඉස් මයි ෆ්‍රෙන්ඩ්, කමල්."}
-      ],
-      "sentences": [
-        {"id": "s1_6_1", "target": "How many people are in your family?", "native": "ඔබේ පවුලේ කී දෙනෙක් ඉන්නවද?", "phonetic": "හව් මෙනි පීපල් ආර් ඉන් යුවර් ෆැමිලි?"},
-        {"id": "s1_6_2", "target": "I have two sisters and one brother.", "native": "මට සහෝදරියන් දෙදෙනෙකු සහ එක් සහෝදරයෙක් ඉන්නවා.", "phonetic": "අයි හෑව් ටූ සිස්ටර්ස් ඇන්ඩ් වන් බ්‍රදර්."},
-        {"id": "s1_6_3", "target": "My father's name is Kumar.", "native": "මගේ තාත්තාගේ නම කුමාර්.", "phonetic": "මයි ෆාදර්'ස් නේම් ඉස් කුමාර්."},
-        {"id": "s1_6_4", "target": "My mother is from Kandy.", "native": "මගේ අම්මා මහනුවරින්.", "phonetic": "මයි මදර් ඉස් ෆ්‍රොම් කැන්ඩි."},
-        {"id": "s1_6_5", "target": "This is my wife/husband.", "native": "මේ මගේ බිරිඳ/සැමියා.", "phonetic": "දිස් ඉස් මයි වයිෆ්/හස්බන්ඩ්."},
-        {"id": "s1_6_6", "target": "Do you have any children?", "native": "ඔබට දරුවන් සිටීද?", "phonetic": "ඩූ යූ හෑව් එනි චිල්ඩ්‍රන්?"},
-        {"id": "s1_6_7", "target": "My friend is a good person.", "native": "මගේ මිතුරා හොඳ කෙනෙක්.", "phonetic": "මයි ෆ්‍රෙන්ඩ් ඉස් අ ගුඩ් පර්සන්."},
-        {"id": "s1_6_8", "target": "The man is tall.", "native": "ඒ මිනිසා උසයි.", "phonetic": "ද මෑන් ඉස් ටෝල්."}
+        {
+          "id": "w1_6_1",
+          "target": "Yes",
+          "phonetic": "യെස්",
+          "native_meaning": "ඔව්",
+          "english": "Yes",
+          "example_sentence_target": "Yes, I understand.",
+          "example_sentence_native": "ඔව්, මට තේරෙනවා.",
+          "example_sentence_phonetic": "യെස්, අයි අන්ඩර්ස්ටෑන්ඩ්."
+        },
+        {
+          "id": "w1_6_2",
+          "target": "No",
+          "phonetic": "නෝ",
+          "native_meaning": "නැහැ",
+          "english": "No",
+          "example_sentence_target": "No, thank you.",
+          "example_sentence_native": "නැහැ, ස්තූතියි.",
+          "example_sentence_phonetic": "නෝ, තෑන්ක් යූ."
+        },
+        {
+          "id": "w1_6_3",
+          "target": "I understand",
+          "phonetic": "අයි අන්ඩර්ස්ටෑන්ඩ්",
+          "native_meaning": "මට තේරෙනවා",
+          "english": "I understand",
+          "example_sentence_target": "Thank you, I understand now.",
+          "example_sentence_native": "ස්තූතියි, මට දැන් තේරෙනවා.",
+          "example_sentence_phonetic": "තෑන්ක් යූ, අයි අන්ඩර්ස්ටෑන්ඩ් නව්."
+        },
+        {
+          "id": "w1_6_4",
+          "target": "I don't understand",
+          "phonetic": "අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්",
+          "native_meaning": "මට තේරෙන්නේ නැහැ",
+          "english": "I don't understand",
+          "example_sentence_target": "Sorry, I don't understand.",
+          "example_sentence_native": "සමාවෙන්න, මට තේරෙන්නේ නැහැ.",
+          "example_sentence_phonetic": "සොරි, අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්."
+        },
+        {
+          "id": "w1_6_5",
+          "target": "Can you repeat that?",
+          "phonetic": "කැන් යූ රිපීට් දැට්?",
+          "native_meaning": "ඔබට එය නැවත කියන්න පුළුවන්ද?",
+          "english": "Can you repeat that?",
+          "example_sentence_target": "I'm sorry, can you repeat that please?",
+          "example_sentence_native": "මට කණගාටුයි, කරුණාකර ඔබට එය නැවත කියන්න පුළුවන්ද?",
+          "example_sentence_phonetic": "අයිම් සොරි, කැන් යූ රිපීට් දැට් ප්ලීස්?"
+        }
       ],
       "dialogues": [
         {
           "id": "d1_6_1",
-          "context": "Introducing a friend.",
+          "context": "යමක් පැහැදිලි නැති විට.",
           "lines": [
-            {"speaker": "A", "target": "Sunil, this is my friend, Mary.", "native": "සුනිල්, මේ මගේ මිතුරිය, මේරි.", "phonetic": "සුනිල්, දිස් ඉස් මයි ෆ්‍රෙන්ඩ්, මේරි."},
-            {"speaker": "B", "target": "Hello Mary, nice to meet you.", "native": "ආයුබෝවන් මේරි, ඔබව හමුවීම සතුටක්.", "phonetic": "හෙලෝ මේරි, නයිස් ටු මීට් යූ."}
-          ]
-        },
-        {
-          "id": "d1_6_2",
-          "context": "Talking about siblings.",
-          "lines": [
-            {"speaker": "A", "target": "Do you have any brothers or sisters?", "native": "ඔබට සහෝදර සහෝදරියන් ඉන්නවද?", "phonetic": "ඩූ යූ හෑව් එනි බ්‍රදර්ස් ඕ සිස්ටර්ස්?"},
-            {"speaker": "B", "target": "Yes, I have one sister.", "native": "ඔව්, මට එක සහෝදරියක් ඉන්නවා.", "phonetic": "යෙස්, අයි හෑව් වන් සිස්ටර්."}
-          ]
-        },
-        {
-          "id": "d1_6_3",
-          "context": "Asking about parents.",
-          "lines": [
-            {"speaker": "A", "target": "How are your father and mother?", "native": "ඔබේ තාත්තටයි අම්මටයි කොහොමද?", "phonetic": "හව් ආර් යුවර් ෆාදර් ඇන්ඩ් මදර්?"},
-            {"speaker": "B", "target": "They are fine, thank you.", "native": "ඔවුන් හොඳින්, ස්තූතියි.", "phonetic": "දේ ආර් ෆයින්, තෑන්ක් යූ."}
-          ]
-        },
-        {
-          "id": "d1_6_4",
-          "context": "Identifying people.",
-          "lines": [
-            {"speaker": "A", "target": "Who is that woman?", "native": "අර කාන්තාව කවුද?", "phonetic": "හූ ඉස් දැට් වුමන්?"},
-            {"speaker": "B", "target": "She is my manager.", "native": "ඇය මගේ කළමනාකාරවරිය.", "phonetic": "ෂී ඉස් මයි මැනේජර්."}
+            {
+              "speaker": "A",
+              "target": "You need to go to platform three.",
+              "native": "ඔබ තුන්වන වේදිකාවට යා යුතුයි.",
+              "phonetic": "යූ නීඩ් ටු ගෝ ටු ප්ලැට්ෆෝම් ත්‍රී."
+            },
+            {
+              "speaker": "B",
+              "target": "Sorry, I don't understand. Can you repeat that?",
+              "native": "සමාවෙන්න, මට තේරුනේ නෑ. ඔබට එය නැවත කියන්න පුළුවන්ද?",
+              "phonetic": "සොරි, අයි ඩෝන්ට් අන්ඩර්ස්ටෑන්ඩ්. කැන් යූ රිපීට් දැට්?"
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_6_1", "sentence": "This is my ___, Kamal.", "answer": "friend", "hint": "මේ මගේ මිතුරා."}
+          {
+            "id": "fb1_6_1",
+            "sentence": "I ___ understand.",
+            "answer": "don't",
+            "hint": "තේරෙන්නේ නැහැ"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_6_1",
+            "target": "Yes",
+            "native": "ඔව්"
+          },
+          {
+            "id": "m1_6_2",
+            "target": "No",
+            "native": "නැහැ"
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_6_1",
-            "question": "Your mother's husband is your...",
-            "options": ["Brother", "Friend", "Father", "Sister"],
+            "question": "ඔබට යමක් නොතේරෙන විට කුමක් කිව යුතුද?",
+            "options": ["I understand", "Yes, please", "I don't understand", "Thank you"],
             "correct": 2,
-            "explanation": "Your mother's husband is your father."
+            "explanation": "'I don't understand' යනු ඔබට යමක් පැහැදිලි නැති බව දැක්වීමට භාවිතා කරයි."
           }
         ],
-        "matching": [
-          {"id": "m1_6_1", "target": "Father", "native": "තාත්තා"},
-          {"id": "m1_6_2", "target": "Mother", "native": "අම්මා"},
-          {"id": "m1_6_3", "target": "Brother", "native": "සහෝදරයා"},
-          {"id": "m1_6_4", "target": "Sister", "native": "සහෝදරිය"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_6_1", "scrambled": ["is", "my", "father", "a", "teacher", "."], "correct": "My father is a teacher.", "nativeHint": "මගේ තාත්තා ගුරුවරයෙක්."}
+          {
+            "id": "ss1_6_1",
+            "scrambled": ["that", "repeat", "you", "can", "?"],
+            "correct": "can you repeat that ?",
+            "nativeHint": "ඔබට එය නැවත කියන්න පුළුවන්ද?"
+          }
         ]
       },
-      "cultural_note": "In many Western cultures, it's common to call older people by their first name, which might be different from Sri Lankan culture. Using titles like 'Mr.' or 'Mrs.' is more formal.",
-      "pronunciation_tip": "The 'th' in 'Father' and 'Mother' is a 'voiced' sound. Your vocal cords should vibrate. It's different from the 'th' in 'three'.",
-      "progress": {"xp": 100, "streak_bonus": 20, "badge": "W1D6-Family"}
+      "cultural_note": "හිස සෙලවීම 'ඔව්' හෝ 'නැහැ' යන්න දැක්වීමට පොදුවේ භාවිතා වුවද, සමහර සංස්කෘතීන්වල එහි තේරුම වෙනස් විය හැක. වචන වලින් පැවසීම වඩාත් පැහැදිලිය.",
+      "pronunciation_tip": "'don't' යනු 'do not' යන්නෙහි කෙටි রূপයයි. 'o' ශබ්දය පැහැදිලිව උච්චාරණය කරන්න.",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1D6-Understanding"
+      }
     },
     {
       "week": 1,
       "day": 7,
-      "title": "Week 1, Day 7: Review & Conversation",
-      "title_native": "1 වන සතිය, 7 වන දිනය: සමාලෝචනය සහ සංවාදය",
+      "title": "Week 1, Day 7: Review & Survival",
+      "title_native": "1 වන සතිය, 7 වන දිනය: සමාලෝචනය සහ පැවැත්ම",
       "theme": "Review",
       "path": "survival",
       "targetLanguage": "English",
       "nativeLanguage": "Sinhala",
       "words": [
-        {"id": "w1_7_1", "target": "Good", "phonetic": "ගුඩ්", "native_meaning": "හොඳ", "english": "Good", "example_sentence_target": "This is good food.", "example_sentence_native": "මේවා හොඳ කෑම.", "example_sentence_phonetic": "දිස් ඉස් ගුඩ් ෆුඩ්."},
-        {"id": "w1_7_2", "target": "Bad", "phonetic": "බෑඩ්", "native_meaning": "නරක", "english": "Bad", "example_sentence_target": "The weather is bad today.", "example_sentence_native": "අද කාලගුණය නරකයි.", "example_sentence_phonetic": "ද වෙදර් ඉස් බෑඩ් ටුඩේ."},
-        {"id": "w1_7_3", "target": "Big", "phonetic": "බිග්", "native_meaning": "ලොකු", "english": "Big", "example_sentence_target": "That is a big house.", "example_sentence_native": "ඒක ලොකු ගෙයක්.", "example_sentence_phonetic": "දැට් ඉස් අ බිග් හවුස්."},
-        {"id": "w1_7_4", "target": "Small", "phonetic": "ස්මෝල්", "native_meaning": "කුඩා", "english": "Small", "example_sentence_target": "I want a small coffee.", "example_sentence_native": "මට පොඩි කෝපි එකක් ඕන.", "example_sentence_phonetic": "අයි වෝන්ට් අ ස්මෝල් කොෆී."},
-        {"id": "w1_7_5", "target": "Hot", "phonetic": "හොට්", "native_meaning": "උණුසුම්", "english": "Hot", "example_sentence_target": "The tea is very hot.", "example_sentence_native": "තේ එක හරිම උණුසුම්.", "example_sentence_phonetic": "ද ටී ඉස් වෙරි හොට්."},
-        {"id": "w1_7_6", "target": "Cold", "phonetic": "කෝල්ඩ්", "native_meaning": "සීතල", "english": "Cold", "example_sentence_target": "It is cold outside.", "example_sentence_native": "එළියේ සීතලයි.", "example_sentence_phonetic": "ඉට් ඉස් කෝල්ඩ් අවුට්සයිඩ්."},
-        {"id": "w1_7_7", "target": "Here", "phonetic": "හියර්", "native_meaning": "මෙතන", "english": "Here", "example_sentence_target": "The restaurant is here.", "example_sentence_native": "අවන්හල තියෙන්නේ මෙතන.", "example_sentence_phonetic": "ද රෙස්ටුරන්ට් ඉස් හියර්."},
-        {"id": "w1_7_8", "target": "There", "phonetic": "දෙයාර්", "native_meaning": "එතන", "english": "There", "example_sentence_target": "The bus stop is over there.", "example_sentence_native": "බස් නැවතුම තියෙන්නේ අතන.", "example_sentence_phonetic": "ද බස් ස්ටොප් ඉස් ඕවර් දෙයාර්."}
-      ],
-      "sentences": [
-        {"id": "s1_7_1", "target": "Hello, how are you?", "native": "ආයුබෝවන්, ඔබට කොහොමද?", "phonetic": "හෙලෝ, හව් ආර් යූ?"},
-        {"id": "s1_7_2", "target": "I am from Sri Lanka.", "native": "මම ශ්‍රී ලංකාවෙන්.", "phonetic": "අයම් ෆ්‍රොම් ශ්‍රී ලංකා."},
-        {"id": "s1_7_3", "target": "How much is one kilo of rice?", "native": "හාල් කිලෝ එකක් කීයද?", "phonetic": "හව් මච් ඉස් වන් කිලෝ ඔෆ් රයිස්?"},
-        {"id": "s1_7_4", "target": "Can I have one coffee, please?", "native": "කරුණාකර මට කෝපි එකක් ගන්න පුලුවන්ද?", "phonetic": "කැන් අයි හෑව් වන් කොෆී, ප්ලීස්?"},
-        {"id": "s1_7_5", "target": "Where is the toilet?", "native": "වැසිකිළිය කොහෙද?", "phonetic": "වෙයාර් ඉස් ද ටොයිලට්?"},
-        {"id": "s1_7_6", "target": "Thank you for your help.", "native": "ඔබගේ උදව්වට ස්තූතියි.", "phonetic": "තෑන්ක් යූ ෆෝ යුවර් හෙල්ප්."},
-        {"id": "s1_7_7", "target": "My brother is a student.", "native": "මගේ සහෝදරයා ශිෂ්‍යයෙක්.", "phonetic": "මයි බ්‍රදර් ඉස් අ ස්ටුඩන්ට්."},
-        {"id": "s1_7_8", "target": "Goodbye, see you tomorrow.", "native": "ගිහින් එන්නම්, හෙට හමුවෙමු.", "phonetic": "ගුඩ්බායි, සී යූ ටුමෝරෝ."}
+        {
+          "id": "w1_7_1",
+          "target": "Help!",
+          "phonetic": "හෙල්ප්!",
+          "native_meaning": "උදව් කරන්න!",
+          "english": "Help!",
+          "example_sentence_target": "Help! I am lost.",
+          "example_sentence_native": "උදව් කරන්න! මම අතරමං වෙලා.",
+          "example_sentence_phonetic": "හෙල්ප්! අයි ඇම් ලොස්ට්."
+        },
+        {
+          "id": "w1_7_2",
+          "target": "How much is this?",
+          "phonetic": "හව් මච් ඉස් දිස්?",
+          "native_meaning": "මේක කීයද?",
+          "english": "How much is this?",
+          "example_sentence_target": "Excuse me, how much is this?",
+          "example_sentence_native": "සමාවෙන්න, මේක කීයද?",
+          "example_sentence_phonetic": "එක්ස්කියුස් මී, හව් මච් ඉස් දිස්?"
+        },
+        {
+          "id": "w1_7_3",
+          "target": "Where is the toilet?",
+          "phonetic": "වෙයාර් ඉස් ද ටොයිලට්?",
+          "native_meaning": "වැසිකිළිය කොහෙද?",
+          "english": "Where is the toilet?",
+          "example_sentence_target": "Please, where is the toilet?",
+          "example_sentence_native": "කරුණාකර, වැසිකිළිය කොහෙද?",
+          "example_sentence_phonetic": "ප්ලීස්, වෙයාර් ඉස් ද ටොයිලට්?"
+        },
+        {
+          "id": "w1_7_4",
+          "target": "I need...",
+          "phonetic": "අයි නීඩ්...",
+          "native_meaning": "මට අවශ්‍යයි...",
+          "english": "I need...",
+          "example_sentence_target": "I need help.",
+          "example_sentence_native": "මට උදව් අවශ්‍යයි.",
+          "example_sentence_phonetic": "අයි නීඩ් හෙල්ප්."
+        },
+        {
+          "id": "w1_7_5",
+          "target": "I want...",
+          "phonetic": "අයි වෝන්ට්...",
+          "native_meaning": "මට ඕන...",
+          "english": "I want...",
+          "example_sentence_target": "I want some water.",
+          "example_sentence_native": "මට වතුර ටිකක් ඕන.",
+          "example_sentence_phonetic": "අයි වෝන්ට් සම් වෝටර්."
+        }
       ],
       "dialogues": [
         {
           "id": "d1_7_1",
-          "context": "A simple conversation at a shop.",
+          "context": "වෙළඳසැලකදී මිල විමසීම.",
           "lines": [
-            {"speaker": "A", "target": "Hello. How much is one water bottle?", "native": "ආයුබෝවන්. වතුර බෝතලයක් කීයද?", "phonetic": "හෙලෝ. හව් මච් ඉස් වන් වෝටර් බොට්ල්?"},
-            {"speaker": "B", "target": "It is two dollars.", "native": "එකක් ඩොලර් දෙකයි.", "phonetic": "ඉට් ඉස් ටූ ඩොලර්ස්."}
-          ]
-        },
-        {
-          "id": "d1_7_2",
-          "context": "Meeting a friend of a friend.",
-          "lines": [
-            {"speaker": "A", "target": "Nimal, this is my friend, Anna. Anna, this is Nimal.", "native": "නිමල්, මේ මගේ යාළුවා, ඇනා. ඇනා, මේ නිමල්.", "phonetic": "නිමල්, දිස් ඉස් මයි ෆ්‍රෙන්ඩ්, ඇනා. ඇනා, දිස් ඉස් නිමල්."},
-            {"speaker": "B", "target": "Hello Nimal, nice to meet you.", "native": "ආයුබෝවන් නිමල්, ඔබව හමුවීම සතුටක්.", "phonetic": "හෙලෝ නිමල්, නයිස් ටු මීට් යූ."}
-          ]
-        },
-        {
-          "id": "d1_7_3",
-          "context": "Asking for directions.",
-          "lines": [
-            {"speaker": "A", "target": "Excuse me, where is the big supermarket?", "native": "සමාවෙන්න, ලොකු සුපර්මාර්කට් එක කොහෙද?", "phonetic": "එක්ස්කියුස් මී, වෙයාර් ඉස් ද බිග් සුපර්මාර්කට්?"},
-            {"speaker": "B", "target": "It is over there, next to the small bank.", "native": "එය අතන, පොඩි බැංකුව ළඟ.", "phonetic": "ඉට් ඉස් ඕවර් දෙයාර්, නෙක්ස්ට් ටු ද ස්මෝල් බෑන්ක්."}
-          ]
-        },
-        {
-          "id": "d1_7_4",
-          "context": "Making an appointment.",
-          "lines": [
-            {"speaker": "A", "target": "Can I have an appointment for tomorrow morning?", "native": "මට හෙට උදේට ඇපොයින්ට්මන්ට් එකක් ගන්න පුලුවන්ද?", "phonetic": "කැන් අයි හෑව් ඇන් ඇපොයින්ට්මන්ට් ෆෝ ටුමෝරෝ මෝනිං?"},
-            {"speaker": "B", "target": "Yes, ten o'clock is good.", "native": "ඔව්, දහය වෙලාව හොඳයි.", "phonetic": "යෙස්, ටෙන් ඔක්ලොක් ඉස් ගුඩ්."}
+            {
+              "speaker": "A",
+              "target": "Excuse me, how much is this shirt?",
+              "native": "සමාවෙන්න, මේ ෂර්ට් එක කීයද?",
+              "phonetic": "එක්ස්කියුස් මී, හව් මච් ඉස් දිස් ෂර්ට්?"
+            },
+            {
+              "speaker": "B",
+              "target": "It's ten dollars.",
+              "native": "ඒක ඩොලර් දහයයි.",
+              "phonetic": "ඉට්ස් ටෙන් ඩොලර්ස්."
+            }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {"id": "fb1_7_1", "sentence": "The bus stop is over ___.", "answer": "there", "hint": "බස් නැවතුම අතන."}
+          {
+            "id": "fb1_7_1",
+            "sentence": "How ___ is this?",
+            "answer": "much",
+            "hint": "කීයද"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m1_7_1",
+            "target": "I need help.",
+            "native": "මට උදව් අවශ්‍යයි."
+          },
+          {
+            "id": "m1_7_2",
+            "target": "Good morning",
+            "native": "සුබ උදෑසනක්"
+          }
         ],
         "multipleChoice": [
           {
             "id": "mc1_7_1",
-            "question": "How do you say 'මට බඩගිනියි' in English?",
-            "options": ["I am thirsty", "I am happy", "I am hungry", "I am tired"],
+            "question": "උදෑසනකදී ඔබ භාවිතා කරන සුබ පැතුම කුමක්ද?",
+            "options": ["Good evening", "Good afternoon", "Good morning", "Goodbye"],
             "correct": 2,
-            "explanation": "'I am hungry' means you want to eat."
+            "explanation": "'Good morning' යනු උදෑසන භාවිතා කරන නිවැරදි සුබ පැතුමයි."
           }
         ],
-        "matching": [
-          {"id": "m1_7_1", "target": "Big", "native": "ලොකු"},
-          {"id": "m1_7_2", "target": "Small", "native": "කුඩා"},
-          {"id": "m1_7_3", "target": "Hot", "native": "උණුසුම්"},
-          {"id": "m1_7_4", "target": "Cold", "native": "සීතල"}
-        ],
         "sentenceScramble": [
-          {"id": "ss1_7_1", "scrambled": ["how", "you", "are", "?"], "correct": "How are you?", "nativeHint": "ඔබට කොහොමද?"}
+          {
+            "id": "ss1_7_1",
+            "scrambled": ["the", "is", "where", "toilet", "?"],
+            "correct": "where is the toilet ?",
+            "nativeHint": "වැසිකිළිය කොහෙද?"
+          }
         ]
       },
-      "cultural_note": "Practice small talk. English speakers often talk about the weather ('It's a nice day, isn't it?') to start a conversation with strangers. It's a friendly way to break the ice.",
-      "pronunciation_tip": "Review all the sounds from this week. Can you clearly say the difference between 'three' and 'tree'? What about the 'w' sound in 'where'? Repetition is key.",
-      "progress": {"xp": 150, "streak_bonus": 50, "badge": "W1D7-Review"}
+      "cultural_note": "සමහර වෙළඳසැල්වල මිල ගණන් ස්ථීර වන අතර (fixed prices), අනෙක් වෙළඳපොළවල්වල මිල අඩු කර ගැනීමට (bargain) උත්සාහ කළ හැක.",
+      "pronunciation_tip": "මෙම සතියේ ඉගෙන ගත් 'th' (thank) සහ 'h' (hello, how) ශබ්ද නැවත පුහුණු වන්න. ඒවා ඉංග්‍රීසි භාෂාවේ බහුලව භාවිතා වේ.",
+      "progress": {
+        "xp": 150,
+        "streak_bonus": 50,
+        "badge": "W1-Review"
+      }
     }
   ]
 }
