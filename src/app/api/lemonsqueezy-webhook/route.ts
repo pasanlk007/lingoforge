@@ -87,6 +87,13 @@ export async function POST(req: Request) {
     const payload = JSON.parse(rawBody);
     const eventName = payload.meta?.event_name;
     const userEmail = payload.data?.attributes?.user_email;
+    const testMode = payload.data?.attributes?.test_mode;
+
+    // Skip test mode orders
+    if (testMode) {
+      console.log('Test mode order skipped:', userEmail);
+      return new NextResponse('OK', { status: 200 });
+    }
 
     if (!userEmail) {
       return new NextResponse('No email', { status: 200 });
