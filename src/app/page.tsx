@@ -136,9 +136,9 @@ export default function LandingPage() {
             </button>
             {/* Arrow pointing up-left to the dropdown */}
             <div className="absolute -top-7 right-12 h-0 w-0 border-x-8 border-x-transparent border-b-[12px] border-b-cyan-800"></div>
-            <p className="text-base font-bold text-white">Choose your language</p>
+            <p className="text-base font-bold text-white">ඔබේ භාශාව තෝරන්න</p>
             <p className="mt-1 text-sm text-cyan-200">
-                Select from the available languages to view the site in your native language.
+                වෙබ් අඩවිය ඔබේ මව් භාෂාවෙන් බැලීමට පවතින භාෂා වලින් තෝරන්න.
             </p>
           </div>
         </div>
