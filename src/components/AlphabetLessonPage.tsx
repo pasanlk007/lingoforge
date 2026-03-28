@@ -69,7 +69,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
 
     setIsComplete(true);
 
-    const xpToAdd = (dayData.progress?.xp || 0);
+    const xpToAdd = (dayData.progress?.xp || 0) + (dayData.progress?.streak_bonus || 0);
     const newXp = (userProfile.xpPoints || 0) + xpToAdd;
 
     let newStreak = userProfile.currentStreak || 0;
