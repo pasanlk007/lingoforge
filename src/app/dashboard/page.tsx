@@ -256,7 +256,7 @@ function DashboardContent({ user }: { user: User }) {
 
   const toTitleCase = (str: string) => str.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
 
-  if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading || isProgressLoading) {
+  if (!isMounted || isProfileLoading || !userProfile || isProgressLoading) {
       return <DashboardLoading />;
   }
   
