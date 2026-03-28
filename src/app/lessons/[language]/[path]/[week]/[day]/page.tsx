@@ -142,11 +142,11 @@ export default function LessonPage() {
   }, [language, path, week, day, isMounted, validNativeLanguage, t]);
 
 
-  if (isLoading || dayNumber === null || !isMounted) {
+  if (isLoading || dayNumber === null || !isMounted || !userProfile) {
     return <LoadingSkeleton />;
   }
 
-  if (!isLoading && !hasAccess) {
+  if (!hasAccess) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
