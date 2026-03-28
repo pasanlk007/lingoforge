@@ -11,9 +11,7 @@ function verifySignature(payload: string, signature: string, secret: string): bo
 function getAdminApp() {
   if (admin.apps.length > 0) return admin.apps[0]!;
   
-  const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '')
-    .replace(/\\n/g, '\n')
-    .replace(/^"|"$/g, '');
+  const privateKey = Buffer.from(process.env.FIREBASE_PRIVATE_KEY || '', 'base64').toString('utf8');
 
   return admin.initializeApp({
     credential: admin.credential.cert({
