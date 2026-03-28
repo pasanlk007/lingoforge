@@ -2,14 +2,16 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
-import { doc } from 'firebase/firestore';
-import type { UserProfile, LessonDay } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase, useCollection } from '@/firebase';
+import { doc, collection } from 'firebase/firestore';
+import type { UserProfile, LessonDay, UserWeekProgress } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
 import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations, targetLanguages } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
+import { Check } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -37,6 +39,22 @@ export default function AlphabetPathPage() {
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
   
+  const progressCollectionRef = useMemoFirebase(() => {
+    if (!user || !firestore) return null;
+    return collection(firestore, 'userProgress', user.uid, 'alphabet');
+  }, [user, firestore]);
+
+  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
+
+  const completedDays = useMemo(() => {
+    if (!progressData) return {};
+    const completedDaysMap: { [week: number]: number[] } = {};
+    progressData.forEach(weekProgress => {
+      completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
+    });
+    return completedDaysMap;
+  }, [progressData]);
+
   const [isMounted, setIsMounted] = useState(false);
   const [allLessonData, setAllLessonData] = useState<LessonDay[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -100,7 +118,7 @@ export default function AlphabetPathPage() {
     );
   }
 
-  if (isLoading || isUserLoading || !isMounted || isProfileLoading) {
+  if (isLoading || isUserLoading || !isMounted || isProfileLoading || isProgressLoading) {
     return <LoadingSkeleton />;
   }
 
@@ -128,13 +146,24 @@ export default function AlphabetPathPage() {
           </header>
 
           <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
-            {allLessonData.map((day) => (
-              <Button key={`${day.week}-${day.day}`} asChild variant="secondary" className="h-20 text-3xl font-bold">
+            {allLessonData.map((day) => {
+              const isDayCompleted = completedDays[day.week]?.includes(day.day);
+              return (
+              <Button
+                key={`${day.week}-${day.day}`}
+                asChild
+                variant="secondary"
+                className={cn(
+                  "h-20 text-3xl font-bold",
+                  isDayCompleted && 'bg-green-600 text-white hover:bg-green-700'
+                )}
+              >
                 <Link href={`/lessons/${targetLanguage.toLowerCase()}/alphabet/${day.week}/${day.day}`}>
+                  {isDayCompleted && <Check className="h-6 w-6" />}
                   {day.letter}
                 </Link>
               </Button>
-            ))}
+            )})}
           </div>
         </div>
       </main>
