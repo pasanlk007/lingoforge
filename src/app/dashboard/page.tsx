@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -70,6 +71,8 @@ const SI_TRANSLATIONS = {
   'streak': 'දිනපෙළ',
   'days': 'දින',
   'week': 'සතිය',
+  'I speak': 'ඔබේ භාශාව',
+  'I am learning': 'මම ඉගෙන ගන්නා භාෂාව',
 };
 
 function DashboardLoading() {
@@ -317,7 +320,7 @@ function DashboardContent({ user }: { user: User }) {
                 <p className="text-muted-foreground mt-2">{t.ready}</p>
               </div>
               <div className="flex flex-col gap-3 p-4 rounded-xl border border-border/50 bg-card/50 shadow-sm">
-                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I speak</p>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{si_t('I speak')}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {nativeLanguages.map((lang) => (
                     <button
@@ -331,7 +334,7 @@ function DashboardContent({ user }: { user: User }) {
                   ))}
                 </div>
                 <div className="w-full h-px bg-border/30" />
-                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">I am learning</p>
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{si_t('I am learning')}</p>
                 <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
                   <SelectTrigger className="w-full border-border/50 bg-transparent">
                     <SelectValue placeholder="Select language" />
@@ -450,7 +453,7 @@ function DashboardContent({ user }: { user: User }) {
                     </CardHeader>
                     <CardContent className="flex-1 space-y-2">
                       {availablePaths.map((path) => (
-                        <Link key={path.id} href={`/${path.id}`} className="flex items-center gap-3 p-2 rounded-md transition-colors group">
+                        <Link key={path.id} href={`/${path.id}`} className="flex items-center gap-3 p-2 rounded-md transition-colors group hover:bg-muted/50">
                           <span className="text-xl">{path.icon}</span>
                           <div>
                             <p className="font-semibold text-sm transition-colors group-hover:text-primary">{si_t(toTitleCase(path.title))}</p>
@@ -552,3 +555,5 @@ export default function DashboardPage() {
 
   return <DashboardContent user={user} />;
 }
+
+    
