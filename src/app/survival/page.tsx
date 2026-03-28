@@ -91,7 +91,7 @@ export default function SurvivalPathPage() {
     );
   }
 
-  if (config.app_mode === 'maintenance') {
+  if (config?.app_mode === 'maintenance') {
     return (
        <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -119,7 +119,7 @@ export default function SurvivalPathPage() {
               const completedDaysInWeek = completedDays[week] || [];
               const isWeekCompleted = completedDaysInWeek.length === 7;
               
-              const weekIsEnabled = (config.lessons_weeks_enabled as Record<string, boolean>)[`week${week}`] !== false;
+              const weekIsEnabled = (config?.lessons_weeks_enabled as Record<string, boolean>)?.[`week${week}`] !== false;
               
               const accessResult = canAccessLesson({
                 path: 'survival',
