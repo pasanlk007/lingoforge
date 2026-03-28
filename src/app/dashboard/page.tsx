@@ -45,6 +45,32 @@ import { differenceInCalendarDays } from 'date-fns';
 import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
 
+const SI_TRANSLATIONS = {
+  'Explore Learning Paths': 'ඉගෙනීමේ මාර්ග',
+  'Survival Bundle': 'පැවැත්මේ මාර්ගය',
+  'Survival Path': 'පැවැත්මේ පාර',
+  'Alphabet Path': 'අකුරු හදුනාගනිමු',
+  'Numbers Path': 'ඉලක්කම් ඉගනගමු',
+  'LingoForge Pro': 'LingoForge ප්‍රෝ',
+  'Citizenship & Integration': 'පුරවැසිභාවය',
+  'Coming Soon': 'ළඟදීම',
+  'Citizenship Prep': 'පුරවැසිභාවය අයදුම් සූදානම',
+  'Legal Framework': 'නීති රාමුව',
+  'Exam Preparation': 'විභාග සූදානම',
+  'Daily AI Lessons': 'දෛනික AI පාඩම්',
+  'Explore Lesson Map': 'පාඩම් සිතියම',
+  'Application guidance': 'ඉල්ලුම් මාර්ගෝපදේශය',
+  'Rights & documents': 'අයිතිවාසිකම් සහ ලේඛන',
+  'Language & civic tests': 'භාෂා සහ පුරවැසි පරීක්ෂණ',
+  'Grammar & culture': 'ව්‍යාකරණ සහ සංස්කෘතිය',
+  'Your 30-day journey': 'ඔබේ දින 30 ගමන',
+  'Good morning': 'සුබ උදෑසනක්',
+  'Good afternoon': 'සුබ දහවලක්',
+  'Good evening': 'සුබ සන්ධ්‍යාවක්',
+  'streak': 'දිනපෙළ',
+  'days': 'දින',
+  'week': 'සතිය',
+};
 
 function DashboardLoading() {
   return (
@@ -216,6 +242,14 @@ function DashboardContent({ user }: { user: User }) {
     return targetLanguages;
   }, [nativeLanguage]);
 
+  const si_t = (englishText: string) => {
+    if (nativeLanguage === 'Sinhala') {
+      return (SI_TRANSLATIONS as any)[englishText] || englishText;
+    }
+    return englishText;
+  };
+
+  const toTitleCase = (str: string) => str.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
 
   if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading || isProgressLoading) {
       return <DashboardLoading />;
@@ -258,6 +292,13 @@ function DashboardContent({ user }: { user: User }) {
     trialDaysUsed: trialDaysUsed,
     userEmail: user.email,
   }, config);
+
+  const proPathItems = [
+    { icon: "🛂", title: "Citizenship Prep", desc: "Application guidance" },
+    { icon: "📜", title: "Legal Framework", desc: "Rights & documents" },
+    { icon: "🎓", title: "Exam Preparation", desc: "Language & civic tests" },
+    { icon: "✍️", title: "Daily AI Lessons", desc: "Grammar & culture" },
+  ];
 
   return (
     <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -395,14 +436,14 @@ function DashboardContent({ user }: { user: User }) {
 
               <div>
               <div>
-                <h2 className="text-2xl font-bold tracking-tight mb-4">{t.explorePaths}</h2>
+                <h2 className="text-2xl font-bold tracking-tight mb-4">{si_t('Explore Learning Paths')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <Card className="flex flex-col border-2 border-green-500/50 bg-gradient-to-br from-green-900/20 to-card">
                     <CardHeader>
                       <div className="flex items-center gap-3">
                         <span className="text-3xl">🌱</span>
                         <div>
-                          <CardTitle className="text-xl">Survival Bundle</CardTitle>
+                          <CardTitle className="text-xl">{si_t('Survival Bundle')}</CardTitle>
                           <p className="text-xs text-muted-foreground mt-1">10 minutes per day</p>
                         </div>
                       </div>
@@ -412,7 +453,7 @@ function DashboardContent({ user }: { user: User }) {
                         <Link key={path.id} href={`/${path.id}`} className="flex items-center gap-3 p-2 rounded-md transition-colors group">
                           <span className="text-xl">{path.icon}</span>
                           <div>
-                            <p className="font-semibold text-sm transition-colors group-hover:text-primary">{path.title}</p>
+                            <p className="font-semibold text-sm transition-colors group-hover:text-primary">{si_t(toTitleCase(path.title))}</p>
                             <p className="text-xs text-muted-foreground">{path.description}</p>
                           </div>
                           <ChevronRight className="h-4 w-4 ml-auto text-muted-foreground transition-colors group-hover:text-primary" />
@@ -426,25 +467,20 @@ function DashboardContent({ user }: { user: User }) {
                         <div className="flex items-center gap-3">
                           <span className="text-3xl">🏛️</span>
                           <div>
-                            <CardTitle className="text-xl">LingoForge Pro</CardTitle>
-                            <p className="text-xs text-purple-400 mt-1">Citizenship & Integration</p>
+                            <CardTitle className="text-xl">{si_t('LingoForge Pro')}</CardTitle>
+                            <p className="text-xs text-purple-400 mt-1">{si_t('Citizenship & Integration')}</p>
                           </div>
                         </div>
-                        <Badge className="bg-purple-500/20 text-purple-300 border border-purple-500/30">Coming Soon</Badge>
+                        <Badge className="bg-purple-500/20 text-purple-300 border border-purple-500/30">{si_t('Coming Soon')}</Badge>
                       </div>
                     </CardHeader>
                     <CardContent className="flex-1 space-y-2">
-                      {[
-                        { icon: "🛂", title: "Citizenship Prep", desc: "Application guidance" },
-                        { icon: "📜", title: "Legal Framework", desc: "Rights & documents" },
-                        { icon: "🎓", title: "Exam Preparation", desc: "Language & civic tests" },
-                        { icon: "✍️", title: "Daily AI Lessons", desc: "Grammar & culture" },
-                      ].map((item) => (
+                      {proPathItems.map((item) => (
                         <div key={item.title} className="flex items-center gap-3 p-2 rounded-md opacity-60">
                           <span className="text-xl">{item.icon}</span>
                           <div>
-                            <p className="font-semibold text-sm">{item.title}</p>
-                            <p className="text-xs text-muted-foreground">{item.desc}</p>
+                            <p className="font-semibold text-sm">{si_t(item.title)}</p>
+                            <p className="text-xs text-muted-foreground">{si_t(item.desc)}</p>
                           </div>
                         </div>
                       ))}
@@ -452,7 +488,7 @@ function DashboardContent({ user }: { user: User }) {
                     <div className="p-4 pt-0">
                       <a href="/dashboard/lesson-map">
                         <button className="w-full py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2">
-                          🗺️ Explore Lesson Map
+                          🗺️ {si_t('Explore Lesson Map')}
                         </button>
                       </a>
                     </div>
