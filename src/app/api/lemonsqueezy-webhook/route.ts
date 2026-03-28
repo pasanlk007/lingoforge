@@ -102,6 +102,7 @@ async function updateUserDoc(docName: string, active: boolean, expiry: string | 
   };
   if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
   if (plan) fields.subscriptionPlan = { stringValue: plan };
+  if (customLanguage) fields.subscriptionLanguage = { stringValue: customLanguage };
 
   const fieldPaths = Object.keys(fields).map(k => `updateMask.fieldPaths=${k}`).join('&');
   const url = `https://firestore.googleapis.com/v1/${docName}?${fieldPaths}`;

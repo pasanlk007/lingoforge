@@ -180,7 +180,12 @@ export default function SurvivalPathPage() {
                         {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                           const isDayCompleted = completedDaysInWeek.includes(day);
                           return (
-                            <Button asChild variant="secondary" key={day} className={cn(isDayCompleted && 'bg-green-600 text-white hover:bg-green-700')}>
+                            <Button asChild variant="secondary" key={day} className={cn(
+                              "relative transition-all duration-300",
+                              isDayCompleted 
+                                ? 'bg-gradient-to-br from-green-500 to-emerald-600 text-white hover:from-green-400 hover:to-emerald-500 border-2 border-green-400 shadow-lg shadow-green-500/30 scale-105' 
+                                : 'border border-border/50'
+                            )}>
                               <Link href={`/lessons/${targetLanguage.toLowerCase()}/survival/${week}/${day}`}>
                                 {isDayCompleted && <Check className="mr-1 h-4 w-4" />}
                                 {`${t.day} ${day}`}
