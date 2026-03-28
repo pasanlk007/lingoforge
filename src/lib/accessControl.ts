@@ -57,13 +57,15 @@ export function canAccessLesson(
 
     if (!hasValidSub) return { allowed: false, reason: 'upgrade' };
 
-    // Weekly plan - same language only, all survival weeks
+    // Weekly plan - same language only, week 2 onwards
     if (plan === 'weekly') {
       if (language && profile.subscriptionLanguage && 
           language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
         return { allowed: false, reason: 'wrong_language' };
       }
-      return { allowed: true };
+      // Week 1 always free (trial), weekly subscription unlocks week 2+
+      if (week >= 2) return { allowed: true };
+      return { allowed: true }; // week 1 already free
     }
 
     // Course plan - same language, daily unlock

@@ -95,12 +95,13 @@ async function findUserByEmail(email: string, token: string) {
   return null;
 }
 
-async function updateUserDoc(docName: string, active: boolean, expiry: string | null, token: string) {
+async function updateUserDoc(docName: string, active: boolean, expiry: string | null, token: string, plan?: string) {
   const fields: any = {
     subscriptionActive: { booleanValue: active },
     subscriptionSource: { stringValue: 'lemonsqueezy' },
   };
   if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
+  if (plan) fields.subscriptionPlan = { stringValue: plan };
 
   const fieldPaths = Object.keys(fields).map(k => `updateMask.fieldPaths=${k}`).join('&');
   const url = `https://firestore.googleapis.com/v1/${docName}?${fieldPaths}`;
@@ -148,8 +149,15 @@ export async function POST(req: Request) {
     if (eventName === 'subscription_created' || eventName === 'order_created' || eventName === 'subscription_updated') {
       const renewsAt = payload.data?.attributes?.renews_at || null;
       const endsAt = payload.data?.attributes?.ends_at || null;
-      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token);
-      console.log('✅ Subscription activated for:', userEmail);
+      const productName = (payload.data?.attributes?.product_name || '').toLowerCase();
+      
+      let plan = 'weekly';
+      if (productName.includes('lifetime')) plan = 'lifetime';
+      else if (productName.includes('course')) plan = 'course';
+      else plan = 'weekly';
+
+      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan);
+      console.log('✅ Subscription activated for:', userEmail, 'plan:', plan);
     }
 
     if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
