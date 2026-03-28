@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
-import * as admin from 'firebase-admin';
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
   const hmac = crypto.createHmac('sha256', secret);
@@ -8,17 +7,91 @@ function verifySignature(payload: string, signature: string, secret: string): bo
   return crypto.timingSafeEqual(Buffer.from(digest), Buffer.from(signature));
 }
 
-function getAdminApp() {
-  if (admin.apps.length > 0) return admin.apps[0]!;
-  
+function createJWT(): string {
   const privateKey = Buffer.from(process.env.FIREBASE_PRIVATE_KEY || '', 'base64').toString('utf8');
+  const clientEmail = process.env.FIREBASE_CLIENT_EMAIL || '';
+  
+  const now = Math.floor(Date.now() / 1000);
+  const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
+  const payload = Buffer.from(JSON.stringify({
+    iss: clientEmail,
+    sub: clientEmail,
+    aud: 'https://oauth2.googleapis.com/token',
+    iat: now,
+    exp: now + 3600,
+    scope: 'https://www.googleapis.com/auth/datastore',
+  })).toString('base64url');
+  
+  const signingInput = `${header}.${payload}`;
+  const sign = crypto.createSign('RSA-SHA256');
+  sign.update(signingInput);
+  const signature = sign.sign(privateKey, 'base64url');
+  
+  return `${signingInput}.${signature}`;
+}
 
-  return admin.initializeApp({
-    credential: admin.credential.cert({
-      projectId: process.env.FIREBASE_PROJECT_ID,
-      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-      privateKey,
+async function getAccessToken(): Promise<string> {
+  const jwt = createJWT();
+  const response = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
+      assertion: jwt,
     }),
+  });
+  const data = await response.json();
+  if (!data.access_token) throw new Error('Failed to get access token: ' + JSON.stringify(data));
+  return data.access_token;
+}
+
+async function findUserByEmail(email: string, token: string) {
+  const projectId = process.env.FIREBASE_PROJECT_ID;
+  const url = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents:runQuery`;
+  
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      structuredQuery: {
+        from: [{ collectionId: 'userProfiles' }],
+        where: {
+          fieldFilter: {
+            field: { fieldPath: 'email' },
+            op: 'EQUAL',
+            value: { stringValue: email.toLowerCase() },
+          },
+        },
+        limit: 1,
+      },
+    }),
+  });
+  
+  const data = await response.json();
+  if (data[0]?.document) return data[0].document;
+  return null;
+}
+
+async function updateUserDoc(docName: string, active: boolean, expiry: string | null, token: string) {
+  const fields: any = {
+    subscriptionActive: { booleanValue: active },
+    subscriptionSource: { stringValue: 'lemonsqueezy' },
+  };
+  if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
+
+  const fieldPaths = Object.keys(fields).map(k => `updateMask.fieldPaths=${k}`).join('&');
+  const url = `https://firestore.googleapis.com/v1/${docName}?${fieldPaths}`;
+  
+  await fetch(url, {
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ fields }),
   });
 }
 
@@ -35,58 +108,32 @@ export async function POST(req: Request) {
     const payload = JSON.parse(rawBody);
     const eventName = payload.meta?.event_name;
     const userEmail = payload.data?.attributes?.user_email;
-    const testMode = payload.data?.attributes?.test_mode;
+    const testMode = payload.meta?.test_mode || payload.data?.attributes?.test_mode;
 
     if (testMode) {
-      console.log('Test mode order skipped');
+      console.log('Test mode skipped');
       return new NextResponse('OK', { status: 200 });
     }
 
-    if (!userEmail) {
-      return new NextResponse('No email', { status: 200 });
-    }
+    if (!userEmail) return new NextResponse('OK', { status: 200 });
 
-    const app = getAdminApp();
-    const db = admin.firestore(app);
+    const token = await getAccessToken();
+    const userDoc = await findUserByEmail(userEmail, token);
 
-    const usersSnapshot = await db
-      .collection('userProfiles')
-      .where('email', '==', userEmail)
-      .limit(1)
-      .get();
-
-    if (usersSnapshot.empty) {
+    if (!userDoc) {
       console.log('User not found:', userEmail);
       return new NextResponse('OK', { status: 200 });
     }
 
-    const userDoc = usersSnapshot.docs[0];
-
-    if (eventName === 'subscription_created' || eventName === 'order_created') {
+    if (eventName === 'subscription_created' || eventName === 'order_created' || eventName === 'subscription_updated') {
       const renewsAt = payload.data?.attributes?.renews_at || null;
       const endsAt = payload.data?.attributes?.ends_at || null;
-      const expiryDate = renewsAt || endsAt || null;
-      await userDoc.ref.update({
-        subscriptionActive: true,
-        subscriptionSource: 'lemonsqueezy',
-        subscriptionExpiry: expiryDate,
-        paymentProviderSubscriptionId: payload.data?.id || null,
-      });
-      console.log('Subscription activated for:', userEmail);
+      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token);
+      console.log('✅ Subscription activated for:', userEmail);
     }
 
     if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
-      await userDoc.ref.update({
-        subscriptionActive: false,
-        subscriptionExpiry: new Date().toISOString(),
-      });
-    }
-
-    if (eventName === 'subscription_resumed') {
-      await userDoc.ref.update({
-        subscriptionActive: true,
-        subscriptionExpiry: null,
-      });
+      await updateUserDoc(userDoc.name, false, new Date().toISOString(), token);
     }
 
     return new NextResponse('OK', { status: 200 });
