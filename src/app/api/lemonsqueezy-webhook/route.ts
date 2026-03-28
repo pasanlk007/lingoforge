@@ -3,23 +3,27 @@ import crypto from 'crypto';
 import * as admin from 'firebase-admin';
 import { Firestore } from '@google-cloud/firestore';
 
+let _db: admin.firestore.Firestore | null = null;
+
 function getFirestore() {
   if (!admin.apps.length) {
     const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
-    admin.initializeApp({
+    const app = admin.initializeApp({
       credential: admin.credential.cert({
         projectId: process.env.FIREBASE_PROJECT_ID,
         clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
         privateKey: privateKey,
       }),
     });
+    _db = admin.firestore(app);
+    _db.settings({ 
+      ignoreUndefinedProperties: true,
+      preferRest: true,
+    });
+  } else if (!_db) {
+    _db = admin.firestore(admin.apps[0]!);
   }
-  const db = admin.firestore();
-  db.settings({ 
-    ignoreUndefinedProperties: true,
-    preferRest: true,
-  });
-  return db;
+  return _db!;
 }
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
