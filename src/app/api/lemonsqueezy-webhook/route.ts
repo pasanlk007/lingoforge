@@ -10,7 +10,7 @@ function verifySignature(payload: string, signature: string, secret: string): bo
 
 function createJWT(): string {
   const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
-  const clientEmail = process.env.FIREBASE_CLIENT_EMAIL || '';
+  const clientEmail = (process.env.FIREBASE_CLIENT_EMAIL || '').trim();
 
   // --- DEBUG LOGGING ---
   console.log('Using client email:', clientEmail);
