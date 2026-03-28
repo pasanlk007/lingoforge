@@ -128,7 +128,6 @@ export default function SurvivalPathPage() {
                 language: targetLanguage,
                 userEmail: user?.email,
                 profile: userProfile || null,
-                config,
                 trialDaysUsed,
               });
               const hasAccess = accessResult.allowed;

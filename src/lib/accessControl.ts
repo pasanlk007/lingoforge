@@ -1,6 +1,5 @@
 'use client';
 import type { UserProfile } from '@/lib/types';
-import type { AppConfig } from '@/hooks/useAppConfig';
 
 const ADMIN_EMAILS = ['Pasan.lankathilakadpl@gmail.com'];
 
@@ -10,91 +9,90 @@ function isAdmin(email?: string | null): boolean {
 
 function isSubscriptionValid(profile: UserProfile): boolean {
   if (!profile.subscriptionActive) return false;
-  
-  // Lifetime subscription from LemonSqueezy might not have an expiry.
-  if (profile.subscriptionSource === 'lemonsqueezy' && profile.subscriptionPlan === 'lifetime') {
-    return true;
-  }
-  
-  // A null expiry is treated as lifetime access.
-  if (profile.subscriptionExpiry === null) return true;
-  
+  if (!profile.subscriptionExpiry) return true;
   try {
-    // Check if the expiry date is in the future.
     return new Date(profile.subscriptionExpiry) > new Date();
-  } catch {
-    // If the date is invalid, treat the subscription as expired.
-    return false;
-  }
+  } catch { return false; }
 }
 
 export type AccessResult = {
   allowed: boolean;
-  reason?: 'upgrade' | 'complete_previous' | 'locked' | 'lifetime_required' | 'wrong_language';
+  reason?: string;
 };
 
-interface AccessParams {
+export function canAccessLesson(
+  params: {
     path: 'survival' | 'alphabet' | 'numbers' | 'pro';
     week: number;
     day: number;
     language?: string;
     userEmail?: string | null;
     profile: UserProfile | null;
-    config: AppConfig;
-    trialDaysUsed: number;
-}
+  }
+): AccessResult {
+  const { path, week, day, language, userEmail, profile } = params;
 
-export function canAccessLesson(params: AccessParams): AccessResult {
-  const { path, week, day, language, userEmail, profile, config, trialDaysUsed } = params;
-
-  // 1. Admin has full access
+  // Admin - full access
   if (isAdmin(userEmail)) return { allowed: true };
 
-  // 2. Alphabet & Numbers paths are always free
+  // Alphabet & Numbers - always free
   if (path === 'alphabet' || path === 'numbers') return { allowed: true };
 
-  // 3. Handle users without a profile (should be rare, but good to have)
+  // No profile yet - only free trial access
   if (!profile) {
-    if (trialDaysUsed < config.free_trial_days) {
-      if (path === 'survival' && week <= config.max_free_weeks) return { allowed: true };
-      if (path === 'pro' && day <= config.free_trial_days) return { allowed: true };
-    }
+    if (path === 'survival' && week === 1) return { allowed: true };
+    if (path === 'pro' && day <= 3) return { allowed: true };
     return { allowed: false, reason: 'locked' };
   }
-  
+
   const hasValidSub = isSubscriptionValid(profile);
   const plan = profile.subscriptionPlan;
 
-  // 4. Survival Path Logic
+  // ===== SURVIVAL PATH =====
   if (path === 'survival') {
-    // Free trial access based on remote config
-    if (week <= config.max_free_weeks && trialDaysUsed < config.free_trial_days) {
-        return { allowed: true };
-    }
-    
-    // If trial is over and they don't have a valid subscription, deny access.
+    // Free trial - week 1 always free
+    if (week === 1) return { allowed: true };
+
     if (!hasValidSub) return { allowed: false, reason: 'upgrade' };
 
-    // Any valid subscription grants access to the survival path.
-    // Finer-grained control (e.g., language-specific weekly plans) can be added here later.
+    // Weekly plan - same language, all survival weeks
+    if (plan === 'weekly') {
+      if (language && profile.subscriptionLanguage &&
+          language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
+        return { allowed: false, reason: 'wrong_language' };
+      }
+      return { allowed: true };
+    }
+
+    // Course plan - same language, daily unlock
+    if (plan === 'course') {
+      if (language && profile.subscriptionLanguage &&
+          language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
+        return { allowed: false, reason: 'wrong_language' };
+      }
+      if (week === 1 && day === 1) return { allowed: true };
+      const prevDayKey = day > 1
+        ? `${language}_survival_${week}_${day - 1}`
+        : `${language}_survival_${week - 1}_7`;
+      const completed = profile.completedDays || [];
+      if (completed.includes(prevDayKey)) return { allowed: true };
+      return { allowed: false, reason: 'complete_previous' };
+    }
+
+    // Lifetime - full access
+    if (plan === 'lifetime') return { allowed: true };
+
+    return { allowed: false, reason: 'upgrade' };
+  }
+
+  // ===== PRO PATH =====
+  if (path === 'pro') {
+    if (day <= 3) return { allowed: true };
+    if (!hasValidSub || plan !== 'lifetime') {
+      return { allowed: false, reason: 'lifetime_required' };
+    }
     return { allowed: true };
   }
 
-  // 5. Pro Path Logic
-  if (path === 'pro') {
-    // Free trial for pro path, based on remote config
-    if (day <= config.free_trial_days && trialDaysUsed < config.free_trial_days) {
-        return { allowed: true };
-    }
-
-    // Pro path requires a lifetime subscription
-    if (hasValidSub && plan === 'lifetime') {
-        return { allowed: true };
-    }
-    
-    return { allowed: false, reason: 'lifetime_required' };
-  }
-
-  // Default deny for any other cases
   return { allowed: false, reason: 'locked' };
 }
