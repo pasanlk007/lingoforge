@@ -130,6 +130,7 @@ export default function SignupPage() {
         email: user.email!,
         nativeLanguage: nativeLanguage,
         selectedLanguage: 'French',
+        createdAt: now.toISOString(),
         subscriptionActive: false,
         subscriptionSource: 'none',
         subscriptionExpiry: null,

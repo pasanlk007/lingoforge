@@ -134,8 +134,11 @@ export interface UserProfile {
   email: string;
   nativeLanguage: string;
   selectedLanguage: string;
+  createdAt: string; // ISO date string
   subscriptionActive: boolean;
-  subscriptionSource?: 'stripe' | 'google_play' | 'apple_iap' | 'none';
+  subscriptionSource?: 'stripe' | 'google_play' | 'apple_iap' | 'lemonsqueezy' | 'none';
+  subscriptionPlan?: 'weekly' | 'course' | 'lifetime';
+  subscriptionLanguage?: string;
   subscriptionExpiry: string | null; // ISO date string, or null for lifetime
   xpPoints: number;
   currentStreak: number;
@@ -145,6 +148,7 @@ export interface UserProfile {
   activePath: 'survival' | 'alphabet' | 'numbers';
   lastLessonWeek: number;
   lastLessonDay: number;
+  completedDays?: string[];
   paymentProviderCustomerId?: string;
   paymentProviderSubscriptionId?: string;
   referralCode?: string;

@@ -53,6 +53,7 @@ export async function initiateGoogleSignIn(auth: Auth, firestore: Firestore): Pr
             photoURL: user.photoURL || undefined,
             nativeLanguage: 'English',
             selectedLanguage: 'French',
+            createdAt: now.toISOString(),
             subscriptionActive: false,
             subscriptionSource: 'none',
             subscriptionExpiry: null,

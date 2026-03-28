@@ -7,7 +7,7 @@ import { doc } from 'firebase/firestore';
 import type { LanguageLesson, LearningPath, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Terminal, Wrench } from 'lucide-react';
+import { Terminal, Wrench, Lock } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { LessonClientPage } from '@/components/LessonClientPage';
 import { Button } from '@/components/ui/button';
@@ -15,6 +15,8 @@ import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 import { AlphabetLessonPage } from '@/components/AlphabetLessonPage';
 import { canAccessLesson } from '@/lib/accessControl';
+import { useAppConfig } from '@/hooks/useAppConfig';
+import { useFreeTrial } from '@/hooks/useFreeTrial';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -45,8 +47,9 @@ export default function LessonPage() {
     return doc(firestore, 'userProfiles', user.uid);
   }, [user, firestore]);
 
-  const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
-
+  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
+  const { config, isLoading: isConfigLoading } = useAppConfig();
+  const { trialDaysUsed, isTrialLoading } = useFreeTrial(userProfile);
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -56,13 +59,16 @@ export default function LessonPage() {
 
   const weekNumber = parseInt(week as string, 10);
   const dayNum2 = parseInt(day as string, 10);
+  
   const accessResult = canAccessLesson({
-    path: path as 'survival' | 'alphabet' | 'numbers' | 'pro',
+    path: path as LearningPath,
     week: weekNumber,
     day: dayNum2,
     language: language as string,
     userEmail: user?.email,
     profile: userProfile || null,
+    config,
+    trialDaysUsed,
   });
   const hasAccess = accessResult.allowed;
 
@@ -75,7 +81,8 @@ export default function LessonPage() {
   const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
 
   useEffect(() => {
-    if (!isMounted) {
+    if (!isMounted || !hasAccess) {
+      setIsLoading(false);
       return;
     }
     
@@ -139,10 +146,10 @@ export default function LessonPage() {
 
     fetchLesson();
 
-  }, [language, path, week, day, isMounted, validNativeLanguage, t]);
+  }, [language, path, week, day, isMounted, validNativeLanguage, t, hasAccess]);
 
 
-  if (isLoading || dayNumber === null || !isMounted || !userProfile) {
+  if (isLoading || dayNumber === null || !isMounted || isProfileLoading || isConfigLoading || isTrialLoading) {
     return <LoadingSkeleton />;
   }
 
@@ -151,14 +158,14 @@ export default function LessonPage() {
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
         <main className="flex-1 container mx-auto py-12 max-w-3xl text-center">
-          <div className="text-6xl mb-6">🔒</div>
+          <div className="text-6xl mb-6"><Lock /></div>
           <h1 className="text-2xl font-bold">Week {weekNumber} Locked</h1>
-          <p className="text-muted-foreground mt-3">Upgrade your plan to access this week.</p>
-          <a href="/pricing">
-            <button className="mt-6 px-8 py-3 rounded-xl bg-primary text-white font-bold">
-              Upgrade Now
-            </button>
-          </a>
+          <p className="text-muted-foreground mt-3">Upgrade your plan to access this week's lessons.</p>
+          <Button asChild className="mt-6">
+            <Link href="/pricing">
+              Upgrade to Pro
+            </Link>
+          </Button>
         </main>
       </div>
     );

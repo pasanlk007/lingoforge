@@ -36,7 +36,7 @@ export default function SurvivalPathPage() {
   
   const [isMounted, setIsMounted] = useState(false);
   const { config, isLoading: isConfigLoading } = useAppConfig();
-  const { trialDaysUsed, isTrialLoading } = useFreeTrial();
+  const { trialDaysUsed, isTrialLoading } = useFreeTrial(userProfile);
 
   useEffect(() => {
     setIsMounted(true);
@@ -57,8 +57,6 @@ export default function SurvivalPathPage() {
     });
     return completedDaysMap;
   }, [progressData]);
-
-  const isAdmin = useMemo(() => user?.email === 'Pasan.lankathilakadpl@gmail.com', [user]);
 
   if (isMounted && nativeLanguage === 'English' && targetLanguage === 'English') {
     return (
@@ -121,15 +119,17 @@ export default function SurvivalPathPage() {
               const completedDaysInWeek = completedDays[week] || [];
               const isWeekCompleted = completedDaysInWeek.length === 7;
               
-              // Determine week status based on Remote Config and user data
               const weekIsEnabled = (config.lessons_weeks_enabled as Record<string, boolean>)[`week${week}`] !== false;
+              
               const accessResult = canAccessLesson({
                 path: 'survival',
                 week,
-                day: 1,
+                day: 1, // Check access for the first day of the week
                 language: targetLanguage,
                 userEmail: user?.email,
                 profile: userProfile || null,
+                config,
+                trialDaysUsed,
               });
               const hasAccess = accessResult.allowed;
               
