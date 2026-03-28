@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 import * as admin from 'firebase-admin';
+import { Firestore } from '@google-cloud/firestore';
 
 function getFirestore() {
   if (!admin.apps.length) {
@@ -14,7 +15,10 @@ function getFirestore() {
     });
   }
   const db = admin.firestore();
-  db.settings({ ignoreUndefinedProperties: true });
+  db.settings({ 
+    ignoreUndefinedProperties: true,
+    preferRest: true,
+  });
   return db;
 }
 
