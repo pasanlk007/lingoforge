@@ -1,6 +1,19 @@
 import { NextResponse } from 'next/server';
-import { initializeFirebase } from '@/firebase/server-init';
 import crypto from 'crypto';
+import * as admin from 'firebase-admin';
+
+function getFirestore() {
+  if (!admin.apps.length) {
+    admin.initializeApp({
+      credential: admin.credential.cert({
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+        privateKey: (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
+      }),
+    });
+  }
+  return admin.firestore();
+}
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
   const hmac = crypto.createHmac('sha256', secret);
@@ -23,7 +36,7 @@ export async function POST(req: Request) {
     const userEmail = payload.data?.attributes?.user_email;
     const status = payload.data?.attributes?.status;
 
-    const { firestore } = initializeFirebase();
+    const firestore = getFirestore();
 
     // Find user by email
     const usersSnapshot = await firestore
