@@ -50,7 +50,7 @@ export default function LessonPage() {
   const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
   const { config } = useAppConfig();
-  const { trialDaysUsed } = useFreeTrial();
+  const { trialDaysUsed } = useFreeTrial(userProfile);
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
