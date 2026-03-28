@@ -14,6 +14,9 @@ import { Button } from '@/components/ui/button';
 import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 import { AlphabetLessonPage } from '@/components/AlphabetLessonPage';
+import { canAccessWeek } from '@/lib/accessControl';
+import { useAppConfig } from '@/hooks/useAppConfig';
+import { useFreeTrial } from '@/hooks/useFreeTrial';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -46,11 +49,22 @@ export default function LessonPage() {
 
   const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
+  const { config } = useAppConfig();
+  const { trialDaysUsed } = useFreeTrial();
+
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [dayNumber, setDayNumber] = useState<number | null>(null);
   const [isMounted, setIsMounted] = useState(false);
+
+  const weekNumber = parseInt(week as string, 10);
+  const hasAccess = canAccessWeek(weekNumber, {
+    profile: userProfile || null,
+    progress: null,
+    trialDaysUsed,
+    userEmail: user?.email,
+  }, config);
 
   useEffect(() => {
     setIsMounted(true);
@@ -130,6 +144,24 @@ export default function LessonPage() {
 
   if (isLoading || dayNumber === null || !isMounted) {
     return <LoadingSkeleton />;
+  }
+
+  if (!isLoading && !hasAccess) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1 container mx-auto py-12 max-w-3xl text-center">
+          <div className="text-6xl mb-6">🔒</div>
+          <h1 className="text-2xl font-bold">Week {weekNumber} Locked</h1>
+          <p className="text-muted-foreground mt-3">Upgrade your plan to access this week.</p>
+          <a href="/pricing">
+            <button className="mt-6 px-8 py-3 rounded-xl bg-primary text-white font-bold">
+              Upgrade Now
+            </button>
+          </a>
+        </main>
+      </div>
+    );
   }
 
   if (error) {
