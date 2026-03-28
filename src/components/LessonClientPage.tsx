@@ -204,7 +204,10 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                            <Link href={`/${dayData.path}`}><ArrowLeft className="mr-2 h-4 w-4" /> {t.backToDashboard}</Link>
                          </Button>
                          <div className="text-center">
-                            <h1 className="font-bold text-lg">{dayData.title}</h1>
+                            <h1 className="font-bold text-lg flex items-center justify-center gap-2">
+                              {dayData.title}
+                              {isComplete && <CheckCircle className="h-5 w-5 text-green-500" />}
+                            </h1>
                             <p className="text-sm text-muted-foreground">{dayData.theme}</p>
                          </div>
                          <div className="flex items-center gap-2">

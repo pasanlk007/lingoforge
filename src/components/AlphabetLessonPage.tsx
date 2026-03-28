@@ -17,6 +17,7 @@ import { WritingPractice } from './WritingPractice';
 import { AudioPlayback } from './AudioPlayback';
 import { Alert, AlertTitle } from './ui/alert';
 import { TooltipProvider } from './ui/tooltip';
+import { cn } from '@/lib/utils';
 
 interface AlphabetLessonPageProps {
   dayData: LessonDay;
@@ -138,11 +139,15 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
         </header>
 
         <main className="space-y-8">
-          <Card>
+          <Card className={cn(isComplete && "border-2 border-green-500/50 bg-green-900/20")}>
             <CardHeader>
               <div className="flex items-center justify-between">
                 <CardTitle className="text-8xl font-bold">{dayData.letter}</CardTitle>
-                {dayData.letter && <AudioPlayback text={dayData.letter} languageName={targetLanguage} />}
+                 {isComplete ? (
+                    <CheckCircle className="h-12 w-12 text-green-500" />
+                ) : (
+                    dayData.letter && <AudioPlayback text={dayData.letter} languageName={targetLanguage} />
+                )}
               </div>
             </CardHeader>
             {dayData.pronunciation_tip && (
@@ -182,7 +187,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
                           <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                       </Alert>
                   ) : (
-                      <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
+                      <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile || isDayCompleted}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}
