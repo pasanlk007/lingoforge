@@ -163,7 +163,8 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         }
 
         // Build completedDays key for access control
-        const dayKey = `${dayData.targetLanguage || ''}_${dayData.path}_${dayData.week}_${currentDay}`;
+        const lessonLanguage = (typeof window !== 'undefined' && localStorage.getItem('targetLanguage')) || '';
+        const dayKey = `${lessonLanguage.toLowerCase()}_${dayData.path}_${dayData.week}_${currentDay}`;
         const existingCompletedDays = userProfile.completedDays || [];
         const newCompletedDaysProfile = [...new Set([...existingCompletedDays, dayKey])];
 
