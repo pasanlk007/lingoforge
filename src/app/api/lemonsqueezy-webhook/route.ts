@@ -4,16 +4,18 @@ import * as admin from 'firebase-admin';
 
 function getFirestore() {
   if (!admin.apps.length) {
+    const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
     admin.initializeApp({
       credential: admin.credential.cert({
         projectId: process.env.FIREBASE_PROJECT_ID,
         clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-        privateKey: (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
+        privateKey: privateKey,
       }),
-      databaseURL: `https://${process.env.FIREBASE_PROJECT_ID}.firebaseio.com`,
     });
   }
-  return admin.firestore();
+  const db = admin.firestore();
+  db.settings({ ignoreUndefinedProperties: true });
+  return db;
 }
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
