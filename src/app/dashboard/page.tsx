@@ -294,7 +294,7 @@ function DashboardContent({ user }: { user: User }) {
     path: 'survival',
     week: nextWeek,
     day: 1,
-    language: selectedLanguage,
+    language: targetLanguage,
     userEmail: user?.email,
     profile: userProfile || null,
   }).allowed;
