@@ -15,8 +15,6 @@ import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 import { AlphabetLessonPage } from '@/components/AlphabetLessonPage';
 import { canAccessLesson } from '@/lib/accessControl';
-import { useAppConfig } from '@/hooks/useAppConfig';
-import { useFreeTrial } from '@/hooks/useFreeTrial';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -48,8 +46,6 @@ export default function LessonPage() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-  const { config, isLoading: isConfigLoading } = useAppConfig();
-  const { trialDaysUsed, isTrialLoading } = useFreeTrial(userProfile);
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -149,7 +145,7 @@ export default function LessonPage() {
   }, [language, path, week, day, isMounted, validNativeLanguage, t, hasAccess]);
 
 
-  if (isLoading || dayNumber === null || !isMounted || isProfileLoading || isConfigLoading || isTrialLoading) {
+  if (isLoading || dayNumber === null || !isMounted || isProfileLoading) {
     return <LoadingSkeleton />;
   }
 
