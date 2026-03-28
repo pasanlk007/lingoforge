@@ -53,6 +53,7 @@ import {
 export default function LandingPage() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
+  const [showLangGuide, setShowLangGuide] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -61,8 +62,22 @@ export default function LandingPage() {
       setDisplayLanguage(savedLang);
     }
     setIsMounted(true);
+    
+    // Logic for the language guide popup
+    const langGuideDismissed = localStorage.getItem('langGuideDismissed');
+    if (!langGuideDismissed) {
+        const timer = setTimeout(() => {
+            setShowLangGuide(true);
+        }, 2500); // Show after 2.5 seconds
+        return () => clearTimeout(timer);
+    }
   }, []);
   
+  const handleDismissLangGuide = () => {
+    setShowLangGuide(false);
+    localStorage.setItem('langGuideDismissed', 'true');
+  };
+
   const handleStartJourney = () => {
     router.push('/dashboard');
   }
@@ -73,6 +88,8 @@ export default function LandingPage() {
 
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
+  
+  const availableNativeLangs = ['English', 'Sinhala', 'Hindi', 'Urdu', 'Bengali'];
 
   return (
     <div className={cn("bg-slate-900 text-white font-body")} dir={isRTL ? 'rtl' : 'ltr'}>
@@ -93,7 +110,7 @@ export default function LandingPage() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-slate-800 border-slate-700 text-white">
-                {nativeLanguages.filter(l => ['English', 'Sinhala'].includes(l)).map((lang) => (
+                {nativeLanguages.filter(l => availableNativeLangs.includes(l)).map((lang) => (
                   <DropdownMenuItem
                     key={lang}
                     onSelect={() => {
@@ -109,6 +126,23 @@ export default function LandingPage() {
           </div>
         </div>
       </nav>
+
+      {/* Language Guide Popup */}
+      {showLangGuide && (
+        <div className="fixed top-16 right-4 z-[100] w-72 rounded-lg bg-cyan-800/95 backdrop-blur-sm border border-cyan-600 p-4 shadow-2xl animate-in fade-in-0 zoom-in-95">
+          <div className="relative">
+            <button onClick={handleDismissLangGuide} className="absolute -top-7 -right-7 rounded-full bg-slate-700 p-1 text-white hover:bg-slate-600 transition-colors">
+                <XCircle className="h-5 w-5" />
+            </button>
+            {/* Arrow pointing up-left to the dropdown */}
+            <div className="absolute -top-7 right-12 h-0 w-0 border-x-8 border-x-transparent border-b-[12px] border-b-cyan-800"></div>
+            <p className="text-base font-bold text-white">Choose your language</p>
+            <p className="mt-1 text-sm text-cyan-200">
+                Select from the available languages to view the site in your native language.
+            </p>
+          </div>
+        </div>
+      )}
 
       <main>
         <section 
@@ -453,7 +487,7 @@ export default function LandingPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-slate-800 border-slate-700 text-white">
-                    {nativeLanguages.filter(l => ['English', 'Sinhala'].includes(l)).map((lang) => (
+                    {nativeLanguages.filter(l => availableNativeLangs.includes(l)).map((lang) => (
                       <DropdownMenuItem
                         key={lang}
                         onSelect={() => {
