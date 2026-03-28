@@ -39,7 +39,7 @@ import type { UserProfile, UserWeekProgress } from "@/lib/types";
 import type { User } from 'firebase/auth';
 import { useAppConfig } from "@/hooks/useAppConfig";
 import { useFreeTrial } from "@/hooks/useFreeTrial";
-import { canAccessWeek } from "@/lib/accessControl";
+import { canAccessLesson } from "@/lib/accessControl";
 import { ReferralCard } from "@/components/ReferralCard";
 import { TrialEndBanner } from "@/components/TrialEndBanner";
 import { TrialEndModal } from "@/components/TrialEndModal";
@@ -290,12 +290,14 @@ function DashboardContent({ user }: { user: User }) {
     ? PATHS.filter(p => p.id !== 'alphabet')
     : PATHS;
 
-  const hasAccessToNextWeek = canAccessWeek(nextWeek, {
-    profile: userProfile,
-    progress: allProgressData,
-    trialDaysUsed: trialDaysUsed,
-    userEmail: user.email,
-  }, config);
+  const hasAccessToNextWeek = canAccessLesson({
+    path: 'survival',
+    week: nextWeek,
+    day: 1,
+    language: selectedLanguage,
+    userEmail: user?.email,
+    profile: userProfile || null,
+  }).allowed;
 
   const proPathItems = [
     { icon: "🛂", title: "Citizenship Prep", desc: "Application guidance" },
