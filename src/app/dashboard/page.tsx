@@ -121,7 +121,7 @@ function DashboardContent({ user }: { user: User }) {
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
   const { config, isLoading: isConfigLoading } = useAppConfig();
-  const { trialDaysUsed, isTrialLoading } = useFreeTrial();
+  const { trialDaysUsed, isTrialLoading } = useFreeTrial(userProfile);
 
   const [nativeLanguage, setNativeLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
