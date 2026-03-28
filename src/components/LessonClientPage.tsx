@@ -162,13 +162,19 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
             newStreak = 1;
         }
 
+        // Build completedDays key for access control
+        const dayKey = `${dayData.targetLanguage || ''}_${dayData.path}_${dayData.week}_${currentDay}`;
+        const existingCompletedDays = userProfile.completedDays || [];
+        const newCompletedDaysProfile = [...new Set([...existingCompletedDays, dayKey])];
+
         updateDocumentNonBlocking(userProfileRef, {
             xpPoints: newXp,
             currentStreak: newStreak,
             lastActiveDate: today.toISOString().split('T')[0],
             activePath: dayData.path,
             lastLessonWeek: dayData.week,
-            lastLessonDay: currentDay
+            lastLessonDay: currentDay,
+            completedDays: newCompletedDaysProfile,
         });
     };
     
