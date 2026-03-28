@@ -14,7 +14,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { nativeLanguages, translations } from '@/lib/translations';
 import { useAppConfig } from '@/hooks/useAppConfig';
 import { useFreeTrial } from '@/hooks/useFreeTrial';
-import { canAccessWeek } from '@/lib/accessControl';
+import { canAccessLesson } from '@/lib/accessControl';
 
 export default function SurvivalPathPage() {
   const { user, isUserLoading } = useUser();
@@ -123,7 +123,15 @@ export default function SurvivalPathPage() {
               
               // Determine week status based on Remote Config and user data
               const weekIsEnabled = (config.lessons_weeks_enabled as Record<string, boolean>)[`week${week}`] !== false;
-              const hasAccess = isAdmin || canAccessWeek(week, { profile: userProfile, progress: progressData, trialDaysUsed }, config);
+              const accessResult = canAccessLesson({
+                path: 'survival',
+                week,
+                day: 1,
+                language: selectedLanguage,
+                userEmail: user?.email,
+                profile: userProfile || null,
+              });
+              const hasAccess = accessResult.allowed;
               
               const isLocked = weekIsEnabled && !hasAccess;
               const isComingSoon = !weekIsEnabled;

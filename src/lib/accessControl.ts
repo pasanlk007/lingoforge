@@ -1,69 +1,104 @@
 'use client';
-import type { UserProfile, UserWeekProgress } from '@/lib/types';
-import type { AppConfig } from '@/hooks/useAppConfig';
-
-export interface UserAccessData {
-    profile: UserProfile | null;
-    progress: UserWeekProgress[] | null;
-    trialDaysUsed: number;
-    userEmail?: string | null;
-}
+import type { UserProfile } from '@/lib/types';
 
 const ADMIN_EMAILS = ['Pasan.lankathilakadpl@gmail.com'];
+const FREE_TRIAL_SURVIVAL_WEEKS = 1;
+const FREE_TRIAL_PRO_DAYS = 3;
 
 function isAdmin(email?: string | null): boolean {
-    return !!email && ADMIN_EMAILS.map(e => e.toLowerCase()).includes(email.toLowerCase());
+  return !!email && ADMIN_EMAILS.map(e => e.toLowerCase()).includes(email.toLowerCase());
 }
 
 function isSubscriptionValid(profile: UserProfile): boolean {
-    if (!profile.subscriptionActive) {
-        return false;
-    }
-    if (profile.subscriptionExpiry === null) {
-        return true;
-    }
-    try {
-        const expiryDate = new Date(profile.subscriptionExpiry);
-        const now = new Date();
-        return !isNaN(expiryDate.getTime()) && expiryDate > now;
-    } catch (e) {
-        return false;
-    }
+  if (!profile.subscriptionActive) return false;
+  if (!profile.subscriptionExpiry) return true;
+  try {
+    return new Date(profile.subscriptionExpiry) > new Date();
+  } catch { return false; }
 }
 
-function isTrialActive(trialDaysUsed: number, config: AppConfig): boolean {
-    return trialDaysUsed < config.free_trial_days;
-}
+export type AccessResult = {
+  allowed: boolean;
+  reason?: string;
+};
 
-export function canAccessWeek(weekNumber: number, userData: UserAccessData, config: AppConfig): boolean {
-    // Admin always has full access
-    if (isAdmin(userData.userEmail)) {
-        return true;
+export function canAccessLesson(
+  params: {
+    path: 'survival' | 'alphabet' | 'numbers' | 'pro';
+    week: number;
+    day: number;
+    language?: string;
+    userEmail?: string | null;
+    profile: UserProfile | null;
+  }
+): AccessResult {
+  const { path, week, day, language, userEmail, profile } = params;
+
+  // Admin - full access
+  if (isAdmin(userEmail)) return { allowed: true };
+
+  // Alphabet & Numbers - always free
+  if (path === 'alphabet' || path === 'numbers') return { allowed: true };
+
+  // No profile yet - only free trial access
+  if (!profile) {
+    if (path === 'survival' && week === 1) return { allowed: true };
+    if (path === 'pro' && day <= FREE_TRIAL_PRO_DAYS) return { allowed: true };
+    return { allowed: false, reason: 'locked' };
+  }
+
+  const hasValidSub = isSubscriptionValid(profile);
+  const plan = profile.subscriptionPlan;
+
+  // ===== SURVIVAL PATH =====
+  if (path === 'survival') {
+    // Free trial - week 1 only
+    if (week === 1) return { allowed: true };
+
+    if (!hasValidSub) return { allowed: false, reason: 'upgrade' };
+
+    // Weekly plan - same language only, all survival weeks
+    if (plan === 'weekly') {
+      if (language && profile.subscriptionLanguage && 
+          language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
+        return { allowed: false, reason: 'wrong_language' };
+      }
+      return { allowed: true };
     }
 
-    // Maintenance mode blocks everyone
-    if (config.app_mode === 'maintenance') {
-        return false;
+    // Course plan - same language, daily unlock
+    if (plan === 'course') {
+      if (language && profile.subscriptionLanguage && 
+          language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
+        return { allowed: false, reason: 'wrong_language' };
+      }
+      // Day 1 of week 1 always unlocked
+      if (week === 1 && day === 1) return { allowed: true };
+      // Check if previous day completed
+      const dayKey = `${language}_survival_${week}_${day}`;
+      const prevDayKey = day > 1 
+        ? `${language}_survival_${week}_${day - 1}`
+        : `${language}_survival_${week - 1}_7`;
+      const completed = profile.completedDays || [];
+      if (completed.includes(prevDayKey)) return { allowed: true };
+      return { allowed: false, reason: 'complete_previous' };
     }
 
-    // Valid subscription = full access
-    if (userData.profile && isSubscriptionValid(userData.profile)) {
-        return true;
-    }
+    // Lifetime - full access
+    if (plan === 'lifetime') return { allowed: true };
 
-    // Trial still active = access up to max_free_weeks
-    if (isTrialActive(userData.trialDaysUsed, config)) {
-        const effectiveMaxWeeks = config.max_free_weeks + (userData.profile?.bonusWeeks || 0);
-    if (weekNumber > effectiveMaxWeeks) {
-            return false;
-        }
-        if (config.require_previous_week_completion && weekNumber > 1) {
-            const prevWeekProgress = userData.progress?.find(p => p.week === weekNumber - 1);
-            return prevWeekProgress?.weekCompleted || false;
-        }
-        return true;
-    }
+    return { allowed: false, reason: 'upgrade' };
+  }
 
-    // Trial expired, no subscription = no access
-    return false;
+  // ===== PRO PATH =====
+  if (path === 'pro') {
+    // Free trial - 3 days
+    if (day <= FREE_TRIAL_PRO_DAYS) return { allowed: true };
+    if (!hasValidSub || plan !== 'lifetime') {
+      return { allowed: false, reason: 'lifetime_required' };
+    }
+    return { allowed: true };
+  }
+
+  return { allowed: false, reason: 'locked' };
 }

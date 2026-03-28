@@ -14,9 +14,7 @@ import { Button } from '@/components/ui/button';
 import { nativeLanguages, translations } from '@/lib/translations';
 import { getOrGenerateLesson } from '@/lib/lessonCache';
 import { AlphabetLessonPage } from '@/components/AlphabetLessonPage';
-import { canAccessWeek } from '@/lib/accessControl';
-import { useAppConfig } from '@/hooks/useAppConfig';
-import { useFreeTrial } from '@/hooks/useFreeTrial';
+import { canAccessLesson } from '@/lib/accessControl';
 
 const LoadingSkeleton = () => (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -49,8 +47,6 @@ export default function LessonPage() {
 
   const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
-  const { config } = useAppConfig();
-  const { trialDaysUsed } = useFreeTrial(userProfile);
 
   const [lesson, setLesson] = useState<LanguageLesson | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -59,12 +55,16 @@ export default function LessonPage() {
   const [isMounted, setIsMounted] = useState(false);
 
   const weekNumber = parseInt(week as string, 10);
-  const hasAccess = canAccessWeek(weekNumber, {
-    profile: userProfile || null,
-    progress: null,
-    trialDaysUsed,
+  const dayNum2 = parseInt(day as string, 10);
+  const accessResult = canAccessLesson({
+    path: path as 'survival' | 'alphabet' | 'numbers' | 'pro',
+    week: weekNumber,
+    day: dayNum2,
+    language: language as string,
     userEmail: user?.email,
-  }, config);
+    profile: userProfile || null,
+  });
+  const hasAccess = accessResult.allowed;
 
   useEffect(() => {
     setIsMounted(true);
