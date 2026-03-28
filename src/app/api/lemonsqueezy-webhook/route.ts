@@ -1,3 +1,4 @@
+
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
@@ -10,6 +11,11 @@ function verifySignature(payload: string, signature: string, secret: string): bo
 function createJWT(): string {
   const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
   const clientEmail = process.env.FIREBASE_CLIENT_EMAIL || '';
+
+  // --- DEBUG LOGGING ---
+  console.log('Using client email:', clientEmail);
+  console.log('Using private key (first 50 chars):', privateKey.substring(0, 50));
+  // --- END DEBUG LOGGING ---
   
   const now = Math.floor(Date.now() / 1000);
   const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
@@ -27,7 +33,13 @@ function createJWT(): string {
   sign.update(signingInput);
   const signature = sign.sign(privateKey, 'base64url');
   
-  return `${signingInput}.${signature}`;
+  const jwt = `${signingInput}.${signature}`;
+
+  // --- DEBUG LOGGING ---
+  console.log('Generated JWT:', jwt);
+  // --- END DEBUG LOGGING ---
+
+  return jwt;
 }
 
 async function getAccessToken(): Promise<string> {
@@ -40,8 +52,16 @@ async function getAccessToken(): Promise<string> {
       assertion: jwt,
     }),
   });
+
   const data = await response.json();
-  if (!data.access_token) throw new Error('Failed to get access token: ' + JSON.stringify(data));
+
+  if (!data.access_token) {
+    // --- DEBUG LOGGING ---
+    console.error('Failed to get access token. Google response:', data);
+    // --- END DEBUG LOGGING ---
+    throw new Error('Failed to get access token: ' + JSON.stringify(data));
+  }
+
   return data.access_token;
 }
 
