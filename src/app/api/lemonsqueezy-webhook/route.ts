@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
+import * as admin from 'firebase-admin';
 
 function verifySignature(payload: string, signature: string, secret: string): boolean {
   const hmac = crypto.createHmac('sha256', secret);
@@ -7,69 +8,18 @@ function verifySignature(payload: string, signature: string, secret: string): bo
   return crypto.timingSafeEqual(Buffer.from(digest), Buffer.from(signature));
 }
 
-async function getFirestoreToken(): Promise<string> {
-  const { GoogleAuth } = await import('google-auth-library');
-  const auth = new GoogleAuth({
-    credentials: {
-      client_email: process.env.FIREBASE_CLIENT_EMAIL,
-      private_key: process.env.FIREBASE_PRIVATE_KEY || '',
-    },
-    scopes: ['https://www.googleapis.com/auth/datastore'],
-  });
-  const client = await auth.getClient();
-  const token = await client.getAccessToken();
-  return token.token || '';
-}
+function getAdminApp() {
+  if (admin.apps.length > 0) return admin.apps[0]!;
+  
+  const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '')
+    .replace(/\\n/g, '\n')
+    .replace(/^"|"$/g, '');
 
-async function findUserByEmail(email: string) {
-  const projectId = process.env.FIREBASE_PROJECT_ID;
-  const token = await getFirestoreToken();
-  const url = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents:runQuery`;
-  
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      structuredQuery: {
-        from: [{ collectionId: 'userProfiles' }],
-        where: {
-          fieldFilter: {
-            field: { fieldPath: 'email' },
-            op: 'EQUAL',
-            value: { stringValue: email },
-          },
-        },
-        limit: 1,
-      },
-    }),
-  });
-  
-  const data = await response.json();
-  if (data[0]?.document) {
-    return data[0].document;
-  }
-  return null;
-}
-
-async function updateUserSubscription(docName: string, active: boolean, expiry: string | null) {
-  const token = await getFirestoreToken();
-  const url = `https://firestore.googleapis.com/v1/${docName}?updateMask.fieldPaths=subscriptionActive&updateMask.fieldPaths=subscriptionSource&updateMask.fieldPaths=subscriptionExpiry`;
-  
-  await fetch(url, {
-    method: 'PATCH',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      fields: {
-        subscriptionActive: { booleanValue: active },
-        subscriptionSource: { stringValue: 'lemonsqueezy' },
-        subscriptionExpiry: expiry ? { stringValue: expiry } : { nullValue: null },
-      },
+  return admin.initializeApp({
+    credential: admin.credential.cert({
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      privateKey,
     }),
   });
 }
@@ -89,9 +39,8 @@ export async function POST(req: Request) {
     const userEmail = payload.data?.attributes?.user_email;
     const testMode = payload.data?.attributes?.test_mode;
 
-    // Skip test mode orders
     if (testMode) {
-      console.log('Test mode order skipped:', userEmail);
+      console.log('Test mode order skipped');
       return new NextResponse('OK', { status: 200 });
     }
 
@@ -99,30 +48,47 @@ export async function POST(req: Request) {
       return new NextResponse('No email', { status: 200 });
     }
 
-    const userDoc = await findUserByEmail(userEmail);
+    const app = getAdminApp();
+    const db = admin.firestore(app);
 
-    if (!userDoc) {
+    const usersSnapshot = await db
+      .collection('userProfiles')
+      .where('email', '==', userEmail)
+      .limit(1)
+      .get();
+
+    if (usersSnapshot.empty) {
       console.log('User not found:', userEmail);
       return new NextResponse('OK', { status: 200 });
     }
 
-    const docName = userDoc.name;
+    const userDoc = usersSnapshot.docs[0];
 
     if (eventName === 'subscription_created' || eventName === 'order_created') {
       const renewsAt = payload.data?.attributes?.renews_at || null;
       const endsAt = payload.data?.attributes?.ends_at || null;
       const expiryDate = renewsAt || endsAt || null;
-      await updateUserSubscription(docName, true, expiryDate);
+      await userDoc.ref.update({
+        subscriptionActive: true,
+        subscriptionSource: 'lemonsqueezy',
+        subscriptionExpiry: expiryDate,
+        paymentProviderSubscriptionId: payload.data?.id || null,
+      });
       console.log('Subscription activated for:', userEmail);
     }
 
     if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
-      await updateUserSubscription(docName, false, new Date().toISOString());
-      console.log('Subscription cancelled for:', userEmail);
+      await userDoc.ref.update({
+        subscriptionActive: false,
+        subscriptionExpiry: new Date().toISOString(),
+      });
     }
 
     if (eventName === 'subscription_resumed') {
-      await updateUserSubscription(docName, true, null);
+      await userDoc.ref.update({
+        subscriptionActive: true,
+        subscriptionExpiry: null,
+      });
     }
 
     return new NextResponse('OK', { status: 200 });
