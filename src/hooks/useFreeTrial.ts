@@ -1,36 +1,43 @@
 'use client';
 import { useState, useEffect } from 'react';
 import type { UserProfile } from '@/lib/types';
-import { differenceInCalendarDays } from 'date-fns';
 
 export function useFreeTrial(userProfile?: UserProfile | null) {
-    const [trialState, setTrialState] = useState({ trialDaysUsed: 0, isTrialLoading: true });
+    const [trialDaysUsed, setTrialDaysUsed] = useState(0);
+    const [isTrialLoading, setIsTrialLoading] = useState(true);
 
     useEffect(() => {
-        if (userProfile === undefined) {
-            // Still loading profile
-            setTrialState({ trialDaysUsed: 0, isTrialLoading: true });
+        // Still loading
+        if (userProfile === undefined) return;
+
+        // Subscription active - trial not relevant
+        if (userProfile?.subscriptionActive) {
+            setTrialDaysUsed(0);
+            setIsTrialLoading(false);
             return;
         }
 
-        if (userProfile === null) {
-            // No profile, or explicit null, means loading finished, no user.
-            // Can't calculate trial, default to a high number to indicate trial is over.
-            setTrialState({ trialDaysUsed: 999, isTrialLoading: false });
+        // Use createdAt if available
+        if (userProfile?.createdAt) {
+            const created = new Date(userProfile.createdAt).getTime();
+            const days = Math.max(0, Math.floor((Date.now() - created) / (1000 * 60 * 60 * 24)));
+            setTrialDaysUsed(days);
+            setIsTrialLoading(false);
             return;
         }
 
-        if (userProfile.createdAt) {
-            const creationDate = new Date(userProfile.createdAt);
-            const today = new Date();
-            const daysUsed = differenceInCalendarDays(today, creationDate);
-            setTrialState({ trialDaysUsed: Math.max(0, daysUsed), isTrialLoading: false });
-        } else {
-            // createdAt does not exist, can't calculate trial. Assume it's over.
-            setTrialState({ trialDaysUsed: 999, isTrialLoading: false });
+        // No profile or no createdAt - use localStorage
+        const stored = typeof window !== 'undefined' ? localStorage.getItem('lingoforge_first_open_date') : null;
+        if (stored) {
+            const days = Math.max(0, Math.floor((Date.now() - parseInt(stored)) / (1000 * 60 * 60 * 24)));
+            setTrialDaysUsed(days);
+        } else if (typeof window !== 'undefined') {
+            localStorage.setItem('lingoforge_first_open_date', Date.now().toString());
+            setTrialDaysUsed(0);
         }
+        setIsTrialLoading(false);
 
-    }, [userProfile]);
+    }, [userProfile?.subscriptionActive, userProfile?.createdAt]);
 
-    return trialState;
+    return { trialDaysUsed, isTrialLoading };
 }
