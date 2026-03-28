@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -72,7 +73,7 @@ const SI_TRANSLATIONS = {
   'days': 'දින',
   'week': 'සතිය',
   'I speak': 'ඔබේ භාශාව',
-  'I am learning': 'මම ඉගෙන ගන්නා භාෂාව',
+  'I am learning': 'ඉලක්කගත භාශාව තෝරන්න',
 };
 
 function DashboardLoading() {
