@@ -322,37 +322,44 @@ function DashboardContent({ user }: { user: User }) {
                 </h1>
                 <p className="text-muted-foreground mt-2">{t.ready}</p>
               </div>
-              <div className="flex flex-col gap-3 p-4 rounded-xl border border-border/50 bg-card/50 shadow-sm">
-                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{si_t('I speak')}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {nativeLanguages.map((lang) => (
-                    <button
-                      key={lang}
-                      onClick={() => handleNativeLanguageChange(lang)}
-                      disabled={["Hindi", "Bengali", "Nepali", "Urdu"].includes(lang)}
-                      className={cn("px-3 py-1 rounded-full text-xs font-semibold border transition-all disabled:opacity-30 disabled:cursor-not-allowed", nativeLanguage === lang ? "bg-primary text-primary-foreground border-primary" : "bg-transparent text-muted-foreground border-border/50 hover:border-primary/50")}
-                    >
-                      {lang}
-                    </button>
-                  ))}
-                </div>
-                <div className="w-full h-px bg-border/30" />
-                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{si_t('I am learning')}</p>
-                <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
-                  <SelectTrigger className="w-full border-border/50 bg-transparent">
-                    <SelectValue placeholder="Select language" />
-                  </SelectTrigger>
-                  <SelectContent className="max-h-80">
-                    {availableTargetLanguages.map(lang => (
-                      <SelectItem key={lang.lang} value={lang.lang}>
-                        <div className="flex items-center gap-2">
-                          <span className="text-lg">{lang.flag}</span>
-                          <span>{lang.lang}</span>
-                        </div>
-                      </SelectItem>
+              <div className="rounded-2xl bg-gradient-to-br from-primary/50 via-accent/50 to-green-400/50 p-0.5 shadow-xl transition-all hover:shadow-primary/20">
+                <div className="flex flex-col gap-3 rounded-[15px] bg-card/80 p-4 backdrop-blur-sm">
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{si_t('I speak')}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {nativeLanguages.map((lang) => (
+                      <button
+                        key={lang}
+                        onClick={() => handleNativeLanguageChange(lang)}
+                        disabled={["Hindi", "Bengali", "Nepali", "Urdu"].includes(lang)}
+                        className={cn(
+                          "px-3 py-1.5 rounded-full text-xs font-bold border-2 transition-all disabled:opacity-30 disabled:cursor-not-allowed", 
+                          nativeLanguage === lang 
+                          ? "bg-primary text-primary-foreground border-primary/50 shadow-lg shadow-primary/20" 
+                          : "bg-muted/40 border-transparent hover:bg-muted/80 hover:text-foreground"
+                        )}
+                      >
+                        {lang}
+                      </button>
                     ))}
-                  </SelectContent>
-                </Select>
+                  </div>
+                  <div className="my-2 h-px w-full bg-border/30" />
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{si_t('I am learning')}</p>
+                  <Select value={targetLanguage} onValueChange={handleTargetLanguageChange}>
+                    <SelectTrigger className="w-full border-border/50 bg-muted/40 font-bold hover:bg-muted/80">
+                      <SelectValue placeholder="Select language" />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-80">
+                      {availableTargetLanguages.map(lang => (
+                        <SelectItem key={lang.lang} value={lang.lang}>
+                          <div className="flex items-center gap-2">
+                            <span className="text-lg">{lang.flag}</span>
+                            <span className="font-semibold">{lang.lang}</span>
+                          </div>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
             </div>
           </header>
