@@ -150,6 +150,7 @@ export async function POST(req: Request) {
       const renewsAt = payload.data?.attributes?.renews_at || null;
       const endsAt = payload.data?.attributes?.ends_at || null;
       const productName = (payload.data?.attributes?.product_name || '').toLowerCase();
+      const customLanguage = payload.meta?.custom_data?.language || null;
       
       let plan = 'weekly';
       if (productName.includes('lifetime')) plan = 'lifetime';

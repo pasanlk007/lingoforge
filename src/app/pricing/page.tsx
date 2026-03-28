@@ -13,9 +13,9 @@ import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 
-const WEEKLY_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
-const LIFETIME_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
-const COURSE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
+const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
+const LIFETIME_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
+const COURSE_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
 
 function PricingPageLoading() {
   return (
@@ -65,6 +65,11 @@ function PricingPageContent() {
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const targetLanguageInfo = allTargetLangs.find(l => l.lang === targetLanguage);
+  
+  const langParam = encodeURIComponent(targetLanguage.toLowerCase());
+  const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}`;
+  const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}`;
+  const LIFETIME_URL = LIFETIME_BASE_URL;
 
   const LanguagePurchaseContext = () => {
     if (isProfileLoading) return <Skeleton className="h-12 w-full" />;
