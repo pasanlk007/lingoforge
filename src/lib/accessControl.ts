@@ -75,15 +75,8 @@ export function canAccessLesson(
         return { allowed: false, reason: 'wrong_language' };
       }
       
-      // A weekly subscriber can access the week they are on, plus one more, plus any bonus weeks.
-      const lastWeek = profile.lastLessonWeek || 1;
-      const bonusWeeks = profile.bonusWeeks || 0;
-      if (week <= lastWeek + 1 + bonusWeeks) {
-          return { allowed: true };
-      }
-      
-      // If the week is beyond their unlocked progress, deny access.
-      return { allowed: false, reason: 'upgrade' };
+      // Weekly subscriber gets all survival weeks for their language
+      return { allowed: true };
     }
     
     // Lifetime - full access
