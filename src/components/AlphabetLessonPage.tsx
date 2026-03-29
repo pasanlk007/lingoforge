@@ -66,7 +66,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const handleCompleteDay = () => {
-    if (!userProfileRef || !userProfile || isDayCompleted) return;
+    if (!userProfileRef || !userProfile) return;
 
     setIsComplete(true);
 
