@@ -320,7 +320,7 @@ export const translations = {
       feat4: "විද්‍යුත් තැපැල් සහාය",
     },
     lifetimePlan: {
-      title: "ජීවිත කාලය",
+      title: "භාශා කිහිපයක් ප්‍රගුන කරන්න..",
       price: "$99",
       per: "/එක් වරක්",
       badge: "⭐ හොඳම වටිනාකම",
@@ -2542,6 +2542,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
