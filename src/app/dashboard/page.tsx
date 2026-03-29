@@ -284,6 +284,21 @@ function DashboardContent({ user }: { user: User }) {
         <div className="container mx-auto py-8 sm:py-12 px-4">
           <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
           <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
+          
+          {nativeLanguage === 'Sinhala' && (
+            <div className="mb-8 rounded-lg bg-card p-4 text-center text-sm border border-border">
+              <p className="text-muted-foreground">ගෙවීම් ගැටලු හෝ දෝෂ සඳහා අප හා සම්බන්ධ වන්න:</p>
+              <div className="mt-2 flex items-center justify-center gap-4">
+                <a href="https://wa.me/message/IWT3LGER4UOOO1" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline">
+                  WhatsApp
+                </a>
+                <a href="mailto:innovativehub1996@gmail.com" className="font-semibold text-primary hover:underline">
+                  Email
+                </a>
+              </div>
+            </div>
+          )}
+
           <header className="mb-8">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
