@@ -70,7 +70,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
 
     setIsComplete(true);
 
-    const langKey = dayData.targetLanguage.toLowerCase();
+    const langKey = targetLanguage.toLowerCase();
     const pathKey = dayData.path;
 
     let newStreak = userProfile.currentStreak || 0;

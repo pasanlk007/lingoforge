@@ -54,7 +54,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
     
     const isDayCompleted = useMemo(() => {
         if (!userProfile || !dayData) return false;
-        const langKey = dayData.targetLanguage.toLowerCase();
+        const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || '' : '').toLowerCase();
         const pathKey = dayData.path;
         return userProfile.languageProgress?.[langKey]?.[pathKey]?.completedDays?.includes(dayKey) || false;
     }, [userProfile, dayData, dayKey]);
@@ -125,7 +125,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
 
         setIsComplete(true);
         
-        const langKey = dayData.targetLanguage.toLowerCase();
+        const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || '' : '').toLowerCase();
         const pathKey = dayData.path;
 
         let newStreak = userProfile.currentStreak || 0;
