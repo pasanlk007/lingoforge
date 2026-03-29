@@ -484,7 +484,7 @@ function DashboardContent({ user }: { user: User }) {
               <ReferralCard />
               {nativeLanguage === 'Sinhala' && (
                 <div className='mt-4 p-3 rounded-lg bg-muted/50 border border-border/50 text-sm text-center'>
-                  <p className='text-muted-foreground mb-2'>ගෙවීම් ගැටලු හෝ දෝෂ සඳහා අප හා සම්බන්ධ වන්න:</p>
+                  <p className='text-muted-foreground mb-2'>ගෙවීම් ගැටලු හෝ දෝෂ සඳහා අප හා සම්බන්ධ වන්න:</p><p className='text-xs text-yellow-500 mb-2'>🇱🇰 ලංකාවෙන් ගෙවීමට WhatsApp කරන්න</p>
                   <div className='flex gap-4 justify-center'>
                     <a href='https://wa.me/message/IWT3LGER4UOOO1' target='_blank' className='text-green-500 hover:underline font-medium'>📱 WhatsApp</a>
                     <a href='mailto:innovativehub1996@gmail.com' className='text-blue-500 hover:underline font-medium'>✉️ Email</a>
