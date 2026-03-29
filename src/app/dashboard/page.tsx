@@ -31,11 +31,11 @@ import { cn } from "@/lib/utils";
 import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ReminderCard } from "@/components/ReminderCard";
-import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking, useCollection } from "@/firebase";
-import { doc, collection, setDoc } from "firebase/firestore";
+import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from "@/firebase";
+import { doc, setDoc, arrayUnion } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
-import type { UserProfile, UserWeekProgress } from "@/lib/types";
+import type { UserProfile } from "@/lib/types";
 import type { User } from 'firebase/auth';
 import { useAppConfig } from "@/hooks/useAppConfig";
 import { useFreeTrial } from "@/hooks/useFreeTrial";
@@ -127,7 +127,8 @@ function DashboardContent({ user }: { user: User }) {
   const [targetLanguage, setTargetLanguage] = useState('French');
 
   useEffect(() => {
-    if (isMounted && !isProfileLoading && !userProfile && user && userProfileRef && firestore) {
+    setIsMounted(true);
+    if (!isProfileLoading && !userProfile && user && userProfileRef && firestore) {
       const createUserProfile = async () => {
         const now = new Date();
         const newUserProfile: UserProfile = {
@@ -145,15 +146,12 @@ function DashboardContent({ user }: { user: User }) {
             currentStreak: 0,
             lastActiveDate: now.toISOString().split('T')[0],
             aiPlanningEnabled: false,
-            activePath: 'survival',
-            lastLessonWeek: 1,
-            lastLessonDay: 0,
         };
         setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
       };
       createUserProfile();
     }
-  }, [isMounted, isProfileLoading, userProfile, user, userProfileRef, firestore]);
+  }, [isProfileLoading, userProfile, user, userProfileRef, firestore]);
 
   useEffect(() => {
     setIsMounted(true);
@@ -169,33 +167,6 @@ function DashboardContent({ user }: { user: User }) {
         localStorage.setItem("targetLanguage", initialTarget);
     }
   }, [userProfile]);
-  
-  useEffect(() => {
-    if (userProfileRef && userProfile && targetLanguage) {
-      const langProgress = userProfile.progressByLanguage?.[targetLanguage.toLowerCase()];
-      const currentGlobalPath = userProfile.activePath;
-      const currentGlobalWeek = userProfile.lastLessonWeek;
-      const currentGlobalDay = userProfile.lastLessonDay;
-  
-      if (langProgress) {
-        if (langProgress.lastLessonWeek !== currentGlobalWeek || langProgress.lastLessonDay !== currentGlobalDay) {
-          updateDocumentNonBlocking(userProfileRef, {
-            lastLessonWeek: langProgress.lastLessonWeek,
-            lastLessonDay: langProgress.lastLessonDay,
-            activePath: langProgress.activePath,
-          });
-        }
-      } else {
-        if (currentGlobalWeek !== 1 || currentGlobalDay !== 0) {
-          updateDocumentNonBlocking(userProfileRef, {
-            lastLessonWeek: 1,
-            lastLessonDay: 0,
-            activePath: 'survival',
-          });
-        }
-      }
-    }
-  }, [targetLanguage, userProfile, userProfileRef]);
 
   useEffect(() => {
     if (userProfileRef && userProfile && userProfile.currentStreak > 0) {
@@ -227,24 +198,7 @@ function DashboardContent({ user }: { user: User }) {
        }
     }
   };
-
-  const activePathForQuery = userProfile?.activePath || 'survival';
-  const lastActiveWeek = userProfile?.lastLessonWeek || 1;
-
-  const weekProgressRef = useMemoFirebase(() => {
-    if (!user || !firestore || !activePathForQuery || !lastActiveWeek) return null;
-    return doc(firestore, 'userProgress', user.uid, activePathForQuery, `week_${lastActiveWeek}`);
-  }, [user, firestore, activePathForQuery, lastActiveWeek]);
-
-  const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
   
-  const allProgressForActivePathRef = useMemoFirebase(() => {
-    if (!user || !firestore || !activePathForQuery) return null;
-    return collection(firestore, 'userProgress', user.uid, activePathForQuery);
-  }, [user, firestore, activePathForQuery]);
-
-  const { data: allProgressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(allProgressForActivePathRef);
-
   const availableTargetLanguages = useMemo(() => {
     if (nativeLanguage === 'English') {
         return targetLanguages.filter(l => l.lang !== 'English');
@@ -261,7 +215,7 @@ function DashboardContent({ user }: { user: User }) {
 
   const toTitleCase = (str: string) => str.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
 
-  if (!isMounted || isProfileLoading || !userProfile || isProgressLoading) {
+  if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading) {
       return <DashboardLoading />;
   }
   
@@ -269,20 +223,21 @@ function DashboardContent({ user }: { user: User }) {
     displayName,
     currentStreak,
     xpPoints,
-    activePath,
-    lastLessonWeek,
-    lastLessonDay
   } = userProfile;
   
-  const level = Math.floor((xpPoints || 0) / 1500) + 1;
-  const xpToNextLevel = 1500 - (xpPoints % 1500);
+  // New language-specific progress logic
+  const langKey = targetLanguage.toLowerCase();
+  const survivalProgress = userProfile.languageProgress?.[langKey]?.['survival'];
 
-  const lastWeek = lastLessonWeek || 1;
-  const lastDay = lastLessonDay || 0;
+  const lastWeek = survivalProgress?.lastWeek || 1;
+  const lastDay = survivalProgress?.lastDay || 0;
   
   const nextDay = lastDay < 7 ? lastDay + 1 : 1;
   const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
-  const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/survival/${nextWeek}/${nextDay}`;
+  const nextLessonUrl = `/lessons/${langKey}/survival/${nextWeek}/${nextDay}`;
+
+  const level = Math.floor((xpPoints || 0) / 1500) + 1;
+  const xpToNextLevel = 1500 - (xpPoints % 1500);
 
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
@@ -290,7 +245,14 @@ function DashboardContent({ user }: { user: User }) {
   
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
-  const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => weekProgressData?.daysCompleted?.includes(i + 1) || false);
+  
+  const completedDaysForWeek = useMemo(() => {
+    const completedDays = survivalProgress?.completedDays || [];
+    const weekPrefix = `${lastWeek}-`;
+    return completedDays.filter(d => d.startsWith(weekPrefix)).map(d => parseInt(d.split('-')[1]));
+  }, [survivalProgress, lastWeek]);
+
+  const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => completedDaysForWeek.includes(i + 1));
 
   const availablePaths = ['Chinese', 'Tamil'].includes(targetLanguage)
     ? PATHS.filter(p => p.id !== 'alphabet')
@@ -302,7 +264,7 @@ function DashboardContent({ user }: { user: User }) {
     day: 1,
     language: targetLanguage,
     userEmail: user?.email,
-    profile: userProfile || null,
+    profile: userProfile,
   }).allowed;
 
   const proPathItems = [
@@ -411,7 +373,7 @@ function DashboardContent({ user }: { user: User }) {
                 <Target className="h-5 w-5 text-blue-500" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold capitalize">{activePath || 'Survival'}</div>
+                <div className="text-2xl font-bold capitalize">Survival</div>
                 <p className="text-xs text-muted-foreground">{t.language}: {targetLanguage}</p>
               </CardContent>
             </Card>

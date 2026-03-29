@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useCollection, useDoc, useMemoFirebase } from '@/firebase';
-import { collection, doc } from 'firebase/firestore';
-import type { UserProfile, UserWeekProgress } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { UserProfile } from '@/lib/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
@@ -26,13 +26,6 @@ export default function SurvivalPathPage() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-
-  const progressCollectionRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
-    return collection(firestore, 'userProgress', user.uid, 'survival');
-  }, [user, firestore]);
-
-  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
   
   const [isMounted, setIsMounted] = useState(false);
   const { config, isLoading: isConfigLoading } = useAppConfig();
@@ -50,13 +43,19 @@ export default function SurvivalPathPage() {
   const totalWeeks = 12;
   
   const completedDays = useMemo(() => {
-    if (!progressData) return {};
-    const completedDaysMap: { [week: number]: number[] } = {};
-    progressData.forEach(weekProgress => {
-      completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-    });
-    return completedDaysMap;
-  }, [progressData]);
+    const progress = userProfile?.languageProgress?.[targetLanguage.toLowerCase()]?.['survival'];
+    if (!progress?.completedDays) return {};
+
+    const completedMap: { [week: number]: number[] } = {};
+    for (const dayKey of progress.completedDays) {
+      const [week, day] = dayKey.split('-').map(Number);
+      if (!completedMap[week]) {
+        completedMap[week] = [];
+      }
+      completedMap[week].push(day);
+    }
+    return completedMap;
+  }, [userProfile, targetLanguage]);
 
   if (isMounted && nativeLanguage === 'English' && targetLanguage === 'English') {
     return (
@@ -73,7 +72,7 @@ export default function SurvivalPathPage() {
     );
   }
 
-  if (!isMounted || isUserLoading || isProgressLoading || isProfileLoading || isConfigLoading || isTrialLoading) {
+  if (!isMounted || isUserLoading || isProfileLoading || isConfigLoading || isTrialLoading) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />

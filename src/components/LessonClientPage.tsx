@@ -4,10 +4,9 @@ import VoiceInit from "@/components/VoiceInit";
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
-import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
-import { setDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
-import { doc } from 'firebase/firestore';
-import type { LanguageLesson, LessonDay, UserProfile, UserWeekProgress } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from '@/firebase';
+import { doc, arrayUnion } from 'firebase/firestore';
+import type { LanguageLesson, LessonDay, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -51,15 +50,15 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
         return doc(firestore, 'userProfiles', user.uid);
     }, [user, firestore]);
 
-    const weekProgressRef = useMemoFirebase(() => {
-        if (!user || !firestore || !dayData) return null;
-        return doc(firestore, 'userProgress', user.uid, dayData.path, `week_${dayData.week}`);
-    }, [user, firestore, dayData]);
-    const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
-
+    const dayKey = useMemo(() => dayData ? `${dayData.week}-${currentDay}` : '', [dayData, currentDay]);
+    
     const isDayCompleted = useMemo(() => {
-      return weekProgressData?.daysCompleted?.includes(currentDay) || false;
-    }, [weekProgressData, currentDay]);
+        if (!userProfile || !dayData) return false;
+        const langKey = dayData.targetLanguage.toLowerCase();
+        const pathKey = dayData.path;
+        return userProfile.languageProgress?.[langKey]?.[pathKey]?.completedDays?.includes(dayKey) || false;
+    }, [userProfile, dayData, dayKey]);
+
 
     useEffect(() => {
       const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
@@ -122,64 +121,33 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
     };
     
     const handleCompleteDay = () => {
-        if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile || isDayCompleted) return;
+        if (!userProfileRef || !userProfile || isDayCompleted) return;
 
         setIsComplete(true);
-
-        // 1. Update week progress
-        const currentCompletedDays = weekProgressData?.daysCompleted || [];
-        const newCompletedDays = [...new Set([...currentCompletedDays, currentDay])];
-        const weekData: Partial<UserWeekProgress> = {
-            daysCompleted: newCompletedDays,
-            path: dayData.path,
-            week: dayData.week,
-            weekCompleted: newCompletedDays.length === 7,
-        };
-        setDocumentNonBlocking(weekProgressRef, weekData, { merge: true });
-
-        // 2. Update user profile (XP, Streak, and language-specific progress)
-        const xpToAdd = (progress?.xp || 0) + (progress?.streak_bonus || 0);
-        const newXp = (userProfile.xpPoints || 0) + xpToAdd;
         
+        const langKey = dayData.targetLanguage.toLowerCase();
+        const pathKey = dayData.path;
+
         let newStreak = userProfile.currentStreak || 0;
         const today = new Date();
         const lastActiveDate = new Date(userProfile.lastActiveDate);
         const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
 
         if (daysSinceLastActive > 0) {
-            if (daysSinceLastActive === 1) {
-                newStreak++;
-            } else {
-                newStreak = 1;
-            }
+            newStreak = daysSinceLastActive === 1 ? newStreak + 1 : 1;
         } else if (newStreak === 0) {
             newStreak = 1;
         }
-
-        const langKey = dayData.targetLanguage.toLowerCase();
-        const progressKey = `progressByLanguage.${langKey}`;
-        const langProgress = {
-            activePath: dayData.path,
-            lastLessonWeek: dayData.week,
-            lastLessonDay: currentDay,
-        };
-
-        const dayKey = `${lesson.language.toLowerCase()}_${dayData.path}_${dayData.week}_${currentDay}`;
-        const existingCompletedDays = userProfile.completedDays || [];
-        const newCompletedDaysProfile = [...new Set([...existingCompletedDays, dayKey])];
-
-        updateDocumentNonBlocking(userProfileRef, {
-            xpPoints: newXp,
+        
+        const progressUpdate: { [key: string]: any } = {
+            [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
+            [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+            [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
             currentStreak: newStreak,
             lastActiveDate: today.toISOString().split('T')[0],
-            // Update global fields for immediate UI feedback
-            activePath: dayData.path,
-            lastLessonWeek: dayData.week,
-            lastLessonDay: currentDay,
-            // Update the language-specific progress map
-            [progressKey]: langProgress,
-            completedDays: newCompletedDaysProfile,
-        });
+        };
+
+        updateDocumentNonBlocking(userProfileRef, progressUpdate);
     };
     
     const weekProgress = (currentDay / 7) * 100;
@@ -281,11 +249,6 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
                                     <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
                                         <CheckCircle className="h-4 w-4" />
                                         <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
-                                        <AlertDescription className="text-xs">
-                                        {t.earnedXP
-                                            .replace('{xp}', progress?.xp.toString() ?? '0')
-                                            .replace('{streak_bonus}', progress?.streak_bonus.toString() ?? '0')}
-                                        </AlertDescription>
                                     </Alert>
                                     <div className="mt-4 grid grid-cols-1 gap-2">
                                         <Button asChild className="w-full">
@@ -302,7 +265,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
                                 </div>
                             ) : (
                                  <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
-                                    <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
+                                    <CheckCircle className="mr-2 h-5 w-5" /> Complete Day
                                  </Button>
                             )}
                         </div>

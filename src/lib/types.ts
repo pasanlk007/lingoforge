@@ -140,27 +140,22 @@ export interface UserProfile {
   subscriptionPlan?: 'weekly' | 'course' | 'lifetime';
   subscriptionLanguage?: string;
   subscriptionExpiry: string | null; // ISO date string, or null for lifetime
-  xpPoints: number;
+  xpPoints: number; // Legacy, no longer incremented
   currentStreak: number;
   lastActiveDate: string; // ISO 8601 date string
   aiPlanningEnabled: boolean;
   photoURL?: string;
   
-  // Legacy global progress fields (still updated for immediate UI, but source of truth is below)
-  activePath: 'survival' | 'alphabet' | 'numbers';
-  lastLessonWeek: number;
-  lastLessonDay: number;
-  
-  // New language-specific progress tracking
-  progressByLanguage?: {
+  languageProgress?: {
     [language: string]: {
-      activePath: 'survival' | 'alphabet' | 'numbers';
-      lastLessonWeek: number;
-      lastLessonDay: number;
+      [path: string]: {
+        lastWeek: number;
+        lastDay: number;
+        completedDays: string[]; // e.g. ["1-1", "1-2"]
+      }
     }
   };
 
-  completedDays?: string[];
   paymentProviderCustomerId?: string;
   paymentProviderSubscriptionId?: string;
   referralCode?: string;
@@ -169,15 +164,7 @@ export interface UserProfile {
   referralCount?: number;
 }
 
-export interface UserLessonProgress {
-  completed: boolean;
-  score: number;
-  completedAt: any;
-  exerciseResults: {
-    [exerciseId: string]: boolean;
-  };
-}
-
+// This type is deprecated as progress is now stored in UserProfile.
 export interface UserWeekProgress {
   week: number;
   path: string;

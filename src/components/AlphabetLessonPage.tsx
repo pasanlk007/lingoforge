@@ -1,11 +1,10 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle } from 'lucide-react';
-import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
-import { setDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase/non-blocking-updates';
-import { doc } from 'firebase/firestore';
-import type { LessonDay, UserProfile, UserWeekProgress } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from '@/firebase';
+import { doc, arrayUnion } from 'firebase/firestore';
+import type { LessonDay, UserProfile } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { WordCard } from '@/components/WordCard';
@@ -43,14 +42,15 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
     if (!user || !firestore) return null;
     return doc(firestore, 'userProfiles', user.uid);
   }, [user, firestore]);
+  
+  const dayKey = useMemo(() => `${dayData.week}-${dayData.day}`, [dayData]);
 
-  const weekProgressRef = useMemoFirebase(() => {
-    if (!user || !firestore || !dayData) return null;
-    return doc(firestore, 'userProgress', user.uid, dayData.path, `week_${dayData.week}`);
-  }, [user, firestore, dayData]);
-  const { data: weekProgressData } = useDoc<UserWeekProgress>(weekProgressRef);
-
-  const isDayCompleted = weekProgressData?.daysCompleted?.includes(dayData.day) || false;
+  const isDayCompleted = useMemo(() => {
+    if (!userProfile) return false;
+    const langKey = targetLanguage.toLowerCase();
+    const pathKey = dayData.path;
+    return userProfile.languageProgress?.[langKey]?.[pathKey]?.completedDays?.includes(dayKey) || false;
+  }, [userProfile, targetLanguage, dayData, dayKey]);
 
   useEffect(() => {
     const savedNativeLang = localStorage.getItem("nativeLanguage") as keyof typeof translations;
@@ -66,12 +66,12 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const handleCompleteDay = () => {
-    if (!user || !firestore || !dayData || !weekProgressRef || !userProfileRef || !userProfile || isDayCompleted) return;
+    if (!userProfileRef || !userProfile || isDayCompleted) return;
 
     setIsComplete(true);
 
-    const xpToAdd = (dayData.progress?.xp || 0) + (dayData.progress?.streak_bonus || 0);
-    const newXp = (userProfile.xpPoints || 0) + xpToAdd;
+    const langKey = dayData.targetLanguage.toLowerCase();
+    const pathKey = dayData.path;
 
     let newStreak = userProfile.currentStreak || 0;
     const today = new Date();
@@ -79,42 +79,20 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
     const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
 
     if (daysSinceLastActive > 0) {
-        if (daysSinceLastActive === 1) {
-            newStreak++;
-        } else {
-            newStreak = 1;
-        }
+        newStreak = daysSinceLastActive === 1 ? newStreak + 1 : 1;
     } else if (newStreak === 0) {
         newStreak = 1;
     }
 
-    const langKey = dayData.targetLanguage.toLowerCase();
-    const progressKey = `progressByLanguage.${langKey}`;
-    const langProgress = {
-        activePath: dayData.path,
-        lastLessonWeek: dayData.week,
-        lastLessonDay: dayData.day,
+    const progressUpdate: { [key: string]: any } = {
+        [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
+        [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+        [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
+        currentStreak: newStreak,
+        lastActiveDate: today.toISOString().split('T')[0],
     };
 
-    updateDocumentNonBlocking(userProfileRef, {
-      xpPoints: newXp,
-      currentStreak: newStreak,
-      lastActiveDate: today.toISOString().split('T')[0],
-      activePath: dayData.path,
-      lastLessonWeek: dayData.week,
-      lastLessonDay: dayData.day,
-      [progressKey]: langProgress,
-    });
-
-    const currentCompletedDays = weekProgressData?.daysCompleted || [];
-    const newCompletedDays = [...new Set([...currentCompletedDays, dayData.day])];
-    const weekData: Partial<UserWeekProgress> = {
-      daysCompleted: newCompletedDays,
-      path: dayData.path,
-      week: dayData.week,
-      weekCompleted: newCompletedDays.length === 7,
-    };
-    setDocumentNonBlocking(weekProgressRef, weekData, { merge: true });
+    updateDocumentNonBlocking(userProfileRef, progressUpdate);
   }
   
   if (!dayData || !isMounted) {

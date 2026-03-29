@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useDoc, useMemoFirebase, useCollection } from '@/firebase';
-import { doc, collection } from 'firebase/firestore';
-import type { UserProfile, LessonDay, UserWeekProgress } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { UserProfile, LessonDay } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -39,22 +39,6 @@ export default function AlphabetPathPage() {
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
   
-  const progressCollectionRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
-    return collection(firestore, 'userProgress', user.uid, 'alphabet');
-  }, [user, firestore]);
-
-  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
-
-  const completedDays = useMemo(() => {
-    if (!progressData) return {};
-    const completedDaysMap: { [week: number]: number[] } = {};
-    progressData.forEach(weekProgress => {
-      completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-    });
-    return completedDaysMap;
-  }, [progressData]);
-
   const [isMounted, setIsMounted] = useState(false);
   const [allLessonData, setAllLessonData] = useState<LessonDay[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -71,6 +55,11 @@ export default function AlphabetPathPage() {
   const targetLanguageInfo = useMemo(() => targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase()), [targetLanguage]);
   const alphabetSize = targetLanguageInfo?.alphabetSize || 0;
   const totalWeeks = alphabetSize > 0 ? Math.ceil(alphabetSize / 7) : 0;
+  
+  const completedDays = useMemo(() => {
+    const progress = userProfile?.languageProgress?.[targetLanguage.toLowerCase()]?.['alphabet'];
+    return progress?.completedDays || [];
+  }, [userProfile, targetLanguage]);
 
   useEffect(() => {
     const fetchAllLessons = async () => {
@@ -118,7 +107,7 @@ export default function AlphabetPathPage() {
     );
   }
 
-  if (isLoading || isUserLoading || !isMounted || isProfileLoading || isProgressLoading) {
+  if (isLoading || isUserLoading || !isMounted || isProfileLoading) {
     return <LoadingSkeleton />;
   }
 
@@ -147,10 +136,11 @@ export default function AlphabetPathPage() {
 
           <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
             {allLessonData.map((day) => {
-              const isDayCompleted = completedDays[day.week]?.includes(day.day);
+              const dayKey = `${day.week}-${day.day}`;
+              const isDayCompleted = completedDays.includes(dayKey);
               return (
               <Button
-                key={`${day.week}-${day.day}`}
+                key={dayKey}
                 asChild
                 variant="secondary"
                 className={cn(

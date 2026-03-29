@@ -2,9 +2,9 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { useUser, useFirestore, useDoc, useMemoFirebase, useCollection } from '@/firebase';
-import { doc, collection } from 'firebase/firestore';
-import type { UserProfile, UserWeekProgress } from '@/lib/types';
+import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import type { UserProfile } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/Navigation';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -36,22 +36,6 @@ export default function NumbersPage() {
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
   
-  const progressCollectionRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
-    return collection(firestore, 'userProgress', user.uid, 'numbers');
-  }, [user, firestore]);
-
-  const { data: progressData, isLoading: isProgressLoading } = useCollection<UserWeekProgress>(progressCollectionRef);
-
-  const completedDays = useMemo(() => {
-    if (!progressData) return {};
-    const completedDaysMap: { [week: number]: number[] } = {};
-    progressData.forEach(weekProgress => {
-        completedDaysMap[weekProgress.week] = weekProgress.daysCompleted;
-    });
-    return completedDaysMap;
-  }, [progressData]);
-
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -60,9 +44,14 @@ export default function NumbersPage() {
 
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   
+  const completedDays = useMemo(() => {
+    const progress = userProfile?.languageProgress?.[targetLanguage.toLowerCase()]?.['numbers'];
+    return progress?.completedDays || [];
+  }, [userProfile, targetLanguage]);
+
   const numbers = Array.from({ length: 28 }, (_, i) => i + 1);
 
-  if (isUserLoading || !isMounted || isProfileLoading || isProgressLoading) {
+  if (isUserLoading || !isMounted || isProfileLoading) {
     return <LoadingSkeleton />;
   }
 
@@ -79,7 +68,8 @@ export default function NumbersPage() {
           {numbers.map((num) => {
             const week = Math.ceil(num / 7);
             const day = ((num - 1) % 7) + 1;
-            const isDayCompleted = completedDays[week]?.includes(day);
+            const dayKey = `${week}-${day}`;
+            const isDayCompleted = completedDays.includes(dayKey);
 
             return (
               <Link
