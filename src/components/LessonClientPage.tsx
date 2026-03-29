@@ -4,7 +4,7 @@ import VoiceInit from "@/components/VoiceInit";
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
-import { updateDocumentNonBlocking } from '@/firebase';
+import { useUser, useFirestore, useMemoFirebase, updateDocumentNonBlocking, setDocumentNonBlocking } from '@/firebase';
 import { arrayUnion, type DocumentData, type DocumentReference } from 'firebase/firestore';
 import type { LanguageLesson, LessonDay, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
@@ -113,9 +113,8 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
     };
     
     const handleCompleteDay = () => {
-        console.log("COMPLETE CLICKED", {user: !!user, firestore: !!firestore, dayData: !!dayData, userProfileRef: !!userProfileRef, userProfile: !!userProfile, isComplete});
-        console.log("COMPLETE CLICKED", {user: !!user, firestore: !!firestore, dayData: !!dayData, userProfileRef: !!userProfileRef, userProfile: !!userProfile, isComplete});
-        if (!userProfileRef || !dayData) return;
+
+if (!userProfileRef || !dayData) return;
 
         setIsComplete(true);
 
