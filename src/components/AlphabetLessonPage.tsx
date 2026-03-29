@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle } from 'lucide-react';
 import { updateDocumentNonBlocking } from '@/firebase';
@@ -57,17 +57,21 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
 
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
-  const handleCompleteDay = useCallback(() => {
-    if (!userProfileRef || isComplete) return;
-
-    const langKey = targetLanguage.toLowerCase();
-    const pathKey = dayData.path;
+  const handleCompleteDay = () => {
+    if (isComplete) return;
 
     setIsComplete(true);
+    
+    const langKey = targetLanguage.toLowerCase();
+    const pathKey = dayData.path;
+    const dayKeyToSave = `${dayData.week}-${dayData.day}`;
+
     updateDocumentNonBlocking(userProfileRef, {
-        [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
+        [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
+        [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+        [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
     });
-  }, [userProfileRef, isComplete, targetLanguage, dayData, dayKey]);
+  };
   
   if (!dayData || !isMounted) {
     return null;
@@ -95,7 +99,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
             </div>
             <div className="flex items-center gap-2">
               <span className="text-3xl">{flag}</span>
-              {false && <StreakCounter count={userProfile?.currentStreak || 0} />}
+              <StreakCounter count={userProfile?.currentStreak || 0} />
             </div>
           </div>
         </header>

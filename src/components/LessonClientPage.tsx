@@ -42,13 +42,14 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
 
     const dayData: LessonDay | undefined = lesson?.days?.[0];
 
+    const dayKey = useMemo(() => dayData ? `${dayData.week}-${currentDay}` : '', [dayData, currentDay]);
+    
     const isDayCompleted = useMemo(() => {
         if (!userProfile || !dayData) return false;
         const langKey = lesson.language.toLowerCase();
         const pathKey = dayData.path;
-        const dayKey = `${dayData.week}-${currentDay}`;
         return userProfile.languageProgress?.[langKey]?.[pathKey]?.completedDays?.includes(dayKey) || false;
-    }, [userProfile, dayData, currentDay, lesson.language]);
+    }, [userProfile, dayData, dayKey, lesson.language]);
 
 
     useEffect(() => {
@@ -111,18 +112,22 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
         setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1));
     };
     
-    const handleCompleteDay = useCallback(() => {
-        if (!userProfileRef || isComplete) return;
-        
-        const langKey = lesson.language.toLowerCase();
-        const pathKey = dayData.path;
-        const dayKey = `${dayData.week}-${currentDay}`;
+    const handleCompleteDay = () => {
+
+if (!userProfileRef || !dayData) return;
 
         setIsComplete(true);
+
+        const langKey = lesson.language.toLowerCase();
+        const pathKey = dayData.path;
+        const dayKeyToSave = `${dayData.week}-${currentDay}`;
+
         updateDocumentNonBlocking(userProfileRef, {
-            [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
+          [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
+          [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+          [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
         });
-    }, [userProfileRef, isComplete, lesson.language, dayData, currentDay]);
+    };
     
     const weekProgress = (currentDay / 7) * 100;
     const streakCount = userProfile?.currentStreak || 0;
@@ -153,7 +158,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
                          </div>
                          <div className="flex items-center gap-2">
                            <span className="text-3xl">{flag}</span>
-                           {false && <StreakCounter count={streakCount} />}
+                           <StreakCounter count={streakCount} />
                          </div>
                     </div>
                      <div className="space-y-2">
