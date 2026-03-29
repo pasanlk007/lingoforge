@@ -178,8 +178,9 @@ export default function SurvivalPathPage() {
                       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                         {Array.from({ length: 7 }, (_, j) => j + 1).map((day) => {
                           const isDayCompleted = completedDaysInWeek.includes(day);
+                          const isDayUnlocked = day === 1 || completedDaysInWeek.includes(day - 1);
                           return (
-                            <Button asChild variant="secondary" key={day} className={cn(
+                            <Button asChild={isDayUnlocked} disabled={!isDayUnlocked} variant="secondary" key={day} className={cn(
                               "relative transition-all duration-300",
                               isDayCompleted 
                                 ? 'bg-gradient-to-br from-green-500 to-emerald-600 text-white hover:from-green-400 hover:to-emerald-500 border-2 border-green-400 shadow-lg shadow-green-500/30 scale-105' 
