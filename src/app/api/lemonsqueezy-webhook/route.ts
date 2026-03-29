@@ -95,7 +95,7 @@ async function findUserByEmail(email: string, token: string) {
   return null;
 }
 
-async function updateUserDoc(docName: string, active: boolean, expiry: string | null, token: string, plan?: string) {
+async function updateUserDoc(docName: string, active: boolean, expiry: string | null, token: string, plan?: string, customLanguage?: string | null) {
   const fields: any = {
     subscriptionActive: { booleanValue: active },
     subscriptionSource: { stringValue: 'lemonsqueezy' },
@@ -158,7 +158,7 @@ export async function POST(req: Request) {
       else if (productName.includes('course')) plan = 'course';
       else plan = 'weekly';
 
-      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan);
+      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan, customLanguage);
       console.log('✅ Subscription activated for:', userEmail, 'plan:', plan);
     }
 

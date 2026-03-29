@@ -1,3 +1,4 @@
+
 'use client';
 import type { UserProfile } from '@/lib/types';
 
@@ -9,7 +10,10 @@ function isAdmin(email?: string | null): boolean {
 
 function isSubscriptionValid(profile: UserProfile): boolean {
   if (!profile.subscriptionActive) return false;
-  if (!profile.subscriptionExpiry) return true;
+  // Lifetime plan doesn't have an expiry date
+  if (profile.subscriptionPlan === 'lifetime' && !profile.subscriptionExpiry) return true;
+  if (!profile.subscriptionExpiry) return false;
+  
   try {
     return new Date(profile.subscriptionExpiry) > new Date();
   } catch { return false; }
@@ -55,30 +59,16 @@ export function canAccessLesson(
 
     if (!hasValidSub) return { allowed: false, reason: 'upgrade' };
 
-    // Weekly plan - same language, all survival weeks
-    if (plan === 'weekly') {
+    // For weekly and course plans, check if the language matches
+    if (plan === 'weekly' || plan === 'course') {
       if (language && profile.subscriptionLanguage &&
           language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
         return { allowed: false, reason: 'wrong_language' };
       }
+      // If language matches, grant access to all survival weeks
       return { allowed: true };
     }
-
-    // Course plan - same language, daily unlock
-    if (plan === 'course') {
-      if (language && profile.subscriptionLanguage &&
-          language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
-        return { allowed: false, reason: 'wrong_language' };
-      }
-      if (week === 1 && day === 1) return { allowed: true };
-      const prevDayKey = day > 1
-        ? `${language}_survival_${week}_${day - 1}`
-        : `${language}_survival_${week - 1}_7`;
-      const completed = profile.completedDays || [];
-      if (completed.includes(prevDayKey)) return { allowed: true };
-      return { allowed: false, reason: 'complete_previous' };
-    }
-
+    
     // Lifetime - full access
     if (plan === 'lifetime') return { allowed: true };
 
