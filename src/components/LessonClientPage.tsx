@@ -222,7 +222,7 @@ if (!userProfileRef || !dayData) return;
                     
                     <section className="text-center py-6 flex flex-col items-center">
                         <div className="relative">
-                            <div className="absolute -inset-20"><Confetti active={isComplete} config={confettiConfig} /></div>
+                            <div className="absolute -inset-20 pointer-events-none"><Confetti active={isComplete} config={confettiConfig} /></div>
                             {isComplete ? (
                                 <div className="w-full max-w-xs">
                                     <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
