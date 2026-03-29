@@ -79,14 +79,27 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
             )}
           </div>
 
+          {/* Letter header */}
+          {dayData.letter && (
+            <div className="text-center mb-6 p-4 bg-primary/10 rounded-xl">
+              <div className="text-6xl font-bold text-primary">{dayData.letter}</div>
+              {dayData.pronunciation_tip && (
+                <div className="text-sm text-muted-foreground mt-2">{dayData.pronunciation_tip}</div>
+              )}
+            </div>
+          )}
           {/* Lesson content */}
           <div className="space-y-4 mb-8">
-            {dayData.vocabulary?.map((item, i) => (
+            {dayData.words?.map((item, i) => (
               <div key={i} className="p-4 rounded-lg bg-muted/50">
-                <div className="text-2xl font-bold text-primary">{item.word}</div>
-                <div className="text-muted-foreground">{item.meaning}</div>
-                {item.pronunciation && (
-                  <div className="text-sm text-muted-foreground/70">/{item.pronunciation}/</div>
+                <div className="text-2xl font-bold text-primary">{item.target}</div>
+                <div className="text-muted-foreground">{item.native_meaning}</div>
+                <div className="text-sm text-blue-400">/{item.phonetic}/</div>
+                {item.example_sentence_target && (
+                  <div className="text-sm text-muted-foreground mt-2 italic">"{item.example_sentence_target}"</div>
+                )}
+                {item.example_sentence_native && (
+                  <div className="text-xs text-muted-foreground/70">"{item.example_sentence_native}"</div>
                 )}
               </div>
             ))}
