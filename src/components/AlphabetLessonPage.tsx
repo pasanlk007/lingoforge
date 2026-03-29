@@ -149,7 +149,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
                           <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                       </Alert>
                   ) : (
-                      <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
+                      <Button size="lg" onClick={handleCompleteDay} disabled={false}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}
