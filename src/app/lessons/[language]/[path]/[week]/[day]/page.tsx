@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
-import { doc } from 'firebase/firestore';
+import { doc, type DocumentData, type DocumentReference } from 'firebase/firestore';
 import type { LanguageLesson, LearningPath, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -222,7 +222,7 @@ export default function LessonPage() {
          <div className="flex min-h-dvh flex-col bg-background">
           <Navigation />
           <main className="flex-1">
-            <AlphabetLessonPage dayData={dayData} targetLanguage={language as string} userProfile={userProfile} />
+            <AlphabetLessonPage dayData={dayData} targetLanguage={language as string} userProfile={userProfile} userProfileRef={userProfileRef} />
           </main>
         </div>
       )
@@ -232,7 +232,7 @@ export default function LessonPage() {
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <LessonClientPage lesson={lesson} currentDay={dayNumber} userProfile={userProfile} />
+        <LessonClientPage lesson={lesson} currentDay={dayNumber} userProfile={userProfile} userProfileRef={userProfileRef} />
       </main>
     </div>
   );

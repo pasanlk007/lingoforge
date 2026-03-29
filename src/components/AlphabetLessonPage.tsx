@@ -2,8 +2,8 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle } from 'lucide-react';
-import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from '@/firebase';
-import { doc, arrayUnion } from 'firebase/firestore';
+import { updateDocumentNonBlocking } from '@/firebase';
+import { arrayUnion, type DocumentData, type DocumentReference } from 'firebase/firestore';
 import type { LessonDay, UserProfile } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -11,7 +11,6 @@ import { WordCard } from '@/components/WordCard';
 import { StreakCounter } from '@/components/StreakCounter';
 import Confetti from 'react-dom-confetti';
 import { translations, targetLanguages } from '@/lib/translations';
-import { differenceInCalendarDays } from 'date-fns';
 import { WritingPractice } from './WritingPractice';
 import { AudioPlayback } from './AudioPlayback';
 import { Alert, AlertTitle } from './ui/alert';
@@ -22,6 +21,7 @@ interface AlphabetLessonPageProps {
   dayData: LessonDay;
   targetLanguage: string;
   userProfile: UserProfile | null;
+  userProfileRef: DocumentReference<DocumentData> | null;
 }
 
 const confettiConfig = {
@@ -30,19 +30,11 @@ const confettiConfig = {
   colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
 };
 
-export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: AlphabetLessonPageProps) {
+export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userProfileRef }: AlphabetLessonPageProps) {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
 
-  const { user } = useUser();
-  const firestore = useFirestore();
-
-  const userProfileRef = useMemoFirebase(() => {
-    if (!user || !firestore) return null;
-    return doc(firestore, 'userProfiles', user.uid);
-  }, [user, firestore]);
-  
   const dayKey = useMemo(() => `${dayData.week}-${dayData.day}`, [dayData]);
 
   const isDayCompleted = useMemo(() => {
@@ -66,8 +58,8 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const handleCompleteDay = () => {
-    if (!userProfileRef || !dayData) return;
-    
+    if (isComplete || !userProfileRef || !dayData) return;
+
     setIsComplete(true);
     
     const langKey = targetLanguage.toLowerCase();

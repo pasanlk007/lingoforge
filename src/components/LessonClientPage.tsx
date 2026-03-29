@@ -4,8 +4,8 @@ import VoiceInit from "@/components/VoiceInit";
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
-import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from '@/firebase';
-import { doc, arrayUnion } from 'firebase/firestore';
+import { updateDocumentNonBlocking } from '@/firebase';
+import { arrayUnion, type DocumentData, type DocumentReference } from 'firebase/firestore';
 import type { LanguageLesson, LessonDay, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
@@ -20,12 +20,12 @@ import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
 import { translations, targetLanguages } from '@/lib/translations';
 import { TooltipProvider } from './ui/tooltip';
-import { differenceInCalendarDays } from 'date-fns';
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;
     currentDay: number;
     userProfile: UserProfile | null;
+    userProfileRef: DocumentReference<DocumentData> | null;
 }
 
 const confettiConfig = {
@@ -34,27 +34,19 @@ const confettiConfig = {
   colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
 };
 
-export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClientPageProps) {
+export function LessonClientPage({ lesson, currentDay, userProfile, userProfileRef }: LessonClientPageProps) {
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [isComplete, setIsComplete] = useState(false);
 
-    const { user } = useUser();
-    const firestore = useFirestore();
-
     const dayData: LessonDay | undefined = lesson?.days?.[0];
-
-    const userProfileRef = useMemoFirebase(() => {
-        if (!user || !firestore) return null;
-        return doc(firestore, 'userProfiles', user.uid);
-    }, [user, firestore]);
 
     const dayKey = useMemo(() => dayData ? `${dayData.week}-${currentDay}` : '', [dayData, currentDay]);
     
     const isDayCompleted = useMemo(() => {
         if (!userProfile || !dayData) return false;
-        const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || '' : '').toLowerCase();
+        const langKey = (localStorage.getItem('targetLanguage') || '').toLowerCase();
         const pathKey = dayData.path;
         return userProfile.languageProgress?.[langKey]?.[pathKey]?.completedDays?.includes(dayKey) || false;
     }, [userProfile, dayData, dayKey]);
@@ -121,11 +113,11 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
     };
     
     const handleCompleteDay = () => {
-        if (!userProfileRef || !dayData) return;
+        if (isComplete || !userProfileRef || !dayData) return;
 
         setIsComplete(true);
 
-        const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || 'french' : 'french').toLowerCase();
+        const langKey = (localStorage.getItem('targetLanguage') || 'french').toLowerCase();
         const pathKey = dayData.path;
         const dayKeyToSave = `${dayData.week}-${currentDay}`;
 
