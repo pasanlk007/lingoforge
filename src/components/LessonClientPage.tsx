@@ -26,6 +26,7 @@ import { differenceInCalendarDays } from 'date-fns';
 interface LessonClientPageProps {
     lesson: LanguageLesson;
     currentDay: number;
+    userProfile: UserProfile | null;
 }
 
 const confettiConfig = {
@@ -34,7 +35,7 @@ const confettiConfig = {
   colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
 };
 
-export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) {
+export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClientPageProps) {
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -50,7 +51,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         if (!user || !firestore) return null;
         return doc(firestore, 'userProfiles', user.uid);
     }, [user, firestore]);
-    const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
     const weekProgressRef = useMemoFirebase(() => {
         if (!user || !firestore || !dayData) return null;

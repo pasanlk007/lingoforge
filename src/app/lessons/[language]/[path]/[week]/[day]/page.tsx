@@ -222,7 +222,7 @@ export default function LessonPage() {
          <div className="flex min-h-dvh flex-col bg-background">
           <Navigation />
           <main className="flex-1">
-            <AlphabetLessonPage dayData={dayData} targetLanguage={language as string} />
+            <AlphabetLessonPage dayData={dayData} targetLanguage={language as string} userProfile={userProfile} />
           </main>
         </div>
       )
@@ -232,7 +232,7 @@ export default function LessonPage() {
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <LessonClientPage lesson={lesson} currentDay={dayNumber} />
+        <LessonClientPage lesson={lesson} currentDay={dayNumber} userProfile={userProfile} />
       </main>
     </div>
   );

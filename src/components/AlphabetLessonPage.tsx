@@ -22,6 +22,7 @@ import { cn } from '@/lib/utils';
 interface AlphabetLessonPageProps {
   dayData: LessonDay;
   targetLanguage: string;
+  userProfile: UserProfile | null;
 }
 
 const confettiConfig = {
@@ -30,7 +31,7 @@ const confettiConfig = {
   colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"]
 };
 
-export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPageProps) {
+export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: AlphabetLessonPageProps) {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [isMounted, setIsMounted] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
@@ -42,7 +43,6 @@ export function AlphabetLessonPage({ dayData, targetLanguage }: AlphabetLessonPa
     if (!user || !firestore) return null;
     return doc(firestore, 'userProfiles', user.uid);
   }, [user, firestore]);
-  const { data: userProfile } = useDoc<UserProfile>(userProfileRef);
 
   const weekProgressRef = useMemoFirebase(() => {
     if (!user || !firestore || !dayData) return null;
