@@ -150,14 +150,11 @@ function DashboardContent({ user }: { user: User }) {
             lastLessonWeek: 1,
             lastLessonDay: 0,
         };
-        // Using a blocking write here is intentional. It ensures the profile exists
-        // before any other logic on the dashboard tries to access it. The `useDoc`
-        // hook will then pick up this new document and trigger a re-render,
-        // correctly populating the dashboard.
-        await setDoc(userProfileRef, newUserProfile, { merge: true });
+        // Using a non-blocking write here for a better UX. The hook will pick up the new doc.
+        setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
       };
 
-      createUserProfile().catch(console.error);
+      createUserProfile();
     }
   }, [isMounted, isProfileLoading, userProfile, user, userProfileRef, firestore]);
 
@@ -277,7 +274,8 @@ function DashboardContent({ user }: { user: User }) {
   
   const nextDay = lastDay < 7 ? lastDay + 1 : 1;
   const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
-  const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/${(activePath || 'survival').toLowerCase()}/${nextWeek}/${nextDay}`;
+  // This button now ALWAYS points to the survival path, as requested.
+  const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/survival/${nextWeek}/${nextDay}`;
 
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
@@ -419,7 +417,7 @@ function DashboardContent({ user }: { user: User }) {
                 <CardHeader>
                   <CardTitle>{t.continueJourney}</CardTitle>
                   <CardDescription>
-                    {t.continueDesc.replace('{path}', activePath || 'Survival').replace('{language}', targetLanguage)}
+                    {t.continueDesc.replace('{path}', 'Survival').replace('{language}', targetLanguage)}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
