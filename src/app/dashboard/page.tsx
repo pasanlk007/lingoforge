@@ -135,7 +135,7 @@ function DashboardContent({ user }: { user: User }) {
             id: user.uid,
             displayName: user.displayName || 'New User',
             email: user.email!,
-            photoURL: user.photoURL || undefined,
+            photoURL: user.photoURL || null,
             nativeLanguage: localStorage.getItem('nativeLanguage') || 'English',
             selectedLanguage: localStorage.getItem('targetLanguage') || 'French',
             createdAt: now.toISOString(),
