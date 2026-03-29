@@ -69,6 +69,19 @@
           "type": "number",
           "description": "The day number of the user's last completed lesson."
         },
+        "progressByLanguage": {
+            "type": "object",
+            "description": "Stores language-specific learning progress.",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "activePath": { "type": "string" },
+                    "lastLessonWeek": { "type": "number" },
+                    "lastLessonDay": { "type": "number" }
+                },
+                "required": ["activePath", "lastLessonWeek", "lastLessonDay"]
+            }
+        },
         "paymentProviderCustomerId": {
             "type": "string",
             "description": "The customer ID from the payment provider (e.g., Stripe, Google Play)."

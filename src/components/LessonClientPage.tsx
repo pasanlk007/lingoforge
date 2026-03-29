@@ -39,7 +39,6 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
-    const [exercisesCorrect, setExercisesCorrect] = useState(0);
     const [isComplete, setIsComplete] = useState(false);
 
     const { user } = useUser();
@@ -73,12 +72,6 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
       }
     }, [isDayCompleted]);
 
-    const handleExercisesComplete = useCallback((isCorrect: boolean) => {
-      if (isCorrect) {
-        setExercisesCorrect(prev => prev + 1);
-      }
-    }, []);
-
     const t = (isMounted && translations[nativeLanguage]?.ui)
       ? translations[nativeLanguage].ui
       : translations.English.ui;
@@ -103,7 +96,6 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
         </div>
       );
     }
-
     
     const { words, dialogues, exercises, cultural_note, pronunciation_tip, progress } = dayData;
 
@@ -145,7 +137,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
         };
         setDocumentNonBlocking(weekProgressRef, weekData, { merge: true });
 
-        // 2. Update user profile (XP and Streak)
+        // 2. Update user profile (XP, Streak, and language-specific progress)
         const xpToAdd = (progress?.xp || 0) + (progress?.streak_bonus || 0);
         const newXp = (userProfile.xpPoints || 0) + xpToAdd;
         
@@ -164,9 +156,15 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
             newStreak = 1;
         }
 
-        // Build completedDays key for access control
-        const lessonLanguage = (typeof window !== 'undefined' && localStorage.getItem('targetLanguage')) || '';
-        const dayKey = `${lessonLanguage.toLowerCase()}_${dayData.path}_${dayData.week}_${currentDay}`;
+        const langKey = dayData.targetLanguage.toLowerCase();
+        const progressKey = `progressByLanguage.${langKey}`;
+        const langProgress = {
+            activePath: dayData.path,
+            lastLessonWeek: dayData.week,
+            lastLessonDay: currentDay,
+        };
+
+        const dayKey = `${lesson.language.toLowerCase()}_${dayData.path}_${dayData.week}_${currentDay}`;
         const existingCompletedDays = userProfile.completedDays || [];
         const newCompletedDaysProfile = [...new Set([...existingCompletedDays, dayKey])];
 
@@ -174,9 +172,12 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
             xpPoints: newXp,
             currentStreak: newStreak,
             lastActiveDate: today.toISOString().split('T')[0],
+            // Update global fields for immediate UI feedback
             activePath: dayData.path,
             lastLessonWeek: dayData.week,
             lastLessonDay: currentDay,
+            // Update the language-specific progress map
+            [progressKey]: langProgress,
             completedDays: newCompletedDaysProfile,
         });
     };
@@ -245,11 +246,11 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
                     )}
 
                     {hasExercises && exercises && (
-                        <ExercisePanel exercises={exercises} onExercisesComplete={handleExercisesComplete} t={t} />
+                        <ExercisePanel exercises={exercises} onExercisesComplete={() => {}} t={t} />
                     )}
 
                     {hasSentenceScramble && exercises?.sentenceScramble && (
-                        <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={handleExercisesComplete} t={t} />
+                        <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={() => {}} t={t} />
                     )}
                     
                     {(hasPronunciationTip || hasCulturalNote) && (
@@ -300,7 +301,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
                                     </div>
                                 </div>
                             ) : (
-                                 <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile || isDayCompleted}>
+                                 <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> {t.completeDay.replace('{xp}', progress?.xp.toString() ?? '0')}
                                  </Button>
                             )}

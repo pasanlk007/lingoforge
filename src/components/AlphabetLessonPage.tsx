@@ -88,24 +88,31 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
         newStreak = 1;
     }
 
-    // Update User Profile
+    const langKey = dayData.targetLanguage.toLowerCase();
+    const progressKey = `progressByLanguage.${langKey}`;
+    const langProgress = {
+        activePath: dayData.path,
+        lastLessonWeek: dayData.week,
+        lastLessonDay: dayData.day,
+    };
+
     updateDocumentNonBlocking(userProfileRef, {
       xpPoints: newXp,
       currentStreak: newStreak,
       lastActiveDate: today.toISOString().split('T')[0],
       activePath: dayData.path,
       lastLessonWeek: dayData.week,
-      lastLessonDay: dayData.day
+      lastLessonDay: dayData.day,
+      [progressKey]: langProgress,
     });
 
-    // Update Week Progress
     const currentCompletedDays = weekProgressData?.daysCompleted || [];
     const newCompletedDays = [...new Set([...currentCompletedDays, dayData.day])];
     const weekData: Partial<UserWeekProgress> = {
       daysCompleted: newCompletedDays,
       path: dayData.path,
       week: dayData.week,
-      weekCompleted: newCompletedDays.length === 7, // This might need adjustment for alphabet path
+      weekCompleted: newCompletedDays.length === 7,
     };
     setDocumentNonBlocking(weekProgressRef, weekData, { merge: true });
   }
@@ -128,7 +135,10 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
               <Link href={`/${dayData.path}`}><ArrowLeft className="mr-2 h-4 w-4" /> {t.backToDashboard}</Link>
             </Button>
             <div className="text-center">
-              <h1 className="font-bold text-lg">{dayData.title}</h1>
+              <h1 className="font-bold text-lg flex items-center gap-2">
+                {dayData.title}
+                {isComplete && <CheckCircle className="h-5 w-5 text-green-500" />}
+              </h1>
               <p className="text-sm text-muted-foreground">{dayData.theme}</p>
             </div>
             <div className="flex items-center gap-2">
@@ -187,7 +197,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
                           <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                       </Alert>
                   ) : (
-                      <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile || isDayCompleted}>
+                      <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}

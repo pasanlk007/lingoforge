@@ -127,7 +127,6 @@ function DashboardContent({ user }: { user: User }) {
   const [targetLanguage, setTargetLanguage] = useState('French');
 
   useEffect(() => {
-    // This effect handles the case where a user is authenticated but has no profile document.
     if (isMounted && !isProfileLoading && !userProfile && user && userProfileRef && firestore) {
       const createUserProfile = async () => {
         const now = new Date();
@@ -150,54 +149,64 @@ function DashboardContent({ user }: { user: User }) {
             lastLessonWeek: 1,
             lastLessonDay: 0,
         };
-        // Using a non-blocking write here for a better UX. The hook will pick up the new doc.
         setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
       };
-
       createUserProfile();
     }
   }, [isMounted, isProfileLoading, userProfile, user, userProfileRef, firestore]);
 
   useEffect(() => {
     setIsMounted(true);
-
-    // When the user profile loads, it becomes the source of truth
     if (userProfile) {
         let initialNative = userProfile.nativeLanguage || 'English';
         let initialTarget = userProfile.selectedLanguage || 'French';
-
-        // Ensure language combinations are valid
-        if (!nativeLanguages.includes(initialNative)) {
-            initialNative = 'English';
-        }
-        if (initialNative === 'English' && initialTarget === 'English') {
-            initialTarget = 'French'; // Prevent learning English in English
-        }
-
-        // Set component state
+        if (!nativeLanguages.includes(initialNative)) initialNative = 'English';
+        if (initialNative === 'English' && initialTarget === 'English') initialTarget = 'French';
+        
         setNativeLanguage(initialNative);
         setTargetLanguage(initialTarget);
-
-        // Sync to localStorage
         localStorage.setItem("nativeLanguage", initialNative);
         localStorage.setItem("targetLanguage", initialTarget);
     }
   }, [userProfile]);
+  
+  useEffect(() => {
+    if (userProfileRef && userProfile && targetLanguage) {
+      const langProgress = userProfile.progressByLanguage?.[targetLanguage.toLowerCase()];
+      const currentGlobalPath = userProfile.activePath;
+      const currentGlobalWeek = userProfile.lastLessonWeek;
+      const currentGlobalDay = userProfile.lastLessonDay;
+  
+      if (langProgress) {
+        if (langProgress.lastLessonWeek !== currentGlobalWeek || langProgress.lastLessonDay !== currentGlobalDay) {
+          updateDocumentNonBlocking(userProfileRef, {
+            lastLessonWeek: langProgress.lastLessonWeek,
+            lastLessonDay: langProgress.lastLessonDay,
+            activePath: langProgress.activePath,
+          });
+        }
+      } else {
+        if (currentGlobalWeek !== 1 || currentGlobalDay !== 0) {
+          updateDocumentNonBlocking(userProfileRef, {
+            lastLessonWeek: 1,
+            lastLessonDay: 0,
+            activePath: 'survival',
+          });
+        }
+      }
+    }
+  }, [targetLanguage, userProfile, userProfileRef]);
 
   useEffect(() => {
     if (userProfileRef && userProfile && userProfile.currentStreak > 0) {
       const today = new Date();
-      // Ensure lastActiveDate is a valid date string before creating a Date object
       const lastActive = userProfile.lastActiveDate ? new Date(userProfile.lastActiveDate) : new Date();
       const daysSinceLastActive = differenceInCalendarDays(today, lastActive);
-
-      // If it's been more than 1 day since the last activity, the streak is broken.
       if (daysSinceLastActive > 1) {
         updateDocumentNonBlocking(userProfileRef, { currentStreak: 0 });
       }
     }
   }, [userProfile, userProfileRef]);
-
 
   const handleTargetLanguageChange = (newLang: string) => {
     setTargetLanguage(newLang);
@@ -210,7 +219,6 @@ function DashboardContent({ user }: { user: User }) {
   const handleNativeLanguageChange = (newLang: string) => {
     setNativeLanguage(newLang);
     localStorage.setItem("nativeLanguage", newLang);
-
     if (newLang === 'English' && targetLanguage === 'English') {
       handleTargetLanguageChange('French');
     } else {
@@ -274,7 +282,6 @@ function DashboardContent({ user }: { user: User }) {
   
   const nextDay = lastDay < 7 ? lastDay + 1 : 1;
   const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
-  // This button now ALWAYS points to the survival path, as requested.
   const nextLessonUrl = `/lessons/${(targetLanguage).toLowerCase()}/survival/${nextWeek}/${nextDay}`;
 
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
@@ -562,5 +569,3 @@ export default function DashboardPage() {
 
   return <DashboardContent user={user} />;
 }
-
-    

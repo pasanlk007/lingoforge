@@ -145,9 +145,21 @@ export interface UserProfile {
   lastActiveDate: string; // ISO 8601 date string
   aiPlanningEnabled: boolean;
   photoURL?: string;
+  
+  // Legacy global progress fields (still updated for immediate UI, but source of truth is below)
   activePath: 'survival' | 'alphabet' | 'numbers';
   lastLessonWeek: number;
   lastLessonDay: number;
+  
+  // New language-specific progress tracking
+  progressByLanguage?: {
+    [language: string]: {
+      activePath: 'survival' | 'alphabet' | 'numbers';
+      lastLessonWeek: number;
+      lastLessonDay: number;
+    }
+  };
+
   completedDays?: string[];
   paymentProviderCustomerId?: string;
   paymentProviderSubscriptionId?: string;
