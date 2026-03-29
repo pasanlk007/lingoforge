@@ -66,34 +66,8 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const handleCompleteDay = () => {
-    if (!userProfileRef || !userProfile) return;
-
     setIsComplete(true);
-
-    const langKey = targetLanguage.toLowerCase();
-    const pathKey = dayData.path;
-
-    let newStreak = userProfile.currentStreak || 0;
-    const today = new Date();
-    const lastActiveDate = new Date(userProfile.lastActiveDate);
-    const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
-
-    if (daysSinceLastActive > 0) {
-        newStreak = daysSinceLastActive === 1 ? newStreak + 1 : 1;
-    } else if (newStreak === 0) {
-        newStreak = 1;
-    }
-
-    const progressUpdate: { [key: string]: any } = {
-        [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
-        [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
-        [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
-        currentStreak: newStreak,
-        lastActiveDate: today.toISOString().split('T')[0],
-    };
-
-    updateDocumentNonBlocking(userProfileRef, progressUpdate);
-  }
+  };
   
   if (!dayData || !isMounted) {
     return null;
