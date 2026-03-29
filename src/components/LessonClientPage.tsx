@@ -121,33 +121,29 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
     };
     
     const handleCompleteDay = () => {
-        if (!userProfileRef || !userProfile || isDayCompleted) return;
-
+        if (!userProfileRef || !userProfile) return;
         setIsComplete(true);
-        
-        const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || '' : '').toLowerCase();
+    const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || '' : '').toLowerCase();
         const pathKey = dayData.path;
-
-        let newStreak = userProfile.currentStreak || 0;
-        const today = new Date();
-        const lastActiveDate = new Date(userProfile.lastActiveDate);
-        const daysSinceLastActive = differenceInCalendarDays(today, lastActiveDate);
-
-        if (daysSinceLastActive > 0) {
-            newStreak = daysSinceLastActive === 1 ? newStreak + 1 : 1;
-        } else if (newStreak === 0) {
-            newStreak = 1;
-        }
-        
-        const progressUpdate: { [key: string]: any } = {
+        const dayKey = `${dayData.week}-${currentDay}`;
+        const weekKey = `week_${dayData.week}`;
+        // Save to weekProgress
+        const currentCompletedDays = weekProgressData?.daysCompleted || [];
+        const newCompletedDays = [...new Set([...currentCompletedDays, currentDay])];
+        setDocumentNonBlocking(weekProgressRef, {
+            daysCompleted: newCompletedDays,
+            path: dayData.path,
+            week: dayData.week,
+            weekCompleted: newCompletedDays.length === 7,
+        }, { merge: true });
+        // Save to userProfile completedDays
+        updateDocumentNonBlocking(userProfileRef, {
             [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
             [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
             [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-            currentStreak: newStreak,
-            lastActiveDate: today.toISOString().split('T')[0],
-        };
-
-        updateDocumentNonBlocking(userProfileRef, progressUpdate);
+            lastLessonWeek: dayData.week,
+            lastLessonDay: currentDay,
+        });
     };
     
     const weekProgress = (currentDay / 7) * 100;
