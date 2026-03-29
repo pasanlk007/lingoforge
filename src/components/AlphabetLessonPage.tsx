@@ -105,6 +105,14 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
             ))}
           </div>
 
+          {/* Cultural note */}
+          {dayData.cultural_note && (
+            <div className="mt-4 p-4 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
+              <div className="text-sm font-semibold text-yellow-400 mb-1">💡 Cultural Note</div>
+              <div className="text-sm text-muted-foreground">{dayData.cultural_note}</div>
+            </div>
+          )}
+
           {!isComplete ? (
             <Button 
               size="lg" 
