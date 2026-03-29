@@ -68,7 +68,9 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         setNativeLanguage(savedNativeLang);
       }
       setIsMounted(true);
-      setIsComplete(isDayCompleted);
+      if (isDayCompleted) {
+        setIsComplete(true);
+      }
     }, [isDayCompleted]);
 
     const handleExercisesComplete = useCallback((isCorrect: boolean) => {
@@ -179,10 +181,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
         });
     };
     
-    const totalExercises = (exercises?.fillBlanks?.length ?? 0) + (exercises?.matching?.length ?? 0) + (exercises?.sentenceScramble?.length ?? 0);
-    const exerciseProgress = totalExercises > 0 ? Math.min((exercisesCorrect / totalExercises) * 100, 100) : 100; // default to 100 if no exercises
-    const canCompleteDay = exerciseProgress >= 50;
-
     const weekProgress = (currentDay / 7) * 100;
     const streakCount = userProfile?.currentStreak || 0;
     
@@ -220,11 +218,6 @@ export function LessonClientPage({ lesson, currentDay }: LessonClientPageProps) 
                             <span className="text-xs font-semibold">{t.weekProgress}</span>
                             <ProgressBar value={weekProgress} />
                             <span className="text-sm font-semibold text-muted-foreground">{currentDay}/7</span>
-                        </div>
-                         <div className="flex items-center gap-2">
-                            <span className="text-xs font-semibold">{t.dayProgress}</span>
-                            <ProgressBar value={exerciseProgress} />
-                            <span className="text-sm font-semibold text-muted-foreground">{Math.floor(exerciseProgress)}%</span>
                         </div>
                     </div>
                 </header>
