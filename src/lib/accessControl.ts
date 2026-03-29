@@ -59,14 +59,31 @@ export function canAccessLesson(
 
     if (!hasValidSub) return { allowed: false, reason: 'upgrade' };
 
-    // For weekly and course plans, check if the language matches
-    if (plan === 'weekly' || plan === 'course') {
+    // Course plan unlocks the whole path for the purchased language
+    if (plan === 'course') {
+      if (language && profile.subscriptionLanguage &&
+          language.toLowerCase() === profile.subscriptionLanguage.toLowerCase()) {
+        return { allowed: true };
+      }
+      return { allowed: false, reason: 'wrong_language' };
+    }
+    
+    // Weekly plan unlocks the next week based on progress + bonus weeks
+    if (plan === 'weekly') {
       if (language && profile.subscriptionLanguage &&
           language.toLowerCase() !== profile.subscriptionLanguage.toLowerCase()) {
         return { allowed: false, reason: 'wrong_language' };
       }
-      // If language matches, grant access to all survival weeks
-      return { allowed: true };
+      
+      // A weekly subscriber can access the week they are on, plus one more, plus any bonus weeks.
+      const lastWeek = profile.lastLessonWeek || 1;
+      const bonusWeeks = profile.bonusWeeks || 0;
+      if (week <= lastWeek + 1 + bonusWeeks) {
+          return { allowed: true };
+      }
+      
+      // If the week is beyond their unlocked progress, deny access.
+      return { allowed: false, reason: 'upgrade' };
     }
     
     // Lifetime - full access
