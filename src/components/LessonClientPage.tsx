@@ -114,6 +114,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
     
     const handleCompleteDay = () => {
         console.log("COMPLETE CLICKED", {user: !!user, firestore: !!firestore, dayData: !!dayData, userProfileRef: !!userProfileRef, userProfile: !!userProfile, isComplete});
+        console.log("COMPLETE CLICKED", {user: !!user, firestore: !!firestore, dayData: !!dayData, userProfileRef: !!userProfileRef, userProfile: !!userProfile, isComplete});
         if (!userProfileRef || !dayData) return;
 
         setIsComplete(true);
