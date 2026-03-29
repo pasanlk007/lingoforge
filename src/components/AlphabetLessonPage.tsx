@@ -68,6 +68,8 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
 
     updateDocumentNonBlocking(userProfileRef, {
         [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
+        [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+        [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
     });
   };
   

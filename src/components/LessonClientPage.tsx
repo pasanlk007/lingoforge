@@ -46,10 +46,10 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
     
     const isDayCompleted = useMemo(() => {
         if (!userProfile || !dayData) return false;
-        const langKey = (localStorage.getItem('targetLanguage') || '').toLowerCase();
+        const langKey = lesson.language.toLowerCase();
         const pathKey = dayData.path;
         return userProfile.languageProgress?.[langKey]?.[pathKey]?.completedDays?.includes(dayKey) || false;
-    }, [userProfile, dayData, dayKey]);
+    }, [userProfile, dayData, dayKey, lesson.language]);
 
 
     useEffect(() => {
@@ -113,16 +113,18 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
     };
     
     const handleCompleteDay = () => {
-        if (isComplete || !userProfileRef || !dayData) return;
+        if (!userProfileRef || !dayData) return;
 
         setIsComplete(true);
 
-        const langKey = (localStorage.getItem('targetLanguage') || 'french').toLowerCase();
+        const langKey = lesson.language.toLowerCase();
         const pathKey = dayData.path;
         const dayKeyToSave = `${dayData.week}-${currentDay}`;
 
         updateDocumentNonBlocking(userProfileRef, {
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
+          [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+          [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
         });
     };
     
