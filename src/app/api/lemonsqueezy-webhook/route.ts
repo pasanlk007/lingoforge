@@ -132,8 +132,10 @@ export async function POST(req: Request) {
     const userEmail = payload.data?.attributes?.user_email;
     const testMode = payload.meta?.test_mode || payload.data?.attributes?.test_mode;
 
-    // Test mode allowed for testing
-    // if (testMode) { return new NextResponse('OK', { status: 200 }); }
+    if (testMode) {
+      console.log('Test mode skipped');
+      return new NextResponse('OK', { status: 200 });
+    }
 
     if (!userEmail) return new NextResponse('OK', { status: 200 });
 
