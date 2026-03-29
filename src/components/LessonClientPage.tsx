@@ -243,7 +243,7 @@ if (!userProfileRef || !dayData) return;
                                     </div>
                                 </div>
                             ) : (
-                                 <Button size="lg" onClick={handleCompleteDay}>
+                                 <Button size="lg" onClick={handleCompleteDay} onTouchEnd={(e) => { e.preventDefault(); handleCompleteDay(); }}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> Complete Day
                                  </Button>
                             )}
