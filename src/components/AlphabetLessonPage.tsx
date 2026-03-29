@@ -66,7 +66,17 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
 
   const handleCompleteDay = () => {
+    if (!userProfileRef || !dayData) return;
+    
     setIsComplete(true);
+    
+    const langKey = targetLanguage.toLowerCase();
+    const pathKey = dayData.path;
+    const dayKeyToSave = `${dayData.week}-${dayData.day}`;
+
+    updateDocumentNonBlocking(userProfileRef, {
+        [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
+    });
   };
   
   if (!dayData || !isMounted) {
@@ -149,7 +159,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile }: Alp
                           <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                       </Alert>
                   ) : (
-                      <Button size="lg" onClick={handleCompleteDay} disabled={false}>
+                      <Button size="lg" onClick={handleCompleteDay}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}

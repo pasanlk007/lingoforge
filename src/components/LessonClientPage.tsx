@@ -121,28 +121,16 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
     };
     
     const handleCompleteDay = () => {
-        if (!userProfileRef || !userProfile) return;
+        if (!userProfileRef || !dayData) return;
+
         setIsComplete(true);
-    const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || '' : '').toLowerCase();
+
+        const langKey = (typeof window !== 'undefined' ? localStorage.getItem('targetLanguage') || 'french' : 'french').toLowerCase();
         const pathKey = dayData.path;
-        const dayKey = `${dayData.week}-${currentDay}`;
-        const weekKey = `week_${dayData.week}`;
-        // Save to weekProgress
-        const currentCompletedDays = weekProgressData?.daysCompleted || [];
-        const newCompletedDays = [...new Set([...currentCompletedDays, currentDay])];
-        setDocumentNonBlocking(weekProgressRef, {
-            daysCompleted: newCompletedDays,
-            path: dayData.path,
-            week: dayData.week,
-            weekCompleted: newCompletedDays.length === 7,
-        }, { merge: true });
-        // Save to userProfile completedDays
+        const dayKeyToSave = `${dayData.week}-${currentDay}`;
+
         updateDocumentNonBlocking(userProfileRef, {
-            [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKey),
-            [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
-            [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-            lastLessonWeek: dayData.week,
-            lastLessonDay: currentDay,
+          [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
         });
     };
     
@@ -260,7 +248,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile }: LessonClie
                                     </div>
                                 </div>
                             ) : (
-                                 <Button size="lg" onClick={handleCompleteDay} disabled={!userProfile}>
+                                 <Button size="lg" onClick={handleCompleteDay}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> Complete Day
                                  </Button>
                             )}
