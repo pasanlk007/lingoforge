@@ -131,7 +131,9 @@ export default function SurvivalPathPage() {
               });
               const hasAccess = accessResult.allowed;
               
-              const isLocked = weekIsEnabled && !hasAccess;
+              const prevWeekDays = completedDays[week - 1] || [];
+              const isPrevWeekComplete = week === 1 || prevWeekDays.length >= 7;
+              const isLocked = weekIsEnabled && (!hasAccess || !isPrevWeekComplete);
               const isComingSoon = !weekIsEnabled;
 
               return (
