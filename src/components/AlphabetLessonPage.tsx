@@ -153,7 +153,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
                           <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
                       </Alert>
                   ) : (
-                      <Button size="lg" onClick={handleCompleteDay} onTouchEnd={(e) => { e.preventDefault(); handleCompleteDay(); }} onTouchEnd={(e) => { e.preventDefault(); handleCompleteDay(); }}>
+                      <Button size="lg" onPointerUp={handleCompleteDay} onTouchEnd={(e) => { e.preventDefault(); handleCompleteDay(); }}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}
