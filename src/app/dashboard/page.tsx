@@ -215,19 +215,15 @@ function DashboardContent({ user }: { user: User }) {
 
   const toTitleCase = (str: string) => str.toLowerCase().replace(/\b\w/g, s => s.toUpperCase());
 
-  if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading) {
-      return <DashboardLoading />;
-  }
-  
+  // All logic and derived state is now calculated before any conditional returns
   const {
     displayName,
     currentStreak,
     xpPoints,
-  } = userProfile;
+  } = userProfile || {};
   
-  // New language-specific progress logic
   const langKey = targetLanguage.toLowerCase();
-  const survivalProgress = userProfile.languageProgress?.[langKey]?.['survival'];
+  const survivalProgress = userProfile?.languageProgress?.[langKey]?.['survival'];
 
   const lastWeek = survivalProgress?.lastWeek || 1;
   const lastDay = survivalProgress?.lastDay || 0;
@@ -237,7 +233,7 @@ function DashboardContent({ user }: { user: User }) {
   const nextLessonUrl = `/lessons/${langKey}/survival/${nextWeek}/${nextDay}`;
 
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
-  const xpToNextLevel = 1500 - (xpPoints % 1500);
+  const xpToNextLevel = 1500 - ((xpPoints || 0) % 1500);
 
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
@@ -252,20 +248,26 @@ function DashboardContent({ user }: { user: User }) {
     return completedDays.filter(d => d.startsWith(weekPrefix)).map(d => parseInt(d.split('-')[1]));
   }, [survivalProgress, lastWeek]);
 
-  const weeklyProgressBools = Array.from({ length: 7 }, (_, i) => completedDaysForWeek.includes(i + 1));
-
-  const availablePaths = ['Chinese', 'Tamil'].includes(targetLanguage)
-    ? PATHS.filter(p => p.id !== 'alphabet')
-    : PATHS;
-
-  const hasAccessToNextWeek = canAccessLesson({
+  const weeklyProgressBools = useMemo(() => {
+    return Array.from({ length: 7 }, (_, i) => completedDaysForWeek.includes(i + 1));
+  }, [completedDaysForWeek]);
+  
+  const hasAccessToNextWeek = useMemo(() => canAccessLesson({
     path: 'survival',
     week: nextWeek,
     day: 1,
     language: targetLanguage,
     userEmail: user?.email,
     profile: userProfile,
-  }).allowed;
+  }).allowed, [nextWeek, targetLanguage, user, userProfile]);
+
+  if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading) {
+      return <DashboardLoading />;
+  }
+  
+  const availablePaths = ['Chinese', 'Tamil'].includes(targetLanguage)
+    ? PATHS.filter(p => p.id !== 'alphabet')
+    : PATHS;
 
   const proPathItems = [
     { icon: "🛂", title: "Citizenship Prep", desc: "Application guidance" },
