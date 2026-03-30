@@ -54,6 +54,14 @@ export default function LandingPage() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const [showLangGuide, setShowLangGuide] = useState(false);
+  const [isFbBrowser, setIsFbBrowser] = useState(false);
+
+  useEffect(() => {
+    const ua = navigator.userAgent || '';
+    if (ua.includes('FBAN') || ua.includes('FBAV') || ua.includes('Instagram')) {
+      setIsFbBrowser(true);
+    }
+  }, []);
   const router = useRouter();
 
   useEffect(() => {
