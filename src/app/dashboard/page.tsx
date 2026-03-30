@@ -72,8 +72,8 @@ const SI_TRANSLATIONS = {
   'streak': 'දිනපෙළ',
   'days': 'දින',
   'week': 'සතිය',
-  'I speak': 'ඔබේ භාශාව',
-  'I am learning': 'ඉලක්කගත භාශාව තෝරන්න',
+  'I speak': 'ඔබේ භාෂාව',
+  'I am learning': 'ඉලක්කගත භාෂාව තෝරන්න',
 };
 
 function DashboardLoading() {
