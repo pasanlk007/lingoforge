@@ -128,6 +128,11 @@ function DashboardContent({ user }: { user: User }) {
 
   useEffect(() => {
     setIsMounted(true);
+    const ua = navigator.userAgent || "";
+    if (ua.includes("FBAN") || ua.includes("FBAV") || ua.includes("Instagram")) {
+      window.location.href = "https://lingoforge.app/dashboard";
+      return;
+    }
     if (!isProfileLoading && !userProfile && user && userProfileRef && firestore) {
       const createUserProfile = async () => {
         const now = new Date();
