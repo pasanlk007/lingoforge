@@ -5,6 +5,11 @@ import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
 export const metadata = {
   title: "LingoForge",
   description: "Survive. Speak. Belong. - Language learning for migrant workers",
+  icons: {
+    icon: '/icons/icon-192x192.svg',
+    apple: '/icons/icon-192x192.svg',
+    shortcut: '/icons/icon-192x192.svg',
+  },
 };
 
 export default function RootLayout({
