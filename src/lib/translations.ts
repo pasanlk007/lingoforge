@@ -234,7 +234,7 @@ export const translations = {
     languagesAvailable: "භාෂා ඇත",
     heroTitle: "විදෙස්ගත ශ්‍රමිකයන්ගේ භාෂා කුසලතා වර්ධනය",
     heroSub: "විදෙස්ගත ශ්‍රමිකයන් සඳහා ව්‍යුහගත භාෂා ඉගැන්වීම් සැකසුම",
-    startBtn: "මගේ ගමන ආරම්භ කරන්න - නොමිලේ",
+    startBtn: "👉 දැන් ආරම්භ කරන්න",
     viewPaths: "පවතින භාෂා බලන්න",
     journeyTitle: "ඔබේ ගමන මෙතනින් ආරම්භ වේ",
     journeyLeaving: "නිවස හැරයාම",
@@ -344,7 +344,7 @@ export const translations = {
     dashboard: {
       title: "පාලන පුවරුව",
       welcome: "නැවතත් සාදරයෙන් පිළිගනිමු",
-      ready: "ඔබේ භාෂා ගමන ඉදිරියට ගෙන යාමට සූදානම්ද? අපි එය කරමු.",
+      ready: "ඔබේ සාර්ථකත්වයට පදනම — භාෂාවයි.",
       currentStreak: "වර්තමාන Streak",
       keepFlame: "දිනකට අවම වචන 5 පාඩම් කිරීමට උත්සහ කරන්න",
       xpPoints: "XP ලකුණු",
@@ -2542,6 +2542,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
