@@ -148,11 +148,16 @@ function PricingPageContent() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat4}</li>
                   </ul>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex-col gap-3 w-full">
                   <Button size="lg" className="w-full" asChild>
                     <Link href={WEEKLY_URL} target="_blank">Get {t.weeklyPlan.title}</Link>
                   </Button>
-                  <Button onClick={() => handlePayhere('weekly')} className="w-full mt-2" variant="outline">
+                  <div className="flex w-full items-center gap-2">
+                    <div className="h-px flex-1 bg-border" />
+                    <span className="text-xs text-muted-foreground">හෝ</span>
+                    <div className="h-px flex-1 bg-border" />
+                  </div>
+                  <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
                     🇱🇰 LKR 1,200 ගෙවන්න
                   </Button>
                 </CardFooter>
@@ -174,11 +179,16 @@ function PricingPageContent() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat4}</li>
                   </ul>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex-col gap-3 w-full">
                   <Button size="lg" className="w-full" asChild>
                     <Link href={LIFETIME_URL} target="_blank">Get {t.lifetimePlan.title}</Link>
                   </Button>
-                  <Button onClick={() => handlePayhere('lifetime')} className="w-full mt-2" variant="outline">
+                  <div className="flex w-full items-center gap-2">
+                    <div className="h-px flex-1 bg-border" />
+                    <span className="text-xs text-muted-foreground">හෝ</span>
+                    <div className="h-px flex-1 bg-border" />
+                  </div>
+                  <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">
                     🇱🇰 LKR 29,700 ගෙවන්න
                   </Button>
                 </CardFooter>
@@ -201,11 +211,16 @@ function PricingPageContent() {
                     <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat4}</li>
                   </ul>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="flex-col gap-3 w-full">
                   <Button size="lg" className="w-full" asChild>
                     <Link href={COURSE_URL} target="_blank">Get {t.completePlan.title}</Link>
                   </Button>
-                  <Button onClick={() => handlePayhere('course')} className="w-full mt-2" variant="outline">
+                  <div className="flex w-full items-center gap-2">
+                    <div className="h-px flex-1 bg-border" />
+                    <span className="text-xs text-muted-foreground">හෝ</span>
+                    <div className="h-px flex-1 bg-border" />
+                  </div>
+                  <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
                     🇱🇰 LKR 11,700 ගෙවන්න
                   </Button>
                 </CardFooter>

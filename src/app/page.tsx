@@ -104,18 +104,21 @@ export default function LandingPage() {
       
       {isFbBrowser && (
         <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl">
-            <div className="text-5xl mb-3">📱</div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">LingoForge App එක Install කරන්න</h3>
-            <p className="text-gray-600 text-sm mb-4">App install කිරීමට Chrome browser ෙදෙස් link එක open කරන්න</p>
+          <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl text-gray-900">
+            <h3 className="text-xl font-bold mb-4">App එක Install කරන්න 📱</h3>
+            <div className="space-y-3 text-left text-sm my-6 bg-slate-100 p-4 rounded-lg border border-slate-200">
+              <p>1️⃣ පහළ ඇති link එක Copy කරන්න</p>
+              <p>2️⃣ Chrome browser එක open කරන්න</p>
+              <p>3️⃣ Copy කළ link එක paste කරලා යන්න</p>
+              <p>4️⃣ Install කරන්න ✅</p>
+            </div>
             <div className="space-y-3">
               <button 
-                onClick={() => { navigator.clipboard?.writeText('https://bashaguru.com'); alert('Link copied! Chrome ෙදෙස් paste කරන්න 🔗'); }}
+                onClick={() => { navigator.clipboard?.writeText('https://lingoforge.app'); alert('Link copied! Chrome ෙදෙස් paste කරන්න 🔗'); }}
                 className="flex items-center justify-center gap-2 w-full bg-primary text-white py-3 rounded-xl font-semibold"
               >
                 🔗 Link Copy කරන්න
               </button>
-              <p className="text-xs text-gray-500">Copy කරලා Chrome ෙදෙස් paste කරන්න → Install කරන්න</p>
               <button onClick={() => setIsFbBrowser(false)} className="w-full text-gray-500 text-sm py-2">
                 දැනට skip කරන්න
               </button>
