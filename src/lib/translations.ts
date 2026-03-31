@@ -385,7 +385,7 @@ export const translations = {
       },
       referrals: {
         title: "මිතුරෙකුට යොමු කරන්න",
-        description: "ඔබේ කේතය මිතුරෙකු සමඟ බෙදා ගන්න. ඔවුන් ලියාපදිංචි වූ විට, ඔබ දෙදෙනාටම බෝනස් එකක් ලැබේ!",
+        description: "👉  කේතය මිතුරෙකු සමඟ බෙදා ගන්න",
         yourCode: "ඔබේ යොමු කිරීමේ කේතය",
         copyCode: "කේතය පිටපත් කරන්න",
         copied: "පිටපත් කරන ලදී!",
@@ -2542,6 +2542,7 @@ export const nativeLanguages = ["English", "Sinhala", "Hindi", "Urdu", "Bengali"
     
 
     
+
 
 
 
