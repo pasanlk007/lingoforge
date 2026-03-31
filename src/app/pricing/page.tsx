@@ -60,7 +60,7 @@ function PricingPageContent() {
     setIsMounted(true);
   }, []);
 
-  if (!isMounted || isUserLoading) return <PricingPageLoading />;
+  if (!isMounted || isUserLoading || isProfileLoading) return <PricingPageLoading />;
 
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
@@ -101,10 +101,33 @@ function PricingPageContent() {
     }
   };
 
-  const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}`;
-  const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}`;
-  const LIFETIME_URL = LIFETIME_BASE_URL;
+  const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
+  const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
+  const LIFETIME_URL = `${LIFETIME_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
 
+  if (displayLanguage !== 'Sinhala') {
+      // Non-Sinhala pricing layout can be added here if needed
+      return (
+        <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
+          <Navigation />
+          <main className="flex-1">
+            <section className="py-20 sm:py-24">
+              <div className="container mx-auto px-4">
+                <div className="mx-auto max-w-2xl text-center">
+                  <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">{t.pricingTitle}</h1>
+                  <p className="mt-4 text-lg text-muted-foreground">{t.pricingSub}</p>
+                </div>
+                 <div className="mt-16 text-center">
+                    <p>Pricing information for other languages is not yet configured.</p>
+                 </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      )
+  }
+
+  // SINHALA PRICING LAYOUT
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
       <Navigation />
@@ -117,21 +140,23 @@ function PricingPageContent() {
             </div>
 
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              {/* Weekly Plan */}
+              {/* Plan 1: Weekly */}
               <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20">
                 <CardHeader>
                   <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">ජනප්‍රිය</Badge>
                   <CardTitle className="font-headline text-2xl pt-2">සතිපතා සැලැස්ම</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-4">
-                  <p className="text-3xl font-bold">$3.99<span className="text-base font-normal text-muted-foreground">/සතිය</span></p>
-                  <p className="font-semibold text-muted-foreground">LKR 1,200/සතිය</p>
+                  <div>
+                    <p className="text-3xl font-bold">$3.99<span className="text-base font-normal text-muted-foreground">/සතිය</span></p>
+                    <p className="font-semibold text-muted-foreground">LKR 1,200/සතිය</p>
+                  </div>
                   <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
-                    <li className="flex items-center gap-2">✅ තෝරාගත් භාෂාව - සමාජ ජීවිතය (සති 12)</li>
-                    <li className="flex items-center gap-2">✅ Alphabet සහ Numbers</li>
-                    <li className="flex items-center gap-2">✅ Lessons unlock</li>
+                    <li>✅ තෝරාගත් භාෂාව - ව්‍යුහය (සති 12)</li>
+                    <li>✅ Alphabet සහ Numbers -</li>
+                    <li>✅ Lessons unlock</li>
                   </ul>
-                   <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ සති 12 සම්පූර්ණ කළ පසු ගෙවීම් ස්වයංක්‍රීයව නවතී</p>
+                  <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ සති 12 සම්පූර්ණ කළ පසු ගෙවීම් ස්වයංක්‍රීයව නවතී</p>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
                   <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
@@ -148,21 +173,22 @@ function PricingPageContent() {
                 </CardFooter>
               </Card>
 
-              {/* Course Plan */}
+              {/* Plan 2: Course */}
               <Card className="flex flex-col border-2 border-green-500/50 bg-green-950/20">
                  <CardHeader>
                   <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">වටිනාකම</Badge>
                   <CardTitle className="font-headline text-2xl pt-2">සම්පූර්ණ පාඨමාලාව</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-4">
-                  <p className="text-3xl font-bold">$39<span className="text-base font-normal text-muted-foreground">/one-time</span></p>
-                  <p className="font-semibold text-muted-foreground">LKR 11,700</p>
+                  <div>
+                    <p className="text-3xl font-bold">$39<span className="text-base font-normal text-muted-foreground">/one-time</span></p>
+                    <p className="font-semibold text-muted-foreground">LKR 11,700</p>
+                  </div>
                    <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
-                    <li className="flex items-center gap-2">✅ එක් භාෂාවක් - සම්පූර්ණ ප්‍රවේශය</li>
-                    <li className="flex items-center gap-2">✅ unlock (sequential)</li>
-                    <li className="flex items-center gap-2">✅ Alphabet, Numbers, Survival - සම්පූර්ණ</li>
-                    <li className="flex items-center gap-2">✅ එකවර ගෙවීම - Lifetime access</li>
-                    <li className="flex items-center gap-2">✅ කිසිදා expire නොවේ</li>
+                    <li>✅ එක් භාෂාවක් - සම්පූර්ණ ප්‍රවේශය</li>
+                    <li>✅ unlock (sequential)</li>
+                    <li>✅ Alphabet, Numbers, Survival - සම්පූර්ණ</li>
+                    <li>✅ එකවරක් - Lifetime access</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
@@ -180,21 +206,23 @@ function PricingPageContent() {
                 </CardFooter>
               </Card>
 
-               {/* Lifetime Plan */}
+               {/* Plan 3: Lifetime */}
               <Card className="relative flex flex-col border-2 border-yellow-500/50 bg-yellow-950/20">
                 <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950">⭐ Best Value</Badge>
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl pt-2">Lifetime Pro</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-4">
-                  <p className="text-3xl font-bold">$99<span className="text-base font-normal text-muted-foreground">/one-time</span></p>
-                  <p className="font-semibold text-muted-foreground">LKR 29,700</p>
+                  <div>
+                    <p className="text-3xl font-bold">$99<span className="text-base font-normal text-muted-foreground">/one-time</span></p>
+                    <p className="font-semibold text-muted-foreground">LKR 29,700</p>
+                  </div>
                   <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
-                    <li className="flex items-center gap-2">✅ භාෂා 21 ක් සම්පූර්ණ ප්‍රවේශය</li>
-                    <li className="flex items-center gap-2">✅ Survival, Alphabet, Numbers - සියලු භාෂා</li>
-                    <li className="flex items-center gap-2">✅ Pro Path - පුරවැසිභාවය සඳහා</li>
-                    <li className="flex items-center gap-2">✅ AI Quiz සහ advanced lessons</li>
-                    <li className="flex items-center gap-2">✅ Future updates - නොමිලේ</li>
+                    <li>✅ භාෂා 21 ක් සම්පූර්ණ ප්‍රවේශය</li>
+                    <li>✅ Survival, Alphabet, Numbers - සියලු භාෂා</li>
+                    <li>✅ Pro Path - පුරවැසිභාවය සඳහා</li>
+                    <li>✅ AI Quiz සහ advanced lessons</li>
+                    <li>✅ Future updates - නොමිලේ</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
