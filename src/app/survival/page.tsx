@@ -133,7 +133,8 @@ export default function SurvivalPathPage() {
               
               const prevWeekDays = completedDays[week - 1] || [];
               const isPrevWeekComplete = week === 1 || prevWeekDays.length >= 7;
-              const isLocked = weekIsEnabled && (!hasAccess || !isPrevWeekComplete);
+              const plan = userProfile?.subscriptionPlan;
+              const isLocked = weekIsEnabled && (!hasAccess || (plan === "course" && !isPrevWeekComplete));
               const isComingSoon = !weekIsEnabled;
 
               return (
