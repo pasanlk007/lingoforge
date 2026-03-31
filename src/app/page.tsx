@@ -420,66 +420,152 @@ export default function LandingPage() {
               <p className="text-lg text-slate-300 mt-2">{t.pricingSub}</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-              <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
-                <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">{t.weeklyPlan.title}</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">{t.weeklyPlan.price}<span className="text-base font-medium text-slate-400">{t.weeklyPlan.per}</span></p>
-                  <p className="text-sm text-slate-400 mt-1">{t.weeklyPlan.desc}</p>
-                </CardHeader>
-                <CardContent className="p-0 flex-1 flex flex-col justify-between">
-                  <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat1}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat2}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat3}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat4}</li>
-                  </ul>
-                  <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
-                    <Link href="/pricing">{t.getStarted}</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-              
-              <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
-                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">{t.lifetimePlan.badge}</Badge>
-                <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">{t.lifetimePlan.title}</CardTitle>
-                   <p className="text-4xl font-extrabold mt-2">{t.lifetimePlan.price}<span className="text-base font-medium text-slate-400">{t.lifetimePlan.per}</span></p>
-                   <p className="text-sm font-semibold text-yellow-400">{t.lifetimePlan.desc}</p>
-                </CardHeader>
-                <CardContent className="p-0 flex-1 flex flex-col justify-between">
-                  <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat1}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat2}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat3}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat4}</li>
-                  </ul>
-                  <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
-                    <Link href="/pricing">{t.getStarted}</Link>
-                  </Button>
-                </CardContent>
-              </Card>
+            {displayLanguage === 'Sinhala' ? (
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                {/* Weekly Plan - Sinhala */}
+                <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
+                    <CardHeader className="p-0 text-center">
+                        <CardTitle className="font-bold text-xl">{t.weeklyPlan.title}</CardTitle>
+                        <p className="text-sm text-slate-400 mt-1">{t.weeklyPlan.desc}</p>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-1 flex flex-col justify-between pt-6">
+                        <div>
+                            <p className="text-center text-4xl font-extrabold">{t.weeklyPlan.price}<span className="text-base font-medium text-slate-400">{t.weeklyPlan.per}</span></p>
+                            <p className="text-center text-lg font-semibold text-slate-300 mt-1">හෝ LKR 1,200.00</p>
+                            <ul className="space-y-3 text-slate-300 my-6">
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat1}</li>
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat2}</li>
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat4}</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-2 mt-4">
+                            <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                                <Link href="/pricing">Pay in USD</Link>
+                            </Button>
+                            <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                                <Link href="/pricing">LKR වලින් ගෙවන්න</Link>
+                            </Button>
+                        </div>
+                    </CardContent>
+                </Card>
+                
+                {/* Course Plan - Sinhala */}
+                <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
+                    <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">{t.completePlan.badge}</Badge>
+                    <CardHeader className="p-0 text-center">
+                        <CardTitle className="font-bold text-xl">{t.completePlan.title}</CardTitle>
+                        <p className="text-sm text-slate-400 mt-1">{t.completePlan.desc}</p>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-1 flex flex-col justify-between pt-6">
+                        <div>
+                            <p className="text-center text-4xl font-extrabold">{t.completePlan.price}<span className="text-base font-medium text-slate-400">{t.completePlan.per}</span></p>
+                            <p className="text-center text-lg font-semibold text-slate-300 mt-1">හෝ LKR 11,700.00</p>
+                            <ul className="space-y-3 text-slate-300 my-6">
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat1}</li>
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat2}</li>
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.completePlan.feat3}</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-2 mt-4">
+                            <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
+                                <Link href="/pricing">Pay in USD</Link>
+                            </Button>
+                            <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                                <Link href="/pricing">LKR වලින් ගෙවන්න</Link>
+                            </Button>
+                        </div>
+                    </CardContent>
+                </Card>
+                
+                {/* Lifetime Plan - Sinhala */}
+                <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
+                    <CardHeader className="p-0 text-center">
+                        <CardTitle className="font-bold text-xl">{t.lifetimePlan.title}</CardTitle>
+                        <p className="text-sm font-semibold text-slate-400 mt-1">{t.lifetimePlan.desc}</p>
+                    </CardHeader>
+                    <CardContent className="p-0 flex-1 flex flex-col justify-between pt-6">
+                        <div>
+                            <p className="text-center text-4xl font-extrabold">{t.lifetimePlan.price}<span className="text-base font-medium text-slate-400">{t.lifetimePlan.per}</span></p>
+                            <p className="text-center text-lg font-semibold text-slate-300 mt-1">හෝ LKR 29,700.00</p>
+                            <ul className="space-y-3 text-slate-300 my-6">
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.lifetimePlan.feat1}</li>
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.lifetimePlan.feat2}</li>
+                                <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.lifetimePlan.feat4}</li>
+                            </ul>
+                        </div>
+                        <div className="flex flex-col gap-2 mt-4">
+                            <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                                <Link href="/pricing">Pay in USD</Link>
+                            </Button>
+                            <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                                <Link href="/pricing">LKR වලින් ගෙවන්න</Link>
+                            </Button>
+                        </div>
+                    </CardContent>
+                </Card>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
+                  <CardHeader className="p-0">
+                    <CardTitle className="font-bold text-xl">{t.weeklyPlan.title}</CardTitle>
+                    <p className="text-4xl font-extrabold mt-2">{t.weeklyPlan.price}<span className="text-base font-medium text-slate-400">{t.weeklyPlan.per}</span></p>
+                    <p className="text-sm text-slate-400 mt-1">{t.weeklyPlan.desc}</p>
+                  </CardHeader>
+                  <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                    <ul className="space-y-3 text-slate-300 my-6">
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat1}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat2}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat3}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat4}</li>
+                    </ul>
+                    <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                      <Link href="/pricing">{t.getStarted}</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+                
+                <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
+                  <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">{t.lifetimePlan.badge}</Badge>
+                  <CardHeader className="p-0">
+                    <CardTitle className="font-bold text-xl">{t.lifetimePlan.title}</CardTitle>
+                     <p className="text-4xl font-extrabold mt-2">{t.lifetimePlan.price}<span className="text-base font-medium text-slate-400">{t.lifetimePlan.per}</span></p>
+                     <p className="text-sm font-semibold text-yellow-400">{t.lifetimePlan.desc}</p>
+                  </CardHeader>
+                  <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                    <ul className="space-y-3 text-slate-300 my-6">
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat1}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat2}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat3}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat4}</li>
+                    </ul>
+                    <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
+                      <Link href="/pricing">{t.getStarted}</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
 
-              <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
-                <Badge variant="default" className="w-fit mb-4">{t.completePlan.badge}</Badge>
-                <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">{t.completePlan.title}</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">{t.completePlan.price}<span className="text-base font-medium text-slate-400">{t.completePlan.per}</span></p>
-                  <p className="text-sm text-slate-400 mt-1">{t.completePlan.desc}</p>
-                </CardHeader>
-                <CardContent className="p-0 flex-1 flex flex-col justify-between">
-                  <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat1}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat2}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat3}</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat4}</li>
-                  </ul>
-                  <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
-                    <Link href="/pricing">{t.getStarted}</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
+                <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
+                  <Badge variant="default" className="w-fit mb-4">{t.completePlan.badge}</Badge>
+                  <CardHeader className="p-0">
+                    <CardTitle className="font-bold text-xl">{t.completePlan.title}</CardTitle>
+                    <p className="text-4xl font-extrabold mt-2">{t.completePlan.price}<span className="text-base font-medium text-slate-400">{t.completePlan.per}</span></p>
+                    <p className="text-sm text-slate-400 mt-1">{t.completePlan.desc}</p>
+                  </CardHeader>
+                  <CardContent className="p-0 flex-1 flex flex-col justify-between">
+                    <ul className="space-y-3 text-slate-300 my-6">
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat1}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat2}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat3}</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.completePlan.feat4}</li>
+                    </ul>
+                    <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                      <Link href="/pricing">{t.getStarted}</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+            )}
           </div>
         </section>
 
