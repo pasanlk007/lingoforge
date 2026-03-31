@@ -105,16 +105,17 @@ export default function LandingPage() {
       {isFbBrowser && (
         <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl">
-            <div className="text-4xl mb-3">🌐</div>
-            <h3 className="text-lg font-bold text-gray-900 mb-2">Chrome Browser එක භාවිතා කරන්න</h3>
-            <p className="text-gray-600 text-sm mb-4">හොඳ අත්දැකීමක් සඳහා Chrome browser එකෙන් open කරන්න</p>
+            <div className="text-5xl mb-3">📱</div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">LingoForge App එක Install කරන්න</h3>
+            <p className="text-gray-600 text-sm mb-4">App install කිරීමට Chrome browser ෙදෙස් link එක open කරන්න</p>
             <div className="space-y-3">
-              <a href="https://play.google.com/store/apps/details?id=com.android.chrome" target="_blank" className="flex items-center justify-center gap-2 w-full bg-green-500 text-white py-3 rounded-xl font-semibold">
-                🤖 Android - Chrome Download
-              </a>
-              <a href="https://apps.apple.com/app/google-chrome/id535886823" target="_blank" className="flex items-center justify-center gap-2 w-full bg-blue-500 text-white py-3 rounded-xl font-semibold">
-                🍎 iPhone - Chrome Download
-              </a>
+              <button 
+                onClick={() => { navigator.clipboard?.writeText('https://bashaguru.com'); alert('Link copied! Chrome ෙදෙස් paste කරන්න 🔗'); }}
+                className="flex items-center justify-center gap-2 w-full bg-primary text-white py-3 rounded-xl font-semibold"
+              >
+                🔗 Link Copy කරන්න
+              </button>
+              <p className="text-xs text-gray-500">Copy කරලා Chrome ෙදෙස් paste කරන්න → Install කරන්න</p>
               <button onClick={() => setIsFbBrowser(false)} className="w-full text-gray-500 text-sm py-2">
                 දැනට skip කරන්න
               </button>
