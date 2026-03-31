@@ -67,6 +67,40 @@ function PricingPageContent() {
   const targetLanguageInfo = allTargetLangs.find(l => l.lang === targetLanguage);
   
   const langParam = encodeURIComponent(targetLanguage.toLowerCase());
+
+  const handlePayhere = async (plan: string) => {
+    if (!user) return;
+    try {
+      const res = await fetch('/api/payhere-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          plan,
+          language: targetLanguage.toLowerCase(),
+          userId: user.uid,
+          userEmail: user.email,
+          userName: user.displayName || '',
+        }),
+      });
+      const data = await res.json();
+      
+      // Create and submit PayHere form
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'https://sandbox.payhere.lk/pay/checkout';
+      Object.entries(data).forEach(([key, value]) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = String(value);
+        form.appendChild(input);
+      });
+      document.body.appendChild(form);
+      form.submit();
+    } catch (error) {
+      console.error('PayHere error:', error);
+    }
+  };
   const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}`;
   const LIFETIME_URL = LIFETIME_BASE_URL;
@@ -118,6 +152,9 @@ function PricingPageContent() {
                   <Button size="lg" className="w-full" asChild>
                     <Link href={WEEKLY_URL} target="_blank">Get {t.weeklyPlan.title}</Link>
                   </Button>
+                  <Button onClick={() => handlePayhere('weekly')} className="w-full mt-2" variant="outline">
+                    🇱🇰 LKR 1,200 ගෙවන්න
+                  </Button>
                 </CardFooter>
               </Card>
 
@@ -140,6 +177,9 @@ function PricingPageContent() {
                 <CardFooter>
                   <Button size="lg" className="w-full" asChild>
                     <Link href={LIFETIME_URL} target="_blank">Get {t.lifetimePlan.title}</Link>
+                  </Button>
+                  <Button onClick={() => handlePayhere('lifetime')} className="w-full mt-2" variant="outline">
+                    🇱🇰 LKR 29,700 ගෙවන්න
                   </Button>
                 </CardFooter>
               </Card>
@@ -164,6 +204,9 @@ function PricingPageContent() {
                 <CardFooter>
                   <Button size="lg" className="w-full" asChild>
                     <Link href={COURSE_URL} target="_blank">Get {t.completePlan.title}</Link>
+                  </Button>
+                  <Button onClick={() => handlePayhere('course')} className="w-full mt-2" variant="outline">
+                    🇱🇰 LKR 11,700 ගෙවන්න
                   </Button>
                 </CardFooter>
               </Card>
