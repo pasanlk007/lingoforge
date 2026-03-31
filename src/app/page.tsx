@@ -196,7 +196,7 @@ export default function LandingPage() {
               
               <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
+                    <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>👉 දැන් ආරම්භ කරන්න</Button>
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700">{t.viewPaths}</Button>
