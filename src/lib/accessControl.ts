@@ -50,6 +50,14 @@ export function canAccessLesson(
   }
 
   const hasValidSub = isSubscriptionValid(profile);
+  
+  // Week 12 graduates - keep survival unlocked forever
+  if (path === 'survival') {
+    const survivalProgress = profile.languageProgress?.[language?.toLowerCase() || '']?.['survival'];
+    const completedDays = survivalProgress?.completedDays || [];
+    const week12Days = completedDays.filter((d: string) => d.startsWith('12-'));
+    if (week12Days.length >= 7) return { allowed: true };
+  }
   const plan = profile.subscriptionPlan;
 
   // ===== SURVIVAL PATH =====
