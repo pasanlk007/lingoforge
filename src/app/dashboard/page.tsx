@@ -50,7 +50,7 @@ import VoiceInit from "@/components/VoiceInit";
 const SI_TRANSLATIONS = {
   'Explore Learning Paths': 'ඉගෙනීමේ මාර්ග',
   'Survival Bundle': 'පැවැත්මේ මාර්ගය',
-  'Survival Path': 'පැවැත්මේ පාර',
+  'Survival Path': '👉 මේ ඉගෙනීමේ මාර්ගය',
   'Alphabet Path': 'අකුරු හදුනාගනිමු',
   'Numbers Path': 'ඉලක්කම් ඉගනගමු',
   'LingoForge Pro': 'LingoForge ප්‍රෝ',
