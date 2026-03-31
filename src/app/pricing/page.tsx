@@ -12,6 +12,7 @@ import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
+import { cn } from '@/lib/utils';
 
 const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
 const LIFETIME_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
@@ -64,7 +65,6 @@ function PricingPageContent() {
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
-  const targetLanguageInfo = allTargetLangs.find(l => l.lang === targetLanguage);
   
   const langParam = encodeURIComponent(targetLanguage.toLowerCase());
 
@@ -84,7 +84,6 @@ function PricingPageContent() {
       });
       const data = await res.json();
       
-      // Create and submit PayHere form
       const form = document.createElement('form');
       form.method = 'POST';
       form.action = 'https://sandbox.payhere.lk/pay/checkout';
@@ -101,24 +100,10 @@ function PricingPageContent() {
       console.error('PayHere error:', error);
     }
   };
+
   const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}`;
   const LIFETIME_URL = LIFETIME_BASE_URL;
-
-  const LanguagePurchaseContext = () => {
-    if (isProfileLoading) return <Skeleton className="h-12 w-full" />;
-    if (!targetLanguageInfo) return null;
-    return (
-      <div className="my-4">
-        <p className="text-sm font-semibold text-muted-foreground">{t.pricingPage.purchasingFor}</p>
-        <div className="mt-2 flex items-center gap-3 rounded-md border bg-muted p-2">
-          <span className="text-2xl">{targetLanguageInfo.flag}</span>
-          <span className="font-bold">{targetLanguageInfo.lang}</span>
-        </div>
-        <p className="text-xs text-muted-foreground mt-1">{t.pricingPage.changeLanguageNote}</p>
-      </div>
-    );
-  };
 
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -133,24 +118,24 @@ function PricingPageContent() {
 
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
               {/* Weekly Plan */}
-              <Card className="flex flex-col">
+              <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl">{t.weeklyPlan.title}</CardTitle>
-                  <CardDescription>{t.weeklyPlan.desc}</CardDescription>
+                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">ජනප්‍රිය</Badge>
+                  <CardTitle className="font-headline text-2xl pt-2">සතිපතා සැලැස්ම</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <p className="text-4xl font-bold">{t.weeklyPlan.price}<span className="text-lg font-normal text-muted-foreground">{t.weeklyPlan.per}</span></p>
-                  <LanguagePurchaseContext />
-                  <ul className="space-y-3 pt-4 border-t">
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat1}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat2}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat3}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.weeklyPlan.feat4}</li>
+                <CardContent className="flex-1 space-y-4">
+                  <p className="text-3xl font-bold">$3.99<span className="text-base font-normal text-muted-foreground">/සතිය</span></p>
+                  <p className="font-semibold text-muted-foreground">LKR 1,200/සතිය</p>
+                  <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
+                    <li className="flex items-center gap-2">✅ තෝරාගත් භාෂාව - සමාජ ජීවිතය (සති 12)</li>
+                    <li className="flex items-center gap-2">✅ Alphabet සහ Numbers</li>
+                    <li className="flex items-center gap-2">✅ Lessons unlock</li>
                   </ul>
+                   <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ සති 12 සම්පූර්ණ කළ පසු ගෙවීම් ස්වයංක්‍රීයව නවතී</p>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  <Button size="lg" className="w-full" asChild>
-                    <Link href={WEEKLY_URL} target="_blank">Get {t.weeklyPlan.title}</Link>
+                  <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                    <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link>
                   </Button>
                   <div className="flex w-full items-center gap-2">
                     <div className="h-px flex-1 bg-border" />
@@ -158,62 +143,31 @@ function PricingPageContent() {
                     <div className="h-px flex-1 bg-border" />
                   </div>
                   <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
-                    🇱🇰 LKR 1,200 ගෙවන්න
+                    🇱🇰 LKR වලින් ගෙවන්න
                   </Button>
                 </CardFooter>
               </Card>
 
-              {/* Lifetime Plan */}
-              <Card className="relative flex flex-col border-2 border-primary shadow-2xl shadow-primary/20">
-                <Badge variant="default" className="absolute -top-4 left-1/2 -translate-x-1/2">{t.lifetimePlan.badge}</Badge>
-                <CardHeader>
-                  <CardTitle className="font-headline text-2xl">{t.lifetimePlan.title}</CardTitle>
-                  <CardDescription>{t.lifetimePlan.desc}</CardDescription>
+              {/* Course Plan */}
+              <Card className="flex flex-col border-2 border-green-500/50 bg-green-950/20">
+                 <CardHeader>
+                  <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">වටිනාකම</Badge>
+                  <CardTitle className="font-headline text-2xl pt-2">සම්පූර්ණ පාඨමාලාව</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <p className="text-4xl font-bold">{t.lifetimePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.lifetimePlan.per}</span></p>
-                  <ul className="space-y-3 pt-4 border-t">
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat1}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat2}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat3}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.lifetimePlan.feat4}</li>
+                <CardContent className="flex-1 space-y-4">
+                  <p className="text-3xl font-bold">$39<span className="text-base font-normal text-muted-foreground">/one-time</span></p>
+                  <p className="font-semibold text-muted-foreground">LKR 11,700</p>
+                   <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
+                    <li className="flex items-center gap-2">✅ එක් භාෂාවක් - සම්පූර්ණ ප්‍රවේශය</li>
+                    <li className="flex items-center gap-2">✅ unlock (sequential)</li>
+                    <li className="flex items-center gap-2">✅ Alphabet, Numbers, Survival - සම්පූර්ණ</li>
+                    <li className="flex items-center gap-2">✅ එකවර ගෙවීම - Lifetime access</li>
+                    <li className="flex items-center gap-2">✅ කිසිදා expire නොවේ</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  <Button size="lg" className="w-full" asChild>
-                    <Link href={LIFETIME_URL} target="_blank">Get {t.lifetimePlan.title}</Link>
-                  </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">හෝ</span>
-                    <div className="h-px flex-1 bg-border" />
-                  </div>
-                  <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">
-                    🇱🇰 LKR 29,700 ගෙවන්න
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Single Course Plan */}
-              <Card className="flex flex-col">
-                <CardHeader>
-                  <Badge variant="secondary" className="w-fit">{t.completePlan.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl mt-2">{t.completePlan.title}</CardTitle>
-                  <CardDescription>{t.completePlan.desc}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-6">
-                  <p className="text-4xl font-bold">{t.completePlan.price}<span className="text-lg font-normal text-muted-foreground">{t.completePlan.per}</span></p>
-                  <LanguagePurchaseContext />
-                  <ul className="space-y-3 pt-4 border-t">
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat1}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat2}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat3}</li>
-                    <li className="flex items-center gap-2 font-medium"><Check className="h-5 w-5 text-primary" /> {t.completePlan.feat4}</li>
-                  </ul>
-                </CardContent>
-                <CardFooter className="flex-col gap-3 w-full">
-                  <Button size="lg" className="w-full" asChild>
-                    <Link href={COURSE_URL} target="_blank">Get {t.completePlan.title}</Link>
+                   <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
+                    <Link href={COURSE_URL} target="_blank">Pay in USD</Link>
                   </Button>
                   <div className="flex w-full items-center gap-2">
                     <div className="h-px flex-1 bg-border" />
@@ -221,7 +175,39 @@ function PricingPageContent() {
                     <div className="h-px flex-1 bg-border" />
                   </div>
                   <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
-                    🇱🇰 LKR 11,700 ගෙවන්න
+                    🇱🇰 LKR වලින් ගෙවන්න
+                  </Button>
+                </CardFooter>
+              </Card>
+
+               {/* Lifetime Plan */}
+              <Card className="relative flex flex-col border-2 border-yellow-500/50 bg-yellow-950/20">
+                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950">⭐ Best Value</Badge>
+                <CardHeader>
+                  <CardTitle className="font-headline text-2xl pt-2">Lifetime Pro</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-1 space-y-4">
+                  <p className="text-3xl font-bold">$99<span className="text-base font-normal text-muted-foreground">/one-time</span></p>
+                  <p className="font-semibold text-muted-foreground">LKR 29,700</p>
+                  <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
+                    <li className="flex items-center gap-2">✅ භාෂා 21 ක් සම්පූර්ණ ප්‍රවේශය</li>
+                    <li className="flex items-center gap-2">✅ Survival, Alphabet, Numbers - සියලු භාෂා</li>
+                    <li className="flex items-center gap-2">✅ Pro Path - පුරවැසිභාවය සඳහා</li>
+                    <li className="flex items-center gap-2">✅ AI Quiz සහ advanced lessons</li>
+                    <li className="flex items-center gap-2">✅ Future updates - නොමිලේ</li>
+                  </ul>
+                </CardContent>
+                <CardFooter className="flex-col gap-3 w-full">
+                  <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
+                    <Link href={LIFETIME_URL} target="_blank">Pay in USD</Link>
+                  </Button>
+                  <div className="flex w-full items-center gap-2">
+                    <div className="h-px flex-1 bg-border" />
+                    <span className="text-xs text-muted-foreground">හෝ</span>
+                    <div className="h-px flex-1 bg-border" />
+                  </div>
+                  <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">
+                    🇱🇰 LKR වලින් ගෙවන්න
                   </Button>
                 </CardFooter>
               </Card>
