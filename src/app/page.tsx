@@ -102,6 +102,26 @@ export default function LandingPage() {
   return (
     <div className={cn("bg-slate-900 text-white font-body")} dir={isRTL ? 'rtl' : 'ltr'}>
       
+      {isFbBrowser && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl">
+            <div className="text-4xl mb-3">🌐</div>
+            <h3 className="text-lg font-bold text-gray-900 mb-2">Chrome Browser එක භාවිතා කරන්න</h3>
+            <p className="text-gray-600 text-sm mb-4">හොඳ අත්දැකීමක් සඳහා Chrome browser එකෙන් open කරන්න</p>
+            <div className="space-y-3">
+              <a href="https://play.google.com/store/apps/details?id=com.android.chrome" target="_blank" className="flex items-center justify-center gap-2 w-full bg-green-500 text-white py-3 rounded-xl font-semibold">
+                🤖 Android - Chrome Download
+              </a>
+              <a href="https://apps.apple.com/app/google-chrome/id535886823" target="_blank" className="flex items-center justify-center gap-2 w-full bg-blue-500 text-white py-3 rounded-xl font-semibold">
+                🍎 iPhone - Chrome Download
+              </a>
+              <button onClick={() => setIsFbBrowser(false)} className="w-full text-gray-500 text-sm py-2">
+                දැනට skip කරන්න
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <nav className="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
