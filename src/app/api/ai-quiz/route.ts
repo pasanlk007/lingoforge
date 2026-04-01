@@ -55,7 +55,7 @@ Instructions:
         'anthropic-version': '2023-06-01',
       },
       body: JSON.stringify({
-        model: 'claude-haiku-4-5-20251001', // Using Haiku as requested (mapping to latest version)
+        model: 'claude-haiku-4-5', // Using Haiku as requested (mapping to latest version)
         system: systemPrompt,
         messages: [{ role: 'user', content: userPrompt }],
         max_tokens: 1024,
@@ -76,7 +76,9 @@ Instructions:
     }
 
     // The response is a JSON string, so we need to parse it.
-    const quizJson = JSON.parse(data.content[0].text);
+    const rawText = data.content[0].text;
+    const cleanText = rawText.replace(/```json|```/g, '').trim();
+    const quizJson = JSON.parse(cleanText);
 
     return NextResponse.json(quizJson);
 
