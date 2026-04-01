@@ -1,0 +1,38 @@
+export const proLessonTopics: Record<number, Record<number, string>> = {
+  1: {
+    1: "Workplace Introduction - Meeting colleagues",
+    2: "Workplace Introduction - Your job role",
+    3: "Workplace Introduction - Daily tasks",
+    4: "Workplace Safety - Basic safety rules",
+    5: "Workplace Safety - Emergency procedures",
+    6: "Workplace Safety - Reporting incidents",
+    7: "Workplace Safety - Safety equipment",
+  },
+  2: {
+    1: "Banking - Opening a bank account",
+    2: "Banking - ATM and transactions",
+    3: "Banking - Online banking",
+    4: "Housing - Finding accommodation",
+    5: "Housing - Rental agreement",
+    6: "Housing - Talking to landlord",
+    7: "Housing - Utilities and services",
+  },
+  3: {
+    1: "Healthcare - Visiting a doctor",
+    2: "Healthcare - Describing symptoms",
+    3: "Healthcare - Pharmacy",
+    4: "Healthcare - Emergency services",
+    5: "Legal - Understanding your rights",
+    6: "Legal - Work permit and visa",
+    7: "Legal - Important documents",
+  },
+  4: {
+    1: "Citizenship - Local government",
+    2: "Citizenship - Community services",
+    3: "Citizenship - Public transport",
+    4: "Citizenship - Shopping and markets",
+    5: "Citizenship - Schools and education",
+    6: "Citizenship - Cultural events",
+    7: "Citizenship - Making friends",
+  },
+};
