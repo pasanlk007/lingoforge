@@ -1,19 +1,29 @@
 import { NextResponse } from 'next/server';
 
-async function getFirebaseToken(): Promise<string> {
-  const clientEmail = process.env.FIREBASE_CLIENT_EMAIL!;
-  const privateKey = Buffer.from(process.env.FIREBASE_PRIVATE_KEY!, 'base64').toString('utf8');
+function createJWT(): string {
+  const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
+  const clientEmail = (process.env.FIREBASE_CLIENT_EMAIL || '').trim();
   const now = Math.floor(Date.now() / 1000);
-  const payload = { iss: clientEmail, sub: clientEmail, aud: 'https://oauth2.googleapis.com/token', iat: now, exp: now + 3600, scope: 'https://www.googleapis.com/auth/datastore' };
-  
-  const { SignJWT } = await import('jose');
-  const key = require('crypto').createPrivateKey(privateKey);
-  const jwt = await new SignJWT(payload).setProtectedHeader({ alg: 'RS256' }).sign(key);
-  
+  const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
+  const payload = Buffer.from(JSON.stringify({
+    iss: clientEmail, sub: clientEmail,
+    aud: 'https://oauth2.googleapis.com/token',
+    iat: now, exp: now + 3600,
+    scope: 'https://www.googleapis.com/auth/datastore',
+  })).toString('base64url');
+  const signingInput = `${header}.${payload}`;
+  const sign = require('crypto').createSign('RSA-SHA256');
+  sign.update(signingInput);
+  const signature = sign.sign(privateKey, 'base64url');
+  return `${signingInput}.${signature}`;
+}
+
+async function getFirebaseToken(): Promise<string> {
+  const jwt = createJWT();
   const res = await fetch('https://oauth2.googleapis.com/token', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=${jwt}`
+    body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion: jwt }),
   });
   const data = await res.json();
   return data.access_token;
