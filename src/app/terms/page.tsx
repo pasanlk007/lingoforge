@@ -92,7 +92,7 @@ export default function TermsPage() {
               <li>Refund requests must be made within 7 days of purchase</li>
               <li>Refunds will be credited to the original payment method used at the time of purchase</li>
               <li>No refunds after 12 weeks subscription has been completed</li>
-              <li>To request a refund, contact us at innovativehub1996@gmail.com or WhatsApp: +94XXXXXXXXX</li>
+              <li>To request a refund, contact us at innovativehub1996@gmail.com or WhatsApp: +94768680133</li>
             </ul>
 
             <h2>Limitation of Liability</h2>
