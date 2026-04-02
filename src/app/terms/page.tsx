@@ -74,9 +74,32 @@ export default function TermsPage() {
             <h2>7. Changes to Terms</h2>
             <p>
               We reserve the right, at our sole discretion, to modify or replace
-              these Terms at any time. We will provide notice of any changes on
-              this page.
+              these Terms at any time.
             </p>
+
+            <h2>Service Prices (LKR)</h2>
+            <p>The following prices apply for Sri Lankan users paying in LKR:</p>
+            <ul>
+              <li>Weekly Plan: LKR 1,200 per week (auto-renews for 12 weeks)</li>
+              <li>Single Course Plan: LKR 11,700 (one-time payment)</li>
+              <li>Lifetime Pro Plan: LKR 29,700 (one-time payment)</li>
+            </ul>
+            <p>USD prices: Weekly $3.99/week, Course $39, Lifetime $99</p>
+
+            <h2>Refund Policy</h2>
+            <p>We offer refunds under the following conditions:</p>
+            <ul>
+              <li>Refund requests must be made within 7 days of purchase</li>
+              <li>Refunds will be credited to the original payment method used at the time of purchase</li>
+              <li>No refunds after 12 weeks subscription has been completed</li>
+              <li>To request a refund, contact us at innovativehub1996@gmail.com or WhatsApp: +94XXXXXXXXX</li>
+            </ul>
+
+            <h2>Limitation of Liability</h2>
+            <p>LingoForge, its directors, employees, or affiliates shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from use of our service. We make no warranties regarding the accuracy or suitability of our language learning content.</p>
+
+            <h2>Amendments</h2>
+            <p>We reserve the right to modify these Terms at any time. Users are responsible for reviewing terms periodically.</p>
 
             <p>
               <Link href="/">Go back to the homepage</Link>
