@@ -55,6 +55,23 @@ export default function LandingPage() {
   const [isMounted, setIsMounted] = useState(false);
   const [showLangGuide, setShowLangGuide] = useState(false);
   const [isFbBrowser, setIsFbBrowser] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [isIOS, setIsIOS] = useState(false);
+  const [isAndroid, setIsAndroid] = useState(false);
+  const [showIOSGuide, setShowIOSGuide] = useState(false);
+
+  useEffect(() => {
+    const ua = navigator.userAgent.toLowerCase();
+    setIsIOS(/iphone|ipad|ipod/.test(ua));
+    setIsAndroid(/android/.test(ua));
+    const handler = (e: any) => { e.preventDefault(); setDeferredPrompt(e); };
+    window.addEventListener('beforeinstallprompt', handler);
+    return () => window.removeEventListener('beforeinstallprompt', handler);
+  }, []);
+
+  const handleAndroidInstall = async () => {
+    if (deferredPrompt) { deferredPrompt.prompt(); setDeferredPrompt(null); }
+  };
 
   useEffect(() => {
     const ua = navigator.userAgent || '';
@@ -198,6 +215,32 @@ export default function LandingPage() {
               <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
                  <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>👉 දැන් ආරම්භ කරන්න</Button>
+                    <div className="flex gap-2 mt-2">
+                      {isAndroid && deferredPrompt && (
+                        <Button size="sm" variant="outline" className="flex-1 text-xs border-green-500 text-green-400 hover:bg-green-500/10" onClick={handleAndroidInstall}>
+                          🤖 Android Install
+                        </Button>
+                      )}
+                      {isIOS && (
+                        <Button size="sm" variant="outline" className="flex-1 text-xs border-slate-500 text-slate-300 hover:bg-slate-700" onClick={() => setShowIOSGuide(true)}>
+                          🍎 iPhone Install
+                        </Button>
+                      )}
+                      {!isAndroid && !isIOS && deferredPrompt && (
+                        <Button size="sm" variant="outline" className="flex-1 text-xs border-slate-500 text-slate-300 hover:bg-slate-700" onClick={handleAndroidInstall}>
+                          💻 Desktop Install
+                        </Button>
+                      )}
+                    </div>
+                    {showIOSGuide && (
+                      <div className="mt-2 p-3 bg-slate-700 rounded-lg text-xs text-slate-300">
+                        <p className="font-semibold mb-1">🍎 iPhone Install:</p>
+                        <p>1️⃣ Safari ෙදෙස් open කරන්න</p>
+                        <p>2️⃣ Share button (□↑) tap කරන්න</p>
+                        <p>3️⃣ "Add to Home Screen" select කරන්න</p>
+                        <button onClick={() => setShowIOSGuide(false)} className="mt-2 text-cyan-400">Close</button>
+                      </div>
+                    )}
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700">{t.viewPaths}</Button>
