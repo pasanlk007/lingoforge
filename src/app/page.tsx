@@ -117,7 +117,7 @@ export default function LandingPage() {
             <p className="text-gray-700 text-xs font-medium mb-2">කරුණාකර Chrome හෝ Safari browser වෙතින් පිවිසෙන්න:</p>
             <div className="bg-gray-100 rounded-lg p-3 mb-3 flex items-center justify-between">
               <span className="text-gray-900 font-bold text-sm select-all">www.bashaguru.com</span>
-              <button onClick={() => navigator.clipboard?.writeText('www.bashaguru.com').then(() => alert('✅ Copy වුණා! Chrome ෙදෙස් paste කරන්න'))} className="bg-blue-600 text-white text-xs px-3 py-1 rounded-lg ml-2">
+              <button onClick={() => navigator.clipboard?.writeText('www.bashaguru.com').then(() => alert('✅ Copy වුණා!\n\nChrome browser open කරලා\nwww.bashaguru.com Google කරන්න 🔍'))} className="bg-blue-600 text-white text-xs px-3 py-1 rounded-lg ml-2">
                 Copy
               </button>
             </div>
