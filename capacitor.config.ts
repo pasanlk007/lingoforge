@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'BhashaGuru',
   webDir: 'out',
   server: {
-    url: 'https://lingoforge.app',
+    url: 'https://lingoforge.app?app=1',
     cleartext: false,
   },
   android: {
