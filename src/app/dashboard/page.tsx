@@ -410,7 +410,7 @@ function DashboardContent({ user }: { user: User }) {
                     </Button>
                   ) : (
                     <Button asChild className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
-                      <Link href="/pricing">
+                      {!( typeof window !== "undefined" && (window.location.search.includes("app=1") || (navigator.userAgent.includes("wv") && navigator.userAgent.includes("Android")))) && <Link href="/pricing">
                         {t_ui.upgradeToUnlock} <ChevronRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
