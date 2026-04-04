@@ -151,13 +151,31 @@ export default function LessonPage() {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
-        <main className="flex-1 container mx-auto py-12 max-w-3xl text-center">
-          <div className="text-6xl mb-6"><Lock /></div>
-          <h1 className="text-2xl font-bold">Week {weekNumber} Locked</h1>
-          <p className="text-muted-foreground mt-3">Upgrade your plan to access this week's lessons.</p>
-          <Button asChild className="mt-6">
-            <Link href="/pricing">
-              Upgrade to Pro
+        <main className="flex-1 container mx-auto py-12 max-w-3xl text-center px-4">
+          <div className="text-6xl mb-6">🔒</div>
+          <h1 className="text-2xl font-bold mb-3">
+            {nativeLanguage === 'Sinhala' ? 'මෙම පාඩම잠금දිමා ඇත' : 'This Lesson is Locked'}
+          </h1>
+          <p className="text-muted-foreground mt-3 mb-6">
+            {nativeLanguage === 'Sinhala' 
+              ? 'ඔබේ නොමිලේ trial අවසන් වී ඇත. දිගටම ඉගෙනගන්න!'
+              : 'Your free trial has ended. Continue learning!'}
+          </p>
+          <div className="bg-muted/50 border border-border rounded-xl p-6 max-w-sm mx-auto">
+            <div className="text-2xl mb-2">🌐</div>
+            <p className="font-semibold mb-1">
+              {nativeLanguage === 'Sinhala' ? 'දායකත්වය ලබාගන්න:' : 'Subscribe at:'}
+            </p>
+            <p className="text-primary font-bold text-lg">bashaguru.com</p>
+            <p className="text-xs text-muted-foreground mt-2">
+              {nativeLanguage === 'Sinhala' 
+                ? 'Weekly, Course හෝ Lifetime plans ලබා ගත හැකිය'
+                : 'Weekly, Course or Lifetime plans available'}
+            </p>
+          </div>
+          <Button variant="outline" asChild className="mt-6">
+            <Link href="/dashboard">
+              {nativeLanguage === 'Sinhala' ? 'ආපසු යන්න' : 'Back to Dashboard'}
             </Link>
           </Button>
         </main>
