@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.lingoforge.app',
-  appName: 'LingoForge',
+  appName: 'BhashaGuru',
   webDir: 'out',
   server: {
     url: 'https://lingoforge.app',
