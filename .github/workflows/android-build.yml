@@ -37,17 +37,19 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x android/gradlew
 
-      - name: Build AAB
+      - name: Decode Keystore
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/lingoforge-release.keystore
+
+      - name: Build Signed AAB
         run: cd android && ./gradlew bundleRelease
+        env:
+          KEYSTORE_PATH: lingoforge-release.keystore
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
 
-      - name: Upload AAB
+      - name: Upload Signed AAB
         uses: actions/upload-artifact@v4
         with:
-          name: lingoforge-release.aab
+          name: lingoforge-release-signed.aab
           path: android/app/build/outputs/bundle/release/app-release.aab
-
-      - name: Upload APK (for testing)
-        uses: actions/upload-artifact@v4
-        with:
-          name: lingoforge-debug.apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
