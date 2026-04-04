@@ -138,6 +138,8 @@ if (!userProfileRef || !dayData) return;
     const nextDay = currentDay < 7 ? currentDay + 1 : 1;
     const nextWeek = currentDay < 7 ? dayData.week : dayData.week + 1;
     const nextLessonUrl = `/lessons/${lesson.language.toLowerCase()}/${lesson.path}/${nextWeek}/${nextDay}`;
+    const isLastFreeDay = currentDay === 7 && dayData.week === 1;
+    const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
 
     return (
       <>

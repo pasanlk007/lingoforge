@@ -147,6 +147,8 @@ export default function LessonPage() {
     return <LoadingSkeleton />;
   }
 
+  const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
+  
   if (!hasAccess) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
@@ -173,7 +175,14 @@ export default function LessonPage() {
                 : 'Weekly, Course or Lifetime plans available'}
             </p>
           </div>
-          <Button variant="outline" asChild className="mt-6">
+          {!isApp && (
+            <Button asChild className="mt-6">
+              <Link href="/pricing">
+                {nativeLanguage === 'Sinhala' ? 'Upgrade කරන්න' : 'Upgrade Plan'}
+              </Link>
+            </Button>
+          )}
+          <Button variant="outline" asChild className="mt-4">
             <Link href="/dashboard">
               {nativeLanguage === 'Sinhala' ? 'ආපසු යන්න' : 'Back to Dashboard'}
             </Link>
