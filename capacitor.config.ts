@@ -8,6 +8,7 @@ const config: CapacitorConfig = {
     url: 'https://lingoforge.app?app=1',
     cleartext: false,
   },
+
   android: {
     allowMixedContent: false,
     backgroundColor: '#0f1923',
