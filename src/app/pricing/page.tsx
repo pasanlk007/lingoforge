@@ -42,7 +42,11 @@ function PricingPageLoading() {
 }
 
 function PricingPageContent() {
-  const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
+  const isApp = typeof window !== 'undefined' && (
+    !!(window as any).Capacitor?.isNativePlatform?.() ||
+    window.location.search.includes('app=1') ||
+    (navigator.userAgent.includes('wv') && navigator.userAgent.includes('Android'))
+  );
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const { user, isUserLoading } = useUser();
