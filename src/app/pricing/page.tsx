@@ -42,6 +42,7 @@ function PricingPageLoading() {
 }
 
 function PricingPageContent() {
+  const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const { user, isUserLoading } = useUser();
@@ -159,17 +160,23 @@ function PricingPageContent() {
                   <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ සති 12 සම්පූර්ණ කළ පසු ගෙවීම් ස්වයංක්‍රීයව නවතී</p>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-                    <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link>
-                  </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">හෝ</span>
-                    <div className="h-px flex-1 bg-border" />
-                  </div>
-                  <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
-                    🇱🇰 LKR වලින් ගෙවන්න
-                  </Button>
+                  {!isApp ? (
+                    <>
+                      <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                        <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link>
+                      </Button>
+                      <div className="flex w-full items-center gap-2">
+                        <div className="h-px flex-1 bg-border" />
+                        <span className="text-xs text-muted-foreground">හෝ</span>
+                        <div className="h-px flex-1 bg-border" />
+                      </div>
+                      <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
+                        🇱🇰 LKR වලින් ගෙවන්න
+                      </Button>
+                    </>
+                  ) : (
+                    <p className="text-xs text-muted-foreground text-center py-2">lingoforge.app ෙදෙස් subscribe කරන්න</p>
+                  )}
                 </CardFooter>
               </Card>
 
@@ -186,23 +193,29 @@ function PricingPageContent() {
                   </div>
                    <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
                     <li>✅ එක් භාෂාවක් - සම්පූර්ණ ප්‍රවේශය</li>
-                    <li>✅ unlock (sequential)</li>
+                    <li>✅  unlock (sequential)</li>
                     <li>✅ Alphabet, Numbers, Survival - සම්පූර්ණ</li>
                     <li>✅ එකවරක් - Lifetime access</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                   <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
-                    <Link href={COURSE_URL} target="_blank">Pay in USD</Link>
-                  </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">හෝ</span>
-                    <div className="h-px flex-1 bg-border" />
-                  </div>
-                  <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
-                    🇱🇰 LKR වලින් ගෙවන්න
-                  </Button>
+                  {!isApp ? (
+                     <>
+                        <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
+                          <Link href={COURSE_URL} target="_blank">Pay in USD</Link>
+                        </Button>
+                        <div className="flex w-full items-center gap-2">
+                          <div className="h-px flex-1 bg-border" />
+                          <span className="text-xs text-muted-foreground">හෝ</span>
+                          <div className="h-px flex-1 bg-border" />
+                        </div>
+                        <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
+                          🇱🇰 LKR වලින් ගෙවන්න
+                        </Button>
+                     </>
+                  ) : (
+                    <p className="text-xs text-muted-foreground text-center py-2">lingoforge.app ෙදෙස් subscribe කරන්න</p>
+                  )}
                 </CardFooter>
               </Card>
 
@@ -226,17 +239,23 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
-                    <Link href={LIFETIME_URL} target="_blank">Pay in USD</Link>
-                  </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">හෝ</span>
-                    <div className="h-px flex-1 bg-border" />
-                  </div>
-                  <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">
-                    🇱🇰 LKR වලින් ගෙවන්න
-                  </Button>
+                  {!isApp ? (
+                    <>
+                      <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
+                        <Link href={LIFETIME_URL} target="_blank">Pay in USD</Link>
+                      </Button>
+                      <div className="flex w-full items-center gap-2">
+                        <div className="h-px flex-1 bg-border" />
+                        <span className="text-xs text-muted-foreground">හෝ</span>
+                        <div className="h-px flex-1 bg-border" />
+                      </div>
+                      <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">
+                        🇱🇰 LKR වලින් ගෙවන්න
+                      </Button>
+                    </>
+                  ) : (
+                    <p className="text-xs text-muted-foreground text-center py-2">lingoforge.app ෙදෙස් subscribe කරන්න</p>
+                  )}
                 </CardFooter>
               </Card>
             </div>
