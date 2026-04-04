@@ -38,7 +38,9 @@ jobs:
         run: chmod +x android/gradlew
 
       - name: Decode Keystore
-        run: python3 -c "import base64, os; open('android/app/lingoforge-release.keystore', 'wb').write(base64.b64decode('${{ secrets.KEYSTORE_BASE64 }}'))"
+        env:
+          KEYSTORE_B64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: echo "$KEYSTORE_B64" | tr -d ' \n\r' | base64 -d > android/app/lingoforge-release.keystore
 
       - name: Build Signed AAB
         run: cd android && ./gradlew bundleRelease
