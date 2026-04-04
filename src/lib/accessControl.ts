@@ -104,3 +104,17 @@ export function canAccessLesson(
 
   return { allowed: false, reason: 'locked' };
 }
+
+// Broken lesson combinations - no content available
+export const brokenCombinations: Record<string, string[]> = {
+  'bengali': ['finnish', 'serbian'],
+  'hindi': ['finnish', 'serbian'],
+  'nepali': ['finnish', 'serbian'],
+  'urdu': ['finnish', 'serbian', 'romanian'],
+};
+
+export function isLessonAvailable(nativeLanguage: string, targetLanguage: string): boolean {
+  const broken = brokenCombinations[nativeLanguage.toLowerCase()];
+  if (!broken) return true;
+  return !broken.includes(targetLanguage.toLowerCase());
+}

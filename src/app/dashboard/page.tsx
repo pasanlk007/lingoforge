@@ -29,6 +29,7 @@ import { PathCard } from '@/components/PathCard';
 import { PATHS } from '@/lib/constants';
 import { cn } from "@/lib/utils";
 import { nativeLanguages, translations, targetLanguages } from "@/lib/translations";
+import { isLessonAvailable } from "@/lib/accessControl";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ReminderCard } from "@/components/ReminderCard";
 import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from "@/firebase";
@@ -201,9 +202,9 @@ function DashboardContent({ user }: { user: User }) {
   
   const availableTargetLanguages = useMemo(() => {
     if (nativeLanguage === 'English') {
-        return targetLanguages.filter(l => l.lang !== 'English');
+        return targetLanguages.filter(l => l.lang !== 'English' && isLessonAvailable(nativeLanguage, l.lang));
     }
-    return targetLanguages;
+    return targetLanguages.filter(l => isLessonAvailable(nativeLanguage, l.lang));
   }, [nativeLanguage]);
 
   const si_t = (englishText: string) => {
