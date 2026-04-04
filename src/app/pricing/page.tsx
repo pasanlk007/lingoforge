@@ -1,5 +1,4 @@
 'use client';
-import { isNativeApp } from '@/lib/isNativeApp';
 
 import { useState, useEffect, Suspense } from 'react';
 import { Check } from 'lucide-react';
@@ -68,7 +67,6 @@ function PricingPageContent() {
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   
   const langParam = encodeURIComponent(targetLanguage.toLowerCase());
-  const isApp = isNativeApp();
 
   const handlePayhere = async (plan: string) => {
     if (!user) return;
@@ -162,14 +160,14 @@ function PricingPageContent() {
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
                   <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-                    {!isApp ? <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link> : <span className="text-muted-foreground text-xs">Visit lingoforge.app to subscribe</span>}
+                    <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link>
                   </Button>
                   <div className="flex w-full items-center gap-2">
                     <div className="h-px flex-1 bg-border" />
                     <span className="text-xs text-muted-foreground">හෝ</span>
                     <div className="h-px flex-1 bg-border" />
                   </div>
-                  {!isApp && <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
+                  <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
                     🇱🇰 LKR වලින් ගෙවන්න
                   </Button>
                 </CardFooter>
@@ -202,7 +200,7 @@ function PricingPageContent() {
                     <span className="text-xs text-muted-foreground">හෝ</span>
                     <div className="h-px flex-1 bg-border" />
                   </div>
-                  {!isApp && <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
+                  <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
                     🇱🇰 LKR වලින් ගෙවන්න
                   </Button>
                 </CardFooter>
