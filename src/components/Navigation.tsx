@@ -20,13 +20,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { nativeLanguages, targetLanguages, translations } from "@/lib/translations";
 
 
-function isNativeApp() {
-  if (typeof window === 'undefined') return false;
-  return !!(window as any).Capacitor?.isNativePlatform?.() ||
-    window.location.search.includes('app=1') ||
-    (navigator.userAgent.includes('wv') && navigator.userAgent.includes('Android'));
-}
-
 export function Navigation() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const { user, isUserLoading } = useUser();
@@ -106,7 +99,6 @@ export function Navigation() {
             </Link>
             <Link
               href="/pricing"
-              style={{display: isNativeApp() ? 'none' : undefined}}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Pricing
