@@ -300,7 +300,7 @@ function DashboardContent({ user }: { user: User }) {
                       <button
                         key={lang}
                         onClick={() => handleNativeLanguageChange(lang)}
-                        disabled={["Hindi", "Bengali", "Nepali", "Urdu"].includes(lang)}
+                        disabled={false}
                         className={cn(
                           "px-3 py-1.5 rounded-full text-xs font-bold border-2 transition-all disabled:opacity-30 disabled:cursor-not-allowed", 
                           nativeLanguage === lang 
