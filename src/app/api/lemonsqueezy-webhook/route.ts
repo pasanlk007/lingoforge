@@ -147,7 +147,9 @@ export async function POST(req: Request) {
       return new NextResponse('OK', { status: 200 });
     }
 
-    if (eventName === 'subscription_created' || eventName === 'order_created' || eventName === 'subscription_updated') {
+    const subStatus = payload.data?.attributes?.status;
+    if (eventName === 'subscription_created' || eventName === 'order_created' || 
+        (eventName === 'subscription_updated' && subStatus === 'active')) {
       const renewsAt = payload.data?.attributes?.renews_at || null;
       const endsAt = payload.data?.attributes?.ends_at || null;
       const productName = (payload.data?.attributes?.product_name || '').toLowerCase();
