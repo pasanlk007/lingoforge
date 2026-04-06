@@ -165,7 +165,12 @@ export async function POST(req: Request) {
     }
 
     if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
-      await updateUserDoc(userDoc.name, false, new Date().toISOString(), token);
+      const endsAt = payload.data?.attributes?.ends_at;
+      const renewsAt = payload.data?.attributes?.renews_at;
+      // If ends_at is in the future, keep active until then
+      const expiryDate = endsAt || renewsAt;
+      const isStillActive = expiryDate && new Date(expiryDate) > new Date();
+      await updateUserDoc(userDoc.name, isStillActive ? true : false, expiryDate || new Date().toISOString(), token);
     }
 
     return new NextResponse('OK', { status: 200 });
