@@ -162,6 +162,14 @@ function DashboardContent({ user }: { user: User }) {
         if (!nativeLanguages.includes(initialNative)) initialNative = 'English';
         if (initialNative === 'English' && initialTarget === 'English') initialTarget = 'French';
         
+        // For weekly/course plan, force subscribed language
+        if (userProfile.subscriptionActive && 
+            userProfile.subscriptionLanguage && 
+            (userProfile.subscriptionPlan === 'weekly' || userProfile.subscriptionPlan === 'course')) {
+          const subLang = userProfile.subscriptionLanguage.charAt(0).toUpperCase() + userProfile.subscriptionLanguage.slice(1);
+          initialTarget = subLang;
+        }
+        
         setNativeLanguage(initialNative);
         setTargetLanguage(initialTarget);
         localStorage.setItem("nativeLanguage", initialNative);
