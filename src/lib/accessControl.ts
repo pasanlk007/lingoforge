@@ -83,13 +83,11 @@ export function canAccessLesson(
         return { allowed: false, reason: 'wrong_language' };
       }
       
-      // Weekly plan: week 1 always free, week 2+ unlock sequentially
-      if (week === 1) return { allowed: true };
-      if (week === 2) return { allowed: true }; // First payment unlocks week 2
-      const completedDays = profile.languageProgress?.[language?.toLowerCase()]?.[path]?.completedDays || [];
-      const prevWeekDays = completedDays.filter((d: string) => d.startsWith(week-1 + '-'));
-      if (prevWeekDays.length >= 7) return { allowed: true };
-      return { allowed: false, reason: 'complete_previous_week' };
+      // Check permanent unlockedWeeks first
+      const langKey = language?.toLowerCase() || '';
+      const unlockedWeeks: number[] = profile.unlockedWeeks?.[langKey]?.[path] || [1];
+      if (unlockedWeeks.includes(week)) return { allowed: true };
+      return { allowed: false, reason: 'week_not_unlocked' };
     }
     
     // Lifetime - full access

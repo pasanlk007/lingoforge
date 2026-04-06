@@ -161,6 +161,27 @@ export async function POST(req: Request) {
       else plan = 'weekly';
 
       await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan, customLanguage);
+      
+      // Permanently unlock week 1 + week 2 for weekly plan
+      if (plan === 'weekly' && customLanguage) {
+        const langKey = customLanguage.toLowerCase();
+        const unlockUrl = `https://firestore.googleapis.com/v1/${userDoc.name}?updateMask.fieldPaths=unlockedWeeks.${langKey}.survival`;
+        await fetch(unlockUrl, {
+          method: 'PATCH',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            fields: {
+              [`unlockedWeeks.${langKey}.survival`]: {
+                arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
+              }
+            }
+          }),
+        });
+      }
+      
       console.log('✅ Subscription activated for:', userEmail, 'plan:', plan);
     }
 

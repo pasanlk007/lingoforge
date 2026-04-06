@@ -122,11 +122,22 @@ if (!userProfileRef || !dayData) return;
         const pathKey = dayData.path;
         const dayKeyToSave = `${dayData.week}-${currentDay}`;
 
-        updateDocumentNonBlocking(userProfileRef, {
+        const updateData: any = {
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
           [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
           [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-        });
+        };
+
+        // If day 7 complete, permanently unlock next week
+        if (currentDay === 7) {
+          const nextWeekNum = dayData.week + 1;
+          const currentUnlocked = userProfile?.unlockedWeeks?.[langKey]?.[pathKey] || [1];
+          if (!currentUnlocked.includes(nextWeekNum)) {
+            updateData[`unlockedWeeks.${langKey}.${pathKey}`] = arrayUnion(nextWeekNum);
+          }
+        }
+
+        updateDocumentNonBlocking(userProfileRef, updateData);
     };
     
     const weekProgress = (currentDay / 7) * 100;
