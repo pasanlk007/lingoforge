@@ -3,6 +3,10 @@ import { FirebaseClientProvider } from "@/firebase/client-provider";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
 
 export const metadata = {
+  metadataBase: new URL('https://lingoforge.app'),
+  alternates: {
+    canonical: '/',
+  },
   title: "LingoForge",
   description: "Survive. Speak. Belong. - Language learning for migrant workers",
   icons: {
