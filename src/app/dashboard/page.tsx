@@ -189,6 +189,16 @@ function DashboardContent({ user }: { user: User }) {
   }, [userProfile, userProfileRef]);
 
   const handleTargetLanguageChange = (newLang: string) => {
+    // Weekly/course plan users locked to subscribed language
+    if (userProfile?.subscriptionActive && 
+        userProfile?.subscriptionLanguage && 
+        (userProfile?.subscriptionPlan === 'weekly' || userProfile?.subscriptionPlan === 'course')) {
+      const subLang = userProfile.subscriptionLanguage.charAt(0).toUpperCase() + userProfile.subscriptionLanguage.slice(1);
+      if (newLang.toLowerCase() !== userProfile.subscriptionLanguage.toLowerCase()) {
+        alert('ඔබේ subscription ' + subLang + ' language ෙදෙස` පමණි. Lifetime plan ෙදෙස` upgrade කරන්නකො!');
+        return;
+      }
+    }
     setTargetLanguage(newLang);
     if (userProfileRef) {
         updateDocumentNonBlocking(userProfileRef, { selectedLanguage: newLang });
