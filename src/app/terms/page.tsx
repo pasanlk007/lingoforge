@@ -98,6 +98,8 @@ export default function TermsPage() {
             <h2>Limitation of Liability</h2>
             <p>LingoForge, its directors, employees, or affiliates shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from use of our service. We make no warranties regarding the accuracy or suitability of our language learning content.</p>
 
+            <h2>Intellectual Property</h2>
+            <p>All content on LingoForge website including text, images, logos, and graphics are protected by intellectual property rights and are the property of LingoForge/BhashaGuru or its licensors. You may not use, reproduce, distribute, or modify any content without prior written consent.</p>
             <h2>Amendments</h2>
             <p>We reserve the right to modify these Terms at any time. Users are responsible for reviewing terms periodically.</p>
 
