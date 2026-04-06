@@ -1,8 +1,10 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/__/auth/:path*",
-      "destination": "https://studio-3754329818-ee8cf.firebaseapp.com/__/auth/:path*"
+      "source": "/:path*",
+      "has": [{"type": "host", "value": "www.lingoforge.app"}],
+      "destination": "https://lingoforge.app/:path*",
+      "permanent": true
     }
   ]
 }
