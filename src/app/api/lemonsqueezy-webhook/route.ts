@@ -1,4 +1,3 @@
-
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
@@ -11,11 +10,7 @@ function verifySignature(payload: string, signature: string, secret: string): bo
 function createJWT(): string {
   const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
   const clientEmail = (process.env.FIREBASE_CLIENT_EMAIL || '').trim();
-
-  // --- DEBUG LOGGING ---
   console.log('Using client email:', clientEmail);
-  console.log('Using private key (first 50 chars):', privateKey.substring(0, 50));
-  // --- END DEBUG LOGGING ---
   
   const now = Math.floor(Date.now() / 1000);
   const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
@@ -32,14 +27,7 @@ function createJWT(): string {
   const sign = crypto.createSign('RSA-SHA256');
   sign.update(signingInput);
   const signature = sign.sign(privateKey, 'base64url');
-  
-  const jwt = `${signingInput}.${signature}`;
-
-  // --- DEBUG LOGGING ---
-  console.log('Generated JWT:', jwt);
-  // --- END DEBUG LOGGING ---
-
-  return jwt;
+  return `${signingInput}.${signature}`;
 }
 
 async function getAccessToken(): Promise<string> {
@@ -52,44 +40,25 @@ async function getAccessToken(): Promise<string> {
       assertion: jwt,
     }),
   });
-
   const data = await response.json();
-
-  if (!data.access_token) {
-    // --- DEBUG LOGGING ---
-    console.error('Failed to get access token. Google response:', data);
-    // --- END DEBUG LOGGING ---
-    throw new Error('Failed to get access token: ' + JSON.stringify(data));
-  }
-
+  if (!data.access_token) throw new Error('Failed to get access token: ' + JSON.stringify(data));
   return data.access_token;
 }
 
 async function findUserByEmail(email: string, token: string) {
   const projectId = process.env.FIREBASE_PROJECT_ID;
   const url = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents:runQuery`;
-  
   const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
+    headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       structuredQuery: {
         from: [{ collectionId: 'userProfiles' }],
-        where: {
-          fieldFilter: {
-            field: { fieldPath: 'email' },
-            op: 'EQUAL',
-            value: { stringValue: email.toLowerCase() },
-          },
-        },
+        where: { fieldFilter: { field: { fieldPath: 'email' }, op: 'EQUAL', value: { stringValue: email.toLowerCase() } } },
         limit: 1,
       },
     }),
   });
-  
   const data = await response.json();
   if (data[0]?.document) return data[0].document;
   return null;
@@ -103,16 +72,11 @@ async function updateUserDoc(docName: string, active: boolean, expiry: string | 
   if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
   if (plan) fields.subscriptionPlan = { stringValue: plan };
   if (customLanguage) fields.subscriptionLanguage = { stringValue: customLanguage };
-
   const fieldPaths = Object.keys(fields).map(k => `updateMask.fieldPaths=${k}`).join('&');
   const url = `https://firestore.googleapis.com/v1/${docName}?${fieldPaths}`;
-  
   await fetch(url, {
     method: 'PATCH',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json',
-    },
+    headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ fields }),
   });
 }
@@ -122,30 +86,18 @@ export async function POST(req: Request) {
     const rawBody = await req.text();
     const signature = req.headers.get('x-signature') || '';
     const secret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET || '';
-
-    if (!verifySignature(rawBody, signature, secret)) {
-      return new NextResponse('Invalid signature', { status: 401 });
-    }
+    if (!verifySignature(rawBody, signature, secret)) return new NextResponse('Invalid signature', { status: 401 });
 
     const payload = JSON.parse(rawBody);
     const eventName = payload.meta?.event_name;
     const userEmail = payload.data?.attributes?.user_email;
     const testMode = payload.meta?.test_mode || payload.data?.attributes?.test_mode;
-
-    if (testMode) {
-      console.log('Test mode skipped');
-      return new NextResponse('OK', { status: 200 });
-    }
-
+    if (testMode) { console.log('Test mode skipped'); return new NextResponse('OK', { status: 200 }); }
     if (!userEmail) return new NextResponse('OK', { status: 200 });
 
     const token = await getAccessToken();
     const userDoc = await findUserByEmail(userEmail, token);
-
-    if (!userDoc) {
-      console.log('User not found:', userEmail);
-      return new NextResponse('OK', { status: 200 });
-    }
+    if (!userDoc) { console.log('User not found:', userEmail); return new NextResponse('OK', { status: 200 }); }
 
     const subStatus = payload.data?.attributes?.status;
     if (eventName === 'subscription_created' || eventName === 'order_created' || 
@@ -158,55 +110,38 @@ export async function POST(req: Request) {
       let plan = 'weekly';
       if (productName.includes('lifetime')) plan = 'lifetime';
       else if (productName.includes('course')) plan = 'course';
-      else plan = 'weekly';
 
-      // Permanently save unlockedContent based on plan
       if (customLanguage) {
         const targetLang = customLanguage.toLowerCase();
-        
+        const contentKey = `${targetLang}_survival`;
         let unlockFields: any = {};
         
-        const contentKey = `${targetLang}_survival`;
-        
         if (plan === 'lifetime') {
-          // Lifetime - unlock everything
           unlockFields['unlockedContent.all'] = { booleanValue: true };
         } else if (plan === 'course') {
-          // Course - unlock all 12 weeks for this language
           unlockFields[`unlockedContent.${contentKey}`] = {
             arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: i + 1 })) }
           };
-        } else if (plan === 'weekly') {
-          // Weekly - unlock week 1 + week 2 permanently
+        } else {
           unlockFields[`unlockedContent.${contentKey}`] = {
             arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
           };
         }
         
-        if (Object.keys(unlockFields).length > 0) {
-          const fieldPaths = Object.keys(unlockFields).map(k => `updateMask.fieldPaths=${k}`).join('&');
-          const unlockUrl = `https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`;
-          await fetch(unlockUrl, {
-            method: 'PATCH',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ fields: unlockFields }),
-          });
-          console.log('✅ Permanently unlocked content for:', userEmail, 'plan:', plan, 'language:', targetLang);
-        }
+        const fieldPaths = Object.keys(unlockFields).map(k => `updateMask.fieldPaths=${k}`).join('&');
+        await fetch(`https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`, {
+          method: 'PATCH',
+          headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ fields: unlockFields }),
+        });
+        console.log('✅ Permanently unlocked:', userEmail, plan, targetLang);
       }
       
       await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan, customLanguage);
-      console.log('✅ Subscription activated for:', userEmail, 'plan:', plan);
     }
 
     if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
-      const endsAt = payload.data?.attributes?.ends_at;
-      const renewsAt = payload.data?.attributes?.renews_at;
-      // If ends_at is in the future, keep active until then
-      const expiryDate = endsAt || renewsAt;
+      const expiryDate = payload.data?.attributes?.ends_at || payload.data?.attributes?.renews_at;
       const isStillActive = expiryDate && new Date(expiryDate) > new Date();
       await updateUserDoc(userDoc.name, isStillActive ? true : false, expiryDate || new Date().toISOString(), token);
     }
