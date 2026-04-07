@@ -178,7 +178,7 @@ export async function POST(req: Request) {
           };
         } else if (plan === 'weekly') {
           // Weekly - unlock week 1 + week 2 permanently
-          const contentKey = `english_${targetLang}_survival`;
+          const contentKey = `${targetLang}_survival`;
           unlockFields[`unlockedContent.${contentKey}`] = {
             arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
           };

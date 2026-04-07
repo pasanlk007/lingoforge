@@ -50,10 +50,8 @@ export function canAccessLesson(
       return { allowed: true };
     }
 
-    // Check unlockedContent for this specific combination
-    const nativeLang = (nativeLanguage || profile.nativeLanguage || 'english').toLowerCase();
-    const targetLang = langKey;
-    const contentKey = `${nativeLang}_${targetLang}_survival`;
+    // Check unlockedContent - simple key: targetLanguage_path
+    const contentKey = `${langKey}_survival`;
     const unlockedWeeks: number[] = profile.unlockedContent?.[contentKey] || [];
     
     if (unlockedWeeks.includes(week)) return { allowed: true };
