@@ -1,3 +1,4 @@
+
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 
@@ -45,6 +46,21 @@ export async function POST(req: NextRequest) {
     
     if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
     if (language) fields.subscriptionLanguage = { stringValue: language };
+
+    // Add unlockedContent logic, similar to lemonsqueezy webhook
+    const contentKey = `${language}_survival`;
+    if (plan === 'lifetime') {
+        fields['unlockedContent.all'] = { booleanValue: true };
+    } else if (plan === 'course') {
+        fields[`unlockedContent.${contentKey}`] = {
+            arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: i + 1 })) }
+        };
+    } else if (plan === 'weekly') {
+        // For weekly, we just ensure week 1 and 2 are unlocked.
+         fields[`unlockedContent.${contentKey}`] = {
+            arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
+        };
+    }
 
     const fieldPaths = Object.keys(fields).map(k => `updateMask.fieldPaths=${k}`).join('&');
     const url = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/userProfiles/${userId}?${fieldPaths}`;

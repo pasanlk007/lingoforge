@@ -162,23 +162,22 @@ export async function POST(req: Request) {
 
       // Permanently save unlockedContent based on plan
       if (customLanguage) {
-        const nativeLang = 'english'; // default, will be overridden by user profile
         const targetLang = customLanguage.toLowerCase();
         
         let unlockFields: any = {};
+        
+        const contentKey = `${targetLang}_survival`;
         
         if (plan === 'lifetime') {
           // Lifetime - unlock everything
           unlockFields['unlockedContent.all'] = { booleanValue: true };
         } else if (plan === 'course') {
           // Course - unlock all 12 weeks for this language
-          const contentKey = `english_${targetLang}_survival`;
           unlockFields[`unlockedContent.${contentKey}`] = {
-            arrayValue: { values: [1,2,3,4,5,6,7,8,9,10,11,12].map(n => ({ integerValue: n })) }
+            arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: i + 1 })) }
           };
         } else if (plan === 'weekly') {
           // Weekly - unlock week 1 + week 2 permanently
-          const contentKey = `${targetLang}_survival`;
           unlockFields[`unlockedContent.${contentKey}`] = {
             arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
           };

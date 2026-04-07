@@ -1,3 +1,4 @@
+
 'use client';
 import type { UserProfile } from '@/lib/types';
 
@@ -46,8 +47,7 @@ export function canAccessLesson(
   }
 
   const contentKey = `${langKey}_${path}`;
-  const legacyKey = `english_${langKey}_${path}`;
-  const unlockedWeeks: any = profile.unlockedContent?.[contentKey] || profile.unlockedContent?.[legacyKey] || [];
+  const unlockedWeeks: any = profile.unlockedContent?.[contentKey] || [];
   if (Array.isArray(unlockedWeeks) && unlockedWeeks.map(Number).includes(Number(week))) {
     return { allowed: true };
   }
