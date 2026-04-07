@@ -51,7 +51,8 @@ export function canAccessLesson(
     }
 
     // Check unlockedContent - simple key: targetLanguage_path
-    const contentKey = `${langKey}_survival`;
+    const nativeLang = (profile.nativeLanguage || 'english').toLowerCase().replace(' ', '');
+    const contentKey = `${nativeLang}_${langKey}_survival`;
     const unlockedWeeks: number[] = (profile.unlockedContent?.[contentKey] as number[] || []).map(Number);
     
     console.log('DEBUG:', {contentKey, unlockedWeeks, week: Number(week), type: typeof week, includes: unlockedWeeks.includes(Number(week)), rawContent: profile.unlockedContent});
