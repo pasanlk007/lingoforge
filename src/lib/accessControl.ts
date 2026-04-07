@@ -23,54 +23,43 @@ export function canAccessLesson(
     profile: UserProfile | null;
   }
 ): AccessResult {
-  const { path, week, day, language, nativeLanguage, userEmail, profile } = params;
+  const { path, week, day, language, userEmail, profile } = params;
 
-  // Admin - full access
   if (isAdmin(userEmail)) return { allowed: true };
-
-  // Alphabet & Numbers - always free
   if (path === 'alphabet' || path === 'numbers') return { allowed: true };
-
-  // Week 1 survival - always free
   if (path === 'survival' && week === 1) return { allowed: true };
-
-  // Pro path - first 3 days free
-  if (path === 'pro' && day <= 3) return { allowed: true };
-
+  if (path === 'pro' && day <= 5) return { allowed: true };
   if (!profile) return { allowed: false, reason: 'locked' };
 
-  // ===== LIFETIME CHECK =====
-  if (profile.unlockedContent?.all === true) return { allowed: true };
+  const langKey = language?.toLowerCase() || '';
 
-  // ===== WEEK 12 GRADUATE =====
-  if (path === 'survival') {
-    const langKey = language?.toLowerCase() || '';
-    const completedDays = profile.languageProgress?.[langKey]?.['survival']?.completedDays || [];
-    if (completedDays.filter((d: string) => d.startsWith('12-')).length >= 7) {
-      return { allowed: true };
-    }
-
-    // Check unlockedContent - simple key: targetLanguage_path
-    const nativeLang = (profile.nativeLanguage || 'english').toLowerCase().replace(' ', '');
-    const contentKey = `${nativeLang}_${langKey}_survival`;
-    const unlockedWeeks: number[] = (profile.unlockedContent?.[contentKey] as number[] || []).map(Number);
-    
-    console.log('DEBUG:', {contentKey, unlockedWeeks, week: Number(week), type: typeof week, includes: unlockedWeeks.includes(Number(week)), rawContent: profile.unlockedContent});
-    if (unlockedWeeks.includes(Number(week))) return { allowed: true };
-    
-    return { allowed: false, reason: 'week_not_unlocked' };
+  if (profile.subscriptionPlan === 'lifetime' || profile.unlockedContent?.all === true) {
+    return { allowed: true };
   }
 
-  // ===== PRO PATH =====
-  if (path === 'pro') {
-    if (profile.unlockedContent?.all === true) return { allowed: true };
-    return { allowed: false, reason: 'lifetime_required' };
+  if (profile.subscriptionActive) {
+    const isMatchingLanguage = profile.subscriptionLanguage?.toLowerCase() === langKey;
+    const isNotExpired = !profile.subscriptionExpiry || new Date(profile.subscriptionExpiry) > new Date();
+    if (isMatchingLanguage && isNotExpired) {
+      if (path === 'survival' || path === 'pro') return { allowed: true };
+    }
+  }
+
+  const contentKey = `${langKey}_${path}`;
+  const legacyKey = `english_${langKey}_${path}`;
+  const unlockedWeeks: any = profile.unlockedContent?.[contentKey] || profile.unlockedContent?.[legacyKey] || [];
+  if (Array.isArray(unlockedWeeks) && unlockedWeeks.map(Number).includes(Number(week))) {
+    return { allowed: true };
+  }
+
+  if (path === 'survival') {
+    const completedDays = profile.languageProgress?.[langKey]?.['survival']?.completedDays || [];
+    if (completedDays.filter((d: string) => d.startsWith('12-')).length >= 7) return { allowed: true };
   }
 
   return { allowed: false, reason: 'locked' };
 }
 
-// Broken lesson combinations - no content available
 export const brokenCombinations: Record<string, string[]> = {
   'bengali': ['finnish', 'serbian'],
   'hindi': ['finnish', 'serbian'],
