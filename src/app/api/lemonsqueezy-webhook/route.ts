@@ -112,37 +112,65 @@ export async function POST(req: Request) {
       if (productName.includes('lifetime')) plan = 'lifetime';
       else if (productName.includes('course')) plan = 'course';
 
+      const fieldsToUpdate: any = {};
+      const updateMasks: string[] = [];
+
+      // Lifetime Plan
       if (plan === 'lifetime') {
-        const unlockFields: any = { 'unlockedContent.all': { booleanValue: true } };
-        const fieldPaths = 'updateMask.fieldPaths=unlockedContent.all';
-        await fetch(`https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`, {
-          method: 'PATCH',
-          headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({ fields: unlockFields }),
-        });
+        fieldsToUpdate.unlockedContent = { mapValue: { fields: { all: { booleanValue: true } } } };
+        updateMasks.push('unlockedContent');
         console.log('✅ Permanently unlocked LIFETIME for:', userEmail);
-      } else if (customLanguage && (plan === 'course' || plan === 'weekly')) {
+      
+      // Course Plan
+      } else if (customLanguage && plan === 'course') {
         const targetLang = customLanguage.toLowerCase();
         const contentKey = `${targetLang}_survival`;
-        let unlockFields: any = {};
+        const allWeeks = Array.from({length: 12}, (_, i) => ({ integerValue: (i + 1).toString() }));
         
-        if (plan === 'course') {
-          unlockFields[`unlockedContent.${contentKey}`] = {
-            arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: i + 1 })) }
-          };
-        } else { // weekly plan
-          unlockFields[`unlockedContent.${contentKey}`] = {
-            arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
-          };
-        }
+        const existingContent = userDoc.fields?.unlockedContent?.mapValue?.fields || {};
+        fieldsToUpdate.unlockedContent = {
+            mapValue: {
+                fields: {
+                    ...existingContent,
+                    [contentKey]: { arrayValue: { values: allWeeks } }
+                }
+            }
+        };
+        updateMasks.push('unlockedContent');
+        console.log('✅ Permanently unlocked COURSE for:', userEmail, targetLang);
+      
+      // Weekly Plan - Permanently unlocks the next week
+      } else if (customLanguage && plan === 'weekly') {
+        const targetLang = customLanguage.toLowerCase();
+        const contentKey = `${targetLang}_survival`;
         
-        const fieldPaths = Object.keys(unlockFields).map(k => `updateMask.fieldPaths=${k}`).join('&');
+        const existingContent = userDoc.fields?.unlockedContent?.mapValue?.fields || {};
+        const existingWeeksArray = existingContent[contentKey]?.arrayValue?.values || [];
+        const existingWeeks = existingWeeksArray.map((v: any) => parseInt(v.integerValue || '0', 10)).filter(Boolean);
+
+        const nextWeek = existingWeeks.length > 0 ? Math.max(...existingWeeks) + 1 : 2; // Week 1 is free
+        const newUnlockedWeeks = [...new Set([...existingWeeks, nextWeek])].sort((a,b) => a-b);
+        
+        fieldsToUpdate.unlockedContent = {
+            mapValue: {
+                fields: {
+                    ...existingContent,
+                    [contentKey]: { arrayValue: { values: newUnlockedWeeks.map(w => ({ integerValue: w.toString() })) } }
+                }
+            }
+        };
+        updateMasks.push('unlockedContent');
+        console.log(`✅ Unlocked week ${nextWeek} for:`, userEmail, targetLang);
+      }
+
+      // Perform the Firestore update if there are fields to update
+      if (updateMasks.length > 0) {
+        const fieldPaths = updateMasks.map(k => `updateMask.fieldPaths=${k}`).join('&');
         await fetch(`https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`, {
           method: 'PATCH',
           headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({ fields: unlockFields }),
+          body: JSON.stringify({ fields: fieldsToUpdate }),
         });
-        console.log('✅ Permanently unlocked:', userEmail, plan, targetLang);
       }
       
       await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan, customLanguage);

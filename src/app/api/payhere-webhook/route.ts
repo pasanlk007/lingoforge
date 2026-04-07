@@ -34,36 +34,60 @@ export async function POST(req: NextRequest) {
     const projectId = process.env.FIREBASE_PROJECT_ID!;
     const token = await getFirebaseToken();
     
-    const expiry = plan === 'weekly' 
-      ? new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString() 
-      : null;
+    // Fetch the user document to read existing unlocked content
+    const userDocUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/userProfiles/${userId}`;
+    const userDocRes = await fetch(userDocUrl, { headers: { Authorization: `Bearer ${token}` } });
+    if (!userDocRes.ok) {
+        console.error('PayHere webhook: Failed to fetch user doc for ID:', userId);
+        return new NextResponse('User not found', { status: 404 });
+    }
+    const userDoc = await userDocRes.json();
 
     const fields: Record<string, unknown> = {
       subscriptionActive: { booleanValue: true },
       subscriptionPlan: { stringValue: plan },
       subscriptionSource: { stringValue: 'payhere' },
     };
-    
-    if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
     if (language) fields.subscriptionLanguage = { stringValue: language };
+    
+    const expiry = plan === 'weekly' 
+      ? new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString() 
+      : null;
+    if (expiry) fields.subscriptionExpiry = { stringValue: expiry };
 
-    // Add unlockedContent logic, similar to lemonsqueezy webhook
+    // Handle permanent content unlocks
     const contentKey = `${language}_survival`;
+    const existingContent = userDoc.fields?.unlockedContent?.mapValue?.fields || {};
+    let unlockedContentChanges = {};
+
     if (plan === 'lifetime') {
-        fields['unlockedContent.all'] = { booleanValue: true };
+        unlockedContentChanges = { all: { booleanValue: true } };
     } else if (plan === 'course') {
-        fields[`unlockedContent.${contentKey}`] = {
-            arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: i + 1 })) }
+        unlockedContentChanges = {
+            ...existingContent,
+            [contentKey]: {
+                arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: (i + 1).toString() })) }
+            }
         };
     } else if (plan === 'weekly') {
-        // For weekly, we just ensure week 1 and 2 are unlocked.
-         fields[`unlockedContent.${contentKey}`] = {
-            arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
+        const existingWeeksArray = existingContent[contentKey]?.arrayValue?.values || [];
+        const existingWeeks = existingWeeksArray.map((v: any) => parseInt(v.integerValue || '0', 10)).filter(Boolean);
+
+        const nextWeek = existingWeeks.length > 0 ? Math.max(...existingWeeks) + 1 : 2; // Week 1 is free
+        const newUnlockedWeeks = [...new Set([...existingWeeks, nextWeek])].sort((a,b) => a-b);
+        
+        unlockedContentChanges = {
+            ...existingContent,
+            [contentKey]: { arrayValue: { values: newUnlockedWeeks.map(w => ({ integerValue: w.toString() })) } }
         };
     }
 
+    if (Object.keys(unlockedContentChanges).length > 0) {
+        fields.unlockedContent = { mapValue: { fields: unlockedContentChanges } };
+    }
+
     const fieldPaths = Object.keys(fields).map(k => `updateMask.fieldPaths=${k}`).join('&');
-    const url = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/userProfiles/${userId}?${fieldPaths}`;
+    const url = `https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`;
 
     await fetch(url, {
       method: 'PATCH',
