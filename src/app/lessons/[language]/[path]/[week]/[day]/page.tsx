@@ -65,6 +65,7 @@ export default function LessonPage() {
     profile: userProfile || null,
   });
   const hasAccess = accessResult.allowed;
+  console.log("USERPROFILE UNLOCKED:", userProfile?.unlockedContent, "NATIVE:", userProfile?.nativeLanguage);
 
   useEffect(() => {
     setIsMounted(true);
