@@ -136,6 +136,7 @@ export interface UserProfile {
   selectedLanguage: string;
   createdAt: string; // ISO date string
   subscriptionActive: boolean;
+  unlockedWeeks?: Record<string, Record<string, number[]>>;
   subscriptionSource?: 'stripe' | 'google_play' | 'apple_iap' | 'lemonsqueezy' | 'none';
   subscriptionPlan?: 'weekly' | 'course' | 'lifetime';
   subscriptionLanguage?: string;

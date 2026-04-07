@@ -58,6 +58,11 @@ export function canAccessLesson(
     const week12Days = completedDays.filter((d: string) => d.startsWith('12-'));
     if (week12Days.length >= 7) return { allowed: true };
   }
+  // Check permanent unlockedWeeks (most reliable)
+  const langKey = language?.toLowerCase() || '';
+  const unlockedWeeks: number[] = profile.unlockedWeeks?.[langKey]?.[path] || [];
+  if (unlockedWeeks.includes(week)) return { allowed: true };
+
   const plan = profile.subscriptionPlan;
 
   // ===== SURVIVAL PATH =====
