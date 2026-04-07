@@ -42,6 +42,25 @@ function PricingPageLoading() {
 }
 
 function PricingPageContent() {
+  return (
+    <div className="flex min-h-dvh flex-col bg-background">
+      <Navigation />
+      <main className="flex-1 container mx-auto py-12 max-w-2xl text-center px-4">
+        <div className="text-6xl mb-6">��</div>
+        <h1 className="text-2xl font-bold mb-4">Payment System Upgrading</h1>
+        <p className="text-muted-foreground mb-6">
+          We are currently upgrading our payment system to serve you better. 
+          Please check back soon!
+        </p>
+        <div className="bg-muted/50 border border-border rounded-xl p-6 max-w-sm mx-auto">
+          <p className="font-semibold mb-2">Need help?</p>
+          <p className="text-sm text-muted-foreground">Contact us via WhatsApp:</p>
+          <p className="text-primary font-bold mt-2">+94768680133</p>
+        </div>
+      </main>
+    </div>
+  );
+  // eslint-disable-next-line no-unreachable
   const isApp = typeof window !== 'undefined' && (
     !!(window as any).Capacitor?.isNativePlatform?.() ||
     window.location.search.includes('app=1') ||
