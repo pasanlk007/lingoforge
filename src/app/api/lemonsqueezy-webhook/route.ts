@@ -160,28 +160,46 @@ export async function POST(req: Request) {
       else if (productName.includes('course')) plan = 'course';
       else plan = 'weekly';
 
-      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan, customLanguage);
-      
-      // Permanently unlock week 1 + week 2 for weekly plan
-      if (plan === 'weekly' && customLanguage) {
-        const langKey = customLanguage.toLowerCase();
-        const unlockUrl = `https://firestore.googleapis.com/v1/${userDoc.name}?updateMask.fieldPaths=unlockedWeeks.${langKey}.survival`;
-        await fetch(unlockUrl, {
-          method: 'PATCH',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            fields: {
-              [`unlockedWeeks.${langKey}.survival`]: {
-                arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
-              }
-            }
-          }),
-        });
+      // Permanently save unlockedContent based on plan
+      if (customLanguage) {
+        const nativeLang = 'english'; // default, will be overridden by user profile
+        const targetLang = customLanguage.toLowerCase();
+        
+        let unlockFields: any = {};
+        
+        if (plan === 'lifetime') {
+          // Lifetime - unlock everything
+          unlockFields['unlockedContent.all'] = { booleanValue: true };
+        } else if (plan === 'course') {
+          // Course - unlock all 12 weeks for this language
+          const contentKey = `english_${targetLang}_survival`;
+          unlockFields[`unlockedContent.${contentKey}`] = {
+            arrayValue: { values: [1,2,3,4,5,6,7,8,9,10,11,12].map(n => ({ integerValue: n })) }
+          };
+        } else if (plan === 'weekly') {
+          // Weekly - unlock week 1 + week 2 permanently
+          const contentKey = `english_${targetLang}_survival`;
+          unlockFields[`unlockedContent.${contentKey}`] = {
+            arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
+          };
+        }
+        
+        if (Object.keys(unlockFields).length > 0) {
+          const fieldPaths = Object.keys(unlockFields).map(k => `updateMask.fieldPaths=${k}`).join('&');
+          const unlockUrl = `https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`;
+          await fetch(unlockUrl, {
+            method: 'PATCH',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ fields: unlockFields }),
+          });
+          console.log('✅ Permanently unlocked content for:', userEmail, 'plan:', plan, 'language:', targetLang);
+        }
       }
       
+      await updateUserDoc(userDoc.name, true, renewsAt || endsAt, token, plan, customLanguage);
       console.log('✅ Subscription activated for:', userEmail, 'plan:', plan);
     }
 

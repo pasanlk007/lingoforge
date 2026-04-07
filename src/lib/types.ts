@@ -137,6 +137,7 @@ export interface UserProfile {
   createdAt: string; // ISO date string
   subscriptionActive: boolean;
   unlockedWeeks?: Record<string, Record<string, number[]>>;
+  unlockedContent?: Record<string, number[] | boolean | true>;
   subscriptionSource?: 'stripe' | 'google_play' | 'apple_iap' | 'lemonsqueezy' | 'none';
   subscriptionPlan?: 'weekly' | 'course' | 'lifetime';
   subscriptionLanguage?: string;
