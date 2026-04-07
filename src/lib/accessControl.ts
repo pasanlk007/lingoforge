@@ -52,9 +52,9 @@ export function canAccessLesson(
 
     // Check unlockedContent - simple key: targetLanguage_path
     const contentKey = `${langKey}_survival`;
-    const unlockedWeeks: number[] = profile.unlockedContent?.[contentKey] || [];
+    const unlockedWeeks: number[] = (profile.unlockedContent?.[contentKey] as number[] || []).map(Number);
     
-    if (unlockedWeeks.includes(week)) return { allowed: true };
+    if (unlockedWeeks.includes(Number(week))) return { allowed: true };
     
     return { allowed: false, reason: 'week_not_unlocked' };
   }
