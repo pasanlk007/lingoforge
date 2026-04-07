@@ -54,6 +54,7 @@ export function canAccessLesson(
     const contentKey = `${langKey}_survival`;
     const unlockedWeeks: number[] = (profile.unlockedContent?.[contentKey] as number[] || []).map(Number);
     
+    console.log('DEBUG:', {contentKey, unlockedWeeks, week: Number(week), type: typeof week, includes: unlockedWeeks.includes(Number(week)), rawContent: profile.unlockedContent});
     if (unlockedWeeks.includes(Number(week))) return { allowed: true };
     
     return { allowed: false, reason: 'week_not_unlocked' };
