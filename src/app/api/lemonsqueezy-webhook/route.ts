@@ -1,3 +1,4 @@
+
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
@@ -111,18 +112,25 @@ export async function POST(req: Request) {
       if (productName.includes('lifetime')) plan = 'lifetime';
       else if (productName.includes('course')) plan = 'course';
 
-      if (customLanguage) {
+      if (plan === 'lifetime') {
+        const unlockFields: any = { 'unlockedContent.all': { booleanValue: true } };
+        const fieldPaths = 'updateMask.fieldPaths=unlockedContent.all';
+        await fetch(`https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`, {
+          method: 'PATCH',
+          headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ fields: unlockFields }),
+        });
+        console.log('✅ Permanently unlocked LIFETIME for:', userEmail);
+      } else if (customLanguage && (plan === 'course' || plan === 'weekly')) {
         const targetLang = customLanguage.toLowerCase();
         const contentKey = `${targetLang}_survival`;
         let unlockFields: any = {};
         
-        if (plan === 'lifetime') {
-          unlockFields['unlockedContent.all'] = { booleanValue: true };
-        } else if (plan === 'course') {
+        if (plan === 'course') {
           unlockFields[`unlockedContent.${contentKey}`] = {
             arrayValue: { values: Array.from({length: 12}, (_, i) => ({ integerValue: i + 1 })) }
           };
-        } else {
+        } else { // weekly plan
           unlockFields[`unlockedContent.${contentKey}`] = {
             arrayValue: { values: [{ integerValue: 1 }, { integerValue: 2 }] }
           };
