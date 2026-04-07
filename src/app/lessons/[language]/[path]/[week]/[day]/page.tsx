@@ -63,7 +63,6 @@ export default function LessonPage() {
     language: language as string,
     userEmail: user?.email,
     profile: userProfile || null,
-  }); console.log("ACCESS CHECK:", JSON.stringify({unlockedWeeks: userProfile?.unlockedWeeks, subscriptionActive: userProfile?.subscriptionActive}));
   });
   const hasAccess = accessResult.allowed;
 
