@@ -1,4 +1,3 @@
-
 'use client';
 import type { UserProfile } from '@/lib/types';
 
@@ -34,29 +33,25 @@ export function canAccessLesson(
 
   const langKey = language?.toLowerCase() || '';
 
+  // Lifetime plan grants access to everything.
   if (profile.subscriptionPlan === 'lifetime' || profile.unlockedContent?.all === true) {
     return { allowed: true };
   }
 
-  if (profile.subscriptionActive) {
-    const isMatchingLanguage = profile.subscriptionLanguage?.toLowerCase() === langKey;
-    const isNotExpired = !profile.subscriptionExpiry || new Date(profile.subscriptionExpiry) > new Date();
-    if (isMatchingLanguage && isNotExpired) {
-      if (path === 'survival' || path === 'pro') return { allowed: true };
-    }
-  }
-
+  // Check for permanently unlocked content. This is the primary source of truth for access.
   const contentKey = `${langKey}_${path}`;
   const unlockedWeeks: any = profile.unlockedContent?.[contentKey] || [];
   if (Array.isArray(unlockedWeeks) && unlockedWeeks.map(Number).includes(Number(week))) {
     return { allowed: true };
   }
 
+  // Legacy check: if a user somehow completed week 12 of survival, grant access.
   if (path === 'survival') {
     const completedDays = profile.languageProgress?.[langKey]?.['survival']?.completedDays || [];
     if (completedDays.filter((d: string) => d.startsWith('12-')).length >= 7) return { allowed: true };
   }
 
+  // If no specific unlock is found, deny access.
   return { allowed: false, reason: 'locked' };
 }
 
