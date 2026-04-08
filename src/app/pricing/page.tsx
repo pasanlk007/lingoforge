@@ -2,6 +2,7 @@
 export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, Suspense } from 'react';
+import { Capacitor } from '@capacitor/core';
 import { Check, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
@@ -46,18 +47,13 @@ function PricingPageLoading() {
 }
 
 function PricingPageContent() {
-  const isApp = typeof window !== 'undefined' && (
-    !!(window as any).Capacitor?.isNativePlatform?.() ||
-    window.location.search.includes('app=1') ||
-    (navigator.userAgent.includes('wv') && navigator.userAgent.includes('Android'))
-  );
-
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
   const { toast } = useToast();
 
+  const [isAndroid, setIsAndroid] = useState(false);
   const [isBillingReady, setIsBillingReady] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
   const [isPurchasing, setIsPurchasing] = useState<string | null>(null);
@@ -73,18 +69,27 @@ function PricingPageContent() {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) setDisplayLanguage(savedLang);
     setIsMounted(true);
-    if (isApp) {
-      const setupBilling = async () => {
-        const ready = await initializeBilling();
-        setIsBillingReady(ready);
-        if (ready) {
-          const fetchedProducts = await getProducts(Object.values(SKUS));
-          setProducts(fetchedProducts);
+
+    const setupPlatform = async () => {
+      try {
+        if (Capacitor.isNativePlatform()) {
+          const platform = await Capacitor.getPlatform();
+          if (platform === 'android') {
+            setIsAndroid(true);
+            const ready = await initializeBilling();
+            setIsBillingReady(ready);
+            if (ready) {
+              const fetchedProducts = await getProducts(Object.values(SKUS));
+              setProducts(fetchedProducts);
+            }
+          }
         }
-      };
-      setupBilling();
-    }
-  }, [isApp]);
+      } catch (e) {
+        console.error("Error detecting platform or setting up billing", e);
+      }
+    };
+    setupPlatform();
+  }, []);
 
   if (!isMounted || isUserLoading || isProfileLoading) return <PricingPageLoading />;
 
@@ -145,12 +150,11 @@ function PricingPageContent() {
 
   const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
     const product = products.find(p => p.identifier === sku);
-    if (!isBillingReady && isApp) return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
-    if (!product && isApp) return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
-    if (!product) return null;
+    if (!isBillingReady) return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
+    if (!product) return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
     return (
       <Button className="w-full" size="lg" onClick={() => handleGooglePurchase(sku)} disabled={isPurchasing !== null}>
-        {isPurchasing === sku ? <><Loader2 className="mr-2 h-4 w-4 animate-spin"/> Processing...</> : `Subscribe with Google Play - ${product.priceString}`}
+        {isPurchasing === sku ? <><Loader2 className="mr-2 h-4 w-4 animate-spin"/> Processing...</> : `Upgrade with Google Play - ${product.priceString}`}
       </Button>
     );
   };
@@ -178,7 +182,7 @@ function PricingPageContent() {
                   </div>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {isApp ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
+                  {isAndroid ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild><Link href={WEEKLY_URL} target="_blank">Pay in USD</Link></Button>
                       <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
@@ -199,7 +203,7 @@ function PricingPageContent() {
                   </div>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {isApp ? <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/> : (
+                  {isAndroid ? <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild><Link href={COURSE_URL} target="_blank">Pay in USD</Link></Button>
                       <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
@@ -220,7 +224,7 @@ function PricingPageContent() {
                   </div>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {isApp ? <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/> : (
+                  {isAndroid ? <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild><Link href={LIFETIME_URL} target="_blank">Pay in USD</Link></Button>
                       <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
