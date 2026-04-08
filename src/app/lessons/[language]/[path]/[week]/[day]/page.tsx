@@ -64,7 +64,6 @@ export default function LessonPage() {
     userEmail: user?.email,
     profile: userProfile || null,
   });
-  console.log("PROFILE_KEYS:", Object.keys(userProfile || {})); console.log("UNLOCKED_CONTENT:", userProfile?.unlockedContent);
   const hasAccess = accessResult.allowed;
   console.log("USERPROFILE UNLOCKED:", userProfile?.unlockedContent, "NATIVE:", userProfile?.nativeLanguage);
 

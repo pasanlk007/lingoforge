@@ -1,49 +1,21 @@
-'use client';
-import { Billing } from '@capgo/capacitor-community-billing';
-import type { Product, Purchase } from '@capgo/capacitor-community-billing';
+// Google Play Billing - placeholder for future implementation
+// Will be implemented when app is running in native Android context
 
-export const initializeBilling = async (): Promise<boolean> => {
-  try {
-    await Billing.initialize();
-    console.log('Billing initialized');
-    return true;
-  } catch (error) {
-    console.error('Failed to initialize billing:', error);
-    return false;
-  }
-};
+export async function initializeBilling(): Promise<boolean> {
+  if (typeof window === 'undefined') return false;
+  // TODO: Implement with proper Capacitor billing plugin
+  console.log('Google Play Billing not yet implemented');
+  return false;
+}
 
-export const getProducts = async (skus: string[]): Promise<Product[]> => {
-  try {
-    const { products } = await Billing.getProducts({ skus });
-    console.log('Fetched products:', products);
-    return products;
-  } catch (error) {
-    console.error('Failed to get products:', error);
-    return [];
-  }
-};
+export async function purchaseProduct(productId: string): Promise<boolean> {
+  if (typeof window === 'undefined') return false;
+  console.log('Purchase requested for:', productId);
+  // Redirect to web payment as fallback
+  window.location.href = 'https://bashaguru.com/pricing';
+  return false;
+}
 
-export const purchase = async (sku: string, userId: string): Promise<Purchase | null> => {
-  try {
-    const { purchase } = await Billing.purchase({ 
-      sku,
-      obfuscatedAccountId: userId, // Link the purchase to the Firebase user
-    });
-    console.log('Purchase successful:', purchase);
-    return purchase;
-  } catch (error) {
-    console.error(`Failed to purchase ${sku}:`, error);
-    return null;
-  }
-};
-
-export const getLatestPurchase = async(sku: string): Promise<Purchase | null> => {
-  try {
-    const result = await Billing.getLatestPurchase({sku});
-    return result.purchase;
-  } catch (error) {
-    console.error('Failed to get latest purchase', error);
-    return null;
-  }
+export async function getProducts(productIds: string[]): Promise<any[]> {
+  return [];
 }
