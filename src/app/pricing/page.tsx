@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, Suspense } from 'react';
-import { Check } from 'lucide-react';
+import { Check, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -13,10 +13,19 @@ import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 import { cn } from '@/lib/utils';
+import { initializeBilling, getProducts, purchase } from '@/lib/googlePlayBilling';
+import type { Product } from '@capacitor-community/billing';
+import { useToast } from '@/hooks/use-toast';
 
 const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
 const LIFETIME_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
 const COURSE_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
+
+const SKUS = {
+  weekly: 'lingoforge_weekly_sub',
+  course: 'lingoforge_course_unlock',
+  lifetime: 'lingoforge_lifetime_unlock',
+};
 
 function PricingPageLoading() {
   return (
@@ -47,10 +56,16 @@ function PricingPageContent() {
     window.location.search.includes('app=1') ||
     (navigator.userAgent.includes('wv') && navigator.userAgent.includes('Android'))
   );
+
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
+  const { toast } = useToast();
+
+  const [isBillingReady, setIsBillingReady] = useState(false);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [isPurchasing, setIsPurchasing] = useState<string | null>(null);
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -58,12 +73,25 @@ function PricingPageContent() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-
+  
   useEffect(() => {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) setDisplayLanguage(savedLang);
     setIsMounted(true);
-  }, []);
+    
+    if (isApp) {
+      const setupBilling = async () => {
+        const ready = await initializeBilling();
+        setIsBillingReady(ready);
+        if (ready) {
+          const fetchedProducts = await getProducts(Object.values(SKUS));
+          setProducts(fetchedProducts);
+        }
+      };
+      setupBilling();
+    }
+  }, [isApp]);
+
 
   if (!isMounted || isUserLoading || isProfileLoading) return <PricingPageLoading />;
 
@@ -106,12 +134,59 @@ function PricingPageContent() {
     }
   };
 
+  const handleGooglePurchase = async (sku: string) => {
+    if (!isBillingReady || !user) {
+      toast({ variant: "destructive", title: "Billing not ready", description: "Please wait a moment and try again." });
+      return;
+    }
+    setIsPurchasing(sku);
+    try {
+      const purchaseResult = await purchase(sku, user.uid);
+      if (purchaseResult?.isAcknowledged) {
+        toast({ title: "Purchase successful!", description: "Your content will be unlocked shortly. You may need to restart the app." });
+      } else {
+        toast({ variant: "destructive", title: "Purchase failed or was cancelled." });
+      }
+    } catch (e: any) {
+        toast({ variant: "destructive", title: "An error occurred", description: e.message });
+    } finally {
+      setIsPurchasing(null);
+    }
+  };
+
+
   const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const LIFETIME_URL = `${LIFETIME_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
+  
+  const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
+    const product = products.find(p => p.sku === sku);
+    
+    if (!isBillingReady || products.length === 0) {
+      return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
+    }
+  
+    if (!product) {
+      return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
+    }
+  
+    return (
+      <Button
+        className="w-full"
+        size="lg"
+        onClick={() => handleGooglePurchase(sku)}
+        disabled={isPurchasing !== null}
+      >
+        {isPurchasing === sku ? (
+          <><Loader2 className="mr-2 h-4 w-4 animate-spin"/> Processing...</>
+        ) : (
+          `Subscribe with Google Play - ${product.price}`
+        )}
+      </Button>
+    );
+  };
 
   if (displayLanguage !== 'Sinhala') {
-      // Non-Sinhala pricing layout can be added here if needed
       return (
         <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
           <Navigation />
@@ -132,7 +207,6 @@ function PricingPageContent() {
       )
   }
 
-  // SINHALA PRICING LAYOUT
   return (
     <div className="flex min-h-dvh flex-col bg-background" dir={isRTL ? 'rtl' : 'ltr'}>
       <Navigation />
@@ -164,7 +238,9 @@ function PricingPageContent() {
                   <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ සති 12 සම්පූර්ණ කළ පසු ගෙවීම් ස්වයංක්‍රීයව නවතී</p>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {!isApp ? (
+                  {isApp ? (
+                    <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/>
+                  ) : (
                     <>
                       <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
                         <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link>
@@ -178,8 +254,6 @@ function PricingPageContent() {
                         🇱🇰 LKR වලින් ගෙවන්න
                       </Button>
                     </>
-                  ) : (
-                    <p className="text-xs text-muted-foreground text-center py-2">lingoforge.app ෙදෙස් subscribe කරන්න</p>
                   )}
                 </CardFooter>
               </Card>
@@ -203,7 +277,9 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {!isApp ? (
+                  {isApp ? (
+                    <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/>
+                  ) : (
                      <>
                         <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
                           <Link href={COURSE_URL} target="_blank">Pay in USD</Link>
@@ -217,8 +293,6 @@ function PricingPageContent() {
                           🇱🇰 LKR වලින් ගෙවන්න
                         </Button>
                      </>
-                  ) : (
-                    <p className="text-xs text-muted-foreground text-center py-2">lingoforge.app ෙදෙස් subscribe කරන්න</p>
                   )}
                 </CardFooter>
               </Card>
@@ -243,7 +317,9 @@ function PricingPageContent() {
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {!isApp ? (
+                  {isApp ? (
+                    <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/>
+                  ) : (
                     <>
                       <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
                         <Link href={LIFETIME_URL} target="_blank">Pay in USD</Link>
@@ -257,8 +333,6 @@ function PricingPageContent() {
                         🇱🇰 LKR වලින් ගෙවන්න
                       </Button>
                     </>
-                  ) : (
-                    <p className="text-xs text-muted-foreground text-center py-2">lingoforge.app ෙදෙස් subscribe කරන්න</p>
                   )}
                 </CardFooter>
               </Card>

@@ -65,19 +65,79 @@ const PRO_LANGUAGE_MAP: Record<string, { countries: { name: string; flag: string
 // --- Data ---
 const proPathLessons: LessonNode[] = Array.from({ length: 30 }, (_, i) => {
     const day = i + 1;
-    const topics = [
-        'Advanced Greetings & Politeness', 'Family & Relationships', 'Daily Routines', 'Hobbies & Leisure', 'Food & Dining Out',
-        'Shopping & E-commerce', 'Travel & Transportation', 'Workplace Communication', 'Health & Wellness', 'Technology & Social Media',
-        'Expressing Opinions & Emotions', 'Making Plans & Appointments', 'Cultural Nuances', 'Idioms & Slang', 'Review: Days 1-14',
-        'Housing & Accommodation', 'Banking & Finance', 'Government & Bureaucracy', 'Education System', 'Current Events Discussion',
-        'Storytelling & Narratives', 'Debating & Arguing', 'Job Interviews', 'Giving Presentations', 'Review: Days 15-28',
-        'Advanced Conjunctions', 'Complex Sentence Structures', 'Formal vs. Informal Speech', 'Humor & Jokes', 'Final Review & Next Steps'
-    ];
-    const icons = ['👋','👨‍👩‍👧‍👦','⏰','🎨','🍔','🛒','✈️','💼','❤️‍🩹','📱','💬','📅','🌍','🗣️','🔁','🏠','💰','🏛️','🎓','📰','📖','⚖️','👔','📊','🔁','🔗','🧩','👔','😂','🚀'];
+    let topic = '';
+    let icon = '';
+    
+    // Citizenship Prep (Days 1-7)
+    if (day <= 7) {
+        icon = '🛂';
+        const week1Topics = [
+            "Understanding the Application Form",
+            "Gathering Personal Documents",
+            "Writing a Personal Statement",
+            "Common Interview Questions: Background",
+            "Common Interview Questions: New Life",
+            "Navigating Application Portals",
+            "Week 1 Review: Application Process",
+        ];
+        topic = week1Topics[day - 1];
+    } 
+    // Legal Framework (Days 8-14)
+    else if (day <= 14) {
+        icon = '📜';
+        const week2Topics = [
+            "Understanding Your Visa/Work Permit",
+            "Your Rights as a Worker",
+            "Reading a Rental Agreement",
+            "Registering with Local Authorities",
+            "Opening a Bank Account",
+            "Accessing Healthcare Services",
+            "Week 2 Review: Legal & Admin",
+        ];
+        topic = week2Topics[day - 8];
+    }
+    // Exam Prep (Days 15-21)
+    else if (day <= 21) {
+        icon = '🎓';
+        const week3Topics = [
+            "Language Test: Speaking & Listening",
+            "Language Test: Reading & Writing",
+            "Civic Test: National History",
+            "Civic Test: National Symbols",
+            "Practice Language Test",
+            "Practice Civic Test",
+            "Week 3 Review: Test Prep",
+        ];
+        topic = week3Topics[day - 15];
+    }
+    // Grammar & Culture (Days 22-28)
+    else if (day <= 28) {
+        icon = '✍️';
+        const week4Topics = [
+            "Advanced Grammar: Conditionals",
+            "Cultural Nuances: Social Etiquette",
+            "Grammar: Tenses for Storytelling",
+            "Cultural Nuances: Workplace Styles",
+            "Advanced Grammar: Idioms",
+            "Cultural Nuances: Celebrations",
+            "Week 4 Review: Grammar & Culture",
+        ];
+        topic = week4Topics[day - 22];
+    }
+    // Final Days
+    else {
+        icon = '🚀';
+        const finalTopics = [
+            "Final Review: Citizenship Scenario",
+            "Next Steps: Life as a New Citizen"
+        ];
+        topic = finalTopics[day - 29];
+    }
+    
     return {
         day: day,
-        topic: topics[i % topics.length],
-        icon: icons[i % icons.length],
+        topic: topic,
+        icon: icon,
         unlocked: day <= 5, // Unlock first 5 days for demo
     };
 });
