@@ -1,10 +1,11 @@
+export function PWAInstallPrompt() { return null; }
 'use client';
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Download, Smartphone, Monitor } from 'lucide-react';
 
-export function PWAInstallPrompt() {
+export function PWAInstallPrompt_DISABLED() {
   return null; // Disabled
   // eslint-disable-next-line no-unreachable
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
