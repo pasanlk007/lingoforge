@@ -14,7 +14,7 @@ import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 import { cn } from '@/lib/utils';
 import { initializeBilling, getProducts, purchase } from '@/lib/googlePlayBilling';
-import type { Product } from '@capacitor-community/billing';
+import type { PurchasesStoreProduct as Product } from '@revenuecat/purchases-capacitor';
 import { useToast } from '@/hooks/use-toast';
 
 const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
@@ -160,15 +160,17 @@ function PricingPageContent() {
   const LIFETIME_URL = `${LIFETIME_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   
   const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
-    const product = products.find(p => p.sku === sku);
+    const product = products.find(p => p.identifier === sku);
     
-    if (!isBillingReady || products.length === 0) {
+    if (!isBillingReady && isApp) {
       return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
     }
   
-    if (!product) {
+    if (!product && isApp) {
       return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
     }
+    
+    if (!product) return null;
   
     return (
       <Button
@@ -180,7 +182,7 @@ function PricingPageContent() {
         {isPurchasing === sku ? (
           <><Loader2 className="mr-2 h-4 w-4 animate-spin"/> Processing...</>
         ) : (
-          `Subscribe with Google Play - ${product.price}`
+          `Subscribe with Google Play - ${product.priceString}`
         )}
       </Button>
     );
