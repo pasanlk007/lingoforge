@@ -1,6 +1,7 @@
 import "./globals.css";
 import { FirebaseClientProvider } from "@/firebase/client-provider";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
+import { RevenueCatProvider } from "@/components/RevenueCatProvider";
 
 export const metadata = {
   metadataBase: new URL('https://lingoforge.app'),
@@ -34,8 +35,10 @@ export default function RootLayout({
       </head>
       <body>
         <FirebaseClientProvider>
-          <PWAInstallPrompt />
-          {children}
+          <RevenueCatProvider>
+            <PWAInstallPrompt />
+            {children}
+          </RevenueCatProvider>
         </FirebaseClientProvider>
         <script dangerouslySetInnerHTML={{
           __html: `
