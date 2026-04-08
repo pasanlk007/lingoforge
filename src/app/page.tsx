@@ -215,17 +215,17 @@ export default function LandingPage() {
                     <div className="flex gap-2 mt-3">
                       {isAndroid && deferredPrompt && (
                         <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-green-500 text-green-400 hover:bg-green-500/10 font-semibold" onClick={handleAndroidInstall}>
-                          🤖 Android Install
+                          📲 Install on Android
                         </Button>
                       )}
                       {isIOS && (
-                        <Button size="sm" variant="outline" className="flex-1 text-xs border-slate-500 text-slate-300 hover:bg-slate-700" onClick={() => setShowIOSGuide(true)}>
-                          🍎 iPhone Install
+                        <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-slate-400 text-slate-200 hover:bg-slate-700 font-semibold" onClick={() => setShowIOSGuide(true)}>
+                          🍎 Install on iPhone
                         </Button>
                       )}
                       {!isAndroid && !isIOS && deferredPrompt && (
-                        <Button size="sm" variant="outline" className="flex-1 text-xs border-slate-500 text-slate-300 hover:bg-slate-700" onClick={handleAndroidInstall}>
-                          💻 Desktop Install
+                        <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-slate-400 text-slate-200 hover:bg-slate-700 font-semibold" onClick={handleAndroidInstall}>
+                          💻 Install on Desktop
                         </Button>
                       )}
                     </div>
