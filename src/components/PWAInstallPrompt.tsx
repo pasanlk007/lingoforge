@@ -1,10 +1,11 @@
+export function PWAInstallPrompt() { return null; }
 'use client';
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Download, Smartphone, Monitor } from 'lucide-react';
 
-export function PWAInstallPrompt() {
+export function PWAInstallPrompt_DISABLED() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showPrompt, setShowPrompt] = useState(false);
   const [isIOS, setIsIOS] = useState(false);

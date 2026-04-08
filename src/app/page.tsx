@@ -212,9 +212,9 @@ export default function LandingPage() {
               <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
                  <div className="flex flex-col sm:flex-row gap-3">
                     <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex gap-2 mt-3">
                       {isAndroid && deferredPrompt && (
-                        <Button size="sm" variant="outline" className="flex-1 text-xs border-green-500 text-green-400 hover:bg-green-500/10" onClick={handleAndroidInstall}>
+                        <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-green-500 text-green-400 hover:bg-green-500/10 font-semibold" onClick={handleAndroidInstall}>
                           🤖 Android Install
                         </Button>
                       )}
