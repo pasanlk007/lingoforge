@@ -1,18 +1,18 @@
 'use client';
+export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, Suspense } from 'react';
 import { Check, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { translations, targetLanguages as allTargetLangs } from '@/lib/translations';
+import { translations } from '@/lib/translations';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
-import { cn } from '@/lib/utils';
 import { initializeBilling, getProducts, purchase } from '@/lib/googlePlayBilling';
 import type { PurchasesStoreProduct as Product } from '@revenuecat/purchases-capacitor';
 import { useToast } from '@/hooks/use-toast';
@@ -37,11 +37,6 @@ function PricingPageLoading() {
             <div className="mx-auto max-w-2xl text-center">
               <Skeleton className="h-12 w-3/4 mx-auto" />
               <Skeleton className="h-6 w-full mt-4" />
-            </div>
-            <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              <Card className="flex flex-col"><CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader><CardContent className="flex-1 space-y-6"><Skeleton className="h-10 w-1/3" /><Skeleton className="h-12 w-full" /></CardContent><CardFooter><Skeleton className="h-12 w-full" /></CardFooter></Card>
-              <Card className="flex flex-col border-2 border-primary"><CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader><CardContent className="flex-1 space-y-6"><Skeleton className="h-10 w-1/3" /></CardContent><CardFooter><Skeleton className="h-12 w-full" /></CardFooter></Card>
-              <Card className="flex flex-col"><CardHeader><Skeleton className="h-8 w-1/2" /></CardHeader><CardContent className="flex-1 space-y-6"><Skeleton className="h-10 w-1/3" /><Skeleton className="h-12 w-full" /></CardContent><CardFooter><Skeleton className="h-12 w-full" /></CardFooter></Card>
             </div>
           </div>
         </section>
@@ -73,12 +68,11 @@ function PricingPageContent() {
   }, [user, firestore]);
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
-  
+
   useEffect(() => {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) setDisplayLanguage(savedLang);
     setIsMounted(true);
-    
     if (isApp) {
       const setupBilling = async () => {
         const ready = await initializeBilling();
@@ -92,13 +86,11 @@ function PricingPageContent() {
     }
   }, [isApp]);
 
-
   if (!isMounted || isUserLoading || isProfileLoading) return <PricingPageLoading />;
 
   const t = translations[displayLanguage as keyof typeof translations] || translations.English;
   const isRTL = ['Urdu', 'Hebrew'].includes(displayLanguage);
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
-  
   const langParam = encodeURIComponent(targetLanguage.toLowerCase());
 
   const handlePayhere = async (plan: string) => {
@@ -107,16 +99,9 @@ function PricingPageContent() {
       const res = await fetch('/api/payhere-checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          plan,
-          language: targetLanguage.toLowerCase(),
-          userId: user.uid,
-          userEmail: user.email,
-          userName: user.displayName || '',
-        }),
+        body: JSON.stringify({ plan, language: targetLanguage.toLowerCase(), userId: user.uid, userEmail: user.email, userName: user.displayName || '' }),
       });
       const data = await res.json();
-      
       const form = document.createElement('form');
       form.method = 'POST';
       form.action = 'https://sandbox.payhere.lk/pay/checkout';
@@ -143,47 +128,29 @@ function PricingPageContent() {
     try {
       const purchaseResult = await purchase(sku, user.uid);
       if (purchaseResult?.isAcknowledged) {
-        toast({ title: "Purchase successful!", description: "Your content will be unlocked shortly. You may need to restart the app." });
+        toast({ title: "Purchase successful!", description: "Your content will be unlocked shortly." });
       } else {
         toast({ variant: "destructive", title: "Purchase failed or was cancelled." });
       }
     } catch (e: any) {
-        toast({ variant: "destructive", title: "An error occurred", description: e.message });
+      toast({ variant: "destructive", title: "An error occurred", description: e.message });
     } finally {
       setIsPurchasing(null);
     }
   };
 
-
   const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const LIFETIME_URL = `${LIFETIME_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
-  
+
   const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
     const product = products.find(p => p.identifier === sku);
-    
-    if (!isBillingReady && isApp) {
-      return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
-    }
-  
-    if (!product && isApp) {
-      return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
-    }
-    
+    if (!isBillingReady && isApp) return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
+    if (!product && isApp) return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
     if (!product) return null;
-  
     return (
-      <Button
-        className="w-full"
-        size="lg"
-        onClick={() => handleGooglePurchase(sku)}
-        disabled={isPurchasing !== null}
-      >
-        {isPurchasing === sku ? (
-          <><Loader2 className="mr-2 h-4 w-4 animate-spin"/> Processing...</>
-        ) : (
-          `Subscribe with Google Play - ${product.priceString}`
-        )}
+      <Button className="w-full" size="lg" onClick={() => handleGooglePurchase(sku)} disabled={isPurchasing !== null}>
+        {isPurchasing === sku ? <><Loader2 className="mr-2 h-4 w-4 animate-spin"/> Processing...</> : `Subscribe with Google Play - ${product.priceString}`}
       </Button>
     );
   };
@@ -198,142 +165,70 @@ function PricingPageContent() {
               <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">{t.pricingTitle}</h1>
               <p className="mt-4 text-lg text-muted-foreground">{t.pricingSub}</p>
             </div>
-
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              {/* Plan 1: Weekly */}
               <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20">
                 <CardHeader>
-                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan.title}</CardTitle>
+                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan?.badge}</Badge>
+                  <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan?.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-4">
                   <div>
-                    <p className="text-3xl font-bold">{t.weeklyPlan.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.weeklyPlan.price_lkr}</p>
+                    <p className="text-3xl font-bold">{t.weeklyPlan?.price_usd}</p>
+                    <p className="font-semibold text-muted-foreground">{t.weeklyPlan?.price_lkr}</p>
                   </div>
-                  <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
-                    <li>✅ {t.weeklyPlan.feat1}</li>
-                    <li>✅ {t.weeklyPlan.feat2}</li>
-                    <li>✅ {t.weeklyPlan.feat3}</li>
-                  </ul>
-                  {t.weeklyPlan.note && <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ {t.weeklyPlan.note}</p>}
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {isApp ? (
-                    <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/>
-                  ) : (
+                  {isApp ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
                     <>
-                      <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-                        <Link href={WEEKLY_URL} target="_blank">Pay in USD</Link>
-                      </Button>
-                      <div className="flex w-full items-center gap-2">
-                        <div className="h-px flex-1 bg-border" />
-                        <span className="text-xs text-muted-foreground">or</span>
-                        <div className="h-px flex-1 bg-border" />
-                      </div>
-                      <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">
-                        🇱🇰 Pay in LKR
-                      </Button>
+                      <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild><Link href={WEEKLY_URL} target="_blank">Pay in USD</Link></Button>
+                      <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
                     </>
                   )}
                 </CardFooter>
               </Card>
 
-              {/* Plan 2: Course */}
               <Card className="flex flex-col border-2 border-green-500/50 bg-green-950/20">
-                 <CardHeader>
-                  <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">{t.completePlan.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.completePlan.title}</CardTitle>
+                <CardHeader>
+                  <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">{t.completePlan?.badge}</Badge>
+                  <CardTitle className="font-headline text-2xl pt-2">{t.completePlan?.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-4">
                   <div>
-                    <p className="text-3xl font-bold">{t.completePlan.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.completePlan.price_lkr}</p>
+                    <p className="text-3xl font-bold">{t.completePlan?.price_usd}</p>
+                    <p className="font-semibold text-muted-foreground">{t.completePlan?.price_lkr}</p>
                   </div>
-                   <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
-                    <li>✅ {t.completePlan.feat1}</li>
-                    <li>✅ {t.completePlan.feat2}</li>
-                    <li>✅ {t.completePlan.feat3}</li>
-                    <li>✅ {t.completePlan.feat4}</li>
-                  </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {isApp ? (
-                    <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/>
-                  ) : (
-                     <>
-                        <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
-                          <Link href={COURSE_URL} target="_blank">Pay in USD</Link>
-                        </Button>
-                        <div className="flex w-full items-center gap-2">
-                          <div className="h-px flex-1 bg-border" />
-                          <span className="text-xs text-muted-foreground">or</span>
-                          <div className="h-px flex-1 bg-border" />
-                        </div>
-                        <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">
-                          🇱🇰 Pay in LKR
-                        </Button>
-                     </>
+                  {isApp ? <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/> : (
+                    <>
+                      <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild><Link href={COURSE_URL} target="_blank">Pay in USD</Link></Button>
+                      <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
+                    </>
                   )}
                 </CardFooter>
               </Card>
 
-               {/* Plan 3: Lifetime */}
               <Card className="relative flex flex-col border-2 border-yellow-500/50 bg-yellow-950/20">
-                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950">{t.lifetimePlan.badge}</Badge>
+                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950">{t.lifetimePlan?.badge}</Badge>
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.lifetimePlan.title}</CardTitle>
+                  <CardTitle className="font-headline text-2xl pt-2">{t.lifetimePlan?.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-1 space-y-4">
                   <div>
-                    <p className="text-3xl font-bold">{t.lifetimePlan.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.lifetimePlan.price_lkr}</p>
+                    <p className="text-3xl font-bold">{t.lifetimePlan?.price_usd}</p>
+                    <p className="font-semibold text-muted-foreground">{t.lifetimePlan?.price_lkr}</p>
                   </div>
-                  <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
-                    <li>✅ {t.lifetimePlan.feat1}</li>
-                    <li>✅ {t.lifetimePlan.feat2}</li>
-                    <li>✅ {t.lifetimePlan.feat3}</li>
-                    <li>✅ {t.lifetimePlan.feat4}</li>
-                    {t.lifetimePlan.feat5 && <li>✅ {t.lifetimePlan.feat5}</li>}
-                  </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
-                  {isApp ? (
-                    <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/>
-                  ) : (
+                  {isApp ? <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/> : (
                     <>
-                      <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
-                        <Link href={LIFETIME_URL} target="_blank">Pay in USD</Link>
-                      </Button>
-                      <div className="flex w-full items-center gap-2">
-                        <div className="h-px flex-1 bg-border" />
-                        <span className="text-xs text-muted-foreground">or</span>
-                        <div className="h-px flex-1 bg-border" />
-                      </div>
-                      <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">
-                        🇱🇰 Pay in LKR
-                      </Button>
+                      <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild><Link href={LIFETIME_URL} target="_blank">Pay in USD</Link></Button>
+                      <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
                     </>
                   )}
                 </CardFooter>
               </Card>
             </div>
-            
-            {t.freePlan && (
-              <div className="mt-16 text-center">
-                <h3 className="font-headline text-2xl font-bold">{t.freePlan.title}</h3>
-                <p className="text-muted-foreground mt-2">{t.freePlan.description}</p>
-                <ul className="mt-4 inline-flex flex-col sm:flex-row gap-x-4 gap-y-1 text-muted-foreground">
-                  <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {t.freePlan.feat1}</li>
-                  <li className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {t.freePlan.feat2}</li>
-                </ul>
-                <div className="mt-6">
-                  <Button variant="outline" asChild>
-                    <Link href="/signup">{t.freePlan.btn}</Link>
-                  </Button>
-                </div>
-              </div>
-            )}
 
             <div className="mt-16 text-center text-muted-foreground text-sm space-y-1">
               <p>Prices are in USD. Your payment provider will convert the currency for you.</p>
