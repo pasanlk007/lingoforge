@@ -1,4 +1,5 @@
 'use client';
+import { isNativePlatform, nativeGoogleSignIn, initializeGoogleAuth } from '@/lib/nativeGoogleAuth';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -122,8 +123,21 @@ export function LoginFormContent() {
     }
     
     try {
+        // Use native Google Sign-In on mobile
+        if (isNativePlatform()) {
+          await initializeGoogleAuth();
+          const user = await nativeGoogleSignIn(auth);
+          if (user) {
+            toast({ title: "Login Successful", description: "Welcome back!" });
+            window.location.href = redirectUrl;
+          } else {
+            toast({ variant: "destructive", title: "Google Sign-In Failed", description: "Could not sign in." });
+          }
+          setGoogleLoading(false);
+          return;
+        }
+        
         await initiateGoogleSignIn(auth, firestore);
-
         toast({ title: "Login Successful", description: "Welcome back!" });
         window.location.href = redirectUrl;
 
