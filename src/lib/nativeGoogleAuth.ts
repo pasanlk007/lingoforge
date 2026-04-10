@@ -6,7 +6,9 @@ import { GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
 
 export function isNativePlatform(): boolean {
   if (typeof window === 'undefined') return false;
-  return Capacitor.isNativePlatform();
+  return Capacitor.isNativePlatform() || 
+    (typeof window !== 'undefined' && window.location.search.includes('app=1')) ||
+    (typeof navigator !== 'undefined' && navigator.userAgent.includes('wv') && navigator.userAgent.includes('Android'));
 }
 
 export async function initializeGoogleAuth(): Promise<void> {
