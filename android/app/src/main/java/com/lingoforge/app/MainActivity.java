@@ -2,7 +2,7 @@ package com.lingoforge.app;
 
 import android.os.Bundle;
 import com.getcapacitor.BridgeActivity;
-import dev.robingenz.capacitorFirebaseAuthentication.FirebaseAuthenticationPlugin;
+import io.capawesome.capacitorjs.plugins.firebase.authentication.FirebaseAuthenticationPlugin;
 
 public class MainActivity extends BridgeActivity {
   @Override
