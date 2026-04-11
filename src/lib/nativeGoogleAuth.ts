@@ -18,7 +18,7 @@ export async function nativeGoogleSignIn(auth: any): Promise<any> {
   if (!isNativePlatform()) return null;
   try {
     const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
-    const result = await FirebaseAuthentication.signInWithGoogle();
+    const result = await FirebaseAuthentication.signInWithGoogle({ skipNativeAuth: false });
     
     if (result.credential?.idToken) {
       const { GoogleAuthProvider, signInWithCredential } = await import('firebase/auth');
