@@ -1,5 +1,5 @@
 'use client';
-import { isNativePlatform, nativeGoogleSignIn, initializeGoogleAuth } from '@/lib/nativeGoogleAuth';
+import { isNativePlatform, nativeGoogleSignIn } from '@/lib/nativeGoogleAuth';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -94,7 +94,7 @@ export function LoginFormContent() {
           description: "You are being redirected.",
         });
         
-        window.location.href = redirectUrl;
+        router.push(redirectUrl);
 
     } catch (error: any) {
         console.error("Login failed:", error);
@@ -123,21 +123,29 @@ export function LoginFormContent() {
     }
     
     try {
+        let success = false;
         if (isNativePlatform()) {
-          console.log("Native app detected");
-          const user = await nativeGoogleSignIn(auth);
-          if (!user) {
-            const { signInWithPopup, GoogleAuthProvider } = await import('firebase/auth');
-            await signInWithPopup(auth, new GoogleAuthProvider());
-          }
+            console.log("Native platform detected, attempting native sign-in...");
+            const user = await nativeGoogleSignIn(auth);
+            if (user) {
+                success = true;
+            }
         } else {
-          console.log("Web environment");
-          await initiateGoogleSignIn(auth, firestore);
+            console.log("Web environment, using web sign-in...");
+            await initiateGoogleSignIn(auth, firestore);
+            success = true;
         }
-        toast({ title: "Login Successful", description: "Welcome back!" });
-        window.location.href = redirectUrl;
 
+        if (success) {
+            toast({ title: "Login Successful", description: "Welcome back!" });
+            router.push(redirectUrl);
+        } else {
+            // This path is reached if native sign-in was attempted and failed/cancelled.
+            // We simply stop loading and allow the user to try again.
+            setGoogleLoading(false);
+        }
     } catch (error: any) {
+        // This catch block will primarily handle errors from the web-based flow.
         if (error.code !== 'auth/popup-closed-by-user') {
             toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
         }
