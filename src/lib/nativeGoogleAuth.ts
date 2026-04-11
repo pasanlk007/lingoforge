@@ -10,9 +10,15 @@ import { FirebaseAuthentication } from '@capacitor-firebase/authentication';
  * @returns {boolean} True if running inside a native Capacitor app.
  */
 export function isNativePlatform(): boolean {
-  if (typeof window === 'undefined') {
-    return false;
-  }
+  if (typeof window === 'undefined') return false;
+  const cap = (window as any).Capacitor;
+  if (!cap) return false;
+  // Check for native plugins - only available in real native app
+  const hasNativePlugins = !!(cap.Plugins?.FirebaseAuthentication);
+  const hasAndroidUA = navigator.userAgent.includes('Android') && navigator.userAgent.includes('wv');
+  const hasAppParam = window.location.search.includes('app=1');
+  return hasNativePlugins || hasAndroidUA || hasAppParam;
+}
   // This is the most reliable way to check for a Capacitor environment
   // when loading a remote URL, as `Capacitor.getPlatform()` can return 'web'.
   // We check for the Capacitor object and the custom query param from capacitor.config.ts.
