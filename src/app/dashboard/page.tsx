@@ -37,7 +37,8 @@ import { doc, setDoc, arrayUnion } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { UserProfile } from "@/lib/types";
-import type { User } from 'firebase/auth';
+import { type User, onAuthStateChanged, getAuth } from 'firebase/auth';
+import { initializeApp, getApps, getApp } from 'firebase/app';
 import { useAppConfig } from "@/hooks/useAppConfig";
 import { useFreeTrial } from "@/hooks/useFreeTrial";
 import { canAccessLesson } from "@/lib/accessControl";
@@ -546,7 +547,22 @@ function DashboardContent({ user }: { user: User }) {
 }
 
 export default function DashboardPage() {
-  const { user, isUserLoading } = useUser();
+  const { user: hookUser, isUserLoading: hookLoading } = useUser();
+  const [directUser, setDirectUser] = useState<User | null>(null);
+  const [directLoading, setDirectLoading] = useState(true);
+  
+  useEffect(() => {
+    const directAuth = getDirectAuth();
+    if (!directAuth) { setDirectLoading(false); return; }
+    const unsub = onAuthStateChanged(directAuth, (u) => {
+      setDirectUser(u);
+      setDirectLoading(false);
+    });
+    return unsub;
+  }, []);
+  
+  const user = hookUser || directUser;
+  const isUserLoading = hookLoading && directLoading;
   const router = useRouter();
 
   useEffect(() => {
