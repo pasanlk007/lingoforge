@@ -7,7 +7,7 @@ const config: CapacitorConfig = {
   server: {
     url: 'https://lingoforge.app?app=1',
     cleartext: false,
-    allowNavigation: ['studio-3754329818-ee8cf.firebaseapp.com', 'accounts.google.com', 'oauth2.googleapis.com'],
+    allowNavigation: ['studio-3754329818-ee8cf.firebaseapp.com', 'accounts.google.com', 'oauth2.googleapis.com', 'identitytoolkit.googleapis.com', '*.googleapis.com', '*.google.com'],
   },
 
   android: {
