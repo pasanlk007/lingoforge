@@ -552,13 +552,28 @@ export default function DashboardPage() {
   const [directLoading, setDirectLoading] = useState(true);
   
   useEffect(() => {
-    const directAuth = getDirectAuth();
-    if (!directAuth) { setDirectLoading(false); return; }
-    const unsub = onAuthStateChanged(directAuth, (u) => {
-      setDirectUser(u);
+    if (typeof window === 'undefined') { setDirectLoading(false); return; }
+    try {
+      const { initializeApp, getApps, getApp } = require('firebase/app');
+      const { getAuth, onAuthStateChanged } = require('firebase/auth');
+      const config = {
+        apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+        authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+        projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+        storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+        appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+      };
+      const app = getApps().length === 0 ? initializeApp(config) : getApp();
+      const auth = getAuth(app);
+      const unsub = onAuthStateChanged(auth, (u) => {
+        setDirectUser(u);
+        setDirectLoading(false);
+      });
+      return unsub;
+    } catch(e) {
       setDirectLoading(false);
-    });
-    return unsub;
+    }
   }, []);
   
   const user = hookUser || directUser;
