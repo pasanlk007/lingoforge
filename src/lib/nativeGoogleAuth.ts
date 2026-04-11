@@ -6,7 +6,9 @@ import { FirebaseAuthentication } from '@capacitor-firebase/authentication';
 
 export function isNativePlatform(): boolean {
   if (typeof window === 'undefined') return false;
-  return Capacitor.getPlatform() !== 'web';
+  const platform = Capacitor.getPlatform();
+  alert('Platform: ' + platform + ' | Cap object: ' + JSON.stringify(Object.keys((window as any).Capacitor || {})));
+  return platform !== 'web';
 }
 
 export async function initializeGoogleAuth(): Promise<void> {
