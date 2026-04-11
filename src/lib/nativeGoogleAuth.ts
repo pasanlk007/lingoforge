@@ -14,6 +14,7 @@ export async function initializeGoogleAuth(): Promise<void> {
 }
 
 export async function nativeGoogleSignIn(auth: any): Promise<any> {
+  alert('Native: ' + isNativePlatform() + ' Cap: ' + (typeof window !== 'undefined' ? (window as any).Capacitor?.isNativePlatform?.() : 'SSR') + ' UA: ' + (typeof navigator !== 'undefined' ? navigator.userAgent.substring(0, 50) : 'SSR'));
   if (!isNativePlatform()) return null;
   try {
     const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
