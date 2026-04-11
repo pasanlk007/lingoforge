@@ -574,7 +574,7 @@ export default function DashboardPage() {
   }, []);
   
   const user = hookUser || directUser;
-  const isUserLoading = hookLoading && directLoading;
+  const isUserLoading = hookLoading || directLoading;
   const router = useRouter();
 
   useEffect(() => {
