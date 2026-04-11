@@ -123,21 +123,17 @@ export function LoginFormContent() {
     }
     
     try {
-        // Use native Google Sign-In on mobile
         if (isNativePlatform()) {
-          await initializeGoogleAuth();
+          console.log("Native app detected");
           const user = await nativeGoogleSignIn(auth);
-          if (user) {
-            toast({ title: "Login Successful", description: "Welcome back!" });
-            window.location.href = redirectUrl;
-          } else {
-            toast({ variant: "destructive", title: "Google Sign-In Failed", description: "Could not sign in." });
+          if (!user) {
+            const { signInWithPopup, GoogleAuthProvider } = await import('firebase/auth');
+            await signInWithPopup(auth, new GoogleAuthProvider());
           }
-          setGoogleLoading(false);
-          return;
+        } else {
+          console.log("Web environment");
+          await initiateGoogleSignIn(auth, firestore);
         }
-        
-        await initiateGoogleSignIn(auth, firestore);
         toast({ title: "Login Successful", description: "Welcome back!" });
         window.location.href = redirectUrl;
 
