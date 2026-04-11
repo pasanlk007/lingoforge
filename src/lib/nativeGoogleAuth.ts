@@ -4,9 +4,10 @@ import { Capacitor } from '@capacitor/core';
 
 export function isNativePlatform(): boolean {
   if (typeof window === 'undefined') return false;
-  return Capacitor.isNativePlatform() || 
-    window.location.search.includes('app=1') ||
-    (navigator.userAgent.includes('wv') && navigator.userAgent.includes('Android'));
+  const isCap = !!(window as any).Capacitor;
+  const isAndroidWebView = navigator.userAgent.includes('Android') && navigator.userAgent.includes('wv');
+  const hasAppParam = window.location.search.includes('app=1');
+  return isCap || isAndroidWebView || hasAppParam;
 }
 
 export async function initializeGoogleAuth(): Promise<void> {
