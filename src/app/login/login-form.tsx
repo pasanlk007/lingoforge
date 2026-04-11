@@ -1,4 +1,7 @@
 'use client';
+import { initializeApp, getApps, getApp } from 'firebase/app';
+import { getAuth as getFirebaseAuth } from 'firebase/auth';
+import { getFirestore as getFirebaseFirestore } from 'firebase/firestore';
 import { isNativePlatform, nativeGoogleSignIn } from '@/lib/nativeGoogleAuth';
 
 import { useState, useEffect } from 'react';
@@ -52,14 +55,30 @@ function AuthCheckLoading() {
 }
 
 
+function getDirectFirebase() {
+  const config = {
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  };
+  const app = getApps().length === 0 ? initializeApp(config) : getApp();
+  return { auth: getFirebaseAuth(app), firestore: getFirebaseFirestore(app) };
+}
+
 export function LoginFormContent() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setGoogleLoading] = useState(false);
   const searchParams = useSearchParams();
-  const auth = useAuth();
-  const firestore = useFirestore();
+  const hookAuth = useAuth();
+  const hookFirestore = useFirestore();
+  const direct = typeof window !== 'undefined' ? getDirectFirebase() : null;
+  const auth = hookAuth || direct?.auth || null;
+  const firestore = hookFirestore || direct?.firestore || null;
   const { toast } = useToast();
   
   const { user, isUserLoading } = useUser();
