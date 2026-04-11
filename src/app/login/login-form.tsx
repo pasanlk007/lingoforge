@@ -69,6 +69,11 @@ function getDirectFirebase() {
 }
 
 export function LoginFormContent() {
+  if (typeof window !== 'undefined') {
+    window.onerror = (msg, src, line, col, err) => {
+      alert('ERROR: ' + msg + ' | ' + (err?.stack || ''));
+    };
+  }
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
