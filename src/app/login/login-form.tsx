@@ -57,12 +57,12 @@ function AuthCheckLoading() {
 
 function getDirectFirebase() {
   const config = {
-    apiKey: "AIzaSyBT1n8gqoFsLGW3fXoGA6GK2jazGMkHu0Q",
-    authDomain: "studio-3754329818-ee8cf.firebaseapp.com",
-    projectId: "studio-3754329818-ee8cf",
-    storageBucket: "studio-3754329818-ee8cf.appspot.com",
-    messagingSenderId: "157119324096",
-    appId: "1:157119324096:web:2208a02e5c3d84faf87225",
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   };
   const app = getApps().length === 0 ? initializeApp(config) : getApp();
   return { auth: getFirebaseAuth(app), firestore: getFirebaseFirestore(app) };
