@@ -1,7 +1,7 @@
 'use client';
 
 import { Capacitor } from '@capacitor/core';
-import Purchases, { LOG_LEVEL, PurchasesStoreProduct, PurchasesError, PURCHASES_ERROR_CODE } from '@revenuecat/purchases-capacitor';
+import { Purchases, LOG_LEVEL, PurchasesStoreProduct, PurchasesError, PURCHASES_ERROR_CODE } from '@revenuecat/purchases-capacitor';
 
 export async function initializeBilling(): Promise<boolean> {
   if (!Capacitor.isNativePlatform()) return false;
