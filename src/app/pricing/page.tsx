@@ -98,32 +98,6 @@ function PricingPageContent() {
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
   const langParam = encodeURIComponent(targetLanguage.toLowerCase());
 
-  const handlePayhere = async (plan: string) => {
-    if (!user) return;
-    try {
-      const res = await fetch('/api/payhere-checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ plan, language: targetLanguage.toLowerCase(), userId: user.uid, userEmail: user.email, userName: user.displayName || '' }),
-      });
-      const data = await res.json();
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = 'https://sandbox.payhere.lk/pay/checkout';
-      Object.entries(data).forEach(([key, value]) => {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = String(value);
-        form.appendChild(input);
-      });
-      document.body.appendChild(form);
-      form.submit();
-    } catch (error) {
-      console.error('PayHere error:', error);
-    }
-  };
-
   const handleGooglePurchase = async (sku: string) => {
     if (!isBillingReady || !user) {
       toast({ variant: "destructive", title: "Billing not ready", description: "Please wait a moment and try again." });
@@ -185,7 +159,9 @@ function PricingPageContent() {
                   {isAndroid ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild><Link href={WEEKLY_URL} target="_blank">Pay in USD</Link></Button>
-                      <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
+                      <div className="flex items-center justify-center gap-1 mt-2">
+                        <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
+                      </div>
                     </>
                   )}
                 </CardFooter>
@@ -206,7 +182,9 @@ function PricingPageContent() {
                   {isAndroid ? <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild><Link href={COURSE_URL} target="_blank">Pay in USD</Link></Button>
-                      <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
+                      <div className="flex items-center justify-center gap-1 mt-2">
+                        <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
+                      </div>
                     </>
                   )}
                 </CardFooter>
@@ -227,7 +205,9 @@ function PricingPageContent() {
                   {isAndroid ? <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild><Link href={LIFETIME_URL} target="_blank">Pay in USD</Link></Button>
-                      <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
+                      <div className="flex items-center justify-center gap-1 mt-2">
+                        <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
+                      </div>
                     </>
                   )}
                 </CardFooter>
