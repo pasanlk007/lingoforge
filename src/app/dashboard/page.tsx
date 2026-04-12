@@ -578,6 +578,7 @@ export default function DashboardPage() {
   const router = useRouter();
 
   useEffect(() => {
+    if (directLoading) return; // Wait for direct auth check
     if (!isUserLoading && !user) {
       router.push('/login?redirect=/dashboard');
     }
