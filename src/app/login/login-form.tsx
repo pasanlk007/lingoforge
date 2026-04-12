@@ -92,7 +92,7 @@ export function LoginFormContent() {
 
   useEffect(() => {
     if (!isUserLoading && user) {
-      if (typeof window !== "undefined") { window.location.href = redirectUrl; } else { router.push(redirectUrl); }
+      if (typeof window !== "undefined") { window.location.href = redirectUrl + (redirectUrl.includes("?") ? "&" : "?") + "app=1"; } else { router.push(redirectUrl); }
     }
   }, [user, isUserLoading, router, redirectUrl]);
 
@@ -118,7 +118,7 @@ export function LoginFormContent() {
           description: "You are being redirected.",
         });
         
-        if (typeof window !== "undefined") { window.location.href = redirectUrl; } else { router.push(redirectUrl); }
+        if (typeof window !== "undefined") { window.location.href = redirectUrl + (redirectUrl.includes("?") ? "&" : "?") + "app=1"; } else { router.push(redirectUrl); }
 
     } catch (error: any) {
         console.error("Login failed:", error);
@@ -162,7 +162,7 @@ export function LoginFormContent() {
 
         if (success) {
             toast({ title: "Login Successful", description: "Welcome back!" });
-            if (typeof window !== "undefined") { window.location.href = redirectUrl; } else { router.push(redirectUrl); }
+            if (typeof window !== "undefined") { window.location.href = redirectUrl + (redirectUrl.includes("?") ? "&" : "?") + "app=1"; } else { router.push(redirectUrl); }
         } else {
             // This path is reached if native sign-in was attempted and failed/cancelled.
             // We simply stop loading and allow the user to try again.
