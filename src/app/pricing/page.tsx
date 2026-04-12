@@ -185,11 +185,8 @@ function PricingPageContent() {
                   {isAndroid ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild><Link href={WEEKLY_URL} target="_blank">Pay in USD</Link></Button>
-                      
+                      <Button onClick={() => handlePayhere('weekly')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
                     </>
-                    <div className="flex items-center justify-center gap-1 mt-2 flex-wrap">
-                      <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                    </div>
                   )}
                 </CardFooter>
               </Card>
@@ -209,11 +206,8 @@ function PricingPageContent() {
                   {isAndroid ? <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild><Link href={COURSE_URL} target="_blank">Pay in USD</Link></Button>
-                      
+                      <Button onClick={() => handlePayhere('course')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
                     </>
-                    <div className="flex items-center justify-center gap-1 mt-2 flex-wrap">
-                      <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                    </div>
                   )}
                 </CardFooter>
               </Card>
@@ -233,11 +227,8 @@ function PricingPageContent() {
                   {isAndroid ? <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/> : (
                     <>
                       <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild><Link href={LIFETIME_URL} target="_blank">Pay in USD</Link></Button>
-                      
+                      <Button onClick={() => handlePayhere('lifetime')} className="w-full" variant="outline">🇱🇰 Pay in LKR</Button>
                     </>
-                    <div className="flex items-center justify-center gap-1 mt-2 flex-wrap">
-                      <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                    </div>
                   )}
                 </CardFooter>
               </Card>
