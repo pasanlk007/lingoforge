@@ -17,6 +17,7 @@ import {
   BadgeCheck,
 } from "lucide-react";
 import Link from "next/link";
+import { useState, useEffect } from 'react';
 
 import { Navigation } from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -25,7 +26,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { PATHS } from "@/lib/constants";
-import { targetLanguages } from "@/lib/translations";
+import { translations, targetLanguages } from "@/lib/translations";
 
 const features = [
   {
@@ -101,6 +102,19 @@ const testimonials = [
 ];
 
 export default function PathsPage() {
+  const [displayLanguage, setDisplayLanguage] = useState('English');
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
+    if (savedLang && translations[savedLang]) {
+      setDisplayLanguage(savedLang);
+    }
+    setIsMounted(true);
+  }, []);
+
+  const t = translations[displayLanguage as keyof typeof translations] || translations.English;
+  
   const testimonialImages = PlaceHolderImages.filter((p) =>
     p.id.includes("testimonial")
   );
@@ -139,43 +153,43 @@ export default function PathsPage() {
         <section className="py-20 sm:py-24 bg-slate-900/50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold">Flexible Plans for Every Learner</h2>
-              <p className="text-lg text-slate-300 mt-2">Start free, then choose a plan that fits your journey.</p>
+              <h2 className="font-headline text-3xl md:text-4xl font-bold">{t.pricingTitle}</h2>
+              <p className="text-lg text-slate-300 mt-2">{t.pricingSub}</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-              <Card className="flex flex-col bg-slate-800 border-slate-700 p-6">
+            <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+              <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20 p-6">
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">Single Language</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">$3.99<span className="text-base font-medium text-slate-400">/week</span></p>
-                  <p className="text-sm text-slate-400 mt-1">Master one language. Renews weekly.</p>
+                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan.badge}</Badge>
+                  <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan.title}</CardTitle>
+                   <p className="text-4xl font-extrabold mt-2">{t.weeklyPlan.price_usd.split('/')[0]}<span className="text-base font-medium text-slate-400">/{t.weeklyPlan.price_usd.split('/')[1]}</span></p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Access to one chosen language</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All 3 learning paths for that language</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> All interactive exercises & audio</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Cancel anytime</li>
+                    {t.weeklyPlan.feat1 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat1}</li>}
+                    {t.weeklyPlan.feat2 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat2}</li>}
+                    {t.weeklyPlan.feat3 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat3}</li>}
+                    {t.weeklyPlan.feat4 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat4}</li>}
                   </ul>
-                  <Button asChild variant="outline" className="w-full border-slate-600 hover:bg-slate-700">
+                  <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                     <Link href="/pricing">Get Started</Link>
                   </Button>
                 </CardContent>
               </Card>
-              
-              <Card className="relative flex flex-col bg-slate-800 border-2 border-yellow-500 p-6 shadow-lg shadow-yellow-500/20">
-                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-500 text-yellow-950 font-bold">⭐ BEST VALUE</Badge>
+
+               <Card className="relative flex flex-col border-2 border-yellow-500/50 bg-yellow-950/20 p-6">
+                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950 font-bold">{t.lifetimePlan.badge}</Badge>
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">Survive Anywhere</CardTitle>
-                   <p className="text-4xl font-extrabold mt-2">$99<span className="text-base font-medium text-slate-400">/one-time</span></p>
-                   <p className="text-sm font-semibold text-yellow-400">One-time payment for lifetime access to ALL languages.</p>
+                  <CardTitle className="font-headline text-2xl pt-2">{t.lifetimePlan.title}</CardTitle>
+                  <p className="text-4xl font-extrabold mt-2">{t.lifetimePlan.price_usd.split(' ')[0]}<span className="text-base font-medium text-slate-400"> {t.lifetimePlan.price_usd.split(' ')[1]}</span></p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Everything in Single Course</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Lifetime access to ALL current & future languages</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Priority Support</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> Become a polyglot!</li>
+                    {t.lifetimePlan.feat1 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat1}</li>}
+                    {t.lifetimePlan.feat2 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat2}</li>}
+                    {t.lifetimePlan.feat3 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat3}</li>}
+                    {t.lifetimePlan.feat4 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat4}</li>}
+                    {t.lifetimePlan.feat5 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-yellow-400"/> {t.lifetimePlan.feat5}</li>}
                   </ul>
                   <Button asChild className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950 font-bold">
                     <Link href="/pricing">Get Started</Link>
@@ -183,21 +197,20 @@ export default function PathsPage() {
                 </CardContent>
               </Card>
 
-              <Card className="flex flex-col bg-slate-800 border-2 border-cyan-500 p-6">
-                <Badge variant="default" className="w-fit mb-4">POPULAR</Badge>
+              <Card className="flex flex-col border-2 border-green-500/50 bg-green-950/20 p-6">
                 <CardHeader className="p-0">
-                  <CardTitle className="font-bold text-xl">Single Course</CardTitle>
-                  <p className="text-4xl font-extrabold mt-2">$39<span className="text-base font-medium text-slate-400">/one-time</span></p>
-                  <p className="text-sm text-slate-400 mt-1">One-time payment for one full language course.</p>
+                  <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">{t.completePlan.badge}</Badge>
+                  <CardTitle className="font-headline text-2xl pt-2">{t.completePlan.title}</CardTitle>
+                  <p className="text-4xl font-extrabold mt-2">{t.completePlan.price_usd.split(' ')[0]}<span className="text-base font-medium text-slate-400"> {t.completePlan.price_usd.split(' ')[1]}</span></p>
                 </CardHeader>
                 <CardContent className="p-0 flex-1 flex flex-col justify-between">
                   <ul className="space-y-3 text-slate-300 my-6">
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Everything in Single Language</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Lifetime access to one language course</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Full 12-week curriculum</li>
-                    <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> Email support</li>
+                     {t.completePlan.feat1 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-green-400"/> {t.completePlan.feat1}</li>}
+                    {t.completePlan.feat2 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-green-400"/> {t.completePlan.feat2}</li>}
+                    {t.completePlan.feat3 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-green-400"/> {t.completePlan.feat3}</li>}
+                    {t.completePlan.feat4 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-green-400"/> {t.completePlan.feat4}</li>}
                   </ul>
-                  <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold">
+                  <Button asChild className="w-full bg-green-600 hover:bg-green-700">
                     <Link href="/pricing">Get Started</Link>
                   </Button>
                 </CardContent>
@@ -206,7 +219,7 @@ export default function PathsPage() {
              <div className="mt-12 text-center">
                 <p className="font-semibold text-lg">Try Before You Buy</p>
                 <p className="text-muted-foreground">
-                  Access Week 1, Day 1 of the Survival Path for free. No credit card required.
+                  Access Week 1 of the Survival Path for free. No credit card required.
                 </p>
                 <Button variant="link" asChild><Link href="/dashboard">Start Free Trial</Link></Button>
             </div>

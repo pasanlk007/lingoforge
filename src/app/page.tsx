@@ -346,24 +346,21 @@ export default function LandingPage() {
                     <p className="font-semibold text-muted-foreground">{t.weeklyPlan.price_lkr}</p>
                   </div>
                   <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
-                    <li>✅ {t.weeklyPlan.feat1}</li>
-                    <li>✅ {t.weeklyPlan.feat2}</li>
-                    <li>✅ {t.weeklyPlan.feat3}</li>
+                    {t.weeklyPlan.feat1 && <li>✅ {t.weeklyPlan.feat1}</li>}
+                    {t.weeklyPlan.feat2 && <li>✅ {t.weeklyPlan.feat2}</li>}
+                    {t.weeklyPlan.feat3 && <li>✅ {t.weeklyPlan.feat3}</li>}
+                    {t.weeklyPlan.feat4 && <li>✅ {t.weeklyPlan.feat4}</li>}
                   </ul>
                   {t.weeklyPlan.note && <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ {t.weeklyPlan.note}</p>}
                 </CardContent>
-                <CardFooter className="flex-col gap-3 w-full">
+                <CardFooter className="flex-col gap-2 w-full">
                   <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
                     <Link href="/pricing">Pay in USD</Link>
                   </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">or</span>
-                    <div className="h-px flex-1 bg-border" />
+                   <div className="flex items-center justify-center gap-1 mt-2">
+                    <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
                   </div>
-                  <Button asChild className="w-full" variant="outline">
-                    <Link href="/pricing">🇱🇰 Pay in LKR</Link>
-                  </Button>
+                   <p className="text-xs text-muted-foreground/70">Powered by Lemon Squeezy 🍋</p>
                 </CardFooter>
               </Card>
 
@@ -378,24 +375,20 @@ export default function LandingPage() {
                     <p className="font-semibold text-muted-foreground">{t.completePlan.price_lkr}</p>
                   </div>
                     <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
-                    <li>✅ {t.completePlan.feat1}</li>
-                    <li>✅ {t.completePlan.feat2}</li>
-                    <li>✅ {t.completePlan.feat3}</li>
-                    <li>✅ {t.completePlan.feat4}</li>
+                    {t.completePlan.feat1 && <li>✅ {t.completePlan.feat1}</li>}
+                    {t.completePlan.feat2 && <li>✅ {t.completePlan.feat2}</li>}
+                    {t.completePlan.feat3 && <li>✅ {t.completePlan.feat3}</li>}
+                    {t.completePlan.feat4 && <li>✅ {t.completePlan.feat4}</li>}
                   </ul>
                 </CardContent>
-                <CardFooter className="flex-col gap-3 w-full">
-                    <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
+                <CardFooter className="flex-col gap-2 w-full">
+                  <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
                     <Link href="/pricing">Pay in USD</Link>
                   </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">or</span>
-                    <div className="h-px flex-1 bg-border" />
+                   <div className="flex items-center justify-center gap-1 mt-2">
+                    <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
                   </div>
-                  <Button asChild className="w-full" variant="outline">
-                    <Link href="/pricing">🇱🇰 Pay in LKR</Link>
-                  </Button>
+                   <p className="text-xs text-muted-foreground/70">Powered by Lemon Squeezy 🍋</p>
                 </CardFooter>
               </Card>
 
@@ -410,25 +403,21 @@ export default function LandingPage() {
                     <p className="font-semibold text-muted-foreground">{t.lifetimePlan.price_lkr}</p>
                   </div>
                   <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
-                    <li>✅ {t.lifetimePlan.feat1}</li>
-                    <li>✅ {t.lifetimePlan.feat2}</li>
-                    <li>✅ {t.lifetimePlan.feat3}</li>
-                    <li>✅ {t.lifetimePlan.feat4}</li>
+                    {t.lifetimePlan.feat1 && <li>✅ {t.lifetimePlan.feat1}</li>}
+                    {t.lifetimePlan.feat2 && <li>✅ {t.lifetimePlan.feat2}</li>}
+                    {t.lifetimePlan.feat3 && <li>✅ {t.lifetimePlan.feat3}</li>}
+                    {t.lifetimePlan.feat4 && <li>✅ {t.lifetimePlan.feat4}</li>}
                     {t.lifetimePlan.feat5 && <li>✅ {t.lifetimePlan.feat5}</li>}
                   </ul>
                 </CardContent>
-                <CardFooter className="flex-col gap-3 w-full">
+                <CardFooter className="flex-col gap-2 w-full">
                   <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
                     <Link href="/pricing">Pay in USD</Link>
                   </Button>
-                  <div className="flex w-full items-center gap-2">
-                    <div className="h-px flex-1 bg-border" />
-                    <span className="text-xs text-muted-foreground">or</span>
-                    <div className="h-px flex-1 bg-border" />
+                   <div className="flex items-center justify-center gap-1 mt-2">
+                    <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
                   </div>
-                  <Button asChild className="w-full" variant="outline">
-                    <Link href="/pricing">🇱🇰 Pay in LKR</Link>
-                  </Button>
+                   <p className="text-xs text-muted-foreground/70">Powered by Lemon Squeezy 🍋</p>
                 </CardFooter>
               </Card>
             </div>

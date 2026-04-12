@@ -154,6 +154,13 @@ function PricingPageContent() {
                     <p className="text-3xl font-bold">{t.weeklyPlan?.price_usd}</p>
                     <p className="font-semibold text-muted-foreground">{t.weeklyPlan?.price_lkr}</p>
                   </div>
+                   <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
+                    {t.weeklyPlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat1}</li>}
+                    {t.weeklyPlan.feat2 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat2}</li>}
+                    {t.weeklyPlan.feat3 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat3}</li>}
+                    {t.weeklyPlan.feat4 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat4}</li>}
+                  </ul>
+                  {t.weeklyPlan.note && <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ {t.weeklyPlan.note}</p>}
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
                   {isAndroid ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
@@ -177,6 +184,12 @@ function PricingPageContent() {
                     <p className="text-3xl font-bold">{t.completePlan?.price_usd}</p>
                     <p className="font-semibold text-muted-foreground">{t.completePlan?.price_lkr}</p>
                   </div>
+                   <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
+                    {t.completePlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.completePlan.feat1}</li>}
+                    {t.completePlan.feat2 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.completePlan.feat2}</li>}
+                    {t.completePlan.feat3 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.completePlan.feat3}</li>}
+                    {t.completePlan.feat4 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.completePlan.feat4}</li>}
+                  </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
                   {isAndroid ? <GooglePlayButton sku={SKUS.course} fallbackText="Course Plan"/> : (
@@ -200,6 +213,13 @@ function PricingPageContent() {
                     <p className="text-3xl font-bold">{t.lifetimePlan?.price_usd}</p>
                     <p className="font-semibold text-muted-foreground">{t.lifetimePlan?.price_lkr}</p>
                   </div>
+                   <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
+                    {t.lifetimePlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.lifetimePlan.feat1}</li>}
+                    {t.lifetimePlan.feat2 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.lifetimePlan.feat2}</li>}
+                    {t.lifetimePlan.feat3 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.lifetimePlan.feat3}</li>}
+                    {t.lifetimePlan.feat4 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.lifetimePlan.feat4}</li>}
+                    {t.lifetimePlan.feat5 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.lifetimePlan.feat5}</li>}
+                  </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-3 w-full">
                   {isAndroid ? <GooglePlayButton sku={SKUS.lifetime} fallbackText="Lifetime Plan"/> : (
