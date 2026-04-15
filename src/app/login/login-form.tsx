@@ -69,6 +69,14 @@ function getDirectFirebase() {
 }
 
 export function LoginFormContent() {
+  const [isIOS, setIsIOS] = useState(false);
+  const [isAndroid, setIsAndroid] = useState(false);
+  
+  useEffect(() => {
+    const ua = navigator.userAgent;
+    setIsIOS(/iPhone|iPad|iPod/.test(ua));
+    setIsAndroid(/Android/.test(ua));
+  }, []);
   if (typeof window !== 'undefined') {
     window.onerror = (msg, src, line, col, err) => {
       alert('ERROR: ' + msg + ' | ' + (err?.stack || ''));
@@ -196,7 +204,18 @@ export function LoginFormContent() {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-             <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
+             {(isIOS || isAndroid) && (
+              <div className="mb-3 p-3 rounded-xl border border-cyan-500/30 bg-cyan-500/10 text-center">
+                <p className="text-xs text-muted-foreground mb-2">
+                  {isIOS ? '🍎 Get the best experience on iPhone' : '🤖 Get the best experience on Android'}
+                </p>
+                <a href={isIOS ? 'https://lingoforge.app' : 'https://play.google.com/store/apps/details?id=com.lingoforge.app'}
+                  className="inline-flex items-center gap-2 bg-cyan-500 text-white text-xs px-4 py-2 rounded-lg font-semibold">
+                  {isIOS ? '🍎 Install on iPhone' : '📲 Install on Android'} — Free
+                </a>
+              </div>
+            )}
+            <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
                {isGoogleLoading ? 'Signing In...' : 'Continue with Google'}
              </Button>
             <div className="relative">
