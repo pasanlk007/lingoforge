@@ -53,7 +53,6 @@ export default function LandingPage() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const [showLangGuide, setShowLangGuide] = useState(false);
-  const [isFbBrowser, setIsFbBrowser] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [isIOS, setIsIOS] = useState(false);
   const [isAndroid, setIsAndroid] = useState(false);
@@ -72,12 +71,6 @@ export default function LandingPage() {
     if (deferredPrompt) { deferredPrompt.prompt(); setDeferredPrompt(null); }
   };
 
-  useEffect(() => {
-    const ua = navigator.userAgent || '';
-    if (ua.includes('FBAN') || ua.includes('FBAV') || ua.includes('Instagram')) {
-      setIsFbBrowser(true);
-    }
-  }, []);
   const router = useRouter();
 
   useEffect(() => {
@@ -117,32 +110,6 @@ export default function LandingPage() {
 
   return (
     <div className={cn("bg-slate-900 text-white font-body")} dir={isRTL ? 'rtl' : 'ltr'}>
-      
-      {isFbBrowser && (
-        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl">
-            <div className="text-4xl mb-2">🌍</div>
-            <h3 className="text-base font-bold text-gray-900 mb-1">LingoForge (භාෂා ගුරු)</h3>
-            <p className="text-gray-600 text-xs mb-3">විදේශ රටක ජීවත් වන ශ්‍රී ලාංකිකයන් සඳහා භාෂා ඉගෙනීමේ app එකක්. රෝමේනියානු, ජර්මන්, ප්‍රංශ ඇතුළු භාෂා 21ක් සිංහලෙන් ඉගෙනගන්න.</p>
-            <div className="text-left text-xs text-gray-700 mb-4 space-y-1">
-              <p>✅ පළමු සතිය නොමිලේ</p>
-              <p>✅ දිනකට මිනිත්තු 10යි</p>
-              <p>✅ Survival, Alphabet, Numbers</p>
-              <p>✅ AI powered lessons</p>
-            </div>
-            <p className="text-gray-700 text-xs font-medium mb-2">කරුණාකර Chrome හෝ Safari browser වෙතින් පිවිසෙන්න:</p>
-            <div className="bg-gray-100 rounded-lg p-3 mb-3 flex items-center justify-between">
-              <span className="text-gray-900 font-bold text-sm select-all">www.bashaguru.com</span>
-              <button onClick={() => navigator.clipboard?.writeText('www.bashaguru.com').then(() => alert('✅ Copy වුණා!\n\nChrome browser open කරලා\nwww.bashaguru.com Google කරන්න 🔍'))} className="bg-blue-600 text-white text-xs px-3 py-1 rounded-lg ml-2">
-                Copy
-              </button>
-            </div>
-            <button onClick={() => setIsFbBrowser(false)} className="w-full text-gray-400 text-xs py-2">
-              skip
-            </button>
-          </div>
-        </div>
-      )}
       <nav className="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
