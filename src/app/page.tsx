@@ -74,7 +74,7 @@ export default function LandingPage() {
 
   useEffect(() => {
     const ua = navigator.userAgent || '';
-    if (ua.includes('FBAN') || ua.includes('FBAV') || ua.includes('Instagram')) {
+    undefined
       setIsFbBrowser(true);
     }
   }, []);
