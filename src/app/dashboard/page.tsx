@@ -11,7 +11,17 @@ import {
   ChevronRight,
   Target,
   Globe,
+  ShieldCheck,
+  Landmark,
+  BookText,
+  Sparkles,
+  Home,
+  Sprout,
+  LayoutGrid,
+  User,
+  BookBookmark,
 } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -42,6 +52,7 @@ import { TrialEndModal } from "@/components/TrialEndModal";
 import { differenceInCalendarDays } from 'date-fns';
 import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
+import { proLessonTopics } from "@/lib/proLessonTopics";
 
 const SI_TRANSLATIONS = {
   'Explore Learning Paths': 'ඉගෙනීමේ මාර්ග',
@@ -108,6 +119,7 @@ function DashboardLoading() {
 function DashboardContent({ user }: { user: User }) {
   const [isMounted, setIsMounted] = useState(false);
   const firestore = useFirestore();
+  const pathname = usePathname();
 
   const userProfileRef = useMemoFirebase(() => {
     if (!user || !firestore) return null;
@@ -197,7 +209,6 @@ function DashboardContent({ user }: { user: User }) {
   
   const langKey = targetLanguage.toLowerCase();
   
-  // Survival Path data
   const survivalProgress = userProfile?.languageProgress?.[langKey]?.['survival'];
   const survivalLastWeek = survivalProgress?.lastWeek || 1;
   const survivalLastDay = survivalProgress?.lastDay || 0;
@@ -205,11 +216,14 @@ function DashboardContent({ user }: { user: User }) {
   const nextSurvivalWeek = survivalLastDay < 7 ? survivalLastWeek : survivalLastWeek + 1;
   const nextSurvivalLessonUrl = `/lessons/${langKey}/survival/${nextSurvivalWeek}/${nextSurvivalDay}`;
 
-  // Pro Path data
   const proProgress = userProfile?.languageProgress?.[langKey]?.['pro'];
   const lastProAbsoluteDay = proProgress ? (proProgress.lastWeek - 1) * 7 + proProgress.lastDay : 0;
   const proPathFinished = lastProAbsoluteDay >= 30;
   const nextProAbsoluteDay = proPathFinished ? 30 : lastProAbsoluteDay + 1;
+  const nextProWeekForTopic = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
+  const nextProDayInWeekForTopic = ((nextProAbsoluteDay - 1) % 7) + 1;
+  const nextProTopic = proLessonTopics[nextProWeekForTopic]?.[nextProDayInWeekForTopic] || 'Review';
+
   const nextProWeek = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
   const nextProDay = ((nextProAbsoluteDay - 1) % 7) + 1;
   const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeek}/${nextProDay}`;
@@ -245,6 +259,14 @@ function DashboardContent({ user }: { user: User }) {
 
   const targetLanguageInfo = targetLanguages.find(l => l.lang === targetLanguage);
   const subscriptionPlan = userProfile?.subscriptionPlan || 'free';
+  
+  const bottomNavItems = [
+    { href: '/dashboard', label: 'HOME', icon: Home },
+    { href: '/survival', label: 'SURVIVAL', icon: Sprout },
+    { href: '/dashboard/lesson-map', label: 'LESSON MAP', icon: LayoutGrid },
+    { href: nextProLessonUrl, label: 'PRO', icon: BookBookmark },
+    { href: '/profile', label: 'PROFILE', icon: User },
+  ];
 
   if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading) {
       return <DashboardLoading />;
@@ -254,7 +276,7 @@ function DashboardContent({ user }: { user: User }) {
     <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
       <VoiceInit />
       <Navigation />
-      <main className="flex-1">
+      <main className="flex-1 pb-20 md:pb-0">
         <div className="container mx-auto py-8 sm:py-12 px-4">
           <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
           <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
@@ -317,7 +339,7 @@ function DashboardContent({ user }: { user: User }) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-8">
               
-              <Card className="border-2 border-green-500/50 bg-gradient-to-br from-green-900/20 to-card">
+              <Card className="flex flex-col border-2 border-green-500/50 bg-gradient-to-br from-green-900/20 to-card">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">🌱</span>
@@ -351,40 +373,60 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="grid grid-cols-2 gap-2">
                       <Button asChild variant="outline" className="font-semibold">
                           <Link href="/alphabet">
-                              🔤 {si_t('Alphabet Path')}
+                              🔤 {si_t('අකුරු හදුනාගනිමු')}
                           </Link>
                       </Button>
                       <Button asChild variant="outline" className="font-semibold">
                           <Link href="/numbers">
-                              🔢 {si_t('Numbers Path')}
+                              🔢 {si_t('ඉලක්කම් ඉගෙනගමු')}
                           </Link>
                       </Button>
                   </div>
                 </CardFooter>
               </Card>
 
-              <Card className="flex flex-col border-2 border-purple-500/30 bg-gradient-to-br from-purple-900/10 to-card">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">🏛️</span>
-                      <div>
-                        <CardTitle className="text-xl">{si_t('LingoForge Pro')}</CardTitle>
-                        <CardDescription>{si_t('Citizenship & Integration')}</CardDescription>
-                      </div>
+              <Card className="flex flex-col border-2 border-purple-500/30 bg-gradient-to-br from-purple-950/20 to-card p-6">
+                <CardHeader className="p-0">
+                  <Badge variant="outline" className="w-fit border-purple-400/50 bg-purple-900/30 text-purple-300 mb-4 flex items-center gap-2">
+                    <Sparkles className="h-4 w-4" />
+                    AI ADVANCED PATH
+                  </Badge>
+                  <div className="flex items-center gap-4">
+                    <Landmark className="h-8 w-8 text-purple-400" />
+                    <div>
+                      <CardTitle className="text-2xl font-bold">LingoForge Pro</CardTitle>
+                      <CardDescription className="text-purple-300/80 mt-1">A specialized 30-day integration curriculum for migrant workers.</CardDescription>
                     </div>
-                    <Badge className="bg-purple-500/20 text-purple-300 border border-purple-500/30">{si_t('Coming Soon')}</Badge>
                   </div>
                 </CardHeader>
-                <CardFooter className="flex flex-col sm:flex-row gap-2 p-4">
-                  <Button asChild className="w-full bg-purple-600 hover:bg-purple-500">
-                    <Link href="/dashboard/lesson-map">🗺️ {si_t('Explore Lesson Map')}</Link>
-                  </Button>
-                  <Button asChild variant="outline" className="w-full" disabled={proPathFinished}>
-                    <Link href={nextProLessonUrl}>
-                      {proPathFinished ? 'Path Complete!' : 'Go to Next Pro Lesson'} <ChevronRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
+                <CardContent className="p-0 mt-6 flex-1">
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><ShieldCheck className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">RIGHTS</span></div>
+                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><Landmark className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">INTEGRATION</span></div>
+                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><BookText className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">LEGAL VOCAB</span></div>
+                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><Sparkles className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">AI TUTORS</span></div>
+                    </div>
+                </CardContent>
+                <CardFooter className="flex-col gap-4 p-0 mt-6">
+                    <div className="w-full rounded-lg bg-black/20 p-4">
+                        <div className="flex items-center gap-4">
+                            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-purple-900/50 border border-purple-500/50 text-2xl font-bold">
+                                {nextProAbsoluteDay}
+                            </div>
+                            <div>
+                                <p className="text-xs font-bold uppercase text-purple-400">Next Pro Lesson</p>
+                                <p className="font-semibold">{nextProTopic}</p>
+                            </div>
+                        </div>
+                        <Button asChild className="w-full mt-4 bg-purple-600 hover:bg-purple-500 font-bold" disabled={proPathFinished}>
+                          <Link href={nextProLessonUrl}>
+                            {proPathFinished ? 'Path Complete!' : 'Continue Lesson'} <ChevronRight className="ml-auto h-5 w-5" />
+                          </Link>
+                        </Button>
+                    </div>
+                    <Button asChild variant="outline" className="w-full">
+                      <Link href="/dashboard/lesson-map">Explore Lesson Map</Link>
+                    </Button>
                 </CardFooter>
               </Card>
 
@@ -413,6 +455,23 @@ function DashboardContent({ user }: { user: User }) {
           </div>
         </div>
       </main>
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">
+        <div className="grid h-16 grid-cols-5">
+          {bottomNavItems.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className={cn(
+                "flex flex-col items-center justify-center gap-1 text-[10px] font-bold uppercase tracking-wider",
+                pathname === item.href ? "text-primary" : "text-muted-foreground hover:text-primary/80"
+              )}
+            >
+              <item.icon className="h-5 w-5" />
+              <span>{item.label}</span>
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
