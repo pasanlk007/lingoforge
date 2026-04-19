@@ -36,35 +36,6 @@ import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 
-const SI_TRANSLATIONS = {
-  'Explore Learning Paths': 'ඉගෙනීමේ මාර්ග',
-  'Survival Bundle': 'පැවැත්මේ මාර්ගය',
-  'Survival Path': '👉 මේ ඉගෙනීමේ මාර්ගය',
-  'Alphabet Path': 'අකුරු හදුනාගනිමු',
-  'Numbers Path': 'ඉලක්කම් ඉගෙනගමු',
-  'LingoForge Pro': 'LingoForge ප්‍රෝ',
-  'Citizenship & Integration': 'පුරවැසිභාවය',
-  'Coming Soon': 'ළඟදීම',
-  'Citizenship Prep': 'පුරවැසිභාවය අයදුම් සූදානම',
-  'Legal Framework': 'නීති රාමුව',
-  'Exam Preparation': 'විභාග සූදානම',
-  'Daily AI Lessons': 'දෛනික AI පාඩම්',
-  'Explore Lesson Map': 'පාඩම් සිතියම',
-  'Application guidance': 'ඉල්ලුම් මාර්ගෝපදේශය',
-  'Rights & documents': 'අයිතිවාසිකම් සහ ලේඛන',
-  'Language & civic tests': 'භාෂා සහ පුරවැසි පරීක්ෂණ',
-  'Grammar & culture': 'ව්‍යාකරණ සහ සංස්කෘතිය',
-  'Your 30-day journey': 'ඔබේ දින 30 ගමන',
-  'Good morning': 'සුබ උදෑසනක්',
-  'Good afternoon': 'සුබ දහවලක්',
-  'Good evening': 'සුබ සන්ධ්‍යාවක්',
-  'streak': 'දිනපෙළ',
-  'days': 'දින',
-  'week': 'සතිය',
-  'I speak': 'ඔබේ භාෂාව',
-  'I am learning': 'ඉලක්කගත භාෂාව තෝරන්න',
-};
-
 function DashboardLoading() {
   return (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -115,13 +86,6 @@ function DashboardContent({ user }: { user: User }) {
 
   const [nativeLanguage, setNativeLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
-
-  const si_t = (englishText: string) => {
-    if (nativeLanguage === 'Sinhala') {
-      return (SI_TRANSLATIONS as any)[englishText] || englishText;
-    }
-    return englishText;
-  };
 
   useEffect(() => {
     setIsMounted(true);
@@ -188,6 +152,10 @@ function DashboardContent({ user }: { user: User }) {
     currentStreak,
     xpPoints,
   } = userProfile || {};
+
+  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
+  const t_ui = translations[validNativeLanguage as keyof typeof translations].ui;
   
   const langKey = targetLanguage.toLowerCase();
   
@@ -213,10 +181,6 @@ function DashboardContent({ user }: { user: User }) {
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
   const xpToNextLevel = 1500 - ((xpPoints || 0) % 1500);
 
-  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
-  const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
-  const t_ui = translations[validNativeLanguage as keyof typeof translations].ui;
-  
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
   
@@ -249,6 +213,14 @@ function DashboardContent({ user }: { user: User }) {
     { href: nextProLessonUrl, label: 'PRO', icon: BookOpen },
     { href: '/profile', label: 'PROFILE', icon: UserIcon },
   ];
+
+  const proPathIcons = [
+    { icon: <ShieldCheck className="h-5 w-5 text-purple-400" /> },
+    { icon: <Landmark className="h-5 w-5 text-purple-400" /> },
+    { icon: <BookText className="h-5 w-5 text-purple-400" /> },
+    { icon: <Sparkles className="h-5 w-5 text-purple-400" /> },
+  ];
+  const proPathItemKeys = Object.keys(t.proBundle.items);
 
   if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading) {
       return <DashboardLoading />;
@@ -326,8 +298,8 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">🌱</span>
                     <div>
-                      <CardTitle className="text-xl">{si_t('Survival Bundle')}</CardTitle>
-                      <CardDescription>Your first step to practical fluency.</CardDescription>
+                      <CardTitle className="text-xl">{t.survivalBundle.title}</CardTitle>
+                      <CardDescription>{t.survivalBundle.description}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -355,12 +327,12 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="grid grid-cols-2 gap-2">
                       <Button asChild variant="outline" className="font-semibold">
                           <Link href="/alphabet">
-                              🔤 {si_t('අකුරු හදුනාගනිමු')}
+                              🔤 {t.alphabetPath}
                           </Link>
                       </Button>
                       <Button asChild variant="outline" className="font-semibold">
                           <Link href="/numbers">
-                              🔢 {si_t('ඉලක්කම් ඉගෙනගමු')}
+                              🔢 {t.numbersPath}
                           </Link>
                       </Button>
                   </div>
@@ -371,22 +343,27 @@ function DashboardContent({ user }: { user: User }) {
                 <CardHeader className="p-0">
                   <Badge variant="outline" className="w-fit border-purple-400/50 bg-purple-900/30 text-purple-300 mb-4 flex items-center gap-2">
                     <Sparkles className="h-4 w-4" />
-                    AI ADVANCED PATH
+                    {t.proBundle.badge}
                   </Badge>
                   <div className="flex items-center gap-4">
                     <Landmark className="h-8 w-8 text-purple-400" />
                     <div>
-                      <CardTitle className="text-2xl font-bold">LingoForge Pro</CardTitle>
-                      <CardDescription className="text-purple-300/80 mt-1">A specialized 30-day integration curriculum for migrant workers.</CardDescription>
+                      <CardTitle className="text-2xl font-bold">{t.proBundle.title}</CardTitle>
+                      <CardDescription className="text-purple-300/80 mt-1">{t.proBundle.description}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="p-0 mt-6 flex-1">
                     <div className="grid grid-cols-2 gap-3">
-                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><ShieldCheck className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">RIGHTS</span></div>
-                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><Landmark className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">INTEGRATION</span></div>
-                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><BookText className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">LEGAL VOCAB</span></div>
-                      <div className="flex items-center gap-3 rounded-lg bg-black/20 p-3"><Sparkles className="h-5 w-5 text-purple-400" /><span className="text-xs font-semibold">AI TUTORS</span></div>
+                      {proPathItemKeys.map((key, index) => (
+                        <div key={key} className="flex items-center gap-3 rounded-lg bg-black/20 p-3">
+                          {proPathIcons[index].icon}
+                          <div>
+                              <p className="text-xs font-semibold">{(t.proBundle.items as any)[key].title}</p>
+                              <p className="text-xs text-muted-foreground">{(t.proBundle.items as any)[key].desc}</p>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                 </CardContent>
                 <CardFooter className="flex-col gap-4 p-0 mt-6">
@@ -396,7 +373,7 @@ function DashboardContent({ user }: { user: User }) {
                                 {nextProAbsoluteDay}
                             </div>
                             <div>
-                                <p className="text-xs font-bold uppercase text-purple-400">Next Pro Lesson</p>
+                                <p className="text-xs font-bold uppercase text-purple-400">{t.proBundle.nextLesson}</p>
                                 <p className="font-semibold">{nextProTopic}</p>
                             </div>
                         </div>
@@ -407,7 +384,7 @@ function DashboardContent({ user }: { user: User }) {
                         </Button>
                     </div>
                     <Button asChild variant="outline" className="w-full">
-                      <Link href="/dashboard/lesson-map">Explore Lesson Map</Link>
+                      <Link href="/dashboard/lesson-map">{t.proBundle.exploreMap}</Link>
                     </Button>
                 </CardFooter>
               </Card>
