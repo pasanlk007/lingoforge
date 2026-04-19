@@ -2,25 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Link from 'next/link';
-import { Home, Sprout, LayoutGrid, BookOpen as BookBookmark, User as UserIcon,
-  Flame,
-  Star,
-  Zap,
-  BookOpen,
-  CalendarDays,
-  ChevronRight,
-  Target,
-  Globe,
-  ShieldCheck,
-  Landmark,
-  BookText,
-  Sparkles,
-  Home,
-  Sprout,
-  LayoutGrid,
-  User as UserIcon,
-  BookBookmark,
-} from 'lucide-react';
+import { Home, Sprout, LayoutGrid, BookOpen, User as UserIcon, Flame, Star, Zap, CalendarDays, ChevronRight, Target, Globe, ShieldCheck, Landmark, BookText, Sparkles } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -264,7 +246,7 @@ function DashboardContent({ user }: { user: User }) {
     { href: '/dashboard', label: 'HOME', icon: Home },
     { href: '/survival', label: 'SURVIVAL', icon: Sprout },
     { href: '/dashboard/lesson-map', label: 'LESSON MAP', icon: LayoutGrid },
-    { href: nextProLessonUrl, label: 'PRO', icon: BookBookmark },
+    { href: nextProLessonUrl, label: 'PRO', icon: BookOpen },
     { href: '/profile', label: 'PROFILE', icon: UserIcon },
   ];
 

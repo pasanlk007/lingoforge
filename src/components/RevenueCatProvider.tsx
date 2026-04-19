@@ -2,7 +2,9 @@
 
 import { useEffect } from 'react';
 import { Capacitor } from '@capacitor/core';
-import Purchases, { LOG_LEVEL, PURCHASES_ERROR_CODE } from '@revenuecat/purchases-capacitor';
+import * as RCModule from '@revenuecat/purchases-capacitor';
+const Purchases = (RCModule as any).Purchases || RCModule;
+const { LOG_LEVEL, PURCHASES_ERROR_CODE } = RCModule as any;
 import { useUser, useFirestore, updateDocumentNonBlocking } from '@/firebase';
 import { doc } from 'firebase/firestore';
 

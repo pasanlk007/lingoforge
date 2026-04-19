@@ -1,7 +1,9 @@
 'use client';
 
 import { Capacitor } from '@capacitor/core';
-import { Purchases, LOG_LEVEL, PurchasesStoreProduct, PurchasesError, PURCHASES_ERROR_CODE } from '@revenuecat/purchases-capacitor';
+import * as RCModule from '@revenuecat/purchases-capacitor';
+const Purchases = (RCModule as any).Purchases || RCModule;
+const { LOG_LEVEL, PURCHASES_ERROR_CODE } = RCModule as any;
 
 export async function initializeBilling(): Promise<boolean> {
   if (!Capacitor.isNativePlatform()) return false;
