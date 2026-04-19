@@ -75,11 +75,11 @@ export default function SignupPage() {
   const [installReady, setInstallReady] = useState(false);
   
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setDetecting(false);
-      if (deferredPrompt || isIOS || isAndroid) setInstallReady(true);
     }, 2000);
-  }, [deferredPrompt, isIOS, isAndroid]);
+    return () => clearTimeout(timer);
+  }, []);
   const [platform, setPlatform] = useState<'android'|'ios'|'desktop'|'unknown'>('unknown');
 
   useEffect(() => {
