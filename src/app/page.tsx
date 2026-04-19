@@ -211,6 +211,19 @@ export default function LandingPage() {
               <div className="mt-8 flex flex-col items-center justify-center gap-4">
                   <Button size="lg" className="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
               </div>
+                <div className="mt-3 w-full max-w-sm mx-auto text-center">
+                  {deferredPrompt ? (
+                    <button onClick={handleAndroidInstall} className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl border border-cyan-400/40 bg-cyan-900/20 text-cyan-300 text-sm font-semibold">
+                      📲 Install App — Free
+                    </button>
+                  ) : isIOS ? (
+                    <p className="text-xs text-slate-400">🍎 Tap Share □↑ then "Add to Home Screen"</p>
+                  ) : isAndroid ? (
+                    <p className="text-xs text-slate-400">🤖 Tap ⋮ menu then "Add to Home Screen"</p>
+                  ) : (
+                    <p className="text-xs text-slate-400">💻 Click ⊕ in address bar to install</p>
+                  )}
+                </div>
             </div>
           </div>
         </section>
