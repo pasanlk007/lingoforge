@@ -1,13 +1,13 @@
 'use client';
 
 import { Capacitor } from '@capacitor/core';
-import * as RCModule from '@revenuecat/purchases-capacitor';
-const Purchases = (RCModule as any).Purchases || RCModule;
-const { LOG_LEVEL, PURCHASES_ERROR_CODE } = RCModule as any;
+// Types can be imported directly as they are stripped out during compilation.
+import type { PurchasesStoreProduct, PurchasesError } from '@revenuecat/purchases-capacitor';
 
 export async function initializeBilling(): Promise<boolean> {
   if (!Capacitor.isNativePlatform()) return false;
   try {
+    const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
     await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
     return true;
   } catch (e) {
@@ -19,6 +19,7 @@ export async function initializeBilling(): Promise<boolean> {
 export async function getProducts(productIds: string[]): Promise<PurchasesStoreProduct[]> {
   if (!Capacitor.isNativePlatform()) return [];
   try {
+    const { Purchases } = await import('@revenuecat/purchases-capacitor');
     const { products } = await Purchases.getProducts({ productIdentifiers: productIds });
     return products;
   } catch (e) {
@@ -32,6 +33,7 @@ export async function purchase(sku: string, appUserID: string) {
     throw new Error('Purchases can only be made on a native device.');
   }
   try {
+    const { Purchases } = await import('@revenuecat/purchases-capacitor');
     const { products } = await Purchases.getProducts({ productIdentifiers: [sku] });
     const productToPurchase = products[0];
     if (!productToPurchase) throw new Error(`Product with SKU ${sku} not found.`);
@@ -39,6 +41,7 @@ export async function purchase(sku: string, appUserID: string) {
     const isPremium = typeof purchaserInfo.entitlements.active['premium'] !== 'undefined';
     return { isAcknowledged: isPremium, purchaserInfo };
   } catch (e) {
+    const { PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
     const error = e as PurchasesError;
     if (error.code !== PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) {
       console.error('RevenueCat purchase error:', error);

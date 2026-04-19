@@ -2,9 +2,6 @@
 
 import { useEffect } from 'react';
 import { Capacitor } from '@capacitor/core';
-import * as RCModule from '@revenuecat/purchases-capacitor';
-const Purchases = (RCModule as any).Purchases || RCModule;
-const { LOG_LEVEL, PURCHASES_ERROR_CODE } = RCModule as any;
 import { useUser, useFirestore, updateDocumentNonBlocking } from '@/firebase';
 import { doc } from 'firebase/firestore';
 
@@ -22,6 +19,8 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
     }
 
     const initRevenueCat = async () => {
+      const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
+      
       // For debugging purposes, you can set the log level
       await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
 
@@ -29,7 +28,7 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
       await Purchases.configure({ apiKey: API_KEY });
 
       // Listen for any updates to the purchaser info
-      Purchases.addPurchaserInfoUpdateListener(async (info) => {
+      Purchases.addPurchaserInfoUpdateListener(async (info: any) => {
         const premiumEntitlement = info.entitlements.active[ENTITLEMENT_ID];
         const hasActiveSubscription = typeof premiumEntitlement !== 'undefined';
         
@@ -69,6 +68,7 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
     }
 
     const manageRevenueCatUser = async () => {
+      const { Purchases, PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
       if (user) {
         try {
           // If a user is logged in, identify them with RevenueCat using their Firebase UID

@@ -2,7 +2,6 @@
 
 import { Capacitor } from '@capacitor/core';
 import { GoogleAuthProvider, signInWithCredential, type Auth, type User } from 'firebase/auth';
-import { FirebaseAuthentication } from '@capacitor-firebase/authentication';
 
 export function isNativePlatform(): boolean {
   if (typeof window === 'undefined') return false;
@@ -21,6 +20,7 @@ export async function initializeGoogleAuth(): Promise<void> {
 export async function nativeGoogleSignIn(auth: Auth): Promise<User | null> {
   if (!isNativePlatform()) return null;
   try {
+    const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
     const result = await FirebaseAuthentication.signInWithGoogle();
     const idToken = result.credential?.idToken;
     if (!idToken) return null;
