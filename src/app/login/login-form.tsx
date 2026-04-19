@@ -1,22 +1,33 @@
 'use client';
 import { initializeApp, getApps, getApp } from 'firebase/app';
-import { getAuth as getFirebaseAuth } from 'firebase/auth';
-import { getFirestore as getFirebaseFirestore } from 'firebase/firestore';
+import { getAuth as getFirebaseAuth, User } from 'firebase/auth';
+import { getFirestore as getFirebaseFirestore, doc, setDoc, getDoc } from 'firebase/firestore';
 import { isNativePlatform, nativeGoogleSignIn } from '@/lib/nativeGoogleAuth';
-
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useAuth, useFirestore, initiateGoogleSignIn, useUser } from '@/firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useAuth, useFirestore, initiateGoogleSignIn, useUser, updateDocumentNonBlocking } from '@/firebase';
+import { signInWithEmailAndPassword, updateProfile, createUserWithEmailAndPassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
-import { Languages } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+import { Languages, ArrowLeft, ArrowRight, Smartphone, Monitor, X } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Checkbox } from '@/components/ui/checkbox';
+import type { UserProfile } from '@/lib/types';
+import { cn } from '@/lib/utils';
+import { targetLanguages } from '@/lib/translations';
+
+const NATIVE_LANGS = [
+    { name: 'English', flag: '🇬🇧' },
+    { name: 'Sinhala', flag: '🇱🇰' },
+    { name: 'Hindi', flag: '🇮🇳' },
+    { name: 'Urdu', flag: '🇵🇰' },
+    { name: 'Bengali', flag: '🇧🇩' },
+    { name: 'Nepali', flag: '🇳🇵' },
+];
 
 function AuthCheckLoading() {
   return (
@@ -54,216 +65,264 @@ function AuthCheckLoading() {
   );
 }
 
-
-function getDirectFirebase() {
-  const config = {
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  };
-  const app = getApps().length === 0 ? initializeApp(config) : getApp();
-  return { auth: getFirebaseAuth(app), firestore: getFirebaseFirestore(app) };
-}
-
 export function LoginFormContent() {
-  const [isIOS, setIsIOS] = useState(false);
-  const [isAndroid, setIsAndroid] = useState(false);
-  
-  useEffect(() => {
-    const ua = navigator.userAgent;
-    setIsIOS(/iPhone|iPad|iPod/.test(ua));
-    setIsAndroid(/Android/.test(ua));
-  }, []);
-  if (typeof window !== 'undefined') {
-    window.onerror = (msg, src, line, col, err) => {
-      alert('ERROR: ' + msg + ' | ' + (err?.stack || ''));
-    };
-  }
+  const [view, setView] = useState<'onboarding' | 'login'>('onboarding');
+  const [step, setStep] = useState(1);
+  const [nativeLanguage, setNativeLanguage] = useState('');
+  const [targetLanguage, setTargetLanguage] = useState('');
+  const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
+
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setGoogleLoading] = useState(false);
-  const searchParams = useSearchParams();
-  const hookAuth = useAuth();
-  const hookFirestore = useFirestore();
-  const direct = typeof window !== 'undefined' ? getDirectFirebase() : null;
-  const auth = hookAuth || direct?.auth || null;
-  const firestore = hookFirestore || direct?.firestore || null;
-  const { toast } = useToast();
   
+  const [isIOS, setIsIOS] = useState(false);
+  const [isAndroid, setIsAndroid] = useState(false);
+  const [isPWA, setIsPWA] = useState(false);
+  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
+  
+  const auth = useAuth();
+  const firestore = useFirestore();
+  const { toast } = useToast();
   const { user, isUserLoading } = useUser();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const redirectUrl = searchParams?.get('redirect') || '/dashboard';
 
   useEffect(() => {
+    const ua = navigator.userAgent;
+    setIsIOS(/iPhone|iPad|iPod/.test(ua) && !(window as any).MSStream);
+    setIsAndroid(/Android/.test(ua));
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setIsPWA(true);
+    }
+    const installPromptDismissed = sessionStorage.getItem('install_prompt_dismissed');
+    if (!installPromptDismissed && (isIOS || isAndroid)) {
+      setShowInstallPrompt(true);
+    }
+  }, [isIOS, isAndroid]);
+
+  useEffect(() => {
     if (!isUserLoading && user) {
-      if (typeof window !== "undefined") { window.location.href = redirectUrl + (redirectUrl.includes("?") ? "&" : "?") + "app=1"; } else { router.push(redirectUrl); }
+      const url = redirectUrl.includes('?') ? `${redirectUrl}&app=1` : `${redirectUrl}?app=1`;
+      window.location.href = url;
     }
   }, [user, isUserLoading, router, redirectUrl]);
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
+  const handleNextStep = () => setStep(prev => prev + 1);
+  const handlePrevStep = () => setStep(prev => prev - 1);
 
-    if (!auth) {
-      toast({
-        variant: "destructive",
-        title: "Authentication Error",
-        description: "The authentication service is not ready. Please wait a moment and try again.",
-      });
-      setIsLoading(false);
-      return;
-    }
+  const createOrUpdateFullUserProfile = async (currentUser: User) => {
+    if (!firestore) return;
+    const userDocRef = doc(firestore, 'userProfiles', currentUser.uid);
+    const now = new Date();
+    const docSnap = await getDoc(userDocRef);
+    const isNewUser = !docSnap.exists();
 
-    try {
-        await signInWithEmailAndPassword(auth, email, password);
-        
-        toast({
-          title: "Login Successful",
-          description: "You are being redirected.",
-        });
-        
-        if (typeof window !== "undefined") { window.location.href = redirectUrl + (redirectUrl.includes("?") ? "&" : "?") + "app=1"; } else { router.push(redirectUrl); }
+    const profileData: Partial<UserProfile> = {
+      id: currentUser.uid,
+      displayName: displayName || currentUser.displayName || 'New User',
+      email: email || currentUser.email!,
+      nativeLanguage,
+      selectedLanguage: targetLanguage,
+      photoURL: currentUser.photoURL || undefined,
+      lastActiveDate: now.toISOString().split('T')[0],
+      ...(isNewUser && {
+        createdAt: now.toISOString(),
+        subscriptionActive: false,
+        subscriptionSource: 'none',
+        subscriptionExpiry: null,
+        xpPoints: 0,
+        currentStreak: 0,
+        aiPlanningEnabled: false,
+      })
+    };
 
-    } catch (error: any) {
-        console.error("Login failed:", error);
-        let errorMessage = "An unknown error occurred.";
-        if (error.code === 'auth/invalid-credential' || error.code === 'auth/wrong-password' || error.code === 'auth/user-not-found') {
-            errorMessage = 'Invalid email or password. Please try again.';
-        } else {
-            errorMessage = error.message;
-        }
-        
-        toast({
-            variant: "destructive",
-            title: "Login Failed",
-            description: errorMessage,
-        });
-        setIsLoading(false);
-    }
-  };
-
-  const handleGoogleSignIn = async () => {
-    setGoogleLoading(true);
-    if (!auth || !firestore) {
-        toast({ variant: "destructive", title: "Error", description: "Authentication services are not ready." });
-        setGoogleLoading(false);
-        return;
-    }
+    localStorage.setItem('nativeLanguage', nativeLanguage);
+    localStorage.setItem('targetLanguage', targetLanguage);
     
+    await setDoc(userDocRef, profileData, { merge: true });
+  };
+  
+  const handleGoogleSignIn = async () => {
+    if (!auth || !firestore) return toast({ variant: "destructive", title: "Services not ready." });
+    if (step < 3 && view === 'onboarding') return toast({ variant: "destructive", title: "Please complete the steps above first." });
+    
+    setGoogleLoading(true);
     try {
-        let success = false;
-        if (isNativePlatform()) {
-            console.log("Native platform detected, attempting native sign-in...");
-            const user = await nativeGoogleSignIn(auth);
-            if (user) {
-                success = true;
-            }
-        } else {
-            console.log("Web environment, using web sign-in...");
-            await initiateGoogleSignIn(auth, firestore);
-            success = true;
-        }
-
-        if (success) {
-            toast({ title: "Login Successful", description: "Welcome back!" });
-            if (typeof window !== "undefined") { window.location.href = redirectUrl + (redirectUrl.includes("?") ? "&" : "?") + "app=1"; } else { router.push(redirectUrl); }
-        } else {
-            // This path is reached if native sign-in was attempted and failed/cancelled.
-            // We simply stop loading and allow the user to try again.
-            setGoogleLoading(false);
-        }
+      const result = await initiateGoogleSignIn(auth, firestore);
+      await createOrUpdateFullUserProfile(result.user);
+      toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
+      const url = redirectUrl.includes('?') ? `${redirectUrl}&app=1` : `${redirectUrl}?app=1`;
+      window.location.href = url;
     } catch (error: any) {
-        // This catch block will primarily handle errors from the web-based flow.
-        if (error.code !== 'auth/popup-closed-by-user') {
-            toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
-        }
-        setGoogleLoading(false);
+      if (error.code !== 'auth/popup-closed-by-user') {
+        toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
+      }
+    } finally {
+      setGoogleLoading(false);
     }
   };
 
-  if (isUserLoading || user) {
-    return <AuthCheckLoading />;
-  }
+  const handleEmailSignup = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!auth || !firestore) return toast({ variant: "destructive", title: "Service Unavailable" });
+    setIsLoading(true);
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      await updateProfile(user, { displayName });
+      await createOrUpdateFullUserProfile(user);
+      toast({ title: "Account Created!", description: "Welcome!" });
+      const url = redirectUrl.includes('?') ? `${redirectUrl}&app=1` : `${redirectUrl}?app=1`;
+      window.location.href = url;
+    } catch (error: any) {
+      toast({ variant: "destructive", title: "Signup Failed", description: error.message });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleEmailLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!auth) return toast({ variant: "destructive", title: "Authentication service not ready." });
+    setIsLoading(true);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      toast({ title: "Login Successful", description: "You are being redirected." });
+      const url = redirectUrl.includes('?') ? `${redirectUrl}&app=1` : `${redirectUrl}?app=1`;
+      window.location.href = url;
+    } catch (error: any) {
+      let errorMessage = error.code === 'auth/invalid-credential' ? 'Invalid email or password.' : error.message;
+      toast({ variant: "destructive", title: "Login Failed", description: errorMessage });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+  
+  const canGoNext = (step === 1 && nativeLanguage) || (step === 2 && targetLanguage) || (step === 3 && displayName.trim().length > 2);
+
+  if (isUserLoading) return <AuthCheckLoading />;
 
   return (
-    <div className="w-full max-w-md">
-      <div className="text-center mb-6">
-        <Link href="/" className="inline-flex items-center gap-2">
-          <Languages className="h-8 w-8 text-primary" />
-          <span className="font-headline text-2xl font-black">LingoForge</span>
-        </Link>
-      </div>
-      <Card>
-        <CardHeader className="text-center">
-          <CardTitle>Welcome Back!</CardTitle>
-          <CardDescription>Log in to continue your language journey.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-             {(isIOS || isAndroid) && (
-              <div className="mb-3 p-3 rounded-xl border border-cyan-500/30 bg-cyan-500/10 text-center">
-                <p className="text-xs text-muted-foreground mb-2">
-                  {isIOS ? '🍎 Get the best experience on iPhone' : '🤖 Get the best experience on Android'}
-                </p>
-                <a href={isIOS ? 'https://lingoforge.app' : 'https://play.google.com/store/apps/details?id=com.lingoforge.app'}
-                  className="inline-flex items-center gap-2 bg-cyan-500 text-white text-xs px-4 py-2 rounded-lg font-semibold">
-                  {isIOS ? '🍎 Install on iPhone' : '📲 Install on Android'} — Free
-                </a>
-              </div>
-            )}
-            <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
-               {isGoogleLoading ? 'Signing In...' : 'Continue with Google'}
+    <div className="w-full max-w-md space-y-4">
+      {showInstallPrompt && !isPWA && (
+        <Card className="bg-card/80 backdrop-blur-sm animate-in fade-in-0 zoom-in-95">
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+             <CardTitle className="text-base">Get the Best Experience</CardTitle>
+             <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => {setShowInstallPrompt(false); sessionStorage.setItem('install_prompt_dismissed', 'true');}}>
+               <X className="h-4 w-4" />
              </Button>
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <span className="w-full border-t" />
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground mb-4">Install the app on your device for offline access and better performance.</p>
+            <a href={isIOS ? 'https://apps.apple.com/us/app/google/id284815942' : 'https://play.google.com/store/apps/details?id=com.lingoforge.app'}
+                  className="inline-flex items-center justify-center w-full gap-2 bg-primary text-primary-foreground text-sm px-4 py-2 rounded-lg font-semibold">
+                  {isIOS ? '🍎 Install on iPhone' : '📲 Install on Android'} — Free
+            </a>
+          </CardContent>
+        </Card>
+      )}
+
+      <Card>
+        {view === 'onboarding' ? (
+          <>
+            <CardHeader>
+               <div className="flex justify-center items-center gap-2 mb-4">
+                  {Array.from({ length: 4 }).map((_, i) => (
+                    <div key={i} className={cn("h-2 rounded-full transition-all", i < step ? 'bg-primary w-8' : 'bg-muted w-4')} />
+                  ))}
+               </div>
+              <CardTitle className="text-center">
+                {step === 1 && 'What is your native language?'}
+                {step === 2 && 'Which language will you learn?'}
+                {step === 3 && 'What should we call you?'}
+                {step === 4 && 'Create Your Account'}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {step === 1 && (
+                <div className="grid grid-cols-2 gap-3">
+                  {NATIVE_LANGS.map(lang => (
+                    <button key={lang.name} onClick={() => { setNativeLanguage(lang.name); handleNextStep(); }}
+                      className={cn("p-4 rounded-lg border-2 text-center transition-all flex flex-col items-center justify-center gap-2 aspect-square",
+                        nativeLanguage === lang.name ? 'bg-primary/20 border-primary' : 'bg-muted/50 border-muted hover:border-primary/50'
+                      )}>
+                      <span className="text-4xl">{lang.flag}</span>
+                      <span className="font-semibold text-sm">{lang.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+              {step === 2 && (
+                <div className="grid grid-cols-3 gap-2 max-h-[40vh] overflow-y-auto pr-2">
+                  {targetLanguages.map(lang => (
+                    <button key={lang.lang} onClick={() => { setTargetLanguage(lang.lang); handleNextStep(); }}
+                      className={cn("p-3 rounded-lg border-2 text-center transition-all flex flex-col items-center justify-center gap-1.5",
+                        targetLanguage === lang.lang ? 'bg-primary/20 border-primary' : 'bg-muted/50 border-muted hover:border-primary/50'
+                      )}>
+                       <span className="text-3xl">{lang.flag}</span>
+                       <span className="font-semibold text-xs">{lang.lang}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+              {step === 3 && (
+                <div className="space-y-2">
+                  <Label htmlFor="displayName">Display Name</Label>
+                  <Input id="displayName" type="text" placeholder="Your Name" value={displayName} onChange={(e) => setDisplayName(e.target.value)} autoFocus />
+                </div>
+              )}
+              {step === 4 && (
+                  <div className="space-y-4">
+                    <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
+                      {isGoogleLoading ? 'Processing...' : 'Continue with Google'}
+                    </Button>
+                    <div className="relative">
+                      <div className="absolute inset-0 flex items-center"><span className="w-full border-t" /></div>
+                      <div className="relative flex justify-center text-xs uppercase"><span className="bg-card px-2 text-muted-foreground">Or</span></div>
+                    </div>
+                    <form onSubmit={handleEmailSignup} className="space-y-4">
+                      <div className="space-y-2"><Label htmlFor="email">Email</Label><Input id="email" type="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={isLoading || isGoogleLoading} /></div>
+                      <div className="space-y-2"><Label htmlFor="password">Password</Label><Input id="password" type="password" placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} required disabled={isLoading || isGoogleLoading} minLength={6}/></div>
+                      <div className="flex items-start space-x-3 pt-2">
+                        <Checkbox id="terms" checked={agreedToTerms} onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)} disabled={isLoading || isGoogleLoading}/>
+                        <div className="grid gap-1.5 leading-none"><label htmlFor="terms" className="text-sm font-medium">I agree to the <Link href="/terms" target="_blank" className="font-semibold text-primary hover:underline">Terms</Link> & <Link href="/privacy" target="_blank" className="font-semibold text-primary hover:underline">Privacy</Link>.</label></div>
+                      </div>
+                      <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading || !agreedToTerms}>{isLoading ? 'Creating Account...' : 'Create Account'}</Button>
+                    </form>
+                  </div>
+              )}
+            </CardContent>
+            <CardFooter className="flex flex-col gap-4 pt-4">
+              <div className="flex justify-between w-full">
+                {step > 1 ? (<Button variant="ghost" onClick={handlePrevStep}><ArrowLeft className="mr-2 h-4 w-4" /> Back</Button>) : <div />}
+                {step < 4 && <Button onClick={handleNextStep} disabled={!canGoNext}>Next <ArrowRight className="ml-2 h-4 w-4" /></Button>}
               </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-background px-2 text-muted-foreground">Or continue with</span>
+              <p className="text-sm">Already have an account? <Button variant="link" className="p-0" onClick={() => setView('login')}>Log in</Button></p>
+            </CardFooter>
+          </>
+        ) : (
+          <>
+            <CardHeader><CardTitle className="text-center">Welcome Back!</CardTitle><CardDescription className="text-center">Log in to continue your journey.</CardDescription></CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>{isGoogleLoading ? 'Signing In...' : 'Continue with Google'}</Button>
+                <div className="relative"><div className="absolute inset-0 flex items-center"><span className="w-full border-t" /></div><div className="relative flex justify-center text-xs uppercase"><span className="bg-card px-2 text-muted-foreground">Or</span></div></div>
+                <form onSubmit={handleEmailLogin} className="space-y-4">
+                  <div className="space-y-2"><Label htmlFor="login-email">Email</Label><Input id="login-email" type="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={isLoading || isGoogleLoading} /></div>
+                  <div className="space-y-2"><Label htmlFor="login-password">Password</Label><Input id="login-password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required disabled={isLoading || isGoogleLoading} /></div>
+                  <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading}>{isLoading ? 'Logging In...' : 'Log In with Email'}</Button>
+                </form>
               </div>
-            </div>
-            <form onSubmit={handleLogin} className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="you@example.com"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  disabled={isLoading || isGoogleLoading}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
-                <Input
-                  id="password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  disabled={isLoading || isGoogleLoading}
-                />
-              </div>
-              <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading}>
-                {isLoading ? 'Logging In...' : 'Log In with Email'}
-              </Button>
-            </form>
-          </div>
-        </CardContent>
-        <CardFooter className="text-center text-sm">
-          <p className="w-full">
-            Don't have an account?{' '}
-            <Link href="/signup" className="font-semibold text-primary hover:underline">
-              Sign up
-            </Link>
-          </p>
-        </CardFooter>
+            </CardContent>
+            <CardFooter className="flex-col gap-2 text-center text-sm">
+              <p>Don't have an account? <Button variant="link" className="p-0" onClick={() => { setView('onboarding'); setStep(1); }}>Sign up</Button></p>
+            </CardFooter>
+          </>
+        )}
       </Card>
     </div>
   );

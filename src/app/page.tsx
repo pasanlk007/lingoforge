@@ -53,6 +53,7 @@ export default function LandingPage() {
   const [displayLanguage, setDisplayLanguage] = useState('English');
   const [isMounted, setIsMounted] = useState(false);
   const [showLangGuide, setShowLangGuide] = useState(false);
+  const [isFbBrowser, setIsFbBrowser] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [isIOS, setIsIOS] = useState(false);
   const [isAndroid, setIsAndroid] = useState(false);
@@ -71,6 +72,12 @@ export default function LandingPage() {
     if (deferredPrompt) { deferredPrompt.prompt(); setDeferredPrompt(null); }
   };
 
+  useEffect(() => {
+    const ua = navigator.userAgent || '';
+    if (ua.includes('FBAN') || ua.includes('FBAV') || ua.includes('Instagram')) {
+      setIsFbBrowser(true);
+    }
+  }, []);
   const router = useRouter();
 
   useEffect(() => {
@@ -96,7 +103,7 @@ export default function LandingPage() {
   };
 
   const handleStartJourney = () => {
-    router.push('/dashboard');
+    router.push('/login');
   }
 
   if (!isMounted) {
@@ -110,6 +117,32 @@ export default function LandingPage() {
 
   return (
     <div className={cn("bg-slate-900 text-white font-body")} dir={isRTL ? 'rtl' : 'ltr'}>
+      
+      {isFbBrowser && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl">
+            <div className="text-4xl mb-2">🌍</div>
+            <h3 className="text-base font-bold text-gray-900 mb-1">LingoForge (භාෂා ගුරු)</h3>
+            <p className="text-gray-600 text-xs mb-3">විදේශ රටක ජීවත් වන ශ්‍රී ලාංකිකයන් සඳහා භාෂා ඉගෙනීමේ app එකක්. රෝමේනියානු, ජර්මන්, ප්‍රංශ ඇතුළු භාෂා 21ක් සිංහලෙන් ඉගෙනගන්න.</p>
+            <div className="text-left text-xs text-gray-700 mb-4 space-y-1">
+              <p>✅ පළමු සතිය නොමිලේ</p>
+              <p>✅ දිනකට මිනිත්තු 10යි</p>
+              <p>✅ Survival, Alphabet, Numbers</p>
+              <p>✅ AI powered lessons</p>
+            </div>
+            <p className="text-gray-700 text-xs font-medium mb-2">කරුණාකර Chrome හෝ Safari browser වෙතින් පිවිසෙන්න:</p>
+            <div className="bg-gray-100 rounded-lg p-3 mb-3 flex items-center justify-between">
+              <span className="text-gray-900 font-bold text-sm select-all">www.bashaguru.com</span>
+              <button onClick={() => navigator.clipboard?.writeText('www.bashaguru.com').then(() => alert('✅ Copy වුණා!\n\nChrome browser open කරලා\nwww.bashaguru.com Google කරන්න 🔍'))} className="bg-blue-600 text-white text-xs px-3 py-1 rounded-lg ml-2">
+                Copy
+              </button>
+            </div>
+            <button onClick={() => setIsFbBrowser(false)} className="w-full text-gray-400 text-xs py-2">
+              skip
+            </button>
+          </div>
+        </div>
+      )}
       <nav className="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
@@ -176,57 +209,8 @@ export default function LandingPage() {
               <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">{t.heroTitle}</h1>
               <p className="mt-4 max-w-xl mx-auto text-lg md:text-xl text-slate-300">{t.heroSub}</p>
               
-              <div className="mt-8 w-full max-w-md mx-auto space-y-4 rounded-lg bg-slate-800/50 p-6 border border-slate-700">
-                 <div className="flex flex-col sm:flex-row gap-3">
-                    <Button size="lg" className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
-                    <div className="flex gap-2 mt-3">
-                      {isAndroid && deferredPrompt && (
-                        <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-green-500 text-green-400 hover:bg-green-500/10 font-semibold" onClick={handleAndroidInstall}>
-                          📲 Install on Android
-                        </Button>
-                      )}
-                      {isIOS && (
-                        <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-slate-400 text-slate-200 hover:bg-slate-700 font-semibold" onClick={() => setShowIOSGuide(true)}>
-                          🍎 Install on iPhone
-                        </Button>
-                      )}
-                      {!isAndroid && !isIOS && deferredPrompt && (
-                        <Button size="sm" variant="outline" className="flex-1 text-sm py-2 border-slate-400 text-slate-200 hover:bg-slate-700 font-semibold" onClick={handleAndroidInstall}>
-                          💻 Install on Desktop
-                        </Button>
-                      )}
-                    </div>
-                    {showIOSGuide && (
-                      <div className="mt-2 p-3 bg-slate-700 rounded-lg text-xs text-slate-300">
-                        <p className="font-semibold mb-1">🍎 iPhone Install:</p>
-                        <p>1️⃣ Safari ෙදෙස් open කරන්න</p>
-                        <p>2️⃣ Share button (□↑) tap කරන්න</p>
-                        <p>3️⃣ "Add to Home Screen" select කරන්න</p>
-                        <button onClick={() => setShowIOSGuide(false)} className="mt-2 text-cyan-400">Close</button>
-                      </div>
-                    )}
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Button size="lg" variant="outline" className="w-full border-slate-600 hover:bg-slate-700">{t.viewPaths}</Button>
-                      </DialogTrigger>
-                      <DialogContent className="bg-slate-800 border-slate-700 text-white sm:max-w-2xl">
-                        <DialogHeader>
-                          <DialogTitle>{targetLanguages.length} {t.languagesAvailable}</DialogTitle>
-                        </DialogHeader>
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-4 max-h-[60vh] overflow-y-auto">
-                          {targetLanguages.map((lang) => (
-                            <div key={lang.lang} className="flex items-center gap-3 rounded-md p-2 hover:bg-slate-700">
-                              <span className="text-3xl">{lang.flag}</span>
-                              <div>
-                                <p className="font-semibold">{lang.lang}</p>
-                                <p className="text-xs text-slate-400">{lang.countries.join(', ')}</p>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                 </div>
+              <div className="mt-8 flex flex-col items-center justify-center gap-4">
+                  <Button size="lg" className="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
               </div>
             </div>
           </div>
@@ -313,10 +297,9 @@ export default function LandingPage() {
                     <p className="font-semibold text-muted-foreground">{t.weeklyPlan.price_lkr}</p>
                   </div>
                   <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
-                    {t.weeklyPlan.feat1 && <li>✅ {t.weeklyPlan.feat1}</li>}
-                    {t.weeklyPlan.feat2 && <li>✅ {t.weeklyPlan.feat2}</li>}
-                    {t.weeklyPlan.feat3 && <li>✅ {t.weeklyPlan.feat3}</li>}
-                    {t.weeklyPlan.feat4 && <li>✅ {t.weeklyPlan.feat4}</li>}
+                    <li>✅ {t.weeklyPlan.feat1}</li>
+                    <li>✅ {t.weeklyPlan.feat2}</li>
+                    <li>✅ {t.weeklyPlan.feat3}</li>
                   </ul>
                   {t.weeklyPlan.note && <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ {t.weeklyPlan.note}</p>}
                 </CardContent>
@@ -342,10 +325,10 @@ export default function LandingPage() {
                     <p className="font-semibold text-muted-foreground">{t.completePlan.price_lkr}</p>
                   </div>
                     <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
-                    {t.completePlan.feat1 && <li>✅ {t.completePlan.feat1}</li>}
-                    {t.completePlan.feat2 && <li>✅ {t.completePlan.feat2}</li>}
-                    {t.completePlan.feat3 && <li>✅ {t.completePlan.feat3}</li>}
-                    {t.completePlan.feat4 && <li>✅ {t.completePlan.feat4}</li>}
+                    <li>✅ {t.completePlan.feat1}</li>
+                    <li>✅ {t.completePlan.feat2}</li>
+                    <li>✅ {t.completePlan.feat3}</li>
+                    <li>✅ {t.completePlan.feat4}</li>
                   </ul>
                 </CardContent>
                 <CardFooter className="flex-col gap-2 w-full">
@@ -370,10 +353,10 @@ export default function LandingPage() {
                     <p className="font-semibold text-muted-foreground">{t.lifetimePlan.price_lkr}</p>
                   </div>
                   <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
-                    {t.lifetimePlan.feat1 && <li>✅ {t.lifetimePlan.feat1}</li>}
-                    {t.lifetimePlan.feat2 && <li>✅ {t.lifetimePlan.feat2}</li>}
-                    {t.lifetimePlan.feat3 && <li>✅ {t.lifetimePlan.feat3}</li>}
-                    {t.lifetimePlan.feat4 && <li>✅ {t.lifetimePlan.feat4}</li>}
+                    <li>✅ {t.lifetimePlan.feat1}</li>
+                    <li>✅ {t.lifetimePlan.feat2}</li>
+                    <li>✅ {t.lifetimePlan.feat3}</li>
+                    <li>✅ {t.lifetimePlan.feat4}</li>
                     {t.lifetimePlan.feat5 && <li>✅ {t.lifetimePlan.feat5}</li>}
                   </ul>
                 </CardContent>
