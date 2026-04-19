@@ -14,7 +14,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { Languages, ArrowLeft, ArrowRight } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
-import { targetLanguages } from '@/lib/translations';
+import { targetLanguages, nativeLanguages } from '@/lib/translations';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 
