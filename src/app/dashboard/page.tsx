@@ -18,7 +18,7 @@ import {
   Home,
   Sprout,
   LayoutGrid,
-  User,
+  User as UserIcon,
   BookBookmark,
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
@@ -265,7 +265,7 @@ function DashboardContent({ user }: { user: User }) {
     { href: '/survival', label: 'SURVIVAL', icon: Sprout },
     { href: '/dashboard/lesson-map', label: 'LESSON MAP', icon: LayoutGrid },
     { href: nextProLessonUrl, label: 'PRO', icon: BookBookmark },
-    { href: '/profile', label: 'PROFILE', icon: User },
+    { href: '/profile', label: 'PROFILE', icon: UserIcon },
   ];
 
   if (!isMounted || isProfileLoading || !userProfile || isConfigLoading || isTrialLoading) {
