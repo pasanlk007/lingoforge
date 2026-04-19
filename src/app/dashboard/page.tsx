@@ -174,9 +174,7 @@ function DashboardContent({ user }: { user: User }) {
   const nextProDayInWeekForTopic = ((nextProAbsoluteDay - 1) % 7) + 1;
   const nextProTopic = proLessonTopics[nextProWeekForTopic]?.[nextProDayInWeekForTopic] || 'Review';
 
-  const nextProWeek = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
-  const nextProDay = ((nextProAbsoluteDay - 1) % 7) + 1;
-  const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeek}/${nextProDay}`;
+  const nextProLessonUrl = `/dashboard/lesson-map#day-${nextProAbsoluteDay}`;
 
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
   const xpToNextLevel = 1500 - ((xpPoints || 0) % 1500);
@@ -378,8 +376,8 @@ function DashboardContent({ user }: { user: User }) {
                             </div>
                         </div>
                         <Button asChild className="w-full mt-4 bg-purple-600 hover:bg-purple-500 font-bold" disabled={proPathFinished}>
-                          <Link href={nextProLessonUrl}>
-                            {proPathFinished ? 'Path Complete!' : 'Continue Lesson'} <ChevronRight className="ml-auto h-5 w-5" />
+                          <Link href={proPathFinished ? "/dashboard/lesson-map" : nextProLessonUrl}>
+                            {proPathFinished ? 'Explore Pro Path' : 'Continue Lesson'} <ChevronRight className="ml-auto h-5 w-5" />
                           </Link>
                         </Button>
                     </div>

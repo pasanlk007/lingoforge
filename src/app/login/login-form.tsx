@@ -2,7 +2,6 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth as getFirebaseAuth } from 'firebase/auth';
 import { getFirestore as getFirebaseFirestore } from 'firebase/firestore';
-import { isNativePlatform, nativeGoogleSignIn } from '@/lib/nativeGoogleAuth';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -148,6 +147,8 @@ export function LoginFormContent() {
     
     try {
         let success = false;
+        const { isNativePlatform, nativeGoogleSignIn } = await import('@/lib/nativeGoogleAuth');
+
         if (await isNativePlatform()) {
             console.log("Native platform detected, attempting native sign-in...");
             const user = await nativeGoogleSignIn(auth);
