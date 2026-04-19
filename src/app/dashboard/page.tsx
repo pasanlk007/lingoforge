@@ -205,11 +205,11 @@ function DashboardContent({ user }: { user: User }) {
   const subscriptionPlan = userProfile?.subscriptionPlan || 'free';
   
   const bottomNavItems = [
-    { href: '/dashboard', label: 'HOME', icon: Home },
-    { href: '/survival', label: 'SURVIVAL', icon: Sprout },
-    { href: '/alphabet', label: 'ALPHABET', icon: BookText },
-    { href: '/numbers', label: 'NUMBERS', icon: ListOrdered },
-    { href: '/profile', label: 'PROFILE', icon: UserIcon },
+    { href: '/dashboard', label: 'Home', icon: Home },
+    { href: '/survival', label: 'Survival', icon: Sprout },
+    { href: '/alphabet', label: 'Alphabet', icon: BookText },
+    { href: '/numbers', label: 'Numbers', icon: ListOrdered },
+    { href: '/profile', label: 'Profile', icon: UserIcon },
   ];
 
   const proPathIcons = [

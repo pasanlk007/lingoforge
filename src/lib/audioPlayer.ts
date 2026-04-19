@@ -1,6 +1,6 @@
 'use client';
 
-const langNameToCode = {
+const langNameToCode: Record<string, string> = {
   'German': 'de-DE', 'French': 'fr-FR', 'Italian': 'it-IT',
   'Spanish': 'es-ES', 'Portuguese': 'pt-PT', 'Dutch': 'nl-NL',
   'Greek': 'el-GR', 'Polish': 'pl-PL', 'Romanian': 'ro-RO',
@@ -10,42 +10,51 @@ const langNameToCode = {
   'Hindi': 'hi-IN', 'Tamil': 'ta-IN', 'Chinese': 'zh-CN',
 };
 
-function getSavedVoiceName(langCode) {
+function getSavedVoiceName(langCode: string) {
   const perLang = localStorage.getItem(`tts_voice_${langCode}`);
-  if (perLang) return perLang;
-  return localStorage.getItem('tts_voice');
+  if (perLang && perLang !== 'default') return perLang;
+  return null;
 }
 
-function getSavedRate(fallbackRate) {
+function getSavedRate(fallbackRate: number) {
   const saved = parseFloat(localStorage.getItem('tts_rate') || '');
   return isNaN(saved) ? fallbackRate : saved;
 }
 
-function getBestVoice(lang) {
+function getBestVoice(lang: string) {
   const voices = speechSynthesis.getVoices();
+  if (voices.length === 0) return null;
+
   const savedVoiceName = getSavedVoiceName(lang);
   if (savedVoiceName) {
     const saved = voices.find(v => v.name === savedVoiceName);
     if (saved) return saved;
   }
-  let voice = voices.find(v => v.lang === lang);
+  
+  // Try to find an exact match for the language code
+  let voice = voices.find(v => v.lang === lang && v.localService);
   if (voice) return voice;
+  voice = voices.find(v => v.lang === lang);
+  if (voice) return voice;
+
+  // Try to find a match for the language only (e.g., 'en' for 'en-US')
   const shortLang = lang.split('-')[0];
+  voice = voices.find(v => v.lang.startsWith(shortLang) && v.localService);
+  if (voice) return voice;
   voice = voices.find(v => v.lang.startsWith(shortLang));
   if (voice) return voice;
-  return voices[0] || null;
+
+  return voices.find(v => v.default) || voices[0] || null;
 }
 
-function safeCancelAndSpeak(utterance) {
-  // Always cancel first
+function safeCancelAndSpeak(utterance: SpeechSynthesisUtterance) {
   speechSynthesis.cancel();
-  // Small delay lets the browser fully reset before speaking
   setTimeout(() => {
     speechSynthesis.speak(utterance);
   }, 50);
 }
 
-export function playAudio(text, languageName, rate) {
+export function playAudio(text: string, languageName: string, rate: number) {
 
   const langCode = langNameToCode[languageName] || 'en-US';
   const effectiveRate = rate !== undefined ? rate : getSavedRate(1);
@@ -56,10 +65,13 @@ export function playAudio(text, languageName, rate) {
   utterance.pitch = 1;
 
   const voice = getBestVoice(langCode);
-  if (voice) utterance.voice = voice;
+  if (voice) {
+      utterance.voice = voice;
+  }
 
-  // Chrome bug fix: speechSynthesis can get stuck — resume before speaking
-  if (speechSynthesis.paused) speechSynthesis.resume();
+  if (speechSynthesis.paused) {
+    speechSynthesis.resume();
+  }
 
   safeCancelAndSpeak(utterance);
 }
