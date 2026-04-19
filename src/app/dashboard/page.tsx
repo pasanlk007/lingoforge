@@ -284,28 +284,28 @@ function DashboardContent({ user }: { user: User }) {
           </header>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8">
-            <Card>
+            <Card className="border-2 border-orange-500/50">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">{t.currentStreak}</CardTitle>
                 <Flame className="h-5 w-5 text-orange-500" />
               </CardHeader>
               <CardContent><div className="text-2xl font-bold">{currentStreak || 0} days</div><p className="text-xs text-muted-foreground">{t.keepFlame}</p></CardContent>
             </Card>
-            <Card>
+            <Card className="border-2 border-yellow-500/50">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">{t.xpPoints}</CardTitle>
                 <Star className="h-5 w-5 text-yellow-500" />
               </CardHeader>
               <CardContent><div className="text-2xl font-bold">{(xpPoints || 0).toLocaleString()}</div><p className="text-xs text-muted-foreground">{xpToNextLevel.toLocaleString()} {t.toNextLevel} {level + 1}</p></CardContent>
             </Card>
-            <Card>
+            <Card className="border-2 border-green-500/50">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">{t.level}</CardTitle>
                 <Zap className="h-5 w-5 text-green-500" />
               </CardHeader>
               <CardContent><div className="text-2xl font-bold">{level}</div><p className="text-xs text-muted-foreground">{t.advancing}</p></CardContent>
             </Card>
-            <Card>
+            <Card className="border-2 border-blue-500/50">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">{t.currentPath}</CardTitle>
                 <Target className="h-5 w-5 text-blue-500" />
@@ -349,22 +349,17 @@ function DashboardContent({ user }: { user: User }) {
                     </Button>
                   )}
                   <div className="grid grid-cols-2 gap-2">
-                      <Button asChild variant="secondary" className="font-semibold">
+                      <Button asChild variant="outline" className="font-semibold">
                           <Link href="/alphabet">
                               🔤 {si_t('Alphabet Path')}
                           </Link>
                       </Button>
-                      <Button asChild variant="secondary" className="font-semibold">
+                      <Button asChild variant="outline" className="font-semibold">
                           <Link href="/numbers">
                               🔢 {si_t('Numbers Path')}
                           </Link>
                       </Button>
                   </div>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href="/dashboard/lesson-map">
-                        🗺️ {si_t('Explore Lesson Map')}
-                    </Link>
-                  </Button>
                 </CardFooter>
               </Card>
 
