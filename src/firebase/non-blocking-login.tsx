@@ -69,6 +69,7 @@ export async function initiateGoogleSignIn(
         };
         await setDoc(userDocRef, newUserProfile, { merge: true });
 
+        // Set preferences in localStorage for immediate UI update
         if (profileData?.nativeLanguage) {
           localStorage.setItem('nativeLanguage', profileData.nativeLanguage);
         }

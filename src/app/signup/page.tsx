@@ -135,7 +135,11 @@ export default function SignupPage() {
     }
     
     try {
-        await initiateGoogleSignIn(auth, firestore, { displayName, nativeLanguage, selectedLanguage: targetLanguage });
+        await initiateGoogleSignIn(auth, firestore, {
+          displayName,
+          nativeLanguage,
+          selectedLanguage: targetLanguage,
+        });
 
         toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
         window.location.href = '/dashboard';
