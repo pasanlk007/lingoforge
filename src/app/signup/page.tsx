@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp, useUser } from '@/firebase';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { doc, setDoc } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -14,7 +14,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { Languages, ArrowLeft, ArrowRight } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
-import { targetLanguages, nativeLanguages } from '@/lib/translations';
+import { targetLanguages, nativeLanguages as allNativeLanguages } from '@/lib/translations';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
 
@@ -77,36 +77,6 @@ export default function SignupPage() {
   const handleNextStep = () => setStep(prev => prev + 1);
   const handlePrevStep = () => setStep(prev => prev - 1);
 
-  const createOrUpdateFullUserProfile = async (user: any) => {
-    if (!firestore) return;
-    const userDocRef = doc(firestore, 'userProfiles', user.uid);
-    const now = new Date();
-
-    const docSnap = await getDoc(userDocRef);
-    const isNewUser = !docSnap.exists();
-
-    const profileData: Partial<UserProfile> = {
-        id: user.uid,
-        displayName: displayName || user.displayName,
-        email: email || user.email,
-        nativeLanguage: nativeLanguage,
-        selectedLanguage: targetLanguage,
-        photoURL: user.photoURL || undefined,
-        lastActiveDate: now.toISOString().split('T')[0],
-        ...(isNewUser && { 
-            createdAt: now.toISOString(),
-            subscriptionActive: false,
-            subscriptionSource: 'none',
-            subscriptionExpiry: null,
-            xpPoints: 0,
-            currentStreak: 0,
-            aiPlanningEnabled: false
-        })
-    };
-    
-    await setDoc(userDocRef, profileData, { merge: true });
-  };
-  
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
     if (!auth || !firestore) {
@@ -116,9 +86,8 @@ export default function SignupPage() {
     }
     
     try {
-        const result = await initiateGoogleSignIn(auth, firestore);
-        await createOrUpdateFullUserProfile(result.user);
-        
+        await initiateGoogleSignIn(auth, firestore, { displayName, nativeLanguage, selectedLanguage: targetLanguage });
+
         toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
         window.location.href = '/dashboard';
 
@@ -144,8 +113,33 @@ export default function SignupPage() {
       const userCredential = await initiateEmailSignUp(auth, email, password);
       const user = userCredential.user;
       await updateProfile(user, { displayName });
-      await createOrUpdateFullUserProfile(user);
       
+      const now = new Date();
+      const userProfile: UserProfile = {
+        id: user.uid,
+        displayName: displayName,
+        email: user.email!,
+        nativeLanguage: nativeLanguage,
+        selectedLanguage: targetLanguage,
+        createdAt: now.toISOString(),
+        subscriptionActive: false,
+        subscriptionSource: 'none',
+        subscriptionExpiry: null,
+        xpPoints: 0,
+        currentStreak: 0,
+        lastActiveDate: now.toISOString().split('T')[0],
+        aiPlanningEnabled: false,
+        activePath: 'survival',
+        lastLessonWeek: 1,
+        lastLessonDay: 0,
+      };
+
+      const userDocRef = doc(firestore, 'userProfiles', user.uid);
+      await setDoc(userDocRef, userProfile, { merge: true });
+
+      localStorage.setItem('nativeLanguage', nativeLanguage);
+      localStorage.setItem('targetLanguage', targetLanguage);
+
       toast({ title: "Account Created!", description: "Welcome!" });
       window.location.href = '/dashboard';
 
@@ -254,12 +248,10 @@ export default function SignupPage() {
                     </div>
                     <div className="flex items-start space-x-3 pt-2">
                       <Checkbox id="terms" checked={agreedToTerms} onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)} disabled={isLoading || isGoogleLoading}/>
-                      <div className="grid gap-1.5 leading-none">
-                        <label htmlFor="terms" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                      <div className="grid gap-1.5 leading-none"><label htmlFor="terms" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                           I agree to the{' '}
                           <Link href="/terms" target="_blank" className="font-semibold text-primary hover:underline">Terms</Link> & <Link href="/privacy" target="_blank" className="font-semibold text-primary hover:underline">Privacy Policy</Link>.
-                        </label>
-                      </div>
+                        </label></div>
                     </div>
                     <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading || !agreedToTerms}>
                       {isLoading ? 'Creating Account...' : 'Create Account'}
@@ -276,7 +268,7 @@ export default function SignupPage() {
               </Button>
             ) : <div />}
 
-            {step === 3 && (
+            {step < 4 && (
               <Button onClick={handleNextStep} disabled={!canGoNext}>
                 Next <ArrowRight className="ml-2 h-4 w-4" />
               </Button>

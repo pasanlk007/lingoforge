@@ -31,7 +31,11 @@ export function initiateEmailSignUp(authInstance: Auth, email: string, password:
  * Initiates Google Sign-In via popup.
  * On first sign-in, creates a user profile document in Firestore.
  */
-export async function initiateGoogleSignIn(auth: Auth, firestore: Firestore): Promise<UserCredential> {
+export async function initiateGoogleSignIn(
+  auth: Auth,
+  firestore: Firestore,
+  profileData?: Partial<UserProfile>
+): Promise<UserCredential> {
     const provider = new GoogleAuthProvider();
     provider.setCustomParameters({
       prompt: 'select_account'
@@ -39,20 +43,18 @@ export async function initiateGoogleSignIn(auth: Auth, firestore: Firestore): Pr
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
 
-    // Check if a user profile already exists in Firestore.
     const userDocRef = doc(firestore, 'userProfiles', user.uid);
     const userDocSnap = await getDoc(userDocRef);
 
     if (!userDocSnap.exists()) {
-        // If the user is new, create their profile with default values.
         const now = new Date();
         const newUserProfile: UserProfile = {
             id: user.uid,
-            displayName: user.displayName || 'New User',
+            displayName: profileData?.displayName || user.displayName || 'New User',
             email: user.email!,
             photoURL: user.photoURL || undefined,
-            nativeLanguage: 'English',
-            selectedLanguage: 'French',
+            nativeLanguage: profileData?.nativeLanguage || 'English',
+            selectedLanguage: profileData?.selectedLanguage || 'French',
             createdAt: now.toISOString(),
             subscriptionActive: false,
             subscriptionSource: 'none',
@@ -65,9 +67,14 @@ export async function initiateGoogleSignIn(auth: Auth, firestore: Firestore): Pr
             lastLessonWeek: 1,
             lastLessonDay: 0,
         };
-        // Use a BLOCKING write to create the profile before the function returns.
         await setDoc(userDocRef, newUserProfile, { merge: true });
-    }
 
+        if (profileData?.nativeLanguage) {
+          localStorage.setItem('nativeLanguage', profileData.nativeLanguage);
+        }
+        if (profileData?.selectedLanguage) {
+          localStorage.setItem('targetLanguage', profileData.selectedLanguage);
+        }
+    }
     return result;
 }
