@@ -209,8 +209,7 @@ function DashboardContent({ user }: { user: User }) {
   const bottomNavItems = [
     { href: '/dashboard', label: 'HOME', icon: Home },
     { href: '/survival', label: 'SURVIVAL', icon: Sprout },
-    { href: '/dashboard/lesson-map', label: 'LESSON MAP', icon: LayoutGrid },
-    { href: nextProLessonUrl, label: 'PRO', icon: BookOpen },
+    { href: '/dashboard/lesson-map', label: 'PRO', icon: LayoutGrid },
     { href: '/profile', label: 'PROFILE', icon: UserIcon },
   ];
 
@@ -415,7 +414,7 @@ function DashboardContent({ user }: { user: User }) {
         </div>
       </main>
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">
-        <div className="grid h-16 grid-cols-5">
+        <div className="grid h-16 grid-cols-4">
           {bottomNavItems.map((item) => (
             <Link
               key={item.label}

@@ -2,7 +2,6 @@
 export const dynamic = 'force-dynamic';
 
 import { useState, useEffect, Suspense } from 'react';
-import { Capacitor } from '@capacitor/core';
 import { Check, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
@@ -72,6 +71,7 @@ function PricingPageContent() {
 
     const setupPlatform = async () => {
       try {
+        const { Capacitor } = await import('@capacitor/core');
         if (Capacitor.isNativePlatform()) {
           const platform = await Capacitor.getPlatform();
           if (platform === 'android') {
