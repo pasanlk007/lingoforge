@@ -36,6 +36,13 @@ const shuffleArray = <T,>(array: T[]): T[] => {
   return [...array].sort(() => Math.random() - 0.5);
 };
 
+const loadingMessages = [
+    "LingoForge planning your today's lesson... 🧠",
+    "Preparing vocabulary for you... 📚",
+    "Adding cultural insights... 🌍",
+    "Almost ready... ✨"
+];
+
 // --- Page Component ---
 export default function ProLessonPage() {
   const params = useParams();
@@ -50,6 +57,7 @@ export default function ProLessonPage() {
 
   const [lesson, setLesson] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [loadingMessageIndex, setLoadingMessageIndex] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [activeTab, setActiveTab] = useState('learn');
@@ -78,6 +86,14 @@ export default function ProLessonPage() {
     });
   }, [userProfile, isProfileLoading, isMounted, week, day, language, user]);
 
+  useEffect(() => {
+      if (isLoading) {
+          const interval = setInterval(() => {
+              setLoadingMessageIndex(prevIndex => (prevIndex + 1) % loadingMessages.length);
+          }, 2000);
+          return () => clearInterval(interval);
+      }
+  }, [isLoading]);
 
   useEffect(() => {
     setIsMounted(true);
@@ -96,6 +112,21 @@ export default function ProLessonPage() {
 
     const fetchLesson = async () => {
       setIsLoading(true);
+
+      const cacheKey = `pro_lesson_${language}_${week}_${day}_${nativeLanguage}`;
+      const cachedItem = localStorage.getItem(cacheKey);
+
+      if (cachedItem) {
+          const { timestamp, data } = JSON.parse(cachedItem);
+          const isExpired = (Date.now() - timestamp) > 24 * 60 * 60 * 1000; // 24 hours
+          if (!isExpired) {
+              setLesson(data);
+              generateQuiz(data.vocabulary);
+              setIsLoading(false);
+              return;
+          }
+      }
+
       const topic = proLessonTopics[week]?.[day] || `Professional Language Week ${week} Day ${day}`;
       
       try {
@@ -108,6 +139,11 @@ export default function ProLessonPage() {
         const data = await res.json();
         setLesson(data);
         generateQuiz(data.vocabulary);
+
+        // Cache the new data
+        const cachePayload = { timestamp: Date.now(), data };
+        localStorage.setItem(cacheKey, JSON.stringify(cachePayload));
+
       } catch (err) {
         console.error(err);
       } finally {
@@ -173,7 +209,7 @@ export default function ProLessonPage() {
     return (
       <div className="flex min-h-dvh flex-col items-center justify-center bg-background">
         <Loader2 className="h-10 w-10 animate-spin text-primary" />
-        <p className="mt-4 text-muted-foreground">AI lesson generate කරනවා...</p>
+        <p className="mt-4 text-muted-foreground">{loadingMessages[loadingMessageIndex]}</p>
       </div>
     );
   }
