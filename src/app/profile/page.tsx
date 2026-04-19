@@ -192,6 +192,27 @@ function ProfileContent({ user }: { user: User }) {
           </Card>
           
         </div>
+
+        {/* Install App Section */}
+        <div className="px-4 pb-6">
+          <Card className="border-primary/20 bg-primary/5">
+            <CardContent className="p-4">
+              <div className="flex items-center gap-3">
+                <span className="text-3xl">📲</span>
+                <div className="flex-1">
+                  <p className="font-bold text-sm">Install LingoForge App</p>
+                  <p className="text-xs text-muted-foreground">Get the full experience on your device</p>
+                </div>
+              </div>
+              <div className="mt-3 space-y-2 text-xs text-muted-foreground">
+                <p>🤖 <strong>Android:</strong> Tap ⋮ menu → Add to Home Screen</p>
+                <p>🍎 <strong>iPhone/iPad:</strong> Tap Share □↑ → Add to Home Screen</p>
+                <p>💻 <strong>Desktop:</strong> Click ⊕ in address bar</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
       </main>
     </div>
   )
