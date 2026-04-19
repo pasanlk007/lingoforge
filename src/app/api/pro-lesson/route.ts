@@ -49,19 +49,25 @@ export async function POST(req: Request) {
     }
 
     // Generate with Claude
-    const prompt = `Generate a professional language lesson for migrant workers.
+    const prompt = `Generate a professional language lesson for migrant workers, focusing on practical application.
 Target Language: ${language}
-Native Language: ${nativeLanguage}  
-Week: ${week}, Day: ${day}, Topic: ${topic}
+Native Language: ${nativeLanguage}
+Week: ${week}, Day: ${day}
+Topic: "${topic}"
 
-Return ONLY valid JSON:
+Key areas to incorporate, with cultural tips related to them:
+- Legal terms (නීතිය)
+- Historical context (ඉතිහාසය)
+- Judicial processes (අධිකරන)
+
+Return ONLY a valid JSON object with the following structure:
 {
-  "title": "lesson title in ${nativeLanguage}",
+  "title": "A concise lesson title in ${nativeLanguage}",
   "topic": "${topic}",
-  "vocabulary": [{"target": "word", "native": "meaning", "phonetic": "pronunciation", "example": "sentence", "example_native": "translation"}],
-  "phrases": [{"target": "phrase", "native": "meaning", "situation": "when to use"}],
-  "cultural_tip": "cultural note in ${nativeLanguage}",
-  "grammar_note": "grammar tip in ${nativeLanguage}"
+  "vocabulary": [{"target": "word or short phrase in ${targetLanguage}", "native": "meaning in ${nativeLanguage}", "phonetic": "simple pronunciation guide", "example": "example sentence in ${targetLanguage}", "example_native": "translation of the example in ${nativeLanguage}"}],
+  "phrases": [{"target": "practical phrase in ${targetLanguage}", "native": "meaning in ${nativeLanguage}", "situation": "Describe a specific situation to use this phrase (e.g., 'When talking to a lawyer', 'At a government office')"}],
+  "cultural_tip": "A crucial cultural tip related to law, history, or bureaucracy in the target country, provided in ${nativeLanguage}.",
+  "grammar_note": "A simple grammar explanation relevant to the lesson's content, provided in ${nativeLanguage}."
 }`;
 
     const aiRes = await fetch('https://api.anthropic.com/v1/messages', {

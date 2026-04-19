@@ -5,13 +5,12 @@ import { useUser, useFirestore, updateDocumentNonBlocking } from '@/firebase';
 import { doc } from 'firebase/firestore';
 
 const API_KEY = 'test_MOFjIoiftAYLPKyQzbKTWJktYVA';
-const ENTITLEMENT_ID = 'premium'; // This should match the entitlement ID in your RevenueCat dashboard
+const ENTITLEMENT_ID = 'premium'; 
 
 export function RevenueCatProvider({ children }: { children: React.ReactNode }) {
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
 
-  // Effect for initializing the SDK and setting up the listener
   useEffect(() => {
     const init = async () => {
         const { Capacitor } = await import('@capacitor/core');
@@ -22,7 +21,6 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
         const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
         
         await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
-
         await Purchases.configure({ apiKey: API_KEY });
 
         Purchases.addPurchaserInfoUpdateListener(async (info: any) => {
@@ -56,7 +54,6 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
 
   }, [firestore, user]);
 
-  // Effect for logging the user in/out of RevenueCat
   useEffect(() => {
     const manageUser = async () => {
         const { Capacitor } = await import('@capacitor/core');

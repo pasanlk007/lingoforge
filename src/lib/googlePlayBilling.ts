@@ -1,12 +1,9 @@
 'use client';
 
-// Types can be imported directly as they are stripped out during compilation.
-import type { PurchasesStoreProduct, PurchasesError } from '@revenuecat/purchases-capacitor';
-
 export async function initializeBilling(): Promise<boolean> {
-  const { Capacitor } = await import('@capacitor/core');
-  if (!Capacitor.isNativePlatform()) return false;
   try {
+    const { Capacitor } = await import('@capacitor/core');
+    if (!Capacitor.isNativePlatform()) return false;
     const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
     await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
     return true;
@@ -16,10 +13,10 @@ export async function initializeBilling(): Promise<boolean> {
   }
 }
 
-export async function getProducts(productIds: string[]): Promise<PurchasesStoreProduct[]> {
-  const { Capacitor } = await import('@capacitor/core');
-  if (!Capacitor.isNativePlatform()) return [];
+export async function getProducts(productIds: string[]) {
   try {
+    const { Capacitor } = await import('@capacitor/core');
+    if (!Capacitor.isNativePlatform()) return [];
     const { Purchases } = await import('@revenuecat/purchases-capacitor');
     const { products } = await Purchases.getProducts({ productIdentifiers: productIds });
     return products;
@@ -30,24 +27,23 @@ export async function getProducts(productIds: string[]): Promise<PurchasesStoreP
 }
 
 export async function purchase(sku: string, appUserID: string) {
-  const { Capacitor } = await import('@capacitor/core');
-  if (!Capacitor.isNativePlatform()) {
-    throw new Error('Purchases can only be made on a native device.');
-  }
   try {
-    const { Purchases } = await import('@revenuecat/purchases-capacitor');
+    const { Capacitor } = await import('@capacitor/core');
+    if (!Capacitor.isNativePlatform()) {
+      throw new Error('Purchases can only be made on a native device.');
+    }
+    const { Purchases, PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
     const { products } = await Purchases.getProducts({ productIdentifiers: [sku] });
     const productToPurchase = products[0];
     if (!productToPurchase) throw new Error(`Product with SKU ${sku} not found.`);
     const { purchaserInfo } = await Purchases.purchaseStoreProduct({ product: productToPurchase });
     const isPremium = typeof purchaserInfo.entitlements.active['premium'] !== 'undefined';
     return { isAcknowledged: isPremium, purchaserInfo };
-  } catch (e) {
+  } catch (e: any) {
     const { PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
-    const error = e as PurchasesError;
-    if (error.code !== PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) {
-      console.error('RevenueCat purchase error:', error);
-      throw error;
+    if (e.code !== PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) {
+      console.error('RevenueCat purchase error:', e);
+      throw e;
     }
     return { isAcknowledged: false, purchaserInfo: null };
   }

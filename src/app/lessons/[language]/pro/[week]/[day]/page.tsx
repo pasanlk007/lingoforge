@@ -8,8 +8,10 @@ import { proLessonTopics } from '@/lib/proLessonTopics';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { CheckCircle, Volume2, Loader2 } from 'lucide-react';
+import { CheckCircle, Volume2, Loader2, BookOpen, MessagesSquare, Globe, PenSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function ProLessonPage() {
   const params = useParams();
@@ -38,13 +40,11 @@ export default function ProLessonPage() {
   useEffect(() => {
     if (!isMounted) return;
     
-    // Check if already completed
     const langKey = language.toLowerCase();
     const completed = userProfile?.languageProgress?.[langKey]?.pro?.completedDays || [];
     const dayKey = `${week}-${day}`;
     if (completed.includes(dayKey)) setIsComplete(true);
 
-    // Fetch lesson
     const nativeLang = localStorage.getItem('nativeLanguage') || 'English';
     const topic = proLessonTopics[week]?.[day] || `Professional Language Week ${week} Day ${day}`;
 
@@ -80,39 +80,53 @@ export default function ProLessonPage() {
     speechSynthesis.speak(utterance);
   };
 
-  if (!isMounted) return null;
+  const proLessonBg = PlaceHolderImages.find(p => p.id === 'pro-lesson-background');
+
+  if (!isMounted) return <div className="flex min-h-dvh flex-col bg-background" />;
 
   return (
-    <div className="flex min-h-dvh flex-col bg-background">
+    <div className="relative min-h-dvh flex flex-col bg-background">
+      {proLessonBg && (
+          <div className="fixed inset-0 z-[-1] opacity-20">
+              <Image
+                  src={proLessonBg.imageUrl}
+                  alt={proLessonBg.description}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  data-ai-hint={proLessonBg.imageHint}
+                  priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/50" />
+          </div>
+      )}
       <Navigation />
       <main className="flex-1 container mx-auto max-w-2xl py-8 px-4">
         <div className="mb-6">
-          <div className="text-sm text-muted-foreground mb-1">Pro Path • Week {week} • Day {day}</div>
+          <div className="text-sm text-purple-400 font-semibold mb-1">Pro Path • Week {week} • Day {day}</div>
           {isLoading ? (
             <div className="flex items-center justify-center py-20">
               <Loader2 className="h-8 w-8 animate-spin text-primary" />
               <span className="ml-3 text-muted-foreground">AI lesson generate කරනවා...</span>
             </div>
           ) : lesson ? (
-            <div className="space-y-6">
-              <Card className={cn("transition-all duration-500", isComplete && "border-2 border-green-500 shadow-lg shadow-green-500/20")}>
+            <div className="space-y-8">
+              <Card className={cn("transition-all duration-500 bg-card/80 backdrop-blur-sm border-primary/20", isComplete && "border-2 border-green-500 shadow-lg shadow-green-500/20")}>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h1 className="text-xl font-bold">{lesson.title}</h1>
-                    {isComplete && <CheckCircle className="h-6 w-6 text-green-500" />}
+                    <h1 className="text-2xl font-bold">{lesson.title}</h1>
+                    {isComplete && <CheckCircle className="h-8 w-8 text-green-500" />}
                   </div>
-                  <p className="text-sm text-muted-foreground">{lesson.topic}</p>
+                  <p className="text-muted-foreground">{lesson.topic}</p>
                 </CardContent>
               </Card>
 
-              {/* Vocabulary */}
               {lesson.vocabulary?.length > 0 && (
-                <div>
-                  <h2 className="text-lg font-semibold mb-3">📚 Vocabulary</h2>
-                  <div className="space-y-3">
-                    {lesson.vocabulary.map((item: any, i: number) => (
-                      <Card key={i}>
-                        <CardContent className="p-4">
+                <Card className="bg-card/80 backdrop-blur-sm border-primary/10">
+                  <CardContent className="p-6">
+                    <h2 className="text-lg font-semibold mb-4 flex items-center gap-2"><BookOpen className="h-5 w-5 text-purple-400"/> Vocabulary</h2>
+                    <div className="space-y-4">
+                      {lesson.vocabulary.map((item: any, i: number) => (
+                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50">
                           <div className="flex items-center justify-between">
                             <div>
                               <div className="text-xl font-bold text-primary">{item.target}</div>
@@ -124,84 +138,76 @@ export default function ProLessonPage() {
                             </Button>
                           </div>
                           {item.example && (
-                            <div className="mt-2 pt-2 border-t border-border/50">
+                            <div className="mt-3 pt-3 border-t border-border/30">
                               <div className="text-sm italic">"{item.example}"</div>
-                              <div className="text-xs text-muted-foreground">"{item.example_native}"</div>
+                              <div className="text-xs text-muted-foreground mt-1">"{item.example_native}"</div>
                             </div>
                           )}
-                        </CardContent>
-                      </Card>
-                    ))}
-                  </div>
-                </div>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
               )}
 
-              {/* Phrases */}
               {lesson.phrases?.length > 0 && (
-                <div>
-                  <h2 className="text-lg font-semibold mb-3">💬 Useful Phrases</h2>
-                  <div className="space-y-3">
-                    {lesson.phrases.map((item: any, i: number) => (
-                      <Card key={i}>
-                        <CardContent className="p-4">
-                          <div className="flex items-center justify-between">
-                            <div className="font-semibold text-primary">{item.target}</div>
-                            <Button variant="outline" size="icon" onClick={() => speak(item.target)}>
-                              <Volume2 className="h-4 w-4" />
-                            </Button>
+                <Card className="bg-card/80 backdrop-blur-sm border-primary/10">
+                   <CardContent className="p-6">
+                      <h2 className="text-lg font-semibold mb-4 flex items-center gap-2"><MessagesSquare className="h-5 w-5 text-purple-400"/> Useful Phrases</h2>
+                      <div className="space-y-4">
+                        {lesson.phrases.map((item: any, i: number) => (
+                          <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50">
+                            <div className="flex items-start justify-between">
+                              <div className="flex-1">
+                                <div className="font-semibold text-primary">{item.target}</div>
+                                <div className="text-sm text-muted-foreground mt-1">{item.native}</div>
+                                <div className="text-xs text-yellow-500 mt-2">💡 {item.situation}</div>
+                              </div>
+                              <Button variant="outline" size="icon" onClick={() => speak(item.target)} className="ml-4 shrink-0">
+                                <Volume2 className="h-4 w-4" />
+                              </Button>
+                            </div>
                           </div>
-                          <div className="text-sm text-muted-foreground">{item.native}</div>
-                          <div className="text-xs text-yellow-500 mt-1">💡 {item.situation}</div>
-                        </CardContent>
-                      </Card>
-                    ))}
-                  </div>
-                </div>
+                        ))}
+                      </div>
+                   </CardContent>
+                </Card>
               )}
-
-              {/* Cultural tip */}
+              
               {lesson.cultural_tip && (
-                <Card className="bg-yellow-500/10 border-yellow-500/30">
-                  <CardContent className="p-4">
-                    <div className="font-semibold text-yellow-400 mb-1">🌍 Cultural Tip</div>
-                    <div className="text-sm">{lesson.cultural_tip}</div>
+                <Card className="bg-yellow-950/30 backdrop-blur-sm border-yellow-500/30">
+                  <CardContent className="p-6">
+                    <h2 className="font-semibold text-yellow-400 mb-2 flex items-center gap-2"><Globe className="h-5 w-5" /> Cultural Tip</h2>
+                    <div className="text-sm text-yellow-200/80">{lesson.cultural_tip}</div>
                   </CardContent>
                 </Card>
               )}
-
-              {/* Grammar note */}
+              
               {lesson.grammar_note && (
-                <Card className="bg-blue-500/10 border-blue-500/30">
-                  <CardContent className="p-4">
-                    <div className="font-semibold text-blue-400 mb-1">📖 Grammar Note</div>
-                    <div className="text-sm">{lesson.grammar_note}</div>
+                <Card className="bg-blue-950/30 backdrop-blur-sm border-blue-500/30">
+                  <CardContent className="p-6">
+                    <h2 className="font-semibold text-blue-400 mb-2 flex items-center gap-2"><PenSquare className="h-5 w-5" /> Grammar Note</h2>
+                    <div className="text-sm text-blue-200/80">{lesson.grammar_note}</div>
                   </CardContent>
                 </Card>
               )}
 
-              {/* Complete button */}
-              <div className="relative">
-                <div className="absolute -inset-20 pointer-events-none" />
+              <div className="relative pt-8">
                 {!isComplete ? (
-                  <Button
-                    size="lg"
-                    className="w-full"
-                    onClick={handleComplete}
-                    onTouchEnd={(e) => { e.preventDefault(); handleComplete(); }}
-                  >
+                  <Button size="lg" className="w-full" onClick={handleComplete}>
                     <CheckCircle className="mr-2 h-5 w-5" />
-                    Lesson Complete ✓
+                    Mark Lesson as Complete
                   </Button>
                 ) : (
-                  <div className="w-full py-3 rounded-lg bg-green-500/20 border border-green-500/50 text-green-500 font-semibold text-center flex items-center justify-center gap-2">
+                  <div className="w-full py-3 rounded-lg bg-green-500/20 border border-green-500/50 text-green-400 font-semibold text-center flex items-center justify-center gap-2">
                     <CheckCircle className="h-5 w-5" />
-                    සම්පූර්ණයි! 🎉
+                    Lesson Completed! 🎉
                   </div>
                 )}
               </div>
             </div>
           ) : (
-            <div className="text-center py-20 text-muted-foreground">Lesson load නොවුණා. Retry කරන්නකො.</div>
+            <div className="text-center py-20 text-muted-foreground">Lesson could not be loaded. Please try again.</div>
           )}
         </div>
       </main>

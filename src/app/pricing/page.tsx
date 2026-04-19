@@ -14,7 +14,6 @@ import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
 import { initializeBilling, getProducts, purchase } from '@/lib/googlePlayBilling';
-import type { PurchasesStoreProduct as Product } from '@revenuecat/purchases-capacitor';
 import { useToast } from '@/hooks/use-toast';
 
 const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
@@ -26,6 +25,12 @@ const SKUS = {
   course: 'lingoforge_course_unlock',
   lifetime: 'lingoforge_lifetime_unlock',
 };
+
+// Minimal interface to avoid static import of native library
+interface Product {
+  identifier: string;
+  priceString: string;
+}
 
 function PricingPageLoading() {
   return (
