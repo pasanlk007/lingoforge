@@ -285,8 +285,7 @@ function LessonMapPage() {
   
   const handleNodeClick = (lesson: LessonNode) => {
     if (lesson.unlocked) {
-      setSelectedLesson(lesson);
-      setIsDrawerOpen(true);
+      router.push(`/lessons/${targetLanguage.toLowerCase()}/pro/${lesson.week}/${lesson.day}`);
     }
   };
 
