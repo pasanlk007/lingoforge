@@ -14,7 +14,7 @@ const content = {
     sub: 'ඔබට ගැලපේ නම් පසුව තීරණය කරන්න • No entry fees',
     btn: '🚀 නොමිලේ ඉගෙනීම ආරම්භ කරන්න',
     copy: 'www.bashaguru.com',
-    copyNote: 'Google Chrome හෝ Safari browser ෙදෙස් search කරන්න 👆',
+    copyNote: 'Copy & paste on your browser 👇',
   },
   Hindi: {
     flag: '🇮🇳', label: 'हिंदी',
@@ -27,7 +27,7 @@ const content = {
     sub: 'पसंद आए तो बाद में decide करें • No entry fees',
     btn: '🚀 मुफ्त में सीखना शुरू करें',
     copy: 'www.bashaguru.com',
-    copyNote: 'Google Chrome या Safari में search करें 👆',
+    copyNote: 'Copy & paste on your browser 👇',
   },
   Bengali: {
     flag: '🇧🇩', label: 'বাংলা',
@@ -40,7 +40,7 @@ const content = {
     sub: 'পছন্দ হলে পরে সিদ্ধান্ত নিন • No entry fees',
     btn: '🚀 বিনামূল্যে শেখা শুরু করুন',
     copy: 'www.bashaguru.com',
-    copyNote: 'Google Chrome বা Safari-তে search করুন 👆',
+    copyNote: 'Copy & paste on your browser 👇',
   },
   Urdu: {
     flag: '🇵🇰', label: 'اردو',
@@ -53,7 +53,7 @@ const content = {
     sub: 'پسند آئے تو بعد میں فیصلہ کریں • No entry fees',
     btn: '🚀 مفت میں سیکھنا شروع کریں',
     copy: 'www.bashaguru.com',
-    copyNote: 'Google Chrome یا Safari میں search کریں 👆',
+    copyNote: 'Copy & paste on your browser 👇',
   },
   Nepali: {
     flag: '🇳🇵', label: 'नेपाली',
@@ -66,7 +66,7 @@ const content = {
     sub: 'मन परे पछि निर्णय गर्नुस् • No entry fees',
     btn: '🚀 नि:शुल्क सिक्न सुरु गर्नुस्',
     copy: 'www.bashaguru.com',
-    copyNote: 'Google Chrome वा Safari मा search गर्नुस् 👆',
+    copyNote: 'Copy & paste on your browser 👇',
   },
   English: {
     flag: '🇬🇧', label: 'English',
@@ -79,7 +79,7 @@ const content = {
     sub: 'Decide later if you like it • No entry fees',
     btn: '🚀 Start Learning Free',
     copy: 'www.bashaguru.com',
-    copyNote: 'Search in Google Chrome or Safari 👆',
+    copyNote: 'Copy & paste on your browser 👇',
   },
 };
 
