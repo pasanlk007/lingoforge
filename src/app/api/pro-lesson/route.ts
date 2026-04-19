@@ -64,8 +64,8 @@ Return ONLY a valid JSON object with the following structure:
 {
   "title": "A concise lesson title in ${nativeLanguage}",
   "topic": "${topic}",
-  "vocabulary": [{"target": "word or short phrase in ${targetLanguage}", "native": "meaning in ${nativeLanguage}", "phonetic": "simple pronunciation guide", "example": "example sentence in ${targetLanguage}", "example_native": "translation of the example in ${nativeLanguage}"}],
-  "phrases": [{"target": "practical phrase in ${targetLanguage}", "native": "meaning in ${nativeLanguage}", "situation": "Describe a specific situation to use this phrase (e.g., 'When talking to a lawyer', 'At a government office')"}],
+  "vocabulary": [{"target": "word or short phrase in ${language}", "native": "meaning in ${nativeLanguage}", "phonetic": "simple pronunciation guide", "example": "example sentence in ${language}", "example_native": "translation of the example in ${nativeLanguage}"}],
+  "phrases": [{"target": "practical phrase in ${language}", "native": "meaning in ${nativeLanguage}", "situation": "Describe a specific situation to use this phrase (e.g., 'When talking to a lawyer', 'At a government office')"}],
   "cultural_tip": "A crucial cultural tip related to law, history, or bureaucracy in the target country, provided in ${nativeLanguage}.",
   "grammar_note": "A simple grammar explanation relevant to the lesson's content, provided in ${nativeLanguage}."
 }`;
