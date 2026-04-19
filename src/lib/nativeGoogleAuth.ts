@@ -2,14 +2,13 @@
 
 import { GoogleAuthProvider, signInWithCredential, type Auth, type User } from 'firebase/auth';
 
-export function isNativePlatform(): boolean {
-  if (typeof window === 'undefined') return false;
-  const cap = (window as any).Capacitor;
-  if (!cap) return false;
-  const hasNativePlugins = !!(cap.Plugins?.FirebaseAuthentication);
-  const hasAndroidUA = navigator.userAgent.includes('Android') && navigator.userAgent.includes('wv');
-  const hasAppParam = window.location.search.includes('app=1');
-  return hasNativePlugins || hasAndroidUA || hasAppParam;
+export async function isNativePlatform(): Promise<boolean> {
+  try {
+    const { Capacitor } = await import('@capacitor/core');
+    return Capacitor.isNativePlatform();
+  } catch (e) {
+    return false;
+  }
 }
 
 export async function initializeGoogleAuth(): Promise<void> {
@@ -17,7 +16,9 @@ export async function initializeGoogleAuth(): Promise<void> {
 }
 
 export async function nativeGoogleSignIn(auth: Auth): Promise<User | null> {
-  if (!isNativePlatform()) return null;
+  const native = await isNativePlatform();
+  if (!native) return null;
+
   try {
     const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
     const result = await FirebaseAuthentication.signInWithGoogle();

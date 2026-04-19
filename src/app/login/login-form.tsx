@@ -13,7 +13,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
-import { Languages, ArrowLeft, ArrowRight, Smartphone, Monitor, X } from 'lucide-react';
+import { Languages, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Checkbox } from '@/components/ui/checkbox';
 import type { UserProfile } from '@/lib/types';
@@ -78,11 +78,6 @@ export function LoginFormContent() {
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setGoogleLoading] = useState(false);
   
-  const [isIOS, setIsIOS] = useState(false);
-  const [isAndroid, setIsAndroid] = useState(false);
-  const [isPWA, setIsPWA] = useState(false);
-  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
-  
   const auth = useAuth();
   const firestore = useFirestore();
   const { toast } = useToast();
@@ -90,19 +85,6 @@ export function LoginFormContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirectUrl = searchParams?.get('redirect') || '/dashboard';
-
-  useEffect(() => {
-    const ua = navigator.userAgent;
-    setIsIOS(/iPhone|iPad|iPod/.test(ua) && !(window as any).MSStream);
-    setIsAndroid(/Android/.test(ua));
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      setIsPWA(true);
-    }
-    const installPromptDismissed = sessionStorage.getItem('install_prompt_dismissed');
-    if (!installPromptDismissed && (isIOS || isAndroid)) {
-      setShowInstallPrompt(true);
-    }
-  }, [isIOS, isAndroid]);
 
   useEffect(() => {
     if (!isUserLoading && user) {
@@ -148,11 +130,11 @@ export function LoginFormContent() {
   
   const handleGoogleSignIn = async () => {
     if (!auth || !firestore) return toast({ variant: "destructive", title: "Services not ready." });
-    if (step < 3 && view === 'onboarding') return toast({ variant: "destructive", title: "Please complete the steps above first." });
+    if (step < 5 && view === 'onboarding') return toast({ variant: "destructive", title: "Please complete the steps above first." });
     
     setGoogleLoading(true);
     try {
-      const result = await initiateGoogleSignIn(auth, firestore);
+      const result = await initiateGoogleSignIn(auth, firestore, { displayName, nativeLanguage, selectedLanguage: targetLanguage });
       await createOrUpdateFullUserProfile(result.user);
       toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
       const url = redirectUrl.includes('?') ? `${redirectUrl}&app=1` : `${redirectUrl}?app=1`;
@@ -202,51 +184,44 @@ export function LoginFormContent() {
     }
   };
   
-  const canGoNext = (step === 1 && nativeLanguage) || (step === 2 && targetLanguage) || (step === 3 && displayName.trim().length > 2);
+  const totalSteps = 5;
+  const canGoNext = 
+    (step === 1) ||
+    (step === 2 && nativeLanguage) ||
+    (step === 3 && targetLanguage) ||
+    (step === 4 && displayName.trim().length > 2);
 
   if (isUserLoading) return <AuthCheckLoading />;
 
   return (
     <div className="w-full max-w-md space-y-4">
-      {showInstallPrompt && !isPWA && (
-        <Card className="bg-card/80 backdrop-blur-sm animate-in fade-in-0 zoom-in-95">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-             <CardTitle className="text-base">Get the Best Experience</CardTitle>
-             <Button variant="ghost" size="icon" className="h-7 w-7" onClick={() => {setShowInstallPrompt(false); sessionStorage.setItem('install_prompt_dismissed', 'true');}}>
-               <X className="h-4 w-4" />
-             </Button>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground mb-4">Install the app on your device for offline access and better performance.</p>
-            <a href={isIOS ? 'https://apps.apple.com/us/app/google/id284815942' : 'https://play.google.com/store/apps/details?id=com.lingoforge.app'}
-                  className="inline-flex items-center justify-center w-full gap-2 bg-primary text-primary-foreground text-sm px-4 py-2 rounded-lg font-semibold">
-                  {isIOS ? '🍎 Install on iPhone' : '📲 Install on Android'} — Free
-            </a>
-          </CardContent>
-        </Card>
-      )}
-
       <Card>
         {view === 'onboarding' ? (
           <>
             <CardHeader>
                <div className="flex justify-center items-center gap-2 mb-4">
-                  {Array.from({ length: 4 }).map((_, i) => (
+                  {Array.from({ length: totalSteps }).map((_, i) => (
                     <div key={i} className={cn("h-2 rounded-full transition-all", i < step ? 'bg-primary w-8' : 'bg-muted w-4')} />
                   ))}
                </div>
               <CardTitle className="text-center">
-                {step === 1 && 'What is your native language?'}
-                {step === 2 && 'Which language will you learn?'}
-                {step === 3 && 'What should we call you?'}
-                {step === 4 && 'Create Your Account'}
+                {step === 1 && 'Welcome to LingoForge!'}
+                {step === 2 && 'What is your native language?'}
+                {step === 3 && 'Which language will you learn?'}
+                {step === 4 && 'What should we call you?'}
+                {step === 5 && 'Create Your Account'}
               </CardTitle>
             </CardHeader>
             <CardContent>
               {step === 1 && (
+                <div className="text-center text-muted-foreground p-8">
+                  <p>Let's get you started on your language learning journey.</p>
+                </div>
+              )}
+              {step === 2 && (
                 <div className="grid grid-cols-2 gap-3">
                   {NATIVE_LANGS.map(lang => (
-                    <button key={lang.name} onClick={() => { setNativeLanguage(lang.name); handleNextStep(); }}
+                    <button key={lang.name} onClick={() => setNativeLanguage(lang.name)}
                       className={cn("p-4 rounded-lg border-2 text-center transition-all flex flex-col items-center justify-center gap-2 aspect-square",
                         nativeLanguage === lang.name ? 'bg-primary/20 border-primary' : 'bg-muted/50 border-muted hover:border-primary/50'
                       )}>
@@ -256,10 +231,10 @@ export function LoginFormContent() {
                   ))}
                 </div>
               )}
-              {step === 2 && (
+              {step === 3 && (
                 <div className="grid grid-cols-3 gap-2 max-h-[40vh] overflow-y-auto pr-2">
                   {targetLanguages.map(lang => (
-                    <button key={lang.lang} onClick={() => { setTargetLanguage(lang.lang); handleNextStep(); }}
+                    <button key={lang.lang} onClick={() => setTargetLanguage(lang.lang)}
                       className={cn("p-3 rounded-lg border-2 text-center transition-all flex flex-col items-center justify-center gap-1.5",
                         targetLanguage === lang.lang ? 'bg-primary/20 border-primary' : 'bg-muted/50 border-muted hover:border-primary/50'
                       )}>
@@ -269,13 +244,13 @@ export function LoginFormContent() {
                   ))}
                 </div>
               )}
-              {step === 3 && (
+              {step === 4 && (
                 <div className="space-y-2">
                   <Label htmlFor="displayName">Display Name</Label>
                   <Input id="displayName" type="text" placeholder="Your Name" value={displayName} onChange={(e) => setDisplayName(e.target.value)} autoFocus />
                 </div>
               )}
-              {step === 4 && (
+              {step === 5 && (
                   <div className="space-y-4">
                     <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
                       {isGoogleLoading ? 'Processing...' : 'Continue with Google'}
@@ -299,7 +274,7 @@ export function LoginFormContent() {
             <CardFooter className="flex flex-col gap-4 pt-4">
               <div className="flex justify-between w-full">
                 {step > 1 ? (<Button variant="ghost" onClick={handlePrevStep}><ArrowLeft className="mr-2 h-4 w-4" /> Back</Button>) : <div />}
-                {step < 4 && <Button onClick={handleNextStep} disabled={!canGoNext}>Next <ArrowRight className="ml-2 h-4 w-4" /></Button>}
+                {step < totalSteps && <Button onClick={handleNextStep} disabled={!canGoNext}>Next <ArrowRight className="ml-2 h-4 w-4" /></Button>}
               </div>
               <p className="text-sm">Already have an account? <Button variant="link" className="p-0" onClick={() => setView('login')}>Log in</Button></p>
             </CardFooter>
