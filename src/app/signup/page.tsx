@@ -12,67 +12,37 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Languages } from 'lucide-react';
+import { Languages, ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { nativeLanguages } from '@/lib/translations';
-import { Separator } from '@/components/ui/separator';
-import { Skeleton } from '@/components/ui/skeleton';
+import { targetLanguages, nativeLanguages } from '@/lib/translations';
+import { cn } from '@/lib/utils';
 
-function SignupPageLoading() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4">
-      <div className="w-full max-w-md">
-        <div className="text-center mb-6">
-          <Link href="/" className="inline-flex items-center gap-2">
-            <Languages className="h-8 w-8 text-primary" />
-            <span className="font-headline text-2xl font-black">LingoForge</span>
-          </Link>
-        </div>
-        <Card>
-          <CardHeader className="text-center">
-            <Skeleton className="h-7 w-3/5 mx-auto" />
-            <Skeleton className="h-5 w-4/5 mx-auto mt-2" />
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <Skeleton className="h-10 w-full" />
-            <div className="relative flex justify-center text-xs uppercase">
-              <span className="w-full border-t"></span>
-              <span className="absolute top-1/2 -translate-y-1/2 bg-background px-2">
-                <Skeleton className="h-4 w-24" />
-              </span>
-            </div>
-            <div className="space-y-4">
-              <div className="space-y-2"><Skeleton className="h-4 w-24" /><Skeleton className="h-10 w-full" /></div>
-              <div className="space-y-2"><Skeleton className="h-4 w-12" /><Skeleton className="h-10 w-full" /></div>
-              <div className="space-y-2"><Skeleton className="h-4 w-16" /><Skeleton className="h-10 w-full" /></div>
-              <div className="space-y-2"><Skeleton className="h-4 w-40" /><Skeleton className="h-10 w-full" /></div>
-              <div className="flex items-start space-x-3 pt-2"><Skeleton className="h-4 w-4 mt-1" /><Skeleton className="h-8 w-full" /></div>
-              <Skeleton className="h-10 w-full" />
-            </div>
-          </CardContent>
-          <CardFooter className="justify-center">
-            <Skeleton className="h-5 w-48" />
-          </CardFooter>
-        </Card>
-      </div>
-    </div>
-  );
-}
+const NATIVE_LANGS = [
+    { name: 'English', flag: '🇬🇧' },
+    { name: 'Sinhala', flag: '🇱🇰' },
+    { name: 'Hindi', flag: '🇮🇳' },
+    { name: 'Urdu', flag: '🇵🇰' },
+    { name: 'Bengali', flag: '🇧🇩' },
+    { name: 'Nepali', flag: '🇳🇵' },
+];
 
 export default function SignupPage() {
+  const [step, setStep] = useState(1);
+  
+  // Onboarding data
+  const [nativeLanguage, setNativeLanguage] = useState('');
+  const [targetLanguage, setTargetLanguage] = useState('');
   const [displayName, setDisplayName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [nativeLanguage, setNativeLanguage] = useState('English');
-  const [referralCode, setReferralCode] = useState('');
   const [agreedToTerms, setAgreedToTerms] = useState(false);
+
+  // System state
   const [isLoading, setIsLoading] = useState(false);
   const [isGoogleLoading, setGoogleLoading] = useState(false);
   const auth = useAuth();
   const firestore = useFirestore();
   const { toast } = useToast();
-  
   const { user, isUserLoading } = useUser();
   const router = useRouter();
 
@@ -82,25 +52,53 @@ export default function SignupPage() {
     }
   }, [user, isUserLoading, router]);
 
+  const handleNextStep = () => setStep(prev => prev + 1);
+  const handlePrevStep = () => setStep(prev => prev - 1);
+
+  const createUserProfileInFirestore = async (user: any) => {
+    const now = new Date();
+    const userProfile: UserProfile = {
+      id: user.uid,
+      displayName: displayName || user.displayName || 'New User',
+      email: email || user.email!,
+      nativeLanguage: nativeLanguage || 'English',
+      selectedLanguage: targetLanguage || 'French',
+      createdAt: now.toISOString(),
+      subscriptionActive: false,
+      subscriptionSource: 'none',
+      subscriptionExpiry: null,
+      xpPoints: 0,
+      currentStreak: 0,
+      lastActiveDate: now.toISOString().split('T')[0],
+      aiPlanningEnabled: false,
+    };
+    const userDocRef = doc(firestore!, 'userProfiles', user.uid);
+    await setDoc(userDocRef, userProfile, { merge: true });
+  };
+  
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
     if (!auth || !firestore) {
-        toast({ variant: "destructive", title: "Error", description: "Authentication services are not ready." });
-        setGoogleLoading(false);
-        return;
+      toast({ variant: "destructive", title: "Error", description: "Authentication services are not ready." });
+      setGoogleLoading(false);
+      return;
     }
     
     try {
-        await initiateGoogleSignIn(auth, firestore);
-
-        toast({ title: "Sign-In Successful", description: "Welcome to LingoForge!" });
-        window.location.href = '/dashboard';
+      const result = await initiateGoogleSignIn(auth, firestore);
+      // Since Google provides the name, we can skip to the end if needed,
+      // but for a consistent flow, we'll just pre-fill and let them confirm.
+      // For this implementation, we assume Google Sign-In completes the process.
+      await createUserProfileInFirestore(result.user);
+      
+      toast({ title: "Account Created!", description: "Welcome to LingoForge!" });
+      window.location.href = '/dashboard';
 
     } catch (error: any) {
-        if (error.code !== 'auth/popup-closed-by-user') {
-            toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
-        }
-        setGoogleLoading(false);
+      if (error.code !== 'auth/popup-closed-by-user') {
+        toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
+      }
+      setGoogleLoading(false);
     }
   };
 
@@ -109,11 +107,7 @@ export default function SignupPage() {
     setIsLoading(true);
 
     if (!auth || !firestore) {
-      toast({
-        variant: "destructive",
-        title: "Service Unavailable",
-        description: "Cannot connect to the required services. Please try again later.",
-      });
+      toast({ variant: "destructive", title: "Service Unavailable", description: "Cannot connect." });
       setIsLoading(false);
       return;
     }
@@ -121,75 +115,31 @@ export default function SignupPage() {
     try {
       const userCredential = await initiateEmailSignUp(auth, email, password);
       const user = userCredential.user;
-
       await updateProfile(user, { displayName });
-      const now = new Date();
-      const userProfile: UserProfile = {
-        id: user.uid,
-        displayName: displayName,
-        email: user.email!,
-        nativeLanguage: nativeLanguage,
-        selectedLanguage: 'French',
-        createdAt: now.toISOString(),
-        subscriptionActive: false,
-        subscriptionSource: 'none',
-        subscriptionExpiry: null,
-        xpPoints: 0,
-        currentStreak: 0,
-        lastActiveDate: now.toISOString().split('T')[0],
-        aiPlanningEnabled: false,
-        activePath: 'survival',
-        lastLessonWeek: 1,
-        lastLessonDay: 0,
-        referredBy: referralCode.trim() || undefined,
-      };
-
-      const userDocRef = doc(firestore, 'userProfiles', user.uid);
-      await setDoc(userDocRef, userProfile, { merge: true });
-
-      if (referralCode.trim()) {
-        try {
-          const referrersQuery = query(
-            collection(firestore, 'userProfiles'),
-            where('referralCode', '==', referralCode.trim().toUpperCase())
-          );
-          const referrersSnapshot = await getDocs(referrersQuery);
-          if (!referrersSnapshot.empty) {
-            const referrerDoc = referrersSnapshot.docs[0];
-            await updateDoc(referrerDoc.ref, {
-              bonusWeeks: increment(2),
-              referralCount: increment(1),
-            });
-          }
-        } catch (e) {
-          console.error('Referral reward failed:', e);
-        }
-      }
-
-      toast({
-        title: "Account Created!",
-        description: "You're all set. Welcome to LingoForge!",
-      });
-
+      await createUserProfileInFirestore(user);
+      
+      toast({ title: "Account Created!", description: "Welcome to LingoForge!" });
       window.location.href = '/dashboard';
 
     } catch (error: any) {
-      console.error("Signup failed:", error);
-      toast({
-        variant: "destructive",
-        title: "Signup Failed",
-        description: error.message || "Could not create your account.",
-      });
+      toast({ variant: "destructive", title: "Signup Failed", description: error.message });
       setIsLoading(false);
     }
   };
 
-  if (isUserLoading || user) {
-    return <SignupPageLoading />;
-  }
+  const totalSteps = 4;
+  const canGoNext = 
+    (step === 1 && nativeLanguage) ||
+    (step === 2 && targetLanguage) ||
+    (step === 3 && displayName.trim().length > 2);
 
+  if (isUserLoading || user) {
+    // Show a simple loading state while checking for existing user
+    return <div className="flex min-h-screen items-center justify-center bg-background"><Languages className="h-12 w-12 text-primary animate-pulse" /></div>;
+  }
+  
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4">
+    <div className="flex min-h-screen items-center justify-center bg-background p-4 font-body">
       <div className="w-full max-w-md">
         <div className="text-center mb-6">
           <Link href="/" className="inline-flex items-center gap-2">
@@ -197,129 +147,122 @@ export default function SignupPage() {
             <span className="font-headline text-2xl font-black">LingoForge</span>
           </Link>
         </div>
+
         <Card>
-          <CardHeader className="text-center">
-            <CardTitle>Create Your Account</CardTitle>
-            <CardDescription>Join LingoForge and start your language journey today.</CardDescription>
+          <CardHeader>
+             <div className="flex justify-center items-center gap-2 mb-4">
+                {Array.from({ length: totalSteps }).map((_, i) => (
+                  <div key={i} className={cn("h-2 rounded-full transition-all", i < step ? 'bg-primary w-8' : 'bg-muted w-4')} />
+                ))}
+             </div>
+            <CardTitle className="text-center">
+              {step === 1 && 'What is your native language?'}
+              {step === 2 && 'Which language will you learn?'}
+              {step === 3 && 'What should we call you?'}
+              {step === 4 && 'Create Your Account'}
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4">
-               <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
-                 {isGoogleLoading ? 'Processing...' : 'Continue with Google'}
-               </Button>
-               <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                    <span className="w-full border-t" />
-                </div>
-                <div className="relative flex justify-center text-xs uppercase">
-                    <span className="bg-background px-2 text-muted-foreground">Or with email</span>
-                </div>
-               </div>
-              <form onSubmit={handleSignup} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="displayName">Display Name</Label>
-                  <Input
-                    id="displayName"
-                    type="text"
-                    placeholder="Your Name"
-                    value={displayName}
-                    onChange={(e) => setDisplayName(e.target.value)}
-                    required
-                    disabled={isLoading || isGoogleLoading}
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="you@example.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    disabled={isLoading || isGoogleLoading}
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
-                  <Input
-                    id="password"
-                    type="password"
-                    placeholder="••••••••"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                    disabled={isLoading || isGoogleLoading}
-                    minLength={6}
-                  />
-                </div>
+            {step === 1 && (
+              <div className="grid grid-cols-2 gap-3">
+                {NATIVE_LANGS.map(lang => (
+                  <button key={lang.name} onClick={() => { setNativeLanguage(lang.name); handleNextStep(); }}
+                    className={cn("p-4 rounded-lg border-2 text-center transition-all flex flex-col items-center justify-center gap-2 aspect-square",
+                      nativeLanguage === lang.name ? 'bg-primary/20 border-primary' : 'bg-muted/50 border-muted hover:border-primary/50'
+                    )}>
+                    <span className="text-4xl">{lang.flag}</span>
+                    <span className="font-semibold text-sm">{lang.name}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+            
+            {step === 2 && (
+              <div className="grid grid-cols-3 gap-2 max-h-[40vh] overflow-y-auto pr-2">
+                {targetLanguages.map(lang => (
+                  <button key={lang.lang} onClick={() => { setTargetLanguage(lang.lang); handleNextStep(); }}
+                    className={cn("p-3 rounded-lg border-2 text-center transition-all flex flex-col items-center justify-center gap-1.5",
+                      targetLanguage === lang.lang ? 'bg-primary/20 border-primary' : 'bg-muted/50 border-muted hover:border-primary/50'
+                    )}>
+                     <span className="text-3xl">{lang.flag}</span>
+                     <span className="font-semibold text-xs">{lang.lang}</span>
+                  </button>
+                ))}
+              </div>
+            )}
 
-                 <div className="space-y-2">
-                  <Label htmlFor="referralCode">Referral Code (Optional)</Label>
-                  <Input
-                    id="referralCode"
-                    type="text"
-                    placeholder="ABC1234"
-                    value={referralCode}
-                    onChange={(e) => setReferralCode(e.target.value)}
-                    disabled={isLoading || isGoogleLoading}
-                  />
-                </div>
+            {step === 3 && (
+              <div className="space-y-2">
+                <Label htmlFor="displayName">Display Name</Label>
+                <Input
+                  id="displayName"
+                  type="text"
+                  placeholder="Your Name"
+                  value={displayName}
+                  onChange={(e) => setDisplayName(e.target.value)}
+                  autoFocus
+                />
+              </div>
+            )}
 
-                <div className="space-y-2">
-                  <Label htmlFor="nativeLanguage">Your Native Language</Label>
-                  <Select value={nativeLanguage} onValueChange={setNativeLanguage} disabled={isLoading || isGoogleLoading}>
-                      <SelectTrigger id="nativeLanguage" className="w-full">
-                          <SelectValue placeholder="Select your native language" />
-                      </SelectTrigger>
-                      <SelectContent>
-                          {nativeLanguages.map((lang) => (
-                              <SelectItem key={lang} value={lang}>
-                                  {lang}
-                              </SelectItem>
-                          ))}
-                      </SelectContent>
-                  </Select>
-                </div>
-
-                 <div className="flex items-start space-x-3 pt-2">
-                  <Checkbox
-                    id="terms"
-                    checked={agreedToTerms}
-                    onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)}
-                    disabled={isLoading || isGoogleLoading}
-                  />
-                  <div className="grid gap-1.5 leading-none">
-                    <label
-                      htmlFor="terms"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      I agree to the{' '}
-                      <Link href="/terms" target="_blank" className="font-semibold text-primary hover:underline">
-                        Terms of Service
-                      </Link>{' '}
-                      and{' '}
-                      <Link href="/privacy" target="_blank" className="font-semibold text-primary hover:underline">
-                        Privacy Policy
-                      </Link>
-                      .
-                    </label>
+            {step === 4 && (
+                <div className="space-y-4">
+                  <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
+                    {isGoogleLoading ? 'Processing...' : 'Continue with Google'}
+                  </Button>
+                  <div className="relative">
+                    <div className="absolute inset-0 flex items-center"><span className="w-full border-t" /></div>
+                    <div className="relative flex justify-center text-xs uppercase">
+                      <span className="bg-card px-2 text-muted-foreground">Or with email</span>
+                    </div>
                   </div>
+                  <form onSubmit={handleSignup} className="space-y-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="email">Email</Label>
+                      <Input id="email" type="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={isLoading || isGoogleLoading} />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="password">Password</Label>
+                      <Input id="password" type="password" placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} required disabled={isLoading || isGoogleLoading} minLength={6}/>
+                    </div>
+                    <div className="flex items-start space-x-3 pt-2">
+                      <Checkbox id="terms" checked={agreedToTerms} onCheckedChange={(checked) => setAgreedToTerms(checked as boolean)} disabled={isLoading || isGoogleLoading}/>
+                      <div className="grid gap-1.5 leading-none">
+                        <label htmlFor="terms" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                          I agree to the{' '}
+                          <Link href="/terms" target="_blank" className="font-semibold text-primary hover:underline">Terms</Link> & <Link href="/privacy" target="_blank" className="font-semibold text-primary hover:underline">Privacy Policy</Link>.
+                        </label>
+                      </div>
+                    </div>
+                    <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading || !agreedToTerms}>
+                      {isLoading ? 'Creating Account...' : 'Create Account'}
+                    </Button>
+                  </form>
                 </div>
-
-                <Button type="submit" className="w-full" disabled={isLoading || isGoogleLoading || !agreedToTerms}>
-                  {isLoading ? 'Creating Account...' : 'Create Account with Email'}
-                </Button>
-              </form>
-            </div>
+            )}
           </CardContent>
-          <CardFooter className="text-center text-sm">
-            <p className="w-full">
-              Already have an account?{' '}
-              <Link href="/login" className="font-semibold text-primary hover:underline">
-                Log in
-              </Link>
-            </p>
+
+          <CardFooter className="flex justify-between items-center">
+            {step > 1 ? (
+              <Button variant="ghost" onClick={handlePrevStep}>
+                <ArrowLeft className="mr-2 h-4 w-4" /> Back
+              </Button>
+            ) : <div />}
+
+            {step < 4 && step !== 2 && (
+              <Button onClick={handleNextStep} disabled={!canGoNext}>
+                Next <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            )}
+
+            {step === 4 && (
+                <p className="text-sm text-center w-full">
+                  Already have an account?{' '}
+                  <Link href="/login" className="font-semibold text-primary hover:underline">
+                    Log in
+                  </Link>
+                </p>
+            )}
           </CardFooter>
         </Card>
       </div>
