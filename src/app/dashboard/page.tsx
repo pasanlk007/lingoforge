@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Link from 'next/link';
-import {
+import { Home, Sprout, LayoutGrid, BookOpen as BookBookmark, User as UserIcon,
   Flame,
   Star,
   Zap,
