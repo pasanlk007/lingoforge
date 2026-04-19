@@ -1,10 +1,10 @@
 'use client';
 
-import { Capacitor } from '@capacitor/core';
 // Types can be imported directly as they are stripped out during compilation.
 import type { PurchasesStoreProduct, PurchasesError } from '@revenuecat/purchases-capacitor';
 
 export async function initializeBilling(): Promise<boolean> {
+  const { Capacitor } = await import('@capacitor/core');
   if (!Capacitor.isNativePlatform()) return false;
   try {
     const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
@@ -17,6 +17,7 @@ export async function initializeBilling(): Promise<boolean> {
 }
 
 export async function getProducts(productIds: string[]): Promise<PurchasesStoreProduct[]> {
+  const { Capacitor } = await import('@capacitor/core');
   if (!Capacitor.isNativePlatform()) return [];
   try {
     const { Purchases } = await import('@revenuecat/purchases-capacitor');
@@ -29,6 +30,7 @@ export async function getProducts(productIds: string[]): Promise<PurchasesStoreP
 }
 
 export async function purchase(sku: string, appUserID: string) {
+  const { Capacitor } = await import('@capacitor/core');
   if (!Capacitor.isNativePlatform()) {
     throw new Error('Purchases can only be made on a native device.');
   }

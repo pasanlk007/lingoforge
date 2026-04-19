@@ -1,6 +1,5 @@
 'use client';
 
-import { Capacitor } from '@capacitor/core';
 import { GoogleAuthProvider, signInWithCredential, type Auth, type User } from 'firebase/auth';
 
 export function isNativePlatform(): boolean {
