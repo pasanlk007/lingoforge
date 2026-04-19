@@ -71,6 +71,15 @@ export default function SignupPage() {
 
   // PWA Install state
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [detecting, setDetecting] = useState(true);
+  const [installReady, setInstallReady] = useState(false);
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setDetecting(false);
+      if (deferredPrompt || isIOS || isAndroid) setInstallReady(true);
+    }, 2000);
+  }, [deferredPrompt, isIOS, isAndroid]);
   const [platform, setPlatform] = useState<'android'|'ios'|'desktop'|'unknown'>('unknown');
 
   useEffect(() => {

@@ -1,3 +1,4 @@
+
 import { NextResponse } from 'next/server';
 
 function createJWT(): string {
@@ -43,7 +44,19 @@ export async function POST(req: Request) {
     if (cacheRes.ok) {
       const cached = await cacheRes.json();
       if (cached.fields) {
-        const lesson = Object.fromEntries(Object.entries(cached.fields).map(([k, v]: [string, any]) => [k, v.stringValue || v.arrayValue?.values?.map((x: any) => JSON.parse(x.stringValue)) || v]));
+        const lesson: any = {};
+        for (const [key, value] of Object.entries(cached.fields as Record<string, any>)) {
+          if ((key === 'vocabulary' || key === 'phrases') && value.stringValue) {
+            try {
+              lesson[key] = JSON.parse(value.stringValue);
+            } catch (e) {
+              console.error(`Failed to parse cached JSON for ${key}:`, value.stringValue);
+              lesson[key] = [];
+            }
+          } else {
+            lesson[key] = value.stringValue;
+          }
+        }
         return NextResponse.json(lesson);
       }
     }
