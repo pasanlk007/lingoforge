@@ -71,6 +71,14 @@ export default function SignupPage() {
 
   // PWA Install state
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [platform, setPlatform] = useState<'android'|'ios'|'desktop'|'unknown'>('unknown');
+
+  useEffect(() => {
+    const ua = navigator.userAgent.toLowerCase();
+    if (/iphone|ipad|ipod/.test(ua)) setPlatform('ios');
+    else if (/android/.test(ua)) setPlatform('android');
+    else setPlatform('desktop');
+  }, []);
   const [isIOS, setIsIOS] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -98,9 +106,11 @@ export default function SignupPage() {
     if (deferredPrompt) {
       deferredPrompt.prompt();
     } else if (isIOS) {
-      toast({ title: "To install the app:", description: "Tap the Share button, then find and tap 'Add to Home Screen'." });
+      toast({ title: "Install on iPhone/iPad 📱", description: "Tap the Share button (□↑) at the bottom, then tap 'Add to Home Screen' and tap Add." });
+    } else if (platform === 'android') {
+      toast({ title: "Install on Android 🤖", description: "Tap the 3-dot menu (⋮) in Chrome, then tap 'Add to Home Screen' or 'Install App'." });
     } else {
-      toast({ title: "Installation Not Available", description: "Your browser does not support PWA installation. Please try Chrome or Safari." });
+      toast({ title: "Install on Desktop 💻", description: "Click the install icon (⊕) in your browser address bar, or use browser menu → Install LingoForge." });
     }
   };
 
