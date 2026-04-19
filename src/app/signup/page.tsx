@@ -12,11 +12,12 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Languages, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Languages, ArrowLeft, ArrowRight, Download, Share } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
 import { targetLanguages, nativeLanguages as allNativeLanguages } from '@/lib/translations';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Badge } from '@/components/ui/badge';
 
 const NATIVE_LANGS = [
     { name: 'English', flag: '🇬🇧' },
@@ -49,7 +50,7 @@ function SignupPageLoading() {
 }
 
 export default function SignupPage() {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(0);
   
   // Onboarding data
   const [nativeLanguage, setNativeLanguage] = useState('');
@@ -68,11 +69,40 @@ export default function SignupPage() {
   const { user, isUserLoading } = useUser();
   const router = useRouter();
 
+  // PWA Install state
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [isIOS, setIsIOS] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
   useEffect(() => {
-    if (!isUserLoading && user) {
+    if (user && !isUserLoading) {
       router.push('/dashboard');
     }
   }, [user, isUserLoading, router]);
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handler);
+
+    const ua = navigator.userAgent.toLowerCase();
+    setIsIOS(/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream);
+    setIsDesktop(!/mobi/i.test(ua));
+
+    return () => window.removeEventListener('beforeinstallprompt', handler);
+  }, []);
+
+  const handleInstallClick = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+    } else if (isIOS) {
+      toast({ title: "To install the app:", description: "Tap the Share button, then find and tap 'Add to Home Screen'." });
+    } else {
+      toast({ title: "Installation Not Available", description: "Your browser does not support PWA installation. Please try Chrome or Safari." });
+    }
+  };
 
   const handleNextStep = () => setStep(prev => prev + 1);
   const handlePrevStep = () => setStep(prev => prev - 1);
@@ -149,8 +179,9 @@ export default function SignupPage() {
     }
   };
 
-  const totalSteps = 4;
+  const totalSteps = 5;
   const canGoNext = 
+    (step === 0) ||
     (step === 1 && nativeLanguage) ||
     (step === 2 && targetLanguage) ||
     (step === 3 && displayName.trim().length > 2);
@@ -177,6 +208,7 @@ export default function SignupPage() {
                 ))}
              </div>
             <CardTitle className="text-center">
+              {step === 0 && 'Install the App'}
               {step === 1 && 'What is your native language?'}
               {step === 2 && 'Which language will you learn?'}
               {step === 3 && 'What should we call you?'}
@@ -184,6 +216,29 @@ export default function SignupPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
+            {step === 0 && (
+               <div className="text-center p-4">
+                  <Languages className="h-16 w-16 text-primary mx-auto" />
+                  <h2 className="text-2xl font-bold mt-4 flex items-center justify-center gap-2">
+                      LingoForge
+                      <Badge className="bg-yellow-400 text-yellow-900">Premium</Badge>
+                  </h2>
+                  <p className="text-muted-foreground mt-1">Survive. Speak. Belong.</p>
+                  <div className="mt-6 space-y-3">
+                      <Button size="lg" className="w-full" onClick={handleInstallClick}>
+                          Install Now - It's Free!
+                      </Button>
+                      <p className="text-xs text-muted-foreground px-4">
+                          {isIOS 
+                            ? "For the best experience, tap the Share button in Safari, then 'Add to Home Screen'." 
+                            : deferredPrompt 
+                            ? "Get the full app experience on your device." 
+                            : "Open in Chrome or Safari on your phone to install the app."
+                          }
+                      </p>
+                  </div>
+              </div>
+            )}
             {step === 1 && (
               <div className="grid grid-cols-2 gap-3">
                 {NATIVE_LANGS.map(lang => (
@@ -233,9 +288,7 @@ export default function SignupPage() {
                   </Button>
                   <div className="relative">
                     <div className="absolute inset-0 flex items-center"><span className="w-full border-t" /></div>
-                    <div className="relative flex justify-center text-xs uppercase">
-                      <span className="bg-card px-2 text-muted-foreground">Or with email</span>
-                    </div>
+                    <div className="relative flex justify-center text-xs uppercase"><span className="bg-card px-2 text-muted-foreground">Or with email</span></div>
                   </div>
                   <form onSubmit={handleEmailSignup} className="space-y-4">
                     <div className="space-y-2">
@@ -261,20 +314,16 @@ export default function SignupPage() {
             )}
           </CardContent>
 
-          <CardFooter className="flex justify-between items-center pt-4">
-            {step > 1 ? (
-              <Button variant="ghost" onClick={handlePrevStep}>
-                <ArrowLeft className="mr-2 h-4 w-4" /> Back
-              </Button>
-            ) : <div />}
-
-            {step < 4 && (
-              <Button onClick={handleNextStep} disabled={!canGoNext}>
-                Next <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+          <CardFooter className="flex flex-col gap-4 pt-4">
+             {step === 0 ? (
+                <Button variant="ghost" onClick={handleNextStep} className="w-full">Skip for now</Button>
+            ) : (
+              <div className="flex justify-between w-full">
+                {step > 0 ? (<Button variant="ghost" onClick={handlePrevStep}><ArrowLeft className="mr-2 h-4 w-4" /> Back</Button>) : <div />}
+                {step < totalSteps - 1 && <Button onClick={handleNextStep} disabled={!canGoNext}>Next <ArrowRight className="ml-2 h-4 w-4" /></Button>}
+              </div>
             )}
-
-            {step === 4 && (
+             {step === 4 && (
                 <p className="text-sm text-center w-full">
                   Already have an account?{' '}
                   <Link href="/login" className="font-semibold text-primary hover:underline">
