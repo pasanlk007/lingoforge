@@ -103,7 +103,7 @@ export default function LandingPage() {
   };
 
   const handleStartJourney = () => {
-    router.push('/login');
+    router.push('/signup');
   }
 
   if (!isMounted) {

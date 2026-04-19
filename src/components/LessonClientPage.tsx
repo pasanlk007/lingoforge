@@ -15,11 +15,13 @@ import { DialoguePanel } from '@/components/DialoguePanel';
 import { ExercisePanel } from '@/components/ExercisePanel';
 import { StreakCounter } from '@/components/StreakCounter';
 import { ProgressBar } from '@/components/ProgressBar';
-import Confetti from 'react-dom-confetti';
+import dynamic from 'next/dynamic';
 import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
 import { translations, targetLanguages } from '@/lib/translations';
 import { TooltipProvider } from './ui/tooltip';
+
+const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
 
 interface LessonClientPageProps {
     lesson: LanguageLesson;

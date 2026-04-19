@@ -9,13 +9,15 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { WordCard } from '@/components/WordCard';
 import { StreakCounter } from '@/components/StreakCounter';
-import Confetti from 'react-dom-confetti';
+import dynamic from 'next/dynamic';
 import { translations, targetLanguages } from '@/lib/translations';
 import { WritingPractice } from './WritingPractice';
 import { AudioPlayback } from './AudioPlayback';
 import { Alert, AlertTitle } from './ui/alert';
 import { TooltipProvider } from './ui/tooltip';
 import { cn } from '@/lib/utils';
+
+const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
 
 interface AlphabetLessonPageProps {
   dayData: LessonDay;
