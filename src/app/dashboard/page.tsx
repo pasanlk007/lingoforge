@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -43,6 +42,35 @@ import { TrialEndModal } from "@/components/TrialEndModal";
 import { differenceInCalendarDays } from 'date-fns';
 import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
+
+const SI_TRANSLATIONS = {
+  'Explore Learning Paths': 'ඉගෙනීමේ මාර්ග',
+  'Survival Bundle': 'පැවැත්මේ මාර්ගය',
+  'Survival Path': '👉 මේ ඉගෙනීමේ මාර්ගය',
+  'Alphabet Path': 'අකුරු හදුනාගනිමු',
+  'Numbers Path': 'ඉලක්කම් ඉගෙනගමු',
+  'LingoForge Pro': 'LingoForge ප්‍රෝ',
+  'Citizenship & Integration': 'පුරවැසිභාවය',
+  'Coming Soon': 'ළඟදීම',
+  'Citizenship Prep': 'පුරවැසිභාවය අයදුම් සූදානම',
+  'Legal Framework': 'නීති රාමුව',
+  'Exam Preparation': 'විභාග සූදානම',
+  'Daily AI Lessons': 'දෛනික AI පාඩම්',
+  'Explore Lesson Map': 'පාඩම් සිතියම',
+  'Application guidance': 'ඉල්ලුම් මාර්ගෝපදේශය',
+  'Rights & documents': 'අයිතිවාසිකම් සහ ලේඛන',
+  'Language & civic tests': 'භාෂා සහ පුරවැසි පරීක්ෂණ',
+  'Grammar & culture': 'ව්‍යාකරණ සහ සංස්කෘතිය',
+  'Your 30-day journey': 'ඔබේ දින 30 ගමන',
+  'Good morning': 'සුබ උදෑසනක්',
+  'Good afternoon': 'සුබ දහවලක්',
+  'Good evening': 'සුබ සන්ධ්‍යාවක්',
+  'streak': 'දිනපෙළ',
+  'days': 'දින',
+  'week': 'සතිය',
+  'I speak': 'ඔබේ භාෂාව',
+  'I am learning': 'ඉලක්කගත භාෂාව තෝරන්න',
+};
 
 function DashboardLoading() {
   return (
@@ -93,6 +121,13 @@ function DashboardContent({ user }: { user: User }) {
 
   const [nativeLanguage, setNativeLanguage] = useState('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
+
+  const si_t = (englishText: string) => {
+    if (nativeLanguage === 'Sinhala') {
+      return (SI_TRANSLATIONS as any)[englishText] || englishText;
+    }
+    return englishText;
+  };
 
   useEffect(() => {
     setIsMounted(true);
@@ -287,7 +322,7 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">🌱</span>
                     <div>
-                      <CardTitle className="text-xl">Survival Bundle</CardTitle>
+                      <CardTitle className="text-xl">{si_t('Survival Bundle')}</CardTitle>
                       <CardDescription>Your first step to practical fluency.</CardDescription>
                     </div>
                   </div>
@@ -301,18 +336,35 @@ function DashboardContent({ user }: { user: User }) {
                         </div>
                     </div>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="grid gap-2 pt-2 p-4">
                   {hasAccessToNextWeek ? (
-                    <Button asChild className="w-full sm:w-auto">
+                    <Button asChild className="w-full">
                       <Link href={nextSurvivalLessonUrl}>
                         {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   ) : (
-                    <Button asChild className="w-full sm:w-auto bg-green-600 hover:bg-green-700">
+                    <Button asChild className="w-full bg-green-600 hover:bg-green-700">
                       <Link href="/pricing">{t_ui.upgradeToUnlock} <ChevronRight className="ml-2 h-4 w-4" /></Link>
                     </Button>
                   )}
+                  <div className="grid grid-cols-2 gap-2">
+                      <Button asChild variant="secondary" className="font-semibold">
+                          <Link href="/alphabet">
+                              🔤 {si_t('Alphabet Path')}
+                          </Link>
+                      </Button>
+                      <Button asChild variant="secondary" className="font-semibold">
+                          <Link href="/numbers">
+                              🔢 {si_t('Numbers Path')}
+                          </Link>
+                      </Button>
+                  </div>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/dashboard/lesson-map">
+                        🗺️ {si_t('Explore Lesson Map')}
+                    </Link>
+                  </Button>
                 </CardFooter>
               </Card>
 
@@ -322,16 +374,16 @@ function DashboardContent({ user }: { user: User }) {
                     <div className="flex items-center gap-3">
                       <span className="text-3xl">🏛️</span>
                       <div>
-                        <CardTitle className="text-xl">LingoForge Pro Path</CardTitle>
-                        <CardDescription>Citizenship & Integration Program.</CardDescription>
+                        <CardTitle className="text-xl">{si_t('LingoForge Pro')}</CardTitle>
+                        <CardDescription>{si_t('Citizenship & Integration')}</CardDescription>
                       </div>
                     </div>
-                    <Badge className="bg-purple-500/20 text-purple-300 border border-purple-500/30">Beta</Badge>
+                    <Badge className="bg-purple-500/20 text-purple-300 border border-purple-500/30">{si_t('Coming Soon')}</Badge>
                   </div>
                 </CardHeader>
                 <CardFooter className="flex flex-col sm:flex-row gap-2 p-4">
                   <Button asChild className="w-full bg-purple-600 hover:bg-purple-500">
-                    <Link href="/dashboard/lesson-map">🗺️ Explore Lesson Map</Link>
+                    <Link href="/dashboard/lesson-map">🗺️ {si_t('Explore Lesson Map')}</Link>
                   </Button>
                   <Button asChild variant="outline" className="w-full" disabled={proPathFinished}>
                     <Link href={nextProLessonUrl}>
