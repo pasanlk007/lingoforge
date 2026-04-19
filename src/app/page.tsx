@@ -164,7 +164,6 @@ export default function LandingPage() {
                     key={lang}
                     onSelect={() => {
                       setDisplayLanguage(lang as keyof typeof translations);
-                      localStorage.setItem("nativeLanguage", lang);
                     }}
                   >
                     {lang}
@@ -438,7 +437,6 @@ export default function LandingPage() {
                         key={lang}
                         onSelect={() => {
                           setDisplayLanguage(lang as keyof typeof translations);
-                          localStorage.setItem("nativeLanguage", lang);
                         }}
                       >
                         {lang}
