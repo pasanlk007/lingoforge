@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuth, useFirestore, initiateGoogleSignIn, initiateEmailSignUp, useUser } from '@/firebase';
-import { doc, setDoc, collection, query, where, getDocs, updateDoc, increment } from 'firebase/firestore';
+import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,10 +12,11 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Languages, ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react';
+import { Languages, ArrowLeft, ArrowRight } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
-import { targetLanguages, nativeLanguages } from '@/lib/translations';
+import { targetLanguages } from '@/lib/translations';
 import { cn } from '@/lib/utils';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const NATIVE_LANGS = [
     { name: 'English', flag: '🇬🇧' },
@@ -25,6 +26,27 @@ const NATIVE_LANGS = [
     { name: 'Bengali', flag: '🇧🇩' },
     { name: 'Nepali', flag: '🇳🇵' },
 ];
+
+function SignupPageLoading() {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-background">
+      <Card className="w-full max-w-md">
+        <CardHeader>
+          <Skeleton className="h-2 w-full" />
+          <Skeleton className="h-8 w-3/4 mx-auto mt-4" />
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-2 gap-4">
+            <Skeleton className="h-24 w-full" />
+            <Skeleton className="h-24 w-full" />
+            <Skeleton className="h-24 w-full" />
+            <Skeleton className="h-24 w-full" />
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
 
 export default function SignupPage() {
   const [step, setStep] = useState(1);
@@ -55,59 +77,65 @@ export default function SignupPage() {
   const handleNextStep = () => setStep(prev => prev + 1);
   const handlePrevStep = () => setStep(prev => prev - 1);
 
-  const createUserProfileInFirestore = async (user: any) => {
+  const createOrUpdateFullUserProfile = async (user: any) => {
+    if (!firestore) return;
+    const userDocRef = doc(firestore, 'userProfiles', user.uid);
     const now = new Date();
-    const userProfile: UserProfile = {
-      id: user.uid,
-      displayName: displayName || user.displayName || 'New User',
-      email: email || user.email!,
-      nativeLanguage: nativeLanguage || 'English',
-      selectedLanguage: targetLanguage || 'French',
-      createdAt: now.toISOString(),
-      subscriptionActive: false,
-      subscriptionSource: 'none',
-      subscriptionExpiry: null,
-      xpPoints: 0,
-      currentStreak: 0,
-      lastActiveDate: now.toISOString().split('T')[0],
-      aiPlanningEnabled: false,
+
+    const docSnap = await getDoc(userDocRef);
+    const isNewUser = !docSnap.exists();
+
+    const profileData: Partial<UserProfile> = {
+        id: user.uid,
+        displayName: displayName || user.displayName,
+        email: email || user.email,
+        nativeLanguage: nativeLanguage,
+        selectedLanguage: targetLanguage,
+        photoURL: user.photoURL || undefined,
+        lastActiveDate: now.toISOString().split('T')[0],
+        ...(isNewUser && { 
+            createdAt: now.toISOString(),
+            subscriptionActive: false,
+            subscriptionSource: 'none',
+            subscriptionExpiry: null,
+            xpPoints: 0,
+            currentStreak: 0,
+            aiPlanningEnabled: false
+        })
     };
-    const userDocRef = doc(firestore!, 'userProfiles', user.uid);
-    await setDoc(userDocRef, userProfile, { merge: true });
+    
+    await setDoc(userDocRef, profileData, { merge: true });
   };
   
   const handleGoogleSignIn = async () => {
     setGoogleLoading(true);
     if (!auth || !firestore) {
-      toast({ variant: "destructive", title: "Error", description: "Authentication services are not ready." });
-      setGoogleLoading(false);
-      return;
+        toast({ variant: "destructive", title: "Error", description: "Authentication services are not ready." });
+        setGoogleLoading(false);
+        return;
     }
     
     try {
-      const result = await initiateGoogleSignIn(auth, firestore);
-      // Since Google provides the name, we can skip to the end if needed,
-      // but for a consistent flow, we'll just pre-fill and let them confirm.
-      // For this implementation, we assume Google Sign-In completes the process.
-      await createUserProfileInFirestore(result.user);
-      
-      toast({ title: "Account Created!", description: "Welcome to LingoForge!" });
-      window.location.href = '/dashboard';
+        const result = await initiateGoogleSignIn(auth, firestore);
+        await createOrUpdateFullUserProfile(result.user);
+        
+        toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
+        window.location.href = '/dashboard';
 
     } catch (error: any) {
-      if (error.code !== 'auth/popup-closed-by-user') {
-        toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
-      }
-      setGoogleLoading(false);
+        if (error.code !== 'auth/popup-closed-by-user') {
+            toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
+        }
+        setGoogleLoading(false);
     }
   };
 
-  const handleSignup = async (e: React.FormEvent) => {
+  const handleEmailSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
     if (!auth || !firestore) {
-      toast({ variant: "destructive", title: "Service Unavailable", description: "Cannot connect." });
+      toast({ variant: "destructive", title: "Service Unavailable" });
       setIsLoading(false);
       return;
     }
@@ -116,9 +144,9 @@ export default function SignupPage() {
       const userCredential = await initiateEmailSignUp(auth, email, password);
       const user = userCredential.user;
       await updateProfile(user, { displayName });
-      await createUserProfileInFirestore(user);
+      await createOrUpdateFullUserProfile(user);
       
-      toast({ title: "Account Created!", description: "Welcome to LingoForge!" });
+      toast({ title: "Account Created!", description: "Welcome!" });
       window.location.href = '/dashboard';
 
     } catch (error: any) {
@@ -133,8 +161,7 @@ export default function SignupPage() {
     (step === 2 && targetLanguage) ||
     (step === 3 && displayName.trim().length > 2);
 
-  if (isUserLoading || user) {
-    // Show a simple loading state while checking for existing user
+  if (isUserLoading || (user && !isUserLoading)) {
     return <div className="flex min-h-screen items-center justify-center bg-background"><Languages className="h-12 w-12 text-primary animate-pulse" /></div>;
   }
   
@@ -216,7 +243,7 @@ export default function SignupPage() {
                       <span className="bg-card px-2 text-muted-foreground">Or with email</span>
                     </div>
                   </div>
-                  <form onSubmit={handleSignup} className="space-y-4">
+                  <form onSubmit={handleEmailSignup} className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
                       <Input id="email" type="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required disabled={isLoading || isGoogleLoading} />
@@ -242,14 +269,14 @@ export default function SignupPage() {
             )}
           </CardContent>
 
-          <CardFooter className="flex justify-between items-center">
+          <CardFooter className="flex justify-between items-center pt-4">
             {step > 1 ? (
               <Button variant="ghost" onClick={handlePrevStep}>
                 <ArrowLeft className="mr-2 h-4 w-4" /> Back
               </Button>
             ) : <div />}
 
-            {step < 4 && step !== 2 && (
+            {step === 3 && (
               <Button onClick={handleNextStep} disabled={!canGoNext}>
                 Next <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
