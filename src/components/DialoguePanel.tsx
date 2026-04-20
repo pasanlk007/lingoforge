@@ -1,10 +1,13 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import type { Dialogue } from '@/lib/types';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { AudioPlayback } from './AudioPlayback';
 import { MessageSquare } from 'lucide-react';
 import { Separator } from './ui/separator';
+
+const AudioPlayback = dynamic(() => import('./AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
+
 
 interface DialoguePanelProps {
   dialogues: Dialogue[];

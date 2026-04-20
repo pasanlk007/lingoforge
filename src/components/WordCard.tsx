@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { Card } from '@/components/ui/card';
-import { AudioPlayback } from './AudioPlayback';
 import type { LessonItem } from '@/lib/types';
 import { translations } from '@/lib/translations';
 import { Separator } from './ui/separator';
+
+const AudioPlayback = dynamic(() => import('./AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
 
 interface WordCardProps {
   item: LessonItem;

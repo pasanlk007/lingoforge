@@ -15,8 +15,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { canAccessLesson } from '@/lib/accessControl';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { AudioPlayback } from '@/components/AudioPlayback';
 
+const AudioPlayback = dynamic(() => import('@/components/AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
 
 const confettiConfig = {

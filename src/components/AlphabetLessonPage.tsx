@@ -12,11 +12,11 @@ import { StreakCounter } from '@/components/StreakCounter';
 import dynamic from 'next/dynamic';
 import { translations, targetLanguages } from '@/lib/translations';
 import { WritingPractice } from './WritingPractice';
-import { AudioPlayback } from './AudioPlayback';
 import { Alert, AlertTitle } from './ui/alert';
 import { TooltipProvider } from './ui/tooltip';
 import { cn } from '@/lib/utils';
 
+const AudioPlayback = dynamic(() => import('./AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
 
 interface AlphabetLessonPageProps {
