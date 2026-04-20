@@ -6,7 +6,7 @@ import { getFirestore as getFirebaseFirestore } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useAuth, useFirestore, initiateGoogleSignIn, useUser } from '@/firebase';
+import { useAuth, useFirestore, initiateGoogleSignIn, useUser, upsertUserProfile } from '@/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -153,6 +153,7 @@ export function LoginFormContent() {
             console.log("Native platform detected, attempting native sign-in...");
             const user = await nativeGoogleSignIn(auth);
             if (user) {
+                await upsertUserProfile(user, firestore);
                 success = true;
             }
         } else {
@@ -165,12 +166,9 @@ export function LoginFormContent() {
             toast({ title: "Login Successful", description: "Welcome back!" });
             if (typeof window !== "undefined") { window.location.href = redirectUrl; } else { router.push(redirectUrl); }
         } else {
-            // This path is reached if native sign-in was attempted and failed/cancelled.
-            // We simply stop loading and allow the user to try again.
             setGoogleLoading(false);
         }
     } catch (error: any) {
-        // This catch block will primarily handle errors from the web-based flow.
         if (error.code !== 'auth/popup-closed-by-user') {
             toast({ variant: "destructive", title: "Google Sign-In Failed", description: error.message });
         }
