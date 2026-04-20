@@ -46,15 +46,16 @@ export async function initiateGoogleSignIn(
     const userDocRef = doc(firestore, 'userProfiles', user.uid);
     const userDocSnap = await getDoc(userDocRef);
 
-    if (!userDocSnap.exists()) {
+    // Only create a profile if it doesn't exist AND profileData was provided (i.e., this is a signup flow)
+    if (!userDocSnap.exists() && profileData) {
         const now = new Date();
         const newUserProfile: UserProfile = {
             id: user.uid,
-            displayName: profileData?.displayName || user.displayName || 'New User',
+            displayName: profileData.displayName || user.displayName || 'New User',
             email: user.email!,
             photoURL: user.photoURL || undefined,
-            nativeLanguage: profileData?.nativeLanguage || 'English',
-            selectedLanguage: profileData?.selectedLanguage || 'French',
+            nativeLanguage: profileData.nativeLanguage || 'English',
+            selectedLanguage: profileData.selectedLanguage || 'French',
             createdAt: now.toISOString(),
             subscriptionActive: false,
             subscriptionSource: 'none',
@@ -70,12 +71,13 @@ export async function initiateGoogleSignIn(
         await setDoc(userDocRef, newUserProfile, { merge: true });
 
         // Set preferences in localStorage for immediate UI update
-        if (profileData?.nativeLanguage) {
+        if (profileData.nativeLanguage) {
           localStorage.setItem('nativeLanguage', profileData.nativeLanguage);
         }
-        if (profileData?.selectedLanguage) {
+        if (profileData.selectedLanguage) {
           localStorage.setItem('targetLanguage', profileData.selectedLanguage);
         }
     }
+
     return result;
 }
