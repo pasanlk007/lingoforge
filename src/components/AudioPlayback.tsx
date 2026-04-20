@@ -1,5 +1,5 @@
 "use client";
-import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
+import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
 import { playAudio } from "@/lib/audioPlayer";
 import { Button } from "@/components/ui/button";
 
@@ -30,6 +30,7 @@ export function AudioPlayback({ text, languageName }: Props) {
   );
 
   return (
+    <TooltipProvider>
     <div className="flex items-center gap-2">
       <Tooltip>
         <TooltipTrigger asChild>
@@ -63,5 +64,6 @@ export function AudioPlayback({ text, languageName }: Props) {
         </TooltipContent>
       </Tooltip>
     </div>
+    </TooltipProvider>
   );
 }
