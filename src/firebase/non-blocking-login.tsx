@@ -46,16 +46,39 @@ export async function initiateGoogleSignIn(
     const userDocRef = doc(firestore, 'userProfiles', user.uid);
     const userDocSnap = await getDoc(userDocRef);
 
-    // Only create a profile if it doesn't exist AND profileData was provided (i.e., this is a signup flow)
-    if (!userDocSnap.exists() && profileData) {
+    if (userDocSnap.exists()) {
+      // User exists. This could be a login or a re-signup attempt.
+      const updateData: Partial<UserProfile> = {};
+      
+      // If profileData is provided from onboarding, update languages.
+      if (profileData && profileData.nativeLanguage && profileData.selectedLanguage) {
+        updateData.nativeLanguage = profileData.nativeLanguage;
+        updateData.selectedLanguage = profileData.selectedLanguage;
+      }
+      
+      // Always refresh display name and photo from Google profile on login.
+      if (user.displayName) updateData.displayName = user.displayName;
+      if (user.photoURL) updateData.photoURL = user.photoURL;
+
+      if (Object.keys(updateData).length > 0) {
+        await setDoc(userDocRef, updateData, { merge: true });
+      }
+
+      // Update localStorage with the (potentially updated) profile data for immediate UI change.
+      const updatedProfile = (await getDoc(userDocRef)).data() as UserProfile;
+      localStorage.setItem('nativeLanguage', updatedProfile.nativeLanguage);
+      localStorage.setItem('targetLanguage', updatedProfile.selectedLanguage);
+
+    } else {
+        // User does not exist, create a new profile.
         const now = new Date();
         const newUserProfile: UserProfile = {
             id: user.uid,
-            displayName: profileData.displayName || user.displayName || 'New User',
+            displayName: profileData?.displayName || user.displayName || 'New User',
             email: user.email!,
             photoURL: user.photoURL || undefined,
-            nativeLanguage: profileData.nativeLanguage || 'English',
-            selectedLanguage: profileData.selectedLanguage || 'French',
+            nativeLanguage: profileData?.nativeLanguage || 'English',
+            selectedLanguage: profileData?.selectedLanguage || 'French', // This will now use the value from onboarding
             createdAt: now.toISOString(),
             subscriptionActive: false,
             subscriptionSource: 'none',
@@ -71,12 +94,8 @@ export async function initiateGoogleSignIn(
         await setDoc(userDocRef, newUserProfile, { merge: true });
 
         // Set preferences in localStorage for immediate UI update
-        if (profileData.nativeLanguage) {
-          localStorage.setItem('nativeLanguage', profileData.nativeLanguage);
-        }
-        if (profileData.selectedLanguage) {
-          localStorage.setItem('targetLanguage', profileData.selectedLanguage);
-        }
+        localStorage.setItem('nativeLanguage', newUserProfile.nativeLanguage);
+        localStorage.setItem('targetLanguage', newUserProfile.selectedLanguage);
     }
 
     return result;

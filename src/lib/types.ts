@@ -147,6 +147,9 @@ export interface UserProfile {
   lastActiveDate: string; // ISO 8601 date string
   aiPlanningEnabled: boolean;
   photoURL?: string;
+  activePath?: string;
+  lastLessonWeek?: number;
+  lastLessonDay?: number;
   
   languageProgress?: {
     [language: string]: {

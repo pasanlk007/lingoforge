@@ -119,7 +119,7 @@ export default function SignupPage() {
     } else if (platform === 'android') {
       toast({ title: "Install on Android 🤖", description: "Tap the 3-dot menu (⋮) in Chrome, then tap 'Add to Home Screen' or 'Install App'." });
     } else {
-      toast({ title: "Install on Desktop 💻", description: "Click the install icon (⊕) in your browser address bar, or use browser menu → Install LingoForge." });
+      toast({ title: "Install on Desktop 💻", description: "Click the install icon (⊕) in your browser's address bar, or use browser menu → Install LingoForge." });
     }
   };
 
