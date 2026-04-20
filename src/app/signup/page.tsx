@@ -247,18 +247,23 @@ export default function SignupPage() {
                       <Badge className="bg-yellow-400 text-yellow-900">Premium</Badge>
                   </h2>
                   <p className="text-muted-foreground mt-1">Survive. Speak. Belong.</p>
-                  <div className="mt-6 space-y-3">
+                   <div className="mt-6 space-y-3">
                       <Button size="lg" className="w-full" onClick={handleInstallClick}>
-                          Install Now - It's Free!
+                          <Download className="mr-2 h-4 w-4" /> Install App - It's Free!
                       </Button>
-                      <p className="text-xs text-muted-foreground px-4">
-                          {isIOS 
-                            ? "For the best experience, tap the Share button in Safari, then 'Add to Home Screen'." 
-                            : deferredPrompt 
-                            ? "Get the full app experience on your device." 
-                            : "Open in Chrome or Safari on your phone to install the app."
-                          }
-                      </p>
+
+                      <div className="text-xs text-muted-foreground px-2 pt-2">
+                        {isIOS ? (
+                          <div className="text-left space-y-1 p-3 bg-muted/50 rounded-lg border border-dashed">
+                              <p className="font-bold text-foreground">For iPhone/iPad Users:</p>
+                              <p>1. Open this page in the <strong className="text-primary">Safari</strong> browser.</p>
+                              <p>2. Tap the <Share className="inline h-3 w-3" /> Share button.</p>
+                              <p>3. Scroll down and tap <strong className="text-primary">'Add to Home Screen'</strong>.</p>
+                          </div>
+                        ) : (
+                          <p>For the best experience, install the app on your device.</p>
+                        )}
+                      </div>
                   </div>
               </div>
             )}
