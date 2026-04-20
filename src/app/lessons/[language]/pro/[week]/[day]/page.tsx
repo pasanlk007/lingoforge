@@ -8,14 +8,14 @@ import { proLessonTopics } from '@/lib/proLessonTopics';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, Volume2, Loader2, BookOpen, MessagesSquare, Globe, PenSquare, BrainCircuit, XCircle, Lock } from 'lucide-react';
+import { CheckCircle, Loader2, BookOpen, MessagesSquare, Globe, PenSquare, BrainCircuit, XCircle, Lock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { playAudio } from '@/lib/audioPlayer';
 import { canAccessLesson } from '@/lib/accessControl';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { AudioPlayback } from '@/components/AudioPlayback';
 
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
 
@@ -38,7 +38,7 @@ const shuffleArray = <T,>(array: T[]): T[] => {
 
 const loadingMessages = [
     "LingoForge planning your today's lesson... 🧠",
-    "Preparing vocabulary for you... 📚",
+    "Preparing vocabulary for you... 📚",  
     "Adding cultural insights... 🌍",
     "Almost ready... ✨"
 ];
@@ -284,18 +284,43 @@ export default function ProLessonPage() {
                     <Card className="bg-card/80 backdrop-blur-sm border-primary/10"><CardContent className="p-6">
                       <h2 className="text-lg font-semibold mb-4 flex items-center gap-2"><BookOpen className="h-5 w-5 text-purple-400"/> Vocabulary</h2>
                       <div className="space-y-4">{lesson.vocabulary.map((item: any, i: number) => (
-                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50"><div className="flex items-center justify-between">
-                            <div><div className="text-xl font-bold text-primary">{item.target}</div><div className="text-sm text-muted-foreground">{item.native}</div><div className="text-xs text-blue-400">/{item.phonetic}/</div></div>
-                            <Button variant="outline" size="icon" onClick={() => playAudio(item.target, language as string, 1)}><Volume2 className="h-4 w-4" /></Button>
-                        </div>{item.example && (<div className="mt-3 pt-3 border-t border-border/30"><div className="text-sm italic">"{item.example}"</div><div className="text-xs text-muted-foreground mt-1">"{item.example_native}"</div></div>)}</div>))}</div>
+                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50">
+                          <div className="flex items-center justify-between">
+                              <div>
+                                <div className="text-xl font-bold text-primary">{item.target}</div>
+                                <div className="text-sm text-muted-foreground">{item.native}</div>
+                                <div className="text-xs text-blue-400">/{item.phonetic}/</div>
+                              </div>
+                              <AudioPlayback text={item.target} languageName={language as string} />
+                          </div>
+                          {item.example && (
+                            <div className="mt-3 pt-3 border-t border-border/30">
+                              <div className="flex items-center justify-between">
+                                  <div className="flex-1">
+                                    <div className="text-sm italic">"{item.example}"</div>
+                                    <div className="text-xs text-muted-foreground mt-1">"{item.example_native}"</div>
+                                  </div>
+                                  <AudioPlayback text={item.example} languageName={language as string} />
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      ))}</div>
                     </CardContent></Card>
                     <Card className="bg-card/80 backdrop-blur-sm border-primary/10"><CardContent className="p-6">
                       <h2 className="text-lg font-semibold mb-4 flex items-center gap-2"><MessagesSquare className="h-5 w-5 text-purple-400"/> Useful Phrases</h2>
                       <div className="space-y-4">{lesson.phrases.map((item: any, i: number) => (
-                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50"><div className="flex items-start justify-between">
-                            <div className="flex-1"><div className="font-semibold text-primary">{item.target}</div><div className="text-sm text-muted-foreground mt-1">{item.native}</div><div className="text-xs text-yellow-500 mt-2">💡 {item.situation}</div></div>
-                            <Button variant="outline" size="icon" onClick={() => playAudio(item.target, language as string, 1)} className="ml-4 shrink-0"><Volume2 className="h-4 w-4" /></Button>
-                        </div></div>))}</div>
+                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50">
+                          <div className="flex items-start justify-between">
+                              <div className="flex-1">
+                                <div className="font-semibold text-primary">{item.target}</div>
+                                <div className="text-sm text-muted-foreground mt-1">{item.native}</div>
+                                <div className="text-xs text-yellow-500 mt-2">💡 {item.situation}</div>
+                              </div>
+                              <AudioPlayback text={item.target} languageName={language as string} />
+                          </div>
+                        </div>
+                      ))}</div>
                     </CardContent></Card>
                     {lesson.cultural_tip && (<Card className="bg-yellow-950/30 backdrop-blur-sm border-yellow-500/30"><CardContent className="p-6"><h2 className="font-semibold text-yellow-400 mb-2 flex items-center gap-2"><Globe className="h-5 w-5" /> Cultural Tip</h2><div className="text-sm text-yellow-200/80">{lesson.cultural_tip}</div></CardContent></Card>)}
                     {lesson.grammar_note && (<Card className="bg-blue-950/30 backdrop-blur-sm border-blue-500/30"><CardContent className="p-6"><h2 className="font-semibold text-blue-400 mb-2 flex items-center gap-2"><PenSquare className="h-5 w-5" /> Grammar Note</h2><div className="text-sm text-blue-200/80">{lesson.grammar_note}</div></CardContent></Card>)}
@@ -308,10 +333,16 @@ export default function ProLessonPage() {
                       <h2 className="text-lg font-semibold mb-4 flex items-center gap-2"><MessagesSquare className="h-5 w-5 text-purple-400"/> Practice Phrases</h2>
                       <p className="text-sm text-muted-foreground mb-4">Read these phrases aloud to practice your pronunciation.</p>
                       <div className="space-y-4">{lesson.phrases.map((item: any, i: number) => (
-                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50"><div className="flex items-start justify-between">
-                            <div className="flex-1"><div className="font-semibold text-lg text-primary">{item.target}</div><div className="text-sm text-muted-foreground mt-1">{item.native}</div></div>
-                            <Button variant="outline" size="icon" onClick={() => playAudio(item.target, language as string, 1)} className="ml-4 shrink-0"><Volume2 className="h-4 w-4" /></Button>
-                        </div></div>))}</div>
+                        <div key={i} className="p-4 rounded-lg bg-muted/50 border border-border/50">
+                          <div className="flex items-start justify-between">
+                              <div className="flex-1">
+                                <div className="font-semibold text-lg text-primary">{item.target}</div>
+                                <div className="text-sm text-muted-foreground mt-1">{item.native}</div>
+                              </div>
+                              <AudioPlayback text={item.target} languageName={language as string} />
+                          </div>
+                        </div>
+                      ))}</div>
                   </CardContent></Card>
                 </div>
             )}
