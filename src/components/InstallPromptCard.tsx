@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download, Share, MoreVertical, Smartphone, Monitor } from 'lucide-react';
+import { Download, Smartphone, Monitor } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 export function InstallPromptCard() {
@@ -13,7 +13,7 @@ export function InstallPromptCard() {
   const { toast } = useToast();
 
   useEffect(() => {
-    // Check if running in standalone mode (already installed)
+    // Fast detection by checking media query first.
     if (typeof window !== 'undefined' && window.matchMedia('(display-mode: standalone)').matches) {
       setIsInstalled(true);
       return;
@@ -25,7 +25,7 @@ export function InstallPromptCard() {
     };
     window.addEventListener('beforeinstallprompt', handler);
     
-    // Detect platform
+    // Fast platform detection
     const ua = navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream) {
       setPlatform('ios');
@@ -39,12 +39,17 @@ export function InstallPromptCard() {
   }, []);
 
   const handleInstallClick = () => {
+    // If we have a deferred prompt, use it. This is the best experience.
     if (deferredPrompt) {
       deferredPrompt.prompt();
-    } else if (platform === 'ios') {
+      return;
+    }
+
+    // Otherwise, show instructions in a toast.
+    if (platform === 'ios') {
       toast({
         title: "Install on iPhone/iPad 📱",
-        description: "Tap the Share button (□↑) at the bottom, then tap 'Add to Home Screen' and tap Add.",
+        description: "Tap the Share button (□↑) at the bottom, then scroll down and tap 'Add to Home Screen'.",
         duration: 10000,
       });
     } else if (platform === 'android') {
@@ -56,48 +61,37 @@ export function InstallPromptCard() {
     } else {
        toast({
         title: "Install on Desktop 💻",
-        description: "Click the install icon (⊕) in your browser's address bar, or use browser menu → Install LingoForge.",
+        description: "Click the install icon (⊕ or a computer icon) in your browser's address bar, or find 'Install LingoForge' in your browser menu.",
         duration: 10000,
       });
     }
   };
 
+  // Don't show the card if the app is already installed or platform is unknown.
   if (isInstalled || platform === 'unknown') {
     return null;
   }
   
-  const canPromptInstall = !!deferredPrompt;
-
-  const instructions = {
-    ios: <p className="text-xs text-muted-foreground">Tap <Share className="inline h-3 w-3" /> Share → <strong className="text-white">Add to Home Screen</strong>.</p>,
-    android: <p className="text-xs text-muted-foreground">Tap <MoreVertical className="inline h-3 w-3" /> Menu → <strong className="text-white">Add to Home Screen</strong>.</p>,
-    desktop: <p className="text-xs text-muted-foreground">Click <Download className="inline h-3 w-3" /> in the address bar to install.</p>,
-    unknown: null
-  }
-
   const icon = {
       ios: <Smartphone />,
       android: <Smartphone />,
       desktop: <Monitor />,
       unknown: <Smartphone />
-  }
+  }[platform];
 
   return (
-    <Card>
+    <Card className="border-primary/20">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          {icon[platform]}
-          Install LingoForge
+          {icon}
+          Install LingoForge App
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
-        <p className="text-sm text-muted-foreground">Get the full app experience on your device for quick access.</p>
-        {instructions[platform]}
-        {(canPromptInstall || platform === 'ios') && (
-            <Button className="w-full" onClick={handleInstallClick}>
-                <Download className="mr-2 h-4 w-4" /> Install App
-            </Button>
-        )}
+        <p className="text-sm text-muted-foreground">Get the best experience by installing the app on your device for quick access.</p>
+        <Button className="w-full" variant="outline" onClick={handleInstallClick}>
+            <Download className="mr-2 h-4 w-4" /> Install App
+        </Button>
       </CardContent>
     </Card>
   );
