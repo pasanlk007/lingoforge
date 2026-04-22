@@ -23,6 +23,11 @@ export default function InstallPage() {
     setPlatform(detect());
     if (window.matchMedia('(display-mode: standalone)').matches) setInstalled(true);
     const handler = (e: any) => { e.preventDefault(); setDeferredPrompt(e); };
+    
+    // Auto reload once to trigger beforeinstallprompt
+      sessionStorage.setItem('install_reloaded', '1');
+      setTimeout(() => window.location.reload(), 500);
+    }
     window.addEventListener('beforeinstallprompt', handler);
     return () => window.removeEventListener('beforeinstallprompt', handler);
   }, []);
