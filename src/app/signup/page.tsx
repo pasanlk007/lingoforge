@@ -12,12 +12,11 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
-import { Languages, ArrowLeft, ArrowRight, Download, Share } from 'lucide-react';
+import { Languages, ArrowLeft, ArrowRight } from 'lucide-react';
 import type { UserProfile } from '@/lib/types';
-import { targetLanguages, nativeLanguages as allNativeLanguages } from '@/lib/translations';
+import { targetLanguages } from '@/lib/translations';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Badge } from '@/components/ui/badge';
 
 const NATIVE_LANGS = [
     { name: 'English', flag: '🇬🇧' },
@@ -27,27 +26,6 @@ const NATIVE_LANGS = [
     { name: 'Bengali', flag: '🇧🇩' },
     { name: 'Nepali', flag: '🇳🇵' },
 ];
-
-function SignupPageLoading() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <Card className="w-full max-w-md">
-        <CardHeader>
-          <Skeleton className="h-2 w-full" />
-          <Skeleton className="h-8 w-3/4 mx-auto mt-4" />
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-2 gap-4">
-            <Skeleton className="h-24 w-full" />
-            <Skeleton className="h-24 w-full" />
-            <Skeleton className="h-24 w-full" />
-            <Skeleton className="h-24 w-full" />
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
-}
 
 export default function SignupPage() {
   const [step, setStep] = useState(0);
@@ -69,59 +47,11 @@ export default function SignupPage() {
   const { user, isUserLoading } = useUser();
   const router = useRouter();
 
-  // PWA Install state
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [detecting, setDetecting] = useState(true);
-  const [installReady, setInstallReady] = useState(false);
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDetecting(false);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
-  const [platform, setPlatform] = useState<'android'|'ios'|'desktop'|'unknown'>('unknown');
-
-  useEffect(() => {
-    const ua = navigator.userAgent.toLowerCase();
-    if (/iphone|ipad|ipod/.test(ua)) setPlatform('ios');
-    else if (/android/.test(ua)) setPlatform('android');
-    else setPlatform('desktop');
-  }, []);
-  const [isIOS, setIsIOS] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
-
   useEffect(() => {
     if (user && !isUserLoading) {
       router.push('/dashboard');
     }
   }, [user, isUserLoading, router]);
-
-  useEffect(() => {
-    const handler = (e: Event) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-    window.addEventListener('beforeinstallprompt', handler);
-
-    const ua = navigator.userAgent.toLowerCase();
-    setIsIOS(/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream);
-    setIsDesktop(!/mobi/i.test(ua));
-
-    return () => window.removeEventListener('beforeinstallprompt', handler);
-  }, []);
-
-  const handleInstallClick = () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-    } else if (isIOS) {
-      toast({ title: "Install on iPhone/iPad 📱", description: "Tap the Share button (□↑) at the bottom, then tap 'Add to Home Screen' and tap Add." });
-    } else if (platform === 'android') {
-      toast({ title: "Install on Android 🤖", description: "Tap the 3-dot menu (⋮) in Chrome, then tap 'Add to Home Screen' or 'Install App'." });
-    } else {
-      toast({ title: "Install on Desktop 💻", description: "Click the install icon (⊕) in your browser's address bar, or use browser menu → Install LingoForge." });
-    }
-  };
 
   const handleNextStep = () => setStep(prev => prev + 1);
   const handlePrevStep = () => setStep(prev => prev - 1);
@@ -202,12 +132,11 @@ export default function SignupPage() {
     }
   };
 
-  const totalSteps = 5;
+  const totalSteps = 4;
   const canGoNext = 
-    (step === 0) ||
-    (step === 1 && nativeLanguage) ||
-    (step === 2 && targetLanguage) ||
-    (step === 3 && displayName.trim().length > 2);
+    (step === 0 && nativeLanguage) ||
+    (step === 1 && targetLanguage) ||
+    (step === 2 && displayName.trim().length > 2);
 
   if (isUserLoading || (user && !isUserLoading)) {
     return <div className="flex min-h-screen items-center justify-center bg-background"><Languages className="h-12 w-12 text-primary animate-pulse" /></div>;
@@ -231,43 +160,14 @@ export default function SignupPage() {
                 ))}
              </div>
             <CardTitle className="text-center">
-              {step === 0 && 'Install the App'}
-              {step === 1 && 'What is your native language?'}
-              {step === 2 && 'Which language will you learn?'}
-              {step === 3 && 'What should we call you?'}
-              {step === 4 && 'Create Your Account'}
+              {step === 0 && 'What is your native language?'}
+              {step === 1 && 'Which language will you learn?'}
+              {step === 2 && 'What should we call you?'}
+              {step === 3 && 'Create Your Account'}
             </CardTitle>
           </CardHeader>
           <CardContent>
             {step === 0 && (
-               <div className="text-center p-4">
-                  <Languages className="h-16 w-16 text-primary mx-auto" />
-                  <h2 className="text-2xl font-bold mt-4 flex items-center justify-center gap-2">
-                      LingoForge
-                      <Badge className="bg-yellow-400 text-yellow-900">Premium</Badge>
-                  </h2>
-                  <p className="text-muted-foreground mt-1">Survive. Speak. Belong.</p>
-                   <div className="mt-6 space-y-3">
-                      <Button size="lg" className="w-full" onClick={handleInstallClick}>
-                          <Download className="mr-2 h-4 w-4" /> Install App - It's Free!
-                      </Button>
-
-                      <div className="text-xs text-muted-foreground px-2 pt-2">
-                        {isIOS ? (
-                          <div className="text-left space-y-1 p-3 bg-muted/50 rounded-lg border border-dashed">
-                              <p className="font-bold text-foreground">For iPhone/iPad Users:</p>
-                              <p>1. Open this page in the <strong className="text-primary">Safari</strong> browser.</p>
-                              <p>2. Tap the <Share className="inline h-3 w-3" /> Share button.</p>
-                              <p>3. Scroll down and tap <strong className="text-primary">'Add to Home Screen'</strong>.</p>
-                          </div>
-                        ) : (
-                          <p>For the best experience, install the app on your device.</p>
-                        )}
-                      </div>
-                  </div>
-              </div>
-            )}
-            {step === 1 && (
               <div className="grid grid-cols-2 gap-3">
                 {NATIVE_LANGS.map(lang => (
                   <button key={lang.name} onClick={() => { setNativeLanguage(lang.name); handleNextStep(); }}
@@ -281,7 +181,7 @@ export default function SignupPage() {
               </div>
             )}
             
-            {step === 2 && (
+            {step === 1 && (
               <div className="grid grid-cols-3 gap-2 max-h-[40vh] overflow-y-auto pr-2">
                 {targetLanguages.map(lang => (
                   <button key={lang.lang} onClick={() => { setTargetLanguage(lang.lang); handleNextStep(); }}
@@ -295,7 +195,7 @@ export default function SignupPage() {
               </div>
             )}
 
-            {step === 3 && (
+            {step === 2 && (
               <div className="space-y-2">
                 <Label htmlFor="displayName">Display Name</Label>
                 <Input
@@ -309,7 +209,7 @@ export default function SignupPage() {
               </div>
             )}
 
-            {step === 4 && (
+            {step === 3 && (
                 <div className="space-y-4">
                   <Button variant="outline" className="w-full" onClick={handleGoogleSignIn} disabled={isGoogleLoading || isLoading}>
                     {isGoogleLoading ? 'Processing...' : 'Continue with Google'}
@@ -343,15 +243,11 @@ export default function SignupPage() {
           </CardContent>
 
           <CardFooter className="flex flex-col gap-4 pt-4">
-             {step === 0 ? (
-                <Button variant="ghost" onClick={handleNextStep} className="w-full">Skip for now</Button>
-            ) : (
               <div className="flex justify-between w-full">
                 {step > 0 ? (<Button variant="ghost" onClick={handlePrevStep}><ArrowLeft className="mr-2 h-4 w-4" /> Back</Button>) : <div />}
                 {step < totalSteps - 1 && <Button onClick={handleNextStep} disabled={!canGoNext}>Next <ArrowRight className="ml-2 h-4 w-4" /></Button>}
               </div>
-            )}
-             {step === 4 && (
+            {step === 3 && (
                 <p className="text-sm text-center w-full">
                   Already have an account?{' '}
                   <Link href="/login" className="font-semibold text-primary hover:underline">

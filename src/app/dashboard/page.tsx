@@ -35,6 +35,7 @@ import { differenceInCalendarDays } from 'date-fns';
 import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
+import { InstallPromptCard } from "@/components/InstallPromptCard";
 
 function DashboardLoading() {
   return (
@@ -393,6 +394,7 @@ function DashboardContent({ user }: { user: User }) {
               <ReminderCard />
               <ReferralCard />
               <VoiceSelector />
+              <InstallPromptCard />
               <Card>
                 <CardHeader><CardTitle className="flex items-center gap-2"><CalendarDays className="h-5 w-5" />{t.weeklyProgress}</CardTitle></CardHeader>
                 <CardContent>
