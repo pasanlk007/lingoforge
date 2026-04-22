@@ -41,6 +41,7 @@ export function InstallPromptCard() {
   }, []);
 
   const handleInstallClick = async () => {
+    console.log("Platform:", platform, "Deferred:", !!deferredPrompt);
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
