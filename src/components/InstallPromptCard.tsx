@@ -1,38 +1,36 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download, Smartphone, Monitor } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { Smartphone, Monitor, Download } from 'lucide-react';
 
-type Platform = 'ios' | 'android' | 'desktop' | 'unknown';
+type Platform = 'ios' | 'android' | 'desktop';
+
+function detectPlatform(): Platform {
+  const ua = navigator.userAgent;
+  if (/iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream) return 'ios';
+  if (/Android/.test(ua)) return 'android';
+  return 'desktop';
+}
 
 export function InstallPromptCard() {
+  const [platform, setPlatform] = useState<Platform>('desktop');
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [platform, setPlatform] = useState<Platform>('unknown');
-  const [isInstalled, setIsInstalled] = useState(false);
+  const [installed, setInstalled] = useState(false);
+  const [showIOSSteps, setShowIOSSteps] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { toast } = useToast();
 
   useEffect(() => {
     setMounted(true);
+    setPlatform(detectPlatform());
 
     if (window.matchMedia('(display-mode: standalone)').matches) {
-      setIsInstalled(true);
+      setInstalled(true);
       return;
     }
 
-    const ua = navigator.userAgent.toLowerCase();
-    if (/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream) {
-      setPlatform('ios');
-    } else if (/android/i.test(ua) || /android/i.test(navigator.userAgent)) {
-      setPlatform('android');
-    } else {
-      setPlatform('desktop');
-    }
-
-    const handler = (e: Event) => {
+    const handler = (e: any) => {
       e.preventDefault();
       setDeferredPrompt(e);
     };
@@ -40,63 +38,69 @@ export function InstallPromptCard() {
     return () => window.removeEventListener('beforeinstallprompt', handler);
   }, []);
 
-  const handleInstallClick = async () => {
-    console.log("Platform:", platform, "Deferred:", !!deferredPrompt);
+  const handleInstall = async () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') setIsInstalled(true);
+      if (outcome === 'accepted') setInstalled(true);
       setDeferredPrompt(null);
       return;
     }
-
     if (platform === 'ios') {
-      toast({
-        title: "Install on iPhone/iPad 🍎",
-        description: "1. Tap Share button □↑ at bottom  2. Tap 'Add to Home Screen'  3. Tap Add",
-        duration: 12000,
-      });
-    } else if (platform === 'android') {
-      toast({
-        title: "Install on Android 🤖",
-        description: "1. Tap ⋮ menu in Chrome  2. Tap 'Add to Home Screen' or 'Install App'",
-        duration: 10000,
-      });
-    } else {
-      toast({
-        title: "Install on Desktop 💻",
-        description: "Click the ⊕ install icon in your browser address bar, or Browser Menu → Install LingoForge",
-        duration: 10000,
-      });
+      setShowIOSSteps(true);
+      return;
     }
+    // Android without prompt - show manual steps
+    setShowIOSSteps(true);
   };
 
-  if (!mounted || isInstalled) return null;
+  if (!mounted || installed) return null;
 
   return (
-    <Card className="border-primary/20 bg-primary/5">
-      <CardHeader className="pb-2">
-        <CardTitle className="flex items-center gap-2 text-base">
-          {platform === 'desktop' ? <Monitor className="h-5 w-5" /> : <Smartphone className="h-5 w-5" />}
-          Install LingoForge App
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-3">
-        <p className="text-sm text-muted-foreground">Get the best experience by installing the app on your device.</p>
-        
-        {platform === 'ios' && (
-          <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3 space-y-1">
-            <p>🍎 <strong className="text-foreground">iPhone/iPad:</strong></p>
-            <p>1. Tap Share □↑ at bottom of Safari</p>
-            <p>2. Scroll → tap "Add to Home Screen"</p>
-            <p>3. Tap Add</p>
+    <Card className="border-primary/30 bg-gradient-to-br from-primary/10 to-background">
+      <CardContent className="p-4 space-y-3">
+        <div className="flex items-center gap-3">
+          {platform === 'desktop' ? (
+            <Monitor className="h-8 w-8 text-primary" />
+          ) : (
+            <Smartphone className="h-8 w-8 text-primary" />
+          )}
+          <div>
+            <p className="font-bold">Install LingoForge</p>
+            <p className="text-xs text-muted-foreground">
+              {platform === 'ios' && '🍎 iPhone / iPad'}
+              {platform === 'android' && '🤖 Android'}
+              {platform === 'desktop' && '💻 Desktop'}
+            </p>
           </div>
-        )}
+        </div>
 
-        <Button className="w-full" onClick={handleInstallClick}>
-          <Download className="mr-2 h-4 w-4" />
-          {deferredPrompt ? 'Install App Now' : platform === 'ios' ? 'How to Install on iPhone' : 'Install App'}
-        </Button>
+        {showIOSSteps ? (
+          <div className="bg-muted/50 rounded-xl p-3 space-y-2 text-sm">
+            {platform === 'ios' ? (
+              <>
+                <p className="font-bold text-primary">Install on iPhone/iPad:</p>
+                <p>1️⃣ Tap the <strong>Share</strong> button <span className="font-mono bg-muted px-1 rounded">□↑</span> at the bottom</p>
+                <p>2️⃣ Scroll down → tap <strong>"Add to Home Screen"</strong></p>
+                <p>3️⃣ Tap <strong>Add</strong> in top right</p>
+              </>
+            ) : (
+              <>
+                <p className="font-bold text-primary">Install on Android:</p>
+                <p>1️⃣ Tap <strong>⋮ menu</strong> in Chrome</p>
+                <p>2️⃣ Tap <strong>"Add to Home Screen"</strong> or <strong>"Install App"</strong></p>
+              </>
+            )}
+            <Button size="sm" variant="outline" className="w-full mt-2" onClick={() => setShowIOSSteps(false)}>
+              Got it ✓
+            </Button>
+          </div>
+        ) : (
+          <Button className="w-full" onClick={handleInstall}>
+            <Download className="mr-2 h-4 w-4" />
+            {deferredPrompt ? 'Install Now — Free' : 'How to Install'}
+          </Button>
+        )}
       </CardContent>
     </Card>
   );
