@@ -6,26 +6,23 @@ import { Button } from '@/components/ui/button';
 import { Download, Smartphone, Monitor } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
+type Platform = 'ios' | 'android' | 'desktop' | 'unknown';
+
 export function InstallPromptCard() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [platform, setPlatform] = useState<'ios' | 'android' | 'desktop' | 'unknown'>('unknown');
+  const [platform, setPlatform] = useState<Platform>('unknown');
   const [isInstalled, setIsInstalled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { toast } = useToast();
 
   useEffect(() => {
-    // Check if the app is already running in standalone mode.
-    if (typeof window !== 'undefined' && window.matchMedia('(display-mode: standalone)').matches) {
+    setMounted(true);
+
+    if (window.matchMedia('(display-mode: standalone)').matches) {
       setIsInstalled(true);
       return;
     }
 
-    const handler = (e: Event) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-    window.addEventListener('beforeinstallprompt', handler);
-    
-    // Determine the platform.
     const ua = navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream) {
       setPlatform('ios');
@@ -35,72 +32,69 @@ export function InstallPromptCard() {
       setPlatform('desktop');
     }
 
+    const handler = (e: Event) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handler);
     return () => window.removeEventListener('beforeinstallprompt', handler);
   }, []);
 
-  const handleInstallClick = () => {
-    // If we have a deferred prompt, use it. This is the best experience.
+  const handleInstallClick = async () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
-      // userChoice will resolve when the user responds to the prompt.
-      deferredPrompt.userChoice.then((choiceResult: { outcome: string }) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('User accepted the PWA installation prompt');
-          setIsInstalled(true); // Hide the card after successful installation
-        } else {
-          console.log('User dismissed the PWA installation prompt');
-        }
-        setDeferredPrompt(null); // The prompt can only be used once.
-      });
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') setIsInstalled(true);
+      setDeferredPrompt(null);
       return;
     }
 
-    // If no deferred prompt, show instructions via a toast notification.
     if (platform === 'ios') {
       toast({
-        title: "Install on iPhone/iPad 📱",
-        description: "Tap the Share button (□↑) at the bottom, then scroll down and tap 'Add to Home Screen'.",
-        duration: 10000,
+        title: "Install on iPhone/iPad 🍎",
+        description: "1. Tap Share button □↑ at bottom  2. Tap 'Add to Home Screen'  3. Tap Add",
+        duration: 12000,
       });
     } else if (platform === 'android') {
-       toast({
+      toast({
         title: "Install on Android 🤖",
-        description: "Tap the 3-dot menu (⋮) in Chrome, then tap 'Add to Home Screen' or 'Install App'.",
+        description: "1. Tap ⋮ menu in Chrome  2. Tap 'Add to Home Screen' or 'Install App'",
         duration: 10000,
       });
     } else {
-       toast({
+      toast({
         title: "Install on Desktop 💻",
-        description: "Click the install icon (⊕ or a computer icon) in your browser's address bar, or find 'Install LingoForge' in your browser menu.",
+        description: "Click the ⊕ install icon in your browser address bar, or Browser Menu → Install LingoForge",
         duration: 10000,
       });
     }
   };
 
-  // Don't show the card if the app is already installed or the platform is unknown.
-  if (isInstalled || platform === 'unknown') {
-    return null;
-  }
-  
-  const icon = {
-      ios: <Smartphone />,
-      android: <Smartphone />,
-      desktop: <Monitor />,
-      unknown: <Smartphone />
-  }[platform];
+  if (!mounted || isInstalled) return null;
 
   return (
-    <Card className="border-primary/20">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          {icon}
+    <Card className="border-primary/20 bg-primary/5">
+      <CardHeader className="pb-2">
+        <CardTitle className="flex items-center gap-2 text-base">
+          {platform === 'desktop' ? <Monitor className="h-5 w-5" /> : <Smartphone className="h-5 w-5" />}
           Install LingoForge App
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
-        <p className="text-sm text-muted-foreground">Get the best experience by installing the app on your device for quick access.</p>
-        <Button className="w-full" variant="outline" onClick={handleInstallClick}>
-            <Download className="mr-2 h-4 w-4" /> Install App
+      <CardContent className="space-y-3">
+        <p className="text-sm text-muted-foreground">Get the best experience by installing the app on your device.</p>
+        
+        {platform === 'ios' && (
+          <div className="text-xs text-muted-foreground bg-muted/50 rounded-lg p-3 space-y-1">
+            <p>🍎 <strong className="text-foreground">iPhone/iPad:</strong></p>
+            <p>1. Tap Share □↑ at bottom of Safari</p>
+            <p>2. Scroll → tap "Add to Home Screen"</p>
+            <p>3. Tap Add</p>
+          </div>
+        )}
+
+        <Button className="w-full" onClick={handleInstallClick}>
+          <Download className="mr-2 h-4 w-4" />
+          {deferredPrompt ? 'Install App Now' : platform === 'ios' ? 'How to Install on iPhone' : 'Install App'}
         </Button>
       </CardContent>
     </Card>
