@@ -26,7 +26,7 @@ export function InstallPromptCard() {
     const ua = navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream) {
       setPlatform('ios');
-    } else if (/android/.test(ua)) {
+    } else if (/android/i.test(ua) || /android/i.test(navigator.userAgent)) {
       setPlatform('android');
     } else {
       setPlatform('desktop');
