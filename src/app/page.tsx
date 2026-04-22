@@ -54,45 +54,25 @@ export default function LandingPage() {
   const [isMounted, setIsMounted] = useState(false);
   const [showLangGuide, setShowLangGuide] = useState(false);
   const [isFbBrowser, setIsFbBrowser] = useState(false);
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [isIOS, setIsIOS] = useState(false);
-  const [isAndroid, setIsAndroid] = useState(false);
-  const [showIOSGuide, setShowIOSGuide] = useState(false);
-
-  useEffect(() => {
-    const ua = navigator.userAgent.toLowerCase();
-    setIsIOS(/iphone|ipad|ipod/.test(ua));
-    setIsAndroid(/android/.test(ua));
-    const handler = (e: any) => { e.preventDefault(); setDeferredPrompt(e); };
-    window.addEventListener('beforeinstallprompt', handler);
-    return () => window.removeEventListener('beforeinstallprompt', handler);
-  }, []);
-
-  const handleAndroidInstall = async () => {
-    if (deferredPrompt) { deferredPrompt.prompt(); setDeferredPrompt(null); }
-  };
+  const router = useRouter();
 
   useEffect(() => {
     const ua = navigator.userAgent || '';
     if (ua.includes('FBAN') || ua.includes('FBAV') || ua.includes('Instagram')) {
       setIsFbBrowser(true);
     }
-  }, []);
-  const router = useRouter();
 
-  useEffect(() => {
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) {
       setDisplayLanguage(savedLang);
     }
     setIsMounted(true);
     
-    // Logic for the language guide popup
     const langGuideDismissed = localStorage.getItem('langGuideDismissed');
     if (!langGuideDismissed) {
         const timer = setTimeout(() => {
             setShowLangGuide(true);
-        }, 2500); // Show after 2.5 seconds
+        }, 2500);
         return () => clearTimeout(timer);
     }
   }, []);
@@ -211,19 +191,6 @@ export default function LandingPage() {
               <div className="mt-8 flex flex-col items-center justify-center gap-4">
                   <Button size="lg" className="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold" onClick={handleStartJourney}>{t.startBtn}</Button>
               </div>
-                <div className="mt-3 w-full max-w-sm mx-auto text-center">
-                  {deferredPrompt ? (
-                    <button onClick={handleAndroidInstall} className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-xl border border-cyan-400/40 bg-cyan-900/20 text-cyan-300 text-sm font-semibold">
-                      📲 Install App — Free
-                    </button>
-                  ) : isIOS ? (
-                    <p className="text-xs text-slate-400">🍎 Tap Share □↑ then "Add to Home Screen"</p>
-                  ) : isAndroid ? (
-                    <p className="text-xs text-slate-400">🤖 Tap ⋮ menu then "Add to Home Screen"</p>
-                  ) : (
-                    <p className="text-xs text-slate-400">💻 Click ⊕ in address bar to install</p>
-                  )}
-                </div>
             </div>
           </div>
         </section>

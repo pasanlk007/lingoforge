@@ -13,7 +13,7 @@ export function InstallPromptCard() {
   const { toast } = useToast();
 
   useEffect(() => {
-    // Fast detection by checking media query first.
+    // Check if the app is already running in standalone mode.
     if (typeof window !== 'undefined' && window.matchMedia('(display-mode: standalone)').matches) {
       setIsInstalled(true);
       return;
@@ -25,7 +25,7 @@ export function InstallPromptCard() {
     };
     window.addEventListener('beforeinstallprompt', handler);
     
-    // Fast platform detection
+    // Determine the platform.
     const ua = navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod/.test(ua) && !(window as any).MSStream) {
       setPlatform('ios');
@@ -42,10 +42,20 @@ export function InstallPromptCard() {
     // If we have a deferred prompt, use it. This is the best experience.
     if (deferredPrompt) {
       deferredPrompt.prompt();
+      // userChoice will resolve when the user responds to the prompt.
+      deferredPrompt.userChoice.then((choiceResult: { outcome: string }) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the PWA installation prompt');
+          setIsInstalled(true); // Hide the card after successful installation
+        } else {
+          console.log('User dismissed the PWA installation prompt');
+        }
+        setDeferredPrompt(null); // The prompt can only be used once.
+      });
       return;
     }
 
-    // Otherwise, show instructions in a toast.
+    // If no deferred prompt, show instructions via a toast notification.
     if (platform === 'ios') {
       toast({
         title: "Install on iPhone/iPad 📱",
@@ -67,7 +77,7 @@ export function InstallPromptCard() {
     }
   };
 
-  // Don't show the card if the app is already installed or platform is unknown.
+  // Don't show the card if the app is already installed or the platform is unknown.
   if (isInstalled || platform === 'unknown') {
     return null;
   }
