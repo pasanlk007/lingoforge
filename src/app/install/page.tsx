@@ -18,17 +18,30 @@ export default function InstallPage() {
   const [platform, setPlatform] = useState<Platform>('android');
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [installed, setInstalled] = useState(false);
+  const [checking, setChecking] = useState(true);
 
   useEffect(() => {
     setPlatform(detect());
-    if (window.matchMedia('(display-mode: standalone)').matches) setInstalled(true);
-    const handler = (e: any) => { e.preventDefault(); setDeferredPrompt(e); };
-    
-    // Auto reload once to trigger beforeinstallprompt
-      sessionStorage.setItem('install_reloaded', '1');
-      setTimeout(() => window.location.reload(), 500);
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      setInstalled(true);
+      setChecking(false);
+      return;
     }
+
+    const handler = (e: any) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setChecking(false);
+    };
     window.addEventListener('beforeinstallprompt', handler);
+
+    if (!sessionStorage.getItem('install_reloaded')) {
+      sessionStorage.setItem('install_reloaded', '1');
+      setTimeout(() => window.location.reload(), 800);
+    } else {
+      setTimeout(() => setChecking(false), 1500);
+    }
+
     return () => window.removeEventListener('beforeinstallprompt', handler);
   }, []);
 
@@ -58,6 +71,11 @@ export default function InstallPage() {
             <p className="text-xl font-bold">App Installed!</p>
             <Link href="/dashboard" className="block w-full py-3 rounded-xl bg-cyan-500 text-white font-bold text-center">Open LingoForge</Link>
           </div>
+        ) : checking ? (
+          <div className="text-center space-y-3">
+            <div className="h-8 w-8 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin mx-auto" />
+            <p className="text-slate-400 text-sm">Checking your device...</p>
+          </div>
         ) : (
           <div className="space-y-4">
             <div className="grid grid-cols-4 gap-1 bg-slate-800 rounded-xl p-1">
@@ -76,9 +94,9 @@ export default function InstallPage() {
                 ) : (
                   <div className="space-y-2 text-sm">
                     <p className="text-slate-400">Open in Chrome browser</p>
-                    <p>1 Tap menu at top right</p>
-                    <p>2 Tap Add to Home Screen</p>
-                    <p>3 Tap Install</p>
+                    <p>1️⃣ Tap <strong>⋮</strong> menu (top right)</p>
+                    <p>2️⃣ Tap <strong>Add to Home Screen</strong></p>
+                    <p>3️⃣ Tap <strong>Install</strong></p>
                   </div>
                 )}
               </div>
@@ -89,9 +107,9 @@ export default function InstallPage() {
                 <p className="font-bold text-lg">🍎 iPhone / iPad</p>
                 <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-3 text-yellow-300 text-xs">Must use Safari browser</div>
                 <div className="space-y-2 text-sm">
-                  <p>1 Tap Share button at bottom</p>
-                  <p>2 Tap Add to Home Screen</p>
-                  <p>3 Tap Add</p>
+                  <p>1️⃣ Tap Share button <strong>□↑</strong> at bottom</p>
+                  <p>2️⃣ Tap <strong>Add to Home Screen</strong></p>
+                  <p>3️⃣ Tap <strong>Add</strong></p>
                 </div>
               </div>
             )}
@@ -103,9 +121,9 @@ export default function InstallPage() {
                   <button onClick={handleInstall} className="w-full py-3 rounded-xl bg-green-500 text-white font-black">Install Now</button>
                 ) : (
                   <div className="space-y-2 text-sm">
-                    <p>1 Open in Chrome or Edge</p>
-                    <p>2 Click install icon in address bar</p>
-                    <p>3 Click Install</p>
+                    <p>1️⃣ Open in Chrome or Edge</p>
+                    <p>2️⃣ Click <strong>⊕</strong> install icon in address bar</p>
+                    <p>3️⃣ Click <strong>Install</strong></p>
                   </div>
                 )}
               </div>
@@ -118,9 +136,9 @@ export default function InstallPage() {
                   <button onClick={handleInstall} className="w-full py-3 rounded-xl bg-green-500 text-white font-black">Install Now</button>
                 ) : (
                   <div className="space-y-2 text-sm">
-                    <p>1 Open in Chrome</p>
-                    <p>2 Click install icon in address bar</p>
-                    <p>3 Click Install LingoForge</p>
+                    <p>1️⃣ Open in Chrome</p>
+                    <p>2️⃣ Click <strong>⊕</strong> in address bar</p>
+                    <p>3️⃣ Click <strong>Install LingoForge</strong></p>
                   </div>
                 )}
               </div>
