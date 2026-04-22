@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Smartphone, Monitor, Download } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 type Platform = 'ios' | 'android' | 'desktop';
 
@@ -19,6 +20,7 @@ export function InstallPromptCard() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [installed, setInstalled] = useState(false);
   const [showIOSSteps, setShowIOSSteps] = useState(false);
+  const router = useRouter();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -46,12 +48,7 @@ export function InstallPromptCard() {
       setDeferredPrompt(null);
       return;
     }
-    if (platform === 'ios') {
-      setShowIOSSteps(true);
-      return;
-    }
-    // Android without prompt - show manual steps
-    setShowIOSSteps(true);
+    router.push('/install');
   };
 
   if (!mounted || installed) return null;
