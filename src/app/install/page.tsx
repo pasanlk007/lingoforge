@@ -35,12 +35,12 @@ export default function InstallPage() {
     };
     window.addEventListener('beforeinstallprompt', handler);
 
+    setTimeout(() => setChecking(false), 500);
     if (!sessionStorage.getItem('install_reloaded')) {
       sessionStorage.setItem('install_reloaded', '1');
-      setTimeout(() => window.location.reload(), 800);
-    } else {
-      setTimeout(() => setChecking(false), 1500);
+      setTimeout(() => window.location.reload(), 2500);
     }
+
 
     return () => window.removeEventListener('beforeinstallprompt', handler);
   }, []);
