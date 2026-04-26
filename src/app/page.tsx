@@ -61,7 +61,7 @@ export default function LandingPage() {
     if (ua.includes('FBAN') || ua.includes('FBAV') || ua.includes('Instagram')) {
       setIsFbBrowser(true);
     }
-
+    
     const savedLang = localStorage.getItem('nativeLanguage') as keyof typeof translations;
     if (savedLang && translations[savedLang]) {
       setDisplayLanguage(savedLang);
