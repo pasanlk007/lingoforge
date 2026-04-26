@@ -48,7 +48,7 @@ export function InstallPromptCard() {
       }
       setDeferredPrompt(null);
     } else {
-      router.push("/install");
+      window.location.href = '/install';
     }
   };
 
