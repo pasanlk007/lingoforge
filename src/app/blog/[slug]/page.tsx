@@ -151,6 +151,238 @@ Our app is built specifically for people like you:
 [Start Your 30-Day Romanian Journey →](https://lingoforge.app/login)
     `,
   },
+  
+  'german-for-nepalese-workers': {
+    title: 'German Language Guide for Nepalese Workers in Germany',
+    titleSi: 'जर्मनीमा काम गर्ने नेपाली कामदारहरूका लागि जर्मन भाषा गाइड',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['German', 'Nepali', 'Migrant Workers', 'Germany'],
+    content: `
+## Why Nepalese Workers Choose Germany
+
+Germany is one of the top destinations for Nepalese migrant workers, offering excellent wages and working conditions. Learning German is essential for success.
+
+## Essential German Phrases
+
+**Greetings:**
+- Guten Morgen - Good morning
+- Guten Tag - Good day
+- Danke - Thank you
+- Bitte - Please / You're welcome
+
+**At Work:**
+- Ich verstehe nicht - I don't understand
+- Können Sie das wiederholen? - Can you repeat that?
+- Wo ist die Toilette? - Where is the toilet?
+- Hilfe! - Help!
+
+**Shopping:**
+- Wie viel kostet das? - How much does it cost?
+- Zu teuer - Too expensive
+- Ich möchte kaufen - I want to buy
+
+## German Language Tips for Nepalese Speakers
+
+1. German grammar is complex but patterns are learnable
+2. Focus on survival phrases first
+3. German pronunciation is very consistent once you learn the rules
+4. Practice with native speakers whenever possible
+
+## Start Learning with LingoForge
+
+LingoForge offers German lessons in Nepali language:
+✅ Survival German phrases
+✅ Workplace vocabulary
+✅ Numbers and directions
+✅ Week 1 FREE
+
+[Start Learning German in Nepali →](https://lingoforge.app/login)
+    `,
+  },
+  'hebrew-for-indian-caregivers': {
+    title: 'Hebrew Language for Indian Caregivers Working in Israel',
+    titleSi: 'इज़राइल में काम करने वाले भारतीय देखभालकर्ताओं के लिए हिब्रू भाषा',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['Hebrew', 'Hindi', 'Caregivers', 'Israel'],
+    content: `
+## Indian Caregivers in Israel
+
+Thousands of Indian workers, particularly from Kerala and other states, work as caregivers in Israel. Learning basic Hebrew can significantly improve your work experience.
+
+## Essential Hebrew Phrases for Caregivers
+
+**Basic Communication:**
+- Shalom - Hello / Peace
+- Toda - Thank you
+- Bevakasha - Please
+- Ken / Lo - Yes / No
+
+**Caregiving Vocabulary:**
+- Ezehu boleh? - Are you in pain?
+- Tishte mayim - Drink water
+- Zman lekachat tavot - Time to take medicine
+- Ani rotze laazor - I want to help
+
+**Emergency Phrases:**
+- Kare le ambulans! - Call an ambulance!
+- Ani lo mevin - I don't understand
+- Doctor! - Doctor!
+
+## Why LingoForge for Hebrew Learners
+
+Our Hebrew course is designed for South Asian caregivers:
+✅ Caregiver-specific vocabulary
+✅ Medical and emergency phrases
+✅ Available in Hindi, Bengali, and more
+✅ First week FREE
+
+[Start Learning Hebrew Today →](https://lingoforge.app/login)
+    `,
+  },
+  'french-for-bangladeshi-workers': {
+    title: 'French Language Guide for Bangladeshi Workers in France',
+    titleSi: 'ফ্রান্সে কর্মরত বাংলাদেশী শ্রমিকদের জন্য ফরাসি ভাষা গাইড',
+    date: '2026-04-14',
+    readTime: '6 min',
+    tags: ['French', 'Bengali', 'Bangladesh', 'France'],
+    content: `
+## Bangladeshi Workers in France
+
+France has a growing community of Bangladeshi workers in sectors like hospitality, construction, and retail. French is essential for daily life and career advancement.
+
+## Essential French Phrases
+
+**Greetings:**
+- Bonjour - Good day
+- Bonsoir - Good evening
+- Merci - Thank you
+- S'il vous plaît - Please
+
+**At Work:**
+- Je ne comprends pas - I don't understand
+- Pouvez-vous répéter? - Can you repeat?
+- Où sont les toilettes? - Where is the toilet?
+- Au secours! - Help!
+
+**Daily Life:**
+- Combien ça coûte? - How much does it cost?
+- C'est trop cher - It's too expensive
+- Je voudrais acheter - I would like to buy
+
+## French Learning Tips for Bengali Speakers
+
+French pronunciation is very different from Bengali, but with practice it becomes natural:
+- Pay attention to nasal sounds
+- Silent letters are common
+- Liaison (linking words) is important
+
+## LingoForge French Course
+
+Learn French in Bengali with LingoForge:
+✅ Bengali-language explanations
+✅ Phonetic pronunciation guide
+✅ Survival and workplace French
+✅ Week 1 completely FREE
+
+[Start Learning French in Bengali →](https://lingoforge.app/login)
+    `,
+  },
+  'japanese-for-migrant-workers': {
+    title: 'Japanese Language Basics for Asian Migrant Workers in Japan',
+    titleSi: 'जापान में काम करने वाले एशियाई प्रवासी मजदूरों के लिए जापानी भाषा',
+    date: '2026-04-14',
+    readTime: '7 min',
+    tags: ['Japanese', 'Migrant Workers', 'Japan', 'Technical Intern'],
+    content: `
+## Working in Japan: The Language Challenge
+
+Japan's Technical Intern Training Program (TITP) and Specified Skilled Worker (SSW) programs attract thousands of Asian workers annually. Japanese is crucial for success.
+
+## Essential Japanese Phrases
+
+**Basic Greetings:**
+- Ohayou gozaimasu - Good morning
+- Arigatou gozaimasu - Thank you very much
+- Sumimasen - Excuse me / Sorry
+- Wakarimashita - I understand
+
+**At Work:**
+- Wakarimasen - I don't understand
+- Mou ichido onegaishimasu - Please say it again
+- Toire wa doko desu ka? - Where is the toilet?
+- Tasukete! - Help!
+
+**Daily Survival:**
+- Ikura desu ka? - How much is it?
+- Takai desu - It's expensive
+- Kaimasu - I'll buy it
+
+## Japanese Writing Systems
+
+Japanese has three writing systems:
+1. Hiragana - 46 basic characters
+2. Katakana - For foreign words
+3. Kanji - Chinese-origin characters
+
+Start with Hiragana - LingoForge teaches the alphabet step by step!
+
+## LingoForge Japanese Course
+
+✅ Hiragana and Katakana alphabet
+✅ Workplace survival Japanese
+✅ Available in Hindi, Bengali, Nepali, Sinhala, Urdu
+✅ Week 1 FREE
+
+[Start Learning Japanese Today →](https://lingoforge.app/login)
+    `,
+  },
+  'korean-for-asian-workers': {
+    title: 'Korean Language Guide for Asian Workers in South Korea',
+    titleSi: 'दक्षिण कोरिया में काम करने वाले एशियाई श्रमिकों के लिए कोरियाई भाषा',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['Korean', 'South Korea', 'Migrant Workers', 'EPS-TOPIK'],
+    content: `
+## Working in South Korea
+
+South Korea's Employment Permit System (EPS) allows Asian workers to work legally. Passing the EPS-TOPIK Korean language test is required.
+
+## Essential Korean Phrases
+
+**Greetings:**
+- Annyeonghaseyo - Hello
+- Kamsahamnida - Thank you
+- Juseyo - Please give me
+- Ne / Aniyo - Yes / No
+
+**At Work:**
+- Moreugesseumnida - I don't know
+- Dasi malsseum haejuseyo - Please say it again
+- Hwajangshiri eodi isseoyo? - Where is the restroom?
+- Dowa juseyo! - Please help me!
+
+## EPS-TOPIK Preparation
+
+The Korean language test for workers covers:
+- Basic conversation
+- Workplace safety vocabulary
+- Numbers and measurements
+- Instructions understanding
+
+## LingoForge Korean Course
+
+Prepare for EPS-TOPIK with LingoForge:
+✅ Korean alphabet (Hangul) step by step
+✅ Workplace Korean vocabulary
+✅ EPS-TOPIK focused content
+✅ Available in multiple Asian languages
+✅ Week 1 FREE
+
+[Start Learning Korean Today →](https://lingoforge.app/login)
+    `,
+  },
   'migrant-worker-language-guide': {
     title: 'Complete Language Guide for Migrant Workers Going Abroad',
     titleSi: 'විදේශ රැකියාව සඳහා සම්පූර්ණ භාෂා guide',
