@@ -30,6 +30,43 @@ const articles = [
     tags: ['Romanian', '30 Days', 'Learning Plan'],
   },
 
+
+  {
+    slug: 'learn-romanian-sinhala-speakers',
+    title: 'සිංහලෙන් රෝමේනියානු ඉගෙනගන්නේ කෙසේද',
+    titleEn: 'Learn Romanian for Sinhala Speakers - Complete Guide',
+    excerpt: 'සිංහල භාෂාවෙන් රෝමේනියානු ඉගෙනගන්නේ කෙසේද? Step by step guide for Sri Lankan workers in Romania.',
+    date: '2026-04-14',
+    readTime: '6 min',
+    tags: ['Romanian', 'Sinhala', 'Sri Lanka', 'Learn Romanian'],
+  },
+  {
+    slug: 'sinhala-german-course',
+    title: 'සිංහලෙන් ජර්මන් ඉගෙනගන්නේ කෙසේද',
+    titleEn: 'Learn German for Sinhala Speakers - Free Course',
+    excerpt: 'ජර්මනියේ වැඩ කරන ශ්‍රී ලාංකිකයන් සඳහා සිංහලෙන් ජර්මන් ඉගෙනීමේ මාර්ගෝපදේශය.',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['German', 'Sinhala', 'Germany', 'Learn German'],
+  },
+  {
+    slug: 'sinhala-italian-course',
+    title: 'සිංහලෙන් ඉතාලි ඉගෙන ගන්න',
+    titleEn: 'Learn Italian in Sinhala - Language Course for Sri Lankans',
+    excerpt: 'ඉතාලියේ ජීවත් වෙමින් ඉතාලි භාෂාව සිංහලෙන් ඉගෙනගන්නේ කෙසේද? Sri Lankan workers guide.',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['Italian', 'Sinhala', 'Italy', 'Learn Italian'],
+  },
+  {
+    slug: 'bashaguru-language-app-review',
+    title: 'BhashaGuru / LingoForge - Migrant Workers Language App Review',
+    titleEn: 'BhashaGuru LingoForge App Review - Best Language App for Sri Lankans Abroad',
+    excerpt: 'Complete review of LingoForge/BhashaGuru language learning app for Sri Lankan, Indian, Bangladeshi migrant workers.',
+    date: '2026-04-14',
+    readTime: '4 min',
+    tags: ['BhashaGuru', 'LingoForge', 'App Review', 'Language App'],
+  },
   {
     slug: 'german-for-nepalese-workers',
     title: 'German Language Guide for Nepalese Workers in Germany',

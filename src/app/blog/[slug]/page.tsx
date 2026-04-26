@@ -152,6 +152,208 @@ Our app is built specifically for people like you:
     `,
   },
   
+  
+  'learn-romanian-sinhala-speakers': {
+    title: 'Learn Romanian for Sinhala Speakers - Complete Guide',
+    titleSi: 'සිංහලෙන් රෝමේනියානු ඉගෙනගන්නේ කෙසේද - සම්පූර්ණ මාර්ගෝපදේශය',
+    date: '2026-04-14',
+    readTime: '6 min',
+    tags: ['Romanian', 'Sinhala', 'Sri Lanka', 'Learn Romanian'],
+    content: `
+## සිංහලෙන් රෝමේනියානු ඉගෙනගන්නේ කෙසේද?
+
+රෝමේනියාවේ ජීවත් වන ශ්‍රී ලාංකිකයන් 100,000කට අධික සංඛ්‍යාවක් සිටිති. රෝමේනියානු භාෂාව ඉගෙනීම ඔබගේ ජීවිතය සම්පූර්ණයෙන් වෙනස් කළ හැකිය.
+
+## Why Learn Romanian? | රෝමේනියානු ඉගෙනීමේ වැදගත්කම
+
+Learning Romanian helps you:
+- Communicate with your employer
+- Shop independently at local markets  
+- Make Romanian friends
+- Get better job opportunities
+- Understand your rights as a worker
+
+## Basic Romanian Phrases in Sinhala
+
+**Greetings | ආචාර:**
+- Bună ziua (බූනා ශියූවා) = Good day | සුබ දිනයක්
+- Mulțumesc (මුල්ෂූමෙස්ක්) = Thank you | ස්තූතියි
+- Cu plăcere (කූ ප්ලාෂෙරේ) = You're welcome | කමක් නෑ
+- Scuze (ස්කූශේ) = Excuse me | සමාවෙන්න
+
+**Numbers | ගණන්:**
+- Unu, Doi, Trei, Patru, Cinci (1,2,3,4,5)
+- Zece = 10 | Douăzeci = 20 | O sută = 100
+
+**Shopping | සාප්පු:**
+- Cât costă? (කාට් කෝස්ටා?) = How much? | කීයද?
+- Prea scump = Too expensive | ගොඩක් දෙනවා
+- Vreau asta = I want this | මේක ඕන
+
+## LingoForge ෙදෙස් රෝමේනියානු ඉගෙනීම
+
+LingoForge app එකෙන් සිංහලෙන් රෝමේනියානු ඉගෙනීමේ ප්‍රයෝජන:
+
+✅ සිංහල භාෂාවෙන් පැහැදිලි කිරීම්
+✅ Phonetic pronunciation - හරියට කියවන්නේ කෙසේද
+✅ Survival phrases - දිනෙන් දිනෙ ජීවිතයට
+✅ Workplace Romanian - රැකියා ස්ථානයේ
+✅ පළමු සතිය නොමිලේ
+
+[LingoForge ෙදෙස් දැන්ම ආරම්භ කරන්න →](https://lingoforge.app/login)
+
+## රෝමේනියානු ඉගෙනීමේ Tips
+
+1. **දිනකට 10 minutes** - නිතිපතා ඉගෙනීම වැදගත්
+2. **Survival phrases** - පළමුව ජීවිතයට අවශ්‍ය දේ
+3. **Romanians සමග කතා කරන්න** - නොකියාම ඉගෙන ගන්න
+4. **App එක use කරන්න** - commute time ෙදෙස්
+
+## Search Keywords
+
+learn Romanian in Sinhala | සිංහලෙන් රෝමේනියානු | Romanian for Sri Lankans | රෝමේනියාවේ ශ්‍රී ලාංකිකයන් | LingoForge Romanian | BhashaGuru Romanian
+    `,
+  },
+  'sinhala-german-course': {
+    title: 'Learn German for Sinhala Speakers - Free Course',
+    titleSi: 'සිංහලෙන් ජර්මන් ඉගෙනගන්නේ කෙසේද',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['German', 'Sinhala', 'Germany', 'Learn German'],
+    content: `
+## සිංහලෙන් ජර්මන් ඉගෙනගන්නේ කෙසේද?
+
+ජර්මනිය යුරෝපයේ ශ්‍රී ලාංකික ශ්‍රමිකයන්ට ජනප්‍රිය ගමනාන්තයකි. ජර්මන් භාෂාව ඉගෙනීම ඔබගේ රැකියා ජීවිතය සහ දෛනික ජීවිතය පහසු කරයි.
+
+## Essential German Phrases | ජර්මන් ප්‍රධාන phrases
+
+**Greetings | ආචාර:**
+- Guten Morgen (ගූටෙන් මෝර්ගෙන්) = Good morning | සුභ උදෑසනක්
+- Danke (ඩාන්කේ) = Thank you | ස්තූතියි
+- Bitte (බිටේ) = Please | කරුණාකර
+- Entschuldigung (එන්ෂූල්ඩිගූං) = Excuse me | සමාවෙන්න
+
+**At Work | රැකියා ස්ථානයේ:**
+- Ich verstehe nicht = I don't understand | මට තේරෙන්නෙ නෑ
+- Können Sie helfen? = Can you help? | උදව් කරන්න පුළුවන්ද?
+- Wo ist...? = Where is...? | ...කොහෙද?
+
+## LingoForge ෙදෙස් ජර්මන් ඉගෙනීම
+
+✅ සිංහලෙන් ජර්මන් grammar පැහැදිලි කිරීම
+✅ Survival German phrases
+✅ Workplace vocabulary
+✅ පළමු සතිය නොමිලේ
+
+[සිංහලෙන් ජර්මන් ඉගෙනීම ආරම්භ කරන්න →](https://lingoforge.app/login)
+
+## Search Keywords
+
+learn German in Sinhala | සිංහලෙන් ජර්මන් | German for Sri Lankans | ජර්මනියේ ශ්‍රී ලාංකිකයන් | LingoForge German
+    `,
+  },
+  'sinhala-italian-course': {
+    title: 'Learn Italian in Sinhala - For Sri Lankans in Italy',
+    titleSi: 'සිංහලෙන් ඉතාලි ඉගෙන ගන්න',
+    date: '2026-04-14',
+    readTime: '5 min',
+    tags: ['Italian', 'Sinhala', 'Italy', 'Learn Italian'],
+    content: `
+## සිංහලෙන් ඉතාලි ඉගෙන ගන්න
+
+ඉතාලිය ශ්‍රී ලාංකික ශ්‍රමිකයන් ගොඩාක් ජීවත් වන රටකි. ඉතාලි භාෂාව ඉගෙනීම ඔබගේ ජීවිතය පහසු කරයි.
+
+## ඉතාලි ප්‍රධාන phrases
+
+**ආචාර:**
+- Buongiorno (බ්වොනිජෝර්නෝ) = Good day | සුභ දිනයක්
+- Grazie (ග්‍රාශිය) = Thank you | ස්තූතියි
+- Prego (ප්‍රේගෝ) = You're welcome | කමක් නෑ
+- Scusi (ස්කූශි) = Excuse me | සමාවෙන්න
+
+**Shopping | සාප්පු:**
+- Quanto costa? = How much? | කීයද?
+- Troppo caro = Too expensive | ගොඩක් දෙනවා
+- Vorrei comprare = I want to buy | මිලදී ගන්න ඕන
+
+**Emergency | හදිසි:**
+- Aiuto! = Help! | උදව්!
+- Chiama un medico! = Call a doctor! | වෛද්‍යවරයෙකු කෙනෙකු කතා කරන්න!
+
+## LingoForge ෙදෙස් ඉතාලි ඉගෙනීම
+
+✅ සිංහලෙන් ඉතාලි
+✅ Survival phrases
+✅ දෛනික ජීවිතය සඳහා
+✅ පළමු සතිය නොමිලේ
+
+[සිංහලෙන් ඉතාලි ඉගෙනීම ආරම්භ කරන්න →](https://lingoforge.app/login)
+
+## Search Keywords
+
+සිංහලෙන් ඉතාලි | learn Italian in Sinhala | Italian for Sri Lankans | ඉතාලියේ ශ්‍රී ලාංකිකයන් | LingoForge Italian | BhashaGuru Italian
+    `,
+  },
+  'bashaguru-language-app-review': {
+    title: 'BhashaGuru / LingoForge - Best Language App for Asian Migrant Workers',
+    titleSi: 'BhashaGuru LingoForge - ශ්‍රී ලාංකිකයන් සඳහා හොඳම භාෂා app',
+    date: '2026-04-14',
+    readTime: '4 min',
+    tags: ['BhashaGuru', 'LingoForge', 'App Review', 'Language App'],
+    content: `
+## What is LingoForge / BhashaGuru?
+
+LingoForge (also known as BhashaGuru) is the world's first language learning app specifically designed for Asian migrant workers. Available at lingoforge.app and bashaguru.com.
+
+## Who is it for?
+
+LingoForge is designed for:
+- Sri Lankan workers in Romania, Germany, France, Italy
+- Indian workers in Israel, Japan, Korea, Europe
+- Bangladeshi workers in Europe and Middle East
+- Nepalese workers in Japan, Korea, Europe
+- Pakistani workers in Middle East and Europe
+
+## Native Languages Supported
+
+✅ Sinhala (සිංහල)
+✅ Hindi (हिंदी)
+✅ Bengali (বাংলা)
+✅ Urdu (اردو)
+✅ Nepali (नेपाली)
+✅ English
+
+## Target Languages Available
+
+🇷🇴 Romanian | 🇩🇪 German | ��🇷 French | 🇮🇹 Italian | 🇵🇱 Polish | 🇬🇷 Greek | 🇮🇱 Hebrew | 🇯🇵 Japanese | 🇰🇷 Korean | and 12 more!
+
+## Features
+
+- **Survival Path**: Daily life phrases and conversations
+- **Alphabet Path**: Learn to read and write
+- **Numbers Path**: Counting and calculations
+- **Pro Path**: AI-powered advanced lessons and citizenship preparation
+
+## Pricing
+
+- Week 1: **FREE** - No credit card required
+- Weekly Plan: Affordable weekly subscription
+- Course Plan: Full language course
+- Lifetime Pro: All languages, all features forever
+
+## Where to Download
+
+- Web: [lingoforge.app](https://lingoforge.app)
+- Web: [bashaguru.com](https://bashaguru.com)
+- Android: Google Play Store (search BhashaGuru)
+
+[Start Learning Free Today →](https://lingoforge.app/login)
+
+## Search Keywords
+
+LingoForge review | BhashaGuru review | language app for Sri Lankans | language app for migrant workers | learn language in Sinhala | සිංහලෙන් භාෂා ඉගෙනීම | best language app for Asians abroad
+    `,
+  },
   'german-for-nepalese-workers': {
     title: 'German Language Guide for Nepalese Workers in Germany',
     titleSi: 'जर्मनीमा काम गर्ने नेपाली कामदारहरूका लागि जर्मन भाषा गाइड',
