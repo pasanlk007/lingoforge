@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Smartphone, Monitor, Download } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 type Platform = 'ios' | 'android' | 'desktop';
 
@@ -47,7 +48,7 @@ export function InstallPromptCard() {
       }
       setDeferredPrompt(null);
     } else {
-      setShowInstructions(true);
+      router.push("/install");
     }
   };
 
