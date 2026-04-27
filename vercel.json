@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "bashaguru.com"}],
+      "destination": "https://lingoforge.app/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [{"type": "host", "value": "www.bashaguru.com"}],
+      "destination": "https://lingoforge.app/$1",
+      "permanent": true
+    }
+  ]
+}
