@@ -39,6 +39,17 @@ export default function AboutPage() {
             <div><p className="text-3xl font-bold text-primary">6</p><p className="text-sm text-muted-foreground">Native Languages</p></div>
             <div><p className="text-3xl font-bold text-primary">Free</p><p className="text-sm text-muted-foreground">Week 1 Always</p></div>
           </div>
+          <div className="bg-card border border-border rounded-xl p-6 my-4">
+            <div className="flex items-start gap-4">
+              <div className="text-5xl">👨‍💻</div>
+              <div>
+                <h2 className="text-xl font-bold text-foreground mb-1">Pasan Lankathilaka</h2>
+                <p className="text-sm text-primary mb-3">Founder and Developer · Sri Lanka 🇱🇰 → Romania 🇷🇴</p>
+                <p className="text-muted-foreground leading-7 italic mb-3">I moved to Romania from Sri Lanka in search of better opportunities. Like thousands of other Asian migrants, I struggled with the language barrier every single day. I searched for language apps, but none were built for people like me. So I built LingoForge — the app I wish existed when I first arrived.</p>
+                <p className="text-muted-foreground text-sm">This is why LingoForge focuses on real-world language learning for migrant workers. <a href="/blog" className="text-primary underline">Explore our learning guides →</a></p>
+              </div>
+            </div>
+          </div>
           <div className="text-center pt-8">
             <Link href="/login" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold">Start Learning Free →</Link>
           </div>
