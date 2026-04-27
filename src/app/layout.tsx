@@ -32,7 +32,30 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="LingoForge" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.svg" />
-      </head>
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "LingoForge",
+          "alternateName": "BhashaGuru",
+          "url": "https://lingoforge.app",
+          "logo": "https://lingoforge.app/icons/icon-512x512.png",
+          "description": "Language learning platform for Asian migrant workers. Learn Romanian, German, French and 20+ languages in Sinhala, Hindi, Bengali, Urdu and Nepali.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+94768680133",
+            "contactType": "customer support",
+            "availableLanguage": ["Sinhala", "English", "Hindi", "Bengali"]
+          },
+          "sameAs": [
+            "https://bashaguru.com",
+            "https://play.google.com/store/apps/details?id=com.lingoforge.app"
+          ]
+        })}}
+      />
+    </head>
       <body>
         <FirebaseClientProvider>
           <RevenueCatProvider>
