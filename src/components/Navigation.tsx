@@ -99,6 +99,16 @@ export function Navigation() {
             </Link>
             <Link
               href="/pricing"
+              />
+              <Link
+              href="/blog"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+              Blog
+            </Link>
+            <Link
+              href="/about"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Pricing
@@ -182,6 +192,16 @@ export function Navigation() {
                     </Button>
                     <Button variant="outline" asChild>
                       <Link href="/pricing" onClick={() => setMenuOpen(false)}>
+                        Pricing
+                      </Link>
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <Link href="/blog" onClick={() => setMenuOpen(false)}>
+                        Blog
+                      </Link>
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <Link href="/about" onClick={() => setMenuOpen(false)}>
                         Pricing
                       </Link>
                     </Button>
