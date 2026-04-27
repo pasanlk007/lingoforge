@@ -34,6 +34,11 @@ export default function AboutPage() {
             <p>📧 <a href="mailto:support@lingoforge.app" className="text-primary">support@lingoforge.app</a></p>
             <p>💬 WhatsApp: <a href="https://wa.me/94768680133" className="text-primary">+94 768 680 133</a></p>
           </div>
+          <div className="grid grid-cols-3 gap-4 py-8 border-y border-border my-8 text-center">
+            <div><p className="text-3xl font-bold text-primary">21</p><p className="text-sm text-muted-foreground">Target Languages</p></div>
+            <div><p className="text-3xl font-bold text-primary">6</p><p className="text-sm text-muted-foreground">Native Languages</p></div>
+            <div><p className="text-3xl font-bold text-primary">Free</p><p className="text-sm text-muted-foreground">Week 1 Always</p></div>
+          </div>
           <div className="text-center pt-8">
             <Link href="/login" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold">Start Learning Free →</Link>
           </div>
