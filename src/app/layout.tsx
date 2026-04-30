@@ -1,4 +1,5 @@
 import "./globals.css";
+import { BottomNav } from "@/components/BottomNav";
 import { FirebaseClientProvider } from "@/firebase/client-provider";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
 import { RevenueCatProvider } from "@/components/RevenueCatProvider";
@@ -62,6 +63,7 @@ export default function RootLayout({
             <PWAInstallPrompt />
             {children}
           </RevenueCatProvider>
+        <BottomNav />
         </FirebaseClientProvider>
         <script dangerouslySetInnerHTML={{
           __html: `
