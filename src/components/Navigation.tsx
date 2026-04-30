@@ -202,7 +202,7 @@ export function Navigation() {
                     </Button>
                     <Button variant="outline" asChild>
                       <Link href="/about" onClick={() => setMenuOpen(false)}>
-                        Pricing
+                        About
                       </Link>
                     </Button>
                   </nav>
