@@ -416,17 +416,17 @@ function DashboardContent({ user }: { user: User }) {
         </div>
       </main>
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">
-        <div className="grid h-16 grid-cols-5">
+        <div className="grid h-14 grid-cols-6">
           {bottomNavItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
               className={cn(
-                "flex flex-col items-center justify-center gap-1 text-[10px] font-bold uppercase tracking-wider",
+                "flex flex-col items-center justify-center gap-0.5 text-[9px] font-bold uppercase tracking-wider",
                 pathname === item.href ? "text-primary" : "text-muted-foreground hover:text-primary/80"
               )}
             >
-              <item.icon className="h-5 w-5" />
+              <item.icon className="h-4 w-4" />
               <span>{item.label}</span>
             </Link>
           ))}
