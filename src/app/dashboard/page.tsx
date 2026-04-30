@@ -210,6 +210,7 @@ function DashboardContent({ user }: { user: User }) {
     { href: '/survival', label: 'Survival', icon: Sprout },
     { href: '/alphabet', label: 'Alphabet', icon: BookText },
     { href: '/numbers', label: 'Numbers', icon: ListOrdered },
+    { href: '/pricing', label: 'Upgrade', icon: Sparkles },
     { href: '/profile', label: 'Profile', icon: UserIcon },
   ];
 
