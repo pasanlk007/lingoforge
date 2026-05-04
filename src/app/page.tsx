@@ -265,27 +265,31 @@ export default function LandingPage() {
               <p className="text-slate-400 mt-2">Choose your path and start speaking today</p>
             </div>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-              <div className="bg-slate-800/60 border border-green-500/30 rounded-2xl p-5 text-center space-y-2">
+              <Link href="/signup" className="group bg-gradient-to-br from-green-900/40 to-slate-800 border border-green-500/40 hover:border-green-400 rounded-2xl p-5 text-center space-y-3 transition-all hover:scale-105">
                 <div className="text-4xl">🌱</div>
                 <p className="font-bold text-white">Survival Path</p>
-                <p className="text-xs text-slate-400">Daily life phrases for work & home</p>
-              </div>
-              <div className="bg-slate-800/60 border border-blue-500/30 rounded-2xl p-5 text-center space-y-2">
+                <p className="text-xs text-slate-400">Daily life phrases for work, home & shopping</p>
+                <span className="text-xs text-green-400 font-semibold">Start Free →</span>
+              </Link>
+              <Link href="/signup" className="group bg-gradient-to-br from-blue-900/40 to-slate-800 border border-blue-500/40 hover:border-blue-400 rounded-2xl p-5 text-center space-y-3 transition-all hover:scale-105">
                 <div className="text-4xl">🔤</div>
                 <p className="font-bold text-white">Alphabet Path</p>
                 <p className="text-xs text-slate-400">Learn to read & write the script</p>
-              </div>
-              <div className="bg-slate-800/60 border border-yellow-500/30 rounded-2xl p-5 text-center space-y-2">
+                <span className="text-xs text-blue-400 font-semibold">Start Free →</span>
+              </Link>
+              <Link href="/signup" className="group bg-gradient-to-br from-yellow-900/40 to-slate-800 border border-yellow-500/40 hover:border-yellow-400 rounded-2xl p-5 text-center space-y-3 transition-all hover:scale-105">
                 <div className="text-4xl">🔢</div>
                 <p className="font-bold text-white">Numbers Path</p>
                 <p className="text-xs text-slate-400">Numbers, prices & dates</p>
-              </div>
-              <div className="bg-slate-800/60 border border-purple-500/30 rounded-2xl p-5 text-center space-y-2 relative">
-                <div className="absolute -top-2 -right-2 bg-purple-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">NEW</div>
+                <span className="text-xs text-yellow-400 font-semibold">Start Free →</span>
+              </Link>
+              <Link href="/signup" className="group bg-gradient-to-br from-purple-900/40 to-slate-800 border border-purple-500/40 hover:border-purple-400 rounded-2xl p-5 text-center space-y-3 transition-all hover:scale-105 relative">
+                <div className="absolute -top-2 -right-2 bg-purple-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">AI</div>
                 <div className="text-4xl">🏛️</div>
                 <p className="font-bold text-white">Pro Path</p>
-                <p className="text-xs text-slate-400">AI Citizenship & legal lessons</p>
-              </div>
+                <p className="text-xs text-slate-400">Citizenship & legal AI lessons</p>
+                <span className="text-xs text-purple-400 font-semibold">Explore →</span>
+              </Link>
             </div>
             <div className="mt-8 text-center">
               <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-xl px-6 py-3">
