@@ -257,98 +257,64 @@ export default function LandingPage() {
           </div>
         </section>
         
-        <section className="py-20 sm:py-24 bg-slate-900/50">
+
+        <section className="py-16 bg-slate-900">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="font-headline text-3xl md:text-4xl font-bold">{t.pricingTitle}</h2>
-              <p className="text-lg text-slate-300 mt-2">{t.pricingSub}</p>
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-white">Start Your Learning Journey</h2>
+              <p className="text-slate-400 mt-2">Choose your path and start speaking today</p>
             </div>
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+              <div className="bg-slate-800/60 border border-green-500/30 rounded-2xl p-5 text-center space-y-2">
+                <div className="text-4xl">🌱</div>
+                <p className="font-bold text-white">Survival Path</p>
+                <p className="text-xs text-slate-400">Daily life phrases for work & home</p>
+              </div>
+              <div className="bg-slate-800/60 border border-blue-500/30 rounded-2xl p-5 text-center space-y-2">
+                <div className="text-4xl">🔤</div>
+                <p className="font-bold text-white">Alphabet Path</p>
+                <p className="text-xs text-slate-400">Learn to read & write the script</p>
+              </div>
+              <div className="bg-slate-800/60 border border-yellow-500/30 rounded-2xl p-5 text-center space-y-2">
+                <div className="text-4xl">🔢</div>
+                <p className="font-bold text-white">Numbers Path</p>
+                <p className="text-xs text-slate-400">Numbers, prices & dates</p>
+              </div>
+              <div className="bg-slate-800/60 border border-purple-500/30 rounded-2xl p-5 text-center space-y-2 relative">
+                <div className="absolute -top-2 -right-2 bg-purple-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">NEW</div>
+                <div className="text-4xl">🏛️</div>
+                <p className="font-bold text-white">Pro Path</p>
+                <p className="text-xs text-slate-400">AI Citizenship & legal lessons</p>
+              </div>
+            </div>
+            <div className="mt-8 text-center">
+              <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-xl px-6 py-3">
+                <span className="text-sm text-slate-300">First 3 days free on every path</span>
+                <span className="text-green-400 font-bold text-sm">✓ No credit card</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20">
-                <CardHeader>
-                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-4">
-                  <div>
-                    <p className="text-3xl font-bold">{t.weeklyPlan.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.weeklyPlan.price_lkr}</p>
-                  </div>
-                  <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
-                    <li>✅ {t.weeklyPlan.feat1}</li>
-                    <li>✅ {t.weeklyPlan.feat2}</li>
-                    <li>✅ {t.weeklyPlan.feat3}</li>
-                  </ul>
-                  {t.weeklyPlan.note && <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ {t.weeklyPlan.note}</p>}
-                </CardContent>
-                <CardFooter className="flex-col gap-2 w-full">
-                  <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-                    <Link href="/pricing">Pay in USD</Link>
-                  </Button>
-                   <div className="flex items-center justify-center gap-1 mt-2">
-                    <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                  </div>
-                   <p className="text-xs text-muted-foreground/70">Powered by Lemon Squeezy 🍋</p>
-                </CardFooter>
-              </Card>
-
-              <Card className="flex flex-col border-2 border-green-500/50 bg-green-950/20">
-                <CardHeader>
-                  <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">{t.completePlan.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.completePlan.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-4">
-                  <div>
-                    <p className="text-3xl font-bold">{t.completePlan.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.completePlan.price_lkr}</p>
-                  </div>
-                    <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
-                    <li>✅ {t.completePlan.feat1}</li>
-                    <li>✅ {t.completePlan.feat2}</li>
-                    <li>✅ {t.completePlan.feat3}</li>
-                    <li>✅ {t.completePlan.feat4}</li>
-                  </ul>
-                </CardContent>
-                <CardFooter className="flex-col gap-2 w-full">
-                  <Button size="lg" className="w-full bg-green-600 hover:bg-green-700" asChild>
-                    <Link href="/pricing">Pay in USD</Link>
-                  </Button>
-                   <div className="flex items-center justify-center gap-1 mt-2">
-                    <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                  </div>
-                   <p className="text-xs text-muted-foreground/70">Powered by Lemon Squeezy 🍋</p>
-                </CardFooter>
-              </Card>
-
-              <Card className="relative flex flex-col border-2 border-yellow-500/50 bg-yellow-950/20">
-                <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950">{t.lifetimePlan.badge}</Badge>
-                <CardHeader>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.lifetimePlan.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-4">
-                  <div>
-                    <p className="text-3xl font-bold">{t.lifetimePlan.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.lifetimePlan.price_lkr}</p>
-                  </div>
-                  <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
-                    <li>✅ {t.lifetimePlan.feat1}</li>
-                    <li>✅ {t.lifetimePlan.feat2}</li>
-                    <li>✅ {t.lifetimePlan.feat3}</li>
-                    <li>✅ {t.lifetimePlan.feat4}</li>
-                    {t.lifetimePlan.feat5 && <li>✅ {t.lifetimePlan.feat5}</li>}
-                  </ul>
-                </CardContent>
-                <CardFooter className="flex-col gap-2 w-full">
-                  <Button size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-yellow-950" asChild>
-                    <Link href="/pricing">Pay in USD</Link>
-                  </Button>
-                   <div className="flex items-center justify-center gap-1 mt-2">
-                    <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                  </div>
-                   <p className="text-xs text-muted-foreground/70">Powered by Lemon Squeezy 🍋</p>
-                </CardFooter>
-              </Card>
+        <section className="py-16 bg-slate-800/30">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-white text-center mb-10">How It Works</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+              <div className="text-center space-y-3">
+                <div className="w-12 h-12 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center mx-auto text-cyan-400 font-black text-xl">1</div>
+                <p className="font-bold text-white">Choose Your Language</p>
+                <p className="text-sm text-slate-400">Select from 21 languages with your native language as the guide</p>
+              </div>
+              <div className="text-center space-y-3">
+                <div className="w-12 h-12 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center mx-auto text-cyan-400 font-black text-xl">2</div>
+                <p className="font-bold text-white">Follow Daily Lessons</p>
+                <p className="text-sm text-slate-400">10 minutes a day with vocabulary, phrases and audio</p>
+              </div>
+              <div className="text-center space-y-3">
+                <div className="w-12 h-12 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center mx-auto text-cyan-400 font-black text-xl">3</div>
+                <p className="font-bold text-white">Speak With Confidence</p>
+                <p className="text-sm text-slate-400">Use real phrases at work, in shops, at the doctor</p>
+              </div>
             </div>
           </div>
         </section>
