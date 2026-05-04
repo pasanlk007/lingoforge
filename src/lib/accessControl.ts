@@ -26,9 +26,9 @@ export function canAccessLesson(
   const { path, week, day, language, userEmail, profile } = params;
 
   if (isAdmin(userEmail)) return { allowed: true };
-  if (path === 'alphabet' || path === 'numbers') return { allowed: true };
+  // alphabet and numbers week 1 days 1-3 are free (handled below)
   if ((path === 'survival' || path === 'alphabet' || path === 'numbers') && week === 1 && day <= 3) return { allowed: true };
-  if (path === 'pro' && day <= 5) return { allowed: true };
+  if (path === 'pro' && week === 1 && day <= 3) return { allowed: true };
   if (!profile) return { allowed: false, reason: 'locked' };
 
   const langKey = language?.toLowerCase() || '';
