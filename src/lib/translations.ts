@@ -82,7 +82,7 @@ export const translations = {
     completePlan: {
       title: "Complete Course",
       badge: "Value",
-      price_usd: "$39 one-time",
+      price_usd: "$26 one-time",
       price_lkr: "LKR 11,700",
       feat1: "Everything in Weekly Plan",
       feat2: "Lifetime access to one language course",
@@ -92,7 +92,7 @@ export const translations = {
     lifetimePlan: {
       title: "Lifetime Pro",
       badge: "⭐ Best Value",
-      price_usd: "$99 one-time",
+      price_usd: "$49 one-time",
       price_lkr: "LKR 29,700",
       feat1: "Everything in Complete Course",
       feat2: "Lifetime access to ALL current & future languages",
@@ -320,7 +320,7 @@ export const translations = {
     completePlan: {
       title: "සම්පූර්ණ පාඨමාලාව",
       badge: "වටිනාකම",
-      price_usd: "$39 one-time",
+      price_usd: "$26 one-time",
       price_lkr: "LKR 11,700",
       feat1: "සතිපතා සැලැස්මේ ඇති සියල්ල",
       feat2: "එක් භාෂා පාඨමාලාවකට ජීවිත කාලය පුරාම ප්‍රවේශය",
@@ -330,7 +330,7 @@ export const translations = {
     lifetimePlan: {
       title: "Lifetime Pro",
       badge: "⭐ Best Value",
-      price_usd: "$99 one-time",
+      price_usd: "$49 one-time",
       price_lkr: "LKR 29,700",
       feat1: "සම්පූර්ණ පාඨමාලාවේ ඇති සියල්ල",
       feat2: "වර්තමාන සහ අනාගත සියලුම භාෂා සඳහා ජීවිත කාලය පුරාම ප්‍රවේශය",
@@ -557,7 +557,7 @@ export const translations = {
     completePlan: {
       title: "पूर्ण पाठ्यक्रम",
       badge: "मूल्य",
-      price_usd: "$39 एक बार",
+      price_usd: "$26 एक बार",
       price_lkr: "LKR 11,700",
       feat1: "एक भाषा तक पूर्ण पहुँच",
       feat2: "क्रमिक रूप से पाठ अनलॉक करें",
@@ -567,7 +567,7 @@ export const translations = {
     lifetimePlan: {
       title: "लाइफटाइम प्रो",
       badge: "⭐ सर्वोत्तम मूल्य",
-      price_usd: "$99 एक बार",
+      price_usd: "$49 एक बार",
       price_lkr: "LKR 29,700",
       feat1: "सभी 21 भाषाओं तक पूर्ण पहुँच",
       feat2: "सभी भाषाओं के लिए सभी पथ",
@@ -794,7 +794,7 @@ export const translations = {
     completePlan: {
       title: "مکمل کورس",
       badge: "قیمت",
-      price_usd: "$39 یک مشت",
+      price_usd: "$26 یک مشت",
       price_lkr: "LKR 11,700",
       feat1: "ایک زبان تک مکمل رسائی",
       feat2: "بتدریج اسباق کو غیر مقفل کریں",
@@ -804,7 +804,7 @@ export const translations = {
     lifetimePlan: {
       title: "لائف ٹائم پرو",
       badge: "⭐ بہترین قیمت",
-      price_usd: "$99 یک مشت",
+      price_usd: "$49 یک مشت",
       price_lkr: "LKR 29,700",
       feat1: "تمام 21 زبانوں تک مکمل رسائی",
       feat2: "تمام زبانوں کے لیے تمام راستے",
@@ -1031,7 +1031,7 @@ export const translations = {
     completePlan: {
       title: "সম্পূর্ণ কোর্স",
       badge: "মূল্য",
-      price_usd: "$39 এককালীন",
+      price_usd: "$26 এককালীন",
       price_lkr: "LKR 11,700",
       feat1: "একটি ভাষায় সম্পূর্ণ অ্যাক্সেস",
       feat2: "ধারাবাহিকভাবে পাঠ আনলক করুন",
@@ -1041,7 +1041,7 @@ export const translations = {
     lifetimePlan: {
       title: "আজীবন প্রো",
       badge: "⭐ সেরা মূল্য",
-      price_usd: "$99 এককালীন",
+      price_usd: "$49 এককালীন",
       price_lkr: "LKR 29,700",
       feat1: "সমস্ত 21টি ভাষায় সম্পূর্ণ অ্যাক্সেস",
       feat2: "সমস্ত ভাষার জন্য সমস্ত পথ",
@@ -1268,7 +1268,7 @@ export const translations = {
     completePlan: {
       title: "पूर्ण पाठ्यक्रम",
       badge: "मूल्य",
-      price_usd: "$39 एक पटक",
+      price_usd: "$26 एक पटक",
       price_lkr: "LKR 11,700",
       feat1: "एक भाषामा पूर्ण पहुँच",
       feat2: "क्रमिक रूपमा पाठहरू अनलक गर्नुहोस्",
@@ -1278,7 +1278,7 @@ export const translations = {
     lifetimePlan: {
       title: "लाइफटाइम प्रो",
       badge: "⭐ उत्तम मूल्य",
-      price_usd: "$99 एक पटक",
+      price_usd: "$49 एक पटक",
       price_lkr: "LKR 29,700",
       feat1: "सबै 21 भाषाहरूमा पूर्ण पहुँच",
       feat2: "सबै भाषाहरूको लागि सबै मार्गहरू",

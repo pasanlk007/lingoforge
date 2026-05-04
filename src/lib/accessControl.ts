@@ -27,7 +27,7 @@ export function canAccessLesson(
 
   if (isAdmin(userEmail)) return { allowed: true };
   if (path === 'alphabet' || path === 'numbers') return { allowed: true };
-  if (path === 'survival' && week === 1) return { allowed: true };
+  if ((path === 'survival' || path === 'alphabet' || path === 'numbers') && week === 1 && day <= 3) return { allowed: true };
   if (path === 'pro' && day <= 5) return { allowed: true };
   if (!profile) return { allowed: false, reason: 'locked' };
 

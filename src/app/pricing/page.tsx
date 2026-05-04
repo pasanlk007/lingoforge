@@ -148,8 +148,8 @@ function PricingPageContent() {
               <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl">{t.pricingTitle}</h1>
               <p className="mt-4 text-lg text-muted-foreground">{t.pricingSub}</p>
             </div>
-            <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20">
+            <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
+              <Card className="hidden">
                 <CardHeader>
                   <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan?.badge}</Badge>
                   <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan?.title}</CardTitle>
