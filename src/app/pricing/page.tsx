@@ -157,7 +157,7 @@ function PricingPageContent() {
                 <CardContent className="flex-1 space-y-4">
                   <div>
                     <p className="text-3xl font-bold">{t.weeklyPlan?.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.weeklyPlan?.price_lkr}</p>
+                    
                   </div>
                    <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
                     {t.weeklyPlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat1}</li>}
@@ -187,7 +187,7 @@ function PricingPageContent() {
                 <CardContent className="flex-1 space-y-4">
                   <div>
                     <p className="text-3xl font-bold">{t.completePlan?.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.completePlan?.price_lkr}</p>
+                    
                   </div>
                    <ul className="space-y-2 pt-4 border-t border-green-500/30 text-sm">
                     {t.completePlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.completePlan.feat1}</li>}
@@ -216,7 +216,7 @@ function PricingPageContent() {
                 <CardContent className="flex-1 space-y-4">
                   <div>
                     <p className="text-3xl font-bold">{t.lifetimePlan?.price_usd}</p>
-                    <p className="font-semibold text-muted-foreground">{t.lifetimePlan?.price_lkr}</p>
+                    
                   </div>
                    <ul className="space-y-2 pt-4 border-t border-yellow-500/30 text-sm">
                     {t.lifetimePlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.lifetimePlan.feat1}</li>}
