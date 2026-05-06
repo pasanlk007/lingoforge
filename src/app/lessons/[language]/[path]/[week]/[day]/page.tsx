@@ -150,6 +150,7 @@ export default function LessonPage() {
 
   const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
   
+  console.log("DEBUG:", {hasAccess, isMounted, isLoading, week, day});
   if (!hasAccess) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
