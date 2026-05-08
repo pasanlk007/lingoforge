@@ -63,7 +63,7 @@ export default function RootLayout({
             <PWAInstallPrompt />
             {children}
           </RevenueCatProvider>
-        <BottomNav />
+        <BottomNavWrapper />
         </FirebaseClientProvider>
         <script dangerouslySetInnerHTML={{
           __html: `
