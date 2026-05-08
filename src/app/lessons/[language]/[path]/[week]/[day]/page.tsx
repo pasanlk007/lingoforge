@@ -64,7 +64,7 @@ export default function LessonPage() {
     userEmail: user?.email,
     profile: userProfile || null,
   });
-  const hasAccess = accessResult.allowed;
+  const hasAccess = isProfileLoading ? true : accessResult.allowed;
   console.log("USERPROFILE UNLOCKED:", userProfile?.unlockedContent, "NATIVE:", userProfile?.nativeLanguage);
 
   useEffect(() => {
