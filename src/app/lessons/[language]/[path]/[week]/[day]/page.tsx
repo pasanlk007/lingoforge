@@ -150,7 +150,6 @@ export default function LessonPage() {
 
   const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
   
-  console.log("DEBUG:", {hasAccess, isMounted, isLoading, week, day});
   if (!hasAccess) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
@@ -173,8 +172,8 @@ export default function LessonPage() {
             <p className="text-primary font-bold text-lg">bashaguru.com</p>
             <p className="text-xs text-muted-foreground mt-2">
               {nativeLanguage === 'Sinhala' 
-                ? 'Weekly, Course හෝ Lifetime plans ලබා ගත හැකිය'
-                : 'Weekly, Course or Lifetime plans available'}
+                ? 'Survival Bundle ($26) හෝ Lifetime Pro ($49) plans ලබා ගත හැකිය'
+                : 'Survival Bundle ($26) or Lifetime Pro ($49) plans available'}
             </p>
           </div>
           {!isApp && (
