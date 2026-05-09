@@ -6,1326 +6,458 @@
   "days": [
     {
       "week": 3,
-      "day": 1,
-      "title": "Week 3 Day 1: Body Parts",
-      "title_native": "Body Parts",
-      "theme": "Health & Sickness",
+      "day": 15,
+      "title": "Day 15: Grocery Shopping",
+      "title_native": "Jour 15 : Faire les courses",
+      "theme": "Food & Supermarkets",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_1_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_1_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_1_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_1_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_1_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_15_1", "target": "Le supermarché", "phonetic": "luh soo-pehr-mar-shay", "native_meaning": "The supermarket", "english": "The supermarket", "example_sentence_target": "Où est le supermarché ?", "example_sentence_native": "Where is the supermarket?", "example_sentence_phonetic": "oo ay luh soo-pehr-mar-shay" },
+        { "id": "w3_15_2", "target": "Un chariot", "phonetic": "un shah-ree-oh", "native_meaning": "A shopping cart", "english": "A shopping cart", "example_sentence_target": "J'ai besoin d'un chariot.", "example_sentence_native": "I need a shopping cart.", "example_sentence_phonetic": "zhay buh-zwan dun shah-ree-oh" },
+        { "id": "w3_15_3", "target": "Le pain", "phonetic": "luh pan", "native_meaning": "Bread", "english": "Bread", "example_sentence_target": "Je voudrais du pain.", "example_sentence_native": "I would like some bread.", "example_sentence_phonetic": "zhuh voo-dray doo pan" },
+        { "id": "w3_15_4", "target": "Le lait", "phonetic": "luh lay", "native_meaning": "Milk", "english": "Milk", "example_sentence_target": "Où est le lait ?", "example_sentence_native": "Where is the milk?", "example_sentence_phonetic": "oo ay luh lay" },
+        { "id": "w3_15_5", "target": "Les œufs", "phonetic": "lay zuh", "native_meaning": "Eggs", "english": "Eggs", "example_sentence_target": "Douze œufs, s'il vous plaît.", "example_sentence_native": "Twelve eggs, please.", "example_sentence_phonetic": "dooz zuh seel voo play" },
+        { "id": "w3_15_6", "target": "La caisse", "phonetic": "lah kess", "native_meaning": "The checkout/cashier", "english": "The checkout/cashier", "example_sentence_target": "Où est la caisse ?", "example_sentence_native": "Where is the checkout?", "example_sentence_phonetic": "oo ay lah kess" }
+      ],
+      "sentences": [
+        { "id": "s3_15_1", "target": "C'est combien ?", "native": "How much is it?", "phonetic": "say kom-byan" },
+        { "id": "s3_15_2", "target": "Je cherche les fruits.", "native": "I am looking for the fruits.", "phonetic": "zhuh shehrsh lay frwee" },
+        { "id": "s3_15_3", "target": "Avez-vous un sac ?", "native": "Do you have a bag?", "phonetic": "ah-vay voo un sahk" },
+        { "id": "s3_15_4", "target": "Je paie par carte.", "native": "I am paying by card.", "phonetic": "zhuh pay par kahrt" }
       ],
       "dialogues": [
         {
-          "id": "d3_1_1",
-          "context": "Body Parts",
+          "id": "d3_15_1",
+          "context": "At the supermarket entrance.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "Pardon, où sont les paniers ?", "native": "Excuse me, where are the baskets?", "phonetic": "par-don oo son lay pah-nyay" },
+            { "speaker": "B", "target": "Ils sont là-bas, à l'entrée.", "native": "They are over there, at the entrance.", "phonetic": "eel son lah-bah ah lan-tray" }
           ]
         },
         {
-          "id": "d3_1_2",
-          "context": "Formal Body Parts",
+          "id": "d3_15_2",
+          "context": "Asking for a specific item.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Excusez-moi, cherchez-vous le beurre ?", "native": "Excuse me, are you looking for the butter?", "phonetic": "ex-kew-zay mwah shehr-shay voo luh buhr" },
+            { "speaker": "B", "target": "Oui, où est le rayon frais ?", "native": "Yes, where is the refrigerated section?", "phonetic": "wee oo ay luh ray-on fray" }
+          ]
+        },
+        {
+          "id": "d3_15_3",
+          "context": "At the checkout counter.",
+          "lines": [
+            { "speaker": "A", "target": "Ça fera vingt euros, s'il vous plaît.", "native": "That will be twenty euros, please.", "phonetic": "sah fuh-rah vant uh-roh seel voo play" },
+            { "speaker": "B", "target": "Voici ma carte bancaire.", "native": "Here is my bank card.", "phonetic": "vwah-see mah kahrt ban-kehr" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_1_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_1_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_1_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_15_1", "sentence": "Je voudrais du ___, s'il vous plaît.", "answer": "pain", "hint": "Bread" }
         ],
         "matching": [
-          {
-            "id": "m3_1_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_1_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_1_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_1_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_1_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_15_1", "target": "Le lait", "native": "The milk" },
+          { "id": "m3_15_2", "target": "La caisse", "native": "The checkout" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_1_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_1_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_15_1", "scrambled": ["combien", "C'est", "?"], "correct": "C'est combien ?", "nativeHint": "How much is it?" }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D1"
-      }
+      "cultural_note": "In France, you are often expected to bag your own groceries quickly at the checkout. Don't forget to bring your own reusable bags!",
+      "pronunciation_tip": "The 'x' in 'œufs' (plural) is silent, and the 'f' is also silent. It sounds like 'uh'. However, in 'œuf' (singular), you pronounce the 'f'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Grocer" }
     },
     {
       "week": 3,
-      "day": 2,
-      "title": "Week 3 Day 2: Common Symptoms",
-      "title_native": "Common Symptoms",
-      "theme": "Health & Sickness",
+      "day": 16,
+      "title": "Day 16: Shopping for Essentials",
+      "title_native": "Jour 16 : Acheter l'essentiel",
+      "theme": "Stores & Clothing",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_2_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_2_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_2_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_2_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_2_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_16_1", "target": "Le magasin", "phonetic": "luh mah-gah-zan", "native_meaning": "The shop/store", "english": "The store", "example_sentence_target": "Le magasin est ouvert.", "example_sentence_native": "The store is open.", "example_sentence_phonetic": "luh mah-gah-zan ay oo-vehr" },
+        { "id": "w3_16_2", "target": "Les vêtements", "phonetic": "lay vayt-man", "native_meaning": "Clothes", "english": "Clothes", "example_sentence_target": "Je cherche des vêtements.", "example_sentence_native": "I am looking for clothes.", "example_sentence_phonetic": "zhuh shehrsh day vayt-man" },
+        { "id": "w3_16_3", "target": "La taille", "phonetic": "lah tie", "native_meaning": "Size", "english": "Size", "example_sentence_target": "Quelle est votre taille ?", "example_sentence_native": "What is your size?", "example_sentence_phonetic": "kell ay vo-truh tie" },
+        { "id": "w3_16_4", "target": "Essayer", "phonetic": "ah-say-yay", "native_meaning": "To try on", "english": "To try on", "example_sentence_target": "Puis-je essayer ceci ?", "example_sentence_native": "Can I try this on?", "example_sentence_phonetic": "pwee zhuh ah-say-yay suh-see" },
+        { "id": "w3_16_5", "target": "Trop grand", "phonetic": "troh gran", "native_meaning": "Too big", "english": "Too big", "example_sentence_target": "C'est trop grand pour moi.", "example_sentence_native": "It's too big for me.", "example_sentence_phonetic": "say troh gran poor mwah" },
+        { "id": "w3_16_6", "target": "Le prix", "phonetic": "luh pree", "native_meaning": "The price", "english": "The price", "example_sentence_target": "Quel est le prix ?", "example_sentence_native": "What is the price?", "example_sentence_phonetic": "kell ay luh pree" }
+      ],
+      "sentences": [
+        { "id": "s3_16_1", "target": "Où sont les cabines d'essayage ?", "native": "Where are the fitting rooms?", "phonetic": "oo son lay kah-been dess-ay-yahzh" },
+        { "id": "s3_16_2", "target": "Je fais du 40.", "native": "I am a size 40.", "phonetic": "zhuh fay doo kah-rant" },
+        { "id": "s3_16_3", "target": "C'est en solde ?", "native": "Is it on sale?", "phonetic": "say tan sold" },
+        { "id": "s3_16_4", "target": "C'est trop cher.", "native": "It's too expensive.", "phonetic": "say troh shehr" }
       ],
       "dialogues": [
         {
-          "id": "d3_2_1",
-          "context": "Common Symptoms",
+          "id": "d3_16_1",
+          "context": "Asking for assistance in a store.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "Bonjour, je cherche un pantalon noir.", "native": "Hello, I am looking for black pants.", "phonetic": "bon-zhoor zhuh shehrsh un pan-tah-lon nwahr" },
+            { "speaker": "B", "target": "Bien sûr, quelle est votre taille ?", "native": "Of course, what is your size?", "phonetic": "byan sewr kell ay vo-truh tie" }
           ]
         },
         {
-          "id": "d3_2_2",
-          "context": "Formal Common Symptoms",
+          "id": "d3_16_2",
+          "context": "At the fitting rooms.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Est-ce que ça vous va ?", "native": "Does it fit you?", "phonetic": "ess-kuh sah voo vah" },
+            { "speaker": "B", "target": "Non, c'est trop petit. Avez-vous la taille au-dessus ?", "native": "No, it's too small. Do you have the size above?", "phonetic": "non say troh puh-tee ah-vay voo lah tie oh-duh-soo" }
+          ]
+        },
+        {
+          "id": "d3_16_3",
+          "context": "Deciding to buy something.",
+          "lines": [
+            { "speaker": "A", "target": "Je prends cette chemise.", "native": "I'll take this shirt.", "phonetic": "zhuh pran set shuh-meez" },
+            { "speaker": "B", "target": "D'accord, venez à la caisse.", "native": "Okay, come to the checkout.", "phonetic": "dah-kor vuh-nay ah lah kess" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_2_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_2_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_2_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_16_1", "sentence": "Puis-je ___ ce manteau ?", "answer": "essayer", "hint": "try on" }
         ],
         "matching": [
-          {
-            "id": "m3_2_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_2_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_2_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_2_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_2_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_16_1", "target": "Trop cher", "native": "Too expensive" },
+          { "id": "m3_16_2", "target": "En solde", "native": "On sale" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_2_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_2_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_16_1", "scrambled": ["prix", "Quel", "est", "le", "?"], "correct": "Quel est le prix ?", "nativeHint": "What is the price?" }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D2"
-      }
+      "cultural_note": "In France, shopkeepers expect a 'Bonjour' when you enter and a 'Merci, au revoir' when you leave. It is considered rude to skip these.",
+      "pronunciation_tip": "The word 'taille' rhymes with the English word 'pie', but with a soft 'y' sound at the end.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Shopper" }
     },
     {
       "week": 3,
-      "day": 3,
-      "title": "Week 3 Day 3: At the Doctor",
-      "title_native": "At the Doctor",
-      "theme": "Health & Sickness",
+      "day": 17,
+      "title": "Day 17: At the Restaurant",
+      "title_native": "Jour 17 : Au restaurant",
+      "theme": "Dining Out",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_3_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_3_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_3_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_3_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_3_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_17_1", "target": "La carte", "phonetic": "lah kahrt", "native_meaning": "The menu", "english": "The menu", "example_sentence_target": "La carte, s'il vous plaît.", "example_sentence_native": "The menu, please.", "example_sentence_phonetic": "lah kahrt seel voo play" },
+        { "id": "w3_17_2", "target": "Commander", "phonetic": "ko-man-day", "native_meaning": "To order", "english": "To order", "example_sentence_target": "Je voudrais commander.", "example_sentence_native": "I would like to order.", "example_sentence_phonetic": "zhuh voo-dray ko-man-day" },
+        { "id": "w3_17_3", "target": "L'addition", "phonetic": "lah-dee-syon", "native_meaning": "The bill/check", "english": "The bill/check", "example_sentence_target": "L'addition, s'il vous plaît.", "example_sentence_native": "The bill, please.", "example_sentence_phonetic": "lah-dee-syon seel voo play" },
+        { "id": "w3_17_4", "target": "Une carafe d'eau", "phonetic": "ewn kah-rahf doh", "native_meaning": "A jug of tap water", "english": "A jug of tap water", "example_sentence_target": "Une carafe d'eau, merci.", "example_sentence_native": "A jug of water, thank you.", "example_sentence_phonetic": "ewn kah-rahf doh mehr-see" },
+        { "id": "w3_17_5", "target": "C'est délicieux", "phonetic": "say day-lee-syuh", "native_meaning": "It's delicious", "english": "It's delicious", "example_sentence_target": "Merci, c'est délicieux !", "example_sentence_native": "Thank you, it's delicious!", "example_sentence_phonetic": "mehr-see say day-lee-syuh" },
+        { "id": "w3_17_6", "target": "Le serveur", "phonetic": "luh sehr-vuhr", "native_meaning": "The waiter", "english": "The waiter", "example_sentence_target": "Le serveur est gentil.", "example_sentence_native": "The waiter is kind.", "example_sentence_phonetic": "luh sehr-vuhr ay zhan-tee" }
+      ],
+      "sentences": [
+        { "id": "s3_17_1", "target": "Une table pour deux, s'il vous plaît.", "native": "A table for two, please.", "phonetic": "ewn tah-bluh poor duh seil voo play" },
+        { "id": "s3_17_2", "target": "Je suis allergique aux noix.", "native": "I am allergic to nuts.", "phonetic": "zhuh swee zah-lehr-zheek oh nwah" },
+        { "id": "s3_17_3", "target": "Où sont les toilettes ?", "native": "Where are the bathrooms?", "phonetic": "oo son lay twah-let" },
+        { "id": "s3_17_4", "target": "Je voudrais un café.", "native": "I would like a coffee.", "phonetic": "zhuh voo-dray un kah-fay" }
       ],
       "dialogues": [
         {
-          "id": "d3_3_1",
-          "context": "At the Doctor",
+          "id": "d3_17_1",
+          "context": "Arriving at a restaurant.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "Bonjour, vous avez une table ?", "native": "Hello, do you have a table?", "phonetic": "bon-zhoor voo zah-vay ewn tah-bluh" },
+            { "speaker": "B", "target": "Oui, pour combien de personnes ?", "native": "Yes, for how many people?", "phonetic": "wee poor kom-byan duh pehr-son" }
           ]
         },
         {
-          "id": "d3_3_2",
-          "context": "Formal At the Doctor",
+          "id": "d3_17_2",
+          "context": "Ordering food.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Qu'est-ce que vous voulez manger ?", "native": "What do you want to eat?", "phonetic": "kess-kuh voo voo-lay man-zhay" },
+            { "speaker": "B", "target": "Je voudrais le poulet avec des frites.", "native": "I would like the chicken with fries.", "phonetic": "zhuh voo-dray luh poo-lay ah-vek day freet" }
+          ]
+        },
+        {
+          "id": "d3_17_3",
+          "context": "Asking for the bill.",
+          "lines": [
+            { "speaker": "A", "target": "Tout s'est bien passé ?", "native": "Was everything okay?", "phonetic": "too say byan pah-say" },
+            { "speaker": "B", "target": "Oui, c'était parfait. L'addition, s'il vous plaît.", "native": "Yes, it was perfect. The bill, please.", "phonetic": "wee say-tay par-fay lah-dee-syon seel voo play" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_3_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_3_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_3_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_17_1", "sentence": "Je voudrais ___ l'addition.", "answer": "payer", "hint": "to pay" }
         ],
         "matching": [
-          {
-            "id": "m3_3_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_3_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_3_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_3_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_3_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_17_1", "target": "L'addition", "native": "The bill" },
+          { "id": "m3_17_2", "target": "Commander", "native": "To order" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_3_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_3_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_17_1", "scrambled": ["table", "Une", "pour", "deux", "."], "correct": "Une table pour deux .", "nativeHint": "A table for two." }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D3"
-      }
+      "cultural_note": "In France, a 'carafe d'eau' (tap water) is free. You don't have to order bottled water unless you want to.",
+      "pronunciation_tip": "In 'addition', the 't' sounds like an 's'. It is pronounced 'ah-dee-syon'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Gourmet" }
     },
     {
       "week": 3,
-      "day": 4,
-      "title": "Week 3 Day 4: Pharmacy",
-      "title_native": "Pharmacy",
-      "theme": "Health & Sickness",
+      "day": 18,
+      "title": "Day 18: Banking and Money",
+      "title_native": "Jour 18 : La banque et l'argent",
+      "theme": "Finances",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_4_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_4_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_4_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_4_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_4_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_18_1", "target": "La banque", "phonetic": "lah bank", "native_meaning": "The bank", "english": "The bank", "example_sentence_target": "Où est la banque ?", "example_sentence_native": "Where is the bank?", "example_sentence_phonetic": "oo ay lah bank" },
+        { "id": "w3_18_2", "target": "L'argent", "phonetic": "lar-zhan", "native_meaning": "Money", "english": "Money", "example_sentence_target": "J'ai besoin d'argent.", "example_sentence_native": "I need money.", "example_sentence_phonetic": "zhay buh-zwan lar-zhan" },
+        { "id": "w3_18_3", "target": "Un compte", "phonetic": "un kont", "native_meaning": "An account", "english": "An account", "example_sentence_target": "Je voudrais ouvrir un compte.", "example_sentence_native": "I would like to open an account.", "example_sentence_phonetic": "zhuh voo-dray oo-vreer un kont" },
+        { "id": "w3_18_4", "target": "Le distributeur", "phonetic": "luh dees-tree-bew-tuhr", "native_meaning": "The ATM", "english": "The ATM", "example_sentence_target": "Où est le distributeur ?", "example_sentence_native": "Where is the ATM?", "example_sentence_phonetic": "oo ay luh dees-tree-bew-tuhr" },
+        { "id": "w3_18_5", "target": "Retirer", "phonetic": "ruh-tee-ray", "native_meaning": "To withdraw", "english": "To withdraw", "example_sentence_target": "Je veux retirer de l'argent.", "example_sentence_native": "I want to withdraw money.", "example_sentence_phonetic": "zhuh vuh ruh-tee-ray duh lar-zhan" },
+        { "id": "w3_18_6", "target": "La carte bancaire", "phonetic": "lah kahrt ban-kehr", "native_meaning": "The bank card", "english": "The bank card", "example_sentence_target": "J'ai perdu ma carte bancaire.", "example_sentence_native": "I lost my bank card.", "example_sentence_phonetic": "zhay pehr-doo mah kahrt ban-kehr" }
+      ],
+      "sentences": [
+        { "id": "s3_18_1", "target": "Mon code ne marche pas.", "native": "My code isn't working.", "phonetic": "mon kod nuh marsh pah" },
+        { "id": "s3_18_2", "target": "Quel est le taux de change ?", "native": "What is the exchange rate?", "phonetic": "kell ay luh toh duh shanzh" },
+        { "id": "s3_18_3", "target": "Je voudrais changer des dollars.", "native": "I would like to change some dollars.", "phonetic": "zhuh voo-dray shan-zhay day doh-lar" },
+        { "id": "s3_18_4", "target": "C'est gratuit ?", "native": "Is it free of charge?", "phonetic": "say grah-twee" }
       ],
       "dialogues": [
         {
-          "id": "d3_4_1",
-          "context": "Pharmacy",
+          "id": "d3_18_1",
+          "context": "At the bank counter.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "Bonjour, je voudrais ouvrir un compte courant.", "native": "Hello, I would like to open a current account.", "phonetic": "bon-zhoor zhuh voo-dray oo-vreer un kont koo-ran" },
+            { "speaker": "B", "target": "D'accord, avez-vous votre passeport ?", "native": "Okay, do you have your passport?", "phonetic": "dah-kor ah-vay voo vo-truh pass-por" }
           ]
         },
         {
-          "id": "d3_4_2",
-          "context": "Formal Pharmacy",
+          "id": "d3_18_2",
+          "context": "Asking for an ATM.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Pardon, il y a un distributeur près d'ici ?", "native": "Excuse me, is there an ATM near here?", "phonetic": "par-don eel ee ah un dees-tree-bew-tuhr preh dee-see" },
+            { "speaker": "B", "target": "Oui, à côté de la boulangerie.", "native": "Yes, next to the bakery.", "phonetic": "wee ah koh-tay duh lah boo-lan-zhree" }
+          ]
+        },
+        {
+          "id": "d3_18_3",
+          "context": "Problems with a card.",
+          "lines": [
+            { "speaker": "A", "target": "Ma carte est bloquée.", "native": "My card is blocked.", "phonetic": "mah kahrt ay blo-kay" },
+            { "speaker": "B", "target": "Donnez-moi votre pièce d'identité.", "native": "Give me your ID.", "phonetic": "do-nay mwah vo-truh pyess dee-dan-tee-tay" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_4_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_4_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_4_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_18_1", "sentence": "Je veux ___ de l'argent.", "answer": "retirer", "hint": "to withdraw" }
         ],
         "matching": [
-          {
-            "id": "m3_4_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_4_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_4_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_4_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_4_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_18_1", "target": "L'argent", "native": "Money" },
+          { "id": "m3_18_2", "target": "La banque", "native": "The bank" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_4_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_4_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_18_1", "scrambled": ["un", "compte", "Je", "ouvrir", "voudrais", "."], "correct": "Je voudrais ouvrir un compte .", "nativeHint": "I would like to open an account." }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D4"
-      }
+      "cultural_note": "Banks in France often require an appointment (un rendez-vous) for services beyond simple withdrawals or deposits.",
+      "pronunciation_tip": "The 'n' in 'argent' and 'compte' is a nasal sound. Do not fully pronounce the 'n', just let the sound vibrate in your nose.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Banker" }
     },
     {
       "week": 3,
-      "day": 5,
-      "title": "Week 3 Day 5: Emergency Phrases",
-      "title_native": "Emergency Phrases",
-      "theme": "Health & Sickness",
+      "day": 19,
+      "title": "Day 19: The Post Office",
+      "title_native": "Jour 19 : La poste",
+      "theme": "Services",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_5_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_5_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_5_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_5_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_5_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_19_1", "target": "La poste", "phonetic": "lah post", "native_meaning": "The post office", "english": "The post office", "example_sentence_target": "Où est la poste ?", "example_sentence_native": "Where is the post office?", "example_sentence_phonetic": "oo ay lah post" },
+        { "id": "w3_19_2", "target": "Un timbre", "phonetic": "un tam-bruh", "native_meaning": "A stamp", "english": "A stamp", "example_sentence_target": "Je voudrais un timbre.", "example_sentence_native": "I would like a stamp.", "example_sentence_phonetic": "zhuh voo-dray un tam-bruh" },
+        { "id": "w3_19_3", "target": "Une lettre", "phonetic": "ewn leh-truh", "native_meaning": "A letter", "english": "A letter", "example_sentence_target": "J'envoie une lettre.", "example_sentence_native": "I am sending a letter.", "example_sentence_phonetic": "zhan-vwah ewn leh-truh" },
+        { "id": "w3_19_4", "target": "Un colis", "phonetic": "un ko-lee", "native_meaning": "A package/parcel", "english": "A package/parcel", "example_sentence_target": "C'est pour un colis.", "example_sentence_native": "It is for a package.", "example_sentence_phonetic": "say poor un ko-lee" },
+        { "id": "w3_19_5", "target": "L'adresse", "phonetic": "lah-dress", "native_meaning": "The address", "english": "The address", "example_sentence_target": "Quelle est l'adresse ?", "example_sentence_native": "What is the address?", "example_sentence_phonetic": "kell ay lah-dress" },
+        { "id": "w3_19_6", "target": "Envoyer", "phonetic": "an-vwah-yay", "native_meaning": "To send", "english": "To send", "example_sentence_target": "Je veux envoyer ceci.", "example_sentence_native": "I want to send this.", "example_sentence_phonetic": "zhuh vuh an-vwah-yay suh-see" }
+      ],
+      "sentences": [
+        { "id": "s3_19_1", "target": "C'est pour l'étranger.", "native": "It's for abroad.", "phonetic": "say poor lay-tran-zhay" },
+        { "id": "s3_19_2", "target": "Quel est le tarif ?", "native": "What is the rate?", "phonetic": "kell ay luh tah-reef" },
+        { "id": "s3_19_3", "target": "Avez-vous des enveloppes ?", "native": "Do you have envelopes?", "phonetic": "ah-vay voo day zan-vuh-lop" },
+        { "id": "s3_19_4", "target": "C'est urgent.", "native": "It is urgent.", "phonetic": "say tewr-zhan" }
       ],
       "dialogues": [
         {
-          "id": "d3_5_1",
-          "context": "Emergency Phrases",
+          "id": "d3_19_1",
+          "context": "Buying stamps.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "Bonjour, je voudrais trois timbres pour les USA.", "native": "Hello, I would like three stamps for the USA.", "phonetic": "bon-zhoor zhuh voo-dray trwah tam-bruh poor lay ew-ess-ah" },
+            { "speaker": "B", "target": "D'accord, ça fera cinq euros.", "native": "Okay, that will be five euros.", "phonetic": "dah-kor sah fuh-rah sank uh-roh" }
           ]
         },
         {
-          "id": "d3_5_2",
-          "context": "Formal Emergency Phrases",
+          "id": "d3_19_2",
+          "context": "Sending a package.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Je voudrais envoyer ce colis en Angleterre.", "native": "I would like to send this package to England.", "phonetic": "zhuh voo-dray an-vwah-yay suh ko-lee an nan-gluh-tehr" },
+            { "speaker": "B", "target": "Posez-le sur la balance, s'il vous plaît.", "native": "Put it on the scale, please.", "phonetic": "poh-zay luh sewr lah bah-lans seel voo play" }
+          ]
+        },
+        {
+          "id": "d3_19_3",
+          "context": "Asking for the post office.",
+          "lines": [
+            { "speaker": "A", "target": "Pardon, où est le bureau de poste ?", "native": "Excuse me, where is the post office?", "phonetic": "par-don oo ay luh bew-roh duh post" },
+            { "speaker": "B", "target": "C'est tout droit, après le feu.", "native": "It's straight ahead, after the traffic light.", "phonetic": "say too drwah ah-preh luh fuh" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_5_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_5_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_5_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_19_1", "sentence": "Je voudrais un ___, s'il vous plaît.", "answer": "timbre", "hint": "stamp" }
         ],
         "matching": [
-          {
-            "id": "m3_5_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_5_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_5_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_5_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_5_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_19_1", "target": "Un colis", "native": "A package" },
+          { "id": "m3_19_2", "target": "L'adresse", "native": "The address" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_5_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_5_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_19_1", "scrambled": ["tarif", "est", "le", "Quel", "?"], "correct": "Quel est le tarif ?", "nativeHint": "What is the rate?" }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D5"
-      }
+      "cultural_note": "In France, post offices (La Poste) are usually bright yellow. They also offer banking services!",
+      "pronunciation_tip": "The 'h' in 'héritage' is silent, but here, there is no 'h' in 'timbre'. Focus on the 'im' which is a nasal 'ah' sound like in 'sang'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Messenger" }
     },
     {
       "week": 3,
-      "day": 6,
-      "title": "Week 3 Day 6: Mental Health",
-      "title_native": "Mental Health",
-      "theme": "Health & Sickness",
+      "day": 20,
+      "title": "Day 20: At the Pharmacy",
+      "title_native": "Jour 20 : À la pharmacie",
+      "theme": "Health",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_6_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_6_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_6_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_6_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_6_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_20_1", "target": "La pharmacie", "phonetic": "lah far-mah-see", "native_meaning": "The pharmacy", "english": "The pharmacy", "example_sentence_target": "Où est la pharmacie ?", "example_sentence_native": "Where is the pharmacy?", "example_sentence_phonetic": "oo ay lah far-mah-see" },
+        { "id": "w3_20_2", "target": "Un médicament", "phonetic": "un may-dee-kah-man", "native_meaning": "A medicine", "english": "A medicine", "example_sentence_target": "Je cherche un médicament.", "example_sentence_native": "I am looking for a medicine.", "example_sentence_phonetic": "zhuh shehrsh un may-dee-kah-man" },
+        { "id": "w3_20_3", "target": "Malade", "phonetic": "mah-lahd", "native_meaning": "Sick", "english": "Sick", "example_sentence_target": "Je suis malade.", "example_sentence_native": "I am sick.", "example_sentence_phonetic": "zhuh swee mah-lahd" },
+        { "id": "w3_20_4", "target": "La douleur", "phonetic": "lah doo-luhr", "native_meaning": "The pain", "english": "The pain", "example_sentence_target": "Où est la douleur ?", "example_sentence_native": "Where is the pain?", "example_sentence_phonetic": "oo ay lah doo-luhr" },
+        { "id": "w3_20_5", "target": "Une ordonnance", "phonetic": "ewn or-don-ans", "native_meaning": "A prescription", "english": "A prescription", "example_sentence_target": "Voici mon ordonnance.", "example_sentence_native": "Here is my prescription.", "example_sentence_phonetic": "vwah-see mon or-don-ans" },
+        { "id": "w3_20_6", "target": "Le docteur", "phonetic": "luh dok-tuhr", "native_meaning": "The doctor", "english": "The doctor", "example_sentence_target": "Je dois voir le docteur.", "example_sentence_native": "I must see the doctor.", "example_sentence_phonetic": "zhuh dwah vwahr luh dok-tuhr" }
+      ],
+      "sentences": [
+        { "id": "s3_20_1", "target": "J'ai mal à la tête.", "native": "I have a headache.", "phonetic": "zhay mal ah lah tet" },
+        { "id": "s3_20_2", "target": "J'ai de la fièvre.", "native": "I have a fever.", "phonetic": "zhay duh lah fyev-ruh" },
+        { "id": "s3_20_3", "target": "C'est pour un enfant.", "native": "It's for a child.", "phonetic": "say poor un nan-fan" },
+        { "id": "s3_20_4", "target": "Je voudrais de l'aspirine.", "native": "I would like some aspirin.", "phonetic": "zhuh voo-dray duh lass-pee-reen" }
       ],
       "dialogues": [
         {
-          "id": "d3_6_1",
-          "context": "Mental Health",
+          "id": "d3_20_1",
+          "context": "Asking for medicine.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "Bonjour, j'ai mal à la gorge.", "native": "Hello, I have a sore throat.", "phonetic": "bon-zhoor zhay mal ah lah gorzh" },
+            { "speaker": "B", "target": "Prenez ce sirop deux fois par jour.", "native": "Take this syrup twice a day.", "phonetic": "pruh-nay suh see-roh duh fwah par zhoor" }
           ]
         },
         {
-          "id": "d3_6_2",
-          "context": "Formal Mental Health",
+          "id": "d3_20_2",
+          "context": "At the pharmacy counter.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Vous avez mon ordonnance ?", "native": "Do you have my prescription?", "phonetic": "voo zah-vay mon or-don-ans" },
+            { "speaker": "B", "target": "Oui, attendez un moment, s'il vous plaît.", "native": "Yes, wait a moment, please.", "phonetic": "wee ah-tan-day un mo-man seel voo play" }
+          ]
+        },
+        {
+          "id": "d3_20_3",
+          "context": "Describing symptoms.",
+          "lines": [
+            { "speaker": "A", "target": "Je ne me sens pas bien.", "native": "I don't feel well.", "phonetic": "zhuh nuh muh san pah byan" },
+            { "speaker": "B", "target": "Vous avez de la fièvre ?", "native": "Do you have a fever?", "phonetic": "voo zah-vay duh lah fyev-ruh" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_6_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_6_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_6_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_20_1", "sentence": "J'ai mal à la ___.", "answer": "tête", "hint": "head" }
         ],
         "matching": [
-          {
-            "id": "m3_6_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_6_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_6_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_6_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_6_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_20_1", "target": "Malade", "native": "Sick" },
+          { "id": "m3_20_2", "target": "Docteur", "native": "Doctor" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_6_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_6_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_20_1", "scrambled": ["suis", "Je", "malade", "."], "correct": "Je suis malade .", "nativeHint": "I am sick." }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D6"
-      }
+      "cultural_note": "Pharmacies in France are marked by a neon green cross. If one is closed, there is always a 'pharmacie de garde' (on-duty pharmacy) nearby.",
+      "pronunciation_tip": "The 'ph' in 'pharmacie' is pronounced like 'f'. The ending 'ie' is a long 'ee' sound.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Healthy" }
     },
     {
       "week": 3,
-      "day": 7,
-      "title": "Week 3 Day 7: Health Culture",
-      "title_native": "Health Culture",
-      "theme": "Health & Sickness",
+      "day": 21,
+      "title": "Day 21: Housing and Utilities",
+      "title_native": "Jour 21 : Le logement",
+      "theme": "Living",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w3_7_1",
-          "target": "Médecin",
-          "phonetic": "may-duh-SAN",
-          "native_meaning": "Doctor",
-          "english": "Doctor",
-          "example_sentence_target": "Médecin.",
-          "example_sentence_native": "Doctor."
-        },
-        {
-          "id": "w3_7_2",
-          "target": "Hôpital",
-          "phonetic": "oh-pee-TAL",
-          "native_meaning": "Hospital",
-          "english": "Hospital",
-          "example_sentence_target": "Hôpital.",
-          "example_sentence_native": "Hospital."
-        },
-        {
-          "id": "w3_7_3",
-          "target": "Douleur",
-          "phonetic": "doo-LUR",
-          "native_meaning": "Pain",
-          "english": "Pain",
-          "example_sentence_target": "Douleur.",
-          "example_sentence_native": "Pain."
-        },
-        {
-          "id": "w3_7_4",
-          "target": "Médicament",
-          "phonetic": "may-dee-ka-MAN",
-          "native_meaning": "Medicine",
-          "english": "Medicine",
-          "example_sentence_target": "Médicament.",
-          "example_sentence_native": "Medicine."
-        },
-        {
-          "id": "w3_7_5",
-          "target": "Malade",
-          "phonetic": "ma-LAD",
-          "native_meaning": "Sick",
-          "english": "Sick",
-          "example_sentence_target": "Malade.",
-          "example_sentence_native": "Sick."
-        }
+        { "id": "w3_21_1", "target": "L'appartement", "phonetic": "lah-par-tuh-man", "native_meaning": "The apartment", "english": "The apartment", "example_sentence_target": "Je cherche un appartement.", "example_sentence_native": "I am looking for an apartment.", "example_sentence_phonetic": "zhuh shehrsh un nah-par-tuh-man" },
+        { "id": "w3_21_2", "target": "Le loyer", "phonetic": "luh lwah-yay", "native_meaning": "The rent", "english": "The rent", "example_sentence_target": "Quel est le loyer ?", "example_sentence_native": "What is the rent?", "example_sentence_phonetic": "kell ay luh lwah-yay" },
+        { "id": "w3_21_3", "target": "L'électricité", "phonetic": "lay-lek-tree-see-tay", "native_meaning": "Electricity", "english": "Electricity", "example_sentence_target": "L'électricité est comprise ?", "example_sentence_native": "Is electricity included?", "example_sentence_phonetic": "lay-lek-tree-see-tay ay kon-preez" },
+        { "id": "w3_21_4", "target": "L'eau", "phonetic": "loh", "native_meaning": "Water", "english": "Water", "example_sentence_target": "Il n'y a pas d'eau chaude.", "example_sentence_native": "There is no hot water.", "example_sentence_phonetic": "eel nee ah pah doh shohd" },
+        { "id": "w3_21_5", "target": "La clé", "phonetic": "lah klay", "native_meaning": "The key", "english": "The key", "example_sentence_target": "Où est ma clé ?", "example_sentence_native": "Where is my key?", "example_sentence_phonetic": "oo ay mah klay" },
+        { "id": "w3_21_6", "target": "Signer", "phonetic": "see-nyay", "native_meaning": "To sign", "english": "To sign", "example_sentence_target": "Je dois signer ici ?", "example_sentence_native": "Do I have to sign here?", "example_sentence_phonetic": "zhuh dwah see-nyay ee-see" }
+      ],
+      "sentences": [
+        { "id": "s3_21_1", "target": "C'est un bail de six mois.", "native": "It's a six-month lease.", "phonetic": "say tun bye duh see mwah" },
+        { "id": "s3_21_2", "target": "L'appartement est meublé.", "native": "The apartment is furnished.", "phonetic": "lah-par-tuh-man ay muh-blay" },
+        { "id": "s3_21_3", "target": "Où est le compteur ?", "native": "Where is the meter?", "phonetic": "oo ay luh komp-tuhr" },
+        { "id": "s3_21_4", "target": "Le chauffage ne marche pas.", "native": "The heating isn't working.", "phonetic": "luh shoh-fahzh nuh marsh pah" }
       ],
       "dialogues": [
         {
-          "id": "d3_7_1",
-          "context": "Health Culture",
+          "id": "d3_21_1",
+          "context": "Visiting an apartment.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Médecin!",
-              "native": "Doctor!",
-              "phonetic": "may-duh-SAN"
-            },
-            {
-              "speaker": "B",
-              "target": "Médecin! Hôpital!",
-              "native": "Doctor! Hospital!",
-              "phonetic": "may-duh-SAN oh-pee-TAL"
-            },
-            {
-              "speaker": "A",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            }
+            { "speaker": "A", "target": "L'appartement est très beau.", "native": "The apartment is very beautiful.", "phonetic": "lah-par-tuh-man ay treh boh" },
+            { "speaker": "B", "target": "Oui, et le quartier est calme.", "native": "Yes, and the neighborhood is quiet.", "phonetic": "wee ay luh kar-tyay ay kalm" }
           ]
         },
         {
-          "id": "d3_7_2",
-          "context": "Formal Health Culture",
+          "id": "d3_21_2",
+          "context": "Talking about utilities.",
           "lines": [
-            {
-              "speaker": "A",
-              "target": "Hôpital!",
-              "native": "Hospital!",
-              "phonetic": "oh-pee-TAL"
-            },
-            {
-              "speaker": "B",
-              "target": "Douleur!",
-              "native": "Pain!",
-              "phonetic": "doo-LUR"
-            },
-            {
-              "speaker": "A",
-              "target": "Médicament! Malade!",
-              "native": "Medicine! Sick!",
-              "phonetic": "may-dee-ka-MAN ma-LAD"
-            }
+            { "speaker": "A", "target": "Les charges sont incluses ?", "native": "Are utilities included?", "phonetic": "lay sharzh son tan-klewz" },
+            { "speaker": "B", "target": "L'eau est incluse, mais pas l'électricité.", "native": "Water is included, but not electricity.", "phonetic": "loh ay tan-klewz meh pah lay-lek-tree-see-tay" }
+          ]
+        },
+        {
+          "id": "d3_21_3",
+          "context": "Reporting a problem.",
+          "lines": [
+            { "speaker": "A", "target": "Allô, j'ai une fuite d'eau.", "native": "Hello, I have a water leak.", "phonetic": "ah-loh zhay ewn fweet doh" },
+            { "speaker": "B", "target": "D'accord, j'envoie un plombier.", "native": "Okay, I am sending a plumber.", "phonetic": "dah-kor zhan-vwah un plon-byay" }
           ]
         }
       ],
       "exercises": {
         "fillBlanks": [
-          {
-            "id": "fb3_7_1",
-            "sentence": "___ means 'Doctor' in French",
-            "answer": "Médecin",
-            "hint": "Doctor"
-          },
-          {
-            "id": "fb3_7_2",
-            "sentence": "___ means 'Hospital' in French",
-            "answer": "Hôpital",
-            "hint": "Hospital"
-          },
-          {
-            "id": "fb3_7_3",
-            "sentence": "___ means 'Pain' in French",
-            "answer": "Douleur",
-            "hint": "Pain"
-          }
+          { "id": "ex3_21_1", "sentence": "Où est la ___ de l'appartement ?", "answer": "clé", "hint": "key" }
         ],
         "matching": [
-          {
-            "id": "m3_7_1",
-            "target": "Médecin",
-            "native": "Doctor"
-          },
-          {
-            "id": "m3_7_2",
-            "target": "Hôpital",
-            "native": "Hospital"
-          },
-          {
-            "id": "m3_7_3",
-            "target": "Douleur",
-            "native": "Pain"
-          },
-          {
-            "id": "m3_7_4",
-            "target": "Médicament",
-            "native": "Medicine"
-          },
-          {
-            "id": "m3_7_5",
-            "target": "Malade",
-            "native": "Sick"
-          }
+          { "id": "m3_21_1", "target": "Le loyer", "native": "The rent" },
+          { "id": "m3_21_2", "target": "Meublé", "native": "Furnished" }
         ],
-        "multipleChoice": [
-          {
-            "id": "mc3_7_1",
-            "question": "What does 'Médecin' mean?",
-            "options": [
-              "Doctor",
-              "Hospital",
-              "Pain",
-              "Medicine"
-            ],
-            "correct": 0,
-            "explanation": "'Médecin' means Doctor in English."
-          },
-          {
-            "id": "mc3_7_2",
-            "question": "How do you say 'Hospital' in French?",
-            "options": [
-              "Médecin",
-              "Hôpital",
-              "Douleur",
-              "Médicament"
-            ],
-            "correct": 1,
-            "explanation": "'Hôpital' means Hospital."
-          }
+        "sentenceScramble": [
+          { "id": "ss3_21_1", "scrambled": ["loyer", "Quel", "est", "le", "?"], "correct": "Quel est le loyer ?", "nativeHint": "What is the rent?" }
         ]
       },
-      "cultural_note": "France has one of Europe's best healthcare systems, with the state covering 70% of costs.",
-      "pronunciation_tip": "Nasal sounds 'an','on','in' are pronounced through the nose — practice daily.",
-      "progress": {
-        "xp": 120,
-        "streak_bonus": 20,
-        "badge": "W3D7"
-      }
+      "cultural_note": "In France, 'charges comprises' means that utilities like water and garbage collection are included in the price, but often not electricity or internet.",
+      "pronunciation_tip": "The 'gn' in 'signer' is pronounced like the 'ny' in 'onion'. It sounds like 'see-nyay'.",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Resident" }
     }
   ]
 }

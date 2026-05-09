@@ -1,3 +1,4 @@
+
 {
   "week": 10,
   "path": "survival",
@@ -7,105 +8,80 @@
     {
       "week": 10,
       "day": 1,
-      "title": "Week 10 Day 1: Weather Vocabulary",
-      "title_native": "Weather Vocabulary",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 1: Tu vs. Vous",
+      "title_native": "Semaine 10 Jour 1 : Tu vs. Vous",
+      "theme": "Formal and Informal Address",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_1_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "Vous",
+          "phonetic": "voo",
+          "native_meaning": "You (formal/plural)",
+          "english": "You (formal)",
+          "example_sentence_target": "Comment allez-vous ?",
+          "example_sentence_native": "How are you? (formal)",
+          "example_sentence_phonetic": "kom-mahn-tal-lay-voo"
         },
         {
           "id": "w10_1_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Tu",
+          "phonetic": "tyoo",
+          "native_meaning": "You (informal)",
+          "english": "You (informal)",
+          "example_sentence_target": "Comment vas-tu ?",
+          "example_sentence_native": "How are you? (informal)",
+          "example_sentence_phonetic": "kom-mahn-vah-tyoo"
         },
         {
           "id": "w10_1_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
+          "target": "Monsieur",
+          "phonetic": "muh-syu",
+          "native_meaning": "Sir / Mr.",
+          "english": "Mister",
+          "example_sentence_target": "Bonjour Monsieur.",
+          "example_sentence_native": "Hello Sir.",
+          "example_sentence_phonetic": "bohn-zhoor muh-syu"
         },
         {
           "id": "w10_1_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
+          "target": "Madame",
+          "phonetic": "mah-dahm",
+          "native_meaning": "Madam / Mrs.",
+          "english": "Madam",
+          "example_sentence_target": "Merci Madame.",
+          "example_sentence_native": "Thank you Madam.",
+          "example_sentence_phonetic": "mair-see mah-dahm"
         },
         {
           "id": "w10_1_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "Vouvoyer",
+          "phonetic": "voo-vwah-yay",
+          "native_meaning": "To use 'vous'",
+          "english": "To address formally",
+          "example_sentence_target": "On peut se vouvoyer ?",
+          "example_sentence_native": "Can we use 'vous'?",
+          "example_sentence_phonetic": "ohn puh suh voo-vwah-yay"
         }
       ],
       "dialogues": [
         {
           "id": "d10_1_1",
-          "context": "Weather Vocabulary",
+          "context": "Meeting a boss for the first time.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Bonjour Monsieur Durand, comment allez-vous ?",
+              "native": "Hello Mr. Durand, how are you?",
+              "phonetic": "bohn-zhoor muh-syu dyoo-rahn, kom-mahn-tal-lay-voo"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_1_2",
-          "context": "Formal Weather Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Très bien, merci. Et vous ?",
+              "native": "Very well, thank you. And you?",
+              "phonetic": "tray byahn, mair-see. ay voo"
             }
           ]
         }
@@ -114,754 +90,371 @@
         "fillBlanks": [
           {
             "id": "fb10_1_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_1_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_1_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
+            "sentence": "Comment allez-___ ?",
+            "answer": "vous",
+            "hint": "Formal 'you'"
           }
         ],
         "matching": [
           {
             "id": "m10_1_1",
-            "target": "Temps",
-            "native": "Weather"
+            "target": "Tu",
+            "native": "You (informal)"
           },
           {
             "id": "m10_1_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_1_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_1_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_1_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_1_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_1_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
-            "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "target": "Vous",
+            "native": "You (formal)"
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "In France, it is safer to use 'vous' with anyone you don't know well. Using 'tu' too early can be seen as impolite.",
+      "pronunciation_tip": "The 'u' in 'Tu' is a sound not found in English. Shape your lips as if to say 'oo' but say 'ee' instead.",
       "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D1"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W10D1-Etiquette"
       }
     },
     {
       "week": 10,
       "day": 2,
-      "title": "Week 10 Day 2: Seasons",
-      "title_native": "Seasons",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 2: Table Manners",
+      "title_native": "Semaine 10 Jour 2 : À Table",
+      "theme": "Dining Etiquette",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_2_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "Bon appétit",
+          "phonetic": "bohn ah-pay-tee",
+          "native_meaning": "Enjoy your meal",
+          "english": "Enjoy your meal",
+          "example_sentence_target": "Bon appétit à tous !",
+          "example_sentence_native": "Enjoy your meal everyone!",
+          "example_sentence_phonetic": "bohn ah-pay-tee ah toos"
         },
         {
           "id": "w10_2_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Santé",
+          "phonetic": "sahn-tay",
+          "native_meaning": "Cheers (Health)",
+          "english": "Cheers",
+          "example_sentence_target": "À votre santé !",
+          "example_sentence_native": "To your health!",
+          "example_sentence_phonetic": "ah vo-truh sahn-tay"
         },
         {
           "id": "w10_2_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
+          "target": "L'addition",
+          "phonetic": "lah-dee-syohn",
+          "native_meaning": "The bill",
+          "english": "The check",
+          "example_sentence_target": "L'addition s'il vous plaît.",
+          "example_sentence_native": "The bill please.",
+          "example_sentence_phonetic": "lah-dee-syohn seel voo play"
         },
         {
           "id": "w10_2_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
+          "target": "Serviette",
+          "phonetic": "sair-vyet",
+          "native_meaning": "Napkin",
+          "english": "Napkin",
+          "example_sentence_target": "Où est ma serviette ?",
+          "example_sentence_native": "Where is my napkin?",
+          "example_sentence_phonetic": "oo ay mah sair-vyet"
         },
         {
           "id": "w10_2_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "Couteau",
+          "phonetic": "koo-toh",
+          "native_meaning": "Knife",
+          "english": "Knife",
+          "example_sentence_target": "Je n'ai pas de couteau.",
+          "example_sentence_native": "I don't have a knife.",
+          "example_sentence_phonetic": "zhuh nay pah duh koo-toh"
         }
       ],
       "dialogues": [
         {
           "id": "d10_2_1",
-          "context": "Seasons",
+          "context": "At a dinner party.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Santé ! Bon appétit !",
+              "native": "Cheers! Enjoy your meal!",
+              "phonetic": "sahn-tay! bohn ah-pay-tee"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_2_2",
-          "context": "Formal Seasons",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Merci, à vous aussi.",
+              "native": "Thank you, to you too.",
+              "phonetic": "mair-see, ah voo oh-see"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb10_2_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_2_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_2_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
-          }
-        ],
         "matching": [
           {
             "id": "m10_2_1",
-            "target": "Temps",
-            "native": "Weather"
+            "target": "Couteau",
+            "native": "Knife"
           },
           {
             "id": "m10_2_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_2_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_2_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_2_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_2_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_2_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
-            "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "target": "L'addition",
+            "native": "The bill"
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "Keep both hands on the table (but not your elbows) during a French meal. Bread is often placed directly on the tablecloth.",
+      "pronunciation_tip": "In 'Santé', the 'n' is nasal. Don't touch your tongue to the roof of your mouth.",
       "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D2"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W10D2-Dining"
       }
     },
     {
       "week": 10,
       "day": 3,
-      "title": "Week 10 Day 3: Natural Disasters",
-      "title_native": "Natural Disasters",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 3: Visiting a Home",
+      "title_native": "Semaine 10 Jour 3 : En visite",
+      "theme": "Guest Etiquette",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_3_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "Bienvenue",
+          "phonetic": "byahn-vuh-nyoo",
+          "native_meaning": "Welcome",
+          "english": "Welcome",
+          "example_sentence_target": "Bienvenue chez moi !",
+          "example_sentence_native": "Welcome to my home!",
+          "example_sentence_phonetic": "byahn-vuh-nyoo shay mwah"
         },
         {
           "id": "w10_3_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Cadeau",
+          "phonetic": "kah-doh",
+          "native_meaning": "Gift",
+          "english": "Present",
+          "example_sentence_target": "C'est un petit cadeau.",
+          "example_sentence_native": "It's a small gift.",
+          "example_sentence_phonetic": "say tuhn puh-tee kah-doh"
         },
         {
           "id": "w10_3_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
+          "target": "Entrez",
+          "phonetic": "ahn-tray",
+          "native_meaning": "Come in",
+          "english": "Enter",
+          "example_sentence_target": "Entrez, je vous en prie.",
+          "example_sentence_native": "Come in, please.",
+          "example_sentence_phonetic": "ahn-tray, zhuh voo zahn pree"
         },
         {
           "id": "w10_3_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
-        },
-        {
-          "id": "w10_3_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "À l'heure",
+          "phonetic": "ah lur",
+          "native_meaning": "On time",
+          "english": "Punctual",
+          "example_sentence_target": "Je suis toujours à l'heure.",
+          "example_sentence_native": "I am always on time.",
+          "example_sentence_phonetic": "zhuh swee too-zhoor ah lur"
         }
       ],
       "dialogues": [
         {
           "id": "d10_3_1",
-          "context": "Natural Disasters",
+          "context": "Arriving at a friend's house.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Bonjour ! Voici un petit cadeau pour vous.",
+              "native": "Hello! Here is a small gift for you.",
+              "phonetic": "bohn-zhoor! vwah-see uhn puh-tee kah-doh poor voo"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_3_2",
-          "context": "Formal Natural Disasters",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Merci beaucoup, c'est très gentil. Entrez !",
+              "native": "Thank you very much, that's very kind. Come in!",
+              "phonetic": "mair-see boh-koo, say tray zhahn-tee. ahn-tray"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_3_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_3_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_3_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m10_3_1",
-            "target": "Temps",
-            "native": "Weather"
-          },
-          {
-            "id": "m10_3_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_3_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_3_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_3_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_3_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_3_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
-            "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "id": "ss10_3_1",
+            "scrambled": ["chez", "Bienvenue", "moi", "!"],
+            "correct": "Bienvenue chez moi !",
+            "nativeHint": "Welcome to my home!"
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "When invited to a home, it's polite to bring a small gift like flowers or wine. Arriving 10-15 minutes late is often socially expected ('le quart d'heure de politesse').",
+      "pronunciation_tip": "In 'Entrez', the 'z' is silent, but it makes the 'e' sound like 'ay'.",
       "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D3"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W10D3-Guest"
       }
     },
     {
       "week": 10,
       "day": 4,
-      "title": "Week 10 Day 4: Environment",
-      "title_native": "Environment",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 4: Apéro Culture",
+      "title_native": "Semaine 10 Jour 4 : L'Apéro",
+      "theme": "Social Gatherings",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_4_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "L'apéro",
+          "phonetic": "lah-pay-roh",
+          "native_meaning": "Pre-dinner drinks",
+          "english": "Aperitif",
+          "example_sentence_target": "On fait l'apéro ?",
+          "example_sentence_native": "Shall we have drinks?",
+          "example_sentence_phonetic": "ohn fay lah-pay-roh"
         },
         {
           "id": "w10_4_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Amuse-gueule",
+          "phonetic": "ah-myooz-gul",
+          "native_meaning": "Snacks / Appetizers",
+          "english": "Appetizers",
+          "example_sentence_target": "Voulez-vous des amuse-gueules ?",
+          "example_sentence_native": "Would you like some snacks?",
+          "example_sentence_phonetic": "voo-lay-voo day zah-myooz-gul"
         },
         {
           "id": "w10_4_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
+          "target": "Verre",
+          "phonetic": "vair",
+          "native_meaning": "Glass",
+          "english": "Glass",
+          "example_sentence_target": "Un verre de vin, s'il vous plaît.",
+          "example_sentence_native": "A glass of wine, please.",
+          "example_sentence_phonetic": "uhn vair duh vahn, seel voo play"
         },
         {
           "id": "w10_4_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
-        },
-        {
-          "id": "w10_4_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "De rien",
+          "phonetic": "duh ryahn",
+          "native_meaning": "You're welcome",
+          "english": "No problem",
+          "example_sentence_target": "Merci ! - De rien.",
+          "example_sentence_native": "Thank you! - You're welcome.",
+          "example_sentence_phonetic": "mair-see! duh ryahn"
         }
       ],
       "dialogues": [
         {
           "id": "d10_4_1",
-          "context": "Environment",
+          "context": "Offering a drink during apéro.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Qu'est-ce que vous voulez boire ?",
+              "native": "What do you want to drink?",
+              "phonetic": "kes-kuh voo voo-lay bwahr"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_4_2",
-          "context": "Formal Environment",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Un verre d'eau, merci.",
+              "native": "A glass of water, thank you.",
+              "phonetic": "uhn vair doh, mair-see"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb10_4_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_4_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_4_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m10_4_1",
-            "target": "Temps",
-            "native": "Weather"
-          },
-          {
-            "id": "m10_4_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_4_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_4_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_4_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
         "multipleChoice": [
           {
             "id": "mc10_4_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_4_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
+            "question": "What is 'L'apéro'?",
+            "options": ["Breakfast", "Pre-dinner drinks", "Dessert", "Lunch"],
             "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "explanation": "L'apéro is a very important French social tradition of having drinks and snacks before dinner."
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "During apéro, it's customary to wait until everyone has their drink and say 'Santé' before taking a sip.",
+      "pronunciation_tip": "The 'r' in 'Verre' is guttural. Try making the sound in the back of your throat.",
       "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D4"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W10D4-Apero"
       }
     },
     {
       "week": 10,
       "day": 5,
-      "title": "Week 10 Day 5: Animals",
-      "title_native": "Animals",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 5: La Bise",
+      "title_native": "Semaine 10 Jour 5 : La Bise",
+      "theme": "Greetings & Physical Contact",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_5_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "La bise",
+          "phonetic": "lah beez",
+          "native_meaning": "Kiss on the cheek",
+          "english": "Cheek kiss",
+          "example_sentence_target": "On se fait la bise ?",
+          "example_sentence_native": "Shall we do the bise?",
+          "example_sentence_phonetic": "ohn suh fay lah beez"
         },
         {
           "id": "w10_5_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Serrer la main",
+          "phonetic": "say-ray lah mahn",
+          "native_meaning": "To shake hands",
+          "english": "Handshake",
+          "example_sentence_target": "Je préfère serrer la main.",
+          "example_sentence_native": "I prefer to shake hands.",
+          "example_sentence_phonetic": "zhuh pray-fair say-ray lah mahn"
         },
         {
           "id": "w10_5_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
-        },
-        {
-          "id": "w10_5_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
-        },
-        {
-          "id": "w10_5_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "S'embrasser",
+          "phonetic": "sahm-brah-say",
+          "native_meaning": "To kiss/greet",
+          "english": "To kiss",
+          "example_sentence_target": "Ils s'embrassent pour dire bonjour.",
+          "example_sentence_native": "They kiss to say hello.",
+          "example_sentence_phonetic": "eel sahm-brahs poor deer bohn-zhoor"
         }
       ],
       "dialogues": [
         {
           "id": "d10_5_1",
-          "context": "Animals",
+          "context": "Meeting a group of friends.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Bonjour tout le monde ! On se fait la bise ?",
+              "native": "Hello everyone! Shall we do the bise?",
+              "phonetic": "bohn-zhoor too luh mohnd! ohn suh fay lah beez"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_5_2",
-          "context": "Formal Animals",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Oui, bien sûr !",
+              "native": "Yes, of course!",
+              "phonetic": "wee, byahn syoor"
             }
           ]
         }
@@ -870,461 +463,190 @@
         "fillBlanks": [
           {
             "id": "fb10_5_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_5_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_5_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m10_5_1",
-            "target": "Temps",
-            "native": "Weather"
-          },
-          {
-            "id": "m10_5_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_5_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_5_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_5_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_5_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_5_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
-            "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "sentence": "On se fait la ___ ?",
+            "answer": "bise",
+            "hint": "Cheek kiss"
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "'La bise' involves touching cheeks and making a kissing sound. The number of kisses varies by region (usually 2). Men typically shake hands unless they are close friends or family.",
+      "pronunciation_tip": "In 'Bise', the 's' sounds like a 'z'.",
       "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D5"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W10D5-Greetings"
       }
     },
     {
       "week": 10,
       "day": 6,
-      "title": "Week 10 Day 6: Outdoor Activities",
-      "title_native": "Outdoor Activities",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 6: Holidays & Traditions",
+      "title_native": "Semaine 10 Jour 6 : Fêtes et Traditions",
+      "theme": "Celebrations",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_6_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "Fête",
+          "phonetic": "fet",
+          "native_meaning": "Party / Holiday",
+          "english": "Celebration",
+          "example_sentence_target": "C'est ma fête aujourd'hui !",
+          "example_sentence_native": "It's my name day today!",
+          "example_sentence_phonetic": "say mah fet oh-zhoor-dwee"
         },
         {
           "id": "w10_6_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Joyeux Noël",
+          "phonetic": "zhwah-yuh noh-el",
+          "native_meaning": "Merry Christmas",
+          "english": "Merry Christmas",
+          "example_sentence_target": "Joyeux Noël à tous !",
+          "example_sentence_native": "Merry Christmas to all!",
+          "example_sentence_phonetic": "zhwah-yuh noh-el ah toos"
         },
         {
           "id": "w10_6_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
+          "target": "Félicitations",
+          "phonetic": "fay-lee-see-tah-syohn",
+          "native_meaning": "Congratulations",
+          "english": "Congratulations",
+          "example_sentence_target": "Félicitations pour votre mariage !",
+          "example_sentence_native": "Congratulations on your wedding!",
+          "example_sentence_phonetic": "fay-lee-see-tah-syohn poor vo-truh mah-ryahzh"
         },
         {
           "id": "w10_6_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
-        },
-        {
-          "id": "w10_6_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "Bonne année",
+          "phonetic": "bun ah-nay",
+          "native_meaning": "Happy New Year",
+          "english": "Happy New Year",
+          "example_sentence_target": "Bonne année et bonne santé !",
+          "example_sentence_native": "Happy New Year and good health!",
+          "example_sentence_phonetic": "bun ah-nay ay bun sahn-tay"
         }
       ],
       "dialogues": [
         {
           "id": "d10_6_1",
-          "context": "Outdoor Activities",
+          "context": "Wishing someone a happy birthday.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Joyeux anniversaire, Marie !",
+              "native": "Happy birthday, Marie!",
+              "phonetic": "zhwah-yuh zah-nee-vair-sair, mah-ree"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_6_2",
-          "context": "Formal Outdoor Activities",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Merci beaucoup, c'est gentil !",
+              "native": "Thank you very much, that's kind!",
+              "phonetic": "mair-see boh-koo, say zhahn-tee"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb10_6_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_6_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_6_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
-          }
-        ],
         "matching": [
           {
             "id": "m10_6_1",
-            "target": "Temps",
-            "native": "Weather"
+            "target": "Bonne année",
+            "native": "Happy New Year"
           },
           {
             "id": "m10_6_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_6_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_6_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_6_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_6_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_6_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
-            "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "target": "Joyeux Noël",
+            "native": "Merry Christmas"
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "The 14th of July ('Fête Nationale') is the French national day with fireworks and parades. France also has many Catholic-origin holidays that are public holidays.",
+      "pronunciation_tip": "In 'Joyeux', the 'x' is silent unless followed by a vowel.",
       "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D6"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W10D6-Traditions"
       }
     },
     {
       "week": 10,
       "day": 7,
-      "title": "Week 10 Day 7: Nature Culture",
-      "title_native": "Nature Culture",
-      "theme": "Weather & Nature",
+      "title": "Week 10 Day 7: Review & Mistakes",
+      "title_native": "Semaine 10 Jour 7 : Révision",
+      "theme": "Politeness Review",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w10_7_1",
-          "target": "Temps",
-          "phonetic": "tan",
-          "native_meaning": "Weather",
-          "english": "Weather",
-          "example_sentence_target": "Temps.",
-          "example_sentence_native": "Weather."
+          "target": "Désolé",
+          "phonetic": "day-zoh-lay",
+          "native_meaning": "Sorry",
+          "english": "Sorry",
+          "example_sentence_target": "Je suis désolé.",
+          "example_sentence_native": "I am sorry.",
+          "example_sentence_phonetic": "zhuh swee day-zoh-lay"
         },
         {
           "id": "w10_7_2",
-          "target": "Soleil",
-          "phonetic": "so-LAY",
-          "native_meaning": "Sun",
-          "english": "Sun",
-          "example_sentence_target": "Soleil.",
-          "example_sentence_native": "Sun."
+          "target": "Pardon",
+          "phonetic": "pahr-dohn",
+          "native_meaning": "Excuse me / Sorry",
+          "english": "Pardon",
+          "example_sentence_target": "Pardon, je n'ai pas compris.",
+          "example_sentence_native": "Sorry, I didn't understand.",
+          "example_sentence_phonetic": "pahr-dohn, zhuh nay pah kohm-pree"
         },
         {
           "id": "w10_7_3",
-          "target": "Pluie",
-          "phonetic": "ploo-EE",
-          "native_meaning": "Rain",
-          "english": "Rain",
-          "example_sentence_target": "Pluie.",
-          "example_sentence_native": "Rain."
-        },
-        {
-          "id": "w10_7_4",
-          "target": "Vent",
-          "phonetic": "van",
-          "native_meaning": "Wind",
-          "english": "Wind",
-          "example_sentence_target": "Vent.",
-          "example_sentence_native": "Wind."
-        },
-        {
-          "id": "w10_7_5",
-          "target": "Neige",
-          "phonetic": "nezh",
-          "native_meaning": "Snow",
-          "english": "Snow",
-          "example_sentence_target": "Neige.",
-          "example_sentence_native": "Snow."
+          "target": "Pas de problème",
+          "phonetic": "pah duh proh-blem",
+          "native_meaning": "No problem",
+          "english": "No problem",
+          "example_sentence_target": "C'est correct ? - Pas de problème.",
+          "example_sentence_native": "Is it okay? - No problem.",
+          "example_sentence_phonetic": "say koh-rekt? - pah duh proh-blem"
         }
       ],
       "dialogues": [
         {
           "id": "d10_7_1",
-          "context": "Nature Culture",
+          "context": "Correcting a social mistake.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Temps!",
-              "native": "Weather!",
-              "phonetic": "tan"
+              "target": "Oh, pardon ! Je vous ai tutoyé.",
+              "native": "Oh, sorry! I used 'tu' with you.",
+              "phonetic": "oh, pahr-dohn! zhuh voo zay tyoo-twah-yay"
             },
             {
               "speaker": "B",
-              "target": "Temps! Soleil!",
-              "native": "Weather! Sun!",
-              "phonetic": "tan so-LAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            }
-          ]
-        },
-        {
-          "id": "d10_7_2",
-          "context": "Formal Nature Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Soleil!",
-              "native": "Sun!",
-              "phonetic": "so-LAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Pluie!",
-              "native": "Rain!",
-              "phonetic": "ploo-EE"
-            },
-            {
-              "speaker": "A",
-              "target": "Vent! Neige!",
-              "native": "Wind! Snow!",
-              "phonetic": "van nezh"
+              "target": "Ce n'est pas grave, ce n'est rien.",
+              "native": "It's not serious, it's nothing.",
+              "phonetic": "suh nay pah grahv, suh nay ryahn"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_7_1",
-            "sentence": "___ means 'Weather' in French",
-            "answer": "Temps",
-            "hint": "Weather"
-          },
-          {
-            "id": "fb10_7_2",
-            "sentence": "___ means 'Sun' in French",
-            "answer": "Soleil",
-            "hint": "Sun"
-          },
-          {
-            "id": "fb10_7_3",
-            "sentence": "___ means 'Rain' in French",
-            "answer": "Pluie",
-            "hint": "Rain"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m10_7_1",
-            "target": "Temps",
-            "native": "Weather"
-          },
-          {
-            "id": "m10_7_2",
-            "target": "Soleil",
-            "native": "Sun"
-          },
-          {
-            "id": "m10_7_3",
-            "target": "Pluie",
-            "native": "Rain"
-          },
-          {
-            "id": "m10_7_4",
-            "target": "Vent",
-            "native": "Wind"
-          },
-          {
-            "id": "m10_7_5",
-            "target": "Neige",
-            "native": "Snow"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_7_1",
-            "question": "What does 'Temps' mean?",
-            "options": [
-              "Weather",
-              "Sun",
-              "Rain",
-              "Wind"
-            ],
-            "correct": 0,
-            "explanation": "'Temps' means Weather in English."
-          },
-          {
-            "id": "mc10_7_2",
-            "question": "How do you say 'Sun' in French?",
-            "options": [
-              "Temps",
-              "Soleil",
-              "Pluie",
-              "Vent"
-            ],
-            "correct": 1,
-            "explanation": "'Soleil' means Sun."
+            "id": "ss10_7_1",
+            "scrambled": ["de", "Pas", "problème", "."],
+            "correct": "Pas de problème .",
+            "nativeHint": "No problem."
           }
         ]
       },
-      "cultural_note": "French families traditionally gather for long Sunday lunches.",
-      "pronunciation_tip": "'-tion' sounds like '-syon' — nation = na-SYON.",
+      "cultural_note": "If you make a mistake with tu/vous or etiquette, a quick 'Pardon' or 'Désolé' is always appreciated by French speakers.",
+      "pronunciation_tip": "Review all nasal sounds from the week (an, en, on, in).",
       "progress": {
-        "xp": 190,
+        "xp": 150,
         "streak_bonus": 20,
-        "badge": "W10D7"
+        "badge": "W10-Culture-Master"
       }
     }
   ]

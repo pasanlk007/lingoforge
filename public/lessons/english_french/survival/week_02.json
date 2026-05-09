@@ -1,3 +1,4 @@
+
 {
   "week": 2,
   "path": "survival",
@@ -7,1325 +8,268 @@
     {
       "week": 2,
       "day": 1,
-      "title": "Week 2 Day 1: Office Vocabulary",
-      "title_native": "Office Vocabulary",
-      "theme": "At the Workplace",
+      "title": "Day 8: Asking for Help",
+      "title_native": "Demander de l'aide",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_1_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_1_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_1_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_1_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_1_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_1_1", "target": "Aide", "phonetic": "ed", "native_meaning": "Help", "english": "Help", "example_sentence_target": "J'ai besoin d'aide.", "example_sentence_native": "I need help.", "example_sentence_phonetic": "zhay buh-zwan ded" },
+        { "id": "w2_1_2", "target": "Secours", "phonetic": "suh-koor", "native_meaning": "Rescue", "english": "Rescue", "example_sentence_target": "Appelez les secours !", "example_sentence_native": "Call for rescue!", "example_sentence_phonetic": "ah-play lay suh-koor" },
+        { "id": "w2_1_3", "target": "S'il vous plaît", "phonetic": "seel voo play", "native_meaning": "Please", "english": "Please", "example_sentence_target": "S'il vous plaît, aidez-moi.", "example_sentence_native": "Please, help me.", "example_sentence_phonetic": "seel voo play ay-day mwah" },
+        { "id": "w2_1_4", "target": "Désolé", "phonetic": "day-zoh-lay", "native_meaning": "Sorry", "english": "Sorry", "example_sentence_target": "Je suis désolé.", "example_sentence_native": "I am sorry.", "example_sentence_phonetic": "zhuh swee day-zoh-lay" },
+        { "id": "w2_1_5", "target": "Excusez-moi", "phonetic": "ex-kew-zay mwah", "native_meaning": "Excuse me", "english": "Excuse me", "example_sentence_target": "Excusez-moi, une question.", "example_sentence_native": "Excuse me, a question.", "example_sentence_phonetic": "ex-kew-zay mwah ewn kes-tyohn" },
+        { "id": "w2_1_6", "target": "Pardon", "phonetic": "pahr-dohn", "native_meaning": "Pardon", "english": "Pardon", "example_sentence_target": "Pardon, monsieur.", "example_sentence_native": "Pardon, sir.", "example_sentence_phonetic": "pahr-dohn muh-syuh" }
+      ],
+      "sentences": [
+        { "id": "s2_1_1", "target": "Pouvez-vous m'aider ?", "native": "Can you help me?", "phonetic": "poo-vay voo may-day" },
+        { "id": "s2_1_2", "target": "Je suis perdu.", "native": "I am lost.", "phonetic": "zhuh swee pair-dew" },
+        { "id": "s2_1_3", "target": "C'est une urgence.", "native": "It is an emergency.", "phonetic": "say tewn ewr-zhahns" },
+        { "id": "s2_1_4", "target": "Je ne sais pas.", "native": "I don't know.", "phonetic": "zhuh nuh say pah" }
       ],
       "dialogues": [
-        {
-          "id": "d2_1_1",
-          "context": "Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_1_2",
-          "context": "Formal Office Vocabulary",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_1_1", "context": "At the station.", "lines": [{ "speaker": "A", "target": "Excusez-moi, pouvez-vous m'aider ?", "native": "Excuse me, can you help me?", "phonetic": "ex-kew-zay mwah poo-vay voo may-day" }, { "speaker": "B", "target": "Oui, bien sûr.", "native": "Yes, of course.", "phonetic": "wee byan sewr" }] },
+        { "id": "d2_1_2", "context": "Lost in the city.", "lines": [{ "speaker": "A", "target": "Pardon, je suis perdu.", "native": "Pardon, I am lost.", "phonetic": "pahr-dohn zhuh swee pair-dew" }, { "speaker": "B", "target": "Où allez-vous ?", "native": "Where are you going?", "phonetic": "oo ah-lay voo" }] },
+        { "id": "d2_1_3", "context": "Emergency call.", "lines": [{ "speaker": "A", "target": "Au secours ! C'est urgent.", "native": "Help! It's urgent.", "phonetic": "oh suh-koor say tewr-zhahn" }, { "speaker": "B", "target": "Calmez-vous, j'appelle la police.", "native": "Calm down, I'm calling the police.", "phonetic": "kahl-may voo zhah-pel lah poh-lees" }] },
+        { "id": "d2_1_4", "context": "Asking for information.", "lines": [{ "speaker": "A", "target": "Excusez-moi, je ne comprends pas.", "native": "Excuse me, I don't understand.", "phonetic": "ex-kew-zay mwah zhuh nuh kohn-prahn pah" }, { "speaker": "B", "target": "D'accord, je répète.", "native": "Okay, I repeat.", "phonetic": "dah-kor zhuh ray-pet" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_1_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_1_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_1_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_1_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_1_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_1_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_1_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_1_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_1_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_1_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_1_1", "sentence": "___-moi, s'il vous plaît.", "answer": "Aidez", "hint": "Help" }],
+        "matching": [{ "id": "m2_1_1", "target": "Désolé", "native": "Sorry" }, { "id": "m2_1_2", "target": "Aide", "native": "Help" }],
+        "sentenceScramble": [{ "id": "ss2_1_1", "scrambled": ["perdu", "Je", "suis"], "correct": "Je suis perdu", "nativeHint": "I am lost" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D1"
-      }
+      "cultural_note": "In France, always start a conversation with 'Bonjour' before asking for help.",
+      "pronunciation_tip": "The 'h' in French is silent. 'Hôpital' is pronounced like 'oh-pee-tahl'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D1-Help" }
     },
     {
       "week": 2,
       "day": 2,
-      "title": "Week 2 Day 2: Work Phrases",
-      "title_native": "Work Phrases",
-      "theme": "At the Workplace",
+      "title": "Day 9: Understanding Questions",
+      "title_native": "Comprendre les questions",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_2_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_2_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_2_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_2_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_2_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_2_1", "target": "Quoi", "phonetic": "kwah", "native_meaning": "What", "english": "What", "example_sentence_target": "C'est quoi ?", "example_sentence_native": "What is it?", "example_sentence_phonetic": "say kwah" },
+        { "id": "w2_2_2", "target": "Où", "phonetic": "oo", "native_meaning": "Where", "english": "Where", "example_sentence_target": "Où est le taxi ?", "example_sentence_native": "Where is the taxi?", "example_sentence_phonetic": "oo ay luh tahk-see" },
+        { "id": "w2_2_3", "target": "Quand", "phonetic": "kahn", "native_meaning": "When", "english": "When", "example_sentence_target": "C'est quand ?", "example_sentence_native": "When is it?", "example_sentence_phonetic": "say kahn" },
+        { "id": "w2_2_4", "target": "Qui", "phonetic": "kee", "native_meaning": "Who", "english": "Who", "example_sentence_target": "Qui est-ce ?", "example_sentence_native": "Who is it?", "example_sentence_phonetic": "kee es" },
+        { "id": "w2_2_5", "target": "Comment", "phonetic": "koh-mahn", "native_meaning": "How", "english": "How", "example_sentence_target": "Comment ça va ?", "example_sentence_native": "How is it going?", "example_sentence_phonetic": "koh-mahn sah vah" },
+        { "id": "w2_2_6", "target": "Pourquoi", "phonetic": "poor-kwah", "native_meaning": "Why", "english": "Why", "example_sentence_target": "Pourquoi pas ?", "example_sentence_native": "Why not?", "example_sentence_phonetic": "poor-kwah pah" }
+      ],
+      "sentences": [
+        { "id": "s2_2_1", "target": "Je ne comprends pas.", "native": "I don't understand.", "phonetic": "zhuh nuh kohn-prahn pah" },
+        { "id": "s2_2_2", "target": "Répétez, s'il vous plaît.", "native": "Repeat, please.", "phonetic": "ray-pay-tay seel voo play" },
+        { "id": "s2_2_3", "target": "Parlez lentement.", "native": "Speak slowly.", "phonetic": "pahr-lay lahnt-mahn" },
+        { "id": "s2_2_4", "target": "Qu'est-ce que c'est ?", "native": "What is that?", "phonetic": "kes-kuh say" }
       ],
       "dialogues": [
-        {
-          "id": "d2_2_1",
-          "context": "Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_2_2",
-          "context": "Formal Work Phrases",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_2_1", "context": "At a shop.", "lines": [{ "speaker": "A", "target": "C'est quoi ?", "native": "What is it?", "phonetic": "say kwah" }, { "speaker": "B", "target": "C'est du fromage.", "native": "It's cheese.", "phonetic": "say dew froh-mahzh" }] },
+        { "id": "d2_2_2", "context": "Looking for someone.", "lines": [{ "speaker": "A", "target": "Où est Marie ?", "native": "Where is Marie?", "phonetic": "oo ay mah-ree" }, { "speaker": "B", "target": "Elle est là-bas.", "native": "She is over there.", "phonetic": "el ay lah-bah" }] },
+        { "id": "d2_2_3", "context": "Language barrier.", "lines": [{ "speaker": "A", "target": "Pardon, je ne comprends pas.", "native": "Sorry, I don't understand.", "phonetic": "pahr-dohn zhuh nuh kohn-prahn pah" }, { "speaker": "B", "target": "D'accord, parlez-vous anglais ?", "native": "Okay, do you speak English?", "phonetic": "dah-kor pahr-lay voo ahn-glay" }] },
+        { "id": "d2_2_4", "context": "Time of arrival.", "lines": [{ "speaker": "A", "target": "Quand arrive le bus ?", "native": "When does the bus arrive?", "phonetic": "kahn ah-reev luh bews" }, { "speaker": "B", "target": "Dans dix minutes.", "native": "In ten minutes.", "phonetic": "dahn dee mee-newt" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_2_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_2_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_2_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_2_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_2_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_2_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_2_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_2_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_2_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_2_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_2_1", "sentence": "___ est le restaurant ?", "answer": "Où", "hint": "Where" }],
+        "matching": [{ "id": "m2_2_1", "target": "Qui", "native": "Who" }, { "id": "m2_2_2", "target": "Pourquoi", "native": "Why" }],
+        "sentenceScramble": [{ "id": "ss2_2_1", "scrambled": ["pas", "Je", "comprends", "ne"], "correct": "Je ne comprends pas", "nativeHint": "I don't understand" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D2"
-      }
+      "cultural_note": "French people appreciate when you try to speak their language, even if it's just 'Pardon, je ne comprends pas'.",
+      "pronunciation_tip": "Nasal sounds are key. 'Quand' sounds like 'kahn' but the 'n' is whispered through the nose.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D2-Questions" }
     },
     {
       "week": 2,
       "day": 3,
-      "title": "Week 2 Day 3: Email & Phone",
-      "title_native": "Email & Phone",
-      "theme": "At the Workplace",
+      "title": "Day 10: Giving Simple Information",
+      "title_native": "Donner des informations simples",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_3_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_3_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_3_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_3_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_3_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_3_1", "target": "Nom", "phonetic": "nohn", "native_meaning": "Name", "english": "Name", "example_sentence_target": "Quel est votre nom ?", "example_sentence_native": "What is your name?", "example_sentence_phonetic": "kel ay voh-truh nohn" },
+        { "id": "w2_3_2", "target": "Âge", "phonetic": "ahzh", "native_meaning": "Age", "english": "Age", "example_sentence_target": "Quel âge avez-vous ?", "example_sentence_native": "How old are you?", "example_sentence_phonetic": "kel ahzh ah-vay voo" },
+        { "id": "w2_3_3", "target": "Adresse", "phonetic": "ah-dress", "native_meaning": "Address", "english": "Address", "example_sentence_target": "Voici mon adresse.", "example_sentence_native": "Here is my address.", "example_sentence_phonetic": "vwah-see mohn ah-dress" },
+        { "id": "w2_3_4", "target": "Téléphone", "phonetic": "tay-lay-fohn", "native_meaning": "Telephone", "english": "Telephone", "example_sentence_target": "Quel est votre téléphone ?", "example_sentence_native": "What is your phone number?", "example_sentence_phonetic": "kel ay voh-truh tay-lay-fohn" },
+        { "id": "w2_3_5", "target": "Nationalité", "phonetic": "nah-syoh-nah-lee-tay", "native_meaning": "Nationality", "english": "Nationality", "example_sentence_target": "Ma nationalité est américaine.", "example_sentence_native": "My nationality is American.", "example_sentence_phonetic": "mah nah-syoh-nah-lee-tay ay ah-may-ree-ken" },
+        { "id": "w2_3_6", "target": "Profession", "phonetic": "proh-fess-yohn", "native_meaning": "Profession", "english": "Profession", "example_sentence_target": "Quelle est votre profession ?", "example_sentence_native": "What is your profession?", "example_sentence_phonetic": "kel ay voh-truh proh-fess-yohn" }
+      ],
+      "sentences": [
+        { "id": "s2_3_1", "target": "Je m'appelle John.", "native": "My name is John.", "phonetic": "zhuh mah-pel John" },
+        { "id": "s2_3_2", "target": "J'habite à Paris.", "native": "I live in Paris.", "phonetic": "zhah-beet ah pah-ree" },
+        { "id": "s2_3_3", "target": "Mon numéro est...", "native": "My number is...", "phonetic": "mohn new-may-roh ay" },
+        { "id": "s2_3_4", "target": "Je suis de Londres.", "native": "I am from London.", "phonetic": "zhuh swee duh lohn-druh" }
       ],
       "dialogues": [
-        {
-          "id": "d2_3_1",
-          "context": "Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_3_2",
-          "context": "Formal Email & Phone",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_3_1", "context": "Introduction.", "lines": [{ "speaker": "A", "target": "Quel est votre nom ?", "native": "What is your name?", "phonetic": "kel ay voh-truh nohn" }, { "speaker": "B", "target": "Je m'appelle Marc.", "native": "My name is Marc.", "phonetic": "zhuh mah-pel mahrk" }] },
+        { "id": "d2_3_2", "context": "Asking about home.", "lines": [{ "speaker": "A", "target": "Où habitez-vous ?", "native": "Where do you live?", "phonetic": "oo ah-bee-tay voo" }, { "speaker": "B", "target": "J'habite à Lyon.", "native": "I live in Lyon.", "phonetic": "zhah-beet ah lee-ohn" }] },
+        { "id": "d2_3_3", "context": "Nationality check.", "lines": [{ "speaker": "A", "target": "Êtes-vous français ?", "native": "Are you French?", "phonetic": "et voo frahn-say" }, { "speaker": "B", "target": "Non, je suis anglais.", "native": "No, I am English.", "phonetic": "nohn zhuh swee zahn-glay" }] },
+        { "id": "d2_3_4", "context": "Phone number swap.", "lines": [{ "speaker": "A", "target": "Donnez-moi votre téléphone.", "native": "Give me your phone number.", "phonetic": "dohn-ay mwah voh-truh tay-lay-fohn" }, { "speaker": "B", "target": "D'accord, c'est le 01...", "native": "Okay, it's 01...", "phonetic": "dah-kor say luh zeh-roh uhn" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_3_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_3_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_3_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_3_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_3_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_3_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_3_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_3_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_3_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_3_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_3_1", "sentence": "Je m'___ Alice.", "answer": "appelle", "hint": "call myself" }],
+        "matching": [{ "id": "m2_3_1", "target": "Nom", "native": "Name" }, { "id": "m2_3_2", "target": "Adresse", "native": "Address" }],
+        "sentenceScramble": [{ "id": "ss2_3_1", "scrambled": ["Paris", "J'habite", "à"], "correct": "J'habite à Paris", "nativeHint": "I live in Paris" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D3"
-      }
+      "cultural_note": "People often ask 'Qu'est-ce que vous faites dans la vie?' (What do you do for a living?) in casual conversation.",
+      "pronunciation_tip": "The word 'nom' does not pronounce the 'm'. It's a short, nasal 'nohn'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D3-Info" }
     },
     {
       "week": 2,
       "day": 4,
-      "title": "Week 2 Day 4: Meetings",
-      "title_native": "Meetings",
-      "theme": "At the Workplace",
+      "title": "Day 11: Asking Location",
+      "title_native": "Demander l'emplacement",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_4_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_4_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_4_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_4_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_4_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_4_1", "target": "Ici", "phonetic": "ee-see", "native_meaning": "Here", "english": "Here", "example_sentence_target": "C'est ici ?", "example_sentence_native": "Is it here?", "example_sentence_phonetic": "say tee-see" },
+        { "id": "w2_4_2", "target": "Là-bas", "phonetic": "lah-bah", "native_meaning": "Over there", "english": "Over there", "example_sentence_target": "Le bus est là-bas.", "example_sentence_native": "The bus is over there.", "example_sentence_phonetic": "luh bews ay lah-bah" },
+        { "id": "w2_4_3", "target": "Près", "phonetic": "preh", "native_meaning": "Near", "english": "Near", "example_sentence_target": "Est-ce près d'ici ?", "example_sentence_native": "Is it near here?", "example_sentence_phonetic": "ess preh dee-see" },
+        { "id": "w2_4_4", "target": "Loin", "phonetic": "lwan", "native_meaning": "Far", "english": "Far", "example_sentence_target": "Ce n'est pas loin.", "example_sentence_native": "It's not far.", "example_sentence_phonetic": "suh nay pah lwan" },
+        { "id": "w2_4_5", "target": "Droite", "phonetic": "drwaht", "native_meaning": "Right", "english": "Right", "example_sentence_target": "À droite, s'il vous plaît.", "example_sentence_native": "To the right, please.", "example_sentence_phonetic": "ah drwaht seel voo play" },
+        { "id": "w2_4_6", "target": "Gauche", "phonetic": "gohsh", "native_meaning": "Left", "english": "Left", "example_sentence_target": "C'est à gauche.", "example_sentence_native": "It's on the left.", "example_sentence_phonetic": "say tah gohsh" }
+      ],
+      "sentences": [
+        { "id": "s2_4_1", "target": "Où est la banque ?", "native": "Where is the bank?", "phonetic": "oo ay lah bahnk" },
+        { "id": "s2_4_2", "target": "Est-ce près d'ici ?", "native": "Is it near here?", "phonetic": "ess preh dee-see" },
+        { "id": "s2_4_3", "target": "Allez tout droit.", "native": "Go straight ahead.", "phonetic": "ah-lay too drwah" },
+        { "id": "s2_4_4", "target": "C'est juste là.", "native": "It's right there.", "phonetic": "say zhewst lah" }
       ],
       "dialogues": [
-        {
-          "id": "d2_4_1",
-          "context": "Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_4_2",
-          "context": "Formal Meetings",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_4_1", "context": "Finding a toilet.", "lines": [{ "speaker": "A", "target": "Où sont les toilettes ?", "native": "Where are the toilets?", "phonetic": "oo sohn lay twah-let" }, { "speaker": "B", "target": "C'est au fond à droite.", "native": "It's at the back on the right.", "phonetic": "say toh fohn ah drwaht" }] },
+        { "id": "d2_4_2", "context": "Looking for the metro.", "lines": [{ "speaker": "A", "target": "Pardon, le métro est loin ?", "native": "Pardon, is the metro far?", "phonetic": "pahr-dohn luh may-troh ay lwan" }, { "speaker": "B", "target": "Non, c'est tout près.", "native": "No, it's very close.", "phonetic": "nohn say too preh" }] },
+        { "id": "d2_4_3", "context": "Asking directions to a museum.", "lines": [{ "speaker": "A", "target": "Le musée est à gauche ?", "native": "Is the museum on the left?", "phonetic": "luh mew-zay ay tah gohsh" }, { "speaker": "B", "target": "Oui, après le café.", "native": "Yes, after the cafe.", "phonetic": "wee ah-preh luh kah-fay" }] },
+        { "id": "d2_4_4", "context": "In a taxi.", "lines": [{ "speaker": "A", "target": "C'est ici ?", "native": "Is it here?", "phonetic": "say tee-see" }, { "speaker": "B", "target": "Non, c'est un peu plus loin.", "native": "No, it's a bit further.", "phonetic": "nohn say tuh puh plew lwan" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_4_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_4_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_4_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_4_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_4_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_4_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_4_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_4_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_4_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_4_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_4_1", "sentence": "C'est à ___.", "answer": "droite", "hint": "right" }],
+        "matching": [{ "id": "m2_4_1", "target": "Ici", "native": "Here" }, { "id": "m2_4_2", "target": "Gauche", "native": "Left" }],
+        "sentenceScramble": [{ "id": "ss2_4_1", "scrambled": ["Où", "la", "est", "banque", "?"], "correct": "Où est la banque ?", "nativeHint": "Where is the bank?" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D4"
-      }
+      "cultural_note": "French towns are centered around a 'mairie' (town hall) and a 'place' (square).",
+      "pronunciation_tip": "The 'oi' sound in 'droite' is like 'wah' in 'water'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D4-Location" }
     },
     {
       "week": 2,
       "day": 5,
-      "title": "Week 2 Day 5: Job Titles",
-      "title_native": "Job Titles",
-      "theme": "At the Workplace",
+      "title": "Day 12: Directions",
+      "title_native": "Les directions",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_5_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_5_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_5_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_5_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_5_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_5_1", "target": "Nord", "phonetic": "nohr", "native_meaning": "North", "english": "North", "example_sentence_target": "C'est vers le nord.", "example_sentence_native": "It's towards the north.", "example_sentence_phonetic": "say vair luh nohr" },
+        { "id": "w2_5_2", "target": "Sud", "phonetic": "sewd", "native_meaning": "South", "english": "South", "example_sentence_target": "Le sud de la France.", "example_sentence_native": "The south of France.", "example_sentence_phonetic": "luh sewd duh lah frahns" },
+        { "id": "w2_5_3", "target": "Est", "phonetic": "est", "native_meaning": "East", "english": "East", "example_sentence_target": "L'est de la ville.", "example_sentence_native": "The east of the city.", "example_sentence_phonetic": "lest duh lah veel" },
+        { "id": "w2_5_4", "target": "Ouest", "phonetic": "west", "native_meaning": "West", "english": "West", "example_sentence_target": "L'ouest est par là.", "example_sentence_native": "West is that way.", "example_sentence_phonetic": "lwest ay pahr lah" },
+        { "id": "w2_5_5", "target": "Devant", "phonetic": "duh-vahn", "native_meaning": "In front of", "english": "In front of", "example_sentence_target": "C'est devant vous.", "example_sentence_native": "It's in front of you.", "example_sentence_phonetic": "say duh-vahn voo" },
+        { "id": "w2_5_6", "target": "Derrière", "phonetic": "deh-ryair", "native_meaning": "Behind", "english": "Behind", "example_sentence_target": "C'est derrière le bâtiment.", "example_sentence_native": "It's behind the building.", "example_sentence_phonetic": "say deh-ryair luh bah-tee-mahn" }
+      ],
+      "sentences": [
+        { "id": "s2_5_1", "target": "Tournez à droite.", "native": "Turn right.", "phonetic": "toor-nay ah drwaht" },
+        { "id": "s2_5_2", "target": "C'est après le feu.", "native": "It's after the traffic light.", "phonetic": "say ah-preh luh fuh" },
+        { "id": "s2_5_3", "target": "Le magasin est devant vous.", "native": "The shop is in front of you.", "phonetic": "luh mah-gah-zan ay duh-vahn voo" },
+        { "id": "s2_5_4", "target": "C'est au coin.", "native": "It's at the corner.", "phonetic": "say toh kwan" }
       ],
       "dialogues": [
-        {
-          "id": "d2_5_1",
-          "context": "Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_5_2",
-          "context": "Formal Job Titles",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_5_1", "context": "Asking for a shop.", "lines": [{ "speaker": "A", "target": "Où est la boulangerie ?", "native": "Where is the bakery?", "phonetic": "oo ay lah boo-lahn-zhuh-ree" }, { "speaker": "B", "target": "Tournez à gauche au coin.", "native": "Turn left at the corner.", "phonetic": "toor-nay ah gohsh oh kwan" }] },
+        { "id": "d2_5_2", "context": "Directions to a hotel.", "lines": [{ "speaker": "A", "target": "L'hôtel est loin ?", "native": "Is the hotel far?", "phonetic": "loh-tel ay lwan" }, { "speaker": "B", "target": "Non, c'est juste derrière l'église.", "native": "No, it's just behind the church.", "phonetic": "nohn say zhewst deh-ryair lay-gleez" }] },
+        { "id": "d2_5_3", "context": "Compass directions.", "lines": [{ "speaker": "A", "target": "Je vais vers le nord ?", "native": "Am I going north?", "phonetic": "zhuh vay vair luh nohr" }, { "speaker": "B", "target": "Oui, continuez tout droit.", "native": "Yes, continue straight ahead.", "phonetic": "wee kohn-tee-new-ay too drwah" }] },
+        { "id": "d2_5_4", "context": "Traffic light instruction.", "lines": [{ "speaker": "A", "target": "Je m'arrête ici ?", "native": "Do I stop here?", "phonetic": "zhuh mah-ret ee-see" }, { "speaker": "B", "target": "Non, tournez au feu.", "native": "No, turn at the traffic light.", "phonetic": "nohn toor-nay oh fuh" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_5_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_5_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_5_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_5_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_5_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_5_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_5_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_5_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_5_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_5_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_5_1", "sentence": "Tournez à ___.", "answer": "gauche", "hint": "left" }],
+        "matching": [{ "id": "m2_5_1", "target": "Sud", "native": "South" }, { "id": "m2_5_2", "target": "Derrière", "native": "Behind" }],
+        "sentenceScramble": [{ "id": "ss2_5_1", "scrambled": ["à", "Tournez", "droite"], "correct": "Tournez à droite", "nativeHint": "Turn right" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D5"
-      }
+      "cultural_note": "French addresses usually place the house number before the street name.",
+      "pronunciation_tip": "The 'est' (East) is pronounced with the 't', unlike the 'est' (is).",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D5-Directions" }
     },
     {
       "week": 2,
       "day": 6,
-      "title": "Week 2 Day 6: Working Hours",
-      "title_native": "Working Hours",
-      "theme": "At the Workplace",
+      "title": "Day 13: Public Places",
+      "title_native": "Les lieux publics",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_6_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_6_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_6_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_6_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_6_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_6_1", "target": "Hôpital", "phonetic": "oh-pee-tahl", "native_meaning": "Hospital", "english": "Hospital", "example_sentence_target": "Où est l'hôpital ?", "example_sentence_native": "Where is the hospital?", "example_sentence_phonetic": "oo ay loh-pee-tahl" },
+        { "id": "w2_6_2", "target": "Pharmacie", "phonetic": "fahr-mah-see", "native_meaning": "Pharmacy", "english": "Pharmacy", "example_sentence_target": "Il y a une pharmacie ici ?", "example_sentence_native": "Is there a pharmacy here?", "example_sentence_phonetic": "eel ee ah ewn fahr-mah-see ee-see" },
+        { "id": "w2_6_3", "target": "Gare", "phonetic": "gahr", "native_meaning": "Station", "english": "Train Station", "example_sentence_target": "Je vais à la gare.", "example_sentence_native": "I am going to the station.", "example_sentence_phonetic": "zhuh vay ah lah gahr" },
+        { "id": "w2_6_4", "target": "Aéroport", "phonetic": "ah-ay-roh-pohr", "native_meaning": "Airport", "english": "Airport", "example_sentence_target": "L'aéroport est loin ?", "example_sentence_native": "Is the airport far?", "example_sentence_phonetic": "lah-ay-roh-pohr ay lwan" },
+        { "id": "w2_6_5", "target": "Hôtel", "phonetic": "oh-tel", "native_meaning": "Hotel", "english": "Hotel", "example_sentence_target": "Je cherche mon hôtel.", "example_sentence_native": "I am looking for my hotel.", "example_sentence_phonetic": "zhuh shairsh mohn oh-tel" },
+        { "id": "w2_6_6", "target": "Restaurant", "phonetic": "res-toh-rahn", "native_meaning": "Restaurant", "english": "Restaurant", "example_sentence_target": "Un bon restaurant, s'il vous plaît.", "example_sentence_native": "A good restaurant, please.", "example_sentence_phonetic": "uhn bohn res-toh-rahn seel voo play" }
+      ],
+      "sentences": [
+        { "id": "s2_6_1", "target": "Où est l'hôpital ?", "native": "Where is the hospital?", "phonetic": "oo ay loh-pee-tahl" },
+        { "id": "s2_6_2", "target": "Je cherche la gare.", "native": "I am looking for the station.", "phonetic": "zhuh shairsh lah gahr" },
+        { "id": "s2_6_3", "target": "La pharmacie est ouverte ?", "native": "Is the pharmacy open?", "phonetic": "lah fahr-mah-see ay too-vairt" },
+        { "id": "s2_6_4", "target": "C'est un bon restaurant.", "native": "It is a good restaurant.", "phonetic": "say tuhn bohn res-toh-rahn" }
       ],
       "dialogues": [
-        {
-          "id": "d2_6_1",
-          "context": "Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_6_2",
-          "context": "Formal Working Hours",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_6_1", "context": "In need of medicine.", "lines": [{ "speaker": "A", "target": "Excusez-moi, où est la pharmacie ?", "native": "Excuse me, where is the pharmacy?", "phonetic": "ex-kew-zay mwah oo ay lah fahr-mah-see" }, { "speaker": "B", "target": "Elle est juste là, à côté de la banque.", "native": "It is right there, next to the bank.", "phonetic": "el ay zhewst lah ah koh-tay duh lah bahnk" }] },
+        { "id": "d2_6_2", "context": "Going to catch a train.", "lines": [{ "speaker": "A", "target": "La gare est loin ?", "native": "Is the station far?", "phonetic": "lah gahr ay lwan" }, { "speaker": "B", "target": "Non, c'est à cinq minutes à pied.", "native": "No, it's five minutes on foot.", "phonetic": "nohn say tah sank mee-newt ah pyay" }] },
+        { "id": "d2_6_3", "context": "Checking in at a hotel.", "lines": [{ "speaker": "A", "target": "Bonjour, je cherche mon hôtel.", "native": "Hello, I am looking for my hotel.", "phonetic": "bohn-zhoor zhuh shairsh mohn oh-tel" }, { "speaker": "B", "target": "Quel est le nom de l'hôtel ?", "native": "What is the name of the hotel?", "phonetic": "kel ay luh nohn duh loh-tel" }] },
+        { "id": "d2_6_4", "context": "Looking for lunch.", "lines": [{ "speaker": "A", "target": "Il y a un restaurant ici ?", "native": "Is there a restaurant here?", "phonetic": "eel ee ah uhn res-toh-rahn ee-see" }, { "speaker": "B", "target": "Oui, au bout de la rue.", "native": "Yes, at the end of the street.", "phonetic": "wee oh boo duh lah rew" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_6_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_6_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_6_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_6_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_6_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_6_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_6_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_6_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_6_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_6_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_6_1", "sentence": "Où est l'___ ?", "answer": "hôpital", "hint": "hospital" }],
+        "matching": [{ "id": "m2_6_1", "target": "Gare", "native": "Station" }, { "id": "m2_6_2", "target": "Pharmacie", "native": "Pharmacy" }],
+        "sentenceScramble": [{ "id": "ss2_6_1", "scrambled": ["gare", "cherche", "Je", "la"], "correct": "Je cherche la gare", "nativeHint": "I am looking for the station" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D6"
-      }
+      "cultural_note": "Pharmacies in France have a big green flashing cross outside.",
+      "pronunciation_tip": "'Gare' sounds like 'car' with a 'g'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D6-Places" }
     },
     {
       "week": 2,
       "day": 7,
-      "title": "Week 2 Day 7: Work Culture",
-      "title_native": "Work Culture",
-      "theme": "At the Workplace",
+      "title": "Day 14: Travel",
+      "title_native": "Les voyages",
+      "theme": "Basic Communication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
-        {
-          "id": "w2_7_1",
-          "target": "Travail",
-          "phonetic": "tra-VAY",
-          "native_meaning": "Work",
-          "english": "Work",
-          "example_sentence_target": "Travail.",
-          "example_sentence_native": "Work."
-        },
-        {
-          "id": "w2_7_2",
-          "target": "Bureau",
-          "phonetic": "byoo-ROH",
-          "native_meaning": "Office",
-          "english": "Office",
-          "example_sentence_target": "Bureau.",
-          "example_sentence_native": "Office."
-        },
-        {
-          "id": "w2_7_3",
-          "target": "Réunion",
-          "phonetic": "ray-yoo-NYOH",
-          "native_meaning": "Meeting",
-          "english": "Meeting",
-          "example_sentence_target": "Réunion.",
-          "example_sentence_native": "Meeting."
-        },
-        {
-          "id": "w2_7_4",
-          "target": "Collègue",
-          "phonetic": "ko-LEG",
-          "native_meaning": "Colleague",
-          "english": "Colleague",
-          "example_sentence_target": "Collègue.",
-          "example_sentence_native": "Colleague."
-        },
-        {
-          "id": "w2_7_5",
-          "target": "Patron",
-          "phonetic": "pa-TROH",
-          "native_meaning": "Boss",
-          "english": "Boss",
-          "example_sentence_target": "Patron.",
-          "example_sentence_native": "Boss."
-        }
+        { "id": "w2_7_1", "target": "Billet", "phonetic": "bee-yay", "native_meaning": "Ticket", "english": "Ticket", "example_sentence_target": "Un billet, s'il vous plaît.", "example_sentence_native": "A ticket, please.", "example_sentence_phonetic": "uhn bee-yay seel voo play" },
+        { "id": "w2_7_2", "target": "Valise", "phonetic": "vah-leez", "native_meaning": "Suitcase", "english": "Suitcase", "example_sentence_target": "Voici ma valise.", "example_sentence_native": "Here is my suitcase.", "example_sentence_phonetic": "vwah-see mah vah-leez" },
+        { "id": "w2_7_3", "target": "Train", "phonetic": "tran", "native_meaning": "Train", "english": "Train", "example_sentence_target": "Le train arrive.", "example_sentence_native": "The train is arriving.", "example_sentence_phonetic": "luh tran ah-reev" },
+        { "id": "w2_7_4", "target": "Avion", "phonetic": "ah-vyohn", "native_meaning": "Plane", "english": "Plane", "example_sentence_target": "Je prends l'avion.", "example_sentence_native": "I am taking the plane.", "example_sentence_phonetic": "zhuh prahn lah-vyohn" },
+        { "id": "w2_7_5", "target": "Bus", "phonetic": "bews", "native_meaning": "Bus", "english": "Bus", "example_sentence_target": "Où est l'arrêt de bus ?", "example_sentence_native": "Where is the bus stop?", "example_sentence_phonetic": "oo ay lah-reh duh bews" },
+        { "id": "w2_7_6", "target": "Taxi", "phonetic": "tahk-see", "native_meaning": "Taxi", "english": "Taxi", "example_sentence_target": "Appelez un taxi.", "example_sentence_native": "Call a taxi.", "example_sentence_phonetic": "ah-play zuhn tahk-see" }
+      ],
+      "sentences": [
+        { "id": "s2_7_1", "target": "Un billet pour Paris, s'il vous plaît.", "native": "A ticket for Paris, please.", "phonetic": "uhn bee-yay poor pah-ree seel voo play" },
+        { "id": "s2_7_2", "target": "À quelle heure est le bus ?", "native": "At what time is the bus?", "phonetic": "ah kel eur ay luh bews" },
+        { "id": "s2_7_3", "target": "Voici ma valise.", "native": "Here is my suitcase.", "phonetic": "vwah-see mah vah-leez" },
+        { "id": "s2_7_4", "target": "Je prends un taxi.", "native": "I am taking a taxi.", "phonetic": "zhuh prahn zuhn tahk-see" }
       ],
       "dialogues": [
-        {
-          "id": "d2_7_1",
-          "context": "Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Travail!",
-              "native": "Work!",
-              "phonetic": "tra-VAY"
-            },
-            {
-              "speaker": "B",
-              "target": "Travail! Bureau!",
-              "native": "Work! Office!",
-              "phonetic": "tra-VAY byoo-ROH"
-            },
-            {
-              "speaker": "A",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            }
-          ]
-        },
-        {
-          "id": "d2_7_2",
-          "context": "Formal Work Culture",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Bureau!",
-              "native": "Office!",
-              "phonetic": "byoo-ROH"
-            },
-            {
-              "speaker": "B",
-              "target": "Réunion!",
-              "native": "Meeting!",
-              "phonetic": "ray-yoo-NYOH"
-            },
-            {
-              "speaker": "A",
-              "target": "Collègue! Patron!",
-              "native": "Colleague! Boss!",
-              "phonetic": "ko-LEG pa-TROH"
-            }
-          ]
-        }
+        { "id": "d2_7_1", "context": "Buying a ticket.", "lines": [{ "speaker": "A", "target": "Un billet pour Marseille, s'il vous plaît.", "native": "A ticket for Marseille, please.", "phonetic": "uhn bee-yay poor mahr-say seel voo play" }, { "speaker": "B", "target": "C'est 40 euros.", "native": "It's 40 euros.", "phonetic": "say kah-rahnt uh-roh" }] },
+        { "id": "d2_7_2", "context": "Departure time.", "lines": [{ "speaker": "A", "target": "À quelle heure part le train ?", "native": "At what time does the train leave?", "phonetic": "ah kel eur pahr luh tran" }, { "speaker": "B", "target": "À quatorze heures.", "native": "At two PM.", "phonetic": "ah kah-tohrz eur" }] },
+        { "id": "d2_7_3", "context": "At the airport.", "lines": [{ "speaker": "A", "target": "Votre billet et votre passeport, s'il vous plaît.", "native": "Your ticket and passport, please.", "phonetic": "voh-truh bee-yay ay voh-truh pah-spor seel voo play" }, { "speaker": "B", "target": "Les voici.", "native": "Here they are.", "phonetic": "lay vwah-see" }] },
+        { "id": "d2_7_4", "context": "In a taxi.", "lines": [{ "speaker": "A", "target": "À la gare, s'il vous plaît.", "native": "To the station, please.", "phonetic": "ah lah gahr seel voo play" }, { "speaker": "B", "target": "D'accord, c'est parti.", "native": "Okay, let's go.", "phonetic": "dah-kor say pahr-tee" }] }
       ],
       "exercises": {
-        "fillBlanks": [
-          {
-            "id": "fb2_7_1",
-            "sentence": "___ means 'Work' in French",
-            "answer": "Travail",
-            "hint": "Work"
-          },
-          {
-            "id": "fb2_7_2",
-            "sentence": "___ means 'Office' in French",
-            "answer": "Bureau",
-            "hint": "Office"
-          },
-          {
-            "id": "fb2_7_3",
-            "sentence": "___ means 'Meeting' in French",
-            "answer": "Réunion",
-            "hint": "Meeting"
-          }
-        ],
-        "matching": [
-          {
-            "id": "m2_7_1",
-            "target": "Travail",
-            "native": "Work"
-          },
-          {
-            "id": "m2_7_2",
-            "target": "Bureau",
-            "native": "Office"
-          },
-          {
-            "id": "m2_7_3",
-            "target": "Réunion",
-            "native": "Meeting"
-          },
-          {
-            "id": "m2_7_4",
-            "target": "Collègue",
-            "native": "Colleague"
-          },
-          {
-            "id": "m2_7_5",
-            "target": "Patron",
-            "native": "Boss"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc2_7_1",
-            "question": "What does 'Travail' mean?",
-            "options": [
-              "Work",
-              "Office",
-              "Meeting",
-              "Colleague"
-            ],
-            "correct": 0,
-            "explanation": "'Travail' means Work in English."
-          },
-          {
-            "id": "mc2_7_2",
-            "question": "How do you say 'Office' in French?",
-            "options": [
-              "Travail",
-              "Bureau",
-              "Réunion",
-              "Collègue"
-            ],
-            "correct": 1,
-            "explanation": "'Bureau' means Office."
-          }
-        ]
+        "fillBlanks": [{ "id": "fb2_7_1", "sentence": "Un ___ pour Lyon, s'il vous plaît.", "answer": "billet", "hint": "ticket" }],
+        "matching": [{ "id": "m2_7_1", "target": "Train", "native": "Train" }, { "id": "m2_7_2", "target": "Valise", "native": "Suitcase" }],
+        "sentenceScramble": [{ "id": "ss2_7_1", "scrambled": ["prends", "Je", "un", "taxi"], "correct": "Je prends un taxi", "nativeHint": "I am taking a taxi" }]
       },
-      "cultural_note": "French offices typically have a 1-2 hour lunch break — work-life balance matters!",
-      "pronunciation_tip": "The French 'u' requires rounded lips while saying 'ee' — unique to French!",
-      "progress": {
-        "xp": 110,
-        "streak_bonus": 20,
-        "badge": "W2D7"
-      }
+      "cultural_note": "The TGV (Train à Grande Vitesse) is the pride of French travel.",
+      "pronunciation_tip": "The 'eu' in 'heure' or 'euros' is soft, like the 'u' in 'burn'.",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W2D7-Travel" }
     }
   ]
 }

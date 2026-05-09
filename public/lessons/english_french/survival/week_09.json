@@ -7,105 +7,106 @@
     {
       "week": 9,
       "day": 1,
-      "title": "Week 9 Day 1: Getting a Ticket",
-      "title_native": "Getting a Ticket",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 1: Train Travel and Tickets",
+      "title_native": "Semaine 9 Jour 1 : Voyage en train et billets",
+      "theme": "Transportation",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_1_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "la gare",
+          "phonetic": "la gar",
+          "native_meaning": "the train station",
+          "english": "the train station",
+          "example_sentence_target": "Où est la gare, s'il vous plaît ?",
+          "example_sentence_native": "Where is the train station, please?",
+          "example_sentence_phonetic": "Oo ay la gar, seel voo play?"
         },
         {
           "id": "w9_1_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "le billet",
+          "phonetic": "luh bee-yay",
+          "native_meaning": "the ticket",
+          "english": "the ticket",
+          "example_sentence_target": "Je voudrais un billet pour Lyon.",
+          "example_sentence_native": "I would like a ticket for Lyon.",
+          "example_sentence_phonetic": "Zhuh voo-dray un bee-yay poor Lee-on."
         },
         {
           "id": "w9_1_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "le quai",
+          "phonetic": "luh kay",
+          "native_meaning": "the platform",
+          "english": "the platform",
+          "example_sentence_target": "Le train part du quai numéro quatre.",
+          "example_sentence_native": "The train leaves from platform number four.",
+          "example_sentence_phonetic": "Luh tra-in par du kay noo-may-roh kat-ruh."
         },
         {
           "id": "w9_1_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "composter",
+          "phonetic": "kom-poh-stay",
+          "native_meaning": "to validate (a ticket)",
+          "english": "to validate",
+          "example_sentence_target": "N'oubliez pas de composter votre billet.",
+          "example_sentence_native": "Don't forget to validate your ticket.",
+          "example_sentence_phonetic": "Noo-blee-yay pah duh kom-poh-stay vot-ruh bee-yay."
         },
         {
           "id": "w9_1_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "direct",
+          "phonetic": "dee-rekt",
+          "native_meaning": "direct",
+          "english": "direct",
+          "example_sentence_target": "Est-ce que le train est direct ?",
+          "example_sentence_native": "Is the train direct?",
+          "example_sentence_phonetic": "Es-kuh luh tra-in ay dee-rekt?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_1_1",
+          "target": "Un aller simple pour Paris, s'il vous plaît.",
+          "native": "A one-way ticket to Paris, please.",
+          "phonetic": "Un ah-lay sam-pluh poor Pah-ree, seel voo play."
+        },
+        {
+          "id": "s9_1_2",
+          "target": "À quelle heure part le prochain train ?",
+          "native": "What time does the next train leave?",
+          "phonetic": "Ah kel ur par luh pro-sha tra-in?"
+        },
+        {
+          "id": "s9_1_3",
+          "target": "Est-ce que je dois changer de train ?",
+          "native": "Do I have to change trains?",
+          "phonetic": "Es-kuh zhuh dwah shan-zhay duh tra-in?"
         }
       ],
       "dialogues": [
         {
           "id": "d9_1_1",
-          "context": "Getting a Ticket",
+          "context": "At the ticket counter.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "Bonjour, je voudrais deux billets pour Bordeaux.",
+              "native": "Hello, I would like two tickets for Bordeaux.",
+              "phonetic": "Bon-zhoor, zhuh voo-dray duh bee-yay poor Bor-doh."
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "Aller simple ou aller-retour ?",
+              "native": "One-way or round trip?",
+              "phonetic": "Ah-lay sam-pluh oo ah-lay-ruh-toor?"
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_1_2",
-          "context": "Formal Getting a Ticket",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
-            },
-            {
-              "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Aller-retour en seconde classe, s'il vous plaît.",
+              "native": "Round trip in second class, please.",
+              "phonetic": "Ah-lay-ruh-toor on suh-gond klahss, seel voo play."
             }
           ]
         }
@@ -114,187 +115,151 @@
         "fillBlanks": [
           {
             "id": "fb9_1_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_1_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_1_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "Où est la ___, s'il vous plaît ?",
+            "answer": "gare",
+            "hint": "train station"
           }
         ],
         "matching": [
           {
             "id": "m9_1_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "le billet",
+            "native": "the ticket"
           },
           {
             "id": "m9_1_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_1_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_1_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_1_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "le quai",
+            "native": "the platform"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_1_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What does 'composter' mean in a French station?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
-            ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
-          {
-            "id": "mc9_1_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
+              "To buy a ticket",
+              "To validate a ticket",
+              "To miss a train",
+              "To find a seat"
             ],
             "correct": 1,
-            "explanation": "'Train' means Train."
+            "explanation": "You must validate physical tickets in yellow machines before boarding."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss9_1_1",
+            "scrambled": ["un", "billet", "voudrais", "Je", "Lyon", "pour"],
+            "correct": "Je voudrais un billet pour Lyon",
+            "nativeHint": "I would like a ticket for Lyon"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "In France, if you have a paper ticket, you MUST validate it in the yellow 'composteur' machines before boarding the train to avoid a fine.",
+      "pronunciation_tip": "The word 'billet' ends with a silent 't', sounding like 'bee-yay'.",
       "progress": {
-        "xp": 180,
-        "streak_bonus": 20,
-        "badge": "W9D1"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W9D1-Train"
       }
     },
     {
       "week": 9,
       "day": 2,
-      "title": "Week 9 Day 2: At the Airport",
-      "title_native": "At the Airport",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 2: Car Rental and Driving",
+      "title_native": "Semaine 9 Jour 2 : Location de voiture et conduite",
+      "theme": "Transportation",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_2_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "louer",
+          "phonetic": "loo-ay",
+          "native_meaning": "to rent",
+          "english": "to rent",
+          "example_sentence_target": "Je voudrais louer une voiture.",
+          "example_sentence_native": "I would like to rent a car.",
+          "example_sentence_phonetic": "Zhuh voo-dray loo-ay oon vwah-toor."
         },
         {
           "id": "w9_2_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "le permis",
+          "phonetic": "luh pair-mee",
+          "native_meaning": "the license",
+          "english": "the license",
+          "example_sentence_target": "Voici mon permis de conduire.",
+          "example_sentence_native": "Here is my driver's license.",
+          "example_sentence_phonetic": "Vwah-see mon pair-mee duh kon-dweer."
         },
         {
           "id": "w9_2_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "l'essence",
+          "phonetic": "leh-sahns",
+          "native_meaning": "gasoline / fuel",
+          "english": "gasoline",
+          "example_sentence_target": "Où est la station-service ?",
+          "example_sentence_native": "Where is the gas station?",
+          "example_sentence_phonetic": "Oo ay la stah-syon sair-veess?"
         },
         {
           "id": "w9_2_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "l'autoroute",
+          "phonetic": "loh-toh-root",
+          "native_meaning": "the highway",
+          "english": "the highway",
+          "example_sentence_target": "L'autoroute est à péage.",
+          "example_sentence_native": "The highway has a toll.",
+          "example_sentence_phonetic": "Loh-toh-root ay ah pay-ahzh."
         },
         {
           "id": "w9_2_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "le plein",
+          "phonetic": "luh pla-in",
+          "native_meaning": "full (tank)",
+          "english": "full",
+          "example_sentence_target": "Le plein, s'il vous plaît.",
+          "example_sentence_native": "Full tank, please.",
+          "example_sentence_phonetic": "Luh pla-in, seel voo play."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_2_1",
+          "target": "C'est une voiture manuelle ou automatique ?",
+          "native": "Is it a manual or automatic car?",
+          "phonetic": "Say oon vwah-toor mah-nwel oo oh-toh-mah-teek?"
+        },
+        {
+          "id": "s9_2_2",
+          "target": "Où est le bouton pour les phares ?",
+          "native": "Where is the button for the headlights?",
+          "phonetic": "Oo ay luh boo-ton poor lay far?"
         }
       ],
       "dialogues": [
         {
           "id": "d9_2_1",
-          "context": "At the Airport",
+          "context": "At a car rental agency.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "Bonjour, j'ai une réservation au nom de Smith.",
+              "native": "Hello, I have a reservation under the name Smith.",
+              "phonetic": "Bon-zhoor, zhay oon ray-zair-vah-syon oh nom duh Smith."
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "D'accord, votre permis et votre passeport, s'il vous plaît.",
+              "native": "Okay, your license and passport, please.",
+              "phonetic": "Dah-kor, vot-ruh pair-mee ay vot-ruh pahss-por, seel voo play."
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_2_2",
-          "context": "Formal At the Airport",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
-            },
-            {
-              "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Les voici. L'assurance est comprise ?",
+              "native": "Here they are. Is insurance included?",
+              "phonetic": "Lay vwah-see. Lah-soo-rahns ay kom-preez?"
             }
           ]
         }
@@ -303,187 +268,151 @@
         "fillBlanks": [
           {
             "id": "fb9_2_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_2_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_2_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "Je voudrais ___ une voiture.",
+            "answer": "louer",
+            "hint": "to rent"
           }
         ],
         "matching": [
           {
             "id": "m9_2_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "l'essence",
+            "native": "gas"
           },
           {
             "id": "m9_2_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_2_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_2_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_2_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "le permis",
+            "native": "the license"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_2_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What is 'péage'?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
-            ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
-          {
-            "id": "mc9_2_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
+              "A parking spot",
+              "A toll booth",
+              "A speed limit",
+              "A fine"
             ],
             "correct": 1,
-            "explanation": "'Train' means Train."
+            "explanation": "Many French highways (autoroutes) require payment at toll booths."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss9_2_1",
+            "scrambled": ["plein", "Le", "plaît", "s'il", "vous"],
+            "correct": "Le plein s'il vous plaît",
+            "nativeHint": "Full tank please"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "In France, automatic cars are becoming more common but manual (stick shift) is still the standard. Always specify if you need an automatic.",
+      "pronunciation_tip": "'Essence' sounds like 'eh-sahns'. The 'en' and 'ce' create soft nasal and soft 's' sounds.",
       "progress": {
-        "xp": 180,
-        "streak_bonus": 20,
-        "badge": "W9D2"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W9D2-Driving"
       }
     },
     {
       "week": 9,
       "day": 3,
-      "title": "Week 9 Day 3: On the Train",
-      "title_native": "On the Train",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 3: Booking Accommodations",
+      "title_native": "Semaine 9 Jour 3 : Réserver un logement",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_3_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "réserver",
+          "phonetic": "ray-zair-vay",
+          "native_meaning": "to book / reserve",
+          "english": "to book",
+          "example_sentence_target": "Je voudrais réserver une chambre.",
+          "example_sentence_native": "I would like to book a room.",
+          "example_sentence_phonetic": "Zhuh voo-dray ray-zair-vay oon shahm-bruh."
         },
         {
           "id": "w9_3_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "la chambre",
+          "phonetic": "la shahm-bruh",
+          "native_meaning": "the room",
+          "english": "the room",
+          "example_sentence_target": "Ma chambre est au premier étage.",
+          "example_sentence_native": "My room is on the first floor.",
+          "example_sentence_phonetic": "Ma shahm-bruh ay oh pruh-mee-ay ay-tahzh."
         },
         {
           "id": "w9_3_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "le lit",
+          "phonetic": "luh lee",
+          "native_meaning": "the bed",
+          "english": "the bed",
+          "example_sentence_target": "Je voudrais un grand lit.",
+          "example_sentence_native": "I would like a large bed.",
+          "example_sentence_phonetic": "Zhuh voo-dray un grah lee."
         },
         {
           "id": "w9_3_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "le petit-déjeuner",
+          "phonetic": "luh puh-tee day-zhuh-nay",
+          "native_meaning": "breakfast",
+          "english": "breakfast",
+          "example_sentence_target": "Le petit-déjeuner est inclus ?",
+          "example_sentence_native": "Is breakfast included?",
+          "example_sentence_phonetic": "Luh puh-tee day-zhuh-nay ay un-kloo?"
         },
         {
           "id": "w9_3_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "complet",
+          "phonetic": "kom-play",
+          "native_meaning": "full / no vacancy",
+          "english": "full",
+          "example_sentence_target": "Désolé, l'hôtel est complet.",
+          "example_sentence_native": "Sorry, the hotel is full.",
+          "example_sentence_phonetic": "Day-zoh-lay, loh-tel ay kom-play."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_3_1",
+          "target": "J'ai une réservation pour deux nuits.",
+          "native": "I have a reservation for two nights.",
+          "phonetic": "Zhay oon ray-zair-vah-syon poor duh nwee."
+        },
+        {
+          "id": "s9_3_2",
+          "target": "Est-ce qu'il y a du Wi-Fi ?",
+          "native": "Is there Wi-Fi?",
+          "phonetic": "Es-keel ee ah doo wee-fee?"
         }
       ],
       "dialogues": [
         {
           "id": "d9_3_1",
-          "context": "On the Train",
+          "context": "At hotel reception.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "Bonjour, je voudrais une chambre pour une personne.",
+              "native": "Hello, I would like a room for one person.",
+              "phonetic": "Bon-zhoor, zhuh voo-dray oon shahm-bruh poor oon pair-son."
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "Bien sûr. C'est pour combien de nuits ?",
+              "native": "Of course. For how many nights?",
+              "phonetic": "Byan soor. Say poor kom-byan duh nwee?"
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_3_2",
-          "context": "Formal On the Train",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
-            },
-            {
-              "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Juste pour ce soir. Quel est le prix ?",
+              "native": "Just for tonight. What is the price?",
+              "phonetic": "Zhoost poor suh swahr. Kel ay luh pree?"
             }
           ]
         }
@@ -492,187 +421,157 @@
         "fillBlanks": [
           {
             "id": "fb9_3_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_3_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_3_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "Est-ce que le ___ est inclus ?",
+            "answer": "petit-déjeuner",
+            "hint": "breakfast"
           }
         ],
         "matching": [
           {
             "id": "m9_3_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "une chambre",
+            "native": "a room"
           },
           {
             "id": "m9_3_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_3_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_3_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_3_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "le lit",
+            "native": "the bed"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_3_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What does 'Complet' on a hotel sign mean?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
+              "Welcome",
+              "Open now",
+              "No vacancy",
+              "Free breakfast"
             ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
+            "correct": 2,
+            "explanation": "'Complet' means the hotel has no rooms left."
+          }
+        ],
+        "sentenceScramble": [
           {
-            "id": "mc9_3_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
-            ],
-            "correct": 1,
-            "explanation": "'Train' means Train."
+            "id": "ss9_3_1",
+            "scrambled": ["une", "réserver", "voudrais", "Je", "chambre"],
+            "correct": "Je voudrais réserver une chambre",
+            "nativeHint": "I would like to book a room"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "In France, 'le premier étage' (first floor) is actually what Americans call the second floor. The ground level is 'le rez-de-chaussée'.",
+      "pronunciation_tip": "The word 'lit' (bed) has a silent 't'. Pronounce it exactly like 'lee'.",
       "progress": {
-        "xp": 180,
-        "streak_bonus": 20,
-        "badge": "W9D3"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W9D3-Hotel"
       }
     },
     {
       "week": 9,
       "day": 4,
-      "title": "Week 9 Day 4: Taxi & Bus",
-      "title_native": "Taxi & Bus",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 4: Directions and Landmarks",
+      "title_native": "Semaine 9 Jour 4 : Directions et monuments",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_4_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "le monument",
+          "phonetic": "luh moh-noo-mah",
+          "native_meaning": "the monument",
+          "english": "the monument",
+          "example_sentence_target": "C'est un beau monument.",
+          "example_sentence_native": "It is a beautiful monument.",
+          "example_sentence_phonetic": "Say tun boh moh-noo-mah."
         },
         {
           "id": "w9_4_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "le plan",
+          "phonetic": "luh plah",
+          "native_meaning": "the map (city plan)",
+          "english": "the map",
+          "example_sentence_target": "Avez-vous un plan de la ville ?",
+          "example_sentence_native": "Do you have a map of the city?",
+          "example_sentence_phonetic": "Ah-vay voo un plah duh la veel?"
         },
         {
           "id": "w9_4_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "le centre-ville",
+          "phonetic": "luh sahnt-ruh veel",
+          "native_meaning": "the city center",
+          "english": "downtown",
+          "example_sentence_target": "L'hôtel est au centre-ville.",
+          "example_sentence_native": "The hotel is in the city center.",
+          "example_sentence_phonetic": "Loh-tel ay oh sahnt-ruh veel."
         },
         {
           "id": "w9_4_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "loin",
+          "phonetic": "lwan",
+          "native_meaning": "far",
+          "english": "far",
+          "example_sentence_target": "Est-ce que c'est loin d'ici ?",
+          "example_sentence_native": "Is it far from here?",
+          "example_sentence_phonetic": "Es-kuh say lwan dee-see?"
         },
         {
           "id": "w9_4_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "tout droit",
+          "phonetic": "too drwah",
+          "native_meaning": "straight ahead",
+          "english": "straight ahead",
+          "example_sentence_target": "Allez tout droit pendant dix minutes.",
+          "example_sentence_native": "Go straight ahead for ten minutes.",
+          "example_sentence_phonetic": "Ah-lay too drwah pahn-dah dee mee-noot."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_4_1",
+          "target": "Je suis perdu, pouvez-vous m'aider ?",
+          "native": "I am lost, can you help me?",
+          "phonetic": "Zhuh swee pair-doo, poo-vay voo may-day?"
+        },
+        {
+          "id": "s9_4_2",
+          "target": "Prenez la première rue à gauche.",
+          "native": "Take the first street on the left.",
+          "phonetic": "Pruh-nay la pruh-mee-air roo ah gohsh."
         }
       ],
       "dialogues": [
         {
           "id": "d9_4_1",
-          "context": "Taxi & Bus",
+          "context": "Asking for directions to a museum.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "Pardon, je cherche le musée du Louvre.",
+              "native": "Excuse me, I am looking for the Louvre museum.",
+              "phonetic": "Par-don, zhuh shairsh luh moo-zay doo Loov-ruh."
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "C'est tout droit, puis à droite après l'église.",
+              "native": "It is straight ahead, then on the right after the church.",
+              "phonetic": "Say too drwah, pwee ah drwaht ah-pray lay-gleez."
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_4_2",
-          "context": "Formal Taxi & Bus",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
+              "target": "C'est à pied ?",
+              "native": "Is it on foot?",
+              "phonetic": "Say ah pyay?"
             },
             {
               "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Oui, c'est à cinq minutes.",
+              "native": "Yes, it is five minutes away.",
+              "phonetic": "Wee, say ah sank mee-noot."
             }
           ]
         }
@@ -681,187 +580,151 @@
         "fillBlanks": [
           {
             "id": "fb9_4_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_4_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_4_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "Est-ce que c'est ___ d'ici ?",
+            "answer": "loin",
+            "hint": "far"
           }
         ],
         "matching": [
           {
             "id": "m9_4_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "tout droit",
+            "native": "straight ahead"
           },
           {
             "id": "m9_4_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_4_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_4_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_4_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "le centre-ville",
+            "native": "city center"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_4_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What is 'un plan'?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
-            ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
-          {
-            "id": "mc9_4_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
+              "An airplane",
+              "A city map",
+              "A schedule",
+              "A ticket"
             ],
             "correct": 1,
-            "explanation": "'Train' means Train."
+            "explanation": "'Un plan' is a map, specifically for a city or a building."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss9_4_1",
+            "scrambled": ["perdu", "Je", "suis", "m'aider", "pouvez-vous"],
+            "correct": "Je suis perdu pouvez-vous m'aider",
+            "nativeHint": "I am lost can you help me"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "Asking 'C'est à pied ?' (Is it on foot?) is very common in French cities where many attractions are close together.",
+      "pronunciation_tip": "The nasal 'in' in 'loin' (far) is tricky. It sounds a bit like the 'an' in 'bang' but softer.",
       "progress": {
-        "xp": 180,
-        "streak_bonus": 20,
-        "badge": "W9D4"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W9D4-Directions"
       }
     },
     {
       "week": 9,
       "day": 5,
-      "title": "Week 9 Day 5: Car Rental",
-      "title_native": "Car Rental",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 5: Regional Food and Specialties",
+      "title_native": "Semaine 9 Jour 5 : Cuisine régionale et spécialités",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_5_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "la spécialité",
+          "phonetic": "la spay-syah-lee-tay",
+          "native_meaning": "the specialty",
+          "english": "the specialty",
+          "example_sentence_target": "Quelle est la spécialité de la région ?",
+          "example_sentence_native": "What is the specialty of the region?",
+          "example_sentence_phonetic": "Kel ay la spay-syah-lee-tay duh la ray-zhyon?"
         },
         {
           "id": "w9_5_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "le fromage",
+          "phonetic": "luh froh-mahzh",
+          "native_meaning": "the cheese",
+          "english": "the cheese",
+          "example_sentence_target": "J'aime beaucoup le fromage français.",
+          "example_sentence_native": "I like French cheese a lot.",
+          "example_sentence_phonetic": "Zhem boh-koo luh froh-mahzh frahn-say."
         },
         {
           "id": "w9_5_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "le vin",
+          "phonetic": "luh van",
+          "native_meaning": "the wine",
+          "english": "the wine",
+          "example_sentence_target": "Un verre de vin rouge, s'il vous plaît.",
+          "example_sentence_native": "A glass of red wine, please.",
+          "example_sentence_phonetic": "Un vair duh van roozh, seel voo play."
         },
         {
           "id": "w9_5_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "local",
+          "phonetic": "loh-kahl",
+          "native_meaning": "local",
+          "english": "local",
+          "example_sentence_target": "C'est un produit local.",
+          "example_sentence_native": "It is a local product.",
+          "example_sentence_phonetic": "Say tun pro-dwee loh-kahl."
         },
         {
           "id": "w9_5_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "le marché",
+          "phonetic": "luh mar-shay",
+          "native_meaning": "the market",
+          "english": "the market",
+          "example_sentence_target": "Il y a un marché demain matin.",
+          "example_sentence_native": "There is a market tomorrow morning.",
+          "example_sentence_phonetic": "Ee eel ee ah un mar-shay duh-ma mah-tan."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_5_1",
+          "target": "Je voudrais goûter ce plat.",
+          "native": "I would like to taste this dish.",
+          "phonetic": "Zhuh voo-dray goo-tay suh plah."
+        },
+        {
+          "id": "s9_5_2",
+          "target": "Est-ce que c'est fait ici ?",
+          "native": "Is it made here?",
+          "phonetic": "Es-kuh say fay ee-see?"
         }
       ],
       "dialogues": [
         {
           "id": "d9_5_1",
-          "context": "Car Rental",
+          "context": "At a regional market.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "C'est quoi ce fromage ?",
+              "native": "What is this cheese?",
+              "phonetic": "Say kwah suh froh-mahzh?"
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "C'est du Comté, une spécialité locale.",
+              "native": "It is Comté, a local specialty.",
+              "phonetic": "Say doo Kom-tay, oon spay-syah-lee-tay loh-kahl."
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_5_2",
-          "context": "Formal Car Rental",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
-            },
-            {
-              "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Puis-je goûter, s'il vous plaît ?",
+              "native": "May I taste, please?",
+              "phonetic": "Pwee-zhuh goo-tay, seel voo play?"
             }
           ]
         }
@@ -870,187 +733,151 @@
         "fillBlanks": [
           {
             "id": "fb9_5_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_5_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_5_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "Quelle est la ___ de la région ?",
+            "answer": "spécialité",
+            "hint": "specialty"
           }
         ],
         "matching": [
           {
             "id": "m9_5_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "le vin",
+            "native": "the wine"
           },
           {
             "id": "m9_5_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_5_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_5_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_5_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "le marché",
+            "native": "the market"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_5_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What is 'goûter'?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
-            ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
-          {
-            "id": "mc9_5_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
+              "To pay",
+              "To taste",
+              "To smell",
+              "To cook"
             ],
             "correct": 1,
-            "explanation": "'Train' means Train."
+            "explanation": "'Goûter' means to taste food or drink."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss9_5_1",
+            "scrambled": ["vin", "rouge", "verre", "de", "Un"],
+            "correct": "Un verre de vin rouge",
+            "nativeHint": "A glass of red wine"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "Every region in France has its own cheese and wine. Don't hesitate to ask locals for their 'fierté locale' (local pride) recommendations.",
+      "pronunciation_tip": "The nasal 'in' in 'vin' (wine) is like the 'a' in 'can' but without closing your mouth at the end.",
       "progress": {
-        "xp": 180,
-        "streak_bonus": 20,
-        "badge": "W9D5"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W9D5-Regional"
       }
     },
     {
       "week": 9,
       "day": 6,
-      "title": "Week 9 Day 6: Accommodation",
-      "title_native": "Accommodation",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 6: Weather and Planning",
+      "title_native": "Semaine 9 Jour 6 : Météo et planification",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_6_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "la météo",
+          "phonetic": "la may-tay-oh",
+          "native_meaning": "the weather / forecast",
+          "english": "the weather",
+          "example_sentence_target": "Quelle est la météo pour demain ?",
+          "example_sentence_native": "What is the weather for tomorrow?",
+          "example_sentence_phonetic": "Kel ay la may-tay-oh poor duh-ma?"
         },
         {
           "id": "w9_6_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "il fait beau",
+          "phonetic": "eel fay boh",
+          "native_meaning": "it is nice weather",
+          "english": "it's nice",
+          "example_sentence_target": "Aujourd'hui, il fait très beau.",
+          "example_sentence_native": "Today, it is very nice.",
+          "example_sentence_phonetic": "Oh-zhoor-dwee, eel fay tray boh."
         },
         {
           "id": "w9_6_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "il pleut",
+          "phonetic": "eel pluh",
+          "native_meaning": "it is raining",
+          "english": "it's raining",
+          "example_sentence_target": "Prenez un parapluie, il pleut.",
+          "example_sentence_native": "Take an umbrella, it's raining.",
+          "example_sentence_phonetic": "Pruh-nay un pah-rah-plwee, eel pluh."
         },
         {
           "id": "w9_6_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "le soleil",
+          "phonetic": "luh soh-lay-ee",
+          "native_meaning": "the sun",
+          "english": "the sun",
+          "example_sentence_target": "Il y a beaucoup de soleil.",
+          "example_sentence_native": "There is a lot of sun.",
+          "example_sentence_phonetic": "Ee ee ah boh-koo duh soh-lay-ee."
         },
         {
           "id": "w9_6_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "annuler",
+          "phonetic": "ah-noo-lay",
+          "native_meaning": "to cancel",
+          "english": "to cancel",
+          "example_sentence_target": "Je dois annuler mon voyage.",
+          "example_sentence_native": "I have to cancel my trip.",
+          "example_sentence_phonetic": "Zhuh dwah ah-noo-lay mon vwah-yahzh."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_6_1",
+          "target": "Il va faire froid demain.",
+          "native": "It is going to be cold tomorrow.",
+          "phonetic": "Eel vah fair frwah duh-ma."
+        },
+        {
+          "id": "s9_6_2",
+          "target": "Le voyage est reporté.",
+          "native": "The trip is postponed.",
+          "phonetic": "Luh vwah-yahzh ay ruh-por-tay."
         }
       ],
       "dialogues": [
         {
           "id": "d9_6_1",
-          "context": "Accommodation",
+          "context": "Talking about the weather forecast.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "Est-ce qu'on part en randonnée demain ?",
+              "native": "Are we going hiking tomorrow?",
+              "phonetic": "Es-kon par on rahn-doh-nay duh-ma?"
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "Non, la météo dit qu'il va pleuvoir.",
+              "native": "No, the weather forecast says it will rain.",
+              "phonetic": "Non, la may-tay-oh dee keel vah pluh-vwahr."
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_6_2",
-          "context": "Formal Accommodation",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
-            },
-            {
-              "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Quel dommage ! On reste à la maison alors.",
+              "native": "What a pity! We'll stay home then.",
+              "phonetic": "Kel doh-mahzh! On rest ah la may-zon ah-lor."
             }
           ]
         }
@@ -1059,187 +886,151 @@
         "fillBlanks": [
           {
             "id": "fb9_6_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_6_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_6_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "Il y a beaucoup de ___.",
+            "answer": "soleil",
+            "hint": "sun"
           }
         ],
         "matching": [
           {
             "id": "m9_6_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "il fait beau",
+            "native": "it's nice weather"
           },
           {
             "id": "m9_6_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_6_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_6_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_6_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "il pleut",
+            "native": "it's raining"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_6_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What is 'la météo'?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
-            ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
-          {
-            "id": "mc9_6_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
+              "A thermometer",
+              "The weather forecast",
+              "The speed limit",
+              "A clock"
             ],
             "correct": 1,
-            "explanation": "'Train' means Train."
+            "explanation": "'La météo' is the shorthand for the weather or the forecast."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss9_6_1",
+            "scrambled": ["météo", "Quelle", "est", "la", "demain", "pour"],
+            "correct": "Quelle est la météo pour demain",
+            "nativeHint": "What is the weather for tomorrow"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "Small talk about the weather ('la pluie et le beau temps') is a common way to start a conversation in France.",
+      "pronunciation_tip": "The 'll' in 'soleil' is pronounced like a 'y'. 'Soh-lay-ee'.",
       "progress": {
-        "xp": 180,
-        "streak_bonus": 20,
-        "badge": "W9D6"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W9D6-Weather"
       }
     },
     {
       "week": 9,
       "day": 7,
-      "title": "Week 9 Day 7: Travel Tips",
-      "title_native": "Travel Tips",
-      "theme": "Transport & Travel",
+      "title": "Week 9 Day 7: Travel Review and Emergencies",
+      "title_native": "Semaine 9 Jour 7 : Révision et urgences de voyage",
+      "theme": "Travel",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w9_7_1",
-          "target": "Aéroport",
-          "phonetic": "a-ay-ro-POR",
-          "native_meaning": "Airport",
-          "english": "Airport",
-          "example_sentence_target": "Aéroport.",
-          "example_sentence_native": "Airport."
+          "target": "volé",
+          "phonetic": "voh-lay",
+          "native_meaning": "stolen",
+          "english": "stolen",
+          "example_sentence_target": "Mon sac a été volé !",
+          "example_sentence_native": "My bag was stolen!",
+          "example_sentence_phonetic": "Mon sahk ah ay-tay voh-lay!"
         },
         {
           "id": "w9_7_2",
-          "target": "Train",
-          "phonetic": "tran",
-          "native_meaning": "Train",
-          "english": "Train",
-          "example_sentence_target": "Train.",
-          "example_sentence_native": "Train."
+          "target": "la police",
+          "phonetic": "la poh-leess",
+          "native_meaning": "the police",
+          "english": "the police",
+          "example_sentence_target": "Où est le poste de police ?",
+          "example_sentence_native": "Where is the police station?",
+          "example_sentence_phonetic": "Oo ay luh post duh poh-leess?"
         },
         {
           "id": "w9_7_3",
-          "target": "Billet",
-          "phonetic": "bee-YAY",
-          "native_meaning": "Ticket",
-          "english": "Ticket",
-          "example_sentence_target": "Billet.",
-          "example_sentence_native": "Ticket."
+          "target": "l'ambassade",
+          "phonetic": "lahm-bah-sahd",
+          "native_meaning": "the embassy",
+          "english": "the embassy",
+          "example_sentence_target": "Je dois appeler mon ambassade.",
+          "example_sentence_native": "I must call my embassy.",
+          "example_sentence_phonetic": "Zhuh dwah ah-puh-lay mon ahm-bah-sahd."
         },
         {
           "id": "w9_7_4",
-          "target": "Hôtel",
-          "phonetic": "oh-TEL",
-          "native_meaning": "Hotel",
-          "english": "Hotel",
-          "example_sentence_target": "Hôtel.",
-          "example_sentence_native": "Hotel."
+          "target": "perdre",
+          "phonetic": "pair-druh",
+          "native_meaning": "to lose",
+          "english": "to lose",
+          "example_sentence_target": "J'ai perdu mon passeport.",
+          "example_sentence_native": "I lost my passport.",
+          "example_sentence_phonetic": "Zhay pair-doo mon pahss-por."
         },
         {
           "id": "w9_7_5",
-          "target": "Voyage",
-          "phonetic": "vwa-YAZH",
-          "native_meaning": "Trip",
-          "english": "Trip",
-          "example_sentence_target": "Voyage.",
-          "example_sentence_native": "Trip."
+          "target": "aider",
+          "phonetic": "ay-day",
+          "native_meaning": "to help",
+          "english": "to help",
+          "example_sentence_target": "Pouvez-vous m'aider, s'il vous plaît ?",
+          "example_sentence_native": "Can you help me, please?",
+          "example_sentence_phonetic": "Poo-vay voo may-day, seel voo play?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s9_7_1",
+          "target": "Au secours !",
+          "native": "Help!",
+          "phonetic": "Oh suh-koor!"
+        },
+        {
+          "id": "s9_7_2",
+          "target": "J'ai besoin d'un traducteur.",
+          "native": "I need a translator.",
+          "phonetic": "Zhay buh-zwan dun trah-dook-tur."
         }
       ],
       "dialogues": [
         {
           "id": "d9_7_1",
-          "context": "Travel Tips",
+          "context": "Reporting a lost item.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Aéroport!",
-              "native": "Airport!",
-              "phonetic": "a-ay-ro-POR"
+              "target": "Pardon, j'ai perdu mon sac dans le train.",
+              "native": "Excuse me, I lost my bag on the train.",
+              "phonetic": "Par-don, zhay pair-doo mon sahk dahn luh tra-in."
             },
             {
               "speaker": "B",
-              "target": "Aéroport! Train!",
-              "native": "Airport! Train!",
-              "phonetic": "a-ay-ro-POR tran"
+              "target": "Quel train ? Avez-vous votre billet ?",
+              "native": "Which train? Do you have your ticket?",
+              "phonetic": "Kel tra-in? Ah-vay voo vot-ruh bee-yay?"
             },
             {
               "speaker": "A",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            }
-          ]
-        },
-        {
-          "id": "d9_7_2",
-          "context": "Formal Travel Tips",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Train!",
-              "native": "Train!",
-              "phonetic": "tran"
-            },
-            {
-              "speaker": "B",
-              "target": "Billet!",
-              "native": "Ticket!",
-              "phonetic": "bee-YAY"
-            },
-            {
-              "speaker": "A",
-              "target": "Hôtel! Voyage!",
-              "native": "Hotel! Trip!",
-              "phonetic": "oh-TEL vwa-YAZH"
+              "target": "Le train de 10h. Il y avait mon passeport dedans.",
+              "native": "The 10 AM train. My passport was inside.",
+              "phonetic": "Luh tra-in duh dee-zur. Eel ee ah-vay mon pahss-por duh-dahn."
             }
           ]
         }
@@ -1248,83 +1039,52 @@
         "fillBlanks": [
           {
             "id": "fb9_7_1",
-            "sentence": "___ means 'Airport' in French",
-            "answer": "Aéroport",
-            "hint": "Airport"
-          },
-          {
-            "id": "fb9_7_2",
-            "sentence": "___ means 'Train' in French",
-            "answer": "Train",
-            "hint": "Train"
-          },
-          {
-            "id": "fb9_7_3",
-            "sentence": "___ means 'Ticket' in French",
-            "answer": "Billet",
-            "hint": "Ticket"
+            "sentence": "J'ai ___ mon passeport.",
+            "answer": "perdu",
+            "hint": "lost"
           }
         ],
         "matching": [
           {
             "id": "m9_7_1",
-            "target": "Aéroport",
-            "native": "Airport"
+            "target": "au secours",
+            "native": "help"
           },
           {
             "id": "m9_7_2",
-            "target": "Train",
-            "native": "Train"
-          },
-          {
-            "id": "m9_7_3",
-            "target": "Billet",
-            "native": "Ticket"
-          },
-          {
-            "id": "m9_7_4",
-            "target": "Hôtel",
-            "native": "Hotel"
-          },
-          {
-            "id": "m9_7_5",
-            "target": "Voyage",
-            "native": "Trip"
+            "target": "l'ambassade",
+            "native": "the embassy"
           }
         ],
         "multipleChoice": [
           {
             "id": "mc9_7_1",
-            "question": "What does 'Aéroport' mean?",
+            "question": "What is the French equivalent of 'Help!' in an emergency?",
             "options": [
-              "Airport",
-              "Train",
-              "Ticket",
-              "Hotel"
-            ],
-            "correct": 0,
-            "explanation": "'Aéroport' means Airport in English."
-          },
-          {
-            "id": "mc9_7_2",
-            "question": "How do you say 'Train' in French?",
-            "options": [
-              "Aéroport",
-              "Train",
-              "Billet",
-              "Hôtel"
+              "Merci",
+              "Au secours",
+              "Bonjour",
+              "S'il vous plaît"
             ],
             "correct": 1,
-            "explanation": "'Train' means Train."
+            "explanation": "'Au secours' is used when you need immediate assistance."
+          }
+        ],
+        "sentenceScramble": [
+          {
+            "id": "ss9_7_1",
+            "scrambled": ["été", "sac", "Mon", "a", "volé"],
+            "correct": "Mon sac a été volé",
+            "nativeHint": "My bag was stolen"
           }
         ]
       },
-      "cultural_note": "French emergency numbers: 15 (medical), 17 (police), 18 (fire brigade).",
-      "pronunciation_tip": "'ch' sounds like 'sh' — chercher = shair-SHAY.",
+      "cultural_note": "If you lose something on a train, go to the 'Objets trouvés' (Lost and Found) counter at the arrival station.",
+      "pronunciation_tip": "The 'h' in 'Au secours' is silent, and the 'ou' sounds like the 'oo' in 'food'.",
       "progress": {
-        "xp": 180,
+        "xp": 150,
         "streak_bonus": 20,
-        "badge": "W9D7"
+        "badge": "W9-Travel-Pro"
       }
     }
   ]

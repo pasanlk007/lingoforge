@@ -7,105 +7,94 @@
     {
       "week": 5,
       "day": 1,
-      "title": "Week 5 Day 1: Left & Right",
-      "title_native": "Left & Right",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 1: The Body and Common Aches",
+      "title_native": "Semaine 5, Jour 1 : Le corps et les douleurs courantes",
+      "theme": "Parts of the Body & Aches",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_1_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "la tête",
+          "phonetic": "lah tet",
+          "native_meaning": "head",
+          "english": "head",
+          "example_sentence_target": "J'ai mal à la tête.",
+          "example_sentence_native": "I have a headache.",
+          "example_sentence_phonetic": "zhay mal ah lah tet"
         },
         {
           "id": "w5_1_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
+          "target": "le dos",
+          "phonetic": "luh doh",
+          "native_meaning": "back",
+          "english": "back",
+          "example_sentence_target": "J'ai mal au dos.",
+          "example_sentence_native": "I have a backache.",
+          "example_sentence_phonetic": "zhay mal oh doh"
         },
         {
           "id": "w5_1_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
+          "target": "le bras",
+          "phonetic": "luh brah",
+          "native_meaning": "arm",
+          "english": "arm",
+          "example_sentence_target": "Mon bras est cassé.",
+          "example_sentence_native": "My arm is broken.",
+          "example_sentence_phonetic": "mohn brah ay kah-say"
         },
         {
           "id": "w5_1_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
+          "target": "la jambe",
+          "phonetic": "lah zhahmb",
+          "native_meaning": "leg",
+          "english": "leg",
+          "example_sentence_target": "Elle a mal à la jambe.",
+          "example_sentence_native": "Her leg hurts.",
+          "example_sentence_phonetic": "el ah mal ah lah zhahmb"
         },
         {
           "id": "w5_1_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
+          "target": "le ventre",
+          "phonetic": "luh vahntr",
+          "native_meaning": "stomach",
+          "english": "stomach",
+          "example_sentence_target": "J'ai mal au ventre.",
+          "example_sentence_native": "I have a stomach ache.",
+          "example_sentence_phonetic": "zhay mal oh vahntr"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s5_1_1",
+          "target": "Où avez-vous mal ?",
+          "native": "Where does it hurt?",
+          "phonetic": "oo ah-vay voo mal"
+        },
+        {
+          "id": "s5_1_2",
+          "target": "J'ai mal ici.",
+          "native": "It hurts here.",
+          "phonetic": "zhay mal ee-see"
         }
       ],
       "dialogues": [
         {
           "id": "d5_1_1",
-          "context": "Left & Right",
+          "context": "Explaining a simple pain to someone.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
+              "target": "Est-ce que ça va ?",
+              "native": "Are you okay?",
+              "phonetic": "ess-kuh sah vah"
             },
             {
               "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_1_2",
-          "context": "Formal Left & Right",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
+              "target": "Non, j'ai très mal à la tête.",
+              "native": "No, I have a very bad headache.",
+              "phonetic": "nohn, zhay tray mal ah lah tet"
             }
           ]
         }
@@ -114,187 +103,124 @@
         "fillBlanks": [
           {
             "id": "fb5_1_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
-          },
-          {
-            "id": "fb5_1_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_1_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "J'ai mal à la ___ (head).",
+            "answer": "tête",
+            "hint": "the head"
           }
         ],
         "matching": [
-          {
-            "id": "m5_1_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_1_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_1_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_1_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_1_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_1_1", "target": "la tête", "native": "head" },
+          { "id": "m5_1_2", "target": "le dos", "native": "back" },
+          { "id": "m5_1_3", "target": "le bras", "native": "arm" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_1_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_1_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_1_1",
+            "scrambled": ["mal", "J'ai", "tête", "la", "à"],
+            "correct": "J'ai mal à la tête",
+            "nativeHint": "I have a headache."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "In France, when you say 'J'ai mal', it's the standard way to say 'I have a pain' or 'it hurts'. Pharmacy staff are highly trained and often provide the first line of medical advice for minor aches.",
+      "pronunciation_tip": "The 'h' in 'tête' is silent, and the circumflex accent (^) usually indicates a historically omitted 's', often making the vowel sound slightly longer.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D1"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W5D1-Body"
       }
     },
     {
       "week": 5,
       "day": 2,
-      "title": "Week 5 Day 2: Asking Directions",
-      "title_native": "Asking Directions",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 2: Visiting a Doctor",
+      "title_native": "Semaine 5, Jour 2 : Aller chez le médecin",
+      "theme": "Doctor Appointments",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_2_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "le médecin",
+          "phonetic": "luh mayd-san",
+          "native_meaning": "doctor",
+          "english": "doctor",
+          "example_sentence_target": "Je vais chez le médecin.",
+          "example_sentence_native": "I am going to the doctor.",
+          "example_sentence_phonetic": "zhuh vay shay luh mayd-san"
         },
         {
           "id": "w5_2_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
+          "target": "le rendez-vous",
+          "phonetic": "luh rahn-day-voo",
+          "native_meaning": "appointment",
+          "english": "appointment",
+          "example_sentence_target": "J'ai un rendez-vous à dix heures.",
+          "example_sentence_native": "I have an appointment at ten o'clock.",
+          "example_sentence_phonetic": "zhay un rahn-day-voo ah deez ur"
         },
         {
           "id": "w5_2_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
+          "target": "l'hôpital",
+          "phonetic": "loh-pee-tal",
+          "native_meaning": "hospital",
+          "english": "hospital",
+          "example_sentence_target": "Où est l'hôpital ?",
+          "example_sentence_native": "Where is the hospital?",
+          "example_sentence_phonetic": "oo ay loh-pee-tal"
         },
         {
           "id": "w5_2_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
+          "target": "malade",
+          "phonetic": "mah-lahd",
+          "native_meaning": "sick",
+          "english": "sick",
+          "example_sentence_target": "Je suis malade.",
+          "example_sentence_native": "I am sick.",
+          "example_sentence_phonetic": "zhuh swee mah-lahd"
         },
         {
           "id": "w5_2_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
+          "target": "l'assurance",
+          "phonetic": "lah-soo-rahns",
+          "native_meaning": "insurance",
+          "english": "insurance",
+          "example_sentence_target": "Avez-vous une assurance ?",
+          "example_sentence_native": "Do you have insurance?",
+          "example_sentence_phonetic": "ah-vay voo oon ah-soo-rahns"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s5_2_1",
+          "target": "Je voudrais prendre un rendez-vous.",
+          "native": "I would like to make an appointment.",
+          "phonetic": "zhuh voo-dray prahndr un rahn-day-voo"
+        },
+        {
+          "id": "s5_2_2",
+          "target": "C'est urgent.",
+          "native": "It's urgent.",
+          "phonetic": "say oor-zhahn"
         }
       ],
       "dialogues": [
         {
           "id": "d5_2_1",
-          "context": "Asking Directions",
+          "context": "Calling a doctor's office.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
+              "target": "Bonjour, je voudrais un rendez-vous pour mon fils.",
+              "native": "Hello, I would like an appointment for my son.",
+              "phonetic": "bohn-zhoor, zhuh voo-dray un rahn-day-voo poor mohn fees"
             },
             {
               "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_2_2",
-          "context": "Formal Asking Directions",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
+              "target": "Bien sûr, demain à quatorze heures ?",
+              "native": "Sure, tomorrow at 2 PM?",
+              "phonetic": "byan sur, duh-man ah kah-torz ur"
             }
           ]
         }
@@ -303,187 +229,124 @@
         "fillBlanks": [
           {
             "id": "fb5_2_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
-          },
-          {
-            "id": "fb5_2_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_2_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "Je suis ___ (sick).",
+            "answer": "malade",
+            "hint": "sick"
           }
         ],
         "matching": [
-          {
-            "id": "m5_2_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_2_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_2_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_2_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_2_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_2_1", "target": "le médecin", "native": "doctor" },
+          { "id": "m5_2_2", "target": "le rendez-vous", "native": "appointment" },
+          { "id": "m5_2_3", "target": "l'hôpital", "native": "hospital" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_2_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_2_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_2_1",
+            "scrambled": ["rendez-vous", "prendre", "un", "Je", "voudrais"],
+            "correct": "Je voudrais prendre un rendez-vous",
+            "nativeHint": "I would like to make an appointment."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "In France, 'docteur' is the title, but 'médecin' is the profession. Most people have a 'médecin traitant' (family doctor) who coordinates their care.",
+      "pronunciation_tip": "In 'rendez-vous', the 'z' in 'rendez' is silent unless it links to a vowel, and the 's' in 'vous' is silent.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D2"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W5D2-Doctor"
       }
     },
     {
       "week": 5,
       "day": 3,
-      "title": "Week 5 Day 3: Transport Stop",
-      "title_native": "Transport Stop",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 3: Describing Symptoms",
+      "title_native": "Semaine 5, Jour 3 : Décrire les symptômes",
+      "theme": "Symptoms & Feeling Unwell",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_3_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "la fièvre",
+          "phonetic": "lah fye-vruh",
+          "native_meaning": "fever",
+          "english": "fever",
+          "example_sentence_target": "J'ai de la fièvre.",
+          "example_sentence_native": "I have a fever.",
+          "example_sentence_phonetic": "zhay duh lah fye-vruh"
         },
         {
           "id": "w5_3_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
+          "target": "tousser",
+          "phonetic": "too-say",
+          "native_meaning": "to cough",
+          "english": "to cough",
+          "example_sentence_target": "Je tousse beaucoup.",
+          "example_sentence_native": "I am coughing a lot.",
+          "example_sentence_phonetic": "zhuh tooss boh-koo"
         },
         {
           "id": "w5_3_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
+          "target": "le rhume",
+          "phonetic": "luh room",
+          "native_meaning": "cold",
+          "english": "cold",
+          "example_sentence_target": "J'ai un rhume.",
+          "example_sentence_native": "I have a cold.",
+          "example_sentence_phonetic": "zhay un room"
         },
         {
           "id": "w5_3_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
+          "target": "fatigué",
+          "phonetic": "fah-tee-gay",
+          "native_meaning": "tired",
+          "english": "tired",
+          "example_sentence_target": "Je me sens très fatigué.",
+          "example_sentence_native": "I feel very tired.",
+          "example_sentence_phonetic": "zhuh muh sahn tray fah-tee-gay"
         },
         {
           "id": "w5_3_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
+          "target": "avoir envie de vomir",
+          "phonetic": "ah-vwar ahn-vee duh voh-meer",
+          "native_meaning": "to feel nauseous",
+          "english": "to feel nauseous",
+          "example_sentence_target": "J'ai envie de vomir.",
+          "example_sentence_native": "I feel like vomiting.",
+          "example_sentence_phonetic": "zhay ahn-vee duh voh-meer"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s5_3_1",
+          "target": "Quels sont vos symptômes ?",
+          "native": "What are your symptoms?",
+          "phonetic": "kel sohn vo sanp-tohm"
+        },
+        {
+          "id": "s5_3_2",
+          "target": "Je suis allergique à la pénicilline.",
+          "native": "I am allergic to penicillin.",
+          "phonetic": "zhuh swee ah-ler-zheek ah lah pay-nee-see-leen"
         }
       ],
       "dialogues": [
         {
           "id": "d5_3_1",
-          "context": "Transport Stop",
+          "context": "Talking to a doctor about how you feel.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
+              "target": "Depuis quand êtes-vous malade ?",
+              "native": "Since when have you been sick?",
+              "phonetic": "duh-pwee kahn et voo mah-lahd"
             },
             {
               "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_3_2",
-          "context": "Formal Transport Stop",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
+              "target": "Depuis deux jours. J'ai de la fièvre.",
+              "native": "Since two days ago. I have a fever.",
+              "phonetic": "duh-pwee duh zhoor. zhay duh lah fye-vruh"
             }
           ]
         }
@@ -492,187 +355,124 @@
         "fillBlanks": [
           {
             "id": "fb5_3_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
-          },
-          {
-            "id": "fb5_3_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_3_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "J'ai un ___ (cold).",
+            "answer": "rhume",
+            "hint": "a cold"
           }
         ],
         "matching": [
-          {
-            "id": "m5_3_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_3_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_3_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_3_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_3_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_3_1", "target": "la fièvre", "native": "fever" },
+          { "id": "m5_3_2", "target": "tousser", "native": "to cough" },
+          { "id": "m5_3_3", "target": "fatigué", "native": "tired" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_3_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_3_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_3_1",
+            "scrambled": ["fièvre", "la", "de", "J'ai"],
+            "correct": "J'ai de la fièvre",
+            "nativeHint": "I have a fever."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "In France, it's very common to give your pharmacist or doctor a detailed description of symptoms. Don't be afraid to be specific about how long you've felt this way.",
+      "pronunciation_tip": "The 'h' in 'rhume' is silent. The final 'e' in 'fièvre' is very light, almost like a short breath.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D3"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W5D3-Symptoms"
       }
     },
     {
       "week": 5,
       "day": 4,
-      "title": "Week 5 Day 4: On the Map",
-      "title_native": "On the Map",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 4: Pharmacy and Medications",
+      "title_native": "Semaine 5, Jour 4 : Pharmacie et médicaments",
+      "theme": "Getting Medication",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_4_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "la pharmacie",
+          "phonetic": "lah far-mah-see",
+          "native_meaning": "pharmacy",
+          "english": "pharmacy",
+          "example_sentence_target": "Où est la pharmacie la plus proche ?",
+          "example_sentence_native": "Where is the nearest pharmacy?",
+          "example_sentence_phonetic": "oo ay lah far-mah-see lah ploo prosh"
         },
         {
           "id": "w5_4_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
+          "target": "le médicament",
+          "phonetic": "luh may-dee-kah-mahn",
+          "native_meaning": "medicine",
+          "english": "medicine",
+          "example_sentence_target": "Je dois prendre ce médicament.",
+          "example_sentence_native": "I have to take this medicine.",
+          "example_sentence_phonetic": "zhuh dwah prahndr suh may-dee-kah-mahn"
         },
         {
           "id": "w5_4_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
+          "target": "l'ordonnance",
+          "phonetic": "lor-don-ahns",
+          "native_meaning": "prescription",
+          "english": "prescription",
+          "example_sentence_target": "Voici mon ordonnance.",
+          "example_sentence_native": "Here is my prescription.",
+          "example_sentence_phonetic": "vwa-see mohn or-don-ahns"
         },
         {
           "id": "w5_4_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
+          "target": "le sirop",
+          "phonetic": "luh see-roh",
+          "native_meaning": "syrup",
+          "english": "syrup",
+          "example_sentence_target": "Un sirop pour la toux.",
+          "example_sentence_native": "A cough syrup.",
+          "example_sentence_phonetic": "un see-roh poor lah too"
         },
         {
           "id": "w5_4_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
+          "target": "le pansement",
+          "phonetic": "luh pahn-suh-mahn",
+          "native_meaning": "bandage / plaster",
+          "english": "bandage",
+          "example_sentence_target": "J'ai besoin d'un pansement.",
+          "example_sentence_native": "I need a bandage.",
+          "example_sentence_phonetic": "zhay buh-zwan dun pahn-suh-mahn"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s5_4_1",
+          "target": "Combien de fois par jour ?",
+          "native": "How many times per day?",
+          "phonetic": "kohm-byan duh fwa par zhoor"
+        },
+        {
+          "id": "s5_4_2",
+          "target": "Après le repas.",
+          "native": "After the meal.",
+          "phonetic": "ah-preh luh ruh-pah"
         }
       ],
       "dialogues": [
         {
           "id": "d5_4_1",
-          "context": "On the Map",
+          "context": "At the pharmacy counter.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
+              "target": "Bonjour, j'ai une ordonnance.",
+              "native": "Hello, I have a prescription.",
+              "phonetic": "bohn-zhoor, zhay oon or-don-ahns"
             },
             {
               "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_4_2",
-          "context": "Formal On the Map",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
+              "target": "D'accord, prenez un comprimé trois fois par jour.",
+              "native": "Okay, take one tablet three times a day.",
+              "phonetic": "dah-kor, pruh-nay un kohm-pree-may trwah fwa par zhoor"
             }
           ]
         }
@@ -681,187 +481,124 @@
         "fillBlanks": [
           {
             "id": "fb5_4_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
-          },
-          {
-            "id": "fb5_4_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_4_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "Où est la ___ (pharmacy)?",
+            "answer": "pharmacie",
+            "hint": "pharmacy"
           }
         ],
         "matching": [
-          {
-            "id": "m5_4_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_4_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_4_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_4_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_4_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_4_1", "target": "le médicament", "native": "medicine" },
+          { "id": "m5_4_2", "target": "l'ordonnance", "native": "prescription" },
+          { "id": "m5_4_3", "target": "le pansement", "native": "bandage" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_4_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_4_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_4_1",
+            "scrambled": ["mon", "ordonnance", "Voici"],
+            "correct": "Voici mon ordonnance",
+            "nativeHint": "Here is my prescription."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "Pharmacies in France are marked by a large, glowing green cross. They are the only places authorized to sell most medicines, including common pain relievers.",
+      "pronunciation_tip": "The 'p' in 'sirop' is silent. The '-ent' ending in 'pansement' is a nasal vowel, not a hard 't' sound.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D4"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W5D4-Pharmacy"
       }
     },
     {
       "week": 5,
       "day": 5,
-      "title": "Week 5 Day 5: Landmarks",
-      "title_native": "Landmarks",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 5: Dental and Specialist Care",
+      "title_native": "Semaine 5, Jour 5 : Soins dentaires et spécialisés",
+      "theme": "Dentist & Specialists",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_5_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "le dentiste",
+          "phonetic": "luh dahn-teest",
+          "native_meaning": "dentist",
+          "english": "dentist",
+          "example_sentence_target": "Je dois voir le dentiste.",
+          "example_sentence_native": "I have to see the dentist.",
+          "example_sentence_phonetic": "zhuh dwah vwar luh dahn-teest"
         },
         {
           "id": "w5_5_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
+          "target": "la dent",
+          "phonetic": "lah dahn",
+          "native_meaning": "tooth",
+          "english": "tooth",
+          "example_sentence_target": "J'ai mal à une dent.",
+          "example_sentence_native": "I have a toothache.",
+          "example_sentence_phonetic": "zhay mal ah oon dahn"
         },
         {
           "id": "w5_5_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
+          "target": "l'œil",
+          "phonetic": "loy",
+          "native_meaning": "eye",
+          "english": "eye",
+          "example_sentence_target": "J'ai quelque chose dans l'œil.",
+          "example_sentence_native": "I have something in my eye.",
+          "example_sentence_phonetic": "zhay kel-kuh shoz dahn loy"
         },
         {
           "id": "w5_5_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
+          "target": "l'opticien",
+          "phonetic": "lop-tee-syah",
+          "native_meaning": "optician",
+          "english": "optician",
+          "example_sentence_target": "Je vais chez l'opticien.",
+          "example_sentence_native": "I am going to the optician.",
+          "example_sentence_phonetic": "zhuh vay shay lop-tee-syah"
         },
         {
           "id": "w5_5_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
+          "target": "les lunettes",
+          "phonetic": "lay loo-net",
+          "native_meaning": "glasses",
+          "english": "glasses",
+          "example_sentence_target": "J'ai besoin de nouvelles lunettes.",
+          "example_sentence_native": "I need new glasses.",
+          "example_sentence_phonetic": "zhay buh-zwan duh noo-vel loo-net"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s5_5_1",
+          "target": "Est-ce une urgence ?",
+          "native": "Is it an emergency?",
+          "phonetic": "ess oon oor-zhahns"
+        },
+        {
+          "id": "s5_5_2",
+          "target": "J'ai mal aux dents.",
+          "native": "My teeth hurt.",
+          "phonetic": "zhay mal oh dahn"
         }
       ],
       "dialogues": [
         {
           "id": "d5_5_1",
-          "context": "Landmarks",
+          "context": "Calling a dentist for a toothache.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
+              "target": "Bonjour, j'ai très mal à une dent.",
+              "native": "Hello, I have a very bad toothache.",
+              "phonetic": "bohn-zhoor, zhay tray mal ah oon dahn"
             },
             {
               "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_5_2",
-          "context": "Formal Landmarks",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
+              "target": "Pouvez-vous venir cet après-midi ?",
+              "native": "Can you come this afternoon?",
+              "phonetic": "poo-vay voo vuh-neer set ah-preh mee-dee"
             }
           ]
         }
@@ -870,187 +607,124 @@
         "fillBlanks": [
           {
             "id": "fb5_5_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
-          },
-          {
-            "id": "fb5_5_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_5_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "Je dois voir le ___ (dentist).",
+            "answer": "dentiste",
+            "hint": "dentist"
           }
         ],
         "matching": [
-          {
-            "id": "m5_5_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_5_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_5_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_5_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_5_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_5_1", "target": "la dent", "native": "tooth" },
+          { "id": "m5_5_2", "target": "l'œil", "native": "eye" },
+          { "id": "m5_5_3", "target": "les lunettes", "native": "glasses" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_5_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_5_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_5_1",
+            "scrambled": ["mal", "J'ai", "dents", "aux"],
+            "correct": "J'ai mal aux dents",
+            "nativeHint": "I have a toothache (lit: I have pain in the teeth)."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "In France, dental care is generally separate from general medicine, but still partly reimbursed by the national health insurance (Sécurité Sociale).",
+      "pronunciation_tip": "The plural 'aux' (oh) in 'mal aux dents' is pronounced just like 'au'. The plural 'les' (lay) and 'des' (day) also have very clean, closed 'ay' sounds.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D5"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W5D5-Specialist"
       }
     },
     {
       "week": 5,
       "day": 6,
-      "title": "Week 5 Day 6: Getting Lost",
-      "title_native": "Getting Lost",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 6: Emergency Services",
+      "title_native": "Semaine 5, Jour 6 : Services d'urgence",
+      "theme": "Calling for Help",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_6_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "au secours !",
+          "phonetic": "oh suh-koor",
+          "native_meaning": "help!",
+          "english": "help!",
+          "example_sentence_target": "Au secours ! Aidez-moi !",
+          "example_sentence_native": "Help! Help me!",
+          "example_sentence_phonetic": "oh suh-koor ! ay-day mwah !"
         },
         {
           "id": "w5_6_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
+          "target": "une ambulance",
+          "phonetic": "oon ahm-boo-lahns",
+          "native_meaning": "an ambulance",
+          "english": "an ambulance",
+          "example_sentence_target": "Appelez une ambulance !",
+          "example_sentence_native": "Call an ambulance!",
+          "example_sentence_phonetic": "ah-puh-lay oon ahm-boo-lahns"
         },
         {
           "id": "w5_6_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
+          "target": "les urgences",
+          "phonetic": "lay zoohr-zhahns",
+          "native_meaning": "the ER / emergency room",
+          "english": "ER",
+          "example_sentence_target": "Où sont les urgences ?",
+          "example_sentence_native": "Where is the ER?",
+          "example_sentence_phonetic": "oo sohn lay zoohr-zhahns"
         },
         {
           "id": "w5_6_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
+          "target": "un accident",
+          "phonetic": "un ak-see-dahn",
+          "native_meaning": "an accident",
+          "english": "an accident",
+          "example_sentence_target": "Il y a eu un accident.",
+          "example_sentence_native": "There has been an accident.",
+          "example_sentence_phonetic": "eel ee yah oo un ak-see-dahn"
         },
         {
           "id": "w5_6_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
+          "target": "le sang",
+          "phonetic": "luh sahn",
+          "native_meaning": "blood",
+          "english": "blood",
+          "example_sentence_target": "Il perd du sang.",
+          "example_sentence_native": "He is losing blood.",
+          "example_sentence_phonetic": "eel per doo sahn"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s5_6_1",
+          "target": "C'est une urgence !",
+          "native": "It's an emergency!",
+          "phonetic": "say toon oor-zhahns"
+        },
+        {
+          "id": "s5_6_2",
+          "target": "Aidez-moi, s'il vous plaît.",
+          "native": "Help me, please.",
+          "phonetic": "ay-day mwah, seel voo pleh"
         }
       ],
       "dialogues": [
         {
           "id": "d5_6_1",
-          "context": "Getting Lost",
+          "context": "Calling emergency services (112 or 15).",
           "lines": [
             {
               "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
+              "target": "Allô ? Il y a eu un accident !",
+              "native": "Hello? There has been an accident!",
+              "phonetic": "ah-loh ? eel ee yah oo un ak-see-dahn"
             },
             {
               "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_6_2",
-          "context": "Formal Getting Lost",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
+              "target": "Où êtes-vous ? L'ambulance arrive.",
+              "native": "Where are you? The ambulance is coming.",
+              "phonetic": "oo et voo ? lahm-boo-lahns ah-reev"
             }
           ]
         }
@@ -1059,272 +733,100 @@
         "fillBlanks": [
           {
             "id": "fb5_6_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
-          },
-          {
-            "id": "fb5_6_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_6_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "Appelez une ___ (ambulance) !",
+            "answer": "ambulance",
+            "hint": "ambulance"
           }
         ],
         "matching": [
-          {
-            "id": "m5_6_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_6_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_6_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_6_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_6_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_6_1", "target": "au secours", "native": "help" },
+          { "id": "m5_6_2", "target": "un accident", "native": "accident" },
+          { "id": "m5_6_3", "target": "le sang", "native": "blood" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_6_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_6_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_6_1",
+            "scrambled": ["ambulance", "Appelez", "une"],
+            "correct": "Appelez une ambulance",
+            "nativeHint": "Call an ambulance."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "In France, you can call 15 for medical emergencies (SAMU), 18 for fire/accidents (Pompiers), or 112 as the general European emergency number.",
+      "pronunciation_tip": "The 'g' in 'sang' is silent. The 's' in 'urgences' links with the vowel in 'les' to sound like a 'z'.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D6"
+        "xp": 100,
+        "streak_bonus": 10,
+        "badge": "W5D6-Emergency"
       }
     },
     {
       "week": 5,
       "day": 7,
-      "title": "Week 5 Day 7: City Navigation",
-      "title_native": "City Navigation",
-      "theme": "Directions & Getting Around",
+      "title": "Week 5, Day 7: Medical Review",
+      "title_native": "Semaine 5, Jour 7 : Révision médicale",
+      "theme": "Weekly Review",
       "path": "survival",
       "targetLanguage": "French",
       "nativeLanguage": "English",
       "words": [
         {
           "id": "w5_7_1",
-          "target": "Gauche",
-          "phonetic": "gohsh",
-          "native_meaning": "Left",
-          "english": "Left",
-          "example_sentence_target": "Gauche.",
-          "example_sentence_native": "Left."
+          "target": "la santé",
+          "phonetic": "lah sahn-tay",
+          "native_meaning": "health",
+          "english": "health",
+          "example_sentence_target": "Prenez soin de votre santé.",
+          "example_sentence_native": "Take care of your health.",
+          "example_sentence_phonetic": "pruh-nay swan duh vo-truh sahn-tay"
         },
         {
           "id": "w5_7_2",
-          "target": "Droite",
-          "phonetic": "drwat",
-          "native_meaning": "Right",
-          "english": "Right",
-          "example_sentence_target": "Droite.",
-          "example_sentence_native": "Right."
-        },
-        {
-          "id": "w5_7_3",
-          "target": "Tout droit",
-          "phonetic": "too-DRWA",
-          "native_meaning": "Straight ahead",
-          "english": "Straight ahead",
-          "example_sentence_target": "Tout droit.",
-          "example_sentence_native": "Straight ahead."
-        },
-        {
-          "id": "w5_7_4",
-          "target": "Rue",
-          "phonetic": "roo",
-          "native_meaning": "Street",
-          "english": "Street",
-          "example_sentence_target": "Rue.",
-          "example_sentence_native": "Street."
-        },
-        {
-          "id": "w5_7_5",
-          "target": "Arrêt",
-          "phonetic": "a-RAY",
-          "native_meaning": "Stop",
-          "english": "Stop",
-          "example_sentence_target": "Arrêt.",
-          "example_sentence_native": "Stop."
-        }
-      ],
-      "dialogues": [
-        {
-          "id": "d5_7_1",
-          "context": "City Navigation",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Gauche!",
-              "native": "Left!",
-              "phonetic": "gohsh"
-            },
-            {
-              "speaker": "B",
-              "target": "Gauche! Droite!",
-              "native": "Left! Right!",
-              "phonetic": "gohsh drwat"
-            },
-            {
-              "speaker": "A",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            }
-          ]
-        },
-        {
-          "id": "d5_7_2",
-          "context": "Formal City Navigation",
-          "lines": [
-            {
-              "speaker": "A",
-              "target": "Droite!",
-              "native": "Right!",
-              "phonetic": "drwat"
-            },
-            {
-              "speaker": "B",
-              "target": "Tout droit!",
-              "native": "Straight ahead!",
-              "phonetic": "too-DRWA"
-            },
-            {
-              "speaker": "A",
-              "target": "Rue! Arrêt!",
-              "native": "Street! Stop!",
-              "phonetic": "roo a-RAY"
-            }
-          ]
+          "target": "guérir",
+          "phonetic": "gay-reer",
+          "native_meaning": "to heal / get better",
+          "english": "to heal",
+          "example_sentence_target": "J'espère que vous allez guérir vite.",
+          "example_sentence_native": "I hope you get better quickly.",
+          "example_sentence_phonetic": "zhess-per kuh voo zah-lay gay-reer veet"
         }
       ],
       "exercises": {
         "fillBlanks": [
           {
             "id": "fb5_7_1",
-            "sentence": "___ means 'Left' in French",
-            "answer": "Gauche",
-            "hint": "Left"
+            "sentence": "Je suis ___ (sick).",
+            "answer": "malade",
+            "hint": "sick"
           },
           {
             "id": "fb5_7_2",
-            "sentence": "___ means 'Right' in French",
-            "answer": "Droite",
-            "hint": "Right"
-          },
-          {
-            "id": "fb5_7_3",
-            "sentence": "___ means 'Straight ahead' in French",
-            "answer": "Tout droit",
-            "hint": "Straight ahead"
+            "sentence": "Où est le ___ (doctor)?",
+            "answer": "médecin",
+            "hint": "doctor"
           }
         ],
         "matching": [
-          {
-            "id": "m5_7_1",
-            "target": "Gauche",
-            "native": "Left"
-          },
-          {
-            "id": "m5_7_2",
-            "target": "Droite",
-            "native": "Right"
-          },
-          {
-            "id": "m5_7_3",
-            "target": "Tout droit",
-            "native": "Straight ahead"
-          },
-          {
-            "id": "m5_7_4",
-            "target": "Rue",
-            "native": "Street"
-          },
-          {
-            "id": "m5_7_5",
-            "target": "Arrêt",
-            "native": "Stop"
-          }
+          { "id": "m5_7_1", "target": "la tête", "native": "head" },
+          { "id": "m5_7_2", "target": "le ventre", "native": "stomach" },
+          { "id": "m5_7_3", "target": "la pharmacie", "native": "pharmacy" },
+          { "id": "m5_7_4", "target": "l'ordonnance", "native": "prescription" }
         ],
-        "multipleChoice": [
+        "sentenceScramble": [
           {
-            "id": "mc5_7_1",
-            "question": "What does 'Gauche' mean?",
-            "options": [
-              "Left",
-              "Right",
-              "Straight ahead",
-              "Street"
-            ],
-            "correct": 0,
-            "explanation": "'Gauche' means Left in English."
-          },
-          {
-            "id": "mc5_7_2",
-            "question": "How do you say 'Right' in French?",
-            "options": [
-              "Gauche",
-              "Droite",
-              "Tout droit",
-              "Rue"
-            ],
-            "correct": 1,
-            "explanation": "'Droite' means Right."
+            "id": "ss5_7_1",
+            "scrambled": ["mal", "J'ai", "tête", "la", "à"],
+            "correct": "J'ai mal à la tête",
+            "nativeHint": "I have a headache."
           }
         ]
       },
-      "cultural_note": "Try the 'menu fixe' at French restaurants — it's affordable and authentic.",
-      "pronunciation_tip": "French stress falls at the END of each phrase, unlike English.",
+      "cultural_note": "Great job! This week you learned the most critical medical phrases. Keep a list of emergency numbers on your fridge just in case.",
+      "pronunciation_tip": "Review nasal sounds from words like 'sang', 'médecin', and 'accident'. Practice making the 'ahn' sound by breathing out slightly through your nose.",
       "progress": {
-        "xp": 140,
-        "streak_bonus": 20,
-        "badge": "W5D7"
+        "xp": 150,
+        "streak_bonus": 30,
+        "badge": "W5-MedicalMaster"
       }
     }
   ]
