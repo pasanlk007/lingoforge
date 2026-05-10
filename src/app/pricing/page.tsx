@@ -125,7 +125,7 @@ function PricingPageContent() {
 
   const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
-  const LIFETIME_URL = `${LIFETIME_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
+  const LIFETIME_URL = `${LIFETIME_BASE_URL}&checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
 
   const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
     const product = products.find(p => p.identifier === sku);
