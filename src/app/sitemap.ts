@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'sinhala-german-course',
     'sinhala-italian-course',
     'bashaguru-language-app-review',
+    'learn-romanian-language-sinhala',
+    'romanian-words-daily-life-sinhala',
+    'work-in-romania-sinhala-guide',
+    'italy-language-sinhala',
+    'france-language-sinhala',
+    'bashaguru-review-sinhala',
   ]
 
   return [
