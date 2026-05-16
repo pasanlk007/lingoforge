@@ -1,93 +1,77 @@
-Build a complete Google Sign-In authentication system using Firebase Authentication.
+# LingoForge
 
-🎯 Goal
+LingoForge is a language learning platform designed for Asian migrant workers who need practical, real-world communication skills to live and work abroad.
 
-Enable users to log in using their Google account without manual signup or password handling.
+## Mission
 
----
+Millions of migrant workers move to foreign countries every year without knowing the local language. Most language learning platforms focus on tourists or academic learners, but migrant workers need something different:
 
-⚙️ Requirements
+- Workplace communication
+- Survival conversations
+- Doctor visits
+- Shopping and transportation
+- Daily life interactions
 
-1. Use Firebase Authentication
-2. Enable Google Sign-In provider
-3. Automatically create user account on first login
-4. Persist user session (stay logged in)
-5. Handle login, logout, and auth state
-6. Show basic UI (Login button + Logged-in state)
-
----
-
-🧩 Features to Implement
-
-- "Continue with Google" button
-- Google popup authentication flow
-- Retrieve user data:
-  - displayName
-  - email
-  - photoURL
-- Store user info in Firebase (no custom backend required)
-- Detect if user is already logged in
-- Logout functionality
+LingoForge focuses on practical communication instead of unnecessary complexity.
 
 ---
 
-🛡️ Error Handling
+## Supported Learning Paths
 
-- Handle popup closed / cancelled login
-- Handle network errors
-- Show user-friendly messages
+LingoForge supports multiple native languages and target languages.
 
----
+### Native Languages
+- Sinhala
+- Hindi
+- Bengali
+- Urdu
+- Nepali
+- English
 
-🧱 Tech Stack (IMPORTANT)
-
-Use:
-
-- Firebase Authentication SDK
-- [Specify one: Flutter / React Native / Web (JavaScript) / Android (Kotlin) / iOS (Swift)]
-
----
-
-🔐 Firebase Setup Assumptions
-
-Assume:
-
-- Firebase project already created
-- Google Sign-In enabled in Firebase Console
-- Firebase config file is available (google-services.json / firebaseConfig)
+### Target Languages
+- Romanian
+- German
+- French
+- Italian
+- Spanish
+- And more
 
 ---
 
-📦 Output Requirements
+## Features
 
-- Clean, production-ready code
-- Proper file structure
-- Comments explaining key parts
-- Minimal but modern UI
-
----
-
-🚀 Bonus (Optional but preferred)
-
-- Auto redirect after login
-- Loading state while authenticating
-- Clean separation of auth logic and UI
+- Structured survival lessons
+- AI-powered learning assistance
+- Real-world conversations
+- Pronunciation support
+- Beginner-friendly learning flow
+- Mobile-first experience
 
 ---
 
-❗Important
+## Why LingoForge Exists
 
-Do NOT include:
+LingoForge was created from real migrant experiences.
 
-- Email/password authentication
-- Any manual signup form
+Many migrants struggle not because they lack skills, but because they cannot communicate confidently in a new country.
 
-ONLY Google Sign-In.
+The goal of LingoForge is to reduce that barrier and help people integrate faster into society and work environments.
 
 ---
 
-Now generate the full implementation.# Firebase Studio
+## Website
 
-This is a NextJS starter in Firebase Studio.
+https://lingoforge.app
 
-To get started, take a look at src/app/page.tsx.
+---
+
+## Founder
+
+Pasan Lankathilaka  
+Founder of LingoForge
+
+---
+
+## Status
+
+Active development in progress.
