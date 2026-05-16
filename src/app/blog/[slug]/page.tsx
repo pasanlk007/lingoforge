@@ -3,6 +3,211 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 const articles: Record<string, any> = {
+  'learn-romanian-language-sinhala': {
+    title: 'Learn Romanian Language in Sinhala - Complete Beginner Guide 2026',
+    titleSi: 'රෝමේනියානු භාෂාව සිංහලෙන් ඉගෙනගන්න - සම්පූර්ණ මාර්ගෝපදේශය 2026',
+    date: '2026-05-10',
+    readTime: '7 min',
+    tags: ['Romanian', 'Sinhala', 'Beginner'],
+    content: `
+## රෝමේනියාවට යන ශ්‍රී ලාංකිකයන් සඳහා
+
+10000 කට අධික ශ්‍රී ලාංකිකයන් රෝමේනියාවට රැකියා, අධ්‍යාපන සහ වඩා හොඳ ජීවිතයක් සඳහා යයි. නමුත් ඔවුන් මුහුණ දෙන ලොකුම ගැටළුව වන්නේ සන්නිවේදනයයි.
+
+## Basic Romanian Phrases - සිංහල අර්ථ සමග
+
+| Romanian | Sinhala | Pronunciation |
+|----------|---------|---------------|
+| Bună ziua | සුභ දවසක් | BOO-nah ZEE-wah |
+| Mulțumesc | ස්තූතියි | mool-tsoo-MESK |
+| Vă rog | කරුණාකර | vah RAWG |
+| Da / Nu | ඔව් / නැහැ | dah / noo |
+| Unde este? | කොහේද? | OON-deh YES-teh |
+
+## Work Phrases - රැකියා ස්ථානයේදී
+
+- **Șeful meu** = මගේ boss
+- **Salariu** = වැටුප
+- **Zi liberă** = නිවාඩු දිනය
+- **Ajutor** = උදව්
+
+## Start Learning Free
+
+LingoForge/BashaGuru app එකේ Romanian survival lessons සිංහලෙන් ඉගෙනගන්න. පළමු දින 3 නොමිලේ.
+`,
+  },
+  'romanian-words-daily-life-sinhala': {
+    title: 'Romanian Words for Daily Life with Sinhala Meanings',
+    titleSi: 'දෛනික ජීවිතයේ රෝමේනියානු වචන - සිංහල අර්ථ සමග',
+    date: '2026-05-10',
+    readTime: '5 min',
+    tags: ['Romanian', 'Vocabulary', 'Daily Life'],
+    content: `
+## Shopping - Cumpărături
+
+| Romanian | Sinhala |
+|----------|---------|
+| Magazin | සාප්පුව |
+| Cât costă? | කීයද? |
+| Ieftin / Scump | ලාභ / මිල අධික |
+| Plată | ගෙවීම |
+
+## Transport - Transport
+
+| Romanian | Sinhala |
+|----------|---------|
+| Autobuz | බස් රථය |
+| Stație | නැවතුම |
+| Bilet | ටිකට් |
+| Stânga / Dreapta | වමට / දකුණට |
+
+## Hospital - Spital
+
+| Romanian | Sinhala |
+|----------|---------|
+| Doctor | වෛද්‍යවරයා |
+| Mă doare | මට වේදනාවයි |
+| Medicamente | ඖෂධ |
+| Urgență | හදිසි |
+
+## Learn More with LingoForge
+
+BashaGuru app එකෙන් audio pronunciation සමග Romanian words ඉගෙනගන්න.
+`,
+  },
+  'work-in-romania-sinhala-guide': {
+    title: 'Complete Guide to Working in Romania for Sri Lankans',
+    titleSi: 'රෝමේනියාවේ වැඩ කිරීමේ සම්පූර්ණ මාර්ගෝපදේශය - සිංහලෙන්',
+    date: '2026-05-10',
+    readTime: '8 min',
+    tags: ['Romania', 'Work', 'Sri Lanka'],
+    content: `
+## රෝමේනියාවේ වැඩ කිරීම - ශ්‍රී ලාංකිකයන් සඳහා
+
+රෝමේනියාව EU රාජ්‍යයකි. රැකියා වීසා ලබාගත හැකි අතර minimum wage 2024 දී ~€700/මාසය.
+
+## Visa Process
+
+1. Job offer ලැබීම
+2. Work permit apply කිරීම
+3. Embassy interview
+4. Visa ලැබීම
+
+## Important Romanian Work Words
+
+| Romanian | Sinhala |
+|----------|---------|
+| Contract de muncă | රැකියා ගිවිසුම |
+| Program de lucru | වැඩ කාලය |
+| Concediu | නිවාඩු |
+| Drepturile mele | මගේ අයිතිවාසිකම් |
+
+## Language is Key
+
+රෝමේනියාවේ රැකියාවේදී Romanian භාෂාව දැනීම ඉතාම වැදගත්. LingoForge Citizenship Pro Path දී employment rights සිංහලෙන් ඉගෙනගන්න.
+`,
+  },
+  'italy-language-sinhala': {
+    title: 'Learn Italian Language in Sinhala - Survival Phrases',
+    titleSi: 'ඉතාලි භාෂාව සිංහලෙන් - Survival Phrases',
+    date: '2026-05-10',
+    readTime: '5 min',
+    tags: ['Italian', 'Sinhala', 'Italy'],
+    content: `
+## ඉතාලිය - ශ්‍රී ලාංකිකයන්ගේ ජනප්‍රිය ගමනාන්තය
+
+ඉතාලියේ 100,000කට අධික ශ්‍රී ලාංකිකයන් ජීවත් වෙති. ඉතාලි භාෂාව ඉගෙනීම රැකියා සහ ජීවිතය පහසු කරයි.
+
+## Basic Italian - සිංහල අර්ථ සමග
+
+| Italian | Sinhala | Pronunciation |
+|---------|---------|---------------|
+| Buongiorno | සුභ උදෑසනක් | bwon-JOR-no |
+| Grazie | ස්තූතියි | GRAT-syeh |
+| Per favore | කරුණාකර | per fa-VO-reh |
+| Aiuto! | උදව්! | eye-OO-to |
+| Dove? | කොහේද? | DOH-veh |
+
+## Work Italian
+
+- **Lavoro** = රැකියාව
+- **Stipendio** = වැටුප
+- **Permesso** = අවසරය
+- **Ospedale** = රෝහල
+
+## LingoForge Italian Path
+
+LingoForge app එකෙන් ඉතාලි survival, alphabet සහ numbers ඉගෙනගන්න. සිංහල, හින්දි, බෙංගාලි සහ තවත් native languages support.
+`,
+  },
+  'france-language-sinhala': {
+    title: 'French Language in Sinhala for Sri Lankan Migrant Workers',
+    titleSi: 'ප්‍රංශ භාෂාව සිංහලෙන් - ශ්‍රී ලාංකික migrant workers සඳහා',
+    date: '2026-05-10',
+    readTime: '5 min',
+    tags: ['French', 'Sinhala', 'France'],
+    content: `
+## ප්‍රංශයේ ශ්‍රී ලාංකිකයන්
+
+ප්‍රංශය Europe හි ශ්‍රී ලාංකිකයන් ජීවත් වෙන ජනප්‍රිය රටකි. ප්‍රංශ ඉගෙනීම ජීවිතය පහසු කරයි.
+
+## Essential French - සිංහල සමග
+
+| French | Sinhala | Pronunciation |
+|--------|---------|---------------|
+| Bonjour | සුභ දවසක් | bon-ZHOOR |
+| Merci | ස්තූතියි | mer-SEE |
+| S'il vous plaît | කරුණාකර | seel-voo-PLEH |
+| Au secours! | උදව්! | oh-suh-KOOR |
+| Où est? | කොහේද? | oo-EH |
+
+## Daily Life French
+
+- **Travail** = රැකියාව
+- **Salaire** = වැටුප
+- **Médecin** = වෛද්‍යවරයා
+- **Supermarché** = සාප්පුව
+
+## Learn French with LingoForge
+
+BhashaGuru/LingoForge app එකෙන් ප්‍රංශ survival phrases audio සමග ඉගෙනගන්න.
+`,
+  },
+  'bashaguru-review-sinhala': {
+    title: 'BashaGuru LingoForge App Review in Sinhala - Is It Worth It?',
+    titleSi: 'BhashaGuru (LingoForge) App Review - සිංහලෙන්',
+    date: '2026-05-10',
+    readTime: '4 min',
+    tags: ['BashaGuru', 'LingoForge', 'Review'],
+    content: `
+## BhashaGuru / LingoForge යනු කුමක්ද?
+
+BhashaGuru (LingoForge ලෙසද හඳුන්වයි) යනු විශේෂයෙන්ම Asian migrant workers සඳහා නිර්මාණය කළ AI-powered language learning app එකකි.
+
+## Main Features
+
+- 21 target languages (Romanian, German, French, Italian...)
+- 6 native languages (Sinhala, Hindi, Urdu, Bengali, Nepali, English)
+- Survival, Alphabet, Numbers paths
+- LingoForge Pro - AI Citizenship lessons
+- Audio pronunciation
+- Daily reminders
+
+## Pricing
+
+- **නොමිලේ**: පළමු දින 3 සෑම path එකකම
+- **Survival Bundle**: $26 one-time
+- **Lifetime Pro**: $49 one-time
+
+## Who Is It For?
+
+රෝමේනියාව, ජර්මනිය, ඉතාලිය, ප්‍රංශය වැනි රටවලට ගිය හෝ යාමට සූදානම් ශ්‍රී ලාංකිකයන්, ඉන්දියානුවන්, බංග්ලාදේශිකයන් සහ නේපාලිකයන් සඳහා.
+
+## Verdict
+
+මිල, quality සහ native language support සලකා BhashaGuru migrant workers සඳහා හොඳම option එකයි.
+`,
+  },
   'romanian-for-sri-lankan-workers': {
     title: 'Romanian Language for Sri Lankan Workers in Romania',
     titleSi: 'රෝමේනියාවේ වැඩ කරන ශ්‍රී ලාංකිකයන් සඳහා රෝමේනියානු භාෂාව',
