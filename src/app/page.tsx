@@ -364,6 +364,7 @@ export default function LandingPage() {
               <div>
                  <h4 className="font-semibold text-white tracking-wider uppercase">{t.footerLinks.company}</h4>
                   <ul className="mt-4 space-y-2">
+                      <li><Link href="/blog" className="text-slate-400 hover:text-white">Blog</Link></li>
                       <li><Link href="/paths" className="text-slate-400 hover:text-white">{t.footerLinks.paths}</Link></li>
                       <li><Link href="/pricing" className="text-slate-400 hover:text-white">{t.footerLinks.pricing}</Link></li>
                       <li><Link href="/privacy" className="text-slate-400 hover:text-white">{t.footerLinks.privacy}</Link></li>
