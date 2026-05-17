@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
 import { initializeFirebase } from '@/firebase/server-init';
 
-const { firestore } = initializeFirebase();
+// firestore initialized per-request below
 const packageName = 'com.lingoforge.app';
 
 // Initialize the Google API client
