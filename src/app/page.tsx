@@ -347,7 +347,22 @@ export default function LandingPage() {
         </section>
 
         
-        <section className="py-10 bg-slate-800/50 border-y border-slate-700/50">
+        
+        <section className="py-12 bg-slate-900">
+          <div className="container mx-auto px-4 max-w-2xl text-center">
+            <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-8">
+              <div className="text-4xl mb-4">🇱🇰 → 🇷🇴</div>
+              <blockquote className="text-slate-300 text-lg italic leading-relaxed mb-4">
+                "I moved to Romania from Sri Lanka and struggled with the language every day. I searched for apps, but none were built for people like me. So I built LingoForge — the app I wish existed when I first arrived."
+              </blockquote>
+              <p className="text-sm font-bold text-white">Pasan Lankathilaka</p>
+              <p className="text-xs text-slate-400">Founder · Sri Lankan in Romania 🇷🇴</p>
+              <a href="/about" className="inline-block mt-4 text-xs text-cyan-400 hover:text-cyan-300">Read full story →</a>
+            </div>
+          </div>
+        </section>
+
+<section className="py-10 bg-slate-800/50 border-y border-slate-700/50">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="flex flex-col items-center gap-2">
