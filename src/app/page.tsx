@@ -346,7 +346,35 @@ export default function LandingPage() {
             </div>
         </section>
 
-        <footer className="bg-slate-900 border-t border-slate-800">
+        
+        <section className="py-10 bg-slate-800/50 border-y border-slate-700/50">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-2xl">🍋</span>
+                <p className="text-xs font-bold text-white">Secure Payments</p>
+                <p className="text-xs text-slate-400">One-time payment<br/>No subscriptions ever</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-2xl">🤖</span>
+                <p className="text-xs font-bold text-white">AI Powered</p>
+                <p className="text-xs text-slate-400">Powered by<br/>Anthropic Claude</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-2xl">✅</span>
+                <p className="text-xs font-bold text-white">Money-Back Guarantee</p>
+                <p className="text-xs text-slate-400">Not satisfied?<br/>Full refund within 7 days</p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <span className="text-2xl">🌍</span>
+                <p className="text-xs font-bold text-white">Built for Migrants</p>
+                <p className="text-xs text-slate-400">By a Sri Lankan<br/>living in Romania</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<footer className="bg-slate-900 border-t border-slate-800">
           <div className="container mx-auto px-4 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
