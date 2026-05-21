@@ -86,6 +86,23 @@ export default function LandingPage() {
     router.push('/signup');
   }
 
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "LingoForge",
+    "url": "https://lingoforge.app",
+    "description": "AI-powered language learning platform for Asian migrant workers. Learn Romanian, German, French and 20+ languages in Sinhala, Hindi, Bengali, Urdu and Nepali.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web Browser, Android, iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "26",
+      "priceCurrency": "USD",
+      "description": "Survival Bundle - one-time payment"
+    }
+  };
+
   if (!isMounted) {
     return <div className="w-full min-h-screen bg-slate-900" />;
   }
@@ -98,6 +115,7 @@ export default function LandingPage() {
   return (
     <div className={cn("bg-slate-900 text-white font-body")} dir={isRTL ? 'rtl' : 'ltr'}>
       
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {isFbBrowser && (
         <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl p-6 max-w-sm w-full text-center shadow-2xl">
