@@ -7,387 +7,455 @@
     {
       "week": 10,
       "day": 1,
-      "title": "Week 10 Day 1: Weather Vocabulary",
-      "title_native": "Weather Vocabulary",
-      "theme": "Weather & Nature",
+      "title": "අනියම් මිතුරන් ඇති කර ගැනීම",
+      "title_native": "Lässige Freundschaften schließen",
+      "theme": "Making Casual Friends",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w10_1_1",
-          "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
-          "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "target": "Freund",
+          "phonetic": "froind",
+          "native_meaning": "මිතුරා",
+          "english": "friend (male)",
+          "example_sentence_target": "Das ist mein Freund.",
+          "example_sentence_native": "මේ මගේ මිතුරා.",
+          "example_sentence_phonetic": "Das ist main froind."
         },
         {
           "id": "w10_1_2",
-          "target": "Sonne",
-          "phonetic": "සො-නේ",
-          "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "target": "Bekannter",
+          "phonetic": "be-kan-ter",
+          "native_meaning": "හඳුනන කෙනා",
+          "english": "acquaintance (male)",
+          "example_sentence_target": "Er ist ein Bekannter von mir.",
+          "example_sentence_native": "ඔහු මගේ හඳුනන කෙනෙක්.",
+          "example_sentence_phonetic": "Ea ist ain be-kan-ter fon meer."
         },
         {
           "id": "w10_1_3",
-          "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "target": "kennenlernen",
+          "phonetic": "ken-en-lair-nen",
+          "native_meaning": "හඳුනාගන්නවා",
+          "english": "to get to know",
+          "example_sentence_target": "Ich möchte dich kennenlernen.",
+          "example_sentence_native": "මට ඔයාව හඳුනාගන්න ඕන.",
+          "example_sentence_phonetic": "Ish meersh-te dish ken-en-lair-nen."
         },
         {
           "id": "w10_1_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "nett",
+          "phonetic": "net",
+          "native_meaning": "හොඳ",
+          "english": "nice",
+          "example_sentence_target": "Du bist sehr nett.",
+          "example_sentence_native": "ඔයා ගොඩක් හොඳයි.",
+          "example_sentence_phonetic": "Doo bist zea net."
         },
         {
           "id": "w10_1_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "woher",
+          "phonetic": "vo-hair",
+          "native_meaning": "කොහෙන්ද",
+          "english": "from where",
+          "example_sentence_target": "Woher kommst du?",
+          "example_sentence_native": "ඔයා කොහෙන්ද එන්නේ?",
+          "example_sentence_phonetic": "Vo-hair komst doo?"
+        },
+        {
+          "id": "w10_1_6",
+          "target": "was",
+          "phonetic": "vas",
+          "native_meaning": "මොකක්ද",
+          "english": "what",
+          "example_sentence_target": "Was ist das?",
+          "example_sentence_native": "මේ මොකක්ද?",
+          "example_sentence_phonetic": "Vas ist das?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_1_1",
+          "target": "Hallo, ich heiße Maria.",
+          "native": "හෙලෝ, මගේ නම මරියා.",
+          "phonetic": "Halo, ish hai-se Maria."
+        },
+        {
+          "id": "s10_1_2",
+          "target": "Wie heißt du?",
+          "native": "ඔයාගේ නම මොකක්ද?",
+          "phonetic": "Vee haist doo?"
+        },
+        {
+          "id": "s10_1_3",
+          "target": "Woher kommst du?",
+          "native": "ඔයා කොහෙන්ද?",
+          "phonetic": "Vo-hair komst doo?"
+        },
+        {
+          "id": "s10_1_4",
+          "target": "Schön, dich kennenzulernen.",
+          "native": "ඔයාව හමුවීම සතුටක්.",
+          "phonetic": "Sheun, dish ken-en-tsoo-lair-nen."
+        },
+        {
+          "id": "s10_1_5",
+          "target": "Was machst du hier?",
+          "native": "ඔයා මෙහේ මොකද කරන්නේ?",
+          "phonetic": "Vas makhst doo heer?"
         }
       ],
       "dialogues": [
         {
           "id": "d10_1_1",
-          "context": "Weather Vocabulary",
+          "context": "උද්‍යානයකදී පළමු වරට කෙනෙකු හමුවීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Hi! Ich bin Anna. Und du?",
+              "native": "හායි! මම ඇනා. ඔයා?",
+              "phonetic": "Hi! Ish bin Anna. Oond doo?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
-            },
-            {
-              "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Hallo Anna. Ich bin Markus. Schön, dich kennenzulernen.",
+              "native": "හෙලෝ ඇනා. මම මාකස්. ඔයාව හමුවීම සතුටක්.",
+              "phonetic": "Halo Anna. Ish bin Markus. Sheun, dish ken-en-tsoo-lair-nen."
             }
           ]
         },
         {
           "id": "d10_1_2",
-          "context": "Formal Weather Vocabulary",
+          "context": "ඔබ පැමිණියේ කොහෙන්දැයි විමසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Woher kommst du, Markus?",
+              "native": "මාකස්, ඔයා කොහෙන්ද එන්නේ?",
+              "phonetic": "Vo-hair komst doo, Markus?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Ich komme aus Sri Lanka. Und du?",
+              "native": "මම එන්නේ ශ්‍රී ලංකාවෙන්. ඔයා?",
+              "phonetic": "Ish komme aus Sri Lanka. Oond doo?"
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Ich komme aus Deutschland.",
+              "native": "මම එන්නේ ජර්මනියෙන්.",
+              "phonetic": "Ish komme aus Doich-land."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_1_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_1_1",
+            "scrambled": [
+              "du",
+              "Wie",
+              "heißt",
+              "?"
+            ],
+            "correct": "Wie heißt du?",
+            "nativeHint": "ඔයාගේ නම මොකක්දැයි අසන්න."
           },
           {
-            "id": "fb10_1_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_1_2",
+            "scrambled": [
+              "du",
+              "kommst",
+              "Woher",
+              "?"
+            ],
+            "correct": "Woher kommst du?",
+            "nativeHint": "ඔබ කොහෙන්දැයි අසන්න."
           },
           {
-            "id": "fb10_1_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_1_3",
+            "scrambled": [
+              "kennenlernen",
+              "Schön",
+              "dich",
+              "."
+            ],
+            "correct": "Schön, dich kennenzulernen.",
+            "nativeHint": "හමුවීම ගැන සතුට ප්‍රකාශ කරන්න."
           }
         ],
         "matching": [
           {
             "id": "m10_1_1",
-            "target": "Wetter",
-            "native": "කාලගුණය"
+            "target": "Freund",
+            "native": "මිතුරා"
           },
           {
             "id": "m10_1_2",
-            "target": "Sonne",
-            "native": "හිරු"
+            "target": "kennenlernen",
+            "native": "හඳුනාගන්නවා"
           },
           {
             "id": "m10_1_3",
-            "target": "Regen",
-            "native": "වැස්ස"
+            "target": "nett",
+            "native": "හොඳ"
           },
           {
             "id": "m10_1_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "woher",
+            "native": "කොහෙන්ද"
           },
           {
             "id": "m10_1_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_1_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "was",
+            "native": "මොකක්ද"
           },
           {
-            "id": "mc10_1_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_1_6",
+            "target": "Bekannter",
+            "native": "හඳුනන කෙනා"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D1"
-      }
+      "cultural_note": "ජර්මානුවන් මුලදී තරමක් සංයමයෙන් සිටිය හැකි නමුත්, ඔවුන්ව දැන හඳුනා ගත් පසු ඉතා විශ්වාසවන්ත මිතුරන් වේ. සරල 'Hallo' කීම සහ සිනහවක් හොඳ ආරම්භයකි.",
+      "pronunciation_tip": "ජර්මානු 'W' ශබ්දය ඉංග්‍රීසි 'V' ශබ්දයට සමානයි (උදාහරණයක් ලෙස 'was' සහ 'woher' වචන වල)."
     },
     {
       "week": 10,
       "day": 2,
-      "title": "Week 10 Day 2: Seasons",
-      "title_native": "Seasons",
-      "theme": "Weather & Nature",
+      "title": "විනෝදාංශ සහ විවේකය ගැන කතා කිරීම",
+      "title_native": "Über Hobbys & Freizeit sprechen",
+      "theme": "Talking about Hobbies & Free Time",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w10_2_1",
-          "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
-          "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "target": "Hobby",
+          "phonetic": "hob-ee",
+          "native_meaning": "විනෝදාංශය",
+          "english": "hobby",
+          "example_sentence_target": "Was ist dein Hobby?",
+          "example_sentence_native": "ඔයාගේ විනෝදාංශය මොකක්ද?",
+          "example_sentence_phonetic": "Vas ist dain hob-ee?"
         },
         {
           "id": "w10_2_2",
-          "target": "Sonne",
-          "phonetic": "සො-නේ",
-          "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "target": "Freizeit",
+          "phonetic": "frai-tsait",
+          "native_meaning": "විවේක කාලය",
+          "english": "free time",
+          "example_sentence_target": "Ich habe nicht viel Freizeit.",
+          "example_sentence_native": "මට වැඩි විවේක කාලයක් නැහැ.",
+          "example_sentence_phonetic": "Ish ha-be nisht feel frai-tsait."
         },
         {
           "id": "w10_2_3",
-          "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "target": "lesen",
+          "phonetic": "lay-zen",
+          "native_meaning": "කියවනවා",
+          "english": "to read",
+          "example_sentence_target": "Ich lese gerne Bücher.",
+          "example_sentence_native": "මම පොත් කියවන්න කැමතියි.",
+          "example_sentence_phonetic": "Ish lay-ze gair-ne boo-sher."
         },
         {
           "id": "w10_2_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "Musik",
+          "phonetic": "moo-zeek",
+          "native_meaning": "සංගීතය",
+          "english": "music",
+          "example_sentence_target": "Ich höre gerne Musik.",
+          "example_sentence_native": "මම සංගීතයට සවන් දෙන්න කැමතියි.",
+          "example_sentence_phonetic": "Ish huh-re gair-ne moo-zeek."
         },
         {
           "id": "w10_2_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "Sport",
+          "phonetic": "shport",
+          "native_meaning": "ක්‍රීඩා",
+          "english": "sports",
+          "example_sentence_target": "Machst du gerne Sport?",
+          "example_sentence_native": "ඔයා ක්‍රීඩා කරන්න කැමතිද?",
+          "example_sentence_phonetic": "Makhst doo gair-ne shport?"
+        },
+        {
+          "id": "w10_2_6",
+          "target": "reisen",
+          "phonetic": "rai-zen",
+          "native_meaning": "සංචාරය කරනවා",
+          "english": "to travel",
+          "example_sentence_target": "Ich reise gerne in andere Länder.",
+          "example_sentence_native": "මම වෙනත් රටවල සංචාරය කරන්න කැමතියි.",
+          "example_sentence_phonetic": "Ish rai-ze gair-ne in an-de-re len-der."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_2_1",
+          "target": "Was sind deine Hobbys?",
+          "native": "ඔයාගේ විනෝදාංශ මොනවාද?",
+          "phonetic": "Vas zint dai-ne hob-ees?"
+        },
+        {
+          "id": "s10_2_2",
+          "target": "Mein Hobby ist lesen.",
+          "native": "මගේ විනෝදාංශය කියවීම.",
+          "phonetic": "Main hob-ee ist lay-zen."
+        },
+        {
+          "id": "s10_2_3",
+          "target": "Ich höre gerne Musik.",
+          "native": "මම සංගීතයට සවන් දෙන්න කැමතියි.",
+          "phonetic": "Ish huh-re gair-ne moo-zeek."
+        },
+        {
+          "id": "s10_2_4",
+          "target": "Machst du Sport?",
+          "native": "ඔයා ක්‍රීඩා කරනවාද?",
+          "phonetic": "Makhst doo shport?"
+        },
+        {
+          "id": "s10_2_5",
+          "target": "In meiner Freizeit reise ich gerne.",
+          "native": "මගේ විවේක කාලයේදී මම සංචාරය කරන්න කැමතියි.",
+          "phonetic": "In mai-ner frai-tsait rai-ze ish gair-ne."
         }
       ],
       "dialogues": [
         {
           "id": "d10_2_1",
-          "context": "Seasons",
+          "context": "විවේක කාලය ගත කරන ආකාරය ගැන කතා කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Was machst du in deiner Freizeit?",
+              "native": "ඔයා විවේක කාලයේදී මොකද කරන්නේ?",
+              "phonetic": "Vas makhst doo in dai-ner frai-tsait?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
+              "target": "Ich lese gerne Bücher. Und du?",
+              "native": "මම පොත් කියවන්න කැමතියි. ඔයා?",
+              "phonetic": "Ish lay-ze gair-ne boo-sher. Oond doo?"
             },
             {
               "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Ich höre lieber Musik.",
+              "native": "මම සංගීතයට සවන් දෙන්න වඩා කැමතියි.",
+              "phonetic": "Ish huh-re lee-ber moo-zeek."
             }
           ]
         },
         {
           "id": "d10_2_2",
-          "context": "Formal Seasons",
+          "context": "ක්‍රීඩා විනෝදාංශ ගැන සාකච්ඡා කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Machst du Sport?",
+              "native": "ඔයා ක්‍රීඩා කරනවාද?",
+              "phonetic": "Makhst doo shport?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Ja, ich spiele Fußball. Was sind deine Hobbys?",
+              "native": "ඔව්, මම පාපන්දු ක්‍රීඩා කරනවා. ඔයාගේ විනෝදාංශ මොනවාද?",
+              "phonetic": "Ya, ish shpee-le foos-bal. Vas zint dai-ne hob-ees?"
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Ich reise gerne und lerne neue Kulturen kennen.",
+              "native": "මම සංචාරය කරන්න සහ අලුත් සංස්කෘතීන් දැනගන්න කැමතියි.",
+              "phonetic": "Ish rai-ze gair-ne oond lair-ne noye kul-too-ren ken-en."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_2_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_2_1",
+            "scrambled": [
+              "sind",
+              "deine",
+              "Hobbys",
+              "Was",
+              "?"
+            ],
+            "correct": "Was sind deine Hobbys?",
+            "nativeHint": "ඔබේ විනෝදාංශ මොනවාදැයි අසන්න."
           },
           {
-            "id": "fb10_2_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_2_2",
+            "scrambled": [
+              "gerne",
+              "Musik",
+              "Ich",
+              "höre",
+              "."
+            ],
+            "correct": "Ich höre gerne Musik.",
+            "nativeHint": "ඔබ සංගීතයට සවන් දීමට කැමති බව පවසන්න."
           },
           {
-            "id": "fb10_2_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_2_3",
+            "scrambled": [
+              "du",
+              "Sport",
+              "?",
+              "Machst"
+            ],
+            "correct": "Machst du Sport?",
+            "nativeHint": "ඔබ ක්‍රීඩා කරනවාදැයි අසන්න."
           }
         ],
         "matching": [
           {
             "id": "m10_2_1",
-            "target": "Wetter",
-            "native": "කාලගුණය"
+            "target": "Hobby",
+            "native": "විනෝදාංශය"
           },
           {
             "id": "m10_2_2",
-            "target": "Sonne",
-            "native": "හිරු"
+            "target": "Freizeit",
+            "native": "විවේක කාලය"
           },
           {
             "id": "m10_2_3",
-            "target": "Regen",
-            "native": "වැස්ස"
+            "target": "lesen",
+            "native": "කියවනවා"
           },
           {
             "id": "m10_2_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "Musik",
+            "native": "සංගීතය"
           },
           {
             "id": "m10_2_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_2_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "Sport",
+            "native": "ක්‍රීඩා"
           },
           {
-            "id": "mc10_2_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_2_6",
+            "target": "reisen",
+            "native": "සංචාරය කරනවා"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D2"
-      }
+      "cultural_note": "ජර්මනියේ 'Verein' (සමාජයක්) එකකට බැඳීම, උදාහරණයක් ලෙස ක්‍රීඩා හෝ සංගීතය සඳහා, එකම කැමැත්තක් ඇති අය හමුවීමට ඉතා පොදු ක්‍රමයකි.",
+      "pronunciation_tip": "වචනයක මුලදී ස්වරයකට පෙර එන ජර්මානු 'S' අකුර බොහෝ විට ඉංග්‍රීසි 'Z' ලෙස උච්චාරණය කෙරේ (උදා: 'sind')."
     },
     {
       "week": 10,
       "day": 3,
-      "title": "Week 10 Day 3: Natural Disasters",
-      "title_native": "Natural Disasters",
-      "theme": "Weather & Nature",
+      "title": "කාලගුණය සහ ඇඳිය යුතු දේ",
+      "title_native": "Wetter & was man anzieht",
+      "theme": "Weather & What to Wear",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
@@ -395,118 +463,185 @@
         {
           "id": "w10_3_1",
           "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
+          "phonetic": "vet-ter",
           "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "english": "weather",
+          "example_sentence_target": "Das Wetter ist heute gut.",
+          "example_sentence_native": "අද කාලගුණය හොඳයි.",
+          "example_sentence_phonetic": "Das vet-ter ist hoi-te goot."
         },
         {
           "id": "w10_3_2",
           "target": "Sonne",
-          "phonetic": "සො-නේ",
+          "phonetic": "zon-ne",
           "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "english": "sun",
+          "example_sentence_target": "Die Sonne scheint.",
+          "example_sentence_native": "හිරු පායනවා.",
+          "example_sentence_phonetic": "Dee zon-ne shaint."
         },
         {
           "id": "w10_3_3",
           "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "phonetic": "ray-gen",
+          "native_meaning": "වර්ෂාව",
+          "english": "rain",
+          "example_sentence_target": "Es gibt viel Regen.",
+          "example_sentence_native": "ගොඩක් වහිනවා.",
+          "example_sentence_phonetic": "Es gipt feel ray-gen."
         },
         {
           "id": "w10_3_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "Jacke",
+          "phonetic": "yak-ke",
+          "native_meaning": "ජැකට් එක",
+          "english": "jacket",
+          "example_sentence_target": "Zieh deine Jacke an.",
+          "example_sentence_native": "ඔයාගේ ජැකට් එක ඇඳගන්න.",
+          "example_sentence_phonetic": "Tsee dai-ne yak-ke an."
         },
         {
           "id": "w10_3_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "kalt",
+          "phonetic": "kalt",
+          "native_meaning": "සීතලයි",
+          "english": "cold",
+          "example_sentence_target": "Heute ist es sehr kalt.",
+          "example_sentence_native": "අද ගොඩක් සීතලයි.",
+          "example_sentence_phonetic": "Hoi-te ist es zea kalt."
+        },
+        {
+          "id": "w10_3_6",
+          "target": "warm",
+          "phonetic": "varm",
+          "native_meaning": "උණුසුම්",
+          "english": "warm",
+          "example_sentence_target": "Morgen wird es warm.",
+          "example_sentence_native": "හෙට උණුසුම් වේවි.",
+          "example_sentence_phonetic": "Mor-gen virt es varm."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_3_1",
+          "target": "Wie ist das Wetter heute?",
+          "native": "අද කාලගුණය කොහොමද?",
+          "phonetic": "Vee ist das vet-ter hoi-te?"
+        },
+        {
+          "id": "s10_3_2",
+          "target": "Es ist sonnig und warm.",
+          "native": "හිරු පායන සහ උණුසුම් දවසක්.",
+          "phonetic": "Es ist zon-nish oond varm."
+        },
+        {
+          "id": "s10_3_3",
+          "target": "Es regnet und ist kalt.",
+          "native": "වහිනවා සහ සීතලයි.",
+          "phonetic": "Es rayg-net oond ist kalt."
+        },
+        {
+          "id": "s10_3_4",
+          "target": "Du brauchst eine Jacke.",
+          "native": "ඔයාට ජැකට් එකක් අවශ්‍යයි.",
+          "phonetic": "Doo brauchst ai-ne yak-ke."
+        },
+        {
+          "id": "s10_3_5",
+          "target": "Soll ich einen Regenschirm mitnehmen?",
+          "native": "මම කුඩයක් අරගෙන යන්නද?",
+          "phonetic": "Zol ish ai-nen ray-gen-shirm mit-nay-men?"
         }
       ],
       "dialogues": [
         {
           "id": "d10_3_1",
-          "context": "Natural Disasters",
+          "context": "ඇඳුම් ඇඳීම ගැන උපදෙස් දීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Wie ist das Wetter heute?",
+              "native": "අද කාලගුණය කොහොමද?",
+              "phonetic": "Vee ist das vet-ter hoi-te?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
+              "target": "Es ist sehr kalt. Du solltest eine dicke Jacke anziehen.",
+              "native": "ගොඩක් සීතලයි. ඔයා ඝනකම් ජැකට් එකක් ඇඳගන්න ඕන.",
+              "phonetic": "Es ist zea kalt. Doo zol-test ai-ne dik-ke yak-ke an-tsee-hen."
             },
             {
               "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Okay, danke für den Tipp.",
+              "native": "හරි, උපදෙසට ස්තූතියි.",
+              "phonetic": "Okay, dan-ke fur den tip."
             }
           ]
         },
         {
           "id": "d10_3_2",
-          "context": "Formal Natural Disasters",
+          "context": "වර්ෂාවට සූදානම් වීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Scheint die Sonne?",
+              "native": "හිරු පායනවාද?",
+              "phonetic": "Shaint dee zon-ne?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Nein, es ist bewölkt und es fängt an zu regnen.",
+              "native": "නැහැ, වළාකුළු සහිතයි සහ වහින්න පටන් ගන්නවා.",
+              "phonetic": "Nain, es ist be-vurlkt oond es fengt an tsoo rayg-nen."
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Dann nehme ich meinen Regenschirm mit.",
+              "native": "එහෙනම් මම මගේ කුඩය අරගෙන යනවා.",
+              "phonetic": "Dan nay-me ish mai-nen ray-gen-shirm mit."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_3_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_3_1",
+            "scrambled": [
+              "Wetter",
+              "das",
+              "ist",
+              "Wie",
+              "?",
+              "heute"
+            ],
+            "correct": "Wie ist das Wetter heute?",
+            "nativeHint": "අද කාලගුණය ගැන විමසන්න."
           },
           {
-            "id": "fb10_3_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_3_2",
+            "scrambled": [
+              "eine",
+              "brauchst",
+              "Du",
+              "Jacke",
+              "."
+            ],
+            "correct": "Du brauchst eine Jacke.",
+            "nativeHint": "ඔබට ජැකට් එකක් අවශ්‍ය බව පවසන්න."
           },
           {
-            "id": "fb10_3_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_3_3",
+            "scrambled": [
+              "kalt",
+              "ist",
+              "und",
+              "Es",
+              "regnet",
+              "."
+            ],
+            "correct": "Es regnet und ist kalt.",
+            "nativeHint": "වහිනවා සහ සීතලයි అని చెప్పండి."
           }
         ],
         "matching": [
@@ -523,809 +658,971 @@
           {
             "id": "m10_3_3",
             "target": "Regen",
-            "native": "වැස්ස"
+            "native": "වර්ෂාව"
           },
           {
             "id": "m10_3_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "Jacke",
+            "native": "ජැකට් එක"
           },
           {
             "id": "m10_3_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_3_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "kalt",
+            "native": "සීතලයි"
           },
           {
-            "id": "mc10_3_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_3_6",
+            "target": "warm",
+            "native": "උණුසුම්"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D3"
-      }
+      "cultural_note": "ජර්මානුවන් බොහෝ විට සංවාදයක් ආරම්භ කිරීම සඳහා කාලගුණය ගැන කතා කරයි. ඔවුන් ඕනෑම කාලගුණයකට සූදානම්ව සිටීමට අගය කරන අතර, කාලගුණ අනාවැකි පරීක්ෂා කිරීම සාමාන්‍ය දෙයකි.",
+      "pronunciation_tip": "ජර්මානු 'J' ශබ්දය ඉංග්‍රීසි 'Y' ශබ්දයට සමාන වේ. ඒ නිසා 'Jacke' යනු 'Yah-keh' ලෙස උච්චාරණය කෙරේ."
     },
     {
       "week": 10,
       "day": 4,
-      "title": "Week 10 Day 4: Environment",
-      "title_native": "Environment",
-      "theme": "Weather & Nature",
+      "title": "කෙනෙකුට කෝපි සඳහා ආරාධනා කිරීම",
+      "title_native": "Jemanden auf einen Kaffee einladen",
+      "theme": "Inviting Someone for Coffee",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w10_4_1",
-          "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
-          "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "target": "Kaffee",
+          "phonetic": "ka-fay",
+          "native_meaning": "කෝපි",
+          "english": "coffee",
+          "example_sentence_target": "Ich trinke gerne Kaffee.",
+          "example_sentence_native": "මම කෝපි බොන්න කැමතියි.",
+          "example_sentence_phonetic": "Ish trin-ke gair-ne ka-fay."
         },
         {
           "id": "w10_4_2",
-          "target": "Sonne",
-          "phonetic": "සො-නේ",
-          "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "target": "Tee",
+          "phonetic": "tay",
+          "native_meaning": "තේ",
+          "english": "tea",
+          "example_sentence_target": "Möchtest du einen Tee?",
+          "example_sentence_native": "ඔයාට තේ එකක් ඕනෙද?",
+          "example_sentence_phonetic": "Meersh-test doo ai-nen tay?"
         },
         {
           "id": "w10_4_3",
-          "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "target": "Zeit",
+          "phonetic": "tsait",
+          "native_meaning": "කාලය",
+          "english": "time",
+          "example_sentence_target": "Hast du Zeit?",
+          "example_sentence_native": "ඔයාට වෙලාව තියෙනවද?",
+          "example_sentence_phonetic": "Hast doo tsait?"
         },
         {
           "id": "w10_4_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "Lust",
+          "phonetic": "lust",
+          "native_meaning": "කැමැත්ත / ආසාව",
+          "english": "desire/feel like",
+          "example_sentence_target": "Ich habe Lust auf Eis.",
+          "example_sentence_native": "මට අයිස්ක්‍රීම් කන්න ආසයි.",
+          "example_sentence_phonetic": "Ish ha-be lust auf ais."
         },
         {
           "id": "w10_4_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "morgen",
+          "phonetic": "mor-gen",
+          "native_meaning": "හෙට",
+          "english": "tomorrow",
+          "example_sentence_target": "Sehen wir uns morgen?",
+          "example_sentence_native": "අපි හෙට හමුවෙමුද?",
+          "example_sentence_phonetic": "Zay-en veer oons mor-gen?"
+        },
+        {
+          "id": "w10_4_6",
+          "target": "wann",
+          "phonetic": "van",
+          "native_meaning": "කවදාද",
+          "english": "when",
+          "example_sentence_target": "Wann kommst du?",
+          "example_sentence_native": "ඔයා කවදාද එන්නේ?",
+          "example_sentence_phonetic": "Van komst doo?"
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_4_1",
+          "target": "Hast du Lust auf einen Kaffee?",
+          "native": "ඔයා කෝපි එකකට කැමතිද?",
+          "phonetic": "Hast doo lust auf ai-nen ka-fay?"
+        },
+        {
+          "id": "s10_4_2",
+          "target": "Wollen wir einen Tee trinken gehen?",
+          "native": "අපි තේ එකක් බොන්න යමුද?",
+          "phonetic": "Vol-len veer ai-nen tay trin-ken gay-en?"
+        },
+        {
+          "id": "s10_4_3",
+          "target": "Hast du morgen Zeit?",
+          "native": "ඔයාට හෙට වෙලාව තියෙනවද?",
+          "phonetic": "Hast doo mor-gen tsait?"
+        },
+        {
+          "id": "s10_4_4",
+          "target": "Wann hast du Zeit?",
+          "native": "ඔයාට කවදාද වෙලාව තියෙන්නේ?",
+          "phonetic": "Van hast doo tsait?"
+        },
+        {
+          "id": "s10_4_5",
+          "target": "Vielleicht am Wochenende?",
+          "native": "සමහරවිට සති අන්තයේදී?",
+          "phonetic": "Fee-laisht am vo-khen-en-de?"
         }
       ],
       "dialogues": [
         {
           "id": "d10_4_1",
-          "context": "Environment",
+          "context": "ක්ෂණික කෝපි ආරාධනාවක් කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Hallo Maja, hast du Lust auf einen Kaffee?",
+              "native": "හෙලෝ මායා, කෝපි එකකට කැමතිද?",
+              "phonetic": "Halo Maja, hast doo lust auf ai-nen ka-fay?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
+              "target": "Ja, gerne! Wann denn?",
+              "native": "ඔව්, කැමතියි! කවදාද?",
+              "phonetic": "Ya, gair-ne! Van den?"
             },
             {
               "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Wie wäre es mit jetzt?",
+              "native": "දැන් කොහොමද?",
+              "phonetic": "Vee veh-re es mit yetst?"
             }
           ]
         },
         {
           "id": "d10_4_2",
-          "context": "Formal Environment",
+          "context": "අනාගත දිනයක් සඳහා සැලසුම් කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Wollen wir morgen einen Tee trinken gehen?",
+              "native": "අපි හෙට තේ එකක් බොන්න යමුද?",
+              "phonetic": "Vol-len veer mor-gen ai-nen tay trin-ken gay-en?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Morgen habe ich leider keine Zeit.",
+              "native": "හෙට නම් මට වෙලාවක් නෑ.",
+              "phonetic": "Mor-gen ha-be ish lai-der kai-ne tsait."
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Schade. Vielleicht ein anderes Mal?",
+              "native": "අපරාදේ. සමහරවිට වෙන දවසක?",
+              "phonetic": "Sha-de. Fee-laisht ain an-de-res mal?"
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_4_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_4_1",
+            "scrambled": [
+              "einen",
+              "Kaffee",
+              "Lust",
+              "du",
+              "Hast",
+              "auf",
+              "?"
+            ],
+            "correct": "Hast du Lust auf einen Kaffee?",
+            "nativeHint": "කෝපි සඳහා ආරාධනා කරන්න."
           },
           {
-            "id": "fb10_4_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_4_2",
+            "scrambled": [
+              "du",
+              "Zeit",
+              "Wann",
+              "hast",
+              "?"
+            ],
+            "correct": "Wann hast du Zeit?",
+            "nativeHint": "ඔබට වෙලාව ඇත්තේ කවදාදැයි අසන්න."
           },
           {
-            "id": "fb10_4_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_4_3",
+            "scrambled": [
+              "am",
+              "Vielleicht",
+              "Wochenende",
+              "?"
+            ],
+            "correct": "Vielleicht am Wochenende?",
+            "nativeHint": "සති අන්තය යෝජනා කරන්න."
           }
         ],
         "matching": [
           {
             "id": "m10_4_1",
-            "target": "Wetter",
-            "native": "කාලගුණය"
+            "target": "Kaffee",
+            "native": "කෝපි"
           },
           {
             "id": "m10_4_2",
-            "target": "Sonne",
-            "native": "හිරු"
+            "target": "Tee",
+            "native": "තේ"
           },
           {
             "id": "m10_4_3",
-            "target": "Regen",
-            "native": "වැස්ස"
+            "target": "Zeit",
+            "native": "කාලය"
           },
           {
             "id": "m10_4_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "Lust",
+            "native": "කැමැත්ත / ආසාව"
           },
           {
             "id": "m10_4_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_4_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "morgen",
+            "native": "හෙට"
           },
           {
-            "id": "mc10_4_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_4_6",
+            "target": "wann",
+            "native": "කවදාද"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D4"
-      }
+      "cultural_note": "හවස් වරුවේ 'Kaffee und Kuchen' (කෝපි සහ කේක්) යනු ජර්මානු ජාතිකයන්ගේ ආදරණීය සම්ප්‍රදායකි. මේ සඳහා කෙනෙකුට ආරාධනා කිරීම ඉතා සුහදශීලී ක්‍රියාවකි.",
+      "pronunciation_tip": "'Kaffee' හෝ 'Tee' වැනි වචනවල 'ee' වැනි ද්විත්ව ස්වර දීර්ඝ ස්වර ශබ්දයක් ලෙස උච්චාරණය කෙරේ. 'Kaffee' යනු 'Ka-FEH' සහ 'Tee' යනු 'Tay'."
     },
     {
       "week": 10,
       "day": 5,
-      "title": "Week 10 Day 5: Animals",
-      "title_native": "Animals",
-      "theme": "Weather & Nature",
+      "title": "ආරාධනා පිළිගැනීම සහ ප්‍රතික්ෂේප කිරීම",
+      "title_native": "Einladungen annehmen & ablehnen",
+      "theme": "Accepting & Declining Invitations",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w10_5_1",
-          "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
-          "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "target": "Ja, gerne",
+          "phonetic": "ya, gair-ne",
+          "native_meaning": "ඔව්, සතුටින්",
+          "english": "Yes, with pleasure",
+          "example_sentence_target": "Ja, gerne, ich komme mit.",
+          "example_sentence_native": "ඔව්, සතුටින්, මම එන්නම්.",
+          "example_sentence_phonetic": "Ya, gair-ne, ish kom-me mit."
         },
         {
           "id": "w10_5_2",
-          "target": "Sonne",
-          "phonetic": "සො-නේ",
-          "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "target": "super",
+          "phonetic": "zoo-per",
+          "native_meaning": "නියමයි",
+          "english": "super/great",
+          "example_sentence_target": "Das ist eine super Idee!",
+          "example_sentence_native": "ඒක නියම අදහසක්!",
+          "example_sentence_phonetic": "Das ist ai-ne zoo-per ee-day!"
         },
         {
           "id": "w10_5_3",
-          "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "target": "leider",
+          "phonetic": "lai-der",
+          "native_meaning": "අවාසනාවකට",
+          "english": "unfortunately",
+          "example_sentence_target": "Leider kann ich nicht kommen.",
+          "example_sentence_native": "අවාසනාවකට මට එන්න බෑ.",
+          "example_sentence_phonetic": "Lai-der kan ish nisht kom-men."
         },
         {
           "id": "w10_5_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "keine Zeit",
+          "phonetic": "kai-ne tsait",
+          "native_meaning": "වෙලාවක් නෑ",
+          "english": "no time",
+          "example_sentence_target": "Ich habe leider keine Zeit.",
+          "example_sentence_native": "මට අවාසනාවකට වෙලාවක් නෑ.",
+          "example_sentence_phonetic": "Ish ha-be lai-der kai-ne tsait."
         },
         {
           "id": "w10_5_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "vielleicht",
+          "phonetic": "fee-laisht",
+          "native_meaning": "සමහරවිට",
+          "english": "maybe",
+          "example_sentence_target": "Vielleicht können wir uns morgen treffen.",
+          "example_sentence_native": "සමහරවිට අපිට හෙට හමුවෙන්න පුළුවන්.",
+          "example_sentence_phonetic": "Fee-laisht kern-nen veer oons mor-gen tref-fen."
+        },
+        {
+          "id": "w10_5_6",
+          "target": "nächstes Mal",
+          "phonetic": "nayks-tes mal",
+          "native_meaning": "ඊළඟ වතාවේ",
+          "english": "next time",
+          "example_sentence_target": "Vielleicht nächstes Mal.",
+          "example_sentence_native": "සමහරවිට ඊළඟ වතාවේ.",
+          "example_sentence_phonetic": "Fee-laisht nayks-tes mal."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_5_1",
+          "target": "Ja, gerne! Das ist eine gute Idee.",
+          "native": "ඔව්, සතුටින්! ඒක හොඳ අදහසක්.",
+          "phonetic": "Ya, gair-ne! Das ist ai-ne goo-te ee-day."
+        },
+        {
+          "id": "s10_5_2",
+          "target": "Super, ich freue mich darauf.",
+          "native": "නියමයි, මම ඒ ගැන බලාපොරොත්තුවෙන් ඉන්නවා.",
+          "phonetic": "Zoo-per, ish froy-e mish da-rauf."
+        },
+        {
+          "id": "s10_5_3",
+          "target": "Leider habe ich keine Zeit.",
+          "native": "අවාසනාවකට මට වෙලාවක් නෑ.",
+          "phonetic": "Lai-der ha-be ish kai-ne tsait."
+        },
+        {
+          "id": "s10_5_4",
+          "target": "Das geht leider nicht.",
+          "native": "අවාසනාවකට ඒක කරන්න බෑ.",
+          "phonetic": "Das gayt lai-der nisht."
+        },
+        {
+          "id": "s10_5_5",
+          "target": "Vielleicht nächstes Mal?",
+          "native": "සමහරවිට ඊළඟ වතාවේ?",
+          "phonetic": "Fee-laisht nayks-tes mal?"
         }
       ],
       "dialogues": [
         {
           "id": "d10_5_1",
-          "context": "Animals",
+          "context": "ආරාධනාවක් පිළිගැනීම සහ වේලාවක් නියම කර ගැනීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Hast du morgen Zeit für einen Kaffee?",
+              "native": "ඔයාට හෙට කෝපි එකකට වෙලාව තියෙනවද?",
+              "phonetic": "Hast doo mor-gen tsait fur ai-nen ka-fay?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
+              "target": "Ja, gerne! Um wie viel Uhr?",
+              "native": "ඔව්, සතුටින්! කීයටද?",
+              "phonetic": "Ya, gair-ne! Oom vee feel oor?"
             },
             {
               "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Passt dir 15 Uhr?",
+              "native": "හවස 3ට ඔයාට හරිද?",
+              "phonetic": "Past deer foonf-tsayn oor?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ja, super!",
+              "native": "ඔව්, නියමයි!",
+              "phonetic": "Ya, zoo-per!"
             }
           ]
         },
         {
           "id": "d10_5_2",
-          "context": "Formal Animals",
+          "context": "ආරාධනාවක් ආචාරශීලීව ප්‍රතික්ෂේප කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Wollen wir heute Abend ins Kino gehen?",
+              "native": "අපි අද රෑ සිනමා ශාලාවකට යමුද?",
+              "phonetic": "Vol-len veer hoi-te ah-bent ins kee-no gay-en?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Oh, das geht leider nicht. Ich habe schon Pläne.",
+              "native": "අනේ, අවාසනාවකට ඒක කරන්න බෑ. මට දැනටමත් සැලසුම් තියෙනවා.",
+              "phonetic": "Oh, das gayt lai-der nisht. Ish ha-be shon play-ne."
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Schade. Vielleicht nächstes Mal?",
+              "native": "අපරාදේ. සමහරවිට ඊළඟ වතාවේ?",
+              "phonetic": "Sha-de. Fee-laisht nayks-tes mal?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ja, sehr gerne.",
+              "native": "ඔව්, හරිම සතුටින්.",
+              "phonetic": "Ya, zea gair-ne."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_5_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_5_1",
+            "scrambled": [
+              "keine",
+              "habe",
+              "Zeit",
+              "leider",
+              "Ich",
+              "."
+            ],
+            "correct": "Ich habe leider keine Zeit.",
+            "nativeHint": "ඔබට වෙලාවක් නැති බව අවාසනාවෙන් යුතුව පවසන්න."
           },
           {
-            "id": "fb10_5_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_5_2",
+            "scrambled": [
+              "Mal",
+              "nächstes",
+              "Vielleicht",
+              "?"
+            ],
+            "correct": "Vielleicht nächstes Mal?",
+            "nativeHint": "ඊළඟ වතාවේ යෝජනා කරන්න."
           },
           {
-            "id": "fb10_5_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_5_3",
+            "scrambled": [
+              "Idee",
+              "eine",
+              "ist",
+              "gute",
+              "Das",
+              "."
+            ],
+            "correct": "Das ist eine gute Idee.",
+            "nativeHint": "ඒක හොඳ අදහසක් බව පවසන්න."
           }
         ],
         "matching": [
           {
             "id": "m10_5_1",
-            "target": "Wetter",
-            "native": "කාලගුණය"
+            "target": "Ja, gerne",
+            "native": "ඔව්, සතුටින්"
           },
           {
             "id": "m10_5_2",
-            "target": "Sonne",
-            "native": "හිරු"
+            "target": "super",
+            "native": "නියමයි"
           },
           {
             "id": "m10_5_3",
-            "target": "Regen",
-            "native": "වැස්ස"
+            "target": "leider",
+            "native": "අවාසනාවකට"
           },
           {
             "id": "m10_5_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "keine Zeit",
+            "native": "වෙලාවක් නෑ"
           },
           {
             "id": "m10_5_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_5_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "vielleicht",
+            "native": "සමහරවිට"
           },
           {
-            "id": "mc10_5_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_5_6",
+            "target": "nächstes Mal",
+            "native": "ඊළඟ වතාවේ"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D5"
-      }
+      "cultural_note": "ජර්මනියේදී ආරාධනාවක් ප්‍රතික්ෂේප කරන විට, කෙටි හේතුවක් දැක්වීම ආචාරශීලී වේ (උදා: 'Ich habe schon etwas vor' - මට දැනටමත් වැඩක් තියෙනවා). සරලව 'නැහැ' කීම තරමක් රළු ලෙස සැලකිය හැකිය.",
+      "pronunciation_tip": "'leider' සහ 'Zeit' වැනි වචනවල ඇති 'ei' ද්විත්ව ස්වරය ඉංග්‍රීසි 'eye' යන වචනය මෙන් උච්චාරණය කෙරේ."
     },
     {
       "week": 10,
       "day": 6,
-      "title": "Week 10 Day 6: Outdoor Activities",
-      "title_native": "Outdoor Activities",
-      "theme": "Weather & Nature",
+      "title": "පවුලේ සාමාජිකයන් ගැන කතා කිරීම",
+      "title_native": "Über Familienmitglieder sprechen",
+      "theme": "Talking about Family Members",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w10_6_1",
-          "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
-          "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "target": "Familie",
+          "phonetic": "fa-mee-li-e",
+          "native_meaning": "පවුල",
+          "english": "family",
+          "example_sentence_target": "Meine Familie ist klein.",
+          "example_sentence_native": "මගේ පවුල කුඩායි.",
+          "example_sentence_phonetic": "Mai-ne fa-mee-li-e ist klain."
         },
         {
           "id": "w10_6_2",
-          "target": "Sonne",
-          "phonetic": "සො-නේ",
-          "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "target": "Mutter",
+          "phonetic": "mut-ter",
+          "native_meaning": "අම්මා",
+          "english": "mother",
+          "example_sentence_target": "Meine Mutter heißt Lena.",
+          "example_sentence_native": "මගේ අම්මගේ නම ලේනා.",
+          "example_sentence_phonetic": "Mai-ne mut-ter haist Lena."
         },
         {
           "id": "w10_6_3",
-          "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "target": "Vater",
+          "phonetic": "fa-ter",
+          "native_meaning": "තාත්තා",
+          "english": "father",
+          "example_sentence_target": "Mein Vater ist Arzt.",
+          "example_sentence_native": "මගේ තාත්තා වෛද්‍යවරයෙක්.",
+          "example_sentence_phonetic": "Main fa-ter ist artst."
         },
         {
           "id": "w10_6_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "Bruder",
+          "phonetic": "broo-der",
+          "native_meaning": "සහෝදරයා",
+          "english": "brother",
+          "example_sentence_target": "Ich habe einen Bruder.",
+          "example_sentence_native": "මට සහෝදරයෙක් ඉන්නවා.",
+          "example_sentence_phonetic": "Ish ha-be ai-nen broo-der."
         },
         {
           "id": "w10_6_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "Schwester",
+          "phonetic": "shves-ter",
+          "native_meaning": "සහෝදරිය",
+          "english": "sister",
+          "example_sentence_target": "Hast du eine Schwester?",
+          "example_sentence_native": "ඔයාට සහෝදරියක් ඉන්නවද?",
+          "example_sentence_phonetic": "Hast doo ai-ne shves-ter?"
+        },
+        {
+          "id": "w10_6_6",
+          "target": "Kinder",
+          "phonetic": "kin-der",
+          "native_meaning": "ළමයි",
+          "english": "children",
+          "example_sentence_target": "Sie haben zwei Kinder.",
+          "example_sentence_native": "ඔවුන්ට ළමයි දෙන්නෙක් ඉන්නවා.",
+          "example_sentence_phonetic": "Zee ha-ben tsvai kin-der."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_6_1",
+          "target": "Das ist meine Familie.",
+          "native": "මේ මගේ පවුල.",
+          "phonetic": "Das ist mai-ne fa-mee-li-e."
+        },
+        {
+          "id": "s10_6_2",
+          "target": "Ich habe einen Bruder und eine Schwester.",
+          "native": "මට සහෝදරයෙක් සහ සහෝදරියක් ඉන්නවා.",
+          "phonetic": "Ish ha-be ai-nen broo-der oond ai-ne shves-ter."
+        },
+        {
+          "id": "s10_6_3",
+          "target": "Wie heißt dein Vater?",
+          "native": "ඔයාගේ තාත්තගේ නම මොකක්ද?",
+          "phonetic": "Vee haist dain fa-ter?"
+        },
+        {
+          "id": "s10_6_4",
+          "target": "Meine Mutter ist Lehrerin.",
+          "native": "මගේ අම්මා ගුරුවරියක්.",
+          "phonetic": "Mai-ne mut-ter ist lay-re-rin."
+        },
+        {
+          "id": "s10_6_5",
+          "target": "Hast du Kinder?",
+          "native": "ඔයාට ළමයි ඉන්නවද?",
+          "phonetic": "Hast doo kin-der?"
         }
       ],
       "dialogues": [
         {
           "id": "d10_6_1",
-          "context": "Outdoor Activities",
+          "context": "ඡායාරූපයක සිටින පවුලේ අය ගැන කතා කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Ist das deine Familie auf dem Foto?",
+              "native": "මේ ඡායාරූපයේ ඉන්නේ ඔයාගේ පවුලද?",
+              "phonetic": "Ist das dai-ne fa-mee-li-e auf dem fo-to?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
+              "target": "Ja, das sind mein Vater, meine Mutter und mein Bruder.",
+              "native": "ඔව්, මේ ඉන්නේ මගේ තාත්තා, අම්මා සහ මගේ සහෝදරයා.",
+              "phonetic": "Ya, das zint main fa-ter, mai-ne mut-ter oond main broo-der."
             },
             {
               "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Ihr seht euch sehr ähnlich.",
+              "native": "ඔයාලා එක වගේ පේනවා.",
+              "phonetic": "Eer zayt oish zea ayn-lish."
             }
           ]
         },
         {
           "id": "d10_6_2",
-          "context": "Formal Outdoor Activities",
+          "context": "සහෝදර සහෝදරියන් ගැන විමසීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Hast du Geschwister?",
+              "native": "ඔයාට සහෝදර සහෝදරියන් ඉන්නවද?",
+              "phonetic": "Hast doo ge-shvis-ter?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Ja, ich habe eine ältere Schwester. Und du?",
+              "native": "ඔව්, මට වැඩිමල් සහෝදරියක් ඉන්නවා. ඔයාට?",
+              "phonetic": "Ya, ish ha-be ai-ne el-te-re shves-ter. Oond doo?"
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Ich bin Einzelkind.",
+              "native": "මම පවුලේ එකම දරුවා.",
+              "phonetic": "Ish bin ain-tsel-kint."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_6_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_6_1",
+            "scrambled": [
+              "Familie",
+              "meine",
+              "ist",
+              "Das",
+              "."
+            ],
+            "correct": "Das ist meine Familie.",
+            "nativeHint": "මේ ඔබේ පවුල බව පවසන්න."
           },
           {
-            "id": "fb10_6_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_6_2",
+            "scrambled": [
+              "Kinder",
+              "Hast",
+              "du",
+              "?"
+            ],
+            "correct": "Hast du Kinder?",
+            "nativeHint": "ඔබට දරුවන් සිටීදැයි අසන්න."
           },
           {
-            "id": "fb10_6_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_6_3",
+            "scrambled": [
+              "einen",
+              "Ich",
+              "Bruder",
+              "habe",
+              "."
+            ],
+            "correct": "Ich habe einen Bruder.",
+            "nativeHint": "ඔබට සහෝදරයෙකු සිටින බව පවසන්න."
           }
         ],
         "matching": [
           {
             "id": "m10_6_1",
-            "target": "Wetter",
-            "native": "කාලගුණය"
+            "target": "Familie",
+            "native": "පවුල"
           },
           {
             "id": "m10_6_2",
-            "target": "Sonne",
-            "native": "හිරු"
+            "target": "Mutter",
+            "native": "අම්මා"
           },
           {
             "id": "m10_6_3",
-            "target": "Regen",
-            "native": "වැස්ස"
+            "target": "Vater",
+            "native": "තාත්තා"
           },
           {
             "id": "m10_6_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "Bruder",
+            "native": "සහෝදරයා"
           },
           {
             "id": "m10_6_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_6_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "Schwester",
+            "native": "සහෝදරිය"
           },
           {
-            "id": "mc10_6_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_6_6",
+            "target": "Kinder",
+            "native": "ළමයි"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D6"
-      }
+      "cultural_note": "පවුල වැදගත් වුවත්, ජර්මානුවන් වෙනත් සමහර සංස්කෘතීන්ට වඩා තම පවුල් ජීවිතය ගැන පුද්ගලිකව තබා ගැනීමට නැඹුරු වෙති. ඔවුන් හමුවූ වහාම ඔබේ පවුල ගැන නොවිමසිය හැකිය.",
+      "pronunciation_tip": "'Vater' වචනයේ ජර්මානු 'V' අකුර 'F' ලෙස උච්චාරණය කෙරේ. 'Mutter' හෝ 'Vater' වැනි වචනවල අවසානයේ '-er' බොහෝ විට කෙටි 'ah' ශබ්දයක් ලෙස උච්චාරණය කෙරේ."
     },
     {
       "week": 10,
       "day": 7,
-      "title": "Week 10 Day 7: Nature Culture",
-      "title_native": "Nature Culture",
-      "theme": "Weather & Nature",
+      "title": "සතිපතා සමාජ සමාලෝචනය",
+      "title_native": "Wöchentlicher sozialer Rückblick",
+      "theme": "Weekly Social Review",
       "path": "survival",
       "targetLanguage": "German",
       "nativeLanguage": "Sinhala",
       "words": [
         {
           "id": "w10_7_1",
-          "target": "Wetter",
-          "phonetic": "වෙ-තෙර්",
-          "native_meaning": "කාලගුණය",
-          "english": "Weather",
-          "example_sentence_target": "Wetter.",
-          "example_sentence_native": "කාලගුණය."
+          "target": "Woche",
+          "phonetic": "vo-khe",
+          "native_meaning": "සතිය",
+          "english": "week",
+          "example_sentence_target": "Diese Woche war gut.",
+          "example_sentence_native": "මේ සතිය හොඳයි.",
+          "example_sentence_phonetic": "Dee-ze vo-khe var goot."
         },
         {
           "id": "w10_7_2",
-          "target": "Sonne",
-          "phonetic": "සො-නේ",
-          "native_meaning": "හිරු",
-          "english": "Sun",
-          "example_sentence_target": "Sonne.",
-          "example_sentence_native": "හිරු."
+          "target": "Wochenende",
+          "phonetic": "vo-khen-en-de",
+          "native_meaning": "සති අන්තය",
+          "english": "weekend",
+          "example_sentence_target": "Was machst du am Wochenende?",
+          "example_sentence_native": "ඔයා සති අන්තයේ මොකද කරන්නේ?",
+          "example_sentence_phonetic": "Vas makhst doo am vo-khen-en-de?"
         },
         {
           "id": "w10_7_3",
-          "target": "Regen",
-          "phonetic": "රේ-ගේන්",
-          "native_meaning": "වැස්ස",
-          "english": "Rain",
-          "example_sentence_target": "Regen.",
-          "example_sentence_native": "වැස්ස."
+          "target": "treffen",
+          "phonetic": "tref-fen",
+          "native_meaning": "හමුවෙනවා",
+          "english": "to meet",
+          "example_sentence_target": "Ich treffe heute Freunde.",
+          "example_sentence_native": "මම අද යාලුවෝ හමුවෙනවා.",
+          "example_sentence_phonetic": "Ish tref-fe hoi-te froin-de."
         },
         {
           "id": "w10_7_4",
-          "target": "Wind",
-          "phonetic": "වින්ත්",
-          "native_meaning": "සුළඟ",
-          "english": "Wind",
-          "example_sentence_target": "Wind.",
-          "example_sentence_native": "සුළඟ."
+          "target": "Leute",
+          "phonetic": "loy-te",
+          "native_meaning": "මිනිස්සු",
+          "english": "people",
+          "example_sentence_target": "Ich habe neue Leute kennengelernt.",
+          "example_sentence_native": "මම අලුත් මිනිස්සු හඳුනාගත්තා.",
+          "example_sentence_phonetic": "Ish ha-be noy-e loy-te ken-en-ge-lairnt."
         },
         {
           "id": "w10_7_5",
-          "target": "Schnee",
-          "phonetic": "ෂ්නේ",
-          "native_meaning": "හිම",
-          "english": "Snow",
-          "example_sentence_target": "Schnee.",
-          "example_sentence_native": "හිම."
+          "target": "sprechen",
+          "phonetic": "shpre-shen",
+          "native_meaning": "කතා කරනවා",
+          "english": "to speak",
+          "example_sentence_target": "Wir müssen sprechen.",
+          "example_sentence_native": "අපි කතා කරන්න ඕන.",
+          "example_sentence_phonetic": "Veer mus-sen shpre-shen."
+        },
+        {
+          "id": "w10_7_6",
+          "target": "Spaß",
+          "phonetic": "shpas",
+          "native_meaning": "විනෝදය",
+          "english": "fun",
+          "example_sentence_target": "Das macht Spaß.",
+          "example_sentence_native": "මේක විනෝදජනකයි.",
+          "example_sentence_phonetic": "Das makht shpas."
+        }
+      ],
+      "sentences": [
+        {
+          "id": "s10_7_1",
+          "target": "Was hast du am Wochenende gemacht?",
+          "native": "ඔයා සති අන්තයේ මොකද කළේ?",
+          "phonetic": "Vas hast doo am vo-khen-en-de ge-makht?"
+        },
+        {
+          "id": "s10_7_2",
+          "target": "Ich habe Freunde getroffen.",
+          "native": "මම යාලුවෝ හමුවුනා.",
+          "phonetic": "Ish ha-be froin-de ge-trof-fen."
+        },
+        {
+          "id": "s10_7_3",
+          "target": "Wir haben Kaffee getrunken und gesprochen.",
+          "native": "අපි කෝපි බීලා කතා කළා.",
+          "phonetic": "Veer ha-ben ka-fay ge-trun-ken oond ge-shpro-khen."
+        },
+        {
+          "id": "s10_7_4",
+          "target": "Es hat viel Spaß gemacht.",
+          "native": "ඒක ගොඩක් විනෝදජනකයි.",
+          "phonetic": "Es hat feel shpas ge-makht."
+        },
+        {
+          "id": "s10_7_5",
+          "target": "Planen wir etwas für nächste Woche?",
+          "native": "අපි ඊළඟ සතියට මොනවා හරි සැලසුම් කරමුද?",
+          "phonetic": "Plah-nen veer et-vas fur nayks-te vo-khe?"
         }
       ],
       "dialogues": [
         {
           "id": "d10_7_1",
-          "context": "Nature Culture",
+          "context": "සති අන්තය ගැන කතා කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Wetter!",
-              "native": "කාලගුණය!",
-              "phonetic": "වෙ-තෙර්"
+              "target": "Hallo! Wie war dein Wochenende?",
+              "native": "හෙලෝ! ඔයාගේ සති අන්තය කොහොමද?",
+              "phonetic": "Halo! Vee var dain vo-khen-en-de?"
             },
             {
               "speaker": "B",
-              "target": "Wetter! Sonne!",
-              "native": "කාලගුණය! හිරු!",
-              "phonetic": "වෙ-තෙර් සො-නේ"
+              "target": "Super! Ich habe neue Leute kennengelernt.",
+              "native": "නියමයි! මම අලුත් මිනිස්සු හඳුනාගත්තා.",
+              "phonetic": "Zoo-per! Ish ha-be noy-e loy-te ken-en-ge-lairnt."
             },
             {
               "speaker": "A",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Das klingt toll!",
+              "native": "ඒක නියමයි වගේ!",
+              "phonetic": "Das klingt tol!"
             }
           ]
         },
         {
           "id": "d10_7_2",
-          "context": "Formal Nature Culture",
+          "context": "සතියේ ඉගෙන ගත් දේ සමාලෝචනය කිරීම.",
           "lines": [
             {
               "speaker": "A",
-              "target": "Sonne!",
-              "native": "හිරු!",
-              "phonetic": "සො-නේ"
+              "target": "Was hast du diese Woche gelernt?",
+              "native": "ඔයා මේ සතියේ මොනවද ඉගෙනගත්තේ?",
+              "phonetic": "Vas hast doo dee-ze vo-khe ge-lairnt?"
             },
             {
               "speaker": "B",
-              "target": "Regen!",
-              "native": "වැස්ස!",
-              "phonetic": "රේ-ගේන්"
+              "target": "Ich habe gelernt, wie man jemanden auf einen Kaffee einlädt.",
+              "native": "මම ඉගෙනගත්තා කෙනෙකුට කෝපි එකකට ආරාධනා කරන හැටි.",
+              "phonetic": "Ish ha-be ge-lairnt, vee man yay-man-den auf ai-nen ka-fay ain-layt."
             },
             {
               "speaker": "A",
-              "target": "Wind! Schnee!",
-              "native": "සුළඟ! හිම!",
-              "phonetic": "වින්ත් ෂ්නේ"
+              "target": "Sehr gut! Wollen wir das üben?",
+              "native": "ඉතා හොඳයි! අපි ඒක පුහුණු වෙමුද?",
+              "phonetic": "Zea goot! Vol-len veer das oo-ben?"
+            }
+          ]
+        },
+        {
+          "id": "d10_7_3",
+          "context": "සතියේ මාතෘකා ගැන සාකච්ඡා කිරීම.",
+          "lines": [
+            {
+              "speaker": "A",
+              "target": "Sprechen wir über die Woche. Was war dein Lieblingsthema?",
+              "native": "අපි සතිය ගැන කතා කරමු. ඔයාගේ ප්‍රියතම මාතෘකාව මොකක්ද?",
+              "phonetic": "Shpre-shen veer oo-ber dee vo-khe. Vas var dain leep-links-tay-ma?"
+            },
+            {
+              "speaker": "B",
+              "target": "Ich fand das Thema Hobbys interessant.",
+              "native": "මට විනෝදාංශ මාතෘකාව රසවත් වුණා.",
+              "phonetic": "Ish fant das tay-ma hob-ees in-te-res-sant."
             }
           ]
         }
       ],
       "exercises": {
-        "fillBlanks": [
+        "sentenceScramble": [
           {
-            "id": "fb10_7_1",
-            "sentence": "___ means 'Weather' in German",
-            "answer": "Wetter",
-            "hint": "කාලගුණය"
+            "id": "ss10_7_1",
+            "scrambled": [
+              "hast",
+              "Was",
+              "du",
+              "gemacht",
+              "?"
+            ],
+            "correct": "Was hast du gemacht?",
+            "nativeHint": "ඔබ මොකද කළේ දැයි අසන්න."
           },
           {
-            "id": "fb10_7_2",
-            "sentence": "___ means 'Sun' in German",
-            "answer": "Sonne",
-            "hint": "හිරු"
+            "id": "ss10_7_2",
+            "scrambled": [
+              "getroffen",
+              "Freunde",
+              "habe",
+              "Ich",
+              "."
+            ],
+            "correct": "Ich habe Freunde getroffen.",
+            "nativeHint": "ඔබ මිතුරන් හමුවූ බව පවසන්න."
           },
           {
-            "id": "fb10_7_3",
-            "sentence": "___ means 'Rain' in German",
-            "answer": "Regen",
-            "hint": "වැස්ස"
+            "id": "ss10_7_3",
+            "scrambled": [
+              "gemacht",
+              "viel",
+              "hat",
+              "Es",
+              "Spaß",
+              "."
+            ],
+            "correct": "Es hat viel Spaß gemacht.",
+            "nativeHint": "එය ඉතා විනෝදජනක වූ බව පවසන්න."
           }
         ],
         "matching": [
           {
             "id": "m10_7_1",
-            "target": "Wetter",
-            "native": "කාලගුණය"
+            "target": "Woche",
+            "native": "සතිය"
           },
           {
             "id": "m10_7_2",
-            "target": "Sonne",
-            "native": "හිරු"
+            "target": "Wochenende",
+            "native": "සති අන්තය"
           },
           {
             "id": "m10_7_3",
-            "target": "Regen",
-            "native": "වැස්ස"
+            "target": "treffen",
+            "native": "හමුවෙනවා"
           },
           {
             "id": "m10_7_4",
-            "target": "Wind",
-            "native": "සුළඟ"
+            "target": "Leute",
+            "native": "මිනිස්සු"
           },
           {
             "id": "m10_7_5",
-            "target": "Schnee",
-            "native": "හිම"
-          }
-        ],
-        "multipleChoice": [
-          {
-            "id": "mc10_7_1",
-            "question": "What does 'Wetter' mean?",
-            "options": [
-              "කාලගුණය",
-              "හිරු",
-              "වැස්ස",
-              "සුළඟ"
-            ],
-            "correct": 0,
-            "explanation": "'Wetter' means කාලගුණය in Sinhala."
+            "target": "sprechen",
+            "native": "කතා කරනවා"
           },
           {
-            "id": "mc10_7_2",
-            "question": "How do you say 'හිරු' in German?",
-            "options": [
-              "Wetter",
-              "Sonne",
-              "Regen",
-              "Wind"
-            ],
-            "correct": 1,
-            "explanation": "'Sonne' means හිරු."
+            "id": "m10_7_6",
+            "target": "Spaß",
+            "native": "විනෝදය"
           }
         ]
       },
-      "cultural_note": "Learning German opens doors to new cultures and opportunities! Week 10 focus: Weather & Nature.",
-      "pronunciation_tip": "Practice German pronunciation slowly, then increase your speed gradually.",
-      "progress": {
-        "xp": 190,
-        "streak_bonus": 20,
-        "badge": "W10D7"
-      }
+      "cultural_note": "සමාජ අන්තර්ක්‍රියා ගැන මෙනෙහි කිරීම භාෂා කුසලතා වැඩි දියුණු කිරීමට උපකාරී වේ. ඔබේ ජර්මානු භාෂාව නිවැරදි කරන ලෙස මිතුරෙකුගෙන් ඉල්ලා සිටීමට බිය නොවන්න. බොහෝ ජර්මානුවන් ඔබ දරන උත්සාහය අගය කරන අතර උදව් කිරීමට සතුටු වෙති.",
+      "pronunciation_tip": "වචනයක ආරම්භයේදී 'sp' සහ 'st' ශබ්ද පිළිවෙලින් 'shp' සහ 'sht' ලෙස උච්චාරණය කෙරේ. උදාහරණයක් ලෙස, 'sprechen' යනු 'shpre-shen' වන අතර 'Stadt' (නගරය) යනු 'shtat' වේ."
     }
   ]
 }
