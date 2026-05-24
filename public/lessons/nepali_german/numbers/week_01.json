@@ -5,12 +5,67 @@
   "targetLanguage": "German",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 2, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 3, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 4, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 5, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 6, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 7, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }}
+    {
+      "week": 1,
+      "day": 1,
+      "title": "Numbers 0 to 5",
+      "title_native": "संख्या ० देखि ५ सम्म",
+      "theme": "Basic Counting",
+      "path": "numbers",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_1_1", "target": "null", "phonetic": "नल", "native_meaning": "शून्य (०)", "english": "zero", "example_sentence_target": "Es ist null Uhr.", "example_sentence_native": "अहिले शून्य बजेको छ।", "example_sentence_phonetic": "एस इस्त नल उर।" },
+        { "id": "n1_1_2", "target": "eins", "phonetic": "आइन्स", "native_meaning": "एक (१)", "english": "one", "example_sentence_target": "Eins plus eins ist zwei.", "example_sentence_native": "एक जोड एक दुई हुन्छ।", "example_sentence_phonetic": "आइन्स प्लुस आइन्स इस्त स्वाइ।" },
+        { "id": "n1_1_3", "target": "zwei", "phonetic": "स्वाइ", "native_meaning": "दुई (२)", "english": "two", "example_sentence_target": "Ich habe zwei Äpfel.", "example_sentence_native": "मसँग दुईवटा स्याउ छन्।", "example_sentence_phonetic": "इख हाबे स्वाइ एप्पफेल।" },
+        { "id": "n1_1_4", "target": "drei", "phonetic": "द्राइ", "native_meaning": "तीन (३)", "english": "three", "example_sentence_target": "Drei Personen kommen.", "example_sentence_native": "तीन जना मानिसहरू आउँदैछन्।", "example_sentence_phonetic": "द्राइ पेरजोनन कोमेन।" },
+        { "id": "n1_1_5", "target": "vier", "phonetic": "फियर", "native_meaning": "चार (४)", "english": "four", "example_sentence_target": "Das Auto hat vier Räder.", "example_sentence_native": "कारका चारवटा पाङ्ग्रा हुन्छन्।", "example_sentence_phonetic": "दास आउतो हात फियर रेडेर।" },
+        { "id": "n1_1_6", "target": "fünf", "phonetic": "फ्युन्फ", "native_meaning": "पाँच (५)", "english": "five", "example_sentence_target": "Ich arbeite fünf Tage.", "example_sentence_native": "म पाँच दिन काम गर्छु।", "example_sentence_phonetic": "इख आर्बाइते फ्युन्फ तागे।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "nm1_1_1", "target": "eins", "native": "एक" },
+          { "id": "nm1_1_2", "target": "drei", "native": "तीन" },
+          { "id": "nm1_1_3", "target": "fünf", "native": "पाँच" }
+        ],
+        "multipleChoice": [
+          {
+            "id": "nmc1_1_1",
+            "question": "जर्मनमा 'दुई' लाई के भनिन्छ?",
+            "options": ["eins", "zwei", "vier", "null"],
+            "correct": 1,
+            "explanation": "'zwei' को अर्थ दुई हो।"
+          }
+        ]
+      },
+      "cultural_note": "जर्मनीमा औंलाले गन्दा बूढी औंला (thumb) लाई 'एक' मानिन्छ।",
+      "pronunciation_tip": "'z' अक्षरको उच्चारण 'त्स' (ts) जस्तो गरिन्छ, त्यसैले 'zwei' लाई 'स्वाइ' भनिन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-START" }
+    },
+    {
+      "week": 1, "day": 2, "title": "Numbers 6 to 10", "title_native": "संख्या ६ देखि १० सम्म", "theme": "Basic Counting", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_2_1", "target": "sechs", "phonetic": "जेक्स", "native_meaning": "छ (६)", "english": "six", "example_sentence_target": "Es ist sechs Uhr.", "example_sentence_native": "छ बजेको छ।", "example_sentence_phonetic": "एस इस्त जेक्स उर।" },
+        { "id": "n1_2_2", "target": "sieben", "phonetic": "जिबेन", "native_meaning": "सात (७)", "english": "seven", "example_sentence_target": "Sieben Tage die Woche.", "example_sentence_native": "हप्ताको सात दिन।", "example_sentence_phonetic": "जिबेन तागे दी भोखे।" },
+        { "id": "n1_2_3", "target": "acht", "phonetic": "आख्ट", "native_meaning": "आठ (८)", "english": "eight", "example_sentence_target": "Acht Stunden Schlaf.", "example_sentence_native": "आठ घण्टाको निद्रा।", "example_sentence_phonetic": "आख्ट स्तुन्डेन श्लाफ।" },
+        { "id": "n1_2_4", "target": "neun", "phonetic": "नोइन", "native_meaning": "नौ (९)", "english": "nine", "example_sentence_target": "Neun Meter lang.", "example_sentence_native": "नौ मिटर लामो।", "example_sentence_phonetic": "नोइन मेतेर लाङ।" },
+        { "id": "n1_2_5", "target": "zehn", "phonetic": "सेन", "native_meaning": "दश (१०)", "english": "ten", "example_sentence_target": "Zehn Euro, bitte.", "example_sentence_native": "दश यूरो, कृपया।", "example_sentence_phonetic": "सेन यूरो, बिते।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "nm1_2_1", "target": "sechs", "native": "छ" },
+          { "id": "nm1_2_2", "target": "acht", "native": "आठ" },
+          { "id": "nm1_2_3", "target": "zehn", "native": "दश" }
+        ]
+      },
+      "cultural_note": "जर्मनीमा अंक लेख्दा १ लाई सिधा धर्को मात्र नभई माथि अलिकति टेढो पारेर लेखिन्छ।",
+      "pronunciation_tip": "'s' शब्दको सुरुमा आउँदा अक्सर 'ज' (z) जस्तो उच्चारण हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-6-10" }
+    },
+    { "week": 1, "day": 3, "title": "Numbers 11 to 15", "title_native": "संख्या ११ देखि १५ सम्म", "theme": "Basic Counting", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 100, "streak_bonus": 10, "badge": "" } },
+    { "week": 1, "day": 4, "title": "Numbers 16 to 20", "title_native": "संख्या १६ देखि २० सम्म", "theme": "Basic Counting", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 100, "streak_bonus": 10, "badge": "" } },
+    { "week": 1, "day": 5, "title": "Math Basics", "title_native": "साधारण गणित", "theme": "Basic Counting", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 100, "streak_bonus": 10, "badge": "" } },
+    { "week": 1, "day": 6, "title": "Counting Objects", "title_native": "वस्तुहरू गन्ने", "theme": "Basic Counting", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 100, "streak_bonus": 10, "badge": "" } },
+    { "week": 1, "day": 7, "title": "Review 0-20", "title_native": "० देखि २० सम्मको समीक्षा", "theme": "Basic Counting", "path": "numbers", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": { "xp": 100, "streak_bonus": 10, "badge": "" } }
   ]
 }

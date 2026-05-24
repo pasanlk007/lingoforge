@@ -1,16 +1,241 @@
-
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "Italian",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder"}},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder"}},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder"}},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder"}},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder"}},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder"}},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Italian", "nativeLanguage": "Nepali", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder"}}
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Week 1 Day 1: Letter A",
+      "title_native": "अक्षर A",
+      "theme": "Introduction to A",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_a_1",
+          "target": "Amico",
+          "phonetic": "अमीको",
+          "native_meaning": "साथी",
+          "english": "Friend",
+          "example_sentence_target": "Lui è il mio amico.",
+          "example_sentence_native": "उहाँ मेरो साथी हुनुहुन्छ।",
+          "example_sentence_phonetic": "लुई ए इल मियो अमीको।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_a", "letter": "A" }],
+        "multipleChoice": [
+          {
+            "id": "mc_a",
+            "question": "'A' बाट सुरु हुने शब्द कुन हो?",
+            "options": ["Amico", "Libro", "Casa", "Sole"],
+            "correct": 0,
+            "explanation": "'Amico' 'A' बाट सुरु हुन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "इटालीमा साथीभाइहरू बीचको सम्बन्ध धेरै बलियो हुन्छ।",
+      "pronunciation_tip": "इटालियनमा 'A' सधैं 'अ' जस्तै उच्चारण गरिन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-A" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "B",
+      "title": "Week 1 Day 2: Letter B",
+      "title_native": "अक्षर B",
+      "theme": "Introduction to B",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_b_1",
+          "target": "Bambino",
+          "phonetic": "बाम्बीनो",
+          "native_meaning": "बच्चा",
+          "english": "Child",
+          "example_sentence_target": "Il bambino gioca.",
+          "example_sentence_native": "बच्चा खेल्दैछ।",
+          "example_sentence_phonetic": "इल बाम्बीनो जोका।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_b", "letter": "B" }],
+        "matching": [
+          { "id": "m_b1", "target": "Bambino", "native": "बच्चा" }
+        ]
+      },
+      "cultural_note": "इटालियन संस्कृतिमा परिवार र बच्चाहरूलाई धेरै माया गरिन्छ।",
+      "pronunciation_tip": "'B' को उच्चारण नेपाली 'ब' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-B" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "C",
+      "title": "Week 1 Day 3: Letter C",
+      "title_native": "अक्षर C",
+      "theme": "Introduction to C",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_c_1",
+          "target": "Casa",
+          "phonetic": "काजा",
+          "native_meaning": "घर",
+          "english": "House",
+          "example_sentence_target": "La casa è bella.",
+          "example_sentence_native": "घर सुन्दर छ।",
+          "example_sentence_phonetic": "ला काजा ए बेल्ला।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_c", "letter": "C" }],
+        "multipleChoice": [
+          {
+            "id": "mc_c",
+            "question": "Casa को अर्थ के हो?",
+            "options": ["साथी", "बच्चा", "घर", "पानी"],
+            "correct": 2,
+            "explanation": "Casa को अर्थ घर हो।"
+          }
+        ]
+      },
+      "cultural_note": "इटालियन घरहरू प्रायः ढुङ्गाले बनेका र ऐतिहासिक हुन्छन्।",
+      "pronunciation_tip": "'C' पछि 'A', 'O', 'U' आएमा 'क' उच्चारण हुन्छ, 'E', 'I' आएमा 'च' हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-C" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "D",
+      "title": "Week 1 Day 4: Letter D",
+      "title_native": "अक्षर D",
+      "theme": "Introduction to D",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_d_1",
+          "target": "Dormire",
+          "phonetic": "दोर्मीरे",
+          "native_meaning": "सुत्नु",
+          "english": "To sleep",
+          "example_sentence_target": "Voglio dormire.",
+          "example_sentence_native": "म सुत्न चाहन्छु।",
+          "example_sentence_phonetic": "भोलियो दोर्मीरे।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_d", "letter": "D" }]
+      },
+      "cultural_note": "इटालीमा दिउँसोको खाना पछि छोटो आराम (Pennichella) गर्ने चलन छ।",
+      "pronunciation_tip": "'D' को उच्चारण नेपाली 'द' जस्तै नरम हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-D" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "E",
+      "title": "Week 1 Day 5: Letter E",
+      "title_native": "अक्षर E",
+      "theme": "Introduction to E",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_e_1",
+          "target": "Erba",
+          "phonetic": "एर्बा",
+          "native_meaning": "घाँस",
+          "english": "Grass",
+          "example_sentence_target": "L'erba è verde.",
+          "example_sentence_native": "घाँस हरियो छ।",
+          "example_sentence_phonetic": "एर्बा ए भेर्दे।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_e", "letter": "E" }]
+      },
+      "cultural_note": "इटालीका ग्रामीण भेगहरू हरियालीले भरिएका छन्।",
+      "pronunciation_tip": "'E' को उच्चारण 'ए' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-E" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "F",
+      "title": "Week 1 Day 6: Letter F",
+      "title_native": "अक्षर F",
+      "theme": "Introduction to F",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_f_1",
+          "target": "Festa",
+          "phonetic": "फेस्ता",
+          "native_meaning": "चाडपर्व/पार्टी",
+          "english": "Party/Festival",
+          "example_sentence_target": "Oggi c'è una festa.",
+          "example_sentence_native": "आज एउटा उत्सव छ।",
+          "example_sentence_phonetic": "ओजी चे उना फेस्ता।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_f", "letter": "F" }]
+      },
+      "cultural_note": "इटालीमा वर्षभरि धेरै धार्मिक र सांस्कृतिक उत्सवहरू मनाइन्छन्।",
+      "pronunciation_tip": "'F' को उच्चारण नेपाली 'फ' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "IT-F" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "G",
+      "title": "Week 1 Day 7: Letter G",
+      "title_native": "अक्षर G",
+      "theme": "Introduction to G",
+      "path": "alphabet",
+      "targetLanguage": "Italian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ni_g_1",
+          "target": "Gatto",
+          "phonetic": "गात्तो",
+          "native_meaning": "बिरालो",
+          "english": "Cat",
+          "example_sentence_target": "Il gatto dorme.",
+          "example_sentence_native": "बिरालो सुतिरहेको छ।",
+          "example_sentence_phonetic": "इल गात्तो दोर्मे।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_g", "letter": "G" }],
+        "multipleChoice": [
+          {
+            "id": "mc_g",
+            "question": "बिरालोलाई इटालियनमा के भनिन्छ?",
+            "options": ["Cane", "Gatto", "Uccello", "Pesce"],
+            "correct": 1,
+            "explanation": "बिरालोलाई 'Gatto' भनिन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "इटालीका सहरहरूमा बिरालाहरूलाई सम्मानका साथ हेरिन्छ।",
+      "pronunciation_tip": "'G' पछि 'A', 'O', 'U' आएमा 'ग' उच्चारण हुन्छ, 'E', 'I' आएमा 'ज' हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "IT-W1-COMPLETE" }
+    }
   ]
 }

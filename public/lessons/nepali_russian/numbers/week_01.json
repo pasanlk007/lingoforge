@@ -1,15 +1,282 @@
+
 {
   "week": 1,
   "path": "numbers",
   "targetLanguage": "Russian",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder" }},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder" }},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder" }},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder" }},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder" }},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder" }},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Russian", "nativeLanguage": "Nepali", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder" }}
+    {
+      "week": 1,
+      "day": 1,
+      "title": "Day 1: Zero and One",
+      "title_native": "पहिलो दिन: शून्य र एक",
+      "theme": "Basics",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_w1_d1_1",
+          "target": "ноль",
+          "phonetic": "नोल",
+          "native_meaning": "शून्य",
+          "english": "zero",
+          "example_sentence_target": "Это ноль.",
+          "example_sentence_native": "यो शून्य हो।",
+          "example_sentence_phonetic": "एतो नोल।"
+        },
+        {
+          "id": "nr_w1_d1_2",
+          "target": "один",
+          "phonetic": "अदिन",
+          "native_meaning": "एक",
+          "english": "one",
+          "example_sentence_target": "Один билет, пожалуйста.",
+          "example_sentence_native": "एउटा टिकट, कृपया।",
+          "example_sentence_phonetic": "अदिन बिलेत, पाझालुस्ता।"
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1", "target": "ноль", "native": "शून्य" },
+          { "id": "m2", "target": "один", "native": "एक" }
+        ]
+      },
+      "cultural_note": "रुसी भाषामा 'एक' (ओदिन) को रूप संज्ञाको लिङ्ग अनुसार परिवर्तन हुन्छ (ओदिन, ओदना, ओद्नो)।",
+      "pronunciation_tip": "रुसी 'ओ' मा जोड नभएमा यसको उच्चारण नेपाली 'अ' जस्तो सुनिन्छ।",
+      "progress": { "xp": 10, "streak_bonus": 5, "badge": "N-R-W1D1" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Day 2: Two and Three",
+      "title_native": "दोस्रो दिन: दुई र तीन",
+      "theme": "Basics",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_w1_d2_1",
+          "target": "два",
+          "phonetic": "द्भा",
+          "native_meaning": "दुई",
+          "english": "two",
+          "example_sentence_target": "Два яблока.",
+          "example_sentence_native": "दुईवटा स्याउ।",
+          "example_sentence_phonetic": "द्भा याब्लाका।"
+        },
+        {
+          "id": "nr_w1_d2_2",
+          "target": "три",
+          "phonetic": "त्री",
+          "native_meaning": "तीन",
+          "english": "three",
+          "example_sentence_target": "Три часа.",
+          "example_sentence_native": "तीन बज्यो।",
+          "example_sentence_phonetic": "त्री चासा।"
+        }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          {
+            "id": "mc1",
+            "question": "'त्रि' (तीन) लाई रुसी भाषामा के भनिन्छ?",
+            "options": ["один", "два", "три", "ноль"],
+            "correct": 2,
+            "explanation": "'три' को अर्थ तीन हो।"
+          }
+        ]
+      },
+      "cultural_note": "रुसमा सडक पार गर्दा ट्राफिक लाइटमा सेकेन्ड गन्ने चलन सामान्य छ।",
+      "pronunciation_tip": "रुसी 'र' (r) नेपाली 'र' जस्तै जिब्रो थर्काएर निकालिन्छ।",
+      "progress": { "xp": 10, "streak_bonus": 5, "badge": "N-R-W1D2" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Day 3: Four and Five",
+      "title_native": "तेस्रो दिन: चार र पाँच",
+      "theme": "Basics",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_w1_d3_1",
+          "target": "четыре",
+          "phonetic": "चेतिरे",
+          "native_meaning": "चार",
+          "english": "four",
+          "example_sentence_target": "Четыре человека.",
+          "example_sentence_native": "चार जना मानिस।",
+          "example_sentence_phonetic": "चेतिरे चिलोभेका।"
+        },
+        {
+          "id": "nr_w1_d3_2",
+          "target": "пять",
+          "phonetic": "प्यात",
+          "native_meaning": "पाँच",
+          "english": "five",
+          "example_sentence_target": "Пять минут.",
+          "example_sentence_native": "पाँच मिनेट।",
+          "example_sentence_phonetic": "प्यात मिनुत।"
+        }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb1", "sentence": "___ (चार) मलाई चाहियो।", "answer": "четыре", "hint": "चेतिरे" }
+        ]
+      },
+      "cultural_note": "रुसी विद्यालयमा '५' सबैभन्दा राम्रो ग्रेड (नम्बर) हो।",
+      "pronunciation_tip": "'प्यात' (пять) को अन्त्यमा जिब्रो अलि नरम गरिन्छ (Soft sign)।",
+      "progress": { "xp": 10, "streak_bonus": 5, "badge": "N-R-W1D3" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Day 4: Six and Seven",
+      "title_native": "चौथो दिन: छ र सात",
+      "theme": "Basics",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_w1_d4_1",
+          "target": "шесть",
+          "phonetic": "शेस्त",
+          "native_meaning": "छ",
+          "english": "six",
+          "example_sentence_target": "Шесть яиц.",
+          "example_sentence_native": "छ वटा अण्डा।",
+          "example_sentence_phonetic": "शेस्त याइत।"
+        },
+        {
+          "id": "nr_w1_d4_2",
+          "target": "семь",
+          "phonetic": "सेम",
+          "native_meaning": "सात",
+          "english": "seven",
+          "example_sentence_target": "Семь дней.",
+          "example_sentence_native": "सात दिन।",
+          "example_sentence_phonetic": "सेम द्न्येइ।"
+        }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1", "target": "шесть", "native": "छ" },
+          { "id": "m2", "target": "семь", "native": "सात" }
+        ]
+      },
+      "cultural_note": "सात (семь) रुसी संस्कृतिमा एउटा भाग्यशाली संख्या मानिन्छ।",
+      "pronunciation_tip": "'सेम' (семь) मा 'म' लाई अलि नरम बनाउनुहोस्।",
+      "progress": { "xp": 10, "streak_bonus": 5, "badge": "N-R-W1D4" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Day 5: Eight and Nine",
+      "title_native": "पाँचौं दिन: आठ र नौ",
+      "theme": "Basics",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_w1_d5_1",
+          "target": "восемь",
+          "phonetic": "भोसेम",
+          "native_meaning": "आठ",
+          "english": "eight",
+          "example_sentence_target": "Восемь лет.",
+          "example_sentence_native": "आठ वर्ष।",
+          "example_sentence_phonetic": "भोसेम लेत।"
+        },
+        {
+          "id": "nr_w1_d5_2",
+          "target": "девять",
+          "phonetic": "देभ्यात",
+          "native_meaning": "नौ",
+          "english": "nine",
+          "example_sentence_target": "Девять кошек.",
+          "example_sentence_native": "नौ वटा बिरालो।",
+          "example_sentence_phonetic": "देभ्यात कोसेक।"
+        }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          {
+            "id": "mc1",
+            "question": "'भोसेम' भन्नाले कुन संख्या बुझिन्छ?",
+            "options": ["७", "८", "९", "१०"],
+            "correct": 1,
+            "explanation": "भोसेम (восемь) भनेको आठ हो।"
+          }
+        ]
+      },
+      "cultural_note": "रुसी सहरका नम्बरहरूमा अपार्टमेन्ट नम्बर धेरै महत्त्वपूर्ण हुन्छ।",
+      "pronunciation_tip": "'भोसेम' को पहिलो 'ओ' मा जोड हुने हुनाले यसको उच्चारण 'ओ' नै हुन्छ।",
+      "progress": { "xp": 10, "streak_bonus": 5, "badge": "N-R-W1D5" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Day 6: Ten",
+      "title_native": "छैठौं दिन: दश",
+      "theme": "Basics",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_w1_d6_1",
+          "target": "десять",
+          "phonetic": "देस्यात",
+          "native_meaning": "दश",
+          "english": "ten",
+          "example_sentence_target": "Десять рублей.",
+          "example_sentence_native": "दश रुबल।",
+          "example_sentence_phonetic": "देस्यात रुब्लेइ।"
+        }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          {
+            "id": "ss1",
+            "scrambled": ["рублей", "десять"],
+            "correct": "десять рублей",
+            "nativeHint": "दश रुबल"
+          }
+        ]
+      },
+      "cultural_note": "रुसमा १० को नोट अहिले खासै चलनमा छैन, १० को सिक्का बढी प्रयोग हुन्छ।",
+      "pronunciation_tip": "'देस्यात' को 'स्या' लाई अलि नरम गरिन्छ।",
+      "progress": { "xp": 10, "streak_bonus": 5, "badge": "N-R-W1D6" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Day 7: Review 0-10",
+      "title_native": "सातौं दिन: समीक्षा ०-१०",
+      "theme": "Review",
+      "path": "numbers",
+      "targetLanguage": "Russian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "r1", "target": "счёт", "phonetic": "स्योत", "native_meaning": "गणना", "english": "counting", "example_sentence_target": "Давайте считать.", "example_sentence_native": "आउनुहोस् गनौं।", "example_sentence_phonetic": "दाभाइत्ये स्चितात्य।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1", "target": "один", "native": "एक" },
+          { "id": "m2", "target": "пять", "native": "पाँच" },
+          { "id": "m3", "target": "десять", "native": "दश" },
+          { "id": "m4", "target": "четыре", "native": "चार" }
+        ]
+      },
+      "cultural_note": "रुसी मानिसहरू कुनै वस्तु गन्दा हातको औंला भित्रतिर खुम्च्याउँछन्।",
+      "pronunciation_tip": "सबै शब्दहरूको उच्चारण फेरि दोहोर्याउनुहोस्।",
+      "progress": { "xp": 20, "streak_bonus": 10, "badge": "N-R-W1D7" }
+    }
   ]
 }

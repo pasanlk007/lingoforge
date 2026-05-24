@@ -1,15 +1,191 @@
+
 {
   "week": 1,
   "path": "numbers",
   "targetLanguage": "Finnish",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder" }},
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder" }},
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder" }},
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder" }},
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder" }},
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder" }},
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "numbers", "targetLanguage": "Finnish", "nativeLanguage": "Nepali", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder" }}
+    {
+      "week": 1,
+      "day": 1,
+      "title": "Week 1 Day 1: Numbers 0-5",
+      "title_native": "हप्ता १ दिन १: अंकहरू ०-५",
+      "theme": "Basic Digits",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_1_1", "target": "nolla", "phonetic": "नोल्ला", "native_meaning": "शून्य (०)", "english": "zero", "example_sentence_target": "Luku on nolla.", "example_sentence_native": "अंक शून्य हो।", "example_sentence_phonetic": "लुकु अन नोल्ला।" },
+        { "id": "n1_1_2", "target": "yksi", "phonetic": "उक्सी", "native_meaning": "एक (१)", "english": "one", "example_sentence_target": "Yksi omena, kiitos.", "example_sentence_native": "एउटा स्याउ, कृपया।", "example_sentence_phonetic": "उक्सी ओमेना, कीतोस।" },
+        { "id": "n1_1_3", "target": "kaksi", "phonetic": "काक्सी", "native_meaning": "दुई (२)", "english": "two", "example_sentence_target": "Minulla on kaksi autoa.", "example_sentence_native": "मसाग दुईवटा कार छन्।", "example_sentence_phonetic": "मिनुल्ला अन काक्सी औतोआ।" },
+        { "id": "n1_1_4", "target": "kolme", "phonetic": "कोल्मे", "native_meaning": "तीन (३)", "english": "three", "example_sentence_target": "Kolme kahvia, kiitos.", "example_sentence_native": "तीनवटा कफी, कृपया।", "example_sentence_phonetic": "कोल्मे काह्विया, कीतोस।" },
+        { "id": "n1_1_5", "target": "neljä", "phonetic": "नेल्या", "native_meaning": "चार (४)", "english": "four", "example_sentence_target": "Neljä lasta leikkii.", "example_sentence_native": "चारजना बच्चाहरू खेलिरहेका छन्।", "example_sentence_phonetic": "नेल्या लास्ता लेइक्किइ।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "yksi", "native": "एक" },
+          { "id": "m1_1_2", "target": "kolme", "native": "तीन" },
+          { "id": "m1_1_3", "target": "neljä", "native": "चार" }
+        ]
+      },
+      "cultural_note": "फिनल्याण्डमा कफी धेरै लोकप्रिय छ। अर्डर गर्दा अंकहरू पछि 'kiitos' (धन्यवाद) भन्नु विनम्र मानिन्छ।",
+      "pronunciation_tip": "फिनिस 'y' उच्चारण गर्दा ओठ गोलो बनाउनुहोस्, यो नेपाली 'उ' र 'इ' को बीचको आवाज जस्तो सुनिन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-W1D1" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Week 1 Day 2: Numbers 5-10",
+      "title_native": "हप्ता १ दिन २: अंकहरू ५-१०",
+      "theme": "Basic Digits Continued",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_2_1", "target": "viisi", "phonetic": "वीसी", "native_meaning": "पाँच (५)", "english": "five", "example_sentence_target": "Kello on viisi.", "example_sentence_native": "पाँच बज्यो।", "example_sentence_phonetic": "केल्लो अन वीसी।" },
+        { "id": "n1_2_2", "target": "kuusi", "phonetic": "कूसी", "native_meaning": "छ (६)", "english": "six", "example_sentence_target": "Minulla on kuusi kynää.", "example_sentence_native": "मसाग छवटा कलम छन्।", "example_sentence_phonetic": "मिनुल्ला अन कूसी कुनै।" },
+        { "id": "n1_2_3", "target": "seitsemän", "phonetic": "सेइत्सेमैन", "native_meaning": "सात (७)", "english": "seven", "example_sentence_target": "Viikossa on seitsemän päivää.", "example_sentence_native": "एक हप्तामा सात दिन हुन्छन्।", "example_sentence_phonetic": "वीकोस्सा अन सेइत्सेमैन पैवै।" },
+        { "id": "n1_2_4", "target": "kahdeksan", "phonetic": "काहदेक्सान", "native_meaning": "आठ (८)", "english": "eight", "example_sentence_target": "Kahdeksan tuntia työtä.", "example_sentence_native": "आठ घण्टा काम।", "example_sentence_phonetic": "काहदेक्सान तुन्तिया त्योता।" },
+        { "id": "n1_2_5", "target": "kymmenen", "phonetic": "कुम्मेनेन", "native_meaning": "दश (१०)", "english": "ten", "example_sentence_target": "Kymmenen euroa, ole hyvä.", "example_sentence_native": "दश युरो, यो लिनुहोस्।", "example_sentence_phonetic": "कुम्मेनेन एउरोआ, ओले ह्युवै।" }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          { "id": "mc1_2_1", "question": "अंक '७' लाई फिनिसमा के भनिन्छ?", "options": ["viisi", "kuusi", "seitsemän", "kahdeksan"], "correct": 2, "explanation": "'seitsemän' को अर्थ सात हो।" }
+        ]
+      },
+      "cultural_note": "फिनल्याण्डमा सामान्यतया दिनको ८ घण्टा काम गर्ने चलन छ।",
+      "pronunciation_tip": "फिनिसमा दोहोरो अक्षरहरू (जस्तै 'kymmenen' मा 'mm') लाई अलि लामो समयसम्म उच्चारण गर्नुपर्छ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-W1D2" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Week 1 Day 3: Numbers 11-15",
+      "title_native": "हप्ता १ दिन ३: अंकहरू ११-१५",
+      "theme": "The Teens (Part 1)",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_3_1", "target": "yksitoista", "phonetic": "उक्सी-तोइस्ता", "native_meaning": "एघार (११)", "english": "eleven", "example_sentence_target": "Kello on yksitoista.", "example_sentence_native": "एघार बज्यो।", "example_sentence_phonetic": "केल्लो अन उक्सी-तोइस्ता।" },
+        { "id": "n1_3_2", "target": "kaksitoista", "phonetic": "काक्सी-तोइस्ता", "native_meaning": "बाह्र (१२)", "english": "twelve", "example_sentence_target": "Kaksitoista kuukautta.", "example_sentence_native": "बाह्र महिना।", "example_sentence_phonetic": "काक्सी-तोइस्ता कूकाउत्ता।" },
+        { "id": "n1_3_3", "target": "kolmetoista", "phonetic": "कोल्मे-तोइस्ता", "native_meaning": "तेह्र (१३)", "english": "thirteen", "example_sentence_target": "Tänään on kolmetoista astetta.", "example_sentence_native": "आज तेह्र डिग्री छ।", "example_sentence_phonetic": "तैनैन अन कोल्मे-तोइस्ता आस्तेत्ता।" },
+        { "id": "n1_3_4", "target": "neljätoista", "phonetic": "नेल्या-तोइस्ता", "native_meaning": "चौध (१४)", "english": "fourteen", "example_sentence_target": "Neljätoista päivää lomaa.", "example_sentence_native": "चौध दिनको बिदा।", "example_sentence_phonetic": "नेल्या-तोइस्ता पैवै लोमाआ।" },
+        { "id": "n1_3_5", "target": "viisitoista", "phonetic": "वीसी-तोइस्ता", "native_meaning": "पन्ध्र (१५)", "english": "fifteen", "example_sentence_target": "Viisitoista minuuttia.", "example_sentence_native": "पन्ध्र मिनेट।", "example_sentence_phonetic": "वीसी-तोइस्ता मिनुउत्तिया।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_3_1", "target": "yksitoista", "native": "११" },
+          { "id": "m1_3_2", "target": "viisitoista", "native": "१५" }
+        ]
+      },
+      "cultural_note": "फिनल्याण्डमा तापक्रम प्रायः सेल्सियस (Celsius) मा मापन गरिन्छ।",
+      "pronunciation_tip": "'-toista' प्रत्ययले 'दोस्रो' (१० पछिको) बुझाउँछ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-W1D3" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Week 1 Day 4: Numbers 16-20",
+      "title_native": "हप्ता १ दिन ४: अंकहरू १६-२०",
+      "theme": "The Teens (Part 2)",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_4_1", "target": "kuusitoista", "phonetic": "कूसी-तोइस्ता", "native_meaning": "सोह्र (१६)", "english": "sixteen", "example_sentence_target": "Kuusitoista euroa.", "example_sentence_native": "सोह्र युरो।", "example_sentence_phonetic": "कूसी-तोइस्ता एउरोआ।" },
+        { "id": "n1_4_2", "target": "seitsemäntoista", "phonetic": "सेइत्सेमैन-तोइस्ता", "native_meaning": "सत्र (१७)", "english": "seventeen", "example_sentence_target": "Hän on seitsemäntoista vuotta vanha.", "example_sentence_native": "उनी सत्र वर्षका भए।", "example_sentence_phonetic": "हैन अन सेइत्सेमैन-तोइस्ता वुओत्ता वान्हा।" },
+        { "id": "n1_4_3", "target": "kahdeksantoista", "phonetic": "काहदेक्सान-तोइस्ता", "native_meaning": "अठार (१८)", "english": "eighteen", "example_sentence_target": "Olet kahdeksantoista.", "example_sentence_native": "तिमी अठार वर्षको भयौ।", "example_sentence_phonetic": "ओलेत काहदेक्सान-तोइस्ता।" },
+        { "id": "n1_4_4", "target": "yhdeksäntoista", "phonetic": "उहदेक्सैन-तोइस्ता", "native_meaning": "उन्नीस (१९)", "english": "nineteen", "example_sentence_target": "Luku yhdeksäntoista.", "example_sentence_native": "अंक उन्नीस।", "example_sentence_phonetic": "लुकु उहदेक्सैन-तोइस्ता।" },
+        { "id": "n1_4_5", "target": "kaksikymmentä", "phonetic": "काक्सी-कुम्मेन्ता", "native_meaning": "बीस (२०)", "english": "twenty", "example_sentence_target": "Kaksikymmentä euroa.", "example_sentence_native": "बीस युरो।", "example_sentence_phonetic": "काक्सी-कुम्मेन्ता एउरोआ।" }
+      ],
+      "exercises": {
+        "sentenceScramble": [
+          { "id": "ss1_4_1", "scrambled": ["on", "Kello", "kaksikymmentä"], "correct": "Kello on kaksikymmentä", "nativeHint": "बीस बज्यो।" }
+        ]
+      },
+      "cultural_note": "फिनल्याण्डमा १८ वर्ष पुगेपछि मात्र कानूनी रूपमा वयस्क मानिन्छ र सवारी चालक अनुमति पत्र (License) पाइन्छ।",
+      "pronunciation_tip": "'-kymmentä' को अर्थ 'दशक' हो।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-W1D4" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Week 1 Day 5: Counting Objects",
+      "title_native": "हप्ता १ दिन ५: वस्तुहरू गणना गर्ने",
+      "theme": "Counting Practice",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_5_1", "target": "monta", "phonetic": "मोन्ता", "native_meaning": "धेरै", "english": "many", "example_sentence_target": "Kuinka monta?", "example_sentence_native": "कतिवटा?", "example_sentence_phonetic": "कुइन्का मोन्ता?" },
+        { "id": "n1_5_2", "target": "yksi kirja", "phonetic": "उक्सी किर्या", "native_meaning": "एउटा किताब", "english": "one book", "example_sentence_target": "Minulla on yksi kirja.", "example_sentence_native": "मसाग एउटा किताब छ।", "example_sentence_phonetic": "मिनुल्ला अन उक्सी किर्या।" },
+        { "id": "n1_5_3", "target": "kaksi kirjaa", "phonetic": "काक्सी किर्याआ", "native_meaning": "दुइटा किताबहरू", "english": "two books", "example_sentence_target": "Tässä on kaksi kirjaa.", "example_sentence_native": "यहाँ दुइटा किताबहरू छन्।", "example_sentence_phonetic": "तैसे अन काक्सी किर्याआ।" },
+        { "id": "n1_5_4", "target": "viisi omenaa", "phonetic": "वीसी ओमेनाआ", "native_meaning": "पाँचवटा स्याउहरू", "english": "five apples", "example_sentence_target": "Ostan viisi omenaa.", "example_sentence_native": "म पाँचवटा स्याउ किन्छु।", "example_sentence_phonetic": "ओस्तान वीसी ओमेनाआ।" },
+        { "id": "n1_5_5", "target": "pari", "phonetic": "पारी", "native_meaning": "जोडी (दुई)", "english": "a pair / a couple", "example_sentence_target": "Pari euroa.", "example_sentence_native": "केही युरो (दुई जति)।", "example_sentence_phonetic": "पारी एउरोआ।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_5_1", "target": "yksi kirja", "native": "१ किताब" },
+          { "id": "m1_5_2", "target": "kaksi kirjaa", "native": "२ किताब" }
+        ]
+      },
+      "cultural_note": "फिनिसमा अंक १ भन्दा माथि गणना गर्दा वस्तुको नाम 'Partitive' रूपमा परिवर्तन हुन्छ (जस्तै: kirja -> kirjaa)।",
+      "pronunciation_tip": "'j' को उच्चारण नेपाली 'य' जस्तो हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-W1D5" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Week 1 Day 6: Basic Math",
+      "title_native": "हप्ता १ दिन ६: साधारण गणित",
+      "theme": "Math Operations",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_6_1", "target": "plus", "phonetic": "प्लस", "native_meaning": "प्लस (+)", "english": "plus", "example_sentence_target": "Yksi plus yksi on kaksi.", "example_sentence_native": "१ + १ = २", "example_sentence_phonetic": "उक्सी प्लस उक्सी अन काक्सी।" },
+        { "id": "n1_6_2", "target": "miinus", "phonetic": "मीनुस", "native_meaning": "माइनस (-)", "english": "minus", "example_sentence_target": "Viisi miinus kaksi on kolme.", "example_sentence_native": "५ - २ = ३", "example_sentence_phonetic": "वीसी मीनुस काक्सी अन कोल्मे।" },
+        { "id": "n1_6_3", "target": "on", "phonetic": "अन", "native_meaning": "हुन्छ / बराबर", "english": "is / equals", "example_sentence_target": "Neljä on luku.", "example_sentence_native": "चार एउटा अंक हो।", "example_sentence_phonetic": "नेल्या अन लुकु।" },
+        { "id": "n1_6_4", "target": "yhteensä", "phonetic": "उहतेन्से", "native_meaning": "जम्मा", "english": "total", "example_sentence_target": "Se on kymmenen yhteensä.", "example_sentence_native": "यो जम्मा दश हो।", "example_sentence_phonetic": "से अन कुम्मेनेन उहतेन्से।" },
+        { "id": "n1_6_5", "target": "numero", "phonetic": "नुमेरो", "native_meaning": "नम्बर", "english": "number", "example_sentence_target": "Mikä on sinun numero?", "example_sentence_native": "तिम्रो नम्बर के हो?", "example_sentence_phonetic": "मिका अन सिनुन नुमेरो?" }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          { "id": "mc1_6_1", "question": "५ + ५ = ?", "options": ["viisi", "kymmenen", "neljä", "kuusi"], "correct": 1, "explanation": "५ जोड ५ दश हुन्छ।" }
+        ]
+      },
+      "cultural_note": "फिनल्याण्डको शिक्षा प्रणाली संसारकै उत्कृष्ट मध्ये एक मानिन्छ, जहाँ सानै उमेरदेखि गणितलाई प्राथमिकता दिइन्छ।",
+      "pronunciation_tip": "फिनिसमा 'u' को उच्चारण नेपाली 'उ' जस्तै हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 10, "badge": "N-W1D6" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Week 1 Day 7: Review",
+      "title_native": "हप्ता १ दिन ७: पुनरावलोकन",
+      "theme": "Review 0-20",
+      "path": "numbers",
+      "targetLanguage": "Finnish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_7_1", "target": "yksi", "phonetic": "उक्सी", "native_meaning": "१", "english": "one", "example_sentence_target": "Yksi.", "example_sentence_native": "एक।", "example_sentence_phonetic": "उक्सी।" },
+        { "id": "n1_7_2", "target": "kymmenen", "phonetic": "कुम्मेनेन", "native_meaning": "१०", "english": "ten", "example_sentence_target": "Kymmenen.", "example_sentence_native": "दश।", "example_sentence_phonetic": "कुम्मेनेन।" },
+        { "id": "n1_7_3", "target": "yksitoista", "phonetic": "उक्सी-तोइस्ता", "native_meaning": "११", "english": "eleven", "example_sentence_target": "Yksitoista.", "example_sentence_native": "एघार।", "example_sentence_phonetic": "उक्सी-तोइस्ता।" },
+        { "id": "n1_7_4", "target": "kaksikymmentä", "phonetic": "काक्सी-कुम्मेन्ता", "native_meaning": "२०", "english": "twenty", "example_sentence_target": "Kaksikymmentä.", "example_sentence_native": "बीस।", "example_sentence_phonetic": "काक्सी-कुम्मेन्ता।" },
+        { "id": "n1_7_5", "target": "nolla", "phonetic": "नोल्ला", "native_meaning": "०", "english": "zero", "example_sentence_target": "Nolla.", "example_sentence_native": "शून्य।", "example_sentence_phonetic": "नोल्ला।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_7_1", "target": "neljä", "native": "४" },
+          { "id": "m1_7_2", "target": "kuusi", "native": "६" },
+          { "id": "m1_7_3", "target": "kahdeksan", "native": "८" },
+          { "id": "m1_7_4", "target": "kymmenen", "native": "१०" }
+        ]
+      },
+      "cultural_note": "यो हप्ता तपाईंले १ देखि २० सम्मका अंकहरू सिक्नुभयो। यी अंकहरू फिनिस जीवनको आधार हुन्।",
+      "pronunciation_tip": "पढेका शब्दहरूलाई फेरि एक पटक दोहोर्याउनुहोस्।",
+      "progress": { "xp": 150, "streak_bonus": 20, "badge": "N-W1-COMPLETE" }
+    }
   ]
 }

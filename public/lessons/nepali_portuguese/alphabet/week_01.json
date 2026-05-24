@@ -1,15 +1,225 @@
+
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "Portuguese",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w1", "target": "A", "phonetic": "a", "native_meaning": "A", "english": "A", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 2, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w2", "target": "B", "phonetic": "be", "native_meaning": "B", "english": "B", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 3, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w3", "target": "C", "phonetic": "se", "native_meaning": "C", "english": "C", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 4, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w4", "target": "D", "phonetic": "de", "native_meaning": "D", "english": "D", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 5, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w5", "target": "E", "phonetic": "e", "native_meaning": "E", "english": "E", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 6, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w6", "target": "F", "phonetic": "efe", "native_meaning": "F", "english": "F", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 7, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Portuguese", "nativeLanguage": "Nepali", "words": [{"id": "w7", "target": "G", "phonetic": "ge", "native_meaning": "G", "english": "G", "example_sentence_target": "Placeholder", "example_sentence_native": "Placeholder", "example_sentence_phonetic": "Placeholder"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} }
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Week 1 Day 1: The Letter A",
+      "title_native": "हप्ता १ दिन १: 'A' अक्षर",
+      "theme": "The Letter A (आ)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_1_1",
+          "target": "Amigo",
+          "phonetic": "अमिगु",
+          "native_meaning": "साथी",
+          "english": "Friend",
+          "example_sentence_target": "Ele é meu amigo.",
+          "example_sentence_native": "उ मेरो साथी हो।",
+          "example_sentence_phonetic": "एली ए मेउ अमिगु।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "ex1_1_1", "letter": "A" }],
+        "multipleChoice": [
+          {
+            "id": "mc1_1_1",
+            "question": "Portuguese मा 'Amigo' को अर्थ के हो?",
+            "options": ["घर", "साथी", "दिन", "बिरालो"],
+            "correct": 1,
+            "explanation": "'Amigo' को अर्थ 'साथी' हो।"
+          }
+        ]
+      },
+      "cultural_note": "पोर्चुगिजमा 'A' को उच्चारण नेपाली 'आ' जस्तै हुन्छ।",
+      "pronunciation_tip": "'A' लाई सधैं सफा 'आ' जस्तै उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "P-A-Start" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "B",
+      "title": "Week 1 Day 2: The Letter B",
+      "title_native": "हप्ता १ दिन २: 'B' अक्षर",
+      "theme": "The Letter B (बे)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_2_1",
+          "target": "Bom",
+          "phonetic": "बों",
+          "native_meaning": "राम्रो",
+          "english": "Good",
+          "example_sentence_target": "Tudo bom.",
+          "example_sentence_native": "सबै राम्रो छ।",
+          "example_sentence_phonetic": "तुदु बों।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "ex1_2_1", "letter": "B" }],
+        "matching": [
+          { "id": "m1_2_1", "target": "Bom", "native": "राम्रो" },
+          { "id": "m1_2_2", "target": "Amigo", "native": "साथी" }
+        ]
+      },
+      "cultural_note": "पोर्चुगिजमा 'B' को उच्चारण नेपाली 'ब' जस्तै हुन्छ।",
+      "pronunciation_tip": "'Bom' मा अन्तिम 'm' लाई अलि नाके (nasal) बनाउनुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "P-B-Master" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "C",
+      "title": "Week 1 Day 3: The Letter C",
+      "title_native": "हप्ता १ दिन ३: 'C' अक्षर",
+      "theme": "The Letter C (से)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_3_1",
+          "target": "Casa",
+          "phonetic": "काजा",
+          "native_meaning": "घर",
+          "english": "House",
+          "example_sentence_target": "A casa é grande.",
+          "example_sentence_native": "घर ठूलो छ।",
+          "example_sentence_phonetic": "अ काजा ए ग्राँजी।"
+        }
+      ],
+      "exercises": { "writingPractice": [{ "id": "ex1_3_1", "letter": "C" }] },
+      "cultural_note": "'C' को अगाडि 'A, O, U' भएमा 'क' र 'E, I' भएमा 'स' उच्चारण हुन्छ।",
+      "pronunciation_tip": "'Casa' मा 'S' को उच्चारण 'ज' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "P-C-Master" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "D",
+      "title": "Week 1 Day 4: The Letter D",
+      "title_native": "हप्ता १ दिन ४: 'D' अक्षर",
+      "theme": "The Letter D (दे)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_4_1",
+          "target": "Dia",
+          "phonetic": "जिया / दिया",
+          "native_meaning": "दिन",
+          "english": "Day",
+          "example_sentence_target": "Bom dia.",
+          "example_sentence_native": "नमस्ते (शुभ दिन)।",
+          "example_sentence_phonetic": "बों जिया।"
+        }
+      ],
+      "exercises": { "writingPractice": [{ "id": "ex1_4_1", "letter": "D" }] },
+      "cultural_note": "ब्राजिलियन पोर्चुगिजमा 'DI' लाई 'जि' जस्तै उच्चारण गरिन्छ।",
+      "pronunciation_tip": "'D' को उच्चारण सफा 'द' जस्तै राख्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "P-D-Master" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "E",
+      "title": "Week 1 Day 5: The Letter E",
+      "title_native": "हप्ता १ दिन ५: 'E' अक्षर",
+      "theme": "The Letter E (ए)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_5_1",
+          "target": "Escola",
+          "phonetic": "एस्कोला",
+          "native_meaning": "स्कूल",
+          "english": "School",
+          "example_sentence_target": "Eu vou à escola.",
+          "example_sentence_native": "म स्कूल जान्छु।",
+          "example_sentence_phonetic": "एउ वो अ एस्कोला।"
+        }
+      ],
+      "exercises": { "writingPractice": [{ "id": "ex1_5_1", "letter": "E" }] },
+      "cultural_note": "वाक्यको अन्त्यमा 'E' अक्षर 'इ' जस्तै सुनिन्छ।",
+      "pronunciation_tip": "'E' को मुख्य उच्चारण नेपाली 'ए' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "P-E-Master" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "F",
+      "title": "Week 1 Day 6: The Letter F",
+      "title_native": "हप्ता १ दिन ६: 'F' अक्षर",
+      "theme": "The Letter F (एफे)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_6_1",
+          "target": "Família",
+          "phonetic": "फमिलिया",
+          "native_meaning": "परिवार",
+          "english": "Family",
+          "example_sentence_target": "Minha família é feliz.",
+          "example_sentence_native": "मेरो परिवार सुखी छ।",
+          "example_sentence_phonetic": "मिन्या फमिलिया ए फेलिस।"
+        }
+      ],
+      "exercises": { "writingPractice": [{ "id": "ex1_6_1", "letter": "F" }] },
+      "cultural_note": "'F' को उच्चारण नेपाली 'फ' जस्तै हुन्छ।",
+      "pronunciation_tip": "ओठ र दाँत मिलाएर 'फ' भन्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "P-F-Master" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "G",
+      "title": "Week 1 Day 7: The Letter G",
+      "title_native": "हप्ता १ दिन ७: 'G' अक्षर",
+      "theme": "The Letter G (जे)",
+      "path": "alphabet",
+      "targetLanguage": "Portuguese",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "w1_7_1",
+          "target": "Gato",
+          "phonetic": "गातु",
+          "native_meaning": "बिरालो",
+          "english": "Cat",
+          "example_sentence_target": "O gato é preto.",
+          "example_sentence_native": "बिरालो कालो छ।",
+          "example_sentence_phonetic": "उ गातु ए प्रेतु।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "ex1_7_1", "letter": "G" }],
+        "sentenceScramble": [
+          {
+            "id": "ss1_7_1",
+            "scrambled": ["gato", "O", "preto", "é"],
+            "correct": "O gato é preto",
+            "nativeHint": "बिरालो कालो छ।"
+          }
+        ]
+      },
+      "cultural_note": "'G' को अगाडि 'A, O, U' भए 'ग' र 'E, I' भए 'ज' उच्चारण हुन्छ।",
+      "pronunciation_tip": "'Gato' मा 'ग' सफा उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "P-W1-Finish" }
+    }
   ]
 }

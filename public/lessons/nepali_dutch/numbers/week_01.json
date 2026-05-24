@@ -1,3 +1,4 @@
+
 {
   "week": 1,
   "path": "numbers",
@@ -7,33 +8,190 @@
     {
       "week": 1,
       "day": 1,
-      "title": "Week 1, Day 1: Placeholder",
-      "title_native": "Placeholder",
-      "theme": "Placeholder",
+      "title": "Week 1 Day 1: Numbers 0-5",
+      "title_native": "हप्ता १ दिन १: संख्या ०-५",
+      "theme": "Numbers 0-5",
       "path": "numbers",
       "targetLanguage": "Dutch",
       "nativeLanguage": "Nepali",
       "words": [
-        {
-          "id": "w1_1_1",
-          "target": "Placeholder",
-          "phonetic": "Placeholder",
-          "native_meaning": "Placeholder",
-          "english": "Placeholder",
-          "example_sentence_target": "Placeholder.",
-          "example_sentence_native": "Placeholder.",
-          "example_sentence_phonetic": "Placeholder."
-        }
+        { "id": "n1_1_1", "target": "Nul", "phonetic": "नुल", "native_meaning": "शून्य", "english": "Zero", "example_sentence_target": "Nul graden.", "example_sentence_native": "शून्य डिग्री।", "example_sentence_phonetic": "नुल ग्रा-देन।" },
+        { "id": "n1_1_2", "target": "Eén", "phonetic": "एन", "native_meaning": "एक", "english": "One", "example_sentence_target": "Eén appel.", "example_sentence_native": "एउटा स्याउ।", "example_sentence_phonetic": "एन आ-पेल।" },
+        { "id": "n1_1_3", "target": "Twee", "phonetic": "त्वे", "native_meaning": "दुई", "english": "Two", "example_sentence_target": "Twee honden.", "example_sentence_native": "दुईवटा कुकुरहरू।", "example_sentence_phonetic": "त्वे होन-देन।" },
+        { "id": "n1_1_4", "target": "Drie", "phonetic": "द़्री", "native_meaning": "तीन", "english": "Three", "example_sentence_target": "Drie katten.", "example_sentence_native": "तीनवटा बिरालाहरू।", "example_sentence_phonetic": "द़्री का-तेन।" },
+        { "id": "n1_1_5", "target": "Vier", "phonetic": "भिर", "native_meaning": "चार", "english": "Four", "example_sentence_target": "Vier boeken.", "example_sentence_native": "चारवटा किताबहरू।", "example_sentence_phonetic": "भिर बु-केन।" }
       ],
-      "dialogues": [],
-      "exercises": {},
-      "cultural_note": "Placeholder cultural note for Week 1, Day 1.",
-      "pronunciation_tip": "Placeholder pronunciation tip for Week 1, Day 1.",
-      "progress": {
-        "xp": 100,
-        "streak_bonus": 20,
-        "badge": "W1D1-Placeholder"
-      }
+      "exercises": {
+        "matching": [
+          { "id": "m1_1_1", "target": "Nul", "native": "शून्य" },
+          { "id": "m1_1_2", "target": "Eén", "native": "एक" },
+          { "id": "m1_1_3", "target": "Twee", "native": "दुई" }
+        ],
+        "multipleChoice": [
+          { "id": "mc1_1_1", "question": "'Drie' को अर्थ के हो?", "options": ["एक", "दुई", "तीन", "चार"], "correct": 2, "explanation": "'Drie' भनेको तीन हो।" }
+        ]
+      },
+      "cultural_note": "डच भाषामा संख्याहरू निकै स्पष्ट रूपमा उच्चारण गरिन्छन्। 'Eén' लेख्दा उच्चारणमा जोड दिन कहिलेकाहीं 'accent' चिह्न प्रयोग गरिन्छ।",
+      "pronunciation_tip": "'Vier' मा 'V' को आवाज नेपाली 'भ' जस्तै तर अलि नरम हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "N-W1-D1" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "title": "Week 1 Day 2: Numbers 5-10",
+      "title_native": "हप्ता १ दिन २: संख्या ५-१०",
+      "theme": "Numbers 5-10",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_2_1", "target": "Vijf", "phonetic": "भाइफ", "native_meaning": "पाँच", "english": "Five", "example_sentence_target": "Vijf vingers.", "example_sentence_native": "पाँचवटा औंलाहरू।", "example_sentence_phonetic": "भाइफ भिन-खेर्स।" },
+        { "id": "n1_2_2", "target": "Zes", "phonetic": "जेस", "native_meaning": "छ", "english": "Six", "example_sentence_target": "Zes eieren.", "example_sentence_native": "छवटा अण्डाहरू।", "example_sentence_phonetic": "जेस आइ-रेन।" },
+        { "id": "n1_2_3", "target": "Zeven", "phonetic": "जे-भेन", "native_meaning": "सात", "english": "Seven", "example_sentence_target": "Zeven dagen.", "example_sentence_native": "सात दिन।", "example_sentence_phonetic": "जे-भेन दा-खेन।" },
+        { "id": "n1_2_4", "target": "Acht", "phonetic": "आख्त", "native_meaning": "आठ", "english": "Eight", "example_sentence_target": "Acht uren.", "example_sentence_native": "आठ घण्टा।", "example_sentence_phonetic": "आख्त उ-रेन।" },
+        { "id": "n1_2_5", "target": "Negen", "phonetic": "ने-खेन", "native_meaning": "नौ", "english": "Nine", "example_sentence_target": "Negen stoelen.", "example_sentence_native": "नौवटा कुर्सीहरू।", "example_sentence_phonetic": "ने-खेन स्तू-लेन।" },
+        { "id": "n1_2_6", "target": "Tien", "phonetic": "तिन", "native_meaning": "दश", "english": "Ten", "example_sentence_target": "Tien euro.", "example_sentence_native": "दश यूरो।", "example_sentence_phonetic": "तिन यू-रो।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_2_1", "target": "Vijf", "native": "पाँच" },
+          { "id": "m1_2_2", "target": "Acht", "native": "आठ" },
+          { "id": "m1_2_3", "target": "Tien", "native": "दश" }
+        ]
+      },
+      "cultural_note": "नेदरल्याण्ड्समा १० सम्मका संख्याहरू बालबालिकालाई निकै सानो उमेरमै सिकाइन्छ।",
+      "pronunciation_tip": "'Acht' मा भएको 'ch' को आवाज घाँटीको पछिल्लो भागबाट निकालिने 'ख' जस्तै हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "N-W1-D2" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "title": "Week 1 Day 3: Numbers 11-15",
+      "title_native": "हप्ता १ दिन ३: संख्या ११-१५",
+      "theme": "Numbers 11-15",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_3_1", "target": "Elf", "phonetic": "एल्फ", "native_meaning": "एघार", "english": "Eleven", "example_sentence_target": "Elf spelers.", "example_sentence_native": "एघार खेलाडीहरू।", "example_sentence_phonetic": "एल्फ स्पे-लर्स।" },
+        { "id": "n1_3_2", "target": "Twaalf", "phonetic": "त्वालफ", "native_meaning": "बाह्र", "english": "Twelve", "example_sentence_target": "Twaalf maanden.", "example_sentence_native": "बाह्र महिना।", "example_sentence_phonetic": "त्वालफ मान-देन।" },
+        { "id": "n1_3_3", "target": "Dertien", "phonetic": "डेर-तिन", "native_meaning": "तेह्र", "english": "Thirteen", "example_sentence_target": "Dertien broodjes.", "example_sentence_native": "तेह्रवटा रोटीहरू।", "example_sentence_phonetic": "डेर-तिन ब्रो-त्येस।" },
+        { "id": "n1_3_4", "target": "Veertien", "phonetic": "भिर-तिन", "native_meaning": "चौध", "english": "Fourteen", "example_sentence_target": "Veertien dagen.", "example_sentence_native": "चौध दिन।", "example_sentence_phonetic": "भिर-तिन दा-खेन।" },
+        { "id": "n1_3_5", "target": "Vijftien", "phonetic": "भाइफ-तिन", "native_meaning": "पन्ध्र", "english": "Fifteen", "example_sentence_target": "Vijftien minuten.", "example_sentence_native": "पन्ध्र मिनेट।", "example_sentence_phonetic": "भाइफ-तिन मि-नु-तेन।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_3_1", "target": "Elf", "native": "एघार" },
+          { "id": "m1_3_2", "target": "Twaalf", "native": "बाह्र" }
+        ],
+        "fillBlanks": [
+          { "id": "fb1_3_1", "sentence": "Minuten: ___ (१५)", "answer": "Vijftien", "hint": "भाइफ-तिन" }
+        ]
+      },
+      "cultural_note": "डचमा ११ र १२ को आफ्नै छुट्टै नाम छन्, तर १३ देखि १९ सम्म संख्याको पछाडि '-tien' थपेर बनाइन्छ।",
+      "pronunciation_tip": "'-tien' को उच्चारण नेपाली 'तिन' जस्तै हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "N-W1-D3" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "title": "Week 1 Day 4: Numbers 16-20",
+      "title_native": "हप्ता १ दिन ४: संख्या १६-२०",
+      "theme": "Numbers 16-20",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_4_1", "target": "Zestien", "phonetic": "जेस-तिन", "native_meaning": "सोह्र", "english": "Sixteen", "example_sentence_target": "Zestien kaarsen.", "example_sentence_native": "सोह्रवटा मैनबत्तीहरू।", "example_sentence_phonetic": "जेस-तिन कार-सेन।" },
+        { "id": "n1_4_2", "target": "Zeventien", "phonetic": "जे-भेन-तिन", "native_meaning": "सत्र", "english": "Seventeen", "example_sentence_target": "Zeventien jaar.", "example_sentence_native": "सत्र वर्ष।", "example_sentence_phonetic": "जे-भेन-तिन यार।" },
+        { "id": "n1_4_3", "target": "Achttien", "phonetic": "आख्त-तिन", "native_meaning": "अठार", "english": "Eighteen", "example_sentence_target": "Achttien stappen.", "example_sentence_native": "अठार पाइलाहरू।", "example_sentence_phonetic": "आख्त-तिन स्ता-पेन।" },
+        { "id": "n1_4_4", "target": "Negentien", "phonetic": "ने-खेन-तिन", "native_meaning": "उन्नाइस", "english": "Nineteen", "example_sentence_target": "Negentien meter.", "example_sentence_native": "उन्नाइस मिटर।", "example_sentence_phonetic": "ने-खेन-तिन मे-तर।" },
+        { "id": "n1_4_5", "target": "Twintig", "phonetic": "त्विन-तिख", "native_meaning": "बीस", "english": "Twenty", "example_sentence_target": "Twintig euro.", "example_sentence_native": "बीस यूरो।", "example_sentence_phonetic": "त्विन-तिख यू-रो।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_4_1", "target": "Achttien", "native": "अठार" },
+          { "id": "m1_4_2", "target": "Twintig", "native": "बीस" }
+        ],
+        "sentenceScramble": [
+          { "id": "ss1_4_1", "scrambled": ["jaar", "zeventien"], "correct": "zeventien jaar", "nativeHint": "सत्र वर्ष" }
+        ]
+      },
+      "cultural_note": "बीस सम्मका संख्याहरू दैनिक जीवनमा, जस्तै किनमेल र समय बताउन निकै प्रयोग हुन्छन्।",
+      "pronunciation_tip": "'Twintig' मा भएको '-tig' को अन्तिम 'g' को उच्चारण नेपाली 'ख' जस्तै नरम हुन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "N-W1-D4" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "title": "Week 1 Day 5: Counting Objects",
+      "title_native": "हप्ता १ दिन ५: वस्तुहरू गन्दै",
+      "theme": "Counting",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_5_1", "target": "Hoeveel?", "phonetic": "हू-भेल", "native_meaning": "कति?", "english": "How many?", "example_sentence_target": "Hoeveel appels?", "example_sentence_native": "कतिवटा स्याउ?", "example_sentence_phonetic": "हू-भेल आ-पेल?" },
+        { "id": "n1_5_2", "target": "Veel", "phonetic": "भेल", "native_meaning": "धेरै", "english": "Many/Much", "example_sentence_target": "Veel mensen.", "example_sentence_native": "धेरै मानिसहरू।", "example_sentence_phonetic": "भेल मेन-सेन।" },
+        { "id": "n1_5_3", "target": "Weinig", "phonetic": "वे-निख", "native_meaning": "थोरै", "english": "Few/Little", "example_sentence_target": "Weinig tijd.", "example_sentence_native": "थोरै समय।", "example_sentence_phonetic": "वे-निख तैत।" },
+        { "id": "n1_5_4", "target": "Sommige", "phonetic": "सो-मि-खे", "native_meaning": "केही", "english": "Some", "example_sentence_target": "Sommige dagen.", "example_sentence_native": "केही दिनहरू।", "example_sentence_phonetic": "सो-मि-खे दा-खेन।" }
+      ],
+      "exercises": {
+        "multipleChoice": [
+          { "id": "mc1_5_1", "question": "'Hoeveel' को अर्थ के हो?", "options": ["कहाँ", "कति", "को", "किन"], "correct": 1, "explanation": "'Hoeveel' को अर्थ कति हो।" }
+        ]
+      },
+      "cultural_note": "डचहरू गणितमा सिपालु मानिन्छन्, र उनीहरू हिसाब गर्दा निकै स्पष्ट हुन्छन्।",
+      "pronunciation_tip": "'Weinig' मा '-ig' को अन्तिम 'g' नरम 'ख' जस्तै सुनिन्छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "N-W1-D5" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "title": "Week 1 Day 6: Simple Math",
+      "title_native": "हप्ता १ दिन ६: साधारण गणित",
+      "theme": "Math",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_6_1", "target": "Plus", "phonetic": "प्लस", "native_meaning": "जोड (+)", "english": "Plus", "example_sentence_target": "Twee plus drie is vijf.", "example_sentence_native": "दुई जोड तीन पाँच हुन्छ।", "example_sentence_phonetic": "त्वे प्लस द़्री इस भाइफ।" },
+        { "id": "n1_6_2", "target": "Min", "phonetic": "मिन", "native_meaning": "घटाउ (-)", "english": "Minus", "example_sentence_target": "Tien min twee is acht.", "example_sentence_native": "दश घटाउ दुई आठ हुन्छ।", "example_sentence_phonetic": "तिन मिन त्वे इस आख्त।" },
+        { "id": "n1_6_3", "target": "Is", "phonetic": "इस", "native_meaning": "बराबर (=)", "english": "Is/Equals", "example_sentence_target": "Eén plus één is twee.", "example_sentence_native": "एक जोड एक दुई हुन्छ।", "example_sentence_phonetic": "एन प्लस एन इस त्वे।" }
+      ],
+      "exercises": {
+        "fillBlanks": [
+          { "id": "fb1_6_1", "sentence": "Vijf ___ drie is acht.", "answer": "plus", "hint": "जोड" },
+          { "id": "fb1_6_2", "sentence": "Vier min twee ___ twee.", "answer": "is", "hint": "हुन्छ" }
+        ]
+      },
+      "cultural_note": "पसलमा हिसाब गर्दा डचहरू 'plus' र 'min' शब्दहरू धेरै प्रयोग गर्छन्।",
+      "pronunciation_tip": "'Plus' को उच्चारण नेपालीमा जस्तै छ।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "N-W1-D6" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "title": "Week 1 Day 7: Week 1 Review",
+      "title_native": "हप्ता १ दिन ७: पहिलो हप्ताको समीक्षा",
+      "theme": "Review",
+      "path": "numbers",
+      "targetLanguage": "Dutch",
+      "nativeLanguage": "Nepali",
+      "words": [
+        { "id": "n1_7_1", "target": "Tellen", "phonetic": "ते-लेन", "native_meaning": "गन्नु", "english": "To count", "example_sentence_target": "Ik kan tellen.", "example_sentence_native": "म गन्न सक्छु।", "example_sentence_phonetic": "इक कान ते-लेन।" }
+      ],
+      "exercises": {
+        "matching": [
+          { "id": "m1_7_1", "target": "Zes", "native": "छ" },
+          { "id": "m1_7_2", "target": "Achttien", "native": "अठार" },
+          { "id": "m1_7_3", "target": "Twaalf", "native": "बाह्र" },
+          { "id": "m1_7_4", "target": "Nul", "native": "शून्य" }
+        ]
+      },
+      "cultural_note": "बधाई छ! तपाईंले डच संख्याको आधारभूत कुराहरू सिक्नुभयो।",
+      "pronunciation_tip": "सबै अघिल्ला पाठहरूको उच्चारण अभ्यास गर्नुहोस्।",
+      "progress": { "xp": 200, "streak_bonus": 50, "badge": "N-W1-COMPLETE" }
     }
   ]
 }

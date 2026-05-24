@@ -1,16 +1,259 @@
-
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "German",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 2, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 3, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 4, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 5, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 6, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 7, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }}
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Week 1 Day 1: Letter A",
+      "title_native": "Woche 1 Tag 1: Buchstabe A",
+      "theme": "Introduction to A",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "a_1_1",
+          "target": "Apfel",
+          "phonetic": "आप्फेल",
+          "native_meaning": "स्याउ",
+          "english": "Apple",
+          "example_sentence_target": "Der Apfel ist rot.",
+          "example_sentence_native": "स्याउ रातो छ।",
+          "example_sentence_phonetic": "डेर आप्फेल इस्ट रोट"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_a", "letter": "A" }],
+        "multipleChoice": [
+          {
+            "id": "mc_a",
+            "question": "जर्मनमा 'A' को उच्चारण कसरी गरिन्छ?",
+            "options": ["ए", "आ", "अ", "ओ"],
+            "correct": 1,
+            "explanation": "जर्मनमा 'A' को उच्चारण नेपालीको 'आ' जस्तै हुन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "जर्मनीमा स्याउ सबैभन्दा लोकप्रिय फल हो।",
+      "pronunciation_tip": "'A' लाई सधैं स्पष्ट 'आ' उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-A" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "B",
+      "title": "Week 1 Day 2: Letter B",
+      "title_native": "Woche 1 Tag 2: Buchstabe B",
+      "theme": "Introduction to B",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "b_1_2",
+          "target": "Brot",
+          "phonetic": "ब्रोट",
+          "native_meaning": "पाउरोटी",
+          "english": "Bread",
+          "example_sentence_target": "Das Brot ist frisch.",
+          "example_sentence_native": "पाउरोटी ताजा छ।",
+          "example_sentence_phonetic": "दास ब्रोट इस्ट फ्रिस"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_b", "letter": "B" }],
+        "matching": [
+          { "id": "m_b1", "target": "Brot", "native": "पाउरोटी" },
+          { "id": "m_b2", "target": "Apfel", "native": "स्याउ" }
+        ]
+      },
+      "cultural_note": "जर्मनीमा ३०० भन्दा बढी प्रकारका पाउरोटी पाइन्छन्।",
+      "pronunciation_tip": "'B' को उच्चारण नेपालीको 'ब' जस्तै हुन्छ, तर शब्दको अन्त्यमा यो 'प' जस्तो सुनिन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-B" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "C",
+      "title": "Week 1 Day 3: Letter C",
+      "title_native": "Woche 1 Tag 3: Buchstabe C",
+      "theme": "Introduction to C",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "c_1_3",
+          "target": "Café",
+          "phonetic": "काफे",
+          "native_meaning": "कफी पसल",
+          "english": "Café",
+          "example_sentence_target": "Wir gehen ins Café.",
+          "example_sentence_native": "हामी कफी पसल जान्छौं।",
+          "example_sentence_phonetic": "भिर गेहेन इन्स काफे"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_c", "letter": "C" }],
+        "multipleChoice": [
+          {
+            "id": "mc_c",
+            "question": "जर्मन वर्णमाला पढ्दा 'C' लाई के भनिन्छ?",
+            "options": ["से", "त्से", "चे", "के"],
+            "correct": 1,
+            "explanation": "जर्मन वर्णमालामा 'C' लाई 'त्से' (Tse) भनिन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "जर्मन शब्दहरूमा 'C' प्राय: 'CH' को रूपमा प्रयोग हुन्छ।",
+      "pronunciation_tip": "'C' लाई वर्णमालामा 'त्से' भनिए तापनि विदेशी शब्दहरूमा यो 'क' जस्तो सुनिन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-C" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "D",
+      "title": "Week 1 Day 4: Letter D",
+      "title_native": "Woche 1 Tag 4: Buchstabe D",
+      "theme": "Introduction to D",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "d_1_4",
+          "target": "Danke",
+          "phonetic": "डाङ्के",
+          "native_meaning": "धन्यवाद",
+          "english": "Thank you",
+          "example_sentence_target": "Danke für die Hilfe.",
+          "example_sentence_native": "सहयोगको लागि धन्यवाद।",
+          "example_sentence_phonetic": "डाङ्के फुर डी हिल्फे"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_d", "letter": "D" }],
+        "matching": [
+          { "id": "m_d1", "target": "Danke", "native": "धन्यवाद" },
+          { "id": "m_d2", "target": "Café", "native": "कफी पसल" }
+        ]
+      },
+      "cultural_note": "जर्मनीमा 'Danke' भन्नु धेरै महत्त्वपूर्ण शिष्टाचार मानिन्छ।",
+      "pronunciation_tip": "'D' को उच्चारण नेपालीको 'द' भन्दा अलि कडा 'ड' जस्तो हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-D" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "E",
+      "title": "Week 1 Day 5: Letter E",
+      "title_native": "Woche 1 Tag 5: Buchstabe E",
+      "theme": "Introduction to E",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "e_1_5",
+          "target": "Eis",
+          "phonetic": "आइस",
+          "native_meaning": "बरफ / आइसक्रिम",
+          "english": "Ice / Ice cream",
+          "example_sentence_target": "Ich mag Eis.",
+          "example_sentence_native": "मलाई आइसक्रिम मन पर्छ।",
+          "example_sentence_phonetic": "इश माग आइस"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_e", "letter": "E" }],
+        "multipleChoice": [
+          {
+            "id": "mc_e",
+            "question": "'Ei' को उच्चारण जर्मनमा के हुन्छ?",
+            "options": ["एइ", "ई", "आइ", "इ"],
+            "correct": 2,
+            "explanation": "जर्मनमा 'Ei' मिलाएर लेख्दा 'आइ' (Ai) उच्चारण हुन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "जर्मनीमा गर्मी महिनामा आइसक्रिम पसलहरू धेरै व्यस्त हुन्छन्।",
+      "pronunciation_tip": "'E' को उच्चारण नेपालीको 'ए' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-E" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "F",
+      "title": "Week 1 Day 6: Letter F",
+      "title_native": "Woche 1 Tag 6: Buchstabe F",
+      "theme": "Introduction to F",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "f_1_6",
+          "target": "Fisch",
+          "phonetic": "फिश",
+          "native_meaning": "माछा",
+          "english": "Fish",
+          "example_sentence_target": "Der Fisch schwimmt.",
+          "example_sentence_native": "माछा पौडिन्छ।",
+          "example_sentence_phonetic": "डेर फिश स्विम्ट"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_f", "letter": "F" }],
+        "matching": [
+          { "id": "m_f1", "target": "Fisch", "native": "माछा" },
+          { "id": "m_f2", "target": "Eis", "native": "आइसक्रिम" }
+        ]
+      },
+      "cultural_note": "उत्तरी जर्मनीमा माछाको परिकार धेरै प्रसिद्ध छ।",
+      "pronunciation_tip": "'F' को उच्चारण नेपालीको 'फ' जस्तै हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-F" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "G",
+      "title": "Week 1 Day 7: Letter G",
+      "title_native": "Woche 1 Tag 7: Buchstabe G",
+      "theme": "Introduction to G",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "g_1_7",
+          "target": "Geld",
+          "phonetic": "गेल्ड",
+          "native_meaning": "पैसा",
+          "english": "Money",
+          "example_sentence_target": "Hast du Geld?",
+          "example_sentence_native": "तिमीसँग पैसा छ?",
+          "example_sentence_phonetic": "हास्ट दु गेल्ड"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "wp_g", "letter": "G" }],
+        "multipleChoice": [
+          {
+            "id": "mc_g",
+            "question": "जर्मनमा 'G' को उच्चारण कसरी गरिन्छ?",
+            "options": ["जे", "गे", "गा", "जी"],
+            "correct": 1,
+            "explanation": "जर्मन वर्णमालामा 'G' लाई 'गे' भनिन्छ र शब्दमा 'ग' उच्चारण गरिन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "जर्मनीमा अझै पनि धेरै ठाउँमा नगद (Cash) पैसाको प्रयोग बढी हुन्छ।",
+      "pronunciation_tip": "'G' को उच्चारण सधैं 'ग' हुन्छ, 'ज' हुँदैन।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "Alpha-Week1" }
+    }
   ]
 }

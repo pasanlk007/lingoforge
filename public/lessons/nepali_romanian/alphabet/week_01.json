@@ -1,15 +1,282 @@
+
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "Romanian",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_1_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D1-Placeholder"} },
-    { "week": 1, "day": 2, "title": "Day 2: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_2_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D2-Placeholder"} },
-    { "week": 1, "day": 3, "title": "Day 3: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_3_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D3-Placeholder"} },
-    { "week": 1, "day": 4, "title": "Day 4: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_4_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D4-Placeholder"} },
-    { "week": 1, "day": 5, "title": "Day 5: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_5_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D5-Placeholder"} },
-    { "week": 1, "day": 6, "title": "Day 6: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_6_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D6-Placeholder"} },
-    { "week": 1, "day": 7, "title": "Day 7: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Romanian", "nativeLanguage": "Nepali", "words": [{"id": "w1_7_1", "target": "Placeholder", "phonetic": "Placeholder", "native_meaning": "Placeholder", "english": "Placeholder", "example_sentence_target": "Placeholder.", "example_sentence_native": "Placeholder.", "example_sentence_phonetic": "Placeholder."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": "W1D7-Placeholder"} }
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Day 1: Letter A",
+      "title_native": "Ziua 1: Litera A",
+      "theme": "The Vowel A",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_1",
+          "target": "Apă",
+          "phonetic": "आ-पअ",
+          "native_meaning": "पानी",
+          "english": "Water",
+          "example_sentence_target": "Vreau apă.",
+          "example_sentence_native": "मलाई पानी चाहिन्छ।",
+          "example_sentence_phonetic": "भ्रे-औ आ-पअ"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_1",
+            "letter": "A"
+          }
+        ],
+        "matching": [
+          {
+            "id": "m_nr_1_1",
+            "target": "Apă",
+            "native": "पानी"
+          }
+        ]
+      },
+      "cultural_note": "रोमानियामा 'A' को उच्चारण नेपाली 'आ' जस्तै हुन्छ।",
+      "pronunciation_tip": "रोमानियाली भाषामा 'A' सधैं स्पष्ट रूपमा 'आ' उच्चारण गरिन्छ।",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "RO-A"
+      }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "Ă",
+      "title": "Day 2: Letter Ă",
+      "title_native": "Ziua 2: Litera Ă",
+      "theme": "The Mid Vowel Ă",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_2",
+          "target": "Măgar",
+          "phonetic": "म-गआर",
+          "native_meaning": "गधा",
+          "english": "Donkey",
+          "example_sentence_target": "Un măgar mic.",
+          "example_sentence_native": "एउटा सानो गधा।",
+          "example_sentence_phonetic": "उन म-गआर मिक"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_2",
+            "letter": "Ă"
+          }
+        ]
+      },
+      "cultural_note": "Ă रोमानियाली भाषाको सबैभन्दा सामान्य स्वरहरू मध्ये एक हो।",
+      "pronunciation_tip": "'Ă' को उच्चारण अलि छोटो 'अ' जस्तै हुन्छ, जस्तै अंग्रेजी शब्द 'bus' मा।",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "RO-Ă"
+      }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "Â",
+      "title": "Day 3: Letter Â",
+      "title_native": "Ziua 3: Litera Â",
+      "theme": "The Closed Vowel Â",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_3",
+          "target": "Român",
+          "phonetic": "रो-मइन",
+          "native_meaning": "रोमानियाली",
+          "english": "Romanian",
+          "example_sentence_target": "Sunt român.",
+          "example_sentence_native": "म रोमानियाली हुँ।",
+          "example_sentence_phonetic": "सुन्त रो-मइन"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_3",
+            "letter": "Â"
+          }
+        ]
+      },
+      "cultural_note": "Â र Î को उच्चारण एउटै हुन्छ, तर Â शब्दको बीचमा प्रयोग गरिन्छ।",
+      "pronunciation_tip": "'Â' को उच्चारण गहिरो 'इ' जस्तो हुन्छ, जुन घाँटीको पछाडिबाट आउँछ।",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "RO-Â"
+      }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "B",
+      "title": "Day 4: Letter B",
+      "title_native": "Ziua 4: Litera B",
+      "theme": "The Consonant B",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_4",
+          "target": "Bună",
+          "phonetic": "बु-नअ",
+          "native_meaning": "नमस्ते / राम्रो",
+          "english": "Good / Hello",
+          "example_sentence_target": "Bună ziua!",
+          "example_sentence_native": "शुभ दिन!",
+          "example_sentence_phonetic": "बु-नअ जि-उआ"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_4",
+            "letter": "B"
+          }
+        ]
+      },
+      "cultural_note": "'Bună' अभिवादनको लागि धेरै प्रयोग गरिन्छ।",
+      "pronunciation_tip": "'B' को उच्चारण नेपाली 'ब' जस्तै हुन्छ।",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "RO-B"
+      }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "C",
+      "title": "Day 5: Letter C",
+      "title_native": "Ziua 5: Litera C",
+      "theme": "The Consonant C",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_5",
+          "target": "Casă",
+          "phonetic": "का-सअ",
+          "native_meaning": "घर",
+          "english": "House",
+          "example_sentence_target": "O casă mare.",
+          "example_sentence_native": "एउटा ठूलो घर।",
+          "example_sentence_phonetic": "ओ का-सअ मा-रे"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_5",
+            "letter": "C"
+          }
+        ]
+      },
+      "cultural_note": "C को उच्चारण पछिको स्वरमा भर पर्छ। A, O, U को अगाडि यो 'क' हुन्छ।",
+      "pronunciation_tip": "'C' + 'A' = 'का'। नेपाली 'क' जस्तै।",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "RO-C"
+      }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "D",
+      "title": "Day 6: Letter D",
+      "title_native": "Ziua 6: Litera D",
+      "theme": "The Consonant D",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_6",
+          "target": "Doi",
+          "phonetic": "दो-इ",
+          "native_meaning": "दुई",
+          "english": "Two",
+          "example_sentence_target": "Doi prieteni.",
+          "example_sentence_native": "दुई साथीहरू।",
+          "example_sentence_phonetic": "दो-इ प्रि-ए-तेनी"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_6",
+            "letter": "D"
+          }
+        ]
+      },
+      "cultural_note": "रोमानियाली संख्याहरू सिक्नु धेरै उपयोगी छ।",
+      "pronunciation_tip": "'D' को उच्चारण नेपाली 'द' जस्तै हुन्छ।",
+      "progress": {
+        "xp": 50,
+        "streak_bonus": 10,
+        "badge": "RO-D"
+      }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "E",
+      "title": "Day 7: Letter E",
+      "title_native": "Ziua 7: Litera E",
+      "theme": "The Vowel E",
+      "path": "alphabet",
+      "targetLanguage": "Romanian",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "nr_a_1_7",
+          "target": "Elefant",
+          "phonetic": "ए-ले-फान्त",
+          "native_meaning": "हात्ती",
+          "english": "Elephant",
+          "example_sentence_target": "Un elefant gri.",
+          "example_sentence_native": "एउटा खरानी रङको हात्ती।",
+          "example_sentence_phonetic": "उन ए-ले-फान्त ग्री"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [
+          {
+            "id": "wp_nr_1_7",
+            "letter": "E"
+          }
+        ]
+      },
+      "cultural_note": "रोमानियामा 'E' को उच्चारण सधैं स्पष्ट 'ए' हुन्छ।",
+      "pronunciation_tip": "'E' को उच्चारण नेपाली 'ए' जस्तै हुन्छ।",
+      "progress": {
+        "xp": 100,
+        "streak_bonus": 20,
+        "badge": "W1-RO-COMP"
+      }
+    }
   ]
 }

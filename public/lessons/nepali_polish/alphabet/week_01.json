@@ -1,15 +1,219 @@
+
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "Polish",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Week 1, Day 1: Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [{"id": "w1_1_1", "target": "A", "phonetic": "...", "native_meaning": "...", "english": "...", "example_sentence_target": "...", "example_sentence_native": "...", "example_sentence_phonetic": "..."}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "..." } },
-    { "week": 1, "day": 2, "title": "Day 2", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": {} },
-    { "week": 1, "day": 3, "title": "Day 3", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": {} },
-    { "week": 1, "day": 4, "title": "Day 4", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": {} },
-    { "week": 1, "day": 5, "title": "Day 5", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": {} },
-    { "week": 1, "day": 6, "title": "Day 6", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": {} },
-    { "week": 1, "day": 7, "title": "Day 7", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Polish", "nativeLanguage": "Nepali", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "", "pronunciation_tip": "", "progress": {} }
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Day 1: Letter A",
+      "title_native": "पहिलो दिन: अक्षर A",
+      "theme": "Vowels",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_a_1",
+          "target": "Auto",
+          "phonetic": "आ-उ-तो",
+          "native_meaning": "कार",
+          "english": "Car",
+          "example_sentence_target": "To jest auto.",
+          "example_sentence_native": "यो कार हो।",
+          "example_sentence_phonetic": "तो येस्त आ-उ-तो"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_a", "letter": "A" }],
+        "matching": [{ "id": "m_a_1", "target": "A", "native": "आ" }]
+      },
+      "cultural_note": "पोलिस भाषामा 'A' सधैं नेपाली 'आ' जस्तै उच्चारण गरिन्छ।",
+      "pronunciation_tip": "'A' को उच्चारण छोटो र स्पष्ट हुन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-A" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "Ą",
+      "title": "Day 2: Letter Ą",
+      "title_native": "दोस्रो दिन: अक्षर Ą",
+      "theme": "Nasal Vowels",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_a_2",
+          "target": "Mąka",
+          "phonetic": "मों-का",
+          "native_meaning": "पीठो",
+          "english": "Flour",
+          "example_sentence_target": "To jest biała mąka.",
+          "example_sentence_native": "यो सेतो पीठो हो।",
+          "example_sentence_phonetic": "तो येस्त ब्या-वा मों-का"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_an", "letter": "Ą" }],
+        "matching": [{ "id": "m_an_1", "target": "Ą", "native": "ओं (नाकबाट)" }]
+      },
+      "cultural_note": "Ą पोल्याण्डको एउटा विशेष नाकबाट उच्चारण गरिने स्वर हो।",
+      "pronunciation_tip": "यसलाई नेपालीको 'ओं' जस्तै नाकबाट उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-Ą" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "B",
+      "title": "Day 3: Letter B",
+      "title_native": "तेस्रो दिन: अक्षर B",
+      "theme": "Consonants",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_b_1",
+          "target": "But",
+          "phonetic": "बुत",
+          "native_meaning": "जुत्ता",
+          "english": "Shoe",
+          "example_sentence_target": "To jest mój but.",
+          "example_sentence_native": "यो मेरो जुत्ता हो।",
+          "example_sentence_phonetic": "तो येस्त मुइ बुत"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_b", "letter": "B" }],
+        "matching": [{ "id": "m_b_1", "target": "B", "native": "ब" }]
+      },
+      "cultural_note": "B नेपालीको 'ब' जस्तै उच्चारण गरिन्छ।",
+      "pronunciation_tip": "ओठहरू जोडेर 'ब' भन्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-B" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "C",
+      "title": "Day 4: Letter C",
+      "title_native": "चौथो दिन: अक्षर C",
+      "theme": "Consonants",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_c_1",
+          "target": "Cukier",
+          "phonetic": "त्सु-क्येर",
+          "native_meaning": "चिनी",
+          "english": "Sugar",
+          "example_sentence_target": "Lubię cukier.",
+          "example_sentence_native": "मलाई चिनी मन पर्छ।",
+          "example_sentence_phonetic": "लु-ब्ये त्सु-क्येर"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_c", "letter": "C" }],
+        "matching": [{ "id": "m_c_1", "target": "C", "native": "त्स" }]
+      },
+      "cultural_note": "पोलिस भाषामा 'C' सधैं 'त्स' (ts) जस्तै उच्चारण गरिन्छ, 'क' वा 'स' जस्तो होइन।",
+      "pronunciation_tip": "यसलाई अंग्रेजीको 'Cats' को अन्तिम 'ts' जस्तै उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-C" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "Ć",
+      "title": "Day 5: Letter Ć",
+      "title_native": "पाँचौं दिन: अक्षर Ć",
+      "theme": "Soft Consonants",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_cc_1",
+          "target": "Ćma",
+          "phonetic": "च्मा",
+          "native_meaning": "पुतली (Moth)",
+          "english": "Moth",
+          "example_sentence_target": "Ćma leci.",
+          "example_sentence_native": "पुतली उडिरहेको छ।",
+          "example_sentence_phonetic": "च्मा ले-त्सी"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_cc", "letter": "Ć" }],
+        "matching": [{ "id": "m_cc_1", "target": "Ć", "native": "च (नरम)" }]
+      },
+      "cultural_note": "यो अक्षर पोल्याण्डको एउटा नरम 'च' ध्वनि हो।",
+      "pronunciation_tip": "जिब्रोलाई तालुको नजिक ल्याएर नरम 'च' भन्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-Ć" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "D",
+      "title": "Day 6: Letter D",
+      "title_native": "छैटौं दिन: अक्षर D",
+      "theme": "Consonants",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_d_1",
+          "target": "Dom",
+          "phonetic": "दोम",
+          "native_meaning": "घर",
+          "english": "House",
+          "example_sentence_target": "To jest mój dom.",
+          "example_sentence_native": "यो मेरो घर हो।",
+          "example_sentence_phonetic": "तो येस्त मुइ दोम"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_d", "letter": "D" }],
+        "matching": [{ "id": "m_d_1", "target": "D", "native": "द" }]
+      },
+      "cultural_note": "D नेपालीको 'द' जस्तै उच्चारण गरिन्छ।",
+      "pronunciation_tip": "जिब्रोलाई दाँतको पछाडि राखेर 'द' भन्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-D" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "E",
+      "title": "Day 7: Letter E",
+      "title_native": "सातौं दिन: अक्षर E",
+      "theme": "Vowels",
+      "path": "alphabet",
+      "targetLanguage": "Polish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "p_e_1",
+          "target": "Ekran",
+          "phonetic": "ए-क्रान",
+          "native_meaning": "पर्दा/स्क्रिन",
+          "english": "Screen",
+          "example_sentence_target": "To jest ekran.",
+          "example_sentence_native": "यो स्क्रिन हो।",
+          "example_sentence_phonetic": "तो येस्त ए-क्रान"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_p_e", "letter": "E" }],
+        "matching": [{ "id": "m_e_1", "target": "E", "native": "ए" }]
+      },
+      "cultural_note": "E पोलिसमा सधैं 'ए' जस्तै उच्चारण गरिन्छ।",
+      "pronunciation_tip": "यसलाई अंग्रेजीको 'Set' को 'e' जस्तै उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "PL-E" }
+    }
   ]
 }

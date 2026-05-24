@@ -1,15 +1,260 @@
+
 {
   "week": 1,
   "path": "alphabet",
   "targetLanguage": "Spanish",
   "nativeLanguage": "Nepali",
   "days": [
-    { "week": 1, "day": 1, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_1_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 2, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_2_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 3, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_3_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 4, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_4_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 5, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_5_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 6, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_6_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} },
-    { "week": 1, "day": 7, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "Spanish", "nativeLanguage": "Nepali", "words": [{"id": "w1_7_1", "target": "Word", "phonetic": "phonetic", "native_meaning": "meaning", "english": "english", "example_sentence_target": "sentence", "example_sentence_native": "sentence", "example_sentence_phonetic": "phonetic"}], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": {"xp": 0, "streak_bonus": 0, "badge": ""} }
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Week 1 Day 1: Letter A",
+      "title_native": "हप्ता १ दिन १: अक्षर A",
+      "theme": "Introduction to A",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_a_1",
+          "target": "Amigo",
+          "phonetic": "अमिगो",
+          "native_meaning": "साथी",
+          "english": "Friend",
+          "example_sentence_target": "Hola, amigo.",
+          "example_sentence_native": "नमस्ते, साथी।",
+          "example_sentence_phonetic": "ओला, अमिगो।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_a", "letter": "A" }],
+        "multipleChoice": [
+          {
+            "id": "mc_a",
+            "question": "स्पेनिशमा 'A' को उच्चारण कस्तो हुन्छ?",
+            "options": ["ए", "आ", "ओ", "ई"],
+            "correct": 1,
+            "explanation": "स्पेनिशमा 'A' को उच्चारण सधैं 'आ' (ah) जस्तै हुन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "स्पेनिश एक ध्वन्यात्मक भाषा हो, जसको अर्थ यो प्रायः लेखिएकै जस्तो बोलिन्छ।",
+      "pronunciation_tip": "'A' लाई नेपालीको 'आ' जस्तै स्पष्ट र छोटो उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-ES-A" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "B",
+      "title": "Week 1 Day 2: Letter B",
+      "title_native": "हप्ता १ दिन २: अक्षर B",
+      "theme": "Introduction to B",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_b_1",
+          "target": "Bueno",
+          "phonetic": "बुएनो",
+          "native_meaning": "राम्रो",
+          "english": "Good",
+          "example_sentence_target": "Es bueno.",
+          "example_sentence_native": "यो राम्रो छ।",
+          "example_sentence_phonetic": "एस बुएनो।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_b", "letter": "B" }],
+        "matching": [
+          { "id": "m_b_1", "target": "Bueno", "native": "राम्रो" },
+          { "id": "m_b_2", "target": "Amigo", "native": "साथी" }
+        ]
+      },
+      "cultural_note": "स्पेनिशमा 'B' र 'V' को उच्चारण धेरै मिल्दोजुल्दो हुन्छ।",
+      "pronunciation_tip": "यसलाई नेपालीको 'ब' जस्तै उच्चारण गरिन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-ES-B" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "C",
+      "title": "Week 1 Day 3: Letter C",
+      "title_native": "हप्ता १ दिन ३: अक्षर C",
+      "theme": "Introduction to C",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_c_1",
+          "target": "Casa",
+          "phonetic": "कासा",
+          "native_meaning": "घर",
+          "english": "House",
+          "example_sentence_target": "Mi casa.",
+          "example_sentence_native": "मेरो घर।",
+          "example_sentence_phonetic": "मि कासा।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_c", "letter": "C" }],
+        "multipleChoice": [
+          {
+            "id": "mc_c",
+            "question": "'Casa' मा 'C' को उच्चारण के हुन्छ?",
+            "options": ["स", "क", "च", "छ"],
+            "correct": 1,
+            "explanation": "A, O, U को अगाडि 'C' को उच्चारण 'क' हुन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "स्पेनमा 'C' (E र I को अगाडि) लाई दाँतको बीचमा जिब्रो राखेर 'थ' जस्तै उच्चारण गरिन्छ, तर ल्याटिन अमेरिकामा 'स' भनिन्छ।",
+      "pronunciation_tip": "A, O, U को अगाडि 'क' र E, I को अगाडि 'स' उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-ES-C" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "D",
+      "title": "Week 1 Day 4: Letter D",
+      "title_native": "हप्ता १ दिन ४: अक्षर D",
+      "theme": "Introduction to D",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_d_1",
+          "target": "Dedo",
+          "phonetic": "देदो",
+          "native_meaning": "औंला",
+          "english": "Finger",
+          "example_sentence_target": "El dedo.",
+          "example_sentence_native": "औंला।",
+          "example_sentence_phonetic": "एल देदो।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_d", "letter": "D" }],
+        "matching": [
+          { "id": "m_d_1", "target": "Dedo", "native": "औंला" },
+          { "id": "m_d_2", "target": "Casa", "native": "घर" }
+        ]
+      },
+      "cultural_note": "स्पेनिशमा 'D' अलि नरम हुन्छ, विशेष गरी शब्दको अन्त्यमा।",
+      "pronunciation_tip": "नेपालीको 'द' जस्तै उच्चारण गर्नुहोस्, 'ड' जस्तो होइन।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-ES-D" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "E",
+      "title": "Week 1 Day 5: Letter E",
+      "title_native": "हप्ता १ दिन ५: अक्षर E",
+      "theme": "Introduction to E",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_e_1",
+          "target": "Elefante",
+          "phonetic": "एलेफान्ते",
+          "native_meaning": "हात्ती",
+          "english": "Elephant",
+          "example_sentence_target": "Un elefante.",
+          "example_sentence_native": "एक हात्ती।",
+          "example_sentence_phonetic": "उन एलेफान्ते।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_e", "letter": "E" }],
+        "multipleChoice": [
+          {
+            "id": "mc_e",
+            "question": "'E' को उच्चारण कस्तो हुन्छ?",
+            "options": ["इ", "ए", "ओ", "यू"],
+            "correct": 1,
+            "explanation": "स्पेनिशमा 'E' सधैं 'ए' (eh) जस्तै सुनिन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "स्पेनिश स्वरहरू (A, E, I, O, U) सधैं एकैनासले उच्चारण गरिन्छ।",
+      "pronunciation_tip": "नेपालीको 'ए' जस्तै छोटो उच्चारण गर्नुहोस्।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-ES-E" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "F",
+      "title": "Week 1 Day 6: Letter F",
+      "title_native": "हप्ता १ दिन ६: अक्षर F",
+      "theme": "Introduction to F",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_f_1",
+          "target": "Flor",
+          "phonetic": "फ्लोर",
+          "native_meaning": "फूल",
+          "english": "Flower",
+          "example_sentence_target": "La flor.",
+          "example_sentence_native": "फूल।",
+          "example_sentence_phonetic": "ला फ्लोर।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_f", "letter": "F" }],
+        "matching": [
+          { "id": "m_f_1", "target": "Flor", "native": "फूल" },
+          { "id": "m_f_2", "target": "Elefante", "native": "हात्ती" }
+        ]
+      },
+      "cultural_note": "'F' स्पेनिशमा धेरै प्रयोग हुने अक्षर हो।",
+      "pronunciation_tip": "यसलाई नेपालीको 'फ' जस्तै उच्चारण गरिन्छ।",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "Alpha-ES-F" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "G",
+      "title": "Week 1 Day 7: Letter G",
+      "title_native": "हप्ता १ दिन ७: अक्षर G",
+      "theme": "Introduction to G",
+      "path": "alphabet",
+      "targetLanguage": "Spanish",
+      "nativeLanguage": "Nepali",
+      "words": [
+        {
+          "id": "ns_g_1",
+          "target": "Gato",
+          "phonetic": "गातो",
+          "native_meaning": "बिरालो",
+          "english": "Cat",
+          "example_sentence_target": "El gato.",
+          "example_sentence_native": "बिरालो।",
+          "example_sentence_phonetic": "एल गातो।"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_g", "letter": "G" }],
+        "multipleChoice": [
+          {
+            "id": "mc_g",
+            "question": "'Gato' मा 'G' को उच्चारण के हुन्छ?",
+            "options": ["ह", "ग", "ज", "स"],
+            "correct": 1,
+            "explanation": "A, O, U को अगाडि 'G' को उच्चारण 'ग' हुन्छ।"
+          }
+        ]
+      },
+      "cultural_note": "E र I को अगाडि 'G' को उच्चारण नेपालीको 'ह' जस्तै हुन्छ।",
+      "pronunciation_tip": "'ग' (A, O, U को अगाडि) र 'ह' (E, I को अगाडि) को भिन्नता याद गर्नुहोस्।",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "Alpha-ES-W1" }
+    }
   ]
 }
