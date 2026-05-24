@@ -93,8 +93,7 @@ export default function LandingPage() {
     "name": "LingoForge",
     "url": "https://lingoforge.app",
     "description": "AI-powered language learning platform for Asian migrant workers. Learn Romanian, German, French and 20+ languages in Sinhala, Hindi, Bengali, Urdu and Nepali.",
-    "applicationCategory": "EducationalApplication",
-    "operatingSystem": "Web Browser, Android, iOS",
+    "sameAs": ["https://lingoforge.app"],
     "offers": {
       "@type": "Offer",
       "price": "26",
