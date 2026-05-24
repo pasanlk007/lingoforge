@@ -312,29 +312,28 @@ function DashboardContent({ user }: { user: User }) {
                         </div>
                     </div>
                 </CardContent>
-                <CardFooter className="grid gap-2 pt-2 p-4">
-                  {hasAccessToNextWeek ? (
-                    <Button asChild className="w-full">
-                      <Link href={nextSurvivalLessonUrl}>
-                        {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  ) : (
-                    <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-                      <Link href="/pricing">{t_ui.upgradeToUnlock} <ChevronRight className="ml-2 h-4 w-4" /></Link>
-                    </Button>
-                  )}
-                  <div className="grid grid-cols-2 gap-2">
-                      <Button asChild variant="outline" className="font-semibold">
-                          <Link href="/alphabet">
-                              🔤 {t.alphabetPath}
-                          </Link>
+                <CardFooter className="flex flex-col gap-2 pt-2 p-4">
+                  <div className="grid grid-cols-3 gap-2 w-full">
+                    {hasAccessToNextWeek ? (
+                      <Button asChild size="sm" className="col-span-3 bg-green-600 hover:bg-green-700">
+                        <Link href={nextSurvivalLessonUrl}>
+                          {t.goToNextLesson} <ChevronRight className="ml-1 h-3 w-3" />
+                        </Link>
                       </Button>
-                      <Button asChild variant="outline" className="font-semibold">
-                          <Link href="/numbers">
-                              🔢 {t.numbersPath}
-                          </Link>
+                    ) : (
+                      <Button asChild size="sm" className="col-span-3 bg-green-600 hover:bg-green-700">
+                        <Link href="/pricing">{t_ui.upgradeToUnlock} <ChevronRight className="ml-1 h-3 w-3" /></Link>
                       </Button>
+                    )}
+                    <Button asChild variant="outline" size="sm" className="col-span-1 text-xs">
+                      <Link href="/survival">🌱 Survival</Link>
+                    </Button>
+                    <Button asChild variant="outline" size="sm" className="col-span-1 text-xs">
+                      <Link href="/alphabet">🔤 {t.alphabetPath}</Link>
+                    </Button>
+                    <Button asChild variant="outline" size="sm" className="col-span-1 text-xs">
+                      <Link href="/numbers">🔢 {t.numbersPath}</Link>
+                    </Button>
                   </div>
                 </CardFooter>
               </Card>
