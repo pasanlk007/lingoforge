@@ -5,12 +5,228 @@
   "targetLanguage": "German",
   "nativeLanguage": "Urdu",
   "days": [
-    { "week": 1, "day": 1, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 2, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 3, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 4, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 5, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 6, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }},
-    { "week": 1, "day": 7, "title": "Placeholder", "title_native": "Placeholder", "theme": "Placeholder", "path": "alphabet", "targetLanguage": "German", "nativeLanguage": "Urdu", "words": [], "dialogues": [], "exercises": {}, "cultural_note": "Placeholder", "pronunciation_tip": "Placeholder", "progress": { "xp": 0, "streak_bonus": 0, "badge": "" }}
+    {
+      "week": 1,
+      "day": 1,
+      "letter": "A",
+      "title": "Day 1: Letter A",
+      "title_native": "پہلا دن: حرف A",
+      "theme": "Introduction to A",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_a_1",
+          "target": "Apfel",
+          "phonetic": "اپفل",
+          "native_meaning": "سیب",
+          "english": "Apple",
+          "example_sentence_target": "Der Apfel ist rot.",
+          "example_sentence_native": "سیب سرخ ہے۔",
+          "example_sentence_phonetic": "ڈیر اپفل اسٹ روٹ"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_a", "letter": "A" }],
+        "matching": [
+          { "id": "m_a_1", "target": "Apfel", "native": "سیب" }
+        ]
+      },
+      "cultural_note": "جرمنی میں سیب بہت مقبول پھل ہے اور اسے صحت کی علامت سمجھا جاتا ہے۔",
+      "pronunciation_tip": "جرمن میں 'A' کی آواز اردو کے 'آ' کی طرح لمبی اور صاف ہوتی ہے۔",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "GER-A" }
+    },
+    {
+      "week": 1,
+      "day": 2,
+      "letter": "B",
+      "title": "Day 2: Letter B",
+      "title_native": "دوسرا دن: حرف B",
+      "theme": "Introduction to B",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_b_1",
+          "target": "Brot",
+          "phonetic": "بروٹ",
+          "native_meaning": "روٹی",
+          "english": "Bread",
+          "example_sentence_target": "Das Brot ist frisch.",
+          "example_sentence_native": "روٹی تازہ ہے۔",
+          "example_sentence_phonetic": "ڈاس بروٹ اسٹ فریش"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_b", "letter": "B" }],
+        "multipleChoice": [
+          {
+            "id": "mc_b_1",
+            "question": "B سے بننے والا لفظ 'Brot' کا کیا مطلب ہے؟",
+            "options": ["پانی", "روٹی", "دودھ", "سیب"],
+            "correct": 1,
+            "explanation": "'Brot' کا مطلب روٹی ہے۔"
+          }
+        ]
+      },
+      "cultural_note": "جرمن روٹی (Brot) دنیا بھر میں مشہور ہے اور یہاں سینکڑوں اقسام کی روٹیاں ملتی ہیں۔",
+      "pronunciation_tip": "حرف 'B' کی آواز اردو کے 'ب' جیسی ہوتی ہے۔",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "GER-B" }
+    },
+    {
+      "week": 1,
+      "day": 3,
+      "letter": "C",
+      "title": "Day 3: Letter C",
+      "title_native": "تیسرا دن: حرف C",
+      "theme": "Introduction to C",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_c_1",
+          "target": "Clown",
+          "phonetic": "کلاؤن",
+          "native_meaning": "جوکر",
+          "english": "Clown",
+          "example_sentence_target": "Der Clown lacht.",
+          "example_sentence_native": "جوکر ہنستا ہے۔",
+          "example_sentence_phonetic": "ڈیر کلاؤن لاخت"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_c", "letter": "C" }],
+        "sentenceScramble": [
+          {
+            "id": "ss_c_1",
+            "scrambled": ["lacht", "Der", "Clown"],
+            "correct": "Der Clown lacht",
+            "nativeHint": "جوکر ہنستا ہے۔"
+          }
+        ]
+      },
+      "cultural_note": "جرمن زبان میں 'C' زیادہ تر غیر ملکی الفاظ میں استعمال ہوتا ہے۔",
+      "pronunciation_tip": "لفظ کے شروع میں 'C' اکثر 'ک' یا 'تس' کی آواز دیتا ہے۔",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "GER-C" }
+    },
+    {
+      "week": 1,
+      "day": 4,
+      "letter": "D",
+      "title": "Day 4: Letter D",
+      "title_native": "چوتھا دن: حرف D",
+      "theme": "Introduction to D",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_d_1",
+          "target": "Dach",
+          "phonetic": "ڈاخر",
+          "native_meaning": "چھت",
+          "english": "Roof",
+          "example_sentence_target": "Das Dach ist groß.",
+          "example_sentence_native": "چھت بڑی ہے۔",
+          "example_sentence_phonetic": "ڈاس ڈاخر اسٹ گروس"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_d", "letter": "D" }]
+      },
+      "cultural_note": "جرمنی میں گھروں کی چھتیں اکثر ترچھی ہوتی ہیں تاکہ برف آسانی سے گر سکے۔",
+      "pronunciation_tip": "حرف 'D' کی آواز اردو کے 'ڈ' یا 'د' کے درمیان ہوتی ہے۔",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "GER-D" }
+    },
+    {
+      "week": 1,
+      "day": 5,
+      "letter": "E",
+      "title": "Day 5: Letter E",
+      "title_native": "پانچواں دن: حرف E",
+      "theme": "Introduction to E",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_e_1",
+          "target": "Elefant",
+          "phonetic": "ایلیفانٹ",
+          "native_meaning": "ہاتھی",
+          "english": "Elephant",
+          "example_sentence_target": "Der Elefant ist grau.",
+          "example_sentence_native": "ہاتھی سرمئی ہے۔",
+          "example_sentence_phonetic": "ڈیر ایلیفانٹ اسٹ گراؤ"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_e", "letter": "E" }]
+      },
+      "cultural_note": "جرمن چڑیا گھروں میں ہاتھی بچوں کے پسندیدہ جانور ہیں۔",
+      "pronunciation_tip": "حرف 'E' کی آواز اردو کے 'اے' (ے) جیسی ہوتی ہے۔",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "GER-E" }
+    },
+    {
+      "week": 1,
+      "day": 6,
+      "letter": "F",
+      "title": "Day 6: Letter F",
+      "title_native": "چھٹا دن: حرف F",
+      "theme": "Introduction to F",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_f_1",
+          "target": "Fisch",
+          "phonetic": "فش",
+          "native_meaning": "مچھلی",
+          "english": "Fish",
+          "example_sentence_target": "Der Fisch schwimmt.",
+          "example_sentence_native": "مچھلی تیراکی کرتی ہے۔",
+          "example_sentence_phonetic": "ڈیر فش شویمٹ"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_f", "letter": "F" }]
+      },
+      "cultural_note": "جرمنی کے شمالی علاقوں میں مچھلی بہت شوق سے کھائی جاتی ہے۔",
+      "pronunciation_tip": "حرف 'F' کی آواز اردو کے 'ف' جیسی ہوتی ہے۔",
+      "progress": { "xp": 50, "streak_bonus": 10, "badge": "GER-F" }
+    },
+    {
+      "week": 1,
+      "day": 7,
+      "letter": "G",
+      "title": "Day 7: Letter G",
+      "title_native": "ساتواں دن: حرف G",
+      "theme": "Introduction to G",
+      "path": "alphabet",
+      "targetLanguage": "German",
+      "nativeLanguage": "Urdu",
+      "words": [
+        {
+          "id": "ug_g_1",
+          "target": "Glas",
+          "phonetic": "گلاس",
+          "native_meaning": "گلاس",
+          "english": "Glass",
+          "example_sentence_target": "Das Glas ist leer.",
+          "example_sentence_native": "گلاس خالی ہے۔",
+          "example_sentence_phonetic": "ڈاس گلاس اسٹ لیئر"
+        }
+      ],
+      "exercises": {
+        "writingPractice": [{ "id": "w_g", "letter": "G" }]
+      },
+      "cultural_note": "جرمن دستکاری میں شیشے کا کام بہت پرانا اور مشہور ہے۔",
+      "pronunciation_tip": "حرف 'G' کی آواز ہمیشہ 'گ' جیسی ہوتی ہے، کبھی 'ج' نہیں ہوتی۔",
+      "progress": { "xp": 100, "streak_bonus": 20, "badge": "W1-GERMAN" }
+    }
   ]
 }
