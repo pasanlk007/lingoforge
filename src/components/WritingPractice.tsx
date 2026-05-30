@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
-import { Eraser, Pen, Highlighter } from 'lucide-react';
+import { Eraser, Pen, Highlighter, RotateCcw } from 'lucide-react';
 import { Slider } from './ui/slider';
 import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
 import { cn } from '@/lib/utils';
@@ -22,22 +22,42 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   const [size, setSize] = useState(10);
   const contextRef = useRef<CanvasRenderingContext2D | null>(null);
 
-  // Helper to draw the background guide letter
   const drawGuide = useCallback((ctx: CanvasRenderingContext2D, char: string, width: number, height: number) => {
     const computedStyle = getComputedStyle(document.documentElement);
     const bgHsl = computedStyle.getPropertyValue('--muted').trim() || '240 4% 20%';
     const fgHsl = computedStyle.getPropertyValue('--muted-foreground').trim() || '0 0% 63.9%';
 
-    // Clear and fill background
+    // 1. Clear and setup background
     ctx.clearRect(0, 0, width, height);
     ctx.fillStyle = `hsl(${bgHsl} / 0.5)`;
     ctx.fillRect(0, 0, width, height);
     
-    // Draw the guide letter
+    // 2. Precise Auto-fit logic
+    const maxWidth = width;
+    const maxHeight = height;
+    
+    let fontSize = Math.min(width, height); // Base scale
+    ctx.font = `bold ${fontSize}px sans-serif`;
+    
+    // Measure exact ink bounds
+    const metrics = ctx.measureText(char);
+    const charWidth = metrics.actualBoundingBoxLeft + metrics.actualBoundingBoxRight;
+    const charHeight = metrics.actualBoundingBoxAscent + metrics.actualBoundingBoxDescent;
+
+    // Calculate ratios based on precise dimensions
+    const widthRatio = maxWidth / charWidth;
+    const heightRatio = maxHeight / charHeight;
+    
+    // Apply 85% scale for comfortable padding
+    const fitRatio = Math.min(widthRatio, heightRatio) * 0.85;
+    fontSize *= fitRatio;
+    
+    ctx.font = `bold ${fontSize}px sans-serif`;
     ctx.fillStyle = `hsl(${fgHsl} / 0.2)`;
-    ctx.font = `bold ${Math.min(width, height) * 0.7}px sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
+    
+    // Draw centered guide
     ctx.fillText(char, width / 2, height / 2);
   }, []);
 
@@ -52,8 +72,10 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     const dpr = window.devicePixelRatio || 1;
     canvas.width = width * dpr;
     canvas.height = height * dpr;
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
     
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext('2d', { alpha: false });
     if (!context) return;
     
     context.resetTransform();
@@ -66,8 +88,10 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   useEffect(() => {
     initCanvas();
     
-    const observer = new ResizeObserver(() => {
-      initCanvas();
+    const observer = new ResizeObserver((entries) => {
+      if (entries[0].contentRect.width > 0) {
+        initCanvas();
+      }
     });
 
     if (containerRef.current) {
@@ -80,11 +104,10 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
   const clearCanvas = () => {
     const canvas = canvasRef.current;
     const context = contextRef.current;
-    if (canvas && context) {
-      const { width, height } = containerRef.current?.getBoundingClientRect() || { width: 0, height: 0 };
-      if (width > 0 && height > 0) {
-        drawGuide(context, letter, width, height);
-      }
+    const container = containerRef.current;
+    if (canvas && context && container) {
+      const { width, height } = container.getBoundingClientRect();
+      drawGuide(context, letter, width, height);
     }
   };
 
@@ -112,7 +135,7 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
     if (!context) return;
     
     const { offsetX, offsetY } = getCoords(e);
-    context.globalAlpha = tool === 'pen' ? 1.0 : 0.3;
+    context.globalAlpha = tool === 'pen' ? 1.0 : 0.4;
     context.strokeStyle = tool === 'highlighter' ? '#FBBF24' : color;
     context.lineWidth = size;
     context.lineCap = 'round';
@@ -142,7 +165,7 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
 
   return (
     <div className="w-full max-w-md mx-auto flex flex-col gap-4">
-      <Card ref={containerRef} className="w-full aspect-square p-0 overflow-hidden relative border-2 bg-muted/20">
+      <Card ref={containerRef} className="w-full aspect-square p-0 overflow-hidden relative border-2 bg-muted/20 shadow-inner">
         <canvas
           ref={canvasRef}
           className="w-full h-full cursor-crosshair touch-none absolute inset-0"
@@ -167,31 +190,33 @@ export function WritingPractice({ letter }: WritingPracticeProps) {
               <Highlighter className="h-5 w-5" />
             </ToggleGroupItem>
           </ToggleGroup>
-          <div className="flex-1 flex items-center gap-2 px-2">
-            <div className="w-2 h-6 rounded-full shrink-0" style={{ backgroundColor: tool === 'pen' ? color : '#FBBF24', opacity: tool === 'pen' ? 1 : 0.3 }}/>
+          
+          <div className="flex-1 flex items-center gap-3 px-2">
             <Slider
                 value={[size]}
                 onValueChange={(v) => setSize(v[0])}
-                min={2}
+                min={4}
                 max={40}
                 step={2}
+                className="w-full"
               />
           </div>
-          <Button variant="ghost" size="icon" onClick={clearCanvas} className="h-9 w-9 hover:bg-destructive/10 hover:text-destructive">
-            <Eraser className="h-5 w-5" />
+
+          <Button variant="ghost" size="icon" onClick={clearCanvas} className="h-9 w-9 hover:bg-destructive/10 hover:text-destructive transition-colors">
+            <RotateCcw className="h-5 w-5" />
           </Button>
         </div>
         
-        <div className="flex items-center justify-center gap-2 p-2 rounded-xl bg-card border shadow-lg">
+        <div className="flex items-center justify-center gap-2.5 p-3 rounded-xl bg-card border shadow-lg overflow-x-auto no-scrollbar">
           {COLORS.map((c) => (
             <button
               key={c}
               onClick={() => setColor(c)}
               disabled={tool === 'highlighter'}
               className={cn(
-                "h-7 w-7 rounded-full border-2 transition-transform hover:scale-110 active:scale-95",
-                color === c && tool === 'pen' ? "border-primary scale-110" : "border-transparent",
-                tool === 'highlighter' && 'opacity-30 cursor-not-allowed'
+                "h-8 w-8 rounded-full border-2 transition-all hover:scale-110 active:scale-95 shrink-0",
+                color === c && tool === 'pen' ? "border-primary ring-2 ring-primary/20 scale-110" : "border-background/10",
+                tool === 'highlighter' && 'opacity-30 cursor-not-allowed grayscale'
               )}
               style={{ backgroundColor: c }}
               aria-label={`Select color ${c}`}
