@@ -8,6 +8,9 @@ import { notFound } from 'next/navigation';
 
 const pairConfig: Record<string, { native: string; target: string; folder: string }> = {
   'romanian-from-sinhala': { native: 'Sinhala', target: 'Romanian', folder: 'sinhala_romanian' },
+  'german-from-sinhala': { native: 'Sinhala', target: 'German', folder: 'sinhala_german' },
+  'french-from-sinhala': { native: 'Sinhala', target: 'French', folder: 'sinhala_french' },
+  'italian-from-sinhala': { native: 'Sinhala', target: 'Italian', folder: 'sinhala_italian' },
 };
 
 function getLessonData(folder: string) {

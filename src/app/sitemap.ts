@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://lingoforge.app'
-  const learnPairs = ['romanian-from-sinhala']
+  const learnPairs = ['romanian-from-sinhala', 'german-from-sinhala', 'french-from-sinhala', 'italian-from-sinhala']
   
   const blogSlugs = [
     'romanian-for-sri-lankan-workers',
