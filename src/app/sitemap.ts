@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://lingoforge.app'
+  const learnPairs = ['romanian-from-sinhala']
   
   const blogSlugs = [
     'romanian-for-sri-lankan-workers',
@@ -35,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    })),
+    ...learnPairs.map(pair => ({
+      url: `${baseUrl}/learn/${pair}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
     })),
   ]
 }
