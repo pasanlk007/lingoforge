@@ -190,6 +190,7 @@ function LessonMapPage() {
     return <LoadingSkeleton />;
   }
 
+  console.log("DEBUG targetLanguage:", JSON.stringify(targetLanguage));
   const proConfig = PRO_LANGUAGE_MAP[targetLanguage];
 
   // Not a Pro language
