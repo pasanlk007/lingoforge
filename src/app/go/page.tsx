@@ -97,7 +97,7 @@ export default function GoPage() {
   }, []);
 
   const handleStart = () => {
-    const url = 'https://lingoforge.app/login';
+    const url = 'https://lingoforge.app/signup';
     if (device === 'ios') {
       window.location.href = url;
     } else if (device === 'android') {
