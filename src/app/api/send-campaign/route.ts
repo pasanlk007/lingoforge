@@ -32,7 +32,11 @@ export async function POST(req: NextRequest) {
       const name = profile.displayName || 'there';
 
       if (!email || email === 'test@example.com') {
-        results.push({ email: 'unknown', status: 'skipped-no-email' });
+        results.push({ email: email || 'unknown', status: 'skipped-no-email' });
+        continue;
+      }
+      if (profile.emailOptOut) {
+        results.push({ email, status: 'unsubscribed' });
         continue;
       }
 
@@ -53,7 +57,7 @@ export async function POST(req: NextRequest) {
           from: 'LingoForge <support@lingoforge.app>',
           to: email,
           subject: getCampaignSubject(campaignId, language),
-          html: getCampaignTemplate(campaignId, language, name),
+          html: getCampaignTemplate(campaignId, language, name, email),
         });
 
         await sentLogRef.set({
@@ -88,7 +92,8 @@ function getCampaignSubject(campaignId: string, language: string): string {
   return subjects[campaignId] || 'Update from LingoForge';
 }
 
-function getCampaignTemplate(campaignId: string, language: string, name: string): string {
+function getCampaignTemplate(campaignId: string, language: string, name: string, email: string): string {
+  const unsubUrl = `https://lingoforge.app/api/unsubscribe?email=${encodeURIComponent(email)}`;
   if (campaignId === 'pro-launch-2026-05') {
     return `
       <div style="font-family: -apple-system, sans-serif; max-width: 600px; margin: 0 auto; background: #0f1923; color: #e2e8f0; padding: 32px; border-radius: 12px;">
@@ -107,7 +112,7 @@ function getCampaignTemplate(campaignId: string, language: string, name: string)
         </a>
         <p style="font-size: 13px; color: #94a3b8; margin-top: 32px;">
           You're receiving this because you have a LingoForge account.
-          <a href="https://lingoforge.app/unsubscribe" style="color: #94a3b8;">Unsubscribe</a>
+          <a href="${unsubUrl}" style="color: #94a3b8;">Unsubscribe</a>
         </p>
       </div>
     `;

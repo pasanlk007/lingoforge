@@ -134,6 +134,7 @@ export interface UserProfile {
   email: string;
   nativeLanguage: string;
   selectedLanguage: string;
+  emailOptOut?: boolean;
   createdAt: string; // ISO date string
   subscriptionActive: boolean;
   unlockedWeeks?: Record<string, Record<string, number[]>>;
