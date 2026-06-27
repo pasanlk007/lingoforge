@@ -37,7 +37,7 @@ export function AudioPlayback({ text, languageName }: Props) {
           <Button
             variant="outline"
             size="icon"
-            onClick={() => handlePlay(0.7)}
+            onClick={() => handlePlay(0.6)}
             aria-label="Play slow"
           >
             <TortoiseIcon />
