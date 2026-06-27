@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
       const email = profile.email;
       const name = profile.displayName || 'there';
 
-      if (!email) {
+      if (!email || email === 'test@example.com') {
         results.push({ email: 'unknown', status: 'skipped-no-email' });
         continue;
       }
