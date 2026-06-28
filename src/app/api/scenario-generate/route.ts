@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
 
+// Allow up to 60s for this route — generating a full multi-day JSON plan
+// with Claude Sonnet can take longer than the platform's 10s default.
+export const maxDuration = 60;
+
 // Isolated from /api/pro-lesson. Writes only to the new `scenarioSessions`
 // collection. Does not read or write userProfiles, userProgress, or proLessons.
 

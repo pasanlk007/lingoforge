@@ -2,6 +2,7 @@
 
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { doc } from 'firebase/firestore';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -35,6 +36,17 @@ export default function ScenarioSessionPage() {
 
   const { data: session, isLoading } = useDoc<ScenarioSession>(sessionRef as any);
 
+  const [timedOut, setTimedOut] = useState(false);
+
+  useEffect(() => {
+    if (session?.status !== 'generating') {
+      setTimedOut(false);
+      return;
+    }
+    const timer = setTimeout(() => setTimedOut(true), 75000);
+    return () => clearTimeout(timer);
+  }, [session?.status, sessionId]);
+
   if (isLoading || !session) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
@@ -50,12 +62,28 @@ export default function ScenarioSessionPage() {
     );
   }
 
-  // plan may arrive as a JSON string from the Firestore REST write
   const plan = typeof (session as any).plan === 'string'
     ? JSON.parse((session as any).plan)
     : (session as any).plan;
 
   if (session.status === 'generating' || !plan) {
+    if (timedOut) {
+      return (
+        <div className="flex min-h-dvh flex-col bg-background">
+          <Navigation />
+          <main className="flex-1">
+            <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
+              <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
+              <h2 className="text-xl font-semibold">මේක සාමාන්‍යයෙන් වඩා ගතවෙනවා</h2>
+              <p className="text-muted-foreground mt-2">Server එකේ delay එකක් වෙන්න පුළුවන්. ආයෙත් try කරන්න.</p>
+              <Button className="mt-4" onClick={() => router.push('/scenario')}>
+                ආයෙත් try කරන්න
+              </Button>
+            </div>
+          </main>
+        </div>
+      );
+    }
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
