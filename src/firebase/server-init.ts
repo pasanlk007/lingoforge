@@ -26,64 +26,60 @@ try {
   serviceAccountInfo = null;
 }
 
-let adminApp: App;
+let adminApp: App | null = null;
+let adminAuth: ReturnType<typeof getAuth> | null = null;
+let adminFirestore: ReturnType<typeof getFirestore> | null = null;
 
-// This logic ensures that we don't try to initialize the app more than once.
-if (!getApps().length) {
-  let serviceAccount: ServiceAccount | undefined;
-  const projectId = 'studio-3754329818-ee8cf';
+function ensureInitialized() {
+  if (adminApp) return;
 
-  // In a deployed environment (like App Hosting), the service account key
-  // should be provided as an environment variable linked to a secret.
-  if (process.env.FIREBASE_PROJECT_ID && process.env.FIREBASE_CLIENT_EMAIL && process.env.FIREBASE_PRIVATE_KEY) {
-    serviceAccount = {
-      projectId: process.env.FIREBASE_PROJECT_ID,
-      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-    } as ServiceAccount;
-  } else if (process.env.FIREBASE_ADMIN_SDK_KEY) {
-    try {
-      serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_SDK_KEY);
-    } catch (e) {
-      console.error('Failed to parse FIREBASE_ADMIN_SDK_KEY from environment variables.', e);
-      throw new Error('Could not parse service account key from environment variable. Ensure it is valid JSON.');
+  if (!getApps().length) {
+    let serviceAccount: ServiceAccount | undefined;
+    const projectId = 'studio-3754329818-ee8cf';
+
+    if (process.env.FIREBASE_PROJECT_ID && process.env.FIREBASE_CLIENT_EMAIL && process.env.FIREBASE_PRIVATE_KEY) {
+      serviceAccount = {
+        projectId: process.env.FIREBASE_PROJECT_ID,
+        clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+        privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      } as ServiceAccount;
+    } else if (process.env.FIREBASE_ADMIN_SDK_KEY) {
+      try {
+        serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_SDK_KEY);
+      } catch (e) {
+        console.error('Failed to parse FIREBASE_ADMIN_SDK_KEY from environment variables.', e);
+        throw new Error('Could not parse service account key from environment variable. Ensure it is valid JSON.');
+      }
+    } else if (serviceAccountInfo) {
+      console.warn("Auth: Using local service account file. This is for local development only.");
+      serviceAccount = serviceAccountInfo as ServiceAccount;
     }
-  } else if (serviceAccountInfo) {
-    // For local development, use the loaded JSON file content.
-    console.warn("Auth: Using local service account file. This is for local development only.");
-    serviceAccount = serviceAccountInfo as ServiceAccount;
+
+    if (!serviceAccount) {
+      throw new Error(
+        'Firebase Admin SDK Service Account is not available at runtime. ' +
+        'Ensure FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, and FIREBASE_PRIVATE_KEY (or FIREBASE_ADMIN_SDK_KEY) ' +
+        'are set in your environment variables.'
+      );
+    }
+
+    adminApp = initializeApp({
+      credential: cert(serviceAccount),
+      projectId: projectId,
+    });
+  } else {
+    adminApp = getApps()[0];
   }
 
-  // If no credentials could be found, throw a clear error.
-  if (!serviceAccount) {
-    console.warn("Firebase Admin SDK not available - running in build mode");
-    // Return dummy during build
-    serviceAccount = { project_id: "studio-3754329818-ee8cf" } as any;
-  }
-  if (false && !serviceAccount) {
-    throw new Error(
-      'Firebase Admin SDK Service Account is not available. ' +
-      'Ensure the FIREBASE_ADMIN_SDK_KEY secret is created in Google Secret Manager and referenced in apphosting.yaml for production. ' +
-      'For local development, ensure the service account JSON file exists.'
-    );
-  }
-  
-  adminApp = initializeApp({
-    credential: cert(serviceAccount!),
-    projectId: projectId, // Explicitly set the project ID
-  });
-
-} else {
-  adminApp = getApps()[0];
+  adminAuth = getAuth(adminApp);
+  adminFirestore = getFirestore(adminApp);
 }
 
-const adminAuth = getAuth(adminApp);
-const adminFirestore = getFirestore(adminApp);
-
 export function initializeFirebase() {
+  ensureInitialized();
   return {
-    firebaseApp: adminApp,
-    auth: adminAuth,
-    firestore: adminFirestore,
+    firebaseApp: adminApp!,
+    auth: adminAuth!,
+    firestore: adminFirestore!,
   };
 }
