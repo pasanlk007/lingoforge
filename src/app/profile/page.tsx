@@ -193,6 +193,41 @@ function ProfileContent({ user }: { user: User }) {
           
         </div>
 
+        {/* Scenario Mode subscription (isolated section, separate from the
+            one-time Survival/Pro plan shown above) */}
+        <div className="px-4 pb-6">
+          <Card className="border-2 border-blue-500/30 bg-gradient-to-br from-blue-950/10 to-card">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-base flex items-center gap-2">
+                🎯 Scenario Mode Subscription
+              </CardTitle>
+              <CardDescription>
+                {userProfile?.scenarioSubscriptionActive
+                  ? 'ඔබේ Scenario Mode subscription එක active.'
+                  : 'ඔබට තාම active Scenario Mode subscription එකක් නෑ.'}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3 text-sm">
+              {userProfile?.scenarioSubscriptionActive && userProfile?.scenarioSubscriptionExpiry && (
+                <p className="text-muted-foreground">
+                  ඊළඟ renewal/expiry: <span className="font-semibold text-foreground">{new Date(userProfile.scenarioSubscriptionExpiry).toLocaleDateString()}</span>
+                </p>
+              )}
+              <div className="rounded-lg bg-muted p-3 space-y-1 text-xs text-muted-foreground">
+                <p className="font-semibold text-foreground">Subscription එක cancel කරන්නේ කොහොමද?</p>
+                <p>1. ඔබ subscribe උනාම LemonSqueezy එකෙන් එවුන receipt email එක check කරන්න — ඒකේ "Manage your subscription" link එකක් තියෙනවා.</p>
+                <p>2. නැත්නම් <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">app.lemonsqueezy.com/my-orders</a> එකට ගිහින් ඔබ checkout එකේ දුන්න email එකෙන් login වෙන්න.</p>
+                <p>3. එතනින් subscription එක ඕන වෙලාවක cancel කරන්න පුළුවන් — ඊළඟ billing cycle එකේ සිට charge වෙන්නේ නෑ.</p>
+              </div>
+              {!userProfile?.scenarioSubscriptionActive && (
+                <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
+                  <a href="/pricing">Subscribe කරන්න</a>
+                </Button>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Install App Section */}
         <div className="px-4 pb-6">
           <Card className="border-primary/20 bg-primary/5">

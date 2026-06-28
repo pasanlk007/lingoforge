@@ -281,7 +281,7 @@ export default function LandingPage() {
               <h2 className="text-3xl font-bold text-white">Start Your Learning Journey</h2>
               <p className="text-slate-400 mt-2">Choose your path and start speaking today</p>
             </div>
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
               <Link href="/signup" className="group bg-gradient-to-br from-green-900/40 to-slate-800 border border-green-500/40 hover:border-green-400 rounded-2xl p-5 text-center space-y-3 transition-all hover:scale-105">
                 <div className="text-4xl">🌱</div>
                 <p className="font-bold text-white">Survival Path</p>
@@ -306,6 +306,13 @@ export default function LandingPage() {
                 <p className="font-bold text-white">Pro Path</p>
                 <p className="text-xs text-slate-400">Citizenship & legal AI lessons</p>
                 <span className="text-xs text-purple-400 font-semibold">Explore →</span>
+              </Link>
+              <Link href="/signup" className="group bg-gradient-to-br from-sky-900/40 to-slate-800 border border-sky-500/40 hover:border-sky-400 rounded-2xl p-5 text-center space-y-3 transition-all hover:scale-105 relative">
+                <div className="absolute -top-2 -right-2 bg-sky-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">NEW</div>
+                <div className="text-4xl">🎯</div>
+                <p className="font-bold text-white">Scenario Mode</p>
+                <p className="text-xs text-slate-400">Build your own custom lesson plan, for your exact situation</p>
+                <span className="text-xs text-sky-400 font-semibold">Try It →</span>
               </Link>
             </div>
             <div className="mt-8 text-center">

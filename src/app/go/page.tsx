@@ -9,6 +9,7 @@ const content = {
     langs: '🌍 රෝමේනියා 🇷�� | ජර්මනිය 🇩🇪 | ප්‍රංශය 🇫🇷 | ඉතාලිය 🇮🇹 | හීබෘ 🇮🇱 | ජපන් 🇯🇵 | කොරියන් 🇰🇷 ඇතුලු භාෂා 20+',
     free: '✨ දවසකට මිනිත්තු 10ක් • පළමු සතිය නොමිලේ',
     ready: 'හෝඩියෙ සිට භාෂාවක් ඉගනීමට සූදානම්ද? 👇',
+    scenario: '🎯 NEW: ඔබේම situation එකට ගැලපෙන custom lesson plan එකක් AI එකෙන් හදන්න — Scenario Mode',
     cta: '🚀 විදේශ රැකියාව, daily life එකට 👇',
     trial: 'පළමු දින 3 නොමිලේ උත්සාහ කරන්න 🚀',
     sub: 'ඔබට ගැලපේ නම් පසුව තීරණය කරන්න • No entry fees',
@@ -22,6 +23,7 @@ const content = {
     langs: '🌍 Romania 🇷🇴 | Germany 🇩🇪 | France 🇫🇷 | Italy 🇮🇹 | Hebrew 🇮🇱 | Japanese 🇯🇵 | Korean 🇰🇷 और 20+ भाषाएं',
     free: '✨ रोज 10 मिनट • पहला हफ्ता मुफ्त',
     ready: 'क्या आप एक नई भाषा सीखने के लिए तैयार हैं? 👇',
+    scenario: '🎯 नया: अपनी situation के लिए AI से custom lesson plan बनाएं — Scenario Mode',
     cta: '🚀 विदेश में काम और daily life के लिए 👇',
     trial: 'पहले 3 दिन मुफ्त आज़माएं 🚀',
     sub: 'पसंद आए तो बाद में decide करें • No entry fees',
@@ -35,6 +37,7 @@ const content = {
     langs: '🌍 Romania 🇷🇴 | Germany 🇩🇪 | France 🇫🇷 | Italy 🇮🇹 | Hebrew 🇮🇱 | Japanese 🇯🇵 | Korean 🇰🇷 ও ২০+ ভাষা',
     free: '✨ প্রতিদিন ১০ মিনিট • প্রথম সপ্তাহ বিনামূল্যে',
     ready: 'একটি নতুন ভাষা শিখতে প্রস্তুত? 👇',
+    scenario: '🎯 নতুন: আপনার situation-এর জন্য AI দিয়ে custom lesson plan তৈরি করুন — Scenario Mode',
     cta: '🚀 বিদেশে কাজ ও daily life-এর জন্য 👇',
     trial: 'প্রথম ৩ দিন বিনামূল্যে চেষ্টা করুন 🚀',
     sub: 'পছন্দ হলে পরে সিদ্ধান্ত নিন • No entry fees',
@@ -48,6 +51,7 @@ const content = {
     langs: '🌍 Romania 🇷🇴 | Germany 🇩🇪 | France 🇫🇷 | Italy 🇮🇹 | Hebrew 🇮🇱 | Japanese 🇯🇵 | Korean 🇰🇷 اور 20+ زبانیں',
     free: '✨ روزانہ 10 منٹ • پہلا ہفتہ مفت',
     ready: 'کیا آپ ایک نئی زبان سیکھنے کے لیے تیار ہیں؟ 👇',
+    scenario: '🎯 نیا: اپنی صورتحال کے لیے AI سے custom lesson plan بنائیں — Scenario Mode',
     cta: '🚀 بیرون ملک کام اور daily life کے لیے 👇',
     trial: 'پہلے 3 دن مفت آزمائیں 🚀',
     sub: 'پسند آئے تو بعد میں فیصلہ کریں • No entry fees',
@@ -61,6 +65,7 @@ const content = {
     langs: '�� Romania 🇷🇴 | Germany 🇩🇪 | France 🇫🇷 | Italy 🇮🇹 | Hebrew 🇮🇱 | Japanese 🇯🇵 | Korean 🇰🇷 र 20+ भाषाहरू',
     free: '✨ दैनिक 10 मिनेट • पहिलो हप्ता नि:शुल्क',
     ready: 'नयाँ भाषा सिक्न तयार हुनुहुन्छ? 👇',
+    scenario: '🎯 नयाँ: तपाईंको situation का लागि AI ले custom lesson plan बनाउनुहोस् — Scenario Mode',
     cta: '🚀 विदेशमा काम र daily life का लागि 👇',
     trial: 'पहिलो 3 दिन नि:शुल्क प्रयास गर्नुस् 🚀',
     sub: 'मन परे पछि निर्णय गर्नुस् • No entry fees',
@@ -74,6 +79,7 @@ const content = {
     langs: '🌍 Romania 🇷🇴 | Germany 🇩🇪 | France 🇫🇷 | Italy 🇮🇹 | Hebrew 🇮🇱 | Japanese 🇯🇵 | Korean 🇰🇷 & 20+ languages',
     free: '✨ 10 minutes daily • First week FREE',
     ready: 'Ready to learn a new language? 👇',
+    scenario: '🎯 NEW: Build your own custom lesson plan for your exact situation with AI — Scenario Mode',
     cta: '🚀 For work abroad & daily life 👇',
     trial: 'Try FREE for first 3 days 🚀',
     sub: 'Decide later if you like it • No entry fees',
@@ -143,6 +149,7 @@ export default function GoPage() {
           <p style={{margin:'0 0 12px', lineHeight:'1.6', fontSize:'14px', color:'#cbd5e1', fontWeight:'600'}}>{t.tagline}</p>
           <p style={{margin:'0 0 12px', fontSize:'12px', color:'#64748b', lineHeight:'1.6'}}>{t.langs}</p>
           <p style={{margin:'0 0 12px', fontSize:'13px', color:'#06b6d4', fontWeight:'600'}}>{t.free}</p>
+          <p style={{margin:'0 0 12px', fontSize:'13px', color:'#38bdf8', fontWeight:'600', background:'rgba(56,189,248,0.08)', borderRadius:'8px', padding:'8px 10px'}}>{t.scenario}</p>
           <p style={{margin:'0', fontSize:'14px', color:'#94a3b8'}}>{t.ready}</p>
         </div>
 
