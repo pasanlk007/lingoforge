@@ -19,10 +19,7 @@ import { useToast } from '@/hooks/use-toast';
 const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
 const LIFETIME_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
 const COURSE_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
-// TODO(Pasan): Replace with the real LemonSqueezy recurring "Scenario Mode Monthly" product checkout link
-// once created. Must be a SUBSCRIPTION variant (not one-time), product name must contain "Scenario"
-// (the webhook matches on product_name.toLowerCase().includes('scenario')).
-const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/REPLACE_WITH_SCENARIO_VARIANT_ID';
+const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/6119eaa4-e974-4681-8586-015dbb52740b';
 
 const SKUS = {
   weekly: 'lingoforge_weekly_sub',
