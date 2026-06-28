@@ -197,3 +197,60 @@ export interface Language {
   name: TargetLanguage;
   flag: string;
 }
+
+
+// === Scenario Mode (isolated feature, does not touch survival/pro) ===
+
+export interface ScenarioDailyTopic {
+  day: number; // 1-indexed
+  topic_title: string;
+  topic_title_native: string;
+  situation_context: string; // e.g. "Ordering at the start of your shift"
+  target_vocab: ScenarioVocabItem[];
+  sample_dialogue: Dialogue[];
+  conversation_prompts: string[]; // open prompts the AI voice partner will use to start the conversation
+}
+
+export interface ScenarioVocabItem {
+  id: string;
+  target: string;
+  phonetic: string;
+  native_meaning: string;
+  english: string;
+}
+
+// The full AI-generated plan for one user scenario, stored once per scenario session.
+export interface ScenarioPlan {
+  scenario_title: string;
+  scenario_title_native: string;
+  scenario_summary: string; // short restatement of the user's situation
+  targetLanguage: string;
+  nativeLanguage: string;
+  total_days: number; // e.g. 7 or 14
+  daily_topics: ScenarioDailyTopic[];
+}
+
+// Firestore document shape: scenarioSessions/{userId}/{sessionId}
+export interface ScenarioSession {
+  id: string;
+  userId: string;
+  userInputRaw: string; // the original free-text situation description from the user
+  targetLanguage: string;
+  nativeLanguage: string;
+  plan: ScenarioPlan | null; // null while generation is pending
+  status: 'generating' | 'active' | 'completed' | 'error';
+  currentDay: number; // 1-indexed, which day the user is on
+  completedDays: number[];
+  createdAt: any; // Firestore Timestamp
+  updatedAt: any; // Firestore Timestamp
+}
+
+// Per-day voice conversation attempt log, stored under the session for pronunciation tracking.
+export interface ScenarioConversationTurn {
+  id: string;
+  day: number;
+  expectedTarget: string; // the phrase the user was meant to say
+  transcribedText: string; // what Whisper transcribed
+  matchScore: number; // 0-100 fuzzy intelligibility proxy score, NOT a claim of true pronunciation accuracy
+  createdAt: any; // Firestore Timestamp
+}

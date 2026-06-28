@@ -38,5 +38,21 @@ service cloud.firestore {
     match /userProgress/{userId}/{path}/{weekId} {
       allow read, write: if isOwner(userId);
     }
+
+    // SCENARIO MODE (isolated feature): users can only read/write their own
+    // scenario sessions. The userId field inside the document must match the
+    // requester for create/update. This does not affect any existing path.
+    match /scenarioSessions/{sessionId} {
+      allow read: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow delete: if false;
+
+      // Per-day voice conversation turn logs, owned by the same user as the parent session.
+      match /turns/{turnId} {
+        allow read, create: if isSignedIn() && get(/databases/$(database)/documents/scenarioSessions/$(sessionId)).data.userId == request.auth.uid;
+        allow update, delete: if false;
+      }
+    }
   }
 }

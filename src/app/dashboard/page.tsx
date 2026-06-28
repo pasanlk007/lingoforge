@@ -338,6 +338,39 @@ function DashboardContent({ user }: { user: User }) {
                 </CardFooter>
               </Card>
 
+              <Card className="flex flex-col border-2 border-blue-500/40 bg-gradient-to-br from-blue-950/20 to-card">
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">🎯</span>
+                      <div>
+                        <CardTitle className="text-xl">Scenario Mode</CardTitle>
+                        <CardDescription>ඔබේ real-life situation එකට ගැලපෙන AI conversation plan එකක්</CardDescription>
+                      </div>
+                    </div>
+                    <Badge variant="outline" className="border-blue-400/50 bg-blue-900/30 text-blue-300 whitespace-nowrap">
+                      Beta
+                    </Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
+                    <Target className="h-8 w-8 text-blue-400" />
+                    <div>
+                      <p className="font-semibold text-sm">" Italy waiter job" / "embassy interview" වගේ ඔබේම situation එක</p>
+                      <p className="text-xs text-muted-foreground mt-1">Daily AI voice conversation, ඔබේ situation එකටම ගැලපෙන</p>
+                    </div>
+                  </div>
+                </CardContent>
+                <CardFooter className="p-4 pt-2">
+                  <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Link href="/scenario">
+                      🎯 My Scenario Plan එක හදන්න <ChevronRight className="ml-1 h-3 w-3" />
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+
               <Card className="flex flex-col border-2 border-purple-500/30 bg-gradient-to-br from-purple-950/20 to-card p-6">
                 <CardHeader className="p-0">
                   <Badge variant="outline" className="w-fit border-purple-400/50 bg-purple-900/30 text-purple-300 mb-4 flex items-center gap-2">
