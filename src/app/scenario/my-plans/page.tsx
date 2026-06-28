@@ -17,15 +17,18 @@ import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useFirestore, useUser, useCollection, useMemoFirebase } from '@/firebase';
 import type { ScenarioSession } from '@/lib/types';
+import { useScenarioT } from '@/hooks/useScenarioT';
 import { ChevronRight, Plus, Sparkles, CheckCircle2, Loader2 } from 'lucide-react';
 
 // Isolated page. Lists the signed-in user's own scenarioSessions documents
 // so previously generated plans can be reopened — fixes the issue where a
 // generated plan had no way to be found again after navigating away.
+// UI text follows the user's own nativeLanguage via useScenarioT.
 
 export default function MyScenarioPlansPage() {
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
+  const { t } = useScenarioT();
 
   const sessionsQuery = useMemoFirebase(
     () =>
@@ -71,13 +74,13 @@ export default function MyScenarioPlansPage() {
             <div>
               <h1 className="text-2xl font-bold flex items-center gap-2">
                 <Sparkles className="h-6 w-6 text-blue-400" />
-                My Scenario Plans
+                {t.myPlansTitle}
               </h1>
-              <p className="text-muted-foreground mt-1">ඔබ හදපු සියලුම plans</p>
+              <p className="text-muted-foreground mt-1">{t.myPlansSubtitle}</p>
             </div>
             <Button asChild size="sm">
               <Link href="/scenario">
-                <Plus className="mr-1 h-4 w-4" /> අලුත් එකක්
+                <Plus className="mr-1 h-4 w-4" /> {t.newPlanButton}
               </Link>
             </Button>
           </div>
@@ -85,9 +88,9 @@ export default function MyScenarioPlansPage() {
           {(!sessions || sessions.length === 0) ? (
             <Card>
               <CardContent className="py-10 text-center space-y-4">
-                <p className="text-muted-foreground">ඔබ තාම plan එකක් හදලා නෑ.</p>
+                <p className="text-muted-foreground">{t.myPlansEmpty}</p>
                 <Button asChild className="bg-blue-600 hover:bg-blue-700">
-                  <Link href="/scenario">My Plan එක Generate කරන්න</Link>
+                  <Link href="/scenario">{t.generateButton}</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -112,13 +115,13 @@ export default function MyScenarioPlansPage() {
                         <Badge variant="outline">{s.targetLanguage}</Badge>
                       </div>
                       <CardDescription>
-                        {isError ? 'Generate කරන්න බැරි උනා' : isGenerating ? 'Plan එක හදනවා...' : `Day ${s.currentDay || 1} / ${plan?.total_days || '-'}`}
+                        {isError ? t.errorStatus : isGenerating ? t.generatingStatus : `${t.dayPlanLabel} ${s.currentDay || 1} / ${plan?.total_days || '-'}`}
                       </CardDescription>
                     </CardHeader>
                     <CardFooter>
                       <Button asChild variant="outline" size="sm" disabled={isError}>
                         <Link href={`/scenario/${s.id}`}>
-                          {isCompleted ? 'Review' : 'Continue'} <ChevronRight className="ml-1 h-3 w-3" />
+                          {isCompleted ? t.reviewButton : t.continueButton} <ChevronRight className="ml-1 h-3 w-3" />
                         </Link>
                       </Button>
                     </CardFooter>

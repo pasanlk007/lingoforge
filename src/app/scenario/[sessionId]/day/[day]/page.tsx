@@ -19,6 +19,8 @@ import { collection } from 'firebase/firestore';
 import type { ScenarioSession, ScenarioDayContent } from '@/lib/types';
 import { computeMatchScore } from '@/lib/scenarioMatchScore';
 import { playAudio } from '@/lib/audioPlayer';
+import { useScenarioT } from '@/hooks/useScenarioT';
+import { format } from '@/lib/utils';
 import { Mic, Square, Volume2, ChevronRight, Loader2, CheckCircle2, AlertTriangle, Lock } from 'lucide-react';
 import Link from 'next/link';
 
@@ -27,6 +29,7 @@ import Link from 'next/link';
 //
 // Day content (vocab/dialogue/prompts) is generated on-demand the first time
 // a user opens a day, then cached in scenarioSessions/{sessionId}/days/{day}.
+// UI text follows the user's own nativeLanguage via useScenarioT.
 
 export default function ScenarioDayPage() {
   const params = useParams();
@@ -35,6 +38,7 @@ export default function ScenarioDayPage() {
   const dayNum = parseInt(params.day as string, 10);
   const firestore = useFirestore();
   const { user } = useUser();
+  const { t } = useScenarioT();
 
   const sessionRef = useMemoFirebase(
     () => (firestore && sessionId ? doc(firestore, 'scenarioSessions', sessionId) : null),
@@ -133,12 +137,10 @@ export default function ScenarioDayPage() {
         <main className="flex-1">
           <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
             <Lock className="h-10 w-10 mx-auto mb-4 text-blue-400" />
-            <h2 className="text-xl font-semibold">මේ day එක unlock කරන්න subscription එකක් ඕන</h2>
-            <p className="text-muted-foreground mt-2">
-              ඔබේ plan එක create උනා, නමුත් daily content generate කරන්න Scenario Mode subscription එක active කරගන්න ඕන.
-            </p>
+            <h2 className="text-xl font-semibold">{t.subscriptionRequiredTitle}</h2>
+            <p className="text-muted-foreground mt-2">{t.subscriptionRequiredDescription}</p>
             <Button asChild className="mt-4 bg-blue-600 hover:bg-blue-700">
-              <Link href="/pricing">Subscribe කරන්න — $13/month</Link>
+              <Link href="/pricing">{t.subscribeButton}</Link>
             </Button>
           </div>
         </main>
@@ -153,9 +155,9 @@ export default function ScenarioDayPage() {
         <main className="flex-1">
           <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
             <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
-            <h2 className="text-xl font-semibold">Day {dayNum} content එක load කරන්න බැරි උනා</h2>
+            <h2 className="text-xl font-semibold">{format(t.dayLoadFailedTitle, { day: dayNum })}</h2>
             <Button className="mt-4" onClick={() => window.location.reload()}>
-              ආයෙත් try කරන්න
+              {t.tryAgainButton}
             </Button>
           </div>
         </main>
@@ -170,8 +172,8 @@ export default function ScenarioDayPage() {
         <main className="flex-1">
           <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
             <Loader2 className="h-10 w-10 animate-spin mx-auto mb-4 text-primary" />
-            <h2 className="text-xl font-semibold">Day {dayNum} content එක හදනවා...</h2>
-            <p className="text-muted-foreground mt-2">මේක seconds කීපයක් ගතවෙයි.</p>
+            <h2 className="text-xl font-semibold">{format(t.buildingDayTitle, { day: dayNum })}</h2>
+            <p className="text-muted-foreground mt-2">{t.buildingDaySubtitle}</p>
           </div>
         </main>
       </div>
@@ -199,7 +201,7 @@ export default function ScenarioDayPage() {
       setIsRecording(true);
     } catch (e) {
       console.error('Mic access failed:', e);
-      alert('Microphone access ලබාගන්න බැරි උනා. Browser permissions check කරන්න.');
+      alert(t.micPermissionError);
     }
   }
 
@@ -239,7 +241,7 @@ export default function ScenarioDayPage() {
       console.error('Transcription failed:', e);
       setLastTranscript(null);
       setLastScore(null);
-      alert('Transcription එක ලබාගන්න බැරි උනා. ආයෙත් try කරන්න.');
+      alert(t.transcribeError);
     } finally {
       setIsTranscribing(false);
     }
@@ -281,7 +283,7 @@ export default function ScenarioDayPage() {
         <div className="container mx-auto max-w-2xl py-8 px-4 pb-24 space-y-6">
           <div>
             <Badge variant="outline" className="mb-2">
-              Day {dayNum} / {plan.total_days}
+              {t.dayPlanLabel} {dayNum} / {plan.total_days}
             </Badge>
             <h1 className="text-xl font-bold">{dayOutline.topic_title_native || dayOutline.topic_title}</h1>
             <p className="text-sm text-muted-foreground mt-1">{dayOutline.situation_context}</p>
@@ -290,9 +292,7 @@ export default function ScenarioDayPage() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center justify-between text-base">
-                <span>
-                  Phrase {vocabIndex + 1} / {dayContent.target_vocab.length}
-                </span>
+                <span>{format(t.phraseCounter, { current: vocabIndex + 1, total: dayContent.target_vocab.length })}</span>
                 <Button variant="ghost" size="icon" onClick={() => playAudio(vocab.target, targetLanguage, 0.85)}>
                   <Volume2 className="h-5 w-5" />
                 </Button>
@@ -321,28 +321,26 @@ export default function ScenarioDayPage() {
                   </Button>
                 )}
                 <p className="text-xs text-muted-foreground">
-                  {isRecording ? 'කියන්න... finish උනාම stop කරන්න' : 'Record කරන්න tap කරන්න'}
+                  {isRecording ? t.recordingPrompt : t.recordPrompt}
                 </p>
               </div>
 
               {lastScore !== null && (
                 <div className="rounded-lg bg-muted p-4 text-center space-y-1">
-                  <p className="text-sm text-muted-foreground">ඔබ කිව්වේ:</p>
+                  <p className="text-sm text-muted-foreground">{t.youSaid}</p>
                   <p className="font-medium">"{lastTranscript}"</p>
                   <p className="text-sm mt-2">
-                    ~Match confidence:{' '}
+                    {t.matchConfidence}{' '}
                     <span className={`font-bold ${hasPassed ? 'text-green-500' : 'text-orange-400'}`}>
                       {lastScore}%
                     </span>
                   </p>
                   {!hasPassed && (
                     <p className="text-sm text-orange-400 font-medium">
-                      ආයෙත් try කරන්න — {MIN_PASS_SCORE}%ට වැඩි score එකක් ගන්න ඕන ඉදිරියට යන්න.
+                      {format(t.retryNeeded, { min: MIN_PASS_SCORE })}
                     </p>
                   )}
-                  <p className="text-[11px] text-muted-foreground">
-                    (මේක pronunciation accuracy නෙවෙයි — Whisper ට ඔබේ speech එක කොච්චර clear ලෙස target text එකට ලඟ ලෙස තේරුණාද කියන estimate එකක්)
-                  </p>
+                  <p className="text-[11px] text-muted-foreground">{t.matchDisclaimer}</p>
                 </div>
               )}
             </CardContent>
@@ -351,12 +349,12 @@ export default function ScenarioDayPage() {
           <div className="flex justify-end">
             {!isLastVocab ? (
               <Button onClick={nextVocab} variant="outline" disabled={!hasPassed}>
-                Next Phrase <ChevronRight className="ml-1 h-4 w-4" />
+                {t.nextPhrase} <ChevronRight className="ml-1 h-4 w-4" />
               </Button>
             ) : (
               <Button onClick={markDayComplete} className="bg-green-600 hover:bg-green-700" disabled={!hasPassed}>
                 <CheckCircle2 className="mr-2 h-4 w-4" />
-                Day {dayNum} Complete කරන්න
+                {format(t.dayComplete, { day: dayNum })}
               </Button>
             )}
           </div>

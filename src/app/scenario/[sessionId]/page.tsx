@@ -18,16 +18,20 @@ import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import type { ScenarioSession } from '@/lib/types';
+import { useScenarioT } from '@/hooks/useScenarioT';
+import { format } from '@/lib/utils';
 import { Loader2, Lock, CheckCircle2, MessageCircle, AlertTriangle, Sparkles, ChevronRight } from 'lucide-react';
 
 // Isolated page. Reads only from scenarioSessions/{sessionId}. Does not touch
 // userProgress, unlockedContent, or any survival/pro lesson state.
+// UI text follows the user's own nativeLanguage via useScenarioT.
 
 export default function ScenarioSessionPage() {
   const params = useParams();
   const router = useRouter();
   const sessionId = params.sessionId as string;
   const firestore = useFirestore();
+  const { t } = useScenarioT();
 
   const sessionRef = useMemoFirebase(
     () => (firestore && sessionId ? doc(firestore, 'scenarioSessions', sessionId) : null),
@@ -74,10 +78,10 @@ export default function ScenarioSessionPage() {
           <main className="flex-1">
             <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
               <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
-              <h2 className="text-xl font-semibold">මේක සාමාන්‍යයෙන් වඩා ගතවෙනවා</h2>
-              <p className="text-muted-foreground mt-2">Server එකේ delay එකක් වෙන්න පුළුවන්. ආයෙත් try කරන්න.</p>
+              <h2 className="text-xl font-semibold">{t.slowGenerationTitle}</h2>
+              <p className="text-muted-foreground mt-2">{t.slowGenerationSubtitle}</p>
               <Button className="mt-4" onClick={() => router.push('/scenario')}>
-                ආයෙත් try කරන්න
+                {t.tryAgainButton}
               </Button>
             </div>
           </main>
@@ -90,8 +94,8 @@ export default function ScenarioSessionPage() {
         <main className="flex-1">
           <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
             <Loader2 className="h-10 w-10 animate-spin mx-auto mb-4 text-primary" />
-            <h2 className="text-xl font-semibold">ඔබේ plan එක AI එක හදනවා...</h2>
-            <p className="text-muted-foreground mt-2">මේක seconds කීපයක් ගතවෙයි.</p>
+            <h2 className="text-xl font-semibold">{t.buildingPlanTitle}</h2>
+            <p className="text-muted-foreground mt-2">{t.buildingPlanSubtitle}</p>
           </div>
         </main>
       </div>
@@ -105,9 +109,9 @@ export default function ScenarioSessionPage() {
         <main className="flex-1">
           <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
             <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
-            <h2 className="text-xl font-semibold">Plan එක generate කරන්න බැරි උනා</h2>
+            <h2 className="text-xl font-semibold">{t.buildFailedTitle}</h2>
             <Button className="mt-4" onClick={() => router.push('/scenario')}>
-              ආයෙත් try කරන්න
+              {t.tryAgainButton}
             </Button>
           </div>
         </main>
@@ -129,10 +133,10 @@ export default function ScenarioSessionPage() {
             <p className="text-muted-foreground mt-1">{plan.scenario_summary}</p>
             <div className="flex gap-2 mt-2">
               <Badge variant="secondary">{plan.targetLanguage}</Badge>
-              <Badge variant="outline">{plan.total_days} දින Plan එක</Badge>
+              <Badge variant="outline">{plan.total_days} {t.dayPlanLabel}</Badge>
               {isCompleted && (
                 <Badge className="bg-green-600 hover:bg-green-600">
-                  <CheckCircle2 className="h-3 w-3 mr-1" /> සම්පූර්ණයි
+                  <CheckCircle2 className="h-3 w-3 mr-1" /> {t.completedBadge}
                 </Badge>
               )}
             </div>
@@ -144,10 +148,9 @@ export default function ScenarioSessionPage() {
                 <div className="flex items-center gap-3">
                   <Sparkles className="h-6 w-6 text-purple-400" />
                   <div>
-                    <CardTitle className="text-lg">ඔබේ {plan.total_days} දින plan එක සම්පූර්ණයි! 🎉</CardTitle>
+                    <CardTitle className="text-lg">{format(t.planCompleteTitle, { days: plan.total_days })}</CardTitle>
                     <CardDescription>
-                      දැන් ඔබට {plan.targetLanguage} භාෂාවේ basic confidence එකක් තියෙනවා. ඊළඟ step එක:
-                      structured, deep-dive lessons සහිත අපේ Pro Path එකට join වෙන්න.
+                      {format(t.planCompleteDescription, { language: plan.targetLanguage })}
                     </CardDescription>
                   </div>
                 </div>
@@ -155,11 +158,11 @@ export default function ScenarioSessionPage() {
               <CardFooter className="flex flex-col sm:flex-row gap-2">
                 <Button asChild className="w-full sm:w-auto bg-purple-600 hover:bg-purple-500">
                   <Link href="/dashboard/lesson-map">
-                    Pro Path එක explore කරන්න <ChevronRight className="ml-1 h-4 w-4" />
+                    {t.exploreProPath} <ChevronRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" className="w-full sm:w-auto">
-                  <Link href="/scenario">අලුත් Scenario එකක් හදන්න</Link>
+                  <Link href="/scenario">{t.newScenarioButton}</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -181,9 +184,9 @@ export default function ScenarioSessionPage() {
                       <CardTitle className="text-base flex items-center gap-2">
                         {isDone && <CheckCircle2 className="h-4 w-4 text-green-600" />}
                         {isLocked && <Lock className="h-4 w-4 text-muted-foreground" />}
-                        Day {day.day}: {day.topic_title_native || day.topic_title}
+                        {t.dayPlanLabel} {day.day}: {day.topic_title_native || day.topic_title}
                       </CardTitle>
-                      {isCurrent && <Badge>අද</Badge>}
+                      {isCurrent && <Badge>{t.todayBadge}</Badge>}
                     </div>
                     <CardDescription>{day.situation_context}</CardDescription>
                   </CardHeader>
@@ -195,7 +198,7 @@ export default function ScenarioSessionPage() {
                         onClick={() => router.push(`/scenario/${sessionId}/day/${day.day}`)}
                       >
                         <MessageCircle className="mr-2 h-4 w-4" />
-                        {isDone ? 'Review' : 'Start Conversation'}
+                        {isDone ? t.reviewButton : t.startConversation}
                       </Button>
                     </CardContent>
                   )}

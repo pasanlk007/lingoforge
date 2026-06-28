@@ -14,6 +14,7 @@ import { Navigation } from '@/components/Navigation';
 import type { User } from 'firebase/auth';
 import { deleteUser } from 'firebase/auth';
 import { deleteDocumentNonBlocking } from '@/firebase/non-blocking-updates';
+import { nativeLanguages, translations } from '@/lib/translations';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -99,6 +100,10 @@ function ProfileContent({ user }: { user: User }) {
   const subscriptionStatus = userProfile?.subscriptionActive ? "Active" : "Free Plan";
   const subscriptionSource = userProfile?.subscriptionSource !== 'none' ? userProfile?.subscriptionSource : '';
   const subscriptionExpiry = userProfile?.subscriptionExpiry ? new Date(userProfile.subscriptionExpiry).toLocaleDateString() : 'Lifetime';
+
+  let scenarioLang = userProfile?.nativeLanguage || 'English';
+  if (!nativeLanguages.includes(scenarioLang)) scenarioLang = 'English';
+  const tScenario = translations[scenarioLang as keyof typeof translations].scenario;
 
   return (
      <div className="relative min-h-dvh flex flex-col">
@@ -203,25 +208,29 @@ function ProfileContent({ user }: { user: User }) {
               </CardTitle>
               <CardDescription>
                 {userProfile?.scenarioSubscriptionActive
-                  ? 'ඔබේ Scenario Mode subscription එක active.'
-                  : 'ඔබට තාම active Scenario Mode subscription එකක් නෑ.'}
+                  ? tScenario.subscriptionStatusActive
+                  : tScenario.subscriptionStatusInactive}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3 text-sm">
               {userProfile?.scenarioSubscriptionActive && userProfile?.scenarioSubscriptionExpiry && (
                 <p className="text-muted-foreground">
-                  ඊළඟ renewal/expiry: <span className="font-semibold text-foreground">{new Date(userProfile.scenarioSubscriptionExpiry).toLocaleDateString()}</span>
+                  {tScenario.subscriptionExpiry} <span className="font-semibold text-foreground">{new Date(userProfile.scenarioSubscriptionExpiry).toLocaleDateString()}</span>
                 </p>
               )}
               <div className="rounded-lg bg-muted p-3 space-y-1 text-xs text-muted-foreground">
-                <p className="font-semibold text-foreground">Subscription එක cancel කරන්නේ කොහොමද?</p>
-                <p>1. ඔබ subscribe උනාම LemonSqueezy එකෙන් එවුන receipt email එක check කරන්න — ඒකේ "Manage your subscription" link එකක් තියෙනවා.</p>
-                <p>2. නැත්නම් <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">app.lemonsqueezy.com/my-orders</a> එකට ගිහින් ඔබ checkout එකේ දුන්න email එකෙන් login වෙන්න.</p>
-                <p>3. එතනින් subscription එක ඕන වෙලාවක cancel කරන්න පුළුවන් — ඊළඟ billing cycle එකේ සිට charge වෙන්නේ නෑ.</p>
+                <p className="font-semibold text-foreground">{tScenario.cancelHowTitle}</p>
+                <p>{tScenario.cancelStep1}</p>
+                <p>
+                  {tScenario.cancelStep2.split('app.lemonsqueezy.com/my-orders')[0]}
+                  <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">app.lemonsqueezy.com/my-orders</a>
+                  {tScenario.cancelStep2.split('app.lemonsqueezy.com/my-orders')[1]}
+                </p>
+                <p>{tScenario.cancelStep3}</p>
               </div>
               {!userProfile?.scenarioSubscriptionActive && (
                 <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
-                  <a href="/pricing">Subscribe කරන්න</a>
+                  <a href="/pricing">{tScenario.subscribeButton}</a>
                 </Button>
               )}
             </CardContent>

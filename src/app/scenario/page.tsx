@@ -1,8 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { doc } from 'firebase/firestore';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -23,25 +22,21 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Skeleton } from '@/components/ui/skeleton';
-import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { useUser } from '@/firebase';
 import { targetLanguages, nativeLanguages } from '@/lib/translations';
-import type { UserProfile } from '@/lib/types';
 import { canAccessScenarioMode } from '@/lib/scenarioAccessControl';
+import { useScenarioT } from '@/hooks/useScenarioT';
 import { Loader2, Sparkles, Lock } from 'lucide-react';
 import Link from 'next/link';
 
 // Isolated route. Does not read or affect survival/pro lesson state.
+// UI text follows the user's own nativeLanguage (via useScenarioT), same
+// pattern as the rest of the app — not a fixed/hardcoded language.
 
 export default function ScenarioIntakePage() {
   const router = useRouter();
   const { user, isUserLoading } = useUser();
-  const firestore = useFirestore();
-
-  const userProfileRef = useMemoFirebase(
-    () => (firestore && user ? doc(firestore, 'userProfiles', user.uid) : null),
-    [firestore, user]
-  );
-  const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef as any);
+  const { t, userProfile, isProfileLoading, nativeLanguage: uiNativeLanguage } = useScenarioT();
 
   const [situation, setSituation] = useState('');
   const [targetLanguage, setTargetLanguage] = useState('Italian');
@@ -49,13 +44,18 @@ export default function ScenarioIntakePage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Default the plan's native-language field to the user's own UI language once known.
+  useEffect(() => {
+    if (uiNativeLanguage) setNativeLanguage(uiNativeLanguage);
+  }, [uiNativeLanguage]);
+
   async function handleSubmit() {
     if (!situation.trim() || situation.trim().length < 10) {
-      setError('කරුණාකර ඔබේ situation එක ටිකක් විස්තර කරන්න (අවම වශයෙන් වචන කීපයක්).');
+      setError(t.errorTooShort);
       return;
     }
     if (!user) {
-      setError('කරුණාකර පළමුව login වෙන්න.');
+      setError(t.errorLoginFirst);
       return;
     }
 
@@ -88,7 +88,7 @@ export default function ScenarioIntakePage() {
       router.push(`/scenario/${sessionId}`);
     } catch (e) {
       console.error(e);
-      setError('Plan එක generate කරන්න බැරි උනා. ආයෙත් try කරන්න.');
+      setError(t.errorGenerateFailed);
       setLoading(false);
     }
   }
@@ -119,24 +119,20 @@ export default function ScenarioIntakePage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl">
                   <Lock className="h-6 w-6 text-blue-400" />
-                  Scenario Mode
+                  {t.lockedTitle}
                 </CardTitle>
-                <CardDescription>
-                  ඔබේම real-life situation එකට ගැලපෙන AI conversation plan එකක් — embassy interview, job
-                  abroad, food delivery, ඕන situation එකක්ම. මාසික subscription එකකින් ඔබට ඕන තරම් plan
-                  generate කරන්න පුළුවන්.
-                </CardDescription>
+                <CardDescription>{t.lockedDescription}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="rounded-lg bg-muted p-4 text-sm space-y-2">
-                  <p>✅ ඔබේම situation එක describe කරලා custom plan එකක් generate කරන්න</p>
-                  <p>✅ Daily AI voice conversation practice</p>
-                  <p>✅ ඕන තරම් අලුත් scenario plans හදන්න (monthly subscription)</p>
+                  <p>✅ {t.lockedFeature1}</p>
+                  <p>✅ {t.lockedFeature2}</p>
+                  <p>✅ {t.lockedFeature3}</p>
                 </div>
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full bg-blue-600 hover:bg-blue-700" size="lg">
-                  <Link href="/pricing">Subscribe කරන්න — $13/month</Link>
+                  <Link href="/pricing">{t.subscribeButton}</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -156,23 +152,20 @@ export default function ScenarioIntakePage() {
               <div className="flex items-center justify-between">
                 <CardTitle className="flex items-center gap-2 text-2xl">
                   <Sparkles className="h-6 w-6 text-primary" />
-                  Scenario Mode
+                  {t.pageTitle}
                 </CardTitle>
                 <Link href="/scenario/my-plans" className="text-sm text-blue-400 hover:underline whitespace-nowrap">
-                  My Plans
+                  {t.myPlans}
                 </Link>
               </div>
-              <CardDescription>
-                ඔබේ real-life situation එක කියන්න — ඊට ගැලපෙන daily conversation plan එකක් AI එක හදනවා.
-                (e.g. "මම ඉතාලියේ රෙස්ටුරන්ට් එකක වේටර් රැකියාවට යනවා", "රුමේනියාවේ work permit embassy interview එකට සූදානම් වෙනවා")
-              </CardDescription>
+              <CardDescription>{t.pageDescription}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="situation">ඔබේ situation එක</Label>
+                <Label htmlFor="situation">{t.situationLabel}</Label>
                 <Textarea
                   id="situation"
-                  placeholder="මෙතන ඔබේ situation එක විස්තර කරන්න..."
+                  placeholder={t.situationPlaceholder}
                   value={situation}
                   onChange={(e) => setSituation(e.target.value)}
                   rows={4}
@@ -181,7 +174,7 @@ export default function ScenarioIntakePage() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label>Target Language</Label>
+                  <Label>{t.targetLanguageLabel}</Label>
                   <Select value={targetLanguage} onValueChange={setTargetLanguage}>
                     <SelectTrigger>
                       <SelectValue />
@@ -197,7 +190,7 @@ export default function ScenarioIntakePage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label>Native Language</Label>
+                  <Label>{t.nativeLanguageLabel}</Label>
                   <Select value={nativeLanguage} onValueChange={setNativeLanguage}>
                     <SelectTrigger>
                       <SelectValue />
@@ -218,10 +211,10 @@ export default function ScenarioIntakePage() {
               <Button onClick={handleSubmit} disabled={loading} className="w-full" size="lg">
                 {loading ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Plan එක හදනවා...
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" /> {t.generatingButton}
                   </>
                 ) : (
-                  'My Plan එක Generate කරන්න'
+                  t.generateButton
                 )}
               </Button>
             </CardContent>

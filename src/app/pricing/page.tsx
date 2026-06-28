@@ -249,8 +249,8 @@ function PricingPageContent() {
                 <Badge variant="outline" className="border-blue-400/50 bg-blue-900/20 text-blue-300 mb-3">
                   🎯 NEW
                 </Badge>
-                <h2 className="font-headline text-3xl font-bold">Scenario Mode</h2>
-                <p className="text-muted-foreground mt-2">ඔබේම real-life situation එකට ගැලපෙන custom AI plans — ඕන තරම්, මාසිකව</p>
+                <h2 className="font-headline text-3xl font-bold">{t.scenario.pageTitle}</h2>
+                <p className="text-muted-foreground mt-2">{t.scenario.lockedDescription}</p>
               </div>
               <div className="max-w-md mx-auto">
                 <Card className="border-2 border-blue-500/40 bg-gradient-to-br from-blue-950/20 to-card">
@@ -260,18 +260,17 @@ function PricingPageContent() {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2 text-sm">
-                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> ඔබේම situation එක describe කරලා custom plan generate කරන්න</li>
-                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> Daily AI voice conversation practice (Whisper + Sonnet)</li>
-                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> ඕන තරම් අලුත් scenario plans, subscription active කාලයේ</li>
-                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> ඕන වෙලාවක cancel කරන්න පුළුවන්</li>
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> {t.scenario.lockedFeature1}</li>
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> {t.scenario.lockedFeature2} (Whisper + Sonnet)</li>
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> {t.scenario.lockedFeature3}</li>
                     </ul>
                   </CardContent>
                   <CardFooter className="flex-col gap-2">
                     <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-                      <Link href={SCENARIO_MONTHLY_URL} target="_blank">Subscribe කරන්න</Link>
+                      <Link href={SCENARIO_MONTHLY_URL} target="_blank">{t.scenario.subscribeButton}</Link>
                     </Button>
                     <p className="text-xs text-muted-foreground text-center">
-                      Cancel anytime — checkout receipt email එකේ "Manage your subscription" link එකෙන් නැත්නම් ඔබේ profile page එකෙන්
+                      {t.scenario.cancelStep1}
                     </p>
                   </CardFooter>
                 </Card>
