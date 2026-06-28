@@ -47,6 +47,12 @@ service cloud.firestore {
       allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
       allow update: if isSignedIn() && resource.data.userId == request.auth.uid;
       allow delete: if false;
+
+      // Per-day voice conversation turn logs, owned by the same user as the parent session.
+      match /turns/{turnId} {
+        allow read, create: if isSignedIn() && get(/databases/$(database)/documents/scenarioSessions/$(sessionId)).data.userId == request.auth.uid;
+        allow update, delete: if false;
+      }
     }
   }
 }
