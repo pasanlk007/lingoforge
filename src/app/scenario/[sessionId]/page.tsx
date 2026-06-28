@@ -1,6 +1,7 @@
 'use client';
 
 import { useParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { doc } from 'firebase/firestore';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -8,6 +9,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
@@ -15,7 +17,7 @@ import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import type { ScenarioSession } from '@/lib/types';
-import { Loader2, Lock, CheckCircle2, MessageCircle, AlertTriangle } from 'lucide-react';
+import { Loader2, Lock, CheckCircle2, MessageCircle, AlertTriangle, Sparkles, ChevronRight } from 'lucide-react';
 
 // Isolated page. Reads only from scenarioSessions/{sessionId}. Does not touch
 // userProgress, unlockedContent, or any survival/pro lesson state.
@@ -87,6 +89,7 @@ export default function ScenarioSessionPage() {
 
   const currentDay = session.currentDay || 1;
   const completedDays = session.completedDays || [];
+  const isCompleted = session.status === 'completed';
 
   return (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -99,8 +102,40 @@ export default function ScenarioSessionPage() {
             <div className="flex gap-2 mt-2">
               <Badge variant="secondary">{plan.targetLanguage}</Badge>
               <Badge variant="outline">{plan.total_days} දින Plan එක</Badge>
+              {isCompleted && (
+                <Badge className="bg-green-600 hover:bg-green-600">
+                  <CheckCircle2 className="h-3 w-3 mr-1" /> සම්පූර්ණයි
+                </Badge>
+              )}
             </div>
           </div>
+
+          {isCompleted && (
+            <Card className="border-2 border-purple-500/40 bg-gradient-to-br from-purple-950/20 to-card">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <Sparkles className="h-6 w-6 text-purple-400" />
+                  <div>
+                    <CardTitle className="text-lg">ඔබේ {plan.total_days} දින plan එක සම්පූර්ණයි! 🎉</CardTitle>
+                    <CardDescription>
+                      දැන් ඔබට {plan.targetLanguage} භාෂාවේ basic confidence එකක් තියෙනවා. ඊළඟ step එක:
+                      structured, deep-dive lessons සහිත අපේ Pro Path එකට join වෙන්න.
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardFooter className="flex flex-col sm:flex-row gap-2">
+                <Button asChild className="w-full sm:w-auto bg-purple-600 hover:bg-purple-500">
+                  <Link href="/dashboard/lesson-map">
+                    Pro Path එක explore කරන්න <ChevronRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="w-full sm:w-auto">
+                  <Link href="/scenario">අලුත් Scenario එකක් හදන්න</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          )}
 
           <div className="space-y-3">
             {plan.daily_topics.map((day: any) => {
