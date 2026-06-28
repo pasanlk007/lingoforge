@@ -101,6 +101,43 @@ export async function POST(req: Request) {
     if (!userDoc) { console.log('User not found:', userEmail); return new NextResponse('OK', { status: 200 }); }
 
     const subStatus = payload.data?.attributes?.status;
+
+    // SCENARIO MODE (isolated recurring subscription handling). Checked first
+    // and returns early — does not touch unlockedContent or any one-time
+    // unlock logic used by Survival/Pro below.
+    const productNameEarly = (payload.data?.attributes?.product_name || '').toLowerCase();
+    if (productNameEarly.includes('scenario')) {
+      const renewsAt = payload.data?.attributes?.renews_at || null;
+      const endsAt = payload.data?.attributes?.ends_at || null;
+      let isActive = false;
+      let expiry: string | null = null;
+
+      if (eventName === 'subscription_created' || (eventName === 'subscription_updated' && subStatus === 'active')) {
+        isActive = true;
+        expiry = renewsAt || endsAt;
+      } else if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
+        expiry = endsAt || renewsAt || new Date().toISOString();
+        isActive = expiry ? new Date(expiry) > new Date() : false;
+      } else {
+        return new NextResponse('OK', { status: 200 });
+      }
+
+      const fieldsToUpdate: any = { scenarioSubscriptionActive: { booleanValue: isActive } };
+      const updateMasks = ['scenarioSubscriptionActive'];
+      if (expiry) {
+        fieldsToUpdate.scenarioSubscriptionExpiry = { stringValue: expiry };
+        updateMasks.push('scenarioSubscriptionExpiry');
+      }
+      const fieldPaths = updateMasks.map(k => `updateMask.fieldPaths=${k}`).join('&');
+      await fetch(`https://firestore.googleapis.com/v1/${userDoc.name}?${fieldPaths}`, {
+        method: 'PATCH',
+        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fields: fieldsToUpdate }),
+      });
+      console.log('✅ Scenario Mode subscription updated for:', userEmail, isActive);
+      return new NextResponse('OK', { status: 200 });
+    }
+
     if (eventName === 'subscription_created' || eventName === 'order_created' || 
         (eventName === 'subscription_updated' && subStatus === 'active')) {
       const renewsAt = payload.data?.attributes?.renews_at || null;

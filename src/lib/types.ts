@@ -168,6 +168,12 @@ export interface UserProfile {
   referredBy?: string;
   bonusWeeks?: number;
   referralCount?: number;
+
+  // SCENARIO MODE (isolated recurring subscription — separate from the
+  // one-time unlockedContent model used by Survival/Pro). Access lapses if
+  // the subscription is cancelled/expired, unlike the permanent unlocks above.
+  scenarioSubscriptionActive?: boolean;
+  scenarioSubscriptionExpiry?: string | null; // ISO date string
 }
 
 // This type is deprecated as progress is now stored in UserProfile.

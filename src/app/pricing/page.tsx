@@ -19,6 +19,10 @@ import { useToast } from '@/hooks/use-toast';
 const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
 const LIFETIME_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
 const COURSE_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
+// TODO(Pasan): Replace with the real LemonSqueezy recurring "Scenario Mode Monthly" product checkout link
+// once created. Must be a SUBSCRIPTION variant (not one-time), product name must contain "Scenario"
+// (the webhook matches on product_name.toLowerCase().includes('scenario')).
+const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/REPLACE_WITH_SCENARIO_VARIANT_ID';
 
 const SKUS = {
   weekly: 'lingoforge_weekly_sub',
@@ -126,6 +130,7 @@ function PricingPageContent() {
   const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const LIFETIME_URL = `${LIFETIME_BASE_URL}&checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
+  const SCENARIO_MONTHLY_URL = `${SCENARIO_MONTHLY_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
 
   const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
     const product = products.find(p => p.identifier === sku);
@@ -237,6 +242,40 @@ function PricingPageContent() {
                   )}
                 </CardFooter>
               </Card>
+            </div>
+
+            {/* SCENARIO MODE (isolated monthly subscription, separate from the
+                one-time Survival/Pro plans above). Replace SCENARIO_MONTHLY_BASE_URL
+                with the real LemonSqueezy recurring product checkout link. */}
+            <div className="mt-16">
+              <div className="text-center mb-8">
+                <Badge variant="outline" className="border-blue-400/50 bg-blue-900/20 text-blue-300 mb-3">
+                  🎯 NEW
+                </Badge>
+                <h2 className="font-headline text-3xl font-bold">Scenario Mode</h2>
+                <p className="text-muted-foreground mt-2">ඔබේම real-life situation එකට ගැලපෙන custom AI plans — ඕන තරම්, මාසිකව</p>
+              </div>
+              <div className="max-w-md mx-auto">
+                <Card className="border-2 border-blue-500/40 bg-gradient-to-br from-blue-950/20 to-card">
+                  <CardHeader className="text-center">
+                    <CardTitle className="font-headline text-2xl pt-2">Scenario Mode Monthly</CardTitle>
+                    <p className="text-4xl font-bold mt-2">$13<span className="text-base font-normal text-muted-foreground">/month</span></p>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> ඔබේම situation එක describe කරලා custom plan generate කරන්න</li>
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> Daily AI voice conversation practice (Whisper + Sonnet)</li>
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> ඕන තරම් අලුත් scenario plans, subscription active කාලයේ</li>
+                      <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-400" /> ඕන වෙලාවක cancel කරන්න පුළුවන්</li>
+                    </ul>
+                  </CardContent>
+                  <CardFooter>
+                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                      <Link href={SCENARIO_MONTHLY_URL} target="_blank">Subscribe කරන්න</Link>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </div>
             </div>
 
             <div className="mt-16 text-center text-muted-foreground text-sm space-y-1">
