@@ -243,12 +243,14 @@ export default function ScenarioDayPage() {
   }
 
   const isLastVocab = vocabIndex === dayContent.target_vocab.length - 1;
+  const MIN_PASS_SCORE = 60;
+  const hasPassed = lastScore !== null && lastScore >= MIN_PASS_SCORE;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <div className="container mx-auto max-w-2xl py-8 px-4 space-y-6">
+        <div className="container mx-auto max-w-2xl py-8 px-4 pb-24 space-y-6">
           <div>
             <Badge variant="outline" className="mb-2">
               Day {dayNum} / {plan.total_days}
@@ -300,8 +302,16 @@ export default function ScenarioDayPage() {
                   <p className="text-sm text-muted-foreground">ඔබ කිව්වේ:</p>
                   <p className="font-medium">"{lastTranscript}"</p>
                   <p className="text-sm mt-2">
-                    ~Match confidence: <span className="font-bold">{lastScore}%</span>
+                    ~Match confidence:{' '}
+                    <span className={`font-bold ${hasPassed ? 'text-green-500' : 'text-orange-400'}`}>
+                      {lastScore}%
+                    </span>
                   </p>
+                  {!hasPassed && (
+                    <p className="text-sm text-orange-400 font-medium">
+                      ආයෙත් try කරන්න — {MIN_PASS_SCORE}%ට වැඩි score එකක් ගන්න ඕන ඉදිරියට යන්න.
+                    </p>
+                  )}
                   <p className="text-[11px] text-muted-foreground">
                     (මේක pronunciation accuracy නෙවෙයි — Whisper ට ඔබේ speech එක කොච්චර clear ලෙස target text එකට ලඟ ලෙස තේරුණාද කියන estimate එකක්)
                   </p>
@@ -312,11 +322,11 @@ export default function ScenarioDayPage() {
 
           <div className="flex justify-end">
             {!isLastVocab ? (
-              <Button onClick={nextVocab} variant="outline">
+              <Button onClick={nextVocab} variant="outline" disabled={!hasPassed}>
                 Next Phrase <ChevronRight className="ml-1 h-4 w-4" />
               </Button>
             ) : (
-              <Button onClick={markDayComplete} className="bg-green-600 hover:bg-green-700">
+              <Button onClick={markDayComplete} className="bg-green-600 hover:bg-green-700" disabled={!hasPassed}>
                 <CheckCircle2 className="mr-2 h-4 w-4" />
                 Day {dayNum} Complete කරන්න
               </Button>
