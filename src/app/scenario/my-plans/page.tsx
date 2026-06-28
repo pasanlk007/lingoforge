@@ -1,7 +1,8 @@
 'use client';
 
+import { useMemo } from 'react';
 import Link from 'next/link';
-import { collection, query, where, orderBy } from 'firebase/firestore';
+import { collection, query, where } from 'firebase/firestore';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import {
@@ -29,11 +30,22 @@ export default function MyScenarioPlansPage() {
   const sessionsQuery = useMemoFirebase(
     () =>
       firestore && user
-        ? query(collection(firestore, 'scenarioSessions'), where('userId', '==', user.uid), orderBy('createdAt', 'desc'))
+        ? query(collection(firestore, 'scenarioSessions'), where('userId', '==', user.uid))
         : null,
     [firestore, user]
   );
-  const { data: sessions, isLoading } = useCollection<ScenarioSession>(sessionsQuery as any);
+  const { data: sessionsRaw, isLoading } = useCollection<ScenarioSession>(sessionsQuery as any);
+
+  // Sort client-side (newest first) — avoids needing a composite Firestore index
+  // for where(userId) + orderBy(createdAt).
+  const sessions = useMemo(() => {
+    if (!sessionsRaw) return sessionsRaw;
+    return [...sessionsRaw].sort((a: any, b: any) => {
+      const aTime = a.createdAt ? new Date(a.createdAt).getTime() : 0;
+      const bTime = b.createdAt ? new Date(b.createdAt).getTime() : 0;
+      return bTime - aTime;
+    });
+  }, [sessionsRaw]);
 
   if (isUserLoading || (user && isLoading)) {
     return (
