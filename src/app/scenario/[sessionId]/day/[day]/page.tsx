@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useRef, useMemo } from 'react';
+import { useState, useRef, useMemo, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { doc, collection } from 'firebase/firestore';
+import { doc } from 'firebase/firestore';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import {
@@ -15,13 +15,17 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useFirestore, useDoc, useMemoFirebase, addDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase';
-import type { ScenarioSession } from '@/lib/types';
+import { collection } from 'firebase/firestore';
+import type { ScenarioSession, ScenarioDayContent } from '@/lib/types';
 import { computeMatchScore } from '@/lib/scenarioMatchScore';
 import { playAudio } from '@/lib/audioPlayer';
-import { Mic, Square, Volume2, ChevronRight, Loader2, CheckCircle2 } from 'lucide-react';
+import { Mic, Square, Volume2, ChevronRight, Loader2, CheckCircle2, AlertTriangle } from 'lucide-react';
 
 // Isolated page. Reads/writes only scenarioSessions/{sessionId} and its
-// turns subcollection. Does not touch userProgress, unlockedContent, XP, or streaks.
+// turns/days subcollections. Does not touch userProgress, unlockedContent, XP, or streaks.
+//
+// Day content (vocab/dialogue/prompts) is generated on-demand the first time
+// a user opens a day, then cached in scenarioSessions/{sessionId}/days/{day}.
 
 export default function ScenarioDayPage() {
   const params = useParams();
@@ -34,13 +38,21 @@ export default function ScenarioDayPage() {
     () => (firestore && sessionId ? doc(firestore, 'scenarioSessions', sessionId) : null),
     [firestore, sessionId]
   );
-  const { data: session, isLoading } = useDoc<ScenarioSession>(sessionRef as any);
+  const { data: session, isLoading: sessionLoading } = useDoc<ScenarioSession>(sessionRef as any);
+
+  const dayContentRef = useMemoFirebase(
+    () => (firestore && sessionId && dayNum ? doc(firestore, 'scenarioSessions', sessionId, 'days', String(dayNum)) : null),
+    [firestore, sessionId, dayNum]
+  );
+  const { data: dayDoc, isLoading: dayDocLoading } = useDoc<any>(dayContentRef as any);
 
   const [vocabIndex, setVocabIndex] = useState(0);
   const [isRecording, setIsRecording] = useState(false);
   const [isTranscribing, setIsTranscribing] = useState(false);
   const [lastScore, setLastScore] = useState<number | null>(null);
   const [lastTranscript, setLastTranscript] = useState<string | null>(null);
+  const [generationTriggered, setGenerationTriggered] = useState(false);
+  const [generationError, setGenerationError] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -51,12 +63,48 @@ export default function ScenarioDayPage() {
     return typeof p === 'string' ? JSON.parse(p) : p;
   }, [session]);
 
-  const dayPlan = useMemo(() => {
+  const dayOutline = useMemo(() => {
     if (!plan) return null;
     return plan.daily_topics.find((d: any) => d.day === dayNum) || null;
   }, [plan, dayNum]);
 
-  if (isLoading || !session || !plan || !dayPlan) {
+  const dayContent: ScenarioDayContent | null = useMemo(() => {
+    if (!dayDoc) return null;
+    const c = (dayDoc as any).content;
+    return typeof c === 'string' ? JSON.parse(c) : c;
+  }, [dayDoc]);
+
+  // Trigger generation the first time we know there's no cached content yet.
+  useEffect(() => {
+    if (!plan || !dayOutline || dayDocLoading) return;
+    if (dayContent || generationTriggered) return;
+
+    setGenerationTriggered(true);
+    fetch('/api/scenario-day-generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        sessionId,
+        day: dayNum,
+        scenarioTitle: plan.scenario_title,
+        scenarioSummary: plan.scenario_summary,
+        topicTitle: dayOutline.topic_title,
+        situationContext: dayOutline.situation_context,
+        targetLanguage: plan.targetLanguage,
+        nativeLanguage: plan.nativeLanguage,
+        totalDays: plan.total_days,
+      }),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error('Generation failed');
+      })
+      .catch((e) => {
+        console.error('Day generation failed:', e);
+        setGenerationError(true);
+      });
+  }, [plan, dayOutline, dayDocLoading, dayContent, generationTriggered, sessionId, dayNum]);
+
+  if (sessionLoading || !session || !plan || !dayOutline) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
@@ -70,7 +118,39 @@ export default function ScenarioDayPage() {
     );
   }
 
-  const vocab = dayPlan.target_vocab[vocabIndex];
+  if (generationError) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1">
+          <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
+            <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
+            <h2 className="text-xl font-semibold">Day {dayNum} content එක load කරන්න බැරි උනා</h2>
+            <Button className="mt-4" onClick={() => window.location.reload()}>
+              ආයෙත් try කරන්න
+            </Button>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  if (!dayContent) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1">
+          <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
+            <Loader2 className="h-10 w-10 animate-spin mx-auto mb-4 text-primary" />
+            <h2 className="text-xl font-semibold">Day {dayNum} content එක හදනවා...</h2>
+            <p className="text-muted-foreground mt-2">මේක seconds කීපයක් ගතවෙයි.</p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  const vocab = dayContent.target_vocab[vocabIndex];
   const targetLanguage = plan.targetLanguage;
 
   async function startRecording() {
@@ -117,7 +197,6 @@ export default function ScenarioDayPage() {
       setLastTranscript(data.text);
       setLastScore(score);
 
-      // Log the turn (isolated subcollection, owner-only per firestore.rules)
       if (firestore && session) {
         const turnsRef = collection(firestore, 'scenarioSessions', sessionId, 'turns');
         addDocumentNonBlocking(turnsRef, {
@@ -139,9 +218,10 @@ export default function ScenarioDayPage() {
   }
 
   function nextVocab() {
+    if (!dayContent) return;
     setLastScore(null);
     setLastTranscript(null);
-    if (vocabIndex < dayPlan.target_vocab.length - 1) {
+    if (vocabIndex < dayContent.target_vocab.length - 1) {
       setVocabIndex(vocabIndex + 1);
     }
   }
@@ -162,7 +242,7 @@ export default function ScenarioDayPage() {
     router.push(`/scenario/${sessionId}`);
   }
 
-  const isLastVocab = vocabIndex === dayPlan.target_vocab.length - 1;
+  const isLastVocab = vocabIndex === dayContent.target_vocab.length - 1;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background">
@@ -173,15 +253,15 @@ export default function ScenarioDayPage() {
             <Badge variant="outline" className="mb-2">
               Day {dayNum} / {plan.total_days}
             </Badge>
-            <h1 className="text-xl font-bold">{dayPlan.topic_title_native || dayPlan.topic_title}</h1>
-            <p className="text-sm text-muted-foreground mt-1">{dayPlan.situation_context}</p>
+            <h1 className="text-xl font-bold">{dayOutline.topic_title_native || dayOutline.topic_title}</h1>
+            <p className="text-sm text-muted-foreground mt-1">{dayOutline.situation_context}</p>
           </div>
 
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center justify-between text-base">
                 <span>
-                  Phrase {vocabIndex + 1} / {dayPlan.target_vocab.length}
+                  Phrase {vocabIndex + 1} / {dayContent.target_vocab.length}
                 </span>
                 <Button variant="ghost" size="icon" onClick={() => playAudio(vocab.target, targetLanguage, 0.85)}>
                   <Volume2 className="h-5 w-5" />
