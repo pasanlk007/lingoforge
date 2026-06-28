@@ -364,8 +364,8 @@ function DashboardContent({ user }: { user: User }) {
                 </CardContent>
                 <CardFooter className="p-4 pt-2">
                   <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
-                    <Link href="/scenario">
-                      🎯 My Scenario Plan එක හදන්න <ChevronRight className="ml-1 h-3 w-3" />
+                    <Link href="/scenario/my-plans">
+                      🎯 My Scenario Plans <ChevronRight className="ml-1 h-3 w-3" />
                     </Link>
                   </Button>
                 </CardFooter>

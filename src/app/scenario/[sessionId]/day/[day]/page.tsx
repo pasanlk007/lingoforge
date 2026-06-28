@@ -14,12 +14,13 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
-import { useFirestore, useDoc, useMemoFirebase, addDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase';
+import { useFirestore, useUser, useDoc, useMemoFirebase, addDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase';
 import { collection } from 'firebase/firestore';
 import type { ScenarioSession, ScenarioDayContent } from '@/lib/types';
 import { computeMatchScore } from '@/lib/scenarioMatchScore';
 import { playAudio } from '@/lib/audioPlayer';
-import { Mic, Square, Volume2, ChevronRight, Loader2, CheckCircle2, AlertTriangle } from 'lucide-react';
+import { Mic, Square, Volume2, ChevronRight, Loader2, CheckCircle2, AlertTriangle, Lock } from 'lucide-react';
+import Link from 'next/link';
 
 // Isolated page. Reads/writes only scenarioSessions/{sessionId} and its
 // turns/days subcollections. Does not touch userProgress, unlockedContent, XP, or streaks.
@@ -33,6 +34,7 @@ export default function ScenarioDayPage() {
   const sessionId = params.sessionId as string;
   const dayNum = parseInt(params.day as string, 10);
   const firestore = useFirestore();
+  const { user } = useUser();
 
   const sessionRef = useMemoFirebase(
     () => (firestore && sessionId ? doc(firestore, 'scenarioSessions', sessionId) : null),
@@ -53,6 +55,7 @@ export default function ScenarioDayPage() {
   const [lastTranscript, setLastTranscript] = useState<string | null>(null);
   const [generationTriggered, setGenerationTriggered] = useState(false);
   const [generationError, setGenerationError] = useState(false);
+  const [subscriptionRequired, setSubscriptionRequired] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -76,7 +79,7 @@ export default function ScenarioDayPage() {
 
   // Trigger generation the first time we know there's no cached content yet.
   useEffect(() => {
-    if (!plan || !dayOutline || dayDocLoading) return;
+    if (!plan || !dayOutline || dayDocLoading || !user) return;
     if (dayContent || generationTriggered) return;
 
     setGenerationTriggered(true);
@@ -84,6 +87,7 @@ export default function ScenarioDayPage() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        userId: user.uid,
         sessionId,
         day: dayNum,
         scenarioTitle: plan.scenario_title,
@@ -95,14 +99,18 @@ export default function ScenarioDayPage() {
         totalDays: plan.total_days,
       }),
     })
-      .then((res) => {
+      .then(async (res) => {
+        if (res.status === 402) {
+          setSubscriptionRequired(true);
+          return;
+        }
         if (!res.ok) throw new Error('Generation failed');
       })
       .catch((e) => {
         console.error('Day generation failed:', e);
         setGenerationError(true);
       });
-  }, [plan, dayOutline, dayDocLoading, dayContent, generationTriggered, sessionId, dayNum]);
+  }, [plan, dayOutline, dayDocLoading, dayContent, generationTriggered, sessionId, dayNum, user]);
 
   if (sessionLoading || !session || !plan || !dayOutline) {
     return (
@@ -112,6 +120,26 @@ export default function ScenarioDayPage() {
           <div className="container mx-auto max-w-2xl py-10 px-4 space-y-4">
             <Skeleton className="h-10 w-2/3" />
             <Skeleton className="h-40 w-full" />
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  if (subscriptionRequired) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1">
+          <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
+            <Lock className="h-10 w-10 mx-auto mb-4 text-blue-400" />
+            <h2 className="text-xl font-semibold">මේ day එක unlock කරන්න subscription එකක් ඕන</h2>
+            <p className="text-muted-foreground mt-2">
+              ඔබේ plan එක create උනා, නමුත් daily content generate කරන්න Scenario Mode subscription එක active කරගන්න ඕන.
+            </p>
+            <Button asChild className="mt-4 bg-blue-600 hover:bg-blue-700">
+              <Link href="/pricing">Subscribe කරන්න — $13/month</Link>
+            </Button>
           </div>
         </main>
       </div>

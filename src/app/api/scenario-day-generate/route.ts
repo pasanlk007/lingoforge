@@ -47,9 +47,9 @@ Rules:
 
 export async function POST(req: Request) {
   try {
-    const { sessionId, day, scenarioTitle, scenarioSummary, topicTitle, situationContext, targetLanguage, nativeLanguage, totalDays } = await req.json();
+    const { userId, sessionId, day, scenarioTitle, scenarioSummary, topicTitle, situationContext, targetLanguage, nativeLanguage, totalDays } = await req.json();
 
-    if (!sessionId || !day || !topicTitle || !targetLanguage || !nativeLanguage) {
+    if (!userId || !sessionId || !day || !topicTitle || !targetLanguage || !nativeLanguage) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
@@ -57,12 +57,26 @@ export async function POST(req: Request) {
     const dayDocUrl = `${scenarioFirestoreBaseUrl()}/scenarioSessions/${sessionId}/days/${day}`;
 
     // Check cache first — don't regenerate a day that's already been created.
+    // This is allowed even without an active subscription, since it's free
+    // (no new AI call) and lets users re-read days they already paid to generate.
     const cacheRes = await fetch(dayDocUrl, { headers: { 'Authorization': `Bearer ${token}` } });
     if (cacheRes.ok) {
       const cached = await cacheRes.json();
       if (cached.fields?.content?.stringValue) {
         return NextResponse.json({ day, content: JSON.parse(cached.fields.content.stringValue) });
       }
+    }
+
+    // Gate the actual AI-cost-incurring generation behind an active subscription.
+    const profileUrl = `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`;
+    const profileRes = await fetch(profileUrl, { headers: { 'Authorization': `Bearer ${token}` } });
+    const profileData = profileRes.ok ? await profileRes.json() : null;
+    const isActive = profileData?.fields?.scenarioSubscriptionActive?.booleanValue === true;
+    const expiryStr = profileData?.fields?.scenarioSubscriptionExpiry?.stringValue;
+    const notExpired = !expiryStr || new Date(expiryStr).getTime() > Date.now();
+
+    if (!isActive || !notExpired) {
+      return NextResponse.json({ error: 'Subscription required', code: 'SUBSCRIPTION_REQUIRED' }, { status: 402 });
     }
 
     const prompt = buildDayPrompt(

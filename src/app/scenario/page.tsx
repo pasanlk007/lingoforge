@@ -153,10 +153,15 @@ export default function ScenarioIntakePage() {
         <div className="container mx-auto max-w-2xl py-10 px-4">
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-2xl">
-                <Sparkles className="h-6 w-6 text-primary" />
-                Scenario Mode
-              </CardTitle>
+              <div className="flex items-center justify-between">
+                <CardTitle className="flex items-center gap-2 text-2xl">
+                  <Sparkles className="h-6 w-6 text-primary" />
+                  Scenario Mode
+                </CardTitle>
+                <Link href="/scenario/my-plans" className="text-sm text-blue-400 hover:underline whitespace-nowrap">
+                  My Plans
+                </Link>
+              </div>
               <CardDescription>
                 ඔබේ real-life situation එක කියන්න — ඊට ගැලපෙන daily conversation plan එකක් AI එක හදනවා.
                 (e.g. "මම ඉතාලියේ රෙස්ටුරන්ට් එකක වේටර් රැකියාවට යනවා", "රුමේනියාවේ work permit embassy interview එකට සූදානම් වෙනවා")
