@@ -65,14 +65,37 @@ export default function SignupPage() {
     }
     
     try {
-        await initiateGoogleSignIn(auth, firestore, {
-          displayName,
-          nativeLanguage,
-          selectedLanguage: targetLanguage,
-        });
+        const { isNativePlatform, nativeGoogleSignIn } = await import('@/lib/nativeGoogleAuth');
+        let success = false;
 
-        toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
-        window.location.href = '/dashboard';
+        if (await isNativePlatform()) {
+            console.log("Native platform detected, attempting native sign-in...");
+            const user = await nativeGoogleSignIn(auth);
+            if (user) {
+                const { upsertUserProfile } = await import('@/firebase/non-blocking-login');
+                await upsertUserProfile(user, firestore, {
+                    displayName,
+                    nativeLanguage,
+                    selectedLanguage: targetLanguage,
+                });
+                success = true;
+            }
+        } else {
+            console.log("Web environment, using web sign-in...");
+            await initiateGoogleSignIn(auth, firestore, {
+              displayName,
+              nativeLanguage,
+              selectedLanguage: targetLanguage,
+            });
+            success = true;
+        }
+
+        if (success) {
+            toast({ title: "Sign-Up Successful", description: "Welcome to LingoForge!" });
+            window.location.href = '/dashboard';
+        } else {
+            setGoogleLoading(false);
+        }
 
     } catch (error: any) {
         if (error.code !== 'auth/popup-closed-by-user') {
