@@ -273,7 +273,7 @@ export default function ScenarioDayPage() {
   }
 
   const isLastVocab = vocabIndex === dayContent.target_vocab.length - 1;
-  const MIN_PASS_SCORE = 60;
+  const MIN_PASS_SCORE = 40;
   const hasPassed = lastScore !== null && lastScore >= MIN_PASS_SCORE;
 
   return (
