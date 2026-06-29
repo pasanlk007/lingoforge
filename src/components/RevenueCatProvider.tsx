@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { useUser, useFirestore, updateDocumentNonBlocking } from '@/firebase';
 import { doc } from 'firebase/firestore';
 
-const API_KEY = 'test_tTTpapAZBVMqxyDhGcVYQkjkoWx';
+const API_KEY = 'goog_jXyRicBRuGtmUSeQOTWYMyhunNS';
 const ENTITLEMENT_ID = 'premium';
 const SCENARIO_ENTITLEMENT_ID = 'scenario';
 
