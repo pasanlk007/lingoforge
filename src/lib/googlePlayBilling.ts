@@ -26,7 +26,7 @@ export async function getProducts(productIds: string[]) {
   }
 }
 
-export async function purchase(sku: string, appUserID: string) {
+export async function purchase(sku: string, appUserID: string, entitlementId: string = 'premium') {
   try {
     const { Capacitor } = await import('@capacitor/core');
     if (!Capacitor.isNativePlatform()) {
@@ -37,8 +37,8 @@ export async function purchase(sku: string, appUserID: string) {
     const productToPurchase = products[0];
     if (!productToPurchase) throw new Error(`Product with SKU ${sku} not found.`);
     const { purchaserInfo } = await Purchases.purchaseStoreProduct({ product: productToPurchase });
-    const isPremium = typeof purchaserInfo.entitlements.active['premium'] !== 'undefined';
-    return { isAcknowledged: isPremium, purchaserInfo };
+    const isEntitled = typeof purchaserInfo.entitlements.active[entitlementId] !== 'undefined';
+    return { isAcknowledged: isEntitled, purchaserInfo };
   } catch (e: any) {
     const { PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
     if (e.code !== PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) {

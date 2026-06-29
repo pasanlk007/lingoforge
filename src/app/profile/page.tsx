@@ -15,6 +15,7 @@ import type { User } from 'firebase/auth';
 import { deleteUser } from 'firebase/auth';
 import { deleteDocumentNonBlocking } from '@/firebase/non-blocking-updates';
 import { nativeLanguages, translations } from '@/lib/translations';
+import { isNativeApp } from '@/lib/isNativeApp';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -220,13 +221,19 @@ function ProfileContent({ user }: { user: User }) {
               )}
               <div className="rounded-lg bg-muted p-3 space-y-1 text-xs text-muted-foreground">
                 <p className="font-semibold text-foreground">{tScenario.cancelHowTitle}</p>
-                <p>{tScenario.cancelStep1}</p>
-                <p>
-                  {tScenario.cancelStep2.split('app.lemonsqueezy.com/my-orders')[0]}
-                  <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">app.lemonsqueezy.com/my-orders</a>
-                  {tScenario.cancelStep2.split('app.lemonsqueezy.com/my-orders')[1]}
-                </p>
-                <p>{tScenario.cancelStep3}</p>
+                {isNativeApp() ? (
+                  <p>Settings → Subscriptions → Scenario Mode Monthly → Cancel subscription (Google Play). ඔබට ඕන වෙලාවක Google Play app එකෙන් cancel කරන්න පුළුවන්.</p>
+                ) : (
+                  <>
+                    <p>{tScenario.cancelStep1}</p>
+                    <p>
+                      {tScenario.cancelStep2.split('app.lemonsqueezy.com/my-orders')[0]}
+                      <a href="https://app.lemonsqueezy.com/my-orders" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">app.lemonsqueezy.com/my-orders</a>
+                      {tScenario.cancelStep2.split('app.lemonsqueezy.com/my-orders')[1]}
+                    </p>
+                    <p>{tScenario.cancelStep3}</p>
+                  </>
+                )}
               </div>
               {!userProfile?.scenarioSubscriptionActive && (
                 <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">

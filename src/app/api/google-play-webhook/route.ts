@@ -2,7 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
 import { initializeFirebase } from '@/firebase/server-init';
 
-// firestore initialized per-request below
+// firestore is initialized lazily inside POST() and threaded through to avoid
+// crashing during Next.js build-time page-data collection (same fix pattern
+// as src/firebase/server-init.ts's lazy init).
 const packageName = 'com.lingoforge.app';
 
 // Initialize the Google API client
@@ -19,7 +21,7 @@ const androidpublisher = google.androidpublisher({
   auth: auth,
 });
 
-async function findUserByObfuscatedId(obfuscatedAccountId: string) {
+async function findUserByObfuscatedId(firestore: any, obfuscatedAccountId: string) {
   // In our app, the obfuscatedAccountId IS the Firebase UID.
   const userRef = firestore.collection('userProfiles').doc(obfuscatedAccountId);
   const userDoc = await userRef.get();
@@ -29,7 +31,7 @@ async function findUserByObfuscatedId(obfuscatedAccountId: string) {
   return null;
 }
 
-async function handleSubscriptionNotification(notification: any) {
+async function handleSubscriptionNotification(firestore: any, notification: any) {
   const { subscriptionId, purchaseToken } = notification;
 
   try {
@@ -48,7 +50,7 @@ async function handleSubscriptionNotification(notification: any) {
     
     // In our app, we set this to the Firebase UID
     const userId = obfuscatedExternalAccountId;
-    const userDoc = await findUserByObfuscatedId(userId);
+    const userDoc = await findUserByObfuscatedId(firestore, userId);
 
     if (!userDoc) {
       console.log(`User not found for obfuscated ID: ${userId}`);
@@ -57,7 +59,19 @@ async function handleSubscriptionNotification(notification: any) {
 
     const isAcknowledged = acknowledgementState === 1;
     const isStillActive = sub.data.expiryTimeMillis ? parseInt(sub.data.expiryTimeMillis, 10) > Date.now() : false;
-    
+
+    // SCENARIO MODE (isolated recurring subscription, separate from the
+    // permanent unlockedContent model below used by Survival/Pro). Checked
+    // first and returns early — does not touch unlockedContent at all.
+    if (subscriptionId.includes('scenario')) {
+      await userDoc.ref.update({
+        scenarioSubscriptionActive: isStillActive,
+        scenarioSubscriptionExpiry: sub.data.expiryTimeMillis ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString() : null,
+      });
+      console.log(`Updated user ${userId} Scenario Mode subscription: active=${isStillActive}`);
+      return;
+    }
+
     let plan = 'weekly'; // Default
     if (subscriptionId.includes('course')) plan = 'course';
     if (subscriptionId.includes('lifetime')) plan = 'lifetime';
@@ -100,6 +114,7 @@ async function handleSubscriptionNotification(notification: any) {
 
 export async function POST(req: NextRequest) {
   try {
+    const { firestore } = initializeFirebase();
     const body = await req.json();
     
     // The actual notification is base64-encoded in the 'data' field
@@ -112,7 +127,7 @@ export async function POST(req: NextRequest) {
     
     // Differentiate between subscription and one-time product notifications
     if (notification.subscriptionNotification) {
-       await handleSubscriptionNotification(notification.subscriptionNotification);
+       await handleSubscriptionNotification(firestore, notification.subscriptionNotification);
     } else if (notification.oneTimeProductNotification) {
       // TODO: Handle one-time product purchases if needed in the future
       console.log('Received one-time product notification:', notification.oneTimeProductNotification);

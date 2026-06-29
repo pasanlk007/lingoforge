@@ -25,6 +25,7 @@ const SKUS = {
   weekly: 'lingoforge_weekly_sub',
   course: 'lingoforge_course_unlock',
   lifetime: 'lingoforge_lifetime_unlock',
+  scenarioMonthly: 'lingoforge_scenario_monthly',
 };
 
 // Minimal interface to avoid static import of native library
@@ -111,7 +112,8 @@ function PricingPageContent() {
     }
     setIsPurchasing(sku);
     try {
-      const purchaseResult = await purchase(sku, user.uid);
+      const entitlementId = sku === SKUS.scenarioMonthly ? 'scenario' : 'premium';
+      const purchaseResult = await purchase(sku, user.uid, entitlementId);
       if (purchaseResult?.isAcknowledged) {
         toast({ title: "Purchase successful!", description: "Your content will be unlocked shortly." });
       } else {
@@ -266,11 +268,17 @@ function PricingPageContent() {
                     </ul>
                   </CardContent>
                   <CardFooter className="flex-col gap-2">
-                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
-                      <Link href={SCENARIO_MONTHLY_URL} target="_blank">{t.scenario.subscribeButton}</Link>
-                    </Button>
+                    {isAndroid ? (
+                      <GooglePlayButton sku={SKUS.scenarioMonthly} fallbackText="Subscribe" />
+                    ) : (
+                      <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                        <Link href={SCENARIO_MONTHLY_URL} target="_blank">{t.scenario.subscribeButton}</Link>
+                      </Button>
+                    )}
                     <p className="text-xs text-muted-foreground text-center">
-                      {t.scenario.cancelStep1}
+                      {isAndroid
+                        ? 'Cancel anytime via Google Play > Subscriptions'
+                        : t.scenario.cancelStep1}
                     </p>
                   </CardFooter>
                 </Card>
