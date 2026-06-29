@@ -157,26 +157,7 @@ export default function PathsPage() {
               <p className="text-lg text-slate-300 mt-2">{t.pricingSub}</p>
             </div>
 
-            <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
-              <Card className="flex flex-col border-2 border-blue-500/50 bg-blue-950/20 p-6">
-                <CardHeader className="p-0">
-                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan.title}</CardTitle>
-                   <p className="text-4xl font-extrabold mt-2">{t.weeklyPlan.price_usd.split('/')[0]}<span className="text-base font-medium text-slate-400">/{t.weeklyPlan.price_usd.split('/')[1]}</span></p>
-                </CardHeader>
-                <CardContent className="p-0 flex-1 flex flex-col justify-between">
-                  <ul className="space-y-3 text-slate-300 my-6">
-                    {t.weeklyPlan.feat1 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat1}</li>}
-                    {t.weeklyPlan.feat2 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat2}</li>}
-                    {t.weeklyPlan.feat3 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat3}</li>}
-                    {t.weeklyPlan.feat4 && <li className="flex items-center gap-2"><BadgeCheck className="w-5 h-5 text-cyan-400"/> {t.weeklyPlan.feat4}</li>}
-                  </ul>
-                  <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
-                    <Link href="/pricing">Get Started</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-
+            <div className="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
                <Card className="relative flex flex-col border-2 border-yellow-500/50 bg-yellow-950/20 p-6">
                 <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-950 font-bold">{t.lifetimePlan.badge}</Badge>
                 <CardHeader className="p-0">

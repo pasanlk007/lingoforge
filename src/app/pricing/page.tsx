@@ -16,13 +16,11 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { initializeBilling, getProducts, purchase } from '@/lib/googlePlayBilling';
 import { useToast } from '@/hooks/use-toast';
 
-const WEEKLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/0068ab57-f851-4e86-95a9-ebf9f3f812d6';
 const LIFETIME_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/5686f0f9-4aac-4a0b-a08a-a5c2909113ff?discount=0';
 const COURSE_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/4516cd05-1c2a-41fb-9219-13b7f189c58e';
 const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/6119eaa4-e974-4681-8586-015dbb52740b';
 
 const SKUS = {
-  weekly: 'lingoforge_weekly_sub',
   course: 'lingoforge_course_unlock',
   lifetime: 'lingoforge_lifetime_unlock',
   scenarioMonthly: 'lingoforge_scenario_monthly',
@@ -126,7 +124,6 @@ function PricingPageContent() {
     }
   };
 
-  const WEEKLY_URL = `${WEEKLY_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const COURSE_URL = `${COURSE_BASE_URL}?checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const LIFETIME_URL = `${LIFETIME_BASE_URL}&checkout[custom][language]=${langParam}&checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
   const SCENARIO_MONTHLY_URL = `${SCENARIO_MONTHLY_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
@@ -153,36 +150,6 @@ function PricingPageContent() {
               <p className="mt-4 text-lg text-muted-foreground">{t.pricingSub}</p>
             </div>
             <div className="mt-16 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-2">
-              <Card className="hidden">
-                <CardHeader>
-                  <Badge className="w-fit bg-blue-500/20 text-blue-300 border border-blue-500/30">{t.weeklyPlan?.badge}</Badge>
-                  <CardTitle className="font-headline text-2xl pt-2">{t.weeklyPlan?.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-1 space-y-4">
-                  <div>
-                    <p className="text-3xl font-bold">{t.weeklyPlan?.price_usd}</p>
-                    
-                  </div>
-                   <ul className="space-y-2 pt-4 border-t border-blue-500/30 text-sm">
-                    {t.weeklyPlan.feat1 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat1}</li>}
-                    {t.weeklyPlan.feat2 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat2}</li>}
-                    {t.weeklyPlan.feat3 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat3}</li>}
-                    {t.weeklyPlan.feat4 && <li><Check className="inline-block mr-2 h-4 w-4 text-green-500"/>{t.weeklyPlan.feat4}</li>}
-                  </ul>
-                  {t.weeklyPlan.note && <p className="text-xs text-orange-400 p-2 bg-orange-500/10 rounded-md border border-dashed border-orange-500/30">⚠️ {t.weeklyPlan.note}</p>}
-                </CardContent>
-                <CardFooter className="flex-col gap-3 w-full">
-                  {isAndroid ? <GooglePlayButton sku={SKUS.weekly} fallbackText="Weekly Plan"/> : (
-                    <>
-                      <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700" asChild><Link href={WEEKLY_URL} target="_blank">Pay in USD</Link></Button>
-                      <div className="flex items-center justify-center gap-1 mt-2">
-                        <span className="text-xs text-muted-foreground">💳 Visa · Mastercard · PayPal · Apple Pay · Google Pay</span>
-                      </div>
-                    </>
-                  )}
-                </CardFooter>
-              </Card>
-
               <Card className="flex flex-col border-2 border-green-500/50 bg-green-950/20">
                 <CardHeader>
                   <Badge className="w-fit bg-green-500/20 text-green-300 border border-green-500/30">{t.completePlan?.badge}</Badge>
