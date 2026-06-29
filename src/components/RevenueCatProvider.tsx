@@ -5,7 +5,8 @@ import { useUser, useFirestore, updateDocumentNonBlocking } from '@/firebase';
 import { doc } from 'firebase/firestore';
 
 const API_KEY = 'test_MOFjIoiftAYLPKyQzbKTWJktYVA';
-const ENTITLEMENT_ID = 'premium'; 
+const ENTITLEMENT_ID = 'premium';
+const SCENARIO_ENTITLEMENT_ID = 'scenario';
 
 export function RevenueCatProvider({ children }: { children: React.ReactNode }) {
   const { user, isUserLoading } = useUser();
@@ -26,7 +27,12 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
         Purchases.addPurchaserInfoUpdateListener(async (info: any) => {
           const premiumEntitlement = info.entitlements.active[ENTITLEMENT_ID];
           const hasActiveSubscription = typeof premiumEntitlement !== 'undefined';
-          
+
+          // Scenario Mode (isolated) — does not affect subscriptionActive/
+          // unlockedContent used by Survival/Pro above.
+          const scenarioEntitlement = info.entitlements.active[SCENARIO_ENTITLEMENT_ID];
+          const hasActiveScenarioSubscription = typeof scenarioEntitlement !== 'undefined';
+
           if (user && firestore) {
             const userProfileRef = doc(firestore, 'userProfiles', user.uid);
 
@@ -45,6 +51,8 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
               subscriptionActive: hasActiveSubscription,
               subscriptionSource: source,
               subscriptionExpiry: premiumEntitlement?.expirationDate || null,
+              scenarioSubscriptionActive: hasActiveScenarioSubscription,
+              scenarioSubscriptionExpiry: scenarioEntitlement?.expirationDate || null,
             });
           }
         });
