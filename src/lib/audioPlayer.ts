@@ -1,6 +1,6 @@
 'use client';
 
-const langNameToCode: Record<string, string> = {
+export const langNameToCode: Record<string, string> = {
   'German': 'de-DE', 'French': 'fr-FR', 'Italian': 'it-IT',
   'Spanish': 'es-ES', 'Portuguese': 'pt-PT', 'Dutch': 'nl-NL',
   'Greek': 'el-GR', 'Polish': 'pl-PL', 'Romanian': 'ro-RO',
@@ -15,7 +15,7 @@ const langNameToCode: Record<string, string> = {
 // access to `speechSynthesis`/`SpeechSynthesisUtterance` below is guarded
 // so a missing API degrades silently instead of throwing a ReferenceError
 // that crashes the entire page (no error boundary catches it currently).
-function isSpeechSynthesisSupported(): boolean {
+export function isSpeechSynthesisSupported(): boolean {
   return typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
 }
 
@@ -26,13 +26,13 @@ function getSavedVoiceName(langCode: string) {
   return null;
 }
 
-function getSavedRate(fallbackRate: number) {
+export function getSavedRate(fallbackRate: number) {
   if (typeof window === 'undefined') return fallbackRate;
   const saved = parseFloat(localStorage.getItem('tts_rate') || '');
   return isNaN(saved) ? fallbackRate : saved;
 }
 
-function getBestVoice(lang: string) {
+export function getBestVoice(lang: string) {
   if (!isSpeechSynthesisSupported()) return null;
   const voices = window.speechSynthesis.getVoices();
   if (voices.length === 0) return null;
@@ -59,40 +59,15 @@ function getBestVoice(lang: string) {
   return voices.find(v => v.default) || voices[0] || null;
 }
 
-function safeCancelAndSpeak(utterance: SpeechSynthesisUtterance) {
-  if (!isSpeechSynthesisSupported()) return;
-  window.speechSynthesis.cancel();
-  setTimeout(() => {
-    window.speechSynthesis.speak(utterance);
-  }, 50);
-}
-
+// playAudio() is kept as the stable public API used throughout the app
+// (lesson pages, scenario mode, etc). It now delegates to AudioService,
+// which picks native device TTS on Android/iOS and the Web Speech API on
+// web — this fixes audio not working in the Android app, where the
+// WebView's speechSynthesis implementation is frequently missing/broken.
 export function playAudio(text: string, languageName: string, rate: number) {
-  if (!isSpeechSynthesisSupported()) {
-    console.warn('playAudio: Web Speech API is not supported in this environment, skipping playback.');
-    return;
-  }
-
-  try {
-    const langCode = langNameToCode[languageName] || 'en-US';
-    const effectiveRate = rate !== undefined ? rate : getSavedRate(1);
-
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = langCode;
-    utterance.rate = effectiveRate;
-    utterance.pitch = 1;
-
-    const voice = getBestVoice(langCode);
-    if (voice) {
-        utterance.voice = voice;
-    }
-
-    if (window.speechSynthesis.paused) {
-      window.speechSynthesis.resume();
-    }
-
-    safeCancelAndSpeak(utterance);
-  } catch (e) {
-    console.warn('playAudio failed:', e);
-  }
+  // Lazy import avoids a circular dependency (audioService.ts imports
+  // helpers from this file).
+  import('./audioService').then(({ AudioService }) => {
+    AudioService.play(text, languageName, rate);
+  });
 }
