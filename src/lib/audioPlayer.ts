@@ -10,19 +10,31 @@ const langNameToCode: Record<string, string> = {
   'Hindi': 'hi-IN', 'Tamil': 'ta-IN', 'Chinese': 'zh-CN',
 };
 
+// Some Android WebViews (including the one used by our Capacitor app on
+// certain devices/OEMs) do not implement the Web Speech API at all. Every
+// access to `speechSynthesis`/`SpeechSynthesisUtterance` below is guarded
+// so a missing API degrades silently instead of throwing a ReferenceError
+// that crashes the entire page (no error boundary catches it currently).
+function isSpeechSynthesisSupported(): boolean {
+  return typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined';
+}
+
 function getSavedVoiceName(langCode: string) {
+  if (typeof window === 'undefined') return null;
   const perLang = localStorage.getItem(`tts_voice_${langCode}`);
   if (perLang && perLang !== 'default') return perLang;
   return null;
 }
 
 function getSavedRate(fallbackRate: number) {
+  if (typeof window === 'undefined') return fallbackRate;
   const saved = parseFloat(localStorage.getItem('tts_rate') || '');
   return isNaN(saved) ? fallbackRate : saved;
 }
 
 function getBestVoice(lang: string) {
-  const voices = speechSynthesis.getVoices();
+  if (!isSpeechSynthesisSupported()) return null;
+  const voices = window.speechSynthesis.getVoices();
   if (voices.length === 0) return null;
 
   const savedVoiceName = getSavedVoiceName(lang);
@@ -48,30 +60,39 @@ function getBestVoice(lang: string) {
 }
 
 function safeCancelAndSpeak(utterance: SpeechSynthesisUtterance) {
-  speechSynthesis.cancel();
+  if (!isSpeechSynthesisSupported()) return;
+  window.speechSynthesis.cancel();
   setTimeout(() => {
-    speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(utterance);
   }, 50);
 }
 
 export function playAudio(text: string, languageName: string, rate: number) {
-
-  const langCode = langNameToCode[languageName] || 'en-US';
-  const effectiveRate = rate !== undefined ? rate : getSavedRate(1);
-
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = langCode;
-  utterance.rate = effectiveRate;
-  utterance.pitch = 1;
-
-  const voice = getBestVoice(langCode);
-  if (voice) {
-      utterance.voice = voice;
+  if (!isSpeechSynthesisSupported()) {
+    console.warn('playAudio: Web Speech API is not supported in this environment, skipping playback.');
+    return;
   }
 
-  if (speechSynthesis.paused) {
-    speechSynthesis.resume();
-  }
+  try {
+    const langCode = langNameToCode[languageName] || 'en-US';
+    const effectiveRate = rate !== undefined ? rate : getSavedRate(1);
 
-  safeCancelAndSpeak(utterance);
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = langCode;
+    utterance.rate = effectiveRate;
+    utterance.pitch = 1;
+
+    const voice = getBestVoice(langCode);
+    if (voice) {
+        utterance.voice = voice;
+    }
+
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+
+    safeCancelAndSpeak(utterance);
+  } catch (e) {
+    console.warn('playAudio failed:', e);
+  }
 }

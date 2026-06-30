@@ -76,7 +76,8 @@ export function VoiceSelector() {
   const { toast } = useToast();
 
   const populateVoiceList = useCallback(() => {
-    const v = speechSynthesis.getVoices();
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    const v = window.speechSynthesis.getVoices();
     if (v.length > 0) {
       setVoices(v);
     }
@@ -85,7 +86,9 @@ export function VoiceSelector() {
   useEffect(() => {
     setIsMounted(true);
     populateVoiceList();
-    speechSynthesis.onvoiceschanged = populateVoiceList;
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = populateVoiceList;
+    }
 
     const savedRate = parseFloat(localStorage.getItem(RATE_STORAGE_KEY) || '');
     if (!isNaN(savedRate)) {
@@ -119,7 +122,11 @@ export function VoiceSelector() {
   };
 
   const handlePreview = () => {
-    speechSynthesis.cancel();
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+      toast({ variant: 'destructive', title: 'Not supported', description: 'Voice preview is not supported on this device.' });
+      return;
+    }
+    window.speechSynthesis.cancel();
     const lang = LINGOFORGE_LANGUAGES.find(l => l.code === selectedLang);
     const text = PREVIEW_TEXTS[selectedLang] || `Hello! Preview for ${lang?.name}.`;
     const utterance = new SpeechSynthesisUtterance(text);
@@ -129,7 +136,7 @@ export function VoiceSelector() {
       const v = voices.find(v => v.name === selectedVoice);
       if (v) utterance.voice = v;
     }
-    speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(utterance);
   };
 
   return (

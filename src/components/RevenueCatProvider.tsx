@@ -24,38 +24,46 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
         await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
         await Purchases.configure({ apiKey: API_KEY });
 
-        Purchases.addPurchaserInfoUpdateListener(async (info: any) => {
-          const premiumEntitlement = info.entitlements.active[ENTITLEMENT_ID];
-          const hasActiveSubscription = typeof premiumEntitlement !== 'undefined';
+        try {
+          Purchases.addPurchaserInfoUpdateListener(async (info: any) => {
+            const premiumEntitlement = info.entitlements.active[ENTITLEMENT_ID];
+            const hasActiveSubscription = typeof premiumEntitlement !== 'undefined';
 
-          // Scenario Mode (isolated) — does not affect subscriptionActive/
-          // unlockedContent used by Survival/Pro above.
-          const scenarioEntitlement = info.entitlements.active[SCENARIO_ENTITLEMENT_ID];
-          const hasActiveScenarioSubscription = typeof scenarioEntitlement !== 'undefined';
+            // Scenario Mode (isolated) — does not affect subscriptionActive/
+            // unlockedContent used by Survival/Pro above.
+            const scenarioEntitlement = info.entitlements.active[SCENARIO_ENTITLEMENT_ID];
+            const hasActiveScenarioSubscription = typeof scenarioEntitlement !== 'undefined';
 
-          if (user && firestore) {
-            const userProfileRef = doc(firestore, 'userProfiles', user.uid);
+            if (user && firestore) {
+              const userProfileRef = doc(firestore, 'userProfiles', user.uid);
 
-            let source: 'google_play' | 'apple_iap' | 'stripe' | 'lemonsqueezy' | 'none' = 'none';
-            if (hasActiveSubscription) {
-              switch(premiumEntitlement.store) {
-                  case 'PLAY_STORE':
-                      source = 'google_play';
-                      break;
-                  case 'APP_STORE':
-                      source = 'apple_iap';
-                      break;
+              let source: 'google_play' | 'apple_iap' | 'stripe' | 'lemonsqueezy' | 'none' = 'none';
+              if (hasActiveSubscription) {
+                switch(premiumEntitlement.store) {
+                    case 'PLAY_STORE':
+                        source = 'google_play';
+                        break;
+                    case 'APP_STORE':
+                        source = 'apple_iap';
+                        break;
+                }
               }
+              updateDocumentNonBlocking(userProfileRef, {
+                subscriptionActive: hasActiveSubscription,
+                subscriptionSource: source,
+                subscriptionExpiry: premiumEntitlement?.expirationDate || null,
+                scenarioSubscriptionActive: hasActiveScenarioSubscription,
+                scenarioSubscriptionExpiry: scenarioEntitlement?.expirationDate || null,
+              });
             }
-            updateDocumentNonBlocking(userProfileRef, {
-              subscriptionActive: hasActiveSubscription,
-              subscriptionSource: source,
-              subscriptionExpiry: premiumEntitlement?.expirationDate || null,
-              scenarioSubscriptionActive: hasActiveScenarioSubscription,
-              scenarioSubscriptionExpiry: scenarioEntitlement?.expirationDate || null,
-            });
-          }
-        });
+          });
+        } catch (e) {
+          // addPurchaserInfoUpdateListener is not implemented on some
+          // plugin/platform combinations and throws/rejects instead of
+          // failing gracefully. Entitlement updates will still arrive via
+          // the server-side Google Play webhook in that case.
+          console.warn('RevenueCat addPurchaserInfoUpdateListener unavailable:', e);
+        }
     };
 
     init();
