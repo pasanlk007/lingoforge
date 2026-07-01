@@ -14,6 +14,18 @@ const config: CapacitorConfig = {
     allowMixedContent: false,
     backgroundColor: '#0f1923',
   },
+
+  plugins: {
+    FirebaseAuthentication: {
+      skipNativeAuth: false,
+      providers: ['google.com'],
+    },
+    GoogleAuth: {
+      scopes: ['profile', 'email'],
+      serverClientId: '157119324096-gse15lm640iflcvgi25kbrj6tnhl36ee.apps.googleusercontent.com',
+      forceCodeForRefreshToken: true,
+    },
+  },
 };
 
 export default config;
