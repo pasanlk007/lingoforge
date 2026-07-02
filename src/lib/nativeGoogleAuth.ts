@@ -1,6 +1,6 @@
 'use client';
 
-import { GoogleAuthProvider, signInWithCredential, type Auth, type User } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithCredential, signOut, type Auth, type User } from 'firebase/auth';
 
 export async function isNativePlatform(): Promise<boolean> {
   try {
@@ -20,18 +20,28 @@ export async function nativeGoogleSignIn(auth: Auth): Promise<User | null> {
   if (!native) return null;
 
   try {
+    if (auth.currentUser?.isAnonymous) {
+      console.log('[NATIVE AUTH] Signing out anonymous user');
+      await signOut(auth);
+    }
     const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
+    console.log('[NATIVE AUTH] Native flow started');
     const result = await FirebaseAuthentication.signInWithGoogle();
     const idToken = result.credential?.idToken;
-    if (!idToken) return null;
+    if (!idToken) {
+      console.error('[NATIVE AUTH] No idToken returned');
+      return null;
+    }
+    console.log('[NATIVE AUTH] Firebase credential created');
     const credential = GoogleAuthProvider.credential(idToken);
     const userCredential = await signInWithCredential(auth, credential);
+    console.log('[NATIVE AUTH] Firebase sign-in success');
     return userCredential.user;
   } catch (error) {
     if (error instanceof Error && error.message.toLowerCase().includes('canceled')) {
-      console.log("Google Sign-In was canceled.");
+      console.log('[NATIVE AUTH] Canceled by user');
     } else {
-      console.error('Native Google Sign-In error:', error);
+      console.error('[NATIVE AUTH] Error:', error);
     }
     return null;
   }
