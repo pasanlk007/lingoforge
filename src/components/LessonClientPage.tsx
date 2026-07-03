@@ -218,7 +218,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
                         <ExercisePanel exercises={exercises} onExercisesComplete={() => {}} t={t} />
                     )}
 
-                    {hasSentenceScramble && exercises?.sentenceScramble) && (
+                    {hasSentenceScramble && exercises?.sentenceScramble && (
                         <SentenceScramblePanel exercises={exercises.sentenceScramble} onComplete={() => {}} t={t} />
                     )}
                     
