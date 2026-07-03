@@ -212,6 +212,7 @@ function DashboardContent({ user }: { user: User }) {
     { href: '/survival', label: 'Survival', icon: Sprout },
     { href: '/alphabet', label: 'Alphabet', icon: BookText },
     { href: '/numbers', label: 'Numbers', icon: ListOrdered },
+    { href: '/scenario/my-plans', label: 'Scenario', icon: Target },
     { href: '/pricing', label: 'Upgrade', icon: Sparkles },
     { href: '/profile', label: 'Profile', icon: UserIcon },
   ];
@@ -321,7 +322,7 @@ function DashboardContent({ user }: { user: User }) {
                     {hasAccessToNextWeek ? (
                       <Button asChild className="w-full bg-green-600 hover:bg-green-700">
                         <Link href={nextSurvivalLessonUrl}>
-                          {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
+                          {t.goToNextLesson} <ChevronRight className="ml-1 h-4 w-4" />
                         </Link>
                       </Button>
                     ) : (
@@ -352,7 +353,7 @@ function DashboardContent({ user }: { user: User }) {
                       <span className="text-3xl">🎯</span>
                       <div>
                         <CardTitle className="text-xl">Scenario Mode</CardTitle>
-                        <CardDescription>{t.scenarioCard.description}</CardDescription>
+                        <CardDescription>{translations[validNativeLanguage as keyof typeof translations].scenarioCard.description}</CardDescription>
                       </div>
                     </div>
                     <Badge variant="outline" className="border-blue-400/50 bg-blue-900/30 text-blue-300 whitespace-nowrap">
@@ -364,15 +365,15 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                     <Target className="h-8 w-8 text-blue-400" />
                     <div>
-                      <p className="font-semibold text-sm">{t.scenarioCard.example}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{t.scenarioCard.feature}</p>
+                      <p className="font-semibold text-sm">{translations[validNativeLanguage as keyof typeof translations].scenarioCard.example}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{translations[validNativeLanguage as keyof typeof translations].scenarioCard.feature}</p>
                     </div>
                   </div>
                 </CardContent>
                 <CardFooter className="p-4 pt-2">
                   <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                     <Link href="/scenario/my-plans">
-                      🎯 {t.scenarioCard.button} <ChevronRight className="ml-1 h-3 w-3" />
+                      🎯 {translations[validNativeLanguage as keyof typeof translations].scenarioCard.button} <ChevronRight className="ml-1 h-3 w-3" />
                     </Link>
                   </Button>
                 </CardFooter>
@@ -455,7 +456,7 @@ function DashboardContent({ user }: { user: User }) {
         </div>
       </main>
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">
-        <div className="grid h-14 grid-cols-6">
+        <div className="grid h-14 grid-cols-7">
           {bottomNavItems.map((item) => (
             <Link
               key={item.label}

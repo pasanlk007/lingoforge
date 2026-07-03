@@ -7,80 +7,65 @@ export default function PrivacyPage() {
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
-      <main className="flex-1">
+      <main className="flex-1 pb-24">
         <div className="container mx-auto max-w-3xl py-12 px-4">
           <div className="prose prose-invert mx-auto">
-            <h1>Privacy Policy for LingoForge</h1>
-            <p>
-              <em>Last Updated: March 8, 2026</em>
-            </p>
+            <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+            <p className="text-muted-foreground italic">Last Updated: May 20, 2026</p>
 
-            <h2>1. Introduction</h2>
-            <p>
-              Welcome to LingoForge. We are committed to protecting your privacy
-              and handling your data in an open and transparent manner. This
-              privacy policy sets out how we collect, use, and protect any
-              information that you give us when you use this application.
-            </p>
+            <section className="mt-8">
+              <h2 className="text-xl font-semibold">1. Introduction</h2>
+              <p>
+                LingoForge ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application and website.
+              </p>
+            </section>
 
-            <h2>2. Information We Collect</h2>
-            <p>We may collect the following information:</p>
-            <ul>
-              <li>
-                <strong>Account Information:</strong> When you sign up, we
-                collect your name, email address, and chosen native/target
-                languages.
-              </li>
-              <li>
-                <strong>Usage Data:</strong> We track your progress, including
-                completed lessons, XP points, and streaks to personalize your
-                learning experience.
-              </li>
-              <li>
-                <strong>Firebase Services:</strong> We use Firebase
-                Authentication to manage your account and Firestore to store your
-                profile and progress data securely.
-              </li>
-            </ul>
+            <section className="mt-8">
+              <h2 className="text-xl font-semibold">2. Information We Collect</h2>
+              <h3 className="text-lg font-medium mt-4">2.1 Personal Information</h3>
+              <p>When you create an account, we collect information such as your name, email address, and profile picture (if provided via Google Sign-In).</p>
+              
+              <h3 className="text-lg font-medium mt-4">2.2 Usage & Progress Data</h3>
+              <p>We track your learning progress, including completed lessons, XP points, streaks, and quiz results to provide a personalized learning experience.</p>
 
-            <h2>3. How We Use Your Information</h2>
-            <p>
-              We use the information we collect to operate and maintain our
-              application, including to:
-            </p>
-            <ul>
-              <li>Personalize your learning path and content.</li>
-              <li>Track your progress and achievements.</li>
-              <li>Authenticate your account and secure your data.</li>
-              <li>Communicate with you about your account or our services.</li>
-            </ul>
+              <h3 className="text-lg font-medium mt-4">2.3 Payment Data</h3>
+              <p>We process payments through third-party billing services (Google Play Store and RevenueCat). We do not store your credit card numbers directly on our servers; however, we receive transaction tokens to verify your subscription status.</p>
+            </section>
 
-            <h2>4. Data Security</h2>
-            <p>
-              We are committed to ensuring that your information is secure. We use
-              Firebase, a platform with industry-standard security measures, to
-              protect your data from unauthorized access, alteration, or
-              disclosure. All data is stored in secure, access-controlled
-              databases.
-            </p>
+            <section className="mt-8">
+              <h2 className="text-xl font-semibold">3. Third-Party Services</h2>
+              <p>We use the following third-party services to ensure a seamless experience:</p>
+              <ul>
+                <li><strong>Google Firebase:</strong> For authentication and secure database storage.</li>
+                <li><strong>RevenueCat:</strong> To manage and sync subscriptions across devices.</li>
+                <li><strong>Anthropic & OpenAI:</strong> To generate AI-powered lessons and speech-to-text transcriptions.</li>
+              </ul>
+            </section>
 
-            <h2>5. Your Rights</h2>
-            <p>
-              You have the right to access, update, or delete your personal
-              information. You can manage your profile information directly from
-              your profile page. If you wish to delete your account entirely,
-              please contact us.
-            </p>
-            
-            <h2>6. Changes to This Policy</h2>
-            <p>
-              We may update this policy from time to time. We will notify you of
-              any changes by posting the new privacy policy on this page.
-            </p>
+            <section className="mt-8">
+              <h2 className="text-xl font-semibold">4. Data Deletion & Account Termination</h2>
+              <p>
+                You have the right to delete your account at any time. You can do this directly within the <strong>Profile</strong> section of the app. Deleting your account will permanently remove all your progress, XP, and personal data from our active databases.
+              </p>
+            </section>
 
-            <p>
-              <Link href="/">Go back to the homepage</Link>
-            </p>
+            <section className="mt-8">
+              <h2 className="text-xl font-semibold">5. Children's Privacy</h2>
+              <p>
+                LingoForge is designed for adults and professionals (migrant workers). We do not knowingly collect information from children under the age of 13.
+              </p>
+            </section>
+
+            <section className="mt-8">
+              <h2 className="text-xl font-semibold">6. Contact Us</h2>
+              <p>
+                If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:support@lingoforge.app" className="text-primary underline">support@lingoforge.app</a>
+              </p>
+            </section>
+
+            <div className="mt-12 pt-6 border-t">
+              <Link href="/" className="text-primary hover:underline">← Back to Home</Link>
+            </div>
           </div>
         </div>
       </main>
