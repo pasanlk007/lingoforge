@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Languages, Menu, LogOut } from "lucide-react";
+import { Languages, Menu, LogOut, Sparkles, BookText, Map, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
@@ -18,7 +18,6 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { nativeLanguages, targetLanguages, translations } from "@/lib/translations";
-
 
 export function Navigation() {
   const [isMenuOpen, setMenuOpen] = useState(false);

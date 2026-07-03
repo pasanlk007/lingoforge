@@ -158,6 +158,7 @@ function DashboardContent({ user }: { user: User }) {
   const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
   const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
   const t_ui = translations[validNativeLanguage as keyof typeof translations].ui;
+  const t_sc = translations[validNativeLanguage as keyof typeof translations].scenarioCard;
   
   const langKey = targetLanguage.toLowerCase();
   
@@ -351,7 +352,7 @@ function DashboardContent({ user }: { user: User }) {
                       <span className="text-3xl">🎯</span>
                       <div>
                         <CardTitle className="text-xl">Scenario Mode</CardTitle>
-                        <CardDescription>{translations[validNativeLanguage as keyof typeof translations].scenarioCard.description}</CardDescription>
+                        <CardDescription>{t_sc.description}</CardDescription>
                       </div>
                     </div>
                     <Badge variant="outline" className="border-blue-400/50 bg-blue-900/30 text-blue-300 whitespace-nowrap">
@@ -363,15 +364,15 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                     <Target className="h-8 w-8 text-blue-400" />
                     <div>
-                      <p className="font-semibold text-sm">{translations[validNativeLanguage as keyof typeof translations].scenarioCard.example}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{translations[validNativeLanguage as keyof typeof translations].scenarioCard.feature}</p>
+                      <p className="font-semibold text-sm">{t_sc.example}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{t_sc.feature}</p>
                     </div>
                   </div>
                 </CardContent>
                 <CardFooter className="p-4 pt-2">
                   <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                     <Link href="/scenario/my-plans">
-                      🎯 {translations[validNativeLanguage as keyof typeof translations].scenarioCard.button} <ChevronRight className="ml-1 h-3 w-3" />
+                      🎯 {t_sc.button} <ChevronRight className="ml-1 h-3 w-3" />
                     </Link>
                   </Button>
                 </CardFooter>
