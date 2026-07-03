@@ -232,7 +232,7 @@ function DashboardContent({ user }: { user: User }) {
     <div className={cn("flex min-h-dvh flex-col bg-background", isRTL ? 'font-sans' : 'font-body')} dir={isRTL ? 'rtl' : 'ltr'}>
       <VoiceInit />
       <Navigation />
-      <main className="flex-1 pb-20 md:pb-0">
+      <main className="flex-1 pb-24 md:pb-0">
         <div className="container mx-auto py-8 sm:py-12 px-4">
           <TrialEndBanner trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
           <TrialEndModal trialDaysUsed={trialDaysUsed} subscriptionActive={userProfile?.subscriptionActive || false} userEmail={user.email} />
@@ -317,27 +317,30 @@ function DashboardContent({ user }: { user: User }) {
                     </div>
                 </CardContent>
                 <CardFooter className="flex flex-col gap-2 pt-2 p-4">
-                  <div className="grid grid-cols-3 gap-2 w-full">
+                  <div className="flex flex-col gap-2 w-full">
                     {hasAccessToNextWeek ? (
-                      <Button asChild size="sm" className="col-span-3 bg-green-600 hover:bg-green-700">
+                      <Button asChild className="w-full bg-green-600 hover:bg-green-700">
                         <Link href={nextSurvivalLessonUrl}>
-                          {t.goToNextLesson} <ChevronRight className="ml-1 h-3 w-3" />
+                          {t.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
                         </Link>
                       </Button>
                     ) : (
-                      <Button asChild size="sm" className="col-span-3 bg-green-600 hover:bg-green-700">
-                        <Link href="/pricing">{t_ui.upgradeToUnlock} <ChevronRight className="ml-1 h-3 w-3" /></Link>
+                      <Button asChild className="w-full bg-green-600 hover:bg-green-700">
+                        <Link href="/pricing">{t_ui.upgradeToUnlock} <ChevronRight className="ml-2 h-4 w-4" /></Link>
                       </Button>
                     )}
-                    <Button asChild variant="outline" size="sm" className="col-span-1 text-xs">
-                      <Link href="/survival">🌱 Survival</Link>
-                    </Button>
-                    <Button asChild variant="outline" size="sm" className="col-span-1 text-xs">
-                      <Link href="/alphabet">🔤 {t.alphabetPath}</Link>
-                    </Button>
-                    <Button asChild variant="outline" size="sm" className="col-span-1 text-xs">
-                      <Link href="/numbers">🔢 {t.numbersPath}</Link>
-                    </Button>
+                    
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full">
+                      <Button asChild variant="outline" size="sm" className="w-full">
+                        <Link href="/survival">🌱 Survival</Link>
+                      </Button>
+                      <Button asChild variant="outline" size="sm" className="w-full">
+                        <Link href="/alphabet">🔤 {t.alphabetPath}</Link>
+                      </Button>
+                      <Button asChild variant="outline" size="sm" className="w-full">
+                        <Link href="/numbers">🔢 {t.numbersPath}</Link>
+                      </Button>
+                    </div>
                   </div>
                 </CardFooter>
               </Card>
@@ -349,7 +352,7 @@ function DashboardContent({ user }: { user: User }) {
                       <span className="text-3xl">🎯</span>
                       <div>
                         <CardTitle className="text-xl">Scenario Mode</CardTitle>
-                        <CardDescription>ඔබේ real-life situation එකට ගැලපෙන AI conversation plan එකක්</CardDescription>
+                        <CardDescription>{t.scenarioCard.description}</CardDescription>
                       </div>
                     </div>
                     <Badge variant="outline" className="border-blue-400/50 bg-blue-900/30 text-blue-300 whitespace-nowrap">
@@ -361,15 +364,15 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                     <Target className="h-8 w-8 text-blue-400" />
                     <div>
-                      <p className="font-semibold text-sm">" Italy waiter job" / "embassy interview" වගේ ඔබේම situation එක</p>
-                      <p className="text-xs text-muted-foreground mt-1">Daily AI voice conversation, ඔබේ situation එකටම ගැලපෙන</p>
+                      <p className="font-semibold text-sm">{t.scenarioCard.example}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{t.scenarioCard.feature}</p>
                     </div>
                   </div>
                 </CardContent>
                 <CardFooter className="p-4 pt-2">
                   <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                     <Link href="/scenario/my-plans">
-                      🎯 My Scenario Plans <ChevronRight className="ml-1 h-3 w-3" />
+                      🎯 {t.scenarioCard.button} <ChevronRight className="ml-1 h-3 w-3" />
                     </Link>
                   </Button>
                 </CardFooter>
