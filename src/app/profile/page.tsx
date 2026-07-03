@@ -264,7 +264,7 @@ function ProfileContent({ user }: { user: User }) {
             </CardContent>
           </Card>
         </div>
-
+        )}
       </main>
     </div>
   )
