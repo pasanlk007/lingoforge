@@ -37,7 +37,6 @@ import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 import { InstallPromptCard } from "@/components/InstallPromptCard";
 import { isNativeApp } from "@/lib/isNativeApp";
-import { XPChart } from "@/components/XPChart";
 
 function DashboardLoading() {
   return (
@@ -297,8 +296,6 @@ function DashboardContent({ user }: { user: User }) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-8">
               
-              <XPChart dailyXpLog={userProfile?.dailyXpLog} />
-
               <Card className="flex flex-col border-2 border-green-500/50 bg-gradient-to-br from-green-900/20 to-card">
                 <CardHeader>
                   <div className="flex items-center gap-3">
@@ -337,10 +334,10 @@ function DashboardContent({ user }: { user: User }) {
                         <Link href="/survival">🌱 Survival</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm" className="w-full">
-                        <Link href="/alphabet">🔤 {t.alphabetPath}</Link>
+                        <Link href="/alphabet">{t.alphabetPath}</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm" className="w-full">
-                        <Link href="/numbers">🔢 {t.numbersPath}</Link>
+                        <Link href="/numbers">{t.numbersPath}</Link>
                       </Button>
                     </div>
                   </div>

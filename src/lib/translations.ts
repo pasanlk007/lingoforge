@@ -1,7 +1,5 @@
 'use client';
 
-import { targetLanguages } from "@/lib/translations";
-
 // This file contains all translation data and language constants for the app.
 
 export const translations = {
@@ -418,7 +416,7 @@ export const translations = {
       langs: { title: "භාෂා 21", desc: "යුරෝපීය, ආසියානු, මැද පෙරදිග" },
     },
     pricingTitle: "ඔබේ සම්පූර්ණ විභවය විවෘත කරන්න",
-    pricingSub: "ඔබේ නොමිලේ අත්හදා බැලීමට Survival Path හි 1 වන සතිය ඇතුළත් වේ. සියලුම පාඩම් අගුළු ඇරීමට උත්ශ්‍රේණි කරන්න.",
+    pricingSub: "ඔබේ නොමිලේ අත්හදා බැලීමට Survival Path හි 1 වන සතිය ඇතලත් වේ. සියලුම පාඩම් අගුළු ඇරීමට උත්ශ්‍රේණි කරන්න.",
     pricingPage: {
         purchasingFor: "ඔබ මිලදී ගන්නේ:",
         changeLanguageNote: "ඔබේ ඉලක්ක භාෂාව පාලන පුවරුවෙන් වෙනස් කරන්න.",
@@ -713,9 +711,9 @@ export const translations = {
       dialogues: { title: "वास्तविक संवाद", desc: "वास्तविक बातचीत जो आप रोजाना करेंगे" },
       exercises: { title: "دैनिक व्यायाम", desc: "रिक्त स्थान भरें, MCQ, शब्द मिलान खेल" },
       streak: { title: "स्ट्रीक प्रणाली", desc: "دैनिक स्ट्रीक्स से प्रेरित रहें" },
-      progress: { title: "प्रगति ट्रैकिंग", desc: "Visualize your journey to fluency with detailed stats." },
-      certs: { title: "Achievement Badges", desc: "Earn badges for your milestones and show off your skills." },
-      langs: { title: `${targetLanguages.length} Languages Available`, desc: "From French to Japanese, choose the language of your dreams." },
+      progress: { title: "प्रगति ट्रैकिंग", desc: "देखें कि आप हर हफ्ते कितनी दूर आ गए हैं" },
+      certs: { title: "प्रमाणपत्र", desc: "अपनी प्रगति का प्रमाण अर्जित करें" },
+      langs: { title: "21 भाषाएँ", desc: "यूरोपीय, एशियाई, मध्य पूर्वी" },
     },
     pricingTitle: "अपनी पूरी क्षमता अनलॉक करें",
     pricingSub: "आपके मुफ्त परीक्षण में जीवन रक्षा पथ का सप्ताह 1 शामिल है। सभी पाठ अनलॉक करने के लिए अपग्रेड करें।",
@@ -822,7 +820,7 @@ export const translations = {
       iAmLearning: "मैं सीख रहा हूँ",
       survivalBundle: {
         title: "सर्वाइवल बंडल",
-        description: "व्यावहारिक प्रवाह के लिए आपका पहला कदम।"
+        description: "Basics learning path"
       },
       alphabetPath: "Learn Alphabet",
       numbersPath: "Learn Numbers",
@@ -841,8 +839,8 @@ export const translations = {
       }
     },
     notifications: {
-      title: "पढ्ने बेला भयो! 📚",
-      body: "आफ्नो स्ट्रीक जोगाउनुहोस्! आज {language} को १० मिनेटले तपाईंको विदेश जाने सपना साकार पार्नेछ। 🚀",
+        title: "पढ़ाई का समय हो गया! 📚",
+        body: "अपनी स्ट्रीक बरकरार रखें! आज {language} के 10 मिनट आपके भविष्य को संवारेंगे। 🚀",
     },
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
@@ -900,7 +898,7 @@ export const translations = {
       // navigation
       pathsAndFeatures: "पथ और सुविधाएँ",
       logIn: "लॉग इन करें",
-      signUp: "サイン अप करें",
+      signUp: "사인 अप करें",
       profile: "प्रोफ़ाइल",
       logOut: "लॉग आउट",
     }
@@ -949,7 +947,7 @@ export const translations = {
       newScenarioButton: "ایک نیا سیناریو بنائیں",
       buildingDayTitle: "دن {day} کا مواد بن رہا ہے...",
       buildingDaySubtitle: "اس میں چند سیکنڈ لگتے ہیں۔",
-      dayLoadFailedTitle: "دن {day} کا مواد لوڈ نہیں ہو سکا",
+      dayLoadFailedTitle: "دن {day} का مواد لوڈ نہیں ہو سکا",
       subscriptionRequiredTitle: "اس دن کو غیر مقفل کرنے کے لیے سبسکرپشن درکار ہے",
       subscriptionRequiredDescription: "آپ کا منصوبہ بن گیا تھا ، لیکن روزانہ کا مواد تیار کرنے کے لیے آپ کو ایک فعال سیناریو موڈ سبسکرپشن کی ضرورت ہے۔",
       phraseCounter: "جملہ {current} / {total}",
@@ -968,7 +966,7 @@ export const translations = {
       subscriptionExpiry: "اگلی تجدید/میعاد ختم ہونے کی تاریخ:",
       cancelHowTitle: "میں اپنی سبسکرپشن کیسے منسوخ کروں؟",
       cancelStep1: '1. سبسکرائب کرتے وقت لیمن اسکوئیزی سے موصول ہونے والی رسید ای میل چیک کریں — اس میں "Manage your subscription" کا لنک ہے۔',
-      cancelStep2: "2. یا app.lemonsqueezy.com/my-orders پر جائیں اور اس ای میل سے لاگ ان کریں جو آپ نے چیک آؤٹ پر استعمال کی تھی۔",
+      cancelStep2: "2. یا app.lemonsqueezy.com/my-orders पर جائیں اور اس ای میل سے لاگ ان کریں جو آپ نے چیک آؤٹ پر استعمال کی تھی۔",
       cancelStep3: "3. وہاں سے آپ کسی بھی وقت منسوخ کر سکتے ہیں — آپ سے اگلے بلنگ سائیکل کے لیے چارج نہیں لیا جائے گا۔",
     },
     scenarioCard: {
@@ -1009,7 +1007,7 @@ export const translations = {
     getStarted: "شروع کریں",
     features: {
       ai: { title: "AI سے چلنے والا", desc: "آپ کے لیے تیار کردہ حقیقی اسباق" },
-      audio: { title: "آڈیو شامل", desc: "ہر لفظ کا مقامی تلفظ سنیں" },
+      audio: { title: "آڈیو شامل", desc: "ہر لفظ का مقامی تلفظ سنیں" },
       dialogues: { title: "حقیقی مکالمے", desc: "اصل گفتگو جو آپ روزانہ استعمال کریں گے" },
       exercises: { title: "روزانہ مشقیں", desc: "خالی جگہیں پر کریں، MCQ, الفاظ ملانے والے کھیل" },
       streak: { title: "اسٹریک سسٹم", desc: "روزانہ اسٹریک کے ساتھ متحرک رہیں" },
@@ -1027,7 +1025,7 @@ export const translations = {
     },
     freePlan: {
       title: "مفت منصوبہ",
-      description: "بقا کے راستے के ہفتہ 1 تک مفت رسائی حاصل کریں۔ کریڈٹ کارڈ کی ضرورت نہیں ہے۔",
+      description: "بقا کے راستے के ہفتہ 1 तक मुफ्त رسائی حاصل کریں۔ کریڈٹ کارڈ کی ضرورت نہیں ہے۔",
       feat1: "بقا کے راستے کا پہلا ہفتہ",
       feat2: "روزانہ 5 نئے الفاظ",
       btn: "مفت میں شروع کریں"
@@ -1169,7 +1167,7 @@ export const translations = {
       errorInvalidDay: 'غلط دن کا پیرامیٹر: "{day}"। ایک نمبر ہونا چاہئے۔',
       backToDashboard: "ڈیش بورڈ پر واپس",
       contentNotAvailableTitle: "مواد دستیاب نہیں ہے",
-      contentNotAvailableDesc: "یہ سبق ابھی تک نہیں بنایا گیا ہے۔ آپ `public/lessons` ڈائرکٹری میں سبق کی فائل بنا سکتے ہیں۔ ہدایات کے لئے براہ کرم `docs/lesson-generation-guide.md` देखیں۔",
+      contentNotAvailableDesc: "یہ سبق ابھی تک نہیں بنایا گیا ہے۔ آپ `public/lessons` ڈائرکٹری में سبق کی فائل बना सकते ہیں۔ ہدایات کے لئے براہ کرم `docs/lesson-generation-guide.md` देखیں۔",
       // lesson client page
       weekProgress: "ہفتے کی پیشرفت",
       dayProgress: "دن کی پیشرفت",
@@ -1226,7 +1224,7 @@ export const translations = {
       subscribeButton: "সাবস্ক্রাইব করুন — $13/মাস",
       myPlansTitle: "আমার সিনারিও প্ল্যান",
       myPlansSubtitle: "আপনার তৈরি করা সমস্ত পরিকল্পনা",
-      myPlansEmpty: "আপনি এখনও কোনো পরিকল্পনা তৈরি করেননি।",
+      myPlansEmpty: "আপনার এখনও কোনো পরিকল্পনা তৈরি করেননি।",
       newPlanButton: "নতুন প্ল্যান",
       continueButton: "চালিয়ে যান",
       reviewButton: "পর্যালোচনা",
