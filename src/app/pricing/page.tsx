@@ -21,8 +21,8 @@ const COURSE_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/451
 const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checkout/buy/6119eaa4-e974-4681-8586-015dbb52740b';
 
 const SKUS = {
-  course: 'lingoforge_course_unlock',
-  lifetime: 'lingoforge_lifetime_unlock',
+  course: 'single_course',
+  lifetime: 'lifetime',
   scenarioMonthly: 'lingoforge_scenario_monthly',
 };
 
