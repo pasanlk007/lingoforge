@@ -23,7 +23,7 @@ const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checko
 const SKUS = {
   course: 'single_course',
   lifetime: 'lifetime',
-  scenarioMonthly: 'lingoforge_scenario_monthly',
+  scenarioMonthly: 'lingoforge_scenario_monthly:lingoforge-scenario-monthly',
 };
 
 // Minimal interface to avoid static import of native library
