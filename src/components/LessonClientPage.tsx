@@ -165,7 +165,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
       <>
         <VoiceInit />
         <TooltipProvider>
-            <div className="container mx-auto max-w-3xl py-8 px-4">
+            <div className="container mx-auto max-w-3xl py-8 px-4 pb-24">
                 <header className="mb-6">
                     <div className="flex items-center justify-between mb-4">
                          <Button variant="ghost" asChild>

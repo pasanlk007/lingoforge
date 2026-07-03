@@ -272,7 +272,7 @@ export default function ProLessonPage() {
           </div>
       )}
       <Navigation />
-      <main className="flex-1 container mx-auto max-w-3xl py-8 px-4">
+      <main className="flex-1 container mx-auto max-w-3xl py-8 px-4 pb-24">
         <div className="mb-6">
           <div className="text-sm text-purple-400 font-semibold mb-1">Pro Path • Week {week} • Day {day}</div>
           <div className={cn("transition-all duration-500 bg-card/80 backdrop-blur-sm border-primary/20 p-6 rounded-xl", isComplete && "border-2 border-green-500 shadow-lg shadow-green-500/20")}>

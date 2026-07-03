@@ -2,7 +2,7 @@
 
 import { useUser, useAuth, useFirestore, useMemoFirebase } from '@/firebase/provider';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { doc } from 'firebase/firestore';
 import { useDoc } from '@/firebase/firestore/use-doc';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -121,7 +121,7 @@ function ProfileContent({ user }: { user: User }) {
           </div>
       )}
       <Navigation />
-      <main className="flex-1">
+      <main className="flex-1 pb-24">
         <div className="container mx-auto max-w-2xl py-12 space-y-8">
           <Card className="bg-card/80 backdrop-blur-sm">
             <CardHeader>

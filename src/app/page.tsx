@@ -181,13 +181,13 @@ export default function LandingPage() {
             <div className="absolute -top-7 right-12 h-0 w-0 border-x-8 border-x-transparent border-b-[12px] border-b-cyan-800"></div>
             <p className="text-base font-bold text-white">ඔබේ භාශාව තෝරන්න</p>
             <p className="mt-1 text-sm text-cyan-200">
-                වෙබ් අඩවිය ඔබේ මව් භාෂාවෙන් බැලීමට පවතින භාෂා වලින් තෝරන්න.
+                වෙබ් අඩවිය ඔබේ මව් භාෂාවෙන් බැලීමට පවতিන භාෂා වලින් තෝරන්න.
             </p>
           </div>
         </div>
       )}
 
-      <main>
+      <main className="pb-20 md:pb-0">
         <section 
           className="relative w-full overflow-hidden flex items-center py-24 lg:min-h-screen lg:py-0"
           style={{
