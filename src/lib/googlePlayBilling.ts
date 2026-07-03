@@ -61,9 +61,36 @@ export async function purchase(sku: string, appUserID: string, entitlementId: st
       throw new Error('Purchases can only be made on a native device.');
     }
     const { Purchases, PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
-    const { products } = await Purchases.getProducts({ productIdentifiers: [sku] });
-    const productToPurchase = products[0];
-    if (!productToPurchase) throw new Error(`Product with SKU ${sku} not found.`);
+
+    let productToPurchase: any = null;
+
+    try {
+      const { products } = await Purchases.getProducts({
+        productIdentifiers: [sku],
+        type: 'NON_SUBSCRIPTION' as any,
+      });
+      if (products.length > 0) productToPurchase = products[0];
+    } catch (e) {}
+
+    if (!productToPurchase) {
+      try {
+        const { products } = await Purchases.getProducts({
+          productIdentifiers: [sku],
+          type: 'SUBSCRIPTION' as any,
+        });
+        if (products.length > 0) productToPurchase = products[0];
+      } catch (e) {}
+    }
+
+    if (!productToPurchase) {
+      const { products } = await Purchases.getProducts({ productIdentifiers: [sku] });
+      productToPurchase = products[0];
+    }
+
+    if (!productToPurchase) throw new Error('Product with SKU ' + sku + ' not found.');
+
+    console.log('Purchasing product:', productToPurchase.identifier, productToPurchase.productType);
+
     const { purchaserInfo } = await Purchases.purchaseStoreProduct({ product: productToPurchase });
     const isEntitled = typeof purchaserInfo.entitlements.active[entitlementId] !== 'undefined';
     return { isAcknowledged: isEntitled, purchaserInfo };
