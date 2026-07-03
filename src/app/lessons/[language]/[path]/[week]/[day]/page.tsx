@@ -165,24 +165,26 @@ export default function LessonPage() {
               : 'Your free trial has ended. Continue learning!'}
           </p>
           <div className="bg-muted/50 border border-border rounded-xl p-6 max-w-sm mx-auto">
-            <div className="text-2xl mb-2">🌐</div>
-            <p className="font-semibold mb-1">
-              {nativeLanguage === 'Sinhala' ? 'දායකත්වය ලබාගන්න:' : 'Subscribe at:'}
-            </p>
-            <p className="text-primary font-bold text-lg">lingoforge.app</p>
-            <p className="text-xs text-muted-foreground mt-2">
-              {nativeLanguage === 'Sinhala' 
-                ? 'Survival Bundle ($26) හෝ Lifetime Pro ($49) plans ලබා ගත හැකිය'
-                : 'Survival Bundle ($26) or Lifetime Pro ($49) plans available'}
-            </p>
+            {isApp ? (
+              <>
+                <div className="text-2xl mb-2">🎮</div>
+                <p className="font-semibold mb-1">Upgrade on Google Play</p>
+                <p className="text-xs text-muted-foreground mt-2">Get Survival Bundle or Lifetime Pro</p>
+              </>
+            ) : (
+              <>
+                <div className="text-2xl mb-2">🌐</div>
+                <p className="font-semibold mb-1">{nativeLanguage === 'Sinhala' ? 'දායකත්වය ලබාගන්න:' : 'Subscribe at:'}</p>
+                <p className="text-primary font-bold text-lg">lingoforge.app</p>
+                <p className="text-xs text-muted-foreground mt-2">{nativeLanguage === 'Sinhala' ? 'Survival Bundle ($26) හෝ Lifetime Pro ($49) ලබා ගත හැකිය' : 'Survival Bundle ($26) or Lifetime Pro ($49) plans available'}</p>
+              </>
+            )}
           </div>
-          {!isApp && (
-            <Button asChild className="mt-6">
-              <Link href="/pricing">
-                {nativeLanguage === 'Sinhala' ? 'Upgrade කරන්න' : 'Upgrade Plan'}
-              </Link>
-            </Button>
-          )}
+          <Button asChild className="mt-6">
+            <Link href="/pricing">
+              {nativeLanguage === 'Sinhala' ? 'Upgrade කරන්න' : 'Upgrade Plan'}
+            </Link>
+          </Button>
           <Button variant="outline" asChild className="mt-4">
             <Link href="/dashboard">
               {nativeLanguage === 'Sinhala' ? 'ආපසු යන්න' : 'Back to Dashboard'}
