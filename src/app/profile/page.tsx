@@ -35,7 +35,7 @@ function ProfilePageLoading() {
   return (
     <>
       <Navigation />
-      <div className="container mx-auto max-w-2xl py-12">
+      <div className="container mx-auto max-w-2xl py-12 px-4">
         <Skeleton className="h-48 w-full" />
       </div>
     </>
@@ -122,7 +122,7 @@ function ProfileContent({ user }: { user: User }) {
       )}
       <Navigation />
       <main className="flex-1 pb-24">
-        <div className="container mx-auto max-w-2xl py-12 space-y-8">
+        <div className="container mx-auto max-w-2xl py-12 space-y-8 px-4">
           <Card className="bg-card/80 backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center gap-4">
@@ -196,12 +196,7 @@ function ProfileContent({ user }: { user: User }) {
               </div>
             </CardContent>
           </Card>
-          
-        </div>
 
-        {/* Scenario Mode subscription (isolated section, separate from the
-            one-time Survival/Pro plan shown above) */}
-        <div className="px-4 pb-6">
           <Card className="border-2 border-blue-500/30 bg-gradient-to-br from-blue-950/10 to-card">
             <CardHeader className="pb-3">
               <CardTitle className="text-base flex items-center gap-2">
@@ -242,28 +237,26 @@ function ProfileContent({ user }: { user: User }) {
               )}
             </CardContent>
           </Card>
-        </div>
 
-        {/* Install App Section - hidden on native */}
-        {!isNativeApp() && (
-        <div className="px-4 pb-6">
-          <Card className="border-primary/20 bg-primary/5">
-            <CardContent className="p-4">
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">📲</span>
-                <div className="flex-1">
-                  <p className="font-bold text-sm">Install LingoForge App</p>
-                  <p className="text-xs text-muted-foreground">Get the full experience on your device</p>
+          {!isNativeApp() && (
+            <Card className="border-primary/20 bg-primary/5">
+              <CardContent className="p-4">
+                <div className="flex items-center gap-3">
+                  <span className="text-3xl">📲</span>
+                  <div className="flex-1">
+                    <p className="font-bold text-sm">Install LingoForge App</p>
+                    <p className="text-xs text-muted-foreground">Get the full experience on your device</p>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-3 space-y-2 text-xs text-muted-foreground">
-                <p>🤖 <strong>Android:</strong> Tap ⋮ menu → Add to Home Screen</p>
-                <p>🍎 <strong>iPhone/iPad:</strong> Tap Share □↑ → Add to Home Screen</p>
-                <p>💻 <strong>Desktop:</strong> Click ⊕ in address bar</p>
-              </div>
-            </CardContent>
-          </div>
-        )}
+                <div className="mt-3 space-y-2 text-xs text-muted-foreground">
+                  <p>🤖 <strong>Android:</strong> Tap ⋮ menu → Add to Home Screen</p>
+                  <p>🍎 <strong>iPhone/iPad:</strong> Tap Share □↑ → Add to Home Screen</p>
+                  <p>💻 <strong>Desktop:</strong> Click ⊕ in address bar</p>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+        </div>
       </main>
     </div>
   )

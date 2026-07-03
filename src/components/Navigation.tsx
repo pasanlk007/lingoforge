@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Languages, Menu, LogOut, Sparkles, BookText, Map, User } from "lucide-react";
+import { Languages, Menu, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
@@ -75,6 +75,8 @@ export function Navigation() {
     )
   }
 
+  const navLinkClass = "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground";
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
@@ -84,34 +86,19 @@ export function Navigation() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <Link
-            href="/paths"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/paths" className={navLinkClass}>
             {t.pathsAndFeatures}
           </Link>
-          <Link
-            href="/dashboard"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/dashboard" className={navLinkClass}>
             {t_dashboard.title}
           </Link>
-          <Link
-            href="/pricing"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/pricing" className={navLinkClass}>
             Pricing
           </Link>
-          <Link
-            href="/blog"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/blog" className={navLinkClass}>
             Blog
           </Link>
-          <Link
-            href="/about"
-            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <Link href="/about" className={navLinkClass}>
             About
           </Link>
         </nav>
