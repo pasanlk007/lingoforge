@@ -159,7 +159,7 @@ export const translations = {
       badge: "⭐ Best Value",
       price_usd: "$49 one-time",
       price_lkr: "LKR 29,700",
-      feat1: "Everything in Survival Pack",
+      feat1: "Everything in Survival Pack + Pro lessons",
       feat2: "Lifetime access to ALL current & future languages",
       feat3: "Priority Support",
       feat4: "Become a polyglot!",
