@@ -18,8 +18,36 @@ export async function getProducts(productIds: string[]) {
     const { Capacitor } = await import('@capacitor/core');
     if (!Capacitor.isNativePlatform()) return [];
     const { Purchases } = await import('@revenuecat/purchases-capacitor');
-    const { products } = await Purchases.getProducts({ productIdentifiers: productIds });
-    return products;
+
+    let allProducts: any[] = [];
+
+    try {
+      const { products: subsProducts } = await Purchases.getProducts({
+        productIdentifiers: productIds,
+        type: 'SUBSCRIPTION' as any,
+      });
+      allProducts = [...allProducts, ...subsProducts];
+    } catch (e) {
+      console.warn('Could not fetch subscription products:', e);
+    }
+
+    try {
+      const { products: iapProducts } = await Purchases.getProducts({
+        productIdentifiers: productIds,
+        type: 'NON_SUBSCRIPTION' as any,
+      });
+      allProducts = [...allProducts, ...iapProducts];
+    } catch (e) {
+      console.warn('Could not fetch non-subscription products:', e);
+    }
+
+    if (allProducts.length === 0) {
+      const { products } = await Purchases.getProducts({ productIdentifiers: productIds });
+      allProducts = products;
+    }
+
+    console.log('RevenueCat products fetched:', allProducts.map((p: any) => p.identifier));
+    return allProducts;
   } catch (e) {
     console.error('Error getting RevenueCat products:', e);
     return [];
