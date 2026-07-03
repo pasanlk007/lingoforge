@@ -145,7 +145,7 @@ export interface UserProfile {
   subscriptionExpiry: string | null; // ISO date string, or null for lifetime
   xpPoints: number; 
   currentStreak: number;
-  lastActiveDate: string; // ISO 8601 date string
+  lastActiveDate: string; // ISO 8601 date string (YYYY-MM-DD)
   aiPlanningEnabled: boolean;
   photoURL?: string;
   activePath?: string;
