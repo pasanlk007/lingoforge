@@ -157,11 +157,11 @@ export default function LessonPage() {
         <main className="flex-1 container mx-auto py-12 max-w-3xl text-center px-4">
           <div className="text-6xl mb-6">🔒</div>
           <h1 className="text-2xl font-bold mb-3">
-            {nativeLanguage === 'Sinhala' ? 'මෙම පාඩම잠금දිමා ඇත' : 'This Lesson is Locked'}
+            {nativeLanguage === 'Sinhala' ? 'this lesson is locked' : 'This Lesson is Locked'}
           </h1>
           <p className="text-muted-foreground mt-3 mb-6">
             {nativeLanguage === 'Sinhala' 
-              ? 'ඔබේ නොමිලේ trial අවසන් වී ඇත. දිගටම ඉගෙනගන්න!'
+              ? 'ඔබේ free trial අවසන් වී ඇත. දිගටම ඉගෙනගන්න!'
               : 'Your free trial has ended. Continue learning!'}
           </p>
           <div className="bg-muted/50 border border-border rounded-xl p-6 max-w-sm mx-auto">
@@ -169,7 +169,7 @@ export default function LessonPage() {
             <p className="font-semibold mb-1">
               {nativeLanguage === 'Sinhala' ? 'දායකත්වය ලබාගන්න:' : 'Subscribe at:'}
             </p>
-            <p className="text-primary font-bold text-lg">bashaguru.com</p>
+            <p className="text-primary font-bold text-lg">lingoforge.app</p>
             <p className="text-xs text-muted-foreground mt-2">
               {nativeLanguage === 'Sinhala' 
                 ? 'Survival Bundle ($26) හෝ Lifetime Pro ($49) plans ලබා ගත හැකිය'

@@ -36,6 +36,8 @@ import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 import { InstallPromptCard } from "@/components/InstallPromptCard";
+import { isNativeApp } from '@/lib/isNativeApp';
+import { isNativeApp } from '@/lib/isNativeApp';
 import { isNativeApp } from "@/lib/isNativeApp";
 import { XPChart } from "@/components/XPChart";
 
@@ -431,7 +433,7 @@ function DashboardContent({ user }: { user: User }) {
               <ReminderCard />
               <ReferralCard />
               <VoiceSelector />
-              <InstallPromptCard />
+              {!isNativeApp() && <InstallPromptCard />}
               <Card>
                 <CardHeader><CardTitle className="flex items-center gap-2"><CalendarDays className="h-5 w-5" />{t.weeklyProgress}</CardTitle></CardHeader>
                 <CardContent>
