@@ -244,7 +244,8 @@ function ProfileContent({ user }: { user: User }) {
           </Card>
         </div>
 
-        {/* Install App Section */}
+        {/* Install App Section - hidden on native */}
+        {!isNativeApp() && (
         <div className="px-4 pb-6">
           <Card className="border-primary/20 bg-primary/5">
             <CardContent className="p-4">

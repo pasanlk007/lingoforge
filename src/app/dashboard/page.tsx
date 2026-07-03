@@ -36,6 +36,7 @@ import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 import { InstallPromptCard } from "@/components/InstallPromptCard";
+import { isNativeApp } from "@/lib/isNativeApp";
 import { XPChart } from "@/components/XPChart";
 
 function DashboardLoading() {
