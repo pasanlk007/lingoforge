@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, CheckCircle, ChevronLeft, ChevronRight, Speaker, Languages as LanguagesIcon } from 'lucide-react';
 import { useUser, useFirestore, useMemoFirebase, updateDocumentNonBlocking, setDocumentNonBlocking } from '@/firebase';
-import { arrayUnion, type DocumentData, type DocumentReference } from 'firebase/firestore';
+import { arrayUnion, type DocumentData, type DocumentReference, increment } from 'firebase/firestore';
 import type { LanguageLesson, LessonDay, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
@@ -20,6 +20,7 @@ import { SentenceScramblePanel } from './SentenceScramblePanel';
 import { Separator } from './ui/separator';
 import { translations, targetLanguages } from '@/lib/translations';
 import { TooltipProvider } from './ui/tooltip';
+import { format as formatDate } from 'date-fns';
 
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
 
@@ -115,20 +116,28 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
     };
     
     const handleCompleteDay = () => {
-
-if (!userProfileRef || !dayData) return;
+        if (!userProfileRef || !dayData || isComplete) return;
 
         setIsComplete(true);
 
         const langKey = lesson.language.toLowerCase();
         const pathKey = dayData.path;
         const dayKeyToSave = `${dayData.week}-${currentDay}`;
+        const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
 
         const updateData: any = {
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
           [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
           [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
+          xpPoints: increment(100),
+          [`dailyXpLog.${todayKey}`]: increment(100),
+          lastActiveDate: todayKey,
         };
+
+        // Award streak if first lesson of the day
+        if (userProfile?.lastActiveDate !== todayKey) {
+            updateData.currentStreak = increment(1);
+        }
 
         // If day 7 complete, permanently unlock next week
         if (currentDay === 7) {
@@ -151,8 +160,6 @@ if (!userProfileRef || !dayData) return;
     const nextDay = currentDay < 7 ? currentDay + 1 : 1;
     const nextWeek = currentDay < 7 ? dayData.week : dayData.week + 1;
     const nextLessonUrl = `/lessons/${lesson.language.toLowerCase()}/${lesson.path}/${nextWeek}/${nextDay}`;
-    const isLastFreeDay = currentDay === 7 && dayData.week === 1;
-    const isApp = typeof window !== 'undefined' && !!(window as any).Capacitor?.isNativePlatform?.();
 
     return (
       <>

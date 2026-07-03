@@ -2,7 +2,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useUser, useFirestore, useMemoFirebase, useDoc, updateDocumentNonBlocking } from '@/firebase';
-import { doc, arrayUnion } from 'firebase/firestore';
+import { doc, arrayUnion, increment } from 'firebase/firestore';
 import type { UserProfile, LearningPath } from '@/lib/types';
 import { proLessonTopics } from '@/lib/proLessonTopics';
 import { Navigation } from '@/components/Navigation';
@@ -15,6 +15,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { canAccessLesson } from '@/lib/accessControl';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { format as formatDate } from 'date-fns';
 
 const AudioPlayback = dynamic(() => import('@/components/AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
@@ -196,11 +197,23 @@ export default function ProLessonPage() {
     setIsComplete(true);
     const langKey = (language as string).toLowerCase();
     const dayKey = `${week}-${day}`;
-    updateDocumentNonBlocking(userProfileRef, {
+    const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
+
+    const updateData: any = {
       [`languageProgress.${langKey}.pro.completedDays`]: arrayUnion(dayKey),
       [`languageProgress.${langKey}.pro.lastWeek`]: week,
       [`languageProgress.${langKey}.pro.lastDay`]: day,
-    });
+      xpPoints: increment(100),
+      [`dailyXpLog.${todayKey}`]: increment(100),
+      lastActiveDate: todayKey,
+    };
+
+    // Award streak if first lesson of the day
+    if (userProfile?.lastActiveDate !== todayKey) {
+        updateData.currentStreak = increment(1);
+    }
+
+    updateDocumentNonBlocking(userProfileRef, updateData);
   };
 
   const proLessonBg = PlaceHolderImages.find(p => p.id === 'pro-lesson-background');

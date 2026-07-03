@@ -143,7 +143,7 @@ export interface UserProfile {
   subscriptionPlan?: 'weekly' | 'course' | 'lifetime';
   subscriptionLanguage?: string;
   subscriptionExpiry: string | null; // ISO date string, or null for lifetime
-  xpPoints: number; // Legacy, no longer incremented
+  xpPoints: number; 
   currentStreak: number;
   lastActiveDate: string; // ISO 8601 date string
   aiPlanningEnabled: boolean;
@@ -152,6 +152,9 @@ export interface UserProfile {
   lastLessonWeek?: number;
   lastLessonDay?: number;
   
+  // Tracks XP earned per day for charts: {"2026-05-10": 100, "2026-05-11": 250}
+  dailyXpLog?: Record<string, number>;
+
   languageProgress?: {
     [language: string]: {
       [path: string]: {
