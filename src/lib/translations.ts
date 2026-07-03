@@ -1,3 +1,4 @@
+
 'use client';
 
 // This file contains all translation data and language constants for the app.
@@ -108,7 +109,7 @@ export const translations = {
     features: {
       ai: { title: "AI-Powered", desc: "Real lessons generated for you" },
       audio: { title: "Audio Built-in", desc: "Hear native pronunciation for every word" },
-      dialogues: { title: "Real Dialogues", desc: "Practice conversations you'll actually have in real life." },
+      dialogues: { title: "Real Dialogues", desc: "Actual conversations you'll actually have in real life." },
       exercises: { title: "Interactive Exercises", desc: "Reinforce your learning with engaging and effective exercises." },
       streak: { title: "Daily Streak System", desc: "Stay motivated by building your learning streak every day." },
       progress: { title: "Progress Tracking", desc: "Visualize your journey to fluency with detailed stats." },
@@ -239,8 +240,8 @@ export const translations = {
       }
     },
     notifications: {
-      title: "Time for your LingoForge lesson!",
-      body: "Your daily {language} lesson is waiting. Keep your streak going!",
+      title: "LingoForge Study Time! 📚",
+      body: "Keep the flame alive! 10 minutes of {language} today will change your future abroad. 🚀",
     },
     wordCard: {
       phonetic: 'Phonetic',
@@ -435,9 +436,9 @@ export const translations = {
       badge: "ජනප්‍රිය",
       price_usd: "$3.99/සතිය",
       price_lkr: "LKR 1,200/සතිය",
-      feat1: "Access to one chosen language",
-      feat2: "All 3 learning paths for that language",
-      feat3: "All interactive exercises & audio",
+      feat1: "තෝරාගත් එක් භාෂාවකට ප්‍රවේශය",
+      feat2: "එම භාෂාව සඳහා ඉගෙනුම් මාර්ග 3ම",
+      feat3: "සියලුම අන්තර්ක්‍රියාකාරී අභ්‍යාස සහ ශ්‍රව්‍ය",
       feat4: "ඕනෑම වේලාවක අවලංගු කරන්න",
       note: "සති 12 සම්පූර්ණ කළ පසු ගෙවීම් ස්වයංක්‍රීයව නවතී",
     },
@@ -539,8 +540,8 @@ export const translations = {
       }
     },
     notifications: {
-        title: "ඔබගේ LingoForge පාඩම සඳහා වේලාවයි!",
-        body: "ඔබගේ දෛනික {language} පාඩම බලා සිටී. ඔබගේ streak එක දිගටම කරගෙන යන්න!",
+        title: "පාඩම් කරන්න වෙලාව හරි! 📚",
+        body: "ඔබේ streak එක පවත්වා ගන්න! අද {language} විනාඩි 10ක් ඉගෙනීමෙන් ඔබේ විදේශ සිහින සැබෑ කරගන්න. 🚀",
     },
     wordCard: {
       phonetic: 'උච්චාරණය',
@@ -707,9 +708,9 @@ export const translations = {
     getStarted: "शुरू करें",
      features: {
       ai: { title: "AI-संचालित", desc: "आपके लिए बनाए गए वास्तविक पाठ" },
-      audio: { title: "ऑडियो अंतर्निहित", desc: "हर शब्द का देशी उच्चारण सुनें" },
+      audio: { title: "ऑ디오 अंतर्निहित", desc: "हर शब्द का देशी उच्चारण सुनें" },
       dialogues: { title: "वास्तविक संवाद", desc: "वास्तविक बातचीत जो आप रोजाना करेंगे" },
-      exercises: { title: "دৈনিক অনুশীলন", desc: "रिक्त स्थान भरें, MCQ, शब्द मिलान खेल" },
+      exercises: { title: "दैनिक व्यायाम", desc: "रिक्त स्थान भरें, MCQ, शब्द मिलान खेल" },
       streak: { title: "स्ट्रीक प्रणाली", desc: "दैनिक स्ट्रीक्स से प्रेरित रहें" },
       progress: { title: "प्रगति ट्रैकिंग", desc: "देखें कि आप हर हफ्ते कितनी दूर आ गए हैं" },
       certs: { title: "Achievement Badges", desc: "Earn badges for your milestones and show off your skills." },
@@ -839,8 +840,8 @@ export const translations = {
       }
     },
     notifications: {
-      title: "आपके लिंगोफोर्ज पाठ का समय!",
-      body: "आपका दैनिक {language} पाठ प्रतीक्षा कर रहा है। अपनी स्ट्रीक जारी रखें!",
+      title: "पढ़ने का समय हो गया! 📚",
+      body: "अपनी स्ट्रीक जारी रखें! आज {language} के 10 मिनट आपके विदेश जाने के सपने को सच कर देंगे। 🚀",
     },
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
@@ -888,7 +889,7 @@ export const translations = {
       correct: "सही!",
       matchingPairs: "जोड़ियां मिलाओ",
       greatJob: "बहुत बढ़िया!",
-      allPairsMatched: "सभी जोड़ियां सही ढंग سے मिलाई गईं!",
+      allPairsMatched: "सभी जोड़ियां सही ढंग से मिलाई गईं!",
       arrangeTheWords: "शब्दों को व्यवस्थित करें",
       translate: 'अनुवाद करें: "{hint}"',
       check: "जाँचें",
@@ -957,8 +958,8 @@ export const translations = {
       matchConfidence: "~ایچ کا اعتماد:",
       matchDisclaimer: "(یہ تلفظ کی درستگی نہیں ہے — یہ اس بات کا تخمینہ ہے کہ Whisper نے آپ کی بات کو ہدف کے متن سے میل کھاتے ہوئے کتنا واضح طور پر سمجھا)",
       retryNeeded: "دوبارہ کوشش کریں — جاری رکھنے کے لیے آپ کو {min}% سے زیادہ اسکور کی ضرورت ہے۔",
-      micPermissionError: "مائیکروفون تک رسائی نہیں ہو سکی। براہ کرم اپنے براؤزر کی اجازتیں چیک کریں۔",
-      transcribeError: "ٹرانسکرپشن حاصل نہیں ہو سکی। براہ کرم دوبارہ کوشش کریں۔",
+      micPermissionError: "مائیکروفون تک رسائی نہیں ہو سکی۔ براہ کرم اپنے براؤزر کی اجازتیں چیک کریں۔",
+      transcribeError: "ٹرانسکرپشن حاصل نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔",
       nextPhrase: "اگلا جملہ",
       dayComplete: "Complete Day {day}",
       subscriptionStatusActive: "آپ کی سیناریو موڈ سبسکرپشن فعال ہے۔",
@@ -970,7 +971,7 @@ export const translations = {
       cancelStep3: "3. وہاں سے آپ کسی بھی وقت منسوخ کر سکتے ہیں — آپ سے اگلے بلنگ سائیکل کے لیے چارج نہیں لیا جائے گا۔",
     },
     languagesAvailable: "زبانیں دستیاب ہیں۔",
-    heroTitle: "Developing Language Skills for Migrant Workers",
+    heroTitle: "مہاجر کارکنوں کے لیے زبان کی مہارتیں تیار کرنا",
     heroSub: "مہاجر کارکنوں کے لیے منظم زبان کی بقا کے راستے۔",
     startBtn: "👉 ابھی شروع کریں",
     viewPaths: "دستیاب زبانیں دیکھیں",
@@ -1007,7 +1008,7 @@ export const translations = {
     getStarted: "شروع کریں",
     features: {
       ai: { title: "AI سے چلنے والا", desc: "آپ کے لیے تیار کردہ حقیقی اسباق" },
-      audio: { title: "آڈیو شامل", desc: "ہر لفظ کا مقامی تلفظ سنیں" },
+      audio: { title: "آڈیو شامل", desc: "ہر لفظ का مقامی تلفظ سنیں" },
       dialogues: { title: "حقیقی مکالمے", desc: "اصل گفتگو جو آپ روزانہ استعمال کریں گے" },
       exercises: { title: "روزانہ مشقیں", desc: "خالی جگہیں پر کریں، MCQ, الفاظ ملانے والے کھیل" },
       streak: { title: "اسٹریک سسٹم", desc: "روزانہ اسٹریک کے ساتھ متحرک رہیں" },
@@ -1124,12 +1125,6 @@ export const translations = {
       },
       alphabetPath: "Learn Alphabet",
       numbersPath: "Learn Numbers",
-      scenarioCard: {
-        description: "آپ کی حقیقی صورتحال کے لیے AI گفتگو کا منصوبہ",
-        example: '"اٹلی ویٹر جاب" / "سفارت خانے کا انٹرویو" جیسی آپ کی اپنی صورتحال',
-        feature: "روزانہ AI وائس گفتگو، آپ کے لیے موزوں",
-        button: "My Scenario Plans"
-      },
       proBundle: {
         badge: "AI ایڈوانسڈ پاتھ",
         title: "LingoForge پرو",
@@ -1145,8 +1140,8 @@ export const translations = {
       }
     },
     notifications: {
-        title: "آپ کے لنگوفورج سبق کا وقت!",
-        body: "آپ کا روزانہ {language} سبق انتظار کر رہا ہے۔ اپنی اسٹریک جاری رکھیں!",
+        title: "پڑھائی کا وقت ہو گیا! 📚",
+        body: "اپنی اسٹریک برقرار رکھیں! آج {language} کے 10 منٹ آپ کے بیرون ملک مستقبل کو سنواریں گے۔ 🚀",
     },
     wordCard: {
       phonetic: 'صوتیات',
@@ -1168,7 +1163,7 @@ export const translations = {
       // lesson page errors
       errorTitle: "سبق لوڈ نہیں ہو سکا",
       errorWeekNotFound: "{path} راستے کے ہفتہ {week} کے لئے سبق का مواد موجود نہیں ہے۔ براہ کرم 'public{lessonPath}' پر فائل بنائیں۔",
-      errorDayNotFound: "فائل '{lessonPath}' میں دن {day} کا ڈیٹا نہیں ملا۔ یقینی بنائیں کہ JSON فائل میں 'days' سرنی میں اس دن کے لئے ایک اندراج موجود ہے۔",
+      errorDayNotFound: "فائل '{lessonPath}' میں دن {day} کا ڈیٹا نہیں ملا। یقینی بنائیں کہ JSON فائل میں 'days' سرنی میں اس دن کے لئے ایک اندراج موجود ہے۔",
       errorInvalidJson: "'{lessonPath}' پر سبق کی فائل میں غلط JSON ہے۔ براہ کرم نحو کی غلطیوں کے لئے فائل کو چیک کریں۔ خرابی: {error}",
       errorGeneric: "سبق کی فائل لوڈ کرنے میں ناکام। حیثیت: {status}",
       errorInvalidDay: 'غلط دن کا پیرامیٹر: "{day}"। ایک نمبر ہونا چاہئے۔',
@@ -1325,7 +1320,7 @@ export const translations = {
     pricingSub: "আপনার বিনামূল্যে ট্রায়ালে বেঁচে থাকার পথের সপ্তাহ 1 অন্তর্ভুক্ত। সমস্ত পাঠ আনলক করতে আপগ্রেড করুন।",
     pricingPage: {
         purchasingFor: "আপনি কিনছেন:",
-        changeLanguageNote: "আপনার ড্যাশবোর্ডে লক্ষ্য ভাষা পরিবর্তন করুন।",
+        changeLanguageNote: "আপনার ড্যাশবোর্ডরে লক্ষ্য ভাষা পরিবর্তন করুন।",
         autoRenewNote: "এই পরিকল্পনা স্বয়ংক্রিয়ভাবে পুনর্নবীকরণ হয়। যেকোনো সময় বাতিল করুন।",
         freeTrialNote: "বেঁচে থাকার পথের সপ্তাহ 1 বিনামূল্যে অ্যাক্সেস করুন। কোন ক্রেডিট কার্ডের প্রয়োজন নেই।",
     },
@@ -1445,8 +1440,8 @@ export const translations = {
       }
     },
     notifications: {
-      title: "আপনার লিঙ্গোফোর্জ পাঠের জন্য সময়!",
-      body: "আপনার দৈনিক {language} পাঠ অপেক্ষা করছে। আপনার স্ট্রিক চালিয়ে যান!",
+        title: "পড়ার সময় হয়েছে! 📚",
+        body: "আপনার স্ট্রিক বজায় রাখুন! আজ {language} ১০ মিনিট শিখলে আপনার বিদেশে যাওয়ার স্বপ্ন সফল হবে। 🚀",
     },
     wordCard: {
       phonetic: 'উচ্চারণ',
@@ -1524,7 +1519,7 @@ export const translations = {
       errorLoginFirst: "कृपया पहिले लग इन गर्नुहोस्।",
       errorGenerateFailed: "योजना बनाउन सकिएन। कृपया पुनः प्रयास गर्नुहोस्।",
       lockedTitle: "सिनारियो मोड",
-      lockedDescription: "तपाईंको सटीक अवस्थाको लागि एक कस्टम AI कुराकानी योजना — दूतावास अन्तर्वार्ता, विदेशमा जागिर, खाना डेलिभरी, जे पनि। आफ्नो इच्छा अनुसार धेरै योजनाहरू बनाउन मासिक सदस्यता लिनुहोस्।",
+      lockedDescription: "तपाईंको सटीक अवस्थाको लागि एक कस्टम AI कुराकानी योजना — दूतावास अन्तर्वार्ता, विदेशमा जागिर, खाना डेलिभरी, जे पनि। आफ्नो इच्छा अनुसार धैरे योजनाहरू बनाउन मासिक सदस्यता लिनुहोस्।",
       lockedFeature1: "आफ्नो अवस्था वर्णन गर्नुहोस् र एक कस्टम योजना प्राप्त गर्नुहोस्",
       lockedFeature2: "दैनिक AI आवाज कुराकानी अभ्यास",
       lockedFeature3: "आफ्नो इच्छा अनुसार धेरै नयाँ परिदृश्य योजनाहरू बनाउनुहोस् (मासिक सदस्यता)",
@@ -1592,7 +1587,7 @@ export const translations = {
     redesign_cta_button: "Start here",
     poster: {
         title: "आवश्यक वाक्यहरू - व्यवस्थित सिकाइ मार्ग",
-        subtitle: "दैनिक जीवनको लागि • कामको लागि",
+        subtitle: "दैनिक सिकाइका लागि • कामको लागि",
         tagline: "unfold your opportunities"
     },
     scenarioCard: {
@@ -1745,8 +1740,8 @@ export const translations = {
       }
     },
     notifications: {
-      title: "तपाईंको लिंगोफोर्य पाठको लागि समय!",
-      body: "तपाईंको दैनिक {language} पाठ पर्खिरहेको छ। आफ्नो स्ट्रीक जारी राख्नुहोस्!",
+      title: "पढ्ने बेला भयो! 📚",
+      body: "आफ्नो स्ट्रीक जोगाउनुहोस्! आज {language} को १० मिनेटले तपाईंको विदेश जाने सपना साकार पार्नेछ। 🚀",
     },
     wordCard: {
       phonetic: 'ध्वन्यात्मक',
@@ -1774,7 +1769,7 @@ export const translations = {
       errorInvalidDay: 'अमान्य दिन प्यारामिटर: "{day}"। यो एउटा संख्या हुनुपर्छ।',
       backToDashboard: "ड्यासबोर्डमा फर्कनुहोस्",
       contentNotAvailableTitle: "सामग्री उपलब्ध छैन",
-      contentNotAvailableDesc: "यो पाठ अझै सिर्जना गरिएको छैन। तपाईंले `public/lessons` डाइरेक्टरीमा पाठ फाइल सिर्जना गर्न सक्नुहुन्छ। त्यसैले कृपया `docs/lesson-generation-guide.md` हेर्नुहोस्।",
+      contentNotAvailableDesc: "यो पाठ अझै सिर्जना गरिएको छैन। तपाईंले `public/lessons` डाइरेक्टरी में पाठ फाइल सिर्जना गर्न सक्नुहुन्छ। त्यसैले कृपया `docs/lesson-generation-guide.md` हेर्नुहोस्।",
       // lesson client page
       weekProgress: "हप्ताको प्रगति",
       dayProgress: "दिनको प्रगति",

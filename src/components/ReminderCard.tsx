@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -5,10 +6,11 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { Input } from '@/components/ui/input';
-import { BellRing, BellOff } from 'lucide-react';
+import { BellRing, BellOff, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { translations } from '@/lib/translations';
 import { Label } from './ui/label';
+import { isNativeApp } from '@/lib/isNativeApp';
 
 interface DailyReminder {
   enabled: boolean;
@@ -19,7 +21,8 @@ export function ReminderCard() {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
   const [isMounted, setIsMounted] = useState(false);
-  const [permission, setPermission] = useState<NotificationPermission>('default');
+  const [isSaving, setIsSaving] = useState(false);
+  const [permission, setPermission] = useState<NotificationPermission | 'prompt' | 'denied' | 'granted'>('default');
   const [reminder, setReminder] = useState<DailyReminder>({ enabled: false, time: '09:00' });
   const { toast } = useToast();
 
@@ -37,15 +40,25 @@ export function ReminderCard() {
       setTargetLanguage(savedTargetLang);
     }
     
-    if ('Notification' in window) {
-      setPermission(Notification.permission);
-    }
+    const checkPermissions = async () => {
+      if (isNativeApp()) {
+        try {
+          const { LocalNotifications } = await import('@capacitor/local-notifications');
+          const status = await LocalNotifications.checkPermissions();
+          setPermission(status.display as any);
+        } catch (e) {
+          console.error("Capacitor permissions check failed", e);
+        }
+      } else if ('Notification' in window) {
+        setPermission(Notification.permission);
+      }
+    };
+    checkPermissions();
     
     const savedReminder = localStorage.getItem('lingoforge_daily_reminder');
     if (savedReminder) {
       try {
         const parsed = JSON.parse(savedReminder);
-        // Basic validation
         if(typeof parsed.enabled === 'boolean' && typeof parsed.time === 'string') {
           setReminder(parsed);
         }
@@ -55,58 +68,80 @@ export function ReminderCard() {
     }
   }, []);
 
-  useEffect(() => {
-    if (permission !== 'granted' || !isMounted || !reminder.enabled) {
-      return;
-    }
-
-    const checkReminder = () => {
-      const now = new Date();
-      const currentTime = now.toTimeString().slice(0, 5); // "HH:MM"
-
-      if (reminder.time === currentTime) {
-        new Notification(t_notifications.title, {
-          body: t_notifications.body.replace('{language}', targetLanguage),
-          icon: '/icon.png' 
-        });
+  const requestPermission = async () => {
+    if (isNativeApp()) {
+      try {
+        const { LocalNotifications } = await import('@capacitor/local-notifications');
+        const status = await LocalNotifications.requestPermissions();
+        setPermission(status.display as any);
+      } catch (e) {
+        toast({ variant: 'destructive', title: 'Native error', description: 'Failed to request notification permissions.' });
       }
-    };
-    
-    const intervalId = setInterval(checkReminder, 60000); // Check every minute
-
-    return () => clearInterval(intervalId);
-  }, [permission, reminder, isMounted, targetLanguage, t_notifications]);
-
-
-  const requestPermission = () => {
-    if (!('Notification' in window)) {
+    } else if ('Notification' in window) {
+      const status = await Notification.requestPermission();
+      setPermission(status);
+    } else {
       toast({
         variant: 'destructive',
         title: 'Unsupported Browser',
         description: 'This browser does not support desktop notifications.',
       });
-      return;
     }
-    Notification.requestPermission().then(setPermission);
   };
 
   const handleReminderChange = (field: keyof DailyReminder, value: boolean | string) => {
     setReminder(prev => ({ ...prev, [field]: value }));
   };
   
-  const saveReminder = () => {
-    if (permission !== 'granted' && reminder.enabled) {
-       toast({
-        variant: 'destructive',
-        title: t_dashboard.reminders.permissionNeeded,
-        description: 'Please grant notification permission to save an enabled reminder.',
-      });
-      return;
+  const saveReminder = async () => {
+    setIsSaving(true);
+    try {
+      if (reminder.enabled && permission !== 'granted') {
+         toast({
+          variant: 'destructive',
+          title: t_dashboard.reminders.permissionNeeded,
+          description: 'Please grant notification permission to enable daily study reminders.',
+        });
+        setIsSaving(false);
+        return;
+      }
+
+      localStorage.setItem('lingoforge_daily_reminder', JSON.stringify(reminder));
+
+      if (isNativeApp()) {
+        const { LocalNotifications } = await import('@capacitor/local-notifications');
+        
+        // Cancel existing daily reminders
+        await LocalNotifications.cancel({ notifications: [{ id: 1 }] });
+
+        if (reminder.enabled) {
+          const [hours, minutes] = reminder.time.split(':').map(Number);
+          
+          await LocalNotifications.schedule({
+            notifications: [
+              {
+                id: 1,
+                title: t_notifications.title,
+                body: t_notifications.body.replace('{language}', targetLanguage),
+                schedule: {
+                  on: { hour: hours, minute: minutes },
+                  repeats: true,
+                  allowWhileIdle: true,
+                },
+                sound: 'default',
+              },
+            ],
+          });
+        }
+      }
+
+      toast({ title: t_dashboard.reminders.saved });
+    } catch (e: any) {
+      console.error("Failed to save reminder", e);
+      toast({ variant: 'destructive', title: 'Error', description: 'Failed to save reminder. Please try again.' });
+    } finally {
+      setIsSaving(false);
     }
-    localStorage.setItem('lingoforge_daily_reminder', JSON.stringify(reminder));
-    toast({
-      title: t_dashboard.reminders.saved,
-    });
   }
 
   if (!isMounted) {
@@ -152,7 +187,10 @@ export function ReminderCard() {
                     />
                 </div>
             </div>
-            <Button onClick={saveReminder} className="w-full mt-4">{t_dashboard.reminders.save}</Button>
+            <Button onClick={saveReminder} className="w-full mt-4" disabled={isSaving}>
+              {isSaving && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              {t_dashboard.reminders.save}
+            </Button>
           </div>
         )}
       </CardContent>
