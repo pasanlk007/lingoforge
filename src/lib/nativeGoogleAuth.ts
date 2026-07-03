@@ -49,49 +49,22 @@ export async function nativeGoogleSignIn(auth: Auth): Promise<User | null> {
   const native = await isNativePlatform();
   if (!native) return null;
   try {
-<<<<<<< Updated upstream
     if (auth.currentUser?.isAnonymous) {
       console.log('[NATIVE AUTH] Signing out anonymous user');
       await signOut(auth);
     }
     console.log('[NATIVE AUTH] Native flow started');
     const { idToken } = await nativeGoogleSignInInternal();
-=======
-    // Sign out any anonymous user first — the @capacitor-firebase/authentication
-    // plugin can auto-initialize an anonymous session on Android, which conflicts
-    // with Google Sign-In ('Called logOut but the current user is anonymous').
-    if (auth.currentUser?.isAnonymous) {
-      console.log('[NATIVE AUTH] Signing out anonymous user before Google Sign-In');
-      await signOut(auth);
-    }
-
-    const { FirebaseAuthentication } = await import('@capacitor-firebase/authentication');
-    console.log('[NATIVE AUTH] Native flow started');
-    const result = await FirebaseAuthentication.signInWithGoogle();
-    console.log('[NATIVE AUTH] Google account selected, idToken present:', !!result.credential?.idToken);
-    const idToken = result.credential?.idToken;
-    if (!idToken) {
-      console.error('[NATIVE AUTH] No idToken returned — likely missing clientId config');
-      return null;
-    }
->>>>>>> Stashed changes
     console.log('[NATIVE AUTH] Firebase credential created');
     const credential = GoogleAuthProvider.credential(idToken);
     const userCredential = await signInWithCredential(auth, credential);
     console.log('[NATIVE AUTH] Firebase sign-in success');
     return userCredential.user;
   } catch (error) {
-<<<<<<< Updated upstream
     if (error instanceof Error && error.message.toLowerCase().includes('cancel')) {
       console.log('[NATIVE AUTH] Canceled by user');
     } else {
       console.error('[NATIVE AUTH] Error:', error);
-=======
-    if (error instanceof Error && error.message.toLowerCase().includes('canceled')) {
-      console.log('[NATIVE AUTH] Google Sign-In was canceled by user.');
-    } else {
-      console.error('[NATIVE AUTH] Native Google Sign-In error:', error);
->>>>>>> Stashed changes
     }
     return null;
   }
