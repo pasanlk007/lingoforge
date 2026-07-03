@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Link from 'next/link';
-import { Home, Sprout, BookOpen, User as UserIcon, Flame, Star, Zap, CalendarDays, ChevronRight, Target, Globe, ShieldCheck, Landmark, BookText, Sparkles, ListOrdered } from 'lucide-react';
+import { Home, Sprout, BookOpen, User as UserIcon, Flame, Star, Zap, CalendarDays, ChevronRight, Target, Globe, ShieldCheck, Landmark, BookText, Sparkles, ListOrdered, Map } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -212,6 +212,7 @@ function DashboardContent({ user }: { user: User }) {
     { href: '/survival', label: 'Survival', icon: Sprout },
     { href: '/alphabet', label: 'Alphabet', icon: BookText },
     { href: '/numbers', label: 'Numbers', icon: ListOrdered },
+    { href: '/dashboard/lesson-map', label: 'Pro Map', icon: Map },
     { href: '/scenario/my-plans', label: 'Scenario', icon: Target },
     { href: '/pricing', label: 'Upgrade', icon: Sparkles },
     { href: '/profile', label: 'Profile', icon: UserIcon },
@@ -456,7 +457,7 @@ function DashboardContent({ user }: { user: User }) {
         </div>
       </main>
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">
-        <div className="grid h-14 grid-cols-7">
+        <div className="grid h-14 grid-cols-8">
           {bottomNavItems.map((item) => (
             <Link
               key={item.label}

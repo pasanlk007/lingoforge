@@ -262,8 +262,7 @@ function ProfileContent({ user }: { user: User }) {
                 <p>💻 <strong>Desktop:</strong> Click ⊕ in address bar</p>
               </div>
             </CardContent>
-          </Card>
-        </div>
+          </div>
         )}
       </main>
     </div>

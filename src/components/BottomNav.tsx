@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Sprout, BookText, ListOrdered, Sparkles, User, Target } from 'lucide-react';
+import { Home, Sprout, BookText, ListOrdered, Sparkles, User, Target, Map } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
@@ -10,6 +10,7 @@ const navItems = [
   { href: '/survival', label: 'Survival', icon: Sprout },
   { href: '/alphabet', label: 'Alphabet', icon: BookText },
   { href: '/numbers', label: 'Numbers', icon: ListOrdered },
+  { href: '/dashboard/lesson-map', label: 'Pro Map', icon: Map },
   { href: '/scenario/my-plans', label: 'Scenario', icon: Target },
   { href: '/pricing', label: 'Upgrade', icon: Sparkles },
   { href: '/profile', label: 'Profile', icon: User },
@@ -21,7 +22,7 @@ export function BottomNav() {
 
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">
-      <div className="grid h-14 grid-cols-7">
+      <div className="grid h-14 grid-cols-8">
         {navItems.map((item) => (
           <Link
             key={item.label}
