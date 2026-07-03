@@ -2,12 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
 import { initializeFirebase } from '@/firebase/server-init';
 
-// firestore is initialized lazily inside POST() and threaded through to avoid
-// crashing during Next.js build-time page-data collection (same fix pattern
-// as src/firebase/server-init.ts's lazy init).
 const packageName = 'com.lingoforge.app';
 
-// Initialize the Google API client
 const auth = new google.auth.GoogleAuth({
   credentials: {
     client_email: process.env.GOOGLE_PLAY_CLIENT_EMAIL,
@@ -16,24 +12,16 @@ const auth = new google.auth.GoogleAuth({
   scopes: ['https://www.googleapis.com/auth/androidpublisher'],
 });
 
-const androidpublisher = google.androidpublisher({
-  version: 'v3',
-  auth: auth,
-});
+const androidpublisher = google.androidpublisher({ version: 'v3', auth });
 
 async function findUserByObfuscatedId(firestore: any, obfuscatedAccountId: string) {
-  // In our app, the obfuscatedAccountId IS the Firebase UID.
   const userRef = firestore.collection('userProfiles').doc(obfuscatedAccountId);
   const userDoc = await userRef.get();
-  if (userDoc.exists) {
-    return userDoc;
-  }
-  return null;
+  return userDoc.exists ? userDoc : null;
 }
 
 async function handleSubscriptionNotification(firestore: any, notification: any) {
   const { subscriptionId, purchaseToken } = notification;
-
   try {
     const sub = await androidpublisher.purchases.subscriptions.get({
       packageName,
@@ -42,16 +30,13 @@ async function handleSubscriptionNotification(firestore: any, notification: any)
     });
 
     const { obfuscatedExternalAccountId, orderId, acknowledgementState } = sub.data;
-
     if (!obfuscatedExternalAccountId) {
       console.log('No obfuscatedExternalAccountId found for this purchase.');
       return;
     }
-    
-    // In our app, we set this to the Firebase UID
+
     const userId = obfuscatedExternalAccountId;
     const userDoc = await findUserByObfuscatedId(firestore, userId);
-
     if (!userDoc) {
       console.log(`User not found for obfuscated ID: ${userId}`);
       return;
@@ -60,19 +45,19 @@ async function handleSubscriptionNotification(firestore: any, notification: any)
     const isAcknowledged = acknowledgementState === 1;
     const isStillActive = sub.data.expiryTimeMillis ? parseInt(sub.data.expiryTimeMillis, 10) > Date.now() : false;
 
-    // SCENARIO MODE (isolated recurring subscription, separate from the
-    // permanent unlockedContent model below used by Survival/Pro). Checked
-    // first and returns early — does not touch unlockedContent at all.
+    // SCENARIO MODE — isolated recurring subscription, returns early
     if (subscriptionId.includes('scenario')) {
       await userDoc.ref.update({
         scenarioSubscriptionActive: isStillActive,
-        scenarioSubscriptionExpiry: sub.data.expiryTimeMillis ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString() : null,
+        scenarioSubscriptionExpiry: sub.data.expiryTimeMillis
+          ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString()
+          : null,
       });
       console.log(`Updated user ${userId} Scenario Mode subscription: active=${isStillActive}`);
       return;
     }
 
-    let plan = 'weekly'; // Default
+    let plan = 'weekly';
     if (subscriptionId.includes('course')) plan = 'course';
     if (subscriptionId.includes('lifetime')) plan = 'lifetime';
 
@@ -80,35 +65,89 @@ async function handleSubscriptionNotification(firestore: any, notification: any)
       subscriptionActive: isStillActive,
       subscriptionSource: 'google_play',
       subscriptionPlan: plan,
-      subscriptionExpiry: sub.data.expiryTimeMillis ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString() : null,
+      subscriptionExpiry: sub.data.expiryTimeMillis
+        ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString()
+        : null,
       paymentProviderSubscriptionId: orderId,
     };
-    
-    // Logic for permanent unlocks
-    if (isAcknowledged) {
-        const userProfile = userDoc.data() || {};
-        const language = (userProfile.selectedLanguage || 'french').toLowerCase();
-        const contentKey = `${language}_survival`;
-        
-        let unlockedContentChanges = userProfile.unlockedContent || {};
 
-        if (plan === 'lifetime') {
-            unlockedContentChanges.all = true;
-        } else if (plan === 'course') {
-            unlockedContentChanges[contentKey] = Array.from({length: 12}, (_, i) => i + 1);
-        } else if (plan === 'weekly') {
-            const existingWeeks = unlockedContentChanges[contentKey] || [];
-            const nextWeek = existingWeeks.length > 0 ? Math.max(...existingWeeks) + 1 : 2;
-            unlockedContentChanges[contentKey] = [...new Set([...existingWeeks, nextWeek])];
-        }
-        fieldsToUpdate.unlockedContent = unlockedContentChanges;
+    if (isAcknowledged) {
+      const userProfile = userDoc.data() || {};
+      const language = (userProfile.selectedLanguage || 'french').toLowerCase();
+      let unlockedContentChanges = userProfile.unlockedContent || {};
+
+      if (plan === 'lifetime') {
+        unlockedContentChanges.all = true;
+      } else if (plan === 'course') {
+        unlockedContentChanges[`${language}_survival`] = Array.from({ length: 12 }, (_, i) => i + 1);
+      } else if (plan === 'weekly') {
+        const existingWeeks = unlockedContentChanges[`${language}_survival`] || [];
+        const nextWeek = existingWeeks.length > 0 ? Math.max(...existingWeeks) + 1 : 2;
+        unlockedContentChanges[`${language}_survival`] = [...new Set([...existingWeeks, nextWeek])];
+      }
+      fieldsToUpdate.unlockedContent = unlockedContentChanges;
     }
 
     await userDoc.ref.update(fieldsToUpdate);
-    console.log(`Updated user ${userId} with new subscription status for plan ${plan}.`);
-
+    console.log(`Updated user ${userId} with plan ${plan}.`);
   } catch (error: any) {
     console.error('Error processing subscription notification:', error.message);
+  }
+}
+
+async function handleOneTimeProductNotification(firestore: any, notification: any) {
+  const { productId, purchaseToken, notificationType } = notification;
+  console.log('One-time product notification:', productId, notificationType);
+
+  // notificationType 1 = PURCHASED
+  if (notificationType !== 1) return;
+
+  try {
+    const purchase = await androidpublisher.purchases.products.get({
+      packageName,
+      productId,
+      token: purchaseToken,
+    });
+
+    // purchaseState 0 = Purchased
+    if (purchase.data.purchaseState !== 0) return;
+
+    const userId = purchase.data.obfuscatedExternalAccountId;
+    if (!userId) {
+      console.warn('No userId in one-time purchase:', productId);
+      return;
+    }
+
+    const userDoc = await findUserByObfuscatedId(firestore, userId);
+    if (!userDoc) {
+      console.warn('User not found for one-time purchase:', userId);
+      return;
+    }
+
+    const lang = (userDoc.data()?.selectedLanguage || 'French').toLowerCase();
+    const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
+
+    if (productId === 'lifetime') {
+      // Lifetime Pro: unlocks all paths
+      await userDoc.ref.update({
+        subscriptionPlan: 'lifetime',
+        subscriptionActive: true,
+        subscriptionSource: 'google_play',
+        subscriptionExpiry: null,
+        'unlockedContent.all': true,
+      });
+      console.log('✅ Lifetime Pro unlocked for:', userId);
+    } else if (productId === 'single_course') {
+      // Survival Pack: unlocks survival + alphabet + numbers for selected language
+      await userDoc.ref.update({
+        [`unlockedContent.${lang}_survival`]: weeks,
+        [`unlockedContent.${lang}_alphabet`]: weeks,
+        [`unlockedContent.${lang}_numbers`]: weeks,
+      });
+      console.log('✅ Survival Pack unlocked for:', userId, lang);
+    }
+  } catch (e: any) {
+    console.error('One-time product validation error:', e.message);
   }
 }
 
@@ -116,26 +155,21 @@ export async function POST(req: NextRequest) {
   try {
     const { firestore } = initializeFirebase();
     const body = await req.json();
-    
-    // The actual notification is base64-encoded in the 'data' field
+
     if (!body.message || !body.message.data) {
       return new NextResponse('Invalid request body', { status: 400 });
     }
 
     const decodedData = Buffer.from(body.message.data, 'base64').toString('utf-8');
     const notification = JSON.parse(decodedData);
-    
-    // Differentiate between subscription and one-time product notifications
+
     if (notification.subscriptionNotification) {
-       await handleSubscriptionNotification(firestore, notification.subscriptionNotification);
+      await handleSubscriptionNotification(firestore, notification.subscriptionNotification);
     } else if (notification.oneTimeProductNotification) {
-      // TODO: Handle one-time product purchases if needed in the future
-      console.log('Received one-time product notification:', notification.oneTimeProductNotification);
+      await handleOneTimeProductNotification(firestore, notification.oneTimeProductNotification);
     }
 
-    // Acknowledge the message so Pub/Sub doesn't resend it
     return new NextResponse('OK', { status: 200 });
-
   } catch (error: any) {
     console.error('Google Play Webhook Error:', error);
     return new NextResponse('Internal Server Error: ' + error.message, { status: 500 });
