@@ -99,7 +99,11 @@ export async function POST(req: NextRequest) {
       }
 
       if (Object.keys(updateFields).length > 0) {
+        console.log('Writing to Firestore:', JSON.stringify(updateFields));
         await userRef.update(updateFields);
+        console.log('Firestore write successful for', appUserId);
+      } else {
+        console.warn('No updateFields generated for eventType:', eventType, 'productId:', productId, 'entitlementIds:', entitlementIds);
       }
     }
 
