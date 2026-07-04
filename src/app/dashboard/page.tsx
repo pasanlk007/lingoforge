@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -31,12 +32,13 @@ import { canAccessLesson } from "@/lib/accessControl";
 import { ReferralCard } from "@/components/ReferralCard";
 import { TrialEndBanner } from "@/components/TrialEndBanner";
 import { TrialEndModal } from "@/components/TrialEndModal";
-import { differenceInCalendarDays } from 'date-fns';
+import { differenceInCalendarDays, format as formatDate } from 'date-fns';
 import { VoiceSelector } from "@/components/VoiceSelector";
 import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 import { InstallPromptCard } from "@/components/InstallPromptCard";
 import { isNativeApp } from "@/lib/isNativeApp";
+import { XPChart } from "@/components/XPChart";
 
 function DashboardLoading() {
   return (
@@ -107,7 +109,7 @@ function DashboardContent({ user }: { user: User }) {
             subscriptionExpiry: null,
             xpPoints: 0,
             currentStreak: 0,
-            lastActiveDate: now.toISOString().split('T')[0],
+            lastActiveDate: formatDate(now, 'yyyy-MM-dd'),
             aiPlanningEnabled: false,
         };
         setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
@@ -161,13 +163,15 @@ function DashboardContent({ user }: { user: User }) {
   const t_sc = translations[validNativeLanguage as keyof typeof translations].scenarioCard;
   
   const langKey = targetLanguage.toLowerCase();
+  const activePath = userProfile?.activePath || 'survival';
   
-  const survivalProgress = userProfile?.languageProgress?.[langKey]?.['survival'];
-  const survivalLastWeek = survivalProgress?.lastWeek || 1;
-  const survivalLastDay = survivalProgress?.lastDay || 0;
-  const nextSurvivalDay = survivalLastDay < 7 ? survivalLastDay + 1 : 1;
-  const nextSurvivalWeek = survivalLastDay < 7 ? survivalLastWeek : survivalLastWeek + 1;
-  const nextSurvivalLessonUrl = `/lessons/${langKey}/survival/${nextSurvivalWeek}/${nextSurvivalDay}`;
+  const progress = userProfile?.languageProgress?.[langKey]?.[activePath];
+  const lastWeek = progress?.lastWeek || 1;
+  const lastDay = progress?.lastDay || 0;
+  
+  const nextDay = lastDay < 7 ? lastDay + 1 : 1;
+  const nextWeek = lastDay < 7 ? lastWeek : lastWeek + 1;
+  const nextLessonUrl = `/lessons/${langKey}/${activePath}/${nextWeek}/${nextDay}`;
 
   const proProgress = userProfile?.languageProgress?.[langKey]?.['pro'];
   const lastProAbsoluteDay = proProgress ? (proProgress.lastWeek - 1) * 7 + proProgress.lastDay : 0;
@@ -185,24 +189,24 @@ function DashboardContent({ user }: { user: User }) {
   const isRTL = ['Urdu'].includes(nativeLanguage as string);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
   
-  const completedDaysForWeek = useMemo(() => {
-    const completedDays = survivalProgress?.completedDays || [];
-    const weekPrefix = `${survivalLastWeek}-`;
+  const completedDaysForActiveWeek = useMemo(() => {
+    const completedDays = progress?.completedDays || [];
+    const weekPrefix = `${lastWeek}-`;
     return completedDays.filter(d => d.startsWith(weekPrefix)).map(d => parseInt(d.split('-')[1]));
-  }, [survivalProgress, survivalLastWeek]);
+  }, [progress, lastWeek]);
 
   const weeklyProgressBools = useMemo(() => {
-    return Array.from({ length: 7 }, (_, i) => completedDaysForWeek.includes(i + 1));
-  }, [completedDaysForWeek]);
+    return Array.from({ length: 7 }, (_, i) => completedDaysForActiveWeek.includes(i + 1));
+  }, [completedDaysForActiveWeek]);
   
-  const hasAccessToNextWeek = useMemo(() => canAccessLesson({
-    path: 'survival',
-    week: nextSurvivalWeek,
-    day: 1,
+  const hasAccessToNextLesson = useMemo(() => canAccessLesson({
+    path: activePath as any,
+    week: nextWeek,
+    day: nextDay,
     language: targetLanguage,
     userEmail: user?.email,
     profile: userProfile,
-  }).allowed, [nextSurvivalWeek, targetLanguage, user, userProfile]);
+  }).allowed, [nextWeek, nextDay, targetLanguage, user, userProfile, activePath]);
 
   const targetLanguageInfo = targetLanguages.find(l => l.lang === targetLanguage);
   const subscriptionPlan = userProfile?.subscriptionPlan || 'free';
@@ -290,7 +294,7 @@ function DashboardContent({ user }: { user: User }) {
                 <CardTitle className="text-sm font-medium">{t.currentPath}</CardTitle>
                 <Target className="h-5 w-5 text-blue-500" />
               </CardHeader>
-              <CardContent><div className="text-2xl font-bold capitalize">Survival</div><p className="text-xs text-muted-foreground">{t.language}: {targetLanguage}</p></CardContent>
+              <CardContent><div className="text-2xl font-bold capitalize">{activePath}</div><p className="text-xs text-muted-foreground">{t.language}: {targetLanguage}</p></CardContent>
             </Card>
           </div>
           
@@ -311,16 +315,16 @@ function DashboardContent({ user }: { user: User }) {
                     <div className="flex items-center gap-4 p-4 rounded-lg bg-muted">
                         <BookOpen className="h-8 w-8 text-primary" />
                         <div>
-                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', nextSurvivalWeek.toString()).replace('{day}', nextSurvivalDay.toString())}</p>
+                            <p className="font-semibold text-lg">{t.nextLesson.replace('{week}', nextWeek.toString()).replace('{day}', nextDay.toString())}</p>
                             <p className="text-sm text-muted-foreground">{t.keepProgress}</p>
                         </div>
                     </div>
                 </CardContent>
                 <CardFooter className="flex flex-col gap-2 pt-2 p-4">
                   <div className="flex flex-col gap-2 w-full">
-                    {hasAccessToNextWeek ? (
+                    {hasAccessToNextLesson ? (
                       <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-                        <Link href={nextSurvivalLessonUrl}>
+                        <Link href={nextLessonUrl}>
                           {t.goToNextLesson} <ChevronRight className="ml-1 h-4 w-4" />
                         </Link>
                       </Button>
@@ -344,6 +348,8 @@ function DashboardContent({ user }: { user: User }) {
                   </div>
                 </CardFooter>
               </Card>
+
+              <XPChart dailyXpLog={userProfile?.dailyXpLog} />
 
               <Card className="flex flex-col border-2 border-blue-500/40 bg-gradient-to-br from-blue-950/20 to-card">
                 <CardHeader>
@@ -385,7 +391,7 @@ function DashboardContent({ user }: { user: User }) {
                     {t.proBundle.badge}
                   </Badge>
                   <div className="flex items-center gap-4">
-                    <Landmark className="h-8 w-8 text-purple-400" />
+                    < Landmark className="h-8 w-8 text-purple-400" />
                     <div>
                       <CardTitle className="text-2xl font-bold">{t.proBundle.title}</CardTitle>
                       <CardDescription className="text-purple-300/80 mt-1">{t.proBundle.description}</CardDescription>

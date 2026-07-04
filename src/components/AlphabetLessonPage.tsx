@@ -1,9 +1,10 @@
+
 'use client';
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, CheckCircle } from 'lucide-react';
+import { ArrowLeft, BookOpen, CheckCircle, ChevronRight } from 'lucide-react';
 import { updateDocumentNonBlocking } from '@/firebase';
-import { arrayUnion, type DocumentData, type DocumentReference } from 'firebase/firestore';
+import { arrayUnion, type DocumentData, type DocumentReference, increment } from 'firebase/firestore';
 import type { LessonDay, UserProfile } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -15,6 +16,7 @@ import { WritingPractice } from './WritingPractice';
 import { Alert, AlertTitle } from './ui/alert';
 import { TooltipProvider } from './ui/tooltip';
 import { cn } from '@/lib/utils';
+import { format as formatDate } from 'date-fns';
 
 const AudioPlayback = dynamic(() => import('./AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
@@ -58,21 +60,34 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
   }, [isDayCompleted]);
 
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
+  const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard) ? translations[nativeLanguage].dashboard : translations.English.dashboard;
 
   const handleCompleteDay = () => {
-    if (isComplete) return;
+    if (isComplete || !userProfileRef || !dayData) return;
 
     setIsComplete(true);
     
     const langKey = targetLanguage.toLowerCase();
     const pathKey = dayData.path;
     const dayKeyToSave = `${dayData.week}-${dayData.day}`;
+    const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
 
-    updateDocumentNonBlocking(userProfileRef, {
-        [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
-        [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
-        [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
-    });
+    const updateData: any = {
+      [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
+      [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
+      [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
+      xpPoints: increment(100),
+      [`dailyXpLog.${todayKey}`]: increment(100),
+      lastActiveDate: todayKey,
+      activePath: pathKey,
+    };
+
+    // Award streak if first lesson of the day
+    if (userProfile?.lastActiveDate !== todayKey) {
+        updateData.currentStreak = increment(1);
+    }
+
+    updateDocumentNonBlocking(userProfileRef, updateData);
   };
   
   if (!dayData || !isMounted) {
@@ -84,9 +99,13 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
   const langInfo = targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase());
   const flag = langInfo ? langInfo.flag : '🌍';
 
+  const nextDay = dayData.day < 7 ? dayData.day + 1 : 1;
+  const nextWeek = dayData.day < 7 ? dayData.week : dayData.week + 1;
+  const nextLessonUrl = `/lessons/${targetLanguage.toLowerCase()}/${dayData.path}/${nextWeek}/${nextDay}`;
+
   return (
     <TooltipProvider>
-      <div className="container mx-auto max-w-3xl py-8 px-4">
+      <div className="container mx-auto max-w-3xl py-8 px-4 pb-24">
         <header className="mb-6">
           <div className="flex items-center justify-between mb-4">
             <Button variant="ghost" asChild>
@@ -150,12 +169,26 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
               <div className="relative">
                   <div className="absolute -inset-20 pointer-events-none"><Confetti active={isComplete} config={confettiConfig} /></div>
                   {isComplete ? (
-                      <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
-                          <CheckCircle className="h-4 w-4" />
-                          <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
-                      </Alert>
+                      <div className="w-full max-w-xs">
+                          <Alert className="border-green-500/50 text-green-700 dark:text-green-400">
+                              <CheckCircle className="h-4 w-4" />
+                              <AlertTitle className="font-bold">{t.dayComplete}</AlertTitle>
+                          </Alert>
+                          <div className="mt-4 grid grid-cols-1 gap-2">
+                                <Button asChild className="w-full">
+                                    <Link href={nextLessonUrl}>
+                                        {t_dashboard.goToNextLesson} <ChevronRight className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+                                <Button variant="outline" asChild className="w-full">
+                                    <Link href="/dashboard">
+                                        {t.backToDashboard}
+                                    </Link>
+                                </Button>
+                            </div>
+                      </div>
                   ) : (
-                      <Button size="lg" onPointerUp={handleCompleteDay} onTouchEnd={(e) => { e.preventDefault(); handleCompleteDay(); }}>
+                      <Button size="lg" onPointerUp={handleCompleteDay}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}

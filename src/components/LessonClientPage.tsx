@@ -1,3 +1,4 @@
+
 'use client';
 import VoiceInit from "@/components/VoiceInit";
 
@@ -132,6 +133,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
           xpPoints: increment(100),
           [`dailyXpLog.${todayKey}`]: increment(100),
           lastActiveDate: todayKey,
+          activePath: pathKey,
         };
 
         // Award streak if first lesson of the day
@@ -139,13 +141,11 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
             updateData.currentStreak = increment(1);
         }
 
-        // If day 7 complete, permanently unlock next week
-        if (currentDay === 7) {
-          const nextWeekNum = dayData.week + 1;
-          const currentUnlocked = userProfile?.unlockedWeeks?.[langKey]?.[pathKey] || [1];
-          if (!currentUnlocked.includes(nextWeekNum)) {
-            updateData[`unlockedWeeks.${langKey}.${pathKey}`] = arrayUnion(nextWeekNum);
-          }
+        // Permanent week unlock logic for Course plan users
+        if (currentDay === 7 && userProfile?.subscriptionPlan === 'course') {
+            const contentKey = `${langKey}_${pathKey}`; 
+            const nextWeekNum = dayData.week + 1;
+            updateData[`unlockedContent.${contentKey}`] = arrayUnion(nextWeekNum);
         }
 
         updateDocumentNonBlocking(userProfileRef, updateData);
