@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
 
     // Identify the plan type
     const isScenario = productId.includes('scenario') || entitlementIds.some((e) => e.includes('scenario'));
-    const isPremium = entitlementIds.includes('premium') || (!isScenario && entitlementIds.length > 0);
+    const isPremium = entitlementIds.some((e) => e === 'lifetime' || e.includes('single') || e.includes('course')) || (!isScenario && entitlementIds.length > 0);
 
     const updateFields: any = {};
 
@@ -60,8 +60,8 @@ export async function POST(req: NextRequest) {
 
     if (isPremium) {
       // Logic for Survival/Pro Paths (permanent unlocks)
-      const isLifetime = productId.includes('lifetime');
-      const isCourse = productId.includes('single_course');
+      const isLifetime = productId === 'lifetime' || productId.includes('lifetime') || entitlementIds.includes('lifetime');
+      const isCourse = productId === 'single_course' || productId.includes('single_course') || entitlementIds.some((e) => e.includes('single') || e.includes('course'));
 
       if (eventType === 'INITIAL_PURCHASE' || eventType === 'NON_SUBSCRIPTION_PURCHASE') {
         if (isLifetime) {
