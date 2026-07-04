@@ -26,7 +26,7 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
 
         try {
           Purchases.addPurchaserInfoUpdateListener(async (info: any) => {
-            const premiumEntitlement = info.entitlements.active[ENTITLEMENT_ID];
+            const premiumEntitlement = info.entitlements.active[ENTITLEMENT_ID] || info.entitlements.active["lifetime"] || info.entitlements.active["single language course"];
             const hasActiveSubscription = typeof premiumEntitlement !== 'undefined';
 
             // Scenario Mode (isolated) — does not affect subscriptionActive/
