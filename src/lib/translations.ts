@@ -259,7 +259,7 @@ export const translations = {
           rights: { title: "Rights & Documents", desc: "Legal and civic guidance" },
           integration: { title: "Integration", desc: "Cultural and social norms" },
           vocab: { title: "Legal Vocab", desc: "Essential legal terms" },
-          tutors: { title: "AI Tutors", desc: "Practice with AI" }
+          tutors: { title: "Lesson Map", desc: "30-day curriculum" }
         }
       }
     },
@@ -438,7 +438,7 @@ export const translations = {
       streak: { title: "දිනපතා Streak", desc: "දිනපතා streaks සමඟින් පෙළඹී සිටින්න" },
       progress: { title: "ප්‍රගති නිරීක්ෂණය", desc: "ඔබේ දෛනික ප්‍රගතිය නිරීක්ෂණය කරන්න" },
       certs: { title: "Achievement Badges", desc: "ඔබේ සන්ධිස්ථාන සඳහා ලාංඡන උපයා ගන්න" },
-      langs: { title: `${targetLanguages.length} Languages Available`, desc: "European, Asian, Middle Eastern" },
+      langs: { title: "භාෂා 21", desc: "European, Asian, Middle Eastern" },
     },
     pricingTitle: "ඔබේ සම්පූර්ණ විභවය විවෘත කරන්න",
     pricingSub: "ඔබේ නොමිලේ අත්හදා බැලීමට Survival Path හි 1 වන සතිය ඇතුළත් වේ. සියලුම පාඩම් අගුළු ඇරීමට උත්ශ්‍රේණි කරන්න.",
@@ -559,7 +559,7 @@ export const translations = {
           rights: { title: "අයිතිවාසිකම් සහ ලේඛන", desc: "නීතිමය සහ සිවිල් මගපෙන්වීම" },
           integration: { title: "ඒකාබද්ධ වීම", desc: "සංස්කෘතික හා සමාජ සම්මතයන්" },
           vocab: { title: "නීතිමය වචන මාලාව", desc: "අත්‍යවශ්‍ය නීතිමය නියමයන්" },
-          tutors: { title: "AI උපදේශකයින්", desc: "AI සමඟ පුහුණු වන්න" }
+          tutors: { title: "දින 30 ව්‍යුහගත", desc: "පාඩම් සිතියම" }
         }
       }
     },
@@ -737,8 +737,8 @@ export const translations = {
       exercises: { title: "দৈনিক व्यायाम", desc: "रिक्त स्थान भरें, MCQ, शब्द मिलान खेल" },
       streak: { title: "स्ट्रीक प्रणाली", desc: "দैनिक स्ट्रीक्स से प्रेरित रहें" },
       progress: { title: "প্রগতি ট্র্যাকিং", desc: `दैनिक प्रगति ट्रैकिंग` },
-      certs: { title: "প্রমাণপত্র", desc: "अपनी प्रगति का प्रमाण अर्जित करें" },
-      langs: { title: `${targetLanguages.length} Languages Available`, desc: "यूरोपीय, एशियाई, मध्य पूर्वी" },
+      certs: { title: "प्रमाणपत्र", desc: "अपनी प्रगति का प्रमाण अर्जित करें" },
+      langs: { title: `${targetLanguages.length} Languages Available`, desc: "From French to Japanese, choose the language of your dreams." },
     },
     pricingTitle: "अपनी पूरी क्षमता अनलॉक करें",
     pricingSub: "आपके मुफ्त परीक्षण में जीवन रक्षा पथ का सप्ताह 1 शामिल है। सभी पाठ अनलॉक करने के लिए अपग्रेड करें।",
@@ -859,7 +859,7 @@ export const translations = {
           rights: { title: "अधिकार और दस्तावेज़", desc: "कानूनी और नागरिक मार्गदर्शन" },
           integration: { title: "एकीकरण", desc: "सांस्कृतिक और सामाजिक मानदंड" },
           vocab: { title: "कानूनी शब्दावली", desc: "आवश्यक कानूनी शर्तें" },
-          tutors: { title: "एआई ट्यूटर", desc: "एआई के साथ अभ्यास करें" }
+          tutors: { title: "Lesson Map", desc: "30-day curriculum" }
         }
       }
     },
@@ -922,10 +922,10 @@ export const translations = {
       tryAgain: "बिलकुल नहीं। फिर से कोशिश करें!",
       // navigation
       pathsAndFeatures: "पथ और सुविधाएँ",
-      logIn: "लॉग इन करें",
-      signUp: "사인 अप करें",
+      logIn: "ลॉग इन करें",
+      signUp: "साइन अप करें",
       profile: "प्रोफ़ाइल",
-      logOut: "لॉग आउट",
+      logOut: "लॉग आउट",
     }
   },
   Urdu: {
@@ -945,7 +945,7 @@ export const translations = {
       lockedTitle: "سیناریو موڈ",
       lockedDescription: "آپ کی صحیح صورتحال کے لیے ایک کسٹم AI گفتگو کا منصوبہ — سفارت خانے کا انٹرویو ، بیرون ملک ملازمت ، کھانے کی ترسیل ، کچھ بھی۔ ماہانہ سبسکرپشن لے کر جتنے چاہیں منصوبے بنائیں۔",
       lockedFeature1: "اپنی صورتحال بیان کریں اور ایک کسٹم منصوبہ حاصل کریں",
-      lockedFeature2: "Daily AI voice conversation practice",
+      lockedFeature2: "روزانہ AI آواز کے ساتھ گفتگو کی مشق",
       lockedFeature3: "جتنے چاہیں نئے منظر نامے کے منصوبے بنائیں (ماہانہ سبسکرپشن)",
       subscribeButton: "سبسکرائب کریں — $13/ماہ",
       myPlansTitle: "میرے سیناریو منصوبے",
@@ -974,7 +974,7 @@ export const translations = {
       buildingDaySubtitle: "اس میں چند سیکنڈ لگتے ہیں۔",
       dayLoadFailedTitle: "دن {day} کا مواد لوڈ نہیں ہو سکا",
       subscriptionRequiredTitle: "اس دن کو غیر مقفل کرنے کے لیے سبسکرپشن درکار ہے",
-      subscriptionRequiredDescription: "آپ کا منصوبہ بن گیا تھا ، لیکن روزانہ का مواد تیار کرنے کے لیے آپ کو ایک فعال سیناریو موڈ سبسکرپشن کی ضرورت ہے۔",
+      subscriptionRequiredDescription: "آپ کا منصوبہ بن گیا تھا ، لیکن روزانہ کا مواد تیار کرنے کے لیے آپ کو ایک فعال سیناریو موڈ سبسکرپشن کی ضرورت ہے۔",
       phraseCounter: "جملہ {current} / {total}",
       recordPrompt: "ریکارڈ کرنے کے لیے ٹیپ کریں",
       recordingPrompt: "اب بولیں... مکمل ہونے پر سٹاپ دبائیں",
@@ -1035,7 +1035,7 @@ export const translations = {
       audio: { title: "آڈیو شامل", desc: "ہر لفظ کا مقامی تلفظ سنیں" },
       dialogues: { title: "حقیقی مکالمے", desc: "اصل گفتگو جو آپ روزانہ استعمال کریں گے" },
       exercises: { title: "روزانہ مشقیں", desc: "خالی جگہیں پر کریں، MCQ, الفاظ ملانے والے کھیل" },
-      streak: { title: "اسٹریک سسٹم", desc: "روزانہ اسٹریک کے ساتھ متحرک رہیں" },
+      streak: { title: "اسٹریک سسٹم", desc: "روزانہ اسٹریک کے साथ متحرک رہیں" },
       progress: { title: "پیشرفت سے باخبر رہنا", desc: "Visualize your journey to fluency with detailed stats." },
       certs: { title: "Achievement Badges", desc: "Earn badges for your milestones and show off your skills." },
       langs: { title: `${targetLanguages.length} Languages Available`, desc: "From French to Japanese, choose the language of your dreams." },
@@ -1050,7 +1050,7 @@ export const translations = {
     },
     freePlan: {
       title: "مفت منصوبہ",
-      description: "بقا کے راستے کے ہفتہ 1 تک مفت رسائی حاصل کریں۔ کریڈٹ کارڈ کی ضرورت نہیں ہے۔",
+      description: "بقا کے راستے के ہفتہ 1 تک مفت رسائی حاصل کریں۔ کریڈٹ کارڈ کی ضرورت نہیں ہے۔",
       feat1: "بقا کے راستے کا پہلا ہفتہ",
       feat2: "روزانہ 5 نئے الفاظ",
       btn: "مفت میں شروع کریں"
@@ -1158,12 +1158,12 @@ export const translations = {
           rights: { title: "حقوق اور دستاویزات", desc: "قانونی اور شہری رہنمائی" },
           integration: { title: "انضمام", desc: "ثقافتی اور سماجی اصول" },
           vocab: { title: "قانونی الفاظ", desc: "ضروری قانونی اصطلاحات" },
-          tutors: { title: "AI ٹیوٹرز", desc: "AI کے ساتھ مشق کریں" }
+          tutors: { title: "دින 30 ව්‍යුහගත", desc: "පාඩම් සිතියම" }
         }
       }
     },
     notifications: {
-        title: "پڑھائی کا وقت ہو گیا! 📚",
+        title: "پڑھائی का وقت ہو گیا! 📚",
         body: "اپنی اسٹریک برقرار رکھیں! آج {language} کے 10 منٹ آپ کے بیرون ملک مستقبل کو سنواریں گے۔ 🚀",
     },
     wordCard: {
@@ -1182,11 +1182,11 @@ export const translations = {
       day: "دن",
       upgradePlan: "منصوبہ اپ گریڈ کریں",
       lessonsLocked: "اس ہفتے کے اسباق مقفل ہیں۔",
-      upgradeToUnlock: "انلاک کرنے کے لیے اپ گریڈ کریں۔",
+      upgradeToUnlock: "انلاک کرنے के لیے اپ گریڈ کریں۔",
       // lesson page errors
       errorTitle: "سبق لوڈ نہیں ہو سکا",
-      errorWeekNotFound: "{path} راستے کے ہفتہ {week} کے لئے سبق का مواد موجود نہیں ہے۔ براہ کرم 'public{lessonPath}' پر فائل بنائیں۔",
-      errorDayNotFound: "فائل '{lessonPath}' میں دن {day} کا ڈیٹا نہیں ملا۔ یقینی بنائیں کہ JSON فائل میں 'days' سرنی میں اس دن کے لئے ایک اندراج موجود ہے۔",
+      errorWeekNotFound: "{path} راستے के ہفتہ {week} کے لئے سبق کا مواد موجود نہیں ہے۔ براہ کرم 'public{lessonPath}' پر فائل بنائیں۔",
+      errorDayNotFound: "فائل '{lessonPath}' میں دن {day} का ڈیٹا نہیں ملا۔ یقینی بنائیں کہ JSON فائل में 'days' سرنی میں اس دن کے لئے ایک اندراج موجود ہے۔",
       errorInvalidJson: "'{lessonPath}' پر سبق کی فائل میں غلط JSON ہے۔ براہ کرم نحو کی غلطیوں کے لئے فائل کو چیک کریں۔ خرابی: {error}",
       errorGeneric: "سبق کی فائل لوڈ کرنے میں ناکام। حیثیت: {status}",
       errorInvalidDay: 'غلط دن کا پیرامیٹر: "{day}"। ایک نمبر ہونا چاہئے۔',
@@ -1203,7 +1203,7 @@ export const translations = {
       pronunciationTip: "تلفظ کی ترکیب",
       culturalNote: "ثقافتی نوٹ",
       dayComplete: "دن مکمل!",
-      earnedXP: "آپ نے {xp} XP اور {streak_bonus} کا اسٹریک بونس حاصل کیا ہے۔",
+      earnedXP: "آپ نے {xp} XP اور {streak_bonus} का اسٹریک بونس حاصل کیا ہے۔",
       completeDay: "دن مکمل کریں (+{xp} XP)",
       complete50Percent: "ختم کرنے کے لئے کم از-کم 50٪ مشقیں مکمل کریں۔",
       // exercises
@@ -1244,12 +1244,12 @@ export const translations = {
       lockedTitle: "Scenario Mode",
       lockedDescription: "আপনার সঠিক পরিস্থিতির জন্য একটি কাস্টম AI কথোপকথন পরিকল্পনা — দূতাবাস ইন্টারভিউ, বিদেশে চাকরি, খাবার ডেলিভারি, যেকোনো কিছু। আপনার ইচ্ছামতো অনেক পরিকল্পনা তৈরি করতে মাসিক সাবস্কিপশন নিন।",
       lockedFeature1: "আপনার পরিস্থিতি বর্ণনা করুন এবং একটি কাস্টম প্ল্যান পান",
-      lockedFeature2: "Daily AI voice conversation practice",
+      lockedFeature2: "দৈনিক AI ভয়েস কথোপকথন অনুশীলন",
       lockedFeature3: "আপনার ইচ্ছামতো অনেক নতুন সিনারিও প্ল্যান তৈরি করুন (মাসিক সাবস্কির্ফশন)",
       subscribeButton: "সাবস্ক্রাইব করুন — $13/মাস",
       myPlansTitle: "আমার সিনারিও প্ল্যান",
       myPlansSubtitle: "আপনার তৈরি করা সমস্ত পরিকল্পনা",
-      myPlansEmpty: "আপনার এখনও কোনো পরিকল্পনা তৈরি করেননি।",
+      myPlansEmpty: "আপনি এখনও কোনো পরিকল্পনা তৈরি করেননি।",
       newPlanButton: "নতুন প্ল্যান",
       continueButton: "চালিয়ে যান",
       reviewButton: "পর্যালোচনা",
@@ -1315,8 +1315,8 @@ export const translations = {
     redesign_cta_text: "The language that makes life easier in a foreign country.",
     redesign_cta_button: "Start here",
     poster: {
-        title: "প্রয়োজনীয় বাক্য - পদ্ধতিগত শেখার পথ",
-        subtitle: "দৈনন্দিন জীবনের জন্য • কাজের জন্য",
+        title: "Essential Sentences - Systematic Learning Path",
+        subtitle: "For daily life • For work",
         tagline: "unfold your opportunities"
     },
     path1Badge: "এখান থেকে শুরু করুন - প্রস্তাবিত",
@@ -1335,7 +1335,7 @@ export const translations = {
       dialogues: { title: "বাস্তব সংলাপ", desc: "প্রকৃত কথোপকথন যা আপনি প্রতিদিন ব্যবহার করবেন" },
       exercises: { title: "দৈনিক অনুশীলন", desc: "ফাঁকা স্থান পূরণ, MCQ, শব্দ মেলানো খেলা" },
       streak: { title: "স্ট্রিক সিস্টেম", desc: "দৈনিক স্ট্রিকের সাথে অনুপ্রাণিত থাকুন" },
-      progress: { title: "প্রগতি ট্র্যাকিং", desc: "অগ্রগতি ট্র্যাকিং" },
+      progress: { title: "প্রগতি ট্র্যাকিং", desc: "Visualize your journey to fluency with detailed stats." },
       certs: { title: "Achievement Badges", desc: "Earn badges for your milestones and show off your skills." },
       langs: { title: `${targetLanguages.length} Languages Available`, desc: "From French to Japanese, choose the language of your dreams." },
     },
@@ -1458,7 +1458,7 @@ export const translations = {
           rights: { title: "অধিকার ও নথি", desc: "আইনি এবং নাগরিক নির্দেশিকা" },
           integration: { title: "একীকরণ", desc: "সাংস্কৃতিক এবং সামাজিক নিয়ম" },
           vocab: { title: "আইনি শব্দভান্ডার", desc: "অপরিহার্য আইনি পরিভাষা" },
-          tutors: { title: "এআই টিউটর", desc: "এআই দিয়ে অনুশীলন করুন" }
+          tutors: { title: "Lesson Map", desc: "30-day curriculum" }
         }
       }
     },
@@ -1474,8 +1474,8 @@ export const translations = {
     ui: {
       // survival page
       survivalPath: "বেঁচে থাকার পথ",
-      survivalPathDesc: "দৈনন্দিন জীবনের জন্য প্রয়োজনীয় বাক्याংশগুলি আয়ত্ত করার জন্য একটি 12-সপ্তাহের যাত্রা।",
-      week: "সপ্তাহ",
+      survivalPathDesc: "দৈনন্দিন জীবনের জন্য প্রয়োজনীয় বাক્યાংশগুলি আয়ত্ত করার জন্য একটি 12-সप्ताहের যাত্রা।",
+      week: "সप्ताह",
       locked: "লক করা",
       days: "দিন",
       completed: "সম্পন্ন",
@@ -1489,7 +1489,7 @@ export const translations = {
       errorDayNotFound: "ফাইল '{lessonPath}' এ দিন {day} এর জন্য ডেটা খুঁজে পাওয়া যায়নি। নিশ্চিত করুন যে JSON ফাইলের 'days' অ্যারেতে এই দিনের জন্য একটি এন্ট্রি রয়েছে।",
       errorInvalidJson: "'{lessonPath}' এ পাঠ ফাইলটিতে অবৈধ JSON রয়েছে। অনুগ্রহ করে সিনট্যাক্স ত্রুটির জন্য ফাইলটি পরীক্ষা করুন। ত্রুটি: {error}",
       errorGeneric: "পাঠ ফাইল লোড করতে ব্যর্থ হয়েছে। স্থিতি: {status}",
-      errorInvalidDay: 'অবৈধ দিন প্যারামিটার: "{day}"। এটি একটি সংখ্যা হতে হবে।',
+      errorInvalidDay: 'অবৈধ দিন පරාමිටිය: "{day}"। এটি একটি সংখ্যা হতে হবে।',
       backToDashboard: "ড্যাশবোর্ডে ফিরে যান",
       contentNotAvailableTitle: "বিষয়বস্তু উপলব্ধ নেই",
       contentNotAvailableDesc: "এই পাঠটি এখনও তৈরি করা হয়নি। আপনি `public/lessons` ডিরেক্টরিতে পাঠ ফাইল তৈরি করতে পারেন। নির্দেশাবলীর জন্য অনুগ্রহ করে `docs/lesson-generation-guide.md` দেখুন।",
@@ -1544,7 +1544,7 @@ export const translations = {
       lockedTitle: "Scenario Mode",
       lockedDescription: "तपाईंको सटीक अवस्थाको लागि एक कस्टम AI कुराकानी योजना — दूतावास अन्तर्वार्ता, विदेशमा जागिर, खाना डेलिभरी, जे पनि। आफ्नो इच्छा अनुसार धैरे योजनाहरू बनाउन मासिक सदस्यता लिनुहोस्।",
       lockedFeature1: "आफ्नो अवस्था वर्णन गर्नुहोस् र एक कस्टम योजना प्राप्त गर्नुहोस्",
-      lockedFeature2: "Daily AI voice conversation practice",
+      lockedFeature2: "दैनिक AI आवाज कुराकानी अभ्यास",
       lockedFeature3: "आफ्नो इच्छा अनुसार धेरै नयाँ परिदृश्य योजनाहरू बनाउनुहोस् (मासिक सदस्यता)",
       subscribeButton: "सदस्यता लिनुहोस् — $13/महिना",
       myPlansTitle: "मेरा सिनारियो योजनाहरू",
@@ -1635,9 +1635,9 @@ export const translations = {
       dialogues: { title: "वास्तविक संवादहरू", desc: "वास्तविक कुराकानीहरू जुन तपाईंले दैनिक प्रयोग गर्नुहुनेछ" },
       exercises: { title: "दैनिक अभ्यासहरू", desc: "खाली ठाउँ भर्नुहोस्, MCQ, शब्द मिलान खेलहरू" },
       streak: { title: "स्ट्रीक प्रणाली", desc: "दैनिक स्ट्रीकहरूको साथ प्रेरित रहनुहोस्" },
-      progress: { title: "प्रगति ट्र्याकिङ", desc: "तपाईंको दैनिक प्रगति ट्र्याक गर्नुहोस्" },
-      certs: { title: "Achievement Badges", desc: "तपाईंको माइलस्टोनहरूको लागि ब्याजहरू कमाउनुहोस्" },
-      langs: { title: `${targetLanguages.length} Languages Available`, desc: "European, Asian, Middle Eastern" },
+      progress: { title: "प्रगति ट्र्याकिङ", desc: "Visualize your journey to fluency with detailed stats." },
+      certs: { title: "Achievement Badges", desc: "Earn badges for your milestones and show off your skills." },
+      langs: { title: `${targetLanguages.length} Languages Available`, desc: "From French to Japanese, choose the language of your dreams." },
     },
     pricingTitle: "आफ्नो पूर्ण क्षमता अनलक गर्नुहोस्",
     pricingSub: "तपाईंको नि:शुल्क परीक्षणमा जीवन रक्षा मार्गको हप्ता १ समावेश छ। सबै पाठहरू अनलक गर्न अपग्रेड गर्नुहोस्।",
@@ -1695,7 +1695,7 @@ export const translations = {
       terms: "सेवा सर्तहरू",
       language: "भाषा",
     },
-    footerCredit: "© 2026 LingoForge। प्रवासीहरूका लागि, यात्रा बुझ्ने मानिसहरूद्वारा निर्मित।",
+    footerCredit: "© 2026 LingoForge। प्रवासीहरूका लागि, यात्रा बुझ्ने मानিসहरूद्वारा निर्मित।",
     dashboard: {
       title: "ड्यासबोर्ड",
       welcome: "फेरि स्वागत छ",
@@ -1758,7 +1758,7 @@ export const translations = {
           rights: { title: "अधिकार र कागजातहरू", desc: "कानूनी र नागरिक मार्गदर्शन" },
           integration: { title: "एकीकरण", desc: "सांस्कृतिक र सामाजिक मान्यताहरू" },
           vocab: { title: "कानूनी शब्दावली", desc: "आवश्यक कानूनी सर्तहरू" },
-          tutors: { title: "एआई ट्युटरहरू", desc: "एआईसँग अभ्यास गर्नुहोस्" }
+          tutors: { title: "Lesson Map", desc: "30-day curriculum" }
         }
       }
     },
