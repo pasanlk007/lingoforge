@@ -13,7 +13,6 @@ export async function initializeBilling(): Promise<boolean> {
     const { Purchases, LOG_LEVEL } = await import('@revenuecat/purchases-capacitor');
     await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
     
-    // Configuration is usually handled in RevenueCatProvider.tsx
     return true;
   } catch (e) {
     console.error('RevenueCat initialization check failed:', e);
@@ -34,35 +33,30 @@ export async function getProducts(productIds: string[]) {
 
     let allProducts: any[] = [];
 
-    // Try fetching as subscriptions first
+    // Attempt to fetch as subscriptions
     try {
       const { products: subsProducts } = await Purchases.getProducts({ 
         productIdentifiers: productIds,
         type: 'SUBSCRIPTION' as any,
       });
       allProducts = [...allProducts, ...subsProducts];
-    } catch (e) {
-      console.warn('Could not fetch subscription products:', e);
-    }
+    } catch (e) {}
 
-    // Try fetching as non-subscriptions (IAPs)
+    // Attempt to fetch as non-subscriptions (IAPs)
     try {
       const { products: iapProducts } = await Purchases.getProducts({ 
         productIdentifiers: productIds,
         type: 'NON_SUBSCRIPTION' as any,
       });
       allProducts = [...allProducts, ...iapProducts];
-    } catch (e) {
-      console.warn('Could not fetch non-subscription products:', e);
-    }
+    } catch (e) {}
 
-    // If both failed or returned empty, try the generic fetch as a fallback
+    // Fallback: generic fetch
     if (allProducts.length === 0) {
       const { products } = await Purchases.getProducts({ productIdentifiers: productIds });
       allProducts = products;
     }
 
-    console.log('RevenueCat products fetched:', allProducts.map((p: any) => p.identifier));
     return allProducts;
   } catch (error) {
     console.error('Error getting RevenueCat products:', error);
@@ -83,7 +77,7 @@ export async function purchase(sku: string, appUserID: string, entitlementId: st
 
     const { Purchases, PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
 
-    // First, find the product object
+    // Find the product object
     let productToPurchase: any = null;
 
     // Check IAPs first
@@ -106,17 +100,17 @@ export async function purchase(sku: string, appUserID: string, entitlementId: st
       } catch (e) {}
     }
 
-    // Final fallback: generic lookup
+    // Final fallback
     if (!productToPurchase) {
       const { products } = await Purchases.getProducts({ productIdentifiers: [sku] });
       productToPurchase = products[0];
     }
 
     if (!productToPurchase) {
-      throw new Error(`Product with SKU ${sku} not found on this device/store.`);
+      throw new Error(`Product with SKU ${sku} not found.`);
     }
 
-    console.log(`Initiating purchase for: ${productToPurchase.identifier} (${productToPurchase.productType})`);
+    console.log(`Initiating purchase for: ${productToPurchase.identifier}`);
 
     // Execute the purchase
     const { purchaserInfo } = await Purchases.purchaseStoreProduct({ product: productToPurchase });
@@ -127,13 +121,9 @@ export async function purchase(sku: string, appUserID: string, entitlementId: st
     return { isAcknowledged: isEntitled, purchaserInfo };
   } catch (error: any) {
     const { PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
-    
-    // Don't log or throw if the user simply cancelled the flow
     if (error.code === PURCHASES_ERROR_CODE.PURCHASE_CANCELLED_ERROR) {
-      console.log('Purchase cancelled by user');
       return { isAcknowledged: false, purchaserInfo: null };
     }
-    
     console.error('RevenueCat purchase error:', error);
     throw error;
   }

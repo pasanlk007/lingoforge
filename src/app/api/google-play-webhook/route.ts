@@ -15,6 +15,7 @@ const auth = new google.auth.GoogleAuth({
 const androidpublisher = google.androidpublisher({ version: 'v3', auth });
 
 async function findUserByObfuscatedId(firestore: any, obfuscatedAccountId: string) {
+  if (!obfuscatedAccountId) return null;
   const userRef = firestore.collection('userProfiles').doc(obfuscatedAccountId);
   const userDoc = await userRef.get();
   return userDoc.exists ? userDoc : null;
@@ -29,59 +30,54 @@ async function handleSubscriptionNotification(firestore: any, notification: any)
       token: purchaseToken,
     });
 
-    const { obfuscatedExternalAccountId, orderId, acknowledgementState } = sub.data;
+    const { obfuscatedExternalAccountId, orderId, expiryTimeMillis } = sub.data;
     if (!obfuscatedExternalAccountId) {
-      console.log('No obfuscatedExternalAccountId found for this purchase.');
+      console.log('No user ID (obfuscatedExternalAccountId) found in subscription data.');
       return;
     }
 
     const userId = obfuscatedExternalAccountId;
     const userDoc = await findUserByObfuscatedId(firestore, userId);
     if (!userDoc) {
-      console.log(`User not found for obfuscated ID: ${userId}`);
+      console.log(`User profile not found for ID: ${userId}`);
       return;
     }
 
-    const isStillActive = sub.data.expiryTimeMillis ? parseInt(sub.data.expiryTimeMillis, 10) > Date.now() : false;
+    const isStillActive = expiryTimeMillis ? parseInt(expiryTimeMillis, 10) > Date.now() : false;
+    const expiryDate = expiryTimeMillis ? new Date(parseInt(expiryTimeMillis, 10)).toISOString() : null;
 
-    // SCENARIO MODE — isolated recurring subscription, returns early
-    if (subscriptionId.includes('scenario')) {
+    // SCENARIO MODE — identified by SKU naming convention
+    if (subscriptionId.toLowerCase().includes('scenario')) {
       await userDoc.ref.update({
         scenarioSubscriptionActive: isStillActive,
-        scenarioSubscriptionExpiry: sub.data.expiryTimeMillis
-          ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString()
-          : null,
+        scenarioSubscriptionExpiry: expiryDate,
       });
-      console.log(`Updated user ${userId} Scenario Mode subscription: active=${isStillActive}`);
+      console.log(`✅ Scenario Mode subscription updated via Google Webhook for ${userId}: active=${isStillActive}`);
       return;
     }
 
+    // Standard Learning Paths
     let plan = 'weekly';
     if (subscriptionId.includes('course')) plan = 'course';
     if (subscriptionId.includes('lifetime')) plan = 'lifetime';
 
-    let fieldsToUpdate: any = {
+    await userDoc.ref.update({
       subscriptionActive: isStillActive,
       subscriptionSource: 'google_play',
       subscriptionPlan: plan,
-      subscriptionExpiry: sub.data.expiryTimeMillis
-        ? new Date(parseInt(sub.data.expiryTimeMillis, 10)).toISOString()
-        : null,
-      paymentProviderSubscriptionId: orderId,
-    };
-
-    // Note: one-time items (single_course, lifetime) are handled in handleOneTimeProductNotification
-    // We keep standard subscription logic here for weekly plans
-    await userDoc.ref.update(fieldsToUpdate);
-    console.log(`Updated user ${userId} with plan ${plan}.`);
+      subscriptionExpiry: expiryDate,
+      paymentProviderSubscriptionId: orderId || null,
+    });
+    console.log(`Updated standard subscription for ${userId} (Plan: ${plan}, Active: ${isStillActive})`);
+    
   } catch (error: any) {
-    console.error('Error processing subscription notification:', error.message);
+    console.error('Error processing Google subscription notification:', error.message);
   }
 }
 
 async function handleOneTimeProductNotification(firestore: any, notification: any) {
   const { productId, purchaseToken, notificationType } = notification;
-  console.log('One-time product notification:', productId, notificationType);
+  console.log('Google Play one-time product notification:', productId, notificationType);
 
   // notificationType 1 = PURCHASED
   if (notificationType !== 1) return;
@@ -98,7 +94,7 @@ async function handleOneTimeProductNotification(firestore: any, notification: an
 
     const userId = purchase.data.obfuscatedExternalAccountId;
     if (!userId) {
-      console.warn('No userId in one-time purchase:', productId);
+      console.warn('No userId in one-time purchase notification:', productId);
       return;
     }
 
@@ -112,7 +108,6 @@ async function handleOneTimeProductNotification(firestore: any, notification: an
     const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
 
     if (productId.includes('lifetime')) {
-      // Lifetime Pro: unlocks all paths
       await userDoc.ref.update({
         subscriptionPlan: 'lifetime',
         subscriptionActive: true,
@@ -120,9 +115,8 @@ async function handleOneTimeProductNotification(firestore: any, notification: an
         subscriptionExpiry: null,
         'unlockedContent.all': true,
       });
-      console.log('✅ Lifetime Pro unlocked for:', userId);
+      console.log('✅ Lifetime Pro unlocked via Google Webhook for:', userId);
     } else if (productId.includes('single_course')) {
-      // Survival Pack: unlocks survival + alphabet + numbers for selected language
       await userDoc.ref.update({
         subscriptionActive: true,
         subscriptionSource: 'google_play',
@@ -130,7 +124,7 @@ async function handleOneTimeProductNotification(firestore: any, notification: an
         [`unlockedContent.${lang}_alphabet`]: weeks,
         [`unlockedContent.${lang}_numbers`]: weeks,
       });
-      console.log('✅ Survival Pack unlocked for:', userId, lang);
+      console.log('✅ Survival Pack unlocked via Google Webhook for:', userId, lang);
     }
   } catch (e: any) {
     console.error('One-time product validation error:', e.message);

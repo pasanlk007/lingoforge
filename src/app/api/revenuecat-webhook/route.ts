@@ -12,79 +12,96 @@ export async function POST(req: NextRequest) {
 
     const body = await req.json();
     const event = body.event;
-    if (!event) return new NextResponse('No event', { status: 400 });
+    if (!event) return new NextResponse('No event data', { status: 400 });
 
     const eventType = event.type;
     const appUserId = event.app_user_id;
     const productId = (event.product_id || '').toLowerCase();
-    const entitlements = event.entitlement_ids || [];
+    
+    // RevenueCat Webhook V1 uses entitlement_ids, V2 uses entitlements (map)
+    const entitlementIds = event.entitlement_ids || (event.entitlements ? Object.keys(event.entitlements) : []);
+    
     const expirationAt = event.expiration_at_ms
       ? new Date(event.expiration_at_ms).toISOString()
       : null;
 
-    console.log(`RevenueCat webhook: ${eventType} for user ${appUserId}, product ${productId}`);
+    console.log(`RevenueCat webhook [${eventType}] for user ${appUserId}, product ${productId}`);
     if (!appUserId) return new NextResponse('No app_user_id', { status: 400 });
 
     const { firestore } = initializeFirebase();
     const userRef = firestore.collection('userProfiles').doc(appUserId);
     const userDoc = await userRef.get();
     if (!userDoc.exists) {
-      console.warn(`RevenueCat webhook: user ${appUserId} not found`);
+      console.warn(`RevenueCat webhook: user ${appUserId} not found in Firestore`);
       return new NextResponse('OK', { status: 200 });
     }
 
-    const isScenario = productId.includes('scenario') || entitlements.includes('scenario');
-    const isPremium = entitlements.includes('premium') || (!isScenario && entitlements.length > 0);
+    // Identify the plan type
+    const isScenario = productId.includes('scenario') || entitlementIds.includes('scenario');
+    const isPremium = entitlementIds.includes('premium') || (!isScenario && entitlementIds.length > 0);
+
+    const updateFields: any = {};
 
     if (isScenario) {
+      // Logic for Scenario Mode (isolated recurring subscription)
       const isActive = ['INITIAL_PURCHASE', 'RENEWAL', 'UNCANCELLATION', 'SUBSCRIPTION_EXTENDED', 'NON_SUBSCRIPTION_PURCHASE'].includes(eventType);
-      await userRef.update({
-        scenarioSubscriptionActive: isActive,
-        scenarioSubscriptionExpiry: expirationAt,
-      });
-      console.log(`✅ Scenario ${isActive ? 'activated' : 'deactivated'} for ${appUserId}`);
+      
+      // If it's a cancellation or expiration, we need to verify if other entitlements are still active
+      // But for simplicity in a webhook handler, we follow the event type.
+      updateFields.scenarioSubscriptionActive = isActive;
+      updateFields.scenarioSubscriptionExpiry = expirationAt;
+      
+      if (eventType === 'EXPIRATION') {
+        updateFields.scenarioSubscriptionActive = false;
+      }
+
+      await userRef.update(updateFields);
+      console.log(`✅ Scenario Mode status updated for ${appUserId}: active=${updateFields.scenarioSubscriptionActive}`);
       return new NextResponse('OK', { status: 200 });
     }
 
     if (isPremium) {
+      // Logic for Survival/Pro Paths (permanent unlocks)
       const isLifetime = productId.includes('lifetime');
       const isCourse = productId.includes('single_course');
 
       if (eventType === 'INITIAL_PURCHASE' || eventType === 'NON_SUBSCRIPTION_PURCHASE') {
         if (isLifetime) {
-          await userRef.update({
-            subscriptionPlan: 'lifetime',
-            subscriptionActive: true,
-            subscriptionSource: 'google_play',
-            subscriptionExpiry: null,
-            'unlockedContent.all': true,
-          });
+          updateFields.subscriptionPlan = 'lifetime';
+          updateFields.subscriptionActive = true;
+          updateFields.subscriptionSource = 'google_play';
+          updateFields.subscriptionExpiry = null;
+          updateFields['unlockedContent.all'] = true;
           console.log(`✅ Lifetime Pro unlocked for ${appUserId}`);
         } else if (isCourse) {
           const lang = (userDoc.data()?.selectedLanguage || 'French').toLowerCase();
           const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
-          await userRef.update({
-            subscriptionActive: true,
-            subscriptionSource: 'google_play',
-            [`unlockedContent.${lang}_survival`]: weeks,
-            [`unlockedContent.${lang}_alphabet`]: weeks,
-            [`unlockedContent.${lang}_numbers`]: weeks,
-          });
+          updateFields.subscriptionActive = true;
+          updateFields.subscriptionSource = 'google_play';
+          updateFields[`unlockedContent.${lang}_survival`] = weeks;
+          updateFields[`unlockedContent.${lang}_alphabet`] = weeks;
+          updateFields[`unlockedContent.${lang}_numbers`] = weeks;
           console.log(`✅ Survival Pack unlocked for ${appUserId} (${lang})`);
         } else {
-          // Standard subscription (weekly)
-          await userRef.update({
-            subscriptionActive: true,
-            subscriptionSource: 'google_play',
-            subscriptionExpiry: expirationAt,
-          });
+          // Standard weekly subscription
+          updateFields.subscriptionActive = true;
+          updateFields.subscriptionSource = 'google_play';
+          updateFields.subscriptionExpiry = expirationAt;
         }
       } else if (eventType === 'RENEWAL') {
-        await userRef.update({ subscriptionActive: true, subscriptionExpiry: expirationAt });
+        updateFields.subscriptionActive = true;
+        updateFields.subscriptionExpiry = expirationAt;
       } else if (eventType === 'CANCELLATION' || eventType === 'EXPIRATION') {
-        if (!isLifetime) {
-          await userRef.update({ subscriptionActive: false, subscriptionExpiry: expirationAt });
+        // Only deactivate if NOT a lifetime user
+        const userData = userDoc.data();
+        if (userData?.subscriptionPlan !== 'lifetime') {
+          updateFields.subscriptionActive = false;
+          updateFields.subscriptionExpiry = expirationAt;
         }
+      }
+
+      if (Object.keys(updateFields).length > 0) {
+        await userRef.update(updateFields);
       }
     }
 

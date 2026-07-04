@@ -9,11 +9,18 @@ import type { UserProfile } from '@/lib/types';
 
 export function canAccessScenarioMode(profile: UserProfile | null): boolean {
   if (!profile) return false;
-  if (!profile.scenarioSubscriptionActive) return false;
+  
+  // Explicitly true if the active flag is set
+  if (profile.scenarioSubscriptionActive === true) {
+    // If we have an expiry, check it
+    if (profile.scenarioSubscriptionExpiry) {
+      const expiryDate = new Date(profile.scenarioSubscriptionExpiry).getTime();
+      const now = Date.now();
+      // Allow a 24-hour grace period for webhook delays during testing/renewal
+      return expiryDate > (now - 86400000);
+    }
+    return true;
+  }
 
-  // No expiry means an active subscription with no known end date yet (e.g.
-  // just created, renews_at not synced). Treat as active.
-  if (!profile.scenarioSubscriptionExpiry) return true;
-
-  return new Date(profile.scenarioSubscriptionExpiry).getTime() > Date.now();
+  return false;
 }
