@@ -17,7 +17,7 @@ export async function getProducts(productIds: string[]) {
   try {
     const { Capacitor } = await import('@capacitor/core');
     if (!Capacitor.isNativePlatform()) return [];
-    const { Purchases } = await import('@revenuecat/purchases-capacitor');
+    const { Purchases, PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
 
     let allProducts: any[] = [];
 
