@@ -6,7 +6,7 @@ import { doc } from 'firebase/firestore';
 
 const API_KEY = 'goog_jXyRicBRuGtmUSeQOTWYMyhunNS';
 const ENTITLEMENT_ID = 'premium';
-const SCENARIO_ENTITLEMENT_ID = 'scenario';
+const SCENARIO_ENTITLEMENT_ID = 'lingoforge_scenario_monthly';
 
 export function RevenueCatProvider({ children }: { children: React.ReactNode }) {
   const { user, isUserLoading } = useUser();

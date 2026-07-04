@@ -23,7 +23,7 @@ const SCENARIO_MONTHLY_BASE_URL = 'https://lingoforgeapp.lemonsqueezy.com/checko
 const SKUS = {
   course: 'single_course',
   lifetime: 'lifetime',
-  scenarioMonthly: 'lingoforge_scenario_monthly',
+  scenarioMonthly: 'lingoforge_scenario_monthly:lingoforge-scenario-monthly',
 };
 
 // Minimal interface to avoid static import of native library
@@ -110,7 +110,7 @@ function PricingPageContent() {
     }
     setIsPurchasing(sku);
     try {
-      const entitlementId = sku === SKUS.scenarioMonthly ? 'scenario' : 'premium';
+      const entitlementId = sku === SKUS.scenarioMonthly ? 'lingoforge_scenario_monthly' : 'premium';
       const purchaseResult = await purchase(sku, user.uid, entitlementId);
       if (purchaseResult?.isAcknowledged) {
         toast({ title: "Purchase successful!", description: "Your content will be unlocked shortly." });

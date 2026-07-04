@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Identify the plan type
-    const isScenario = productId.includes('scenario') || entitlementIds.includes('scenario');
+    const isScenario = productId.includes('scenario') || entitlementIds.some((e) => e.includes('scenario'));
     const isPremium = entitlementIds.includes('premium') || (!isScenario && entitlementIds.length > 0);
 
     const updateFields: any = {};
