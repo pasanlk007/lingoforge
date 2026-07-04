@@ -61,6 +61,73 @@ export async function POST(req: NextRequest) {
 
     if (!appUserId) return new NextResponse('No app_user_id', { status: 400 });
 
+    // Resolve anonymous RevenueCat IDs to real Firebase UIDs via aliases
+    let resolvedUserId = appUserId;
+    if (appUserId.startsWith('$RCAnonymousID:')) {
+      const aliases = event.aliases || [];
+      const realUid = aliases.find((a) => !a.startsWith('
+
+    const token = await getScenarioFirebaseToken();
+    const userDoc = await getUser(token, resolvedUserId);
+    if (!userDoc) {
+      console.warn(`User ${resolvedUserId} not found (original: ${appUserId})`);
+      return new NextResponse('OK', { status: 200 });
+    }
+
+    const selectedLanguage = (getField(userDoc, 'selectedLanguage') || 'French').toLowerCase();
+    const isScenario = productId.includes('scenario') || entitlementIds.some(e => e.includes('scenario'));
+    const isLifetime = productId === 'lifetime' || entitlementIds.includes('lifetime');
+    const isCourse = productId === 'single_course' || entitlementIds.some(e => e.includes('single') || e.includes('course'));
+
+    console.log(`isScenario=${isScenario} isLifetime=${isLifetime} isCourse=${isCourse} lang=${selectedLanguage}`);
+
+    if (isScenario) {
+      const isActive = ['INITIAL_PURCHASE','RENEWAL','UNCANCELLATION','SUBSCRIPTION_EXTENDED','NON_SUBSCRIPTION_PURCHASE'].includes(eventType);
+      await updateUser(token, resolvedUserId, {
+        scenarioSubscriptionActive: isActive,
+        scenarioSubscriptionExpiry: expirationAt || '',
+      });
+      console.log(`✅ Scenario ${isActive ? 'activated' : 'deactivated'} for ${resolvedUserId}`);
+      return new NextResponse('OK', { status: 200 });
+    }
+
+    const isOneTime = ['INITIAL_PURCHASE','NON_SUBSCRIPTION_PURCHASE','NON_RENEWING_PURCHASE'].includes(eventType);
+
+    if (isOneTime && isLifetime) {
+      await updateUser(token, resolvedUserId, {
+        subscriptionPlan: 'lifetime',
+        subscriptionActive: true,
+        subscriptionSource: 'google_play',
+        'unlockedContent.all': true,
+      });
+      console.log(`✅ Lifetime Pro unlocked for ${resolvedUserId}`);
+    } else if (isOneTime && isCourse) {
+      const weeks = [1,2,3,4,5,6,7,8,9,10,11,12];
+      await updateUser(token, resolvedUserId, {
+        subscriptionActive: true,
+        subscriptionSource: 'google_play',
+        [`unlockedContent.${selectedLanguage}_survival`]: weeks,
+        [`unlockedContent.${selectedLanguage}_alphabet`]: weeks,
+        [`unlockedContent.${selectedLanguage}_numbers`]: weeks,
+      });
+      console.log(`✅ Survival Pack unlocked for ${appUserId} (${selectedLanguage})`);
+    } else {
+      console.log(`No action for eventType=${eventType} isLifetime=${isLifetime} isCourse=${isCourse}`);
+    }
+
+    return new NextResponse('OK', { status: 200 });
+  } catch (error: any) {
+    console.error('RC webhook error:', error.message);
+    return new NextResponse('Error: ' + error.message, { status: 500 });
+  }
+}
+));
+      if (realUid) {
+        resolvedUserId = realUid;
+        console.log('Resolved anon ID to:', resolvedUserId);
+      }
+    }
+
     const token = await getScenarioFirebaseToken();
     const userDoc = await getUser(token, appUserId);
     if (!userDoc) {
@@ -77,27 +144,27 @@ export async function POST(req: NextRequest) {
 
     if (isScenario) {
       const isActive = ['INITIAL_PURCHASE','RENEWAL','UNCANCELLATION','SUBSCRIPTION_EXTENDED','NON_SUBSCRIPTION_PURCHASE'].includes(eventType);
-      await updateUser(token, appUserId, {
+      await updateUser(token, resolvedUserId, {
         scenarioSubscriptionActive: isActive,
         scenarioSubscriptionExpiry: expirationAt || '',
       });
-      console.log(`✅ Scenario ${isActive ? 'activated' : 'deactivated'} for ${appUserId}`);
+      console.log(`✅ Scenario ${isActive ? 'activated' : 'deactivated'} for ${resolvedUserId}`);
       return new NextResponse('OK', { status: 200 });
     }
 
     const isOneTime = ['INITIAL_PURCHASE','NON_SUBSCRIPTION_PURCHASE','NON_RENEWING_PURCHASE'].includes(eventType);
 
     if (isOneTime && isLifetime) {
-      await updateUser(token, appUserId, {
+      await updateUser(token, resolvedUserId, {
         subscriptionPlan: 'lifetime',
         subscriptionActive: true,
         subscriptionSource: 'google_play',
         'unlockedContent.all': true,
       });
-      console.log(`✅ Lifetime Pro unlocked for ${appUserId}`);
+      console.log(`✅ Lifetime Pro unlocked for ${resolvedUserId}`);
     } else if (isOneTime && isCourse) {
       const weeks = [1,2,3,4,5,6,7,8,9,10,11,12];
-      await updateUser(token, appUserId, {
+      await updateUser(token, resolvedUserId, {
         subscriptionActive: true,
         subscriptionSource: 'google_play',
         [`unlockedContent.${selectedLanguage}_survival`]: weeks,
