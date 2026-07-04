@@ -81,7 +81,35 @@ export function RevenueCatProvider({ children }: { children: React.ReactNode }) 
 
         if (user) {
           try {
-            await Purchases.logIn({ appUserID: user.uid });
+            const { customerInfo } = await Purchases.logIn({ appUserID: user.uid });
+            // After login, RevenueCat merges anonymous purchases. Check entitlements immediately.
+            if (customerInfo && firestore) {
+              const userProfileRef = doc(firestore, 'userProfiles', user.uid);
+              const activeEntitlements = customerInfo.entitlements?.active || {};
+              const entitlementKeys = Object.keys(activeEntitlements);
+              const updates: any = {};
+
+              if (entitlementKeys.includes('lifetime')) {
+                updates.subscriptionPlan = 'lifetime';
+                updates.subscriptionActive = true;
+                updates.subscriptionSource = 'google_play';
+                updates['unlockedContent.all'] = true;
+              } else if (entitlementKeys.some((e) => e.includes('single') || e.includes('course'))) {
+                const lang = localStorage.getItem('targetLanguage') || 'French';
+                const langKey = lang.toLowerCase();
+                const weeks = [1,2,3,4,5,6,7,8,9,10,11,12];
+                updates.subscriptionActive = true;
+                updates.subscriptionSource = 'google_play';
+                updates['unlockedContent.' + langKey + '_survival'] = weeks;
+                updates['unlockedContent.' + langKey + '_alphabet'] = weeks;
+                updates['unlockedContent.' + langKey + '_numbers'] = weeks;
+              }
+
+              if (Object.keys(updates).length > 0) {
+                updateDocumentNonBlocking(userProfileRef, updates);
+                console.log('Restored purchases after login:', Object.keys(updates));
+              }
+            }
           } catch (e: any) {
               if (e.code !== PURCHASES_ERROR_CODE.INVALID_APP_USER_ID_ERROR) {
                   console.error("RevenueCat login failed:", e);
