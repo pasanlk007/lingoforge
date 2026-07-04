@@ -42,7 +42,6 @@ async function handleSubscriptionNotification(firestore: any, notification: any)
       return;
     }
 
-    const isAcknowledged = acknowledgementState === 1;
     const isStillActive = sub.data.expiryTimeMillis ? parseInt(sub.data.expiryTimeMillis, 10) > Date.now() : false;
 
     // SCENARIO MODE — isolated recurring subscription, returns early
@@ -71,23 +70,8 @@ async function handleSubscriptionNotification(firestore: any, notification: any)
       paymentProviderSubscriptionId: orderId,
     };
 
-    if (isAcknowledged) {
-      const userProfile = userDoc.data() || {};
-      const language = (userProfile.selectedLanguage || 'french').toLowerCase();
-      let unlockedContentChanges = userProfile.unlockedContent || {};
-
-      if (plan === 'lifetime') {
-        unlockedContentChanges.all = true;
-      } else if (plan === 'course') {
-        unlockedContentChanges[`${language}_survival`] = Array.from({ length: 12 }, (_, i) => i + 1);
-      } else if (plan === 'weekly') {
-        const existingWeeks = unlockedContentChanges[`${language}_survival`] || [];
-        const nextWeek = existingWeeks.length > 0 ? Math.max(...existingWeeks) + 1 : 2;
-        unlockedContentChanges[`${language}_survival`] = [...new Set([...existingWeeks, nextWeek])];
-      }
-      fieldsToUpdate.unlockedContent = unlockedContentChanges;
-    }
-
+    // Note: one-time items (single_course, lifetime) are handled in handleOneTimeProductNotification
+    // We keep standard subscription logic here for weekly plans
     await userDoc.ref.update(fieldsToUpdate);
     console.log(`Updated user ${userId} with plan ${plan}.`);
   } catch (error: any) {
@@ -127,7 +111,7 @@ async function handleOneTimeProductNotification(firestore: any, notification: an
     const lang = (userDoc.data()?.selectedLanguage || 'French').toLowerCase();
     const weeks = Array.from({ length: 12 }, (_, i) => i + 1);
 
-    if (productId === 'lifetime') {
+    if (productId.includes('lifetime')) {
       // Lifetime Pro: unlocks all paths
       await userDoc.ref.update({
         subscriptionPlan: 'lifetime',
@@ -137,9 +121,11 @@ async function handleOneTimeProductNotification(firestore: any, notification: an
         'unlockedContent.all': true,
       });
       console.log('✅ Lifetime Pro unlocked for:', userId);
-    } else if (productId === 'single_course') {
+    } else if (productId.includes('single_course')) {
       // Survival Pack: unlocks survival + alphabet + numbers for selected language
       await userDoc.ref.update({
+        subscriptionActive: true,
+        subscriptionSource: 'google_play',
         [`unlockedContent.${lang}_survival`]: weeks,
         [`unlockedContent.${lang}_alphabet`]: weeks,
         [`unlockedContent.${lang}_numbers`]: weeks,

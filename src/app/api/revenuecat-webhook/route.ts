@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     const eventType = event.type;
     const appUserId = event.app_user_id;
-    const productId = event.product_id || '';
+    const productId = (event.product_id || '').toLowerCase();
     const entitlements = event.entitlement_ids || [];
     const expirationAt = event.expiration_at_ms
       ? new Date(event.expiration_at_ms).toISOString()
@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
     const isPremium = entitlements.includes('premium') || (!isScenario && entitlements.length > 0);
 
     if (isScenario) {
-      const isActive = ['INITIAL_PURCHASE', 'RENEWAL', 'UNCANCELLATION', 'SUBSCRIPTION_EXTENDED'].includes(eventType);
+      const isActive = ['INITIAL_PURCHASE', 'RENEWAL', 'UNCANCELLATION', 'SUBSCRIPTION_EXTENDED', 'NON_SUBSCRIPTION_PURCHASE'].includes(eventType);
       await userRef.update({
         scenarioSubscriptionActive: isActive,
         scenarioSubscriptionExpiry: expirationAt,
@@ -47,8 +47,8 @@ export async function POST(req: NextRequest) {
     }
 
     if (isPremium) {
-      const isLifetime = productId.includes('lifetime') || productId === 'lifetime';
-      const isCourse = productId.includes('single_course') || productId === 'single_course';
+      const isLifetime = productId.includes('lifetime');
+      const isCourse = productId.includes('single_course');
 
       if (eventType === 'INITIAL_PURCHASE' || eventType === 'NON_SUBSCRIPTION_PURCHASE') {
         if (isLifetime) {
@@ -71,6 +71,13 @@ export async function POST(req: NextRequest) {
             [`unlockedContent.${lang}_numbers`]: weeks,
           });
           console.log(`✅ Survival Pack unlocked for ${appUserId} (${lang})`);
+        } else {
+          // Standard subscription (weekly)
+          await userRef.update({
+            subscriptionActive: true,
+            subscriptionSource: 'google_play',
+            subscriptionExpiry: expirationAt,
+          });
         }
       } else if (eventType === 'RENEWAL') {
         await userRef.update({ subscriptionActive: true, subscriptionExpiry: expirationAt });
