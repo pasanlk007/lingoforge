@@ -129,7 +129,7 @@ function PricingPageContent() {
   const SCENARIO_MONTHLY_URL = `${SCENARIO_MONTHLY_BASE_URL}?checkout[email]=${user?.email || ''}&checkout[name]=${user?.displayName || ''}`;
 
   const GooglePlayButton = ({ sku, fallbackText }: { sku: string; fallbackText: string }) => {
-    const product = products.find(p => p.identifier === sku);
+    const product = products.find(p => p.identifier === sku || p.identifier.startsWith(sku + ":") || sku.startsWith(p.identifier + ":"));
     if (!isBillingReady) return <Button disabled className="w-full"><Loader2 className="mr-2 h-4 w-4 animate-spin"/>Connecting...</Button>;
     if (!product) return <Button disabled className="w-full">{fallbackText} (Not Available)</Button>;
     return (
