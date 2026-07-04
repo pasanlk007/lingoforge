@@ -46,8 +46,6 @@ export async function POST(req: NextRequest) {
       // Logic for Scenario Mode (isolated recurring subscription)
       const isActive = ['INITIAL_PURCHASE', 'RENEWAL', 'UNCANCELLATION', 'SUBSCRIPTION_EXTENDED', 'NON_SUBSCRIPTION_PURCHASE'].includes(eventType);
       
-      // If it's a cancellation or expiration, we need to verify if other entitlements are still active
-      // But for simplicity in a webhook handler, we follow the event type.
       updateFields.scenarioSubscriptionActive = isActive;
       updateFields.scenarioSubscriptionExpiry = expirationAt;
       

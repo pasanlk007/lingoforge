@@ -51,7 +51,7 @@ export async function getProducts(productIds: string[]) {
       allProducts = [...allProducts, ...iapProducts];
     } catch (e) {}
 
-    // Fallback: generic fetch
+    // Fallback: generic fetch if type-specific fails
     if (allProducts.length === 0) {
       const { products } = await Purchases.getProducts({ productIdentifiers: productIds });
       allProducts = products;
@@ -75,7 +75,7 @@ export async function purchase(sku: string, appUserID: string, entitlementId: st
       throw new Error('Purchases can only be made on a native device.');
     }
 
-    const { Purchases, PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
+    const { Purchases } = await import('@revenuecat/purchases-capacitor');
 
     // Find the product object
     let productToPurchase: any = null;
