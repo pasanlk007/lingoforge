@@ -25,8 +25,9 @@ export function ReminderCard() {
   const [reminder, setReminder] = useState<DailyReminder>({ enabled: false, time: '09:00' });
   const { toast } = useToast();
 
-  const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard) ? translations[nativeLanguage].dashboard : translations.English.dashboard;
-  const t_notifications = (isMounted && translations[nativeLanguage]) ? translations[nativeLanguage].notifications : translations.English.notifications;
+  const currentT = translations[nativeLanguage] || translations.English;
+  const t_dashboard = currentT.dashboard;
+  const t_notifications = currentT.notifications;
 
   useEffect(() => {
     setIsMounted(true);
@@ -73,6 +74,10 @@ export function ReminderCard() {
         const { LocalNotifications } = await import('@capacitor/local-notifications');
         const status = await LocalNotifications.requestPermissions();
         setPermission(status.display as any);
+        
+        if (status.display === 'granted') {
+           toast({ title: 'Notifications Enabled', description: 'You will now receive daily study reminders.' });
+        }
       } catch (e) {
         toast({ variant: 'destructive', title: 'Native error', description: 'Failed to request notification permissions.' });
       }
@@ -110,7 +115,7 @@ export function ReminderCard() {
       if (isNativeApp()) {
         const { LocalNotifications } = await import('@capacitor/local-notifications');
         
-        // Cancel existing daily reminders
+        // Cancel existing daily reminders (ID 1 is used for daily lesson reminder)
         await LocalNotifications.cancel({ notifications: [{ id: 1 }] });
 
         if (reminder.enabled) {
@@ -150,8 +155,8 @@ export function ReminderCard() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <BellRing className="h-5 w-5" />
+        <CardTitle className="flex items-center gap-2 text-lg">
+          <BellRing className="h-5 w-5 text-primary" />
           {t_dashboard.reminders.title}
         </CardTitle>
         <CardDescription>
@@ -162,21 +167,21 @@ export function ReminderCard() {
         {permission !== 'granted' ? (
           <div className="flex flex-col items-center gap-3 rounded-lg border border-dashed p-4 text-center">
             <BellOff className="h-8 w-8 text-muted-foreground" />
-            <p className="text-sm font-medium text-muted-foreground">
+            <p className="text-xs font-medium text-muted-foreground">
               {t_dashboard.reminders.permissionNeeded}
             </p>
-            <Button onClick={requestPermission}>{t_dashboard.reminders.grantPermission}</Button>
+            <Button size="sm" onClick={requestPermission}>{t_dashboard.reminders.grantPermission}</Button>
           </div>
         ) : (
           <div className="space-y-4">
             <div className="flex items-center justify-between gap-4">
-                <Label htmlFor="daily-reminder-switch" className="font-semibold">{t_dashboard.reminders.dailyReminder}</Label>
+                <Label htmlFor="daily-reminder-switch" className="font-semibold text-sm">{t_dashboard.reminders.dailyReminder}</Label>
                 <div className="flex items-center gap-2">
                     <Input
                         type="time"
                         value={reminder.time}
                         disabled={!reminder.enabled}
-                        className="w-28"
+                        className="w-28 h-8 text-sm"
                         onChange={(e) => handleReminderChange('time', e.target.value)}
                     />
                     <Switch
@@ -186,8 +191,8 @@ export function ReminderCard() {
                     />
                 </div>
             </div>
-            <Button onClick={saveReminder} className="w-full mt-4" disabled={isSaving}>
-              {isSaving && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            <Button onClick={saveReminder} className="w-full mt-2 h-9 text-xs" disabled={isSaving}>
+              {isSaving ? <Loader2 className="mr-2 h-3 w-3 animate-spin" /> : null}
               {t_dashboard.reminders.save}
             </Button>
           </div>
