@@ -1,22 +1,20 @@
-
 'use client';
 import { useState, useEffect, useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { useUser, useFirestore, useMemoFirebase, useDoc, updateDocumentNonBlocking } from '@/firebase';
-import { doc, arrayUnion, increment } from 'firebase/firestore';
-import type { UserProfile, LearningPath } from '@/lib/types';
+import { doc, arrayUnion } from 'firebase/firestore';
+import type { UserProfile } from '@/lib/types';
 import { proLessonTopics } from '@/lib/proLessonTopics';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, Loader2, BookOpen, MessagesSquare, Globe, PenSquare, BrainCircuit, XCircle, Lock } from 'lucide-react';
+import { CheckCircle, Loader2, BookOpen, MessagesSquare, Globe, PenSquare, BrainCircuit, XCircle, Lock, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { canAccessLesson } from '@/lib/accessControl';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { format as formatDate } from 'date-fns';
 
 const AudioPlayback = dynamic(() => import('@/components/AudioPlayback').then(mod => mod.AudioPlayback), { ssr: false });
 const Confetti = dynamic(() => import('react-dom-confetti'), { ssr: false });
@@ -188,9 +186,7 @@ export default function ProLessonPage() {
     }, 0);
     const passed = correctCount / quizQuestions.length >= 0.6; // 60% to pass
     setQuizResult(passed ? 'pass' : 'fail');
-    if (passed) {
-      handleComplete();
-    }
+    // We no longer auto-complete to give the user a button choice
   }
 
   const handleComplete = () => {
@@ -198,23 +194,14 @@ export default function ProLessonPage() {
     setIsComplete(true);
     const langKey = (language as string).toLowerCase();
     const dayKey = `${week}-${day}`;
-    const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
-
-    const updateData: any = {
+    
+    // Pro path strictly updates its own progress.
+    // It DOES NOT award XP or update Streaks (Survival Pack exclusive).
+    updateDocumentNonBlocking(userProfileRef, {
       [`languageProgress.${langKey}.pro.completedDays`]: arrayUnion(dayKey),
       [`languageProgress.${langKey}.pro.lastWeek`]: week,
       [`languageProgress.${langKey}.pro.lastDay`]: day,
-      xpPoints: increment(100),
-      [`dailyXpLog.${todayKey}`]: increment(100),
-      lastActiveDate: todayKey,
-    };
-
-    // Award streak if first lesson of the day
-    if (userProfile?.lastActiveDate !== todayKey) {
-        updateData.currentStreak = increment(1);
-    }
-
-    updateDocumentNonBlocking(userProfileRef, updateData);
+    });
   };
 
   const proLessonBg = PlaceHolderImages.find(p => p.id === 'pro-lesson-background');
@@ -374,7 +361,18 @@ export default function ProLessonPage() {
                     </div>)}
                     {quizResult === 'pass' && (<div className="text-center py-8">
                         <div className="relative inline-block"><Confetti active={true} config={confettiConfig}/><CheckCircle className="h-16 w-16 text-green-500"/></div>
-                        <h3 className="text-xl font-bold mt-4">Quiz Passed!</h3><p className="text-muted-foreground">Great job! You have completed the lesson.</p>
+                        <h3 className="text-xl font-bold mt-4">Quiz Passed!</h3><p className="text-muted-foreground mb-6">Great job! Finalize the lesson to save your progress.</p>
+                        <div className="flex flex-col gap-2">
+                            {!isComplete ? (
+                                <Button onClick={handleComplete} className="bg-green-600 hover:bg-green-700">
+                                  <CheckCircle className="mr-2 h-4 w-4" /> Finalize & Complete Day
+                                </Button>
+                            ) : (
+                                <Button asChild variant="outline">
+                                    <Link href="/dashboard">Back to Dashboard <ChevronRight className="ml-1 h-4 w-4" /></Link>
+                                </Button>
+                            )}
+                        </div>
                     </div>)}
                      {quizResult === 'fail' && (<div className="text-center py-8">
                         <XCircle className="h-16 w-16 text-destructive mx-auto"/>

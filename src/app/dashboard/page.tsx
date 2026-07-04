@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -181,7 +180,8 @@ function DashboardContent({ user }: { user: User }) {
   const nextProDayInWeekForTopic = ((nextProAbsoluteDay - 1) % 7) + 1;
   const nextProTopic = proLessonTopics[nextProWeekForTopic]?.[nextProDayInWeekForTopic] || 'Review';
 
-  const nextProLessonUrl = `/dashboard/lesson-map#day-${nextProAbsoluteDay}`;
+  // DIRECT LESSON URL for Continue button
+  const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeekForTopic}/${nextProDayInWeekForTopic}`;
 
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
   const xpToNextLevel = 1500 - ((xpPoints || 0) % 1500);
