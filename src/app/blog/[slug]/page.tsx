@@ -248,7 +248,7 @@ LingoForge is designed specifically for migrant workers like you. Our survival R
 ✅ Phonetic pronunciation for Sinhala speakers  
 ✅ Week 1 completely FREE
 
-[Start Learning Romanian Free →](https://lingoforge.app/login)
+[Start Learning Romanian Free →](https://lingoforge.app/signup)
 
 ## Tips for Learning Romanian Fast
 

@@ -141,7 +141,7 @@ export const translations = {
       langs: { title: `${targetLanguages.length} Languages Available`, desc: "From French to Japanese, choose the language of your dreams." },
     },
     pricingTitle: "Unlock Your Full Potential",
-    pricingSub: "Your free trial includes Week 1 of the Survival Path. Upgrade to unlock all lessons.",
+    pricingSub: "Master a language. Unlock new opportunities.",
     pricingPage: {
         purchasingFor: "You are purchasing for:",
         changeLanguageNote: "Change your target language on the dashboard.",
@@ -174,7 +174,7 @@ export const translations = {
       feat1: "Survival lessons",
       feat2: "Basic numbers",
       feat3: "Alphabet",
-      feat4: "One time payment",
+      feat4: "One-time payment",
     },
     lifetimePlan: {
       title: "Lifetime Pro",
@@ -185,7 +185,7 @@ export const translations = {
       feat2: "Basic numbers ",
       feat3: "Alphabet",
       feat4: "Lingoforge pro lessons",
-      feat5: "Onetime payment",
+      feat5: "One-time payment",
     },
     footerTagline: "Language survival for the modern migrant.",
     footerLinks: {
@@ -441,7 +441,7 @@ export const translations = {
       langs: { title: "භාෂා 21", desc: "යුරෝපීය, ආසියානු, මැද පෙරදිග" },
     },
     pricingTitle: "ඔබේ සම්පූර්ණ විභවය විවෘත කරන්න",
-    pricingSub: "ඔබේ නොමිලේ අත්හදා බැලීමට Survival Path හි 1 වන සතිය ඇතුළත් වේ. සියලුම පාඩම් අගුළු ඇරීමට උත්ශ්‍රේණි කරන්න.",
+    pricingSub: "භාෂා ප්‍රවීණතාවය නව දොරටු විවර කරයි.",
     pricingPage: {
         purchasingFor: "ඔබ මිලදී ගන්නේ:",
         changeLanguageNote: "ඔබේ ඉලක්ක භාෂාව පාලන පුවරුවෙන් වෙනස් කරන්න.",
