@@ -18,7 +18,8 @@ const navItems = [
 
 export function BottomNav() {
   const pathname = usePathname();
-  if (pathname === "/go") return null;
+  // Do not show bottom navigation on the landing page or the "go" splash page
+  if (pathname === "/go" || pathname === "/") return null;
 
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t bg-background/95 backdrop-blur-sm">

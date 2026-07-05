@@ -187,7 +187,7 @@ export default function LandingPage() {
         </div>
       )}
 
-      <main className="pb-20 md:pb-0">
+      <main>
         <section 
           className="relative w-full overflow-hidden flex items-center py-24 lg:min-h-screen lg:py-0"
           style={{
@@ -454,7 +454,7 @@ export default function LandingPage() {
                 </DropdownMenu>
               </div>
             </div>
-            <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
+            <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm text-muted-foreground">
               <p>{t.footerCredit}</p>
             </div>
           </div>
