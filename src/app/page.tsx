@@ -129,8 +129,8 @@ export default function LandingPage() {
             </div>
             <p className="text-gray-700 text-xs font-medium mb-2">කරුණාකර Chrome හෝ Safari browser වෙතින් පිවිසෙන්න:</p>
             <div className="bg-gray-100 rounded-lg p-3 mb-3 flex items-center justify-between">
-              <span className="text-gray-900 font-bold text-sm select-all">www.bashaguru.com</span>
-              <button onClick={() => navigator.clipboard?.writeText('www.bashaguru.com').then(() => alert('✅ Copy වුණා!\n\nChrome browser open කරලා\nwww.bashaguru.com Google කරන්න 🔍'))} className="bg-blue-600 text-white text-xs px-3 py-1 rounded-lg ml-2">
+              <span className="text-gray-900 font-bold text-sm select-all">www.lingoforge.app</span>
+              <button onClick={() => navigator.clipboard?.writeText('www.lingoforge.app').then(() => alert('✅ Copy වුණා!\n\nChrome browser open කරලා\nwww.bashaguru.com Google කරන්න 🔍'))} className="bg-blue-600 text-white text-xs px-3 py-1 rounded-lg ml-2">
                 Copy
               </button>
             </div>
@@ -179,9 +179,9 @@ export default function LandingPage() {
                 <XCircle className="h-5 w-5" />
             </button>
             <div className="absolute -top-7 right-12 h-0 w-0 border-x-8 border-x-transparent border-b-[12px] border-b-cyan-800"></div>
-            <p className="text-base font-bold text-white">ඔබේ භාශාව තෝරන්න</p>
+            <p className="text-base font-bold text-white">select language</p>
             <p className="mt-1 text-sm text-cyan-200">
-                වෙබ් අඩවිය ඔබේ මව් භාෂාවෙන් බැලීමට පවতিන භාෂා වලින් තෝරන්න.
+                select language.
             </p>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function LandingPage() {
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                         <p className="font-semibold text-lg text-slate-200">{t.redesign_cta_text}</p>
                         <Button asChild className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold animate-pulse">
-                            <Link href="/dashboard">
+                            <Link href="/signup">
                                 {t.redesign_cta_button} <ChevronRight className="ml-2 h-5 w-5" />
                             </Link>
                         </Button>
