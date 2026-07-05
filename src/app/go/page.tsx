@@ -14,7 +14,7 @@ const content = {
     trial: 'පළමු දින 3 නොමිලේ උත්සාහ කරන්න 🚀',
     sub: 'ඔබට ගැලපේ නම් පසුව තීරණය කරන්න • No entry fees',
     btn: '🚀 නොමිලේ ඉගෙනීම ආරම්භ කරන්න',
-    copy: 'www.bashaguru.com',
+    copy: 'www.lingoforge.app',
     copyNote: 'Copy & paste on your browser 👇',
   },
   Hindi: {
@@ -28,7 +28,7 @@ const content = {
     trial: 'पहले 3 दिन मुफ्त आज़माएं 🚀',
     sub: 'पसंद आए तो बाद में decide करें • No entry fees',
     btn: '🚀 मुफ्त में सीखना शुरू करें',
-    copy: 'www.bashaguru.com',
+    copy: 'www.lingoforge.app',
     copyNote: 'Copy & paste on your browser 👇',
   },
   Bengali: {
@@ -42,7 +42,7 @@ const content = {
     trial: 'প্রথম ৩ দিন বিনামূল্যে চেষ্টা করুন 🚀',
     sub: 'পছন্দ হলে পরে সিদ্ধান্ত নিন • No entry fees',
     btn: '🚀 বিনামূল্যে শেখা শুরু করুন',
-    copy: 'www.bashaguru.com',
+    copy: 'www.lingoforge.app',
     copyNote: 'Copy & paste on your browser 👇',
   },
   Urdu: {
@@ -56,7 +56,7 @@ const content = {
     trial: 'پہلے 3 دن مفت آزمائیں 🚀',
     sub: 'پسند آئے تو بعد میں فیصلہ کریں • No entry fees',
     btn: '🚀 مفت میں سیکھنا شروع کریں',
-    copy: 'www.bashaguru.com',
+    copy: 'www.lingoforge.app',
     copyNote: 'Copy & paste on your browser 👇',
   },
   Nepali: {
@@ -70,7 +70,7 @@ const content = {
     trial: 'पहिलो 3 दिन नि:शुल्क प्रयास गर्नुस् 🚀',
     sub: 'मन परे पछि निर्णय गर्नुस् • No entry fees',
     btn: '🚀 नि:शुल्क सिक्न सुरु गर्नुस्',
-    copy: 'www.bashaguru.com',
+    copy: 'www.lingoforge.app',
     copyNote: 'Copy & paste on your browser 👇',
   },
   English: {
@@ -84,7 +84,7 @@ const content = {
     trial: 'Try FREE for first 3 days 🚀',
     sub: 'Decide later if you like it • No entry fees',
     btn: '🚀 Start Learning Free',
-    copy: 'www.bashaguru.com',
+    copy: 'www.lingoforge.app',
     copyNote: 'Copy & paste on your browser 👇',
   },
 };
@@ -115,7 +115,7 @@ export default function GoPage() {
   };
 
   const handleCopy = () => {
-    navigator.clipboard?.writeText('www.bashaguru.com').then(() => {
+    navigator.clipboard?.writeText('www.lingoforge.app').then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
