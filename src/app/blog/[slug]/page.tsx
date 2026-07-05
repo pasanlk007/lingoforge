@@ -303,7 +303,7 @@ Join Facebook groups of migrants from your country in your destination country. 
 
 🇷🇴 Romanian | 🇩🇪 German | 🇫🇷 French | 🇮🇹 Italian | 🇵�� Polish | 🇬🇷 Greek | 🇨🇿 Czech | and 14 more!
 
-[Start Learning for Free →](https://lingoforge.app/login)
+[Start Learning for Free →](https://lingoforge.app/signup)
     `,
   },
   'learn-romanian-30-days': {
@@ -353,7 +353,7 @@ Our app is built specifically for people like you:
 ✅ **Survival focus** - Learn what you actually need  
 ✅ **10 minutes a day** - Fits your busy schedule
 
-[Start Your 30-Day Romanian Journey →](https://lingoforge.app/login)
+[Start Your 30-Day Romanian Journey →](https://lingoforge.app/signup)
     `,
   },
   
@@ -405,7 +405,7 @@ LingoForge app එකෙන් සිංහලෙන් රෝමේනියා
 ✅ Workplace Romanian - රැකියා ස්ථානයේ
 ✅ පළමු සතිය නොමිලේ
 
-[LingoForge ෙදෙස් දැන්ම ආරම්භ කරන්න →](https://lingoforge.app/login)
+[LingoForge ෙදෙස් දැන්ම ආරම්භ කරන්න →](https://lingoforge.app/signup)
 
 ## රෝමේනියානු ඉගෙනීමේ Tips
 
@@ -450,7 +450,7 @@ learn Romanian in Sinhala | සිංහලෙන් රෝමේනියාන
 ✅ Workplace vocabulary
 ✅ පළමු සතිය නොමිලේ
 
-[සිංහලෙන් ජර්මන් ඉගෙනීම ආරම්භ කරන්න →](https://lingoforge.app/login)
+[සිංහලෙන් ජර්මන් ඉගෙනීම ආරම්භ කරන්න →](https://lingoforge.app/signup)
 
 ## Search Keywords
 
@@ -492,7 +492,7 @@ learn German in Sinhala | සිංහලෙන් ජර්මන් | German f
 ✅ දෛනික ජීවිතය සඳහා
 ✅ පළමු සතිය නොමිලේ
 
-[සිංහලෙන් ඉතාලි ඉගෙනීම ආරම්භ කරන්න →](https://lingoforge.app/login)
+[සිංහලෙන් ඉතාලි ඉගෙනීම ආරම්භ කරන්න →](https://lingoforge.app/signup)
 
 ## Search Keywords
 
@@ -550,9 +550,9 @@ LingoForge is designed for:
 
 - Web: [lingoforge.app](https://lingoforge.app)
 - Web: [bashaguru.com](https://bashaguru.com)
-- Android: Google Play Store (search BhashaGuru)
+- Android: Google Play Store (search lingoforge)
 
-[Start Learning Free Today →](https://lingoforge.app/login)
+[Start Learning Free Today →](https://lingoforge.app/signup)
 
 ## Search Keywords
 
@@ -604,7 +604,7 @@ LingoForge offers German lessons in Nepali language:
 ✅ Numbers and directions
 ✅ Week 1 FREE
 
-[Start Learning German in Nepali →](https://lingoforge.app/login)
+[Start Learning German in Nepali →](https://lingoforge.app/signup)
     `,
   },
   'hebrew-for-indian-caregivers': {
@@ -645,7 +645,7 @@ Our Hebrew course is designed for South Asian caregivers:
 ✅ Available in Hindi, Bengali, and more
 ✅ First week FREE
 
-[Start Learning Hebrew Today →](https://lingoforge.app/login)
+[Start Learning Hebrew Today →](https://lingoforge.app/signup)
     `,
   },
   'french-for-bangladeshi-workers': {
@@ -693,7 +693,7 @@ Learn French in Bengali with LingoForge:
 ✅ Survival and workplace French
 ✅ Week 1 completely FREE
 
-[Start Learning French in Bengali →](https://lingoforge.app/login)
+[Start Learning French in Bengali →](https://lingoforge.app/signup)
     `,
   },
   'japanese-for-migrant-workers': {
@@ -742,7 +742,7 @@ Start with Hiragana - LingoForge teaches the alphabet step by step!
 ✅ Available in Hindi, Bengali, Nepali, Sinhala, Urdu
 ✅ Week 1 FREE
 
-[Start Learning Japanese Today →](https://lingoforge.app/login)
+[Start Learning Japanese Today →](https://lingoforge.app/signup)
     `,
   },
   'korean-for-asian-workers': {
@@ -787,7 +787,7 @@ Prepare for EPS-TOPIK with LingoForge:
 ✅ Available in multiple Asian languages
 ✅ Week 1 FREE
 
-[Start Learning Korean Today →](https://lingoforge.app/login)
+[Start Learning Korean Today →](https://lingoforge.app/signup)
     `,
   },
   'migrant-worker-language-guide': {
@@ -840,7 +840,7 @@ LingoForge is the only language app built specifically for Asian migrant workers
 - **Affordable** - Week 1 completely free, then flexible pricing
 - **AI-powered Pro lessons** - Advanced content for citizenship preparation
 
-[Start Learning Today - Week 1 FREE →](https://lingoforge.app/login)
+[Start Learning Today - Week 1 FREE →](https://lingoforge.app/signup)
 
 ## Success Stories
 

@@ -50,7 +50,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="text-center pt-8">
-            <Link href="/login" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold">Start Learning Free →</Link>
+            <Link href="/signup" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold">Start Learning Free →</Link>
           </div>
         </div>
       </main>

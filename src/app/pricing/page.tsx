@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { translations } from '@/lib/translations';
-import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
+import { useUser, useFirestore, useDoc, useMemoFirebase, updateDocumentNonBlocking } from '@/firebase';
 import { doc } from 'firebase/firestore';
 import type { UserProfile } from '@/lib/types';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -113,7 +113,19 @@ function PricingPageContent() {
       const entitlementId = sku === SKUS.scenarioMonthly ? 'lingoforge_scenario_monthly' : 'premium';
       const purchaseResult = await purchase(sku, user.uid, entitlementId);
       if (purchaseResult?.isAcknowledged) {
-        toast({ title: "Purchase successful!", description: "Your content will be unlocked shortly." });
+        toast({ title: "Purchase successful!", description: "Unlocking your content..." });
+        if (firestore && user) {
+          const userRef = doc(firestore, 'userProfiles', user.uid);
+          const lang = (localStorage.getItem('targetLanguage') || 'French').toLowerCase();
+          const weeks = [1,2,3,4,5,6,7,8,9,10,11,12];
+          if (sku === SKUS.lifetime) {
+            updateDocumentNonBlocking(userRef, { subscriptionPlan: 'lifetime', subscriptionActive: true, subscriptionSource: 'google_play', 'unlockedContent.all': true });
+          } else if (sku === SKUS.course) {
+            updateDocumentNonBlocking(userRef, { subscriptionActive: true, subscriptionSource: 'google_play', ['unlockedContent.' + lang + '_survival']: weeks, ['unlockedContent.' + lang + '_alphabet']: weeks, ['unlockedContent.' + lang + '_numbers']: weeks });
+          } else if (sku === SKUS.scenarioMonthly) {
+            updateDocumentNonBlocking(userRef, { scenarioSubscriptionActive: true });
+          }
+        }
       } else {
         toast({ variant: "destructive", title: "Purchase failed or was cancelled." });
       }
