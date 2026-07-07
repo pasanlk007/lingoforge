@@ -14,22 +14,57 @@ function getField(doc: any, field: string) {
   return f.stringValue ?? f.booleanValue ?? f.integerValue ?? undefined;
 }
 
+function toFirestoreValue(value: any): any {
+  if (value === null) return { nullValue: null };
+  if (typeof value === 'boolean') return { booleanValue: value };
+  if (typeof value === 'string') return { stringValue: value };
+  if (Array.isArray(value)) return { arrayValue: { values: value.map(v => ({ integerValue: String(v) })) } };
+  return { stringValue: String(value) };
+}
+
 async function updateUser(token: string, userId: string, fields: Record<string, any>) {
   const url = `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`;
-  const masks = Object.keys(fields).map(k => `updateMask.fieldPaths=${encodeURIComponent(k)}`).join('&');
+  
+  // Build updateMask and firestoreFields.
+  // Dot-notation keys (e.g. unlockedContent.french_survival) need special handling:
+  // - updateMask uses the dot path as-is
+  // - fields body must use the TOP-LEVEL key only (unlockedContent) with a full mapValue
+  // So we collect all dot-notation updates under their parent map, then write the whole map.
+  
+  const topLevelFields: any = {};
+  const mapUpdates: Record<string, Record<string, any>> = {};
+  const masks: string[] = [];
 
-  const firestoreFields: any = {};
   for (const [key, value] of Object.entries(fields)) {
-    if (value === null) firestoreFields[key] = { nullValue: null };
-    else if (typeof value === 'boolean') firestoreFields[key] = { booleanValue: value };
-    else if (Array.isArray(value)) firestoreFields[key] = { arrayValue: { values: value.map(v => ({ integerValue: v })) } };
-    else if (typeof value === 'string') firestoreFields[key] = { stringValue: value };
+    if (key.includes('.')) {
+      const [parent, child] = key.split('.', 2);
+      if (!mapUpdates[parent]) mapUpdates[parent] = {};
+      mapUpdates[parent][child] = value;
+      masks.push(`updateMask.fieldPaths=${encodeURIComponent(key)}`);
+    } else {
+      topLevelFields[key] = toFirestoreValue(value);
+      masks.push(`updateMask.fieldPaths=${encodeURIComponent(key)}`);
+    }
   }
 
-  const res = await fetch(`${url}?${masks}`, {
+  // For map updates, first read the existing map then merge
+  for (const [parent, children] of Object.entries(mapUpdates)) {
+    const existing = (await getUser(token, userId))?.fields?.[parent]?.mapValue?.fields || {};
+    const merged = { ...existing };
+    for (const [child, val] of Object.entries(children)) {
+      merged[child] = toFirestoreValue(val);
+    }
+    topLevelFields[parent] = { mapValue: { fields: merged } };
+    // Replace dot-path masks with top-level mask for this parent
+    const dotMasks = masks.filter(m => m.includes(encodeURIComponent(parent + '.')));
+    dotMasks.forEach(m => masks.splice(masks.indexOf(m), 1));
+    masks.push(`updateMask.fieldPaths=${encodeURIComponent(parent)}`);
+  }
+
+  const res = await fetch(`${url}?${masks.join('&')}`, {
     method: 'PATCH',
     headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ fields: firestoreFields }),
+    body: JSON.stringify({ fields: topLevelFields }),
   });
 
   if (!res.ok) {
@@ -38,6 +73,7 @@ async function updateUser(token: string, userId: string, fields: Record<string, 
   }
   return res.json();
 }
+
 
 export async function POST(req: NextRequest) {
   try {
