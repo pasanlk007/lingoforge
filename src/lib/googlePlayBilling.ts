@@ -121,8 +121,9 @@ export async function purchase(sku: string, appUserID: string, entitlementId: st
     if (!productToPurchase) throw new Error('Product with SKU ' + sku + ' not found.');
     console.log('Purchasing:', productToPurchase.identifier, productToPurchase.productType);
 
-    const { purchaserInfo } = await Purchases.purchaseStoreProduct({ product: productToPurchase });
-    const isEntitled = typeof purchaserInfo.entitlements.active[entitlementId] !== 'undefined';
+    const result = await Purchases.purchaseStoreProduct({ product: productToPurchase });
+    const purchaserInfo = result.purchaserInfo || result.customerInfo || result;
+    const isEntitled = purchaserInfo?.entitlements?.active?.[entitlementId] !== undefined;
     return { isAcknowledged: isEntitled, purchaserInfo };
   } catch (e: any) {
     const { PURCHASES_ERROR_CODE } = await import('@revenuecat/purchases-capacitor');
