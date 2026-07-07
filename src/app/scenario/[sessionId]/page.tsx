@@ -1,8 +1,7 @@
 'use client';
 
+import { useState, useRef, useMemo, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import { doc } from 'firebase/firestore';
 import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
@@ -10,108 +9,132 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
-import { useFirestore, useDoc, useMemoFirebase } from '@/firebase';
-import type { ScenarioSession } from '@/lib/types';
+import { useFirestore, useUser, useDoc, useMemoFirebase, addDocumentNonBlocking, updateDocumentNonBlocking } from '@/firebase';
+import { collection } from 'firebase/firestore';
+import type { ScenarioSession, ScenarioDayContent } from '@/lib/types';
+import { computeMatchScore } from '@/lib/scenarioMatchScore';
+import { playAudio } from '@/lib/audioPlayer';
 import { useScenarioT } from '@/hooks/useScenarioT';
 import { format } from '@/lib/utils';
-import { Loader2, Lock, CheckCircle2, MessageCircle, AlertTriangle, Sparkles, ChevronRight } from 'lucide-react';
+import { Mic, Square, Volume2, ChevronRight, Loader2, CheckCircle2, AlertTriangle, Lock } from 'lucide-react';
+import Link from 'next/link';
 
-// Isolated page. Reads only from scenarioSessions/{sessionId}. Does not touch
-// userProgress, unlockedContent, or any survival/pro lesson state.
-// UI text follows the user's own nativeLanguage via useScenarioT.
+const LANG_CODES: Record<string, string> = {
+  Romanian: 'ro-RO', French: 'fr-FR', Italian: 'it-IT', German: 'de-DE',
+  Spanish: 'es-ES', Dutch: 'nl-NL', Portuguese: 'pt-PT', Greek: 'el-GR',
+  Polish: 'pl-PL', Finnish: 'fi-FI', Korean: 'ko-KR', Japanese: 'ja-JP',
+  Arabic: 'ar-SA', Hebrew: 'he-IL', Turkish: 'tr-TR', Russian: 'ru-RU',
+  Chinese: 'zh-CN', Hindi: 'hi-IN', English: 'en-US',
+};
 
-export default function ScenarioSessionPage() {
+export default function ScenarioDayPage() {
   const params = useParams();
   const router = useRouter();
   const sessionId = params.sessionId as string;
+  const dayNum = parseInt(params.day as string, 10);
   const firestore = useFirestore();
+  const { user } = useUser();
   const { t } = useScenarioT();
 
   const sessionRef = useMemoFirebase(
     () => (firestore && sessionId ? doc(firestore, 'scenarioSessions', sessionId) : null),
     [firestore, sessionId]
   );
+  const { data: session, isLoading: sessionLoading } = useDoc<ScenarioSession>(sessionRef as any);
 
-  const { data: session, isLoading } = useDoc<ScenarioSession>(sessionRef as any);
+  const dayContentRef = useMemoFirebase(
+    () => (firestore && sessionId && dayNum ? doc(firestore, 'scenarioSessions', sessionId, 'days', String(dayNum)) : null),
+    [firestore, sessionId, dayNum]
+  );
+  const { data: dayDoc, isLoading: dayDocLoading } = useDoc<any>(dayContentRef as any);
 
-  const [timedOut, setTimedOut] = useState(false);
+  const [vocabIndex, setVocabIndex] = useState(0);
+  const [isRecording, setIsRecording] = useState(false);
+  const [isTranscribing, setIsTranscribing] = useState(false);
+  const [lastScore, setLastScore] = useState<number | null>(null);
+  const [lastTranscript, setLastTranscript] = useState<string | null>(null);
+  const [generationTriggered, setGenerationTriggered] = useState(false);
+  const [generationError, setGenerationError] = useState(false);
+  const [subscriptionRequired, setSubscriptionRequired] = useState(false);
+
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const chunksRef = useRef<Blob[]>([]);
+
+  const plan = useMemo(() => {
+    if (!session) return null;
+    const p = (session as any).plan;
+    return typeof p === 'string' ? JSON.parse(p) : p;
+  }, [session]);
+
+  const dayOutline = useMemo(() => {
+    if (!plan) return null;
+    return plan.daily_topics.find((d: any) => d.day === dayNum) || null;
+  }, [plan, dayNum]);
+
+  const dayContent: ScenarioDayContent | null = useMemo(() => {
+    if (!dayDoc) return null;
+    const c = (dayDoc as any).content;
+    return typeof c === 'string' ? JSON.parse(c) : c;
+  }, [dayDoc]);
 
   useEffect(() => {
-    if (session?.status !== 'generating') {
-      setTimedOut(false);
-      return;
-    }
-    const timer = setTimeout(() => setTimedOut(true), 75000);
-    return () => clearTimeout(timer);
-  }, [session?.status, sessionId]);
+    if (!plan || !dayOutline || dayDocLoading || !user) return;
+    if (dayContent || generationTriggered) return;
 
-  if (isLoading || !session) {
+    setGenerationTriggered(true);
+    fetch('/api/scenario-day-generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userId: user.uid,
+        sessionId,
+        day: dayNum,
+        scenarioTitle: plan.scenario_title,
+        scenarioSummary: plan.scenario_summary,
+        topicTitle: dayOutline.topic_title,
+        situationContext: dayOutline.situation_context,
+        targetLanguage: plan.targetLanguage,
+        nativeLanguage: plan.nativeLanguage,
+        totalDays: plan.total_days,
+      }),
+    })
+      .then(async (res) => {
+        if (res.status === 402) { setSubscriptionRequired(true); return; }
+        if (!res.ok) throw new Error('Generation failed');
+      })
+      .catch((e) => { console.error('Day generation failed:', e); setGenerationError(true); });
+  }, [plan, dayOutline, dayDocLoading, dayContent, generationTriggered, sessionId, dayNum, user]);
+
+  if (sessionLoading || !session || !plan || !dayOutline) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
         <main className="flex-1">
-          <div className="container mx-auto max-w-3xl py-10 px-4 space-y-4">
+          <div className="container mx-auto max-w-2xl py-10 px-4 space-y-4">
             <Skeleton className="h-10 w-2/3" />
-            <Skeleton className="h-32 w-full" />
-            <Skeleton className="h-48 w-full" />
+            <Skeleton className="h-40 w-full" />
           </div>
         </main>
       </div>
     );
   }
 
-  const plan = typeof (session as any).plan === 'string'
-    ? JSON.parse((session as any).plan)
-    : (session as any).plan;
-
-  if (session.status === 'generating' || !plan) {
-    if (timedOut) {
-      return (
-        <div className="flex min-h-dvh flex-col bg-background">
-          <Navigation />
-          <main className="flex-1">
-            <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
-              <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
-              <h2 className="text-xl font-semibold">{t.slowGenerationTitle}</h2>
-              <p className="text-muted-foreground mt-2">{t.slowGenerationSubtitle}</p>
-              <Button className="mt-4" onClick={() => router.push('/scenario')}>
-                {t.tryAgainButton}
-              </Button>
-            </div>
-          </main>
-        </div>
-      );
-    }
+  if (subscriptionRequired) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />
         <main className="flex-1">
           <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
-            <Loader2 className="h-10 w-10 animate-spin mx-auto mb-4 text-primary" />
-            <h2 className="text-xl font-semibold">{t.buildingPlanTitle}</h2>
-            <p className="text-muted-foreground mt-2">{t.buildingPlanSubtitle}</p>
-          </div>
-        </main>
-      </div>
-    );
-  }
-
-  if (session.status === 'error') {
-    return (
-      <div className="flex min-h-dvh flex-col bg-background">
-        <Navigation />
-        <main className="flex-1">
-          <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
-            <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
-            <h2 className="text-xl font-semibold">{t.buildFailedTitle}</h2>
-            <Button className="mt-4" onClick={() => router.push('/scenario')}>
-              {t.tryAgainButton}
+            <Lock className="h-10 w-10 mx-auto mb-4 text-blue-400" />
+            <h2 className="text-xl font-semibold">{t.subscriptionRequiredTitle}</h2>
+            <p className="text-muted-foreground mt-2">{t.subscriptionRequiredDescription}</p>
+            <Button asChild className="mt-4 bg-blue-600 hover:bg-blue-700">
+              <Link href="/pricing">{t.subscribeButton}</Link>
             </Button>
           </div>
         </main>
@@ -119,92 +142,219 @@ export default function ScenarioSessionPage() {
     );
   }
 
-  const currentDay = session.currentDay || 1;
-  const completedDays = session.completedDays || [];
-  const isCompleted = session.status === 'completed';
+  if (generationError) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1">
+          <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
+            <AlertTriangle className="h-10 w-10 mx-auto mb-4 text-destructive" />
+            <h2 className="text-xl font-semibold">{format(t.dayLoadFailedTitle, { day: dayNum })}</h2>
+            <Button className="mt-4" onClick={() => window.location.reload()}>{t.tryAgainButton}</Button>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  if (!dayContent) {
+    return (
+      <div className="flex min-h-dvh flex-col bg-background">
+        <Navigation />
+        <main className="flex-1">
+          <div className="container mx-auto max-w-2xl py-16 px-4 text-center">
+            <Loader2 className="h-10 w-10 animate-spin mx-auto mb-4 text-primary" />
+            <h2 className="text-xl font-semibold">{format(t.buildingDayTitle, { day: dayNum })}</h2>
+            <p className="text-muted-foreground mt-2">{t.buildingDaySubtitle}</p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  const vocab = dayContent.target_vocab[vocabIndex];
+  const targetLanguage = plan.targetLanguage;
+
+  async function processTranscript(text: string) {
+    const score = computeMatchScore(text, vocab.target);
+    setLastTranscript(text);
+    setLastScore(score);
+    if (firestore && session) {
+      const turnsRef = collection(firestore, 'scenarioSessions', sessionId, 'turns');
+      addDocumentNonBlocking(turnsRef, {
+        day: dayNum,
+        expectedTarget: vocab.target,
+        transcribedText: text,
+        matchScore: score,
+        createdAt: new Date().toISOString(),
+      });
+    }
+  }
+
+  async function handleTranscribe(blob: Blob) {
+    setIsTranscribing(true);
+    try {
+      const formData = new FormData();
+      formData.append('audio', blob, 'recording.webm');
+      const res = await fetch('/api/scenario-transcribe', { method: 'POST', body: formData });
+      const data = await res.json();
+      if (!res.ok || !data.text) throw new Error(data.error || 'No transcription');
+      await processTranscript(data.text);
+    } catch (e) {
+      console.error('Transcription failed:', e);
+      setLastTranscript(null);
+      setLastScore(null);
+      alert(t.transcribeError);
+    } finally {
+      setIsTranscribing(false);
+    }
+  }
+
+  async function startRecording() {
+    try {
+      const { isNativePlatform } = await import('@/lib/speechService');
+      const native = await isNativePlatform();
+
+      if (native) {
+        setIsRecording(true);
+        const { AudioService } = await import('@/lib/audioService');
+        await AudioService.stop();
+        const langCode = LANG_CODES[plan?.targetLanguage] || 'en-US';
+        const { nativeSpeechRecognize } = await import('@/lib/speechService');
+        const transcript = await nativeSpeechRecognize(langCode);
+        setIsRecording(false);
+        if (transcript) await processTranscript(transcript);
+      } else {
+        const { AudioService } = await import('@/lib/audioService');
+        await AudioService.stop();
+        await new Promise(resolve => setTimeout(resolve, 300));
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const recorder = new MediaRecorder(stream);
+        chunksRef.current = [];
+        recorder.ondataavailable = (e) => chunksRef.current.push(e.data);
+        recorder.onstop = async () => {
+          stream.getTracks().forEach((t) => t.stop());
+          const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
+          await handleTranscribe(blob);
+        };
+        recorder.start();
+        mediaRecorderRef.current = recorder;
+        setIsRecording(true);
+      }
+    } catch (e) {
+      console.error('Mic access failed:', e);
+      setIsRecording(false);
+      alert(t.micPermissionError);
+    }
+  }
+
+  function stopRecording() {
+    if (mediaRecorderRef.current) mediaRecorderRef.current.stop();
+    import('@/lib/speechService').then(({ stopNativeSpeech }) => stopNativeSpeech());
+    setIsRecording(false);
+  }
+
+  function nextVocab() {
+    if (!dayContent) return;
+    setLastScore(null);
+    setLastTranscript(null);
+    if (vocabIndex < dayContent.target_vocab.length - 1) setVocabIndex(vocabIndex + 1);
+  }
+
+  function markDayComplete() {
+    if (!sessionRef || !session) return;
+    const completedDays = Array.from(new Set([...(session.completedDays || []), dayNum]));
+    const isLastDay = dayNum >= plan.total_days;
+    const nextDay = isLastDay ? dayNum : dayNum + 1;
+    updateDocumentNonBlocking(sessionRef, {
+      completedDays,
+      currentDay: nextDay,
+      status: isLastDay ? 'completed' : 'active',
+      updatedAt: new Date().toISOString(),
+    });
+    router.push(`/scenario/${sessionId}`);
+  }
+
+  const isLastVocab = vocabIndex === dayContent.target_vocab.length - 1;
+  const MIN_PASS_SCORE = 40;
+  const hasPassed = lastScore !== null && lastScore >= MIN_PASS_SCORE;
 
   return (
     <div className="flex min-h-dvh flex-col bg-background">
       <Navigation />
       <main className="flex-1">
-        <div className="container mx-auto max-w-3xl py-10 px-4 space-y-6">
+        <div className="container mx-auto max-w-2xl py-8 px-4 pb-24 space-y-6">
           <div>
-            <h1 className="text-2xl font-bold">{plan.scenario_title_native || plan.scenario_title}</h1>
-            <p className="text-muted-foreground mt-1">{plan.scenario_summary}</p>
-            <div className="flex gap-2 mt-2">
-              <Badge variant="secondary">{plan.targetLanguage}</Badge>
-              <Badge variant="outline">{plan.total_days} {t.dayPlanLabel}</Badge>
-              {isCompleted && (
-                <Badge className="bg-green-600 hover:bg-green-600">
-                  <CheckCircle2 className="h-3 w-3 mr-1" /> {t.completedBadge}
-                </Badge>
-              )}
-            </div>
+            <Badge variant="outline" className="mb-2">
+              {t.dayPlanLabel} {dayNum} / {plan.total_days}
+            </Badge>
+            <h1 className="text-xl font-bold">{dayOutline.topic_title_native || dayOutline.topic_title}</h1>
+            <p className="text-sm text-muted-foreground mt-1">{dayOutline.situation_context}</p>
           </div>
 
-          {isCompleted && (
-            <Card className="border-2 border-purple-500/40 bg-gradient-to-br from-purple-950/20 to-card">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <Sparkles className="h-6 w-6 text-purple-400" />
-                  <div>
-                    <CardTitle className="text-lg">{format(t.planCompleteTitle, { days: plan.total_days })}</CardTitle>
-                    <CardDescription>
-                      {format(t.planCompleteDescription, { language: plan.targetLanguage })}
-                    </CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardFooter className="flex flex-col sm:flex-row gap-2">
-                <Button asChild className="w-full sm:w-auto bg-purple-600 hover:bg-purple-500">
-                  <Link href="/dashboard/lesson-map">
-                    {t.exploreProPath} <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center justify-between text-base">
+                <span>{format(t.phraseCounter, { current: vocabIndex + 1, total: dayContent.target_vocab.length })}</span>
+                <Button variant="ghost" size="icon" onClick={() => playAudio(vocab.target, targetLanguage, 0.85)}>
+                  <Volume2 className="h-5 w-5" />
                 </Button>
-                <Button asChild variant="outline" className="w-full sm:w-auto">
-                  <Link href="/scenario">{t.newScenarioButton}</Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          )}
+              </CardTitle>
+              <CardDescription>{vocab.native_meaning}</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="text-center py-6 space-y-2">
+                <p className="text-3xl font-bold">{vocab.target}</p>
+                <p className="text-muted-foreground">{vocab.phonetic}</p>
+              </div>
 
-          <div className="space-y-3">
-            {plan.daily_topics.map((day: any) => {
-              const isDone = completedDays.includes(day.day);
-              const isCurrent = day.day === currentDay;
-              const isLocked = day.day > currentDay;
+              <div className="flex flex-col items-center gap-3">
+                {!isRecording ? (
+                  <Button onClick={startRecording} disabled={isTranscribing} size="lg" className="rounded-full h-16 w-16 p-0">
+                    {isTranscribing ? <Loader2 className="h-6 w-6 animate-spin" /> : <Mic className="h-6 w-6" />}
+                  </Button>
+                ) : (
+                  <Button onClick={stopRecording} size="lg" variant="destructive" className="rounded-full h-16 w-16 p-0">
+                    <Square className="h-6 w-6" />
+                  </Button>
+                )}
+                <p className="text-xs text-muted-foreground">
+                  {isRecording ? t.recordingPrompt : t.recordPrompt}
+                </p>
+              </div>
 
-              return (
-                <Card
-                  key={day.day}
-                  className={isCurrent ? 'border-primary ring-1 ring-primary' : ''}
-                >
-                  <CardHeader className="pb-3">
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-base flex items-center gap-2">
-                        {isDone && <CheckCircle2 className="h-4 w-4 text-green-600" />}
-                        {isLocked && <Lock className="h-4 w-4 text-muted-foreground" />}
-                        {t.dayPlanLabel} {day.day}: {day.topic_title_native || day.topic_title}
-                      </CardTitle>
-                      {isCurrent && <Badge>{t.todayBadge}</Badge>}
-                    </div>
-                    <CardDescription>{day.situation_context}</CardDescription>
-                  </CardHeader>
-                  {!isLocked && (
-                    <CardContent>
-                      <Button
-                        variant={isCurrent ? 'default' : 'outline'}
-                        size="sm"
-                        onClick={() => router.push(`/scenario/${sessionId}/day/${day.day}`)}
-                      >
-                        <MessageCircle className="mr-2 h-4 w-4" />
-                        {isDone ? t.reviewButton : t.startConversation}
-                      </Button>
-                    </CardContent>
+              {lastScore !== null && (
+                <div className="rounded-lg bg-muted p-4 text-center space-y-1">
+                  <p className="text-sm text-muted-foreground">{t.youSaid}</p>
+                  <p className="font-medium">"{lastTranscript}"</p>
+                  <p className="text-sm mt-2">
+                    {t.matchConfidence}{' '}
+                    <span className={`font-bold ${hasPassed ? 'text-green-500' : 'text-orange-400'}`}>
+                      {lastScore}%
+                    </span>
+                  </p>
+                  {!hasPassed && (
+                    <p className="text-sm text-orange-400 font-medium">
+                      {format(t.retryNeeded, { min: MIN_PASS_SCORE })}
+                    </p>
                   )}
-                </Card>
-              );
-            })}
+                  <p className="text-[11px] text-muted-foreground">{t.matchDisclaimer}</p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+
+          <div className="flex justify-end">
+            {!isLastVocab ? (
+              <Button onClick={nextVocab} variant="outline" disabled={!hasPassed}>
+                {t.nextPhrase} <ChevronRight className="ml-1 h-4 w-4" />
+              </Button>
+            ) : (
+              <Button onClick={markDayComplete} className="bg-green-600 hover:bg-green-700" disabled={!hasPassed}>
+                <CheckCircle2 className="mr-2 h-4 w-4" />
+                {format(t.dayComplete, { day: dayNum })}
+              </Button>
+            )}
           </div>
         </div>
       </main>
