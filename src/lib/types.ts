@@ -272,3 +272,31 @@ export interface ScenarioConversationTurn {
   matchScore: number; // 0-100 fuzzy intelligibility proxy score, NOT a claim of true pronunciation accuracy
   createdAt: any; // Firestore Timestamp
 }
+
+// === Conversation Mode (live AI conversation, replaces vocab card screen) ===
+
+export interface ConversationLine {
+  id: string;
+  role: 'ai' | 'user';
+  text: string;           // target language text
+  phonetic: string;       // pronunciation guide
+  hint: string;           // native language meaning
+  audioPlayed?: boolean;
+  // user turn fields
+  recognizedText?: string;
+  matchScore?: number;
+  emoji?: '🎉' | '👍' | '🔄' | '❌';
+  skipped?: boolean;
+}
+
+export interface DayConversation {
+  sessionId: string;
+  day: number;
+  targetLanguage: string;
+  nativeLanguage: string;
+  topicTitle: string;
+  lines: ConversationLine[];
+  status: 'active' | 'completed';
+  completedAt?: string;
+  generatedAt: string;
+}
