@@ -185,6 +185,9 @@ export default function ScenarioDayPage() {
 
   async function startRecording() {
     try {
+      const { AudioService } = await import('@/lib/audioService');
+      await AudioService.stop();
+      await new Promise(resolve => setTimeout(resolve, 300));
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const recorder = new MediaRecorder(stream);
       chunksRef.current = [];
