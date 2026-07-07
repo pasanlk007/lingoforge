@@ -99,7 +99,8 @@ function ProfileContent({ user }: { user: User }) {
   const photoURL = user.photoURL;
 
   const subscriptionStatus = userProfile?.subscriptionActive ? "Active" : "Free Plan";
-  const subscriptionSource = userProfile?.subscriptionSource !== 'none' ? userProfile?.subscriptionSource : '';
+  const sourceMap: Record<string, string> = { google_play: 'Google Play', apple_iap: 'Apple', lemonsqueezy: 'Web', stripe: 'Web', none: '' };
+  const subscriptionSource = sourceMap[userProfile?.subscriptionSource || 'none'] || userProfile?.subscriptionSource || '';
   const subscriptionExpiry = userProfile?.subscriptionExpiry ? new Date(userProfile.subscriptionExpiry).toLocaleDateString() : 'Lifetime';
 
   let scenarioLang = userProfile?.nativeLanguage || 'English';
@@ -155,7 +156,7 @@ function ProfileContent({ user }: { user: User }) {
                         <>
                           <div>
                               <p className="font-semibold text-muted-foreground">Source</p>
-                              <p className="text-lg font-bold capitalize">{subscriptionSource}</p>
+                              <p className="text-lg font-bold">{subscriptionSource}</p>
                           </div>
                           <div>
                               <p className="font-semibold text-muted-foreground">Expires</p>
