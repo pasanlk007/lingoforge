@@ -73,7 +73,8 @@ export async function POST(req: Request) {
     const profileData = profileRes.ok ? await profileRes.json() : null;
     const isActive = profileData?.fields?.scenarioSubscriptionActive?.booleanValue === true;
     const expiryStr = profileData?.fields?.scenarioSubscriptionExpiry?.stringValue;
-    const notExpired = !expiryStr || new Date(expiryStr).getTime() > Date.now();
+    const GRACE_MS = 24 * 60 * 60 * 1000;
+    const notExpired = !expiryStr || (new Date(expiryStr).getTime() + GRACE_MS) > Date.now();
 
     if (!isActive || !notExpired) {
       return NextResponse.json({ error: 'Subscription required', code: 'SUBSCRIPTION_REQUIRED' }, { status: 402 });
