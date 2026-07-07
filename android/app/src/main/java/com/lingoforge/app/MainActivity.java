@@ -5,6 +5,7 @@ import android.webkit.PermissionRequest;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.BridgeWebChromeClient;
 import io.capawesome.capacitorjs.plugins.firebase.authentication.FirebaseAuthenticationPlugin;
 
 public class MainActivity extends BridgeActivity {
@@ -13,10 +14,13 @@ public class MainActivity extends BridgeActivity {
     registerPlugin(FirebaseAuthenticationPlugin.class);
     super.onCreate(savedInstanceState);
     WebView.setWebContentsDebuggingEnabled(true);
+  }
 
-    // Allow getUserMedia (microphone) in the WebView for Scenario Mode voice practice
+  @Override
+  protected void onStart() {
+    super.onStart();
     if (getBridge() != null && getBridge().getWebView() != null) {
-      getBridge().getWebView().setWebChromeClient(new WebChromeClient() {
+      getBridge().getWebView().setWebChromeClient(new BridgeWebChromeClient(getBridge()) {
         @Override
         public void onPermissionRequest(PermissionRequest request) {
           request.grant(request.getResources());
