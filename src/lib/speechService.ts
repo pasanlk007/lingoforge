@@ -12,8 +12,10 @@ export async function isNativePlatform(): Promise<boolean> {
 export async function nativeSpeechRecognize(lang: string): Promise<string | null> {
   try {
     const { SpeechRecognition } = await import('@capacitor-community/speech-recognition');
-    const { speechRecognition } = await SpeechRecognition.requestPermission();
-    if (speechRecognition !== 'granted') throw new Error('Permission denied');
+    const permResult = await SpeechRecognition.requestPermission();
+    console.log('[STT] Permission result:', JSON.stringify(permResult));
+    const granted = !permResult || permResult.speechRecognition === 'granted' || permResult.speechRecognition === undefined;
+    if (!granted) throw new Error('Speech recognition permission denied');
     const result = await SpeechRecognition.start({
       language: lang,
       maxResults: 1,

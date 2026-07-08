@@ -419,7 +419,7 @@ export default function ScenarioConversationPage() {
 
       {/* Controls */}
       {!dayComplete && !isReadOnly && (
-        <div className="px-4 pb-8 pt-2">
+        <div className="px-4 pt-2" style={{ paddingBottom: 'max(40px, calc(env(safe-area-inset-bottom, 0px) + 16px))' }}>
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4">
             {currentRetry > 0 && lastLineIsAI && (
               <div className="text-center mb-3">
