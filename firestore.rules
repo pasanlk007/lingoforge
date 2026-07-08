@@ -57,7 +57,7 @@ service cloud.firestore {
       // Lazily-generated full content for a single day, owned by the same user as the parent session.
       match /days/{dayId} {
         allow read: if isSignedIn() && get(/databases/$(database)/documents/scenarioSessions/$(sessionId)).data.userId == request.auth.uid;
-        allow write: if false; // written only via server (JWT-authenticated API route)
+        allow write: if isSignedIn() && get(/databases/$(database)/documents/scenarioSessions/$(sessionId)).data.userId == request.auth.uid;
       }
     }
   }
