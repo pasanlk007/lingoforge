@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { isNativeApp } from '@/lib/isNativeApp';
 import Link from "next/link";
 import { 
   Languages, 
@@ -372,7 +373,7 @@ export default function LandingPage() {
 
         
         
-        <section className="py-12 bg-slate-900">
+        {!isNativeApp() && <section className="py-12 bg-slate-900">
           <div className="container mx-auto px-4 max-w-2xl text-center">
             <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-8">
               <div className="text-4xl mb-4">🇱🇰 → 🇷🇴</div>
@@ -384,7 +385,7 @@ export default function LandingPage() {
               <a href="/about" className="inline-block mt-4 text-xs text-cyan-400 hover:text-cyan-300">Read full story →</a>
             </div>
           </div>
-        </section>
+        </section>}
 
 <section className="py-10 bg-slate-800/50 border-y border-slate-700/50">
           <div className="container mx-auto px-4">
