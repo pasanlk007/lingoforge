@@ -1,4 +1,3 @@
-
 'use client';
 import VoiceInit from "@/components/VoiceInit";
 
@@ -126,21 +125,21 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
         const dayKeyToSave = `${dayData.week}-${currentDay}`;
         const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
 
-        const currentXP = userProfile?.xpPoints || 0;
-        const currentStreak2 = userProfile?.currentStreak || 0;
         const isNewDay = userProfile?.lastActiveDate !== todayKey;
-        console.log("[XP] lastActive:", userProfile?.lastActiveDate, "today:", todayKey, "isNewDay:", isNewDay, "streak:", currentStreak2, "xp:", currentXP);
 
         const updateData: any = {
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
           [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
           [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-          xpPoints: currentXP + 100,
+          xpPoints: increment(100),
           [`dailyXpLog.${todayKey}`]: increment(100),
           lastActiveDate: todayKey,
           activePath: pathKey,
-          currentStreak: isNewDay ? currentStreak2 + 1 : currentStreak2,
         };
+
+        if (isNewDay) {
+          updateData.currentStreak = increment(1);
+        }
 
         // Permanent week unlock logic for Course plan users
         if (currentDay === 7 && userProfile?.subscriptionPlan === 'course') {
@@ -149,9 +148,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
             updateData[`unlockedContent.${contentKey}`] = arrayUnion(nextWeekNum);
         }
 
-        console.log('[XP] Writing update:', JSON.stringify(Object.keys(updateData)));
         updateDocumentNonBlocking(userProfileRef, updateData);
-        console.log('[XP] Update dispatched for user:', userProfileRef?.id);
     };
     
     const weekProgress = (currentDay / 7) * 100;
@@ -181,7 +178,10 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
                             </h1>
                             <p className="text-sm text-muted-foreground">{dayData.theme}</p>
                          </div>
-
+                         <div className="flex items-center gap-2 shrink-0">
+                           <span className="text-3xl">{flag}</span>
+                           <StreakCounter count={streakCount} />
+                         </div>
                     </div>
                      <div className="space-y-2">
                         <div className="flex items-center gap-2">

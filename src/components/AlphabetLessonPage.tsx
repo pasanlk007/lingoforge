@@ -1,4 +1,3 @@
-
 'use client';
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
@@ -72,19 +71,20 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
     const dayKeyToSave = `${dayData.week}-${dayData.day}`;
     const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
 
+    const isNewDay = userProfile?.lastActiveDate !== todayKey;
+
     const updateData: any = {
       [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
       [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
       [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
-      xpPoints: (userProfile?.xpPoints || 0) + 100,
+      xpPoints: increment(100),
       [`dailyXpLog.${todayKey}`]: increment(100),
       lastActiveDate: todayKey,
       activePath: pathKey,
     };
 
-    // Award streak if first lesson of the day
-    if (userProfile?.lastActiveDate !== todayKey) {
-        updateData.currentStreak = (userProfile?.currentStreak || 0) + 1;
+    if (isNewDay) {
+        updateData.currentStreak = increment(1);
     }
 
     updateDocumentNonBlocking(userProfileRef, updateData);
