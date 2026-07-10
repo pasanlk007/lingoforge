@@ -148,7 +148,9 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
             updateData[`unlockedContent.${contentKey}`] = arrayUnion(nextWeekNum);
         }
 
+        console.log('[XP] Writing update:', JSON.stringify(Object.keys(updateData)));
         updateDocumentNonBlocking(userProfileRef, updateData);
+        console.log('[XP] Update dispatched for user:', userProfileRef?.id);
     };
     
     const weekProgress = (currentDay / 7) * 100;
