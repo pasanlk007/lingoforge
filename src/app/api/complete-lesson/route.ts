@@ -158,6 +158,7 @@ export async function POST(req: NextRequest) {
 
     await patchUser(token, userId, fields, masks);
 
+    console.log('[XP] completedDays before:', JSON.stringify(completedDays), 'adding:', dayKey);
     // Write completedDays array separately
     const completedDaysField = `languageProgress.${langKey}.${path}.completedDays`;
     await patchUser(token, userId, {
