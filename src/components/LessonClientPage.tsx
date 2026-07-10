@@ -168,11 +168,11 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
             <div className="container mx-auto max-w-3xl py-8 px-4 pb-24">
                 <header className="mb-6">
                     <div className="flex items-center justify-between mb-4 gap-2 overflow-hidden">
-                         <Button variant="ghost" asChild>
-                           <Link href={`/${dayData.path}`}><ArrowLeft className="mr-2 h-4 w-4" /> {t.backToDashboard}</Link>
+                         <Button variant="outline" size="icon" asChild className="shrink-0">
+                           <Link href={`/${dayData.path}`}><ArrowLeft className="h-4 w-4" /></Link>
                          </Button>
                          <div className="text-center flex-1 min-w-0">
-                            <h1 className="font-bold text-base flex items-center justify-center gap-2 truncate">
+                            <h1 className="font-bold text-sm leading-tight text-center line-clamp-1">
                               {dayData.title}
                               {isComplete && <CheckCircle className="h-5 w-5 text-green-500" />}
                             </h1>
