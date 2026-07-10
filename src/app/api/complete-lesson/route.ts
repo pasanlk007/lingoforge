@@ -103,7 +103,8 @@ export async function POST(req: NextRequest) {
       if (cdValues) {
         cdValues.forEach((v: any) => { if (v.stringValue) completedDays.push(v.stringValue); });
       }
-      console.log('[XP] read completedDays:', completedDays.length, 'entries for', langKey, path);
+      console.log('[XP] raw LP keys:', Object.keys(userDoc?.fields?.languageProgress?.mapValue?.fields || {}));
+    console.log('[XP] read completedDays:', completedDays.length, 'entries for', langKey, path);
     } catch(e) { console.warn('[XP] completedDays read error:', e); }
 
     // Already completed — don't double award XP
