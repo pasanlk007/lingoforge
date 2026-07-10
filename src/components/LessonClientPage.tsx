@@ -139,7 +139,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
           [`dailyXpLog.${todayKey}`]: increment(100),
           lastActiveDate: todayKey,
           activePath: pathKey,
-          ...(isNewDay ? { currentStreak: currentStreak2 + 1 } : {}),
+          currentStreak: isNewDay ? currentStreak2 + 1 : currentStreak2,
         };
 
         // Permanent week unlock logic for Course plan users
