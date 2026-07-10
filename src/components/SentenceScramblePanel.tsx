@@ -17,17 +17,35 @@ interface SentenceScramblePanelProps {
 type WordOption = {
   text: string;
   originalIndex: number;
-}
+};
 
-const ScrambleExercise = ({ exercise, onComplete, t }: { exercise: SentenceScrambleExerciseType, onComplete: (isCorrect: boolean) => void, t: any }) => {
-  const initialWords = useMemo(() => exercise.scrambled.map((text, originalIndex) => ({ text, originalIndex })), [exercise.scrambled]);
-  
+// Normalize text for comparison
+const normalize = (text: string) =>
+  text
+    .trim()
+    .toLowerCase()
+    .replace(/[?.!,]/g, '')
+    .replace(/\s+/g, ' ');
+
+const ScrambleExercise = ({
+  exercise,
+  onComplete,
+  t,
+}: {
+  exercise: SentenceScrambleExerciseType;
+  onComplete: (isCorrect: boolean) => void;
+  t: any;
+}) => {
+  const initialWords = useMemo(
+    () => exercise.scrambled.map((text, originalIndex) => ({ text, originalIndex })),
+    [exercise.scrambled]
+  );
+
   const [availableWords, setAvailableWords] = useState<WordOption[]>(initialWords);
   const [chosenWords, setChosenWords] = useState<WordOption[]>([]);
   const [result, setResult] = useState<'correct' | 'incorrect' | null>(null);
 
   useEffect(() => {
-    // Reset state if exercise changes
     setAvailableWords(initialWords);
     setChosenWords([]);
     setResult(null);
@@ -35,19 +53,32 @@ const ScrambleExercise = ({ exercise, onComplete, t }: { exercise: SentenceScram
 
   const handleChooseWord = (word: WordOption) => {
     if (result) return;
-    setChosenWords([...chosenWords, word]);
-    setAvailableWords(availableWords.filter(w => w.originalIndex !== word.originalIndex));
+
+    setChosenWords(prev => [...prev, word]);
+    setAvailableWords(prev =>
+      prev.filter(w => w.originalIndex !== word.originalIndex)
+    );
   };
-  
+
   const handleUnchooseWord = (word: WordOption) => {
     if (result) return;
-    setChosenWords(chosenWords.filter(w => w.originalIndex !== word.originalIndex));
-    setAvailableWords([...availableWords, word].sort((a, b) => a.originalIndex - b.originalIndex));
+
+    setChosenWords(prev =>
+      prev.filter(w => w.originalIndex !== word.originalIndex)
+    );
+
+    setAvailableWords(prev =>
+      [...prev, word].sort((a, b) => a.originalIndex - b.originalIndex)
+    );
   };
-  
+
   const handleCheck = () => {
     const constructedSentence = chosenWords.map(w => w.text).join(' ');
-    if (constructedSentence === exercise.correct) {
+
+    const isCorrect =
+      normalize(constructedSentence) === normalize(exercise.correct);
+
+    if (isCorrect) {
       setResult('correct');
       onComplete(true);
     } else {
@@ -55,12 +86,12 @@ const ScrambleExercise = ({ exercise, onComplete, t }: { exercise: SentenceScram
       onComplete(false);
     }
   };
-  
+
   const handleReset = () => {
     setAvailableWords(initialWords);
     setChosenWords([]);
     setResult(null);
-  }
+  };
 
   return (
     <div className="space-y-4">
@@ -69,46 +100,76 @@ const ScrambleExercise = ({ exercise, onComplete, t }: { exercise: SentenceScram
         {t.translate.replace('{hint}', exercise.nativeHint)}
       </p>
 
-      {/* The box for the user's sentence */}
-      <div className={cn("min-h-[4.5rem] rounded-lg border-2 border-dashed bg-muted p-3 flex flex-wrap gap-2 items-center", result === 'incorrect' && 'border-destructive')}>
-        {chosenWords.map((word) => (
-          <Button key={word.originalIndex} variant="secondary" onClick={() => handleUnchooseWord(word)}>
+      {/* User sentence */}
+      <div
+        className={cn(
+          'min-h-[4.5rem] rounded-lg border-2 border-dashed bg-muted p-3 flex flex-wrap gap-2 items-center',
+          result === 'incorrect' && 'border-destructive'
+        )}
+      >
+        {chosenWords.map(word => (
+          <Button
+            key={word.originalIndex}
+            variant="secondary"
+            onClick={() => handleUnchooseWord(word)}
+          >
             {word.text}
           </Button>
         ))}
       </div>
 
-      {/* The word bank */}
+      {/* Word bank */}
       <div className="flex flex-wrap gap-2">
-        {availableWords.map((word) => (
-            <Button
-                key={word.originalIndex}
-                variant="outline"
-                onClick={() => handleChooseWord(word)}
-            >
-              {word.text}
-            </Button>
+        {availableWords.map(word => (
+          <Button
+            key={word.originalIndex}
+            variant="outline"
+            onClick={() => handleChooseWord(word)}
+          >
+            {word.text}
+          </Button>
         ))}
       </div>
 
-       <div className="flex items-center gap-4 mt-4">
-            <Button onClick={handleCheck} disabled={chosenWords.length === 0 || !!result}>{t.check}</Button>
-            <Button variant="ghost" onClick={handleReset}>{t.reset}</Button>
-       </div>
-       {result === 'correct' && (
-        <p className="text-green-500 font-semibold flex items-center gap-2"><CheckCircle className="h-5 w-5" /> {t.correctSentence.replace('{sentence}', exercise.correct)}</p>
-       )}
-       {result === 'incorrect' && (
-        <p className="text-destructive font-semibold flex items-center gap-2"><XCircle className="h-5 w-5" /> {t.tryAgain}</p>
-       )}
-    </div>
-  )
-}
+      <div className="flex items-center gap-4 mt-4">
+        <Button
+          onClick={handleCheck}
+          disabled={chosenWords.length === 0 || !!result}
+        >
+          {t.check}
+        </Button>
 
-export function SentenceScramblePanel({ exercises, onComplete, t }: SentenceScramblePanelProps) {
+        <Button variant="ghost" onClick={handleReset}>
+          {t.reset}
+        </Button>
+      </div>
+
+      {result === 'correct' && (
+        <p className="text-green-500 font-semibold flex items-center gap-2">
+          <CheckCircle className="h-5 w-5" />
+          {t.correctSentence.replace('{sentence}', exercise.correct)}
+        </p>
+      )}
+
+      {result === 'incorrect' && (
+        <p className="text-destructive font-semibold flex items-center gap-2">
+          <XCircle className="h-5 w-5" />
+          {t.tryAgain}
+        </p>
+      )}
+    </div>
+  );
+};
+
+export function SentenceScramblePanel({
+  exercises,
+  onComplete,
+  t,
+}: SentenceScramblePanelProps) {
   if (!exercises || exercises.length === 0) {
     return null;
   }
+
   return (
     <Card>
       <CardHeader>
@@ -117,12 +178,19 @@ export function SentenceScramblePanel({ exercises, onComplete, t }: SentenceScra
           <span>{t.arrangeTheWords}</span>
         </CardTitle>
       </CardHeader>
+
       <CardContent className="space-y-6">
         {exercises.map((ex, index) => (
-            <div key={ex.id}>
-                <ScrambleExercise exercise={ex} onComplete={onComplete} t={t} />
-                {index < exercises.length - 1 && <Separator className="my-6" />}
-            </div>
+          <div key={ex.id}>
+            <ScrambleExercise
+              exercise={ex}
+              onComplete={onComplete}
+              t={t}
+            />
+            {index < exercises.length - 1 && (
+              <Separator className="my-6" />
+            )}
+          </div>
         ))}
       </CardContent>
     </Card>
