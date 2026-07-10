@@ -264,7 +264,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
                                     </div>
                                 </div>
                             ) : (
-                                 <Button size="lg" onPointerUp={handleCompleteDay}>
+                                 <Button size="lg" onClick={handleCompleteDay}>
                                     <CheckCircle className="mr-2 h-5 w-5" /> Complete Day
                                  </Button>
                             )}
