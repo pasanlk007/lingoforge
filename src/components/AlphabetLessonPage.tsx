@@ -189,7 +189,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
                             </div>
                       </div>
                   ) : (
-                      <Button size="lg" oneClick={handleCompleteDay}>
+                      <Button size="lg" onClick={handleCompleteDay}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}
