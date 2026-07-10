@@ -33,7 +33,17 @@ function getMapField(doc: any, ...keys: string[]): any {
 
 async function patchUser(token: string, userId: string, fields: Record<string, any>, masks: string[]) {
   const url = `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`;
-  const maskQuery = masks.map(m => `updateMask.fieldPaths=${encodeURIComponent(m)}`).join('&');
+  const maskQuery = masks.map(m => {
+    // Fields with dots containing hyphens (e.g. dailyXpLog.2026-07-10)
+    // need backtick quoting in the Firestore REST updateMask
+    const needsQuoting = /[^a-zA-Z0-9_.]/.test(m);
+    if (needsQuoting) {
+      const parts = m.split('.');
+      const quoted = parts.map(p => /[^a-zA-Z0-9_]/.test(p) ? '`' + p + '`' : p).join('.');
+      return `updateMask.fieldPaths=${encodeURIComponent(quoted)}`;
+    }
+    return `updateMask.fieldPaths=${encodeURIComponent(m)}`;
+  }).join('&');
 
   const firestoreFields: any = {};
   for (const [key, value] of Object.entries(fields)) {
