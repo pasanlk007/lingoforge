@@ -126,20 +126,20 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
         const dayKeyToSave = `${dayData.week}-${currentDay}`;
         const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
 
+        const currentXP = userProfile?.xpPoints || 0;
+        const currentStreak2 = userProfile?.currentStreak || 0;
+        const isNewDay = userProfile?.lastActiveDate !== todayKey;
+
         const updateData: any = {
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
           [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
           [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-          xpPoints: increment(100),
+          xpPoints: currentXP + 100,
           [`dailyXpLog.${todayKey}`]: increment(100),
           lastActiveDate: todayKey,
           activePath: pathKey,
+          ...(isNewDay ? { currentStreak: currentStreak2 + 1 } : {}),
         };
-
-        // Award streak if first lesson of the day
-        if (userProfile?.lastActiveDate !== todayKey) {
-            updateData.currentStreak = increment(1);
-        }
 
         // Permanent week unlock logic for Course plan users
         if (currentDay === 7 && userProfile?.subscriptionPlan === 'course') {
