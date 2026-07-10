@@ -3,8 +3,11 @@ import { getScenarioFirebaseToken, scenarioFirestoreBaseUrl } from '@/lib/scenar
 
 const XP_PER_LESSON = 100;
 
-async function getUser(token: string, userId: string) {
-  const res = await fetch(`${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`, {
+async function getUser(token: string, userId: string, fieldMask?: string) {
+  const url = fieldMask
+    ? `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}?mask.fieldPaths=${encodeURIComponent(fieldMask)}`
+    : `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`;
+  const res = await fetch(url, {
     headers: { Authorization: `Bearer ${token}` },
   });
   if (!res.ok) return null;
