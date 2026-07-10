@@ -103,7 +103,10 @@ export async function POST(req: NextRequest) {
       if (cdValues) {
         cdValues.forEach((v: any) => { if (v.stringValue) completedDays.push(v.stringValue); });
       }
-      console.log('[XP] raw LP keys:', Object.keys(userDoc?.fields?.languageProgress?.mapValue?.fields || {}));
+      const lpF = userDoc?.fields?.languageProgress?.mapValue?.fields;
+    const lkF = lpF?.[langKey]?.mapValue?.fields;
+    console.log('[XP] lang keys:', Object.keys(lkF || {}));
+    console.log('[XP] survival keys:', Object.keys(lkF?.[path]?.mapValue?.fields || {}));
     console.log('[XP] read completedDays:', completedDays.length, 'entries for', langKey, path);
     } catch(e) { console.warn('[XP] completedDays read error:', e); }
 
