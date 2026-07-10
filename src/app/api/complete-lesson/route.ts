@@ -106,7 +106,7 @@ export async function POST(req: NextRequest) {
       const lpF = userDoc?.fields?.languageProgress?.mapValue?.fields;
     const lkF = lpF?.[langKey]?.mapValue?.fields;
     console.log('[XP] lang keys:', Object.keys(lkF || {}));
-    console.log('[XP] survival keys:', Object.keys(lkF?.[path]?.mapValue?.fields || {}));
+    console.log('[XP] survival raw:', JSON.stringify(lkF?.[path]).slice(0, 300));
     console.log('[XP] read completedDays:', completedDays.length, 'entries for', langKey, path);
     } catch(e) { console.warn('[XP] completedDays read error:', e); }
 
