@@ -131,7 +131,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
           [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
           [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-          xpPoints: increment(100),
+          xpPoints: (userProfile?.xpPoints || 0) + 100,
           [`dailyXpLog.${todayKey}`]: increment(100),
           lastActiveDate: todayKey,
           activePath: pathKey,
@@ -178,10 +178,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
                             </h1>
                             <p className="text-sm text-muted-foreground">{dayData.theme}</p>
                          </div>
-                         <div className="flex items-center gap-2 shrink-0">
-                           <span className="text-3xl">{flag}</span>
-                           <StreakCounter count={streakCount} />
-                         </div>
+
                     </div>
                      <div className="space-y-2">
                         <div className="flex items-center gap-2">
