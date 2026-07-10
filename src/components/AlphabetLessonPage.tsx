@@ -76,7 +76,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
       [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
       [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
       [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
-      xpPoints: increment(100),
+      xpPoints: (userProfile?.xpPoints || 0) + 100,
       [`dailyXpLog.${todayKey}`]: increment(100),
       lastActiveDate: todayKey,
       activePath: pathKey,
@@ -84,7 +84,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
 
     // Award streak if first lesson of the day
     if (userProfile?.lastActiveDate !== todayKey) {
-        updateData.currentStreak = increment(1);
+        updateData.currentStreak = (userProfile?.currentStreak || 0) + 1;
     }
 
     updateDocumentNonBlocking(userProfileRef, updateData);

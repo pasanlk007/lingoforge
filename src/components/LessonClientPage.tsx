@@ -129,6 +129,7 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
         const currentXP = userProfile?.xpPoints || 0;
         const currentStreak2 = userProfile?.currentStreak || 0;
         const isNewDay = userProfile?.lastActiveDate !== todayKey;
+        console.log("[XP] lastActive:", userProfile?.lastActiveDate, "today:", todayKey, "isNewDay:", isNewDay, "streak:", currentStreak2, "xp:", currentXP);
 
         const updateData: any = {
           [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
