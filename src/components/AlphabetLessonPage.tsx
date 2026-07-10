@@ -61,33 +61,34 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
   const t = (isMounted && translations[nativeLanguage]?.ui) ? translations[nativeLanguage].ui : translations.English.ui;
   const t_dashboard = (isMounted && translations[nativeLanguage]?.dashboard) ? translations[nativeLanguage].dashboard : translations.English.dashboard;
 
-  const handleCompleteDay = () => {
-    if (isComplete || !userProfileRef || !dayData) return;
-
+  const handleCompleteDay = async () => {
+    if (isComplete || !dayData) return;
     setIsComplete(true);
-    
+
     const langKey = targetLanguage.toLowerCase();
     const pathKey = dayData.path;
-    const dayKeyToSave = `${dayData.week}-${dayData.day}`;
-    const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
 
-    const isNewDay = userProfile?.lastActiveDate !== todayKey;
-
-    const updateData: any = {
-      [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
-      [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
-      [`languageProgress.${langKey}.${pathKey}.lastDay`]: dayData.day,
-      xpPoints: increment(100),
-      [`dailyXpLog.${todayKey}`]: increment(100),
-      lastActiveDate: todayKey,
-      activePath: pathKey,
-    };
-
-    if (isNewDay) {
-        updateData.currentStreak = increment(1);
+    try {
+      const res = await fetch('/api/complete-lesson', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: userProfileRef?.id,
+          language: langKey,
+          path: pathKey,
+          week: dayData.week,
+          day: dayData.day,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        console.log(`[XP] Done: +${data.xpEarned} XP → ${data.xpPoints} | Streak: ${data.currentStreak}`);
+      } else {
+        console.error('[XP] API error:', data.error);
+      }
+    } catch (e) {
+      console.error('[XP] Failed:', e);
     }
-
-    updateDocumentNonBlocking(userProfileRef, updateData);
   };
   
   if (!dayData || !isMounted) {
@@ -188,7 +189,7 @@ export function AlphabetLessonPage({ dayData, targetLanguage, userProfile, userP
                             </div>
                       </div>
                   ) : (
-                      <Button size="lg" onPointerUp={handleCompleteDay}>
+                      <Button size="lg" oneClick={handleCompleteDay}>
                           <CheckCircle className="mr-2 h-5 w-5" /> Complete Letter
                       </Button>
                   )}

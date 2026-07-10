@@ -38,6 +38,7 @@ const confettiConfig = {
 };
 
 export function LessonClientPage({ lesson, currentDay, userProfile, userProfileRef }: LessonClientPageProps) {
+    const { user } = useUser();
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -115,42 +116,46 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
         setCurrentWordIndex(prev => (prev - 1 + (words.length || 1)) % (words.length || 1));
     };
     
-    const handleCompleteDay = () => {
-        if (!userProfileRef || !dayData || isComplete) return;
+    const handleCompleteDay = async () => {
+      if (!user || !dayData || isComplete) return;
 
-        setIsComplete(true);
+      setIsComplete(true);
 
-        const langKey = lesson.language.toLowerCase();
-        const pathKey = dayData.path;
-        const dayKeyToSave = `${dayData.week}-${currentDay}`;
-        const todayKey = formatDate(new Date(), 'yyyy-MM-dd');
+      const langKey = lesson.language.toLowerCase();
+      const pathKey = dayData.path;
 
-        const isNewDay = userProfile?.lastActiveDate !== todayKey;
+      try {
+        const res = await fetch('/api/complete-lesson', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            userId: user.uid,
+            language: langKey,
+            path: pathKey,
+            week: dayData.week,
+            day: currentDay,
+          }),
+        });
 
-        const updateData: any = {
-          [`languageProgress.${langKey}.${pathKey}.completedDays`]: arrayUnion(dayKeyToSave),
-          [`languageProgress.${langKey}.${pathKey}.lastWeek`]: dayData.week,
-          [`languageProgress.${langKey}.${pathKey}.lastDay`]: currentDay,
-          xpPoints: (userProfile?.xpPoints || 0) + 100,
-          [`dailyXpLog.${todayKey}`]: increment(100),
-          lastActiveDate: todayKey,
-          activePath: pathKey,
-        };
-
-        if (isNewDay) {
-          updateData.currentStreak = increment(1);
+        const data = await res.json();
+        if (res.ok) {
+          console.log(`[XP] Done: +${data.xpEarned} XP → ${data.xpPoints} | Streak: ${data.currentStreak}`);
+        } else {
+          console.error('[XP] API error:', data.error);
         }
+      } catch (e) {
+        console.error('[XP] Failed to call complete-lesson:', e);
+      }
 
-        // Permanent week unlock logic for Course plan users
-        if (currentDay === 7 && userProfile?.subscriptionPlan === 'course') {
-            const contentKey = `${langKey}_${pathKey}`; 
-            const nextWeekNum = dayData.week + 1;
-            updateData[`unlockedContent.${contentKey}`] = arrayUnion(nextWeekNum);
-        }
-
-        updateDocumentNonBlocking(userProfileRef, updateData);
-    };
-    
+      // Unlock next week for Course plan users
+      if (currentDay === 7 && userProfile?.subscriptionPlan === 'course' && userProfileRef) {
+        const contentKey = `${lesson.language.toLowerCase()}_${pathKey}`;
+        const nextWeekNum = dayData.week + 1;
+        updateDocumentNonBlocking(userProfileRef, {
+          [`unlockedContent.${contentKey}`]: arrayUnion(nextWeekNum),
+        });
+      }
+  };
     const weekProgress = (currentDay / 7) * 100;
     const streakCount = userProfile?.currentStreak || 0;
     
