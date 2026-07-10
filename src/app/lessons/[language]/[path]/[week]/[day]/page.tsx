@@ -200,7 +200,7 @@ export default function LessonPage() {
       <div className="flex min-h-dvh flex-col">
         <Navigation />
         <main className="flex-1">
-          <div className="container mx-auto py-10 max-w-2xl">
+          <div className="container mx-auto py-10 max-w-2xl px-4">
             <Alert variant="destructive">
               <Terminal className="h-4 w-4" />
               <AlertTitle>{t.errorTitle}</AlertTitle>
@@ -235,7 +235,7 @@ export default function LessonPage() {
            <div className="flex min-h-dvh flex-col">
               <Navigation />
               <main className="flex-1">
-                <div className="container mx-auto py-10 max-w-2xl">
+                <div className="container mx-auto py-10 max-w-2xl px-4">
                    <Alert variant="destructive">
                     <Terminal className="h-4 w-4" />
                     <AlertTitle>{t.errorTitle}</AlertTitle>
