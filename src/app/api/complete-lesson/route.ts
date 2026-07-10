@@ -93,14 +93,18 @@ export async function POST(req: NextRequest) {
     const currentStreak = getField(userDoc, 'currentStreak') || 0;
     const lastActiveDate = getField(userDoc, 'lastActiveDate') || '';
 
-    // Get existing completedDays for this path
-    const pathFields = getMapField(userDoc, 'languageProgress', langKey, path);
+    // Get existing completedDays - traverse nested Firestore REST structure
     const completedDays: string[] = [];
-    if (pathFields?.completedDays?.arrayValue?.values) {
-      pathFields.completedDays.arrayValue.values.forEach((v: any) => {
-        if (v.stringValue) completedDays.push(v.stringValue);
-      });
-    }
+    try {
+      const lpFields = userDoc?.fields?.languageProgress?.mapValue?.fields;
+      const langFields = lpFields?.[langKey]?.mapValue?.fields;
+      const pathF = langFields?.[path]?.mapValue?.fields;
+      const cdValues = pathF?.completedDays?.arrayValue?.values;
+      if (cdValues) {
+        cdValues.forEach((v: any) => { if (v.stringValue) completedDays.push(v.stringValue); });
+      }
+      console.log('[XP] read completedDays:', completedDays.length, 'entries for', langKey, path);
+    } catch(e) { console.warn('[XP] completedDays read error:', e); }
 
     // Already completed — don't double award XP
     if (completedDays.includes(dayKey)) {
