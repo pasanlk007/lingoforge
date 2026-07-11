@@ -130,7 +130,8 @@ export async function POST(req: NextRequest) {
       `dailyXpLog.${today}`,
     ];
 
-    await patchUser(token, userId, fields, masks);
+    const patchResult = await patchUser(token, userId, fields, masks);
+    console.log("[XP] patch result xpPoints:", patchResult?.fields?.xpPoints?.integerValue);
 
     // Read and update completedDays array
     const completedDaysField = `languageProgress.${langKey}.${path}.completedDays`;
