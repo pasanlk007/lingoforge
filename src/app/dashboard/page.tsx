@@ -106,13 +106,10 @@ function DashboardContent({ user }: { user: User }) {
             subscriptionActive: false,
             subscriptionSource: 'none',
             subscriptionExpiry: null,
-            xpPoints: 0,
-            currentStreak: 0,
             lastActiveDate: formatDate(now, 'yyyy-MM-dd'),
             aiPlanningEnabled: false,
         };
-        // Only create profile if it truly does not exist - never overwrite existing XP/streak
-        setDoc(userProfileRef, newUserProfile, { merge: false }).catch(console.error);
+        setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
       };
       createUserProfile();
     }
