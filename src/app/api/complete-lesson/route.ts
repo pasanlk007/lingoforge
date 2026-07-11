@@ -13,8 +13,7 @@ async function getUser(token: string, userId: string) {
 
 function getIntField(doc: any, field: string): number {
   const f = doc?.fields?.[field];
-  if (!f) return 0;
-  if (f.integerValue !== undefined) return parseInt(f.integerValue, 10);
+  if (f?.integerValue !== undefined) return parseInt(f.integerValue, 10);
   return 0;
 }
 
@@ -25,13 +24,9 @@ function getStringField(doc: any, field: string): string {
 async function patchScalar(token: string, userId: string, fields: Record<string, any>, masks: string[]) {
   const url = `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`;
   const maskQuery = masks.map(m => {
-    const needsQuoting = /[^a-zA-Z0-9_.]/.test(m);
-    if (needsQuoting) {
-      const parts = m.split('.');
-      const quoted = parts.map((p: string) => /[^a-zA-Z0-9_]/.test(p) ? '`' + p + '`' : p).join('.');
-      return `updateMask.fieldPaths=${encodeURIComponent(quoted)}`;
-    }
-    return `updateMask.fieldPaths=${encodeURIComponent(m)}`;
+    const parts = m.split('.');
+    const quoted = parts.map((p: string) => /[^a-zA-Z0-9_]/.test(p) ? '`' + p + '`' : p).join('.');
+    return `updateMask.fieldPaths=${encodeURIComponent(quoted)}`;
   }).join('&');
 
   const firestoreFields: any = {};
@@ -68,6 +63,11 @@ export async function POST(req: NextRequest) {
     const realStreak = getIntField(userDoc, 'currentStreak');
     const lastActiveDate = getStringField(userDoc, 'lastActiveDate');
 
+    // Read dailyXpLog for today to detect first lesson of day
+    const dailyXpF = userDoc?.fields?.dailyXpLog?.mapValue?.fields;
+    const existingDailyXp = dailyXpF?.[today]?.integerValue ? parseInt(dailyXpF[today].integerValue) : 0;
+    const isFirstLessonToday = existingDailyXp === 0;
+
     // Read existing languageProgress
     let lpMap: any = {};
     try {
@@ -90,21 +90,14 @@ export async function POST(req: NextRequest) {
     // Check re-completion
     const lastWeekStored = pathMap?.lastWeek?.integerValue ? parseInt(pathMap.lastWeek.integerValue) : 0;
     const lastDayStored = pathMap?.lastDay?.integerValue ? parseInt(pathMap.lastDay.integerValue) : 0;
-    console.log('[XP] lastWeek/lastDay stored:', lastWeekStored, lastDayStored, 'current:', week, day);
 
     if (lastWeekStored === parseInt(String(week)) && lastDayStored === parseInt(String(day))) {
-      console.log('[XP] Already completed');
       return NextResponse.json({ xpPoints: currentXP, currentStreak: realStreak, alreadyCompleted: true });
     }
 
-    // Calculate new values
-    const newXP = currentXP + XP_PER_LESSON;
-    // Use dailyXpLog to detect first lesson of the day (more reliable than lastActiveDate)
-    const isFirstLessonToday = existingDailyXp === 0;
-    console.log('[XP] lastActiveDate:', lastActiveDate, 'today:', today, 'isFirstLessonToday:', isFirstLessonToday, 'realStreak:', realStreak);
-    const isNewDay = isFirstLessonToday;
+    // Calculate streak
     let newStreak = realStreak;
-    if (isNewDay) {
+    if (isFirstLessonToday) {
       if (lastActiveDate) {
         const diffDays = Math.round((new Date(today).getTime() - new Date(lastActiveDate).getTime()) / 86400000);
         newStreak = diffDays === 1 ? realStreak + 1 : 1;
@@ -113,25 +106,22 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // Get existing daily XP
-    const dailyXpF = userDoc?.fields?.dailyXpLog?.mapValue?.fields;
-    const existingDailyXp = dailyXpF?.[today]?.integerValue ? parseInt(dailyXpF[today].integerValue) : 0;
+    const newXP = currentXP + XP_PER_LESSON;
 
-    // Step 1: Write scalar fields (xpPoints, streak, dates)
-    const scalarResult = await patchScalar(token, userId, {
+    // Step 1: Write scalar fields
+    await patchScalar(token, userId, {
       xpPoints: newXP,
       currentStreak: newStreak,
       lastActiveDate: today,
       activePath: path,
     }, ['xpPoints', 'currentStreak', 'lastActiveDate', 'activePath']);
-    console.log('[XP] scalar write xpPoints:', scalarResult?.fields?.xpPoints?.integerValue);
 
-    // Step 2: Write dailyXpLog with backtick quoting for date key
+    // Step 2: Write dailyXpLog
     await patchScalar(token, userId, {
       [`dailyXpLog.${today}`]: existingDailyXp + XP_PER_LESSON,
     }, [`dailyXpLog.${today}`]);
 
-    // Step 3: Update completedDays + lastWeek/lastDay in languageProgress map
+    // Step 3: Update completedDays + lastWeek/lastDay
     const existingVals = pathMap?.completedDays?.arrayValue?.values || [];
     const existingDays: string[] = existingVals.map((v: any) => v.stringValue).filter(Boolean);
     if (!existingDays.includes(dayKey)) existingDays.push(dayKey);
@@ -140,27 +130,23 @@ export async function POST(req: NextRequest) {
     pathMap.lastWeek = { integerValue: String(week) };
     pathMap.lastDay = { integerValue: String(day) };
 
-    console.log('[XP] writing LP:', langKey, path, 'completedDays:', existingDays, 'lastWeek:', week, 'lastDay:', day);
-
     const lpUrl = `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}?updateMask.fieldPaths=languageProgress`;
     const lpWriteRes = await fetch(lpUrl, {
       method: 'PATCH',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ fields: { languageProgress: { mapValue: { fields: lpMap } } } }),
     });
+
     if (!lpWriteRes.ok) {
       console.error('[XP] LP write failed:', await lpWriteRes.text());
-    } else {
-      console.log('[XP] LP write success');
     }
 
-    console.log(`✅ ${userId} ${langKey}/${path} ${dayKey} | XP: ${currentXP}→${newXP} | Streak: ${realStreak}→${newStreak}`);
+    console.log(`✅ ${userId} ${langKey}/${path} ${dayKey} | XP:${currentXP}→${newXP} | Streak:${realStreak}→${newStreak} | isFirstToday:${isFirstLessonToday}`);
 
     return NextResponse.json({
       xpPoints: newXP,
       currentStreak: newStreak,
       xpEarned: XP_PER_LESSON,
-      isNewDay,
       alreadyCompleted: false,
     });
 
