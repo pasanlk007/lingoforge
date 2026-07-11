@@ -153,7 +153,7 @@ export async function POST(req: NextRequest) {
     if (!existingDays.includes(dayKey)) {
       existingDays = [...existingDays, dayKey];
     }
-    console.log('[XP] writing completedDays:', existingDays.length, 'entries including', dayKey);
+    console.log('[XP] writing completedDays field:', completedDaysField, 'entries:', existingDays);
     try {
       const cdResult = await patchUser(token, userId, { [completedDaysField]: existingDays }, [completedDaysField]);
       console.log('[XP] completedDays write result field count:', Object.keys(cdResult?.fields || {}).length);
