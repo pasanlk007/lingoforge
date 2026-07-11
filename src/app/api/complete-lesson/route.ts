@@ -1,68 +1,130 @@
-    // Skip reading completedDays - use lastDay+lastWeek to detect re-completion
-    const completedDays: string[] = [];
-    // Simple re-completion check: if lastWeek+lastDay matches current, skip
-    const lastWeekStored = (() => {
-      const lpF = userDoc?.fields?.languageProgress?.mapValue?.fields;
-      const lkF = lpF?.[langKey]?.mapValue?.fields;
-      const pathF = lkF?.[path]?.mapValue?.fields;
-      return pathF?.lastWeek?.integerValue ? parseInt(pathF.lastWeek.integerValue) : 0;
-    })();
-    const lastDayStored = (() => {
-      const lpF = userDoc?.fields?.languageProgress?.mapValue?.fields;
-      const lkF = lpF?.[langKey]?.mapValue?.fields;
-      const pathF = lkF?.[path]?.mapValue?.fields;
-      return pathF?.lastDay?.integerValue ? parseInt(pathF.lastDay.integerValue) : 0;
-    })();
-    console.log('[XP] lastWeek/lastDay stored:', lastWeekStored, lastDayStored, 'current:', week, day);
+import { NextRequest, NextResponse } from 'next/server';
+import { getScenarioFirebaseToken, scenarioFirestoreBaseUrl } from '@/lib/scenarioFirestoreAdmin';
 
-        // Already completed — don't double award XP
+const XP_PER_LESSON = 100;
+
+async function getUser(token: string, userId: string) {
+  const res = await fetch(`${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) return null;
+  return await res.json();
+}
+
+async function patchUser(token: string, userId: string, fields: Record<string, any>, masks: string[]) {
+  const url = `${scenarioFirestoreBaseUrl()}/userProfiles/${userId}`;
+  const maskQuery = masks.map(m => {
+    const needsQuoting = /[^a-zA-Z0-9_.]/.test(m);
+    if (needsQuoting) {
+      const parts = m.split('.');
+      const quoted = parts.map(p => /[^a-zA-Z0-9_]/.test(p) ? '`' + p + '`' : p).join('.');
+      return `updateMask.fieldPaths=${encodeURIComponent(quoted)}`;
+    }
+    return `updateMask.fieldPaths=${encodeURIComponent(m)}`;
+  }).join('&');
+
+  const firestoreFields: any = {};
+  for (const [key, value] of Object.entries(fields)) {
+    if (value === null) firestoreFields[key] = { nullValue: null };
+    else if (typeof value === 'boolean') firestoreFields[key] = { booleanValue: value };
+    else if (typeof value === 'number') firestoreFields[key] = { integerValue: String(Math.round(value)) };
+    else if (typeof value === 'string') firestoreFields[key] = { stringValue: value };
+    else if (Array.isArray(value)) {
+      firestoreFields[key] = { arrayValue: { values: value.map(v => ({ stringValue: String(v) })) } };
+    }
+  }
+
+  const res = await fetch(`${url}?${maskQuery}`, {
+    method: 'PATCH',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ fields: firestoreFields }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Firestore patch failed: ${err}`);
+  }
+  return res.json();
+}
+
+function getIntField(doc: any, field: string): number {
+  const f = doc?.fields?.[field];
+  if (!f) return 0;
+  if (f.integerValue !== undefined) return parseInt(f.integerValue, 10);
+  return 0;
+}
+
+function getStringField(doc: any, field: string): string {
+  return doc?.fields?.[field]?.stringValue || '';
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const { userId, language, path, week, day } = await req.json();
+
+    if (!userId || !language || !path || !week || !day) {
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
+
+    const token = await getScenarioFirebaseToken();
+    const userDoc = await getUser(token, userId);
+    if (!userDoc) {
+      return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    }
+
+    const today = new Date().toISOString().split('T')[0];
+    const dayKey = `${week}-${day}`;
+    const langKey = language.toLowerCase();
+
+    const currentXP = getIntField(userDoc, 'xpPoints');
+    const currentStreak = getIntField(userDoc, 'xpPoints') ? getIntField(userDoc, 'currentStreak') : 0;
+    const lastActiveDate = getStringField(userDoc, 'lastActiveDate');
+    const realStreak = getIntField(userDoc, 'currentStreak');
+
+    // Re-completion check using lastWeek + lastDay
+    const lpF = userDoc?.fields?.languageProgress?.mapValue?.fields;
+    const lkF = lpF?.[langKey]?.mapValue?.fields;
+    const pathF = lkF?.[path]?.mapValue?.fields;
+    const lastWeekStored = pathF?.lastWeek?.integerValue ? parseInt(pathF.lastWeek.integerValue) : 0;
+    const lastDayStored = pathF?.lastDay?.integerValue ? parseInt(pathF.lastDay.integerValue) : 0;
+
+    console.log('[XP] stored lastWeek/lastDay:', lastWeekStored, lastDayStored, 'current:', week, day);
+
     if (lastWeekStored === parseInt(String(week)) && lastDayStored === parseInt(String(day))) {
       console.log('[XP] Already completed, skipping');
-      return NextResponse.json({ xpPoints: currentXP, currentStreak, alreadyCompleted: true });
+      return NextResponse.json({ xpPoints: currentXP, currentStreak: realStreak, alreadyCompleted: true });
     }
 
     // Calculate new values
     const newXP = currentXP + XP_PER_LESSON;
     const isNewDay = lastActiveDate !== today;
-
-    let newStreak = currentStreak;
+    let newStreak = realStreak;
     if (isNewDay) {
       if (lastActiveDate) {
-        const last = new Date(lastActiveDate);
-        const todayDate = new Date(today);
-        const diffDays = Math.round((todayDate.getTime() - last.getTime()) / (1000 * 60 * 60 * 24));
-        newStreak = diffDays === 1 ? currentStreak + 1 : 1;
+        const diffDays = Math.round((new Date(today).getTime() - new Date(lastActiveDate).getTime()) / 86400000);
+        newStreak = diffDays === 1 ? realStreak + 1 : 1;
       } else {
         newStreak = 1;
       }
     }
 
-    // Note: we append without reading existing array to avoid REST depth truncation
-    // The client-side isDayCompleted check uses languageProgress.completedDays array
-    // We write just the new entry - Firestore will merge via updateMask
+    // Get existing dailyXp
+    const dailyXpF = userDoc?.fields?.dailyXpLog?.mapValue?.fields;
+    const existingDailyXp = dailyXpF?.[today]?.integerValue ? parseInt(dailyXpF[today].integerValue) : 0;
 
-    // Get existing daily XP and add to it
-    const dailyXpFields = getMapField(userDoc, 'dailyXpLog');
-    const existingDailyXp = dailyXpFields?.[today]?.integerValue
-      ? parseInt(dailyXpFields[today].integerValue, 10)
-      : 0;
-
-    // Write all scalar fields first
+    // Write scalar fields
     const fields: Record<string, any> = {
       xpPoints: newXP,
       currentStreak: newStreak,
       lastActiveDate: today,
       activePath: path,
-      [`languageProgress.${langKey}.${path}.lastWeek`]: parseInt(String(week), 10),
-      [`languageProgress.${langKey}.${path}.lastDay`]: parseInt(String(day), 10),
+      [`languageProgress.${langKey}.${path}.lastWeek`]: parseInt(String(week)),
+      [`languageProgress.${langKey}.${path}.lastDay`]: parseInt(String(day)),
       [`dailyXpLog.${today}`]: existingDailyXp + XP_PER_LESSON,
     };
 
     const masks = [
-      'xpPoints',
-      'currentStreak',
-      'lastActiveDate',
-      'activePath',
+      'xpPoints', 'currentStreak', 'lastActiveDate', 'activePath',
       `languageProgress.${langKey}.${path}.lastWeek`,
       `languageProgress.${langKey}.${path}.lastDay`,
       `dailyXpLog.${today}`,
@@ -70,9 +132,7 @@
 
     await patchUser(token, userId, fields, masks);
 
-    console.log('[XP] completedDays before:', JSON.stringify(completedDays), 'adding:', dayKey);
-    // Append to completedDays using arrayUnion equivalent
-    // Read current array first with a focused request
+    // Read and update completedDays array
     const completedDaysField = `languageProgress.${langKey}.${path}.completedDays`;
     let existingDays: string[] = [];
     try {
@@ -82,21 +142,20 @@
       );
       if (cdRes.ok) {
         const cdDoc = await cdRes.json();
-        const lpF = cdDoc?.fields?.languageProgress?.mapValue?.fields;
-        const lkF = lpF?.[langKey]?.mapValue?.fields;
-        const pathF = lkF?.[path]?.mapValue?.fields;
-        const vals = pathF?.completedDays?.arrayValue?.values;
+        const vals = cdDoc?.fields?.languageProgress?.mapValue?.fields?.[langKey]?.mapValue?.fields?.[path]?.mapValue?.fields?.completedDays?.arrayValue?.values;
         if (vals) existingDays = vals.map((v: any) => v.stringValue).filter(Boolean);
       }
-    } catch(e) { console.warn('[XP] completedDays focused read error:', e); }
-    
+    } catch(e) {
+      console.warn('[XP] completedDays read error:', e);
+    }
+
     if (!existingDays.includes(dayKey)) {
       existingDays = [...existingDays, dayKey];
     }
-    console.log('[XP] writing completedDays:', existingDays.length, 'entries');
+    console.log('[XP] writing completedDays:', existingDays.length, 'entries including', dayKey);
     await patchUser(token, userId, { [completedDaysField]: existingDays }, [completedDaysField]);
 
-    console.log(`✅ ${userId} ${langKey}/${path} ${dayKey} | XP: ${currentXP}→${newXP} | Streak: ${currentStreak}→${newStreak}`);
+    console.log(`✅ ${userId} ${langKey}/${path} ${dayKey} | XP: ${currentXP}→${newXP} | Streak: ${realStreak}→${newStreak}`);
 
     return NextResponse.json({
       xpPoints: newXP,
