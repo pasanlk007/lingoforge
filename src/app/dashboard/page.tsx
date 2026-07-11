@@ -111,7 +111,8 @@ function DashboardContent({ user }: { user: User }) {
             lastActiveDate: formatDate(now, 'yyyy-MM-dd'),
             aiPlanningEnabled: false,
         };
-        setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
+        // Only create profile if it truly does not exist - never overwrite existing XP/streak
+        setDoc(userProfileRef, newUserProfile, { merge: false }).catch(console.error);
       };
       createUserProfile();
     }
