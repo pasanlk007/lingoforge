@@ -99,6 +99,7 @@ export async function POST(req: NextRequest) {
 
     // Calculate new values
     const newXP = currentXP + XP_PER_LESSON;
+    console.log('[XP] lastActiveDate:', lastActiveDate, 'today:', today, 'isNewDay:', lastActiveDate !== today, 'realStreak:', realStreak);
     const isNewDay = lastActiveDate !== today;
     let newStreak = realStreak;
     if (isNewDay) {
