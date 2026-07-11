@@ -99,8 +99,10 @@ export async function POST(req: NextRequest) {
 
     // Calculate new values
     const newXP = currentXP + XP_PER_LESSON;
-    console.log('[XP] lastActiveDate:', lastActiveDate, 'today:', today, 'isNewDay:', lastActiveDate !== today, 'realStreak:', realStreak);
-    const isNewDay = lastActiveDate !== today;
+    // Use dailyXpLog to detect first lesson of the day (more reliable than lastActiveDate)
+    const isFirstLessonToday = existingDailyXp === 0;
+    console.log('[XP] lastActiveDate:', lastActiveDate, 'today:', today, 'isFirstLessonToday:', isFirstLessonToday, 'realStreak:', realStreak);
+    const isNewDay = isFirstLessonToday;
     let newStreak = realStreak;
     if (isNewDay) {
       if (lastActiveDate) {
