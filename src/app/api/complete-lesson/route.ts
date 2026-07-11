@@ -154,7 +154,12 @@ export async function POST(req: NextRequest) {
       existingDays = [...existingDays, dayKey];
     }
     console.log('[XP] writing completedDays:', existingDays.length, 'entries including', dayKey);
-    await patchUser(token, userId, { [completedDaysField]: existingDays }, [completedDaysField]);
+    try {
+      const cdResult = await patchUser(token, userId, { [completedDaysField]: existingDays }, [completedDaysField]);
+      console.log('[XP] completedDays write result field count:', Object.keys(cdResult?.fields || {}).length);
+    } catch(cdErr: any) {
+      console.error('[XP] completedDays write FAILED:', cdErr.message);
+    }
 
     console.log(`✅ ${userId} ${langKey}/${path} ${dayKey} | XP: ${currentXP}→${newXP} | Streak: ${realStreak}→${newStreak}`);
 
