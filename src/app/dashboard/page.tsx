@@ -37,7 +37,6 @@ import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 import { InstallPromptCard } from "@/components/InstallPromptCard";
 import { isNativeApp } from "@/lib/isNativeApp";
-import { XPChart } from "@/components/XPChart";
 
 function DashboardLoading() {
   return (
@@ -346,8 +345,6 @@ function DashboardContent({ user }: { user: User }) {
                   </div>
                 </CardFooter>
               </Card>
-
-              <XPChart dailyXpLog={userProfile?.dailyXpLog} />
 
               <Card className="flex flex-col border-2 border-blue-500/40 bg-gradient-to-br from-blue-950/20 to-card">
                 <CardHeader>
