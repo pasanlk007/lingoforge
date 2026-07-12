@@ -32,7 +32,7 @@ export function BottomNav() {
   if (pathname === '/' || pathname === '/go') return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 backdrop-blur-sm md:hidden">
+    <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/95 backdrop-blur-sm pb-safe md:hidden">
       <div className="grid h-16 grid-cols-8">
         {navItems.map((item) => {
           const isActive = pathname === item.href;

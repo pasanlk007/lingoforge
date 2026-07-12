@@ -72,3 +72,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .h-safe-bottom-nav {
+    height: calc(4rem + env(safe-area-inset-bottom, 0px));
+  }
+}
