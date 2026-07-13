@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import { getScenarioFirebaseToken, scenarioFirestoreBaseUrl } from '@/lib/scenarioFirestoreAdmin';
+import { logAiUsage } from '@/lib/aiUsageLogger';
 
 const anthropic = new Anthropic();
 
@@ -99,6 +100,17 @@ Respond in this EXACT JSON format (no markdown, no extra text):
     } catch {
       parsed = { text: rawText.trim(), phonetic: '', hint: '' };
     }
+
+    await logAiUsage({
+      feature: 'scenario_conversation',
+      model: 'claude-sonnet-4-6',
+      inputTokens: response.usage.input_tokens,
+      outputTokens: response.usage.output_tokens,
+      targetLanguage,
+      nativeLanguage,
+      userId,
+      extra: { day, isFirstTurn: isFirstTurn ? 1 : 0 },
+    });
 
     return NextResponse.json({
       text: parsed.text || '',

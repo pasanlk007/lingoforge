@@ -1,5 +1,6 @@
 
 import { NextResponse } from 'next/server';
+import { logAiUsage } from '@/lib/aiUsageLogger';
 
 function createJWT(): string {
   const privateKey = (process.env.FIREBASE_PRIVATE_KEY || '').replace(/\\n/g, '\n');
@@ -94,6 +95,18 @@ Return ONLY a valid JSON object with the following structure:
     const aiData = await aiRes.json();
     const text = aiData.content[0].text;
     const lesson = JSON.parse(text.replace(/```json|```/g, '').trim());
+
+    if (aiData.usage) {
+      await logAiUsage({
+        feature: 'pro_lesson',
+        model: 'claude-sonnet-4-6',
+        inputTokens: aiData.usage.input_tokens || 0,
+        outputTokens: aiData.usage.output_tokens || 0,
+        targetLanguage: language,
+        nativeLanguage,
+        extra: { week, day },
+      });
+    }
 
     // Save to cache
     const fields: any = {
