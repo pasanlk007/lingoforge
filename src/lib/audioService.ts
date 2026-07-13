@@ -90,7 +90,16 @@ export const AudioService = {
    * Matches the original playAudio(text, languageName, rate) signature.
    */
   async play(text: string, languageName: string, rate?: number) {
-    const langCode = langNameToCode[languageName] || 'en-US';
+    // Callers pass languageName in mixed casing depending on the source
+    // (some come straight from a lowercased URL route param, e.g.
+    // "romanian", while others pass the display name, e.g. "Romanian").
+    // langNameToCode's keys are capitalized, so do a case-insensitive
+    // lookup here instead of requiring every call site to normalize —
+    // a mismatch here used to silently fall back to en-US.
+    const matchedKey = Object.keys(langNameToCode).find(
+      (key) => key.toLowerCase() === languageName.toLowerCase()
+    );
+    const langCode = (matchedKey && langNameToCode[matchedKey]) || 'en-US';
     const effectiveRate = rate !== undefined ? rate : getSavedRate(1);
 
     try {

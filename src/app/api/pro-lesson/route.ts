@@ -73,6 +73,8 @@ Key areas to incorporate, with cultural tips related to them:
 - Historical context (ඉතිහාසය)
 - Judicial processes (අධිකරන)
 
+CRITICAL — this content is read aloud by text-to-speech, so every word inside "target" and "example" fields must be entirely in ${language}, with NO untranslated English words, legal/technical terms, or proper nouns left in raw English spelling. If a term is a loanword or has no native equivalent, spell it using ${language}'s own orthography/spelling conventions the way a native speaker would naturally write and pronounce it — do not mix raw English spelling into ${language} text, since a single unconverted word breaks the pronunciation mid-sentence for the learner.
+
 Return ONLY a valid JSON object with the following structure:
 {
   "title": "A concise lesson title in ${nativeLanguage}",
