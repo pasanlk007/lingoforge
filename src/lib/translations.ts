@@ -252,7 +252,7 @@ export const translations = {
       proBundle: {
         badge: "AI ADVANCED PATH",
         title: "LingoForge Pro",
-        description: "A specialized 30-day integration curriculum for migrant workers.",
+        description: "A specialized 12-week integration curriculum for migrant workers.",
         nextLesson: "Next Pro Lesson",
         exploreMap: "Explore Lesson Map",
         items: {
@@ -859,7 +859,7 @@ export const translations = {
           rights: { title: "अधिकार और दस्तावेज़", desc: "कानूनी और नागरिक मार्गदर्शन" },
           integration: { title: "एकीकरण", desc: "सांस्कृतिक और सामाजिक मानदंड" },
           vocab: { title: "कानूनी शब्दावली", desc: "आवश्यक कानूनी शर्तें" },
-          tutors: { title: "Lesson Map", desc: "30-day curriculum" }
+          tutors: { title: "Lesson Map", desc: "12-week curriculum" }
         }
       }
     },
@@ -1758,7 +1758,7 @@ export const translations = {
           rights: { title: "अधिकार र कागजातहरू", desc: "कानूनी र नागरिक मार्गदर्शन" },
           integration: { title: "एकीकरण", desc: "सांस्कृतिक र सामाजिक मान्यताहरू" },
           vocab: { title: "कानूनी शब्दावली", desc: "आवश्यक कानूनी सर्तहरू" },
-          tutors: { title: "Lesson Map", desc: "30-day curriculum" }
+          tutors: { title: "Lesson Map", desc: "12-week curriculum" }
         }
       }
     },

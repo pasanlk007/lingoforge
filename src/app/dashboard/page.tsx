@@ -171,8 +171,15 @@ function DashboardContent({ user }: { user: User }) {
 
   const proProgress = userProfile?.languageProgress?.[langKey]?.['pro'];
   const lastProAbsoluteDay = proProgress ? (proProgress.lastWeek - 1) * 7 + proProgress.lastDay : 0;
-  const proPathFinished = lastProAbsoluteDay >= 30;
-  const nextProAbsoluteDay = proPathFinished ? 30 : lastProAbsoluteDay + 1;
+  // Derived from proLessonTopics itself (currently 12 weeks) instead of a
+  // hardcoded number, so adding more curated weeks there is enough on its
+  // own — no second edit needed here to unlock them.
+  const proTopicWeeks = Object.keys(proLessonTopics).map(Number);
+  const maxProWeek = Math.max(...proTopicWeeks);
+  const maxProDayInLastWeek = Math.max(...Object.keys(proLessonTopics[maxProWeek]).map(Number));
+  const maxProAbsoluteDay = (maxProWeek - 1) * 7 + maxProDayInLastWeek;
+  const proPathFinished = lastProAbsoluteDay >= maxProAbsoluteDay;
+  const nextProAbsoluteDay = proPathFinished ? maxProAbsoluteDay : lastProAbsoluteDay + 1;
   const nextProWeekForTopic = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
   const nextProDayInWeekForTopic = ((nextProAbsoluteDay - 1) % 7) + 1;
   const nextProTopic = proLessonTopics[nextProWeekForTopic]?.[nextProDayInWeekForTopic] || 'Review';

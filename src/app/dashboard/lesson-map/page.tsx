@@ -9,6 +9,8 @@ import { Navigation } from '@/components/Navigation';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { proLessonTopics } from '@/lib/proLessonTopics';
+import { canAccessLesson } from '@/lib/accessControl';
 
 // --- Types ---
 interface LessonNode {
@@ -47,84 +49,14 @@ const PRO_LANGUAGE_MAP: Record<string, { countries: { name: string; flag: string
 };
 
 // --- Data ---
-const proPathLessons: LessonNode[] = Array.from({ length: 30 }, (_, i) => {
-    const day = i + 1;
-    let topic = '';
-    let icon = '';
-    
-    // Citizenship Prep (Days 1-7)
-    if (day <= 7) {
-        icon = '🛂';
-        const week1Topics = [
-            "Understanding the Application Form",
-            "Gathering Personal Documents",
-            "Writing a Personal Statement",
-            "Common Interview Questions: Background",
-            "Common Interview Questions: New Life",
-            "Navigating Application Portals",
-            "Week 1 Review: Application Process",
-        ];
-        topic = week1Topics[day - 1];
-    } 
-    // Legal Framework (Days 8-14)
-    else if (day <= 14) {
-        icon = '📜';
-        const week2Topics = [
-            "Understanding Your Visa/Work Permit",
-            "Your Rights as a Worker",
-            "Reading a Rental Agreement",
-            "Registering with Local Authorities",
-            "Opening a Bank Account",
-            "Accessing Healthcare Services",
-            "Week 2 Review: Legal & Admin",
-        ];
-        topic = week2Topics[day - 8];
-    }
-    // Exam Prep (Days 15-21)
-    else if (day <= 21) {
-        icon = '🎓';
-        const week3Topics = [
-            "Language Test: Speaking & Listening",
-            "Language Test: Reading & Writing",
-            "Civic Test: National History",
-            "Civic Test: National Symbols",
-            "Practice Language Test",
-            "Practice Civic Test",
-            "Week 3 Review: Test Prep",
-        ];
-        topic = week3Topics[day - 15];
-    }
-    // Grammar & Culture (Days 22-28)
-    else if (day <= 28) {
-        icon = '✍️';
-        const week4Topics = [
-            "Advanced Grammar: Conditionals",
-            "Cultural Nuances: Social Etiquette",
-            "Grammar: Tenses for Storytelling",
-            "Cultural Nuances: Workplace Styles",
-            "Advanced Grammar: Idioms",
-            "Cultural Nuances: Celebrations",
-            "Week 4 Review: Grammar & Culture",
-        ];
-        topic = week4Topics[day - 22];
-    }
-    // Final Days
-    else {
-        icon = '🚀';
-        const finalTopics = [
-            "Final Review: Citizenship Scenario",
-            "Next Steps: Life as a New Citizen"
-        ];
-        topic = finalTopics[day - 29];
-    }
-    
-    return {
-        day: day,
-        topic: topic,
-        icon: icon,
-        unlocked: day <= 5, // Unlock first 5 days for demo
-    };
-});
+// One icon per week theme (proLessonTopics.ts is the single source of
+// truth for topic titles — this file used to keep its own duplicated
+// copy of the first 5 weeks, which drifted out of sync as topics grew).
+const WEEK_ICONS: Record<number, string> = {
+  1: '🛂', 2: '📜', 3: '🎓', 4: '✍️', 5: '🚀',
+  6: '💼', 7: '🏥', 8: '👨‍👩‍👧', 9: '💰', 10: '💻', 11: '🚌', 12: '🗣️',
+};
+const FALLBACK_ICON = '📘';
 
 // --- Components ---
 
@@ -177,7 +109,34 @@ function LessonMapPage() {
   }, []);
 
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
-  
+  const langKey = targetLanguage.toLowerCase();
+
+  const totalProDays = useMemo(() => {
+    const weeks = Object.keys(proLessonTopics).map(Number);
+    const maxWeek = Math.max(...weeks);
+    const maxDayInLastWeek = Math.max(...Object.keys(proLessonTopics[maxWeek]).map(Number));
+    return (maxWeek - 1) * 7 + maxDayInLastWeek;
+  }, []);
+
+  const proPathLessons: LessonNode[] = useMemo(() => {
+    return Array.from({ length: totalProDays }, (_, i) => {
+      const day = i + 1;
+      const week = Math.floor((day - 1) / 7) + 1;
+      const dayInWeek = ((day - 1) % 7) + 1;
+      const topic = proLessonTopics[week]?.[dayInWeek] || `Week ${week} Day ${dayInWeek}`;
+      const icon = WEEK_ICONS[week] || FALLBACK_ICON;
+      const access = canAccessLesson({
+        path: 'pro',
+        week,
+        day: dayInWeek,
+        language: langKey,
+        userEmail: user?.email,
+        profile: userProfile ?? null,
+      });
+      return { day, topic, icon, unlocked: access.allowed };
+    });
+  }, [totalProDays, langKey, user?.email, userProfile]);
+
   const handleNodeClick = (lesson: LessonNode) => {
     if (lesson.unlocked) {
       const week = Math.floor((lesson.day - 1) / 7) + 1;
@@ -247,7 +206,7 @@ function LessonMapPage() {
       <main className="container mx-auto max-w-4xl py-12 px-4">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight">LingoForge Pro Path</h1>
-          <p className="mt-2 text-muted-foreground">Your 30-day journey to advanced fluency in {targetLanguage}.</p>
+          <p className="mt-2 text-muted-foreground">Your {totalProDays}-day journey to advanced fluency in {targetLanguage}.</p>
         </header>
 
         <div className="relative w-full">
