@@ -53,6 +53,13 @@
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
+    <!-- RECORD_AUDIO alone makes Android infer android.hardware.microphone as a
+         REQUIRED feature, silently excluding devices without a mic (TV, some
+         Chromebooks, Android Auto, wearables). Voice features are optional
+         extras here (Scenario Mode), not core functionality, so mark it
+         explicitly optional instead. -->
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
     <queries>
         <intent>
             <action android:name="android.intent.action.TTS_SERVICE" />
