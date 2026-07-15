@@ -302,9 +302,16 @@ export default function ScenarioConversationPage() {
         mediaRecorderRef.current = recorder;
         setIsRecording(true); setAvatarState('listening');
       }
-    } catch {
+    } catch (err: any) {
       setIsRecording(false); setAvatarState('idle');
-      setError('Microphone access failed. Check permissions.');
+      const msg = err?.message || '';
+      if (msg.includes('permission') || msg.includes('PERMISSION')) {
+        setError('Microphone access denied. Check your app permissions in device settings.');
+      } else if (msg.includes('NO_SPEECH_DETECTED')) {
+        setError("Didn't catch that — tap the mic and try again.");
+      } else {
+        setError("Couldn't hear you clearly. Tap the mic and try again.");
+      }
     }
   };
 

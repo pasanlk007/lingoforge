@@ -33,7 +33,10 @@ export async function nativeSpeechRecognize(lang: string): Promise<string | null
     popup: false,
   });
   if (result?.matches && result.matches.length > 0) return result.matches[0];
-  return null;
+  // Recognizer ran fine but caught no speech (silence, too quiet, spoke too
+  // late) — distinct from a permission or plugin failure, so the caller can
+  // show an honest "didn't catch that" message instead of a permissions error.
+  throw new Error('NO_SPEECH_DETECTED');
 }
 
 export async function stopNativeSpeech(): Promise<void> {
