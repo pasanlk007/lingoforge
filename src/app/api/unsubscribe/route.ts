@@ -1,6 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { initializeFirebase } from '@/firebase/server-init';
 
+// This route reads a query param at request time (the unsubscribe email link
+// target), so it can never be statically pre-rendered. Declaring this
+// explicitly skips Next.js's static-generation attempt for this route during
+// build entirely, instead of attempting it, failing, and logging a
+// DYNAMIC_SERVER_USAGE error before falling back to dynamic rendering anyway.
+export const dynamic = 'force-dynamic';
+
 export async function GET(req: NextRequest) {
   try {
     const { firestore } = initializeFirebase();
