@@ -147,6 +147,34 @@ function DashboardContent({ user }: { user: User }) {
     }
   }, [userProfile, userProfileRef]);
 
+  // Keep the "2 Words a Day" notification batch topped up as it runs low.
+  // scheduleDailyWordNotifications() no-ops internally unless the buffer is
+  // within 3 days of running out, so this is cheap to call on every load.
+  useEffect(() => {
+    if (!isMounted || !userProfile) return;
+    try {
+      const saved = localStorage.getItem('lingoforge_daily_reminder');
+      if (!saved) return;
+      const reminder = JSON.parse(saved);
+      if (!reminder?.enabled) return;
+      import('@/lib/isNativeApp').then(({ isNativeApp }) => {
+        if (!isNativeApp()) return;
+        const [hours, minutes] = (reminder.time || '08:00').split(':').map(Number);
+        import('@/lib/dailyWordNotifications').then(({ scheduleDailyWordNotifications }) => {
+          scheduleDailyWordNotifications({
+            targetLanguage,
+            nativeLanguage,
+            userProfile,
+            hour: hours,
+            minute: minutes,
+          }).catch(console.error);
+        });
+      });
+    } catch (e) {
+      console.error('Failed to refresh daily word notifications', e);
+    }
+  }, [isMounted, userProfile, targetLanguage, nativeLanguage]);
+
   const {
     displayName,
     currentStreak,
@@ -439,7 +467,7 @@ function DashboardContent({ user }: { user: User }) {
             </div>
 
             <div className="space-y-8">
-              <ReminderCard />
+              <ReminderCard userProfile={userProfile} />
               <ReferralCard />
               <VoiceSelector />
               {!isNativeApp() && <InstallPromptCard />}

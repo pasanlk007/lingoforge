@@ -10,13 +10,19 @@ import { useToast } from '@/hooks/use-toast';
 import { translations } from '@/lib/translations';
 import { Label } from './ui/label';
 import { isNativeApp } from '@/lib/isNativeApp';
+import { scheduleDailyWordNotifications, cancelDailyWordNotifications } from '@/lib/dailyWordNotifications';
+import type { UserProfile } from '@/lib/types';
 
 interface DailyReminder {
   enabled: boolean;
   time: string;
 }
 
-export function ReminderCard() {
+interface ReminderCardProps {
+  userProfile?: UserProfile | null;
+}
+
+export function ReminderCard({ userProfile }: ReminderCardProps) {
   const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
   const [targetLanguage, setTargetLanguage] = useState('French');
   const [isMounted, setIsMounted] = useState(false);
@@ -113,29 +119,18 @@ export function ReminderCard() {
       localStorage.setItem('lingoforge_daily_reminder', JSON.stringify(reminder));
 
       if (isNativeApp()) {
-        const { LocalNotifications } = await import('@capacitor/local-notifications');
-        
-        // Cancel existing daily reminders (ID 1 is used for daily lesson reminder)
-        await LocalNotifications.cancel({ notifications: [{ id: 1 }] });
-
         if (reminder.enabled) {
           const [hours, minutes] = reminder.time.split(':').map(Number);
-          
-          await LocalNotifications.schedule({
-            notifications: [
-              {
-                id: 1,
-                title: t_notifications.title,
-                body: t_notifications.body.replace('{language}', targetLanguage),
-                schedule: {
-                  on: { hour: hours, minute: minutes },
-                  repeats: true,
-                  allowWhileIdle: true,
-                },
-                sound: 'default',
-              },
-            ],
+          await scheduleDailyWordNotifications({
+            targetLanguage,
+            nativeLanguage,
+            userProfile,
+            hour: hours,
+            minute: minutes,
+            force: true,
           });
+        } else {
+          await cancelDailyWordNotifications();
         }
       }
 
