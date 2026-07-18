@@ -144,7 +144,9 @@ export default function LessonMapPage() {
     return <LoadingSkeleton />;
   }
 
-  const proConfig = PRO_LANGUAGE_MAP[targetLanguage];
+  const proConfig = Object.entries(PRO_LANGUAGE_MAP).find(
+    ([key]) => key.toLowerCase() === targetLanguage.toLowerCase()
+  )?.[1];
 
   if (!proConfig) {
     return (
