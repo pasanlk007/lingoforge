@@ -189,19 +189,32 @@ export default function ProLessonPage() {
     // We no longer auto-complete to give the user a button choice
   }
 
-  const handleComplete = () => {
-    if (isComplete || !userProfileRef) return;
+  const handleComplete = async () => {
+    if (isComplete || !userProfileRef || !user) return;
     setIsComplete(true);
     const langKey = (language as string).toLowerCase();
-    const dayKey = `${week}-${day}`;
-    
-    // Pro path strictly updates its own progress.
-    // It DOES NOT award XP or update Streaks (Survival Pack exclusive).
-    updateDocumentNonBlocking(userProfileRef, {
-      [`languageProgress.${langKey}.pro.completedDays`]: arrayUnion(dayKey),
-      [`languageProgress.${langKey}.pro.lastWeek`]: week,
-      [`languageProgress.${langKey}.pro.lastDay`]: day,
-    });
+
+    try {
+      const res = await fetch('/api/complete-lesson', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: user.uid,
+          language: langKey,
+          path: 'pro',
+          week,
+          day,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        console.log(`[XP] Pro lesson done: +${data.xpEarned ?? ''} XP → ${data.xpPoints} | Streak: ${data.currentStreak}`);
+      } else {
+        console.error('[XP] Pro complete-lesson API error:', data.error);
+      }
+    } catch (e) {
+      console.error('[XP] Failed to call complete-lesson for pro path:', e);
+    }
   };
 
   const proLessonBg = PlaceHolderImages.find(p => p.id === 'pro-lesson-background');
