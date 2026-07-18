@@ -9,6 +9,7 @@ import { Navigation } from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle, Loader2, BookOpen, MessagesSquare, Globe, PenSquare, BrainCircuit, XCircle, Lock, ChevronRight } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -53,6 +54,7 @@ export default function ProLessonPage() {
   const day = parseInt(dayStr as string);
 
   const { user } = useUser();
+  const { toast } = useToast();
   const firestore = useFirestore();
 
   const [lesson, setLesson] = useState<any>(null);
@@ -209,11 +211,16 @@ export default function ProLessonPage() {
       const data = await res.json();
       if (res.ok) {
         console.log(`[XP] Pro lesson done: +${data.xpEarned ?? ''} XP → ${data.xpPoints} | Streak: ${data.currentStreak}`);
+        if (!data.alreadyCompleted && data.xpEarned) {
+          toast({ title: `+${data.xpEarned} XP! 🎉`, description: `Streak: ${data.currentStreak} days` });
+        }
       } else {
         console.error('[XP] Pro complete-lesson API error:', data.error);
+        toast({ variant: 'destructive', title: 'XP not saved', description: 'Your lesson is marked complete, but XP failed to save. Please check your connection and try again.' });
       }
     } catch (e) {
       console.error('[XP] Failed to call complete-lesson for pro path:', e);
+      toast({ variant: 'destructive', title: 'XP not saved', description: 'Your lesson is marked complete, but XP failed to save. Please check your connection and try again.' });
     }
   };
 

@@ -8,6 +8,7 @@ import { useUser, useFirestore, useMemoFirebase, updateDocumentNonBlocking, setD
 import { arrayUnion, type DocumentData, type DocumentReference, increment } from 'firebase/firestore';
 import type { LanguageLesson, LessonDay, UserProfile } from '@/lib/types';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { WordCard } from '@/components/WordCard';
@@ -39,6 +40,7 @@ const confettiConfig = {
 
 export function LessonClientPage({ lesson, currentDay, userProfile, userProfileRef }: LessonClientPageProps) {
     const { user } = useUser();
+    const { toast } = useToast();
     const [nativeLanguage, setNativeLanguage] = useState<keyof typeof translations>('English');
     const [isMounted, setIsMounted] = useState(false);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -140,11 +142,16 @@ export function LessonClientPage({ lesson, currentDay, userProfile, userProfileR
         const data = await res.json();
         if (res.ok) {
           console.log(`[XP] Done: +${data.xpEarned} XP → ${data.xpPoints} | Streak: ${data.currentStreak}`);
+          if (!data.alreadyCompleted && data.xpEarned) {
+            toast({ title: `+${data.xpEarned} XP! 🎉`, description: `Streak: ${data.currentStreak} days` });
+          }
         } else {
           console.error('[XP] API error:', data.error);
+          toast({ variant: 'destructive', title: 'XP not saved', description: 'Your lesson is marked complete, but XP failed to save. Please check your connection and try again.' });
         }
       } catch (e) {
         console.error('[XP] Failed to call complete-lesson:', e);
+        toast({ variant: 'destructive', title: 'XP not saved', description: 'Your lesson is marked complete, but XP failed to save. Please check your connection and try again.' });
       }
 
       // Unlock next week for Course plan users
