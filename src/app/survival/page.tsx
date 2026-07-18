@@ -37,8 +37,11 @@ export default function SurvivalPathPage() {
 
   const nativeLanguage = userProfile?.nativeLanguage || (isMounted && localStorage.getItem('nativeLanguage')) || 'English';
   const targetLanguage = userProfile?.selectedLanguage || (isMounted && localStorage.getItem('targetLanguage')) || 'French';
-  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
-  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
+  
+  // Case-insensitive resolution of the native language to match the translations keys
+  const validNativeLanguage = nativeLanguages.find(l => l.toLowerCase() === nativeLanguage.toLowerCase()) || 'English';
+  
+  const t = translations[validNativeLanguage as keyof typeof translations]?.ui || translations.English.ui;
 
   const totalWeeks = 12;
   
@@ -57,7 +60,7 @@ export default function SurvivalPathPage() {
     return completedMap;
   }, [userProfile, targetLanguage]);
 
-  if (isMounted && nativeLanguage === 'English' && targetLanguage === 'English') {
+  if (isMounted && validNativeLanguage === 'English' && targetLanguage === 'English') {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
         <Navigation />

@@ -119,7 +119,10 @@ function DashboardContent({ user }: { user: User }) {
     if (userProfile) {
         let initialNative = userProfile.nativeLanguage || 'English';
         let initialTarget = userProfile.selectedLanguage || 'French';
-        if (!nativeLanguages.includes(initialNative)) initialNative = 'English';
+        // Case-insensitive lookup for native language validation
+        const nativeMatch = nativeLanguages.find(l => l.toLowerCase() === initialNative.toLowerCase());
+        initialNative = nativeMatch || 'English';
+
         if (initialNative === 'English' && initialTarget === 'English') initialTarget = 'French';
         
         if (userProfile.subscriptionActive && 
@@ -148,8 +151,6 @@ function DashboardContent({ user }: { user: User }) {
   }, [userProfile, userProfileRef]);
 
   // Keep the "2 Words a Day" notification batch topped up as it runs low.
-  // scheduleDailyWordNotifications() no-ops internally unless the buffer is
-  // within 3 days of running out, so this is cheap to call on every load.
   useEffect(() => {
     if (!isMounted || !userProfile) return;
     try {
@@ -181,10 +182,10 @@ function DashboardContent({ user }: { user: User }) {
     xpPoints,
   } = userProfile || {};
 
-  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
-  const t = translations[validNativeLanguage as keyof typeof translations].dashboard;
-  const t_ui = translations[validNativeLanguage as keyof typeof translations].ui;
-  const t_sc = translations[validNativeLanguage as keyof typeof translations].scenarioCard;
+  const validNativeLanguage = nativeLanguages.find(l => l.toLowerCase() === nativeLanguage.toLowerCase()) || 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations]?.dashboard || translations.English.dashboard;
+  const t_ui = translations[validNativeLanguage as keyof typeof translations]?.ui || translations.English.ui;
+  const t_sc = translations[validNativeLanguage as keyof typeof translations]?.scenarioCard || translations.English.scenarioCard;
   
   const langKey = targetLanguage.toLowerCase();
   const activePath = userProfile?.activePath || 'survival';
@@ -199,9 +200,6 @@ function DashboardContent({ user }: { user: User }) {
 
   const proProgress = userProfile?.languageProgress?.[langKey]?.['pro'];
   const lastProAbsoluteDay = proProgress ? (proProgress.lastWeek - 1) * 7 + proProgress.lastDay : 0;
-  // Derived from proLessonTopics itself (currently 12 weeks) instead of a
-  // hardcoded number, so adding more curated weeks there is enough on its
-  // own — no second edit needed here to unlock them.
   const proTopicWeeks = Object.keys(proLessonTopics).map(Number);
   const maxProWeek = Math.max(...proTopicWeeks);
   const maxProDayInLastWeek = Math.max(...Object.keys(proLessonTopics[maxProWeek]).map(Number));
@@ -212,7 +210,6 @@ function DashboardContent({ user }: { user: User }) {
   const nextProDayInWeekForTopic = ((nextProAbsoluteDay - 1) % 7) + 1;
   const nextProTopic = proLessonTopics[nextProWeekForTopic]?.[nextProDayInWeekForTopic] || 'Review';
 
-  // DIRECT LESSON URL for Continue button
   const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeekForTopic}/${nextProDayInWeekForTopic}`;
 
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
@@ -240,7 +237,7 @@ function DashboardContent({ user }: { user: User }) {
     profile: userProfile,
   }).allowed, [nextWeek, nextDay, targetLanguage, user, userProfile, activePath]);
 
-  const targetLanguageInfo = targetLanguages.find(l => l.lang === targetLanguage);
+  const targetLanguageInfo = targetLanguages.find(l => l.lang.toLowerCase() === targetLanguage.toLowerCase());
   const subscriptionPlan = userProfile?.subscriptionPlan || 'free';
   
   const bottomNavItems = [
@@ -408,7 +405,7 @@ function DashboardContent({ user }: { user: User }) {
                 <CardFooter className="p-4 pt-2">
                   <Button asChild size="sm" className="w-full bg-blue-600 hover:bg-blue-700">
                     <Link href="/scenario/my-plans">
-                      🎯 {t_sc.button} <ChevronRight className="ml-1 h-3 w-3" />
+                      🎯 {t_sc.button} <ChevronRight className="ml-3 h-3 w-3" />
                     </Link>
                   </Button>
                 </CardFooter>

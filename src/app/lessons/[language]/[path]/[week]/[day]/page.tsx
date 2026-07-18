@@ -65,15 +65,16 @@ export default function LessonPage() {
     profile: userProfile || null,
   });
   const hasAccess = isProfileLoading ? true : accessResult.allowed;
-  console.log("USERPROFILE UNLOCKED:", userProfile?.unlockedContent, "NATIVE:", userProfile?.nativeLanguage);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
   
-  const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
-  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
-  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
+  // Case-insensitive resolution of the native language to match the translations keys
+  const rawNativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
+  const validNativeLanguage = nativeLanguages.find(l => l.toLowerCase() === rawNativeLanguage.toLowerCase()) || 'English';
+  
+  const t = translations[validNativeLanguage as keyof typeof translations]?.ui || translations.English.ui;
 
   useEffect(() => {
     if (!isMounted || !hasAccess) {
@@ -157,10 +158,10 @@ export default function LessonPage() {
         <main className="flex-1 container mx-auto py-12 max-w-3xl text-center px-4">
           <div className="text-6xl mb-6">🔒</div>
           <h1 className="text-2xl font-bold mb-3">
-            {nativeLanguage === 'Sinhala' ? 'this lesson is locked' : 'This Lesson is Locked'}
+            {validNativeLanguage === 'Sinhala' ? 'this lesson is locked' : 'This Lesson is Locked'}
           </h1>
           <p className="text-muted-foreground mt-3 mb-6">
-            {nativeLanguage === 'Sinhala' 
+            {validNativeLanguage === 'Sinhala' 
               ? 'ඔබේ free trial අවසන් වී ඇත. දිගටම ඉගෙනගන්න!'
               : 'Your free trial has ended. Continue learning!'}
           </p>
@@ -174,20 +175,20 @@ export default function LessonPage() {
             ) : (
               <>
                 <div className="text-2xl mb-2">🌐</div>
-                <p className="font-semibold mb-1">{nativeLanguage === 'Sinhala' ? 'දායකත්වය ලබාගන්න:' : 'Subscribe at:'}</p>
+                <p className="font-semibold mb-1">{validNativeLanguage === 'Sinhala' ? 'දායකත්වය ලබාගන්න:' : 'Subscribe at:'}</p>
                 <p className="text-primary font-bold text-lg">lingoforge.app</p>
-                <p className="text-xs text-muted-foreground mt-2">{nativeLanguage === 'Sinhala' ? 'Survival Bundle ($26) හෝ Lifetime Pro ($49) ලබා ගත හැකිය' : 'Survival Bundle ($26) or Lifetime Pro ($49) plans available'}</p>
+                <p className="text-xs text-muted-foreground mt-2">{validNativeLanguage === 'Sinhala' ? 'Survival Bundle ($26) හෝ Lifetime Pro ($49) ලබා ගත හැකිය' : 'Survival Bundle ($26) or Lifetime Pro ($49) plans available'}</p>
               </>
             )}
           </div>
           <Button asChild className="mt-6">
             <Link href="/pricing">
-              {nativeLanguage === 'Sinhala' ? 'Upgrade කරන්න' : 'Upgrade Plan'}
+              {validNativeLanguage === 'Sinhala' ? 'Upgrade කරන්න' : 'Upgrade Plan'}
             </Link>
           </Button>
           <Button variant="outline" asChild className="mt-4">
             <Link href="/dashboard">
-              {nativeLanguage === 'Sinhala' ? 'ආපසු යන්න' : 'Back to Dashboard'}
+              {validNativeLanguage === 'Sinhala' ? 'ආපසු යන්න' : 'Back to Dashboard'}
             </Link>
           </Button>
         </main>
