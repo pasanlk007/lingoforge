@@ -37,6 +37,7 @@ import VoiceInit from "@/components/VoiceInit";
 import { proLessonTopics } from "@/lib/proLessonTopics";
 import { InstallPromptCard } from "@/components/InstallPromptCard";
 import { isNativeApp } from "@/lib/isNativeApp";
+import { XPChart } from "@/components/XPChart";
 
 function DashboardLoading() {
   return (
@@ -105,8 +106,12 @@ function DashboardContent({ user }: { user: User }) {
             subscriptionActive: false,
             subscriptionSource: 'none',
             subscriptionExpiry: null,
+            xpPoints: 0,
+            currentStreak: 0,
             lastActiveDate: formatDate(now, 'yyyy-MM-dd'),
             aiPlanningEnabled: false,
+            dailyXpLog: {},
+            languageProgress: {},
         };
         setDoc(userProfileRef, newUserProfile, { merge: true }).catch(console.error);
       };
@@ -153,6 +158,7 @@ function DashboardContent({ user }: { user: User }) {
     displayName,
     currentStreak,
     xpPoints,
+    dailyXpLog
   } = userProfile || {};
 
   const validNativeLanguage = nativeLanguages.find(l => l.toLowerCase() === nativeLanguage.toLowerCase()) || 'English';
@@ -180,16 +186,16 @@ function DashboardContent({ user }: { user: User }) {
   
   const proPathFinished = lastProAbsoluteDay >= maxProAbsoluteDay;
   const nextProAbsoluteDay = proPathFinished ? maxProAbsoluteDay : lastProAbsoluteDay + 1;
-  const nextProWeek = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
-  const nextProDay = ((nextProAbsoluteDay - 1) % 7) + 1;
-  const nextProTopic = proLessonTopics[nextProWeek]?.[nextProDay] || 'Review';
+  const nextProWeekNum = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
+  const nextProDayNum = ((nextProAbsoluteDay - 1) % 7) + 1;
+  const nextProTopic = proLessonTopics[nextProWeekNum]?.[nextProDayNum] || 'Review';
 
-  const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeek}/${nextProDay}`;
+  const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeekNum}/${nextProDayNum}`;
 
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
   const xpToNextLevel = 1500 - ((xpPoints || 0) % 1500);
 
-  const isRTL = ['Urdu'].includes(nativeLanguage as string);
+  const isRTL = ['Urdu'].includes(validNativeLanguage);
   const dayNames = [t.days.mon, t.days.tue, t.days.wed, t.days.thu, t.days.fri, t.days.sat, t.days.sun];
   
   const completedDaysForActiveWeek = useMemo(() => {
@@ -327,7 +333,7 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex flex-col gap-2 w-full">
                     {hasAccessToNextLesson ? (
                       <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-                        <Link href={nextSurvivalLessonUrl}>
+                        <Link href={nextLessonUrl}>
                           {t.goToNextLesson} <ChevronRight className="ml-1 h-4 w-4" />
                         </Link>
                       </Button>
@@ -435,6 +441,7 @@ function DashboardContent({ user }: { user: User }) {
                 </CardFooter>
               </Card>
 
+              <XPChart dailyXpLog={dailyXpLog} />
             </div>
 
             <div className="space-y-8">

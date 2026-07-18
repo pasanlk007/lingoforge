@@ -55,9 +55,9 @@ export function Navigation() {
   }, [isMounted, userProfile]);
 
   const nativeLanguage = (isMounted && (userProfile?.nativeLanguage || localStorage.getItem('nativeLanguage'))) || 'English';
-  const validNativeLanguage = (nativeLanguages.includes(nativeLanguage as string)) ? nativeLanguage : 'English';
-  const t = translations[validNativeLanguage as keyof typeof translations].ui || translations.English.ui;
-  const t_dashboard = translations[validNativeLanguage as keyof typeof translations].dashboard || translations.English.dashboard;
+  const validNativeLanguage = nativeLanguages.find(l => l.toLowerCase() === nativeLanguage.toLowerCase()) || 'English';
+  const t = translations[validNativeLanguage as keyof typeof translations]?.ui || translations.English.ui;
+  const t_dashboard = translations[validNativeLanguage as keyof typeof translations]?.dashboard || translations.English.dashboard;
 
   const handleLogout = () => {
     if (!auth) return;
