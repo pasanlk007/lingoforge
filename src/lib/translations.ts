@@ -331,7 +331,7 @@ export const translations = {
   Sinhala: {
     scenario: {
       pageTitle: "Scenario Mode",
-      pageDescription: 'ඔබේ real-life situation එක කියන්න — ඊට ගැලපෙන daily conversation plan එකක් AI එක හදනවා. (e.g. "මම ඉතාලියේ රෙස්ටුරන්ට් එකක වේටර් රැකියාවට යනවා", "රුමේනියාවේ work permit embassy interview එකට සූදානම් වෙනවා")',
+      pageDescription: 'ඔබේ real-life situation එක කියන්න — ඊට ගැලපෙන daily conversation plan එකක් අපි නිර්මාණය කරනවා. (e.g. "මම ඉතාලියේ රෙස්ටුරන්ට් එකක වේටර් රැකියාවට යනවා", "රුමේනියාවේ work permit embassy interview එකට සූදානම් වෙනවා")',
       myPlans: "My Plans",
       situationLabel: "ඔබේ situation එක",
       situationPlaceholder: "මෙතන ඔබේ situation එක විස්තර කරන්න...",
@@ -396,7 +396,7 @@ export const translations = {
     },
     scenarioCard: {
         description: "ඔබේ real-life situation එකට ගැලපෙන AI conversation plan එකක්",
-        example: '"Italy waiter job" / "embassy interview" වගේ ඔබේම situation එක',
+        example: '"Italy restaurant job" / "embassy interview" වගේ ඔබේම situation එක',
         feature: "Daily AI voice conversation, ඔබේ situation එකටම ගැලපෙන",
         button: "My Scenario Plans"
     },
@@ -431,7 +431,7 @@ export const translations = {
     startFree: "නොමිලේ ආරම්භ කරන්න",
     getStarted: "ආරම්භ කරන්න",
     features: {
-      ai: { title: "AI බලයෙන්", desc: "ඔබ වෙනුවෙන් ජනනය කරන ලද පාඩම්" },
+      ai: { title: "AI ", desc: "ඔබ වෙනුවෙන් ජනනය කරන ලද පාඩම්" },
       audio: { title: "ශ්‍රව්‍ය ඇතුළත්", desc: "සෑම වචනයක් සඳහාම දේශීය උච්චාරණය අසන්න" },
       dialogues: { title: "සැබෑ සංවාද", desc: "ඔබ දිනපතා භාවිතා කරන සැබෑ සංවාද" },
       exercises: { title: "දෛනික අභ්‍යාස", desc: "හිස්තැන් පිරවීම, MCQ, වචන ගැලපීම" },
@@ -472,20 +472,19 @@ export const translations = {
       price_usd: "$26 one-time",
       price_lkr: "LKR 11,700",
       feat1: "Survival + Alphabet + Numbers paths",
-      feat2: "එක් භාෂා පාඨමාලාවකට ජීවිත කාලය පුරාම ප්‍රවේශය",
+      feat2: "එක් භාෂා පාඨමාලාවකට ප්‍රවේශය",
       feat3: "සම්පූර්ණ සති 12ක විෂය නිර්දේශය",
-      feat4: "විද්‍යුත් තැපැල් සහාය",
+      feat4: "නොමිලේ යාවත්කාලීන කිරීම්",
     },
     lifetimePlan: {
       title: "Lifetime Pro",
       badge: "⭐ Best Value",
       price_usd: "$49 one-time",
       price_lkr: "LKR 29,700",
-      feat1: "Everything in Survival Pack + Pro lessons",
-      feat2: "වර්තමාන සහ අනාගත සියලුම භාෂා සඳහා ජීවිත කාලය පුරාම ප්‍රවේශය",
-      feat3: "ප්‍රමුඛතා සහාය",
-      feat4: "බහුභාෂිකයෙකු වන්න!",
-      feat5: "නොමිලේ අනාගත යාවත්කාලීන කිරීම්",
+      feat1: "Survival pack",
+      feat3: "Alphabet + Numbers",
+      feat4: "Lingoforge pro pack",
+      feat5: "නොමිලේ යාවත්කාලීන කිරීම්",
     },
     footerTagline: "නූතන සංක්‍රමණිකයා සඳහා භාෂා පැවැත්ම.",
     footerLinks: {
@@ -501,11 +500,11 @@ export const translations = {
       title: "පාලන පුවරුව",
       welcome: "නැවතත් සාදරයෙන් පිළිගනිමු",
       ready: "ඔබේ සාර්ථකත්වයට පදනම — භාෂාවයි.",
-      currentStreak: "වර්තමාන Streak",
+      currentStreak: "Streak",
       keepFlame: "දිනකට අවම වචන 5 පාඩම් කිරීමට උත්සහ කරන්න",
-      xpPoints: "XP ලකුණු",
-      toNextLevel: "මට්ටමට",
-      level: "මට්ටම",
+      xpPoints: "XP Points",
+      toNextLevel: "Level",
+      level: "Level",
       advancing: "ඔබ ඉදිරියට යමින්!",
       currentPath: "වර්තමාන මාර්ගය",
       language: "භාෂාව",
@@ -583,7 +582,7 @@ export const translations = {
       day: "දිනය",
       upgradePlan: "සැලැස්ම වැඩි දියුණු කරන්න",
       lessonsLocked: "මෙම සතියේ පාඩම් අගුළු දමා ඇත.",
-      upgradeToUnlock: "අගුළු ඇරීමට උත්ශ්‍රේණි කරන්න",
+      upgradeToUnlock: " upgrade කරන්න",
       // lesson page errors
       errorTitle: "පාඩම පූරණය කළ නොහැක",
       errorWeekNotFound: "{path} මාර්ගයේ {week} වන සතිය සඳහා පාඩම් අන්තර්ගතය නොමැත. කරුණාකර 'public{lessonPath}' හි ගොනුව සාදන්න.",
@@ -859,7 +858,7 @@ export const translations = {
           rights: { title: "अधिकार और दस्तावेज़", desc: "कानूनी और नागरिक मार्गदर्शन" },
           integration: { title: "एकीकरण", desc: "सांस्कृतिक और सामाजिक मानदंड" },
           vocab: { title: "कानूनी शब्दावली", desc: "आवश्यक कानूनी शर्तें" },
-          tutors: { title: "AI උපදේශකයින්", desc: "AI සමඟ පුහුණු වන්න" }
+          tutors: { title: "AI tutors", desc: " practice with ai" }
         }
       }
     },
