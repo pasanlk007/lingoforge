@@ -44,7 +44,14 @@ export function useDoc<T = any>(
   type StateDataType = WithId<T> | null;
 
   const [data, setData] = useState<StateDataType>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  // CRITICAL: must start true whenever a docRef is provided. If this starts
+  // false, there is a guaranteed window on every mount where isLoading=false
+  // AND data=null simultaneously (before onSnapshot's first callback fires),
+  // which callers can misinterpret as "confirmed, no document exists yet" and
+  // act accordingly (e.g. create/overwrite a document) even though the real
+  // data just hasn't arrived yet. This caused exactly that: user profile
+  // fields being reset to defaults on every dashboard mount.
+  const [isLoading, setIsLoading] = useState<boolean>(!!memoizedDocRef);
   const [error, setError] = useState<FirestoreError | Error | null>(null);
 
   useEffect(() => {

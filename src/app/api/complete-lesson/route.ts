@@ -138,7 +138,7 @@ export async function POST(req: NextRequest) {
     });
 
     if (!lpWriteRes.ok) {
-      console.error('[XP] LP write failed:', await lpWriteRes.text());
+      console.error('[XP] LP write failed:', lpWriteRes.status, await lpWriteRes.text());
     }
 
     console.log(`✅ ${userId} ${langKey}/${path} ${dayKey} | XP:${currentXP}→${newXP} | Streak:${realStreak}→${newStreak} | isFirstToday:${isFirstLessonToday}`);

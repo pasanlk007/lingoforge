@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import Link from 'next/link';
 import { Home, Sprout, BookOpen, User as UserIcon, Flame, Star, Zap, CalendarDays, ChevronRight, Target, Globe, ShieldCheck, Landmark, BookText, Sparkles, ListOrdered, Map } from 'lucide-react';
 import { usePathname } from 'next/navigation';
@@ -83,6 +83,17 @@ function DashboardContent({ user }: { user: User }) {
 
   const { data: userProfile, isLoading: isProfileLoading } = useDoc<UserProfile>(userProfileRef);
 
+  // Extra safety net on top of the useDoc fix above: require that loading has
+  // genuinely been observed as true at least once before we ever trust
+  // "!userProfile" as confirmation that no profile exists. This makes it
+  // structurally impossible to accidentally overwrite real user data
+  // (xpPoints, streak, completed lessons) via a premature create, even if
+  // useDoc's internal timing changes again in the future.
+  const hasObservedLoadingRef = useRef(false);
+  useEffect(() => {
+    if (isProfileLoading) hasObservedLoadingRef.current = true;
+  }, [isProfileLoading]);
+
   const { config, isLoading: isConfigLoading } = useAppConfig();
   const { trialDaysUsed, isTrialLoading } = useFreeTrial(userProfile);
 
@@ -91,7 +102,7 @@ function DashboardContent({ user }: { user: User }) {
 
   useEffect(() => {
     setIsMounted(true);
-    if (!isProfileLoading && !userProfile && user && userProfileRef && firestore) {
+    if (!isProfileLoading && !userProfile && hasObservedLoadingRef.current && user && userProfileRef && firestore) {
       const createUserProfile = async () => {
         const now = new Date();
         const newUserProfile: UserProfile = {

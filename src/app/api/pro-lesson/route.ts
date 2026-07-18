@@ -119,11 +119,14 @@ Return ONLY a valid JSON object with the following structure:
       phrases: { stringValue: JSON.stringify(lesson.phrases) },
     };
 
-    await fetch(`${cacheUrl}?updateMask.fieldPaths=title&updateMask.fieldPaths=topic&updateMask.fieldPaths=cultural_tip&updateMask.fieldPaths=grammar_note&updateMask.fieldPaths=vocabulary&updateMask.fieldPaths=phrases`, {
+    const cacheWriteRes = await fetch(`${cacheUrl}?updateMask.fieldPaths=title&updateMask.fieldPaths=topic&updateMask.fieldPaths=cultural_tip&updateMask.fieldPaths=grammar_note&updateMask.fieldPaths=vocabulary&updateMask.fieldPaths=phrases`, {
       method: 'PATCH',
       headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ fields }),
     });
+    if (!cacheWriteRes.ok) {
+      console.error('[pro-lesson] Cache write failed:', cacheWriteRes.status, await cacheWriteRes.text());
+    }
 
     return NextResponse.json(lesson);
   } catch (error) {
