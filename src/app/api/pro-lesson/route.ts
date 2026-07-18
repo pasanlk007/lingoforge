@@ -1,4 +1,3 @@
-
 import { NextResponse } from 'next/server';
 import { logAiUsage } from '@/lib/aiUsageLogger';
 
@@ -34,7 +33,7 @@ async function getFirebaseToken(): Promise<string> {
 export async function POST(req: Request) {
   try {
     const { language, nativeLanguage, week, day, topic } = await req.json();
-    const cacheKey = `pro_${language}_${nativeLanguage}_w${week}_d${day}`;
+    const cacheKey = `pro_${language.toLowerCase()}_${nativeLanguage.toLowerCase()}_w${week}_d${day}`;
     const projectId = process.env.FIREBASE_PROJECT_ID!;
     const token = await getFirebaseToken();
     
@@ -71,10 +70,10 @@ Topic: "${topic}"
 
 Key areas to incorporate, with cultural tips related to them:
 - Legal terms (නීතිය)
-- Historical context (ඉතිහාසය)
+- Historical context (ඉතිಹಾಸය)
 - Judicial processes (අධිකරන)
 
-CRITICAL — this content is read aloud by text-to-speech, so every word inside "target" and "example" fields must be entirely in ${language}, with NO untranslated English words, legal/technical terms, or proper nouns left in raw English spelling. If a term is a loanword or has no native equivalent, spell it using ${language}'s own orthography/spelling conventions the way a native speaker would naturally write and pronounce it — do not mix raw English spelling into ${language} text, since a single unconverted word breaks the pronunciation mid-sentence for the learner.
+CRITICAL — this content is read aloud by text-to-speech, so every word inside "target" and "example" fields must be entirely in ${language}, with NO untranslated English words, legal/technical terms, or proper nouns left in raw English spelling. If a term is a loanword or has no native equivalent, spell it using ${language}'s own orthography/spelling conventions the way a native speaker would naturally write and pronounce it.
 
 Return ONLY a valid JSON object with the following structure:
 {
@@ -93,6 +92,8 @@ Return ONLY a valid JSON object with the following structure:
     });
 
     const aiData = await aiRes.json();
+    if (!aiData.content?.[0]?.text) throw new Error('Empty AI response');
+    
     const text = aiData.content[0].text;
     const lesson = JSON.parse(text.replace(/```json|```/g, '').trim());
 
@@ -123,10 +124,6 @@ Return ONLY a valid JSON object with the following structure:
       headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({ fields }),
     });
-
-    // Parse cached arrays back
-    lesson.vocabulary = typeof lesson.vocabulary === 'string' ? JSON.parse(lesson.vocabulary) : lesson.vocabulary;
-    lesson.phrases = typeof lesson.phrases === 'string' ? JSON.parse(lesson.phrases) : lesson.phrases;
 
     return NextResponse.json(lesson);
   } catch (error) {

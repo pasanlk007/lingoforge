@@ -119,7 +119,6 @@ function DashboardContent({ user }: { user: User }) {
     if (userProfile) {
         let initialNative = userProfile.nativeLanguage || 'English';
         let initialTarget = userProfile.selectedLanguage || 'French';
-        // Case-insensitive lookup for native language validation
         const nativeMatch = nativeLanguages.find(l => l.toLowerCase() === initialNative.toLowerCase());
         initialNative = nativeMatch || 'English';
 
@@ -150,32 +149,6 @@ function DashboardContent({ user }: { user: User }) {
     }
   }, [userProfile, userProfileRef]);
 
-  // Keep the "2 Words a Day" notification batch topped up as it runs low.
-  useEffect(() => {
-    if (!isMounted || !userProfile) return;
-    try {
-      const saved = localStorage.getItem('lingoforge_daily_reminder');
-      if (!saved) return;
-      const reminder = JSON.parse(saved);
-      if (!reminder?.enabled) return;
-      import('@/lib/isNativeApp').then(({ isNativeApp }) => {
-        if (!isNativeApp()) return;
-        const [hours, minutes] = (reminder.time || '08:00').split(':').map(Number);
-        import('@/lib/dailyWordNotifications').then(({ scheduleDailyWordNotifications }) => {
-          scheduleDailyWordNotifications({
-            targetLanguage,
-            nativeLanguage,
-            userProfile,
-            hour: hours,
-            minute: minutes,
-          }).catch(console.error);
-        });
-      });
-    } catch (e) {
-      console.error('Failed to refresh daily word notifications', e);
-    }
-  }, [isMounted, userProfile, targetLanguage, nativeLanguage]);
-
   const {
     displayName,
     currentStreak,
@@ -204,13 +177,14 @@ function DashboardContent({ user }: { user: User }) {
   const maxProWeek = Math.max(...proTopicWeeks);
   const maxProDayInLastWeek = Math.max(...Object.keys(proLessonTopics[maxProWeek]).map(Number));
   const maxProAbsoluteDay = (maxProWeek - 1) * 7 + maxProDayInLastWeek;
+  
   const proPathFinished = lastProAbsoluteDay >= maxProAbsoluteDay;
   const nextProAbsoluteDay = proPathFinished ? maxProAbsoluteDay : lastProAbsoluteDay + 1;
-  const nextProWeekForTopic = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
-  const nextProDayInWeekForTopic = ((nextProAbsoluteDay - 1) % 7) + 1;
-  const nextProTopic = proLessonTopics[nextProWeekForTopic]?.[nextProDayInWeekForTopic] || 'Review';
+  const nextProWeek = Math.floor((nextProAbsoluteDay - 1) / 7) + 1;
+  const nextProDay = ((nextProAbsoluteDay - 1) % 7) + 1;
+  const nextProTopic = proLessonTopics[nextProWeek]?.[nextProDay] || 'Review';
 
-  const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeekForTopic}/${nextProDayInWeekForTopic}`;
+  const nextProLessonUrl = `/lessons/${langKey}/pro/${nextProWeek}/${nextProDay}`;
 
   const level = Math.floor((xpPoints || 0) / 1500) + 1;
   const xpToNextLevel = 1500 - ((xpPoints || 0) % 1500);
@@ -353,7 +327,7 @@ function DashboardContent({ user }: { user: User }) {
                   <div className="flex flex-col gap-2 w-full">
                     {hasAccessToNextLesson ? (
                       <Button asChild className="w-full bg-green-600 hover:bg-green-700">
-                        <Link href={nextLessonUrl}>
+                        <Link href={nextSurvivalLessonUrl}>
                           {t.goToNextLesson} <ChevronRight className="ml-1 h-4 w-4" />
                         </Link>
                       </Button>
@@ -418,7 +392,7 @@ function DashboardContent({ user }: { user: User }) {
                     {t.proBundle.badge}
                   </Badge>
                   <div className="flex items-center gap-4">
-                    < Landmark className="h-8 w-8 text-purple-400" />
+                    <Landmark className="h-8 w-8 text-purple-400" />
                     <div>
                       <CardTitle className="text-2xl font-bold">{t.proBundle.title}</CardTitle>
                       <CardDescription className="text-purple-300/80 mt-1">{t.proBundle.description}</CardDescription>
@@ -540,7 +514,7 @@ export default function DashboardPage() {
   const router = useRouter();
 
   useEffect(() => {
-    if (directLoading) return; // Wait for direct auth check
+    if (directLoading) return;
     if (!isUserLoading && !user) {
       router.push('/login?redirect=/dashboard');
     }

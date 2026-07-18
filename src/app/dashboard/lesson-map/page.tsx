@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, Suspense } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUser, useFirestore, useDoc, useMemoFirebase } from '@/firebase';
 import { doc } from 'firebase/firestore';
@@ -48,17 +48,12 @@ const PRO_LANGUAGE_MAP: Record<string, { countries: { name: string; flag: string
   'Hungarian': { countries: [{ name: 'Hungary', flag: '🇭🇺', code: 'HU' }] },
 };
 
-// --- Data ---
-// One icon per week theme (proLessonTopics.ts is the single source of
-// truth for topic titles — this file used to keep its own duplicated
-// copy of the first 5 weeks, which drifted out of sync as topics grew).
+// One icon per week theme
 const WEEK_ICONS: Record<number, string> = {
   1: '🛂', 2: '📜', 3: '🎓', 4: '✍️', 5: '🚀',
   6: '💼', 7: '🏥', 8: '👨‍👩‍👧', 9: '💰', 10: '💻', 11: '🚌', 12: '🗣️',
 };
 const FALLBACK_ICON = '📘';
-
-// --- Components ---
 
 function LoadingSkeleton() {
   return (
@@ -83,7 +78,7 @@ function LoadingSkeleton() {
   );
 }
 
-function LessonMapPage() {
+export default function LessonMapPage() {
   const router = useRouter();
   const { user, isUserLoading } = useUser();
   const firestore = useFirestore();
@@ -99,7 +94,7 @@ function LessonMapPage() {
     setIsMounted(true); 
     if (typeof window !== 'undefined' && window.location.hash) {
       const id = window.location.hash.substring(1);
-      setTimeout(() => { // timeout to allow everything to render
+      setTimeout(() => {
           const element = document.getElementById(id);
           if (element) {
               element.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -149,10 +144,8 @@ function LessonMapPage() {
     return <LoadingSkeleton />;
   }
 
-  console.log("DEBUG targetLanguage:", JSON.stringify(targetLanguage));
   const proConfig = PRO_LANGUAGE_MAP[targetLanguage];
 
-  // Not a Pro language
   if (!proConfig) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
@@ -167,7 +160,6 @@ function LessonMapPage() {
     );
   }
 
-  // Multiple countries — show picker
   if (proConfig.countries.length > 1 && !selectedCountry) {
     return (
       <div className="flex min-h-dvh flex-col bg-background">
@@ -195,7 +187,6 @@ function LessonMapPage() {
     );
   }
 
-  // Single country — auto select
   if (proConfig.countries.length === 1 && !selectedCountry) {
     setSelectedCountry(proConfig.countries[0].name);
   }
@@ -210,10 +201,8 @@ function LessonMapPage() {
         </header>
 
         <div className="relative w-full">
-          {/* Center line */}
           <div className="absolute left-1/2 top-8 bottom-8 w-px -translate-x-1/2 border-l-2 border-dashed border-border/30" />
 
-          {/* Lessons */}
           <div className="space-y-1">
             {proPathLessons.map((lesson, index) => {
                 const color = nodeColors[index % nodeColors.length];
@@ -221,7 +210,6 @@ function LessonMapPage() {
 
                 return (
                     <div key={lesson.day} id={`day-${lesson.day}`} className={cn("relative flex items-center py-4", isCardOnLeft ? 'justify-start' : 'justify-end')}>
-                        {/* Card */}
                         <div className="w-1/2 px-8">
                             <button
                                 onClick={() => handleNodeClick(lesson)}
@@ -242,7 +230,6 @@ function LessonMapPage() {
                                 <p className="text-sm mt-1">{lesson.topic}</p>
                             </button>
                         </div>
-                        {/* Node on the center line */}
                         <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10">
                             <div
                                 onClick={() => handleNodeClick(lesson)}
@@ -257,7 +244,6 @@ function LessonMapPage() {
                             >
                                 <span className="text-3xl">{lesson.icon}</span>
                             </div>
-        
                         </div>
                     </div>
                 );
@@ -268,5 +254,3 @@ function LessonMapPage() {
     </div>
   );
 }
-
-export default LessonMapPage;
