@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { isNativeApp } from '@/lib/isNativeApp';
+import { useUser } from '@/firebase';
 import Link from "next/link";
 import { 
   Languages, 
@@ -56,6 +57,18 @@ export default function LandingPage() {
   const [showLangGuide, setShowLangGuide] = useState(false);
   const [isFbBrowser, setIsFbBrowser] = useState(false);
   const router = useRouter();
+  const { user, isUserLoading } = useUser();
+
+  // On native app launches specifically (not the public marketing website),
+  // an already-logged-in user should land on their dashboard, not see the
+  // landing page again every time the app is closed and reopened. The
+  // Capacitor WebView always starts fresh at this root URL on relaunch, so
+  // without this check there was no way to skip straight past it.
+  useEffect(() => {
+    if (isNativeApp() && !isUserLoading && user) {
+      router.replace('/dashboard');
+    }
+  }, [user, isUserLoading, router]);
 
   useEffect(() => {
     const ua = navigator.userAgent || '';

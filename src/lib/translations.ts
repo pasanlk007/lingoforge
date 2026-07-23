@@ -92,6 +92,7 @@ export const translations = {
       cancelHowTitle: "How do I cancel my subscription?",
       cancelStep1: '1. Check the receipt email from LemonSqueezy sent when you subscribed — it has a "Manage your subscription" link.',
       cancelStep2: "2. Or go to app.lemonsqueezy.com/my-orders and log in with the email you used at checkout.",
+      cancelNativeApp: "Settings → Subscriptions → Scenario Mode Monthly → Cancel subscription (Google Play). You can cancel anytime from the Google Play app.",
       cancelStep3: "3. From there you can cancel anytime — you won't be charged for the next billing cycle.",
     },
     scenarioCard: {
@@ -392,6 +393,7 @@ export const translations = {
       cancelHowTitle: "Subscription එක cancel කරන්නේ කොහොමද?",
       cancelStep1: '1. ඔබ subscribe උනාම LemonSqueezy එකෙන් එවුන receipt email එක check කරන්න — ඒකේ "Manage your subscription" link එකක් තියෙනවා.',
       cancelStep2: "2. නැත්නම් app.lemonsqueezy.com/my-orders එකට ගිහින් ඔබ checkout එකේ දුන්න email එකෙන් login වෙන්න.",
+      cancelNativeApp: "සැකසුම් → දායකත්ව → Scenario Mode Monthly → දායකත්වය අවලංගු කරන්න (Google Play). ඔබට ඕන වෙලාවක Google Play app එකෙන් cancel කරන්න පුළුවන්.",
       cancelStep3: "3. එතනින් subscription එක ඕන වෙලාවක cancel කරන්න පුළුවන් — ඊළඟ billing cycle එකේ සිට charge වෙන්නේ නෑ.",
     },
     scenarioCard: {
@@ -692,6 +694,7 @@ export const translations = {
       cancelHowTitle: "How do I cancel my subscription?",
       cancelStep1: '1. Check the receipt email from LemonSqueezy sent when you subscribed — it has a "Manage your subscription" link.',
       cancelStep2: "2. Or go to app.lemonsqueezy.com/my-orders and log in with the email you used at checkout.",
+      cancelNativeApp: "सेटिंग्स → सब्सक्रिप्शन → Scenario Mode Monthly → सब्सक्रिप्शन रद्द करें (Google Play). आप कभी भी Google Play ऐप से रद्द कर सकते हैं।",
       cancelStep3: "3. From there you can cancel anytime — you won't be charged for the next billing cycle.",
     },
     scenarioCard: {
@@ -992,6 +995,7 @@ export const translations = {
       cancelHowTitle: "How do I cancel my subscription?",
       cancelStep1: '1. Check the receipt email from LemonSqueezy sent when you subscribed — it has a "Manage your subscription" link.',
       cancelStep2: "2. Or go to app.lemonsqueezy.com/my-orders and log in with the email you used at checkout.",
+      cancelNativeApp: "ترتیبات → سبسکرپشنز → Scenario Mode Monthly → سبسکرپشن منسوخ کریں (Google Play). آپ کسی بھی وقت Google Play ऐप سے منسوخ کر سکتے ہیں۔",
       cancelStep3: "3. From there you can cancel anytime — you won't be charged for the next billing cycle.",
     },
     scenarioCard: {
@@ -1292,6 +1296,7 @@ export const translations = {
       cancelHowTitle: "আমি আমার সাবস্কির্ফশন কীভাবে বাতিল করব?",
       cancelStep1: '১. সাবস্ক্রাইব করার সময় লেমনস্কুইজি থেকে পাঠানো রসিদ ইমেলটি দেখুন — এতে "Manage your subscription" লিঙ্ক আছে।',
       cancelStep2: "২. অথবা app.lemonsqueezy.com/my-orders এ যান এবং চেকআউটের সময় ব্যবহৃত ইমেল দিয়ে লগ ইন করুন।",
+      cancelNativeApp: "সেটিংস → সাবস্ক্রিপশন → Scenario Mode Monthly → সাবস্ক্রিপশন বাতিল করুন (Google Play). আপনি যেকোনো সময় Google Play অ্যাপ থেকে বাতিল করতে পারবেন।",
       cancelStep3: "৩. সেখান থেকে আপনি যেকোনো সময় বাতিল করতে পারেন — পরবর্তী বিলিং সাইকেলের জন্য আপনার কাছে কোনো চার্জ নেওয়া হবে না।",
     },
     scenarioCard: {
@@ -1592,6 +1597,7 @@ export const translations = {
       cancelHowTitle: "How do I cancel my subscription?",
       cancelStep1: '१. सब्सक्राइब गर्दा लेमनस्क्यूजीबाट प्राप्त रसिद इमेल हेर्नुहोस् — यसमा "Manage your subscription" लिङ्क छ।',
       cancelStep2: "२. वा app.lemonsqueezy.com/my-orders मा जानुहोस् र चेकआउटको समयमा प्रयोग गर्नुभएको इमेलबाट लग इन गर्नुहोस्।",
+      cancelNativeApp: "सेटिङहरू → सदस्यताहरू → Scenario Mode Monthly → सदस्यता रद्द गर्नुहोस् (Google Play). तपाईं जुनसुकै बेला Google Play एपबाट रद्द गर्न सक्नुहुन्छ।",
       cancelStep3: "३. त्यहाँबाट तपाईं कुनै पनि समय रद्द गर्न सक्नुहुन्छ — तपाईंलाई अर्को बिलिङ चक्रको लागि शुल्क लिइने छैन।",
     },
     scenarioCard: {

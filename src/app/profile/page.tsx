@@ -218,7 +218,7 @@ function ProfileContent({ user }: { user: User }) {
               <div className="rounded-lg bg-muted p-3 space-y-1 text-xs text-muted-foreground">
                 <p className="font-semibold text-foreground">{tScenario.cancelHowTitle}</p>
                 {isNativeApp() ? (
-                  <p>Settings → Subscriptions → Scenario Mode Monthly → Cancel subscription (Google Play). ඔබට ඕන වෙලාවක Google Play app එකෙන් cancel කරන්න පුළුවන්.</p>
+                  <p>{tScenario.cancelNativeApp}</p>
                 ) : (
                   <>
                     <p>{tScenario.cancelStep1}</p>

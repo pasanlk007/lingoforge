@@ -48,7 +48,7 @@ export function TrialEndModal({ trialDaysUsed, subscriptionActive, userEmail }: 
 
         <div className="space-y-3">
           <Button className="w-full" size="lg" asChild>
-            <Link href="/pricing">View Plans — from $3.99/week</Link>
+            <Link href="/pricing">View Plans</Link>
           </Button>
           <Button variant="ghost" className="w-full" onClick={handleDismiss}>
             Maybe later
